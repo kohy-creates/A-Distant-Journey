@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "from_beneath_the_ice"
+	group: "4C4C64E64E42D01F"
+	icon: "aquamirae:rune_of_the_storm"
+	id: "2B34DB1EEA89290E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Beneath The Ice"
+}

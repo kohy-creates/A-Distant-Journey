@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "kohara_",
+      "uniqueId": "b1b6a13e-7a06-41a9-8189-1757871c9414"
+    },
+    "time": 1751658360066,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/kDiLLLeW4g"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "kohara_",
+      "uniqueId": "b1b6a13e-7a06-41a9-8189-1757871c9414"
+    },
+    "time": 1750083759092,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/jVpfMwVgK0"
+    }
+  }
+]

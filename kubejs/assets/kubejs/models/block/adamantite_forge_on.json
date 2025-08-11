@@ -1,0 +1,6 @@
+{
+  "parent": "kubejs:block/adamantite_forge",
+  "textures": {
+    "front": "kubejs:block/adamantite_forge_front_on"
+  }
+}

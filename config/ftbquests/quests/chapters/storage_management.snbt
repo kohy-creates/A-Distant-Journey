@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage_management"
+	group: "266DD5C3D1FE65EA"
+	id: "470CC0A899AD68D9"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Storage Management"
+}

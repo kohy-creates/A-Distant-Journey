@@ -1,0 +1,8 @@
+{
+    "crit_chance": "attributeslib:crit_chance",
+    "armor_pass": "attributeslib:armor_pierce",
+    "ranged_damage": "attributeslib:arrow_damage",
+    "ranged_velocity": "attributeslib:arrow_velocity",
+    "dodge_chance": "attributeslib:dodge_chance",
+    "mining_speed": "attributeslib:mining_speed"
+}

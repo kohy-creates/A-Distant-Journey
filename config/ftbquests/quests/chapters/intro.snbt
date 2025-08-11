@@ -1,0 +1,345 @@
+{
+	autofocus_id: "2D6437E0336ED8AD"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "intro"
+	group: ""
+	icon: "ars_nouveau:worn_notebook"
+	id: "6827135B158F87E2"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&lWelcome to &6A Distant Journey&f!"
+				""
+				"I'm really glad that you opened the &cAdvancements menu&f. They serve as a guide through the modpack's progression and also briefly mention some of the more important changes. You can easily access it by &lpressing L&r (or &owhatever&r you bound the button to)."
+				""
+				"The '&7Intro&f' chapter serves as a brief explanation of the more important things."
+				""
+				"Does it ruing the immersion, which I was trying so hard to keep everywhere? Maybe. Potentially even. But I'd rather have you just read a bunch of text than suffer for the first few hours and then uninstall."
+				""
+				"{@pagebreak}"
+				""
+				"Some advancements only feature a &7short subtitle&f which roughly describes what you have to do to finish them."
+				""
+				"Some of them however, such as &6this one&f feature an elaborate description, which will explain &dhow things work in this realm&r, so that your playthrough is &oless of a headache&r!"
+				""
+				""
+				"{@pagebreak}"
+				""
+				"&6Advancements&r can have either a &esingular task&r or a &elist of tasks&f (which you can do in any order) to complete. &lMost&r of them will autocomplete themselves whenever their condition is satisifed."
+				""
+				"A few conditions though &erequire you to confirm you completed them&r for them to count as finished. Those conditions are usually related to building things."
+				""
+				"In order to complete this advancement's task, &ejust click the checkmark icon in the top right corner of this menu&r!"
+			]
+			disable_toast: true
+			icon: "structure_gel:building_tool"
+			id: "4A074153AE2D521D"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Click to read"
+			tasks: [{
+				id: "130423B37A140F64"
+				title: "Click me to complete the advancement"
+				type: "checkmark"
+			}]
+			title: "Intro"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A074153AE2D521D"]
+			description: [
+				"To browse through all the different &cadvancement chapters&r, close this advancement and move your cursor to the left."
+				""
+				"Each chapter has a different name, theme and its own set of advancements for you to complete."
+			]
+			disable_toast: true
+			id: "2D6437E0336ED8AD"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "73B3E2F6915FFC39"
+				title: "Click to complete"
+				type: "checkmark"
+			}]
+			title: "&lHow to:&r &aChapters"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2D6437E0336ED8AD"]
+			description: [
+				"Did you maybe notice the little prefix in front of your items' names? &eThat's a reforge!&r"
+				""
+				"Reforges apply bonues to your item's stats. You can change the reforge an item has by combining it with a &7Reforging Hammer &fin an &7Anvil&r."
+			]
+			disable_toast: true
+			icon: "minecraft:anvil"
+			id: "24172FF8B21453E2"
+			subtitle: "Click to read"
+			tasks: [
+				{
+					id: "2A5D1A6A16DE3CCB"
+					item: {
+						Count: 1
+						id: "tiered:armorers_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56CBC9DB549DF674"
+					item: "minecraft:anvil"
+					type: "item"
+				}
+			]
+			title: "&lBasics:&r &eReforging"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2D6437E0336ED8AD"]
+			description: [
+				"To create a &dParty&r, open your inventory and then open the &dTeams&r tab, then click '&dCreate new Party&r'."
+				""
+				"Players in the same party as you will &eshare advancement progress&r and can configure &cPvP&r rules!"
+			]
+			disable_toast: true
+			icon: "minecraft:player_head"
+			id: "797F46DC75EA4372"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "0D0785AD4D82BA48"
+				title: "Click to complete"
+				type: "checkmark"
+			}]
+			title: "&lMultiplayer:&r &dParties"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2D6437E0336ED8AD"]
+			description: [
+				"&6ADJ&r follows a &elinear progression&r. Your progress will increase at certain points in the game, &eturning the world more hostile&r, but also &eunlocking new items for you to obtain and use&r."
+				""
+				"Items which you can't use at a given point in progression or cannot obtain will be &chidden from your Recipe Browser&f (with a few exceptions) and will be shown as '&8Unknown Item&f' when hovered at. They also cannot be used in any way before reaching the point in progression where they become usable."
+				""
+				"{@pagebreak}"
+				""
+				"Progression is divided into &echapters&f, each focusing on a different part of your world. I don't want to spoil anything, so I'm just going to say that &echapter 1 starts whenever you enter &cThe Nether&r."
+				""
+				"You might also be able to figure out when a new chapter starts by looking into the &2Story&f chapter. Just saying ^^"
+			]
+			disable_toast: true
+			icon: "minecraft:ender_eye"
+			id: "2482788CF690BB31"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "242CD3E7A91DB6A5"
+				title: "Click to complete"
+				type: "checkmark"
+			}]
+			title: "&lBasics:&r &aProgression"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2482788CF690BB31"]
+			description: [
+				"As previously mentioned, &eevery chapter increases the threat level of your world&f."
+				""
+				"Mobs will get increased stats and a bunch of new ones will be able to spawn the further you progress. They can quickly outscale you, so &emake sure you are prepared well before starting a new chapter&f."
+				""
+				"Those changes in difficulty are &epermanent&r and &eglobal&f, meaning that if you are on multiplayer, &cany player can cause your world to change for the worse&r."
+			]
+			disable_toast: true
+			icon: "kubejs:eye_of_cinders"
+			id: "7D4DF8809C70CAFC"
+			subtitle: "Click me to read"
+			tasks: [{
+				id: "3FC6110AD8C174DB"
+				title: "Click to complete"
+				type: "checkmark"
+			}]
+			title: "&lBasics:&r &cDifficulty"
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2D6437E0336ED8AD"]
+			description: [
+				"The combat system has seen some changes to make it more immersive."
+				""
+				"All important changes are listed on the following pages."
+				""
+				"{@pagebreak}"
+				""
+				"Every weapon has new attack animations. &7You are probably familiar with those already, as they are present in every of the generic RPG modpacks (such as this one), so I am not going to talk about it."
+				""
+				"Jump attacks will &cno longer critically hit&f. &cCritical chance&r is a separate stat that now works off of chance. You start with &c5% base chance&r which you can increase with &6accessories&r, &ereforges&r and &aexperience&r (more on that one on the next page)."
+				""
+				"{@pagebreak}"
+				""
+				"The &aExperience&r system has been altered a little."
+				""
+				"You can only have up to &a100 levels&r at a time and every level takes &a50&r experience points to get - it doesn't increase the higher it goes like it does in vanilla. You also &akeep more levels on death&r."
+				""
+				"Every &a3 levels&f your &cCrit Chance&f increases by 1%."
+				""
+				"{@pagebreak}"
+				""
+				"&cInvulnerability frames&r (AKA the &cred flashing&r when you attak something) are also a lot shorter than in vanilla - most attacks don't even give any to hit mobs. &eThink twice before diving into a group of Zombies, as &lall&r of them can hit you at the same time now&r."
+				""
+				"&7Knockback&f has been reduced to compensate for this change."
+			]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3A065070417D1524"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "75053A6D20C802CB"
+				title: "Click to finish"
+				type: "checkmark"
+			}]
+			title: "&lBasics:&r &cCombat"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2D6437E0336ED8AD"]
+			description: [
+				"&eGetting around quickly&r will be crucial for your playthrough, allowing you to get materials from multiple places in no time."
+				""
+				"An early game method of quick travel are &eroads&f."
+				""
+				"&eRoads&r can be made by simply laying down a &eDirt Path&f from one point to another. You can then place &6Signs&r at each end of the road. &eLeft click the sign&f at the first end and go to the other one. After you arrive there, &eleft click the other sign&f. They should now be connected."
+				""
+				"&eLeft clicking on a connected Sign will teleport you to the whichever sign it's connected to&f."
+				""
+				""
+				"{@pagebreak}"
+				"Another way to get around quickly is &5Waystones&r."
+				""
+				"&5Waystones&r generate naturally in Villages. &eRight clicking it will add it to your learned Waystones&r. You can then use it to instantly &eteleport to your other learned Waystones&f!"
+				""
+				"Waystones cannot be broken unless you have a pickaxe with a &eHarvest Level of 4 or higher&f. They are also expensive and difficult to craft normally."
+				""
+				"{@pagebreak}"
+				"Do you need to only quickly get around your base or travel a smaller distance? Look no further than &6Hypertubes&f!"
+				""
+				"They are a bit more expensive than &eroads&f and not as costy as &5Waystones&f, though &ethey are the most troublesome to set up&f, requiring a rotational force to power them. More on how to produce rotational force in the &2Creating a Factory&r chapter."
+				""
+				"{@pagebreak}"
+				"&5Warp Portals&r are also an option for quick travel, however they require &dSource&r to activate."
+				""
+				"First craft a &dWarp Scroll&r and use it to map the portal's target location. Then build a frame out of &dSourcestone&r and place a filled &dSource Jar&r next to it. Lastly, toss the &eWarp Scroll into the frame&r to consume the Source and &eactivate the portal&r. Be wary though, as &ethe portal is one way only&r - you'll need to build another one to go back!"
+			]
+			disable_toast: true
+			id: "7D7F1AD28AE3CF50"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "47B2EECCBC16446D"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "via_romana:guide"
+					}
+				}
+				type: "item"
+			}]
+			title: "&lTutorial:&r &6Quick Travel"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2D6437E0336ED8AD"]
+			description: [
+				"A lot of mods means a lot of items which your Chests will quickly get overwhelmed by. Same goes for your sorting capabilities."
+				""
+				"An easy solution is a &eStorage System&r! Craft an &6Inventory Connector&r and place it somewhere in your base. It will &econnect every Chest, Barrel or any block that can be used to store items inside of it&r. You can then access them from the &6Connector&r by adding a &6Storage Interface&r, which &eshows every item inside of the connected blocks&r AND has a &ebuilt-in search ability&f."
+			]
+			disable_toast: true
+			icon: "minecraft:chest"
+			id: "6C4C8FF43FCED01D"
+			subtitle: "Click to read"
+			tasks: [
+				{
+					id: "21F0D5FA6E1387D5"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+				{
+					id: "59C151249A54235A"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+			]
+			title: "&lTutorial:&r &6Storage"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2D6437E0336ED8AD"]
+			description: [
+				"&6&lADJ&r &cdoesn't feature a traditional minimap/worldmap mod&r and &ccoordinates are hidden by default&r. Staying oriented and finding your way is ever so slightly tougher than usually."
+				""
+				"Having a &7Compass&r in your inventory will allow you to see your horizontal position again. Similarly, carrying a &6Depth Meter&r will allow you to see your vertical position. Both of these can be &eput into a Bundle&r and will &econtinue to work&r from inside of it."
+				""
+				"{@pagebreak}"
+				""
+				"If normal coordinates aren't doing it for you, try crafting an &6Atlas&r! It uses &eEmpty Maps&r to... well... map the locations you've been to. It's essentially both &ea minimap&r as well as &ea world map&r."
+				""
+				"If you run out of maps for it to use, you can add Empty Maps to the Atlas by &ecombining them in your crafting grid&r."
+				""
+				"You can &eput markers on your Atlas' map&r, &eright click Portals&r and &enamed Banners to add waypoints&r and probably do a lot more stuff that I was unable to figure out while playtesting."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						maps: [I; ]
+					}
+				}
+				id: "map_atlases:atlas"
+			}
+			id: "133F7123D4CC512B"
+			subtitle: "Click to read"
+			tasks: [
+				{
+					id: "49FB7CD04073A89E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								maps: [I; ]
+							}
+						}
+						id: "map_atlases:atlas"
+					}
+					type: "item"
+				}
+				{
+					id: "5D48B8CDC6F4822E"
+					item: "minecraft:compass"
+					type: "item"
+				}
+			]
+			title: "&lTutorial:&r &eStaying oriented"
+			x: 1.5d
+			y: -1.5d
+		}
+	]
+	title: "Intro"
+}

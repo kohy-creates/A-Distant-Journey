@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "kubejs:block/ender_forge_casing",
+    "front": "kubejs:block/ender_forge_front",
+    "side": "kubejs:block/ender_forge_casing"
+  }
+}

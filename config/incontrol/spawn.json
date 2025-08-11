@@ -1,0 +1,37 @@
+[
+	{
+		"maxheight": 60,
+		"mob": [
+			"born_in_chaos_v1:nightmare_stalker"
+		],
+		"result": "deny"
+	},
+	{
+		"mob": [
+			"born_in_chaos_v1:nightmare_stalker"
+		],
+		"gamestage": "chapter_1",
+		"result": "allow"
+	},
+	{
+		"mob": [
+			"born_in_chaos_v1:nightmare_stalker"
+		],
+		"result": "deny"
+	},
+	{
+		"mob": [
+			"born_in_chaos_v1:missioner"
+		],
+		"result": "deny"
+	},
+	{
+		"minheight": 60,
+		"mob": [
+			"minecraft:creeper",
+			"mutantmonsters:mutant_creeper",
+			"born_in_chaos_v1:phantom_creeper"
+		],
+		"result": "deny"
+	}
+]

@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cooking"
+	group: "12494D4A5CAA903A"
+	id: "438B2CBD4872B65D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Cooking"
+}

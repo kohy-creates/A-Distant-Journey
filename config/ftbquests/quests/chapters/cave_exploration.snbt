@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cave_exploration"
+	group: "4C4C64E64E42D01F"
+	id: "71F13BF704EDC145"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Cave Exploration"
+}

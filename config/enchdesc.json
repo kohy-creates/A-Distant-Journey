@@ -1,0 +1,10 @@
+{
+  "enableMod": true,
+  "onlyDisplayOnBooks": false,
+  "onlyDisplayInEnchantingTable": false,
+  "requireKeybindPress": false,
+  "indentSize": 2,
+  "style": {
+    "color": "gray"
+  }
+}

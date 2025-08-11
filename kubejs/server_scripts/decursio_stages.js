@@ -1,0 +1,249 @@
+const CURRENT_STAGE = 'current_stage'
+const STAGE_TO_SET = 'next_stage'
+
+ServerEvents.tick(event => {
+	const server = event.getServer();
+	const persistentData = server.persistentData;
+	if (!persistentData.get(CURRENT_STAGE)) {
+		persistentData.putString(CURRENT_STAGE, 'chapter_0')
+	}
+
+	const stageToSet = persistentData.get(STAGE_TO_SET);
+	if (stageToSet) {
+		const stageName = stageToSet.toString().replace("\"", "")
+		if (!persistentData.get(stageName)) {
+			console.log('Progressing the world to stage \'' + stageName + '\'')
+			persistentData.putString(CURRENT_STAGE, stageName);
+			server.runCommandSilent(
+				'/gamestate ' + stageName
+			);
+			persistentData.put(stageName, true);
+		}
+		else console.log('Attempted to reapply a stage that was already present!')
+		persistentData.remove(STAGE_TO_SET);
+	}
+})
+
+PlayerEvents.tick(event => {
+	const player = event.getPlayer();
+	const stage = event.getServer().persistentData.get(CURRENT_STAGE)
+	if (stage) {
+		const stageName = stage.toString().replace("\"", "");
+		if (!player.stages.has(stageName)) {
+			player.stages.add(stageName);
+			event.getServer().runCommandSilent(
+				'/decstages add ' + player.getUsername() + ' ' + stageName + ' true'
+			)
+			event.getServer().runCommandSilent(
+				'/adjreloademi ' + player.getUsername()
+			)
+		}
+	}
+})
+
+ServerEvents.tags('item', resctrictions => {
+
+	resctrictions.add('adj:locked_until/chapter_1', [
+		/orichalcum/,
+		/mythril/,
+		/stormyx/,
+	]);
+	resctrictions.add('adj:locked_until/light/chapter_1', [
+		'botania:ender_air_bottle',
+		'botania:spawner_claw',
+		'botana:corporea_index',
+		'botania:red_string',
+		'botania:spawner_mover',
+		'botania:black_hole_talisman',
+		'botania:corporea_spark',
+		'botania:flight_tiara',
+		'@mynethersdelight',
+		'@netherexp',
+		'netherrack',
+		'nether_gold_ore',
+		'nether_quartz_ore',
+		/everycomp\:.*mynethersdelight.*/,
+		/everycomp\:.*netherexp.*/,
+		/supp.*\:.*mynethersdelight.*/,
+		/supp.*\:.*netherexp.*/,
+		/nether/,
+		'@netherdepthsupgrade',
+		'beacon',
+		'constructionwand:infinity_wand',
+		'@enderstorage',
+		/blaze/,
+		/crimson/,
+		/warped/,
+		//'soul_soil',
+		'gilded_blackstone',
+		'botania:ender_eye_block',
+		'ender_chest',
+		'quark:ender_watcher',
+		'botania:ender_hand',
+		'toms_storage:wireless_terminal',
+		'end_crystal',
+		'botania:natura_pylon',
+		'botania:itemfinder',
+		'botania:virus_nullodermal',
+		'botania:virus_necrodermal',
+		'ars_nouveau:scryers_crystal',
+		/dreamwood/,
+		/elementium/,
+		'botanicadds:dreamrock',
+		/elvenwood/,
+		'botanicadds:dreaming_pool',
+		/botanicadds\:elven\_/,
+		/gaiasteel/,
+		/gaia/,
+		'botania:dragonstone',
+		'botania:dragonstone_block',
+		'botania:pixie_dust',
+		'botania:quartz_elven',
+		'botania:elf_glass',
+		'rediscovered:ruby_eye',
+		'kubejs:skull_fragment',
+		'kubejs:hellforge'
+	]);
+	resctrictions.add('adj:locked_until/exceptions/chapter_1', [
+		'create:blaze_cake',
+		'create:blaze_cake_base',
+		'create:empty_blaze_burner',
+		'galosphere:warped_anchor',
+		'netherexp:soul_soil_layer'
+	]);
+
+	resctrictions.add('adj:locked_until/chapter_2', [
+		/palladium/,
+		'@aether',
+		'@aether_redux',
+		'@lost_aether_content',
+	]);
+	resctrictions.add('adj:locked_until/light/chapter_2', [
+		/everycomp\:.*aether.*/, // also covers redux and lost content
+		/supp.*\:.*aether.*/,
+		'@mutantmonsters',
+	]);
+	resctrictions.add('adj:locked_until/exceptions/chapter_2', [
+		'aether:leather_gloves',
+		'aether:chainmail_gloves',
+		'aether:iron_gloves',
+		'aether:golden_gloves',
+		'aether:diamond_gloves',
+	]);
+
+	resctrictions.add('adj:locked_until/chapter_3', [
+		/netherite/,
+		'flamarang',
+		/adamantite/,
+		/hallowed/,
+		// /cursium/,
+		'cataclysm:the_incinerator'
+	]);
+	resctrictions.add('adj:locked_until/light/chapter_3', [
+		'mythicmetals:aegis_smithing_template',
+		'ancient_debris',
+		'@rediscovered',
+		'suppsquared:heavy_key'
+	]);
+	resctrictions.add('adj:locked_until/exceptions/chapter_3', [
+		/rediscovered\:large\_brick/,
+		/rediscovered\:brittle\_/,
+		'rediscovered:purple_arrow',
+		/rediscovered\:studded/,
+		/rediscovered\:plate/,
+		/rediscovered\:.*ruby/,
+		'rediscovered:gear',
+		'rediscovered:rotational_converter',
+		'rediscovered:spikes',
+		'rediscovered:ancient_crying_obsidian',
+		/rediscovered:.*slab/,
+
+	]);
+
+	resctrictions.add('adj:locked_until/chapter_4', [
+		/starrite/,
+		/star_platinum/,
+	]
+	);
+	resctrictions.add('adj:locked_until/light/chapter_4', [
+		/end_stone/,
+		'@endersdelight',
+		/chorus/,
+		/purpur/,
+		'@unusualend',
+		'@phantasm',
+		/everycomp\:.*phantasm.*/,
+		/everycomp\:.*unusualend.*/,
+		/supp.*\:.*unusualend.*/,
+		/supp.*\:.*phantasm.*/,
+		/quark\:myalite/,
+		/quark\:duskbound/,
+		'born_in_chaos_v1:transmuting_elixir',
+		'end_rod',
+		'kubejs:ender_forge',
+		'kubejs:ender_forge_casing',
+		/shulker/,
+		'supplementaries:safe'
+	]
+	);
+	resctrictions.add('adj:locked_until/exceptions/chapter_4', [
+		'unusualend:chiseled_glass',
+		'unusualend:chiseled_glass_pane',
+		'unusualend:phantom_membrane_block'
+	]);
+
+	resctrictions.add('adj:locked_until/chapter_5', [
+		/enderium/,
+		/unobtainium/,
+		/metallurgium/,
+		/celestium/
+	]);
+	resctrictions.add('adj:locked_until/light/chapter_5', [
+		/creative/
+	]);
+	resctrictions.add('adj:locked_until/exceptions/chapter_5', []);
+})
+
+ItemEvents.rightClicked('ender_eye', event => {
+	if (!event.getPlayer().stages.has('chapter_4')) {
+		event.cancel();
+	}
+})
+
+////////////////////
+////////////////////
+
+const RESET_PROGRESS = 'adjresetprogress';
+const STAGES = [
+	'chapter_0',
+	'chapter_1',
+	'chapter_2',
+	'chapter_3',
+	'chapter_4',
+	'chapter_5'
+]
+ServerEvents.commandRegistry(event => {
+
+	const { commands: Commands, arguments: Arguments } = event
+
+	event.register(Commands.literal(RESET_PROGRESS)
+		.requires(s => s.hasPermission(4))
+		.executes(c => resetProgress(c.source.player, c.source.server))
+	)
+	let resetProgress = (player, server) => {
+		let serverData = server.persistentData;
+		STAGES.forEach(stage => {
+			player.stages.remove(stage)
+			serverData.remove(stage)
+			server.runCommandSilent(
+				'/decstages remove ' + player.getUsername() + ' ' + stage + ' true'
+			)
+		})
+		serverData.remove(CURRENT_STAGE)
+		server.runCommandSilent(
+			'/gamestate normal'
+		)
+		player.tell(Text.red('Reset all internal progress'))
+		return 1
+	}
+})

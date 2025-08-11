@@ -1,0 +1,40 @@
+{
+	"minecraft:health_boost": {
+		"replace": true,
+		"attributes": [
+			"minecraft:generic.max_health;0.2;2"
+		]
+	},
+	"minecraft:speed": {
+		"replace": true,
+		"attributes": [
+			"minecraft:generic.movement_speed;0.1;1"
+		]
+	},
+	"minecraft:strength": {
+		"replace": true,
+		"attributes": [
+			"minecraft:generic.attack_damage;0.15;2"
+		]
+	},
+	"minecraft:weakness": {
+		"replace": true,
+		"attributes": [
+			"minecraft:generic.attack_damage;-0.2;2",
+			"minecraft:generic.movement_speed;-0.1;2",
+			"minecraft:generic.attack_speed;-0.1;2"
+		]
+	},
+	"minecraft:resistance": {
+		"replace": false,
+		"attributes": [
+			"adjcore:generic.damage_reduction;0.1;0"
+		]
+	},
+	"rediscovered:golden_aura": {
+		"replace": false,
+		"attributes": [
+			"rediscovered:undead_damage_scaling;0.1;1"
+		]
+	}
+}

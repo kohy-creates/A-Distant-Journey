@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "interval": 30,
+  "entries": [
+    {
+      "block": [
+        "minecraft:soul_sand",
+        "minecraft:soul_soil",
+        "netherexp:ecto_soul_sand"
+      ],
+      "particle": {
+        "type": "visuality:soul"
+      }
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+	// Checks serverside for blocks to be highlighted and sends them to the client
+	// recommended if the server has an anti-xray mod
+	// default: true
+	server-validating: true
+	// Sets whether or not players can brew the potion
+	// If this is disabled amethyst dust will also be unobtainable in survival
+	// default: true
+	allow-potion-brewing: true
+	// Specifies the chance how often an amethyst dust should drop when mining an amethyst cluster
+	// default: 10
+	amethyst-dust-chance: 50
+	// The duration of the short spelunker potion in seconds
+	// default: 45
+	short-potion-duration: 300
+	// The duration of the long spelunker potion in seconds
+	// default: 90
+	long-potion-duration: 450
+	loot-tables: [
+		{
+			// The loot table where the potion should be able to generate in
+			// default: chests/abandoned_mineshaft
+			targetId: chests/abandoned_mineshaft
+			// Minimum rolls
+			// default: 1
+			min: 1
+			// Maximum rolls
+			// default: 1
+			max: 1
+			// Modifies how likely it is that a short-potion generates in this loot table
+			// default: 10
+			short-potion-chance: 10
+			// Modifies how likely it is that a long-potion generates in this loot table
+			// default: 25
+			long-potion-chance: 25
+		}
+	]
+	// Determines whether an ease-out animation should be played when approaching a block
+	// If this option is false it will overwrite all block-specific transitions
+	// default: true
+	block-transition: true
+	// The configuration for the given blocks
+	// 
+	// highlightColor:
+	//     Specifies the color with which the block will be outlined
+	//     You can also use values like "red, dark_red, blue, aqua"
+	// 
+	// transition:
+	//     Determines whether an ease-out animation should be played when approaching a block
+	// 
+	// effectRadius:
+	//     How many blocks the effect should range, a higher value than 32 is not recommended
+	//     Must be greater or equal to 1
+	block-configs: [
+		{
+			blockIds: [
+				minecraft:emerald_ore
+				minecraft:deepslate_emerald_ore
+			]
+			// default: #2EFF35
+			highlightColor: "#2EFF35"
+			// default: true
+			transition: true
+			// default: 7
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				minecraft:copper_ore
+				minecraft:deepslate_copper_ore
+			]
+			// default: #EB5E34
+			highlightColor: "#EB5E34"
+			// default: true
+			transition: true
+			// default: 12
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				minecraft:gold_ore
+				minecraft:deepslate_gold_ore
+				minecraft:nether_gold_ore
+			]
+			// default: #FFF52E
+			highlightColor: "#FFF52E"
+			// default: true
+			transition: true
+			// default: 8
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				minecraft:lapis_ore
+				minecraft:deepslate_lapis_ore
+			]
+			// default: #312EFF
+			highlightColor: "#312EFF"
+			// default: true
+			transition: true
+			// default: 8
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				minecraft:nether_quartz_ore
+			]
+			// default: #FFFFFF
+			highlightColor: "#FFFFFF"
+			// default: true
+			transition: true
+			// default: 14
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				minecraft:iron_ore
+				minecraft:deepslate_iron_ore
+				phantasm:cirite_iron_ore
+				alexscaves:galena_iron_ore
+			]
+			// default: #FFD1BD
+			highlightColor: "#FFD1BD"
+			// default: true
+			transition: true
+			// default: 8
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				minecraft:diamond_ore
+				minecraft:deepslate_diamond_ore
+				born_in_chaos_v1:infected_diamond_ore
+				born_in_chaos_v1:deepslate_infected_diamond_ore
+			]
+			// default: #2EE0FF
+			highlightColor: "#2EE0FF"
+			// default: true
+			transition: true
+			// default: 5
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				minecraft:redstone_ore
+				minecraft:deepslate_redstone_ore
+				alexscaves:guanostone_redstone_ore
+			]
+			// default: #FF2E2E
+			highlightColor: "#FF2E2E"
+			// default: true
+			transition: true
+			// default: 8
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				minecraft:coal_ore
+				minecraft:deepslate_coal_ore
+				netherexp:fossil_fuel_ore
+				alexscaves:coprolith_coal_ore
+			]
+			// default: #505050
+			highlightColor: "#505050"
+			// default: true
+			transition: true
+			// default: 16
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:orichalcum_ore
+				mythicmetals:tuff_orichalcum_ore
+				mythicmetals:smooth_basalt_orichalcum_ore
+				mythicmetals:deepslate_orichalcum_ore
+			]
+			highlightColor: "#7DD277"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:adamantite_ore
+				mythicmetals:deepslate_adamantite_ore
+			]
+			highlightColor: "#870B13"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:aquarium_ore
+			]
+			highlightColor: "#66B4FC"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:banglum_ore
+				mythicmetals:nether_banglum_ore
+			]
+			highlightColor: "#966D4F"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:carmot_ore
+				mythicmetals:deepslate_carmot_ore
+			]
+			highlightColor: "#ED518B"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:kyber_ore
+				mythicmetals:calcite_kyber_ore
+			]
+			highlightColor: "#8A569F"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:osmium_ore
+			]
+			highlightColor: "#9EB1C8"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:midas_gold_ore
+			]
+			highlightColor: "#FCA404"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:mythril_ore
+				mythicmetals:deepslate_mythril_ore
+			]
+			highlightColor: "#3383C6"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:palladium_ore
+			]
+			highlightColor: "#B04D12"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:platinum_ore
+			]
+			highlightColor: "#BFA1FC"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:morkite_ore
+				mythicmetals:deepslate_morkite_ore
+			]
+			highlightColor: "#2E96A1"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:manganese_ore
+			]
+			highlightColor: "#F59095"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:prometheum_ore
+				mythicmetals:deepslate_prometheum_ore
+			]
+			highlightColor: "#428555"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:quadrillum_ore
+			]
+			highlightColor: "#307474"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:runite_ore
+				mythicmetals:deepslate_runite_ore
+			]
+			highlightColor: "#00AECF"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:starrite_ore
+				mythicmetals:calcite_starrite_ore
+				mythicmetals:end_stone_starrite_ore
+			]
+			highlightColor: "#EE80B8"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:stormyx_ore
+				mythicmetals:blackstone_stormyx_ore
+			]
+			highlightColor: "#9F97E7"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:tin_ore
+			]
+			highlightColor: "#F3D8DC"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				mythicmetals:unobtainium_ore
+				mythicmetals:deepslate_unobtainium_ore
+			]
+			highlightColor: "#FCFCFC"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				majruszsdifficulty:enderium_shard_ore
+			]
+			highlightColor: "#6F4474"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				aether:ambrosium_ore
+			]
+			highlightColor: "#F3F27E"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				aether_redux:veridium_ore
+			]
+			highlightColor: "#598EBB"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				aether:gravitite_ore
+			]
+			highlightColor: "#D766CE"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				create:zinc_ore
+				create:deepslate_zinc_ore
+			]
+			highlightColor: "#CFE9D4"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				alexscaves:radrock_uranium_ore
+			]
+			highlightColor: "#00FC00"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				galosphere:silver_ore
+				galosphere:deepslate_silver_ore
+			]
+			highlightColor: "#AFCCCC"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
+				minecraft:amethyst_block
+				minecraft:budding_amethyst
+			]
+			highlightColor: "#A477EE"
+			transition: true
+			effectRadius: 32
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"Restriction Data": {
+		"stage": "chapter_2",
+		"itemList": [],
+		"modList": [],
+		"tagList": [
+			"adj:locked_until/light/chapter_2"
+		],
+		"exceptionList": [
+			{
+				"tag": "adj:locked_until/exceptions/chapter_2"
+			}
+		],
+		"structureList": [],
+		"mobList": [],
+		"containerList": [],
+		"dimensionList": []
+	},
+	"Settings": {
+		"advancedTooltips": "NONE",
+		"dropItemsFromInventory": false,
+		"dropArmorFromInventory": false,
+		"canPickupItems": true,
+		"itemsPickupDelay": 15,
+		"hideInJEI_REI": true,
+		"canUseItems": true,
+		"containerListWhitelist": false,
+		"canBreakBlocks": true,
+		"canRightClickBlocks": true
+	}
+}

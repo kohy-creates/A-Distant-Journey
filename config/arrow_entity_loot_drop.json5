@@ -1,0 +1,6 @@
+{
+	// The chance an Arrow stored in an Entity will NOT drop. Range: 0-1 (0%-100%)
+	"arrowBreakingChance": 0.25,
+	// The chance of the non-default arrow persisting when dropped after entity kill. Range: 0-1 (0%-100%)
+	"preserveNonDefaultChance": 0.25
+}

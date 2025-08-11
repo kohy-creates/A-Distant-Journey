@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 9,
+  "currentVersion": "0.0.1",
+  "modpackName": "A Distant Journey",
+  "modpackAuthor": "kohara",
+  "modpackReleaseType": "stable",
+  "updateCheckerId": "https://raw.githubusercontent.com/koharas-Basement/ADJ-Update-Checker/main/",
+  "advanced": {
+    "bccEnabled": false,
+    "expandButton": true,
+    "updateCheckerType": 2,
+    "retroWarning": false,
+    "modpackMods": []
+  }
+}

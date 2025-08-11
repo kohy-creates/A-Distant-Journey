@@ -1,0 +1,22 @@
+
+[Visuals]
+	#
+	# Replaces the default clouds in the Skylands with more plentiful, and fluffier ones.
+	# Default: true
+	extra_skylands_clouds = true
+	#
+	# Replaces the default cloud rendering with the fluffy clouds found in the Skylands.
+	# Default: false
+	override_vanilla_clouds = true
+	#
+	# The intensity percentage of the screen shake caused by various things in the mod. Can be disabled if set to 0
+	# Default: 100
+	#Range: 0 ~ 100
+	screen_shake_intensity = 100
+
+[Holiday]
+	#
+	# Allows April Fool's day effects to appear on April 1st
+	# Default: true
+	allow_april_fools = false
+

@@ -1,0 +1,23 @@
+{
+	// Whether a message should be sent in the chat of how much the screenshot size was compressed.
+	"sendScreenshotCompressMessage": false,
+	// If the original, uncompressed, screenshot should be saved in ./screenshots/original/.
+	"keepOriginalScreenshot": false,
+	// The quality of the compressed screenshot. 0 is the strongest compression, 1 the weakest.
+	// min: 0.0, max: 1.0
+	"compressionQuality": 0.0,
+	// By default on 100%, so disabled. Resize taken screenshots to a lower resolution, while maintaining the aspect ratio. A lower number, means a lower file size.
+	// min: 1, max: 100
+	"screenshotResizePercentage": 100,
+	// Whether the screenshot's alpha channel should be removed. This means the PNG doesn't support transparancy, but since Minecraft screenshots don't have that it's safe to use.
+	"stripPngAlphaChannel": true,
+	// If the screenshot metadata should be kept or not. When removes, it lowers the file size slightly.
+	"stripScreenshotMetadata": false,
+	// Limits the number of colors used in the image to improve compression. When enabled, fewer colors are used, which reduces the file size but may alter the image’s appearance slightly.
+	"reduceAmountOfColours": false,
+	// The amount of colours that are used when 'reduceAmountOfColours' is enabled.
+	// min: 0, max: 256
+	"reducedColourAmount": 256,
+	// Controls the reduction of color gradients to improve compression. When enabled, it simplifies color transitions, either by smoothing or adding noise, to reduce file size while maintaining visual quality.
+	"reduceGradient": false
+}

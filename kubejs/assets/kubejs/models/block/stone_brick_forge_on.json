@@ -1,0 +1,6 @@
+{
+  "parent": "kubejs:block/stone_brick_forge",
+  "textures": {
+    "front": "kubejs:block/stone_brick_forge_front_on"
+  }
+}

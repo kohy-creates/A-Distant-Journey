@@ -1,0 +1,133 @@
+
+["Mana Spreader Config"]
+	#How much mana should the spreader pass each burst
+	#Default [160]
+	#Range: > 0
+	"Mana each burst" = 200
+	#How much mana can the spreader contain
+	#Default [1000]
+	#Range: > 0
+	"Max mana" = 1000
+	#The hexadecimal color of the mana burst
+	#Putting an invalid color can, and will, break stuff :)
+	#From what I know it doesn't support opacity
+	#Default [#20FF20]
+	"Burst color" = "#20FF20"
+	#The hexadecimal color of the mana in the hud
+	#Same as the burst color, be sure the color is valid
+	#Default [#00FF00]
+	"HUD color" = "#00FF00"
+	#How much tick should pass before the burst starts losing mana
+	#As always 20 ticks => 1 second
+	#Default [60]
+	#Range: > 0
+	"Pre loss tick" = 60
+	#How much mana should be lost each tick after the PreLossTick expires
+	#Default [4.0]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Loss tick" = 4.0
+	#The speed of the mana burst
+	#Values to high can break stuff
+	#Default [1.0]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Burst speed" = 1.0
+
+["Redstone Mana Spreader Config"]
+	#How much mana should the spreader pass each burst
+	#Default [160]
+	#Range: > 0
+	"Mana each burst" = 150
+	#How much mana can the spreader contain
+	#Default [1000]
+	#Range: > 0
+	"Max mana" = 800
+	#The hexadecimal color of the mana burst
+	#Putting an invalid color can, and will, break stuff :)
+	#From what I know it doesn't support opacity
+	#Default [#FF2020]
+	"Burst color" = "#FF2020"
+	#The hexadecimal color of the mana in the hud
+	#Same as the burst color, be sure the color is valid
+	#Default [#FF0000]
+	"HUD color" = "#FF0000"
+	#How much tick should pass before the burst starts losing mana
+	#As always 20 ticks => 1 second
+	#Default [60]
+	#Range: > 0
+	"Pre loss tick" = 60
+	#How much mana should be lost each tick after the PreLossTick expires
+	#Default [4.0]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Loss tick" = 4.0
+	#The speed of the mana burst
+	#Values to high can break stuff
+	#Default [1.0]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Burst speed" = 1.0
+
+["Elven Mana Spreader Config"]
+	#How much mana should the spreader pass each burst
+	#Default [240]
+	#Range: > 0
+	"Mana each burst" = 400
+	#How much mana can the spreader contain
+	#Default [1000]
+	#Range: > 0
+	"Max mana" = 2000
+	#The hexadecimal color of the mana burst
+	#Putting an invalid color can, and will, break stuff :)
+	#From what I know it doesn't support opacity
+	#Default [#FF45C4]
+	"Burst color" = "#FF45C4"
+	#The hexadecimal color of the mana in the hud
+	#Same as the burst color, be sure the color is valid
+	#Default [#FF00AE]
+	"HUD color" = "#FF00AE"
+	#How much tick should pass before the burst starts losing mana
+	#As always 20 ticks => 1 second
+	#Default [80]
+	#Range: > 0
+	"Pre loss tick" = 80
+	#How much mana should be lost each tick after the PreLossTick expires
+	#Default [4.0]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Loss tick" = 5.0
+	#The speed of the mana burst
+	#Values to high can break stuff
+	#Default [1.0]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Burst speed" = 1.2
+
+["Gaia Mana Spreader Config"]
+	#How much mana should the spreader pass each burst
+	#Default [640]
+	#Range: > 0
+	"Mana each burst" = 800
+	#How much mana can the spreader contain
+	#Default [6400]
+	#Range: > 0
+	"Max mana" = 8000
+	#The hexadecimal color of the mana burst
+	#Putting an invalid color can, and will, break stuff :)
+	#From what I know it doesn't support opacity
+	#Default [#20FF20]
+	"Burst color" = "#20FF20"
+	#The hexadecimal color of the mana in the hud
+	#Same as the burst color, be sure the color is valid
+	#Default [#00FF00]
+	"HUD color" = "#00FF00"
+	#How much tick should pass before the burst starts losing mana
+	#As always 20 ticks => 1 second
+	#Default [120]
+	#Range: > 0
+	"Pre loss tick" = 120
+	#How much mana should be lost each tick after the PreLossTick expires
+	#Default [20.0]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Loss tick" = 20.0
+	#The speed of the mana burst
+	#Values to high can break stuff
+	#Default [1.0]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Burst speed" = 1.4
+

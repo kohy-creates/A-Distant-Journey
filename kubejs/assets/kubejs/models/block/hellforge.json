@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "kubejs:block/hellforge_top",
+    "front": "kubejs:block/hellforge_front",
+    "side": "minecraft:block/chiseled_nether_bricks"
+  }
+}

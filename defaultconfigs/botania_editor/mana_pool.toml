@@ -1,0 +1,13 @@
+
+["Mana Pool Config"]
+	#Mana pool mana
+	#How much mana can a mana pool contain [1000000]
+	#This only affects mana pools placed after the configs is changed!
+	#Range: > 0
+	"Mana Pool Max Mana" = 1000000
+	#Diluted mana pool mana
+	#How much mana can a diluted mana pool contain [10000]
+	#This only affects mana pools placed after the configs is changed!
+	#Range: > 0
+	"Diluted Mana Pool Max Mana" = 10000
+

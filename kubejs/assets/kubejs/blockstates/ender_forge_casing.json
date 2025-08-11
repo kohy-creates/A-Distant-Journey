@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"": {
+			"model": "kubejs:block/ender_forge_casing"
+		}
+	}
+}

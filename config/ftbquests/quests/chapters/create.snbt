@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "266DD5C3D1FE65EA"
+	id: "50D5FA1B376C34B5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Creating a Factory"
+}

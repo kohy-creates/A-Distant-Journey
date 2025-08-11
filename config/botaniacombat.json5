@@ -1,0 +1,78 @@
+{
+	// Modifier of dagger damage amount relative to tier damage
+	"daggerDamageModifier": -3,
+	// Modifier of dagger speed relative to default speed (4)
+	"daggerSpeed": -1.600000023841858,
+	// Whether or not the Slaughtersaw can ONLY hit entities in the #botaniacombat:meaty entity tag
+	"slaughtersawRestricted": false,
+	// Modifier of Slaughtersaw damage amount relative to Manasteel tier damage
+	"slaughtersawDamageModifier": -5.0,
+	// Modifier of Slaughtersaw speed relative to default speed (4)
+	"slaughtersawSpeed": -2.0,
+	// Modifier of spear damage amount relative to tier damage
+	"spearDamageModifier": 0,
+	// Modifier of spear speed relative to default speed (4)
+	"spearSpeed": -2.799999952316284,
+	// Modifier of Soulstaff damage amount relative to Manasteel tier damage
+	"soulstaffDamageModifier": -1,
+	// Modifier of Soulstaff speed relative to default speed (4)
+	"soulstaffSpeed": -2.299999952316284,
+	// Modifier of Gaia Greatsword damage amount relative to Terrasteel tier damage
+	"greatswordDamageModifier": 4,
+	// Modifier of Gaia Greatsword speed relative to default speed (4)
+	"greatswordSpeed": -3.0,
+	// Modifier of Mjolnir damage relative to Terrasteel tier damage
+	"mjolinirDamageModifier": 4,
+	// Modifier of Mjolnir speed relative to default speed (4)
+	"mjolnirSpeed": -2.799999952316284,
+	"rangedItemConfig": {
+		// Damage of both Livingwood and Crystal crossbows
+		"crossbowDamage": 9.0,
+		// Pull time in ticks of Livingwood Crossbow
+		"livingwoodPullTime": 25,
+		// Pull time in ticks of Crystal Crossbow
+		"crystalPullTime": 15,
+		// Base damage of Skadi Bow (does not account for velocity)
+		"skadiDamage": 10.0,
+		// Pull time in ticks of Skadi Bow
+		"skadiPullTime": 30
+	},
+	"botaniaNerfsConfig": {
+		// Conform Soulscribe to Dagger stats specified above (extra Enderman damage is unchanged)
+		"conformSoulscribe": true,
+		// Adds negative movespeed modifier to Terrasteel Armor
+		"slowTerraArmor": false,
+		// Keep in mind this is in addition to 100 mana per durability. This mana is lost and not propagated to the beam. If set, mana is required for firing beams
+		"terrasteelBeamCost": 0,
+		// Terrasteel weapon projectile damage
+		"terraBladeDamage": 7.0,
+		// Chakram damage, poison/fire damage is unchanged
+		"chakramDamage": 12.0,
+		// Keep in mind this is in addition to 120 mana per durability. If set, mana is required for summoning stars
+		"starcallerProjectileCost": 0,
+		// Starcaller projectile
+		"fallingStarNormalDamage": 12.0,
+		// Starcaller projectile, 25% chance of using this instead of normal damage
+		"fallingStarHighDamage": 16.0,
+		// Missile from Unstable Reservoir Rod (does not effect Gaia Gaurdian)
+		"missileDamage": 7.0,
+		// Flugel Tiara mana cost per tick
+		"tiaraCost": 50,
+		// Flugel Tiara mana cost per tick when flight meter is empty and Eye of the Flugel is in inventory
+		"tiaraOverkillCost": 105,
+		// Additional time to be removed from the tiara each tick of flight (should be positive). 0 = 60 secs max (default lexicon is wrong), 1 = 30 secs, 2 = 15 secs, etc
+		"tiaraExtraTime": 0,
+		// (Client Only) Force the flight bar to move this many rows up/down
+		"tiaraAdditionalRow": 0,
+		// Mana cost of firing Mana Blaster
+		"manaBlasterCost": 120,
+		// Damaging Lens damage, recommended to lower if RWAPI is installed
+		"dmgLensDamage": 8.0,
+		// Ring of Odin health modifier amount
+		"odinHealthMod": 0.20000000298023224,
+		// Ring of Odin operation: ADDITION/MULTIPLY_BASE/MULTIPLY_TOTAL
+		"odinHealthOperation": "MULTIPLY_TOTAL",
+		// Key of King's Law projectile damage; explosion power (and the damage from explosion) is unaffected
+		"babylonDamage": 20.0
+	}
+}

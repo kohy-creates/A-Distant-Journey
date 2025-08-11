@@ -1,0 +1,38 @@
+
+["Orechid Config"]
+	#Cost of orechid each block
+	#How much mana should orechid consume each block [17500]
+	#Range: > 1
+	"Orechid cost" = 17500
+	#Cost of orechid ignem each block
+	#How much mana should orechid ignem consume each block [20000]
+	#Range: > 1
+	"Orechid ignem Cost" = 20000
+	#Cost of orechid each block in garden of glass
+	#How much mana should orechid consume each block, when in a garden of glass word [700]
+	#Usually this cost is lower than the normal, but it's not a rule
+	#Range: > 1
+	"Orechid cost GOG" = 700
+	#Ticks between a block conversion and the other
+	#How much time should the orechid wait before attempting to convert another block [100]
+	#This affects both orechid and orechid ignem
+	#Range: > 1
+	"Orechid delay" = 120
+	#Ticks between a block conversion and the other in garden of glass
+	#How much time should the orechid wait before attempting to convert another block, when in a garden of glass word [2]
+	#Usually this delay is lower than the normal, but it's not a rule
+	#Range: > 1
+	"Orechid delay GOG" = 2
+	#Horizontal range of orechid
+	#The range of the square where the orechid checks if there are convertible blocks [5]
+	#Increasing this too much could cause lag since a lot of blocks are being checked
+	#This affects both orechid and orechid ignem
+	#Range: > 1
+	"Orechid range" = 5
+	#Vertical range of orechid
+	#The height of the cube where the orechid checks if there are convertible blocks [3]
+	#Increasing this too much could cause lag since a lot of blocks are being checked
+	#This affects both orechid and orechid ignem
+	#Range: > 1
+	"Orechid range Y" = 3
+

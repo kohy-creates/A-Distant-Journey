@@ -1,0 +1,137 @@
+{
+  "main": {
+    "0": {
+      "title": "Move your mouse and Left Click to select",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:paper\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.open_menu",
+          "toggle": false
+        }
+      }
+    },
+    "1": {
+      "title": "Voice Chat Settings (Hotkey: V)",
+      "icon": {
+        "stack": "{Count:1b,id:\"supplementaries:speaker_block\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.voice_chat",
+          "toggle": false
+        }
+      }
+    },
+    "2": {
+      "title": "Advancements",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:stone\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.advancements",
+          "toggle": false
+        }
+      }
+    },
+    "5": {
+      "title": "Shaders",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:cherry_sapling\"}"
+      },
+      "action": {
+        "category": "Shaders"
+      }
+    },
+    "6": {
+      "title": "Armor Visual Settings",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:iron_chestplate\",tag:{Damage:0}}"
+      },
+      "action": {
+        "key": {
+          "key": "key.showmeyourskin.open_settings",
+          "toggle": false
+        }
+      }
+    }
+  },
+  "Shaders": {
+    "4": {
+      "title": "Open Shader Selection",
+      "icon": {
+        "stack": "{Count:1b,ForgeCaps:{Parent:{Items:[],Size:0}},id:\"unusualend:bolok_research_notes\"}"
+      },
+      "action": {
+        "key": {
+          "key": "iris.keybind.shaderPackSelection",
+          "toggle": false
+        }
+      }
+    },
+    "5": {
+      "title": "Reload Shaders",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:clock\"}"
+      },
+      "action": {
+        "key": {
+          "key": "iris.keybind.reload",
+          "toggle": false
+        }
+      }
+    },
+    "6": {
+      "title": "Toggle Shaders",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:lever\"}"
+      },
+      "action": {
+        "key": {
+          "key": "iris.keybind.toggleShaders",
+          "toggle": false
+        }
+      }
+    }
+  },
+  "Voice Chat": {
+    "0": {
+      "title": "Mute",
+      "icon": {
+        "stack": "{Count:1b,id:\"supplementaries:speaker_block\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.mute_microphone",
+          "toggle": false
+        }
+      }
+    },
+    "1": {
+      "title": "Disable Voice Chat",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:redstone_block\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.disable_voice_chat",
+          "toggle": false
+        }
+      }
+    },
+    "9": {
+      "title": "Voice Chat Settings",
+      "icon": {
+        "stack": "{Count:1b,id:\"etched:album_jukebox\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.voice_chat_settings",
+          "toggle": false
+        }
+      }
+    }
+  }
+}

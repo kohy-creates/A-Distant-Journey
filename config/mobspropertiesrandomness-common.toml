@@ -1,0 +1,6 @@
+
+["M p r base"]
+	#If true creeper lingering clouds size changes based off their explosion radius.
+	"Better creeper lingering" = true
+	"Verbose log" = false
+

@@ -1,0 +1,814 @@
+{
+	autofocus_id: "6013A3AD20AB6F78"
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "botania"
+	group: "06918EFE2A3328D6"
+	hide_quest_details_until_startable: true
+	icon: "botania:lexicon"
+	id: "53B7EA892E14DB2F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["026E22A534C341CC"]
+			description: [
+				"Welcome to &2Botania&r!"
+				""
+				"A 'hidden gem' in Minecraft mods. "
+				"Saying &ohidden because while it does have 150M downloads (as of writing this description), most modpacks I've played included it purely to include it without really showcasing what the mod is good for."
+				""
+				"And believe me, it can do a ton of things..."
+				" "
+				"{@pagebreak}"
+				"Botania is a &dmagic&r/&btech&r mod that is all about &b&lMana&r."
+				""
+				"&7&o'Mana is an ethereal substance-- in essence, it's a mystical form of energy. Its existence is inconsistent to the senses, and its color depends on its surrounding environment."
+				""
+				"&7&oThe manipulation of Mana is likely the most important skill a botanist needs to master.'"
+				"                 &7&o~Lexica Botania"
+				""
+				""
+				"{@pagebreak}"
+				"&2Botania&r has its own guide book - &e&lLexica Botania&r."
+				""
+				"{image:botania:item/lexicon width:100 height:100 align:center}"
+				""
+				"If you don't like reading guide books, then fear not! Every item was given a description that takes information straight out of the book itself, making it almost not required at all."
+				""
+				"{@pagebreak}"
+				"If you are already familiar with &2Botania&r, this page is important for you to read."
+				""
+				"Most generating flora was changed when it comes to &bMana&r production:"
+				"- Early-game mana generators were buffed to speed up progression"
+				"- Mid-game mana generators have had their numbers shuffled around to make the harder to automate ones (or simply the less viable ones) more efficient."
+				"- End-game generators have had their numbers shuffled around too (especially with Dandelifeons, they are one of the best generators now)."
+			]
+			icon: "botania:lexicon"
+			icon_scale: 0.75d
+			id: "50E23CFDE69DC684"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Magic, tech. Naturally."
+			tasks: [{
+				id: "751250953F8F8CB2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				}
+				title: "Any Mystical Flower"
+				type: "item"
+			}]
+			title: "Botania"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50E23CFDE69DC684"]
+			description: [""]
+			icon: "botania:red_petal"
+			id: "193CFF98260F82B7"
+			subtitle: "Turn a Mystical Flower into colored Petals"
+			tasks: [{
+				id: "7C907D9BAF4E5DB9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:petals"
+					}
+				}
+				title: "Any Petals"
+				type: "item"
+			}]
+			title: "Petal Power"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["193CFF98260F82B7"]
+			description: [""]
+			icon: "botania:apothecary_default"
+			id: "6013A3AD20AB6F78"
+			subtitle: "Craft a Petal Apothecary"
+			tasks: [{
+				id: "576CE5555CBB7C95"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:petal_apothecary"
+					}
+				}
+				title: "Petal Apothecary"
+				type: "item"
+			}]
+			title: "Botanical Crafts"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6013A3AD20AB6F78"]
+			description: [""]
+			icon: "botania:pure_daisy"
+			id: "45C4613857B5FBB1"
+			subtitle: "Plant a Pure Daisy"
+			tasks: [{
+				id: "47CA277918FB6597"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			title: "Purity Overdrive"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"45C4613857B5FBB1"
+				"4389F7F895342C2A"
+			]
+			id: "35B5E5B6F7CC021D"
+			subtitle: "Place down a Mana Pool"
+			tasks: [
+				{
+					id: "4745303AED988F56"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					block: "botania:mana_pool"
+					block_type: 0
+					id: "30CD6208FCF49D20"
+					replace: false
+					replaced: "minecraft:air"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "Bank of Magic"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6013A3AD20AB6F78"]
+			description: [""]
+			icon: "botania:endoflame"
+			id: "3D75A7B6B23BC097"
+			subtitle: "Craft your first Generating Flora"
+			tasks: [{
+				id: "30607C51C3689C10"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "botania:endoflame"
+							}
+							{
+								Count: 1b
+								id: "botania:hydroangeas"
+							}
+						]
+					}
+				}
+				title: "Hydroangea or Endoflame"
+				type: "item"
+			}]
+			title: "First Power Plant"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3D75A7B6B23BC097"
+				"45C4613857B5FBB1"
+				"5F471ABAA31A0667"
+			]
+			id: "4389F7F895342C2A"
+			subtitle: "Place down a Mana Spreader"
+			tasks: [
+				{
+					id: "46916F845D9BD022"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+				{
+					block: "botania:mana_spreader"
+					block_type: 0
+					id: "3067B7E7D1B1F4CF"
+					replace: false
+					replaced: "minecraft:air"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "Transporting Magic"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["45C4613857B5FBB1"]
+			description: [""]
+			id: "5F471ABAA31A0667"
+			subtitle: "Craft a Wand of The Forest"
+			tasks: [{
+				id: "3EA6084494C19F2D"
+				item: {
+					Count: 1
+					id: "botania:twig_wand"
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Floral Commmander"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["35B5E5B6F7CC021D"]
+			description: [""]
+			id: "68A247EB4F6079CA"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a Diluted Mana Pool"
+			tasks: [{
+				id: "27238622CA6F7C1E"
+				item: "botania:diluted_pool"
+				type: "item"
+			}]
+			title: "Smaller Storage"
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["35B5E5B6F7CC021D"]
+			icon: "botania:mana_diamond"
+			id: "0AA4AD4290EE5366"
+			subtitle: "Toss in an item into a partially filled Mana Pool and infuse it"
+			tasks: [{
+				id: "7D1BDC304C5AF94F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "botania:mana_string"
+							}
+							{
+								Count: 1b
+								id: "botania:mana_pearl"
+							}
+							{
+								Count: 1b
+								id: "botania:manasteel_ingot"
+							}
+							{
+								Count: 1b
+								id: "botania:mana_diamond"
+							}
+							{
+								Count: 1b
+								id: "botania:mana_powder"
+							}
+						]
+					}
+				}
+				title: "Any Mana-infused item"
+				type: "item"
+			}]
+			title: "Mana Infusion"
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0AA4AD4290EE5366"]
+			description: ["&7Hint:&r Manasteel equipment regenerates &bMana&r from &bMana Tablets&r in your inventory."]
+			icon: {
+				Count: 1
+				id: "botania:manasteel_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7FE9B5AB124013D2"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft an armor set out of Manasteel"
+			tasks: [
+				{
+					id: "060E07625496EA96"
+					item: {
+						Count: 1
+						id: "botania:manasteel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5875057DCBCA9752"
+					item: {
+						Count: 1
+						id: "botania:manasteel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6F3487E211F69F7B"
+					item: {
+						Count: 1
+						id: "botania:manasteel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "762C8F73BE4A260D"
+					item: {
+						Count: 1
+						id: "botania:manasteel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Manaforged"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0AA4AD4290EE5366"]
+			icon: "botania:runic_altar"
+			id: "602FA24B60010322"
+			subtitle: "Craft and place a Runic Altar"
+			tasks: [
+				{
+					id: "617E27BF7C42C61E"
+					item: "botania:runic_altar"
+					type: "item"
+				}
+				{
+					block: "botania:runic_altar"
+					block_type: 0
+					id: "3FB077512F97CFC4"
+					replace: false
+					replaced: "minecraft:air"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "Runified!"
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["24F68EF7693C83A1"]
+			hide_dependency_lines: true
+			icon: "botania:rune_earth"
+			id: "5B1E6DC773B2B75C"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft every elemental rune"
+			tasks: [
+				{
+					id: "3EA85584717F702C"
+					item: "botania:rune_water"
+					type: "item"
+				}
+				{
+					id: "39AF9C8973FD086F"
+					item: "botania:rune_fire"
+					type: "item"
+				}
+				{
+					id: "121F472CCBE4C8A5"
+					item: "botania:rune_earth"
+					type: "item"
+				}
+				{
+					id: "55CE06C376C3CD09"
+					item: "botania:rune_air"
+					type: "item"
+				}
+			]
+			title: "Rune Collection: Elements"
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["24F68EF7693C83A1"]
+			hide_dependency_lines: true
+			icon: "botania:rune_spring"
+			id: "055D249C76639C5D"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft every seasonal rune"
+			tasks: [
+				{
+					id: "37524B7E7976EAF1"
+					item: "botania:rune_spring"
+					type: "item"
+				}
+				{
+					id: "6A72BAD88575E13B"
+					item: "botania:rune_spring"
+					type: "item"
+				}
+				{
+					id: "2330B8BACF775C5D"
+					item: "botania:rune_autumn"
+					type: "item"
+				}
+				{
+					id: "475B44D1D51269D5"
+					item: "botania:rune_winter"
+					type: "item"
+				}
+			]
+			title: "Rune Collection: Seasons"
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["24F68EF7693C83A1"]
+			hide_dependency_lines: true
+			icon: "botania:rune_lust"
+			id: "67CBFE98BCA401BD"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft every deadly sin rune"
+			tasks: [
+				{
+					id: "432E786F18A3181F"
+					item: "botania:rune_pride"
+					type: "item"
+				}
+				{
+					id: "629E5E9BE35D6C3A"
+					item: "botania:rune_envy"
+					type: "item"
+				}
+				{
+					id: "4E0BAE3511CF8E44"
+					item: "botania:rune_wrath"
+					type: "item"
+				}
+				{
+					id: "68204596070796DF"
+					item: "botania:rune_sloth"
+					type: "item"
+				}
+				{
+					id: "09AAE5C90B542A5D"
+					item: "botania:rune_greed"
+					type: "item"
+				}
+				{
+					id: "32786A9E9F9A6AD6"
+					item: "botania:rune_gluttony"
+					type: "item"
+				}
+				{
+					id: "28FFB5FCA894BE3E"
+					item: "botania:rune_lust"
+					type: "item"
+				}
+			]
+			title: "Rune Collection: Deadly Sins"
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["24F68EF7693C83A1"]
+			hide_dependency_lines: true
+			icon: "botania:rune_mana"
+			id: "3D3BA5103B3F9C89"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft every rune that doesn't belong to any family"
+			tasks: [
+				{
+					id: "70E422FA46F9920A"
+					item: "botania:rune_mana"
+					type: "item"
+				}
+				{
+					id: "5F7F66673BDE950C"
+					item: "botanicadds:rune_tp"
+					type: "item"
+				}
+				{
+					id: "6B8EC715481BDAE9"
+					item: "botanicadds:rune_energy"
+					type: "item"
+				}
+			]
+			title: "Rune Collection: Other"
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["602FA24B60010322"]
+			icon: "botania:rune_water"
+			id: "24F68EF7693C83A1"
+			subtitle: "Craft a Rune at a Runic Altar"
+			tasks: [{
+				id: "0AC209AAFBBB6CAE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:runes"
+					}
+				}
+				title: "Any Rune"
+				type: "item"
+			}]
+			title: "Drop Pop Candy!"
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["24F68EF7693C83A1"]
+			description: [
+				"&7Hint: &fUnsure what to do with the &eSparks&r?"
+				""
+				"It's VERY simple - just place one on top of a &bMana Pool&r and the second one on the &9Agglomeration Plate&f. They will share &bMana&r automatically whenever needed."
+			]
+			icon: "botania:terra_plate"
+			id: "2BF3097896646CA9"
+			subtitle: "Craft a Terrestrial Agglomeration Plate"
+			tasks: [
+				{
+					id: "51BD21259919F2CE"
+					item: "botania:terra_plate"
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					id: "267CB988C6E40DDE"
+					ignoreState: true
+					layer: true
+					name: "terra_plate"
+					rightclick: false
+					title: "Build a Terrestrial Aglomeration Plate"
+					type: "questsadditions:structure"
+				}
+				{
+					count: 2L
+					id: "4837AE9F38C950F3"
+					item: { Count: 2, id: "botania:spark" }
+					type: "item"
+				}
+			]
+			title: "Ma-nuclear Fusion"
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"2BF3097896646CA9"
+				"0AA4AD4290EE5366"
+			]
+			id: "356CC1FA4E52AD00"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft a Terrasteel Ingot"
+			tasks: [{
+				id: "2218631B34E3757E"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			title: "Dancer in the Dark"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"356CC1FA4E52AD00"
+				"7FE9B5AB124013D2"
+			]
+			description: ["&7Hint:&r Same as &9Manasteel equipment&r, &aTerrasteel gear&r can regenerate lost durability from &bMana Tablets&r in your inventory"]
+			icon: {
+				Count: 1
+				id: "botania:terrasteel_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6F289A9F12CC64B9"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a full set of Terrasteel armor"
+			tasks: [
+				{
+					id: "503A2D86FF11E0A5"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D1D1E3CD0D0A049"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6443240B4F264BD3"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D8D6C04B5638020"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Terraforged"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["356CC1FA4E52AD00"]
+			icon: "botania:alfheim_portal"
+			id: "5658376D04F1E8AE"
+			subtitle: "Open an Alfheim Portal"
+			tasks: [
+				{
+					id: "71479690142B487F"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					id: "5DD00A555212A5E8"
+					ignoreState: true
+					layer: true
+					name: "elven_portal"
+					rightclick: false
+					type: "questsadditions:structure"
+				}
+				{
+					count: 2L
+					id: "48B1E193E1B7C033"
+					item: { Count: 2, id: "botania:natura_pylon" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7C6372ACA948B356"
+					item: { Count: 3, id: "botania:glimmering_livingwood_log" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "18FE320AA8295640"
+					item: "botania:livingwood_log"
+					type: "item"
+				}
+			]
+			title: "To Another Realm! Kinda..."
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5658376D04F1E8AE"]
+			icon: "botanicadds:elven_altar"
+			id: "2592E5F46B3D4C5E"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Upgrade your stations using materials from Alfheim"
+			tasks: [
+				{
+					id: "5A4B595F42FA6418"
+					item: "botanicadds:elven_altar"
+					type: "item"
+				}
+				{
+					id: "7E67DA4DC7AA6EE3"
+					item: "botanicadds:elven_brewery"
+					type: "item"
+				}
+				{
+					id: "6E7FFD67851C8170"
+					item: "botanicadds:dreaming_pool"
+					type: "item"
+				}
+			]
+			title: "Elven Upgrads"
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["24F68EF7693C83A1"]
+			id: "183493A4B4283839"
+			subtitle: "Craft a Botanical Brewery"
+			tasks: [{
+				id: "3CAD89A39EA861BF"
+				item: "botania:brewery"
+				type: "item"
+			}]
+			title: "Childhood Blues"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5658376D04F1E8AE"]
+			icon: "botania:dragonstone"
+			id: "4B3625869C4E7079"
+			subtitle: "Trade your mana-infused items for their elven equivalents"
+			tasks: [
+				{
+					id: "340986F751BD16B3"
+					item: "botania:dragonstone"
+					type: "item"
+				}
+				{
+					id: "52D0AC6A757DA93E"
+					item: "botania:pixie_dust"
+					type: "item"
+				}
+				{
+					id: "00D5FE0460C2682B"
+					item: "botania:elementium_ingot"
+					type: "item"
+				}
+			]
+			title: "Elven Resources"
+			x: 6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["35B5E5B6F7CC021D"]
+			id: "1701D7122A9FDADA"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a Mana Tablet"
+			tasks: [{
+				id: "37BD1C1A13685B4E"
+				item: "botania:mana_tablet"
+				type: "item"
+			}]
+			title: "It's Portable Though!"
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2BF3097896646CA9"]
+			id: "756FFC233E13D545"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Craft an Ender Air Bottle"
+			tasks: [{
+				id: "460F4ADD6879D6ED"
+				item: "botania:ender_air_bottle"
+				type: "item"
+			}]
+			title: "Otherworldy Fumes"
+			x: 10.5d
+			y: 5.25d
+		}
+	]
+	title: "Magical Botanics"
+}

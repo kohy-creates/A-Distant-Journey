@@ -1,0 +1,59 @@
+
+#Tools
+[tools]
+	#Chance (0 - 1) to prevent durability loss. Default: 0.5 (50%)
+	#Set to 0 to disable or 1 to make all items unbreakable
+	#Range: 0.0 ~ 1.0
+	DURABILITY_SAVE_CHANCE = 0.33
+	#Chance (0 - 1) to treat blocks as if they were mined with Fortune higher by 1
+	#This also applies to breaking blocks without Fortune. Set to 0 to disable
+	#Range: 0.0 ~ 1.0
+	EXTRA_FORTUNE_CHANCE = 1.0
+	#Delay in ticks after which shield will start blocking damage
+	#5 is vanilla, 0 is immediately
+	#Range: > 0
+	SHIELD_DELAY = 0
+	#Inaccuracy of bows
+	#1 is vanilla
+	#Range: 0.0 ~ 90.0
+	BOW_INACCURACY = 1.8
+	#Durability multiplier for items enchanted with Unbreaking
+	#Range: 1.0 ~ 1.7976931348623157E308
+	UNBREAKNG_DURABILITY_MULTIPLIER = 2.0
+	#Removes curio slots other than this one. Also assigns all curios to the specified slot.
+	#Probably case sensitive
+	CURIO_TYPE_TO_KEEP = "accessory"
+	#What enchantment causes Curios to be kept?
+	#Set to a placeholder so that it doesn't crash if set to something modded that isn't loaded
+	SOULBOUND_FOR_CURIOS = "sortilege:soulbound"
+
+#Combat
+[combat]
+	#Disables critical attacks
+	DISABLE_CRITS = true
+	#Disables sweep attacks
+	DISABLE_SWEEP_ATTACKS = true
+	#Variates dealt damage by +-% this value
+	#Range: 0.0 ~ 100.0
+	RANDOM_DAMAGE_VARIATION = 10.0
+	#How many armor points for damage to get reduced by 1
+	#Range: 0.0 ~ 1.7976931348623157E308
+	ARMOR_POINT_REDUCTION_FACTOR = 2.0
+	#Minimum damage dealt by an attack after all forms of reductions
+	#Range: 0.0 ~ 100.0
+	MIN_DAMAGE_TAKEN = 0.2
+	#How many damage points per 1 durability lost on block
+	#Range: 1.0 ~ 100.0
+	ARMOR_DURABILITY_DAMAGE_FACTOR = 4.0
+
+#Campfires
+[campfire]
+	#The delay in ticks between Cozy Campfire effect's heals
+	CAMPFIRE_HEAL_RATE = 80
+	#The heal amount of the Cozy Campfire effect
+	CAMPFIRE_HEAL_AMOUNT = 1.0
+	#Radius around the Campfire where players get the effect
+	CAMPFIRE_HEAL_RADIUS = 16.0
+	#Radius around a signal Campfire
+	CAMPFIRE_HEAL_RADIUS_SIGNAL = 32.0
+

@@ -1,0 +1,127 @@
+{
+  "enabled": true,
+  "interval": 40,
+  "entries": [
+    {
+      "block": [
+        "minecraft:gold_ore",
+        "minecraft:deepslate_gold_ore",
+        "minecraft:nether_gold_ore",
+        "minecraft:gilded_blackstone",
+        "mythicmetals:midas_gold_ore",
+        "aether:ambrosium_ore"
+      ],
+      "particle": {
+        "type": "visuality:sparkle",
+        "value": [
+          0.99607843,
+          1.0,
+          0.7411765
+        ]
+      }
+    },
+    {
+      "block": [
+        "mythicmetals:adamantite_ore",
+        "mythicmetals:deepslate_adamantite_ore",
+        "rediscovered:ruby_ore",
+        "rediscovered:deepslate_ruby_ore"
+      ],
+      "particle": {
+        "type": "visuality:sparkle",
+        "value": [
+          1.0,
+          0.74117647,
+          0.74117647
+        ]
+      }
+    },
+    {
+      "block": [
+        "mythicmetals:palladium_ore"
+      ],
+      "particle": {
+        "type": "visuality:sparkle",
+        "value": [
+          1.0,
+          0.8157,
+          0.70196
+        ]
+      }
+    },
+    {
+      "block": [
+        "minecraft:diamond_ore",
+        "minecraft:deepslate_diamond_ore",
+        "mythicmetals:mythril_ore",
+        "mythicmetals:deepslate_mythril_ore",
+        "mythicmetals:runite_ore",
+        "mythicmetals:deepslate_runite_ore",
+        "mythicmetals:aquarium_ore",
+        "mythicmetals:morkite_ore",
+        "mythicmetals:deepslate_morkite_ore",
+        "aether_redux:veridium_ore"
+      ],
+      "particle": {
+        "type": "visuality:sparkle",
+        "value": [
+          0.7058824,
+          0.99215686,
+          0.93333334
+        ]
+      }
+    },
+    {
+      "block": [
+        "minecraft:emerald_ore",
+        "minecraft:deepslate_emerald_ore",
+        "mythicmetals:orichalcum_ore",
+        "mythicmetals:tuff_orichalcum_ore",
+        "mythicmetals:deepslate_orichalcum_ore",
+        "mythicmetals:smooth_basalt_orichalcum_ore",
+        "mythicmetals:prometheum_ore",
+        "mythicmetals:deepslate_prometheum_ore"
+      ],
+      "particle": {
+        "type": "visuality:sparkle",
+        "value": [
+          0.8509804,
+          1.0,
+          0.92156863
+        ]
+      }
+    },
+    {
+      "block": [
+        "minecraft:amethyst_cluster",
+        "mythicmetals:platinum_ore",
+        "mythicmetals:starrite_ore",
+        "mythicmetals:calcite_starrite_ore",
+        "mythicmetals:end_stone_starrite_ore",
+        "mythicmetals:manganese_ore",
+        "mythicmetals:stormyx_ore",
+        "mythicmetals:blackstone_stormyx_ore",
+        "aether:gravitite_ore",
+        "aether:zanite_ore"
+      ],
+      "particle": {
+        "type": "visuality:sparkle",
+        "value": [
+          0.99607843,
+          0.79607844,
+          0.9019608
+        ]
+      }
+    },
+    {
+      "block": [
+        "minecraft:soul_sand",
+        "netherexp:ecto_soul_sand"
+      ],
+      "direction": "up",
+      "particle": {
+        "type": "visuality:soul"
+      }
+    }
+  ]
+}

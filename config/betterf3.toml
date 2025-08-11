@@ -1,0 +1,100 @@
+
+[general]
+	disable_mod = false
+	auto_start = false
+	space_modules = true
+	shadow_text = true
+	animations = false
+	animationSpeed = 1.0
+	fontScale = 1.0
+	background_color = 1867534416
+	hide_debug_crosshair = true
+	hide_sidebar = true
+	hide_bossbar = true
+	always_show_profiler = false
+	always_show_tps = false
+
+[[modules_left]]
+	name = "minecraft"
+	name_color = 10506797
+	value_color = 43520
+	enabled = true
+
+	[modules_left.lines]
+		minecraft = true
+
+[[modules_left]]
+	name = "fps"
+	color_high = 5635925
+	color_med = 16777045
+	color_low = 16733525
+	enabled = true
+
+	[modules_left.lines]
+		fps = true
+
+[[modules_left]]
+	name = "server"
+	name_color = 11184810
+	value_color = 16777045
+	enabled = true
+
+	[modules_left.lines]
+		server_tick = true
+		packets_sent = true
+		packets_received = true
+
+[[modules_left]]
+	name = "location"
+	name_color = 43520
+	value_color = 5636095
+	enabled = true
+
+	[modules_left.lines]
+		dimension = true
+		facing = true
+		rotation = false
+		light = true
+		light_server = false
+		highest_block = false
+		highest_block_server = false
+		biome = true
+		local_difficulty = false
+		day_ticks = false
+		days_played = true
+		slime_chunk = false
+
+[[modules_left]]
+	name = "help"
+	name_color = 16645526
+	value_color = 5636095
+	enabled_color = 5635925
+	disabled_color = 6710886
+	enabled = true
+
+	[modules_left.lines]
+		pie_graph = true
+		fps_tps = true
+		help = true
+
+[[modules_right]]
+	name = "system"
+	name_color = 16755200
+	value_color = 15658734
+	memory_color_toggle = true
+	time_format = "HH:mm:ss"
+	enabled = true
+
+	[modules_right.lines]
+		time = true
+		java_version = false
+		memory_usage = true
+		allocation_rate = true
+		allocated_memory = true
+		cpu = true
+		display = false
+		gpu = true
+		gpu_utilization = true
+		opengl_version = false
+		gpu_driver = true
+

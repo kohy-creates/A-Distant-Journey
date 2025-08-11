@@ -1,0 +1,22 @@
+{
+  "uncap_menu_frame_rate": true,
+  "idle": {
+    "timeout": 180
+  },
+  "states": {
+    "hovered": {
+      "graphics_state": "reduced",
+      "show_toasts": false,
+      "run_garbage_collector": true
+    },
+    "unfocused": {
+      "graphics_state": "reduced"
+    },
+    "invisible": {
+      "graphics_state": "reduced"
+    },
+    "unplugged": {
+      "frame_rate_target": 60
+    }
+  }
+}

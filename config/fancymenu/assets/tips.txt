@@ -1,0 +1,72 @@
+Friendly mobs and players near a Campfire slowly regenerate lost health.
+Natural health regeneration is a lot slower, so consider investing in other sources of health regeneration. The cheapest option is a Campfire.
+Wolves cannot enter The Nether. Just kidding, they totally can.
+Every milestone you achieve will permanently change your world for the worse.
+Tired of the hot flames of The Nether? Why not build a portal out of Glowstone?
+7 Eyes and you can ascend to Godhood.
+A lot of vanilla materials are renewable, which is awesome if you don't like grinding.
+Struggling early-game? Put some Cobblestone in a Millstone and then wash the result using a Fan placed behind flowing water to get some Iron Nuggets. It's a relatively simple early-game farm.
+There are like 2 or 3 different painting mods in ADJ. Perfect if you love decorating interiors.
+Want to create your own Music Discs? Smelt any exising disc and then re-record it in an Etching Table!
+Expierience Obelisks can be used to store your Experience points. You can store/retrieve any amount of levels at any time.
+Use code 'kohara' during checkout for a 25% discount on your first month with BisectHosting!
+Looking to remove a specific enchant? Craft a Precision Dispeller - the cooler cousin of a Grindstone.
+If you hate how slow Spawner EXP farms are, look into how Bibliophages work. It's explained in the 'Becoming a Wizard' advancement chapter.
+Default campaign is not enough for you? Try Hardcore and see how far you can make it.
+Weapons which occupy both hands tend to deal more damage than one-handed ones.
+Efficiency, Sharpness and Power had their max level reduced from V down to III.
+Every item has massively increased durability and has an innate chance to not lose it when used.
+Unbreaking enchantment doubles an item's maximum durability.
+Mobs can notice you from further away and are a lot smarter than in Vanilla, so think twice before diving into a horde of Zombies.
+Having FPS problems? Reducing your graphic settings usually helps, but you can also try allocating more RAM to the game. 6 - 10 gigabytes is recommended.
+Hold M to open your player menu. In it you can find e.g. things related to shaders and voice chat.
+Having any form of a healing spell in your Spellbook is always a good idea, regardless of how quirky you make it.
+You can place Banners on Beds! Just fuse them together in your crafting menu.
+There are fish in the lava oceans in The Nether. You can try to fish them out once you craft a Fishing Rod capable of doing so.
+There are many different schools of magic. You can choose to major in one to receive boosts to spells coming from it. Or you can go for a bunch of smaller boosts to a few!
+The earlier you start getting into Botania, the earlier you can run some incredibly useful farms, like an actual Ore farm to make mining obsolete forever.
+Late-game, you can move a Shulker Spawner from an End City and turn it into a mana-making reactor using Shulk Me Nots!
+You can right-click crops to harvest them. Saying it just before you test it out yourself.
+Nightmare Stalkers will start materializing in the nighttime as soon as you enter The Nether.
+Undead Armies happen when you kill 400 undead mobs in total, or after using an Undead Battle Standar.
+All accessories share the same slot type, so the combo potential is seemingly infinite.
+You can't equip two of the same accessories.
+Try making a Ship. It's barely practical if you don't live at an Ocean, but if you do, it's insanely fun to sail around in it. And it's an efficient mean of transport too!
+Waystones are a mid-game way of getting from one place to another in a matter of seconds. They are however a bit complicated when it comes to crafting them.
+Waystones can only be broken with a pickaxe of the same tier as Netherite.
+Mobs that are currently targetting you will have an indicator shown above their head.
+If you don't see some items you know already in your recipe browser - don't worry! You unlock more and more of them the further you progress.
+Sneak and right-click a Chest with both hands empty to pick it up. You can then place it back anywhere you want. It works with animals too!
+Does your inventory feel too small? Craft a Bundle, a Sack or a Backpack!
+Just in case all the painting mods weren't enough, you can also make your own ones by crafting a Blank Canvas and a Palette. Release your inner Bob Ross.
+Spider Webs will break after a short while if you walk into them.
+If screenshots don't do it for you, you can craft a Camera to capture all of your moments in-game and then place the photos anywhere you want.
+Mutant monsters will start spawning naturally whenever you enter The Aether for the first time.
+An Alloy Forge is the easiest way of processing your ores to get more materials out of them.
+Maintaining a balanced diet will reward you with buffs.
+Stone Tools have been removed and replaced with ones made of Copper.
+Rumors say there is a frozen maze in the coldest regions of the Oceans... And other rumors say the ghost of a fallen captain haunts it...
+Blood Moons happen every once in a while, causing more mobs to crawl out to the surface.
+Harvest Moons cause crops to grow faster than usual.
+During Slimy Moons, Slimes will spawn anywhere on the surface,
+Every season lasts 30 in-game days, or 10 real life hours.
+Construction Wands can help you build your dream base quicker. The Infinity Wand is the most efficient and lasts forever!
+Jumping down on your target no longer critically hits. Critical chance now scales based on a few factors, including (but not limited to) your EXP level.
+Every item can only have up to 3 Enchantments at once. Curses don't occupy those slots, but instead add them, so it's a risk-reward type of scenario.
+You can craft a Nature's Compass to easily locate any biome you want to visit.
+There are a ton of different accessories for you to choose from, so feel free to experiment with what suits your playstyle more!
+A Tinker's Workshop can be used to merge some accessories together to combine or upgrade their effects.
+A lot of potion effects have been nerfed. Resistance and Speed are half as efficient and Strength is now a percentage bonus instead of a flat boost.
+A Target Dummy can help you measure your damage, allowing you to test out and compare different weapons.
+A Sawmill is like a Stonecutter, but for wood.
+Some Saplings won't grow in certain Seasons. Keep that in mind while setting up Charcoal farm for your Create machines.
+Enchanting Infusers allow you to select which enchantments you enchant your items with.
+Did you see all of the new death messages yet?
+This pack doesn't really support any language other than English (US), so please don't report any localization issues.
+Dandelifeons and Shulk me Nots are all good ways to produce lots of Mana late-game.
+Don't confuse Mana generated from magical flora with Mana used to cast spells.
+Legends say this pack was made by a gay furry :3
+You can place a Pet Bed and assign your furry companion to it to allow it to respawn when slain!
+You can't hurt your own pets. At least you shouldn't be able to, according to the mods included.
+Remember to take breaks while playing!
+Place down an Inventory Connector and attach a Storage Terminal to it to create a basic and infinitely expandable storage system.

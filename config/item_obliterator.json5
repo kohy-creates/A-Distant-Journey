@@ -1,0 +1,338 @@
+{
+	// -----------------------------------------------------------
+	//              Item Obliterator by ElocinDev
+	// -----------------------------------------------------------
+	//  
+	// How to add items?
+	//   - They are json strings, so you need to separate each
+	//     entry with a comma, except the last
+	//   - If you start an entry with !, it will be treated as a regular expression
+	//     Example: "!minecraft:.*_sword" to disable all swords
+	//  
+	// -----------------------------------------------------------
+	"configVersion": 2,
+	// Items here will be unusable completely
+	"blacklisted_items": [
+
+		"minecraft:shield",
+		"minecraft:enchanting_table",
+
+		"aquamirae:divider",
+
+		"aether:chainmail_gloves",
+
+		"rediscovered:quiver",
+
+		"backpacked:oak_backpack_shelf",
+		"backpacked:spruce_backpack_shelf",
+		"backpacked:birch_backpack_shelf",
+		"backpacked:jungle_backpack_shelf",
+		"backpacked:dark_oak_backpack_shelf",
+		"backpacked:acacia_backpack_shelf",
+		"backpacked:crimson_backpack_shelf",
+		"backpacked:warped_backpack_shelf",
+		"backpacked:cherry_backpack_shelf",
+
+		"handcrafted:oak_shelf",
+		"handcrafted:spruce_shelf",
+		"handcrafted:birch_shelf",
+		"handcrafted:jungle_shelf",
+		"handcrafted:dark_oak_shelf",
+		"handcrafted:acacia_shelf",
+		"handcrafted:crimson_shelf",
+		"handcrafted:warped_shelf",
+		"handcrafted:cherry_shelf",
+		"handcrafted:bamboo_shelf",
+		"handcrafted:mangrove_shelf",
+		"handcrafted:oak_cupboard",
+		"handcrafted:spruce_cupboard",
+		"handcrafted:birch_cupboard",
+		"handcrafted:jungle_cupboard",
+		"handcrafted:dark_oak_cupboard",
+		"handcrafted:acacia_cupboard",
+		"handcrafted:crimson_cupboard",
+		"handcrafted:warped_cupboard",
+		"handcrafted:cherry_cupboard",
+		"handcrafted:mangrove_cupboard",
+		"handcrafted:bamboo_cupboard",
+
+
+		"netherexp:shotgun_fist",
+		"netherexp:shotgun_core",
+		"netherexp:shotgun_barrel",
+		"netherexp:pump_charge_upgrade_smithing_template",
+		"netherexp:pump_charge_shotgun",
+		
+		"enligthened_end:dashing_leggings_leggings",
+		
+		"experienceobelisk:cognitive_rod",
+		
+		"artifacts:power_glove",
+
+		"spelunkers_charm:crate",
+		"spelunkers_charm:encased_geyser",
+		"spelunkers_charm:rock",
+		"spelunkers_charm:deepslate_rock",
+		"spelunkers_charm:dripstone_rock",
+		"spelunkers_charm:basalt_rock",
+		"spelunkers_charm:redstone_cluster",
+
+		"dungeonsweaponry:weaponry_table",
+		"dungeonsweaponry:longbow",
+		"dungeonsweaponry:shortbow",
+		"dungeonsweaponry:firebrand",
+		"dungeonsweaponry:backstabber",
+		"dungeonsweaponry:battlestaff_of_terror",
+		"dungeonsweaponry:bonebow",
+		"dungeonsweaponry:cursed_axe",
+		"dungeonsweaponry:cutlass",
+		"dungeonsweaponry:dagger",
+		"dungeonsweaponry:dancers_sword",
+		"dungeonsweaponry:double_axe",
+		"dungeonsweaponry:great_axeblade",
+		"dungeonsweaponry:growing_staff",
+		"dungeonsweaponry:highland_axe",
+		"dungeonsweaponry:whispering_spear",
+		"dungeonsweaponry:stormlander",
+		"dungeonsweaponry:fangs_of_frost",
+		"dungeonsweaponry:resolute_tempest_knife",
+		"dungeonsweaponry:sabrewing",
+
+		"mythicmetals:silver_ingot",
+		"mythicmetals:raw_silver",
+		"mythicmetals:silver_nugger",
+		"mythicmetals:silver_helmet",
+		"mythicmetals:silver_chestplate",
+		"mythicmetals:silver_leggings",
+		"mythicmetals:silver_boots",
+		"mythicmetals:silver_block",
+		"mythicmetals:silver_ore",
+		"mythicmetals:raw_silver_block",
+		"mythicmetals:silver_block",
+		
+		"mythicmetals:froge",
+		"mythicmetals:doge",
+
+		"mythicmetals:quadrillum_ore",
+		"mythicmetals:quadrillum_block",
+		"mythicmetals:quadrillum_ingot",
+		"mythicmetals:raw_quadrillum",
+		"mythicmetals:quadrillum_nugget",
+		"mythicmetals:raw_quadrillum_block",
+		"mythicmetals:quadrillum_sword",
+		"mythicmetals:quadrillum_axe",
+		"mythicmetals:quadrillum_shovel",
+		"mythicmetals:quadrillum_pickaxe",
+		"mythicmetals:quadrillum_hoe",
+
+		"mythicmetals:durasteel_ore",
+		"mythicmetals:durasteel_block",
+		"mythicmetals:durasteel_ingot",
+		"mythicmetals:durasteel_nugget",
+		"mythicmetals:durasteel_sword",
+		"mythicmetals:durasteel_axe",
+		"mythicmetals:durasteel_shovel",
+		"mythicmetals:durasteel_pickaxe",
+		"mythicmetals:durasteel_hoe",
+		"mythicmetals:durasteel_helmet",
+		"mythicmetals:durasteel_chestplate",
+		"mythicmetals:durasteel_leggings",
+		"mythicmetals:durasteel_boots",
+
+		"mythicmetals:hallowed_nugget",
+		"mythicmetals:hallowed_sword",
+		"mythicmetals:hallowed_axe",
+		"mythicmetals:hallowed_shovel",
+		"mythicmetals:hallowed_pickaxe",
+		"mythicmetals:hallowed_hoe",
+		"mythicmetals:hallowed_helmet",
+		"mythicmetals:hallowed_chestplate",
+		"mythicmetals:hallowed_leggings",
+		"mythicmetals:hallowed_boots",
+
+		"mythicmetals:orichalcum_axe",
+		"mythicmetals:orichalcum_shovel",
+		"mythicmetals:orichalcum_pickaxe",
+		"mythicmetals:orichalcum_hoe",
+
+		"mythicmetals:runite_axe",
+		"mythicmetals:runite_shovel",
+		"mythicmetals:runite_pickaxe",
+		"mythicmetals:runite_hoe",
+		"mythicmetals:runite_sword",
+
+		"mythicmetals:white_aegis_sword",
+		"mythicmetals:aegis_smithing_template",
+		"mythicmetals:red_aegis_sword",
+
+		"mythicmetals:banglum_ore",
+		"mythicmetals:banglum_block",
+		"mythicmetals:banglum_ingot",
+		"mythicmetals:banglum_nugget",
+		"mythicmetals:banglum_sword",
+		"mythicmetals:banglum_axe",
+		"mythicmetals:banglum_shovel",
+		"mythicmetals:banglum_pickaxe",
+		"mythicmetals:banglum_hoe",
+		"mythicmetals:banglum_helmet",
+		"mythicmetals:banglum_chestplate",
+		"mythicmetals:banglum_leggings",
+		"mythicmetals:banglum_boots",
+		"mythicmetals:legendary_banglum_sword",
+		"mythicmetals:legendary_banglum_axe",
+		"mythicmetals:legendary_banglum_shovel",
+		"mythicmetals:legendary_banglum_pickaxe",
+		"mythicmetals:legendary_banglum_hoe",
+		"mythicmetals:legendary_banglum_helmet",
+		"mythicmetals:legendary_banglum_chestplate",
+		"mythicmetals:legendary_banglum_leggings",
+		"mythicmetals:legendary_banglum_boots",
+		"mythicmetals:banglum_tnt",
+		"mythicmetals:banglum_tnt_minecart",
+		"mythicmetals:legendary_banglum_smithing_template",
+		"mythicmetals:banglum_chunk",
+
+		"mythicmetals:banglum_nuke_core",
+		"mythicmetals:carmot_nuke_core",
+		"mythicmetals:sponge_nuke_core",
+		"mythicmetals:quadrillum_nuke_core",
+
+		// "mythicmetals:morkite_ore",
+		// "mythicmetals:deepslate_morkite_ore",
+		// "mythicmetals:morkite",
+		// "mythicmetals:morkite_block",
+
+		"mythicmetals:osmium_sword",
+		"mythicmetals:osmium_axe",
+		"mythicmetals:osmium_shovel",
+		"mythicmetals:osmium_pickaxe",
+		"mythicmetals:osmium_hoe",
+		"mythicmetals:osmium_helmet",
+		"mythicmetals:osmium_chestplate",
+		"mythicmetals:osmium_leggings",
+		"mythicmetals:osmium_boots",
+
+		"mythicmetals:manganese_ore",
+		"mythicmetals:manganese_block",
+		"mythicmetals:manganese_ingot",
+		"mythicmetals:raw_manganese",
+		"mythicmetals:manganese_nugget",
+		"mythicmetals:raw_manganese_block",
+		
+		"mythicmetals:copper_helmet",
+		"mythicmetals:copper_chestplate",
+		"mythicmetals:copper_leggings",
+		"mythicmetals:copper_boots",
+		
+		"botania:resolute_ivy",
+		"botania:thorn_chakram",
+		"botania:flare_chakram",
+		"botania:mana_fluxfield",
+		"botanicadds:elven_fluxfield",
+		"botanicadds:flowers/energizera",
+		"botanicadds:flowers/floating/energizera",
+		"botania:teru_teru_bozu",
+		"botaniacombat:angry_bozu",
+		"botaniacombat:mjolnir",
+		"botaniacombat:gaia_greatsword",
+		"botaniacombat:terrasteel_dagger",
+		"botaniacombat:elementium_dagger",
+		"botaniacombat:elementium_spear",
+		"botaniacombat:soulstaff",
+		"botaniacombat:terrasteel_spear",
+		"botania:phantom_ink",
+
+		"confluence:magic_quiver",
+		"confluence:molten_quiver",
+		"confluence:stalkers_quiver",
+		"confluence:putrid_scent",
+		"confluence:cell_phone",
+		"confluence:tally_counter",
+		"confluence:copper_watch",
+		"confluence:gold_watch",
+		"confluence:tin_watch",
+		"confluence:platinum_watch",
+		"confluence:silver_watch",
+		"confluence:tungsten_watch",
+		"confluence:depth_meter",
+		"confluence:compass",
+		"confluence:pda",
+		"confluence:fish_finder",
+		"confluence:rek_3000",
+		"confluence:radar",
+		"confluence:metal_detector",
+		"confluence:lifeform_analyzer",
+		"confluence:stopwatch",
+		"confluence:dps_meter",
+		"confluence:fishermans_pocket_guide",
+		"confluence:weather_radio",
+		"confluence:sextant",
+		"confluence:gps",
+		"confluence:goblin_tech",
+		
+		"hammerlib:gears/wooden",
+		"hammerlib:gears/stone",
+		"hammerlib:gears/copper",
+		"hammerlib:gears/iron",
+		"hammerlib:gears/gold",
+		"hammerlib:gears/diamond",
+		"hammerlib:gears/netherite",
+		"hammerlib:test_machine",
+		"hammerlib:wrench",
+
+		"constructionwand:stone_wand",
+		"minecraft:stone_sword",
+		"minecraft:stone_pickaxe",
+		"minecraft:stone_axe",
+		"minecraft:stone_shovel",
+		"minecraft:stone_hoe",
+
+		"galosphere:barometer",
+		"ftbquests:book",
+		"netherdepthsupgrade:lava_fishing_rod",
+
+		"supplementaries:cannon",
+		"supplementaries:cannonball",
+		"supplementaries:altimeter",
+
+		"unionlib:golden_ring",
+		"unionlib:iron_emerald_necklace",
+
+		"create_power_loader:empty_andesite_chunk_loader",
+		"create_power_loader:empty_brass_chunk_loader",
+		"create:handheld_worldshaper",
+
+		"farmersdelight:wheat_dough",
+		"farmersdelight:rope",
+		"unusualend:phantom_arrow",
+		"supplementaries:wrench",
+
+		"waystones:deepslate_waystone",
+		"waystones:blackstone_waystone",
+		"waystones:end_stone_waystone",
+		
+		"alloy_forgery:prismarine_bricks_forge_controller",
+		"alloy_forgery:bricks_forge_controller",
+		"alloy_forgery:stone_bricks_forge_controller",
+		"alloy_forgery:deepslate_bricks_forge_controller",
+		"alloy_forgery:polished_blackstone_forge_controller",
+		"alloy_forgery:end_stone_bricks_forge_controller",
+		"alloy_forgery:adamantite_block_forge_controller"
+	],
+	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
+	// Use with caution! This is a very expensive operation and can cause lag if you have a lot of items blacklisted.
+	// 	
+	// 	 Example to disable a regeneration potion: Potion:"minecraft:regeneration"
+	"blacklisted_nbt": [],
+	// Items here will not be able to be right-clicked (Interact)
+	"only_disable_interactions": [
+	],
+	// Items here will not be able to be used to attack
+	"only_disable_attacks": [],
+	// Items here will get their recipes disabled
+	// Keep in mind this already is applied to blacklisted items
+	"only_disable_recipes": [
+		
+	],
+	"use_hashmap_optimizations": true
+}

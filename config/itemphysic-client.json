@@ -1,0 +1,30 @@
+{
+  "rendering": {
+    "oldRotation": false,
+    "vanillaRendering": false,
+    "rotateSpeed": 0.7657658,
+    "showPickupTooltip": true,
+    "showPickupTooltipOnlyOnGround": true,
+    "showPickupTooltipExtended": false,
+    "showPickupTooltipKeybind": false,
+    "disableThrowHUD": false,
+    "vanillaRendered": {
+      "entries": [],
+      "isWhitelist": true
+    },
+    "tooltipOffsetX": 0,
+    "tooltipOffsetY": 15,
+    "blockRequireOffset": {
+      "blocks": [
+        "minecraft:snow",
+        "minecraft:soul_sand",
+        "minecraft:mud"
+      ],
+      "tags": []
+    },
+    "blockBelowRequireOffset": {
+      "blocks": [],
+      "tags": []
+    }
+  }
+}

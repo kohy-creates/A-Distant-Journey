@@ -1,0 +1,261 @@
+{
+	"minecraft:fire_resistance": [
+		{
+			"effect": "minecraft:fire_resistance",
+			"duration": "3:0",
+			"level": 1
+		}
+	],
+	"minecraft:long_fire_resistance": [
+		{
+			"effect": "minecraft:fire_resistance",
+			"duration": "5:0",
+			"level": 1
+		}
+	],
+	"minecraft:swiftness": [
+		{
+			"effect": "minecraft:speed",
+			"duration": "5:0",
+			"level": 1
+		}
+	],
+	"minecraft:strong_swiftness": [
+		{
+			"effect": "minecraft:speed",
+			"duration": "1:15",
+			"level": 3
+		}
+	],
+	"minecraft:leaping": [
+		{
+			"effect": "minecraft:jump_boost",
+			"duration": "5:0",
+			"level": 2
+		}
+	],
+	"minecraft:long_leaping": [
+		{
+			"effect": "minecraft:jump_boost",
+			"duration": "8:0",
+			"level": 2
+		}
+	],
+	"minecraft:strong_leaping": [
+		{
+			"effect": "minecraft:jump_boost",
+			"duration": "1:45",
+			"level": 3
+		}
+	],
+	"minecraft:night_vision": [
+		{
+			"effect": "minecraft:night_vision",
+			"duration": "10:0",
+			"level": 1
+		}
+	],
+	"minecraft:long_night_vision": [
+		{
+			"effect": "minecraft:night_vision",
+			"duration": "20:0",
+			"level": 1
+		}
+	],
+	"minecraft:water_breathing": [
+		{
+			"effect": "minecraft:night_vision",
+			"duration": "5:0",
+			"level": 1
+		}
+	],
+	"minecraft:long_water_breathing": [
+		{
+			"effect": "minecraft:night_vision",
+			"duration": "8:0",
+			"level": 1
+		}
+	],
+	"minecraft:regeneration": [
+		{
+			"effect": "minecraft:regeneration",
+			"duration": "0:22",
+			"level": 2
+		}
+	],
+	"minecraft:long_regeneration": [
+		{
+			"effect": "minecraft:regeneration",
+			"duration": "0:45",
+			"level": 2
+		}
+	],
+	"minecraft:strong_regeneration": [
+		{
+			"effect": "minecraft:regeneration",
+			"duration": "0:14",
+			"level": 3
+		}
+	],
+	"minecraft:strength": [
+		{
+			"effect": "minecraft:strength",
+			"duration": "4:0",
+			"level": 1
+		}
+	],
+	"minecraft:long_strength": [
+		{
+			"effect": "minecraft:strength",
+			"duration": "5:15",
+			"level": 1
+		}
+	],
+	"minecraft:strong_strength": [
+		{
+			"effect": "minecraft:strength",
+			"duration": "1:35",
+			"level": 2
+		}
+	],
+	"minecraft:turtle_master": [
+		{
+			"effect": "minecraft:resistance",
+			"duration": "0:20",
+			"level": 4
+		}
+	],
+	"minecraft:long_turtle_master": [
+		{
+			"effect": "minecraft:resistance",
+			"duration": "0:40",
+			"level": 4
+		}
+	],
+	"minecraft:strong_turtle_master": [
+		{
+			"effect": "minecraft:resistance",
+			"duration": "0:20",
+			"level": 7
+		}
+	],
+	"minecraft:poison": [
+		{
+			"effect": "minecraft:poison",
+			"duration": "0:18",
+			"level": 1
+		}
+	],
+	"minecraft:long_poison": [
+		{
+			"effect": "minecraft:poison",
+			"duration": "0:45",
+			"level": 1
+		}
+	],
+	"minecraft:strong_poison": [
+		{
+			"effect": "minecraft:poison",
+			"duration": "0:13",
+			"level": 2
+		}
+	],
+	"minecraft:weakness": [
+		{
+			"effect": "minecraft:weakness",
+			"duration": "2:00",
+			"level": 1
+		}
+	],
+	"minecraft:long_weakness": [
+		{
+			"effect": "minecraft:weakness",
+			"duration": "3:00",
+			"level": 1
+		}
+	],
+	"minecraft:luck": [
+		{
+			"effect": "minecraft:luck",
+			"duration": "8:00",
+			"level": 1
+		}
+	],
+	"minecraft:slow_falling": [
+		{
+			"effect": "minecraft:slow_falling",
+			"duration": "4:00",
+			"level": 1
+		}
+	],
+	"minecraft:long_slow_falling": [
+		{
+			"effect": "minecraft:slow_falling",
+			"duration": "6:00",
+			"level": 1
+		}
+	],
+	"minecraft:invisibility": [
+		{
+			"effect": "minecraft:invisibility",
+			"duration": "5:00",
+			"level": 1
+		}
+	],
+	"minecraft:long_invisibility": [
+		{
+			"effect": "minecraft:invisibility",
+			"duration": "8:00",
+			"level": 1
+		}
+	],
+	"rediscovered:golden_aura": [
+		{
+			"effect": "rediscovered:golden_aura",
+			"duration": "10:00",
+			"level": 1
+		}
+	],
+	"rediscovered:long_golden_aura": [
+		{
+			"effect": "rediscovered:golden_aura",
+			"duration": "20:00",
+			"level": 1
+		}
+	],
+	"rediscovered:strong_golden_aura": [
+		{
+			"effect": "rediscovered:golden_aura",
+			"duration": "7:00",
+			"level": 2
+		}
+	],
+	"ars_nouveau:mana_regen_potion": [
+		{
+			"effect": "ars_nouveau:mana_regen",
+			"duration": "4:00",
+			"level": 1
+		}
+	],
+	"ars_nouveau:mana_regen_potion_long": [
+		{
+			"effect": "ars_nouveau:mana_regen",
+			"duration": "6:00",
+			"level": 1
+		}
+	],
+	"ars_nouveau:spell_damage_potion": [
+		{
+			"effect": "ars_nouveau:spell_damage",
+			"duration": "4:00",
+			"level": 1
+		}
+	],
+	"ars_nouveau:spell_damage_potion_long": [
+		{
+			"effect": "ars_nouveau:spell_damage",
+			"duration": "6:00",
+			"level": 1
+		}
+	]
+}

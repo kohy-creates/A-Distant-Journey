@@ -1,0 +1,6 @@
+{
+  "parent": "kubejs:block/deepslate_brick_forge",
+  "textures": {
+    "front": "kubejs:block/deepslate_brick_forge_front_on"
+  }
+}

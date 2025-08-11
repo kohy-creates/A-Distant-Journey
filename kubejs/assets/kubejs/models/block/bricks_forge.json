@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "kubejs:block/bricks_forge_top",
+    "front": "kubejs:block/bricks_forge_front",
+    "side": "kubejs:block/bricks_forge_side"
+  }
+}
