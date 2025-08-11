@@ -86,3 +86,5 @@ uacm.db
 ucache.db
 usercache.json
 usernamecache.json
+config/blockswap/known_states/
+user-prefs.json
