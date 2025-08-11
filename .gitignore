@@ -39,37 +39,37 @@ run/
 debug/
 
 # Minecraft specific
-data/
-cosmetics/
+/data/
+/cosmetics/
 .lazyyyyy/
 .cache/
 .mixin.out/
-fancymenu_data/
-schematics/
-screenshots/
-voicechat_recordings/
-xaero/
-downloads/
-debug/
-crash-reports/
-logs/
-mods/
-shaderpacks/
-resourcepacks/
-resources/
-saves/
-modernfix/
-moddata/
-map_atlases/
+/fancymenu_data/
+/schematics/
+/screenshots/
+/voicechat_recordings/
+/xaero/
+/downloads/
+/debug/
+/crash-reports/
+/logs/
+/mods/
+/shaderpacks/
+/resourcepacks/
+/resources/
+/saves/
+/modernfix/
+/moddata/
+/map_atlases/
 
 # KubeJS
-kubejs/probe/
-kubejs/jsconfig.json
-kubejs/README.txt
+/kubejs/probe/
+/kubejs/jsconfig.json
+/kubejs/README.txt
 
 # Other
 .curseclient
-local/
+/local/
 .qmenu_opened.marker
 cherishedworlds-favorites.dat
 fabricloader.log
@@ -86,5 +86,7 @@ uacm.db
 ucache.db
 usercache.json
 usernamecache.json
-config/blockswap/known_states/
+/config/blockswap/known_states/
 user-prefs.json
+/config/paxi/datapacks/
+/config/paxi/resourcepacks/
