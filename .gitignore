@@ -1,0 +1,87 @@
+# Minecraft Forge / Modding
+*.iml
+*.ipr
+*.iws
+.idea/
+.gradle/
+build/
+out/
+bin/
+run/
+logs/
+eclipse/
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db
+
+# OS generated files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# VSCode
+.vscode/
+
+# Environment files
+.env
+
+# Forge specific
+run/
+debug/
+
+# Minecraft specific
+data/
+cosmetics/
+.lazyyyyy/
+.cache/
+.mixin.out/
+fancymenu_data/
+schematics/
+screenshots/
+voicechat_recordings/
+xaero/
+downloads/
+debug/
+crash-reports/
+logs/
+mods/
+shaderpacks/
+resourcepacks/
+resources/
+saves/
+modernfix/
+moddata/
+map_atlases/
+
+# KubeJS
+kubejs/probe/
+kubejs/jsconfig.json
+kubejs/README.txt
+
+# Other
+.curseclient/
+.qmenu_opened.marker
+cherishedworlds-favorites.dat
+fabricloader.log
+EffekseerNativeForJava.dll
+hs_err_pid*.log
+knownkeys.txt
+minecraftinstance.json
+options.txt
+rhino.local.properties
+patchouli_data.json
+supportercache.json
+TrashSlotSaveState.json
+uacm.db
+ucache.db
+usercache.json
+usernamecache.json
