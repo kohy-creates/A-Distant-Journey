@@ -68,7 +68,8 @@ kubejs/jsconfig.json
 kubejs/README.txt
 
 # Other
-.curseclient/
+.curseclient
+local/
 .qmenu_opened.marker
 cherishedworlds-favorites.dat
 fabricloader.log
