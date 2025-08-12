@@ -17,28 +17,6 @@
       "biome_check_distance": 80,
       "whitelisted_biomes": [],
       "blacklisted_biomes": []
-    },
-    {
-      "name": "dungeonsweaponry:desert_temple",
-      "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
-      "enable_biome_check": false,
-      "biome_check_distance": 80,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
-    },
-    {
-      "name": "dungeonsweaponry:dungeon",
-      "is_disabled": true,
-      "enable_flatness_check": false,
-      "flatness_check_distance": 80,
-      "flatness_check_threshold": 10,
-      "enable_biome_check": false,
-      "biome_check_distance": 80,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": []
     }
   ],
   "structure_sets": [

@@ -1,0 +1,30 @@
+#  Global header!
+#  Line 2
+
+toggles_path = "toggles"
+
+[debug]
+	allow_timestamps = false
+	block_sound_effects = false
+	blocked_sound_categories = [ "minecraft;music" ]
+	client_only = false
+	enable_debug_info = false
+	enable_discs = true
+	encoding_quality = 10
+	gui_fuzz = true
+	independent_audio_pools = true
+	interrupted_sound_categories = [ "music" ]
+	pause_unless_focused = true
+	play_normal_music = false
+	resampling_quality = "HIGH"
+	reverse_priority = false
+	show_channel_info = true
+	show_position_info = true
+	show_song_info = true
+	show_status_info = true
+	show_target_info = true
+	show_trigger_info = true
+	slow_tick_factor = 5.0
+	tick_rate = 20
+	write_default_values = [ "channel", "from", "image", "interrupt_handler", "main", "songs", "title", "toggle", "triggers", "universal_audio", "universal_triggers" ]
+

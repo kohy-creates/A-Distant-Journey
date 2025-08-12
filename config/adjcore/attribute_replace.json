@@ -38,62 +38,6 @@
 				"minecraft:generic.movement_speed;1;-0.15;MAINHAND"
 			]
 		},
-		"dungeonsweaponry:heartstealer": {
-			"remove": [
-				"minecraft:generic.attack_speed"
-			],
-			"add": [
-				"minecraft:generic.attack_speed;1;-3.3;MAINHAND"
-			]
-		},
-		"dungeonsweaponry:battlestaff": {
-			"remove": [
-				"minecraft:generic.attack_speed"
-			],
-			"add": [
-				"minecraft:generic.attack_speed;1;-2;MAINHAND"
-			]
-		},
-		"dungeonsweaponry:chill_gale_knife": {
-			"remove": [
-				"minecraft:generic.attack_speed"
-			],
-			"add": [
-				"minecraft:generic.attack_speed;1;-1.8;MAINHAND"
-			]
-		},
-		"dungeonsweaponry:dark_katana": {
-			"remove": [
-				"minecraft:generic.attack_speed"
-			],
-			"add": [
-				"minecraft:generic.attack_speed;1;-2;MAINHAND"
-			]
-		},
-		"dungeonsweaponry:glaive": {
-			"remove": [
-				"minecraft:generic.attack_speed"
-			],
-			"add": [
-				"minecraft:generic.attack_speed;1;-2.6;MAINHAND"
-			]
-		},
-		"dungeonsweaponry:venom_glaive": {
-			"remove": [
-				"minecraft:generic.attack_speed"
-			],
-			"add": [
-				"minecraft:generic.attack_speed;1;-2.6;MAINHAND"
-			]
-		},
-		"dungeonsweaponry:frost_slayer": {
-			"remove": [
-				"minecraft:generic.attack_speed"
-			],
-			"add": [
-				"minecraft:generic.attack_speed;1;-2.9;MAINHAND"
-			]
-		},
 		"minecraft:iron_helmet": {
 			"add": [
 				"adjcore:generic.damage_reduction;0;0.02;HEAD"

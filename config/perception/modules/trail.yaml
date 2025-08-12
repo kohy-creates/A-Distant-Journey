@@ -352,28 +352,6 @@ entityTrails:
         size: 0.075
         # Frequency of trail point placement
         updateFrequency: 1
-    dungeonsweaponry:dungeon_arrow:
-        # Position offset of the trail in the opposite direction from the player's standing point
-        backwardShift: 0.0
-        # Starting color of the trail in ARGB format
-        fadeInColor: '#00000000'
-        # Ending color of the trail in ARGB format
-        fadeOutColor: '#80000000'
-        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
-        maxPoints: 10
-        # Minimum object movement speed to place trail points
-        minSpeed: 0.001
-        # Position offset of the trail in the opposite direction from the object's movement
-        motionShift: 0.0
-        # Position offset of the trail relative to the object in XYZ
-        positionOffset:
-            x: 0.0
-            y: 0.0
-            z: 0.0
-        # Trail thickness
-        size: 0.075
-        # Frequency of trail point placement
-        updateFrequency: 1
 # List of particle ID's that should have trail effect.
 particleTrails: {
     }

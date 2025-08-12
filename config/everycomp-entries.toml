@@ -7,9 +7,6 @@
 		[types.wood_type.ars_nouveau]
 			blue_archwood = true
 
-		[types.wood_type.cataclysm]
-			chorus = true
-
 		[types.wood_type.aether]
 			skyroot = true
 
@@ -39,24 +36,20 @@
 		[types.wood_type.netherexp]
 			claret = true
 
-		[types.wood_type.quark]
-			azalea = false
-			ancient = false
-			blossom = false
-
 		[types.wood_type.mynethersdelight]
 			powdery = true
+
+		[types.wood_type.quark]
+			azalea = true
+			ancient = true
+			blossom = true
+
+		[types.wood_type.cataclysm]
+			chorus = true
 
 		[types.wood_type.moresnifferflowers]
 			corrupted = true
 			vivicus = true
-
-		[types.wood_type.upgrade_aquatic]
-			driftwood = true
-			river = true
-
-		[types.wood_type.unusualend]
-			chorus_nest = true
 
 		[types.wood_type.aether_redux]
 			fieldsproot = true
@@ -110,6 +103,10 @@
 		[types.leaves_type.alexscaves]
 			ancient = true
 
+		[types.leaves_type.moresnifferflowers]
+			corrupted = true
+			vivicus = true
+
 		[types.leaves_type.quark]
 			ancient = true
 			blue_blossom = true
@@ -118,23 +115,16 @@
 			yellow_blossom = true
 			red_blossom = true
 
-		[types.leaves_type.moresnifferflowers]
-			corrupted = true
-			vivicus = true
-
 		[types.leaves_type.rediscovered]
 			ancient_cherry = true
 
-		[types.leaves_type.upgrade_aquatic]
-			river = true
-
 		[types.leaves_type.aether_redux]
 			fieldsproot = true
-			gilded_oak = true
-			blighted_skyroot = true
-			purple_glacia = true
 			blightwillow = true
 			glacia = true
+			purple_glacia = true
+			gilded_oak = true
+			blighted_skyroot = true
 
 	[types.cake]
 
@@ -156,12 +146,22 @@
 		[entries.wood_type.backpacked]
 			backpack_shelf = false
 
-		[entries.wood_type.hearth_and_home]
-			lattice = true
-			parquet = true
-			vertical_trim = true
-			trim = true
-			sanded_wood = true
+		[entries.wood_type.handcrafted]
+			counter = true
+			corner_trim = true
+			fancy_bed = true
+			desk = true
+			shelf = true
+			nightstand = true
+			cupboard = true
+			dining_bench = true
+			bench = true
+			couch = true
+			table = true
+			chair = true
+			drawer = true
+			pillar_trim = true
+			side_table = true
 
 		[entries.wood_type.quark]
 			hollow_log = true
@@ -174,26 +174,16 @@
 			ladder = true
 			vertical_slab = true
 
-		[entries.wood_type.rediscovered]
-			chair = false
-			table = false
+		[entries.wood_type.hearth_and_home]
+			lattice = true
+			parquet = true
+			vertical_trim = true
+			trim = true
+			sanded_wood = true
 
-		[entries.wood_type.handcrafted]
-			counter = true
-			corner_trim = true
-			fancy_bed = true
-			desk = true
-			shelf = false
-			nightstand = true
-			cupboard = false
-			dining_bench = true
-			bench = true
-			couch = true
-			table = true
+		[entries.wood_type.rediscovered]
 			chair = true
-			drawer = true
-			pillar_trim = true
-			side_table = true
+			table = true
 
 	[entries.leaves_type]
 
