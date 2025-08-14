@@ -153,7 +153,7 @@
       // Ratio of xp dropped on the ground on death
       "drop_ratio": 0.2,
       // Entity data id to use to store stolen xp. Only change this if the default is causing conflicts
-      "stolen_xp_data": 41
+      "stolen_xp_data": 254
     },
     // Keep equipped items (armor and hotbar) on death
     "keep_equipped": true,

@@ -1549,21 +1549,9 @@ ServerEvents.recipes((event) => {
 
 	// End game Architect's Prism recipes
 	event.custom({
-		"type": "lychee:lightning_channeling",
-		"ghost": false,
-		"hide_in_viewer": false,
-		"post": [
-			{
-				"type": "drop_item",
-				"item": "structure_gel:building_tool"
-			},
-			{
-				"type": "execute",
-				"command": "function kubejs:craft_prism",
-				"hide": true
-			}
-		],
-		"item_in": [
+		"type": "witherstormmod:item_craft_super_beacon",
+		"condition": "all_supports",
+		"ingredients": [
 			{
 				"item": "kubejs:eye_of_cinders"
 			},
@@ -1585,8 +1573,12 @@ ServerEvents.recipes((event) => {
 			{
 				"item": "kubejs:eye_of_arcanum"
 			}
-		]
-	})
+		],
+		"result": {
+			"item": "structure_gel:building_tool"
+		}
+	}
+	)
 
 	const architectsPrism = [
 		'structure_gel:building_tool'
@@ -1777,19 +1769,19 @@ ServerEvents.recipes((event) => {
 	})
 
 	const inter = Item.of('minecraft:ender_eye');
-	event.recipes.create.sequenced_assembly(
-		Item.of('kubejs:eye_of_ethercraft'),
-		'ender_eye',
-		[
-			event.recipes.create.deploying(inter, [inter, Item.of('create:precision_mechanism')]),
-			event.recipes.create.filling(inter, [inter, Fluid.lava()]),
-			event.recipes.create.deploying(inter, [inter, Item.of('ars_nouveau:source_gem_block')]),
-			event.recipes.create.deploying(inter, [inter, Item.of('create:large_cogwheel')]),
-			event.recipes.create.deploying(inter, [inter, Item.of('create:brass_block')]),
-			event.recipes.create.deploying(inter, [inter, Item.of('create:cogwheel')]),
-			event.recipes.create.deploying(inter, [inter, Item.of('mythicmetals:adamantite_ingot')]),
-		]
-	).transitionalItem(inter).loops(12)
+	// event.recipes.create.sequenced_assembly(
+	// 	Item.of('kubejs:eye_of_ethercraft'),
+	// 	'ender_eye',
+	// 	[
+	// 		event.recipes.create.deploying(inter, [inter, Item.of('create:precision_mechanism')]),
+	// 		event.recipes.create.filling(inter, [inter, Fluid.lava()]),
+	// 		event.recipes.create.deploying(inter, [inter, Item.of('ars_nouveau:source_gem_block')]),
+	// 		event.recipes.create.deploying(inter, [inter, Item.of('create:large_cogwheel')]),
+	// 		event.recipes.create.deploying(inter, [inter, Item.of('create:brass_block')]),
+	// 		event.recipes.create.deploying(inter, [inter, Item.of('create:cogwheel')]),
+	// 		event.recipes.create.filling(inter, [inter, Fluid. ],
+	// 	]
+	// ).transitionalItem(inter).loops(12)
 
 	event.shaped(
 		Item.of('mythicmetals:durasteel_engine'),

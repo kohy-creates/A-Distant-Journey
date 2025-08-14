@@ -19,24 +19,6 @@ EntityEvents.spawned(event => {
 			)
 		}
 	}
-
-	// if (entity.getType() === 'minecraft:wandering_trader') {
-	// 	event.server.scheduleInTicks(1, () => {
-	// 		if (!event.success) return;
-
-	// 		// const pos = entity.getPos();
-	// 		// const nearbyLlamas = entity.level.getEntitiesWithin(
-	// 		// 	AABB.of(
-	// 		// 		pos.x - 5, pos.y - 5, pos.z - 5,
-	// 		// 		pos.x + 5, pos.y + 5, pos.z + 5
-	// 		// 	)
-	// 		// ).filter(e => e.type === 'minecraft:trader_llama')
-
-	// 		if (!entity.tags.contains('adj.bell')) {
-	// 			event.server.tell(Text.translatable(' A Wandering Trader has spawned near %s', event.getLevel().getNearestPlayer(entity.x, entity.y, entity.z, 100, false).getName()).yellow())
-	// 		}
-	// 	})
-	// }
 })
 
 const $EnhancedCelestials = Java.loadClass('dev.corgitaco.enhancedcelestials.EnhancedCelestials');

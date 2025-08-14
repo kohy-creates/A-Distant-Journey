@@ -59,6 +59,21 @@
 			crystal = true
 			glacia = true
 
+		[types.wood_type.unusualend]
+			chorus_nest = true
+
+		[types.wood_type.undergarden]
+			smogstem = true
+			wigglewood = true
+			grongle = true
+
+		[types.wood_type.upgrade_aquatic]
+			driftwood = true
+			river = true
+
+		[types.wood_type.witherstormmod]
+			tainted = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -115,9 +130,6 @@
 			yellow_blossom = true
 			red_blossom = true
 
-		[types.leaves_type.rediscovered]
-			ancient_cherry = true
-
 		[types.leaves_type.aether_redux]
 			fieldsproot = true
 			blightwillow = true
@@ -125,6 +137,17 @@
 			purple_glacia = true
 			gilded_oak = true
 			blighted_skyroot = true
+
+		[types.leaves_type.undergarden]
+			smogstem = true
+			wigglewood = true
+			grongle = true
+
+		[types.leaves_type.upgrade_aquatic]
+			river = true
+
+		[types.leaves_type.witherstormmod]
+			tainted = true
 
 	[types.cake]
 
@@ -180,10 +203,6 @@
 			vertical_trim = true
 			trim = true
 			sanded_wood = true
-
-		[entries.wood_type.rediscovered]
-			chair = true
-			table = true
 
 	[entries.leaves_type]
 

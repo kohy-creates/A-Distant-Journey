@@ -11,17 +11,6 @@
         "value": 100
       }
     },
-    "unionlib:generic.arrow_velocity": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "sortilege:generic.staff_pierce": {
       "enabled": false,
       "min": {
@@ -56,14 +45,14 @@
       }
     },
     "confluence:crit_chance": {
-      "enabled": true,
+      "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 0,
-        "value": 0
+        "default": 10,
+        "value": 10
       }
     },
     "minecraft:generic.follow_range": {
@@ -121,26 +110,15 @@
         "value": 2
       }
     },
-    "irons_spellbooks:nature_spell_power": {
+    "tetra:ability_damage": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": 0,
+        "value": 0
       },
       "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "irons_spellbooks:nature_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
+        "default": 2048,
+        "value": 2048
       }
     },
     "attributeslib:armor_pierce": {
@@ -163,17 +141,6 @@
       "max": {
         "default": 100000,
         "value": 100000
-      }
-    },
-    "irons_spellbooks:lightning_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "sortilege:generic.staff_damage": {
@@ -231,17 +198,6 @@
         "value": 1024
       }
     },
-    "estrogen:boob_growing_start_time": {
-      "enabled": false,
-      "min": {
-        "default": -1,
-        "value": -1
-      },
-      "max": {
-        "default": 9007199254740992,
-        "value": 9007199254740992
-      }
-    },
     "additionalentityattributes:player.lava_visibility": {
       "enabled": false,
       "min": {
@@ -264,28 +220,6 @@
         "value": 1024
       }
     },
-    "irons_spellbooks:cast_time_reduction": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "terra_entity:player.whip_range": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 64,
-        "value": 64
-      }
-    },
     "additionalentityattributes:generic.magic_protection": {
       "enabled": false,
       "min": {
@@ -297,28 +231,6 @@
         "value": 1024
       }
     },
-    "terra_entity:player.sentry_capacity": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 128,
-        "value": 128
-      }
-    },
-    "quality_equipment:projectile_damage": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "rediscovered:explosion_resistance": {
       "enabled": false,
       "min": {
@@ -328,28 +240,6 @@
       "max": {
         "default": 1024,
         "value": 1024
-      }
-    },
-    "estrogen:show_boobs": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
-    "vminus:health_lost_stat_boost": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "minecraft:zombie.spawn_reinforcements": {
@@ -364,14 +254,14 @@
       }
     },
     "attributeslib:crit_chance": {
-      "enabled": true,
+      "enabled": false,
       "min": {
-        "default": 0.04,
+        "default": 0,
         "value": 0
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 10,
+        "value": 10
       }
     },
     "ars_nouveau:ars_nouveau.perk.wixie": {
@@ -418,17 +308,6 @@
         "value": 10000
       }
     },
-    "vminus:magic_protection": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "additionalentityattributes:player.bonus_loot_count_rolls": {
       "enabled": false,
       "min": {
@@ -438,17 +317,6 @@
       "max": {
         "default": 128,
         "value": 128
-      }
-    },
-    "irons_spellbooks:holy_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "reach-entity-attributes:reach": {
@@ -473,63 +341,8 @@
         "value": 1024
       }
     },
-    "unionlib:generic.arrow_damage": {
-      "enabled": false,
-      "min": {
-        "default": -1024,
-        "value": -1024
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "irons_spellbooks:evocation_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "terra_entity:player.summon_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "forge:block_reach": {
       "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "terra_entity:player.minion_capacity": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 128,
-        "value": 128
-      }
-    },
-    "minecraft:player.block_break_speed": {
-      "enabled": true,
       "min": {
         "default": 0,
         "value": 0
@@ -570,39 +383,6 @@
       "max": {
         "default": 1,
         "value": 1
-      }
-    },
-    "skilltree:evasion": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 90,
-        "value": 90
-      }
-    },
-    "irons_spellbooks:evocation_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "vminus:protection": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "attributeslib:prot_pierce": {
@@ -649,17 +429,6 @@
         "value": 2048
       }
     },
-    "vminus:fire_protection": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "additionalentityattributes:generic.jump_height": {
       "enabled": false,
       "min": {
@@ -669,17 +438,6 @@
       "max": {
         "default": 1024,
         "value": 1024
-      }
-    },
-    "irons_spellbooks:lightning_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "attributeslib:mining_speed": {
@@ -715,17 +473,6 @@
         "value": 10000
       }
     },
-    "estrogen:boob_initial_size": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "botania:pixie_spawn_chance": {
       "enabled": false,
       "min": {
@@ -748,17 +495,6 @@
         "value": 100
       }
     },
-    "irons_spellbooks:spell_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "minecraft:generic.max_health": {
       "enabled": true,
       "min": {
@@ -768,61 +504,6 @@
       "max": {
         "default": 1024,
         "value": 1000000
-      }
-    },
-    "irons_spellbooks:mana_regen": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "irons_spellbooks:ice_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "skilltree:stealth": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 90,
-        "value": 90
-      }
-    },
-    "vminus:blast_protection": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "estrogen:dash_level": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
       }
     },
     "minecraft:horse.jump_strength": {
@@ -858,17 +539,6 @@
         "value": 1024
       }
     },
-    "irons_spellbooks:max_mana": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1000000,
-        "value": 1000000
-      }
-    },
     "minecraft:generic.knockback_resistance": {
       "enabled": true,
       "min": {
@@ -902,17 +572,6 @@
         "value": 10
       }
     },
-    "midnight:malignant_armor": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "additionalentityattributes:generic.lung_capacity": {
       "enabled": false,
       "min": {
@@ -922,6 +581,17 @@
       "max": {
         "default": 40000,
         "value": 40000
+      }
+    },
+    "witherstormmod:evolution_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additionalentityattributes:player.bonus_rare_loot_rolls": {
@@ -990,6 +660,17 @@
         "value": 8
       }
     },
+    "witherstormmod:target_stationary_flying_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0.01,
+        "value": 0.01
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "additionalentityattributes:player.dig_speed": {
       "enabled": false,
       "min": {
@@ -1001,17 +682,6 @@
         "value": 2048
       }
     },
-    "piglinproliferation:turning_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "enhancedai:generic.xray_follow_range": {
       "enabled": false,
       "min": {
@@ -1021,17 +691,6 @@
       "max": {
         "default": 256,
         "value": 256
-      }
-    },
-    "irons_spellbooks:holy_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "attributeslib:cold_damage": {
@@ -1056,37 +715,26 @@
         "value": 1000
       }
     },
-    "quality_equipment:dig_speed": {
+    "witherstormmod:slow_flying_speed": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": 0.01,
+        "value": 0.01
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 1,
+        "value": 1
       }
     },
-    "irons_spellbooks:fire_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "unionlib:generic.critical_rate": {
+    "witherstormmod:hunchback_follow_range": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 1,
-        "value": 1
+        "default": 2048,
+        "value": 2048
       }
     },
     "confluence:ranged_damage": {
@@ -1098,17 +746,6 @@
       "max": {
         "default": 10,
         "value": 10
-      }
-    },
-    "skilltree:exp_per_minute": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "confluence:pickup_range": {
@@ -1144,28 +781,6 @@
         "value": 10000
       }
     },
-    "irons_spellbooks:summon_damage": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "irons_spellbooks:eldritch_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "mythicmetals:elytra_rocket_speed": {
       "enabled": false,
       "min": {
@@ -1199,15 +814,15 @@
         "value": 24
       }
     },
-    "terra_entity:player.mark_damage": {
+    "tetra:draw_strength": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 1024,
-        "value": 1024
+        "default": 2048,
+        "value": 2048
       }
     },
     "diet:natural_regeneration": {
@@ -1243,28 +858,6 @@
         "value": 100
       }
     },
-    "irons_spellbooks:cooldown_reduction": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "irons_spellbooks:spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "combatroll:recharge": {
       "enabled": false,
       "min": {
@@ -1274,17 +867,6 @@
       "max": {
         "default": 200,
         "value": 200
-      }
-    },
-    "estrogen:fall_damage_resistance": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "adjcore:generic.damage_reduction": {
@@ -1331,17 +913,6 @@
         "value": 10000
       }
     },
-    "vminus:critical_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "confluence:armor_pass": {
       "enabled": false,
       "min": {
@@ -1362,17 +933,6 @@
       "max": {
         "default": 1000,
         "value": 1000
-      }
-    },
-    "irons_spellbooks:ice_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "minecraft:generic.attack_knockback": {
@@ -1408,15 +968,15 @@
         "value": 1024
       }
     },
-    "skilltree:regeneration": {
+    "tetra:draw_speed": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 2048,
+        "value": 2048
       }
     },
     "reach-entity-attributes:attack_range": {
@@ -1430,74 +990,19 @@
         "value": 1024
       }
     },
-    "irons_spellbooks:fire_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "irons_spellbooks:eldritch_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "vminus:mob_detection_range": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 0,
-        "value": 0
-      }
-    },
-    "traveloptics:aqua_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "unionlib:generic.accuracy": {
+    "tetra:ability_cooldown": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
-    "irons_spellbooks:ender_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
+        "default": 2048,
+        "value": 2048
       }
     },
     "attributeslib:crit_damage": {
-      "enabled": true,
+      "enabled": false,
       "min": {
         "default": 1,
         "value": 1
@@ -1505,28 +1010,6 @@
       "max": {
         "default": 100,
         "value": 100
-      }
-    },
-    "puffish_attributes:stamina": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "forge:nametag_distance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 64,
-        "value": 64
       }
     },
     "confluence:magic_damage": {
@@ -1540,26 +1023,15 @@
         "value": 10
       }
     },
-    "irons_spellbooks:blood_magic_resist": {
+    "forge:nametag_distance": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": 0,
+        "value": 0
       },
       "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "traveloptics:aqua_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
+        "default": 64,
+        "value": 64
       }
     },
     "additionalentityattributes:generic.lava_speed": {
@@ -1628,17 +1100,6 @@
         "value": 1
       }
     },
-    "irons_spellbooks:ender_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "minecraft:generic.armor": {
       "enabled": true,
       "min": {
@@ -1661,55 +1122,11 @@
         "value": 1024
       }
     },
-    "irons_spellbooks:blood_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "obscure_api:critical_hit": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "unionlib:generic.critical_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
-    "vminus:blunt_protection": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "vminus:fall_protection": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
       },
       "max": {
         "default": 100,
@@ -1738,28 +1155,6 @@
         "value": 10
       }
     },
-    "vminus:mining_speed": {
-      "enabled": false,
-      "min": {
-        "default": -255,
-        "value": -255
-      },
-      "max": {
-        "default": 255,
-        "value": 255
-      }
-    },
-    "terra_entity:player.summon_knockback": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 5,
-        "value": 5
-      }
-    },
     "minecraft:generic.movement_speed": {
       "enabled": true,
       "min": {
@@ -1769,28 +1164,6 @@
       "max": {
         "default": 1024,
         "value": 1024
-      }
-    },
-    "quality_equipment:jump_height": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "skilltree:blocking": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 90,
-        "value": 90
       }
     },
     "combatroll:count": {
@@ -1826,17 +1199,6 @@
         "value": 10
       }
     },
-    "random_crits:critchance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "sortilege:generic.staff_range": {
       "enabled": false,
       "min": {
@@ -1857,17 +1219,6 @@
       "max": {
         "default": 10,
         "value": 10
-      }
-    },
-    "unionlib:generic.draw_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0.00010,
-        "value": 0.00010
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
       }
     }
   }

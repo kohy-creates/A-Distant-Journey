@@ -21,25 +21,7 @@
       }
     },
     {
-      "block": [
-        "mythicmetals:adamantite_ore",
-        "mythicmetals:deepslate_adamantite_ore",
-        "rediscovered:ruby_ore",
-        "rediscovered:deepslate_ruby_ore"
-      ],
-      "particle": {
-        "type": "visuality:sparkle",
-        "value": [
-          1.0,
-          0.74117647,
-          0.74117647
-        ]
-      }
-    },
-    {
-      "block": [
-        "mythicmetals:palladium_ore"
-      ],
+      "block": "mythicmetals:palladium_ore",
       "particle": {
         "type": "visuality:sparkle",
         "value": [

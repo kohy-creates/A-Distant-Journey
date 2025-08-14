@@ -72,39 +72,6 @@
 		{
 			dependencies: ["2D6437E0336ED8AD"]
 			description: [
-				"Did you maybe notice the little prefix in front of your items' names? &eThat's a reforge!&r"
-				""
-				"Reforges apply bonues to your item's stats. You can change the reforge an item has by combining it with a &7Reforging Hammer &fin an &7Anvil&r."
-			]
-			disable_toast: true
-			icon: "minecraft:anvil"
-			id: "24172FF8B21453E2"
-			subtitle: "Click to read"
-			tasks: [
-				{
-					id: "2A5D1A6A16DE3CCB"
-					item: {
-						Count: 1
-						id: "tiered:armorers_hammer"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "56CBC9DB549DF674"
-					item: "minecraft:anvil"
-					type: "item"
-				}
-			]
-			title: "&lBasics:&r &eReforging"
-			x: -1.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["2D6437E0336ED8AD"]
-			description: [
 				"To create a &dParty&r, open your inventory and then open the &dTeams&r tab, then click '&dCreate new Party&r'."
 				""
 				"Players in the same party as you will &eshare advancement progress&r and can configure &cPvP&r rules!"
