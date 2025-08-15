@@ -26,6 +26,11 @@ const modifierUUIDs = [
 	'845DB27C-C624-495F-8C9F-6020A9A58B6B'
 ]
 
+const weaponModifierUUIDs = [
+	'CB3F55D3-645C-4F38-A497-9C13A33DB5CF',
+	'FA233E1C-4180-4865-B01B-BCCE9785ACA3',
+]
+
 ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (event) => {
 	const item = event.getItemStack().getItem();
 	if (event.slotType == 'mainhand') {
@@ -35,6 +40,24 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 			let speed = tier.getSpeed();
 			if (item.id.toString().includes('rose_gold')) speed = 7.0;
 			event.addModifier("kubejs:mining_speed", new $AttributeModifier(miningSpeedUUID, "Mining Speed", speed, 'addition'))
+		}
+		if (Object.keys(global.weapon_overrides).includes(item.id.toString())) {
+			const overrides = global.weapon_overrides[item.id.toString()];
+			event.removeAttribute('generic.attack_damage');
+			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', overrides[0], 'addition'))
+			event.removeAttribute('generic.attack_speed');
+			const attackSpeed = overrides[1];
+			event.addModifier('generic.attack_speed', new $AttributeModifier(weaponModifierUUIDs[1], 'Attack Speed', attackSpeed, 'addition'))
+			if (overrides.length > 2) {
+				event.removeAttribute('attributeslib:crit_chance');
+				event.addModifier('attributeslib:crit_chance', new $AttributeModifier(weaponModifierUUIDs[0], 'Crit Chance', overrides[2], 'addition'))
+				event.removeAttribute('attributeslib:crit_damage');
+				event.addModifier('attributeslib:crit_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Crit Damage', overrides[3], 'addition'))
+				if (overrides.length > 4) {
+					event.removeAttribute('attributeslib:armor_pierce');
+					event.addModifier('attributeslib:armor_pierce', new $AttributeModifier(weaponModifierUUIDs[0], 'Armor Penetration', overrides[4], 'addition'))
+				}
+			}
 		}
 	}
 	if (item instanceof $ArmorItem) {

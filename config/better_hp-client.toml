@@ -31,7 +31,7 @@
 	enableDynamicHealthColor = false
 	#Horizontal position of the health icon display
 	#Range: -1000 ~ 1000
-	healthDisplayX = -25
+	healthDisplayX = 93
 	#Vertical position of the health icon display
 	#Range: 0 ~ 1000
 	healthDisplayY = 32

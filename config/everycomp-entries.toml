@@ -62,11 +62,6 @@
 		[types.wood_type.unusualend]
 			chorus_nest = true
 
-		[types.wood_type.undergarden]
-			smogstem = true
-			wigglewood = true
-			grongle = true
-
 		[types.wood_type.upgrade_aquatic]
 			driftwood = true
 			river = true
@@ -138,16 +133,14 @@
 			gilded_oak = true
 			blighted_skyroot = true
 
-		[types.leaves_type.undergarden]
-			smogstem = true
-			wigglewood = true
-			grongle = true
-
 		[types.leaves_type.upgrade_aquatic]
 			river = true
 
 		[types.leaves_type.witherstormmod]
 			tainted = true
+
+		[types.leaves_type.rediscovered]
+			ancient_cherry = true
 
 	[types.cake]
 
@@ -196,6 +189,10 @@
 			stripped_post = true
 			ladder = true
 			vertical_slab = true
+
+		[entries.wood_type.rediscovered]
+			chair = false
+			table = false
 
 		[entries.wood_type.hearth_and_home]
 			lattice = true

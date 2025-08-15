@@ -21,7 +21,7 @@ renderScreenshotElementFontShadow = true
 screenshotElementTextColor = "#FFFFFF"
 #The ordering of the screenshots when the screen is opened.
 #Allowed Values: ASCENDING, DESCENDING
-defaultListOrder = "ASCENDING"
+defaultListOrder = "DESCENDING"
 #The offset in pixels of the screenshot manager button if shown in the pause menu (from 0 to how much you want).
 #Range: > 0
 pauseMenuButtonOffset = 4

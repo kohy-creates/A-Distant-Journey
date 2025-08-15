@@ -25,6 +25,8 @@ ServerEvents.recipes((event) => {
 		'rediscovered:gear',
 		'ars_nouveau:novice_spell_book',
 		'mythicmetals:durasteel_engine',
+		'witherstormmod:super_beacon',
+		'witherstormmod:super_support_beacon',
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -35,7 +37,9 @@ ServerEvents.recipes((event) => {
 		'rediscovered:studded_boots_from_iron',
 		'rediscovered:studded_helmet_from_iron',
 		'rediscovered:studded_leggings_from_iron',
-		'rediscovered:studded_chestplate_from_iron'
+		'rediscovered:studded_chestplate_from_iron',
+		'moresnifferflowers:netherite_scrap_from_part_recycling',
+		'create_ultimate_factory:crushing_netherite'
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -161,6 +165,80 @@ ServerEvents.recipes((event) => {
 			'item': 'minecraft:beacon'
 		},
 		'mana': 750000
+	})
+
+	event.custom({
+		'type': 'botanicadds:gaia_plate',
+		'ingredients': [
+			{
+				'item': 'witherstormmod:withered_nether_star'
+			},
+			{
+				'item': 'witherstormmod:tainted_glass'
+			},
+			{
+				'item': 'witherstormmod:tainted_glass'
+			},
+			{
+				'item': 'witherstormmod:tainted_glass'
+			},
+			{
+				'item': 'witherstormmod:tainted_glass'
+			},
+			{
+				'item': 'witherstormmod:tainted_glass'
+			},
+			{
+				'item': 'witherstormmod:tainted_flesh_block'
+			},
+			{
+				'item': 'witherstormmod:tainted_flesh_block'
+			},
+			{
+				'item': 'witherstormmod:amulet'
+			},
+			{
+				'item': 'beacon'
+			},
+		],
+		'result': {
+			'item': 'witherstormmod:super_beacon'
+		},
+		'mana': 1000000
+	})
+
+	event.custom({
+		'type': 'botanicadds:gaia_plate',
+		'ingredients': [
+			{
+				'item': 'nether_star'
+			},
+			{
+				'item': 'witherstormmod:tainted_glass'
+			},
+			{
+				'item': 'witherstormmod:tainted_glass'
+			},
+			{
+				'item': 'witherstormmod:tainted_glass'
+			},
+			{
+				'item': 'witherstormmod:tainted_glass'
+			},
+			{
+				'item': 'witherstormmod:tainted_glass'
+			},
+			{
+				'item': 'witherstormmod:tainted_flesh_block'
+			},
+			{
+				'item': 'witherstormmod:tainted_flesh_block'
+			},
+		],
+		'result': {
+			'item': 'witherstormmod:super_support_beacon'
+		},
+		'mana': 500000
 	})
 
 	event.recipes.botania.terra_plate('beacon', [
@@ -1769,19 +1847,19 @@ ServerEvents.recipes((event) => {
 	})
 
 	const inter = Item.of('minecraft:ender_eye');
-	// event.recipes.create.sequenced_assembly(
-	// 	Item.of('kubejs:eye_of_ethercraft'),
-	// 	'ender_eye',
-	// 	[
-	// 		event.recipes.create.deploying(inter, [inter, Item.of('create:precision_mechanism')]),
-	// 		event.recipes.create.filling(inter, [inter, Fluid.lava()]),
-	// 		event.recipes.create.deploying(inter, [inter, Item.of('ars_nouveau:source_gem_block')]),
-	// 		event.recipes.create.deploying(inter, [inter, Item.of('create:large_cogwheel')]),
-	// 		event.recipes.create.deploying(inter, [inter, Item.of('create:brass_block')]),
-	// 		event.recipes.create.deploying(inter, [inter, Item.of('create:cogwheel')]),
-	// 		event.recipes.create.filling(inter, [inter, Fluid. ],
-	// 	]
-	// ).transitionalItem(inter).loops(12)
+	event.recipes.create.sequenced_assembly(
+		Item.of('kubejs:eye_of_ethercraft'),
+		'ender_eye',
+		[
+			event.recipes.create.deploying(inter, [inter, Item.of('create:precision_mechanism')]),
+			event.recipes.create.filling(inter, [inter, Fluid.lava()]),
+			event.recipes.create.deploying(inter, [inter, Item.of('ars_nouveau:source_gem_block')]),
+			event.recipes.create.deploying(inter, [inter, Item.of('create:large_cogwheel')]),
+			event.recipes.create.deploying(inter, [inter, Item.of('create:brass_block')]),
+			event.recipes.create.deploying(inter, [inter, Item.of('create:cogwheel')]),
+			event.recipes.create.filling(inter, [inter, Fluid.of('the_bumblezone:royal_jelly_fluid_still', 1000)]),
+		]
+	).transitionalItem(inter).loops(12)
 
 	event.shaped(
 		Item.of('mythicmetals:durasteel_engine'),

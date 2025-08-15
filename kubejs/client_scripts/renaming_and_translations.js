@@ -128,7 +128,6 @@ ClientEvents.lang('en_us', event => {
 		event.renameItem(key, value);
 	}
 
-
 	global.rediscoveredFurniture.forEach(item => {
 		let name = item
 			.replace('rediscovered:', '')

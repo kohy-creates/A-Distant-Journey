@@ -43,6 +43,9 @@ MoreJSEvents.registerPotionBrewing((event) => {
 	event.removeByPotion(null, null, 'netherdepthsupgrade:obsidianfish_strong_resistance');
 	event.removeByPotion(null, null, 'netherdepthsupgrade:lava_puffer_long_wither');
 	event.removeByPotion(null, null, 'netherdepthsupgrade:lava_puffer_long_wither');
+	event.removeByPotion(null, null, 'witherstormmod:wither');
+	event.removeByPotion(null, null, 'witherstormmod:strong_wither');
+	event.removeByPotion(null, null, 'witherstormmod:long_wither');
 
 	// Universal Haste
 	event.removeByPotion(null, null, 'unusualend:haste');
@@ -71,4 +74,7 @@ MoreJSEvents.registerPotionBrewing((event) => {
 	event.addPotionBrewing("netherexp:fossil_fuel", "long_poison", "kubejs:long_decay");
 	event.addPotionBrewing("netherexp:fossil_fuel", "strong_poison", "kubejs:strong_decay");
 
+	event.addPotionBrewing("witherstormmod:withered_spider_eye", "poison", "kubejs:decay");
+	event.addPotionBrewing("witherstormmod:withered_spider_eye", "long_poison", "kubejs:long_decay");
+	event.addPotionBrewing("witherstormmod:withered_spider_eye", "strong_poison", "kubejs:strong_decay");
 })

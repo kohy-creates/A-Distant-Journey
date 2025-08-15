@@ -53,7 +53,7 @@
         },
         "messages": [
           {
-            "id": "The hellish spirits invade the overworld...",
+            "id": "The spirits of hell are flowing to the Overworld...",
             "format": [
               "RED",
               "ITALIC"
@@ -72,9 +72,16 @@
         },
         "messages": [
           {
-            "id": "The hell breaks lose...",
+            "id": "The ancient spirits of darkness have been released...",
             "format": [
               "DARK_RED",
+              "ITALIC"
+            ]
+          },
+          {
+            "id": "Heavenly gates open...",
+            "format": [
+              "YELLOW",
               "ITALIC"
             ]
           }
@@ -91,9 +98,16 @@
         },
         "messages": [
           {
-            "id": "Heavens have been disrupted...",
+            "id": "The ancient spirits of light have been released...",
             "format": [
               "YELLOW",
+              "ITALIC"
+            ]
+          },
+          {
+            "id": "Dreams of a different realm start to materialize...",
+            "format": [
+              "RED",
               "ITALIC"
             ]
           }
@@ -110,9 +124,16 @@
         },
         "messages": [
           {
-            "id": "Ancient Spirits flood the realm...",
+            "id": "The boundary between dreams and nigthmares lessens...",
             "format": [
               "RED",
+              "ITALIC"
+            ]
+          },
+          {
+            "id": "Awakened Ender Pearls start to twitch...",
+            "format": [
+              "LIGHT_PURPLE",
               "ITALIC"
             ]
           }
@@ -130,7 +151,7 @@
         },
         "messages": [
           {
-            "id": "The reality twists...",
+            "id": "The reality twists one final time...",
             "format": [
               "DARK_PURPLE",
               "ITALIC"
@@ -143,9 +164,9 @@
       "__default": 0.0,
       "chapter_1": 0.05,
       "chapter_2": 0.15,
-      "chapter_3": 0.2,
-      "chapter_4": 0.3,
-      "chapter_5": 0.4
+      "chapter_3": 0.25,
+      "chapter_4": 0.4,
+      "chapter_5": 0.5
     }
   },
   "features": {
@@ -160,8 +181,8 @@
     "creeper_explode_behind_wall": {
       "is_enabled": true,
       "required_game_stage": "chapter_2",
-      "chance": 0.25,
-      "is_scaled_by_crd": false
+      "chance": 0.05,
+      "is_scaled_by_crd": true
     },
     "creeper_explosion_immunity": {
       "is_enabled": true,
@@ -214,20 +235,20 @@
     },
     "deadlier_explosions": {
       "is_enabled": true,
-      "required_game_stage": "normal",
+      "required_game_stage": "chapter_3",
       "radius_multiplier": 1.2599,
-      "fire_chance": 0.75,
+      "fire_chance": 1.0,
       "is_scaled_by_crd": true
     },
     "double_loot": {
       "is_enabled": true,
       "chance": {
         "__default": 0.0,
-        "chapter_1": 0.025,
-        "chapter_2": 0.05,
-        "chapter_3": 0.1,
-        "chapter_4": 0.15,
-        "chapter_5": 0.2
+        "chapter_1": 0.05,
+        "chapter_2": 0.1,
+        "chapter_3": 0.2,
+        "chapter_4": 0.33,
+        "chapter_5": 0.5
       },
       "blacklisted_items": [
         "minecraft:nether_star",
@@ -243,7 +264,7 @@
     "enderman_teleport_attack": {
       "is_enabled": true,
       "required_game_stage": "chapter_4",
-      "chance": 0.5,
+      "chance": 0.25,
       "is_scaled_by_crd": true
     },
     "evoker_with_totem": {
@@ -257,10 +278,10 @@
       "extra_multiplier": {
         "__default": 0.0,
         "chapter_1": 0.1,
-        "chapter_2": 0.2,
-        "chapter_3": 0.3,
-        "chapter_4": 0.4,
-        "chapter_5": 0.5
+        "chapter_2": 0.25,
+        "chapter_3": 0.5,
+        "chapter_4": 0.75,
+        "chapter_5": 1.0
       }
     },
     "jockey_spawn": {
@@ -412,6 +433,50 @@
           "amplifier": 0,
           "duration": 7.0
         }
+      },
+      {
+        "required_game_stage": "normal",
+        "chance": 0.25,
+        "is_scaled_by_crd": true,
+        "entity_type": "minecraft:zombie",
+        "effect": {
+          "id": "majruszsdifficulty:bleeding",
+          "amplifier": 1,
+          "duration": 20.0
+        }
+      },
+      {
+        "required_game_stage": "normal",
+        "chance": 0.25,
+        "is_scaled_by_crd": true,
+        "entity_type": "minecraft:husk",
+        "effect": {
+          "id": "majruszsdifficulty:bleeding",
+          "amplifier": 1,
+          "duration": 20.0
+        }
+      },
+      {
+        "required_game_stage": "normal",
+        "chance": 0.25,
+        "is_scaled_by_crd": false,
+        "entity_type": "born_in_chaos_v1:skeleton_thrasher",
+        "effect": {
+          "id": "kubejs:armor_shred",
+          "amplifier": 1,
+          "duration": 40.0
+        }
+      },
+      {
+        "required_game_stage": "normal",
+        "chance": 0.25,
+        "is_scaled_by_crd": false,
+        "entity_type": "born_in_chaos_v1:skeleton_thrasher_not_despawn",
+        "effect": {
+          "id": "kubejs:armor_shred",
+          "amplifier": 1,
+          "duration": 20.0
+        }
       }
     ],
     "mobs_spawn_stronger": {
@@ -419,20 +484,51 @@
       "health_bonus": {
         "__default": 0.0,
         "chapter_1": 0.2,
-        "chapter_2": 0.4,
-        "chapter_3": 0.6,
-        "chapter_4": 0.8,
-        "chapter_5": 1.0
+        "chapter_2": 0.5,
+        "chapter_3": 0.8,
+        "chapter_4": 1.2,
+        "chapter_5": 1.5
       },
       "damage_bonus": {
         "__default": 0.0,
-        "chapter_1": 0.1,
-        "chapter_2": 0.2,
-        "chapter_3": 0.3,
-        "chapter_4": 0.4,
-        "chapter_5": 0.5
+        "chapter_1": 0.15,
+        "chapter_2": 0.4,
+        "chapter_3": 0.8,
+        "chapter_4": 1.2,
+        "chapter_5": 1.5
       },
-      "excluded_mobs": []
+      "excluded_mobs": [
+        "witherstormmod:witherstorm",
+        "witherstormmod:command_block",
+        "witherstormmod:tentacle",
+        "witherstormmod:tentacle_spike",
+        "witherstormmod:wither_storm",
+        "witherstormmod:wither_storm_head",
+        "witherstormmod:wither_storm_segment",
+        "witherstormmod:withered_symbiont",
+        "botania:doppleganger",
+        "cataclysm:ignis",
+        "cataclysm:netherite_monstrosity",
+        "cataclysm:ender_guardian",
+        "cataclysm:the_harbinger",
+        "cataclysm:the_leviathan",
+        "cataclysm:ancient_remnant",
+        "cataclysm:maledictus",
+        "cataclysm:scylla",
+        "unusualend:endstone_golem",
+        "unusualend:enderblob_queen",
+        "minecraft:ender_dragon",
+        "minecraft:wither",
+        "minecraft:warden",
+        "ars_nouveau:wilden_boss",
+        "aether:slider",
+        "aether:valkyrie_queen",
+        "aether:sun_spirit",
+        "alexscaves:luxtructosaurus",
+        "the_bumblezone:cosmic_crystal_entity",
+        "lost_aether_content:aerwhale_king",
+        "rediscovered:red_dragon"
+      ]
     },
     "pillager_with_fireworks": {
       "is_enabled": true,
@@ -441,7 +537,7 @@
       "is_scaled_by_crd": true,
       "crossbow_multishot_chance": 0.25,
       "firework_drop_chance": 0.25,
-      "firework_count": 8
+      "firework_count": 5
     },
     "spawn_blocker": {
       "forbidden_entities": {
@@ -474,8 +570,11 @@
       "is_enabled": true,
       "multiplier": {
         "__default": 1.0,
+        "chapter_1": 1.05,
         "chapter_2": 1.1,
-        "chapter_4": 1.2
+        "chapter_3": 1.1666667,
+        "chapter_4": 1.25,
+        "chapter_5": 1.3333333
       }
     }
   },
@@ -489,12 +588,12 @@
     "is_enabled": true,
     "reset_all_participants_kills": true,
     "wave_duration": 1200.0,
-    "preparing_duration": 10.0,
+    "preparing_duration": 12.0,
     "highlight_delay": 300.0,
     "extra_size_ratio_per_player": 0.5,
-    "area_radius": 70,
-    "kill_requirement": 350,
-    "kill_requirement_first": 150,
+    "area_radius": 60,
+    "kill_requirement": 500,
+    "kill_requirement_first": 200,
     "kill_requirement_warning": 5,
     "waves": [
       {
@@ -626,7 +725,7 @@
             "count": 1
           }
         ],
-        "game_stage": "chapter_1",
+        "game_stage": "chapter_2",
         "exp": 32
       },
       {
@@ -670,7 +769,7 @@
           "type": "majruszsdifficulty:cerberus",
           "count": 1
         },
-        "game_stage": "chapter_2",
+        "game_stage": "chapter_3",
         "exp": 40
       },
       {
@@ -736,6 +835,11 @@
           "id": "majruszsdifficulty:glass_regeneration",
           "amplifier": 0,
           "duration": 20.0
+        },
+        {
+          "id": "kubejs:lesser_instant_health",
+          "amplifier": 0,
+          "duration": 1.0
         }
       ],
       "golden_effects": [
@@ -743,6 +847,11 @@
           "id": "majruszsdifficulty:glass_regeneration",
           "amplifier": 1,
           "duration": 20.0
+        },
+        {
+          "id": "kubejs:lesser_instant_health",
+          "amplifier": 1,
+          "duration": 1.0
         }
       ]
     },
@@ -757,14 +866,14 @@
       "attack_damage": 18,
       "attack_range": {
         "min": 12,
-        "max": 35
+        "max": 20
       }
     },
     "wither_sword": {
       "effect": {
         "id": "minecraft:wither",
         "amplifier": 2,
-        "duration": 6.0
+        "duration": 8.0
       }
     }
   },

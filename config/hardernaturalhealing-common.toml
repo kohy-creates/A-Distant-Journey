@@ -11,7 +11,7 @@
 	maxBonusHitPointTotems = 300
 	#healingPerSecond
 	#Range: 0.0 ~ 10.0
-	healingPerSecond = 0.15
+	healingPerSecond = 0.1
 	#healthAfterDeath
 	#Range: 0 ~ 20
 	healthAfterDeath = 20
@@ -26,10 +26,10 @@
 	healingExhaustionCost = 0.1
 	#wakeupHealingAmount
 	#Range: 0.0 ~ 10.0
-	wakeupHealingAmount = 4.0
+	wakeupHealingAmount = 10.0
 	#extraExhaustionWhenHurt
 	#Range: 0.0 ~ 1.0
-	extraExhaustionWhenHurt = 0.0125
+	extraExhaustionWhenHurt = 0.0
 	#minimum hit points for peaceful mode starvation.
 	#Range: 0 ~ 20
 	minimumStarvationHealth = 0

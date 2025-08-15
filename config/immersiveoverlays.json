@@ -1,6 +1,6 @@
 {
   "compass_enable": true,
-  "compass_vertical_position": 155,
+  "compass_vertical_position": 265,
   "compass_items": [
     "minecraft:compass",
     "minecraft:recovery_compass",
@@ -19,7 +19,7 @@
   "compass_y_colour": "Green",
   "compass_z_colour": "Blue",
   "clock_enable": true,
-  "clock_vertical_position": 140,
+  "clock_vertical_position": 250,
   "clock_items": [
     "minecraft:clock",
     "mythicmetals:platinum_watch"
@@ -32,7 +32,7 @@
   "search_containers": true,
   "render_background": true,
   "align_left": false,
-  "moved_by_effects": true,
+  "moved_by_effects": false,
   "compat_playerlocatorplus": true,
   "compat_xaeros": true,
   "compat_map_atlases": false,

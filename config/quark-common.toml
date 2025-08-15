@@ -129,7 +129,7 @@
 	"Raw Metal Bricks" = false
 	Rope = false
 	"Shear Vines" = true
-	Shingles = false
+	Shingles = true
 	"Soul Sandstone" = true
 	Stools = true
 	"Sturdy Stone" = true
@@ -209,7 +209,7 @@
 		#This also includes Red Sandstone Bricks and Soul Sandstone Bricks
 		"Enable Sandstone Bricks" = true
 		#This also includes Mossy Cobblestone Bricks
-		"Enable Cobblestone Bricks" = false
+		"Enable Cobblestone Bricks" = true
 		#Requires Cobblestone Bricks to be enabled
 		"Enable Blackstone Bricks" = true
 		#Requires Cobblestone Bricks to be enabled

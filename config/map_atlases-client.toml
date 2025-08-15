@@ -23,7 +23,7 @@
 	vertical_offset = 0
 	#The number of pixels to shift vertically when there's an active effect
 	#Range: -4000 ~ 4000
-	active_potion_effects_vertical_offset = 26
+	active_potion_effects_vertical_offset = 0
 	#When enabled, the player's current Coords will be displayed
 	coordinate_text = true
 	#Displays chunk coordinates

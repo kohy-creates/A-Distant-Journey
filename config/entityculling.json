@@ -15,7 +15,16 @@
   "entityWhitelist": [
     "botania:mana_burst",
     "drg_flares:drg_flares",
-    "botania:falling_star"
+    "botania:falling_star",
+    "witherstormmod:command_block",
+    "witherstormmod:blue_flaming_wither_skull",
+    "witherstormmod:flaming_wither_skull",
+    "witherstormmod:formidibomb",
+    "witherstormmod:wither_storm",
+    "witherstormmod:tentacle_spike",
+    "witherstormmod:tentacle",
+    "witherstormmod:wither_storm_head",
+    "witherstormmod:wither_storm_segment"
   ],
   "tracingDistance": 128,
   "debugMode": false,

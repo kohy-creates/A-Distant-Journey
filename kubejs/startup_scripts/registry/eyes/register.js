@@ -212,7 +212,7 @@ StartupEvents.registry('item', event => {
 		.texture('minecraft:block/light_blue_wool')
 		.rarity('epic')
 		.tooltip('§7Mother Nature\'s life-giving power')
-		.displayName('Eye of Verdant Bloom')
+		.displayName('Eye of Verdancy')
 		.tag('adj:eyes')
 		.tag('adjcore:curio_exclusions/eyes')
 })

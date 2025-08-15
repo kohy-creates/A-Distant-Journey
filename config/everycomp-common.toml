@@ -12,8 +12,6 @@
 	generate_dynamic_assets = true
 	#Allow the item_search or searchBar to be visible.
 	tab_item_search = true
-	#Makes dynamic assets that are generated depend on loaded resource packs. Turn off to make them just use vanilla assets
-	assets_depend_on_loaded_packs = true
 
 	[general.tooltips]
 		#Enabled tooltips showing which mod an EC item is from

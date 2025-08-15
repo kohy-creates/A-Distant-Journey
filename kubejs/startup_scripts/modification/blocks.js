@@ -21,6 +21,6 @@ BlockEvents.modification(event => {
 	})
 
 	event.modify('ars_nouveau:portal', block => {
-		block.setLightEmission(10);
+		block.setLightEmission(12);
 	})
 })

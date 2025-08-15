@@ -1,0 +1,91 @@
+{
+	"menu": "adj:music.menu",
+	"default": {
+		"minecraft:overworld": {
+			"day": "adj:music.overworld.day",
+			"night": "adj:music.overworld.night",
+			"rain": "adj:music.overworld.rain",
+			"thunder": "adj:music.overworld.thunder"
+		},
+		"minecraft:the_nether": "adj:music.nether",
+		"minecraft:the_end": "adj:music.end",
+		"the_bumblezone:the_bumblezone": "adj:music.the_bumblezone",
+		"rediscovered:skylands": {
+			"day": "adj:music.skylands.day",
+			"night": "adj:music.skylands.night"
+		},
+		"aether:the_aether": {
+			"day": "adj:music.the_aether.day",
+			"night": "adj:music.the_aether.night"
+		}
+	},
+	"biome": {
+		"#adj:snowy": {
+			"day": "adj:music.biome.snowy.day",
+			"rain": "adj:music.biome.snowy.day"
+		},
+		"#adj:cherry_grove": {
+			"day": "adj:music.biome.cherry_grove.day",
+			"night": "adj:music.biome.cherry_grove.night"
+		},
+		"#adj:mountains": {
+			"day": "adj:music.biome.mountains.day",
+			"night": "adj:music.biome.mountains.night",
+			"rain": "adj:music.biome.mountains.rain"
+		},
+		"#adj:forest": {
+			"night": "adj:music.biome.forest.night"
+		},
+		"#adj:swamp": {
+			"day": "adj:music.biome.swamp.day",
+			"night": "adj:music.biome.swamp.night",
+			"rain": "adj:music.biome.swamp.rain"
+		},
+		"#adj:badlands": {
+			"day": "adj:music.biome.badlands.day",
+			"rain": "adj:music.biome.desert.rain",
+			"thunder": "adj:music.biome.desert.thunder"
+		},
+		"#adj:desert": {
+			"day": "adj:music.biome.desert.day",
+			"rain": "adj:music.biome.desert.rain",
+			"thunder": "adj:music.biome.desert.thunder"
+		},
+		"#adj:beach": {
+			"day": "adj:music.biome.beach.day",
+			"night": "adj:music.biome.beach.night"
+		},
+		"#adj:ocean": {
+			"day": "adj:music.biome.ocean.day",
+			"night": "adj:music.biome.ocean.night",
+			"rain": "adj:music.biome.ocean.night",
+			"thunder": "adj:music.biome.ocean.night"
+		},
+		"#adj:warm_ocean": {
+			"night": "adj:music.biome.warm_ocean.night"
+		},
+		"#adj:mushroom_island": "adj:music.biome.mushroom_island",
+		"#adj:caves": "adj:music.biome.caves",
+		"#adj:warm_caves": "adj:music.biome.warm_caves",
+		"alexscaves:forlorn_hollows": "adj:music.biome.forlorn_hollows",
+		"minecraft:lush_caves": "adj:music.biome.lush_caves",
+		"alexscaves:abyssal_chasm": "adj:music.biome.abyssal_chasm",
+		"minecraft:deep_dark": "adj:music.biome.deep_dark",
+		"alexscaves:primordial_caves": "adj:music.biome.primordial_caves",
+		"alexscaves:magnetic_caves": "adj:music.biome.magnetic_caves",
+		"alexscaves:toxic_caves": "adj:music.biome.toxic_caves",
+		"alexscaves:candy_cavity": "adj:music.biome.candy_cavity",
+		"#adj:soul_sand_valley": "adj:music.biome.soul_sand_valley",
+		"#adj:withered_forest": "adj:music.biome.withered_forest",
+		"#adj:crimson_forest": "adj:music.biome.crimson_forest",
+		"#adj:warped_forest": "adj:music.biome.warped_forest",
+		"#adj:basalt_deltas": "adj:music.biome.basalt_deltas"
+
+	},
+	"boss": {
+		"minecraft:wither": {
+			"loop": "adj:music.boss.wither_loop",
+			"stop": "adj:music.boss.wither_stop"
+		}
+	}
+}

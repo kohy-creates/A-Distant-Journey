@@ -21,14 +21,6 @@ LootJS.modifiers((event) => {
 		.removeLoot('minecraft:wither_skeleton_skull')
 		.pool(skullFragmentDrop);
 
-	// event.addEntityLootModifier('minecraft:pillager')
-	// 	.pool((pool) => {
-	// 		pool.rolls(1);
-	// 		pool.addLoot(LootEntry.of('minecraft:emerald'))
-	// 			.limitCount([0, 2])
-	// 			.applyLootingBonus([0, 1]);
-	// 	});
-
 	event.addEntityLootModifier('minecraft:zombie')
 		.pool((pool) => {
 			pool.rolls(1);
@@ -37,23 +29,7 @@ LootJS.modifiers((event) => {
 				.limitCount([0, 2])
 				.applyLootingBonus([0, 1]);
 		});
-
-	// event.addEntityLootModifier('minecraft:husk')
-	// 	.pool((pool) => {
-	// 		pool.rolls(1);
-	// 		pool.randomChanceWithLooting(0.33, 0.17)
-	// 			.addLoot(LootEntry.of('minecraft:sand'))
-	// 			.limitCount([0, 2])
-	// 			.applyLootingBonus([0, 1]);
-	// 	});
-
-	// event.addEntityLootModifier('minecraft:stray')
-	// 	.pool((pool) => {
-	// 		pool.rolls(1);
-	// 		pool.randomChanceWithLooting(0.25, 0.25)
-	// 			.addLoot(LootEntry.of('minecraft:ice'))
-	// 			.limitCount([0, 2])
-	// 			.applyLootingBonus([0, 1]);
-	// 	});
+	
+	event.addEntityLootModifier('ars_nouveau:wilden_boss')
+		.removeLoot('ars_nouveau:wilden_tribute')
 });
-
