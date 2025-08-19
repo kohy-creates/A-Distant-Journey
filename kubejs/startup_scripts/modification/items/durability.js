@@ -244,7 +244,7 @@ ItemEvents.modification(event => {
 
 	//////////////////////////////////////////////////////
 
-	const amounts = [13, 15, 16, 11]
+	const amounts = [13, 16, 15, 11]
 	const item_ids = ['_helmet', '_chestplate', '_leggings', '_boots']
 	function maxDurabilityArmor(prefix, mul, customAmounts) {
 		if (!customAmounts) customAmounts = amounts;

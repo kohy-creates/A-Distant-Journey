@@ -1093,18 +1093,6 @@ ServerEvents.recipes((event) => {
 			P: 'paper'
 		}
 	)
-	// Slightly different Atlas recipe
-	event.remove({ id: 'map_atlases:craft_atlas' })
-	event.shapeless(
-		Item.of('map_atlases:atlas'),
-		[
-			'book',
-			'#adj:any_map',
-			'ink_sac',
-			'feather',
-			'compass'
-		]
-	)
 
 	// Harder Waystones
 	let waystonesRemove = [
@@ -1502,10 +1490,10 @@ ServerEvents.recipes((event) => {
 			}
 		)
 	}
-	simpleForgeRecipe('stone_bricks', 'kubejs:stone_brick_forge')
-	simpleForgeRecipe('deepslate_bricks', 'kubejs:deepslate_brick_forge')
-	simpleForgeRecipe('nether_bricks', 'kubejs:hellforge', 'kubejs:stone_brick_forge')
-	simpleForgeRecipe('nether_bricks', 'kubejs:hellforge', 'kubejs:deepslate_brick_forge')
+	simpleForgeRecipe('stone_bricks', 'alloy_forgery:cracked_stone_bricks_forge_controller')
+	simpleForgeRecipe('deepslate_bricks', 'alloy_forgery:cracked_deepslate_bricks_forge_controller')
+	simpleForgeRecipe('nether_bricks', 'alloy_forgery:nether_bricks_forge_controller', 'alloy_forgery:cracked_stone_bricks_forge_controller')
+	simpleForgeRecipe('nether_bricks', 'alloy_forgery:nether_bricks_forge_controller', 'alloy_forgery:cracked_deepslate_bricks_forge_controller')
 
 	event.shaped(
 		'kubejs:adamantite_forge',
@@ -1515,8 +1503,8 @@ ServerEvents.recipes((event) => {
 			'ICI'
 		],
 		{
-			F: 'kubejs:hellforge',
-			C: 'kubejs:adamantite_forge_casing',
+			F: 'alloy_forgery:nether_bricks_forge_controller',
+			C: 'adj:adamantite_forge_casing',
 			I: 'iron_block'
 		}
 	)
@@ -1529,8 +1517,8 @@ ServerEvents.recipes((event) => {
 			'ICI'
 		],
 		{
-			F: 'kubejs:adamantite_forge',
-			C: 'kubejs:ender_forge_casing',
+			F: 'alloy_forgery:adamantite_forge_casing_forge_controller',
+			C: 'adj:ender_forge_casing',
 			I: 'unusualend:pearlescent_ingot'
 		}
 	)
@@ -1549,8 +1537,8 @@ ServerEvents.recipes((event) => {
 			}
 		)
 	}
-	casingRecipe('born_in_chaos_v1:dark_metal_ingot', 'mythicmetals:adamantite_ingot', 'kubejs:adamantite_forge_casing')
-	casingRecipe('purpur_block', 'end_stone_bricks', 'kubejs:ender_forge_casing')
+	casingRecipe('born_in_chaos_v1:dark_metal_ingot', 'mythicmetals:adamantite_ingot', 'adj:adamantite_forge_casing')
+	casingRecipe('purpur_block', 'end_stone_bricks', 'adj:ender_forge_casing')
 
 	event.shapeless(
 		Item.of('brown_dye', 2),

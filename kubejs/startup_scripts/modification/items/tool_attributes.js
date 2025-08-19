@@ -4,6 +4,7 @@ const $TieredItem = Java.loadClass('net.minecraft.world.item.TieredItem')
 const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem')
 const $SwordItem = Java.loadClass('net.minecraft.world.item.SwordItem')
 const $AttributeModifier = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier")
+const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes")
 
 const miningSpeedUUID = '80091653-9902-44f9-95a7-d627610856c0'
 const harvestLevelUUID = '84257908-8296-4470-ad2e-97e5db59b64e'
@@ -33,20 +34,32 @@ const weaponModifierUUIDs = [
 
 ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (event) => {
 	const item = event.getItemStack().getItem();
+	// LEAVE EVERYTHING PAST HERE AS 'LET' CAUSE KUBEJS SUCKS BALLS
+
 	if (event.slotType == 'mainhand') {
 		if (item instanceof $TieredItem && !(item instanceof $SwordItem)) {
-			const tier = item.getTier();
+			let tier = item.getTier();
 			event.addModifier("kubejs:harvest_level", new $AttributeModifier(harvestLevelUUID, "Harvest Level", tier.getLevel(), 'addition'))
 			let speed = tier.getSpeed();
 			if (item.id.toString().includes('rose_gold')) speed = 7.0;
 			event.addModifier("kubejs:mining_speed", new $AttributeModifier(miningSpeedUUID, "Mining Speed", speed, 'addition'))
 		}
+		let attackDamageMods = event.getOriginalModifiers().get('generic.attack_damage');
+		let baseDamage = 0
+		if (attackDamageMods && !attackDamageMods.isEmpty()) {
+			// AttributeModifiers is a Collection, iterate in JS
+			attackDamageMods.forEach(mod => {
+				baseDamage += mod.getAmount()
+			})
+			event.removeAttribute('generic.attack_damage');
+			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', Math.round(baseDamage * 4), 'addition'))
+		}
 		if (Object.keys(global.weapon_overrides).includes(item.id.toString())) {
-			const overrides = global.weapon_overrides[item.id.toString()];
+			let overrides = global.weapon_overrides[item.id.toString()];
 			event.removeAttribute('generic.attack_damage');
 			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', overrides[0], 'addition'))
 			event.removeAttribute('generic.attack_speed');
-			const attackSpeed = overrides[1];
+			let attackSpeed = -4 + overrides[1];
 			event.addModifier('generic.attack_speed', new $AttributeModifier(weaponModifierUUIDs[1], 'Attack Speed', attackSpeed, 'addition'))
 			if (overrides.length > 2) {
 				event.removeAttribute('attributeslib:crit_chance');
@@ -61,13 +74,13 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 		}
 	}
 	if (item instanceof $ArmorItem) {
-		const id = item.getId().toString();
+		let id = item.getId().toString();
 		for (let i = 0; i < armorItemTypes.length; i++) {
 			if (id.includes(armorItemTypes[i]) && event.slotType == slots[i]) {
-				const armorID = id.replace(armorItemTypes[i], '');
+				let armorID = id.replace(armorItemTypes[i], '');
 				if (!global.armorOverrides[armorID]) return;
-				const armorValue = global.armorOverrides[armorID][i];
-				const uuid = modifierUUIDs[i];
+				let armorValue = global.armorOverrides[armorID][i];
+				let uuid = modifierUUIDs[i];
 				event.removeAttribute('generic.armor');
 				event.addModifier('generic.armor', new $AttributeModifier(modifierUUIDs[i], uuid, armorValue, 'addition'))
 			}

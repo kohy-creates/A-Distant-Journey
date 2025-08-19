@@ -60,3 +60,6 @@ net.minecraft.client.gui.screens.AccessibilityOptionsScreen {
 net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
 }
 
+se.mickelus.tetra.blocks.workbench.gui.WorkbenchScreen {
+}
+

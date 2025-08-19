@@ -22,6 +22,11 @@ EntityEvents.spawned(event => {
 	}
 })
 
+// EntityEvents.hurt(event => {
+// 	const type = event.getSource().getType();
+// 	console.log(type);
+// })
+
 function weightedRandom(weightMap) {
 	const entries = Object.entries(weightMap);
 	const totalWeight = entries.reduce((sum, [, weight]) => sum + weight, 0);

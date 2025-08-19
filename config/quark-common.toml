@@ -119,7 +119,7 @@
 	"Hollow Logs" = false
 	"Industrial Palette" = true
 	"Japanese Palette" = true
-	"Leaf Carpet" = true
+	"Leaf Carpet" = false
 	Midori = true
 	"More Brick Types" = true
 	"More Mud Blocks" = true
@@ -129,16 +129,16 @@
 	"Raw Metal Bricks" = false
 	Rope = false
 	"Shear Vines" = true
-	Shingles = true
+	Shingles = false
 	"Soul Sandstone" = true
 	Stools = true
 	"Sturdy Stone" = true
-	Thatch = true
+	Thatch = false
 	"Variant Bookshelves" = true
 	"Variant Chests" = true
 	"Variant Furnaces" = true
 	"Variant Ladders" = true
-	"Vertical Planks" = true
+	"Vertical Planks" = false
 	"Vertical Slabs" = false
 	"Wooden Posts" = false
 	"More Stone Variants" = true
@@ -209,13 +209,13 @@
 		#This also includes Red Sandstone Bricks and Soul Sandstone Bricks
 		"Enable Sandstone Bricks" = true
 		#This also includes Mossy Cobblestone Bricks
-		"Enable Cobblestone Bricks" = true
+		"Enable Cobblestone Bricks" = false
 		#Requires Cobblestone Bricks to be enabled
-		"Enable Blackstone Bricks" = true
+		"Enable Blackstone Bricks" = false
 		#Requires Cobblestone Bricks to be enabled
-		"Enable Dirt Bricks" = true
+		"Enable Dirt Bricks" = false
 		#Requires Cobblestone Bricks to be enabled
-		"Enable Netherrack Bricks" = true
+		"Enable Netherrack Bricks" = false
 
 	[building.rainbow_lamps]
 		"Light Level" = 15

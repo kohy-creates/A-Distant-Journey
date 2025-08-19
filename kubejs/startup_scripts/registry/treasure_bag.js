@@ -4,6 +4,12 @@ const $TreasureBag = Java.loadClass('com.majruszsdifficulty.items.TreasureBag')
  * @type {Internal.EntityType_}
  */
 global.bossMobs = [
+	"minecraft:ender_dragon",
+	"minecraft:wither",
+	"minecraft:warden",
+]
+
+global.bossMobsNoTreasureBag = [
 	"witherstormmod:witherstorm",
 	"witherstormmod:withered_symbiont",
 	"botania:doppleganger",
@@ -17,11 +23,6 @@ global.bossMobs = [
 	"cataclysm:scylla",
 	"unusualend:endstone_golem",
 	"unusualend:enderblob_queen",
-	/* Those 3 already have treasure bags
-	"minecraft:ender_dragon",
-	"minecraft:wither",
-	"minecraft:warden",
-	*/
 	"ars_nouveau:wilden_boss",
 	"aether:slider",
 	"aether:valkyrie_queen",
@@ -65,7 +66,7 @@ StartupEvents.registry('item', event => {
 		}
 	}
 
-	global.bossMobs.forEach(mob => {
+	global.bossMobsNoTreasureBag.forEach(mob => {
 		createTreasureBag(mob);
 	});
 

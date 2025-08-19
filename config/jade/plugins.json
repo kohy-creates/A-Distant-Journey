@@ -11,7 +11,7 @@
     "armor_stand": true,
     "fluid_storage.detailed": false,
     "energy_storage": true,
-    "entity_armor.max_for_render": 20,
+    "entity_armor.max_for_render": 0,
     "breaking_progress": true,
     "tnt_stability": true,
     "item_storage.items_per_line": 9,
@@ -21,7 +21,7 @@
     "mob_growth": true,
     "waxed": true,
     "harvest_tool.new_line": false,
-    "entity_health.max_for_render": 40,
+    "entity_health.max_for_render": 0,
     "entity_health.show_fractions": true,
     "mob_spawner": true,
     "redstone": true,
@@ -37,7 +37,7 @@
     "block_states": false,
     "lectern": true,
     "entity_armor": true,
-    "harvest_tool.creative": false,
+    "harvest_tool.creative": true,
     "horse_stats": true,
     "item_tooltip": true,
     "entity_health": true,
@@ -84,9 +84,6 @@
     "lightroom": true,
     "photograph_frame": true
   },
-  "projecte": {
-    "emc_provider": true
-  },
   "aether_redux": {
     "logicator": true
   },
@@ -94,6 +91,12 @@
     "crop_progress": true,
     "pie_icons": true,
     "mushroom_colony": true
+  },
+  "reliquary": {
+    "pedestal": true,
+    "altar": true,
+    "mortar": true,
+    "cauldron": true
   },
   "supplementaries": {
     "hat_stand": true

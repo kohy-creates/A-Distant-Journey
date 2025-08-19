@@ -207,29 +207,27 @@ const tiers = {
 	}
 }
 
-const blockTags = {
-	1: 'minecraft:needs_stone_tool',
-	2: 'minecraft:needs_iron_tool',
-	3: 'minecraft:needs_diamond_tool',
-	4: 'forgery:needs_netherite_tool',
-	5: 'adjcore:needs_tier_5_tool',
-	6: 'adjcore:needs_tier_6_tool',
-}
+const blockTags = [
+	'minecraft:needs_stone_tool',
+	'minecraft:needs_iron_tool',
+	'minecraft:needs_diamond_tool',
+	'forge:needs_netherite_tool',
+	'adjcore:needs_tier_5_tool',
+	'adjcore:needs_tier_6_tool',
+]
 
 function tierBelow(number) {
 	switch (number) {
 		case 0:
-			return []
+			return [$Tiers.WOOD];
 		case 1:
-			return [$Tiers.WOOD]
+			return [$Tiers.STONE];
 		case 2:
-			return [$Tiers.STONE]
+			return [$Tiers.IRON];
 		case 3:
-			return [$Tiers.IRON]
-		case 4:
-			return [$Tiers.DIAMOND]
+			return [$Tiers.DIAMOND];
 		default:
-			return [$Tiers.NETHERITE]
+			return [$Tiers.NETHERITE];
 	}
 }
 
@@ -237,32 +235,31 @@ function tierBelow(number) {
 function tierAbove(number) {
 	switch (number) {
 		case 0:
-			return [$Tiers.STONE]
+			return [$Tiers.WOOD];
 		case 1:
-			return [$Tiers.IRON]
+			return [$Tiers.STONE];
 		case 2:
-			return [$Tiers.DIAMOND]
+			return [$Tiers.IRON];
 		case 3:
-			return [$Tiers.NETHERITE]
+			return [$Tiers.DIAMOND];
 		default:
-			return []
+			return [$Tiers.NETHERITE]
 	}
 }
 
-StartupEvents.registry('item', event => {
+StartupEvents.init(event => {
 	for (const key in tiers) {
 		let tier = tiers[key];
-		let repairItem = Ingredient.of(tier.repairIngredient);
 		let forgeTier = new $ForgeTier(
 			tier.level,
 			tier.uses,
 			tier.speed,
 			tier.attackDamageBonus,
 			tier.enchantmentValue,
-			$BlockTags.create($ResourceLocation.parse(blockTags[tier.level])),
-			() => repairItem
+			$BlockTags.create($ResourceLocation.parse("adj:needs_" + key + "_tool")),
+			() => Ingredient.of(tier.repairIngredient)
 		)
-		$TierSortingRegistry.registerTier(forgeTier, 'adj:' + key, tierBelow(tier.level), tierAbove(tier.level));
+		$TierSortingRegistry.registerTier(forgeTier, $ResourceLocation.parse('adj:' + key), tierBelow(tier.level), []);
 	}
 })
 
@@ -278,7 +275,7 @@ ItemEvents.modification(event => {
 		toolset.forEach(tool => {
 			const itemId = itemCat + tool;
 			event.modify(itemId, item => {
-				item.tier = $TierSortingRegistry.byName('adj:' + tier);
+				item.tier = $TierSortingRegistry.byName($ResourceLocation.parse('adj:' + tier));
 			})
 		})
 	}
@@ -305,4 +302,3 @@ ItemEvents.modification(event => {
 	})
 
 })
-

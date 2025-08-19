@@ -1,4 +1,4 @@
-const spawnEggs = /.*spawn_egg$/
+const spawnEggs = /.*spawn_egg.*/
 
 JEIEvents.hideItems(event => {
 
@@ -6,12 +6,5 @@ JEIEvents.hideItems(event => {
 		spawnEggs,
 		global.rediscoveredFurniture,
 	])
-
-})
-
-
-JEIEvents.addItems(event => {
-
-	event.add(Ingredient.of('bundle'))
 
 })

@@ -1,1 +1,1 @@
-kubejs:stone_brick_forge
+alloy_forgery:cracked_stone_bricks_forge_controller

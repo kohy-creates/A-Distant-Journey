@@ -1,0 +1,5 @@
+{
+	"#minecraft:is_projectile": 4.0,
+	"#minecraft:is_lightning": 5.0,
+	"#minecraft:is_explosion": 5.0
+}
