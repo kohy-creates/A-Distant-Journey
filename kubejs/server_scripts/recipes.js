@@ -27,6 +27,7 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:durasteel_engine',
 		'witherstormmod:super_beacon',
 		'witherstormmod:super_support_beacon',
+		'map_atlases:atlas'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -54,6 +55,19 @@ ServerEvents.recipes((event) => {
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
 	})
+
+	// Slightly different Atlas recipe
+	event.remove({ id: 'map_atlases:craft_atlas' })
+	event.shapeless(
+		Item.of('map_atlases:atlas'),
+		[
+			'book',
+			'#adj:any_map',
+			'ink_sac',
+			'feather',
+			'compass'
+		]
+	)
 
 	event.shaped(
 		Item.of('enchantinginfuser:enchanting_infuser', 1),

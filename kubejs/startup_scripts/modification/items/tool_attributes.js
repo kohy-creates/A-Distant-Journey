@@ -78,11 +78,14 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 			if (id.includes(armorItemTypes[i]) && event.slotType == slots[i]) {
 				let armorID = id.replace(armorItemTypes[i], '');
 				if (!global.armorOverrides[armorID]) return;
-				let armorValue = global.armorOverrides[armorID][i];
+				let armorValue = global.armorOverrides[armorID];
 				let uuid = modifierUUIDs[i];
-				event.removeAttribute('generic.armor');
-				event.addModifier('generic.armor', new $AttributeModifier(modifierUUIDs[i], uuid, armorValue, 'addition'))
+				for (let attribute in Object.keys(armorValue)) {
+					event.removeAttribute(attribute);
+					event.addModifier(attribute, new $AttributeModifier(modifierUUIDs[i], uuid, armorValue[attribute], 'addition'))
+				}
 			}
 		}
 	}
 });
+

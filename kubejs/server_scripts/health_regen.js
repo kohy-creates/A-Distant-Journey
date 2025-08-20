@@ -1,7 +1,6 @@
 let hardcore;
 ServerEvents.loaded(event => {
-	const server = event.getServer();
-	hardcore = server.isHardcore()
+	hardcore = event.getServer().isHardcore()
 	server.gameRules.set('naturalRegeneration', false);
 });
 
@@ -50,7 +49,7 @@ PlayerEvents.tick(event => {
 
 	RC = persistentData.regenerationTimer
 
-	console.log(`R: ${R} | RT: ${RT} | eRT: ${eRT} | RC: ${RC}`)
+	// console.log(`R: ${R} | RT: ${RT} | eRT: ${eRT} | RC: ${RC}`)
 
 	persistentData.putShort('regenerationTimer', RC + R);
 	if (persistentData.regenerationTimer >= 40) {

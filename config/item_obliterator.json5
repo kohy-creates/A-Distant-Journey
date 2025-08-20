@@ -397,9 +397,6 @@
 		"supplementaries:cannonball",
 		"supplementaries:altimeter",
 
-		"unionlib:golden_ring",
-		"unionlib:iron_emerald_necklace",
-
 		"tetra:forged_mesh",
 
 		"create_power_loader:empty_andesite_chunk_loader",
@@ -421,9 +418,36 @@
 		"alloy_forgery:deepslate_bricks_forge_controller",
 		"alloy_forgery:polished_blackstone_forge_controller",
 		"alloy_forgery:end_stone_bricks_forge_controller",
-		"alloy_forgery:adamantite_block_forge_controller"
+		"alloy_forgery:adamantite_block_forge_controller",
+
+		"enigmaticlegacy:common_potion",
+		"enigmaticlegacy:ultimate_potion",
+		"enigmaticlegacy:ultimate_potion_splash",
+		"enigmaticlegacy:ultimate_potion_lingering",
+		"enigmaticaddons:common_potion",
+		"enigmaticaddons:common_potion_splash",
+		"enigmaticaddons:common_potion_lingering",
+		"enigmaticaddons:ultimate_potion",
+		"enigmaticaddons:ultimate_potion_splash",
+		"enigmaticaddons:ultimate_potion_lingering",
+		"enigmaticlegacy:etherium_ore",
+		"enigmaticlegacy:etherium_ingot",
+		"enigmaticlegacy:etherium_nugget",
+		"enigmaticlegacy:etherium_block",
+		"enigmaticlegacy:etherium_pickaxe",
+		"enigmaticlegacy:etherium_axe",
+		"enigmaticlegacy:etherium_sword",
+		"enigmaticlegacy:etherium_shovel",
+		"enigmaticlegacy:etherium_scrap",
+		"enigmaticlegacy:etherium_helmet",
+		"enigmaticlegacy:etherium_chestplate",
+		"enigmaticlegacy:etherium_leggings",
+		"enigmaticlegacy:etherium_boots",
+		"enigmaticlegacy:etherium_core",
+		"enigmaticlegacy:ender_ring"
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
+	
 	// Use with caution! This is a very expensive operation and can cause lag if you have a lot of items blacklisted.
 	// 	
 	// 	 Example to disable a regeneration potion: Potion:"minecraft:regeneration"

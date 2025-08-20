@@ -6,5 +6,6 @@
 	"minecraft:falling_anvil": 5.0,
 	"minecraft:falling_stalactite": 5.0,
 	"minecraft:falling_block": 5.0,
-	"minecraft:hot_floor": 7.0
+	"minecraft:hot_floor": 7.0,
+	"minecraft:dragon_breath": 5.0
 }

@@ -56,3 +56,8 @@ ServerEvents.tags('item', event => {
 		/quiver/
 	])
 });
+
+ServerEvents.recipes(event => {
+	
+	
+})
