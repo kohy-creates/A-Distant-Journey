@@ -3610,7 +3610,7 @@ const itemsToTooltip = [
 
 	// Other
 	{
-		item: /^(?=.*kubejs:)(?=.*forge)(?!.*casing).*$/,
+		item: /^(?=.*alloy_forgery:)(?=.*forge_controller)/,
 		summary: [
 			"The easiest way of getting the most materials out of your mining trips is an _Alloy Forge_.",
 			"Alloy Forges have two uses:",

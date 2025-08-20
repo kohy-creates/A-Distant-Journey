@@ -486,8 +486,8 @@
         "chapter_1": 0.2,
         "chapter_2": 0.5,
         "chapter_3": 0.8,
-        "chapter_4": 1.2,
-        "chapter_5": 1.5
+        "chapter_4": 1.4,
+        "chapter_5": 2.0
       },
       "damage_bonus": {
         "__default": 0.0,

@@ -5,16 +5,6 @@ ItemEvents.modification(event => {
 	});
 
 	event.modify([
-		'ancient_debris',
-		/.*netherite.*/,
-		'netherexp:nether_pizza',
-		/adamantite/,
-		'ars_nouveau:apprentice_spell_book'
-	], item => {
-		item.rarity = 'rare';
-	});
-
-	event.modify([
 		/.*diamond.*/,
 		'turtle_helmet',
 		/orichalcum/,
@@ -23,6 +13,17 @@ ItemEvents.modification(event => {
 		'ars_nouveau:novice_spell_book'
 	], item => {
 		item.rarity = 'uncommon';
+	});
+
+	event.modify([
+		'ancient_debris',
+		/.*netherite.*/,
+		'netherexp:nether_pizza',
+		/adamantite/,
+		'ars_nouveau:apprentice_spell_book',
+		/gravitite/
+	], item => {
+		item.rarity = 'rare';
 	});
 
 	event.modify([
@@ -41,7 +42,7 @@ ItemEvents.modification(event => {
 		'majruszsdifficulty:enderium_shard_locator',
 		'majruszsdifficulty:soul_jar',
 		'majruszsdifficulty:wither_sword',
-		/majruszsdifficulty:.*_treasure_bag/
+		/treasure_bag/
 	], item => {
 		item.rarity = 'alexscaves:rainbow'
 	});

@@ -39,7 +39,17 @@ ServerEvents.recipes((event) => {
 		'rediscovered:studded_leggings_from_iron',
 		'rediscovered:studded_chestplate_from_iron',
 		'moresnifferflowers:netherite_scrap_from_part_recycling',
-		'create_ultimate_factory:crushing_netherite'
+		'create_ultimate_factory:crushing_netherite',
+
+		'mythicmetals:alloy_forge/alloy_celestium_from_ingots',
+		'mythicmetals:alloy_forge/alloy_celestium_from_ingots_alt',
+		'mythicmetals:alloy_forge/alloy_celestium_from_ores',
+		'mythicmetals:alloy_forge/alloy_celestium_from_raw_ores',
+
+		'mythicmetals:alloy_forge/alloy_metallurgium_from_ingots',
+		'mythicmetals:alloy_forge/alloy_metallurgium_from_ingots_alt',
+		'mythicmetals:alloy_forge/alloy_metallurgium_from_ores',
+		'mythicmetals:alloy_forge/alloy_metallurgium_from_raw_ores',
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -102,192 +112,110 @@ ServerEvents.recipes((event) => {
 
 	event.recipes.botania.mana_infusion('naturescompass:naturescompass', 'minecraft:compass').mana(100000)
 
-	event.custom({
-		'type': 'botanicadds:gaia_plate',
-		'ingredients': [
-			{
-				'tag': 'adj:clock'
-			},
-			{
-				'item': 'glass_bottle'
-			},
-			{
-				'item': 'mythicmetals:runite_ingot'
-			},
-			{
-				'item': 'mythicmetals:runite_ingot'
-			},
-			{
-				'item': 'mythicmetals:hallowed_ingot'
-			},
-			{
-				'item': 'mythicmetals:hallowed_ingot'
-			},
-			{
-				'item': 'nether_star'
-			}
+	/**
+	 * Registers a BotanicAdds Gaia Plate recipe
+	 *
+	 * @param {Internal.RecipesEventJS} event
+	 * @param {InputItem_[]} inputs - List of items or tags (prefix with # for tags)
+	 * @param {OutputItem_} output - The resulting item ID
+	 * @param {number} mana - Mana cost
+	 */
+	function gaiaPlateRecipe(inputs, output, mana) {
+		const ingredients = inputs.map(id =>
+			id.startsWith("#") ? { tag: id.slice(1) } : { item: id }
+		);
+
+		event.custom({
+			type: "botanicadds:gaia_plate",
+			ingredients: ingredients,
+			result: { item: output },
+			mana: mana
+		});
+	}
+
+	function terraPlateAndGaiaPlate(inputs, output, mana) {
+		event.recipes.botania.terra_plate(output, inputs).mana(mana)
+		gaiaPlateRecipe(inputs, output, Math.round(mana * 0.6))
+	}
+
+	// Time in a Bottle
+	gaiaPlateRecipe(
+		[
+			"#adj:clock",
+			"glass_bottle",
+			"mythicmetals:runite_ingot",
+			"mythicmetals:runite_ingot",
+			"mythicmetals:hallowed_ingot",
+			"mythicmetals:hallowed_ingot",
+			"nether_star"
 		],
-		'result': {
-			'item': 'tiab:time_in_a_bottle'
-		},
-		'mana': 100000
-	})
+		"tiab:time_in_a_bottle",
+		500000
+	);
 
-	event.custom({
-		'type': 'botanicadds:gaia_plate',
-		'ingredients': [
-			{
-				'item': 'nether_star'
-			},
-			{
-				'item': 'crying_obsidian'
-			},
-			{
-				'item': 'crying_obsidian'
-			},
-			{
-				'item': 'crying_obsidian'
-			},
-			{
-				'item': 'mythicmetals:palladium_block'
-			},
-			{
-				'tag': 'c:glass_blocks'
-			},
-			{
-				'tag': 'c:glass_blocks'
-			},
-			{
-				'tag': 'c:glass_blocks'
-			}
+	// Beacon
+	terraPlateAndGaiaPlate(
+		[
+			"nether_star",
+			"crying_obsidian",
+			"crying_obsidian",
+			"crying_obsidian",
+			"mythicmetals:palladium_block",
+			"#c:glass_blocks",
+			"#c:glass_blocks",
+			"#c:glass_blocks"
 		],
-		'result': {
-			'item': 'minecraft:beacon'
-		},
-		'mana': 750000
-	})
+		"minecraft:beacon",
+		1000000
+	);
 
-	event.custom({
-		'type': 'botanicadds:gaia_plate',
-		'ingredients': [
-			{
-				'item': 'witherstormmod:withered_nether_star'
-			},
-			{
-				'item': 'witherstormmod:tainted_glass'
-			},
-			{
-				'item': 'witherstormmod:tainted_glass'
-			},
-			{
-				'item': 'witherstormmod:tainted_glass'
-			},
-			{
-				'item': 'witherstormmod:tainted_glass'
-			},
-			{
-				'item': 'witherstormmod:tainted_glass'
-			},
-			{
-				'item': 'witherstormmod:tainted_flesh_block'
-			},
-			{
-				'item': 'witherstormmod:tainted_flesh_block'
-			},
-			{
-				'item': 'witherstormmod:amulet'
-			},
-			{
-				'item': 'beacon'
-			},
+	// Super Beacon
+	gaiaPlateRecipe(
+		[
+			"witherstormmod:withered_nether_star",
+			"witherstormmod:tainted_glass",
+			"witherstormmod:tainted_glass",
+			"witherstormmod:tainted_glass",
+			"witherstormmod:tainted_glass",
+			"witherstormmod:tainted_glass",
+			"witherstormmod:tainted_flesh_block",
+			"witherstormmod:tainted_flesh_block",
+			"witherstormmod:amulet",
+			"beacon"
 		],
-		'result': {
-			'item': 'witherstormmod:super_beacon'
-		},
-		'mana': 1000000
-	})
+		"witherstormmod:super_beacon",
+		1000000
+	);
 
-	event.custom({
-		'type': 'botanicadds:gaia_plate',
-		'ingredients': [
-			{
-				'item': 'nether_star'
-			},
-			{
-				'item': 'witherstormmod:tainted_glass'
-			},
-			{
-				'item': 'witherstormmod:tainted_glass'
-			},
-			{
-				'item': 'witherstormmod:tainted_glass'
-			},
-			{
-				'item': 'witherstormmod:tainted_glass'
-			},
-			{
-				'item': 'witherstormmod:tainted_glass'
-			},
-			{
-				'item': 'witherstormmod:tainted_flesh_block'
-			},
-			{
-				'item': 'witherstormmod:tainted_flesh_block'
-			},
+	// Super Support Beacon
+	gaiaPlateRecipe(
+		[
+			"nether_star",
+			"witherstormmod:tainted_glass",
+			"witherstormmod:tainted_glass",
+			"witherstormmod:tainted_glass",
+			"witherstormmod:tainted_glass",
+			"witherstormmod:tainted_glass",
+			"witherstormmod:tainted_flesh_block",
+			"witherstormmod:tainted_flesh_block"
 		],
-		'result': {
-			'item': 'witherstormmod:super_support_beacon'
-		},
-		'mana': 500000
-	})
+		"witherstormmod:super_support_beacon",
+		500000
+	);
 
-	event.recipes.botania.terra_plate('beacon', [
-		'nether_star',
-		'crying_obsidian',
-		'crying_obsidian',
-		'crying_obsidian',
-		'mythicmetals:palladium_block',
-		'#c:glass_blocks',
-		'#c:glass_blocks',
-		'#c:glass_blocks'
-	]).mana(1000000)
-
-	event.custom({
-		'type': 'botanicadds:gaia_plate',
-		'ingredients': [
-			{
-				'item': 'nether_star'
-			},
-			{
-				'item': 'iron_block'
-			},
-			{
-				'item': 'iron_block'
-			},
-			{
-				'item': 'iron_block'
-			},
-			{
-				'item': 'diamond_block'
-			},
-			{
-				'item': 'diamond_block'
-			}
+	// Nether Reactor Core
+	terraPlateAndGaiaPlate(
+		[
+			"nether_star",
+			"iron_block",
+			"iron_block",
+			"iron_block",
+			"diamond_block",
+			"diamond_block"
 		],
-		'result': {
-			'item': 'rediscovered:nether_reactor_core'
-		},
-		'mana': 750000
-	})
-
-	event.recipes.botania.terra_plate('rediscovered:nether_reactor_core', [
-		'nether_star',
-		'iron_block',
-		'iron_block',
-		'iron_block',
-		'diamond_block',
-		'diamond_block'
-	]).mana(1000000)
+		"rediscovered:nether_reactor_core",
+		1000000
+	);
 
 	event.remove({ id: 'minecraft:netherite_ingot' })
 	event.remove({ id: 'alloy_forgery:netherite_from_gold_and_scrap' })
@@ -1496,7 +1424,7 @@ ServerEvents.recipes((event) => {
 	simpleForgeRecipe('nether_bricks', 'alloy_forgery:nether_bricks_forge_controller', 'alloy_forgery:cracked_deepslate_bricks_forge_controller')
 
 	event.shaped(
-		'kubejs:adamantite_forge',
+		'alloy_forgery:adamantite_forge_casing_forge_controller',
 		[
 			'ICI',
 			'CFC',
@@ -1510,7 +1438,7 @@ ServerEvents.recipes((event) => {
 	)
 
 	event.shaped(
-		'kubejs:ender_forge',
+		'alloy_forgery:ender_forge_casing_forge_controller',
 		[
 			'ICI',
 			'CFC',
@@ -1928,4 +1856,65 @@ ServerEvents.recipes((event) => {
 		'N N',
 		'I I'
 	])
+
+	// Harder Celestium and Metallurgium
+	event.custom({
+		"type": "alloy_forgery:forging",
+		"inputs": [
+			{
+				"item": "mythicmetals:star_platinum"
+			},
+			{
+				"item": "mythicmetals:carmot_ingot"
+			},
+			{
+				"item": "botania:elementium_ingot"
+			},
+			{
+				"item": "aether_redux:gravitite_ingot"
+			},
+			{
+				"item": "unusualend:pearlescent_ingot"
+			},
+			{
+				"item": "mythicmetals:unobtainium"
+			}
+		],
+		"output": {
+			"id": "mythicmetals:celestium_ingot",
+			"count": 1
+		},
+		"min_forge_tier": 3,
+		"fuel_per_tick": 50
+	})
+
+	event.custom({
+		"type": "alloy_forgery:forging",
+		"inputs": [
+			{
+				"item": "mythicmetals:hallowed_ingot"
+			},
+			{
+				"item": "mythicmetals:palladium_ingot"
+			},
+			{
+				"item": "mythicmetals:kyber_ingot"
+			},
+			{
+				"item": "botania:terrasteel_ingot"
+			},
+			{
+				"item": "born_in_chaos_v1:dark_metal_ingot"
+			},
+			{
+				"item": "mythicmetals:unobtainium"
+			}
+		],
+		"output": {
+			"id": "mythicmetals:metallurgium_ingot",
+			"count": 1
+		},
+		"min_forge_tier": 3,
+		"fuel_per_tick": 50
+	})
 });

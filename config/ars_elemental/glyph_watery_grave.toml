@@ -30,7 +30,7 @@
 	#Range: > 0
 	extend_time = 8
 	#Range: 0.0 ~ 2.147483647E9
-	damage = 5.0
+	damage = 25.0
 	#Range: 0.0 ~ 2.147483647E9
-	amplify = 2.0
+	amplify = 6.0
 

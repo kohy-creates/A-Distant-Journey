@@ -2,6 +2,10 @@ ItemEvents.modification(event => {
 
 	//////////////////////////////////////////////////////
 
+	/**
+	 * @param {InputItem_[]} target 
+	 * @param {number} amount 
+	 */
 	function maxDurability(target, amount) {
 		event.modify(target, item => {
 			item.maxDamage = amount
@@ -16,8 +20,13 @@ ItemEvents.modification(event => {
 			type + '_axe',
 			type + '_shovel',
 			type + '_sword',
-			type + '_pickaxe'
+			type + '_pickaxe',
 		]
+
+		let armors = armorset(type);
+		armors.forEach(item => {
+			if (Item.exists(item)) tools.push(item);
+		})
 
 		// This is for mods that add those by themselves
 		// For Aether adding gloves for vanilla materials and such there are
@@ -27,7 +36,8 @@ ItemEvents.modification(event => {
 			'_gloves',
 			'_shears',
 			'_fishing_rod',
-			'_pick' // Fuck you Botania
+			'_pick',
+			'_lance'
 		]
 		extra.forEach(extraType => {
 			let testItem = type + extraType;
@@ -92,13 +102,28 @@ ItemEvents.modification(event => {
 		return tools;
 	}
 
+	//////////////////////////////////////////////////////
+
+	const item_ids = ['_helmet', '_chestplate', '_leggings', '_boots']
+	function armorset(type) {
+		let list = [];
+		item_ids.forEach(item => {
+			list.push(type + item);
+		})
+		return list;
+	}
+
+	//////////////////////////////////////////////////////
+
+
 	maxDurability([
-		toolset('minecraft:golden'),
-	], 160)
+		toolset('minecraft:golden')
+	], 140)
 
 	maxDurability([
 		toolset('minecraft:wooden'),
 		toolset('aether:skyroot'),
+		armorset('minecraft:leather')
 	], 100)
 
 	maxDurability([
@@ -109,14 +134,18 @@ ItemEvents.modification(event => {
 	maxDurability([
 		toolset('minecraft:iron'),
 		toolset('botania:manasteel'),
-		toolset('aether:zanite'),
+		toolset('aether:zanite')
 	], 700)
+
+	maxDurability([
+		toolset('mythicmetals:steel'),
+	], 950)
 
 	maxDurability([
 		toolset('additionaladditions:rose_gold'),
 		toolset('aether_redux:veridium'),
 		toolset('aether_redux:infused_veridium'),
-	], 1200)
+	], 1300)
 
 	maxDurability([
 		toolset('minecraft:diamond'),
@@ -128,12 +157,13 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('minecraft:netherite'),
-		'aether:obsidian_gloves'
+		'aether:obsidian_gloves',
+		toolset('mythicmetals:adamantite'),
 	], 3000)
 
 	maxDurability([
 		toolset('majruszsdifficulty:enderium'),
-	], 7000)
+	], 6000)
 
 	maxDurability([
 		toolset('experienceobelisk:cognitive'),
@@ -150,52 +180,34 @@ ItemEvents.modification(event => {
 	], 500)
 
 	maxDurability([
-		toolset('mythicmetals:adamantite'),
-	], 3000)
-
-	maxDurability([
-		toolset('mythicmetals:banglum'),
-	], 400)
-
-	maxDurability([
 		toolset('mythicmetals:bronze'),
-	], 650)
+		toolset('mythicmetals:kyber'),
+		toolset('galosphere:sterling'),
+	], 500)
 
 	maxDurability([
 		toolset('mythicmetals:carmot'),
-	], 1500)
-
-	maxDurability([
-		toolset('mythicmetals:celestium'),
-	], 7000)
-
-	maxDurability([
-		toolset('mythicmetals:durasteel'),
-	], 1000)
-
-	maxDurability([
-		toolset('mythicmetals:hallowed'),
-	], 4000)
-
-	maxDurability([
-		toolset('mythicmetals:kyber'),
-	], 900)
-
-	maxDurability([
-		toolset('mythicmetals:metallurgium'),
-	], 6000)
-
-	maxDurability([
-		toolset('mythicmetals:mythril'),
 	], 2500)
 
 	maxDurability([
-		toolset('mythicmetals:orichalcum'),
-	], 2000)
+		toolset('mythicmetals:celestium'),
+		toolset('mythicmetals:metallurgium'),
+	], 8000)
 
 	maxDurability([
-		toolset('mythicmetals:osmium'),
-	], 550)
+		toolset('mythicmetals:mythril'),
+		toolset('mythicmetals:orichalcum'),
+	], 2500)
+
+	maxDurability([
+		armorset('minecraft:chainmail'),
+		armorset('rediscovered:plate'),
+	], 500)
+
+	maxDurability([
+		toolset('mythicmetals:osmium_chainmail'),
+		toolset('rediscovered:studded'),
+	], 900)
 
 	maxDurability([
 		toolset('mythicmetals:palladium'),
@@ -203,16 +215,11 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('mythicmetals:prometheum'),
-	], 1500)
-
-	maxDurability([
-		toolset('mythicmetals:quadrillum'),
-	], 500)
-
+	], 1800)
 
 	maxDurability([
 		toolset('mythicmetals:runite'),
-	], 1500)
+	], 950)
 
 	maxDurability([
 		toolset('mythicmetals:star_platinum'),
@@ -220,55 +227,15 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('mythicmetals:stormyx'),
-	], 2000)
+	], 1900)
 
 	maxDurability([
 		toolset('mythicmetals:tidesinger'),
-	], 1800)
-
-	maxDurability([
-		toolset('mythicmetals:star_platinum'),
-	], 6000)
+	], 1200)
 
 	maxDurability([
 		toolset('phantasm:crystalline'),
-	], 700)
-
-	maxDurability([
 		toolset('unusualend:pearlescent'),
-	], 5000)
-
-	maxDurability([
-		toolset('unusualend:pearlescent'),
-	], 5000)
-
-	//////////////////////////////////////////////////////
-
-	const amounts = [13, 16, 15, 11]
-	const item_ids = ['_helmet', '_chestplate', '_leggings', '_boots']
-	function maxDurabilityArmor(prefix, mul, customAmounts) {
-		if (!customAmounts) customAmounts = amounts;
-		for (let i = 0; i < item_ids.length; i++) {
-			let target = prefix + item_ids[i]
-			event.modify(target, item => {
-				item.maxDamage = Math.round((mul * customAmounts[i]) / 5) * 5;
-			})
-		};
-	}
-
-	//////////////////////////////////////////////////////
-
-	maxDurabilityArmor('minecraft:golden', 18);
-	maxDurabilityArmor('minecraft:leather', 10);
-	maxDurabilityArmor('galosphere:sterling', 25);
-	maxDurabilityArmor('minecraft:chainmail', 28);
-	maxDurabilityArmor('minecraft:iron', 40);
-	maxDurabilityArmor('botania:manasteel', 40);
-	maxDurabilityArmor('rediscovered:studded', 35);
-	maxDurabilityArmor('additionaladditions:rose_gold', 50);
-	maxDurabilityArmor('minecraft:diamond', 65);
-	maxDurabilityArmor('botania:terrasteel', 65);
-	maxDurabilityArmor('minecraft:netherite', 75);
-	maxDurabilityArmor('majruszsdifficulty:enderium', 90);
+	], 4000)
 
 })

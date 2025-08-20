@@ -31,5 +31,5 @@
 	extend_time = 8
 	#Set how much mana is depleted every time a damage is mitigated by the Mana Bubble.
 	#Range: > 0
-	absorption_cost = 350
+	absorption_cost = 400
 

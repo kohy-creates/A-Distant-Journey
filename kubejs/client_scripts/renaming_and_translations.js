@@ -54,22 +54,13 @@ ClientEvents.lang('en_us', event => {
 		'biome.nullscape.shadowlands': 'Shadowlands',
 		'biome.netherexp.sorrowsquash_pastures': 'Sorrowsquash Pastures',
 
-		'enchantment.mocurses.curseof_betrayal.desc': 'Shields are no longer 100% reliable',
-		'enchantment.mocurses.curseof_disorder.desc': 'Causes your inventory to get messy over time',
-		'enchantment.mocurses.curseof_teleportation.desc': 'Causes you to sometimes teleport around at random',
-		'enchantment.mocurses.curseof_apnea.desc': 'Causes you to only be able to breathe underwater',
-		'enchantment.mocurses.curseof_flammability.desc': 'Burn effect never stops on its own and spread to nearby mobs',
-		'enchantment.mocurses.curseof_frost_imprisonment.desc': 'If you go underwater, you won\'t come out',
-		'enchantment.mocurses.curseof_disorder.desc': 'Causes your inventory to get messy over time',
-		'enchantment.mocurses.curseof_hordes.desc': 'Attracts more mobs of the type when attacking',
-		'enchantment.mocurses.curseof_withering.desc': 'Life around you ceases to exist',
-		'enchantment.mocurses.curseof_deterioration.desc': 'Item loses durability on its own',
-		'enchantment.mocurses.curseof_the_golden_touch.desc': 'Item slowly turns to gold while used',
-		'enchantment.mocurses.curseof_the_floating.desc': 'Causes you to always float on water, unable to dive down',
-		'enchantment.mocurses.curseof_the_zone.desc': 'Item is bound to the location you found it and refuses to leave it',
-		'enchantment.mocurses.curseof_the_voiding.desc': 'Mobs and blocks never drop any items',
-		'enchantment.mocurses.curseof_the_movement.desc': 'The faster you move the faster your boots will break',
-		'enchantment.mocurses.curseof_notice.desc': 'Mobs notice you from further away',
+		'block.alloy_forgery.adamantite_forge_casing_forge_controller': 'Adamantite Forge',
+		'block.alloy_forgery.cracked_deepslate_bricks_forge_controller': 'Deepslate Bricks Forge',
+		'block.alloy_forgery.cracked_stone_bricks_forge_controller': 'Stone Bricks Forge',
+		'block.alloy_forgery.ender_forge_casing_forge_controller': 'Ender Forge',
+		'block.alloy_forgery.nether_bricks_forge_controller': 'Hellforge',
+		'block.adj.ender_forge_casing': 'Ender Forge Casing',
+		'block.adj.adamantite_forge_casing': 'Adamantite Forge Casing'
 
 	}
 

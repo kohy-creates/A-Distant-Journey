@@ -7,7 +7,7 @@
       "weapon_attributes": "bettercombat:claymore"
     },
     {
-      "item_id_regex": "great_hammer|greathammer|war_hammer|warhammer|maul",
+      "item_id_regex": "great_hammer|greathammer|war_hammer|warhammer|maul|pickaxe",
       "weapon_attributes": "bettercombat:hammer"
     },
     {
@@ -15,7 +15,7 @@
       "weapon_attributes": "bettercombat:double_axe"
     },
     {
-      "item_id_regex": "scythe",
+      "item_id_regex": "scythe|hoe",
       "weapon_attributes": "bettercombat:scythe"
     },
     {
@@ -79,7 +79,7 @@
       "weapon_attributes": "bettercombat:wand"
     },
     {
-      "item_id_regex": "mace|hammer|flail",
+      "item_id_regex": "mace|hammer|flail|shovel",
       "weapon_attributes": "bettercombat:mace"
     },
     {

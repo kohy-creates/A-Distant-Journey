@@ -44,10 +44,10 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 			if (item.id.toString().includes('rose_gold')) speed = 7.0;
 			event.addModifier("kubejs:mining_speed", new $AttributeModifier(miningSpeedUUID, "Mining Speed", speed, 'addition'))
 		}
-		let attackDamageMods = event.getOriginalModifiers().get('generic.attack_damage');
+		let attackDamageMods = event.getOriginalModifiers().get($Attributes.ATTACK_DAMAGE);
 		let baseDamage = 0
+		//console.log(attackDamageMods)
 		if (attackDamageMods && !attackDamageMods.isEmpty()) {
-			// AttributeModifiers is a Collection, iterate in JS
 			attackDamageMods.forEach(mod => {
 				baseDamage += mod.getAmount()
 			})
@@ -57,10 +57,9 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 		if (Object.keys(global.weapon_overrides).includes(item.id.toString())) {
 			let overrides = global.weapon_overrides[item.id.toString()];
 			event.removeAttribute('generic.attack_damage');
-			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', overrides[0], 'addition'))
+			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', overrides[0] - 3, 'addition'))
 			event.removeAttribute('generic.attack_speed');
-			let attackSpeed = -4 + overrides[1];
-			event.addModifier('generic.attack_speed', new $AttributeModifier(weaponModifierUUIDs[1], 'Attack Speed', attackSpeed, 'addition'))
+			event.addModifier('generic.attack_speed', new $AttributeModifier(weaponModifierUUIDs[1], 'Attack Speed', -4 + overrides[1], 'addition'))
 			if (overrides.length > 2) {
 				event.removeAttribute('attributeslib:crit_chance');
 				event.addModifier('attributeslib:crit_chance', new $AttributeModifier(weaponModifierUUIDs[0], 'Crit Chance', overrides[2], 'addition'))

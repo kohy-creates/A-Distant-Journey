@@ -1,6 +1,6 @@
 #How many marks you can draw with a single chalk. Default: 64
 #Range: > 0
-ChalkUses = 64
+ChalkUses = 128
 #How much light glowing mark produces. Default: 5
 #Range: 0 ~ 15
 GlowingMarkLightLevel = 5
@@ -19,15 +19,15 @@ ShouldGenerateInChests = true
 #Enable/disable symbols and location of the advancement that will unlock that symbol. (Empty = always unlocked)
 [Symbols]
 	SkullEnabled = true
-	SkullUnlockAdvancement = "chalk:adventure/get_skeleton_skull"
+	SkullUnlockAdvancement = ""
 	CrossEnabled = true
 	CrossUnlockAdvancement = ""
 	PickaxeEnabled = true
-	PickaxeUnlockAdvancement = "minecraft:story/iron_tools"
+	PickaxeUnlockAdvancement = ""
 	HouseEnabled = true
-	HouseUnlockAdvancement = "chalk:adventure/sleep_three_times_in_one_place"
+	HouseUnlockAdvancement = ""
 	CheckEnabled = true
 	CheckUnlockAdvancement = ""
 	HeartEnabled = true
-	HeartUnlockAdvancement = "minecraft:husbandry/tame_an_animal"
+	HeartUnlockAdvancement = ""
 

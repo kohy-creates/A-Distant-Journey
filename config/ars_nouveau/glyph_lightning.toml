@@ -24,9 +24,9 @@
 	#Example entry: "glyph_burst"
 	invalid_combos = []
 	#Range: 0.0 ~ 2.147483647E9
-	damage = 5.0
+	damage = 25.0
 	#Range: 0.0 ~ 2.147483647E9
-	amplify = 3.0
+	amplify = 5.0
 	#Bonus damage for wet entities
 	#Range: 0.0 ~ 1.7976931348623157E308
 	wet_bonus = 2.0

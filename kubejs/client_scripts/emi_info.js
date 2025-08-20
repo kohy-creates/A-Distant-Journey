@@ -66,10 +66,6 @@ JEIEvents.information(event => {
 		'Look through your recipe browser to see what potions can be crafted that way.'
 	])
 
-	event.addItem([/^(?!.*(?:magic_mirror|star)).*confluence.*/], [
-		'The info for all of those accessories is wrong and I have no idea if it is even possible to remove it'
-	])
-
 	event.addItem(/^(?!.*floating).*_ore.*$/, [
 		'All ores are highly resistant to explosives, making mining with explosives more efficient with Fortune!'
 	])

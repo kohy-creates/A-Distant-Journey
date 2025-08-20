@@ -35,6 +35,7 @@ ServerEvents.tags('item', event => {
 	})
 
 	// Reforges cause nothing is unified (ofc)
+	// EDIT: Reforges are gone but tags like those are nice, so I'll keep them
 	// Armor
 	const types = [
 		'helmet',
@@ -58,11 +59,12 @@ ServerEvents.tags('item', event => {
 		'crossbow',
 		'additionaladditions:crossbow_with_spyglass',
 		/botania\:.*_bow/,
-		/dungeonsweaponry\:.*bow/,
 		'aether:phoenix_bow',
 		'aether_redux:subzero_crossbow',
 		'cataclysm:cursed_bow',
-		'alexscaves:dreadbow'
+		'alexscaves:dreadbow',
+		'@too_many_bows'
+
 	])
 	// Melee
 	event.add('adj:reforges/melee', [
@@ -104,15 +106,15 @@ ServerEvents.tags('item', event => {
 	// ])
 
 	event.add('adj:alloy_forge', [
-		'kubejs:hellforge',
-		'kubejs:stone_brick_forge',
-		'kubejs:deepslate_brick_forge',
-		'kubejs:adamantite_forge',
-		'kubejs:ender_forge'
+		'adamantite_forge_casing_forge_controller',
+		'cracked_deepslate_bricks_forge_controller',
+		'cracked_stone_bricks_forge_controller',
+		'ender_forge_casing_forge_controller',
+		'nether_bricks_forge_controller',
 	])
 
 	event.add('adj:alloy_forge_casing', [
-		/kubejs\:.*casing/
+		/adj\:.*casing/
 	])
 
 })

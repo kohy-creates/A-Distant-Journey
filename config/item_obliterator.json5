@@ -148,7 +148,6 @@
 		"hearth_and_home:mangrove_vertical_sanded_wood",
 		"hearth_and_home:bamboo_vertical_sanded_wood",
 
-
 		"netherexp:shotgun_fist",
 		"netherexp:shotgun_core",
 		"netherexp:shotgun_barrel",
@@ -178,7 +177,7 @@
 
 		"mythicmetals:silver_ingot",
 		"mythicmetals:raw_silver",
-		"mythicmetals:silver_nugger",
+		"mythicmetals:silver_nugget",
 		"mythicmetals:silver_helmet",
 		"mythicmetals:silver_chestplate",
 		"mythicmetals:silver_leggings",
@@ -190,6 +189,8 @@
 		
 		"mythicmetals:froge",
 		"mythicmetals:doge",
+
+		"mythicmetals:mythril_sword",
 
 		"witherstormmod:gold_command_block_sword",
 		"witherstormmod:wooden_command_block_pickaxe",
@@ -331,6 +332,7 @@
 		"botanicadds:elven_fluxfield",
 		"botanicadds:flowers/energizera",
 		"botanicadds:flowers/floating/energizera",
+		"botanicadds:mana_stealer_sword",
 		"botania:teru_teru_bozu",
 		"botaniacombat:angry_bozu",
 		"botaniacombat:mjolnir",
@@ -397,6 +399,8 @@
 
 		"unionlib:golden_ring",
 		"unionlib:iron_emerald_necklace",
+
+		"tetra:forged_mesh",
 
 		"create_power_loader:empty_andesite_chunk_loader",
 		"create_power_loader:empty_brass_chunk_loader",

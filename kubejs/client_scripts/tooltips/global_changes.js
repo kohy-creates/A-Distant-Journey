@@ -87,12 +87,17 @@ ItemEvents.tooltip(event => {
 			for (let i = 1; i < text.length; i++) {
 				let line = text[i].toString();
 				if (line.includes('color=blue') && line.includes('Mining Speed')) {
-					const match = line.match(/attributeslib\.value\.flat', args=\[(\d+)\]/);
+					const match = line.match(/attributeslib\.value\.flat', args=\[(\d+(?:\.\d+)?)\]/);
 					if (match) {
-						const number = parseInt(match[1], 10);
+						let number = parseFloat(match[1]);
+
+						// Round to 1 decimal, then remove trailing .0 if present
+						number = Math.round(number * 10) / 10;
+
 						text.remove(i);
-						text.add(i, Text.darkGreen(' ' + number + ' Mining Speed'))
+						text.add(i, Text.darkGreen(' ' + number + ' Mining Speed'));
 					}
+
 				}
 				else if (line.includes('color=blue') && line.includes('Harvest Level')) {
 					const match = line.match(/attributeslib\.value\.flat', args=\[(\d+)\]/);
@@ -551,22 +556,22 @@ ItemEvents.tooltip(event => {
 
 	// Alloy
 	addTooltipLine([
-		'kubejs:stone_brick_forge'
+		'alloy_forgery:cracked_stone_bricks_forge_controller'
 	], ['Speed Multiplier: 1.0x', 'Building Material: Stone Bricks (+Variants)'], true, null, true)
 	addTooltipLine([
-		'kubejs:deepslate_brick_forge'
+		'alloy_forgery:cracked_deepslate_bricks_forge_controller'
 	], ['Speed Multiplier: 1.25x', 'Building Material: Deepslate Bricks (+Variants)'], true, null, true)
 	addTooltipLine([
-		'kubejs:hellforge'
+		'alloy_forgery:nether_bricks_forge_controller'
 	], ['Speed Multiplier: 1.75x', 'Building Material: Nether Bricks (+Variants)'], true, null, true)
 	addTooltipLine([
-		'kubejs:adamantite_forge'
+		'alloy_forgery:adamantite_forge_casing_forge_controller'
 	], ['Speed Multiplier: 2.0x', 'Building Material: Adamantite Forge Casing'], true, null, true)
 	addTooltipLine([
-		'kubejs:ender_forge'
+		'alloy_forgery:ender_forge_casing_forge_controller'
 	], ['Speed Multiplier: 2.5x', 'Building Material: Ender Forge Casing'], true, null, true)
 	addTooltipLine([
-		/kubejs\:.*forge_casing/
+		/adj\:.*forge_casing/
 	], 'Used to build an Alloy Forge')
 
 	addTooltipLine('majruszsdifficulty:enderium_helmet', 'Makes all Endermen less hostile');

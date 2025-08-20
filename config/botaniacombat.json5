@@ -45,17 +45,17 @@
 		// Keep in mind this is in addition to 100 mana per durability. This mana is lost and not propagated to the beam. If set, mana is required for firing beams
 		"terrasteelBeamCost": 0,
 		// Terrasteel weapon projectile damage
-		"terraBladeDamage": 7.0,
+		"terraBladeDamage": 17.0,
 		// Chakram damage, poison/fire damage is unchanged
 		"chakramDamage": 12.0,
 		// Keep in mind this is in addition to 120 mana per durability. If set, mana is required for summoning stars
 		"starcallerProjectileCost": 0,
 		// Starcaller projectile
-		"fallingStarNormalDamage": 12.0,
+		"fallingStarNormalDamage": 30.0,
 		// Starcaller projectile, 25% chance of using this instead of normal damage
-		"fallingStarHighDamage": 16.0,
+		"fallingStarHighDamage": 60.0,
 		// Missile from Unstable Reservoir Rod (does not effect Gaia Gaurdian)
-		"missileDamage": 7.0,
+		"missileDamage": 28.0,
 		// Flugel Tiara mana cost per tick
 		"tiaraCost": 50,
 		// Flugel Tiara mana cost per tick when flight meter is empty and Eye of the Flugel is in inventory

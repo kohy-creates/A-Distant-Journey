@@ -27,7 +27,7 @@
 	/* The more additional targets a weapon swing hits, the weaker it will get.
 	   Entities struck (+1) in a swing more than this, won't get weakened any further.
 	*/
-	"reworked_sweeping_extra_target_count": 1,
+	"reworked_sweeping_extra_target_count": 2,
 	/* Determines how weak the attack becomes when striking `reworked_sweeping_extra_target_count + 1` targets.
 	   Example values:
 	   - `0.5` -50% damage
