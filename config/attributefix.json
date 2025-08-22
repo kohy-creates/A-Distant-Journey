@@ -11,17 +11,6 @@
         "value": 100
       }
     },
-    "unionlib:generic.arrow_velocity": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "sortilege:generic.staff_pierce": {
       "enabled": false,
       "min": {
@@ -342,17 +331,6 @@
       }
     },
     "rediscovered:undead_damage_scaling": {
-      "enabled": false,
-      "min": {
-        "default": -1024,
-        "value": -1024
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "unionlib:generic.arrow_damage": {
       "enabled": false,
       "min": {
         "default": -1024,
@@ -697,7 +675,7 @@
       "enabled": false,
       "min": {
         "default": 0.01,
-        "value": 0.01
+        "value": 0.001
       },
       "max": {
         "default": 1,
@@ -752,7 +730,7 @@
       "enabled": false,
       "min": {
         "default": 0.01,
-        "value": 0.01
+        "value": 0.001
       },
       "max": {
         "default": 1,
@@ -768,17 +746,6 @@
       "max": {
         "default": 2048,
         "value": 2048
-      }
-    },
-    "unionlib:generic.critical_rate": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
       }
     },
     "confluence:ranged_damage": {
@@ -1045,17 +1012,6 @@
         "value": 2048
       }
     },
-    "unionlib:generic.accuracy": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "attributeslib:crit_damage": {
       "enabled": false,
       "min": {
@@ -1188,17 +1144,6 @@
         "value": 100
       }
     },
-    "unionlib:generic.critical_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "attributeslib:current_hp_damage": {
       "enabled": false,
       "min": {
@@ -1285,17 +1230,6 @@
       "max": {
         "default": 10,
         "value": 10
-      }
-    },
-    "unionlib:generic.draw_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0.00010,
-        "value": 0.00010
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
       }
     }
   }

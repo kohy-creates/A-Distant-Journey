@@ -4,29 +4,29 @@ const STAGE_TO_SET = 'next_stage'
 ServerEvents.tick(event => {
 	const server = event.getServer();
 	const persistentData = server.persistentData;
-	if (!persistentData.get(CURRENT_STAGE)) {
-		persistentData.putString(CURRENT_STAGE, 'chapter_0')
+	if (!persistentData.chapters.get(CURRENT_STAGE)) {
+		persistentData.chapters.putString(CURRENT_STAGE, 'chapter_0')
 	}
 
-	const stageToSet = persistentData.get(STAGE_TO_SET);
+	const stageToSet = persistentData.chapters.get(STAGE_TO_SET);
 	if (stageToSet) {
 		const stageName = stageToSet.toString().replace("\"", "")
-		if (!persistentData.get(stageName)) {
+		if (!persistentData.chapters.get(stageName)) {
 			console.log('Progressing the world to stage \'' + stageName + '\'')
-			persistentData.putString(CURRENT_STAGE, stageName);
+			persistentData.chapters.putString(CURRENT_STAGE, stageName);
 			server.runCommandSilent(
 				'/gamestate ' + stageName
 			);
 			persistentData.put(stageName, true);
 		}
 		else console.log('Attempted to reapply a stage that was already present!')
-		persistentData.remove(STAGE_TO_SET);
+		persistentData.chapters.remove(STAGE_TO_SET);
 	}
 })
 
 PlayerEvents.tick(event => {
 	const player = event.getPlayer();
-	const stage = event.getServer().persistentData.get(CURRENT_STAGE)
+	const stage = event.getServer().persistentData.chapters.get(CURRENT_STAGE)
 	if (stage) {
 		const stageName = stage.toString().replace("\"", "");
 		if (!player.stages.has(stageName)) {
@@ -234,12 +234,12 @@ ServerEvents.commandRegistry(event => {
 		let serverData = server.persistentData;
 		STAGES.forEach(stage => {
 			player.stages.remove(stage)
-			serverData.remove(stage)
+			serverData.chapters.remove(stage)
 			server.runCommandSilent(
 				'/decstages remove ' + player.getUsername() + ' ' + stage + ' true'
 			)
 		})
-		serverData.remove(CURRENT_STAGE)
+		serverData.chapters.remove(CURRENT_STAGE)
 		server.runCommandSilent(
 			'/gamestate normal'
 		)

@@ -7,8 +7,12 @@ global.bossMobs = [
 	"minecraft:ender_dragon",
 	"minecraft:wither",
 	"minecraft:warden",
+	global.bossMobsNoTreasureBag
 ]
 
+/**
+ * @type {Internal.EntityType_}
+ */
 global.bossMobsNoTreasureBag = [
 	"witherstormmod:witherstorm",
 	"witherstormmod:withered_symbiont",

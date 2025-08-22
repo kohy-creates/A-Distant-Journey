@@ -27,7 +27,7 @@ PlayerEvents.tick(event => {
 
 	let RT = persistentData.timeSinceLastHurt
 	if (RT != null && RT < 1200) {
-		console.log('increasing RT')
+		// console.log('increasing RT')
 		persistentData.putLong('timeSinceLastHurt', RT + 1);
 	}
 

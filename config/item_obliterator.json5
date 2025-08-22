@@ -166,6 +166,7 @@
 		"artifacts:flippers",
 		"artifacts:aqua_dashers",
 		"artifacts:cloud_in_a_bottle",
+		"artifacts:cross_necklace",
 
 		"spelunkers_charm:crate",
 		"spelunkers_charm:encased_geyser",
@@ -371,6 +372,7 @@
 		"confluence:sextant",
 		"confluence:gps",
 		"confluence:goblin_tech",
+		"confluence:life_form_analyzer",
 		
 		"hammerlib:gears/wooden",
 		"hammerlib:gears/stone",
@@ -390,14 +392,13 @@
 		"minecraft:stone_hoe",
 
 		"galosphere:barometer",
+		"galosphere:shadow_frame",
 		"ftbquests:book",
 		"netherdepthsupgrade:lava_fishing_rod",
 
 		"supplementaries:cannon",
 		"supplementaries:cannonball",
 		"supplementaries:altimeter",
-
-		"tetra:forged_mesh",
 
 		"create_power_loader:empty_andesite_chunk_loader",
 		"create_power_loader:empty_brass_chunk_loader",

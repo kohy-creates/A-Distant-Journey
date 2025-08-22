@@ -1733,48 +1733,26 @@ ServerEvents.recipes((event) => {
 	})
 
 	// Eyes
-	event.custom({
-		'type': 'botanicadds:gaia_plate',
-		'ingredients': [
-			{
-				'item': 'botanicadds:gaiasteel_block'
-			},
-			{
-				'item': 'botania:terrasteel_block'
-			},
-			{
-				'item': 'botania:dragonstone_block'
-			},
-			{
-				'item': 'botania:dragonstone_block'
-			},
-			{
-				'item': 'botania:dragonstone_block'
-			},
-			{
-				'item': 'botania:dragonstone_block'
-			},
-			{
-				'item': 'ender_eye'
-			},
-			{
-				'item': 'botania:rune_spring'
-			},
-			{
-				'item': 'botania:rune_summer'
-			},
-			{
-				'item': 'botania:rune_autumn'
-			},
-			{
-				'item': 'botania:rune_winter'
-			}
-		],
-		'result': {
-			'item': 'kubejs:eye_of_verdant_bloom'
-		},
-		'mana': 2000000
-	})
+	gaiaPlateRecipe([
+		'botanicadds:gaiasteel_block',
+		'botania:terrasteel_block',
+		'botania:dragonstone_block',
+		'botania:dragonstone_block',
+		'botania:dragonstone_block',
+		'botania:dragonstone_block',
+		'minecraft:ender_eye',
+		// 'botania:rune_spring',
+		// 'botania:rune_summer',
+		// 'botania:rune_autumn',
+		// 'botania:rune_winter',
+		'botania:rune_sloth',
+		'botania:rune_pride',
+		'botania:rune_gluttony',
+		'botania:rune_envy',
+		'botania:rune_wrath',
+		'botania:rune_lust',
+		'botania:rune_greed',
+	], 'kubejs:eye_of_verdant_bloom', 2000000)
 
 	const inter = Item.of('minecraft:ender_eye');
 	event.recipes.create.sequenced_assembly(
@@ -1789,7 +1767,7 @@ ServerEvents.recipes((event) => {
 			event.recipes.create.deploying(inter, [inter, Item.of('create:cogwheel')]),
 			event.recipes.create.filling(inter, [inter, Fluid.of('the_bumblezone:royal_jelly_fluid_still', 1000)]),
 		]
-	).transitionalItem(inter).loops(12)
+	).transitionalItem(inter).loops(16)
 
 	event.shaped(
 		Item.of('mythicmetals:durasteel_engine'),
@@ -1931,4 +1909,17 @@ ServerEvents.recipes((event) => {
 		"min_forge_tier": 3,
 		"fuel_per_tick": 50
 	})
+
+	event.shaped(
+		'3x scaffolding',
+		[
+			'STS',
+			'S S',
+			'S S'
+		],
+		{
+			T: 'string',
+			S: 'stick'
+		}
+	)
 });

@@ -1,3 +1,6 @@
+/**
+ * @type {Internal.Player}
+ */
 let currentPlayer = null;
 
 ClientEvents.tick(event => {
@@ -297,6 +300,7 @@ ItemEvents.tooltip(event => {
 			let match = tag.match(/^set_bonus\.([a-z0-9_\-]+)\.([a-z0-9_\-/]+)$/);
 			if (match) {
 				bonusID = match[1] + ":" + match[2];
+				// console.log(bonusID)
 				break;
 			}
 		}
@@ -578,6 +582,19 @@ ItemEvents.tooltip(event => {
 
 	addTooltipLine('mythicmetals:hallowed_ingot', 'Seems oddly familiar...');
 	addTooltipLine('mythicmetals:orichalcum_hammer', 'Mines a 3x2 area');
+
+	// Galosphere
+	addTooltipLine('galosphere:allurite_block', 'Silences nearby blocks');
+	addTooltipLine('galosphere:monstrometer', 'Requires Lumiere Blocks as fuel');
+	addTooltipLine('galosphere:warped_anchor', 'Requires Allurite Blocks as fuel');
+	addTooltipLine('galosphere:combustion_table', 'Used to customize Silver Bombs');
+	addTooltipLine('galosphere:stranded_membrane_block', 'Pushes items and entities in the direction its facing');
+	addTooltipLine('galosphere:silver_balance', 'Produces a redstone signal that gets stronger the harder the block placed directly on top of it is to break');
+
+	addTooltipLine('witherstormmod:command_block_book', 'Combine with any Diamond tool in an Anvil to create a Command Block tool');
+	addTooltipLine('witherstormmod:firework_bundle', 'Might distract The Wither Storm when activated');
+	addTooltipLine('witherstormmod:super_tnt', 'Creates a bit bigger explosion than a regular TNT');
+	addTooltipLine('witherstormmod:formidibomb', ['The key to defeating The Wither Storm', 'Place it nearby and detonate once it has 3 heads', 'Creates a massive explosion on its own']);
 });
 
 function colorDurabilityText(p, t) {

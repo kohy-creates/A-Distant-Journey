@@ -1,26 +1,77 @@
+function percent(num) {
+	return num / 100;
+}
+
 global.armorOverrides = {
+	'create:cardboard': {
+		'generic.armor': {
+			values: [0, 1, 1, 0],
+			operation: 0
+		},
+	},
 	'minecraft:leather': {
-		'generic.armor': [1, 2, 2, 1],
+		'generic.armor': {
+			values: [1, 2, 2, 1],
+			operation: 0
+		},
 	},
 	'mythicmetals:runite': {
-		'generic.armor': [2, 4, 3, 2]
+		'generic.armor': {
+			values: [2, 4, 3, 2],
+			operation: 0
+		},
 	},
 	'minecraft:chainmail': {
-		'generic.armor': [2, 4, 4, 2]
+		'generic.armor': {
+			values: [2, 3, 3, 2],
+			operation: 0
+		},
+		'adjcore:generic.projectile_damage_reduction': {
+			values: [percent(2.5), percent(5), percent(2.5), 0],
+			operation: 0
+		},
+		'generic.movement_speed': {
+			values: [0, 0, 0, percent(4)],
+			operation: 1
+		},
 	},
 	'rediscovered:studded': {
-		'generic.armor': [2, 4, 4, 2]
+		'generic.armor': {
+			values: [2, 3, 3, 2],
+			operation: 0
+		},
+		'adjcore:generic.projectile_damage_reduction': {
+			values: [percent(2.5), percent(5), percent(2.5), 0],
+			operation: 0
+		},
+		'generic.movement_speed': {
+			values: [0, 0, 0, percent(4)],
+			operation: 1
+		},
+
 	},
 	'mythicmetals:osmium_chainmail': {
-		'generic.armor': [3, 5, 4, 3]
+		'generic.armor': {
+			values: [3, 5, 4, 3],
+			operation: 0
+		},
 	},
 	'minecraft:iron': {
-		'generic.armor': [3, 5, 4, 3]
+		'generic.armor': {
+			values: [3, 5, 4, 3],
+			operation: 0
+		},
 	},
 	'minecraft:diamond': {
-		'generic.armor': [4, 6, 5, 3]
+		'generic.armor': {
+			values: [4, 6, 5, 3],
+			operation: 0
+		},
 	},
 	'mythicmetals:orichalcum': {
-		'generic.armor': [4, 6, 5, 3]
+		'generic.armor': {
+			values: [4, 6, 5, 3],
+			operation: 0
+		},
 	}
 }

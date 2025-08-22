@@ -121,6 +121,10 @@ ItemEvents.modification(event => {
 	], 140)
 
 	maxDurability([
+		armorset('create:cardboard')
+	], 70)
+
+	maxDurability([
 		toolset('minecraft:wooden'),
 		toolset('aether:skyroot'),
 		armorset('minecraft:leather')

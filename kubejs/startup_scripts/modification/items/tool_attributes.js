@@ -5,6 +5,7 @@ const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem')
 const $SwordItem = Java.loadClass('net.minecraft.world.item.SwordItem')
 const $AttributeModifier = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier")
 const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes")
+const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
 
 const miningSpeedUUID = '80091653-9902-44f9-95a7-d627610856c0'
 const harvestLevelUUID = '84257908-8296-4470-ad2e-97e5db59b64e'
@@ -52,7 +53,7 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 				baseDamage += mod.getAmount()
 			})
 			event.removeAttribute('generic.attack_damage');
-			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', Math.round(baseDamage * 4), 'addition'))
+			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', Math.round(baseDamage * 3.5), 'addition'))
 		}
 		if (Object.keys(global.weapon_overrides).includes(item.id.toString())) {
 			let overrides = global.weapon_overrides[item.id.toString()];
@@ -80,12 +81,12 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 				if (!global.armorOverrides[armorID]) return;
 				let armorValue = global.armorOverrides[armorID];
 				let uuid = modifierUUIDs[i];
-				for (let attribute in Object.keys(armorValue)) {
+				for (let attribute of Object.keys(armorValue)) {
+					if (armorValue[attribute].values[i] == 0) continue;
 					event.removeAttribute(attribute);
-					event.addModifier(attribute, new $AttributeModifier(modifierUUIDs[i], uuid, armorValue[attribute], 'addition'))
+					event.addModifier(attribute, new $AttributeModifier(modifierUUIDs[i], uuid, armorValue[attribute].values[i], $Operation.fromValue(armorValue[attribute].operation)))
 				}
 			}
 		}
 	}
 });
-

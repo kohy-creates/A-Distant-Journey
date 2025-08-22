@@ -14,14 +14,14 @@ LootJS.modifiers((event) => {
 			.limitCount([1, 3])
 			.applyLootingBonus([0, 1]);
 	}
-	event.addEntityLootModifier('minecraft:wither_skeleton')
+	event.addLootTableModifier('minecraft:entities/wither_skeleton')
 		.removeLoot('minecraft:wither_skeleton_skull')
 		.pool(skullFragmentDrop);
-	event.addEntityLootModifier('netherdepthsupgrade:wither_bonefish')
+	event.addLootTableModifier('netherdepthsupgrade:entities/wither_bonefish')
 		.removeLoot('minecraft:wither_skeleton_skull')
 		.pool(skullFragmentDrop);
 
-	event.addEntityLootModifier('minecraft:zombie')
+	event.addLootTableModifier('minecraft:entities/zombie')
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.randomChanceWithLooting(0.5, 0.25)
@@ -29,7 +29,50 @@ LootJS.modifiers((event) => {
 				.limitCount([0, 2])
 				.applyLootingBonus([0, 1]);
 		});
-	
+
+	event.addLootTableModifier('minecraft:entities/skeleton')
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.randomChanceWithLooting(0.05, 0.05)
+				.addLoot(LootEntry.of('minecraft:skeleton_skull'));
+		});
+
+	event.addLootTableModifier('alexsmobs:entities/hammerhead_shark')
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.randomChanceWithLooting(0.5, 0.1)
+				.addLoot(LootEntry.of('alexsmobs:shark_tooth'))
+				.limitCount([0, 3])
+				.applyLootingBonus([0, 1]);
+		});
+
+	event.addLootTableModifier('alexsmobs:entities/frilled_shark')
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.randomChanceWithLooting(0.333, 0.1)
+				.addLoot(LootEntry.of('alexsmobs:shark_tooth'))
+				.limitCount([0, 2])
+				.applyLootingBonus([0, 1]);
+		});
+
+	event.addLootTableModifier('born_in_chaos_v1:entities/corpse_fish')
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.randomChanceWithLooting(0.1, 0.05)
+				.addLoot(LootEntry.of('alexsmobs:shark_tooth'))
+				.limitCount([0, 1])
+				.applyLootingBonus([0, 1]);
+		});
+
+	event.addLootTableModifier('born_in_chaos_v1:entities/glutton_fish')
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.randomChanceWithLooting(0.25, 0.05)
+				.addLoot(LootEntry.of('alexsmobs:shark_tooth'))
+				.limitCount([0, 2])
+				.applyLootingBonus([0, 1]);
+		});
+
 	event.addEntityLootModifier('ars_nouveau:wilden_boss')
 		.removeLoot('ars_nouveau:wilden_tribute')
 });

@@ -91,3 +91,6 @@ user-prefs.json
 /config/paxi/datapacks/
 /config/paxi/resourcepacks/
 .probe/
+backups/
+win_event*.txt
+impossible_data/

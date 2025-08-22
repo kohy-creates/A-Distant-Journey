@@ -117,6 +117,15 @@ ServerEvents.tags('item', event => {
 		/adj\:.*casing/
 	])
 
+	event.add('adj:music_disc', [
+		/.*\:music_disc_/,
+		'etched:etched_music_disc',
+		'supplementaries:pancake',
+		/botania\:record_/,
+		'born_in_chaos_v1:anluka_doors',
+		'born_in_chaos_v1:serpumpkinhead_m',
+		'aether_redux:ancient_sentrite_music_disc'
+	])
 })
 
 ServerEvents.tags('block', event => {

@@ -19,6 +19,16 @@ EntityEvents.spawned(event => {
 			)
 		}
 	}
+	if (global.bossMobs.includes(entity.getType())) {
+		event.getServer().runCommandSilent('/tellraw @a[] {"text":"<NAME> has awoken!","color":"#af4bff"}'.replace('<NAME>', entity.getDisplayName().getString()))
+	}
+})
+
+EntityEvents.death(event => {
+	const entity = event.getEntity();
+	if (global.bossMobs.includes(entity.getType())) {
+		event.getServer().runCommandSilent('/tellraw @a[] {"text":"<NAME> has been defeated!","color":"#af4bff"}'.replace('<NAME>', entity.getDisplayName().getString()))
+	}
 })
 
 const $EnhancedCelestials = Java.loadClass('dev.corgitaco.enhancedcelestials.EnhancedCelestials');

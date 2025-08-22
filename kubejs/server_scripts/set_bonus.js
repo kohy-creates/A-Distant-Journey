@@ -1,5 +1,19 @@
 const $UUID = Java.loadClass('java.util.UUID')
 
+PlayerEvents.loggedIn(event => {
+	player.removeTag('adj.set_bonus_active');
+	player.getTags().forEach(tag => {
+		if (tag.startsWith('adj.set_bonus.')) {
+			player.removeTag(tag);
+		}
+	});
+	player.stages.getAll().forEach(stage => {
+		if (stage.startsWith('set_bonus.')) {
+			player.stages.remove(stage);
+		}
+	});
+})
+
 PlayerEvents.tick(event => {
 	const player = event.getPlayer();
 
@@ -15,8 +29,10 @@ PlayerEvents.tick(event => {
 	}
 
 	const allSame = equippedTypes.every(v => v === equippedTypes[0]);
+	// console.log(allSame)
 	if (allSame && !player.getTags().toArray().includes('adj.set_bonus_active')) {
 		let bonus = global.setBonusMap[equippedTypes[0]];
+		// console.log(bonus)
 		if (!bonus) return;
 
 		player.addTag('adj.set_bonus_active');

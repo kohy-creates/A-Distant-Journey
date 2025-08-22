@@ -33,7 +33,7 @@ layout_action_executable_blocks {
 
 element {
   button_element_executable_block_identifier = 20ca2b70-6d36-4138-bd41-95704f9b5a6a-1748210217886
-  [executable_action_instance:7cd456d9-8dd8-4a2f-a075-c72ee64da661-1748214215809][action_type:openlink] = https://discord.gg/kohara
+  [executable_action_instance:7cd456d9-8dd8-4a2f-a075-c72ee64da661-1748214215809][action_type:openlink] = https://discord.gg/kohara-s-basement-727033287343734885
   [executable_block:20ca2b70-6d36-4138-bd41-95704f9b5a6a-1748210217886][type:generic] = [executables:7cd456d9-8dd8-4a2f-a075-c72ee64da661-1748214215809;]
   backgroundnormal = [source:local]/config/fancymenu/assets/icons/discord_button.png
   backgroundhovered = [source:local]/config/fancymenu/assets/icons/discord_button_hovered.png

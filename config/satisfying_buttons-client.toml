@@ -14,7 +14,7 @@ DarkenButtonOnHoverTime = 300
 DarkenButtonColor = 1610612736
 #.
 #Whether the vanilla widget texture (white border by default) should fade in instead of applying immediately.
-FadeInVanillaWidgetTexture = true
+FadeInVanillaWidgetTexture = false
 #.
 #Time in milliseconds for hover fade.
 #Range: > -2147483648

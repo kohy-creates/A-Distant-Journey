@@ -375,7 +375,7 @@
 	[Pets."Iron golems"]
 		#Resistance to damage taken by Iron Golems
 		#Range: 0.0 ~ 1.0
-		"Innate resistance" = 0.4
+		"Innate resistance" = 0
 		"Fire ticks faster" = true
 
 [Mobs]

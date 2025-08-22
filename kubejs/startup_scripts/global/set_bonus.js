@@ -138,14 +138,23 @@ global.setBonusMap = {
 	},
 	'minecraft:leather': {
 		description: [
-			'15% increased movement speed'
+			'25% increased roll recharge speed',
+			'Increased roll distance'
 		],
 		effects: [
 			{
 				type: 'attribute',
 				value: {
-					id: 'minecraft:generic.movement_speed',
-					value: 0.15,
+					id: 'combatroll:recharge',
+					value: 0.25,
+					operation: 1
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'combatroll:distance',
+					value: 0.5,
 					operation: 1
 				}
 			}
@@ -177,7 +186,7 @@ global.setBonusMap = {
 	},
 	'minecraft:chainmail': {
 		description: [
-			'Reduces incoming projectile damage by 10%'
+			'Reduces incoming projectile damage by extra 10%'
 		],
 		effects: [
 			{
@@ -192,15 +201,23 @@ global.setBonusMap = {
 	},
 	'rediscovered:studded': {
 		description: [
-			'15% increased movement speed',
-			'Reduces incoming projectile damage by 10%'
+			'25% increased roll recharge speed',
+			'Increased roll distance'
 		],
 		effects: [
 			{
 				type: 'attribute',
 				value: {
-					id: 'minecraft:generic.movement_speed',
-					value: 0.15,
+					id: 'combatroll:recharge',
+					value: 0.25,
+					operation: 1
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'combatroll:distance',
+					value: 0.5,
 					operation: 1
 				}
 			},
@@ -239,6 +256,26 @@ global.setBonusMap = {
 				value: {
 					id: 'ars_nouveau:ars_nouveau.perk.mana_regen',
 					value: 6,
+					operation: 0
+				}
+			}
+		]
+	},
+	'create:cardboard': {
+		description: [
+			'Sneak to disguise as a cardboard box',
+			'Ask yourself if this bonus made all ',
+			'the effort to craft it worth it',
+			'The answer is probably no',
+			'Just so that you\'re not left with nothing,',
+			'I\'ll grant you 1 extra defense'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'generic.armor',
+					value: 1,
 					operation: 0
 				}
 			}

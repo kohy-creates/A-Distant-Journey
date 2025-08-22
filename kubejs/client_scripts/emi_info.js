@@ -21,6 +21,29 @@ JEIEvents.information(event => {
 		'Barely looks apetizing. Cooking it with different types of flowers will result in different potion effects when eaten.'
 	])
 
+	event.addItem(['galosphere:allurite_block'], [
+		'Placing an Allurite Block adjacent to a block that produces sound will mitigate the sounds by 90%.',
+	])
+
+	event.addItem(['galosphere:monstrometer'], [
+		'Activate this block by right-clicking it with an Lumiere Block.',
+		'Once activated, it emits aura particles in dark areas within a 16 block radius and highlights nearby hostile mobs.'
+	])
+
+	event.addItem(['galosphere:warped_anchor'], [
+		'Activate this block by right-clicking it with an Allurite Block.',
+		'Once activated, if an Ender Pearl lands near a Warped Anchor, player will be teleported to the Warped Anchor instead.'
+	])
+
+	event.addItem(['galosphere:charged_lumiere_block'], [
+		'Obtained by striking a Lumiere Block with lightning. Not very useful in its current state, but at least the animated texture looks cool.',
+	])
+
+	event.addItem(['galosphere:combustion_table', 'galosphere:silver_bomb'], [
+		'Combustion Table can be used to customize Silver Bombs.',
+		'Gunpowder increases blast radius, Strings increase fuse duration, Slimeballs increase the bounciness of the bomb.'
+	])
+
 	// event.addItem(['berry_good:glowgurt'], [
 	// 	'Gurt: Glow.'
 	// ])
@@ -161,6 +184,11 @@ JEIEvents.information(event => {
 		Crops
 	*/
 	event.addItem(['#c:hoes', '#forge:hoes'], [
-		'Harvests multiple crops at the same time with right-click',
+		'Harvests and replants multiple crops at the same time with right-click.',
+	])
+
+	// Accessories
+	event.addItem(['confluence:honey_comb'], [
+		'Can be found in any chest in The Bumblezone at a 5% chance.'
 	])
 })

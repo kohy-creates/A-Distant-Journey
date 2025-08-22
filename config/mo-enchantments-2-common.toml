@@ -15,7 +15,7 @@
 
 [Lightness]
 	#Determines the amount of attack speed that each level of Lightness should add
-	"Lightness Amount" = 0.1
+	"Lightness Amount" = 0.15
 	#Should Lightness exist?
 	"Allow Lightness" = true
 	#Should Lightness be incompatible with Reach?

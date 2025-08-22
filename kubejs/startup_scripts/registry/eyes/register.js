@@ -18,7 +18,7 @@ StartupEvents.registry('item', event => {
 				.addAttribute(
 					'attributeslib:fire_damage',
 					eyeUUID['cinders'],
-					2,
+					6,
 					'addition'
 				)
 				.addAttribute(
@@ -30,14 +30,14 @@ StartupEvents.registry('item', event => {
 				.addAttribute(
 					'minecraft:generic.attack_speed',
 					eyeUUID['cinders'],
-					-0.25,
+					-0.15,
 					'multiply_total'
 				)
 		)
 		.fireResistant()
 		.glow(true)
 		.unstackable()
-		.texture('minecraft:block/orange_wool')
+		.texture('kubejs:item/eye_of_cinders')
 		.rarity('epic')
 		.tooltip('§7Hellish screeches are coming from deep inside')
 		.displayName('Eye of Cinders')
@@ -54,7 +54,7 @@ StartupEvents.registry('item', event => {
 				.addAttribute(
 					'minecraft:generic.max_health',
 					eyeUUID['angels'],
-					0.25,
+					0.2,
 					'multiply_total'
 				)
 				.addAttribute(
@@ -73,7 +73,7 @@ StartupEvents.registry('item', event => {
 		.fireResistant()
 		.glow(true)
 		.unstackable()
-		.texture('minecraft:block/yellow_wool')
+		.texture('kubejs:item/eye_of_angels')
 		.rarity('epic')
 		.tooltip('§7Heavenly aura surrounds and emanates from this Eye')
 		.displayName('Eye of Angels')
@@ -89,7 +89,7 @@ StartupEvents.registry('item', event => {
 				.addAttribute(
 					'minecraft:generic.attack_damage',
 					eyeUUID['desolation'],
-					0.2,
+					0.25,
 					'multiply_total'
 				)
 				.addAttribute(
@@ -101,14 +101,14 @@ StartupEvents.registry('item', event => {
 				.addAttribute(
 					'attributeslib:armor_shred',
 					eyeUUID['desolation'],
-					8,
+					10,
 					'addition'
 				)
 		)
 		.fireResistant()
 		.glow(true)
 		.unstackable()
-		.texture('minecraft:block/pink_wool')
+		.texture('kubejs:item/eye_of_desolation')
 		.rarity('epic')
 		.tooltip('§7Bottomless void can be seen inside of it')
 		.displayName('Eye of Desolation')
@@ -124,7 +124,7 @@ StartupEvents.registry('item', event => {
 		.fireResistant()
 		.glow(true)
 		.unstackable()
-		.texture('minecraft:block/white_wool')
+		.texture('kubejs:item/eye')
 		.rarity('epic')
 		.tooltip('§7Magic and tech in perfect harmony')
 		.tooltip('§7Magical tech if you will')
@@ -160,7 +160,7 @@ StartupEvents.registry('item', event => {
 		.fireResistant()
 		.glow(true)
 		.unstackable()
-		.texture('minecraft:block/red_wool')
+		.texture('kubejs:item/eye_of_dreams')
 		.rarity('epic')
 		.tooltip('§7Embodiment of nostalgia and fantasy')
 		.tooltip('§7you only expierience in your wildest dreams')
@@ -189,14 +189,14 @@ StartupEvents.registry('item', event => {
 				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.spell_damage',
 					eyeUUID['arcanum'],
-					2,
+					5,
 					'addition'
 				)
 		)
 		.fireResistant()
 		.glow(true)
 		.unstackable()
-		.texture('minecraft:block/purple_wool')
+		.texture('kubejs:item/eye_of_arcanum')
 		.rarity('epic')
 		.tooltip('§7Forces of magic joined together')
 		.tooltip('§7and put inside a vessel')
@@ -209,10 +209,10 @@ StartupEvents.registry('item', event => {
 		.fireResistant()
 		.glow(true)
 		.unstackable()
-		.texture('minecraft:block/light_blue_wool')
+		.texture('kubejs:item/eye')
 		.rarity('epic')
 		.tooltip('§7Mother Nature\'s life-giving power')
 		.displayName('Eye of Verdancy')
 		.tag('adj:eyes')
-		.tag('adjcore:curio_exclusions/eyes')
+		.tag('adjcore:curio_exclusions/eye_of_verdancy')
 })

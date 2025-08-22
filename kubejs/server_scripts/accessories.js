@@ -58,6 +58,88 @@ ServerEvents.tags('item', event => {
 });
 
 ServerEvents.recipes(event => {
-	
-	
+	event.remove({ id: 'confluence:obsidian_skull' })
+
+	event.shaped(
+		'confluence:band_of_regeneration',
+		[
+			' L ',
+			'I I',
+			' I '
+		],
+		{
+			I: 'iron_ingot',
+			L: 'heart_crystals:heart_crystal'
+		}
+	)
+
+	event.shaped(
+		'confluence:obsidian_skull',
+		[
+			'OOO',
+			'OSO',
+			'OOO'
+		],
+		{
+			O: 'obsidian',
+			S: 'skeleton_skull'
+		}
+	)
+
+	event.shaped(
+		'confluence:magma_stone',
+		[
+			'MMM',
+			'MPM',
+			'MMM'
+		],
+		{
+			M: 'magma_block',
+			P: 'mythicmetals:palladium_ingot'
+		}
+	)
+
+	event.shaped(
+		'confluence:shark_tooth_necklace',
+		[
+			' S ',
+			'T T',
+			'TTT'
+		],
+		{
+			T: 'alexsmobs:shark_tooth',
+			S: 'string'
+		}
+	)
+
+	event.shaped(
+		'confluence:shark_tooth_necklace',
+		[
+			' S ',
+			'T T',
+			'TTT'
+		],
+		{
+			T: 'alexsmobs:shark_tooth',
+			S: 'string'
+		}
+	)
+})
+
+LootJS.modifiers(event => {
+	event.addLootTableModifier('artifacts:artifact')
+		.pool((pool) => {
+			pool.rolls(1)
+				.randomChance(0.66)
+			pool.addLoot(LootEntry.of('confluence:band_of_regeneration'))
+				.addLoot(LootEntry.of('confluence:cross_necklace'))
+				.addLoot(LootEntry.of('confluence:cobalt_shield'))
+				.addLoot(LootEntry.of('confluence:panic_necklace'))
+		})
+
+	event.addLootTableModifier(/the_bumblezone\:structures\/.*/)
+		.pool((pool) => {
+			pool.randomChance(0.05)
+			pool.addLoot(LootEntry.of('confluence:honey_comb'))
+		})
 })

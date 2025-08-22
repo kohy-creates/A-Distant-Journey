@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = welcome_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1748123097107
+  last_edited_time = 1755726455182
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:5a2069d8-f63a-43ad-bbf4-d430ad1da2b1-1748123085759] = [groups:][instances:]
+  [loading_requirement_container_meta:62eaa175-2d23-4b67-90e6-0ea8db0c0a8d-1755726366515] = [groups:][instances:]
 }
 
 customization {
@@ -58,7 +58,7 @@ element {
   element_loading_requirement_container_identifier = b63d070b-b71d-4ec1-8d6f-b12cb117328b-1748114828041
   [loading_requirement_container_meta:b63d070b-b71d-4ec1-8d6f-b12cb117328b-1748114828041] = [groups:][instances:]
   enable_parallax = false
-  parallax_intensity = 0.5
+  parallax_intensity_v2 = 0.5
   invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
@@ -69,7 +69,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%# %!!title%%#FBAA57%A DISTANT JOURNEY%#%%!!%%n%^^^%n%%n%Eons ago, there was the Architect’s Prism. It was originless - it had no maker, no beginning, only purpose. It shaped thought into form, and form into reality.%n%%n%The Prism was wielded by the greatest nation of its time. Its power gave rise to elegant weaponry, cities of unimaginable beauty, and a deeper understanding of the world itself. The influence of the Prism profoundly shaped the magical arts, as well as the creation of other—albeit less powerful—artifacts that still exist today.%n%%n%However, should the Prism fall into a corrupted mind, its creations would twist and turn to darkness. The greatest nation, which once rose to unparalleled power through its magic, ultimately fell when one of its senior sorcerers betrayed them. This sorcerer unleashed the darkest of the Prism’s creations — beings so terrible they eventually consumed their master. In the wake of this catastrophe, other sorcerers, recognizing the true danger of the Prism’s power, resolved to destroy it. %n%%n%Though shattered, the Prism’s essence survived in the form of the Eyes — fragments of its power scattered across realms, some lost to time, others reforged through arcane craft and ritual. Knowledge of them gradually deteriorated - first becoming legends and eventually fading into myths. %n%%n%Yet there remains an old saying that whoever retrieves all of the Eyes can restore the Architect’s Prism and wield its miraculous powers of creation.%n%%n%---%n%%n%Welcome to %#FBAA57%ADJ%#%, an adventure modpack which emphasizes on *progression*, *difficulty* and *creating* rather than solely on *exploration*. **But don't worry** - while it was designed to be difficult, I made sure that it isn't plain unfair in any way.%n%%n%%n%^^^%n%### %!!title%%#bfbfbf%ADVANCEMENTS%#%%!!%%n%---%n%^^^%n%%n%Advancements were redesigned to guide you throughout the pack, so check them whenever you are unsure on what to do next.%n%You can open the advancements menu from your Inventory, or by pressing its default keybind (more on that in the `Controls` sction).%n%%n%^^^%n%### %!!title%%#bfbfbf%CONTROLS%#%%!!%%n%---%n%^^^%n%%n%**`L`** - default advancements menu keybind%n%**`R`** - roll%n%**`F`** - hide first person player model%n%**`V`** - voice chat menu%n%**`M`** - holding it down opens the Player Menu%n%> In it you can access Shaders, Claims and other miscellaneous features.%n%%n%%n%^^^%n%### %!!title%%#bfbfbf%CLAIMING CHUNKS AND PARTIES%#%%!!%%n%---%n%^^^%n%%n%You can access the chunk claiming interface from your Player Menu. Blocks in claimed chunks cannot be broken or interacted with by other players and are immune to explosions from mob griefing.%n%%n%Party menu is located in your Inventory. If you are playing in Multiplayer, you can create one to communicate with your party and share claimed chunks.%n%%n%%n%^^^%n%### %!!title%%#bfbfbf%PROGRESSION AND DIFFICULTY%#%%!!%%n%---%n%^^^%n%%n%ADJ follows a semi-linear progression, which is dictated by how many Eyes you have collected in total (with a few exceptions).%n%%n%Your progression is divided into milestones. After every single one of them, the threat level of your world will increase, empowering mobs and unlocking new blocks and items.%n%%n%- **1st milestone**: Reaching the Nether.%n%- **2nd milestone**: Picking up the Eye of Cinders (killing a Wither).%n%- **3rd milestone**: Picking up the Eye of Heavens (killing an Aerwhale King).%n%- **4th milestone**: Picking up the Eye of Dreams (killing a Red Dragon).%n%- **5th milestone**: Killing the Ender Dragon.%n%%n%As previously mentioned, certain blocks and items are not accessible until certain milestones, e.g. Ancient Debris generates in the world only after the Eye of Heavens is collected.%n%%n%---%n%%n%> *Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.*%n%
+  source = {"placeholder":"file_text","values":{"path_or_url":"/config/fancymenu/assets/welcome_screen.txt","mode":"all","separator":"\n","last_lines":"1"}}
   source_mode = direct
   shadow = false
   scale = 1.0
@@ -91,6 +91,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = 5cd2d0e7-fde7-4070-ae36-3f049b1daca4-1748114916310
   appearance_delay = no_delay
@@ -116,7 +125,7 @@ element {
   element_loading_requirement_container_identifier = 531bae63-fdea-4d70-8b74-de4791df2ed2-1748114916310
   [loading_requirement_container_meta:531bae63-fdea-4d70-8b74-de4791df2ed2-1748114916310] = [groups:][instances:]
   enable_parallax = false
-  parallax_intensity = 0.5
+  parallax_intensity_v2 = 0.5
   invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
@@ -175,7 +184,7 @@ element {
   element_loading_requirement_container_identifier = f7ebef92-39d8-4ebd-835e-1b7572245f4a-1748122362624
   [loading_requirement_container_meta:f7ebef92-39d8-4ebd-835e-1b7572245f4a-1748122362624] = [groups:][instances:]
   enable_parallax = false
-  parallax_intensity = 0.5
+  parallax_intensity_v2 = 0.5
   invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0

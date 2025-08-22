@@ -125,14 +125,12 @@
 			"swamp_hut_blacklist": []
 		}
 	},
-	// CATEGORY: EQUIPMENT
 	"equipment": {
 		"lapis_shield": {
 			"enable": true,
 			"durability": 300,
 			"cooldown": 200
 		},
-		// CATEGORY: STAFFS
 		"staffs": {
 			"overcharge": {
 				"max_overcharge": 20,
