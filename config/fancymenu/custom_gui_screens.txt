@@ -4,6 +4,15 @@ overridden_screens {
 }
 
 custom_gui {
+  identifier = ingame_wiki
+  title = Wiki
+  allow_esc = true
+  transparent_world_background = true
+  transparent_world_background_overlay = true
+  pause_game = true
+}
+
+custom_gui {
   identifier = death_screen_new
   title = 
   allow_esc = false

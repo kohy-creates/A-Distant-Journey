@@ -1,3 +1,5 @@
+// const $QuiverItem = Java.loadClass('net.mehvahdjukaar.supplementaries.common.items.QuiverItem')
+
 StartupEvents.registry('item', event => {
 	// Misc items
 	event.create('enchanters_guide', 'basic')

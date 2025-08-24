@@ -255,7 +255,7 @@
 		#Requires restart.
 		#Default: 12
 		#Range: 6 ~ 32
-		chunkLoadingRadius = 8
+		chunkLoadingRadius = 12
 		#Specifies if junk items near the Wither Storm should be immediately destroyed. NOTE: Disabling will cause massive server side and potential FPS lag!.
 		#Default: true
 		removeNearbyJunk = true

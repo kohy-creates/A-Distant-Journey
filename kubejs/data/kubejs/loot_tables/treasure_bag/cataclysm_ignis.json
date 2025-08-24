@@ -1,1 +1,42 @@
-{}
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": {
+				"min": 3,
+				"max": 4
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:ignitium_ingot",
+					"quality": 4,
+					"functions": []
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 20,
+				"max": 30
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "magma_block",
+					"quality": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "blaze_rod",
+					"quality": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "nether_bricks",
+					"quality": 1
+				}
+			]
+		}
+	]
+}

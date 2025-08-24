@@ -1,0 +1,275 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = ingame_wiki
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1755898074939
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:55dcd858-a508-4357-8e25-fcb2dcb91a36-1755898069842] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+  show_screen_background_overlay_on_custom_background = false
+  apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
+}
+
+element {
+  source = [source:location]minecraft:textures/gui/demo_background.png
+  repeat_texture = false
+  nine_slice_texture = true
+  nine_slice_texture_border_x = 16
+  nine_slice_texture_border_y = 128
+  image_tint = #FFFFFF
+  element_type = image
+  instance_identifier = ede5e29a-3b40-480b-8e29-843e0cc48d1e-1755889336850
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -285
+  y = -135
+  width = 571
+  height = 355
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 0c0ee386-cb63-420c-8817-cad94ec6d01d-1755889336850
+  [loading_requirement_container_meta:0c0ee386-cb63-420c-8817-cad94ec6d01d-1755889336850] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  url = https://koharasbasement.wiki.gg/wiki/A_Distant_Journey
+  interactable = true
+  hide_video_controls = false
+  loop_videos = false
+  mute_media = false
+  media_volume = 1.0
+  element_type = browser
+  instance_identifier = ba0e6a0b-e1f4-47e4-a953-3a5eb54c6474-1755889256147
+  appearance_delay = every_time
+  appearance_delay_seconds = 0.25
+  fade_in_v2 = no_fading
+  fade_in_speed = 2.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
+  sticky_anchor = false
+  anchor_point = element
+  anchor_point_element = ede5e29a-3b40-480b-8e29-843e0cc48d1e-1755889336850
+  x = 5
+  y = 5
+  width = 552
+  height = 254
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 0ff4c5b3-8c87-425f-9e6b-2108f131f624-1755889256147
+  [loading_requirement_container_meta:0ff4c5b3-8c87-425f-9e6b-2108f131f624-1755889256147] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  button_element_executable_block_identifier = 9027b8a5-608b-426b-b6f4-bb0872142e4d-1755889979868
+  [executable_action_instance:71bb76b7-293f-4451-9d46-646c9d16157b-1755889995534][action_type:closegui] = 
+  [executable_action_instance:f0e3e405-6e53-4df6-a7b0-36f206db6240-1755890255910][action_type:opengui] = pause_screen
+  [executable_block:9027b8a5-608b-426b-b6f4-bb0872142e4d-1755889979868][type:generic] = [executables:71bb76b7-293f-4451-9d46-646c9d16157b-1755889995534;f0e3e405-6e53-4df6-a7b0-36f206db6240-1755890255910;]
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = Done
+  navigatable = true
+  widget_active_state_requirement_container_identifier = f315ac13-fef2-4e55-8f69-dfbe1a7906a8-1755889979868
+  [loading_requirement_container_meta:f315ac13-fef2-4e55-8f69-dfbe1a7906a8-1755889979868] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
+  element_type = custom_button
+  instance_identifier = d144e642-ec15-40e6-bca7-41f6e344d093-1755889979868
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
+  sticky_anchor = false
+  anchor_point = bottom-centered
+  x = 4
+  y = -28
+  width = 115
+  height = 24
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 3a728d7d-aa15-42f0-b80a-a47c613a22de-1755889979868
+  [loading_requirement_container_meta:3a728d7d-aa15-42f0-b80a-a47c613a22de-1755889979868] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  button_element_executable_block_identifier = 5d3dda89-fffc-43a1-92ab-c163fddc91d2-1755888947022
+  [executable_action_instance:ea77dafb-2e90-45a6-9754-89826425b0cf-1755890282526][action_type:closegui] = 
+  [executable_action_instance:57af3282-b952-4d4c-83d7-86400956eb12-1755889636160][action_type:opengui] = pause_screen
+  [executable_action_instance:1c50ff9d-ee37-4386-9661-dbf2b41c6001-1755890287293][action_type:openlink] = https://koharasbasement.wiki.gg/
+  [executable_block:5d3dda89-fffc-43a1-92ab-c163fddc91d2-1755888947022][type:generic] = [executables:ea77dafb-2e90-45a6-9754-89826425b0cf-1755890282526;57af3282-b952-4d4c-83d7-86400956eb12-1755889636160;1c50ff9d-ee37-4386-9661-dbf2b41c6001-1755890287293;]
+  backgroundnormal = [source:local]/config/fancymenu/assets/icons/wiki_button.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/icons/wiki_button_hovered.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/icons/wiki_button_inactive.png
+  restartbackgroundanimations = true
+  nine_slice_custom_background = true
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label =     Open in Browser
+  navigatable = true
+  widget_active_state_requirement_container_identifier = cb7bfa4e-44ea-469d-8ad8-a7d96180ee33-1755888947022
+  [loading_requirement_container_meta:cb7bfa4e-44ea-469d-8ad8-a7d96180ee33-1755888947022] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
+  element_type = custom_button
+  instance_identifier = 2c5bc3c0-b0e0-414a-968a-b6030f14d912-1755890142089
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
+  sticky_anchor = false
+  anchor_point = bottom-centered
+  x = -119
+  y = -28
+  width = 115
+  height = 24
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 51cd9535-5d09-479e-bc4e-d8dbfd568a57-1755888947022
+  [loading_requirement_container_meta:51cd9535-5d09-479e-bc4e-d8dbfd568a57-1755888947022] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/icons/wiki.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
+  element_type = image
+  instance_identifier = a8ef72f9-4f4e-4344-b88a-7b8d92acb5ad-1755890142089
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
+  sticky_anchor = false
+  anchor_point = element
+  anchor_point_element = 2c5bc3c0-b0e0-414a-968a-b6030f14d912-1755890142089
+  x = 3
+  y = 2
+  width = 20
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = fd808386-742c-42e8-bba3-d9a220af406d-1748210918368
+  [loading_requirement_container_meta:fd808386-742c-42e8-bba3-d9a220af406d-1748210918368] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+

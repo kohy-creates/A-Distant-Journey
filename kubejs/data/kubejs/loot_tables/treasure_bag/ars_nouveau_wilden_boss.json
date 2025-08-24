@@ -1,1 +1,45 @@
-{}
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": {
+				"min": 8,
+				"max": 12
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "ars_nouveau:wilden_tribute",
+					"quality": 4,
+					"conditions": []
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 5,
+				"max": 32
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "ars_nouveau:wilden_horn",
+					"quality": 2,
+					"conditions": []
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ars_nouveau:wilden_spike",
+					"quality": 2,
+					"conditions": []
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ars_nouveau:wilden_wing",
+					"quality": 2,
+					"conditions": []
+				}
+			]
+		}
+	]
+}

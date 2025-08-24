@@ -491,11 +491,11 @@
       },
       "damage_bonus": {
         "__default": 0.0,
-        "chapter_1": 0.15,
-        "chapter_2": 0.4,
-        "chapter_3": 0.8,
-        "chapter_4": 1.2,
-        "chapter_5": 1.5
+        "chapter_1": 0.1,
+        "chapter_2": 0.3,
+        "chapter_3": 0.5,
+        "chapter_4": 0.9,
+        "chapter_5": 1.2
       },
       "excluded_mobs": [
         "witherstormmod:witherstorm",

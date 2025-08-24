@@ -39,7 +39,8 @@ ServerEvents.tags('worldgen/biome', (event) => {
 
 	event.add("adj:desert", [
 		/desert/,
-		'clifftree:warm_river'
+		'clifftree:warm_river',
+		'clifftree:shrubland'
 	]);
 
 	event.add("adj:beach", [

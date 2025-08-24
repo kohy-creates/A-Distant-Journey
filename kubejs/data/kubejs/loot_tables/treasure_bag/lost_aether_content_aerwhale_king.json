@@ -1,1 +1,39 @@
-{}
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "confluence:demon_heart",
+					"quality": 4,
+					"functions": []
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 20,
+				"max": 30
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "aether:blue_aercloud",
+					"quality": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "purpur_block",
+					"quality": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "chorus_flower",
+					"quality": 2
+				}
+			]
+		}
+	]
+}

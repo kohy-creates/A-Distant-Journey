@@ -1,1 +1,39 @@
-{}
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:gauntlet_of_guard",
+					"quality": 4,
+					"functions": []
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 20,
+				"max": 30
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "ender_pearl",
+					"quality": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "purpur_block",
+					"quality": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "chorus_flower",
+					"quality": 2
+				}
+			]
+		}
+	]
+}

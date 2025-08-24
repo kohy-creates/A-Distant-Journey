@@ -31,4 +31,8 @@ ItemEvents.modification(event => {
 				)
 		)
 	})
+
+	event.modify(/stardew_fishing\:.*bobber/, item => {
+		item.setMaxDamage(0);
+	})
 })

@@ -40,7 +40,7 @@ LootJS.modifiers((event) => {
 	event.addLootTableModifier('alexsmobs:entities/hammerhead_shark')
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.5, 0.1)
+			pool.randomChanceWithLooting(0.9, 0.1)
 				.addLoot(LootEntry.of('alexsmobs:shark_tooth'))
 				.limitCount([0, 3])
 				.applyLootingBonus([0, 1]);
@@ -49,7 +49,7 @@ LootJS.modifiers((event) => {
 	event.addLootTableModifier('alexsmobs:entities/frilled_shark')
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.333, 0.1)
+			pool.randomChanceWithLooting(0.5, 0.1)
 				.addLoot(LootEntry.of('alexsmobs:shark_tooth'))
 				.limitCount([0, 2])
 				.applyLootingBonus([0, 1]);
@@ -67,7 +67,7 @@ LootJS.modifiers((event) => {
 	event.addLootTableModifier('born_in_chaos_v1:entities/glutton_fish')
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.25, 0.05)
+			pool.randomChanceWithLooting(0.333, 0.05)
 				.addLoot(LootEntry.of('alexsmobs:shark_tooth'))
 				.limitCount([0, 2])
 				.applyLootingBonus([0, 1]);

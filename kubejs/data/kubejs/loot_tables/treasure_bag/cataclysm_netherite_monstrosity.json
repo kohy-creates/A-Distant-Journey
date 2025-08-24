@@ -1,1 +1,72 @@
-{}
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:infernal_forge",
+					"quality": 4,
+					"functions": [],
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:monstrous_horn",
+					"quality": 4,
+					"functions": []
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:music_disc_netherite_monstrosity",
+					"quality": 3,
+					"functions": [],
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.25
+						}
+					]
+				}
+			]
+		},
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"quality": 2,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 24.0,
+								"min": 16.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "cataclysm:lava_power_cell"
+				}
+			],
+			"rolls": 1.0
+		}
+	]
+}

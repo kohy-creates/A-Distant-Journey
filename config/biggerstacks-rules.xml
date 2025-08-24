@@ -7,6 +7,7 @@
 	<rule stacksize="64">
 		<or>
 			<condition>id = minecraft:ender_pearl</condition>
+			<condition>tag includes adj:music_disc</condition>
 		</or>
 	</rule>
 	<rule stacksize="32">
@@ -18,7 +19,8 @@
 		</or>
 	</rule>
 	<rule stacksize="256">
-		<condition>tag adj:music_discs</condition>
-		<condition>stacksize gt 1</condition>
+		<or>
+			<condition>stacksize gt 1</condition>
+		</or>
 	</rule>
 </ruleset>

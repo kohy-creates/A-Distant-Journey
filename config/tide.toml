@@ -3,16 +3,16 @@ giveJournal = false
 holdToCast = true
 showUnread = true
 showToasts = true
-defaultLineColor = false
-rodDurabilityMultiplier = 1.0
-crateWeight = 6
+defaultLineColor = true
+rodDurabilityMultiplier = 3.5
+crateWeight = 10
 crateQuality = 1
 [minigame]
 doMinigame = true
 doFeedback = true
 doSuccessSound = true
 doFailSound = true
-minigameDifficulty = 0.75
+minigameDifficulty = 0.95
 [worldgen]
 disableFishingBoat = false
 disableEndOases = false

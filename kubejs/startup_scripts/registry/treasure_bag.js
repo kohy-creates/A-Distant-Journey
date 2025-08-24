@@ -39,7 +39,7 @@ global.bossMobsNoTreasureBag = [
 
 StartupEvents.registry('item', event => {
 
-	function createTreasureBag(name) {
+	function createTreasureBag(name, suffix) {
 		let modAndEntity = name.split(':');
 		let nameTitleCase = modAndEntity[1]
 			.replace('_', ' ')
@@ -47,10 +47,16 @@ StartupEvents.registry('item', event => {
 			.map(word => word.charAt(0).toUpperCase() + word.slice(1))
 			.join(' ');
 
-		let lootTable = modAndEntity[0] + '_' + modAndEntity[1];
+		if (suffix) {
+			nameTitleCase += ` (${suffix.charAt(0).toUpperCase() + suffix.slice(1)})`;
+		}
 
-		event.createCustom('treasure_bag_' + modAndEntity[1], () => new $TreasureBag($ResourceLocation.fromNamespaceAndPath('kubejs', lootTable)))
-			.displayName(nameTitleCase + ' Treasure Bag')
+		let lootTable = modAndEntity[0] + '_' + modAndEntity[1] + (suffix ? `_${suffix}` : '');
+
+		event.createCustom('treasure_bag_' + modAndEntity[1] + (suffix ? `_${suffix}` : ''), () => 
+			new $TreasureBag($ResourceLocation.fromNamespaceAndPath('kubejs', 'treasure_bag/' + lootTable))
+		)
+		.displayName(nameTitleCase + ' Treasure Bag');
 
 		let lootFilePath = 'kubejs/data/kubejs/loot_tables/treasure_bag/' + lootTable + '.json';
 		if (!JsonIO.read(lootFilePath)) {
@@ -58,7 +64,7 @@ StartupEvents.registry('item', event => {
 			console.log(`Created missing loot table: ${lootFilePath}`);
 		}
 
-		let modelFilePath = 'kubejs/assets/kubejs/models/item/' + 'treasure_bag_' + modAndEntity[1] + '.json';
+		let modelFilePath = 'kubejs/assets/kubejs/models/item/' + 'treasure_bag_' + modAndEntity[1] + (suffix ? `_${suffix}` : '') + '.json';
 		if (!JsonIO.read(modelFilePath)) {
 			JsonIO.write(modelFilePath, {
 				parent: "item/generated",
@@ -71,7 +77,12 @@ StartupEvents.registry('item', event => {
 	}
 
 	global.bossMobsNoTreasureBag.forEach(mob => {
-		createTreasureBag(mob);
+		if (mob === "botania:doppleganger") {
+			createTreasureBag(mob);
+			createTreasureBag(mob, "hardmode");
+		} else {
+			createTreasureBag(mob);
+		}
 	});
 
-})
+});

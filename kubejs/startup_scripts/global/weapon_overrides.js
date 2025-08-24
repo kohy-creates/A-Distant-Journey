@@ -51,7 +51,10 @@ global.weapon_overrides = {
 	'botania:elementium_pick': [25 * defaultAttackDamage[1], defaultAttackSpeed[1]],
 	'botania:terra_sword': [21, 1.8],
 	'botania:thunder_sword': [21, 2.5],
-	'botania:star_sword': [52, 1.3]
+	'botania:star_sword': [52, 1.3],
+	'cataclysm:gauntlet_of_guard': [40, 3.1, 0, 0, 15],
+	'cataclysm:gauntlet_of_bulwark': [40, 3.1, 0, 0, 15],
+	'cataclysm:gauntlet_of_maelstrom': [40, 3.1, 0, 0, 15],
 }
 
 addToolsetOverride('minecraft:wooden', 7)

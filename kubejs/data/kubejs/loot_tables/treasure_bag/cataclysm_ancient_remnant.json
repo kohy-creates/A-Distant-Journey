@@ -1,1 +1,85 @@
-{}
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:sandstorm_in_a_bottle",
+					"quality": 4,
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.75
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:remnant_skull",
+					"quality": 4
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:remnant_skull",
+					"quality": 3,
+					"functions": [],
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 1,
+				"max": 2
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:music_disc_ancient_remnant",
+					"quality": 2
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 10,
+				"max": 20
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "sand",
+					"weight": 2,
+					"quality": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "bone",
+					"quality": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:ancient_metal_nugget",
+					"quality": 2
+				}
+			]
+		}
+	]
+}

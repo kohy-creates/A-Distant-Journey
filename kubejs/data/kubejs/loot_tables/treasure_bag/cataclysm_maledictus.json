@@ -1,1 +1,36 @@
-{}
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": {
+				"min": 3,
+				"max": 4
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:cursium_ingot",
+					"quality": 4,
+					"functions": []
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:music_disc_maledictus",
+					"quality": 3,
+					"functions": [],
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.25
+						}
+					]
+				}
+			]
+		}
+	]
+}

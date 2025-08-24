@@ -1,1 +1,33 @@
-{}
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": {
+				"min": 8,
+				"max": 12
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "alexscaves:tectonic_shard",
+					"quality": 4,
+					"conditions": []
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 5,
+				"max": 16
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "alexscaves:dinosaur_nugget",
+					"quality": 2,
+					"conditions": []
+				}
+			]
+		}
+	]
+}
