@@ -7,5 +7,9 @@
 	"minecraft:falling_stalactite": 5.0,
 	"minecraft:falling_block": 5.0,
 	"minecraft:hot_floor": 7.0,
-	"minecraft:dragon_breath": 5.0
+	"minecraft:dragon_breath": 5.0,
+	"cataclysm:abyssal_burn": 4.0,
+	"minecraft:starve": 10.0,
+	"minecraft:drown": 15.0,
+	"minecraft:in_wall": 10.0
 }

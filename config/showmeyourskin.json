@@ -11,16 +11,16 @@
       "FEET": {
         "transparency": 0
       },
-      "ELYTRA": {
-        "transparency": 100
-      },
       "CHEST": {
         "transparency": 0
+      },
+      "HAT": {
+        "transparency": 100
       },
       "LEGS": {
         "transparency": 0
       },
-      "HAT": {
+      "ELYTRA": {
         "transparency": 100
       },
       "SHIELD": {
@@ -28,8 +28,11 @@
       }
     },
     "trims": {
-      "OFFHAND": {
-        "transparency": 100
+      "LEGS": {
+        "transparency": 0
+      },
+      "CHEST": {
+        "transparency": 0
       },
       "MAINHAND": {
         "transparency": 100
@@ -37,13 +40,10 @@
       "FEET": {
         "transparency": 0
       },
+      "OFFHAND": {
+        "transparency": 100
+      },
       "HEAD": {
-        "transparency": 0
-      },
-      "LEGS": {
-        "transparency": 0
-      },
-      "CHEST": {
         "transparency": 0
       }
     },
@@ -54,16 +54,16 @@
       "FEET": {
         "transparency": 100
       },
-      "ELYTRA": {
+      "CHEST": {
         "transparency": 100
       },
-      "CHEST": {
+      "HAT": {
         "transparency": 100
       },
       "LEGS": {
         "transparency": 100
       },
-      "HAT": {
+      "ELYTRA": {
         "transparency": 100
       },
       "SHIELD": {
@@ -82,16 +82,16 @@
         "FEET": {
           "transparency": 100
         },
-        "ELYTRA": {
+        "CHEST": {
           "transparency": 100
         },
-        "CHEST": {
+        "HAT": {
           "transparency": 100
         },
         "LEGS": {
           "transparency": 100
         },
-        "HAT": {
+        "ELYTRA": {
           "transparency": 100
         },
         "SHIELD": {
@@ -99,7 +99,10 @@
         }
       },
       "trims": {
-        "OFFHAND": {
+        "LEGS": {
+          "transparency": 100
+        },
+        "CHEST": {
           "transparency": 100
         },
         "MAINHAND": {
@@ -108,13 +111,10 @@
         "FEET": {
           "transparency": 100
         },
+        "OFFHAND": {
+          "transparency": 100
+        },
         "HEAD": {
-          "transparency": 100
-        },
-        "LEGS": {
-          "transparency": 100
-        },
-        "CHEST": {
           "transparency": 100
         }
       },
@@ -125,16 +125,16 @@
         "FEET": {
           "transparency": 100
         },
-        "ELYTRA": {
+        "CHEST": {
           "transparency": 100
         },
-        "CHEST": {
+        "HAT": {
           "transparency": 100
         },
         "LEGS": {
           "transparency": 100
         },
-        "HAT": {
+        "ELYTRA": {
           "transparency": 100
         },
         "SHIELD": {

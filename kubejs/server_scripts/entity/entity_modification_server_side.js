@@ -1,6 +1,11 @@
+const $AbstractArrow = Java.loadClass('net.minecraft.world.entity.projectile.AbstractArrow')
+
 EntityEvents.spawned(event => {
 	const { entity } = event;
 	const isHardcore = entity.getServer().getWorldData().isHardcore();
+	if (entity instanceof $AbstractArrow) {
+		entity.setBaseDamage(2.0)
+	}
 	switch (entity.type) {
 		case 'minecraft:wither_skeleton': {
 			entity.setItemSlot("mainhand", "golden_sword");

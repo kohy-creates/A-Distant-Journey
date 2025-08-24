@@ -1,0 +1,20 @@
+{
+	"#adjcore:bypasses_cooldown": {
+		"iframes": 0
+	},
+	"#adjcore:player_melee": {
+		"iframes": 8
+	},
+	"#minecraft:is_projectile": {
+		"iframes": 0
+	},
+	"minecraft:lava": {
+		"iframes": 10
+	},
+	"minecraft:mob_projectile": {
+		"iframes": 0,
+		"overrides": {
+			"minecraft:player": 8
+		}
+	}
+}

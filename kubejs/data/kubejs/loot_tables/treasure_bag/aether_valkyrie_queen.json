@@ -1,4 +1,29 @@
 {
-	"type": "minecraft:gift",
-	"pools": []
+	"pools": [
+		{
+			"name": "emblems",
+			"conditions": [
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "confluence:ranger_emblem",
+					"weight": 1,
+					"quality": 4
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:warrior_emblem",
+					"weight": 1,
+					"quality": 4
+				},{
+					"type": "minecraft:item",
+					"name": "confluence:sorcerer_emblem",
+					"weight": 1,
+					"quality": 4
+				}
+			]
+		}
+	]
 }

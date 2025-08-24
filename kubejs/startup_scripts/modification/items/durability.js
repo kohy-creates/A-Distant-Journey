@@ -104,11 +104,12 @@ ItemEvents.modification(event => {
 
 	//////////////////////////////////////////////////////
 
-	const item_ids = ['_helmet', '_chestplate', '_leggings', '_boots']
+	const item_ids = ['_helmet', '_chestplate', '_leggings', '_boots', '_helm', '_tunic']
 	function armorset(type) {
 		let list = [];
 		item_ids.forEach(item => {
-			list.push(type + item);
+			const i = type + item;
+			if (Item.exists(i)) list.push(i);
 		})
 		return list;
 	}
@@ -172,7 +173,8 @@ ItemEvents.modification(event => {
 	maxDurability([
 		toolset('experienceobelisk:cognitive'),
 		'experienceobelisk:cognitive_bow',
-		'experienceobelisk:flint_and_cognitive_alloy'
+		'experienceobelisk:flint_and_cognitive_alloy',
+		armorset('alexscaves:primordial')
 	], 1100)
 
 	maxDurability('trident', 700)

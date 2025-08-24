@@ -29,6 +29,24 @@
 					"quality": 3
 				}
 			]
+		},
+		{
+			"name": "eye",
+			"conditions": [
+				{
+					"condition": "random_chance",
+					"chance": 0.33
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "confluence:eye_of_the_golem",
+					"weight": 1,
+					"quality": 3
+				}
+			]
 		}
 	]
 }

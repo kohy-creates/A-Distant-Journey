@@ -66,7 +66,7 @@
 		},
 		"#adj:mushroom_island": "adj:music.biome.mushroom_island",
 		"#adj:caves": "adj:music.biome.caves",
-		"#adj:warm_caves": "adj:music.biome.warm_caves",
+		"#adj:warm_caves": "adj:music.biome.desert.rain",
 		"alexscaves:forlorn_hollows": "adj:music.biome.forlorn_hollows",
 		"minecraft:lush_caves": "adj:music.biome.lush_caves",
 		"alexscaves:abyssal_chasm": "adj:music.biome.abyssal_chasm",

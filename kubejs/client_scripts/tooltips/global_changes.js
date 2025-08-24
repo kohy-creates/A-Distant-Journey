@@ -300,19 +300,32 @@ ItemEvents.tooltip(event => {
 			let match = tag.match(/^set_bonus\.([a-z0-9_\-]+)\.([a-z0-9_\-/]+)$/);
 			if (match) {
 				bonusID = match[1] + ":" + match[2];
-				// console.log(bonusID)
 				break;
 			}
 		}
 		if (bonusID == null) return;
 
+		// Base armor type of the hovered item
 		const armorType = item.getId().toString()
 			.replace('_helmet', '')
 			.replace('_chestplate', '')
 			.replace('_leggings', '')
-			.replace('_boots', '')
+			.replace('_boots', '');
 
-		if (armorType != bonusID) return;
+		// Build a list of allowed types for this bonus
+		let allowedTypes = [bonusID];
+		if (global.bonusOverrides && global.bonusOverrides[bonusID]) {
+			global.bonusOverrides[bonusID].forEach(combo => {
+				combo.forEach(piece => {
+					if (!allowedTypes.includes(piece)) {
+						allowedTypes.push(piece);
+					}
+				});
+			});
+		}
+
+		// Only show tooltip if this armor piece matches any of the allowed types
+		if (!allowedTypes.includes(armorType)) return;
 
 		const bonus = global.setBonusMap[bonusID];
 		const description = bonus.description;
@@ -321,10 +334,10 @@ ItemEvents.tooltip(event => {
 		text.add(text.length, Text.gray('Full set bonus:'));
 
 		description.forEach(line => {
-			text.add(text.length, Text.gray(' ' + line))
-		})
+			text.add(text.length, Text.gray(' ' + line));
+		});
+	});
 
-	})
 
 	/**
 	 * Adds a tooltip line to a set of items.

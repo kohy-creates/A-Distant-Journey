@@ -1,4 +1,5 @@
-function percent(num) {
+// Percent
+function p(num) {
 	return num / 100;
 }
 
@@ -27,11 +28,11 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'adjcore:generic.projectile_damage_reduction': {
-			values: [percent(2.5), percent(5), percent(2.5), 0],
+			values: [p(2.5), p(5), p(2.5), 0],
 			operation: 0
 		},
 		'generic.movement_speed': {
-			values: [0, 0, 0, percent(4)],
+			values: [0, 0, 0, p(4)],
 			operation: 1
 		},
 	},
@@ -41,11 +42,11 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'adjcore:generic.projectile_damage_reduction': {
-			values: [percent(2.5), percent(5), percent(2.5), 0],
+			values: [p(2.5), p(5), p(2.5), 0],
 			operation: 0
 		},
 		'generic.movement_speed': {
-			values: [0, 0, 0, percent(4)],
+			values: [0, 0, 0, p(4)],
 			operation: 1
 		},
 
@@ -54,6 +55,18 @@ global.armorOverrides = {
 		'generic.armor': {
 			values: [3, 5, 4, 3],
 			operation: 0
+		},
+		'generic.knockback_resistance': {
+			values: [0, p(10), 0, p(5)],
+			operation: 0
+		},
+		'adjcore:generic.projectile_damage_reduction': {
+			values: [p(2.5), p(5), p(2.5), 0],
+			operation: 0
+		},
+		'generic.movement_speed': {
+			values: [0, 0, 0, p(4)],
+			operation: 1
 		},
 	},
 	'minecraft:iron': {

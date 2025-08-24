@@ -55,6 +55,7 @@ global.weapon_overrides = {
 	'cataclysm:gauntlet_of_guard': [40, 3.1, 0, 0, 15],
 	'cataclysm:gauntlet_of_bulwark': [40, 3.1, 0, 0, 15],
 	'cataclysm:gauntlet_of_maelstrom': [40, 3.1, 0, 0, 15],
+	'cataclysm:tidal_claws': [26, 0.9, 0, 0, 10]
 }
 
 addToolsetOverride('minecraft:wooden', 7)

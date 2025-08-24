@@ -82,9 +82,9 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 				let armorValue = global.armorOverrides[armorID];
 				let uuid = modifierUUIDs[i];
 				for (let attribute of Object.keys(armorValue)) {
-					if (armorValue[attribute].values[i] == 0) continue;
 					event.removeAttribute(attribute);
-					event.addModifier(attribute, new $AttributeModifier(modifierUUIDs[i], uuid, armorValue[attribute].values[i], $Operation.fromValue(armorValue[attribute].operation)))
+					if (armorValue[attribute].values[i] == 0) continue;
+					event.addModifier(attribute, new $AttributeModifier(modifierUUIDs[i], uuid, armorValue[attribute].values[i], $Operation.fromValue(armorValue[attribute].operation || 0)))
 				}
 			}
 		}

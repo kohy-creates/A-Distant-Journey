@@ -23,50 +23,87 @@ PlayerEvents.tick(event => {
 	equipment['leggings'] = player.getLegsArmorItem().getId();
 	equipment['boots'] = player.getFeetArmorItem().getId();
 
+	const slotSuffixes = {
+		helmet: ['_helmet', '_helm'],
+		chestplate: ['_chestplate', '_tunic'],
+		leggings: ['_leggings', '_pants'],
+		boots: ['_boots']
+	};
+
 	let equippedTypes = [];
-	for (const [key, item] of Object.entries(equipment)) {
-		equippedTypes.push(item.toString().replace('_' + key, ''));
+
+	for (const [slot, item] of Object.entries(equipment)) {
+		let id = item.toString();
+
+		for (const suffix of slotSuffixes[slot]) {
+			if (id.endsWith(suffix)) {
+				id = id.substring(0, id.length - suffix.length);
+				break;
+			}
+		}
+
+		equippedTypes.push(id);
 	}
 
-	const allSame = equippedTypes.every(v => v === equippedTypes[0]);
-	// console.log(allSame)
-	if (allSame && !player.getTags().toArray().includes('adj.set_bonus_active')) {
-		let bonus = global.setBonusMap[equippedTypes[0]];
-		// console.log(bonus)
+
+	let matchedBonusId = null;
+
+	for (const [bonusId, combos] of Object.entries(global.bonusOverrides)) {
+		for (const combo of combos) {
+			if (combo.length !== equippedTypes.length) continue;
+
+			let copy = equippedTypes.slice();
+			let valid = true;
+			for (const needed of combo) {
+				let idx = copy.indexOf(needed);
+				if (idx === -1) {
+					valid = false;
+					break;
+				}
+				copy.splice(idx, 1);
+			}
+			if (valid && copy.length === 0) {
+				matchedBonusId = bonusId;
+				break;
+			}
+		}
+		if (matchedBonusId) break;
+	}
+
+	if (!matchedBonusId) {
+		let allSame = equippedTypes.every(v => v === equippedTypes[0]);
+		if (allSame) {
+			matchedBonusId = equippedTypes[0];
+		}
+	}
+
+	if (matchedBonusId && !player.getTags().toArray().includes('adj.set_bonus_active')) {
+		let bonus = global.setBonusMap[matchedBonusId];
 		if (!bonus) return;
 
 		player.addTag('adj.set_bonus_active');
-		player.addTag('adj.set_bonus.' + equippedTypes[0].replace(':', '.'));
-		player.stages.add('set_bonus.' + equippedTypes[0].replace(':', '.'))
+		player.addTag('adj.set_bonus.' + matchedBonusId.replace(':', '.'));
+		player.stages.add('set_bonus.' + matchedBonusId.replace(':', '.'));
+
 		for (const effect of bonus.effects) {
 			let type = effect.type;
 			let value = effect.value;
-			// switch in case I ever want to extend it
 			switch (type) {
 				case 'effect': {
-					let id = value.id;
-					let amplifier = value.amplifier
-					player.addEffect(new $MobEffectInstance(id, -1, amplifier));
+					player.addEffect(new $MobEffectInstance(value.id, -1, value.amplifier));
 					break;
 				}
 				case 'attribute': {
-					let id = value.id;
-					let attrValue = value.value;
-					let operation = value.operation;
-					let uuid;
-					if (!value.uuid) {
-						uuid = global.genericSetBonusUUID;
-					}
-					else {
-						uuid = value.uuid;
-					}
-					player.getAttribute(id).addPermanentModifier(new $AttributeModifer(uuid, 'Set bonus', attrValue, $Operation.fromValue(operation)));
+					let uuid = value.uuid || global.genericSetBonusUUID;
+					player.getAttribute(value.id).addPermanentModifier(
+						new $AttributeModifer(uuid, 'Set bonus', value.value, $Operation.fromValue(value.operation))
+					);
 					break;
 				}
 			}
 		}
 	}
-	else if (!allSame && player.getTags().toArray().includes('adj.set_bonus_active')) {
+	else if (!matchedBonusId && player.getTags().toArray().includes('adj.set_bonus_active')) {
 		let bonusNamespace = null;
 		let bonusId = null;
 
