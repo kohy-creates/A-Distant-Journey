@@ -119,6 +119,8 @@
 			"file/Fancy Crops v1.2.zip",
 			"file/Banner Pattern Clarity v1.6.zip",
 			"file/boss-refreshed-v2-1.19-1.21.zip",
+			"file/Tainted's Accurate Wither Storm Models v3.0.2.2.zip",
+			"file/\u00A75VN4's \u00A7l\u00A72FWS+RWS Detailed.zip",
 			"file/kohara's Compat",
 			"file/ADJ Music"
 		],
@@ -132,7 +134,12 @@
 			"programmer_art",
 			"rediscovered:legacy_pack",
 			"supplementaries:darker_ropes",
-			"moresnifferflowers:more_sniffer_flowers_rtx"
+			"moresnifferflowers:more_sniffer_flowers_rtx",
+			"__moremcmeta-internal__",
+			"railways:green_signals",
+			"railways:legacy_palettes",
+			"witherstormmod:programmer_art",
+			"railways:legacy_semaphore"
 		],
 		"voiceChat": [
 			"black_icons",
@@ -149,8 +156,8 @@
 			"description": "\"Default resources\""
 		},
 		"$$default": {
-			"hidden": false,
-			"required": false
+			"hidden": true,
+			"required": true
 		},
 		"$$hidden": {
 			"hidden": true
