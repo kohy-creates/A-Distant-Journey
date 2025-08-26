@@ -9,7 +9,7 @@
 	allow-potion-brewing: true
 	// Specifies the chance how often an amethyst dust should drop when mining an amethyst cluster
 	// default: 10
-	amethyst-dust-chance: 50
+	amethyst-dust-chance: 5
 	// The duration of the short spelunker potion in seconds
 	// default: 45
 	short-potion-duration: 300
@@ -33,6 +33,20 @@
 			// Modifies how likely it is that a long-potion generates in this loot table
 			// default: 25
 			long-potion-chance: 25
+		}
+		{
+			targetId: artifacts:chests/campsite_barrel
+			min: 1
+			max: 1
+			short-potion-chance: 12
+			long-potion-chance: 3
+		}
+		{
+			targetId: chests/simple_dungeon
+			min: 0
+			max: 1
+			short-potion-chance: 25
+			long-potion-chance: 10
 		}
 	]
 	// Determines whether an ease-out animation should be played when approaching a block
@@ -138,7 +152,7 @@
 			// default: true
 			transition: true
 			// default: 5
-			effectRadius: 16
+			effectRadius: 8
 		}
 		{
 			blockIds: [
@@ -192,15 +206,6 @@
 				mythicmetals:aquarium_ore
 			]
 			highlightColor: "#66B4FC"
-			transition: true
-			effectRadius: 16
-		}
-		{
-			blockIds: [
-				mythicmetals:banglum_ore
-				mythicmetals:nether_banglum_ore
-			]
-			highlightColor: "#966D4F"
 			transition: true
 			effectRadius: 16
 		}
@@ -274,26 +279,10 @@
 		}
 		{
 			blockIds: [
-				mythicmetals:manganese_ore
-			]
-			highlightColor: "#F59095"
-			transition: true
-			effectRadius: 16
-		}
-		{
-			blockIds: [
 				mythicmetals:prometheum_ore
 				mythicmetals:deepslate_prometheum_ore
 			]
 			highlightColor: "#428555"
-			transition: true
-			effectRadius: 16
-		}
-		{
-			blockIds: [
-				mythicmetals:quadrillum_ore
-			]
-			highlightColor: "#307474"
 			transition: true
 			effectRadius: 16
 		}
@@ -340,7 +329,7 @@
 			]
 			highlightColor: "#FCFCFC"
 			transition: true
-			effectRadius: 16
+			effectRadius: 10
 		}
 		{
 			blockIds: [
@@ -348,7 +337,7 @@
 			]
 			highlightColor: "#6F4474"
 			transition: true
-			effectRadius: 16
+			effectRadius: 4
 		}
 		{
 			blockIds: [
@@ -408,6 +397,14 @@
 			highlightColor: "#A477EE"
 			transition: true
 			effectRadius: 32
+		}
+		{
+			blockIds: [
+				heart_crystals:heart_crystal
+			]
+			highlightColor: "#FC5B72"
+			transition: true
+			effectRadius: 24
 		}
 	]
 }

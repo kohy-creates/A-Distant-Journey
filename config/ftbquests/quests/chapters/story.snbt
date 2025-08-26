@@ -443,13 +443,7 @@
 				}
 				{
 					hasCustomPicture: false
-					icon: {
-						Count: 1
-						id: "tiered:armorers_hammer"
-						tag: {
-							Damage: 0
-						}
-					}
+					icon: "handcrafted:hammer"
 					id: "59305D169C03671B"
 					ignoreState: true
 					layer: false
@@ -482,18 +476,12 @@
 			tasks: [
 				{
 					id: "608D0B0FFE3FE433"
-					item: "kubejs:stone_brick_forge"
+					item: "alloy_forgery:cracked_stone_bricks_forge_controller"
 					type: "item"
 				}
 				{
 					hasCustomPicture: false
-					icon: {
-						Count: 1
-						id: "tiered:armorers_hammer"
-						tag: {
-							Damage: 0
-						}
-					}
+					icon: "handcrafted:hammer"
 					id: "0B1F8DF9B4859E70"
 					ignoreState: true
 					layer: true
@@ -1270,7 +1258,7 @@
 			subtitle: "Craft a Hellforge"
 			tasks: [{
 				id: "6D577D3521C91C5F"
-				item: "kubejs:hellforge"
+				item: "alloy_forgery:nether_bricks_forge_controller"
 				type: "item"
 			}]
 			title: "Hell's Alloy Kitchen"
@@ -1292,6 +1280,7 @@
 		}
 		{
 			dependencies: ["19E87E63C5C295AE"]
+			icon: "netherexp:ecto_soul_sand"
 			id: "5A24E62380261206"
 			subtitle: "Summon a Wither"
 			tasks: [{
@@ -1321,7 +1310,7 @@
 			}]
 			title: "The Beginning"
 			x: 23.0d
-			y: 11.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["20130F300D432015"]
@@ -1341,7 +1330,7 @@
 			]
 			title: "From the Depths"
 			x: 21.5d
-			y: 12.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["20130F300D432015"]
@@ -1356,13 +1345,7 @@
 			tasks: [
 				{
 					hasCustomPicture: false
-					icon: {
-						Count: 1
-						id: "tiered:armorers_hammer"
-						tag: {
-							Damage: 0
-						}
-					}
+					icon: "handcrafted:hammer"
 					id: "42FC72E81F668F2F"
 					ignoreState: false
 					layer: false
@@ -1395,8 +1378,8 @@
 				}
 			]
 			title: "Can We Get Much Higher?"
-			x: 24.5d
-			y: 13.0d
+			x: 25.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["5AEA2A64181AED93"]

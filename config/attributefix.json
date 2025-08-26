@@ -88,6 +88,17 @@
         "value": 100
       }
     },
+    "kubejs:ranged_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "additionalentityattributes:player.collection_range": {
       "enabled": false,
       "min": {

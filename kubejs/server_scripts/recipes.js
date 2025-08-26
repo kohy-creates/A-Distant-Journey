@@ -51,6 +51,8 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:alloy_forge/alloy_metallurgium_from_ingots_alt',
 		'mythicmetals:alloy_forge/alloy_metallurgium_from_ores',
 		'mythicmetals:alloy_forge/alloy_metallurgium_from_raw_ores',
+
+		/alloy_forgery\:compat\//
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })

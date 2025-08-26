@@ -3,7 +3,7 @@ ItemEvents.modification(event => {
 	//////////////////////////////////////////////////////
 
 	/**
-	 * @param {InputItem_[]} target 
+	 * @param {InputItem_|InputItem_[]} target 
 	 * @param {number} amount 
 	 */
 	function maxDurability(target, amount) {
@@ -178,6 +178,7 @@ ItemEvents.modification(event => {
 	], 1100)
 
 	maxDurability('trident', 700)
+	maxDurability('mutantmonsters:hulk_hammer', 500)
 	maxDurability([
 		'bow',
 		'crossbow',

@@ -69,9 +69,15 @@ global.armorOverrides = {
 			operation: 1
 		},
 	},
+	'rediscovered:plate': {
+		'generic.armor': {
+			values: [3, 4, 3, 2],
+			operation: 0
+		},
+	},
 	'minecraft:iron': {
 		'generic.armor': {
-			values: [3, 5, 4, 3],
+			values: [3, 4, 3, 2],
 			operation: 0
 		},
 	},

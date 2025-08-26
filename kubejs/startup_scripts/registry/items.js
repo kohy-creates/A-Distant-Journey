@@ -20,4 +20,11 @@ StartupEvents.registry('item', event => {
 		.maxStackSize(64)
 		.texture('kubejs:item/skull_fragment')
 		.displayName('Skull Fragment')
+
+	// event.create('tabi', 'basic')
+	// 	.unstackable()
+	// 	.texture('confluence:item/curio/tabi')
+	// 	.tooltip()
+	// 	.attachCuriosCapability()
+	// 	.tag('curios:accessory')
 })

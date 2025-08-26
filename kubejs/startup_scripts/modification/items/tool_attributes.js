@@ -35,6 +35,7 @@ const weaponModifierUUIDs = [
 
 ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (event) => {
 	const item = event.getItemStack().getItem();
+	const id = item.id.toString();
 	// LEAVE EVERYTHING PAST HERE AS 'LET' CAUSE KUBEJS SUCKS BALLS
 
 	if (event.slotType == 'mainhand') {
@@ -42,7 +43,7 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 			let tier = item.getTier();
 			event.addModifier("kubejs:harvest_level", new $AttributeModifier(harvestLevelUUID, "Harvest Level", tier.getLevel(), 'addition'))
 			let speed = tier.getSpeed();
-			if (item.id.toString().includes('rose_gold')) speed = 7.0;
+			if (id.includes('rose_gold')) speed = 7.0;
 			event.addModifier("kubejs:mining_speed", new $AttributeModifier(miningSpeedUUID, "Mining Speed", speed, 'addition'))
 		}
 		let attackDamageMods = event.getOriginalModifiers().get($Attributes.ATTACK_DAMAGE);
@@ -55,8 +56,8 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 			event.removeAttribute('generic.attack_damage');
 			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', Math.round(baseDamage * 3.5), 'addition'))
 		}
-		if (Object.keys(global.weapon_overrides).includes(item.id.toString())) {
-			let overrides = global.weapon_overrides[item.id.toString()];
+		if (Object.keys(global.weapon_overrides).includes(id)) {
+			let overrides = global.weapon_overrides[id];
 			event.removeAttribute('generic.attack_damage');
 			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', overrides[0] - 3, 'addition'))
 			event.removeAttribute('generic.attack_speed');
@@ -71,6 +72,27 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 					event.addModifier('attributeslib:armor_pierce', new $AttributeModifier(weaponModifierUUIDs[0], 'Armor Penetration', overrides[4], 'addition'))
 				}
 			}
+		}
+		let rangedDamage = 0;
+
+		if (global.bowDamage[id]) {
+			rangedDamage += global.bowDamage[id];
+		}
+
+		if (global.arrowDamage[id]) {
+			rangedDamage += global.arrowDamage[id];
+		}
+
+		if (rangedDamage > 0) {
+			event.addModifier(
+				'kubejs:ranged_damage',
+				new $AttributeModifier(
+					weaponModifierUUIDs[0],
+					'Ranged Damage',
+					rangedDamage,
+					'addition'
+				)
+			);
 		}
 	}
 	if (item instanceof $ArmorItem) {

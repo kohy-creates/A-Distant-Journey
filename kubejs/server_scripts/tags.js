@@ -106,11 +106,11 @@ ServerEvents.tags('item', event => {
 	// ])
 
 	event.add('adj:alloy_forge', [
-		'adamantite_forge_casing_forge_controller',
-		'cracked_deepslate_bricks_forge_controller',
-		'cracked_stone_bricks_forge_controller',
-		'ender_forge_casing_forge_controller',
-		'nether_bricks_forge_controller',
+		'alloy_forgery:adamantite_forge_casing_forge_controller',
+		'alloy_forgery:cracked_deepslate_bricks_forge_controller',
+		'alloy_forgery:cracked_stone_bricks_forge_controller',
+		'alloy_forgery:ender_forge_casing_forge_controller',
+		'alloy_forgery:nether_bricks_forge_controller',
 	])
 
 	event.add('adj:alloy_forge_casing', [
@@ -178,66 +178,28 @@ ServerEvents.tags('block', event => {
 	])
 
 	event.add('adj:alloy_forge', [
-		'kubejs:hellforge',
-		'kubejs:stone_brick_forge',
-		'kubejs:deepslate_brick_forge',
-		'kubejs:adamantite_forge',
-		'kubejs:ender_forge'
+		'alloy_forgery:cracked_stone_bricks_forge_controller',
+		'alloy_forgery:cracked_deepslate_bricks_forge_controller',
+		'alloy_forgery:nether_bricks_forge_controller',
+		'alloy_forgery:adamantite_forge_casing_forge_controller',
+		'alloy_forgery:ender_forge_casing_forge_controller'
 	])
 
 	event.add('adj:alloy_forge_casing', [
-		/kubejs\:.*casing/
+		/adj\:.*casing/
 	])
 
 	event.add('minecraft:needs_iron_tool', [
 		/deepslate/
 	])
+
+	event.remove('minecraft:mineable/axe', [
+		/grass/,
+		/fern/
+	])
 })
 
 ServerEvents.tags('entity_type', event => {
-
-	event.add('adj:size_variation_mobs', [
-		'skeleton',
-		'wither_skeleton',
-		'stray',
-		'zombie',
-		'drowned',
-		'husk',
-		'enderman',
-		'creeper',
-		'skeleton',
-		'corpse_fish',
-		'born_in_chaos_v1:decaying_zombie',
-		'born_in_chaos_v1:decaying_zombie_not_despawn',
-		'born_in_chaos_v1:decreipt_skeleton',
-		'born_in_chaos_v1:door_knight',
-		'born_in_chaos_v1:door_knight_not_despawn',
-		'born_in_chaos_v1:dead_hound',
-		'born_in_chaos_v1:dead_hound_not_despawn',
-		// 'born_in_chaos_v1:phantom_creeper',
-		// 'born_in_chaos_v1:phantom_creeper_copy',
-		'born_in_chaos_v1:restless_spirit',
-		'born_in_chaos_v1:skeleton_demoman',
-		'born_in_chaos_v1:skeleton_thrasher',
-		'born_in_chaos_v1:skeleton_thrasher_not_despawn',
-		'born_in_chaos_v1:zombie_bruiser',
-		'born_in_chaos_v1:zombie_fisherman',
-		'born_in_chaos_v1:zombie_lumberjack',
-		'#minecraft:raiders'
-	]);
-	event.remove('adj:size_variation_mobs', [
-		'born_in_chaos_v1:missionary_raider'
-	]);
-
-	event.add('adj:fish', [
-		'#tide:freshwater_fish',
-		'#tide:saltwater_fish',
-		'naturalist:bass',
-		'upgrade_aquatic:perch',
-		'upgrade_aquatic:pike',
-		'upgrade_aquatic:nautilus',
-		'upgrade_aquatic:box_jellyfish'
-	])
 })
 
 ServerEvents.tags('damage_type', event => {

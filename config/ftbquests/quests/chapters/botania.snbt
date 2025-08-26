@@ -352,8 +352,8 @@
 				}
 			]
 			title: "Manaforged"
-			x: 6.5d
-			y: 0.5d
+			x: 6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
@@ -667,7 +667,7 @@
 			]
 			title: "Terraforged"
 			x: 6.0d
-			y: 4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["356CC1FA4E52AD00"]

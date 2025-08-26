@@ -44,7 +44,7 @@
 	MIN_DAMAGE_TAKEN = 1.0
 	#How many damage points per 1 durability lost on block
 	#Range: 1.0 ~ 100.0
-	ARMOR_DURABILITY_DAMAGE_FACTOR = 20.0
+	ARMOR_DURABILITY_DAMAGE_FACTOR = 30.0
 	#How many armor points for damage to get reduced by 1 (for entities)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	ARMOR_POINT_REDUCTION_FACTOR_ENTITY = 2.0

@@ -7,6 +7,29 @@
 	id: "2B34DB1EEA89290E"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		description: [
+			"There is a legend of Ice Mazes in the Frozen Ocean biome. They were made through the strong influence of arcane magic on that land. Said dark magic started twisting the local fauna, turning them into abominable beings adapted to the freezing waters, hungry for blood."
+			""
+			"{@pagebreak}"
+			""
+			"One day, captain Cornelia wanted to prove that the Mazes are just a legend, and are in fact not real. She sailed off into the frozen waters with her, never to be seen again."
+			""
+			"Rumors say that in the colder parts of the oceans you can hear the crew's cries for help, as the Maze's magic slowly twists them and tears them apart. Cornelia on the other could never  be heard screaming by other sailors. She is presumed to be dead, but nothing is certain for the fates of both her and her ship."
+		]
+		icon: "aquamirae:rune_of_the_storm"
+		icon_scale: 0.75d
+		id: "1CAFBAE42B6F54CD"
+		shape: "diamond"
+		size: 2.0d
+		subtitle: "Read about the legend of the Ice Mazes"
+		tasks: [{
+			id: "2635E9DBD63BFAF1"
+			title: "Click to complete"
+			type: "checkmark"
+		}]
+		x: -1.0d
+		y: -1.5d
+	}]
 	title: "Beneath The Ice"
 }

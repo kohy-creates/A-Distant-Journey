@@ -487,7 +487,7 @@
 			#Range: 0.0 ~ 1.0
 			Normal = 0.1
 			#Range: 0.0 ~ 1.0
-			Hard = 0.04
+			Hard = 0.0
 
 	#Makes mobs ride other mobs
 	[Mobs.Riding]
@@ -514,9 +514,9 @@
 			#Range: 0.0 ~ 1.0
 			"Easy/Peaceful" = 0.25
 			#Range: 0.0 ~ 1.0
-			Normal = 0.25
+			Normal = 0.1
 			#Range: 0.0 ~ 1.0
-			Hard = 0.35
+			Hard = 0.25
 
 	#Mobs can mine blocks to reach the target. Uses offhand item to mine. Only mobs in the entity type tag enhancedai:can_be_miner can spawn with the ability to mine and blocks in the tag enhancedai:miner_block_blacklist cannot be mined.
 	[Mobs."Miner mobs"]
@@ -533,7 +533,7 @@
 		"Equip stone pick" = true
 		#Mobs can mine from the bottom of the world to this Y level.
 		#Range: -512 ~ 1024
-		"Max y" = 320
+		"Max y" = 64
 		#The maximum distance from the target at which the Mobs can mine. Set to 0 to always mine.
 		#Range: 0 ~ 128
 		"Max distance" = 0
@@ -576,7 +576,7 @@
 	[Mobs."Biting mobs"]
 		#The damage dealt to the attacker when bit
 		#Range: 0.0 ~ 1.7976931348623157E308
-		Damage = 3.0
+		Damage = 7.0
 
 		#Chance for a Mob to bite the attacker
 		[Mobs."Biting mobs".Chance]
@@ -585,7 +585,7 @@
 			#Range: 0.0 ~ 1.0
 			Normal = 0.2
 			#Range: 0.0 ~ 1.0
-			Hard = 0.3
+			Hard = 0.5
 
 	#Mobs can flee or attack Wardens. Use the entity type tag enhancedai:ignore_warden_interaction to blacklist mobs.
 	[Mobs."Warden interactions"]

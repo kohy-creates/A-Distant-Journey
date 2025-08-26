@@ -11,5 +11,12 @@
 	"cataclysm:abyssal_burn": 4.0,
 	"minecraft:starve": 10.0,
 	"minecraft:drown": 15.0,
-	"minecraft:in_wall": 10.0
+	"minecraft:in_wall": 10.0,
+	"cataclysm:deathlaser": 6.0,
+	"mutantmonsters:player_seismic_wave": 4.0,
+	"minecraft:arrow": 1.0,
+	"mythicmetals:star_platinum_arrow": 0.66,
+	"alexscaves:dark_arrow": 7.0,
+	"alexscaves:desolate_dagger": 3.0,
+	"minecraft:in_fire": 7.0
 }

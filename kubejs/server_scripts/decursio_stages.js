@@ -4,7 +4,10 @@ const STAGE_TO_SET = 'next_stage'
 ServerEvents.tick(event => {
 	const server = event.getServer();
 	const persistentData = server.persistentData;
-	if (!persistentData.chapters.get(CURRENT_STAGE)) {
+	if (!persistentData.chapters) {
+		persistentData.chapters = {};
+	}
+	if (!persistentData.chapters.current_stage) {
 		persistentData.chapters.putString(CURRENT_STAGE, 'chapter_0')
 	}
 

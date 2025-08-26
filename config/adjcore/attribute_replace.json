@@ -9,6 +9,7 @@
 		"forge:entity_reach;1": "remove",
 		"forge:entity_reach;2": "remove",
 		"rediscovered:fire_resistance;1": "remove",
+		"rediscovered:explosion_resistance;1": "remove",
 		"galosphere:illager_resistance;0": "remove"
 	},
 	"items": {

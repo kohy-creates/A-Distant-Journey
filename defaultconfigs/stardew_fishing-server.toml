@@ -26,7 +26,7 @@ treasureChestChance = 0.2
 #Range: 0.0 ~ 1.0
 goldenChestChance = 0.1
 #Whether it be possible to attach bobber items by hovering over a fishing rod in an inventory and right clicking.
-inventoryBobberEquipping = true
+inventoryBobberEquipping = false
 #Whether legendary fish will have a strobe effect when moving in the minigame.
 legendaryFishFlashing = true
 #The chance that any fish that bites is a legendary fish.

@@ -375,6 +375,9 @@
 		"confluence:gps",
 		"confluence:goblin_tech",
 		"confluence:life_form_analyzer",
+		"confluence:shield_of_cthulhu",
+		"confluence:tabi",
+		"confluence:master_ninja_gear",
 		
 		"hammerlib:gears/wooden",
 		"hammerlib:gears/stone",
@@ -449,7 +452,35 @@
 		// "enigmaticlegacy:etherium_core",
 		// "enigmaticlegacy:ender_ring",
 
-		"cataclysm:ignitium_elytra_chestplate"
+		"cataclysm:ignitium_elytra_chestplate",
+
+		"alexsmobs:shark_tooth_arrow",
+
+		"too_many_bows:ancient_sage_bow",
+		"too_many_bows:dark_bow",
+		"too_many_bows:arc_heavens",
+		"too_many_bows:dragon_breath",
+		"too_many_bows:solar_flare",
+		"too_many_bows:shulkers_blast",
+		"too_many_bows:emerald_sage_bow",
+		"too_many_bows:ironclad_bow",
+		"too_many_bows:hunter_bow",
+		"too_many_bows:burnt_relic",
+		"too_many_bows:cyroheart_bow",
+		"too_many_bows:sentinels_wrath",
+		"too_many_bows:astral_bound",
+		"too_many_bows:spectral_whisper",
+		"too_many_bows:auroras_grace",
+		"too_many_bows:dusk_reaper",
+		"too_many_bows:verdant_vigor",
+		"too_many_bows:ethereal_hunter",
+		"too_many_bows:crimson_nexus",
+		"too_many_bows:radiance",
+		"too_many_bows:tidal_bow",
+		"too_many_bows:necro_flame_bow",
+		"too_many_bows:scatter_bow",
+		"too_many_bows:wind_bow",
+		"too_many_bows:torchbearer",
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
 	

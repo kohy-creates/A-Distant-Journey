@@ -18,7 +18,7 @@
 	crystalline_knife = true
 	draco_arcanus_knife = true
 	electrum_knife = true
-	elementium_knife = true
+	elementium_knife = false
 	emerald_knife = false
 	enderite_knife = true
 	experience_knife = true
@@ -63,7 +63,7 @@
 	steel_knife = true
 	steeleaf_knife = true
 	stratus_knife = true
-	terra_knife = true
+	terra_knife = false
 	thyrium_knife = true
 	tin_knife = true
 	utherium_knife = true

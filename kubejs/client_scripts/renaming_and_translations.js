@@ -104,7 +104,8 @@ ClientEvents.lang('en_us', event => {
 		'quark:flamerang': 'Netherite Pickarang',
 		'artifacts:everlasting_beef': 'Eternal Beef',
 		'tiered:armorers_hammer': 'Reforging Hammer',
-		'mythicmetals:hallowed_ingot': 'Hallowed Alloy Ingot'
+		'mythicmetals:hallowed_ingot': 'Hallowed Alloy Ingot',
+		'confluence:cobalt_shield': 'Heavy Steel Shield'
 	}
 
 	for (const [key, value] of Object.entries(extraTranslations)) {

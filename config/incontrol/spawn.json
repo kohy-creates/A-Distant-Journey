@@ -14,23 +14,23 @@
 		"result": "allow"
 	},
 	{
-		"mob": [
-			"born_in_chaos_v1:nightmare_stalker"
-		],
-		"result": "deny"
-	},
-	{
-		"mob": [
-			"born_in_chaos_v1:missioner"
-		],
-		"result": "deny"
-	},
-	{
 		"minheight": 60,
 		"mob": [
 			"minecraft:creeper",
 			"mutantmonsters:mutant_creeper",
 			"born_in_chaos_v1:phantom_creeper"
+		],
+		"result": "deny"
+	},
+	{
+		"mob": [
+			"born_in_chaos_v1:missioner",
+			"born_in_chaos_v1:lifestealer",
+			"born_in_chaos_v1:nightmare_stalker",
+			"mutantmonsters:mutant_creeper",
+			"mutantmonsters:mutant_zombie",
+			"mutantmonsters:mutant_skeleton",
+			"mutantmonsters:mutant_enderman"
 		],
 		"result": "deny"
 	}

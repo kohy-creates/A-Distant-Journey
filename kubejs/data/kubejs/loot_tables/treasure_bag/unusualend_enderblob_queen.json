@@ -1,1 +1,19 @@
-{}
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": {
+				"min": 2,
+				"max": 3
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "unusualend:stabilised_void",
+					"quality": 4,
+					"functions": []
+				}
+			]
+		}
+	]
+}

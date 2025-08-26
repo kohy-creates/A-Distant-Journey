@@ -14,7 +14,10 @@
 	"minecraft:mob_projectile": {
 		"iframes": 0,
 		"overrides": {
-			"minecraft:player": 8
+			"minecraft:player": 10
 		}
+	},
+	"cataclysm:deathlaser": {
+		"iframs": 8
 	}
 }

@@ -17,6 +17,7 @@ global.bonusOverrides = {
 global.setBonusMap = {
 	'minecraft:iron': {
 		description: [
+			'2 extra defense',
 			'Incoming damage reduced by 5%'
 		],
 		effects: [
@@ -25,6 +26,14 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.05,
+					operation: 0
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'generic.armor',
+					value: 2,
 					operation: 0
 				}
 			}
@@ -151,32 +160,57 @@ global.setBonusMap = {
 	},
 	'minecraft:leather': {
 		description: [
-			'25% increased roll recharge speed',
-			'Increased roll distance'
+			'Press \'R\' to perform a rapid dash',
+			'Well-timed dash can dodge damage'
 		],
 		effects: [
 			{
 				type: 'attribute',
 				value: {
-					id: 'combatroll:recharge',
-					value: 0.25,
-					operation: 1
+					id: 'combatroll:count',
+					value: 1,
+					operation: 0
+				}
+			},
+			// {
+			// 	type: 'attribute',
+			// 	value: {
+			// 		id: 'combatroll:distance',
+			// 		value: 1,
+			// 		operation: 0
+			// 	}
+			// }
+		]
+	},
+	'galosphere:sterling': {
+		description: [
+			'Press \'R\' to perform a rapid dash',
+			'Grants 2 max dash charges',
+			'2 extra defense'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'combatroll:count',
+					value: 2,
+					operation: 0
 				}
 			},
 			{
 				type: 'attribute',
 				value: {
-					id: 'combatroll:distance',
-					value: 0.5,
-					operation: 1
+					id: 'generic.armor',
+					value: 2,
+					operation: 0
 				}
 			}
 		]
 	},
 	'mythicmetals:osmium_chainmail': {
 		description: [
-			'Reduces incoming projectile damage by 10%',
-			'Immunity to knockback'
+			'Reduces incoming damage by 10%',
+			'Reduces incoming projectile damage by further 10%'
 		],
 		effects: [
 			{
@@ -190,11 +224,11 @@ global.setBonusMap = {
 			{
 				type: 'attribute',
 				value: {
-					id: 'minecraft:generic.knockback_resistance',
-					value: 1,
+					id: 'adjcore:generic.damage_reduction',
+					value: 0.1,
 					operation: 0
 				}
-			}
+			},
 		]
 	},
 	'minecraft:chainmail': {
@@ -214,24 +248,27 @@ global.setBonusMap = {
 	},
 	'rediscovered:studded': {
 		description: [
-			'25% increased roll recharge speed',
-			'Increased roll distance'
+			'Reduces incoming projectile damage by extra 10%',
+			'Press \'R\' to perform a rapid dash',
+			'Well-timed dash can dodge damage',
+			'Increased dash distance compared to that',
+			'of the Leather armor set bonus'
 		],
 		effects: [
 			{
 				type: 'attribute',
 				value: {
-					id: 'combatroll:recharge',
-					value: 0.25,
-					operation: 1
+					id: 'combatroll:count',
+					value: 1,
+					operation: 0
 				}
 			},
 			{
 				type: 'attribute',
 				value: {
 					id: 'combatroll:distance',
-					value: 0.5,
-					operation: 1
+					value: 1.5,
+					operation: 0
 				}
 			},
 			{
@@ -246,7 +283,8 @@ global.setBonusMap = {
 	},
 	'minecraft:golden': {
 		description: [
-			'Gained §aExperience §rincreased by §a30%'
+			'Gained Experience increased by 30%',
+			'2 extra defense'
 		],
 		effects: [
 			{
@@ -254,6 +292,14 @@ global.setBonusMap = {
 				value: {
 					id: 'attributeslib:experience_gained',
 					value: 0.3,
+					operation: 0
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'generic.armor',
+					value: 2,
 					operation: 0
 				}
 			}
@@ -280,8 +326,8 @@ global.setBonusMap = {
 			'Ask yourself if this bonus made all ',
 			'the effort to craft it worth it',
 			'The answer is probably no',
-			'Just so that you\'re not left with nothing,',
-			'I\'ll grant you 1 extra defense'
+			'Just so that you are not left with nothing,',
+			'I will grant you 1 extra defense'
 		],
 		effects: [
 			{
@@ -289,6 +335,21 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.armor',
 					value: 1,
+					operation: 0
+				}
+			}
+		]
+	},
+	'rediscovered:plate': {
+		description: [
+			'5 defense',
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'generic.armor',
+					value: 5,
 					operation: 0
 				}
 			}

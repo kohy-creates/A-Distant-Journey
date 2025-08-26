@@ -27,7 +27,6 @@
 		"file/reinforced_leather19.zip",
 		"file/Pixelated_v1.3.4_EnhancedVisuals(nox_cgt).zip",
 		"file/Medieval_Style_Lootr.zip",
-		"file/Copper+Color+Fix+3.1.zip",
 		"file/Better Create Palettes 1.3 1.20.1.zip",
 		"continuity:glass_pane_culling_fix",
 		"continuity:default",
@@ -60,7 +59,10 @@
 		"file/Fancy Crops v1.2.zip",
 		"file/Banner Pattern Clarity v1.6.zip",
 		"file/boss-refreshed-v2-1.19-1.21.zip",
-		"file/kohara's Compat"
+		"file/Tainted's Accurate Wither Storm Models v3.0.2.2.zip",
+		"file/\u00A75VN4's \u00A7l\u00A72FWS+RWS Detailed.zip",
+		"file/kohara's Compat",
+		"file/ADJ Music"
 	],
 	"pack_overrides": {
 		"default": [
@@ -85,7 +87,6 @@
 			"file/reinforced_leather19.zip",
 			"file/Pixelated_v1.3.4_EnhancedVisuals(nox_cgt).zip",
 			"file/Medieval_Style_Lootr.zip",
-			"file/Copper+Color+Fix+3.1.zip",
 			"file/Better Create Palettes 1.3 1.20.1.zip",
 			"continuity:glass_pane_culling_fix",
 			"continuity:default",
@@ -118,7 +119,8 @@
 			"file/Fancy Crops v1.2.zip",
 			"file/Banner Pattern Clarity v1.6.zip",
 			"file/boss-refreshed-v2-1.19-1.21.zip",
-			"file/kohara's Compat"
+			"file/kohara's Compat",
+			"file/ADJ Music"
 		],
 		"hidden": [
 			"botaniacombat:botaniacombatlang",
@@ -148,7 +150,7 @@
 		},
 		"$$default": {
 			"hidden": false,
-			"required": true
+			"required": false
 		},
 		"$$hidden": {
 			"hidden": true
