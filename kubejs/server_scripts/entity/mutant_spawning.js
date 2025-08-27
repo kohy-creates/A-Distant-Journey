@@ -28,7 +28,7 @@ EntityEvents.checkSpawn(event => {
 		let server = event.getServer();
 		let chapter = parseInt(String(server.persistentData.chapters.current_stage).replace('chapter_', ''));
 		if (chapter >= 2) {
-			if ((server.isHardcore()) ? chance(1.5) : chance(50)) {
+			if ((server.isHardcore()) ? chance(1.5) : chance(1)) {
 				let level = event.getLevel();
 				let pos = entity.blockPosition(); // BlockPos
 

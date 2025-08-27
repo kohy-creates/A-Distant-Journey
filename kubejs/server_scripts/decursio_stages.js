@@ -20,7 +20,7 @@ ServerEvents.tick(event => {
 			server.runCommandSilent(
 				'/gamestate ' + stageName
 			);
-			persistentData.put(stageName, true);
+			persistentData.chapters.put(stageName, true);
 		}
 		else console.log('Attempted to reapply a stage that was already present!')
 		persistentData.chapters.remove(STAGE_TO_SET);
@@ -209,6 +209,12 @@ ServerEvents.tags('item', resctrictions => {
 
 ItemEvents.rightClicked('ender_eye', event => {
 	if (!event.getPlayer().stages.has('chapter_4')) {
+		event.cancel();
+	}
+})
+
+BlockEvents.rightClicked('command_block', event => {
+	if (event.getItem().id == 'minecraft:wither_skeleton_skull' && !event.getPlayer().stages.has('chapter_5')) {
 		event.cancel();
 	}
 })

@@ -2,8 +2,8 @@
 "Enable more inertial blue wither skull" = true
 "Enable shoot more blue wither skull" = true
 "Enable spin and white summon" = true
-"Enable explode by half health" = true
-"Enable explode by die" = true
+"Enable explode by half health" = false
+"Enable explode by die" = false
 "Enable charge attack" = true
 "Enable maintain weakened state" = true
 

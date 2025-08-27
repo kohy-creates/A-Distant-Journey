@@ -249,7 +249,7 @@
 		when_using_item = "ALWAYS"
 		#Whether to turn the player when attacking. This config option only applies when camera is decoupled.
 		#Allowed Values: ALWAYS, NEVER, REQUIRES_TARGET
-		when_attacking = "REQUIRES_TARGET"
+		when_attacking = "ALWAYS"
 		#Whether to turn the player when interacting with blocks. This config option only applies when camera is decoupled.
 		#Allowed Values: ALWAYS, NEVER, REQUIRES_TARGET
 		when_interacting = "ALWAYS"

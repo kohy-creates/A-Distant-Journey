@@ -33,7 +33,7 @@ StartupEvents.init(event => {
 					const velocity = Math.min(arrowEntity.getDeltaMovement().length(), 0.4) / 0.4;
 
 					damage = (global.monsterRangedDamageBase[shooter.type] || 15) * (velocity);
-					const chapter = (shooter.getServer().persistentData.chapters.current_chapter).toString().replace('chapter_', '')
+					const chapter = (shooter.getServer().persistentData.chapters.current_stage).toString().replace('chapter_', '')
 					damage *= global.monsterRangedDamageMul[chapter];
 				}
 				damage = Math.ceil(damage)

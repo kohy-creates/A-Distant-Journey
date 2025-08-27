@@ -186,6 +186,7 @@ ItemEvents.modification(event => {
 		['endersdelight:uncanny_cookies', [4, 0.5]],
 		['endersdelight:chorus_stew', [6, 0.5]],
 		['endersdelight:endermite_stew', [6, 0.5]],
+		['dustydecorations:cooked_bratwurst', [8, 0.6]]
 
 	];
 

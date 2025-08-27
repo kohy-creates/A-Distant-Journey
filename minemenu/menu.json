@@ -36,6 +36,18 @@
         }
       }
     },
+    "4": {
+      "title": "Title Select Menu",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:name_tag\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.titles.openTitleSelection",
+          "toggle": false
+        }
+      }
+    },
     "5": {
       "title": "Shaders",
       "icon": {

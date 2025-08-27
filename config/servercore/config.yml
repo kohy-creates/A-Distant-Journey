@@ -110,7 +110,7 @@ mob-spawning:
       spawn-interval: 1
 
     - category: 'CREATURE'
-      mobcap: 10
+      mobcap: 15
       spawn-interval: 400
 
     - category: 'AMBIENT'
@@ -118,11 +118,11 @@ mob-spawning:
       spawn-interval: 1
 
     - category: 'AXOLOTLS'
-      mobcap: 5
+      mobcap: 8
       spawn-interval: 1
 
     - category: 'UNDERGROUND_WATER_CREATURE'
-      mobcap: 5
+      mobcap: 8
       spawn-interval: 1
 
     - category: 'WATER_CREATURE'

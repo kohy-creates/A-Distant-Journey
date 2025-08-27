@@ -6,7 +6,7 @@ reduceDecreasedChance = 0.0
 disableParticles = false
 
 [byTypeReductions]
-"minecraft:damage_indicator" = 0.5
+"minecraft:damage_indicator" = 0.0
 "buzzier_bees:buttercup_bloom" = 0.5
 "subtle_effects:sculk_dust" = 0.24509803921568626
 "subtle_effects:firefly_emitter" = 0.0

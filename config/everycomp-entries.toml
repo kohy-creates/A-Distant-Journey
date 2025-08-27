@@ -35,6 +35,7 @@
 
 		[types.wood_type.netherexp]
 			claret = true
+			smokestalk = true
 
 		[types.wood_type.mynethersdelight]
 			powdery = true
@@ -94,21 +95,6 @@
 		[types.leaves_type.ecologics]
 			coconut = true
 			walnut = true
-
-		[types.leaves_type.fruitsdelight]
-			pear = true
-			hawberry = true
-			lychee = true
-			mango = true
-			persimmon = true
-			peach = true
-			orange = true
-			apple = true
-			mangosteen = true
-			bayberry = true
-			kiwi = true
-			fig = true
-			durian = true
 
 		[types.leaves_type.alexscaves]
 			ancient = true

@@ -1,10 +1,10 @@
 let hardcore;
 ServerEvents.loaded(event => {
 	hardcore = event.getServer().isHardcore()
-	server.gameRules.set('naturalRegeneration', false);
+	event.getServer().gameRules.set('naturalRegeneration', false);
 });
 
-const maxFireTicks = 200;
+const maxFireTicks = 300;
 
 EntityEvents.hurt(event => {
 	const entity = event.getEntity();

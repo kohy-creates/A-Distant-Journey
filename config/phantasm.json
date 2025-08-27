@@ -56,7 +56,7 @@
   // CATEGORY: GAMEPLAY
   "gameplay": {
     // Should End portals teleport to the outer islands instead of the Dragon's
-    "outer_end_in_gameloop": true,
+    "outer_end_in_gameloop": false,
 
     "dragon": {
       // Should the Dragon's Fireballs create a firey explosion on impact
@@ -78,12 +78,12 @@
     // Advancement needed to enable elytra boosting. Leave blank "" to disable the need for one
     "elytra_boost_advancement": "",
     // Crystalline tools boost ratio
-    "crystal_xp_boost": 3,
+    "crystal_xp_boost": 2,
 
     // Should eating a Chorus Fruit Salad teleport in/out of the End
     "chorus_fruit_salad_teleportation": true,
     // Max Chorus Fruit Salad stack size
-    "chorus_fruit_salad_stack_size": 1,
+    "chorus_fruit_salad_stack_size": 16,
 
     // Max uses for Shattered Pendants
     "shattered_pendant_durability": 6,

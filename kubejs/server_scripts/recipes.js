@@ -27,7 +27,9 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:durasteel_engine',
 		'witherstormmod:super_beacon',
 		'witherstormmod:super_support_beacon',
-		'map_atlases:atlas'
+		'map_atlases:atlas',
+		'dustydecorations:rope',
+		'supplementaries:rope'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -858,6 +860,11 @@ ServerEvents.recipes((event) => {
 
 	// Unify ropes
 	event.replaceInput(
+		{ input: 'dustydecorations:rope' },
+		'dustydecorations:rope',
+		'supplementaries:rope'
+	)
+	event.replaceInput(
 		{ output: 'farmersdelight:rope' },
 		'farmersdelight:rope',
 		'supplementaries:rope'
@@ -877,6 +884,18 @@ ServerEvents.recipes((event) => {
 			R: 'supplementaries:rope'
 		}
 	)
+	event.shaped(
+		Item.of('supplementaries:rope', 16),
+		[
+			'F',
+			'F',
+			'F'
+		],
+		{
+			F: 'supplementaries:flax'
+		}
+	)
+
 	// Unify Silver
 	event.remove({ id: 'alloy_forgery:compat/silver_ingot_from_raw_ores' })
 	event.custom({
@@ -1791,6 +1810,7 @@ ServerEvents.recipes((event) => {
 		'born_in_chaos_v1:smoked_monster_flesh': 15,
 		'born_in_chaos_v1:smoked_fish': 10,
 		'alexscaves:cooked_dinosaur_chop': 25,
+		'dustydecorations:cooked_bratwurst': 12
 	}
 	function overrideCooking(type, recipe) {
 		const output = recipe.getOriginalRecipeResult();

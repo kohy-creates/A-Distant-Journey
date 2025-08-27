@@ -7,7 +7,7 @@ rareBlocks = ["minecraft:ancient_debris", "minecraft:suspicious_gravel", "minecr
 #The order of the entities in the list is the order of their rarity
 rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay", "minecraft:axolotl", "minecraft:evoker", "minecraft:piglin_brute", "minecraft:vindicator", "minecraft:enderman"]
 #Range: 6 ~ 100
-"Max Accessory Amount" = 6
+"Max Accessory Amount" = 7
 
 ["Random Attack Damage"]
 	enable = false
@@ -344,7 +344,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes.Shackle]
 		#Range: 0 ~ 1024
-		armor = 6
+		armor = 3
 
 	[Attributes."Shark Tooth Necklace"]
 		#Range: 0 ~ 10000

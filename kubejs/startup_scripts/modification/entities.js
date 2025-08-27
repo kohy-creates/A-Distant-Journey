@@ -78,8 +78,8 @@ global.hpModifications = {
 	"minecraft:wandering_trader": [200, 15, 0],
 	"minecraft:warden": [1500, 1000, 0],
 	"minecraft:witch": [75, 10, 0],
-	"minecraft:wither": [1800, 10, 6],
-	"minecraft:wither_skeleton": [150, 10, 4],
+	"minecraft:wither": [1000, 10, 6],
+	"minecraft:wither_skeleton": [110, 6, 4],
 	"minecraft:wolf": [40, 20, 0],
 	"minecraft:zoglin": [200, 30, 0],
 	"minecraft:zombie": [60, 15, 2],
@@ -110,17 +110,6 @@ global.hpModifications = {
 	"mutantmonsters:endersoul_clone": [1, 1, 0],
 	"phantasm:crystie": [60, 10, 0],
 	"phantasm:behemoth": [300, 75, 0],
-	"illagerinvasion:provoker": [120, 10, 0],
-	"illagerinvasion:invoker": [700, 40, 0],
-	"illagerinvasion:necromancer": [160, 10, 0],
-	"illagerinvasion:basher": [160, 15, 0],
-	"illagerinvasion:sorcerer": [160, 10, 0],
-	"illagerinvasion:archivist": [120, 10, 0],
-	"illagerinvasion:inquisitor": [200, 50, 0],
-	"illagerinvasion:marauder": [120, 10, 0],
-	"illagerinvasion:alchemist": [120, 10, 0],
-	"illagerinvasion:firecaller": [160, 10, 0],
-	"illagerinvasion:surrendered": [70, 25, 0],
 	"galosphere:sparkle": [50, 15, 0],
 	"galosphere:spectre": [20, 10, 0],
 	"galosphere:specterpillar": [10, 15, 0],
@@ -161,7 +150,7 @@ global.hpModifications = {
 	"born_in_chaos_v1:dread_hound": [50, 17, 0],
 	"born_in_chaos_v1:dread_hound_not_despawn": [50, 17, 0],
 	"born_in_chaos_v1:fallen_chaos_knight": [90, 19, 12],
-	"born_in_chaos_v1:scarlet_persecutor": [175, 25, 0],
+	"born_in_chaos_v1:scarlet_persecutor": [120, 18, 0],
 	"born_in_chaos_v1:spirit_guide": [120, 15, 3],
 	"born_in_chaos_v1:spirit_guide_assistant": [40, 10, 3],
 	"born_in_chaos_v1:zombie_clown": [110, 15, 3],
@@ -177,8 +166,8 @@ global.hpModifications = {
 	"born_in_chaos_v1:dire_hound_leader": [500, 50, 0],
 	"born_in_chaos_v1:maggot": [5, 1, 0],
 	"born_in_chaos_v1:corpse_fly": [25, 8, 0],
-	"born_in_chaos_v1:bloody_gadfly": [50, 16, 1],
-	"born_in_chaos_v1:corpse_fish": [60, 12, 0],
+	"born_in_chaos_v1:bloody_gadfly": [40, 16, 1],
+	"born_in_chaos_v1:corpse_fish": [30, 12, 0],
 	"born_in_chaos_v1:zombie_fisherman": [125, 20, 4],
 	"born_in_chaos_v1:swarmer": [105, 10, 4],
 	"born_in_chaos_v1:thornshell_crab": [90, 20, 4],
@@ -203,7 +192,7 @@ global.hpModifications = {
 	"born_in_chaos_v1:lifestealer": [250, 21, 10],
 	"born_in_chaos_v1:lifestealer_true_form": [250, 21, 7],
 	"born_in_chaos_v1:baby_spider": [30, 9, 0],
-	"born_in_chaos_v1:mother_spider": [250, 27, 0],
+	"born_in_chaos_v1:mother_spider": [200, 27	, 0],
 	"born_in_chaos_v1:baby_spider_controlled": [30, 9, 0],
 	"born_in_chaos_v1:nightmare_stalker": [140, 28, 6],
 	"born_in_chaos_v1:pumpkin_dunce": [100, 15, 0],
@@ -645,7 +634,7 @@ global.hpModifications = {
 
 global.mobs = []
 
-global.WitherStormFlyingSpeed = 0.004;
+global.WitherStormFlyingSpeed = 0.005;
 
 EntityJSEvents.attributes(event => {
 
@@ -668,13 +657,17 @@ EntityJSEvents.attributes(event => {
 	event.modify('player', attributes => {
 		attributes.add('generic.max_health', 100);
 		attributes.add('generic.attack_damage', 3);
-		// attributes.add('stardew_fishing:bar_size', 44); // Doesn't work for some reason
 		attributes.add('combatroll:count', 0);
 	})
 
 	event.modify('witherstormmod:wither_storm', attributes => {
 		attributes.add('witherstormmod:slow_flying_speed', global.WitherStormFlyingSpeed);
 		attributes.add('witherstormmod:target_stationary_flying_speed', global.WitherStormFlyingSpeed);
+	})
+	
+	event.modify('minecraft:pig', attributes => {
+		attributes.add('generic.max_health', 50);
+		attributes.add('generic.armor', 0);
 	})
 })
 

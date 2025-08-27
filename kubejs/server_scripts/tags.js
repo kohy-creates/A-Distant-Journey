@@ -63,7 +63,7 @@ ServerEvents.tags('item', event => {
 		'aether_redux:subzero_crossbow',
 		'cataclysm:cursed_bow',
 		'alexscaves:dreadbow',
-		'@too_many_bows'
+		// '@too_many_bows'
 
 	])
 	// Melee

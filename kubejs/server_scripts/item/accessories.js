@@ -460,3 +460,24 @@ LootJS.modifiers(event => {
 			pool.addLoot(LootEntry.of('confluence:flashlight'))
 		})
 })
+
+ItemEvents.rightClicked('confluence:demon_heart', event => {
+	const player = event.getPlayer();
+	if (!player.persistentData.usedDemonHeart) {
+		player.persistentData.usedDemonHeart = true;
+		event.getLevel().playSound(player, player.blockPosition, 'heart_crystals:block.heart_crystal.use', 'players', 1, 1);
+		player["swing(net.minecraft.world.InteractionHand)"]("main_hand");
+		event.getItem().shrink(1);
+		player.server.runCommandSilent(`/curios add accessory ${player.username} 1`)
+	}
+	event.cancel()
+})
+
+PlayerEvents.loggedIn(event => {
+	const server = event.getServer();
+	const player = event.getPlayer();
+	if (server.hardcore && !player.persistentData.hardcoreInitialized) {
+		player.persistentData.hardcoreInitialized = true;
+		server.runCommandSilent(`/curios add accessory ${player.username} 1`)
+	}
+})

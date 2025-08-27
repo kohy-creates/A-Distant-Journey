@@ -10,24 +10,24 @@ global.bowDamage = {
 	'minecraft:crossbow': 15,
 	'additionaladditions:crossbow_with_spyglass': 15,
 	'cataclysm:cursed_bow': 12,
-	'too_many_bows:ancient_sage_bow': 15,
 	'aether:phoenix_bow': 27,
 	'aether_redux:subzero_crossbow': 38,
-	'too_many_bows:arcane_bow': 13,
-	'too_many_bows:frostbite': 21,
-	'too_many_bows:verdant_viper': 14,
-	'too_many_bows:demons_grasp': 21,
-	'too_many_bows:aethers_call': 31,
-	'too_many_bows:vitality_weaver': 40,
-	'too_many_bows:twin_shadows': 29,
-	'too_many_bows:webstring': 11,
-	'too_many_bows:flame_bow': 37,
+	// 'too_many_bows:ancient_sage_bow': 15,
+	// 'too_many_bows:arcane_bow': 13,
+	// 'too_many_bows:frostbite': 21,
+	// 'too_many_bows:verdant_viper': 14,
+	// 'too_many_bows:demons_grasp': 21,
+	// 'too_many_bows:aethers_call': 31,
+	// 'too_many_bows:vitality_weaver': 40,
+	// 'too_many_bows:twin_shadows': 29,
+	// 'too_many_bows:webstring': 11,
+	// 'too_many_bows:flame_bow': 37,
 
 }
 
 // Temporary solution. Whenever I overhaul all Bows I'll rewrite their logic too
 global.arrowInternalDamageOverride = {
-	'too_many_bows:vitality_arrow': 4
+	// 'too_many_bows:vitality_arrow': 4
 }
 
 /**
@@ -38,11 +38,11 @@ global.arrowDamage = {
 	'minecraft:arrow': 5,
 	'minecraft:tipped_arrow': 5,
 
-	'too_many_bows:frostbite_arrow': 0,
-	'too_many_bows:venom_arrow': 0,
-	'too_many_bows:vitality_arrow': 0,
-	'too_many_bows:webstring_arrow': 0,
-	'too_many_bows:flame_arrow': 0,
+	// 'too_many_bows:frostbite_arrow': 0,
+	// 'too_many_bows:venom_arrow': 0,
+	// 'too_many_bows:vitality_arrow': 0,
+	// 'too_many_bows:webstring_arrow': 0,
+	// 'too_many_bows:flame_arrow': 0,
 
 	'ars_nouveau:spell_arrow': 6,
 	'ars_nouveau:amplify_arrow': 6,
@@ -73,7 +73,7 @@ global.arrowPierce = {
 	'mythicmetals:runite_arrow': 1,
 	'mythicmetals:tipped_runite_arrow': 1,
 	
-	'too_many_bows:frostbite_arrow': 2,
+	// 'too_many_bows:frostbite_arrow': 2,
 
 	'tide:deep_aqua_arrow': 5
 }

@@ -1,0 +1,50 @@
+{
+	"eye.appear_choir": {
+		"sounds": [
+			{
+				"name": "adj:eye/appear_choir",
+				"stream": false
+			}
+		]
+	},
+	"eye.appear": {
+		"sounds": [
+			{
+				"name": "adj:eye/appear",
+				"stream": false
+			}
+		]
+	},
+	"eye.collect": {
+		"sounds": [
+			{
+				"name": "adj:eye/collect",
+				"stream": false
+			}
+		]
+	},
+	"eye.collect_bg": {
+		"sounds": [
+			{
+				"name": "adj:eye/collect_bg",
+				"stream": false
+			}
+		]
+	},
+	"eye.loop": {
+		"sounds": [
+			{
+				"name": "adj:eye/loop",
+				"stream": false
+			}
+		]
+	},
+	"eye.prepare_spawn": {
+		"sounds": [
+			{
+				"name": "adj:eye/prepare_spawn",
+				"stream": false
+			}
+		]
+	}
+}

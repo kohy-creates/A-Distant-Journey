@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
 	 * @type {InputItem_}
 	 */
 	const bowsToRemoveRecipes = [
-		'too_many_bows:ancient_sage_bow'
+		// 'too_many_bows:ancient_sage_bow'
 	]
 
 	bowsToRemoveRecipes.forEach(bow => {

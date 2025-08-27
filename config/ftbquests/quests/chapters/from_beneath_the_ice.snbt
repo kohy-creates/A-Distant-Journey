@@ -7,29 +7,98 @@
 	id: "2B34DB1EEA89290E"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		description: [
-			"There is a legend of Ice Mazes in the Frozen Ocean biome. They were made through the strong influence of arcane magic on that land. Said dark magic started twisting the local fauna, turning them into abominable beings adapted to the freezing waters, hungry for blood."
-			""
-			"{@pagebreak}"
-			""
-			"One day, captain Cornelia wanted to prove that the Mazes are just a legend, and are in fact not real. She sailed off into the frozen waters with her, never to be seen again."
-			""
-			"Rumors say that in the colder parts of the oceans you can hear the crew's cries for help, as the Maze's magic slowly twists them and tears them apart. Cornelia on the other could never  be heard screaming by other sailors. She is presumed to be dead, but nothing is certain for the fates of both her and her ship."
-		]
-		icon: "aquamirae:rune_of_the_storm"
-		icon_scale: 0.75d
-		id: "1CAFBAE42B6F54CD"
-		shape: "diamond"
-		size: 2.0d
-		subtitle: "Read about the legend of the Ice Mazes"
-		tasks: [{
-			id: "2635E9DBD63BFAF1"
-			title: "Click to complete"
-			type: "checkmark"
-		}]
-		x: -1.0d
-		y: -1.5d
-	}]
+	quests: [
+		{
+			description: [
+				"There is a legend of Ice Mazes in the Frozen Ocean biome. They were made through the strong influence of arcane magic on that land. Said dark magic started twisting the local fauna, turning them into abominable beings adapted to the freezing waters, hungry for blood."
+				""
+				"{@pagebreak}"
+				""
+				"One day, captain Cornelia wanted to prove that the Mazes are just a legend, and are in fact not real. She sailed off into the frozen waters with her, never to be seen again."
+				""
+				"Rumors say that in the colder parts of the oceans you can hear the crew's cries for help, as the Maze's magic slowly twists them and tears them apart. Cornelia on the other could never  be heard screaming by other sailors. She is presumed to be dead, but nothing is certain for the fates of both her and her ship."
+			]
+			icon: "aquamirae:rune_of_the_storm"
+			icon_scale: 0.75d
+			id: "1CAFBAE42B6F54CD"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Read about the legend of the Ice Mazes"
+			tasks: [{
+				id: "2635E9DBD63BFAF1"
+				title: "Click to complete"
+				type: "checkmark"
+			}]
+			title: "Beneath The Ice"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1CAFBAE42B6F54CD"]
+			icon: "minecraft:packed_ice"
+			id: "6A5092882CBFB0D2"
+			min_required_tasks: 1
+			subtitle: "Sail to the coldest regions of your world's oceans"
+			tasks: [
+				{
+					biome: "minecraft:frozen_ocean"
+					disable_toast: true
+					icon: "minecraft:packed_ice"
+					id: "68EA2A6573C92151"
+					title: "Find a Frozen Ocean"
+					type: "biome"
+				}
+				{
+					biome: "minecraft:deep_frozen_ocean"
+					disable_toast: true
+					icon: "minecraft:packed_ice"
+					id: "381E4112DADFC5EB"
+					secret: true
+					title: "Or a Deep Frozen Ocean"
+					type: "biome"
+				}
+			]
+			title: "To The Whatever Pole"
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6A5092882CBFB0D2"]
+			icon: "aquamirae:oxygelium"
+			id: "1A27ABCC4980970F"
+			subtitle: "Find the Ice Maze. So they were real this entire time...?"
+			tasks: [
+				{
+					disable_toast: true
+					icon: "aquamirae:oxygelium"
+					id: "7DA25D67929BC576"
+					structure: "aquamirae:ice_maze/common"
+					title: "Find the Ice Maze"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					icon: "aquamirae:oxygelium"
+					id: "566D7D8BED38005B"
+					secret: true
+					structure: "aquamirae:ice_maze/arch"
+					title: "It's actually 3 structures so I need to add all of them here"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					icon: "aquamirae:oxygelium"
+					id: "603F224D48D0E599"
+					secret: true
+					structure: "aquamirae:ice_maze/spiral"
+					title: "Yeah... That sure looks confusing, but don't worry about it"
+					type: "structure"
+				}
+			]
+			title: "The Legends Become Reality"
+			x: 2.0d
+			y: -3.0d
+		}
+	]
 	title: "Beneath The Ice"
 }

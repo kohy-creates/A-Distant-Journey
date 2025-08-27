@@ -460,9 +460,9 @@
 		#How far away can the mobs see the player. This overrides the vanilla value (16 for most mobs). Setting 'Max' to 0 will leave the follow range as vanilla. I recommend using mods like Mobs Properties Randomness to have more control over the attribute. Only mobs in the entity type tag `enhancedai:change_follow_range` will be affected by this override
 		[Mobs.Targeting."Follow range override"]
 			#Range: 0.0 ~ 128.0
-			Minimum = 24.0
+			Minimum = 16.0
 			#Range: 0.0 ~ 128.0
-			Maximum = 48.0
+			Maximum = 32.0
 
 		#How far away can the mobs see the player even through walls. Setting 'Max' to 0 will make mobs not able to see through walls. I recommend using mods like Mobs Properties Randomness to have more control over the attribute; the attribute name is 'enhancedai:generic.xray_follow_range'. Only mobs in the entity type tag `enhancedai:apply_xray` will be affected by this override.
 		[Mobs.Targeting."Xray range override"]
@@ -514,9 +514,9 @@
 			#Range: 0.0 ~ 1.0
 			"Easy/Peaceful" = 0.25
 			#Range: 0.0 ~ 1.0
-			Normal = 0.1
+			Normal = 0.0
 			#Range: 0.0 ~ 1.0
-			Hard = 0.25
+			Hard = 0.1
 
 	#Mobs can mine blocks to reach the target. Uses offhand item to mine. Only mobs in the entity type tag enhancedai:can_be_miner can spawn with the ability to mine and blocks in the tag enhancedai:miner_block_blacklist cannot be mined.
 	[Mobs."Miner mobs"]
@@ -629,10 +629,10 @@
 		#Chance for a mob in the entity type tag enhancedai:can_be_fisher to spawn with a Fishing Rod in the offhand.
 		#I recommend Mobs Properties Randomness to have more control over mobs equipment.
 		#Range: 0.0 ~ 1.0
-		"Equip fishing rod chance" = 0.07
+		"Equip fishing rod chance" = 0.06
 		#Chance for a fisher mob to steal an entity item in the hands instead of reeling the player.
 		#Range: 0.0 ~ 1.0
-		"Hook hands chance" = 0.4
+		"Hook hands chance" = 0.0
 		#The max distance mobs will use the fishing rod. Above this distance they will try to get closer.
 		#Range: > -2147483648
 		"Max distance" = 24
@@ -647,16 +647,16 @@
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			Normal = 30.0
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-			Hard = 20.0
+			Hard = 15.0
 
 		#How much will a mob wait before casting the bobber again. The cooldown is doubled if successfully reels in someone.
 		[Mobs."Fisher mobs".Cooldown]
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			"Easy/Peaceful" = 80.0
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-			Normal = 80.0
+			Normal = 200.0
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-			Hard = 60.0
+			Hard = 100.0
 
 [Illagers]
 	#Pillagers try to stay away from the target. Use the enhancedai:pillager_flee entity type tag to add/remove skeletons that are affected by this feature
