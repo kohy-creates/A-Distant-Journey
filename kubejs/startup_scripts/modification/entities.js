@@ -372,7 +372,7 @@ global.hpModifications = {
 	"aether:zephyr": [25, 15, 0],
 	"aether:mimic": [200, 15, 0],
 	"aether:sentry": [50, 10, 0],
-	"aether:slider": [2000, 15, 0],
+	"aether:slider": [900, 15, 10],
 	"aether:valkyrie": [250, 50, 0],
 	"aether:valkyrie_queen": [2500, 65, 0],
 	"aether:fire_minion": [200, 75, 0],
