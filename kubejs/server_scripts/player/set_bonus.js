@@ -1,27 +1,33 @@
 const $UUID = Java.loadClass('java.util.UUID');
+const $MobEffectInstance = Java.loadClass('net.minecraft.world.effect.MobEffectInstance');
 
 PlayerEvents.tick(event => {
 	const player = event.getPlayer();
 
 	const slots = ['head', 'chest', 'legs', 'feet'];
-	const slotSuffixes = {
-		head: ['_helmet', '_helm'],
-		chest: ['_chestplate', '_tunic'],
-		legs: ['_leggings', '_pants'],
-		feet: ['_boots']
-	};
 
 	const equipment = {};
 	const equippedTypes = [];
+	const equippedTiers = [];
 
 	for (const slot of slots) {
+		/** @type {Internal.ItemStack} */
 		let item = player[`get${slot.charAt(0).toUpperCase() + slot.slice(1)}ArmorItem`]();
 		let id = item ? String(item.getId()) : "minecraft:air";
 		equipment[slot] = id;
 		if (id === "minecraft:air") continue;
 
-		let cleanedId = slotSuffixes[slot].reduce((acc, suf) => acc.endsWith(suf) ? acc.slice(0, -suf.length) : acc, id);
+		// Cleaned type
+		let cleanedId = global.armorSuffixes[slot].reduce((acc, suf) => acc.endsWith(suf) ? acc.slice(0, -suf.length) : acc, id);
 		equippedTypes.push(cleanedId);
+
+		// Detect tier for arcanist armor
+		let tier;
+		if (id.startsWith('ars_nouveau:arcanist')) {
+			tier = 0;
+			if (item.getNbt().an_stack_perks) tier = item.getNbt().an_stack_perks.getInt('tier');
+		}
+		equippedTiers.push(tier);
 	}
 
 	const tags = player.getTags().toArray();
@@ -29,6 +35,8 @@ PlayerEvents.tick(event => {
 
 	// Determine matched bonus
 	let matchedBonusId = null;
+	let matchedTier = null;
+
 	for (const [bonusId, combos] of Object.entries(global.bonusOverrides)) {
 		for (const combo of combos) {
 			if (combo.length !== equippedTypes.length) continue;
@@ -48,8 +56,21 @@ PlayerEvents.tick(event => {
 		if (matchedBonusId) break;
 	}
 
+	// fallback: all pieces same
 	if (!matchedBonusId && equippedTypes.length === 4 && equippedTypes.every(v => v === equippedTypes[0])) {
 		matchedBonusId = equippedTypes[0];
+	}
+
+	// Special: Arcanist tier handling
+	if (matchedBonusId === 'ars_nouveau:arcanist') {
+		// Only apply if all non-null tiers are equal
+		let nonNullTiers = equippedTiers.filter(t => t !== null);
+		if (nonNullTiers.length === 4 && nonNullTiers.every(t => t === nonNullTiers[0])) {
+			matchedTier = nonNullTiers[0];
+		} else {
+			// Not all tiers match, don't apply
+			matchedBonusId = null;
+		}
 	}
 
 	// Remove old bonus if needed
@@ -57,7 +78,12 @@ PlayerEvents.tick(event => {
 
 	// Apply new bonus
 	if (matchedBonusId && !hasActiveBonus) {
+		// Arcanist: pick correct tier
+		if (matchedBonusId === 'ars_nouveau:arcanist' && matchedTier !== null) {
+			matchedBonusId = matchedBonusId + '_' + matchedTier;
+		}
 		let bonus = global.setBonusMap[matchedBonusId];
+
 		if (!bonus || !bonus.effects) return;
 
 		player.addTag('adj.set_bonus_active');
@@ -74,18 +100,11 @@ PlayerEvents.tick(event => {
 	}
 });
 
-
-PlayerEvents.respawned(event => {
-	removeBonus(event.player);
-});
-
-PlayerEvents.loggedIn(event => {
-	removeBonus(event.player);
-});
-
+PlayerEvents.respawned(event => removeBonus(event.player));
+PlayerEvents.loggedIn(event => removeBonus(event.player));
 
 function removeBonus(player) {
-	const tags = player.getTags().toArray();
+	let tags = player.getTags().toArray();
 	let bonusNamespace = null;
 	let bonusId = null;
 
@@ -113,7 +132,14 @@ function removeBonus(player) {
 	}
 
 	player.removeTag('adj.set_bonus_active');
-	tags.forEach(tag => { if (tag.startsWith('adj.set_bonus.')) player.removeTag(tag); });
-	let stages = player.stages.getAll();
-	stages.forEach(stage => { if (stage.startsWith('set_bonus.')) player.stages.remove(stage); });
+
+	// Copy first, then remove
+	tags.forEach(tag => {
+		if (tag.startsWith('adj.set_bonus.')) player.removeTag(tag);
+	});
+
+	let stages = player.stages.getAll().toArray();
+	stages.forEach(stage => {
+		if (stage.startsWith('set_bonus.')) player.stages.remove(stage);
+	});
 }

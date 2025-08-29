@@ -63,7 +63,6 @@ ServerEvents.tags('item', event => {
 		'aether_redux:subzero_crossbow',
 		'cataclysm:cursed_bow',
 		'alexscaves:dreadbow',
-		// '@too_many_bows'
 
 	])
 	// Melee
@@ -93,17 +92,19 @@ ServerEvents.tags('item', event => {
 		'alexscaves:cave_map'
 	])
 
-	// event.add('adj:smoking_items', [
-	// 	'baked_potato',
-	// 	/\:baked\_/,
-	// 	/boiled/,
-	// 	'#forge:foods/meat/cooked',
-	// 	/cooked_/,
-	// 	'#alexscaves:gelatins',
-	// 	'bread',
-	// 	'farmersdelight:fried_egg',
-	// 	/roasted/
-	// ])
+	const removedItems = [
+		"ars_nouveau:sorcerer_boots",
+		"ars_nouveau:sorcerer_leggings",
+		"ars_nouveau:sorcerer_robes",
+		"ars_nouveau:sorcerer_hood",
+		"ars_nouveau:battlemage_boots",
+		"ars_nouveau:battlemage_leggings",
+		"ars_nouveau:battlemage_robes",
+		"ars_nouveau:battlemage_hood"
+	]
+	removedItems.forEach(item => {
+		event.removeAllTagsFrom(item)
+	})
 
 	event.add('adj:alloy_forge', [
 		'alloy_forgery:adamantite_forge_casing_forge_controller',

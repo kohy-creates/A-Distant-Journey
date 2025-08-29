@@ -480,7 +480,7 @@
       }
     ],
     "mobs_spawn_stronger": {
-      "is_enabled": true,
+      "is_enabled": false,
       "health_bonus": {
         "__default": 0.0,
         "chapter_1": 0.2,

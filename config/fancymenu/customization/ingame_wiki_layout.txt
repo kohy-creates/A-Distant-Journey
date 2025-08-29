@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = ingame_wiki
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1756221834830
+  last_edited_time = 1756340192771
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:18b4ba3e-14ce-48bb-92fc-19a35b4a5072-1756221814097] = [groups:][instances:]
+  [loading_requirement_container_meta:55b2a314-268a-4acd-a75a-599751bd2131-1756340152141] = [groups:][instances:]
 }
 
 customization {
@@ -38,6 +38,7 @@ element {
   nine_slice_texture_border_x = 16
   nine_slice_texture_border_y = 128
   image_tint = #FFFFFF
+  restart_animated_on_menu_load = false
   element_type = image
   instance_identifier = ede5e29a-3b40-480b-8e29-843e0cc48d1e-1755889336850
   appearance_delay = no_delay
@@ -54,7 +55,7 @@ element {
   anchor_point = mid-centered
   x = -285
   y = -135
-  width = 571
+  width = 582
   height = 355
   stretch_x = false
   stretch_y = false
@@ -95,7 +96,7 @@ element {
   anchor_point_element = ede5e29a-3b40-480b-8e29-843e0cc48d1e-1755889336850
   x = 5
   y = 5
-  width = 552
+  width = 564
   height = 254
   stretch_x = false
   stretch_y = false
@@ -239,6 +240,7 @@ element {
   nine_slice_texture_border_x = 5
   nine_slice_texture_border_y = 5
   image_tint = #FFFFFF
+  restart_animated_on_menu_load = false
   element_type = image
   instance_identifier = a8ef72f9-4f4e-4344-b88a-7b8d92acb5ad-1755890142089
   appearance_delay = no_delay

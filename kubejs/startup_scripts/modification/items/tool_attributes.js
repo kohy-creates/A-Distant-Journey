@@ -1,5 +1,3 @@
-// This is only used for displaying the tool's harvest level and mining speed in the description
-
 const $TieredItem = Java.loadClass('net.minecraft.world.item.TieredItem')
 const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem')
 const $SwordItem = Java.loadClass('net.minecraft.world.item.SwordItem')
@@ -9,13 +7,6 @@ const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attr
 
 const miningSpeedUUID = '80091653-9902-44f9-95a7-d627610856c0'
 const harvestLevelUUID = '84257908-8296-4470-ad2e-97e5db59b64e'
-
-const armorItemTypes = [
-	'_helmet',
-	'_chestplate',
-	'_leggings',
-	'_boots'
-]
 
 const slots = [
 	'head', 'chest', 'legs', 'feet'
@@ -36,8 +27,8 @@ const weaponModifierUUIDs = [
 ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (event) => {
 	const item = event.getItemStack().getItem();
 	const id = item.id.toString();
-	// LEAVE EVERYTHING PAST HERE AS 'LET' CAUSE KUBEJS SUCKS BALLS
 
+	// ================= Weapons =================
 	if (event.slotType == 'mainhand') {
 		if (item instanceof $TieredItem && !(item instanceof $SwordItem)) {
 			let tier = item.getTier();
@@ -46,16 +37,15 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 			if (id.includes('rose_gold')) speed = 7.0;
 			event.addModifier("kubejs:mining_speed", new $AttributeModifier(miningSpeedUUID, "Mining Speed", speed, 'addition'))
 		}
+
 		let attackDamageMods = event.getOriginalModifiers().get($Attributes.ATTACK_DAMAGE);
 		let baseDamage = 0
-		//console.log(attackDamageMods)
 		if (attackDamageMods && !attackDamageMods.isEmpty()) {
-			attackDamageMods.forEach(mod => {
-				baseDamage += mod.getAmount()
-			})
+			attackDamageMods.forEach(mod => baseDamage += mod.getAmount())
 			event.removeAttribute('generic.attack_damage');
 			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', Math.round(baseDamage * 3.5), 'addition'))
 		}
+
 		if (Object.keys(global.weapon_overrides).includes(id)) {
 			let overrides = global.weapon_overrides[id];
 			event.removeAttribute('generic.attack_damage');
@@ -73,41 +63,57 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 				}
 			}
 		}
-		let rangedDamage = 0;
 
-		if (global.bowDamage[id]) {
-			rangedDamage += global.bowDamage[id];
-		}
-
-		if (global.arrowDamage[id]) {
-			rangedDamage += global.arrowDamage[id];
-		}
-
+		let rangedDamage = (global.bowDamage[id] || 0) + (global.arrowDamage[id] || 0)
 		if (rangedDamage > 0) {
-			event.addModifier(
-				'kubejs:ranged_damage',
-				new $AttributeModifier(
-					weaponModifierUUIDs[0],
-					'Ranged Damage',
-					rangedDamage,
-					'addition'
-				)
-			);
+			event.addModifier('kubejs:ranged_damage',
+				new $AttributeModifier(weaponModifierUUIDs[0], 'Ranged Damage', rangedDamage, 'addition'))
 		}
 	}
+
+	// ================= Armor =================
 	if (item instanceof $ArmorItem) {
-		let id = item.getId().toString();
-		for (let i = 0; i < armorItemTypes.length; i++) {
-			if (id.includes(armorItemTypes[i]) && event.slotType == slots[i]) {
-				let armorID = id.replace(armorItemTypes[i], '');
-				if (!global.armorOverrides[armorID]) return;
-				let armorValue = global.armorOverrides[armorID];
-				let uuid = modifierUUIDs[i];
-				for (let attribute of Object.keys(armorValue)) {
-					event.removeAttribute(attribute);
-					if (armorValue[attribute].values[i] == 0) continue;
-					event.addModifier(attribute, new $AttributeModifier(modifierUUIDs[i], uuid, armorValue[attribute].values[i], $Operation.fromValue(armorValue[attribute].operation || 0)))
+		for (const [slot, suffixes] of Object.entries(global.armorSuffixes)) {
+			if (event.slotType !== slot) continue;
+
+			// Check if item ID ends with any of the suffixes for this slot
+			if (suffixes.some(suffix => id.endsWith(suffix))) {
+				let armorID = id;
+				// Remove the matching suffix
+				for (const suffix of suffixes) {
+					if (armorID.endsWith(suffix)) {
+						armorID = armorID.slice(0, -suffix.length);
+						break; // only remove the first matching suffix
+					}
 				}
+
+				// Special case: ars_nouveau:arcanist with tiered configs
+				if (id.startsWith('ars_nouveau:arcanist')) {
+					let stack = event.getItemStack();
+					let nbt = stack.getNbt();
+					let tier = 0;
+					if (nbt && nbt.an_stack_perks) {
+						let perks = nbt.an_stack_perks;
+						if (perks.tier) {
+							tier = perks.getInt("tier");
+						}
+					}
+					armorID = armorID + "_" + tier;
+				}
+
+				let overrides = global.armorOverrides[armorID];
+				if (!overrides) return;
+
+				let uuid = modifierUUIDs[slots.indexOf(slot)];
+				for (const attribute of Object.keys(overrides)) {
+					event.removeAttribute(attribute);
+					if (overrides[attribute].values[slots.indexOf(slot)] == 0) continue;
+					event.addModifier(attribute,
+						new $AttributeModifier(uuid, uuid, overrides[attribute].values[slots.indexOf(slot)],
+							$Operation.fromValue(overrides[attribute].operation || 0)))
+				}
+
+				break;
 			}
 		}
 	}

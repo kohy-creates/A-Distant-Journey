@@ -306,11 +306,22 @@ ItemEvents.tooltip(event => {
 		if (bonusID == null) return;
 
 		// Base armor type of the hovered item
-		const armorType = item.getId().toString()
-			.replace('_helmet', '')
-			.replace('_chestplate', '')
-			.replace('_leggings', '')
-			.replace('_boots', '');
+		const itemId = item.id.toString()
+		let armorType;
+		outer: for (const [slot, names] of Object.entries(global.armorSuffixes)) {
+			for (const type of names) {
+				if (itemId.endsWith(type)) {
+					armorType = itemId.replace(type, '')
+					break outer;
+				}
+			}
+		}
+
+		if (bonusID.startsWith('ars_nouveau:arcanist')) {
+			let tier = bonusID.split('_')[2];
+			armorType = armorType + '_' + tier
+			
+		}
 
 		// Build a list of allowed types for this bonus
 		let allowedTypes = [bonusID];

@@ -176,7 +176,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Berserker's Glove"]
 		#Range: 0 ~ 1024
-		armor = 6
+		armor = 8
 		#Range: 0.0 ~ 10.0
 		attackSpeed = 0.12
 		#Range: 0.0 ~ 1.0
@@ -188,9 +188,9 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Celestial Stone"]
 		#Range: 0.0 ~ 10.0
-		attackSpeed = 0.12
+		attackSpeed = 0.1
 		#Range: 0.0 ~ 10.0
-		attackDamage = 0.12
+		attackDamage = 0.1
 		#Range: 0 ~ 1024
 		armor = 6
 		#Range: 0.0 ~ 1.0
@@ -198,29 +198,29 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 		#Range: 0.0 ~ 10.0
 		miningSpeed = 0.15
 		#Range: 0.0 ~ 10.0
-		rangedDamage = 0.12
+		rangedDamage = 0.1
 		#Range: 0.0 ~ 10.0
 		magicDamage = 0.0
 
 	[Attributes."Cobalt Shield"]
 		#Range: 0.0 ~ 1.0
-		knockbackResistance = 0.8
+		knockbackResistance = 0.6
 		#Range: 0 ~ 1024
 		armor = 6
 
 	[Attributes."Destroyer Emblem"]
 		#Range: 0.0 ~ 10.0
-		attackDamage = 0.12
+		attackDamage = 0.1
 		#Range: 0.0 ~ 1.0
-		criticalChance = 0.02
+		criticalChance = 0.15
 		#Range: 0.0 ~ 10.0
-		rangedDamage = 0.12
+		rangedDamage = 0.1
 		#Range: 0.0 ~ 10.0
 		magicDamage = 0.0
 
 	[Attributes.EyeOfTheGolem]
 		#Range: 0.0 ~ 1.0
-		criticalChance = 0.02
+		criticalChance = 0.2
 
 	[Attributes."Feral Claws"]
 		#Range: 0.0 ~ 10.0
@@ -238,7 +238,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Flesh Knuckles"]
 		#Range: 0 ~ 1024
-		armor = 6
+		armor = 8
 		#Range: -10000 ~ 10000
 		aggro = 0
 
@@ -256,7 +256,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Hero Shield"]
 		#Range: 0 ~ 1024
-		armor = 6
+		armor = 10
 		#Range: 0.0 ~ 1.0
 		knockbackResistance = 0.8
 		#Range: -10000 ~ 10000
@@ -284,17 +284,17 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Moon Stone"]
 		#Range: 0.0 ~ 10.0
-		attackSpeed = 0.12
+		attackSpeed = 0.1
 		#Range: 0.0 ~ 10.0
-		attackDamage = 0.12
+		attackDamage = 0.1
 		#Range: 0 ~ 1024
-		armor = 6
+		armor = 4
 		#Range: 0.0 ~ 1.0
 		criticalChance = 0.02
 		#Range: 0.0 ~ 10.0
 		miningSpeed = 0.15
 		#Range: 0.0 ~ 10.0
-		rangedDamage = 0.12
+		rangedDamage = 0.1
 		#Range: 0.0 ~ 10.0
 		magicDamage = 0.0
 
@@ -324,15 +324,15 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Putrid Scent"]
 		#Range: 0.0 ~ 10.0
-		attackDamage = 0.12
+		attackDamage = 0.05
 		#Range: 0.0 ~ 1.0
-		criticalChance = 0.02
+		criticalChance = 0.05
 		#Range: -10000 ~ 10000
 		aggro = 0
 
 	[Attributes."Ranger Emblem"]
 		#Range: 0.0 ~ 10.0
-		rangedDamage = 0.12
+		rangedDamage = 0.15
 
 	[Attributes."Recon Scope"]
 		#Range: 0.0 ~ 1.0
@@ -380,17 +380,17 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Sun Stone"]
 		#Range: 0.0 ~ 10.0
-		attackSpeed = 0.12
+		attackSpeed = 0.1
 		#Range: 0.0 ~ 10.0
-		attackDamage = 0.12
+		attackDamage = 0.1
 		#Range: 0 ~ 1024
-		armor = 6
+		armor = 4
 		#Range: 0.0 ~ 1.0
 		criticalChance = 0.02
 		#Range: 0.0 ~ 10.0
 		miningSpeed = 0.15
 		#Range: 0.0 ~ 10.0
-		rangedDamage = 0.12
+		rangedDamage = 0.1
 		#Range: 0.0 ~ 10.0
 		magicDamage = 0.0
 
@@ -406,7 +406,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Warrior Emblem"]
 		#Range: 0.0 ~ 10.0
-		attackDamage = 0.12
+		attackDamage = 0.15
 
 	[Attributes."Extendo Grip"]
 		#Range: 0.0 ~ 1024.0
@@ -414,11 +414,11 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes.Toolbelt]
 		#Range: 0.0 ~ 1024.0
-		blockReach = 3.0
+		blockReach = 1.0
 
 	[Attributes.Toolbox]
 		#Range: 0.0 ~ 1024.0
-		blockReach = 3.0
+		blockReach = 1.0
 
 	[Attributes."Angler Earring"]
 		#Range: -1024.0 ~ 1024.0
@@ -426,11 +426,11 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes.Aglet]
 		#Range: 0.0 ~ 10.0
-		movementSpeed = 0.4
+		movementSpeed = 0.05
 
 	[Attributes."Anklet of the Wind"]
 		#Range: 0.0 ~ 10.0
-		movementSpeed = 0.4
+		movementSpeed = 0.1
 
 	[Attributes.Flipper]
 		#Range: 0.0 ~ 10.0
@@ -442,5 +442,5 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes.Magiluminescence]
 		#Range: 0.0 ~ 10.0
-		movementSpeed = 0.4
+		movementSpeed = 0.15
 

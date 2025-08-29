@@ -8,7 +8,6 @@ const wanderingTraderTrades = [
 		VillagerUtils.createSimpleTrade('6x minecraft:sweet_berries', 'minecraft:emerald').maxUses(4),
 		VillagerUtils.createSimpleTrade('1x minecraft:golden_apple', '10x minecraft:emerald').maxUses(2),
 		VillagerUtils.createSimpleTrade('15x minecraft:emerald', 'confluence:extendo_grip').maxUses(2),
-		VillagerUtils.createSimpleTrade('15x minecraft:emerald', 'confluence:extendo_grip').maxUses(2),
 		VillagerUtils.createSimpleTrade('15x minecraft:emerald', 'confluence:portable_cement_mixer').maxUses(2),
 		VillagerUtils.createSimpleTrade('15x minecraft:emerald', 'confluence:brick_layer').maxUses(2),
 	],

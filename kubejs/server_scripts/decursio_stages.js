@@ -1,6 +1,63 @@
 const CURRENT_STAGE = 'current_stage'
 const STAGE_TO_SET = 'next_stage'
 
+const gamerules = {
+	'chapter_0': {
+		'artifacts.aquaDashers.enabled': false,
+		'artifacts.cloudInABottle.enabled': false,
+		'naughtinessMechanics': false,
+		'generationofInfectedDiamonds': false,
+
+		'theappearanceoftheNightmareStalker': false,
+		'corpseFishSpawn': false,
+		'darkVortexSpawn': false,
+		'bonescallerSpawn': false,
+		'doPatrolSpawning': false,
+
+		'fallenChaosKnightSpawn': false,
+		'spiritOfChaosSpawn': false,
+		'zombieClownSpawn': false,
+		'doInsomnia': false,
+
+		'motherSpiderSpawn': false,
+		'krampusSpawn': false,
+
+		'missionarySpawn': false,
+		'lifestealerSpawn': false,
+	},
+	'chapter_1': {
+		'theappearanceoftheNightmareStalker': true,
+		'corpseFishSpawn': true,
+		'darkVortexSpawn': true,
+		'bonescallerSpawn': true,
+		'doPatrolSpawning': true,
+	},
+	'chapter_2': {
+		'doInsomnia': true,
+		'fallenChaosKnightSpawn': true,
+		'spiritOfChaosSpawn': true,
+		'zombieClownSpawn': true,
+	},
+	'chapter_3': {
+		'motherSpiderSpawn': true,
+		'krampusSpawn': true,
+	}
+}
+
+/**
+ * Takes gamerules from a map and applies them
+ * @param {Internal.MinecraftServer} server
+ * @param {string} stage 
+ */
+function changeGamerules(server, stage) {
+	const rulesToApply = gamerules[stage];
+
+	for (const [gamerule, value] of Object.entries(rulesToApply)) {
+		server.gameRules.set(gamerule, value)
+	}
+
+}
+
 ServerEvents.tick(event => {
 	const server = event.getServer();
 	const persistentData = server.persistentData;
@@ -8,7 +65,10 @@ ServerEvents.tick(event => {
 		persistentData.chapters = {};
 	}
 	if (!persistentData.chapters.current_stage) {
-		persistentData.chapters.putString(CURRENT_STAGE, 'chapter_0')
+		persistentData.chapters.putString(CURRENT_STAGE, 'chapter_0');
+		changeGamerules(server, 'chapter_0');
+		return;
+
 	}
 
 	const stageToSet = persistentData.chapters.get(STAGE_TO_SET);
@@ -21,6 +81,7 @@ ServerEvents.tick(event => {
 				'/gamestate ' + stageName
 			);
 			persistentData.chapters.put(stageName, true);
+			changeGamerules(server, stageName);
 		}
 		else console.log('Attempted to reapply a stage that was already present!')
 		persistentData.chapters.remove(STAGE_TO_SET);
@@ -202,9 +263,14 @@ ServerEvents.tags('item', resctrictions => {
 		/celestium/
 	]);
 	resctrictions.add('adj:locked_until/light/chapter_5', [
-		/creative/
+		'@witherstormmod'
 	]);
-	resctrictions.add('adj:locked_until/exceptions/chapter_5', []);
+	resctrictions.add('adj:locked_until/exceptions/chapter_5', [
+		'witherstormmod:firework_bundle',
+		'witherstormmod:phasometer',
+		'witherstormmod:golden_apple_stew',
+		'witherstormmod:amulet'
+	]);
 })
 
 ItemEvents.rightClicked('ender_eye', event => {
@@ -253,6 +319,7 @@ ServerEvents.commandRegistry(event => {
 			'/gamestate normal'
 		)
 		player.tell(Text.red('Reset all internal progress'))
+		changeGamerules(server, 'chapter_0')
 		return 1
 	}
 })

@@ -29,7 +29,12 @@ ServerEvents.recipes((event) => {
 		'witherstormmod:super_support_beacon',
 		'map_atlases:atlas',
 		'dustydecorations:rope',
-		'supplementaries:rope'
+		'supplementaries:rope',
+
+		'ars_nouveau:arcanist_boots',
+		'ars_nouveau:arcanist_hood',
+		'ars_nouveau:arcanist_leggings',
+		'ars_nouveau:arcanist_robes'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -1601,6 +1606,9 @@ ServerEvents.recipes((event) => {
 			},
 			{
 				"item": "kubejs:eye_of_arcanum"
+			},
+			{
+				"item": "witherstormmod:command_block_book"
 			}
 		],
 		"result": {
@@ -1609,78 +1617,21 @@ ServerEvents.recipes((event) => {
 	}
 	)
 
-	const architectsPrism = [
-		'structure_gel:building_tool'
-	]
-	event.recipes.ars_nouveau.imbuement(
-		'rediscovered:rotational_converter',
-		'create:creative_motor',
-		100,
-		architectsPrism
-	)
-	event.recipes.ars_nouveau.imbuement(
-		'create:fluid_tank',
-		'create:creative_fluid_tank',
-		100,
-		architectsPrism
-	)
-	event.recipes.ars_nouveau.imbuement(
-		'create:blaze_cake',
-		'create:creative_blaze_cake',
-		100,
-		architectsPrism
-	)
-	event.recipes.ars_nouveau.imbuement(
-		'ars_nouveau:archmage_spell_book',
-		'ars_nouveau:creative_spell_book',
-		100,
-		architectsPrism
-	)
-	event.recipes.ars_nouveau.imbuement(
-		'botanicadds:dreaming_pool',
-		'botania:creative_pool',
-		100,
-		architectsPrism
-	)
-	event.recipes.ars_nouveau.imbuement(
-		'botania:corporea_spark_master',
-		'botania:corporea_spark_creative',
-		100,
-		architectsPrism
-	)
-	event.recipes.ars_nouveau.imbuement(
-		'ars_nouveau:source_jar',
-		'ars_nouveau:creative_source_jar',
-		100,
-		architectsPrism
-	)
-	function giantPlant(material, type) {
-		event.recipes.ars_nouveau.imbuement(
-			material,
-			'moresnifferflowers:giant_' + (type ? type : material),
-			100,
-			architectsPrism
-		)
-	}
-	giantPlant('hay_block', 'wheat');
-	giantPlant('carrot');
-	giantPlant('potato');
-	giantPlant('beetroot');
-	giantPlant('nether_wart_block', 'netherwart');
-
-	// Ars Nouveau spell books
+	// Ars Nouveau re-progression
 	event.remove({ type: 'ars_nouveau:book_upgrade' })
-	event.shaped(
-		Item.of('ars_nouveau:novice_spell_book'),
+	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
-			' S ',
-			'SBS',
-			' S '
+			'ars_nouveau:source_gem_block',
+			'ars_nouveau:source_gem_block',
+			'ars_nouveau:source_gem_block',
+			'ars_nouveau:source_gem_block',
+			'botania:purple_petal',
+			'botania:purple_petal',
+			'botania:magenta_petal',
+			'botania:magenta_petal'
 		],
-		{
-			S: Item.of('ars_nouveau:source_gem_block'),
-			B: Item.of('writable_book')
-		}
+		'writable_book',
+		'ars_nouveau:novice_spell_book'
 	)
 	event.custom({
 		"type": "ars_nouveau:book_upgrade",
@@ -1753,6 +1704,106 @@ ServerEvents.recipes((event) => {
 		}
 	})
 
+	/**
+	 * @type {Record<InputItem_, InputItem_>}
+	 */
+	const runiteToArcanist = {
+		'mythicmetals:runite_helmet': 'ars_nouveau:arcanist_hood',
+		'mythicmetals:runite_chestplate': 'ars_nouveau:arcanist_robes',
+		'mythicmetals:runite_leggings': 'ars_nouveau:arcanist_leggings',
+		'mythicmetals:runite_boots': 'ars_nouveau:arcanist_boots',
+	}
+
+	for (const [runite, arcanist] of Object.entries(runiteToArcanist)) {
+		event.recipes.ars_nouveau.enchanting_apparatus(
+			[
+				'ars_nouveau:magebloom_fiber',
+				'ars_nouveau:magebloom_fiber',
+				'ars_nouveau:magebloom_fiber',
+				'ars_nouveau:magebloom_fiber',
+			],
+			runite,
+			arcanist
+		)
+	}
+
+	event.remove({ type: 'ars_nouveau:armor_upgrade' })
+	event.custom({
+		"type": "ars_nouveau:armor_upgrade",
+		"pedestalItems": [
+			{
+				"item": {
+					"tag": "forge:rods/blaze"
+				}
+			},
+			{
+				"item": {
+					"item": "mythicmetals:orichalcum_ingot"
+				}
+			},
+			{
+				"item": {
+					"item": "botania:dragonstone"
+				}
+			},
+			{
+				"item": {
+					"item": "botania:dragonstone"
+				}
+			},
+			{
+				"item": {
+					"item": "ars_nouveau:magebloom_fiber"
+				}
+			},
+			{
+				"item": {
+					"item": "ars_nouveau:magebloom_fiber"
+				}
+			}
+		],
+		"sourceCost": 2500,
+		"tier": 1
+	})
+
+	event.custom({
+		"type": "ars_nouveau:armor_upgrade",
+		"pedestalItems": [
+			{
+				"item": {
+					"item": "aether:zanite_gemstone"
+				}
+			},
+			{
+				"item": {
+					"item": "aether:zanite_gemstone"
+				}
+			},
+			{
+				"item": {
+					"item": "mythicmetals:adamantite_ingot"
+				}
+			},
+			{
+				"item": {
+					"item": "ars_nouveau:magebloom_fiber"
+				}
+			},
+			{
+				"item": {
+					"item": "ars_nouveau:magebloom_fiber"
+				}
+			}
+		],
+		"sourceCost": 5000,
+		"tier": 2
+	})
+
+	event.replaceInput({ type: 'ars_elemental:armor_upgrade' },
+		'minecraft:netherite_ingot',
+		'mythicmetals:celestium_ingot'
+	)
+
 	// Eyes
 	gaiaPlateRecipe([
 		'botanicadds:gaiasteel_block',
@@ -1762,10 +1813,6 @@ ServerEvents.recipes((event) => {
 		'botania:dragonstone_block',
 		'botania:dragonstone_block',
 		'minecraft:ender_eye',
-		// 'botania:rune_spring',
-		// 'botania:rune_summer',
-		// 'botania:rune_autumn',
-		// 'botania:rune_winter',
 		'botania:rune_sloth',
 		'botania:rune_pride',
 		'botania:rune_gluttony',
@@ -1789,6 +1836,22 @@ ServerEvents.recipes((event) => {
 			event.recipes.create.filling(inter, [inter, Fluid.of('the_bumblezone:royal_jelly_fluid_still', 1000)]),
 		]
 	).transitionalItem(inter).loops(16)
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'ars_nouveau:wilden_tribute',
+			'ars_elemental:mark_of_mastery',
+			'aether_redux:gravitite_block',
+			'mythicmetals:midas_gold_block',
+			'botania:rune_mana',
+			'botania:rune_mana',
+			'botania:rune_mana',
+			'botania:rune_mana'
+		],
+		'ender_eye',
+		'kubejs:eye_of_arcanum',
+		10000
+	)
 
 	event.shaped(
 		Item.of('mythicmetals:durasteel_engine'),

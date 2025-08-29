@@ -14,6 +14,13 @@ global.bonusOverrides = {
 	]
 }
 
+global.armorSuffixes = {
+	head: ['_helmet', '_helm', '_hood'],
+	chest: ['_chestplate', '_tunic', '_robes'],
+	legs: ['_leggings', '_pants'],
+	feet: ['_boots']
+};
+
 global.setBonusMap = {
 	'minecraft:iron': {
 		description: [
@@ -41,9 +48,18 @@ global.setBonusMap = {
 	},
 	'additionaladditions:rose_gold': {
 		description: [
+			'2 defense',
 			'Incoming damage reduced by 5%'
 		],
 		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'generic.armor',
+					value: 2,
+					operation: 0
+				}
+			},
 			{
 				type: 'attribute',
 				value: {
@@ -64,7 +80,7 @@ global.setBonusMap = {
 				type: 'attribute',
 				value: {
 					id: 'adjcore:generic.damage_reduction',
-					value: 0.07,
+					value: 0.1,
 					operation: 0
 				}
 			},
@@ -80,7 +96,7 @@ global.setBonusMap = {
 	},
 	'minecraft:netherite': {
 		description: [
-			'Incoming damage reduced by 10%',
+			'Incoming damage reduced by 7%',
 			'5% increased crit chance',
 			'Become immune to fire'
 		],
@@ -89,7 +105,7 @@ global.setBonusMap = {
 				type: 'attribute',
 				value: {
 					id: 'adjcore:generic.damage_reduction',
-					value: 0.1,
+					value: 0.07,
 					operation: 0
 				}
 			},
@@ -106,6 +122,47 @@ global.setBonusMap = {
 				value: {
 					id: 'minecraft:fire_resistance',
 					amplifier: 0,
+				}
+			}
+		]
+	},
+	'mythicmetals:adamantite': {
+		description: [
+			'Press \'R\' to perform a rapid dash',
+			'Well-timed dash can dodge damage',
+			'10% increased movement speed'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'combatroll:count',
+					value: 1,
+					operation: 0
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'combatroll:recharge',
+					value: 0.15,
+					operation: 1
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'combatroll:distance',
+					value: 4,
+					operation: 0
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'generic.movement_speed',
+					value: 0.1,
+					operation: 1
 				}
 			}
 		]
@@ -131,6 +188,38 @@ global.setBonusMap = {
 				value: {
 					id: 'attributeslib:crit_chance',
 					value: 0.1,
+					operation: 0
+				}
+			},
+			{
+				type: 'effect',
+				value: {
+					id: 'minecraft:fire_resistance',
+					amplifier: 0,
+				}
+			}
+		]
+	},
+	'mythicmetals:metallurgium': {
+		description: [
+			'Incoming damage reduced by 15%',
+			'15% increased crit chance',
+			'Become immune to fire',
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:generic.damage_reduction',
+					value: 0.15,
+					operation: 0
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'attributeslib:crit_chance',
+					value: 0.15,
 					operation: 0
 				}
 			},
@@ -307,14 +396,14 @@ global.setBonusMap = {
 	},
 	'mythicmetals:runite': {
 		description: [
-			'Massively increased mana regeneration'
+			'Increases max mana by 20'
 		],
 		effects: [
 			{
 				type: 'attribute',
 				value: {
-					id: 'ars_nouveau:ars_nouveau.perk.mana_regen',
-					value: 6,
+					id: 'ars_nouveau:ars_nouveau.perk.max_mana',
+					value: 20,
 					operation: 0
 				}
 			}
@@ -354,5 +443,84 @@ global.setBonusMap = {
 				}
 			}
 		]
-	}
+	},
+	'ars_nouveau:arcanist_0': {
+		description: [
+			"Increases all spell damage by 4"
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
+					value: 4,
+					operation: 0
+				}
+			}
+		]
+	},
+	'ars_nouveau:arcanist_1': {
+		description: [
+			"Increases all spell damage by 6",
+			'Press \'R\' to perform a short dash',
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
+					value: 6,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:count",
+					value: 1,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:distance",
+					value: -0.5,
+					operation: 0
+				}
+			}
+		]
+	},
+	'ars_nouveau:arcanist_2': {
+		description: [
+			"Increases all spell damage by 12",
+			'Press \'R\' to perform a rapid dash',
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
+					value: 12,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:count",
+					value: 1,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:distance",
+					value: 1.5,
+					operation: 0
+				}
+			}
+		]
+	},
 }
