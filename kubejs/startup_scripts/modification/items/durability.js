@@ -118,7 +118,8 @@ ItemEvents.modification(event => {
 
 
 	maxDurability([
-		toolset('minecraft:golden')
+		toolset('minecraft:golden'),
+		armorset('botania:manaweave')
 	], 140)
 
 	maxDurability([
@@ -143,13 +144,15 @@ ItemEvents.modification(event => {
 	], 700)
 
 	maxDurability([
-		toolset('mythicmetals:steel'),
+		toolset('mythicmetals:steel')
 	], 950)
 
 	maxDurability([
 		toolset('additionaladditions:rose_gold'),
 		toolset('aether_redux:veridium'),
 		toolset('aether_redux:infused_veridium'),
+		armorset('ars_nouveau:arcanist'),
+		armorset('born_in_chaos_v1:nigthmare_mantleofthe_night')
 	], 1300)
 
 	maxDurability([
@@ -157,7 +160,8 @@ ItemEvents.modification(event => {
 		toolset('botania:terrasteel'),
 		toolset('aether:gravitite'),
 		toolset('aether:valkyrie'),
-		toolset('lost_aether_content:phoenix')
+		toolset('lost_aether_content:phoenix'),
+		armorset('aether:phoenix')
 	], 2000)
 
 	maxDurability([
@@ -183,7 +187,8 @@ ItemEvents.modification(event => {
 		'bow',
 		'crossbow',
 		'aether:phoenix_bow',
-		'additionaladditions:crossbow_with_spyglass'
+		'additionaladditions:crossbow_with_spyglass',
+		armorset('mythicmetals:midas_gold')
 	], 500)
 
 	maxDurability([
@@ -222,6 +227,7 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('mythicmetals:prometheum'),
+		armorset('aether:neptune')
 	], 1800)
 
 	maxDurability([
@@ -234,6 +240,7 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('mythicmetals:stormyx'),
+		armorset('cataclysm:bone_reptile')
 	], 1900)
 
 	maxDurability([

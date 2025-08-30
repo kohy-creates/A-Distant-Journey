@@ -34,7 +34,12 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:arcanist_boots',
 		'ars_nouveau:arcanist_hood',
 		'ars_nouveau:arcanist_leggings',
-		'ars_nouveau:arcanist_robes'
+		'ars_nouveau:arcanist_robes',
+
+		/ars_elemental:.*_boots/,
+		/ars_elemental:.*_robes/,
+		/ars_elemental:.*_leggings/,
+		/ars_elemental:.*_hat/,
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -59,7 +64,7 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:alloy_forge/alloy_metallurgium_from_ores',
 		'mythicmetals:alloy_forge/alloy_metallurgium_from_raw_ores',
 
-		/alloy_forgery\:compat\//
+		///alloy_forgery\:compat\//
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -1799,10 +1804,235 @@ ServerEvents.recipes((event) => {
 		"tier": 2
 	})
 
-	event.replaceInput({ type: 'ars_elemental:armor_upgrade' },
-		'minecraft:netherite_ingot',
-		'mythicmetals:celestium_ingot'
-	)
+
+	event.remove({ type: 'ars_elemental:armor_upgrade' })
+
+	/**
+	 * 
+	 * @param {string} element 
+	 * @param {InputItem_} essence 
+	 */
+	function elementalUpgradeRecipe(element, essence) {
+		let armorPieces = [
+			'boots',
+			'robes',
+			'leggings',
+			'hat'
+		]
+		let armorTags = [
+			'ars_nouveau:boot',
+			'ars_nouveau:robe',
+			'ars_nouveau:legs',
+			'ars_nouveau:hood'
+
+		]
+		let i = 0;
+		armorPieces.forEach(itemType => {
+			event.custom({
+				"type": "ars_elemental:armor_upgrade",
+				"output": {
+					"item": `ars_elemental:${element}_${itemType}`
+				},
+				"pedestalItems": [
+					{
+						"item": {
+							"item": "ars_elemental:mark_of_mastery"
+						}
+					},
+					{
+						"item": {
+							"item": "mythicmetals:celestium_ingot"
+						}
+					},
+					{
+						"item": {
+							"item": essence
+						}
+					},
+					{
+						"item": {
+							"item": essence
+						}
+					}
+				],
+				"reagent": [
+					{
+						"tag": armorTags[i]
+					}
+				],
+				"sourceCost": 7000,
+				"tier": 3
+			})
+			i++;
+		})
+	}
+	elementalUpgradeRecipe('air', 'ars_nouveau:air_essence');
+	elementalUpgradeRecipe('fire', 'ars_nouveau:fire_essence');
+	elementalUpgradeRecipe('earth', 'ars_nouveau:earth_essence');
+	elementalUpgradeRecipe('aqua', 'ars_nouveau:water_essence');
+
+	// Glyphs rework
+
+	/**
+	 * @type {Record<OutputItem_, InputItem_[]}
+	 */
+	const glyphsMap = {
+		'ars_nouveau:glyph_amplify': [
+			'botania:manasteel_pick',
+			'botania:manasteel_sword'
+		],
+		'ars_elemental:glyph_arc_projectile': [
+			'spectral_arrow',
+			'slime_ball',
+			'arrow',
+			'botania:manasteel_ingot'
+		],
+		'ars_nouveau:glyph_randomize': [
+			'mythicmetals:runite_ingot',
+			'quark:redstone_randomizer',
+		],
+		'ars_nouveau:glyph_sensitive': [
+			'poppy',
+			'ars_nouveau:source_gem_block',
+			'botania:mana_pearl'
+		],
+		'ars_nouveau:glyph_aoe': [
+			'mythicmetals:morkite',
+			'gunpowder',
+			'bone_meal'
+		],
+		'ars_nouveau:glyph_accelerate': [
+			'sugar',
+			'honeycomb',
+			'botania:rune_air'
+		],
+		'ars_nouveau:glyph_dampen': [
+			'#forge:wool',
+			'#forge:wool',
+			'#forge:wool',
+		],
+		'ars_nouveau:glyph_decelerate': [
+			'cobweb',
+			'cobweb',
+			'#adj:clock'
+		],
+		'ars_nouveau:glyph_extract': [
+			'botania:glass_pickaxe',
+		],
+		'ars_nouveau:glyph_break': [
+			'mythicmetals:copper_pickaxe',
+			'mythicmetals:copper_axe',
+			'mythicmetals:copper_shovel',
+			'mythicmetals:copper_hoe'
+		],
+		'ars_nouveau:glyph_light': [
+			'suppsquared:copper_lantern',
+			'torch',
+			'botania:rune_fire'
+		],
+		'ars_nouveau:glyph_craft': [
+			'crafting_table',
+			'botania:terrasteel_ingot'
+		],
+		'ars_nouveau:glyph_pull': [
+			'tide:diamond_fishing_rod',
+			'botania:mana_string',
+			'botania:mana_string'
+		],
+		'ars_nouveau:glyph_summon_steed': [
+			'saddle',
+			'lead',
+			'hay_block',
+			'golden_carrot'
+		],
+		'ars_nouveau:glyph_ender_inventory': [
+			'ars_nouveau:manipulation_essence',
+			'botanicadds:rune_tp',
+			'ender_chest'
+		],
+		'ars_elemental:glyph_spark': [
+			'ars_nouveau:air_essence',
+			'botania:rune_air',
+			'copper_ingot'
+		],
+		'ars_nouveau:glyph_explosion': [
+			'botania:rune_fire',
+			'ars_nouveau:fire_essence',
+			'tnt',
+			'tnt',
+			'tnt',
+			'fire_charge'
+		],
+		'ars_nouveau:glyph_firework': [
+			'botania:rune_fire',
+			'ars_nouveau:fire_essence',
+			'paper',
+			'gunpowder',
+			'gunpowder',
+			'#c:dyes',
+			'#c:dyes',
+			'#c:dyes'
+		],
+		'ars_nouveau:glyph_invisibility': [
+			'ars_nouveau:abjuration_essence',
+			'fermented_spider_eye',
+			'golden_carrot',
+			'nether_wart_block'
+		],
+		'ars_nouveau:glyph_wind_shear': [
+			'ars_nouveau:air_essence',
+			'botania:rune_air',
+			'botania:rune_air',
+			'botania:manasteel_sword'
+		],
+		'ars_nouveau:glyph_blink': [
+			'ars_nouveau:manipulation_essence',
+			'botanicadds:rune_tp',
+			'botania:rune_mana',
+			'ender_pearl',
+			'ender_pearl',
+			'ender_pearl',
+			'ender_pearl'
+		],
+		'ars_nouveau:glyph_wither': [
+			'ars_nouveau:abjuration_essence',
+			'netherexp:fossil_fuel',
+			'netherexp:fossil_fuel',
+			'netherexp:fossil_fuel',
+			'netherexp:fossil_fuel',
+			'wither_skeleton_skull'
+		]
+	}
+
+	// Glyphs are more expensive to craft experience-wise
+	// and some have changed recipes
+	event.forEachRecipe({ type: 'ars_nouveau:glyph' }, recipe => {
+
+		const id = recipe.getOriginalRecipeResult().id;
+		const expCost = Math.ceil(recipe.json.get('exp') * 2.5);
+
+		// const recipeId = recipe.id;
+		// console.log(recipeId)
+
+		const glyphOverride = glyphsMap[id];
+		if (glyphOverride) {
+			event.remove({ output: id });
+			event.recipes.ars_nouveau.glyph(
+				id,
+				glyphOverride,
+				expCost
+			).id(recipe.getId())
+		}
+		else {
+			event.custom({
+				count: 1,
+				output: id,
+				type: "ars_nouveau:glyph",
+				exp: expCost,
+				inputItems: recipe.json.get('inputItems')
+			}).id(recipe.getId())
+		}
+	})
 
 	// Eyes
 	gaiaPlateRecipe([

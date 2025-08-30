@@ -245,3 +245,18 @@ ServerEvents.tags('damage_type', event => {
 		'attributeslib:current_hp_damage'
 	])
 })
+
+ServerEvents.tags('worldgen/structure', event => {
+	event.add('adj:locator/bronze_dungeon', [
+		'aether:bronze_dungeon'
+	])
+	event.add('adj:locator/silver_dungeon', [
+		'aether:silver_dungeon'
+	])
+	event.add('adj:locator/gold_dungeon', [
+		'aether:gold_dungeon'
+	])
+	event.add('adj:locator/platinum_dungeon', [
+		'lost_aether_content:platinum_dungeon'
+	])
+}) 

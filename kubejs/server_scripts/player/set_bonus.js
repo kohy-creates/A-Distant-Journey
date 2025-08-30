@@ -143,3 +143,9 @@ function removeBonus(player) {
 		if (stage.startsWith('set_bonus.')) player.stages.remove(stage);
 	});
 }
+
+EntityEvents.hurt('player', event => {
+	if (event.getPlayer().tags.includes('adj.set_bonus_active.mythicmetals.kyber')) {
+		event.getSource().getActual().hurt(event.getDamage(), event.getLevel().getRandom(), event.getPlayer());
+	}
+})

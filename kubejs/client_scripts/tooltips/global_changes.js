@@ -320,7 +320,7 @@ ItemEvents.tooltip(event => {
 		if (bonusID.startsWith('ars_nouveau:arcanist')) {
 			let tier = bonusID.split('_')[2];
 			armorType = armorType + '_' + tier
-			
+
 		}
 
 		// Build a list of allowed types for this bonus
@@ -619,6 +619,20 @@ ItemEvents.tooltip(event => {
 	addTooltipLine('witherstormmod:firework_bundle', 'Might distract The Wither Storm when activated');
 	addTooltipLine('witherstormmod:super_tnt', 'Creates a bit bigger explosion than a regular TNT');
 	addTooltipLine('witherstormmod:formidibomb', ['The key to defeating The Wither Storm', 'Place it nearby and detonate once it has 3 heads', 'Creates a massive explosion on its own']);
+
+	addTooltipLine(/ars_nouveau:arcanist/, [
+		'Can be upgraded (twice total)',
+		'Can be imbued with different magical threads'
+	])
+
+	addTooltipLine([
+		'mutantmonsters:mutant_skeleton_skull',
+		'mutantmonsters:mutant_skeleton_chestplate',
+		'mutantmonsters:mutant_skeleton_leggings',
+		'mutantmonsters:mutant_skeleton_boots'
+	], 'WIP! PLEASE DON\'T USE'
+	)
+
 });
 
 function colorDurabilityText(p, t) {

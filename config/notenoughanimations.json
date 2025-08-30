@@ -61,6 +61,7 @@
   "narutoRunning": false,
   "enableInWorldBookRendering": false,
   "disableLegSmoothing": false,
-  "bowAnimation": "VANILLA",
+  "bowAnimation": "CUSTOM_V1",
+  "customBowRotationLock": true,
   "burningAnimation": true
 }

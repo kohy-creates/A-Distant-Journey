@@ -192,7 +192,7 @@ global.hpModifications = {
 	'born_in_chaos_v1:lifestealer': [250, 21, 10],
 	'born_in_chaos_v1:lifestealer_true_form': [250, 21, 7],
 	'born_in_chaos_v1:baby_spider': [30, 9, 0],
-	'born_in_chaos_v1:mother_spider': [200, 27, 0],
+	'born_in_chaos_v1:mother_spider': [[200, null, null, 400, null, 450], 27, [10, null, null, 20, 25, 30]],
 	'born_in_chaos_v1:baby_spider_controlled': [30, 9, 0],
 	'born_in_chaos_v1:nightmare_stalker': [[120, null, null, 200, null, 250], [22, null, null, 35, null, 45], [10, null, null, 15, null, 20]],
 	'born_in_chaos_v1:pumpkin_dunce': [100, 15, 0],
@@ -741,6 +741,8 @@ EntityJSEvents.attributes(event => {
 		attributes.add('generic.max_health', 100);
 		attributes.add('generic.attack_damage', 3);
 		attributes.add('combatroll:count', 0);
+		attributes.add('attributeslib:crit_damage', 2.0);
+		attributes.add('attributeslib:draw_speed', 0.66);
 	})
 
 	event.modify('witherstormmod:wither_storm', attributes => {

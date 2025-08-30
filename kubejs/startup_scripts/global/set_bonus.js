@@ -15,7 +15,7 @@ global.bonusOverrides = {
 }
 
 global.armorSuffixes = {
-	head: ['_helmet', '_helm', '_hood'],
+	head: ['_helmet', '_helm', '_hood', '_skull'],
 	chest: ['_chestplate', '_tunic', '_robes'],
 	legs: ['_leggings', '_pants'],
 	feet: ['_boots']
@@ -228,21 +228,6 @@ global.setBonusMap = {
 				value: {
 					id: 'minecraft:fire_resistance',
 					amplifier: 0,
-				}
-			}
-		]
-	},
-	'minecraft:diamond': {
-		description: [
-			'Incoming damage reduced by 7%'
-		],
-		effects: [
-			{
-				type: 'attribute',
-				value: {
-					id: 'adjcore:generic.damage_reduction',
-					value: 0.07,
-					operation: 0
 				}
 			}
 		]
@@ -521,6 +506,513 @@ global.setBonusMap = {
 					operation: 0
 				}
 			}
+		]
+	},
+	'ars_elemental:fire': {
+		description: [
+			"Increases all spell damage by 16",
+			'Press \'R\' to perform a rapid dash',
+			'Transforms some of the received',
+			'fire damage into Mana',
+			'Can\'t be set on fire'
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
+					value: 16,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:count",
+					value: 1,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:distance",
+					value: 3.0,
+					operation: 0
+				}
+			}
+		]
+	},
+	'ars_elemental:fire': {
+		description: [
+			"Increases all spell damage by 16",
+			'Press \'R\' to perform a rapid dash',
+			'Transforms some of the received',
+			'fire-type damage into Mana',
+			'Can\'t be set on fire'
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
+					value: 16,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:count",
+					value: 1,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:distance",
+					value: 3.0,
+					operation: 0
+				}
+			}
+		]
+	},
+	'ars_elemental:air': {
+		description: [
+			"Increases all spell damage by 16",
+			'Press \'R\' to perform a rapid dash',
+			'Transforms some of the received',
+			'air-type damage (idk either) into Mana',
+			'Greatly reduces fall damage'
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
+					value: 16,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:count",
+					value: 1,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:distance",
+					value: 3.0,
+					operation: 0
+				}
+			}
+		]
+	},
+	'ars_elemental:earth': {
+		description: [
+			"Increases all spell damage by 16",
+			'Press \'R\' to perform a rapid dash',
+			'Transforms some of the received',
+			'earth-type damage into Mana',
+			'Replenishes hunger underground if starving'
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
+					value: 16,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:count",
+					value: 1,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:distance",
+					value: 3.0,
+					operation: 0
+				}
+			}
+		]
+	},
+	'ars_elemental:earth': {
+		description: [
+			"Increases all spell damage by 16",
+			'Press \'R\' to perform a rapid dash',
+			'Transforms some of the received',
+			'water-type damage into Mana',
+			'Replenishes your breath if about to drown'
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
+					value: 16,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:count",
+					value: 1,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "combatroll:distance",
+					value: 3.0,
+					operation: 0
+				}
+			}
+		]
+	},
+	'mythicmetals:bronze': {
+		description: [
+			"Increases dealt damage by flat 5",
+			"1 defense"
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "generic.attack_damage",
+					value: 5,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "generic.armor",
+					value: 1,
+					operation: 0
+				}
+			}
+		]
+	},
+	'mythicmetals:steel': {
+		description: [
+			"Reduces incoming damage by 5%",
+			"Become immune to knockback"
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "adjcore:generic.damage_reduction",
+					value: 0.05,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "generic.knockback_resistance",
+					value: 21.37,
+					operation: 0
+				}
+			}
+		]
+	},
+	'mythicmetals:kyber': {
+		description: [
+			"Attackers also take damage"
+		],
+		effects: []
+	},
+	'mythicmetals:midas_gold': {
+		description: [
+			"COMING SOON"
+		],
+		effects: []
+	},
+	'mythicmetals:palladium': {
+		description: [
+			"Become immune to fire",
+			"Become immune to knockback"
+		],
+		effects: [
+			{
+				type: 'effect',
+				value: {
+					id: 'minecraft:fire_resistance',
+					amplifier: 0,
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "generic.knockback_resistance",
+					value: 21.37,
+					operation: 0
+				}
+			}
+		]
+	},
+	'mythicmetals:prometheum': {
+		description: [
+			"COMING SOON"
+		],
+		effects: []
+	},
+	'botania:manasteel': {
+		description: [
+			"10% reduced mana cost on",
+			"Mana Tools and Rods",
+			'3 defense'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'generic.armor',
+					value: 3,
+					operation: 0
+				}
+			}
+		]
+	},
+	'botania:terrasteel': {
+		description: [
+			"20% reduced mana cost on",
+			"Mana Tools and Rods",
+			"Passive Mana generation on Mana Tablets",
+			'10% reduced damage'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:generic.damage_reduction',
+					value: 0.1,
+					operation: 0
+				}
+			}
+		]
+	},
+	'botania:manaweave': {
+		description: [
+			"40% reduced mana cost on",
+			"Mana Tools and Rods",
+			"Increased profficiency with Rods",
+			'25% increased movement speed'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'generic.movement_speed',
+					value: 0.25,
+					operation: 1
+				}
+			}
+		]
+	},
+	'mythicmetals:tidesinger': {
+		description: [
+			"Greatly improved underwater visibility"
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'additionalentityattributes:player.water_visibility',
+					value: 0.8,
+					operation: 1
+				}
+			}
+		]
+	},
+	'mythicmetals:tidesinger': {
+		description: [
+			"Greatly improved underwater visibility"
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'additionalentityattributes:player.water_visibility',
+					value: 1.6,
+					operation: 1
+				}
+			}
+		]
+	},
+	'mythicmetals:aquarium': {
+		description: [
+			"Improved underwater visibility"
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'additionalentityattributes:player.water_visibility',
+					value: 0.7,
+					operation: 1
+				}
+			}
+		]
+	},
+	'cataclysm:ignitium': {
+		description: [
+			'Incoming damage reduced by 10%',
+			'Attacks deal extra fire damage',
+			'Become immune to fire'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:generic.damage_reduction',
+					value: 0.1,
+					operation: 0
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'attributeslib:fire_damage',
+					value: 5,
+					operation: 0
+				}
+			},
+			{
+				type: 'effect',
+				value: {
+					id: 'minecraft:fire_resistance',
+					amplifier: 0,
+				}
+			}
+		]
+	},
+	'cataclysm:cursium': {
+		description: [
+			'Incoming damage reduced by 10%',
+			'20 extra armor penetration',
+			'Become immune to fire'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:generic.damage_reduction',
+					value: 0.1,
+					operation: 0
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'attributeslib:armor_pierce',
+					value: 20,
+					operation: 0
+				}
+			},
+			{
+				type: 'effect',
+				value: {
+					id: 'minecraft:fire_resistance',
+					amplifier: 0,
+				}
+			}
+		]
+	},
+	'aether:zanite': {
+		description: [
+			'Incoming damage reduced by 5%'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:generic.damage_reduction',
+					value: 0.05,
+					operation: 0
+				}
+			}
+		]
+	},
+	'aether:gravitite': {
+		description: [
+			'Incoming damage reduced by 5%'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:generic.damage_reduction',
+					value: 0.05,
+					operation: 0
+				}
+			}
+		]
+	},
+	'aether:neptune': {
+		description: [
+			'Increases movement speed in water'
+		],
+		effects: []
+	},
+	'aether:valkyrie': {
+		description: [
+			'Grants short distance flight'
+		],
+		effects: []
+	},
+	'aether:phoenix': {
+		description: [
+			'Become completely immune to fire'
+		],
+		effects: []
+	},
+	'attributeslib:crit_chance': {
+		description: [
+			'Increases effectiveness of',
+			'dark magic weapons and items',
+			'Increases spell damage by 8'
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
+					value: 8,
+					operation: 0
+				}
+			},
+		]
+	},
+	'born_in_chaos_v1:dark_metal_armor': {
+		description: [
+			'Enter rampage when on low health',
+			'Become immune to Wither effect'
+		],
+		effects: [
+			{
+				type: "attribute",
+				value: {
+					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
+					value: 8,
+					operation: 0
+				}
+			},
 		]
 	},
 }

@@ -167,4 +167,178 @@ ItemEvents.modification(event => {
 				)
 		)
 	})
+
+	/**
+	 * @type {Record<string, { damage: number, operation: number, extra: { attribute: string, value: number, operation: number }[] }>}
+	 */
+	const gloves = {
+		'aether:iron_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'aether:golden_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'aether:zanite_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'aether:diamond_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'aether:leather_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'aether:neptune_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'aether:phoenix_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'aether:obsidian_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'aether:valkyrie_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'aether:chainmail_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'aether:gravitite_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'aether:netherite_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		},
+		'lost_aether_content:power_gloves': {
+			damage: 1,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'generic.attack_damage',
+					value: 0,
+					operation: 1
+				}
+			]
+		}
+	};
+
+	for (const [glove, entry] of Object.entries(gloves)) {
+		event.modify(glove, item => {
+			const capability = CuriosJSCapabilityBuilder.create();
+			if (entry.damage > 0) {
+				capability.addAttribute(
+					'generic.attack_damage',
+					'56a40da3-6e0c-4838-8842-e3b4638dcbb3',
+					entry.damage,
+					$Operation.fromValue(entry.operation || 0)
+				)
+			}
+
+			entry.extra.forEach(element => {
+				capability.addAttribute(
+					element.attribute,
+					'56a40da3-6e0c-4838-8842-e3b4638dcbb3',
+					element.value,
+					$Operation.fromValue(element.operation || 0)
+				)
+			});
+
+			item.attachCuriosCapability(capability)
+		})
+	}
 })

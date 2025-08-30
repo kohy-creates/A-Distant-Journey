@@ -1,5 +1,5 @@
 #"Embrace The Light!" Client Config
-"Are trims emissive" = true
+"Are trims emissive" = false
 
 #Light amounts
 [light_amounts]
