@@ -7,7 +7,7 @@
 	#The fluid capacity of the obelisk in mB. Default = 100000000, which is ~1072 levels' worth. Ensure that the new value is divisible by 20.
 	#Warning: setting this value above the default may lead to unintended loss or gain of XP. This is due to a rounding error in Minecraft's XP handling
 	#Range: 1000 ~ 2147483640
-	Capacity = 100000000
+	Capacity = 106900
 
 ["Staff of Attunement Range"]
 	#The binding range of the Staff of Attunement & Memory Tablet in blocks. Accepts decimals. Default = 48.0.

@@ -21,8 +21,8 @@ OreStages.addOreStage("chapter_3", <blockstate:mythicmetals:deepslate_adamantite
 OreStages.addOreStage("chapter_4", <blockstate:mythicmetals:starrite_ore>, <blockstate:minecraft:stone>);
 OreStages.addOreStage("chapter_4", <blockstate:mythicmetals:calcite_starrite_ore>, <blockstate:minecraft:calcite>);
 OreStages.addOreStage("chapter_4", <blockstate:mythicmetals:starrite_ore>, <blockstate:minecraft:stone>);
+OreStages.addOreStage("chapter_4", <blockstate:majruszsdifficulty:enderium_shard_ore>, <blockstate:minecraft:end_stone>);
 
 // Chapter 5 new ores
 OreStages.addOreStage("chapter_5", <blockstate:mythicmetals:unobtainium_ore>, <blockstate:minecraft:stone>);
 OreStages.addOreStage("chapter_5", <blockstate:mythicmetals:deepslate_unobtainium_ore>, <blockstate:minecraft:deepslate>);
-OreStages.addOreStage("chapter_5", <blockstate:majruszsdifficulty:enderium_shard_ore>, <blockstate:minecraft:end_stone>);

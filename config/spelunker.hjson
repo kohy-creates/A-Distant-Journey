@@ -337,7 +337,7 @@
 			]
 			highlightColor: "#6F4474"
 			transition: true
-			effectRadius: 4
+			effectRadius: 8
 		}
 		{
 			blockIds: [

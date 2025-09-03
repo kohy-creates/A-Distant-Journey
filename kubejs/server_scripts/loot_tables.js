@@ -1,11 +1,13 @@
 LootJS.modifiers((event) => {
-	event.addLootTableModifier(/.*/).modifyLoot(Ingredient.of('farmersdelight:wheat_dough'), (itemstack) => {
+	event.addLootTableModifier(/.*/).modifyLoot(Ingredient.of('farmersdelight:wheat_dough'), itemstack => {
 		return Ingredient.of('create:dough')
 	});
 
-	event.addLootTableModifier(/.*/).modifyLoot(Ingredient.of('rediscovered:quiver'), (itemstack) => {
+	event.addLootTableModifier(/.*/).modifyLoot(Ingredient.of('rediscovered:quiver'), itemstack => {
 		return Ingredient.of('supplementaries:quiver')
 	});
+
+	event.addLootTableModifier(/.*/).removeLoot(global.blacklistedItems);
 
 	const skullFragmentDrop = (pool) => {
 		pool.rolls(1);

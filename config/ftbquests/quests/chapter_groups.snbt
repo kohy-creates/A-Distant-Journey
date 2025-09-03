@@ -1,7 +1,6 @@
 {
 	chapter_groups: [
 		{ id: "06918EFE2A3328D6", title: "Magic" }
-		{ id: "162F93F9DAD225B2", title: "Realms" }
 		{ id: "266DD5C3D1FE65EA", title: "Tech" }
 		{ id: "12494D4A5CAA903A", title: "Fun" }
 		{ id: "4C4C64E64E42D01F", title: "Side Chapters" }

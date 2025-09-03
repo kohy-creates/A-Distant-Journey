@@ -7,7 +7,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Grows crops faster._",
 			"The slow growth of crops is a perpetual problem in the feeding of the masses.",
-			"The _Agricarnation_ transforms _Mana_ into a type of natural fertilizer, causing nearby plant-life to grow faster.",
+			"The _Agricarnation_ transforms _Botanical Energy_ into a type of natural fertilizer, causing nearby plant-life to grow faster.",
 			"_Grandola Vila Morena_..."
 		]
 	},
@@ -19,18 +19,18 @@ const itemsToTooltip = [
 			"Due to events unknown to us, they were banished back to their own world, _Alfheim_, never to return.",
 			"Experiments have been performed in an attempt to re-establish a connection between the two worlds, and a theoretical procedure for creating such a portal has been devised.",
 			"Actually creating this portal would prove to be an arduous task: quite a few unusual resources would be necessary.",
-			"The net requirements come down to 8 _Livingwood_ blocks, 3 _Glimmering Livingwood_ blocks, an _Elven Gateway Core_ (read on), and at least 2 _Mana Pools_ and _Natura Pylons_ (read on).",
+			"The net requirements come down to 8 _Livingwood_ blocks, 3 _Glimmering Livingwood_ blocks, an _Elven Gateway Core_ (read on), and at least 2 _Botanical Energy Pools_ and _Natura Pylons_ (read on).",
 			"The _Livingwood_ blocks can be of any variant (logs or wood, stripped or not, etc.), so feel free to mix it up if you're feeling fancy.",
 		]
 	},
 	{
 		item: "botania:terra_plate",
 		summary: [
-			"_Terrasteel_ is a complex and useful magical alloy, infused with ridiculous amounts of Mana.",
+			"_Terrasteel_ is a complex and useful magical alloy, infused with ridiculous amounts of Botanical Energy.",
 			"Its creation requires a _Terrestrial Agglomeration Plate_ placed over a checkerboard pattern of _Lapis Lazuli Blocks_ and _Livingrock_.",
-			"This block then needs to be provided with _Mana_, with _Sparks_ being the most efficient mode of transfer.",
-			"After a plate is set up and ready to receive Mana, tossing one _Manasteel Ingot_, _Mana Diamond_ and _Mana Pearl_ each upon the plate will begin the infusion.",
-			"Picking up any of the items will halt the infusion, causing _severe Mana Loss_ (all mana transferred to the plate is lost).",
+			"This block then needs to be provided with _Botanical Energy_, with _Sparks_ being the most efficient mode of transfer.",
+			"After a plate is set up and ready to receive Botanical Energy, tossing one _Infused Ingot_, _Infused Diamond_ and _Infused Pearl_ each upon the plate will begin the infusion.",
+			"Picking up any of the items will halt the infusion, causing _severe Botanical Energy Loss_ (all Botanical Energy transferred to the plate is lost).",
 		]
 	},
 	{
@@ -41,7 +41,7 @@ const itemsToTooltip = [
 			"And the ability to hover.",
 			"The torch will point horizontally when placed, providing a redstone signal in that direction and no other.",
 			"Sneak-right clicking the torch will rotate it 90 degrees, pointing the signal in the new direction instead.",
-			"By default, the torch is in _Toggle_ mode: whenever the torch is actuated (by either a _Mana Burst_ or an adjacent _Hovering Hourglass_), it'll turn 180 degrees, serving as a T flip-flop.",
+			"By default, the torch is in _Toggle_ mode: whenever the torch is actuated (by either a _Botanical Energy Burst_ or an adjacent _Hovering Hourglass_), it'll turn 180 degrees, serving as a T flip-flop.",
 			"Using a _Wand of the Forest_ on the torch changes its mode.",
 			"The default mode is _Toggle_, as previously stated; the other two modes are _Rotate_, in which the torch rotates 90 degrees each actuation, and _Random_, in which the torch points randomly each actuation...."
 		]
@@ -61,9 +61,9 @@ const itemsToTooltip = [
 		item: "botania:avatar",
 		summary: [
 			"_Rod effects in a block._",
-			"Carving some _Livingwood_ into a humanoid and giving it a _Mana Diamond_ for a heart yields an apparatus known as the _Livingwood Avatar_.",
+			"Carving some _Livingwood_ into a humanoid and giving it a _Infused Diamond_ for a heart yields an apparatus known as the _Livingwood Avatar_.",
 			"By itself, the block is just a pretty face; however, giving it a _Rod_ enables it to cast magic.",
-			"At the cost of _Mana_, from a spreader, of course.",
+			"At the cost of _Botanical Energy_, from a spreader, of course.",
 			"Not all _Rods_ can be used by an avatar.",
 			"Any that do, however, are detailed in this book.",
 			"Try out the _Rod of the Skies_, _Rod of the Hells_ and _Rod of the Plentiful Mantle_, for starters.",
@@ -76,19 +76,19 @@ const itemsToTooltip = [
 		summary: [
 			"_Damages mobs._",
 			"The _Bellethorne_ is a malevolent flower.",
-			"It twists any _Mana_ provided to slowly inflict harm in any living beings (save for _players_) around it.",
+			"It twists any _Botanical Energy_ provided to slowly inflict harm in any living beings (save for _players_) around it.",
 			"_Every rose has its thorn_."
 		]
 	},
 	{
 		item: "botania:bellows",
 		summary: [
-			"_Make Mana Pools' transferring and Furnaces faster._",
-			"The _Manatide Bellows_ increases the speed of _Mana Pools_' output.",
-			"Placing these bellows next to (and pointing towards) a _Mana Pool_ will increase the speed at which the pool outputs its _Mana_ into _Mana Tablets_ or other items.",
+			"_Make Botanical Energy Pools' transferring and Furnaces faster._",
+			"The _Botanical Energytide Bellows_ increases the speed of _Botanical Energy Pools_' output.",
+			"Placing these bellows next to (and pointing towards) a _Botanical Energy Pool_ will increase the speed at which the pool outputs its _Botanical Energy_ into _Botanical Energy Tablets_ or other items.",
 			"Multiple bellows will further increase the transfer rate.",
-			"A slightly more mundane use of the _Manatide Bellows_ is to stoke a _Furnace_'s flames.",
-			"A _Manatide Bellows_ can be operated manually via a right-click; pointing the bellows towards an active _Furnace_ and manning it will increase the speed and efficiency at which the items in the _Furnace_ get smelted.",
+			"A slightly more mundane use of the _Botanical Energytide Bellows_ is to stoke a _Furnace_'s flames.",
+			"A _Botanical Energytide Bellows_ can be operated manually via a right-click; pointing the bellows towards an active _Furnace_ and manning it will increase the speed and efficiency at which the items in the _Furnace_ get smelted.",
 			"It is your duty to be stoked..."
 		]
 	},
@@ -98,7 +98,7 @@ const itemsToTooltip = [
 			"_Absorbs sound._",
 			"Anyone who's ever attempted ranching knows of the cacophonous din emitted by herds of animals.",
 			"Luckily, the _Bergamute_ can deafen such dins.",
-			"The _Bergamute_ absorbs sound energy emitted in a close radius around itself, converting it into trace amounts of mana and dispersing it harmlessly.",
+			"The _Bergamute_ absorbs sound energy emitted in a close radius around itself, converting it into trace amounts of Botanical Energy and dispersing it harmlessly.",
 			"Additionally, _Horns_ or _Drums_ will not break blocks within its range.",
 			"Deaf to All but the Song..."
 		]
@@ -117,12 +117,12 @@ const itemsToTooltip = [
 		item: "botania:brewery",
 		summary: [
 			"_Create brews: better potions._",
-			"Given the versatility of _Mana_, its practicality in _Potion_-making should come as a surprise to nobody.",
+			"Given the versatility of _Botanical Energy_, its practicality in _Potion_-making should come as a surprise to nobody.",
 			"_Brews_ are, simply put, variants on _Potions_.",
-			"They're created using _Mana_ as a base, but brewed with other ingredients.",
+			"They're created using _Botanical Energy_ as a base, but brewed with other ingredients.",
 			"Unlike _Potions_, _Brews_ have fixed multi-reagent recipes, and each vial brewed will contain multiple doses of product.",
-			"The process of creating a _Brew_ requires a _Botanical Brewery_, _Vials_, _Mana_, and (of course) the reagents themselves.",
-			"The _Mana_ functions as the solvent and energy source for a _Brew_ and is drawn from _Mana Bursts_; simply pointing a _Mana Spreader_ at the _Brewery_ will work just fine.",
+			"The process of creating a _Brew_ requires a _Botanical Brewery_, _Vials_, _Botanical Energy_, and (of course) the reagents themselves.",
+			"The _Botanical Energy_ functions as the solvent and energy source for a _Brew_ and is drawn from _Botanical Energy Bursts_; simply pointing a _Botanical Energy Spreader_ at the _Brewery_ will work just fine.",
 			"Additionally, partially empty _Vials_ can be topped up with others containing the same _Brew_ in a crafting grid.",
 			"Crafting the _Botanical Brewery_..."
 		]
@@ -132,8 +132,8 @@ const itemsToTooltip = [
 		summary: [
 			"_Makes underwater bubbles._",
 			"Building underwater is no small feat; clearing air under the sea is incredibly troublesome and time-consuming.",
-			"Placing a _Bubbell_ underwater and providing it with _Mana_ (preferably _a priori_) will have it generate a dome of air (of about 12 blocks in radius), keeping water at bay.",
-			"A constant supply of _Mana_ is required to keep the dome online.",
+			"Placing a _Bubbell_ underwater and providing it with _Botanical Energy_ (preferably _a priori_) will have it generate a dome of air (of about 12 blocks in radius), keeping water at bay.",
+			"A constant supply of _Botanical Energy_ is required to keep the dome online.",
 			"_Like some casual game_."
 		]
 	},
@@ -143,7 +143,7 @@ const itemsToTooltip = [
 			"_Creates clay from sand._",
 			"The _Clayconia_ is a simple flower.",
 			"All it does is moisten nearby _Sand_, turning it into pellets of _Clay_.",
-			"This process uses a decent amount of _Mana_, but won't break the bank (or pool, as it were).",
+			"This process uses a decent amount of _Botanical Energy_, but won't break the bank (or pool, as it were).",
 			"_What a killer joke_."
 		]
 	},
@@ -241,7 +241,7 @@ const itemsToTooltip = [
 		item: "botania:daffomill",
 		summary: [
 			"_Moves items with wind._",
-			"The _Daffomill_ is a fan of sorts: it uses _Mana_ to push any items in front of it forward.",
+			"The _Daffomill_ is a fan of sorts: it uses _Botanical Energy_ to push any items in front of it forward.",
 			"Sneak-right clicking it with a _Wand of the Forest_ changes its orientation; its current direction can be deduced from the subtle wind particles it emits.",
 			"_Wind Turbines? I'm a big fan_."
 		]
@@ -249,7 +249,7 @@ const itemsToTooltip = [
 	{
 		item: "botania:dandelifeon",
 		summary: [
-			"_Mana from Life._",
+			"_Botanical Energy from Life._",
 			"The _Dandelifeon_ is not recommended for the faint of heart.",
 			"While it's likely the most efficient available generating flower in the botanist's toolbox, it's also one of the least straightforward to use.",
 			"This flower's function is based on a cellular automaton known as _Conway's Game of Life_.",
@@ -277,13 +277,13 @@ const itemsToTooltip = [
 	{
 		item: "botania:diluted_pool",
 		summary: [
-			"_Mana storage for the masses._",
-			"The _Mana Pool_ is, simply put, a storage for _Mana_.",
-			"It accepts mana from _Mana Spreaders_, and any adjacent ones will fill from it automatically.",
-			"All _Functional Flora_ require a nearby _Mana Pool_ to draw power from.",
-			"Making a _Mana Pool_.",
-			"Tossing certain resources into a _Mana Pool_ will infuse them with _Mana_ from the pool, turning them into more magically-useful forms, like _Blue Ingots_ or _Mana Pearls_.",
-			"A _Wand of the Forest_ can read the _Mana_ levels in a pool, much like a _Mana Spreader_.",
+			"_Botanical Energy storage for the masses._",
+			"The _Botanical Energy Pool_ is, simply put, a storage for _Botanical Energy_.",
+			"It accepts Botanical Energy from _Botanical Energy Spreaders_, and any adjacent ones will fill from it automatically.",
+			"All _Functional Flora_ require a nearby _Botanical Energy Pool_ to draw power from.",
+			"Making a _Botanical Energy Pool_.",
+			"Tossing certain resources into a _Botanical Energy Pool_ will infuse them with _Botanical Energy_ from the pool, turning them into more magically-useful forms, like _Blue Ingots_ or _Infused Pearls_.",
+			"A _Wand of the Forest_ can read the _Botanical Energy_ levels in a pool, much like a _Botanical Energy Spreader_.",
 			"A _Redstone Comparator_ can also output a signal based on percentage full...."
 		]
 	},
@@ -299,23 +299,23 @@ const itemsToTooltip = [
 		item: "botania:elven_spreader",
 		summary: [
 			"_Harder, better, faster, stronger._",
-			"When it comes right down to it, _Dreamwood_ simply conducts _Mana_ better than _Livingwood_.",
-			"A few adjustments in recipe (like substituting _Elementium_ for _Yellow Ingot_) yield an _Elven Mana Spreader_, which conducts more _Mana_, faster, and for longer without _Mana Loss_.",
-			"Unfortunately, these can't be turned into _Pulse Mana Spreaders_.",
+			"When it comes right down to it, _Dreamwood_ simply conducts _Botanical Energy_ better than _Livingwood_.",
+			"A few adjustments in recipe (like substituting _Elementium_ for _Yellow Ingot_) yield an _Elven Botanical Energy Spreader_, which conducts more _Botanical Energy_, faster, and for longer without _Botanical Energy Loss_.",
+			"Unfortunately, these can't be turned into _Pulse Botanical Energy Spreaders_.",
 			"Better spreaders, that's it Combining this already-powerful spreader with a _Gaia Spirit_ and a _Dragonstone_ gem yields an even more potent variant.",
-			"The _Gaia Spreader_ is the gold standard of _Mana Spreaders_, with upgrades pretty much all around.",
+			"The _Gaia Spreader_ is the gold standard of _Botanical Energy Spreaders_, with upgrades pretty much all around.",
 			"Do note that these spreaders fire larger payloads at once (and thus might fire less often)...."
 		]
 	},
 	{
 		item: "botania:enchanter",
 		summary: [
-			"_Using mana to enchant your tools._",
-			"With the magical power emitted from _Mana Pylons_, a structure can be built that performs enchants with books without consuming them.",
-			"The construction of a _Mana Enchanter_ isn't cheap, though, neither in space nor materials.",
-			"A _Mana Enchanter_ takes up an area around 11x7 in size, and is constructed from 17 _Obsidian_ blocks, 10 _Mystical Flowers_ of any color or their _Glimmering_ or _Floating_ variants, 6 _Mana Pylons_, and one _Block of Blue_.",
+			"_Using Botanical Energy to enchant your tools._",
+			"With the magical power emitted from _Botanical Energy Pylons_, a structure can be built that performs enchants with books without consuming them.",
+			"The construction of a _Botanical Energy Enchanter_ isn't cheap, though, neither in space nor materials.",
+			"A _Botanical Energy Enchanter_ takes up an area around 11x7 in size, and is constructed from 17 _Obsidian_ blocks, 10 _Mystical Flowers_ of any color or their _Glimmering_ or _Floating_ variants, 6 _Botanical Energy Pylons_, and one _Block of Blue_.",
 			"Instructions on assembling this marvelous contraption follow.",
-			"Mana Enchanter..."
+			"Botanical Energy Enchanter..."
 		]
 	},
 	{
@@ -331,8 +331,8 @@ const itemsToTooltip = [
 	{
 		item: /botania:.*endoflame.*/,
 		summary: [
-			"_Mana from fuel._",
-			"The _Endoflame_ is a very rudimentary _generating flower_; it'll absorb any combustible items or blocks dropped on the nearby vicinity, one at a time, and burn through them to generate _Mana_.",
+			"_Botanical Energy from fuel._",
+			"The _Endoflame_ is a very rudimentary _generating flower_; it'll absorb any combustible items or blocks dropped on the nearby vicinity, one at a time, and burn through them to generate _Botanical Energy_.",
 			"The amount of time it takes to burn through an item is roughly half of the time a _Furnace_ would.",
 			"There're a few small caveats though: the _Endoflame_ will not burn anything that leave byproducts in _Furnaces_ (e.g.",
 			"_Lava Buckets_, which leave _Buckets_ behind).",
@@ -344,10 +344,10 @@ const itemsToTooltip = [
 	{
 		item: /botania:.*entropinnyum.*/,
 		summary: [
-			"_Mana from TNT._",
-			"To generate a blast of _Mana_, in fact, a blast might be required.",
-			"Igniting a block of _TNT_ on dry land near an _Entropinnyum_ will have the latter absorb all the entropy generated by the blast, converting it into _Mana_ and nullifying any damage in the process.",
-			"However, to absorb the explosion, the flower must not have any _Mana_ stored in it-- otherwise, explosions as usual.",
+			"_Botanical Energy from TNT._",
+			"To generate a blast of _Botanical Energy_, in fact, a blast might be required.",
+			"Igniting a block of _TNT_ on dry land near an _Entropinnyum_ will have the latter absorb all the entropy generated by the blast, converting it into _Botanical Energy_ and nullifying any damage in the process.",
+			"However, to absorb the explosion, the flower must not have any _Botanical Energy_ stored in it-- otherwise, explosions as usual.",
 			"_Cool guys don't look at explosions_.",
 			"Note that the Entropinnyum has taken a liking to _ethically-sourced_ TNT, produced by natural means.",
 			"Feeding the flower unethically-sourced (for example, duplicated) TNT will incur a severe efficiency loss...."
@@ -357,7 +357,7 @@ const itemsToTooltip = [
 		item: /botania:.*exoflame.*/,
 		summary: [
 			"_Ignites and speeds up Furnaces._",
-			"Conversely to its _Generating_ counterpart, the _Exoflame_ uses _Mana_ to generate heat.",
+			"Conversely to its _Generating_ counterpart, the _Exoflame_ uses _Botanical Energy_ to generate heat.",
 			"Any _Furnaces_ near an active _Exoflame_ are fueled and given a speed boost.",
 			"_But we should be going nowhere fast_."
 		]
@@ -365,13 +365,13 @@ const itemsToTooltip = [
 	{
 		item: "botania:fabulous_pool",
 		summary: [
-			"_Mana storage for the masses._",
-			"The _Mana Pool_ is, simply put, a storage for _Mana_.",
-			"It accepts mana from _Mana Spreaders_, and any adjacent ones will fill from it automatically.",
-			"All _Functional Flora_ require a nearby _Mana Pool_ to draw power from.",
-			"Making a _Mana Pool_.",
-			"Tossing certain resources into a _Mana Pool_ will infuse them with _Mana_ from the pool, turning them into more magically-useful forms, like _Blue Ingots_ or _Mana Pearls_.",
-			"A _Wand of the Forest_ can read the _Mana_ levels in a pool, much like a _Mana Spreader_.",
+			"_Botanical Energy storage for the masses._",
+			"The _Botanical Energy Pool_ is, simply put, a storage for _Botanical Energy_.",
+			"It accepts Botanical Energy from _Botanical Energy Spreaders_, and any adjacent ones will fill from it automatically.",
+			"All _Functional Flora_ require a nearby _Botanical Energy Pool_ to draw power from.",
+			"Making a _Botanical Energy Pool_.",
+			"Tossing certain resources into a _Botanical Energy Pool_ will infuse them with _Botanical Energy_ from the pool, turning them into more magically-useful forms, like _Blue Ingots_ or _Infused Pearls_.",
+			"A _Wand of the Forest_ can read the _Botanical Energy_ levels in a pool, much like a _Botanical Energy Spreader_.",
 			"A _Redstone Comparator_ can also output a signal based on percentage full...."
 		]
 	},
@@ -379,7 +379,7 @@ const itemsToTooltip = [
 		item: /botania:.*fallen_kanade.*/,
 		summary: [
 			"_Powerful, short range regeneration._",
-			"The _Fallen Kanade_ is a flower with angelic properties; it creates an aura of healing from _Mana_ to apply a regeneration effect to any _players_ and _tamed pets_ nearby.",
+			"The _Fallen Kanade_ is a flower with angelic properties; it creates an aura of healing from _Botanical Energy_ to apply a regeneration effect to any _players_ and _tamed pets_ nearby.",
 			"_Hand Sonic, version four_."
 		]
 	},
@@ -441,15 +441,15 @@ const itemsToTooltip = [
 	{
 		item: /botania:.*gourmaryllis.*/,
 		summary: [
-			"_Mana from food._",
-			"Mana from food.",
-			"The _Gourmaryllis_ will eat any food items it finds in a small area, outputting _Mana_ once it's done.",
+			"_Botanical Energy from food._",
+			"Botanical Energy from food.",
+			"The _Gourmaryllis_ will eat any food items it finds in a small area, outputting _Botanical Energy_ once it's done.",
 			"However, it can only digest a single food item at a time.",
 			"While it will devour any other foods while digesting, it will yield no returns for those.",
 			"The amount of time it takes to digest a delicacy is proportional to the number of food points it restores.",
 			"Thus, a _Steak_ will take four seconds to digest, an _Apple_ will take two, and so on.",
-			"The rate of _Mana_ production will also vary with nutrition: it prefers bigger foods.",
-			"A _Steak_ will produce more _Mana_ than two _Apples_ per-second.",
+			"The rate of _Botanical Energy_ production will also vary with nutrition: it prefers bigger foods.",
+			"A _Steak_ will produce more _Botanical Energy_ than two _Apples_ per-second.",
 			"Like any proper gourmand, it loves variety in its diet: feeding it many different foods can be rewarding, while giving it the same food repeatedly might not go so well.",
 			"An experienced botanist can infer its mood from the sounds it makes......"
 		]
@@ -458,7 +458,7 @@ const itemsToTooltip = [
 		item: /botania:.*heisei_dream.*/,
 		summary: [
 			"_Turns mobs against each other._",
-			"The _Heisei Dream_ uses _Mana_ to fuel artificial emotions of anger and revenge in any nearby _mobs_, turning them against each other.",
+			"The _Heisei Dream_ uses _Botanical Energy_ to fuel artificial emotions of anger and revenge in any nearby _mobs_, turning them against each other.",
 			"_A pleasant era will murder people_."
 		]
 	},
@@ -467,7 +467,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Picks up items._",
 			"The _Hopperhock_ simply picks up items around it and put them in adjacent inventories (like _Chests_).",
-			"_Mana_ is optional, but will increase its range if provided.",
+			"_Botanical Energy_ is optional, but will increase its range if provided.",
 			"Placing _Item Frames_ on adjacent inventories will specify which items can or can't go in them.",
 			"Any inventory with no adjacent _Item Frame_ can accept any items, but labelled inventories will take priority.",
 			"The rule used to sort items can be changed by sneak-right clicking (or using a _Dispenser_) on the flower with a _Wand of the Forest_ in _Function Mode_.",
@@ -503,11 +503,11 @@ const itemsToTooltip = [
 	{
 		item: /botania:.*hydroangeas/,
 		summary: [
-			"_Mana from water._",
+			"_Botanical Energy from water._",
 			"_Hydroangeas_ flowers act as liquid-based passive generators.",
-			"They suck up any _still water_ in a 3x3 area (at the same altitude) around them, converting the water into _Mana_.",
-			"Unfortunately, even though they seem to function faster during _Rain_, their base _Mana_ throughput is still rather slow.",
-			"In addition, they decay after around three days, making them nonviable for long-term Mana production.",
+			"They suck up any _still water_ in a 3x3 area (at the same altitude) around them, converting the water into _Botanical Energy_.",
+			"Unfortunately, even though they seem to function faster during _Rain_, their base _Botanical Energy_ throughput is still rather slow.",
+			"In addition, they decay after around three days, making them nonviable for long-term Botanical Energy production.",
 			"_Under the seeeeeeaaaaaaa~"
 		]
 	},
@@ -516,25 +516,25 @@ const itemsToTooltip = [
 		summary: [
 			"_Creates more Mystical Flowers._",
 			"You like flowers, right? If so, the _Jaded Amaranthus_ is made just for you.",
-			"When fed with _Mana_ from a _Mana Pool_, it'll grow new _Mystical Flowers_ on nearby soil at a rapid pace.",
+			"When fed with _Botanical Energy_ from a _Botanical Energy Pool_, it'll grow new _Mystical Flowers_ on nearby soil at a rapid pace.",
 			"_It was this or clematis._",
-			"Wait a minute, did you just summon a bunch of flowers in one turn?Yeah, so?That's against the rules, isn't it?Screw the rules, I have mana!..."
+			"Wait a minute, did you just summon a bunch of flowers in one turn?Yeah, so?That's against the rules, isn't it?Screw the rules, I have Botanical Energy!..."
 		]
 	},
 	{
 		item: /botania:.*jiyuulia.*/,
 		summary: [
 			"_Keeps mobs out._",
-			"The _Jiyuulia_ is a flower that, for a small _Mana_ drain, keeps any nearby animals or monsters at bay, protecting a circular area from entry.",
+			"The _Jiyuulia_ is a flower that, for a small _Botanical Energy_ drain, keeps any nearby animals or monsters at bay, protecting a circular area from entry.",
 			"_You're free to go everywhere but here_."
 		]
 	},
 	{
 		item: /botania:.*kekimurus.*/,
 		summary: [
-			"_Mana from cake._",
+			"_Botanical Energy from cake._",
 			"_Cake_ is delicious; everyone loves it, flowers included.",
-			"The _Kekimurus_ is one of these _Cake_ aficionados, and will eat any placed in its vicinity, synthesizing the enriching nutrients into sweet, sweet _Mana_.",
+			"The _Kekimurus_ is one of these _Cake_ aficionados, and will eat any placed in its vicinity, synthesizing the enriching nutrients into sweet, sweet _Botanical Energy_.",
 			"_top kek_"
 		]
 	},
@@ -542,7 +542,7 @@ const itemsToTooltip = [
 		item: /botania:.*labellia.*/,
 		summary: [
 			"_Renames things._",
-			"For a moderate sum of _Mana_, the _Labellia_ picks up _Name Tags_ dropped on top of it, and uses them to name nearby items and mobs within a 5x5 radius.",
+			"For a moderate sum of _Botanical Energy_, the _Labellia_ picks up _Name Tags_ dropped on top of it, and uses them to name nearby items and mobs within a 5x5 radius.",
 			"_What's in a name?_."
 		]
 	},
@@ -579,7 +579,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Conjures dungeon loot._",
 			"Any adventurer knows that _Dungeons_ can hold valuable goodies.",
-			"The _Loonium_ will, when fed quite a bit of _Mana_, summon these items for said adventurers to collect.",
+			"The _Loonium_ will, when fed quite a bit of _Botanical Energy_, summon these items for said adventurers to collect.",
 			"There's a catch, though: each item is held by a monster protecting it.",
 			"These monsters are extra-strong, but will drop their precious _dungeon loot_ when killed.",
 			"_I CAN HAZ PHAT LOOTZ_?"
@@ -588,13 +588,13 @@ const itemsToTooltip = [
 	{
 		item: "botania:mana_bomb",
 		summary: [
-			"_Manastorm Charge go BOOM.",
+			"_Botanical Energystorm Charge go BOOM.",
 			"BOOM BOOM.",
 			"BOOMBOOMBOOMBOOMBOOMBOOM._",
-			"Infusing a _Gaia Spirit_ with some _TNT_ creates a _Manastorm Charge_, a type of explosive.",
+			"Infusing a _Gaia Spirit_ with some _TNT_ creates a _Botanical Energystorm Charge_, a type of explosive.",
 			"In a sense.",
-			"Once ignited with a _Mana Burst_, the charge will create an unstable _Manastorm Epicenter_.",
-			"This will, over time, spawn supercharged explosive _Mana Bursts_.",
+			"Once ignited with a _Botanical Energy Burst_, the charge will create an unstable _Botanical Energystorm Epicenter_.",
+			"This will, over time, spawn supercharged explosive _Botanical Energy Bursts_.",
 			"Needless to say, only a maniac would unleash such a destructive force near anything valuable or important.",
 			"Prepare to face the mighty..."
 		]
@@ -602,39 +602,39 @@ const itemsToTooltip = [
 	{
 		item: "botania:mana_detector",
 		summary: [
-			"_Detects Mana Bursts and emits Redstone signals._",
-			"The _Mana Detector_ detects when a _Mana Burst_ flows through it (bursts pass through this block like air) and provides a redstone signal for the occasion.",
+			"_Detects Botanical Energy Bursts and emits Redstone signals._",
+			"The _Botanical Energy Detector_ detects when a _Botanical Energy Burst_ flows through it (bursts pass through this block like air) and provides a redstone signal for the occasion.",
 			"Crafting the detector"
 		]
 	},
 	{
 		item: "botania:mana_distributor",
 		summary: [
-			"_Equally split Mana between multiple pools._",
-			"Any botanist worth their weight in flowers will eventually reach a point where a single _Mana Pool_ can't hold all their _Mana_.",
-			"The _Mana Splitter_ can fix that issue; any _Mana_ received from _Mana Bursts_ will be split evenly into _Mana Pools_ placed on adjacent sides.",
+			"_Equally split Botanical Energy between multiple pools._",
+			"Any botanist worth their weight in flowers will eventually reach a point where a single _Botanical Energy Pool_ can't hold all their _Botanical Energy_.",
+			"The _Botanical Energy Splitter_ can fix that issue; any _Botanical Energy_ received from _Botanical Energy Bursts_ will be split evenly into _Botanical Energy Pools_ placed on adjacent sides.",
 			"Crafting the splitter"
 		]
 	},
 	{
 		item: "botania:mana_fluxfield",
 		summary: [
-			"_Converts Mana into Energy._",
-			"Passing _Mana_ through a field of redstone charge converts it from natural energy to _Forge Energy_ or _Tech Reborn Energy_, whichever is present.",
-			"Any _Mana Bursts_ received by the Fluxfield are converted into _Energy_ and sent to any adjacent acceptors.",
+			"_Converts Botanical Energy into Energy._",
+			"Passing _Botanical Energy_ through a field of redstone charge converts it from natural energy to _Forge Energy_ or _Tech Reborn Energy_, whichever is present.",
+			"Any _Botanical Energy Bursts_ received by the Fluxfield are converted into _Energy_ and sent to any adjacent acceptors.",
 			"Challenging the fabric of magic mod reality"
 		]
 	},
 	{
 		item: "botania:mana_pool",
 		summary: [
-			"_Mana storage for the masses._",
-			"The _Mana Pool_ is, simply put, a storage for _Mana_.",
-			"It accepts mana from _Mana Spreaders_, and any adjacent ones will fill from it automatically.",
-			"All _Functional Flora_ require a nearby _Mana Pool_ to draw power from.",
-			"Making a _Mana Pool_.",
-			"Tossing certain resources into a _Mana Pool_ will infuse them with _Mana_ from the pool, turning them into more magically-useful forms, like _Blue Ingots_ or _Mana Pearls_.",
-			"A _Wand of the Forest_ can read the _Mana_ levels in a pool, much like a _Mana Spreader_.",
+			"_Botanical Energy storage for the masses._",
+			"The _Botanical Energy Pool_ is, simply put, a storage for _Botanical Energy_.",
+			"It accepts Botanical Energy from _Botanical Energy Spreaders_, and any adjacent ones will fill from it automatically.",
+			"All _Functional Flora_ require a nearby _Botanical Energy Pool_ to draw power from.",
+			"Making a _Botanical Energy Pool_.",
+			"Tossing certain resources into a _Botanical Energy Pool_ will infuse them with _Botanical Energy_ from the pool, turning them into more magically-useful forms, like _Blue Ingots_ or _Infused Pearls_.",
+			"A _Wand of the Forest_ can read the _Botanical Energy_ levels in a pool, much like a _Botanical Energy Spreader_.",
 			"A _Redstone Comparator_ can also output a signal based on percentage full...."
 		]
 	},
@@ -642,7 +642,7 @@ const itemsToTooltip = [
 		item: "botania:mana_pylon",
 		summary: [
 			"_Enchantment catalyst._",
-			"A _Mana Pylon_ is a structure that pulls natural energies from the earth and uses them to power enchanting processes.",
+			"A _Botanical Energy Pylon_ is a structure that pulls natural energies from the earth and uses them to power enchanting processes.",
 			"Setting one adjacent to an _Enchanting Table_ as if it was a _Bookshelf_ will dramatically increase the power of the table: just two pylons are enough for a table to reach _Level 30_.",
 			"_You must construct additional pylons!_"
 		]
@@ -650,31 +650,31 @@ const itemsToTooltip = [
 	{
 		item: "botania:mana_spreader",
 		summary: [
-			"_Your essential Mana transporter._",
-			"The _Mana Spreader_ is the single most important tool a botanist needs to manipulate _Mana_.",
-			"This block shoots _Mana_ from point A to point B.",
+			"_Your essential Botanical Energy transporter._",
+			"The _Botanical Energy Spreader_ is the single most important tool a botanist needs to manipulate _Botanical Energy_.",
+			"This block shoots _Botanical Energy_ from point A to point B.",
 			"It faces a cardinal direction when placed, but sneak-right clicking it with a _Wand of the Forest_ on a face points it elsewhere.",
 			"It can be aimed at other blocks with a wand in _Bind Mode_.",
-			"The _Mana Spreader_, as seen with a _Wand of the Forest_ held The _Mana Spreader_ has a small internal buffer of _Mana_, which will get filled by _Generating Flora_ bound to it.",
+			"The _Botanical Energy Spreader_, as seen with a _Wand of the Forest_ held The _Botanical Energy Spreader_ has a small internal buffer of _Botanical Energy_, which will get filled by _Generating Flora_ bound to it.",
 			"(Flowers, when placed, auto-bind to the nearest spreader.) This buffer can be viewed by hovering over the _Spreader_ with a _Wand of the Forest_ in hand...."
 		]
 	},
 	{
 		item: "botania:mana_void",
 		summary: [
-			"_Destroys all mana that comes into it._",
-			"The _Mana Void_ is, in layman's terms, a grave for _Mana_.",
-			"Any _Mana_ poured into this block will simply vanish into the void, never to be seen again.",
-			"Placing one of these under a _Mana Pool_ will allow the pool to always accept _Mana_, but void any it can't hold.",
+			"_Destroys all Botanical Energy that comes into it._",
+			"The _Botanical Energy Void_ is, in layman's terms, a grave for _Botanical Energy_.",
+			"Any _Botanical Energy_ poured into this block will simply vanish into the void, never to be seen again.",
+			"Placing one of these under a _Botanical Energy Pool_ will allow the pool to always accept _Botanical Energy_, but void any it can't hold.",
 			"Even Chad from accounting?"
 		]
 	},
 	{
-		item: /botania:.*manastar.*/,
+		item: /botania:.*Botanical Energystar.*/,
 		summary: [
-			"_A flower for checking net mana flow._",
-			"The imprecise measurements of the _Wand of the Forest_ sometimes won't cut it for telling if you're turning a profit or loss in your _Mana Pools_.",
-			"Creating a _Manastar_ and placing it next to a pool will have the flower shine red if there's a loss, or blue if there's a profit.",
+			"_A flower for checking net Botanical Energy flow._",
+			"The imprecise measurements of the _Wand of the Forest_ sometimes won't cut it for telling if you're turning a profit or loss in your _Botanical Energy Pools_.",
+			"Creating a _Botanical Energystar_ and placing it next to a pool will have the flower shine red if there's a loss, or blue if there's a profit.",
 			"The measurement updates every few seconds.",
 			"It's a shooting star leaping through the skies"
 		]
@@ -695,18 +695,18 @@ const itemsToTooltip = [
 		summary: [
 			"_Freezes mobs._",
 			"The _Medumone_ is a flower with the ability to completely halt a creature's movements.",
-			"It converts _Mana_ into a powerful slowing field that halts any nearby non-player entities in their tracks.",
+			"It converts _Botanical Energy_ into a powerful slowing field that halts any nearby non-player entities in their tracks.",
 			"_Stop right there criminal scum"
 		]
 	},
 	{
 		item: /botania:.*munchdew.*/,
 		summary: [
-			"_Mana from leaves._",
-			"Generating the form of natural energy that is _Mana_ is best done from other living materials.",
-			"The _Munchdew_ will eat up any nearby _Leaves_ and convert them into _Mana_.",
+			"_Botanical Energy from leaves._",
+			"Generating the form of natural energy that is _Botanical Energy_ is best done from other living materials.",
+			"The _Munchdew_ will eat up any nearby _Leaves_ and convert them into _Botanical Energy_.",
 			"However, no saplings (or any other items) will be dropped from the leaves.",
-			"This flower outputs a hefty sum of mana per tree's worth of leaves.",
+			"This flower outputs a hefty sum of Botanical Energy per tree's worth of leaves.",
 			"However, once it finishes eating all leaves in range, the _Munchdew_ will take a brief digestive break, and will only eat again after around a minute.",
 			"_Itadakimasu~_..."
 		]
@@ -714,11 +714,11 @@ const itemsToTooltip = [
 	{
 		item: /botania:.*narslimmus.*/,
 		summary: [
-			"_Mana from slime._",
+			"_Botanical Energy from slime._",
 			"There's some unidentified power in the universe that creates _Slimes_ at certain points, seemingly at random.",
 			"_Slime Chunks_, they call those points.",
-			"The _Narslimmus_ is a flower that has the ability to tap into that energy; it'll absorb _Slimes_ created by that power and collect all the _Mana_ generated by the destruction.",
-			"The larger the _Slime_, the more _Mana_ is created.",
+			"The _Narslimmus_ is a flower that has the ability to tap into that energy; it'll absorb _Slimes_ created by that power and collect all the _Botanical Energy_ generated by the destruction.",
+			"The larger the _Slime_, the more _Botanical Energy_ is created.",
 			"(It also makes a bit of a sticky mess.) _Stick around, would ye_?"
 		]
 	},
@@ -730,7 +730,7 @@ const itemsToTooltip = [
 			"Due to events unknown to us, they were banished back to their own world, _Alfheim_, never to return.",
 			"Experiments have been performed in an attempt to re-establish a connection between the two worlds, and a theoretical procedure for creating such a portal has been devised.",
 			"Actually creating this portal would prove to be an arduous task: quite a few unusual resources would be necessary.",
-			"The net requirements come down to 8 _Livingwood_ blocks, 3 _Glimmering Livingwood_ blocks, an _Elven Gateway Core_ (read on), and at least 2 _Mana Pools_ and _Natura Pylons_ (read on).",
+			"The net requirements come down to 8 _Livingwood_ blocks, 3 _Glimmering Livingwood_ blocks, an _Elven Gateway Core_ (read on), and at least 2 _Botanical Energy Pools_ and _Natura Pylons_ (read on).",
 			"The _Livingwood_ blocks can be of any variant (logs or wood, stripped or not, etc.), so feel free to mix it up if you're feeling fancy.",
 			"Crafting the _Elven Gateway Core_..."
 		]
@@ -752,7 +752,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Creates ores from stone._",
 			"While going mining is well and good, a renewable and sedentary means of acquiring ores is nothing to scoff at either.",
-			"The _Orechid_ uses _Mana_ to synthesize _ores_ from nearby _Stone_ blocks.",
+			"The _Orechid_ uses _Botanical Energy_ to synthesize _ores_ from nearby _Stone_ blocks.",
 			"The ores it generates are random, but rarer ores seem to be created less often.",
 			"_The less magical would call it a sieve_."
 		]
@@ -761,7 +761,7 @@ const itemsToTooltip = [
 		item: /botania:.*orechid_ignem.*/,
 		summary: [
 			"_Creates nether ores from netherrack._",
-			"The _Orechid_ is a great flower; the ability to create raw ores from _Mana_ and _Stone_ can be a great boon to any sedentary botanist's life.",
+			"The _Orechid_ is a great flower; the ability to create raw ores from _Botanical Energy_ and _Stone_ can be a great boon to any sedentary botanist's life.",
 			"However, it can't create ores of a more _Nether_-y variety.",
 			"Getting that sorted out is easy: Switching around a few petals will yield an _Orechid Ignem_, which creates _Nether_ ores in _Netherrack_ instead.",
 			"The flower must be in the _Nether_ dimension to work.",
@@ -772,14 +772,14 @@ const itemsToTooltip = [
 		item: "botania:piston_relay",
 		summary: [
 			"_Remote piston extension._",
-			"It seems that _Pistons_ and _Mana_ react in strange ways.",
+			"It seems that _Pistons_ and _Botanical Energy_ react in strange ways.",
 			"The former, when infused with the latter, becomes a _Force Relay_, a block that tears the fabric of space.",
 			"When one of these is pushed by a _Piston_, the block it's bound to is pushed the exact same way.",
 			"To bind it to a block, right-click it with a _Wand of the Forest_, then right-click on the block you want to bind it to.",
 			"This block is highly unstable and may cause uncanny effects; care should be taken with it.",
 			"It cannot be pulled by _Sticky Pistons_, and does not move its bound block either when pushed by one.",
 			"This allows for the building of piston \"frames\" by combining a sticky and non-sticky piston.",
-			"Infusing a _Piston_ with _Mana_...."
+			"Infusing a _Piston_ with _Botanical Energy_...."
 		]
 	},
 	{
@@ -789,20 +789,20 @@ const itemsToTooltip = [
 			"Animals love eating.",
 			"That's all they seem to do, really.",
 			"Strangely enough, though, they only eat things that are fed to them.",
-			"The _Pollidisiac_ will simply do just that; it uses mana to feed nearby food items on the ground (_Wheat_, _Carrots_, etc.) to animals within range, putting them in _better moods_.",
+			"The _Pollidisiac_ will simply do just that; it uses Botanical Energy to feed nearby food items on the ground (_Wheat_, _Carrots_, etc.) to animals within range, putting them in _better moods_.",
 			"_Hell's Kitchen_."
 		]
 	},
 	{
 		item: "botania:prism",
 		summary: [
-			"_Switch a Mana Burst's effective Lens on the fly._",
-			"_Mana Lenses_ manipulate _Mana Bursts_ to provide certain powers.",
-			"The _Mana Prism_ extends this functionality to switch a burst's lens effects on the fly.",
+			"_Switch a Botanical Energy Burst's effective Lens on the fly._",
+			"_Botanical Energy Lenses_ manipulate _Botanical Energy Bursts_ to provide certain powers.",
+			"The _Botanical Energy Prism_ extends this functionality to switch a burst's lens effects on the fly.",
 			"With a _Spectral Platform_ as a component, this block does not have a physical presence; entities and bursts can pass through it as if it weren't there.",
-			"Right-clicking a prism with any variety of _Mana Lens_ places the lens in the prism.",
-			"Whenever a _Mana Burst_ passes through the prism, its color and effect will be set to that of the lens in the prism (if the lens is not dyed, the burst will turn white).",
-			"Using any of the four basic lenses in the prism will also increase the time before the burst starts losing _Mana_, allowing it to go further.",
+			"Right-clicking a prism with any variety of _Botanical Energy Lens_ places the lens in the prism.",
+			"Whenever a _Botanical Energy Burst_ passes through the prism, its color and effect will be set to that of the lens in the prism (if the lens is not dyed, the burst will turn white).",
+			"Using any of the four basic lenses in the prism will also increase the time before the burst starts losing _Botanical Energy_, allowing it to go further.",
 			"It can be disabled with a redstone signal...."
 		]
 	},
@@ -810,15 +810,15 @@ const itemsToTooltip = [
 		item: "botania:pump",
 		summary: [
 			"_Not a web framework._",
-			"What could be an easier way to transport _Mana_ over large distances than attaching a _Mana Pool_ to a _Minecart_? It's simple! Similar to other types of carts in most respects, a _Minecart with Mana Pool_ can store and transport, well, _Mana_.",
+			"What could be an easier way to transport _Botanical Energy_ over large distances than attaching a _Botanical Energy Pool_ to a _Minecart_? It's simple! Similar to other types of carts in most respects, a _Minecart with Botanical Energy Pool_ can store and transport, well, _Botanical Energy_.",
 			"On rails.",
-			"Breaking a cart with any _Mana_ in it will lose all contained _Mana_, so be careful.",
-			"Transferring _Mana_ between a cart and a pool is done with a _Mana Pump_.",
-			"These can face in any of the four cardinal directions, and will transfer _Mana_ between an adjacent pool and a cart-with-pool on the opposite side.",
-			"The transfer rate is extremely fast due to the mechanical nature of the pump-- so fast that overflow is possible, which can cause up to a whole diluted pools' worth of _Mana Loss_.",
-			"_Mana_ will flow from the blue side of the pump in the direction of the arrow.",
-			"The pump can be turned off with a redstone signal, and an attached _Comparator_ will measure the amount of _Mana_ in the cart.",
-			"Lastly, a pool on a cart serves purely for transport, and can not receive, send, transfer, or infuse any items with its _Mana_...."
+			"Breaking a cart with any _Botanical Energy_ in it will lose all contained _Botanical Energy_, so be careful.",
+			"Transferring _Botanical Energy_ between a cart and a pool is done with a _Botanical Energy Pump_.",
+			"These can face in any of the four cardinal directions, and will transfer _Botanical Energy_ between an adjacent pool and a cart-with-pool on the opposite side.",
+			"The transfer rate is extremely fast due to the mechanical nature of the pump-- so fast that overflow is possible, which can cause up to a whole diluted pools' worth of _Botanical Energy Loss_.",
+			"_Botanical Energy_ will flow from the blue side of the pump in the direction of the arrow.",
+			"The pump can be turned off with a redstone signal, and an attached _Comparator_ will measure the amount of _Botanical Energy_ in the cart.",
+			"Lastly, a pool on a cart serves purely for transport, and can not receive, send, transfer, or infuse any items with its _Botanical Energy_...."
 		]
 	},
 	{
@@ -831,10 +831,10 @@ const itemsToTooltip = [
 	{
 		item: /botania:.*rafflowsia.*/,
 		summary: [
-			"_Mana from flowers._",
+			"_Botanical Energy from flowers._",
 			"The _Rafflowsia_ functions similarly to a _Kekimurus_, but eats _man-made flowers_ in the _Petal Apothecary_ instead.",
-			"It'll consume any nearby placed flowers and synthesize _Mana_ from them.",
-			"While feeding it the same flower several times in a row yields diminishing returns, feeding it a large variety of them can yield ludicrous quantities of _Mana_.",
+			"It'll consume any nearby placed flowers and synthesize _Botanical Energy_ from them.",
+			"While feeding it the same flower several times in a row yields diminishing returns, feeding it a large variety of them can yield ludicrous quantities of _Botanical Energy_.",
 			"_A New Dawn, you could say_."
 		]
 	},
@@ -845,7 +845,7 @@ const itemsToTooltip = [
 			"Quite a handy flower indeed, the _Rannuncarpus_ will pick up nearby placeable items and place them within a large radius around itself as blocks, preferably facing them towards itself.",
 			"However, it will only place blocks on top of a specific block type at a time; to specify this block, place it right below the soil the flower rests on.",
 			"Items such as _Sugar Cane_ can be placed as well, but only where a player could._",
-			"_Mana_ for the flower is optional, but will increase its range if provided.",
+			"_Botanical Energy_ for the flower is optional, but will increase its range if provided.",
 			"Finally, placing item frames on the block under the soil will restrict the items the _Rannuncarpus_ will pick up, similarly to a _Hopperhock_.",
 			"_Find it in a sandpit_?..."
 		]
@@ -854,7 +854,7 @@ const itemsToTooltip = [
 		item: "botania:redstone_spreader",
 		summary: [
 			"_A spreader that fires on a Redstone pulse._",
-			"By combining a _Mana Spreader_ with a piece of _Redstone_, a _Pulse Mana Spreader_ is created, which (as the name implies) fires when given a _redstone pulse_, regardless of target.",
+			"By combining a _Botanical Energy Spreader_ with a piece of _Redstone_, a _Pulse Botanical Energy Spreader_ is created, which (as the name implies) fires when given a _redstone pulse_, regardless of target.",
 			"Keep in mind that it still won't shoot a burst until the last one dissipates or is absorbed.",
 			"Lil' touch of redstone"
 		]
@@ -862,19 +862,19 @@ const itemsToTooltip = [
 	{
 		item: /botania:.*rosa_arcana.*/,
 		summary: [
-			"_Mana from experience._",
+			"_Botanical Energy from experience._",
 			"_Experience Points_ contain a magic of their own.",
-			"The _Rosa Arcana_ can tap into this magic, absorbing the experience of nearby players and turning it into _Mana_.",
-			"It can also synthesize mana from experience orbs and enchanted items in the world.",
+			"The _Rosa Arcana_ can tap into this magic, absorbing the experience of nearby players and turning it into _Botanical Energy_.",
+			"It can also synthesize Botanical Energy from experience orbs and enchanted items in the world.",
 			"_When this flower is planted, toss a coin_."
 		]
 	},
 	{
 		item: /botania:.*shulk_me_not.*/,
 		summary: [
-			"_Mana from Shulkers._",
-			"The _Shulk Me Not_ is a generating flower that creates _Mana_ from the power of the Shulker's _Levitation_.",
-			"If a nearby monster is targeted by and hit with a Shulker's projectile, and the _Shulk Me Not_'s internal buffer is empty, both mob and Shulker will be killed, generating ludicrous amounts of _Mana_ from the process.",
+			"_Botanical Energy from Shulkers._",
+			"The _Shulk Me Not_ is a generating flower that creates _Botanical Energy_ from the power of the Shulker's _Levitation_.",
+			"If a nearby monster is targeted by and hit with a Shulker's projectile, and the _Shulk Me Not_'s internal buffer is empty, both mob and Shulker will be killed, generating ludicrous amounts of _Botanical Energy_ from the process.",
 			"A few extra points should be made:Both entities' experience and loot are lost, and both entities must be within the flower's range.",
 			"_Petal plucking not recommended_...."
 		]
@@ -887,7 +887,7 @@ const itemsToTooltip = [
 			"However, it can also pick up unwanted items, disrupting automation setups in the process.",
 			"The _Solegnolia_ disrupts the ring's field of effect and prevents any items in its range from being pulled towards a ring-bearer.",
 			"It also prevents any ring-bearers in its range from pulling any items.",
-			"It does not consume _Mana_.",
+			"It does not consume _Botanical Energy_.",
 			"On/Off"
 		]
 	},
@@ -896,7 +896,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Control augments on sparks with redstone._",
 			"The _Spark Tinkerer_ is a block with the ability to modify the _Augments_ placed on _Sparks_.",
-			"Placing one adjacent to a _Mana Pool_ (or other block with a _Spark_ attached) will connect it to that block.",
+			"Placing one adjacent to a _Botanical Energy Pool_ (or other block with a _Spark_ attached) will connect it to that block.",
 			"Right-clicking the _Spark Tinkerer_ with a _Spark Augment_ will put the augment in the block; the augment can be removed by right-clicking again.",
 			"When the _Spark Tinkerer_ gets a redstone signal, it'll randomly pick an adjacent connected _Spark_ with a different augment and swap the augment on that _Spark_ with the one stored in the Tinkerer.",
 			"The stored augment can be withdrawn or deposited with _Hoppers_ or other automation methods.",
@@ -907,11 +907,11 @@ const itemsToTooltip = [
 	{
 		item: "botania:spawner_claw",
 		summary: [
-			"_Power spawners with Mana, even with no one around._",
+			"_Power spawners with Botanical Energy, even with no one around._",
 			"_Monster Spawners_ are strange devices.",
 			"They hold the ability to create life from thin air, but only when someone's nearby to witness their action.",
 			"Thus, anyone wishing to exploit one of these oddities ends up tethered by necessity to the surrounding area.",
-			"A _Life Imbuer_ is an alternative: when placed over a _Monster Spawner_, it'll use _Mana_ (fed from a _Spreader_) to induce spawning in the absence of players.",
+			"A _Life Imbuer_ is an alternative: when placed over a _Monster Spawner_, it'll use _Botanical Energy_ (fed from a _Spreader_) to induce spawning in the absence of players.",
 			"Just a little push..."
 		]
 	},
@@ -929,10 +929,10 @@ const itemsToTooltip = [
 		summary: [
 			"_Teleports items._",
 			"Long-distance item transport can be an arduous task; at some point, water channels and _Daffomills_ just won't cut it.",
-			"The _Spectranthemum_ uses _Mana_ to warp the fabric of reality around any items near it, teleporting them elsewhere in the world.",
-			"Note that _Mana_-containing items interfere with the warp and can't be teleported.",
-			"Note also that cost scales with the distance teleported-- single items can go over 2000 blocks, though your mana pools won't like it!To specify the destination of warped items, use a _Wand of the Forest_ in _Bind Mode_ to bind the flower to a location, the same way one would to a pool.",
-			"To view what block the flower is bound to (as opposed to the pool it's pulling _Mana_ from), sneak while looking at it with a wand.",
+			"The _Spectranthemum_ uses _Botanical Energy_ to warp the fabric of reality around any items near it, teleporting them elsewhere in the world.",
+			"Note that _Botanical Energy_-containing items interfere with the warp and can't be teleported.",
+			"Note also that cost scales with the distance teleported-- single items can go over 2000 blocks, though your Botanical Energy pools won't like it!To specify the destination of warped items, use a _Wand of the Forest_ in _Bind Mode_ to bind the flower to a location, the same way one would to a pool.",
+			"To view what block the flower is bound to (as opposed to the pool it's pulling _Botanical Energy_ from), sneak while looking at it with a wand.",
 			"This flower is bound by the _axiom of chunkloading_; i.e.",
 			"it won't send items to unloaded chunks.",
 			"This topic, however, is beyond the scope of this lexicon...."
@@ -941,12 +941,12 @@ const itemsToTooltip = [
 	{
 		item: /botania:.*spectrolus.*/,
 		summary: [
-			"_Mana from wool._",
+			"_Botanical Energy from wool._",
 			"The _Spectrolus_ is a flower that's particularly fond of the various hues of _Wool_.",
-			"It'll consume any and all _Wool_ blocks dropped nearby, converting them to _Mana_.",
+			"It'll consume any and all _Wool_ blocks dropped nearby, converting them to _Botanical Energy_.",
 			"However, it's picky as to what colors it wants.",
 			"Starting from _White_, after it eats one piece of _Wool_, it'll rotate to the next color in the spectrum.",
-			"While it'll consume all _Wool_ around it, it'll only create any mana if it gets the color it wants-- so haphazardly tossing _Wool_ at it is wasteful at best.",
+			"While it'll consume all _Wool_ around it, it'll only create any Botanical Energy if it gets the color it wants-- so haphazardly tossing _Wool_ at it is wasteful at best.",
 			"The color craves at any given moment can be seen by hovering over the flower with a _Wand of the Forest_.",
 			"_Taste the Rainbow_...."
 		]
@@ -963,7 +963,7 @@ const itemsToTooltip = [
 		item: /botania:.*tangleberrie.*/,
 		summary: [
 			"_Keeps mobs in._",
-			"The _Tangleberrie_ is a flower that, for a small _Mana_ drain, keeps any nearby animals or monsters within a circular ward, preventing them from getting out.",
+			"The _Tangleberrie_ is a flower that, for a small _Botanical Energy_ drain, keeps any nearby animals or monsters within a circular ward, preventing them from getting out.",
 			"_Tangled, brave and frozen_."
 		]
 	},
@@ -981,14 +981,14 @@ const itemsToTooltip = [
 	{
 		item: /botania:.*thermalily.*/,
 		summary: [
-			"_Mana from lava._",
+			"_Botanical Energy from lava._",
 			"The _Thermalily_ is a _Lava_-flavoured counterpart to the _Hydroangeas_.",
-			"The flower absorbs _Lava_ around it (at the same altitude) to generate _Mana_.",
-			"After absorbing one block of _Lava_, the flower will produce _Mana_ continually for around 45 seconds.",
+			"The flower absorbs _Lava_ around it (at the same altitude) to generate _Botanical Energy_.",
+			"After absorbing one block of _Lava_, the flower will produce _Botanical Energy_ continually for around 45 seconds.",
 			"Afterwards, though, it needs a bit of time to cool down before it can produce any more.",
 			"As temperamental as its drink of choice, though, it tends to randomly vary how long a cooldown period lasts-- anywhere from 20 seconds to a full 5 minutes!You can tell how long its most recent cooldown period lasts with a _Redstone Comparator_: twenty seconds for each level of strength.",
-			"The _Mana_ throughput the _Thermalily_ produces during its active phase is extremely high; it's an ideal flower for a quick boost in stores.",
-			"However, during its \"cooldown\" period, any adjacent _Lava_ will be absorbed and reset the cooldown without yielding any _Mana_...."
+			"The _Botanical Energy_ throughput the _Thermalily_ produces during its active phase is extremely high; it's an ideal flower for a quick boost in stores.",
+			"However, during its \"cooldown\" period, any adjacent _Lava_ will be absorbed and reset the cooldown without yielding any _Botanical Energy_...."
 		]
 	},
 	{
@@ -1007,7 +1007,7 @@ const itemsToTooltip = [
 			"_A friend for all of us._",
 			"It's a tiny potato! It believes in you!No.",
 			"Really, that's it.",
-			"A _Potato_, thrown into a _Mana Pool_, gains a little spark of life and joy.",
+			"A _Potato_, thrown into a _Botanical Energy Pool_, gains a little spark of life and joy.",
 			"The _Tiny Potato_ is lively, but patting it with a right-click will make it even more so!A Potato can also be named in an _Anvil_.",
 			"Believe in it, who believes in you The potato can be given items (with right-click) to hold; one item per side of the Potato.",
 			"(Items placed on its bottom face will show up on the lower half of the Potato's front.)Unfortunately, potatoes aren't exactly known for their dexterity, so some items may look out of place when held.",
@@ -1032,7 +1032,7 @@ const itemsToTooltip = [
 		item: "botania:turntable",
 		summary: [
 			"_Spin spreaders around._",
-			"The _Spreader Turntable_, as its name implies, continually rotates a _Mana Spreader_ placed upon it.",
+			"The _Spreader Turntable_, as its name implies, continually rotates a _Botanical Energy Spreader_ placed upon it.",
 			"Placing a spreader on a turntable will set it spinning; a redstone signal pauses its spin.",
 			"To change the speed of a turntable, right-click it with a _Wand of the Forest_; sneak-right clicking it will change its direction.",
 			"You spin me right round Similarly, a _Dispenser_ with a _Wand of the Forest_ from the side will change the speed, and one from the bottom will change the direction...."
@@ -1042,7 +1042,7 @@ const itemsToTooltip = [
 		item: /botania:.*vinculotus.*/,
 		summary: [
 			"_Intercepts Enderman teleportation._",
-			"The _Vinculotus_ uses _Mana_ to hijack the powers of any _Enderman_ within a large radius around it.",
+			"The _Vinculotus_ uses _Botanical Energy_ to hijack the powers of any _Enderman_ within a large radius around it.",
 			"Whenever an _Enderman_ attempts a teleport within said radius, it's instead forced to the location of the _Vinculotus_.",
 			"_Touch this black lotus with your fingers_."
 		]
@@ -1056,7 +1056,7 @@ const itemsToTooltip = [
 			"Really quickly.",
 			"To use it, sneak-right click the astrolabe on a block to choose the block to be placed, and sneak-right click the astrolabe in the air to choose the number of blocks to be placed.",
 			"Once a block is selected, the astrolabe will display a preview of what it would construct at a given position.",
-			"To actually construct the previewed blocks (using _Mana_ as well as blocks from the user's inventory), simply right-click the astrolabe.",
+			"To actually construct the previewed blocks (using _Botanical Energy_ as well as blocks from the user's inventory), simply right-click the astrolabe.",
 			"Blocks can also be supplied from items like a _Rod of the Shifting Crust_, a _Rod of the Depths_, or a _Hand of Ender_.",
 			"Builds walls, creates worlds..."
 		]
@@ -1064,9 +1064,9 @@ const itemsToTooltip = [
 	{
 		item: "botania:aura_ring",
 		summary: [
-			"_Passive Mana Generator in a Ring._",
-			"The _Band of Aura_ is a variant _Band of Mana_; instead of storing _Mana_, it generates a slow trickle of it (when equipped) and stores it in _Mana_-containing items in its wearer's inventory.",
-			"Plating it with a _Green Ingot_ upgrades it to generate _Mana_ at a significantly faster rate.",
+			"_Passive Botanical Energy Generator in a Ring._",
+			"The _Band of Aura_ is a variant _Band of Botanical Energy_; instead of storing _Botanical Energy_, it generates a slow trickle of it (when equipped) and stores it in _Botanical Energy_-containing items in its wearer's inventory.",
+			"Plating it with a _Green Ingot_ upgrades it to generate _Botanical Energy_ at a significantly faster rate.",
 			"Creating the ring Upgrading the ring..."
 		]
 	},
@@ -1077,7 +1077,7 @@ const itemsToTooltip = [
 			"It's possible to have _too_ many _Trinkets_ on hand-- after all, inventory space is limited.",
 			"A solution: stash them in a _Trinket Case_, a handy container for _Trinkets_.",
 			"The case's interface lets its user quickly swap their equipped _Trinkets_.",
-			"The case can also store _Rods_ and _Mana_-containing items, like _Mana Tablets_ (though they can't provide _Mana_ when in the box).",
+			"The case can also store _Rods_ and _Botanical Energy_-containing items, like _Botanical Energy Tablets_ (though they can't provide _Botanical Energy_ when in the box).",
 			"It could even be a boat!"
 		]
 	},
@@ -1102,10 +1102,10 @@ const itemsToTooltip = [
 	{
 		item: "botania:black_lotus",
 		summary: [
-			"_Rare loot that can make mana._",
+			"_Rare loot that can make Botanical Energy._",
 			"An elusive flower by the name of the _Black Lotus_ exists; however, it is not known to grow or reproduce.",
 			"There are no known sources of the Lotus at this time.",
-			"It is known, however, that each bloom contains a good deal of concentrated _Mana_ that can be released by dissolving it inside a non-empty _Mana Pool_.",
+			"It is known, however, that each bloom contains a good deal of concentrated _Botanical Energy_ that can be released by dissolving it inside a non-empty _Botanical Energy Pool_.",
 			"Just throwing it in will do."
 		]
 	},
@@ -1115,8 +1115,8 @@ const itemsToTooltip = [
 			"_Brews, crystallized into pendants._",
 			"The essences of the _Nether_, from which the original _Potions_ were created, are very efficient at storing the powers of effects.",
 			"The _Tainted Blood Pendant_, crafted from such essences, can store a _Brew_ in a condensed, stable form.",
-			"A Pendant with a stored _Brew_, when worn, will lens _Mana_ through itself to provide its stored effect.",
-			"A pendant can be infused with a _Brew_ by substituting a _Vial_ on a _Botanical Brewery_ with an uninfused Pendant, costing about ten times the _Mana_.",
+			"A Pendant with a stored _Brew_, when worn, will lens _Botanical Energy_ through itself to provide its stored effect.",
+			"A pendant can be infused with a _Brew_ by substituting a _Vial_ on a _Botanical Brewery_ with an uninfused Pendant, costing about ten times the _Botanical Energy_.",
 			"However, the pendant doesn't play well with effects like _Instant Health_ or _Absorption_, and can't handle _Brews_ with more than one effect.",
 			"Always potted up..."
 		]
@@ -1136,13 +1136,13 @@ const itemsToTooltip = [
 	{
 		item: "botania:clip",
 		summary: [
-			"_A Mana Blaster upgrade that lets it have multiple lenses._",
-			"While a formidable and versatile tool, the _Mana Blaster_'s greatest downfall is its lack of an ability to hot-swap _Lenses_.",
+			"_A Botanical Energy Blaster upgrade that lets it have multiple lenses._",
+			"While a formidable and versatile tool, the _Botanical Energy Blaster_'s greatest downfall is its lack of an ability to hot-swap _Lenses_.",
 			"But no more.",
-			"The _Lens Clip_ will attach to a _Mana Blaster_ in a crafting grid and allow it to store up to 6 lenses rather than just one.",
+			"The _Lens Clip_ will attach to a _Botanical Energy Blaster_ in a crafting grid and allow it to store up to 6 lenses rather than just one.",
 			"After all, Russian Roulette's just not the same without a gun...",
 			"Adding and removing _Lenses_ works just as before; the lens is added or removed in the slot that the clip is currently on.",
-			"To change this slot (and therefore the selected lens), simply sneak-right click the _Mana Blaster_ in the air.",
+			"To change this slot (and therefore the selected lens), simply sneak-right click the _Botanical Energy Blaster_ in the air.",
 			"An expansion of blasting..."
 		]
 	},
@@ -1160,7 +1160,7 @@ const itemsToTooltip = [
 		summary: [
 			"_A rod for creating cobble._",
 			"The _Rod of the Depths_ is a more geological variant to the _Rod of the Lands_; it does exactly the same thing, but with _Cobblestone_ and for a slightly higher price.",
-			"For that same _Mana_ cost, this item can provide _Cobblestone_ to the _Rod of the Shifting Crust_.",
+			"For that same _Botanical Energy_ cost, this item can provide _Cobblestone_ to the _Rod of the Shifting Crust_.",
 			"It's cobbling time"
 		]
 	},
@@ -1180,9 +1180,9 @@ const itemsToTooltip = [
 	{
 		item: "botania:crystal_bow",
 		summary: [
-			"_A faster bow that creates arrows from Mana._",
-			"Crafted with a _Dragonstone_, the _Crystal Bow_ is a ranged weapon with the ability to conjure arrows from _Mana_, as if the bow were enchanted with _Infinity_.",
-			"Similarly to the _Livingwood Bow_, it'll repair itself using _Mana_.",
+			"_A faster bow that creates arrows from Botanical Energy._",
+			"Crafted with a _Dragonstone_, the _Crystal Bow_ is a ranged weapon with the ability to conjure arrows from _Botanical Energy_, as if the bow were enchanted with _Infinity_.",
+			"Similarly to the _Livingwood Bow_, it'll repair itself using _Botanical Energy_.",
 			"Thanks to the bow's lightweight and flexible components, it also fires arrows much harder than a wooden one would.",
 			"An improved model, fixed reverting to a seed"
 		]
@@ -1191,16 +1191,16 @@ const itemsToTooltip = [
 		item: "botania:dirt_rod",
 		summary: [
 			"_A rod for creating dirt._",
-			"The _Rod of the Lands_ is a simple tool: by drawing _Mana_ from the user's inventory (sourced from a _Mana Tablet_ or similar), it can conjure a _Dirt_ block and place it in the world.",
-			"For the same _Mana_ cost, this item can provide _Dirt_ to the _Rod of the Shifting Crust_.",
-			"The Dirty Stick This rod can be given to a _Livingwood Avatar_; an avatar holding this rod will periodically use its own _Mana_ to place a block of _Dirt_ before itself...."
+			"The _Rod of the Lands_ is a simple tool: by drawing _Botanical Energy_ from the user's inventory (sourced from a _Botanical Energy Tablet_ or similar), it can conjure a _Dirt_ block and place it in the world.",
+			"For the same _Botanical Energy_ cost, this item can provide _Dirt_ to the _Rod of the Shifting Crust_.",
+			"The Dirty Stick This rod can be given to a _Livingwood Avatar_; an avatar holding this rod will periodically use its own _Botanical Energy_ to place a block of _Dirt_ before itself...."
 		]
 	},
 	{
 		item: "botania:diva_charm",
 		summary: [
 			"_Charm attacking mobs._",
-			"The _Charm of the Diva_ blesses its wearer with the power to turn attackers on their comrades; it uses _Mana_ to twist the hearts of mobs that harm its wearer, causing them to go after other nearby hostile mobs instead.",
+			"The _Charm of the Diva_ blesses its wearer with the power to turn attackers on their comrades; it uses _Botanical Energy_ to twist the hearts of mobs that harm its wearer, causing them to go after other nearby hostile mobs instead.",
 			"You shall not disrespect Big Sister"
 		]
 	},
@@ -1208,11 +1208,11 @@ const itemsToTooltip = [
 		item: "botania:divining_rod",
 		summary: [
 			"_A rod for finding ores._",
-			"The _Rod of the Plentiful Mantle_ has the ability (for a moderate _Mana_ cost) to divine in a modest radius around its user for ores.",
+			"The _Rod of the Plentiful Mantle_ has the ability (for a moderate _Botanical Energy_ cost) to divine in a modest radius around its user for ores.",
 			"These will emit a brief glow through walls, allowing them to be easily seen.",
 			"Identical ores will glow identical colors, though colors may not be the same over separate uses.",
 			"One day Pahimar will deliver This rod can be given to a _Livingwood Avatar_.",
-			"When so given, the avatar will use its _Mana_ to show all nearby ores continually, as if the rod was being used by a player.",
+			"When so given, the avatar will use its _Botanical Energy_ to show all nearby ores continually, as if the rod was being used by a player.",
 			"Glow colors, in this case, will remain the same so long as the avatar isn't moved...."
 		]
 	},
@@ -1243,7 +1243,7 @@ const itemsToTooltip = [
 			"Those _Endermen_.",
 			"They're the peskiest things since _Creepers_.",
 			"(I swear, whoever came up with those things really needs to take it down a _notch_.)However, a dagger crafted from a material with their energies can tear through them like a thousand-degree knife through butter.",
-			"Due to the concentration of energy, though, the dagger's only good for a few kills, and its compactness prevents the _Blue Ingot_ in its recipe from healing with _Mana_, the way typical tools would.",
+			"Due to the concentration of energy, though, the dagger's only good for a few kills, and its compactness prevents the _Blue Ingot_ in its recipe from healing with _Botanical Energy_, the way typical tools would.",
 			"Still, killing those elongated thieves is worth the trouble.",
 			"Strike my Soul..."
 		]
@@ -1253,9 +1253,9 @@ const itemsToTooltip = [
 		summary: [
 			"_Ender Chest access anywhere._",
 			"The _Hand of Ender_ allows its user to access their interdimensional Ender subspace pocket; in other words, their _Ender Chest_ inventory.",
-			"Said inventory can be opened with some _Mana_ by right-clicking with the Hand, no matter the place.",
-			"Using the hand on another player will use substantially more _Mana_, but will open _their_ inventory instead.",
-			"It's like the 5G of Ender Chests Furthermore, a _Hand of Ender_ automatically provides the _Rod of the Shifting Crust_ access to its user's _Ender Chest_'s contents, for a small _Mana_ cost per block...."
+			"Said inventory can be opened with some _Botanical Energy_ by right-clicking with the Hand, no matter the place.",
+			"Using the hand on another player will use substantially more _Botanical Energy_, but will open _their_ inventory instead.",
+			"It's like the 5G of Ender Chests Furthermore, a _Hand of Ender_ automatically provides the _Rod of the Shifting Crust_ access to its user's _Ender Chest_'s contents, for a small _Botanical Energy_ cost per block...."
 		]
 	},
 	{
@@ -1264,13 +1264,13 @@ const itemsToTooltip = [
 			"_A rod for swapping blocks._",
 			"The _Rod of the Shifting Crust_ is a magical device with the ability to swap blocks in the world at very high speeds.",
 			"To set up the rod, sneak-right click a block to select it.",
-			"After a block is selected, punching any other block in the world with the rod will use _Mana_ to swap it for the selected block (assuming the latter is present in the user's inventory).",
+			"After a block is selected, punching any other block in the world with the rod will use _Botanical Energy_ to swap it for the selected block (assuming the latter is present in the user's inventory).",
 			"Right-clicking a block in the world will perform a larger transformation, swapping all highlighted blocks with the selected one.",
-			"Blocks being placed (obviously) come from the user's inventory, and require _Mana_ for placement.",
+			"Blocks being placed (obviously) come from the user's inventory, and require _Botanical Energy_ for placement.",
 			"Only proper, full-sized blocks can be used for this swap-- no flowers, torches, or other shenanigans of that sort, though slabs are fine.",
-			"Very hard blocks may consume more _Mana_ to be replaced.",
+			"Very hard blocks may consume more _Botanical Energy_ to be replaced.",
 			"Other rods or devices can supply blocks to the _Rod of the Shifting Crust_.",
-			"For example, a _Rod of the Lands_ in a user's inventory will provide their _Rod of the Shifting Crust_ with an endless supply of _Dirt_ (assuming sufficient _Mana_ to conjure each dirt block, of course).",
+			"For example, a _Rod of the Lands_ in a user's inventory will provide their _Rod of the Shifting Crust_ with an endless supply of _Dirt_ (assuming sufficient _Botanical Energy_ to conjure each dirt block, of course).",
 			"If replacing a cubical area is not desired, using the _Stone of Temperance_ can reduce it to a plane of blocks...."
 		]
 	},
@@ -1279,11 +1279,11 @@ const itemsToTooltip = [
 		summary: [
 			"_A rod for summoning circles of flame._",
 			"The _Rod of the Hells_ contains the very essence of fire.",
-			"When used on the ground, for a moderate _Mana_ cost, it'll summon a circle of fire that will burn anything within.",
+			"When used on the ground, for a moderate _Botanical Energy_ cost, it'll summon a circle of fire that will burn anything within.",
 			"The ring has a radius of about five blocks, and takes a small amount of time to spin up to full ferocity.",
 			"Do note that, once ignited, the fire burns anything living in it, its own caster included.",
 			"Through the fire and the flames This rod can be given to a _Livingwood Avatar_.",
-			"An avatar holding one will continually use its own _Mana_ to maintain a ring of flame around itself...."
+			"An avatar holding one will continually use its own _Botanical Energy_ to maintain a ring of flame around itself...."
 		]
 	},
 	{
@@ -1293,7 +1293,7 @@ const itemsToTooltip = [
 			"up to a point._",
 			"The _Flügel_ were a race of god-slaying beings that once dominated these lands and possessed powers of three-dimensional flight.",
 			"Among other things.",
-			"While the _Flügel_ are now _quite_ extinct, the _Flügel Tiara_, fashioned from _Gaia Spirits_, can use _Mana_ to replicate their power of flight.",
+			"While the _Flügel_ are now _quite_ extinct, the _Flügel Tiara_, fashioned from _Gaia Spirits_, can use _Botanical Energy_ to replicate their power of flight.",
 			"Forty thousand books from another world Combining the _Flügel Tiara_ with different types of _Quartz_ will change the appearance of its wings: one style for each type of quartz.",
 			"The recipes for the various types of quartz can be found under _Decorative Blocks_, and the _Elves_ will trade _Elven Quartz_ for _Nether Quartz_...."
 		]
@@ -1317,9 +1317,9 @@ const itemsToTooltip = [
 			"Unlike the crafted _Flügel Tiara_, the _Eye of the Flügel_ contains primordial _Flügel_ magic.",
 			"Magic strong enough, in fact, to harness the _Flügels_' ability to recall themselves to a previously-visited location.",
 			"Sneak-right clicking this eye somewhere will bind it to that position.",
-			"Holding right-click with a bound Eye will then use _Mana_ to warp its owner back to its bound location.",
+			"Holding right-click with a bound Eye will then use _Botanical Energy_ to warp its owner back to its bound location.",
 			"Unfortunately, the Eye is still but a fragment of the _Flügels_' true potential, so it can't warp its user across dimensions.",
-			"However, just having an _Eye of the Flügel_ on hand allows a _Flügel Tiara_ user to fly with an empty flight bar (at a higher _Mana_ cost)."
+			"However, just having an _Eye of the Flügel_ on hand allows a _Flügel Tiara_ user to fly with an empty flight bar (at a higher _Botanical Energy_ cost)."
 		]
 	},
 	{
@@ -1327,7 +1327,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Prevents explosions from damaging the world._",
 			"The _Benevolent Goddess' Charm_ is a defensive _Trinket_ that's worn (as its name implies) in the _Charm_ slot.",
-			"When worn, it uses _Mana_ to prevent explosions in its wearer's vicinity from damaging any blocks in the world.",
+			"When worn, it uses _Botanical Energy_ to prevent explosions in its wearer's vicinity from damaging any blocks in the world.",
 			"No EXPLOSION!"
 		]
 	},
@@ -1336,7 +1336,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Seeds to create Grass, Podzol and Mycelium._",
 			"Watching the slow grow of _Grass_ is seldom a fun activity.",
-			"_Tall Grass_, infused with _Mana_, becomes _Pasture Seeds_, which will grow grass in a nearby area when used on a _Dirt_ block.",
+			"_Tall Grass_, infused with _Botanical Energy_, becomes _Pasture Seeds_, which will grow grass in a nearby area when used on a _Dirt_ block.",
 			"Other dirt-type blocks can also be grown, such as _Podzol_ or _Mycelium_, from alternative seeds.",
 			"_Pasture Seeds_ for grass _Boreal Seeds_ for podzol..."
 		]
@@ -1349,7 +1349,7 @@ const itemsToTooltip = [
 			"To use this device, aim it at a mob or item and hold right-click to pick it up.",
 			"Releasing right-click will drop the held entity, while punching with it will toss the entity in a powerful burst.",
 			"This power does not come free, of course.",
-			"Its use requires a constant drain of _Mana_ from the user's inventory.",
+			"Its use requires a constant drain of _Botanical Energy_ from the user's inventory.",
 			"bun pls..."
 		]
 	},
@@ -1369,7 +1369,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Endless supply of nourishment._",
 			"The relic known as _The Fruit of Grisaia_ bestows the brave soul who earned it with an endless supply of nourishment.",
-			"It can be eaten like any other piece of food, but will use _Mana_ to replenish hunger instead.",
+			"It can be eaten like any other piece of food, but will use _Botanical Energy_ to replenish hunger instead.",
 			"It would probably be a good idea to get used to the taste of apple, though."
 		]
 	},
@@ -1379,7 +1379,7 @@ const itemsToTooltip = [
 			"_Exactly what it says on the tin._",
 			"No need to explain the _Invisibility Cloak_.",
 			"You wear it on your _Body_ slot.",
-			"It takes _Mana_ from your inventory.",
+			"It takes _Botanical Energy_ from your inventory.",
 			"It makes you and your _Trinkets_ invisible.",
 			"Magic.",
 			"You're a wizard, Steve"
@@ -1411,7 +1411,7 @@ const itemsToTooltip = [
 		item: "botania:knockback_belt",
 		summary: [
 			"_Prevent all knockback._",
-			"By harnessing the (relative) stability of tectonic forces, the _Tectonic Girdle_ negates any _Knockback_ applied to its wearer from outside attacks and all recoil from the _Mana Blaster_.",
+			"By harnessing the (relative) stability of tectonic forces, the _Tectonic Girdle_ negates any _Knockback_ applied to its wearer from outside attacks and all recoil from the _Botanical Energy Blaster_.",
 			"The Steve who couldn't be moved"
 		]
 	},
@@ -1450,10 +1450,10 @@ const itemsToTooltip = [
 	{
 		item: "botania:livingwood_bow",
 		summary: [
-			"_A stronger bow that regenerates using Mana._",
-			"The _Livingwood Bow_ is (as its name suggests) a bow made of _Livingwood_, strung with _Mana Infused String_.",
+			"_A stronger bow that regenerates using Botanical Energy._",
+			"The _Livingwood Bow_ is (as its name suggests) a bow made of _Livingwood_, strung with _Botanical Energy Infused String_.",
 			"Due to its sturdier construction, it'll last longer than a normal _Bow_.",
-			"It'll also repair itself using _Mana_, the same way _Blue Tools_ do.",
+			"It'll also repair itself using _Botanical Energy_, the same way _Blue Tools_ do.",
 			"Does it shoot airplanes?"
 		]
 	},
@@ -1484,33 +1484,33 @@ const itemsToTooltip = [
 	{
 		item: "botania:mana_mirror",
 		summary: [
-			"_Remote Portable Mana Access._",
-			"A _Mana Mirror_ is an alternative to _Mana_-containing items like _Tablets_.",
-			"After it's bound to a _Mana Pool_, items in the inventory requiring _Mana_ will draw from it.",
+			"_Remote Portable Botanical Energy Access._",
+			"A _Botanical Energy Mirror_ is an alternative to _Botanical Energy_-containing items like _Tablets_.",
+			"After it's bound to a _Botanical Energy Pool_, items in the inventory requiring _Botanical Energy_ will draw from it.",
 			"To bind a mirror to a pool, simply _sneak-right click_ the pool with the mirror.",
-			"The mirror can't input or output mana from/to pools in any other way.",
+			"The mirror can't input or output Botanical Energy from/to pools in any other way.",
 			"Mirror mirror on the wall..."
 		]
 	},
 	{
 		item: "botania:mana_ring",
 		summary: [
-			"_Mana-Tablet-In-A-Ring._",
-			"Putting a _Mana Tablet_ on a _Blue Ingot_ ring makes the Tablet wearable.",
-			"The _Band of Mana_ functions exactly as its component Tablet does, but can be worn as a _Trinket_ as well.",
-			"Upgrading the ring by plating it with a _Green Ingot_ allows it to store about four times as much _Mana_.",
+			"_Botanical Energy-Tablet-In-A-Ring._",
+			"Putting a _Botanical Energy Tablet_ on a _Blue Ingot_ ring makes the Tablet wearable.",
+			"The _Band of Botanical Energy_ functions exactly as its component Tablet does, but can be worn as a _Trinket_ as well.",
+			"Upgrading the ring by plating it with a _Green Ingot_ allows it to store about four times as much _Botanical Energy_.",
 			"Creating the ring Upgrading the ring..."
 		]
 	},
 	{
 		item: "botania:mana_tablet",
 		summary: [
-			"_Portable Mana Storage._",
-			"Using _Mana Spreaders_ to transport _Mana_ is all well and good, but there are other ways of getting the stuff around too.",
-			"The _Mana Tablet_ is a portable item that can carry _Mana_ within itself.",
+			"_Portable Botanical Energy Storage._",
+			"Using _Botanical Energy Spreaders_ to transport _Botanical Energy_ is all well and good, but there are other ways of getting the stuff around too.",
+			"The _Botanical Energy Tablet_ is a portable item that can carry _Botanical Energy_ within itself.",
 			"In addition, other items in an inventory can draw from it for their own use, making it an essential tool.",
-			"Tossing a tablet into a _Mana Pool_ will allow for flow of _Mana_ between them.",
-			"Sneak-right clicking (or using a _Dispenser_) on the _Mana Pool_ with a _Wand of the Forest_ will change which way the _Mana_ will flow.",
+			"Tossing a tablet into a _Botanical Energy Pool_ will allow for flow of _Botanical Energy_ between them.",
+			"Sneak-right clicking (or using a _Dispenser_) on the _Botanical Energy Pool_ with a _Wand of the Forest_ will change which way the _Botanical Energy_ will flow.",
 			"Unlike normal items, dropped tablets never despawn.",
 			"Sadly, it doesn't have wifi..."
 		]
@@ -1519,8 +1519,8 @@ const itemsToTooltip = [
 		item: "botania:mining_ring",
 		summary: [
 			"_Mine faster with Haste._",
-			"The _Ring of the Mantle_ simply uses _Mana_ to provide a _Haste_ effect for its wearer.",
-			"Note that a trickle of _Mana_ is used while the wearer swings their arm or equipped item for anything, including but not limited to attacking, mining, or just flailing.",
+			"The _Ring of the Mantle_ simply uses _Botanical Energy_ to provide a _Haste_ effect for its wearer.",
+			"Note that a trickle of _Botanical Energy_ is used while the wearer swings their arm or equipped item for anything, including but not limited to attacking, mining, or just flailing.",
 			"Diggy diggy hole"
 		]
 	},
@@ -1529,19 +1529,19 @@ const itemsToTooltip = [
 		summary: [
 			"_A rod for pewpew._",
 			"The _Rod of the Unstable Reservoir_ is a weapon at its strongest against a large crowd of foes.",
-			"When used, it'll materialize from _Mana_ countless arcane missiles that home in on targets at random.",
+			"When used, it'll materialize from _Botanical Energy_ countless arcane missiles that home in on targets at random.",
 			"Zapzapzapzap This rod can be given to a _Livingwood Avatar_.",
-			"An avatar with one will attack nearby mobs with missiles, using its own _Mana_ to do so...."
+			"An avatar with one will attack nearby mobs with missiles, using its own _Botanical Energy_ to do so...."
 		]
 	},
 	{
 		item: "botania:monocle",
 		summary: [
 			"_An essential tool for viewing flowers' radii._",
-			"The _Manaseer Monocle_ is a handy accessory for insight into _Mana Bursts_' trajectories.",
-			"It's not just a fancy eyepiece: it allows its wearer to see all nearby _Mana Bursts_-- even through walls.",
+			"The _Botanical Energyseer Monocle_ is a handy accessory for insight into _Botanical Energy Bursts_' trajectories.",
+			"It's not just a fancy eyepiece: it allows its wearer to see all nearby _Botanical Energy Bursts_-- even through walls.",
 			"Additionally, when a wearer looks at a flower, they can see its areas of effect.",
-			"Why hello there old chap As a bonus, viewing redstone components with the _Manaseer Monocle_ will display information about them, expediting the construction of redstone contraptions.",
+			"Why hello there old chap As a bonus, viewing redstone components with the _Botanical Energyseer Monocle_ will display information about them, expediting the construction of redstone contraptions.",
 			"The monocle can be used as a _Cosmetic Override_ to any other _Trinket_; when so applied, it keeps all its functionality, allowing it to be used without taking up a slot...."
 		]
 	},
@@ -1550,7 +1550,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Binding flowers to a location en masse._",
 			"For some inexplicable reason, a _Blue Ingot_ attached to some _Livingwood Twigs_ is a thing flowers _pay attention to_.",
-			"When used on a _Mana Spreader_ or _Mana Pool_, this tool (dubbed the _Floral Obedience Stick_) binds all nearby _Generating_ or _Functional_ flowers, respectively, to that block.",
+			"When used on a _Botanical Energy Spreader_ or _Botanical Energy Pool_, this tool (dubbed the _Floral Obedience Stick_) binds all nearby _Generating_ or _Functional_ flowers, respectively, to that block.",
 			"A _Dispenser_ can also use a _Floral Obedience Stick_.",
 			"Generate, or else!"
 		]
@@ -1586,7 +1586,7 @@ const itemsToTooltip = [
 			"_Make your armor and Trinkets invisible._",
 			"Having your beautiful skin and accessories hidden under a set of clunky armor is nobody's dream.",
 			"It's bulky, flat, and worst of all, unfashionable!Luckily, splashing _Phantom Ink_ on armor in a crafting grid will make the latter completely invisible, while still providing all of its benefits.",
-			"(_Phantom Ink_ only works on armor sets that use _Mana_.) Who you gonna call?"
+			"(_Phantom Ink_ only works on armor sets that use _Botanical Energy_.) Who you gonna call?"
 		]
 	},
 	{
@@ -1602,7 +1602,7 @@ const itemsToTooltip = [
 		summary: [
 			"_A rod for creating rainbow bridges (and fancy building blocks)._",
 			"The _Bifrost_ is the legendary rainbow bridge that connects our world and the realm of the gods.",
-			"While the _Rod of the Bifrost_ can't really do _that_, it allows wielder to summon a rainbow bridge from _Mana_ in the direction they look.",
+			"While the _Rod of the Bifrost_ can't really do _that_, it allows wielder to summon a rainbow bridge from _Botanical Energy_ in the direction they look.",
 			"This bridge can extend up to a hundred blocks away, and will vanish after about thirty seconds.",
 			"Only one bridge can be created for any given _Rod of the Bifrost_ at a time; as soon as the old bridge vanishes, a new one can be created.",
 			"Going my way!! Cut open a path and go!..."
@@ -1683,7 +1683,7 @@ const itemsToTooltip = [
 		item: "botania:spell_cloth",
 		summary: [
 			"_Wipe enchantments and curses off items._",
-			"_Manaweave Cloth_, when combined with a _Mana Pearl_'s displacive properties, can become a type of cloth that dispels all _Enchantments_ or _Curses_ it touches.",
+			"_Botanical Energyweave Cloth_, when combined with a _Infused Pearl_'s displacive properties, can become a type of cloth that dispels all _Enchantments_ or _Curses_ it touches.",
 			"Combining the _Spellbinding Cloth_ with any enchanted item in a crafting table will remove all enchantments, including curses, from that item (at the cost of some of the cloth's durability).",
 			"Oldest item in the book"
 		]
@@ -1721,7 +1721,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Gotta go fast._",
 			"The _Globetrotter's Sash_ is nothing more than an upgrade to the _Sojourner's Sash_.",
-			"_Gaia Spirits_ and _Elven resources_ allow this belt's wearer (for some _Mana_, of course) to reach incredible speeds-- the _Sojourner's Sash_ doesn't even stand a chance in comparison.",
+			"_Gaia Spirits_ and _Elven resources_ allow this belt's wearer (for some _Botanical Energy_, of course) to reach incredible speeds-- the _Sojourner's Sash_ doesn't even stand a chance in comparison.",
 			"No time for guessing, follow my plan instead"
 		]
 	},
@@ -1732,7 +1732,7 @@ const itemsToTooltip = [
 			"Switching tools can be a pain, especially when you find yourself shoveling away at dirt with...",
 			"an axe? The _Ring of Correction_ is a great way to, well, correct those problems.",
 			"With this ring equipped, the tool in hand will always be the right one for the block being broken, be it pick, axe, shovel, hoe, or shears.",
-			"As long as you have the relevant _Mana_-using tools on hand.",
+			"As long as you have the relevant _Botanical Energy_-using tools on hand.",
 			"Use the right tools"
 		]
 	},
@@ -1753,7 +1753,7 @@ const itemsToTooltip = [
 			"_An axe that chops down whole trees.",
 			"How inspired._",
 			"The _Terra Truncator_ is a greataxe of a premium quality achievable only with _Green Ingots_.",
-			"It can fell an entire tree at once, using _Mana_ to break all its logs and leaves in one fell swoop.",
+			"It can fell an entire tree at once, using _Botanical Energy_ to break all its logs and leaves in one fell swoop.",
 			"It won't do so while its user is sneaking or has a _Stone of Temperance_.",
 			"TIMBEEEEEEEER"
 		]
@@ -1762,10 +1762,10 @@ const itemsToTooltip = [
 		item: "botania:terra_pick",
 		summary: [
 			"_Upgradable pickaxe with large area-of-effect powers._",
-			"The _Terra Shatterer_ is a tool that, thanks to the sheer quantity of _Green_ in its recipe, can absorb absolutely ludicrous amounts of _Mana_.",
-			"The tool functions very much like a _Mana Tablet_ when tossed on a _Mana Pool_.",
-			"However, any _Mana_ absorbed can't be released again, so it's nonviable as a storage device.",
-			"The amount of _Mana_ stored in the tool establishes its _Rank_.",
+			"The _Terra Shatterer_ is a tool that, thanks to the sheer quantity of _Green_ in its recipe, can absorb absolutely ludicrous amounts of _Botanical Energy_.",
+			"The tool functions very much like a _Botanical Energy Tablet_ when tossed on a _Botanical Energy Pool_.",
+			"However, any _Botanical Energy_ absorbed can't be released again, so it's nonviable as a storage device.",
+			"The amount of _Botanical Energy_ stored in the tool establishes its _Rank_.",
 			"The rank of the tool does not change its speed; rather, it increases the range of its _Active Ability_.",
 			"A sneak right-click in the air will toggle the Shatterer's Ability on or off...."
 		]
@@ -1776,7 +1776,7 @@ const itemsToTooltip = [
 			"_A sword that fires a beam that damages mobs._",
 			"The _Green Blade_, crafted from _Green Ingots_, is a sword infused with the strength of nature.",
 			"It's on par with a _Light Blue Sword_ in terms of raw power, and when swung, can sometimes fire a beam that will deal as much as a melee hit would.",
-			"Additionally, it can use _Mana_ for durability, much like _Blue Tools_ can.",
+			"Additionally, it can use _Botanical Energy_ for durability, much like _Blue Tools_ can.",
 			"No Broken Hero Sword"
 		]
 	},
@@ -1786,7 +1786,7 @@ const itemsToTooltip = [
 			"_A rod for terraforming._",
 			"While digging away at dirt with a shovel is definitely a functional means of landscaping, flattening huge tracts of land can get somewhat arduous.",
 			"The _Rod of the Terra Firma_, by contrast, terraforms in a quicker and environmentally-friendlier manner.",
-			"This rod, will, at a nontrivial cost of _Mana_ from the user's inventory, flatten surrounding land to your own altitude.",
+			"This rod, will, at a nontrivial cost of _Botanical Energy_ from the user's inventory, flatten surrounding land to your own altitude.",
 			"For this to happen, charge it by _holding right-click_, and slowly but surely, the nearby terrain will be flattened to your level, either by placing _Dirt_ or by removing blocks.",
 			"_Blocks removed by the rod are non-recoverable._",
 			"The terrain will adapt to the changes as best as it can (up to a distance limit) to avoid weirdly-shaped hills and so on.",
@@ -1799,7 +1799,7 @@ const itemsToTooltip = [
 		summary: [
 			"_See all the mobs._",
 			"The _Third Eye_ is an sensory aid of sorts.",
-			"When worn in the _Body_ slot, it uses _Mana_ to cause nearby mobs to glow, making them visible even through walls.",
+			"When worn in the _Body_ slot, it uses _Botanical Energy_ to cause nearby mobs to glow, making them visible even through walls.",
 			"Read their positions, not their minds"
 		]
 	},
@@ -1835,9 +1835,9 @@ const itemsToTooltip = [
 	{
 		item: "botania:tiny_planet",
 		summary: [
-			"_Your own personal Mana Burst orbit._",
+			"_Your own personal Botanical Energy Burst orbit._",
 			"The _Tiny Planet_ is a _Trinket_ with gravitational properties.",
-			"When equipped, it pulls nearby _Mana Bursts_ into orbits around its wearer.",
+			"When equipped, it pulls nearby _Botanical Energy Bursts_ into orbits around its wearer.",
 			"By increasing its mass with some _Stone_, it can also be placed as a block for the same effect.",
 			"Clearly from rebirth More of a planet than Pluto..."
 		]
@@ -1846,11 +1846,11 @@ const itemsToTooltip = [
 		item: "botania:tornado_rod",
 		summary: [
 			"_A rod for jumping high into the sky._",
-			"The _Rod of the Skies_ uses _Mana_ to launch its user high in the air.",
+			"The _Rod of the Skies_ uses _Botanical Energy_ to launch its user high in the air.",
 			"To use it, simply right-click with it and watch yourself soar.",
 			"The rod, after usage, will briefly enter a mode where it negates fall-damage, keeping its user safe.",
 			"A treasure from Lorule This rod can be given to a _Livingwood Avatar_.",
-			"When so given, an avatar will use its _Mana_ to launch any players that jump near the avatar as if they'd used the rod themselves...."
+			"When so given, an avatar will use its _Botanical Energy_ to launch any players that jump near the avatar as if they'd used the rod themselves...."
 		]
 	},
 	{
@@ -1858,7 +1858,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Run faster, jump higher, and step more smoothly._",
 			"Traversing lots of terrain sometimes proves to be a hassle.",
-			"The _Sojourner's Sash_ is a _Belt_ that, when worn, uses a trickle of _Mana_ to buff its wearer's movement speed, jump height, and fall-damage resistance.",
+			"The _Sojourner's Sash_ is a _Belt_ that, when worn, uses a trickle of _Botanical Energy_ to buff its wearer's movement speed, jump height, and fall-damage resistance.",
 			"It also allows a non-sneaking wearer to step up one-block-high gaps as if they were stairs.",
 			"...everell"
 		]
@@ -1894,7 +1894,7 @@ const itemsToTooltip = [
 		summary: [
 			"_Move super fast underwater._",
 			"The _Ring of Chordata_ allows its user to swim like, well, a fish.",
-			"When equipped, it uses _Mana_ to bestow an underwater wearer with greater vision, maneuverability, and mining speed, as well as the ability to breathe indefinitely.",
+			"When equipped, it uses _Botanical Energy_ to bestow an underwater wearer with greater vision, maneuverability, and mining speed, as well as the ability to breathe indefinitely.",
 			"Check out that fish AI"
 		]
 	},
@@ -1902,7 +1902,7 @@ const itemsToTooltip = [
 		item: "botania:water_rod",
 		summary: [
 			"_A rod for creating water._",
-			"Similarly to its land-themed counterpart, the _Rod of the Seas_ will (at the cost of some _Mana_) place a block of _Water_ wherever it's used.",
+			"Similarly to its land-themed counterpart, the _Rod of the Seas_ will (at the cost of some _Botanical Energy_) place a block of _Water_ wherever it's used.",
 			"Furthermore, it can refill a _Petal Apothecary_, as well as empty _Buckets_ in the inventory.",
 			"Keep the Earth clean, it isn't Uranus"
 		]
@@ -1920,15 +1920,15 @@ const itemsToTooltip = [
 	{
 		item: /botanicadds:.*necroidus/,
 		summary: [
-			"_Necroidus_ is essentially a wither builder, but uses mana instead.",
+			"_Necroidus_ is essentially a wither builder, but uses Botanical Energy instead.",
 			"You will need to drop soul sand and wither skulls nearby for the flower to build.",
-			"Note: building will be anchored on the blocks above the flower, up to 4 blocks and the creation process doesn't use very much mana."
+			"Note: building will be anchored on the blocks above the flower, up to 4 blocks and the creation process doesn't use very much Botanical Energy."
 		]
 	},
 	{
 		item: /botanicadds:.*rainute/,
 		summary: [
-			"_Rainute_ produces _Mana_ while it's raining.",
+			"_Rainute_ produces _Botanical Energy_ while it's raining.",
 			"Note: This flower doesn't produce anything in snow environment.",
 			"Don't get it too wet!"
 		]
@@ -1945,8 +1945,8 @@ const itemsToTooltip = [
 		item: /botanicadds:.*tempestea/,
 		summary: [
 			"_Tempestea_ is another weather-dependent flower except this one isn't a passive one.",
-			"_Tempestea_ generates mana when a lightning occurs nearby.",
-			"Afterwards, it redirects it on self and generates a lot of mana.",
+			"_Tempestea_ generates Botanical Energy when a lightning occurs nearby.",
+			"Afterwards, it redirects it on self and generates a lot of Botanical Energy.",
 			"This process heats the flower and it needs _roughly a minute_ to cool down.",
 			"Essentially an energy converter!"
 		]
@@ -1955,8 +1955,8 @@ const itemsToTooltip = [
 		item: /botanicadds:.*vibrantia/,
 		summary: [
 			"_Vibrantia_ comes from deep underground, where _Sculk_ lives.",
-			"It harnesses power of _Sculk_ to generate mana when it senses vibrations nearby.",
-			"Making a flower from sculk, however, reduces it's feeling abilities, and thus it can no longer hear mana bursts and other projectiles at all."
+			"It harnesses power of _Sculk_ to generate Botanical Energy when it senses vibrations nearby.",
+			"Making a flower from sculk, however, reduces it's feeling abilities, and thus it can no longer hear Botanical Energy bursts and other projectiles at all."
 		]
 	},
 	{
@@ -1964,7 +1964,7 @@ const itemsToTooltip = [
 		summary: [
 			"The _Apicaria_ is a relaxing flower.",
 			"Not you though, it takes care of keeping your bees calm.",
-			"It channels _Mana_ into angered bees (whom you shouldn't have touched in the first place) and saves the player from bee's anger.",
+			"It channels _Botanical Energy_ into angered bees (whom you shouldn't have touched in the first place) and saves the player from bee's anger.",
 			"It also prevents bees from angering at player when one harvests the _Beehive_'s content.",
 			"Bzzzzzz."
 		]
@@ -1972,15 +1972,15 @@ const itemsToTooltip = [
 	{
 		item: /botanicadds:.*energizera/,
 		summary: [
-			"Through careful energy channeling, this flower creates _Mana_ from _Forge Energy_.",
+			"Through careful energy channeling, this flower creates _Botanical Energy_ from _Forge Energy_.",
 			"Any nearby blocks, containing _Forge Energy_ will feed the flower with energy.",
-			"Power is mana!"
+			"Power is Botanical Energy!"
 		]
 	},
 	{
 		item: "botanicadds:mana_tesseract",
 		summary: [
-			"Transporting mana over insane distances, especially between dimensions was a dream, until now! _Mana Tesseract_ is your new way of transporting mana! Of course it's far from perfect, but at least it can get you going.",
+			"Transporting Botanical Energy over insane distances, especially between dimensions was a dream, until now! _Botanical Energy Tesseract_ is your new way of transporting Botanical Energy! Of course it's far from perfect, but at least it can get you going.",
 			"To change channels, you'll need to rename the _Tesseract Attunement Tool_.",
 			"Space may be broken..."
 		]
@@ -1989,8 +1989,8 @@ const itemsToTooltip = [
 		item: "botanicadds:elven_altar",
 		summary: [
 			"_Elven Altar_ is suitable for faster crafting.",
-			"By improving it with _Dragonstone_ and _Dreamrock_ you can get an altar that is capable of accepting _Mana_ from _Sparks_.",
-			"Since they transfer mana much faster, this seems to be an important device to upgrade!"
+			"By improving it with _Dragonstone_ and _Dreamrock_ you can get an altar that is capable of accepting _Botanical Energy_ from _Sparks_.",
+			"Since they transfer Botanical Energy much faster, this seems to be an important device to upgrade!"
 		]
 	},
 	{
@@ -2010,7 +2010,7 @@ const itemsToTooltip = [
 	{
 		item: "botanicadds:dreaming_pool",
 		summary: [
-			"_Dreaming Mana Pool_ is another pool of mana, made from _Dreamrock_.",
+			"_Dreaming Botanical Energy Pool_ is another pool of Botanical Energy, made from _Dreamrock_.",
 			"This pool is twice larger than a normal pool.",
 			"Enjoy!"
 		]
@@ -2018,8 +2018,8 @@ const itemsToTooltip = [
 	{
 		item: "botanicadds:mana_stealer_sword",
 		summary: [
-			"_Mana Stealing Blade_ is an improvement to _Terra Blade_.",
-			"This time though, it deals more damage AND it's capable of drawing mana from your enemy players!"
+			"_Botanical Energy Stealing Blade_ is an improvement to _Terra Blade_.",
+			"This time though, it deals more damage AND it's capable of drawing Botanical Energy from your enemy players!"
 		]
 	},
 	{
@@ -2033,29 +2033,30 @@ const itemsToTooltip = [
 		item: "botanicadds:aura_ring_gaia",
 		summary: [
 			"The _Gaia Band of Aura_ is an upgrade to _Greater Band of Aura_ with a piece of _Gaiasteel_.",
-			"This band creates mana twice as fast, as a _Greater Band of Aura_!"
+			"This band creates Botanical Energy twice as fast, as a _Greater Band of Aura_!"
 		]
 	},
 	{
 		item: "botanicadds:mana_ring_gaia",
 		summary: [
-			"The _Gaia Band of Mana_ is an upgrade to _Greater Band of Mana_ with a piece of _Gaiasteel_.",
-			"This band stores about four times as much mana, as a _Greater Band of Mana_!"
+			"The _Gaia Band of Botanical Energy_ is an upgrade to _Greater Band of Botanical Energy_ with a piece of _Gaiasteel_.",
+			"This band stores about four times as much Botanical Energy, as a _Greater Band of Botanical Energy_!"
 		]
 	},
 	{
 		item: "botanicadds:gaiasteel_pylon",
 		summary: [
 			"The _Gaiasteel Pylon_ is a better version of _Natura Pylon_.",
-			"By applying some _Gaiasteel_ to _Natura Pylon_, it can be upgraded, thus reducing any mana cost for operating _The Portal to Alfheim_ by around four times."
+			"By applying some _Gaiasteel_ to _Natura Pylon_, it can be upgraded, thus reducing any Botanical Energy cost for operating _The Portal to Alfheim_ by around four times."
 		]
 	},
 	{
 		item: "botanicadds:elven_fluxfield",
 		summary: [
-			"Improving on _Mana Fluxfield_ with elven resources allows one to attach spark to the Fluxfield, while also improving it's overall capacity."
+			"Improving on _Botanical Energy Fluxfield_ with elven resources allows one to attach spark to the Fluxfield, while also improving it's overall capacity."
 		]
 	},
+
 	// Ars Nouveau
 	{
 		item: "ars_nouveau:agronomic_sourcelink",
@@ -3631,6 +3632,43 @@ const itemsToTooltip = [
 					"",
 					"⬛ - _Forge material_ (listed in the tooltip)",
 					"_⬜_ - _Forge block_"
+				]
+			}
+		]
+	},
+	{
+		item: 'rediscovered:nether_reactor_core',
+		// summary: [],
+		controls: [
+			{
+				control: "Powering a Nether Reactor Core",
+				noBaseText: true,
+				text: [
+					"Nether Reactor Core can be powered",
+					"by building a _multiblock structure_:",
+					"  _⬜_⬛_⬜_          ⬛           ⬛",
+					"  ⬛⬛⬛        ⬛_🟧_⬛       ⬛⬛⬛",
+					"  _⬜_⬛_⬜_          ⬛            ⬛",
+					"",
+					"⬛ - _Cobblestone_",
+					"_⬜_ - _Block of Gold/Netherite_",
+					"_🟧_ - _Nether Reactor Core_"
+				]
+			},
+			{
+				control: 'powered',
+				requiresHold: false,
+				text: [
+					'Increases damage and defense of players in a large radius.',
+					'Building the base out of Blocks of Netherite increases effect potency.',
+					'Cobblestone used to build the frame will be turned into Glowing Obsidian.'
+				]
+			},
+			{
+				control: 'powered and a Piglin/Pigman is nearby',
+				requiresHold: false,
+				text: [
+					'Prevents zombification outside of native dimension.'
 				]
 			}
 		]

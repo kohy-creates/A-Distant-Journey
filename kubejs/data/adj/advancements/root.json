@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bedrock"
+		},
+		"title": "ADJ Root",
+		"description": "",
+		"background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"cod": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"requirements": [],
+	"sends_telemetry_event": false
+}

@@ -265,6 +265,11 @@
 		"mythicmetals:carmot_helmet",
 		"mythicmetals:carmot_chestplate",
 		"mythicmetals:carmot_leggings",
+		"mythicmetals:carmot_sword",
+		"mythicmetals:carmot_axe",
+		"mythicmetals:carmot_shovel",
+		"mythicmetals:carmot_pickaxe",
+		"mythicmetals:carmot_hoe",
 		"mythicmetals:carmot_boots",
 		"mythicmetals:carmot_block",
 		"mythicmetals:carmot_ore",
@@ -562,6 +567,8 @@
 		"ars_nouveau:battlemage_leggings",
 		"ars_nouveau:battlemage_robes",
 		"ars_nouveau:battlemage_hood",
+
+		"nourished_nether:glowing_obsidian"
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
 	

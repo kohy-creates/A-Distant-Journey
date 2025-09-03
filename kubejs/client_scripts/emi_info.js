@@ -162,9 +162,12 @@ JEIEvents.information(event => {
 	event.addItem(['minecraft:ancient_debris', 'minecraft:netherite_ingot', 'minecraft:netherite_scrap', 'minecraft:netherite_block'], [
 		'Netherite generates in The Nether only after collecting the Eye of Angels.'
 	])
-	event.addItem(['majruszsdifficulty:enderium_shard_ore', 'majruszsdifficulty:enderium_ingot', 'majruszsdifficulty:enderium_block', 'majruszsdifficulty:enderium_shard'], [
-		'Enderium generates in The End only after The Ender Dragon is defeated.'
+	event.addItem(['minecraft:ancient_debris',], [
+		'Spelunker Potions do not highlight Ancient Debris. To compensate, Debris generates slightly more frequently'
 	])
+	// event.addItem(['majruszsdifficulty:enderium_shard_ore', 'majruszsdifficulty:enderium_ingot', 'majruszsdifficulty:enderium_block', 'majruszsdifficulty:enderium_shard'], [
+	// 	'Enderium generates in The End only after The Ender Dragon is defeated.'
+	// ])
 
 	/*
 		Enchanting

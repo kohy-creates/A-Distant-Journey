@@ -9,7 +9,7 @@ to make editing this file much easier.
 */
 {
 	// Generates all block states for all blocks in the registry.
-	"generate_all_known_states": true,
+	"generate_all_known_states": false,
 	// Whether blocks are replaced in existing chunks.
 	"retro_gen": false,
 	/* A map of states that specifies what the "old" block state is and what its "new" block state is.
@@ -76,7 +76,73 @@ to make editing this file much easier.
 	    	}
 	    ]
 	*/
-	"state_swapper": [],
+	"state_swapper": [
+		{	
+			"new": {
+				"Name": "adjblocks:cattail",
+				"Properties": {
+					"half": "upper",
+					"waterlogged": "true"
+				}
+			},
+			"old": {
+				"Name": "verdantvibes:cattails",
+				"Properties": {
+					"half": "upper",
+					"waterlogged": "true"
+				}
+			}
+		},
+		{	
+			"new": {
+				"Name": "adjblocks:cattail",
+				"Properties": {
+					"half": "lower",
+					"waterlogged": "true"
+				}
+			},
+			"old": {
+				"Name": "verdantvibes:cattails",
+				"Properties": {
+					"half": "lower",
+					"waterlogged": "true"
+				}
+			}
+		},
+
+		{	
+			"new": {
+				"Name": "adjblocks:cattail",
+				"Properties": {
+					"half": "upper",
+					"waterlogged": "false"
+				}
+			},
+			"old": {
+				"Name": "verdantvibes:cattails",
+				"Properties": {
+					"half": "upper",
+					"waterlogged": "false"
+				}
+			}
+		},
+		{	
+			"new": {
+				"Name": "adjblocks:cattail",
+				"Properties": {
+					"half": "lower",
+					"waterlogged": "false"
+				}
+			},
+			"old": {
+				"Name": "verdantvibes:cattails",
+				"Properties": {
+					"half": "lower",
+					"waterlogged": "false"
+				}
+			}
+		},
+	],
 	/* A map of blocks that specifies what the "old" block is and what its "new" block is.
 	   Example:
 	   	"swapper": {

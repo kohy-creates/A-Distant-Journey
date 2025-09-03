@@ -109,7 +109,7 @@ global.hpModifications = {
 	'mutantmonsters:spider_pig': [135, 12, 0],
 	'mutantmonsters:endersoul_clone': [1, 1, 0],
 	'phantasm:crystie': [60, 10, 0],
-	'phantasm:behemoth': [300, 75, 0],
+	'phantasm:behemoth': [300, 55, 0],
 	'galosphere:sparkle': [50, 15, 0],
 	'galosphere:spectre': [20, 10, 0],
 	'galosphere:specterpillar': [10, 15, 0],

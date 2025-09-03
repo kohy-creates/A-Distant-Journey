@@ -98,6 +98,8 @@ PlayerEvents.tick(event => {
 			}
 		}
 	}
+
+	tickBonus(player)
 });
 
 PlayerEvents.respawned(event => removeBonus(event.player));
@@ -145,7 +147,49 @@ function removeBonus(player) {
 }
 
 EntityEvents.hurt('player', event => {
-	if (event.getPlayer().tags.includes('adj.set_bonus_active.mythicmetals.kyber')) {
-		event.getSource().getActual().hurt(event.getDamage(), event.getLevel().getRandom(), event.getPlayer());
+	console.log(setBonusActive(event.getPlayer(), 'mythicmetals:kyber'))
+	if (setBonusActive(event.getPlayer(), 'mythicmetals:kyber') && event.getSource().getActual()) {
+		event.getPlayer().getServer().runCommandSilent(
+			// entity.hurt didn't work cause why would it
+			// Nothing to see here, just KubeJS being KubeJS
+			`/damage ${event.getSource().getActual().getUuid().toString()} ${event.damage * 0.66} thorns by ${event.getPlayer().username}`
+		)
 	}
 })
+
+/**
+ * Doing those as a function for the sake of visual clarity in this file
+ * @param {Internal.Player} player 
+ */
+function tickBonus(player) {
+	if (setBonusActive(player, 'born_in_chaos_v1:dark_metal_armor')) {
+		const percentHP = Math.round((player.health / player.maxHealth) * 100);
+
+		if (percentHP <= 80) {
+			let amplifier = 0;
+			if (percentHP <= 20) amplifier = 3;
+			else if (percentHP <= 40) amplifier = 2;
+			else if (percentHP <= 60) amplifier = 1;
+
+			player.addEffect(new $MobEffectInstance('born_in_chaos_v1:light_rampage', 10, amplifier, true, true, true))
+		}
+		if (percentHP < 10) {
+			player.removeEffect('born_in_chaos_v1:medium_rampage');
+			player.removeEffect('born_in_chaos_v1:strong_rampage');
+			player.removeEffect('born_in_chaos_v1:furious_rampage');
+			player.removeEffect('born_in_chaos_v1:rampant_rampage');
+			player.removeEffect('hunger');
+		}
+
+	}
+}
+
+/**
+ * @param {Internal.Player} player 
+ * @param {string} bonus 
+ * @returns {boolean}
+ */
+function setBonusActive(player, bonus) {
+	const lookFor = bonus.split(':');
+	return player.tags.toArray().includes(`adj.set_bonus.${lookFor[0]}.${lookFor[1]}`);
+}

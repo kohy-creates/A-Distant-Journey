@@ -241,7 +241,7 @@
 	#Range: 0.0 ~ 180.0
 	player_y_rot_follow_angle_limit = 90.0
 	#Whether or not to turn the player model transparent when aiming. This config option only applies when adjust player transparency is enabled.
-	turn_player_transparent_when_aiming = false
+	turn_player_transparent_when_aiming = true
 
 	[player.turning]
 		#Whether to turn the player when using an item. This config option only applies when camera is decoupled.

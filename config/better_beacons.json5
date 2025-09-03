@@ -30,7 +30,7 @@
 	"beaconBeam": {
 		"allowRedirecting": true,
 		"allowTransparency": true,
-		"horizontalMoveLimit": 64
+		"horizontalMoveLimit": 256
 	},
 	"beaconButtons": {
 		"cancelButtonRemoveEffects": true,

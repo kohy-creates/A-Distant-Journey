@@ -18,44 +18,412 @@
 			y: 3.0d
 		}
 		{
-			height: 1.5d
+			height: 1.75d
 			image: "minecraft:block/lava_still"
 			rotation: 0.0d
-			width: 1.5d
+			width: 1.75d
 			x: 12.0d
 			y: 5.0d
 		}
 		{
-			height: 0.35d
-			image: "visuality:textures/particle/underwater_bubble.png"
+			dependency: "379A22A2185CFC8E"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_1.png"
 			rotation: 0.0d
-			width: 0.35d
-			x: 2.8265306122448948d
-			y: 6.8948979591836945d
+			width: 5.0d
+			x: 25.0d
+			y: 3.5d
 		}
 		{
-			height: 0.2d
-			image: "visuality:textures/particle/underwater_bubble.png"
+			dependency: "574DD3FD26A23CDE"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_2.png"
 			rotation: 0.0d
-			width: 0.2d
-			x: 2.602040816326543d
-			y: 6.65000000000002d
+			width: 5.0d
+			x: 28.5d
+			y: 16.0d
 		}
 		{
-			height: 0.42d
-			image: "visuality:textures/particle/underwater_bubble.png"
+			dependency: "25A8ABBC7235D20E"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_3.png"
 			rotation: 0.0d
-			width: 0.42d
+			width: 5.0d
+			x: 23.0d
+			y: 25.5d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_grass.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
 			x: 2.5d
-			y: 7.262244897959199d
+			y: 2.0d
 		}
 		{
-			height: 0.5d
-			image: "visuality:textures/particle/underwater_bubble.png"
+			height: 5.0d
+			image: "adj:textures/other/bg_grass_dirt.png"
+			order: -999
 			rotation: 0.0d
-			width: 0.5d
-			x: 2.799659863945614d
-			y: 7.655782312925176d
+			width: 10.0d
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_stone_ores.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_nether_ores.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 15.5d
+			y: 6.5d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 5.0d
+			image: "adj:textures/other/bg_nether_blackstone.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 24.0d
+			y: 4.0d
+		}
+		{
+			dependency: "20130F300D432015"
+			height: 5.0d
+			image: "adj:textures/other/bg_nether_ores_2.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 21.5d
+			y: 9.5d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 5.0d
+			image: "adj:textures/other/bg_aether_dirt.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 24.5d
+			y: 13.5d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 5.0d
+			image: "adj:textures/other/bg_aether_dirt.png"
+			order: -999
+			rotation: 180.0d
+			width: 10.0d
+			x: 28.0d
+			y: 16.0d
+		}
+		{
+			dependency: "25A8ABBC7235D20E"
+			height: 5.0d
+			image: "adj:textures/other/bg_grass.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 19.5d
+			y: 22.5d
+		}
+		{
+			dependency: "25A8ABBC7235D20E"
+			height: 5.0d
+			image: "adj:textures/other/bg_grass.png"
+			order: -999
+			rotation: 180.0d
+			width: 10.0d
+			x: 21.798639455782293d
+			y: 26.122108843537426d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 5.0d
+			image: "adj:textures/other/bg_stone_ores_3.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 29.417687074829914d
+			y: 23.836394557823127d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 5.0d
+			image: "adj:textures/other/bg_stone_ores_2.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 21.5d
+			y: 0.5d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 5.0d
+			image: "adj:textures/other/bg_nether_debris.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 30.893877551020395d
+			y: 19.45544217687076d
+		}
+		{
+			dependency: "1F3DB68EA2A45EB7"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_4.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 7.0d
+			y: 20.5d
+		}
+		{
+			dependency: "1F3DB68EA2A45EB7"
+			height: 5.609981515711645d
+			image: "adj:textures/other/bg_void.png"
+			order: -999
+			rotation: -45.0d
+			width: 10.0d
+			x: 9.5d
+			y: 22.5d
+		}
+		{
+			height: 1.75d
+			image: "minecraft:block/cake_top"
+			rotation: 0.0d
+			width: 1.75d
+			x: 8.5d
+			y: 5.0d
+		}
+		{
+			height: 1.75d
+			image: "enchantinginfuser:block/enchanting_infuser_top_amethyst"
+			rotation: 0.0d
+			width: 1.75d
+			x: 15.0d
+			y: 9.5d
+		}
+		{
+			height: 2.0d
+			image: "tide:block/angler_workshop_top"
+			rotation: 0.0d
+			width: 2.0d
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 1.75d
+			image: "minecraft:block/beacon_glass"
+			rotation: 45.0d
+			width: 1.75d
+			x: 25.0d
+			y: 8.0d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 1.75d
+			image: "rediscovered:block/nether_reactor_core"
+			rotation: 45.0d
+			width: 1.75d
+			x: 26.5d
+			y: 10.0d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 1.75d
+			image: "aether:block/utility/altar_side"
+			rotation: 0.0d
+			width: 1.75d
+			x: 28.5d
+			y: 13.0d
+		}
+		{
+			dependency: "25A8ABBC7235D20E"
+			height: 1.75d
+			image: "rediscovered:block/ancient_crying_obsidian"
+			rotation: 0.0d
+			width: 1.75d
+			x: 19.0d
+			y: 21.0d
+		}
+		{
+			dependency: "25A8ABBC7235D20E"
+			height: 1.75d
+			image: "rediscovered:block/glowing_obsidian"
+			rotation: 0.0d
+			width: 1.75d
+			x: 17.0d
+			y: 23.0d
+		}
+		{
+			dependency: "1F3DB68EA2A45EB7"
+			height: 1.75d
+			image: "cataclysm:block/chiseled_end_stone_bricks"
+			rotation: 45.0d
+			width: 1.75d
+			x: 7.0d
+			y: 23.0d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/texts/chapter_0.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 1.0833333333333854d
+			y: 0.8095238095238031d
+		}
+		{
+			height: 6.0d
+			image: "adj:textures/texts/quote.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			height: 1.25d
+			image: "buzzier_bees:item/honey_bread"
+			rotation: 0.0d
+			width: 1.25d
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependency: "6E9823FB2C7C6D19"
+			height: 2.25d
+			image: "minecraft:item/ender_eye"
+			rotation: 0.0d
+			width: 2.25d
+			x: 11.5d
+			y: 21.0d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 1.75d
+			image: "aether:block/construction/enchanted_gravitite"
+			rotation: 45.0d
+			width: 1.75d
+			x: 31.0d
+			y: 13.0d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 1.75d
+			image: "kubejs:block/adamantite_forge_casing"
+			rotation: 45.0d
+			width: 1.75d
+			x: 28.5d
+			y: 21.5d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 1.75d
+			image: "born_in_chaos_v1:block/bloktiemnoistali"
+			rotation: 45.0d
+			width: 1.75d
+			x: 17.5d
+			y: 7.0d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 1.75d
+			image: "mythicmetals:block/mythril_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 19.5d
+			y: 2.0d
+		}
+		{
+			height: 1.75d
+			image: "toms_storage:block/cable_frame"
+			rotation: 45.0d
+			width: 1.75d
+			x: 10.80952380952381d
+			y: 1.357142857142847d
+		}
+		{
+			height: 1.75d
+			image: "phantasm:block/crystal_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 13.309523809523817d
+			y: 10.714285714285701d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 1.75d
+			image: "minecraft:block/netherite_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 30.5d
+			y: 20.0d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 1.75d
+			image: "mythicmetals:block/hallowed_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 27.0d
+			y: 24.0d
+		}
+		{
+			dependency: "4564BF670D10E0FA"
+			height: 5.609981515711645d
+			image: "adj:textures/other/bg_void.png"
+			order: -999
+			rotation: 45.0d
+			width: 10.0d
+			x: 3.0d
+			y: 20.5d
+		}
+		{
+			dependency: "4564BF670D10E0FA"
+			height: 5.609981515711645d
+			image: "adj:textures/other/bg_void.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: -0.5d
+			y: 23.0d
+		}
+		{
+			dependency: "1F3DB68EA2A45EB7"
+			height: 1.75d
+			image: "majruszsdifficulty:block/enderium_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 4.5d
+			y: 27.0d
+		}
+		{
+			dependency: "6E9823FB2C7C6D19"
+			height: 2.25d
+			image: "minecraft:item/ender_eye"
+			rotation: 0.0d
+			width: 2.25d
+			x: -2.0d
+			y: 20.5d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 1.75d
+			image: "kubejs:block/ender_forge_casing"
+			rotation: 45.0d
+			width: 1.75d
+			x: 0.5d
+			y: 19.0d
 		}
 	]
 	order_index: 1
@@ -286,7 +654,7 @@
 				type: "item"
 			}]
 			title: "Suit Up"
-			x: 13.5d
+			x: 13.0d
 			y: 1.5d
 		}
 		{
@@ -394,65 +762,30 @@
 				}
 			]
 			title: "Enchanter"
-			x: 15.5d
-			y: 8.5d
+			x: 15.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
 				"5C3628B6D376AB8F"
 				"522528FDCD548F12"
+				"026FAA23BB2CF1CA"
 			]
-			description: [
-				"&lHINT: &rYou can light the Nether Portal by using a &cFlint and Steel &ron your newly built frame!"
-				""
-				"You probably knew that already."
-			]
+			dependency_requirement: "one_completed"
+			description: [""]
 			icon: "minecraft:netherrack"
 			id: "379A22A2185CFC8E"
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Build a Nether Portal"
-			tasks: [
-				{
-					dimension: "minecraft:the_nether"
-					disable_toast: true
-					icon: "minecraft:netherrack"
-					id: "5551CAD2F1D0B938"
-					title: "Enter the Portal"
-					type: "dimension"
-				}
-				{
-					count: 14L
-					disable_toast: true
-					id: "49EB8F36DC1898CD"
-					item: { Count: 14, id: "minecraft:obsidian" }
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "181FDF1E92C2F9F0"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "c:tools/igniter"
-						}
-					}
-					title: "Any Flint and Steel"
-					type: "item"
-				}
-				{
-					hasCustomPicture: false
-					icon: "handcrafted:hammer"
-					id: "59305D169C03671B"
-					ignoreState: true
-					layer: false
-					name: "nether_portal"
-					rightclick: false
-					title: "Construct a Nether Portal"
-					type: "questsadditions:structure"
-				}
-			]
+			subtitle: "Build and enter a Nether Portal"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "minecraft:netherrack"
+				id: "5551CAD2F1D0B938"
+				title: "Enter the Portal"
+				type: "dimension"
+			}]
+			title: "We Need to Go Deeper"
 			x: 16.0d
 			y: 5.0d
 		}
@@ -814,7 +1147,7 @@
 				type: "item"
 			}]
 			title: "Librarian"
-			x: 16.0d
+			x: 16.5d
 			y: 9.5d
 		}
 		{
@@ -830,7 +1163,10 @@
 				"{@pagebreak}"
 				"Having troubles understanding how to craft it? Look into the &5Ars Nouveau&r chapter!"
 			]
+			icon_scale: 0.75d
 			id: "1770E10AFE083ACF"
+			shape: "diamond"
+			size: 1.5d
 			subtitle: "Craft Limitite to increase an item's enchantment cap"
 			tasks: [{
 				id: "1DEAC7685F623CAB"
@@ -838,16 +1174,12 @@
 				type: "item"
 			}]
 			title: "Unlimited"
-			x: 15.0d
-			y: 9.5d
+			x: 13.309523809523817d
+			y: 10.714285714285701d
 		}
 		{
 			dependencies: ["3C48F0B4F29CF0A8"]
-			description: [
-				"Your diet is an important factor in getting stronger."
-				""
-				"In your inventory, you have a '&cDiet&r' tab. Eating certain types of food is going to increase the meters present there, up to &a100%&r. At certain values, you are going to receive buffs &ofor as long as you keep the meters up&r!"
-			]
+			description: [""]
 			id: "369CDCF4288D6D76"
 			optional: true
 			shape: "rsquare"
@@ -951,32 +1283,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["6967EAC78DBCC52D"]
-			id: "2765525D5985B750"
-			optional: true
-			shape: "rsquare"
-			subtitle: "Upgrade your Fishing Rod to its Iron variant."
-			tasks: [{
-				id: "7ECBE55A90BD0AFD"
-				item: {
-					Count: 1
-					id: "tide:iron_fishing_rod"
-					tag: {
-						Damage: 0
-						modifier: {
-							bobber: { }
-							hook: { }
-							line: { }
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "Time to Fish BETTER!"
-			x: 4.0d
-			y: 6.5d
-		}
-		{
 			dependencies: ["7D5AA020D867BC37"]
 			id: "18F794CFEE554641"
 			subtitle: "Get some Leather"
@@ -986,15 +1292,18 @@
 				type: "item"
 			}]
 			title: "Cow Tipper"
-			x: 8.5d
-			y: 0.0d
+			x: 9.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
 				"18F794CFEE554641"
 				"4C1D62C4B13A0CE0"
 			]
+			icon_scale: 0.75d
 			id: "3CEF12213D904295"
+			shape: "diamond"
+			size: 1.5d
 			subtitle: "Craft a Backpack to increase your inventory space"
 			tasks: [{
 				id: "7A862ACC7479B9DA"
@@ -1002,8 +1311,8 @@
 				type: "item"
 			}]
 			title: "Backpacked!"
-			x: 10.5d
-			y: 1.5d
+			x: 10.80952380952381d
+			y: 1.357142857142847d
 		}
 		{
 			dependencies: ["3C48F0B4F29CF0A8"]
@@ -1078,7 +1387,7 @@
 				title: "A Distant Journey"
 				type: "advancement"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: 3.0d
 		}
 		{
@@ -1092,7 +1401,7 @@
 			}]
 			title: "Who's Cutting Onions?"
 			x: 16.0d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0B0DF609ABC8773D"]
@@ -1104,7 +1413,7 @@
 				type: "item"
 			}]
 			title: "Into Fire"
-			x: 20.5d
+			x: 21.0d
 			y: 5.5d
 		}
 		{
@@ -1118,17 +1427,26 @@
 			}]
 			title: "Local Brewery"
 			x: 22.0d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0B0DF609ABC8773D"]
+			icon: "kubejs:skull_fragment"
 			id: "19E87E63C5C295AE"
 			subtitle: "Obtain a Wither Skeleton Skull"
-			tasks: [{
-				id: "7A32E319C9C01133"
-				item: "minecraft:wither_skeleton_skull"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7A32E319C9C01133"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "664A5F004FFCAE89"
+					item: "kubejs:skull_fragment"
+					type: "item"
+				}
+			]
 			title: "Spooky Scary Skeletons"
 			x: 21.0d
 			y: 7.0d
@@ -1160,8 +1478,8 @@
 				}
 			]
 			title: "Pizza Hunt!"
-			x: 16.0d
-			y: 1.5d
+			x: 16.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
@@ -1177,7 +1495,7 @@
 			}]
 			title: "Those Were The Days"
 			x: 19.0d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
@@ -1209,7 +1527,7 @@
 			]
 			title: "From The Depths"
 			x: 18.5d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1FA64BA25CA7A8D3"]
@@ -1250,10 +1568,8 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"379A22A2185CFC8E"
-				"6D19FADBF72AC531"
-			]
+			dependencies: ["379A22A2185CFC8E"]
+			hide_until_deps_complete: true
 			id: "49D421ADF1794A16"
 			subtitle: "Craft a Hellforge"
 			tasks: [{
@@ -1262,8 +1578,8 @@
 				type: "item"
 			}]
 			title: "Hell's Alloy Kitchen"
-			x: 17.0d
-			y: 6.5d
+			x: 19.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["336C2A75C5BFF1B8"]
@@ -1275,8 +1591,8 @@
 				type: "item"
 			}]
 			title: "Awakened"
-			x: 22.0d
-			y: 6.0d
+			x: 23.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["19E87E63C5C295AE"]
@@ -1298,10 +1614,10 @@
 		}
 		{
 			dependencies: ["5A24E62380261206"]
-			icon: "minecraft:nether_star"
+			icon: "kubejs:eye_of_cinders"
 			id: "20130F300D432015"
 			shape: "hexagon"
-			size: 2.0d
+			size: 3.0d
 			subtitle: "Slay the Wither and collect the Eye of Cinders"
 			tasks: [{
 				id: "6087089B4CF44C39"
@@ -1309,11 +1625,13 @@
 				type: "item"
 			}]
 			title: "The Beginning"
-			x: 23.0d
-			y: 10.0d
+			x: 22.958163265306112d
+			y: 10.414965986394542d
 		}
 		{
 			dependencies: ["20130F300D432015"]
+			hide_until_deps_complete: true
+			icon: "mythicmetals:palladium_ingot"
 			id: "24B17C04E6963192"
 			subtitle: "Go to the very depths of The Nether in search of Palladium"
 			tasks: [
@@ -1328,58 +1646,34 @@
 					type: "item"
 				}
 			]
-			title: "From the Depths"
-			x: 21.5d
-			y: 12.0d
+			title: "From the Depths of Hell"
+			x: 21.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["20130F300D432015"]
 			description: [
-				"&lHINT: &rYou can light the Aether Portal by using a &bWater Bucket &ron your newly built frame!"
+				"&l&7HINT:&r You can light the Aether Portal by using a &bWater Bucket &ron your newly built frame!"
 				""
 				"You probably knew that already too. We were all disappointed to learn it wasn't real... But it is here!"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:glowstone"
 			id: "574DD3FD26A23CDE"
-			subtitle: "Venture into The Aether - the hellish paradise, or heavenly hell?"
-			tasks: [
-				{
-					hasCustomPicture: false
-					icon: "handcrafted:hammer"
-					id: "42FC72E81F668F2F"
-					ignoreState: false
-					layer: false
-					name: "aether_portal"
-					rightclick: false
-					title: "Construct an Aether Portal"
-					type: "questsadditions:structure"
-				}
-				{
-					count: 14L
-					disable_toast: true
-					id: "0318AC1AB9D0EBFF"
-					item: "minecraft:glowstone"
-					title: "Glowstone"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "27E7252592776E28"
-					item: "minecraft:water_bucket"
-					type: "item"
-				}
-				{
-					dimension: "aether:the_aether"
-					disable_toast: true
-					icon: "aether:aether_grass_block"
-					id: "74B60555C4F8283C"
-					title: "Enter the Portal"
-					type: "dimension"
-				}
-			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Venture into The Aether, a hostile paradise"
+			tasks: [{
+				dimension: "aether:the_aether"
+				disable_toast: true
+				icon: "aether:aether_grass_block"
+				id: "74B60555C4F8283C"
+				title: "Enter the Portal"
+				type: "dimension"
+			}]
 			title: "Can We Get Much Higher?"
-			x: 25.0d
-			y: 11.5d
+			x: 23.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["5AEA2A64181AED93"]
@@ -1390,7 +1684,10 @@
 					Damage: 0
 				}
 			}
+			icon_scale: 0.75d
 			id: "4AA4F99AC384B52F"
+			shape: "diamond"
+			size: 1.5d
 			subtitle: "Construct a Mythrill Drill"
 			tasks: [
 				{
@@ -1422,8 +1719,1490 @@
 				}
 			]
 			title: "Drillers"
-			x: 20.5d
+			x: 19.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			description: ["&l&7HINT:&r Tools that don't originate from The Aether are less efficient in that dimension."]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "aether:skyroot_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "34A59C4497FDDB7F"
+			subtitle: "Craft any Skyroot Tool and slowly climb up the progression ladder. Again"
+			tasks: [{
+				id: "08257CC485AC63DF"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "aether:skyroot_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:skyroot_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:skyroot_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:skyroot_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:skyroot_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Skyroot Tool"
+				type: "item"
+			}]
+			title: "Back to the (Sky)Roots"
+			x: 25.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["6AAB7BBD64FB4562"]
+			id: "03DC59E95C1B2EB0"
+			subtitle: "Create Hallowed Alloy. Any resemblance to other games is *purely* a coincidence"
+			tasks: [{
+				id: "123F1C3BA3930C5F"
+				item: "mythicmetals:hallowed_ingot"
+				type: "item"
+			}]
+			title: "Hallowed Be Thy Name"
+			x: 27.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["3B047A7072164813"]
+			description: [""]
+			icon: {
+				Count: 1
+				id: "aether:zanite_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "62D18A72555F22DC"
+			subtitle: "Craft any Zanite Tool"
+			tasks: [{
+				id: "549CF55ABD5B9244"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "aether:zanite_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:zanite_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:zanite_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:zanite_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:zanite_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Zanite Tool"
+				type: "item"
+			}]
+			title: "Isn't It Zanite Pick?"
+			x: 27.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6541FB163E3300CE"]
+			description: [""]
+			icon: {
+				Count: 1
+				id: "aether:gravitite_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3AB9D9EC6B0EE0A0"
+			subtitle: "Upgrade your Zanite tools to their Gravitite equivalents"
+			tasks: [{
+				id: "721DC7A8BEA9871F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "aether:gravitite_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:gravitite_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:gravitite_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:gravitite_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:gravitite_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Gravitite Tool"
+				type: "item"
+			}]
+			title: "Heavenforged"
+			x: 30.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6B4A4956BDF1E1AB"]
+			icon: "cataclysm:mech_eye"
+			id: "26A9109005EE03BF"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Attune an Awakened Ender Pearl. It will now guide you to a specific structure"
+			tasks: [{
+				id: "6B372FC31E51D4D5"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:attuned_pearls"
+					}
+				}
+				title: "Any Attuned Pearl"
+				type: "item"
+			}]
+			title: "Wayfinder"
+			x: 24.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			hide_until_deps_complete: true
+			icon: "aether:bronze_dungeon_key"
+			id: "2BA00BEE5144D82B"
+			subtitle: "Find a Bronze Dungeon"
+			tasks: [{
+				id: "423AFB6DEEF550B7"
+				structure: "aether:bronze_dungeon"
+				title: "Find Bronze Dungeon"
+				type: "structure"
+			}]
+			title: "Bronze Dungeon"
+			x: 21.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["03DC59E95C1B2EB0"]
+			icon_scale: 0.75d
+			id: "2ED660D1CBFA01C4"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Pour time into an Empty Bottle"
+			tasks: [{
+				id: "1BA63E9F989F5C78"
+				item: {
+					Count: 1
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Time is Money"
+			x: 27.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["2BA00BEE5144D82B"]
+			icon: "aether:carved_stone"
+			id: "353921E41B80F09D"
+			subtitle: "Kill the Slider, an animated block of bricks"
+			tasks: [
+				{
+					id: "7D581E46913354F2"
+					item: "aether:bronze_dungeon_key"
+					type: "item"
+				}
+				{
+					entity: "aether:slider"
+					icon: "aether:bronze_dungeon_key"
+					id: "0174AFD13E6D9478"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 21.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			hide_until_deps_complete: true
+			icon: "aether:gold_dungeon_key"
+			id: "501980860925DC72"
+			subtitle: "Find a Gold Dungeon"
+			tasks: [{
+				id: "0F8299E5D856DAB0"
+				structure: "aether:gold_dungeon"
+				title: "Find Gold Dungeon"
+				type: "structure"
+			}]
+			title: "Gold Dungeon"
+			x: 24.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			description: [""]
+			hide_until_deps_complete: true
+			icon: "aether:silver_dungeon_key"
+			id: "554D78E50EBB7EF8"
+			subtitle: "Find a Silver Dungeon"
+			tasks: [{
+				id: "0E6651260651D9F0"
+				structure: "aether:silver_dungeon"
+				title: "Find Silver Dungeon"
+				type: "structure"
+			}]
+			title: "Silver Dungeon"
+			x: 22.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			hide_until_deps_complete: true
+			icon: "lost_aether_content:platinum_key"
+			id: "170CD4B41CA6F9C1"
+			subtitle: "Find a Platinum Dungeon"
+			tasks: [{
+				id: "4BBC4E6D6F7BB2A5"
+				structure: "lost_aether_content:platinum_dungeon"
+				title: "Find a Platinum Dungeon"
+				type: "structure"
+			}]
+			title: "Platinum Dungeon"
+			x: 25.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["554D78E50EBB7EF8"]
+			icon: "aether:victory_medal"
+			id: "0CC3E441C652E02E"
+			subtitle: "Kill the Valkyrie Queen, the leader of the Aether's fiercest fighters"
+			tasks: [
+				{
+					id: "497089C8061C20A4"
+					item: "aether:silver_dungeon_key"
+					type: "item"
+				}
+				{
+					entity: "aether:valkyrie_queen"
+					icon: "aether:silver_dungeon_key"
+					id: "6112AEB451DE555B"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 22.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["501980860925DC72"]
+			icon: "aether:sun_altar"
+			id: "464BE56223B9DADC"
+			subtitle: "Kill the Sun Spirit, the one that divides the Day from the Night"
+			tasks: [
+				{
+					id: "7924AA1468DFC23B"
+					item: "aether:gold_dungeon_key"
+					type: "item"
+				}
+				{
+					entity: "aether:sun_spirit"
+					icon: "aether:gold_dungeon_key"
+					id: "7C385F94FF9BBA4D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 24.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["170CD4B41CA6F9C1"]
+			icon: "lost_aether_content:gale_stone"
+			id: "72FA802480074182"
+			subtitle: "Kill the Aerwhale King. He's... the King of Aerwhales... I think that one doesn't need much explaining"
+			tasks: [
+				{
+					id: "19B9F3A4DB9EFC1E"
+					item: "aether:bronze_dungeon_key"
+					type: "item"
+				}
+				{
+					entity: "aether:slider"
+					icon: "aether:bronze_dungeon_key"
+					id: "163594ACA7DD1D7C"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 25.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["72FA802480074182"]
+			hide_until_deps_complete: false
+			icon: "kubejs:eye_of_angels"
+			id: "545C995B87BA0947"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Collect the Eye of Angels"
+			tasks: [{
+				id: "27DEC682B50D154E"
+				item: "kubejs:eye_of_angels"
+				type: "item"
+			}]
+			title: "The Angels Fall"
+			x: 25.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["3B047A7072164813"]
+			id: "6541FB163E3300CE"
+			subtitle: "Construct an Altar"
+			tasks: [{
+				id: "0BF0A396571796CD"
+				item: "aether:altar"
+				type: "item"
+			}]
+			title: "Enchanting, but Quite Different"
+			x: 28.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["34A59C4497FDDB7F"]
+			icon: {
+				Count: 1
+				id: "aether_redux:infused_veridium_pickaxe"
+				tag: {
+					Damage: 0
+					infusion_level: 64b
+				}
+			}
+			id: "6F34F5362D1545A9"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Infuse a Veridium Tool by right clicking it with an Ambrosium Shard"
+			tasks: [
+				{
+					id: "43E32F96A5648CB3"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_sword"
+									tag: {
+										Damage: 0
+										infusion_level: 64b
+									}
+								}
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_shovel"
+									tag: {
+										Damage: 0
+										infusion_level: 64b
+									}
+								}
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_pickaxe"
+									tag: {
+										Damage: 0
+										infusion_level: 64b
+									}
+								}
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_axe"
+									tag: {
+										Damage: 0
+										infusion_level: 64b
+									}
+								}
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_hoe"
+									tag: {
+										Damage: 0
+										infusion_level: 64b
+									}
+								}
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_dart_shooter"
+									tag: {
+										infusion_level: 64b
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "17EE2F2CDE6E0B66"
+					item: "aether:ambrosium_shard"
+					type: "item"
+				}
+			]
+			title: "Ambrosial Infusion"
+			x: 25.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["34A59C4497FDDB7F"]
+			id: "3B047A7072164813"
+			subtitle: "Get a Zanite Gemstone"
+			tasks: [{
+				id: "56D7E60990E88E8E"
+				item: "aether:zanite_gemstone"
+				type: "item"
+			}]
+			title: "Angelic Hardware"
+			x: 27.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["6541FB163E3300CE"]
+			id: "6AA0B069D1C702F1"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Obtain Icestone"
+			tasks: [{
+				id: "0228CB9610FA6D9A"
+				item: "aether:icestone"
+				type: "item"
+			}]
+			title: "Cold as ice"
+			x: 30.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			hide_until_deps_complete: true
+			id: "561902DAAF66FD3A"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a Book of Lore. It will tell you info about any Aether item you put inside!"
+			tasks: [{
+				id: "449F3B9251812280"
+				item: "aether:book_of_lore"
+				type: "item"
+			}]
+			title: "Aetherpedia"
+			x: 21.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["6541FB163E3300CE"]
+			icon: {
+				Count: 1
+				id: "aether:gravitite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 0.75d
+			id: "7AC81FC627CCB30B"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a full set of Gravitite armor"
+			tasks: [
+				{
+					id: "5EF46822A013DB06"
+					item: {
+						Count: 1
+						id: "aether:gravitite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72846CB4AECBD267"
+					item: {
+						Count: 1
+						id: "aether:gravitite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D297D8EA62D14CF"
+					item: {
+						Count: 1
+						id: "aether:gravitite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AE46D3E8CDF66AC"
+					item: {
+						Count: 1
+						id: "aether:gravitite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Defying Gravity"
+			x: 31.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["353921E41B80F09D"]
+			id: "4E98AEFF38CB858E"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Find an Aerbound Cape in a Bronze Dungeon"
+			tasks: [{
+				id: "1F09BF8DF36CFB08"
+				item: "aether_redux:airbound_cape"
+				type: "item"
+			}]
+			title: "Take THAT, Physics!"
+			x: 21.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["0CC3E441C652E02E"]
+			id: "17404FD2E06F5790"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Obtain a Grand Victory Medal"
+			tasks: [{
+				id: "4A31EF18F8A28552"
+				item: "aether_redux:grand_victory_medal"
+				type: "item"
+			}]
+			title: "Valkyrie Champion"
+			x: 22.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["545C995B87BA0947"]
+			hide_dependency_lines: false
+			hide_until_deps_complete: true
+			id: "3973363A1DC79F53"
+			subtitle: "Mine out a Ruby"
+			tasks: [{
+				id: "0F415EE3B310B62E"
+				item: "rediscovered:ruby"
+				type: "item"
+			}]
+			title: "Red Like Roses"
+			x: 24.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["20130F300D432015"]
+			hide_until_deps_complete: true
+			icon_scale: 0.75d
+			id: "1ADCB4CAD715CCB6"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Beacon"
+			tasks: [
+				{
+					id: "48DD3B2DD416ED50"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+				{
+					block: "minecraft:beacon"
+					block_type: 0
+					id: "6CAAECC09DCA73ED"
+					replace: false
+					replaced: "minecraft:air"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "Beaconator"
+			x: 25.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["20130F300D432015"]
+			hide_until_deps_complete: true
+			icon_scale: 0.75d
+			id: "3CF2A61BB7C8D79B"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Nether Reactor Core"
+			tasks: [
+				{
+					id: "1E11D05ACEC1F2D2"
+					item: "rediscovered:nether_reactor_core"
+					type: "item"
+				}
+				{
+					block: "rediscovered:nether_reactor_core"
+					block_type: 0
+					id: "2127CA9C9FEC69B2"
+					replace: false
+					replaced: "minecraft:air"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "Pocket Biome"
+			x: 26.511904761904745d
+			y: 10.023809523809504d
+		}
+		{
+			dependencies: ["353921E41B80F09D"]
+			id: "4309E836BAF22148"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Find a Hammer of Kingbdogz in a Bronze Dungeon"
+			tasks: [{
+				id: "21B9627AB5F634BD"
+				item: {
+					Count: 1
+					id: "aether:hammer_of_kingbdogz"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Hammer of Gods"
+			x: 20.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["3973363A1DC79F53"]
+			id: "6EC1FF01974E8D02"
+			subtitle: "Attune an Awakened Ender Pearl with rubies and follow it in the direction it opens"
+			tasks: [{
+				id: "43EE8AA9BBA103C3"
+				item: "rediscovered:ruby_eye"
+				type: "item"
+			}]
+			title: "Ruby Attuned"
+			x: 23.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["545C995B87BA0947"]
+			hide_until_deps_complete: true
+			id: "2B93B1B8E92CAD45"
+			subtitle: "Return to the Nether depths in search for Netherite"
+			tasks: [{
+				id: "39D90B76B0BA0AEE"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			title: "Hidden in The Depths"
+			x: 28.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["6EC1FF01974E8D02"]
+			icon: "minecraft:sheaf_pottery_sherd"
+			id: "0BACB5A08F178376"
+			subtitle: "Find Trail Ruins"
+			tasks: [{
+				icon: "minecraft:decorated_pot"
+				id: "014C113ED4D3FA39"
+				structure: "minecraft:trail_ruins"
+				title: "Find Trail Ruins"
+				type: "structure"
+			}]
+			title: "Long Forgotten"
+			x: 21.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["0BACB5A08F178376"]
+			description: ["&l&7HINT:&r You can activate the portal by right-clicking &cGlowing Obsidian&r inside the frame with your &bAwakened Ender Pearl &fwith a &cRuby Attunment&r!"]
+			icon: "rediscovered:ancient_cherry_leaves"
+			id: "25A8ABBC7235D20E"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Enter The Skylands, a dream of something that never happened"
+			tasks: [{
+				dimension: "rediscovered:skylands"
+				disable_toast: true
+				icon: "rediscovered:ancient_cherry_leaves"
+				id: "1B4FA9C88FB0ABF4"
+				title: "Enter the Portal"
+				type: "dimension"
+			}]
+			title: "We Need to Go Higher!"
+			x: 19.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["25A8ABBC7235D20E"]
+			hide_until_deps_complete: true
+			id: "2023AD6F8FC8986A"
+			subtitle: "Find a Pigman Village"
+			tasks: [{
+				id: "19166DACE071F8F6"
+				item: "minecraft:porkchop"
+				type: "item"
+			}]
+			title: "I've Seen You Before...."
+			x: 19.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["545C995B87BA0947"]
+			icon: "mythicmetals:adamantite_ingot"
+			id: "6AAB7BBD64FB4562"
+			subtitle: "Return to the depths of the Overworld and gather Adamantite"
+			tasks: [
+				{
+					id: "3B2FC24AE55B1D93"
+					item: "mythicmetals:adamantite_ingot"
+					type: "item"
+				}
+				{
+					id: "0FEA8DD674B05AAB"
+					item: "mythicmetals:raw_adamantite"
+					type: "item"
+				}
+			]
+			title: "Not Quite Adamantium"
+			x: 27.0d
+			y: 21.5d
+		}
+		{
+			dependencies: [
+				"2B93B1B8E92CAD45"
+				"21DCE3A2EA1D35D0"
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 0.75d
+			id: "2CF8FAA7BD25E298"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a full set of Netherite armor. You will need it"
+			tasks: [
+				{
+					id: "436763659259790A"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D95D4C5C70E5AE3"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "64F9E68AF551FDB0"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "333B21781A0125D5"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Covered in Debris"
+			x: 30.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["25A8ABBC7235D20E"]
+			hide_until_deps_complete: true
+			icon: "minecraft:obsidian"
+			id: "659D131B0E8B1383"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Find an Obsidian Wall in the middle of nowhere"
+			tasks: [{
+				id: "50F3AF07076D0CEA"
+				structure: "rediscovered:obsidian_wall"
+				title: "Find Obsidian Wall"
+				type: "structure"
+			}]
+			title: "The Great Wall"
+			x: 19.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["379A22A2185CFC8E"]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:nightmare_stalker_skull"
+			icon_scale: 0.75d
+			id: "58D9C1D755CC3E6E"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Kill a Nightmare Stalker"
+			tasks: [{
+				entity: "born_in_chaos_v1:nightmare_stalker"
+				icon: "born_in_chaos_v1:nightmare_stalker_skull"
+				id: "09CB8AFD413AC207"
+				title: "Worsening Nightmares"
+				type: "kill"
+				value: 1L
+			}]
+			x: 17.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2023AD6F8FC8986A"]
+			icon: "rediscovered:cyan_rose"
+			id: "6892A22F35F26A93"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Gift Rana a Cyan Rose"
+			tasks: [{
+				checkItem: false
+				entity: "rediscovered:rana"
+				icon: "rediscovered:cyan_rose"
+				id: "0FACE08403C92BB3"
+				item: "rediscovered:cyan_rose"
+				nbt: { }
+				title: "Give Rana a Cyan Rose"
+				type: "questsadditions:interaction"
+				value: 1L
+			}]
+			title: "Smells Just as Sweet"
+			x: 20.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["6AAB7BBD64FB4562"]
+			icon: "alloy_forgery:adamantite_forge_casing_forge_controller"
+			icon_scale: 0.75d
+			id: "21DCE3A2EA1D35D0"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Construct an Adamantite Forge. It yields even more resources and can smelt Netherite!"
+			tasks: [
+				{
+					id: "2C049EE462A2D229"
+					item: "alloy_forgery:adamantite_forge_casing_forge_controller"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6335517B2FAC2673"
+					item: { Count: 16, id: "adj:adamantite_forge_casing" }
+					type: "item"
+				}
+			]
+			title: "Tier 2 Forge"
+			x: 28.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["25A8ABBC7235D20E"]
+			hide_until_deps_complete: true
+			id: "04096C5C5F14CD07"
+			subtitle: "Find and enter a Brick Pyramid"
+			tasks: [{
+				icon: "rediscovered:large_bricks"
+				id: "1F5B932AABB03BB9"
+				structure: "rediscovered:brick_pyramid"
+				title: "Find a Brick Pyramid"
+				type: "structure"
+			}]
+			title: "Pyramid of Doom"
+			x: 17.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["04096C5C5F14CD07"]
+			id: "6E9823FB2C7C6D19"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Kill The Red Dragon and collect the Eye of Dreams"
+			tasks: [{
+				id: "53EAF71626993042"
+				item: "kubejs:eye_of_dreams"
+				type: "item"
+			}]
+			title: "Out With The Old!"
+			x: 14.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["6E9823FB2C7C6D19"]
+			description: ["&7&lHINT: &rIn the meantime prepare the right gear to ride it!"]
+			hide_until_deps_complete: true
+			icon: "rediscovered:red_dragon_egg"
+			id: "6D854F2600B922BD"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Pour Dragon's Breath onto a Red Dragon Egg and wait for it to hatch"
+			tasks: [{
+				block: "rediscovered:red_dragon_egg"
+				block_type: 0
+				checkItem: false
+				id: "45DF413EB6557196"
+				isItemInteraction: false
+				item: "minecraft:dragon_breath"
+				title: "Do as the description says"
+				type: "questsadditions:use"
+				value: 1L
+			}]
+			title: "In With The New!"
+			x: 16.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["6D854F2600B922BD"]
+			icon: "rediscovered:ruby_flute"
+			id: "2F2686D8E0B921C5"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft or find the gear to ride and tame your own Red Dragon"
+			tasks: [
+				{
+					id: "60A79535F5DE9BBA"
+					item: "rediscovered:ruby_flute"
+					type: "item"
+				}
+				{
+					id: "2EEBE0F7BC109212"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+				{
+					id: "7EF6D990C0B376D4"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+				{
+					id: "0E044AB3BD3FDC2A"
+					item: "rediscovered:dragon_armor"
+					type: "item"
+				}
+			]
+			title: "How to Tame Your Dragon 101"
+			x: 17.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6E9823FB2C7C6D19"]
+			icon: "minecraft:ender_eye"
+			id: "23D842B61D6B17F4"
+			subtitle: "Follow an unattuned Awakened Ender Pearl and see where it guides you to"
+			tasks: [{
+				icon: "minecraft:cracked_stone_bricks"
+				id: "45C13C02C2F5F579"
+				structure: "#integrated_stronghold:integrated_stronghold"
+				title: "Find a ???"
+				type: "structure"
+			}]
+			title: "The Lost Stronghold"
+			x: 11.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["6E9823FB2C7C6D19"]
+			hide_until_deps_complete: true
+			icon: "rediscovered:dragon_altar"
+			id: "5C5A43A9E26D16BD"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft 4 Dragon Pylons. You can use them to resummon Red Dragon at a Brick Pyramid"
+			tasks: [{
+				count: 4L
+				id: "5360E5D6344DEE34"
+				item: { Count: 4, id: "rediscovered:mini_dragon_pylon" }
+				type: "item"
+			}]
+			title: "The Old, Again..."
+			x: 14.5d
+			y: 25.5d
+		}
+		{
+			dependencies: ["23D842B61D6B17F4"]
+			description: [
+				"&l&7HINT:&r I don't think I need to remind you how to open an End Portal. If you are playing modpacks then you probably have at least a rough idea how the base game works."
+				""
+				"But just in case it's not obvious - just right click the &3End Portal Frames&r with &dAwakened Ender Pearls&r."
+			]
+			icon: "cataclysm:void_stone"
+			id: "1F3DB68EA2A45EB7"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Open a portal to The End and enter the realm where darkness bends"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				disable_toast: true
+				icon: "minecraft:end_portal_frame"
+				id: "7746C0C5DCF4E279"
+				title: "Enter the Portal"
+				type: "dimension"
+			}]
+			title: "Journey's End...?"
+			x: 10.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["1F3DB68EA2A45EB7"]
+			hide_until_deps_complete: true
+			icon: "minecraft:dragon_head"
+			icon_scale: 0.75d
+			id: "0F84B7A1DA0FDD37"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Break the seal on the dimension by killing the Ender Dragon"
+			tasks: [{
+				id: "13FD430BD6791655"
+				item: "minecraft:dragon_head"
+				type: "item"
+			}]
+			title: "Free The End"
+			x: 7.0d
+			y: 23.0d
+		}
+		{
+			disable_toast: true
+			hide_dependent_lines: true
+			hide_lock_icon: true
+			icon_scale: 0.1d
+			id: "026FAA23BB2CF1CA"
+			secret: true
+			shape: "diamond"
+			size: 0.1d
+			tasks: [{
+				advancement: "adj:root"
+				criterion: ""
+				disable_toast: true
+				icon: "minecraft:grass_block"
+				id: "74381A258BDA941C"
+				title: "A Distant Journey"
+				type: "advancement"
+			}]
+			x: 16.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["25A8ABBC7235D20E"]
+			hide_until_deps_complete: true
+			icon: "rediscovered:rose"
+			id: "6F169F4BDE96E88D"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Collect all of the Skylands' unique flora"
+			tasks: [
+				{
+					id: "480BBDB656375E79"
+					item: "rediscovered:rose"
+					type: "item"
+				}
+				{
+					id: "79BEE39D93D1FD7A"
+					item: "rediscovered:ancient_cherry_sapling"
+					type: "item"
+				}
+				{
+					id: "07C32D8281CDB990"
+					item: "rediscovered:paeonia"
+					type: "item"
+				}
+				{
+					id: "3F3733C8E04E958D"
+					item: "rediscovered:cyan_rose"
+					type: "item"
+				}
+			]
+			title: "Nostalgic Flora"
+			x: 21.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["0F84B7A1DA0FDD37"]
+			hide_until_deps_complete: true
+			id: "02804C4D2D501D99"
+			subtitle: "Hold a Dragon Egg"
+			tasks: [{
+				id: "2FCFC2EC181605D5"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			title: "The Next Generation"
+			x: 6.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["0F84B7A1DA0FDD37"]
+			hide_until_deps_complete: true
+			id: "0898408ED8FBAF57"
+			subtitle: "Bottle up some Dragon's Breath"
+			tasks: [{
+				id: "24B7A26E0D0F7800"
+				item: "minecraft:dragon_breath"
+				type: "item"
+			}]
+			title: "You Need a Mint"
+			x: 8.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["0F84B7A1DA0FDD37"]
+			hide_until_deps_complete: true
+			id: "4564BF670D10E0FA"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Leave the main island and explore The End"
+			tasks: [{
+				advancement: "adj:remote_getaway"
+				criterion: ""
+				icon: "minecraft:ender_pearl"
+				id: "7426CF963E3B30DF"
+				title: "Enter an End Gateway"
+				type: "advancement"
+			}]
+			title: "Remote Getaway"
+			x: 4.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["0F84B7A1DA0FDD37"]
+			hide_until_deps_complete: true
+			icon: "minecraft:end_crystal"
+			id: "3E76EA9BD9A391D8"
+			subtitle: "Respawn the Ender Dragon with 4 End Crystals"
+			tasks: [
+				{
+					count: 4L
+					id: "54F4751F51DF0AA4"
+					item: { Count: 4, id: "minecraft:end_crystal" }
+					type: "item"
+				}
+				{
+					advancement: "adj:respawn_dragon"
+					criterion: ""
+					id: "21484760849B7FDA"
+					title: "Respawn the Dragon"
+					type: "advancement"
+				}
+			]
+			title: "The End. Again"
+			x: 6.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["4564BF670D10E0FA"]
+			hide_until_deps_complete: true
+			icon: "unusualend:prismalite_gem"
+			id: "7BEDD5A588278AC2"
+			subtitle: "Obtain a Shiny Crystal, Prismalite Gem and Citrine Chunk"
+			tasks: [
+				{
+					id: "6E70101559611710"
+					item: "unusualend:shiny_crystal"
+					type: "item"
+				}
+				{
+					id: "5DD32CA07E0BFD0C"
+					item: "unusualend:prismalite_gem"
+					type: "item"
+				}
+				{
+					id: "09267781671F8C68"
+					item: "unusualend:citrine_chunk"
+					type: "item"
+				}
+			]
+			title: "Hidden Gems"
+			x: 2.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["4564BF670D10E0FA"]
+			hide_until_deps_complete: true
+			id: "06975D33E820F6B9"
+			subtitle: "Find some Chorus Fruit"
+			tasks: [{
+				id: "6BBA42C9FCE687EA"
+				item: "minecraft:chorus_fruit"
+				type: "item"
+			}]
+			title: "Confusing Fruit"
+			x: 4.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["4564BF670D10E0FA"]
+			hide_until_deps_complete: true
+			icon: "minecraft:purpur_block"
+			id: "22BC61DC0C61020A"
+			subtitle: "Enter an End City"
+			tasks: [{
+				id: "4FF27C092A04B6A7"
+				structure: "minecraft:end_city"
+				title: "Find an End City"
+				type: "structure"
+			}]
+			title: "The City at The End of The Game"
+			x: 2.0d
+			y: 24.5d
+		}
+		{
+			dependencies: ["22BC61DC0C61020A"]
+			id: "2751CF14E410A5FD"
+			subtitle: "Find an Elytra"
+			tasks: [{
+				id: "10284BC0C550E0DE"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sky's The Limit"
+			x: 2.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["22BC61DC0C61020A"]
+			id: "7863434F8F9EAD57"
+			subtitle: "Kill a Shulker"
+			tasks: [{
+				entity: "minecraft:shulker"
+				icon: "minecraft:shulker_box"
+				id: "15400EB1352B00FD"
+				title: "Kill a Shulker"
+				type: "kill"
+				value: 1L
+			}]
+			title: "This Block Moves!"
+			x: 0.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["4564BF670D10E0FA"]
+			hide_until_deps_complete: true
+			id: "5DAF45D22D8929C9"
+			subtitle: "Find Enderium and mine it out"
+			tasks: [{
+				block: "majruszsdifficulty:enderium_shard_ore"
+				block_type: 0
+				checkItem: false
+				id: "718F13D4A9D266B1"
+				type: "questsadditions:break"
+				value: 1L
+			}]
+			title: "Strange Shards"
+			x: 4.5d
+			y: 25.5d
+		}
+		{
+			dependencies: ["5DAF45D22D8929C9"]
+			icon_scale: 0.75d
+			id: "6B2AE4F13A56D99C"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Form Enderium - one of the most powerful alloys you can get your hands on"
+			tasks: [{
+				id: "1926019A32F85DBD"
+				item: "majruszsdifficulty:enderium_ingot"
+				type: "item"
+			}]
+			title: "Strange Ingot"
+			x: 4.5d
+			y: 27.0d
+		}
+		{
+			dependencies: ["06975D33E820F6B9"]
+			description: [""]
+			hide_until_deps_complete: true
+			icon: "endersdelight:pearl_pasta"
+			id: "301E14BDA5580CC4"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Cook some of the more 'delicious' dishes from End's cuisine"
+			tasks: [
+				{
+					id: "362E448B4D9ED9BA"
+					item: "endersdelight:chorus_pie"
+					type: "item"
+				}
+				{
+					id: "5FE3FF65BC924ED7"
+					item: "endersdelight:twisted_cereal"
+					type: "item"
+				}
+				{
+					id: "53878C96D29995E1"
+					item: "endersdelight:pearl_pasta"
+					type: "item"
+				}
+			]
+			title: "Local Food"
+			x: 4.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["7BEDD5A588278AC2"]
+			hide_until_deps_complete: true
+			icon: "alloy_forgery:ender_forge_casing_forge_controller"
+			icon_scale: 0.75d
+			id: "26E82AD325890954"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Construct an Ender Forge. It's tier 3, so it sure is good"
+			tasks: [
+				{
+					id: "344EEA1737AA9B07"
+					item: "alloy_forgery:ender_forge_casing_forge_controller"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0D0619B0619AEA19"
+					item: { Count: 16, id: "adj:ender_forge_casing" }
+					type: "item"
+				}
+			]
+			title: "The Final Forge"
+			x: 0.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["26E82AD325890954"]
+			id: "6E4C5779C4DA9851"
+			subtitle: "Forge Star Platinum"
+			tasks: [{
+				id: "54324531C9597B5E"
+				item: "mythicmetals:star_platinum"
+				type: "item"
+			}]
+			title: "A Star from Heavens"
+			x: 0.0d
+			y: 17.0d
 		}
 	]
 	title: "Story"

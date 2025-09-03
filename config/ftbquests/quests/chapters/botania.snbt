@@ -13,36 +13,10 @@
 		{
 			dependencies: ["026E22A534C341CC"]
 			description: [
-				"Welcome to &2Botania&r!"
+				"&7&o'Botanical Energy is an ethereal substance - in essence, it's a mystical form of energy. Its existence is inconsistent to the senses, and its color depends on its surrounding environment."
 				""
-				"A 'hidden gem' in Minecraft mods. "
-				"Saying &ohidden because while it does have 150M downloads (as of writing this description), most modpacks I've played included it purely to include it without really showcasing what the mod is good for."
-				""
-				"And believe me, it can do a ton of things..."
-				" "
-				"{@pagebreak}"
-				"Botania is a &dmagic&r/&btech&r mod that is all about &b&lMana&r."
-				""
-				"&7&o'Mana is an ethereal substance-- in essence, it's a mystical form of energy. Its existence is inconsistent to the senses, and its color depends on its surrounding environment."
-				""
-				"&7&oThe manipulation of Mana is likely the most important skill a botanist needs to master.'"
-				"                 &7&o~Lexica Botania"
-				""
-				""
-				"{@pagebreak}"
-				"&2Botania&r has its own guide book - &e&lLexica Botania&r."
-				""
-				"{image:botania:item/lexicon width:100 height:100 align:center}"
-				""
-				"If you don't like reading guide books, then fear not! Every item was given a description that takes information straight out of the book itself, making it almost not required at all."
-				""
-				"{@pagebreak}"
-				"If you are already familiar with &2Botania&r, this page is important for you to read."
-				""
-				"Most generating flora was changed when it comes to &bMana&r production:"
-				"- Early-game mana generators were buffed to speed up progression"
-				"- Mid-game mana generators have had their numbers shuffled around to make the harder to automate ones (or simply the less viable ones) more efficient."
-				"- End-game generators have had their numbers shuffled around too (especially with Dandelifeons, they are one of the best generators now)."
+				"&7&oThe manipulation of Botanical Energy is likely the most important skill a botanist needs to master.'"
+				"                           &7&o~Lexica Botania"
 			]
 			icon: "botania:lexicon"
 			icon_scale: 0.75d
@@ -62,7 +36,7 @@
 				title: "Any Mystical Flower"
 				type: "item"
 			}]
-			title: "Botania"
+			title: "Magical Botanics"
 			x: -2.0d
 			y: -2.0d
 		}
@@ -131,7 +105,7 @@
 				"4389F7F895342C2A"
 			]
 			id: "35B5E5B6F7CC021D"
-			subtitle: "Place down a Mana Pool"
+			subtitle: "Place down a Botanical Energy Pool"
 			tasks: [
 				{
 					id: "4745303AED988F56"
@@ -190,7 +164,7 @@
 				"5F471ABAA31A0667"
 			]
 			id: "4389F7F895342C2A"
-			subtitle: "Place down a Mana Spreader"
+			subtitle: "Place down a Botanical Energy Spreader"
 			tasks: [
 				{
 					id: "46916F845D9BD022"
@@ -239,7 +213,7 @@
 			id: "68A247EB4F6079CA"
 			optional: true
 			shape: "rsquare"
-			subtitle: "Craft a Diluted Mana Pool"
+			subtitle: "Craft a Diluted Botanical Energy Pool"
 			tasks: [{
 				id: "27238622CA6F7C1E"
 				item: "botania:diluted_pool"
@@ -253,7 +227,7 @@
 			dependencies: ["35B5E5B6F7CC021D"]
 			icon: "botania:mana_diamond"
 			id: "0AA4AD4290EE5366"
-			subtitle: "Toss in an item into a partially filled Mana Pool and infuse it"
+			subtitle: "Toss in an item into a partially filled Botanical Energy Pool and infuse it"
 			tasks: [{
 				id: "7D1BDC304C5AF94F"
 				item: {
@@ -284,7 +258,7 @@
 						]
 					}
 				}
-				title: "Any Mana-infused item"
+				title: "Any infused item"
 				type: "item"
 			}]
 			title: "Mana Infusion"
@@ -293,7 +267,7 @@
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
-			description: ["&7Hint:&r Manasteel equipment regenerates &bMana&r from &bMana Tablets&r in your inventory."]
+			description: ["&7Hint:&r Infused equipment regenerates lost durability from &bBotanical Energy Tablets&r in your inventory."]
 			icon: {
 				Count: 1
 				id: "botania:manasteel_chestplate"
@@ -304,7 +278,7 @@
 			id: "7FE9B5AB124013D2"
 			optional: true
 			shape: "rsquare"
-			subtitle: "Craft an armor set out of Manasteel"
+			subtitle: "Craft an armor set out of Infused Alloy"
 			tasks: [
 				{
 					id: "060E07625496EA96"
@@ -351,7 +325,7 @@
 					type: "item"
 				}
 			]
-			title: "Manaforged"
+			title: "Infusion Forging"
 			x: 6.0d
 			y: 1.0d
 		}
@@ -552,7 +526,7 @@
 			description: [
 				"&7Hint: &fUnsure what to do with the &eSparks&r?"
 				""
-				"It's VERY simple - just place one on top of a &bMana Pool&r and the second one on the &9Agglomeration Plate&f. They will share &bMana&r automatically whenever needed."
+				"It's VERY simple - just place one on top of a &bBotanical Energy Pool&r and the second one on the &9Agglomeration Plate&f. They will share &bBotanical Energy&r automatically whenever needed."
 			]
 			icon: "botania:terra_plate"
 			id: "2BF3097896646CA9"
@@ -580,7 +554,7 @@
 					type: "item"
 				}
 			]
-			title: "Ma-nuclear Fusion"
+			title: "Nuclear (In)fusion"
 			x: 9.0d
 			y: 4.0d
 		}
@@ -607,7 +581,7 @@
 				"356CC1FA4E52AD00"
 				"7FE9B5AB124013D2"
 			]
-			description: ["&7Hint:&r Same as &9Manasteel equipment&r, &aTerrasteel gear&r can regenerate lost durability from &bMana Tablets&r in your inventory"]
+			description: ["&7Hint:&r Same as &9Infused equipment&r, &aTerrasteel gear&r can regenerate lost durability from &bBotanical Energy Tablets&r in your inventory."]
 			icon: {
 				Count: 1
 				id: "botania:terrasteel_chestplate"
@@ -757,7 +731,7 @@
 			dependencies: ["5658376D04F1E8AE"]
 			icon: "botania:dragonstone"
 			id: "4B3625869C4E7079"
-			subtitle: "Trade your mana-infused items for their elven equivalents"
+			subtitle: "Trade your infused items for their elven equivalents"
 			tasks: [
 				{
 					id: "340986F751BD16B3"
@@ -784,7 +758,7 @@
 			id: "1701D7122A9FDADA"
 			optional: true
 			shape: "rsquare"
-			subtitle: "Craft a Mana Tablet"
+			subtitle: "Craft a Botanical Energy Tablet"
 			tasks: [{
 				id: "37BD1C1A13685B4E"
 				item: "botania:mana_tablet"
@@ -806,8 +780,145 @@
 				type: "item"
 			}]
 			title: "Otherworldy Fumes"
-			x: 10.5d
-			y: 5.25d
+			x: 9.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["756FFC233E13D545"]
+			id: "22A779AB53F671E4"
+			subtitle: "Craft a Corporea Spark"
+			tasks: [{
+				id: "26918C56C43EDDA0"
+				item: "botania:corporea_spark"
+				type: "item"
+			}]
+			title: "Corporeal"
+			x: 8.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["756FFC233E13D545"]
+			id: "78CA9D2DD67FFC90"
+			subtitle: "Craft a Life Aggregator"
+			tasks: [{
+				id: "3DAE0F207000138D"
+				item: "botania:spawner_mover"
+				type: "item"
+			}]
+			title: "Moving Out"
+			x: 9.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4B3625869C4E7079"]
+			description: [""]
+			id: "2FA5CDE610C7A6EB"
+			subtitle: "Place 4 Gaia Pylons around a powered Beacon and then summon the Gaia Guardian by right-clicking the Beacon with a Terrasteel Ingot"
+			tasks: [{
+				count: 4L
+				id: "5FA08783BBDB9EFC"
+				item: "botania:gaia_pylon"
+				type: "item"
+			}]
+			title: "Doppelganger"
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2FA5CDE610C7A6EB"]
+			id: "1E174297E96D12B8"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Kill the Guardian of Gaia and obtain Gaia Spirits"
+			tasks: [
+				{
+					disable_toast: true
+					entity: "botania:doppleganger"
+					icon: "botania:life_essence"
+					id: "15EF5457B8E4625C"
+					type: "kill"
+					value: 1L
+				}
+				{
+					disable_toast: true
+					id: "46DF38CB9F8FBE45"
+					item: "botania:life_essence"
+					type: "item"
+				}
+			]
+			title: "Dead and Seek"
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1E174297E96D12B8"]
+			icon: "botanicadds:gaia_plate"
+			id: "6CF9448B3FA32156"
+			subtitle: "Construct a Gaia Agglomeration Plate"
+			tasks: [
+				{
+					id: "17A100AEA33A8E69"
+					item: "botanicadds:gaia_plate"
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					icon: "handcrafted:hammer"
+					id: "7A387728F53CE6AC"
+					ignoreState: false
+					item: "handcrafted:hammer"
+					layer: true
+					name: "gaia_plate"
+					rightclick: true
+					type: "questsadditions:structure"
+				}
+			]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1E174297E96D12B8"]
+			id: "6A83A49D8762F83D"
+			subtitle: "Craft a Gaia Spirit Ingot. You can use it instead of Terrasteel to summon a harder version of Guardian of Gaia"
+			tasks: [{
+				id: "6C7F5EA8FAC38232"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			title: "Gaiaforged"
+			x: 2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"6CF9448B3FA32156"
+				"6A83A49D8762F83D"
+			]
+			id: "1807373293C4A183"
+			tasks: [{
+				id: "4E27FBB9935A920A"
+				item: "botanicadds:gaiasteel_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1807373293C4A183"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "4DD3CEFFA4141525"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Imbue an Awakened Ender Pearl with forces of nature and turn it into the Eye of Verdancy"
+			tasks: [{
+				id: "48CE7358C2F75FC9"
+				item: "kubejs:eye_of_verdant_bloom"
+				type: "item"
+			}]
+			title: "Core of Nature"
+			x: 1.5d
+			y: 4.5d
 		}
 	]
 	title: "Magical Botanics"

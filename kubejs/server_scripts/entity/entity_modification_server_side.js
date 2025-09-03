@@ -72,6 +72,10 @@ EntityEvents.spawned(event => {
 		}
 	}
 
+	if (entity.health) {
+		entity.health = entity.maxHealth;
+	}
+
 	switch (entity.type) {
 		case 'minecraft:wither_skeleton': {
 			entity.setItemSlot("mainhand", "golden_sword");
@@ -105,3 +109,9 @@ function weightedRandom(weightMap) {
 		random -= weight;
 	}
 }
+
+ServerEvents.loaded(event => {
+	event.getServer().runCommandSilent(
+		`/scoreboard players set @s trueEnding_settings.dragonhealth ${global.hpModifications['minecraft:ender_dragon'][0]}`
+	)
+})

@@ -5,6 +5,6 @@ JEIEvents.hideItems(event => {
 	event.hide([
 		spawnEggs,
 		global.rediscoveredFurniture,
+		global.blacklistedItems,
 	])
-
 })

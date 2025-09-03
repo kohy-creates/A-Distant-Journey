@@ -64,6 +64,12 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:alloy_forge/alloy_metallurgium_from_ores',
 		'mythicmetals:alloy_forge/alloy_metallurgium_from_raw_ores',
 
+		'create:crafting/materials/copper_nugget',
+		'create:crafting/materials/copper_ingot',
+
+		'suppsquared:copper_lantern',
+		'suppsquared:copper_lantern_2'
+
 		///alloy_forgery\:compat\//
 	]
 	removeRecipeByID.forEach(recipe => {
@@ -326,6 +332,22 @@ ServerEvents.recipes((event) => {
 	ironArmorRecipe(['I I', 'SIS', 'SIS'], 'minecraft:iron_chestplate');
 	ironArmorRecipe(['SIS', 'I I', 'I I'], 'minecraft:iron_leggings');
 	ironArmorRecipe(['I I', 'S S'], 'minecraft:iron_boots');
+
+	function kyberArmorRecipe(shape, outputItem) {
+		event.remove({ output: outputItem });
+		event.shaped(
+			Item.of(outputItem),
+			shape,
+			{
+				I: 'mythicmetals:kyber_ingot',
+				S: 'amethyst_shard'
+			}
+		)
+	};
+	kyberArmorRecipe(['SIS', 'I I'], 'mythicmetals:kyber_helmet');
+	kyberArmorRecipe(['I I', 'SIS', 'SIS'], 'mythicmetals:kyber_chestplate');
+	kyberArmorRecipe(['SIS', 'I I', 'I I'], 'mythicmetals:kyber_leggings');
+	kyberArmorRecipe(['I I', 'S S'], 'mythicmetals:kyber_boots');
 
 	function manasteelArmorRecipe(shape, outputItem) {
 		event.remove({ output: outputItem });
@@ -2172,9 +2194,6 @@ ServerEvents.recipes((event) => {
 				"item": "mythicmetals:star_platinum"
 			},
 			{
-				"item": "mythicmetals:carmot_ingot"
-			},
-			{
 				"item": "botania:elementium_ingot"
 			},
 			{
@@ -2203,9 +2222,6 @@ ServerEvents.recipes((event) => {
 			},
 			{
 				"item": "mythicmetals:palladium_ingot"
-			},
-			{
-				"item": "mythicmetals:kyber_ingot"
 			},
 			{
 				"item": "botania:terrasteel_ingot"
@@ -2237,4 +2253,53 @@ ServerEvents.recipes((event) => {
 			S: 'stick'
 		}
 	)
+
+	event.shaped(
+		'suppsquared:copper_lantern',
+		[
+			'NNN',
+			'NTN',
+			'NNN'
+		],
+		{
+			N: 'mythicmetals:copper_nugget',
+			T: 'torch'
+		}
+	)
+
+	// More nuggets from gear
+	// And unification of Copper Nuggets
+
+	event.replaceOutput({ output: 'create:copper_nugget' },
+		'create:copper_nugget',
+		'mythicmetals:copper_nugget'
+	)
+	event.replaceInput({ input: 'create:copper_nugget' },
+		'create:copper_nugget',
+		'mythicmetals:copper_nugget'
+	)
+
+	/**
+	 * @type {InputItem_[]}
+	 */
+	const nuggetsBlacklist = [
+		'create:experience_nugget',
+		'alexscaves:dinosaur_nugget',
+		'alexscaves:cave_painting_dino_nuggets'
+	]
+	event.forEachRecipe([{ type: 'smelting' }, { type: 'blasting' }], recipe => {
+		const output = recipe.getOriginalRecipeResult();
+		const input = recipe.getOriginalRecipeIngredients();
+		if (output.getId().includes('nugget') && !nuggetsBlacklist.includes(output.getId())) {
+			event.remove({ id: recipe.getId() });
+			if (recipe.getType().toString() == 'minecraft:blasting') {
+				event.blasting(
+					Item.of(output, 5),
+					input[0],
+					0.1,
+					15 * 20
+				)
+			}
+		}
+	})
 });

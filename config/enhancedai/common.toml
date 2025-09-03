@@ -561,16 +561,16 @@
 			"Attribute based" = true
 			#The maximum attack speed a mob can attack with (in attacks per second, 2 is an attack every 0.5 seconds, 1.25 is an attack every 0.8s, 1 is an attack every 1s). In vanilla mobs have 1 attack speed.
 			#Range: 0.0 ~ 4.0
-			Maximum = 2.0
+			Maximum = 1.25
 
 			#Multiplies the attack speed of monsters by this value. E.g. 0.6 means that mobs attack 40% slower than the player with the same equipment
 			[Mobs."Melee attacking"."Attack speed".Multiplier]
 				#Range: 0.0 ~ 4.0
 				"Easy/Peaceful" = 0.5
 				#Range: 0.0 ~ 4.0
-				Normal = 0.5
+				Normal = 0.4
 				#Range: 0.0 ~ 4.0
-				Hard = 0.5
+				Hard = 0.6
 
 	#Mobs can bite if are attacked with non-weapons. Only mobs in the enhancedai:can_bite entity type tag can bite.
 	[Mobs."Biting mobs"]

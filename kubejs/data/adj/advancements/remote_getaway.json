@@ -1,0 +1,28 @@
+{
+	"parent": "adj:root",
+	"criteria": {
+		"entered_end_gateway": {
+			"conditions": {
+				"block": "minecraft:end_gateway"
+			},
+			"trigger": "minecraft:enter_block"
+		}
+	},
+	"display": {
+		"description": "",
+		"frame": "task",
+		"hidden": false,
+		"icon": {
+			"item": "minecraft:ender_pearl"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"title": "ADJ Remote Getaway"
+	},
+	"requirements": [
+		[
+			"entered_end_gateway"
+		]
+	],
+	"sends_telemetry_event": false
+}

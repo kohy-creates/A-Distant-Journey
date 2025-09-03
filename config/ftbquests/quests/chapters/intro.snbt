@@ -1,5 +1,5 @@
 {
-	autofocus_id: "2D6437E0336ED8AD"
+	autofocus_id: "6C4C8FF43FCED01D"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	disable_toast: true
@@ -7,21 +7,19 @@
 	group: ""
 	icon: "ars_nouveau:worn_notebook"
 	id: "6827135B158F87E2"
+	images: [{
+		height: 10.0d
+		image: "adj:textures/texts/intro.png"
+		rotation: 0.0d
+		width: 10.0d
+		x: 7.0d
+		y: -2.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"&lWelcome to &6A Distant Journey&f!"
-				""
-				"I'm really glad that you opened the &cAdvancements menu&f. They serve as a guide through the modpack's progression and also briefly mention some of the more important changes. You can easily access it by &lpressing L&r (or &owhatever&r you bound the button to)."
-				""
-				"The '&7Intro&f' chapter serves as a brief explanation of the more important things."
-				""
-				"Does it ruing the immersion, which I was trying so hard to keep everywhere? Maybe. Potentially even. But I'd rather have you just read a bunch of text than suffer for the first few hours and then uninstall."
-				""
-				"{@pagebreak}"
-				""
 				"Some advancements only feature a &7short subtitle&f which roughly describes what you have to do to finish them."
 				""
 				"Some of them however, such as &6this one&f feature an elaborate description, which will explain &dhow things work in this realm&r, so that your playthrough is &oless of a headache&r!"
@@ -46,38 +44,38 @@
 				title: "Click me to complete the advancement"
 				type: "checkmark"
 			}]
-			title: "Intro"
-			x: 0.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["4A074153AE2D521D"]
-			description: [
-				"To browse through all the different &cadvancement chapters&r, close this advancement and move your cursor to the left."
-				""
-				"Each chapter has a different name, theme and its own set of advancements for you to complete."
-			]
-			disable_toast: true
-			id: "2D6437E0336ED8AD"
-			subtitle: "Click to read"
-			tasks: [{
-				id: "73B3E2F6915FFC39"
-				title: "Click to complete"
-				type: "checkmark"
-			}]
-			title: "&lHow to:&r &aChapters"
+			title: "&l&fIntro:&r &dAdvancements"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["2D6437E0336ED8AD"]
+			dependencies: ["4A074153AE2D521D"]
 			description: [
 				"To create a &dParty&r, open your inventory and then open the &dTeams&r tab, then click '&dCreate new Party&r'."
 				""
 				"Players in the same party as you will &eshare advancement progress&r and can configure &cPvP&r rules!"
 			]
 			disable_toast: true
-			icon: "minecraft:player_head"
+			icon: {
+				Count: 1
+				id: "minecraft:player_head"
+				tag: {
+					SkullOwner: {
+						Id: [I;
+							-1313431234
+							2047230377
+							-2121722025
+							-2028170220
+						]
+						Name: "kohara_"
+						Properties: {
+							textures: [{
+								Value: "ewogICJ0aW1lc3RhbXAiIDogMTc1Njg0MzM0NDAxMSwKICAicHJvZmlsZUlkIiA6ICJiMWI2YTEzZTdhMDY0MWE5ODE4OTE3NTc4NzFjOTQxNCIsCiAgInByb2ZpbGVOYW1lIiA6ICJrb2hhcmFfIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2JiMmNlNmJhNmQwZjU1Nzk0NzJlMzJlNDllNjI1ZDI1YjY3YzIzZjI0YTk5NzRjY2M5OTlkMmU2ZGQwYWFiNyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FmZDU1M2IzOTM1OGEyNGVkZmUzYjhhOWE5MzlmYTVmYTRmYWE0ZDlhOWMzZDZhZjhlYWZiMzc3ZmEwNWMyYmIiCiAgICB9CiAgfQp9"
+							}]
+						}
+					}
+				}
+			}
 			id: "797F46DC75EA4372"
 			subtitle: "Click to read"
 			tasks: [{
@@ -86,11 +84,11 @@
 				type: "checkmark"
 			}]
 			title: "&lMultiplayer:&r &dParties"
-			x: -2.0d
-			y: -3.0d
+			x: -1.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["2D6437E0336ED8AD"]
+			dependencies: ["4A074153AE2D521D"]
 			description: [
 				"&6ADJ&r follows a &elinear progression&r. Your progress will increase at certain points in the game, &eturning the world more hostile&r, but also &eunlocking new items for you to obtain and use&r."
 				""
@@ -112,7 +110,7 @@
 				type: "checkmark"
 			}]
 			title: "&lBasics:&r &aProgression"
-			x: -1.5d
+			x: -1.0d
 			y: -4.5d
 		}
 		{
@@ -134,11 +132,11 @@
 				type: "checkmark"
 			}]
 			title: "&lBasics:&r &cDifficulty"
-			x: -2.5d
-			y: -5.5d
+			x: 0.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["2D6437E0336ED8AD"]
+			dependencies: ["4A074153AE2D521D"]
 			description: [
 				"The combat system has seen some changes to make it more immersive."
 				""
@@ -148,15 +146,15 @@
 				""
 				"Every weapon has new attack animations. &7You are probably familiar with those already, as they are present in every of the generic RPG modpacks (such as this one), so I am not going to talk about it."
 				""
-				"Jump attacks will &cno longer critically hit&f. &cCritical chance&r is a separate stat that now works off of chance. You start with &c5% base chance&r which you can increase with &6accessories&r, &ereforges&r and &aexperience&r (more on that one on the next page)."
+				"Jump attacks will &cno longer critically hit&f. &cCritical chance&r is a separate stat that now works off of chance. You start with &c5% base chance&r which you can increase with &6accessories&r and &aexperience&r (more on that one on the next page)."
 				""
 				"{@pagebreak}"
 				""
 				"The &aExperience&r system has been altered a little."
 				""
-				"You can only have up to &a100 levels&r at a time and every level takes &a50&r experience points to get - it doesn't increase the higher it goes like it does in vanilla. You also &akeep more levels on death&r."
+				"You can only have up to &a50 levels&r at a time. You also &akeep more levels on death&r."
 				""
-				"Every &a3 levels&f your &cCrit Chance&f increases by 1%."
+				"Every &a4 levels&f your &cCrit Chance&f increases by 1%."
 				""
 				"{@pagebreak}"
 				""
@@ -180,11 +178,11 @@
 				type: "checkmark"
 			}]
 			title: "&lBasics:&r &cCombat"
-			x: 0.0d
-			y: -5.0d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["2D6437E0336ED8AD"]
+			dependencies: ["4A074153AE2D521D"]
 			description: [
 				"&eGetting around quickly&r will be crucial for your playthrough, allowing you to get materials from multiple places in no time."
 				""
@@ -227,11 +225,11 @@
 				type: "item"
 			}]
 			title: "&lTutorial:&r &6Quick Travel"
-			x: 1.5d
+			x: 1.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["2D6437E0336ED8AD"]
+			dependencies: ["4A074153AE2D521D"]
 			description: [
 				"A lot of mods means a lot of items which your Chests will quickly get overwhelmed by. Same goes for your sorting capabilities."
 				""
@@ -258,7 +256,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["2D6437E0336ED8AD"]
+			dependencies: ["4A074153AE2D521D"]
 			description: [
 				"&6&lADJ&r &cdoesn't feature a traditional minimap/worldmap mod&r and &ccoordinates are hidden by default&r. Staying oriented and finding your way is ever so slightly tougher than usually."
 				""
@@ -280,6 +278,7 @@
 					}
 				}
 				id: "map_atlases:atlas"
+				tag: { }
 			}
 			id: "133F7123D4CC512B"
 			subtitle: "Click to read"
@@ -304,7 +303,7 @@
 				}
 			]
 			title: "&lTutorial:&r &eStaying oriented"
-			x: 1.5d
+			x: 1.0d
 			y: -1.5d
 		}
 	]

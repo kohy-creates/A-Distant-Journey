@@ -1,0 +1,38 @@
+{
+	"parent": "adj:root",
+	"criteria": {
+		"summoned_dragon": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:ender_dragon"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:summoned_entity"
+		}
+	},
+	"display": {
+		"announce_to_chat": false,
+		"description": "",
+		"frame": "goal",
+		"hidden": false,
+		"icon": {
+			"item": "minecraft:end_crystal"
+		},
+		"show_toast": false,
+		"title": {
+			"translate": "ADJ Respawn Dragon"
+		}
+	},
+	"requirements": [
+		[
+			"summoned_dragon"
+		]
+	],
+	"sends_telemetry_event": false
+}

@@ -53,18 +53,22 @@ ItemEvents.tooltip(event => {
 	]
 	/** @type {InputItem_} */
 	const setBonusItems = [
-		// 'botania:manasteel_helmet',
-		// 'botania:manasteel_chestplate',
-		// 'botania:manasteel_leggings',
-		// 'botania:manasteel_boots',
-		// 'botania:terrasteel_helmet',
-		// 'botania:terrasteel_chestplate',
-		// 'botania:terrasteel_leggings',
-		// 'botania:terrasteel_boots',
+		'botania:manasteel_helmet',
+		'botania:manasteel_chestplate',
+		'botania:manasteel_leggings',
+		'botania:manasteel_boots',
+		'botania:terrasteel_helmet',
+		'botania:terrasteel_chestplate',
+		'botania:terrasteel_leggings',
+		'botania:terrasteel_boots',
 		'majruszsdifficulty:enderium_helmet',
 		'majruszsdifficulty:enderium_chestplate',
 		'majruszsdifficulty:enderium_leggings',
-		'majruszsdifficulty:enderium_boots'
+		'majruszsdifficulty:enderium_boots',
+		'born_in_chaos_v1:dark_metal_armor_helmet',
+		'born_in_chaos_v1:dark_metal_armor_chestplate',
+		'born_in_chaos_v1:dark_metal_armor_leggings',
+		'born_in_chaos_v1:dark_metal_armor_boots'
 	]
 	//priority:-100
 	event.addAdvancedToAll((item, advanced, text) => {
@@ -245,6 +249,12 @@ ItemEvents.tooltip(event => {
 			text.add(1, potionLine);
 			text.add(2, '');
 		}
+	})
+
+	event.addAdvanced(global.blacklistedItems, (item, advanced, text) => {
+		text.clear()
+		text.add(0, Text.of('Removed item').darkGray())
+		text.add(1, Text.of('This item is unobtainable in this modpack').darkGray())
 	})
 
 	//priority: 200

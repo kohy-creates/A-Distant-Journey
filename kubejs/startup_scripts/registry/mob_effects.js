@@ -14,7 +14,25 @@ StartupEvents.registry('mob_effect', registry => {
 		.color(Color.of('#F82423'))
 		.beneficial()
 		.effectTick((entity, level) => {
-			entity.heal(2 * level);
+			entity.heal(10 * level);
 			entity.removeEffect('kubejs:lesser_instant_health');
+		})
+
+	registry.create('rapid_healing')
+		.color(Color.of('#F82423'))
+		.beneficial()
+		.effectTick((entity, level) => {
+			if (entity.age % 10 == 0) {
+				entity.heal(1);
+			}
+		})
+
+	registry.create('prometheum_regeneration')
+		.color(Color.of('#F82423'))
+		.beneficial()
+		.effectTick((entity, level) => {
+			if (entity.age % 20 == 0) {
+				entity.heal(0.5);
+			}
 		})
 })

@@ -180,21 +180,36 @@ ServerEvents.recipes(event => {
 		100
 	)
 
-	event.recipes.ars_nouveau.enchanting_apparatus(
-		[
-			'farmersdelight:organic_compost',
-			'farmersdelight:organic_compost',
-			'farmersdelight:organic_compost',
-			'farmersdelight:organic_compost',
-			'farmersdelight:organic_compost',
-			'farmersdelight:organic_compost',
-			'farmersdelight:organic_compost',
-			'farmersdelight:organic_compost'
+	// event.recipes.ars_nouveau.enchanting_apparatus(
+	// 	[
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost'
+	// 	],
+	// 	'confluence:cloud_in_a_bottle',
+	// 	'confluence:fart_in_a_jar',
+	// 	300
+	// )
+
+	event.custom({
+		"type": "confluence:workshop",
+		"ingredients": [
+			{
+				"item": "confluence:cloud_in_a_bottle"
+			},
+			{
+				"item": "artifacts:whoopee_cushion"
+			}
 		],
-		'confluence:cloud_in_a_bottle',
-		'confluence:fart_in_a_jar',
-		300
-	)
+		"result": {
+			"item": "confluence:fart_in_a_jar"
+		}
+	})
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[

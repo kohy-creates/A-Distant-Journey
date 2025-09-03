@@ -82,11 +82,11 @@
 			15
 		],
 		"no_xp_anvil": false,
-		"level_cap": 100,
-		"linear_xp_requirement": 50,
+		"level_cap": 50,
+		"linear_xp_requirement": 0,
 		"xp_bounty": {
 			"tag_is_whitelist": false,
-			"value": 20,
+			"value": 10,
 			"chance": 0.1
 		},
 		"recipe_locks": {}
@@ -95,9 +95,9 @@
 		"xp_keeping": {
 			"enable": true,
 			"allow_stealing_from_players": true,
-			"self_ratio": 0.3,
-			"attacker_ratio": 0.5,
-			"drop_ratio": 0.2,
+			"self_ratio": 0.1,
+			"attacker_ratio": 0.4,
+			"drop_ratio": 0.5,
 			"stolen_xp_data": 254
 		},
 		"keep_equipped": true,

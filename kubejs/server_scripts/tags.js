@@ -127,6 +127,13 @@ ServerEvents.tags('item', event => {
 		'born_in_chaos_v1:serpumpkinhead_m',
 		'aether_redux:ancient_sentrite_music_disc'
 	])
+
+	event.removeAllTagsFrom('create:copper_nugget')
+
+	event.add('adj:attuned_pearls', [
+		/cataclysm:.*eye.*/,
+		'rediscovered:ruby_eye'
+	])
 })
 
 ServerEvents.tags('block', event => {

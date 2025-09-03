@@ -951,7 +951,10 @@ global.setBonusMap = {
 	},
 	'aether:gravitite': {
 		description: [
-			'Incoming damage reduced by 5%'
+			'Incoming damage reduced by 5%',
+			'Massively increased jump strength',
+			'Immunity to fall damage',
+			'Automatically walk up 1 block without having to jump'
 		],
 		effects: [
 			{
@@ -959,6 +962,14 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.05,
+					operation: 0
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'forge:step_height_addition',
+					value: 0.6,
 					operation: 0
 				}
 			}

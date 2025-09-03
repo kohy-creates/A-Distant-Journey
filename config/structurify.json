@@ -1,8 +1,8 @@
 {
   "config_version": "1.0.21",
-  "config_datetime": "2025-08-25_02-39-11",
+  "config_datetime": "2025-09-03_23-23-01",
   "general": {
-    "min_structure_distance_from_world_center": 99,
+    "min_structure_distance_from_world_center": 151,
     "disable_all_structures": false,
     "enable_global_spacing_and_separation_modifier": true,
     "global_spacing_and_separation_modifier": 1.4
@@ -395,6 +395,14 @@
       "override_global_spacing_and_separation_modifier": true,
       "spacing": 25,
       "separation": 10
+    },
+    {
+      "name": "cataclysm:frosted_prison",
+      "salt": 1577172143,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 80,
+      "separation": 79
     },
     {
       "name": "create_ltab:the_caretakersbunker",

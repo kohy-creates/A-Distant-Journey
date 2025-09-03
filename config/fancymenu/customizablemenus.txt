@@ -66,3 +66,6 @@ net.minecraft.client.gui.screens.inventory.InventoryScreen {
 net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
 }
 
+net.mcreator.nourishednether.client.gui.TransmutationTableGuiScreen {
+}
+
