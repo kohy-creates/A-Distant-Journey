@@ -1,0 +1,27 @@
+{
+  "parent": "adj:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:end_crystal"
+    },
+    "title": {
+      "translate": "ADJ Wither Storm Rises Again"
+    },
+    "description": "",
+    "frame": "task",
+    "announce_to_chat": false,
+		"show_toast": false,
+    "hidden": true
+  },
+  "criteria": {
+    "revival": {
+      "trigger": "witherstormmod:wither_storm_revival",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "revival"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "adj:root",
+  "display": {
+    "icon": {
+      "item": "witherstormmod:withered_symbiont_spawn_egg"
+    },
+    "title": {
+      "translate": "ADJ Resummon Symbiont"
+    },
+    "description": "",
+    "frame": "goal",
+    "announce_to_chat": false,
+		"show_toast": false,
+    "hidden": false
+  },
+  "criteria": {
+    "summoned_withered_symbiont": {
+      "trigger": "witherstormmod:summon_mob_withered_beacon",
+      "conditions": {
+        "resummoned": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "witherstormmod:withered_symbiont"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "summoned_withered_symbiont"
+    ]
+  ]
+}

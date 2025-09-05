@@ -1,0 +1,36 @@
+{
+  "parent": "botania:main/flower_pickup",
+  "criteria": {
+    "flower": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "botania:generating_special_flowers"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.botania:generatingFlower.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "botania:endoflame"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.botania:generatingFlower"
+    }
+  },
+  "requirements": [
+    [
+      "flower"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

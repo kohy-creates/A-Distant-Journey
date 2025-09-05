@@ -1,0 +1,36 @@
+{
+  "parent": "botania:main/gaia_guardian_kill",
+  "criteria": {
+    "use_spawner_mover": {
+      "conditions": {
+        "item": {
+          "items": [
+            "botania:spawner_mover"
+          ]
+        }
+      },
+      "trigger": "botania:use_item_success"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.botania:spawnerMoverUse.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "botania:spawner_mover"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.botania:spawnerMoverUse"
+    }
+  },
+  "requirements": [
+    [
+      "use_spawner_mover"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

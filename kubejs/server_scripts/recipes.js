@@ -2031,7 +2031,7 @@ ServerEvents.recipes((event) => {
 	event.forEachRecipe({ type: 'ars_nouveau:glyph' }, recipe => {
 
 		const id = recipe.getOriginalRecipeResult().id;
-		const expCost = Math.ceil(recipe.json.get('exp') * 2.5);
+		const expCost = Math.ceil(recipe.json.get('exp') * 1.25);
 
 		// const recipeId = recipe.id;
 		// console.log(recipeId)
@@ -2302,4 +2302,17 @@ ServerEvents.recipes((event) => {
 			}
 		}
 	})
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			"minecraft:copper_block",
+			"minecraft:redstone_block",
+			"minecraft:soul_sand",
+			"minecraft:soul_sand",
+			"mythicmetals:star_platinum"
+		],
+		"compass",
+		Item.of('minecraft:compass', '{LodestoneDimension:"minecraft:overworld",LodestonePos:{X:3440,Y:64,Z:3200},LodestoneTracked:0b,display:{Name:\'{"text":"Command Block Compass","italic":false}\'},"quark:compass_calculated":1b,"quark:compass_in_nether":0b}'),
+		0
+	)
 });

@@ -1,0 +1,38 @@
+{
+  "parent": "the_bumblezone:structures/enter_sempiternal_sanctum",
+  "display": {
+    "icon": {
+      "id": "the_bumblezone:essence_raging"
+    },
+    "title": {
+      "translate": "advancements.the_bumblezone.essence_raging.title"
+    },
+    "description": {
+      "translate": "advancements.the_bumblezone.essence_raging.description"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "essence_raging": {
+      "trigger": "the_bumblezone:essence_event_reward",
+      "conditions": {
+        "item": {
+          "items": [
+            "the_bumblezone:essence_raging"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "essence_raging"
+    ]
+  ]
+}

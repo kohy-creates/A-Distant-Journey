@@ -1,0 +1,36 @@
+{
+  "parent": "botania:main/mana_pool_pickup",
+  "criteria": {
+    "flower": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "botania:functional_special_flowers"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.botania:functionalFlower.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "botania:bellethorn"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.botania:functionalFlower"
+    }
+  },
+  "requirements": [
+    [
+      "flower"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

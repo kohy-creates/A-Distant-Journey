@@ -1,0 +1,35 @@
+{
+  "parent": "botania:main/root",
+  "criteria": {
+    "elven_lexicon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:lexicon"
+            ],
+            "nbt": "{\"botania:elven_unlock\":1b}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "flower": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "botania:mystical_flowers"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "flower",
+      "elven_lexicon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,24 @@
+{
+  "parent": "botania:main/elf_portal_open",
+  "criteria": {
+    "lexicon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:lexicon"
+            ],
+            "nbt": "{\"botania:elven_unlock\":1b}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "lexicon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

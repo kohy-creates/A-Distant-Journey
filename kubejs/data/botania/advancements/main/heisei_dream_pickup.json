@@ -1,0 +1,38 @@
+{
+  "parent": "botania:main/elf_portal_open",
+  "criteria": {
+    "heisei_dream": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:heisei_dream"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.botania:heiseiDreamPickup.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "botania:heisei_dream"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.botania:heiseiDreamPickup"
+    }
+  },
+  "requirements": [
+    [
+      "heisei_dream"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

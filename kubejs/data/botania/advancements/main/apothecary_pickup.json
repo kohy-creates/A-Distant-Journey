@@ -1,0 +1,37 @@
+{
+  "parent": "botania:main/flower_pickup",
+  "criteria": {
+    "apothecary": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:apothecary_default"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "elven_lexicon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:lexicon"
+            ],
+            "nbt": "{\"botania:elven_unlock\":1b}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "apothecary",
+      "elven_lexicon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

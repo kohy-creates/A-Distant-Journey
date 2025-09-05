@@ -1,0 +1,40 @@
+{
+  "parent": "botania:main/root",
+  "criteria": {
+    "elven_lexicon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:lexicon"
+            ],
+            "nbt": "{\"botania:elven_unlock\":1b}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "pickup": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:mana_pool",
+              "botania:creative_pool",
+              "botania:diluted_pool",
+              "botania:fabulous_pool"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "pickup",
+      "elven_lexicon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

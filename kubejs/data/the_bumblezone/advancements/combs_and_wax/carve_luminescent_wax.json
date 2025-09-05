@@ -1,0 +1,57 @@
+{
+  "parent": "the_bumblezone:combs_and_wax/carve_ancient_wax",
+  "display": {
+    "icon": {
+      "id": "the_bumblezone:luminescent_wax_channel_red"
+    },
+    "title": {
+      "translate": "advancements.the_bumblezone.carve_luminescent_wax.title"
+    },
+    "description": {
+      "translate": "advancements.the_bumblezone.carve_luminescent_wax.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 2
+  },
+  "criteria": {
+    "luminescent_wax_channels": {
+      "trigger": "the_bumblezone:carve_wax",
+      "conditions": {
+        "block": {
+          "resourcelocation": "the_bumblezone:luminescent_wax/channels",
+          "is_tag": true
+        }
+      }
+    },
+    "luminescent_wax_corners": {
+      "trigger": "the_bumblezone:carve_wax",
+      "conditions": {
+        "block": {
+          "resourcelocation": "the_bumblezone:luminescent_wax/corners",
+          "is_tag": true
+        }
+      }
+    },
+    "luminescent_wax_nodes": {
+      "trigger": "the_bumblezone:carve_wax",
+      "conditions": {
+        "block": {
+          "resourcelocation": "the_bumblezone:luminescent_wax/nodes",
+          "is_tag": true
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "luminescent_wax_channels",
+      "luminescent_wax_corners",
+      "luminescent_wax_nodes"
+    ]
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "botania:main/elf_portal_open",
+  "criteria": {
+    "air": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:ender_air_bottle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.botania:enderAirMake.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "botania:ender_air_bottle"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.botania:enderAirMake"
+    }
+  },
+  "requirements": [
+    [
+      "air"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

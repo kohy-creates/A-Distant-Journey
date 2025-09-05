@@ -1,0 +1,31 @@
+{
+  "parent": "adj:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:ender_eye"
+    },
+    "title": {
+      "translate": "ADJ Fully Link Amulet"
+    },
+    "description": "",
+    "frame": "task",
+    "announce_to_chat": false,
+		"show_toast": false,
+    "hidden": false
+  },
+  "criteria": {
+    "fully_linked": {
+      "trigger": "witherstormmod:link_amulet",
+      "conditions": {
+        "total_linked": {
+          "min": 4
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "fully_linked"
+    ]
+  ]
+}

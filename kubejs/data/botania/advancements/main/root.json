@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "flower": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "botania:mystical_flowers"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "botania:textures/block/livingwood_log.png",
+    "description": {
+      "translate": "botania.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "botania:lexicon"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "itemGroup.botania"
+    }
+  },
+  "requirements": [
+    [
+      "flower"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

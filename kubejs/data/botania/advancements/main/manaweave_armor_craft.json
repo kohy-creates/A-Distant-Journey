@@ -1,0 +1,41 @@
+{
+  "parent": "botania:main/mana_pool_pickup",
+  "criteria": {
+    "head": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:manaweave_helmet",
+              "botania:manaweave_chestplate",
+              "botania:manaweave_leggings",
+              "botania:manaweave_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.botania:manaweaveArmorCraft.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "botania:manaweave_cloth"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.botania:manaweaveArmorCraft"
+    }
+  },
+  "requirements": [
+    [
+      "head"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,31 @@
+{
+  "parent": "adj:root",
+  "display": {
+    "icon": {
+      "item": "witherstormmod:super_beacon"
+    },
+    "title": {
+      "translate": "ADJ Activate Super Beacon"
+    },
+    "description": "",
+    "frame": "goal",
+    "announce_to_chat": false,
+		"show_toast": false,
+    "hidden": false
+  },
+  "criteria": {
+    "activate_super_beacon": {
+      "trigger": "witherstormmod:activate_super_beacon",
+      "conditions": {
+        "total_activated": {
+          "min": 4
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "activate_super_beacon"
+    ]
+  ]
+}

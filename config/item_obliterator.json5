@@ -568,7 +568,9 @@
 		"ars_nouveau:battlemage_robes",
 		"ars_nouveau:battlemage_hood",
 
-		"nourished_nether:glowing_obsidian"
+		"nourished_nether:glowing_obsidian",
+
+		"verdantvibes:cattails"
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
 	

@@ -17,11 +17,11 @@
   },
   "locateSearchRadius": {
     "desc:": "Sets the search radius for the locate structure command. Vanilla: 100, Default: 110",
-    "locateSearchRadius": 110
+    "locateSearchRadius": 400
   },
   "globalSearchRadius": {
-    "desc:": "Sets the global maximum structure search radius. The vanilla locate command uses 100. Lowering this value reduces the time structure searches stall the server but decreases the range in which structures are found. Default: 70",
-    "globalSearchRadius": 70
+    "desc:": "Sets the global structure search radius. The vanilla locate command uses 100. Lowering this value reduces the time structure searches stall the server but decreases the range in which structures are found. Default: 70",
+    "globalSearchRadius": 300
   },
   "spacingSeparationModifier": {
     "desc:": "Adjusts the structure spacing (average spawn distance) and separation (minimum spawn distance). Increasing the value makes structures spawn farther apart, while decreasing it makes them spawn closer together. Vanilla Default: 1.0",
@@ -33,9 +33,9 @@
   },
   "minimumStructureDistance": {
     "desc:": "Set a minimum distance in blocks between structures generated which prevents structure overlaps(not 100% but close). Not recommended to use higher values, as that may strain the worldgen due to repeated structure retries and can prevent surfaces structures when there is some in a cave below. If you want structures more spaced out than this use the spacing/seperation modifier. Default: 32 blocks, range 16-512",
-    "minimumStructureDistance": 64,
+    "minimumStructureDistance": 70,
     "enabled": false,
-    "logOverlaps": false
+    "logOverlaps": true
   },
   "autoBiomeCompat": {
     "desc:": "Automatically analyzes present biomes and adjust structure spawning to include fitting ones, Note that this may also spawn structures in undesired biomes, check the logging and adjust the strictness up/down to achieve a good result. Default: false",

@@ -1,6 +1,6 @@
 {
   "config_version": "1.0.21",
-  "config_datetime": "2025-09-03_23-23-01",
+  "config_datetime": "2025-09-05_11-54-10",
   "general": {
     "min_structure_distance_from_world_center": 151,
     "disable_all_structures": false,
@@ -345,6 +345,23 @@
       ],
       "whitelisted_biomes": [],
       "blacklisted_biomes": []
+    },
+    {
+      "name": "medieval_buildings:ship",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 32,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 32,
+      "biome_check_mode": "BLACKLIST",
+      "biome_check_blacklisted_biomes": [
+        "#is_river",
+        "#is_ocean",
+        "#is_beach"
+      ],
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
     }
   ],
   "structure_sets": [
@@ -461,12 +478,28 @@
       "separation": 0
     },
     {
+      "name": "nova_structures:illager_camp",
+      "salt": 4533232,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 26,
+      "separation": 22
+    },
+    {
       "name": "rediscovered:pigman_village",
       "salt": 570217192,
       "frequency": 0.75,
       "override_global_spacing_and_separation_modifier": false,
       "spacing": 41,
       "separation": 24
+    },
+    {
+      "name": "witherstormmod:bowels",
+      "salt": 0,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 20,
+      "separation": 19
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+	"parent": "adj:root",
+	"criteria": {
+		"teleport": {
+			"trigger": "rediscovered:dragon_teleport"
+		}
+	},
+	"display": {
+		"description": "",
+		"icon": {
+			"item": "minecraft:grass_block"
+		},
+		"title": {
+			"translate": "ADJ Move Red Dragon"
+		},
+		"announce_to_chat": false,
+		"show_toast": false
+	},
+	"requirements": [
+		[
+			"teleport"
+		]
+	],
+	"sends_telemetry_event": true
+}

@@ -1,0 +1,57 @@
+{
+  "parent": "the_bumblezone:candles/light_soul_super_candle",
+  "display": {
+    "icon": {
+      "id": "the_bumblezone:potion_candle"
+    },
+    "title": {
+      "translate": "advancements.the_bumblezone.multi_potion_potion_candle.title"
+    },
+    "description": {
+      "translate": "advancements.the_bumblezone.multi_potion_potion_candle.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "criteria": {
+    "craft_multi_potion_potion_candle_1": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "the_bumblezone:potion_candle/from_string_and_carvable_wax",
+        "ingredients": [
+          {
+            "items": "#the_bumblezone:advancements/potion_candle_valid_potions"
+          },
+          {
+            "items": "#the_bumblezone:advancements/potion_candle_valid_potions"
+          }
+        ]
+      }
+    },
+    "craft_multi_potion_potion_candle_2": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "the_bumblezone:potion_candle/from_super_candles",
+        "ingredients": [
+          {
+            "items": "#the_bumblezone:advancements/potion_candle_valid_potions"
+          },
+          {
+            "items": "#the_bumblezone:advancements/potion_candle_valid_potions"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "craft_multi_potion_potion_candle_1",
+      "craft_multi_potion_potion_candle_2"
+    ]
+  ]
+}

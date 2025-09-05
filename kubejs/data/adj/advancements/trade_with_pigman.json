@@ -1,0 +1,36 @@
+{
+	"parent": "adj:root",
+	"criteria": {
+		"trade": {
+			"conditions": {
+				"villager": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "rediscovered:pigman"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:villager_trade"
+		}
+	},
+	"display": {
+		"announce_to_chat": false,
+		"show_toast": false,
+		"description": "",
+		"icon": {
+			"item": "rediscovered:ruby"
+		},
+		"title": {
+			"translate": "ADJ Trade With Pigman"
+		}
+	},
+	"requirements": [
+		[
+			"trade"
+		]
+	],
+	"sends_telemetry_event": true
+}

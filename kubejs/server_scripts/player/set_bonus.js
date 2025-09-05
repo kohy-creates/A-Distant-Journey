@@ -147,7 +147,7 @@ function removeBonus(player) {
 }
 
 EntityEvents.hurt('player', event => {
-	console.log(setBonusActive(event.getPlayer(), 'mythicmetals:kyber'))
+	//console.log(setBonusActive(event.getPlayer(), 'mythicmetals:kyber'))
 	if (setBonusActive(event.getPlayer(), 'mythicmetals:kyber') && event.getSource().getActual()) {
 		event.getPlayer().getServer().runCommandSilent(
 			// entity.hurt didn't work cause why would it

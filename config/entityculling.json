@@ -1,6 +1,6 @@
 {
   "configVersion": 7,
-  "renderNametagsThroughWalls": true,
+  "renderNametagsThroughWalls": false,
   "blockEntityWhitelist": [
     "create:rope_pulley",
     "botania:flame_ring",
@@ -10,7 +10,9 @@
     "botania:magic_missile",
     "botania:falling_star",
     "create_hypertube:hypertube_entity",
-    "create_hypertube:hypertube_entrance_entity"
+    "create_hypertube:hypertube_entrance_entity",
+    "witherstormmod:super_beacon",
+    "witherstormmod:super_support_beacon"
   ],
   "entityWhitelist": [
     "botania:mana_burst",
@@ -67,9 +69,14 @@
     "minecraft:spruce_boat",
     "minecraft:spruce_chest_boat",
     "minecraft:bamboo_raft",
-    "minecraft:bamboo_chest_raft"
+    "minecraft:bamboo_chest_raft",
+    "witherstormmod:wither_storm_head",
+    "witherstormmod:wither_storm",
+    "witherstormmod:wither_storm_segment",
+    "witherstormmod:withered_symbiont",
+    "witherstormmod:tentacle"
   ],
-  "disableF3": false,
+  "disableF3": true,
   "skipEntityCulling": false,
   "skipBlockEntityCulling": false
 }

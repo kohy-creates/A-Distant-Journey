@@ -13,7 +13,7 @@ stripFormat = false
 seeFrameNames = true
 namesWithoutHUD = false
 #Range: 0 ~ 64
-visibleRange = 64
+visibleRange = 32
 #Range: 0 ~ 255
 nameMaxR = 255
 #Range: 0 ~ 255

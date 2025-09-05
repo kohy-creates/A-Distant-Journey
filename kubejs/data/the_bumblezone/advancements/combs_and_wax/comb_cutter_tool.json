@@ -1,0 +1,48 @@
+{
+  "parent": "the_bumblezone:teleportation/teleport_out_of_bumblezone",
+  "display": {
+    "icon": {
+      "nbt": "{\"Enchantments\":[{\"id\":\"the_bumblezone:comb_cutter\",\"lvl\":1}]}",
+      "id": "minecraft:shears"
+    },
+    "title": {
+      "translate": "advancements.the_bumblezone.comb_cutter_tool.title"
+    },
+    "description": {
+      "translate": "advancements.the_bumblezone.comb_cutter_tool.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 15
+  },
+  "criteria": {
+    "comb_cutter_tool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantment": "the_bumblezone:comb_cutter",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "comb_cutter_tool"
+    ]
+  ]
+}

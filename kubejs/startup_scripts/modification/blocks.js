@@ -23,4 +23,18 @@ BlockEvents.modification(event => {
 	event.modify('ars_nouveau:portal', block => {
 		block.setLightEmission(12);
 	})
+
+	event.modify([
+		'torchflower',
+		'potted_torchflower'
+	], block => {
+		block.setLightEmission(14)
+	});
+
+	event.modify([
+		'netherexp:soul_torchflower',
+		'netherexp:potted_soul_torchflower'
+	], block => {
+		block.setLightEmission(10)
+	})
 })

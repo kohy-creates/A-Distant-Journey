@@ -1,0 +1,38 @@
+{
+  "parent": "the_bumblezone:sugar_water/sugar_water_next_to_sugar_cane",
+  "display": {
+    "icon": {
+      "id": "the_bumblezone:sugar_water_bottle"
+    },
+    "title": {
+      "translate": "advancements.the_bumblezone.consume_sugar_water_bottle.title"
+    },
+    "description": {
+      "translate": "advancements.the_bumblezone.consume_sugar_water_bottle.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 2
+  },
+  "criteria": {
+    "consume_sugar_water_bottle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "the_bumblezone:sugar_water_bottle"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "consume_sugar_water_bottle"
+    ]
+  ]
+}

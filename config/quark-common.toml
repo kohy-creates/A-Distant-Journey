@@ -126,7 +126,7 @@
 	"More Potted Plants" = true
 	"Nether Brick Fence Gate" = true
 	"Rainbow Lamps" = true
-	"Raw Metal Bricks" = false
+	"Raw Metal Bricks" = true
 	Rope = false
 	"Shear Vines" = true
 	Shingles = false
@@ -140,7 +140,7 @@
 	"Variant Ladders" = true
 	"Vertical Planks" = false
 	"Vertical Slabs" = false
-	"Wooden Posts" = false
+	"Wooden Posts" = true
 	"More Stone Variants" = true
 
 	[building.celebratory_lamps]

@@ -1,12 +1,41 @@
 {
+	autofocus_id: "4BB4F54ACBA9F3A7"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ars_nouveau"
 	group: "06918EFE2A3328D6"
-	icon: "ars_nouveau:creative_spell_book"
+	icon: "ars_nouveau:worn_notebook"
 	id: "07F5EA64E201A460"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		icon: "ars_nouveau:worn_notebook"
+		icon_scale: 0.75d
+		id: "4BB4F54ACBA9F3A7"
+		shape: "diamond"
+		size: 2.0d
+		tasks: [
+			{
+				id: "0DB3B9FAC96AA44A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:logs/archwood"
+					}
+				}
+				title: "Any Archwood Log"
+				type: "item"
+			}
+			{
+				id: "21B1964E638BAFAF"
+				item: "ars_nouveau:worn_notebook"
+				type: "item"
+			}
+		]
+		title: "Becoming a Wizard"
+		x: -0.5d
+		y: -0.5d
+	}]
 	title: "Becoming a Wizard"
 }

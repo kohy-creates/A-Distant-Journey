@@ -1,5 +1,5 @@
 {
-	autofocus_id: "026E22A534C341CC"
+	autofocus_id: "23FAB8177B6ED9C6"
 	default_hide_dependency_lines: false
 	default_quest_shape: "square"
 	filename: "story"
@@ -155,8 +155,8 @@
 			order: -999
 			rotation: 0.0d
 			width: 10.0d
-			x: 29.417687074829914d
-			y: 23.836394557823127d
+			x: 29.678571428571402d
+			y: 23.809523809523817d
 		}
 		{
 			dependency: "379A22A2185CFC8E"
@@ -184,8 +184,8 @@
 			image: "adj:textures/texts/chapter_4.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 7.0d
-			y: 20.5d
+			x: 7.5d
+			y: 26.0d
 		}
 		{
 			dependency: "1F3DB68EA2A45EB7"
@@ -222,7 +222,7 @@
 			y: 8.0d
 		}
 		{
-			dependency: "545C995B87BA0947"
+			dependency: "20130F300D432015"
 			height: 1.75d
 			image: "minecraft:block/beacon_glass"
 			rotation: 45.0d
@@ -231,7 +231,7 @@
 			y: 8.0d
 		}
 		{
-			dependency: "545C995B87BA0947"
+			dependency: "20130F300D432015"
 			height: 1.75d
 			image: "rediscovered:block/nether_reactor_core"
 			rotation: 45.0d
@@ -288,8 +288,8 @@
 			image: "adj:textures/texts/quote.png"
 			rotation: 0.0d
 			width: 12.0d
-			x: -2.0d
-			y: 7.5d
+			x: -2.5d
+			y: 6.0d
 		}
 		{
 			height: 1.25d
@@ -300,13 +300,13 @@
 			y: 6.5d
 		}
 		{
-			dependency: "6E9823FB2C7C6D19"
+			dependency: "1F3DB68EA2A45EB7"
 			height: 2.25d
 			image: "minecraft:item/ender_eye"
 			rotation: 0.0d
 			width: 2.25d
-			x: 11.5d
-			y: 21.0d
+			x: 9.988095238095276d
+			y: 25.023809523809504d
 		}
 		{
 			dependency: "574DD3FD26A23CDE"
@@ -334,15 +334,6 @@
 			width: 1.75d
 			x: 17.5d
 			y: 7.0d
-		}
-		{
-			dependency: "379A22A2185CFC8E"
-			height: 1.75d
-			image: "mythicmetals:block/mythril_block"
-			rotation: 45.0d
-			width: 1.75d
-			x: 19.5d
-			y: 2.0d
 		}
 		{
 			height: 1.75d
@@ -389,17 +380,17 @@
 			y: 20.5d
 		}
 		{
-			dependency: "4564BF670D10E0FA"
+			dependency: "42307E5368E7BA1C"
 			height: 5.609981515711645d
 			image: "adj:textures/other/bg_void.png"
 			order: -999
-			rotation: 0.0d
+			rotation: 30.0d
 			width: 10.0d
-			x: -0.5d
-			y: 23.0d
+			x: 12.5d
+			y: 42.0d
 		}
 		{
-			dependency: "1F3DB68EA2A45EB7"
+			dependency: "4564BF670D10E0FA"
 			height: 1.75d
 			image: "majruszsdifficulty:block/enderium_block"
 			rotation: 45.0d
@@ -408,22 +399,207 @@
 			y: 27.0d
 		}
 		{
-			dependency: "6E9823FB2C7C6D19"
+			dependency: "6086C058455AE6AD"
 			height: 2.25d
-			image: "minecraft:item/ender_eye"
+			image: "cataclysm:item/void_eye"
 			rotation: 0.0d
 			width: 2.25d
 			x: -2.0d
 			y: 20.5d
 		}
 		{
-			dependency: "545C995B87BA0947"
+			dependency: "4564BF670D10E0FA"
 			height: 1.75d
 			image: "kubejs:block/ender_forge_casing"
 			rotation: 45.0d
 			width: 1.75d
 			x: 0.5d
 			y: 19.0d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 6.0d
+			image: "adj:textures/texts/lore_nether.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 25.72619047619051d
+			y: 0.3214285714285481d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 6.0d
+			image: "adj:textures/texts/lore_aether.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 35.67857142857146d
+			y: 16.654761904761884d
+		}
+		{
+			dependency: "25A8ABBC7235D20E"
+			height: 6.0d
+			image: "adj:textures/texts/lore_skylands.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 24.0d
+			y: 29.5d
+		}
+		{
+			dependency: "0F84B7A1DA0FDD37"
+			height: 6.0d
+			image: "adj:textures/texts/lore_end.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 9.154761904761948d
+			y: 18.976190476190453d
+		}
+		{
+			dependency: "4564BF670D10E0FA"
+			height: 1.75d
+			image: "cataclysm:block/void_stone"
+			rotation: 45.0d
+			width: 1.75d
+			x: -0.5d
+			y: 23.0d
+		}
+		{
+			dependency: "1F3DB68EA2A45EB7"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_5.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -8.5d
+			y: 26.5d
+		}
+		{
+			dependency: "0F84B7A1DA0FDD37"
+			height: 6.0d
+			image: "adj:textures/texts/lore_command_block.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -10.0d
+			y: 29.5d
+		}
+		{
+			dependency: "3F2B685C8C008081"
+			height: 1.75d
+			image: "mythicmetals:block/unobtainium_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: -7.0d
+			y: 23.5d
+		}
+		{
+			dependency: "3F2B685C8C008081"
+			height: 5.0d
+			image: "adj:textures/other/bg_grass_dirt.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: -2.5d
+			y: 29.0d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 5.0d
+			image: "adj:textures/other/bg_stone_ores_3.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: -10.0d
+			y: 24.0d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_5_5.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 2.230952380952381d
+			y: 29.564285714285802d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 6.0d
+			image: "adj:textures/texts/lore_witherstorm.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 2.945238095238089d
+			y: 36.611904761904846d
+		}
+		{
+			dependency: "0898408ED8FBAF57"
+			height: 1.75d
+			image: "rediscovered:block/glowing_obsidian"
+			rotation: 45.0d
+			width: 1.75d
+			x: 11.0d
+			y: 26.5d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 1.75d
+			image: "witherstormmod:block/formidibomb_side"
+			rotation: 45.0d
+			width: 1.75d
+			x: 2.0d
+			y: 32.0d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 5.0d
+			image: "adj:textures/other/bg_grass_dirt.png"
+			order: -999
+			rotation: -90.0d
+			width: 10.0d
+			x: 18.0d
+			y: 38.0d
+		}
+		{
+			dependency: "603D3F9B2298333B"
+			height: 1.75d
+			image: "witherstormmod:block/tainted_glass"
+			rotation: 45.0d
+			width: 1.75d
+			x: 12.0d
+			y: 33.0d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 1.75d
+			image: "witherstormmod:block/super_beacon_glass"
+			rotation: 45.0d
+			width: 1.75d
+			x: 16.0d
+			y: 37.5d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 5.609981515711645d
+			image: "adj:textures/other/bg_void.png"
+			order: -999
+			rotation: -30.0d
+			width: 10.0d
+			x: 19.0d
+			y: 43.5d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 5.0d
+			image: "adj:textures/other/bg_grass.png"
+			order: -999
+			rotation: 90.0d
+			width: 10.0d
+			x: 13.0d
+			y: 36.5d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 1.75d
+			image: "mythicmetals:block/mythril_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 19.5d
+			y: 2.0d
 		}
 	]
 	order_index: 1
@@ -654,8 +830,8 @@
 				type: "item"
 			}]
 			title: "Suit Up"
-			x: 13.0d
-			y: 1.5d
+			x: 12.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -799,7 +975,7 @@
 				""
 				"Their secondary use is simple - being &omore efficient than Furnaces&r, yielding &omore metals from smelted materials&r!"
 				""
-				"&7&lAlloy Forges&r need to be fueled with &6Lava&r. Right click the controller with a &6Lava Bucket&r to fill it. "
+				"&7&lAlloy Forges&r can be fueled by many different things, but &cLava&r is the most efficient."
 				""
 				"Looking to automate the process? &9Create&r mod got you covered!"
 			]
@@ -2751,13 +2927,18 @@
 			y: 23.0d
 		}
 		{
-			dependencies: ["6E9823FB2C7C6D19"]
+			dependencies: [
+				"6E9823FB2C7C6D19"
+				"0898408ED8FBAF57"
+			]
 			description: ["&7&lHINT: &rIn the meantime prepare the right gear to ride it!"]
 			hide_until_deps_complete: true
 			icon: "rediscovered:red_dragon_egg"
+			icon_scale: 0.75d
 			id: "6D854F2600B922BD"
 			optional: true
-			shape: "rsquare"
+			shape: "diamond"
+			size: 1.5d
 			subtitle: "Pour Dragon's Breath onto a Red Dragon Egg and wait for it to hatch"
 			tasks: [{
 				block: "rediscovered:red_dragon_egg"
@@ -2771,15 +2952,14 @@
 				value: 1L
 			}]
 			title: "In With The New!"
-			x: 16.0d
-			y: 25.0d
+			x: 11.0d
+			y: 26.5d
 		}
 		{
 			dependencies: ["6D854F2600B922BD"]
+			description: [""]
 			icon: "rediscovered:ruby_flute"
 			id: "2F2686D8E0B921C5"
-			optional: true
-			shape: "rsquare"
 			subtitle: "Craft or find the gear to ride and tame your own Red Dragon"
 			tasks: [
 				{
@@ -2804,11 +2984,12 @@
 				}
 			]
 			title: "How to Tame Your Dragon 101"
-			x: 17.0d
-			y: 26.0d
+			x: 11.0d
+			y: 28.0d
 		}
 		{
 			dependencies: ["6E9823FB2C7C6D19"]
+			hide_until_deps_complete: true
 			icon: "minecraft:ender_eye"
 			id: "23D842B61D6B17F4"
 			subtitle: "Follow an unattuned Awakened Ender Pearl and see where it guides you to"
@@ -2824,7 +3005,10 @@
 			y: 23.0d
 		}
 		{
-			dependencies: ["6E9823FB2C7C6D19"]
+			dependencies: [
+				"6E9823FB2C7C6D19"
+				"04096C5C5F14CD07"
+			]
 			hide_until_deps_complete: true
 			icon: "rediscovered:dragon_altar"
 			id: "5C5A43A9E26D16BD"
@@ -2838,8 +3022,8 @@
 				type: "item"
 			}]
 			title: "The Old, Again..."
-			x: 14.5d
-			y: 25.5d
+			x: 17.0d
+			y: 24.5d
 		}
 		{
 			dependencies: ["23D842B61D6B17F4"]
@@ -3203,6 +3387,517 @@
 			title: "A Star from Heavens"
 			x: 0.0d
 			y: 17.0d
+		}
+		{
+			dependencies: ["4564BF670D10E0FA"]
+			hide_until_deps_complete: true
+			icon: "cataclysm:void_eye"
+			id: "6086C058455AE6AD"
+			subtitle: "Attune an Awakened Ender Pearl to locate the Citadel"
+			tasks: [{
+				id: "489468EBCC7FACD6"
+				item: "cataclysm:void_eye"
+				type: "item"
+			}]
+			title: "Journey to The End"
+			x: 1.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["6086C058455AE6AD"]
+			icon_scale: 0.75d
+			id: "640E291225CA8A2A"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				icon: "cataclysm:obsidian_bricks"
+				id: "05D9D28F25889860"
+				structure: "cataclysm:ruined_citadel"
+				title: "Find the Ruined Citadel"
+				type: "structure"
+			}]
+			x: -0.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["640E291225CA8A2A"]
+			id: "3F2B685C8C008081"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Kill the Ender Guardian and collect the Eye of Desolation"
+			tasks: [{
+				id: "3AB436B42C6A6ADE"
+				item: "kubejs:eye_of_desolation"
+				type: "item"
+			}]
+			title: "I Stared Into The Void"
+			x: -4.5d
+			y: 25.5d
+		}
+		{
+			dependencies: ["3F2B685C8C008081"]
+			hide_until_deps_complete: true
+			id: "4C8E061A81250AC1"
+			subtitle: "Attune a Compass to locate the Command Block and follow where it leads you to"
+			tasks: [{
+				id: "21961F7969A95231"
+				item: {
+					Count: 1
+					id: "minecraft:compass"
+					tag: {
+						LodestoneDimension: "minecraft:overworld"
+						LodestonePos: {
+							X: 3440
+							Y: 64
+							Z: 3200
+						}
+						LodestoneTracked: 0b
+						display: {
+							Name: "{\"text\":\"Command Block Compass\",\"italic\":false}"
+						}
+						"quark:compass_calculated": 1b
+						"quark:compass_in_nether": 0b
+					}
+				}
+				type: "item"
+			}]
+			title: "The Tale of the Command Block"
+			x: -3.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["4C8E061A81250AC1"]
+			id: "06E7DBDB7C7A790A"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Find the Command Block"
+			tasks: [{
+				icon: "minecraft:command_block"
+				id: "42A2DF712BB66AB9"
+				structure: "witherstormmod:storm_spawn_platform"
+				title: "Find the Command Block"
+				type: "structure"
+			}]
+			title: "Raiders of The Lost Block"
+			x: -1.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["3F2B685C8C008081"]
+			hide_until_deps_complete: true
+			icon_scale: 0.75d
+			id: "41BD18823BE31271"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Descend into the caves one final time in search for Unobtainium"
+			tasks: [{
+				id: "20FF7FD6D51A7149"
+				item: "mythicmetals:unobtainium"
+				type: "item"
+			}]
+			title: "(Un)obtainable"
+			x: -7.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["41BD18823BE31271"]
+			id: "646540B4C4803445"
+			subtitle: "Create Metallurgium - the toughest of alloys to ever exist"
+			tasks: [{
+				id: "57B1E2D14E6ADA44"
+				item: "mythicmetals:metallurgium_ingot"
+				type: "item"
+			}]
+			title: "Cosmic Power"
+			x: -8.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["41BD18823BE31271"]
+			id: "3915141D30CD6CB0"
+			subtitle: "Create Celestium - the most magical of alloys to ever exist"
+			tasks: [{
+				icon: "mythicmetals:celestium_ingot"
+				id: "6B74D20CFE090179"
+				item: "mythicmetals:metallurgium_ingot"
+				type: "item"
+			}]
+			title: "Celestial Synth"
+			x: -9.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["06E7DBDB7C7A790A"]
+			hide_until_deps_complete: true
+			id: "3E479B783B24C730"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Finish what's already there"
+			tasks: [{
+				icon: "minecraft:wither_skeleton_skull"
+				id: "33348AC40FBB3C9C"
+				observe_type: 5
+				timer: 0L
+				title: "Summon it"
+				to_observe: "witherstormmod:wither_storm"
+				type: "observation"
+			}]
+			title: ". . ."
+			x: -3.0428571428571303d
+			y: 30.897619047619102d
+		}
+		{
+			dependencies: ["3E479B783B24C730"]
+			description: [
+				"&7&lHINT:&r &5Withered Symbionts&r will start spawning shortly after &5The Wither Storm&r evolves to &n&ePhase 5&r&r."
+				""
+				"However, in order for them to start spawning, &lyou will need to get close to it&r. You can hide underground until one appears."
+				""
+				"It also needs solid land to spawn them, so you'll need to wait for it to move further if it is e.g. in the middle of an ocean."
+			]
+			hide_until_deps_complete: true
+			icon: "witherstormmod:command_block_book"
+			id: "1F2003EDC1D3B0A4"
+			subtitle: "Kill a Withered Symbiont and collect an Enchanted Command Block Book"
+			tasks: [
+				{
+					entity: "witherstormmod:withered_symbiont"
+					icon: "witherstormmod:withered_symbiont_spawn_egg"
+					id: "5796DBA222ED8458"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "4B9BCA02850FB4DD"
+					item: "witherstormmod:command_block_book"
+					type: "item"
+				}
+			]
+			title: "Symbiosis Necrosis"
+			x: 0.0d
+			y: 31.5d
+		}
+		{
+			dependencies: ["3E479B783B24C730"]
+			description: ["&7&lHINT:&r &5The Wither Storm&r will always prioritize chasing the player who has an Amulet in their inventory."]
+			hide_until_deps_complete: true
+			id: "2E334E5F94908B83"
+			subtitle: "Craft an Amulet to help with tracking the Wither Storm"
+			tasks: [{
+				id: "332222E6A97091AF"
+				item: {
+					Count: 1
+					id: "witherstormmod:amulet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Order of The Stone"
+			x: -2.0d
+			y: 32.5d
+		}
+		{
+			dependencies: ["3E479B783B24C730"]
+			hide_until_deps_complete: true
+			id: "553D82FB7D555F9D"
+			subtitle: "Craft a Phasometer to monitor the Wither Storm's growth"
+			tasks: [{
+				id: "426F705628565A55"
+				item: {
+					Count: 1
+					id: "witherstormmod:phasometer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 32.5d
+		}
+		{
+			dependencies: ["1F2003EDC1D3B0A4"]
+			icon_scale: 0.75d
+			id: "59B252C7E4C71A35"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Construct a Formidibomb"
+			tasks: [{
+				id: "6DBAEA6F6EC2424F"
+				item: {
+					Count: 1
+					id: "witherstormmod:formidibomb"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Formidable"
+			x: 2.0d
+			y: 32.0d
+		}
+		{
+			dependencies: ["2F2686D8E0B921C5"]
+			description: [""]
+			icon: "minecraft:grass_block"
+			id: "70E411F4BD751E0E"
+			subtitle: "Fly under the Skylands into the Overworld on your Red Dragon"
+			tasks: [{
+				advancement: "adj:red_dragon_move_dimensions"
+				criterion: ""
+				id: "235A6EE374CF1BB1"
+				title: "Trust the process and fly your Red Dragon to the Overworld"
+				type: "advancement"
+			}]
+			title: "Trust The Process"
+			x: 11.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["59B252C7E4C71A35"]
+			id: "636684C648DFFC9D"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Blow up the Wither Storm with a Formidibomb"
+			tasks: [{
+				advancement: "adj:strong_grow_weak"
+				criterion: ""
+				id: "30C6F8C473C1E456"
+				title: "The Beast Falls"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 32.0d
+		}
+		{
+			dependencies: ["2E334E5F94908B83"]
+			icon: {
+				Count: 1
+				id: "witherstormmod:amulet"
+				tag: {
+					TrackEntityTypes: 1b
+				}
+			}
+			id: "4283AEC8BB7FD410"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Link an Amulet to 4 different mobs, one per color"
+			tasks: [{
+				advancement: "adj:fully_link_amulet"
+				criterion: ""
+				icon: {
+					Count: 1
+					id: "witherstormmod:amulet"
+					tag: {
+						TrackEntityTypes: 1b
+					}
+				}
+				id: "2846966C7BD8642F"
+				title: "Link an Amulet to 4 different mobs"
+				type: "advancement"
+			}]
+			title: "The Watcher"
+			x: -1.0d
+			y: 33.0d
+		}
+		{
+			dependencies: ["636684C648DFFC9D"]
+			id: "603D3F9B2298333B"
+			invisible: true
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Witness The Wither Storm coming back from the dead"
+			tasks: [{
+				advancement: "adj:weakened_arise_stronger"
+				criterion: ""
+				icon: "netherexp:soul_burning_wither_skull_block"
+				id: "2AE06478E71429F5"
+				title: "Witness the horror rise from the dead"
+				type: "advancement"
+			}]
+			title: "The Weak Arise Stronger"
+			x: 7.5d
+			y: 33.0d
+		}
+		{
+			dependencies: ["603D3F9B2298333B"]
+			hide_until_deps_complete: true
+			icon: "witherstormmod:command_block_sword"
+			id: "19068C7B62786F99"
+			subtitle: "Kill another Withered Symbiont and use the dropped Enchanted Command Block Book to craft a Command Block Tool"
+			tasks: [{
+				id: "54B2AC1A87F9E051"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "witherstormmod:command_block_tools"
+					}
+				}
+				title: "Any #witherstormmod:command_block_tools"
+				type: "item"
+			}]
+			title: "Adminstrator Logic"
+			x: 10.0d
+			y: 33.0d
+		}
+		{
+			dependencies: ["3E479B783B24C730"]
+			hide_until_deps_complete: true
+			id: "7832C35257E664E1"
+			subtitle: "Cure a wither sickened mob by feeding it Golden Apple Stew"
+			tasks: [{
+				advancement: "adj:cured_sickened_mob"
+				criterion: ""
+				id: "3C97E4673971787B"
+				type: "advancement"
+			}]
+			title: "Plague Doctor"
+			x: -3.0d
+			y: 33.5d
+		}
+		{
+			dependencies: ["19068C7B62786F99"]
+			icon_scale: 0.75d
+			id: "088E92D166861F41"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Aim an Ender Pearl at the opening in The Wither Storm and enter its inside - The Bowels"
+			tasks: [{
+				dimension: "witherstormmod:bowels"
+				icon: "witherstormmod:tainted_sand"
+				id: "6C9463986BF038CE"
+				title: "Enter The Bowels"
+				type: "dimension"
+			}]
+			title: "Belly of The Beast"
+			x: 12.0d
+			y: 33.0d
+		}
+		{
+			dependencies: ["088E92D166861F41"]
+			hide_until_deps_complete: true
+			id: "2FC4D1B2E42E2124"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Destroy the Command Block and kill The Wither Storm, this time for good"
+			tasks: [{
+				id: "5D595E20D8507E09"
+				item: "witherstormmod:withered_nether_star"
+				type: "item"
+			}]
+			title: "One Story Ends, Another Begins"
+			x: 15.0d
+			y: 34.5d
+		}
+		{
+			dependencies: ["2FC4D1B2E42E2124"]
+			hide_until_deps_complete: true
+			icon: "witherstormmod:super_beacon"
+			icon_scale: 0.75d
+			id: "00BD4BF3FFC6172B"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Build and activate a Super Beacon with 4 Support Beacons"
+			tasks: [
+				{
+					id: "548EF30D5AA460F1"
+					item: "witherstormmod:super_beacon"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "49EABD5CE215172C"
+					item: "witherstormmod:super_support_beacon"
+					type: "item"
+				}
+				{
+					advancement: "adj:activate_super_beacon"
+					criterion: ""
+					id: "3FD02F5AF2D8BBBD"
+					title: "Activate a Super Beacon"
+					type: "advancement"
+				}
+			]
+			title: "Full Power"
+			x: 16.0d
+			y: 37.5d
+		}
+		{
+			dependencies: ["00BD4BF3FFC6172B"]
+			description: [""]
+			id: "18F8F611C29DF3A7"
+			subtitle: "Resummon a Withered Symbiont by tossing appropriate items onto a powered Super Beacon and collect one final Enchanted Command Block Book"
+			tasks: [{
+				advancement: "adj:resummon_withered_symbiont"
+				criterion: ""
+				id: "733F2BE483433157"
+				title: "Resummon a Withered Symbiont"
+				type: "advancement"
+			}]
+			title: "One More Time"
+			x: 16.0d
+			y: 39.5d
+		}
+		{
+			dependencies: ["18F8F611C29DF3A7"]
+			icon_scale: 1.15d
+			id: "42307E5368E7BA1C"
+			shape: "octagon"
+			size: 3.0d
+			subtitle: "Fuse all of your collected Eyes back into The Architect's Prism"
+			tasks: [{
+				id: "04E3FAEC49D160F4"
+				item: "structure_gel:building_tool"
+				type: "item"
+			}]
+			title: "Architect's Prism"
+			x: 15.96428571428568d
+			y: 42.35714285714284d
+		}
+		{
+			dependencies: ["4C1D62C4B13A0CE0"]
+			description: [""]
+			icon: "heart_crystals:heart_crystal"
+			id: "37D84A7023231586"
+			subtitle: "Attain maximum possible health by consuming 15 Heart Crystals"
+			tasks: [{
+				icon: "heart_crystals:heart_crystal"
+				id: "48F026344B65629F"
+				title: "Get to 400 max Health"
+				type: "custom"
+			}]
+			title: "Topped Off"
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			description: [""]
+			icon: "heart_crystals:heart_crystal"
+			id: "18A3DD0D4F700BBB"
+			subtitle: "Attain maximum possible health by consuming 15 Heart Crystals"
+			tasks: [{
+				icon: "heart_crystals:heart_crystal"
+				id: "2BB730A940FD6A95"
+				title: "Get to 400 max Health"
+				type: "custom"
+			}]
+			title: "Topped Off"
+			x: 31.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["464BE56223B9DADC"]
+			description: [""]
+			icon: "aether:life_shard"
+			id: "13339DFB11520FBF"
+			subtitle: "Get to 500 total max health by consuming 10 Life Shards"
+			tasks: [{
+				icon: "aether:life_shard"
+				id: "6A97FDE16BB0CD83"
+				title: "Consume 10 Life Shards"
+				type: "custom"
+			}]
+			title: "Life Surge"
+			x: 24.0d
+			y: 17.5d
 		}
 	]
 	title: "Story"

@@ -70,6 +70,13 @@ EntityEvents.spawned(event => {
 				}
 			}
 		}
+		if (entity.type.includes('born_in_chaos_v1') && currentStage < 2) {
+			let hp = global.hpModifications[entity.type][0];
+			if (Array.isArray(hp)) {
+				hp = hp[0];
+			}
+			entity.maxHealth = hp;
+		}
 	}
 
 	if (entity.health) {

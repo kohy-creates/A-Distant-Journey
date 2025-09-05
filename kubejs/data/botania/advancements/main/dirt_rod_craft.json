@@ -1,0 +1,38 @@
+{
+  "parent": "botania:main/rune_pickup",
+  "criteria": {
+    "dirtrod": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:dirt_rod"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.botania:dirtRodCraft.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "botania:dirt_rod"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.botania:dirtRodCraft"
+    }
+  },
+  "requirements": [
+    [
+      "dirtrod"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

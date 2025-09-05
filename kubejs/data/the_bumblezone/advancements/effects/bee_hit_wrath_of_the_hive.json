@@ -1,0 +1,36 @@
+{
+  "parent": "the_bumblezone:effects/protection_of_the_hive_defense",
+  "display": {
+    "icon": {
+      "id": "minecraft:bee_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.the_bumblezone.bee_hit_wrath_of_the_hive.title"
+    },
+    "description": {
+      "translate": "advancements.the_bumblezone.bee_hit_wrath_of_the_hive.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "criteria": {
+    "bee_hit_wrath_of_the_hive": {
+      "trigger": "the_bumblezone:bee_hit_wrath_of_the_hive",
+      "conditions": {
+        "entity": [
+          []
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bee_hit_wrath_of_the_hive"
+    ]
+  ]
+}

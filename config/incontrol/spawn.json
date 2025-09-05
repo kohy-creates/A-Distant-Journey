@@ -2,7 +2,10 @@
 	{
 		"maxheight": 60,
 		"mob": [
-			"born_in_chaos_v1:nightmare_stalker"
+			"born_in_chaos_v1:nightmare_stalker",
+			"born_in_chaos_v1:dread_hound",
+			"born_in_chaos_v1:dread_hound_not_despawn",
+			"born_in_chaos_v1:dire_hound_leader"
 		],
 		"result": "deny"
 	},

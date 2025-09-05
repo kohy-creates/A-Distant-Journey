@@ -1,0 +1,47 @@
+{
+  "parent": "the_bumblezone:effects/beenergized_maxed",
+  "display": {
+    "icon": {
+      "id": "the_bumblezone:flower_headwear"
+    },
+    "title": {
+      "translate": "advancements.the_bumblezone.craft_flower_headwear.title"
+    },
+    "description": {
+      "translate": "advancements.the_bumblezone.craft_flower_headwear.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "criteria": {
+    "craft_flower_headwear": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "the_bumblezone:flower_headwear"
+      }
+    },
+    "obtain_flower_headwear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_bumblezone:flower_headwear"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "craft_flower_headwear",
+      "obtain_flower_headwear"
+    ]
+  ]
+}

@@ -7,6 +7,14 @@
 	hide_quest_details_until_startable: true
 	icon: "botania:lexicon"
 	id: "53B7EA892E14DB2F"
+	images: [{
+		height: 1.75d
+		image: "botanicadds:block/gaiasteel_block"
+		rotation: 45.0d
+		width: 1.75d
+		x: 1.0d
+		y: 9.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -21,6 +29,11 @@
 			icon: "botania:lexicon"
 			icon_scale: 0.75d
 			id: "50E23CFDE69DC684"
+			rewards: [{
+				id: "27FCB7CEEFA5D88A"
+				item: "botania:lexicon"
+				type: "item"
+			}]
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Magic, tech. Naturally."
@@ -894,7 +907,10 @@
 				"6CF9448B3FA32156"
 				"6A83A49D8762F83D"
 			]
+			icon_scale: 0.75d
 			id: "1807373293C4A183"
+			shape: "diamond"
+			size: 1.5d
 			tasks: [{
 				id: "4E27FBB9935A920A"
 				item: "botanicadds:gaiasteel_ingot"

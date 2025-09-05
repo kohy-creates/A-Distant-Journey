@@ -1,0 +1,34 @@
+{
+	autofocus_id: "454BECC49D208105"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "into_the_mulbeeverse"
+	group: "4C4C64E64E42D01F"
+	id: "017FC168B338125C"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"Did you ever hear about the Mulbeeverse theory? The Mulbeeverse is a hypothetical set of all Beehives in your world, forming a huge network known as The Bumblezone. Well, maybe 'hypothetical' isn't the right word to use here, because it is in fact 100% real."
+			""
+			"Ever wanted to go on a walk inside a Beehive? Luckily, The Mulbeeverse allows us to do that! Just toss an Ender Pearl into a Beehive (doesn't matter if it is naturally generated or not) and get ready to explore The Bumblezone!"
+			""
+			"Leaving The Bumblezone is just as easy as going in - just mine downards until you fall out of the hive and you will be brought back to where you originally came from."
+		]
+		icon: "the_bumblezone:honeycomb_brood_block"
+		icon_scale: 0.75d
+		id: "454BECC49D208105"
+		shape: "diamond"
+		size: 2.0d
+		subtitle: "Read about The Bumblezone"
+		tasks: [{
+			id: "22FAF94CCD43A82B"
+			title: "Click to complete"
+			type: "checkmark"
+		}]
+		title: "Into The Mulbeeverse"
+		x: -1.0d
+		y: 1.0d
+	}]
+	title: "Into the Mulbeeverse"
+}

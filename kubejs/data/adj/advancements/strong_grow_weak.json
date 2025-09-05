@@ -1,0 +1,27 @@
+{
+  "parent": "adj:root",
+  "display": {
+    "icon": {
+      "item": "witherstormmod:infected_flesh_block"
+    },
+    "title": {
+      "translate": "ADJ Blow Up Wither Storm"
+    },
+    "description": "",
+    "frame": "goal",
+    "announce_to_chat": false,
+		"show_toast": false,
+    "hidden": false
+  },
+  "criteria": {
+    "play_dead": {
+      "trigger": "witherstormmod:wither_storm_play_dead",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "play_dead"
+    ]
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "adj:root",
+  "display": {
+    "icon": {
+      "item": "witherstormmod:golden_apple_stew"
+    },
+    "title": {
+      "translate": "ADJ Cure Sickened Mob"
+    },
+    "description": "",
+    "frame": "challenge",
+    "announce_to_chat": false,
+		"show_toast": false,
+    "hidden": false
+  },
+  "criteria": {
+    "cured_sickened_mob": {
+      "trigger": "witherstormmod:cured_sickened_mob",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "cured_sickened_mob"
+    ]
+  ]
+}

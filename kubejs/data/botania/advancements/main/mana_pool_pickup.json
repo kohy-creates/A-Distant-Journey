@@ -1,0 +1,41 @@
+{
+  "parent": "botania:main/flower_pickup",
+  "criteria": {
+    "pickup": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:mana_pool",
+              "botania:creative_pool",
+              "botania:diluted_pool",
+              "botania:fabulous_pool"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.botania:manaPoolPickup.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "botania:mana_pool"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.botania:manaPoolPickup"
+    }
+  },
+  "requirements": [
+    [
+      "pickup"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
