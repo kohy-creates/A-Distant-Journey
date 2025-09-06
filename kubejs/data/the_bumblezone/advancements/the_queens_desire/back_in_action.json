@@ -2,7 +2,7 @@
   "parent": "the_bumblezone:the_queens_desire/terror_fangs",
   "display": {
     "icon": {
-      "id": "the_bumblezone:bee_queen_spawn_egg"
+      "item": "the_bumblezone:bee_queen_spawn_egg"
     },
     "title": {
       "translate": "advancements.the_bumblezone.the_queens_desire.back_in_action.title"
@@ -15,17 +15,12 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "rewards": {
-    "experience": 200,
-    "loot": [
-      "the_bumblezone:advancements/queens_desire"
-    ]
-  },
+  "rewards": {},
   "criteria": {
     "bee_saved_by_stinger": {
       "trigger": "the_bumblezone:bee_saved_by_stinger",
       "conditions": {
-        "target_count": 24
+        "target_count": 12
       }
     }
   },

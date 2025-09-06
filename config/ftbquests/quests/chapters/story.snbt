@@ -198,12 +198,13 @@
 			y: 22.5d
 		}
 		{
+			dependency: "5F89BD9F8F5373EC"
 			height: 1.75d
 			image: "minecraft:block/cake_top"
 			rotation: 0.0d
 			width: 1.75d
-			x: 8.5d
-			y: 5.0d
+			x: 9.22551020408163d
+			y: 6.2775510204081755d
 		}
 		{
 			height: 1.75d
@@ -292,12 +293,13 @@
 			y: 6.0d
 		}
 		{
+			dependency: "369CDCF4288D6D76"
 			height: 1.25d
 			image: "buzzier_bees:item/honey_bread"
 			rotation: 0.0d
 			width: 1.25d
-			x: 8.0d
-			y: 6.5d
+			x: 7.939795918367338d
+			y: 6.7775510204081755d
 		}
 		{
 			dependency: "1F3DB68EA2A45EB7"
@@ -600,6 +602,15 @@
 			width: 1.75d
 			x: 19.5d
 			y: 2.0d
+		}
+		{
+			dependency: "37D84A7023231586"
+			height: 1.0d
+			image: "heart_crystals:block/heart_crystal"
+			rotation: 0.0d
+			width: 1.0d
+			x: 14.479591836734684d
+			y: 0.4132653061224474d
 		}
 	]
 	order_index: 1
@@ -3867,21 +3878,6 @@
 			title: "Topped Off"
 			x: 13.5d
 			y: 2.0d
-		}
-		{
-			description: [""]
-			icon: "heart_crystals:heart_crystal"
-			id: "18A3DD0D4F700BBB"
-			subtitle: "Attain maximum possible health by consuming 15 Heart Crystals"
-			tasks: [{
-				icon: "heart_crystals:heart_crystal"
-				id: "2BB730A940FD6A95"
-				title: "Get to 400 max Health"
-				type: "custom"
-			}]
-			title: "Topped Off"
-			x: 31.0d
-			y: 29.0d
 		}
 		{
 			dependencies: ["464BE56223B9DADC"]

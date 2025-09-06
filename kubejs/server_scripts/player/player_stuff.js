@@ -49,5 +49,12 @@ PlayerEvents.tick(event => {
 	// 	persistentData.putBoolean('gaveRing', true)
 	// 	player.give('enigmaticlegacy:cursed_ring')
 	// }
+})
 
+// Queen's Desire
+FTBQuestsEvents.completed('16BAA229C57F181A', event => {
+	event.getNotifiedPlayers().forEach(player => {
+		player.addTag('adj.qd_can_reset')
+		console.log(`Queens Desire completed by ${player.username}!`)
+	})
 })

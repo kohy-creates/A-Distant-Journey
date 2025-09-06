@@ -2,7 +2,7 @@
   "parent": "the_bumblezone:the_queens_desire/peak_inefficiency",
   "display": {
     "icon": {
-      "id": "the_bumblezone:bee_queen_spawn_egg"
+      "item": "the_bumblezone:bee_queen_spawn_egg"
     },
     "title": {
       "translate": "advancements.the_bumblezone.the_queens_desire.hungry_hungry_bees.title"
@@ -15,12 +15,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "rewards": {
-    "experience": 100,
-    "loot": [
-      "the_bumblezone:advancements/queens_desire"
-    ]
-  },
+  "rewards": {},
   "criteria": {
     "bee_fed": {
       "trigger": "the_bumblezone:bee_fed",

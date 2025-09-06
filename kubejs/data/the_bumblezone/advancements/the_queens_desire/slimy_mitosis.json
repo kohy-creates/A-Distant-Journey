@@ -2,7 +2,7 @@
   "parent": "the_bumblezone:the_queens_desire/poison_warfare",
   "display": {
     "icon": {
-      "id": "the_bumblezone:bee_queen_spawn_egg"
+      "item": "the_bumblezone:bee_queen_spawn_egg"
     },
     "title": {
       "translate": "advancements.the_bumblezone.the_queens_desire.slimy_mitosis.title"
@@ -15,12 +15,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "rewards": {
-    "experience": 100,
-    "loot": [
-      "the_bumblezone:advancements/queens_desire"
-    ]
-  },
+  "rewards": {},
   "criteria": {
     "honey_slime_bred": {
       "trigger": "the_bumblezone:honey_slime_bred",

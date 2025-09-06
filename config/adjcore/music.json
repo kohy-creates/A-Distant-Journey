@@ -17,7 +17,8 @@
 		"aether:the_aether": {
 			"day": "adj:music.the_aether.day",
 			"night": "adj:music.the_aether.night"
-		}
+		},
+		"witherstormmod:bowels": "adj:music.end"
 	},
 	"biome": {
 		"#adj:snowy": {
@@ -80,7 +81,6 @@
 		"#adj:crimson_forest": "adj:music.biome.crimson_forest",
 		"#adj:warped_forest": "adj:music.biome.warped_forest",
 		"#adj:basalt_deltas": "adj:music.biome.basalt_deltas"
-
 	},
 	"boss": {
 		"minecraft:wither": {

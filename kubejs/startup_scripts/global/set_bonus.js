@@ -2,24 +2,10 @@ const genericSetBonusUUID = '645bb590-a4ab-4c0c-bf19-653b14934698';
 global.genericSetBonusUUID = genericSetBonusUUID;
 
 global.bonusOverrides = {
-	// 'minecraft:iron': [
-	// 	['minecraft:iron', 'minecraft:iron', 'minecraft:iron', 'minecraft:golden'], // 3 iron + 1 gold
-	// 	['minecraft:iron', 'minecraft:iron', 'minecraft:iron', 'minecraft:air'] // just 3 iron
-	// ],
-	// 'minecraft:golden': [
-	// 	['minecraft:golden', 'minecraft:golden', 'minecraft:golden', 'minecraft:air'] // 3 gold
-	// ]
 	'minecraft:netherite': [
 		['minecraft:netherite', 'minecraft:netherite', 'minecraft:netherite', 'cataclysm:monstrous']
 	]
 }
-
-global.armorSuffixes = {
-	head: ['_helmet', '_helm', '_hood', '_skull'],
-	chest: ['_chestplate', '_tunic', '_robes'],
-	legs: ['_leggings', '_pants'],
-	feet: ['_boots']
-};
 
 global.setBonusMap = {
 	'minecraft:iron': {

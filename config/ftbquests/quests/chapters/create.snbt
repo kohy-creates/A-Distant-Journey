@@ -1,11 +1,342 @@
 {
+	autofocus_id: "57A550E2F3090147"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "create"
 	group: "266DD5C3D1FE65EA"
+	icon: "create:andesite_alloy"
 	id: "50D5FA1B376C34B5"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["026E22A534C341CC"]
+			description: [
+				"&7&lHINT:&r Don't know how to operate any of the machine components? Hold &l&7W&r while hovering over the item in your inventory to &7&nPonder&r!"
+				""
+				"&7&o*In Patrick Star's voice* "
+				"          &r&7WE HAVE TECHNOLOGY."
+			]
+			id: "57A550E2F3090147"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Here be contraptions"
+			tasks: [{
+				id: "639F1E73F7C92DC9"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Industrial Era"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"3090E8C8D08DFB27"
+				"57A550E2F3090147"
+			]
+			icon: "create:cogwheel"
+			id: "3393638E574BEB0D"
+			subtitle: "Craft a set of Cogwheels"
+			tasks: [
+				{
+					id: "32D03380A93533C5"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "7B36EEC781200799"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			title: "There's No Cog Like..."
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["57A550E2F3090147"]
+			id: "6F6E4CEDDF413E18"
+			subtitle: "Apply Andesite Alloy to a Stripped Log and make an Andesite Casing"
+			tasks: [{
+				id: "2A7B545F8598ED8D"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "Andesite Era"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57A550E2F3090147"]
+			id: "7F7BED49AACB2F52"
+			subtitle: "Make a Water Wheel - the easiest way to generate stress for your machines"
+			tasks: [{
+				id: "1DC4245D09C2696F"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "Merry Go Round"
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6F6E4CEDDF413E18"
+				"76EC8D76904524E9"
+			]
+			icon: "create:mechanical_press"
+			id: "0288AADCBD95EB2D"
+			subtitle: "Craft a Mechanical Press and use it to make some Sheets"
+			tasks: [
+				{
+					id: "1CE96DCC8209D986"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates"
+						}
+					}
+					title: "Any #forge:plates"
+					type: "item"
+				}
+				{
+					id: "078583A9D0E13507"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+			]
+			title: "Bonk!"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0288AADCBD95EB2D"]
+			icon: "create:encased_fan"
+			id: "105677C4F6A081CA"
+			subtitle: "Craft an Encased Fan"
+			tasks: [
+				{
+					id: "4BD32613753F7A9D"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "09082014AD375CAA"
+					item: "create:propeller"
+					type: "item"
+				}
+			]
+			title: "Wind Maker"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"57A550E2F3090147"
+				"6D19FADBF72AC531"
+			]
+			id: "6D5E23CA57F59F07"
+			subtitle: "Combine Gold and Copper in an Alloy Forge to form Brass"
+			tasks: [{
+				id: "24E744B3F4049788"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "Alloy Time!"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6D5E23CA57F59F07"]
+			id: "1FA28AA6F3F8D048"
+			subtitle: "Apply a Brass Ingot to a Stripped Log and make Brass Casing"
+			tasks: [{
+				id: "1F3E9D527B42A4CF"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			title: "Brass Era"
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1FA28AA6F3F8D048"]
+			id: "4AF5A14D685A8B9D"
+			subtitle: "Craft a pair of Crushing Wheels"
+			tasks: [{
+				count: 2L
+				id: "0C9E7C63DD1332BD"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "It's Clobbering Time!"
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6F6E4CEDDF413E18"]
+			id: "4AA3A489F54FA379"
+			subtitle: "Craft a Chunk Loader"
+			tasks: [{
+				id: "43C5C4460E2C0149"
+				item: "create_power_loader:andesite_chunk_loader"
+				type: "item"
+			}]
+			title: "Stay Loaded!"
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6D5E23CA57F59F07"]
+			icon: "create_hypertube:hypertube_entrance"
+			id: "76EC8D76904524E9"
+			subtitle: "Craft some Hypertubes"
+			tasks: [
+				{
+					id: "6E480883372A2129"
+					item: "create_hypertube:hypertube_entrance"
+					type: "item"
+				}
+				{
+					id: "46B129AC5AE8D15D"
+					item: "create_hypertube:hypertube"
+					type: "item"
+				}
+			]
+			title: "HYPERSPEED!!"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["57A550E2F3090147"]
+			id: "52D84E41D1800FE6"
+			subtitle: "Polish up some Rose Quartz"
+			tasks: [{
+				id: "52205D7EE97781DC"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			title: "Quartz 'N' Roses"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6F6E4CEDDF413E18"]
+			id: "4FC3696D42A25C66"
+			subtitle: "Craft a set of Redstone Links"
+			tasks: [{
+				count: 2L
+				id: "2F85B96BFBD3AFF6"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			title: "Wireless Device"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1FA28AA6F3F8D048"]
+			id: "20C40A85BDDEC015"
+			subtitle: "Craft a Deployer"
+			tasks: [{
+				id: "2B04AAF98AF70D11"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "A Representation of Yourself"
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["20C40A85BDDEC015"]
+			id: "782BB3D700FBD243"
+			subtitle: "Assemble a Precision Mechanism"
+			tasks: [{
+				id: "6EAE41FC90B444B3"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "So Precise!"
+			x: -0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0288AADCBD95EB2D"]
+			id: "6A26A5A7164A715C"
+			subtitle: "Craft a Wrench"
+			tasks: [{
+				id: "2ED0D6E726A076B9"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "Technomancer's Wand"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0288AADCBD95EB2D"]
+			id: "3AF5D7FFED311674"
+			subtitle: "Craft a set of Goggles"
+			tasks: [{
+				id: "53FE75172499F81D"
+				item: "create:goggles"
+				type: "item"
+			}]
+			title: "Steampunk Vision"
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["782BB3D700FBD243"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "4DD3CEFFA4141525"
+			shape: "hexagon"
+			size: 4.0d
+			subtitle: "Forge the Eye of Ethercraft"
+			tasks: [{
+				id: "48CE7358C2F75FC9"
+				item: "kubejs:eye_of_ethercraft"
+				type: "item"
+			}]
+			title: "Core of Technology"
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"This tree is very bare bones. But Ponder exists so I'll say it's complete for now."
+				""
+				"I'll definitely improve it in the future though."
+			]
+			id: "35DB17A261700EA1"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "25F271FF9B314BC7"
+				title: "Blind testing note"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"There might be some errors with the campaign tree. Some advancements may not be possible at all (for some reason) and you might get stuck. If that happens, try reloading your world first because FTB Quests sometimes bugs out. If it doesn't fix it, report it immediately."
+				""
+				"Have fun!"
+			]
+			id: "7C677452AA9FB41D"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "0530A5C825D12597"
+				title: "Blind testing note"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+	]
 	title: "Creating a Factory"
 }

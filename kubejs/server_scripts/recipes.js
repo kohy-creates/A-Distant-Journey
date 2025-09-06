@@ -40,6 +40,8 @@ ServerEvents.recipes((event) => {
 		/ars_elemental:.*_robes/,
 		/ars_elemental:.*_leggings/,
 		/ars_elemental:.*_hat/,
+
+		'ars_nouveau:worn_notebook'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -2314,5 +2316,15 @@ ServerEvents.recipes((event) => {
 		"compass",
 		Item.of('minecraft:compass', '{LodestoneDimension:"minecraft:overworld",LodestonePos:{X:3440,Y:64,Z:3200},LodestoneTracked:0b,display:{Name:\'{"text":"Command Block Compass","italic":false}\'},"quark:compass_calculated":1b,"quark:compass_in_nether":0b}'),
 		0
+	)
+
+	event.shapeless(
+		'ars_nouveau:worn_notebook',
+		[
+			'#forge:logs/archwood',
+			'#forge:logs/archwood',
+			'#forge:logs/archwood',
+			'book'
+		]
 	)
 });

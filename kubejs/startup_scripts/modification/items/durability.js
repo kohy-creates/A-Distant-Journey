@@ -104,7 +104,8 @@ ItemEvents.modification(event => {
 
 	//////////////////////////////////////////////////////
 
-	const item_ids = ['_helmet', '_chestplate', '_leggings', '_boots', '_helm', '_tunic']
+	const item_ids = Object.values(global.armorSuffixes)
+		.reduce((all, arr) => all.concat(arr), []);
 	function armorset(type) {
 		let list = [];
 		item_ids.forEach(item => {

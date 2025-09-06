@@ -18,6 +18,9 @@
 		}
 	},
 	"cataclysm:deathlaser": {
-		"iframs": 8
+		"iframes": 8
+	},
+	"minecraft:on_fire": {
+		"iframes": 5
 	}
 }

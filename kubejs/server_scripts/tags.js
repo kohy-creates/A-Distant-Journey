@@ -134,6 +134,44 @@ ServerEvents.tags('item', event => {
 		/cataclysm:.*eye.*/,
 		'rediscovered:ruby_eye'
 	])
+
+	event.add('adj:ars/glyphs', [
+		/.*\:glyph_.*/
+	])
+
+	event.add('adj:ars/rituals', [
+		/.*\:ritual_.*/
+	])
+	event.remove('adj:ars/rituals', [
+		'ars_nouveau:ritual_brazier'
+	])
+
+	event.add('adj:ars/lesser_spell_focus', [
+		/ars_elemental:lesser_*/
+	])
+
+	event.add('adj:ars/spell_focus', [
+		/ars_elemental:.*_focus/
+	])
+	event.remove('adj:ars/spell_focus', [
+		/ars_elemental:lesser_*/
+	])
+
+	event.add('adj:ars/sourcelinks', [
+		/ars_nouveau:.*_sourcelink/
+	])
+
+	event.add('adj:ars/relay', [
+		/ars_nouveau:relay.*/
+	])
+
+	event.add('adj:ars/essence', [
+		/ars_nouveau:.*_essence/
+	])
+
+	event.add('adj:ars/bangle', [
+		/ars_elemental:.*_bangle/
+	])
 })
 
 ServerEvents.tags('block', event => {

@@ -2,7 +2,7 @@
   "parent": "the_bumblezone:the_queens_desire/fighting_the_swarm",
   "display": {
     "icon": {
-      "id": "the_bumblezone:bee_queen_spawn_egg"
+      "item": "the_bumblezone:bee_queen_spawn_egg"
     },
     "title": {
       "translate": "advancements.the_bumblezone.the_queens_desire.poison_warfare.title"
@@ -15,17 +15,12 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "rewards": {
-    "experience": 50,
-    "loot": [
-      "the_bumblezone:advancements/queens_desire"
-    ]
-  },
+  "rewards": {},
   "criteria": {
     "bee_stinger_shooter": {
       "trigger": "the_bumblezone:bee_stinger_shooter",
       "conditions": {
-        "target_count": 64
+        "target_count": 32
       }
     }
   },

@@ -2,7 +2,7 @@
   "parent": "the_bumblezone:the_queens_desire/honey_drunk",
   "display": {
     "icon": {
-      "id": "the_bumblezone:bee_queen_spawn_egg"
+      "item": "the_bumblezone:bee_queen_spawn_egg"
     },
     "title": {
       "translate": "advancements.the_bumblezone.the_queens_desire.pollen_fight.title"
@@ -15,17 +15,12 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "rewards": {
-    "experience": 100,
-    "loot": [
-      "the_bumblezone:advancements/queens_desire"
-    ]
-  },
+  "rewards": {},
   "criteria": {
     "pollen_puff_hit": {
       "trigger": "the_bumblezone:pollen_puff_hit",
       "conditions": {
-        "target_count": 48
+        "target_count": 24
       }
     }
   },

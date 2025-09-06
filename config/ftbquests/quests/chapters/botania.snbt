@@ -29,26 +29,28 @@
 			icon: "botania:lexicon"
 			icon_scale: 0.75d
 			id: "50E23CFDE69DC684"
-			rewards: [{
-				id: "27FCB7CEEFA5D88A"
-				item: "botania:lexicon"
-				type: "item"
-			}]
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Magic, tech. Naturally."
-			tasks: [{
-				id: "751250953F8F8CB2"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "botania:mystical_flowers"
+			tasks: [
+				{
+					id: "751250953F8F8CB2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "botania:mystical_flowers"
+						}
 					}
+					title: "Pick up any Mystical Flower"
+					type: "item"
 				}
-				title: "Any Mystical Flower"
-				type: "item"
-			}]
+				{
+					id: "7FD4A368329AA00A"
+					item: "botania:lexicon"
+					type: "item"
+				}
+			]
 			title: "Magical Botanics"
 			x: -2.0d
 			y: -2.0d
@@ -920,21 +922,36 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["0AA4AD4290EE5366"]
+			id: "2F2C7D360A6EBE2A"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a Botanical Energyseer Monocle"
+			tasks: [{
+				id: "77FD519D83C2610B"
+				item: "botania:monocle"
+				type: "item"
+			}]
+			title: "See More"
+			x: 8.5d
+			y: -1.0d
+		}
+		{
 			dependencies: ["1807373293C4A183"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
-			id: "4DD3CEFFA4141525"
+			id: "127F1C202BCDDF85"
 			shape: "hexagon"
-			size: 3.0d
+			size: 4.0d
 			subtitle: "Imbue an Awakened Ender Pearl with forces of nature and turn it into the Eye of Verdancy"
 			tasks: [{
-				id: "48CE7358C2F75FC9"
+				id: "37A2ADDC16F4D8B3"
 				item: "kubejs:eye_of_verdant_bloom"
 				type: "item"
 			}]
 			title: "Core of Nature"
-			x: 1.5d
-			y: 4.5d
+			x: 2.0d
+			y: 4.0d
 		}
 	]
 	title: "Magical Botanics"

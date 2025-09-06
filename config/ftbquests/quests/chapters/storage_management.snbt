@@ -1,11 +1,156 @@
 {
+	autofocus_id: "6A911AFF4185ED0D"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "storage_management"
 	group: "266DD5C3D1FE65EA"
+	icon: "minecraft:chest"
 	id: "470CC0A899AD68D9"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["6A911AFF4185ED0D"]
+			icon: "toms_storage:ts.inventory_connector"
+			id: "0B9481F02CACCE1D"
+			subtitle: "Craft an Inventory Connector and a Storage Terminal and place them together"
+			tasks: [
+				{
+					id: "5B09C27B5A4C9162"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+				{
+					id: "790A4C20E3643F7A"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+				{
+					block: "toms_storage:ts.storage_terminal"
+					block_type: 0
+					id: "60985A34FF95CE39"
+					replace: false
+					replaced: "minecraft:air"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					block: "toms_storage:ts.inventory_connector"
+					block_type: 0
+					id: "14392D7327A98149"
+					replace: false
+					replaced: "minecraft:air"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "Simple Storage System"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["026E22A534C341CC"]
+			icon: "minecraft:chest"
+			id: "6A911AFF4185ED0D"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Because your inventory is very limited"
+			tasks: [{
+				id: "4DEA787E6FC0C4B9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:chests"
+					}
+				}
+				title: "Craft any Chest"
+				type: "item"
+			}]
+			title: "Storage"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6A911AFF4185ED0D"]
+			id: "5BE98BA6A0B68228"
+			subtitle: "Craft an Ender Chest"
+			tasks: [{
+				id: "0AFB8351D36B8CAF"
+				item: "minecraft:ender_chest"
+				type: "item"
+			}]
+			title: "Cloud Storage"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B9481F02CACCE1D"]
+			id: "5BEB59ADDC0C6099"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Upgrade your Storage Terminal into a Crafting Terminal"
+			tasks: [{
+				id: "517CA830A3E07014"
+				item: "toms_storage:ts.crafting_terminal"
+				type: "item"
+			}]
+			title: "Extra Features"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6A911AFF4185ED0D"]
+			id: "67FFFFBD84B01AD3"
+			subtitle: "Craft an Item Vault"
+			tasks: [{
+				id: "64412A69C7451229"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			title: "Vaulted"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A911AFF4185ED0D"]
+			id: "5AD11F2BB6466384"
+			subtitle: "Craft a Shared Ender Chest. You can set its channel with Dyes"
+			tasks: [{
+				id: "32DD974AE4484D9E"
+				item: "enderstorage:ender_chest"
+				type: "item"
+			}]
+			title: "Shared Folder"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6A911AFF4185ED0D"]
+			id: "7EDDEFE957513B50"
+			subtitle: "Craft a Fluid Tank"
+			tasks: [{
+				id: "325D1AF582AA8DCB"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			title: "Not Only Items!"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6A911AFF4185ED0D"]
+			id: "59124904F1A83FE8"
+			subtitle: "Craft an Ender Tank. You can set its channel with Dyes"
+			tasks: [{
+				id: "0CF8CA38B906A3A8"
+				item: "enderstorage:ender_tank"
+				type: "item"
+			}]
+			title: "Open Source"
+			x: 0.0d
+			y: 3.0d
+		}
+	]
 	title: "Storage Management"
 }

@@ -5,10 +5,11 @@
 	group: "4C4C64E64E42D01F"
 	icon: "aquamirae:rune_of_the_storm"
 	id: "2B34DB1EEA89290E"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["026E22A534C341CC"]
 			description: [
 				"There is a legend of Ice Mazes in the Frozen Ocean biome. They were made through the strong influence of arcane magic on that land. Said dark magic started twisting the local fauna, turning them into abominable beings adapted to the freezing waters, hungry for blood."
 				""
@@ -98,6 +99,18 @@
 			title: "The Legends Become Reality"
 			x: 2.0d
 			y: -3.0d
+		}
+		{
+			description: ["This page is still WIP. I started making it as a ground work for the later tasks but never got to finish it. Expect a fully polished side campaign somewhere in the future."]
+			id: "53760C631579C08D"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "463A7FEB55AE42AF"
+				title: "Blind testing note"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -2.0d
 		}
 	]
 	title: "Beneath The Ice"

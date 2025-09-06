@@ -2,7 +2,7 @@
   "parent": "the_bumblezone:the_queens_desire/crazy_trader",
   "display": {
     "icon": {
-      "id": "the_bumblezone:essence_of_the_bees"
+      "item": "the_bumblezone:essence_of_the_bees"
     },
     "title": {
       "translate": "advancements.the_bumblezone.the_queens_desire.journeys_end.title"
@@ -16,7 +16,6 @@
     "hidden": false
   },
   "rewards": {
-    "experience": 1500,
     "loot": [
       "the_bumblezone:advancements/queens_desire_end"
     ]

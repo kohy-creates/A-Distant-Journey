@@ -7,14 +7,88 @@
 	group: ""
 	icon: "ars_nouveau:worn_notebook"
 	id: "6827135B158F87E2"
-	images: [{
-		height: 10.0d
-		image: "adj:textures/texts/intro.png"
-		rotation: 0.0d
-		width: 10.0d
-		x: 7.0d
-		y: -2.0d
-	}]
+	images: [
+		{
+			height: 10.0d
+			image: "adj:textures/texts/intro.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependency: "20130F300D432015"
+			height: 2.0d
+			image: "kubejs:item/eye_of_cinders"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 2.0d
+			image: "kubejs:item/eye_of_angels"
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependency: "6E9823FB2C7C6D19"
+			height: 2.0d
+			image: "kubejs:item/eye_of_dreams"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependency: "3F2B685C8C008081"
+			height: 2.0d
+			image: "kubejs:item/eye_of_desolation"
+			rotation: 0.0d
+			width: 2.0d
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependency: "127F1C202BCDDF85"
+			height: 2.0d
+			image: "kubejs:item/eye_of_verdancy"
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependency: "2816033FD61214F9"
+			height: 2.0d
+			image: "kubejs:item/eye_of_arcanum"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependency: "4DD3CEFFA4141525"
+			height: 2.0d
+			image: "kubejs:item/eye_of_ethercraft"
+			rotation: 0.0d
+			width: 2.0d
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependency: "20130F300D432015"
+			height: 12.0d
+			image: "minecraft:textures/gui/advancements/window.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 3.5d
+			y: 5.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -84,8 +158,8 @@
 				type: "checkmark"
 			}]
 			title: "&lMultiplayer:&r &dParties"
-			x: -1.0d
-			y: -1.5d
+			x: -1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4A074153AE2D521D"]
@@ -110,8 +184,8 @@
 				type: "checkmark"
 			}]
 			title: "&lBasics:&r &aProgression"
-			x: -1.0d
-			y: -4.5d
+			x: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2482788CF690BB31"]
@@ -132,8 +206,8 @@
 				type: "checkmark"
 			}]
 			title: "&lBasics:&r &cDifficulty"
-			x: 0.0d
-			y: -5.0d
+			x: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4A074153AE2D521D"]
@@ -178,8 +252,8 @@
 				type: "checkmark"
 			}]
 			title: "&lBasics:&r &cCombat"
-			x: -2.0d
-			y: -3.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4A074153AE2D521D"]
@@ -225,7 +299,7 @@
 				type: "item"
 			}]
 			title: "&lTutorial:&r &6Quick Travel"
-			x: 1.0d
+			x: 1.5d
 			y: -4.5d
 		}
 		{
@@ -253,7 +327,7 @@
 			]
 			title: "&lTutorial:&r &6Storage"
 			x: 2.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4A074153AE2D521D"]
@@ -303,8 +377,60 @@
 				}
 			]
 			title: "&lTutorial:&r &eStaying oriented"
-			x: 1.0d
+			x: 1.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["4A074153AE2D521D"]
+			description: [
+				"If this isn't your first modpack you might already be familiar with the concept of &lChunk Loading&r. If not, it's exactly what it sounds like - keeping chunks loaded so that your farms, machines, etc. keep running no matter where you are in your world."
+				""
+				"Usually in a typical modpack you have a &eclaim system&r and an option to &eforceload a selected chunks&r."
+				""
+				"You probably realized where I'm going with it, so let's just skip to the end - specifically &othat &rsystem &cdoesn't exist&r in &6ADJ&r. We have something better."
+				"{@pagebreak}"
+				"Say hello to &6&lChunk Loaders&r! You can craft them pretty much at the very start of the game if you manage to find &dAmethyst&r early. Though they do require rotatonal force to run, but it's really not a huge problem to power them. If you don't know how to generate that or even what rotational force is, check out the '&7Creating a Factory&r' chapter! It will help you get a hold of things."
+				""
+				"&6Andesite Chunk Loaders&r load a &esingular chunk&r they are in. "
+				"&6Brass Chunk Loaders&r load a &e3x3 area of chunks&r around them (and have multiple modes too!)."
+			]
+			id: "0837881F85485D3F"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "74F644416D689AAB"
+				item: "create_power_loader:andesite_chunk_loader"
+				type: "item"
+			}]
+			title: "&f&lTutorial: &r&dChunk Loading"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4A074153AE2D521D"]
+			description: [
+				"Just to make your life worse, &6ADJ &rfeatures &aSeasons&r!"
+				""
+				"Every season lasts &e30 in-game days total&r (divided into &ethree subseasons&r, each lasting &e10 days&r)."
+				""
+				"It really isn't as threatening as it sounds though! &oUnless you don't have enough food stocked up...&r"
+				""
+				"You can craft a &6Calendar&r to view current season and how much longer it's going to last for!"
+				""
+				"{@pagebreak}"
+				"Just because I don't want to make a separate entry for it, I'll just mention that days in &6ADJ&r are &eever so &oslightly&r&e longer&r compared to regular Minecraft. From 20 minutes to &e24&r."
+				""
+				"&cBeds&r also no longer skip time instantly, instead accelerating the flow of time around you. They can also be entered at any time of day to skip to the &9Night&r in case you wanted to e.g. farm monsters. Quite handy!"
+			]
+			id: "0204327B87A0A113"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "32CE5F99141C2165"
+				item: "sereneseasons:calendar"
+				type: "item"
+			}]
+			title: "&f&lBasics:&r &6Seasons"
+			x: -2.0d
+			y: -3.5d
 		}
 	]
 	title: "Intro"

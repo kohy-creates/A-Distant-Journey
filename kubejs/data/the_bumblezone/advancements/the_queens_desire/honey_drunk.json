@@ -2,7 +2,7 @@
   "parent": "the_bumblezone:the_queens_desire/too_many_legs",
   "display": {
     "icon": {
-      "id": "the_bumblezone:bee_queen_spawn_egg"
+      "item": "the_bumblezone:bee_queen_spawn_egg"
     },
     "title": {
       "translate": "advancements.the_bumblezone.the_queens_desire.honey_drunk.title"
@@ -15,17 +15,12 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "rewards": {
-    "experience": 100,
-    "loot": [
-      "the_bumblezone:advancements/queens_desire"
-    ]
-  },
+  "rewards": {},
   "criteria": {
     "honey_bottle_drank": {
       "trigger": "the_bumblezone:honey_bottle_drank",
       "conditions": {
-        "target_count": 16
+        "target_count": 8
       }
     }
   },

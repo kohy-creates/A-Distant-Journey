@@ -168,3 +168,10 @@ global.quarkVerticalSlabs.forEach(slab => {
 		})
 	}
 })
+
+global.armorSuffixes = {
+	head: ['_helmet', '_helm', '_hood', '_skull'],
+	chest: ['_chestplate', '_tunic', '_robes'],
+	legs: ['_leggings', '_pants'],
+	feet: ['_boots']
+};
