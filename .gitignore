@@ -77,7 +77,7 @@ EffekseerNativeForJava.dll
 hs_err_pid*.log
 knownkeys.txt
 minecraftinstance.json
-options.txt
+/options.txt
 rhino.local.properties
 patchouli_data.json
 supportercache.json
