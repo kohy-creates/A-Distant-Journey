@@ -95,3 +95,4 @@ backups/
 win_event*.txt
 impossible_data/
 enigmatic_persistence.dat
+/config/showmeyourskin.json

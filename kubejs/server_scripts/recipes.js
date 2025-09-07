@@ -2331,4 +2331,16 @@ ServerEvents.recipes((event) => {
 			'book'
 		]
 	)
+
+	event.remove({ type: 'xercapaint:crafting_special_palette_crafting' });
+	event.shaped(
+		Item.of('xercapaint:item_palette'),
+		[
+			'P ',
+			'PP'
+		],
+		{
+			P: '#minecraft:planks'
+		}
+	)
 });

@@ -1,11 +1,310 @@
 {
+	autofocus_id: "4BECD0660111B4AC"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "becoming_an_artist"
 	group: "12494D4A5CAA903A"
+	icon: "exposure:camera"
 	id: "424EF7956FF4323C"
+	images: [
+		{
+			height: 3.0d
+			image: "amendments:block/music_discs/additionaladditions/music_disc_0308"
+			rotation: 45.0d
+			width: 3.0d
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			height: 2.0d
+			image: "exposure:block/lightroom_top"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependency: "1DC3FEA4EA21551B"
+			height: 3.0d
+			image: "exposure:item/photograph"
+			rotation: 0.0d
+			width: 3.0d
+			x: -11.0d
+			y: 0.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: ["&7&lHINT:&r You can insert and take out Film Rolls by &eright-clicking your Camera in your Inventory&r!"]
+			icon: "exposure:camera"
+			id: "3A017BDC7B799F5B"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Craft a Camera and insert any Film Roll into it"
+			tasks: [
+				{
+					id: "705BF44009C37E48"
+					item: "exposure:camera"
+					type: "item"
+				}
+				{
+					id: "5C782C0A8B5DF9E7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "exposure:film_rolls"
+						}
+					}
+					title: "Any Film Roll"
+					type: "item"
+				}
+			]
+			title: "Capturing The Moment"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			description: [""]
+			icon: "xercapaint:item_palette"
+			id: "4BECD0660111B4AC"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Craft an Easel and a Palette"
+			tasks: [
+				{
+					id: "636254EBFFDD5CE7"
+					item: "xercapaint:item_easel"
+					type: "item"
+				}
+				{
+					id: "381CA88621AA202F"
+					item: "xercapaint:item_palette"
+					type: "item"
+				}
+			]
+			title: "Joy of Painting"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			icon: "minecraft:music_disc_blocks"
+			id: "74568A8CB40BC9F8"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Find any Music Disc"
+			tasks: [{
+				id: "5B7EDC40AA76B3CA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:music_disc"
+					}
+				}
+				title: "Pick up any Music Disc"
+				type: "item"
+			}]
+			title: "Musically"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BECD0660111B4AC"]
+			description: ["&7&lHINT:&r It's easy, just combine them together in your crafting grid!"]
+			id: "23B0B9101D01EA1D"
+			subtitle: "Add all 16 Dyes to your Palette"
+			tasks: [{
+				id: "030423BDD7DD87C9"
+				item: {
+					Count: 1
+					id: "xercapaint:item_palette"
+					tag: {
+						basic: [B;
+							1b
+							1b
+							1b
+							1b
+							1b
+							1b
+							1b
+							1b
+							1b
+							1b
+							1b
+							1b
+							1b
+							1b
+							1b
+							1b
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "The Color Update"
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4BECD0660111B4AC"]
+			icon: "xercapaint:item_canvas"
+			id: "31FBE61EE6BDB2D3"
+			subtitle: "Craft a Canvas and place it on your Easel"
+			tasks: [{
+				id: "6BB2DCE965BE6E4F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:canvas"
+					}
+				}
+				title: "Craft any Canvas"
+				type: "item"
+			}]
+			title: "Artpop"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3A017BDC7B799F5B"]
+			icon: "exposure:developed_black_and_white_film"
+			id: "5B5CD3D317CB17D8"
+			subtitle: "Combine your Film Rolls with a specific fluid to develop them and prepare for printing"
+			tasks: [{
+				id: "204358405949711C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "exposure:developed_film_rolls"
+					}
+				}
+				title: "Any #exposure:developed_film_rolls"
+				type: "item"
+			}]
+			title: "Printing Process"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B5CD3D317CB17D8"]
+			icon: "exposure:lightroom"
+			id: "1DC3FEA4EA21551B"
+			subtitle: "Craft a Lightroom and print your photos"
+			tasks: [
+				{
+					id: "75F88AF884426B0B"
+					item: "exposure:lightroom"
+					type: "item"
+				}
+				{
+					id: "006CAA853F8FF986"
+					item: "exposure:photograph"
+					type: "item"
+				}
+			]
+			title: "Captured Moment"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1DC3FEA4EA21551B"]
+			id: "44E3D99502AA96EF"
+			subtitle: "Craft a Photo Album"
+			tasks: [{
+				id: "69E819262972B3F7"
+				item: "exposure:album"
+				type: "item"
+			}]
+			title: "A Collection of Memories"
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1DC3FEA4EA21551B"]
+			id: "63230A022677527E"
+			subtitle: "Craft a Photograph Frame"
+			tasks: [{
+				id: "41AF07D7FCF06478"
+				item: "exposure:photograph_frame"
+				type: "item"
+			}]
+			title: "Framed Forever"
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["74568A8CB40BC9F8"]
+			id: "7F7BF3FBC0B9C8B7"
+			subtitle: "Smelt the found Music Disc into a Blank Music Disc"
+			tasks: [{
+				id: "66F10D7830336E25"
+				item: "etched:blank_music_disc"
+				type: "item"
+			}]
+			title: "Recycling"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["74568A8CB40BC9F8"]
+			id: "4E418BC91C3E9302"
+			subtitle: "Start your own recording label by... well, crafting a Music Label"
+			tasks: [{
+				id: "13953A08B1C55BA1"
+				item: {
+					Count: 1
+					id: "etched:music_label"
+					tag: {
+						Label: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "New Label"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4E418BC91C3E9302"
+				"7F7BF3FBC0B9C8B7"
+			]
+			description: [
+				"&7&lHINT:&r Custom music discs support playing sounds from any of those sources:"
+				"- &eDirect link to the MP3/OGG/WAV file"
+				"- &eSoundCloud &7(GO+ songs are &cnot&7 supported)"
+				"- &eBandcamp"
+			]
+			icon: "etched:etching_table"
+			id: "3A7F4A7413F7B2F3"
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Craft an Etching Table and make your own Music Disc"
+			tasks: [
+				{
+					id: "206575A737889182"
+					item: "etched:etching_table"
+					type: "item"
+				}
+				{
+					id: "42DBCDBE73811A36"
+					item: {
+						Count: 1
+						id: "etched:etched_music_disc"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Certified Platinum"
+			x: 3.0d
+			y: -1.5d
+		}
+	]
 	title: "Becoming an Artist"
 }

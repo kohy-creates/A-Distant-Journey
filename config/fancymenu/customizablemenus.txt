@@ -54,9 +54,6 @@ net.minecraft.client.gui.screens.ChatOptionsScreen {
 net.minecraft.client.gui.screens.AccessibilityOptionsScreen {
 }
 
-net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
-}
-
 net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
 }
 
@@ -67,5 +64,8 @@ net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
 }
 
 net.mcreator.nourishednether.client.gui.TransmutationTableGuiScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 }
 

@@ -1,7 +1,12 @@
 {
   "uncap_menu_frame_rate": true,
+  "ignore_initial_click": "constant",
   "idle": {
-    "timeout": 180
+    "timeout": 180,
+    "condition": "none"
+  },
+  "volume_transition_speed": {
+    "down": 0.3
   },
   "states": {
     "hovered": {
@@ -10,12 +15,17 @@
       "run_garbage_collector": true
     },
     "unfocused": {
+      "frame_rate_target": 60,
       "graphics_state": "reduced"
     },
     "invisible": {
+      "frame_rate_target": 60,
       "graphics_state": "reduced"
     },
     "unplugged": {
+      "frame_rate_target": 60
+    },
+    "abandoned": {
       "frame_rate_target": 60
     }
   }

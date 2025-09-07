@@ -172,6 +172,10 @@ ServerEvents.tags('item', event => {
 	event.add('adj:ars/bangle', [
 		/ars_elemental:.*_bangle/
 	])
+
+		event.add('adj:canvas', [
+		/xercapaint:.*canvas.*/
+	])
 })
 
 ServerEvents.tags('block', event => {

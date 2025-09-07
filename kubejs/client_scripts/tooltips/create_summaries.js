@@ -3638,7 +3638,6 @@ const itemsToTooltip = [
 	},
 	{
 		item: 'rediscovered:nether_reactor_core',
-		// summary: [],
 		controls: [
 			{
 				control: "Powering a Nether Reactor Core",
@@ -3659,16 +3658,16 @@ const itemsToTooltip = [
 				control: 'powered',
 				requiresHold: false,
 				text: [
-					'Increases damage and defense of players in a large radius.',
-					'Building the base out of Blocks of Netherite increases effect potency.',
-					'Cobblestone used to build the frame will be turned into Glowing Obsidian.'
+					'Increases _damage and defense of all mobs_ in a large radius.',
+					'Building the base out of _Blocks of Netherite_ increases _effect potency_.',
+					'_Cobblestone_ used to build the frame will be turned into _Glowing Obsidian_.'
 				]
 			},
 			{
 				control: 'powered and a Piglin/Pigman is nearby',
 				requiresHold: false,
 				text: [
-					'Prevents zombification outside of native dimension.'
+					'_Prevents zombification_ outside of native dimension.'
 				]
 			}
 		]
@@ -3685,6 +3684,21 @@ const itemsToTooltip = [
 				text: [
 					"Turns the Item Frame _invisible_",
 					"Do it again to make it _visible_ again"
+				]
+			}
+		]
+	},
+	{
+		item: [
+			'xercapaint:item_palette'
+		],
+		controls: [
+			{
+				control: 'combined with any Dye',
+				requiresHold: false,
+				text: [
+					'Permanently _adds the used Dye_ to the Palette,',
+					'allowing it to be used to _paint on a Canvas_'
 				]
 			}
 		]
