@@ -60,7 +60,7 @@
 		"file/\u00A75VN4's \u00A7l\u00A72FWS+RWS Detailed.zip",
 		"file/Tainted's Accurate Wither Storm Models v3.0.2.2.zip",
 		"file/kohara's Compat",
-		"file/ADJ Music"
+		"file/ADJ-Music.zip"
 	],
 	"pack_overrides": {
 		"default": [
@@ -120,7 +120,7 @@
 			"file/\u00A75VN4's \u00A7l\u00A72FWS+RWS Detailed.zip",
 			"file/Tainted's Accurate Wither Storm Models v3.0.2.2.zip",
 			"file/kohara's Compat",
-			"file/ADJ Music"
+			"file/ADJ-Music.zip"
 		],
 		"hidden": [
 			"botaniacombat:botaniacombatlang",
