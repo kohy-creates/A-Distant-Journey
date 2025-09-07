@@ -1,0 +1,12 @@
+{
+  "replace": false,  
+  "values": [
+      "clifftree:warm_caves",
+      "clifftree:inferno",
+      "clifftree:warm_river",
+      "clifftree:tropical_river",
+      "clifftree:shrubland",
+      "clifftree:oasis",
+      "clifftree:desert_cliff"
+    ]
+  }

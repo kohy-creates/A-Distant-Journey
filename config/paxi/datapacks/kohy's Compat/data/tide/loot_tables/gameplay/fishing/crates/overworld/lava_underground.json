@@ -1,0 +1,97 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:coal",
+					"weight": 60
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bone",
+					"weight": 60
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:obsidian",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:crying_obsidian",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tide:obsidian_fragment",
+					"weight": 40
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:magma_block",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gold_ingot",
+					"quality": 1,
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:diamond",
+					"quality": 2,
+					"weight": 8
+				},
+				{
+					"type": "minecraft:item",
+					"conditions": [
+						{
+							"chance": 0.6,
+							"condition": "minecraft:random_chance"
+						}
+					],
+					"functions": [
+						{
+							"add": false,
+							"count": 1,
+							"function": "minecraft:set_count"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": false
+						}
+					],
+					"name": "minecraft:book",
+					"quality": 5,
+					"weight": 6
+				}
+			],
+			"rolls": {
+				"type": "minecraft:uniform",
+				"max": 9,
+				"min": 6
+			}
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "tide:gameplay/fishing/crates/accessories_lava_underground"
+				}
+			],
+			"functions": [],
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.33
+				}
+			]
+		}
+	]
+}

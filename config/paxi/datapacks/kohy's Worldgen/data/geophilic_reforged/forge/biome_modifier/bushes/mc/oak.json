@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/bushes/mc/oak",
+  "features": "geophilic_reforged:bushes/mc/oak",
+  "step": "fluid_springs"
+}

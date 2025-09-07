@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:netherrack_replace_blobs",
+          "config": {
+            "state": {
+              "Name": "minecraft:brown_terracotta"
+            },
+            "target": {
+              "Name": "minecraft:red_terracotta"
+            },
+			"radius": 12
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:netherrack_replace_blobs",
+          "config": {
+            "state": {
+              "Name": "minecraft:orange_terracotta"
+            },
+            "target": {
+              "Name": "minecraft:yellow_terracotta"
+            },
+			"radius": 12
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

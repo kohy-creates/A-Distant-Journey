@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/rocks/cobblestone",
+  "features": "geophilic_reforged:rocks/cobblestone",
+  "step": "fluid_springs"
+}

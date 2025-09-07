@@ -1,0 +1,12 @@
+{
+  "feature": "kohara:snowy_caves/more_ice",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 50
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": [
+		"clifftree:frozen_caves"
+	],
+	"features": [
+		"kohara:snowy_caves/more_ice"
+	],
+	"step": "underground_decoration"
+}

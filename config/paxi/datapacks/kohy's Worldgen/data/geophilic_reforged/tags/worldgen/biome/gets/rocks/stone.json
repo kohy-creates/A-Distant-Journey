@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "#forge:is_plains",
+      "required": false
+    },
+    {
+      "id": "#minecraft:is_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:old_growth_woodland",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/windswept/chestnut",
+  "features": "geophilic_reforged:fallen_trees/windswept/chestnut",
+  "step": "fluid_springs"
+}

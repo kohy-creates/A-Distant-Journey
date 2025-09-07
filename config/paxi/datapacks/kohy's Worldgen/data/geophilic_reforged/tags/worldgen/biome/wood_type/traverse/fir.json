@@ -1,0 +1,12 @@
+{
+	"values": [
+		{
+			"id": "traverse:coniferous_forest",
+			"required": false
+		},
+		{
+			"id": "traverse:snowy_coniferous_forest",
+			"required": false
+		}
+	]
+}

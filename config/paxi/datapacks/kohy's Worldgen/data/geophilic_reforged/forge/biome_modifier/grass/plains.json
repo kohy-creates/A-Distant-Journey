@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/grass/plains",
+  "features": "geophilic_reforged:grass/plains",
+  "step": "top_layer_modification"
+}

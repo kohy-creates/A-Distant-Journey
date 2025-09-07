@@ -1,0 +1,236 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:salmon",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tide:trout",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": true,
+							"conditions": [
+								{
+									"chance": 0.5,
+									"condition": "minecraft:random_chance"
+								}
+							],
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:stick",
+					"weight": 80
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cobblestone",
+					"weight": 90
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": true,
+							"conditions": [
+								{
+									"chance": 0.5,
+									"condition": "minecraft:random_chance"
+								}
+							],
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:iron_nugget",
+					"quality": 3,
+					"weight": 40
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tide:bass",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wheat",
+					"quality": 1,
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wheat_seeds",
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 20,
+								"min": 5
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:kelp",
+					"weight": 12
+				},
+				{
+					"type": "minecraft:item",
+					"conditions": [
+						{
+							"chance": 0.5,
+							"condition": "minecraft:random_chance"
+						}
+					],
+					"functions": [
+						{
+							"add": false,
+							"count": 1,
+							"function": "minecraft:set_count"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 15,
+							"treasure": false
+						}
+					],
+					"name": "minecraft:book",
+					"quality": 5,
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bamboo",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 5,
+								"max": 13
+							}
+						}
+					]
+				}
+			],
+			"rolls": {
+				"type": "minecraft:uniform",
+				"max": 12,
+				"min": 7
+			}
+		},
+		{
+			"bonus_rolls": 0,
+			"conditions": [
+				{
+					"chance": 0.8,
+					"condition": "minecraft:random_chance"
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": 1,
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "tide:torn_note"
+				}
+			],
+			"rolls": 1
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_ingot",
+					"quality": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:copper_ingot",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "create:zinc_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4
+							}
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.33
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "tide:gameplay/fishing/crates/accessories"
+				}
+			],
+			"functions": [],
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.5
+				}
+			]
+		}
+	]
+}

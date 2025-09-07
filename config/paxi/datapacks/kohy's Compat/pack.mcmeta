@@ -1,0 +1,21 @@
+{
+	"pack": {
+		"pack_format": 48,
+		"description": "kohara's different tweaks"
+	},
+	"filter": {
+		"block": [
+			{
+				"path": "^advancements/recipes.*$"
+			},
+			{
+				"namespace": "^(?!botania$|the_bumblezone$|adj$)",
+				"path": "^advancements/.*$"
+			},
+			{
+				"namespace": "^botania$",
+				"path": "^advancements/challenge.*$"
+			}
+		]
+	}
+}

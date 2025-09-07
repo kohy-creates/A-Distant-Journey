@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/block_patches/calcite",
+  "features": "geophilic_reforged:block_patches/calcite",
+  "step": "fluid_springs"
+}

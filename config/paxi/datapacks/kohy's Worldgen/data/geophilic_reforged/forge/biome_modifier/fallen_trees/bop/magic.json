@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/bop/magic",
+  "features": "geophilic_reforged:fallen_trees/bop/magic",
+  "step": "fluid_springs"
+}

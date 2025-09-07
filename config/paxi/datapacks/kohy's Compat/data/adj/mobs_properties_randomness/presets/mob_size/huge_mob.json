@@ -1,0 +1,39 @@
+{
+	"experience_multiplier": 2,
+	"scale_pehkui": [
+		{
+			"scale": 1.2,
+			"scale_types": [
+				"pehkui:height",
+				"pehkui:width"
+			],
+			"operation": "set"
+		}
+	],
+	"attributes": [
+		{
+			"id": "minecraft:generic.max_health",
+			"modifier_name": "Large",
+			"amount": 0.15,
+			"operation": "multiply_total"
+		},
+		{
+			"id": "minecraft:generic.movement_speed",
+			"modifier_name": "Large",
+			"amount": -0.15,
+			"operation": "multiply_total"
+		},
+		{
+			"id": "minecraft:generic.attack_damage",
+			"modifier_name": "Large",
+			"amount": 0.15,
+			"operation": "multiply_total"
+		},
+		{
+			"id": "minecraft:generic.armor",
+			"modifier_name": "Large",
+			"amount": 2,
+			"operation": "addition"
+		}
+	]
+}

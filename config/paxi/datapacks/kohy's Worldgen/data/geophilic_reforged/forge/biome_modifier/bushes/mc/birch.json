@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/bushes/mc/birch",
+  "features": "geophilic_reforged:bushes/mc/birch",
+  "step": "fluid_springs"
+}

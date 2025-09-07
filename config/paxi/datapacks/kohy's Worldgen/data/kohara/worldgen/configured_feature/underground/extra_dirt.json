@@ -1,0 +1,31 @@
+{
+	"type": "lithostitched:ore",
+	"config": {
+		"size": 24,
+		"targets": [
+			{
+				"predicate": {
+					"type": "minecraft:matching_blocks",
+					"blocks": "#minecraft:base_stone_overworld"
+				},
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 2,
+							"data": {
+								"Name": "minecraft:dirt"
+							}
+						},
+						{
+							"weight": 1,
+							"data": {
+								"Name": "minecraft:rooted_dirt"
+							}
+						}
+					]
+				}
+			}
+		]
+	}
+}

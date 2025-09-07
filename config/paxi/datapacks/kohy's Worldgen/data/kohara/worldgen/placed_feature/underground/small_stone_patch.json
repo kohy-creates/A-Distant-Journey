@@ -1,0 +1,9 @@
+{
+	"feature": "kohara:underground/small_stone_patch",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 2
+		}
+	]
+}

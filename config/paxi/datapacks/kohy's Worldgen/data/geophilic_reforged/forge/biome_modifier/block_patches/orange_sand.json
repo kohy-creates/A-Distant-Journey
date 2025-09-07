@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/block_patches/orange_sand",
+  "features": "geophilic_reforged:block_patches/orange_sand",
+  "step": "fluid_springs"
+}

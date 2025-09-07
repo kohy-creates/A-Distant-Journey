@@ -1,0 +1,8 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "warped_forest",
+	"features": [
+		"kohara:nether/warped_forest/trees"
+	],
+	"step": "vegetal_decoration"
+}

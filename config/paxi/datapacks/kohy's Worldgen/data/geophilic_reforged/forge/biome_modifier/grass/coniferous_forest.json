@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/grass/coniferous_forest",
+  "features": "geophilic_reforged:grass/coniferous_forest",
+  "step": "top_layer_modification"
+}

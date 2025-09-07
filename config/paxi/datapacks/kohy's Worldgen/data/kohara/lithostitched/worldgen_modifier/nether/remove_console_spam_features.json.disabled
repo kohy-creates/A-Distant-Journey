@@ -1,0 +1,10 @@
+{
+	"type": "lithostitched:remove_features",
+	"biomes": "#minecraft:is_nether",
+	"features": [
+		"hearths:minecraft/nether_wastes/netherrack_lakes",
+		"hearths:minecraft/nether_wastes/blackstone_lakes",
+		"hearths:minecraft/nether_wastes/magma_lakes"
+	],
+	"step": "fluid_springs"
+}

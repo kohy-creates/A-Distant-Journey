@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "minecraft:taiga",
+      "required": false
+    },
+    {
+      "id": "minecraft:windswept_forest",
+      "required": false
+    },
+    {
+      "id": "minecraft:windswept_hills",
+      "required": false
+    },
+    {
+			"id": "terralith:forested_highlands",
+			"required": false
+		},
+    {
+			"id": "terralith:highlands",
+			"required": false
+		}
+  ]
+}

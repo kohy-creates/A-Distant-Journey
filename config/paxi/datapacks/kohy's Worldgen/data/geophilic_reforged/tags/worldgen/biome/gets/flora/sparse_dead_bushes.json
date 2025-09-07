@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "minecraft:savanna",
+      "required": false
+    },
+    {
+      "id": "minecraft:windswept_savanna",
+      "required": false
+    }
+  ]
+}

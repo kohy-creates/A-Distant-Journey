@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+	"minecraft:podzol",
+	"minecraft:coarse_dirt",
+  "minecraft:light_gray_terracotta"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "witherstormmod:storm_spawn_platform",
+  "biomes": "#witherstormmod:has_structure/storm_spawn_platform",
+  "adapt_noise": true,
+  "spawn_overrides": {},
+  "position": [
+    3442,
+    0,
+    3212
+  ],
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin"
+}

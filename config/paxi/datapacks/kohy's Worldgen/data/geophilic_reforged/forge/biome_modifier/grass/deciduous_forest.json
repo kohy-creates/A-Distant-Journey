@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/grass/deciduous_forest",
+  "features": "geophilic_reforged:grass/deciduous_forest",
+  "step": "top_layer_modification"
+}

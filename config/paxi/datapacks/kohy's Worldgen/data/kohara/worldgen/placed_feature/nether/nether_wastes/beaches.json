@@ -1,0 +1,27 @@
+{
+	"feature": "kohara:nether/nether_wastes/beaches",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 15
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"min_inclusive": {
+					"above_bottom": 29
+				},
+				"max_inclusive": {
+					"absolute": 40
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

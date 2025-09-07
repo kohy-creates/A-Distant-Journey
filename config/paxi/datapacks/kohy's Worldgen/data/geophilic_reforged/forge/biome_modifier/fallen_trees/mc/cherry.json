@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/mc/cherry",
+  "features": "geophilic_reforged:fallen_trees/mc/cherry",
+  "step": "fluid_springs"
+}

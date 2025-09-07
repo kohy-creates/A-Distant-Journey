@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/bushes/bop/yellow_autumn",
+  "features": "geophilic_reforged:bushes/bop/yellow_autumn",
+  "step": "fluid_springs"
+}

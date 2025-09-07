@@ -1,0 +1,12 @@
+{
+  "values": [
+    "minecraft:bedrock",
+    "minecraft:water",
+    "minecraft:lava",
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "minecraft:blue_ice",
+    "minecraft:spawner",
+    "minecraft:chest"
+  ]
+}

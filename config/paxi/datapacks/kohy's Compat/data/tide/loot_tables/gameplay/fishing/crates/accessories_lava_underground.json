@@ -1,0 +1,35 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "confluence:cross_necklace",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:putrid_scent",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:panic_necklace",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:star_cloak",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:titan_glove",
+					"weight": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "confluence:magma_stone",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:lava_charm",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:obsidian_rose",
+					"weight": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+  "client_settings": {
+    "color_settings": {
+      "moon_texture_color": "990000",
+      "sky_light_color": "990000"
+    },
+    "moon_size": 25.0,
+    "moon_texture_location": "minecraft:textures/environment/moon_phases.png",
+    "sound_track": {
+      "sound_id": "enhancedcelestials:blood_moon"
+    }
+  },
+  "dimension_chances": {
+    "minecraft:overworld": {
+      "chance": 0.1,
+      "min_number_of_nights_between": 4,
+      "valid_moon_phases": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "drops": {
+    "drop_enhancer": {}
+  },
+  "mob_settings": {
+    "blocks_sleeping": {
+      "type": "corgilib:any"
+    },
+    "lunar_spawn_settings": {
+      "force_surface_spawning": true,
+      "mob_spawn_settings": {
+        "spawn_costs": {},
+        "spawners": {
+          "ambient": [],
+          "axolotls": [],
+          "creature": [],
+          "misc": [],
+          "monster": [],
+          "underground_water_creature": [],
+          "water_ambient": [],
+          "water_creature": []
+        }
+      },
+      "slimes_spawn_everywhere": false,
+      "use_biome_spawn_settings": true
+    },
+    "mob_effects": [
+      {
+        "filter": {
+          "mob_category": "monster",
+          "type": "corgilib:is_mob_category"
+        },
+        "mob_effect": {
+          "ambient": false,
+          "amplifier": 0,
+          "duration_in_ticks": 300,
+          "effect": "minecraft:resistance",
+          "show_icon": false,
+          "visible": false
+        }
+      },
+      {
+        "filter": {
+          "mob_category": "monster",
+          "type": "corgilib:is_mob_category"
+        },
+        "mob_effect": {
+          "ambient": false,
+          "amplifier": 0,
+          "duration_in_ticks": 300,
+          "effect": "minecraft:strength",
+          "show_icon": false,
+          "visible": false
+        }
+      }
+    ],
+    "spawn_category_multiplier": {
+      "monster": 2.25
+    }
+  },
+  "text_components": {
+    "end_notification": {},
+    "name": {
+      "key": "enhancedcelestials.name.blood_moon",
+      "style": {
+        "color": "ff5555"
+      }
+    },
+    "start_notification": {}
+  }
+}

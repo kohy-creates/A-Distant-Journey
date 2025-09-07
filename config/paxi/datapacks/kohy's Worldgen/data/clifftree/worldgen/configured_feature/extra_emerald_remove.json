@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:netherrack_replace_blobs",
+          "config": {
+            "state": {
+              "Name": "minecraft:stone"
+            },
+            "target": {
+              "Name": "minecraft:emerald_ore"
+            },
+			"radius": 12
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

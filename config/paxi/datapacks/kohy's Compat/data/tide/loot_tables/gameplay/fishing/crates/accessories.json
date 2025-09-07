@@ -1,0 +1,30 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "confluence:tsunami_in_a_bottle",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:balloon_pufferfish",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:sailfish_boots",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:frog_leg",
+					"weight": 2
+				}
+			]
+		}
+	]
+}

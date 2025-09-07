@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "minecraft:amethyst_geode_closed",
+    "features": [
+      {
+        "chance": 0.5,
+        "feature": "minecraft:amethyst_geode_open"
+      }
+    ]
+  }
+}

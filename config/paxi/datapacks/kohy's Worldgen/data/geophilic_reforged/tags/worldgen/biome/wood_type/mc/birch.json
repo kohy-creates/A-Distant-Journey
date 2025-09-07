@@ -1,0 +1,36 @@
+{
+	"values": [
+		{
+			"id": "minecraft:forest",
+			"required": false
+		},
+		{
+			"id": "minecraft:flower_forest",
+			"required": false
+		},
+		{
+			"id": "minecraft:birch_forest",
+			"required": false
+		},
+		{
+			"id": "minecraft:old_growth_birch_forest",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:seasonal_orchard",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:seasonal_forest",
+			"required": false
+		},
+		{
+			"id": "traverse:autumnal_woods",
+			"required": false
+		},
+		{
+			"id": "terralith:birch_taiga",
+			"required": false
+		}
+	]
+}

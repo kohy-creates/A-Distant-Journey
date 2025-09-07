@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/mc/oak",
+  "features": "geophilic_reforged:fallen_trees/mc/oak",
+  "step": "fluid_springs"
+}

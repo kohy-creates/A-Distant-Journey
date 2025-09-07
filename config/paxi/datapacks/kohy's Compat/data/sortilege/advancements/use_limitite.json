@@ -1,0 +1,32 @@
+{
+  "parent": "adj:root",
+  "criteria": {
+    "recipe_crafted": {
+      "conditions": {
+        "recipe_id": "sortilege:limit_break_instance"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.sortilege.use_limitite.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "sortilege:limitite"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.sortilege.use_limitite"
+    }
+  },
+  "requirements": [
+    [
+      "recipe_crafted"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

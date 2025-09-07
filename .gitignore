@@ -88,8 +88,8 @@ usercache.json
 usernamecache.json
 /config/blockswap/known_states/
 user-prefs.json
-/config/paxi/datapacks/
-/config/paxi/resourcepacks/
+/config/paxi/datapacks/**/*.zip
+/config/paxi/resourcepacks/**/*.zip
 .probe/
 backups/
 win_event*.txt

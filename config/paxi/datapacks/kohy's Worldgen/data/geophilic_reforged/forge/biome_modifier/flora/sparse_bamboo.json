@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/flora/sparse_bamboo",
+  "features": "geophilic_reforged:flora/sparse_bamboo",
+  "step": "vegetal_decoration"
+}

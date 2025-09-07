@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/bop/umbran",
+  "features": "geophilic_reforged:tree_stumps/bop/umbran",
+  "step": "fluid_springs"
+}

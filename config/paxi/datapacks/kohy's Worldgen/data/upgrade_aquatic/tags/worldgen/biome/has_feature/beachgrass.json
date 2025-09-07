@@ -1,0 +1,10 @@
+{
+	"values": [
+		"clifftree:temperate_beach",
+		"clifftree:gravelly_beach",
+		"#is_ocean",
+		"stony_shore",
+		"clifftree:diorite_shore",
+		"clifftree:granite_shore"
+	]
+}

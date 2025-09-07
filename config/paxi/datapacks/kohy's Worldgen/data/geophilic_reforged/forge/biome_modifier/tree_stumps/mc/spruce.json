@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/mc/spruce",
+  "features": "geophilic_reforged:tree_stumps/mc/spruce",
+  "step": "fluid_springs"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/flora/sparse_dead_bushes",
+  "features": "geophilic_reforged:flora/sparse_dead_bushes",
+  "step": "vegetal_decoration"
+}

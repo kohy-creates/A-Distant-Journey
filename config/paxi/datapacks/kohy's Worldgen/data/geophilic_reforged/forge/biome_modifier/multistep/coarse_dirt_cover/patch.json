@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/multistep/coarse_dirt_cover",
+  "features": "geophilic_reforged:multistep/coarse_dirt_cover/patch",
+  "step": "vegetal_decoration"
+}

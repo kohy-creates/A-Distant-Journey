@@ -1,0 +1,8 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "crimson_forest",
+	"features": [
+		"kohara:nether/crimson_forest/trees"
+	],
+	"step": "vegetal_decoration"
+}

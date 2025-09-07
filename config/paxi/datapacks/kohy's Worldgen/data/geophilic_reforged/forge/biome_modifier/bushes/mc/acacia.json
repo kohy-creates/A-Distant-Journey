@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/bushes/mc/acacia",
+  "features": "geophilic_reforged:bushes/mc/acacia",
+  "step": "fluid_springs"
+}

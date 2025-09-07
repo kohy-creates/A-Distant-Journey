@@ -1,0 +1,12 @@
+{
+	"values": [
+		{
+			"id": "#forge:ocean",
+			"required": false
+		},
+		{
+			"id": "#forge:beach",
+			"required": false
+		}
+	]
+}

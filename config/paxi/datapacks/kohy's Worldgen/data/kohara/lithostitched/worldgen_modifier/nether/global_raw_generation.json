@@ -1,0 +1,8 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#minecraft:is_nether",
+	"features": [
+		"kohara:nether/nether_wastes/beaches"
+	],
+	"step": "raw_generation"
+}

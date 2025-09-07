@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/bop/willow",
+  "features": "geophilic_reforged:tree_stumps/bop/willow",
+  "step": "fluid_springs"
+}

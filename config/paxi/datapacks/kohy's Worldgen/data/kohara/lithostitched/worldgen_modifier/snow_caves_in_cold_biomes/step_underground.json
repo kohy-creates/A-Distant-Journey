@@ -1,0 +1,8 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#kohara:snowy_with_caves",
+	"features": [
+		"clifftree:snow_cave_ceiling"
+	],
+	"step": "underground_ores"
+}

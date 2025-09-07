@@ -1,0 +1,35 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "confluence:band_of_regeneration",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:hermes_boots",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:ancient_chisel",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:climbing_claws",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "confluence:cloud_in_a_bottle",
+					"weight": 2
+				}
+			]
+		}
+	]
+}

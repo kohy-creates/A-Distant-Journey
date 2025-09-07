@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "#forge:is_plains",
+      "required": false
+    },
+    {
+      "id": "#forge:is_plateau",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:grassland",
+      "required": false
+    },
+    {
+      "id": "minecraft:meadow",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:highland",
+      "required": false
+    }
+  ]
+}

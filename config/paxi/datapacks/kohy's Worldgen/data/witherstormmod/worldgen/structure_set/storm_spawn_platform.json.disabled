@@ -1,0 +1,18 @@
+{
+	"structures": [
+		{
+			"structure": "witherstormmod:storm_spawn_platform",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"distance": 64,
+		"spread": 6,
+		"count": 1,
+		"preferred_biomes": "#witherstormmod:has_structure/storm_spawn_platform",
+		"salt": 406417795,
+		"spacing": 1,
+		"separation": 0,
+		"type": "minecraft:concentric_rings"
+	}
+}

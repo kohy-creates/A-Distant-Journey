@@ -893,11 +893,11 @@ ServerEvents.recipes((event) => {
 	)
 
 	// Unify ropes
-	event.replaceInput(
-		{ input: 'dustydecorations:rope' },
-		'dustydecorations:rope',
-		'supplementaries:rope'
-	)
+	// event.replaceInput(
+	// 	{ input: 'dustydecorations:rope' },
+	// 	'dustydecorations:rope',
+	// 	'supplementaries:rope'
+	// )
 	event.replaceInput(
 		{ output: 'farmersdelight:rope' },
 		'farmersdelight:rope',
@@ -2127,7 +2127,7 @@ ServerEvents.recipes((event) => {
 		'born_in_chaos_v1:smoked_monster_flesh': 15,
 		'born_in_chaos_v1:smoked_fish': 10,
 		'alexscaves:cooked_dinosaur_chop': 25,
-		'dustydecorations:cooked_bratwurst': 12
+		// 'dustydecorations:cooked_bratwurst': 12
 	}
 	function overrideCooking(type, recipe) {
 		const output = recipe.getOriginalRecipeResult();

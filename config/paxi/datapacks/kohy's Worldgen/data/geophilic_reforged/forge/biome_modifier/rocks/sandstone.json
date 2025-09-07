@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/rocks/sandstone",
+  "features": "geophilic_reforged:rocks/sandstone",
+  "step": "fluid_springs"
+}

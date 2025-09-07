@@ -1,0 +1,11 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#minecraft:is_overworld",
+	"features": [
+		"kohara:underground/extra_dirt",
+		"kohara:underground/roots",
+		"kohara:underground/large_dripstone_stone",
+		"kohara:underground/large_dripstone_deepslate"
+	],
+	"step": "raw_generation"
+}

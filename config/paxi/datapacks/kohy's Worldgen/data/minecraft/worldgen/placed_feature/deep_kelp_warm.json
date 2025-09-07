@@ -1,0 +1,27 @@
+{
+  "feature": "minecraft:deep_kelp",
+  "placement": [
+    {"type":"block_predicate_filter",
+    "predicate": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "sculk_replaceable"
+    }
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_factor": 80.0,
+      "noise_offset": 0.0,
+      "noise_to_count_ratio": 80
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

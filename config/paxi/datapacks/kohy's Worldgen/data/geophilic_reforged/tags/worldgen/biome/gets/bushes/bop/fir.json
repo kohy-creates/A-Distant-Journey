@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:fir_clearing",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:coniferous_forest",
+      "required": false
+    }
+  ]
+}

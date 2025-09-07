@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/windswept/holly",
+  "features": "geophilic_reforged:tree_stumps/windswept/holly",
+  "step": "fluid_springs"
+}

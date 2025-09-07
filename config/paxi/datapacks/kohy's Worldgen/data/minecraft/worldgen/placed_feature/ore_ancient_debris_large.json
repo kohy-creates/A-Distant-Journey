@@ -1,0 +1,39 @@
+{
+	"feature": "minecraft:ore_ancient_debris_large",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:weighted_list",
+				"distribution": [
+					{
+						"weight": 2,
+						"data": 1
+					},
+					{
+						"weight": 1,
+						"data": 2
+					}
+				]
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:trapezoid",
+				"max_inclusive": {
+					"absolute": 24
+				},
+				"min_inclusive": {
+					"absolute": 8
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

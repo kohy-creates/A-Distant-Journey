@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/bop/mahogany",
+  "features": "geophilic_reforged:fallen_trees/bop/mahogany",
+  "step": "fluid_springs"
+}

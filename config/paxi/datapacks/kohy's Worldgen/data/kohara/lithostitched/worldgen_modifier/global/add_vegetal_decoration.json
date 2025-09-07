@@ -1,0 +1,9 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#minecraft:is_overworld",
+	"features": [
+		"kohara:patch_waterlily",
+		"kohara:seagrass_global"
+	],
+	"step": "vegetal_decoration"
+}

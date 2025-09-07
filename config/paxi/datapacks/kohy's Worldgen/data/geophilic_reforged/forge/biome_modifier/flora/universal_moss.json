@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/flora/universal_moss",
+  "features": "geophilic_reforged:flora/universal_moss",
+  "step": "vegetal_decoration"
+}

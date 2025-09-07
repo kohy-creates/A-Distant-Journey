@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/bushes/mc/azalea",
+  "features": "geophilic_reforged:bushes/mc/azalea",
+  "step": "fluid_springs"
+}

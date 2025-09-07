@@ -1,0 +1,135 @@
+{
+	"type": "minecraft:tree",
+	"config": {
+		"decorators": [
+			{
+				"type": "minecraft:leave_vine",
+				"probability": 0.05
+			},
+			{
+				"type": "minecraft:trunk_vine"
+			}
+		],
+		"dirt_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "minecraft:mangrove_roots"
+			}
+		},
+		"foliage_placer": {
+			"type": "minecraft:cherry_foliage_placer",
+			"height": 5,
+			"offset": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": 0,
+					"max_inclusive": 1
+				}
+			},
+			"radius": 4,
+			"wide_bottom_layer_hole_chance": 0.25,
+			"corner_hole_chance": 0.25,
+			"hanging_leaves_chance": 0.2,
+			"hanging_leaves_extension_chance": 0.4
+		},
+		"foliage_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "minecraft:oak_leaves",
+				"Properties": {
+					"distance": "7",
+					"persistent": "false",
+					"waterlogged": "false"
+				}
+			}
+		},
+		"force_dirt": false,
+		"ignore_vines": false,
+		"minimum_size": {
+			"type": "minecraft:two_layers_feature_size",
+			"limit": 1,
+			"lower_size": 0,
+			"upper_size": 1
+		},
+		"trunk_placer": {
+			"type": "minecraft:fancy_trunk_placer",
+			"base_height": 7,
+			"height_rand_a": 3,
+			"height_rand_b": 4
+		},
+		"trunk_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "minecraft:oak_log",
+				"Properties": {
+					"axis": "y"
+				}
+			}
+		},
+		"root_placer": {
+			"type": "minecraft:mangrove_root_placer",
+			"above_root_placement": {
+				"above_root_placement_chance": 0.5,
+				"above_root_provider": {
+					"type": "minecraft:simple_state_provider",
+					"state": {
+						"Name": "minecraft:moss_carpet"
+					}
+				}
+			},
+			"mangrove_root_placement": {
+				"can_grow_through": "#minecraft:mangrove_roots_can_grow_through",
+				"max_root_length": 30,
+				"max_root_width": 9,
+				"muddy_roots_in": [
+					"minecraft:mud",
+					"minecraft:muddy_mangrove_roots"
+				],
+				"muddy_roots_provider": {
+					"type": "minecraft:simple_state_provider",
+					"state": {
+						"Name": "minecraft:muddy_mangrove_roots",
+						"Properties": {
+							"axis": "y"
+						}
+					}
+				},
+				"random_skew_chance": 0.2
+			},
+			"root_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "minecraft:mangrove_roots",
+					"Properties": {
+						"waterlogged": "false"
+					}
+				}
+			},
+			"trunk_offset_y": {
+				"type": "minecraft:weighted_list",
+				"distribution": [
+					{
+						"weight": 1,
+						"data": {
+							"type": "minecraft:uniform",
+							"value": {
+								"min_inclusive": 5,
+								"max_inclusive": 10
+							}
+						}
+					},
+					{
+						"weight": 2,
+						"data": {
+							"type": "minecraft:uniform",
+							"value": {
+								"min_inclusive": 1,
+								"max_inclusive": 4
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

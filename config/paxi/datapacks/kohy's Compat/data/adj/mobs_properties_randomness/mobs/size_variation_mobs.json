@@ -1,0 +1,24 @@
+{
+	"target": "#adj:size_variation_mobs",
+	"presets": {
+		"chance": 0.5,
+		"list": [
+			{
+				"weight": 1,
+				"id": "adj:mob_size/huge_mob"
+			},
+			{
+				"weight": 3,
+				"id": "adj:mob_size/large_mob"
+			},
+			{
+				"weight": 3,
+				"id": "adj:mob_size/small_mob"
+			},
+			{
+				"weight": 1,
+				"id": "adj:mob_size/tiny_mob"
+			}
+		]
+	}
+}

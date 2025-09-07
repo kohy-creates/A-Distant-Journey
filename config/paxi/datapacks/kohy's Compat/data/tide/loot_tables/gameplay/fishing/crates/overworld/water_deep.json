@@ -1,0 +1,162 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_nugget",
+					"weight": 60
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:raw_copper",
+					"weight": 45
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:raw_iron",
+					"weight": 45
+				},
+        {
+					"type": "minecraft:item",
+					"name": "create:raw_zinc",
+					"weight": 45
+				},
+        {
+					"type": "minecraft:item",
+					"name": "mythicmetals:raw_runite",
+					"weight": 30
+				},
+        {
+					"type": "minecraft:item",
+					"name": "mythicmetals:raw_osmium",
+					"weight": 30
+				},
+        {
+					"type": "minecraft:item",
+					"name": "mythicmetals:raw_kyber",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gold_ingot",
+					"quality": 1,
+					"weight": 25
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": true,
+							"count": 3,
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:lapis_lazuli",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:redstone",
+					"weight": 18
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:amethyst_shard",
+					"weight": 16
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:emerald",
+					"quality": 1,
+					"weight": 14
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:diamond",
+					"quality": 2,
+					"weight": 12
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"conditions": [
+								{
+									"chance": 0.8,
+									"condition": "minecraft:random_chance"
+								}
+							],
+							"damage": {
+								"type": "minecraft:uniform",
+								"max": 0.8,
+								"min": 0.2
+							},
+							"function": "minecraft:set_damage"
+						},
+						{
+							"conditions": [
+								{
+									"chance": 0.8,
+									"condition": "minecraft:random_chance"
+								}
+							],
+							"function": "minecraft:enchant_with_levels",
+							"levels": {
+								"type": "minecraft:uniform",
+								"max": 30,
+								"min": 20
+							},
+							"treasure": false
+						}
+					],
+					"name": "minecraft:iron_pickaxe",
+					"quality": 2,
+					"weight": 8
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": 1,
+							"function": "minecraft:set_count"
+						},
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": 30,
+							"treasure": false
+						}
+					],
+					"name": "minecraft:book",
+					"quality": 5,
+					"weight": 6
+				}
+			],
+			"rolls": {
+				"type": "minecraft:uniform",
+				"max": 12,
+				"min": 7
+			}
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "tide:gameplay/fishing/crates/accessories_underground"
+				}
+			],
+			"functions": [],
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.5
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#kohara:nether/large_dripstone/netherrack",
+	"features": [
+		"kohara:nether/large_dripstone_netherrack"
+	],
+	"step": "raw_generation"
+}

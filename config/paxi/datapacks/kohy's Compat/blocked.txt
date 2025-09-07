@@ -1,0 +1,2 @@
+^(aether|mutantmonsters|minecraft|dustydecorations|netherdepthsupgrade|integrated_villages|cataclysm|aquamirae|nourished_nether|witherstormmod|idas|morevillagers|rediscovered|moresnifferflowers|create|create_ltab|ars_nouveau|farmersdelight|additionaladditions|alexsmobs|alexscaves|mythicmetals|tide|betterarcheology|dungeons_enhanced|better_beacons|born_in_chaos_v1)$
+^(?!botania$|the_bumblezone$|adj$|dustydecorations$)

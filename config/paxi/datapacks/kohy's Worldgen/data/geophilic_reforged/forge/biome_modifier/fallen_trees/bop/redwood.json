@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/bop/redwood",
+  "features": "geophilic_reforged:fallen_trees/bop/redwood",
+  "step": "fluid_springs"
+}

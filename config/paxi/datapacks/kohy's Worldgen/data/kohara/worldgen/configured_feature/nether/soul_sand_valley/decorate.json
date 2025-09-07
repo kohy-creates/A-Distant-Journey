@@ -1,0 +1,62 @@
+{
+	"type": "minecraft:random_selector",
+	"config": {
+		"features": [
+			{
+				"chance": 0.02,
+				"feature": {
+					"feature": "kohara:nether/soul_sand_valley/fire",
+					"placement": []
+				}
+			},
+			{
+				"chance": 0.125,
+				"feature": {
+					"feature": "kohara:nether/soul_sand_valley/twisting_vines",
+					"placement": [
+						{
+							"type": "minecraft:block_predicate_filter",
+							"predicate": {
+								"type": "minecraft:all_of",
+								"predicates": [
+									{
+										"type": "minecraft:matching_blocks",
+										"offset": [
+											0,
+											-1,
+											0
+										],
+										"blocks": [
+											"minecraft:soul_sand",
+											"minecraft:soul_soil"
+										]
+									},
+									{
+										"type": "minecraft:not",
+										"predicate": {
+											"type": "minecraft:matching_blocks",
+											"blocks": [
+												"minecraft:lava"
+											]
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			},
+			{
+				"chance": 0.23333,
+				"feature": {
+					"feature": "kohara:nether/soul_sand_valley/wart",
+					"placement": []
+				}
+			}
+		],
+		"default": {
+			"feature": "kohara:nether/soul_sand_valley/vegetation",
+			"placement": []
+		}
+	}
+}

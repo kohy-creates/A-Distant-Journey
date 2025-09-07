@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+	"minecraft:podzol",
+	"minecraft:coarse_dirt",
+	"minecraft:mud",
+  "minecraft:snow_block",
+  "minecraft:snow"
+  ]
+}

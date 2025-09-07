@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/mc/jungle",
+  "features": "geophilic_reforged:fallen_trees/mc/jungle",
+  "step": "fluid_springs"
+}

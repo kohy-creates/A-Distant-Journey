@@ -1,0 +1,9 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#kohara:snowy_with_caves",
+	"features": [
+		"clifftree:snow_cave",
+		"clifftree:snow_melter"
+	],
+	"step": "vegetal_decoration"
+}

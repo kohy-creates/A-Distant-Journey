@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:stony_shore",
+  "features": "geophilic_reforged:biome_specific/mc/stony_shore/small_stone_pillar",
+  "step": "vegetal_decoration"
+}

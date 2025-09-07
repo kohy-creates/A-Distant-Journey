@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/block_patches/stone",
+  "features": "geophilic_reforged:block_patches/stone",
+  "step": "fluid_springs"
+}

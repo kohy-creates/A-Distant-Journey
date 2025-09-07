@@ -1,0 +1,8 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#kohara:nether/large_dripstone/basalt",
+	"features": [
+		"kohara:nether/large_dripstone_basalt"
+	],
+	"step": "raw_generation"
+}

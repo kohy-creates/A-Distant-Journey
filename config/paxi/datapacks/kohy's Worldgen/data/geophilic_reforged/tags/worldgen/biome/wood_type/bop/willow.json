@@ -1,0 +1,12 @@
+{
+	"values": [
+		{
+			"id": "biomesoplenty:wetland",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:bayou",
+			"required": false
+		}
+	]
+}

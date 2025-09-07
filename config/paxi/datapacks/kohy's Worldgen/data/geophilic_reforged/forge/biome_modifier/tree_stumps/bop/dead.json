@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/bop/dead",
+  "features": "geophilic_reforged:tree_stumps/bop/dead",
+  "step": "fluid_springs"
+}

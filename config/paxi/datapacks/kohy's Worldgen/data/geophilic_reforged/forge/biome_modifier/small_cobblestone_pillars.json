@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/small_cobblestone_pillars",
+  "features": "geophilic_reforged:small_cobblestone_pillars",
+  "step": "fluid_springs"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:gets/block_patches/coarse_dirt",
+  "features": "geophilic_reforged:block_patches/coarse_dirt",
+  "step": "fluid_springs"
+}

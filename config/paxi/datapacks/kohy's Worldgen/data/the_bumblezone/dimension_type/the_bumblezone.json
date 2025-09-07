@@ -1,0 +1,20 @@
+{
+  "effects": "the_bumblezone:dimension_special_effects",
+  "ultrawarm": false,
+  "natural": true,
+  "ambient_light": 0.777,
+  "has_skylight": false,
+  "has_ceiling": true,
+  "infiniburn": "#minecraft:infiniburn_overworld",
+  "logical_height": 256,
+  "height": 256,
+  "min_y": 0,
+  "has_raids": false,
+  "respawn_anchor_works": false,
+  "bed_works": true,
+  "fixed_time": 6000,
+  "piglin_safe": true,
+  "coordinate_scale": 4,
+  "monster_spawn_block_light_limit": 12,
+  "monster_spawn_light_level": 11
+}

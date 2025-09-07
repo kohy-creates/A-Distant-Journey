@@ -1,0 +1,13 @@
+{
+  "behaviors": {
+    
+  },
+  "defaultBehavior": {
+    "idle_time": 65,
+    "top_speed": 5,
+    "up_acceleration": 0.35,
+    "down_acceleration": 0.4,
+    "avg_distance": 40,
+    "move_variation": 35
+  }
+}

@@ -1,0 +1,12 @@
+{
+	"values": [
+		{
+			"id": "minecraft:sparse_jungle",
+			"required": false
+		},
+		{
+			"id": "minecraft:jungle",
+			"required": false
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"parent": "adj:root",
+	"display": {
+		"icon": {
+			"item": "minecraft:cod"
+		},
+		"title": "ADJ Fish Something",
+		"description": "",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"fish": {
+			"conditions": {
+				"item": {
+					"tag": "minecraft:fishes"
+				}
+			},
+			"trigger": "minecraft:fishing_rod_hooked"
+		}
+	},
+	"requirements": [
+		[
+			"fish"
+		]
+	],
+	"sends_telemetry_event": false
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/mc/acacia",
+  "features": "geophilic_reforged:tree_stumps/mc/acacia",
+  "step": "fluid_springs"
+}

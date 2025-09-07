@@ -1,0 +1,15 @@
+{
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 14357617,
+      "frequency": 0.5,
+      "separation": 8,
+      "spacing": 32
+    },
+    "structures": [
+      {
+        "structure": "clifftree:camel",
+        "weight": 1
+      }
+    ]
+  }

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:swamp",
+  "features": "geophilic_reforged:biome_specific/mc/swamp/mud",
+  "step": "fluid_springs"
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "#forge:is_coniferous",
+      "required": false
+    },
+    {
+      "id": "minecraft:windswept_forest",
+      "required": false
+    },
+    {
+      "id": "minecraft:windswept_hills",
+      "required": false
+    }
+  ]
+}

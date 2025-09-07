@@ -30,7 +30,7 @@ function rediscoveredFurniture() {
 
 global.rediscoveredFurniture = rediscoveredFurniture();
 
-global.developerMode = true;
+global.developerMode = false;
 
 global.quarkVerticalSlabs = [
 	"quark:acacia_vertical_slab",

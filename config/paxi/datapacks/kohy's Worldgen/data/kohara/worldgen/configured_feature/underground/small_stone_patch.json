@@ -1,0 +1,37 @@
+{
+	"type": "lithostitched:ore",
+	"config": {
+		"size": 16,
+		"targets": [
+			{
+				"predicate": {
+					"type": "minecraft:matching_blocks",
+					"blocks": "#minecraft:dirt"
+				},
+				"state_provider": {
+					"type": "lithostitched:weighted",
+					"entries": [
+						{
+							"data": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "minecraft:stone"
+								}
+							},
+							"weight": 3
+						},
+						{
+							"data": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "minecraft:cobblestone"
+								}
+							},
+							"weight": 1
+						}
+					]
+				}
+			}
+		]
+	}
+}

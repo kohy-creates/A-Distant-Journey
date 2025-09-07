@@ -1,0 +1,10 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": [
+		"soul_sand_valley"
+	],
+	"features": [
+		"kohara:nether/soul_sand_valley/weeping_vines"
+	],
+	"step": "vegetal_decoration"
+}

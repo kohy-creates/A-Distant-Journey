@@ -1,0 +1,6 @@
+{
+	"type": "lithostitched:remove_features",
+	"biomes": "#forge:is_wet",
+	"features": "minecraft:lake_lava_surface",
+	"step": "lakes"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#geophilic_reforged:wood_type/traverse/fir",
+  "features": "geophilic_reforged:tree_stumps/traverse/fir",
+  "step": "fluid_springs"
+}

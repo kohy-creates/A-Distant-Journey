@@ -1,0 +1,92 @@
+{
+	"values": [
+		{
+			"id": "minecraft:forest",
+			"required": false
+		},
+		{
+			"id": "minecraft:flower_forest",
+			"required": false
+		},
+		{
+			"id": "minecraft:swamp",
+			"required": false
+		},
+		{
+			"id": "minecraft:flower_forest",
+			"required": false
+		},
+		{
+			"id": "minecraft:windswept_forest",
+			"required": false
+		},
+		{
+			"id": "minecraft:wooded_badlands",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:dead_forest",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:lavender_field",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:lavender_forest",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:old_growth_dead_forest",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:old_growth_woodland",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:prairie",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:pumpkin_patch",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:woodland",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:orchard",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:dryland",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:maple_woods",
+			"required": false
+		},
+		{
+			"id": "biomesoplenty:snowy_maple_woods",
+			"required": false
+		},
+		{
+			"id": "traverse:autumnal_woods",
+			"required": false
+		},
+		{
+			"id": "traverse:lush_swamp",
+			"required": false
+		},
+		{
+			"id": "terralith:alpha_islands",
+			"required": false
+		},
+		{
+			"id": "terralith:alpha_islands_winter",
+			"required": false
+		}
+	]
+}
