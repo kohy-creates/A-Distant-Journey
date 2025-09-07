@@ -220,6 +220,7 @@ ServerEvents.tags('item', resctrictions => {
 		'rediscovered:rotational_converter',
 		'rediscovered:spikes',
 		'rediscovered:ancient_crying_obsidian',
+		'rediscovered:scarecrow',
 		/rediscovered:.*slab/,
 
 	]);

@@ -8,7 +8,7 @@ variable {
 
 variable {
   name = has_seen_intro_menu
-  value = 1
+  value = 0
   reset_on_launch = false
 }
 

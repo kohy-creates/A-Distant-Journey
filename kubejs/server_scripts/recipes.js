@@ -47,6 +47,10 @@ ServerEvents.recipes((event) => {
 		event.remove({ output: item })
 	})
 
+	global.blacklistedItems.forEach(item => {
+		event.remove([{ output: item }, { input: item }])
+	})
+
 	/** @type {Special.RecipeId[]} */
 	const removeRecipeByID = [
 		'rediscovered:studded_boots_from_iron',
