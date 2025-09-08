@@ -309,3 +309,9 @@ ServerEvents.tags('worldgen/structure', event => {
 		'lost_aether_content:platinum_dungeon'
 	])
 }) 
+
+ServerEvents.tags('worldgen/biome', event => {
+	event.remove('ars_additions:has_structure/nexus_tower', [
+		/ocean/
+	])
+})

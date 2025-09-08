@@ -19,16 +19,35 @@
 		{
 			"type": "minecraft:block_predicate_filter",
 			"predicate": {
-				"type": "minecraft:not",
-				"predicate": {
-					"type": "minecraft:matching_block_tag",
-					"offset": [
-						0,
-						-1,
-						0
-					],
-					"tag": "minecraft:sand"
-				}
+				"type": "minecraft:all_of",
+				"predicates": [
+					{
+						"type": "minecraft:not",
+						"predicate": {
+							"type": "minecraft:matching_block_tag",
+							"offset": [
+								0,
+								-1,
+								0
+							],
+							"tag": "minecraft:sand"
+						}
+					},
+					{
+						"type": "minecraft:not",
+						"predicate": {
+							"type": "minecraft:matching_blocks",
+							"offset": [
+								0,
+								-1,
+								0
+							],
+							"blocks": [
+								"minecraft:snow_block"
+							]
+						}
+					}
+				]
 			}
 		},
 		{

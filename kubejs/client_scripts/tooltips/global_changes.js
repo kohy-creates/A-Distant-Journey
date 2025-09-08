@@ -640,8 +640,11 @@ ItemEvents.tooltip(event => {
 		'mutantmonsters:mutant_skeleton_chestplate',
 		'mutantmonsters:mutant_skeleton_leggings',
 		'mutantmonsters:mutant_skeleton_boots'
-	], 'WIP! PLEASE DON\'T USE'
-	)
+	], 'WIP! PLEASE DON\'T USE')
+
+	addTooltipLine([
+		/.*delight.*:.*stove.*/
+	], 'Acts like a Campfire with 6 total slots')
 
 });
 

@@ -3762,6 +3762,19 @@ const itemsToTooltip = [
 				]
 			}
 		]
+	},
+	{
+		item: [
+			'farmersdelight:cooking_pot'
+		],
+		controls: [
+			{
+				control: 'placed on a Stove',
+				text: [
+					'Enables Cooking recipes'
+				]
+			}
+		]
 	}
 
 ];

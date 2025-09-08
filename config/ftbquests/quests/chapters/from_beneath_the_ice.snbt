@@ -5,6 +5,14 @@
 	group: "4C4C64E64E42D01F"
 	icon: "aquamirae:rune_of_the_storm"
 	id: "2B34DB1EEA89290E"
+	images: [{
+		height: 1.75d
+		image: "minecraft:block/blue_ice"
+		rotation: 45.0d
+		width: 1.75d
+		x: 2.5d
+		y: -1.5d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -61,12 +69,15 @@
 			]
 			title: "To The Whatever Pole"
 			x: 0.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6A5092882CBFB0D2"]
 			icon: "aquamirae:oxygelium"
+			icon_scale: 0.75d
 			id: "1A27ABCC4980970F"
+			shape: "diamond"
+			size: 1.5d
 			subtitle: "Find the Ice Maze. So they were real this entire time...?"
 			tasks: [
 				{
@@ -97,8 +108,8 @@
 				}
 			]
 			title: "The Legends Become Reality"
-			x: 2.0d
-			y: -3.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			description: ["This page is still WIP. I started making it as a ground work for the later tasks but never got to finish it. Expect a fully polished side campaign somewhere in the future."]

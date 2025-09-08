@@ -1,6 +1,10 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:minecraft:campfire",
+    "item:farmersdelight:skillet{Damage:0}",
+    "item:farmersdelight:cooking_pot",
+    "item:farmersdelight:stove",
     "item:supplementaries:ash_brick",
     "item:minecraft:white_dye",
     "item:minecraft:blue_dye",

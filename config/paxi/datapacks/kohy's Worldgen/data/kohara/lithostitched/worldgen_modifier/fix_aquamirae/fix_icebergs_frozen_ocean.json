@@ -1,0 +1,11 @@
+{
+	"type": "lithostitched:remove_features",
+	"biomes": [
+		"deep_frozen_ocean",
+		"frozen_ocean"
+	],
+	"features": [
+		"stonycliffs:cliff_feature"
+	],
+	"step": "underground_decoration"
+}
