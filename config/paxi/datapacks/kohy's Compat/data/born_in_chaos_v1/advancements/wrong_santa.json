@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:krampuss_bag"
+    },
+    "title": {
+      "translate": "advancements.wrong_santa.title"
+    },
+    "description": {
+      "translate": "advancements.wrong_santa.descr"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "wrong_santa_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:naughty_child"
+}

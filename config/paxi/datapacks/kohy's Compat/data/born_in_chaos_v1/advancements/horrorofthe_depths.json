@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:sea_terror_eye"
+    },
+    "title": {
+      "translate": "advancements.horrorofthe_depths.title"
+    },
+    "description": {
+      "translate": "advancements.horrorofthe_depths.descr"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "horrorofthe_depths_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:bornin_chaos"
+}

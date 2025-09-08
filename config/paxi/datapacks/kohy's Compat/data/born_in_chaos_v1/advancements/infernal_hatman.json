@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
+    },
+    "title": {
+      "translate": "advancements.infernal_hatman.title"
+    },
+    "description": {
+      "translate": "advancements.infernal_hatman.descr"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "infernal_hatman_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:pumpkin_lord"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "born_in_chaos_v1:textures/screens/tiemnyikirpich1.png",
+    "icon": {
+      "item": "born_in_chaos_v1:chaos_icon"
+    },
+    "title": {
+      "translate": "advancements.bornin_chaos.title"
+    },
+    "description": {
+      "translate": "advancements.bornin_chaos.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bornin_chaos_0": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

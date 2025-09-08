@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:spider_mandible"
+    },
+    "title": {
+      "translate": "advancements.arachnophobes_nightmare.title"
+    },
+    "description": {
+      "translate": "advancements.arachnophobes_nightmare.descr"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "arachnophobes_nightmare_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    
+    "recipes": [
+      "born_in_chaos_v1:spider_bite_craft"
+    ]
+  },
+  "parent": "born_in_chaos_v1:bornin_chaos"
+}

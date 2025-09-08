@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:elixirof_insect_protection"
+    },
+    "title": {
+      "translate": "advancements.insect_repellent.title"
+    },
+    "description": {
+      "translate": "advancements.insect_repellent.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "insect_repellent_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "born_in_chaos_v1:elixirof_insect_protection"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:bornin_chaos"
+}

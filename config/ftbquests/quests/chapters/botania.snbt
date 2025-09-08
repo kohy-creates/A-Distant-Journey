@@ -913,11 +913,13 @@
 			id: "1807373293C4A183"
 			shape: "diamond"
 			size: 1.5d
+			subtitle: "Forge a Gaiasteel Ingot"
 			tasks: [{
 				id: "4E27FBB9935A920A"
 				item: "botanicadds:gaiasteel_ingot"
 				type: "item"
 			}]
+			title: "They Call Me Gaia"
 			x: 1.0d
 			y: 9.0d
 		}

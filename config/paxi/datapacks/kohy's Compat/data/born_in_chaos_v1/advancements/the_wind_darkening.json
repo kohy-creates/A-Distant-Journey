@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:dark_charge"
+    },
+    "title": {
+      "translate": "advancements.the_wind_darkening.title"
+    },
+    "description": {
+      "translate": "advancements.the_wind_darkening.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "the_wind_darkening_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:bornin_chaos"
+}

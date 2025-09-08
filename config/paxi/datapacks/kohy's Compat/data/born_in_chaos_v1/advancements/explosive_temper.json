@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:damned_demomans_hat_helmet"
+    },
+    "title": {
+      "translate": "advancements.explosive_temper.title"
+    },
+    "description": {
+      "translate": "advancements.explosive_temper.descr"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "explosive_temper_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:good_demoman"
+}

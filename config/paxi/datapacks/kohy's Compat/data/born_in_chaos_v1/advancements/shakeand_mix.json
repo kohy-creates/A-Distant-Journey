@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:shakeand_mixicon"
+    },
+    "title": {
+      "translate": "advancements.shakeand_mix.title"
+    },
+    "description": {
+      "translate": "advancements.shakeand_mix.descr"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "shakeand_mix_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:lifeturnedouttobeacomedy"
+}

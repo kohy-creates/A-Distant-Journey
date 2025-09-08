@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:bonescaller_staff"
+    },
+    "title": {
+      "translate": "advancements.compact_necromancy.title"
+    },
+    "description": {
+      "translate": "advancements.compact_necromancy.descr"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "compact_necromancy_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:junior_summoner"
+}

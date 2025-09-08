@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:pieceofdarkmetal"
+    },
+    "title": {
+      "translate": "advancements.dark_metallurgy.title"
+    },
+    "description": {
+      "translate": "advancements.dark_metallurgy.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "dark_metallurgy_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "born_in_chaos_v1:pieceofdarkmetal"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:bornin_chaos"
+}

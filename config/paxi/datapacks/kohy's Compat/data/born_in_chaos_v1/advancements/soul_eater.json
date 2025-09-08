@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:ethereal_spirit"
+    },
+    "title": {
+      "translate": "advancements.soul_eater.title"
+    },
+    "description": {
+      "translate": "advancements.soul_eater.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "soul_eater_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "born_in_chaos_v1:ethereal_spirit"
+            ],
+            "count": {
+              "min": 64,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:bornin_chaos"
+}

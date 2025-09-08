@@ -85,7 +85,7 @@
 			image: "minecraft:textures/gui/advancements/window.png"
 			rotation: 0.0d
 			width: 12.0d
-			x: 3.5d
+			x: 3.857142857142861d
 			y: 5.0d
 		}
 	]
@@ -232,7 +232,7 @@
 				""
 				"{@pagebreak}"
 				""
-				"&cInvulnerability frames&r (AKA the &cred flashing&r when you attak something) are also a lot shorter than in vanilla - most attacks don't even give any to hit mobs. &eThink twice before diving into a group of Zombies, as &lall&r of them can hit you at the same time now&r."
+				"&cInvulnerability frames&r (AKA the &cred flashing&r when you attack something) are also a lot shorter than in vanilla - most attacks don't even give any to hit mobs. &eThink twice before diving into a group of Zombies, as &lall&r of them can hit you at the same time now&r."
 				""
 				"&7Knockback&f has been reduced to compensate for this change."
 			]

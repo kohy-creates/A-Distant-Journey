@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:intoxicatind_bomb"
+    },
+    "title": {
+      "translate": "advancements.mr_decoction.title"
+    },
+    "description": {
+      "translate": "advancements.mr_decoction.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "mr_decoction_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:lifeturnedouttobeacomedy"
+}

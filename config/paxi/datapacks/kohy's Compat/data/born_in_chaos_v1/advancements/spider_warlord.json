@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:spider_bite_sword"
+    },
+    "title": {
+      "translate": "advancements.spider_warlord.title"
+    },
+    "description": {
+      "translate": "advancements.spider_warlord.descr"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "spider_warlord_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:arachnophobes_nightmare"
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "born_in_chaos_v1:lifeturnedouttobeacomedyicon"
+    },
+    "title": {
+      "translate": "advancements.lifeturnedouttobeacomedy.title"
+    },
+    "description": {
+      "translate": "advancements.lifeturnedouttobeacomedy.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "lifeturnedouttobeacomedy_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    
+  },
+  "parent": "born_in_chaos_v1:bornin_chaos"
+}
