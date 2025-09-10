@@ -159,7 +159,7 @@
 		"Enable Cactus Block" = true
 		"Enable Chorus Fruit Block" = false
 		"Enable Stick Block" = true
-		"Enable Apple Crate" = false
+		"Enable Apple Crate" = true
 		"Enable Golden Apple Crate" = true
 		"Enable Potato Crate" = false
 		"Enable Carrot Crate" = false

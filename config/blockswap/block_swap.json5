@@ -75,6 +75,15 @@
 		"minecraft:enchanting_table": "enchantinginfuser:enchanting_infuser",
 		"unusualend:infested_end_stone": "majruszsdifficulty:infested_end_stone",
 
+		"quark:thatch": "hearth_and_home:thatch",
+		"quark:thatch_slab": "hearth_and_home:thatch_slab",
+		"quark:thatch_stairs": "hearth_and_home:thatch_stairs",
+
+		"quark:shingles": "hearth_and_home:shingles",
+		"quark:shingles_slab": "hearth_and_home:shingle_slab",
+		"quark:shingles_vertical_slab": "v_slab_compat:hearth_and_home/shingle_vertical_slab",
+		"quark:shingles_stairs": "hearth_and_home:shingle_stairs",
+
 		"quark:white_shingles": "hearth_and_home:white_shingles",
 		"quark:white_shingles_slab": "hearth_and_home:white_shingle_slab",
 		"quark:white_shingles_vertical_slab": "v_slab_compat:hearth_and_home/white_shingle_vertical_slab",
@@ -174,6 +183,11 @@
 		"quark:mangrove_hedge": "minecraft:mangrove_leaves",
 		"quark:azalea_hedge": "minecraft:azalea_leaves",
 		"quark:flowering_azalea_hedge": "minecraft:flowering_azalea_leaves",
+		"quark:red_blossom_hedge": "minecraft:azalea_leaves",
+		"quark:lavender_blossom_hedge": "minecraft:azalea_leaves",
+		"quark:blue_blossom_hedge": "minecraft:azalea_leaves",
+		"quark:yellow_blossom_hedge": "minecraft:azalea_leaves",
+		"quark:orange_blossom_hedge": "minecraft:azalea_leaves",
 
 		"quark:oak_leaf_carpet": "minecraft:moss_carpet",
 		"quark:spruce_leaf_carpet": "minecraft:moss_carpet",
@@ -191,6 +205,15 @@
 		"quark:yellow_blossom_leaf_carpet": "minecraft:yellow_carpet",
 		"quark:orange_blossom_leaf_carpet": "minecraft:orange_carpet",
 
+		"quark:potted_red_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
+		"quark:potted_lavender_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
+		"quark:potted_blue_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
+		"quark:potted_yellow_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
+		"quark:potted_orange_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
+
+		"quark:carrot_crate": "farmersdelight:carrot_crate",
+		"quark:potato_crate": "farmersdelight:potato_crate",
+		"quark:beetroot_crate": "farmersdelight:beetroot_crate",
 		"quark:berry_sack": "berry_good:sweet_berry_basket",
 		"quark:glowberry_sack": "berry_good:glow_berry_basket",
 		"quark:potted_ancient_sapling": "moresnifferflowers:potted_vivicus_sapling",

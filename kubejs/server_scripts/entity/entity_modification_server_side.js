@@ -8,21 +8,21 @@ const chapterMultipliers = {
 }
 
 EntityEvents.spawned(event => {
-	const entity = event.getEntity();
-	const isHardcore = entity.getServer().getWorldData().isHardcore();
+	let entity = event.getEntity();
+	let isHardcore = entity.getServer().getWorldData().isHardcore();
 
 	if (entity instanceof $LivingEntity) {
-		const chapters = event.getServer().getPersistentData().chapters || {};
-		const currentStage = parseInt((chapters.current_stage || "chapter_0").replace('chapter_', ''));
+		let chapters = event.getServer().getPersistentData().chapters || {};
+		let currentStage = parseInt((chapters.current_stage || "chapter_0").replace('chapter_', ''));
 
 		if (currentStage > 0) {
 
 			if (currentStage > 1 && global.autoscaleMobs.includes(entity.type)) {
 
-				const base = global.hpModifications[entity.type];
+				let base = global.hpModifications[entity.type];
 				if (!base) return;
 
-				const
+				let
 					health = Math.ceil(base[0] * chapterMultipliers.hp[currentStage]),
 					damage = Math.ceil(base[1] * chapterMultipliers.damage[currentStage]),
 					armor = Math.ceil(base[2] * chapterMultipliers.armor[currentStage]);
@@ -35,7 +35,7 @@ EntityEvents.spawned(event => {
 			}
 			else {
 
-				const override = global.hpModifications[entity.type];
+				let override = global.hpModifications[entity.type];
 				if (!override) return;
 
 				let [maxHealthArr, baseDamageArr, baseArmorArr] = override;
@@ -43,7 +43,7 @@ EntityEvents.spawned(event => {
 				if (Array.isArray(maxHealthArr)) {
 					for (let i = currentStage; i > 0; i--) {
 						if (maxHealthArr[i] != null) {
-							const health = maxHealthArr[i];
+							let health = maxHealthArr[i];
 							entity.maxHealth = health;
 							entity.health = health;
 							break;
@@ -53,7 +53,7 @@ EntityEvents.spawned(event => {
 				if (Array.isArray(baseDamageArr)) {
 					for (let i = currentStage; i > 0; i--) {
 						if (baseDamageArr[i] != null) {
-							const damage = baseDamageArr[i];
+							let damage = baseDamageArr[i];
 							entity.setAttributeBaseValue($Attributes.ATTACK_DAMAGE, damage);
 							break;
 						}
@@ -62,7 +62,7 @@ EntityEvents.spawned(event => {
 				if (Array.isArray(baseArmorArr)) {
 					for (let i = currentStage; i > 0; i--) {
 						if (baseArmorArr[i] != null) {
-							const armor = baseArmorArr[i];
+							let armor = baseArmorArr[i];
 							entity.setAttributeBaseValue($Attributes.ARMOR, armor);
 							break;
 						}
@@ -101,15 +101,21 @@ EntityEvents.spawned(event => {
 				}))
 			}
 		}
+		case 'quark:glass_frame':
+		case 'quark:dyed_item_frame': {
+			event.getServer().scheduleInTicks(1, () => {
+				entity.kill();
+			})
+		}
 	}
 })
 
 function weightedRandom(weightMap) {
-	const entries = Object.entries(weightMap);
-	const totalWeight = entries.reduce((sum, [, weight]) => sum + weight, 0);
+	let entries = Object.entries(weightMap);
+	let totalWeight = entries.reduce((sum, [, weight]) => sum + weight, 0);
 	let random = Math.random() * totalWeight;
 
-	for (const [value, weight] of entries) {
+	for (let [value, weight] of entries) {
 		if (random < weight) {
 			return value;
 		}

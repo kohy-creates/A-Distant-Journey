@@ -903,6 +903,11 @@
 					item: "additionaladditions:rose_gold_upgrade"
 					type: "item"
 				}
+				{
+					id: "4BCDFD6FA7232814"
+					item: "kubejs:diamond_upgrade"
+					type: "item"
+				}
 			]
 			title: "Crystal Crusher"
 			x: 13.5d

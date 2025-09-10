@@ -24,4 +24,11 @@ StartupEvents.registry('item', registry => {
 		.texture('kubejs:item/skull_fragment')
 		.displayName('Skull Fragment')
 
+	registry.create('diamond_upgrade', 'smithing_template')
+		.helmetIcon().chestplateIcon().leggingsIcon().bootsIcon()
+		.pickaxeIcon().axeIcon().swordIcon().shovelIcon().hoeIcon().swordIcon()
+		.diamondIcon()
+		.appliesTo('Rose Gold Armor and Tools')
+		.ingredientsDescription('Another Diamond')
+		.texture('kubejs:item/diamond_upgrade')
 })

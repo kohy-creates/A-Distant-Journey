@@ -386,21 +386,38 @@ ServerEvents.recipes((event) => {
 	})
 	event.recipes.botania.mana_infusion('kubejs:manasteel_sheet', 'create:iron_sheet').mana(3000)
 
-	function diamondArmorRecipe(shape, inputItem, outputItem) {
-		event.remove({ output: outputItem });
-		event.shaped(
-			Item.of(outputItem),
-			shape,
-			{
-				D: 'diamond',
-				R: inputItem
-			}
+	event.shaped(
+		'kubejs:diamond_upgrade',
+		[
+			' D ',
+			'DID',
+			' D '
+		],
+		{
+			D: 'diamond',
+			I: 'create:iron_sheet'
+		}
+	)
+	const diamondItems = [
+		'pickaxe',
+		'axe',
+		'sword',
+		'shovel',
+		'hoe',
+		'helmet',
+		'chestplate',
+		'leggings',
+		'boots'
+	]
+	diamondItems.forEach((item) => {
+		event.remove({ output: `minecraft:diamond_${item}` })
+		event.smithing(
+			`minecraft:diamond_${item}`,
+			'kubejs:diamond_upgrade',
+			`additionaladditions:rose_gold_${item}`,
+			'diamond'
 		)
-	};
-	diamondArmorRecipe(['DDD', 'DRD'], 'additionaladditions:rose_gold_helmet', 'minecraft:diamond_helmet');
-	diamondArmorRecipe(['DRD', 'DDD', 'DDD'], 'additionaladditions:rose_gold_chestplate', 'minecraft:diamond_chestplate');
-	diamondArmorRecipe(['DDD', 'DRD', 'D D'], 'additionaladditions:rose_gold_leggings', 'minecraft:diamond_leggings');
-	diamondArmorRecipe(['DRD', 'D D'], 'additionaladditions:rose_gold_boots', 'minecraft:diamond_boots');
+	})
 
 	// Furnaces require a piece of Coal
 	/**
