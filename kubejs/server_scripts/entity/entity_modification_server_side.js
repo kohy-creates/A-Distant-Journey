@@ -2,129 +2,140 @@ const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
 const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes")
 
 const chapterMultipliers = {
-	hp: [1.0, 1.0, 1.1, 2.6, 2.6, 3.2],
-	damage: [1.0, 1.0, 1.1, 1.8, 1.8, 2.3],
+	hp: [1.0, 1.05, 1.1, 2.6, 2.6, 3.2],
+	damage: [1.0, 1.05, 1.1, 1.8, 1.8, 2.3],
 	armor: [1.0, 1.0, 1.0, 2.0, 2.0, 2.75]
 }
 
-EntityEvents.spawned(event => {
-	let entity = event.getEntity();
-	let isHardcore = entity.getServer().getWorldData().isHardcore();
 
-	if (entity instanceof $LivingEntity) {
-		let chapters = event.getServer().getPersistentData().chapters || {};
-		let currentStage = parseInt((chapters.current_stage || "chapter_0").replace('chapter_', ''));
-
-		if (currentStage > 0) {
-
-			if (currentStage > 1 && global.autoscaleMobs.includes(entity.type)) {
-
-				let base = global.hpModifications[entity.type];
-				if (!base) return;
-
-				let
-					health = Math.ceil(base[0] * chapterMultipliers.hp[currentStage]),
-					damage = Math.ceil(base[1] * chapterMultipliers.damage[currentStage]),
-					armor = Math.ceil(base[2] * chapterMultipliers.armor[currentStage]);
-
-				entity.setAttributeBaseValue($Attributes.ARMOR, armor);
-				entity.setAttributeBaseValue($Attributes.ATTACK_DAMAGE, damage);
-				entity.maxHealth = health;
-				entity.health = health;
-
-			}
-			else {
-
-				let override = global.hpModifications[entity.type];
-				if (!override) return;
-
-				let [maxHealthArr, baseDamageArr, baseArmorArr] = override;
-
-				if (Array.isArray(maxHealthArr)) {
-					for (let i = currentStage; i > 0; i--) {
-						if (maxHealthArr[i] != null) {
-							let health = maxHealthArr[i];
-							entity.maxHealth = health;
-							entity.health = health;
-							break;
-						}
-					}
-				}
-				if (Array.isArray(baseDamageArr)) {
-					for (let i = currentStage; i > 0; i--) {
-						if (baseDamageArr[i] != null) {
-							let damage = baseDamageArr[i];
-							entity.setAttributeBaseValue($Attributes.ATTACK_DAMAGE, damage);
-							break;
-						}
-					}
-				}
-				if (Array.isArray(baseArmorArr)) {
-					for (let i = currentStage; i > 0; i--) {
-						if (baseArmorArr[i] != null) {
-							let armor = baseArmorArr[i];
-							entity.setAttributeBaseValue($Attributes.ARMOR, armor);
-							break;
-						}
-					}
-				}
-			}
-		}
-		if (entity.type.includes('born_in_chaos_v1') && currentStage < 2) {
-			let hp = global.hpModifications[entity.type][0];
-			if (Array.isArray(hp)) {
-				hp = hp[0];
-			}
-			entity.maxHealth = hp;
-		}
+// ---------------- HELPERS ---------------- //
+function getStageValue(arr, stage) {
+	if (!Array.isArray(arr)) return arr
+	for (let i = stage; i > 0; i--) {
+		if (arr[i] != null) return arr[i]
 	}
+	return null
+}
 
-	if (entity.health) {
-		entity.health = entity.maxHealth;
+function setEntityAttributes(entity, health, damage, armor) {
+	if (health != null) {
+		entity.maxHealth = health
+		entity.health = health
 	}
-
-	switch (entity.type) {
-		case 'minecraft:wither_skeleton': {
-			entity.setItemSlot("mainhand", "golden_sword");
-
-			if (isHardcore
-				&& Math.random <= 0.1) {
-				entity.setItemSlot("mainhand", "mythicmetals:midas_gold_sword");
-				entity.setItemSlot("head", "mythicmetals:midas_gold_helmet");
-			}
-		}
-		case 'minecraft:vindicator': {
-			if (isHardcore) {
-				entity.setItemSlot("mainhand", weightedRandom({
-					'minecraft:iron_axe': 2,
-					'minecraft:diamond_axe': 1,
-				}))
-			}
-		}
-		case 'quark:glass_frame':
-		case 'quark:dyed_item_frame': {
-			event.getServer().scheduleInTicks(1, () => {
-				entity.kill();
-			})
-		}
+	if (damage != null) {
+		entity.setAttributeBaseValue($Attributes.ATTACK_DAMAGE, damage)
 	}
-})
-
-function weightedRandom(weightMap) {
-	let entries = Object.entries(weightMap);
-	let totalWeight = entries.reduce((sum, [, weight]) => sum + weight, 0);
-	let random = Math.random() * totalWeight;
-
-	for (let [value, weight] of entries) {
-		if (random < weight) {
-			return value;
-		}
-		random -= weight;
+	if (armor != null) {
+		entity.setAttributeBaseValue($Attributes.ARMOR, armor)
 	}
 }
 
-ServerEvents.loaded(event => {
-	event.getServer().runCommandSilent(
-		`/scoreboard players set @s trueEnding_settings.dragonhealth ${global.hpModifications['minecraft:ender_dragon'][0]}`
+function scaleEntity(entity, currentStage) {
+	let base = global.hpModifications[entity.type]
+	if (!base) return
+
+	// Case 1: simple [hp, dmg, armor]
+	if (Array.isArray(base) && !Array.isArray(base[0])) {
+		let health = base[0] || 100,
+			damage = base[1] || 15,
+			armor = base[2] || 0;
+		if (global.autoscaleMobs.includes(entity.type)) {
+			health = Math.ceil(health * chapterMultipliers.hp[currentStage])
+			damage = Math.ceil(damage * chapterMultipliers.damage[currentStage])
+			armor = Math.ceil(armor * chapterMultipliers.armor[currentStage])
+		}
+		setEntityAttributes(entity, health, damage, armor)
+		return;
+	}
+
+	// Case 2: arrays per stage (hp[], dmg[], armor[])
+	if (Array.isArray(base)) {
+		let hpArr = base[0]
+		let dmgArr = base[1]
+		let armorArr = base[2]
+
+		let health = getStageValue(hpArr, currentStage)
+		let damage = getStageValue(dmgArr, currentStage)
+		let armor = getStageValue(armorArr, currentStage)
+
+		setEntityAttributes(entity, health, damage, armor)
+	}
+}
+
+function weightedRandom(weightMap) {
+	let entries = Object.keys(weightMap)
+	let totalWeight = 0
+	for (let i = 0; i < entries.length; i++) {
+		totalWeight += weightMap[entries[i]]
+	}
+	let random = Math.random() * totalWeight
+	for (let j = 0; j < entries.length; j++) {
+		let key = entries[j]
+		let weight = weightMap[key]
+		if (random < weight) return key
+		random -= weight
+	}
+}
+
+/**
+ * 
+ * @param {Internal.Entity_} entity 
+ */
+function specialCase(entity) {
+	switch (entity.type) {
+		case 'quark:glass_frame':
+		case 'quark:dyed_item_frame': {
+			entity.kill()
+			break
+		}
+	}
+}
+
+/**
+ * 
+ * @param {Internal.Entity_} entity 
+ */
+function hardcoreModifications(entity) {
+	switch (entity.type) {
+		case 'minecraft:wither_skeleton': {
+			entity.setItemSlot("mainhand", "golden_sword")
+			if (Math.random() <= 0.1) {
+				entity.setItemSlot("mainhand", "mythicmetals:midas_gold_sword")
+				entity.setItemSlot("head", "mythicmetals:midas_gold_helmet")
+			}
+			break
+		}
+		case 'minecraft:vindicator': {
+			entity.setItemSlot("mainhand", weightedRandom({
+				'minecraft:iron_axe': 2,
+				'minecraft:diamond_axe': 1
+			}));
+			break
+		}
+	}
+}
+
+// ---------------- EVENTS ---------------- //
+EntityEvents.spawned((event) => {
+	let entity = event.entity
+	entity.server.scheduleInTicks(1, () => {
+		specialCase(entity)
+	})
+
+	if (!(entity instanceof $LivingEntity)) return
+
+	let isHardcore = event.server.worldData.isHardcore()
+	let chapters = event.server.persistentData.chapters || {}
+	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""))
+
+	scaleEntity(entity, currentStage)
+	if (isHardcore) {
+		hardcoreModifications(entity)
+	};
+})
+
+ServerEvents.loaded(function (event) {
+	event.server.runCommandSilent(
+		"/scoreboard players set @s trueEnding_settings.dragonhealth " + global.hpModifications['minecraft:ender_dragon'][0]
 	)
 })

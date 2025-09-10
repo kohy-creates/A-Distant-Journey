@@ -205,7 +205,7 @@ global.hpModifications = {
 	'cataclysm:ender_golem': [3000, 40, 10],
 	'cataclysm:ender_guardian': [3500, 50, 10],
 	'cataclysm:old_netherite_monstrosity': [2500, 105, 0],
-	'cataclysm:netherite_monstrosity': [2200, 125, 10],
+	'cataclysm:netherite_monstrosity': [2200, 80, 10],
 	'cataclysm:netherite_ministrosity': [600, 15, 5],
 	'cataclysm:nameless_sorcerer': [250, 10, 0],
 	'cataclysm:ignis': [2250, 70, 0],

@@ -2360,4 +2360,32 @@ ServerEvents.recipes((event) => {
 			P: '#minecraft:planks'
 		}
 	)
+
+	// For some reason this doesn't have a recipe lmao
+	event.custom({
+		"type": "ars_nouveau:imbuement",
+		"count": 1,
+		"input": {
+			"tag": "forge:gems/source"
+		},
+		"output": "ars_nouveau:air_essence",
+		"pedestalItems": [
+			{
+				"item": {
+					"item": "minecraft:feather"
+				}
+			},
+			{
+				"item": {
+					"item": "ars_nouveau:wilden_wing"
+				}
+			},
+			{
+				"item": {
+					"tag": "minecraft:arrows"
+				}
+			}
+		],
+		"source": 2000
+	})
 });

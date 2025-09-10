@@ -4,7 +4,7 @@
 #Light amounts
 [light_amounts]
 	#Range: 0.0 ~ 1.0
-	Underground = 0.5
+	Underground = 0.6
 
 	[light_amounts.night]
 		#Range: 0.0 ~ 1.0

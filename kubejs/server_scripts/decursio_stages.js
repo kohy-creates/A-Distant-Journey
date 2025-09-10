@@ -58,6 +58,40 @@ function changeGamerules(server, stage) {
 
 }
 
+const chapterMessages = {
+	'chapter_1': [
+		Text.of('The spirits of hell are flowing to the Overworld...').red().italic()
+	],
+	'chapter_2': [
+		Text.of('The ancient spirits of darkness have been released...').darkRed().italic(),
+		Text.of('Heavenly gates open...').yellow().italic()
+	],
+	'chapter_3': [
+		Text.of('The ancient spirits of light have been released...').yellow().italic(),
+		Text.of('Dreams of a different realm start to materialize...').red().italic()
+	],
+	'chapter_4': [
+		Text.of('The boundary between dreams and nigthmares lessens...').red().italic(),
+		Text.of('Awakened Ender Pearls start to twitch...').lightPurple().italic()
+	],
+	'chapter_5': [
+		Text.of('The reality twists one final time...').darkPurple().italic()
+	]
+}
+
+/**
+ * Broadcasts all chat announcements for a given chapter
+ * @param {Internal.MinecraftServer} server
+ * @param {string} stage 
+ */
+function sendChapterAnnouncements(server, stage) {
+	chapterMessages[stage].forEach(msg => {
+		server.players.forEach(player => {
+			player.tell(msg)
+		})
+	})
+}
+
 ServerEvents.tick(event => {
 	const server = event.getServer();
 	const persistentData = server.persistentData;
@@ -82,6 +116,7 @@ ServerEvents.tick(event => {
 			);
 			persistentData.chapters.put(stageName, true);
 			changeGamerules(server, stageName);
+			sendChapterAnnouncements(server, stageName);
 		}
 		else console.log('Attempted to reapply a stage that was already present!')
 		persistentData.chapters.remove(STAGE_TO_SET);
@@ -102,9 +137,13 @@ PlayerEvents.tick(event => {
 				'/adjreloademi ' + player.getUsername()
 			)
 		}
+		if (stage == 'chapter_0' && player.level.dimension == 'minecraft:the_nether') {
+			event.getServer().persistentData.chapters.next_stage = 'chapter_1';
+		}
 	}
 })
 
+// Restriction tags
 ServerEvents.tags('item', resctrictions => {
 
 	resctrictions.add('adj:locked_until/chapter_1', [

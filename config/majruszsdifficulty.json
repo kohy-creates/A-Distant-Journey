@@ -46,20 +46,10 @@
           "RED"
         ],
         "triggers": {
-          "dimensions": [
-            "minecraft:the_nether"
-          ],
+          "dimensions": [],
           "entities": []
         },
-        "messages": [
-          {
-            "id": "The spirits of hell are flowing to the Overworld...",
-            "format": [
-              "RED",
-              "ITALIC"
-            ]
-          }
-        ]
+        "messages": []
       },
       {
         "id": "chapter_2",
@@ -70,22 +60,7 @@
           "dimensions": [],
           "entities": []
         },
-        "messages": [
-          {
-            "id": "The ancient spirits of darkness have been released...",
-            "format": [
-              "DARK_RED",
-              "ITALIC"
-            ]
-          },
-          {
-            "id": "Heavenly gates open...",
-            "format": [
-              "YELLOW",
-              "ITALIC"
-            ]
-          }
-        ]
+        "messages": []
       },
       {
         "id": "chapter_3",
@@ -96,22 +71,7 @@
           "dimensions": [],
           "entities": []
         },
-        "messages": [
-          {
-            "id": "The ancient spirits of light have been released...",
-            "format": [
-              "YELLOW",
-              "ITALIC"
-            ]
-          },
-          {
-            "id": "Dreams of a different realm start to materialize...",
-            "format": [
-              "RED",
-              "ITALIC"
-            ]
-          }
-        ]
+        "messages": []
       },
       {
         "id": "chapter_4",
@@ -122,22 +82,7 @@
           "dimensions": [],
           "entities": []
         },
-        "messages": [
-          {
-            "id": "The boundary between dreams and nigthmares lessens...",
-            "format": [
-              "RED",
-              "ITALIC"
-            ]
-          },
-          {
-            "id": "Awakened Ender Pearls start to twitch...",
-            "format": [
-              "LIGHT_PURPLE",
-              "ITALIC"
-            ]
-          }
-        ]
+        "messages": []
       },
       {
         "id": "chapter_5",
@@ -149,15 +94,7 @@
           "dimensions": [],
           "entities": []
         },
-        "messages": [
-          {
-            "id": "The reality twists one final time...",
-            "format": [
-              "DARK_PURPLE",
-              "ITALIC"
-            ]
-          }
-        ]
+        "messages": []
       }
     ],
     "crd_penalty": {

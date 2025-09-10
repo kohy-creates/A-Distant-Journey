@@ -1,0 +1,8 @@
+{
+  "modToggle": true,
+  "framerateLimitToggle": true,
+  "framerateLimit": 10,
+  "renderDistanceToggle": false,
+  "renderDistance": 2,
+  "debugModeToggle": false
+}

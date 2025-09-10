@@ -29,6 +29,6 @@ StartupEvents.registry('item', registry => {
 		.pickaxeIcon().axeIcon().swordIcon().shovelIcon().hoeIcon().swordIcon()
 		.diamondIcon()
 		.appliesTo('Rose Gold Armor and Tools')
-		.ingredientsDescription('Another Diamond')
+		.ingredients('Another Diamond')
 		.texture('kubejs:item/diamond_upgrade')
 })

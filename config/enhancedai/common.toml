@@ -724,9 +724,9 @@
 		#How many ticks pass between shooting fireballs. Vanilla is 40
 		[Ghasts."Ghast shoot"."Attack cooldown"]
 			#Range: 1.0 ~ 300.0
-			Minimum = 40.0
+			Minimum = 50.0
 			#Range: 1.0 ~ 300.0
-			Maximum = 50.0
+			Maximum = 80.0
 
 		#How many fireballs ghast shoot in rapid succession. Vanilla is 1
 		[Ghasts."Ghast shoot"."Fireballs shot"]

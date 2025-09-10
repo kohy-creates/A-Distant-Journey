@@ -219,6 +219,8 @@
 		"quark:potted_ancient_sapling": "moresnifferflowers:potted_vivicus_sapling",
 
 		"quark:crate": "minecraft:air",
+		"quark:rope": "supplementaries:rope",
+		"quark:pipe": "minecraft:air",
 
 		"create:oak_window_pane": "minecraft:glass_pane",
 		"create:spruce_window_pane": "minecraft:glass_pane",
