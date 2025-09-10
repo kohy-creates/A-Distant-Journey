@@ -11,6 +11,13 @@
 	"minecraft:lava": {
 		"iframes": 10
 	},
+	"minecraft:mob_attack": {
+		"iframes": 0,
+		"overrides": {
+			"minecraft:magma_cube": 10,
+			"minecraft:slime": 10
+		}
+	},
 	"minecraft:mob_projectile": {
 		"iframes": 0,
 		"overrides": {

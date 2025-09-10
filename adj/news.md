@@ -1,6 +1,6 @@
-## %#FFAC47%Cape%#%
+## %#FFAC47%I SAID CAPE. READ THIS FFS%#%
 
-Had to move this one up cause nobody realized you can scroll the news box.
+Nobody reads this, my god.
 If you see this, &lsend me your username&r! I'll add you to the list of people elligible for a special tester cape! Yes, it will be visible for everyone playing the modpack.
 
 
