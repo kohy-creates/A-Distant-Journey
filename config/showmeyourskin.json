@@ -5,16 +5,10 @@
   "fadeOutTime": 2.0,
   "global": {
     "pieces": {
-      "LEGS": {
-        "transparency": 0
-      },
       "ELYTRA": {
         "transparency": 100
       },
-      "HAT": {
-        "transparency": 100
-      },
-      "FEET": {
+      "HEAD": {
         "transparency": 0
       },
       "CHEST": {
@@ -23,8 +17,14 @@
       "SHIELD": {
         "transparency": 100
       },
-      "HEAD": {
+      "FEET": {
         "transparency": 0
+      },
+      "LEGS": {
+        "transparency": 0
+      },
+      "HAT": {
+        "transparency": 100
       }
     },
     "trims": {
@@ -48,16 +48,10 @@
       }
     },
     "glints": {
-      "LEGS": {
-        "transparency": 100
-      },
       "ELYTRA": {
         "transparency": 100
       },
-      "HAT": {
-        "transparency": 100
-      },
-      "FEET": {
+      "HEAD": {
         "transparency": 100
       },
       "CHEST": {
@@ -66,7 +60,13 @@
       "SHIELD": {
         "transparency": 100
       },
-      "HEAD": {
+      "FEET": {
+        "transparency": 100
+      },
+      "LEGS": {
+        "transparency": 100
+      },
+      "HAT": {
         "transparency": 100
       }
     },
@@ -76,16 +76,10 @@
   "overrides": {
     "b1b6a13e-7a06-41a9-8189-1757871c9414": {
       "pieces": {
-        "LEGS": {
-          "transparency": 100
-        },
         "ELYTRA": {
           "transparency": 100
         },
-        "HAT": {
-          "transparency": 100
-        },
-        "FEET": {
+        "HEAD": {
           "transparency": 100
         },
         "CHEST": {
@@ -94,7 +88,13 @@
         "SHIELD": {
           "transparency": 100
         },
-        "HEAD": {
+        "FEET": {
+          "transparency": 100
+        },
+        "LEGS": {
+          "transparency": 100
+        },
+        "HAT": {
           "transparency": 100
         }
       },
@@ -119,16 +119,10 @@
         }
       },
       "glints": {
-        "LEGS": {
-          "transparency": 100
-        },
         "ELYTRA": {
           "transparency": 100
         },
-        "HAT": {
-          "transparency": 100
-        },
-        "FEET": {
+        "HEAD": {
           "transparency": 100
         },
         "CHEST": {
@@ -137,7 +131,13 @@
         "SHIELD": {
           "transparency": 100
         },
-        "HEAD": {
+        "FEET": {
+          "transparency": 100
+        },
+        "LEGS": {
+          "transparency": 100
+        },
+        "HAT": {
           "transparency": 100
         }
       },

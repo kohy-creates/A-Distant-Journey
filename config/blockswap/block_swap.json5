@@ -77,70 +77,93 @@
 
 		"quark:white_shingles": "hearth_and_home:white_shingles",
 		"quark:white_shingles_slab": "hearth_and_home:white_shingle_slab",
+		"quark:white_shingles_vertical_slab": "v_slab_compat:hearth_and_home/white_shingle_vertical_slab",
 		"quark:white_shingles_stairs": "hearth_and_home:white_shingle_stairs",
 
 		"quark:light_gray_shingles": "hearth_and_home:light_gray_shingles",
 		"quark:light_gray_shingles_slab": "hearth_and_home:light_gray_shingle_slab",
+		"quark:light_gray_shingles_vertical_slab": "v_slab_compat:hearth_and_home/light_gray_shingle_vertical_slab",
 		"quark:light_gray_shingles_stairs": "hearth_and_home:light_gray_shingle_stairs",
 
 		"quark:gray_shingles": "hearth_and_home:gray_shingles",
 		"quark:gray_shingles_slab": "hearth_and_home:gray_shingle_slab",
+		"quark:gray_shingles_vertical_slab": "v_slab_compat:hearth_and_home/gray_shingle_vertical_slab",
 		"quark:gray_shingles_stairs": "hearth_and_home:gray_shingle_stairs",
 
 		"quark:black_shingles": "hearth_and_home:black_shingles",
 		"quark:black_shingles_slab": "hearth_and_home:black_shingle_slab",
+		"quark:black_shingles_vertical_slab": "v_slab_compat:hearth_and_home/black_shingle_vertical_slab",
 		"quark:black_shingles_stairs": "hearth_and_home:black_shingle_stairs",
 
 		"quark:brown_shingles": "hearth_and_home:brown_shingles",
 		"quark:brown_shingles_slab": "hearth_and_home:brown_shingle_slab",
+		"quark:brown_shingles_vertical_slab": "v_slab_compat:hearth_and_home/brown_shingle_vertical_slab",
 		"quark:brown_shingles_stairs": "hearth_and_home:brown_shingle_stairs",
 
 		"quark:red_shingles": "hearth_and_home:red_shingles",
 		"quark:red_shingles_slab": "hearth_and_home:red_shingle_slab",
+		"quark:red_shingles_vertical_slab": "v_slab_compat:hearth_and_home/red_shingle_vertical_slab",
 		"quark:red_shingles_stairs": "hearth_and_home:red_shingle_stairs",
 
 		"quark:orange_shingles": "hearth_and_home:orange_shingles",
 		"quark:orange_shingles_slab": "hearth_and_home:orange_shingle_slab",
+		"quark:orange_shingles_vertical_slab": "v_slab_compat:hearth_and_home/orange_shingle_vertical_slab",
 		"quark:orange_shingles_stairs": "hearth_and_home:orange_shingle_stairs",
 
 		"quark:yellow_shingles": "hearth_and_home:yellow_shingles",
 		"quark:yellow_shingles_slab": "hearth_and_home:yellow_shingle_slab",
+		"quark:yellow_shingles_vertical_slab": "v_slab_compat:hearth_and_home/yellow_shingle_vertical_slab",
 		"quark:yellow_shingles_stairs": "hearth_and_home:yellow_shingle_stairs",
 
 		"quark:lime_shingles": "hearth_and_home:lime_shingles",
 		"quark:lime_shingles_slab": "hearth_and_home:lime_shingle_slab",
+		"quark:lime_shingles_vertical_slab": "v_slab_compat:hearth_and_home/lime_shingle_vertical_slab",
 		"quark:lime_shingles_stairs": "hearth_and_home:lime_shingle_stairs",
 
 		"quark:green_shingles": "hearth_and_home:green_shingles",
 		"quark:green_shingles_slab": "hearth_and_home:green_shingle_slab",
+		"quark:green_shingles_vertical_slab": "v_slab_compat:hearth_and_home/green_shingle_vertical_slab",
 		"quark:green_shingles_stairs": "hearth_and_home:green_shingle_stairs",
 
 		"quark:cyan_shingles": "hearth_and_home:cyan_shingles",
 		"quark:cyan_shingles_slab": "hearth_and_home:cyan_shingle_slab",
+		"quark:cyan_shingles_vertical_slab": "v_slab_compat:hearth_and_home/cyan_shingle_vertical_slab",
 		"quark:cyan_shingles_stairs": "hearth_and_home:cyan_shingle_stairs",
 
 		"quark:light_blue_shingles": "hearth_and_home:light_blue_shingles",
 		"quark:light_blue_shingles_slab": "hearth_and_home:light_blue_shingle_slab",
+		"quark:light_blue_shingles_vertical_slab": "v_slab_compat:hearth_and_home/light_blue_shingle_vertical_slab",
 		"quark:light_blue_shingles_stairs": "hearth_and_home:light_blue_shingle_stairs",
 
 		"quark:blue_shingles": "hearth_and_home:blue_shingles",
 		"quark:blue_shingles_slab": "hearth_and_home:blue_shingle_slab",
+		"quark:blue_shingles_vertical_slab": "v_slab_compat:hearth_and_home/blue_shingle_vertical_slab",
 		"quark:blue_shingles_stairs": "hearth_and_home:blue_shingle_stairs",
 
 		"quark:purple_shingles": "hearth_and_home:purple_shingles",
 		"quark:purple_shingles_slab": "hearth_and_home:purple_shingle_slab",
+		"quark:purple_shingles_vertical_slab": "v_slab_compat:hearth_and_home/purple_shingle_vertical_slab",
 		"quark:purple_shingles_stairs": "hearth_and_home:purple_shingle_stairs",
 
 		"quark:magenta_shingles": "hearth_and_home:magenta_shingles",
 		"quark:magenta_shingles_slab": "hearth_and_home:magenta_shingle_slab",
+		"quark:magenta_shingles_vertical_slab": "v_slab_compat:hearth_and_home/magenta_shingle_vertical_slab",
 		"quark:magenta_shingles_stairs": "hearth_and_home:magenta_shingle_stairs",
 
 		"quark:pink_shingles": "hearth_and_home:pink_shingles",
 		"quark:pink_shingles_slab": "hearth_and_home:pink_shingle_slab",
+		"quark:pink_shingles_vertical_slab": "v_slab_compat:hearth_and_home/pink_shingle_vertical_slab",
 		"quark:pink_shingles_stairs": "hearth_and_home:pink_shingle_stairs",
 
 		"quark:cobblestone_bricks": "hearth_and_home:cobblestone_bricks",
-		"quark:mossy_cobblestone_bricks": "minecraft:mossy_stone_bricks",
+		"quark:cobblestone_bricks_slab": "hearth_and_home:cobblestone_brick_slab",
+		"quark:cobblestone_bricks_stairs": "hearth_and_home:cobblestone_brick_stairs",
+		"quark:cobblestone_bricks_wall": "hearth_and_home:cobblestone_brick_wall",
+
+		"quark:mossy_cobblestone_bricks": "minecraft:mossy_cobblestone",
+		"quark:mossy_cobblestone_bricks_slab": "minecraft:mossy_cobblestone_slab",
+		"quark:mossy_cobblestone_bricks_stairs": "minecraft:mossy_cobblestone_stairs",
+		"quark:mossy_cobblestone_bricks_wall": "minecraft:mossy_cobblestone_wall",
 
 		"quark:oak_hedge": "minecraft:oak_leaves",
 		"quark:spruce_hedge": "minecraft:spruce_leaves",
@@ -171,6 +194,8 @@
 		"quark:berry_sack": "berry_good:sweet_berry_basket",
 		"quark:glowberry_sack": "berry_good:glow_berry_basket",
 		"quark:potted_ancient_sapling": "moresnifferflowers:potted_vivicus_sapling",
+
+		"quark:crate": "minecraft:air",
 
 		"create:oak_window_pane": "minecraft:glass_pane",
 		"create:spruce_window_pane": "minecraft:glass_pane",

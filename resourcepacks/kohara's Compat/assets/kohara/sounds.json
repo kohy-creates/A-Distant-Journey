@@ -1,0 +1,10 @@
+{
+	"old_levelup": {
+		"replace": false,
+		"sounds": [
+			{
+				"name": "kohara:old_levelup"
+			}
+		]
+	}
+}

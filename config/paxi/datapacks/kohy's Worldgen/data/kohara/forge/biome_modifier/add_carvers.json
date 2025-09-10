@@ -1,0 +1,9 @@
+{
+	"type": "adjcore:add_carvers",
+	"biomes": "#is_overworld",
+	"carvers": [
+		"kohara:crevice",
+		"kohara:grand_rift_valley"
+	],
+	"step": "air"
+}

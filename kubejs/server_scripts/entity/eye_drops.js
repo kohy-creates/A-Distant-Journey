@@ -28,7 +28,7 @@ EntityEvents.death(event => {
 			chance = 1;
 		}
 		if (Math.random() <= chance) {
-			server.runCommandSilent(`/summon marker ${entity.x} ${entity.y + (entity.eyeHeight / 2)} ${entity.z} {Tags:["adj.eye_marker", "adj.eye_of_${eye}"]}`)
+			server.runCommandSilent(`/execute in ${entity.level.dimension} run summon marker ${entity.x} ${entity.y + (entity.eyeHeight / 2)} ${entity.z} {Tags:["adj.eye_marker", "adj.eye_of_${eye}"]}`)
 
 			const name =
 				eye.charAt(0).toUpperCase()

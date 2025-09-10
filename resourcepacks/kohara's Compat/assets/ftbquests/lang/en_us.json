@@ -1,0 +1,18 @@
+{
+	"ftbquests.quest": "Advancement",
+	"ftbquests.quests": "Advancements",
+	"ftbquests.quest.completed": "Advancement completed!",
+	"ftbquests.quest.misc.can_repeat": "Repeatable",
+	"ftbquests.quest.misc.exclusive": "Exclusive Advancement Branch",
+	"ftbquests.quest.misc.optional": "Optional",
+	"ftbquests.quest.misc.optional_task": "Optional Task",
+	"ftbquests.quest.locked": "Locked: uncompleted dependencies",
+	"ftbquests.quest.locked.excluded": "Locked: excluded by another questline",
+	"ftbquests.ui.pinned_quests": "Pinned Advancements",
+	"ftbquests.ui.pinned_quests_pos": "Pinned Advancements Panel Position",
+	"ftbquests.ui.pinned_quests_inset_x": "Pinned Advancements Panel X Inset",
+	"ftbquests.ui.pinned_quests_inset_x.tooltip": "Advancements is toward center of screen.\nIgnored if X pos is center.",
+	"ftbquests.ui.pinned_quests_inset_y": "Pinned Advancements Panel Y Inset",
+	"ftbquests.ui.pinned_quests_inset_y.tooltip": "Inset is toward center of screen.\nIgnored if Y pos is center.",
+	"ftbquests.ui.show_lock_icon": "Show Icon for Locked Advancements"
+}

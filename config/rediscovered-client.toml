@@ -7,7 +7,7 @@
 	#
 	# Replaces the default cloud rendering with the fluffy clouds found in the Skylands.
 	# Default: false
-	override_vanilla_clouds = false
+	override_vanilla_clouds = true
 	#
 	# The intensity percentage of the screen shake caused by various things in the mod. Can be disabled if set to 0
 	# Default: 100

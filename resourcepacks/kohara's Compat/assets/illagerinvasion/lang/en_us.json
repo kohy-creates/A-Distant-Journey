@@ -1,0 +1,11 @@
+{
+  "item.minecraft.potion.effect.strong_berserking": "Berserker Potion",
+  "item.minecraft.potion.effect.long_berserking": "Berserker Potion",
+  "item.minecraft.potion.effect.berserking": "Berserker Potion",
+  "item.minecraft.lingering_potion.effect.strong_berserking": "Berserker Potion (§dLingering§r)",
+  "item.minecraft.lingering_potion.effect.long_berserking": "Berserker Potion (§dLingering§r)",
+  "item.minecraft.lingering_potion.effect.berserking": "Berserker Potion (§dLingering§r)",
+  "item.minecraft.splash_potion.effect.strong_berserking": "Berserker Potion (§6Throwable§r)",
+  "item.minecraft.splash_potion.effect.long_berserking": "Berserker Potion (§6Throwable§r)",
+  "item.minecraft.splash_potion.effect.berserking": "Berserker Potion (§6Throwable§r)"
+}

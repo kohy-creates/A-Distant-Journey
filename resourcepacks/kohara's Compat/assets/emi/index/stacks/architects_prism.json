@@ -1,0 +1,11 @@
+{
+	"removed": [
+		"item:structure_gel:building_tool"
+	],
+	"added": [
+		{
+			"stack": "item:structure_gel:building_tool",
+			"after": "item:kubejs:eye_of_verdant_bloom"
+		}
+	]
+}

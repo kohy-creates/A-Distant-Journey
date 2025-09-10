@@ -570,11 +570,11 @@
       "is_enabled": true,
       "multiplier": {
         "__default": 1.0,
-        "chapter_1": 1.05,
-        "chapter_2": 1.1,
-        "chapter_3": 1.1666667,
-        "chapter_4": 1.25,
-        "chapter_5": 1.3333333
+        "chapter_1": 1.0,
+        "chapter_2": 1.05,
+        "chapter_3": 1.125,
+        "chapter_4": 1.175,
+        "chapter_5": 1.25
       }
     }
   },

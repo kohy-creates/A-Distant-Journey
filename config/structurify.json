@@ -1,6 +1,6 @@
 {
   "config_version": "1.0.21",
-  "config_datetime": "2025-09-05_11-54-10",
+  "config_datetime": "2025-09-10_00-53-58",
   "general": {
     "min_structure_distance_from_world_center": 151,
     "disable_all_structures": false,
@@ -382,12 +382,148 @@
       "separation": 3
     },
     {
+      "name": "aether:ruined_portals",
+      "salt": 14252125,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 43,
+      "separation": 22
+    },
+    {
       "name": "aether:silver_and_gold_dungeons",
       "salt": 4325806,
       "frequency": 1.0,
       "override_global_spacing_and_separation_modifier": true,
       "spacing": 36,
       "separation": 24
+    },
+    {
+      "name": "alekiships:unfinished_rowboat",
+      "salt": 1642136474,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 22,
+      "separation": 10
+    },
+    {
+      "name": "alekiships:unfinished_sloop",
+      "salt": 1644568644,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 24,
+      "separation": 10
+    },
+    {
+      "name": "alexscaves:abyssal_ruins",
+      "salt": 45,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 5,
+      "separation": 3
+    },
+    {
+      "name": "alexscaves:acid_pit",
+      "salt": 2,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 6,
+      "separation": 3
+    },
+    {
+      "name": "alexscaves:cake_cave",
+      "salt": 3,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 6,
+      "separation": 5
+    },
+    {
+      "name": "alexscaves:dino_bowl",
+      "salt": 1,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 4,
+      "separation": 2
+    },
+    {
+      "name": "alexscaves:donut_arch",
+      "salt": 856457354,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 11,
+      "separation": 7
+    },
+    {
+      "name": "alexscaves:ferrocave",
+      "salt": 3,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 6,
+      "separation": 3
+    },
+    {
+      "name": "alexscaves:forlorn_bridge",
+      "salt": 22,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 8,
+      "separation": 7
+    },
+    {
+      "name": "alexscaves:forlorn_canyon",
+      "salt": 6,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 6,
+      "separation": 4
+    },
+    {
+      "name": "alexscaves:gingerbread_town",
+      "salt": 92463117,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 13,
+      "separation": 11
+    },
+    {
+      "name": "alexscaves:licowitch_tower",
+      "salt": 23916271,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 21,
+      "separation": 16
+    },
+    {
+      "name": "alexscaves:ocean_trench",
+      "salt": 2,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 2,
+      "separation": 1
+    },
+    {
+      "name": "alexscaves:soda_bottle",
+      "salt": 11224949,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 8,
+      "separation": 3
+    },
+    {
+      "name": "alexscaves:underground_cabin",
+      "salt": 99,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 10,
+      "separation": 2
+    },
+    {
+      "name": "alexscaves:volcano",
+      "salt": 9129,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 14,
+      "separation": 8
     },
     {
       "name": "aquamirae:outpost",
@@ -412,6 +548,22 @@
       "override_global_spacing_and_separation_modifier": true,
       "spacing": 25,
       "separation": 10
+    },
+    {
+      "name": "ars_additions:ruined_portal",
+      "salt": 30981980,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 30,
+      "separation": 15
+    },
+    {
+      "name": "betterfortresses:fortress",
+      "salt": 784827271,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 30,
+      "separation": 20
     },
     {
       "name": "cataclysm:frosted_prison",
@@ -470,6 +622,22 @@
       "separation": 0
     },
     {
+      "name": "minecraft:nether_complexes",
+      "salt": 30084232,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 16,
+      "separation": 11
+    },
+    {
+      "name": "minecraft:ruined_portals",
+      "salt": 34222645,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 30,
+      "separation": 15
+    },
+    {
       "name": "minecraft:strongholds",
       "salt": 1,
       "frequency": 1.0,
@@ -486,12 +654,100 @@
       "separation": 22
     },
     {
+      "name": "rediscovered:brick_pyramid",
+      "salt": 474519853,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 45,
+      "separation": 31
+    },
+    {
       "name": "rediscovered:pigman_village",
       "salt": 570217192,
       "frequency": 0.75,
-      "override_global_spacing_and_separation_modifier": false,
+      "override_global_spacing_and_separation_modifier": true,
       "spacing": 41,
       "separation": 24
+    },
+    {
+      "name": "the_bumblezone:bumbling_beepartments",
+      "salt": 237331673,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 3,
+      "separation": 2
+    },
+    {
+      "name": "the_bumblezone:cell_maze",
+      "salt": 456768898,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 80,
+      "separation": 35
+    },
+    {
+      "name": "the_bumblezone:cherry_veteran_tree",
+      "salt": 432534354,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 4,
+      "separation": 1
+    },
+    {
+      "name": "the_bumblezone:hanging_structures",
+      "salt": 223986734,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 48,
+      "separation": 25
+    },
+    {
+      "name": "the_bumblezone:honey_cave_room",
+      "salt": 722299384,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 4,
+      "separation": 2
+    },
+    {
+      "name": "the_bumblezone:main_structures",
+      "salt": 578754875,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 31,
+      "separation": 15
+    },
+    {
+      "name": "the_bumblezone:pollinated_stream",
+      "salt": 938497222,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 15,
+      "separation": 10
+    },
+    {
+      "name": "the_bumblezone:sempiternal_sanctums",
+      "salt": 54356565,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 68,
+      "separation": 51
+    },
+    {
+      "name": "the_bumblezone:throne_pillar",
+      "salt": 17240798,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 75,
+      "separation": 55
+    },
+    {
+      "name": "the_bumblezone:tiny_structures",
+      "salt": 34793346,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "spacing": 15,
+      "separation": 7
     },
     {
       "name": "witherstormmod:bowels",

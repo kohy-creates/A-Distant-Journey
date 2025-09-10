@@ -1,7 +1,7 @@
-playsound adj:eye.appear master @a[distance=0..] ~ ~ ~ 3 1
-playsound adj:eye.appear_choir master @a[distance=0..] ~ ~ ~ 3 1
+playsound adj:eye.appear master @a[distance=0..] ~ ~ ~ 4.4 1
+playsound adj:eye.appear_choir master @a[distance=0..] ~ ~ ~ 4.4 1
 
-witherstormmod screenShake @a[distance=..32] 2s 20
+witherstormmod screenShake @a[distance=..64] 2s 20
 
 particle flash ~ ~ ~ 0 0 0 0 1 force @a[distance=..64]
 
@@ -10,7 +10,7 @@ execute if entity @s[tag=adj.eye_of_angels] run summon item ~ ~ ~ {Item:{id:"kub
 execute if entity @s[tag=adj.eye_of_dreams] run summon item ~ ~ ~ {Item:{id:"kubejs:eye_of_dreams",Count:1b},Age:-32768,NoGravity:1b,Glowing:1b}
 execute if entity @s[tag=adj.eye_of_desolation] run summon item ~ ~ ~ {Item:{id:"kubejs:eye_of_desolation",Count:1b},Age:-32768,NoGravity:1b,Glowing:1b}
 
-execute if entity @s[tag=adj.eye_of_desolation] run particle cataclysm:shock_wave ~ ~ ~ 0 0 0 0 1 force @a[distance=..64]
+execute if entity @s[tag=adj.eye_of_desolation] run particle cataclysm:shock_wave ~ ~ ~ 0 0 0 0 1 force @a[distance=..96]
 
 
 function adj:eye/animations/wave

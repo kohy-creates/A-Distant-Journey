@@ -1,0 +1,13 @@
+{
+	"step_st": {
+		"sounds": [
+			{
+				"name": "born_in_chaos_v1:step1",
+				"volume": 2,
+				"attenuation_distance": 48,
+				"stream": false
+			}
+		],
+		"replace": true
+	}
+}

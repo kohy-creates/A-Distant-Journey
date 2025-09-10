@@ -1,0 +1,23 @@
+{
+  "feature": "ars_nouveau:mixed_archwoods",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 150
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 1
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

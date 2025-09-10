@@ -27,13 +27,44 @@
 						"direction_of_search": "down",
 						"max_steps": 12,
 						"target_condition": {
-							"type": "minecraft:matching_block_tag",
-							"offset": [
-								0,
-								0,
-								0
-							],
-							"tag": "minecraft:dirt"
+							"type": "all_of",
+							"predicates": [
+								{
+									"type": "minecraft:matching_block_tag",
+									"offset": [
+										0,
+										0,
+										0
+									],
+									"tag": "minecraft:dirt"
+								},
+								{
+									"type": "not",
+									"predicate": {
+										"type": "minecraft:matching_block_tag",
+										"offset": [
+											0,
+											0,
+											0
+										],
+										"tag": "minecraft:sand"
+									}
+								},
+								{
+									"type": "not",
+									"predicate": {
+										"type": "minecraft:matching_blocks",
+										"offset": [
+											0,
+											0,
+											0
+										],
+										"blocks": [
+											"snow_block"
+										]
+									}
+								}
+							]
 						}
 					},
 					{

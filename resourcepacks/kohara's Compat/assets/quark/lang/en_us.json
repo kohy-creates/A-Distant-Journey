@@ -1,0 +1,12 @@
+{
+	"item.minecraft.potion.effect.strong_resilence": "Stability Potion",
+	"item.minecraft.potion.effect.long_resilence": "Stability Potion",
+	"item.minecraft.potion.effect.resilence": "Stability Potion",
+	"item.minecraft.lingering_potion.effect.strong_resilence": "Stability Potion (§dLingering§r)",
+	"item.minecraft.lingering_potion.effect.long_resilence": "Stability Potion (§dLingering§r)",
+	"item.minecraft.lingering_potion.effect.resilence": "Stability Potion (§dLingering§r)",
+	"item.minecraft.splash_potion.effect.strong_resilence": "Stability Potion (§6Throwable§r)",
+	"item.minecraft.splash_potion.effect.long_resilence": "Stability Potion (§6Throwable§r)",
+	"item.minecraft.splash_potion.effect.resilence": "Stability Potion (§6Throwable§r)",
+	"quark.jei.hint.preamble": ""
+}

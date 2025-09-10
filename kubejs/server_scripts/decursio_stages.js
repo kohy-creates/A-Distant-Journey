@@ -121,8 +121,8 @@ ServerEvents.tags('item', resctrictions => {
 		'botania:black_hole_talisman',
 		'botania:corporea_spark',
 		'botania:flight_tiara',
-		'@mynethersdelight',
-		'@netherexp',
+		/mynethersdelight/,
+		/netherexp/,
 		'netherrack',
 		'nether_gold_ore',
 		'nether_quartz_ore',
@@ -131,10 +131,10 @@ ServerEvents.tags('item', resctrictions => {
 		/supp.*\:.*mynethersdelight.*/,
 		/supp.*\:.*netherexp.*/,
 		/nether/,
-		'@netherdepthsupgrade',
+		/netherdepthsupgrade/,
 		'beacon',
 		'constructionwand:infinity_wand',
-		'@enderstorage',
+		/enderstorage/,
 		/blaze/,
 		/crimson/,
 		/warped/,
@@ -178,14 +178,14 @@ ServerEvents.tags('item', resctrictions => {
 
 	resctrictions.add('adj:locked_until/chapter_2', [
 		/palladium/,
-		'@aether',
-		'@aether_redux',
-		'@lost_aether_content',
+		/aether/,
+		/aether_redux/,
+		/lost_aether_content/,
 	]);
 	resctrictions.add('adj:locked_until/light/chapter_2', [
 		/everycomp\:.*aether.*/, // also covers redux and lost content
 		/supp.*\:.*aether.*/,
-		'@mutantmonsters',
+		/mutantmonsters/,
 	]);
 	resctrictions.add('adj:locked_until/exceptions/chapter_2', [
 		'aether:leather_gloves',
@@ -206,7 +206,7 @@ ServerEvents.tags('item', resctrictions => {
 	resctrictions.add('adj:locked_until/light/chapter_3', [
 		'mythicmetals:aegis_smithing_template',
 		'ancient_debris',
-		'@rediscovered',
+		/rediscovered/,
 		'suppsquared:heavy_key'
 	]);
 	resctrictions.add('adj:locked_until/exceptions/chapter_3', [
@@ -232,17 +232,19 @@ ServerEvents.tags('item', resctrictions => {
 	);
 	resctrictions.add('adj:locked_until/light/chapter_4', [
 		/end_stone/,
-		'@endersdelight',
+		/endersdelight/,
 		/chorus/,
 		/purpur/,
-		'@unusualend',
-		'@phantasm',
+		/unusualend/,
+		/phantasm/,
 		/everycomp\:.*phantasm.*/,
 		/everycomp\:.*unusualend.*/,
 		/supp.*\:.*unusualend.*/,
 		/supp.*\:.*phantasm.*/,
 		/quark\:myalite/,
 		/quark\:duskbound/,
+		'alloy_forgery:ender_forge_casing_forge_controller',
+		'adj:ender_forge_casing',
 		'born_in_chaos_v1:transmuting_elixir',
 		'end_rod',
 		'kubejs:ender_forge',
@@ -264,7 +266,7 @@ ServerEvents.tags('item', resctrictions => {
 		/celestium/
 	]);
 	resctrictions.add('adj:locked_until/light/chapter_5', [
-		'@witherstormmod'
+		/witherstormmod/
 	]);
 	resctrictions.add('adj:locked_until/exceptions/chapter_5', [
 		'witherstormmod:firework_bundle',

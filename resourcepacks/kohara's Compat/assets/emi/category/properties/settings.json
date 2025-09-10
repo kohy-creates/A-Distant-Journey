@@ -1,0 +1,32 @@
+{
+	"emi:info": {
+		"order": -999
+	},
+	"minecraft:crafting": {
+		"order": -998
+	},
+	"minecraft:smelting": {
+		"order": -997
+	},
+	"minecraft:blasting": {
+		"order": -996
+	},
+	"minecraft:smoking": {
+		"order": -995
+	},
+
+	"create:automatic_brewing": {
+		"order": 503
+	},
+	
+	"minecraft:anvil_repairing": {
+		"order": 1000
+	},
+
+	"emi:fuel": {
+		"order": 9998
+	},
+	"emi:tag": {
+		"order": 9999
+	}
+}

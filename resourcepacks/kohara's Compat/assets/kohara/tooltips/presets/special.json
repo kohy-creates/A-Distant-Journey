@@ -1,0 +1,12 @@
+{
+	"priority": 2000,
+	"effects": [
+		"kohara:special"
+	],
+	"panel": "kohara:special",
+	"frame": "kohara:special",
+	"icon": "kohara:special",
+	"filter": {
+		"rarity": "alexscaves:rainbow"
+	}
+}

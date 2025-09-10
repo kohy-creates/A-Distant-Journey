@@ -88,10 +88,10 @@
 	coordinates_scale = 1.0
 	#Sets the scale of the map icons rendered in the world-map
 	#Range: 0.0 ~ 10.0
-	decoration_scale = 0.75
+	decoration_scale = 0.5
 	#Scale multiplier for Map Markers text on the world-map
 	#Range: 0.0 ~ 10.0
-	map_markers_text_scale = 1.0
+	map_markers_text_scale = 0.5
 	#Rearranges the position of the slice indicator to be more compact. You will need supplementaries slice maps to use this
 	compact_slices_indicator = false
 	#Allows minimap to follow player movement instead of only displaying current map

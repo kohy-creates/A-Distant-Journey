@@ -131,15 +131,15 @@ ClientEvents.lang('en_us', event => {
 		event.renameItem(item, 'Ancient ' + name);
 	})
 
-	global.quarkVerticalSlabs.forEach(slab => {
-		let name = slab
-			.replace('quark:', '')
-			.replace('_vertical', '')
-			.replace(/\_/g, ' ')
-			.toLowerCase()
-			.split(' ')
-			.map(word => word.charAt(0).toUpperCase() + word.slice(1))
-			.join(' ');
-		event.renameBlock(slab, name)
-	})
+	// global.quarkVerticalSlabs.forEach(slab => {
+	// 	let name = slab
+	// 		.replace('quark:', '')
+	// 		.replace('_vertical', '')
+	// 		.replace(/\_/g, ' ')
+	// 		.toLowerCase()
+	// 		.split(' ')
+	// 		.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+	// 		.join(' ');
+	// 	event.renameBlock(slab, name)
+	// })
 })

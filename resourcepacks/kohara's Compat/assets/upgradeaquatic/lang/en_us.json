@@ -1,0 +1,20 @@
+{
+  "item.minecraft.potion.effect.repellence_strong": "Repellence Potion",
+  "item.minecraft.potion.effect.repellence_long": "Repellence Potion",
+  "item.minecraft.potion.effect.repellence": "Repellence Potion",
+  "item.minecraft.potion.effect.vibing_strong": "Vibing Potion",
+  "item.minecraft.potion.effect.vibing_long": "Vibing Potion",
+  "item.minecraft.potion.effect.vibing": "Vibing Potion",
+  "item.minecraft.lingering_potion.effect.repellence_strong": "Repellence Potion (§dLingering§r)",
+  "item.minecraft.lingering_potion.effect.repellence_long": "Repellence Potion (§dLingering§r)",
+  "item.minecraft.lingering_potion.effect.repellence": "Repellence Potion (§dLingering§r)",
+  "item.minecraft.lingering_potion.effect.vibing_strong": "Vibing Potion (§dLingering§r)",
+  "item.minecraft.lingering_potion.effect.vibing_long": "Vibing Potion (§dLingering§r)",
+  "item.minecraft.lingering_potion.effect.vibing": "Vibing Potion (§dLingering§r)",
+  "item.minecraft.splash_potion.effect.repellence_strong": "Repellence Potion (§6Throwable§r)",
+  "item.minecraft.splash_potion.effect.repellence_long": "Repellence Potion (§6Throwable§r)",
+  "item.minecraft.splash_potion.effect.repellence": "Repellence Potion (§6Throwable§r)",
+  "item.minecraft.splash_potion.effect.vibing_strong": "Vibing Potion (§6Throwable§r)",
+  "item.minecraft.splash_potion.effect.vibing_long": "Vibing Potion (§6Throwable§r)",
+  "item.minecraft.splash_potion.effect.vibing": "Vibing Potion (§6Throwable§r)"
+}

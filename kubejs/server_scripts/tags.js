@@ -310,8 +310,8 @@ ServerEvents.tags('worldgen/structure', event => {
 	])
 }) 
 
-ServerEvents.tags('worldgen/biome', event => {
-	event.remove('ars_additions:has_structure/nexus_tower', [
-		/ocean/
-	])
-})
+// ServerEvents.tags('worldgen/biome', event => {
+// 	event.remove('ars_additions:has_structure/nexus_tower', [
+// 		/ocean/
+// 	])
+// })

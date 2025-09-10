@@ -427,7 +427,7 @@
 	[Mobs.Spawning]
 		#How far away from any player monsters will instantly despawn? Vanilla is 128. Reducing this makes mobs more crowded around players.
 		#Range: 0 ~ 128
-		"Monsters despawning distance" = 96
+		"Monsters despawning distance" = 128
 		#How far away from any player monsters will be able to randomly despawn? Vanilla is 32
 		#Range: 0 ~ 128
 		"Min monsters despawning distance" = 48

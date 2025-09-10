@@ -55,7 +55,7 @@ debug/
 /logs/
 /mods/
 /shaderpacks/
-/resourcepacks/
+/resourcepacks/**/*.zip
 /resources/
 /saves/
 /modernfix/

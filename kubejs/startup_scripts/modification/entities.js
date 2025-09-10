@@ -171,7 +171,7 @@ global.hpModifications = {
 	'born_in_chaos_v1:zombie_fisherman': [125, 20, 4],
 	'born_in_chaos_v1:swarmer': [105, 10, 4],
 	'born_in_chaos_v1:thornshell_crab': [90, 20, 4],
-	'born_in_chaos_v1:glutton_fish': [220, 40, 3],
+	'born_in_chaos_v1:glutton_fish': [150, 20, 3],
 	'born_in_chaos_v1:zombie_bruiser': [130, 30, 2],
 	'born_in_chaos_v1:pumpkin_bomb': [75, 5, 0],
 	'born_in_chaos_v1:senor_pumpkin': [175, 25, 2],
@@ -292,8 +292,8 @@ global.hpModifications = {
 	'ecologics:squirrel': [50, 15, 0],
 	'aquamirae:golden_moth': [8, 15, 0],
 	'aquamirae:maw': [100, 20, 0],
-	'aquamirae:anglerfish': [200, 30, 2],
-	'aquamirae:maze_mother': [500, 25, 6],
+	'aquamirae:anglerfish': [140, 13, 2],
+	'aquamirae:maze_mother': [500, 25, 10],
 	'aquamirae:captain_cornelia': [1000, 5, 6],
 	'aquamirae:pillagers_patrol': [100, 15, 0],
 	'aquamirae:tortured_soul': [150, 35, 4],
@@ -459,8 +459,8 @@ global.hpModifications = {
 	'upgrade_aquatic:pike': [8, 15, 0],
 	'upgrade_aquatic:perch': [8, 15, 0],
 	'upgrade_aquatic:lionfish': [8, 15, 0],
-	'upgrade_aquatic:thrasher': [8, 20, 8],
-	'upgrade_aquatic:great_thrasher': [300, 32, 6],
+	'upgrade_aquatic:thrasher': [40, 15, 8],
+	'upgrade_aquatic:great_thrasher': [150, 25, 6],
 	'upgrade_aquatic:flare': [100, 10, 0],
 	'upgrade_aquatic:goose': [30, 15, 0],
 	'upgrade_aquatic:box_jellyfish': [0, 25, 0],
@@ -741,7 +741,7 @@ EntityJSEvents.attributes(event => {
 		attributes.add('generic.attack_damage', 3);
 		attributes.add('combatroll:count', 0);
 		attributes.add('attributeslib:crit_damage', 2.0);
-		attributes.add('attributeslib:draw_speed', 0.66);
+		attributes.add('attributeslib:draw_speed', 0.85);
 	})
 
 	event.modify('witherstormmod:wither_storm', attributes => {

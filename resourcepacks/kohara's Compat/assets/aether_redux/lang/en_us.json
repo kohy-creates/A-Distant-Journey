@@ -1,0 +1,11 @@
+{
+  "item.minecraft.potion.effect.strong_intoxication": "Intoxicating Potion",
+  "item.minecraft.potion.effect.long_intoxication": "Intoxicating Potion",
+  "item.minecraft.potion.effect.intoxication": "Intoxicating Potion",
+  "item.minecraft.lingering_potion.effect.strong_intoxication": "Intoxicating Potion (§dLingering§r)",
+  "item.minecraft.lingering_potion.effect.long_intoxication": "Intoxicating Potion (§dLingering§r)",
+  "item.minecraft.lingering_potion.effect.intoxication": "Intoxicating Potion (§dLingering§r)",
+  "item.minecraft.splash_potion.effect.strong_intoxication": "Intoxicating Potion (§6Throwable§r)",
+  "item.minecraft.splash_potion.effect.long_intoxication": "Intoxicating Potion (§6Throwable§r)",
+  "item.minecraft.splash_potion.effect.intoxication": "Intoxicating Potion (§6Throwable§r)"
+}

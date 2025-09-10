@@ -1,0 +1,11 @@
+{
+  "item.minecraft.potion.effect.enderference_potion_strong": "Enderference Potion",
+  "item.minecraft.potion.effect.enderference_potion_long": "Enderference Potion",
+  "item.minecraft.potion.effect.enderference_potion": "Enderference Potion",
+  "item.minecraft.lingering_potion.effect.enderference_potion_strong": "Enderference Potion (§dLingering§r)",
+  "item.minecraft.lingering_potion.effect.enderference_potion_long": "Enderference Potion (§dLingering§r)",
+  "item.minecraft.lingering_potion.effect.enderference_potion": "Enderference Potion (§dLingering§r)",
+  "item.minecraft.splash_potion.effect.enderference_potion_strong": "Enderference Potion (§6Throwable§r)",
+  "item.minecraft.splash_potion.effect.enderference_potion_long": "Enderference Potion (§6Throwable§r)",
+  "item.minecraft.splash_potion.effect.enderference_potion": "Enderference Potion (§6Throwable§r)"
+}

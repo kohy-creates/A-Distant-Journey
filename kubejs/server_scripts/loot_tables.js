@@ -78,31 +78,31 @@ LootJS.modifiers((event) => {
 	event.addEntityLootModifier('ars_nouveau:wilden_boss')
 		.removeLoot('ars_nouveau:wilden_tribute')
 
-	global.quarkVerticalSlabs.forEach(slab => {
-		const lootTable = `quark:blocks/${slab.split(':')[1]}`
+	// global.quarkVerticalSlabs.forEach(slab => {
+	// 	const lootTable = `quark:blocks/${slab.split(':')[1]}`
 
-		event.addLootTableModifier(lootTable)
-			.removeLoot(slab)
-			.pool((pool) => {
-				let slabID = slab.replace('_vertical', '');
-				if (!Item.exists(slabID)) slabID = `minecraft:${slab.split(':')[1].replace('vertical_', '')}`
+	// 	event.addLootTableModifier(lootTable)
+	// 		.removeLoot(slab)
+	// 		.pool((pool) => {
+	// 			let slabID = slab.replace('_vertical', '');
+	// 			if (!Item.exists(slabID)) slabID = `minecraft:${slab.split(':')[1].replace('vertical_', '')}`
 
-				pool.rolls(1);
-				pool.addLoot(LootEntry.of(slabID))
-				pool.simulateExplosionDecay();
-				pool.customFunction({
-					"function": "minecraft:set_count",
-					"conditions": [
-						{
-							"condition": "minecraft:block_state_property",
-							"block": slab,
-							"properties": {
-								"type": "double"
-							}
-						}
-					],
-					"count": 2
-				})
-			})
-	})
+	// 			pool.rolls(1);
+	// 			pool.addLoot(LootEntry.of(slabID))
+	// 			pool.simulateExplosionDecay();
+	// 			pool.customFunction({
+	// 				"function": "minecraft:set_count",
+	// 				"conditions": [
+	// 					{
+	// 						"condition": "minecraft:block_state_property",
+	// 						"block": slab,
+	// 						"properties": {
+	// 							"type": "double"
+	// 						}
+	// 					}
+	// 				],
+	// 				"count": 2
+	// 			})
+	// 		})
+	// })
 });

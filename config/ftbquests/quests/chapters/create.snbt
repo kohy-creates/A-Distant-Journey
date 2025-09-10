@@ -31,10 +31,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"3090E8C8D08DFB27"
-				"57A550E2F3090147"
-			]
+			dependencies: ["57A550E2F3090147"]
 			icon: "create:cogwheel"
 			id: "3393638E574BEB0D"
 			subtitle: "Craft a set of Cogwheels"
@@ -81,10 +78,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"6F6E4CEDDF413E18"
-				"76EC8D76904524E9"
-			]
+			dependencies: ["6F6E4CEDDF413E18"]
 			icon: "create:mechanical_press"
 			id: "0288AADCBD95EB2D"
 			subtitle: "Craft a Mechanical Press and use it to make some Sheets"
@@ -189,7 +183,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["6D5E23CA57F59F07"]
+			dependencies: [
+				"6D5E23CA57F59F07"
+				"0288AADCBD95EB2D"
+			]
 			icon: "create_hypertube:hypertube_entrance"
 			id: "76EC8D76904524E9"
 			subtitle: "Craft some Hypertubes"

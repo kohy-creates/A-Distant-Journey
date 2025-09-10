@@ -1,0 +1,1 @@
+fluffy_clouds is based on "shaders/core/position_tex_color_normal"

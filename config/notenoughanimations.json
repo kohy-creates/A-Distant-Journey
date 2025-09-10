@@ -31,7 +31,7 @@
   "enableInWorldMapRendering": true,
   "enableOffhandHiding": true,
   "enableRotationLocking": true,
-  "enableLadderAnimation": false,
+  "enableLadderAnimation": true,
   "ladderAnimationAmplifier": 0.35,
   "ladderAnimationArmHeight": 1.7,
   "ladderAnimationArmSpeed": 1.9,
