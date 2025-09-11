@@ -86,7 +86,7 @@
 	diminishing_blazes = true
 	#Magma Cube texture changes depending on it's size so that it's no longer mixels 
 	#The New Textures used are from FaithFul 32x and 64x respectively
-	pixel_consistent_magma_cubes = true
+	pixel_consistent_magma_cubes = false
 	#Skeletons when killed fossilize soul soil blocks underneath into Fossil Ore
 	skeleton_fossilization = true
 	#Wither Skeletons when killed fossilize soul soil blocks underneath into Fossil Fuel Ore
@@ -113,7 +113,7 @@
 	#Defines 1 in specified chance for how often Ecto Slabs emerge from soul swirls if the player has Unbounded Speed
 	ecto_slab_emerging_with_unbounded_speed = 10
 	#Suspicious Soul Sand made by wisps will randomly decay into regular soul sand
-	suspicious_soul_sand_decays = true
+	suspicious_soul_sand_decays = false
 	#Defines 1 in specified chance for wisp-made Suspicious Soul Sand to decay back to regular soul sand
 	suspicious_soul_sand_decay_odds = true
 	#The default loot table of a wisp-made Suspicious Soul Sand if both the biome and structure checks failed

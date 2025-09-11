@@ -74,7 +74,22 @@ ServerEvents.recipes((event) => {
 		'create:crafting/materials/copper_ingot',
 
 		'suppsquared:copper_lantern',
-		'suppsquared:copper_lantern_2'
+		'suppsquared:copper_lantern_2',
+
+		'ars_nouveau:unbreaking_2',
+		'ars_nouveau:unbreaking_3',
+		'ars_nouveau:protection_5',
+		'ars_nouveau:projectile_protection_5',
+		'ars_nouveau:fire_protection_5',
+		'ars_nouveau:sharpness_5',
+		'ars_nouveau:looting_2',
+		'ars_nouveau:looting_3',
+		'ars_nouveau:fortune_2',
+		'ars_nouveau:fortune_3',
+		'ars_nouveau:efficiency_4',
+		'ars_nouveau:efficiency_5',
+		'ars_nouveau:power_4',
+		'ars_nouveau:power_5',
 
 		///alloy_forgery\:compat\//
 	]

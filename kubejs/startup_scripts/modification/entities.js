@@ -710,32 +710,6 @@ EntityJSEvents.attributes(event => {
 
 	global.mobs = event.getAllTypes();
 
-	Object.entries(global.hpModifications).forEach(([entityId, values]) => {
-		event.modify(entityId, attributes => {
-			if (values[0] !== null) {
-				let health = values[0];
-				if (Array.isArray(values[0])) {
-					health = values[0][0]
-				}
-				attributes.add('generic.max_health', health);
-			}
-			if (values[1] !== undefined && values[1] !== null) {
-				let damage = values[1];
-				if (Array.isArray(values[1])) {
-					damage = values[1][0]
-				}
-				attributes.add('generic.attack_damage', damage);
-			}
-			if (values[2] !== undefined && values[2] !== null) {
-				let armor = values[2];
-				if (Array.isArray(values[2])) {
-					armor = values[2][0]
-				}
-				attributes.add('generic.armor', armor);
-			}
-		})
-	});
-
 	event.modify('player', attributes => {
 		attributes.add('generic.max_health', 100);
 		attributes.add('generic.attack_damage', 3);
@@ -749,10 +723,6 @@ EntityJSEvents.attributes(event => {
 		attributes.add('witherstormmod:target_stationary_flying_speed', global.WitherStormFlyingSpeed);
 	})
 
-	event.modify('minecraft:pig', attributes => {
-		attributes.add('generic.max_health', 50);
-		attributes.add('generic.armor', 0);
-	})
 })
 
 EntityJSEvents.modifyEntity(event => {

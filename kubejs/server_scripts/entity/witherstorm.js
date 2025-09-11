@@ -2,18 +2,13 @@ ServerEvents.loaded(event => {
 	event.getServer().runCommandSilent('/scoreboard objectives add KJ_WSPhase dummy')
 	event.getServer().runCommandSilent('/scoreboard objectives add KJ_PlayingDead dummy')
 })
-EntityEvents.spawned(event => {
-	const entity = event.getEntity();
-	if (entity.getType() === 'witherstormmod:wither_storm') {
-		event.getServer().persistentData.witherStormActive = true;
-	}
+EntityEvents.spawned('witherstormmod:wither_storm', event => {
+	event.getServer().persistentData.witherStormActive = true;
+
 })
-EntityEvents.death(event => {
-	const entity = event.getEntity();
-	if (entity.getType() === 'witherstormmod:wither_storm') {
-		event.getServer().persistentData.witherStormActive = false;
-		event.getServer().persistentData.remove('witherStormPhase');
-	}
+EntityEvents.death('witherstormmod:wither_storm', event => {
+	event.getServer().persistentData.witherStormActive = false;
+	event.getServer().persistentData.remove('witherStormPhase');
 })
 
 let tickCount = 0;
@@ -103,12 +98,12 @@ function onWSPhaseChange(newPhase, server) {
 			break;
 		}
 		case 5: {
-            text.push('The Wither Storm grows stronger once more');
-            text.push('It starts to assimilate Zombies into Withered Symbionts')
-            text.push('If you want to have a chance at killing The Beast, you must hunt them down')
-            text.push('So if you aren\'t close to The Wither Storm, you need to get so...')
-            break;
-        }
+			text.push('The Wither Storm grows stronger once more');
+			text.push('It starts to assimilate Zombies into Withered Symbionts')
+			text.push('If you want to have a chance at killing The Beast, you must hunt them down')
+			text.push('So if you aren\'t close to The Wither Storm, you need to get so...')
+			break;
+		}
 		case 6: {
 			text.push('');
 			text.push('The Wither Storm lays dead. The Command Block is exposed, unguarded.');
