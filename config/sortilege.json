@@ -12,6 +12,7 @@
 				"minecraft:golden_pickaxe": 1,
 				"minecraft:golden_axe": 1,
 				"minecraft:golden_hoe": 1,
+				"minecraft:golden_shovel": 1,
 				"minecraft:golden_sword": 1,
 				"minecraft:golden_helmet": 1,
 				"minecraft:golden_chestplate": 1,
@@ -23,7 +24,14 @@
 				"tide:golden_fishing_rod": 1,
 				"aquamirae:coral_lance": 1,
 				"aquamirae:poisoned_chakra": 1,
-				"aquamirae:maze_rose": 1
+				"aquamirae:maze_rose": 1,
+				"mythicmetals:midas_gold_sword": 1,
+				"mythicmetals:gilded_midas_gold_sword": 2,
+				"mythicmetals:royal_midas_gold_sword": 2,
+				"mythicmetals:midas_gold_helmet": 1,
+				"mythicmetals:midas_gold_chestplate": 1,
+				"mythicmetals:midas_gold_leggings": 1,
+				"mythicmetals:midas_gold_boots": 1
 			},
 			"always_show_limit": true,
 			"limitite": {

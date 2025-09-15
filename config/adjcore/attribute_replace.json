@@ -37,6 +37,11 @@
 			"add": [
 				"minecraft:generic.movement_speed;1;-0.15;MAINHAND"
 			]
+		},
+		"supplementaries:rope": {
+			"add": [
+				"forge:block_reach;0;3;MAINHAND"
+			]
 		}
 	}
 }

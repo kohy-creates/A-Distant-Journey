@@ -16,14 +16,14 @@ LootJS.modifiers((event) => {
 			.limitCount([1, 3])
 			.applyLootingBonus([0, 1]);
 	}
-	event.addLootTableModifier('minecraft:entities/wither_skeleton')
+	event.addEntityLootModifier('minecraft:wither_skeleton')
 		.removeLoot('minecraft:wither_skeleton_skull')
 		.pool(skullFragmentDrop);
-	event.addLootTableModifier('netherdepthsupgrade:entities/wither_bonefish')
+	event.addEntityLootModifier('netherdepthsupgrade:wither_bonefish')
 		.removeLoot('minecraft:wither_skeleton_skull')
 		.pool(skullFragmentDrop);
 
-	event.addLootTableModifier('minecraft:entities/zombie')
+	event.addEntityLootModifier('minecraft:zombie')
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.randomChanceWithLooting(0.5, 0.25)
@@ -32,14 +32,14 @@ LootJS.modifiers((event) => {
 				.applyLootingBonus([0, 1]);
 		});
 
-	event.addLootTableModifier('minecraft:entities/skeleton')
+	event.addEntityLootModifier('minecraft:skeleton')
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.randomChanceWithLooting(0.05, 0.05)
 				.addLoot(LootEntry.of('minecraft:skeleton_skull'));
 		});
 
-	event.addLootTableModifier('alexsmobs:entities/hammerhead_shark')
+	event.addEntityLootModifier('alexsmobs:hammerhead_shark')
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.randomChanceWithLooting(0.9, 0.1)
@@ -48,7 +48,7 @@ LootJS.modifiers((event) => {
 				.applyLootingBonus([0, 1]);
 		});
 
-	event.addLootTableModifier('alexsmobs:entities/frilled_shark')
+	event.addEntityLootModifier('alexsmobs:frilled_shark')
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.randomChanceWithLooting(0.5, 0.1)
@@ -57,7 +57,7 @@ LootJS.modifiers((event) => {
 				.applyLootingBonus([0, 1]);
 		});
 
-	event.addLootTableModifier('born_in_chaos_v1:entities/corpse_fish')
+	event.addEntityLootModifier('born_in_chaos_v1:corpse_fish')
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.randomChanceWithLooting(0.1, 0.05)
@@ -66,7 +66,7 @@ LootJS.modifiers((event) => {
 				.applyLootingBonus([0, 1]);
 		});
 
-	event.addLootTableModifier('born_in_chaos_v1:entities/glutton_fish')
+	event.addEntityLootModifier('born_in_chaos_v1:glutton_fish')
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.randomChanceWithLooting(0.333, 0.05)
@@ -78,31 +78,4 @@ LootJS.modifiers((event) => {
 	event.addEntityLootModifier('ars_nouveau:wilden_boss')
 		.removeLoot('ars_nouveau:wilden_tribute')
 
-	// global.quarkVerticalSlabs.forEach(slab => {
-	// 	const lootTable = `quark:blocks/${slab.split(':')[1]}`
-
-	// 	event.addLootTableModifier(lootTable)
-	// 		.removeLoot(slab)
-	// 		.pool((pool) => {
-	// 			let slabID = slab.replace('_vertical', '');
-	// 			if (!Item.exists(slabID)) slabID = `minecraft:${slab.split(':')[1].replace('vertical_', '')}`
-
-	// 			pool.rolls(1);
-	// 			pool.addLoot(LootEntry.of(slabID))
-	// 			pool.simulateExplosionDecay();
-	// 			pool.customFunction({
-	// 				"function": "minecraft:set_count",
-	// 				"conditions": [
-	// 					{
-	// 						"condition": "minecraft:block_state_property",
-	// 						"block": slab,
-	// 						"properties": {
-	// 							"type": "double"
-	// 						}
-	// 					}
-	// 				],
-	// 				"count": 2
-	// 			})
-	// 		})
-	// })
 });

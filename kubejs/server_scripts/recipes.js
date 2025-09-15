@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
 
-	/** @type {InputItem_}*/
+	/** @type {Internal.InputItem_}*/
 	const disabledItemRecipes = [
 		global.rediscoveredFurniture,
 		'naturescompass:naturescompass',
@@ -28,7 +28,6 @@ ServerEvents.recipes((event) => {
 		'witherstormmod:super_beacon',
 		'witherstormmod:super_support_beacon',
 		'map_atlases:atlas',
-		'dustydecorations:rope',
 		'supplementaries:rope',
 
 		'ars_nouveau:arcanist_boots',
@@ -41,7 +40,11 @@ ServerEvents.recipes((event) => {
 		/ars_elemental:.*_leggings/,
 		/ars_elemental:.*_hat/,
 
-		'ars_nouveau:worn_notebook'
+		'ars_nouveau:worn_notebook',
+		'quark:pipe',
+		'quark:encased_pipe',
+
+		'@functionalstorage'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -90,6 +93,11 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:efficiency_5',
 		'ars_nouveau:power_4',
 		'ars_nouveau:power_5',
+
+		'create:mixing/andesite_alloy',
+		'create:mixing/andesite_alloy_from_zinc',
+		'create:crafting/materials/andesite_alloy',
+		'create:crafting/materials/andesite_alloy_from_zinc'
 
 		///alloy_forgery\:compat\//
 	]
@@ -146,24 +154,24 @@ ServerEvents.recipes((event) => {
 	)
 
 	// Large Soul Candle
-	event.shaped(
-		Item.of('netherexp:soul_candle'),
-		[
-			'C',
-			'S'
-		],
-		{
-			C: 'buzzier_bees:soul_candle',
-			S: '#minecraft:soul_fire_base_blocks'
-		}
-	)
-	event.shapeless(
-		Item.of('netherexp:soul_skeleton_skull_candle'),
-		[
-			'buzzier_bees:soul_candle',
-			'skeleton_skull'
-		]
-	)
+	// event.shaped(
+	// 	Item.of('netherexp:soul_candle'),
+	// 	[
+	// 		'C',
+	// 		'S'
+	// 	],
+	// 	{
+	// 		C: 'buzzier_bees:soul_candle',
+	// 		S: '#minecraft:soul_fire_base_blocks'
+	// 	}
+	// )
+	// event.shapeless(
+	// 	Item.of('netherexp:soul_skeleton_skull_candle'),
+	// 	[
+	// 		'buzzier_bees:soul_candle',
+	// 		'skeleton_skull'
+	// 	]
+	// )
 
 	event.recipes.botania.mana_infusion('naturescompass:naturescompass', 'minecraft:compass').mana(100000)
 
@@ -171,8 +179,8 @@ ServerEvents.recipes((event) => {
 	 * Registers a BotanicAdds Gaia Plate recipe
 	 *
 	 * @param {Internal.RecipesEventJS} event
-	 * @param {InputItem_[]} inputs - List of items or tags (prefix with # for tags)
-	 * @param {OutputItem_} output - The resulting item ID
+	 * @param {Internal.InputItem_[]} inputs - List of items or tags (prefix with # for tags)
+	 * @param {Internal.OutputItem_} output - The resulting item ID
 	 * @param {number} mana - Mana cost
 	 */
 	function gaiaPlateRecipe(inputs, output, mana) {
@@ -436,8 +444,8 @@ ServerEvents.recipes((event) => {
 
 	// Furnaces require a piece of Coal
 	/**
-	 * @param {InputItem_} material 
-	 * @param {OutputItem_} outputItem 
+	 * @param {Internal.InputItem_} material 
+	 * @param {Internal.OutputItem_} outputItem 
 	 */
 	function furnaceRecipe(material, outputItem) {
 		event.remove({ output: outputItem });
@@ -485,10 +493,10 @@ ServerEvents.recipes((event) => {
 	event.forEachRecipe({ type: 'minecraft:crafting_shaped' }, consumer)
 
 	/**
-	 * @param {OutputItem_} outputItem 
-	 * @param {InputItem_} input1 
-	 * @param {InputItem_} input2 
-	 * @param {InputItem_} center 
+	 * @param {Internal.OutputItem_} outputItem 
+	 * @param {Internal.InputItem_} input1 
+	 * @param {Internal.InputItem_} input2 
+	 * @param {Internal.InputItem_} center 
 	 */
 	// Some templates can also be crafted normally
 	function templateRecipe(outputItem, input1, input2, center) {
@@ -573,9 +581,9 @@ ServerEvents.recipes((event) => {
 	// Lychee
 	// Item in block
 	/**
-	 * @param {InputItem_} item 
+	 * @param {Internal.InputItem_} item 
 	 * @param {Internal.Block_} block 
-	 * @param {OutputItem_} output 
+	 * @param {Internal.OutputItem_} output 
 	 */
 	function lycheeItemInBlock(item, block, output) {
 		event.custom({
@@ -928,6 +936,11 @@ ServerEvents.recipes((event) => {
 		}
 	)
 
+	event.replaceInput({ input: 'mcdw:item_bee_stinger'},
+		'mcdw:item_bee_stinger',
+		'the_bumblezone:bee_stinger'
+	)
+
 	// Unify ropes
 	// event.replaceInput(
 	// 	{ input: 'dustydecorations:rope' },
@@ -1143,7 +1156,7 @@ ServerEvents.recipes((event) => {
 	event.shapeless(
 		'waystones:warp_dust',
 		[
-			Item.of('wormhole_artifact:ender_nacre'),
+			Item.of('ender_pearl'),
 			Item.of('spelunker:amethyst_dust')
 		]
 	)
@@ -1770,7 +1783,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	/**
-	 * @type {Record<InputItem_, InputItem_>}
+	 * @type {Record<InputItem_, Internal.InputItem_>}
 	 */
 	const runiteToArcanist = {
 		'mythicmetals:runite_helmet': 'ars_nouveau:arcanist_hood',
@@ -1870,7 +1883,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {string} element 
-	 * @param {InputItem_} essence 
+	 * @param {Internal.InputItem_} essence 
 	 */
 	function elementalUpgradeRecipe(element, essence) {
 		let armorPieces = [
@@ -1934,7 +1947,7 @@ ServerEvents.recipes((event) => {
 	// Glyphs rework
 
 	/**
-	 * @type {Record<OutputItem_, InputItem_[]}
+	 * @type {Record<Internal.OutputItem_, Internal.InputItem_[]}
 	 */
 	const glyphsMap = {
 		'ars_nouveau:glyph_amplify': [
@@ -2192,7 +2205,7 @@ ServerEvents.recipes((event) => {
 
 	// Chainmail recipes
 	/**
-	 * @param {OutputItem_} output 
+	 * @param {Internal.OutputItem_} output 
 	 * @param {*} shape 
 	 */
 	function chainmailRecipe(output, shape) {
@@ -2318,7 +2331,7 @@ ServerEvents.recipes((event) => {
 	)
 
 	/**
-	 * @type {InputItem_[]}
+	 * @type {Internal.InputItem_[]}
 	 */
 	const nuggetsBlacklist = [
 		'create:experience_nugget',
@@ -2403,4 +2416,206 @@ ServerEvents.recipes((event) => {
 		],
 		"source": 2000
 	})
+
+	// Quark Pipes
+	event.shaped(
+		Item.of('quark:pipe', 12),
+		[
+			'I',
+			'G',
+			'I'
+		],
+		{
+			I: 'create:brass_ingot',
+			G: '#forge:glass'
+		}
+	)
+
+	event.shapeless(
+		Item.of('quark:encased_pipe'),
+		[
+			'quark:pipe',
+			'#forge:glass'
+		]
+	)
+	event.shapeless(
+		Item.of('quark:pipe'),
+		[
+			'quark:encased_pipe'
+		]
+	)
+
+	// Cheaper Andesite Alloy
+	/**
+	 * @type {Internal.InputItem_}
+	 */
+	const alloyNuggets = [
+		'minecraft:iron_nugget',
+		'create:zinc_nugget'
+	]
+	alloyNuggets.forEach(nugget => {
+		event.shaped(
+			Item.of('create:andesite_alloy', 2),
+			[
+				'NA',
+				'AN'
+			],
+			{
+				N: nugget,
+				A: 'andesite'
+			}
+		)
+		event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), ['andesite', nugget])
+	})
+
+	// FunctionalStorage
+	event.shaped(
+		Item.of('functionalstorage:oak_1'),
+		[
+			'AAA',
+			' V ',
+			'AAA'
+		],
+		{
+			A: 'create:andesite_casing',
+			V: 'create:item_vault'
+		}
+	)
+	event.shaped(
+		Item.of('functionalstorage:oak_2', 2),
+		[
+			'AVA',
+			'AAA',
+			'AVA'
+		],
+		{
+			A: 'create:andesite_casing',
+			V: 'create:item_vault'
+		}
+	)
+	event.shaped(
+		Item.of('functionalstorage:oak_4', 4),
+		[
+			'VAV',
+			'AAA',
+			'VAV'
+		],
+		{
+			A: 'create:andesite_casing',
+			V: 'create:item_vault'
+		}
+	)
+
+	event.shaped(
+		Item.of('functionalstorage:compacting_drawer', 1),
+		[
+			'RBR',
+			'CVC',
+			'RBR'
+		],
+		{
+			R: 'redstone',
+			C: 'create:cogwheel',
+			V: 'create:item_vault',
+			B: 'create:brass_casing'
+		}
+	)
+	event.shaped(
+		Item.of('functionalstorage:storage_controller', 1),
+		[
+			'D',
+			'B',
+			'V'
+		],
+		{
+			D: 'create:electron_tube',
+			V: 'create:item_vault',
+			B: 'create:brass_casing'
+		}
+	)
+	event.shaped(
+		Item.of('functionalstorage:controller_extension', 1),
+		[
+			'D',
+			'B',
+			'V'
+		],
+		{
+			D: 'create:redstone_link',
+			V: 'create:item_vault',
+			B: 'create:brass_casing'
+		}
+	)
+	event.shaped(
+		Item.of('functionalstorage:linking_tool', 1),
+		[
+			' E ',
+			'SVS'
+		],
+		{
+			E: 'create:electron_tube',
+			V: 'create:item_vault',
+			S: 'create:iron_sheet'
+		}
+	)
+	event.shaped(
+		Item.of('functionalstorage:configuration_tool', 1),
+		[
+			' E ',
+			'SVS'
+		],
+		{
+			E: 'create:electron_tube',
+			V: 'minecraft:emerald',
+			S: 'create:iron_sheet'
+		}
+	)
+	event.recipes.create.sequenced_assembly([
+		Item.of('functionalstorage:copper_upgrade')
+	], 'create:copper_sheet', [
+		event.recipes.create.deploying('create:copper_sheet', ['create:copper_sheet', 'create:zinc_block']),
+		event.recipes.create.deploying('create:copper_sheet', ['create:copper_sheet', 'create:brass_ingot']),
+		event.recipes.create.deploying('create:copper_sheet', ['create:copper_sheet', 'botania:rune_greed']),
+		event.recipes.create.filling(inter, [inter, Fluid.of('minecraft:lava', 1000)]),
+	]).transitionalItem('create:copper_sheet').loops(2)
+
+	/**
+	 * @param {Internal.InputItem_} input 
+	 * @param {Internal.OutputItem_} result 
+	 */
+	function FSUpgradeRecipe(input, result) {
+		event.recipes.create.sequenced_assembly([
+			result
+		], 'create:iron_sheet', [
+			event.recipes.create.deploying('create:iron_sheet', ['create:iron_sheet', 'create:zinc_block']),
+			event.recipes.create.deploying('create:iron_sheet', ['create:iron_sheet', 'create:brass_ingot']),
+			event.recipes.create.deploying('create:iron_sheet', ['create:iron_sheet', input]),
+			event.recipes.create.filling(inter, [inter, Fluid.of('minecraft:lava', 250)]),
+		]).transitionalItem('create:iron_sheet').loops(2)
+	}
+	FSUpgradeRecipe('alexscaves:scarlet_neodymium_ingot', 'functionalstorage:collector_upgrade')
+	FSUpgradeRecipe('alexscaves:azure_neodymium_ingot', 'functionalstorage:collector_upgrade')
+	FSUpgradeRecipe('botania:piston_relay', 'functionalstorage:pusher_upgrade')
+	FSUpgradeRecipe('hopper', 'functionalstorage:puller_upgrade')
+	FSUpgradeRecipe('redstone_block', 'functionalstorage:redstone_upgrade')
+
+	gaiaPlateRecipe([
+		'botanicadds:rune_tp',
+		'obsidian',
+		'obsidian',
+		'obsidian',
+		'obsidian',
+		'ender_eye',
+		'create:item_vault',
+		'botania:corporea_spark'
+	], 'functionalstorage:ender_drawer', 200000)
+
+	gaiaPlateRecipe([
+		'botania:rune_gluttony',
+		'ender_eye',
+		'obsidian',
+		'obsidian',
+		'obsidian',
+		'create:iron_sheet'
+	], 'functionalstorage:void_upgrade', 50000)
 });

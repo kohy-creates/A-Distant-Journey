@@ -8,7 +8,7 @@ pack_id = ""
 #Set this to false to disable pack config screen and enable user configs instead.
 #This should always be done by the pack author once they are done with configuring the pack.
 #To re-enable Pack Edit Mode, please edit the config file.
-pack_edit_mode = true
+pack_edit_mode = false
 
 [modules]
 
@@ -20,7 +20,7 @@ pack_edit_mode = true
 			#The title to display at the top of the entry.
 			title = "Need a server?"
 			#The description to display below the title.
-			description = "Click me to create your own server!"
+			description = "Click here to create your own server with BisectHosting!"
 			#Set this to true to use specific language translation keys.
 			#This requires a custom mod that adds resource files, such as OpenLoader.
 			#Use 'server_entry.title' key for the Title;

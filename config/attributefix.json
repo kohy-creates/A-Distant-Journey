@@ -363,6 +363,17 @@
         "value": 128
       }
     },
+    "mcdw:reach": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "reach-entity-attributes:reach": {
       "enabled": false,
       "min": {
@@ -680,6 +691,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "mcdw:attack_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "attributeslib:healing_received": {

@@ -521,10 +521,6 @@
 			driftwood = true
 			river = true
 
-		[types.cut_block_type.buzzier_bees]
-			honeycomb_brick = true
-			honeycomb_tile = true
-
 		[types.cut_block_type.alexscaves]
 			galena = true
 			galena_brick = true
@@ -653,7 +649,7 @@
 			window = true
 
 		[entries.wood_type.backpacked]
-			backpack_shelf = false
+			backpack_shelf = true
 
 		[entries.wood_type.handcrafted]
 			counter = true
@@ -684,8 +680,8 @@
 			vertical_slab = true
 
 		[entries.wood_type.rediscovered]
-			chair = false
-			table = false
+			chair = true
+			table = true
 
 		[entries.wood_type.hearth_and_home]
 			lattice = true
@@ -693,6 +689,11 @@
 			vertical_trim = true
 			trim = true
 			sanded_wood = true
+
+		[entries.wood_type.functionalstorage]
+			1 = true
+			4 = true
+			2 = true
 
 	[entries.leaves_type]
 

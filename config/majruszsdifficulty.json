@@ -182,10 +182,10 @@
       "chance": {
         "__default": 0.0,
         "chapter_1": 0.05,
-        "chapter_2": 0.1,
-        "chapter_3": 0.2,
-        "chapter_4": 0.33,
-        "chapter_5": 0.5
+        "chapter_2": 0.05,
+        "chapter_3": 0.05,
+        "chapter_4": 0.1,
+        "chapter_5": 0.1
       },
       "blacklisted_items": [
         "minecraft:nether_star",
@@ -214,11 +214,11 @@
       "is_enabled": true,
       "extra_multiplier": {
         "__default": 0.0,
-        "chapter_1": 0.1,
-        "chapter_2": 0.25,
-        "chapter_3": 0.5,
-        "chapter_4": 0.75,
-        "chapter_5": 1.0
+        "chapter_1": 0.0,
+        "chapter_2": 0.1,
+        "chapter_3": 0.25,
+        "chapter_4": 0.25,
+        "chapter_5": 0.5
       }
     },
     "jockey_spawn": {

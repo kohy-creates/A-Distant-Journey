@@ -96,3 +96,7 @@ win_event*.txt
 impossible_data/
 enigmatic_persistence.dat
 /config/showmeyourskin.json
+.probe/*
+!.probe/probe-settings.json
+jsconfig.json
+spyglass.json

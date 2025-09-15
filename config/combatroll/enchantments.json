@@ -1,22 +1,22 @@
 {
   "longfooted": {
     "enabled": true,
-    "max_level": 4,
-    "min_cost": 12,
-    "step_cost": 12,
-    "bonus_per_level": 1.0
+    "max_level": 3,
+    "min_cost": 17,
+    "step_cost": 13,
+    "bonus_per_level": 0.5
   },
   "acrobat": {
     "enabled": true,
-    "max_level": 5,
-    "min_cost": 15,
-    "step_cost": 14,
+    "max_level": 3,
+    "min_cost": 20,
+    "step_cost": 16,
     "bonus_per_level": 0.1
   },
   "multi_roll": {
     "enabled": true,
-    "max_level": 3,
-    "min_cost": 15,
+    "max_level": 1,
+    "min_cost": 25,
     "step_cost": 17,
     "bonus_per_level": 1.0
   }

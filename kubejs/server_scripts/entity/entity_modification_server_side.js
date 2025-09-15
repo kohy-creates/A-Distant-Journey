@@ -2,11 +2,10 @@ const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
 const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes")
 
 const chapterMultipliers = {
-	hp: [1.0, 1.05, 1.1, 2.6, 2.6, 3.2],
-	damage: [1.0, 1.05, 1.1, 1.8, 1.8, 2.3],
-	armor: [1.0, 1.0, 1.0, 2.0, 2.0, 2.75]
+	hp: [1.0, 1.05, 1.1, 2.0, 2.0, 3.2],
+	damage: [1.0, 1.05, 1.2, 1.9, 1.9, 2.6],
+	armor: [1.0, 1.0, 1.05, 2.2, 2.2, 2.75]
 }
-
 
 // ---------------- HELPERS ---------------- //
 function getStageValue(arr, stage) {
@@ -82,11 +81,40 @@ function weightedRandom(weightMap) {
  * @param {Internal.Entity_} entity 
  */
 function specialCase(entity) {
+	// switch (entity.type) {
+	// 	case 'quark:glass_frame':
+	// 	case 'quark:dyed_item_frame': {
+	// 		entity.kill()
+	// 		break
+	// 	}
+	// }
+}
+
+/**
+ * 
+ * @param {Internal.Entity_} entity 
+ */
+function setGear(entity) {
 	switch (entity.type) {
-		case 'quark:glass_frame':
-		case 'quark:dyed_item_frame': {
-			entity.kill()
+		case 'minecraft:wither_skeleton': {
+			entity.setItemSlot("mainhand", "golden_sword")
 			break
+		}
+		case 'minecraft:husk':
+		case 'minecraft:zombie': {
+			entity.setItemSlot("mainhand", weightedRandom({
+				'minecraft:air': 44,
+				'mythicmetals:copper_axe': 1,
+				'mythicmetals:copper_shovel': 2,
+				'mythicmetals:copper_hoe': 2,
+				'mythicmetals:copper_sword': 1
+			}));
+
+			if (entity.type == 'minecraft:husk') {
+				if (Math.random <= 0.02) {
+					entity.setItemSlot("head", 'alexsmobs:sombrero')
+				}
+			}
 		}
 	}
 }
@@ -99,7 +127,7 @@ function hardcoreModifications(entity) {
 	switch (entity.type) {
 		case 'minecraft:wither_skeleton': {
 			entity.setItemSlot("mainhand", "golden_sword")
-			if (Math.random() <= 0.1) {
+			if (Math.random() <= 0.15) {
 				entity.setItemSlot("mainhand", "mythicmetals:midas_gold_sword")
 				entity.setItemSlot("head", "mythicmetals:midas_gold_helmet")
 			}
@@ -129,6 +157,7 @@ EntityEvents.spawned((event) => {
 	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""))
 
 	scaleEntity(entity, currentStage)
+	setGear(entity)
 	if (isHardcore) {
 		hardcoreModifications(entity)
 	};

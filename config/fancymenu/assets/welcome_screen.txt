@@ -20,12 +20,12 @@ Your goal is simple - **collect 7 Eyes scattered across the world** and fuse the
 However, your adventure is going to be long and very demanding - you will have to travel through many different dimensions, build various magical contraptions and machinery and slay the most wretched of the Prism's creations. Hence the modpack's name - it's indeed going to be *a distant journey*...
 
 ^^^
-### %!!title%%#bfbfbf%ADVANCEMENTS%#%%!!%
+### %!!title%%#bfbfbf%ACHIEVEMENTS%#%%!!%
 ---
 ^^^
 
-Advancements were redesigned to guide you throughout the pack, so check them whenever you are unsure on what to do next.
-You can open the advancements menu from your Inventory, or by pressing its default keybind (more on that in the `Controls` sction).
+Say hello to Achievements! Bringing them back from their grave that was update 1.12, they were designed to guide you throughout the pack, so check them whenever you are unsure on what to do next.
+You can open the achievements menu from your Inventory, or by pressing its default keybind (more on that in the `Controls` sction).
 
 **All Eyes are listed there as well as how to obtain them!**
 
@@ -34,8 +34,8 @@ You can open the advancements menu from your Inventory, or by pressing its defau
 ---
 ^^^
 
-**`L`** - default advancements menu keybind
-**`R`** - roll
+**`L`** - default achievements menu keybind
+**`R`** - combat dash *(if you have gear that grants one)*
 **`F`** - hide first person player model
 **`V`** - voice chat menu
 **`M`** - holding it down opens the Player Menu

@@ -1,76 +1,9 @@
 {
 	// Generates all block states for all blocks in the registry.
-	"generate_all_known_states": false,
+	"generate_all_known_states": true,
 	// Whether blocks are replaced in existing chunks.
 	"retro_gen": false,
-	"state_swapper": [
-		{	
-			"new": {
-				"Name": "adjblocks:cattail",
-				"Properties": {
-					"half": "upper",
-					"waterlogged": "true"
-				}
-			},
-			"old": {
-				"Name": "verdantvibes:cattails",
-				"Properties": {
-					"half": "upper",
-					"waterlogged": "true"
-				}
-			}
-		},
-		{	
-			"new": {
-				"Name": "adjblocks:cattail",
-				"Properties": {
-					"half": "lower",
-					"waterlogged": "true"
-				}
-			},
-			"old": {
-				"Name": "verdantvibes:cattails",
-				"Properties": {
-					"half": "lower",
-					"waterlogged": "true"
-				}
-			}
-		},
-
-		{	
-			"new": {
-				"Name": "adjblocks:cattail",
-				"Properties": {
-					"half": "upper",
-					"waterlogged": "false"
-				}
-			},
-			"old": {
-				"Name": "verdantvibes:cattails",
-				"Properties": {
-					"half": "upper",
-					"waterlogged": "false"
-				}
-			}
-		},
-		{	
-			"new": {
-				"Name": "adjblocks:cattail",
-				"Properties": {
-					"half": "lower",
-					"waterlogged": "false"
-				}
-			},
-			"old": {
-				"Name": "verdantvibes:cattails",
-				"Properties": {
-					"half": "lower",
-					"waterlogged": "false"
-				}
-			}
-		},
-
-	],
+	"state_swapper": [],
 	"swapper": {
 		"minecraft:enchanting_table": "enchantinginfuser:enchanting_infuser",
 		"unusualend:infested_end_stone": "majruszsdifficulty:infested_end_stone",

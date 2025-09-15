@@ -3775,6 +3775,33 @@ const itemsToTooltip = [
 				]
 			}
 		]
+	},
+	{
+		item: [
+			'transmog:transmogrification_table'
+		],
+		summary: [
+			'Allows for _disguising items as different ones_',
+			'Transmogrification only changes their appearance',
+			'and doesn\'t impact their stats in any way',
+			'Works on _every item, including armor_',
+			'Uses _Amethyst Shards_ as _fuel_'
+		],
+		controls: [
+			{
+				control: 'When fueled',
+				text: [
+					'Uses the _second input_ as target appearance',
+					'for the _first input item_'
+				]
+			},
+			{
+				control: 'When Void Fragment is used as target',
+				text: [
+					'Makes the item visually disappear'
+				]
+			}
+		]
 	}
 
 ];

@@ -45,7 +45,7 @@
 				}
 			]
 			title: "Simple Storage System"
-			x: 1.5d
+			x: -2.5d
 			y: 1.0d
 		}
 		{
@@ -81,8 +81,8 @@
 				type: "item"
 			}]
 			title: "Cloud Storage"
-			x: -2.5d
-			y: 0.5d
+			x: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0B9481F02CACCE1D"]
@@ -96,8 +96,8 @@
 				type: "item"
 			}]
 			title: "Extra Features"
-			x: 3.0d
-			y: 1.0d
+			x: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6A911AFF4185ED0D"]
@@ -113,7 +113,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["6A911AFF4185ED0D"]
+			dependencies: ["5BE98BA6A0B68228"]
 			id: "5AD11F2BB6466384"
 			subtitle: "Craft a Shared Ender Chest. You can set its channel with Dyes"
 			tasks: [{
@@ -122,8 +122,8 @@
 				type: "item"
 			}]
 			title: "Shared Folder"
-			x: -2.5d
-			y: 1.5d
+			x: 1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6A911AFF4185ED0D"]
@@ -135,11 +135,11 @@
 				type: "item"
 			}]
 			title: "Not Only Items!"
-			x: -1.0d
+			x: -0.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["6A911AFF4185ED0D"]
+			dependencies: ["7EDDEFE957513B50"]
 			id: "59124904F1A83FE8"
 			subtitle: "Craft an Ender Tank. You can set its channel with Dyes"
 			tasks: [{
@@ -148,8 +148,222 @@
 				type: "item"
 			}]
 			title: "Open Source"
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["67FFFFBD84B01AD3"]
+			id: "169D3B18A90CC7ED"
+			subtitle: "Craft a Storage Drawer. They can hold up to 32 stacks of a single item type"
+			tasks: [{
+				id: "6FC36E60FBEAC2DC"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			title: "Hoarder"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["169D3B18A90CC7ED"]
+			id: "7748B4620625A726"
+			subtitle: "Craft a Drawer Upgrade that increases capacity"
+			tasks: [{
+				id: "7979438E4E9F6923"
+				item: "functionalstorage:copper_upgrade"
+				type: "item"
+			}]
+			title: "Higher Capacity"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"67FFFFBD84B01AD3"
+				"169D3B18A90CC7ED"
+			]
+			icon: "functionalstorage:storage_controller"
+			id: "04E13C2B49FB154D"
+			subtitle: "Craft a Storage Controller. You can connect Storage Drawers to it to form a network"
+			tasks: [
+				{
+					id: "5A16F53D27993CFE"
+					item: "functionalstorage:storage_controller"
+					type: "item"
+				}
+				{
+					id: "63EEA39F2EE906DF"
+					item: {
+						Count: 1
+						id: "functionalstorage:linking_tool"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "In Control"
 			x: 0.0d
-			y: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["169D3B18A90CC7ED"]
+			id: "68BBB1D5801123E8"
+			subtitle: "Craft a Void Drawer Upgrade to prevent overfills"
+			tasks: [{
+				id: "321B87CA2B8A9ECA"
+				item: "functionalstorage:void_upgrade"
+				type: "item"
+			}]
+			title: "Strange Tale of Avarice"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6A911AFF4185ED0D"]
+			description: ["&7&lHINT:&r Flax only grows around &9Water&r, but relatively commonly, so look for it near &bLakes&r or &bRivers&r."]
+			icon: "supplementaries:sack"
+			id: "31907725CE8ED75D"
+			subtitle: "Collect some Flax and turn it into a Sack"
+			tasks: [
+				{
+					id: "491F736A5088D90C"
+					item: "supplementaries:sack"
+					type: "item"
+				}
+				{
+					id: "18A4F1FF4A949E5B"
+					item: "supplementaries:flax"
+					type: "item"
+				}
+			]
+			title: "Bundles of Bravery"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6A911AFF4185ED0D"]
+			icon: "ironchest:copper_chest"
+			id: "6E33A0786596E0A5"
+			min_required_tasks: 1
+			subtitle: "Upgrade your plain, boring chest to a Copper Chest"
+			tasks: [
+				{
+					id: "431F231CA6BA31C8"
+					item: "ironchest:copper_chest"
+					type: "item"
+				}
+				{
+					id: "01CC730EF8EEBC22"
+					item: "ironchest:wood_to_copper_chest_upgrade"
+					type: "item"
+				}
+			]
+			title: "Iron Chests"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E33A0786596E0A5"]
+			icon: "ironchest:diamond_chest"
+			id: "71B1D2F0C5652D22"
+			subtitle: "Upgrade your chest to a Diamond Chest. It's the biggest it can get"
+			tasks: [
+				{
+					id: "195243F9D7C943DF"
+					item: "ironchest:diamond_chest"
+					type: "item"
+				}
+				{
+					id: "0A5874488A64D18D"
+					item: "ironchest:gold_to_diamond_chest_upgrade"
+					type: "item"
+				}
+			]
+			title: "Superspacious"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6A911AFF4185ED0D"]
+			id: "72165200201BE4B0"
+			subtitle: "Craft some Brass Item Pipes. You can use it to, well, transport items"
+			tasks: [{
+				id: "43137006AF5473E4"
+				item: "quark:pipe"
+				type: "item"
+			}]
+			title: "Piper's Dream"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B9481F02CACCE1D"]
+			description: [
+				"&7&lHINT:&r By default it has a range of &e64 blocks&r, but if you build a powered &bBeacon&r next to your terminal, its range will be expanded to span through &ethe entire dimension your storage is in&r!"
+				""
+				"If you build a &bmax level Beacon&r, then the range spans across all dimensions."
+			]
+			id: "1B63B128270724DC"
+			subtitle: "Craft an Advanced Wireless Terminal"
+			tasks: [{
+				id: "404DFEBD2B9B0D2F"
+				item: "toms_storage:ts.adv_wireless_terminal"
+				type: "item"
+			}]
+			title: "Wireless Device Patriot"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6A911AFF4185ED0D"]
+			description: ["&7&lHINT: &rHopperhocks &edon't require Botanical Energy to function&r! However, if you provide a constant supply then it's range will be more than doubled."]
+			id: "5F2D087B979A8FFE"
+			subtitle: "Craft a Hopperhock. It puts nearby dropped items into an adjacent Chest"
+			tasks: [{
+				id: "659CE6493949CD3B"
+				item: "botania:hopperhock"
+				type: "item"
+			}]
+			title: "Item Vacuum"
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5F2D087B979A8FFE"]
+			description: [
+				"&7&lHINT:&r I'll be honest, Lexica Botania is a bit confusing on how this works. I'm going to give you a short example to get you started with tinkering!"
+				""
+				"1. &ePlace a &lMaster&r &eCorporea Spark&r on top of &eany nearby inventory block&r (Chest/Barrel/etc.). This is going to kind of our '&dCorporea Central&r'."
+				"&7&oDon't place anything inside that inventory. The network cannot access its content. It's literally just an anchor for everything."
+				"2. &ePlace a Corporea Spark&r on &eany nearby inventory block&r."
+				"3. &ePlace down a Corporea Index&r and place another Corporea Spark on top of it."
+				"4. Approach the Index and &esay in chat what you want that is in the network's inventory&r, e.g '5 dirt'."
+				"{@pagebreak}"
+				"&7&lHINT 2:&rPlacing a Corporea Spark on top of an &6Inventory Connector&r allows the network to access &eevery connected chest&r, so it's extra powerful!"
+			]
+			icon: "botania:corporea_spark_master"
+			id: "24C0C6AFE73F1784"
+			subtitle: "Create a very simple Corporea Network"
+			tasks: [
+				{
+					id: "2244155CF1F19BC7"
+					item: "botania:corporea_spark"
+					type: "item"
+				}
+				{
+					id: "2CAAB1D253C9B4C9"
+					item: "botania:corporea_spark_master"
+					type: "item"
+				}
+				{
+					id: "49891B0CABA3E25F"
+					item: "botania:corporea_index"
+					type: "item"
+				}
+			]
+			title: "Corporeal (But In The Storage Tab)"
+			x: -3.0d
+			y: 3.5d
 		}
 	]
 	title: "Storage Management"

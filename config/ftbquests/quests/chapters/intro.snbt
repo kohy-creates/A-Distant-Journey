@@ -157,7 +157,7 @@
 				title: "Click to complete"
 				type: "checkmark"
 			}]
-			title: "&lMultiplayer:&r &dParties"
+			title: "&l&fMultiplayer:&r &dParties"
 			x: -1.5d
 			y: -4.5d
 		}
@@ -183,7 +183,7 @@
 				title: "Click to complete"
 				type: "checkmark"
 			}]
-			title: "&lBasics:&r &aProgression"
+			title: "&l&fBasics:&r &aProgression"
 			x: -2.0d
 			y: -2.5d
 		}
@@ -205,7 +205,7 @@
 				title: "Click to complete"
 				type: "checkmark"
 			}]
-			title: "&lBasics:&r &cDifficulty"
+			title: "&l&fBasics:&r &cDifficulty"
 			x: -3.0d
 			y: -2.5d
 		}
@@ -251,7 +251,7 @@
 				title: "Click to finish"
 				type: "checkmark"
 			}]
-			title: "&lBasics:&r &cCombat"
+			title: "&l&fBasics:&r &cCombat"
 			x: -1.5d
 			y: -1.5d
 		}
@@ -298,7 +298,7 @@
 				}
 				type: "item"
 			}]
-			title: "&lTutorial:&r &6Quick Travel"
+			title: "&l&fTutorial:&r &6Quick Travel"
 			x: 1.5d
 			y: -4.5d
 		}
@@ -325,7 +325,7 @@
 					type: "item"
 				}
 			]
-			title: "&lTutorial:&r &6Storage"
+			title: "&l&fTutorial:&r &6Storage"
 			x: 2.0d
 			y: -3.5d
 		}
@@ -376,7 +376,7 @@
 					type: "item"
 				}
 			]
-			title: "&lTutorial:&r &eStaying oriented"
+			title: "&l&fTutorial:&r &eStaying oriented"
 			x: 1.5d
 			y: -1.5d
 		}

@@ -3,6 +3,8 @@ const STAGE_TO_SET = 'next_stage'
 
 const gamerules = {
 	'chapter_0': {
+		'reducedDebugInfo': true, // this one never changes
+
 		'artifacts.aquaDashers.enabled': false,
 		'artifacts.cloudInABottle.enabled': false,
 		'naughtinessMechanics': false,

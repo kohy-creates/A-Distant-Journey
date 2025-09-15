@@ -5,5 +5,5 @@
 	#.
 	#The time to wait before showing the next message in a list.
 	#Range: 0.0 ~ 3.4028234663852886E38
-	timeBetweenMessages = 0.25
+	timeBetweenMessages = 0.1
 

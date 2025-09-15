@@ -12,7 +12,7 @@
 	#Range: 0 ~ 10000
 	whirlisprigProgress = 250
 	#Should the Wilden Hunter attack animals?
-	hunterHuntsAnimals = false
+	hunterHuntsAnimals = true
 	#Should the Wilden Stalker attack animals?
 	stalkerHuntsAnimals = false
 	#Should the Wilden Defender attack animals?

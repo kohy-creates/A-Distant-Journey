@@ -112,7 +112,7 @@
 	"Compressed Blocks" = true
 	"Duskbound Blocks" = true
 	"Framed Glass" = true
-	"Glass Item Frame" = false
+	"Glass Item Frame" = true
 	"Gold Bars" = true
 	Grate = true
 	Hedges = false
@@ -135,7 +135,7 @@
 	"Sturdy Stone" = true
 	Thatch = false
 	"Variant Bookshelves" = true
-	"Variant Chests" = true
+	"Variant Chests" = false
 	"Variant Furnaces" = true
 	"Variant Ladders" = true
 	"Vertical Planks" = false
@@ -520,7 +520,7 @@
 	"Diamond Repair" = true
 	"Double Door Opening" = false
 	"Dragon Scales" = false
-	"Dyeable Item Frames" = false
+	"Dyeable Item Frames" = true
 	Emotes = false
 	"Enhanced Ladders" = false
 	"Glass Shard" = false
@@ -1822,7 +1822,7 @@
 
 [oddities]
 	Backpack = false
-	Crate = true
+	Crate = false
 	Magnets = true
 	"Matrix Enchanting" = false
 	Pipes = true

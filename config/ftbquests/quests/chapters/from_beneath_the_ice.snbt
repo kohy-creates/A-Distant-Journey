@@ -5,14 +5,52 @@
 	group: "4C4C64E64E42D01F"
 	icon: "aquamirae:rune_of_the_storm"
 	id: "2B34DB1EEA89290E"
-	images: [{
-		height: 1.75d
-		image: "minecraft:block/blue_ice"
-		rotation: 45.0d
-		width: 1.75d
-		x: 2.5d
-		y: -1.5d
-	}]
+	images: [
+		{
+			height: 1.75d
+			image: "minecraft:block/blue_ice"
+			rotation: 45.0d
+			width: 1.75d
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependency: "1A27ABCC4980970F"
+			height: 2.5d
+			image: "aquamirae:item/maze_rose"
+			rotation: 45.0d
+			width: 2.5d
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependency: "347EF4FA36CA9EA8"
+			height: 1.75d
+			image: "minecraft:block/ice"
+			rotation: 45.0d
+			width: 1.75d
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependency: "1A27ABCC4980970F"
+			height: 1.5d
+			image: "aquamirae:item/abyssal_amethyst"
+			rotation: 0.0d
+			width: 1.5d
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependency: "1A27ABCC4980970F"
+			height: 1.5d
+			image: "aquamirae:item/wisteria_niveis"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.0d
+			y: -3.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -107,21 +145,131 @@
 					type: "structure"
 				}
 			]
-			title: "The Legends Become Reality"
+			title: "The Myths Become Reality"
 			x: 2.5d
 			y: -1.5d
 		}
 		{
-			description: ["This page is still WIP. I started making it as a ground work for the later tasks but never got to finish it. Expect a fully polished side campaign somewhere in the future."]
-			id: "53760C631579C08D"
-			subtitle: "Click to read"
+			dependencies: ["1A27ABCC4980970F"]
+			hide_until_deps_complete: true
+			id: "2363640DE385B123"
+			subtitle: "Find an Illager Ship and retrieve a Shell Horn"
 			tasks: [{
-				id: "463A7FEB55AE42AF"
-				title: "Blind testing note"
-				type: "checkmark"
+				id: "2CEFD98D6AA544A4"
+				item: "aquamirae:shell_horn"
+				type: "item"
 			}]
-			x: -4.0d
-			y: -2.0d
+			title: "Lost Horn"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2363640DE385B123"]
+			id: "347EF4FA36CA9EA8"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Free Captain Cornelia from her curse"
+			tasks: [{
+				entity: "aquamirae:captain_cornelia"
+				icon: {
+					Count: 1
+					id: "aquamirae:remnants_saber"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "3B1F67AC2A5940E7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Captain Always Goes Down With The Ship"
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1A27ABCC4980970F"]
+			hide_until_deps_complete: true
+			id: "05C5699CFEDB13DF"
+			subtitle: "Kill some of The Maze's beasts for their fins"
+			tasks: [{
+				id: "723B7CE201FD73BB"
+				item: "aquamirae:fin"
+				type: "item"
+			}]
+			title: "Fin."
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A27ABCC4980970F"]
+			hide_until_deps_complete: true
+			icon_scale: 0.75d
+			id: "10D49964419B9689"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Kill Mother of The Maze, a huge Mantha Ray twisted by The Maze"
+			tasks: [{
+				entity: "aquamirae:maze_mother"
+				icon: "aquamirae:abyssal_amethyst"
+				id: "12C4845559EBE2DE"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Alice"
+			x: 2.5089285714285907d
+			y: 1.035714285714306d
+		}
+		{
+			dependencies: ["05C5699CFEDB13DF"]
+			id: "7AD9D2091C6E1FC0"
+			subtitle: "Cook up some Sea Stew"
+			tasks: [{
+				id: "698E3355FC4BFA52"
+				item: "aquamirae:sea_stew"
+				type: "item"
+			}]
+			title: "Feast of The Abyss"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["347EF4FA36CA9EA8"]
+			hide_until_deps_complete: true
+			id: "178FFD4D8BBB06A6"
+			subtitle: "Locate the Cornelia's Crew's shelter"
+			tasks: [{
+				icon: "minecraft:spruce_planks"
+				id: "40BEBCBF27078310"
+				structure: "aquamirae:shelter"
+				title: "Find the lost shelter"
+				type: "structure"
+			}]
+			title: "Last Resort"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["178FFD4D8BBB06A6"]
+			icon: "aquamirae:frozen_chest"
+			icon_scale: 0.75d
+			id: "0C33CCDACFB5E3E7"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Open the Frozen Chest"
+			tasks: [{
+				block: "aquamirae:frozen_chest"
+				block_type: 0
+				checkItem: false
+				id: "627F8636663F6DFE"
+				isItemInteraction: false
+				item: "aquamirae:frozen_key"
+				title: "Open the Frozen Chest"
+				type: "questsadditions:use"
+				value: 1L
+			}]
+			title: "Cornelia's Treaures"
+			x: -2.0d
+			y: -5.5d
 		}
 	]
 	title: "Beneath The Ice"

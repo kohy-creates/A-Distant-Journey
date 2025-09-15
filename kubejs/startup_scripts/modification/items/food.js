@@ -168,8 +168,8 @@ ItemEvents.modification(event => {
 			'upgrade_aquatic:cooked_lionfish'
 		], [5, 0.6]],
 		['bread', 6],
-		['buzzier_bees:honey_bread', 7],
-		['buzzier_bees:glazed_porkchop', [8, 0.8]],
+		// ['buzzier_bees:honey_bread', 7],
+		// ['buzzier_bees:glazed_porkchop', [8, 0.8]],
 		['berry_good:sweet_berry_mince', [3, 0.3]],
 		['berry_good:glowgurt', [8, 0.8]],
 		[['mushroom_stew', 'beetroot_soup', 'suspicious_stew'], [8, 1.0]],

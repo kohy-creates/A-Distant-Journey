@@ -15,7 +15,7 @@ EntityEvents.spawned(event => {
 				commandAtEntity(entity, '/immersivemessages sendcustom @p[] {anchor:0,y:100,shake:1,obfuscate:1,color:"#c50000",slideoutright:1,slideleft:1,wave:1} 6 Something is following you...')
 			)
 			event.getServer().runCommandSilent(
-				commandAtEntity(entity, '/playsound born_in_chaos_v1:stalker_roar_distant hostile @p[] ~ ~ ~ 0 1 0.2')
+				commandAtEntity(entity, '/playsound born_in_chaos_v1:stalker_roar_distant hostile @p[] ~ ~ ~ 0 0.2 0.2')
 			)
 		}
 	}

@@ -8,17 +8,31 @@
 	SPIRIT_DISSAPPEAR_IN_SUN_ENABLED = true
 	#Whether mobs retalliate to other mobs attacking them
 	RETALLIATION_ENABLED = true
-	#Amount of phantom bombs that gets spawned when thrown
-	#Range: 1 ~ 999999
-	PHANTOM_BOMB_COUNT = 2
 	#Whether infested diamonds generate
 	INFESTED_DIAMONDS_ENABLED = true
 	#Whether you get the warning effect that you get for Missioners and Nightmare Stalkers
 	WARNING_SPAWN_ENABLED = false
 
-	[General.Mobs]
+[Weapons]
+	#Amount of phantom bombs that gets spawned when thrown
+	#Range: > 1
+	PHANTOM_BOMB_COUNT = 2
+	#Amount of seconds for the cooldown of pumpkin pistol with the hat on
+	#Range: > 0
+	UPGRADED_PUMPKIN_PISTOL_COOLDOWN = 1
+	#Amount of seconds for the cooldown of pumpkin pistol
+	#Range: > 0
+	PUMPKIN_PISTOL_COOLDOWN = 2
+	#Chance to proc head effect with nutcracker
+	#Range: 0.0 ~ 1.0
+	NUTBREAKER_HEAD_CHANCE = 0.3499999940395355
+	#Amount of Mr.Pumpkins spawned
+	#Range: > 1
+	PUMPKIN_STAFF_SUMMON_AMOUNT = 1
 
-		[General.Mobs."Baby Skeleton"]
+	[Weapons.Mobs]
+
+		[Weapons.Mobs."Baby Skeleton"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			BABY_SKELETON_ARMOR = 1.0
@@ -40,7 +54,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			BABY_SKELETON_KNOCKBACK_RESISTANCE = 0.0
 
-		[General.Mobs."Baby Spider"]
+		[Weapons.Mobs."Baby Spider"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			BABY_SPIDER_ARMOR = 1.0
@@ -62,7 +76,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			BABY_SPIDER_KNOCKBACK_RESISTANCE = 0.2
 
-		[General.Mobs."Barrel Zombie"]
+		[Weapons.Mobs."Barrel Zombie"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			ZOMBIE_BARREL_ARMOR = 6.0
@@ -84,7 +98,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			ZOMBIE_BARREL_SPEED = 0.2
 
-		[General.Mobs."Bloody Gadfly"]
+		[Weapons.Mobs."Bloody Gadfly"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			BLOODY_GADFLY_ARMOR = 0.5
@@ -106,7 +120,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			BLOODY_GADFLY_SPEED = 0.28
 
-		[General.Mobs."Bones Caller"]
+		[Weapons.Mobs."Bones Caller"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			BONES_CALLER_ARMOR = 1.0
@@ -128,7 +142,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			BONES_CALLER_SPEED = 0.2
 
-		[General.Mobs."Bone Imp"]
+		[Weapons.Mobs."Bone Imp"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			BONE_IMP_ARMOR = 3.5
@@ -150,7 +164,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			BONE_IMP_SPEED = 0.3
 
-		[General.Mobs."Controlled Baby Skeleton"]
+		[Weapons.Mobs."Controlled Baby Skeleton"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			CONTROLLED_BABY_SKELETON_ARMOR = 1.0
@@ -170,7 +184,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			CONTROLLED_BABY_SKELETON_SPEED = 0.3
 
-		[General.Mobs."Controlled Spiritual Assistant"]
+		[Weapons.Mobs."Controlled Spiritual Assistant"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			CONTROLLED_SPIRITUAL_ASSISTANT_ARMOR = 3.0
@@ -190,7 +204,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			CONTROLLED_SPIRITUAL_ASSISTANT_SPEED = 0.3
 
-		[General.Mobs."Corpse Fish"]
+		[Weapons.Mobs."Corpse Fish"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			CORPSE_FISH_ARMOR = 0.0
@@ -215,7 +229,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			CORPSE_FISH_SWIM_SPEED = 0.7
 
-		[General.Mobs."Corpse Fly"]
+		[Weapons.Mobs."Corpse Fly"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			CORPSE_FLY_ARMOR = 0.0
@@ -237,7 +251,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			CORPSE_FLY_SPEED = 0.29
 
-		[General.Mobs."Dark Vortex"]
+		[Weapons.Mobs."Dark Vortex"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DARK_VORTEX_ARMOR = 0.0
@@ -259,7 +273,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DARK_VORTEX_SPEED = 0.3
 
-		[General.Mobs."Decaying Zombie"]
+		[Weapons.Mobs."Decaying Zombie"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DECAYING_ZOMBIE_ARMOR = 0.5
@@ -281,7 +295,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DECAYING_ZOMBIE_SPEED = 0.2
 
-		[General.Mobs."Decrepit Skeleton"]
+		[Weapons.Mobs."Decrepit Skeleton"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DECREPIT_SKELETON_ARMOR = 1.0
@@ -303,7 +317,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DECREPIT_SKELETON_SPEED = 0.23
 
-		[General.Mobs."Diamond Thermite"]
+		[Weapons.Mobs."Diamond Thermite"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DIAMOND_TERMITE_ARMOR = 7.0
@@ -323,7 +337,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DIAMOND_TERMITE_SPEED = 0.3
 
-		[General.Mobs."Dire Hound Leader"]
+		[Weapons.Mobs."Dire Hound Leader"]
 			#.
 			DIRE_HOUND_SPAWNING_ENABLED = true
 			#.
@@ -345,7 +359,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DIRE_HOUND_LEADER_SPEED = 0.34
 
-		[General.Mobs."Door Knight"]
+		[Weapons.Mobs."Door Knight"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DOOR_KNIGHT_ARMOR = 7.0
@@ -367,7 +381,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DOOR_KNIGHT_SPEED = 0.21
 
-		[General.Mobs."Dread Hound"]
+		[Weapons.Mobs."Dread Hound"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DREAD_HOUND_ARMOR = 0.5
@@ -389,7 +403,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			DREAD_HOUND_SPEED = 0.34
 
-		[General.Mobs."Fallen Chaos Knight"]
+		[Weapons.Mobs."Fallen Chaos Knight"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			FALLEN_KNIGHT_ARMOR = 20.0
@@ -413,7 +427,7 @@
 			#Whether Fallen Knights inflict cursed marks
 			FALLEN_KNIGHT_CURSE_ENABLED = true
 
-		[General.Mobs.Felsteed]
+		[Weapons.Mobs.Felsteed]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			FELSTEED_ARMOR = 2.0
@@ -433,7 +447,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			FELSTEED_SPEED = 0.36
 
-		[General.Mobs.Firelight]
+		[Weapons.Mobs.Firelight]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			FIRELIGHT_ARMOR = 0.0
@@ -455,7 +469,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			FIRELIGHT_KNOCKBACK_RESISTANCE = 0.1
 
-		[General.Mobs."Glutton Fish"]
+		[Weapons.Mobs."Glutton Fish"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			GLUTTON_FISH_ARMOR = 3.0
@@ -480,7 +494,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			GLUTTON_FISH_SWIM_SPEED = 0.7
 
-		[General.Mobs."Infernal Spirit"]
+		[Weapons.Mobs."Infernal Spirit"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			INFERNAL_SPIRIT_ARMOR = 0.22
@@ -500,7 +514,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			INFERNAL_SPIRIT_SPEED = 0.22
 
-		[General.Mobs."Krampus Henchman"]
+		[Weapons.Mobs."Krampus Henchman"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			KRAMPUS_HENCHMAN_ARMOR = 5.0
@@ -522,7 +536,7 @@
 			#.
 			KRAMPUS_HENCHMAN_SPAWNING_ENABLED = true
 
-		[General.Mobs.Krampus]
+		[Weapons.Mobs.Krampus]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			KRAMPUS_ARMOR = 10.0
@@ -544,7 +558,7 @@
 			#.
 			KRAMPUS_SPAWNING_ENABLED = true
 
-		[General.Mobs.Lifestealer]
+		[Weapons.Mobs.Lifestealer]
 			#Days till Lifestealer spawns
 			#Range: 1 ~ 999999
 			DAYS_TILL_LIFESTEALER = 10
@@ -569,7 +583,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			LIFESTEALER_SPEED = 0.26
 
-		[General.Mobs."Lord Pumpkin Head"]
+		[Weapons.Mobs."Lord Pumpkin Head"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			LORD_PUMPKIN_HEAD_ARMOR = 12.0
@@ -607,7 +621,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			LORD_PUMPKIN_HEAD_HEAD_SPEED = 0.33
 
-		[General.Mobs."Lord Pumpkin Head Horseless"]
+		[Weapons.Mobs."Lord Pumpkin Head Horseless"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			LORD_PUMPKIN_HEAD_HORSELESS_ARMOR = 12.0
@@ -627,7 +641,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			LORD_PUMPKIN_HEAD_HORSELESS_SPEED = 0.3
 
-		[General.Mobs."Lord Pumpkin Head Headless"]
+		[Weapons.Mobs."Lord Pumpkin Head Headless"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			LORD_HEADLESS_ARMOR = 6.0
@@ -647,7 +661,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			LORD_HEADLESS_SPEED = 0.27
 
-		[General.Mobs."Lord Felsteed"]
+		[Weapons.Mobs."Lord Felsteed"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			LORD_FELSTEED_ARMOR = 12.0
@@ -667,7 +681,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			LORD_FELSTEED_SPEED = 0.36
 
-		[General.Mobs.Maggots]
+		[Weapons.Mobs.Maggots]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			MAGGOT_ARMOR = 0.0
@@ -686,8 +700,10 @@
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			MAGGOT_SPEED = 0.2
+			#.
+			MAGGOT_SPAWNING_ENABLED = true
 
-		[General.Mobs.Missioner]
+		[Weapons.Mobs.Missioner]
 			#Days till The Missioner spawns
 			#Range: 1 ~ 999999
 			DAYS_TILL_MISSIONER = 10
@@ -711,12 +727,12 @@
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			MISSIONER_SPEED = 0.24
-			#Missioner spawns on raids
-			MISSIONER_RAID_ENABLED = true
 			#Missioner can switch weather to rain
 			MISSIONER_RAIN_ENABLED = true
+			#Missioner can spawn in raids
+			MISSIONER_RAID_ENABLED = true
 
-		[General.Mobs."Mother Spider"]
+		[Weapons.Mobs."Mother Spider"]
 			#.
 			MOTHER_SPIDER_SPAWNING_ENABLED = true
 			#.
@@ -738,7 +754,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			MOTHER_SPIDER_SPEED = 0.3
 
-		[General.Mobs."Mr Pumpkin Head"]
+		[Weapons.Mobs."Mr Pumpkin Head"]
 			#.
 			MR_PUMPKIN_SPAWNING_ENABLED = true
 			#.
@@ -763,7 +779,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			MR_PUMPKIN_SPEED = 0.35
 
-		[General.Mobs."Ms Pumpkin Head"]
+		[Weapons.Mobs."Ms Pumpkin Head"]
 			#.
 			MS_PUMPKIN_SPAWNING_ENABLED = true
 			#.
@@ -788,7 +804,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			MS_PUMPKIN_SPEED = 0.2
 
-		[General.Mobs."Nightmare Stalker"]
+		[Weapons.Mobs."Nightmare Stalker"]
 			#Whether you get effects when hit by a nightmare stalker
 			NIGHTMARE_EFFECTS_ENABLED = true
 			#Whether nightmare stalker, gets stronger the longer the world is
@@ -821,7 +837,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			NIGHTMARE_STALKER_SPEED = 0.28
 
-		[General.Mobs."Phantom Creeper"]
+		[Weapons.Mobs."Phantom Creeper"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			PHANTOM_CREEPER_ARMOR = 0.0
@@ -840,7 +856,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			PHANTOM_CREEPER_KNOCKBACK_RESISTANCE = 0.0
 
-		[General.Mobs."Pumpkin Bruiser"]
+		[Weapons.Mobs."Pumpkin Bruiser"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			PUMPKIN_BRUISER_ARMOR = 2.0
@@ -862,7 +878,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			PUMPKIN_BRUISER_KNOCKBACK_RESISTANCE = 0.6
 
-		[General.Mobs."Pumpkin Dunce"]
+		[Weapons.Mobs."Pumpkin Dunce"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			PUMPKIN_DUNCE_ARMOR = 0.0
@@ -884,7 +900,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			PUMPKIN_DUNCE_KNOCKBACK_RESISTANCE = 0.3
 
-		[General.Mobs."Pumpkin Head"]
+		[Weapons.Mobs."Pumpkin Head"]
 			#.
 			PUMPKIN_HEAD_SPAWNING_ENABLED = true
 			#.
@@ -906,7 +922,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			PUMPKIN_HEAD_SPEED = 0.32
 
-		[General.Mobs."Pumpkin Spirit"]
+		[Weapons.Mobs."Pumpkin Spirit"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			PUMPKIN_SPIRIT_ARMOR = 12.0
@@ -926,7 +942,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			PUMPKIN_SPIRIT_SPEED = 0.22
 
-		[General.Mobs."Restless Spirit"]
+		[Weapons.Mobs."Restless Spirit"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			RESTLESS_SPIRIT_ARMOR = 0.0
@@ -951,7 +967,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			RESTLESS_SPIRIT_SPEED = 0.4
 
-		[General.Mobs."Rideable Lord Felsteed"]
+		[Weapons.Mobs."Rideable Lord Felsteed"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			RIDEABLE_LORD_FELSTEED_ARMOR = 12.0
@@ -971,7 +987,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			RIDEABLE_LORD_FELSTEED_SPEED = 3.6
 
-		[General.Mobs."Scarlet Prosecuter"]
+		[Weapons.Mobs."Scarlet Prosecuter"]
 			#Amount of Scarlet Prosecuters (setting it to 0 will cause non to spawn)
 			#Range: 0 ~ 1000
 			SCARLET_SPAWN_AMMOUNT = 5
@@ -997,7 +1013,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SCARLET_PROSECUTER_SPEED = 0.6
 
-		[General.Mobs."Seared Spirit"]
+		[Weapons.Mobs."Seared Spirit"]
 			#.
 			SEARED_SPIRIT_SPAWNING_ENABLED = true
 			#.
@@ -1019,7 +1035,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SEARED_SPIRIT_SPEED = 0.23
 
-		[General.Mobs."Senor Pumpkinhead"]
+		[Weapons.Mobs."Senor Pumpkinhead"]
 			#.
 			SEARED_SPIRIT_SPAWNING_ENABLED = true
 			#.
@@ -1044,7 +1060,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SENOR_PUMPKIN_SPEED = 0.5
 
-		[General.Mobs."Siamese Skeletons"]
+		[Weapons.Mobs."Siamese Skeletons"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SIAMESE_SKELETON_ARMOR = 2.0
@@ -1066,7 +1082,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SIAMESE_SKELETON_SPEED = 0.3
 
-		[General.Mobs."Sir Pumpkinhead"]
+		[Weapons.Mobs."Sir Pumpkinhead"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SIR_PUMPKINHEAD_ARMOR = 9.0
@@ -1088,7 +1104,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SIR_PUMPKINHEAD_SPEED = 0.36
 
-		[General.Mobs."Sir Pumpkinhead Horseless"]
+		[Weapons.Mobs."Sir Pumpkinhead Horseless"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SIR_PUMPKINHEAD_HORSELESS_ARMOR = 4.0
@@ -1108,7 +1124,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SIR_PUMPKINHEAD_HORSELESS_SPEED = 0.25
 
-		[General.Mobs."Sir Pumpkinhead Headless"]
+		[Weapons.Mobs."Sir Pumpkinhead Headless"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SIR_PUMPKINHEAD_HEADLESS_ARMOR = 4.0
@@ -1128,7 +1144,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SIR_PUMPKINHEAD_HEADLESS_SPEED = 0.26
 
-		[General.Mobs."Skeleton Demoman"]
+		[Weapons.Mobs."Skeleton Demoman"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SKELETON_DEMOMAN_ARMOR = 0.5
@@ -1150,7 +1166,7 @@
 			#.
 			SKELETON_DEMOMAN_SPAWNING_ENABLED = true
 
-		[General.Mobs."Skeleton Thrasher"]
+		[Weapons.Mobs."Skeleton Thrasher"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SKELETON_THRASHER_ARMOR = 7.0
@@ -1172,7 +1188,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SKELETON_THRASHER_SPEED = 0.21
 
-		[General.Mobs."Spirit Guide"]
+		[Weapons.Mobs."Spirit Guide"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SPIRIT_GUIDE_ARMOR = 2.0
@@ -1194,7 +1210,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SPIRIT_GUIDE_SPEED = 0.22
 
-		[General.Mobs."Spirit Assitant"]
+		[Weapons.Mobs."Spirit Assitant"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SPIRIT_GUIDE_ASSISTANT_ARMOR = 3.0
@@ -1214,7 +1230,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SPIRIT_GUIDE_ASSISTANT_SPEED = 0.3
 
-		[General.Mobs."Spirit Of Chaos"]
+		[Weapons.Mobs."Spirit Of Chaos"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SPIRIT_OF_CHAOS_ARMOR = 0.0
@@ -1236,7 +1252,7 @@
 			#.
 			SPIRIT_OF_CHAOS_SPAWNING_ENABLED = true
 
-		[General.Mobs."Supreme Bonescaller"]
+		[Weapons.Mobs."Supreme Bonescaller"]
 			#.
 			SUPREME_BONESCALLER_SPAWNING_ENABLED = true
 			#.
@@ -1276,7 +1292,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SUPREME_BONESCALLER_PHASE_2_SPEED = 0.2
 
-		[General.Mobs.Swarmer]
+		[Weapons.Mobs.Swarmer]
 			#.
 			SWARMER_SPAWNING_ENABLED = true
 			#.
@@ -1298,7 +1314,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			SWARMER_SPEED = 0.2
 
-		[General.Mobs.THORNSHELL_CRAB]
+		[Weapons.Mobs.THORNSHELL_CRAB]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			THORNSHELL_CRAB_ARMOR = 10.0
@@ -1320,7 +1336,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			THORNSHELL_CRAB_SPEED = 0.25
 
-		[General.Mobs."Zombie Bruiser"]
+		[Weapons.Mobs."Zombie Bruiser"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			ZOMBIE_BRUISER_ARMOR = 2.0
@@ -1342,7 +1358,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			ZOMBIE_BRUISER_SPEED = 0.26
 
-		[General.Mobs."Zombie Clown"]
+		[Weapons.Mobs."Zombie Clown"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			ZOMBIE_CLOWN_ARMOR = 4.0
@@ -1364,7 +1380,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			ZOMBIE_CLOWN_SPEED = 0.21
 
-		[General.Mobs."Zombie Fisherman"]
+		[Weapons.Mobs."Zombie Fisherman"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			ZOMBIE_FISHERMAN_ARMOR = 4.0
@@ -1386,7 +1402,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			ZOMBIE_FISHERMAN_SPEED = 0.2
 
-		[General.Mobs."Zombie Lumberjack"]
+		[Weapons.Mobs."Zombie Lumberjack"]
 			#.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			ZOMBIE_LUMBERJACK_ARMOR = 4.0

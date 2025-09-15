@@ -18,7 +18,7 @@
 
 	[visuals.choppingIndicator]
 		#Show an on-screen indicator when a block will be chopped instead of broken (can be toggled in-game)
-		enabled = true
+		enabled = false
 		#Horizontal location of the indicator relative to the player's crosshairs; positive values move the indicator to the right
 		#Range: -256 ~ 256
 		xOffset = 16

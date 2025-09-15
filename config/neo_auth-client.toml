@@ -31,5 +31,5 @@
 	#Range: > 0
 	yPos = 6
 	#True if the button can be dragged to a new position
-	draggable = true
+	draggable = false
 

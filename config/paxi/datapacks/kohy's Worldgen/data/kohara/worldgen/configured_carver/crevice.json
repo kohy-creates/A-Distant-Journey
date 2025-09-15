@@ -28,7 +28,7 @@
 				"Name": "minecraft:oak_button"
 			}
 		},
-		"probability": 0.005,
+		"probability": 0.002,
 		"y": {
 			"min_inclusive": {
 				"absolute": 40

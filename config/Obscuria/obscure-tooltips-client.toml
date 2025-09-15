@@ -1,5 +1,5 @@
 
 [Settings]
 	displayArmorModels = true
-	displayToolsModels = true
+	displayToolsModels = false
 

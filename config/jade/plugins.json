@@ -85,17 +85,16 @@
     "registry_name": "OFF",
     "mod_name": false
   },
-  "alekiships": {
-    "furnace": true,
-    "jukebox": true,
-    "brewing_stand": true,
-    "block": true,
-    "note_block": true
-  },
   "waystones": {
     "waystone": true
   },
   "balm": {
     "jade": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "main": true,
+    "display.content": true,
+    "display.status": true
   }
 }

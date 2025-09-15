@@ -77,7 +77,18 @@ ClientEvents.lang('en_us', event => {
 		'quark:glow_shroom_stem': 'Shimmershroom Stem',
 		'quark:potted_glow_shroom': 'Potted Shimmershroom',
 		'ars_nouveau:rune': 'Spell Rune',
-		'mythicmetals:hallowed_block': 'Block of Hallowed Alloy'
+		'mythicmetals:hallowed_block': 'Block of Hallowed Alloy',
+		'quark:pipe': 'Brass Item Pipe',
+		'quark:encased_pipe': 'Encased Brass Item Pipe',
+		'functionalstorage:oak_1': 'Storage Drawer (1x1)',
+		'functionalstorage:oak_2': 'Storage Drawer (1x2)',
+		'functionalstorage:oak_4': 'Storage Drawer (2x2)',
+		'functionalstorage:l': 'Drawer Upgrade (Capacity)',
+		'functionalstorage:collector_upgrade': 'Drawer Upgrade (Collector)',
+		'functionalstorage:puller_upgrade': 'Drawer Upgrade (Puller)',
+		'functionalstorage:pusher_upgrade': 'Drawer Upgrade (Pusher)',
+		'functionalstorage:void_upgrade': 'Drawer Upgrade (Void)',
+		'functionalstorage:redstone_upgrade': 'Drawer Upgrade (Redstone)'
 	}
 
 	/** @type {Record<InputItem_, string>} */

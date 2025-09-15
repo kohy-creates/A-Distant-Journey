@@ -733,6 +733,19 @@
 			x: 12.0d
 			y: -5.5d
 		}
+		{
+			dependencies: ["4BB4F54ACBA9F3A7"]
+			id: "0E45334040B6A046"
+			subtitle: "Craft a Transmogrification Table"
+			tasks: [{
+				id: "75C14835048042AD"
+				item: "transmog:transmogrification_table"
+				type: "item"
+			}]
+			title: "Transmogrification"
+			x: -2.5d
+			y: -0.5d
+		}
 	]
 	title: "Becoming a Wizard"
 }

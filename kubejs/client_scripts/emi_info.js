@@ -13,9 +13,9 @@ JEIEvents.information(event => {
 		'Can be used to return any colored block back into its colorless form.'
 	])
 
-	event.addItem(['minecraft:item_frame', 'minecraft:glow_item_frame'], [
-		'Item Frames can be turned invisible by sneaking and clicking them with an empty hand if they have an item inside and can be dyed with Dyes.'
-	])
+	// event.addItem(['minecraft:item_frame', 'minecraft:glow_item_frame'], [
+	// 	'Item Frames can be turned invisible by sneaking and clicking them with an empty hand if they have an item inside and can be dyed with Dyes.'
+	// ])
 
 	event.addItem(['minecraft:suspicious_stew'], [
 		'Barely looks apetizing. Cooking it with different types of flowers will result in different potion effects when eaten.'
@@ -62,10 +62,6 @@ JEIEvents.information(event => {
 
 	event.addItem(['minecraft:fletching_table', '@morevillagers', /*'dungeonsweaponry:weaponry_table'*/], [
 		'Workstation for Villagers. Serves no purpose outside of that.'
-	])
-
-	event.addItem(['minecraft:glass_bottle', 'buzzier_bees:bee_bottle', 'buzzier_bees:endermite_bottle', 'buzzier_bees:silverfish_bottle'], [
-		'Smaller insects can be right-clicked with an Empty Bottle to catch them and can be later released anywhere at any time.'
 	])
 
 	event.addItem('kubejs:enchanters_guide', [

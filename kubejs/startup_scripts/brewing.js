@@ -25,11 +25,11 @@ MoreJSEvents.registerPotionBrewing((event) => {
 
 	// Remove ALL Buzzier Bees Luck Potion variants
 	// Including Unluck. Cause they are all useless
-	event.removeByPotion(null, null, "buzzier_bees:long_luck");
-	event.removeByPotion(null, null, "buzzier_bees:long_unluck");
-	event.removeByPotion(null, null, "buzzier_bees:strong_luck");
-	event.removeByPotion(null, null, "buzzier_bees:strong_unluck");
-	event.removeByPotion(null, null, "buzzier_bees:unluck");
+	// event.removeByPotion(null, null, "buzzier_bees:long_luck");
+	// event.removeByPotion(null, null, "buzzier_bees:long_unluck");
+	// event.removeByPotion(null, null, "buzzier_bees:strong_luck");
+	// event.removeByPotion(null, null, "buzzier_bees:strong_unluck");
+	// event.removeByPotion(null, null, "buzzier_bees:unluck");
 
 	// Remove doubled or useless potions
 	event.removeByPotion(null, null, 'davespotioneering:strong_invisibility');

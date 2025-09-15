@@ -62,7 +62,7 @@
 			}]
 			title: "Andesite Era"
 			x: 1.5d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["57A550E2F3090147"]
@@ -103,7 +103,7 @@
 			]
 			title: "Bonk!"
 			x: 3.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0288AADCBD95EB2D"]
@@ -124,7 +124,7 @@
 			]
 			title: "Wind Maker"
 			x: 4.5d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -156,7 +156,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["1FA28AA6F3F8D048"]
+			dependencies: ["74E81719E903F908"]
 			id: "4AF5A14D685A8B9D"
 			subtitle: "Craft a pair of Crushing Wheels"
 			tasks: [{
@@ -166,8 +166,8 @@
 				type: "item"
 			}]
 			title: "It's Clobbering Time!"
-			x: -2.0d
-			y: 5.0d
+			x: -3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6F6E4CEDDF413E18"]
@@ -179,7 +179,7 @@
 				type: "item"
 			}]
 			title: "Stay Loaded!"
-			x: 3.5d
+			x: 1.5d
 			y: 1.0d
 		}
 		{
@@ -230,8 +230,8 @@
 				type: "item"
 			}]
 			title: "Wireless Device"
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1FA28AA6F3F8D048"]
@@ -256,8 +256,8 @@
 				type: "item"
 			}]
 			title: "So Precise!"
-			x: -0.5d
-			y: 7.5d
+			x: -2.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0288AADCBD95EB2D"]
@@ -269,8 +269,8 @@
 				type: "item"
 			}]
 			title: "Technomancer's Wand"
-			x: 2.5d
-			y: 4.0d
+			x: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0288AADCBD95EB2D"]
@@ -282,8 +282,8 @@
 				type: "item"
 			}]
 			title: "Steampunk Vision"
-			x: 3.5d
-			y: 4.0d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["782BB3D700FBD243"]
@@ -299,8 +299,8 @@
 				type: "item"
 			}]
 			title: "Core of Technology"
-			x: -4.0d
-			y: 8.0d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
 			description: [
@@ -333,6 +333,35 @@
 			}]
 			x: -2.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["1FA28AA6F3F8D048"]
+			id: "74E81719E903F908"
+			subtitle: "Craft a Mechanical Crafter"
+			tasks: [{
+				id: "4B87ABF9543ADF6B"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "Mechanised!"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"74E81719E903F908"
+				"782BB3D700FBD243"
+			]
+			id: "0AB70F7FD4C43431"
+			subtitle: "Craft a Brass Chunk Loader"
+			tasks: [{
+				id: "1A73E353608797DA"
+				item: "create_power_loader:brass_chunk_loader"
+				type: "item"
+			}]
+			title: "NEVER Give Up (And Unload)"
+			x: -2.0d
+			y: 5.0d
 		}
 	]
 	title: "Creating a Factory"

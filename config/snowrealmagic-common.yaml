@@ -22,7 +22,7 @@ accumulation:
   snowAndIceMeltInWarmBiomes: true
   maxLayers: 4
   accumulatesDuringSnowstorm: true
-  accumulatesDuringSnowfall: false
+  accumulatesDuringSnowfall: true
 integration:
   accumulationWinterOnly: true
 debug:

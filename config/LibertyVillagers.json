@@ -52,7 +52,7 @@
     "feedMaxAnimals": 30,
     "fishermanFish": true,
     "fishermanFindWaterRange": 10,
-    "fishermanFishingWaterRange": 5,
+    "fishermanFishingWaterRange": 10,
     "librariansLookAtBooks": true
   },
   "golemsConfig": {

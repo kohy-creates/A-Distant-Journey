@@ -81,7 +81,7 @@
       }
     ],
     "spawn_category_multiplier": {
-      "monster": 2.25
+      "monster": 3.5
     }
   },
   "text_components": {

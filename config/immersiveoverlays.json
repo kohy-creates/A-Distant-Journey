@@ -29,7 +29,8 @@
   "clock_vertical_position": 250,
   "clock_horizontal_position_left": false,
   "clock_items": [
-    "minecraft:clock"
+    "minecraft:clock",
+    "mythicmetals:platinum_watch"
   ],
   "clock_weather_items": [
     "caverns_and_chasms:barometer",

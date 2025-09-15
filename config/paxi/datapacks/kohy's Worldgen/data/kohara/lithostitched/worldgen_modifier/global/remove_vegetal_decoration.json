@@ -2,7 +2,8 @@
 	"type": "lithostitched:remove_features",
 	"biomes": "#minecraft:is_overworld",
 	"features": [
-		"minecraft:patch_waterlily"
+		"minecraft:patch_waterlily",
+		"verdantvibes:cattails"
 	],
 	"step": "vegetal_decoration"
 }

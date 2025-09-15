@@ -3,7 +3,7 @@
 [common]
 	# The amount of slot columns in the backpack inventory.
 	# Valid range: 1 to 13 (inclusive)
-	backpackInventorySizeColumns = 7
+	backpackInventorySizeColumns = 9
 	# If enabled, hides the config button from the backpack screen
 	# Valid values: true, false
 	keepBackpackOnDeath = false

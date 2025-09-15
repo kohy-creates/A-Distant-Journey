@@ -8,13 +8,13 @@
 
 	[light_amounts.night]
 		#Range: 0.0 ~ 1.0
-		"Full moon" = 1.0
+		"Full moon" = 0.7
 		#Range: 0.0 ~ 1.0
-		"Wanin/Waxing moon" = 0.800000011920929
+		"Wanin/Waxing moon" = 0.55
 		#Range: 0.0 ~ 1.0
-		"Quarter moon" = 0.6000000238418579
+		"Quarter moon" = 0.4
 		#Range: 0.0 ~ 1.0
-		"Crescent moon" = 0.4000000059604645
+		"Crescent moon" = 0.25
 		#Range: 0.0 ~ 1.0
-		"New moon" = 0.20000000298023224
+		"New moon" = 0.1
 

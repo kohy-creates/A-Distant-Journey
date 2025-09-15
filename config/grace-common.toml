@@ -1,3 +1,0 @@
-#Enable to use debug messages and throw on illegal arguments.
-debug = false
-
