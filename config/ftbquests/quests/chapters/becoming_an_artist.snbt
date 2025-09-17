@@ -37,6 +37,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["026E22A534C341CC"]
 			description: ["&7&lHINT:&r You can insert and take out Film Rolls by &eright-clicking your Camera in your Inventory&r!"]
 			icon: "exposure:camera"
 			id: "3A017BDC7B799F5B"
@@ -67,6 +68,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["026E22A534C341CC"]
 			description: [""]
 			icon: "xercapaint:item_palette"
 			id: "4BECD0660111B4AC"
@@ -90,6 +92,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["026E22A534C341CC"]
 			icon: "minecraft:music_disc_blocks"
 			id: "74568A8CB40BC9F8"
 			shape: "diamond"

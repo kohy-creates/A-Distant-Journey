@@ -1,0 +1,31 @@
+{
+  "feature": "majruszsdifficulty:enderium_ore",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 1
+    },
+    {
+      "type": "minecraft:count",
+      "count": 3
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "above_bottom": 30
+        },
+        "max_inclusive": {
+          "below_top": 70
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

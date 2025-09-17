@@ -22,7 +22,7 @@
 	#Witches drink more potions.
 	"Enable Thirsty witches" = true
 	#Witches summon Villagers and cast a lightning upon them.
-	"Enable Dark art witch" = true
+	"Enable Dark art witch" = false
 	#Witches throw potions farther, faster and more potion types. Also no longer chase player if they can't see him. Use the enhancedai:better_potion_throwing entity type tag to add more witches that are affected by this feature.
 	"Enable Witch potion throwing" = true
 
@@ -30,7 +30,7 @@
 	[Witches."Witch flee target"]
 		#Chance for a Witch to spawn with the ability to avoid the player
 		#Range: 0.0 ~ 1.0
-		"Avoid player chance" = 1.0
+		"Avoid player chance" = 0.25
 		#Chance for a Witch to be able to throw potions while running from a player
 		#Range: 0.0 ~ 1.0
 		"Attack when avoiding chance" = 0.5
@@ -42,28 +42,28 @@
 		"Flee distance near" = 7.0
 		#Speed multiplier when the Witch avoids the player and it's farther than 'Flee Distance Near' blocks from him.
 		#Range: 0.0 ~ 4.0
-		"Flee speed far" = 1.0
+		"Flee speed far" = 0.9
 		#Speed multiplier when the Witch avoids the player and it's within 'Flee Distance Near' blocks from him.
 		#Range: 0.0 ~ 4.0
-		"Flee speed near" = 1.1
+		"Flee speed near" = 1.0
 
 	#Witches drink more potions.
 	[Witches."Thirsty witches"]
 		#Chance for a witch to drink a healing potion when not full health. Defaults to Vanilla
 		#Range: 0.0 ~ 1.0
-		"Healing chance" = 0.05
+		"Healing chance" = 0.03
 		#Below this percentage health, witches will try to drink healing potions.
 		#Range: 0.0 ~ 1.0
-		"Healing threshold" = 0.7
+		"Healing threshold" = 0.6
 		#Below this percentage health, witches will drink strong healing potions instead of normal ones.
 		#Range: 0.0 ~ 1.0
-		"Strong healing threshold" = 0.4
+		"Strong healing threshold" = 0.0
 		#Chance each tick for a witch to drink a water breathing potion when in water and air meter is at half. Vanilla is 15% and doesn't check the air meter.
 		#Range: 0.0 ~ 1.0
-		"Water breathing chance" = 1.0
+		"Water breathing chance" = 0.25
 		#Chance each tick for a witch to drink a fire resistance potion when on fire. Vanilla is 15%.
 		#Range: 0.0 ~ 1.0
-		"Fire resistance chance" = 1.0
+		"Fire resistance chance" = 0.15
 		#Chance each tick for a witch to drink milk when they have a negative effect.
 		#Range: 0.0 ~ 1.0
 		"Milk chance" = 0.1
@@ -80,18 +80,18 @@
 	[Witches."Witch potion throwing"]
 		#Chance for the potions thrown by the Witch to be lingering.
 		#Range: 0.0 ~ 1.0
-		"Lingering chance" = 0.15
+		"Lingering chance" = 0.25
 		#Chance for the Witch to throw another random potion right after she threw one.
 		#Range: 0.0 ~ 1.0
-		"Another throw chance" = 0.2
+		"Another throw chance" = 0.15
 		#Chance for a Witch to be an apprentice. Apprentice Witches throw random potions instead of in order, and have a chance to throw a wrong (good) potion.
 		#Range: 0.0 ~ 1.0
-		"Apprentice witch chance" = 0.6
+		"Apprentice witch chance" = 0.3
 		#If true, witches will throw a potion of slow falling at their feet when they're falling for more than 8 blocks.
 		"Use slow falling" = true
 		#When below this health percentage Witches will throw Invisibility potions at their feet.
 		#Range: 0.0 ~ 1.0
-		"Health threshold invisibility" = 0.4
+		"Health threshold invisibility" = 0.3
 		#A list of potions that the witch can throw at enemies. Format is effect_id,duration,amplifier. The potions are thrown in order and witches will not throw the same potion if the target has already the effect.
 		"Bad Potions List" = ["minecraft:weakness", "minecraft:slowness", "minecraft:hunger,600,0", "minecraft:mining_fatigue,600,0", "minecraft:poison", "minecraft:blindness,120,0", "minecraft:strong_harming"]
 		#A list of potions that the witch can throw at allies (in raids). Format is effect_id,duration,amplifier. The potions are thrown in order and witches will not throw the same potion if the target has already the effect.
@@ -691,9 +691,9 @@
 		#The range from where a pillager will shoot a player
 		[Illagers."Pillager shoot"."Shooting range"]
 			#Range: 1.0 ~ 64.0
-			Minimum = 24.0
+			Minimum = 20.0
 			#Range: 1.0 ~ 64.0
-			Maximum = 32.0
+			Maximum = 28.0
 
 		#The ticks cooldown before shooting. Vanilla is random between 20 and 40
 		[Illagers."Pillager shoot"."Shooting cooldown"]

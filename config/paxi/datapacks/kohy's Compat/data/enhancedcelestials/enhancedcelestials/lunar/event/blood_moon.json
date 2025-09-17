@@ -4,7 +4,7 @@
       "moon_texture_color": "990000",
       "sky_light_color": "990000"
     },
-    "moon_size": 25.0,
+    "moon_size": 30.0,
     "moon_texture_location": "minecraft:textures/environment/moon_phases.png",
     "sound_track": {
       "sound_id": "enhancedcelestials:blood_moon"

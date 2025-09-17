@@ -14,7 +14,7 @@ const toolset = [
 	'_hoe'
 ]
 
-const defaultAttackDamage = [1, 0.5, 1.5, 0.4, 0.5]
+const defaultAttackDamage = [1, 0.5, 1.12, 0.4, 0.5]
 const defaultAttackSpeed = [1.6, 1.3, 0.9, 1.1, 1.4]
 
 function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
@@ -55,7 +55,38 @@ global.weapon_overrides = {
 	'cataclysm:gauntlet_of_guard': [40, 3.1, 0, 0, 15],
 	'cataclysm:gauntlet_of_bulwark': [40, 3.1, 0, 0, 15],
 	'cataclysm:gauntlet_of_maelstrom': [40, 3.1, 0, 0, 15],
-	'cataclysm:tidal_claws': [26, 0.9, 0, 0, 10]
+	'cataclysm:tidal_claws': [26, 0.9, 0, 0, 10],
+
+	'mcdw:axe_anchor': [28, 0.6],
+	'mcdw:axe_encrusted_anchor': [30, 0.6],
+	'mcdw:dagger_backstabber': [43, 2.3],
+	'mcdw:dagger_fangs_of_frost': [14, 2.5],
+	'mcdw:dagger_resolute_tempest_knife': [39, 1.8],
+	'mcdw:dagger_swift_striker': [43, 3.1],
+	'mcdw:dagger_void_touched_blade': [40, 2.2],
+	'mcdw:glaive_cackling_broom': [17, 1],
+	'mcdw:glaive_grave_bane': [25, 1],
+	'mcdw:glaive_venom_glaive': [19, 1],
+	'mcdw:hammer_boneclub': [23, 0.8],
+	'mcdw:hammer_bone_cudgel': [50, 0.8],
+	'mcdw:hammer_gravity': [65, 0.8],
+	'mcdw:hammer_great_hammer': [23, 0.8],
+	'mcdw:hammer_stormlander': [25, 0.8],
+	'mcdw:scythe_jailors_scythe': [21, 1.1],
+	'mcdw:scythe_skull_scythe': [44, 1.1],
+	'mcdw:scythe_soul_scythe': [24, 1.1],
+	'mcdw:sickle_sickle': [10, 1.9],
+	'mcdw:sickle_the_last_laught_silver': [21, 1.9],
+	'mcdw:sickle_the_last_laught_gold': [21, 1.9],
+	'mcdw:soul_dagger_soul_knife': [24, 1.2],
+	'mcdw:soul_dagger_truthseeker': [39, 1.2],
+	'mcdw:soul_dagger_eternal_knife': [50, 1.2],
+	'mcdw:staff_battlestaff': [11, 1.4],
+	'mcdw:sword_heartstealer': [43, 0.8],
+	'mcdw:sword_obsidian_claymore': [64, 0.7],
+	'mcdw:sword_sinister': [42, 1.8],
+
+
 }
 
 addToolsetOverride('minecraft:wooden', 7)

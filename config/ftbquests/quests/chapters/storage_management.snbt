@@ -45,7 +45,7 @@
 				}
 			]
 			title: "Simple Storage System"
-			x: -2.5d
+			x: -3.0d
 			y: 1.0d
 		}
 		{
@@ -81,8 +81,8 @@
 				type: "item"
 			}]
 			title: "Cloud Storage"
-			x: 1.0d
-			y: 2.5d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0B9481F02CACCE1D"]
@@ -96,7 +96,7 @@
 				type: "item"
 			}]
 			title: "Extra Features"
-			x: -4.0d
+			x: -4.5d
 			y: 0.5d
 		}
 		{
@@ -110,7 +110,7 @@
 			}]
 			title: "Vaulted"
 			x: -0.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5BE98BA6A0B68228"]
@@ -122,8 +122,8 @@
 				type: "item"
 			}]
 			title: "Shared Folder"
-			x: 1.0d
-			y: 3.5d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6A911AFF4185ED0D"]
@@ -136,7 +136,7 @@
 			}]
 			title: "Not Only Items!"
 			x: -0.5d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7EDDEFE957513B50"]
@@ -149,7 +149,7 @@
 			}]
 			title: "Open Source"
 			x: -0.5d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["67FFFFBD84B01AD3"]
@@ -162,7 +162,7 @@
 			}]
 			title: "Hoarder"
 			x: -1.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["169D3B18A90CC7ED"]
@@ -175,7 +175,7 @@
 			}]
 			title: "Higher Capacity"
 			x: -1.0d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -203,7 +203,7 @@
 			]
 			title: "In Control"
 			x: 0.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["169D3B18A90CC7ED"]
@@ -216,7 +216,7 @@
 			}]
 			title: "Strange Tale of Avarice"
 			x: -2.5d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6A911AFF4185ED0D"]
@@ -237,8 +237,8 @@
 				}
 			]
 			title: "Bundles of Bravery"
-			x: 1.0d
-			y: -0.5d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6A911AFF4185ED0D"]
@@ -259,7 +259,7 @@
 				}
 			]
 			title: "Iron Chests"
-			x: 1.5d
+			x: 2.0d
 			y: 1.0d
 		}
 		{
@@ -280,7 +280,7 @@
 				}
 			]
 			title: "Superspacious"
-			x: 3.0d
+			x: 3.5d
 			y: 1.0d
 		}
 		{
@@ -293,8 +293,8 @@
 				type: "item"
 			}]
 			title: "Piper's Dream"
-			x: -2.0d
-			y: -0.5d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0B9481F02CACCE1D"]
@@ -311,7 +311,7 @@
 				type: "item"
 			}]
 			title: "Wireless Device Patriot"
-			x: -4.0d
+			x: -4.5d
 			y: 1.5d
 		}
 		{
@@ -325,8 +325,8 @@
 				type: "item"
 			}]
 			title: "Item Vacuum"
-			x: -2.0d
-			y: 2.5d
+			x: -2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5F2D087B979A8FFE"]
@@ -339,7 +339,7 @@
 				"3. &ePlace down a Corporea Index&r and place another Corporea Spark on top of it."
 				"4. Approach the Index and &esay in chat what you want that is in the network's inventory&r, e.g '5 dirt'."
 				"{@pagebreak}"
-				"&7&lHINT 2:&rPlacing a Corporea Spark on top of an &6Inventory Connector&r allows the network to access &eevery connected chest&r, so it's extra powerful!"
+				"&7&lHINT 2: &rPlacing a Corporea Spark on top of an &6Inventory Connector&r allows the network to access &eevery connected chest&r, so it's extra powerful!"
 			]
 			icon: "botania:corporea_spark_master"
 			id: "24C0C6AFE73F1784"
@@ -362,7 +362,20 @@
 				}
 			]
 			title: "Corporeal (But In The Storage Tab)"
-			x: -3.0d
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5BE98BA6A0B68228"]
+			id: "0D25681B83E5BD9A"
+			subtitle: "Add a Glyph of Access Ender Inventory into your spellbook"
+			tasks: [{
+				id: "38F4197DFEB0FCEA"
+				item: "ars_nouveau:glyph_ender_inventory"
+				type: "item"
+			}]
+			title: "Mana Entrypoint"
+			x: 3.0d
 			y: 3.5d
 		}
 	]

@@ -130,8 +130,16 @@ ItemEvents.modification(event => {
 	maxDurability([
 		toolset('minecraft:wooden'),
 		toolset('aether:skyroot'),
-		armorset('minecraft:leather')
+		armorset('minecraft:leather'),
+		armorset('mcdw:glaive_cackling_broom'),
+		'mcdw:staff_battlestaff'
 	], 100)
+
+	maxDurability([
+		'bow',
+		'crossbow',
+		'additionaladditions:crossbow_with_spyglass',
+	], 250)
 
 	maxDurability([
 		toolset('mythicmetals:copper'),
@@ -139,13 +147,23 @@ ItemEvents.modification(event => {
 	], 300)
 
 	maxDurability([
+		'mcdw:bow_weeping_vine_bow',
+		'mcdw:bow_twisting_vine_bow'
+	], 400)
+
+	maxDurability([
 		toolset('minecraft:iron'),
 		toolset('botania:manasteel'),
-		toolset('aether:zanite')
+		toolset('aether:zanite'),
+		'mcdw:sickle_sickle',
+		'mcdw:crossbow_butterfly_crossbow',
+		'mcdw:crossbow_exploding_crossbow'
 	], 700)
 
 	maxDurability([
-		toolset('mythicmetals:steel')
+		toolset('mythicmetals:steel'),
+		'mcdw:bow_power_bow',
+		'mcdw:bow_phantom_bow'
 	], 950)
 
 	maxDurability([
@@ -153,7 +171,9 @@ ItemEvents.modification(event => {
 		toolset('aether_redux:veridium'),
 		toolset('aether_redux:infused_veridium'),
 		armorset('ars_nouveau:arcanist'),
-		armorset('born_in_chaos_v1:nigthmare_mantleofthe_night')
+		armorset('born_in_chaos_v1:nigthmare_mantleofthe_night'),
+		'mcdw:crossbow_pride_of_the_piglins',
+		'mcdw:soul_dagger_soul_knife'
 	], 1300)
 
 	maxDurability([
@@ -162,35 +182,55 @@ ItemEvents.modification(event => {
 		toolset('aether:gravitite'),
 		toolset('aether:valkyrie'),
 		toolset('lost_aether_content:phoenix'),
-		armorset('aether:phoenix')
+		armorset('aether:phoenix'),
+		'mcdw:crossbow_azure_seeker',
+		'mcdw:crossbow_firebolt_thrower'
 	], 2000)
 
 	maxDurability([
 		toolset('minecraft:netherite'),
 		'aether:obsidian_gloves',
 		toolset('mythicmetals:adamantite'),
+		'mcdw:crossbow_heavy_crossbow',
+		'mcdw:bow_winters_touch',
+		'mcdw:soul_dagger_truthseeker',
+		'mcdw:scythe_skull_scythe',
+		'mcdw:sword_heartstealer'
 	], 3000)
 
 	maxDurability([
+		'mcdw:dagger_resolute_tempest_knife'
+	], 3700)
+
+	maxDurability([
 		toolset('majruszsdifficulty:enderium'),
+		'mcdw:sword_sinister',
+		'mcdw:sword_obsidian_claymore',
+		'mcdw:soul_dagger_eternal_knife'
 	], 6000)
 
 	maxDurability([
 		toolset('experienceobelisk:cognitive'),
 		'experienceobelisk:cognitive_bow',
 		'experienceobelisk:flint_and_cognitive_alloy',
-		armorset('alexscaves:primordial')
+		armorset('alexscaves:primordial'),
+		'mcdw:scythe_jailors_scythe',
+		'mcdw:scythe_soul_scythe',
+		'mcdw:bow_bonebow'
 	], 1100)
 
 	maxDurability('trident', 700)
-	maxDurability('mutantmonsters:hulk_hammer', 500)
+	maxDurability('mutantmonsters:hulk_hammer', 1500)
 	maxDurability([
-		'bow',
-		'crossbow',
 		'aether:phoenix_bow',
-		'additionaladditions:crossbow_with_spyglass',
-		armorset('mythicmetals:midas_gold')
-	], 500)
+		armorset('mythicmetals:midas_gold'),
+		'mcdw:bow_elite_power_bow',
+		'mcdw:glaive_grave_bane',
+		'mcdw:hammer_boneclub',
+		'mcdw:hammer_bone_cudgel',
+		'mcdw:hammer_great_hammer',
+		/mcdw:sickle_the_last_laugh_.*/
+	], 1200)
 
 	maxDurability([
 		toolset('mythicmetals:bronze'),
@@ -199,12 +239,9 @@ ItemEvents.modification(event => {
 	], 500)
 
 	maxDurability([
-		toolset('mythicmetals:carmot'),
-	], 2500)
-
-	maxDurability([
 		toolset('mythicmetals:celestium'),
 		toolset('mythicmetals:metallurgium'),
+		'mcdw:crossbow_slayer_crossbow'
 	], 8000)
 
 	maxDurability([
@@ -228,8 +265,9 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('mythicmetals:prometheum'),
-		armorset('aether:neptune')
-	], 1800)
+		armorset('aether:neptune'),
+		'mcdw:glaive_venom_glaive'
+	], 1700)
 
 	maxDurability([
 		toolset('mythicmetals:runite'),
@@ -241,7 +279,8 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('mythicmetals:stormyx'),
-		armorset('cataclysm:bone_reptile')
+		armorset('cataclysm:bone_reptile'),
+		'mcdw:bow_sabrewing'
 	], 1900)
 
 	maxDurability([
@@ -251,6 +290,14 @@ ItemEvents.modification(event => {
 	maxDurability([
 		toolset('phantasm:crystalline'),
 		toolset('unusualend:pearlescent'),
+		'mcdw:dagger_backstabber',
+		'mcdw:dagger_void_touched_blade',
+		'mcdw:bow_call_of_the_void'
 	], 4000)
+	maxDurability([
+		'mcdw:dagger_swift_striker',
+		'mcdw:hammer_gravity',
+		'mcdw:crossbow_veiled_crossbow'
+	], 4500)
 
 })

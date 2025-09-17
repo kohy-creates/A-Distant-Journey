@@ -3,7 +3,7 @@
 	#Silence the server-wide Wither spawn and death broadcast sounds.
 	silenceWither = true
 	#Silence the wandering trader's ambient sound.
-	silenceTrader = true
+	silenceTrader = false
 	#Silence the server-wide Ender Dragon Death broadcast sound.
 	silenceDragon = true
 	#Silence the server-wide Thunder broadcast sound caused by the Lightning event

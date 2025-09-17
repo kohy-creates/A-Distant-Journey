@@ -94,18 +94,18 @@
 	quests: [
 		{
 			description: [
-				"Some advancements only feature a &7short subtitle&f which roughly describes what you have to do to finish them."
+				"Some achievements only feature a &7short subtitle&f which roughly describes what you have to do to finish them."
 				""
 				"Some of them however, such as &6this one&f feature an elaborate description, which will explain &dhow things work in this realm&r, so that your playthrough is &oless of a headache&r!"
 				""
 				""
 				"{@pagebreak}"
 				""
-				"&6Advancements&r can have either a &esingular task&r or a &elist of tasks&f (which you can do in any order) to complete. &lMost&r of them will autocomplete themselves whenever their condition is satisifed."
+				"&6Achievements&r can have either a &esingular task&r or a &elist of tasks&f (which you can do in any order) to complete. &lMost&r of them will autocomplete themselves whenever their condition is satisifed."
 				""
 				"A few conditions though &erequire you to confirm you completed them&r for them to count as finished. Those conditions are usually related to building things."
 				""
-				"In order to complete this advancement's task, &ejust click the checkmark icon in the top right corner of this menu&r!"
+				"In order to complete this achievements's task, &ejust click the checkmark icon in the top right corner of this menu&r!"
 			]
 			disable_toast: true
 			icon: "structure_gel:building_tool"
@@ -115,10 +115,10 @@
 			subtitle: "Click to read"
 			tasks: [{
 				id: "130423B37A140F64"
-				title: "Click me to complete the advancement"
+				title: "Click me to complete the achievement"
 				type: "checkmark"
 			}]
-			title: "&l&fIntro:&r &dAdvancements"
+			title: "&l&fIntro:&r &dAchievements"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -127,7 +127,7 @@
 			description: [
 				"To create a &dParty&r, open your inventory and then open the &dTeams&r tab, then click '&dCreate new Party&r'."
 				""
-				"Players in the same party as you will &eshare advancement progress&r and can configure &cPvP&r rules!"
+				"Players in the same party as you will &eshare achievements progress&r and can configure &cPvP&r rules!"
 			]
 			disable_toast: true
 			icon: {

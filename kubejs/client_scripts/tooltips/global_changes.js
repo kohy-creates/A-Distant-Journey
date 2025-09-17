@@ -18,10 +18,11 @@ ItemEvents.tooltip(event => {
 	*/
 	//priority: 100
 	event.addAdvanced([
-		'@dungeonsweaponry',
+		'@mcdw',
 		'sortilege:limitite',
 		'botanicadds:dreaming_pool',
-		'majruszsdifficulty:recall_potion'
+		'majruszsdifficulty:recall_potion',
+		'heart_crystals:heart_crystal',
 	], (item, advanced, text) => {
 		const original = text.toArray();
 
@@ -645,6 +646,18 @@ ItemEvents.tooltip(event => {
 	addTooltipLine([
 		/.*delight.*:.*stove.*/
 	], 'Acts like a Campfire with 6 total slots')
+
+	addTooltipLine([
+		'heart_crystals:heart_crystal'
+	], 'Increases max health by 20, up to 400')
+
+	addTooltipLine([
+		'naturalist:bug_net'
+	], 'Used to catch butterflies')
+
+	addTooltipLine([
+		/the_bumblezone:string_curtain/
+	], 'Can be extended downwards by right-clicking with a String')
 
 });
 

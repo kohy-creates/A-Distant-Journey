@@ -322,7 +322,7 @@
     },
     "shouldersurfing:pre_crosshair": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
       "pass": 2
     },
@@ -358,7 +358,7 @@
     },
     "shouldersurfing:post_crosshair": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
       "pass": 2
     },

@@ -310,10 +310,10 @@ global.blacklistedItems = [
 
 	"mythicmetals:celestium_nugget",
 	"mythicmetals:celestium_sword",
-	"mythicmetals:celestium_axe",
-	"mythicmetals:celestium_shovel",
-	"mythicmetals:celestium_pickaxe",
-	"mythicmetals:celestium_hoe",
+	// "mythicmetals:celestium_axe",
+	// "mythicmetals:celestium_shovel",
+	// "mythicmetals:celestium_pickaxe",
+	// "mythicmetals:celestium_hoe",
 	"mythicmetals:celestium_helmet",
 	"mythicmetals:celestium_chestplate",
 	"mythicmetals:celestium_leggings",
@@ -562,5 +562,4 @@ global.blacklistedItems = [
 	"functionalstorage:diamond_upgrade",
 	"functionalstorage:netherite_upgrade",
 	"functionalstorage:iron_downgrade",
-	
 ]

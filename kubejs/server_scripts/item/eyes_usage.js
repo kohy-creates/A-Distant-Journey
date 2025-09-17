@@ -54,7 +54,7 @@ BlockEvents.rightClicked(event => {
 			player.addItemCooldown(item.id, 8);
 			player.level.spawnParticles("happy_villager", false, blockPos.x + 0.5, blockPos.y + 1.5, blockPos.z + 0.5, 1, 0.25, 1, 15, 0.01);
 		}
-		player.swing('main_hand')
+		player.swing('main_hand', true)
 		player.level.playSound(null, blockPos, 'item.bone_meal.use', 'neutral');
 	}
 
@@ -69,6 +69,6 @@ BlockEvents.rightClicked(event => {
 			'/execute in ' + event.getLevel().getDimension() + ' positioned ' + pos.x + ' ' + pos.y + ' ' + pos.z + ' run data merge block ~ ~ ~ {burnTimeRemaining:6400,fuelLevel:2}'
 		)
 		player.addItemCooldown(item.id, 200)
-		player.swing('main_hand')
+		player.swing('main_hand', true)
 	}
 })

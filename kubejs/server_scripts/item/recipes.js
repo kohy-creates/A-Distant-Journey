@@ -44,14 +44,14 @@ ServerEvents.recipes((event) => {
 		'quark:pipe',
 		'quark:encased_pipe',
 
-		'@functionalstorage'
+		'@functionalstorage',
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
 	})
 
 	global.blacklistedItems.forEach(item => {
-		event.remove([{ output: item }, { input: item }])
+		event.remove([{ output: item }/*, { input: item } */])
 	})
 
 	/** @type {Special.RecipeId[]} */
@@ -97,7 +97,8 @@ ServerEvents.recipes((event) => {
 		'create:mixing/andesite_alloy',
 		'create:mixing/andesite_alloy_from_zinc',
 		'create:crafting/materials/andesite_alloy',
-		'create:crafting/materials/andesite_alloy_from_zinc'
+		'create:crafting/materials/andesite_alloy_from_zinc',
+
 
 		///alloy_forgery\:compat\//
 	]
@@ -178,7 +179,6 @@ ServerEvents.recipes((event) => {
 	/**
 	 * Registers a BotanicAdds Gaia Plate recipe
 	 *
-	 * @param {Internal.RecipesEventJS} event
 	 * @param {Internal.InputItem_[]} inputs - List of items or tags (prefix with # for tags)
 	 * @param {Internal.OutputItem_} output - The resulting item ID
 	 * @param {number} mana - Mana cost
@@ -936,7 +936,7 @@ ServerEvents.recipes((event) => {
 		}
 	)
 
-	event.replaceInput({ input: 'mcdw:item_bee_stinger'},
+	event.replaceInput({ input: 'mcdw:item_bee_stinger' },
 		'mcdw:item_bee_stinger',
 		'the_bumblezone:bee_stinger'
 	)
@@ -1240,7 +1240,7 @@ ServerEvents.recipes((event) => {
 
 	event.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: 'constructionwand' }, (recipe) => {
 		const output = recipe.getOriginalRecipeResult();
-		const ingredients = recipe.getOriginalRecipeIngredients();
+		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
 
 		event.remove({ id: recipe.getId() });
 		if (output.id.toString().includes('core')) {
@@ -2389,34 +2389,6 @@ ServerEvents.recipes((event) => {
 		}
 	)
 
-	// For some reason this doesn't have a recipe lmao
-	event.custom({
-		"type": "ars_nouveau:imbuement",
-		"count": 1,
-		"input": {
-			"tag": "forge:gems/source"
-		},
-		"output": "ars_nouveau:air_essence",
-		"pedestalItems": [
-			{
-				"item": {
-					"item": "minecraft:feather"
-				}
-			},
-			{
-				"item": {
-					"item": "ars_nouveau:wilden_wing"
-				}
-			},
-			{
-				"item": {
-					"tag": "minecraft:arrows"
-				}
-			}
-		],
-		"source": 2000
-	})
-
 	// Quark Pipes
 	event.shaped(
 		Item.of('quark:pipe', 12),
@@ -2599,7 +2571,7 @@ ServerEvents.recipes((event) => {
 	FSUpgradeRecipe('hopper', 'functionalstorage:puller_upgrade')
 	FSUpgradeRecipe('redstone_block', 'functionalstorage:redstone_upgrade')
 
-	gaiaPlateRecipe([
+	terraPlateAndGaiaPlate([
 		'botanicadds:rune_tp',
 		'obsidian',
 		'obsidian',
@@ -2610,7 +2582,7 @@ ServerEvents.recipes((event) => {
 		'botania:corporea_spark'
 	], 'functionalstorage:ender_drawer', 200000)
 
-	gaiaPlateRecipe([
+	terraPlateAndGaiaPlate([
 		'botania:rune_gluttony',
 		'ender_eye',
 		'obsidian',
@@ -2618,4 +2590,312 @@ ServerEvents.recipes((event) => {
 		'obsidian',
 		'create:iron_sheet'
 	], 'functionalstorage:void_upgrade', 50000)
+
+	const tidesingerInputs = [
+		'helmet',
+		'chestplate',
+		'leggings',
+		'boots',
+		'sword',
+		'pickaxe',
+		'leggings',
+		'shovel',
+		'axe'
+	]
+	tidesingerInputs.forEach(type => {
+		event.remove({ output: `mythicmetals:tidesinger_${type}` })
+		event.smithing(
+			`mythicmetals:tidesinger_${type}`,
+			'mythicmetals:tidesinger_smithing_template',
+			`mythicmetals:aquarium_${type}`,
+			'#adj:tidesinger_upgrade_coral'
+		)
+	})
+
+	// Slightly different early-game recipes
+	const earlyGameReworkItems = [
+		'minecraft:arrow',
+		'minecraft:campfire',
+		'minecraft:soul_campfire',
+		'minecraft:torch',
+		'minecraft:soul_torch',
+		'netherexp:ancient_torch',
+		'minecraft:redstone_torch',
+		'witherstormmod:tainted_torch',
+		'alexscaves:bioluminescent_torch',
+		'tide:jelly_torch_from_jellyfish',
+		'netherexp:ancient_campfire'
+	]
+	earlyGameReworkItems.forEach(item => {
+		event.remove({ type: 'crafting_shaped', output: item })
+	})
+
+
+	function torchRecipe(input, amount) {
+		event.shaped(
+			Item.of('torch', amount),
+			[
+				'I',
+				'S'
+			],
+			{
+				I: input,
+				S: 'stick'
+			}
+		)
+	}
+	function torchTransform(input, output, amount) {
+		let ingredients = [input];
+		for (let i = 0; i < amount; i++) {
+			ingredients.push('torch')
+		}
+		event.shapeless(
+			Item.of(output, amount),
+			ingredients
+		)
+	}
+	torchRecipe('#c:coal', 8)
+	torchRecipe('slime_ball', 3)
+	torchRecipe('flint', 4)
+	torchRecipe('blaze_powder', 12)
+	torchRecipe('born_in_chaos_v1:fire_dust', 8)
+
+	torchTransform('#soul_fire_base_blocks', 'soul_torch', 3)
+	torchTransform('netherexp:ancient_wax', 'netherexp:ancient_torch', 6)
+	torchTransform('redstone', 'redstone_torch', 1)
+	torchTransform('tide:luminescent_jellyfish', 'tide:jelly_torch', 8)
+	torchTransform('witherstormmod:tainted_dust', 'witherstormmod:tainted_torch', 2)
+	torchTransform('alexscaves:bioluminesscence', 'alexscaves:bioluminescent_torch', 3)
+
+	function campfireRecipe(torchInput, baseInput, output) {
+		event.shaped(
+			output,
+			[
+				' S ',
+				'STS',
+				'LBL'
+			],
+			{
+				S: 'stick',
+				T: torchInput,
+				L: '#logs_that_burn',
+				B: baseInput
+			}
+		)
+	}
+	campfireRecipe('torch', '#logs_that_burn', 'campfire')
+	campfireRecipe('soul_torch', '#soul_fire_base_blocks', 'soul_campfire')
+	campfireRecipe('netherexp:ancient_torch', 'magma_block', 'netherexp:ancient_campfire')
+
+	function arrowRecipe(input, outputAmount) {
+		event.shaped(
+			Item.of('arrow', outputAmount),
+			[
+				'I',
+				'S',
+				'F'
+			],
+			{
+				I: input,
+				S: 'stick',
+				F: 'feather'
+			}
+		)
+	}
+	arrowRecipe('iron_nugget', 8)
+	arrowRecipe('flint', 20)
+	arrowRecipe('ars_nouveau:wilden_spike', 50)
+
+	event.campfireCooking('minecraft:torch', 'minecraft:stick', 0, 60)
+	event.campfireCooking('minecraft:charcoal', '#logs_that_burn', 0.15, 1200)
+
+	// Items to Farmer's Delight Stew recipes
+	const stewIDs = [
+		'aquamirae:sea_stew',
+		'witherstormmod:golden_apple_stew',
+		'alexsmobs:mosquito_repellent_stew',
+		'unusal_end:ender_stew_recipe',
+		'alexscaves:vesper_stew',
+		'alexscaves:seething_stew',
+		'the_bumblezone:bee_soup',
+		'unusualend:warped_stew_recipe',
+		'aquamirae:poseidons_breakfast',
+		'unusualend:blob_stew_recipe',
+		'alexscaves:primordial_soup',
+		'mynethersdelight:crafting/rock_soup'
+	];
+
+	event.forEachRecipe([{ type: 'crafting_shaped' }, { type: 'crafting_shapeless' }], recipe => {
+		if (!stewIDs.includes(recipe.getId())) return;
+
+		let ingredients = recipe.getOriginalRecipeIngredients();
+		const result = recipe.getOriginalRecipeResult();
+
+		let baseItem;
+		switch (recipe.getId()) {
+			case 'witherstormmod:golden_apple_stew':
+				baseItem = 'minecraft:suspicious_stew';
+				break;
+			case 'aquamirae:poseidons_breakfast':
+				baseItem = 'aquamirae:sea_stew';
+				break;
+			default:
+				baseItem = 'minecraft:bowl';
+				break;
+		}
+
+		// Filter out ingredients that contain the base item
+		ingredients = ingredients.filter(ingredient => !ingredient.getItemIds().toString().includes(baseItem));
+
+		console.log(ingredients)
+		event.remove({ id: recipe.getId() });
+
+		event.recipes.farmersdelight.cooking(
+			ingredients,
+			result,
+			0.35,
+			20,
+			baseItem
+		);
+	});
+
+
+	// Funnier Boat crafting
+	function lycheeBoat(boat, block, isChestRecipe) {
+
+		const id = boat.split(':')
+		const mod = id[0];
+		const type = id[1].replace('_boat', '');
+		const boatType = `${(mod == 'upgrade_aquatic') ? 'blueprint' : mod}:${(mod === 'aether' || mod === 'aether_redux') ? `${type}_` : ((mod == 'moresnifferflowers') ? `mod_${type}_` : '')}${isChestRecipe ? 'chest_' : ''}boat`
+
+		function plankShapeChecks(xzAxis) {
+			let checks;
+			if (xzAxis == "x") {
+				checks = {
+					"type": "and",
+					"contextual": [
+						{ "type": "execute", "command": `execute if block ~1 ~1 ~ ${block}`, "hide": true },
+						{ "type": "execute", "command": `execute if block ~-1 ~1 ~ ${block}`, "hide": true },
+						{ "type": "execute", "command": `execute if block ~1 ~ ~ ${block}`, "hide": true },
+						{ "type": "execute", "command": `execute if block ~-1 ~ ~ ${block}`, "hide": true },
+					],
+					"hide": true
+				}
+			} else {
+				checks = {
+					"type": "and",
+					"contextual": [
+						{ "type": "execute", "command": `execute if block ~ ~1 ~1 ${block}` },
+						{ "type": "execute", "command": `execute if block ~ ~1 ~-1 ${block}` },
+						{ "type": "execute", "command": `execute if block ~ ~ ~1 ${block}` },
+						{ "type": "execute", "command": `execute if block ~ ~ ~-1 ${block}` },
+					]
+				}
+			}
+			checks.contextual.push({ "type": "not", "contextual": { "type": "execute", "command": `execute if block ~ ~1 ~ ${block}` } })
+			if (isChestRecipe) {
+				checks.contextual.push({ "type": "execute", "command": `execute if block ~ ~1 ~ chest`, "hide": true })
+			}
+			else {
+				checks.contextual.push({ "type": "not", "contextual": { "type": "execute", "command": `execute if block ~ ~1 ~ chest`, "hide": true } })
+			}
+			return checks;
+		}
+
+		function clearResult(axis) {
+			const typeNBT = (mod === 'aether' || mod === 'aether_redux') ? '' : `${(mod == 'alexscaves') ? 'ACBoatType' : 'type'}: "${type}", Type:"${type}"`;
+			return [
+				{
+					"type": "execute",
+					"command": `execute align xyz run summon ${boatType} ~0.5 ~0.05 ~0.5 {Rotation:[${(axis == "x") ? '90f' : '0f'},0f],${typeNBT}}`,
+					"hide": true
+				},
+				(axis == "x") ?
+					{
+						"type": "execute",
+						"command": `fill ~1 ~1 ~ ~-1 ~ ~ minecraft:air replace ${block}`,
+						"hide": true
+					} :
+					{
+						"type": "execute",
+						"command": `fill ~ ~1 ~1 ~ ~ ~-1 minecraft:air replace ${block}`,
+						"hide": true
+					},
+				{
+					"type": "execute",
+					"command": `fill ~ ~1 ~ ~ ~1 ~ minecraft:air replace chest`,
+					"hide": true
+				},
+				{
+					"type": "execute",
+					"command": "playsound minecraft:block.anvil.use block @a ~ ~ ~",
+					"hide": true
+				}
+			]
+		}
+
+		function axisedRecipe(axis) {
+			event.custom({
+				"type": "lychee:block_interacting",
+				"hide_in_viewer": false,
+				"item_in": {
+					"item": "minecraft:wooden_shovel"
+				},
+				"block_in": block,
+				"contextual": {
+					"type": "and",
+					"contextual": plankShapeChecks(axis),
+					"hide": true
+				},
+				"post": clearResult(axis)
+			})
+		}
+
+		axisedRecipe("x", isChestRecipe);
+		axisedRecipe("z", isChestRecipe);
+
+		if (!isChestRecipe) {
+			// REI/JEI display
+			let text = [
+				'Place 5 planks as shown:',
+				'⬛  ⬛  < top layer',
+				'⬛⬜⬛  < bottom layer',
+				'',
+				'Interact with ⬜',
+				'Consumes the Planks',
+				' and creates the Boat',
+				'If you want to make a Chest Boat instead,',
+				' put a Chest in the empty spot above the ⬜'
+			]
+			event.custom({
+				"type": "lychee:block_interacting",
+				"ghost": true,
+				"comment": text.join('\n'),
+				"item_in": {
+					"item": "minecraft:wooden_shovel"
+				},
+				"block_in": block,
+				"post": [
+					{
+						"type": "drop_item",
+						"item": boat
+					}
+				]
+			})
+		}
+	}
+
+	event.forEachRecipe({ output: /boat/, type: 'crafting_shaped' }, recipe => {
+		const result = recipe.getOriginalRecipeResult();
+
+		event.remove({ id: recipe.getId() });
+		if (result.id.includes('chest')) {
+			return;
+		}
+
+		const plankType = recipe.getOriginalRecipeIngredients().toArray()[0].getItemIds()[0];
+
+		lycheeBoat(result.id, plankType, true);
+		lycheeBoat(result.id, plankType, false);
+	})
 });

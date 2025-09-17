@@ -767,7 +767,7 @@
 
 [world]
 	"Ancient Wood" = false
-	"Azalea Wood" = false
+	"Azalea Wood" = true
 	"Big Stone Clusters" = true
 	"Blossom Trees" = false
 	"Chorus Vegetation" = true

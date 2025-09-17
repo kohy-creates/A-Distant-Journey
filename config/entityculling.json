@@ -26,7 +26,8 @@
     "witherstormmod:tentacle_spike",
     "witherstormmod:tentacle",
     "witherstormmod:wither_storm_head",
-    "witherstormmod:wither_storm_segment"
+    "witherstormmod:wither_storm_segment",
+    "minecraft:area_effect_cloud"
   ],
   "tracingDistance": 128,
   "debugMode": false,
@@ -74,7 +75,8 @@
     "witherstormmod:wither_storm",
     "witherstormmod:wither_storm_segment",
     "witherstormmod:withered_symbiont",
-    "witherstormmod:tentacle"
+    "witherstormmod:tentacle",
+    "minecraft:area_effect_cloud"
   ],
   "disableF3": true,
   "skipEntityCulling": false,

@@ -303,38 +303,6 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"This tree is very bare bones. But Ponder exists so I'll say it's complete for now."
-				""
-				"I'll definitely improve it in the future though."
-			]
-			id: "35DB17A261700EA1"
-			subtitle: "Click to read"
-			tasks: [{
-				id: "25F271FF9B314BC7"
-				title: "Blind testing note"
-				type: "checkmark"
-			}]
-			x: -2.5d
-			y: -2.5d
-		}
-		{
-			description: [
-				"There might be some errors with the campaign tree. Some advancements may not be possible at all (for some reason) and you might get stuck. If that happens, try reloading your world first because FTB Quests sometimes bugs out. If it doesn't fix it, report it immediately."
-				""
-				"Have fun!"
-			]
-			id: "7C677452AA9FB41D"
-			subtitle: "Click to read"
-			tasks: [{
-				id: "0530A5C825D12597"
-				title: "Blind testing note"
-				type: "checkmark"
-			}]
-			x: -2.5d
-			y: -2.5d
-		}
-		{
 			dependencies: ["1FA28AA6F3F8D048"]
 			id: "74E81719E903F908"
 			subtitle: "Craft a Mechanical Crafter"

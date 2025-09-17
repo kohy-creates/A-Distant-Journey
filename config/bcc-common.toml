@@ -5,9 +5,9 @@
 	#Range: > 0
 	modpackProjectID = 1325141
 	#The name of the modpack
-	modpackName = "A Distant Journey"
+	modpackName = "§6§lADJ§r"
 	#The version of the modpack
-	modpackVersion = "0.0.1"
+	modpackVersion = "1.0.0"
 	#Use the metadata.json to determine the modpack version
 	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
 	useMetadata = false

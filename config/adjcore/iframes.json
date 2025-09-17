@@ -15,7 +15,9 @@
 		"iframes": 0,
 		"overrides": {
 			"minecraft:magma_cube": 10,
-			"minecraft:slime": 10
+			"minecraft:slime": 10,
+			"the_bumblezone:honey_slime": 10,
+			"alexscaves:ferrouslime": 10
 		}
 	},
 	"minecraft:mob_projectile": {
@@ -28,6 +30,9 @@
 		"iframes": 8
 	},
 	"minecraft:on_fire": {
-		"iframes": 5
+		"iframes": 9
+	},
+	"minecraft:in_fire": {
+		"iframes": 9
 	}
 }

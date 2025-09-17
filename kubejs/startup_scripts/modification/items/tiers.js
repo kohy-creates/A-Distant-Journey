@@ -46,11 +46,11 @@ const tiers = {
 		repairIngredient: '#c:carmot_ingots'
 	},
 	'celestium': {
-		uses: 2470,
-		speed: 16.0,
-		attackDamageBonus: 6.0,
+		uses: 3000,
+		speed: 15.0,
+		attackDamageBonus: 8.0,
 		level: 5,
-		enchantmentValue: 26,
+		enchantmentValue: 30,
 		repairIngredient: '#c:celestium_ingots'
 	},
 	'copper': {
@@ -292,6 +292,8 @@ ItemEvents.modification(event => {
 	modifyTier('majruszsdifficulty:enderium', 'enderium');
 	modifyTier('minecraft:netherite', 'netherite');
 	modifyTier('mythicmetals:mythril', 'mythril');
+	modifyTier('mythicmetals:metallurgium', 'metallurgium');
+	modifyTier('mythicmetals:celestium', 'celestium');
 
 	// event.modify('mythicmetals:orichalcum_hammer', item => {
 	// 	item.tier = $TierSortingRegistry.byName('adj:orichalcum');

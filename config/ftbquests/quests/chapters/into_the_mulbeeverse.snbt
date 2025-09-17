@@ -1,5 +1,5 @@
 {
-	autofocus_id: "454BECC49D208105"
+	autofocus_id: "178AFD6B8E09745B"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "into_the_mulbeeverse"
@@ -14,7 +14,7 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: 5.0d
-			y: 2.0d
+			y: -2.0d
 		}
 		{
 			dependency: "2EE04DF9097D602C"
@@ -23,7 +23,15 @@
 			rotation: 0.0d
 			width: 5.0d
 			x: 1.5d
-			y: 2.0d
+			y: -2.0d
+		}
+		{
+			height: 1.75d
+			image: "the_bumblezone:block/honey_fluid_still"
+			rotation: 45.0d
+			width: 1.75d
+			x: -4.0d
+			y: -2.0d
 		}
 	]
 	order_index: 0
@@ -34,7 +42,7 @@
 			description: [
 				"Did you ever hear about the Mulbeeverse theory? The Mulbeeverse is a hypothetical set of all Beehives in your world, forming a huge network known as The Bumblezone. Well, maybe 'hypothetical' isn't the right word to use here, because it is in fact 100% real."
 				""
-				"Ever wanted to go on a walk inside a Beehive? Luckily, The Mulbeeverse allows us to do that! Just toss an Ender Pearl into a Beehive (doesn't matter if it is naturally generated or not) and get ready to explore The Bumblezone!"
+				"Ever wanted to go on a walk inside a Beehive? Luckily, The Mulbeeverse allows us to do that! Just toss an Ender Pearl into any Beehive/Bee Nest (doesn't matter if it is naturally generated or not) and get ready to explore The Bumblezone!"
 				""
 				"Leaving The Bumblezone is just as easy as going in - just mine downards until you fall out of the hive and you will be brought back to where you originally came from."
 			]
@@ -73,7 +81,7 @@
 			}]
 			title: "Honey Drunk"
 			x: 0.0d
-			y: 0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -95,7 +103,7 @@
 			}]
 			title: "Pollen Fight"
 			x: 3.0d
-			y: 1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -117,7 +125,7 @@
 			}]
 			title: "Fighting the Swarm"
 			x: 1.0d
-			y: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -139,7 +147,7 @@
 			}]
 			title: "Poison Warfare"
 			x: 1.0d
-			y: 1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -161,7 +169,7 @@
 			}]
 			title: "Slimy Mitosis"
 			x: 1.0d
-			y: 0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -183,7 +191,7 @@
 			}]
 			title: "Terror Fangs"
 			x: 2.0d
-			y: 0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -205,7 +213,7 @@
 			}]
 			title: "Back in Action"
 			x: 2.0d
-			y: 1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -227,7 +235,7 @@
 			}]
 			title: "The Crazy Florist"
 			x: 3.0d
-			y: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -249,7 +257,7 @@
 			}]
 			title: "Peak Inefficiency"
 			x: 2.0d
-			y: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -271,7 +279,7 @@
 			}]
 			title: "Hungry Hungry Bees"
 			x: 2.0d
-			y: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -293,12 +301,13 @@
 			}]
 			title: "Flooding The Housing Market"
 			x: 0.0d
-			y: 2.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["454BECC49D208105"]
+			dependencies: ["06F55BABCAB737E7"]
+			description: [""]
 			id: "2EE04DF9097D602C"
-			subtitle: "Find a Queen Bee in her tower and trade with her"
+			subtitle: "Find an enchanted Honey Compass in a Cell Maze and follow it to the Queen's Tower"
 			tasks: [{
 				advancement: "the_bumblezone:the_queens_desire/the_beginning"
 				criterion: ""
@@ -307,7 +316,7 @@
 			}]
 			title: "The Queen's Desire"
 			x: -1.5d
-			y: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -329,7 +338,7 @@
 			}]
 			title: "Love Bees"
 			x: 3.0d
-			y: 0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -351,7 +360,7 @@
 			}]
 			title: "Otherwordly Mites"
 			x: 3.0d
-			y: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -373,7 +382,7 @@
 			}]
 			title: "The Great Dragon Slayer"
 			x: 0.0d
-			y: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -395,7 +404,7 @@
 			}]
 			title: "Crazy Trader"
 			x: 1.0d
-			y: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -430,7 +439,7 @@
 			}]
 			title: "The Complete Saga"
 			x: 5.0d
-			y: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -452,19 +461,7 @@
 			}]
 			title: "Too Many Legs"
 			x: 0.0d
-			y: 1.5d
-		}
-		{
-			description: ["This page is still WIP. Right now it only contains info on how to enter and leave The Bumblezone and the Queen's Desire task line (so that it isn't completely impossible to craft an Eye of Ethercraft if you don't know what to do)"]
-			id: "3090E8C8D08DFB27"
-			subtitle: "Click to read"
-			tasks: [{
-				id: "1CBEBD01BF2DAB56"
-				title: "Blind testing note"
-				type: "checkmark"
-			}]
-			x: -5.5d
-			y: 2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2EE04DF9097D602C"]
@@ -477,7 +474,160 @@
 			}]
 			title: "Royal Delight"
 			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["454BECC49D208105"]
+			id: "178AFD6B8E09745B"
+			subtitle: "Craft or find a Honey Compass"
+			tasks: [{
+				id: "68A01A7DAD0C6551"
+				item: {
+					Count: 1
+					id: "the_bumblezone:honey_compass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Is This Even Still a Compass?"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["178AFD6B8E09745B"]
+			icon_scale: 0.75d
+			id: "06F55BABCAB737E7"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Find and enter a Cell Maze. Be careful if you don't have the Protection of The Hive effect!"
+			tasks: [{
+				icon: "minecraft:honeycomb_block"
+				id: "52888155146EBF8B"
+				structure: "the_bumblezone:cell_maze"
+				title: "Find a Cell Maze"
+				type: "structure"
+			}]
+			title: "Lost in the Cells"
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["454BECC49D208105"]
+			id: "78FF0A9F991E4690"
+			subtitle: "Grab some liquid honey into a bucket"
+			tasks: [{
+				id: "39C6CFD4F3768046"
+				item: "the_bumblezone:honey_bucket"
+				type: "item"
+			}]
+			title: "Pooh's Favorite"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["454BECC49D208105"]
+			icon: "the_bumblezone:honeycomb_brood_block"
+			id: "488944AD4B29AD15"
+			subtitle: "Feed the bee inside a Honeycomb Brood Block. Doing it enough times will bless you with Protection of The Hive!"
+			tasks: [
+				{
+					block: "the_bumblezone:honeycomb_brood_block"
+					block_type: 0
+					checkItem: false
+					icon: "the_bumblezone:bee_bread"
+					id: "468161F1B3EF17D2"
+					isItemInteraction: true
+					item: "the_bumblezone:bee_bread"
+					title: "Use some Bee Bread on a Honeycomb Brood Block"
+					type: "questsadditions:use"
+					value: 1L
+				}
+				{
+					block: "the_bumblezone:honeycomb_brood_block"
+					block_type: 0
+					checkItem: false
+					icon: "minecraft:honey_bottle"
+					id: "100B52CB599381F4"
+					isItemInteraction: true
+					item: "minecraft:honey_bottle"
+					title: "Or use a Honey Bottle!"
+					type: "questsadditions:use"
+					value: 1L
+				}
+			]
+			title: "Protection of The Hive"
+			x: -5.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["454BECC49D208105"]
+			id: "739D365C7FAA5895"
+			subtitle: "Find a Crystalline Flower in gardens hanging from The Bumblezone's ceilings"
+			tasks: [{
+				id: "70652D32011610FB"
+				item: "the_bumblezone:crystalline_flower"
+				type: "item"
+			}]
+			title: "So I Say, Let It Grow!"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["454BECC49D208105"]
+			id: "783296B76EF1B99D"
+			subtitle: "Pick up some Honey Crystal Shards"
+			tasks: [{
+				id: "4AE4D0DED8A9BEA6"
+				item: "the_bumblezone:honey_crystal_shards"
+				type: "item"
+			}]
+			title: "Rock Candy"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["454BECC49D208105"]
+			id: "0A244A81F5ED17C8"
+			subtitle: "Find or craft Flower Hedgear. Wear it to attract bees and look extra pretty"
+			tasks: [{
+				id: "1DAD8CDC7D57A366"
+				item: {
+					Count: 1
+					id: "the_bumblezone:flower_headwear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "BE A FLOWER!"
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["454BECC49D208105"]
+			icon: "the_bumblezone:buzzing_briefcase"
+			id: "594D395143D0F86E"
+			subtitle: "Put a Bee variant unique to The Bumblezone into a Briefcase"
+			tasks: [
+				{
+					id: "3E368FD803F5752D"
+					item: "the_bumblezone:buzzing_briefcase"
+					type: "item"
+				}
+				{
+					checkItem: false
+					entity: "the_bumblezone:variant_bee"
+					icon: "the_bumblezone:variant_bee_spawn_egg"
+					id: "32C7F49DAF5ECD7B"
+					nbt: { }
+					type: "questsadditions:interaction"
+					value: 1L
+				}
+			]
+			title: "What's This??"
+			x: -2.5d
+			y: 3.5d
 		}
 	]
 	title: "Into the Mulbeeverse"

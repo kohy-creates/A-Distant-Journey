@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "s1": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:the_end"
+      }
+    },
+    "s2": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "minecraft:the_end"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "s1",
+      "s2"
+    ]
+  ],
+  "rewards": {
+    "function": "true_ending:other/teleport_end"
+  }
+}

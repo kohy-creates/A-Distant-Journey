@@ -700,6 +700,10 @@ global.autoscaleMobs = [
 	'born_in_chaos_v1:spiritof_chaos',
 	'born_in_chaos_v1:baby_spider',
 	'born_in_chaos_v1:baby_spider_controlled',
+	'netherexp:apparition',
+	'netherexp:vessel',
+	'minecraft:slime',
+	'minecraft:magma_cube'
 ]
 
 global.mobs = []
@@ -708,7 +712,8 @@ global.WitherStormFlyingSpeed = 0.005;
 
 EntityJSEvents.attributes(event => {
 
-	global.mobs = event.getAllTypes();
+	// Disabled if I don't need it for testing so that it doesn't linger in memory
+	// global.mobs = event.getAllTypes();
 
 	event.modify('player', attributes => {
 		attributes.add('generic.max_health', 100);

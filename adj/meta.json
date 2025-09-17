@@ -3,7 +3,7 @@
 	"hotfixesFormat": null,
 	"versions": [
 		{
-			"id": "0.0.1",
+			"id": "1.0.0",
 			"releasedAt": 1754946322000,
 			"update_type": "major",
 			"promotions": {

@@ -58,7 +58,8 @@
 		"replace": true,
 		"attributes": [
 			"minecraft:generic.attack_damage;3;0",
-			"minecraft:generic.armor;4;0"
+			"minecraft:generic.armor;4;0",
+			"rediscovered:undead_damage_scaling;0.1;1"
 		]
 	}
 }

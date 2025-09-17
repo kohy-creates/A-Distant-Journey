@@ -6,16 +6,24 @@ function commandInWorld(world, command) {
 	return '/execute in ' + world + ' run ' + command.replace(/\//g, '');
 }
 
+const nightmareStalkerMsgs = [
+    "Something is following you...",
+    "You're not alone...  Stay alert...",
+	"A distant roar can be heard...",
+	"A nightmare has materialized nearby..."
+];
+
 EntityEvents.spawned(event => {
 	const entity = event.getEntity();
 
 	if (entity.getType() === 'born_in_chaos_v1:nightmare_stalker') {
 		if (event.success) {
+			const randomMsg = nightmareStalkerMsgs[Math.floor(Math.random() * nightmareStalkerMsgs.length)];
 			event.getServer().runCommandSilent(
-				commandAtEntity(entity, '/immersivemessages sendcustom @p[] {anchor:0,y:100,shake:1,obfuscate:1,color:"#c50000",slideoutright:1,slideleft:1,wave:1} 6 Something is following you...')
+				commandAtEntity(entity, `/immersivemessages sendcustom @p[] {anchor:0,y:100,shake:1,obfuscate:1,color:"#c50000",slideoutright:1,slideleft:1,wave:1} 6 ${randomMsg}`)
 			)
 			event.getServer().runCommandSilent(
-				commandAtEntity(entity, '/playsound born_in_chaos_v1:stalker_roar_distant hostile @p[] ~ ~ ~ 0 0.2 0.2')
+				commandAtEntity(entity, '/playsound born_in_chaos_v1:stalker_roar_distant hostile @p[] ~ ~ ~ 0 0.5 0.2')
 			)
 		}
 	}
@@ -120,14 +128,14 @@ ServerEvents.tick(event => {
 							break;
 						}
 						case 3: {
-							sendMessage({ text: 'The Beast is getting stronger with each passing moment', color: '#d39dff', slide: 'intro' });
+							sendMessage({ text: 'The Wither Storm is getting stronger with each passing moment', color: '#d39dff', slide: 'intro' });
 							sendMessage({ text: 'You still have time to prepare your escape route', color: '#d39dff', slide: 'next' });
 							sendMessage({ text: 'It knows where you are. It\'s not strong enough to follow you yet', color: '#d39dff', slide: 'next', duration: 6 });
 							sendMessage({ text: 'Start planning. Now.', color: '#d39dff', slide: 'outro', duration: 5 });
 							break;
 						}
 						case 4: {
-							sendMessage({ text: 'The Beast can feel you', color: '#d39dff', slide: 'intro' });
+							sendMessage({ text: 'The Wither Storm can sense you. It is after you now', color: '#d39dff', slide: 'intro' });
 							sendMessage({ text: 'Keep moving. It\'s slow but it will surely find you at some point', color: '#d39dff', slide: 'next', duration: 6 });
 							sendMessage({ text: 'Run. Or go underground. Hide', color: '#d39dff', slide: 'outro', duration: 5 });
 							break;
@@ -142,7 +150,7 @@ ServerEvents.tick(event => {
 						}
 						case 7: {
 							sendMessage({ text: 'It\'s been a long time', color: '#d39dff', slide: 'intro', duration: 5 });
-							sendMessage({ text: 'The Beast destroyed anything in its path', color: '#d39dff', slide: 'next', duration: 5 });
+							sendMessage({ text: 'The Wither Storm destroyed anything in its path', color: '#d39dff', slide: 'next', duration: 5 });
 							sendMessage({ text: 'But sooner or later it will be all over', color: '#d39dff', slide: 'outro', duration: 6 });
 							break;
 						}

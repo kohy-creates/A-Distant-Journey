@@ -4,7 +4,7 @@
       "moon_texture_color": "2f6628",
       "sky_light_color": "3e993b"
     },
-    "moon_size": 25.0,
+    "moon_size": 30.0,
     "moon_texture_location": "minecraft:textures/environment/moon_phases.png"
   },
   "dimension_chances": {

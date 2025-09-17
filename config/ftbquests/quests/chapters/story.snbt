@@ -289,17 +289,8 @@
 			image: "adj:textures/texts/quote.png"
 			rotation: 0.0d
 			width: 12.0d
-			x: -2.5d
-			y: 6.0d
-		}
-		{
-			dependency: "369CDCF4288D6D76"
-			height: 1.25d
-			image: "buzzier_bees:item/honey_bread"
-			rotation: 0.0d
-			width: 1.25d
-			x: 7.939795918367338d
-			y: 6.7775510204081755d
+			x: -0.5d
+			y: 7.0d
 		}
 		{
 			dependency: "1F3DB68EA2A45EB7"
@@ -1473,8 +1464,8 @@
 				type: "item"
 			}]
 			title: "Gotta Catch 'Em All!"
-			x: 4.5d
-			y: 8.0d
+			x: 7.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1FA64BA25CA7A8D3"]

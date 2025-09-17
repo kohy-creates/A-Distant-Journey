@@ -173,145 +173,117 @@ ItemEvents.modification(event => {
 	 */
 	const gloves = {
 		'aether:iron_gloves': {
-			damage: 1,
+			damage: 2,
 			operation: 0,
-			extra: [
-				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
-				}
-			]
+			extra: []
 		},
 		'aether:golden_gloves': {
-			damage: 1,
+			damage: 2,
 			operation: 0,
 			extra: [
 				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
+					attribute: 'generic.luck',
+					value: 1,
+					operation: 0
 				}
 			]
 		},
 		'aether:zanite_gloves': {
-			damage: 1,
-			operation: 0,
+			damage: 0.06,
+			operation: 1,
 			extra: [
-				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
-				}
 			]
 		},
+		
 		'aether:diamond_gloves': {
-			damage: 1,
+			damage: 3,
 			operation: 0,
-			extra: [
-				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
-				}
-			]
+			extra: []
 		},
 		'aether:leather_gloves': {
 			damage: 1,
 			operation: 0,
-			extra: [
-				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
-				}
-			]
+			extra: []
 		},
 		'aether:neptune_gloves': {
-			damage: 1,
-			operation: 0,
+			damage: 0.06,
+			operation: 1,
 			extra: [
 				{
-					attribute: 'generic.attack_damage',
-					value: 0,
+					attribute: 'forge:swim_speed',
+					value: 0.25,
 					operation: 1
 				}
 			]
 		},
 		'aether:phoenix_gloves': {
-			damage: 1,
+			damage: 0,
 			operation: 0,
 			extra: [
 				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
+					attribute: 'attributeslib:fire_damage',
+					value: 4,
+					operation: 0
 				}
 			]
 		},
 		'aether:obsidian_gloves': {
-			damage: 1,
+			damage: 10,
 			operation: 0,
 			extra: [
 				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
+					attribute: 'generic.attack_speed',
+					value: -0.25,
+					operation: 2
 				}
 			]
 		},
 		'aether:valkyrie_gloves': {
-			damage: 1,
+			damage: 5,
 			operation: 0,
 			extra: [
 				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
+					attribute: 'forge:block_reach',
+					value: 3,
+					operation: 0
 				}
 			]
 		},
-		'aether:chainmail_gloves': {
-			damage: 1,
-			operation: 0,
-			extra: [
-				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
-				}
-			]
-		},
+		// 'aether:chainmail_gloves': {
+		// 	damage: 1,
+		// 	operation: 0,
+		// 	extra: [
+		// 		{
+		// 			attribute: 'generic.attack_damage',
+		// 			value: 0,
+		// 			operation: 1
+		// 		}
+		// 	]
+		// },
 		'aether:gravitite_gloves': {
-			damage: 1,
-			operation: 0,
-			extra: [
-				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
-				}
-			]
+			damage: 0.1,
+			operation: 1,
+			extra: []
 		},
 		'aether:netherite_gloves': {
-			damage: 1,
+			damage: 4,
 			operation: 0,
 			extra: [
 				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
+					attribute: 'attributeslib:crit_chance',
+					value: 0.05,
+					operation: 0
 				}
 			]
 		},
 		'lost_aether_content:power_gloves': {
-			damage: 1,
-			operation: 0,
+			damage: 0.05,
+			operation: 1,
 			extra: [
 				{
-					attribute: 'generic.attack_damage',
-					value: 0,
-					operation: 1
+					attribute: 'generic.attack_knockback',
+					value: 0.25,
+					operation: 0
 				}
 			]
 		}

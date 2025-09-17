@@ -1,6 +1,6 @@
 {
 	// Generates all block states for all blocks in the registry.
-	"generate_all_known_states": true,
+	"generate_all_known_states": false,
 	// Whether blocks are replaced in existing chunks.
 	"retro_gen": false,
 	"state_swapper": [],
@@ -107,6 +107,14 @@
 		"quark:mossy_cobblestone_bricks_stairs": "minecraft:mossy_cobblestone_stairs",
 		"quark:mossy_cobblestone_bricks_wall": "minecraft:mossy_cobblestone_wall",
 
+		"quark:oak_chest": "minecraft:chest",
+		"quark:spruce_chest": "minecraft:chest",
+		"quark:birch_chest": "minecraft:chest",
+		"quark:jungle_chest": "minecraft:chest",
+		"quark:acacia_chest": "minecraft:chest",
+		"quark:dark_oak_chest": "minecraft:chest",
+		"quark:mangrove_chest": "minecraft:chest",
+
 		"quark:oak_hedge": "minecraft:oak_leaves",
 		"quark:spruce_hedge": "minecraft:spruce_leaves",
 		"quark:birch_hedge": "minecraft:birch_leaves",
@@ -153,7 +161,6 @@
 
 		"quark:crate": "minecraft:air",
 		"quark:rope": "supplementaries:rope",
-		"quark:pipe": "minecraft:air",
 
 		"create:oak_window_pane": "minecraft:glass_pane",
 		"create:spruce_window_pane": "minecraft:glass_pane",
@@ -172,6 +179,5 @@
 		"create:dark_oak_window": "minecraft:glass",
 		"create:mangrove_window": "minecraft:glass",
 		"create:bamboo_window": "minecraft:glass"
-
 	}
 }

@@ -16,10 +16,14 @@ function getStageValue(arr, stage) {
 	return null
 }
 
+function setHealth(entity, value) {
+	entity.maxHealth = value;
+	entity.health = value;
+}
+
 function setEntityAttributes(entity, health, damage, armor) {
 	if (health != null) {
-		entity.maxHealth = health
-		entity.health = health
+		setHealth(entity, health);
 	}
 	if (damage != null) {
 		entity.setAttributeBaseValue($Attributes.ATTACK_DAMAGE, damage)
@@ -29,36 +33,50 @@ function setEntityAttributes(entity, health, damage, armor) {
 	}
 }
 
+const entitiesScalingWithSize = [
+	'minecraft:magma_cube',
+	'minecraft:slime',
+	'minecraft:phantom',
+	'the_bumblezone:honey_slime'
+]
+
+/**
+ * @param {Internal.LivingEntity_} entity 
+ * @param {number} currentStage 
+ */
 function scaleEntity(entity, currentStage) {
 	let base = global.hpModifications[entity.type]
 	if (!base) return
 
+	let health, damage, armor;
+
 	// Case 1: simple [hp, dmg, armor]
-	if (Array.isArray(base) && !Array.isArray(base[0])) {
-		let health = base[0] || 100,
-			damage = base[1] || 15,
-			armor = base[2] || 0;
+	if (!Array.isArray(base[0])) {
+		health = base[0] || 100;
+		damage = base[1] || 15;
+		armor = base[2] || 0;
 		if (global.autoscaleMobs.includes(entity.type)) {
 			health = Math.ceil(health * chapterMultipliers.hp[currentStage])
 			damage = Math.ceil(damage * chapterMultipliers.damage[currentStage])
 			armor = Math.ceil(armor * chapterMultipliers.armor[currentStage])
 		}
-		setEntityAttributes(entity, health, damage, armor)
-		return;
 	}
-
 	// Case 2: arrays per stage (hp[], dmg[], armor[])
-	if (Array.isArray(base)) {
+	else {
 		let hpArr = base[0]
 		let dmgArr = base[1]
 		let armorArr = base[2]
 
-		let health = getStageValue(hpArr, currentStage)
-		let damage = getStageValue(dmgArr, currentStage)
-		let armor = getStageValue(armorArr, currentStage)
-
-		setEntityAttributes(entity, health, damage, armor)
+		health = getStageValue(hpArr, currentStage)
+		damage = getStageValue(dmgArr, currentStage)
+		armor = getStageValue(armorArr, currentStage)
 	}
+
+	if (entitiesScalingWithSize.includes(entity.type)) {
+		let size = entity.getNbt().getInt('Size');
+		health *= Math.pow(2, size + 1)
+	}
+	setEntityAttributes(entity, health, damage, armor)
 }
 
 function weightedRandom(weightMap) {
@@ -74,6 +92,14 @@ function weightedRandom(weightMap) {
 		if (random < weight) return key
 		random -= weight
 	}
+}
+
+function randomChance(chance) {
+	return (Math.random() <= chance / 100)
+}
+
+function randomAmount(min, max) {
+	return (Math.floor(Math.random() * (max - min + 1)) + min)
 }
 
 /**
@@ -92,14 +118,37 @@ function specialCase(entity) {
 
 /**
  * 
- * @param {Internal.Entity_} entity 
+ * @param {Internal.LivingEntity_} entity 
  */
-function setGear(entity) {
+function setGear(entity, isHardcore) {
 	switch (entity.type) {
-		case 'minecraft:wither_skeleton': {
-			entity.setItemSlot("mainhand", "golden_sword")
-			break
+		case 'minecraft:piglin': {
+			entity.setItemSlot('mainhand', weightedRandom({
+				'minecraft:golden_sword': 8,
+				'mcdw:crossbow_pride_of_the_piglins': 8,
+				'minecraft:golden_axe': 4,
+				'minecraft:golden_pickaxe': 4,
+			}))
+			break;
 		}
+		case 'minecraft:skeleton': {
+			if (entity.getLevel().getDimension() == 'minecraft:the_nether') {
+				entity.setItemSlot('mainhand', 'mcdw:bow_bonebow')
+			}
+			break;
+		}
+		case 'minecraft:wither_skeleton': {
+			const main = weightedRandom({
+				'golden_sword': 14,
+				'mcdw:scythe_soul_scythe': 1
+			});
+			entity.setItemSlot("mainhand", main);
+			if (main.startsWith('mcdw:')) {
+				entity.setDropChance("mainhand", 1.0);
+			}
+			break;
+		}
+
 		case 'minecraft:husk':
 		case 'minecraft:zombie': {
 			entity.setItemSlot("mainhand", weightedRandom({
@@ -110,35 +159,61 @@ function setGear(entity) {
 				'mythicmetals:copper_sword': 1
 			}));
 
+			if ((isHardcore) ? randomChance(15) : randomChance(12)) {
+				entity.setItemSlot("head", 'slime_block');
+				entity.setDropChance("head", 1.0);
+			}
+
+			if (randomChance(15)) {
+				entity.setItemSlot('offhand', Item.of('torch', randomAmount(7, 15)));
+				entity.setDropChance("offhand", 1.0);
+			}
+
 			if (entity.type == 'minecraft:husk') {
-				if (Math.random <= 0.02) {
-					entity.setItemSlot("head", 'alexsmobs:sombrero')
+				if (randomChance(2)) {
+					entity.setItemSlot("head", 'alexsmobs:sombrero');
 				}
 			}
+			break;
+		}
+
+		case 'minecraft:vindicator': {
+			const main = weightedRandom({
+				'mcdw:scythe_jailors_scythe': 1,
+				'iron_axe': 9
+			});
+			entity.setItemSlot("mainhand", main);
+			if (main.startsWith('mcdw:')) {
+				entity.setDropChance("mainhand", 1.0);
+			}
+			break;
 		}
 	}
+
 }
 
 /**
  * 
- * @param {Internal.Entity_} entity 
+ * @param {Internal.LivingEntity_} entity 
  */
 function hardcoreModifications(entity) {
+	setHealth(entity, Math.ceil(entity.maxHealth * 1.5));
 	switch (entity.type) {
 		case 'minecraft:wither_skeleton': {
-			entity.setItemSlot("mainhand", "golden_sword")
-			if (Math.random() <= 0.15) {
+			if (randomChance(10)) {
 				entity.setItemSlot("mainhand", "mythicmetals:midas_gold_sword")
 				entity.setItemSlot("head", "mythicmetals:midas_gold_helmet")
+				entity.setItemSlot("chest", "mythicmetals:midas_gold_chestplate")
 			}
-			break
+			break;
 		}
 		case 'minecraft:vindicator': {
 			entity.setItemSlot("mainhand", weightedRandom({
-				'minecraft:iron_axe': 2,
-				'minecraft:diamond_axe': 1
+				'mcdw:scythe_jailors_scythe': 2,
+				'minecraft:iron_axe': 9,
+				'minecraft:diamond_axe': 2
 			}));
-			break
+			break;
 		}
 	}
 }
@@ -157,7 +232,7 @@ EntityEvents.spawned((event) => {
 	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""))
 
 	scaleEntity(entity, currentStage)
-	setGear(entity)
+	setGear(entity, isHardcore)
 	if (isHardcore) {
 		hardcoreModifications(entity)
 	};

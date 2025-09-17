@@ -4,7 +4,7 @@
 	// Higher Number makes Luck give you potential for extra MCDW loot. Default = 1.2f
 	"bonusRollsWithLuck": 1.2000000476837158,
 	"WEAPONS_ENABLED_IN_LOOTTABLES": {
-		"ENABLE_WEAPONS_IN_LOOT_TABLES": true
+		"ENABLE_WEAPONS_IN_LOOT_TABLES": false
 	},
 	"COMMON_LOOT_TABLES": {
 		"COMMON_LOOT_TABLES": [

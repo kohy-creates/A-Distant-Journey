@@ -481,7 +481,7 @@ ItemEvents.rightClicked('confluence:demon_heart', event => {
 	if (!player.persistentData.usedDemonHeart) {
 		player.persistentData.usedDemonHeart = true;
 		event.getLevel().playSound(player, player.blockPosition, 'heart_crystals:block.heart_crystal.use', 'players', 1, 1);
-		player["swing(net.minecraft.world.InteractionHand)"]("main_hand");
+		player.swing("main_hand", true);
 		event.getItem().shrink(1);
 		player.server.runCommandSilent(`/curios add accessory ${player.username} 1`)
 	}

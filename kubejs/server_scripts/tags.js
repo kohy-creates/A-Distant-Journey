@@ -173,8 +173,12 @@ ServerEvents.tags('item', event => {
 		/ars_elemental:.*_bangle/
 	])
 
-		event.add('adj:canvas', [
+	event.add('adj:canvas', [
 		/xercapaint:.*canvas.*/
+	])
+
+	event.add('adj:tidesinger_upgrade_coral', [
+		/^(?!.*dead).*:.*_coral_block$/
 	])
 })
 

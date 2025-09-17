@@ -83,15 +83,9 @@ ClientEvents.lang('en_us', event => {
 		'functionalstorage:oak_1': 'Storage Drawer (1x1)',
 		'functionalstorage:oak_2': 'Storage Drawer (1x2)',
 		'functionalstorage:oak_4': 'Storage Drawer (2x2)',
-		'functionalstorage:l': 'Drawer Upgrade (Capacity)',
-		'functionalstorage:collector_upgrade': 'Drawer Upgrade (Collector)',
-		'functionalstorage:puller_upgrade': 'Drawer Upgrade (Puller)',
-		'functionalstorage:pusher_upgrade': 'Drawer Upgrade (Pusher)',
-		'functionalstorage:void_upgrade': 'Drawer Upgrade (Void)',
-		'functionalstorage:redstone_upgrade': 'Drawer Upgrade (Redstone)'
 	}
 
-	/** @type {Record<InputItem_, string>} */
+	/** @type {Record<Internal.InputItem_, string>} */
 	const itemRenames = {
 		'rediscovered:gear': 'Redstone Gear',
 		'quartz': 'Quartz',
@@ -116,7 +110,14 @@ ClientEvents.lang('en_us', event => {
 		'artifacts:everlasting_beef': 'Eternal Beef',
 		'tiered:armorers_hammer': 'Reforging Hammer',
 		'mythicmetals:hallowed_ingot': 'Hallowed Alloy Ingot',
-		'confluence:cobalt_shield': 'Heavy Steel Shield'
+		'confluence:cobalt_shield': 'Heavy Steel Shield',
+
+		'functionalstorage:l': 'Drawer Upgrade (Capacity)',
+		'functionalstorage:collector_upgrade': 'Drawer Upgrade (Collector)',
+		'functionalstorage:puller_upgrade': 'Drawer Upgrade (Puller)',
+		'functionalstorage:pusher_upgrade': 'Drawer Upgrade (Pusher)',
+		'functionalstorage:void_upgrade': 'Drawer Upgrade (Void)',
+		'functionalstorage:redstone_upgrade': 'Drawer Upgrade (Redstone)'
 	}
 
 	for (const [key, value] of Object.entries(extraTranslations)) {

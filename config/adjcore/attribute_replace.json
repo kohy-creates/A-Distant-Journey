@@ -42,6 +42,21 @@
 			"add": [
 				"forge:block_reach;0;3;MAINHAND"
 			]
+		},
+		"mcdw:sword_hawkbrand": {
+			"add": [
+				"attributeslib:crit_chance;0;0.1;MAINHAND"
+			]
+		},
+		"mcdw:sword_masters_katana": {
+			"add": [
+				"attributeslib:crit_chance;0;0.1;MAINHAND"
+			]
+		},
+		"mcdw:sword_sinister": {
+			"add": [
+				"attributeslib:crit_chance;0;0.1;MAINHAND"
+			]
 		}
 	}
 }
