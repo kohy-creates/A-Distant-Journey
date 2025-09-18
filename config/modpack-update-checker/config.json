@@ -2,7 +2,7 @@
   "schemaVersion": 9,
   "currentVersion": "VERSION",
   "modpackName": "NAME",
-  "modpackAuthor": "AUTHOR",
+  "modpackAuthor": "kohara Harukawa and the voices in his head",
   "modpackReleaseType": "stable",
   "updateCheckerId": "https://raw.githubusercontent.com/kohy-creates/A-Distant-Journey/main/adj/",
   "advanced": {
