@@ -7,88 +7,14 @@
 	group: ""
 	icon: "ars_nouveau:worn_notebook"
 	id: "6827135B158F87E2"
-	images: [
-		{
-			height: 10.0d
-			image: "adj:textures/texts/intro.png"
-			rotation: 0.0d
-			width: 10.0d
-			x: 7.0d
-			y: -2.0d
-		}
-		{
-			dependency: "20130F300D432015"
-			height: 2.0d
-			image: "kubejs:item/eye_of_cinders"
-			rotation: 0.0d
-			width: 2.0d
-			x: 0.5d
-			y: 2.0d
-		}
-		{
-			dependency: "545C995B87BA0947"
-			height: 2.0d
-			image: "kubejs:item/eye_of_angels"
-			rotation: 0.0d
-			width: 2.0d
-			x: 2.5d
-			y: 2.0d
-		}
-		{
-			dependency: "6E9823FB2C7C6D19"
-			height: 2.0d
-			image: "kubejs:item/eye_of_dreams"
-			rotation: 0.0d
-			width: 2.0d
-			x: 4.5d
-			y: 2.0d
-		}
-		{
-			dependency: "3F2B685C8C008081"
-			height: 2.0d
-			image: "kubejs:item/eye_of_desolation"
-			rotation: 0.0d
-			width: 2.0d
-			x: 6.5d
-			y: 2.0d
-		}
-		{
-			dependency: "127F1C202BCDDF85"
-			height: 2.0d
-			image: "kubejs:item/eye_of_verdancy"
-			rotation: 0.0d
-			width: 2.0d
-			x: 1.5d
-			y: 4.0d
-		}
-		{
-			dependency: "2816033FD61214F9"
-			height: 2.0d
-			image: "kubejs:item/eye_of_arcanum"
-			rotation: 0.0d
-			width: 2.0d
-			x: 3.5d
-			y: 4.0d
-		}
-		{
-			dependency: "4DD3CEFFA4141525"
-			height: 2.0d
-			image: "kubejs:item/eye_of_ethercraft"
-			rotation: 0.0d
-			width: 2.0d
-			x: 5.5d
-			y: 4.0d
-		}
-		{
-			dependency: "20130F300D432015"
-			height: 12.0d
-			image: "minecraft:textures/gui/advancements/window.png"
-			rotation: 0.0d
-			width: 12.0d
-			x: 3.857142857142861d
-			y: 5.0d
-		}
-	]
+	images: [{
+		height: 10.0d
+		image: "adj:textures/texts/intro.png"
+		rotation: 0.0d
+		width: 10.0d
+		x: 7.0d
+		y: -3.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

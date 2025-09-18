@@ -107,8 +107,8 @@
 				}
 			]
 			title: "To The Whatever Pole"
-			x: 0.5d
-			y: -1.5d
+			x: 0.9571428571428555d
+			y: -1.500000000000007d
 		}
 		{
 			dependencies: ["6A5092882CBFB0D2"]

@@ -3623,8 +3623,8 @@
 				type: "item"
 			}]
 			title: "Order of The Stone"
-			x: -2.0d
-			y: 32.5d
+			x: -1.5d
+			y: 33.0d
 		}
 		{
 			dependencies: ["3E479B783B24C730"]
@@ -3640,8 +3640,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: 32.5d
+			x: -4.5d
+			y: 33.0d
 		}
 		{
 			dependencies: ["1F2003EDC1D3B0A4"]
@@ -3724,8 +3724,8 @@
 				type: "advancement"
 			}]
 			title: "The Watcher"
-			x: -1.0d
-			y: 33.0d
+			x: -0.5d
+			y: 33.5d
 		}
 		{
 			dependencies: ["636684C648DFFC9D"]

@@ -2,19 +2,13 @@ type = user_variables
 
 variable {
   name = debug
-  value = 0
+  value = 1
   reset_on_launch = false
 }
 
 variable {
   name = has_seen_intro_menu
-  value = 0
+  value = 1
   reset_on_launch = false
-}
-
-variable {
-  name = loading_text_change_interval
-  value = 
-  reset_on_launch = true
 }
 

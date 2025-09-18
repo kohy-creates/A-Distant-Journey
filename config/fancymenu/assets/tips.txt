@@ -7,11 +7,11 @@ Tired of the hot flames of The Nether? Why not build a portal out of Glowstone?
 A lot of vanilla materials are renewable, which is awesome if you don't like grinding.
 Struggling early-game? Put some Cobblestone in a Millstone and then wash the result using a Fan placed behind flowing water to get some Iron Nuggets. It's a relatively simple early-game farm.
 There are like 2 or 3 different painting mods in ADJ. Perfect if you love decorating interiors.
-Want to create your own Music Discs? Smelt any exising disc and then re-record it in an Etching Table!
+Want to create your own Music Discs? Smelt any exising disc and then re-record it at an Etching Table!
 Expierience Obelisks can be used to store your Experience points. You can store/retrieve any amount of levels at any time.
 Use code 'kohara' during checkout for a 25% discount on your first month with BisectHosting!
 Looking to remove a specific enchant? Craft a Precision Dispeller - the cooler cousin of a Grindstone.
-If you hate how slow Spawner EXP farms are, look into how Bibliophages work. It's explained in the 'Becoming a Wizard' advancement chapter.
+If you hate how slow Spawner EXP farms are, look into how Bibliophages work.
 Default campaign is not enough for you? Try Hardcore and see how far you can make it.
 Weapons which occupy both hands tend to deal more damage than one-handed ones.
 Efficiency, Sharpness and Power had their max level reduced from V down to III.
@@ -41,15 +41,15 @@ Does your inventory feel too small? Craft a Bundle, a Sack or a Backpack!
 Just in case all the painting mods weren't enough, you can also make your own ones by crafting a Blank Canvas and a Palette. Release your inner Bob Ross.
 Spider Webs will break after a short while if you walk into them.
 If screenshots don't do it for you, you can craft a Camera to capture all of your moments in-game and then place the photos anywhere you want.
-Mutant monsters will start spawning naturally whenever you enter The Aether for the first time.
+Mutant monsters will start spawning naturally whenever you pick up the Eye of Cinders.
 An Alloy Forge is the easiest way of processing your ores to get more materials out of them.
-Maintaining a balanced diet will reward you with buffs.
-Stone Tools have been removed and replaced with ones made of Copper.
+Stone Tools have been removed and replaced with ones made of Copper. They're objectively better, so I'd say it's a worthy tradeoff.
 Rumors say there is a frozen maze in the coldest regions of the Oceans... And other rumors say the ghost of a fallen captain haunts it...
-Blood Moons happen every once in a while, causing more mobs to crawl out to the surface.
-Harvest Moons cause crops to grow faster than usual.
-During Slimy Moons, Slimes will spawn anywhere on the surface,
-Every season lasts 30 in-game days, or 10 real life hours.
+Blood Moons happen every once in a while, causing more mobs to crawl out to the surface. Seek cover and hide during those twisted nights.
+Harvest Moons cause crops to grow faster and yield more than usual.
+During Slimy Moons, Slimes will spawn everywhere on the surface. Great if you need plenty of Slime Balls.
+Every season lasts 30 in-game days, or about 8 real life hours.
+Days last 24 minutes instead of 20 in ADJ, purely so that 1 seconds in real life translates to 1 minute in-game.
 Construction Wands can help you build your dream base quicker. The Infinity Wand is the most efficient and lasts forever!
 Jumping down on your target no longer critically hits. Critical chance now scales based on a few factors, including (but not limited to) your EXP level.
 Every item can only have up to 3 Enchantments at once. Curses don't occupy those slots, but instead add them, so it's a risk-reward type of scenario.
@@ -58,11 +58,11 @@ There are a ton of different accessories for you to choose from, so feel free to
 A Tinker's Workshop can be used to merge some accessories together to combine or upgrade their effects.
 A lot of potion effects have been nerfed. Resistance and Speed are half as efficient and Strength is now a percentage bonus instead of a flat boost.
 A Target Dummy can help you measure your damage, allowing you to test out and compare different weapons.
-A Sawmill is like a Stonecutter, but for wood.
 Some Saplings won't grow in certain Seasons. Keep that in mind while setting up Charcoal farm for your Create machines.
 Enchanting Infusers allow you to select which enchantments you enchant your items with.
 Did you see all of the new death messages yet?
-This pack doesn't really support any language other than English (US), so please don't report any localization issues.
+Did you see all of the new death messages yet? I mean I'm pretty sure you did, the difficulty is pretty high.
+ADJ doesn't support any language other than English (US), so please don't report any localization issues if you still decide to play on a different language.
 Dandelifeons and Shulk me Nots are all good ways to produce lots of Mana late-game.
 Don't confuse Mana generated from magical flora with Mana used to cast spells.
 Legends say this pack was made by a gay furry :3
@@ -70,3 +70,5 @@ You can place a Pet Bed and assign your furry companion to it to allow it to res
 You can't hurt your own pets. At least you shouldn't be able to, according to the mods included.
 Remember to take breaks while playing!
 Place down an Inventory Connector and attach a Storage Terminal to it to create a basic and infinitely expandable storage system.
+Loot chests in structures can be looted by every player in your world, not just whoever finds them first.
+Nights are very dark in ADJ, so make sure you're always carrying a Torch or a Lantern with you at all time.

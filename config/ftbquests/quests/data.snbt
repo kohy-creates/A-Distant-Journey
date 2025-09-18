@@ -19,7 +19,7 @@
 	}
 	pause_game: true
 	progression_mode: "flexible"
-	show_lock_icons: true
+	show_lock_icons: false
 	title: "A Distant Journey"
 	version: 13
 }

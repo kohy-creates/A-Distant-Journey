@@ -74,7 +74,9 @@ function scaleEntity(entity, currentStage) {
 
 	if (entitiesScalingWithSize.includes(entity.type)) {
 		let size = entity.getNbt().getInt('Size');
-		health *= Math.pow(2, size + 1)
+		health *= Math.pow(2, size);
+		damage += (damage * Math.ceil(size * 1.5));
+		armor += (armor * size);
 	}
 	setEntityAttributes(entity, health, damage, armor)
 }

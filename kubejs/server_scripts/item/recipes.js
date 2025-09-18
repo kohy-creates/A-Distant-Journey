@@ -99,6 +99,9 @@ ServerEvents.recipes((event) => {
 		'create:crafting/materials/andesite_alloy',
 		'create:crafting/materials/andesite_alloy_from_zinc',
 
+		'farmersdelight:pie_crust',
+		'delightful:food/pie_crust_from_fat',
+
 
 		///alloy_forgery\:compat\//
 	]
@@ -2765,7 +2768,9 @@ ServerEvents.recipes((event) => {
 
 		const id = boat.split(':')
 		const mod = id[0];
-		const type = id[1].replace('_boat', '');
+		const type = id[1].replace('_boat', '').replace('_raft', '');
+		console.log(id)
+		console.log(type)
 		const boatType = `${(mod == 'upgrade_aquatic') ? 'blueprint' : mod}:${(mod === 'aether' || mod === 'aether_redux') ? `${type}_` : ((mod == 'moresnifferflowers') ? `mod_${type}_` : '')}${isChestRecipe ? 'chest_' : ''}boat`
 
 		function plankShapeChecks(xzAxis) {
@@ -2803,7 +2808,7 @@ ServerEvents.recipes((event) => {
 		}
 
 		function clearResult(axis) {
-			const typeNBT = (mod === 'aether' || mod === 'aether_redux') ? '' : `${(mod == 'alexscaves') ? 'ACBoatType' : 'type'}: "${type}", Type:"${type}"`;
+			const typeNBT = (mod === 'aether' || mod === 'aether_redux') ? '' : `${(mod == 'alexscaves') ? 'ACBoatType' : 'Type'}: "${(boatType.includes('blueprint') ? `${mod}:${type}` : type)}"`;
 			return [
 				{
 					"type": "execute",
@@ -2885,17 +2890,132 @@ ServerEvents.recipes((event) => {
 		}
 	}
 
-	event.forEachRecipe({ output: /boat/, type: 'crafting_shaped' }, recipe => {
+	event.forEachRecipe({ output: /(boat|.*_raft$)/, type: 'crafting_shaped' }, recipe => {
 		const result = recipe.getOriginalRecipeResult();
-
 		event.remove({ id: recipe.getId() });
-		if (result.id.includes('chest')) {
-			return;
-		}
+
+		if (result.id.includes('chest')) return;
 
 		const plankType = recipe.getOriginalRecipeIngredients().toArray()[0].getItemIds()[0];
-
 		lycheeBoat(result.id, plankType, true);
 		lycheeBoat(result.id, plankType, false);
+	});
+
+
+	// Trapdoor, Stairs, Fence and Fence Gates recipes yield more
+	event.forEachRecipe({ output: /trapdoor/, type: 'crafting_shaped' }, recipe => {
+		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
+		if (ingredients.length === 6) {
+			const output = recipe.getOriginalRecipeResult().getId();
+
+			event.remove({ id: recipe.getId() })
+			event.shaped(
+				Item.of(output, 6),
+				[
+					'PPP',
+					'PPP'
+				],
+				{
+					P: ingredients[0]
+				}
+			).id(`kubejs:trapdoor/${output.replace(':', '_')}`)
+		}
+		else if (ingredients.length === 4) {
+			const output = recipe.getOriginalRecipeResult().getId();
+
+			event.remove({ id: recipe.getId() })
+			event.shaped(
+				Item.of(output, 3),
+				[
+					'PP',
+					'PP'
+				],
+				{
+					P: ingredients[0]
+				}
+			).id(`kubejs:trapdoor/${output.replace(':', '_')}`)
+		}
+	})
+
+	event.forEachRecipe({ output: /stairs/, type: 'crafting_shaped' }, recipe => {
+		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
+		const output = recipe.getOriginalRecipeResult().getId();
+
+		event.remove({ id: recipe.getId() })
+
+		event.shaped(
+			Item.of(output, 6),
+			[
+				'P  ',
+				'PP ',
+				'PPP'
+			],
+			{
+				P: ingredients[0]
+			}
+		).id(`kubejs:stairs/${output.replace(':', '_')}`)
+	})
+
+	event.forEachRecipe({ output: /^(?=.*fence)(?!.*gate).*/, type: 'crafting_shaped' }, recipe => {
+		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
+		const output = recipe.getOriginalRecipeResult().getId();
+
+		event.remove({ id: recipe.getId() })
+
+		event.shaped(
+			Item.of(output, 6),
+			(output == 'supplementaries:wicker_fence') ?
+				[
+					'SPS',
+					'SPS',
+				] :
+				[
+					'PSP',
+					'PSP',
+				],
+			{
+				P: ingredients[(output == 'supplementaries:wicker_fence') ? 1 : 0],
+				S: '#c:rods/wooden'
+			}
+		).id(`kubejs:fence/${output.replace(':', '_')}`)
+	})
+
+	event.forEachRecipe({ output: /fence_gate/, type: 'crafting_shaped' }, recipe => {
+		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
+		const output = recipe.getOriginalRecipeResult().getId();
+
+		event.remove({ id: recipe.getId() })
+
+		event.shaped(
+			Item.of(output, 6),
+			[
+				'SPS',
+				'SPS',
+			],
+			{
+				P: ingredients[1],
+				S: '#c:rods/wooden'
+			}
+		).id(`kubejs:fence_gate/${output.replace(':', '_')}`)
+	})
+
+	event.forEachRecipe({ output: /ladder/, type: 'crafting_shaped' }, recipe => {
+		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
+		const output = recipe.getOriginalRecipeResult().getId();
+
+		event.remove({ id: recipe.getId() })
+
+		event.shaped(
+			Item.of(output, (output == 'quark:iron_ladder') ? 4 : 8),
+			[
+				'S S',
+				'SPS',
+				'S S'
+			],
+			{
+				P: ingredients[4],
+				S: ingredients[0]
+			}
+		).id(`kubejs:ladder/${output.replace(':', '_')}`)
 	})
 });
