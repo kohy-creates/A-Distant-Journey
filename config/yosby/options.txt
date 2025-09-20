@@ -33,7 +33,7 @@ damageTiltStrength:0.20892018779342736
 highContrast:false
 gamma:0.75
 renderDistance:12
-simulationDistance:10
+simulationDistance:8
 entityDistanceScaling:1.5
 guiScale:3
 particles:0
@@ -54,7 +54,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:true
+advancedItemTooltips:false
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -177,7 +177,7 @@ key_key.spyglass-improvements.use:key.keyboard.z
 key_key.showmeyourskin.open_settings:key.keyboard.unknown
 key_key.showmeyourskin.global_toggle:key.keyboard.j
 key_terrastorage.keybinding.favorite_item_modifier:key.keyboard.left.alt
-key_terrastorage.keybinding.sort_inventory_bind:key.mouse.middle
+key_terrastorage.keybinding.sort_inventory_bind:key.keyboard.unknown
 key_obscure_tooltips_fix.print_screen:key.keyboard.unknown
 key_key.map_atlases.open_minimap:key.keyboard.unknown
 key_key.map_atlases.zoom_out_minimap:key.keyboard.keypad.subtract

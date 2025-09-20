@@ -36,10 +36,12 @@ You can open the achievements menu from your Inventory, or by pressing its defau
 
 **`L`** - default achievements menu keybind
 **`R`** - combat dash *(if you have gear that grants one)*
-**`F`** - hide first person player model
 **`V`** - voice chat menu
 **`M`** - holding it down opens the Player Menu
 > In it you can access Shaders and other miscellaneous features that don't really deserve their own dedicated keybinds.
+
+**`F6`** - hide first person player model
+**`F7`** - switch sides in third person view
 
 ---
 

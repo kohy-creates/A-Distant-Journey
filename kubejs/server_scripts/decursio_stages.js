@@ -24,6 +24,7 @@ const gamerules = {
 
 		'motherSpiderSpawn': false,
 		'krampusSpawn': false,
+		'gluttonFishSpawn': false,
 
 		'missionarySpawn': false,
 		'lifestealerSpawn': false,
@@ -44,6 +45,7 @@ const gamerules = {
 	'chapter_3': {
 		'motherSpiderSpawn': true,
 		'krampusSpawn': true,
+		'gluttonFishSpawn': true,
 	}
 }
 

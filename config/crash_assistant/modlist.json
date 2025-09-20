@@ -9,6 +9,11 @@
     "modId": "oworld2create",
     "version": "1.0.0"
   },
+  "[MC-1.20.X] Default Key Setup v1.0.0.6 - 2024-4-1.jar": {
+    "jarName": "[MC-1.20.X] Default Key Setup v1.0.0.6 - 2024-4-1.jar",
+    "modId": "default_key_setup",
+    "version": "1.0.0.6"
+  },
   "additionaladditions-6.0.1.jar": {
     "jarName": "additionaladditions-6.0.1.jar",
     "modId": "additionaladditions",
@@ -419,10 +424,10 @@
     "modId": "codechickenlib",
     "version": "4.4.0.516"
   },
-  "Cognition-v2.4.7.1-1.20.1.jar": {
-    "jarName": "Cognition-v2.4.7.1-1.20.1.jar",
+  "Cognition-v2.4.8-1.20.1.jar": {
+    "jarName": "Cognition-v2.4.8-1.20.1.jar",
     "modId": "experienceobelisk",
-    "version": "2.4.7.1-1.20.1"
+    "version": "2.4.8-1.20.1"
   },
   "collective-1.20.1-8.3.jar": {
     "jarName": "collective-1.20.1-8.3.jar",
@@ -757,10 +762,10 @@
     "modId": "etl",
     "version": "1.1.1"
   },
-  "everycomp-1.20-2.9.2-forge.jar": {
-    "jarName": "everycomp-1.20-2.9.2-forge.jar",
+  "everycomp-1.20-2.9.3-forge.jar": {
+    "jarName": "everycomp-1.20-2.9.3-forge.jar",
     "modId": "everycomp",
-    "version": "1.20-2.9.2"
+    "version": "1.20-2.9.3"
   },
   "exhaustionoptions-0.1a.jar": {
     "jarName": "exhaustionoptions-0.1a.jar",
@@ -1117,10 +1122,15 @@
     "modId": "jei",
     "version": "15.20.0.112"
   },
-  "justenoughbreeding-forge-1.20-1.20.1-1.5.0.jar": {
-    "jarName": "justenoughbreeding-forge-1.20-1.20.1-1.5.0.jar",
+  "justenoughbreeding-forge-1.20-1.20.1-2.1.1.jar": {
+    "jarName": "justenoughbreeding-forge-1.20-1.20.1-2.1.1.jar",
     "modId": "justenoughbreeding",
-    "version": "1.5.0"
+    "version": "2.1.1"
+  },
+  "KeyBindJS-2001-2.3.0.jar": {
+    "jarName": "KeyBindJS-2001-2.3.0.jar",
+    "modId": "keybindjs",
+    "version": "2001-2.3.0"
   },
   "Kiwi-1.20.1-Forge-11.9.2.jar": {
     "jarName": "Kiwi-1.20.1-Forge-11.9.2.jar",
@@ -1730,6 +1740,11 @@
     "modId": "smoothswapping",
     "version": "0.9.2"
   },
+  "smsn-forge-1.2.10-1.20.1.jar": {
+    "jarName": "smsn-forge-1.2.10-1.20.1.jar",
+    "modId": "smsn",
+    "version": "1.2.10-1.20.1"
+  },
   "SnowRealMagic-1.20.1-Forge-10.6.5.jar": {
     "jarName": "SnowRealMagic-1.20.1-Forge-10.6.5.jar",
     "modId": "snowrealmagic",
@@ -1840,10 +1855,10 @@
     "modId": "supermartijn642configlib",
     "version": "1.1.8"
   },
-  "supplementaries-1.20-3.1.38.jar": {
-    "jarName": "supplementaries-1.20-3.1.38.jar",
+  "supplementaries-1.20-3.1.39.jar": {
+    "jarName": "supplementaries-1.20-3.1.39.jar",
     "modId": "supplementaries",
-    "version": "1.20-3.1.38"
+    "version": "1.20-3.1.39"
   },
   "suppsquared-1.20-1.1.23.jar": {
     "jarName": "suppsquared-1.20-1.1.23.jar",

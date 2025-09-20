@@ -4,10 +4,10 @@
 	#Default: false, Vanilla: true
 	book_screen_pause = false
 	#Show 'Done' button in the Scholar book screens. Default: false
-	book_screen_show_done_button = false
+	book_screen_show_done_button = true
 	#Additional tool buttons will be shown in book edit screen.
 	#This setting can be toggled in-game by pressing F1 button (by default) or clicking on question mark in top right corner. Initial value: false
-	book_edit_screen_show_extra_tools = false
+	book_edit_screen_show_extra_tools = true
 
 	[ui.colors]
 		#Color of the book text. Default: FF7B593D

@@ -357,11 +357,19 @@
 		}
 		{
 			blockIds: [
+				aether:zanite_ore
+			]
+			highlightColor: "#7a1de4"
+			transition: true
+			effectRadius: 16
+		}
+		{
+			blockIds: [
 				aether:gravitite_ore
 			]
 			highlightColor: "#D766CE"
 			transition: true
-			effectRadius: 16
+			effectRadius: 24
 		}
 		{
 			blockIds: [

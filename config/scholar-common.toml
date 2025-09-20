@@ -23,5 +23,5 @@
 	#Hovering over a slot in a Chiseled Bookshelf will show tooltip of a book that's stored in that slot. Default: true
 	chiseled_bookshelf_tooltip = true
 	#Written books will have an enchantment glint on them. Default: false
-	written_book_enchantment_glint = false
+	written_book_enchantment_glint = true
 

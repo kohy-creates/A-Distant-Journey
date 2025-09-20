@@ -971,7 +971,7 @@ ServerEvents.recipes((event) => {
 		}
 	)
 	event.shaped(
-		Item.of('supplementaries:rope', 16),
+		Item.of('supplementaries:rope', 20),
 		[
 			'F',
 			'F',
@@ -2962,6 +2962,7 @@ ServerEvents.recipes((event) => {
 
 		event.remove({ id: recipe.getId() })
 
+		let slotToUse = (output == 'supplementaries:wicker_fence') ? 1 : 0;
 		event.shaped(
 			Item.of(output, 6),
 			(output == 'supplementaries:wicker_fence') ?
@@ -2974,8 +2975,8 @@ ServerEvents.recipes((event) => {
 					'PSP',
 				],
 			{
-				P: ingredients[(output == 'supplementaries:wicker_fence') ? 1 : 0],
-				S: '#c:rods/wooden'
+				P: ingredients[slotToUse],
+				S: (ingredients[Math.abs(slotToUse - 1)].getItemIds().toArray().includes('minecraft:stick')) ? '#c:rods/wooden' : ingredients[Math.abs(slotToUse - 1)]
 			}
 		).id(`kubejs:fence/${output.replace(':', '_')}`)
 	})
@@ -2987,14 +2988,14 @@ ServerEvents.recipes((event) => {
 		event.remove({ id: recipe.getId() })
 
 		event.shaped(
-			Item.of(output, 6),
+			Item.of(output, 3),
 			[
 				'SPS',
 				'SPS',
 			],
 			{
 				P: ingredients[1],
-				S: '#c:rods/wooden'
+				S: (ingredients[0].getItemIds().toArray().includes('minecraft:stick')) ? '#c:rods/wooden' : ingredients[0]
 			}
 		).id(`kubejs:fence_gate/${output.replace(':', '_')}`)
 	})
@@ -3006,7 +3007,7 @@ ServerEvents.recipes((event) => {
 		event.remove({ id: recipe.getId() })
 
 		event.shaped(
-			Item.of(output, (output == 'quark:iron_ladder') ? 4 : 8),
+			Item.of(output, (output == 'quark:iron_ladder') ? 8 : 12),
 			[
 				'S S',
 				'SPS',
@@ -3017,5 +3018,51 @@ ServerEvents.recipes((event) => {
 				S: ingredients[0]
 			}
 		).id(`kubejs:ladder/${output.replace(':', '_')}`)
+	})
+
+	event.forEachRecipe({ output: /ladder/, type: 'crafting_shaped' }, recipe => {
+		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
+		const output = recipe.getOriginalRecipeResult().getId();
+
+		event.remove({ id: recipe.getId() })
+
+		event.shaped(
+			Item.of(output, (output == 'quark:iron_ladder') ? 8 : 12),
+			[
+				'S S',
+				'SPS',
+				'S S'
+			],
+			{
+				P: ingredients[4],
+				S: ingredients[0]
+			}
+		).id(`kubejs:ladder/${output.replace(':', '_')}`)
+	})
+
+	event.forEachRecipe({ output: /^(?=.*_sign)(?!.*hanging)(?!.*post).*/, type: 'crafting_shaped' }, recipe => {
+
+		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
+		const output = recipe.getOriginalRecipeResult().getId();
+
+		event.remove({ id: recipe.getId() })
+
+		event.shaped(
+			Item.of(output, 6),
+			[
+				'ABC',
+				'DEF',
+				' G '
+			],
+			{
+				A: ingredients[0],
+				B: ingredients[1],
+				C: ingredients[2],
+				D: ingredients[3],
+				E: ingredients[4],
+				F: ingredients[5],
+				G: (ingredients[7].getItemIds().toArray().includes('minecraft:stick')) ? '#c:rods/wooden' : ingredients[7],
+			}
+		).id(`kubejs:sign/${output.replace(':', '_')}`)
 	})
 });

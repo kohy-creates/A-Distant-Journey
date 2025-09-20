@@ -13,7 +13,7 @@
 			rotation: 45.0d
 			width: 3.0d
 			x: 3.0d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			height: 2.0d
@@ -250,8 +250,8 @@
 				type: "item"
 			}]
 			title: "Recycling"
-			x: 2.0d
-			y: 0.0d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["74568A8CB40BC9F8"]
@@ -269,8 +269,8 @@
 				type: "item"
 			}]
 			title: "New Label"
-			x: 1.0d
-			y: -1.5d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -306,7 +306,41 @@
 			]
 			title: "Certified Platinum"
 			x: 3.0d
-			y: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["026E22A534C341CC"]
+			description: ["&7&lHINT:&r Writable Books can be dyed, just like Leather Armor!"]
+			icon: "minecraft:writable_book"
+			id: "1B705CEC3EFEB501"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Craft a Book and Quill"
+			tasks: [{
+				id: "217B569D588FB550"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			title: "Fan Fiction"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B705CEC3EFEB501"]
+			id: "0AEC92998BCBFFDD"
+			subtitle: "Sign a Book"
+			tasks: [{
+				id: "7B60F8A0A6881FF5"
+				item: {
+					Count: 1
+					id: "minecraft:written_book"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Bestseller Author"
+			x: -2.0d
+			y: -2.5d
 		}
 	]
 	title: "Becoming an Artist"

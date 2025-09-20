@@ -2,8 +2,5 @@
 	"example_modid": {
 		"msg": "Custom msg on crash for this mod id. You can use $JAR_NAME$ placeholder, which will be replaced with jar name. You can use HTML here, it will work.",
 		"should_crash_on_startup": true
-	},
-	"adjcore": {
-		"msg": "Crash was caused by ADJ Core! Report issue straight to kohara, as it's his mod!"
 	}
 }
