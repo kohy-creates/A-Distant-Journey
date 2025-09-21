@@ -1,13 +1,13 @@
-🟢 Added [Advanced Loot Info](https://www.curseforge.com/minecraft/mc-mods/advanced-loot-info).
+**[Mod changes]**
 
-🟢 Added [Better Mob Combat](https://www.curseforge.com/minecraft/mc-mods/better-mob-combat).
+- Added [Advanced Loot Info](https://www.curseforge.com/minecraft/mc-mods/advanced-loot-info).
+- Added [Better Mob Combat](https://www.curseforge.com/minecraft/mc-mods/better-mob-combat).
+- Added [TooManyRecipeViewers](https://www.curseforge.com/minecraft/mc-mods/tmrv) and removed JEI.
+- Added [TerraBlenderFix](https://www.curseforge.com/minecraft/mc-mods/terrablenderfix).
+- Updated mods.
 
-🟢 Added [TooManyRecipeViewers](https://www.curseforge.com/minecraft/mc-mods/tmrv) and removed JEI.
+------
 
-🟢 Added [TerraBlenderFix](https://www.curseforge.com/minecraft/mc-mods/terrablenderfix).
+**[Other]**
 
-🔵 Updated mods.
-
-Other:
-
-❤️ `Topped Off!` achievement now explains how to get Heart Crystals.
+- `Topped Off!` achievement now explains how to get Heart Crystals.
