@@ -63,9 +63,9 @@ net.minecraft.client.gui.screens.inventory.InventoryScreen {
 net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
 }
 
-net.mcreator.nourishednether.client.gui.TransmutationTableGuiScreen {
+net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 }
 
-net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
+com.jab125.mpuc.client.gui.screen.changelog.NewChangelogScreen {
 }
 
