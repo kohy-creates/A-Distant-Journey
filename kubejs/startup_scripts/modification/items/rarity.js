@@ -31,21 +31,22 @@ ItemEvents.modification(event => {
 		/moresnifferflowers\:giant_/,
 		/creative/,
 		'ars_nouveau:archmage_spell_book',
+		/treasure_bag/
 	], item => {
 		item.rarity = 'epic'
 	});
 
-	event.modify([
-		'majruszsdifficulty:evoker_fang_scroll',
-		'majruszsdifficulty:sonic_boom_scroll',
-		'majruszsdifficulty:ender_pouch',
-		'majruszsdifficulty:enderium_shard_locator',
-		'majruszsdifficulty:soul_jar',
-		'majruszsdifficulty:wither_sword',
-		/treasure_bag/
-	], item => {
-		item.rarity = 'alexscaves:rainbow'
-	});
+	// event.modify([
+	// 	'majruszsdifficulty:evoker_fang_scroll',
+	// 	'majruszsdifficulty:sonic_boom_scroll',
+	// 	'majruszsdifficulty:ender_pouch',
+	// 	'majruszsdifficulty:enderium_shard_locator',
+	// 	'majruszsdifficulty:soul_jar',
+	// 	'majruszsdifficulty:wither_sword',
+	// 	/treasure_bag/
+	// ], item => {
+	// 	item.rarity = 'alexscaves:rainbow'
+	// });
 
 	// event.modify([
 	// 	'botania:gaia_pylon',

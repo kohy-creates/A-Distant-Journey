@@ -3,6 +3,17 @@
 	"hotfixesFormat": null,
 	"versions": [
 		{
+			"id": "1.0.1",
+			"releasedAt": 1754946322000,
+			"update_type": "minor",
+			"promotions": {
+				"downloads": {
+					"modrinth": "https://modrinth.com/modpack/adj",
+					"curseforge": "https://curseforge.com/minecraft/modpacks/adj"
+				}
+			}
+		},
+		{
 			"id": "1.0.0",
 			"releasedAt": 1754946322000,
 			"update_type": "major",

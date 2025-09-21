@@ -38,12 +38,6 @@ KeyBindEvents.modify(keybinds => {
 		"key.map_atlases.decrease_slice",
 		"key.curios.open.desc",
 		"key.veinmining.activate.desc",
-		"key.jei.nextPage",
-		"key.jei.toggleEditMode",
-		"key.jei.copy.recipe.id",
-		"key.jei.toggleCheatMode",
-		"key.jei.toggleBookmarkOverlay",
-		"key.jei.previousPage",
 		"key.invtweaks_sort_either.desc",
 		"keybinds.bettercombat.feint",
 		"keybinds.bettercombat.toggle_mine_with_weapons",
@@ -99,40 +93,16 @@ KeyBindEvents.modify(keybinds => {
 		"key.screenshot_viewer.open_screenshots_screen",
 		"key.pickup.item",
 		"terrastorage.keybinding.sort_inventory_bind",
-		'key.jei.nextCategory',
-		'key.jei.showRecipe2',
-		'key.jei.cheatOneItem2',
-		'key.jei.bookmark',
-		'key.jei.clearSearchBar',
-		'key.jei.toggleCheatModeConfigButton',
-		'key.jei.copy.recipe.id',
-		'key.jei.previousSearch',
-		'key.jei.focusSearch',
-		'key.jei.nextSearch',
-		'key.jei.toggleEditMode',
-		'key.jei.previousRecipePage',
-		'key.jei.recipeBack',
-		'key.jei.cheatItemStack2',
-		'key.jei.nextRecipePage',
-		'key.jei.cheatItemStack',
-		'key.jei.closeRecipeGui',
-		'key.jei.toggleCheatMode',
-		'key.jei.showUses',
-		'key.jei.showUses2',
-		'key.jei.toggleWildcardHideIngredient',
-		'key.jei.previousCategory',
-		'key.jei.showRecipe',
-		'key.jei.cheatOneItem',
-		'key.jei.previousPage',
-		'key.jei.toggleHideIngredient',
-		'key.jei.toggleOverlay',
-		'key.jei.nextPage',
-		'key.jei.toggleBookmarkOverlay',
 	]
 
+	const allKeybinds = KeyBindUtil.getAllKeyName();
 	removedKeybinds.forEach(key => {
-		keybinds.remove(key);
-		keybinds.addHideKey(key)
+		for (let i in allKeybinds) {
+			if (allKeybinds[i].toString().includes(key)) {
+				keybinds.remove(key);
+				keybinds.addHideKey(key);
+			}
+		}
 	})
 
 	// Doesn't work

@@ -3884,7 +3884,7 @@
 		}
 		{
 			dependencies: ["4C1D62C4B13A0CE0"]
-			description: [""]
+			description: ["&7&lHINT:&r &cHeart Crystals&r generate underground semi-frequently."]
 			icon: "heart_crystals:heart_crystal"
 			id: "37D84A7023231586"
 			subtitle: "Attain maximum possible health by consuming 15 Heart Crystals"
