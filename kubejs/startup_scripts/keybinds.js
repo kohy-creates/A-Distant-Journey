@@ -105,16 +105,4 @@ KeyBindEvents.modify(keybinds => {
 		}
 	})
 
-	// Doesn't work
-	// const remappedKeys = {
-	// 	"key.shouldersurfing.swap_shoulder": GLFW.GLFW_KEY_F7,
-	// 	"key.firstperson.toggle": GLFW.GLFW_KEY_F6,
-	// 	"key.ftbquests.quests": GLFW.GLFW_KEY_L,
-	// 	"key.open_menu": GLFW.GLFW_KEY_M
-	// }
-
-	// for (const [key, value] of Object.entries(remappedKeys)) {
-	// 	keybinds.modifyKey(key, value)
-	// 	keybinds.modifyKey("key.forward", GLFW.GLFW_KEY_0)
-	// }
 })

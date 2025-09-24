@@ -1,0 +1,236 @@
+{
+  "globalVegetationDensity": 1.0,
+  "globalRockDensity": 0.2,
+  "enableDebugLogging": false,
+  "vegetationSettings": {
+    "mushroom_fields": {
+      "tallGrassChance": 0.08,
+      "fernChance": 0.12,
+      "largeFernChance": 0.07,
+      "baldPatchChance": 0.18,
+      "scatteredBaldSpotChance": 0.25,
+      "normalGrassDensity": 0.15,
+      "clusteringFactor": 0.6
+    },
+    "forest": {
+      "tallGrassChance": 0.1,
+      "fernChance": 0.0,
+      "largeFernChance": 0.0,
+      "baldPatchChance": 0.03,
+      "scatteredBaldSpotChance": 0.02,
+      "normalGrassDensity": 1.2,
+      "clusteringFactor": 0.4
+    },
+    "taiga": {
+      "tallGrassChance": 0.05,
+      "fernChance": 0.15,
+      "largeFernChance": 0.05,
+      "baldPatchChance": 0.04,
+      "scatteredBaldSpotChance": 0.02,
+      "normalGrassDensity": 0.9,
+      "clusteringFactor": 0.5
+    },
+    "sparse_jungle": {
+      "tallGrassChance": 0.15,
+      "fernChance": 0.1,
+      "largeFernChance": 0.05,
+      "baldPatchChance": 0.04,
+      "scatteredBaldSpotChance": 0.02,
+      "normalGrassDensity": 1.0,
+      "clusteringFactor": 0.5
+    },
+    "birch_forest": {
+      "tallGrassChance": 0.05,
+      "fernChance": 0.0,
+      "largeFernChance": 0.0,
+      "baldPatchChance": 0.03,
+      "scatteredBaldSpotChance": 0.02,
+      "normalGrassDensity": 1.2,
+      "clusteringFactor": 0.4
+    },
+    "flower_forest": {
+      "tallGrassChance": 0.12,
+      "fernChance": 0.05,
+      "largeFernChance": 0.03,
+      "baldPatchChance": 0.02,
+      "scatteredBaldSpotChance": 0.01,
+      "normalGrassDensity": 1.3,
+      "clusteringFactor": 0.5
+    },
+    "old_growth_pine": {
+      "tallGrassChance": 0.05,
+      "fernChance": 0.2,
+      "largeFernChance": 0.1,
+      "baldPatchChance": 0.04,
+      "scatteredBaldSpotChance": 0.02,
+      "normalGrassDensity": 0.7,
+      "clusteringFactor": 0.6
+    },
+    "swamp": {
+      "tallGrassChance": 0.15,
+      "fernChance": 0.1,
+      "largeFernChance": 0.05,
+      "baldPatchChance": 0.06,
+      "scatteredBaldSpotChance": 0.04,
+      "normalGrassDensity": 1.1,
+      "clusteringFactor": 0.6
+    },
+    "cherry_grove": {
+      "tallGrassChance": 0.1,
+      "fernChance": 0.1,
+      "largeFernChance": 0.05,
+      "baldPatchChance": 0.02,
+      "scatteredBaldSpotChance": 0.01,
+      "normalGrassDensity": 1.2,
+      "clusteringFactor": 0.6
+    },
+    "bamboo_jungle": {
+      "tallGrassChance": 0.2,
+      "fernChance": 0.05,
+      "largeFernChance": 0.05,
+      "baldPatchChance": 0.02,
+      "scatteredBaldSpotChance": 0.01,
+      "normalGrassDensity": 1.4,
+      "clusteringFactor": 0.75
+    },
+    "windswept": {
+      "tallGrassChance": 0.05,
+      "fernChance": 0.0,
+      "largeFernChance": 0.0,
+      "baldPatchChance": 0.08,
+      "scatteredBaldSpotChance": 0.05,
+      "normalGrassDensity": 0.8,
+      "clusteringFactor": 0.3
+    },
+    "dark_forest": {
+      "tallGrassChance": 0.05,
+      "fernChance": 0.15,
+      "largeFernChance": 0.1,
+      "baldPatchChance": 0.03,
+      "scatteredBaldSpotChance": 0.02,
+      "normalGrassDensity": 0.9,
+      "clusteringFactor": 0.5
+    },
+    "plains": {
+      "tallGrassChance": 0.1,
+      "fernChance": 0.0,
+      "largeFernChance": 0.0,
+      "baldPatchChance": 0.05,
+      "scatteredBaldSpotChance": 0.03,
+      "normalGrassDensity": 1.0,
+      "clusteringFactor": 0.3
+    },
+    "savanna": {
+      "tallGrassChance": 0.03,
+      "fernChance": 0.0,
+      "largeFernChance": 0.0,
+      "baldPatchChance": 0.1,
+      "scatteredBaldSpotChance": 0.08,
+      "normalGrassDensity": 0.6,
+      "clusteringFactor": 0.2
+    },
+    "jungle": {
+      "tallGrassChance": 0.25,
+      "fernChance": 0.05,
+      "largeFernChance": 0.05,
+      "baldPatchChance": 0.02,
+      "scatteredBaldSpotChance": 0.01,
+      "normalGrassDensity": 1.3,
+      "clusteringFactor": 0.7
+    },
+    "old_growth_spruce": {
+      "tallGrassChance": 0.05,
+      "fernChance": 0.18,
+      "largeFernChance": 0.08,
+      "baldPatchChance": 0.04,
+      "scatteredBaldSpotChance": 0.02,
+      "normalGrassDensity": 0.8,
+      "clusteringFactor": 0.55
+    },
+    "meadow": {
+      "tallGrassChance": 0.15,
+      "fernChance": 0.05,
+      "largeFernChance": 0.0,
+      "baldPatchChance": 0.04,
+      "scatteredBaldSpotChance": 0.02,
+      "normalGrassDensity": 1.1,
+      "clusteringFactor": 0.5
+    },
+    "snowy": {
+      "tallGrassChance": 0.03,
+      "fernChance": 0.08,
+      "largeFernChance": 0.02,
+      "baldPatchChance": 0.07,
+      "scatteredBaldSpotChance": 0.05,
+      "normalGrassDensity": 0.5,
+      "clusteringFactor": 0.4
+    }
+  },
+  "rockSettings": {
+    "forest": {
+      "rockChance": 0.12,
+      "minRocksPerChunk": 1,
+      "maxRocksPerChunk": 2
+    },
+    "mountains": {
+      "rockChance": 0.4,
+      "minRocksPerChunk": 2,
+      "maxRocksPerChunk": 6
+    },
+    "old_growth": {
+      "rockChance": 0.1,
+      "minRocksPerChunk": 1,
+      "maxRocksPerChunk": 3
+    },
+    "taiga": {
+      "rockChance": 0.08,
+      "minRocksPerChunk": 1,
+      "maxRocksPerChunk": 2
+    },
+    "birch_forest": {
+      "rockChance": 0.12,
+      "minRocksPerChunk": 1,
+      "maxRocksPerChunk": 2
+    },
+    "swamp": {
+      "rockChance": 0.05,
+      "minRocksPerChunk": 1,
+      "maxRocksPerChunk": 2
+    },
+    "badlands": {
+      "rockChance": 0.25,
+      "minRocksPerChunk": 1,
+      "maxRocksPerChunk": 5
+    },
+    "plains": {
+      "rockChance": 0.15,
+      "minRocksPerChunk": 1,
+      "maxRocksPerChunk": 3
+    },
+    "savanna": {
+      "rockChance": 0.18,
+      "minRocksPerChunk": 1,
+      "maxRocksPerChunk": 3
+    },
+    "windswept_forest": {
+      "rockChance": 0.3,
+      "minRocksPerChunk": 2,
+      "maxRocksPerChunk": 5
+    },
+    "jungle": {
+      "rockChance": 0.15,
+      "minRocksPerChunk": 1,
+      "maxRocksPerChunk": 3
+    },
+    "desert": {
+      "rockChance": 0.2,
+      "minRocksPerChunk": 1,
+      "maxRocksPerChunk": 4
+    },
+    "snowy": {
+      "rockChance": 0.08,
+      "minRocksPerChunk": 1,
+      "maxRocksPerChunk": 2
+    }
+  }
+}
