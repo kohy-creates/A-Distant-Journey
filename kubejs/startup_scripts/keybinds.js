@@ -1,7 +1,7 @@
-KeyBindEvents.modify(keybinds => {
+KeyBindEvents.modify(event => {
 
 	/**
-	 * @type {Internal.KeyMapping_}
+	 * @type {$KeyMapping$$Type}
 	 */
 	const removedKeybinds = [
 		"key.smoothCamera",
@@ -11,14 +11,14 @@ KeyBindEvents.modify(keybinds => {
 		"key.hammerlib.render_item",
 		"key.modernfix.config",
 		"key.exposure.camera_controls",
-		"iris.keybind.reload",
-		"iris.keybind.toggleShaders",
-		"iris.keybind.shaderPackSelection",
-		"key.push_to_talk",
-		"key.whisper",
+		// "iris.keybind.reload",
+		// "iris.keybind.toggleShaders",
+		// "iris.keybind.shaderPackSelection",
+		// "key.push_to_talk",
+		// "key.whisper",
 		"key.disable_voice_chat",
 		"key.hide_icons",
-		"key.voice_chat_settings",
+		// "key.voice_chat_settings",
 		"key.voice_chat_group",
 		"key.voice_chat_toggle_recording",
 		"key.voice_chat_adjust_volumes",
@@ -30,9 +30,10 @@ KeyBindEvents.modify(keybinds => {
 		"key.shouldersurfing.toggle_y_offset_presets",
 		"key.shouldersurfing.toggle_z_offset_presets",
 		"key.spelunkers_charm.flashlight_toggle",
-		"key.showmeyourskin.open_settings",
+		// "key.showmeyourskin.open_settings",
+		"key.showmeyourskin.global_toggle",
 		"obscure_tooltips_fix.print_screen",
-		"key.map_atlases.open_minimap",
+		// "key.map_atlases.open_minimap",
 		"key.map_atlases.place_pin",
 		"key.map_atlases.increase_slice",
 		"key.map_atlases.decrease_slice",
@@ -93,16 +94,22 @@ KeyBindEvents.modify(keybinds => {
 		"key.screenshot_viewer.open_screenshots_screen",
 		"key.pickup.item",
 		"terrastorage.keybinding.sort_inventory_bind",
+		"key.trade_cycling.cycle_trades",
+		"key.toastcontrol.clear",
+		"key.invtweaks_sort_player.desc",
+		"key.invtweaks_sort_inventory.desc",
+		"key.mount_jump",
+		"gnetum.config.keyMapping",
+		"key_key.aether.open_accessories.desc"
 	]
 
 	const allKeybinds = KeyBindUtil.getAllKeyName();
 	removedKeybinds.forEach(key => {
 		for (let i in allKeybinds) {
 			if (allKeybinds[i].toString().includes(key)) {
-				keybinds.remove(key);
-				keybinds.addHideKey(key);
+				event.remove(key);
+				event.addHideKey(key);
 			}
 		}
 	})
-
 })

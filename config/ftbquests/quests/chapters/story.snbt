@@ -1008,15 +1008,10 @@
 					type: "item"
 				}
 				{
-					hasCustomPicture: false
-					icon: "handcrafted:hammer"
-					id: "0B1F8DF9B4859E70"
-					ignoreState: true
-					layer: true
-					name: "stone_forge"
-					rightclick: false
-					title: "Build a Stone Alloy Forge"
-					type: "questsadditions:structure"
+					count: 16L
+					id: "7E95D19382782477"
+					item: { Count: 16, id: "minecraft:stone_bricks" }
+					type: "item"
 				}
 			]
 			title: "Minecraft Forge"

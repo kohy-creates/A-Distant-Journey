@@ -1,0 +1,35 @@
+
+[features]
+	#Heather - Generate a group of Flowers
+	Heather = true
+	#Baileya - Generate a group of Flowers, and turn nearby Sand into Sandstone
+	Baileya = true
+	#Drimia - Generate a group of Flowers
+	Drimia = true
+	#Edelweiss - Generate a lone Flower
+	Edelweiss = true
+	#Pontederia - Generate a group of Flowers
+	Pontederia = true
+	#Pampas - Generate as multiple small dense groups of Flowers
+	Pampas = true
+	#Passion Flower - Generate with a new Fallen Tree feature, growing on sides
+	PassionFlower = true
+	#Wood Anemone - Generate a group of Flowers, mixed with some vanilla Flowers
+	WoodAnemone = true
+	#Hepatica - Generate a group of Flowers, mixed with some vanilla Flowers and Wood Anemone
+	Hepatica = true
+	#Wood Sorrel - Generate a sparse group of Plants
+	WoodSorrel = true
+	#Purple Shamrock - Generate a sparse group of Plants
+	PurpleShamrock = true
+	#Shaggy Purslane - Generate a group of Flowers
+	"Shaggy Purslane" = true
+	#Busy Lizzie - Generate a group of Flowers
+	BusyLizzie = true
+	#Bloody Dogwood - Generate a group of Plants
+	BloodyDogwood = true
+	#Snowdrop - Generate with a new Spruce Tree feature, growing under this additional tree
+	Snowdrop = true
+	#Cyan Poppy - Generate a sparse group of Flowers
+	CyanPoppy = true
+

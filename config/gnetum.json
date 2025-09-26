@@ -476,7 +476,7 @@
     },
     "watut": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
       "pass": 3
     },
