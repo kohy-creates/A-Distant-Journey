@@ -1,1 +1,2 @@
 samebutdifferent.ecologics.mixin.AzaleaTreeGrowerMixin
+net.lyof.sortilege.mixin.LifecycledResourceManagerImplMixin

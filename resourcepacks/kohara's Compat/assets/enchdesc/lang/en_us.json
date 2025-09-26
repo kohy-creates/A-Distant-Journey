@@ -1,5 +1,4 @@
 {
-	"_comment": "Vanilla Enchantment Descriptions",
 	"enchantment.minecraft.protection.desc": "Reduces damage from melee attacks and projectiles.",
 	"enchantment.minecraft.blast_protection.desc": "Reduces damage from environmental effects, like fire or explosions. Also reduces burn duration and explosion knockback",
 	"enchantment.minecraft.respiration.desc": "Allows the user to breathe longer underwater.",

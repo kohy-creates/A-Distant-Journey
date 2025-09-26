@@ -38,8 +38,8 @@
             "botania:petals/sculk": {"botanicadds:sculk_petal": true},
             "forge:storage_blocks/mana_lapis": {"botanicadds:mana_lapis_block": true},
             "curios:ring": {
-                "botanicadds:mana_ring_gaia": true,
-                "botanicadds:aura_ring_gaia": true
+                "botanicadds:mana_ring_gaia": false,
+                "botanicadds:aura_ring_gaia": false
             }
         },
         "minecraft:block": {

@@ -38,6 +38,17 @@ ServerEvents.tags('item', event => {
 		});
 		tag.removeAll();
 	});
+
+	event.remove('curios:ring', [
+		'botanicadds:aura_ring_gaia',
+		'botanicadds:mana_ring_gaia'
+	])
+
+	event.add('curios:accessory', [
+		'botanicadds:aura_ring_gaia',
+		'botanicadds:mana_ring_gaia'
+	])
+
 	// Readd this one thingy to the back tag
 	event.add('curios:back', 'backpacked:backpack')
 
