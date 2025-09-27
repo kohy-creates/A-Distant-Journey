@@ -1,10 +1,10 @@
 {
-  "infrastructure_check_radius": 1,
+  "infrastructure_check_radius": 2,
   "node_distance_minimum": 4,
   "node_distance_maximum": 8,
   "node_utility_distance": 3,
-  "path_quality_threshold": 0.6,
-  "travel_fatigue_cooldown": 30,
+  "path_quality_threshold": 0.15,
+  "travel_fatigue_cooldown": 15,
   "fog_of_war_distance": 10,
   "spline_animation_speed": 2.0,
   "maximum_map_dimension": 512,
@@ -18,7 +18,10 @@
     "minecraft:dirt_path",
     "minecraft:packed_mud",
     "minecraft:coarse_dirt",
-    "minecraft:rooted_dirt"
+    "minecraft:rooted_dirt",
+    "minecraft:gravel",
+    "minecraft:stone_bricks",
+    "minecraft:cobblestone"
   ],
   "path_block_tags": [
     "minecraft:slabs",

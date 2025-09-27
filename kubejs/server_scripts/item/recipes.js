@@ -2842,7 +2842,7 @@ ServerEvents.recipes((event) => {
 		function axisedRecipe(axis) {
 			event.custom({
 				"type": "lychee:block_interacting",
-				"hide_in_viewer": false,
+				"hide_in_viewer": true,
 				"item_in": {
 					"item": "minecraft:wooden_shovel"
 				},

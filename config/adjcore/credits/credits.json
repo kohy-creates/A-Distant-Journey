@@ -1,0 +1,78 @@
+[
+	{
+		"section": "A Distant Journey",
+		"disciplines": [
+			{
+				"discipline": "Team ADJ",
+				"titles": [
+					{
+						"title": "The one responsible for everything tbh",
+						"names": [
+							"kohara"
+						]
+					}
+				]
+			},
+			{
+				"discipline": "Contributors",
+				"titles": [
+					{
+						"title": "Artists",
+						"names": [
+							"brokenemp",
+							"MidasDaEpik"
+						]
+					}
+				]
+			},
+			{
+				"discipline": "Minecraft",
+				"titles": [
+					{
+						"title": "Made by",
+						"names": [
+							"Mojang Studios"
+						]
+					}
+				]
+			},
+			{
+				"discipline": "Special Thanks",
+				"titles": [
+					{
+						"title": "Raspberry Flavoured",
+						"names": [
+							"raspmary"
+						]
+					},
+					{
+						"title": "AllTheMods",
+						"names": [
+							"ATM Team"
+						]
+					},
+					{
+						"title": "Prominence II",
+						"names": [
+							"ElocinDev"
+						]
+					},
+					{
+						"title": "Beyond Depth",
+						"names": [
+							"blueversal"
+						]
+					},
+					{
+						"title": "Other",
+						"names": [
+							"ZUN",
+							"Whoever invented garlic bread",
+							"YOU, for playing!"
+						]
+					}
+				]
+			}
+		]
+	}
+]

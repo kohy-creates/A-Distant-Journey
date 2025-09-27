@@ -188,9 +188,9 @@
 				""
 				"An early game method of quick travel are &eroads&f."
 				""
-				"&eRoads&r can be made by simply laying down a &eDirt Path&f from one point to another. You can then place &6Signs&r at each end of the road. &eLeft click the sign&f at the first end and go to the other one. After you arrive there, &eleft click the other sign&f. They should now be connected."
+				"&eRoads&r can be made by simply laying down a &eDirt Path&f from one point to another and charting it using a &6&lCharting Map&r. It comes with a tutorial that explains how to use it, so you should go and check it out. It's very clear and will explain things better than me."
 				""
-				"&eLeft clicking on a connected Sign will teleport you to the whichever sign it's connected to&f."
+				"&7&lHINT:&r The road &ndoesn't have to be 2 blocks wide&r nor does it even have to be in perfect condition. The settings are so loose for those that you don't have to spend ages on building a simple road."
 				""
 				""
 				"{@pagebreak}"
@@ -214,14 +214,8 @@
 			id: "7D7F1AD28AE3CF50"
 			subtitle: "Click to read"
 			tasks: [{
-				id: "47B2EECCBC16446D"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "via_romana:guide"
-					}
-				}
+				id: "152C74A3181B3E71"
+				item: "via_romana:charting_map"
 				type: "item"
 			}]
 			title: "&l&fTutorial:&r &6Quick Travel"
