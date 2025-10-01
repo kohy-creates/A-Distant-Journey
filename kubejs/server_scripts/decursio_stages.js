@@ -217,7 +217,8 @@ ServerEvents.tags('item', resctrictions => {
 		'create:blaze_cake_base',
 		'create:empty_blaze_burner',
 		'galosphere:warped_anchor',
-		'netherexp:soul_soil_layer'
+		'netherexp:soul_soil_layer',
+		/treasure_bag/
 	]);
 
 	resctrictions.add('adj:locked_until/chapter_2', [
@@ -237,11 +238,12 @@ ServerEvents.tags('item', resctrictions => {
 		'aether:iron_gloves',
 		'aether:golden_gloves',
 		'aether:diamond_gloves',
+		/treasure_bag/
 	]);
 
 	resctrictions.add('adj:locked_until/chapter_3', [
 		/netherite/,
-		'flamarang',
+		'quark:flamerang',
 		/adamantite/,
 		/hallowed/,
 		// /cursium/,
@@ -250,7 +252,7 @@ ServerEvents.tags('item', resctrictions => {
 	resctrictions.add('adj:locked_until/light/chapter_3', [
 		'mythicmetals:aegis_smithing_template',
 		'ancient_debris',
-		/rediscovered/,
+		'@rediscovered',
 		'suppsquared:heavy_key'
 	]);
 	resctrictions.add('adj:locked_until/exceptions/chapter_3', [
@@ -266,6 +268,7 @@ ServerEvents.tags('item', resctrictions => {
 		'rediscovered:ancient_crying_obsidian',
 		'rediscovered:scarecrow',
 		/rediscovered:.*slab/,
+		/treasure_bag/
 
 	]);
 
@@ -300,7 +303,8 @@ ServerEvents.tags('item', resctrictions => {
 	resctrictions.add('adj:locked_until/exceptions/chapter_4', [
 		'unusualend:chiseled_glass',
 		'unusualend:chiseled_glass_pane',
-		'unusualend:phantom_membrane_block'
+		'unusualend:phantom_membrane_block',
+		/treasure_bag/
 	]);
 
 	resctrictions.add('adj:locked_until/chapter_5', [
@@ -316,7 +320,8 @@ ServerEvents.tags('item', resctrictions => {
 		'witherstormmod:firework_bundle',
 		'witherstormmod:phasometer',
 		'witherstormmod:golden_apple_stew',
-		'witherstormmod:amulet'
+		'witherstormmod:amulet',
+		/treasure_bag/
 	]);
 })
 

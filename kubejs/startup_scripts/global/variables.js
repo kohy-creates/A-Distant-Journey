@@ -38,3 +38,7 @@ global.armorSuffixes = {
 	legs: ['_leggings', '_pants'],
 	feet: ['_boots']
 };
+
+global.getBiome = function(entity) {
+	return entity.level.getBiome(entity.block.pos).unwrapKey().get().location().toString();
+}

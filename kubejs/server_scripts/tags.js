@@ -180,6 +180,10 @@ ServerEvents.tags('item', event => {
 	event.add('adj:tidesinger_upgrade_coral', [
 		/^(?!.*dead).*:.*_coral_block$/
 	])
+
+	event.add('adj:treasure_bag', [
+		/treasure_bag/
+	])
 })
 
 ServerEvents.tags('block', event => {

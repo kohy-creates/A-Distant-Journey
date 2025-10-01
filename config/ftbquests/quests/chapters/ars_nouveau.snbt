@@ -171,6 +171,7 @@
 			description: ["&7&lHINT:&r You can place up to &d8 Pedestals&r around your Enchanting Apparatus! A lot of recipes use more Pedestals than the 4 required by the tutorial."]
 			icon: "ars_nouveau:enchanting_apparatus"
 			id: "45A92F2D2D809FF1"
+			min_required_tasks: 3
 			subtitle: "Craft and set up an Enchanting Apparatus"
 			tasks: [
 				{
@@ -187,7 +188,7 @@
 					layer: true
 					name: "enchanting_apparatus"
 					rightclick: false
-					title: "Construct an Enchanting Apparatus structure"
+					title: "Click to view structure"
 					type: "questsadditions:structure"
 				}
 				{

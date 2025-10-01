@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:durasteel_engine',
 		'witherstormmod:super_beacon',
 		'witherstormmod:super_support_beacon',
-		'map_atlases:atlas',
+		// 'map_atlases:atlas',
 		'supplementaries:rope',
 
 		'ars_nouveau:arcanist_boots',
@@ -111,16 +111,33 @@ ServerEvents.recipes((event) => {
 
 	// Slightly different Atlas recipe
 	event.remove({ id: 'map_atlases:craft_atlas' })
-	event.shapeless(
-		Item.of('map_atlases:atlas'),
-		[
-			'book',
-			'#adj:any_map',
-			'ink_sac',
-			'feather',
-			'compass'
+	event.custom({
+		"type": "map_atlases:crafting_atlas",
+		"ingredients": [
+			{
+				"item": "minecraft:book"
+			},
+			{
+				"item": "minecraft:feather"
+			},
+			{
+				"item": "minecraft:compass"
+			},
+			{
+				"item": "minecraft:ink_sac"
+			}
 		]
-	)
+	})
+	// event.shapeless(
+	// 	Item.of('map_atlases:atlas'),
+	// 	[
+	// 		'book',
+	// 		'#adj:any_map',
+	// 		'ink_sac',
+	// 		'feather',
+	// 		'compass'
+	// 	]
+	// )
 
 	event.shaped(
 		Item.of('enchantinginfuser:enchanting_infuser', 1),
@@ -530,6 +547,7 @@ ServerEvents.recipes((event) => {
 				[
 					item,
 					'brick',
+					'brick',
 					'brick'
 				]
 			)
@@ -546,14 +564,14 @@ ServerEvents.recipes((event) => {
 		],
 		'minecraft:amethyst_shard',
 		'sortilege:limitite',
-		1000
+		1500
 	);
 
 	// Crying Obsidian
 	event.recipes.ars_nouveau.imbuement(
 		'minecraft:obsidian',
 		'minecraft:crying_obsidian',
-		500,
+		600,
 		[]
 	)
 
@@ -795,32 +813,32 @@ ServerEvents.recipes((event) => {
 		[Item.of('spelunker:amethyst_dust')], 'amethyst_shard', 20
 	)
 
-	event.custom({
-		'type': 'lychee:block_interacting',
-		'contextual': [
-			{
-				'type': 'location',
-				'predicate': {
-					'biome': 'minecraft:warped_forest'
-				}
-			}
-		],
-		'post': [
-			{
-				'type': 'drop_item',
-				'item': 'botania:ender_air_bottle'
-			},
-			{
-				'type': 'execute',
-				'command': 'playsound minecraft:item.bottle.fill_dragonbreath neutral @a[distance=0..] ~ ~ ~ 0.75 1',
-				'hide': true
-			}
-		],
-		'item_in': {
-			'item': 'minecraft:glass_bottle'
-		},
-		'block_in': '*'
-	})
+	// event.custom({
+	// 	'type': 'lychee:block_interacting',
+	// 	'contextual': [
+	// 		{
+	// 			'type': 'location',
+	// 			'predicate': {
+	// 				'biome': 'minecraft:warped_forest'
+	// 			}
+	// 		}
+	// 	],
+	// 	'post': [
+	// 		{
+	// 			'type': 'drop_item',
+	// 			'item': 'botania:ender_air_bottle'
+	// 		},
+	// 		{
+	// 			'type': 'execute',
+	// 			'command': 'playsound minecraft:item.bottle.fill_dragonbreath neutral @a[distance=0..] ~ ~ ~ 0.75 1',
+	// 			'hide': true
+	// 		}
+	// 	],
+	// 	'item_in': {
+	// 		'item': 'minecraft:glass_bottle'
+	// 	},
+	// 	'block_in': '*'
+	// })
 
 	event.shaped(
 		Item.of('supplementaries:quiver'),

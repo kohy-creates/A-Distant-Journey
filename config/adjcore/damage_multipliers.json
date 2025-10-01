@@ -1,7 +1,7 @@
 {
 	"#minecraft:is_projectile": 4.0,
 	"#minecraft:is_lightning": 5.0,
-	"#minecraft:is_explosion": 5.0,
+	"#minecraft:is_explosion": 3.75,
 	"minecraft:fall": 4.0,
 	"minecraft:falling_anvil": 5.0,
 	"minecraft:falling_stalactite": 5.0,

@@ -136,6 +136,11 @@ JEIEvents.information(event => {
 		'Wand of the Forest is used to bind Generating Flora to Mana Spreaders and to point Spreaders in a given direction. And some other misc functions you probably don\'t need to know.'
 	])
 
+	
+	event.addItem(['botania:ender_air_bottle', 'glass_bottle'], [
+		'Right click with an Empty Bottle to bottle up some Ender Air while in either The End dimension or in a Warped Forest.',
+	])
+
 	/* 
 		Etched
 	*/

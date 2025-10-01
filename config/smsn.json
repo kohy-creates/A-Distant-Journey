@@ -1,6 +1,6 @@
 {
   "aetherMoaSkinsFeature": true,
-  "immersiveEngineeringSpecialRevolvers": true,
+  "immersiveEngineeringSpecialRevolvers": false,
   "quarkContributorCheck": false,
   "ipnUpdateCheckAndUserTracking": false,
   "xaeroMapPatreonCheck": false,
@@ -22,12 +22,13 @@
   "ribbitsSupporterHat": false,
   "mruApi": false,
   "projecteUUIDCheck": false,
-  "baCheckUpdate": false,
   "hexereiSupporter": false,
   "voidscapeDonator": false,
   "tenshilibPatreon": false,
   "additionalStructuresSupporterCheck": false,
-  "quarkCelebration": "HideLGBTQIA",
+  "createTramAdditionsTTS": false,
+  "quarkCelebration": "HideAll",
   "citadelAprilFoolsContent": false,
-  "immersiveCavesDiscordMessage": false
+  "immersiveCavesDiscordMessage": false,
+  "disabledMixins": []
 }

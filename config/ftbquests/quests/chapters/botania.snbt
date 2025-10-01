@@ -7,14 +7,24 @@
 	hide_quest_details_until_startable: true
 	icon: "botania:lexicon"
 	id: "53B7EA892E14DB2F"
-	images: [{
-		height: 1.75d
-		image: "botanicadds:block/gaiasteel_block"
-		rotation: 45.0d
-		width: 1.75d
-		x: 1.0d
-		y: 9.0d
-	}]
+	images: [
+		{
+			height: 1.75d
+			image: "botanicadds:block/gaiasteel_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			height: 2.0d
+			image: "botania:block/alfheim_portal_activated"
+			rotation: 0.0d
+			width: 2.0d
+			x: 6.5d
+			y: 6.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -662,6 +672,7 @@
 			dependencies: ["356CC1FA4E52AD00"]
 			icon: "botania:alfheim_portal"
 			id: "5658376D04F1E8AE"
+			min_required_tasks: 4
 			subtitle: "Open an Alfheim Portal"
 			tasks: [
 				{
@@ -671,11 +682,13 @@
 				}
 				{
 					hasCustomPicture: false
+					icon: "handcrafted:hammer"
 					id: "5DD00A555212A5E8"
 					ignoreState: true
 					layer: true
 					name: "elven_portal"
 					rightclick: false
+					title: "Click to view the structure"
 					type: "questsadditions:structure"
 				}
 				{
@@ -726,7 +739,7 @@
 				}
 			]
 			title: "Elven Upgrads"
-			x: 5.5d
+			x: 5.0d
 			y: 6.0d
 		}
 		{
@@ -952,7 +965,7 @@
 				type: "item"
 			}]
 			title: "Core of Nature"
-			x: 2.0d
+			x: 0.0d
 			y: 4.0d
 		}
 	]

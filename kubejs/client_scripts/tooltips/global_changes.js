@@ -659,6 +659,10 @@ ItemEvents.tooltip(event => {
 		/the_bumblezone:string_curtain/
 	], 'Can be extended downwards by right-clicking with a String')
 
+	addTooltipLine([
+		/mcdw:soul_dagger/
+	], 'Attacks temporarily boost mana regeneration')
+
 });
 
 function colorDurabilityText(p, t) {

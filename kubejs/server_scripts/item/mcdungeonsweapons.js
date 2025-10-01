@@ -555,3 +555,13 @@ LootJS.modifiers(event => {
 			pool.addLoot(LootEntry.of(mcdw('bow', 'winters_touch')))
 		})
 })
+
+EntityEvents.hurt(event => {
+	const player = event.getSource().getPlayer();
+	if (player) {
+		const mainhand = player.getMainHandItem().getId();
+		if (mainhand.includes('mcdw:soul_dagger')) {
+			player.addEffect(new $MobEffectInstance('ars_nouveau:mana_regen', 5 * 20, (mainhand == mcdw('soul_dagger', 'eternal_knife') ? 1 : 0)));
+		}
+	}
+})

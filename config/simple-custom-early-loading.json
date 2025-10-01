@@ -7,17 +7,17 @@
     // lower elements will be rendered over the higher ones
     {
       // example background
-      "image": "stellarview.png",
+      "image": "loading_bg.png",
       "position": {
         // define which point in the image should be aligned at x, y position on the window
         // Possible values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT, CENTER, TOP_CENTER, BOTTOM_CENTER, LEFT_CENTER, RIGHT_CENTER
-        "position_anchor": "TOP_LEFT",
+        "position_anchor": "BOTTOM_CENTER",
         // The unit for x, y position PIXELS or PERCENTAGE (percentage of the window values: 0-100)
         // the position unit can also be defined for each coordinate separately position_unit_x, position_unit_y
-        "position_unit": "PIXELS",
+        "position_unit": "PERCENTAGE",
         // The position of the anchor on the screen in position_unit
-        "x": 0,
-        "y": 0,
+        "x": 50,
+        "y": 100,
         // The unit for width, height - PIXELS or PERCENTAGE (again, percantage of the window) - can't be defined separately
         "size_unit": "PERCENTAGE",
         // The width and height of the image in size_unit
@@ -30,7 +30,7 @@
     {
       // the loading text should be centered and poistioned at 60% from the top of the window
       // loading.png is also available if you want the text without animation
-      "image": "loading.apng",
+      "image": "animated.png",
       "position": {
         // using bottom center alignes the bottom of the loading text to the 60%
         // this comes handy as we want to render the loading bar below it
@@ -40,7 +40,7 @@
         "y": 60,
         "size_unit": "PERCENTAGE",
         // the loading text should be 25% of the window width
-        "width": 25
+        "width": 40
       }
     }
   ],
@@ -49,10 +49,10 @@
     // 3 is also default when the value is not specified
     "bar_count": 3,
     "position": {
-      "position_anchor": "TOP_CENTER",
+      "position_anchor": "BOTTOM_CENTER",
       "position_unit": "PERCENTAGE",
       "x": 50,
-      "y": 65
+      "y": 70
       // custom width and height is not supported
     }
   },
