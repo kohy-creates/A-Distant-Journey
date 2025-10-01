@@ -55,17 +55,19 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 			if (overrides.length > 2) {
 				event.removeAttribute('attributeslib:crit_chance');
 				event.addModifier('attributeslib:crit_chance', new $AttributeModifier(weaponModifierUUIDs[0], 'Crit Chance', overrides[2], 'addition'))
-				event.removeAttribute('attributeslib:crit_damage');
-				event.addModifier('attributeslib:crit_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Crit Damage', overrides[3], 'addition'))
-				if (overrides.length > 4) {
-					event.removeAttribute('attributeslib:armor_pierce');
-					event.addModifier('attributeslib:armor_pierce', new $AttributeModifier(weaponModifierUUIDs[0], 'Armor Penetration', overrides[4], 'addition'))
+				if (overrides.length > 3) {
+					event.removeAttribute('attributeslib:crit_damage');
+					event.addModifier('attributeslib:crit_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Crit Damage', overrides[3], 'addition'))
+					if (overrides.length > 4) {
+						event.removeAttribute('attributeslib:armor_pierce');
+						event.addModifier('attributeslib:armor_pierce', new $AttributeModifier(weaponModifierUUIDs[0], 'Armor Penetration', overrides[4], 'addition'))
+					}
 				}
 			}
 		}
 
 		let rangedDamage = (global.bowDamage[id] || 0) + (global.arrowDamage[id] || 0)
-		if (rangedDamage > 0) {
+		if (rangedDamage > 0 && id != 'minecraft:trident') {
 			event.addModifier('kubejs:ranged_damage',
 				new $AttributeModifier(weaponModifierUUIDs[0], 'Ranged Damage', rangedDamage, 'addition'))
 		}

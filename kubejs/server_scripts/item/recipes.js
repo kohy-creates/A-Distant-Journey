@@ -45,6 +45,8 @@ ServerEvents.recipes((event) => {
 		'quark:encased_pipe',
 
 		'@functionalstorage',
+
+		'experienceobelisk:cognitive_flux'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -101,6 +103,16 @@ ServerEvents.recipes((event) => {
 
 		'farmersdelight:pie_crust',
 		'delightful:food/pie_crust_from_fat',
+
+		'experienceobelisk:cognitive_alloy',
+		'experienceobelisk:metamorpher/cognitive_alloy_metamorphosis',
+
+		'sortilege:experience_bottle',
+
+		'sortilege:cauldron/turtle_master',
+		'sortilege:cauldron/slow_falling',
+		'sortilege:cauldron/poison',
+		'sortilege:cauldron/leaping',
 
 
 		///alloy_forgery\:compat\//
@@ -303,67 +315,90 @@ ServerEvents.recipes((event) => {
 	event.remove({ id: 'minecraft:netherite_ingot' })
 	event.remove({ id: 'alloy_forgery:netherite_from_gold_and_scrap' })
 	event.remove({ id: 'experienceobelisk:metamorpher/netherite_ingot_metamorphosis' })
-	event.custom({
-		"type": "alloy_forgery:forging",
-		"inputs": [
-			{
-				"item": "minecraft:gold_ingot",
-				"count": 4
-			},
-			{
-				"item": "minecraft:netherite_scrap",
-				"count": 4
-			}
-		],
-		"output": {
-			"id": "minecraft:netherite_ingot",
-			"count": 1
-		},
-		'overrides': {
-			'3+': {
-				'id': 'minecraft:netherite_ingot',
-				'count': 2
-			}
-		},
-		"min_forge_tier": 2,
-		"fuel_per_tick": 40
-	})
-	event.custom(
-		{
-			'type': 'alloy_forgery:forging',
-			'inputs': [
-				{
-					'tag': 'c:copper_ingots'
-				},
-				{
-					'tag': 'c:copper_ingots'
-				},
-				{
-					'tag': 'c:copper_ingots'
-				},
-				{
-					'tag': 'c:gold_ingots'
-				},
-				{
-					'tag': 'c:gold_ingots'
-				},
-				{
-					'tag': 'c:gold_ingots'
-				}
-			],
-			'output': {
-				'id': 'additionaladditions:rose_gold_alloy',
-				'count': 1
-			},
-			'overrides': {
-				'2+': {
-					'id': 'additionaladditions:rose_gold_alloy',
-					'count': 2
-				}
-			},
-			'min_forge_tier': 1,
-			'fuel_per_tick': 5
+
+	function alloyForgeRecipe(inputs, output, minTier, fuelPerTick, tierOverrides) {
+
+		let recipe = {
+			type: 'alloy_forgery:forging',
+			inputs: [],
+			output: {},
+			overrides: {},
+			min_forge_tier: minTier,
+			fuel_per_tick: fuelPerTick
 		}
+
+		inputs.forEach(entry => {
+			let input = entry[0];
+			const count = (entry[1]) ? entry[1] : 1;
+
+			let type = 'item';
+
+			if (input.indexOf('#') === 0) {
+				type = 'tag';
+				input = input.substring(1);
+			}
+
+			let object = {};
+			object[type] = input;
+			object['count'] = count;
+
+			recipe.inputs.push(object)
+		})
+
+		let object = {};
+
+		let count, outputItem
+		if (Array.isArray(output)) {
+			outputItem = output[0];
+			count = output[1];
+		}
+		else {
+			outputItem = output;
+			count = 1;
+		}
+
+		object['id'] = outputItem;
+		object['count'] = count;
+
+		recipe.output = object;
+
+		if (tierOverrides) {
+			tierOverrides.forEach(override => {
+
+				recipe.overrides[override[0]] = {
+					id: (override[1] === 'output') ? outputItem : override[1],
+					count: override[2],
+				}
+			})
+		}
+
+		event.custom(recipe)
+	}
+
+	alloyForgeRecipe(
+		[
+			['minecraft:gold_ingot', 4],
+			['minecraft:netherite_scrap', 4]
+		],
+		'minecraft:netherite_ingot',
+		2,
+		40,
+		[
+			['3+', 'minecraft:netherite_ingot', 2]
+		]
+	)
+
+	alloyForgeRecipe(
+		[
+			['#c:gold_ingots', 3],
+			['#c:copper_ingots', 3]
+		],
+		'output',
+		1,
+		5,
+		[
+			['2+', 'output', 2]
+		]
 	)
 
 	function ironArmorRecipe(shape, outputItem) {
@@ -1002,106 +1037,43 @@ ServerEvents.recipes((event) => {
 
 	// Unify Silver
 	event.remove({ id: 'alloy_forgery:compat/silver_ingot_from_raw_ores' })
-	event.custom({
-		"fabric:load_conditions": [
-			{
-				"condition": "fabric:item_tags_populated",
-				"values": [
-					"c:raw_silver_ores",
-					"c:silver_ingots"
-				]
-			}
+	alloyForgeRecipe(
+		[
+			['#c:raw_silver_ores', 2],
 		],
-		"type": "alloy_forgery:forging",
-		"inputs": [
-			{
-				"tag": "c:raw_silver_ores",
-				"count": 2
-			}
-		],
-		"output": {
-			"priority": [
-				"galosphere:silver_ingot"
-			],
-			"default": "c:silver_ingots",
-			"count": 3
-		},
-		"overrides": {
-			"2+": {
-				"count": 4
-			}
-		},
-		"min_forge_tier": 1,
-		"fuel_per_tick": 5
-	})
+		['galosphere:silver_ingot', 3],
+		1,
+		5,
+		[
+			['2+', 'output', 4]
+		]
+	)
 	event.remove({ id: 'alloy_forgery:compat/silver_ingot_from_ores' })
-	event.custom({
-		"fabric:load_conditions": [
-			{
-				"condition": "fabric:item_tags_populated",
-				"values": [
-					"c:silver_ores",
-					"c:silver_ingots"
-				]
-			}
+	alloyForgeRecipe(
+		[
+			['#c:silver_ores', 1],
 		],
-		"type": "alloy_forgery:forging",
-		"inputs": [
-			{
-				"tag": "c:silver_ores"
-			}
-		],
-		"output": {
-			"priority": [
-				"galosphere:silver_ingot"
-			],
-			"default": "c:silver_ingots",
-			"count": 2
-		},
-		"overrides": {
-			"2": {
-				"count": 3
-			},
-			"3+": {
-				"count": 4
-			}
-		},
-		"min_forge_tier": 1,
-		"fuel_per_tick": 5
-	})
+		['galosphere:silver_ingot', 2],
+		1,
+		5,
+		[
+			['2+', 'output', 3],
+			['3+', 'output', 4]
+		]
+	)
 	event.remove({ id: 'alloy_forgery:silver_blocks' })
-	event.custom({
-		"type": "alloy_forgery:forging",
-		"fabric:load_conditions": [
-			{
-				"condition": "fabric:tags_populated",
-				"values": [
-					"c:silver_blocks",
-					"c:raw_silver_blocks"
-				]
-			}
+	alloyForgeRecipe(
+		[
+			['#c:raw_silver_blocks', 2],
 		],
-		"fuel_per_tick": 45,
-		"inputs": [
-			{
-				"count": 2,
-				"tag": "c:raw_silver_blocks"
-			}
-		],
-		"min_forge_tier": 1,
-		"output": {
-			"count": 3,
-			"default": "c:silver_blocks",
-			"priority": [
-				"galosphere:silver_block"
-			]
-		},
-		"overrides": {
-			"2+": {
-				"count": 4
-			}
-		}
-	})
+		['galosphere:silver_block', 3],
+		1,
+		45,
+		[
+			['2+', 'output', 4],
+		]
+	)
+
 	// Unify Wheat Dough
 	event.remove({ id: 'create:smoking/bread' })
 	event.replaceOutput({ output: 'farmersdelight:wheat_dough' },
@@ -1360,130 +1332,53 @@ ServerEvents.recipes((event) => {
 	gearRecipe(2, 'iron_nugget');
 
 	event.remove({ id: 'create:mixing/brass_ingot' })
-	event.custom(
-		{
-			'type': 'alloy_forgery:forging',
-			'inputs': [
-				{
-					'tag': 'c:copper_ingots'
-				},
-				{
-					'item': 'create:zinc_ingot'
-				}
-			],
-			'output': {
-				'id': 'create:brass_ingot',
-				'count': 2
-			},
-			'overrides': {
-				'3+': {
-					'id': 'create:brass_ingot',
-					'count': 3
-				}
-			},
-			'min_forge_tier': 1,
-			'fuel_per_tick': 5
-		}
+	alloyForgeRecipe(
+		[
+			['#c:copper_ingots', 1],
+			['create:zinc_ingot', 1]
+		],
+		['create:brass_ingot', 2],
+		1,
+		5,
+		[
+			['3+', 'output', 3],
+		]
 	)
-	event.custom(
-		{
-			'type': 'alloy_forgery:forging',
-			'inputs': [
-				{
-					'item': 'minecraft:raw_copper'
-				},
-				{
-					'item': 'create:raw_zinc'
-				}
-			],
-			'output': {
-				'id': 'create:brass_ingot',
-				'count': 2
-			},
-			'overrides': {
-				'3+': {
-					'id': 'create:brass_ingot',
-					'count': 3
-				}
-			},
-			'min_forge_tier': 1,
-			'fuel_per_tick': 5
-		}
+	alloyForgeRecipe(
+		[
+			['minecraft:raw_copper', 1],
+			['create:raw_zinc', 1]
+		],
+		['create:brass_ingot', 2],
+		1,
+		5,
+		[
+			['3+', 'output', 3],
+		]
 	)
-	event.custom(
-		{
-			'type': 'alloy_forgery:forging',
-			'inputs': [
-				{
-					'tag': 'c:raw_copper_blocks'
-				},
-				{
-					'item': 'create:raw_zinc_block'
-				}
-			],
-			'output': {
-				'id': 'create:brass_block',
-				'count': 2
-			},
-			'overrides': {
-				'3+': {
-					'id': 'create:brass_block',
-					'count': 3
-				}
-			},
-			'min_forge_tier': 2,
-			'fuel_per_tick': 5
-		}
+	alloyForgeRecipe(
+		[
+			['minecraft:copper_block', 1],
+			['create:zinc_block', 1]
+		],
+		['create:brass_block', 2],
+		2,
+		45,
+		[
+			['3+', 'output', 3],
+		]
 	)
-	event.custom(
-		{
-			'type': 'alloy_forgery:forging',
-			'inputs': [
-				{
-					'tag': 'c:raw_copper_blocks'
-				},
-				{
-					'item': 'create:raw_zinc_block'
-				}
-			],
-			'output': {
-				'id': 'create:brass_block',
-				'count': 2
-			},
-			'overrides': {
-				'3+': {
-					'id': 'create:brass_block',
-					'count': 3
-				}
-			},
-			'min_forge_tier': 2,
-			'fuel_per_tick': 45
-		}
-	)
-	event.custom(
-		{
-			'type': 'alloy_forgery:forging',
-			'inputs': [
-				{
-					'tag': 'c:copper_blocks'
-				},
-				{
-					'item': 'create:zinc_block'
-				}
-			],
-			'output': {
-				'id': 'create:brass_block',
-				'count': 2
-			},
-			'overrides': {
-				'3+': {
-					'id': 'create:brass_block',
-					'count': 3
-				}
-			},
-			'min_forge_tier': 2,
-			'fuel_per_tick': 45
-		}
+	alloyForgeRecipe(
+		[
+			['minecraft:raw_copper_block', 1],
+			['create:raw_zinc_block', 1]
+		],
+		['create:brass_block', 2],
+		2,
+		45,
+		[
+			['3+', 'output', 3],
+		]
 	)
 
 	event.remove({ id: 'minecraft:ender_eye' });
@@ -2259,59 +2154,30 @@ ServerEvents.recipes((event) => {
 	])
 
 	// Harder Celestium and Metallurgium
-	event.custom({
-		"type": "alloy_forgery:forging",
-		"inputs": [
-			{
-				"item": "mythicmetals:star_platinum"
-			},
-			{
-				"item": "botania:elementium_ingot"
-			},
-			{
-				"item": "aether_redux:gravitite_ingot"
-			},
-			{
-				"item": "unusualend:pearlescent_ingot"
-			},
-			{
-				"item": "mythicmetals:unobtainium"
-			}
+	alloyForgeRecipe(
+		[
+			['mythicmetals:star_platinum', 1],
+			['botania:elementium_ingot', 1],
+			['aether_redux:gravitite_ingot', 1],
+			['unusualend:pearlescent_ingot', 1],
+			['mythicmetals:unobtainium', 1]
 		],
-		"output": {
-			"id": "mythicmetals:celestium_ingot",
-			"count": 1
-		},
-		"min_forge_tier": 3,
-		"fuel_per_tick": 50
-	})
-
-	event.custom({
-		"type": "alloy_forgery:forging",
-		"inputs": [
-			{
-				"item": "mythicmetals:hallowed_ingot"
-			},
-			{
-				"item": "mythicmetals:palladium_ingot"
-			},
-			{
-				"item": "botania:terrasteel_ingot"
-			},
-			{
-				"item": "born_in_chaos_v1:dark_metal_ingot"
-			},
-			{
-				"item": "mythicmetals:unobtainium"
-			}
+		['crmythicmetalseate:celestium_ingot', 1],
+		3,
+		80
+	)
+	alloyForgeRecipe(
+		[
+			['mythicmetals:hallowed_ingot', 1],
+			['mythicmetals:palladium_ingot', 1],
+			['botania:terrasteel_ingot', 1],
+			['born_in_chaos_v1:dark_metal_ingot', 1],
+			['mythicmetals:unobtainium', 1]
 		],
-		"output": {
-			"id": "mythicmetals:metallurgium_ingot",
-			"count": 1
-		},
-		"min_forge_tier": 3,
-		"fuel_per_tick": 50
-	})
+		['crmythicmetalseate:metallurgium_ingot', 1],
+		3,
+		80
+	)
 
 	event.shaped(
 		'3x scaffolding',
@@ -2768,7 +2634,7 @@ ServerEvents.recipes((event) => {
 		// Filter out ingredients that contain the base item
 		ingredients = ingredients.filter(ingredient => !ingredient.getItemIds().toString().includes(baseItem));
 
-		console.log(ingredients)
+		// console.log(ingredients)
 		event.remove({ id: recipe.getId() });
 
 		event.recipes.farmersdelight.cooking(
@@ -2787,8 +2653,8 @@ ServerEvents.recipes((event) => {
 		const id = boat.split(':')
 		const mod = id[0];
 		const type = id[1].replace('_boat', '').replace('_raft', '');
-		console.log(id)
-		console.log(type)
+		// console.log(id)
+		// console.log(type)
 		const boatType = `${(mod == 'upgrade_aquatic') ? 'blueprint' : mod}:${(mod === 'aether' || mod === 'aether_redux') ? `${type}_` : ((mod == 'moresnifferflowers') ? `mod_${type}_` : '')}${isChestRecipe ? 'chest_' : ''}boat`
 
 		function plankShapeChecks(xzAxis) {
@@ -3082,5 +2948,68 @@ ServerEvents.recipes((event) => {
 				G: (ingredients[7].getItemIds().toArray().includes('minecraft:stick')) ? '#c:rods/wooden' : ingredients[7],
 			}
 		).id(`kubejs:sign/${output.replace(':', '_')}`)
+	})
+
+	alloyForgeRecipe(
+		[
+			['experienceobelisk:cognitive_amalgam', 3],
+			['create:zinc_ingot', 2]
+		],
+		'experienceobelisk:cognitive_alloy',
+		1,
+		10,
+		[
+			['2+', 'output', 2],
+			['3+', 'output', 3]
+		]
+	)
+
+	event.recipes.create.mixing('experienceobelisk:cognitive_flux', [
+		'2x quartz',
+		'1x soul_sand',
+		'1x botania:mana_powder',
+		// Fluid.water(0.25)
+	])
+	event.recipes.create.mixing('experienceobelisk:cognitive_flux', [
+		'2x quartz',
+		'1x soul_soil',
+		'1x botania:mana_powder',
+		// Fluid.water(0.25)
+	])
+
+	event.custom({
+		"type": "experienceobelisk:molecular_metamorphosis",
+		"ingredient1": {
+			"item": "experienceobelisk:cognitive_flux"
+		},
+		"count1": 2,
+		"ingredient2": {
+			"item": "create:zinc_ingot"
+		},
+		"count2": 1,
+		"ingredient3": [],
+		"count3": 0,
+		"result": {
+			"item": "experienceobelisk:cognitive_alloy",
+			"count": 1
+		},
+		"cost": 27,
+		"processTime": 400
+	})
+
+	event.forEachRecipe({ type: 'experienceobelisk:molecular_metamorphosis' }, recipe => {
+		const json = recipe.json.deepCopy()
+
+		let object = {}
+
+		json.keySet().forEach(entry => {
+			object[entry] = json.get(entry)
+		})
+
+		object['processTime'] = Math.ceil(object['processTime'] * 10)
+
+		event.remove({ id: recipe.getId() })
+
+		event.custom(object).id(recipe.getId())
 	})
 });

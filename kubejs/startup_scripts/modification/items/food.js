@@ -208,6 +208,15 @@ ItemEvents.modification(event => {
 			food.effect('hunger', duration("0:30"), 0, 0.3)
 		})
 	})
+
+	event.modify('minecraft:glistering_melon_slice', item => {
+		item.setFoodProperties(food => {
+			food.effect('instant_health', 1, 0, 0.1);
+			food.alwaysEdible(true);
+			food.hunger(3);
+			food.saturation(0.6)
+		})
+	})
 });
 
 function duration(string, mul) {

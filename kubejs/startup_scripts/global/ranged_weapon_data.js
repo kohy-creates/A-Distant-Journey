@@ -31,7 +31,6 @@ global.bowDamage = {
 	'mcdw:crossbow_firebolt_thrower': 18,
 	'mcdw:bow_bonebow': 15,
 	'mcdw:crossbow_pride_of_the_piglins': 24,
-	
 
 }
 
@@ -71,6 +70,9 @@ global.arrowDamage = {
 	'netherexp:phasmo_arrow': 6,
 	'alexscaves:seeking_arrow': 6,
 	'alexscaves:burrowing_arrow': 5,
+	
+	'minecraft:trident': 21,
+	'cataclysm:ceraunus': 56,
 }
 
 global.arrowPierce = {
@@ -86,7 +88,11 @@ global.arrowPierce = {
  * @type {Record<Special.EntityType, number>}
  */
 global.monsterRangedDamageBase = {
-	'minecraft:skeleton': 14
+	'minecraft:skeleton': 14,
+	'minecraft:stray': 12,
+	'minecraft:wither_skeleton': 18,
+	'minecraft:pillager': 19,
+	'minecraft:illusioner': 23,
 }
 
 global.monsterRangedDamageMul = {

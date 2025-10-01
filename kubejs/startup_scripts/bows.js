@@ -6,7 +6,16 @@ const $MinecraftForge = Java.loadClass("net.minecraftforge.common.MinecraftForge
 const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent")
 
 // From https://discord.com/channels/303440391124942858/1155238168732368926/1155238168732368926
+
 StartupEvents.init(event => {
+
+	const rangedDamageSources = [
+		'DamageSource (arrow)',
+		'DamageSource (cataclysm.maledictio_sagitta)',
+		'DamageSource (trident)',
+		'DamageSource (cataclysm.storm_bringer)'
+	]
+
 	$MinecraftForge.EVENT_BUS['addListener(net.minecraftforge.eventbus.api.EventPriority,boolean,java.lang.Class,java.util.function.Consumer)'](
 		$EventPriority.HIGHEST,
 		false,
@@ -16,7 +25,7 @@ StartupEvents.init(event => {
 		 */
 		event => {
 			const source = event.getSource()
-			if (source.toString() == 'DamageSource (arrow)' || source.toString() == 'DamageSource (cataclysm.maledictio_sagitta)') /* The shit I have to do sometimes */ {
+			if (rangedDamageSources.includes(source.toString())) {
 				const shooter = source.getActual();
 				if (!shooter) return;
 				let damage;
@@ -28,6 +37,7 @@ StartupEvents.init(event => {
 
 					const pData = arrowEntity.persistentData;
 					damage = (pData.arrowDamage + pData.bowDamage) * velocity;
+
 				}
 				else {
 					const velocity = Math.min(arrowEntity.getDeltaMovement().length(), 0.4) / 0.4;
