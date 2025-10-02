@@ -13,7 +13,8 @@
 		},
 		{
 			"id": "1.1.0",
-			"releasedAt": 1759342854000
+			"releasedAt": 1759342854000,
+			"updateType": "major"
 		}
 	]
 }

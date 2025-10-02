@@ -31,6 +31,7 @@ Press F1, F2, F3 to quickly change equipped armor and accessories to a different
 - Fixed vanilla enchantments having no description.
 - Fixed Boat recipes showing multiplied.
 - Crafting Ender Air Bottles in Warped Forest is less janky now.
+- Added end credits.
 
 - Changed some default keybinds:
   - Open Remote Controller (Tom's Storage): B -> CTRL + E
