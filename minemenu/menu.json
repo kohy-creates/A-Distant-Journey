@@ -24,6 +24,18 @@
         }
       }
     },
+    "4": {
+      "title": "Social Interactions (Multiplayer only)",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:player_head\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.socialInteractions",
+          "toggle": false
+        }
+      }
+    },
     "5": {
       "title": "Shaders",
       "icon": {
@@ -93,18 +105,6 @@
       "action": {
         "key": {
           "key": "key.mute_microphone",
-          "toggle": false
-        }
-      }
-    },
-    "1": {
-      "title": "Disable Voice Chat",
-      "icon": {
-        "stack": "{Count:1b,id:\"minecraft:redstone_block\"}"
-      },
-      "action": {
-        "key": {
-          "key": "key.disable_voice_chat",
           "toggle": false
         }
       }

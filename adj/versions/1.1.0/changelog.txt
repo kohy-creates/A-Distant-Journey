@@ -1,0 +1,42 @@
+Introducing new equipment layouts! Terraria style.
+
+Press F1, F2, F3 to quickly change equipped armor and accessories to a different preset of yours.
+
+**In order to smoothly update from older versions, go into `config` folder and delete `default_key_setup-client.toml`.** This will unfortunately reset all of your keybinds if you set them to something different, but will prevent any conflicts with new loadout feature.
+
+
+**[Mod changes]**
+
+- Added [Inline](https://www.curseforge.com/minecraft/mc-mods/inline).
+- Added [Sweety's Garden](https://modrinth.com/mod/sweety-garden).
+
+------
+
+**[Balance changes]**
+
+- Limitite is slightly more expensive to craft.
+- All explosions deal 25% less damage.
+- Soul Dagger family weapons increase mana regeneration on attacks.
+- Decreased Trident damage (35 -> 21), added a 10% crit chance modifier. Also fixed thrown damage being always 1.
+- Cognitive Alloy is now crafted in an Alloy Forge and requires Zinc instead of Copper.
+
+------
+
+**[Other]**
+
+- Fixed a crash on servers and hosted games upon equipping any accessory.
+- Stone Forge quest no longer has a building task as it never really worked that well.
+- Accessories no longer drop on death.
+- Fixed both upgraded Botanic Additions rings being unequippable.
+- Fixed vanilla enchantments having no description.
+- Fixed Boat recipes showing multiplied.
+- Crafting Ender Air Bottles in Warped Forest is less janky now.
+
+- Changed some default keybinds:
+  - Open Remote Controller (Tom's Storage): B -> CTRL + E
+  - Cycle spells next/previous (Ars Nouveau) X/Z -> Right Arrow/Left Arrow
+  - Adjust camera position (Shoulder Surfing) -> kept default, but added CTRL as a combo
+  - Hide GUI: F1 -> F4
+  - Screenshot: F2 -> F8
+  - Debug menu: F3 -> Home (it doesn't show much in ADJ anyway)
+  - F1, F2 and F3 now quickly switch between equipment loadouts.

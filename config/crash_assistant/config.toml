@@ -151,6 +151,11 @@
 	#Same as upload_all_button_foreground_color, but for Request Help button.
 	#Default for this button is "0_0_178" (dark blue color).
 	request_help_button_foreground_color = "0_0_178"
+	#Same as upload_all_button_font_size, but for Auto-Fix button (in integrated GPU warning).
+	auto_fix_button_font_size = 16
+	#Same as upload_all_button_foreground_color, but for Auto-Fix button (in integrated GPU warning).
+	#Default for this button is "0_178_0" (dark green color).
+	auto_fix_button_foreground_color = "0_178_0"
 
 #Settings of analysis tools feature.
 #Here you can enable disable showing some analysis tools fot end user.
