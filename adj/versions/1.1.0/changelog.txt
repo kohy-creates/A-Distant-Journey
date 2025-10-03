@@ -5,6 +5,8 @@ Press F1, F2, F3 to quickly change equipped armor and accessories to a different
 **In order to smoothly update from older versions, go into `config` folder and delete `default_key_setup-client.toml`.** This will unfortunately reset all of your keybinds if you set them to something different, but will prevent any conflicts with new loadout feature.
 
 
+------
+
 **[Mod changes]**
 
 - Added [Inline](https://www.curseforge.com/minecraft/mc-mods/inline).
@@ -19,7 +21,7 @@ Press F1, F2, F3 to quickly change equipped armor and accessories to a different
 - Soul Dagger family weapons increase mana regeneration on attacks.
 - Decreased Trident damage (35 -> 21), added a 10% crit chance modifier. Also fixed thrown damage being always 1.
 - Cognitive Alloy is now crafted in an Alloy Forge and requires Zinc instead of Copper.
-
+- Create Fluid Tanks store more buckets of fluid (8 -> 16)
 ------
 
 **[Other]**
@@ -31,8 +33,8 @@ Press F1, F2, F3 to quickly change equipped armor and accessories to a different
 - Fixed vanilla enchantments having no description.
 - Fixed Boat recipes showing multiplied.
 - Crafting Ender Air Bottles in Warped Forest is less janky now.
-- Added end credits.
-
+- Added ending credits that play once a player picks up Architect's Prism.
+- Backported the 1.21.9 dye textures.
 - Changed some default keybinds:
   - Open Remote Controller (Tom's Storage): B -> CTRL + E
   - Cycle spells next/previous (Ars Nouveau) X/Z -> Right Arrow/Left Arrow

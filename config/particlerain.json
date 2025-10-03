@@ -69,7 +69,7 @@
         "particlerain:rain_3"
       ],
       "tintType": "WATER",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "RELATIVE_VELOCITY"
     },
     {
@@ -108,7 +108,7 @@
         "particlerain:snow_3"
       ],
       "tintType": "NONE",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     },
     {
@@ -149,14 +149,14 @@
         "particlerain:dust"
       ],
       "tintType": "MAP",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     },
     {
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "rain_haze",
-      "enabled": true,
+      "enabled": false,
       "density": 0.1,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -185,14 +185,14 @@
         "particlerain:fog_dithered"
       ],
       "tintType": "FOG",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     },
     {
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "snow_haze",
-      "enabled": true,
+      "enabled": false,
       "density": 0.2,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -221,7 +221,7 @@
         "particlerain:fog_dithered"
       ],
       "tintType": "FOG",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     },
     {
@@ -262,7 +262,7 @@
         "particlerain:fog_dithered"
       ],
       "tintType": "MAP",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     },
     {
@@ -303,7 +303,7 @@
         "particlerain:rain_3"
       ],
       "tintType": "NONE",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     },
     {
@@ -344,7 +344,7 @@
         "particlerain:rain_3"
       ],
       "tintType": "NONE",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     },
     {
@@ -386,7 +386,7 @@
         "particlerain:rain_3"
       ],
       "tintType": "NONE",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     },
     {
@@ -429,7 +429,7 @@
         "particlerain:rain_3"
       ],
       "tintType": "NONE",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     },
     {
@@ -473,7 +473,7 @@
         "particlerain:rain_3"
       ],
       "tintType": "NONE",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     },
     {
@@ -514,7 +514,7 @@
         "particlerain:rain_3"
       ],
       "tintType": "NONE",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     },
     {
@@ -557,7 +557,7 @@
         "particlerain:rain_3"
       ],
       "tintType": "NONE",
-      "customTint": "000000",
+      "customTint": "#000000",
       "rotationType": "COPY_CAMERA"
     }
   ],

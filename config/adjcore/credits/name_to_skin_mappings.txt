@@ -42,7 +42,7 @@ Studios:NONE
 BisectHosting:NONE
 latvian.dev:NONE
 &:NONE
-(@xdMatthewbx#1337)
+(@xdMatthewbx#1337):NONE
 BasiqueEvangelist:NONE
 Love:NONE
 Cheese:NONE
