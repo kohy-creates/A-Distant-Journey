@@ -22,6 +22,7 @@ Press F1, F2, F3 to quickly change equipped armor and accessories to a different
 - Decreased Trident damage (35 -> 21), added a 10% crit chance modifier. Also fixed thrown damage being always 1.
 - Cognitive Alloy is now crafted in an Alloy Forge and requires Zinc instead of Copper.
 - Create Fluid Tanks store more buckets of fluid (8 -> 16)
+
 ------
 
 **[Other]**
