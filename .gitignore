@@ -100,3 +100,9 @@ enigmatic_persistence.dat
 !.probe/probe-settings.json
 jsconfig.json
 spyglass.json
+
+# Things I forgot about
+exposures/
+profileImage
+etched-sounds/
+hotbar.nbt
