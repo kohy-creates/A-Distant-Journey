@@ -377,6 +377,32 @@ ServerEvents.recipes((event) => {
 
 	alloyForgeRecipe(
 		[
+			['minecraft:gold_ingot', 2],
+			['minecraft:copper_ingot', 3]
+		],
+		'additionaladditions:rose_gold_alloy',
+		1,
+		5,
+		[
+			['3+', 'output', 2]
+		]
+	)
+
+	alloyForgeRecipe(
+		[
+			['minecraft:raw_gold', 2],
+			['minecraft:raw_copper', 3]
+		],
+		['additionaladditions:rose_gold_alloy', 2],
+		1,
+		5,
+		[
+			['3+', 'output', 3]
+		]
+	)
+
+	alloyForgeRecipe(
+		[
 			['minecraft:gold_ingot', 4],
 			['minecraft:netherite_scrap', 4]
 		],
@@ -384,7 +410,7 @@ ServerEvents.recipes((event) => {
 		2,
 		40,
 		[
-			['3+', 'minecraft:netherite_ingot', 2]
+			['3+', 'output', 2]
 		]
 	)
 
