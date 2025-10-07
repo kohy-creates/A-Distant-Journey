@@ -1,13 +1,23 @@
 LootJS.modifiers((event) => {
-	event.addLootTableModifier(/.*/).modifyLoot(Ingredient.of('farmersdelight:wheat_dough'), itemstack => {
-		return Ingredient.of('create:dough')
-	});
 
-	event.addLootTableModifier(/.*/).modifyLoot(Ingredient.of('rediscovered:quiver'), itemstack => {
-		return Ingredient.of('supplementaries:quiver')
-	});
+	const replaceItemsMap = {
+		'create:honey_bucket': 'the_bumblezone:honey_bucket',
+		'farmersdelight:wheat_dough': 'create:dough',
+		'rediscovered:quiver': 'supplementaries:quiver'
+	}
 
-	event.addLootTableModifier(/.*/).removeLoot(global.blacklistedItems);
+	for (const [before, after] of Object.entries(replaceItemsMap)) {
+		event.addLootTableModifier(/.*/).modifyLoot(Ingredient.of(before), itemstack => {
+			return Ingredient.of(after)
+		});
+	}
+
+	const removedItems = [
+		global.blacklistedItems,
+		/quark\:.*_shard/
+	]
+
+	event.addLootTableModifier(/.*/).removeLoot(removedItems);
 
 	const skullFragmentDrop = (pool) => {
 		pool.rolls(1);

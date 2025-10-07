@@ -70,6 +70,9 @@
 		[types.wood_type.witherstormmod]
 			tainted = true
 
+		[types.wood_type.enhanced_mushrooms]
+			mushroom = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -636,6 +639,9 @@
 			dirt_path = true
 			large_brick = true
 
+		[types.cut_block_type.enhanced_mushrooms]
+			mushroom = true
+
 #Disables specific entries
 [entries]
 
@@ -647,9 +653,6 @@
 		[entries.wood_type.create]
 			window_pane = true
 			window = true
-
-		[entries.wood_type.backpacked]
-			backpack_shelf = true
 
 		[entries.wood_type.handcrafted]
 			counter = true

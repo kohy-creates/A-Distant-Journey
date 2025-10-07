@@ -72,16 +72,30 @@
         },
         "mob_effect": {
           "ambient": false,
-          "amplifier": 0,
+          "amplifier": 1,
           "duration_in_ticks": 300,
           "effect": "minecraft:strength",
+          "show_icon": false,
+          "visible": false
+        }
+      },
+      {
+        "filter": {
+          "mob_category": "monster",
+          "type": "corgilib:is_mob_category"
+        },
+        "mob_effect": {
+          "ambient": false,
+          "amplifier": 0,
+          "duration_in_ticks": 300,
+          "effect": "minecraft:speed",
           "show_icon": false,
           "visible": false
         }
       }
     ],
     "spawn_category_multiplier": {
-      "monster": 3.5
+      "monster": 2.0
     }
   },
   "text_components": {

@@ -65,22 +65,25 @@ function changeGamerules(server, stage) {
 
 const chapterMessages = {
 	'chapter_1': [
-		Text.of('The spirits of hell are flowing to the Overworld...').red().italic()
+		Text.of('The spirits of hell enter the Overworld...').red().italic(),
+		Text.of('The caverns have been blessed with Mythril and Orichalcum').italic().green()
 	],
 	'chapter_2': [
-		Text.of('The ancient spirits of darkness have been released...').darkRed().italic(),
-		Text.of('Heavenly gates open...').yellow().italic()
+		Text.of('The ancient spirits of darkness have been released').darkRed().italic(),
+		Text.of('Heavenly gates open...').yellow().italic(),
+		Text.of('The hellish depths have been blessed with Palladium').gold().green()
 	],
 	'chapter_3': [
-		Text.of('The ancient spirits of light have been released...').yellow().italic(),
-		Text.of('Dreams of a different realm start to materialize...').red().italic()
+		Text.of('The ancient spirits of light have been released').yellow().italic(),
+		Text.of('Dreams of a different realm start to materialize...').red().italic(),
+		Text.of('Two legendary ores start appearing in other dimensions...').italic().green()
 	],
 	'chapter_4': [
 		Text.of('The boundary between dreams and nigthmares lessens...').red().italic(),
-		Text.of('Awakened Ender Pearls start to twitch...').lightPurple().italic()
+		Text.of('Awakened Ender Pearls start to twitch').lightPurple().italic()
 	],
 	'chapter_5': [
-		Text.of('The reality twists one final time...').darkPurple().italic()
+		Text.of('The reality twists again, one final time...').darkPurple().italic(),
 	]
 }
 

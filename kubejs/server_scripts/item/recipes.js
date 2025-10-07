@@ -123,33 +123,33 @@ ServerEvents.recipes((event) => {
 
 	// Slightly different Atlas recipe
 	event.remove({ id: 'map_atlases:craft_atlas' })
-	event.custom({
-		"type": "map_atlases:crafting_atlas",
-		"ingredients": [
-			{
-				"item": "minecraft:book"
-			},
-			{
-				"item": "minecraft:feather"
-			},
-			{
-				"item": "minecraft:compass"
-			},
-			{
-				"item": "minecraft:ink_sac"
-			}
-		]
-	})
-	// event.shapeless(
-	// 	Item.of('map_atlases:atlas'),
-	// 	[
-	// 		'book',
-	// 		'#adj:any_map',
-	// 		'ink_sac',
-	// 		'feather',
-	// 		'compass'
+	// event.custom({
+	// 	"type": "map_atlases:crafting_atlas",
+	// 	"ingredients": [
+	// 		{
+	// 			"item": "minecraft:book"
+	// 		},
+	// 		{
+	// 			"item": "minecraft:feather"
+	// 		},
+	// 		{
+	// 			"item": "minecraft:compass"
+	// 		},
+	// 		{
+	// 			"item": "minecraft:ink_sac"
+	// 		}
 	// 	]
-	// )
+	// }).id('kubejs:atlas')
+	event.shapeless(
+		Item.of('map_atlases:atlas', '{empty:9}'),
+		[
+			'book',
+			'#adj:any_map',
+			'ink_sac',
+			'feather',
+			'compass'
+		]
+	)
 
 	event.shaped(
 		Item.of('enchantinginfuser:enchanting_infuser', 1),
@@ -1117,6 +1117,31 @@ ServerEvents.recipes((event) => {
 	// Remove unused MythicMetals recipes
 	event.remove({ input: /manganese/ });
 	event.remove({ input: /quadrillum/ });
+
+	// Unify Honey
+	event.replaceInput({ input: Fluid.of('create:honey') },
+		Fluid.of('create:honey'),
+		Fluid.of('the_bumblezone:honey_fluid_still')
+	)
+
+	const honeyMap = {
+		'create:honey': 'the_bumblezone:honey_fluid_still',
+		'create:honey_bucket': 'the_bumblezone:honey_bucket'
+	}
+	event.forEachRecipe({}, recipe => {
+
+		let json = recipe.json.toString();
+
+		for (const [before, after] of Object.entries(honeyMap)) {
+			if (!json.includes(before)) return;
+
+			event.remove({ id: recipe.getId() })
+
+			json = json.replace(before, after);
+			event.custom(JSON.parse(json)).id(recipe.getId())
+		}
+
+	})
 
 	// Harder Bread
 	event.remove({ id: 'minecraft:bread' })
@@ -2681,7 +2706,7 @@ ServerEvents.recipes((event) => {
 		const type = id[1].replace('_boat', '').replace('_raft', '');
 		// console.log(id)
 		// console.log(type)
-		const boatType = `${(mod == 'upgrade_aquatic') ? 'blueprint' : mod}:${(mod === 'aether' || mod === 'aether_redux') ? `${type}_` : ((mod == 'moresnifferflowers') ? `mod_${type}_` : '')}${isChestRecipe ? 'chest_' : ''}boat`
+		const boatType = `${(mod == 'upgrade_aquatic' || mod == 'enhanced_mushrooms') ? 'blueprint' : mod}:${(mod === 'aether' || mod === 'aether_redux') ? `${type}_` : ((mod == 'moresnifferflowers') ? `mod_${type}_` : '')}${isChestRecipe ? 'chest_' : ''}boat`
 
 		function plankShapeChecks(xzAxis) {
 			let checks;

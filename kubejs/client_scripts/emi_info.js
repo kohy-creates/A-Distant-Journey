@@ -136,9 +136,19 @@ JEIEvents.information(event => {
 		'Wand of the Forest is used to bind Generating Flora to Mana Spreaders and to point Spreaders in a given direction. And some other misc functions you probably don\'t need to know.'
 	])
 
-	
+
 	event.addItem(['botania:ender_air_bottle', 'glass_bottle'], [
 		'Right click with an Empty Bottle to bottle up some Ender Air while in either The End dimension or in a Warped Forest.',
+	])
+
+	event.addItem(
+		[
+			/functionalstorage:oak_.*/,
+			'functionalstorage:compacting_drawer'
+		], [
+		'Storage Drawers can hold up to 16 stacks of a single item, being a perfect solution for mass single item storage.',
+		'1x2 Drawers can hold 8 stacks of 2 different items, 2x2 Drawers can hold 4 stacks of 4 different items.',
+		'Compacting Drawers automatically compact items into their storage forms (e.g. Iron Ingot -> Iron Block).'
 	])
 
 	/* 
