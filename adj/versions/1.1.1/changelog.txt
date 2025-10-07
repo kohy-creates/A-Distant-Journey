@@ -1,0 +1,30 @@
+Bug fixes and minor features.
+
+------
+
+**[Mod changes]**
+
+- Added a few new mods:
+  - [Enhanced Mushrooms](<https://www.curseforge.com/minecraft/mc-mods/enhanced-mushrooms>)
+  - [Trash Cans](<https://www.curseforge.com/minecraft/mc-mods/trash-cans>)
+  - [Pottery](<https://www.curseforge.com/minecraft/mc-mods/pottery-additional-pots>)
+- Updated all mods. Most notable changes are new splashing and waterfall particles and new weather effects.
+------
+
+**[Balance changes]**
+
+- Rose Gold is slightly cheaper to craft (3 Gold + 3 Copper -> 2 Gold + 3 Copper).
+
+------
+
+**[Other]**
+
+- Fixed Rose Gold Alloy having no crafting recipe.
+- Fixed Atlas having no crafting recipe.
+- (from 1.0.0) Fixed Atlas stating it has 9 empty maps when crafted while in reality it had 0.
+- Finally fixed the Diamond Upgrade Smithing Template having no texture (CurseForge export did a funky twice).
+- Fixed Crimson and Warped Drawers showing up in EMI. 
+- Fixed unavailable (chapter-locked) items showing in EMI. This comes at a price, as emi takes significantly longer to load now in comparison.
+- Fixed Creative-only items showing in EMI.
+- Unified Honey liquids (previously there was Honey Fluid from The Bumblezone and Honey from Create, now it's just the first one).
+
