@@ -1,0 +1,2096 @@
+{
+	"removed": [
+		"item:v_slab_compat:clayworks/black_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:create/cut_scoria_vertical_slab",
+		"item:v_slab_compat:clayworks/green_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:unusualend/shiny_crystal_tiles_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/light_gray_tile_vertical_slab",
+		"item:v_slab_compat:botania/livingrock_bricks_vertical_slab",
+		"item:v_slab_compat:the_bumblezone/ancient_wax_bricks_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/gray_tile_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_swamp_bricks_vertical_slab",
+		"item:v_slab_compat:create/cut_tuff_vertical_slab",
+		"item:v_slab_compat:moresnifferflowers/corrupted_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_mountain_bricks_vertical_slab",
+		"item:v_slab_compat:netherexp/soul_slate_tile_vertical_slab",
+		"item:v_slab_compat:botania/corporea_brick_vertical_slab",
+		"item:v_slab_compat:clayworks/terracotta_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_fungal_cobblestone_vertical_slab",
+		"item:v_slab_compat:clayworks/light_blue_terracotta_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/orange_shingle_vertical_slab",
+		"item:v_slab_compat:unusualend/polished_gloopslate_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_limestone_vertical_slab",
+		"item:v_slab_compat:naturalist/smooth_shellstone_vertical_slab",
+		"item:v_slab_compat:netherexp/smooth_silica_sandstone_vertical_slab",
+		"item:v_slab_compat:galosphere/smooth_lumiere_vertical_slab",
+		"item:v_slab_compat:betterarcheology/rotten_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/archwood_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/pink_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:clayworks/orange_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/lime_shingle_vertical_slab",
+		"item:v_slab_compat:netherexp/stacked_wither_bone_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/black_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:alexscaves/coprolith_vertical_slab",
+		"item:v_slab_compat:botania/yellow_pavement_vertical_slab",
+		"item:v_slab_compat:aether_redux/sentrite_vertical_slab",
+		"item:v_slab_compat:create/cut_granite_vertical_slab",
+		"item:v_slab_compat:netherexp/netherrack_brick_vertical_slab",
+		"item:v_slab_compat:the_bumblezone/ancient_wax_diamond_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/elder_prismarine_coralstone_vertical_slab",
+		"item:v_slab_compat:create/cut_crimsite_brick_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/horn_coralstone_vertical_slab",
+		"item:v_slab_compat:galosphere/pastel_pink_salt_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/purple_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:aether_redux/fieldsproot_vertical_slab",
+		"item:v_slab_compat:create/cut_scorchia_brick_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/pink_shingle_vertical_slab",
+		"item:v_slab_compat:create/small_crimsite_brick_vertical_slab",
+		"item:v_slab_compat:create/exposed_copper_shingle_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_scorchia_vertical_slab",
+		"item:v_slab_compat:moresnifferflowers/vivicus_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/yellow_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:delightful/glow_jam_cookie_tile_vertical_slab",
+		"item:v_slab_compat:create/oxidized_copper_shingle_vertical_slab",
+		"item:v_slab_compat:botania/white_pavement_vertical_slab",
+		"item:v_slab_compat:cataclysm/polished_end_stone_vertical_slab",
+		"item:v_slab_compat:supplementaries/stone_tile_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/smooth_sourcestone_alternating_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/river_vertical_slab",
+		"item:v_slab_compat:unusualend/chorus_nest_mosaic_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_plains_cobblestone_vertical_slab",
+		"item:v_slab_compat:clayworks/lime_terracotta_vertical_slab",
+		"item:v_slab_compat:botania/green_pavement_vertical_slab",
+		"item:v_slab_compat:botania/sunny_quartz_vertical_slab",
+		"item:v_slab_compat:rediscovered/mycelium_vertical_slab",
+		"item:v_slab_compat:aether_redux/jellyshroom_vertical_slab",
+		"item:v_slab_compat:botania/livingwood_vertical_slab",
+		"item:v_slab_compat:aether/holystone_vertical_slab",
+		"item:v_slab_compat:aether/skyroot_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/red_tile_vertical_slab",
+		"item:v_slab_compat:netherexp/cut_silica_sandstone_vertical_slab",
+		"item:v_slab_compat:unusualend/chorus_nest_vertical_slab",
+		"item:v_slab_compat:cataclysm/chorus_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/blue_tile_vertical_slab",
+		"item:v_slab_compat:create/waxed_weathered_copper_tile_vertical_slab",
+		"item:v_slab_compat:alexscaves/radrock_vertical_slab",
+		"item:v_slab_compat:galosphere/pastel_pink_salt_brick_vertical_slab",
+		"item:v_slab_compat:create/cut_deepslate_brick_vertical_slab",
+		"item:v_slab_compat:aether_redux/divinite_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/kelpy_cobblestone_tile_vertical_slab",
+		"item:v_slab_compat:cataclysm/frosted_stone_brick_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/kelpy_cobblestone_brick_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_mesa_bricks_vertical_slab",
+		"item:v_slab_compat:rediscovered/coarse_dirt_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/pink_tile_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/light_gray_shingle_vertical_slab",
+		"item:v_slab_compat:cataclysm/stone_tile_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/gilded_sourcestone_large_bricks_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/magenta_shingle_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_diorite_vertical_slab",
+		"item:v_slab_compat:create/small_calcite_brick_vertical_slab",
+		"item:v_slab_compat:ecologics/ice_brick_vertical_slab",
+		"item:v_slab_compat:ecologics/coconut_vertical_slab",
+		"item:v_slab_compat:clayworks/yellow_terracotta_vertical_slab",
+		"item:v_slab_compat:alexscaves/guanostone_vertical_slab",
+		"item:v_slab_compat:clayworks/red_terracotta_vertical_slab",
+		"item:v_slab_compat:create/cut_scorchia_vertical_slab",
+		"item:v_slab_compat:botania/dark_quartz_vertical_slab",
+		"item:v_slab_compat:unusualend/gneiss_brick_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/tooth_brick_vertical_slab",
+		"item:v_slab_compat:ecologics/flowering_azalea_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/brown_shingle_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/silk_coralstone_vertical_slab",
+		"item:v_slab_compat:clayworks/green_terracotta_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_swamp_cobblestone_vertical_slab",
+		"item:v_slab_compat:create/cut_crimsite_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/sourcestone_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/purple_tile_vertical_slab",
+		"item:v_slab_compat:buzzier_bees/honeycomb_tile_vertical_slab",
+		"item:v_slab_compat:aether/icestone_vertical_slab",
+		"item:v_slab_compat:botania/red_quartz_vertical_slab",
+		"item:v_slab_compat:phantasm/pream_vertical_slab",
+		"item:v_slab_compat:moresnifferflowers/amber_mosaic_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/dead_coralstone_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/white_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:unusualend/polished_purpur_brick_vertical_slab",
+		"item:v_slab_compat:unusualend/warped_stone_bricks_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/finger_coralstone_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/moss_coralstone_vertical_slab",
+		"item:v_slab_compat:create/waxed_exposed_copper_tile_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/branch_coralstone_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/brain_coralstone_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_calcite_vertical_slab",
+		"item:v_slab_compat:galosphere/polished_pink_salt_vertical_slab",
+		"item:v_slab_compat:netherexp/soul_slate_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/gilded_sourcestone_small_bricks_vertical_slab",
+		"item:v_slab_compat:clayworks/blue_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:create/small_asurine_brick_vertical_slab",
+		"item:v_slab_compat:clayworks/pink_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:create/cut_asurine_brick_vertical_slab",
+		"item:v_slab_compat:cataclysm/azure_seastone_brick_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/fire_coralstone_vertical_slab",
+		"item:v_slab_compat:rediscovered/dirt_path_vertical_slab",
+		"item:v_slab_compat:clayworks/light_gray_terracotta_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/white_tile_vertical_slab",
+		"item:v_slab_compat:clayworks/light_gray_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:unusualend/raw_purpur_block_vertical_slab",
+		"item:v_slab_compat:supplementaries/lapis_bricks_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/smooth_sourcestone_basketweave_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/bubble_coralstone_vertical_slab",
+		"item:v_slab_compat:botania/stripped_livingwood_vertical_slab",
+		"item:v_slab_compat:aether_redux/sentrite_brick_vertical_slab",
+		"item:v_slab_compat:create/waxed_oxidized_copper_shingle_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/black_shingle_vertical_slab",
+		"item:v_slab_compat:create/cut_dripstone_brick_vertical_slab",
+		"item:v_slab_compat:clayworks/brown_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:clayworks/purple_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:create/cut_diorite_vertical_slab",
+		"item:v_slab_compat:netherexp/smokestalk_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/sourcestone_basketweave_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/smooth_sourcestone_large_bricks_vertical_slab",
+		"item:v_slab_compat:alexscaves/pewen_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/smooth_gilded_sourcestone_small_bricks_vertical_slab",
+		"item:v_slab_compat:netherexp/yellow_nether_brick_vertical_slab",
+		"item:v_slab_compat:create/cut_tuff_brick_vertical_slab",
+		"item:v_slab_compat:cataclysm/polished_obsidian_vertical_slab",
+		"item:v_slab_compat:create/cut_dripstone_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/green_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:netherexp/polished_basalt_brick_vertical_slab",
+		"item:v_slab_compat:moresnifferflowers/chiseled_garnet_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/yellow_shingle_vertical_slab",
+		"item:v_slab_compat:botania/dreamwood_planks_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_plains_bricks_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/chrome_coralstone_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/gray_shingle_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_taiga_cobblestone_vertical_slab",
+		"item:v_slab_compat:create/cut_asurine_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/terracotta_brick_vertical_slab",
+		"item:v_slab_compat:clayworks/lime_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:supplementaries/fine_wood_vertical_slab",
+		"item:v_slab_compat:delightful/source_berry_cookie_tile_vertical_slab",
+		"item:v_slab_compat:create/small_tuff_brick_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/cyan_shingle_vertical_slab",
+		"item:v_slab_compat:galosphere/silver_panel_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/acan_coralstone_vertical_slab",
+		"item:v_slab_compat:botania/mana_quartz_vertical_slab",
+		"item:v_slab_compat:clayworks/brown_terracotta_vertical_slab",
+		"item:v_slab_compat:unusualend/gloopslate_bricks_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/sourcestone_small_bricks_vertical_slab",
+		"item:v_slab_compat:cataclysm/azure_seastone_vertical_slab",
+		"item:v_slab_compat:botania/blue_pavement_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_fungal_bricks_vertical_slab",
+		"item:v_slab_compat:botania/mossy_livingrock_bricks_vertical_slab",
+		"item:v_slab_compat:aether_redux/blightwillow_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_granite_vertical_slab",
+		"item:v_slab_compat:create/cut_andesite_vertical_slab",
+		"item:v_slab_compat:botania/lavender_quartz_vertical_slab",
+		"item:v_slab_compat:buzzier_bees/honeycomb_brick_vertical_slab",
+		"item:v_slab_compat:moresnifferflowers/garnet_mosaic_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/tube_coralstone_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/purple_shingle_vertical_slab",
+		"item:v_slab_compat:born_in_chaos_v1/black_argillite_brick_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/light_gray_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_desert_cobblestone_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/beachgrass_thatch_vertical_slab",
+		"item:v_slab_compat:unusualend/gloopstone_brick_vertical_slab",
+		"item:v_slab_compat:unusualend/polished_purpur_tiles_vertical_slab",
+		"item:v_slab_compat:alexscaves/smooth_bone_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/tile_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/brown_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:create/cut_ochrum_brick_vertical_slab",
+		"item:v_slab_compat:aether/aerogel_vertical_slab",
+		"item:v_slab_compat:ecologics/snow_brick_vertical_slab",
+		"item:v_slab_compat:witherstormmod/tainted_cut_sandstone_vertical_slab",
+		"item:v_slab_compat:born_in_chaos_v1/black_argillite_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/yellow_tile_vertical_slab",
+		"item:v_slab_compat:create/cut_limestone_brick_vertical_slab",
+		"item:v_slab_compat:create/cut_deepslate_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/black_tile_vertical_slab",
+		"item:v_slab_compat:galosphere/rose_pink_salt_brick_vertical_slab",
+		"item:v_slab_compat:unusualend/polished_gneiss_vertical_slab",
+		"item:v_slab_compat:create/cut_diorite_brick_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_desert_stone_vertical_slab",
+		"item:v_slab_compat:create/cut_veridium_vertical_slab",
+		"item:v_slab_compat:the_bumblezone/ancient_wax_compound_eyes_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/pillow_coralstone_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_scoria_vertical_slab",
+		"item:v_slab_compat:galosphere/smooth_allurite_vertical_slab",
+		"item:v_slab_compat:ecologics/azalea_vertical_slab",
+		"item:v_slab_compat:netherexp/blue_nether_brick_vertical_slab",
+		"item:v_slab_compat:aether_redux/cloudcap_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/kelpy_stone_brick_vertical_slab",
+		"item:v_slab_compat:botania/polished_livingrock_vertical_slab",
+		"item:v_slab_compat:phantasm/polished_obsidian_bricks_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/sourcestone_alternating_vertical_slab",
+		"item:v_slab_compat:create/waxed_weathered_copper_shingle_vertical_slab",
+		"item:v_slab_compat:clayworks/light_blue_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/blue_shingle_vertical_slab",
+		"item:v_slab_compat:witherstormmod/tainted_cobblestone_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/magenta_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:create/cut_limestone_vertical_slab",
+		"item:v_slab_compat:witherstormmod/tainted_sandstone_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/shingle_vertical_slab",
+		"item:v_slab_compat:create/cut_calcite_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/light_blue_tile_vertical_slab",
+		"item:v_slab_compat:aether_redux/polished_driftshale_vertical_slab",
+		"item:v_slab_compat:create/small_scorchia_brick_vertical_slab",
+		"item:v_slab_compat:alexscaves/gingerbread_brick_vertical_slab",
+		"item:v_slab_compat:botania/elf_quartz_vertical_slab",
+		"item:v_slab_compat:ecologics/walnut_vertical_slab",
+		"item:v_slab_compat:create/waxed_exposed_copper_shingle_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/gray_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:botania/livingwood_planks_vertical_slab",
+		"item:v_slab_compat:aether/holystone_brick_vertical_slab",
+		"item:v_slab_compat:galosphere/allurite_brick_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_mesa_stone_vertical_slab",
+		"item:v_slab_compat:create/copper_tile_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/smooth_gilded_sourcestone_large_bricks_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_deepslate_vertical_slab",
+		"item:v_slab_compat:mynethersdelight/powdery_vertical_slab",
+		"item:v_slab_compat:clayworks/white_terracotta_vertical_slab",
+		"item:v_slab_compat:botania/shimmerrock_vertical_slab",
+		"item:v_slab_compat:netherexp/soul_slate_brick_vertical_slab",
+		"item:v_slab_compat:create/small_limestone_brick_vertical_slab",
+		"item:v_slab_compat:alexscaves/radrock_brick_vertical_slab",
+		"item:v_slab_compat:rediscovered/grass_vertical_slab",
+		"item:v_slab_compat:aether_redux/polished_sentrite_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_forest_cobblestone_vertical_slab",
+		"item:v_slab_compat:galosphere/pink_salt_vertical_slab",
+		"item:v_slab_compat:create/small_diorite_brick_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_tuff_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/sourcestone_large_bricks_vertical_slab",
+		"item:v_slab_compat:galosphere/lumiere_brick_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/orange_tile_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/light_blue_shingle_vertical_slab",
+		"item:v_slab_compat:alexscaves/galena_vertical_slab",
+		"item:v_slab_compat:ecologics/seashell_tile_vertical_slab",
+		"item:v_slab_compat:cataclysm/obsidian_brick_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_asurine_vertical_slab",
+		"item:v_slab_compat:netherexp/stacked_bone_vertical_slab",
+		"item:v_slab_compat:alexscaves/frosted_gingerbread_brick_vertical_slab",
+		"item:v_slab_compat:clayworks/cyan_terracotta_vertical_slab",
+		"item:v_slab_compat:clayworks/magenta_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:alexscaves/smooth_coprolith_vertical_slab",
+		"item:v_slab_compat:clayworks/cyan_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_mountain_cobblestone_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/red_shingle_vertical_slab",
+		"item:v_slab_compat:create/small_scoria_brick_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/coralstone_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/gilded_sourcestone_alternating_vertical_slab",
+		"item:v_slab_compat:create/weathered_copper_shingle_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/prismarine_coralstone_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/scute_pavement_vertical_slab",
+		"item:v_slab_compat:betterarcheology/cracked_mud_brick_vertical_slab",
+		"item:v_slab_compat:create/small_deepslate_brick_vertical_slab",
+		"item:v_slab_compat:clayworks/white_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:netherexp/polished_basalt_vertical_slab",
+		"item:v_slab_compat:aether_redux/gilded_holystone_vertical_slab",
+		"item:v_slab_compat:aether_redux/enchanted_shell_shingle_vertical_slab",
+		"item:v_slab_compat:botania/red_pavement_vertical_slab",
+		"item:v_slab_compat:create/small_ochrum_brick_vertical_slab",
+		"item:v_slab_compat:create/weathered_copper_tile_vertical_slab",
+		"item:v_slab_compat:unusualend/enderblob_moult_brick_vertical_slab",
+		"item:v_slab_compat:rediscovered/rooted_dirt_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/cobblestone_brick_vertical_slab",
+		"item:v_slab_compat:born_in_chaos_v1/scorched_planks_vertical_slab",
+		"item:v_slab_compat:botania/livingrock_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_andesite_vertical_slab",
+		"item:v_slab_compat:unusualend/polished_warped_stone_vertical_slab",
+		"item:v_slab_compat:create/waxed_oxidized_copper_tile_vertical_slab",
+		"item:v_slab_compat:create/cut_scoria_brick_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_mountain_stone_vertical_slab",
+		"item:v_slab_compat:alexscaves/thornwood_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/petal_coralstone_vertical_slab",
+		"item:v_slab_compat:galosphere/amethyst_brick_vertical_slab",
+		"item:v_slab_compat:botania/blaze_quartz_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/smooth_gilded_sourcestone_alternating_vertical_slab",
+		"item:v_slab_compat:mynethersdelight/powdery_mosaic_vertical_slab",
+		"item:v_slab_compat:galosphere/pink_salt_brick_vertical_slab",
+		"item:v_slab_compat:alexscaves/galena_brick_vertical_slab",
+		"item:v_slab_compat:phantasm/crystal_tiles_vertical_slab",
+		"item:v_slab_compat:botania/shimmerwood_planks_vertical_slab",
+		"item:v_slab_compat:create/cut_granite_brick_vertical_slab",
+		"item:v_slab_compat:create/cut_ochrum_vertical_slab",
+		"item:v_slab_compat:naturalist/shellstone_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_mesa_cobblestone_vertical_slab",
+		"item:v_slab_compat:netherexp/claret_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/brown_tile_vertical_slab",
+		"item:v_slab_compat:netherexp/smooth_netherrack_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_fungal_stone_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/luminous_prismarine_vertical_slab",
+		"item:v_slab_compat:witherstormmod/tainted_vertical_slab",
+		"item:v_slab_compat:botania/dreamwood_vertical_slab",
+		"item:v_slab_compat:clayworks/yellow_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_plains_stone_vertical_slab",
+		"item:v_slab_compat:cataclysm/polished_azure_seastone_vertical_slab",
+		"item:v_slab_compat:create/small_veridium_brick_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/smooth_gilded_sourcestone_basketweave_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/smooth_gilded_sourcestone_mosaic_vertical_slab",
+		"item:v_slab_compat:clayworks/magenta_terracotta_vertical_slab",
+		"item:v_slab_compat:create/oxidized_copper_tile_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/rock_coralstone_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/cyan_tile_vertical_slab",
+		"item:v_slab_compat:aether/mossy_holystone_vertical_slab",
+		"item:v_slab_compat:clayworks/red_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:naturalist/shellstone_brick_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/star_coralstone_vertical_slab",
+		"item:v_slab_compat:netherexp/basalt_vertical_slab",
+		"item:v_slab_compat:rediscovered/podzol_vertical_slab",
+		"item:v_slab_compat:alexscaves/guanostone_brick_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/scute_shingle_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/white_shingle_vertical_slab",
+		"item:v_slab_compat:galosphere/smooth_amethyst_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/smooth_sourcestone_mosaic_vertical_slab",
+		"item:v_slab_compat:clayworks/gray_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:phantasm/cirite_bricks_vertical_slab",
+		"item:v_slab_compat:galosphere/rose_pink_salt_vertical_slab",
+		"item:v_slab_compat:clayworks/purple_terracotta_vertical_slab",
+		"item:v_slab_compat:galosphere/polished_pastel_pink_salt_vertical_slab",
+		"item:v_slab_compat:alexscaves/abyssmarine_vertical_slab",
+		"item:v_slab_compat:alexscaves/abyssmarine_brick_vertical_slab",
+		"item:v_slab_compat:create/small_andesite_brick_vertical_slab",
+		"item:v_slab_compat:phantasm/void_crystal_tiles_vertical_slab",
+		"item:v_slab_compat:create/small_granite_brick_vertical_slab",
+		"item:v_slab_compat:supplementaries/ash_bricks_vertical_slab",
+		"item:v_slab_compat:botania/black_pavement_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/smooth_sourcestone_small_bricks_vertical_slab",
+		"item:v_slab_compat:create/cut_veridium_brick_vertical_slab",
+		"item:v_slab_compat:netherexp/silica_sandstone_vertical_slab",
+		"item:v_slab_compat:naturalist/cut_shellstone_vertical_slab",
+		"item:v_slab_compat:create/waxed_copper_shingle_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_crimsite_vertical_slab",
+		"item:v_slab_compat:aether_redux/glacia_vertical_slab",
+		"item:v_slab_compat:unusualend/polished_purpur_vertical_slab",
+		"item:v_slab_compat:phantasm/raw_purpur_bricks_vertical_slab",
+		"item:v_slab_compat:clayworks/pink_terracotta_vertical_slab",
+		"item:v_slab_compat:clayworks/blue_terracotta_vertical_slab",
+		"item:v_slab_compat:create/small_dripstone_brick_vertical_slab",
+		"item:v_slab_compat:create/copper_shingle_vertical_slab",
+		"item:v_slab_compat:clayworks/orange_terracotta_vertical_slab",
+		"item:v_slab_compat:botania/stripped_dreamwood_vertical_slab",
+		"item:v_slab_compat:clayworks/terracotta_brick_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/kelpy_cobblestone_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/driftwood_vertical_slab",
+		"item:v_slab_compat:unusualend/polished_gloopstone_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_desert_bricks_vertical_slab",
+		"item:v_slab_compat:witherstormmod/tainted_stone_vertical_slab",
+		"item:v_slab_compat:rediscovered/large_brick_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/orange_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_swamp_stone_vertical_slab",
+		"item:v_slab_compat:supplementaries/blackstone_tile_vertical_slab",
+		"item:v_slab_compat:aether_redux/shell_shingle_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/green_shingle_vertical_slab",
+		"item:v_slab_compat:alexscaves/smooth_limestone_vertical_slab",
+		"item:v_slab_compat:rediscovered/dirt_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_ochrum_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/lime_tile_vertical_slab",
+		"item:v_slab_compat:create/exposed_copper_tile_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/lime_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/gilded_sourcestone_mosaic_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/light_blue_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:aether_redux/crystal_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/cyan_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/magenta_tile_vertical_slab",
+		"item:v_slab_compat:unusualend/warped_stone_tiles_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_dripstone_vertical_slab",
+		"item:v_slab_compat:clayworks/black_terracotta_vertical_slab",
+		"item:v_slab_compat:create/cut_calcite_brick_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/gilded_sourcestone_basketweave_vertical_slab",
+		"item:v_slab_compat:cataclysm/purpur_tile_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/red_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_forest_bricks_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/smooth_sourcestone_vertical_slab",
+		"item:v_slab_compat:unusualend/stripped_chorus_nest_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_forest_stone_vertical_slab",
+		"item:v_slab_compat:galosphere/polished_rose_pink_salt_vertical_slab",
+		"item:v_slab_compat:witherstormmod/tainted_smooth_sandstone_vertical_slab",
+		"item:v_slab_compat:galosphere/silver_tiles_vertical_slab",
+		"item:v_slab_compat:create/waxed_copper_tile_vertical_slab",
+		"item:v_slab_compat:aether_redux/blightmoss_holystone_vertical_slab",
+		"item:v_slab_compat:alexscaves/cinder_block_vertical_slab",
+		"item:v_slab_compat:create/cut_andesite_brick_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/blue_terracotta_brick_vertical_slab",
+		"item:v_slab_compat:ars_nouveau/sourcestone_mosaic_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_taiga_bricks_vertical_slab",
+		"item:v_slab_compat:botania/metamorphic_taiga_stone_vertical_slab",
+		"item:v_slab_compat:clayworks/gray_terracotta_vertical_slab",
+		"item:v_slab_compat:create/polished_cut_veridium_vertical_slab",
+		"item:v_slab_compat:moresnifferflowers/chiseled_amber_vertical_slab",
+		"item:v_slab_compat:hearth_and_home/green_tile_vertical_slab",
+		"item:v_slab_compat:born_in_chaos_v1/black_argillite_column_vertical_slab"
+	],
+	"added": [
+		{
+			"stack": "item:v_slab_compat:clayworks/black_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:black_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_scoria_vertical_slab",
+			"after": "item:create:cut_scoria_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/green_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:green_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/shiny_crystal_tiles_vertical_slab",
+			"after": "item:unusualend:shiny_crystal_tiles_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/light_gray_tile_vertical_slab",
+			"after": "item:hearth_and_home:light_gray_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/livingrock_bricks_vertical_slab",
+			"after": "item:botania:livingrock_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:the_bumblezone/ancient_wax_bricks_vertical_slab",
+			"after": "item:the_bumblezone:ancient_wax_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/gray_tile_vertical_slab",
+			"after": "item:hearth_and_home:gray_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_swamp_bricks_vertical_slab",
+			"after": "item:botania:metamorphic_swamp_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_tuff_vertical_slab",
+			"after": "item:create:cut_tuff_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:moresnifferflowers/corrupted_vertical_slab",
+			"after": "item:moresnifferflowers:corrupted_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_mountain_bricks_vertical_slab",
+			"after": "item:botania:metamorphic_mountain_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/soul_slate_tile_vertical_slab",
+			"after": "item:netherexp:soul_slate_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/corporea_brick_vertical_slab",
+			"after": "item:botania:corporea_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/terracotta_vertical_slab",
+			"after": "item:clayworks:terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_fungal_cobblestone_vertical_slab",
+			"after": "item:botania:metamorphic_fungal_cobblestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/light_blue_terracotta_vertical_slab",
+			"after": "item:clayworks:light_blue_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/orange_shingle_vertical_slab",
+			"after": "item:hearth_and_home:orange_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/polished_gloopslate_vertical_slab",
+			"after": "item:unusualend:polished_gloopslate_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_limestone_vertical_slab",
+			"after": "item:create:polished_cut_limestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:naturalist/smooth_shellstone_vertical_slab",
+			"after": "item:naturalist:smooth_shellstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/smooth_silica_sandstone_vertical_slab",
+			"after": "item:netherexp:smooth_silica_sandstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/smooth_lumiere_vertical_slab",
+			"after": "item:galosphere:smooth_lumiere_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:betterarcheology/rotten_vertical_slab",
+			"after": "item:betterarcheology:rotten_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/archwood_vertical_slab",
+			"after": "item:ars_nouveau:archwood_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/pink_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:pink_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/orange_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:orange_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/lime_shingle_vertical_slab",
+			"after": "item:hearth_and_home:lime_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/stacked_wither_bone_vertical_slab",
+			"after": "item:netherexp:stacked_wither_bone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/black_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:black_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/coprolith_vertical_slab",
+			"after": "item:alexscaves:coprolith_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/yellow_pavement_vertical_slab",
+			"after": "item:botania:yellow_pavement_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/sentrite_vertical_slab",
+			"after": "item:aether_redux:sentrite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_granite_vertical_slab",
+			"after": "item:create:cut_granite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/netherrack_brick_vertical_slab",
+			"after": "item:netherexp:netherrack_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:the_bumblezone/ancient_wax_diamond_vertical_slab",
+			"after": "item:the_bumblezone:ancient_wax_diamond_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/elder_prismarine_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:elder_prismarine_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_crimsite_brick_vertical_slab",
+			"after": "item:create:cut_crimsite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/horn_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:horn_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/pastel_pink_salt_vertical_slab",
+			"after": "item:galosphere:pastel_pink_salt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/purple_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:purple_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/fieldsproot_vertical_slab",
+			"after": "item:aether_redux:fieldsproot_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_scorchia_brick_vertical_slab",
+			"after": "item:create:cut_scorchia_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/pink_shingle_vertical_slab",
+			"after": "item:hearth_and_home:pink_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_crimsite_brick_vertical_slab",
+			"after": "item:create:small_crimsite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/exposed_copper_shingle_vertical_slab",
+			"after": "item:create:exposed_copper_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_scorchia_vertical_slab",
+			"after": "item:create:polished_cut_scorchia_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:moresnifferflowers/vivicus_vertical_slab",
+			"after": "item:moresnifferflowers:vivicus_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/yellow_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:yellow_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:delightful/glow_jam_cookie_tile_vertical_slab",
+			"after": "item:delightful:glow_jam_cookie_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/oxidized_copper_shingle_vertical_slab",
+			"after": "item:create:oxidized_copper_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/white_pavement_vertical_slab",
+			"after": "item:botania:white_pavement_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:cataclysm/polished_end_stone_vertical_slab",
+			"after": "item:cataclysm:polished_end_stone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:supplementaries/stone_tile_vertical_slab",
+			"after": "item:supplementaries:stone_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/smooth_sourcestone_alternating_vertical_slab",
+			"after": "item:ars_nouveau:smooth_sourcestone_alternating_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/river_vertical_slab",
+			"after": "item:upgrade_aquatic:river_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/chorus_nest_mosaic_vertical_slab",
+			"after": "item:unusualend:chorus_nest_mosaic_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_plains_cobblestone_vertical_slab",
+			"after": "item:botania:metamorphic_plains_cobblestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/lime_terracotta_vertical_slab",
+			"after": "item:clayworks:lime_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/green_pavement_vertical_slab",
+			"after": "item:botania:green_pavement_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/sunny_quartz_vertical_slab",
+			"after": "item:botania:sunny_quartz_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:rediscovered/mycelium_vertical_slab",
+			"after": "item:rediscovered:mycelium_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/jellyshroom_vertical_slab",
+			"after": "item:aether_redux:jellyshroom_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/livingwood_vertical_slab",
+			"after": "item:botania:livingwood_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether/holystone_vertical_slab",
+			"after": "item:aether:holystone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether/skyroot_vertical_slab",
+			"after": "item:aether:skyroot_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/red_tile_vertical_slab",
+			"after": "item:hearth_and_home:red_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/cut_silica_sandstone_vertical_slab",
+			"after": "item:netherexp:cut_silica_sandstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/chorus_nest_vertical_slab",
+			"after": "item:unusualend:chorus_nest_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:cataclysm/chorus_vertical_slab",
+			"after": "item:cataclysm:chorus_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/blue_tile_vertical_slab",
+			"after": "item:hearth_and_home:blue_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/waxed_weathered_copper_tile_vertical_slab",
+			"after": "item:create:waxed_weathered_copper_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/radrock_vertical_slab",
+			"after": "item:alexscaves:radrock_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/pastel_pink_salt_brick_vertical_slab",
+			"after": "item:galosphere:pastel_pink_salt_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_deepslate_brick_vertical_slab",
+			"after": "item:create:cut_deepslate_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/divinite_vertical_slab",
+			"after": "item:aether_redux:divinite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/kelpy_cobblestone_tile_vertical_slab",
+			"after": "item:upgrade_aquatic:kelpy_cobblestone_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:cataclysm/frosted_stone_brick_vertical_slab",
+			"after": "item:cataclysm:frosted_stone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/kelpy_cobblestone_brick_vertical_slab",
+			"after": "item:upgrade_aquatic:kelpy_cobblestone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_mesa_bricks_vertical_slab",
+			"after": "item:botania:metamorphic_mesa_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:rediscovered/coarse_dirt_vertical_slab",
+			"after": "item:rediscovered:coarse_dirt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/pink_tile_vertical_slab",
+			"after": "item:hearth_and_home:pink_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/light_gray_shingle_vertical_slab",
+			"after": "item:hearth_and_home:light_gray_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:cataclysm/stone_tile_vertical_slab",
+			"after": "item:cataclysm:stone_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/gilded_sourcestone_large_bricks_vertical_slab",
+			"after": "item:ars_nouveau:gilded_sourcestone_large_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/magenta_shingle_vertical_slab",
+			"after": "item:hearth_and_home:magenta_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_diorite_vertical_slab",
+			"after": "item:create:polished_cut_diorite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_calcite_brick_vertical_slab",
+			"after": "item:create:small_calcite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ecologics/ice_brick_vertical_slab",
+			"after": "item:ecologics:ice_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ecologics/coconut_vertical_slab",
+			"after": "item:ecologics:coconut_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/yellow_terracotta_vertical_slab",
+			"after": "item:clayworks:yellow_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/guanostone_vertical_slab",
+			"after": "item:alexscaves:guanostone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/red_terracotta_vertical_slab",
+			"after": "item:clayworks:red_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_scorchia_vertical_slab",
+			"after": "item:create:cut_scorchia_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/dark_quartz_vertical_slab",
+			"after": "item:botania:dark_quartz_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/gneiss_brick_vertical_slab",
+			"after": "item:unusualend:gneiss_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/tooth_brick_vertical_slab",
+			"after": "item:upgrade_aquatic:tooth_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ecologics/flowering_azalea_vertical_slab",
+			"after": "item:ecologics:flowering_azalea_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/brown_shingle_vertical_slab",
+			"after": "item:hearth_and_home:brown_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/silk_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:silk_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/green_terracotta_vertical_slab",
+			"after": "item:clayworks:green_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_swamp_cobblestone_vertical_slab",
+			"after": "item:botania:metamorphic_swamp_cobblestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_crimsite_vertical_slab",
+			"after": "item:create:cut_crimsite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/sourcestone_vertical_slab",
+			"after": "item:ars_nouveau:sourcestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/purple_tile_vertical_slab",
+			"after": "item:hearth_and_home:purple_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:buzzier_bees/honeycomb_tile_vertical_slab",
+			"after": "item:buzzier_bees:honeycomb_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether/icestone_vertical_slab",
+			"after": "item:aether:icestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/red_quartz_vertical_slab",
+			"after": "item:botania:red_quartz_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:phantasm/pream_vertical_slab",
+			"after": "item:phantasm:pream_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:moresnifferflowers/amber_mosaic_vertical_slab",
+			"after": "item:moresnifferflowers:amber_mosaic_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/dead_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:dead_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/white_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:white_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/polished_purpur_brick_vertical_slab",
+			"after": "item:unusualend:polished_purpur_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/warped_stone_bricks_vertical_slab",
+			"after": "item:unusualend:warped_stone_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/finger_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:finger_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/moss_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:moss_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/waxed_exposed_copper_tile_vertical_slab",
+			"after": "item:create:waxed_exposed_copper_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/branch_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:branch_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/brain_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:brain_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_calcite_vertical_slab",
+			"after": "item:create:polished_cut_calcite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/polished_pink_salt_vertical_slab",
+			"after": "item:galosphere:polished_pink_salt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/soul_slate_vertical_slab",
+			"after": "item:netherexp:soul_slate_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/gilded_sourcestone_small_bricks_vertical_slab",
+			"after": "item:ars_nouveau:gilded_sourcestone_small_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/blue_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:blue_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_asurine_brick_vertical_slab",
+			"after": "item:create:small_asurine_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/pink_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:pink_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_asurine_brick_vertical_slab",
+			"after": "item:create:cut_asurine_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:cataclysm/azure_seastone_brick_vertical_slab",
+			"after": "item:cataclysm:azure_seastone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/fire_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:fire_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:rediscovered/dirt_path_vertical_slab",
+			"after": "item:rediscovered:dirt_path_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/light_gray_terracotta_vertical_slab",
+			"after": "item:clayworks:light_gray_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/white_tile_vertical_slab",
+			"after": "item:hearth_and_home:white_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/light_gray_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:light_gray_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/raw_purpur_block_vertical_slab",
+			"after": "item:unusualend:raw_purpur_block_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:supplementaries/lapis_bricks_vertical_slab",
+			"after": "item:supplementaries:lapis_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/smooth_sourcestone_basketweave_vertical_slab",
+			"after": "item:ars_nouveau:smooth_sourcestone_basketweave_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/bubble_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:bubble_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/stripped_livingwood_vertical_slab",
+			"after": "item:botania:stripped_livingwood_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/sentrite_brick_vertical_slab",
+			"after": "item:aether_redux:sentrite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/waxed_oxidized_copper_shingle_vertical_slab",
+			"after": "item:create:waxed_oxidized_copper_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/black_shingle_vertical_slab",
+			"after": "item:hearth_and_home:black_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_dripstone_brick_vertical_slab",
+			"after": "item:create:cut_dripstone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/brown_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:brown_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/purple_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:purple_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_diorite_vertical_slab",
+			"after": "item:create:cut_diorite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/smokestalk_vertical_slab",
+			"after": "item:netherexp:smokestalk_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/sourcestone_basketweave_vertical_slab",
+			"after": "item:ars_nouveau:sourcestone_basketweave_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/smooth_sourcestone_large_bricks_vertical_slab",
+			"after": "item:ars_nouveau:smooth_sourcestone_large_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/pewen_vertical_slab",
+			"after": "item:alexscaves:pewen_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/smooth_gilded_sourcestone_small_bricks_vertical_slab",
+			"after": "item:ars_nouveau:smooth_gilded_sourcestone_small_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/yellow_nether_brick_vertical_slab",
+			"after": "item:netherexp:yellow_nether_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_tuff_brick_vertical_slab",
+			"after": "item:create:cut_tuff_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:cataclysm/polished_obsidian_vertical_slab",
+			"after": "item:cataclysm:polished_obsidian_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_dripstone_vertical_slab",
+			"after": "item:create:cut_dripstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/green_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:green_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/polished_basalt_brick_vertical_slab",
+			"after": "item:netherexp:polished_basalt_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:moresnifferflowers/chiseled_garnet_vertical_slab",
+			"after": "item:moresnifferflowers:chiseled_garnet_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/yellow_shingle_vertical_slab",
+			"after": "item:hearth_and_home:yellow_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/dreamwood_planks_vertical_slab",
+			"after": "item:botania:dreamwood_planks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_plains_bricks_vertical_slab",
+			"after": "item:botania:metamorphic_plains_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/chrome_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:chrome_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/gray_shingle_vertical_slab",
+			"after": "item:hearth_and_home:gray_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_taiga_cobblestone_vertical_slab",
+			"after": "item:botania:metamorphic_taiga_cobblestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_asurine_vertical_slab",
+			"after": "item:create:cut_asurine_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/lime_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:lime_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:supplementaries/fine_wood_vertical_slab",
+			"after": "item:supplementaries:fine_wood_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:delightful/source_berry_cookie_tile_vertical_slab",
+			"after": "item:delightful:source_berry_cookie_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_tuff_brick_vertical_slab",
+			"after": "item:create:small_tuff_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/cyan_shingle_vertical_slab",
+			"after": "item:hearth_and_home:cyan_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/silver_panel_vertical_slab",
+			"after": "item:galosphere:silver_panel_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/acan_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:acan_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/mana_quartz_vertical_slab",
+			"after": "item:botania:mana_quartz_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/brown_terracotta_vertical_slab",
+			"after": "item:clayworks:brown_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/gloopslate_bricks_vertical_slab",
+			"after": "item:unusualend:gloopslate_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/sourcestone_small_bricks_vertical_slab",
+			"after": "item:ars_nouveau:sourcestone_small_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:cataclysm/azure_seastone_vertical_slab",
+			"after": "item:cataclysm:azure_seastone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/blue_pavement_vertical_slab",
+			"after": "item:botania:blue_pavement_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_fungal_bricks_vertical_slab",
+			"after": "item:botania:metamorphic_fungal_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/mossy_livingrock_bricks_vertical_slab",
+			"after": "item:botania:mossy_livingrock_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/blightwillow_vertical_slab",
+			"after": "item:aether_redux:blightwillow_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_granite_vertical_slab",
+			"after": "item:create:polished_cut_granite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_andesite_vertical_slab",
+			"after": "item:create:cut_andesite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/lavender_quartz_vertical_slab",
+			"after": "item:botania:lavender_quartz_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:buzzier_bees/honeycomb_brick_vertical_slab",
+			"after": "item:buzzier_bees:honeycomb_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:moresnifferflowers/garnet_mosaic_vertical_slab",
+			"after": "item:moresnifferflowers:garnet_mosaic_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/tube_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:tube_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/purple_shingle_vertical_slab",
+			"after": "item:hearth_and_home:purple_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:born_in_chaos_v1/black_argillite_brick_vertical_slab",
+			"after": "item:born_in_chaos_v1:black_argillite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/light_gray_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:light_gray_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_desert_cobblestone_vertical_slab",
+			"after": "item:botania:metamorphic_desert_cobblestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/beachgrass_thatch_vertical_slab",
+			"after": "item:upgrade_aquatic:beachgrass_thatch_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/gloopstone_brick_vertical_slab",
+			"after": "item:unusualend:gloopstone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/polished_purpur_tiles_vertical_slab",
+			"after": "item:unusualend:polished_purpur_tiles_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/smooth_bone_vertical_slab",
+			"after": "item:alexscaves:smooth_bone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/tile_vertical_slab",
+			"after": "item:hearth_and_home:tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/brown_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:brown_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_ochrum_brick_vertical_slab",
+			"after": "item:create:cut_ochrum_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether/aerogel_vertical_slab",
+			"after": "item:aether:aerogel_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ecologics/snow_brick_vertical_slab",
+			"after": "item:ecologics:snow_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:witherstormmod/tainted_cut_sandstone_vertical_slab",
+			"after": "item:witherstormmod:tainted_cut_sandstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:born_in_chaos_v1/black_argillite_vertical_slab",
+			"after": "item:born_in_chaos_v1:black_argillite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/yellow_tile_vertical_slab",
+			"after": "item:hearth_and_home:yellow_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_limestone_brick_vertical_slab",
+			"after": "item:create:cut_limestone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_deepslate_vertical_slab",
+			"after": "item:create:cut_deepslate_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/black_tile_vertical_slab",
+			"after": "item:hearth_and_home:black_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/rose_pink_salt_brick_vertical_slab",
+			"after": "item:galosphere:rose_pink_salt_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/polished_gneiss_vertical_slab",
+			"after": "item:unusualend:polished_gneiss_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_diorite_brick_vertical_slab",
+			"after": "item:create:cut_diorite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_desert_stone_vertical_slab",
+			"after": "item:botania:metamorphic_desert_stone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_veridium_vertical_slab",
+			"after": "item:create:cut_veridium_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:the_bumblezone/ancient_wax_compound_eyes_vertical_slab",
+			"after": "item:the_bumblezone:ancient_wax_compound_eyes_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/pillow_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:pillow_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_scoria_vertical_slab",
+			"after": "item:create:polished_cut_scoria_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/smooth_allurite_vertical_slab",
+			"after": "item:galosphere:smooth_allurite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ecologics/azalea_vertical_slab",
+			"after": "item:ecologics:azalea_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/blue_nether_brick_vertical_slab",
+			"after": "item:netherexp:blue_nether_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/cloudcap_vertical_slab",
+			"after": "item:aether_redux:cloudcap_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/kelpy_stone_brick_vertical_slab",
+			"after": "item:upgrade_aquatic:kelpy_stone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/polished_livingrock_vertical_slab",
+			"after": "item:botania:polished_livingrock_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:phantasm/polished_obsidian_bricks_vertical_slab",
+			"after": "item:phantasm:polished_obsidian_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/sourcestone_alternating_vertical_slab",
+			"after": "item:ars_nouveau:sourcestone_alternating_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/waxed_weathered_copper_shingle_vertical_slab",
+			"after": "item:create:waxed_weathered_copper_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/light_blue_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:light_blue_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/blue_shingle_vertical_slab",
+			"after": "item:hearth_and_home:blue_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:witherstormmod/tainted_cobblestone_vertical_slab",
+			"after": "item:witherstormmod:tainted_cobblestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/magenta_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:magenta_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_limestone_vertical_slab",
+			"after": "item:create:cut_limestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:witherstormmod/tainted_sandstone_vertical_slab",
+			"after": "item:witherstormmod:tainted_sandstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/shingle_vertical_slab",
+			"after": "item:hearth_and_home:shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_calcite_vertical_slab",
+			"after": "item:create:cut_calcite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/light_blue_tile_vertical_slab",
+			"after": "item:hearth_and_home:light_blue_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/polished_driftshale_vertical_slab",
+			"after": "item:aether_redux:polished_driftshale_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_scorchia_brick_vertical_slab",
+			"after": "item:create:small_scorchia_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/gingerbread_brick_vertical_slab",
+			"after": "item:alexscaves:gingerbread_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/elf_quartz_vertical_slab",
+			"after": "item:botania:elf_quartz_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ecologics/walnut_vertical_slab",
+			"after": "item:ecologics:walnut_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/waxed_exposed_copper_shingle_vertical_slab",
+			"after": "item:create:waxed_exposed_copper_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/gray_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:gray_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/livingwood_planks_vertical_slab",
+			"after": "item:botania:livingwood_planks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether/holystone_brick_vertical_slab",
+			"after": "item:aether:holystone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/allurite_brick_vertical_slab",
+			"after": "item:galosphere:allurite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_mesa_stone_vertical_slab",
+			"after": "item:botania:metamorphic_mesa_stone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/copper_tile_vertical_slab",
+			"after": "item:create:copper_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/smooth_gilded_sourcestone_large_bricks_vertical_slab",
+			"after": "item:ars_nouveau:smooth_gilded_sourcestone_large_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_deepslate_vertical_slab",
+			"after": "item:create:polished_cut_deepslate_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:mynethersdelight/powdery_vertical_slab",
+			"after": "item:mynethersdelight:powdery_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/white_terracotta_vertical_slab",
+			"after": "item:clayworks:white_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/shimmerrock_vertical_slab",
+			"after": "item:botania:shimmerrock_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/soul_slate_brick_vertical_slab",
+			"after": "item:netherexp:soul_slate_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_limestone_brick_vertical_slab",
+			"after": "item:create:small_limestone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/radrock_brick_vertical_slab",
+			"after": "item:alexscaves:radrock_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:rediscovered/grass_vertical_slab",
+			"after": "item:rediscovered:grass_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/polished_sentrite_vertical_slab",
+			"after": "item:aether_redux:polished_sentrite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_forest_cobblestone_vertical_slab",
+			"after": "item:botania:metamorphic_forest_cobblestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/pink_salt_vertical_slab",
+			"after": "item:galosphere:pink_salt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_diorite_brick_vertical_slab",
+			"after": "item:create:small_diorite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_tuff_vertical_slab",
+			"after": "item:create:polished_cut_tuff_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/sourcestone_large_bricks_vertical_slab",
+			"after": "item:ars_nouveau:sourcestone_large_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/lumiere_brick_vertical_slab",
+			"after": "item:galosphere:lumiere_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/orange_tile_vertical_slab",
+			"after": "item:hearth_and_home:orange_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/light_blue_shingle_vertical_slab",
+			"after": "item:hearth_and_home:light_blue_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/galena_vertical_slab",
+			"after": "item:alexscaves:galena_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ecologics/seashell_tile_vertical_slab",
+			"after": "item:ecologics:seashell_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:cataclysm/obsidian_brick_vertical_slab",
+			"after": "item:cataclysm:obsidian_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_asurine_vertical_slab",
+			"after": "item:create:polished_cut_asurine_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/stacked_bone_vertical_slab",
+			"after": "item:netherexp:stacked_bone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/frosted_gingerbread_brick_vertical_slab",
+			"after": "item:alexscaves:frosted_gingerbread_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/cyan_terracotta_vertical_slab",
+			"after": "item:clayworks:cyan_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/magenta_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:magenta_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/smooth_coprolith_vertical_slab",
+			"after": "item:alexscaves:smooth_coprolith_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/cyan_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:cyan_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_mountain_cobblestone_vertical_slab",
+			"after": "item:botania:metamorphic_mountain_cobblestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/red_shingle_vertical_slab",
+			"after": "item:hearth_and_home:red_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_scoria_brick_vertical_slab",
+			"after": "item:create:small_scoria_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/gilded_sourcestone_alternating_vertical_slab",
+			"after": "item:ars_nouveau:gilded_sourcestone_alternating_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/weathered_copper_shingle_vertical_slab",
+			"after": "item:create:weathered_copper_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/prismarine_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:prismarine_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/scute_pavement_vertical_slab",
+			"after": "item:upgrade_aquatic:scute_pavement_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:betterarcheology/cracked_mud_brick_vertical_slab",
+			"after": "item:betterarcheology:cracked_mud_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_deepslate_brick_vertical_slab",
+			"after": "item:create:small_deepslate_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/white_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:white_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/polished_basalt_vertical_slab",
+			"after": "item:netherexp:polished_basalt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/gilded_holystone_vertical_slab",
+			"after": "item:aether_redux:gilded_holystone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/enchanted_shell_shingle_vertical_slab",
+			"after": "item:aether_redux:enchanted_shell_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/red_pavement_vertical_slab",
+			"after": "item:botania:red_pavement_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_ochrum_brick_vertical_slab",
+			"after": "item:create:small_ochrum_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/weathered_copper_tile_vertical_slab",
+			"after": "item:create:weathered_copper_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/enderblob_moult_brick_vertical_slab",
+			"after": "item:unusualend:enderblob_moult_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:rediscovered/rooted_dirt_vertical_slab",
+			"after": "item:rediscovered:rooted_dirt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/cobblestone_brick_vertical_slab",
+			"after": "item:hearth_and_home:cobblestone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:born_in_chaos_v1/scorched_planks_vertical_slab",
+			"after": "item:born_in_chaos_v1:scorched_planks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/livingrock_vertical_slab",
+			"after": "item:botania:livingrock_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_andesite_vertical_slab",
+			"after": "item:create:polished_cut_andesite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/polished_warped_stone_vertical_slab",
+			"after": "item:unusualend:polished_warped_stone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/waxed_oxidized_copper_tile_vertical_slab",
+			"after": "item:create:waxed_oxidized_copper_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_scoria_brick_vertical_slab",
+			"after": "item:create:cut_scoria_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_mountain_stone_vertical_slab",
+			"after": "item:botania:metamorphic_mountain_stone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/thornwood_vertical_slab",
+			"after": "item:alexscaves:thornwood_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/petal_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:petal_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/amethyst_brick_vertical_slab",
+			"after": "item:galosphere:amethyst_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/blaze_quartz_vertical_slab",
+			"after": "item:botania:blaze_quartz_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/smooth_gilded_sourcestone_alternating_vertical_slab",
+			"after": "item:ars_nouveau:smooth_gilded_sourcestone_alternating_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:mynethersdelight/powdery_mosaic_vertical_slab",
+			"after": "item:mynethersdelight:powdery_mosaic_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/pink_salt_brick_vertical_slab",
+			"after": "item:galosphere:pink_salt_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/galena_brick_vertical_slab",
+			"after": "item:alexscaves:galena_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:phantasm/crystal_tiles_vertical_slab",
+			"after": "item:phantasm:crystal_tiles_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/shimmerwood_planks_vertical_slab",
+			"after": "item:botania:shimmerwood_planks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_granite_brick_vertical_slab",
+			"after": "item:create:cut_granite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_ochrum_vertical_slab",
+			"after": "item:create:cut_ochrum_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:naturalist/shellstone_vertical_slab",
+			"after": "item:naturalist:shellstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_mesa_cobblestone_vertical_slab",
+			"after": "item:botania:metamorphic_mesa_cobblestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/claret_vertical_slab",
+			"after": "item:netherexp:claret_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/brown_tile_vertical_slab",
+			"after": "item:hearth_and_home:brown_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/smooth_netherrack_vertical_slab",
+			"after": "item:netherexp:smooth_netherrack_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_fungal_stone_vertical_slab",
+			"after": "item:botania:metamorphic_fungal_stone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/luminous_prismarine_vertical_slab",
+			"after": "item:upgrade_aquatic:luminous_prismarine_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:witherstormmod/tainted_vertical_slab",
+			"after": "item:witherstormmod:tainted_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/dreamwood_vertical_slab",
+			"after": "item:botania:dreamwood_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/yellow_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:yellow_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_plains_stone_vertical_slab",
+			"after": "item:botania:metamorphic_plains_stone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:cataclysm/polished_azure_seastone_vertical_slab",
+			"after": "item:cataclysm:polished_azure_seastone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_veridium_brick_vertical_slab",
+			"after": "item:create:small_veridium_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/smooth_gilded_sourcestone_basketweave_vertical_slab",
+			"after": "item:ars_nouveau:smooth_gilded_sourcestone_basketweave_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/smooth_gilded_sourcestone_mosaic_vertical_slab",
+			"after": "item:ars_nouveau:smooth_gilded_sourcestone_mosaic_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/magenta_terracotta_vertical_slab",
+			"after": "item:clayworks:magenta_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/oxidized_copper_tile_vertical_slab",
+			"after": "item:create:oxidized_copper_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/rock_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:rock_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/cyan_tile_vertical_slab",
+			"after": "item:hearth_and_home:cyan_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether/mossy_holystone_vertical_slab",
+			"after": "item:aether:mossy_holystone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/red_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:red_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:naturalist/shellstone_brick_vertical_slab",
+			"after": "item:naturalist:shellstone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/star_coralstone_vertical_slab",
+			"after": "item:upgrade_aquatic:star_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/basalt_vertical_slab",
+			"after": "item:netherexp:basalt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:rediscovered/podzol_vertical_slab",
+			"after": "item:rediscovered:podzol_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/guanostone_brick_vertical_slab",
+			"after": "item:alexscaves:guanostone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/scute_shingle_vertical_slab",
+			"after": "item:upgrade_aquatic:scute_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/white_shingle_vertical_slab",
+			"after": "item:hearth_and_home:white_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/smooth_amethyst_vertical_slab",
+			"after": "item:galosphere:smooth_amethyst_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/smooth_sourcestone_mosaic_vertical_slab",
+			"after": "item:ars_nouveau:smooth_sourcestone_mosaic_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/gray_terracotta_brick_vertical_slab",
+			"after": "item:clayworks:gray_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:phantasm/cirite_bricks_vertical_slab",
+			"after": "item:phantasm:cirite_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/rose_pink_salt_vertical_slab",
+			"after": "item:galosphere:rose_pink_salt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/purple_terracotta_vertical_slab",
+			"after": "item:clayworks:purple_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/polished_pastel_pink_salt_vertical_slab",
+			"after": "item:galosphere:polished_pastel_pink_salt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/abyssmarine_vertical_slab",
+			"after": "item:alexscaves:abyssmarine_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/abyssmarine_brick_vertical_slab",
+			"after": "item:alexscaves:abyssmarine_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_andesite_brick_vertical_slab",
+			"after": "item:create:small_andesite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:phantasm/void_crystal_tiles_vertical_slab",
+			"after": "item:phantasm:void_crystal_tiles_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_granite_brick_vertical_slab",
+			"after": "item:create:small_granite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:supplementaries/ash_bricks_vertical_slab",
+			"after": "item:supplementaries:ash_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/black_pavement_vertical_slab",
+			"after": "item:botania:black_pavement_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/smooth_sourcestone_small_bricks_vertical_slab",
+			"after": "item:ars_nouveau:smooth_sourcestone_small_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_veridium_brick_vertical_slab",
+			"after": "item:create:cut_veridium_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:netherexp/silica_sandstone_vertical_slab",
+			"after": "item:netherexp:silica_sandstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:naturalist/cut_shellstone_vertical_slab",
+			"after": "item:naturalist:cut_shellstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/waxed_copper_shingle_vertical_slab",
+			"after": "item:create:waxed_copper_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_crimsite_vertical_slab",
+			"after": "item:create:polished_cut_crimsite_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/glacia_vertical_slab",
+			"after": "item:aether_redux:glacia_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/polished_purpur_vertical_slab",
+			"after": "item:unusualend:polished_purpur_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:phantasm/raw_purpur_bricks_vertical_slab",
+			"after": "item:phantasm:raw_purpur_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/pink_terracotta_vertical_slab",
+			"after": "item:clayworks:pink_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/blue_terracotta_vertical_slab",
+			"after": "item:clayworks:blue_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/small_dripstone_brick_vertical_slab",
+			"after": "item:create:small_dripstone_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/copper_shingle_vertical_slab",
+			"after": "item:create:copper_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/orange_terracotta_vertical_slab",
+			"after": "item:clayworks:orange_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/stripped_dreamwood_vertical_slab",
+			"after": "item:botania:stripped_dreamwood_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/terracotta_brick_vertical_slab",
+			"after": "item:clayworks:terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/kelpy_cobblestone_vertical_slab",
+			"after": "item:upgrade_aquatic:kelpy_cobblestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/driftwood_vertical_slab",
+			"after": "item:upgrade_aquatic:driftwood_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/polished_gloopstone_vertical_slab",
+			"after": "item:unusualend:polished_gloopstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_desert_bricks_vertical_slab",
+			"after": "item:botania:metamorphic_desert_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:witherstormmod/tainted_stone_vertical_slab",
+			"after": "item:witherstormmod:tainted_stone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:rediscovered/large_brick_vertical_slab",
+			"after": "item:rediscovered:large_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/orange_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:orange_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_swamp_stone_vertical_slab",
+			"after": "item:botania:metamorphic_swamp_stone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:supplementaries/blackstone_tile_vertical_slab",
+			"after": "item:supplementaries:blackstone_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/shell_shingle_vertical_slab",
+			"after": "item:aether_redux:shell_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/green_shingle_vertical_slab",
+			"after": "item:hearth_and_home:green_shingle_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/smooth_limestone_vertical_slab",
+			"after": "item:alexscaves:smooth_limestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:rediscovered/dirt_vertical_slab",
+			"after": "item:rediscovered:dirt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_ochrum_vertical_slab",
+			"after": "item:create:polished_cut_ochrum_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/lime_tile_vertical_slab",
+			"after": "item:hearth_and_home:lime_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/exposed_copper_tile_vertical_slab",
+			"after": "item:create:exposed_copper_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/lime_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:lime_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/gilded_sourcestone_mosaic_vertical_slab",
+			"after": "item:ars_nouveau:gilded_sourcestone_mosaic_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/light_blue_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:light_blue_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/crystal_vertical_slab",
+			"after": "item:aether_redux:crystal_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/cyan_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:cyan_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/magenta_tile_vertical_slab",
+			"after": "item:hearth_and_home:magenta_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/warped_stone_tiles_vertical_slab",
+			"after": "item:unusualend:warped_stone_tiles_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_dripstone_vertical_slab",
+			"after": "item:create:polished_cut_dripstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/black_terracotta_vertical_slab",
+			"after": "item:clayworks:black_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_calcite_brick_vertical_slab",
+			"after": "item:create:cut_calcite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/gilded_sourcestone_basketweave_vertical_slab",
+			"after": "item:ars_nouveau:gilded_sourcestone_basketweave_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:cataclysm/purpur_tile_vertical_slab",
+			"after": "item:cataclysm:purpur_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/red_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:red_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_forest_bricks_vertical_slab",
+			"after": "item:botania:metamorphic_forest_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/smooth_sourcestone_vertical_slab",
+			"after": "item:ars_nouveau:smooth_sourcestone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:unusualend/stripped_chorus_nest_vertical_slab",
+			"after": "item:unusualend:stripped_chorus_nest_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_forest_stone_vertical_slab",
+			"after": "item:botania:metamorphic_forest_stone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/polished_rose_pink_salt_vertical_slab",
+			"after": "item:galosphere:polished_rose_pink_salt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:witherstormmod/tainted_smooth_sandstone_vertical_slab",
+			"after": "item:witherstormmod:tainted_smooth_sandstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:galosphere/silver_tiles_vertical_slab",
+			"after": "item:galosphere:silver_tiles_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/waxed_copper_tile_vertical_slab",
+			"after": "item:create:waxed_copper_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:aether_redux/blightmoss_holystone_vertical_slab",
+			"after": "item:aether_redux:blightmoss_holystone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:alexscaves/cinder_block_vertical_slab",
+			"after": "item:alexscaves:cinder_block_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/cut_andesite_brick_vertical_slab",
+			"after": "item:create:cut_andesite_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/blue_terracotta_brick_vertical_slab",
+			"after": "item:hearth_and_home:blue_terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ars_nouveau/sourcestone_mosaic_vertical_slab",
+			"after": "item:ars_nouveau:sourcestone_mosaic_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_taiga_bricks_vertical_slab",
+			"after": "item:botania:metamorphic_taiga_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:botania/metamorphic_taiga_stone_vertical_slab",
+			"after": "item:botania:metamorphic_taiga_stone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:clayworks/gray_terracotta_vertical_slab",
+			"after": "item:clayworks:gray_terracotta_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create/polished_cut_veridium_vertical_slab",
+			"after": "item:create:polished_cut_veridium_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:moresnifferflowers/chiseled_amber_vertical_slab",
+			"after": "item:moresnifferflowers:chiseled_amber_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:hearth_and_home/green_tile_vertical_slab",
+			"after": "item:hearth_and_home:green_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:born_in_chaos_v1/black_argillite_column_vertical_slab",
+			"after": "item:born_in_chaos_v1:black_argillite_column_slab"
+		}
+	]
+}

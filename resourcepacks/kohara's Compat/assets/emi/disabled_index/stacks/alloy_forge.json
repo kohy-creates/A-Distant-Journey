@@ -13,10 +13,6 @@
 	],
 	"added": [
 		{
-			"stack": "item:structure_gel:building_tool",
-			"after": "item:kubejs:eye_of_verdant_bloom"
-		},
-		{
 			"stack": "item:alloy_forgery:cracked_stone_bricks_forge_controller",
 			"after": "item:minecraft:furnace"
 		},

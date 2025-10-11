@@ -9,6 +9,7 @@ Bug fixes and minor features.
   - [Trash Cans](<https://www.curseforge.com/minecraft/mc-mods/trash-cans>)
   - [Pottery](<https://www.curseforge.com/minecraft/mc-mods/pottery-additional-pots>)
 - Updated all mods. Most notable changes are new splashing and waterfall particles and new weather effects.
+
 ------
 
 **[Balance changes]**

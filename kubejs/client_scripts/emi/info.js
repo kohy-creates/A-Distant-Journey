@@ -184,7 +184,8 @@ JEIEvents.information(event => {
 		Enchanting
 	*/
 	event.addItem(['minecraft:enchanted_book', 'sortilege:limitite'], [
-		'Most items have an enchantment limit of 3. Limitite can be fused with items to increase the cap up to 3 times (6 enchantments total). Curses add slots, rather than occupy them.'
+		'Most items have an enchantment limit of 3.',
+		'Limitite can be fused with items to increase the cap up to 3 times (6 enchantments total).'/*, 'Curses add slots, rather than occupy them.'*/
 	])
 
 	/*

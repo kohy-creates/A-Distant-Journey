@@ -1,4 +1,92 @@
 {
+  "armor": {
+    "3": {
+      "title": "Loadout 3",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:diamond_chestplate\",tag:{Damage:0}}"
+      },
+      "action": {
+        "key": {
+          "key": "adjcore.loadout.3",
+          "toggle": false
+        }
+      }
+    },
+    "4": {
+      "title": "Loadout 2",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:golden_chestplate\",tag:{Damage:0}}"
+      },
+      "action": {
+        "key": {
+          "key": "adjcore.loadout.2",
+          "toggle": false
+        }
+      }
+    },
+    "5": {
+      "title": "Loadout 1",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:leather_chestplate\",tag:{Damage:0}}"
+      },
+      "action": {
+        "key": {
+          "key": "adjcore.loadout.1",
+          "toggle": false
+        }
+      }
+    },
+    "6": {
+      "title": "Configure Armor Visibility",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:iron_chestplate\",tag:{Damage:0}}"
+      },
+      "action": {
+        "key": {
+          "key": "key.showmeyourskin.open_settings",
+          "toggle": false
+        }
+      }
+    }
+  },
+  "Creative": {
+    "3": {
+      "title": "Gamemode: Survival",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:oak_planks\"}"
+      },
+      "action": {
+        "command": {
+          "command": "gamemode survival",
+          "clipboard": false
+        }
+      }
+    },
+    "4": {
+      "title": "Gamemode: Creative",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:grass_block\"}"
+      },
+      "action": {
+        "command": {
+          "command": "gamemode creative",
+          "clipboard": false
+        }
+      }
+    },
+    "5": {
+      "title": "Gamemode: Spectator",
+      "icon": {
+        "stack": "{Count:1b,id:\"aether:cold_aercloud\"}"
+      },
+      "action": {
+        "command": {
+          "command": "gamemode spectator",
+          "clipboard": false
+        }
+      }
+    }
+  },
   "main": {
     "0": {
       "title": "Move your mouse and Left Click to select",
@@ -24,6 +112,15 @@
         }
       }
     },
+    "3": {
+      "title": "Creative Mode (Creative only, duh)",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:grass_block\"}"
+      },
+      "action": {
+        "category": "Creative"
+      }
+    },
     "4": {
       "title": "Social Interactions (Multiplayer only)",
       "icon": {
@@ -46,15 +143,12 @@
       }
     },
     "6": {
-      "title": "Armor Visual Settings",
+      "title": "Equipped Gear",
       "icon": {
         "stack": "{Count:1b,id:\"minecraft:iron_chestplate\",tag:{Damage:0}}"
       },
       "action": {
-        "key": {
-          "key": "key.showmeyourskin.open_settings",
-          "toggle": false
-        }
+        "category": "armor"
       }
     }
   },

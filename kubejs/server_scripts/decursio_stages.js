@@ -3,12 +3,12 @@ const STAGE_TO_SET = 'next_stage'
 
 const gamerules = {
 	'chapter_0': {
-		'artifacts.crystalHeart.healthBonus': 40,
+		'artifacts.crystalHeart.healthBonus': '40',
 		'artifacts.aquaDashers.enabled': false,
 		'artifacts.cloudInABottle.enabled': false,
 		'naughtinessMechanics': false,
 		'generationofInfectedDiamonds': false,
-		'animalMobCap': 20,
+		'animalMobCap': '20',
 		'reducedDebugInfo': true, // those few never change
 
 		'theappearanceoftheNightmareStalker': false,
