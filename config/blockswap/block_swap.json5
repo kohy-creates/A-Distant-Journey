@@ -182,11 +182,11 @@
 		"quark:yellow_blossom_leaf_carpet": "minecraft:yellow_carpet",
 		"quark:orange_blossom_leaf_carpet": "minecraft:orange_carpet",
 
-		"quark:potted_red_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
-		"quark:potted_lavender_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
-		"quark:potted_blue_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
-		"quark:potted_yellow_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
-		"quark:potted_orange_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
+		// "quark:potted_red_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
+		// "quark:potted_lavender_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
+		// "quark:potted_blue_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
+		// "quark:potted_yellow_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
+		// "quark:potted_orange_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
 
 		"quark:carrot_crate": "farmersdelight:carrot_crate",
 		"quark:potato_crate": "farmersdelight:potato_crate",

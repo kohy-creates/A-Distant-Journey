@@ -766,10 +766,10 @@
 		"Smelt Raw Ore Blocks" = true
 
 [world]
-	"Ancient Wood" = false
+	"Ancient Wood" = true
 	"Azalea Wood" = true
 	"Big Stone Clusters" = true
-	"Blossom Trees" = false
+	"Blossom Trees" = true
 	"Chorus Vegetation" = true
 	Corundum = true
 	"Fairy Rings" = true
@@ -788,7 +788,7 @@
 		"Ancient Fruit Exp Value" = 10
 		#Set to a value other than 0 to enable Ancient City loot chest generation (8 recommended if you do)
 		#Allowed values: [0,)
-		"Ancient City Loot Weight" = 0
+		"Ancient City Loot Weight" = 6
 		#Allowed values: [0,)
 		"Ancient City Loot Quality" = 1
 		#Set to 0 to disable sniffer sniffing. The vanilla loot table has every entry at weight 1, so without editing it, it's impossible to make the sapling more rare
@@ -969,7 +969,7 @@
 		"Drop Leaf Particles" = true
 
 		[world.blossom_trees.blue]
-			Rarity = 200
+			Rarity = 1500
 
 			[world.blossom_trees.blue.dimensions]
 				"Is Blacklist" = false
@@ -988,7 +988,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.lavender]
-			Rarity = 100
+			Rarity = 1500
 
 			[world.blossom_trees.lavender.dimensions]
 				"Is Blacklist" = false
@@ -1007,7 +1007,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.orange]
-			Rarity = 100
+			Rarity = 500
 
 			[world.blossom_trees.orange.dimensions]
 				"Is Blacklist" = false
@@ -1026,7 +1026,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.yellow]
-			Rarity = 200
+			Rarity = 1500
 
 			[world.blossom_trees.yellow.dimensions]
 				"Is Blacklist" = false
@@ -1045,7 +1045,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.red]
-			Rarity = 30
+			Rarity = 1500
 
 			[world.blossom_trees.red.dimensions]
 				"Is Blacklist" = false
@@ -1090,8 +1090,8 @@
 
 		[world.corundum.generation_settings]
 			#Allowed values: [0,)
-			Rarity = 400
-			"Min Y Level" = 0
+			Rarity = 300
+			"Min Y Level" = -48
 			"Max Y Level" = 64
 			#Allowed values: [0,)
 			"Horizontal Size" = 36
@@ -1160,9 +1160,9 @@
 
 	[world.nether_obsidian_spikes]
 		#The chance for a chunk to contain spikes (1 is 100%, 0 is 0%)
-		"Chance Per Chunk" = 0.1
+		"Chance Per Chunk" = 0.15
 		#The chance for a spike to be big (1 is 100%, 0 is 0%)
-		"Big Spike Chance" = 0.03
+		"Big Spike Chance" = 0.05
 		#Should a chunk have spikes, how many would the generator try to place
 		"Tries Per Chunk" = 4
 		"Big Spike Spawners" = true
@@ -1323,7 +1323,7 @@
 					"Is Blacklist" = false
 
 	[world.spiral_spires]
-		Rarity = 200
+		Rarity = 140
 		Radius = 15
 		"Enable Myalite Viaducts" = true
 		#Allowed values: [2,1,024]

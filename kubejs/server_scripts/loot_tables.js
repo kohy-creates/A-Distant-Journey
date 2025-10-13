@@ -3,7 +3,8 @@ LootJS.modifiers((event) => {
 	const replaceItemsMap = {
 		'create:honey_bucket': 'the_bumblezone:honey_bucket',
 		'farmersdelight:wheat_dough': 'create:dough',
-		'rediscovered:quiver': 'supplementaries:quiver'
+		'rediscovered:quiver': 'supplementaries:quiver',
+		'create:copper_nugget': 'mythicmetals:copper_nugget'
 	}
 
 	for (const [before, after] of Object.entries(replaceItemsMap)) {

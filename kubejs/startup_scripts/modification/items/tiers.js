@@ -304,3 +304,18 @@ ItemEvents.modification(event => {
 	})
 
 })
+
+// if (Platform.isLoaded("jade")) {
+// 	StartupEvents.postInit(event => {
+// 		let $HarvestToolProvider = Java.loadClass("snownee.jade.addon.harvest.HarvestToolProvider")
+// 		let $SimpleToolHandler = Java.loadClass("snownee.jade.addon.harvest.SimpleToolHandler")
+// 		$HarvestToolProvider.registerHandler(
+// 			new $SimpleToolHandler(
+// 				"pickaxe",
+// 				$BlockTags.MINEABLE_WITH_PICKAXE,
+// 				// Your can try a diff approach, but remember that the icons on tooltip will be tested in this order
+// 				["wooden_pickaxe", "stone_pickaxe", "iron_pickaxe", "diamond_pickaxe", "netherite_pickaxe", "kubejs:constantan_pickaxe"]
+// 			)
+// 		)
+// 	})
+// }
