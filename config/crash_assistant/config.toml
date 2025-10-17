@@ -39,6 +39,11 @@
 	#So this option prevents our app logging at all.
 	#HIGHLY UNRECOMMENDED to disable! Contains many useful info.
 	prevent_generating_crash_assistant_app_logs = false
+	#Here you can change priority for logs.
+	#For example if you want crash report to be shown earlier than latest.log in the available logs list.
+	#Supported values: https://github.com/KostromDan/Crash-Assistant/blob/1.19-1.20.1/app/src/main/java/dev/kostromdan/mods/crash_assistant/app/logs_analyser/LogType.java
+	#Usage: ["CRASH_REPORT", "LOG"]
+	logs_priority_overrides = []
 
 #Here you can change text of lang placeHolders.
 #Also you can change any text in lang files.
@@ -171,6 +176,18 @@
 	auto_fix_button_foreground_color = "0_178_0"
 	#Will hide Upload All Button from GUI.
 	disable_upload_all_button = false
+	#Path to a modpack logo to display in the top of the GUI.
+	#Path is relative to the Minecraft instance folder. Leave empty to disable.
+	modpack_logo_path = ""
+	#If true, the logo will be larger, Replacing a some of `don't send screenshot` notice.
+	#If false, it will be smaller and logo will be end right where the `don't send screenshot` notice starts.
+	#You should try both, but most likely:
+	#- If you have some long text in the discord description, you will love the small one.
+	#- If the text is short, you will love the large one.
+	modpack_logo_large_mode = false
+	#Hardcode modpack logo size. Default is -1, which means it's calculated automatically.
+	#By default, this should not needed. But if you have heavily customized GUI, you may want to decrease its size, so this option could be needed in such case. 
+	modpack_logo_size = -1
 
 #Settings of analysis tools feature.
 #Here you can enable disable showing some analysis tools fot end user.

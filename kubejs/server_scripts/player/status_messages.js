@@ -7,8 +7,8 @@ function commandInWorld(world, command) {
 }
 
 const nightmareStalkerMsgs = [
-    "Something is following you...",
-    "You're not alone...  Stay alert...",
+	"Something is following you...",
+	"You're not alone...  Stay alert...",
 	"A distant roar can be heard...",
 	"A nightmare has materialized nearby..."
 ];
@@ -51,6 +51,107 @@ let CurrentLunarEvent;
 
 function isInBetween(num, var1, var2) {
 	return (num >= var1 && num <= var2);
+}
+
+function brighten(hex, p) {
+	return '#' + [0, 2, 4]
+		.map(i => {
+			const v = parseInt(hex.slice(1 + i, 3 + i), 16);
+			return Math.round(v + (255 - v) * p).toString(16).padStart(2, '0');
+		}).join('');
+}
+
+const moonEventMessages = {
+	'enhancedcelestials:harvest_moon': {
+		color: '#ffd500',
+		texts: {
+			start: [
+				'The Harvest Moon is rising...',
+				'Your crops seem invigorated by the moonlight'
+			],
+			end: [
+				'The Harvest Moon sets...',
+				"Your crops aren't as energetic anymore"
+			]
+		}
+	},
+	'enhancedcelestials:blood_moon': {
+		color: '#ff1e1e',
+		texts: {
+			start: [
+				'The Blood Moon is rising...',
+				'The undead scream in the distance'
+			],
+			end: [
+				'The Blood Moon sets...',
+				'The undead scream, burning in the sun as it rises'
+			]
+		}
+	},
+	'enhancedcelestials:blue_moon': {
+		color: '#1eaaff',
+		texts: {
+			start: [
+				'The Blue Moon is rising...',
+				'What a rare phenomenon!',
+				'You know, they say that it happens, like',
+				'Once in a *blue moon*, hehe'
+			],
+			end: [
+				'The Blue Moon sets...',
+				"Odds are you won't see it again",
+				'Still, quite cool you managed to!'
+			]
+		}
+	},
+	'adj:slimy_moon': {
+		color: '#21e621',
+		texts: {
+			start: [
+				'The Slimy Moon is rising...',
+				'Are we serious? Is this an actual event??',
+				'Oh whatever... Slimes wobble everywhere'
+			],
+			end: [
+				'The Slimy Moon sets...',
+				'Slimes start to dissolve into the ground',
+				'What a weird event...'
+			]
+		}
+	}
+};
+
+
+const witherStormMessages = {
+	color: '#d39dff',
+	texts: {
+		2: [
+			'This is not going to be a calm night. Far from it',
+			'But it is going to be alright'
+		],
+		3: [
+			'The Wither Storm is getting stronger with each passing moment',
+			'You still have time to prepare your escape route',
+			"It knows where you are. It's not strong enough to follow you yet",
+			'Start planning. Now.'
+		],
+		4: [
+			'The Wither Storm can sense you. It is after you now',
+			"Keep moving. It's slow but it will surely find you at some point",
+			'Run. Or go underground. Hide'
+		],
+		6: [
+			'Even if you go underground, it is going to reach Bedrock eventually',
+			'It started mutating Zombies into Withered Symbionts',
+			'Killing them will be valuable towards defeating it',
+			'Stay safe. I wish you best of luck'
+		],
+		7: [
+			"It's been a long time",
+			'The Wither Storm destroyed anything in its path',
+			'But sooner or later it will be all over'
+		]
+	}
 }
 
 ServerEvents.tick(event => {
@@ -96,14 +197,46 @@ ServerEvents.tick(event => {
 		);
 	}
 
+	function sendEventMessages(isWitherStorm, moonEventOrPhase, isStart) {
+		let color, texts;
+		let duration = 5;
+		if (isWitherStorm) {
+			duration = 7;
+			color = witherStormMessages.color;
+			for (let i = moonEventOrPhase; i < 7; i++) {
+				if (!witherStormMessages.texts[i]) {
+					continue;
+				}
+				texts = witherStormMessages.texts[i];
+			}
+		}
+		else {
+			color = moonEventMessages[moonEventOrPhase].color;
+			if (!isStart) color = brighten(color, 0.25)
+			texts = moonEventMessages[moonEventOrPhase][(isStart) ? 'start' : 'end'];
+		}
+
+		if (texts.length === 1) {
+			sendMessage({ text: 'The Harvest Moon sets...', color: '#ffe562', slide: 'intro', duration: 5 });
+		}
+
+		for (let i = 0; i < texts.length; i++) {
+			let anim = 'single'
+		}
+	}
 
 	//console.log(messageCount)
 
 	if (isInBetween(dayTime, 12000, 12599) && messageCount === 0) {
+
+		// Night is falling
 		sendMessage({ text: 'Night is falling upon this world...', slide: 'single' });
 		messageCount = 1;
+
 	}
 	else if (isInBetween(dayTime, 12545, 12599) && messageCount === 1) {
+
+		// Get current lunar forecast
 		let optional = $EnhancedCelestials.lunarForecastWorldData(server.overworld());
 		let id = null;
 		if (optional.isPresent()) {
@@ -115,70 +248,14 @@ ServerEvents.tick(event => {
 			server.persistentData.lunarEvent = id.toString();
 		}
 
-		switch (server.persistentData.lunarEvent) {
-			case 'enhancedcelestials:default':
-				if (server.persistentData.witherStormActive == true && !server.isHardcore()) {
-					let phase = server.persistentData.witherStormPhase;
-					switch (Number(phase)) {
-						case 0:
-						case 1:
-						case 2: {
-							sendMessage({ text: 'This is not going to be a calm night. Far from it', color: '#d39dff', slide: 'intro' });
-							sendMessage({ text: 'But it is going to be alright', color: '#d39dff', slide: 'outro', duration: 5 });
-							break;
-						}
-						case 3: {
-							sendMessage({ text: 'The Wither Storm is getting stronger with each passing moment', color: '#d39dff', slide: 'intro' });
-							sendMessage({ text: 'You still have time to prepare your escape route', color: '#d39dff', slide: 'next' });
-							sendMessage({ text: 'It knows where you are. It\'s not strong enough to follow you yet', color: '#d39dff', slide: 'next', duration: 6 });
-							sendMessage({ text: 'Start planning. Now.', color: '#d39dff', slide: 'outro', duration: 5 });
-							break;
-						}
-						case 4: {
-							sendMessage({ text: 'The Wither Storm can sense you. It is after you now', color: '#d39dff', slide: 'intro' });
-							sendMessage({ text: 'Keep moving. It\'s slow but it will surely find you at some point', color: '#d39dff', slide: 'next', duration: 6 });
-							sendMessage({ text: 'Run. Or go underground. Hide', color: '#d39dff', slide: 'outro', duration: 5 });
-							break;
-						}
-						case 5:
-						case 6: {
-							sendMessage({ text: 'Even if you go underground, it is going to reach Bedrock eventually', color: '#d39dff', slide: 'intro', duration: 6 });
-							sendMessage({ text: 'It started mutating Zombies into Withered Symbionts', color: '#d39dff', slide: 'next', duration: 5 });
-							sendMessage({ text: 'Killing them will be valuable towards defeating it', color: '#d39dff', slide: 'next', duration: 6 });
-							sendMessage({ text: 'Stay safe. I wish you best of luck', color: '#d39dff', slide: 'outro', duration: 5 });
-							break;
-						}
-						case 7: {
-							sendMessage({ text: 'It\'s been a long time', color: '#d39dff', slide: 'intro', duration: 5 });
-							sendMessage({ text: 'The Wither Storm destroyed anything in its path', color: '#d39dff', slide: 'next', duration: 5 });
-							sendMessage({ text: 'But sooner or later it will be all over', color: '#d39dff', slide: 'outro', duration: 6 });
-							break;
-						}
-					}
-				}
-				else {
-					sendMessage({ text: 'This is going to be a calm night', slide: 'single' });
-				}
-				break;
-			case 'enhancedcelestials:harvest_moon':
-				sendMessage({ text: 'The Harvest Moon is rising...', color: '#ffd500', slide: 'intro', duration: 5 });
-				sendMessage({ text: 'Your crops seem invigorated by the moonlight', color: '#ffd500', slide: 'outro' });
-				break;
-			case 'enhancedcelestials:blood_moon':
-				sendMessage({ text: 'The Blood Moon is rising...', color: '#ff1e1e', slide: 'intro', duration: 5 });
-				sendMessage({ text: 'The undead scream in the distance', color: '#ff1e1e', slide: 'outro' });
-				break;
-			case 'enhancedcelestials:blue_moon':
-				sendMessage({ text: 'The Blue Moon is rising...', color: '#1eaaff', slide: 'intro', duration: 5 });
-				sendMessage({ text: 'What a rare phenomenon!', color: '#1eaaff', slide: 'next', duration: 5 });
-				sendMessage({ text: 'You know, they say that it happens, like', color: '#1eaaff', slide: 'next', duration: 5 });
-				sendMessage({ text: 'Once in a *blue moon*, hehe', color: '#1eaaff', slide: 'outro', duration: 5 });
-				break;
-			case 'adj:slimy_moon':
-				sendMessage({ text: 'The Slimy Moon is rising...', color: '#21e621', slide: 'intro', duration: 5 });
-				sendMessage({ text: 'Are we serious? Is this an actual event??', color: '#21e621', slide: 'next', duration: 5 });
-				sendMessage({ text: 'Oh whatever... Slimes wobble everywhere', color: '#21e621', slide: 'outro', duration: 5 });
-				break;
+		if (server.persistentData.lunarEvent === 'enhancedcelestials:default') {
+			if (server.persistentData.witherStormActive == true && !server.isHardcore()) {
+				let phase = Number(server.persistentData.witherStormPhase);
+				// CONTINUE HERE
+			}
+		}
+		else {
+			sendMessage({ text: 'This is going to be a calm night', slide: 'single' });
 		}
 		messageCount = 2;
 	}
@@ -186,6 +263,10 @@ ServerEvents.tick(event => {
 		messageCount = 0;
 	}
 	else if (isInBetween(dayTime, 23000, 24000) && messageCount === 0) {
+
+		// CONTINUE HERE
+
+		// Moon sets message
 		switch (server.persistentData.lunarEvent) {
 			case 'enhancedcelestials:default':
 				sendMessage({ text: 'The moon slowly sets, monsters crawl back into the shadows', slide: 'single' });

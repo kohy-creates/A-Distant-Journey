@@ -313,42 +313,42 @@ StartupEvents.postInit(event => {
 							continue;
 					}
 				}
-				case 'ars_nouveau:archwood': {
-					switch (furnitureType) {
-						case 'log': {
-							for (let l = 0; l < archwoodLogs.length; l++) {
-								let log = archwoodLogs[l];
-								EMIEdit.push([latestAddedCache, log]);
-								latestAddedCache = log;
-							}
-							continue;
-						}
-						case 'stripped_X_log': {
-							for (let l = 0; l < archwoodLogs.length; l++) {
-								let log = archwoodLogs[l].replace(':', ':stripped_');
-								EMIEdit.push([latestAddedCache, log]);
-								latestAddedCache = log;
-							}
-							continue;
-						}
-						case 'wood': {
-							for (let l = 0; l < archwoodLogs.length; l++) {
-								let log = archwoodLogs[l].replace('log', 'wood');
-								EMIEdit.push([latestAddedCache, log]);
-								latestAddedCache = log;
-							}
-							continue;
-						}
-						case 'wood': {
-							for (let l = 0; l < archwoodLogs.length; l++) {
-								let log = archwoodLogs[l].replace('log', 'wood').replace(':', ':stripped_');
-								EMIEdit.push([latestAddedCache, log]);
-								latestAddedCache = log;
-							}
-							continue;
-						}
-					}
-				}
+				// case 'ars_nouveau:archwood': {
+				// 	switch (furnitureType) {
+				// 		case 'log': {
+				// 			for (let l = 0; l < archwoodLogs.length; l++) {
+				// 				let log = archwoodLogs[l];
+				// 				EMIEdit.push([latestAddedCache, log]);
+				// 				latestAddedCache = log;
+				// 			}
+				// 			continue;
+				// 		}
+				// 		case 'stripped_X_log': {
+				// 			for (let l = 0; l < archwoodLogs.length; l++) {
+				// 				let log = archwoodLogs[l].replace(':', ':stripped_');
+				// 				EMIEdit.push([latestAddedCache, log]);
+				// 				latestAddedCache = log;
+				// 			}
+				// 			continue;
+				// 		}
+				// 		case 'wood': {
+				// 			for (let l = 0; l < archwoodLogs.length; l++) {
+				// 				let log = archwoodLogs[l].replace('log', 'wood');
+				// 				EMIEdit.push([latestAddedCache, log]);
+				// 				latestAddedCache = log;
+				// 			}
+				// 			continue;
+				// 		}
+				// 		case 'wood': {
+				// 			for (let l = 0; l < archwoodLogs.length; l++) {
+				// 				let log = archwoodLogs[l].replace('log', 'wood').replace(':', ':stripped_');
+				// 				EMIEdit.push([latestAddedCache, log]);
+				// 				latestAddedCache = log;
+				// 			}
+				// 			continue;
+				// 		}
+				// 	}
+				// }
 			}
 
 			// Replace _X_ placeholder with actual wood type (e.g. "oak")

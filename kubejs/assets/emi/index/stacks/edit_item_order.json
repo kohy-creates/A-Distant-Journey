@@ -1,10 +1,11 @@
 {
 	"removed": [
-		"item:minecraft:enchanted_book",
 		"item:minecraft:suspicious_stew",
 		"item:minecraft:lingering_potion",
 		"item:minecraft:splash_potion",
 		"item:minecraft:tipped_arrow",
+		"item:alexscaves:jelly_bean",
+		"item:mythicmetals:tipped_runite_arrow",
 		"item:structure_gel:building_tool",
 		"item:alloy_forgery:cracked_stone_bricks_forge_controller",
 		"item:alloy_forgery:cracked_deepslate_bricks_forge_controller",
@@ -10844,11 +10845,12 @@
 		}
 	],
 	"filters": [
-		"/minecraft:enchanted_book/",
 		"/minecraft:suspicious_stew/",
 		"/minecraft:lingering_potion/",
 		"/minecraft:splash_potion/",
 		"/minecraft:tipped_arrow/",
+		"/mythicmetals:tipped_runite_arrow/",
+		"/alexscaves:jelly_bean/",
 		"/structure_gel:building_tool/",
 		"/alloy_forgery:cracked_stone_bricks_forge_controller/",
 		"/alloy_forgery:cracked_deepslate_bricks_forge_controller/",

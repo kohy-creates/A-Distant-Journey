@@ -5,6 +5,19 @@
       "name": "kohara_",
       "uniqueId": "b1b6a13e-7a06-41a9-8189-1757871c9414"
     },
+    "time": 1760703347734,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/VGZOwmuZ4Z"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "kohara_",
+      "uniqueId": "b1b6a13e-7a06-41a9-8189-1757871c9414"
+    },
     "time": 1760118763247,
     "type": "Profiler",
     "data": {
