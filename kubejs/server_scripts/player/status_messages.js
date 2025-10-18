@@ -216,16 +216,20 @@ ServerEvents.tick(event => {
 			texts = moonEventMessages[moonEventOrPhase][(isStart) ? 'start' : 'end'];
 		}
 
-		if (texts.length === 1) {
-			sendMessage({ text: 'The Harvest Moon sets...', color: '#ffe562', slide: 'intro', duration: 5 });
-		}
-
 		for (let i = 0; i < texts.length; i++) {
-			let anim = 'single'
+			let anim = 'single';
+			if (texts.length > 1) {
+				anim = 'next';
+				if (i == texts.length - 1) {
+					anim = 'outro';
+				}
+				else if (i == 0) {
+					anim = 'intro'
+				}
+			}
+			sendMessage({ text: texts[i], color: color, slide: anim, duration: duration })
 		}
 	}
-
-	//console.log(messageCount)
 
 	if (isInBetween(dayTime, 12000, 12599) && messageCount === 0) {
 
@@ -249,13 +253,21 @@ ServerEvents.tick(event => {
 		}
 
 		if (server.persistentData.lunarEvent === 'enhancedcelestials:default') {
-			if (server.persistentData.witherStormActive == true && !server.isHardcore()) {
-				let phase = Number(server.persistentData.witherStormPhase);
-				// CONTINUE HERE
+			if (server.persistentData.witherStormActive == true) {
+				if (!server.isHardcore()) {
+					let phase = Number(server.persistentData.witherStormPhase);
+					sendEventMessages(true, phase);
+				}
+				else {
+					sendMessage({ text: 'This really doesn\'t feel like a calm night', color: '#d39dff', slide: 'single'})
+				}
+			}
+			else {
+				sendMessage({ text: 'This is going to be a calm night', slide: 'single' });
 			}
 		}
 		else {
-			sendMessage({ text: 'This is going to be a calm night', slide: 'single' });
+			sendEventMessages(false, server.persistentData.lunarEvent, true)
 		}
 		messageCount = 2;
 	}
@@ -264,31 +276,14 @@ ServerEvents.tick(event => {
 	}
 	else if (isInBetween(dayTime, 23000, 24000) && messageCount === 0) {
 
-		// CONTINUE HERE
+		let moonEvent = server.persistentData.lunarEvent;
 
 		// Moon sets message
-		switch (server.persistentData.lunarEvent) {
-			case 'enhancedcelestials:default':
-				sendMessage({ text: 'The moon slowly sets, monsters crawl back into the shadows', slide: 'single' });
-				break;
-			case 'enhancedcelestials:harvest_moon':
-				sendMessage({ text: 'The Harvest Moon sets...', color: '#ffe562', slide: 'intro', duration: 5 });
-				sendMessage({ text: "Your crops aren't as energetic anymore", color: '#ffe562', slide: 'outro', duration: 6 });
-				break;
-			case 'enhancedcelestials:blood_moon':
-				sendMessage({ text: 'The Blood Moon sets...', color: '#ff5f5f', slide: 'intro', duration: 5 });
-				sendMessage({ text: 'The undead scream, burning in the sun as it rises', color: '#ff5f5f', slide: 'outro', duration: 6 });
-				break;
-			case 'enhancedcelestials:blue_moon':
-				sendMessage({ text: 'The Blue Moon sets...', color: '#6ac7ff', slide: 'intro', duration: 5 });
-				sendMessage({ text: "Odds are you won't see it again", color: '#6ac7ff', slide: 'next', duration: 6 });
-				sendMessage({ text: 'Still, quite cool you managed to!', color: '#6ac7ff', slide: 'outro', duration: 5 });
-				break;
-			case 'adj:slimy_moon':
-				sendMessage({ text: 'The Slimy Moon sets...', color: '#7be47b', slide: 'intro', duration: 5 });
-				sendMessage({ text: 'Slimes start to dissolve into the ground', color: '#7be47b', slide: 'next', duration: 6 });
-				sendMessage({ text: 'What a weird event...', color: '#7be47b', slide: 'outro', duration: 5 });
-				break;
+		if (moonEvent === 'enhancedcelestials:default') {
+			sendMessage({ text: 'The moon slowly sets, monsters crawl back into the shadows', slide: 'single' });
+		}
+		else {
+			sendEventMessages(false, moonEvent, false)
 		}
 		messageCount = 1;
 	}
