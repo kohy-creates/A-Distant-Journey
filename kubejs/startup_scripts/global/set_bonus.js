@@ -732,7 +732,7 @@ global.setBonusMap = {
 	'mythicmetals:palladium': {
 		description: [
 			"Become immune to fire",
-			"Become immune to knockback"
+			"Attacks increase life regeneration"
 		],
 		effects: [
 			{
@@ -741,27 +741,18 @@ global.setBonusMap = {
 					id: 'minecraft:fire_resistance',
 					amplifier: 0,
 				}
-			},
-			{
-				type: "attribute",
-				value: {
-					id: "generic.knockback_resistance",
-					value: 21.37,
-					operation: 0
-				}
 			}
 		]
 	},
 	'mythicmetals:prometheum': {
 		description: [
-			"COMING SOON"
+			"Standing in direct sunlight regenerates health"
 		],
 		effects: []
 	},
 	'botania:manasteel': {
 		description: [
-			"10% reduced mana cost on",
-			"Mana Tools and Rods",
+			"10% reduced mana cost on Mana Tools and Rods",
 			'3 defense'
 		],
 		effects: [
@@ -777,8 +768,7 @@ global.setBonusMap = {
 	},
 	'botania:terrasteel': {
 		description: [
-			"20% reduced mana cost on",
-			"Mana Tools and Rods",
+			"20% reduced mana cost on Mana Tools and Rods",
 			"Passive Mana generation on Mana Tablets",
 			'10% reduced damage'
 		],
@@ -795,8 +785,7 @@ global.setBonusMap = {
 	},
 	'botania:manaweave': {
 		description: [
-			"40% reduced mana cost on",
-			"Mana Tools and Rods",
+			"40% reduced mana cost on Mana Tools and Rods",
 			"Increased profficiency with Rods",
 			'25% increased movement speed'
 		],
@@ -806,21 +795,6 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.movement_speed',
 					value: 0.25,
-					operation: 1
-				}
-			}
-		]
-	},
-	'mythicmetals:tidesinger': {
-		description: [
-			"Greatly improved underwater visibility"
-		],
-		effects: [
-			{
-				type: 'attribute',
-				value: {
-					id: 'additionalentityattributes:player.water_visibility',
-					value: 0.8,
 					operation: 1
 				}
 			}
@@ -979,7 +953,7 @@ global.setBonusMap = {
 		],
 		effects: []
 	},
-	'attributeslib:crit_chance': {
+	'born_in_chaos_v1:nightmare_mantleofthe_night': {
 		description: [
 			'Increases effectiveness of',
 			'dark magic weapons and items',
@@ -1001,15 +975,6 @@ global.setBonusMap = {
 			'Enter rampage when on low health',
 			'Become immune to Wither effect'
 		],
-		effects: [
-			{
-				type: "attribute",
-				value: {
-					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
-					value: 8,
-					operation: 0
-				}
-			},
-		]
+		effects: []
 	},
 }

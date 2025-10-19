@@ -180,7 +180,12 @@ function tickBonus(player) {
 			player.removeEffect('born_in_chaos_v1:rampant_rampage');
 			player.removeEffect('hunger');
 		}
-
+	}
+	else if (setBonusActive(player, 'mythicmetals:prometheum')) {
+		const isExposedToSunlight = player.isExposedToSunlight();
+		if (isExposedToSunlight) { // I don't have autocompletions on laptop, CONTINUE FROM HERE!!!!
+			player.addEffect(new $MobEffectInstance('kubejs:prometheum_regeneration', 4 * 20, 0));
+		}
 	}
 }
 
@@ -193,3 +198,13 @@ function setBonusActive(player, bonus) {
 	const lookFor = bonus.split(':');
 	return player.tags.toArray().includes(`adj.set_bonus.${lookFor[0]}.${lookFor[1]}`);
 }
+
+// CONTINUE HERE
+EntityEvents.hurt(event => {
+	const player = event.getSource().getPlayer();
+	if (player) {
+		if (setBonusActive(player, "mythicmetals:palladium")) {
+			player.addEffect(new $MobEffectInstance('kubejs:rapid_regen', 4 * 20, 0));
+		}
+	}
+})

@@ -49,7 +49,7 @@ ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (even
 		if (Object.keys(global.weapon_overrides).includes(id)) {
 			let overrides = global.weapon_overrides[id];
 			event.removeAttribute('generic.attack_damage');
-			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', overrides[0] - 3, 'addition'))
+			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', overrides[0] - 1, 'addition'))
 			event.removeAttribute('generic.attack_speed');
 			event.addModifier('generic.attack_speed', new $AttributeModifier(weaponModifierUUIDs[1], 'Attack Speed', -4 + overrides[1], 'addition'))
 			if (overrides.length > 2) {

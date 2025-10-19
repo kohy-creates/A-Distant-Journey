@@ -27,37 +27,44 @@ EntityEvents.checkSpawn(event => {
 	if (event.getType().toString() == 'NATURAL' && mutantMap[type]) {
 		let server = event.getServer();
 		let chapter = parseInt(String(server.persistentData.chapters.current_stage).replace('chapter_', ''));
-		if (chapter >= 2) {
-			if ((server.isHardcore()) ? chance(1.5) : chance(1)) {
-				let level = event.getLevel();
-				let pos = entity.blockPosition(); // BlockPos
 
-				// Check a 3x3x4 area to see if blocks are all air
-				let clear = true;
-				for (let dx = -1; dx <= 1; dx++) {
-					for (let dz = -1; dz <= 1; dz++) {
-						for (let dy = 0; dy < 4; dy++) {
-							let checkPos = pos.offset(dx, dy, dz);
-							let block = level.getBlock(checkPos);
-							if (!block.id.includes("air")) {
-								clear = false;
-								break;
-							}
+		let chance;
+		if (chapter >= 2) {
+			chance = (server.isHardcore()) ? chance(1.5) : chance(0.75);
+		}
+		else if (server.isHardcore()) {
+			chance = (chapter == 1) ? 0.75 : 0.25;
+		}
+
+		if (chance) {
+			let level = event.getLevel();
+			let pos = entity.blockPosition(); // BlockPos
+
+			// Check a 3x3x4 area to see if blocks are all air
+			let clear = true;
+			for (let dx = -1; dx <= 1; dx++) {
+				for (let dz = -1; dz <= 1; dz++) {
+					for (let dy = 0; dy < 4; dy++) {
+						let checkPos = pos.offset(dx, dy, dz);
+						let block = level.getBlock(checkPos);
+						if (!block.id.includes("air")) {
+							clear = false;
+							break;
 						}
-						if (!clear) break;
 					}
 					if (!clear) break;
 				}
+				if (!clear) break;
+			}
 
-				// Only spawn if area is clear
-				// to prevent suffocating
-				if (clear) {
-					server.runCommandSilent(
-						`summon ${mutantMap[type]} ${event.x} ${event.y} ${event.z}`
-					);
-					server.scheduleInTicks(1, () => entity.remove("discarded"));
-					event.cancel();
-				}
+			// Only spawn if area is clear
+			// to prevent suffocating
+			if (clear) {
+				server.runCommandSilent(
+					`summon ${mutantMap[type]} ${event.x} ${event.y} ${event.z}`
+				);
+				server.scheduleInTicks(1, () => entity.remove("discarded"));
+				event.cancel();
 			}
 		}
 	}

@@ -1,18 +1,15 @@
 {
   "client_settings": {
     "color_settings": {
-      "moon_texture_color": "665828",
-      "sky_light_color": "99833b"
+      "moon_texture_color": "943B99",
+      "sky_light_color": "3e993b"
     },
     "moon_size": 30.0,
-    "moon_texture_location": "minecraft:textures/environment/moon_phases.png",
-    "sound_track": {
-      "sound_id": "enhancedcelestials:harvest_moon"
-    }
+    "moon_texture_location": "minecraft:textures/environment/moon_phases.png"
   },
   "dimension_chances": {
     "minecraft:overworld": {
-      "chance": 0.15,
+      "chance": 0.05,
       "min_number_of_nights_between": 8,
       "valid_moon_phases": [
         0,
@@ -27,9 +24,7 @@
     }
   },
   "drops": {
-    "drop_enhancer": {
-      "#enhancedcelestials:harvest_moon_crops": 2.0
-    }
+    "drop_enhancer": {}
   },
   "mob_settings": {
     "blocks_sleeping": {
@@ -47,7 +42,14 @@
           "axolotls": [],
           "creature": [],
           "misc": [],
-          "monster": [],
+          "monster": [
+            {
+              "type": "minecraft:enderman",
+              "weight": 100,
+              "minCount": 4,
+              "maxCount": 4
+            }
+          ],
           "underground_water_creature": [],
           "water_ambient": [],
           "water_creature": []
@@ -57,17 +59,13 @@
       "use_biome_spawn_settings": true
     },
     "mob_effects": [],
-    "spawn_category_multiplier": {
-      "monster": 0.15
-    }
+    "spawn_category_multiplier": {}
   },
   "text_components": {
     "end_notification": {},
     "name": {
-      "key": "enhancedcelestials.name.harvest_moon",
-      "style": {
-        "color": "ffff55"
-      }
+      "key": "Ender Moon",
+      "color": "E055FF"
     },
     "start_notification": {}
   }

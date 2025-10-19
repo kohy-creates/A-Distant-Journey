@@ -13,7 +13,7 @@
   "dimension_chances": {
     "minecraft:overworld": {
       "chance": 0.1,
-      "min_number_of_nights_between": 4,
+      "min_number_of_nights_between": 5,
       "valid_moon_phases": [
         0,
         1,
@@ -95,7 +95,7 @@
       }
     ],
     "spawn_category_multiplier": {
-      "monster": 2.0
+      "monster": 1.75
     }
   },
   "text_components": {

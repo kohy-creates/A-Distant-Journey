@@ -70,7 +70,9 @@
         }
       }
     ],
-    "spawn_category_multiplier": {}
+    "spawn_category_multiplier": {
+      "monster": 0.4
+    }
   },
   "text_components": {
     "end_notification": {},

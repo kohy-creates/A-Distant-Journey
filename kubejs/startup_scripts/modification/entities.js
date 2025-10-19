@@ -82,7 +82,7 @@ global.hpModifications = {
 	'minecraft:wither_skeleton': [120, 6, 6],
 	'minecraft:wolf': [40, 20, 0],
 	'minecraft:zoglin': [200, 30, 0],
-	'minecraft:zombie': [90, 14, 3],
+	'minecraft:zombie': [90, 15, [1, 2, null, 3]],
 	'minecraft:zombie_horse': [75, 15, 0],
 	'minecraft:zombie_villager': [150, 10, 8],
 	'minecraft:zombified_piglin': [110, 10, 4],
@@ -717,7 +717,7 @@ EntityJSEvents.attributes(event => {
 
 	event.modify('player', attributes => {
 		attributes.add('generic.max_health', 100);
-		attributes.add('generic.attack_damage', 3);
+		attributes.add('generic.attack_damage', 1);
 		attributes.add('combatroll:count', 0);
 		attributes.add('attributeslib:crit_damage', 2.0);
 		attributes.add('attributeslib:draw_speed', 0.85);

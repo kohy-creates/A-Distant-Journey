@@ -71,7 +71,7 @@ const moonEventMessages = {
 			],
 			end: [
 				'The Harvest Moon sets...',
-				"Your crops aren't as energetic anymore"
+				"Your crops aren't as enthusiastic to grow anymore"
 			]
 		}
 	},
@@ -80,11 +80,11 @@ const moonEventMessages = {
 		texts: {
 			start: [
 				'The Blood Moon is rising...',
-				'The undead scream in the distance'
+				'The undead scream in the distance, hungry for blood'
 			],
 			end: [
 				'The Blood Moon sets...',
-				'The undead scream, burning in the sun as it rises'
+				'The undead scream, burning in the sun as it rises above the horizon'
 			]
 		}
 	},
@@ -93,14 +93,14 @@ const moonEventMessages = {
 		texts: {
 			start: [
 				'The Blue Moon is rising...',
-				'What a rare phenomenon!',
+				'What a rare celestial phenomenon!',
 				'You know, they say that it happens, like',
 				'Once in a *blue moon*, hehe'
 			],
 			end: [
 				'The Blue Moon sets...',
-				"Odds are you won't see it again",
-				'Still, quite cool you managed to!'
+				"Odds are you will never see it again",
+				'Then still, quite cool you managed to!'
 			]
 		}
 	},
@@ -118,6 +118,15 @@ const moonEventMessages = {
 				'What a weird event...'
 			]
 		}
+	},
+	'adj:ender_moon': {
+		color: '#E055FF',
+		texts: {
+			start: [
+				'The Ender Moon is rising...',
+				'Otherwordly noises can be heard around you... '
+			]
+		}
 	}
 };
 
@@ -127,29 +136,30 @@ const witherStormMessages = {
 	texts: {
 		2: [
 			'This is not going to be a calm night. Far from it',
-			'But it is going to be alright'
+			'But it is going to be alright',
+			'It has to be'
 		],
 		3: [
 			'The Wither Storm is getting stronger with each passing moment',
 			'You still have time to prepare your escape route',
-			"It knows where you are. It's not strong enough to follow you yet",
-			'Start planning. Now.'
+			"It knows where you are, but it's not strong enough to follow you yet",
+			'Start planning. Now. There is no time to be wasted'
 		],
 		4: [
-			'The Wither Storm can sense you. It is after you now',
+			'The Wither Storm can sense where you are. It is following you',
 			"Keep moving. It's slow but it will surely find you at some point",
-			'Run. Or go underground. Hide'
+			'Run. Stay away from your base. Or hide underground'
 		],
 		6: [
-			'Even if you go underground, it is going to reach Bedrock eventually',
+			'Even if you hide underground, eventually it will make it to Bedrock',
 			'It started mutating Zombies into Withered Symbionts',
 			'Killing them will be valuable towards defeating it',
 			'Stay safe. I wish you best of luck'
 		],
 		7: [
 			"It's been a long time",
-			'The Wither Storm destroyed anything in its path',
-			'But sooner or later it will be all over'
+			// 'The Wither Storm destroyed anything in its path',
+			'But sooner or later it will be over'
 		]
 	}
 }

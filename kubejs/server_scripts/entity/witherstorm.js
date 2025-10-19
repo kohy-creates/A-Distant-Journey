@@ -68,25 +68,26 @@ function onWSPhaseChange(newPhase, server) {
 				let fastSpeed = global.WitherStormFlyingSpeed * 2.5;
 				server.runCommandSilent(`/attribute @w witherstormmod:slow_flying_speed base set ${slowSpeed}`)
 				server.runCommandSilent(`/attribute @w witherstormmod:target_stationary_flying_speed base set ${fastSpeed}`)
-				server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 1.66')
+				server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 1.75')
 			}
 			break;
 		}
 		case 1: {
 			text.push('It\'s slowly getting stronger');
-			text.push('Sooner or later it will consume the entire world...');
+			text.push('Sooner or later it will soar the skies again...');
 			break;
 		}
 		case 2: {
 			text.push('The Wither Storm grows stronger');
 			text.push('I cannot stress this enough - stay away from its beams');
 			text.push('If it catches you, shoot the head down');
+			text.push('If it pulls you in, you\'re dead');
 			break;
 		}
 		case 3: {
 			text.push('The Wither Storm grows stronger');
 			text.push('It grew tentacles. Do not let them catch you...');
-			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 1.66')
+			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 1.75')
 			break;
 		}
 		case 4: {
@@ -107,9 +108,9 @@ function onWSPhaseChange(newPhase, server) {
 		case 6: {
 			text.push('');
 			text.push('The Wither Storm lays dead. The Command Block is exposed, unguarded.');
-			text.push('It\'s just playing with you. Pulling the strings. Inviting you to its trap')
+			text.push('It\'s just playing with you. Pulling the strings, and inviting you to its trap')
 			text.push('Approach it and it will reawaken.')
-			text.push('It\'s best to leave it, it will wake up soon anyway.')
+			text.push('It\'s best to leave it for now, it will wake up soon anyway.')
 			text.push('You can take this time to gear up, think of an escape route.')
 			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 0.5')
 			break;
