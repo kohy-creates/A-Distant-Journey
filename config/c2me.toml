@@ -74,7 +74,7 @@ globalExecutorParallelism = "default"
 
 [threadedWorldGen]
 	# (Default: true) Whether to enable this feature
-	enabled = "default"
+	enabled = false
 	# (Default: true) Whether to allow feature generation (world decorations like trees, ores and etc.) run in parallel
 	# (may cause incompatibility with other mods)
 	allowThreadedFeatures = "default"

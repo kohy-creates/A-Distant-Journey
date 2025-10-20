@@ -92,7 +92,7 @@
 	#    "dropArmorFromInventory": false,
 	#    "canPickupItems": false,
 	#    "itemsPickupDelay": 15,
-	#    "hideInJEI_REI": false,
+	#    "hideInJEI_REI": true,
 	#    "canUseItems": false,
 	#    "containerListWhitelist": false,
 	#    "canBreakBlocks": false,

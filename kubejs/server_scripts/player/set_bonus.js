@@ -182,8 +182,8 @@ function tickBonus(player) {
 		}
 	}
 	else if (setBonusActive(player, 'mythicmetals:prometheum')) {
-		const isExposedToSunlight = player.isExposedToSunlight();
-		if (isExposedToSunlight) { // I don't have autocompletions on laptop, CONTINUE FROM HERE!!!!
+		const isExposedToSunlight = (player.level.getHeightmapPos("motion_blocking_no_leaves", player.block.pos) <= player.block.pos);
+		if (isExposedToSunlight) {
 			player.addEffect(new $MobEffectInstance('kubejs:prometheum_regeneration', 4 * 20, 0));
 		}
 	}
@@ -199,12 +199,11 @@ function setBonusActive(player, bonus) {
 	return player.tags.toArray().includes(`adj.set_bonus.${lookFor[0]}.${lookFor[1]}`);
 }
 
-// CONTINUE HERE
 EntityEvents.hurt(event => {
 	const player = event.getSource().getPlayer();
 	if (player) {
 		if (setBonusActive(player, "mythicmetals:palladium")) {
-			player.addEffect(new $MobEffectInstance('kubejs:rapid_regen', 4 * 20, 0));
+			player.addEffect(new $MobEffectInstance('kubejs:rapid_healing', 4 * 20, 0));
 		}
 	}
 })

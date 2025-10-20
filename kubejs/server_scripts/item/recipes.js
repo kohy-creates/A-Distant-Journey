@@ -113,6 +113,9 @@ ServerEvents.recipes((event) => {
 		'sortilege:cauldron/slow_falling',
 		'sortilege:cauldron/poison',
 		'sortilege:cauldron/leaping',
+		
+		'minecraft:candle',
+		'delightful:candle_from_animal_fat'
 
 
 		///alloy_forgery\:compat\//
@@ -3063,4 +3066,29 @@ ServerEvents.recipes((event) => {
 
 		event.custom(object).id(recipe.getId())
 	})
+
+	event.shaped(
+		'4x candle',
+		[
+			'S',
+			'H'
+		],
+		{
+			S: 'string',
+			H: 'honeycomb'
+		}
+	)
+
+	event.shaped(
+		'2x candle',
+		[
+			'S',
+			'H',
+			'H'
+		],
+		{
+			S: 'string',
+			H: 'delightful:animal_fat'
+		}
+	)
 });

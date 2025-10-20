@@ -39,9 +39,7 @@ PlayerEvents.tick(event => {
 
 	eRT = (Math.min(RT, 600) / 100) + (Math.max(RT - 600, 0) / 200);
 	R = (player.getMaxHealth() / 400 * 0.85 + 0.15) * eRT;
-	if (player.isMoving()) R *= 0.5;
-	else R *= 1.25
-		;
+	R *= (player.isMoving()) ? 0.5 : 1.25;
 	if (player.foodLevel < 16) R *= 0.8;
 	else if (player.foodLevel < 10) R *= 0.5;
 	else if (player.foodLevel < 6) R *= 0.2;
