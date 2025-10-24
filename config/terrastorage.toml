@@ -1,7 +1,7 @@
 #The cooldown of all storage actions, in game ticks
 #Range: 0 to 100, inclusive
 #Default: 10
-action_cooldown = 1
+action_cooldown = 0
 #==========
 #Whether the Quick Stack To Nearby Storages feature only considers storages within the player's line of sight.
 #Default: true
@@ -10,7 +10,7 @@ line_of_sight_check = false
 #The range of the Quick Stack to Nearby Storages feature, in blocks
 #Range: 3 to 48, inclusive
 #Default: 8
-quick_stack_range = 8
+quick_stack_range = 10
 #==========
 #The length of the flying item animation that occurs when Quick Stack To Nearby Storages is used, in game ticks
 #Range: 0 to 200, inclusive

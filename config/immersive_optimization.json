@@ -19,7 +19,8 @@
     "minecraft:the_nether": true,
     "minecraft:the_end": true,
     "aether:the_aether": true,
-    "the_bumblezone:the_bumblezone": true
+    "the_bumblezone:the_bumblezone": true,
+    "rediscovered:skylands": true
   },
   "entities": {
     "minecraft:ender_pearl": false,

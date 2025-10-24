@@ -3,8 +3,8 @@
   "auto_kill_ticking_entities": true,
   "ticking_exception_threshold": 10,
   "handle_ticking_entities": true,
-  "handle_ticking_block_entities": true,
-  "handle_ticking_block_states": true,
+  "handle_ticking_block_entities": false,
+  "handle_ticking_block_states": false,
   "handle_ticking_item_stacks": true,
   "handle_ticking_players": true
 }

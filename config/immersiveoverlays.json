@@ -35,7 +35,7 @@
   ],
   "clock_enable": true,
   "clock_current_time": true,
-  "clock_day_count": false,
+  "clock_day_count": true,
   "clock_24_hour": true,
   "clock_seasons": true,
   "clock_text_colour": 14737632,

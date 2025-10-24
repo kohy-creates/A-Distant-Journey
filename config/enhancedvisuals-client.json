@@ -148,8 +148,8 @@
         }
       },
       "bloodDuration": {
-        "min": 250,
-        "max": 500
+        "min": 100,
+        "max": 240
       },
       "fire": {
         "disabled": false,
