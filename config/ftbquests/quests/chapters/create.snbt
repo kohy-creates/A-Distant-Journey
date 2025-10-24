@@ -331,6 +331,19 @@
 			x: -2.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["74E81719E903F908"]
+			id: "68970836919AF150"
+			subtitle: "Make a Smart Crafter"
+			tasks: [{
+				id: "7B7F92CF998DDE1F"
+				item: "smartcrafter:smart_crafter"
+				type: "item"
+			}]
+			title: "Work Smart Not Hard"
+			x: -2.0d
+			y: 2.0d
+		}
 	]
 	title: "Creating a Factory"
 }

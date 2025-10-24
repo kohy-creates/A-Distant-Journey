@@ -40,12 +40,12 @@ soundShakes:
         rotationAmplitude: 0.05
         rotationSpeed: 10.0
     minecraft:entity.generic.explode:
-        duration: 5
+        duration: 30
         fadeInTime: 0
         fadeOutTime: -1
         fovAmplitude: 0.15
         fovSpeed: 10.0
-        offsetAmplitude: 0.5
+        offsetAmplitude: 0.12
         offsetSpeed: 3.5
         rangeMultiplier: 0.1
         rotationAmplitude: 0.1

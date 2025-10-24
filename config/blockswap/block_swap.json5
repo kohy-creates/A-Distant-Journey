@@ -107,13 +107,13 @@
 		"quark:mossy_cobblestone_bricks_stairs": "minecraft:mossy_cobblestone_stairs",
 		"quark:mossy_cobblestone_bricks_wall": "minecraft:mossy_cobblestone_wall",
 
-		"quark:oak_chest": "minecraft:chest",
-		"quark:spruce_chest": "minecraft:chest",
-		"quark:birch_chest": "minecraft:chest",
-		"quark:jungle_chest": "minecraft:chest",
-		"quark:acacia_chest": "minecraft:chest",
-		"quark:dark_oak_chest": "minecraft:chest",
-		"quark:mangrove_chest": "minecraft:chest",
+		// "quark:oak_chest": "minecraft:chest",
+		// "quark:spruce_chest": "minecraft:chest",
+		// "quark:birch_chest": "minecraft:chest",
+		// "quark:jungle_chest": "minecraft:chest",
+		// "quark:acacia_chest": "minecraft:chest",
+		// "quark:dark_oak_chest": "minecraft:chest",
+		// "quark:mangrove_chest": "minecraft:chest",
 		
 		"quark:lootr_oak_chest": "lootr:lootr_chest",
 		"quark:lootr_spruce_chest": "lootr:lootr_chest",
@@ -215,5 +215,8 @@
 		"create:dark_oak_window": "minecraft:glass",
 		"create:mangrove_window": "minecraft:glass",
 		"create:bamboo_window": "minecraft:glass",
+
+		"minecraft:chest": "quark:oak_chest",
+		"minecraft:trapped_chest": "quark:oak_trapped_chest"
 	}
 }

@@ -199,3 +199,16 @@
 	#For example "MCreatorModDetectorGUI"
 	blacklisted_tools = []
 
+#Settings of links copied by Upload and copy link buttons
+[copied_links]
+	#With this option, you can customize how single links from individual upload buttons are copied, there
+	#log of small size was uploaded to a single link.
+	#For example, leave just $LINK$ to copy just link.
+	single_link = "$LOG_NAME$$FILE_NAME$: $LINK$"
+	#With this option, you can customize how links from individual upload buttons are copied, there
+	#log was split to the 2 parts (head and tail, due to too large size for single upload), but user only decided to copy only one of them (not message with both).
+	single_link_split = "$LOG_NAME$$FILE_NAME$($HEAD_OR_TAIL$): $LINK$ $TOO_BIG_REASONS$"
+	#With this option, you can customize how links from individual upload buttons are copied, there
+	#log was split to the 2 parts (head and tail, due to too large size for single upload), but user decided to copy message with both.
+	both_links_split = "$LOG_NAME$[$FILE_NAME$ <TOLOWER>$MSG_LANG.gui.split_log_dialog_head$</TOLOWER>](<$LINK_FIRST_LINES$>) / [<TOLOWER>$MSG_LANG.gui.split_log_dialog_tail$</TOLOWER>](<$LINK_LAST_LINES$>) $TOO_BIG_REASONS$"
+

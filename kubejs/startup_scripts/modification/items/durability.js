@@ -167,10 +167,13 @@ ItemEvents.modification(event => {
 	], 950)
 
 	maxDurability([
+		armorset('ars_nouveau:arcanist'),
+	], 1800)
+
+	maxDurability([
 		toolset('additionaladditions:rose_gold'),
 		toolset('aether_redux:veridium'),
 		toolset('aether_redux:infused_veridium'),
-		armorset('ars_nouveau:arcanist'),
 		armorset('born_in_chaos_v1:nigthmare_mantleofthe_night'),
 		'mcdw:crossbow_pride_of_the_piglins',
 		'mcdw:soul_dagger_soul_knife'
@@ -241,6 +244,10 @@ ItemEvents.modification(event => {
 	maxDurability([
 		toolset('mythicmetals:celestium'),
 		toolset('mythicmetals:metallurgium'),
+		armorset('ars_elemental:air'),
+		armorset('ars_elemental:water'),
+		armorset('ars_elemental:fire'),
+		armorset('ars_elemental:earth'),
 		'mcdw:crossbow_slayer_crossbow'
 	], 8000)
 

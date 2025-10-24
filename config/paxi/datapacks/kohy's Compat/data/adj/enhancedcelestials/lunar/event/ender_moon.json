@@ -2,7 +2,7 @@
   "client_settings": {
     "color_settings": {
       "moon_texture_color": "943B99",
-      "sky_light_color": "3e993b"
+      "sky_light_color": "823B99"
     },
     "moon_size": 30.0,
     "moon_texture_location": "minecraft:textures/environment/moon_phases.png"
@@ -10,7 +10,7 @@
   "dimension_chances": {
     "minecraft:overworld": {
       "chance": 0.05,
-      "min_number_of_nights_between": 8,
+      "min_number_of_nights_between": 7,
       "valid_moon_phases": [
         0,
         1,
@@ -45,7 +45,7 @@
           "monster": [
             {
               "type": "minecraft:enderman",
-              "weight": 100,
+              "weight": 180,
               "minCount": 4,
               "maxCount": 4
             }
@@ -65,7 +65,7 @@
     "end_notification": {},
     "name": {
       "key": "Ender Moon",
-      "color": "E055FF"
+      "color": "e055ff"
     },
     "start_notification": {}
   }

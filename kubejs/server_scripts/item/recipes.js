@@ -46,7 +46,10 @@ ServerEvents.recipes((event) => {
 
 		'@functionalstorage',
 
-		'experienceobelisk:cognitive_flux'
+		'experienceobelisk:cognitive_flux',
+		'botania:redstone_root',
+
+		'minecraft:chest'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -113,7 +116,7 @@ ServerEvents.recipes((event) => {
 		'sortilege:cauldron/slow_falling',
 		'sortilege:cauldron/poison',
 		'sortilege:cauldron/leaping',
-		
+
 		'minecraft:candle',
 		'delightful:candle_from_animal_fat'
 
@@ -547,7 +550,7 @@ ServerEvents.recipes((event) => {
 		)
 	};
 	furnaceRecipe('minecraft:cobblestone', 'minecraft:furnace')
-	furnaceRecipe('minecraft:deepslate', 'quark:deepslate_furnace')
+	furnaceRecipe('minecraft:cobbled_deepslate', 'quark:deepslate_furnace')
 	furnaceRecipe('minecraft:blackstone', 'quark:blackstone_furnace')
 
 	// Cheaper templates
@@ -2044,6 +2047,12 @@ ServerEvents.recipes((event) => {
 			'netherexp:fossil_fuel',
 			'netherexp:fossil_fuel',
 			'wither_skeleton_skull'
+		],
+		'ars_nouveau:glyph_rune': [
+			'ars_nouveau:manipulation_essence',
+			'ars_nouveau:runic_chalk',
+			'#botania:runes',
+			'#botania:runes'
 		]
 	}
 
@@ -2216,7 +2225,7 @@ ServerEvents.recipes((event) => {
 			['unusualend:pearlescent_ingot', 1],
 			['mythicmetals:unobtainium', 1]
 		],
-		['crmythicmetalseate:celestium_ingot', 1],
+		['mythicmetals:celestium_ingot', 1],
 		3,
 		80
 	)
@@ -2228,10 +2237,27 @@ ServerEvents.recipes((event) => {
 			['born_in_chaos_v1:dark_metal_ingot', 1],
 			['mythicmetals:unobtainium', 1]
 		],
-		['crmythicmetalseate:metallurgium_ingot', 1],
+		['mythicmetals:metallurgium_ingot', 1],
 		3,
 		80
 	)
+
+	// Change Metallurgium and Celestium gear recipes
+	event.forEachRecipe([{ type: 'minecraft:smithing_transform', output: /celestium/ }, { type: 'minecraft:smithing_transform', output: /metallurgium/ }], recipe => {
+
+		const JSON = recipe.json;
+
+		event.remove({ id: recipe.getId() });
+		event.smithing(
+			JSON.getAsJsonObject("result").get("item").getAsString().replace('"', ''),
+			"mythicmetals:unobtainium_smithing_template",
+			JSON.getAsJsonObject("base").get("item").getAsString().replace('"', '')
+				.toString()
+				.replace('minecraft:diamond_', 'majruszsdifficulty:enderium_')
+				.replace('minecraft:netherite_', 'majruszsdifficulty:enderium_'),
+			JSON.getAsJsonObject("addition").get("item").getAsString().replace('"', ''),
+		).id(recipe.getId())
+	})
 
 	event.shaped(
 		'3x scaffolding',
@@ -3091,4 +3117,277 @@ ServerEvents.recipes((event) => {
 			H: 'delightful:animal_fat'
 		}
 	)
+
+	// Reworking Botania runes
+	function rune(name) {
+		return (Item.exists(`botania:rune_${name}`)) ? `botania:rune_${name}` : `botanicadds:rune_${name}`
+	}
+	const manaAmounts = [
+		5200,
+		8000,
+		12000,
+		17000
+	]
+	const runeCraftingMap = {
+		'water': {
+			tier: 1,
+			items: [
+				'botania:manasteel_ingot',
+				'botania:mana_powder',
+				'ars_nouveau:water_essence'
+			]
+		},
+		'fire': {
+			tier: 1,
+			items: [
+				'botania:manasteel_ingot',
+				'botania:mana_powder',
+				'ars_nouveau:fire_essence'
+			]
+		},
+		'air': {
+			tier: 1,
+			items: [
+				'botania:manasteel_ingot',
+				'botania:mana_powder',
+				'ars_nouveau:air_essence'
+			]
+		},
+		'earth': {
+			tier: 1,
+			items: [
+				'botania:manasteel_ingot',
+				'botania:mana_powder',
+				'ars_nouveau:earth_essence'
+			]
+		},
+		'mana': {
+			tier: 1,
+			items: [
+				'botania:manasteel_ingot',
+				'botania:manasteel_ingot',
+				'botania:manasteel_ingot',
+				'botania:manasteel_ingot',
+				'botania:manasteel_ingot',
+				'botania:mana_pearl',
+			]
+		},
+		'spring': {
+			tier: 2,
+			items: [
+				rune('water'),
+				rune('fire'),
+				'#minecraft:flowers',
+				'#minecraft:flowers',
+				'#minecraft:flowers',
+				'#minecraft:leaves'
+			]
+		},
+		'summer': {
+			tier: 2,
+			items: [
+				rune('air'),
+				rune('earth'),
+				'#minecraft:sand',
+				'#minecraft:sand',
+				'water_bucket',
+				'minecraft:dead_bush'
+			]
+		},
+		'autumn': {
+			tier: 2,
+			items: [
+				rune('fire'),
+				rune('air'),
+				'wheat',
+				'carrot',
+				'potato',
+				'farmersdelight:onion'
+			]
+		},
+		'winter': {
+			tier: 2,
+			items: [
+				rune('earth'),
+				rune('water'),
+				'snow_block',
+				'snow_block',
+				'leather',
+				'#wool'
+			]
+		},
+		// 'lust': {
+		// 	tier: 3,
+		// 	items: [
+		// 		rune('summer'),
+		// 		rune('air'),
+		// 		'botania:mana_diamond',
+		// 		'botania:mana_diamond'
+		// 	]
+		// },
+		'tp': {
+			tier: 4,
+			items: [
+				rune('mana'),
+				'ender_pearl',
+				'obsidian',
+				'ars_nouveau:manipulation_essence',
+				'botania:mana_diamond',
+				'botania:mana_diamond'
+			]
+		},
+		'energy': {
+			tier: 4,
+			items: [
+				rune('air'),
+				rune('fire'),
+				'redstone_block',
+				'create:cog',
+				'botania:mana_diamond',
+				'botania:mana_diamond'
+			]
+		}
+	}
+
+	for (const [runeName, entry] of Object.entries(runeCraftingMap)) {
+		let targetRune = rune(runeName);
+
+		event.remove({ type: 'botania:runic_altar', output: targetRune });
+
+		event.recipes.botania.runic_altar(
+			Item.of(targetRune, (entry.tier == 1) ? 2 : 1),
+			entry.items,
+			manaAmounts[entry.tier - 1]
+		).id('kubejs:rune/' + runeName)
+	}
+
+	// Orechid transforms
+	const orechidMap = {
+		'stone': [
+			['mythicmetals:tin_ore', 21000],
+			['create:zinc_ore', 19000],
+			['mythicmetals:morkite_ore', 6000],
+			['mythicmetals:runite_ore', 4550],
+			['rediscovered:ruby_ore', 5200],
+			['galosphere:silver_ore', 19000],
+			['mythicmetals:kyber_ore', 4000],
+			['mythicmetals:prometheum_ore', 3500],
+			['mythicmetals:mythril_ore', 65],
+			['mythicmetals:orichalcum_ore', 65]
+		],
+		'deepslate': [
+			['mythicmetals:deepslate_morkite_ore', 250],
+			['mythicmetals:deepslate_prometheum_ore', 190],
+			['mythicmetals:deepslate_orichalcum_ore', 25],
+			['mythicmetals:deepslate_myhtril_ore', 25],
+			['create:deepslate_zinc_ore', 400],
+			['mythicmetals:deepslate_adamantite_ore', 1],
+		]
+	}
+	const orechdIgnemMap = {
+		'netherrack': [
+			['mythicmetals:midas_gold_ore', 5000],
+			['mythicmetals:stormyx_ore', 2500],
+			['mythicmetals:palladium_ore', 440]
+		],
+		'blackstone': [
+			['minecraft:gilded_blackstone', 20000],
+			['mythicmetals:blackstone_stormyx_ore', 1000]
+		]
+	}
+
+	for (const [block, entries] of Object.entries(orechidMap)) {
+		entries.forEach(entry => {
+			event.recipes.botania.orechid(entry[0], block, entry[1])
+		})
+	}
+	for (const [block, entries] of Object.entries(orechdIgnemMap)) {
+		entries.forEach(entry => {
+			event.recipes.botania.orechid_ignem(entry[0], block, entry[1])
+		})
+	}
+
+	event.shapeless(
+		'botania:redstone_root',
+		[
+			'redstone',
+			'stick',
+			'stick'
+		]
+	)
+
+	// Botania flowers
+	const constIngredients = {
+		redstoneRoot: 'botania:redstone_root',
+		gaiaSpirit: 'botania:gaia_spirit',
+		sculkPetal: 'botanicadds:sculk_petal',
+		essence: {
+			abjuration: 'ars_nouveau:abjuration_essence',
+			conjuration: 'ars_nouveau:conjuration_essence',
+			manipulation: 'ars_nouveau:manipulation_essence',
+			anima: 'ars_elemental:anima_essence'
+		},
+		terrasteelNugget: 'botania:terrasteel_nugget',
+		limitite: 'sortilege:limitite',
+		pixieDust: 'botania:pixie_dust'
+	}
+	function flower(name) {
+		return (Item.exists(`botania:${name}`)) ? `botania:${name}` : `botanicadds:flowers/${name}`
+	}
+	function petals(color) {
+		return `#botania:petals/${color}`
+	}
+	const flowerRecipeMap = {
+		'endoflame': [
+			petals('red'),
+			petals('light_gray'),
+			petals('brown'),
+			petals('brown'),
+			'#c:coal'
+		],
+		'thermalily': [
+			rune('earth'),
+			rune('fire'),
+			petals('orange'),
+			petals('orange'),
+			petals('red'),
+			'magma_block'
+		],
+		'rosa_arcana': [
+			petals('purple'),
+			petals('purple'),
+			petals('lime'),
+			petals('pink'),
+			petals('pink'),
+			'#adj:archwood_leaves'
+		],
+		'spectrolus': [
+			rune('winter'),
+			rune('air'),
+			petals('red'),
+			petals('orange'),
+			petals('yellow'),
+			petals('lime'),
+			petals('green'),
+			petals('light_blue'),
+			petals('magenta')
+		],
+		'spectranthemum': [
+			rune('tp'),
+			rune('envy'),
+			petals('white'),
+			petals('white'),
+			petals('white'),
+			petals('white'),
+			constIngredients.redstoneRoot,
+			constIngredients.essence.manipulation,
+			constIngredients.pixieDust
+		]
+	}
+
+	for (const [flowerName, items] of Object.entries(flowerRecipeMap)) {
+		let flw = flower(flowerName);
+		event.remove({ type: 'botania:petal_apothecary', output: flw })
+		event.recipes.botania.petal_apothecary(flw, items).id(`kubejs:botania/flowers/${flowerName}`)
+	}
 });

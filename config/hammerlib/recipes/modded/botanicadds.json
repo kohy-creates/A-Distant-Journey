@@ -12,8 +12,8 @@
             "botanicadds:flowers/energizera": true
         },
         "botania:runic_altar": {
-            "botanicadds:rune_tp": true,
-            "botanicadds:rune_energy": true,
+            "botanicadds:rune_tp": false,
+            "botanicadds:rune_energy": false,
             "botanicadds:mana_tesseract": true,
             "botanicadds:tesseract_attuner": true
         },

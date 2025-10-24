@@ -69,3 +69,6 @@ net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 com.jab125.mpuc.client.gui.screen.changelog.NewChangelogScreen {
 }
 
+com.tatnux.crafter.modules.crafter.client.SmartCrafterScreen {
+}
+

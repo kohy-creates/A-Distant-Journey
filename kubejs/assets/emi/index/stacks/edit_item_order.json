@@ -391,6 +391,7 @@
 		"item:handcrafted:oak_table",
 		"item:handcrafted:oak_counter",
 		"item:farmersdelight:oak_cabinet",
+		"item:quark:oak_chest",
 		"item:handcrafted:oak_fancy_bed",
 		"item:minecraft:oak_stairs",
 		"item:minecraft:oak_slab",
@@ -427,6 +428,7 @@
 		"item:handcrafted:birch_table",
 		"item:handcrafted:birch_counter",
 		"item:farmersdelight:birch_cabinet",
+		"item:quark:birch_chest",
 		"item:handcrafted:birch_fancy_bed",
 		"item:minecraft:birch_stairs",
 		"item:minecraft:birch_slab",
@@ -463,6 +465,7 @@
 		"item:handcrafted:spruce_table",
 		"item:handcrafted:spruce_counter",
 		"item:farmersdelight:spruce_cabinet",
+		"item:quark:spruce_chest",
 		"item:handcrafted:spruce_fancy_bed",
 		"item:minecraft:spruce_stairs",
 		"item:minecraft:spruce_slab",
@@ -499,6 +502,7 @@
 		"item:handcrafted:jungle_table",
 		"item:handcrafted:jungle_counter",
 		"item:farmersdelight:jungle_cabinet",
+		"item:quark:jungle_chest",
 		"item:handcrafted:jungle_fancy_bed",
 		"item:minecraft:jungle_stairs",
 		"item:minecraft:jungle_slab",
@@ -535,6 +539,7 @@
 		"item:handcrafted:acacia_table",
 		"item:handcrafted:acacia_counter",
 		"item:farmersdelight:acacia_cabinet",
+		"item:quark:acacia_chest",
 		"item:handcrafted:acacia_fancy_bed",
 		"item:minecraft:acacia_stairs",
 		"item:minecraft:acacia_slab",
@@ -571,6 +576,7 @@
 		"item:handcrafted:dark_oak_table",
 		"item:handcrafted:dark_oak_counter",
 		"item:farmersdelight:dark_oak_cabinet",
+		"item:quark:dark_oak_chest",
 		"item:handcrafted:dark_oak_fancy_bed",
 		"item:minecraft:dark_oak_stairs",
 		"item:minecraft:dark_oak_slab",
@@ -607,6 +613,7 @@
 		"item:handcrafted:mangrove_table",
 		"item:handcrafted:mangrove_counter",
 		"item:farmersdelight:mangrove_cabinet",
+		"item:quark:mangrove_chest",
 		"item:handcrafted:mangrove_fancy_bed",
 		"item:minecraft:mangrove_stairs",
 		"item:minecraft:mangrove_slab",
@@ -643,6 +650,7 @@
 		"item:handcrafted:cherry_table",
 		"item:handcrafted:cherry_counter",
 		"item:farmersdelight:cherry_cabinet",
+		"item:quark:cherry_chest",
 		"item:handcrafted:cherry_fancy_bed",
 		"item:minecraft:cherry_stairs",
 		"item:minecraft:cherry_slab",
@@ -678,6 +686,7 @@
 		"item:handcrafted:bamboo_table",
 		"item:handcrafted:bamboo_counter",
 		"item:farmersdelight:bamboo_cabinet",
+		"item:quark:bamboo_chest",
 		"item:handcrafted:bamboo_fancy_bed",
 		"item:minecraft:bamboo_stairs",
 		"item:minecraft:bamboo_mosaic_stairs",
@@ -717,6 +726,7 @@
 		"item:everycomp:hc/ecologics/coconut_table",
 		"item:everycomp:hc/ecologics/coconut_counter",
 		"item:everycomp:fd/ecologics/coconut_cabinet",
+		"item:everycomp:q/ecologics/coconut_chest",
 		"item:everycomp:hc/ecologics/coconut_fancy_bed",
 		"item:ecologics:coconut_stairs",
 		"item:ecologics:coconut_slab",
@@ -753,6 +763,7 @@
 		"item:everycomp:hc/ecologics/walnut_table",
 		"item:everycomp:hc/ecologics/walnut_counter",
 		"item:everycomp:fd/ecologics/walnut_cabinet",
+		"item:everycomp:q/ecologics/walnut_chest",
 		"item:everycomp:hc/ecologics/walnut_fancy_bed",
 		"item:ecologics:walnut_stairs",
 		"item:ecologics:walnut_slab",
@@ -786,6 +797,7 @@
 		"item:everycomp:hc/botania/livingwood_nightstand",
 		"item:everycomp:hc/botania/livingwood_table",
 		"item:everycomp:hc/botania/livingwood_counter",
+		"item:everycomp:q/botania/livingwood_chest",
 		"item:everycomp:hc/botania/livingwood_fancy_bed",
 		"item:botania:livingwood_stairs",
 		"item:botania:livingwood_slab",
@@ -813,6 +825,7 @@
 		"item:everycomp:hc/botania/dreamwood_nightstand",
 		"item:everycomp:hc/botania/dreamwood_table",
 		"item:everycomp:hc/botania/dreamwood_counter",
+		"item:everycomp:q/botania/dreamwood_chest",
 		"item:everycomp:hc/botania/dreamwood_fancy_bed",
 		"item:botania:dreamwood_stairs",
 		"item:botania:dreamwood_slab",
@@ -910,6 +923,7 @@
 		"item:everycomp:hc/quark/azalea_counter",
 		"item:everycomp:fd/quark/azalea_cabinet",
 		"item:quark:azalea_chest",
+		"item:quark:azalea_chest",
 		"item:everycomp:hc/quark/azalea_fancy_bed",
 		"item:quark:azalea_planks_stairs",
 		"item:quark:azalea_planks_slab",
@@ -947,6 +961,7 @@
 		"item:everycomp:hc/alexscaves/thornwood_table",
 		"item:everycomp:hc/alexscaves/thornwood_counter",
 		"item:everycomp:fd/alexscaves/thornwood_cabinet",
+		"item:everycomp:q/alexscaves/thornwood_chest",
 		"item:everycomp:hc/alexscaves/thornwood_fancy_bed",
 		"item:alexscaves:thornwood_stairs",
 		"item:alexscaves:thornwood_slab",
@@ -983,6 +998,7 @@
 		"item:everycomp:hc/alexscaves/pewen_table",
 		"item:everycomp:hc/alexscaves/pewen_counter",
 		"item:everycomp:fd/alexscaves/pewen_cabinet",
+		"item:everycomp:q/alexscaves/pewen_chest",
 		"item:everycomp:hc/alexscaves/pewen_fancy_bed",
 		"item:alexscaves:pewen_stairs",
 		"item:alexscaves:pewen_slab",
@@ -1010,6 +1026,7 @@
 		"item:quark:blossom_planks",
 		"item:quark:blossom_bookshelf",
 		"item:quark:blossom_chest",
+		"item:quark:blossom_chest",
 		"item:quark:blossom_planks_stairs",
 		"item:quark:blossom_planks_slab",
 		"item:quark:blossom_planks_slab",
@@ -1035,6 +1052,7 @@
 		"item:quark:stripped_ancient_post",
 		"item:quark:ancient_planks",
 		"item:quark:ancient_bookshelf",
+		"item:quark:ancient_chest",
 		"item:quark:ancient_chest",
 		"item:quark:ancient_planks_stairs",
 		"item:quark:ancient_planks_slab",
@@ -1072,6 +1090,7 @@
 		"item:everycomp:hc/upgrade_aquatic/driftwood_counter",
 		"item:everycomp:fd/upgrade_aquatic/driftwood_cabinet",
 		"item:upgrade_aquatic:driftwood_chest",
+		"item:everycomp:q/upgrade_aquatic/driftwood_chest",
 		"item:everycomp:hc/upgrade_aquatic/driftwood_fancy_bed",
 		"item:upgrade_aquatic:driftwood_stairs",
 		"item:upgrade_aquatic:driftwood_slab",
@@ -1109,6 +1128,7 @@
 		"item:everycomp:hc/upgrade_aquatic/river_counter",
 		"item:everycomp:fd/upgrade_aquatic/river_cabinet",
 		"item:upgrade_aquatic:river_chest",
+		"item:everycomp:q/upgrade_aquatic/river_chest",
 		"item:everycomp:hc/upgrade_aquatic/river_fancy_bed",
 		"item:upgrade_aquatic:river_stairs",
 		"item:upgrade_aquatic:river_slab",
@@ -1145,6 +1165,7 @@
 		"item:handcrafted:crimson_table",
 		"item:handcrafted:crimson_counter",
 		"item:farmersdelight:crimson_cabinet",
+		"item:quark:crimson_chest",
 		"item:handcrafted:crimson_fancy_bed",
 		"item:minecraft:crimson_stairs",
 		"item:minecraft:crimson_slab",
@@ -1179,6 +1200,7 @@
 		"item:handcrafted:warped_table",
 		"item:handcrafted:warped_counter",
 		"item:farmersdelight:warped_cabinet",
+		"item:quark:warped_chest",
 		"item:handcrafted:warped_fancy_bed",
 		"item:minecraft:warped_stairs",
 		"item:minecraft:warped_slab",
@@ -1209,6 +1231,7 @@
 		"item:everycomp:hc/mynethersdelight/powdery_nightstand",
 		"item:everycomp:hc/mynethersdelight/powdery_table",
 		"item:everycomp:hc/mynethersdelight/powdery_counter",
+		"item:everycomp:q/mynethersdelight/powdery_chest",
 		"item:everycomp:hc/mynethersdelight/powdery_fancy_bed",
 		"item:mynethersdelight:powdery_stairs",
 		"item:mynethersdelight:powdery_mosaic_stairs",
@@ -1241,6 +1264,7 @@
 		"item:everycomp:hc/netherexp/smokestalk_table",
 		"item:everycomp:hc/netherexp/smokestalk_counter",
 		"item:everycomp:fd/netherexp/smokestalk_cabinet",
+		"item:everycomp:q/netherexp/smokestalk_chest",
 		"item:everycomp:hc/netherexp/smokestalk_fancy_bed",
 		"item:netherexp:smokestalk_stairs",
 		"item:netherexp:smokestalk_slab",
@@ -1273,6 +1297,7 @@
 		"item:everycomp:hc/netherexp/claret_table",
 		"item:everycomp:hc/netherexp/claret_counter",
 		"item:everycomp:fd/netherexp/claret_cabinet",
+		"item:everycomp:q/netherexp/claret_chest",
 		"item:everycomp:hc/netherexp/claret_fancy_bed",
 		"item:netherexp:claret_stairs",
 		"item:netherexp:claret_slab",
@@ -1302,6 +1327,7 @@
 		"item:everycomp:hc/betterarcheology/rotten_table",
 		"item:everycomp:hc/betterarcheology/rotten_counter",
 		"item:everycomp:fd/betterarcheology/rotten_cabinet",
+		"item:everycomp:q/betterarcheology/rotten_chest",
 		"item:everycomp:hc/betterarcheology/rotten_fancy_bed",
 		"item:betterarcheology:rotten_stairs",
 		"item:betterarcheology:rotten_slab",
@@ -1333,6 +1359,7 @@
 		"item:everycomp:hc/moresnifferflowers/corrupted_table",
 		"item:everycomp:hc/moresnifferflowers/corrupted_counter",
 		"item:everycomp:fd/moresnifferflowers/corrupted_cabinet",
+		"item:everycomp:q/moresnifferflowers/corrupted_chest",
 		"item:everycomp:hc/moresnifferflowers/corrupted_fancy_bed",
 		"item:moresnifferflowers:corrupted_stairs",
 		"item:moresnifferflowers:corrupted_slab",
@@ -1369,6 +1396,7 @@
 		"item:everycomp:hc/moresnifferflowers/vivicus_table",
 		"item:everycomp:hc/moresnifferflowers/vivicus_counter",
 		"item:everycomp:fd/moresnifferflowers/vivicus_cabinet",
+		"item:everycomp:q/moresnifferflowers/vivicus_chest",
 		"item:everycomp:hc/moresnifferflowers/vivicus_fancy_bed",
 		"item:moresnifferflowers:vivicus_stairs",
 		"item:moresnifferflowers:vivicus_slab",
@@ -1405,6 +1433,7 @@
 		"item:everycomp:hc/born_in_chaos_v1/scorched_table",
 		"item:everycomp:hc/born_in_chaos_v1/scorched_counter",
 		"item:everycomp:fd/born_in_chaos_v1/scorched_cabinet",
+		"item:everycomp:q/born_in_chaos_v1/scorched_chest",
 		"item:everycomp:hc/born_in_chaos_v1/scorched_fancy_bed",
 		"item:born_in_chaos_v1:scorched_planks_stairs",
 		"item:born_in_chaos_v1:scorched_planks_slab",
@@ -1435,6 +1464,7 @@
 		"item:everycomp:hc/aether/skyroot_table",
 		"item:everycomp:hc/aether/skyroot_counter",
 		"item:everycomp:fd/aether/skyroot_cabinet",
+		"item:everycomp:q/aether/skyroot_chest",
 		"item:everycomp:hc/aether/skyroot_fancy_bed",
 		"item:aether:skyroot_stairs",
 		"item:aether:skyroot_slab",
@@ -1470,6 +1500,7 @@
 		"item:everycomp:hc/aether_redux/fieldsproot_table",
 		"item:everycomp:hc/aether_redux/fieldsproot_counter",
 		"item:everycomp:fd/aether_redux/fieldsproot_cabinet",
+		"item:everycomp:q/aether_redux/fieldsproot_chest",
 		"item:everycomp:hc/aether_redux/fieldsproot_fancy_bed",
 		"item:aether_redux:fieldsproot_stairs",
 		"item:aether_redux:fieldsproot_slab",
@@ -1505,6 +1536,7 @@
 		"item:everycomp:hc/aether_redux/crystal_table",
 		"item:everycomp:hc/aether_redux/crystal_counter",
 		"item:everycomp:fd/aether_redux/crystal_cabinet",
+		"item:everycomp:q/aether_redux/crystal_chest",
 		"item:everycomp:hc/aether_redux/crystal_fancy_bed",
 		"item:aether_redux:crystal_stairs",
 		"item:aether_redux:crystal_slab",
@@ -1540,6 +1572,7 @@
 		"item:everycomp:hc/aether_redux/glacia_table",
 		"item:everycomp:hc/aether_redux/glacia_counter",
 		"item:everycomp:fd/aether_redux/glacia_cabinet",
+		"item:everycomp:q/aether_redux/glacia_chest",
 		"item:everycomp:hc/aether_redux/glacia_fancy_bed",
 		"item:aether_redux:glacia_stairs",
 		"item:aether_redux:glacia_slab",
@@ -1575,6 +1608,7 @@
 		"item:everycomp:hc/aether_redux/cloudcap_table",
 		"item:everycomp:hc/aether_redux/cloudcap_counter",
 		"item:everycomp:fd/aether_redux/cloudcap_cabinet",
+		"item:everycomp:q/aether_redux/cloudcap_chest",
 		"item:everycomp:hc/aether_redux/cloudcap_fancy_bed",
 		"item:aether_redux:cloudcap_stairs",
 		"item:aether_redux:cloudcap_slab",
@@ -1610,6 +1644,7 @@
 		"item:everycomp:hc/aether_redux/blightwillow_table",
 		"item:everycomp:hc/aether_redux/blightwillow_counter",
 		"item:everycomp:fd/aether_redux/blightwillow_cabinet",
+		"item:everycomp:q/aether_redux/blightwillow_chest",
 		"item:everycomp:hc/aether_redux/blightwillow_fancy_bed",
 		"item:aether_redux:blightwillow_stairs",
 		"item:aether_redux:blightwillow_slab",
@@ -1642,6 +1677,7 @@
 		"item:everycomp:hc/aether_redux/jellyshroom_table",
 		"item:everycomp:hc/aether_redux/jellyshroom_counter",
 		"item:everycomp:fd/aether_redux/jellyshroom_cabinet",
+		"item:everycomp:q/aether_redux/jellyshroom_chest",
 		"item:everycomp:hc/aether_redux/jellyshroom_fancy_bed",
 		"item:aether_redux:jellyshroom_stairs",
 		"item:aether_redux:jellyshroom_slab",
@@ -1673,6 +1709,7 @@
 		"item:everycomp:hc/cataclysm/chorus_table",
 		"item:everycomp:hc/cataclysm/chorus_counter",
 		"item:everycomp:fd/cataclysm/chorus_cabinet",
+		"item:everycomp:q/cataclysm/chorus_chest",
 		"item:everycomp:hc/cataclysm/chorus_fancy_bed",
 		"item:cataclysm:chorus_stairs",
 		"item:cataclysm:chorus_slab",
@@ -1696,6 +1733,7 @@
 		"item:everycomp:hc/unusualend/chorus_nest_table",
 		"item:everycomp:hc/unusualend/chorus_nest_counter",
 		"item:everycomp:fd/unusualend/chorus_nest_cabinet",
+		"item:everycomp:q/unusualend/chorus_nest_chest",
 		"item:everycomp:hc/unusualend/chorus_nest_fancy_bed",
 		"item:unusualend:chorus_nest_stairs",
 		"item:unusualend:chorus_nest_mosaic_stairs",
@@ -1731,6 +1769,7 @@
 		"item:everycomp:hc/phantasm/pream_table",
 		"item:everycomp:hc/phantasm/pream_counter",
 		"item:everycomp:fd/phantasm/pream_cabinet",
+		"item:everycomp:q/phantasm/pream_chest",
 		"item:everycomp:hc/phantasm/pream_fancy_bed",
 		"item:phantasm:pream_stairs",
 		"item:phantasm:pream_slab",
@@ -1765,6 +1804,7 @@
 		"item:everycomp:hc/witherstormmod/tainted_table",
 		"item:everycomp:hc/witherstormmod/tainted_counter",
 		"item:everycomp:fd/witherstormmod/tainted_cabinet",
+		"item:everycomp:q/witherstormmod/tainted_chest",
 		"item:everycomp:hc/witherstormmod/tainted_fancy_bed",
 		"item:witherstormmod:tainted_stairs",
 		"item:witherstormmod:tainted_slab",
@@ -3693,8 +3733,12 @@
 			"after": "item:handcrafted:oak_counter"
 		},
 		{
-			"stack": "item:handcrafted:oak_fancy_bed",
+			"stack": "item:quark:oak_chest",
 			"after": "item:farmersdelight:oak_cabinet"
+		},
+		{
+			"stack": "item:handcrafted:oak_fancy_bed",
+			"after": "item:quark:oak_chest"
 		},
 		{
 			"stack": "item:minecraft:oak_stairs",
@@ -3837,8 +3881,12 @@
 			"after": "item:handcrafted:birch_counter"
 		},
 		{
-			"stack": "item:handcrafted:birch_fancy_bed",
+			"stack": "item:quark:birch_chest",
 			"after": "item:farmersdelight:birch_cabinet"
+		},
+		{
+			"stack": "item:handcrafted:birch_fancy_bed",
+			"after": "item:quark:birch_chest"
 		},
 		{
 			"stack": "item:minecraft:birch_stairs",
@@ -3981,8 +4029,12 @@
 			"after": "item:handcrafted:spruce_counter"
 		},
 		{
-			"stack": "item:handcrafted:spruce_fancy_bed",
+			"stack": "item:quark:spruce_chest",
 			"after": "item:farmersdelight:spruce_cabinet"
+		},
+		{
+			"stack": "item:handcrafted:spruce_fancy_bed",
+			"after": "item:quark:spruce_chest"
 		},
 		{
 			"stack": "item:minecraft:spruce_stairs",
@@ -4125,8 +4177,12 @@
 			"after": "item:handcrafted:jungle_counter"
 		},
 		{
-			"stack": "item:handcrafted:jungle_fancy_bed",
+			"stack": "item:quark:jungle_chest",
 			"after": "item:farmersdelight:jungle_cabinet"
+		},
+		{
+			"stack": "item:handcrafted:jungle_fancy_bed",
+			"after": "item:quark:jungle_chest"
 		},
 		{
 			"stack": "item:minecraft:jungle_stairs",
@@ -4269,8 +4325,12 @@
 			"after": "item:handcrafted:acacia_counter"
 		},
 		{
-			"stack": "item:handcrafted:acacia_fancy_bed",
+			"stack": "item:quark:acacia_chest",
 			"after": "item:farmersdelight:acacia_cabinet"
+		},
+		{
+			"stack": "item:handcrafted:acacia_fancy_bed",
+			"after": "item:quark:acacia_chest"
 		},
 		{
 			"stack": "item:minecraft:acacia_stairs",
@@ -4413,8 +4473,12 @@
 			"after": "item:handcrafted:dark_oak_counter"
 		},
 		{
-			"stack": "item:handcrafted:dark_oak_fancy_bed",
+			"stack": "item:quark:dark_oak_chest",
 			"after": "item:farmersdelight:dark_oak_cabinet"
+		},
+		{
+			"stack": "item:handcrafted:dark_oak_fancy_bed",
+			"after": "item:quark:dark_oak_chest"
 		},
 		{
 			"stack": "item:minecraft:dark_oak_stairs",
@@ -4557,8 +4621,12 @@
 			"after": "item:handcrafted:mangrove_counter"
 		},
 		{
-			"stack": "item:handcrafted:mangrove_fancy_bed",
+			"stack": "item:quark:mangrove_chest",
 			"after": "item:farmersdelight:mangrove_cabinet"
+		},
+		{
+			"stack": "item:handcrafted:mangrove_fancy_bed",
+			"after": "item:quark:mangrove_chest"
 		},
 		{
 			"stack": "item:minecraft:mangrove_stairs",
@@ -4701,8 +4769,12 @@
 			"after": "item:handcrafted:cherry_counter"
 		},
 		{
-			"stack": "item:handcrafted:cherry_fancy_bed",
+			"stack": "item:quark:cherry_chest",
 			"after": "item:farmersdelight:cherry_cabinet"
+		},
+		{
+			"stack": "item:handcrafted:cherry_fancy_bed",
+			"after": "item:quark:cherry_chest"
 		},
 		{
 			"stack": "item:minecraft:cherry_stairs",
@@ -4841,8 +4913,12 @@
 			"after": "item:handcrafted:bamboo_counter"
 		},
 		{
-			"stack": "item:handcrafted:bamboo_fancy_bed",
+			"stack": "item:quark:bamboo_chest",
 			"after": "item:farmersdelight:bamboo_cabinet"
+		},
+		{
+			"stack": "item:handcrafted:bamboo_fancy_bed",
+			"after": "item:quark:bamboo_chest"
 		},
 		{
 			"stack": "item:minecraft:bamboo_stairs",
@@ -4997,8 +5073,12 @@
 			"after": "item:everycomp:hc/ecologics/coconut_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/ecologics/coconut_fancy_bed",
+			"stack": "item:everycomp:q/ecologics/coconut_chest",
 			"after": "item:everycomp:fd/ecologics/coconut_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/ecologics/coconut_fancy_bed",
+			"after": "item:everycomp:q/ecologics/coconut_chest"
 		},
 		{
 			"stack": "item:ecologics:coconut_stairs",
@@ -5141,8 +5221,12 @@
 			"after": "item:everycomp:hc/ecologics/walnut_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/ecologics/walnut_fancy_bed",
+			"stack": "item:everycomp:q/ecologics/walnut_chest",
 			"after": "item:everycomp:fd/ecologics/walnut_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/ecologics/walnut_fancy_bed",
+			"after": "item:everycomp:q/ecologics/walnut_chest"
 		},
 		{
 			"stack": "item:ecologics:walnut_stairs",
@@ -5273,8 +5357,12 @@
 			"after": "item:everycomp:hc/botania/livingwood_table"
 		},
 		{
-			"stack": "item:everycomp:hc/botania/livingwood_fancy_bed",
+			"stack": "item:everycomp:q/botania/livingwood_chest",
 			"after": "item:everycomp:hc/botania/livingwood_counter"
+		},
+		{
+			"stack": "item:everycomp:hc/botania/livingwood_fancy_bed",
+			"after": "item:everycomp:q/botania/livingwood_chest"
 		},
 		{
 			"stack": "item:botania:livingwood_stairs",
@@ -5381,8 +5469,12 @@
 			"after": "item:everycomp:hc/botania/dreamwood_table"
 		},
 		{
-			"stack": "item:everycomp:hc/botania/dreamwood_fancy_bed",
+			"stack": "item:everycomp:q/botania/dreamwood_chest",
 			"after": "item:everycomp:hc/botania/dreamwood_counter"
+		},
+		{
+			"stack": "item:everycomp:hc/botania/dreamwood_fancy_bed",
+			"after": "item:everycomp:q/botania/dreamwood_chest"
 		},
 		{
 			"stack": "item:botania:dreamwood_stairs",
@@ -5769,6 +5861,10 @@
 			"after": "item:everycomp:fd/quark/azalea_cabinet"
 		},
 		{
+			"stack": "item:quark:azalea_chest",
+			"after": "item:quark:azalea_chest"
+		},
+		{
 			"stack": "item:everycomp:hc/quark/azalea_fancy_bed",
 			"after": "item:quark:azalea_chest"
 		},
@@ -5917,8 +6013,12 @@
 			"after": "item:everycomp:hc/alexscaves/thornwood_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/alexscaves/thornwood_fancy_bed",
+			"stack": "item:everycomp:q/alexscaves/thornwood_chest",
 			"after": "item:everycomp:fd/alexscaves/thornwood_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/alexscaves/thornwood_fancy_bed",
+			"after": "item:everycomp:q/alexscaves/thornwood_chest"
 		},
 		{
 			"stack": "item:alexscaves:thornwood_stairs",
@@ -6061,8 +6161,12 @@
 			"after": "item:everycomp:hc/alexscaves/pewen_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/alexscaves/pewen_fancy_bed",
+			"stack": "item:everycomp:q/alexscaves/pewen_chest",
 			"after": "item:everycomp:fd/alexscaves/pewen_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/alexscaves/pewen_fancy_bed",
+			"after": "item:everycomp:q/alexscaves/pewen_chest"
 		},
 		{
 			"stack": "item:alexscaves:pewen_stairs",
@@ -6169,6 +6273,10 @@
 			"after": "item:quark:blossom_bookshelf"
 		},
 		{
+			"stack": "item:quark:blossom_chest",
+			"after": "item:quark:blossom_chest"
+		},
+		{
 			"stack": "item:quark:blossom_planks_stairs",
 			"after": "item:quark:blossom_chest"
 		},
@@ -6271,6 +6379,10 @@
 		{
 			"stack": "item:quark:ancient_chest",
 			"after": "item:quark:ancient_bookshelf"
+		},
+		{
+			"stack": "item:quark:ancient_chest",
+			"after": "item:quark:ancient_chest"
 		},
 		{
 			"stack": "item:quark:ancient_planks_stairs",
@@ -6417,8 +6529,12 @@
 			"after": "item:everycomp:fd/upgrade_aquatic/driftwood_cabinet"
 		},
 		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_fancy_bed",
+			"stack": "item:everycomp:q/upgrade_aquatic/driftwood_chest",
 			"after": "item:upgrade_aquatic:driftwood_chest"
+		},
+		{
+			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_fancy_bed",
+			"after": "item:everycomp:q/upgrade_aquatic/driftwood_chest"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood_stairs",
@@ -6565,8 +6681,12 @@
 			"after": "item:everycomp:fd/upgrade_aquatic/river_cabinet"
 		},
 		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/river_fancy_bed",
+			"stack": "item:everycomp:q/upgrade_aquatic/river_chest",
 			"after": "item:upgrade_aquatic:river_chest"
+		},
+		{
+			"stack": "item:everycomp:hc/upgrade_aquatic/river_fancy_bed",
+			"after": "item:everycomp:q/upgrade_aquatic/river_chest"
 		},
 		{
 			"stack": "item:upgrade_aquatic:river_stairs",
@@ -6709,8 +6829,12 @@
 			"after": "item:handcrafted:crimson_counter"
 		},
 		{
-			"stack": "item:handcrafted:crimson_fancy_bed",
+			"stack": "item:quark:crimson_chest",
 			"after": "item:farmersdelight:crimson_cabinet"
+		},
+		{
+			"stack": "item:handcrafted:crimson_fancy_bed",
+			"after": "item:quark:crimson_chest"
 		},
 		{
 			"stack": "item:minecraft:crimson_stairs",
@@ -6845,8 +6969,12 @@
 			"after": "item:handcrafted:warped_counter"
 		},
 		{
-			"stack": "item:handcrafted:warped_fancy_bed",
+			"stack": "item:quark:warped_chest",
 			"after": "item:farmersdelight:warped_cabinet"
+		},
+		{
+			"stack": "item:handcrafted:warped_fancy_bed",
+			"after": "item:quark:warped_chest"
 		},
 		{
 			"stack": "item:minecraft:warped_stairs",
@@ -6965,8 +7093,12 @@
 			"after": "item:everycomp:hc/mynethersdelight/powdery_table"
 		},
 		{
-			"stack": "item:everycomp:hc/mynethersdelight/powdery_fancy_bed",
+			"stack": "item:everycomp:q/mynethersdelight/powdery_chest",
 			"after": "item:everycomp:hc/mynethersdelight/powdery_counter"
+		},
+		{
+			"stack": "item:everycomp:hc/mynethersdelight/powdery_fancy_bed",
+			"after": "item:everycomp:q/mynethersdelight/powdery_chest"
 		},
 		{
 			"stack": "item:mynethersdelight:powdery_stairs",
@@ -7093,8 +7225,12 @@
 			"after": "item:everycomp:hc/netherexp/smokestalk_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/netherexp/smokestalk_fancy_bed",
+			"stack": "item:everycomp:q/netherexp/smokestalk_chest",
 			"after": "item:everycomp:fd/netherexp/smokestalk_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/netherexp/smokestalk_fancy_bed",
+			"after": "item:everycomp:q/netherexp/smokestalk_chest"
 		},
 		{
 			"stack": "item:netherexp:smokestalk_stairs",
@@ -7221,8 +7357,12 @@
 			"after": "item:everycomp:hc/netherexp/claret_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/netherexp/claret_fancy_bed",
+			"stack": "item:everycomp:q/netherexp/claret_chest",
 			"after": "item:everycomp:fd/netherexp/claret_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/netherexp/claret_fancy_bed",
+			"after": "item:everycomp:q/netherexp/claret_chest"
 		},
 		{
 			"stack": "item:netherexp:claret_stairs",
@@ -7337,8 +7477,12 @@
 			"after": "item:everycomp:hc/betterarcheology/rotten_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/betterarcheology/rotten_fancy_bed",
+			"stack": "item:everycomp:q/betterarcheology/rotten_chest",
 			"after": "item:everycomp:fd/betterarcheology/rotten_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/betterarcheology/rotten_fancy_bed",
+			"after": "item:everycomp:q/betterarcheology/rotten_chest"
 		},
 		{
 			"stack": "item:betterarcheology:rotten_stairs",
@@ -7461,8 +7605,12 @@
 			"after": "item:everycomp:hc/moresnifferflowers/corrupted_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/moresnifferflowers/corrupted_fancy_bed",
+			"stack": "item:everycomp:q/moresnifferflowers/corrupted_chest",
 			"after": "item:everycomp:fd/moresnifferflowers/corrupted_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/moresnifferflowers/corrupted_fancy_bed",
+			"after": "item:everycomp:q/moresnifferflowers/corrupted_chest"
 		},
 		{
 			"stack": "item:moresnifferflowers:corrupted_stairs",
@@ -7605,8 +7753,12 @@
 			"after": "item:everycomp:hc/moresnifferflowers/vivicus_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/moresnifferflowers/vivicus_fancy_bed",
+			"stack": "item:everycomp:q/moresnifferflowers/vivicus_chest",
 			"after": "item:everycomp:fd/moresnifferflowers/vivicus_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/moresnifferflowers/vivicus_fancy_bed",
+			"after": "item:everycomp:q/moresnifferflowers/vivicus_chest"
 		},
 		{
 			"stack": "item:moresnifferflowers:vivicus_stairs",
@@ -7749,8 +7901,12 @@
 			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_fancy_bed",
+			"stack": "item:everycomp:q/born_in_chaos_v1/scorched_chest",
 			"after": "item:everycomp:fd/born_in_chaos_v1/scorched_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_fancy_bed",
+			"after": "item:everycomp:q/born_in_chaos_v1/scorched_chest"
 		},
 		{
 			"stack": "item:born_in_chaos_v1:scorched_planks_stairs",
@@ -7869,8 +8025,12 @@
 			"after": "item:everycomp:hc/aether/skyroot_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/aether/skyroot_fancy_bed",
+			"stack": "item:everycomp:q/aether/skyroot_chest",
 			"after": "item:everycomp:fd/aether/skyroot_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/aether/skyroot_fancy_bed",
+			"after": "item:everycomp:q/aether/skyroot_chest"
 		},
 		{
 			"stack": "item:aether:skyroot_stairs",
@@ -8009,8 +8169,12 @@
 			"after": "item:everycomp:hc/aether_redux/fieldsproot_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/fieldsproot_fancy_bed",
+			"stack": "item:everycomp:q/aether_redux/fieldsproot_chest",
 			"after": "item:everycomp:fd/aether_redux/fieldsproot_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/fieldsproot_fancy_bed",
+			"after": "item:everycomp:q/aether_redux/fieldsproot_chest"
 		},
 		{
 			"stack": "item:aether_redux:fieldsproot_stairs",
@@ -8149,8 +8313,12 @@
 			"after": "item:everycomp:hc/aether_redux/crystal_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/crystal_fancy_bed",
+			"stack": "item:everycomp:q/aether_redux/crystal_chest",
 			"after": "item:everycomp:fd/aether_redux/crystal_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/crystal_fancy_bed",
+			"after": "item:everycomp:q/aether_redux/crystal_chest"
 		},
 		{
 			"stack": "item:aether_redux:crystal_stairs",
@@ -8289,8 +8457,12 @@
 			"after": "item:everycomp:hc/aether_redux/glacia_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/glacia_fancy_bed",
+			"stack": "item:everycomp:q/aether_redux/glacia_chest",
 			"after": "item:everycomp:fd/aether_redux/glacia_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/glacia_fancy_bed",
+			"after": "item:everycomp:q/aether_redux/glacia_chest"
 		},
 		{
 			"stack": "item:aether_redux:glacia_stairs",
@@ -8429,8 +8601,12 @@
 			"after": "item:everycomp:hc/aether_redux/cloudcap_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/cloudcap_fancy_bed",
+			"stack": "item:everycomp:q/aether_redux/cloudcap_chest",
 			"after": "item:everycomp:fd/aether_redux/cloudcap_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/cloudcap_fancy_bed",
+			"after": "item:everycomp:q/aether_redux/cloudcap_chest"
 		},
 		{
 			"stack": "item:aether_redux:cloudcap_stairs",
@@ -8569,8 +8745,12 @@
 			"after": "item:everycomp:hc/aether_redux/blightwillow_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/blightwillow_fancy_bed",
+			"stack": "item:everycomp:q/aether_redux/blightwillow_chest",
 			"after": "item:everycomp:fd/aether_redux/blightwillow_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/blightwillow_fancy_bed",
+			"after": "item:everycomp:q/aether_redux/blightwillow_chest"
 		},
 		{
 			"stack": "item:aether_redux:blightwillow_stairs",
@@ -8697,8 +8877,12 @@
 			"after": "item:everycomp:hc/aether_redux/jellyshroom_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/jellyshroom_fancy_bed",
+			"stack": "item:everycomp:q/aether_redux/jellyshroom_chest",
 			"after": "item:everycomp:fd/aether_redux/jellyshroom_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/jellyshroom_fancy_bed",
+			"after": "item:everycomp:q/aether_redux/jellyshroom_chest"
 		},
 		{
 			"stack": "item:aether_redux:jellyshroom_stairs",
@@ -8821,8 +9005,12 @@
 			"after": "item:everycomp:hc/cataclysm/chorus_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/cataclysm/chorus_fancy_bed",
+			"stack": "item:everycomp:q/cataclysm/chorus_chest",
 			"after": "item:everycomp:fd/cataclysm/chorus_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/cataclysm/chorus_fancy_bed",
+			"after": "item:everycomp:q/cataclysm/chorus_chest"
 		},
 		{
 			"stack": "item:cataclysm:chorus_stairs",
@@ -8913,8 +9101,12 @@
 			"after": "item:everycomp:hc/unusualend/chorus_nest_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/unusualend/chorus_nest_fancy_bed",
+			"stack": "item:everycomp:q/unusualend/chorus_nest_chest",
 			"after": "item:everycomp:fd/unusualend/chorus_nest_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/unusualend/chorus_nest_fancy_bed",
+			"after": "item:everycomp:q/unusualend/chorus_nest_chest"
 		},
 		{
 			"stack": "item:unusualend:chorus_nest_stairs",
@@ -9053,8 +9245,12 @@
 			"after": "item:everycomp:hc/phantasm/pream_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/phantasm/pream_fancy_bed",
+			"stack": "item:everycomp:q/phantasm/pream_chest",
 			"after": "item:everycomp:fd/phantasm/pream_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/phantasm/pream_fancy_bed",
+			"after": "item:everycomp:q/phantasm/pream_chest"
 		},
 		{
 			"stack": "item:phantasm:pream_stairs",
@@ -9189,8 +9385,12 @@
 			"after": "item:everycomp:hc/witherstormmod/tainted_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/witherstormmod/tainted_fancy_bed",
+			"stack": "item:everycomp:q/witherstormmod/tainted_chest",
 			"after": "item:everycomp:fd/witherstormmod/tainted_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/witherstormmod/tainted_fancy_bed",
+			"after": "item:everycomp:q/witherstormmod/tainted_chest"
 		},
 		{
 			"stack": "item:witherstormmod:tainted_stairs",
@@ -10736,6 +10936,7 @@
 		"/minecraft:tipped_arrow/",
 		"/mythicmetals:tipped_runite_arrow/",
 		"/alexscaves:jelly_bean/",
+		"/spawn_egg/",
 		"/structure_gel:building_tool/",
 		"/alloy_forgery:cracked_stone_bricks_forge_controller/",
 		"/alloy_forgery:cracked_deepslate_bricks_forge_controller/",
@@ -11121,6 +11322,7 @@
 		"/handcrafted:oak_table/",
 		"/handcrafted:oak_counter/",
 		"/farmersdelight:oak_cabinet/",
+		"/quark:oak_chest/",
 		"/handcrafted:oak_fancy_bed/",
 		"/minecraft:oak_stairs/",
 		"/minecraft:oak_slab/",
@@ -11157,6 +11359,7 @@
 		"/handcrafted:birch_table/",
 		"/handcrafted:birch_counter/",
 		"/farmersdelight:birch_cabinet/",
+		"/quark:birch_chest/",
 		"/handcrafted:birch_fancy_bed/",
 		"/minecraft:birch_stairs/",
 		"/minecraft:birch_slab/",
@@ -11193,6 +11396,7 @@
 		"/handcrafted:spruce_table/",
 		"/handcrafted:spruce_counter/",
 		"/farmersdelight:spruce_cabinet/",
+		"/quark:spruce_chest/",
 		"/handcrafted:spruce_fancy_bed/",
 		"/minecraft:spruce_stairs/",
 		"/minecraft:spruce_slab/",
@@ -11229,6 +11433,7 @@
 		"/handcrafted:jungle_table/",
 		"/handcrafted:jungle_counter/",
 		"/farmersdelight:jungle_cabinet/",
+		"/quark:jungle_chest/",
 		"/handcrafted:jungle_fancy_bed/",
 		"/minecraft:jungle_stairs/",
 		"/minecraft:jungle_slab/",
@@ -11265,6 +11470,7 @@
 		"/handcrafted:acacia_table/",
 		"/handcrafted:acacia_counter/",
 		"/farmersdelight:acacia_cabinet/",
+		"/quark:acacia_chest/",
 		"/handcrafted:acacia_fancy_bed/",
 		"/minecraft:acacia_stairs/",
 		"/minecraft:acacia_slab/",
@@ -11301,6 +11507,7 @@
 		"/handcrafted:dark_oak_table/",
 		"/handcrafted:dark_oak_counter/",
 		"/farmersdelight:dark_oak_cabinet/",
+		"/quark:dark_oak_chest/",
 		"/handcrafted:dark_oak_fancy_bed/",
 		"/minecraft:dark_oak_stairs/",
 		"/minecraft:dark_oak_slab/",
@@ -11337,6 +11544,7 @@
 		"/handcrafted:mangrove_table/",
 		"/handcrafted:mangrove_counter/",
 		"/farmersdelight:mangrove_cabinet/",
+		"/quark:mangrove_chest/",
 		"/handcrafted:mangrove_fancy_bed/",
 		"/minecraft:mangrove_stairs/",
 		"/minecraft:mangrove_slab/",
@@ -11373,6 +11581,7 @@
 		"/handcrafted:cherry_table/",
 		"/handcrafted:cherry_counter/",
 		"/farmersdelight:cherry_cabinet/",
+		"/quark:cherry_chest/",
 		"/handcrafted:cherry_fancy_bed/",
 		"/minecraft:cherry_stairs/",
 		"/minecraft:cherry_slab/",
@@ -11408,6 +11617,7 @@
 		"/handcrafted:bamboo_table/",
 		"/handcrafted:bamboo_counter/",
 		"/farmersdelight:bamboo_cabinet/",
+		"/quark:bamboo_chest/",
 		"/handcrafted:bamboo_fancy_bed/",
 		"/minecraft:bamboo_stairs/",
 		"/minecraft:bamboo_mosaic_stairs/",
@@ -11447,6 +11657,7 @@
 		"/everycomp:hc\\/ecologics/coconut_table/",
 		"/everycomp:hc\\/ecologics/coconut_counter/",
 		"/everycomp:fd\\/ecologics/coconut_cabinet/",
+		"/everycomp:q\\/ecologics/coconut_chest/",
 		"/everycomp:hc\\/ecologics/coconut_fancy_bed/",
 		"/ecologics:coconut_stairs/",
 		"/ecologics:coconut_slab/",
@@ -11483,6 +11694,7 @@
 		"/everycomp:hc\\/ecologics/walnut_table/",
 		"/everycomp:hc\\/ecologics/walnut_counter/",
 		"/everycomp:fd\\/ecologics/walnut_cabinet/",
+		"/everycomp:q\\/ecologics/walnut_chest/",
 		"/everycomp:hc\\/ecologics/walnut_fancy_bed/",
 		"/ecologics:walnut_stairs/",
 		"/ecologics:walnut_slab/",
@@ -11516,6 +11728,7 @@
 		"/everycomp:hc\\/botania/livingwood_nightstand/",
 		"/everycomp:hc\\/botania/livingwood_table/",
 		"/everycomp:hc\\/botania/livingwood_counter/",
+		"/everycomp:q\\/botania/livingwood_chest/",
 		"/everycomp:hc\\/botania/livingwood_fancy_bed/",
 		"/botania:livingwood_stairs/",
 		"/botania:livingwood_slab/",
@@ -11543,6 +11756,7 @@
 		"/everycomp:hc\\/botania/dreamwood_nightstand/",
 		"/everycomp:hc\\/botania/dreamwood_table/",
 		"/everycomp:hc\\/botania/dreamwood_counter/",
+		"/everycomp:q\\/botania/dreamwood_chest/",
 		"/everycomp:hc\\/botania/dreamwood_fancy_bed/",
 		"/botania:dreamwood_stairs/",
 		"/botania:dreamwood_slab/",
@@ -11640,6 +11854,7 @@
 		"/everycomp:hc\\/quark/azalea_counter/",
 		"/everycomp:fd\\/quark/azalea_cabinet/",
 		"/quark:azalea_chest/",
+		"/quark:azalea_chest/",
 		"/everycomp:hc\\/quark/azalea_fancy_bed/",
 		"/quark:azalea_planks_stairs/",
 		"/quark:azalea_planks_slab/",
@@ -11677,6 +11892,7 @@
 		"/everycomp:hc\\/alexscaves/thornwood_table/",
 		"/everycomp:hc\\/alexscaves/thornwood_counter/",
 		"/everycomp:fd\\/alexscaves/thornwood_cabinet/",
+		"/everycomp:q\\/alexscaves/thornwood_chest/",
 		"/everycomp:hc\\/alexscaves/thornwood_fancy_bed/",
 		"/alexscaves:thornwood_stairs/",
 		"/alexscaves:thornwood_slab/",
@@ -11713,6 +11929,7 @@
 		"/everycomp:hc\\/alexscaves/pewen_table/",
 		"/everycomp:hc\\/alexscaves/pewen_counter/",
 		"/everycomp:fd\\/alexscaves/pewen_cabinet/",
+		"/everycomp:q\\/alexscaves/pewen_chest/",
 		"/everycomp:hc\\/alexscaves/pewen_fancy_bed/",
 		"/alexscaves:pewen_stairs/",
 		"/alexscaves:pewen_slab/",
@@ -11740,6 +11957,7 @@
 		"/quark:blossom_planks/",
 		"/quark:blossom_bookshelf/",
 		"/quark:blossom_chest/",
+		"/quark:blossom_chest/",
 		"/quark:blossom_planks_stairs/",
 		"/quark:blossom_planks_slab/",
 		"/quark:blossom_planks_slab/",
@@ -11765,6 +11983,7 @@
 		"/quark:stripped_ancient_post/",
 		"/quark:ancient_planks/",
 		"/quark:ancient_bookshelf/",
+		"/quark:ancient_chest/",
 		"/quark:ancient_chest/",
 		"/quark:ancient_planks_stairs/",
 		"/quark:ancient_planks_slab/",
@@ -11802,6 +12021,7 @@
 		"/everycomp:hc\\/upgrade_aquatic/driftwood_counter/",
 		"/everycomp:fd\\/upgrade_aquatic/driftwood_cabinet/",
 		"/upgrade_aquatic:driftwood_chest/",
+		"/everycomp:q\\/upgrade_aquatic/driftwood_chest/",
 		"/everycomp:hc\\/upgrade_aquatic/driftwood_fancy_bed/",
 		"/upgrade_aquatic:driftwood_stairs/",
 		"/upgrade_aquatic:driftwood_slab/",
@@ -11839,6 +12059,7 @@
 		"/everycomp:hc\\/upgrade_aquatic/river_counter/",
 		"/everycomp:fd\\/upgrade_aquatic/river_cabinet/",
 		"/upgrade_aquatic:river_chest/",
+		"/everycomp:q\\/upgrade_aquatic/river_chest/",
 		"/everycomp:hc\\/upgrade_aquatic/river_fancy_bed/",
 		"/upgrade_aquatic:river_stairs/",
 		"/upgrade_aquatic:river_slab/",
@@ -11875,6 +12096,7 @@
 		"/handcrafted:crimson_table/",
 		"/handcrafted:crimson_counter/",
 		"/farmersdelight:crimson_cabinet/",
+		"/quark:crimson_chest/",
 		"/handcrafted:crimson_fancy_bed/",
 		"/minecraft:crimson_stairs/",
 		"/minecraft:crimson_slab/",
@@ -11909,6 +12131,7 @@
 		"/handcrafted:warped_table/",
 		"/handcrafted:warped_counter/",
 		"/farmersdelight:warped_cabinet/",
+		"/quark:warped_chest/",
 		"/handcrafted:warped_fancy_bed/",
 		"/minecraft:warped_stairs/",
 		"/minecraft:warped_slab/",
@@ -11939,6 +12162,7 @@
 		"/everycomp:hc\\/mynethersdelight/powdery_nightstand/",
 		"/everycomp:hc\\/mynethersdelight/powdery_table/",
 		"/everycomp:hc\\/mynethersdelight/powdery_counter/",
+		"/everycomp:q\\/mynethersdelight/powdery_chest/",
 		"/everycomp:hc\\/mynethersdelight/powdery_fancy_bed/",
 		"/mynethersdelight:powdery_stairs/",
 		"/mynethersdelight:powdery_mosaic_stairs/",
@@ -11971,6 +12195,7 @@
 		"/everycomp:hc\\/netherexp/smokestalk_table/",
 		"/everycomp:hc\\/netherexp/smokestalk_counter/",
 		"/everycomp:fd\\/netherexp/smokestalk_cabinet/",
+		"/everycomp:q\\/netherexp/smokestalk_chest/",
 		"/everycomp:hc\\/netherexp/smokestalk_fancy_bed/",
 		"/netherexp:smokestalk_stairs/",
 		"/netherexp:smokestalk_slab/",
@@ -12003,6 +12228,7 @@
 		"/everycomp:hc\\/netherexp/claret_table/",
 		"/everycomp:hc\\/netherexp/claret_counter/",
 		"/everycomp:fd\\/netherexp/claret_cabinet/",
+		"/everycomp:q\\/netherexp/claret_chest/",
 		"/everycomp:hc\\/netherexp/claret_fancy_bed/",
 		"/netherexp:claret_stairs/",
 		"/netherexp:claret_slab/",
@@ -12032,6 +12258,7 @@
 		"/everycomp:hc\\/betterarcheology/rotten_table/",
 		"/everycomp:hc\\/betterarcheology/rotten_counter/",
 		"/everycomp:fd\\/betterarcheology/rotten_cabinet/",
+		"/everycomp:q\\/betterarcheology/rotten_chest/",
 		"/everycomp:hc\\/betterarcheology/rotten_fancy_bed/",
 		"/betterarcheology:rotten_stairs/",
 		"/betterarcheology:rotten_slab/",
@@ -12063,6 +12290,7 @@
 		"/everycomp:hc\\/moresnifferflowers/corrupted_table/",
 		"/everycomp:hc\\/moresnifferflowers/corrupted_counter/",
 		"/everycomp:fd\\/moresnifferflowers/corrupted_cabinet/",
+		"/everycomp:q\\/moresnifferflowers/corrupted_chest/",
 		"/everycomp:hc\\/moresnifferflowers/corrupted_fancy_bed/",
 		"/moresnifferflowers:corrupted_stairs/",
 		"/moresnifferflowers:corrupted_slab/",
@@ -12099,6 +12327,7 @@
 		"/everycomp:hc\\/moresnifferflowers/vivicus_table/",
 		"/everycomp:hc\\/moresnifferflowers/vivicus_counter/",
 		"/everycomp:fd\\/moresnifferflowers/vivicus_cabinet/",
+		"/everycomp:q\\/moresnifferflowers/vivicus_chest/",
 		"/everycomp:hc\\/moresnifferflowers/vivicus_fancy_bed/",
 		"/moresnifferflowers:vivicus_stairs/",
 		"/moresnifferflowers:vivicus_slab/",
@@ -12135,6 +12364,7 @@
 		"/everycomp:hc\\/born_in_chaos_v1/scorched_table/",
 		"/everycomp:hc\\/born_in_chaos_v1/scorched_counter/",
 		"/everycomp:fd\\/born_in_chaos_v1/scorched_cabinet/",
+		"/everycomp:q\\/born_in_chaos_v1/scorched_chest/",
 		"/everycomp:hc\\/born_in_chaos_v1/scorched_fancy_bed/",
 		"/born_in_chaos_v1:scorched_planks_stairs/",
 		"/born_in_chaos_v1:scorched_planks_slab/",
@@ -12165,6 +12395,7 @@
 		"/everycomp:hc\\/aether/skyroot_table/",
 		"/everycomp:hc\\/aether/skyroot_counter/",
 		"/everycomp:fd\\/aether/skyroot_cabinet/",
+		"/everycomp:q\\/aether/skyroot_chest/",
 		"/everycomp:hc\\/aether/skyroot_fancy_bed/",
 		"/aether:skyroot_stairs/",
 		"/aether:skyroot_slab/",
@@ -12200,6 +12431,7 @@
 		"/everycomp:hc\\/aether_redux/fieldsproot_table/",
 		"/everycomp:hc\\/aether_redux/fieldsproot_counter/",
 		"/everycomp:fd\\/aether_redux/fieldsproot_cabinet/",
+		"/everycomp:q\\/aether_redux/fieldsproot_chest/",
 		"/everycomp:hc\\/aether_redux/fieldsproot_fancy_bed/",
 		"/aether_redux:fieldsproot_stairs/",
 		"/aether_redux:fieldsproot_slab/",
@@ -12235,6 +12467,7 @@
 		"/everycomp:hc\\/aether_redux/crystal_table/",
 		"/everycomp:hc\\/aether_redux/crystal_counter/",
 		"/everycomp:fd\\/aether_redux/crystal_cabinet/",
+		"/everycomp:q\\/aether_redux/crystal_chest/",
 		"/everycomp:hc\\/aether_redux/crystal_fancy_bed/",
 		"/aether_redux:crystal_stairs/",
 		"/aether_redux:crystal_slab/",
@@ -12270,6 +12503,7 @@
 		"/everycomp:hc\\/aether_redux/glacia_table/",
 		"/everycomp:hc\\/aether_redux/glacia_counter/",
 		"/everycomp:fd\\/aether_redux/glacia_cabinet/",
+		"/everycomp:q\\/aether_redux/glacia_chest/",
 		"/everycomp:hc\\/aether_redux/glacia_fancy_bed/",
 		"/aether_redux:glacia_stairs/",
 		"/aether_redux:glacia_slab/",
@@ -12305,6 +12539,7 @@
 		"/everycomp:hc\\/aether_redux/cloudcap_table/",
 		"/everycomp:hc\\/aether_redux/cloudcap_counter/",
 		"/everycomp:fd\\/aether_redux/cloudcap_cabinet/",
+		"/everycomp:q\\/aether_redux/cloudcap_chest/",
 		"/everycomp:hc\\/aether_redux/cloudcap_fancy_bed/",
 		"/aether_redux:cloudcap_stairs/",
 		"/aether_redux:cloudcap_slab/",
@@ -12340,6 +12575,7 @@
 		"/everycomp:hc\\/aether_redux/blightwillow_table/",
 		"/everycomp:hc\\/aether_redux/blightwillow_counter/",
 		"/everycomp:fd\\/aether_redux/blightwillow_cabinet/",
+		"/everycomp:q\\/aether_redux/blightwillow_chest/",
 		"/everycomp:hc\\/aether_redux/blightwillow_fancy_bed/",
 		"/aether_redux:blightwillow_stairs/",
 		"/aether_redux:blightwillow_slab/",
@@ -12372,6 +12608,7 @@
 		"/everycomp:hc\\/aether_redux/jellyshroom_table/",
 		"/everycomp:hc\\/aether_redux/jellyshroom_counter/",
 		"/everycomp:fd\\/aether_redux/jellyshroom_cabinet/",
+		"/everycomp:q\\/aether_redux/jellyshroom_chest/",
 		"/everycomp:hc\\/aether_redux/jellyshroom_fancy_bed/",
 		"/aether_redux:jellyshroom_stairs/",
 		"/aether_redux:jellyshroom_slab/",
@@ -12403,6 +12640,7 @@
 		"/everycomp:hc\\/cataclysm/chorus_table/",
 		"/everycomp:hc\\/cataclysm/chorus_counter/",
 		"/everycomp:fd\\/cataclysm/chorus_cabinet/",
+		"/everycomp:q\\/cataclysm/chorus_chest/",
 		"/everycomp:hc\\/cataclysm/chorus_fancy_bed/",
 		"/cataclysm:chorus_stairs/",
 		"/cataclysm:chorus_slab/",
@@ -12426,6 +12664,7 @@
 		"/everycomp:hc\\/unusualend/chorus_nest_table/",
 		"/everycomp:hc\\/unusualend/chorus_nest_counter/",
 		"/everycomp:fd\\/unusualend/chorus_nest_cabinet/",
+		"/everycomp:q\\/unusualend/chorus_nest_chest/",
 		"/everycomp:hc\\/unusualend/chorus_nest_fancy_bed/",
 		"/unusualend:chorus_nest_stairs/",
 		"/unusualend:chorus_nest_mosaic_stairs/",
@@ -12461,6 +12700,7 @@
 		"/everycomp:hc\\/phantasm/pream_table/",
 		"/everycomp:hc\\/phantasm/pream_counter/",
 		"/everycomp:fd\\/phantasm/pream_cabinet/",
+		"/everycomp:q\\/phantasm/pream_chest/",
 		"/everycomp:hc\\/phantasm/pream_fancy_bed/",
 		"/phantasm:pream_stairs/",
 		"/phantasm:pream_slab/",
@@ -12495,6 +12735,7 @@
 		"/everycomp:hc\\/witherstormmod/tainted_table/",
 		"/everycomp:hc\\/witherstormmod/tainted_counter/",
 		"/everycomp:fd\\/witherstormmod/tainted_cabinet/",
+		"/everycomp:q\\/witherstormmod/tainted_chest/",
 		"/everycomp:hc\\/witherstormmod/tainted_fancy_bed/",
 		"/witherstormmod:tainted_stairs/",
 		"/witherstormmod:tainted_slab/",

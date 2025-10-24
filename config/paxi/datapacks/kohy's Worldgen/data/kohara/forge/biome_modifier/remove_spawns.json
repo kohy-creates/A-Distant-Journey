@@ -1,0 +1,12 @@
+{
+	"type": "forge:remove_spawns",
+	"biomes": "#is_overworld",
+	"entity_types": [
+		"born_in_chaos_v1:bonescaller",
+		"born_in_chaos_v1:lifestealer",
+		"born_in_chaos_v1:missioner",
+		"born_in_chaos_v1:missionary_raider",
+		"born_in_chaos_v1:zombie_clown",
+		"born_in_chaos_v1:seared_spirit"
+	]
+}

@@ -10,7 +10,7 @@
   "render_background": true,
   "hide_from_debug": true,
   "compass_enable": true,
-  "compass_vertical_position": 140,
+  "compass_vertical_position": 220,
   "compass_horizontal_position_left": false,
   "compass_text_colour": 14737632,
   "compass_x_colour": "Red",
@@ -39,10 +39,11 @@
   "clock_24_hour": true,
   "clock_seasons": true,
   "clock_text_colour": 14737632,
-  "clock_vertical_position": 85,
+  "clock_vertical_position": 165,
   "clock_horizontal_position_left": false,
   "clock_items": [
-    "minecraft:clock"
+    "minecraft:clock",
+    "mythicmetals:platinum_watch"
   ],
   "clock_weather_items": [
     "caverns_and_chasms:barometer",
@@ -53,7 +54,7 @@
   "temperature_hot_colour": 16759694,
   "temperature_cold_colour": 9371647,
   "temperature_temperate_colour": 16777215,
-  "temperature_vertical_position": 112,
+  "temperature_vertical_position": 192,
   "temperature_horizontal_position_left": true,
   "temperature_items": [
     "oreganized:thermometer",
@@ -73,7 +74,7 @@
   "biome_reduced_info": false,
   "biome_text_tinted": true,
   "biome_text_colour": 14737632,
-  "biome_vertical_position": 112,
+  "biome_vertical_position": 192,
   "biome_horizontal_position_left": false,
   "biome_items": [
     "minecraft:map",
@@ -90,7 +91,7 @@
     "eclipticseasons:calendar"
   ],
   "speed_enable": true,
-  "speed_vertical_position": 140,
+  "speed_vertical_position": 220,
   "speed_horizontal_position_left": true,
   "speed_colour": 13090689,
   "speed_items": [

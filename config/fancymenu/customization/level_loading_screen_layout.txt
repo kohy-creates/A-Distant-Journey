@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = level_loading_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1759860669229
+  last_edited_time = 1761230004258
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:6bb3d7a3-9eec-4eee-bc07-4eacba6ce8f0-1759860649323] = [groups:][instances:]
+  [loading_requirement_container_meta:5e428207-c626-4ab1-800c-7395547ed9d7-1761229985248] = [groups:][instances:]
 }
 
 customization {
@@ -139,7 +139,7 @@ element {
   direction = right
   progress_for_element_anchor = false
   progress_source = {"placeholder":"world_load_progress"}
-  value_mode = percentage
+  value_mode = float
   smooth_filling_animation = true
   element_type = progress_bar
   instance_identifier = 26b63d87-b950-4b8a-bc52-c4a8ec8ec368-1741010785233
@@ -397,11 +397,11 @@ vanilla_button {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1200
   sticky_anchor = false
-  anchor_point = vanilla
-  x = 270
-  y = 180
+  anchor_point = mid-centered
+  x = -50
+  y = -70
   width = 100
   height = 100
   stretch_x = false
@@ -417,7 +417,7 @@ vanilla_button {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
-  is_hidden = true
+  is_hidden = false
   automated_button_clicks = 0
 }
 

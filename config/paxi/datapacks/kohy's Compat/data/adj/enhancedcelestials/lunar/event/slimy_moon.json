@@ -10,7 +10,7 @@
   "dimension_chances": {
     "minecraft:overworld": {
       "chance": 0.1,
-      "min_number_of_nights_between": 6,
+      "min_number_of_nights_between": 5,
       "valid_moon_phases": [
         0,
         1,
@@ -42,7 +42,14 @@
           "axolotls": [],
           "creature": [],
           "misc": [],
-          "monster": [],
+          "monster": [
+            {
+              "type": "minecraft:slime",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 250
+            }
+          ],
           "underground_water_creature": [],
           "water_ambient": [],
           "water_creature": []

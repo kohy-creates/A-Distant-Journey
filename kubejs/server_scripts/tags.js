@@ -184,6 +184,10 @@ ServerEvents.tags('item', event => {
 	event.add('adj:treasure_bag', [
 		/treasure_bag/
 	])
+
+	event.add('adj:archwood_leaves', [
+		/_archwood_leaves/
+	])
 })
 
 ServerEvents.tags('block', event => {

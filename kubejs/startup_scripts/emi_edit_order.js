@@ -123,6 +123,9 @@ StartupEvents.postInit(event => {
 		'handcrafted:counter',
 		'farmersdelight:cabinet',
 		'chest',
+		// 'trapped_chest',
+		'quark:chest',
+		// 'quark:trapped_chest',
 		'handcrafted:fancy_bed',
 		'stairs',
 		'mosaic_stairs',
@@ -460,7 +463,8 @@ StartupEvents.postInit(event => {
 			'/minecraft:splash_potion/',
 			'/minecraft:tipped_arrow/',
 			'/mythicmetals:tipped_runite_arrow/',
-			'/alexscaves:jelly_bean/'
+			'/alexscaves:jelly_bean/',
+			'/spawn_egg/'
 		]
 	};
 

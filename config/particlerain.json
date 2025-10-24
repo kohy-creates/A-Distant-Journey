@@ -1,5 +1,5 @@
 {
-  "configVersion": 4,
+  "configVersion": 5,
   "perf": {
     "maxParticleAmount": 1500,
     "particleDensity": 100,
@@ -15,9 +15,9 @@
   },
   "wind": {
     "strength": 0.4,
-    "strengthVariance": 0.4,
-    "gustFrequency": 0.25,
-    "modulationSpeed": 0.05,
+    "strengthVariance": 0.3,
+    "gustFrequency": 0.2,
+    "modulationSpeed": 0.04,
     "yLevelAdjustment": true
   },
   "compat": {
@@ -137,8 +137,8 @@
       "needsSkyAccess": true,
       "spawnPos": "SKY",
       "gravity": 0.2,
-      "windStrength": 2.0,
-      "stormWindStrength": 3.0,
+      "windStrength": 0.7,
+      "stormWindStrength": 1.0,
       "rotationAmount": 0.0,
       "lifetime": 3000,
       "opacity": 1.0,
@@ -156,7 +156,7 @@
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "rain_haze",
-      "enabled": false,
+      "enabled": true,
       "density": 0.1,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -177,7 +177,7 @@
       "stormWindStrength": 0.1,
       "rotationAmount": 0.0,
       "lifetime": 3000,
-      "opacity": 0.45,
+      "opacity": 0.35,
       "size": 0.3,
       "constantScreenSize": true,
       "renderType": "TRANSLUCENT",
@@ -192,7 +192,7 @@
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "snow_haze",
-      "enabled": false,
+      "enabled": true,
       "density": 0.2,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -213,7 +213,7 @@
       "stormWindStrength": 0.1,
       "rotationAmount": 0.0,
       "lifetime": 3000,
-      "opacity": 0.45,
+      "opacity": 0.35,
       "size": 0.3,
       "constantScreenSize": true,
       "renderType": "TRANSLUCENT",
@@ -250,11 +250,11 @@
       "needsSkyAccess": true,
       "spawnPos": "SKY",
       "gravity": 0.1,
-      "windStrength": 1.0,
-      "stormWindStrength": 2.0,
+      "windStrength": 0.25,
+      "stormWindStrength": 0.5,
       "rotationAmount": 0.0,
       "lifetime": 3000,
-      "opacity": 0.45,
+      "opacity": 0.35,
       "size": 0.3,
       "constantScreenSize": true,
       "renderType": "TRANSLUCENT",
@@ -529,7 +529,8 @@
       ],
       "biomeList": {
         "entries": [
-          "#c:is_dense_vegetation"
+          "#c:is_wet/overworld",
+          "#c:is_spooky"
         ],
         "isWhitelist": true
       },
@@ -562,17 +563,15 @@
     }
   ],
   "shrub": {
-    "density": 0.02,
     "gravity": 0.2,
     "windStrength": 0.2,
     "stormWindStrength": 0.3,
-    "opacity": 1.0,
     "size": 0.5,
-    "rotationAmount": 0.2,
+    "rotationAmount": 0.6,
     "bounciness": 0.2
   },
   "ripple": {
-    "opacity": 0.9,
+    "opacity": 0.8,
     "size": 0.25,
     "resolution": 16,
     "useResourcepackResolution": true

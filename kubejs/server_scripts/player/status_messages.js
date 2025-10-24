@@ -80,7 +80,8 @@ const moonEventMessages = {
 		texts: {
 			start: [
 				'The Blood Moon is rising...',
-				'The undead scream in the distance, hungry for blood'
+				'The undead scream in the distance, hungry for blood',
+				'If I were you, I\'d seek shelter'
 			],
 			end: [
 				'The Blood Moon sets...',
@@ -125,6 +126,10 @@ const moonEventMessages = {
 			start: [
 				'The Ender Moon is rising...',
 				'Otherwordly noises can be heard around you... '
+			],
+			end: [
+				'The Ender Moon sets...',
+				'The unstable beings start to fall apart in the sunlight'
 			]
 		}
 	}
@@ -222,10 +227,9 @@ ServerEvents.tick(event => {
 		}
 		else {
 			color = moonEventMessages[moonEventOrPhase].color;
-			if (!isStart) color = brighten(color, 0.25)
-			texts = moonEventMessages[moonEventOrPhase][(isStart) ? 'start' : 'end'];
+			if (!isStart) color = brighten(color, 0.3333333334);
+			texts = moonEventMessages[moonEventOrPhase].texts[(isStart) ? 'start' : 'end'];
 		}
-
 		for (let i = 0; i < texts.length; i++) {
 			let anim = 'single';
 			if (texts.length > 1) {
@@ -248,7 +252,7 @@ ServerEvents.tick(event => {
 		messageCount = 1;
 
 	}
-	else if (isInBetween(dayTime, 12545, 12599) && messageCount === 1) {
+	else if (isInBetween(dayTime, 12545, 13450) && messageCount === 1) {
 
 		// Get current lunar forecast
 		let optional = $EnhancedCelestials.lunarForecastWorldData(server.overworld());
@@ -269,7 +273,7 @@ ServerEvents.tick(event => {
 					sendEventMessages(true, phase);
 				}
 				else {
-					sendMessage({ text: 'This really doesn\'t feel like a calm night', color: '#d39dff', slide: 'single'})
+					sendMessage({ text: 'This really doesn\'t feel like a calm night', color: '#d39dff', slide: 'single' })
 				}
 			}
 			else {
@@ -281,7 +285,7 @@ ServerEvents.tick(event => {
 		}
 		messageCount = 2;
 	}
-	else if (isInBetween(dayTime, 12600, 22999) && messageCount === 2) {
+	else if (isInBetween(dayTime, 13500, 22999) && messageCount === 2) {
 		messageCount = 0;
 	}
 	else if (isInBetween(dayTime, 23000, 24000) && messageCount === 0) {

@@ -13,7 +13,7 @@
   "dimension_chances": {
     "minecraft:overworld": {
       "chance": 0.15,
-      "min_number_of_nights_between": 8,
+      "min_number_of_nights_between": 6,
       "valid_moon_phases": [
         0,
         1,
