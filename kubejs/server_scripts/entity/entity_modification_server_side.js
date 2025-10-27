@@ -161,7 +161,7 @@ function setGear(entity, isHardcore) {
 				'mythicmetals:copper_sword': 1
 			}));
 
-			if ((isHardcore) ? randomChance(15) : randomChance(12)) {
+			if ((isHardcore) ? randomChance(15) : randomChance(10)) {
 				entity.setItemSlot("head", 'slime_block');
 				entity.setDropChance("head", 1.0);
 			}
@@ -223,6 +223,14 @@ function hardcoreModifications(entity) {
 // ---------------- EVENTS ---------------- //
 EntityEvents.spawned((event) => {
 	let entity = event.entity
+
+	if (entity.getType() === 'minecraft:player') return;
+	const tags = entity.getTags().toArray();
+	if (!tags.includes('adj.scaled')) {
+		entity.addTag('adj.scaled');
+	}
+	else return;
+
 	entity.server.scheduleInTicks(1, () => {
 		specialCase(entity)
 	})

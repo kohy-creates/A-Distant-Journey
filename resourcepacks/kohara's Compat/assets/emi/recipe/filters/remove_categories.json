@@ -1,0 +1,10 @@
+{
+	"filters": [
+		{
+			"category": "ali:trade_loot"
+		},
+		{
+			"category": "functional_storage:dissolution"
+		}
+	]
+}

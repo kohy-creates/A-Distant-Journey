@@ -8,8 +8,8 @@ const gamerules = {
 		'artifacts.cloudInABottle.enabled': false,
 		'naughtinessMechanics': false,
 		'generationofInfectedDiamonds': false,
-		'animalMobCap': '20',
-		'reducedDebugInfo': true, // those few never change
+		'reducedDebugInfo': true,
+		'halloweenEvent': false, // those few never change
 
 		'theappearanceoftheNightmareStalker': false,
 		'corpseFishSpawn': false,

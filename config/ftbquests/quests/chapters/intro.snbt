@@ -352,6 +352,34 @@
 			x: -2.0d
 			y: -3.5d
 		}
+		{
+			dependencies: ["3A065070417D1524"]
+			description: [
+				"If you're a fan of playing with &ekeepInventory&r, you're going to like this one - &eyou don't lose some items on death&r!"
+				""
+				"What you will &b&6always&r &akeep:"
+				"- &rYour &ahotbar"
+				"- &rYour &aarmor"
+				"- &rYour &aaccessories &f(and by extension &awhatever is in your Backpack&r)"
+				"- &aSome of your experience"
+				""
+				"What you will &b&6always&r &cdrop:"
+				"- Your &cremaining inventory space &r(3 rows; unless enchanted with &dSoulbound&r)"
+				"- &cSome of your experience"
+			]
+			disable_toast: true
+			icon: "minecraft:skeleton_skull"
+			id: "3C005F026A2BEF42"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "157DC079E3EAB986"
+				title: "Click to finish"
+				type: "checkmark"
+			}]
+			title: "&l&fBasics:&r &cDying"
+			x: -2.5d
+			y: -0.5d
+		}
 	]
 	title: "Intro"
 }

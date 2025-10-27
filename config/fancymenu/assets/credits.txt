@@ -1,0 +1,12 @@
+^^^
+# %!!title%%#FBAA57%CREDITS%#%%!!%
+^^^
+
+- [face!kohara_] kohara - Main Creator
+
+- [face!brokenemp] brokenemp - Contributor (Artist)
+- [face!MidasDaEpik] MidasDaEpik - Contributor (Artist)
+
+- [face!Steve] Whoever I took code from and changed variable names because licensing allowed me to.
+
+And that's all tbh. When I say I'm a one man army, I mean it.

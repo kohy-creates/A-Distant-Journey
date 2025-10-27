@@ -24,10 +24,10 @@
 	frequentSoundThreshold = 1000
 	#Range of extra random speed to give a zombie for extra spawns and zombie duplications, eg: 0 = no boost, 1 = up to double speed (works for my extra spawned mobs only)
 	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	zombieRandSpeedBoost = 0.3
+	zombieRandSpeedBoost = 0.14
 	#The amount of delay in game ticks between processing mobs with enhanced AI, less is more frequent [performance sensitive]
 	#Range: > -2147483648
-	tickRateAILoop = 5
+	tickRateAILoop = 6
 	#how frequently the mod iterates all players, effects rates, less is more frequent
 	#Range: > -2147483648
 	tickRatePlayerLoop = 20
@@ -36,7 +36,7 @@
 	tickCooldownBetweenPathfinds = 300
 	#How likely zombies making noise near you will attract other zombies, higher = less likely, 0 = every time they make a noise
 	#Range: > -2147483648
-	noisyZombiesReinforceOddsTo1 = 5
+	noisyZombiesReinforceOddsTo1 = 6
 	#-
 	debugConsole = false
 	#-
@@ -45,13 +45,13 @@
 	debugConsoleSuperDetailed = false
 	#Minimum distance required between active sense sources, prevents spamming sources [performance sensitive]
 	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	extraScentCutoffRange = 3.0
+	extraScentCutoffRange = 4.0
 	#Max strength allowed for a sense, in case senses get a super high base strength or large buff
 	#Range: > -2147483648
 	senseMaxStrength = 300
 	#Days before all of the mods features will be activated
 	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	daysBeforeFeaturesActivate = 0.0
+	daysBeforeFeaturesActivate = 1.0
 	#Block breaks cause sound senses to spawn
 	blockBreakEvent_Active = true
 	#Block mining before it breaks cause sound senses to spawn

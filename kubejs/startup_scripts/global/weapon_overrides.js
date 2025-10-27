@@ -87,8 +87,6 @@ global.weapon_overrides = {
 	'mcdw:sword_sinister': [42, 1.8],
 
 	'minecraft:trident': [21, 1.1, 0.1]
-
-
 }
 
 addToolsetOverride('minecraft:wooden', 7)
@@ -113,6 +111,7 @@ addToolsetOverride('mythicmetals:carmot', 22)
 addToolsetOverride('mythicmetals:mythril', 23)
 addToolsetOverride('mythicmetals:orichalcum', 23)
 addToolsetOverride('experienceobelisk:cognitive', 22)
+addToolsetOverride('mythicmetals:midas_gold', 17)
 addToolsetOverride('mythicmetals:stormyx', 22)
 addToolsetOverride('botania:elementium', 25)
 addToolsetOverride('mythicmetals:palladium', 28)

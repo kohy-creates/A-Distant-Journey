@@ -48,10 +48,6 @@
 		[types.wood_type.cataclysm]
 			chorus = true
 
-		[types.wood_type.moresnifferflowers]
-			corrupted = true
-			vivicus = true
-
 		[types.wood_type.aether_redux]
 			fieldsproot = true
 			blightwillow = true
@@ -72,6 +68,9 @@
 
 		[types.wood_type.enhanced_mushrooms]
 			mushroom = true
+
+		[types.wood_type.snifferplus]
+			stone_pine = true
 
 	[types.leaves_type]
 
@@ -102,10 +101,6 @@
 		[types.leaves_type.alexscaves]
 			ancient = true
 
-		[types.leaves_type.moresnifferflowers]
-			corrupted = true
-			vivicus = true
-
 		[types.leaves_type.quark]
 			ancient = true
 			blue_blossom = true
@@ -130,6 +125,9 @@
 
 		[types.leaves_type.rediscovered]
 			ancient_cherry = true
+
+		[types.leaves_type.snifferplus]
+			stone_pine = true
 
 	[types.cake]
 
@@ -336,14 +334,6 @@
 			warped_stone_tiles = true
 			shiny_crystal_tiles = true
 			enderblob_moult_brick = true
-
-		[types.cut_block_type.moresnifferflowers]
-			chiseled_amber = true
-			amber_mosaic = true
-			chiseled_garnet = true
-			garnet_mosaic = true
-			corrupted = true
-			vivicus = true
 
 		[types.cut_block_type.ecologics]
 			coconut = true
@@ -642,13 +632,13 @@
 		[types.cut_block_type.enhanced_mushrooms]
 			mushroom = true
 
+		[types.cut_block_type.snifferplus]
+			stone_pine = true
+
 #Disables specific entries
 [entries]
 
 	[entries.wood_type]
-
-		[entries.wood_type.farmersdelight]
-			cabinet = true
 
 		[entries.wood_type.create]
 			window_pane = true
@@ -697,6 +687,9 @@
 			1 = true
 			4 = true
 			2 = true
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
 
 	[entries.leaves_type]
 

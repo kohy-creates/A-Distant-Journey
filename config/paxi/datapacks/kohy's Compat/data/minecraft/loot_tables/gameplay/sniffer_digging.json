@@ -7,12 +7,10 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"weight": 5,
 					"name": "minecraft:torchflower_seeds"
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 5,
 					"name": "minecraft:pitcher_pod"
 				},
 				{
@@ -37,7 +35,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"weight": 5,
 					"name": "quark:ancient_sapling"
 				}
 			]

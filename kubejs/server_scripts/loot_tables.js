@@ -4,7 +4,8 @@ LootJS.modifiers((event) => {
 		'create:honey_bucket': 'the_bumblezone:honey_bucket',
 		'farmersdelight:wheat_dough': 'create:dough',
 		'rediscovered:quiver': 'supplementaries:quiver',
-		'create:copper_nugget': 'mythicmetals:copper_nugget'
+		'create:copper_nugget': 'mythicmetals:copper_nugget',
+		'minecraft:chest': 'quark:oak_chest'
 	}
 
 	for (const [before, after] of Object.entries(replaceItemsMap)) {
@@ -37,7 +38,7 @@ LootJS.modifiers((event) => {
 	event.addEntityLootModifier('minecraft:zombie')
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.75, 0.25)
+			pool.randomChanceWithLooting(0.25, 0.15)
 				.addLoot(LootEntry.of('minecraft:feather'))
 				.limitCount([0, 2])
 				.applyLootingBonus([0, 1]);
