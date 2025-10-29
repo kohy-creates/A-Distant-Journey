@@ -1,0 +1,22 @@
+{
+	"feature": "minecraft:lake_lava",
+	"placement": [
+		{
+			"type": "adjcore:is_hardcore"
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 140
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE_WG"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

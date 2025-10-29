@@ -1,0 +1,45 @@
+{
+	/* If Alex's Caves weapons are enabled
+	   "DEFAULT" = Defaults to if Alex's Caves is installed
+	   "TRUE" = force enable
+	   "FALSE" = force disable
+	*/
+	"ENABLED": "DEFAULT",
+	/* Material modifiers are set to the base damage of each material's tier.
+	   Values are ints, meaning you cannot have values with a decimal point.
+	   Valid:
+	   - '5'
+	   
+	   Invalid:
+	   - '3.4'
+	*/
+	"POLARIZER": 0,
+	/* Determines the base radius for Polarized effect. This is increased for each level of the effect.
+	   Default:
+	   - '4.0'
+	*/
+	"POLARIZED_RADIUS": 4.0,
+	/* Determines the base speed for Polarized effect. This is increased for each level of the effect.
+	   Default:
+	   - '0.2'
+	*/
+	"POLARIZED_SPEED": 0.2,
+	/* Integer that determines length in ticks for cool down of Pull mode on Polarizer. Divide by 20 to get seconds.
+	   Default:
+	   - '200'
+	*/
+	"POLARIZER_COOLDOWN": 200,
+	/* Determines the base speed for Polarized effect. This is increased for each level of the effect.
+	   Default:
+	   - '0.2'
+	*/
+	"POLARIZER_KNOCKBACK_STRENGTH": 2.0,
+	/* A list of entities that will be excluded from the Polarized effect.
+	*/
+	"POLARIZER_BLACKLIST": [
+		"create:contraption",
+		"minecraft:player",
+		"minecraft:wither",
+		"minecraft:ender_dragon"
+	]
+}

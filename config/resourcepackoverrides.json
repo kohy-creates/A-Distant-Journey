@@ -155,11 +155,11 @@
 			"description": "\"Default resources\""
 		},
 		"$$default": {
-			"hidden": true,
+			"hidden": false,
 			"required": true
 		},
 		"$$hidden": {
-			"hidden": true
+			"hidden": false
 		}
 	}
 }

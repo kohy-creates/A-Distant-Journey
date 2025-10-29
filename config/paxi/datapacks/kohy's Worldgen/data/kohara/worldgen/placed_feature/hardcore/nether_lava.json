@@ -1,0 +1,50 @@
+{
+	"feature": {
+		"type": "minecraft:ore",
+		"config": {
+			"targets": [
+				{
+					"target": {
+						"predicate_type": "minecraft:tag_match",
+						"tag": "minecraft:base_stone_nether"
+					},
+					"state": {
+						"Name": "minecraft:lava",
+						"Properties": {
+							"level": "0"
+						}
+					}
+				}
+			],
+			"size": 1,
+			"discard_chance_on_air_exposure": 1
+		}
+	},
+	"placement": [
+		{
+			"type": "adjcore:is_hardcore"
+		},
+		{
+			"type": "minecraft:count",
+			"count": 16
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"below_top": 4
+				},
+				"min_inclusive": {
+					"above_bottom": 4
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

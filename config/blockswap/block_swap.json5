@@ -3,7 +3,44 @@
 	"generate_all_known_states": false,
 	// Whether blocks are replaced in existing chunks.
 	"retro_gen": false,
-	"state_swapper": [],
+	"state_swapper": [
+		{
+			"new": {
+				"Name": "waystones:waystone",
+				"Properties": {
+					"half": "upper", 
+					"facing": "north", 
+					"origin": "wilderness",
+					"waterlogged": "false"
+				}
+			},
+			"old": {
+				"Name": "ars_additions:warp_nexus",
+				"Properties": {
+					"half": "upper",
+					"requires_source": "false"
+				}
+			}
+		},
+		{
+			"new": {
+				"Name": "waystones:waystone",
+				"Properties": {
+					"half": "lower", 
+					"facing": "north", 
+					"origin": "wilderness",
+					"waterlogged": "false"
+				}
+			},
+			"old": {
+				"Name": "ars_additions:warp_nexus",
+				"Properties": {
+					"half": "lower",
+					"requires_source": "false"
+				}
+			}
+		}
+	],
 	"swapper": {
 		"minecraft:enchanting_table": "enchantinginfuser:enchanting_infuser",
 		"unusualend:infested_end_stone": "majruszsdifficulty:infested_end_stone",

@@ -1,0 +1,9 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#minecraft:is_overworld",
+	"features": [
+		"kohara:hardcore/lake_lava_extra",
+		"kohara:hardcore/lava_spring_extra"
+	],
+	"step": "lakes"
+}

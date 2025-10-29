@@ -1,0 +1,18 @@
+{
+	/* This file controls values of silver material weapons.
+	   Material modifiers are set to the base damage of each material's tier.
+	   Values are ints, meaning you cannot have values with a decimal point.
+	   Valid:
+	   - '5'
+	   
+	   Invalid:
+	   - '3.4'
+	*/
+	"SILVER": 0,
+	/* If silver weapons are enabled
+	   "DEFAULT" = Defaults to if a mod that adds silver ingots is installed
+	   "TRUE" = force enable silver weapons
+	   "FALSE" = force disable silver weapons
+	*/
+	"ENABLED": "DEFAULT"
+}

@@ -9,7 +9,7 @@
 	/**
 	 * Whether cheating in items is enabled.
 	 */
-	cheat-mode: false;
+	cheat-mode: true;
 
 	/**
 	 * How much EMI should use tooltips and popups to show controls and information.
@@ -103,18 +103,18 @@
 	/**
 	 * Whether the EMI config button should be visible.
 	 */
-	emi-config-button-visibility: shown;
+	emi-config-button-visibility: hidden;
 
 	/**
 	 * Whether the recipe tree button should be visible.
 	 */
-	recipe-tree-button-visibility: auto;
+	recipe-tree-button-visibility: hidden;
 
 	/**
 	 * The maximum height the recipe screen will grow to be if space is available in
 	 * pixels.
 	 */
-	maximum-recipe-screen-height: 256;
+	maximum-recipe-screen-height: 220;
 
 	/**
 	 * The minimum width of the recipe screen in pixels. Controls how many tabs there
@@ -156,7 +156,7 @@
 	/**
 	 * Whether recipes should have a button to take a screenshot of the recipe.
 	 */
-	recipe-screenshot-button: true;
+	recipe-screenshot-button: false;
 
 	/**
 	 * The GUI scale at which recipe screenshots are saved. Use 0 to use the current
@@ -167,7 +167,7 @@
 	/**
 	 * The pages in the left sidebar
 	 */
-	left-sidebar-pages: favorites, lookup-history;
+	left-sidebar-pages: none;
 
 	/**
 	 * The subpanels in the left sidebar
@@ -182,12 +182,12 @@
 	/**
 	 * How much space to maintain between the left sidebar and obstructions, in pixels
 	 */
-	left-sidebar-margins: 20, 20, 20, 2;
+	left-sidebar-margins: 80, 25, 60, 4;
 
 	/**
 	 * Where to position the left sidebar
 	 */
-	left-sidebar-align: left, top;
+	left-sidebar-align: left, center;
 
 	/**
 	 * Whether to render the header buttons and page count for the left sidebar
@@ -202,7 +202,7 @@
 	/**
 	 * The pages in the right sidebar
 	 */
-	right-sidebar-pages: index, craftables;
+	right-sidebar-pages: index, favorites;
 
 	/**
 	 * The subpanels in the right sidebar
@@ -217,12 +217,12 @@
 	/**
 	 * How much space to maintain between the right sidebar and obstructions, in pixels
 	 */
-	right-sidebar-margins: 20, 2, 20, 20;
+	right-sidebar-margins: 80, 4, 80, 25;
 
 	/**
 	 * Where to position the right sidebar
 	 */
-	right-sidebar-align: right, top;
+	right-sidebar-align: right, center;
 
 	/**
 	 * Whether to render the header buttons and page count for the right sidebar
@@ -453,7 +453,7 @@
 	/**
 	 * Whether editing the index is enabled
 	 */
-	edit-mode: false;
+	edit-mode: true;
 
 	/**
 	 * Whether to log untranslated tags as warnings.

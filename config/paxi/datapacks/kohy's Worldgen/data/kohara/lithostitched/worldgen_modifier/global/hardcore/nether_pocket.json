@@ -1,0 +1,8 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#minecraft:is_nether",
+	"features": [
+		"kohara:hardcore/nether_lava"
+	],
+	"step": "top_layer_modification"
+}

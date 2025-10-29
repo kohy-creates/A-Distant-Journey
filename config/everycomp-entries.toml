@@ -688,9 +688,6 @@
 			4 = true
 			2 = true
 
-		[entries.wood_type.farmersdelight]
-			cabinet = true
-
 	[entries.leaves_type]
 
 		[entries.leaves_type.quark]

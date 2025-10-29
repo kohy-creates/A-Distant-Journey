@@ -9,6 +9,7 @@ const gamerules = {
 		'naughtinessMechanics': false,
 		'generationofInfectedDiamonds': false,
 		'reducedDebugInfo': true,
+		'seasonalEvents': false,
 		'halloweenEvent': false, // those few never change
 
 		'theappearanceoftheNightmareStalker': false,
@@ -141,9 +142,9 @@ PlayerEvents.tick(event => {
 			event.getServer().runCommandSilent(
 				'/decstages add ' + player.getUsername() + ' ' + stageName + ' true'
 			)
-			event.getServer().runCommandSilent(
-				'/adjreloademi ' + player.getUsername()
-			)
+			// event.getServer().runCommandSilent(
+			// 	'/adjreloademi ' + player.getUsername()
+			// )
 		}
 		if (stage == 'chapter_0' && player.level.dimension == 'minecraft:the_nether') {
 			event.getServer().persistentData.chapters.next_stage = 'chapter_1';

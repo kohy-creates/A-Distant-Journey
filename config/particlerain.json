@@ -10,8 +10,8 @@
   "sound": {
     "rainVolume": 0.2,
     "snowVolume": 0.1,
-    "windVolume": 0.1,
-    "blockVolume": 0.07
+    "windVolume": 0.32999998,
+    "blockVolume": 0.16
   },
   "wind": {
     "strength": 0.4,
@@ -521,7 +521,7 @@
       "presetParticleId": "particlerain:mist",
       "usePresetParticle": true,
       "id": "mist",
-      "enabled": true,
+      "enabled": false,
       "density": 0.1,
       "weather": "ALWAYS",
       "precipitation": [
@@ -563,9 +563,11 @@
     }
   ],
   "shrub": {
+    "density": 0.02,
     "gravity": 0.2,
     "windStrength": 0.2,
     "stormWindStrength": 0.3,
+    "opacity": 1.0,
     "size": 0.5,
     "rotationAmount": 0.6,
     "bounciness": 0.2
