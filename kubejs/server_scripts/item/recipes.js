@@ -3404,7 +3404,7 @@ ServerEvents.recipes((event) => {
 				output,
 				ingredients,
 				5000
-			).id(`kubejs:ars_rituals/${output.getId().split(':')[1]}`)
+			).id(recipe.getId())
 		}
 	})
 });
