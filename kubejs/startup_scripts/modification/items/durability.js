@@ -14,98 +14,9 @@ ItemEvents.modification(event => {
 
 	//////////////////////////////////////////////////////
 
-	function toolset(type) {
-		let tools = [
-			type + '_hoe',
-			type + '_axe',
-			type + '_shovel',
-			type + '_sword',
-			type + '_pickaxe',
-		]
-
-		let armors = armorset(type);
-		armors.forEach(item => {
-			if (Item.exists(item)) tools.push(item);
-		})
-
-		// This is for mods that add those by themselves
-		// For Aether adding gloves for vanilla materials and such there are
-		// extra lines below
-		let extra = [
-			'_shield',
-			'_gloves',
-			'_shears',
-			'_fishing_rod',
-			'_pick',
-			'_lance'
-		]
-		extra.forEach(extraType => {
-			let testItem = type + extraType;
-			if (Item.exists(testItem)) tools.push(testItem);
-		})
-
-		// Searching for the Knives cause they come from different mods
-		let knifeNamespaces = [ // Yes I am just bruteforcing my way through every mod that adds any
-			'farmersdelight',
-			'delightful',
-			'aetherdelight'
-		]
-		for (let i = 0; i < knifeNamespaces.length; i++) {
-			let knifeNamespace = knifeNamespaces[i];
-			let knifeType = knifeNamespace + ':' + type.split(':')[1] + '_knife';
-			if (Item.exists(knifeType)) {
-				tools.push(knifeType);
-				break;
-			}
-		}
-
-		// Do the same for Gloves...
-		let gloveNamespaces = [
-			'aether',
-			'lost_aether_content'
-		]
-		for (let i = 0; i < gloveNamespaces.length; i++) {
-			let gloveNamespace = gloveNamespaces[i];
-			let gloveType = gloveNamespace + ':' + type.split(':')[1] + '_gloves';
-			if (Item.exists(gloveType)) {
-				tools.push(gloveType);
-				break;
-			}
-		}
-
-		// ...Fishing Rods...
-		let fishingRodNamespaces = [
-			'tide'
-		]
-		for (let i = 0; i < fishingRodNamespaces.length; i++) {
-			let fishingRodNamespace = fishingRodNamespaces[i];
-			let fishingRodType = fishingRodNamespace + ':' + type.split(':')[1] + '_fishing_rod';
-			if (Item.exists(fishingRodType)) {
-				tools.push(fishingRodType);
-				break;
-			}
-		}
-
-		// ...and Shields
-		let shieldNamespaces = [
-			'shieldexp'
-		]
-		for (let i = 0; i < shieldNamespaces.length; i++) {
-			let shieldNamespace = shieldNamespaces[i];
-			let shieldType = shieldNamespace + ':' + type.split(':')[1] + '_shield';
-			if (Item.exists(shieldType)) {
-				tools.push(shieldType);
-				break;
-			}
-		}
-
-		return tools;
-	}
-
-	//////////////////////////////////////////////////////
-
 	const item_ids = Object.values(global.armorSuffixes)
 		.reduce((all, arr) => all.concat(arr), []);
+
 	function armorset(type) {
 		let list = [];
 		item_ids.forEach(item => {
@@ -117,6 +28,112 @@ ItemEvents.modification(event => {
 
 	//////////////////////////////////////////////////////
 
+	function toolset(type) {
+		let tools = [
+			type + '_hoe',
+			type + '_axe',
+			type + '_shovel',
+			type + '_sword',
+			type + '_pickaxe',
+		];
+
+		let armors = armorset(type);
+		armors.forEach(item => {
+			if (Item.exists(item)) tools.push(item);
+		});
+
+		let extra = [
+			'_shield',
+			'_gloves',
+			'_shears',
+			'_fishing_rod',
+			'_pick',
+			'_lance'
+		];
+		extra.forEach(extraType => {
+			let testItem = type + extraType;
+			if (Item.exists(testItem)) tools.push(testItem);
+		});
+
+		// Searching for the Knives cause they come from different mods
+		let knifeNamespaces = [
+			'farmersdelight',
+			'delightful',
+			'aetherdelight'
+		];
+		for (let knifeNamespace of knifeNamespaces) {
+			let knifeType = `${knifeNamespace}:${type.split(':')[1]}_knife`;
+			if (Item.exists(knifeType)) {
+				tools.push(knifeType);
+				break;
+			}
+		}
+
+		// Do the same for Gloves...
+		let gloveNamespaces = [
+			'aether',
+			'lost_aether_content'
+		];
+		for (let gloveNamespace of gloveNamespaces) {
+			let gloveType = `${gloveNamespace}:${type.split(':')[1]}_gloves`;
+			if (Item.exists(gloveType)) {
+				tools.push(gloveType);
+				break;
+			}
+		}
+
+		// ...Fishing Rods...
+		let fishingRodNamespaces = [
+			'tide'
+		];
+		for (let fishingRodNamespace of fishingRodNamespaces) {
+			let fishingRodType = `${fishingRodNamespace}:${type.split(':')[1]}_fishing_rod`;
+			if (Item.exists(fishingRodType)) {
+				tools.push(fishingRodType);
+				break;
+			}
+		}
+
+		// ...and Shields
+		let shieldNamespaces = [
+			'shieldexp'
+		];
+		for (let shieldNamespace of shieldNamespaces) {
+			let shieldType = `${shieldNamespace}:${type.split(':')[1]}_shield`;
+			if (Item.exists(shieldType)) {
+				tools.push(shieldType);
+				break;
+			}
+		}
+
+		// Simply Swords suppot
+		const simplySwordsSuffixes = [
+			'_katana',
+			'_twinblade',
+			'_rapier',
+			'_sai',
+			'_spear',
+			'_claymore',
+			'_cutlass',
+			'_scythe',
+			'_glaive',
+			'_longsword'
+		];
+
+		const baseMaterial = type.split(':')[1];
+		const compatPath = `simplyswords:mythicmetals_compat/${baseMaterial}/${baseMaterial}_`;
+
+		simplySwordsSuffixes.forEach(suffix => {
+			const simpleId = `simplyswords:${baseMaterial}${suffix}`;
+			const compatId = `${compatPath}${suffix.replace(/^_/, '')}`;
+
+			if (Item.exists(simpleId)) tools.push(simpleId);
+			if (Item.exists(compatId)) tools.push(compatId);
+		});
+		return tools;
+	}
+
+	//////////////////////////////////////////////////////
 
 	maxDurability([
 		toolset('minecraft:golden'),

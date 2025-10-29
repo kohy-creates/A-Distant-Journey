@@ -21,7 +21,7 @@
     }
   },
   "pickup": {
-    "customPickup": true,
+    "customPickup": false,
     "pickupWhenSneaking": true,
     "pickupNormally": true,
     "maximumPickupRange": 5,

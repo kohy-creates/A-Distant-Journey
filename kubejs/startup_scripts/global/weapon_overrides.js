@@ -6,16 +6,49 @@ function roundTo1Decimal(num) {
 	return round(num * 10) / 10;
 }
 
+// Base vanilla toolsets
 const toolset = [
 	'_sword',
 	'_pickaxe',
 	'_axe',
 	'_shovel',
 	'_hoe'
-]
+];
 
-const defaultAttackDamage = [1, 0.5, 1.12, 0.4, 0.5]
-const defaultAttackSpeed = [1.6, 1.3, 0.9, 1.1, 1.4]
+const defaultAttackDamage = [1, 0.5, 1.12, 0.4, 0.5];
+const defaultAttackSpeed = [1.6, 1.3, 0.9, 1.1, 1.4];
+
+// Simply Swords weapon types
+const simplySwordsTypes = [
+	'_katana',
+	'_spear',
+	'_glaive',
+	'_warglaive',
+	'_cutlass',
+	'_chakram',
+	'_scythe'
+];
+
+// Balancing multipliers for Simply Swords
+const simplySwordsAttackDamage = [
+	0.85,
+	1.0,
+	1.15,
+	0.8,
+	0.85,
+	0.75,
+	1.2,
+];
+
+const simplySwordsAttackSpeed = [
+	1.6,
+	1.1,
+	1.2,
+	2.0,
+	1.6,
+	1.2,
+	1.1
+];
 
 function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 	let i = 0;
@@ -38,6 +71,30 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 		}
 		i++;
 	});
+
+	// --- Simply Swords support ---
+	const baseMaterial = toolsetName.split(':')[1]; // e.g. "gold", "steel"
+	const compatPath = `simplyswords:mythicmetals_compat/${baseMaterial}/${baseMaterial}`;
+
+	let j = 0;
+	simplySwordsTypes.forEach(type => {
+		const damageMult = simplySwordsAttackDamage[j];
+		const speedVal = simplySwordsAttackSpeed[j];
+
+		const vanillaId = `simplyswords:${baseMaterial}${type}`;
+		const compatId = `${compatPath}${type}`;
+
+		const testIDs = [vanillaId, compatId];
+
+		testIDs.forEach(id => {
+			if (!Item.of(id)) return;
+			if (Object.keys(global.weapon_overrides).includes(id)) return;
+
+			global.weapon_overrides[id] = [round(arg1 * damageMult), roundTo1Decimal(speedVal)
+			];
+		});
+		j++;
+	})
 }
 
 /**
@@ -126,3 +183,4 @@ addToolsetOverride('majruszsdifficulty:enderium', 52)
 addToolsetOverride('mythicmetals:celestium', 60)
 addToolsetOverride('mythicmetals:metallurgium', 60)
 addToolsetOverride('witherstorm:command_block', 51)
+addToolsetOverride('simplyswords:runic', 42)

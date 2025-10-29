@@ -3390,4 +3390,21 @@ ServerEvents.recipes((event) => {
 		event.remove({ type: 'botania:petal_apothecary', output: flw })
 		event.recipes.botania.petal_apothecary(flw, items).id(`kubejs:botania/flowers/${flowerName}`)
 	}
+
+	event.forEachRecipe({ type: 'crafting_shapeless' }, recipe => {
+		const output = recipe.getOriginalRecipeResult();
+		if (!(output.getId().includes('ars') && output.getId().includes('ritual_'))) return;
+
+		const ingredients = recipe.getOriginalRecipeIngredients();
+
+		if (ingredients[0].getItemIds().stream().anyMatch(id => id.toString().includes('archwood'))) {
+			event.remove({ id: recipe.getId() })
+
+			event.recipes.botania.runic_altar(
+				output,
+				ingredients,
+				5000
+			).id(`kubejs:ars_rituals/${output.getId().split(':')[1]}`)
+		}
+	})
 });

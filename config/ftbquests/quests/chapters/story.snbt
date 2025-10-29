@@ -2311,12 +2311,12 @@
 			tasks: [
 				{
 					id: "19B9F3A4DB9EFC1E"
-					item: "aether:bronze_dungeon_key"
+					item: "lost_aether_content:platinum_key"
 					type: "item"
 				}
 				{
-					entity: "aether:slider"
-					icon: "aether:bronze_dungeon_key"
+					entity: "lost_aether_content:aerwhale_king"
+					icon: "lost_aether_content:platinum_key"
 					id: "163594ACA7DD1D7C"
 					type: "kill"
 					value: 1L
