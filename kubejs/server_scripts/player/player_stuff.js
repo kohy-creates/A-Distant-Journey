@@ -12,13 +12,13 @@ PlayerEvents.tick(event => {
 	const miningSpeedAttribute = player.getAttribute('attributeslib:mining_speed')
 	const mining_speed = miningSpeedAttribute.getModifier(MiningSpeedUUID);
 	if (!mining_speed) {
-		miningSpeedAttribute.addPermanentModifier(new $AttributeModifier(MiningSpeedUUID, 'Mining speed bonus', 0.3, $Operation.ADDITION))
+		miningSpeedAttribute.addPermanentModifier(new $AttributeModifier(MiningSpeedUUID, 'Mining speed bonus', 0.25, $Operation.ADDITION))
 	}
 
 	const barSizeAttribute = player.getAttribute('stardew_fishing:bar_size')
 	const barSize = barSizeAttribute.getModifier(FishingUUID);
 	if (!barSize) {
-		barSizeAttribute.addPermanentModifier(new $AttributeModifier(FishingUUID, 'Mining speed bonus', 8, $Operation.ADDITION))
+		barSizeAttribute.addPermanentModifier(new $AttributeModifier(FishingUUID, 'Stardew Fishing Bar Size', 10, $Operation.ADDITION))
 	}
 
 	// const movementSpeedAttribute = player.getAttribute('generic.movement_speed')

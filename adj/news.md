@@ -1,5 +1,4 @@
-## October 7th - Release 1.1.1
+## October 29th 2025 - 1.2.0 and CurseForge Mod Jam
 
-Fixes plenty of bugs from 1.1.0 and before and includes a few minor additions.
+If you're reading this, new ADJ update 1.2.0 is either about to release or has already done so. Enjoy better stability and plenty of new features and improvements!
 
-If you're reading this should lowkey subscribe to my Ko-Fi. Just saying.
