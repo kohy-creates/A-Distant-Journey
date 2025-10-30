@@ -1,78 +1,24 @@
-Huge update!
-
-First off, improved stability and performance (I think). I fixed many random crash bugs and obscure bugs.
-
-Secondarily, new features! Even more mod integrations and such, completely new mods, etc. etc. Everything you'd expect from a modpack update.
-
-Biggest change is to Hardcore mode - removed permadeath, but increased overall threat level, with mobs getting smarter and having better AI and world generation being less friendly overall. This is part one of many features I planned for Hardcore mode in ADJ, which at some point will include Hardcore-mode exclusive content. The idea for the mode is to be a higher risk higher reward mode, as opposed to high risk no reward mode it is in vanilla (and every single modpack by extension).
+Fixes some critical bugs introduced in 1.2.1
 
 ------
 
 **[Mod changes]**
 
-- Added Hey Berry! SHUT UP.
-- Added Naming Unconvention.
-- Added Enhanced Mushrooms.
-- Added Simply Swords and Simply Swords Overhaul. Unique weapons were disabled until future updates due to time constraints.
-- Added Zombie Awareness (applies only to Hardcore worlds and doesn't do anything outside of them).
-
-- Removed Smooth Swapping, fixing several random crash bugs.
-
-- Replaced Immersive Damage Indicators with a better implementation (fixed 0 spam on dedicated servers).
-
-- All items now appear in the recipe browser from the start (names hidden until unlocked).
-- Some item sorting improvements in the recipe browser.
-- Added two new wood sets — Ashen and Blossom (from Quark, previously unused).
-- Blue and Harvest Moons now decrease monster spawn rates (−60% and −85% respectively).
-- Added Ender Moon (boosts Enderman spawns).
-- Blood Moons reworked — lower spawn rate multiplier (3.5x → 1.75x), and some mobs now Blood Moon-exclusive.
-
-- Hardcore mode tweaks: Mutant Monsters can spawn in early chapters with reduced chance.
-- Hardcore mode now has more surface lava lakes and restored Nether lava pockets.
-- Removed Hardcore permadeath (now instead doubles respawn time).
-
-- Candles now craft into 4.
-- Changed Botania rune and Ars Nouveau essence recipes (more complex at higher tiers).
-- Adjusted Botania flower recipes.
-- Enabled Quark’s chest variants for wood sets.
-- Orechids can now spawn modded ores.
-- Vanilla chests in world gen replaced with Quark’s Oak Chests.
-- Added way to revisit the welcome screen message.
-- Replaced naturally generated Nexus Warps with Waystones.
-- Turned off morning mist particles (rain mist retained but less frequent).
-- Made fishing easier.
+- Removed Satisfying Buttons mod (permanently) and downgraded Via Romana back to 1.0.
+- Re-added the EMI config button.
+- Potentially fixed a random crash in the Aether.
 
 ------
 
 **[Balance changes]**
 
-- Reduced Harm glyph damage and Amplify scaling (mana cost also reduced).
-- Harm can only be used 3 times per spell.
-- Increased early-game mob stats slightly (mainly damage).
-- Palladium armor: replaced knockback resistance with on-hit regeneration (+2/s for short time).
-- Prometheum armor: standing in sunlight restores health.
-- Dark Metal Armor no longer increases spell damage.
-- Decreased punch damage with no weapon equipped (back to 1).
-- Reduced base Midas Gold weapon damage (24 → 17).
-- Zombies drop Feathers less often.
-- Removed “More Sniffer Flowers” (fixed secret inventory slot issue).
-- Reduced bow and arrow damage across most tiers.
-- Reduced ranged damage of Pillagers, Wither Skeletons, and Illusioners.
-- Buffed Artificer’s Armor durability (1200 → 1800).
+- Reverted Hydroangeas duration buff as it was causing crash issues. Might re-add them at an unknown date.
 
 ------
 
 **[Other]**
 
-- Fixed animal models being distorted.
-- Fixed Skylands generation issues (dimension should now load correctly).
-- Possibly fixed a random crash bug in the Aether.
-- Fixed Nightmare Robes having no set bonus.
-- Fixed Deepslate Furnaces being craftable with Deepslate instead of Cobbled Deepslate.
-- Fixed Metallurgium and Celestium gear incorrectly using Diamond or Netherite in their recipes (now correctly use Enderium).
-- Fixed animals sometimes not spawning at all; increased cap (15 → 20) and spawn rate.
-- Fixed recipe viewer display issues.
-- Fixed Atlas map count display (showed 9 empty maps when it actually had 0, now it properly has 9 empty maps when crafted).
-- Fixed Diamond Upgrade Smithing Template missing texture (CurseForge export issue).
-- Fixed Crimson and Warped Drawers showing up in EMI.
-- Fixed celestium-tier mage armor sets having default durability (should be 8000).
+- Fixed Aerhwale King quest being completed when a Slider is killed instead. 
+- Recipe browser has seen some improvements:
+> Now has extra tabs that can be switched by clicking next to the page arrows that change between showing all items, craftable items and lookup history.
+> Added a transparent panel on the bottom dedicated to favorite items
