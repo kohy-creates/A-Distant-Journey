@@ -9,7 +9,7 @@
 	#Hydroangeas duration
 	#How many ticks should hydroangeas last [72000]
 	#Put a value equal or below 0 to disable it
-	"Hydroangeas Ticks" = 216000
+	"Hydroangeas Ticks" = 72000
 	#Hydroangeas production
 	#How much mana should it produce each tick [1]
 	#Range: > 1
