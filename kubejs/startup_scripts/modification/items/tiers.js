@@ -175,10 +175,10 @@ const tiers = {
 	},
 	'stormyx': {
 		uses: 1305,
-		speed: 8.5,
+		speed: 7,
 		attackDamageBonus: 3.5,
 		level: 3,
-		enchantmentValue: 20,
+		enchantmentValue: 12,
 		repairIngredient: '#c:stormyx_ingots'
 	},
 	'tidesinger': {

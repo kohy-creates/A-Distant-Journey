@@ -109,15 +109,11 @@ ItemEvents.modification(event => {
 		// Simply Swords suppot
 		const simplySwordsSuffixes = [
 			'_katana',
-			'_twinblade',
-			'_rapier',
-			'_sai',
 			'_spear',
-			'_claymore',
-			'_cutlass',
-			'_scythe',
 			'_glaive',
-			'_longsword'
+			'_warglaive',
+			'_chakram',
+			'_scythe'
 		];
 
 		const baseMaterial = type.split(':')[1];
@@ -271,7 +267,7 @@ ItemEvents.modification(event => {
 	maxDurability([
 		toolset('mythicmetals:mythril'),
 		toolset('mythicmetals:orichalcum'),
-	], 2500)
+	], 2000)
 
 	maxDurability([
 		armorset('minecraft:chainmail'),
@@ -303,6 +299,9 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('mythicmetals:stormyx'),
+	], 1100)
+
+	maxDurability([
 		armorset('cataclysm:bone_reptile'),
 		'mcdw:bow_sabrewing'
 	], 1900)

@@ -21,12 +21,6 @@ PlayerEvents.tick(event => {
 		barSizeAttribute.addPermanentModifier(new $AttributeModifier(FishingUUID, 'Stardew Fishing Bar Size', 10, $Operation.ADDITION))
 	}
 
-	// const movementSpeedAttribute = player.getAttribute('generic.movement_speed')
-	// const movementSpeed = movementSpeedAttribute.getModifier(SpeedUUID);
-	// if (!movementSpeed) {
-	// 	movementSpeedAttribute.addPermanentModifier(new $AttributeModifier(SpeedUUID, 'Speed bonus', 0.1, $Operation.MULTIPLY_BASE))
-	// }
-
 	// Architect Prism grants creative flight when in inventory
 	const inventory = player.getInventory().getAllItems();
 	let hasPrism = false;
@@ -57,4 +51,24 @@ FTBQuestsEvents.completed('16BAA229C57F181A', event => {
 		player.addTag('adj.qd_can_reset')
 		console.log(`Queens Desire completed by ${player.username}!`)
 	})
+})
+
+EntityEvents.hurt(event => {
+	const player = event.getSource().getPlayer();
+	if (player) {
+		const item = player.getMainHandItem();
+		if (item.getId().includes('katana')) {
+			const pdata = player.persistentData;
+			if (!pdata.katanaCombo) {
+				pdata.katanaCombo = 0;
+			}
+			pdata.katanaCombo++;
+
+			if (pdata.katanaCombo >= 3) {
+				pdata.katanaCombo = 0;
+
+				player.addEffect(new $MobEffectInstance('speed', 4 * 20, 0));
+			}
+		}
+	}
 })
