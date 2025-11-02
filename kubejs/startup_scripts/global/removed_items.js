@@ -627,7 +627,8 @@ global.blacklistedItems = [
 		"ecologics:flowering_azalea_boat",
 		"ecologics:flowering_azalea_chest_boat",
 
-		"simplyswords:mythicmetals_compat/banglum/banglum_longsword",
+				"simplyswords:mythicmetals_compat/banglum/banglum_longsword",
+		"simplyswords:mythicmetals_compat/banglum/banglum_cutlass",
 		"simplyswords:mythicmetals_compat/banglum/banglum_twinblade",
 		"simplyswords:mythicmetals_compat/banglum/banglum_rapier",
 		"simplyswords:mythicmetals_compat/banglum/banglum_katana",
@@ -636,7 +637,6 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/banglum/banglum_spear",
 		"simplyswords:mythicmetals_compat/banglum/banglum_glaive",
 		"simplyswords:mythicmetals_compat/banglum/banglum_warglaive",
-		"simplyswords:mythicmetals_compat/banglum/banglum_cutlass",
 		"simplyswords:mythicmetals_compat/banglum/banglum_claymore",
 		"simplyswords:mythicmetals_compat/banglum/banglum_greathammer",
 		"simplyswords:mythicmetals_compat/banglum/banglum_greataxe",
@@ -645,6 +645,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/banglum/banglum_halberd",
 
 		"simplyswords:mythicmetals_compat/aquarium/aquarium_longsword",
+		"simplyswords:mythicmetals_compat/aquarium/aquarium_cutlass",
 		"simplyswords:mythicmetals_compat/aquarium/aquarium_twinblade",
 		"simplyswords:mythicmetals_compat/aquarium/aquarium_rapier",
 		"simplyswords:mythicmetals_compat/aquarium/aquarium_katana",
@@ -653,7 +654,6 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/aquarium/aquarium_spear",
 		"simplyswords:mythicmetals_compat/aquarium/aquarium_glaive",
 		"simplyswords:mythicmetals_compat/aquarium/aquarium_warglaive",
-		"simplyswords:mythicmetals_compat/aquarium/aquarium_cutlass",
 		"simplyswords:mythicmetals_compat/aquarium/aquarium_claymore",
 		"simplyswords:mythicmetals_compat/aquarium/aquarium_greathammer",
 		"simplyswords:mythicmetals_compat/aquarium/aquarium_greataxe",
@@ -662,6 +662,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/aquarium/aquarium_halberd",
 
 		"simplyswords:mythicmetals_compat/mythril/mythril_longsword",
+		"simplyswords:mythicmetals_compat/mythril/mythril_cutlass",
 		"simplyswords:mythicmetals_compat/mythril/mythril_twinblade",
 		"simplyswords:mythicmetals_compat/mythril/mythril_rapier",
 		"simplyswords:mythicmetals_compat/mythril/mythril_katana",
@@ -670,7 +671,6 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/mythril/mythril_spear",
 		"simplyswords:mythicmetals_compat/mythril/mythril_glaive",
 		"simplyswords:mythicmetals_compat/mythril/mythril_warglaive",
-		"simplyswords:mythicmetals_compat/mythril/mythril_cutlass",
 		"simplyswords:mythicmetals_compat/mythril/mythril_claymore",
 		"simplyswords:mythicmetals_compat/mythril/mythril_greathammer",
 		"simplyswords:mythicmetals_compat/mythril/mythril_greataxe",
@@ -679,6 +679,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/mythril/mythril_halberd",
 
 		"simplyswords:mythicmetals_compat/carmot/carmot_longsword",
+		"simplyswords:mythicmetals_compat/carmot/carmot_cutlass",
 		"simplyswords:mythicmetals_compat/carmot/carmot_twinblade",
 		"simplyswords:mythicmetals_compat/carmot/carmot_rapier",
 		"simplyswords:mythicmetals_compat/carmot/carmot_katana",
@@ -687,7 +688,6 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/carmot/carmot_spear",
 		"simplyswords:mythicmetals_compat/carmot/carmot_glaive",
 		"simplyswords:mythicmetals_compat/carmot/carmot_warglaive",
-		"simplyswords:mythicmetals_compat/carmot/carmot_cutlass",
 		"simplyswords:mythicmetals_compat/carmot/carmot_claymore",
 		"simplyswords:mythicmetals_compat/carmot/carmot_greathammer",
 		"simplyswords:mythicmetals_compat/carmot/carmot_greataxe",
@@ -696,6 +696,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/carmot/carmot_halberd",
 
 		"simplyswords:mythicmetals_compat/osmium/osmium_longsword",
+		"simplyswords:mythicmetals_compat/osmium/osmium_cutlass",
 		"simplyswords:mythicmetals_compat/osmium/osmium_twinblade",
 		"simplyswords:mythicmetals_compat/osmium/osmium_rapier",
 		"simplyswords:mythicmetals_compat/osmium/osmium_katana",
@@ -704,7 +705,6 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/osmium/osmium_spear",
 		"simplyswords:mythicmetals_compat/osmium/osmium_glaive",
 		"simplyswords:mythicmetals_compat/osmium/osmium_warglaive",
-		"simplyswords:mythicmetals_compat/osmium/osmium_cutlass",
 		"simplyswords:mythicmetals_compat/osmium/osmium_claymore",
 		"simplyswords:mythicmetals_compat/osmium/osmium_greathammer",
 		"simplyswords:mythicmetals_compat/osmium/osmium_greataxe",
@@ -713,6 +713,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/osmium/osmium_halberd",
 
 		"simplyswords:mythicmetals_compat/celestium/celestium_longsword",
+		"simplyswords:mythicmetals_compat/celestium/celestium_cutlass",
 		"simplyswords:mythicmetals_compat/celestium/celestium_twinblade",
 		"simplyswords:mythicmetals_compat/celestium/celestium_rapier",
 		"simplyswords:mythicmetals_compat/celestium/celestium_katana",
@@ -721,7 +722,6 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/celestium/celestium_spear",
 		"simplyswords:mythicmetals_compat/celestium/celestium_glaive",
 		"simplyswords:mythicmetals_compat/celestium/celestium_warglaive",
-		"simplyswords:mythicmetals_compat/celestium/celestium_cutlass",
 		"simplyswords:mythicmetals_compat/celestium/celestium_claymore",
 		"simplyswords:mythicmetals_compat/celestium/celestium_greathammer",
 		"simplyswords:mythicmetals_compat/celestium/celestium_greataxe",
@@ -730,6 +730,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/celestium/celestium_halberd",
 
 		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_longsword",
+		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_cutlass",
 		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_twinblade",
 		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_rapier",
 		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_katana",
@@ -738,7 +739,6 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_spear",
 		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_glaive",
 		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_warglaive",
-		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_cutlass",
 		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_claymore",
 		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_greathammer",
 		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_greataxe",
@@ -747,6 +747,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/quadrillum/quadrillum_halberd",
 
 		"simplyswords:mythicmetals_compat/runite/runite_longsword",
+		"simplyswords:mythicmetals_compat/runite/runite_cutlass",
 		"simplyswords:mythicmetals_compat/runite/runite_twinblade",
 		"simplyswords:mythicmetals_compat/runite/runite_rapier",
 		"simplyswords:mythicmetals_compat/runite/runite_katana",
@@ -755,7 +756,6 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/runite/runite_spear",
 		"simplyswords:mythicmetals_compat/runite/runite_glaive",
 		"simplyswords:mythicmetals_compat/runite/runite_warglaive",
-		"simplyswords:mythicmetals_compat/runite/runite_cutlass",
 		"simplyswords:mythicmetals_compat/runite/runite_claymore",
 		"simplyswords:mythicmetals_compat/runite/runite_greathammer",
 		"simplyswords:mythicmetals_compat/runite/runite_greataxe",
@@ -764,6 +764,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/runite/runite_halberd",
 
 		"simplyswords:mythicmetals_compat/adamantite/adamantite_longsword",
+		"simplyswords:mythicmetals_compat/adamantite/adamantite_cutlass",
 		"simplyswords:mythicmetals_compat/adamantite/adamantite_twinblade",
 		"simplyswords:mythicmetals_compat/adamantite/adamantite_sai",
 		"simplyswords:mythicmetals_compat/adamantite/adamantite_rapier",
@@ -773,6 +774,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/adamantite/adamantite_halberd",
 		
 		"simplyswords:mythicmetals_compat/prometheum/prometheum_longsword",
+		"simplyswords:mythicmetals_compat/prometheum/prometheum_cutlass",
 		"simplyswords:mythicmetals_compat/prometheum/prometheum_twinblade",
 		"simplyswords:mythicmetals_compat/prometheum/prometheum_sai",
 		"simplyswords:mythicmetals_compat/prometheum/prometheum_rapier",
@@ -782,6 +784,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/prometheum/prometheum_halberd",
 
 		"simplyswords:mythicmetals_compat/orichalcum/orichalcum_longsword",
+		"simplyswords:mythicmetals_compat/orichalcum/orichalcum_cutlass",
 		"simplyswords:mythicmetals_compat/orichalcum/orichalcum_twinblade",
 		"simplyswords:mythicmetals_compat/orichalcum/orichalcum_sai",
 		"simplyswords:mythicmetals_compat/orichalcum/orichalcum_rapier",
@@ -791,6 +794,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/orichalcum/orichalcum_halberd",
 
 		"simplyswords:mythicmetals_compat/metallurgium/metallurgium_longsword",
+		"simplyswords:mythicmetals_compat/metallurgium/metallurgium_cutlass",
 		"simplyswords:mythicmetals_compat/metallurgium/metallurgium_twinblade",
 		"simplyswords:mythicmetals_compat/metallurgium/metallurgium_sai",
 		"simplyswords:mythicmetals_compat/metallurgium/metallurgium_rapier",
@@ -800,6 +804,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/metallurgium/metallurgium_halberd",
 
 		"simplyswords:mythicmetals_compat/durasteel/durasteel_longsword",
+		"simplyswords:mythicmetals_compat/durasteel/durasteel_cutlass",
 		"simplyswords:mythicmetals_compat/durasteel/durasteel_twinblade",
 		"simplyswords:mythicmetals_compat/durasteel/durasteel_sai",
 		"simplyswords:mythicmetals_compat/durasteel/durasteel_rapier",
@@ -809,6 +814,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/durasteel/durasteel_halberd",
 
 		"simplyswords:mythicmetals_compat/copper/copper_longsword",
+		"simplyswords:mythicmetals_compat/copper/copper_cutlass",
 		"simplyswords:mythicmetals_compat/copper/copper_twinblade",
 		"simplyswords:mythicmetals_compat/copper/copper_sai",
 		"simplyswords:mythicmetals_compat/copper/copper_rapier",
@@ -818,6 +824,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/copper/copper_halberd",
 
 		"simplyswords:mythicmetals_compat/bronze/bronze_longsword",
+		"simplyswords:mythicmetals_compat/bronze/bronze_cutlass",
 		"simplyswords:mythicmetals_compat/bronze/bronze_twinblade",
 		"simplyswords:mythicmetals_compat/bronze/bronze_sai",
 		"simplyswords:mythicmetals_compat/bronze/bronze_rapier",
@@ -827,6 +834,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/bronze/bronze_halberd",
 
 		"simplyswords:mythicmetals_compat/steel/steel_longsword",
+		"simplyswords:mythicmetals_compat/steel/steel_cutlass",
 		"simplyswords:mythicmetals_compat/steel/steel_twinblade",
 		"simplyswords:mythicmetals_compat/steel/steel_sai",
 		"simplyswords:mythicmetals_compat/steel/steel_rapier",
@@ -836,6 +844,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/steel/steel_halberd",
 
 		"simplyswords:mythicmetals_compat/stormyx/stormyx_longsword",
+		"simplyswords:mythicmetals_compat/stormyx/stormyx_cutlass",
 		"simplyswords:mythicmetals_compat/stormyx/stormyx_twinblade",
 		"simplyswords:mythicmetals_compat/stormyx/stormyx_sai",
 		"simplyswords:mythicmetals_compat/stormyx/stormyx_rapier",
@@ -845,6 +854,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/stormyx/stormyx_halberd",
 
 		"simplyswords:mythicmetals_compat/kyber/kyber_longsword",
+		"simplyswords:mythicmetals_compat/kyber/kyber_cutlass",
 		"simplyswords:mythicmetals_compat/kyber/kyber_twinblade",
 		"simplyswords:mythicmetals_compat/kyber/kyber_sai",
 		"simplyswords:mythicmetals_compat/kyber/kyber_rapier",
@@ -854,6 +864,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/kyber/kyber_halberd",
 
 		"simplyswords:mythicmetals_compat/star_platinum/star_platinum_longsword",
+		"simplyswords:mythicmetals_compat/star_platinum/star_platinum_cutlass",
 		"simplyswords:mythicmetals_compat/star_platinum/star_platinum_twinblade",
 		"simplyswords:mythicmetals_compat/star_platinum/star_platinum_sai",
 		"simplyswords:mythicmetals_compat/star_platinum/star_platinum_rapier",
@@ -863,6 +874,7 @@ global.blacklistedItems = [
 		"simplyswords:mythicmetals_compat/star_platinum/star_platinum_halberd",
 
 		"simplyswords:iron_longsword",
+		"simplyswords:iron_cutlass",
 		"simplyswords:iron_twinblade",
 		"simplyswords:iron_sai",
 		"simplyswords:iron_rapier",
@@ -872,6 +884,7 @@ global.blacklistedItems = [
 		"simplyswords:iron_halberd",
 
 		"simplyswords:gold_longsword",
+		"simplyswords:gold_cutlass",
 		"simplyswords:gold_twinblade",
 		"simplyswords:gold_sai",
 		"simplyswords:gold_rapier",
@@ -881,6 +894,7 @@ global.blacklistedItems = [
 		"simplyswords:gold_halberd",
 
 		"simplyswords:diamond_longsword",
+		"simplyswords:diamond_cutlass",
 		"simplyswords:diamond_twinblade",
 		"simplyswords:diamond_sai",
 		"simplyswords:diamond_rapier",
@@ -890,6 +904,7 @@ global.blacklistedItems = [
 		"simplyswords:diamond_halberd",
 
 		"simplyswords:netherite_longsword",
+		"simplyswords:netherite_cutlass",
 		"simplyswords:netherite_twinblade",
 		"simplyswords:netherite_sai",
 		"simplyswords:netherite_rapier",
@@ -899,6 +914,7 @@ global.blacklistedItems = [
 		"simplyswords:netherite_halberd",
 
 		"simplyswords:runic_longsword",
+		"simplyswords:runic_cutlass",
 		"simplyswords:runic_twinblade",
 		"simplyswords:runic_sai",
 		"simplyswords:runic_rapier",

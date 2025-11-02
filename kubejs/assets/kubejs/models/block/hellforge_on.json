@@ -1,6 +1,6 @@
 {
-  "parent": "kubejs:block/deepslate_brick_forge",
+  "parent": "kubejs:block/hellforge",
   "textures": {
-    "front": "kubejs:block/deepslate_brick_forge_front_on"
+    "front": "kubejs:block/hellforge_front_on"
   }
 }

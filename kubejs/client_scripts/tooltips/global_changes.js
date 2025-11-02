@@ -424,6 +424,7 @@ ItemEvents.tooltip(event => {
 	], [
 		'Comes with a unique feeling of nostalgia',
 	], true);
+
 	addTooltipLine('rediscovered:cyan_rose', 'Also known as Blue Rose');
 	addTooltipLine([
 		'wooden_sword',

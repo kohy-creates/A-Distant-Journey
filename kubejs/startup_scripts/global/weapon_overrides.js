@@ -24,7 +24,6 @@ const simplySwordsTypes = [
 	'_spear',
 	'_glaive',
 	'_warglaive',
-	'_cutlass',
 	'_chakram',
 	'_scythe'
 ];
@@ -33,19 +32,17 @@ const simplySwordsTypes = [
 const simplySwordsAttackDamage = [
 	0.85,
 	1.0,
-	1.15,
-	0.8,
-	0.85,
-	0.75,
 	1.2,
+	0.7,
+	0.75,
+	1.35,
 ];
 
 const simplySwordsAttackSpeed = [
 	1.6,
-	1.1,
 	1.2,
+	1.3,
 	2.0,
-	1.6,
 	1.2,
 	1.1
 ];
@@ -161,7 +158,7 @@ addToolsetOverride('additionaladditions:rose_gold', 16)
 addToolsetOverride('minecraft:diamond', 19)
 addToolsetOverride('cataclysm:black_steel', 21)
 addToolsetOverride('aether:gravitite', 31)
-addToolsetOverride('botania:manasteel', 17)
+addToolsetOverride('botania:manasteel', 15)
 addToolsetOverride('mythicmetals:prometheum', 18)
 addToolsetOverride('mythicmetals:steel', 17)
 addToolsetOverride('mythicmetals:carmot', 22)
@@ -169,8 +166,8 @@ addToolsetOverride('mythicmetals:mythril', 23)
 addToolsetOverride('mythicmetals:orichalcum', 23)
 addToolsetOverride('experienceobelisk:cognitive', 22)
 addToolsetOverride('mythicmetals:midas_gold', 17)
-addToolsetOverride('mythicmetals:stormyx', 22)
-addToolsetOverride('botania:elementium', 25)
+addToolsetOverride('mythicmetals:stormyx', 18)
+addToolsetOverride('botania:elementium', 22)
 addToolsetOverride('mythicmetals:palladium', 28)
 addToolsetOverride('aether:valkyrie', 36)
 addToolsetOverride('lost_aether_content:phoenix', 43)
@@ -183,4 +180,4 @@ addToolsetOverride('majruszsdifficulty:enderium', 52)
 addToolsetOverride('mythicmetals:celestium', 60)
 addToolsetOverride('mythicmetals:metallurgium', 60)
 addToolsetOverride('witherstorm:command_block', 51)
-addToolsetOverride('simplyswords:runic', 42)
+addToolsetOverride('simplyswords:runic', 40)

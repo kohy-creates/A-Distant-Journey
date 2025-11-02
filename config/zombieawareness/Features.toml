@@ -23,11 +23,11 @@
 	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	soundVolumeAlertTarget = 0.5
 	#Enhanced mobs will make a sound when they target you
-	soundAlerts = true
+	soundAlerts = false
 	#Any hostile mob that targets you will make a sound, even if not enhanced
 	soundAlertsForAllAttackingMobs = false
 	#Enhanced mobs will make a sound when they are investigating a sense near you
-	soundInvestigates = true
+	soundInvestigates = false
 	#Uses a different kind of mob alert noise, might break immersion a bit ;)
 	soundUseAlternateAlertNoise = false
 	#Only spawn sound sense entities in Overworld
