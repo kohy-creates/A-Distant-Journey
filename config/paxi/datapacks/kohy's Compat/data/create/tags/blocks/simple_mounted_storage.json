@@ -1,0 +1,84 @@
+{
+  "values": [
+    {
+      "id": "#create_compatible_storage:fd/cabinets",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:basket",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/drawers",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/small_drawers",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/drawers_with_books",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/cabinet_variants",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/glass_cabinets",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/bookshelves_with_door",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/drawers_with_door",
+      "required": false
+    },
+    {
+      "id": "#another_furniture:drawers",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:fr/coolers",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:fr/crates",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:fr/mailboxes",
+      "required": false
+    },
+    {
+      "id": "#handcrafted:desks",
+      "required": false
+    },
+    {
+      "id": "#handcrafted:nightstands",
+      "required": false
+    },
+    {
+      "id": "#handcrafted:counters",
+      "required": false
+    },
+    {
+      "id": "#handcrafted:cupboards",
+      "required": false
+    },
+    {
+      "id": "#handcrafted:drawers",
+      "required": false
+    },
+    {
+      "id": "#handcrafted:shelves",
+      "required": false
+    },
+    {
+      "id": "#handcrafted:side_tables",
+      "required": false
+    }
+  ]
+}

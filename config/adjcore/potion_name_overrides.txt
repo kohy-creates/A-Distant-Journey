@@ -1,0 +1,10 @@
+the Turtle Master:Turtle Master
+item.minecraft.potion.effect.decay:Decay Potion
+item.minecraft.potion.effect.long_decay:Decay Potion
+item.minecraft.potion.effect.strong_decay:Decay Potion
+Knockback Resistance:Stability
+Spell Damage:Magic Power
+Fire Resistance:Obsidian Skin
+Regeneration :Regeneration
+Strength:Wrath
+C

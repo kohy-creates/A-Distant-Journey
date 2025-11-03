@@ -151,6 +151,25 @@
 				cachalot_echo = true
 				capuchin_monkey = true
 				tasmanian_devil = true
+				kangaroo = true
+				gazelle = true
+				rhinoceros = true
+				emu = true
+				maned_wolf = true
+				crocodile = true
+				fly = true
+				centipede_head = true
+				centipede_body = true
+				centipede_tail = true
+				elephant = true
+				flying_fish = true
+				giant_squid = true
+				frilled_shark = true
+				blobfish = true
+				mantis_shrimp = true
+				murmur = true
+				murmur_head = true
+				catfish = true
 
 			[light_sources.settings.entities.tide]
 				tuna = true
@@ -159,6 +178,14 @@
 				bluegill = true
 				pike = true
 				ocean_perch = true
+				guppy = true
+				yellow_perch = true
+				bass = true
+				mint_carp = true
+				catfish = true
+				trout = true
+				sailfish = true
+				fishing_bobber = true
 
 			[light_sources.settings.entities.naturalist]
 				coral_snake = true
@@ -168,11 +195,21 @@
 				butterfly = true
 				snake = true
 				boar = true
+				giraffe = true
+				bass = true
+				elephant = true
+				cardinal = true
+				firefly = true
+				deer = true
+				catfish = true
+				dragonfly = true
+				hippo = true
 
 			[light_sources.settings.entities.quark]
 				toretoise = true
 				stoneling = true
 				forgotten = true
+				glass_frame = true
 
 			[light_sources.settings.entities.born_in_chaos_v1]
 				baby_spider = true
@@ -186,15 +223,42 @@
 				phantom_creeper = true
 				skeleton_demoman = true
 				dread_hound = true
+				decaying_zombie = true
+				spirit_guide = true
+				door_knight = true
+				decrepit_skeleton = true
+				fallen_chaos_knight = true
+				corpse_fly = true
+				mother_spider = true
+				spirit_guide_assistant = true
+				spiritof_chaos = true
+				staffof_blindness_projectile = true
+				dire_hound_leader = true
+				siamese_skeletonsright = true
+				siamese_skeletonsleft = true
+				barrel_zombie = true
+				glutton_fish = true
+				zombie_fisherman = true
+				bloody_gadfly = true
+				maggot = true
+				pumpkin_spirit = true
+				seared_spirit_not_despawn = true
 
 			[light_sources.settings.entities.artifacts]
 				mimic = true
 
 			[light_sources.settings.entities.ars_nouveau]
 				whirlisprig = true
+				starbuncle = true
+				drygmy = true
 
 			[light_sources.settings.entities.crittersandcompanions]
 				sea_bunny = true
+				otter = true
+				dragonfly = true
+				leaf_insect = true
+				dumbo_octopus = true
+				jumping_spider = true
 
 			[light_sources.settings.entities.rediscovered]
 				fish = true
@@ -361,4 +425,18 @@
 				void_shard = true
 				blazing_bone = true
 				lionfish_spike = true
+				coral_spear = true
+
+			[light_sources.settings.entities.ecologics]
+				squirrel = true
+
+			[light_sources.settings.entities.dummmmmmy]
+				target_dummy = true
+
+			[light_sources.settings.entities.upgrade_aquatic]
+				nautilus = true
+				perch = true
+
+			[light_sources.settings.entities.wither_spawn_animation]
+				animated_altar_z = true
 

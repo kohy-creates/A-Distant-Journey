@@ -931,19 +931,13 @@
 			]
 			icon: "enchantinginfuser:enchanting_infuser"
 			id: "22391120726D6ACC"
+			min_required_tasks: 1
 			subtitle: "Craft an Enchanting Table"
-			tasks: [
-				{
-					id: "769864387A7FC8AF"
-					item: "enchantinginfuser:enchanting_infuser"
-					type: "item"
-				}
-				{
-					id: "709938C3C2645FB9"
-					item: "kubejs:enchanters_guide"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "769864387A7FC8AF"
+				item: "enchantinginfuser:enchanting_infuser"
+				type: "item"
+			}]
 			title: "Enchanter"
 			x: 15.0d
 			y: 9.5d
@@ -1792,15 +1786,24 @@
 			icon: "netherexp:ecto_soul_sand"
 			id: "5A24E62380261206"
 			subtitle: "Summon a Wither"
-			tasks: [{
-				icon: "minecraft:wither_skeleton_skull"
-				id: "3A629687CBEED2E7"
-				observe_type: 5
-				timer: 0L
-				title: "Summon a Wither"
-				to_observe: "minecraft:wither"
-				type: "observation"
-			}]
+			tasks: [
+				{
+					icon: "minecraft:wither_skeleton_skull"
+					id: "3A629687CBEED2E7"
+					observe_type: 5
+					timer: 0L
+					title: "Summon a Wither"
+					to_observe: "minecraft:wither"
+					type: "observation"
+				}
+				{
+					id: "24FF2A24FABAF9FD"
+					observe_type: 0
+					timer: 0L
+					to_observe: "wither"
+					type: "observation"
+				}
+			]
 			title: "Withering Heights"
 			x: 22.0d
 			y: 8.5d
@@ -2193,20 +2196,13 @@
 			icon: "aether:carved_stone"
 			id: "353921E41B80F09D"
 			subtitle: "Kill the Slider, an animated block of bricks"
-			tasks: [
-				{
-					id: "7D581E46913354F2"
-					item: "aether:bronze_dungeon_key"
-					type: "item"
-				}
-				{
-					entity: "aether:slider"
-					icon: "aether:bronze_dungeon_key"
-					id: "0174AFD13E6D9478"
-					type: "kill"
-					value: 1L
-				}
-			]
+			tasks: [{
+				entity: "aether:slider"
+				icon: "aether:bronze_dungeon_key"
+				id: "0174AFD13E6D9478"
+				type: "kill"
+				value: 1L
+			}]
 			x: 21.0d
 			y: 16.0d
 		}
@@ -2264,20 +2260,13 @@
 			icon: "aether:victory_medal"
 			id: "0CC3E441C652E02E"
 			subtitle: "Kill the Valkyrie Queen, the leader of the Aether's fiercest fighters"
-			tasks: [
-				{
-					id: "497089C8061C20A4"
-					item: "aether:silver_dungeon_key"
-					type: "item"
-				}
-				{
-					entity: "aether:valkyrie_queen"
-					icon: "aether:silver_dungeon_key"
-					id: "6112AEB451DE555B"
-					type: "kill"
-					value: 1L
-				}
-			]
+			tasks: [{
+				entity: "aether:valkyrie_queen"
+				icon: "aether:silver_dungeon_key"
+				id: "6112AEB451DE555B"
+				type: "kill"
+				value: 1L
+			}]
 			x: 22.5d
 			y: 16.0d
 		}
@@ -2286,20 +2275,13 @@
 			icon: "aether:sun_altar"
 			id: "464BE56223B9DADC"
 			subtitle: "Kill the Sun Spirit, the one that divides the Day from the Night"
-			tasks: [
-				{
-					id: "7924AA1468DFC23B"
-					item: "aether:gold_dungeon_key"
-					type: "item"
-				}
-				{
-					entity: "aether:sun_spirit"
-					icon: "aether:gold_dungeon_key"
-					id: "7C385F94FF9BBA4D"
-					type: "kill"
-					value: 1L
-				}
-			]
+			tasks: [{
+				entity: "aether:sun_spirit"
+				icon: "aether:gold_dungeon_key"
+				id: "7C385F94FF9BBA4D"
+				type: "kill"
+				value: 1L
+			}]
 			x: 24.0d
 			y: 16.0d
 		}
@@ -2308,20 +2290,13 @@
 			icon: "lost_aether_content:gale_stone"
 			id: "72FA802480074182"
 			subtitle: "Kill the Aerwhale King. He's... the King of Aerwhales... I think that one doesn't need much explaining"
-			tasks: [
-				{
-					id: "19B9F3A4DB9EFC1E"
-					item: "lost_aether_content:platinum_key"
-					type: "item"
-				}
-				{
-					entity: "lost_aether_content:aerwhale_king"
-					icon: "lost_aether_content:platinum_key"
-					id: "163594ACA7DD1D7C"
-					type: "kill"
-					value: 1L
-				}
-			]
+			tasks: [{
+				entity: "lost_aether_content:aerwhale_king"
+				icon: "lost_aether_content:platinum_key"
+				id: "163594ACA7DD1D7C"
+				type: "kill"
+				value: 1L
+			}]
 			x: 25.5d
 			y: 16.0d
 		}
@@ -3084,9 +3059,11 @@
 			size: 1.5d
 			subtitle: "Break the seal on the dimension by killing the Ender Dragon"
 			tasks: [{
-				id: "13FD430BD6791655"
-				item: "minecraft:dragon_head"
-				type: "item"
+				entity: "minecraft:ender_dragon"
+				id: "4774CE42F4E427D2"
+				title: "Kill the Ender Dragon"
+				type: "kill"
+				value: 1L
 			}]
 			title: "Free The End"
 			x: 7.0d

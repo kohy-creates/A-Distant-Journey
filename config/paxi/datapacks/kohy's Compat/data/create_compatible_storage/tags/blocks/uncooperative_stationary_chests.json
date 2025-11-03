@@ -1,0 +1,276 @@
+{
+  "values": [
+    {
+      "id": "woodworks:oak_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_oak_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:spruce_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_spruce_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:birch_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_birch_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:jungle_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_jungle_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:acacia_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_acacia_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:dark_oak_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_dark_oak_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:crimson_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_crimson_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:warped_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_warped_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:mangrove_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_mangrove_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:bamboo_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_bamboo_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:cherry_chest",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_cherry_chest",
+      "required": false
+    },
+    {
+      "id": "autumnity:maple_chest",
+      "required": false
+    },
+    {
+      "id": "autumnity:trapped_maple_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:rosewood_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:trapped_rosewood_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:morado_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:trapped_morado_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:yucca_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:trapped_yucca_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:laurel_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:trapped_laurel_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:aspen_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:trapped_aspen_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:kousa_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:trapped_kousa_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:grimwood_chest",
+      "required": false
+    },
+    {
+      "id": "atmospheric:trapped_grimwood_chest",
+      "required": false
+    },
+    {
+      "id": "environmental:willow_chest",
+      "required": false
+    },
+    {
+      "id": "environmental:trapped_willow_chest",
+      "required": false
+    },
+    {
+      "id": "environmental:pine_chest",
+      "required": false
+    },
+    {
+      "id": "environmental:trapped_pine_chest",
+      "required": false
+    },
+    {
+      "id": "environmental:plum_chest",
+      "required": false
+    },
+    {
+      "id": "environmental:trapped_plum_chest",
+      "required": false
+    },
+    {
+      "id": "environmental:wisteria_chest",
+      "required": false
+    },
+    {
+      "id": "environmental:trapped_wisteria_chest",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:driftwood_chest",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:trapped_driftwood_chest",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:river_chest",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:trapped_river_chest",
+      "required": false
+    },
+    {
+      "id": "endergetic:poise_chest",
+      "required": false
+    },
+    {
+      "id": "endergetic:trapped_poise_chest",
+      "required": false
+    },
+    {
+      "id": "windswept:holly_chest",
+      "required": false
+    },
+    {
+      "id": "windswept:trapped_holly_chest",
+      "required": false
+    },
+    {
+      "id": "windswept:chestnut_chest",
+      "required": false
+    },
+    {
+      "id": "windswept:trapped_chestnut_chest",
+      "required": false
+    },
+    {
+      "id": "windswept:pine_chest",
+      "required": false
+    },
+    {
+      "id": "windswept:trapped_pine_chest",
+      "required": false
+    },
+    {
+      "id": "stonechest:chest_andesite",
+      "required": false
+    },
+    {
+      "id": "stonechest:chest_calcite",
+      "required": false
+    },
+    {
+      "id": "stonechest:chest_cobbled_deepslate",
+      "required": false
+    },
+    {
+      "id": "stonechest:chest_cobblestone",
+      "required": false
+    },
+    {
+      "id": "stonechest:chest_deepslate",
+      "required": false
+    },
+    {
+      "id": "stonechest:chest_diorite",
+      "required": false
+    },
+    {
+      "id": "stonechest:chest_granite",
+      "required": false
+    },
+    {
+      "id": "stonechest:chest_prismarine",
+      "required": false
+    },
+    {
+      "id": "stonechest:chest_stone",
+      "required": false
+    },
+    {
+      "id": "stonechest:chest_tuff",
+      "required": false
+    }
+  ]
+}

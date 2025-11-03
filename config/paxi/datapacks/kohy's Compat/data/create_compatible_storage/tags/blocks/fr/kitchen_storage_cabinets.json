@@ -1,0 +1,112 @@
+{
+  "values": [
+    {
+      "id": "refurbished_furniture:white_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:light_gray_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:gray_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:black_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:brown_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:red_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:orange_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:yellow_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:lime_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:green_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:cyan_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:light_blue_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:blue_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:purple_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:magenta_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:pink_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:oak_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:spruce_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:birch_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:jungle_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:acacia_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:dark_oak_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:crimson_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:warped_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:mangrove_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:bamboo_kitchen_storage_cabinet",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:cherry_kitchen_storage_cabinet",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "refurbished_furniture:oak_crate",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:spruce_crate",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:birch_crate",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:jungle_crate",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:acacia_crate",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:dark_oak_crate",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:crimson_crate",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:warped_crate",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:mangrove_crate",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:bamboo_crate",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:cherry_crate",
+      "required": false
+    }
+  ]
+}

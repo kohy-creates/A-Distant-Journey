@@ -181,6 +181,7 @@ StartupEvents.postInit(event => {
 		'alexscaves:pewen',
 		'quark:blossom',
 		'quark:ancient',
+		'snifferplus:stone_pine',
 		'upgrade_aquatic:driftwood',
 		'upgrade_aquatic:river',
 		'minecraft:crimson',

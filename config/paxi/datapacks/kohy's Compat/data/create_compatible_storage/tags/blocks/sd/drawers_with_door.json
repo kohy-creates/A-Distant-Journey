@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "storagedelight:oak_drawer_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:spruce_drawer_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:birch_drawer_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:jungle_drawer_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:acacia_drawer_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:dark_oak_drawer_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:crimson_drawer_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:warped_drawer_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:mangrove_drawer_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:bamboo_drawer_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:cherry_drawer_with_door",
+      "required": false
+    }
+  ]
+}

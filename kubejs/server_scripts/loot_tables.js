@@ -21,6 +21,12 @@ LootJS.modifiers((event) => {
 
 	event.addLootTableModifier(/.*/).removeLoot(removedItems);
 
+	event.addLootTableModifier(/chests\//)
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('simplyswords:runic_tablet'))
+				.randomChance(0.07)
+		});
+
 	const skullFragmentDrop = (pool) => {
 		pool.rolls(1);
 		pool.randomChanceWithLooting(0.2, 0.1)

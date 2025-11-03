@@ -648,8 +648,8 @@
 				type: "item"
 			}]
 			title: "Pretty Magical"
-			x: 2.5d
-			y: -5.5d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["389BC3ED918250C2"]

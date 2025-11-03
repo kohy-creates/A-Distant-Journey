@@ -49,7 +49,11 @@ ServerEvents.recipes((event) => {
 		'experienceobelisk:cognitive_flux',
 		'botania:redstone_root',
 
-		'minecraft:chest'
+		'minecraft:chest',
+		'farmersdelight:dough',
+		'minecraft:bread',
+		'mythicmetals:orichalcum_hammer',
+		'botania:terra_sword'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -118,7 +122,11 @@ ServerEvents.recipes((event) => {
 		'sortilege:cauldron/leaping',
 
 		'minecraft:candle',
-		'delightful:candle_from_animal_fat'
+		'delightful:candle_from_animal_fat',
+
+		'quark:tweaks/crafting/utility/bent/bread',
+		'create:crafting/appliances/dough',
+		'create:mixing/dough_by_mixing',
 
 
 		///alloy_forgery\:compat\//
@@ -481,6 +489,44 @@ ServerEvents.recipes((event) => {
 	manasteelArmorRecipe(['SIS', 'I I', 'I I'], 'botania:manasteel_leggings');
 	manasteelArmorRecipe(['I I', 'S S'], 'botania:manasteel_boots');
 
+	function terrasteelArmorRecipe(rune, input, output) {
+		event.remove({ output: output });
+		event.shaped(
+			output,
+			[
+				'TRT',
+				'SIS',
+				'DHD'
+			],
+			{
+				T: 'botania:livingwood_twig',
+				S: 'botania:terrasteel_ingot',
+				H: 'mythicmetals:hallowed_ingot',
+				D: 'botania:dragonstone',
+				I: input,
+				R: rune
+			}
+		)
+	}
+	terrasteelArmorRecipe(rune('spring'), 'botania:manasteel_helmet', 'botania:terrasteel_helmet');
+	terrasteelArmorRecipe(rune('summer'), 'botania:manasteel_chestplate', 'botania:terrasteel_chestplate');
+	terrasteelArmorRecipe(rune('autumn'), 'botania:manasteel_leggings', 'botania:terrasteel_leggings');
+	terrasteelArmorRecipe(rune('winter'), 'botania:manasteel_boots', 'botania:terrasteel_boots');
+
+	event.shaped(
+		'botania:terra_sword',
+		[
+			' S ',
+			' S ',
+			'THT'
+		],
+		{
+			T: 'botania:livingwood_twig',
+			S: 'botania:terrasteel_ingot',
+			H: 'mythicmetals:hallowed_ingot',
+		}
+	)
+
 	event.custom({
 		'type': 'create:pressing',
 		'ingredients': [
@@ -528,6 +574,20 @@ ServerEvents.recipes((event) => {
 			'diamond'
 		)
 	})
+
+	event.shaped(
+		'mythicmetals:orichalcum_hammer',
+		[
+			' OA',
+			' SO',
+			'S  '
+		],
+		{
+			S: "#c:rods/wooden",
+			O: 'mythicmetals:orichalcum_block',
+			A: 'mythicmetals:adamantite_block'
+		}
+	)
 
 	// Furnaces require a piece of Coal
 	/**
@@ -1120,6 +1180,17 @@ ServerEvents.recipes((event) => {
 		'#forge:dough/wheat',
 		'create:dough'
 	)
+
+	event.replaceInput({ input: 'minecraft:chest' },
+		'minecraft:chest',
+		'#c:chests/wooden'
+	)
+
+	event.replaceInput({ input: 'minecraft:shield' },
+		'minecraft:shield',
+		'shieldexp:iron_shield'
+	)
+
 	// Remove unused MythicMetals recipes
 	event.remove({ input: /manganese/ });
 	event.remove({ input: /quadrillum/ });
@@ -1150,15 +1221,21 @@ ServerEvents.recipes((event) => {
 	})
 
 	// Harder Bread
-	event.remove({ id: 'minecraft:bread' })
-	event.remove({ id: 'quark:tweaks/crafting/utility/bent/bread' })
-	event.remove({ type: 'farmersdelight:dough' })
 	event.replaceInput({ output: '#forge:dough' },
 		'wheat',
 		'create:wheat_flour'
 	)
 	event.shapeless(
-		Item.of('create:dough', 3),
+		Item.of('create:dough', 2),
+		[
+			'create:wheat_flour',
+			'create:wheat_flour',
+			'#forge:water'
+		]
+	).id('kubejs:dough_manual_only')
+
+	event.shapeless(
+		Item.of('create:dough', 4),
 		[
 			'create:wheat_flour',
 			'create:wheat_flour',
@@ -1172,8 +1249,15 @@ ServerEvents.recipes((event) => {
 	event.remove({ type: 'crafting_special_mapcloning' })
 	// Readd recipe for the Slice Map but using the Depth Meter the modpack uses
 	event.shapeless(
-		Item.of('supplementaries:slice_map'),
+		Item.of('supplementaries:slice_map', 8),
 		[
+			Item.of('map'),
+			Item.of('map'),
+			Item.of('map'),
+			Item.of('map'),
+			Item.of('map'),
+			Item.of('map'),
+			Item.of('map'),
 			Item.of('map'),
 			Item.of('additionaladditions:depth_meter')
 		]
@@ -2089,7 +2173,7 @@ ServerEvents.recipes((event) => {
 	// Eyes
 	gaiaPlateRecipe([
 		'botanicadds:gaiasteel_block',
-		'botania:terrasteel_block',
+		// 'botania:terrasteel_block',
 		'botania:dragonstone_block',
 		'botania:dragonstone_block',
 		'botania:dragonstone_block',
@@ -2155,13 +2239,13 @@ ServerEvents.recipes((event) => {
 		'born_in_chaos_v1:smoked_monster_flesh': 15,
 		'born_in_chaos_v1:smoked_fish': 10,
 		'alexscaves:cooked_dinosaur_chop': 25,
-		// 'dustydecorations:cooked_bratwurst': 12
 	}
 	function overrideCooking(type, recipe) {
 		const output = recipe.getOriginalRecipeResult();
 		const input = recipe.getOriginalRecipeIngredients();
 
 		const id = output.getId();
+		if (id === 'minecraft:air') return;
 
 		const JSON = recipe.json;
 		const time = (cookingTimeOverrides[id]) ? (cookingTimeOverrides[id] * 20 * ((type == 'campfire') ? 6 : 1)) : JSON.get('cookingtime') * 2;
@@ -3242,7 +3326,7 @@ ServerEvents.recipes((event) => {
 				rune('air'),
 				rune('fire'),
 				'redstone_block',
-				'create:cog',
+				'create:cogwheel',
 				'botania:mana_diamond',
 				'botania:mana_diamond'
 			]

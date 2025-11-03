@@ -1,0 +1,13 @@
+Vanity Item
+supplementaries:enderman_head
+minecraft:creeper_head
+minecraft:player_head
+minecraft:zombie_head
+minecraft:skeleton_skull
+minecraft:dragon_head
+minecraft:wither_skeleton_skull
+the_bumblezone:flower_headgear
+cataclysm:amptrgangr_head
+cataclysm:draugr_head
+/_fossil_head
+cataclysm:koboldediator_skull

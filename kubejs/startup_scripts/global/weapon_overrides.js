@@ -47,65 +47,79 @@ const simplySwordsAttackSpeed = [
 	1.1
 ];
 
+function roundToNearest(value, step) {
+	return Math.round(value / step) * step;
+}
+
 function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 	let i = 0;
-	const speed = (arg2) ? arg2 : defaultAttackSpeed;
-	const damage = (arg2) ? arg2 : defaultAttackDamage;
-	toolset.forEach(tool => {
+
+	// Fallbacks for undefined args (no default params in KubeJS)
+	if (typeof arg2 === 'undefined') arg2 = 1; // speed multiplier
+	if (typeof arg3 === 'undefined') arg3 = 1; // damage multiplier
+
+	toolset.forEach(function (tool) {
 		const name = toolsetName + tool;
 		if (!Item.of(name)) return;
 		if (Object.keys(global.weapon_overrides).includes(name)) return;
+
+		var attackDamage, attackSpeed;
+
 		if (Array.isArray(arg1)) {
-			global.weapon_overrides[name] = [arg1[i], speed[i]];
+			// Direct per-tool damage values
+			attackDamage = Math.ceil(arg1[i] * arg3);
+			attackSpeed = roundToNearest(defaultAttackSpeed[i] * arg2, 0.05);
+		} else {
+			// Scaled base damage
+			attackDamage = Math.ceil(arg1 * defaultAttackDamage[i] * arg3);
+			attackSpeed = roundToNearest(defaultAttackSpeed[i] * arg2, 0.05);
 		}
-		else {
-			if (arg3) {
-				global.weapon_overrides[name] = [round(arg1 * damage[i]), roundTo1Decimal(arg3 * defaultAttackSpeed[i])];
-			}
-			else {
-				global.weapon_overrides[name] = [round(arg1 * damage[i]), defaultAttackSpeed[i]];
-			}
-		}
+
+		global.weapon_overrides[name] = [attackDamage, attackSpeed];
 		i++;
 	});
 
 	// --- Simply Swords support ---
 	const baseMaterial = toolsetName.split(':')[1]; // e.g. "gold", "steel"
-	const compatPath = `simplyswords:mythicmetals_compat/${baseMaterial}/${baseMaterial}`;
+	const compatPath = 'simplyswords:mythicmetals_compat/' + baseMaterial + '/' + baseMaterial;
 
 	let j = 0;
-	simplySwordsTypes.forEach(type => {
+	simplySwordsTypes.forEach(function (type) {
 		const damageMult = simplySwordsAttackDamage[j];
 		const speedVal = simplySwordsAttackSpeed[j];
 
-		const vanillaId = `simplyswords:${baseMaterial}${type}`;
-		const compatId = `${compatPath}${type}`;
+		const vanillaId = 'simplyswords:' + baseMaterial + type;
+		const compatId = compatPath + type;
 
 		const testIDs = [vanillaId, compatId];
 
-		testIDs.forEach(id => {
+		testIDs.forEach(function (id) {
 			if (!Item.of(id)) return;
 			if (Object.keys(global.weapon_overrides).includes(id)) return;
 
-			global.weapon_overrides[id] = [round(arg1 * damageMult), roundTo1Decimal(speedVal)
-			];
+			const attackDamage = Math.ceil(arg1 * damageMult * arg3);
+			const attackSpeed = roundToNearest(speedVal * arg2, 0.05);
+
+			global.weapon_overrides[id] = [attackDamage, attackSpeed];
 		});
 		j++;
-	})
+	});
 }
+
+
 
 /**
  * @type {{ [key in InputItem_]: number[] }}
  */
 global.weapon_overrides = {
 	// attack damage, attack speed, crit chance, crit damage, armor penetration
-	'mythicmetals:mythril_drill': [round(20 * defaultAttackDamage[1]), defaultAttackSpeed[1]],
+	'mythicmetals:mythril_drill': [round(16 * defaultAttackDamage[1]), defaultAttackSpeed[1]],
 	'aether:valkyrie_lance': [36, 1.3],
-	'botania:manasteel_pick': [17 * defaultAttackDamage[1], defaultAttackSpeed[1]],
-	'botania:elementium_pick': [25 * defaultAttackDamage[1], defaultAttackSpeed[1]],
-	'botania:terra_sword': [21, 1.8],
-	'botania:thunder_sword': [21, 2.5],
-	'botania:star_sword': [52, 1.3],
+	'botania:manasteel_pick': [15 * defaultAttackDamage[1], defaultAttackSpeed[1]],
+	'botania:elementium_pick': [22 * defaultAttackDamage[1], defaultAttackSpeed[1]],
+	'botania:terra_sword': [37, 1.8, 0, 0, 15],
+	'botania:thunder_sword': [33, 2.5,  0, 0, 15],
+	'botania:star_sword': [48, 1.3, 0, 0, 20],
 	'cataclysm:gauntlet_of_guard': [40, 3.1, 0, 0, 15],
 	'cataclysm:gauntlet_of_bulwark': [40, 3.1, 0, 0, 15],
 	'cataclysm:gauntlet_of_maelstrom': [40, 3.1, 0, 0, 15],
@@ -144,9 +158,9 @@ global.weapon_overrides = {
 }
 
 addToolsetOverride('minecraft:wooden', 7)
-addToolsetOverride('aether:skyroot', 16)
+addToolsetOverride('aether:skyroot', 14)
 addToolsetOverride('mythicmetals:copper', 9)
-addToolsetOverride('aether:holystone', 20)
+addToolsetOverride('aether:holystone', 18)
 addToolsetOverride('minecraft:iron', 12)
 addToolsetOverride('aether:zanite', 25)
 addToolsetOverride('minecraft:gold', 12)
@@ -157,13 +171,12 @@ addToolsetOverride('mythicmetals:kyber', 15)
 addToolsetOverride('additionaladditions:rose_gold', 16)
 addToolsetOverride('minecraft:diamond', 19)
 addToolsetOverride('cataclysm:black_steel', 21)
-addToolsetOverride('aether:gravitite', 31)
-addToolsetOverride('botania:manasteel', 15)
+addToolsetOverride('aether:gravitite', 29)
+addToolsetOverride('botania:manasteel', 15, 1.125)
 addToolsetOverride('mythicmetals:prometheum', 18)
-addToolsetOverride('mythicmetals:steel', 17)
-addToolsetOverride('mythicmetals:carmot', 22)
-addToolsetOverride('mythicmetals:mythril', 23)
-addToolsetOverride('mythicmetals:orichalcum', 23)
+addToolsetOverride('mythicmetals:steel', 26, 0.775)
+addToolsetOverride('mythicmetals:mythril', 16)
+addToolsetOverride('mythicmetals:orichalcum', 22)
 addToolsetOverride('experienceobelisk:cognitive', 22)
 addToolsetOverride('mythicmetals:midas_gold', 17)
 addToolsetOverride('mythicmetals:stormyx', 18)
@@ -177,7 +190,7 @@ addToolsetOverride('mythicmetals:star_platinum', 48)
 addToolsetOverride('unusualend:pearlescent', 46)
 addToolsetOverride('phantasm:crystalline', 44)
 addToolsetOverride('majruszsdifficulty:enderium', 52)
-addToolsetOverride('mythicmetals:celestium', 60)
-addToolsetOverride('mythicmetals:metallurgium', 60)
+addToolsetOverride('mythicmetals:celestium', 70)
+addToolsetOverride('mythicmetals:metallurgium', 70)
 addToolsetOverride('witherstorm:command_block', 51)
 addToolsetOverride('simplyswords:runic', 40)

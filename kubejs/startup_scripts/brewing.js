@@ -46,6 +46,13 @@ MoreJSEvents.registerPotionBrewing((event) => {
 	event.removeByPotion(null, null, 'witherstormmod:wither');
 	event.removeByPotion(null, null, 'witherstormmod:strong_wither');
 	event.removeByPotion(null, null, 'witherstormmod:long_wither');
+	
+	// Universal Knockback Resistance
+	event.removeByPotion(null, null, 'alexsmobs:knockback_resistance');
+	event.removeByPotion(null, null, 'alexsmobs:strong_knockback_resistance');
+	event.removeByPotion(null, null, 'alexsmobs:long_knockback_resistance');
+
+	event.addPotionBrewing("alexsmobs:bear_fur", "strength", "alexsmobs:knockback_resistance");
 
 	// Universal Haste
 	event.removeByPotion(null, null, 'unusualend:haste');

@@ -605,6 +605,7 @@
 			dependencies: [
 				"356CC1FA4E52AD00"
 				"7FE9B5AB124013D2"
+				"03DC59E95C1B2EB0"
 			]
 			description: ["&7Hint:&r Same as &9Infused equipment&r, &aTerrasteel gear&r can regenerate lost durability from &bBotanical Energy Tablets&r in your inventory."]
 			icon: {

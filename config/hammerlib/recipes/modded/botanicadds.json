@@ -9,7 +9,7 @@
             "botanicadds:flowers/tempestea": true,
             "botanicadds:flowers/vibrantia": true,
             "botanicadds:flowers/apicaria": true,
-            "botanicadds:flowers/energizera": true
+            "botanicadds:flowers/energizera": false
         },
         "botania:runic_altar": {
             "botanicadds:rune_tp": false,
@@ -20,7 +20,7 @@
         "botania:elven_trade": {
             "botanicadds:elven_lapis": true,
             "botanicadds:elven_lapis_block": true,
-            "botanicadds:elvenwood_log": true,
+            "botanicadds:elvenwood_log": false,
             "botanicadds:dreamrock": true
         },
         "botanicadds:gaia_plate": {
@@ -28,7 +28,7 @@
             "botanicadds:gaiasteel_ingot": true,
             "botanicadds:overgrowth_seed": true
         },
-        "botania:pure_daisy": {"botanicadds:dreamwood_from_elvenwood": true},
+        "botania:pure_daisy": {"botanicadds:dreamwood_from_elvenwood": false},
         "botania:mana_infusion": {
             "botanicadds:mana_lapis": true,
             "botanicadds:mana_lapis_block": true,
@@ -46,21 +46,21 @@
             "botanicadds:gaiasteel_nugget": true,
             "botanicadds:gaia_plate": true,
             "botanicadds:gaiasteel_pylon": true,
-            "botanicadds:elvenwood": true,
+            "botanicadds:elvenwood": false,
             "botanicadds:aura_ring_gaia": true,
             "botanicadds:mana_ring_gaia": true,
-            "botanicadds:mana_stealer_sword": true,
+            "botanicadds:mana_stealer_sword": false,
             "botanicadds:elven_altar": true,
             "botanicadds:elven_brewery": true,
             "botanicadds:dreaming_pool": true,
             "botanicadds:sculk_sensor": true,
             "botanicadds:tesseract_attune": true,
-            "botanicadds:recipe_tweaks/mana_fluxfield": true,
+            "botanicadds:recipe_tweaks/mana_fluxfield": false,
             "botanicadds:recipe_tweaks/gaia_spreader": true,
             "botanicadds:elven_fluxfield": true,
             "botanicadds:flowers/floating/glaciflora": true,
             "botanicadds:flowers/floating/apicaria": true,
-            "botanicadds:flowers/floating/energizera": true,
+            "botanicadds:flowers/floating/energizera": false,
             "botanicadds:flowers/floating/necroidus": true,
             "botanicadds:flowers/floating/rainute": true,
             "botanicadds:flowers/floating/tempestea": true,

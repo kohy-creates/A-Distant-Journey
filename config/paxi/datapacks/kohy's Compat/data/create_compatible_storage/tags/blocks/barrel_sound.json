@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "#create_compatible_storage:fd/cabinets",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/drawers",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/small_drawers",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/drawers_with_books",
+      "required": false
+    },
+    {
+      "id": "#another_furniture:drawers",
+      "required": false
+    }
+  ]
+}

@@ -257,5 +257,12 @@
 			"duration": "6:00",
 			"level": 1
 		}
+	],
+	"alexsmobs:speed_potion_iii": [
+		{
+			"effect": "minecraft:speed",
+			"duration": "0:55",
+			"level": 4
+		}
 	]
 }

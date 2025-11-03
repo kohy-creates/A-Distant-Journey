@@ -1,11 +1,466 @@
 {
+	autofocus_id: "7599371BBE1AC566"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "archaeology"
 	group: "4C4C64E64E42D01F"
+	icon: {
+		Count: 1
+		id: "betterarcheology:iron_brush"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "6605A4D24E60B3C0"
+	images: [{
+		height: 1.75d
+		image: "hearth_and_home:block/large_pot_bottom"
+		rotation: 45.0d
+		width: 1.75d
+		x: 3.0d
+		y: -1.5d
+	}]
 	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			icon: {
+				Count: 1
+				id: "betterarcheology:iron_brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 0.75d
+			id: "7599371BBE1AC566"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Craft a Brush and start your adventure with archaeology!"
+			tasks: [{
+				id: "2160B71AB112B58C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "c:brushes"
+					}
+				}
+				title: "Any Brush"
+				type: "item"
+			}]
+			title: "Lessons in History"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			icon: "minecraft:brewer_pottery_sherd"
+			id: "6E9DF0158B30E01A"
+			subtitle: "Find any Pottery Sherd"
+			tasks: [{
+				id: "63BA22B3E34163EA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:decorated_pot_sherds"
+					}
+				}
+				title: "Any Pottery Sherd"
+				type: "item"
+			}]
+			title: "Ceramics"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6E9DF0158B30E01A"]
+			id: "64335FCCDBA15F48"
+			subtitle: "Craft a Decorated Pot"
+			tasks: [{
+				id: "60DBA07C307D79E2"
+				item: "minecraft:decorated_pot"
+				type: "item"
+			}]
+			title: "Ancient Restoration"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			icon: "betterarcheology:creeper_fossil"
+			id: "6865B0C04EAC4594"
+			subtitle: "Reconstruct a Creeper Fossil"
+			tasks: [
+				{
+					id: "31814EFB01698B0B"
+					item: "betterarcheology:creeper_fossil"
+					type: "item"
+				}
+				{
+					id: "3A14071FCF2AB1F9"
+					item: "betterarcheology:creeper_fossil_body"
+					type: "item"
+				}
+				{
+					id: "2107767BF2BECB7A"
+					item: "betterarcheology:creeper_fossil_head"
+					type: "item"
+				}
+			]
+			title: "Fossil Hunter: Creeper Fossil"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			icon: "betterarcheology:villager_fossil"
+			id: "1E4D545A61F74667"
+			subtitle: "Reconstruct a Villager Fossil"
+			tasks: [
+				{
+					id: "57AB934E7B019FFC"
+					item: "betterarcheology:villager_fossil"
+					type: "item"
+				}
+				{
+					id: "53246204687BDC1E"
+					item: "betterarcheology:villager_fossil_head"
+					type: "item"
+				}
+				{
+					id: "231EF30880B6E5BF"
+					item: "betterarcheology:villager_fossil_body"
+					type: "item"
+				}
+			]
+			title: "Fossil Hunter: Villager Fossil"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			icon: "betterarcheology:chicken_fossil"
+			id: "42B5BF0604C002C1"
+			subtitle: "Reconstruct a Chicken Fossil"
+			tasks: [
+				{
+					id: "3692DCFF91F9185F"
+					item: "betterarcheology:chicken_fossil"
+					type: "item"
+				}
+				{
+					id: "47C6A75CF6EF40FE"
+					item: "betterarcheology:chicken_fossil_body"
+					type: "item"
+				}
+				{
+					id: "75E9C65AD70B8529"
+					item: "betterarcheology:chicken_fossil_head"
+					type: "item"
+				}
+			]
+			title: "Fossil Hunter: Chicken Fossil"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			icon: "betterarcheology:ocelot_fossil"
+			id: "16A61FB994D9009C"
+			subtitle: "Reconstruct an Ocelot Fossil"
+			tasks: [
+				{
+					id: "76B74AB699F6F51B"
+					item: "betterarcheology:ocelot_fossil"
+					type: "item"
+				}
+				{
+					id: "486BC1B87B48FC7A"
+					item: "betterarcheology:ocelot_fossil_body"
+					type: "item"
+				}
+				{
+					id: "749F00C385300C6F"
+					item: "betterarcheology:ocelot_fossil_head"
+					type: "item"
+				}
+			]
+			title: "Fossil Hunter: Ocelot Fossil"
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			icon: "betterarcheology:wolf_fossil"
+			id: "47315ED04C15EF9B"
+			tasks: [
+				{
+					id: "7022E07464068339"
+					item: "betterarcheology:wolf_fossil"
+					type: "item"
+				}
+				{
+					id: "6ECCDA3E0EF75041"
+					item: "betterarcheology:wolf_fossil_body"
+					type: "item"
+				}
+				{
+					id: "5B0EDBCA9179FAEF"
+					item: "betterarcheology:wolf_fossil_head"
+					type: "item"
+				}
+			]
+			title: "Fossil Hunter: Wolf Fossil"
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			icon: "betterarcheology:sheep_fossil"
+			id: "11A56196F5E45885"
+			subtitle: "Reconstruct a Sheep Fossil"
+			tasks: [
+				{
+					id: "37CDD1E5B1E08324"
+					item: "betterarcheology:sheep_fossil"
+					type: "item"
+				}
+				{
+					id: "57BD9BA832F43402"
+					item: "betterarcheology:sheep_fossil_body"
+					type: "item"
+				}
+				{
+					id: "32CB4BFF8C2FC7E7"
+					item: "betterarcheology:sheep_fossil_head"
+					type: "item"
+				}
+			]
+			title: "Fossil Hunter: Sheep Fossil"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			icon: "betterarcheology:guardian_fossil"
+			id: "54DB18D8A01CF54B"
+			subtitle: "Reconstruct a Guardian Fossil"
+			tasks: [
+				{
+					id: "2B6E09F275476B7A"
+					item: "betterarcheology:guardian_fossil"
+					type: "item"
+				}
+				{
+					id: "6E006E95E1CB8FC4"
+					item: "betterarcheology:guardian_fossil_head"
+					type: "item"
+				}
+				{
+					id: "1AB5D13241F9134A"
+					item: "betterarcheology:guardian_fossil_body"
+					type: "item"
+				}
+			]
+			title: "Fossil Hunter: Guardian Fossil"
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6E9DF0158B30E01A"]
+			icon: "minecraft:prize_pottery_sherd"
+			icon_scale: 0.75d
+			id: "45EB941110554E0E"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Collect at least one of every Pottery Sherd"
+			tasks: [
+				{
+					id: "595D02F4D5A6C849"
+					item: "alexscaves:dinosaur_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "01C95FED79937E8E"
+					item: "alexscaves:footprint_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "19D861AFF466C063"
+					item: "alexscaves:guardian_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "669218B1B91B34B2"
+					item: "alexscaves:hero_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "0BE59F209A860F79"
+					item: "minecraft:angler_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "3110612B785610DF"
+					item: "minecraft:archer_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "213136ECEE8DD475"
+					item: "minecraft:arms_up_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "22AF4475494BDE10"
+					item: "minecraft:blade_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "321728E8B4A4441D"
+					item: "minecraft:brewer_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "54D25901A84577D1"
+					item: "minecraft:burn_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "0E0826B3CF3C281F"
+					item: "minecraft:danger_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "3DDFFE0CCC6E1FA6"
+					item: "minecraft:explorer_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "671DAA50E5C68207"
+					item: "minecraft:friend_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "7D48CB5E14B5C289"
+					item: "minecraft:heart_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "3097D5CC37C2D636"
+					item: "minecraft:heartbreak_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "4DEDF2A04334DF60"
+					item: "minecraft:howl_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "0B33933042371796"
+					item: "minecraft:miner_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "45F3CFF9649FC301"
+					item: "minecraft:mourner_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "50B3DF3834E94259"
+					item: "minecraft:plenty_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "35EEB8F6EACA65D4"
+					item: "minecraft:prize_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "5738C25A39FF90F4"
+					item: "minecraft:sheaf_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "743E3C0BA5FE11C3"
+					item: "minecraft:shelter_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "0AF3C347140AB8FD"
+					item: "minecraft:skull_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "602226DF3B6B1956"
+					item: "minecraft:snort_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "00C9FE66E1693CE5"
+					item: "netherexp:botanical_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "639B779168464688"
+					item: "netherexp:deception_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "35C2785E6DE79D20"
+					item: "netherexp:eldritch_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "776B56DBF699EE77"
+					item: "netherexp:firearm_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "16D3D34EB7D51A5A"
+					item: "netherexp:marionette_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "320D2001C4291909"
+					item: "netherexp:sealed_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "5EE4A70C778D74DA"
+					item: "netherexp:spectre_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "616B61E08B7931EF"
+					item: "upgrade_aquatic:predator_pottery_sherd"
+					type: "item"
+				}
+			]
+			title: "Certificate of Completion"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6E9DF0158B30E01A"]
+			id: "10E23382BDF3B0D3"
+			subtitle: "Find a Sniffer Egg"
+			tasks: [{
+				id: "5B68DDAB62403EEA"
+				item: "minecraft:sniffer_egg"
+				type: "item"
+			}]
+			title: "Prehistoric Comeback"
+			x: -1.0d
+			y: -1.5d
+		}
+	]
 	title: "Archaeology"
 }

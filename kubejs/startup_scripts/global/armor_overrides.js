@@ -389,7 +389,7 @@ global.armorOverrides = {
 	},
 	'botania:terrasteel': {
 		'generic.armor': {
-			values: [7, 9, 8, 6],
+			values: [11, 13, 12, 10],
 			operation: 0
 		},
 		'generic.knockback_resistance': {
@@ -400,14 +400,6 @@ global.armorOverrides = {
 	'mythicmetals:tidesinger': {
 		'generic.armor': {
 			values: [5, 8, 7, 5],
-			operation: 0
-		},
-		'additionalentityattributes:player.water_visibility': {
-			values: [0, 0, 0, 0],
-			operation: 0
-		},
-		'additionalentityattributes:generic.water_speed': {
-			values: [0, 0, 0, 0],
 			operation: 0
 		},
 		'forge:swim_speed': {
@@ -422,14 +414,6 @@ global.armorOverrides = {
 	'mythicmetals:aquarium': {
 		'generic.armor': {
 			values: [3, 4, 3, 2],
-			operation: 0
-		},
-		'additionalentityattributes:player.water_visibility': {
-			values: [0, 0, 0, 0],
-			operation: 0
-		},
-		'additionalentityattributes:generic.water_speed': {
-			values: [0, 0, 0, 0],
 			operation: 0
 		},
 		'forge:swim_speed': {

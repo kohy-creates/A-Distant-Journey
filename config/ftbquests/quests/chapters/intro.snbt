@@ -188,7 +188,7 @@
 				""
 				"An early game method of quick travel are &eroads&f."
 				""
-				"&eRoads&r can be made by simply laying down a &eDirt Path&f from one point to another and charting it using &6&lSigns&r to connect them together. Simply left-click a sign at the beginning of your road, walk through it, and finally left-click another sign at its end."
+				"&eRoads&r can be made by simply laying down a &eDirt Path&f from one point to another and charting it using a &6&lCharting Map&r. It comes with an instruction on how to use it, so I am not going to dive into details."
 				""
 				"&7&lHINT:&r The road &ndoesn't have to be very wide&r nor does it even have to be in perfect condition. The settings are so loose for those that you don't have to spend ages on building a simple road."
 				""
@@ -221,17 +221,24 @@
 			id: "7D7F1AD28AE3CF50"
 			min_required_tasks: 1
 			subtitle: "Click to read"
-			tasks: [{
-				id: "024212DF63502725"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "via_romana:guide"
+			tasks: [
+				{
+					id: "024212DF63502725"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "via_romana:guide"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "35920FBD787672B7"
+					item: "via_romana:charting_map"
+					type: "item"
+				}
+			]
 			title: "&l&fTutorial:&r &6Quick Travel"
 			x: 1.5d
 			y: -4.5d

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "woodworks:bamboo_closet",
+      "required": false
+    },
+    {
+      "id": "woodworks:trapped_bamboo_closet",
+      "required": false
+    }
+  ]
+}

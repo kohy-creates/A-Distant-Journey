@@ -70,8 +70,8 @@ underwaterBlockBreakBubbles = true
 decoratedPotsSpawnBubbles = true
 openingBarrelsSpawnsBubbles = true
 openingChestsSpawnsBubbles = true
-chestsOpenRandomlyUnderwater = true
-randomChestOpeningNeedsSoulSand = false
+chestsOpenRandomlyUnderwater = false
+randomChestOpeningNeedsSoulSand = true
 dispenseItemBubbles = true
 rainIncreasesLeavesSpawningParticles = true
 

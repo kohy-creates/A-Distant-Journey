@@ -50,7 +50,7 @@
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
-			icon: "minecraft:chest"
+			icon: "quark:oak_chest"
 			id: "6A911AFF4185ED0D"
 			shape: "diamond"
 			size: 2.0d

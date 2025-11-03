@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "storagedelight:oak_bookshelf_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:spruce_bookshelf_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:birch_bookshelf_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:jungle_bookshelf_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:acacia_bookshelf_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:dark_oak_bookshelf_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:crimson_bookshelf_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:warped_bookshelf_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:mangrove_bookshelf_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:bamboo_bookshelf_with_door",
+      "required": false
+    },
+    {
+      "id": "storagedelight:cherry_bookshelf_with_door",
+      "required": false
+    }
+  ]
+}

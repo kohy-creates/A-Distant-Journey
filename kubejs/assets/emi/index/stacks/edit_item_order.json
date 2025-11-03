@@ -1062,6 +1062,43 @@
 		"item:quark:ancient_hanging_sign",
 		"item:quark:ancient_boat",
 		"item:quark:ancient_chest_boat",
+		"item:snifferplus:stone_pine_log",
+		"item:snifferplus:stone_pine_wood",
+		"item:everycomp:q/snifferplus/stone_pine_post",
+		"item:snifferplus:stripped_stone_pine_log",
+		"item:snifferplus:stripped_stone_pine_wood",
+		"item:everycomp:q/snifferplus/stripped_stone_pine_post",
+		"item:snifferplus:stone_pine_planks",
+		"item:everycomp:q/snifferplus/stone_pine_bookshelf",
+		"item:everycomp:hc/snifferplus/stone_pine_bench",
+		"item:everycomp:hc/snifferplus/stone_pine_chair",
+		"item:everycomp:hc/snifferplus/stone_pine_couch",
+		"item:everycomp:hc/snifferplus/stone_pine_dining_bench",
+		"item:everycomp:hc/snifferplus/stone_pine_side_table",
+		"item:everycomp:hc/snifferplus/stone_pine_desk",
+		"item:everycomp:hc/snifferplus/stone_pine_nightstand",
+		"item:everycomp:hc/snifferplus/stone_pine_table",
+		"item:everycomp:hc/snifferplus/stone_pine_counter",
+		"item:everycomp:fd/snifferplus/stone_pine_cabinet",
+		"item:everycomp:q/snifferplus/stone_pine_chest",
+		"item:everycomp:hc/snifferplus/stone_pine_fancy_bed",
+		"item:snifferplus:stone_pine_stairs",
+		"item:snifferplus:stone_pine_slab",
+		"item:v_slab_compat:snifferplus/stone_pine_vertical_slab",
+		"item:suppsquared:snifferplus/item_shelf_stone_pine",
+		"item:snifferplus:stone_pine_fence",
+		"item:snifferplus:stone_pine_fence_gate",
+		"item:snifferplus:stone_pine_door",
+		"item:snifferplus:stone_pine_trapdoor",
+		"item:everycomp:q/snifferplus/stone_pine_ladder",
+		"item:everycomp:hnhome/snifferplus/stone_pine_lattice",
+		"item:snifferplus:stone_pine_pressure_plate",
+		"item:snifferplus:stone_pine_button",
+		"item:snifferplus:stone_pine_sign",
+		"item:supplementaries:snifferplus/sign_post_stone_pine",
+		"item:snifferplus:stone_pine_hanging_sign",
+		"item:snifferplus:stone_pine_boat",
+		"item:snifferplus:stone_pine_chest_boat",
 		"item:upgrade_aquatic:driftwood_log",
 		"item:upgrade_aquatic:driftwood",
 		"item:everycomp:q/upgrade_aquatic/driftwood_post",
@@ -1753,43 +1790,6 @@
 		"item:ecologics:flowering_azalea_hanging_sign",
 		"item:ecologics:flowering_azalea_boat",
 		"item:ecologics:flowering_azalea_chest_boat",
-		"item:snifferplus:stone_pine_log",
-		"item:snifferplus:stone_pine_wood",
-		"item:everycomp:q/snifferplus/stone_pine_post",
-		"item:snifferplus:stripped_stone_pine_log",
-		"item:snifferplus:stripped_stone_pine_wood",
-		"item:everycomp:q/snifferplus/stripped_stone_pine_post",
-		"item:snifferplus:stone_pine_planks",
-		"item:everycomp:q/snifferplus/stone_pine_bookshelf",
-		"item:everycomp:hc/snifferplus/stone_pine_bench",
-		"item:everycomp:hc/snifferplus/stone_pine_chair",
-		"item:everycomp:hc/snifferplus/stone_pine_couch",
-		"item:everycomp:hc/snifferplus/stone_pine_dining_bench",
-		"item:everycomp:hc/snifferplus/stone_pine_side_table",
-		"item:everycomp:hc/snifferplus/stone_pine_desk",
-		"item:everycomp:hc/snifferplus/stone_pine_nightstand",
-		"item:everycomp:hc/snifferplus/stone_pine_table",
-		"item:everycomp:hc/snifferplus/stone_pine_counter",
-		"item:everycomp:fd/snifferplus/stone_pine_cabinet",
-		"item:everycomp:q/snifferplus/stone_pine_chest",
-		"item:everycomp:hc/snifferplus/stone_pine_fancy_bed",
-		"item:snifferplus:stone_pine_stairs",
-		"item:snifferplus:stone_pine_slab",
-		"item:v_slab_compat:snifferplus/stone_pine_vertical_slab",
-		"item:suppsquared:snifferplus/item_shelf_stone_pine",
-		"item:snifferplus:stone_pine_fence",
-		"item:snifferplus:stone_pine_fence_gate",
-		"item:snifferplus:stone_pine_door",
-		"item:snifferplus:stone_pine_trapdoor",
-		"item:everycomp:q/snifferplus/stone_pine_ladder",
-		"item:everycomp:hnhome/snifferplus/stone_pine_lattice",
-		"item:snifferplus:stone_pine_pressure_plate",
-		"item:snifferplus:stone_pine_button",
-		"item:snifferplus:stone_pine_sign",
-		"item:supplementaries:snifferplus/sign_post_stone_pine",
-		"item:snifferplus:stone_pine_hanging_sign",
-		"item:snifferplus:stone_pine_boat",
-		"item:snifferplus:stone_pine_chest_boat",
 		"item:v_slab_compat:witherstormmod/tainted_stone_vertical_slab",
 		"item:v_slab_compat:botania/red_pavement_vertical_slab",
 		"item:v_slab_compat:botania/metamorphic_plains_bricks_vertical_slab",
@@ -6367,8 +6367,156 @@
 			"after": "item:quark:ancient_boat"
 		},
 		{
-			"stack": "item:upgrade_aquatic:driftwood_log",
+			"stack": "item:snifferplus:stone_pine_log",
 			"after": "item:quark:ancient_chest_boat"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_wood",
+			"after": "item:snifferplus:stone_pine_log"
+		},
+		{
+			"stack": "item:everycomp:q/snifferplus/stone_pine_post",
+			"after": "item:snifferplus:stone_pine_wood"
+		},
+		{
+			"stack": "item:snifferplus:stripped_stone_pine_log",
+			"after": "item:everycomp:q/snifferplus/stone_pine_post"
+		},
+		{
+			"stack": "item:snifferplus:stripped_stone_pine_wood",
+			"after": "item:snifferplus:stripped_stone_pine_log"
+		},
+		{
+			"stack": "item:everycomp:q/snifferplus/stripped_stone_pine_post",
+			"after": "item:snifferplus:stripped_stone_pine_wood"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_planks",
+			"after": "item:everycomp:q/snifferplus/stripped_stone_pine_post"
+		},
+		{
+			"stack": "item:everycomp:q/snifferplus/stone_pine_bookshelf",
+			"after": "item:snifferplus:stone_pine_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/snifferplus/stone_pine_bench",
+			"after": "item:everycomp:q/snifferplus/stone_pine_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/snifferplus/stone_pine_chair",
+			"after": "item:everycomp:hc/snifferplus/stone_pine_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/snifferplus/stone_pine_couch",
+			"after": "item:everycomp:hc/snifferplus/stone_pine_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/snifferplus/stone_pine_dining_bench",
+			"after": "item:everycomp:hc/snifferplus/stone_pine_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/snifferplus/stone_pine_side_table",
+			"after": "item:everycomp:hc/snifferplus/stone_pine_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/snifferplus/stone_pine_desk",
+			"after": "item:everycomp:hc/snifferplus/stone_pine_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/snifferplus/stone_pine_nightstand",
+			"after": "item:everycomp:hc/snifferplus/stone_pine_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/snifferplus/stone_pine_table",
+			"after": "item:everycomp:hc/snifferplus/stone_pine_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/snifferplus/stone_pine_counter",
+			"after": "item:everycomp:hc/snifferplus/stone_pine_table"
+		},
+		{
+			"stack": "item:everycomp:fd/snifferplus/stone_pine_cabinet",
+			"after": "item:everycomp:hc/snifferplus/stone_pine_counter"
+		},
+		{
+			"stack": "item:everycomp:q/snifferplus/stone_pine_chest",
+			"after": "item:everycomp:fd/snifferplus/stone_pine_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/snifferplus/stone_pine_fancy_bed",
+			"after": "item:everycomp:q/snifferplus/stone_pine_chest"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_stairs",
+			"after": "item:everycomp:hc/snifferplus/stone_pine_fancy_bed"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_slab",
+			"after": "item:snifferplus:stone_pine_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:snifferplus/stone_pine_vertical_slab",
+			"after": "item:snifferplus:stone_pine_slab"
+		},
+		{
+			"stack": "item:suppsquared:snifferplus/item_shelf_stone_pine",
+			"after": "item:v_slab_compat:snifferplus/stone_pine_vertical_slab"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_fence",
+			"after": "item:suppsquared:snifferplus/item_shelf_stone_pine"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_fence_gate",
+			"after": "item:snifferplus:stone_pine_fence"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_door",
+			"after": "item:snifferplus:stone_pine_fence_gate"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_trapdoor",
+			"after": "item:snifferplus:stone_pine_door"
+		},
+		{
+			"stack": "item:everycomp:q/snifferplus/stone_pine_ladder",
+			"after": "item:snifferplus:stone_pine_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/snifferplus/stone_pine_lattice",
+			"after": "item:everycomp:q/snifferplus/stone_pine_ladder"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_pressure_plate",
+			"after": "item:everycomp:hnhome/snifferplus/stone_pine_lattice"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_button",
+			"after": "item:snifferplus:stone_pine_pressure_plate"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_sign",
+			"after": "item:snifferplus:stone_pine_button"
+		},
+		{
+			"stack": "item:supplementaries:snifferplus/sign_post_stone_pine",
+			"after": "item:snifferplus:stone_pine_sign"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_hanging_sign",
+			"after": "item:supplementaries:snifferplus/sign_post_stone_pine"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_boat",
+			"after": "item:snifferplus:stone_pine_hanging_sign"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_chest_boat",
+			"after": "item:snifferplus:stone_pine_boat"
+		},
+		{
+			"stack": "item:upgrade_aquatic:driftwood_log",
+			"after": "item:snifferplus:stone_pine_chest_boat"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood",
@@ -9131,154 +9279,6 @@
 			"after": "item:ecologics:flowering_azalea_boat"
 		},
 		{
-			"stack": "item:snifferplus:stone_pine_log",
-			"after": "item:ecologics:flowering_azalea_chest_boat"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_wood",
-			"after": "item:snifferplus:stone_pine_log"
-		},
-		{
-			"stack": "item:everycomp:q/snifferplus/stone_pine_post",
-			"after": "item:snifferplus:stone_pine_wood"
-		},
-		{
-			"stack": "item:snifferplus:stripped_stone_pine_log",
-			"after": "item:everycomp:q/snifferplus/stone_pine_post"
-		},
-		{
-			"stack": "item:snifferplus:stripped_stone_pine_wood",
-			"after": "item:snifferplus:stripped_stone_pine_log"
-		},
-		{
-			"stack": "item:everycomp:q/snifferplus/stripped_stone_pine_post",
-			"after": "item:snifferplus:stripped_stone_pine_wood"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_planks",
-			"after": "item:everycomp:q/snifferplus/stripped_stone_pine_post"
-		},
-		{
-			"stack": "item:everycomp:q/snifferplus/stone_pine_bookshelf",
-			"after": "item:snifferplus:stone_pine_planks"
-		},
-		{
-			"stack": "item:everycomp:hc/snifferplus/stone_pine_bench",
-			"after": "item:everycomp:q/snifferplus/stone_pine_bookshelf"
-		},
-		{
-			"stack": "item:everycomp:hc/snifferplus/stone_pine_chair",
-			"after": "item:everycomp:hc/snifferplus/stone_pine_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/snifferplus/stone_pine_couch",
-			"after": "item:everycomp:hc/snifferplus/stone_pine_chair"
-		},
-		{
-			"stack": "item:everycomp:hc/snifferplus/stone_pine_dining_bench",
-			"after": "item:everycomp:hc/snifferplus/stone_pine_couch"
-		},
-		{
-			"stack": "item:everycomp:hc/snifferplus/stone_pine_side_table",
-			"after": "item:everycomp:hc/snifferplus/stone_pine_dining_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/snifferplus/stone_pine_desk",
-			"after": "item:everycomp:hc/snifferplus/stone_pine_side_table"
-		},
-		{
-			"stack": "item:everycomp:hc/snifferplus/stone_pine_nightstand",
-			"after": "item:everycomp:hc/snifferplus/stone_pine_desk"
-		},
-		{
-			"stack": "item:everycomp:hc/snifferplus/stone_pine_table",
-			"after": "item:everycomp:hc/snifferplus/stone_pine_nightstand"
-		},
-		{
-			"stack": "item:everycomp:hc/snifferplus/stone_pine_counter",
-			"after": "item:everycomp:hc/snifferplus/stone_pine_table"
-		},
-		{
-			"stack": "item:everycomp:fd/snifferplus/stone_pine_cabinet",
-			"after": "item:everycomp:hc/snifferplus/stone_pine_counter"
-		},
-		{
-			"stack": "item:everycomp:q/snifferplus/stone_pine_chest",
-			"after": "item:everycomp:fd/snifferplus/stone_pine_cabinet"
-		},
-		{
-			"stack": "item:everycomp:hc/snifferplus/stone_pine_fancy_bed",
-			"after": "item:everycomp:q/snifferplus/stone_pine_chest"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_stairs",
-			"after": "item:everycomp:hc/snifferplus/stone_pine_fancy_bed"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_slab",
-			"after": "item:snifferplus:stone_pine_stairs"
-		},
-		{
-			"stack": "item:v_slab_compat:snifferplus/stone_pine_vertical_slab",
-			"after": "item:snifferplus:stone_pine_slab"
-		},
-		{
-			"stack": "item:suppsquared:snifferplus/item_shelf_stone_pine",
-			"after": "item:v_slab_compat:snifferplus/stone_pine_vertical_slab"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_fence",
-			"after": "item:suppsquared:snifferplus/item_shelf_stone_pine"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_fence_gate",
-			"after": "item:snifferplus:stone_pine_fence"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_door",
-			"after": "item:snifferplus:stone_pine_fence_gate"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_trapdoor",
-			"after": "item:snifferplus:stone_pine_door"
-		},
-		{
-			"stack": "item:everycomp:q/snifferplus/stone_pine_ladder",
-			"after": "item:snifferplus:stone_pine_trapdoor"
-		},
-		{
-			"stack": "item:everycomp:hnhome/snifferplus/stone_pine_lattice",
-			"after": "item:everycomp:q/snifferplus/stone_pine_ladder"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_pressure_plate",
-			"after": "item:everycomp:hnhome/snifferplus/stone_pine_lattice"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_button",
-			"after": "item:snifferplus:stone_pine_pressure_plate"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_sign",
-			"after": "item:snifferplus:stone_pine_button"
-		},
-		{
-			"stack": "item:supplementaries:snifferplus/sign_post_stone_pine",
-			"after": "item:snifferplus:stone_pine_sign"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_hanging_sign",
-			"after": "item:supplementaries:snifferplus/sign_post_stone_pine"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_boat",
-			"after": "item:snifferplus:stone_pine_hanging_sign"
-		},
-		{
-			"stack": "item:snifferplus:stone_pine_chest_boat",
-			"after": "item:snifferplus:stone_pine_boat"
-		},
-		{
 			"stack": "item:v_slab_compat:witherstormmod/tainted_stone_vertical_slab",
 			"after": "item:witherstormmod:tainted_stone_slab"
 		},
@@ -11743,6 +11743,43 @@
 		"/quark:ancient_hanging_sign/",
 		"/quark:ancient_boat/",
 		"/quark:ancient_chest_boat/",
+		"/snifferplus:stone_pine_log/",
+		"/snifferplus:stone_pine_wood/",
+		"/everycomp:q\\/snifferplus/stone_pine_post/",
+		"/snifferplus:stripped_stone_pine_log/",
+		"/snifferplus:stripped_stone_pine_wood/",
+		"/everycomp:q\\/snifferplus/stripped_stone_pine_post/",
+		"/snifferplus:stone_pine_planks/",
+		"/everycomp:q\\/snifferplus/stone_pine_bookshelf/",
+		"/everycomp:hc\\/snifferplus/stone_pine_bench/",
+		"/everycomp:hc\\/snifferplus/stone_pine_chair/",
+		"/everycomp:hc\\/snifferplus/stone_pine_couch/",
+		"/everycomp:hc\\/snifferplus/stone_pine_dining_bench/",
+		"/everycomp:hc\\/snifferplus/stone_pine_side_table/",
+		"/everycomp:hc\\/snifferplus/stone_pine_desk/",
+		"/everycomp:hc\\/snifferplus/stone_pine_nightstand/",
+		"/everycomp:hc\\/snifferplus/stone_pine_table/",
+		"/everycomp:hc\\/snifferplus/stone_pine_counter/",
+		"/everycomp:fd\\/snifferplus/stone_pine_cabinet/",
+		"/everycomp:q\\/snifferplus/stone_pine_chest/",
+		"/everycomp:hc\\/snifferplus/stone_pine_fancy_bed/",
+		"/snifferplus:stone_pine_stairs/",
+		"/snifferplus:stone_pine_slab/",
+		"/v_slab_compat:snifferplus\\/stone_pine_vertical_slab/",
+		"/suppsquared:snifferplus\\/item_shelf_stone_pine/",
+		"/snifferplus:stone_pine_fence/",
+		"/snifferplus:stone_pine_fence_gate/",
+		"/snifferplus:stone_pine_door/",
+		"/snifferplus:stone_pine_trapdoor/",
+		"/everycomp:q\\/snifferplus/stone_pine_ladder/",
+		"/everycomp:hnhome\\/snifferplus/stone_pine_lattice/",
+		"/snifferplus:stone_pine_pressure_plate/",
+		"/snifferplus:stone_pine_button/",
+		"/snifferplus:stone_pine_sign/",
+		"/supplementaries:snifferplus\\/sign_post_stone_pine/",
+		"/snifferplus:stone_pine_hanging_sign/",
+		"/snifferplus:stone_pine_boat/",
+		"/snifferplus:stone_pine_chest_boat/",
 		"/upgrade_aquatic:driftwood_log/",
 		"/upgrade_aquatic:driftwood/",
 		"/everycomp:q\\/upgrade_aquatic/driftwood_post/",
@@ -12434,43 +12471,6 @@
 		"/ecologics:flowering_azalea_hanging_sign/",
 		"/ecologics:flowering_azalea_boat/",
 		"/ecologics:flowering_azalea_chest_boat/",
-		"/snifferplus:stone_pine_log/",
-		"/snifferplus:stone_pine_wood/",
-		"/everycomp:q\\/snifferplus/stone_pine_post/",
-		"/snifferplus:stripped_stone_pine_log/",
-		"/snifferplus:stripped_stone_pine_wood/",
-		"/everycomp:q\\/snifferplus/stripped_stone_pine_post/",
-		"/snifferplus:stone_pine_planks/",
-		"/everycomp:q\\/snifferplus/stone_pine_bookshelf/",
-		"/everycomp:hc\\/snifferplus/stone_pine_bench/",
-		"/everycomp:hc\\/snifferplus/stone_pine_chair/",
-		"/everycomp:hc\\/snifferplus/stone_pine_couch/",
-		"/everycomp:hc\\/snifferplus/stone_pine_dining_bench/",
-		"/everycomp:hc\\/snifferplus/stone_pine_side_table/",
-		"/everycomp:hc\\/snifferplus/stone_pine_desk/",
-		"/everycomp:hc\\/snifferplus/stone_pine_nightstand/",
-		"/everycomp:hc\\/snifferplus/stone_pine_table/",
-		"/everycomp:hc\\/snifferplus/stone_pine_counter/",
-		"/everycomp:fd\\/snifferplus/stone_pine_cabinet/",
-		"/everycomp:q\\/snifferplus/stone_pine_chest/",
-		"/everycomp:hc\\/snifferplus/stone_pine_fancy_bed/",
-		"/snifferplus:stone_pine_stairs/",
-		"/snifferplus:stone_pine_slab/",
-		"/v_slab_compat:snifferplus\\/stone_pine_vertical_slab/",
-		"/suppsquared:snifferplus\\/item_shelf_stone_pine/",
-		"/snifferplus:stone_pine_fence/",
-		"/snifferplus:stone_pine_fence_gate/",
-		"/snifferplus:stone_pine_door/",
-		"/snifferplus:stone_pine_trapdoor/",
-		"/everycomp:q\\/snifferplus/stone_pine_ladder/",
-		"/everycomp:hnhome\\/snifferplus/stone_pine_lattice/",
-		"/snifferplus:stone_pine_pressure_plate/",
-		"/snifferplus:stone_pine_button/",
-		"/snifferplus:stone_pine_sign/",
-		"/supplementaries:snifferplus\\/sign_post_stone_pine/",
-		"/snifferplus:stone_pine_hanging_sign/",
-		"/snifferplus:stone_pine_boat/",
-		"/snifferplus:stone_pine_chest_boat/",
 		"/v_slab_compat:witherstormmod\\/tainted_stone_vertical_slab/",
 		"/v_slab_compat:botania\\/red_pavement_vertical_slab/",
 		"/v_slab_compat:botania\\/metamorphic_plains_bricks_vertical_slab/",

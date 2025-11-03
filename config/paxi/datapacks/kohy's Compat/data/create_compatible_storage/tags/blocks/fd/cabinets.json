@@ -1,0 +1,64 @@
+{
+  "values": [
+    {
+      "id": "farmersdelight:oak_cabinet",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:spruce_cabinet",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:birch_cabinet",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:jungle_cabinet",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:acacia_cabinet",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:dark_oak_cabinet",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:crimson_cabinet",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:warped_cabinet",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:mangrove_cabinet",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:bamboo_cabinet",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:cherry_cabinet",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:red_nether_bricks_cabinet",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:nether_bricks_cabinet",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:blackstone_bricks_cabinet",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:powdery_cabinet",
+      "required": false
+    }
+  ]
+}

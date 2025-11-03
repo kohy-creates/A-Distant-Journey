@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "#create_compatible_storage:sd/cabinet_variants",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/glass_cabinets",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/bookshelves_with_door",
+      "required": false
+    },
+    {
+      "id": "#create_compatible_storage:sd/drawers_with_door",
+      "required": false
+    }
+  ]
+}

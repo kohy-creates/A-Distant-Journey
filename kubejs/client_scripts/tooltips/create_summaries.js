@@ -3238,13 +3238,6 @@ const itemsToTooltip = [
 		"controls": []
 	},
 	{
-		item: "ars_nouveau:potion_flask",
-		summary: [
-			"An enchanted flask that extends the time of effects by 50%"
-		],
-		"controls": []
-	},
-	{
 		item: "ars_nouveau:reactive_enchantment",
 		summary: [
 			"Like other enchantments, Reactive levels can only be applied to an item with the previous level of enchantment.",
@@ -3300,13 +3293,6 @@ const itemsToTooltip = [
 		summary: [
 			"Alakarkinos can be summoned anywhere by using a charm on a block.",
 			"To set its home, use the Dominion Wand to bind Alakarkinos to a chest or inventory."
-		],
-		"controls": []
-	},
-	{
-		item: "ars_nouveau:potion_flask",
-		summary: [
-			"An enchanted flask that increases the power of effects by 1, but reduces their time in half."
 		],
 		"controls": []
 	},

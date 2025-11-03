@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "storagedelight:glass_oak_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:glass_spruce_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:glass_birch_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:glass_jungle_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:glass_acacia_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:glass_dark_oak_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:glass_crimson_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:glass_warped_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:glass_mangrove_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:glass_bamboo_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:glass_cherry_cabinet",
+      "required": false
+    }
+  ]
+}

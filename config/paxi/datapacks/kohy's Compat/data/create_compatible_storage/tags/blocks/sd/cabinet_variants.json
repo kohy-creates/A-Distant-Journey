@@ -1,0 +1,92 @@
+{
+  "values": [
+    {
+      "id": "storagedelight:oak_single_door_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:oak_cabinet_with_glass_doors",
+      "required": false
+    },
+    {
+      "id": "storagedelight:spruce_single_door_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:spruce_cabinet_with_glass_doors",
+      "required": false
+    },
+    {
+      "id": "storagedelight:birch_single_door_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:birch_cabinet_with_glass_doors",
+      "required": false
+    },
+    {
+      "id": "storagedelight:jungle_single_door_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:jungle_cabinet_with_glass_doors",
+      "required": false
+    },
+    {
+      "id": "storagedelight:acacia_single_door_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:acacia_cabinet_with_glass_doors",
+      "required": false
+    },
+    {
+      "id": "storagedelight:dark_oak_single_door_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:dark_oak_cabinet_with_glass_doors",
+      "required": false
+    },
+    {
+      "id": "storagedelight:crimson_single_door_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:crimson_cabinet_with_glass_doors",
+      "required": false
+    },
+    {
+      "id": "storagedelight:warped_single_door_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:warped_cabinet_with_glass_doors",
+      "required": false
+    },
+    {
+      "id": "storagedelight:mangrove_single_door_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:mangrove_cabinet_with_glass_doors",
+      "required": false
+    },
+    {
+      "id": "storagedelight:bamboo_single_door_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:bamboo_cabinet_with_glass_doors",
+      "required": false
+    },
+    {
+      "id": "storagedelight:cherry_single_door_cabinet",
+      "required": false
+    },
+    {
+      "id": "storagedelight:cherry_cabinet_with_glass_doors",
+      "required": false
+    }
+  ]
+}

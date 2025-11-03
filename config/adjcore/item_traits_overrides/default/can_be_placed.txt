@@ -1,0 +1,7 @@
+/_boat
+/_raft
+minecraft:end_crystal
+supplementaries:hat_stand
+minecraft:armor_stand
+/target_dummy
+/item_frame

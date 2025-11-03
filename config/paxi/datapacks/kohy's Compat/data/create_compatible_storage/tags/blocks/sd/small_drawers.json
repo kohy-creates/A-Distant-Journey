@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "storagedelight:small_oak_drawers",
+      "required": false
+    },
+    {
+      "id": "storagedelight:small_spruce_drawers",
+      "required": false
+    },
+    {
+      "id": "storagedelight:small_birch_drawers",
+      "required": false
+    },
+    {
+      "id": "storagedelight:small_jungle_drawers",
+      "required": false
+    },
+    {
+      "id": "storagedelight:small_acacia_drawers",
+      "required": false
+    },
+    {
+      "id": "storagedelight:small_dark_oak_drawers",
+      "required": false
+    },
+    {
+      "id": "storagedelight:small_crimson_drawers",
+      "required": false
+    },
+    {
+      "id": "storagedelight:small_warped_drawers",
+      "required": false
+    },
+    {
+      "id": "storagedelight:small_mangrove_drawers",
+      "required": false
+    },
+    {
+      "id": "storagedelight:small_bamboo_drawers",
+      "required": false
+    },
+    {
+      "id": "storagedelight:small_cherry_drawers",
+      "required": false
+    }
+  ]
+}

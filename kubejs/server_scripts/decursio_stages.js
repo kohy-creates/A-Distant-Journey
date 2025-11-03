@@ -159,6 +159,7 @@ ServerEvents.tags('item', resctrictions => {
 		/orichalcum/,
 		/mythril/,
 		/stormyx/,
+		/mythicmetals:steel/
 	]);
 	resctrictions.add('adj:locked_until/light/chapter_1', [
 		'botania:ender_air_bottle',
@@ -251,7 +252,12 @@ ServerEvents.tags('item', resctrictions => {
 		/adamantite/,
 		/hallowed/,
 		// /cursium/,
-		'cataclysm:the_incinerator'
+		'cataclysm:the_incinerator',
+		'botania:terrasteel_helmet',
+		'botania:terrasteel_chestplate',
+		'botania:terrasteel_leggings',
+		'botania:terrasteel_boots',
+		'botania:terra_blade'
 	]);
 	resctrictions.add('adj:locked_until/light/chapter_3', [
 		'mythicmetals:aegis_smithing_template',
