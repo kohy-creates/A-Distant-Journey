@@ -1,10 +1,4 @@
-#DKS mod relies on the existence of the options.txt file to detect whether it is a fresh
-#startup of the game. But mods like Default Options will generate this file at the very
-#beginning of the game startup, which makes this approach infeasible. So this option was
-#introduced to force the key binding reset on next startup.
 force_key_reset = true
-#Current default setup for key bindings. It will be applied if option.txt does not exist.
-#DO NOT TRY TO MODIFY THIS MANUALLY! USE THE CONFIG GUI IN GAME INSTEAD!
 default_key_setup = [
 	"key.attack=key.mouse.left:NONE",
 	"key.use=key.mouse.right:NONE",
@@ -21,7 +15,7 @@ default_key_setup = [
 	"key.playerlist=key.keyboard.tab:NONE",
 	"key.pickItem=key.mouse.middle:NONE",
 	"key.command=key.keyboard.slash:NONE",
-	"key.socialInteractions=key.keyboard.p:NONE",
+	"key.socialInteractions=key.keyboard.unknown:NONE",
 	"key.screenshot=key.keyboard.f4:NONE",
 	"key.togglePerspective=key.keyboard.f5:NONE",
 	"key.fullscreen=key.keyboard.f11:NONE",
@@ -58,6 +52,7 @@ default_key_setup = [
 	"key.mute_microphone=key.keyboard.m:NONE",
 	"key.voice_chat=key.keyboard.v:NONE",
 	"key.voice_chat_settings=key.keyboard.unknown:NONE",
+	"key.immersiveoverlays.toggle=key.keyboard.unknown:NONE",
 	"key.shouldersurfing.adjust_camera_left=key.keyboard.left:CONTROL",
 	"key.shouldersurfing.adjust_camera_right=key.keyboard.right:CONTROL",
 	"key.shouldersurfing.adjust_camera_in=key.keyboard.up:CONTROL",
@@ -66,6 +61,7 @@ default_key_setup = [
 	"key.shouldersurfing.adjust_camera_down=key.keyboard.page.up:CONTROL",
 	"key.shouldersurfing.swap_shoulder=key.keyboard.f7:NONE",
 	"key.shouldersurfing.free_look=key.keyboard.left.alt:NONE",
+	"key.ryoamiclights.dyn_light=key.keyboard.unknown:NONE",
 	"placebo.toggleTrails=key.keyboard.keypad.9:NONE",
 	"placebo.toggleWings=key.keyboard.keypad.8:NONE",
 	"key.carry.desc=key.keyboard.left.shift:NONE",
@@ -74,13 +70,14 @@ default_key_setup = [
 	"key.cataclysm.chestplate_ability=key.keyboard.y:NONE",
 	"key.cataclysm.boots_ability=key.keyboard.v:NONE",
 	"key.spyglass-improvements.use=key.keyboard.z:NONE",
-	"key.backpack=key.keyboard.b:NONE",
 	"key.showmeyourskin.open_settings=key.keyboard.unknown:NONE",
 	"terrastorage.keybinding.favorite_item_modifier=key.keyboard.left.alt:NONE",
 	"key.map_atlases.open_minimap=key.keyboard.unknown:NONE",
 	"key.map_atlases.zoom_out_minimap=key.keyboard.keypad.subtract:NONE",
 	"key.map_atlases.zoom_in_minimap=key.keyboard.keypad.add:NONE",
 	"ponder.keyinfo.ponder=key.keyboard.w:NONE",
+	"key.cofh.mode_change_increment=key.keyboard.v:NONE",
+	"key.cofh.mode_change_decrement=key.keyboard.b:NONE",
 	"keybinds.combatroll.roll=key.keyboard.r:NONE",
 	"key.open_menu=key.keyboard.m:NONE",
 	"key.ars_nouveau.open_book=key.keyboard.c:NONE",
@@ -97,9 +94,16 @@ default_key_setup = [
 	"adjcore.loadout.2=key.keyboard.f2:NONE",
 	"adjcore.loadout.3=key.keyboard.f3:NONE",
 	"adjcore.hide_gui=key.keyboard.f8:NONE",
+	"key.fbp.toggle_mod=key.keyboard.unknown:NONE",
+	"key.fbp.toggle_animations=key.keyboard.unknown:NONE",
+	"key.fbp.open_settings=key.keyboard.i:NONE",
+	"key.fbp.freeze_particles=key.keyboard.unknown:NONE",
+	"key.fbp.kill_particles=key.keyboard.unknown:NONE",
+	"key.fbp.add_to_blacklist=key.keyboard.x:NONE",
+	"key.fbp.reload_config=key.keyboard.unknown:NONE",
 	"key.ftbquests.quests=key.keyboard.l:NONE",
-	"ping-wheel.key.ping-location=key.keyboard.g:NONE",
-	"ping-wheel.key.name-labels=key.keyboard.left.alt:NONE",
+	"key.pingwheel.ping_location=key.keyboard.g:NONE",
+	"key.pingwheel.open_settings=key.keyboard.unknown:NONE",
 	"create.keyinfo.toolmenu=key.keyboard.left.alt:NONE",
 	"create.keyinfo.toolbelt=key.keyboard.left.alt:NONE",
 	"key.special_ability=key.keyboard.g:NONE",
@@ -116,5 +120,6 @@ default_key_setup = [
 	"quark.keybind.lock_rotation=key.keyboard.k:NONE",
 	"quark.keybind.variant_selector=key.keyboard.r:NONE",
 	"supplementaries.keybind.quiver=key.keyboard.v:NONE",
+	"key.naming_unconvention.reroll=key.keyboard.up:NONE",
 	"key.presencefootsteps.settings=key.keyboard.f10:NONE",
 ]

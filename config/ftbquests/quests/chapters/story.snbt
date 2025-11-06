@@ -2849,28 +2849,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["2023AD6F8FC8986A"]
-			icon: "rediscovered:cyan_rose"
-			id: "6892A22F35F26A93"
-			optional: true
-			shape: "rsquare"
-			subtitle: "Gift Rana a Cyan Rose"
-			tasks: [{
-				checkItem: false
-				entity: "rediscovered:rana"
-				icon: "rediscovered:cyan_rose"
-				id: "0FACE08403C92BB3"
-				item: "rediscovered:cyan_rose"
-				nbt: { }
-				title: "Give Rana a Cyan Rose"
-				type: "questsadditions:interaction"
-				value: 1L
-			}]
-			title: "Smells Just as Sweet"
-			x: 20.5d
-			y: 26.5d
-		}
-		{
 			dependencies: ["6AAB7BBD64FB4562"]
 			icon: "alloy_forgery:adamantite_forge_casing_forge_controller"
 			icon_scale: 0.75d

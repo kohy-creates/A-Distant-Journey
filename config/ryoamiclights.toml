@@ -173,6 +173,7 @@
 				alligator_snapping_turtle = true
 				sugar_glider = true
 				bald_eagle = true
+				bison = true
 
 			[light_sources.settings.entities.tide]
 				tuna = true
@@ -275,6 +276,7 @@
 
 			[light_sources.settings.entities.rediscovered]
 				fish = true
+				rana = true
 
 			[light_sources.settings.entities.mcdw]
 				summoned_bee = true

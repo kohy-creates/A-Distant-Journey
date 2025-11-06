@@ -1,0 +1,67 @@
+Mostly just balance changes. And even more stability! Maybe performance, but just maybe.
+
+------
+
+**[Mod changes]**
+
+- Fixed EMI being exported in Edit Mode
+- Fixed entity.zombieawareness.scent sometimes being shown in JEI.
+- Zombies and similar entities no longer make awful noises when targetting you.
+- Zombified Piglins no longer aggro randomly.
+- Switched Colorwheel back to Irix x Flywheel compat due to significant performance differences.
+- Replaced Sodium Dynamic Lights with RyoamicLights, fixing the random Aether crashes once and for all (I hope).
+- Removed Elvenwood as it served no purpose outside of being an extra step.
+- Removed the ATL warning in chat upon reaching 90% RAM usage. It isn't harmful and doesn't impact much other than occasional stutters, so the message was just confusing.
+
+------
+
+**[Balance changes]**
+
+- Reworked Steel gear to be chapter 1 armor set and not chapter 0 (Steel Ingot recipe now requires Blaze Powder).
+> Total armor defense increased (21 -> 26).
+> Full set bonus gives more damage reduction (5% -> 10%).
+> Steel gear base damage increased (17 -> 26), reduced base attack speed (1.6 -> 1.25).
+> Chestplate and Leggings now decrease movement speed by 6% each.
+
+- Reworked Terrasteel to be chapter 3 armor set and not chapter 0 diamond sidegrade
+> All recipes now use Hallowed Alloy.
+> Increased Terra Blade damage (21 -> 37), making it slightly weaker than Adamantite Sword (38). Gave it 20 armor penetration.
+> Terra Truncator and Terra Shatterer recipes remain UNCHANGED. Same applies to other items crafted with them, making only the gear post-Aether
+
+- Reworked Stormyx, it is now an alloy made with Raw Stormyx, Zanite and Amethyst Dust.
+> Moved from chapter 1 to chapter 2, buffed accordingly.
+> Added set bonus: grants a short ranged dash, 10% chance to avoid incoming damage
+
+- Mythril and Orichalcum gear durability reduced (2500 -> 2000).
+- Reduced Mythril tools base damage (23 -> 16).
+- Reduced Orichalcum tools base damage (23 -> 22).
+- Reduced Elementium gear damage (25 -> 22).
+- Reduced Manasteel gear damage (17 -> 15).
+- Nerfed Pitchfork damage (29 -> 16)
+- Diamond armor total defense reduced (26 -> 23).
+- Reduced Warglaive damage multiplier (0.8x -> 0.7x).
+- Reduced Warglaive attack range (2.6 -> 2.2)
+- Removed Cutlasses.
+- Shuffled numbers for Witches, Vindicators, Pillagers.
+- Scythe damage multiplier increased (1.2x -> 1.35x).
+- Glaive damage multiplier increased (1.15x -> 1.2x) and increased attack speed (1.2 -> 1.3).
+- Spear attack speed increased (1.1 -> 1.2).
+The idea is that Scythes and Glaives have higher DPS than other weapons at the cost of being two handed, while spears are sort of a sidegrade to swords - trading attack speed for extra range.
+- Katanas have a new effect - landing a 3 hit combo increases movement speed for a short while.
+- Manasteel gear has 10% more attack speed.
+- Eye of Verdant Bloom is slightly easier to craft.
+- Increased Wolf HP (40 -> 100) and gave them 4 defense points by default.
+- Reduced Sabrewing damage (30 -> 27)
+- Buffed Heavy Crossbow and Slayer Crossbow damage. 
+
+------
+
+**[Other]**
+
+- Fixed vanilla Chests and Shields still being used in some recipes, making them uncraftable.
+- Fixed Free The End being granted for holding a Dragon Head rather than killing the Ender Dragon.
+- Mobs can no longer deal critical strikes (why was that even a thing)...
+- ...but mobs in hardcore have a 10% chance to critically strike the player.
+- Fixed Nature's Compass only needing a 10th of a Mana Pool to craft (it's supposed to be an entire Mana Pool due to balancing reasons).
+- Fixed multiplayer servers sometimes not giving progress to all players (fix doesn't apply backwards, progress to next chapter to fix for everyone! Or do /adjresetprogress)
+- Fixed Chapter 4 not being progressed to properly, causing some players to be unable to enter The End (probably also not backwards compatible, didn't test if it is).

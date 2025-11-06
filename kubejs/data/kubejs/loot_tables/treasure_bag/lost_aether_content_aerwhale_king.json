@@ -13,6 +13,17 @@
 			]
 		},
 		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "lost_aether_content:platinum_key",
+					"quality": 4,
+					"functions": []
+				}
+			]
+		},
+		{
 			"rolls": {
 				"min": 20,
 				"max": 30

@@ -57,6 +57,8 @@ const gamerules = {
  */
 function changeGamerules(server, stage) {
 	const rulesToApply = gamerules[stage];
+	
+	if (!rulesToApply) return;
 
 	for (const [gamerule, value] of Object.entries(rulesToApply)) {
 		server.gameRules.set(gamerule, value)
@@ -134,23 +136,32 @@ ServerEvents.tick(event => {
 
 PlayerEvents.tick(event => {
 	const player = event.getPlayer();
-	const stage = event.getServer().persistentData.chapters.get(CURRENT_STAGE)
+	const server = event.getServer();
+	const stage = server.persistentData.chapters.get(CURRENT_STAGE);
 	if (stage) {
 		const stageName = stage.toString().replace("\"", "");
+		const currentIndex = Number.parseInt(stageName.replace('chapter_', ''));
+
 		if (!player.stages.has(stageName)) {
-			player.stages.add(stageName);
-			event.getServer().runCommandSilent(
-				'/decstages add ' + player.getUsername() + ' ' + stageName + ' true'
-			)
-			// event.getServer().runCommandSilent(
-			// 	'/adjreloademi ' + player.getUsername()
-			// )
+
+			for (let i = 0; i <= currentIndex; i++) {
+				let stageToGrant = STAGES[i];
+				if (!player.stages.has(stageToGrant)) {
+					player.stages.add(stageToGrant);
+					server.runCommandSilent(
+						'/decstages add ' + player.getUsername() + ' ' + stageToGrant + ' true'
+					);
+				}
+			}
+
 		}
-		if (stage == 'chapter_0' && player.level.dimension == 'minecraft:the_nether') {
-			event.getServer().persistentData.chapters.next_stage = 'chapter_1';
+
+		if (stageName === 'chapter_0' && player.level.dimension === 'minecraft:the_nether') {
+			server.persistentData.chapters.putString(STAGE_TO_SET, 'chapter_1');
 		}
 	}
-})
+});
+
 
 // Restriction tags
 ServerEvents.tags('item', resctrictions => {

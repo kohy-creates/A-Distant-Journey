@@ -31,6 +31,7 @@ function setEntityAttributes(entity, health, damage, armor) {
 	if (armor != null) {
 		entity.setAttributeBaseValue($Attributes.ARMOR, armor)
 	}
+	entity.setAttributeBaseValue($ALObjects.Attributes.CRIT_CHANCE.get(), 0);
 }
 
 const entitiesScalingWithSize = [
@@ -200,6 +201,7 @@ function setGear(entity, isHardcore) {
  */
 function hardcoreModifications(entity) {
 	setHealth(entity, Math.ceil(entity.maxHealth * 1.5));
+	entity.setAttributeBaseValue($ALObjects.Attributes.CRIT_CHANCE.get(), 0.1);
 	switch (entity.type) {
 		case 'minecraft:wither_skeleton': {
 			if (randomChance(10)) {
