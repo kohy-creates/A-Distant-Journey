@@ -1,12 +1,13 @@
-const MiningSpeedUUID = '923052c1-2354-48ba-b01a-51e31360e218'
-const FlyingUUID = '923052c1-2354-48ba-b01a-51e31360e219'
-const FishingUUID = 'b790c0a0-0934-41e2-a2f4-d59b6671db5b'
-
 const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier')
 const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
 
 PlayerEvents.tick(event => {
 	const player = event.player;
+
+	const MiningSpeedUUID = '923052c1-2354-48ba-b01a-51e31360e218'
+	const FlyingUUID = '923052c1-2354-48ba-b01a-51e31360e219'
+	const FishingUUID = 'b790c0a0-0934-41e2-a2f4-d59b6671db5b'
+	const SpellBookManaUUID = 'b790c0a0-0934-41e2-a2f4-d59b6671db5b'
 
 	// Base attributes
 	const miningSpeedAttribute = player.getAttribute('attributeslib:mining_speed')
@@ -24,9 +25,28 @@ PlayerEvents.tick(event => {
 	// Architect Prism grants creative flight when in inventory
 	const inventory = player.getInventory().getAllItems();
 	let hasPrism = false;
+	let spellBookTier = 0;
 	inventory.forEach(item => {
-		if (item.id == 'structure_gel:building_tool')
-			hasPrism = true;
+
+		switch (item.id) {
+			case 'structure_gel:building_tool':
+				hasPrism = true;
+				break;
+
+			case 'ars_nouveau:novice_spell_book':
+				if (spellBookTier < 1) spellBookTier = 1;
+				break;
+			case 'ars_nouveau:apprentice_spell_book':
+				if (spellBookTier < 2) spellBookTier = 2;
+				break;
+			case 'ars_nouveau:archmage_spell_book':
+				if (spellBookTier < 3) spellBookTier = 3;
+				break;
+			case 'ars_nouveau:creative_spell_book':
+				if (spellBookTier < 3) spellBookTier = 3;
+				break;
+		}
+
 	})
 	const creativeFlightAttribute = player.getAttribute('attributeslib:creative_flight');
 	const flying = creativeFlightAttribute.getModifier(FlyingUUID)
@@ -37,12 +57,33 @@ PlayerEvents.tick(event => {
 		creativeFlightAttribute.removeModifier(FlyingUUID)
 	}
 
+	const maxManaAttribute = player.getAttribute('ars_nouveau:ars_nouveau.perk.max_mana');
+	const spellBookMana = maxManaAttribute.getModifier(SpellBookManaUUID);
+	if (!spellBookMana && spellBookTier > 0) {
+
+		let amount = 0;
+		switch (spellBookTier) {
+			case 2:
+				amount = 25;
+				break;
+			case 3:
+				amount = 50;
+				break;
+		}
+		maxManaAttribute.addPermanentModifier(new $AttributeModifier(SpellBookManaUUID, 'Spell Book Max Mana', amount, $Operation.ADDITION))
+	}
+	else if (spellBookMana && spellBookTier == 0)
+		maxManaAttribute.removeModifier(SpellBookManaUUID);
+
+
 	// const persistentData = player.getPersistentData();
 
 	// if (player.getServer().isHardcore() && !persistentData.gaveRing) {
 	// 	persistentData.putBoolean('gaveRing', true)
 	// 	player.give('enigmaticlegacy:cursed_ring')
 	// }
+
+
 })
 
 // Queen's Desire

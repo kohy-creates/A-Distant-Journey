@@ -170,6 +170,9 @@
 				murmur = true
 				murmur_head = true
 				catfish = true
+				alligator_snapping_turtle = true
+				sugar_glider = true
+				bald_eagle = true
 
 			[light_sources.settings.entities.tide]
 				tuna = true
@@ -204,6 +207,13 @@
 				catfish = true
 				dragonfly = true
 				hippo = true
+				duck = true
+				bluejay = true
+				alligator = true
+				tortoise = true
+				canary = true
+				lizard_tail = true
+				finch = true
 
 			[light_sources.settings.entities.quark]
 				toretoise = true
@@ -243,6 +253,7 @@
 				maggot = true
 				pumpkin_spirit = true
 				seared_spirit_not_despawn = true
+				thornshell_crab = true
 
 			[light_sources.settings.entities.artifacts]
 				mimic = true
@@ -252,6 +263,7 @@
 				starbuncle = true
 				drygmy = true
 				spell_proj = true
+				gift_starby = true
 
 			[light_sources.settings.entities.crittersandcompanions]
 				sea_bunny = true

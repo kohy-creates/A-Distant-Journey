@@ -24,6 +24,10 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"10E23382BDF3B0D3"
+				"71C9D73CA3D6B704"
+			]
 			icon: {
 				Count: 1
 				id: "betterarcheology:iron_brush"
@@ -35,7 +39,7 @@
 			id: "7599371BBE1AC566"
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "Craft a Brush and start your adventure with archaeology!"
+			subtitle: "Craft a Brush and start your adventure with archeology!"
 			tasks: [{
 				id: "2160B71AB112B58C"
 				item: {
@@ -83,8 +87,8 @@
 				type: "item"
 			}]
 			title: "Ancient Restoration"
-			x: 1.0d
-			y: -3.0d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
@@ -449,7 +453,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["6E9DF0158B30E01A"]
 			id: "10E23382BDF3B0D3"
 			subtitle: "Find a Sniffer Egg"
 			tasks: [{
@@ -459,8 +462,102 @@
 			}]
 			title: "Prehistoric Comeback"
 			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["10E23382BDF3B0D3"]
+			icon: "quark:ancient_sapling"
+			id: "2E0C540677F75107"
+			subtitle: "Obtain every possible sapling from a Sniffer"
+			tasks: [
+				{
+					id: "16682AF0C585999C"
+					item: "quark:blue_blossom_sapling"
+					type: "item"
+				}
+				{
+					id: "6E33E0AB06844380"
+					item: "quark:lavender_blossom_sapling"
+					type: "item"
+				}
+				{
+					id: "49D0E05ECECF7424"
+					item: "quark:orange_blossom_sapling"
+					type: "item"
+				}
+				{
+					id: "7EDA66BE8241CD21"
+					item: "quark:yellow_blossom_sapling"
+					type: "item"
+				}
+				{
+					id: "611F5D962898E1FA"
+					item: "quark:red_blossom_sapling"
+					type: "item"
+				}
+				{
+					id: "4A9DD22310F35853"
+					item: "snifferplus:stone_pine_sapling"
+					type: "item"
+				}
+				{
+					id: "43A06EFC359FC0AA"
+					item: "quark:ancient_sapling"
+					type: "item"
+				}
+			]
+			title: "Ancient Flora Restoration Program"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["10E23382BDF3B0D3"]
+			icon: "minecraft:torchflower"
+			id: "462719EF646AA7CA"
+			subtitle: "Obtain every Sniffer plant"
+			tasks: [
+				{
+					id: "50AE787CE84257F2"
+					item: "minecraft:torchflower"
+					type: "item"
+				}
+				{
+					id: "7C3B677BD823315B"
+					item: "minecraft:pitcher_plant"
+					type: "item"
+				}
+				{
+					id: "5D4E1690AB2201AA"
+					item: "snifferplus:ivy"
+					type: "item"
+				}
+				{
+					id: "27E060B3E95D159E"
+					item: "snifferplus:fiddlefern"
+					type: "item"
+				}
+				{
+					id: "7BA1176337F172FB"
+					item: "snifferplus:tall_fiddlefern"
+					type: "item"
+				}
+			]
+			title: "Regrown-Reborn"
+			x: -1.0d
 			y: -1.5d
 		}
+		{
+			id: "71C9D73CA3D6B704"
+			subtitle: "Craft an Archeology Table"
+			tasks: [{
+				id: "60D56783FD620999"
+				item: "betterarcheology:archeology_table"
+				type: "item"
+			}]
+			title: "Dig Site Essentials"
+			x: 3.0d
+			y: 0.5d
+		}
 	]
-	title: "Archaeology"
+	title: "Archeological Adventures"
 }

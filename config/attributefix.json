@@ -638,6 +638,17 @@
         "value": 1024
       }
     },
+    "adjcore:player.mana_cost_reduction": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "confluence:ranged_velocity": {
       "enabled": false,
       "min": {

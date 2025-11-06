@@ -6,7 +6,7 @@
 	baseRegen = 4
 	#Base max mana
 	#Range: > 0
-	baseMax = 80
+	baseMax = 100
 	#How often max and regen will be calculated, in ticks. NOTE: Having the base mana regen AT LEAST this value is recommended.
 	#Range: 1 ~ 20
 	updateInterval = 5
