@@ -118,7 +118,7 @@ global.weapon_overrides = {
 	'botania:manasteel_pick': [15 * defaultAttackDamage[1], defaultAttackSpeed[1]],
 	'botania:elementium_pick': [22 * defaultAttackDamage[1], defaultAttackSpeed[1]],
 	'botania:terra_sword': [37, 1.8, 0, 0, 15],
-	'botania:thunder_sword': [33, 2.5,  0, 0, 15],
+	'botania:thunder_sword': [33, 2.5, 0, 0, 15],
 	'botania:star_sword': [48, 1.3, 0, 0, 20],
 	'cataclysm:gauntlet_of_guard': [40, 3.1, 0, 0, 15],
 	'cataclysm:gauntlet_of_bulwark': [40, 3.1, 0, 0, 15],
@@ -179,7 +179,7 @@ addToolsetOverride('mythicmetals:mythril', 16)
 addToolsetOverride('mythicmetals:orichalcum', 22)
 addToolsetOverride('experienceobelisk:cognitive', 22)
 addToolsetOverride('mythicmetals:midas_gold', 17)
-addToolsetOverride('mythicmetals:stormyx', 18)
+addToolsetOverride('mythicmetals:stormyx', 27, 1.125)
 addToolsetOverride('botania:elementium', 22)
 addToolsetOverride('mythicmetals:palladium', 28)
 addToolsetOverride('aether:valkyrie', 36)

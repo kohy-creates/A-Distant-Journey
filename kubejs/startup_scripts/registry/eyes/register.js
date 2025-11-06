@@ -54,19 +54,19 @@ StartupEvents.registry('item', event => {
 				.addAttribute(
 					'minecraft:generic.max_health',
 					eyeUUID['angels'],
-					0.2,
-					'multiply_total'
+					20,
+					'addition'
 				)
 				.addAttribute(
 					'generic.attack_speed',
 					eyeUUID['angels'],
-					-0.1,
+					-0.15,
 					'multiply_total'
 				)
 				.addAttribute(
 					'attributeslib:life_steal',
 					eyeUUID['angels'],
-					0.05,
+					0.13,
 					'addition'
 				)
 		)
@@ -89,7 +89,7 @@ StartupEvents.registry('item', event => {
 				.addAttribute(
 					'minecraft:generic.attack_damage',
 					eyeUUID['desolation'],
-					0.25,
+					0.2,
 					'multiply_total'
 				)
 				.addAttribute(
@@ -101,7 +101,7 @@ StartupEvents.registry('item', event => {
 				.addAttribute(
 					'attributeslib:armor_shred',
 					eyeUUID['desolation'],
-					10,
+					15,
 					'addition'
 				)
 		)
@@ -141,19 +141,13 @@ StartupEvents.registry('item', event => {
 				.addAttribute(
 					'minecraft:generic.movement_speed',
 					eyeUUID['dreams'],
-					0.1,
+					0.16,
 					'multiply_total'
-				)
-				.addAttribute(
-					'minecraft:generic.attack_speed',
-					eyeUUID['dreams'],
-					0.15,
-					'addition'
 				)
 				.addAttribute(
 					'attributeslib:armor_shred',
 					eyeUUID['dreams'],
-					8,
+					10,
 					'addition'
 				)
 		)
@@ -177,7 +171,7 @@ StartupEvents.registry('item', event => {
 				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.mana_regen',
 					eyeUUID['arcanum'],
-					3,
+					6,
 					'addition'
 				)
 				.addAttribute(

@@ -329,8 +329,12 @@ global.armorOverrides = {
 	},
 	'mythicmetals:steel': {
 		'generic.armor': {
-			values: [5, 6, 6, 4],
+			values: [6, 8, 7, 5],
 			operation: 0
+		},
+		'generic.movement_speed': {
+			values: [0, p(-5), p(-2.5), p(-2.5)],
+			operation: 1
 		}
 	},
 	'mythicmetals:kyber': {

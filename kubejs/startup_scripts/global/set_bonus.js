@@ -695,7 +695,7 @@ global.setBonusMap = {
 	},
 	'mythicmetals:steel': {
 		description: [
-			"Reduces incoming damage by 5%",
+			"Reduces incoming damage by 10%",
 			"Become immune to knockback"
 		],
 		effects: [
@@ -703,7 +703,7 @@ global.setBonusMap = {
 				type: "attribute",
 				value: {
 					id: "adjcore:generic.damage_reduction",
-					value: 0.05,
+					value: 0.1,
 					operation: 0
 				}
 			},
@@ -752,7 +752,7 @@ global.setBonusMap = {
 	},
 	'botania:manasteel': {
 		description: [
-			"10% reduced mana cost on Mana Tools and Rods",
+			"10% reduced energy cost on Botanical Energy Tools and Rods",
 			'3 defense'
 		],
 		effects: [
@@ -768,8 +768,8 @@ global.setBonusMap = {
 	},
 	'botania:terrasteel': {
 		description: [
-			"20% reduced mana cost on Mana Tools and Rods",
-			"Passive Mana generation on Mana Tablets",
+			"20% reduced energy cost on Botanical Energy Tools and Rods",
+			"Passive energy generation on Botanical Energy Tablets",
 			'10% reduced damage'
 		],
 		effects: [
@@ -785,7 +785,7 @@ global.setBonusMap = {
 	},
 	'botania:manaweave': {
 		description: [
-			"40% reduced mana cost on Mana Tools and Rods",
+			"40% reduced energy cost on Botanical Energy Tools and Rods",
 			"Increased profficiency with Rods",
 			'25% increased movement speed'
 		],
@@ -976,5 +976,29 @@ global.setBonusMap = {
 			'Become immune to Wither effect'
 		],
 		effects: []
+	},
+	'mythicmetals:stormyx': {
+		description: [
+			'Increases movement speed by 10%',
+			'Grants a short dash'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'generic.movement_speed',
+					value: 0.1,
+					operation: 1
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'combatroll:count',
+					value: 1,
+					operation: 0
+				}
+			}
+		]
 	},
 }

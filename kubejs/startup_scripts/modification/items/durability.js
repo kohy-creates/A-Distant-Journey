@@ -174,7 +174,6 @@ ItemEvents.modification(event => {
 	], 700)
 
 	maxDurability([
-		toolset('mythicmetals:steel'),
 		'mcdw:bow_power_bow',
 		'mcdw:bow_phantom_bow'
 	], 950)
@@ -189,7 +188,8 @@ ItemEvents.modification(event => {
 		toolset('aether_redux:infused_veridium'),
 		armorset('born_in_chaos_v1:nigthmare_mantleofthe_night'),
 		'mcdw:crossbow_pride_of_the_piglins',
-		'mcdw:soul_dagger_soul_knife'
+		'mcdw:soul_dagger_soul_knife',
+		toolset('mythicmetals:steel'),
 	], 1300)
 
 	maxDurability([
@@ -299,7 +299,7 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('mythicmetals:stormyx'),
-	], 1100)
+	], 2400)
 
 	maxDurability([
 		armorset('cataclysm:bone_reptile'),

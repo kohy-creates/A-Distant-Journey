@@ -561,7 +561,7 @@ EntityEvents.hurt(event => {
 	if (player) {
 		const mainhand = player.getMainHandItem().getId();
 		if (mainhand.includes('mcdw:soul_dagger')) {
-			player.addEffect(new $MobEffectInstance('ars_nouveau:mana_regen', 5 * 20, (mainhand == mcdw('soul_dagger', 'eternal_knife') ? 1 : 0)));
+			player.addEffect(new $MobEffectInstance('ars_nouveau:mana_regen', 2 * 20, (mainhand == mcdw('soul_dagger', 'eternal_knife') ? 1 : 0)));
 		}
 	}
 })

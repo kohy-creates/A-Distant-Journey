@@ -128,6 +128,17 @@ ServerEvents.recipes((event) => {
 		'create:crafting/appliances/dough',
 		'create:mixing/dough_by_mixing',
 
+		'alloy_forgery:compat/alloys/steel_from_ingots',
+		'alloy_forgery:compat/alloys/steel_from_raw_ores',
+		'mythicmetals:alloy_forge/alloy_steel_from_ingots',
+		'mythicmetals:alloy_forge/alloy_steel_from_ores',
+		'mythicmetals:alloy_forge/alloy_steel_from_raw_ores',
+
+		'mythicmetals:blasting/blast_stormyx_ingot_from_raw_ore',
+		'mythicmetals:blasting/blast_stormyx_ingot_from_ores',
+		'mythicmetals:alloy_forge/forge_stormyx_ingot_from_ores',
+		'mythicmetals:alloy_forge/forge_stormyx_ingot_from_raw_ore'
+
 
 		///alloy_forgery\:compat\//
 	]
@@ -220,7 +231,7 @@ ServerEvents.recipes((event) => {
 	// 	]
 	// )
 
-	event.recipes.botania.mana_infusion('naturescompass:naturescompass', 'minecraft:compass').mana(100000)
+	event.recipes.botania.mana_infusion('naturescompass:naturescompass', 'minecraft:compass').mana(1000000)
 
 	/**
 	 * Registers a BotanicAdds Gaia Plate recipe
@@ -2300,6 +2311,7 @@ ServerEvents.recipes((event) => {
 		'I I'
 	])
 
+	// Different alloy recipes
 	// Harder Celestium and Metallurgium
 	alloyForgeRecipe(
 		[
@@ -2313,6 +2325,8 @@ ServerEvents.recipes((event) => {
 		3,
 		80
 	)
+
+	// Steel
 	alloyForgeRecipe(
 		[
 			['mythicmetals:hallowed_ingot', 1],
@@ -2324,6 +2338,63 @@ ServerEvents.recipes((event) => {
 		['mythicmetals:metallurgium_ingot', 1],
 		3,
 		80
+	)
+
+	// Stormyx
+	alloyForgeRecipe(
+		[
+			['mythicmetals:raw_stormyx', 1],
+			['aether:zanite_gemstone', 1],
+			['spelunker:amethyst_dust', 3],
+		],
+		['mythicmetals:stormyx_ingot', 1],
+		1,
+		5,
+		[
+			[
+				'2+', 'output', 2
+			]
+		]
+	)
+
+	alloyForgeRecipe(
+		[
+			['#forge:ores/stormyx', 1],
+			['aether:zanite_gemstone', 1],
+			['spelunker:amethyst_dust', 3],
+		],
+		['mythicmetals:stormyx_ingot', 1],
+		1,
+		5,
+		[
+			[
+				'2+', 'output', 2
+			]
+		]
+	)
+
+
+	// Move Steel to chapter 1
+	alloyForgeRecipe(
+		[
+			['iron_ingot', 1],
+			['#c:coal', 1],
+			['blaze_powder', 1],
+		],
+		['mythicmetals:steel_ingot', 1],
+		1,
+		5
+	)
+
+	alloyForgeRecipe(
+		[
+			['raw_iron', 1],
+			['#c:coal', 1],
+			['blaze_powder', 1],
+		],
+		['mythicmetals:steel_ingot', 1],
+		1,
+		5
 	)
 
 	// Change Metallurgium and Celestium gear recipes

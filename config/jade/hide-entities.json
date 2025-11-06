@@ -11,6 +11,7 @@
     "minecraft:item_frame",
     "minecraft:glow_item_frame",
     "xercapaint:easel",
-    "zombieawareness:scent"
+    "zombieawareness:scent",
+    "tiab:time_accelerator_entity_type"
   ]
 }

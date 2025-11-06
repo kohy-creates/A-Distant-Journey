@@ -251,6 +251,7 @@
 				whirlisprig = true
 				starbuncle = true
 				drygmy = true
+				spell_proj = true
 
 			[light_sources.settings.entities.crittersandcompanions]
 				sea_bunny = true
@@ -439,4 +440,25 @@
 
 			[light_sources.settings.entities.wither_spawn_animation]
 				animated_altar_z = true
+
+			[light_sources.settings.entities.aether]
+				blue_swet = true
+				phyg = true
+				aerbunny = true
+				flying_cow = true
+				zephyr = true
+				moa = true
+				sheepuff = true
+				cockatrice = true
+				golden_swet = true
+				whirlwind = true
+				aechor_plant = true
+				slider = true
+				aerwhale = true
+
+			[light_sources.settings.entities.aether_redux]
+				vanilla_swet = true
+
+			[light_sources.settings.entities.tiab]
+				time_accelerator_entity_type = true
 

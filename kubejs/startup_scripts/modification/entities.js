@@ -80,7 +80,7 @@ global.hpModifications = {
 	'minecraft:witch': [110, 10, [0, null, 2, 4, null, 8]],
 	'minecraft:wither': [1000, 10, 6],
 	'minecraft:wither_skeleton': [120, 6, 6],
-	'minecraft:wolf': [40, 20, 0],
+	'minecraft:wolf': [100, 16, 4],
 	'minecraft:zoglin': [200, 30, 0],
 	'minecraft:zombie': [90, 15, [1, 2, null, 3]],
 	'minecraft:zombie_horse': [75, 15, 0],

@@ -70,5 +70,8 @@ EntityEvents.hurt(event => {
 				player.addEffect(new $MobEffectInstance('speed', 4 * 20, 0));
 			}
 		}
+		if (item.getId().includes('stormyx')) {
+			event.getEntity().addEffect(new $MobEffectInstance('cofh_core:shocked', 8 * 20, 0))
+		}
 	}
 })

@@ -1,10 +1,10 @@
-the Turtle Master:Turtle Master
+the Turtle Master:Turtle Master Potion
 item.minecraft.potion.effect.decay:Decay Potion
 item.minecraft.potion.effect.long_decay:Decay Potion
 item.minecraft.potion.effect.strong_decay:Decay Potion
-Knockback Resistance:Stability
-Spell Damage:Magic Power
-Fire Resistance:Obsidian Skin
-Regeneration :Regeneration
-Strength:Wrath
-C
+Knockback Resistance:Stability Potion
+Spell Damage:Magic Power Potion
+Fire Resistance:Obsidian Skin Potion
+Regeneration :Regeneration Potion
+Strength:Wrath Potion
+Poison:Vial of Poison
