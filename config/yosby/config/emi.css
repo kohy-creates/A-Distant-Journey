@@ -9,7 +9,7 @@
 	/**
 	 * Whether cheating in items is enabled.
 	 */
-	cheat-mode: false;
+	cheat-mode: true;
 
 	/**
 	 * How much EMI should use tooltips and popups to show controls and information.
@@ -51,7 +51,7 @@
 	/**
 	 * Where to display status effects in the inventory.
 	 */
-	effect-location: top;
+	effect-location: right-compressed;
 
 	/**
 	 * Whether to display a gray overlay when hovering over a stack.
@@ -103,7 +103,7 @@
 	/**
 	 * Whether the EMI config button should be visible.
 	 */
-	emi-config-button-visibility: hidden;
+	emi-config-button-visibility: shown;
 
 	/**
 	 * Whether the recipe tree button should be visible.
@@ -197,12 +197,12 @@
 	/**
 	 * Which theme to use for the left sidebar
 	 */
-	left-sidebar-theme: vanilla;
+	left-sidebar-theme: transparent;
 
 	/**
 	 * The pages in the right sidebar
 	 */
-	right-sidebar-pages: index, favorites;
+	right-sidebar-pages: index, craftables, lookup-history;
 
 	/**
 	 * The subpanels in the right sidebar
@@ -272,7 +272,7 @@
 	/**
 	 * The pages in the bottom sidebar
 	 */
-	bottom-sidebar-pages: none;
+	bottom-sidebar-pages: favorites;
 
 	/**
 	 * The subpanels in the bottom sidebar
