@@ -1510,11 +1510,6 @@
     "modId": "nochatreports",
     "version": "1.20.1-v2.2.2"
   },
-  "noisium-forge-2.3.0+mc1.20-1.20.1.jar": {
-    "jarName": "noisium-forge-2.3.0+mc1.20-1.20.1.jar",
-    "modId": "noisium",
-    "version": "2.3.0+mc1.20-1.20.1"
-  },
   "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar": {
     "jarName": "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
     "modId": "nerb",
