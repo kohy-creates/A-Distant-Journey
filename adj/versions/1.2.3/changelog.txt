@@ -1,0 +1,18 @@
+Fixes 2 critical bugs.
+
+------
+
+**[Mod changes]**
+
+------
+
+**[Balance changes]**
+
+- Reduced spell cast cooldowns on all Spellbook tiers.
+
+------
+
+**[Other]**
+
+- Re-enabled Neruina block entity ticking prevention.
+- Fixed softlock on death.

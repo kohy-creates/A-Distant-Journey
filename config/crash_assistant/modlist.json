@@ -29,10 +29,10 @@
     "modId": "adjblocks",
     "version": "1.0"
   },
-  "adjcore-1.7.1.jar": {
-    "jarName": "adjcore-1.7.1.jar",
+  "adjcore-1.7.2.jar": {
+    "jarName": "adjcore-1.7.2.jar",
     "modId": "adjcore",
-    "version": "1.7.1"
+    "version": "1.7.2"
   },
   "AdvancedLootInfo-forge-1.20.1-1.4.0.jar": {
     "jarName": "AdvancedLootInfo-forge-1.20.1-1.4.0.jar",
@@ -1380,10 +1380,10 @@
     "modId": "mobtimizations",
     "version": "1.20.1-1.0.0"
   },
-  "modernfix-forge-5.25.0+mc1.20.1.jar": {
-    "jarName": "modernfix-forge-5.25.0+mc1.20.1.jar",
+  "modernfix-forge-5.24.4+mc1.20.1.jar": {
+    "jarName": "modernfix-forge-5.24.4+mc1.20.1.jar",
     "modId": "modernfix",
-    "version": "5.25.0+mc1.20.1"
+    "version": "5.24.4+mc1.20.1"
   },
   "modernworldcreation_forge_2.0.2_MC_1.20.1.jar": {
     "jarName": "modernworldcreation_forge_2.0.2_MC_1.20.1.jar",
@@ -1780,10 +1780,10 @@
     "modId": "shieldexp",
     "version": "1.2.2"
   },
-  "ShoulderSurfing-Forge-1.20.1-4.14.3.jar": {
-    "jarName": "ShoulderSurfing-Forge-1.20.1-4.14.3.jar",
+  "ShoulderSurfing-Forge-1.20.1-4.15.0.jar": {
+    "jarName": "ShoulderSurfing-Forge-1.20.1-4.15.0.jar",
     "modId": "shouldersurfing",
-    "version": "1.20.1-4.14.3"
+    "version": "1.20.1-4.15.0"
   },
   "show-me-your-skin-1.9.0+1.20.jar": {
     "jarName": "show-me-your-skin-1.9.0+1.20.jar",
