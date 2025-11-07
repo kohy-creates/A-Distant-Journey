@@ -51,7 +51,6 @@ ServerEvents.recipes((event) => {
 
 		'minecraft:chest',
 		'farmersdelight:dough',
-		'minecraft:bread',
 		'mythicmetals:orichalcum_hammer',
 		'botania:terra_sword'
 	]
@@ -137,7 +136,9 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:blasting/blast_stormyx_ingot_from_raw_ore',
 		'mythicmetals:blasting/blast_stormyx_ingot_from_ores',
 		'mythicmetals:alloy_forge/forge_stormyx_ingot_from_ores',
-		'mythicmetals:alloy_forge/forge_stormyx_ingot_from_raw_ore'
+		'mythicmetals:alloy_forge/forge_stormyx_ingot_from_raw_ore',
+
+		'minecraft:bread'
 
 
 		///alloy_forgery\:compat\//
