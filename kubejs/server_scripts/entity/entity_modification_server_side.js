@@ -110,13 +110,10 @@ function randomAmount(min, max) {
  * @param {Internal.Entity_} entity 
  */
 function specialCase(entity) {
-	// switch (entity.type) {
-	// 	case 'quark:glass_frame':
-	// 	case 'quark:dyed_item_frame': {
-	// 		entity.kill()
-	// 		break
-	// 	}
-	// }
+	switch (entity.type) {
+		case 'born_in_chaos_v1:nightmare_stalker':
+			scaleEntity(entity, currentStage)
+	}
 }
 
 /**

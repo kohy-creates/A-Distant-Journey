@@ -5,7 +5,7 @@
 	#Tools that aren't from the Aether will mine Aether blocks slower than tools that are from the Aether
 	"Debuff non-Aether tools" = true
 	#Ambrosium Shards can be eaten to restore a half heart of health
-	"Ambrosium Shards are edible" = true
+	"Ambrosium Shards are edible" = false
 	#Makes Berry Bushes and Bush Stems behave consistently with Sweet Berry Bushes
 	"Berry Bush consistency" = false
 	#Makes Crystal Fruit Leaves behave consistently with Sweet Berry Bushes

@@ -7,7 +7,7 @@
 	#How much mana can the spreader contain
 	#Default [1000]
 	#Range: > 0
-	"Max mana" = 1000
+	"Max mana" = 1200
 	#The hexadecimal color of the mana burst
 	#Putting an invalid color can, and will, break stuff :)
 	#From what I know it doesn't support opacity
@@ -36,7 +36,7 @@
 	#How much mana should the spreader pass each burst
 	#Default [160]
 	#Range: > 0
-	"Mana each burst" = 150
+	"Mana each burst" = 200
 	#How much mana can the spreader contain
 	#Default [1000]
 	#Range: > 0
@@ -102,7 +102,7 @@
 	#How much mana should the spreader pass each burst
 	#Default [640]
 	#Range: > 0
-	"Mana each burst" = 800
+	"Mana each burst" = 1000
 	#How much mana can the spreader contain
 	#Default [6400]
 	#Range: > 0

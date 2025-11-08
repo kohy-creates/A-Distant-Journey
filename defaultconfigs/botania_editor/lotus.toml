@@ -2,7 +2,7 @@
 ["Lotus Config"]
 	#Mana each black lotus
 	#How much mana should the black lotus give [8000]
-	"Black Lotus Mana" = 10000
+	"Black Lotus Mana" = 15000
 	#Mana each blacker lotus
 	#How much mana should the blacker lotus give [100000]
 	"Blacker Lotus Mana" = 250000
