@@ -34,7 +34,7 @@
   "minimumStructureDistance": {
     "desc:": "Set a minimum distance in blocks between structures generated which prevents structure overlaps(not 100% but close). Not recommended to use higher values, as that may strain the worldgen due to repeated structure retries and can prevent surfaces structures when there is some in a cave below. If you want structures more spaced out than this use the spacing/seperation modifier. Default: 32 blocks, range 16-512",
     "minimumStructureDistance": 32,
-    "enabled": true,
+    "enabled": false,
     "logOverlaps": true
   },
   "autoBiomeCompat": {

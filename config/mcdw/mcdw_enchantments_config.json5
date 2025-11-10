@@ -59,7 +59,7 @@
 				"Offset Note:    higher offset = more health recovered,",
 				"Default:        100f"
 			],
-			"offset": 100.0,
+			"offset": 70.0,
 			"isEnabled": true,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
@@ -109,7 +109,7 @@
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
-			"procChance": 20
+			"procChance": 15
 		},
 		"CHARGE": {
 			"comment": null,
@@ -185,7 +185,7 @@
 				"Offset Note:    higher offset = less damage,",
 				"Default:        3.25f"
 			],
-			"offset": 3.25,
+			"offset": 4.0,
 			"isEnabled": true,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
@@ -270,7 +270,7 @@
 				"Offset Note:    higher offset = more health recovered,",
 				"Default:        100f"
 			],
-			"offset": 15.0,
+			"offset": 8.5,
 			"isEnabled": true,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
