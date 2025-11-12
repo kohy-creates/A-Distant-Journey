@@ -141,18 +141,5 @@
       "type": "url",
       "value": "https://spark.lucko.me/qbBM8MfHTZ"
     }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "kohara_",
-      "uniqueId": "b1b6a13e-7a06-41a9-8189-1757871c9414"
-    },
-    "time": 1757426494703,
-    "type": "Profiler (live)",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/ygiIDLUiZe"
-    }
   }
 ]

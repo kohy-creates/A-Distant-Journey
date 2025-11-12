@@ -6,7 +6,7 @@ ItemEvents.modification(event => {
 				.addAttribute(
 					'attributeslib:arrow_damage',
 					'd24514f1-276b-4732-a92e-de1e47bd6996',
-					0.1,
+					0.15,
 					"addition"
 				)
 				.addAttribute(
@@ -30,7 +30,7 @@ ItemEvents.modification(event => {
 				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.max_mana',
 					'378ef4cf-94c2-4432-95ce-95ee6c74d17a',
-					20,
+					30,
 					"addition"
 				)
 		)
@@ -168,6 +168,66 @@ ItemEvents.modification(event => {
 		)
 	})
 
+	event.modify('ars_nouveau:ring_of_lesser_discount', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute(
+					'adjcore:player.mana_cost_reduction',
+					'75675432-ef02-4eed-9225-e44c433fb936',
+					0.08,
+					'addition'
+				)
+				.addAttribute(
+					'ars_nouveau:ars_nouveau.perk.mana_regen',
+					'75675432-ef02-4eed-9225-e44c433fb936',
+					1,
+					'addition'
+				)
+				.addAttribute(
+					'ars_nouveau:ars_nouveau.perk.max_mana',
+					'75675432-ef02-4eed-9225-e44c433fb936',
+					20,
+					'addition'
+				)
+		)
+	})
+
+	event.modify('ars_nouveau:ring_of_greater_discount', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute(
+					'adjcore:player.mana_cost_reduction',
+					'3cba6935-a4c0-46b6-973a-0f6138662685',
+					0.16,
+					'addition'
+				)
+				.addAttribute(
+					'ars_nouveau:ars_nouveau.perk.mana_regen',
+					'3cba6935-a4c0-46b6-973a-0f6138662685',
+					2,
+					'addition'
+				)
+				.addAttribute(
+					'ars_nouveau:ars_nouveau.perk.max_mana',
+					'3cba6935-a4c0-46b6-973a-0f6138662685',
+					20,
+					'addition'
+				)
+		)
+	})
+
+	event.modify('cataclysm:chitin_claw', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute(
+					'forge:block_reach',
+					'241fdb51-8a06-4fc1-bcaf-8520c75b29c1',
+					2,
+					'addition'
+				)
+		)
+	})
+
 	/**
 	 * @type {Record<string, { damage: number, operation: number, extra: { attribute: string, value: number, operation: number }[] }>}
 	 */
@@ -192,9 +252,13 @@ ItemEvents.modification(event => {
 			damage: 0.06,
 			operation: 1,
 			extra: [
+				{
+					attribute: 'adjcore:player.mana_cost_reduction',
+					operation: 0,
+					value: 0.05
+				}
 			]
 		},
-		
 		'aether:diamond_gloves': {
 			damage: 3,
 			operation: 0,
@@ -249,21 +313,16 @@ ItemEvents.modification(event => {
 				}
 			]
 		},
-		// 'aether:chainmail_gloves': {
-		// 	damage: 1,
-		// 	operation: 0,
-		// 	extra: [
-		// 		{
-		// 			attribute: 'generic.attack_damage',
-		// 			value: 0,
-		// 			operation: 1
-		// 		}
-		// 	]
-		// },
 		'aether:gravitite_gloves': {
 			damage: 0.1,
 			operation: 1,
-			extra: []
+			extra: [
+				{
+					attribute: 'adjcore:player.mana_cost_reduction',
+					operation: 0,
+					value: 0.05
+				}
+			]
 		},
 		'aether:netherite_gloves': {
 			damage: 4,

@@ -11,17 +11,8 @@ global.setBonusMap = {
 	'minecraft:iron': {
 		description: [
 			'2 extra defense',
-			'Incoming damage reduced by 5%'
 		],
 		effects: [
-			{
-				type: 'attribute',
-				value: {
-					id: 'adjcore:generic.damage_reduction',
-					value: 0.05,
-					operation: 0
-				}
-			},
 			{
 				type: 'attribute',
 				value: {
@@ -58,8 +49,7 @@ global.setBonusMap = {
 	},
 	'minecraft:diamond': {
 		description: [
-			'Incoming damage reduced by 7%',
-			'5% increased crit chance'
+			'Incoming damage reduced by 7%'
 		],
 		effects: [
 			{
@@ -131,7 +121,7 @@ global.setBonusMap = {
 				type: 'attribute',
 				value: {
 					id: 'combatroll:recharge',
-					value: 0.15,
+					value: 0.2,
 					operation: 1
 				}
 			},
@@ -367,14 +357,23 @@ global.setBonusMap = {
 	},
 	'mythicmetals:runite': {
 		description: [
-			'Increases max mana by 20'
+			'Increases max mana by 40',
+			'Reduces mana cost of spells by 10%'
 		],
 		effects: [
 			{
 				type: 'attribute',
 				value: {
 					id: 'ars_nouveau:ars_nouveau.perk.max_mana',
-					value: 20,
+					value: 40,
+					operation: 0
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.1,
 					operation: 0
 				}
 			}
@@ -402,14 +401,14 @@ global.setBonusMap = {
 	},
 	'rediscovered:plate': {
 		description: [
-			'5 defense',
+			'6 defense',
 		],
 		effects: [
 			{
 				type: 'attribute',
 				value: {
 					id: 'generic.armor',
-					value: 5,
+					value: 6,
 					operation: 0
 				}
 			}
@@ -753,6 +752,7 @@ global.setBonusMap = {
 	'botania:manasteel': {
 		description: [
 			"10% reduced energy cost on Botanical Energy Tools and Rods",
+			"15% reduced mana cost on spells",
 			'3 defense'
 		],
 		effects: [
@@ -763,6 +763,14 @@ global.setBonusMap = {
 					value: 3,
 					operation: 0
 				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.15,
+					operation: 0
+				}
 			}
 		]
 	},
@@ -770,6 +778,7 @@ global.setBonusMap = {
 		description: [
 			"20% reduced energy cost on Botanical Energy Tools and Rods",
 			"Passive energy generation on Botanical Energy Tablets",
+			"20% reduced mana cost on spells",
 			'10% reduced damage'
 		],
 		effects: [
@@ -780,12 +789,21 @@ global.setBonusMap = {
 					value: 0.1,
 					operation: 0
 				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.2,
+					operation: 0
+				}
 			}
 		]
 	},
 	'botania:manaweave': {
 		description: [
 			"40% reduced energy cost on Botanical Energy Tools and Rods",
+			"30% reduced mana cost on spells",
 			"Increased profficiency with Rods",
 			'25% increased movement speed'
 		],
@@ -796,6 +814,14 @@ global.setBonusMap = {
 					id: 'generic.movement_speed',
 					value: 0.25,
 					operation: 1
+				}
+			},
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.3,
+					operation: 0
 				}
 			}
 		]

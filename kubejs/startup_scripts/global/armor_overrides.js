@@ -109,11 +109,11 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'generic.knockback_resistance': {
-			values: [0.025, 0.1, 0.05, 0.025],
+			values: [p(2.5), p(10), p(5), p(2.5)],
 			operation: 0
 		},
 		'generic.movement_speed': {
-			values: [0, 0, 0.06, 0],
+			values: [0, 0, p(6), 0],
 			operation: 1
 		}
 	},
@@ -171,12 +171,15 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.max_mana': {
-			values: [0, 10, 10, 0],
+			values: [0, 20, 20, 0],
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.mana_regen': {
-			values: [1, 0, 0, 0],
+			values: [1, 1, 0, 0],
 			operation: 0
+		},
+		'adjcore:player.mana_cost_reduction': {
+			values: [0, 0, p(5), 0]
 		}
 	},
 	'ars_nouveau:arcanist_0': {
@@ -185,16 +188,19 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.max_mana': {
-			values: [0, 30, 15, 0],
+			values: [0, 40, 30, 0],
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.mana_regen': {
-			values: [3, 0, 0, 0],
+			values: [4, 0, 0, 0],
 			operation: 0
 		},
 		'generic.movement_speed': {
 			values: [0, 0, 0, 0.04],
 			operation: 1
+		},
+		'adjcore:player.mana_cost_reduction': {
+			values: [0, 0, p(7.5), 0]
 		}
 	},
 	'ars_nouveau:arcanist_1': {
@@ -203,16 +209,19 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.max_mana': {
-			values: [0, 30, 20, 10],
+			values: [0, 60, 40, 10],
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.mana_regen': {
-			values: [3, 1, 0, 0],
+			values: [4, 1, 0, 0],
 			operation: 0
 		},
 		'generic.movement_speed': {
 			values: [0, 0, 0, 0.04],
 			operation: 1
+		},
+		'adjcore:player.mana_cost_reduction': {
+			values: [0, 0, p(10), 0]
 		}
 	},
 	'ars_nouveau:arcanist_2': {
@@ -221,7 +230,7 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.max_mana': {
-			values: [0, 30, 30, 30],
+			values: [20, 60, 40, 20],
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.mana_regen': {
@@ -231,6 +240,9 @@ global.armorOverrides = {
 		'generic.movement_speed': {
 			values: [0, 0, 0, 0.08],
 			operation: 1
+		},
+		'adjcore:player.mana_cost_reduction': {
+			values: [0, 0, p(12.5), 0]
 		}
 	},
 	'ars_elemental:fire': {
@@ -239,7 +251,7 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.max_mana': {
-			values: [0, 60, 30, 30],
+			values: [30, 70, 50, 30],
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.mana_regen': {
@@ -253,6 +265,9 @@ global.armorOverrides = {
 		'attributeslib:crit_chance': {
 			values: [0, 0, 0.15, 0],
 			operation: 0
+		},
+		'adjcore:player.mana_cost_reduction': {
+			values: [0, 0, p(15), 0]
 		}
 	},
 	'ars_elemental:aqua': {
@@ -261,7 +276,7 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.max_mana': {
-			values: [0, 60, 30, 30],
+			values: [30, 70, 50, 30],
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.mana_regen': {
@@ -275,6 +290,9 @@ global.armorOverrides = {
 		'attributeslib:crit_chance': {
 			values: [0, 0, 0.15, 0],
 			operation: 0
+		},
+		'adjcore:player.mana_cost_reduction': {
+			values: [0, 0, p(15), 0]
 		}
 	},
 	'ars_elemental:earth': {
@@ -283,7 +301,7 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.max_mana': {
-			values: [0, 60, 30, 30],
+			values: [30, 70, 50, 30],
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.mana_regen': {
@@ -297,6 +315,9 @@ global.armorOverrides = {
 		'attributeslib:crit_chance': {
 			values: [0, 0, 0.15, 0],
 			operation: 0
+		},
+		'adjcore:player.mana_cost_reduction': {
+			values: [0, 0, p(15), 0]
 		}
 	},
 	'ars_elemental:air': {
@@ -305,7 +326,7 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.max_mana': {
-			values: [0, 60, 30, 30],
+			values: [30, 70, 50, 30],
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.mana_regen': {
@@ -319,6 +340,9 @@ global.armorOverrides = {
 		'attributeslib:crit_chance': {
 			values: [0, 0, 0.15, 0],
 			operation: 0
+		},
+		'adjcore:player.mana_cost_reduction': {
+			values: [0, 0, p(15), 0]
 		}
 	},
 	'mythicmetals:bronze': {
@@ -383,13 +407,32 @@ global.armorOverrides = {
 		'generic.armor': {
 			values: [3, 5, 5, 2],
 			operation: 0
-		}
+		},
+		'adjcore:player.mana_cost_reduction': {
+			values: [0, 0, p(5), p(3)]
+		},
+		'ars_nouveau:ars_nouveau.perk.max_mana': {
+			values: [40, 0, 0, 0],
+			operation: 0
+		},
+		'ars_nouveau:ars_nouveau.perk.mana_regen': {
+			values: [0, 0, 0, 3],
+			operation: 0
+		},
 	},
 	'botania:manaweave': {
 		'generic.armor': {
 			values: [2, 3, 2, 1],
 			operation: 0
-		}
+		},
+		'ars_nouveau:ars_nouveau.perk.max_mana': {
+			values: [40, 40, 0, 0],
+			operation: 0
+		},
+		'ars_nouveau:ars_nouveau.perk.mana_regen': {
+			values: [0, 0, 0, 7],
+			operation: 0
+		},
 	},
 	'botania:terrasteel': {
 		'generic.armor': {
@@ -399,7 +442,18 @@ global.armorOverrides = {
 		'generic.knockback_resistance': {
 			values: [0, 0.1, 0, 0.1],
 			operation: 0
-		}
+		},
+		'adjcore:player.mana_cost_reduction': {
+			values: [0, 0, p(5), p(3)]
+		},
+		'ars_nouveau:ars_nouveau.perk.max_mana': {
+			values: [40, 60, 0, 0],
+			operation: 0
+		},
+		'ars_nouveau:ars_nouveau.perk.mana_regen': {
+			values: [0, 0, 4, 3],
+			operation: 0
+		},
 	},
 	'mythicmetals:tidesinger': {
 		'generic.armor': {
@@ -583,16 +637,19 @@ global.armorOverrides = {
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.max_mana': {
-			values: [0, 40, 0, 0],
+			values: [0, 100, 0, 0],
 			operation: 0
 		},
 		'ars_nouveau:ars_nouveau.perk.mana_regen': {
-			values: [0, 0, 0, 3],
+			values: [0, 0, 2, 4],
 			operation: 0
 		},
 		'attributeslib:crit_chance': {
 			values: [0, 0, 0.07, 0],
 			operation: 1
+		},
+		'adjcore:player.mana_cost_reduction': {
+			values: [0, p(15), 0, 0]
 		}
 	},
 	'born_in_chaos_v1:dark_metal_armor': {

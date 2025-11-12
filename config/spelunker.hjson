@@ -159,6 +159,8 @@
 				minecraft:redstone_ore
 				minecraft:deepslate_redstone_ore
 				alexscaves:guanostone_redstone_ore
+				rediscovered:ruby_ore
+				redicovered:deepslate_ruby_ore
 			]
 			// default: #FF2E2E
 			highlightColor: "#FF2E2E"

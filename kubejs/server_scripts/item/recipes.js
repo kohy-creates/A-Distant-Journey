@@ -3414,7 +3414,7 @@ ServerEvents.recipes((event) => {
 			Item.of(targetRune, (entry.tier == 1) ? 2 : 1),
 			entry.items,
 			manaAmounts[entry.tier - 1]
-		).id('kubejs:rune/' + runeName)
+		).id('botania:runic_altar/' + runeName)
 	}
 
 	// Orechid transforms
@@ -3544,7 +3544,7 @@ ServerEvents.recipes((event) => {
 	for (const [flowerName, items] of Object.entries(flowerRecipeMap)) {
 		let flw = flower(flowerName);
 		event.remove({ type: 'botania:petal_apothecary', output: flw })
-		event.recipes.botania.petal_apothecary(flw, items).id(`kubejs:botania/flowers/${flowerName}`)
+		event.recipes.botania.petal_apothecary(flw, items).id(`botania:petal_apothecary/${flowerName}`)
 	}
 
 	event.forEachRecipe({ type: 'crafting_shapeless' }, recipe => {

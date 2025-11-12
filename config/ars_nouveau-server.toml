@@ -3,7 +3,7 @@
 [mana]
 	#Base mana regen in seconds
 	#Range: > 0
-	baseRegen = 4
+	baseRegen = 0
 	#Base max mana
 	#Range: > 0
 	baseMax = 100
@@ -21,7 +21,7 @@
 	tierRegen = 1
 	#Mana Boost value per level
 	#Range: > 0
-	manaBoost = 5
+	manaBoost = 10
 	#(enchantment) Mana regen per second per level
 	#Range: > 0
 	manaRegenEnchantment = 1
@@ -30,7 +30,7 @@
 	glyphRegen = 0.1
 	#Regen bonus per potion level
 	#Range: > 0
-	potionRegen = 7
+	potionRegen = 5
 
 [spell_casting]
 	#Enforce augment cap on casting? Turn this off if you are a pack maker and want to create more powerful items than players.

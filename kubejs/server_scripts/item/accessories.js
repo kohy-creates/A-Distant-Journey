@@ -394,19 +394,59 @@ LootJS.modifiers(event => {
 			pool.addLoot(LootEntry.of('confluence:honey_comb'))
 		})
 
-	event.addLootTableModifier(/.*entities\:.*spider.*/)
+	event.addLootTableModifier([
+		'spider',
+		'cave_spider',
+		'born_in_chaos_v1:baby_spider',
+		'born_in_chaos_v1:baby_spider_controlled'
+	])
 		.pool((pool) => {
 			pool.randomChance(0.03)
 			pool.addLoot(LootEntry.of('confluence:bezoar'))
 		})
 
-	event.addLootTableModifier('minecraft:entities/wither_skeleton')
+	event.addEntityLootModifier('minecraft:wither_skeleton')
 		.pool((pool) => {
 			pool.randomChance(0.03)
 			pool.addLoot(LootEntry.of('confluence:holy_water'))
 		})
 
-	event.addLootTableModifier(/.*entities\:.*zombie.*/)
+	event.addEntityLootModifier([
+		'witherstormmod:sickened_zombie',
+		'witherstormmod:sickened_skeleton',
+		'witherstormmod:sickened_spider',
+		'witherstormmod:sickened_creeper',
+		'witherstormmod:sickened_villager',
+		'witherstormmod:sickened_phantom',
+		'witherstormmod:sickened_chicken',
+		'witherstormmod:sickened_parrot',
+		'witherstormmod:sickened_wolf',
+		'witherstormmod:sickened_cat',
+		'witherstormmod:sickened_bee',
+		'witherstormmod:sickened_cow',
+		'witherstormmod:sickened_mushroom_cow',
+		'witherstormmod:sickened_pillager',
+		'witherstormmod:sickened_vindicator',
+		'witherstormmod:sickened_iron_golem',
+		'witherstormmod:sickened_pig',
+		'witherstormmod:sickened_snow_golem',
+	])
+		.pool((pool) => {
+			pool.randomChance(0.01)
+			pool.addLoot(LootEntry.of('confluence:holy_water'))
+		})
+
+	event.addEntityLootModifier([
+		'zombie',
+		'zombie_villager',
+		'born_in_chaos_v1:zombie_bruiser',
+		'born_in_chaos_v1:zombie_lumberjack',
+		'born_in_chaos_v1:zombie_fisherman',
+		'born_in_chaos_v1:zombie_clown',
+		'witherstormmod:sickened_zombie',
+		'rediscovered:zombie_pigman',
+
+	])
 		.pool((pool) => {
 			pool.randomChance(0.01)
 			pool.addLoot(LootEntry.of('confluence:vitamins'))
@@ -416,25 +456,25 @@ LootJS.modifiers(event => {
 			pool.addLoot(LootEntry.of('confluence:shackle'))
 		})
 
-	event.addLootTableModifier('minecraft:entities/husk')
+	event.addEntityLootModifier('husk')
 		.pool((pool) => {
 			pool.randomChance(0.02)
 			pool.addLoot(LootEntry.of('confluence:energy_bar'))
 		})
 
-	event.addLootTableModifier('minecraft:entities/phantom')
+	event.addEntityLootModifier('minecraft:phantom')
 		.pool((pool) => {
 			pool.randomChance(0.1)
 			pool.addLoot(LootEntry.of('confluence:energy_bar'))
 		})
 
-	event.addLootTableModifier(['minecraft:entities/slime', 'minecraft:entities/stray'])
+	event.addEntityLootModifier(['minecraft:slime', 'minecraft:stray'])
 		.pool((pool) => {
 			pool.randomChance(0.02)
 			pool.addLoot(LootEntry.of('confluence:fast_clock'))
 		})
 
-	event.addLootTableModifier(['minecraft:entities/stray'])
+	event.addEntityLootModifier(['minecraft:stray'])
 		.pool((pool) => {
 			pool.randomChance(0.01)
 			pool.addLoot(LootEntry.of('confluence:ice_skates'))
@@ -444,37 +484,37 @@ LootJS.modifiers(event => {
 			pool.addLoot(LootEntry.of('confluence:flurry_boots'))
 		})
 
-	event.addLootTableModifier(['minecraft:entities/guardian'])
+	event.addEntityLootModifier(['minecraft:guardian'])
 		.pool((pool) => {
 			pool.randomChance(0.05)
 			pool.addLoot(LootEntry.of('confluence:hand_drill'))
 		})
 
-	event.addLootTableModifier(['minecraft:entities/enderman'])
+	event.addEntityLootModifier(['minecraft:enderman'])
 		.pool((pool) => {
 			pool.randomChance(0.1)
 			pool.addLoot(LootEntry.of('confluence:trifold_map'))
 		})
 
-	event.addLootTableModifier(['minecraft:entities/shulker'])
+	event.addEntityLootModifier(['minecraft:shulker'])
 		.pool((pool) => {
 			pool.randomChance(0.12)
 			pool.addLoot(LootEntry.of('confluence:shot_put'))
 		})
 
-	event.addLootTableModifier(['born_in_chaos_v1:entities/fallen_chaos_knight'])
+	event.addEntityLootModifier(['born_in_chaos_v1:fallen_chaos_knight'])
 		.pool((pool) => {
 			pool.randomChance(0.15)
 			pool.addLoot(LootEntry.of('confluence:black_belt'))
 		})
 
-	event.addLootTableModifier(['mutantmonsters:entities/mutant_zombie'])
+	event.addEntityLootModifier(['mutantmonsters:mutant_zombie'])
 		.pool((pool) => {
 			pool.randomChance(0.33)
 			pool.addLoot(LootEntry.of('confluence:flesh_knuckles'))
 		})
 
-	event.addLootTableModifier(['entities/warden'])
+	event.addEntityLootModifier(['minecraft:warden'])
 		.pool((pool) => {
 			pool.randomChance(1)
 			pool.addLoot(LootEntry.of('confluence:flashlight'))
@@ -482,8 +522,8 @@ LootJS.modifiers(event => {
 
 	event.addLootTableModifier(['minecraft:chests/ancient_city'])
 		.pool((pool) => {
-			pool.randomChance(0.2)
 			pool.addLoot(LootEntry.of('confluence:flashlight'))
+				.randomChance(0.2)
 		})
 })
 

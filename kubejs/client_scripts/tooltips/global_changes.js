@@ -23,6 +23,8 @@ ItemEvents.tooltip(event => {
 		'botanicadds:dreaming_pool',
 		'majruszsdifficulty:recall_potion',
 		'heart_crystals:heart_crystal',
+		'ars_nouveau:ring_of_lesser_discount',
+		'ars_nouveau:ring_of_greater_discount'
 	], (item, advanced, text) => {
 		const original = text.toArray();
 

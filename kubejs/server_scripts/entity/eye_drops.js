@@ -2,7 +2,7 @@ const eyeDrops = {
 	'minecraft:wither': 'cinders',
 	'lost_aether_content:aerwhale_king': 'angels',
 	'rediscovered:red_dragon': 'dreams',
-	'catacylsm:ender_guardian': 'desolation'
+	'cataclysm:ender_guardian': 'desolation'
 }
 
 const chapterMap = {

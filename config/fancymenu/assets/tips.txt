@@ -1,5 +1,5 @@
 Friendly mobs and players near a Campfire slowly regenerate lost health.
-Natural health regeneration is a lot slower, so consider investing in other sources of health regeneration. The cheapest option is a Campfire.
+Consider boosting your natural health regeneration with buffs from e.g. Campfires or Heart Lanterns.
 Wolves cannot enter The Nether. Just kidding, they totally can.
 Every milestone you achieve will permanently change your world for the worse.
 Tired of the hot flames of The Nether? Why not build a portal out of Glowstone?
