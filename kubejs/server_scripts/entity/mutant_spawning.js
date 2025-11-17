@@ -33,7 +33,7 @@ EntityEvents.checkSpawn(event => {
 			chanceToSpawn = (server.isHardcore()) ? chance(1.5) : chance(0.75);
 		}
 		else if (server.isHardcore()) {
-			chanceToSpawn = (chapter == 1) ? 0.75 : 0.25;
+			chanceToSpawn = (chapter == 1) ? chance(0.75) : chance(0.25);
 		}
 
 		if (chanceToSpawn) {

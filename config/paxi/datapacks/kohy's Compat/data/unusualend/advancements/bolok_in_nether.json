@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:warped_nylium"
+    },
+    "title": {
+      "translate": "advancements.bolok_in_nether.title"
+    },
+    "description": {
+      "translate": "advancements.bolok_in_nether.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bolok_in_nether": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "dimension": "minecraft:the_nether",
+              "block": {}
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "unusualend:bolok_bucket"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bolok_in_nether"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "unusualend:trade_with_bolok"
+}

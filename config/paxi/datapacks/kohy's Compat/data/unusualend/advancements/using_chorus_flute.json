@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "unusualend:chorus_flute"
+    },
+    "title": {
+      "translate": "advancements.using_chorus_flute.title"
+    },
+    "description": {
+      "translate": "advancements.using_chorus_flute.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "using_chorus_flute_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "unusualend:local_food"
+}

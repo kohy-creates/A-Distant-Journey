@@ -3,11 +3,11 @@
 	#Cost of orechid each block
 	#How much mana should orechid consume each block [17500]
 	#Range: > 1
-	"Orechid cost" = 17500
+	"Orechid cost" = 12500
 	#Cost of orechid ignem each block
 	#How much mana should orechid ignem consume each block [20000]
 	#Range: > 1
-	"Orechid ignem Cost" = 20000
+	"Orechid ignem Cost" = 15000
 	#Cost of orechid each block in garden of glass
 	#How much mana should orechid consume each block, when in a garden of glass word [700]
 	#Usually this cost is lower than the normal, but it's not a rule

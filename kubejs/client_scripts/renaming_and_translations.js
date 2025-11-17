@@ -60,7 +60,7 @@ ClientEvents.lang('en_us', event => {
 		'block.alloy_forgery.ender_forge_casing_forge_controller': 'Ender Forge',
 		'block.alloy_forgery.nether_bricks_forge_controller': 'Hellforge',
 		'block.adj.ender_forge_casing': 'Ender Forge Casing',
-		'block.adj.adamantite_forge_casing': 'Adamantite Forge Casing'
+		'block.adj.adamantite_forge_casing': 'Adamantite Forge Casing',
 
 	}
 
@@ -117,7 +117,9 @@ ClientEvents.lang('en_us', event => {
 		'functionalstorage:puller_upgrade': 'Drawer Upgrade (Puller)',
 		'functionalstorage:pusher_upgrade': 'Drawer Upgrade (Pusher)',
 		'functionalstorage:void_upgrade': 'Drawer Upgrade (Void)',
-		'functionalstorage:redstone_upgrade': 'Drawer Upgrade (Redstone)'
+		'functionalstorage:redstone_upgrade': 'Drawer Upgrade (Redstone)',
+
+		'confluence:demon_heart': 'Aerwhale King\'s Heart'
 	}
 
 	for (const [key, value] of Object.entries(extraTranslations)) {

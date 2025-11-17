@@ -9,7 +9,7 @@
 	#Whether mobs retalliate to other mobs attacking them
 	RETALLIATION_ENABLED = true
 	#Whether infested diamonds generate
-	INFESTED_DIAMONDS_ENABLED = true
+	INFESTED_DIAMONDS_ENABLED = false
 	#Whether you get the warning effect that you get for Missioners and Nightmare Stalkers
 	WARNING_SPAWN_ENABLED = false
 	#Whether you gain naughtiness from certain actions
@@ -537,6 +537,8 @@
 			KRAMPUS_HENCHMAN_SPEED = 0.29
 			#.
 			KRAMPUS_HENCHMAN_SPAWNING_ENABLED = true
+			#Whether Krampus Henchnmen make you drop your items when hit
+			KRAMPUS_HENCHMAN_DROPING_ENABLED = true
 
 		[Weapons.Mobs.Krampus]
 			#.

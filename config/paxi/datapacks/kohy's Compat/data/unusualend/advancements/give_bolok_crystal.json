@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "unusualend:bolok_fin"
+    },
+    "title": {
+      "translate": "advancements.give_bolok_crystal.title"
+    },
+    "description": {
+      "translate": "advancements.give_bolok_crystal.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "give_bolok_crystal_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "unusualend:trade_with_bolok"
+}

@@ -1,24 +1,23 @@
-<!--
-	⚠ This file was generated automatically ⚠
-	You should remove this comment if you want to modify this file or "/biggerstacks quicksetup" will overwrite it without warning
-	[[256 32 1]]
--->
 <ruleset>
 	<rule stacksize="64">
 		<or>
 			<condition>id = minecraft:ender_pearl</condition>
+			<!-- causes duplication glitches with jukeboxes
 			<condition>tag includes adj:music_disc</condition>
+			-->
 		</or>
 	</rule>
-	<rule stacksize="32">
+	<rule stacksize="99">
 		<or>
 			<condition>id = minecraft:potion</condition>
 			<condition>id = minecraft:splash_potion</condition>
 			<condition>id = minecraft:lingering_potion</condition>
 			<condition>id = minecraft:saddle</condition>
+			<condition>id ends_with horse_armor</condition>
+			<condition>is_food</condition>
 		</or>
 	</rule>
-	<rule stacksize="256">
+	<rule stacksize="999">
 		<or>
 			<condition>stacksize gt 1</condition>
 		</or>

@@ -188,6 +188,15 @@ ServerEvents.tags('item', event => {
 	event.add('adj:archwood_leaves', [
 		/_archwood_leaves/
 	])
+
+	event.add('adjcore:curios_dropped_on_death', [
+		'backpacked:backpack'
+	])
+
+	event.add('forge:buckets/entity_water', [
+		/tide:.*_bucket/,
+		/alexscaves:.*_bucket/
+	])
 })
 
 ServerEvents.tags('block', event => {
@@ -304,5 +313,12 @@ ServerEvents.tags('damage_type', event => {
 	])
 	event.add('dummmmmmy:is_wither', [
 		'attributeslib:current_hp_damage'
+	])
+})
+
+ServerEvents.tags('worldgen/structure', event => {
+	event.remove('quark:soul_bead_target', [
+		'minecraft:fortress',
+		'betterfortresses:fortress'
 	])
 })

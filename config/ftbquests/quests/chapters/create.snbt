@@ -46,9 +46,14 @@
 					item: "create:large_cogwheel"
 					type: "item"
 				}
+				{
+					id: "07194354FF50EB8F"
+					item: "create:shaft"
+					type: "item"
+				}
 			]
 			title: "There's No Cog Like..."
-			x: 1.5d
+			x: 1.0d
 			y: -2.0d
 		}
 		{
@@ -123,7 +128,7 @@
 				}
 			]
 			title: "Wind Maker"
-			x: 4.5d
+			x: 5.0d
 			y: 1.0d
 		}
 		{
@@ -216,8 +221,8 @@
 				type: "item"
 			}]
 			title: "Quartz 'N' Roses"
-			x: -2.5d
-			y: -0.5d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6F6E4CEDDF413E18"]
@@ -234,7 +239,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["1FA28AA6F3F8D048"]
+			dependencies: [
+				"1FA28AA6F3F8D048"
+				"693B03EE6AE51892"
+			]
 			id: "20C40A85BDDEC015"
 			subtitle: "Craft a Deployer"
 			tasks: [{
@@ -269,7 +277,7 @@
 				type: "item"
 			}]
 			title: "Technomancer's Wand"
-			x: 3.5d
+			x: 4.0d
 			y: 3.0d
 		}
 		{
@@ -283,7 +291,7 @@
 			}]
 			title: "Steampunk Vision"
 			x: 4.5d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["782BB3D700FBD243"]
@@ -332,7 +340,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["74E81719E903F908"]
+			dependencies: [
+				"74E81719E903F908"
+				"693B03EE6AE51892"
+			]
 			id: "68970836919AF150"
 			subtitle: "Make a Smart Crafter"
 			tasks: [{
@@ -341,8 +352,55 @@
 				type: "item"
 			}]
 			title: "Work Smart Not Hard"
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["57A550E2F3090147"]
+			id: "0C69FB2C66E26894"
+			subtitle: "Craft a tube of Super Glue to keep your contraptions together"
+			tasks: [{
+				id: "3FFA3B910A57A546"
+				item: {
+					Count: 1
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Extra Sticky Situation"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["52D84E41D1800FE6"]
+			id: "693B03EE6AE51892"
+			subtitle: "Craft an Electron Tube"
+			tasks: [{
+				id: "57410F5344E414C0"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			title: "Electricity! Kind of..."
 			x: -2.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["76EC8D76904524E9"]
+			id: "1F7EC6B4AE7F015A"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a Hypertube Accelerator"
+			tasks: [{
+				id: "0909512318A92997"
+				item: "create_hypertube:hypertube_accelerator"
+				type: "item"
+			}]
+			title: "Hyperspeed"
+			x: 1.5d
+			y: 4.5d
 		}
 	]
 	title: "Creating a Factory"

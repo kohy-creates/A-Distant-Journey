@@ -56,15 +56,15 @@
 			size: 2.0d
 			subtitle: "Because your inventory is very limited"
 			tasks: [{
-				id: "4DEA787E6FC0C4B9"
+				id: "702A79CEBED87253"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:chests"
+						value: "c:chests"
 					}
 				}
-				title: "Craft any Chest"
+				title: "Any Chest"
 				type: "item"
 			}]
 			title: "Storage"

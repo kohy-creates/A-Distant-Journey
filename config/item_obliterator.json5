@@ -501,6 +501,12 @@
 		"create_power_loader:empty_brass_chunk_loader",
 		"create:handheld_worldshaper",
 
+		"create:crushed_raw_osmium",
+		"create:crushed_raw_platinum",
+		"create:crushed_raw_silver",
+		"create:crushed_raw_tin",
+		"create:crushed_raw_uranium",
+
 		"farmersdelight:wheat_dough",
 		"farmersdelight:rope",
 		"farmersdelight:flint_knife",

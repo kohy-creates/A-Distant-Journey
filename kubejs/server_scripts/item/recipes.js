@@ -52,7 +52,8 @@ ServerEvents.recipes((event) => {
 		'minecraft:chest',
 		'farmersdelight:dough',
 		'mythicmetals:orichalcum_hammer',
-		'botania:terra_sword'
+		'botania:terra_sword',
+		'minecraft:lodestone'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -138,7 +139,19 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:alloy_forge/forge_stormyx_ingot_from_ores',
 		'mythicmetals:alloy_forge/forge_stormyx_ingot_from_raw_ore',
 
-		'minecraft:bread'
+		'minecraft:bread',
+		'map_atlases:craft_atlas',
+		'botania:flighttiara_0',
+
+		/ars_additions:locate_structure/,
+		'mythicmetals:blasting/blast_adamantite_ingot_from_ores',
+		'mythicmetals:blasting/blast_adamantite_ingot_from_raw_ore',
+		'mythicmetals:blasting/blast_adamantite_nugget_from_equipment',
+
+		/alloy_forgery:compat\/adamantite/,
+		/mythicmetals:alloy_forge\/forge_adamantite_ingot/,
+
+		'unusualend:pearly_ingot_recipe'
 
 
 		///alloy_forgery\:compat\//
@@ -147,35 +160,24 @@ ServerEvents.recipes((event) => {
 		event.remove({ id: recipe })
 	})
 
+	const removeRecipeByType = [
+		'aether:repairing'
+	]
+	removeRecipeByType.forEach(recipeType => {
+		event.remove({ type: recipeType })
+	})
+
 	// Slightly different Atlas recipe
-	event.remove({ id: 'map_atlases:craft_atlas' })
-	// event.custom({
-	// 	"type": "map_atlases:crafting_atlas",
-	// 	"ingredients": [
-	// 		{
-	// 			"item": "minecraft:book"
-	// 		},
-	// 		{
-	// 			"item": "minecraft:feather"
-	// 		},
-	// 		{
-	// 			"item": "minecraft:compass"
-	// 		},
-	// 		{
-	// 			"item": "minecraft:ink_sac"
-	// 		}
+	// event.shapeless(
+	// 	Item.of('map_atlases:atlas', '{empty:9}'),
+	// 	[
+	// 		'book',
+	// 		'#adj:any_map',
+	// 		'ink_sac',
+	// 		'feather',
+	// 		'compass'
 	// 	]
-	// }).id('kubejs:atlas')
-	event.shapeless(
-		Item.of('map_atlases:atlas', '{empty:9}'),
-		[
-			'book',
-			'#adj:any_map',
-			'ink_sac',
-			'feather',
-			'compass'
-		]
-	)
+	// )
 
 	event.shaped(
 		Item.of('enchantinginfuser:enchanting_infuser', 1),
@@ -767,13 +769,17 @@ ServerEvents.recipes((event) => {
 
 	/** @type {Internal.Block_} */
 	const ectoplasm = 'netherexp:ectoplasm';
-	lycheeItemInBlock('minecraft:magma_block', ectoplasm, 'netherexp:soul_magma_block');
-	lycheeItemInBlock('minecraft:soul_sand', ectoplasm, 'netherexp:ecto_soul_sand');
-	lycheeItemInBlock('minecraft:blackstone', ectoplasm, 'netherexp:soul_slate');
-	lycheeItemInBlock('minecraft:torchflower', ectoplasm, 'netherexp:soul_torchflower');
-	lycheeItemInBlock('minecraft:coal', ectoplasm, 'netherexp:fossil_fuel');
-	lycheeItemInBlock('minecraft:rib_armor_trim_smithing_template', ectoplasm, 'netherexp:valor_armor_trim_smithing_template');
-	lycheeItemInBlock('minecraft:shroomlight', ectoplasm, 'netherexp:shroomnight');
+	function ectoplasmTransform(from, to) {
+		lycheeItemInBlock(from, ectoplasm, to);
+	}
+
+	ectoplasmTransform('minecraft:magma_block', 'netherexp:soul_magma_block');
+	ectoplasmTransform('minecraft:soul_sand', 'netherexp:ecto_soul_sand');
+	ectoplasmTransform('minecraft:blackstone', 'netherexp:soul_slate');
+	ectoplasmTransform('minecraft:torchflower', 'netherexp:soul_torchflower');
+	ectoplasmTransform('minecraft:coal', 'netherexp:fossil_fuel');
+	ectoplasmTransform('minecraft:rib_armor_trim_smithing_template', 'netherexp:valor_armor_trim_smithing_template');
+	ectoplasmTransform('minecraft:shroomlight', 'netherexp:shroomnight');
 
 	// Helper getter for the next few things
 	let copperItems = []
@@ -2324,10 +2330,9 @@ ServerEvents.recipes((event) => {
 		],
 		['mythicmetals:celestium_ingot', 1],
 		3,
-		80
+		100
 	)
 
-	// Steel
 	alloyForgeRecipe(
 		[
 			['mythicmetals:hallowed_ingot', 1],
@@ -2338,7 +2343,7 @@ ServerEvents.recipes((event) => {
 		],
 		['mythicmetals:metallurgium_ingot', 1],
 		3,
-		80
+		100
 	)
 
 	// Stormyx
@@ -2357,7 +2362,6 @@ ServerEvents.recipes((event) => {
 			]
 		]
 	)
-
 	alloyForgeRecipe(
 		[
 			['#forge:ores/stormyx', 1],
@@ -2386,7 +2390,6 @@ ServerEvents.recipes((event) => {
 		1,
 		5
 	)
-
 	alloyForgeRecipe(
 		[
 			['raw_iron', 1],
@@ -2396,6 +2399,70 @@ ServerEvents.recipes((event) => {
 		['mythicmetals:steel_ingot', 1],
 		1,
 		5
+	)
+
+	// Adamantite from tier 1 forge
+	alloyForgeRecipe(
+		[
+			['mythicmetals:raw_adamantite', 1],
+		],
+		['mythicmetals:adamantite_ingot', 1],
+		1,
+		20,
+		[
+			[
+				'3+', 'output', 2
+			]
+		]
+	)
+	alloyForgeRecipe(
+		[
+			['#c:adamantite_ores', 1],
+		],
+		['mythicmetals:adamantite_ingot', 1],
+		1,
+		20,
+		[
+			[
+				'3+', 'output', 2
+			]
+		]
+	)
+
+	// Pearlescent Ingot
+	alloyForgeRecipe(
+		[
+			['minecraft:iron_ingot', 1],
+			['unusualend:shiny_crystal', 1],
+			['unusualend:citrine_chunk', 1],
+			['unusualend:prismalite_gem', 1],
+			['unusualend:enderling_scrap', 1],
+		],
+		['unusualend:pearlescent_ingot', 1],
+		2,
+		20,
+		[
+			[
+				'3+', 'output', 2
+			]
+		]
+	)
+	alloyForgeRecipe(
+		[
+			['raw_iron', 1],
+			['unusualend:shiny_crystal', 1],
+			['unusualend:citrine_chunk', 1],
+			['unusualend:prismalite_gem', 1],
+			['unusualend:enderling_scrap', 1],
+		],
+		['unusualend:pearlescent_ingot', 1],
+		2,
+		20,
+		[
+			[
+				'3+', 'output', 2
+			]
+		]
 	)
 
 	// Change Metallurgium and Celestium gear recipes
@@ -3438,6 +3505,13 @@ ServerEvents.recipes((event) => {
 			['mythicmetals:deepslate_myhtril_ore', 25],
 			['create:deepslate_zinc_ore', 400],
 			['mythicmetals:deepslate_adamantite_ore', 1],
+		],
+		'aether:holystone': [
+			['aether:ambrosium_ore', 4000],
+			['aether:zanite_ore', 1200],
+			['aether:gravitite_ore', 150],
+			['aether_redux:veridium_ore', 700],
+
 		]
 	}
 	const orechdIgnemMap = {
@@ -3561,6 +3635,169 @@ ServerEvents.recipes((event) => {
 				ingredients,
 				5000
 			).id(recipe.getId())
+		}
+	})
+
+	// Workshop recipes
+	function workshopRecipe(ingredients, output, id) {
+
+		let iMap = [];
+		ingredients.forEach(i => {
+			iMap.push(Item.of(i))
+		})
+
+		if (id) {
+			event.custom({
+				"type": "confluence:workshop",
+				"ingredients": iMap,
+				"result": output
+			}).id(id)
+		}
+		else {
+			event.custom({
+				"type": "confluence:workshop",
+				"ingredients": iMap,
+				"result": output
+			})
+		}
+	}
+
+	workshopRecipe([
+		'book',
+		'map',
+		'ink_sac',
+		'feather',
+		'compass',
+		'additionaladditions:depth_meter'
+	], Item.of('map_atlases:atlas', '{empty:9}'))
+
+	const curioToWorkshopList = [
+		'botania:mana_ring',
+		'botania:mana_ring_greater',
+		'botania:aura_ring',
+		'botania:aura_ring_greater',
+		'botania:magnet_ring',
+		'botania:magnet_ring_greater',
+		'botania:water_ring',
+		'botania:swap_ring',
+		'botania:dodge_ring',
+		'botania:mining_ring',
+		'botania:pixie_ring',
+		'botania:reach_ring',
+		'botania:travel_belt',
+		'botania:super_travel_belt',
+		'botania:speed_up_belt',
+		'botania:knockback_belt',
+		'botania:ice_pendant',
+		'botania:lava_pendant',
+		'botania:super_lava_pendant',
+		'botania:cloud_pendant',
+		'botania:super_cloud_pendant',
+		'botania:inbisibility_cloak',
+		'botania:holy_cloak',
+		'botania:unholy_cloak',
+		'botania:balance_cloak',
+		'botania:third_eye',
+		'botania:monocle',
+		'botania:tiny_planet',
+		'botania:goddes_charm',
+		'botania:diva_charm',
+		'botania:blood_pendant',
+		'cataclysm:sticky_gloves',
+		'ars_nouveau:mundane_belt',
+		'ars_nouveau:dull_trinket',
+		'ars_nouveau:ring_of_potential',
+		'botanicadds:aura_ring_gaia',
+		'botanicadds:mana_ring_gaia',
+		'create:googles'
+	]
+	const curioToWorkshopRegex = [
+		/botania:cosmetic.*/,
+		/aether:.*gloves/
+	]
+	const curioToWorkshopBlacklist = [
+		'aether:netherite_gloves'
+	]
+	event.forEachRecipe({}, recipe => {
+		if (recipe.getId().includes('_repair')) return;
+
+		const output = recipe.getOriginalRecipeResult();
+		const id = output.getId();
+
+		let regexed = curioToWorkshopRegex.some(rx => rx.test(id));
+		if (curioToWorkshopBlacklist.includes(id)) regexed = false;
+
+		if (curioToWorkshopList.includes(id) || regexed) {
+			let ingredients = recipe.getOriginalRecipeIngredients();
+
+			let counts = {};
+
+			ingredients.forEach(i => {
+				const ids = i.asIngredient().getItemIds();
+				if (!ids.length) return;
+
+				let id = ids[0];
+				counts[id] = (counts[id] || 0) + 1;
+			});
+
+			let newIngredients = Object.entries(counts).map(([id, count]) => {
+				return `${count}x ${id}`;
+			});
+
+			event.remove({ id: recipe.getId() });
+
+			workshopRecipe(newIngredients, output, recipe.getId())
+
+		}
+	})
+
+	workshopRecipe(['12x botania:elementium_ingot', '4x botania:life_essence', '4x botanicadds:gaiasteel_ingot', '16x feather', '4x botania:ender_air_bottle'], Item.of('botania:flight_tiara'))
+
+	// Binding Wayfinders
+	function locateStructureRitual(structure, ingredients) {
+
+		let parsedIngredients = [];
+
+		ingredients.forEach(i => {
+			let map = {};
+			map[(i.startsWith('#')) ? "tag" : "key"] = (i.startsWith('#')) ? i.substring(1) : i;
+			parsedIngredients.push(map);
+		})
+
+		let parsedStructure = {};
+		parsedStructure[(structure.startsWith('#')) ? "tag" : "key"] = (structure.startsWith('#')) ? structure.substring(1) : structure;
+
+		event.custom({
+			"type": "ars_additions:locate_structure",
+			"augments": parsedIngredients,
+			"id": `ars_additions:${structure.split(":")[1]}`,
+			"structure": parsedStructure
+		})
+	}
+
+	locateStructureRitual('#ars_nouveau:wilden_den', ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'ars_nouveau:source_gem', rune('wrath')]);
+	locateStructureRitual('betterfortresses:fortress', ['nether_bricks', 'nether_bricks', 'nether_bricks', 'quark:soul_bead']);
+	locateStructureRitual('minecraft:pillager_outpost', ['emerald_block', 'galosphere:silver_block', rune('greed')]);
+	locateStructureRitual('minecraft:monument', ['prismarine', 'prismarine', 'prismarine', 'prismarine', rune('water')]);
+	locateStructureRitual('minecraft:trail_ruins', ['rediscovered:ruby', 'rediscovered:ruby', 'rediscovered:ruby']);
+	locateStructureRitual('minecraft:end_city', ['ender_eye', 'purpur_block', 'purpur_block', 'purpur_block', rune('envy')]);
+	locateStructureRitual('minecraft:ancient_city', ['minecraft:deepslate_bricks', 'minecraft:deepslate_bricks', 'minecraft:deepslate_bricks', 'echo_shard', 'echo_shard']);
+	locateStructureRitual('aether:bronze_dungeon', ['mythicmetals:bronze_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
+	locateStructureRitual('aether:silver_dungeon', ['galosphere:silver_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
+	locateStructureRitual('aether:gold_dungeon', ['gold_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
+	locateStructureRitual('lost_aether_content:platinum_dungeon', ['mythicmetals:platinum_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
+
+	// Aether repairing
+	Item.list.toArray().forEach(/** @param {Internal.Item} item*/ item => {
+		const maxDamage = item.maxDamage;
+		if (maxDamage > 0) {
+			event.custom({
+				"type": "aether:repairing",
+				"ingredient": {
+					"item": item.getId()
+				},
+				"repairTime": Math.ceil((1.75 * Math.sqrt(maxDamage)) * 20)
+			})
 		}
 	})
 });

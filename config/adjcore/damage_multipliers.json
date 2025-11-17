@@ -10,7 +10,7 @@
 	"minecraft:dragon_breath": 5.0,
 	"cataclysm:abyssal_burn": 4.0,
 	"minecraft:starve": 10.0,
-	"minecraft:drown": 15.0,
+	"minecraft:drown": 10.0,
 	"minecraft:in_wall": 10.0,
 	"cataclysm:deathlaser": 6.0,
 	"mutantmonsters:player_seismic_wave": 4.0,

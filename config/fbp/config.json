@@ -92,7 +92,7 @@
     "gravityMultiplier": 1.0
   },
   "drip": {
-    "enabled": true,
+    "enabled": false,
     "puddle": true,
     "spawnWhileFrozen": true,
     "randomSize": true,

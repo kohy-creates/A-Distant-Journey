@@ -508,7 +508,7 @@
 			]
 			title: "Ancient Flora Restoration Program"
 			x: -2.5d
-			y: -0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["10E23382BDF3B0D3"]
@@ -543,8 +543,8 @@
 				}
 			]
 			title: "Regrown-Reborn"
-			x: -1.0d
-			y: -1.5d
+			x: -2.5d
+			y: -0.5d
 		}
 		{
 			id: "71C9D73CA3D6B704"

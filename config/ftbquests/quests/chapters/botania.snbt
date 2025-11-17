@@ -56,7 +56,7 @@
 					type: "item"
 				}
 				{
-					id: "7FD4A368329AA00A"
+					id: "3D564DAC8B457BFA"
 					item: "botania:lexicon"
 					type: "item"
 				}
@@ -662,6 +662,12 @@
 							Damage: 0
 						}
 					}
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "012FA08F8F4CA482"
+					item: "mythicmetals:hallowed_ingot"
 					type: "item"
 				}
 			]

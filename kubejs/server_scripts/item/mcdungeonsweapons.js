@@ -405,7 +405,8 @@ ServerEvents.recipes((event) => {
 			E: 'emerald',
 			M: 'phantom_membrane',
 			O: 'bow',
-			S: 'botania:mana_string'
+			S: 'botania:mana_string',
+			B: 'bone'
 		}
 	)
 

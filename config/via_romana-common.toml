@@ -21,7 +21,7 @@
 	path_distance_maximum = 100000.0
 	#Cooldown in seconds for travel fatigue effect.
 	#Range: 0.0 ~ 3600.0
-	travel_fatigue_cooldown = 200.0
+	travel_fatigue_cooldown = 100.0
 
 [Management]
 	#Comma-separated list of entity IDs allowed to use paths (e.g., minecraft:player, minecraft:horse).

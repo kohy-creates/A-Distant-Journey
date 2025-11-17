@@ -35,6 +35,10 @@ renderType = "AUTO"
 	mobSpawning = "ONLY_SIMULATION"
 	#Allowed Values: SIMULATION_AND_PLANES, ONLY_SIMULATION, ONLY_PLANES, DISABLED
 	itemSpawning = "ONLY_SIMULATION"
+	#List of entity type IDs that should not produce wakes (e.g., "minecraft:dolphin", "minecraft:squid")
+	blacklistedMobs = []
+	#List of fluid IDs that can produce wakes
+	fluidWhitelist = ["minecraft:water", "minecraft:flowing_water", "tfc:salt_water", "tfc:spring_water", "tfc:river_water"]
 
 #Wake Behavior
 [wakeBehavior]

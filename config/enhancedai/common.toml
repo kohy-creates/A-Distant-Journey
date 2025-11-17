@@ -473,7 +473,7 @@
 
 		[Mobs.Targeting."Better hurt by target"]
 			#Mobs will actually switch target when attacked unless it's the same or if the current one it's closer.
-			Enable = true
+			Enable = false
 			#Mobs will prefer to attack players instead of other mobs (Note that 'Prevent infighting' should be disabled).
 			"Prefer players" = true
 			#Change for a mob to not attack other mobs when hit.

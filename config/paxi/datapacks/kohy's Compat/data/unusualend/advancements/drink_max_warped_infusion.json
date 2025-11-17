@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "unusualend:warped_infusion"
+    },
+    "title": {
+      "translate": "advancements.drink_max_warped_infusion.title"
+    },
+    "description": {
+      "translate": "advancements.drink_max_warped_infusion.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "drink_max_warped_infusion_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "unusualend:has_every_warped_entity_bucket"
+}

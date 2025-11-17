@@ -213,6 +213,7 @@ function hardcoreModifications(entity) {
 				'mcdw:scythe_jailors_scythe': 2,
 				'minecraft:iron_axe': 9,
 				'minecraft:diamond_axe': 2
+				
 			}));
 			break;
 		}
@@ -225,10 +226,12 @@ EntityEvents.spawned((event) => {
 
 	if (entity.getType() === 'minecraft:player') return;
 	const tags = entity.getTags().toArray();
-	if (!tags.includes('adj.scaled')) {
-		entity.addTag('adj.scaled');
+	if (!global.scaleThroughChapters.includes(entity.getType())) {
+		if (!tags.includes('adj.scaled')) {
+			entity.addTag('adj.scaled');
+		}
+		else return;
 	}
-	else return;
 
 	entity.server.scheduleInTicks(1, () => {
 		specialCase(entity)

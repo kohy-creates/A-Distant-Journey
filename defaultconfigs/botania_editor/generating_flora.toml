@@ -3,7 +3,7 @@
 	#Production of endoflame
 	#This is mana each tick, to know how much mana/sec multiply by 20 [3]
 	#Range: > 1
-	"Endoflame Production" = 6
+	"Endoflame Production" = 5
 
 ["Hydroangeas / Thermalily Config"]
 	#Hydroangeas duration
@@ -13,11 +13,11 @@
 	#Hydroangeas production
 	#How much mana should it produce each tick [1]
 	#Range: > 1
-	"Hydroangeas Production" = 3
+	"Hydroangeas Production" = 8
 	#Thermalily production
 	#How much mana should it produce each tick [20]
 	#Range: > 1
-	"Thermalily Production" = 50
+	"Thermalily Production" = 70
 
 ["Rosa Arcana Config"]
 	#Production of rosa arcana (player exp)
@@ -93,7 +93,7 @@
 	#Production multiplier for rafflowsia
 	#By how much should the mana produced each flower be multiplied [1]
 	#Range: 0.0 ~ 1.7976931348623157E308
-	"Rafflowsia Mult" = 1.
+	"Rafflowsia Mult" = 1.4
 
 ["Shulk Me Not Config"]
 	#Production multiplier for shulk me not

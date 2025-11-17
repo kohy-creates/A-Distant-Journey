@@ -1,0 +1,15 @@
+#Whether Obscure Tooltips should be active at all.
+enabled = true
+#Whether Obscure Tooltips should display 3D armor previews.
+armorPreviewEnabled = true
+#Whether Obscure Tooltips should display 3D tool/weapon previews.
+toolPreviewEnabled = false
+#List of item IDs that should always display a 3D armor preview.
+armorPreviewWhitelist = []
+#List of item IDs that should never display a 3D armor preview.
+armorPreviewBlacklist = []
+#List of item IDs that should always display a 3D tool/weapon preview.
+toolPreviewWhitelist = ["minecraft:trident", "minecraft:bow", "minecraft:crossbow"]
+#List of item IDs that should never display a 3D tool/weapon preview.
+toolPreviewBlacklist = []
+

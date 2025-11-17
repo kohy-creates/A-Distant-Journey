@@ -1058,14 +1058,7 @@
 			id: "7D5AA020D867BC37"
 			subtitle: "Use Planks and Sticks to make a Wooden Sword"
 			tasks: [{
-				icon: {
-					Count: 1
-					id: "minecraft:wooden_sword"
-					tag: {
-						Damage: 0
-					}
-				}
-				id: "7C18CD043430F72A"
+				id: "72BFBFF806AF3EB7"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
@@ -1212,26 +1205,6 @@
 					disable_toast: true
 					icon: {
 						Count: 1
-						id: "minecraft:diamond_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					id: "741E8A7A6F44610D"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "c:swords"
-						}
-					}
-					title: "Any Sword"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					icon: {
-						Count: 1
 						id: "minecraft:fishing_rod"
 						tag: {
 							Damage: 0
@@ -1251,6 +1224,26 @@
 						}
 					}
 					title: "Any Fishing Rod"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: {
+						Count: 1
+						id: "minecraft:diamond_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "66D58D76A5A04C1D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:swords"
+						}
+					}
+					title: "Any Sword"
 					type: "item"
 				}
 			]
@@ -1285,16 +1278,23 @@
 			description: [
 				"&6Campfires&r have a new effect - every &afriendly mob&r around it will get a new effect, &eCozy Campfire&r, which will slowly &cregenerate&r lost life."
 				""
-				"&cNatural health regeneration&r was &4&lnerfed&r in &6&lADJ&r, being a lot slower (but also consuming less hunger in return), so &nalternative sources of &chealth regeneration&r such as this are a necessity."
+				"Natural regeneration is way slower in ADJ than in vanilla Minecraft. Investing in alternate sources is vital if you want to stay topped off!"
+				""
+				"Unrelated, but you can right click any campfire to toggle between its lit and unlit state. No need for Shovels, Water or Flint and Steel."
 			]
 			id: "282EF85EE78976F5"
 			optional: true
 			shape: "rsquare"
 			subtitle: "Place down a Campfire"
 			tasks: [{
-				id: "6BD8778C96A0A77C"
-				item: "minecraft:campfire"
-				type: "item"
+				block: "minecraft:campfire"
+				block_type: 0
+				id: "2994EA3A824D65D2"
+				replace: false
+				replaced: "minecraft:air"
+				title: "Place down a Campfire"
+				type: "questsadditions:place"
+				value: 1L
 			}]
 			title: "Let's Go Camping!"
 			x: 3.0d
@@ -1382,15 +1382,29 @@
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Fortress!"]
 			hide_until_deps_complete: true
 			icon: "minecraft:nether_bricks"
 			id: "0B0DF609ABC8773D"
 			subtitle: "Find a Nether Fortress"
-			tasks: [{
-				id: "6D7214F425504287"
-				structure: "#betterfortresses:better_fortresses"
-				type: "structure"
-			}]
+			tasks: [
+				{
+					id: "6D7214F425504287"
+					structure: "#betterfortresses:better_fortresses"
+					title: "Find a Nether Fortress"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "1F363B1A67719149"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "A Terrible Fortress"
 			x: 19.0d
 			y: 6.0d
@@ -1722,12 +1736,12 @@
 			id: "589841D213C4466E"
 			subtitle: "Catch a Fish into a Bucket"
 			tasks: [{
-				id: "6A6AF271F7EDE4D4"
+				id: "3FA0D28362112650"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:mob_buckets"
+						value: "forge:buckets/entity_water"
 					}
 				}
 				title: "Any Fish in a Bucket"
@@ -1786,24 +1800,15 @@
 			icon: "netherexp:ecto_soul_sand"
 			id: "5A24E62380261206"
 			subtitle: "Summon a Wither"
-			tasks: [
-				{
-					icon: "minecraft:wither_skeleton_skull"
-					id: "3A629687CBEED2E7"
-					observe_type: 5
-					timer: 0L
-					title: "Summon a Wither"
-					to_observe: "minecraft:wither"
-					type: "observation"
-				}
-				{
-					id: "24FF2A24FABAF9FD"
-					observe_type: 0
-					timer: 0L
-					to_observe: "wither"
-					type: "observation"
-				}
-			]
+			tasks: [{
+				icon: "minecraft:wither_skeleton_skull"
+				id: "3A629687CBEED2E7"
+				observe_type: 5
+				timer: 0L
+				title: "Summon a Wither"
+				to_observe: "minecraft:wither"
+				type: "observation"
+			}]
 			title: "Withering Heights"
 			x: 22.0d
 			y: 8.5d
@@ -1843,8 +1848,8 @@
 				}
 			]
 			title: "From the Depths of Hell"
-			x: 21.0d
-			y: 10.5d
+			x: 20.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["20130F300D432015"]
@@ -2157,16 +2162,29 @@
 		}
 		{
 			dependencies: ["574DD3FD26A23CDE"]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Bronze Dungeon!"]
 			hide_until_deps_complete: true
 			icon: "aether:bronze_dungeon_key"
 			id: "2BA00BEE5144D82B"
 			subtitle: "Find a Bronze Dungeon"
-			tasks: [{
-				id: "423AFB6DEEF550B7"
-				structure: "aether:bronze_dungeon"
-				title: "Find Bronze Dungeon"
-				type: "structure"
-			}]
+			tasks: [
+				{
+					id: "423AFB6DEEF550B7"
+					structure: "aether:bronze_dungeon"
+					title: "Find Bronze Dungeon"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "65456C77B31E33E6"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Bronze Dungeon"
 			x: 21.0d
 			y: 15.0d
@@ -2203,54 +2221,93 @@
 				type: "kill"
 				value: 1L
 			}]
+			title: "Sliding Away"
 			x: 21.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["574DD3FD26A23CDE"]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Gold Dungeon!"]
 			hide_until_deps_complete: true
 			icon: "aether:gold_dungeon_key"
 			id: "501980860925DC72"
 			subtitle: "Find a Gold Dungeon"
-			tasks: [{
-				id: "0F8299E5D856DAB0"
-				structure: "aether:gold_dungeon"
-				title: "Find Gold Dungeon"
-				type: "structure"
-			}]
+			tasks: [
+				{
+					id: "0F8299E5D856DAB0"
+					structure: "aether:gold_dungeon"
+					title: "Find Gold Dungeon"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "25E3AB6CC49267B2"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Gold Dungeon"
 			x: 24.0d
 			y: 15.0d
 		}
 		{
 			dependencies: ["574DD3FD26A23CDE"]
-			description: [""]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Silver Dungeon!"]
 			hide_until_deps_complete: true
 			icon: "aether:silver_dungeon_key"
 			id: "554D78E50EBB7EF8"
 			subtitle: "Find a Silver Dungeon"
-			tasks: [{
-				id: "0E6651260651D9F0"
-				structure: "aether:silver_dungeon"
-				title: "Find Silver Dungeon"
-				type: "structure"
-			}]
+			tasks: [
+				{
+					id: "0E6651260651D9F0"
+					structure: "aether:silver_dungeon"
+					title: "Find Silver Dungeon"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "22AAF115DE5EFE45"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Silver Dungeon"
 			x: 22.5d
 			y: 15.0d
 		}
 		{
 			dependencies: ["574DD3FD26A23CDE"]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Platinum Dungeon!"]
 			hide_until_deps_complete: true
 			icon: "lost_aether_content:platinum_key"
 			id: "170CD4B41CA6F9C1"
 			subtitle: "Find a Platinum Dungeon"
-			tasks: [{
-				id: "4BBC4E6D6F7BB2A5"
-				structure: "lost_aether_content:platinum_dungeon"
-				title: "Find a Platinum Dungeon"
-				type: "structure"
-			}]
+			tasks: [
+				{
+					id: "4BBC4E6D6F7BB2A5"
+					structure: "lost_aether_content:platinum_dungeon"
+					title: "Find a Platinum Dungeon"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "608E9EEB71F2DDE9"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Platinum Dungeon"
 			x: 25.5d
 			y: 15.0d
@@ -2267,6 +2324,7 @@
 				type: "kill"
 				value: 1L
 			}]
+			title: "HEVEN... FALLS!"
 			x: 22.5d
 			y: 16.0d
 		}
@@ -2282,6 +2340,7 @@
 				type: "kill"
 				value: 1L
 			}]
+			title: "The Sun Goes Down"
 			x: 24.0d
 			y: 16.0d
 		}
@@ -2293,15 +2352,22 @@
 			tasks: [{
 				entity: "lost_aether_content:aerwhale_king"
 				icon: "lost_aether_content:platinum_key"
-				id: "163594ACA7DD1D7C"
+				id: "5F990F548BDF2E5C"
+				title: "Kill an Aerwhale King"
 				type: "kill"
 				value: 1L
 			}]
+			title: "Aerial Monarch"
 			x: 25.5d
 			y: 16.0d
 		}
 		{
 			dependencies: ["72FA802480074182"]
+			description: [
+				"&7&lHINT:&r &nEverything goes downhill from this point onwards&r."
+				""
+				"There is a &c&lhuge difficulty spike&r entering Chapter 3, so make sure you are prepared for it."
+			]
 			hide_until_deps_complete: false
 			icon: "kubejs:eye_of_angels"
 			id: "545C995B87BA0947"
@@ -2455,7 +2521,7 @@
 				type: "item"
 			}]
 			title: "Aetherpedia"
-			x: 21.5d
+			x: 21.0d
 			y: 13.0d
 		}
 		{
@@ -2689,7 +2755,13 @@
 		}
 		{
 			dependencies: ["0BACB5A08F178376"]
-			description: ["&l&7HINT:&r You can activate the portal by right-clicking &cGlowing Obsidian&r inside the frame with your &bAwakened Ender Pearl &fwith a &cRuby Attunment&r!"]
+			description: [
+				"Restored Portal Frame:"
+				""
+				"{image:adj:textures/other/skylands_portal.png width:100 height:100 align:center}"
+				""
+				"You can activate the portal by right-clicking &cGlowing Obsidian&r inside the frame with your &bAwakened Ender Pearl &fwith a &cRuby Attunment&r!"
+			]
 			icon: "rediscovered:ancient_cherry_leaves"
 			id: "25A8ABBC7235D20E"
 			shape: "hexagon"
@@ -3411,8 +3483,8 @@
 				type: "item"
 			}]
 			title: "I Stared Into The Void"
-			x: -4.5d
-			y: 25.5d
+			x: -3.750000000000007d
+			y: 25.035714285714278d
 		}
 		{
 			dependencies: ["3F2B685C8C008081"]
@@ -3460,7 +3532,7 @@
 			}]
 			title: "Raiders of The Lost Block"
 			x: -1.0d
-			y: 29.0d
+			y: 28.499999999999993d
 		}
 		{
 			dependencies: ["3F2B685C8C008081"]
@@ -3863,6 +3935,22 @@
 			title: "Life Surge"
 			x: 24.0d
 			y: 17.5d
+		}
+		{
+			dependencies: ["37D84A7023231586"]
+			description: ["&cHeart Lanterns&r give all players around then the &cRegeneration&r effect."]
+			id: "212630BDD7C97684"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Make a Heart Lantern"
+			tasks: [{
+				id: "6FE042FFC41668CE"
+				item: "heart_crystals:heart_lantern"
+				type: "item"
+			}]
+			title: "Light in The Darkness"
+			x: 15.0d
+			y: 1.5d
 		}
 	]
 	title: "Story"

@@ -294,6 +294,7 @@ ServerEvents.tags('item', resctrictions => {
 	]);
 
 	resctrictions.add('adj:locked_until/chapter_4', [
+		/enderium/,
 		/starrite/,
 		/star_platinum/,
 	]
@@ -329,7 +330,6 @@ ServerEvents.tags('item', resctrictions => {
 	]);
 
 	resctrictions.add('adj:locked_until/chapter_5', [
-		/enderium/,
 		/unobtainium/,
 		/metallurgium/,
 		/celestium/

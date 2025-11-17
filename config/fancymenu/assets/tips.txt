@@ -1,7 +1,7 @@
 Friendly mobs and players near a Campfire slowly regenerate lost health.
 Consider boosting your natural health regeneration with buffs from e.g. Campfires or Heart Lanterns.
 Wolves cannot enter The Nether. Just kidding, they totally can.
-Every milestone you achieve will permanently change your world for the worse.
+Every milestone you achieve will permanently change your world for the worse. Or better, if you like changes.
 Tired of the hot flames of The Nether? Why not build a portal out of Glowstone?
 7 Eyes and you can ascend to Godhood.
 A lot of vanilla materials are renewable, which is awesome if you don't like grinding.
@@ -13,12 +13,13 @@ Use code 'kohara' during checkout for a 25% discount on your first month with Bi
 Looking to remove a specific enchant? Craft a Precision Dispeller - the cooler cousin of a Grindstone.
 If you hate how slow Spawner EXP farms are, look into how Bibliophages work.
 Default campaign is not enough for you? Try Hardcore and see how far you can make it.
-Weapons which occupy both hands tend to deal more damage than one-handed ones.
-Efficiency, Sharpness and Power had their max level reduced from V down to III.
+Dying in Hardcore no longer deletes your world. You can choose to respawn and keep suffering.
+Weapons which occupy both hands tend to be better than single-handed ones.
+Most enchantments had their max level reduced. For example, Fortune and Looting have a max level of 1 and Efficiency has a max level of 3.
 Every item has massively increased durability and has an innate chance to not lose it when used.
 Unbreaking enchantment doubles an item's maximum durability.
 Mobs can notice you from further away and are a lot smarter than in Vanilla, so think twice before diving into a horde of Zombies.
-Having FPS problems? Reducing your graphic settings usually helps, but you can also try allocating more RAM to the game. 6 - 10 gigabytes is recommended.
+Having FPS problems? Reducing your graphic settings usually helps, but you can also try allocating more RAM to the game. 8 - 10 gigabytes is recommended.
 Hold M to open your player menu. In it you can find e.g. things related to shaders and voice chat.
 Having any form of a healing spell in your Spellbook is always a good idea, regardless of how quirky you make it.
 You can place Banners on Beds! Just fuse them together in your crafting menu.
@@ -31,12 +32,11 @@ Nightmare Stalkers will start materializing in the nighttime as soon as you ente
 Undead Armies happen when you kill 400 undead mobs in total, or after using an Undead Battle Standar.
 All accessories share the same slot type, so the combo potential is seemingly infinite.
 You can't equip two of the same accessories.
-Try making a Ship. It's barely practical if you don't live at an Ocean, but if you do, it's insanely fun to sail around in it. And it's an efficient mean of transport too!
 Waystones are a mid-game way of getting from one place to another in a matter of seconds. They are however a bit complicated when it comes to crafting them.
-Waystones can only be broken with a pickaxe of the same tier as Netherite.
+Waystones can only be broken with a pickaxe with a harvest level of 4.
 Mobs that are currently targetting you will have an indicator shown above their head.
 If you don't see some items you know already in your recipe browser - don't worry! You unlock more and more of them the further you progress.
-Sneak and right-click a Chest with both hands empty to pick it up. You can then place it back anywhere you want. It works with animals too!
+Sneak and right-click a Chest with both hands empty to pick it up. You can then place it back anywhere you want. It works with some animals too!
 Does your inventory feel too small? Craft a Bundle, a Sack or a Backpack!
 Just in case all the painting mods weren't enough, you can also make your own ones by crafting a Blank Canvas and a Palette. Release your inner Bob Ross.
 Spider Webs will break after a short while if you walk into them.
@@ -63,8 +63,7 @@ Enchanting Infusers allow you to select which enchantments you enchant your item
 Did you see all of the new death messages yet?
 Did you see all of the new death messages yet? I mean I'm pretty sure you did, the difficulty is pretty high.
 ADJ doesn't support any language other than English (US), so please don't report any localization issues if you still decide to play on a different language.
-Dandelifeons and Shulk me Nots are all good ways to produce lots of Mana late-game.
-Don't confuse Mana generated from magical flora with Mana used to cast spells.
+Dandelifeons and Shulk me Nots are all good ways to produce lots of Botanical Energy late-game.
 Legends say this pack was made by a gay furry :3
 You can place a Pet Bed and assign your furry companion to it to allow it to respawn when slain!
 You can't hurt your own pets. At least you shouldn't be able to, according to the mods included.
@@ -72,3 +71,5 @@ Remember to take breaks while playing!
 Place down an Inventory Connector and attach a Storage Terminal to it to create a basic and infinitely expandable storage system.
 Loot chests in structures can be looted by every player in your world, not just whoever finds them first.
 Nights are very dark in ADJ, so make sure you're always carrying a Torch or a Lantern with you at all time.
+An easy way to generate lots of Botanical Energy that requires minimum resources and upkeep are Hydroangeas.
+Thermalillies generate a lot of Botanical Energy while they are active, but go on a 5 minute cooldown afterwards. The amount of energy generated outweights the cooldown though.

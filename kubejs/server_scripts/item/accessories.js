@@ -394,7 +394,7 @@ LootJS.modifiers(event => {
 			pool.addLoot(LootEntry.of('confluence:honey_comb'))
 		})
 
-	event.addLootTableModifier([
+	event.addEntityLootModifier([
 		'spider',
 		'cave_spider',
 		'born_in_chaos_v1:baby_spider',

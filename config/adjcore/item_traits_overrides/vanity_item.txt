@@ -11,3 +11,4 @@ cataclysm:amptrgangr_head
 cataclysm:draugr_head
 /_fossil_head
 cataclysm:koboldediator_skull
+/botania:cosmetic

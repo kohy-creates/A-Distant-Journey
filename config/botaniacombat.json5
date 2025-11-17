@@ -55,15 +55,15 @@
 		// Starcaller projectile, 25% chance of using this instead of normal damage
 		"fallingStarHighDamage": 60.0,
 		// Missile from Unstable Reservoir Rod (does not effect Gaia Gaurdian)
-		"missileDamage": 28.0,
+		"missileDamage": 19.0,
 		// Flugel Tiara mana cost per tick
-		"tiaraCost": 50,
+		"tiaraCost": 15,
 		// Flugel Tiara mana cost per tick when flight meter is empty and Eye of the Flugel is in inventory
-		"tiaraOverkillCost": 105,
+		"tiaraOverkillCost": 50,
 		// Additional time to be removed from the tiara each tick of flight (should be positive). 0 = 60 secs max (default lexicon is wrong), 1 = 30 secs, 2 = 15 secs, etc
 		"tiaraExtraTime": 0,
 		// (Client Only) Force the flight bar to move this many rows up/down
-		"tiaraAdditionalRow": 0,
+		"tiaraAdditionalRow": 1,
 		// Mana cost of firing Mana Blaster
 		"manaBlasterCost": 120,
 		// Damaging Lens damage, recommended to lower if RWAPI is installed
