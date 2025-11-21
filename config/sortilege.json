@@ -121,10 +121,10 @@
 			"immunity_time": 600
 		},
 		"potion": {
-			"stack_size": 16,
+			"stack_size": 99,
 			"duration_multiplier": 1,
 			"drinking_time": 30,
-			"cooldown": 600
+			"cooldown": 900
 		},
 		"cauldron": {
 			"enable": true,

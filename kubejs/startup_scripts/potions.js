@@ -23,14 +23,6 @@ MoreJSEvents.registerPotionBrewing((event) => {
 	event.removeByPotion(null, null, 'netherdepthsupgrade:glowdine_long_glowing');
 	event.addPotionBrewing("netherdepthsupgrade:glowdine", "awkward", "alexscaves:glowing");
 
-	// Remove ALL Buzzier Bees Luck Potion variants
-	// Including Unluck. Cause they are all useless
-	// event.removeByPotion(null, null, "buzzier_bees:long_luck");
-	// event.removeByPotion(null, null, "buzzier_bees:long_unluck");
-	// event.removeByPotion(null, null, "buzzier_bees:strong_luck");
-	// event.removeByPotion(null, null, "buzzier_bees:strong_unluck");
-	// event.removeByPotion(null, null, "buzzier_bees:unluck");
-
 	// Remove doubled or useless potions
 	event.removeByPotion(null, null, 'davespotioneering:strong_invisibility');
 	event.removeByPotion(null, null, 'miners_delight:mining_fatigue');
@@ -46,7 +38,7 @@ MoreJSEvents.registerPotionBrewing((event) => {
 	event.removeByPotion(null, null, 'witherstormmod:wither');
 	event.removeByPotion(null, null, 'witherstormmod:strong_wither');
 	event.removeByPotion(null, null, 'witherstormmod:long_wither');
-	
+
 	// Universal Knockback Resistance
 	event.removeByPotion(null, null, 'alexsmobs:knockback_resistance');
 	event.removeByPotion(null, null, 'alexsmobs:strong_knockback_resistance');
@@ -84,4 +76,36 @@ MoreJSEvents.registerPotionBrewing((event) => {
 	event.addPotionBrewing("witherstormmod:withered_spider_eye", "poison", "kubejs:decay");
 	event.addPotionBrewing("witherstormmod:withered_spider_eye", "long_poison", "kubejs:long_decay");
 	event.addPotionBrewing("witherstormmod:withered_spider_eye", "strong_poison", "kubejs:strong_decay");
+})
+
+const potionOverrides = {
+	"minecraft:healing": {
+		drinkingTime: 8,
+		cooldown: 60
+	},
+	"minecraft:strong_healing": {
+		drinkingTime: 8,
+		cooldown: 60
+	},
+	"minecraft:harming": {
+		cooldown: 10
+	},
+	"minecraft:strong_harming": {
+		cooldown: 15
+	},
+}
+
+StartupEvents.init(event => {
+	for (const [potion, override] of Object.entries(potionOverrides)) {
+		let json = {
+			potion: potion
+		};
+		if (override.cooldown) {
+			json["cooldown"] = override.cooldown * 20
+		}
+		if (override.drinkingTime) {
+			json["drinking_time"] = override.drinkingTime
+		}
+		JsonIO.write(`kubejs/data/sortilege/potions/${potion.split(':')[1]}.json`, json)
+	}
 })

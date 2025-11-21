@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "enabled": true,
   "avoid_overlapping": true,
   "moved_by_effects": true,
@@ -8,6 +8,7 @@
   "search_containers": true,
   "search_containers_for_containers": true,
   "render_background": true,
+  "render_endcap": true,
   "hide_from_debug": true,
   "compass_enable": true,
   "compass_vertical_position": 220,
@@ -42,11 +43,12 @@
   "clock_24_hour": true,
   "clock_seasons": true,
   "clock_text_colour": 14737632,
-  "clock_vertical_position": 165,
+  "clock_vertical_position": 85,
   "clock_horizontal_position_left": false,
   "clock_items": [
     "minecraft:clock",
-    "mythicmetals:platinum_watch"
+    "mythicmetals:platinum_watch",
+    "sereneseasons:calendar"
   ],
   "clock_weather_items": [
     "caverns_and_chasms:barometer",
@@ -81,6 +83,7 @@
   "biome_horizontal_position_left": false,
   "biome_items": [
     "minecraft:map",
+    "minecraft:filled_map",
     "minecraft:empty_map",
     "map_atlases:atlas",
     "map_atlases:end_atlas",

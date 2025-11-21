@@ -5,7 +5,7 @@
   "fadeOutTime": 2.0,
   "global": {
     "pieces": {
-      "SHIELD": {
+      "LEGS": {
         "transparency": 100
       },
       "FEET": {
@@ -17,13 +17,13 @@
       "HAT": {
         "transparency": 100
       },
-      "CHEST": {
+      "SHIELD": {
         "transparency": 100
       },
       "HEAD": {
         "transparency": 100
       },
-      "LEGS": {
+      "CHEST": {
         "transparency": 100
       }
     },
@@ -31,24 +31,24 @@
       "HEAD": {
         "transparency": 100
       },
-      "LEGS": {
-        "transparency": 100
-      },
-      "OFFHAND": {
-        "transparency": 100
-      },
-      "CHEST": {
+      "MAINHAND": {
         "transparency": 100
       },
       "FEET": {
         "transparency": 100
       },
-      "MAINHAND": {
+      "CHEST": {
+        "transparency": 100
+      },
+      "OFFHAND": {
+        "transparency": 100
+      },
+      "LEGS": {
         "transparency": 100
       }
     },
     "glints": {
-      "SHIELD": {
+      "LEGS": {
         "transparency": 100
       },
       "FEET": {
@@ -60,13 +60,13 @@
       "HAT": {
         "transparency": 100
       },
-      "CHEST": {
+      "SHIELD": {
         "transparency": 100
       },
       "HEAD": {
         "transparency": 100
       },
-      "LEGS": {
+      "CHEST": {
         "transparency": 100
       }
     },
@@ -76,7 +76,7 @@
   "overrides": {
     "b1b6a13e-7a06-41a9-8189-1757871c9414": {
       "pieces": {
-        "SHIELD": {
+        "LEGS": {
           "transparency": 100
         },
         "FEET": {
@@ -88,13 +88,13 @@
         "HAT": {
           "transparency": 100
         },
-        "CHEST": {
+        "SHIELD": {
           "transparency": 100
         },
         "HEAD": {
           "transparency": 100
         },
-        "LEGS": {
+        "CHEST": {
           "transparency": 100
         }
       },
@@ -102,24 +102,24 @@
         "HEAD": {
           "transparency": 100
         },
-        "LEGS": {
-          "transparency": 100
-        },
-        "OFFHAND": {
-          "transparency": 100
-        },
-        "CHEST": {
+        "MAINHAND": {
           "transparency": 100
         },
         "FEET": {
           "transparency": 100
         },
-        "MAINHAND": {
+        "CHEST": {
+          "transparency": 100
+        },
+        "OFFHAND": {
+          "transparency": 100
+        },
+        "LEGS": {
           "transparency": 100
         }
       },
       "glints": {
-        "SHIELD": {
+        "LEGS": {
           "transparency": 100
         },
         "FEET": {
@@ -131,13 +131,13 @@
         "HAT": {
           "transparency": 100
         },
-        "CHEST": {
+        "SHIELD": {
           "transparency": 100
         },
         "HEAD": {
           "transparency": 100
         },
-        "LEGS": {
+        "CHEST": {
           "transparency": 100
         }
       },

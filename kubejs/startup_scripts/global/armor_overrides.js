@@ -505,31 +505,9 @@ global.armorOverrides = {
 			operation: 1
 		},
 	},
-	// 'mutantmonsters:mutant_skeleton': {
-	// 	'generic.armor': {
-	// 		values: [3, 8, 8, 7],
-	// 		operation: 0
-	// 	},
-	// 	'attributeslib:arrow_damage': {
-	// 		values: [-0.25, 0, 0, 0],
-	// 		operation: 0
-	// 	},
-	// 	'attributeslib:arrow_velocity': {
-	// 		values: [0, 0.3, 0, 0],
-	// 		operation: 0
-	// 	},
-	// 	'attributeslib:draw_speed': {
-	// 		values: [0, 0.33, 0, 0],
-	// 		operation: 0
-	// 	},
-	// 	'generic.movement_speed': {
-	// 		values: [0, 0, 0, 0.15],
-	// 		operation: 2
-	// 	},
-	// },
 	'cataclysm:bone_reptile': {
 		'generic.armor': {
-			values: [11, 16, 0, 0],
+			values: [7, 8, 0, 0],
 			operation: 0
 		},
 		'attributeslib:arrow_damage': {

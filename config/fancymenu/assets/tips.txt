@@ -73,3 +73,13 @@ Loot chests in structures can be looted by every player in your world, not just 
 Nights are very dark in ADJ, so make sure you're always carrying a Torch or a Lantern with you at all time.
 An easy way to generate lots of Botanical Energy that requires minimum resources and upkeep are Hydroangeas.
 Thermalillies generate a lot of Botanical Energy while they are active, but go on a 5 minute cooldown afterwards. The amount of energy generated outweights the cooldown though.
+Waterwheels are the best stress source in Create. Change my mind.
+You can spin water wheels horizontally instead of vertically, if you're into that sort of thing.
+I asked Discord for tips and got this.
+You can change the wood type of a Large Waterwheel if you right-click it with the new wood type you'd like.
+Water freezes during winter, plan machines accordingly.
+You can craft a Lucky Horseshoe that eliminates fall damage as soon as you enter the Nether.
+Different arrow types, in addition to having different on-hit effects, have different damage values.
+If an item can't be crafted through a Crafting Table, try finding it in other tabs in your recipe browser.
+Gravitite Ore is the easiest to find at the bottom of islands in the Aether.
+Don't forget to use accessories and improve them as you progress.

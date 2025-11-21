@@ -1,0 +1,11 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+		"block": {
+			"blocks": [
+				"botania:terra_plate",
+				"botanicadds:gaia_plate"
+			]
+		}
+	}
+}

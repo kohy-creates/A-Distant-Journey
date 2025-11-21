@@ -57,36 +57,74 @@ const gamerules = {
  */
 function changeGamerules(server, stage) {
 	const rulesToApply = gamerules[stage];
-	
+
 	if (!rulesToApply) return;
 
 	for (const [gamerule, value] of Object.entries(rulesToApply)) {
 		server.gameRules.set(gamerule, value)
 	}
+}
 
+
+// const chapterMessages = {
+// 	'chapter_1': [
+// 		Text.of('The spirits of hell enter the Overworld...').red().italic(),
+// 		Text.of('The caverns have been blessed with Mythril and Orichalcum').italic().green()
+// 	],
+// 	'chapter_2': [
+// 		Text.of('The ancient spirits of darkness have been released').darkRed().italic(),
+// 		Text.of('Heavenly gates open...').yellow().italic(),
+// 		Text.of('The hellish depths have been blessed with Palladium').gold().green()
+// 	],
+// 	'chapter_3': [
+// 		Text.of('The ancient spirits of light have been released').yellow().italic(),
+// 		Text.of('Dreams of a different realm start to materialize...').red().italic(),
+// 		Text.of('Two legendary ores start appearing in other dimensions...').italic().green()
+// 	],
+// 	'chapter_4': [
+// 		Text.of('The boundary between dreams and nigthmares lessens...').red().italic(),
+// 		Text.of('Awakened Ender Pearls start to twitch').lightPurple().italic()
+// 	],
+// 	'chapter_5': [
+// 		Text.of('The reality twists again, one final time...').darkPurple().italic(),
+// 	]
+// }
+
+const $TextColor = Java.loadClass("net.minecraft.network.chat.TextColor");
+const $Style = Java.loadClass("net.minecraft.network.chat.Style");
+
+function chapterMessage(text, color) {
+	return Text.of(text).color(color).italic();
+}
+
+const chapterMessagesColors = {
+	newOre: '#32FF82',
+	newDimension: '#FFD700',
+	difficultyIncrease: '#c50909'
 }
 
 const chapterMessages = {
 	'chapter_1': [
-		Text.of('The spirits of hell enter the Overworld...').red().italic(),
-		Text.of('The caverns have been blessed with Mythril and Orichalcum').italic().green()
+		chapterMessage('The spirits of hell enter the Overworld...', chapterMessagesColors.difficultyIncrease),
+		chapterMessage('The caverns have been blessed with Mythril and Orichalcum', chapterMessagesColors.newOre)
 	],
 	'chapter_2': [
-		Text.of('The ancient spirits of darkness have been released').darkRed().italic(),
-		Text.of('Heavenly gates open...').yellow().italic(),
-		Text.of('The hellish depths have been blessed with Palladium').gold().green()
+		chapterMessage('The ancient spirits of darkness have been released', chapterMessagesColors.difficultyIncrease),
+		chapterMessage('Heavenly gates open...', chapterMessagesColors.newDimension),
+		chapterMessage('The hellish depths have been blessed with Palladium', chapterMessagesColors.newOre)
 	],
 	'chapter_3': [
-		Text.of('The ancient spirits of light have been released').yellow().italic(),
-		Text.of('Dreams of a different realm start to materialize...').red().italic(),
-		Text.of('Two legendary ores start appearing in other dimensions...').italic().green()
+		chapterMessage('The ancient spirits of light have been released', chapterMessagesColors.difficultyIncrease),
+		chapterMessage('Dreams of a different realm start to materialize...', chapterMessagesColors.newDimension),
+		chapterMessage('Two legendary ores bless your other dimensions', chapterMessagesColors.newOre)
 	],
 	'chapter_4': [
-		Text.of('The boundary between dreams and nigthmares lessens...').red().italic(),
-		Text.of('Awakened Ender Pearls start to twitch').lightPurple().italic()
+		chapterMessage('The boundary between dreams and nigthmares lessens...', chapterMessagesColors.difficultyIncrease),
+		chapterMessage('Awakened Ender Pearls start to twitch', chapterMessagesColors.newDimension)
 	],
 	'chapter_5': [
-		Text.of('The reality twists again, one final time...').darkPurple().italic(),
+		chapterMessage('A withered growl can be heard from across the realms...', chapterMessagesColors.difficultyIncrease),
+		chapterMessage('A metal defying reality appeares in your caves', chapterMessagesColors.newOre)
 	]
 }
 
@@ -102,6 +140,35 @@ function sendChapterAnnouncements(server, stage) {
 		})
 	})
 }
+
+ADJServerEvents.recipeLookup(event => {
+
+	const item = event.getItem();
+
+	let chapters = [],
+		exceptions = [];
+	item.getTags().toArray().forEach(tag => {
+		const str = tag.toString();
+		if (!str.includes('chapter_')) return;
+		const match = str.match(/adj:locked_until\/.*[^ ]*?(chapter_\w+)/);
+		if (str.includes('exceptions')) {
+			exceptions.push(match[1]);
+		}
+		else {
+			chapters.push(match[1]);
+		}
+	});
+
+	if (chapters.length == 0) return;
+
+	let
+		chapter = chapters.sort()[chapters.length - 1],
+		exception = exceptions.sort()[exceptions.length - 1];;
+
+	if ((!exception || chapter != exception) && !event.getLevel().getServer().persistentData.chapters[chapter]) {
+		event.cancel()
+	}
+})
 
 ServerEvents.tick(event => {
 	const server = event.getServer();
@@ -198,7 +265,6 @@ ServerEvents.tags('item', resctrictions => {
 		/blaze/,
 		/crimson/,
 		/warped/,
-		//'soul_soil',
 		'gilded_blackstone',
 		'botania:ender_eye_block',
 		'ender_chest',
@@ -245,8 +311,7 @@ ServerEvents.tags('item', resctrictions => {
 	]);
 	resctrictions.add('adj:locked_until/light/chapter_2', [
 		/everycomp\:.*aether.*/, // also covers redux and lost content
-		/supp.*\:.*aether.*/,
-		/mutantmonsters/,
+		/supp.*\:.*aether.*/
 	]);
 	resctrictions.add('adj:locked_until/exceptions/chapter_2', [
 		'aether:leather_gloves',

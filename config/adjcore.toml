@@ -60,3 +60,9 @@
 	#Radius around a signal Campfire
 	CAMPFIRE_HEAL_RADIUS_SIGNAL = 32.0
 
+#Structures
+[structures]
+	#Minimum distance between structures
+	#Range: 1 ~ 256
+	MIN_STRUCTURE_DISTANCE = 32
+

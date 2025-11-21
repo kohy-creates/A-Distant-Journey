@@ -1,5 +1,13 @@
 ServerEvents.recipes((event) => {
 
+	function flattenedID(text) {
+		text = text.toString();
+		if (text.includes(' ')) {
+			text = text.split(' ')[1];
+		}
+		return text.replace(':', '_').replace('#', '');
+	}
+
 	/** @type {Internal.InputItem_}*/
 	const disabledItemRecipes = [
 		global.rediscoveredFurniture,
@@ -53,7 +61,12 @@ ServerEvents.recipes((event) => {
 		'farmersdelight:dough',
 		'mythicmetals:orichalcum_hammer',
 		'botania:terra_sword',
-		'minecraft:lodestone'
+		'minecraft:lodestone',
+
+		'botania:mana_pylon',
+		'botania:natura_pylon',
+		'botania:gaia_pylon',
+		'botania:spark'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -151,10 +164,11 @@ ServerEvents.recipes((event) => {
 		/alloy_forgery:compat\/adamantite/,
 		/mythicmetals:alloy_forge\/forge_adamantite_ingot/,
 
-		'unusualend:pearly_ingot_recipe'
+		'unusualend:pearly_ingot_recipe',
 
-
-		///alloy_forgery\:compat\//
+		'minecraft:netherite_ingot',
+		'alloy_forgery:netherite_from_gold_and_scrap',
+		'experienceobelisk:metamorpher/netherite_ingot_metamorphosis',
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -166,18 +180,6 @@ ServerEvents.recipes((event) => {
 	removeRecipeByType.forEach(recipeType => {
 		event.remove({ type: recipeType })
 	})
-
-	// Slightly different Atlas recipe
-	// event.shapeless(
-	// 	Item.of('map_atlases:atlas', '{empty:9}'),
-	// 	[
-	// 		'book',
-	// 		'#adj:any_map',
-	// 		'ink_sac',
-	// 		'feather',
-	// 		'compass'
-	// 	]
-	// )
 
 	event.shaped(
 		Item.of('enchantinginfuser:enchanting_infuser', 1),
@@ -192,7 +194,7 @@ ServerEvents.recipes((event) => {
 			O: 'minecraft:obsidian',
 			C: 'minecraft:crying_obsidian'
 		}
-	)
+	).id('adj:enchanting_table')
 
 	event.replaceInput(
 		{ input: 'minecraft:stick' },
@@ -212,29 +214,9 @@ ServerEvents.recipes((event) => {
 			E: 'minecraft:echo_shard',
 			C: 'minecraft:compass'
 		}
-	)
+	).id('minecraft:recovery_compass')
 
-	// Large Soul Candle
-	// event.shaped(
-	// 	Item.of('netherexp:soul_candle'),
-	// 	[
-	// 		'C',
-	// 		'S'
-	// 	],
-	// 	{
-	// 		C: 'buzzier_bees:soul_candle',
-	// 		S: '#minecraft:soul_fire_base_blocks'
-	// 	}
-	// )
-	// event.shapeless(
-	// 	Item.of('netherexp:soul_skeleton_skull_candle'),
-	// 	[
-	// 		'buzzier_bees:soul_candle',
-	// 		'skeleton_skull'
-	// 	]
-	// )
-
-	event.recipes.botania.mana_infusion('naturescompass:naturescompass', 'minecraft:compass').mana(1000000)
+	event.recipes.botania.mana_infusion('naturescompass:naturescompass', 'minecraft:compass').mana(1000000).id('adj:nature_compass')
 
 	/**
 	 * Registers a BotanicAdds Gaia Plate recipe
@@ -253,11 +235,11 @@ ServerEvents.recipes((event) => {
 			ingredients: ingredients,
 			result: { item: output },
 			mana: mana
-		});
+		}).id(`adj:gaia_plate/${flattenedID(output)}`);
 	}
 
 	function terraPlateAndGaiaPlate(inputs, output, mana) {
-		event.recipes.botania.terra_plate(output, inputs).mana(mana)
+		event.recipes.botania.terra_plate(output, inputs).mana(mana).id(`adj:terra_plate/${flattenedID(output)}`)
 		gaiaPlateRecipe(inputs, output, Math.round(mana * 0.6))
 	}
 
@@ -340,10 +322,6 @@ ServerEvents.recipes((event) => {
 		1000000
 	);
 
-	event.remove({ id: 'minecraft:netherite_ingot' })
-	event.remove({ id: 'alloy_forgery:netherite_from_gold_and_scrap' })
-	event.remove({ id: 'experienceobelisk:metamorpher/netherite_ingot_metamorphosis' })
-
 	function alloyForgeRecipe(inputs, output, minTier, fuelPerTick, tierOverrides) {
 
 		let recipe = {
@@ -401,6 +379,7 @@ ServerEvents.recipes((event) => {
 		}
 
 		event.custom(recipe)
+			.id(`adj:alloying/${flattenedID((Array.isArray(output)) ? output[0] : (output.includes(' ')) ? output.split(' ')[1] : output)}_from_${flattenedID(inputs[0][0])}`);
 	}
 
 	alloyForgeRecipe(
@@ -464,7 +443,7 @@ ServerEvents.recipes((event) => {
 				I: 'iron_ingot',
 				S: 'create:iron_sheet'
 			}
-		)
+		).id(`adj:${flattenedID(outputItem)}`)
 	};
 	ironArmorRecipe(['SIS', 'I I'], 'minecraft:iron_helmet');
 	ironArmorRecipe(['I I', 'SIS', 'SIS'], 'minecraft:iron_chestplate');
@@ -480,7 +459,7 @@ ServerEvents.recipes((event) => {
 				I: 'mythicmetals:kyber_ingot',
 				S: 'amethyst_shard'
 			}
-		)
+		).id(`adj:${flattenedID(outputItem)}`)
 	};
 	kyberArmorRecipe(['SIS', 'I I'], 'mythicmetals:kyber_helmet');
 	kyberArmorRecipe(['I I', 'SIS', 'SIS'], 'mythicmetals:kyber_chestplate');
@@ -496,7 +475,7 @@ ServerEvents.recipes((event) => {
 				I: 'botania:manasteel_ingot',
 				S: 'kubejs:manasteel_sheet'
 			}
-		)
+		).id(`adj:${flattenedID(outputItem)}`)
 	};
 	manasteelArmorRecipe(['SIS', 'I I'], 'botania:manasteel_helmet');
 	manasteelArmorRecipe(['I I', 'SIS', 'SIS'], 'botania:manasteel_chestplate');
@@ -520,7 +499,7 @@ ServerEvents.recipes((event) => {
 				I: input,
 				R: rune
 			}
-		)
+		).id(`adj:${flattenedID(output)}`)
 	}
 	terrasteelArmorRecipe(rune('spring'), 'botania:manasteel_helmet', 'botania:terrasteel_helmet');
 	terrasteelArmorRecipe(rune('summer'), 'botania:manasteel_chestplate', 'botania:terrasteel_chestplate');
@@ -539,7 +518,7 @@ ServerEvents.recipes((event) => {
 			S: 'botania:terrasteel_ingot',
 			H: 'mythicmetals:hallowed_ingot',
 		}
-	)
+	).id('botania:terra_sword')
 
 	event.custom({
 		'type': 'create:pressing',
@@ -553,8 +532,8 @@ ServerEvents.recipes((event) => {
 				'item': 'kubejs:manasteel_sheet'
 			}
 		]
-	})
-	event.recipes.botania.mana_infusion('kubejs:manasteel_sheet', 'create:iron_sheet').mana(3000)
+	}).id('adj:manasteel_sheet_from_pressing')
+	event.recipes.botania.mana_infusion('kubejs:manasteel_sheet', 'create:iron_sheet').mana(3000).id('adj:manasteel_sheet_from_infusion')
 
 	event.shaped(
 		'kubejs:diamond_upgrade',
@@ -567,7 +546,7 @@ ServerEvents.recipes((event) => {
 			D: 'diamond',
 			I: 'create:iron_sheet'
 		}
-	)
+	).id('adj:diamond_upgrade')
 	const diamondItems = [
 		'pickaxe',
 		'axe',
@@ -586,7 +565,7 @@ ServerEvents.recipes((event) => {
 			'kubejs:diamond_upgrade',
 			`additionaladditions:rose_gold_${item}`,
 			'diamond'
-		)
+		).id(`minecraft:diamond_${item}`)
 	})
 
 	event.shaped(
@@ -601,7 +580,7 @@ ServerEvents.recipes((event) => {
 			O: 'mythicmetals:orichalcum_block',
 			A: 'mythicmetals:adamantite_block'
 		}
-	)
+	).id('adj:orichalcum_hammer')
 
 	// Furnaces require a piece of Coal
 	/**
@@ -621,7 +600,7 @@ ServerEvents.recipes((event) => {
 				B: material,
 				C: '#c:coal'
 			}
-		)
+		).id(`adj:${outputItem.split(':')[1]}`)
 	};
 	furnaceRecipe('minecraft:cobblestone', 'minecraft:furnace')
 	furnaceRecipe('minecraft:cobbled_deepslate', 'quark:deepslate_furnace')
@@ -633,7 +612,7 @@ ServerEvents.recipes((event) => {
 		'born_in_chaos_v1:dark_upgrade',
 		'quark:smithing_template_rune'
 	]
-	const consumer = (recipe) => {
+	event.forEachRecipe({ type: 'minecraft:crafting_shaped' }, (recipe) => {
 		let output = recipe.getOriginalRecipeResult();
 		if (output.id.indexOf('_smithing_template') === -1) {
 			if (!otherTemplates.includes(output.id)) return
@@ -649,9 +628,8 @@ ServerEvents.recipes((event) => {
 			material,
 			material2,
 			material2
-		]);
-	}
-	event.forEachRecipe({ type: 'minecraft:crafting_shaped' }, consumer)
+		]).id(`adj:smithing_template_copy_${output.id.replace(':', '_')}`);
+	})
 
 	/**
 	 * @param {Internal.OutputItem_} outputItem 
@@ -673,7 +651,7 @@ ServerEvents.recipes((event) => {
 				I: input2,
 				C: center
 			}
-		);
+		).id(`adj:${flattenedID(outputItem)}`);
 	};
 	templateRecipe('born_in_chaos_v1:dark_upgrade', 'born_in_chaos_v1:dark_metal_nugget', 'born_in_chaos_v1:dark_metal_ingot', 'born_in_chaos_v1:seedof_chaos');
 	templateRecipe('additionaladditions:rose_gold_upgrade', 'iron_ingot', 'cobblestone', 'additionaladditions:rose_gold_alloy');
@@ -706,7 +684,7 @@ ServerEvents.recipes((event) => {
 		'minecraft:amethyst_shard',
 		'sortilege:limitite',
 		1500
-	);
+	).id('adj:limitite');
 
 	// Crying Obsidian
 	event.recipes.ars_nouveau.imbuement(
@@ -714,19 +692,20 @@ ServerEvents.recipes((event) => {
 		'minecraft:crying_obsidian',
 		600,
 		[]
-	)
+	).id('adj:crying_obsidian')
 
 	event.shaped(
 		Item.of('minecraft:bundle'),
 		[
-			'S',
-			'L'
+			' S ',
+			'L L',
+			' L '
 		],
 		{
 			S: 'minecraft:string',
 			L: 'minecraft:leather'
 		}
-	)
+	).id('minecraft:bundle')
 
 	// Clocks can be replaced with Platinum Watches
 	event.replaceInput(
@@ -764,7 +743,7 @@ ServerEvents.recipes((event) => {
 					'item': `${output}`
 				}
 			]
-		})
+		}).id(`adj:item_in_block/${output.replace('#', '').replace(':', '_')}_from_${item.replace('#', '').replace(':', '_')}_in_${block.replace('#', '').replace(':', '_')}`)
 	}
 
 	/** @type {Internal.Block_} */
@@ -845,7 +824,7 @@ ServerEvents.recipes((event) => {
 				}
 				return base;
 			})()
-		});
+		}).id(`adj:item_on_block/${flattenedID(toPlace)}_from_${flattenedID(item)}_on_${flattenedID(block)}`);
 	}
 
 	// Derustifying items
@@ -920,7 +899,7 @@ ServerEvents.recipes((event) => {
 				'level': '3'
 			}
 		}
-	})
+	}).id('adj:recall_potion')
 
 	event.custom({
 		'type': 'lychee:block_interacting',
@@ -952,38 +931,11 @@ ServerEvents.recipes((event) => {
 		'block_in': {
 			'tag': 'adj:stone'
 		}
-	})
+	}).id('adj:amethyst_dust')
 
 	event.recipes.create.crushing(
 		[Item.of('spelunker:amethyst_dust')], 'amethyst_shard', 20
-	)
-
-	// event.custom({
-	// 	'type': 'lychee:block_interacting',
-	// 	'contextual': [
-	// 		{
-	// 			'type': 'location',
-	// 			'predicate': {
-	// 				'biome': 'minecraft:warped_forest'
-	// 			}
-	// 		}
-	// 	],
-	// 	'post': [
-	// 		{
-	// 			'type': 'drop_item',
-	// 			'item': 'botania:ender_air_bottle'
-	// 		},
-	// 		{
-	// 			'type': 'execute',
-	// 			'command': 'playsound minecraft:item.bottle.fill_dragonbreath neutral @a[distance=0..] ~ ~ ~ 0.75 1',
-	// 			'hide': true
-	// 		}
-	// 	],
-	// 	'item_in': {
-	// 		'item': 'minecraft:glass_bottle'
-	// 	},
-	// 	'block_in': '*'
-	// })
+	).id('adj:amethyst_dust_crushing')
 
 	event.shaped(
 		Item.of('supplementaries:quiver'),
@@ -996,7 +948,7 @@ ServerEvents.recipes((event) => {
 			S: 'string',
 			L: 'leather',
 		}
-	)
+	).id('adj:quiver')
 
 	// Weapons
 	event.shaped(
@@ -1011,7 +963,7 @@ ServerEvents.recipes((event) => {
 			T: 'botania:terra_sword',
 			G: 'botanicadds:gaiasteel_ingot'
 		}
-	);
+	).id('botania:star_sword');
 
 	event.shaped(
 		Item.of('botania:thunder_sword'),
@@ -1025,7 +977,7 @@ ServerEvents.recipes((event) => {
 			T: 'botania:terra_sword',
 			G: 'botanicadds:gaiasteel_ingot'
 		}
-	)
+	).id('botania:thunder_sword')
 
 	event.custom({
 		'type': 'sortilege:cauldron_brewing',
@@ -1033,7 +985,7 @@ ServerEvents.recipes((event) => {
 			'item': 'minecraft:iron_ingot'
 		},
 		'output': 'kubejs:endurance'
-	})
+	}).id('adj:cauldron_brewing/endurance_potion')
 
 	// Food can only be cooked in a Smoker and a Campfire
 	event.remove({
@@ -1068,7 +1020,7 @@ ServerEvents.recipes((event) => {
 		{
 			F: 'kubejs:skull_fragment'
 		}
-	)
+	).id('adj:wither_skeleton_skull')
 
 	event.shaped(
 		Item.of('create_power_loader:andesite_chunk_loader'),
@@ -1083,7 +1035,7 @@ ServerEvents.recipes((event) => {
 			C: 'create:andesite_casing',
 			S: 'create:shaft'
 		}
-	)
+	).id('adj:andesite_chunk_loader')
 	event.recipes.create.mechanical_crafting(
 		Item.of('create_power_loader:brass_chunk_loader'),
 		[
@@ -1100,7 +1052,7 @@ ServerEvents.recipes((event) => {
 			S: 'create:shaft',
 			P: 'create:precision_mechanism'
 		}
-	)
+	).id('adj:brass_chunk_loader')
 
 	event.replaceInput({ input: 'mcdw:item_bee_stinger' },
 		'mcdw:item_bee_stinger',
@@ -1108,11 +1060,6 @@ ServerEvents.recipes((event) => {
 	)
 
 	// Unify ropes
-	// event.replaceInput(
-	// 	{ input: 'dustydecorations:rope' },
-	// 	'dustydecorations:rope',
-	// 	'supplementaries:rope'
-	// )
 	event.replaceInput(
 		{ output: 'farmersdelight:rope' },
 		'farmersdelight:rope',
@@ -1132,7 +1079,7 @@ ServerEvents.recipes((event) => {
 		{
 			R: 'supplementaries:rope'
 		}
-	)
+	).id('adj:safety_net')
 	event.shaped(
 		Item.of('supplementaries:rope', 20),
 		[
@@ -1143,7 +1090,7 @@ ServerEvents.recipes((event) => {
 		{
 			F: 'supplementaries:flax'
 		}
-	)
+	).id('adj:rope')
 
 	// Unify Silver
 	event.remove({ id: 'alloy_forgery:compat/silver_ingot_from_raw_ores' })
@@ -1250,7 +1197,7 @@ ServerEvents.recipes((event) => {
 			'create:wheat_flour',
 			'#forge:water'
 		]
-	).id('kubejs:dough_manual_only')
+	).id('adj:dough_manual_only')
 
 	event.shapeless(
 		Item.of('create:dough', 4),
@@ -1260,7 +1207,7 @@ ServerEvents.recipes((event) => {
 			'create:wheat_flour',
 			'#forge:eggs'
 		]
-	)
+	).id('adj:dough_from_eggs')
 
 	// Map stuff
 	event.remove({ type: 'crafting_special_mapextending' })
@@ -1279,7 +1226,7 @@ ServerEvents.recipes((event) => {
 			Item.of('map'),
 			Item.of('additionaladditions:depth_meter')
 		]
-	)
+	).id('adj:slice_map')
 	// Cheaper Maps
 	event.shaped(
 		Item.of('map'),
@@ -1290,7 +1237,7 @@ ServerEvents.recipes((event) => {
 		{
 			P: 'paper'
 		}
-	)
+	).id('minecraft:map')
 
 	// Harder Waystones
 	let waystonesRemove = [
@@ -1311,7 +1258,7 @@ ServerEvents.recipes((event) => {
 			Item.of('ender_pearl'),
 			Item.of('spelunker:amethyst_dust')
 		]
-	)
+	).id('adj:warp_dust')
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
 			'waystones:warp_dust',
@@ -1326,7 +1273,7 @@ ServerEvents.recipes((event) => {
 		'aether:zanite_gemstone',
 		'waystones:warp_stone',
 		7000
-	);
+	).id('adj:waystones/warp_stone');
 	function waystoneRecipe(waystone, material) {
 		event.recipes.create.mechanical_crafting(
 			waystone,
@@ -1345,7 +1292,7 @@ ServerEvents.recipes((event) => {
 				A: '#mythicmetals:adamantite_nuggets',
 				B: material
 			}
-		)
+		).id(`adj:waystones/${waystone.split(':')[1]}`)
 	}
 	waystoneRecipe('waystones:waystone', 'stone_bricks');
 	waystoneRecipe('waystones:sandy_waystone', 'sandstone');
@@ -1364,7 +1311,7 @@ ServerEvents.recipes((event) => {
 		'waystones:waystone',
 		'waystones:sharestone',
 		1000
-	);
+	).id('adj:waystones/sharestone');
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
 			'waystones:warp_dust',
@@ -1375,7 +1322,7 @@ ServerEvents.recipes((event) => {
 		'waystones:waystone',
 		'waystones:portstone',
 		1000
-	);
+	).id('adj:waystones/portstone');
 	event.shaped(
 		Item.of('waystones:warp_plate'),
 		[
@@ -1388,7 +1335,7 @@ ServerEvents.recipes((event) => {
 			S: 'stone_brick_slab',
 			W: 'waystones:waystone'
 		}
-	)
+	).id('adj:waystones/warp_plate')
 
 	event.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: 'constructionwand' }, (recipe) => {
 		const output = recipe.getOriginalRecipeResult();
@@ -1409,7 +1356,7 @@ ServerEvents.recipes((event) => {
 				],
 				ingredients[4],
 				output
-			)
+			).id(`adj:construction_wand/${output.getId().split(':')[1]}`)
 		}
 		else {
 			event.recipes.ars_nouveau.enchanting_apparatus(
@@ -1422,7 +1369,7 @@ ServerEvents.recipes((event) => {
 				],
 				'stick',
 				output
-			)
+			).id(`adj:construction_wand/${output.getId().split(':')[1]}`)
 		}
 	})
 
@@ -1453,7 +1400,7 @@ ServerEvents.recipes((event) => {
 				H: ingredients[7],
 				I: ingredients[8]
 			}
-		)
+		).id(recipe.getId())
 	})
 
 	event.remove({ id: 'netherexp:nether_quartz_from_quartz_block' })
@@ -1469,7 +1416,7 @@ ServerEvents.recipes((event) => {
 			{
 				S: material
 			}
-		)
+		).id(`adj:lead_from_${material.replace('#', '').replace(':', '_')}`)
 	}
 	leadRecipe(2, '#forge:string');
 	leadRecipe(1, 'farmersdelight:straw');
@@ -1486,7 +1433,7 @@ ServerEvents.recipes((event) => {
 				I: material,
 				R: 'redstone_dust'
 			}
-		)
+		).id(`adj:gear_from_${material.replace('#', '').replace(':', '_')}`)
 	}
 	gearRecipe(2, 'iron_nugget');
 
@@ -1551,12 +1498,7 @@ ServerEvents.recipes((event) => {
 			'blaze_powder',
 			'blaze_powder'
 		]
-	)
-
-	event.replaceInput({ input: 'supplementaries:cannon' },
-		'supplementaries:cannon',
-		'alekiships:cannon'
-	)
+	).id('minecraft:ender_eye')
 
 	event.replaceInput({ input: 'minecraft:popped_chorus_fruit', type: 'ars_nouveau:enchanting_apparatus' },
 		"popped_chorus_fruit",
@@ -1567,19 +1509,6 @@ ServerEvents.recipes((event) => {
 		'#c:ender_pearls',
 		'ender_pearl'
 	)
-
-	// event.shaped(
-	// 	Item.of('rediscovered:ruby_eye'),
-	// 	[
-	// 		' R ',
-	// 		'RER',
-	// 		' R '
-	// 	],
-	// 	{
-	// 		R: 'rediscovered:ruby',
-	// 		E: 'ender_eye'
-	// 	}
-	// )
 
 	event.shaped(
 		Item.of('alexscaves:desolate_dagger'),
@@ -1594,7 +1523,7 @@ ServerEvents.recipes((event) => {
 			B: 'alexscaves:dark_tatters',
 			T: 'alexscaves:thornwood_branch'
 		}
-	)
+	).id('adj:desolate_dagger')
 
 	// Alloy Forges
 	function simpleForgeRecipe(input, output, furnace) {
@@ -1609,7 +1538,7 @@ ServerEvents.recipes((event) => {
 				F: (furnace) ? furnace : 'blast_furnace',
 				I: Item.of(input)
 			}
-		)
+		).id(`adj:alloy_forge/${input}_from_${(furnace) ? furnace.split(':')[1] : 'blast_furnace'}`)
 	}
 	simpleForgeRecipe('stone_bricks', 'alloy_forgery:cracked_stone_bricks_forge_controller')
 	simpleForgeRecipe('deepslate_bricks', 'alloy_forgery:cracked_deepslate_bricks_forge_controller')
@@ -1628,7 +1557,7 @@ ServerEvents.recipes((event) => {
 			C: 'adj:adamantite_forge_casing',
 			I: 'iron_block'
 		}
-	)
+	).id(`adj:alloy_forge/adamantite`)
 
 	event.shaped(
 		'alloy_forgery:ender_forge_casing_forge_controller',
@@ -1642,7 +1571,7 @@ ServerEvents.recipes((event) => {
 			C: 'adj:ender_forge_casing',
 			I: 'unusualend:pearlescent_ingot'
 		}
-	)
+	).id(`adj:alloy_forge/ender`)
 
 	function casingRecipe(material1, material2, output) {
 		event.shaped(
@@ -1656,7 +1585,7 @@ ServerEvents.recipes((event) => {
 				M: Item.of(material1),
 				N: Item.of(material2)
 			}
-		)
+		).id(`adj:alloy_forge/casing/${output.split(':')[1]}`)
 	}
 	casingRecipe('born_in_chaos_v1:dark_metal_ingot', 'mythicmetals:adamantite_ingot', 'adj:adamantite_forge_casing')
 	casingRecipe('purpur_block', 'end_stone_bricks', 'adj:ender_forge_casing')
@@ -1667,19 +1596,14 @@ ServerEvents.recipes((event) => {
 			'blue_dye',
 			'orange_dye'
 		]
-	)
+	).id('adj:brown_dye')
 	event.shapeless(
 		Item.of('green_dye', 2),
 		[
 			'blue_dye',
 			'yellow_dye'
 		]
-	)
-
-	event.replaceInput({ output: 'quark:deepslate_furnace' },
-		'deepslate',
-		'cobbled_deepslate'
-	)
+	).id('adj:green_dye')
 
 	// Awakened Ender Pearls
 	event.forEachRecipe({ type: 'crafting_shaped', output: /cataclysm\:.*eye/ }, recipe => {
@@ -1716,7 +1640,7 @@ ServerEvents.recipes((event) => {
 			'minecraft:ender_eye',
 			result,
 			0
-		)
+		).id(`adj:awakened_pearls/${result.getId().split(':')[1]}`)
 		// }
 	});
 	event.recipes.ars_nouveau.enchanting_apparatus(
@@ -1732,7 +1656,7 @@ ServerEvents.recipes((event) => {
 		'minecraft:ender_eye',
 		'rediscovered:ruby_eye',
 		0
-	)
+	).id(`adj:awakened_pearls/ruby_ender_pearl`)
 
 	// End game Architect's Prism recipes
 	event.custom({
@@ -1767,8 +1691,7 @@ ServerEvents.recipes((event) => {
 		"result": {
 			"item": "structure_gel:building_tool"
 		}
-	}
-	)
+	}).id('adj:prism')
 
 	// Ars Nouveau re-progression
 	event.remove({ type: 'ars_nouveau:book_upgrade' })
@@ -1785,7 +1708,7 @@ ServerEvents.recipes((event) => {
 		],
 		'writable_book',
 		'ars_nouveau:novice_spell_book'
-	)
+	).id('ars_nouveau:novice_spell_book')
 	event.custom({
 		"type": "ars_nouveau:book_upgrade",
 		"pattern": [
@@ -1818,7 +1741,7 @@ ServerEvents.recipes((event) => {
 		"result": {
 			"item": "ars_nouveau:apprentice_spell_book"
 		}
-	})
+	}).id('ars_nouveau:apprentice_spell_book')
 	event.custom({
 		"type": "ars_nouveau:book_upgrade",
 		"pattern":
@@ -1855,7 +1778,7 @@ ServerEvents.recipes((event) => {
 		"result": {
 			"item": "ars_nouveau:archmage_spell_book"
 		}
-	})
+	}).id('ars_nouveau:archmage_spell_book')
 
 	/**
 	 * @type {Record<InputItem_, Internal.InputItem_>}
@@ -1877,7 +1800,7 @@ ServerEvents.recipes((event) => {
 			],
 			runite,
 			arcanist
-		)
+		).id(`adj:${arcanist.split(':')[1]}`)
 	}
 
 	event.remove({ type: 'ars_nouveau:armor_upgrade' })
@@ -1917,7 +1840,7 @@ ServerEvents.recipes((event) => {
 		],
 		"sourceCost": 2500,
 		"tier": 1
-	})
+	}).id(`adj:arcanist_upgrade_1`)
 
 	event.custom({
 		"type": "ars_nouveau:armor_upgrade",
@@ -1950,7 +1873,7 @@ ServerEvents.recipes((event) => {
 		],
 		"sourceCost": 5000,
 		"tier": 2
-	})
+	}).id(`adj:arcanist_upgrade_2`)
 
 
 	event.remove({ type: 'ars_elemental:armor_upgrade' })
@@ -2010,7 +1933,7 @@ ServerEvents.recipes((event) => {
 				],
 				"sourceCost": 7000,
 				"tier": 3
-			})
+			}).id(`adj:${element}_${itemType}`)
 			i++;
 		})
 	}
@@ -2219,7 +2142,7 @@ ServerEvents.recipes((event) => {
 			event.recipes.create.deploying(inter, [inter, Item.of('create:cogwheel')]),
 			event.recipes.create.filling(inter, [inter, Fluid.of('the_bumblezone:royal_jelly_fluid_still', 1000)]),
 		]
-	).transitionalItem(inter).loops(16)
+	).transitionalItem(inter).loops(16).id('adj:eyes/ethercraft')
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
@@ -2235,7 +2158,7 @@ ServerEvents.recipes((event) => {
 		'ender_eye',
 		'kubejs:eye_of_arcanum',
 		10000
-	)
+	).id('adj:eyes/arcanum')
 
 	event.shaped(
 		Item.of('mythicmetals:durasteel_engine'),
@@ -2250,7 +2173,7 @@ ServerEvents.recipes((event) => {
 			S: Item.of('gunpowder'),
 			B: Item.of('mythicmetals:steel_block'),
 		}
-	)
+	).id('adj:durasteel_engine')
 
 	const cookingTimeOverrides = {
 		'artifacts:eternal_steak': 120, // in seconds btw
@@ -2258,6 +2181,12 @@ ServerEvents.recipes((event) => {
 		'born_in_chaos_v1:smoked_fish': 10,
 		'alexscaves:cooked_dinosaur_chop': 25,
 	}
+	/**
+	 * 
+	 * @param {*} type 
+	 * @param {Internal.RecipeJS_} recipe 
+	 * @returns 
+	 */
 	function overrideCooking(type, recipe) {
 		const output = recipe.getOriginalRecipeResult();
 		const input = recipe.getOriginalRecipeIngredients();
@@ -2271,10 +2200,10 @@ ServerEvents.recipes((event) => {
 
 		event.remove({ id: recipe.getId() });
 		if (type == 'smoking') {
-			event.smoking(output, input, exp * 2, time);
+			event.smoking(output, input, exp * 2, time).id(`adj:smoking/${flattenedID(output)}_from_${flattenedID(input[0].getItemIds()[0])}`);
 		}
 		else if (type == 'campfire') {
-			event.campfireCooking(output, input, exp, time);
+			event.campfireCooking(output, input, exp, time).id(`adj:campfire_cooking/${flattenedID(output)}_from_${flattenedID(input[0].getItemIds()[0])}`);
 		}
 	}
 	event.forEachRecipe({ type: 'smoking' }, recipe => {
@@ -2297,7 +2226,7 @@ ServerEvents.recipes((event) => {
 				N: Item.of('iron_nugget'),
 				I: Item.of('iron_ingot')
 			}
-		)
+		).id(`adj:${output}`)
 	}
 	chainmailRecipe('chainmail_helmet', [
 		'INI',
@@ -2506,7 +2435,7 @@ ServerEvents.recipes((event) => {
 			N: 'mythicmetals:copper_nugget',
 			T: 'torch'
 		}
-	)
+	).id('adj:scaffolding')
 
 	// More nuggets from gear
 	// And unification of Copper Nuggets
@@ -2539,7 +2468,7 @@ ServerEvents.recipes((event) => {
 					input[0],
 					0.1,
 					15 * 20
-				)
+				).id(recipe.getId())
 			}
 		}
 	})
@@ -2555,7 +2484,7 @@ ServerEvents.recipes((event) => {
 		"compass",
 		Item.of('minecraft:compass', '{LodestoneDimension:"minecraft:overworld",LodestonePos:{X:3440,Y:64,Z:3200},LodestoneTracked:0b,display:{Name:\'{"text":"Command Block Compass","italic":false}\'},"quark:compass_calculated":1b,"quark:compass_in_nether":0b}'),
 		0
-	)
+	).id('adj:wither_storm_compass')
 
 	event.shapeless(
 		'ars_nouveau:worn_notebook',
@@ -2565,7 +2494,7 @@ ServerEvents.recipes((event) => {
 			'#forge:logs/archwood',
 			'book'
 		]
-	)
+	).id('ars_nouveau:worn_notebook')
 
 	event.remove({ type: 'xercapaint:crafting_special_palette_crafting' });
 	event.shaped(
@@ -2577,7 +2506,7 @@ ServerEvents.recipes((event) => {
 		{
 			P: '#minecraft:planks'
 		}
-	)
+	).id('adj:item_palette')
 
 	// Quark Pipes
 	event.shaped(
@@ -2591,7 +2520,7 @@ ServerEvents.recipes((event) => {
 			I: 'create:brass_ingot',
 			G: '#forge:glass'
 		}
-	)
+	).id('adj:pipes')
 
 	event.shapeless(
 		Item.of('quark:encased_pipe'),
@@ -2599,13 +2528,13 @@ ServerEvents.recipes((event) => {
 			'quark:pipe',
 			'#forge:glass'
 		]
-	)
+	).id('adj:pipes_encasing')
 	event.shapeless(
 		Item.of('quark:pipe'),
 		[
 			'quark:encased_pipe'
 		]
-	)
+	).id('adj:pipes_from_encased')
 
 	// Cheaper Andesite Alloy
 	/**
@@ -2626,8 +2555,9 @@ ServerEvents.recipes((event) => {
 				N: nugget,
 				A: 'andesite'
 			}
-		)
+		).id(`adj:andesite_alloy_from_${nugget.replace(':', '_')}`)
 		event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), ['andesite', nugget])
+			.id(`adj:andesite_alloy_from_${nugget.replace(':', '_')}_mixing`)
 	})
 
 	// FunctionalStorage
@@ -2642,7 +2572,7 @@ ServerEvents.recipes((event) => {
 			A: 'create:andesite_casing',
 			V: 'create:item_vault'
 		}
-	)
+	).id('adj:storage_drawer_1x')
 	event.shaped(
 		Item.of('functionalstorage:oak_2', 2),
 		[
@@ -2654,7 +2584,7 @@ ServerEvents.recipes((event) => {
 			A: 'create:andesite_casing',
 			V: 'create:item_vault'
 		}
-	)
+	).id('adj:storage_drawer_2x')
 	event.shaped(
 		Item.of('functionalstorage:oak_4', 4),
 		[
@@ -2666,7 +2596,7 @@ ServerEvents.recipes((event) => {
 			A: 'create:andesite_casing',
 			V: 'create:item_vault'
 		}
-	)
+	).id('adj:storage_drawer_4x')
 
 	event.shaped(
 		Item.of('functionalstorage:compacting_drawer', 1),
@@ -2681,7 +2611,7 @@ ServerEvents.recipes((event) => {
 			V: 'create:item_vault',
 			B: 'create:brass_casing'
 		}
-	)
+	).id('adj:compacting_drawer')
 	event.shaped(
 		Item.of('functionalstorage:storage_controller', 1),
 		[
@@ -2694,7 +2624,7 @@ ServerEvents.recipes((event) => {
 			V: 'create:item_vault',
 			B: 'create:brass_casing'
 		}
-	)
+	).id('adj:storage_controller')
 	event.shaped(
 		Item.of('functionalstorage:controller_extension', 1),
 		[
@@ -2707,7 +2637,7 @@ ServerEvents.recipes((event) => {
 			V: 'create:item_vault',
 			B: 'create:brass_casing'
 		}
-	)
+	).id('adj:controller_extension')
 	event.shaped(
 		Item.of('functionalstorage:linking_tool', 1),
 		[
@@ -2719,7 +2649,7 @@ ServerEvents.recipes((event) => {
 			V: 'create:item_vault',
 			S: 'create:iron_sheet'
 		}
-	)
+	).id('adj:linking_tool')
 	event.shaped(
 		Item.of('functionalstorage:configuration_tool', 1),
 		[
@@ -2731,7 +2661,7 @@ ServerEvents.recipes((event) => {
 			V: 'minecraft:emerald',
 			S: 'create:iron_sheet'
 		}
-	)
+	).id('adj:configuration_tool')
 	event.recipes.create.sequenced_assembly([
 		Item.of('functionalstorage:copper_upgrade')
 	], 'create:copper_sheet', [
@@ -2739,7 +2669,7 @@ ServerEvents.recipes((event) => {
 		event.recipes.create.deploying('create:copper_sheet', ['create:copper_sheet', 'create:brass_ingot']),
 		event.recipes.create.deploying('create:copper_sheet', ['create:copper_sheet', 'botania:rune_greed']),
 		event.recipes.create.filling(inter, [inter, Fluid.of('minecraft:lava', 1000)]),
-	]).transitionalItem('create:copper_sheet').loops(2)
+	]).transitionalItem('create:copper_sheet').loops(2).id('adj:storage_upgrade')
 
 	/**
 	 * @param {Internal.InputItem_} input 
@@ -2753,7 +2683,7 @@ ServerEvents.recipes((event) => {
 			event.recipes.create.deploying('create:iron_sheet', ['create:iron_sheet', 'create:brass_ingot']),
 			event.recipes.create.deploying('create:iron_sheet', ['create:iron_sheet', input]),
 			event.recipes.create.filling(inter, [inter, Fluid.of('minecraft:lava', 250)]),
-		]).transitionalItem('create:iron_sheet').loops(2)
+		]).transitionalItem('create:iron_sheet').loops(2).id(`adj:${result.split(':')[1]}_from_${input.replace(':', '_')}`)
 	}
 	FSUpgradeRecipe('alexscaves:scarlet_neodymium_ingot', 'functionalstorage:collector_upgrade')
 	FSUpgradeRecipe('alexscaves:azure_neodymium_ingot', 'functionalstorage:collector_upgrade')
@@ -2788,7 +2718,6 @@ ServerEvents.recipes((event) => {
 		'boots',
 		'sword',
 		'pickaxe',
-		'leggings',
 		'shovel',
 		'axe'
 	]
@@ -2799,7 +2728,7 @@ ServerEvents.recipes((event) => {
 			'mythicmetals:tidesinger_smithing_template',
 			`mythicmetals:aquarium_${type}`,
 			'#adj:tidesinger_upgrade_coral'
-		)
+		).id(`mythicmetals:tidesinger_${type}`)
 	})
 
 	// Slightly different early-game recipes
@@ -2820,7 +2749,6 @@ ServerEvents.recipes((event) => {
 		event.remove({ type: 'crafting_shaped', output: item })
 	})
 
-
 	function torchRecipe(input, amount) {
 		event.shaped(
 			Item.of('torch', amount),
@@ -2832,7 +2760,7 @@ ServerEvents.recipes((event) => {
 				I: input,
 				S: 'stick'
 			}
-		)
+		).id(`adj:torch_from_${input.replace('#', '').replace(':', '_')}`)
 	}
 	function torchTransform(input, output, amount) {
 		let ingredients = [input];
@@ -2842,7 +2770,7 @@ ServerEvents.recipes((event) => {
 		event.shapeless(
 			Item.of(output, amount),
 			ingredients
-		)
+		).id(`adj:torch_transform_${flattenedID(output)}_from_${flattenedID(input)}`)
 	}
 	torchRecipe('#c:coal', 8)
 	torchRecipe('slime_ball', 3)
@@ -2871,7 +2799,7 @@ ServerEvents.recipes((event) => {
 				L: '#logs_that_burn',
 				B: baseInput
 			}
-		)
+		).id(`adj:campfire/${flattenedID(output)}`)
 	}
 	campfireRecipe('torch', '#logs_that_burn', 'campfire')
 	campfireRecipe('soul_torch', '#soul_fire_base_blocks', 'soul_campfire')
@@ -2890,14 +2818,14 @@ ServerEvents.recipes((event) => {
 				S: 'stick',
 				F: 'feather'
 			}
-		)
+		).id(`adj:arrow_from_${flattenedID(input)}`)
 	}
 	arrowRecipe('iron_nugget', 8)
 	arrowRecipe('flint', 20)
 	arrowRecipe('ars_nouveau:wilden_spike', 50)
 
-	event.campfireCooking('minecraft:torch', 'minecraft:stick', 0, 60)
-	event.campfireCooking('minecraft:charcoal', '#logs_that_burn', 0.15, 1200)
+	event.campfireCooking('minecraft:torch', 'minecraft:stick', 0, 50).id('adj:torch_from_campfire')
+	event.campfireCooking('minecraft:charcoal', '#logs_that_burn', 0.15, 1200).id('adj:charcoal_from_campfire')
 
 	// Items to Farmer's Delight Stew recipes
 	const stewIDs = [
@@ -2946,7 +2874,7 @@ ServerEvents.recipes((event) => {
 			0.35,
 			20,
 			baseItem
-		);
+		).id(recipe.getId());
 	});
 
 
@@ -3073,7 +3001,7 @@ ServerEvents.recipes((event) => {
 						"item": boat
 					}
 				]
-			})
+			}).id(`adj:boat/${type}`);
 		}
 	}
 
@@ -3105,7 +3033,7 @@ ServerEvents.recipes((event) => {
 				{
 					P: ingredients[0]
 				}
-			).id(`kubejs:trapdoor/${output.replace(':', '_')}`)
+			).id(`adj:trapdoor/${output.replace(':', '_')}`)
 		}
 		else if (ingredients.length === 4) {
 			const output = recipe.getOriginalRecipeResult().getId();
@@ -3120,7 +3048,7 @@ ServerEvents.recipes((event) => {
 				{
 					P: ingredients[0]
 				}
-			).id(`kubejs:trapdoor/${output.replace(':', '_')}`)
+			).id(`adj:trapdoor/${output.replace(':', '_')}`)
 		}
 	})
 
@@ -3140,7 +3068,7 @@ ServerEvents.recipes((event) => {
 			{
 				P: ingredients[0]
 			}
-		).id(`kubejs:stairs/${output.replace(':', '_')}`)
+		).id(`adj:stairs/${output.replace(':', '_')}`)
 	})
 
 	event.forEachRecipe({ output: /^(?=.*fence)(?!.*gate).*/, type: 'crafting_shaped' }, recipe => {
@@ -3165,7 +3093,7 @@ ServerEvents.recipes((event) => {
 				P: ingredients[slotToUse],
 				S: (ingredients[Math.abs(slotToUse - 1)].getItemIds().toArray().includes('minecraft:stick')) ? '#c:rods/wooden' : ingredients[Math.abs(slotToUse - 1)]
 			}
-		).id(`kubejs:fence/${output.replace(':', '_')}`)
+		).id(`adj:fence/${output.replace(':', '_')}`)
 	})
 
 	event.forEachRecipe({ output: /fence_gate/, type: 'crafting_shaped' }, recipe => {
@@ -3184,7 +3112,7 @@ ServerEvents.recipes((event) => {
 				P: ingredients[1],
 				S: (ingredients[0].getItemIds().toArray().includes('minecraft:stick')) ? '#c:rods/wooden' : ingredients[0]
 			}
-		).id(`kubejs:fence_gate/${output.replace(':', '_')}`)
+		).id(`adj:fence_gate/${output.replace(':', '_')}`)
 	})
 
 	event.forEachRecipe({ output: /ladder/, type: 'crafting_shaped' }, recipe => {
@@ -3204,7 +3132,7 @@ ServerEvents.recipes((event) => {
 				P: ingredients[4],
 				S: ingredients[0]
 			}
-		).id(`kubejs:ladder/${output.replace(':', '_')}`)
+		).id(`adj:ladder/${output.replace(':', '_')}`)
 	})
 
 	event.forEachRecipe({ output: /ladder/, type: 'crafting_shaped' }, recipe => {
@@ -3224,7 +3152,7 @@ ServerEvents.recipes((event) => {
 				P: ingredients[4],
 				S: ingredients[0]
 			}
-		).id(`kubejs:ladder/${output.replace(':', '_')}`)
+		).id(`adj:ladder/${output.replace(':', '_')}`)
 	})
 
 	event.forEachRecipe({ output: /^(?=.*_sign)(?!.*hanging)(?!.*post).*/, type: 'crafting_shaped' }, recipe => {
@@ -3250,7 +3178,7 @@ ServerEvents.recipes((event) => {
 				F: ingredients[5],
 				G: (ingredients[7].getItemIds().toArray().includes('minecraft:stick')) ? '#c:rods/wooden' : ingredients[7],
 			}
-		).id(`kubejs:sign/${output.replace(':', '_')}`)
+		).id(`adj:sign/${output.replace(':', '_')}`)
 	})
 
 	alloyForgeRecipe(
@@ -3272,13 +3200,13 @@ ServerEvents.recipes((event) => {
 		'1x soul_sand',
 		'1x botania:mana_powder',
 		// Fluid.water(0.25)
-	])
+	]).id('adj:cognitive_flux_from_soul_sand')
 	event.recipes.create.mixing('experienceobelisk:cognitive_flux', [
 		'2x quartz',
 		'1x soul_soil',
 		'1x botania:mana_powder',
 		// Fluid.water(0.25)
-	])
+	]).id('adj:cognitive_flux_from_soul_soil')
 
 	event.custom({
 		"type": "experienceobelisk:molecular_metamorphosis",
@@ -3298,7 +3226,7 @@ ServerEvents.recipes((event) => {
 		},
 		"cost": 27,
 		"processTime": 400
-	})
+	}).id('adj:cognitive_alloy')
 
 	event.forEachRecipe({ type: 'experienceobelisk:molecular_metamorphosis' }, recipe => {
 		const json = recipe.json.deepCopy()
@@ -3326,7 +3254,7 @@ ServerEvents.recipes((event) => {
 			S: 'string',
 			H: 'honeycomb'
 		}
-	)
+	).id('minecraft:candle')
 
 	event.shaped(
 		'2x candle',
@@ -3339,9 +3267,10 @@ ServerEvents.recipes((event) => {
 			S: 'string',
 			H: 'delightful:animal_fat'
 		}
-	)
+	).id('adj:candle_from_animal_fat')
 
-	// Reworking Botania runes
+	// Reworking Botania
+	// Runes
 	function rune(name) {
 		return (Item.exists(`botania:rune_${name}`)) ? `botania:rune_${name}` : `botanicadds:rune_${name}`
 	}
@@ -3544,7 +3473,66 @@ ServerEvents.recipes((event) => {
 			'stick',
 			'stick'
 		]
+	).id('botania:redstone_root')
+
+	event.replaceInput({ output: /botania:.*_floating_flower/ },
+		'minecraft:dirt',
+		'#minecraft:dirt'
 	)
+
+	// Misc Blocks
+	event.shaped(
+		'botania:mana_pylon',
+		[
+			' G ',
+			'IDI',
+			' G '
+		],
+		{
+			G: 'mythicmetals:midas_gold_block',
+			I: 'botania:manasteel_ingot',
+			D: 'botania:mana_diamond'
+		}
+	).id('botania:mana_pylon')
+
+	event.shaped(
+		'botania:natura_pylon',
+		[
+			'TLT',
+			'TPT',
+			' E '
+		],
+		{
+			T: 'botania:terrasteel_nugget',
+			P: 'botania:mana_pylon',
+			E: 'ender_eye',
+			L: '#botania:livingwood_logs'
+		}
+	).id('botania:natura_pylon')
+
+	event.shaped(
+		'botania:gaia_pylon',
+		[
+			'DED',
+			'APA',
+			'DED'
+		],
+		{
+			A: 'mythicmetals:adamantite_ingot',
+			P: 'botania:mana_pylon',
+			E: 'botania:elementium_ingot',
+			D: 'botania:pixie_dust'
+		}
+	).id('botania:gaia_pylon')
+
+	event.shapeless(
+		'botania:spark',
+		[
+			'#botania:petals',
+			'mythicmetals:midas_gold_nugget',
+			'blaze_powder'
+		]
+	).id('botania:spark')
 
 	// Botania flowers
 	const constIngredients = {
@@ -3610,8 +3598,59 @@ ServerEvents.recipes((event) => {
 			petals('white'),
 			petals('white'),
 			constIngredients.redstoneRoot,
-			constIngredients.essence.manipulation,
 			constIngredients.pixieDust
+		],
+		'narslimmus': [
+			rune('summer'),
+			rune('water'),
+			petals('black'),
+			petals('green'),
+			petals('green'),
+			petals('lime'),
+			petals('lime'),
+			petals('black'),
+			'slime_block'
+		],
+		'bergamute': [
+			constIngredients.redstoneRoot,
+			petals('purple'),
+			petals('magenta'),
+			petals('magenta')
+		],
+		'exoflame': [
+			rune('fire'),
+			rune('summer'),
+			petals('red'),
+			petals('red'),
+			petals('orange'),
+			petals('brown'),
+			'magma_cream',
+		],
+		'fallen_kanade': [
+			rune('spring'),
+			petals('white'),
+			petals('white'),
+			petals('white'),
+			petals('lime'),
+			'glistering_melon_slice'
+		],
+		'hopperhock': [
+			rune('air'),
+			constIngredients.redstoneRoot,
+			petals('light_gray'),
+			petals('gray'),
+			petals('gray'),
+			'hopper'
+		],
+		'agricarnation': [
+			'bone_block',
+			rune('spring'),
+			rune('earth'),
+			petals('lime'),
+			petals('lime'),
+			petals('green'),
+			petals('yellow'),
+			'botania:fertilizer'
 		]
 	}
 
@@ -3658,7 +3697,7 @@ ServerEvents.recipes((event) => {
 				"type": "confluence:workshop",
 				"ingredients": iMap,
 				"result": output
-			})
+			}).id(`adj:workshop/${flattenedID(output)}`)
 		}
 	}
 
@@ -3751,7 +3790,7 @@ ServerEvents.recipes((event) => {
 		}
 	})
 
-	workshopRecipe(['12x botania:elementium_ingot', '4x botania:life_essence', '4x botanicadds:gaiasteel_ingot', '16x feather', '4x botania:ender_air_bottle'], Item.of('botania:flight_tiara'))
+	workshopRecipe(['12x botania:elementium_ingot', '4x botania:life_essence', '4x botanicadds:gaiasteel_ingot', '16x feather', '4x botania:ender_air_bottle'], Item.of('botania:flight_tiara'), 'botania:flight_tiara_0')
 
 	// Binding Wayfinders
 	function locateStructureRitual(structure, ingredients) {
@@ -3772,7 +3811,7 @@ ServerEvents.recipes((event) => {
 			"augments": parsedIngredients,
 			"id": `ars_additions:${structure.split(":")[1]}`,
 			"structure": parsedStructure
-		})
+		}).id(`adj:locate_structure/${flattenedID(structure)}`)
 	}
 
 	locateStructureRitual('#ars_nouveau:wilden_den', ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'ars_nouveau:source_gem', rune('wrath')]);
@@ -3797,7 +3836,7 @@ ServerEvents.recipes((event) => {
 					"item": item.getId()
 				},
 				"repairTime": Math.ceil((1.75 * Math.sqrt(maxDamage)) * 20)
-			})
+			}).id(`adj:repairing/${flattenedID(item.getId())}`)
 		}
 	})
 });

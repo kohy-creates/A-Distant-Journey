@@ -29,10 +29,10 @@
     "modId": "adjblocks",
     "version": "1.0"
   },
-  "adjcore-1.7.5.jar": {
-    "jarName": "adjcore-1.7.5.jar",
+  "adjcore-1.7.8.jar": {
+    "jarName": "adjcore-1.7.8.jar",
     "modId": "adjcore",
-    "version": "1.7.5"
+    "version": "1.7.8"
   },
   "AdvancedLootInfo-forge-1.20.1-1.5.2.jar": {
     "jarName": "AdvancedLootInfo-forge-1.20.1-1.5.2.jar",
@@ -79,10 +79,10 @@
     "modId": "alloy_forgery",
     "version": "2.1.2+1.20"
   },
-  "alltheleaks-1.1.0+1.20.1-forge.jar": {
-    "jarName": "alltheleaks-1.1.0+1.20.1-forge.jar",
+  "alltheleaks-1.1.1+1.20.1-forge.jar": {
+    "jarName": "alltheleaks-1.1.1+1.20.1-forge.jar",
     "modId": "alltheleaks",
-    "version": "1.1.0+1.20.1-forge"
+    "version": "1.1.1+1.20.1-forge"
   },
   "allurement-1.20.1-4.0.0.jar": {
     "jarName": "allurement-1.20.1-4.0.0.jar",
@@ -474,8 +474,8 @@
     "modId": "connectivity",
     "version": "1.20.1-7.2"
   },
-  "Connector-1.0.0-beta.46+1.20.1.jar": {
-    "jarName": "Connector-1.0.0-beta.46+1.20.1.jar"
+  "Connector-1.0.0-beta.47+1.20.1.jar": {
+    "jarName": "Connector-1.0.0-beta.47+1.20.1.jar"
   },
   "ConnectorExtras-1.11.2+1.20.1.jar": {
     "jarName": "ConnectorExtras-1.11.2+1.20.1.jar",
@@ -507,20 +507,20 @@
     "modId": "crafttweaker",
     "version": "14.0.59"
   },
-  "CrashAssistant-forge-1.19-1.20.1-1.10.20.jar": {
-    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.20.jar",
+  "CrashAssistant-forge-1.19-1.20.1-1.10.22.jar": {
+    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.22.jar",
     "modId": "crash_assistant",
-    "version": "1.10.20"
+    "version": "1.10.22"
   },
   "create-1.20.1-6.0.8.jar": {
     "jarName": "create-1.20.1-6.0.8.jar",
     "modId": "create",
     "version": "6.0.8"
   },
-  "create_hypertube-0.2.6-hotfix-FORGE.jar": {
-    "jarName": "create_hypertube-0.2.6-hotfix-FORGE.jar",
+  "create_hypertube-0.3.0-FORGE.jar": {
+    "jarName": "create_hypertube-0.3.0-FORGE.jar",
     "modId": "create_hypertube",
-    "version": "0.2.6-hotfix"
+    "version": "0.3.0"
   },
   "create_ltab-3.4.2.jar": {
     "jarName": "create_ltab-3.4.2.jar",
@@ -767,15 +767,15 @@
     "modId": "ensorcellation",
     "version": "5.0.2"
   },
-  "entity_model_features_1.20.1-forge-3.0.1.jar": {
-    "jarName": "entity_model_features_1.20.1-forge-3.0.1.jar",
+  "entity_model_features_1.20.1-forge-3.0.6.jar": {
+    "jarName": "entity_model_features_1.20.1-forge-3.0.6.jar",
     "modId": "entity_model_features",
-    "version": "3.0.1"
+    "version": "3.0.6"
   },
-  "entity_texture_features_1.20.1-forge-7.0.2.jar": {
-    "jarName": "entity_texture_features_1.20.1-forge-7.0.2.jar",
+  "entity_texture_features_1.20.1-forge-7.0.5.jar": {
+    "jarName": "entity_texture_features_1.20.1-forge-7.0.5.jar",
     "modId": "entity_texture_features",
-    "version": "7.0.2"
+    "version": "7.0.5"
   },
   "entityculling-forge-1.9.3-mc1.20.1.jar": {
     "jarName": "entityculling-forge-1.9.3-mc1.20.1.jar",
@@ -797,10 +797,10 @@
     "modId": "etl",
     "version": "1.1.1"
   },
-  "everycomp-1.20-2.9.11-forge.jar": {
-    "jarName": "everycomp-1.20-2.9.11-forge.jar",
+  "everycomp-1.20-2.9.12-forge.jar": {
+    "jarName": "everycomp-1.20-2.9.12-forge.jar",
     "modId": "everycomp",
-    "version": "1.20-2.9.11"
+    "version": "1.20-2.9.12"
   },
   "exhaustionoptions-0.1a.jar": {
     "jarName": "exhaustionoptions-0.1a.jar",
@@ -1072,10 +1072,10 @@
     "modId": "immersivemessages",
     "version": "1.0.18"
   },
-  "immersiveoverlays-1.4.3+1.20.1-forge.jar": {
-    "jarName": "immersiveoverlays-1.4.3+1.20.1-forge.jar",
+  "immersiveoverlays-1.4.6+1.20.1-forge.jar": {
+    "jarName": "immersiveoverlays-1.4.6+1.20.1-forge.jar",
     "modId": "immersiveoverlays",
-    "version": "1.4.3+1.20.1"
+    "version": "1.4.6+1.20.1"
   },
   "ImmersiveUI-FORGE-0.3.0.jar": {
     "jarName": "ImmersiveUI-FORGE-0.3.0.jar",
@@ -1390,10 +1390,10 @@
     "modId": "modpackupdatechecker",
     "version": "0.15.6"
   },
-  "moogs_structure_lib-1.0.1-1.20-1.20.4-forge.jar": {
-    "jarName": "moogs_structure_lib-1.0.1-1.20-1.20.4-forge.jar",
+  "moogs_structure_lib-1.1.0-1.20-1.20.4-forge.jar": {
+    "jarName": "moogs_structure_lib-1.1.0-1.20-1.20.4-forge.jar",
     "modId": "moogs_structures",
-    "version": "1.0.1-1.20-1.20.4"
+    "version": "1.1.0-1.20-1.20.4"
   },
   "MoogsNetherStructures-1.20-2.0.2.jar": {
     "jarName": "MoogsNetherStructures-1.20-2.0.2.jar",
@@ -1808,20 +1808,15 @@
     "modId": "skinlayers3d",
     "version": "1.9.2"
   },
-  "smartcrafter-0.2.0.jar": {
-    "jarName": "smartcrafter-0.2.0.jar",
-    "modId": "smartcrafter",
-    "version": "0.2.0"
-  },
   "smoothchunk-1.20.1-4.1.jar": {
     "jarName": "smoothchunk-1.20.1-4.1.jar",
     "modId": "smoothchunk",
     "version": "1.20.1-4.1"
   },
-  "smsn-forge-1.3.2-1.20.1.jar": {
-    "jarName": "smsn-forge-1.3.2-1.20.1.jar",
+  "smsn-forge-1.3.4-1.20.1.jar": {
+    "jarName": "smsn-forge-1.3.4-1.20.1.jar",
     "modId": "smsn",
-    "version": "1.3.2-1.20.1"
+    "version": "1.3.4-1.20.1"
   },
   "Sniffer+-forge-1.20.1-0.3.0.jar": {
     "jarName": "Sniffer+-forge-1.20.1-0.3.0.jar",
@@ -1948,15 +1943,15 @@
     "modId": "supplementaries",
     "version": "1.20-3.1.41"
   },
-  "suppsquared-1.20-1.1.26.jar": {
-    "jarName": "suppsquared-1.20-1.1.26.jar",
+  "suppsquared-1.20-1.1.27.jar": {
+    "jarName": "suppsquared-1.20-1.1.27.jar",
     "modId": "suppsquared",
-    "version": "1.20-1.1.26"
+    "version": "1.20-1.1.27"
   },
-  "sweety_garden-1.0.1-forge-1.20.1.jar": {
-    "jarName": "sweety_garden-1.0.1-forge-1.20.1.jar",
+  "sweety_garden-1.0.2b-forge-1.20.1.jar": {
+    "jarName": "sweety_garden-1.0.2b-forge-1.20.1.jar",
     "modId": "sweety_garden",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
   "TerraBlender-forge-1.20.1-3.0.1.10.jar": {
     "jarName": "TerraBlender-forge-1.20.1-3.0.1.10.jar",
@@ -1978,10 +1973,10 @@
     "modId": "terrastorage",
     "version": "1.2.7"
   },
-  "the_bumblezone-7.9.4+1.20.1-forge.jar": {
-    "jarName": "the_bumblezone-7.9.4+1.20.1-forge.jar",
+  "the_bumblezone-7.9.5+1.20.1-forge.jar": {
+    "jarName": "the_bumblezone-7.9.5+1.20.1-forge.jar",
     "modId": "the_bumblezone",
-    "version": "7.9.4+1.20.1-forge"
+    "version": "7.9.5+1.20.1-forge"
   },
   "tidal-towns-1.3.4.jar": {
     "jarName": "tidal-towns-1.3.4.jar",

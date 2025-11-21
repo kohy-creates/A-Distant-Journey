@@ -40,18 +40,18 @@
 	"born_in_chaos_v1:obsession": {
 		"replace": true,
 		"attributes": [
-			"minecraft:generic.armor;7;0",
-			"minecraft:generic.attack_damage;0.15;1",
-			"minecraft:generic.max_health;0.25;1",
-			"minecraft:generic.movement_speed;0.2;1"
+			"minecraft:generic.armor;6;0",
+			"minecraft:generic.attack_damage;0.11111;1",
+			"minecraft:generic.max_health;0.2;2",
+			"minecraft:generic.movement_speed;0.15;2"
 		]
 	},
 	"born_in_chaos_v1:light_rampage": {
 		"replace": true,
 		"attributes": [
-			"minecraft:generic.attack_speed;0.15;1",
-			"minecraft:generic.movement_speed;0.08;1",
-			"adjcore:generic.damage_reduction;0.05;0"
+			"minecraft:generic.attack_speed;0.07;1",
+			"minecraft:generic.movement_speed;0.05;1",
+			"adjcore:generic.damage_reduction;0.035;0"
 		]
 	},
 	"rediscovered:crimson_veil": {

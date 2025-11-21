@@ -421,7 +421,7 @@
 		"mythicmetals:copper_leggings",
 		"mythicmetals:copper_boots",
 		
-		"botania:resolute_ivy",
+		"botania:keep_ivy",
 		"botania:thorn_chakram",
 		"botania:flare_chakram",
 		"botania:mana_fluxfield",
@@ -439,6 +439,7 @@
 		"botaniacombat:soulstaff",
 		"botaniacombat:terrasteel_spear",
 		"botania:phantom_ink",
+		"botania:slime_bottle",
 
 		"confluence:magic_quiver",
 		"confluence:molten_quiver",
@@ -647,7 +648,7 @@
 		"ecologics:flowering_azalea_chest_boat",
 
 		"simplyswords:mythicmetals_compat/banglum/banglum_longsword",
-"simplyswords:mythicmetals_compat/banglum/banglum_cutlass",
+		"simplyswords:mythicmetals_compat/banglum/banglum_cutlass",
 		"simplyswords:mythicmetals_compat/banglum/banglum_twinblade",
 		"simplyswords:mythicmetals_compat/banglum/banglum_rapier",
 		"simplyswords:mythicmetals_compat/banglum/banglum_katana",

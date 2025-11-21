@@ -1,5 +1,5 @@
 
 [logbegone]
-	phrases = ["Disconnecting VANILLA connection attempt", "Channels ", "Could not apply pet overlays layer", "Failed to add slimed layer to entity", "Detected setBlock in a far chunk"]
-	regex = ["Disconnecting VANILLA connection attempt", "Channels ", "Could not apply pet overlays layer", "Failed to add slimed layer to entity", "Detected setBlock in a far chunk"]
+	phrases = ["Disconnecting VANILLA connection attempt", "Channels ", "Could not apply pet overlays layer", "Failed to add slimed layer to entity", "Detected setBlock in a far chunk", "Unable to get X-position of element via placeholder!"]
+	regex = ["Disconnecting VANILLA connection attempt", "Channels ", "Could not apply pet overlays layer", "Failed to add slimed layer to entity", "Detected setBlock in a far chunk", "Unable to get X-position of element via placeholder!"]
 

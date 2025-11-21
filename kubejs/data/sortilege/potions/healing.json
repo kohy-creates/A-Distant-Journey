@@ -1,0 +1,5 @@
+{
+	"potion": "minecraft:healing",
+	"cooldown": 1200,
+	"drinking_time": 8
+}

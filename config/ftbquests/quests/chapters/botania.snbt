@@ -975,6 +975,22 @@
 			x: 0.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["50E23CFDE69DC684"]
+			description: ["&7&lHINT:&r &aFloral Fertilizer&r will spawn a few different magical plants when used on &aGrass&r, similarly to Bone Meal."]
+			id: "5083404D713C058D"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Can't find mystical plants of desired color? Craft some Floral Fertilizer!"
+			tasks: [{
+				id: "786C8387E8956A4A"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			title: "Abracadabra, Magic Plants!"
+			x: -3.5d
+			y: -0.5d
+		}
 	]
 	title: "Magical Botanics"
 }
