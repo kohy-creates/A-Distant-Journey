@@ -1,0 +1,117 @@
+Decided to release the update slightly earlier than I originally planned so that you can enjoy the stability improvements while I'm finishing the rest of the stuff I wanted to do.
+
+------
+
+## Mod changes
+- Permanently downgraded Via Romana to 1.4. 2.0 was responsible for PLENTY of many different bugs. Here is a short list:
+	- Crash when opening a world made in an older version of the modpack.
+	- Crash when charting a path (randomly).
+	- Crash when clicking on a sign after charting is finished.
+	- Completely random crashes at random times for fuck knows reason.
+	- Completely tanking server TPS due to whatever craziness they are doing with Data Anchor mod.
+- Disabled screen shakes on explosions, anvil placement, etc.
+- Fixed some crashes with the Unusual End mod.
+- All items with durability can now be repaired in Aether's Altar.
+
+------
+
+## Balance changes
+
+- Mythril and Orichalcum Ingots are now Alloys and use Elementium Ingots in their recipes.
+
+- Increased stack sizes for most items to either 99 or 999.
+
+> *Developer's note:* Side effect of the change is that Bundles now have 999 capacity, but some items occupy 10 slots at once. Idk if that could be considered too OP or not.
+
+- Backpacks are no longer kept on death unless enchanted with Soulbound.
+
+> *Developer's note:* Sorry, but it was just stupidly OP. You've got to get better now.
+
+- Iron armor no longer grants 5% reduced damage on set bonus
+- Diamond armor set bonus no longer increases crit chance.
+- Plate armor set bonus grants slightly more defense (5 -> 6).
+
+> *Developer's note:* Iron armor dominates the early game as THE set before making Diamond armor, while Diamond armor can pretty much carry until chapter 2. I am dialing those back a bit to hopefully enable more variety.
+
+- Reduced Dark Metal Armor min and max rampage bonuses:
+> Min: 
+>   Attack Speed: +15% -> 7%
+>   Movement Speed: +8% -> +5%
+>   Damage reduction: +5% -> +3.5%
+> Max:
+>   Attack Speed: +60% -> 28%
+>   Movement Speed: +32% -> +20%
+>   Damage reduction: +20% -> +15%
+
+- Penalty for carrying too many Sacks starts at 4 (was 2). 
+
+- Reduced Aerwhale King HP (2700 -> 1500).
+- Aerwhale King now has 15 defense.
+
+> *Developer's note:* I actually never play tested this fight so I never knew just how slow it is.
+
+- Reduced Red Dragon HP (3300 -> 2400).
+
+### Botania changes
+
+I heard your cries that Botania takes ages to get anything going. That was kind of the idea, since you are supposed to take ADJ slowly anyway, but I thought I could improve on this a bit.
+
+- Endoflame energy generation remains unchanged (5). Listing this so that you have a baseline comparison to everything.
+- Hydroangeas energy generation per tick increased massively (2 - > 8).
+
+> *Developer's note*: The original idea behind Hydroangeas was that they generate energy but don't require active upkeep, however I think that since Create is in the modpack, allowing for somewhat easy fuel farming for Endoflames, Hydroangeas are more annoying to not only set up but also upkeep. I quadrupled their energy output to make that upkeep more valuable. Keep in mind that for both of those and Thermalily this is energy generated PER TICK, so values per second are 20x those.
+
+- Thermialily generation per tick increased (30 -> 70).
+
+> *Developer's note*: Thermalily literally has a 5 minute cooldown on generation. At least make it worth the headache to automate...
+
+- Rosa Arcana production per player EXP increased (25 -> 50). Randomly laying EXP orbs are still more efficient (75).
+- Munchdew production increased (250 -> 300).
+- Entropinnyum energy per TNT increased (7000 -> 10000). 
+- Kekimurus production per cake slice increased (2400 -> 3000).
+- Gourmarylis generates roughly 40% more energy.
+- Narslimus generates slightly more energy.
+- Spectrolus generates twice as much energy.
+- Rawfflowsia generates 30% more energy.
+
+- Mana cost on both Orechid variants was reduced by 5000 (12500 for normal and 15000 for Ignem)
+
+> *Developer's note*: Just making those easier to use. In most modpacks, the original mana usage is balanced because there are other ways to farm materials, but Orechids are way more useful in ADJ due to all the new ores they can spawn, so I thought I'd reduce the amount to make players able to farm them all easier!
+
+### Ars Nouveau changes
+
+1.2.3 did some changes to how max mana and mana regeneration worked. My idea was to make it much closer to Terraria, where most of your max mana and mana regen comes from equipment if you want to actually use spells offensively, but the initial set of changes made mage an unviable option in ADJ. There are still not a whole lot of items that grant max mana increase, but I am slowly going to be adding more as the pack grows.
+
+There was also another problem with spell balancing - you could make a one tap spell that costs 0 mana pretty much in the first hour of a playthrough, and keep using it to the end of the game. One way to fix it was the spell cooldown, but it was only a bandaid.
+
+- Ring of Discount and Ring of Greater Discount no longer provide flat -10 and -20 mana usage, instead they give an 8% and 16% discount on mana respectively.
+- All mage armor sets grant more max mana.
+- Some accessories grant max mana and mana regen.
+
+- Amplify can only be used twice on Break (diamond pickaxe harvest level).
+
+> *Developer's note*: This is a bootleg fix to make Waystones and Unobtainium 
+
+------
+
+**[Other]**
+
+- All Leaves types now support Conjuration Catalyst.
+- Completely redid Pure Daisy transformations, easing some grind.
+- Wolves, Villagers, Iron Golems, Snow Golems and Wandering Traders now update their stats through chapters.
+- All items with durability can now be repaired in Aether's Altar.
+- Spell projectiles no longer stop rendering past 32 blocks, making them visible from any distance.
+- Fixed Ankh Shield materials not dropping as intended from mobs.
+- Fixed Lexica Botania missing some recipes.
+- Fixed Ender Guardian not dropping Eye of Desolation (fun fact, it's ID was mispelled as catacylsm).
+- Renamed Demon Heart to Aerwhale King's Heart.
+- Atlas now includes Depth Meter in its recipe, but also shows Y level in addition to XZ.
+- Atlas is now crafted at a Workshop.
+- Some Curio recipes have been moved to be crafted at a Workshop instead of a Crafting Table.
+- Fixed Mutant mob spawn rates being 100x higher than intended in Hardcore (this isn't just a random number, that was a real issue)
+- Fixed missing bread recipe.
+- Fixed Heisei Dream not working on some mobs (comes with a cost of mobs getting slightly dumber)
+- Fixed Aerwhale King oneshot bug with shield parry.
+- Music Discs no longer stack due to dupe problems with Jukeboxes.
+- Raw Ore Blocks can no longer be smelted in bulk in Furnaces/Alloy Forges.
+- Wilden Chimera Treasure Bag no longer gives multiple Wilden Tributes
