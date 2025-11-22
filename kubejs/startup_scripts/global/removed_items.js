@@ -2,7 +2,7 @@
  * @type {InputItem_[]}
  */
 global.blacklistedItems = [
-	"minecraft:shield",
+
 	"minecraft:shield",
 	"minecraft:enchanting_table",
 
@@ -215,6 +215,7 @@ global.blacklistedItems = [
 	"artifacts:aqua_dashers",
 	"artifacts:cloud_in_a_bottle",
 	"artifacts:cross_necklace",
+	"artifacts:pocket_piston",
 
 	"spelunkers_charm:crate",
 	"spelunkers_charm:encased_geyser",
@@ -409,7 +410,7 @@ global.blacklistedItems = [
 	"mythicmetals:copper_leggings",
 	"mythicmetals:copper_boots",
 
-	"botania:resolute_ivy",
+	"botania:keep_ivy",
 	"botania:thorn_chakram",
 	"botania:flare_chakram",
 	"botania:mana_fluxfield",
@@ -427,6 +428,7 @@ global.blacklistedItems = [
 	"botaniacombat:soulstaff",
 	"botaniacombat:terrasteel_spear",
 	"botania:phantom_ink",
+	"botania:slime_bottle",
 
 	"confluence:magic_quiver",
 	"confluence:molten_quiver",
@@ -488,6 +490,12 @@ global.blacklistedItems = [
 	"create_power_loader:empty_andesite_chunk_loader",
 	"create_power_loader:empty_brass_chunk_loader",
 	"create:handheld_worldshaper",
+
+	"create:crushed_raw_osmium",
+	"create:crushed_raw_platinum",
+	"create:crushed_raw_silver",
+	"create:crushed_raw_tin",
+	"create:crushed_raw_uranium",
 
 	"farmersdelight:wheat_dough",
 	"farmersdelight:rope",

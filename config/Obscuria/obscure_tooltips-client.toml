@@ -1,15 +1,38 @@
 #Whether Obscure Tooltips should be active at all.
 enabled = true
-#Whether Obscure Tooltips should display 3D armor previews.
-armorPreviewEnabled = true
-#Whether Obscure Tooltips should display 3D tool/weapon previews.
-toolPreviewEnabled = false
-#List of item IDs that should always display a 3D armor preview.
-armorPreviewWhitelist = []
-#List of item IDs that should never display a 3D armor preview.
-armorPreviewBlacklist = []
-#List of item IDs that should always display a 3D tool/weapon preview.
-toolPreviewWhitelist = ["minecraft:trident", "minecraft:bow", "minecraft:crossbow"]
-#List of item IDs that should never display a 3D tool/weapon preview.
-toolPreviewBlacklist = []
+#The margin (in pixels) between the tooltip frame and its content.
+#Range: > 0
+contentMargin = 3
+#List of item IDs that should be ignored by Obscure Tooltips.
+ignoredItems = ["quality_equipment:reforge_gui_button"]
+
+[AutoWrapping]
+	#Whether Obscure Tooltips should wrap lines in tooltips.
+	enabled = true
+
+[Scrolling]
+	#Whether long tooltips should become scrollable when they exceed the screen height.
+	enabled = true
+	#How fast the tooltip scrolls when using the mouse wheel.
+	#Range: > 0
+	scrollSpeed = 5
+	#Extra spacing (in pixels) above and below tooltip when scrolling is enabled.
+	#Range: > 0
+	scrollMargin = 10
+
+[ArmorPreview]
+	#Whether Obscure Tooltips should display 3D armor previews.
+	enabled = true
+	#List of item IDs that should always display a 3D armor preview.
+	whitelist = []
+	#List of item IDs that should never display a 3D armor preview.
+	blacklist = []
+
+[ToolPreview]
+	#Whether Obscure Tooltips should display 3D tool/weapon previews.
+	enabled = false
+	#List of item IDs that should always display a 3D tool/weapon preview.
+	whitelist = ["minecraft:trident", "minecraft:bow", "minecraft:crossbow"]
+	#List of item IDs that should never display a 3D tool/weapon preview.
+	blacklist = []
 

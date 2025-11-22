@@ -374,12 +374,13 @@
 				"What you will &b&6always&r &akeep:"
 				"- &rYour &ahotbar"
 				"- &rYour &aarmor"
-				"- &rYour &aaccessories &f(and by extension &awhatever is in your Backpack&r)"
+				"- &rYour &aaccessories &r(&cother than a Backpack&r)"
 				"- &aSome of your experience"
 				""
 				"What you will &b&6always&r &cdrop:"
 				"- Your &cremaining inventory space &r(3 rows; unless enchanted with &dSoulbound&r)"
 				"- &cSome of your experience"
+				"- &cYour Backpack and its contents &r(unless enchanted with &dSoulbound&r)"
 			]
 			disable_toast: true
 			icon: "minecraft:skeleton_skull"

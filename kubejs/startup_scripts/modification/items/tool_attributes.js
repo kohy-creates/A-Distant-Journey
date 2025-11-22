@@ -24,6 +24,11 @@ const weaponModifierUUIDs = [
 	'FA233E1C-4180-4865-B01B-BCCE9785ACA3',
 ]
 
+const manaModifierUUIDs = {
+	max: 'f6c78e01-58d6-4807-86fa-3209d1ea3725',
+	regen: '8c3c0988-ddbc-4237-8ef3-7867811881e2'
+}
+
 ForgeEvents.onEvent("net.minecraftforge.event.ItemAttributeModifierEvent", (event) => {
 	const item = event.getItemStack().getItem();
 	const id = item.id.toString();

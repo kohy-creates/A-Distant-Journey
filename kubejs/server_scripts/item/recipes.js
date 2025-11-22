@@ -141,8 +141,6 @@ ServerEvents.recipes((event) => {
 		'create:crafting/appliances/dough',
 		'create:mixing/dough_by_mixing',
 
-		'alloy_forgery:compat/alloys/steel_from_ingots',
-		'alloy_forgery:compat/alloys/steel_from_raw_ores',
 		'mythicmetals:alloy_forge/alloy_steel_from_ingots',
 		'mythicmetals:alloy_forge/alloy_steel_from_ores',
 		'mythicmetals:alloy_forge/alloy_steel_from_raw_ores',
@@ -161,21 +159,40 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:blasting/blast_adamantite_ingot_from_raw_ore',
 		'mythicmetals:blasting/blast_adamantite_nugget_from_equipment',
 
-		/alloy_forgery:compat\/adamantite/,
+		/alloy_forgery:compat/,
+		/alloy_forgery:.*_block/,
+
 		/mythicmetals:alloy_forge\/forge_adamantite_ingot/,
+		/mythicmetals:alloy_forge\/forge_mythril_ingot/,
+		/mythicmetals:alloy_forge\/forge_orichalcum_ingot/,
 
 		'unusualend:pearly_ingot_recipe',
 
 		'minecraft:netherite_ingot',
 		'alloy_forgery:netherite_from_gold_and_scrap',
 		'experienceobelisk:metamorpher/netherite_ingot_metamorphosis',
+
+		'mythicmetals:blasting/blast_mythril_ingot_from_ores',
+		'mythicmetals:blasting/blast_mythril_ingot_from_raw_ore',
+		'mythicmetals:blasting/blast_mythril_nugget_from_equipment',
+
+		'alloy_forgery:compat/silver_ingot_from_raw_ores',
+		'alloy_forgery:compat/silver_ingot_from_ores',
+		'create:smoking/bread',
+		'netherexp:nether_quartz_from_quartz_block',
+		'create:mixing/brass_ingot',
+		'minecraft:ender_eye',
+		'netherdepthsupgrade:ender_eye',
+
+		/botania:mana_infusion\/.*_leaves_dupe/,
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
 	})
 
 	const removeRecipeByType = [
-		'aether:repairing'
+		'aether:repairing',
+		'botania:pure_daisy'
 	]
 	removeRecipeByType.forEach(recipeType => {
 		event.remove({ type: recipeType })
@@ -659,7 +676,7 @@ ServerEvents.recipes((event) => {
 	templateRecipe('mythicmetals:osmium_chainmail_smithing_template', 'mythicmetals:osmium_nugget', 'andesite', 'mythicmetals:osmium_ingot')
 
 	// Pottery Sherd copying
-	Item.list.toArray().forEach(item => {
+	Item.list.toArray().forEach(/** @param {Internal.Item} item*/ item => {
 		if (item.id.includes('_sherd')) {
 			event.shapeless(
 				Item.of(item, 2),
@@ -713,11 +730,6 @@ ServerEvents.recipes((event) => {
 		'minecraft:clock',
 		'#adj:clock'
 	)
-
-	// event.recipes.botania.terra_plate('botania:ender_air_bottle', [
-	// 	'ender_pearl',
-	// 	'glass_bottle'
-	// ], 10000);
 
 	// Lychee
 	// Item in block
@@ -1093,7 +1105,6 @@ ServerEvents.recipes((event) => {
 	).id('adj:rope')
 
 	// Unify Silver
-	event.remove({ id: 'alloy_forgery:compat/silver_ingot_from_raw_ores' })
 	alloyForgeRecipe(
 		[
 			['#c:raw_silver_ores', 2],
@@ -1105,7 +1116,6 @@ ServerEvents.recipes((event) => {
 			['2+', 'output', 4]
 		]
 	)
-	event.remove({ id: 'alloy_forgery:compat/silver_ingot_from_ores' })
 	alloyForgeRecipe(
 		[
 			['#c:silver_ores', 1],
@@ -1118,21 +1128,8 @@ ServerEvents.recipes((event) => {
 			['3+', 'output', 4]
 		]
 	)
-	event.remove({ id: 'alloy_forgery:silver_blocks' })
-	alloyForgeRecipe(
-		[
-			['#c:raw_silver_blocks', 2],
-		],
-		['galosphere:silver_block', 3],
-		1,
-		45,
-		[
-			['2+', 'output', 4],
-		]
-	)
 
 	// Unify Wheat Dough
-	event.remove({ id: 'create:smoking/bread' })
 	event.replaceOutput({ output: 'farmersdelight:wheat_dough' },
 		'farmersdelight:wheat_dough',
 		'create:dough'
@@ -1403,7 +1400,6 @@ ServerEvents.recipes((event) => {
 		).id(recipe.getId())
 	})
 
-	event.remove({ id: 'netherexp:nether_quartz_from_quartz_block' })
 
 	function leadRecipe(amount, material) {
 		event.shaped(
@@ -1437,7 +1433,6 @@ ServerEvents.recipes((event) => {
 	}
 	gearRecipe(2, 'iron_nugget');
 
-	event.remove({ id: 'create:mixing/brass_ingot' })
 	alloyForgeRecipe(
 		[
 			['#c:copper_ingots', 1],
@@ -1474,21 +1469,6 @@ ServerEvents.recipes((event) => {
 			['3+', 'output', 3],
 		]
 	)
-	alloyForgeRecipe(
-		[
-			['minecraft:raw_copper_block', 1],
-			['create:raw_zinc_block', 1]
-		],
-		['create:brass_block', 2],
-		2,
-		45,
-		[
-			['3+', 'output', 3],
-		]
-	)
-
-	event.remove({ id: 'minecraft:ender_eye' });
-	event.remove({ id: 'netherdepthsupgrade:ender_eye' });
 	event.recipes.ars_nouveau.imbuement(
 		'ender_pearl',
 		'ender_eye',
@@ -2330,6 +2310,57 @@ ServerEvents.recipes((event) => {
 		5
 	)
 
+	// Slightly harder Mythril and Orichalcum
+	alloyForgeRecipe(
+		[
+			['mythicmetals:raw_mythril', 2],
+			['botania:elementium_ingot', 1]
+		],
+		['mythicmetals:mythril_ingot', 2],
+		1,
+		10,
+		[
+			['3+', 'output', 3]
+		]
+	)
+	alloyForgeRecipe(
+		[
+			['#c:mythril_ores', 1],
+			['botania:elementium_ingot', 1]
+		],
+		['mythicmetals:mythril_ingot', 2],
+		1,
+		10,
+		[
+			['3+', 'output', 3]
+		]
+	)
+
+	alloyForgeRecipe(
+		[
+			['mythicmetals:raw_orichalcum', 2],
+			['botania:elementium_ingot', 1]
+		],
+		['mythicmetals:orichalcum_ingot', 2],
+		1,
+		10,
+		[
+			['3+', 'output', 3]
+		]
+	)
+	alloyForgeRecipe(
+		[
+			['#c:orichalcum_ores', 1],
+			['botania:elementium_ingot', 1]
+		],
+		['mythicmetals:orichalcum_ingot', 2],
+		1,
+		10,
+		[
+			['3+', 'output', 3]
+		]
+	)
+
 	// Adamantite from tier 1 forge
 	alloyForgeRecipe(
 		[
@@ -2361,35 +2392,35 @@ ServerEvents.recipes((event) => {
 	// Pearlescent Ingot
 	alloyForgeRecipe(
 		[
-			['minecraft:iron_ingot', 1],
+			['minecraft:iron_ingot', 2],
 			['unusualend:shiny_crystal', 1],
 			['unusualend:citrine_chunk', 1],
 			['unusualend:prismalite_gem', 1],
 			['unusualend:enderling_scrap', 1],
 		],
-		['unusualend:pearlescent_ingot', 1],
+		['unusualend:pearlescent_ingot', 2],
 		2,
 		20,
 		[
 			[
-				'3+', 'output', 2
+				'3+', 'output', 3
 			]
 		]
 	)
 	alloyForgeRecipe(
 		[
-			['raw_iron', 1],
+			['raw_iron', 2],
 			['unusualend:shiny_crystal', 1],
 			['unusualend:citrine_chunk', 1],
 			['unusualend:prismalite_gem', 1],
 			['unusualend:enderling_scrap', 1],
 		],
-		['unusualend:pearlescent_ingot', 1],
+		['unusualend:pearlescent_ingot', 2],
 		2,
 		20,
 		[
 			[
-				'3+', 'output', 2
+				'3+', 'output', 3
 			]
 		]
 	)
@@ -3411,6 +3442,80 @@ ServerEvents.recipes((event) => {
 			entry.items,
 			manaAmounts[entry.tier - 1]
 		).id('botania:runic_altar/' + runeName)
+	}
+
+	// All Leaves support Conjuration Catalyst
+	Item.list.toArray().forEach(/** @param {Internal.Item} item*/ item => {
+		if (item.id.includes('_leaves') && item.id !== 'botania:horn_leaves') {
+			event.recipes.botania.mana_infusion(Item.of(item, 2), item)
+				.mana(2000)
+				.catalyst('botania:conjuration_catalyst')
+				.id(`botania:mana_infusion/${(item.id.split(':')[0] != 'minecraft') ? item.id.split(':')[0] + '_' : ''}${item.id.split(':')[1]}_dupe`)
+		}
+	})
+
+	// Pure Daisy transforms (all default ones have been removed completely)
+	const pureDaisyMap = {
+		'stone': 'botania:livingrock',
+		'botania:blaze_block': 'minecraft:obsidian',
+		'water': 'minecraft:snow_block',
+		'#logs': 'botania:livingwood_log',
+		'netherrack': 'create:scoria',
+		'end_stone': 'quark:myalite',
+		'diorite': 'create:limestone',
+		'granite': 'create:ochrum',
+		'tuff': 'create:veridium',
+		'calcite': 'create:asurine',
+		'create:limestone': 'create:crimsite',
+		'ars_nouveau:source_gem_block': 'minecraft:amethyst_block',
+
+		'witherstormmod:tainted_stone': 'minecraft:stone',
+		'witherstormmod:tainted_stone_stairs': 'minecraft:stone_stairs',
+		'witherstormmod:tainted_stone_slab': 'minecraft:stone_slab',
+		'witherstormmod:tainted_stone_button': 'minecraft:stone_button',
+		'witherstormmod:tainted_stone_pressure_plate': 'minecraft:stone_pressure_plate',
+		'witherstormmod:tainted_cobblestone': 'minecraft:cobblestone',
+		'witherstormmod:tainted_cobblestone_stairs': 'minecraft:cobblestone_stairs',
+		'witherstormmod:tainted_cobblestone_slab': 'minecraft:cobblestone_slab',
+		'witherstormmod:tainted_cobblestone_wall': 'minecraft:cobblestone_wall',
+		'witherstormmod:tainted_dirt': 'minecraft:dirt',
+		'witherstormmod:tainted_sand': 'minecraft:sand',
+		'witherstormmod:tainted_sandstone': 'minecraft:sandstone',
+		'witherstormmod:tainted_sandstone_slab': 'minecraft:sandstone_slab',
+		'witherstormmod:tainted_sandstone_stairs': 'minecraft:sandstone_stairs',
+		'witherstormmod:tainted_sandstone_wall': 'minecraft:sandstone_wall',
+		'witherstormmod:tainted_cut_sandstone': 'minecraft:cut_sandstone',
+		'witherstormmod:tainted_cut_sandstone_slab': 'minecraft:cut_sandstone_slab',
+		'witherstormmod:tainted_chiseled_sandstone': 'minecraft:chiseled_sandstone',
+		'witherstormmod:tainted_smooth_sandstone': 'minecraft:smooth_sandstone',
+		'witherstormmod:tainted_smooth_sandstone_stairs': 'minecraft:smooth_sandstone_stairs',
+		'witherstormmod:tainted_smooth_sandstone_slab': 'minecraft:smooth_sandstone_slab',
+		// 'witherstormmod:tainted_smooth_sandstone_wall': 'minecraft:smooth_sandstone_wall', // no vanilla block!
+		'witherstormmod:tainted_glass': 'minecraft:glass',
+		'witherstormmod:tainted_glass_pane': 'minecraft:glass_pane',
+		'witherstormmod:tainted_planks': 'minecraft:oak_planks',
+		'witherstormmod:tainted_log': 'minecraft:oak_log',
+		'witherstormmod:tainted_wood': 'minecraft:oak_wood',
+		'witherstormmod:tainted_leaves': 'minecraft:oak_leaves',
+		'witherstormmod:tainted_door': 'minecraft:oak_door',
+		'witherstormmod:tainted_sign': 'minecraft:oak_sign',
+		'witherstormmod:tainted_trapdoor': 'minecraft:oak_trapdoor',
+		'witherstormmod:tainted_button': 'minecraft:oak_button',
+		'witherstormmod:tainted_pressure_plate': 'minecraft:oak_pressure_plate',
+		'witherstormmod:tainted_stairs': 'minecraft:oak_stairs',
+		'witherstormmod:tainted_slab': 'minecraft:oak_slab',
+		'witherstormmod:tainted_fence': 'minecraft:oak_fence',
+		'witherstormmod:tainted_fence_gate': 'minecraft:oak_fence_gate',
+		'witherstormmod:tainted_torch': 'minecraft:torch',
+		'witherstormmod:tainted_mushroom': 'minecraft:brown_mushroom',
+		'witherstormmod:tainted_pumpkin': 'minecraft:pumpkin',
+		'witherstormmod:tainted_carved_pumpkin': 'minecraft:carved_pumpkin',
+		'witherstormmod:tainted_jack_o_lantern': 'minecraft:jack_o_lantern',
+	}
+
+	for (const [block, into] of Object.entries(pureDaisyMap)) {
+		event.recipes.botania.pure_daisy(into, block)
+			.id(`botania:pure_daisy/${(into == 'botania:livingwood_log') ? 'livingwood' : into.split(':')[1]}`);
 	}
 
 	// Orechid transforms

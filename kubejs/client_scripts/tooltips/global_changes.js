@@ -11,6 +11,17 @@ ClientEvents.tick(event => {
 
 ItemEvents.tooltip(event => {
 
+	function colorDurabilityText(p, t) {
+		if (p > 0.6) {
+			return Text.green(t);
+		} else if (p > 0.4) {
+			return Text.yellow(t);
+		} else if (p > 0.2) {
+			return Text.gold(t);
+		}
+		return Text.red(t);
+	}
+
 	/*
 		2 nukes for tooltips
 		First one completely removes descriptions of items
@@ -29,7 +40,7 @@ ItemEvents.tooltip(event => {
 		const original = text.toArray();
 
 		for (let i = 1; i < original.length; i++) {
-			if (text[1].toString().includes('Enchantments')) {
+			if (text[1].toString().includes('Enchantments') || text[1].toString().includes('item.modifiers.')) {
 				if (!event.shift) text.add(1, '')
 				break
 			};
@@ -364,317 +375,408 @@ ItemEvents.tooltip(event => {
 
 
 	/**
-	 * Adds a tooltip line to a set of items.
-	 * 
-	 * @param {InputItem_ | InputItem_[]} items - A single item or array of items to which the tooltip should be added.
-	 * @param {string | string[]} lineText - The tooltip text to add (can be a string or array of strings).
-	 * @param {boolean} gray - Whether the tooltip text should be gray-colored (defaults to true).
-	 * @param {number} position - The position in the tooltip to insert the new line(s).
-	 * @param {boolean} last - Whether this should be placed on the last line.
+	 * Adds tooltip lines to one or more items using the simplified `tip()` interface.
+	 *
+	 * @param {string|string[]|RegExp|RegExp[]} items  
+	 * Item ID, array of IDs, or regex patterns.  
+	 * - Strings must be full item IDs (e.g. `"minecraft:stick"`).  
+	 * - Regex patterns match multiple items.  
+	 * - Arrays can mix strings and regex.
+	 *
+	 * @param {string|string[]} text  
+	 * Tooltip text to add.  
+	 * - Single string → one line  
+	 * - Array of strings → multiple lines
+	 *
+	 * @param {Object} [opts]  
+	 * Optional settings that control how the tooltip behaves.
+	 *
+	 * @param {boolean} [opts.gray=true]  
+	 * Whether to render the tooltip in gray text.  
+	 * Set `false` to keep original coloring.
+	 *
+	 * @param {number|null} [opts.position=null]  
+	 * Priority / ordering of the tooltip:  
+	 * - `null` → default behavior  
+	 * - Higher numbers push the tooltip lower  
+	 * - Lower numbers pull it higher
+	 *
+	 * @param {boolean} [opts.last=false]  
+	 * If true, forces these tooltip lines to appear at the bottom.
+	 *
+	 * @example
+	 * // Simple tooltip
+	 * tip("minecraft:apple", "A tasty snack!");
+	 *
+	 * // Multiple items, one tooltip line
+	 * tip(["wooden_sword", "wooden_axe"], "We all start somewhere");
+	 *
+	 * // Multiple lines, requires SHIFT, placed last
+	 * tip(/campfire/, ["Provides warmth", "Restores health"], { last: true });
 	 */
-	function addTooltipLine(items, lineText, gray, position, last) {
-		if (!gray) gray = true;
+	function tip(items, text, opts) {
+		if (!opts) opts = {};
 
-		// Ensure lineText is an array
-		if (!Array.isArray(lineText)) {
-			lineText = [lineText];
-		}
+		addTooltipLine({
+			items: Array.isArray(items) ? items : [items],
+			text: Array.isArray(text) ? text : [text],
+			gray: opts.gray !== undefined ? opts.gray : true,
+			position: opts.position !== undefined ? opts.position : null,
+			last: opts.last !== undefined ? opts.last : false
+		});
+	}
 
-		// Utility function to split long lines at word boundaries
-		function wrapLine(line, maxLen) {
-			const words = line.split(' ');
-			const lines = [];
-			let current = '';
+	function addTooltipLine(data) {
+		// Unpack fields with manual defaults (KubeJS cannot use default parameters)
+		var items = data.items;
+		var text = Array.isArray(data.text) ? data.text : [data.text];
+		var gray = data.gray !== undefined ? data.gray : true;
+		var position = data.position !== undefined ? data.position : null;
+		var last = data.last !== undefined ? data.last : false;
 
-			for (const word of words) {
-				if ((current + word).length + 1 <= maxLen) {
-					current += (current ? ' ' : '') + word;
-				} else {
-					if (current) lines.push(current);
-					current = word;
-				}
-			}
-			if (current) lines.push(current);
-			return lines;
-		}
+		event.addAdvanced(items, (item, advanced, tooltip) => {
+			if (tooltip[0].toString().includes('Unknown Item')) return;
 
-		event.addAdvanced(items, (item, advanced, text) => {
-			if (text[0].toString().includes('Unknown Item')) return;
+			var maxLen = 50;
+			var iter = 0;
 
-			let iter = 0;
-			const maxLength = 50;
-			const pos = (last)
-				? (text[text.size() - 1].toString().includes('color=dark_gray')) ? text.size() - 1 : text.size()
-				: (typeof position !== 'undefined' && position !== null)
-					? position
-					: 1;
+			var pos = last
+				? (tooltip[tooltip.size() - 1].toString().includes('color=dark_gray')
+					? tooltip.size() - 1
+					: tooltip.size())
+				: (position !== null ? position : 1);
 
-			lineText.forEach(line => {
-				const wrappedLines = wrapLine(line, maxLength);
-				wrappedLines.forEach(wrapped => {
-					const formatted = gray ? Text.gray(wrapped) : Text.of(wrapped);
-					text.add(pos + iter, formatted);
+			text.forEach(line => {
+				wrapLine(line, maxLen).forEach(wrapped => {
+					tooltip.add(pos + iter, gray ? Text.gray(wrapped) : Text.of(wrapped));
 					iter++;
-				})
+				});
 			});
 		});
 	}
 
-	// Add tooltips to all of these items
-	addTooltipLine([
-		global.rediscoveredFurniture
-	], [
-		'Comes with a unique feeling of nostalgia',
-	], true);
+	function wrapLine(str, max) {
+		var words = str.split(' ');
+		var out = [];
+		var current = '';
 
-	addTooltipLine('rediscovered:cyan_rose', 'Also known as Blue Rose');
-	addTooltipLine([
-		'wooden_sword',
-		'wooden_axe',
-		'wooden_pickaxe',
-		'wooden_hoe',
-		'wooden_shovel',
-		'shieldexp:wooden_shield'
-	], 'We all have to start somewhere!')
+		words.forEach(word => {
+			if ((current + word).length + 1 <= max)
+				current += (current ? ' ' : '') + word;
+			else {
+				out.push(current);
+				current = word;
+			}
+		});
 
-	addTooltipLine([
-		'golden_apple',
-		'enchanted_golden_apple',
-		'majruszsdifficulty:bandage',
-		'majruszsdifficulty:golden_bandage'
-	], 'Stops bleeding')
-
-	addTooltipLine([
-		'enchanted_golden_apple'
-	], 'You can unenchant it. But why would you?', true, 2)
-
-	addTooltipLine([
-		/campfire/
-	], 'Provides health regeneration')
-
-	addTooltipLine([
-		'sortilege:limitite'
-	], [
-		'Increases the maximum amount of enchantments an item can hold by 1, up to 3 total times',
-		'Combine the item with it in a Smithing Table using Lapis Lazuli as the template for the recipe'
-	], true)
-
-	addTooltipLine([
-		'dummmmmmy:target_dummy'
-	], [
-		'An invulnerable, punchable dummy',
-		'Quite perfect for measuring dealt damage'
-	], true)
-
-	addTooltipLine([
-		/botania\:.*_mystical_flower/,
-		/botania\:.*_double_flower/
-	], 'It sparkles with magic')
-
-	addTooltipLine([
-		/botania\:apothecary.*/
-	], 'The crafting table for all that is vivid')
-
-	addTooltipLine([
-		'botania:diluted_pool'
-	], [
-		'Has 10x smaller Mana capacity than a normal Mana Pool'
-	], true)
-
-	addTooltipLine([
-		'berry_good:glowgurt'
-	], 'Gurt: Glow.')
-
-	addTooltipLine([
-		'suspicious_stew'
-	], 'Like a box of chocolates, just disgusting')
-
-	addTooltipLine([
-		'quark:seed_pouch'
-	], [
-		'Can hold 10 stacks of Bone Meal or any Seed, Sapling, Crop or Mushroom'
-	], true)
-
-	addTooltipLine([
-		'quark:slime_in_a_bucket'
-	], 'Jumps with enthusiasm if you are in a slime chunk')
-
-	addTooltipLine([
-		'minecraft:compass',
-		'minecraft:recovery_compass'
-	], 'Tells your horizontal location')
-	addTooltipLine([
-		'minecraft:clock',
-		'mythicmetals:platinum_watch'
-	], 'Tells the time and weather')
-	addTooltipLine([
-		'additionaladditions:depth_meter'
-	], 'Tells your vertical location')
-	addTooltipLine([
-		'additionaladditions:depth_meter',
-		'minecraft:clock',
-		'minecraft:compass',
-		'minecraft:recovery_compass',
-		'mythicmetals:platinum_watch'
-	], 'Works from a Bundle', true, 2)
-	addTooltipLine([
-		'minecraft:recovery_compass'
-	], ['Points you towards the location of your last death'], true, 3)
-	addTooltipLine([
-		/botania:floating/,
-		/botanicadds:*.floating.*/
-	], ['Can be planted on any surface'], true)
-	addTooltipLine([
-		/botania:.*\_chibi/
-	], ['Has a smaller area of effect than its regular size counterpart'], true, 1)
-
-	addTooltipLine([
-		/netherexp:etched_.*/,
-		/netherexp:chiseled_soul_slate_.*/
-	], ['Can be ignited with Flint and Steel'], true)
-
-	addTooltipLine([
-		/domesticationinnovation:pet_bed/
-	], ['Allows your pets to respawn at dawn', 'Move your pet onto the pet bed to set its respawn point'], true)
-
-	addTooltipLine([
-		'domesticationinnovation:collar_tag'
-	], ['Can be enchanted', 'Give it to your pet to transfer the enchantments\' power to it'], true)
-
-	addTooltipLine([
-		'bell'
-	], ['Ring while holding an Emerald to call a Wandering Trader'], true)
-
-	addTooltipLine([
-		'upgrade_aquatic:elder_eye'
-	], ['Emits redstone signal if there is an entity in front of it'], true)
-
-	addTooltipLine([
-		'cauldron'
-	], ['Can be used to brew some basic potions'], true)
-
-	addTooltipLine([
-		'majruszsdifficulty:recall_potion'
-	], ['Teleports you to your spawn point'], true)
-
-	addTooltipLine([
-		'naturescompass:naturescompass'
-	], ['Points in the direction of any biome in the world'], true)
-
-	addTooltipLine([
-		/bedroll/
-	], ['Also known as \'sleeping bag\''], true)
-
-	// Dungeons Weaponry
-	addTooltipLine([
-		'dungeonsweaponry:chill_gale_knife'
-	], ['Slows down hit mobs', 'Grants a burst of speed on kill'], true)
-	addTooltipLine([
-		'dungeonsweaponry:dark_katana'
-	], ['Deals 50% more damage against undead mobs'], true)
-	addTooltipLine([
-		'dungeonsweaponry:glaive'
-	], ['Trades a bit of attack speed for longer range compared to swords'], true)
-	addTooltipLine([
-		'dungeonsweaponry:venom_glaive'
-	], ['Inflicts hit mobs with acid venom for a short time, dealing extra damage'], true)
-	addTooltipLine([
-		'dungeonsweaponry:claymore'
-	], ['Deals a stupid amount of damage but requires both hands to use'], true)
-	addTooltipLine([
-		'dungeonsweaponry:frost_slayer'
-	], ['It just deals massive damage with every swing', 'Doesn\'t really utilize the \'frost\' part, just deals absurd damage'], true)
-	addTooltipLine([
-		'dungeonsweaponry:heartstealer'
-	], ['Heals its user a bit on attacks', 'Very slow attack speed'], true)
-
-	// Alex's Caves
-	addTooltipLine([
-		'alexscaves:dreadbow'
-	], ['Does the name \'Daedalous Stormbow\' ring a bell perchance?', 'Rains Darkness Arrows around target location'], true)
-	addTooltipLine([
-		'alexscaves:desolate_dagger'
-	], ['Summons extra copies of itself on hit which hit with a delayed impact', 'Copies deal low, but armor-piercing damage'], true)
-
-	// Alloy
-	addTooltipLine([
-		'alloy_forgery:cracked_stone_bricks_forge_controller'
-	], ['Speed Multiplier: 1.0x', 'Building Material: Stone Bricks (+Variants)'], true, null, true)
-	addTooltipLine([
-		'alloy_forgery:cracked_deepslate_bricks_forge_controller'
-	], ['Speed Multiplier: 1.25x', 'Building Material: Deepslate Bricks (+Variants)'], true, null, true)
-	addTooltipLine([
-		'alloy_forgery:nether_bricks_forge_controller'
-	], ['Speed Multiplier: 1.75x', 'Building Material: Nether Bricks (+Variants)'], true, null, true)
-	addTooltipLine([
-		'alloy_forgery:adamantite_forge_casing_forge_controller'
-	], ['Speed Multiplier: 2.0x', 'Building Material: Adamantite Forge Casing'], true, null, true)
-	addTooltipLine([
-		'alloy_forgery:ender_forge_casing_forge_controller'
-	], ['Speed Multiplier: 2.5x', 'Building Material: Ender Forge Casing'], true, null, true)
-	addTooltipLine([
-		/adj\:.*forge_casing/
-	], 'Used to build an Alloy Forge')
-
-	addTooltipLine('majruszsdifficulty:enderium_helmet', 'Makes all Endermen less hostile');
-
-	addTooltipLine('mythicmetals:hallowed_ingot', 'Seems oddly familiar...');
-	addTooltipLine('mythicmetals:orichalcum_hammer', 'Mines a 3x2 area');
-
-	// Galosphere
-	addTooltipLine('galosphere:allurite_block', 'Silences nearby blocks');
-	addTooltipLine('galosphere:monstrometer', 'Requires Lumiere Blocks as fuel');
-	addTooltipLine('galosphere:warped_anchor', 'Requires Allurite Blocks as fuel');
-	addTooltipLine('galosphere:combustion_table', 'Used to customize Silver Bombs');
-	addTooltipLine('galosphere:stranded_membrane_block', 'Pushes items and entities in the direction its facing');
-	addTooltipLine('galosphere:silver_balance', 'Produces a redstone signal that gets stronger the harder the block placed directly on top of it is to break');
-
-	addTooltipLine('witherstormmod:command_block_book', 'Combine with any Diamond tool in an Anvil to create a Command Block tool');
-	addTooltipLine('witherstormmod:firework_bundle', 'Might distract The Wither Storm when activated');
-	addTooltipLine('witherstormmod:super_tnt', 'Creates a bit bigger explosion than a regular TNT');
-	addTooltipLine('witherstormmod:formidibomb', ['The key to defeating The Wither Storm', 'Place it nearby and detonate once it has 3 heads', 'Creates a massive explosion on its own']);
-
-	addTooltipLine(/ars_nouveau:arcanist/, [
-		'Can be upgraded (twice total)',
-		'Can be imbued with different magical threads'
-	])
-
-	addTooltipLine([
-		'mutantmonsters:mutant_skeleton_skull',
-		'mutantmonsters:mutant_skeleton_chestplate',
-		'mutantmonsters:mutant_skeleton_leggings',
-		'mutantmonsters:mutant_skeleton_boots'
-	], 'WIP! PLEASE DON\'T USE')
-
-	addTooltipLine([
-		/.*delight.*:.*stove.*/
-	], 'Acts like a Campfire with 6 total slots')
-
-	addTooltipLine([
-		'heart_crystals:heart_crystal'
-	], 'Increases max health by 20, up to 400')
-
-	addTooltipLine([
-		'naturalist:bug_net'
-	], 'Used to catch butterflies')
-
-	addTooltipLine([
-		/the_bumblezone:string_curtain/
-	], 'Can be extended downwards by right-clicking with a String')
-
-	addTooltipLine([
-		/mcdw:soul_dagger/
-	], 'Attacks temporarily boost mana regeneration')
-
-});
-
-function colorDurabilityText(p, t) {
-	if (p > 0.6) {
-		return Text.green(t);
-	} else if (p > 0.4) {
-		return Text.yellow(t);
-	} else if (p > 0.2) {
-		return Text.gold(t);
+		if (current) out.push(current);
+		return out;
 	}
-	return Text.red(t);
-}
+
+
+	const TIP_CONFIG = [
+		// Rediscovered
+		{
+			items: global.rediscoveredFurniture,
+			text: 'Comes with a unique feeling of nostalgia'
+		},
+		{
+			items: 'rediscovered:cyan_rose',
+			text: 'Also known as Blue Rose'
+		},
+
+		// Starter tools
+		{
+			items: [
+				'wooden_sword', 'wooden_axe', 'wooden_pickaxe',
+				'wooden_hoe', 'wooden_shovel', 'shieldexp:wooden_shield'
+			],
+			text: 'We all have to start somewhere!'
+		},
+
+		// Bleeding items
+		{
+			items: [
+				'golden_apple', 'enchanted_golden_apple',
+				'majruszsdifficulty:bandage', 'majruszsdifficulty:golden_bandage'
+			],
+			text: 'Stops bleeding'
+		},
+		{
+			items: 'enchanted_golden_apple',
+			text: 'You can unenchant it. But why would you?',
+			opts: { position: 2 }
+		},
+
+		// Campfires
+		{
+			items: /campfire/,
+			text: 'Provides health regeneration'
+		},
+
+		// Sortilege
+		{
+			items: 'sortilege:limitite',
+			text: [
+				'Increases the maximum amount of enchantments an item can hold by 1, up to 3 total times',
+				'Combine the item with it in a Smithing Table using Lapis Lazuli as the template for the recipe'
+			]
+		},
+
+		// Dummy
+		{
+			items: 'dummmmmmy:target_dummy',
+			text: [
+				'An invulnerable, punchable dummy',
+				'Quite perfect for measuring dealt damage'
+			]
+		},
+
+		// Botania flowers
+		{
+			items: [
+				/botania\:.*_mystical_flower/,
+				/botania\:.*_double_flower/
+			],
+			text: 'It sparkles with magic'
+		},
+		{
+			items: /botania\:apothecary.*/,
+			text: 'The crafting table for all that is vivid'
+		},
+		{
+			items: 'botania:diluted_pool',
+			text: 'Has 10x smaller Mana capacity than a normal Mana Pool'
+		},
+
+		// Small misc
+		{ items: 'berry_good:glowgurt', text: 'Gurt: Glow.' },
+		{ items: 'suspicious_stew', text: 'Like a box of chocolates, just disgusting' },
+
+		// Quark
+		{
+			items: 'quark:seed_pouch',
+			text: 'Can hold 10 stacks of Bone Meal or any Seed, Sapling, Crop or Mushroom'
+		},
+		{
+			items: 'quark:slime_in_a_bucket',
+			text: 'Jumps with enthusiasm if you are in a slime chunk'
+		},
+
+		// Compass / time / depth
+		{
+			items: ['minecraft:compass', 'minecraft:recovery_compass'],
+			text: 'Tells your horizontal location'
+		},
+		{
+			items: ['minecraft:clock', 'mythicmetals:platinum_watch'],
+			text: 'Tells the time and weather'
+		},
+		{
+			items: 'additionaladditions:depth_meter',
+			text: 'Tells your vertical location'
+		},
+		{
+			items: [
+				'additionaladditions:depth_meter',
+				'minecraft:clock', 'minecraft:compass',
+				'minecraft:recovery_compass', 'mythicmetals:platinum_watch'
+			],
+			text: 'Works from a Bundle',
+			opts: { position: 2 }
+		},
+		{
+			items: 'minecraft:recovery_compass',
+			text: 'Points you towards the location of your last death',
+			opts: { position: 3 }
+		},
+
+		// Botania floating + chibi
+		{
+			items: [
+				/botania:floating/,
+				/botanicadds:*.floating.*/
+			],
+			text: 'Can be planted on any surface'
+		},
+		{
+			items: /botania:.*_chibi/,
+			text: 'Has a smaller area of effect than its regular size counterpart',
+			opts: { position: 1 }
+		},
+
+		// Netherexp
+		{
+			items: [
+				/netherexp:etched_.*/,
+				/netherexp:chiseled_soul_slate_.*/
+			],
+			text: 'Can be ignited with Flint and Steel'
+		},
+
+		// Domestication Innovation
+		{
+			items: /domesticationinnovation:pet_bed/,
+			text: [
+				'Allows your pets to respawn at dawn',
+				'Move your pet onto the pet bed to set its respawn point'
+			]
+		},
+		{
+			items: 'domesticationinnovation:collar_tag',
+			text: [
+				'Can be enchanted',
+				'Give it to your pet to transfer the enchantments\' power to it'
+			]
+		},
+
+		// Misc single items
+		{ items: 'bell', text: 'Ring while holding an Emerald to call a Wandering Trader' },
+		{ items: 'upgrade_aquatic:elder_eye', text: 'Emits redstone signal if there is an entity in front of it' },
+		{ items: 'cauldron', text: 'Can be used to brew some basic potions' },
+		{ items: 'majruszsdifficulty:recall_potion', text: 'Teleports you to your spawn point' },
+		{ items: 'naturescompass:naturescompass', text: 'Points in the direction of any biome in the world' },
+		{ items: /bedroll/, text: 'Also known as \'sleeping bag\'' },
+
+		// Alex’s Caves
+		{
+			items: 'alexscaves:dreadbow',
+			text: [
+				'Does the name \'Daedalous Stormbow\' ring a bell perchance?',
+				'Rains Darkness Arrows around target location'
+			]
+		},
+		{
+			items: 'alexscaves:desolate_dagger',
+			text: [
+				'Summons extra copies of itself on hit which hit with a delayed impact',
+				'Copies deal low, but armor-piercing damage'
+			]
+		},
+
+		// Alloy Controllers (all last = true)
+		{
+			items: 'alloy_forgery:cracked_stone_bricks_forge_controller',
+			text: ['Speed Multiplier: 1.0x', 'Building Material: Stone Bricks (+Variants)'],
+			opts: { last: true }
+		},
+		{
+			items: 'alloy_forgery:cracked_deepslate_bricks_forge_controller',
+			text: ['Speed Multiplier: 1.25x', 'Building Material: Deepslate Bricks (+Variants)'],
+			opts: { last: true }
+		},
+		{
+			items: 'alloy_forgery:nether_bricks_forge_controller',
+			text: ['Speed Multiplier: 1.75x', 'Building Material: Nether Bricks (+Variants)'],
+			opts: { last: true }
+		},
+		{
+			items: 'alloy_forgery:adamantite_forge_casing_forge_controller',
+			text: ['Speed Multiplier: 2.0x', 'Building Material: Adamantite Forge Casing'],
+			opts: { last: true }
+		},
+		{
+			items: 'alloy_forgery:ender_forge_casing_forge_controller',
+			text: ['Speed Multiplier: 2.5x', 'Building Material: Ender Forge Casing'],
+			opts: { last: true }
+		},
+
+		// Alloy casing
+		{
+			items: /adj\:.*forge_casing/,
+			text: 'Used to build an Alloy Forge'
+		},
+
+		// Mythic Metals / Majrusz
+		{ items: 'majruszsdifficulty:enderium_helmet', text: 'Makes all Endermen less hostile' },
+		{ items: 'mythicmetals:hallowed_ingot', text: 'Seems oddly familiar...' },
+		{ items: 'mythicmetals:orichalcum_hammer', text: 'Mines a 3x2 area' },
+
+		// Galosphere
+		{ items: 'galosphere:allurite_block', text: 'Silences nearby blocks' },
+		{ items: 'galosphere:monstrometer', text: 'Requires Lumiere Blocks as fuel' },
+		{ items: 'galosphere:warped_anchor', text: 'Requires Allurite Blocks as fuel' },
+		{ items: 'galosphere:combustion_table', text: 'Used to customize Silver Bombs' },
+		{ items: 'galosphere:stranded_membrane_block', text: 'Pushes items and entities in the direction its facing' },
+		{
+			items: 'galosphere:silver_balance',
+			text: 'Produces a redstone signal that gets stronger the harder the block placed directly on top of it is to break'
+		},
+
+		// Wither Storm Mod
+		{
+			items: 'witherstormmod:command_block_book',
+			text: 'Combine with any Diamond tool in an Anvil to create a Command Block tool'
+		},
+		{
+			items: 'witherstormmod:firework_bundle',
+			text: 'Might distract The Wither Storm when activated'
+		},
+		{
+			items: 'witherstormmod:super_tnt',
+			text: 'Creates a bit bigger explosion than a regular TNT'
+		},
+		{
+			items: 'witherstormmod:formidibomb',
+			text: [
+				'The key to defeating The Wither Storm',
+				'Place it nearby and detonate once it has 3 heads',
+				'Creates a massive explosion on its own'
+			]
+		},
+
+		// Ars Nouveau
+		{
+			items: /ars_nouveau:arcanist/,
+			text: [
+				'Can be upgraded (twice total)',
+				'Can be imbued with different magical threads'
+			]
+		},
+
+		// Mutant Monsters
+		{
+			items: [
+				'mutantmonsters:mutant_skeleton_skull',
+				'mutantmonsters:mutant_skeleton_chestplate',
+				'mutantmonsters:mutant_skeleton_leggings',
+				'mutantmonsters:mutant_skeleton_boots'
+			],
+			text: 'WIP! PLEASE DON\'T USE'
+		},
+
+		// Delight stoves
+		{
+			items: /.*delight.*:.*stove.*/,
+			text: 'Acts like a Campfire with 6 total slots'
+		},
+
+		// Heart crystals
+		{
+			items: 'heart_crystals:heart_crystal',
+			text: 'Increases max health by 20, up to 400'
+		},
+
+		// Naturalist
+		{
+			items: 'naturalist:bug_net',
+			text: 'Used to catch butterflies'
+		},
+
+		// Bumblezone
+		{
+			items: /the_bumblezone:string_curtain/,
+			text: 'Can be extended downwards by right-clicking with a String'
+		},
+
+		// MCDW
+		{
+			items: /mcdw:soul_dagger/,
+			text: 'Attacks temporarily boost mana regeneration'
+		}
+	];
+
+	for (const entry of TIP_CONFIG) {
+		tip(entry.items, entry.text, entry.opts);
+	}
+})

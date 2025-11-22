@@ -2,10 +2,7 @@
 	"type": "minecraft:gift",
 	"pools": [
 		{
-			"rolls": {
-				"min": 8,
-				"max": 12
-			},
+			"rolls": 1,
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -17,8 +14,8 @@
 		},
 		{
 			"rolls": {
-				"min": 5,
-				"max": 32
+				"min": 8,
+				"max": 24
 			},
 			"entries": [
 				{

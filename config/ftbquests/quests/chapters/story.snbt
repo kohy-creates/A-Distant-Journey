@@ -1701,7 +1701,7 @@
 		{
 			dependencies: ["379A22A2185CFC8E"]
 			hide_until_deps_complete: true
-			icon: "mythicmetals:orichalcum_ingot"
+			icon: "mythicmetals:mythril_ingot"
 			id: "5AEA2A64181AED93"
 			subtitle: "Mine and smelt the new ores that appeared in your world"
 			tasks: [

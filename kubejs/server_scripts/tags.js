@@ -1,4 +1,9 @@
+// 
+// Item Tags
+// 
 ServerEvents.tags('item', event => {
+
+	event.removeAllTagsFrom(global.blacklistedItems)
 
 	event.add('adj:basic_furnaces', [
 		'furnace',
@@ -197,8 +202,15 @@ ServerEvents.tags('item', event => {
 		/tide:.*_bucket/,
 		/alexscaves:.*_bucket/
 	])
+
+	event.remove('botania:floating_flowers', [
+		'#botania:special_floating_flowers'
+	])
 })
 
+// 
+// Block tags
+// 
 ServerEvents.tags('block', event => {
 
 	event.remove('minecraft:needs_stone_tool', [
@@ -270,9 +282,15 @@ ServerEvents.tags('block', event => {
 	])
 })
 
+// 
+// Entity type tags
+// 
 ServerEvents.tags('entity_type', event => {
 })
 
+// 
+// Damage type tags
+// 
 ServerEvents.tags('damage_type', event => {
 	event.add('adjcore:bypasses_cooldown', [
 		'botania:relic_damage',
@@ -296,26 +314,29 @@ ServerEvents.tags('damage_type', event => {
 		'ars_nouveau:crush',
 		'#minecraft:witch_resistant_to'
 	])
-	event.add('dummmmmmy:is_cold', [
-		'ars_nouveau:frost',
-		'aether:ice_crystal'
-	])
-	event.add('dummmmmmy:is_explosion', [
-		'supplementaries:bomb_explosion'
-	])
-	event.add('dummmmmmy:is_fire', [
-		'ars_nouveau:flare',
-		'ars_elemental:hellfire',
-		'aether:fire_crystal'
-	])
-	event.add('dummmmmmy:is_thorn', [
-		'ars_elemental:poison'
-	])
-	event.add('dummmmmmy:is_wither', [
-		'attributeslib:current_hp_damage'
-	])
+	// event.add('dummmmmmy:is_cold', [
+	// 	'ars_nouveau:frost',
+	// 	'aether:ice_crystal'
+	// ])
+	// event.add('dummmmmmy:is_explosion', [
+	// 	'supplementaries:bomb_explosion'
+	// ])
+	// event.add('dummmmmmy:is_fire', [
+	// 	'ars_nouveau:flare',
+	// 	'ars_elemental:hellfire',
+	// 	'aether:fire_crystal'
+	// ])
+	// event.add('dummmmmmy:is_thorn', [
+	// 	'ars_elemental:poison'
+	// ])
+	// event.add('dummmmmmy:is_wither', [
+	// 	'attributeslib:current_hp_damage'
+	// ])
 })
 
+// 
+// Structure tags
+// 
 ServerEvents.tags('worldgen/structure', event => {
 	event.remove('quark:soul_bead_target', [
 		'minecraft:fortress',

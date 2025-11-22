@@ -205,6 +205,9 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('minecraft:netherite'),
+		armorset('born_in_chaos_v1:dark_metal_armor'),
+		armorset('cataclysm:cursium'),
+		armorset('cataclysm:ignitium'),
 		'aether:obsidian_gloves',
 		toolset('mythicmetals:adamantite'),
 		'mcdw:crossbow_heavy_crossbow',

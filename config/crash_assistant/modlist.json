@@ -507,10 +507,10 @@
     "modId": "crafttweaker",
     "version": "14.0.59"
   },
-  "CrashAssistant-forge-1.19-1.20.1-1.10.22.jar": {
-    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.22.jar",
+  "CrashAssistant-forge-1.19-1.20.1-1.10.23.jar": {
+    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.23.jar",
     "modId": "crash_assistant",
-    "version": "1.10.22"
+    "version": "1.10.23"
   },
   "create-1.20.1-6.0.8.jar": {
     "jarName": "create-1.20.1-6.0.8.jar",
@@ -632,10 +632,10 @@
     "modId": "doubledoors",
     "version": "7.2"
   },
-  "drippyloadingscreen_forge_3.0.12_MC_1.20.1.jar": {
-    "jarName": "drippyloadingscreen_forge_3.0.12_MC_1.20.1.jar",
+  "drippyloadingscreen_forge_3.1.0_MC_1.20.1.jar": {
+    "jarName": "drippyloadingscreen_forge_3.1.0_MC_1.20.1.jar",
     "modId": "drippyloadingscreen",
-    "version": "3.0.12"
+    "version": "3.1.0"
   },
   "dummmmmmy-1.20-2.0.9.jar": {
     "jarName": "dummmmmmy-1.20-2.0.9.jar",
@@ -832,10 +832,10 @@
     "modId": "fbp",
     "version": "20.1.5.1"
   },
-  "fancymenu_forge_3.7.0_MC_1.20.1.jar": {
-    "jarName": "fancymenu_forge_3.7.0_MC_1.20.1.jar",
+  "fancymenu_forge_3.8.0_MC_1.20.1.jar": {
+    "jarName": "fancymenu_forge_3.8.0_MC_1.20.1.jar",
     "modId": "fancymenu",
-    "version": "3.7.0"
+    "version": "3.8.0"
   },
   "FarmersDelight-1.20.1-1.2.9.jar": {
     "jarName": "FarmersDelight-1.20.1-1.2.9.jar",
@@ -1525,10 +1525,10 @@
     "modId": "obscure_api",
     "version": "18"
   },
-  "obscure_tooltips-forge-1.20.1-3.2.2.jar": {
-    "jarName": "obscure_tooltips-forge-1.20.1-3.2.2.jar",
+  "obscure_tooltips-forge-1.20.1-3.3.1.jar": {
+    "jarName": "obscure_tooltips-forge-1.20.1-3.3.1.jar",
     "modId": "obscure_tooltips",
-    "version": "3.2.2"
+    "version": "3.3.1"
   },
   "obscure_tooltips_fix-1.20.1-1.3.0-all.jar": {
     "jarName": "obscure_tooltips_fix-1.20.1-1.3.0-all.jar",
@@ -1873,10 +1873,10 @@
     "modId": "spelunkers_charm",
     "version": "3.6.0"
   },
-  "spiffyhud_forge_3.0.0_MC_1.20.1.jar": {
-    "jarName": "spiffyhud_forge_3.0.0_MC_1.20.1.jar",
+  "spiffyhud_forge_3.1.0_MC_1.20.1.jar": {
+    "jarName": "spiffyhud_forge_3.1.0_MC_1.20.1.jar",
     "modId": "spiffyhud",
-    "version": "3.0.0"
+    "version": "3.1.0"
   },
   "spiffyxgnetum-1.0.jar": {
     "jarName": "spiffyxgnetum-1.0.jar",
