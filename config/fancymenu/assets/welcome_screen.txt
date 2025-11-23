@@ -2,22 +2,31 @@
 # %!!title%%#FBAA57%A DISTANT JOURNEY%#%%!!%
 ^^^
 
-Eons ago, there was the Architect’s Prism. It was originless - it had no maker, no beginning. It was universal, only one existed among all realms. Its only purpose - shaping thoughts into form, and form into reality.
+Eons ago, there was the %#F878FF%Architect’s Prism%#%. It was originless - it had no maker, no beginning. It was universal, only one existed among all realms. Its only purpose - shaping thoughts into form, and form into reality.
 
-The Prism was discovered and wielded by the greatest nation of its time, millenia before today. Its power gave rise to elegant weaponry, cities of unimaginable beauty, and a deeper understanding of the world itself. The influence of the Prism profoundly shaped the magical arts, as well as the creation of other—albeit less powerful—artifacts that still exist today.
+The %#F878FF%Prism%#% was discovered and wielded by the greatest nation of its time, millenia before today. Its power gave rise to elegant weaponry, cities of unimaginable beauty, and a deeper understanding of the world itself. The influence of the %#F878FF%Prism%#% profoundly shaped the magical arts, as well as the creation of other - albeit less powerful - artifacts that still exist today.
 
-However, should the thoughts fueling the Prism become ever so sligthly corrupt, its creations would twist and turn to darkness. A curious sorcerer, in an experiment to test the Prism’s true power, once unleashed its darkest creations — beings so terrible they consumed both him and the nation. Having barely managed to contain the outbreak of these wretched beings, other sorcerers, recognizing the danger of the Prism’s power, resolved to destroy it. 
+However, should the thoughts fueling the %#F878FF%Prism%#% become ever so sligthly corrupt, its creations would twist and turn to darkness. A curious sorcerer, in an experiment to test the Prism’s true power, once unleashed its darkest creations - beings so terrible they consumed both him and the nation. Having barely managed to contain the outbreak of these wretched beings, other sorcerers, recognizing the danger of the Prism’s power, resolved to destroy it. 
 
-Though shattered, the Prism’s essence survived through the split shards, which then started adapting and took the form of Eyes. Every eye inherited a tiny fraction of the Prism's powers, but some were scattered across realms, some lost to time, others reforged through arcane craft and ritual lost their power. Knowledge of them withered - first becoming legends and eventually fading into myths.
+Though shattered, the %#F878FF%Prism%#%’s essence survived through the split shards, which then started adapting and took the form of Eyes. Every eye inherited a tiny fraction of the Prism's powers, but some were scattered across realms, some lost to time, others reforged through arcane craft and ritual lost their power. Knowledge of them withered - first becoming legends and eventually fading into myths.
 
-Yet there remains an old saying that whoever retrieves all of the Eyes can restore the Architect’s Prism and wield its miraculous powers of creation.
+Yet there remains an old saying that whoever retrieves all of the Eyes can restore the %#F878FF%Architect’s Prism%#% and wield its miraculous powers of creation.
 
----
+
+
+^^^
+## %!!title%%#bfbfbf%INTRO%#%%!!%
+^^^
 
 Welcome to %#FBAA57%ADJ%#%, an adventure modpack which emphasizes on *progression*, *difficulty* and *creating* rather than solely on *exploration* and *combat*. 
-Your goal is simple - **collect 7 Eyes scattered across the world** and fuse them together to create the **Architect's Prism** - which will allow you to pretty much obtain any block in any quantity and create anything you wish. Some Eyes will be carried by a powerful boss mob, while some will require you to craft them from a catalyst and infuse them with power.
+
+Your goal is simple - **collect 7 Eyes scattered across the world** and fuse them together to create the %#F878FF%**Architect's Prism**%#% - which will allow you to pretty much obtain any block in any quantity and create anything you wish. 
+
+Some Eyes will be carried by a powerful boss mob, while some will require you to craft them from a catalyst and infuse them with power.
 
 However, your adventure is going to be long and very demanding - you will have to travel through many different dimensions, build various magical contraptions and machinery and slay the most wretched of the Prism's creations. Hence the modpack's name - it's indeed going to be *a distant journey*...
+
+
 
 ^^^
 ### %!!title%%#bfbfbf%ACHIEVEMENTS%#%%!!%
@@ -25,9 +34,13 @@ However, your adventure is going to be long and very demanding - you will have t
 ^^^
 
 Say hello to Achievements! Bringing them back from their grave that was update 1.12, they were designed to guide you throughout the pack, so check them whenever you are unsure on what to do next.
+
 You can open the achievements menu from your Inventory, or by pressing its default keybind (more on that in the `Controls` sction).
 
-**All Eyes are listed there as well as how to obtain them!**
+**All Eyes are listed there as well as how to obtain them!** 
+Achievements are a core feature of the modpack, so if you aren't following them, __*don't go to Discord asking what to do*__.
+
+
 
 ^^^
 ### %!!title%%#bfbfbf%CONTROLS%#%%!!%
@@ -37,6 +50,7 @@ You can open the achievements menu from your Inventory, or by pressing its defau
 **`L`** - open achievements menu
 **`R`** - combat dash *(if you have gear that grants one)*
 **`V`** - voice chat menu
+
 **`M`** - holding it down opens the Player Menu
 > In it you can access Shaders and other miscellaneous features that don't really deserve their own dedicated keybinds.
 
@@ -47,6 +61,9 @@ You can open the achievements menu from your Inventory, or by pressing its defau
 
 **`HOME`** - open debug menu (in case you ever need it)
 
+
 ---
 
-> *Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.*
+> *Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do.*
+*So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails.* 
+*Explore. Dream. Discover.*

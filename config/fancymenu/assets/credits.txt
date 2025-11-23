@@ -2,7 +2,19 @@
 # %!!title%%#FBAA57%CREDITS%#%%!!%
 ^^^
 
-- [face!kohara_] kohara - Main Creator
+^^^
+### %!!title%%#bfbfbf%THE CREATOR%#%%!!%
+---
+^^^
+
+- [face!kohara_] kohara - Developer
+
+
+
+^^^
+### %!!title%%#bfbfbf%CONTRIBUTORS%#%%!!%
+---
+^^^
 
 - [face!brokenemp] brokenemp - Contributor (Artist)
 - [face!MidasDaEpik] MidasDaEpik - Contributor (Artist)

@@ -7,7 +7,9 @@ const chapterMultipliers = {
 	armor: [1.0, 1.0, 1.05, 2.2, 2.2, 2.75]
 }
 
-// ---------------- HELPERS ---------------- //
+// 
+// Helpers
+// 
 function getStageValue(arr, stage) {
 	if (!Array.isArray(arr)) return arr
 	for (let i = stage; i > 0; i--) {
@@ -220,7 +222,9 @@ function hardcoreModifications(entity) {
 	}
 }
 
-// ---------------- EVENTS ---------------- //
+// 
+// Events
+// 
 EntityEvents.spawned((event) => {
 	let entity = event.entity
 

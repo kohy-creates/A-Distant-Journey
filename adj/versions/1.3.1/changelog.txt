@@ -1,0 +1,7 @@
+Fixed 2 files missing from the exported ZIP that were causing plenty of problems. Smh Curseforge for not including them by default.
+
+------
+
+## Other Changes
+
+- Added a warning for players who skip the intro screen (haven't spent at least 30 seconds in the screen) that I take no liability for any confusion.
