@@ -1,0 +1,1 @@
+Fixed 2 other small bugs that weren't really that problematic.
