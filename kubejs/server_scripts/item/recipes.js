@@ -233,6 +233,20 @@ ServerEvents.recipes((event) => {
 		}
 	).id('minecraft:recovery_compass')
 
+	// Cheaper Lodestones
+	event.shaped(
+		'lodestone',
+		[
+			'CCC',
+			'CIC',
+			'CCC'
+		],
+		{
+			C: 'smooth_stone',
+			I: 'ars_nouveau:source_gem'
+		}
+	).id('adj:lodestone')
+
 	event.recipes.botania.mana_infusion('naturescompass:naturescompass', 'minecraft:compass').mana(1000000).id('adj:nature_compass')
 
 	/**
@@ -3032,7 +3046,7 @@ ServerEvents.recipes((event) => {
 						"item": boat
 					}
 				]
-			}).id(`adj:boat/${type}`);
+			}).id(`adj:boat/${mod}_${type}`);
 		}
 	}
 
@@ -3857,7 +3871,8 @@ ServerEvents.recipes((event) => {
 	]
 	const curioToWorkshopRegex = [
 		/botania:cosmetic.*/,
-		/aether:.*gloves/
+		/aether:.*gloves/,
+		/umbral_skies:.*gloves/,
 	]
 	const curioToWorkshopBlacklist = [
 		'aether:netherite_gloves'

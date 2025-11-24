@@ -237,7 +237,9 @@ ServerEvents.tags('item', resctrictions => {
 		/orichalcum/,
 		/mythril/,
 		/stormyx/,
-		/mythicmetals:steel/
+		/mythicmetals:steel/,
+		/twilightforest/,
+		/twilightdelight/
 	]);
 	resctrictions.add('adj:locked_until/light/chapter_1', [
 		'botania:ender_air_bottle',

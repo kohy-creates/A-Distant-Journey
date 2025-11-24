@@ -133,6 +133,15 @@
 		"item:the_bumblezone:music_disc_life_renren",
 		"item:the_bumblezone:music_disc_radiance_renren",
 		"item:the_bumblezone:music_disc_rivers_of_honey_moserao",
+		"item:twilightforest:music_disc_findings",
+		"item:twilightforest:music_disc_home",
+		"item:twilightforest:music_disc_maker",
+		"item:twilightforest:music_disc_motion",
+		"item:twilightforest:music_disc_radiance",
+		"item:twilightforest:music_disc_steps",
+		"item:twilightforest:music_disc_superstitious",
+		"item:twilightforest:music_disc_thread",
+		"item:twilightforest:music_disc_wayfarer",
 		"item:unusualend:music_disc_endstone_golem_theme",
 		"item:unusualend:music_disc_flying_ships",
 		"item:unusualend:music_disc_queen",
@@ -190,6 +199,15 @@
 		"item:the_bumblezone:banner_pattern_pluses",
 		"item:the_bumblezone:banner_pattern_sun",
 		"item:the_bumblezone:banner_pattern_swords",
+		"item:twilightforest:alpha_yeti_banner_pattern",
+		"item:twilightforest:hydra_banner_pattern",
+		"item:twilightforest:knight_phantom_banner_pattern",
+		"item:twilightforest:lich_banner_pattern",
+		"item:twilightforest:minoshroom_banner_pattern",
+		"item:twilightforest:naga_banner_pattern",
+		"item:twilightforest:quest_ram_banner_pattern",
+		"item:twilightforest:snow_queen_banner_pattern",
+		"item:twilightforest:ur_ghast_banner_pattern",
 		"item:alexscaves:polarity_armor_trim_smithing_template",
 		"item:cataclysm:cursium_upgrade_smithing_template",
 		"item:cataclysm:ignitium_upgrade_smithing_template",
@@ -263,9 +281,15 @@
 		"item:the_bumblezone:super_candle_the_bumblezone:super_yellow",
 		"item:supplementaries:candle_holder_the_bumblezone:super_yellow",
 		"item:suppsquared:gold_candle_holder_the_bumblezone:super_yellow",
+		"item:the_bumblezone:super_candle_twilightforest:skeleton_skull",
+		"item:supplementaries:candle_holder_twilightforest:skeleton_skull",
+		"item:suppsquared:gold_candle_holder_twilightforest:skeleton_skull",
 		"item:the_bumblezone:super_candle_netherexp:ancient_skeleton_skull",
 		"item:supplementaries:candle_holder_netherexp:ancient_skeleton_skull",
 		"item:suppsquared:gold_candle_holder_netherexp:ancient_skeleton_skull",
+		"item:the_bumblezone:super_candle_twilightforest:piglin_skull",
+		"item:supplementaries:candle_holder_twilightforest:piglin_skull",
+		"item:suppsquared:gold_candle_holder_twilightforest:piglin_skull",
 		"item:the_bumblezone:super_candle_light_blue",
 		"item:supplementaries:candle_holder_light_blue",
 		"item:suppsquared:gold_candle_holder_light_blue",
@@ -317,6 +341,9 @@
 		"item:the_bumblezone:super_candle_black",
 		"item:supplementaries:candle_holder_black",
 		"item:suppsquared:gold_candle_holder_black",
+		"item:the_bumblezone:super_candle_twilightforest:zombie_skull",
+		"item:supplementaries:candle_holder_twilightforest:zombie_skull",
+		"item:suppsquared:gold_candle_holder_twilightforest:zombie_skull",
 		"item:the_bumblezone:super_candle_spelunkers_charm:candle_on_helmet",
 		"item:supplementaries:candle_holder_spelunkers_charm:candle_on_helmet",
 		"item:suppsquared:gold_candle_holder_spelunkers_charm:candle_on_helmet",
@@ -332,9 +359,18 @@
 		"item:the_bumblezone:super_candle_yellow",
 		"item:supplementaries:candle_holder_yellow",
 		"item:suppsquared:gold_candle_holder_yellow",
+		"item:the_bumblezone:super_candle_twilightforest:player_skull",
+		"item:supplementaries:candle_holder_twilightforest:player_skull",
+		"item:suppsquared:gold_candle_holder_twilightforest:player_skull",
 		"item:the_bumblezone:super_candle_netherexp:treacherous",
 		"item:supplementaries:candle_holder_netherexp:treacherous",
 		"item:suppsquared:gold_candle_holder_netherexp:treacherous",
+		"item:the_bumblezone:super_candle_twilightforest:wither_skeleton_skull",
+		"item:supplementaries:candle_holder_twilightforest:wither_skeleton_skull",
+		"item:suppsquared:gold_candle_holder_twilightforest:wither_skeleton_skull",
+		"item:the_bumblezone:super_candle_twilightforest:creeper_skull",
+		"item:supplementaries:candle_holder_twilightforest:creeper_skull",
+		"item:suppsquared:gold_candle_holder_twilightforest:creeper_skull",
 		"item:the_bumblezone:super_candle",
 		"item:supplementaries:candle_holder",
 		"item:suppsquared:gold_candle_holder",
@@ -1137,6 +1173,65 @@
 		"item:upgrade_aquatic:driftwood_hanging_sign",
 		"item:upgrade_aquatic:driftwood_boat",
 		"item:upgrade_aquatic:driftwood_chest_boat",
+		"item:betterarcheology:rotten_log",
+		"item:betterarcheology:rotten_planks",
+		"item:everycomp:q/betterarcheology/rotten_bookshelf",
+		"item:everycomp:hc/betterarcheology/rotten_bench",
+		"item:everycomp:hc/betterarcheology/rotten_chair",
+		"item:everycomp:hc/betterarcheology/rotten_couch",
+		"item:everycomp:hc/betterarcheology/rotten_dining_bench",
+		"item:everycomp:hc/betterarcheology/rotten_side_table",
+		"item:everycomp:hc/betterarcheology/rotten_desk",
+		"item:everycomp:hc/betterarcheology/rotten_nightstand",
+		"item:everycomp:hc/betterarcheology/rotten_table",
+		"item:everycomp:hc/betterarcheology/rotten_counter",
+		"item:everycomp:fd/betterarcheology/rotten_cabinet",
+		"item:everycomp:q/betterarcheology/rotten_chest",
+		"item:everycomp:hc/betterarcheology/rotten_fancy_bed",
+		"item:betterarcheology:rotten_stairs",
+		"item:betterarcheology:rotten_slab",
+		"item:v_slab_compat:betterarcheology/rotten_vertical_slab",
+		"item:suppsquared:betterarcheology/item_shelf_rotten",
+		"item:betterarcheology:rotten_fence",
+		"item:betterarcheology:rotten_fence_gate",
+		"item:betterarcheology:rotten_door",
+		"item:betterarcheology:rotten_trapdoor",
+		"item:everycomp:q/betterarcheology/rotten_ladder",
+		"item:everycomp:hnhome/betterarcheology/rotten_lattice",
+		"item:betterarcheology:rotten_pressure_plate",
+		"item:supplementaries:betterarcheology/sign_post_rotten",
+		"item:born_in_chaos_v1:scorched_log",
+		"item:born_in_chaos_v1:scorched_wood",
+		"item:everycomp:q/born_in_chaos_v1/scorched_post",
+		"item:born_in_chaos_v1:stripped_scorched_log",
+		"item:born_in_chaos_v1:stripped_scorched_wood",
+		"item:everycomp:q/born_in_chaos_v1/stripped_scorched_post",
+		"item:born_in_chaos_v1:scorched_planks",
+		"item:everycomp:q/born_in_chaos_v1/scorched_bookshelf",
+		"item:everycomp:hc/born_in_chaos_v1/scorched_bench",
+		"item:everycomp:hc/born_in_chaos_v1/scorched_chair",
+		"item:everycomp:hc/born_in_chaos_v1/scorched_couch",
+		"item:everycomp:hc/born_in_chaos_v1/scorched_dining_bench",
+		"item:everycomp:hc/born_in_chaos_v1/scorched_side_table",
+		"item:everycomp:hc/born_in_chaos_v1/scorched_desk",
+		"item:everycomp:hc/born_in_chaos_v1/scorched_nightstand",
+		"item:everycomp:hc/born_in_chaos_v1/scorched_table",
+		"item:everycomp:hc/born_in_chaos_v1/scorched_counter",
+		"item:everycomp:fd/born_in_chaos_v1/scorched_cabinet",
+		"item:everycomp:q/born_in_chaos_v1/scorched_chest",
+		"item:everycomp:hc/born_in_chaos_v1/scorched_fancy_bed",
+		"item:born_in_chaos_v1:scorched_planks_stairs",
+		"item:born_in_chaos_v1:scorched_planks_slab",
+		"item:born_in_chaos_v1:scorched_planks_slab",
+		"item:suppsquared:born_in_chaos_v1/item_shelf_scorched",
+		"item:born_in_chaos_v1:scorched_planks_fence",
+		"item:born_in_chaos_v1:scorched_planks_fence_gate",
+		"item:born_in_chaos_v1:scorched_planks_door",
+		"item:born_in_chaos_v1:scorched_planks_trapdoor",
+		"item:everycomp:q/born_in_chaos_v1/scorched_ladder",
+		"item:everycomp:hnhome/born_in_chaos_v1/scorched_lattice",
+		"item:born_in_chaos_v1:scorched_planks_button",
+		"item:supplementaries:born_in_chaos_v1/sign_post_scorched",
 		"item:upgrade_aquatic:river_log",
 		"item:upgrade_aquatic:river_wood",
 		"item:everycomp:q/upgrade_aquatic/river_post",
@@ -1342,65 +1437,6 @@
 		"item:netherexp:claret_sign",
 		"item:supplementaries:netherexp/sign_post_claret",
 		"item:netherexp:claret_hanging_sign",
-		"item:betterarcheology:rotten_log",
-		"item:betterarcheology:rotten_planks",
-		"item:everycomp:q/betterarcheology/rotten_bookshelf",
-		"item:everycomp:hc/betterarcheology/rotten_bench",
-		"item:everycomp:hc/betterarcheology/rotten_chair",
-		"item:everycomp:hc/betterarcheology/rotten_couch",
-		"item:everycomp:hc/betterarcheology/rotten_dining_bench",
-		"item:everycomp:hc/betterarcheology/rotten_side_table",
-		"item:everycomp:hc/betterarcheology/rotten_desk",
-		"item:everycomp:hc/betterarcheology/rotten_nightstand",
-		"item:everycomp:hc/betterarcheology/rotten_table",
-		"item:everycomp:hc/betterarcheology/rotten_counter",
-		"item:everycomp:fd/betterarcheology/rotten_cabinet",
-		"item:everycomp:q/betterarcheology/rotten_chest",
-		"item:everycomp:hc/betterarcheology/rotten_fancy_bed",
-		"item:betterarcheology:rotten_stairs",
-		"item:betterarcheology:rotten_slab",
-		"item:v_slab_compat:betterarcheology/rotten_vertical_slab",
-		"item:suppsquared:betterarcheology/item_shelf_rotten",
-		"item:betterarcheology:rotten_fence",
-		"item:betterarcheology:rotten_fence_gate",
-		"item:betterarcheology:rotten_door",
-		"item:betterarcheology:rotten_trapdoor",
-		"item:everycomp:q/betterarcheology/rotten_ladder",
-		"item:everycomp:hnhome/betterarcheology/rotten_lattice",
-		"item:betterarcheology:rotten_pressure_plate",
-		"item:supplementaries:betterarcheology/sign_post_rotten",
-		"item:born_in_chaos_v1:scorched_log",
-		"item:born_in_chaos_v1:scorched_wood",
-		"item:everycomp:q/born_in_chaos_v1/scorched_post",
-		"item:born_in_chaos_v1:stripped_scorched_log",
-		"item:born_in_chaos_v1:stripped_scorched_wood",
-		"item:everycomp:q/born_in_chaos_v1/stripped_scorched_post",
-		"item:born_in_chaos_v1:scorched_planks",
-		"item:everycomp:q/born_in_chaos_v1/scorched_bookshelf",
-		"item:everycomp:hc/born_in_chaos_v1/scorched_bench",
-		"item:everycomp:hc/born_in_chaos_v1/scorched_chair",
-		"item:everycomp:hc/born_in_chaos_v1/scorched_couch",
-		"item:everycomp:hc/born_in_chaos_v1/scorched_dining_bench",
-		"item:everycomp:hc/born_in_chaos_v1/scorched_side_table",
-		"item:everycomp:hc/born_in_chaos_v1/scorched_desk",
-		"item:everycomp:hc/born_in_chaos_v1/scorched_nightstand",
-		"item:everycomp:hc/born_in_chaos_v1/scorched_table",
-		"item:everycomp:hc/born_in_chaos_v1/scorched_counter",
-		"item:everycomp:fd/born_in_chaos_v1/scorched_cabinet",
-		"item:everycomp:q/born_in_chaos_v1/scorched_chest",
-		"item:everycomp:hc/born_in_chaos_v1/scorched_fancy_bed",
-		"item:born_in_chaos_v1:scorched_planks_stairs",
-		"item:born_in_chaos_v1:scorched_planks_slab",
-		"item:born_in_chaos_v1:scorched_planks_slab",
-		"item:suppsquared:born_in_chaos_v1/item_shelf_scorched",
-		"item:born_in_chaos_v1:scorched_planks_fence",
-		"item:born_in_chaos_v1:scorched_planks_fence_gate",
-		"item:born_in_chaos_v1:scorched_planks_door",
-		"item:born_in_chaos_v1:scorched_planks_trapdoor",
-		"item:everycomp:q/born_in_chaos_v1/scorched_ladder",
-		"item:everycomp:hnhome/born_in_chaos_v1/scorched_lattice",
-		"item:born_in_chaos_v1:scorched_planks_button",
-		"item:supplementaries:born_in_chaos_v1/sign_post_scorched",
 		"item:aether:skyroot_log",
 		"item:aether:skyroot_wood",
 		"item:everycomp:q/aether/skyroot_post",
@@ -1790,6 +1826,302 @@
 		"item:ecologics:flowering_azalea_hanging_sign",
 		"item:ecologics:flowering_azalea_boat",
 		"item:ecologics:flowering_azalea_chest_boat",
+		"item:twilightforest:mangrove_log",
+		"item:twilightforest:mangrove_wood",
+		"item:quark:mangrove_post",
+		"item:twilightforest:stripped_mangrove_log",
+		"item:twilightforest:stripped_mangrove_wood",
+		"item:quark:stripped_mangrove_post",
+		"item:twilightforest:mangrove_planks",
+		"item:quark:mangrove_bookshelf",
+		"item:handcrafted:mangrove_bench",
+		"item:handcrafted:mangrove_chair",
+		"item:handcrafted:mangrove_couch",
+		"item:handcrafted:mangrove_dining_bench",
+		"item:handcrafted:mangrove_side_table",
+		"item:handcrafted:mangrove_desk",
+		"item:handcrafted:mangrove_nightstand",
+		"item:handcrafted:mangrove_table",
+		"item:handcrafted:mangrove_counter",
+		"item:farmersdelight:mangrove_cabinet",
+		"item:twilightforest:mangrove_chest",
+		"item:quark:mangrove_chest",
+		"item:handcrafted:mangrove_fancy_bed",
+		"item:twilightforest:mangrove_stairs",
+		"item:twilightforest:mangrove_slab",
+		"item:quark:mangrove_vertical_slab",
+		"item:suppsquared:item_shelf_mangrove",
+		"item:twilightforest:mangrove_fence",
+		"item:twilightforest:mangrove_fence_gate",
+		"item:twilightforest:mangrove_door",
+		"item:twilightforest:mangrove_trapdoor",
+		"item:quark:mangrove_ladder",
+		"item:hearth_and_home:mangrove_lattice",
+		"item:twilightforest:mangrove_pressure_plate",
+		"item:twilightforest:mangrove_button",
+		"item:twilightforest:mangrove_sign",
+		"item:supplementaries:sign_post_mangrove",
+		"item:twilightforest:mangrove_hanging_sign",
+		"item:twilightforest:mangrove_boat",
+		"item:twilightforest:mangrove_chest_boat",
+		"item:twilightforest:mining_log",
+		"item:twilightforest:mining_wood",
+		"item:everycomp:q/twilightforest/mining_post",
+		"item:twilightforest:stripped_mining_log",
+		"item:twilightforest:stripped_mining_wood",
+		"item:everycomp:q/twilightforest/stripped_mining_post",
+		"item:twilightforest:mining_planks",
+		"item:everycomp:q/twilightforest/mining_bookshelf",
+		"item:everycomp:hc/twilightforest/mining_bench",
+		"item:everycomp:hc/twilightforest/mining_chair",
+		"item:everycomp:hc/twilightforest/mining_couch",
+		"item:everycomp:hc/twilightforest/mining_dining_bench",
+		"item:everycomp:hc/twilightforest/mining_side_table",
+		"item:everycomp:hc/twilightforest/mining_desk",
+		"item:everycomp:hc/twilightforest/mining_nightstand",
+		"item:everycomp:hc/twilightforest/mining_table",
+		"item:everycomp:hc/twilightforest/mining_counter",
+		"item:everycomp:fd/twilightforest/mining_cabinet",
+		"item:twilightforest:mining_chest",
+		"item:everycomp:hc/twilightforest/mining_fancy_bed",
+		"item:twilightforest:mining_stairs",
+		"item:twilightforest:mining_slab",
+		"item:v_slab_compat:twilightforest/mining_vertical_slab",
+		"item:suppsquared:twilightforest/item_shelf_mining",
+		"item:twilightforest:mining_fence",
+		"item:twilightforest:mining_fence_gate",
+		"item:twilightforest:mining_door",
+		"item:twilightforest:mining_trapdoor",
+		"item:everycomp:q/twilightforest/mining_ladder",
+		"item:everycomp:hnhome/twilightforest/mining_lattice",
+		"item:twilightforest:mining_pressure_plate",
+		"item:twilightforest:mining_button",
+		"item:twilightforest:mining_sign",
+		"item:supplementaries:twilightforest/sign_post_mining",
+		"item:twilightforest:mining_hanging_sign",
+		"item:twilightforest:mining_boat",
+		"item:twilightforest:mining_chest_boat",
+		"item:twilightforest:canopy_log",
+		"item:twilightforest:canopy_wood",
+		"item:everycomp:q/twilightforest/canopy_post",
+		"item:twilightforest:stripped_canopy_log",
+		"item:twilightforest:stripped_canopy_wood",
+		"item:everycomp:q/twilightforest/stripped_canopy_post",
+		"item:twilightforest:canopy_planks",
+		"item:everycomp:hc/twilightforest/canopy_bench",
+		"item:everycomp:hc/twilightforest/canopy_chair",
+		"item:everycomp:hc/twilightforest/canopy_couch",
+		"item:everycomp:hc/twilightforest/canopy_dining_bench",
+		"item:everycomp:hc/twilightforest/canopy_side_table",
+		"item:everycomp:hc/twilightforest/canopy_desk",
+		"item:everycomp:hc/twilightforest/canopy_nightstand",
+		"item:everycomp:hc/twilightforest/canopy_table",
+		"item:everycomp:hc/twilightforest/canopy_counter",
+		"item:everycomp:fd/twilightforest/canopy_cabinet",
+		"item:twilightforest:canopy_chest",
+		"item:everycomp:hc/twilightforest/canopy_fancy_bed",
+		"item:twilightforest:canopy_stairs",
+		"item:twilightforest:canopy_slab",
+		"item:v_slab_compat:twilightforest/canopy_vertical_slab",
+		"item:suppsquared:twilightforest/item_shelf_canopy",
+		"item:twilightforest:canopy_fence",
+		"item:twilightforest:canopy_fence_gate",
+		"item:twilightforest:canopy_door",
+		"item:twilightforest:canopy_trapdoor",
+		"item:everycomp:q/twilightforest/canopy_ladder",
+		"item:everycomp:hnhome/twilightforest/canopy_lattice",
+		"item:twilightforest:canopy_pressure_plate",
+		"item:twilightforest:canopy_button",
+		"item:twilightforest:canopy_sign",
+		"item:supplementaries:twilightforest/sign_post_canopy",
+		"item:twilightforest:canopy_hanging_sign",
+		"item:twilightforest:canopy_boat",
+		"item:twilightforest:canopy_chest_boat",
+		"item:twilightforest:twilight_oak_log",
+		"item:twilightforest:twilight_oak_wood",
+		"item:everycomp:q/twilightforest/twilight_oak_post",
+		"item:twilightforest:stripped_twilight_oak_log",
+		"item:twilightforest:stripped_twilight_oak_wood",
+		"item:everycomp:q/twilightforest/stripped_twilight_oak_post",
+		"item:twilightforest:twilight_oak_planks",
+		"item:everycomp:q/twilightforest/twilight_oak_bookshelf",
+		"item:everycomp:hc/twilightforest/twilight_oak_bench",
+		"item:everycomp:hc/twilightforest/twilight_oak_chair",
+		"item:everycomp:hc/twilightforest/twilight_oak_couch",
+		"item:everycomp:hc/twilightforest/twilight_oak_dining_bench",
+		"item:everycomp:hc/twilightforest/twilight_oak_side_table",
+		"item:everycomp:hc/twilightforest/twilight_oak_desk",
+		"item:everycomp:hc/twilightforest/twilight_oak_nightstand",
+		"item:everycomp:hc/twilightforest/twilight_oak_table",
+		"item:everycomp:hc/twilightforest/twilight_oak_counter",
+		"item:everycomp:fd/twilightforest/twilight_oak_cabinet",
+		"item:twilightforest:twilight_oak_chest",
+		"item:everycomp:hc/twilightforest/twilight_oak_fancy_bed",
+		"item:twilightforest:twilight_oak_stairs",
+		"item:twilightforest:twilight_oak_slab",
+		"item:v_slab_compat:twilightforest/twilight_oak_vertical_slab",
+		"item:suppsquared:twilightforest/item_shelf_twilight_oak",
+		"item:twilightforest:twilight_oak_fence",
+		"item:twilightforest:twilight_oak_fence_gate",
+		"item:twilightforest:twilight_oak_door",
+		"item:twilightforest:twilight_oak_trapdoor",
+		"item:everycomp:q/twilightforest/twilight_oak_ladder",
+		"item:everycomp:hnhome/twilightforest/twilight_oak_lattice",
+		"item:twilightforest:twilight_oak_pressure_plate",
+		"item:twilightforest:twilight_oak_button",
+		"item:twilightforest:twilight_oak_sign",
+		"item:supplementaries:twilightforest/sign_post_twilight_oak",
+		"item:twilightforest:twilight_oak_hanging_sign",
+		"item:twilightforest:twilight_oak_boat",
+		"item:twilightforest:twilight_oak_chest_boat",
+		"item:twilightforest:dark_log",
+		"item:twilightforest:dark_wood",
+		"item:everycomp:q/twilightforest/dark_post",
+		"item:twilightforest:stripped_dark_log",
+		"item:twilightforest:stripped_dark_wood",
+		"item:everycomp:q/twilightforest/stripped_dark_post",
+		"item:twilightforest:dark_planks",
+		"item:everycomp:q/twilightforest/dark_bookshelf",
+		"item:everycomp:hc/twilightforest/dark_bench",
+		"item:everycomp:hc/twilightforest/dark_chair",
+		"item:everycomp:hc/twilightforest/dark_couch",
+		"item:everycomp:hc/twilightforest/dark_dining_bench",
+		"item:everycomp:hc/twilightforest/dark_side_table",
+		"item:everycomp:hc/twilightforest/dark_desk",
+		"item:everycomp:hc/twilightforest/dark_nightstand",
+		"item:everycomp:hc/twilightforest/dark_table",
+		"item:everycomp:hc/twilightforest/dark_counter",
+		"item:everycomp:fd/twilightforest/dark_cabinet",
+		"item:twilightforest:dark_chest",
+		"item:everycomp:hc/twilightforest/dark_fancy_bed",
+		"item:twilightforest:dark_stairs",
+		"item:twilightforest:dark_slab",
+		"item:v_slab_compat:twilightforest/dark_vertical_slab",
+		"item:suppsquared:twilightforest/item_shelf_dark",
+		"item:twilightforest:dark_fence",
+		"item:twilightforest:dark_fence_gate",
+		"item:twilightforest:dark_door",
+		"item:twilightforest:dark_trapdoor",
+		"item:everycomp:q/twilightforest/dark_ladder",
+		"item:everycomp:hnhome/twilightforest/dark_lattice",
+		"item:twilightforest:dark_pressure_plate",
+		"item:twilightforest:dark_button",
+		"item:twilightforest:dark_sign",
+		"item:supplementaries:twilightforest/sign_post_dark",
+		"item:twilightforest:dark_hanging_sign",
+		"item:twilightforest:dark_boat",
+		"item:twilightforest:dark_chest_boat",
+		"item:twilightforest:transformation_log",
+		"item:twilightforest:transformation_wood",
+		"item:everycomp:q/twilightforest/transformation_post",
+		"item:twilightforest:stripped_transformation_log",
+		"item:twilightforest:stripped_transformation_wood",
+		"item:everycomp:q/twilightforest/stripped_transformation_post",
+		"item:twilightforest:transformation_planks",
+		"item:everycomp:q/twilightforest/transformation_bookshelf",
+		"item:everycomp:hc/twilightforest/transformation_bench",
+		"item:everycomp:hc/twilightforest/transformation_chair",
+		"item:everycomp:hc/twilightforest/transformation_couch",
+		"item:everycomp:hc/twilightforest/transformation_dining_bench",
+		"item:everycomp:hc/twilightforest/transformation_side_table",
+		"item:everycomp:hc/twilightforest/transformation_desk",
+		"item:everycomp:hc/twilightforest/transformation_nightstand",
+		"item:everycomp:hc/twilightforest/transformation_table",
+		"item:everycomp:hc/twilightforest/transformation_counter",
+		"item:everycomp:fd/twilightforest/transformation_cabinet",
+		"item:twilightforest:transformation_chest",
+		"item:everycomp:hc/twilightforest/transformation_fancy_bed",
+		"item:twilightforest:transformation_stairs",
+		"item:twilightforest:transformation_slab",
+		"item:v_slab_compat:twilightforest/transformation_vertical_slab",
+		"item:suppsquared:twilightforest/item_shelf_transformation",
+		"item:twilightforest:transformation_fence",
+		"item:twilightforest:transformation_fence_gate",
+		"item:twilightforest:transformation_door",
+		"item:twilightforest:transformation_trapdoor",
+		"item:everycomp:q/twilightforest/transformation_ladder",
+		"item:everycomp:hnhome/twilightforest/transformation_lattice",
+		"item:twilightforest:transformation_pressure_plate",
+		"item:twilightforest:transformation_button",
+		"item:twilightforest:transformation_sign",
+		"item:supplementaries:twilightforest/sign_post_transformation",
+		"item:twilightforest:transformation_hanging_sign",
+		"item:twilightforest:transformation_boat",
+		"item:twilightforest:transformation_chest_boat",
+		"item:twilightforest:time_log",
+		"item:twilightforest:time_wood",
+		"item:everycomp:q/twilightforest/time_post",
+		"item:twilightforest:stripped_time_log",
+		"item:twilightforest:stripped_time_wood",
+		"item:everycomp:q/twilightforest/stripped_time_post",
+		"item:twilightforest:time_planks",
+		"item:everycomp:q/twilightforest/time_bookshelf",
+		"item:everycomp:hc/twilightforest/time_bench",
+		"item:everycomp:hc/twilightforest/time_chair",
+		"item:everycomp:hc/twilightforest/time_couch",
+		"item:everycomp:hc/twilightforest/time_dining_bench",
+		"item:everycomp:hc/twilightforest/time_side_table",
+		"item:everycomp:hc/twilightforest/time_desk",
+		"item:everycomp:hc/twilightforest/time_nightstand",
+		"item:everycomp:hc/twilightforest/time_table",
+		"item:everycomp:hc/twilightforest/time_counter",
+		"item:everycomp:fd/twilightforest/time_cabinet",
+		"item:twilightforest:time_chest",
+		"item:everycomp:hc/twilightforest/time_fancy_bed",
+		"item:twilightforest:time_stairs",
+		"item:twilightforest:time_slab",
+		"item:v_slab_compat:twilightforest/time_vertical_slab",
+		"item:suppsquared:twilightforest/item_shelf_time",
+		"item:twilightforest:time_fence",
+		"item:twilightforest:time_fence_gate",
+		"item:twilightforest:time_door",
+		"item:twilightforest:time_trapdoor",
+		"item:everycomp:q/twilightforest/time_ladder",
+		"item:everycomp:hnhome/twilightforest/time_lattice",
+		"item:twilightforest:time_pressure_plate",
+		"item:twilightforest:time_button",
+		"item:twilightforest:time_sign",
+		"item:supplementaries:twilightforest/sign_post_time",
+		"item:twilightforest:time_hanging_sign",
+		"item:twilightforest:time_boat",
+		"item:twilightforest:time_chest_boat",
+		"item:twilightforest:sorting_log",
+		"item:twilightforest:sorting_wood",
+		"item:everycomp:q/twilightforest/sorting_post",
+		"item:twilightforest:stripped_sorting_log",
+		"item:twilightforest:stripped_sorting_wood",
+		"item:everycomp:q/twilightforest/stripped_sorting_post",
+		"item:twilightforest:sorting_planks",
+		"item:everycomp:q/twilightforest/sorting_bookshelf",
+		"item:everycomp:hc/twilightforest/sorting_bench",
+		"item:everycomp:hc/twilightforest/sorting_chair",
+		"item:everycomp:hc/twilightforest/sorting_couch",
+		"item:everycomp:hc/twilightforest/sorting_dining_bench",
+		"item:everycomp:hc/twilightforest/sorting_side_table",
+		"item:everycomp:hc/twilightforest/sorting_desk",
+		"item:everycomp:hc/twilightforest/sorting_nightstand",
+		"item:everycomp:hc/twilightforest/sorting_table",
+		"item:everycomp:hc/twilightforest/sorting_counter",
+		"item:everycomp:fd/twilightforest/sorting_cabinet",
+		"item:twilightforest:sorting_chest",
+		"item:everycomp:hc/twilightforest/sorting_fancy_bed",
+		"item:twilightforest:sorting_stairs",
+		"item:twilightforest:sorting_slab",
+		"item:v_slab_compat:twilightforest/sorting_vertical_slab",
+		"item:suppsquared:twilightforest/item_shelf_sorting",
+		"item:twilightforest:sorting_fence",
+		"item:twilightforest:sorting_fence_gate",
+		"item:twilightforest:sorting_door",
+		"item:twilightforest:sorting_trapdoor",
+		"item:everycomp:q/twilightforest/sorting_ladder",
+		"item:everycomp:hnhome/twilightforest/sorting_lattice",
+		"item:twilightforest:sorting_pressure_plate",
+		"item:twilightforest:sorting_button",
+		"item:twilightforest:sorting_sign",
+		"item:supplementaries:twilightforest/sign_post_sorting",
+		"item:twilightforest:sorting_hanging_sign",
+		"item:twilightforest:sorting_boat",
+		"item:twilightforest:sorting_chest_boat",
 		"item:v_slab_compat:witherstormmod/tainted_stone_vertical_slab",
 		"item:v_slab_compat:botania/red_pavement_vertical_slab",
 		"item:v_slab_compat:botania/metamorphic_plains_bricks_vertical_slab",
@@ -2651,8 +2983,44 @@
 			"after": "item:the_bumblezone:music_disc_radiance_renren"
 		},
 		{
-			"stack": "item:unusualend:music_disc_endstone_golem_theme",
+			"stack": "item:twilightforest:music_disc_findings",
 			"after": "item:the_bumblezone:music_disc_rivers_of_honey_moserao"
+		},
+		{
+			"stack": "item:twilightforest:music_disc_home",
+			"after": "item:twilightforest:music_disc_findings"
+		},
+		{
+			"stack": "item:twilightforest:music_disc_maker",
+			"after": "item:twilightforest:music_disc_home"
+		},
+		{
+			"stack": "item:twilightforest:music_disc_motion",
+			"after": "item:twilightforest:music_disc_maker"
+		},
+		{
+			"stack": "item:twilightforest:music_disc_radiance",
+			"after": "item:twilightforest:music_disc_motion"
+		},
+		{
+			"stack": "item:twilightforest:music_disc_steps",
+			"after": "item:twilightforest:music_disc_radiance"
+		},
+		{
+			"stack": "item:twilightforest:music_disc_superstitious",
+			"after": "item:twilightforest:music_disc_steps"
+		},
+		{
+			"stack": "item:twilightforest:music_disc_thread",
+			"after": "item:twilightforest:music_disc_superstitious"
+		},
+		{
+			"stack": "item:twilightforest:music_disc_wayfarer",
+			"after": "item:twilightforest:music_disc_thread"
+		},
+		{
+			"stack": "item:unusualend:music_disc_endstone_golem_theme",
+			"after": "item:twilightforest:music_disc_wayfarer"
 		},
 		{
 			"stack": "item:unusualend:music_disc_flying_ships",
@@ -2877,6 +3245,42 @@
 		{
 			"stack": "item:the_bumblezone:banner_pattern_swords",
 			"after": "item:the_bumblezone:banner_pattern_sun"
+		},
+		{
+			"stack": "item:twilightforest:alpha_yeti_banner_pattern",
+			"after": "item:the_bumblezone:banner_pattern_swords"
+		},
+		{
+			"stack": "item:twilightforest:hydra_banner_pattern",
+			"after": "item:twilightforest:alpha_yeti_banner_pattern"
+		},
+		{
+			"stack": "item:twilightforest:knight_phantom_banner_pattern",
+			"after": "item:twilightforest:hydra_banner_pattern"
+		},
+		{
+			"stack": "item:twilightforest:lich_banner_pattern",
+			"after": "item:twilightforest:knight_phantom_banner_pattern"
+		},
+		{
+			"stack": "item:twilightforest:minoshroom_banner_pattern",
+			"after": "item:twilightforest:lich_banner_pattern"
+		},
+		{
+			"stack": "item:twilightforest:naga_banner_pattern",
+			"after": "item:twilightforest:minoshroom_banner_pattern"
+		},
+		{
+			"stack": "item:twilightforest:quest_ram_banner_pattern",
+			"after": "item:twilightforest:naga_banner_pattern"
+		},
+		{
+			"stack": "item:twilightforest:snow_queen_banner_pattern",
+			"after": "item:twilightforest:quest_ram_banner_pattern"
+		},
+		{
+			"stack": "item:twilightforest:ur_ghast_banner_pattern",
+			"after": "item:twilightforest:snow_queen_banner_pattern"
 		},
 		{
 			"stack": "item:alexscaves:polarity_armor_trim_smithing_template",
@@ -3171,6 +3575,18 @@
 			"after": "item:supplementaries:candle_holder_the_bumblezone:super_yellow"
 		},
 		{
+			"stack": "item:the_bumblezone:super_candle_twilightforest:skeleton_skull",
+			"after": "item:twilightforest:skeleton_skull_candle"
+		},
+		{
+			"stack": "item:supplementaries:candle_holder_twilightforest:skeleton_skull",
+			"after": "item:the_bumblezone:super_candle_twilightforest:skeleton_skull"
+		},
+		{
+			"stack": "item:suppsquared:gold_candle_holder_twilightforest:skeleton_skull",
+			"after": "item:supplementaries:candle_holder_twilightforest:skeleton_skull"
+		},
+		{
 			"stack": "item:the_bumblezone:super_candle_netherexp:ancient_skeleton_skull",
 			"after": "item:netherexp:ancient_skeleton_skull_candle"
 		},
@@ -3181,6 +3597,18 @@
 		{
 			"stack": "item:suppsquared:gold_candle_holder_netherexp:ancient_skeleton_skull",
 			"after": "item:supplementaries:candle_holder_netherexp:ancient_skeleton_skull"
+		},
+		{
+			"stack": "item:the_bumblezone:super_candle_twilightforest:piglin_skull",
+			"after": "item:twilightforest:piglin_skull_candle"
+		},
+		{
+			"stack": "item:supplementaries:candle_holder_twilightforest:piglin_skull",
+			"after": "item:the_bumblezone:super_candle_twilightforest:piglin_skull"
+		},
+		{
+			"stack": "item:suppsquared:gold_candle_holder_twilightforest:piglin_skull",
+			"after": "item:supplementaries:candle_holder_twilightforest:piglin_skull"
 		},
 		{
 			"stack": "item:the_bumblezone:super_candle_light_blue",
@@ -3387,6 +3815,18 @@
 			"after": "item:supplementaries:candle_holder_black"
 		},
 		{
+			"stack": "item:the_bumblezone:super_candle_twilightforest:zombie_skull",
+			"after": "item:twilightforest:zombie_skull_candle"
+		},
+		{
+			"stack": "item:supplementaries:candle_holder_twilightforest:zombie_skull",
+			"after": "item:the_bumblezone:super_candle_twilightforest:zombie_skull"
+		},
+		{
+			"stack": "item:suppsquared:gold_candle_holder_twilightforest:zombie_skull",
+			"after": "item:supplementaries:candle_holder_twilightforest:zombie_skull"
+		},
+		{
 			"stack": "item:the_bumblezone:super_candle_spelunkers_charm:candle_on_helmet",
 			"after": "item:spelunkers_charm:candle_on_helmet"
 		},
@@ -3447,6 +3887,18 @@
 			"after": "item:supplementaries:candle_holder_yellow"
 		},
 		{
+			"stack": "item:the_bumblezone:super_candle_twilightforest:player_skull",
+			"after": "item:twilightforest:player_skull_candle"
+		},
+		{
+			"stack": "item:supplementaries:candle_holder_twilightforest:player_skull",
+			"after": "item:the_bumblezone:super_candle_twilightforest:player_skull"
+		},
+		{
+			"stack": "item:suppsquared:gold_candle_holder_twilightforest:player_skull",
+			"after": "item:supplementaries:candle_holder_twilightforest:player_skull"
+		},
+		{
 			"stack": "item:the_bumblezone:super_candle_netherexp:treacherous",
 			"after": "item:netherexp:treacherous_candle"
 		},
@@ -3457,6 +3909,30 @@
 		{
 			"stack": "item:suppsquared:gold_candle_holder_netherexp:treacherous",
 			"after": "item:supplementaries:candle_holder_netherexp:treacherous"
+		},
+		{
+			"stack": "item:the_bumblezone:super_candle_twilightforest:wither_skeleton_skull",
+			"after": "item:twilightforest:wither_skeleton_skull_candle"
+		},
+		{
+			"stack": "item:supplementaries:candle_holder_twilightforest:wither_skeleton_skull",
+			"after": "item:the_bumblezone:super_candle_twilightforest:wither_skeleton_skull"
+		},
+		{
+			"stack": "item:suppsquared:gold_candle_holder_twilightforest:wither_skeleton_skull",
+			"after": "item:supplementaries:candle_holder_twilightforest:wither_skeleton_skull"
+		},
+		{
+			"stack": "item:the_bumblezone:super_candle_twilightforest:creeper_skull",
+			"after": "item:twilightforest:creeper_skull_candle"
+		},
+		{
+			"stack": "item:supplementaries:candle_holder_twilightforest:creeper_skull",
+			"after": "item:the_bumblezone:super_candle_twilightforest:creeper_skull"
+		},
+		{
+			"stack": "item:suppsquared:gold_candle_holder_twilightforest:creeper_skull",
+			"after": "item:supplementaries:candle_holder_twilightforest:creeper_skull"
 		},
 		{
 			"stack": "item:the_bumblezone:super_candle",
@@ -6667,8 +7143,244 @@
 			"after": "item:upgrade_aquatic:driftwood_boat"
 		},
 		{
-			"stack": "item:upgrade_aquatic:river_log",
+			"stack": "item:betterarcheology:rotten_log",
 			"after": "item:upgrade_aquatic:driftwood_chest_boat"
+		},
+		{
+			"stack": "item:betterarcheology:rotten_planks",
+			"after": "item:betterarcheology:rotten_log"
+		},
+		{
+			"stack": "item:everycomp:q/betterarcheology/rotten_bookshelf",
+			"after": "item:betterarcheology:rotten_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/betterarcheology/rotten_bench",
+			"after": "item:everycomp:q/betterarcheology/rotten_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/betterarcheology/rotten_chair",
+			"after": "item:everycomp:hc/betterarcheology/rotten_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/betterarcheology/rotten_couch",
+			"after": "item:everycomp:hc/betterarcheology/rotten_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/betterarcheology/rotten_dining_bench",
+			"after": "item:everycomp:hc/betterarcheology/rotten_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/betterarcheology/rotten_side_table",
+			"after": "item:everycomp:hc/betterarcheology/rotten_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/betterarcheology/rotten_desk",
+			"after": "item:everycomp:hc/betterarcheology/rotten_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/betterarcheology/rotten_nightstand",
+			"after": "item:everycomp:hc/betterarcheology/rotten_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/betterarcheology/rotten_table",
+			"after": "item:everycomp:hc/betterarcheology/rotten_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/betterarcheology/rotten_counter",
+			"after": "item:everycomp:hc/betterarcheology/rotten_table"
+		},
+		{
+			"stack": "item:everycomp:fd/betterarcheology/rotten_cabinet",
+			"after": "item:everycomp:hc/betterarcheology/rotten_counter"
+		},
+		{
+			"stack": "item:everycomp:q/betterarcheology/rotten_chest",
+			"after": "item:everycomp:fd/betterarcheology/rotten_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/betterarcheology/rotten_fancy_bed",
+			"after": "item:everycomp:q/betterarcheology/rotten_chest"
+		},
+		{
+			"stack": "item:betterarcheology:rotten_stairs",
+			"after": "item:everycomp:hc/betterarcheology/rotten_fancy_bed"
+		},
+		{
+			"stack": "item:betterarcheology:rotten_slab",
+			"after": "item:betterarcheology:rotten_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:betterarcheology/rotten_vertical_slab",
+			"after": "item:betterarcheology:rotten_slab"
+		},
+		{
+			"stack": "item:suppsquared:betterarcheology/item_shelf_rotten",
+			"after": "item:v_slab_compat:betterarcheology/rotten_vertical_slab"
+		},
+		{
+			"stack": "item:betterarcheology:rotten_fence",
+			"after": "item:suppsquared:betterarcheology/item_shelf_rotten"
+		},
+		{
+			"stack": "item:betterarcheology:rotten_fence_gate",
+			"after": "item:betterarcheology:rotten_fence"
+		},
+		{
+			"stack": "item:betterarcheology:rotten_door",
+			"after": "item:betterarcheology:rotten_fence_gate"
+		},
+		{
+			"stack": "item:betterarcheology:rotten_trapdoor",
+			"after": "item:betterarcheology:rotten_door"
+		},
+		{
+			"stack": "item:everycomp:q/betterarcheology/rotten_ladder",
+			"after": "item:betterarcheology:rotten_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/betterarcheology/rotten_lattice",
+			"after": "item:everycomp:q/betterarcheology/rotten_ladder"
+		},
+		{
+			"stack": "item:betterarcheology:rotten_pressure_plate",
+			"after": "item:everycomp:hnhome/betterarcheology/rotten_lattice"
+		},
+		{
+			"stack": "item:supplementaries:betterarcheology/sign_post_rotten",
+			"after": "item:betterarcheology:rotten_pressure_plate"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_log",
+			"after": "item:supplementaries:betterarcheology/sign_post_rotten"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_wood",
+			"after": "item:born_in_chaos_v1:scorched_log"
+		},
+		{
+			"stack": "item:everycomp:q/born_in_chaos_v1/scorched_post",
+			"after": "item:born_in_chaos_v1:scorched_wood"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:stripped_scorched_log",
+			"after": "item:everycomp:q/born_in_chaos_v1/scorched_post"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:stripped_scorched_wood",
+			"after": "item:born_in_chaos_v1:stripped_scorched_log"
+		},
+		{
+			"stack": "item:everycomp:q/born_in_chaos_v1/stripped_scorched_post",
+			"after": "item:born_in_chaos_v1:stripped_scorched_wood"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_planks",
+			"after": "item:everycomp:q/born_in_chaos_v1/stripped_scorched_post"
+		},
+		{
+			"stack": "item:everycomp:q/born_in_chaos_v1/scorched_bookshelf",
+			"after": "item:born_in_chaos_v1:scorched_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_bench",
+			"after": "item:everycomp:q/born_in_chaos_v1/scorched_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_chair",
+			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_couch",
+			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_dining_bench",
+			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_side_table",
+			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_desk",
+			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_nightstand",
+			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_table",
+			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_counter",
+			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_table"
+		},
+		{
+			"stack": "item:everycomp:fd/born_in_chaos_v1/scorched_cabinet",
+			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_counter"
+		},
+		{
+			"stack": "item:everycomp:q/born_in_chaos_v1/scorched_chest",
+			"after": "item:everycomp:fd/born_in_chaos_v1/scorched_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_fancy_bed",
+			"after": "item:everycomp:q/born_in_chaos_v1/scorched_chest"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_planks_stairs",
+			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_fancy_bed"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_planks_slab",
+			"after": "item:born_in_chaos_v1:scorched_planks_stairs"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_planks_slab",
+			"after": "item:born_in_chaos_v1:scorched_planks_slab"
+		},
+		{
+			"stack": "item:suppsquared:born_in_chaos_v1/item_shelf_scorched",
+			"after": "item:born_in_chaos_v1:scorched_planks_slab"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_planks_fence",
+			"after": "item:suppsquared:born_in_chaos_v1/item_shelf_scorched"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_planks_fence_gate",
+			"after": "item:born_in_chaos_v1:scorched_planks_fence"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_planks_door",
+			"after": "item:born_in_chaos_v1:scorched_planks_fence_gate"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_planks_trapdoor",
+			"after": "item:born_in_chaos_v1:scorched_planks_door"
+		},
+		{
+			"stack": "item:everycomp:q/born_in_chaos_v1/scorched_ladder",
+			"after": "item:born_in_chaos_v1:scorched_planks_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/born_in_chaos_v1/scorched_lattice",
+			"after": "item:everycomp:q/born_in_chaos_v1/scorched_ladder"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_planks_button",
+			"after": "item:everycomp:hnhome/born_in_chaos_v1/scorched_lattice"
+		},
+		{
+			"stack": "item:supplementaries:born_in_chaos_v1/sign_post_scorched",
+			"after": "item:born_in_chaos_v1:scorched_planks_button"
+		},
+		{
+			"stack": "item:upgrade_aquatic:river_log",
+			"after": "item:supplementaries:born_in_chaos_v1/sign_post_scorched"
 		},
 		{
 			"stack": "item:upgrade_aquatic:river_wood",
@@ -7487,244 +8199,8 @@
 			"after": "item:supplementaries:netherexp/sign_post_claret"
 		},
 		{
-			"stack": "item:betterarcheology:rotten_log",
-			"after": "item:netherexp:claret_hanging_sign"
-		},
-		{
-			"stack": "item:betterarcheology:rotten_planks",
-			"after": "item:betterarcheology:rotten_log"
-		},
-		{
-			"stack": "item:everycomp:q/betterarcheology/rotten_bookshelf",
-			"after": "item:betterarcheology:rotten_planks"
-		},
-		{
-			"stack": "item:everycomp:hc/betterarcheology/rotten_bench",
-			"after": "item:everycomp:q/betterarcheology/rotten_bookshelf"
-		},
-		{
-			"stack": "item:everycomp:hc/betterarcheology/rotten_chair",
-			"after": "item:everycomp:hc/betterarcheology/rotten_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/betterarcheology/rotten_couch",
-			"after": "item:everycomp:hc/betterarcheology/rotten_chair"
-		},
-		{
-			"stack": "item:everycomp:hc/betterarcheology/rotten_dining_bench",
-			"after": "item:everycomp:hc/betterarcheology/rotten_couch"
-		},
-		{
-			"stack": "item:everycomp:hc/betterarcheology/rotten_side_table",
-			"after": "item:everycomp:hc/betterarcheology/rotten_dining_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/betterarcheology/rotten_desk",
-			"after": "item:everycomp:hc/betterarcheology/rotten_side_table"
-		},
-		{
-			"stack": "item:everycomp:hc/betterarcheology/rotten_nightstand",
-			"after": "item:everycomp:hc/betterarcheology/rotten_desk"
-		},
-		{
-			"stack": "item:everycomp:hc/betterarcheology/rotten_table",
-			"after": "item:everycomp:hc/betterarcheology/rotten_nightstand"
-		},
-		{
-			"stack": "item:everycomp:hc/betterarcheology/rotten_counter",
-			"after": "item:everycomp:hc/betterarcheology/rotten_table"
-		},
-		{
-			"stack": "item:everycomp:fd/betterarcheology/rotten_cabinet",
-			"after": "item:everycomp:hc/betterarcheology/rotten_counter"
-		},
-		{
-			"stack": "item:everycomp:q/betterarcheology/rotten_chest",
-			"after": "item:everycomp:fd/betterarcheology/rotten_cabinet"
-		},
-		{
-			"stack": "item:everycomp:hc/betterarcheology/rotten_fancy_bed",
-			"after": "item:everycomp:q/betterarcheology/rotten_chest"
-		},
-		{
-			"stack": "item:betterarcheology:rotten_stairs",
-			"after": "item:everycomp:hc/betterarcheology/rotten_fancy_bed"
-		},
-		{
-			"stack": "item:betterarcheology:rotten_slab",
-			"after": "item:betterarcheology:rotten_stairs"
-		},
-		{
-			"stack": "item:v_slab_compat:betterarcheology/rotten_vertical_slab",
-			"after": "item:betterarcheology:rotten_slab"
-		},
-		{
-			"stack": "item:suppsquared:betterarcheology/item_shelf_rotten",
-			"after": "item:v_slab_compat:betterarcheology/rotten_vertical_slab"
-		},
-		{
-			"stack": "item:betterarcheology:rotten_fence",
-			"after": "item:suppsquared:betterarcheology/item_shelf_rotten"
-		},
-		{
-			"stack": "item:betterarcheology:rotten_fence_gate",
-			"after": "item:betterarcheology:rotten_fence"
-		},
-		{
-			"stack": "item:betterarcheology:rotten_door",
-			"after": "item:betterarcheology:rotten_fence_gate"
-		},
-		{
-			"stack": "item:betterarcheology:rotten_trapdoor",
-			"after": "item:betterarcheology:rotten_door"
-		},
-		{
-			"stack": "item:everycomp:q/betterarcheology/rotten_ladder",
-			"after": "item:betterarcheology:rotten_trapdoor"
-		},
-		{
-			"stack": "item:everycomp:hnhome/betterarcheology/rotten_lattice",
-			"after": "item:everycomp:q/betterarcheology/rotten_ladder"
-		},
-		{
-			"stack": "item:betterarcheology:rotten_pressure_plate",
-			"after": "item:everycomp:hnhome/betterarcheology/rotten_lattice"
-		},
-		{
-			"stack": "item:supplementaries:betterarcheology/sign_post_rotten",
-			"after": "item:betterarcheology:rotten_pressure_plate"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:scorched_log",
-			"after": "item:supplementaries:betterarcheology/sign_post_rotten"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:scorched_wood",
-			"after": "item:born_in_chaos_v1:scorched_log"
-		},
-		{
-			"stack": "item:everycomp:q/born_in_chaos_v1/scorched_post",
-			"after": "item:born_in_chaos_v1:scorched_wood"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:stripped_scorched_log",
-			"after": "item:everycomp:q/born_in_chaos_v1/scorched_post"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:stripped_scorched_wood",
-			"after": "item:born_in_chaos_v1:stripped_scorched_log"
-		},
-		{
-			"stack": "item:everycomp:q/born_in_chaos_v1/stripped_scorched_post",
-			"after": "item:born_in_chaos_v1:stripped_scorched_wood"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:scorched_planks",
-			"after": "item:everycomp:q/born_in_chaos_v1/stripped_scorched_post"
-		},
-		{
-			"stack": "item:everycomp:q/born_in_chaos_v1/scorched_bookshelf",
-			"after": "item:born_in_chaos_v1:scorched_planks"
-		},
-		{
-			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_bench",
-			"after": "item:everycomp:q/born_in_chaos_v1/scorched_bookshelf"
-		},
-		{
-			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_chair",
-			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_couch",
-			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_chair"
-		},
-		{
-			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_dining_bench",
-			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_couch"
-		},
-		{
-			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_side_table",
-			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_dining_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_desk",
-			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_side_table"
-		},
-		{
-			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_nightstand",
-			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_desk"
-		},
-		{
-			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_table",
-			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_nightstand"
-		},
-		{
-			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_counter",
-			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_table"
-		},
-		{
-			"stack": "item:everycomp:fd/born_in_chaos_v1/scorched_cabinet",
-			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_counter"
-		},
-		{
-			"stack": "item:everycomp:q/born_in_chaos_v1/scorched_chest",
-			"after": "item:everycomp:fd/born_in_chaos_v1/scorched_cabinet"
-		},
-		{
-			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_fancy_bed",
-			"after": "item:everycomp:q/born_in_chaos_v1/scorched_chest"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:scorched_planks_stairs",
-			"after": "item:everycomp:hc/born_in_chaos_v1/scorched_fancy_bed"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:scorched_planks_slab",
-			"after": "item:born_in_chaos_v1:scorched_planks_stairs"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:scorched_planks_slab",
-			"after": "item:born_in_chaos_v1:scorched_planks_slab"
-		},
-		{
-			"stack": "item:suppsquared:born_in_chaos_v1/item_shelf_scorched",
-			"after": "item:born_in_chaos_v1:scorched_planks_slab"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:scorched_planks_fence",
-			"after": "item:suppsquared:born_in_chaos_v1/item_shelf_scorched"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:scorched_planks_fence_gate",
-			"after": "item:born_in_chaos_v1:scorched_planks_fence"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:scorched_planks_door",
-			"after": "item:born_in_chaos_v1:scorched_planks_fence_gate"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:scorched_planks_trapdoor",
-			"after": "item:born_in_chaos_v1:scorched_planks_door"
-		},
-		{
-			"stack": "item:everycomp:q/born_in_chaos_v1/scorched_ladder",
-			"after": "item:born_in_chaos_v1:scorched_planks_trapdoor"
-		},
-		{
-			"stack": "item:everycomp:hnhome/born_in_chaos_v1/scorched_lattice",
-			"after": "item:everycomp:q/born_in_chaos_v1/scorched_ladder"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:scorched_planks_button",
-			"after": "item:everycomp:hnhome/born_in_chaos_v1/scorched_lattice"
-		},
-		{
-			"stack": "item:supplementaries:born_in_chaos_v1/sign_post_scorched",
-			"after": "item:born_in_chaos_v1:scorched_planks_button"
-		},
-		{
 			"stack": "item:aether:skyroot_log",
-			"after": "item:supplementaries:born_in_chaos_v1/sign_post_scorched"
+			"after": "item:netherexp:claret_hanging_sign"
 		},
 		{
 			"stack": "item:aether:skyroot_wood",
@@ -9279,6 +9755,1190 @@
 			"after": "item:ecologics:flowering_azalea_boat"
 		},
 		{
+			"stack": "item:twilightforest:mangrove_log",
+			"after": "item:ecologics:flowering_azalea_chest_boat"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_wood",
+			"after": "item:twilightforest:mangrove_log"
+		},
+		{
+			"stack": "item:quark:mangrove_post",
+			"after": "item:twilightforest:mangrove_wood"
+		},
+		{
+			"stack": "item:twilightforest:stripped_mangrove_log",
+			"after": "item:quark:mangrove_post"
+		},
+		{
+			"stack": "item:twilightforest:stripped_mangrove_wood",
+			"after": "item:twilightforest:stripped_mangrove_log"
+		},
+		{
+			"stack": "item:quark:stripped_mangrove_post",
+			"after": "item:twilightforest:stripped_mangrove_wood"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_planks",
+			"after": "item:quark:stripped_mangrove_post"
+		},
+		{
+			"stack": "item:quark:mangrove_bookshelf",
+			"after": "item:twilightforest:mangrove_planks"
+		},
+		{
+			"stack": "item:handcrafted:mangrove_bench",
+			"after": "item:quark:mangrove_bookshelf"
+		},
+		{
+			"stack": "item:handcrafted:mangrove_chair",
+			"after": "item:handcrafted:mangrove_bench"
+		},
+		{
+			"stack": "item:handcrafted:mangrove_couch",
+			"after": "item:handcrafted:mangrove_chair"
+		},
+		{
+			"stack": "item:handcrafted:mangrove_dining_bench",
+			"after": "item:handcrafted:mangrove_couch"
+		},
+		{
+			"stack": "item:handcrafted:mangrove_side_table",
+			"after": "item:handcrafted:mangrove_dining_bench"
+		},
+		{
+			"stack": "item:handcrafted:mangrove_desk",
+			"after": "item:handcrafted:mangrove_side_table"
+		},
+		{
+			"stack": "item:handcrafted:mangrove_nightstand",
+			"after": "item:handcrafted:mangrove_desk"
+		},
+		{
+			"stack": "item:handcrafted:mangrove_table",
+			"after": "item:handcrafted:mangrove_nightstand"
+		},
+		{
+			"stack": "item:handcrafted:mangrove_counter",
+			"after": "item:handcrafted:mangrove_table"
+		},
+		{
+			"stack": "item:farmersdelight:mangrove_cabinet",
+			"after": "item:handcrafted:mangrove_counter"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_chest",
+			"after": "item:farmersdelight:mangrove_cabinet"
+		},
+		{
+			"stack": "item:quark:mangrove_chest",
+			"after": "item:twilightforest:mangrove_chest"
+		},
+		{
+			"stack": "item:handcrafted:mangrove_fancy_bed",
+			"after": "item:quark:mangrove_chest"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_stairs",
+			"after": "item:handcrafted:mangrove_fancy_bed"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_slab",
+			"after": "item:twilightforest:mangrove_stairs"
+		},
+		{
+			"stack": "item:quark:mangrove_vertical_slab",
+			"after": "item:twilightforest:mangrove_slab"
+		},
+		{
+			"stack": "item:suppsquared:item_shelf_mangrove",
+			"after": "item:quark:mangrove_vertical_slab"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_fence",
+			"after": "item:suppsquared:item_shelf_mangrove"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_fence_gate",
+			"after": "item:twilightforest:mangrove_fence"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_door",
+			"after": "item:twilightforest:mangrove_fence_gate"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_trapdoor",
+			"after": "item:twilightforest:mangrove_door"
+		},
+		{
+			"stack": "item:quark:mangrove_ladder",
+			"after": "item:twilightforest:mangrove_trapdoor"
+		},
+		{
+			"stack": "item:hearth_and_home:mangrove_lattice",
+			"after": "item:quark:mangrove_ladder"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_pressure_plate",
+			"after": "item:hearth_and_home:mangrove_lattice"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_button",
+			"after": "item:twilightforest:mangrove_pressure_plate"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_sign",
+			"after": "item:twilightforest:mangrove_button"
+		},
+		{
+			"stack": "item:supplementaries:sign_post_mangrove",
+			"after": "item:twilightforest:mangrove_sign"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_hanging_sign",
+			"after": "item:supplementaries:sign_post_mangrove"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_boat",
+			"after": "item:twilightforest:mangrove_hanging_sign"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_chest_boat",
+			"after": "item:twilightforest:mangrove_boat"
+		},
+		{
+			"stack": "item:twilightforest:mining_log",
+			"after": "item:twilightforest:mangrove_chest_boat"
+		},
+		{
+			"stack": "item:twilightforest:mining_wood",
+			"after": "item:twilightforest:mining_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/mining_post",
+			"after": "item:twilightforest:mining_wood"
+		},
+		{
+			"stack": "item:twilightforest:stripped_mining_log",
+			"after": "item:everycomp:q/twilightforest/mining_post"
+		},
+		{
+			"stack": "item:twilightforest:stripped_mining_wood",
+			"after": "item:twilightforest:stripped_mining_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/stripped_mining_post",
+			"after": "item:twilightforest:stripped_mining_wood"
+		},
+		{
+			"stack": "item:twilightforest:mining_planks",
+			"after": "item:everycomp:q/twilightforest/stripped_mining_post"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/mining_bookshelf",
+			"after": "item:twilightforest:mining_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/mining_bench",
+			"after": "item:everycomp:q/twilightforest/mining_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/mining_chair",
+			"after": "item:everycomp:hc/twilightforest/mining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/mining_couch",
+			"after": "item:everycomp:hc/twilightforest/mining_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/mining_dining_bench",
+			"after": "item:everycomp:hc/twilightforest/mining_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/mining_side_table",
+			"after": "item:everycomp:hc/twilightforest/mining_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/mining_desk",
+			"after": "item:everycomp:hc/twilightforest/mining_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/mining_nightstand",
+			"after": "item:everycomp:hc/twilightforest/mining_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/mining_table",
+			"after": "item:everycomp:hc/twilightforest/mining_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/mining_counter",
+			"after": "item:everycomp:hc/twilightforest/mining_table"
+		},
+		{
+			"stack": "item:everycomp:fd/twilightforest/mining_cabinet",
+			"after": "item:everycomp:hc/twilightforest/mining_counter"
+		},
+		{
+			"stack": "item:twilightforest:mining_chest",
+			"after": "item:everycomp:fd/twilightforest/mining_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/mining_fancy_bed",
+			"after": "item:twilightforest:mining_chest"
+		},
+		{
+			"stack": "item:twilightforest:mining_stairs",
+			"after": "item:everycomp:hc/twilightforest/mining_fancy_bed"
+		},
+		{
+			"stack": "item:twilightforest:mining_slab",
+			"after": "item:twilightforest:mining_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:twilightforest/mining_vertical_slab",
+			"after": "item:twilightforest:mining_slab"
+		},
+		{
+			"stack": "item:suppsquared:twilightforest/item_shelf_mining",
+			"after": "item:v_slab_compat:twilightforest/mining_vertical_slab"
+		},
+		{
+			"stack": "item:twilightforest:mining_fence",
+			"after": "item:suppsquared:twilightforest/item_shelf_mining"
+		},
+		{
+			"stack": "item:twilightforest:mining_fence_gate",
+			"after": "item:twilightforest:mining_fence"
+		},
+		{
+			"stack": "item:twilightforest:mining_door",
+			"after": "item:twilightforest:mining_fence_gate"
+		},
+		{
+			"stack": "item:twilightforest:mining_trapdoor",
+			"after": "item:twilightforest:mining_door"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/mining_ladder",
+			"after": "item:twilightforest:mining_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/twilightforest/mining_lattice",
+			"after": "item:everycomp:q/twilightforest/mining_ladder"
+		},
+		{
+			"stack": "item:twilightforest:mining_pressure_plate",
+			"after": "item:everycomp:hnhome/twilightforest/mining_lattice"
+		},
+		{
+			"stack": "item:twilightforest:mining_button",
+			"after": "item:twilightforest:mining_pressure_plate"
+		},
+		{
+			"stack": "item:twilightforest:mining_sign",
+			"after": "item:twilightforest:mining_button"
+		},
+		{
+			"stack": "item:supplementaries:twilightforest/sign_post_mining",
+			"after": "item:twilightforest:mining_sign"
+		},
+		{
+			"stack": "item:twilightforest:mining_hanging_sign",
+			"after": "item:supplementaries:twilightforest/sign_post_mining"
+		},
+		{
+			"stack": "item:twilightforest:mining_boat",
+			"after": "item:twilightforest:mining_hanging_sign"
+		},
+		{
+			"stack": "item:twilightforest:mining_chest_boat",
+			"after": "item:twilightforest:mining_boat"
+		},
+		{
+			"stack": "item:twilightforest:canopy_log",
+			"after": "item:twilightforest:mining_chest_boat"
+		},
+		{
+			"stack": "item:twilightforest:canopy_wood",
+			"after": "item:twilightforest:canopy_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/canopy_post",
+			"after": "item:twilightforest:canopy_wood"
+		},
+		{
+			"stack": "item:twilightforest:stripped_canopy_log",
+			"after": "item:everycomp:q/twilightforest/canopy_post"
+		},
+		{
+			"stack": "item:twilightforest:stripped_canopy_wood",
+			"after": "item:twilightforest:stripped_canopy_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/stripped_canopy_post",
+			"after": "item:twilightforest:stripped_canopy_wood"
+		},
+		{
+			"stack": "item:twilightforest:canopy_planks",
+			"after": "item:everycomp:q/twilightforest/stripped_canopy_post"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/canopy_bench",
+			"after": "item:twilightforest:canopy_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/canopy_chair",
+			"after": "item:everycomp:hc/twilightforest/canopy_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/canopy_couch",
+			"after": "item:everycomp:hc/twilightforest/canopy_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/canopy_dining_bench",
+			"after": "item:everycomp:hc/twilightforest/canopy_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/canopy_side_table",
+			"after": "item:everycomp:hc/twilightforest/canopy_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/canopy_desk",
+			"after": "item:everycomp:hc/twilightforest/canopy_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/canopy_nightstand",
+			"after": "item:everycomp:hc/twilightforest/canopy_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/canopy_table",
+			"after": "item:everycomp:hc/twilightforest/canopy_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/canopy_counter",
+			"after": "item:everycomp:hc/twilightforest/canopy_table"
+		},
+		{
+			"stack": "item:everycomp:fd/twilightforest/canopy_cabinet",
+			"after": "item:everycomp:hc/twilightforest/canopy_counter"
+		},
+		{
+			"stack": "item:twilightforest:canopy_chest",
+			"after": "item:everycomp:fd/twilightforest/canopy_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/canopy_fancy_bed",
+			"after": "item:twilightforest:canopy_chest"
+		},
+		{
+			"stack": "item:twilightforest:canopy_stairs",
+			"after": "item:everycomp:hc/twilightforest/canopy_fancy_bed"
+		},
+		{
+			"stack": "item:twilightforest:canopy_slab",
+			"after": "item:twilightforest:canopy_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:twilightforest/canopy_vertical_slab",
+			"after": "item:twilightforest:canopy_slab"
+		},
+		{
+			"stack": "item:suppsquared:twilightforest/item_shelf_canopy",
+			"after": "item:v_slab_compat:twilightforest/canopy_vertical_slab"
+		},
+		{
+			"stack": "item:twilightforest:canopy_fence",
+			"after": "item:suppsquared:twilightforest/item_shelf_canopy"
+		},
+		{
+			"stack": "item:twilightforest:canopy_fence_gate",
+			"after": "item:twilightforest:canopy_fence"
+		},
+		{
+			"stack": "item:twilightforest:canopy_door",
+			"after": "item:twilightforest:canopy_fence_gate"
+		},
+		{
+			"stack": "item:twilightforest:canopy_trapdoor",
+			"after": "item:twilightforest:canopy_door"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/canopy_ladder",
+			"after": "item:twilightforest:canopy_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/twilightforest/canopy_lattice",
+			"after": "item:everycomp:q/twilightforest/canopy_ladder"
+		},
+		{
+			"stack": "item:twilightforest:canopy_pressure_plate",
+			"after": "item:everycomp:hnhome/twilightforest/canopy_lattice"
+		},
+		{
+			"stack": "item:twilightforest:canopy_button",
+			"after": "item:twilightforest:canopy_pressure_plate"
+		},
+		{
+			"stack": "item:twilightforest:canopy_sign",
+			"after": "item:twilightforest:canopy_button"
+		},
+		{
+			"stack": "item:supplementaries:twilightforest/sign_post_canopy",
+			"after": "item:twilightforest:canopy_sign"
+		},
+		{
+			"stack": "item:twilightforest:canopy_hanging_sign",
+			"after": "item:supplementaries:twilightforest/sign_post_canopy"
+		},
+		{
+			"stack": "item:twilightforest:canopy_boat",
+			"after": "item:twilightforest:canopy_hanging_sign"
+		},
+		{
+			"stack": "item:twilightforest:canopy_chest_boat",
+			"after": "item:twilightforest:canopy_boat"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_log",
+			"after": "item:twilightforest:canopy_chest_boat"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_wood",
+			"after": "item:twilightforest:twilight_oak_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/twilight_oak_post",
+			"after": "item:twilightforest:twilight_oak_wood"
+		},
+		{
+			"stack": "item:twilightforest:stripped_twilight_oak_log",
+			"after": "item:everycomp:q/twilightforest/twilight_oak_post"
+		},
+		{
+			"stack": "item:twilightforest:stripped_twilight_oak_wood",
+			"after": "item:twilightforest:stripped_twilight_oak_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/stripped_twilight_oak_post",
+			"after": "item:twilightforest:stripped_twilight_oak_wood"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_planks",
+			"after": "item:everycomp:q/twilightforest/stripped_twilight_oak_post"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/twilight_oak_bookshelf",
+			"after": "item:twilightforest:twilight_oak_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/twilight_oak_bench",
+			"after": "item:everycomp:q/twilightforest/twilight_oak_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/twilight_oak_chair",
+			"after": "item:everycomp:hc/twilightforest/twilight_oak_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/twilight_oak_couch",
+			"after": "item:everycomp:hc/twilightforest/twilight_oak_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/twilight_oak_dining_bench",
+			"after": "item:everycomp:hc/twilightforest/twilight_oak_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/twilight_oak_side_table",
+			"after": "item:everycomp:hc/twilightforest/twilight_oak_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/twilight_oak_desk",
+			"after": "item:everycomp:hc/twilightforest/twilight_oak_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/twilight_oak_nightstand",
+			"after": "item:everycomp:hc/twilightforest/twilight_oak_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/twilight_oak_table",
+			"after": "item:everycomp:hc/twilightforest/twilight_oak_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/twilight_oak_counter",
+			"after": "item:everycomp:hc/twilightforest/twilight_oak_table"
+		},
+		{
+			"stack": "item:everycomp:fd/twilightforest/twilight_oak_cabinet",
+			"after": "item:everycomp:hc/twilightforest/twilight_oak_counter"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_chest",
+			"after": "item:everycomp:fd/twilightforest/twilight_oak_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/twilight_oak_fancy_bed",
+			"after": "item:twilightforest:twilight_oak_chest"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_stairs",
+			"after": "item:everycomp:hc/twilightforest/twilight_oak_fancy_bed"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_slab",
+			"after": "item:twilightforest:twilight_oak_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:twilightforest/twilight_oak_vertical_slab",
+			"after": "item:twilightforest:twilight_oak_slab"
+		},
+		{
+			"stack": "item:suppsquared:twilightforest/item_shelf_twilight_oak",
+			"after": "item:v_slab_compat:twilightforest/twilight_oak_vertical_slab"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_fence",
+			"after": "item:suppsquared:twilightforest/item_shelf_twilight_oak"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_fence_gate",
+			"after": "item:twilightforest:twilight_oak_fence"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_door",
+			"after": "item:twilightforest:twilight_oak_fence_gate"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_trapdoor",
+			"after": "item:twilightforest:twilight_oak_door"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/twilight_oak_ladder",
+			"after": "item:twilightforest:twilight_oak_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/twilightforest/twilight_oak_lattice",
+			"after": "item:everycomp:q/twilightforest/twilight_oak_ladder"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_pressure_plate",
+			"after": "item:everycomp:hnhome/twilightforest/twilight_oak_lattice"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_button",
+			"after": "item:twilightforest:twilight_oak_pressure_plate"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_sign",
+			"after": "item:twilightforest:twilight_oak_button"
+		},
+		{
+			"stack": "item:supplementaries:twilightforest/sign_post_twilight_oak",
+			"after": "item:twilightforest:twilight_oak_sign"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_hanging_sign",
+			"after": "item:supplementaries:twilightforest/sign_post_twilight_oak"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_boat",
+			"after": "item:twilightforest:twilight_oak_hanging_sign"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_chest_boat",
+			"after": "item:twilightforest:twilight_oak_boat"
+		},
+		{
+			"stack": "item:twilightforest:dark_log",
+			"after": "item:twilightforest:twilight_oak_chest_boat"
+		},
+		{
+			"stack": "item:twilightforest:dark_wood",
+			"after": "item:twilightforest:dark_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/dark_post",
+			"after": "item:twilightforest:dark_wood"
+		},
+		{
+			"stack": "item:twilightforest:stripped_dark_log",
+			"after": "item:everycomp:q/twilightforest/dark_post"
+		},
+		{
+			"stack": "item:twilightforest:stripped_dark_wood",
+			"after": "item:twilightforest:stripped_dark_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/stripped_dark_post",
+			"after": "item:twilightforest:stripped_dark_wood"
+		},
+		{
+			"stack": "item:twilightforest:dark_planks",
+			"after": "item:everycomp:q/twilightforest/stripped_dark_post"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/dark_bookshelf",
+			"after": "item:twilightforest:dark_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/dark_bench",
+			"after": "item:everycomp:q/twilightforest/dark_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/dark_chair",
+			"after": "item:everycomp:hc/twilightforest/dark_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/dark_couch",
+			"after": "item:everycomp:hc/twilightforest/dark_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/dark_dining_bench",
+			"after": "item:everycomp:hc/twilightforest/dark_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/dark_side_table",
+			"after": "item:everycomp:hc/twilightforest/dark_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/dark_desk",
+			"after": "item:everycomp:hc/twilightforest/dark_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/dark_nightstand",
+			"after": "item:everycomp:hc/twilightforest/dark_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/dark_table",
+			"after": "item:everycomp:hc/twilightforest/dark_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/dark_counter",
+			"after": "item:everycomp:hc/twilightforest/dark_table"
+		},
+		{
+			"stack": "item:everycomp:fd/twilightforest/dark_cabinet",
+			"after": "item:everycomp:hc/twilightforest/dark_counter"
+		},
+		{
+			"stack": "item:twilightforest:dark_chest",
+			"after": "item:everycomp:fd/twilightforest/dark_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/dark_fancy_bed",
+			"after": "item:twilightforest:dark_chest"
+		},
+		{
+			"stack": "item:twilightforest:dark_stairs",
+			"after": "item:everycomp:hc/twilightforest/dark_fancy_bed"
+		},
+		{
+			"stack": "item:twilightforest:dark_slab",
+			"after": "item:twilightforest:dark_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:twilightforest/dark_vertical_slab",
+			"after": "item:twilightforest:dark_slab"
+		},
+		{
+			"stack": "item:suppsquared:twilightforest/item_shelf_dark",
+			"after": "item:v_slab_compat:twilightforest/dark_vertical_slab"
+		},
+		{
+			"stack": "item:twilightforest:dark_fence",
+			"after": "item:suppsquared:twilightforest/item_shelf_dark"
+		},
+		{
+			"stack": "item:twilightforest:dark_fence_gate",
+			"after": "item:twilightforest:dark_fence"
+		},
+		{
+			"stack": "item:twilightforest:dark_door",
+			"after": "item:twilightforest:dark_fence_gate"
+		},
+		{
+			"stack": "item:twilightforest:dark_trapdoor",
+			"after": "item:twilightforest:dark_door"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/dark_ladder",
+			"after": "item:twilightforest:dark_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/twilightforest/dark_lattice",
+			"after": "item:everycomp:q/twilightforest/dark_ladder"
+		},
+		{
+			"stack": "item:twilightforest:dark_pressure_plate",
+			"after": "item:everycomp:hnhome/twilightforest/dark_lattice"
+		},
+		{
+			"stack": "item:twilightforest:dark_button",
+			"after": "item:twilightforest:dark_pressure_plate"
+		},
+		{
+			"stack": "item:twilightforest:dark_sign",
+			"after": "item:twilightforest:dark_button"
+		},
+		{
+			"stack": "item:supplementaries:twilightforest/sign_post_dark",
+			"after": "item:twilightforest:dark_sign"
+		},
+		{
+			"stack": "item:twilightforest:dark_hanging_sign",
+			"after": "item:supplementaries:twilightforest/sign_post_dark"
+		},
+		{
+			"stack": "item:twilightforest:dark_boat",
+			"after": "item:twilightforest:dark_hanging_sign"
+		},
+		{
+			"stack": "item:twilightforest:dark_chest_boat",
+			"after": "item:twilightforest:dark_boat"
+		},
+		{
+			"stack": "item:twilightforest:transformation_log",
+			"after": "item:twilightforest:dark_chest_boat"
+		},
+		{
+			"stack": "item:twilightforest:transformation_wood",
+			"after": "item:twilightforest:transformation_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/transformation_post",
+			"after": "item:twilightforest:transformation_wood"
+		},
+		{
+			"stack": "item:twilightforest:stripped_transformation_log",
+			"after": "item:everycomp:q/twilightforest/transformation_post"
+		},
+		{
+			"stack": "item:twilightforest:stripped_transformation_wood",
+			"after": "item:twilightforest:stripped_transformation_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/stripped_transformation_post",
+			"after": "item:twilightforest:stripped_transformation_wood"
+		},
+		{
+			"stack": "item:twilightforest:transformation_planks",
+			"after": "item:everycomp:q/twilightforest/stripped_transformation_post"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/transformation_bookshelf",
+			"after": "item:twilightforest:transformation_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/transformation_bench",
+			"after": "item:everycomp:q/twilightforest/transformation_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/transformation_chair",
+			"after": "item:everycomp:hc/twilightforest/transformation_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/transformation_couch",
+			"after": "item:everycomp:hc/twilightforest/transformation_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/transformation_dining_bench",
+			"after": "item:everycomp:hc/twilightforest/transformation_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/transformation_side_table",
+			"after": "item:everycomp:hc/twilightforest/transformation_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/transformation_desk",
+			"after": "item:everycomp:hc/twilightforest/transformation_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/transformation_nightstand",
+			"after": "item:everycomp:hc/twilightforest/transformation_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/transformation_table",
+			"after": "item:everycomp:hc/twilightforest/transformation_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/transformation_counter",
+			"after": "item:everycomp:hc/twilightforest/transformation_table"
+		},
+		{
+			"stack": "item:everycomp:fd/twilightforest/transformation_cabinet",
+			"after": "item:everycomp:hc/twilightforest/transformation_counter"
+		},
+		{
+			"stack": "item:twilightforest:transformation_chest",
+			"after": "item:everycomp:fd/twilightforest/transformation_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/transformation_fancy_bed",
+			"after": "item:twilightforest:transformation_chest"
+		},
+		{
+			"stack": "item:twilightforest:transformation_stairs",
+			"after": "item:everycomp:hc/twilightforest/transformation_fancy_bed"
+		},
+		{
+			"stack": "item:twilightforest:transformation_slab",
+			"after": "item:twilightforest:transformation_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:twilightforest/transformation_vertical_slab",
+			"after": "item:twilightforest:transformation_slab"
+		},
+		{
+			"stack": "item:suppsquared:twilightforest/item_shelf_transformation",
+			"after": "item:v_slab_compat:twilightforest/transformation_vertical_slab"
+		},
+		{
+			"stack": "item:twilightforest:transformation_fence",
+			"after": "item:suppsquared:twilightforest/item_shelf_transformation"
+		},
+		{
+			"stack": "item:twilightforest:transformation_fence_gate",
+			"after": "item:twilightforest:transformation_fence"
+		},
+		{
+			"stack": "item:twilightforest:transformation_door",
+			"after": "item:twilightforest:transformation_fence_gate"
+		},
+		{
+			"stack": "item:twilightforest:transformation_trapdoor",
+			"after": "item:twilightforest:transformation_door"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/transformation_ladder",
+			"after": "item:twilightforest:transformation_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/twilightforest/transformation_lattice",
+			"after": "item:everycomp:q/twilightforest/transformation_ladder"
+		},
+		{
+			"stack": "item:twilightforest:transformation_pressure_plate",
+			"after": "item:everycomp:hnhome/twilightforest/transformation_lattice"
+		},
+		{
+			"stack": "item:twilightforest:transformation_button",
+			"after": "item:twilightforest:transformation_pressure_plate"
+		},
+		{
+			"stack": "item:twilightforest:transformation_sign",
+			"after": "item:twilightforest:transformation_button"
+		},
+		{
+			"stack": "item:supplementaries:twilightforest/sign_post_transformation",
+			"after": "item:twilightforest:transformation_sign"
+		},
+		{
+			"stack": "item:twilightforest:transformation_hanging_sign",
+			"after": "item:supplementaries:twilightforest/sign_post_transformation"
+		},
+		{
+			"stack": "item:twilightforest:transformation_boat",
+			"after": "item:twilightforest:transformation_hanging_sign"
+		},
+		{
+			"stack": "item:twilightforest:transformation_chest_boat",
+			"after": "item:twilightforest:transformation_boat"
+		},
+		{
+			"stack": "item:twilightforest:time_log",
+			"after": "item:twilightforest:transformation_chest_boat"
+		},
+		{
+			"stack": "item:twilightforest:time_wood",
+			"after": "item:twilightforest:time_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/time_post",
+			"after": "item:twilightforest:time_wood"
+		},
+		{
+			"stack": "item:twilightforest:stripped_time_log",
+			"after": "item:everycomp:q/twilightforest/time_post"
+		},
+		{
+			"stack": "item:twilightforest:stripped_time_wood",
+			"after": "item:twilightforest:stripped_time_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/stripped_time_post",
+			"after": "item:twilightforest:stripped_time_wood"
+		},
+		{
+			"stack": "item:twilightforest:time_planks",
+			"after": "item:everycomp:q/twilightforest/stripped_time_post"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/time_bookshelf",
+			"after": "item:twilightforest:time_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/time_bench",
+			"after": "item:everycomp:q/twilightforest/time_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/time_chair",
+			"after": "item:everycomp:hc/twilightforest/time_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/time_couch",
+			"after": "item:everycomp:hc/twilightforest/time_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/time_dining_bench",
+			"after": "item:everycomp:hc/twilightforest/time_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/time_side_table",
+			"after": "item:everycomp:hc/twilightforest/time_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/time_desk",
+			"after": "item:everycomp:hc/twilightforest/time_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/time_nightstand",
+			"after": "item:everycomp:hc/twilightforest/time_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/time_table",
+			"after": "item:everycomp:hc/twilightforest/time_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/time_counter",
+			"after": "item:everycomp:hc/twilightforest/time_table"
+		},
+		{
+			"stack": "item:everycomp:fd/twilightforest/time_cabinet",
+			"after": "item:everycomp:hc/twilightforest/time_counter"
+		},
+		{
+			"stack": "item:twilightforest:time_chest",
+			"after": "item:everycomp:fd/twilightforest/time_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/time_fancy_bed",
+			"after": "item:twilightforest:time_chest"
+		},
+		{
+			"stack": "item:twilightforest:time_stairs",
+			"after": "item:everycomp:hc/twilightforest/time_fancy_bed"
+		},
+		{
+			"stack": "item:twilightforest:time_slab",
+			"after": "item:twilightforest:time_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:twilightforest/time_vertical_slab",
+			"after": "item:twilightforest:time_slab"
+		},
+		{
+			"stack": "item:suppsquared:twilightforest/item_shelf_time",
+			"after": "item:v_slab_compat:twilightforest/time_vertical_slab"
+		},
+		{
+			"stack": "item:twilightforest:time_fence",
+			"after": "item:suppsquared:twilightforest/item_shelf_time"
+		},
+		{
+			"stack": "item:twilightforest:time_fence_gate",
+			"after": "item:twilightforest:time_fence"
+		},
+		{
+			"stack": "item:twilightforest:time_door",
+			"after": "item:twilightforest:time_fence_gate"
+		},
+		{
+			"stack": "item:twilightforest:time_trapdoor",
+			"after": "item:twilightforest:time_door"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/time_ladder",
+			"after": "item:twilightforest:time_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/twilightforest/time_lattice",
+			"after": "item:everycomp:q/twilightforest/time_ladder"
+		},
+		{
+			"stack": "item:twilightforest:time_pressure_plate",
+			"after": "item:everycomp:hnhome/twilightforest/time_lattice"
+		},
+		{
+			"stack": "item:twilightforest:time_button",
+			"after": "item:twilightforest:time_pressure_plate"
+		},
+		{
+			"stack": "item:twilightforest:time_sign",
+			"after": "item:twilightforest:time_button"
+		},
+		{
+			"stack": "item:supplementaries:twilightforest/sign_post_time",
+			"after": "item:twilightforest:time_sign"
+		},
+		{
+			"stack": "item:twilightforest:time_hanging_sign",
+			"after": "item:supplementaries:twilightforest/sign_post_time"
+		},
+		{
+			"stack": "item:twilightforest:time_boat",
+			"after": "item:twilightforest:time_hanging_sign"
+		},
+		{
+			"stack": "item:twilightforest:time_chest_boat",
+			"after": "item:twilightforest:time_boat"
+		},
+		{
+			"stack": "item:twilightforest:sorting_log",
+			"after": "item:twilightforest:time_chest_boat"
+		},
+		{
+			"stack": "item:twilightforest:sorting_wood",
+			"after": "item:twilightforest:sorting_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/sorting_post",
+			"after": "item:twilightforest:sorting_wood"
+		},
+		{
+			"stack": "item:twilightforest:stripped_sorting_log",
+			"after": "item:everycomp:q/twilightforest/sorting_post"
+		},
+		{
+			"stack": "item:twilightforest:stripped_sorting_wood",
+			"after": "item:twilightforest:stripped_sorting_log"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/stripped_sorting_post",
+			"after": "item:twilightforest:stripped_sorting_wood"
+		},
+		{
+			"stack": "item:twilightforest:sorting_planks",
+			"after": "item:everycomp:q/twilightforest/stripped_sorting_post"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/sorting_bookshelf",
+			"after": "item:twilightforest:sorting_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/sorting_bench",
+			"after": "item:everycomp:q/twilightforest/sorting_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/sorting_chair",
+			"after": "item:everycomp:hc/twilightforest/sorting_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/sorting_couch",
+			"after": "item:everycomp:hc/twilightforest/sorting_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/sorting_dining_bench",
+			"after": "item:everycomp:hc/twilightforest/sorting_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/sorting_side_table",
+			"after": "item:everycomp:hc/twilightforest/sorting_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/sorting_desk",
+			"after": "item:everycomp:hc/twilightforest/sorting_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/sorting_nightstand",
+			"after": "item:everycomp:hc/twilightforest/sorting_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/sorting_table",
+			"after": "item:everycomp:hc/twilightforest/sorting_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/sorting_counter",
+			"after": "item:everycomp:hc/twilightforest/sorting_table"
+		},
+		{
+			"stack": "item:everycomp:fd/twilightforest/sorting_cabinet",
+			"after": "item:everycomp:hc/twilightforest/sorting_counter"
+		},
+		{
+			"stack": "item:twilightforest:sorting_chest",
+			"after": "item:everycomp:fd/twilightforest/sorting_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/sorting_fancy_bed",
+			"after": "item:twilightforest:sorting_chest"
+		},
+		{
+			"stack": "item:twilightforest:sorting_stairs",
+			"after": "item:everycomp:hc/twilightforest/sorting_fancy_bed"
+		},
+		{
+			"stack": "item:twilightforest:sorting_slab",
+			"after": "item:twilightforest:sorting_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:twilightforest/sorting_vertical_slab",
+			"after": "item:twilightforest:sorting_slab"
+		},
+		{
+			"stack": "item:suppsquared:twilightforest/item_shelf_sorting",
+			"after": "item:v_slab_compat:twilightforest/sorting_vertical_slab"
+		},
+		{
+			"stack": "item:twilightforest:sorting_fence",
+			"after": "item:suppsquared:twilightforest/item_shelf_sorting"
+		},
+		{
+			"stack": "item:twilightforest:sorting_fence_gate",
+			"after": "item:twilightforest:sorting_fence"
+		},
+		{
+			"stack": "item:twilightforest:sorting_door",
+			"after": "item:twilightforest:sorting_fence_gate"
+		},
+		{
+			"stack": "item:twilightforest:sorting_trapdoor",
+			"after": "item:twilightforest:sorting_door"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/sorting_ladder",
+			"after": "item:twilightforest:sorting_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/twilightforest/sorting_lattice",
+			"after": "item:everycomp:q/twilightforest/sorting_ladder"
+		},
+		{
+			"stack": "item:twilightforest:sorting_pressure_plate",
+			"after": "item:everycomp:hnhome/twilightforest/sorting_lattice"
+		},
+		{
+			"stack": "item:twilightforest:sorting_button",
+			"after": "item:twilightforest:sorting_pressure_plate"
+		},
+		{
+			"stack": "item:twilightforest:sorting_sign",
+			"after": "item:twilightforest:sorting_button"
+		},
+		{
+			"stack": "item:supplementaries:twilightforest/sign_post_sorting",
+			"after": "item:twilightforest:sorting_sign"
+		},
+		{
+			"stack": "item:twilightforest:sorting_hanging_sign",
+			"after": "item:supplementaries:twilightforest/sign_post_sorting"
+		},
+		{
+			"stack": "item:twilightforest:sorting_boat",
+			"after": "item:twilightforest:sorting_hanging_sign"
+		},
+		{
+			"stack": "item:twilightforest:sorting_chest_boat",
+			"after": "item:twilightforest:sorting_boat"
+		},
+		{
 			"stack": "item:v_slab_compat:witherstormmod/tainted_stone_vertical_slab",
 			"after": "item:witherstormmod:tainted_stone_slab"
 		},
@@ -10814,6 +12474,15 @@
 		"/the_bumblezone:music_disc_life_renren/",
 		"/the_bumblezone:music_disc_radiance_renren/",
 		"/the_bumblezone:music_disc_rivers_of_honey_moserao/",
+		"/twilightforest:music_disc_findings/",
+		"/twilightforest:music_disc_home/",
+		"/twilightforest:music_disc_maker/",
+		"/twilightforest:music_disc_motion/",
+		"/twilightforest:music_disc_radiance/",
+		"/twilightforest:music_disc_steps/",
+		"/twilightforest:music_disc_superstitious/",
+		"/twilightforest:music_disc_thread/",
+		"/twilightforest:music_disc_wayfarer/",
 		"/unusualend:music_disc_endstone_golem_theme/",
 		"/unusualend:music_disc_flying_ships/",
 		"/unusualend:music_disc_queen/",
@@ -10871,6 +12540,15 @@
 		"/the_bumblezone:banner_pattern_pluses/",
 		"/the_bumblezone:banner_pattern_sun/",
 		"/the_bumblezone:banner_pattern_swords/",
+		"/twilightforest:alpha_yeti_banner_pattern/",
+		"/twilightforest:hydra_banner_pattern/",
+		"/twilightforest:knight_phantom_banner_pattern/",
+		"/twilightforest:lich_banner_pattern/",
+		"/twilightforest:minoshroom_banner_pattern/",
+		"/twilightforest:naga_banner_pattern/",
+		"/twilightforest:quest_ram_banner_pattern/",
+		"/twilightforest:snow_queen_banner_pattern/",
+		"/twilightforest:ur_ghast_banner_pattern/",
 		"/alexscaves:polarity_armor_trim_smithing_template/",
 		"/cataclysm:cursium_upgrade_smithing_template/",
 		"/cataclysm:ignitium_upgrade_smithing_template/",
@@ -10944,9 +12622,15 @@
 		"/the_bumblezone:super_candle_the_bumblezone:super_yellow/",
 		"/supplementaries:candle_holder_the_bumblezone:super_yellow/",
 		"/suppsquared:gold_candle_holder_the_bumblezone:super_yellow/",
+		"/the_bumblezone:super_candle_twilightforest:skeleton_skull/",
+		"/supplementaries:candle_holder_twilightforest:skeleton_skull/",
+		"/suppsquared:gold_candle_holder_twilightforest:skeleton_skull/",
 		"/the_bumblezone:super_candle_netherexp:ancient_skeleton_skull/",
 		"/supplementaries:candle_holder_netherexp:ancient_skeleton_skull/",
 		"/suppsquared:gold_candle_holder_netherexp:ancient_skeleton_skull/",
+		"/the_bumblezone:super_candle_twilightforest:piglin_skull/",
+		"/supplementaries:candle_holder_twilightforest:piglin_skull/",
+		"/suppsquared:gold_candle_holder_twilightforest:piglin_skull/",
 		"/the_bumblezone:super_candle_light_blue/",
 		"/supplementaries:candle_holder_light_blue/",
 		"/suppsquared:gold_candle_holder_light_blue/",
@@ -10998,6 +12682,9 @@
 		"/the_bumblezone:super_candle_black/",
 		"/supplementaries:candle_holder_black/",
 		"/suppsquared:gold_candle_holder_black/",
+		"/the_bumblezone:super_candle_twilightforest:zombie_skull/",
+		"/supplementaries:candle_holder_twilightforest:zombie_skull/",
+		"/suppsquared:gold_candle_holder_twilightforest:zombie_skull/",
 		"/the_bumblezone:super_candle_spelunkers_charm:candle_on_helmet/",
 		"/supplementaries:candle_holder_spelunkers_charm:candle_on_helmet/",
 		"/suppsquared:gold_candle_holder_spelunkers_charm:candle_on_helmet/",
@@ -11013,9 +12700,18 @@
 		"/the_bumblezone:super_candle_yellow/",
 		"/supplementaries:candle_holder_yellow/",
 		"/suppsquared:gold_candle_holder_yellow/",
+		"/the_bumblezone:super_candle_twilightforest:player_skull/",
+		"/supplementaries:candle_holder_twilightforest:player_skull/",
+		"/suppsquared:gold_candle_holder_twilightforest:player_skull/",
 		"/the_bumblezone:super_candle_netherexp:treacherous/",
 		"/supplementaries:candle_holder_netherexp:treacherous/",
 		"/suppsquared:gold_candle_holder_netherexp:treacherous/",
+		"/the_bumblezone:super_candle_twilightforest:wither_skeleton_skull/",
+		"/supplementaries:candle_holder_twilightforest:wither_skeleton_skull/",
+		"/suppsquared:gold_candle_holder_twilightforest:wither_skeleton_skull/",
+		"/the_bumblezone:super_candle_twilightforest:creeper_skull/",
+		"/supplementaries:candle_holder_twilightforest:creeper_skull/",
+		"/suppsquared:gold_candle_holder_twilightforest:creeper_skull/",
 		"/the_bumblezone:super_candle/",
 		"/supplementaries:candle_holder/",
 		"/suppsquared:gold_candle_holder/",
@@ -11818,6 +13514,65 @@
 		"/upgrade_aquatic:driftwood_hanging_sign/",
 		"/upgrade_aquatic:driftwood_boat/",
 		"/upgrade_aquatic:driftwood_chest_boat/",
+		"/betterarcheology:rotten_log/",
+		"/betterarcheology:rotten_planks/",
+		"/everycomp:q\\/betterarcheology/rotten_bookshelf/",
+		"/everycomp:hc\\/betterarcheology/rotten_bench/",
+		"/everycomp:hc\\/betterarcheology/rotten_chair/",
+		"/everycomp:hc\\/betterarcheology/rotten_couch/",
+		"/everycomp:hc\\/betterarcheology/rotten_dining_bench/",
+		"/everycomp:hc\\/betterarcheology/rotten_side_table/",
+		"/everycomp:hc\\/betterarcheology/rotten_desk/",
+		"/everycomp:hc\\/betterarcheology/rotten_nightstand/",
+		"/everycomp:hc\\/betterarcheology/rotten_table/",
+		"/everycomp:hc\\/betterarcheology/rotten_counter/",
+		"/everycomp:fd\\/betterarcheology/rotten_cabinet/",
+		"/everycomp:q\\/betterarcheology/rotten_chest/",
+		"/everycomp:hc\\/betterarcheology/rotten_fancy_bed/",
+		"/betterarcheology:rotten_stairs/",
+		"/betterarcheology:rotten_slab/",
+		"/v_slab_compat:betterarcheology\\/rotten_vertical_slab/",
+		"/suppsquared:betterarcheology\\/item_shelf_rotten/",
+		"/betterarcheology:rotten_fence/",
+		"/betterarcheology:rotten_fence_gate/",
+		"/betterarcheology:rotten_door/",
+		"/betterarcheology:rotten_trapdoor/",
+		"/everycomp:q\\/betterarcheology/rotten_ladder/",
+		"/everycomp:hnhome\\/betterarcheology/rotten_lattice/",
+		"/betterarcheology:rotten_pressure_plate/",
+		"/supplementaries:betterarcheology\\/sign_post_rotten/",
+		"/born_in_chaos_v1:scorched_log/",
+		"/born_in_chaos_v1:scorched_wood/",
+		"/everycomp:q\\/born_in_chaos_v1/scorched_post/",
+		"/born_in_chaos_v1:stripped_scorched_log/",
+		"/born_in_chaos_v1:stripped_scorched_wood/",
+		"/everycomp:q\\/born_in_chaos_v1/stripped_scorched_post/",
+		"/born_in_chaos_v1:scorched_planks/",
+		"/everycomp:q\\/born_in_chaos_v1/scorched_bookshelf/",
+		"/everycomp:hc\\/born_in_chaos_v1/scorched_bench/",
+		"/everycomp:hc\\/born_in_chaos_v1/scorched_chair/",
+		"/everycomp:hc\\/born_in_chaos_v1/scorched_couch/",
+		"/everycomp:hc\\/born_in_chaos_v1/scorched_dining_bench/",
+		"/everycomp:hc\\/born_in_chaos_v1/scorched_side_table/",
+		"/everycomp:hc\\/born_in_chaos_v1/scorched_desk/",
+		"/everycomp:hc\\/born_in_chaos_v1/scorched_nightstand/",
+		"/everycomp:hc\\/born_in_chaos_v1/scorched_table/",
+		"/everycomp:hc\\/born_in_chaos_v1/scorched_counter/",
+		"/everycomp:fd\\/born_in_chaos_v1/scorched_cabinet/",
+		"/everycomp:q\\/born_in_chaos_v1/scorched_chest/",
+		"/everycomp:hc\\/born_in_chaos_v1/scorched_fancy_bed/",
+		"/born_in_chaos_v1:scorched_planks_stairs/",
+		"/born_in_chaos_v1:scorched_planks_slab/",
+		"/born_in_chaos_v1:scorched_planks_slab/",
+		"/suppsquared:born_in_chaos_v1\\/item_shelf_scorched/",
+		"/born_in_chaos_v1:scorched_planks_fence/",
+		"/born_in_chaos_v1:scorched_planks_fence_gate/",
+		"/born_in_chaos_v1:scorched_planks_door/",
+		"/born_in_chaos_v1:scorched_planks_trapdoor/",
+		"/everycomp:q\\/born_in_chaos_v1/scorched_ladder/",
+		"/everycomp:hnhome\\/born_in_chaos_v1/scorched_lattice/",
+		"/born_in_chaos_v1:scorched_planks_button/",
+		"/supplementaries:born_in_chaos_v1\\/sign_post_scorched/",
 		"/upgrade_aquatic:river_log/",
 		"/upgrade_aquatic:river_wood/",
 		"/everycomp:q\\/upgrade_aquatic/river_post/",
@@ -12023,65 +13778,6 @@
 		"/netherexp:claret_sign/",
 		"/supplementaries:netherexp\\/sign_post_claret/",
 		"/netherexp:claret_hanging_sign/",
-		"/betterarcheology:rotten_log/",
-		"/betterarcheology:rotten_planks/",
-		"/everycomp:q\\/betterarcheology/rotten_bookshelf/",
-		"/everycomp:hc\\/betterarcheology/rotten_bench/",
-		"/everycomp:hc\\/betterarcheology/rotten_chair/",
-		"/everycomp:hc\\/betterarcheology/rotten_couch/",
-		"/everycomp:hc\\/betterarcheology/rotten_dining_bench/",
-		"/everycomp:hc\\/betterarcheology/rotten_side_table/",
-		"/everycomp:hc\\/betterarcheology/rotten_desk/",
-		"/everycomp:hc\\/betterarcheology/rotten_nightstand/",
-		"/everycomp:hc\\/betterarcheology/rotten_table/",
-		"/everycomp:hc\\/betterarcheology/rotten_counter/",
-		"/everycomp:fd\\/betterarcheology/rotten_cabinet/",
-		"/everycomp:q\\/betterarcheology/rotten_chest/",
-		"/everycomp:hc\\/betterarcheology/rotten_fancy_bed/",
-		"/betterarcheology:rotten_stairs/",
-		"/betterarcheology:rotten_slab/",
-		"/v_slab_compat:betterarcheology\\/rotten_vertical_slab/",
-		"/suppsquared:betterarcheology\\/item_shelf_rotten/",
-		"/betterarcheology:rotten_fence/",
-		"/betterarcheology:rotten_fence_gate/",
-		"/betterarcheology:rotten_door/",
-		"/betterarcheology:rotten_trapdoor/",
-		"/everycomp:q\\/betterarcheology/rotten_ladder/",
-		"/everycomp:hnhome\\/betterarcheology/rotten_lattice/",
-		"/betterarcheology:rotten_pressure_plate/",
-		"/supplementaries:betterarcheology\\/sign_post_rotten/",
-		"/born_in_chaos_v1:scorched_log/",
-		"/born_in_chaos_v1:scorched_wood/",
-		"/everycomp:q\\/born_in_chaos_v1/scorched_post/",
-		"/born_in_chaos_v1:stripped_scorched_log/",
-		"/born_in_chaos_v1:stripped_scorched_wood/",
-		"/everycomp:q\\/born_in_chaos_v1/stripped_scorched_post/",
-		"/born_in_chaos_v1:scorched_planks/",
-		"/everycomp:q\\/born_in_chaos_v1/scorched_bookshelf/",
-		"/everycomp:hc\\/born_in_chaos_v1/scorched_bench/",
-		"/everycomp:hc\\/born_in_chaos_v1/scorched_chair/",
-		"/everycomp:hc\\/born_in_chaos_v1/scorched_couch/",
-		"/everycomp:hc\\/born_in_chaos_v1/scorched_dining_bench/",
-		"/everycomp:hc\\/born_in_chaos_v1/scorched_side_table/",
-		"/everycomp:hc\\/born_in_chaos_v1/scorched_desk/",
-		"/everycomp:hc\\/born_in_chaos_v1/scorched_nightstand/",
-		"/everycomp:hc\\/born_in_chaos_v1/scorched_table/",
-		"/everycomp:hc\\/born_in_chaos_v1/scorched_counter/",
-		"/everycomp:fd\\/born_in_chaos_v1/scorched_cabinet/",
-		"/everycomp:q\\/born_in_chaos_v1/scorched_chest/",
-		"/everycomp:hc\\/born_in_chaos_v1/scorched_fancy_bed/",
-		"/born_in_chaos_v1:scorched_planks_stairs/",
-		"/born_in_chaos_v1:scorched_planks_slab/",
-		"/born_in_chaos_v1:scorched_planks_slab/",
-		"/suppsquared:born_in_chaos_v1\\/item_shelf_scorched/",
-		"/born_in_chaos_v1:scorched_planks_fence/",
-		"/born_in_chaos_v1:scorched_planks_fence_gate/",
-		"/born_in_chaos_v1:scorched_planks_door/",
-		"/born_in_chaos_v1:scorched_planks_trapdoor/",
-		"/everycomp:q\\/born_in_chaos_v1/scorched_ladder/",
-		"/everycomp:hnhome\\/born_in_chaos_v1/scorched_lattice/",
-		"/born_in_chaos_v1:scorched_planks_button/",
-		"/supplementaries:born_in_chaos_v1\\/sign_post_scorched/",
 		"/aether:skyroot_log/",
 		"/aether:skyroot_wood/",
 		"/everycomp:q\\/aether/skyroot_post/",
@@ -12471,6 +14167,302 @@
 		"/ecologics:flowering_azalea_hanging_sign/",
 		"/ecologics:flowering_azalea_boat/",
 		"/ecologics:flowering_azalea_chest_boat/",
+		"/twilightforest:mangrove_log/",
+		"/twilightforest:mangrove_wood/",
+		"/quark:mangrove_post/",
+		"/twilightforest:stripped_mangrove_log/",
+		"/twilightforest:stripped_mangrove_wood/",
+		"/quark:stripped_mangrove_post/",
+		"/twilightforest:mangrove_planks/",
+		"/quark:mangrove_bookshelf/",
+		"/handcrafted:mangrove_bench/",
+		"/handcrafted:mangrove_chair/",
+		"/handcrafted:mangrove_couch/",
+		"/handcrafted:mangrove_dining_bench/",
+		"/handcrafted:mangrove_side_table/",
+		"/handcrafted:mangrove_desk/",
+		"/handcrafted:mangrove_nightstand/",
+		"/handcrafted:mangrove_table/",
+		"/handcrafted:mangrove_counter/",
+		"/farmersdelight:mangrove_cabinet/",
+		"/twilightforest:mangrove_chest/",
+		"/quark:mangrove_chest/",
+		"/handcrafted:mangrove_fancy_bed/",
+		"/twilightforest:mangrove_stairs/",
+		"/twilightforest:mangrove_slab/",
+		"/quark:mangrove_vertical_slab/",
+		"/suppsquared:item_shelf_mangrove/",
+		"/twilightforest:mangrove_fence/",
+		"/twilightforest:mangrove_fence_gate/",
+		"/twilightforest:mangrove_door/",
+		"/twilightforest:mangrove_trapdoor/",
+		"/quark:mangrove_ladder/",
+		"/hearth_and_home:mangrove_lattice/",
+		"/twilightforest:mangrove_pressure_plate/",
+		"/twilightforest:mangrove_button/",
+		"/twilightforest:mangrove_sign/",
+		"/supplementaries:sign_post_mangrove/",
+		"/twilightforest:mangrove_hanging_sign/",
+		"/twilightforest:mangrove_boat/",
+		"/twilightforest:mangrove_chest_boat/",
+		"/twilightforest:mining_log/",
+		"/twilightforest:mining_wood/",
+		"/everycomp:q\\/twilightforest/mining_post/",
+		"/twilightforest:stripped_mining_log/",
+		"/twilightforest:stripped_mining_wood/",
+		"/everycomp:q\\/twilightforest/stripped_mining_post/",
+		"/twilightforest:mining_planks/",
+		"/everycomp:q\\/twilightforest/mining_bookshelf/",
+		"/everycomp:hc\\/twilightforest/mining_bench/",
+		"/everycomp:hc\\/twilightforest/mining_chair/",
+		"/everycomp:hc\\/twilightforest/mining_couch/",
+		"/everycomp:hc\\/twilightforest/mining_dining_bench/",
+		"/everycomp:hc\\/twilightforest/mining_side_table/",
+		"/everycomp:hc\\/twilightforest/mining_desk/",
+		"/everycomp:hc\\/twilightforest/mining_nightstand/",
+		"/everycomp:hc\\/twilightforest/mining_table/",
+		"/everycomp:hc\\/twilightforest/mining_counter/",
+		"/everycomp:fd\\/twilightforest/mining_cabinet/",
+		"/twilightforest:mining_chest/",
+		"/everycomp:hc\\/twilightforest/mining_fancy_bed/",
+		"/twilightforest:mining_stairs/",
+		"/twilightforest:mining_slab/",
+		"/v_slab_compat:twilightforest\\/mining_vertical_slab/",
+		"/suppsquared:twilightforest\\/item_shelf_mining/",
+		"/twilightforest:mining_fence/",
+		"/twilightforest:mining_fence_gate/",
+		"/twilightforest:mining_door/",
+		"/twilightforest:mining_trapdoor/",
+		"/everycomp:q\\/twilightforest/mining_ladder/",
+		"/everycomp:hnhome\\/twilightforest/mining_lattice/",
+		"/twilightforest:mining_pressure_plate/",
+		"/twilightforest:mining_button/",
+		"/twilightforest:mining_sign/",
+		"/supplementaries:twilightforest\\/sign_post_mining/",
+		"/twilightforest:mining_hanging_sign/",
+		"/twilightforest:mining_boat/",
+		"/twilightforest:mining_chest_boat/",
+		"/twilightforest:canopy_log/",
+		"/twilightforest:canopy_wood/",
+		"/everycomp:q\\/twilightforest/canopy_post/",
+		"/twilightforest:stripped_canopy_log/",
+		"/twilightforest:stripped_canopy_wood/",
+		"/everycomp:q\\/twilightforest/stripped_canopy_post/",
+		"/twilightforest:canopy_planks/",
+		"/everycomp:hc\\/twilightforest/canopy_bench/",
+		"/everycomp:hc\\/twilightforest/canopy_chair/",
+		"/everycomp:hc\\/twilightforest/canopy_couch/",
+		"/everycomp:hc\\/twilightforest/canopy_dining_bench/",
+		"/everycomp:hc\\/twilightforest/canopy_side_table/",
+		"/everycomp:hc\\/twilightforest/canopy_desk/",
+		"/everycomp:hc\\/twilightforest/canopy_nightstand/",
+		"/everycomp:hc\\/twilightforest/canopy_table/",
+		"/everycomp:hc\\/twilightforest/canopy_counter/",
+		"/everycomp:fd\\/twilightforest/canopy_cabinet/",
+		"/twilightforest:canopy_chest/",
+		"/everycomp:hc\\/twilightforest/canopy_fancy_bed/",
+		"/twilightforest:canopy_stairs/",
+		"/twilightforest:canopy_slab/",
+		"/v_slab_compat:twilightforest\\/canopy_vertical_slab/",
+		"/suppsquared:twilightforest\\/item_shelf_canopy/",
+		"/twilightforest:canopy_fence/",
+		"/twilightforest:canopy_fence_gate/",
+		"/twilightforest:canopy_door/",
+		"/twilightforest:canopy_trapdoor/",
+		"/everycomp:q\\/twilightforest/canopy_ladder/",
+		"/everycomp:hnhome\\/twilightforest/canopy_lattice/",
+		"/twilightforest:canopy_pressure_plate/",
+		"/twilightforest:canopy_button/",
+		"/twilightforest:canopy_sign/",
+		"/supplementaries:twilightforest\\/sign_post_canopy/",
+		"/twilightforest:canopy_hanging_sign/",
+		"/twilightforest:canopy_boat/",
+		"/twilightforest:canopy_chest_boat/",
+		"/twilightforest:twilight_oak_log/",
+		"/twilightforest:twilight_oak_wood/",
+		"/everycomp:q\\/twilightforest/twilight_oak_post/",
+		"/twilightforest:stripped_twilight_oak_log/",
+		"/twilightforest:stripped_twilight_oak_wood/",
+		"/everycomp:q\\/twilightforest/stripped_twilight_oak_post/",
+		"/twilightforest:twilight_oak_planks/",
+		"/everycomp:q\\/twilightforest/twilight_oak_bookshelf/",
+		"/everycomp:hc\\/twilightforest/twilight_oak_bench/",
+		"/everycomp:hc\\/twilightforest/twilight_oak_chair/",
+		"/everycomp:hc\\/twilightforest/twilight_oak_couch/",
+		"/everycomp:hc\\/twilightforest/twilight_oak_dining_bench/",
+		"/everycomp:hc\\/twilightforest/twilight_oak_side_table/",
+		"/everycomp:hc\\/twilightforest/twilight_oak_desk/",
+		"/everycomp:hc\\/twilightforest/twilight_oak_nightstand/",
+		"/everycomp:hc\\/twilightforest/twilight_oak_table/",
+		"/everycomp:hc\\/twilightforest/twilight_oak_counter/",
+		"/everycomp:fd\\/twilightforest/twilight_oak_cabinet/",
+		"/twilightforest:twilight_oak_chest/",
+		"/everycomp:hc\\/twilightforest/twilight_oak_fancy_bed/",
+		"/twilightforest:twilight_oak_stairs/",
+		"/twilightforest:twilight_oak_slab/",
+		"/v_slab_compat:twilightforest\\/twilight_oak_vertical_slab/",
+		"/suppsquared:twilightforest\\/item_shelf_twilight_oak/",
+		"/twilightforest:twilight_oak_fence/",
+		"/twilightforest:twilight_oak_fence_gate/",
+		"/twilightforest:twilight_oak_door/",
+		"/twilightforest:twilight_oak_trapdoor/",
+		"/everycomp:q\\/twilightforest/twilight_oak_ladder/",
+		"/everycomp:hnhome\\/twilightforest/twilight_oak_lattice/",
+		"/twilightforest:twilight_oak_pressure_plate/",
+		"/twilightforest:twilight_oak_button/",
+		"/twilightforest:twilight_oak_sign/",
+		"/supplementaries:twilightforest\\/sign_post_twilight_oak/",
+		"/twilightforest:twilight_oak_hanging_sign/",
+		"/twilightforest:twilight_oak_boat/",
+		"/twilightforest:twilight_oak_chest_boat/",
+		"/twilightforest:dark_log/",
+		"/twilightforest:dark_wood/",
+		"/everycomp:q\\/twilightforest/dark_post/",
+		"/twilightforest:stripped_dark_log/",
+		"/twilightforest:stripped_dark_wood/",
+		"/everycomp:q\\/twilightforest/stripped_dark_post/",
+		"/twilightforest:dark_planks/",
+		"/everycomp:q\\/twilightforest/dark_bookshelf/",
+		"/everycomp:hc\\/twilightforest/dark_bench/",
+		"/everycomp:hc\\/twilightforest/dark_chair/",
+		"/everycomp:hc\\/twilightforest/dark_couch/",
+		"/everycomp:hc\\/twilightforest/dark_dining_bench/",
+		"/everycomp:hc\\/twilightforest/dark_side_table/",
+		"/everycomp:hc\\/twilightforest/dark_desk/",
+		"/everycomp:hc\\/twilightforest/dark_nightstand/",
+		"/everycomp:hc\\/twilightforest/dark_table/",
+		"/everycomp:hc\\/twilightforest/dark_counter/",
+		"/everycomp:fd\\/twilightforest/dark_cabinet/",
+		"/twilightforest:dark_chest/",
+		"/everycomp:hc\\/twilightforest/dark_fancy_bed/",
+		"/twilightforest:dark_stairs/",
+		"/twilightforest:dark_slab/",
+		"/v_slab_compat:twilightforest\\/dark_vertical_slab/",
+		"/suppsquared:twilightforest\\/item_shelf_dark/",
+		"/twilightforest:dark_fence/",
+		"/twilightforest:dark_fence_gate/",
+		"/twilightforest:dark_door/",
+		"/twilightforest:dark_trapdoor/",
+		"/everycomp:q\\/twilightforest/dark_ladder/",
+		"/everycomp:hnhome\\/twilightforest/dark_lattice/",
+		"/twilightforest:dark_pressure_plate/",
+		"/twilightforest:dark_button/",
+		"/twilightforest:dark_sign/",
+		"/supplementaries:twilightforest\\/sign_post_dark/",
+		"/twilightforest:dark_hanging_sign/",
+		"/twilightforest:dark_boat/",
+		"/twilightforest:dark_chest_boat/",
+		"/twilightforest:transformation_log/",
+		"/twilightforest:transformation_wood/",
+		"/everycomp:q\\/twilightforest/transformation_post/",
+		"/twilightforest:stripped_transformation_log/",
+		"/twilightforest:stripped_transformation_wood/",
+		"/everycomp:q\\/twilightforest/stripped_transformation_post/",
+		"/twilightforest:transformation_planks/",
+		"/everycomp:q\\/twilightforest/transformation_bookshelf/",
+		"/everycomp:hc\\/twilightforest/transformation_bench/",
+		"/everycomp:hc\\/twilightforest/transformation_chair/",
+		"/everycomp:hc\\/twilightforest/transformation_couch/",
+		"/everycomp:hc\\/twilightforest/transformation_dining_bench/",
+		"/everycomp:hc\\/twilightforest/transformation_side_table/",
+		"/everycomp:hc\\/twilightforest/transformation_desk/",
+		"/everycomp:hc\\/twilightforest/transformation_nightstand/",
+		"/everycomp:hc\\/twilightforest/transformation_table/",
+		"/everycomp:hc\\/twilightforest/transformation_counter/",
+		"/everycomp:fd\\/twilightforest/transformation_cabinet/",
+		"/twilightforest:transformation_chest/",
+		"/everycomp:hc\\/twilightforest/transformation_fancy_bed/",
+		"/twilightforest:transformation_stairs/",
+		"/twilightforest:transformation_slab/",
+		"/v_slab_compat:twilightforest\\/transformation_vertical_slab/",
+		"/suppsquared:twilightforest\\/item_shelf_transformation/",
+		"/twilightforest:transformation_fence/",
+		"/twilightforest:transformation_fence_gate/",
+		"/twilightforest:transformation_door/",
+		"/twilightforest:transformation_trapdoor/",
+		"/everycomp:q\\/twilightforest/transformation_ladder/",
+		"/everycomp:hnhome\\/twilightforest/transformation_lattice/",
+		"/twilightforest:transformation_pressure_plate/",
+		"/twilightforest:transformation_button/",
+		"/twilightforest:transformation_sign/",
+		"/supplementaries:twilightforest\\/sign_post_transformation/",
+		"/twilightforest:transformation_hanging_sign/",
+		"/twilightforest:transformation_boat/",
+		"/twilightforest:transformation_chest_boat/",
+		"/twilightforest:time_log/",
+		"/twilightforest:time_wood/",
+		"/everycomp:q\\/twilightforest/time_post/",
+		"/twilightforest:stripped_time_log/",
+		"/twilightforest:stripped_time_wood/",
+		"/everycomp:q\\/twilightforest/stripped_time_post/",
+		"/twilightforest:time_planks/",
+		"/everycomp:q\\/twilightforest/time_bookshelf/",
+		"/everycomp:hc\\/twilightforest/time_bench/",
+		"/everycomp:hc\\/twilightforest/time_chair/",
+		"/everycomp:hc\\/twilightforest/time_couch/",
+		"/everycomp:hc\\/twilightforest/time_dining_bench/",
+		"/everycomp:hc\\/twilightforest/time_side_table/",
+		"/everycomp:hc\\/twilightforest/time_desk/",
+		"/everycomp:hc\\/twilightforest/time_nightstand/",
+		"/everycomp:hc\\/twilightforest/time_table/",
+		"/everycomp:hc\\/twilightforest/time_counter/",
+		"/everycomp:fd\\/twilightforest/time_cabinet/",
+		"/twilightforest:time_chest/",
+		"/everycomp:hc\\/twilightforest/time_fancy_bed/",
+		"/twilightforest:time_stairs/",
+		"/twilightforest:time_slab/",
+		"/v_slab_compat:twilightforest\\/time_vertical_slab/",
+		"/suppsquared:twilightforest\\/item_shelf_time/",
+		"/twilightforest:time_fence/",
+		"/twilightforest:time_fence_gate/",
+		"/twilightforest:time_door/",
+		"/twilightforest:time_trapdoor/",
+		"/everycomp:q\\/twilightforest/time_ladder/",
+		"/everycomp:hnhome\\/twilightforest/time_lattice/",
+		"/twilightforest:time_pressure_plate/",
+		"/twilightforest:time_button/",
+		"/twilightforest:time_sign/",
+		"/supplementaries:twilightforest\\/sign_post_time/",
+		"/twilightforest:time_hanging_sign/",
+		"/twilightforest:time_boat/",
+		"/twilightforest:time_chest_boat/",
+		"/twilightforest:sorting_log/",
+		"/twilightforest:sorting_wood/",
+		"/everycomp:q\\/twilightforest/sorting_post/",
+		"/twilightforest:stripped_sorting_log/",
+		"/twilightforest:stripped_sorting_wood/",
+		"/everycomp:q\\/twilightforest/stripped_sorting_post/",
+		"/twilightforest:sorting_planks/",
+		"/everycomp:q\\/twilightforest/sorting_bookshelf/",
+		"/everycomp:hc\\/twilightforest/sorting_bench/",
+		"/everycomp:hc\\/twilightforest/sorting_chair/",
+		"/everycomp:hc\\/twilightforest/sorting_couch/",
+		"/everycomp:hc\\/twilightforest/sorting_dining_bench/",
+		"/everycomp:hc\\/twilightforest/sorting_side_table/",
+		"/everycomp:hc\\/twilightforest/sorting_desk/",
+		"/everycomp:hc\\/twilightforest/sorting_nightstand/",
+		"/everycomp:hc\\/twilightforest/sorting_table/",
+		"/everycomp:hc\\/twilightforest/sorting_counter/",
+		"/everycomp:fd\\/twilightforest/sorting_cabinet/",
+		"/twilightforest:sorting_chest/",
+		"/everycomp:hc\\/twilightforest/sorting_fancy_bed/",
+		"/twilightforest:sorting_stairs/",
+		"/twilightforest:sorting_slab/",
+		"/v_slab_compat:twilightforest\\/sorting_vertical_slab/",
+		"/suppsquared:twilightforest\\/item_shelf_sorting/",
+		"/twilightforest:sorting_fence/",
+		"/twilightforest:sorting_fence_gate/",
+		"/twilightforest:sorting_door/",
+		"/twilightforest:sorting_trapdoor/",
+		"/everycomp:q\\/twilightforest/sorting_ladder/",
+		"/everycomp:hnhome\\/twilightforest/sorting_lattice/",
+		"/twilightforest:sorting_pressure_plate/",
+		"/twilightforest:sorting_button/",
+		"/twilightforest:sorting_sign/",
+		"/supplementaries:twilightforest\\/sign_post_sorting/",
+		"/twilightforest:sorting_hanging_sign/",
+		"/twilightforest:sorting_boat/",
+		"/twilightforest:sorting_chest_boat/",
 		"/v_slab_compat:witherstormmod\\/tainted_stone_vertical_slab/",
 		"/v_slab_compat:botania\\/red_pavement_vertical_slab/",
 		"/v_slab_compat:botania\\/metamorphic_plains_bricks_vertical_slab/",

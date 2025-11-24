@@ -49,7 +49,7 @@ const tiers = {
 		uses: 3000,
 		speed: 15.0,
 		attackDamageBonus: 8.0,
-		level: 5,
+		level: 6,
 		enchantmentValue: 30,
 		repairIngredient: '#c:celestium_ingots'
 	},
@@ -89,7 +89,7 @@ const tiers = {
 		uses: 3000,
 		speed: 15.0,
 		attackDamageBonus: 8.0,
-		level: 5,
+		level: 6,
 		enchantmentValue: 30,
 		repairIngredient: '#c:metallurgium_ingots'
 	},
@@ -193,7 +193,7 @@ const tiers = {
 		uses: 8000,
 		speed: 12,
 		attackDamageBonus: 5.0,
-		level: 6,
+		level: 5,
 		enchantmentValue: 15,
 		repairIngredient: 'majruszsdifficulty:enderium_ingot',
 	},
@@ -305,17 +305,23 @@ ItemEvents.modification(event => {
 
 })
 
-// if (Platform.isLoaded("jade")) {
-// 	StartupEvents.postInit(event => {
-// 		let $HarvestToolProvider = Java.loadClass("snownee.jade.addon.harvest.HarvestToolProvider")
-// 		let $SimpleToolHandler = Java.loadClass("snownee.jade.addon.harvest.SimpleToolHandler")
-// 		$HarvestToolProvider.registerHandler(
-// 			new $SimpleToolHandler(
-// 				"pickaxe",
-// 				$BlockTags.MINEABLE_WITH_PICKAXE,
-// 				// Your can try a diff approach, but remember that the icons on tooltip will be tested in this order
-// 				["wooden_pickaxe", "stone_pickaxe", "iron_pickaxe", "diamond_pickaxe", "netherite_pickaxe", "kubejs:constantan_pickaxe"]
-// 			)
-// 		)
-// 	})
-// }
+StartupEvents.postInit(event => {
+	let $HarvestToolProvider = Java.loadClass("snownee.jade.addon.harvest.HarvestToolProvider")
+	let $SimpleToolHandler = Java.loadClass("snownee.jade.addon.harvest.SimpleToolHandler")
+	$HarvestToolProvider.registerHandler(
+		new $SimpleToolHandler(
+			"pickaxe",
+			$BlockTags.MINEABLE_WITH_PICKAXE,
+			// Your can try a diff approach, but remember that the icons on tooltip will be tested in this order
+			[
+				"wooden_pickaxe",
+				"stone_pickaxe",
+				"iron_pickaxe",
+				"diamond_pickaxe",
+				"netherite_pickaxe",
+				"majruszsdifficulty:enderium_pickaxe",
+				"mythicmetals:metallurgium_pickaxe"
+			]
+		)
+	)
+})

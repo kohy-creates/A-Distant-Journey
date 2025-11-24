@@ -19,6 +19,7 @@
 		"mod/subtle_effects:resourcepacks/biome_color_water_particles",
 		"file/FreshAnimations_v1.9.2.zip",
 		"file/FreshCompats_v1.6.zip",
+		"file/FreshlyTwilighted_v1.0.0.zip",
 		"file/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip",
 		"file/BatBackport-16x-v1.1.0.zip",
 		"file/\u00A76Drodi's Shield [V2.2].zip",
@@ -59,7 +60,9 @@
 		"file/\u00A75VN4's \u00A7l\u00A72FWS+RWS Detailed.zip",
 		"file/Tainted's Accurate Wither Storm Models v3.0.2.2.zip",
 		"Dyes-Backport-1.1.1.zip",
+		"file/Twilight JAPPA Pack 1.0.0.zip",
 		"file/Gentler Weather Sounds 2.0.0.zip",
+		"fragmentum",
 		"file/kohara's Compat",
 		"file/ADJ-Music.zip"
 	],
@@ -78,6 +81,7 @@
 			"mod/subtle_effects:resourcepacks/biome_color_water_particles",
 			"file/FreshAnimations_v1.9.2.zip",
 			"file/FreshCompats_v1.6.zip",
+			"file/FreshlyTwilighted_v1.0.0.zip",
 			"file/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip",
 			"file/BatBackport-16x-v1.1.0.zip",
 			"file/\u00A76Drodi's Shield [V2.2].zip",
@@ -121,6 +125,8 @@
 			"file/Tainted's Accurate Wither Storm Models v3.0.2.2.zip",
 			"file/Gentler Weather Sounds 2.0.0.zip",
 			"Dyes-Backport-1.1.1.zip",
+			"fragmentum",
+			"file/Twilight JAPPA Pack 1.0.0.zip",
 			"file/kohara's Compat",
 			"file/ADJ-Music.zip"
 		],
@@ -155,11 +161,11 @@
 			"description": "\"Default resources\""
 		},
 		"$$default": {
-			"hidden": false,
+			"hidden": true,
 			"required": true
 		},
 		"$$hidden": {
-			"hidden": false
+			"hidden": true
 		}
 	}
 }

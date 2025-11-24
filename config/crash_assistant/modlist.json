@@ -587,10 +587,10 @@
     "modId": "darkmodeeverywhere",
     "version": "1.20.1-1.2.5"
   },
-  "Data_Anchor-forge-1.20.1-1.0.0.19.jar": {
-    "jarName": "Data_Anchor-forge-1.20.1-1.0.0.19.jar",
+  "Data_Anchor-forge-1.20.1-1.0.0.20.jar": {
+    "jarName": "Data_Anchor-forge-1.20.1-1.0.0.20.jar",
     "modId": "dataanchor",
-    "version": "1.0.0.19"
+    "version": "1.0.0.20"
   },
   "DeathKnell-Forge-1.20.1-10.0.4.jar": {
     "jarName": "DeathKnell-Forge-1.20.1-10.0.4.jar",
@@ -832,10 +832,10 @@
     "modId": "fbp",
     "version": "20.1.5.1"
   },
-  "fancymenu_forge_3.8.0_MC_1.20.1.jar": {
-    "jarName": "fancymenu_forge_3.8.0_MC_1.20.1.jar",
+  "fancymenu_forge_3.8.1_MC_1.20.1.jar": {
+    "jarName": "fancymenu_forge_3.8.1_MC_1.20.1.jar",
     "modId": "fancymenu",
-    "version": "3.8.0"
+    "version": "3.8.1"
   },
   "FarmersDelight-1.20.1-1.2.9.jar": {
     "jarName": "FarmersDelight-1.20.1-1.2.9.jar",
@@ -1928,6 +1928,11 @@
     "modId": "subtle_effects",
     "version": "1.13.1"
   },
+  "summoningrituals-forge-1.20.1-2.0.8.jar": {
+    "jarName": "summoningrituals-forge-1.20.1-2.0.8.jar",
+    "modId": "summoningrituals",
+    "version": "1.20.1-2.0.8"
+  },
   "supermartijn642configlib-1.1.8-forge-mc1.20.jar": {
     "jarName": "supermartijn642configlib-1.1.8-forge-mc1.20.jar",
     "modId": "supermartijn642configlib",
@@ -2058,6 +2063,31 @@
     "modId": "mr_limesplatus_ending",
     "version": "1-v1.1.0c"
   },
+  "TwilightCaveFix-1.0.0.jar": {
+    "jarName": "TwilightCaveFix-1.0.0.jar",
+    "modId": "twilightfixes",
+    "version": "1.0.0"
+  },
+  "twilightdelight-2.0.17.jar": {
+    "jarName": "twilightdelight-2.0.17.jar",
+    "modId": "twilightdelight",
+    "version": "2.0.17"
+  },
+  "twilightforest-1.20.1-4.3.2508-universal.jar": {
+    "jarName": "twilightforest-1.20.1-4.3.2508-universal.jar",
+    "modId": "twilightforest",
+    "version": "4.3.2508"
+  },
+  "TwilightTreehouses-1.20.1-1.0.2.1-forge.jar": {
+    "jarName": "TwilightTreehouses-1.20.1-1.0.2.1-forge.jar",
+    "modId": "twilight_treehouses",
+    "version": "1.0.2.1"
+  },
+  "twilighttweaks-1.20.x-1.2.jar": {
+    "jarName": "twilighttweaks-1.20.x-1.2.jar",
+    "modId": "twilighttweaks",
+    "version": "1.2"
+  },
   "txnilib-forge-1.0.24-1.20.1.jar": {
     "jarName": "txnilib-forge-1.0.24-1.20.1.jar",
     "modId": "txnilib",
@@ -2067,6 +2097,11 @@
     "jarName": "ucrashedlol-0.0.3+1.20.1.jar",
     "modId": "ucrashedlol",
     "version": "0.0.3+1.20.1"
+  },
+  "umbral_skies-1.3.jar": {
+    "jarName": "umbral_skies-1.3.jar",
+    "modId": "umbral_skies",
+    "version": "1.3"
   },
   "unusualend-2.3.0-forge-1.20.1.jar": {
     "jarName": "unusualend-2.3.0-forge-1.20.1.jar",
@@ -2103,10 +2138,10 @@
     "modId": "verdantvibes",
     "version": "1.0.3-1.20.1"
   },
-  "via_romana-forge-1.4.1.jar": {
-    "jarName": "via_romana-forge-1.4.1.jar",
+  "via_romana-2.1.2+1.20.1-forge.jar": {
+    "jarName": "via_romana-2.1.2+1.20.1-forge.jar",
     "modId": "via_romana",
-    "version": "1.4.1"
+    "version": "2.1.2+1.20.1-forge"
   },
   "Villager Comfort-1.1.1.jar": {
     "jarName": "Villager Comfort-1.1.1.jar",

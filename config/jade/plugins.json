@@ -51,13 +51,27 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "ars_nouveau": {
-    "mob_jar": true
-  },
   "treechop": {
     "plugin": true,
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
+  },
+  "jade": {
+    "coordinates.rel": false,
+    "distance": false,
+    "block_face": false,
+    "coordinates": false,
+    "registry_name": "OFF",
+    "mod_name": false
+  },
+  "functionalstorage": {
+    "armory": true
+  },
+  "balm": {
+    "jade": true
+  },
+  "ars_nouveau": {
+    "mob_jar": true
   },
   "hammerlib": {
     "root": true
@@ -74,24 +88,13 @@
     "pie_icons": true,
     "mushroom_colony": true
   },
+  "twilightforest": {
+    "quest_ram_wool": true
+  },
   "supplementaries": {
     "hat_stand": true
   },
-  "jade": {
-    "coordinates.rel": false,
-    "distance": false,
-    "block_face": false,
-    "coordinates": false,
-    "registry_name": "OFF",
-    "mod_name": false
-  },
   "waystones": {
     "waystone": true
-  },
-  "functionalstorage": {
-    "armory": true
-  },
-  "balm": {
-    "jade": true
   }
 }

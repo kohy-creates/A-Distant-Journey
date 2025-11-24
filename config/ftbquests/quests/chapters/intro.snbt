@@ -188,7 +188,7 @@
 				""
 				"An early game method of quick travel are &eroads&f."
 				""
-				"&eRoads&r can be made by simply laying down a &eDirt Path&f from one point to another and connecting it using &6Sings&r! Just &eleft-click&r a Sign on one end of the path and then walk it and do the same on the other end and you got yourself a neat way of quick travel!"
+				"&eRoads&r can be made by simply laying down a &eDirt Path&f from one point to another and connecting it using &6Charting Maps&r! They come with a tutorial on how to use them, so you should probably go and read it. It will explain things way better than me."
 				""
 				"&7&lHINT:&r The road &ndoesn't have to be very wide&r nor does it even have to be in perfect condition. The settings are so loose for those that you don't have to spend ages on building a simple road."
 				""
@@ -211,27 +211,28 @@
 				"First craft a &dWarp Scroll&r and use it to map the portal's target location. Then build a frame out of &dSourcestone&r and place a filled &dSource Jar&r next to it. Lastly, toss the &eWarp Scroll into the frame&r to consume the Source and &eactivate the portal&r. Be wary though, as &ethe portal is one way only&r - you'll need to build another one to go back!"
 			]
 			disable_toast: true
-			icon: {
-				Count: 1
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "via_romana:guide"
-				}
-			}
+			icon: "via_romana:charting_map"
 			id: "7D7F1AD28AE3CF50"
 			min_required_tasks: 1
 			subtitle: "Click to read"
-			tasks: [{
-				id: "024212DF63502725"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "via_romana:guide"
+			tasks: [
+				{
+					id: "024212DF63502725"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "via_romana:guide"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "44A6E7A76A3DD992"
+					item: "via_romana:charting_map"
+					type: "item"
+				}
+			]
 			title: "&l&fTutorial:&r &6Quick Travel"
 			x: 1.5d
 			y: -4.5d
@@ -307,6 +308,11 @@
 				{
 					id: "5D48B8CDC6F4822E"
 					item: "minecraft:compass"
+					type: "item"
+				}
+				{
+					id: "392075BCA2419E61"
+					item: "additionaladditions:depth_meter"
 					type: "item"
 				}
 			]

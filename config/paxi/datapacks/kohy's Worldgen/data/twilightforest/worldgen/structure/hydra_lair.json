@@ -1,0 +1,63 @@
+{
+  "type": "twilightforest:hydra_lair",
+  "adjust_structure_elevation": false,
+  "advancements_required": [
+    "twilightforest:progress_labyrinth"
+  ],
+  "allow_biome_surface_decorations": false,
+  "allow_biome_underground_decorations": false,
+  "biomes": "#twilightforest:valid_hydra_lair_biomes",
+  "chunk_clearance_radius": 2,
+  "hint_item": {
+    "Count": 1,
+    "id": "minecraft:written_book",
+    "tag": {
+      "author": "twilightforest.book.author",
+      "generation": 3,
+      "pages": [
+        "{\"translate\":\"twilightforest.book.hydralair.1\"}",
+        "{\"translate\":\"twilightforest.book.hydralair.2\"}",
+        "{\"translate\":\"twilightforest.book.hydralair.3\"}",
+        "{\"translate\":\"twilightforest.book.hydralair.4\"}"
+      ],
+      "title": "twilightforest.book.hydralair",
+      "twilightforest:book": 1
+    }
+  },
+  "hint_mob": "twilightforest:kobold",
+  "spawn_overrides": {
+    "ambient": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "axolotls": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "creature": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "misc": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "monster": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "underground_water_creature": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "water_ambient": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "water_creature": {
+      "bounding_box": "full",
+      "spawns": []
+    }
+  },
+  "step": "surface_structures"
+}

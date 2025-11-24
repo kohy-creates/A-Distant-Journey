@@ -20,7 +20,10 @@ ItemEvents.modification(event => {
 		item.setMaxDamage(0);
 	})
 
-	event.modify(/.*aether.*\:.*glove/, item => {
+	event.modify([
+		/.*aether.*\:.*glove/,
+		/umbral_skies\:.*gloves/,
+	], item => {
 		item.setMaxDamage(0);
 	})
 })

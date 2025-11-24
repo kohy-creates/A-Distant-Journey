@@ -37,4 +37,13 @@ BlockEvents.modification(event => {
 	], block => {
 		block.setLightEmission(10)
 	})
+
+	event.modify([
+		'summoningrituals:altar'
+	], block => {
+		block.setLightEmission(10);
+		block.setRequiresTool(true);
+		block.setExplosionResistance(60000);
+		block.setDestroySpeed(100);
+	})
 })

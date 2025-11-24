@@ -33,10 +33,7 @@
     "depthmeter:depthmeter",
     "map_atlases:atlas"
   ],
-  "compass_z_items": [
-    "firmaciv:sextant",
-    "map_atlases:atlas"
-  ],
+  "compass_z_items": [],
   "clock_enable": true,
   "clock_current_time": true,
   "clock_day_count": true,

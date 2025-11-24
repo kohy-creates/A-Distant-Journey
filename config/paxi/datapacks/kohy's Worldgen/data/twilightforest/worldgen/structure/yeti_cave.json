@@ -1,0 +1,75 @@
+{
+  "type": "twilightforest:yeti_cave",
+  "adjust_structure_elevation": false,
+  "advancements_required": [
+    "twilightforest:progress_lich"
+  ],
+  "allow_biome_surface_decorations": true,
+  "allow_biome_underground_decorations": false,
+  "ambient_spawns": [],
+  "biomes": "#twilightforest:valid_yeti_cave_biomes",
+  "chunk_clearance_radius": 2,
+  "hint_item": {
+    "Count": 1,
+    "id": "minecraft:written_book",
+    "tag": {
+      "author": "twilightforest.book.author",
+      "generation": 3,
+      "pages": [
+        "{\"translate\":\"twilightforest.book.yeticave.1\"}",
+        "{\"translate\":\"twilightforest.book.yeticave.2\"}",
+        "{\"translate\":\"twilightforest.book.yeticave.3\"}"
+      ],
+      "title": "twilightforest.book.yeticave",
+      "twilightforest:book": 1
+    }
+  },
+  "hint_mob": "twilightforest:kobold",
+  "labelled_monster_spawns": {
+    "0": [
+      {
+        "type": "twilightforest:yeti",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 5
+      }
+    ]
+  },
+  "spawn_overrides": {
+    "ambient": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "axolotls": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "creature": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "misc": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "monster": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "underground_water_creature": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "water_ambient": {
+      "bounding_box": "full",
+      "spawns": []
+    },
+    "water_creature": {
+      "bounding_box": "full",
+      "spawns": []
+    }
+  },
+  "step": "surface_structures",
+  "terrain_adaptation": "bury",
+  "water_spawns": []
+}

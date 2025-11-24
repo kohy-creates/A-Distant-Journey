@@ -44,7 +44,6 @@ ItemEvents.modification(event => {
 
 		let extra = [
 			'_shield',
-			'_gloves',
 			'_shears',
 			'_fishing_rod',
 			'_pick',
@@ -68,20 +67,6 @@ ItemEvents.modification(event => {
 				break;
 			}
 		}
-
-		// Do the same for Gloves...
-		let gloveNamespaces = [
-			'aether',
-			'lost_aether_content'
-		];
-		for (let gloveNamespace of gloveNamespaces) {
-			let gloveType = `${gloveNamespace}:${type.split(':')[1]}_gloves`;
-			if (Item.exists(gloveType)) {
-				tools.push(gloveType);
-				break;
-			}
-		}
-
 		// ...Fishing Rods...
 		let fishingRodNamespaces = [
 			'tide'
@@ -208,7 +193,6 @@ ItemEvents.modification(event => {
 		armorset('born_in_chaos_v1:dark_metal_armor'),
 		armorset('cataclysm:cursium'),
 		armorset('cataclysm:ignitium'),
-		'aether:obsidian_gloves',
 		toolset('mythicmetals:adamantite'),
 		'mcdw:crossbow_heavy_crossbow',
 		'mcdw:bow_winters_touch',

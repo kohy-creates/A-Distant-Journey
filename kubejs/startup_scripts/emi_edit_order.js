@@ -122,6 +122,7 @@ StartupEvents.postInit(event => {
 		'handcrafted:table',
 		'handcrafted:counter',
 		'farmersdelight:cabinet',
+		'twilightdelight:X_cabinet',
 		'chest',
 		// 'trapped_chest',
 		'quark:chest',
@@ -183,16 +184,22 @@ StartupEvents.postInit(event => {
 		'quark:ancient',
 		'snifferplus:stone_pine',
 		'upgrade_aquatic:driftwood',
+		'betterarcheology:rotten',
+		'born_in_chaos_v1:scorched',
 		'upgrade_aquatic:river',
 		'minecraft:crimson',
 		'minecraft:warped',
 		'mynethersdelight:powdery',
 		'netherexp:smokestalk',
+		'twilight_forest:twilight_oak',
+		'twilight_forest:canopy',
+		'twilight_forest:mangrove',
+		'twilight_forest:dark',
+		'twilight_forest:time',
+		'twilight_forest:transformation',
+		'twilight_forest:mining',
+		'twilight_forest:sorting',
 		'netherexp:claret',
-		'betterarcheology:rotten',
-		'moresnifferflowers:corrupted',
-		'moresnifferflowers:vivicus',
-		'born_in_chaos_v1:scorched',
 		'aether:skyroot',
 		'aether_redux:fieldsproot',
 		'aether_redux:crystal',
@@ -221,6 +228,7 @@ StartupEvents.postInit(event => {
 			case 'handcrafted': return 'hc';
 			case 'hearth_and_home': return 'hnhome';
 			case 'farmersdelight': return 'fd';
+			case 'twilightforest': return 'tf';
 			default: return namespace;
 		}
 	}

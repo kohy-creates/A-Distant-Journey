@@ -14,7 +14,7 @@ variable {
 
 variable {
   name = time_in_intro_screen
-  value = 30
+  value = 
   reset_on_launch = true
 }
 

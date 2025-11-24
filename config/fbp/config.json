@@ -25,10 +25,10 @@
     "randomSize": true,
     "randomRotation": true,
     "randomFadingSpeed": true,
-    "particlesPerAxis": 4,
+    "particlesPerAxis": 3,
     "minLifetime": 10,
-    "maxLifetime": 55,
-    "sizeMultiplier": 0.75,
+    "maxLifetime": 45,
+    "sizeMultiplier": 0.9,
     "rotationMultiplier": 1.0,
     "gravityMultiplier": 1.0
   },

@@ -1,0 +1,21 @@
+
+["Naga resurrection"]
+	naga_trophy_block = "twilightforest:naga_trophy"
+	naga_ring_block = "twilightforest:ironwood_block"
+
+["Lich resurrection"]
+	lich_trophy_block = "twilightforest:lich_trophy"
+	lich_ring_block = "minecraft:gold_block"
+
+["Hydra resurrection"]
+	hydra_trophy_block = "twilightforest:hydra_trophy"
+	hydra_ring_block = "minecraft:ancient_debris"
+
+["Ur-Ghast resurrection"]
+	urghast_trophy_block = "twilightforest:ur_ghast_trophy"
+	urghast_ring_block = "twilightforest:knightmetal_block"
+
+["Snow Queen resurrection"]
+	sq_trophy_block = "twilightforest:snow_queen_trophy"
+	sq_ring_block = "twilightforest:arctic_fur_block"
+

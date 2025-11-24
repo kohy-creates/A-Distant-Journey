@@ -206,6 +206,13 @@ ServerEvents.tags('item', event => {
 	event.remove('botania:floating_flowers', [
 		'#botania:special_floating_flowers'
 	])
+
+	event.remove('twilightforest:portal/activator', [
+		'minecraft:diamond'
+	])
+	event.add('twilightforest:portal/activator', [
+		'botania:dragonstone'
+	])
 })
 
 // 
@@ -213,14 +220,54 @@ ServerEvents.tags('item', event => {
 // 
 ServerEvents.tags('block', event => {
 
-	event.remove('minecraft:needs_stone_tool', [
-		'minecraft:copper_ore',
-		'minecraft:deepslate_copper_ore'
-	])
-	event.add('minecraft:needs_wooden_tool', [
-		'minecraft:copper_ore',
-		'minecraft:deepslate_copper_ore'
-	])
+	const blockNeedsTieredTool = {
+		'minecraft:needs_wooden_tool': [
+			'minecraft:copper_ore',
+			'minecraft:deepslate_copper_ore',
+		],
+		'minecraft:needs_stone_tool': [
+			'-minecraft:copper_ore',
+			'-minecraft:deepslate_copper_ore'
+		],
+		'minecraft:needs_iron_tool': [
+			/deepslate/
+		],
+		'minecraft:needs_diamond_tool': [
+			/end_stone/,
+			/purpur/,
+			/myalite/
+		],
+		'forge:needs_netherite_tool': [
+			/waystones\:/,
+			/enderium/
+		],
+		'adjcore:needs_tier_5_tool': [
+			/metallurgium/,
+			/celestium/
+		],
+		'adjcore:needs_tier_6_tool': [
+			'summoningrituals:altar'
+		],
+	}
+
+	for (const [tag, entries] of Object.entries(blockNeedsTieredTool)) {
+		let map = {
+			remove: [],
+			add: []
+		}
+
+		entries.forEach(block => {
+			if (typeof block === "string" && block.startsWith('-')) {
+				map.remove.push(block.substring(1))
+			} else {
+				map.add.push(block)
+			}
+		})
+
+		event.remove(tag, map.remove)
+		event.add(tag, map.add)
+	}
+
 	event.add('adj:stone', [
 		"minecraft:andesite",
 		"minecraft:diorite",
@@ -248,16 +295,17 @@ ServerEvents.tags('block', event => {
 		"quark:polished_myalite",
 	])
 
-	event.add('forge:needs_netherite_tool', [
-		/waystones\:/
-	])
-
 	event.remove('minecraft:mineable/axe', [
-		/aquamirae\:painting\_/
+		/aquamirae\:painting\_/,
+		'summoningrituals:altar'
 	])
 
 	event.remove('minecraft:mineable/pickaxe', [
 		'ecologics:pot'
+	])
+
+	event.add('minecraft:mineable/pickaxe', [
+		'summoningrituals:altar'
 	])
 
 	event.add('adj:alloy_forge', [
@@ -270,10 +318,6 @@ ServerEvents.tags('block', event => {
 
 	event.add('adj:alloy_forge_casing', [
 		/adj\:.*casing/
-	])
-
-	event.add('minecraft:needs_iron_tool', [
-		/deepslate/
 	])
 
 	event.remove('minecraft:mineable/axe', [

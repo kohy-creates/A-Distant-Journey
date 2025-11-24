@@ -60,6 +60,7 @@ ServerEvents.tags('item', event => {
 
 	event.add('adjtweaks:curio_exclusions/gloves', [
 		/aether:.*_gloves/,
+		/umbral_skies:.*gloves/,
 		'lost_aether_content:power_gloves',
 	])
 

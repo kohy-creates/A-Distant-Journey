@@ -72,6 +72,16 @@
 		[types.wood_type.snifferplus]
 			stone_pine = true
 
+		[types.wood_type.twilightforest]
+			twilight_oak = true
+			canopy = true
+			mangrove = true
+			dark = true
+			time = true
+			transformation = true
+			mining = true
+			sorting = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -128,6 +138,22 @@
 
 		[types.leaves_type.snifferplus]
 			stone_pine = true
+
+		[types.leaves_type.twilightdelight]
+			ironwood = true
+
+		[types.leaves_type.twilightforest]
+			thorn = true
+			beanstalk = true
+			twilight_oak = true
+			canopy = true
+			mangrove = true
+			dark = true
+			rainbow_oak = true
+			time = true
+			transformation = true
+			mining = true
+			sorting = true
 
 	[types.cake]
 
@@ -635,6 +661,16 @@
 		[types.cut_block_type.snifferplus]
 			stone_pine = true
 
+		[types.cut_block_type.twilightforest]
+			twilight_oak = true
+			canopy = true
+			mangrove = true
+			dark = true
+			time = true
+			transformation = true
+			mining = true
+			sorting = true
+
 #Disables specific entries
 [entries]
 
@@ -690,6 +726,12 @@
 
 		[entries.wood_type.farmersdelight]
 			cabinet = true
+
+		[entries.wood_type.twilightforest]
+			hollow_log_horizontal = true
+			hollow_log_vertical = true
+			banister = true
+			hollow_log_climbable = true
 
 	[entries.leaves_type]
 
