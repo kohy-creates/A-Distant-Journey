@@ -15,8 +15,8 @@
 // Items can also be injected into entity loot tables, as seen in the Wither example below.
 // ---------------------------------------------------------------------------------------------------------------------------------- 
 
-  "minecraft:entities/wither": 0.05,
-  "minecraft:entities/ender_dragon": 0.5,
+  "minecraft:entities/wither": 0,
+  "minecraft:entities/ender_dragon": 0,
   "minecraft:chests/ruined_portal": 0.0,
   "minecraft:chests/village/village_armorer": 0.0,
   "minecraft:chests/village/village_butcher": 0.0,

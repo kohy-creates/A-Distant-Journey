@@ -19,7 +19,7 @@
 	#How many items the collector upgrade will try to pull
 	UPGRADE_COLLECTOR_ITEMS = 4
 	#How much the storage of an item drawer with a Copper Upgrade should be multiplied by
-	COPPER_MULTIPLIER = 6
+	COPPER_MULTIPLIER = 8
 	#How much the storage of an item drawer with a Gold Upgrade should be multiplied by
 	GOLD_MULTIPLIER = 16
 	#How much the storage of an item drawer with a Diamond Upgrade should be multiplied by
