@@ -26,5 +26,5 @@
       }
     }
   },
-  "parent": "minecraft:end/enter_end_gateway"
+  "parent": "adj:root"
 }

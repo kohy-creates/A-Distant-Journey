@@ -2,6 +2,14 @@ ItemEvents.modification(event => {
 
 	const nourishment = 'farmersdelight:nourishment'
 
+	event.modify(/.*/, item => {
+		if (item.getFoodProperties() != null) {
+			item.setFoodProperties(food => {
+				food.alwaysEdible()
+			})
+		}
+	})
+
 	event.modify('aquamirae:poseidons_breakfast', item => {
 		item.setFoodProperties(food => {
 			food.removeEffect('obscure_api:fury')

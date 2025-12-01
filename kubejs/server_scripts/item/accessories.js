@@ -400,11 +400,10 @@ LootJS.modifiers(event => {
 		'cave_spider',
 		'born_in_chaos_v1:baby_spider',
 		'born_in_chaos_v1:baby_spider_controlled'
-	])
-		.pool((pool) => {
-			pool.randomChance(0.03)
-			pool.addLoot(LootEntry.of('confluence:bezoar'))
-		})
+	]).pool((pool) => {
+		pool.randomChance(0.03)
+		pool.addLoot(LootEntry.of('confluence:bezoar'))
+	})
 
 	event.addEntityLootModifier('minecraft:wither_skeleton')
 		.pool((pool) => {
@@ -431,11 +430,10 @@ LootJS.modifiers(event => {
 		'witherstormmod:sickened_iron_golem',
 		'witherstormmod:sickened_pig',
 		'witherstormmod:sickened_snow_golem',
-	])
-		.pool((pool) => {
-			pool.randomChance(0.01)
-			pool.addLoot(LootEntry.of('confluence:holy_water'))
-		})
+	]).pool((pool) => {
+		pool.randomChance(0.01)
+		pool.addLoot(LootEntry.of('confluence:holy_water'))
+	})
 
 	event.addEntityLootModifier([
 		'zombie',
@@ -451,10 +449,18 @@ LootJS.modifiers(event => {
 		.pool((pool) => {
 			pool.randomChance(0.01)
 			pool.addLoot(LootEntry.of('confluence:vitamins'))
-		})
-		.pool((pool) => {
+		}).pool((pool) => {
 			pool.randomChance(0.01)
 			pool.addLoot(LootEntry.of('confluence:shackle'))
+		})
+
+	event.addEntityLootModifier([
+		'enderman',
+		'phantom'
+	])
+		.pool(pool => {
+			pool.randomChance(0.07);
+			pool.addLoot(LootEntry.of('confluence:blindfold'))
 		})
 
 	event.addEntityLootModifier('husk')

@@ -1,6 +1,7 @@
 {
   "global": {
     "enabled": true,
+    "fastSettings": true,
     "locked": false,
     "disableOculusWarning": true,
     "freezeEffect": false,

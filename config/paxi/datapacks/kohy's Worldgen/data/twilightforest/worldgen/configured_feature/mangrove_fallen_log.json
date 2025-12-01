@@ -9,7 +9,7 @@
       }
     },
     "normal": {
-      "Name": "twilightforest:mangrove_log",
+      "Name": "minecraft:mangrove_log",
       "Properties": {
         "axis": "y"
       }

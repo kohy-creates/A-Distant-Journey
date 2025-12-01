@@ -82,6 +82,8 @@
 		"item:cataclysm:music_disc_the_cataclysmfarer",
 		"item:cataclysm:music_disc_the_harbinger",
 		"item:cataclysm:music_disc_the_leviathan",
+		"item:create_connected:music_disc_elevator",
+		"item:create_connected:music_disc_interlude",
 		"item:ecologics:music_disc_coconut",
 		"item:etched:blank_music_disc",
 		"item:etched:etched_music_disc",
@@ -640,6 +642,7 @@
 		"item:handcrafted:mangrove_table",
 		"item:handcrafted:mangrove_counter",
 		"item:farmersdelight:mangrove_cabinet",
+		"item:twilightdelight:mangrove_cabinet",
 		"item:quark:mangrove_chest",
 		"item:handcrafted:mangrove_fancy_bed",
 		"item:minecraft:mangrove_stairs",
@@ -904,6 +907,7 @@
 		"item:enhanced_mushrooms:stripped_mushroom_hyphae",
 		"item:everycomp:q/enhanced_mushrooms/stripped_mushroom_post",
 		"item:enhanced_mushrooms:mushroom_planks",
+		"item:enhanced_mushrooms:mushroom_bookshelf",
 		"item:everycomp:hc/enhanced_mushrooms/mushroom_bench",
 		"item:everycomp:hc/enhanced_mushrooms/mushroom_chair",
 		"item:everycomp:hc/enhanced_mushrooms/mushroom_couch",
@@ -938,6 +942,7 @@
 		"item:quark:stripped_azalea_wood",
 		"item:quark:stripped_azalea_post",
 		"item:quark:azalea_planks",
+		"item:quark:azalea_bookshelf",
 		"item:quark:azalea_bookshelf",
 		"item:everycomp:hc/quark/azalea_bench",
 		"item:everycomp:hc/quark/azalea_chair",
@@ -1052,6 +1057,7 @@
 		"item:quark:stripped_blossom_post",
 		"item:quark:blossom_planks",
 		"item:quark:blossom_bookshelf",
+		"item:quark:blossom_bookshelf",
 		"item:quark:blossom_chest",
 		"item:quark:blossom_chest",
 		"item:quark:blossom_planks_stairs",
@@ -1078,6 +1084,7 @@
 		"item:quark:stripped_ancient_wood",
 		"item:quark:stripped_ancient_post",
 		"item:quark:ancient_planks",
+		"item:quark:ancient_bookshelf",
 		"item:quark:ancient_bookshelf",
 		"item:quark:ancient_chest",
 		"item:quark:ancient_chest",
@@ -1142,6 +1149,7 @@
 		"item:upgrade_aquatic:stripped_driftwood",
 		"item:everycomp:q/upgrade_aquatic/stripped_driftwood_post",
 		"item:upgrade_aquatic:driftwood_planks",
+		"item:upgrade_aquatic:driftwood_bookshelf",
 		"item:everycomp:q/upgrade_aquatic/driftwood_bookshelf",
 		"item:everycomp:hc/upgrade_aquatic/driftwood_bench",
 		"item:everycomp:hc/upgrade_aquatic/driftwood_chair",
@@ -1239,6 +1247,7 @@
 		"item:upgrade_aquatic:stripped_river_wood",
 		"item:everycomp:q/upgrade_aquatic/stripped_river_post",
 		"item:upgrade_aquatic:river_planks",
+		"item:upgrade_aquatic:river_bookshelf",
 		"item:everycomp:q/upgrade_aquatic/river_bookshelf",
 		"item:everycomp:hc/upgrade_aquatic/river_bench",
 		"item:everycomp:hc/upgrade_aquatic/river_chair",
@@ -1444,6 +1453,7 @@
 		"item:aether:stripped_skyroot_wood",
 		"item:everycomp:q/aether/stripped_skyroot_post",
 		"item:aether:skyroot_planks",
+		"item:aether:skyroot_bookshelf",
 		"item:everycomp:hc/aether/skyroot_bench",
 		"item:everycomp:hc/aether/skyroot_chair",
 		"item:everycomp:hc/aether/skyroot_couch",
@@ -1480,6 +1490,7 @@
 		"item:aether_redux:stripped_fieldsproot_wood",
 		"item:everycomp:q/aether_redux/stripped_fieldsproot_post",
 		"item:aether_redux:fieldsproot_planks",
+		"item:aether_redux:fieldsproot_bookshelf",
 		"item:everycomp:hc/aether_redux/fieldsproot_bench",
 		"item:everycomp:hc/aether_redux/fieldsproot_chair",
 		"item:everycomp:hc/aether_redux/fieldsproot_couch",
@@ -1516,6 +1527,7 @@
 		"item:aether_redux:stripped_crystal_wood",
 		"item:everycomp:q/aether_redux/stripped_crystal_post",
 		"item:aether_redux:crystal_planks",
+		"item:aether_redux:crystal_bookshelf",
 		"item:everycomp:hc/aether_redux/crystal_bench",
 		"item:everycomp:hc/aether_redux/crystal_chair",
 		"item:everycomp:hc/aether_redux/crystal_couch",
@@ -1552,6 +1564,7 @@
 		"item:aether_redux:stripped_glacia_wood",
 		"item:everycomp:q/aether_redux/stripped_glacia_post",
 		"item:aether_redux:glacia_planks",
+		"item:aether_redux:glacia_bookshelf",
 		"item:everycomp:hc/aether_redux/glacia_bench",
 		"item:everycomp:hc/aether_redux/glacia_chair",
 		"item:everycomp:hc/aether_redux/glacia_couch",
@@ -1588,6 +1601,7 @@
 		"item:aether_redux:stripped_cloudcap_hyphae",
 		"item:everycomp:q/aether_redux/stripped_cloudcap_post",
 		"item:aether_redux:cloudcap_planks",
+		"item:aether_redux:cloudcap_bookshelf",
 		"item:everycomp:hc/aether_redux/cloudcap_bench",
 		"item:everycomp:hc/aether_redux/cloudcap_chair",
 		"item:everycomp:hc/aether_redux/cloudcap_couch",
@@ -1624,6 +1638,7 @@
 		"item:aether_redux:stripped_blightwillow_wood",
 		"item:everycomp:q/aether_redux/stripped_blightwillow_post",
 		"item:aether_redux:blightwillow_planks",
+		"item:aether_redux:blightwillow_bookshelf",
 		"item:everycomp:hc/aether_redux/blightwillow_bench",
 		"item:everycomp:hc/aether_redux/blightwillow_chair",
 		"item:everycomp:hc/aether_redux/blightwillow_couch",
@@ -1657,6 +1672,7 @@
 		"item:aether_redux:jellyshroom_hyphae",
 		"item:everycomp:q/aether_redux/jellyshroom_post",
 		"item:aether_redux:jellyshroom_planks",
+		"item:aether_redux:jellyshroom_bookshelf",
 		"item:everycomp:hc/aether_redux/jellyshroom_bench",
 		"item:everycomp:hc/aether_redux/jellyshroom_chair",
 		"item:everycomp:hc/aether_redux/jellyshroom_couch",
@@ -1844,6 +1860,7 @@
 		"item:handcrafted:mangrove_table",
 		"item:handcrafted:mangrove_counter",
 		"item:farmersdelight:mangrove_cabinet",
+		"item:twilightdelight:mangrove_cabinet",
 		"item:twilightforest:mangrove_chest",
 		"item:quark:mangrove_chest",
 		"item:handcrafted:mangrove_fancy_bed",
@@ -1882,6 +1899,7 @@
 		"item:everycomp:hc/twilightforest/mining_table",
 		"item:everycomp:hc/twilightforest/mining_counter",
 		"item:everycomp:fd/twilightforest/mining_cabinet",
+		"item:twilightdelight:mining_cabinet",
 		"item:twilightforest:mining_chest",
 		"item:everycomp:hc/twilightforest/mining_fancy_bed",
 		"item:twilightforest:mining_stairs",
@@ -1908,6 +1926,7 @@
 		"item:twilightforest:stripped_canopy_wood",
 		"item:everycomp:q/twilightforest/stripped_canopy_post",
 		"item:twilightforest:canopy_planks",
+		"item:twilightforest:canopy_bookshelf",
 		"item:everycomp:hc/twilightforest/canopy_bench",
 		"item:everycomp:hc/twilightforest/canopy_chair",
 		"item:everycomp:hc/twilightforest/canopy_couch",
@@ -1918,6 +1937,7 @@
 		"item:everycomp:hc/twilightforest/canopy_table",
 		"item:everycomp:hc/twilightforest/canopy_counter",
 		"item:everycomp:fd/twilightforest/canopy_cabinet",
+		"item:twilightdelight:canopy_cabinet",
 		"item:twilightforest:canopy_chest",
 		"item:everycomp:hc/twilightforest/canopy_fancy_bed",
 		"item:twilightforest:canopy_stairs",
@@ -1955,6 +1975,7 @@
 		"item:everycomp:hc/twilightforest/twilight_oak_table",
 		"item:everycomp:hc/twilightforest/twilight_oak_counter",
 		"item:everycomp:fd/twilightforest/twilight_oak_cabinet",
+		"item:twilightdelight:twilight_oak_cabinet",
 		"item:twilightforest:twilight_oak_chest",
 		"item:everycomp:hc/twilightforest/twilight_oak_fancy_bed",
 		"item:twilightforest:twilight_oak_stairs",
@@ -1992,6 +2013,7 @@
 		"item:everycomp:hc/twilightforest/dark_table",
 		"item:everycomp:hc/twilightforest/dark_counter",
 		"item:everycomp:fd/twilightforest/dark_cabinet",
+		"item:twilightdelight:dark_cabinet",
 		"item:twilightforest:dark_chest",
 		"item:everycomp:hc/twilightforest/dark_fancy_bed",
 		"item:twilightforest:dark_stairs",
@@ -2029,6 +2051,7 @@
 		"item:everycomp:hc/twilightforest/transformation_table",
 		"item:everycomp:hc/twilightforest/transformation_counter",
 		"item:everycomp:fd/twilightforest/transformation_cabinet",
+		"item:twilightdelight:transformation_cabinet",
 		"item:twilightforest:transformation_chest",
 		"item:everycomp:hc/twilightforest/transformation_fancy_bed",
 		"item:twilightforest:transformation_stairs",
@@ -2066,6 +2089,7 @@
 		"item:everycomp:hc/twilightforest/time_table",
 		"item:everycomp:hc/twilightforest/time_counter",
 		"item:everycomp:fd/twilightforest/time_cabinet",
+		"item:twilightdelight:time_cabinet",
 		"item:twilightforest:time_chest",
 		"item:everycomp:hc/twilightforest/time_fancy_bed",
 		"item:twilightforest:time_stairs",
@@ -2103,6 +2127,7 @@
 		"item:everycomp:hc/twilightforest/sorting_table",
 		"item:everycomp:hc/twilightforest/sorting_counter",
 		"item:everycomp:fd/twilightforest/sorting_cabinet",
+		"item:twilightdelight:sorting_cabinet",
 		"item:twilightforest:sorting_chest",
 		"item:everycomp:hc/twilightforest/sorting_fancy_bed",
 		"item:twilightforest:sorting_stairs",
@@ -2182,6 +2207,7 @@
 		"item:v_slab_compat:naturalist/shellstone_vertical_slab",
 		"item:v_slab_compat:create/polished_cut_scoria_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/light_blue_tile_vertical_slab",
+		"item:v_slab_compat:create_things_and_misc/brass_brick_vertical_slab",
 		"item:v_slab_compat:ars_nouveau/gilded_sourcestone_small_bricks_vertical_slab",
 		"item:v_slab_compat:create/cut_diorite_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/red_terracotta_brick_vertical_slab",
@@ -2466,6 +2492,7 @@
 		"item:v_slab_compat:galosphere/polished_rose_pink_salt_vertical_slab",
 		"item:v_slab_compat:phantasm/crystal_tiles_vertical_slab",
 		"item:v_slab_compat:botania/red_quartz_vertical_slab",
+		"item:v_slab_compat:create_things_and_misc/brass_tiles_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/white_shingle_vertical_slab",
 		"item:v_slab_compat:create/cut_scorchia_vertical_slab",
 		"item:v_slab_compat:netherexp/basalt_vertical_slab",
@@ -2779,8 +2806,16 @@
 			"after": "item:cataclysm:music_disc_the_harbinger"
 		},
 		{
-			"stack": "item:ecologics:music_disc_coconut",
+			"stack": "item:create_connected:music_disc_elevator",
 			"after": "item:cataclysm:music_disc_the_leviathan"
+		},
+		{
+			"stack": "item:create_connected:music_disc_interlude",
+			"after": "item:create_connected:music_disc_elevator"
+		},
+		{
+			"stack": "item:ecologics:music_disc_coconut",
+			"after": "item:create_connected:music_disc_interlude"
 		},
 		{
 			"stack": "item:etched:blank_music_disc",
@@ -5011,8 +5046,12 @@
 			"after": "item:handcrafted:mangrove_counter"
 		},
 		{
-			"stack": "item:quark:mangrove_chest",
+			"stack": "item:twilightdelight:mangrove_cabinet",
 			"after": "item:farmersdelight:mangrove_cabinet"
+		},
+		{
+			"stack": "item:quark:mangrove_chest",
+			"after": "item:twilightdelight:mangrove_cabinet"
 		},
 		{
 			"stack": "item:handcrafted:mangrove_fancy_bed",
@@ -6067,8 +6106,12 @@
 			"after": "item:everycomp:q/enhanced_mushrooms/stripped_mushroom_post"
 		},
 		{
-			"stack": "item:everycomp:hc/enhanced_mushrooms/mushroom_bench",
+			"stack": "item:enhanced_mushrooms:mushroom_bookshelf",
 			"after": "item:enhanced_mushrooms:mushroom_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/enhanced_mushrooms/mushroom_bench",
+			"after": "item:enhanced_mushrooms:mushroom_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/enhanced_mushrooms/mushroom_chair",
@@ -6205,6 +6248,10 @@
 		{
 			"stack": "item:quark:azalea_bookshelf",
 			"after": "item:quark:azalea_planks"
+		},
+		{
+			"stack": "item:quark:azalea_bookshelf",
+			"after": "item:quark:azalea_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/quark/azalea_bench",
@@ -6659,6 +6706,10 @@
 			"after": "item:quark:blossom_planks"
 		},
 		{
+			"stack": "item:quark:blossom_bookshelf",
+			"after": "item:quark:blossom_bookshelf"
+		},
+		{
 			"stack": "item:quark:blossom_chest",
 			"after": "item:quark:blossom_bookshelf"
 		},
@@ -6765,6 +6816,10 @@
 		{
 			"stack": "item:quark:ancient_bookshelf",
 			"after": "item:quark:ancient_planks"
+		},
+		{
+			"stack": "item:quark:ancient_bookshelf",
+			"after": "item:quark:ancient_bookshelf"
 		},
 		{
 			"stack": "item:quark:ancient_chest",
@@ -7019,8 +7074,12 @@
 			"after": "item:everycomp:q/upgrade_aquatic/stripped_driftwood_post"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/driftwood_bookshelf",
+			"stack": "item:upgrade_aquatic:driftwood_bookshelf",
 			"after": "item:upgrade_aquatic:driftwood_planks"
+		},
+		{
+			"stack": "item:everycomp:q/upgrade_aquatic/driftwood_bookshelf",
+			"after": "item:upgrade_aquatic:driftwood_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_bench",
@@ -7407,8 +7466,12 @@
 			"after": "item:everycomp:q/upgrade_aquatic/stripped_river_post"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/river_bookshelf",
+			"stack": "item:upgrade_aquatic:river_bookshelf",
 			"after": "item:upgrade_aquatic:river_planks"
+		},
+		{
+			"stack": "item:everycomp:q/upgrade_aquatic/river_bookshelf",
+			"after": "item:upgrade_aquatic:river_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/upgrade_aquatic/river_bench",
@@ -8227,8 +8290,12 @@
 			"after": "item:everycomp:q/aether/stripped_skyroot_post"
 		},
 		{
-			"stack": "item:everycomp:hc/aether/skyroot_bench",
+			"stack": "item:aether:skyroot_bookshelf",
 			"after": "item:aether:skyroot_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/aether/skyroot_bench",
+			"after": "item:aether:skyroot_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/aether/skyroot_chair",
@@ -8371,8 +8438,12 @@
 			"after": "item:everycomp:q/aether_redux/stripped_fieldsproot_post"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/fieldsproot_bench",
+			"stack": "item:aether_redux:fieldsproot_bookshelf",
 			"after": "item:aether_redux:fieldsproot_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/fieldsproot_bench",
+			"after": "item:aether_redux:fieldsproot_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/fieldsproot_chair",
@@ -8515,8 +8586,12 @@
 			"after": "item:everycomp:q/aether_redux/stripped_crystal_post"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/crystal_bench",
+			"stack": "item:aether_redux:crystal_bookshelf",
 			"after": "item:aether_redux:crystal_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/crystal_bench",
+			"after": "item:aether_redux:crystal_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/crystal_chair",
@@ -8659,8 +8734,12 @@
 			"after": "item:everycomp:q/aether_redux/stripped_glacia_post"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/glacia_bench",
+			"stack": "item:aether_redux:glacia_bookshelf",
 			"after": "item:aether_redux:glacia_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/glacia_bench",
+			"after": "item:aether_redux:glacia_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/glacia_chair",
@@ -8803,8 +8882,12 @@
 			"after": "item:everycomp:q/aether_redux/stripped_cloudcap_post"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/cloudcap_bench",
+			"stack": "item:aether_redux:cloudcap_bookshelf",
 			"after": "item:aether_redux:cloudcap_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/cloudcap_bench",
+			"after": "item:aether_redux:cloudcap_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/cloudcap_chair",
@@ -8947,8 +9030,12 @@
 			"after": "item:everycomp:q/aether_redux/stripped_blightwillow_post"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/blightwillow_bench",
+			"stack": "item:aether_redux:blightwillow_bookshelf",
 			"after": "item:aether_redux:blightwillow_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/blightwillow_bench",
+			"after": "item:aether_redux:blightwillow_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/blightwillow_chair",
@@ -9079,8 +9166,12 @@
 			"after": "item:everycomp:q/aether_redux/jellyshroom_post"
 		},
 		{
-			"stack": "item:everycomp:hc/aether_redux/jellyshroom_bench",
+			"stack": "item:aether_redux:jellyshroom_bookshelf",
 			"after": "item:aether_redux:jellyshroom_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/aether_redux/jellyshroom_bench",
+			"after": "item:aether_redux:jellyshroom_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/jellyshroom_chair",
@@ -9827,8 +9918,12 @@
 			"after": "item:handcrafted:mangrove_counter"
 		},
 		{
-			"stack": "item:twilightforest:mangrove_chest",
+			"stack": "item:twilightdelight:mangrove_cabinet",
 			"after": "item:farmersdelight:mangrove_cabinet"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_chest",
+			"after": "item:twilightdelight:mangrove_cabinet"
 		},
 		{
 			"stack": "item:quark:mangrove_chest",
@@ -9979,8 +10074,12 @@
 			"after": "item:everycomp:hc/twilightforest/mining_counter"
 		},
 		{
-			"stack": "item:twilightforest:mining_chest",
+			"stack": "item:twilightdelight:mining_cabinet",
 			"after": "item:everycomp:fd/twilightforest/mining_cabinet"
+		},
+		{
+			"stack": "item:twilightforest:mining_chest",
+			"after": "item:twilightdelight:mining_cabinet"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/mining_fancy_bed",
@@ -10083,8 +10182,12 @@
 			"after": "item:everycomp:q/twilightforest/stripped_canopy_post"
 		},
 		{
-			"stack": "item:everycomp:hc/twilightforest/canopy_bench",
+			"stack": "item:twilightforest:canopy_bookshelf",
 			"after": "item:twilightforest:canopy_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/twilightforest/canopy_bench",
+			"after": "item:twilightforest:canopy_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/canopy_chair",
@@ -10123,8 +10226,12 @@
 			"after": "item:everycomp:hc/twilightforest/canopy_counter"
 		},
 		{
-			"stack": "item:twilightforest:canopy_chest",
+			"stack": "item:twilightdelight:canopy_cabinet",
 			"after": "item:everycomp:fd/twilightforest/canopy_cabinet"
+		},
+		{
+			"stack": "item:twilightforest:canopy_chest",
+			"after": "item:twilightdelight:canopy_cabinet"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/canopy_fancy_bed",
@@ -10271,8 +10378,12 @@
 			"after": "item:everycomp:hc/twilightforest/twilight_oak_counter"
 		},
 		{
-			"stack": "item:twilightforest:twilight_oak_chest",
+			"stack": "item:twilightdelight:twilight_oak_cabinet",
 			"after": "item:everycomp:fd/twilightforest/twilight_oak_cabinet"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_chest",
+			"after": "item:twilightdelight:twilight_oak_cabinet"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/twilight_oak_fancy_bed",
@@ -10419,8 +10530,12 @@
 			"after": "item:everycomp:hc/twilightforest/dark_counter"
 		},
 		{
-			"stack": "item:twilightforest:dark_chest",
+			"stack": "item:twilightdelight:dark_cabinet",
 			"after": "item:everycomp:fd/twilightforest/dark_cabinet"
+		},
+		{
+			"stack": "item:twilightforest:dark_chest",
+			"after": "item:twilightdelight:dark_cabinet"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/dark_fancy_bed",
@@ -10567,8 +10682,12 @@
 			"after": "item:everycomp:hc/twilightforest/transformation_counter"
 		},
 		{
-			"stack": "item:twilightforest:transformation_chest",
+			"stack": "item:twilightdelight:transformation_cabinet",
 			"after": "item:everycomp:fd/twilightforest/transformation_cabinet"
+		},
+		{
+			"stack": "item:twilightforest:transformation_chest",
+			"after": "item:twilightdelight:transformation_cabinet"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/transformation_fancy_bed",
@@ -10715,8 +10834,12 @@
 			"after": "item:everycomp:hc/twilightforest/time_counter"
 		},
 		{
-			"stack": "item:twilightforest:time_chest",
+			"stack": "item:twilightdelight:time_cabinet",
 			"after": "item:everycomp:fd/twilightforest/time_cabinet"
+		},
+		{
+			"stack": "item:twilightforest:time_chest",
+			"after": "item:twilightdelight:time_cabinet"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/time_fancy_bed",
@@ -10863,8 +10986,12 @@
 			"after": "item:everycomp:hc/twilightforest/sorting_counter"
 		},
 		{
-			"stack": "item:twilightforest:sorting_chest",
+			"stack": "item:twilightdelight:sorting_cabinet",
 			"after": "item:everycomp:fd/twilightforest/sorting_cabinet"
+		},
+		{
+			"stack": "item:twilightforest:sorting_chest",
+			"after": "item:twilightdelight:sorting_cabinet"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/sorting_fancy_bed",
@@ -11177,6 +11304,10 @@
 		{
 			"stack": "item:v_slab_compat:hearth_and_home/light_blue_tile_vertical_slab",
 			"after": "item:hearth_and_home:light_blue_tile_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:create_things_and_misc/brass_brick_vertical_slab",
+			"after": "item:create_things_and_misc:brass_brick_slab"
 		},
 		{
 			"stack": "item:v_slab_compat:ars_nouveau/gilded_sourcestone_small_bricks_vertical_slab",
@@ -12315,6 +12446,10 @@
 			"after": "item:botania:red_quartz_slab"
 		},
 		{
+			"stack": "item:v_slab_compat:create_things_and_misc/brass_tiles_vertical_slab",
+			"after": "item:create_things_and_misc:brass_tiles_slab"
+		},
+		{
 			"stack": "item:v_slab_compat:hearth_and_home/white_shingle_vertical_slab",
 			"after": "item:hearth_and_home:white_shingle_slab"
 		},
@@ -12423,6 +12558,8 @@
 		"/cataclysm:music_disc_the_cataclysmfarer/",
 		"/cataclysm:music_disc_the_harbinger/",
 		"/cataclysm:music_disc_the_leviathan/",
+		"/create_connected:music_disc_elevator/",
+		"/create_connected:music_disc_interlude/",
 		"/ecologics:music_disc_coconut/",
 		"/etched:blank_music_disc/",
 		"/etched:etched_music_disc/",
@@ -12981,6 +13118,7 @@
 		"/handcrafted:mangrove_table/",
 		"/handcrafted:mangrove_counter/",
 		"/farmersdelight:mangrove_cabinet/",
+		"/twilightdelight:mangrove_cabinet/",
 		"/quark:mangrove_chest/",
 		"/handcrafted:mangrove_fancy_bed/",
 		"/minecraft:mangrove_stairs/",
@@ -13245,6 +13383,7 @@
 		"/enhanced_mushrooms:stripped_mushroom_hyphae/",
 		"/everycomp:q\\/enhanced_mushrooms/stripped_mushroom_post/",
 		"/enhanced_mushrooms:mushroom_planks/",
+		"/enhanced_mushrooms:mushroom_bookshelf/",
 		"/everycomp:hc\\/enhanced_mushrooms/mushroom_bench/",
 		"/everycomp:hc\\/enhanced_mushrooms/mushroom_chair/",
 		"/everycomp:hc\\/enhanced_mushrooms/mushroom_couch/",
@@ -13279,6 +13418,7 @@
 		"/quark:stripped_azalea_wood/",
 		"/quark:stripped_azalea_post/",
 		"/quark:azalea_planks/",
+		"/quark:azalea_bookshelf/",
 		"/quark:azalea_bookshelf/",
 		"/everycomp:hc\\/quark/azalea_bench/",
 		"/everycomp:hc\\/quark/azalea_chair/",
@@ -13393,6 +13533,7 @@
 		"/quark:stripped_blossom_post/",
 		"/quark:blossom_planks/",
 		"/quark:blossom_bookshelf/",
+		"/quark:blossom_bookshelf/",
 		"/quark:blossom_chest/",
 		"/quark:blossom_chest/",
 		"/quark:blossom_planks_stairs/",
@@ -13419,6 +13560,7 @@
 		"/quark:stripped_ancient_wood/",
 		"/quark:stripped_ancient_post/",
 		"/quark:ancient_planks/",
+		"/quark:ancient_bookshelf/",
 		"/quark:ancient_bookshelf/",
 		"/quark:ancient_chest/",
 		"/quark:ancient_chest/",
@@ -13483,6 +13625,7 @@
 		"/upgrade_aquatic:stripped_driftwood/",
 		"/everycomp:q\\/upgrade_aquatic/stripped_driftwood_post/",
 		"/upgrade_aquatic:driftwood_planks/",
+		"/upgrade_aquatic:driftwood_bookshelf/",
 		"/everycomp:q\\/upgrade_aquatic/driftwood_bookshelf/",
 		"/everycomp:hc\\/upgrade_aquatic/driftwood_bench/",
 		"/everycomp:hc\\/upgrade_aquatic/driftwood_chair/",
@@ -13580,6 +13723,7 @@
 		"/upgrade_aquatic:stripped_river_wood/",
 		"/everycomp:q\\/upgrade_aquatic/stripped_river_post/",
 		"/upgrade_aquatic:river_planks/",
+		"/upgrade_aquatic:river_bookshelf/",
 		"/everycomp:q\\/upgrade_aquatic/river_bookshelf/",
 		"/everycomp:hc\\/upgrade_aquatic/river_bench/",
 		"/everycomp:hc\\/upgrade_aquatic/river_chair/",
@@ -13785,6 +13929,7 @@
 		"/aether:stripped_skyroot_wood/",
 		"/everycomp:q\\/aether/stripped_skyroot_post/",
 		"/aether:skyroot_planks/",
+		"/aether:skyroot_bookshelf/",
 		"/everycomp:hc\\/aether/skyroot_bench/",
 		"/everycomp:hc\\/aether/skyroot_chair/",
 		"/everycomp:hc\\/aether/skyroot_couch/",
@@ -13821,6 +13966,7 @@
 		"/aether_redux:stripped_fieldsproot_wood/",
 		"/everycomp:q\\/aether_redux/stripped_fieldsproot_post/",
 		"/aether_redux:fieldsproot_planks/",
+		"/aether_redux:fieldsproot_bookshelf/",
 		"/everycomp:hc\\/aether_redux/fieldsproot_bench/",
 		"/everycomp:hc\\/aether_redux/fieldsproot_chair/",
 		"/everycomp:hc\\/aether_redux/fieldsproot_couch/",
@@ -13857,6 +14003,7 @@
 		"/aether_redux:stripped_crystal_wood/",
 		"/everycomp:q\\/aether_redux/stripped_crystal_post/",
 		"/aether_redux:crystal_planks/",
+		"/aether_redux:crystal_bookshelf/",
 		"/everycomp:hc\\/aether_redux/crystal_bench/",
 		"/everycomp:hc\\/aether_redux/crystal_chair/",
 		"/everycomp:hc\\/aether_redux/crystal_couch/",
@@ -13893,6 +14040,7 @@
 		"/aether_redux:stripped_glacia_wood/",
 		"/everycomp:q\\/aether_redux/stripped_glacia_post/",
 		"/aether_redux:glacia_planks/",
+		"/aether_redux:glacia_bookshelf/",
 		"/everycomp:hc\\/aether_redux/glacia_bench/",
 		"/everycomp:hc\\/aether_redux/glacia_chair/",
 		"/everycomp:hc\\/aether_redux/glacia_couch/",
@@ -13929,6 +14077,7 @@
 		"/aether_redux:stripped_cloudcap_hyphae/",
 		"/everycomp:q\\/aether_redux/stripped_cloudcap_post/",
 		"/aether_redux:cloudcap_planks/",
+		"/aether_redux:cloudcap_bookshelf/",
 		"/everycomp:hc\\/aether_redux/cloudcap_bench/",
 		"/everycomp:hc\\/aether_redux/cloudcap_chair/",
 		"/everycomp:hc\\/aether_redux/cloudcap_couch/",
@@ -13965,6 +14114,7 @@
 		"/aether_redux:stripped_blightwillow_wood/",
 		"/everycomp:q\\/aether_redux/stripped_blightwillow_post/",
 		"/aether_redux:blightwillow_planks/",
+		"/aether_redux:blightwillow_bookshelf/",
 		"/everycomp:hc\\/aether_redux/blightwillow_bench/",
 		"/everycomp:hc\\/aether_redux/blightwillow_chair/",
 		"/everycomp:hc\\/aether_redux/blightwillow_couch/",
@@ -13998,6 +14148,7 @@
 		"/aether_redux:jellyshroom_hyphae/",
 		"/everycomp:q\\/aether_redux/jellyshroom_post/",
 		"/aether_redux:jellyshroom_planks/",
+		"/aether_redux:jellyshroom_bookshelf/",
 		"/everycomp:hc\\/aether_redux/jellyshroom_bench/",
 		"/everycomp:hc\\/aether_redux/jellyshroom_chair/",
 		"/everycomp:hc\\/aether_redux/jellyshroom_couch/",
@@ -14185,6 +14336,7 @@
 		"/handcrafted:mangrove_table/",
 		"/handcrafted:mangrove_counter/",
 		"/farmersdelight:mangrove_cabinet/",
+		"/twilightdelight:mangrove_cabinet/",
 		"/twilightforest:mangrove_chest/",
 		"/quark:mangrove_chest/",
 		"/handcrafted:mangrove_fancy_bed/",
@@ -14223,6 +14375,7 @@
 		"/everycomp:hc\\/twilightforest/mining_table/",
 		"/everycomp:hc\\/twilightforest/mining_counter/",
 		"/everycomp:fd\\/twilightforest/mining_cabinet/",
+		"/twilightdelight:mining_cabinet/",
 		"/twilightforest:mining_chest/",
 		"/everycomp:hc\\/twilightforest/mining_fancy_bed/",
 		"/twilightforest:mining_stairs/",
@@ -14249,6 +14402,7 @@
 		"/twilightforest:stripped_canopy_wood/",
 		"/everycomp:q\\/twilightforest/stripped_canopy_post/",
 		"/twilightforest:canopy_planks/",
+		"/twilightforest:canopy_bookshelf/",
 		"/everycomp:hc\\/twilightforest/canopy_bench/",
 		"/everycomp:hc\\/twilightforest/canopy_chair/",
 		"/everycomp:hc\\/twilightforest/canopy_couch/",
@@ -14259,6 +14413,7 @@
 		"/everycomp:hc\\/twilightforest/canopy_table/",
 		"/everycomp:hc\\/twilightforest/canopy_counter/",
 		"/everycomp:fd\\/twilightforest/canopy_cabinet/",
+		"/twilightdelight:canopy_cabinet/",
 		"/twilightforest:canopy_chest/",
 		"/everycomp:hc\\/twilightforest/canopy_fancy_bed/",
 		"/twilightforest:canopy_stairs/",
@@ -14296,6 +14451,7 @@
 		"/everycomp:hc\\/twilightforest/twilight_oak_table/",
 		"/everycomp:hc\\/twilightforest/twilight_oak_counter/",
 		"/everycomp:fd\\/twilightforest/twilight_oak_cabinet/",
+		"/twilightdelight:twilight_oak_cabinet/",
 		"/twilightforest:twilight_oak_chest/",
 		"/everycomp:hc\\/twilightforest/twilight_oak_fancy_bed/",
 		"/twilightforest:twilight_oak_stairs/",
@@ -14333,6 +14489,7 @@
 		"/everycomp:hc\\/twilightforest/dark_table/",
 		"/everycomp:hc\\/twilightforest/dark_counter/",
 		"/everycomp:fd\\/twilightforest/dark_cabinet/",
+		"/twilightdelight:dark_cabinet/",
 		"/twilightforest:dark_chest/",
 		"/everycomp:hc\\/twilightforest/dark_fancy_bed/",
 		"/twilightforest:dark_stairs/",
@@ -14370,6 +14527,7 @@
 		"/everycomp:hc\\/twilightforest/transformation_table/",
 		"/everycomp:hc\\/twilightforest/transformation_counter/",
 		"/everycomp:fd\\/twilightforest/transformation_cabinet/",
+		"/twilightdelight:transformation_cabinet/",
 		"/twilightforest:transformation_chest/",
 		"/everycomp:hc\\/twilightforest/transformation_fancy_bed/",
 		"/twilightforest:transformation_stairs/",
@@ -14407,6 +14565,7 @@
 		"/everycomp:hc\\/twilightforest/time_table/",
 		"/everycomp:hc\\/twilightforest/time_counter/",
 		"/everycomp:fd\\/twilightforest/time_cabinet/",
+		"/twilightdelight:time_cabinet/",
 		"/twilightforest:time_chest/",
 		"/everycomp:hc\\/twilightforest/time_fancy_bed/",
 		"/twilightforest:time_stairs/",
@@ -14444,6 +14603,7 @@
 		"/everycomp:hc\\/twilightforest/sorting_table/",
 		"/everycomp:hc\\/twilightforest/sorting_counter/",
 		"/everycomp:fd\\/twilightforest/sorting_cabinet/",
+		"/twilightdelight:sorting_cabinet/",
 		"/twilightforest:sorting_chest/",
 		"/everycomp:hc\\/twilightforest/sorting_fancy_bed/",
 		"/twilightforest:sorting_stairs/",
@@ -14523,6 +14683,7 @@
 		"/v_slab_compat:naturalist\\/shellstone_vertical_slab/",
 		"/v_slab_compat:create\\/polished_cut_scoria_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/light_blue_tile_vertical_slab/",
+		"/v_slab_compat:create_things_and_misc\\/brass_brick_vertical_slab/",
 		"/v_slab_compat:ars_nouveau\\/gilded_sourcestone_small_bricks_vertical_slab/",
 		"/v_slab_compat:create\\/cut_diorite_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/red_terracotta_brick_vertical_slab/",
@@ -14807,6 +14968,7 @@
 		"/v_slab_compat:galosphere\\/polished_rose_pink_salt_vertical_slab/",
 		"/v_slab_compat:phantasm\\/crystal_tiles_vertical_slab/",
 		"/v_slab_compat:botania\\/red_quartz_vertical_slab/",
+		"/v_slab_compat:create_things_and_misc\\/brass_tiles_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/white_shingle_vertical_slab/",
 		"/v_slab_compat:create\\/cut_scorchia_vertical_slab/",
 		"/v_slab_compat:netherexp\\/basalt_vertical_slab/",

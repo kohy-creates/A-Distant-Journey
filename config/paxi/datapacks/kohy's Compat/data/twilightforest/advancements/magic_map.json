@@ -1,0 +1,43 @@
+{
+  "parent": "twilightforest:magic_map_focus",
+  "criteria": {
+    "magic_map": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:filled_magic_map"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.twilightforest.magic_map.desc",
+      "with": [
+        {
+          "translate": "item.twilightforest.filled_magic_map"
+        }
+      ]
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "twilightforest:filled_magic_map"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.twilightforest.magic_map"
+    }
+  },
+  "requirements": [
+    [
+      "magic_map"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -11,5 +11,5 @@
 #Additionally, killed hostile mobs in the Twilight Forest dimension have a chance (0.5%) to drop Time powder.
 #Using Time powder on boss spawner remnants brings the spawner back, allowing the boss to be fought again.
 ["BOSS SPAWNER REMNANTS"]
-	"The boss spawner feature is enabled: " = true
+	"The boss spawner feature is enabled: " = false
 

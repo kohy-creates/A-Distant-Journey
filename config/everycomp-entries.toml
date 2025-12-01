@@ -671,6 +671,10 @@
 			mining = true
 			sorting = true
 
+		[types.cut_block_type.create_things_and_misc]
+			brass_tiles = true
+			brass_brick = true
+
 #Disables specific entries
 [entries]
 

@@ -66,7 +66,10 @@ ServerEvents.recipes((event) => {
 		'botania:mana_pylon',
 		'botania:natura_pylon',
 		'botania:gaia_pylon',
-		'botania:spark'
+		'botania:spark',
+		'enchantinginfuser:advanced_enchanting_infuser',
+		'twilightforest:uncrafting_table',
+		'ars_elemental:mark_of_mastery'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -2138,21 +2141,7 @@ ServerEvents.recipes((event) => {
 		]
 	).transitionalItem(inter).loops(16).id('adj:eyes/ethercraft')
 
-	event.recipes.ars_nouveau.enchanting_apparatus(
-		[
-			'ars_nouveau:wilden_tribute',
-			'ars_elemental:mark_of_mastery',
-			'aether_redux:gravitite_block',
-			'mythicmetals:midas_gold_block',
-			'botania:rune_mana',
-			'botania:rune_mana',
-			'botania:rune_mana',
-			'botania:rune_mana'
-		],
-		'ender_eye',
-		'kubejs:eye_of_arcanum',
-		10000
-	).id('adj:eyes/arcanum')
+
 
 	event.shaped(
 		Item.of('mythicmetals:durasteel_engine'),
@@ -3910,8 +3899,6 @@ ServerEvents.recipes((event) => {
 		}
 	})
 
-	workshopRecipe(['12x botania:elementium_ingot', '4x botania:life_essence', '4x botanicadds:gaiasteel_ingot', '16x feather', '4x botania:ender_air_bottle'], Item.of('botania:flight_tiara'), 'botania:flight_tiara_0')
-
 	// Binding Wayfinders
 	function locateStructureRitual(structure, ingredients) {
 
@@ -3937,7 +3924,7 @@ ServerEvents.recipes((event) => {
 	locateStructureRitual('#ars_nouveau:wilden_den', ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'ars_nouveau:source_gem', rune('wrath')]);
 	locateStructureRitual('betterfortresses:fortress', ['nether_bricks', 'nether_bricks', 'nether_bricks', 'quark:soul_bead']);
 	locateStructureRitual('minecraft:pillager_outpost', ['emerald_block', 'galosphere:silver_block', rune('greed')]);
-	locateStructureRitual('minecraft:monument', ['prismarine', 'prismarine', 'prismarine', 'prismarine', rune('water')]);
+	locateStructureRitual('betteroceanmonuments:ocean_monument', ['prismarine', 'prismarine', 'prismarine', 'prismarine', rune('water')]);
 	locateStructureRitual('minecraft:trail_ruins', ['rediscovered:ruby', 'rediscovered:ruby', 'rediscovered:ruby']);
 	locateStructureRitual('minecraft:end_city', ['ender_eye', 'purpur_block', 'purpur_block', 'purpur_block', rune('envy')]);
 	locateStructureRitual('minecraft:ancient_city', ['minecraft:deepslate_bricks', 'minecraft:deepslate_bricks', 'minecraft:deepslate_bricks', 'echo_shard', 'echo_shard']);
@@ -3959,4 +3946,57 @@ ServerEvents.recipes((event) => {
 			}).id(`adj:repairing/${flattenedID(item.getId())}`)
 		}
 	})
+
+	// Summoning Rituals
+	function toSeconds(time) {
+		return time * 20
+	}
+	event.recipes.summoningrituals.altar('botania:elementium_block')
+		.itemOutput('botania:flight_tiara')
+		.input(
+			'4x botania:life_essence',
+			'4x botanicadds:gaiasteel_ingot',
+			'16x feather',
+			'4x botania:ender_air_bottle'
+		)
+		.sacrifice('parrot', 1)
+		.sacrificeRegion(16, 5)
+		.recipeTime(toSeconds(30))
+		.id('botania:flight_tiara_0')
+
+	event.recipes.summoningrituals.altar('ars_nouveau:wilden_tribute')
+		.itemOutput('5x ars_elemental:mark_of_mastery')
+		.input(
+			'ars_nouveau:earth_essence',
+			'ars_nouveau:water_essence',
+			'ars_nouveau:fire_essence',
+			'ars_nouveau:air_essence',
+			'ars_nouveau:abjuration_essence',
+			'ars_nouveau:conjuration_essence',
+			'ars_nouveau:manipulation_essence',
+			'ars_elemental:anima_essence',
+		)
+		.recipeTime(toSeconds(20))
+		.id('adj:mark_of_mastery')
+
+	event.recipes.summoningrituals.altar('enchantinginfuser:enchanting_infuser')
+		.itemOutput('enchantinginfuser:advanced_enchanting_infuser')
+		.input(
+			'4x #c:bookshelves',
+			'20x crying_obsidian',
+			'2x netherite_ingot'
+		)
+		.recipeTime(toSeconds(10))
+		.id('adj:advanced_enchanting_table')
+
+	event.recipes.summoningrituals.altar('ender_eye')
+		.itemOutput('kubejs:eye_of_arcanum')
+		.input(
+			'ars_elemental:mark_of_mastery',
+			'12x aether_redux:gravitite_block',
+			'24x mythicmetals:midas_gold_block',
+			'64x ars_nouveau:source_gem_block',
+		)
+		.recipeTime(toSeconds(45))
+		.id('adj:eyes/arcanum')
 });

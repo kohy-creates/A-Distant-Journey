@@ -256,7 +256,10 @@
 		"minecraft:trapped_chest": "quark:oak_trapped_chest",
 
 		"twilightforest:moss_patch": "minecraft:moss_carpet",
-		"twilightforest:mayapple": "verdantvibes:parlour_palm",
+		"twilightforest:mayapple": "adjblocks:bush",
+
+		"twilightforest:wispy_cloud": "aether:cold_aercloud",
+		"twilightforest:fluffy_cloud": "aether:cold_aercloud",
 
 		"twilightforest:oak_banister": "minecraft:oak_fence",
 		"twilightforest:spruce_banister": "minecraft:spruce_fence",

@@ -9,7 +9,7 @@
 				"path": "^advancements/recipes.*$"
 			},
 			{
-				"namespace": "^(?!botania$|the_bumblezone$|adj$|born_in_chaos_v1$|true_ending$|unusualend$|twilight_forest$)",
+				"namespace": "^(?!botania$|the_bumblezone$|adj$|born_in_chaos_v1$|true_ending$|unusualend$|twilightforest$)",
 				"path": "^advancements/.*$"
 			},
 			{

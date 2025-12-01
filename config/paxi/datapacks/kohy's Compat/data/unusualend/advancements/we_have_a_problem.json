@@ -31,5 +31,5 @@
   "rewards": {
     "experience": 100
   },
-  "parent": "minecraft:end/elytra"
+  "parent": "adj:root"
 }

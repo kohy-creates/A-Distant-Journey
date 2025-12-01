@@ -115,10 +115,10 @@
 		{
 			dependencies: ["5BE98BA6A0B68228"]
 			id: "5AD11F2BB6466384"
-			subtitle: "Craft a Shared Ender Chest. You can set its channel with Dyes"
+			subtitle: "Craft a Void Chest"
 			tasks: [{
-				id: "32DD974AE4484D9E"
-				item: "enderstorage:ender_chest"
+				id: "191513AB2EB00D42"
+				item: "createutilities:void_chest"
 				type: "item"
 			}]
 			title: "Shared Folder"
@@ -141,10 +141,10 @@
 		{
 			dependencies: ["7EDDEFE957513B50"]
 			id: "59124904F1A83FE8"
-			subtitle: "Craft an Ender Tank. You can set its channel with Dyes"
+			subtitle: "Craft a Void Tank"
 			tasks: [{
-				id: "0CF8CA38B906A3A8"
-				item: "enderstorage:ender_tank"
+				id: "78AB3894CB6704C4"
+				item: "createutilities:void_tank"
 				type: "item"
 			}]
 			title: "Open Source"

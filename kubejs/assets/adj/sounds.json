@@ -46,5 +46,13 @@
 				"stream": false
 			}
 		]
+	},
+	"summoning_altar_spawn": {
+		"sounds": [
+			{
+				"name": "adj:summoning_altar_spawn",
+				"stream": false
+			}
+		]
 	}
 }
