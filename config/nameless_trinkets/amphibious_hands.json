@@ -1,0 +1,6 @@
+{
+  "config": {
+    "miningUnderwaterSpeedPercentage": 35.0,
+    "isEnable": true
+  }
+}

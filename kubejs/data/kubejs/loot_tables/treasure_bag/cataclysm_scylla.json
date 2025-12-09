@@ -1,19 +1,6 @@
 {
-	"type": "minecraft:entity",
+	"type": "minecraft:gift",
 	"pools": [
-		{
-			"bonus_rolls": 0.0,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"functions": [
-					],
-					"quality": 4,
-					"name": "mcdw:crossbow_harpoon_crossbow"
-				}
-			],
-			"rolls": 1.0
-		},
 		{
 			"bonus_rolls": 0.0,
 			"entries": [

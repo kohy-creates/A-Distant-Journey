@@ -5,10 +5,6 @@
 	#Set to 0 to disable or 1 to make all items unbreakable
 	#Range: 0.0 ~ 1.0
 	DURABILITY_SAVE_CHANCE = 0.33
-	#Chance (0 - 1) to treat blocks as if they were mined with Fortune higher by 1
-	#This also applies to breaking blocks without Fortune. Set to 0 to disable
-	#Range: 0.0 ~ 1.0
-	EXTRA_FORTUNE_CHANCE = 1.0
 	#Delay in ticks after which shield will start blocking damage
 	#5 is vanilla, 0 is immediately
 	#Range: > 0

@@ -1881,6 +1881,13 @@
 		"item:twilightforest:mangrove_hanging_sign",
 		"item:twilightforest:mangrove_boat",
 		"item:twilightforest:mangrove_chest_boat",
+		"item:ribbits:mossy_oak_planks",
+		"item:ribbits:mossy_oak_planks_stairs",
+		"item:ribbits:mossy_oak_planks_slab",
+		"item:ribbits:mossy_oak_planks_slab",
+		"item:ribbits:mossy_oak_planks_fence",
+		"item:ribbits:mossy_oak_planks_fence_gate",
+		"item:ribbits:mossy_oak_door",
 		"item:twilightforest:mining_log",
 		"item:twilightforest:mining_wood",
 		"item:everycomp:q/twilightforest/mining_post",
@@ -2170,6 +2177,7 @@
 		"item:v_slab_compat:create/polished_cut_veridium_vertical_slab",
 		"item:v_slab_compat:create/small_scorchia_brick_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/cyan_tile_vertical_slab",
+		"item:v_slab_compat:ribbits/mossy_oak_planks_vertical_slab",
 		"item:v_slab_compat:netherexp/polished_basalt_vertical_slab",
 		"item:v_slab_compat:botania/metamorphic_mountain_stone_vertical_slab",
 		"item:v_slab_compat:create/polished_cut_deepslate_vertical_slab",
@@ -2429,6 +2437,7 @@
 		"item:v_slab_compat:create/waxed_copper_tile_vertical_slab",
 		"item:v_slab_compat:ars_nouveau/gilded_sourcestone_alternating_vertical_slab",
 		"item:v_slab_compat:create/cut_dripstone_vertical_slab",
+		"item:v_slab_compat:etcetera/leveled_stone_vertical_slab",
 		"item:v_slab_compat:upgrade_aquatic/dead_coralstone_vertical_slab",
 		"item:v_slab_compat:alexscaves/galena_vertical_slab",
 		"item:v_slab_compat:upgrade_aquatic/tooth_brick_vertical_slab",
@@ -10002,8 +10011,36 @@
 			"after": "item:twilightforest:mangrove_boat"
 		},
 		{
-			"stack": "item:twilightforest:mining_log",
+			"stack": "item:ribbits:mossy_oak_planks",
 			"after": "item:twilightforest:mangrove_chest_boat"
+		},
+		{
+			"stack": "item:ribbits:mossy_oak_planks_stairs",
+			"after": "item:ribbits:mossy_oak_planks"
+		},
+		{
+			"stack": "item:ribbits:mossy_oak_planks_slab",
+			"after": "item:ribbits:mossy_oak_planks_stairs"
+		},
+		{
+			"stack": "item:ribbits:mossy_oak_planks_slab",
+			"after": "item:ribbits:mossy_oak_planks_slab"
+		},
+		{
+			"stack": "item:ribbits:mossy_oak_planks_fence",
+			"after": "item:ribbits:mossy_oak_planks_slab"
+		},
+		{
+			"stack": "item:ribbits:mossy_oak_planks_fence_gate",
+			"after": "item:ribbits:mossy_oak_planks_fence"
+		},
+		{
+			"stack": "item:ribbits:mossy_oak_door",
+			"after": "item:ribbits:mossy_oak_planks_fence_gate"
+		},
+		{
+			"stack": "item:twilightforest:mining_log",
+			"after": "item:ribbits:mossy_oak_door"
 		},
 		{
 			"stack": "item:twilightforest:mining_wood",
@@ -11158,6 +11195,10 @@
 			"after": "item:hearth_and_home:cyan_tile_slab"
 		},
 		{
+			"stack": "item:v_slab_compat:ribbits/mossy_oak_planks_vertical_slab",
+			"after": "item:ribbits:mossy_oak_planks_slab"
+		},
+		{
 			"stack": "item:v_slab_compat:netherexp/polished_basalt_vertical_slab",
 			"after": "item:netherexp:polished_basalt_slab"
 		},
@@ -12192,6 +12233,10 @@
 		{
 			"stack": "item:v_slab_compat:create/cut_dripstone_vertical_slab",
 			"after": "item:create:cut_dripstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:etcetera/leveled_stone_vertical_slab",
+			"after": "item:etcetera:leveled_stone_slab"
 		},
 		{
 			"stack": "item:v_slab_compat:upgrade_aquatic/dead_coralstone_vertical_slab",
@@ -14357,6 +14402,13 @@
 		"/twilightforest:mangrove_hanging_sign/",
 		"/twilightforest:mangrove_boat/",
 		"/twilightforest:mangrove_chest_boat/",
+		"/ribbits:mossy_oak_planks/",
+		"/ribbits:mossy_oak_planks_stairs/",
+		"/ribbits:mossy_oak_planks_slab/",
+		"/ribbits:mossy_oak_planks_slab/",
+		"/ribbits:mossy_oak_planks_fence/",
+		"/ribbits:mossy_oak_planks_fence_gate/",
+		"/ribbits:mossy_oak_door/",
 		"/twilightforest:mining_log/",
 		"/twilightforest:mining_wood/",
 		"/everycomp:q\\/twilightforest/mining_post/",
@@ -14646,6 +14698,7 @@
 		"/v_slab_compat:create\\/polished_cut_veridium_vertical_slab/",
 		"/v_slab_compat:create\\/small_scorchia_brick_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/cyan_tile_vertical_slab/",
+		"/v_slab_compat:ribbits\\/mossy_oak_planks_vertical_slab/",
 		"/v_slab_compat:netherexp\\/polished_basalt_vertical_slab/",
 		"/v_slab_compat:botania\\/metamorphic_mountain_stone_vertical_slab/",
 		"/v_slab_compat:create\\/polished_cut_deepslate_vertical_slab/",
@@ -14905,6 +14958,7 @@
 		"/v_slab_compat:create\\/waxed_copper_tile_vertical_slab/",
 		"/v_slab_compat:ars_nouveau\\/gilded_sourcestone_alternating_vertical_slab/",
 		"/v_slab_compat:create\\/cut_dripstone_vertical_slab/",
+		"/v_slab_compat:etcetera\\/leveled_stone_vertical_slab/",
 		"/v_slab_compat:upgrade_aquatic\\/dead_coralstone_vertical_slab/",
 		"/v_slab_compat:alexscaves\\/galena_vertical_slab/",
 		"/v_slab_compat:upgrade_aquatic\\/tooth_brick_vertical_slab/",

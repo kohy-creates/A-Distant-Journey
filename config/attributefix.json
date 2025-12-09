@@ -517,6 +517,17 @@
         "value": 10
       }
     },
+    "enhancedai:push_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "caelus:fall_flying": {
       "enabled": false,
       "min": {
@@ -647,6 +658,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "enhancedai:spawn_reinforcements_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "value": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
       }
     },
     "confluence:ranged_velocity": {
@@ -1133,6 +1155,17 @@
         "value": 64
       }
     },
+    "adjcore:player.extra_fortune_level": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
     "additionalentityattributes:generic.lava_speed": {
       "enabled": false,
       "min": {
@@ -1276,6 +1309,17 @@
         "value": 20
       }
     },
+    "enhancedai:xray_follow_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 256,
+        "value": 256
+      }
+    },
     "attributeslib:arrow_damage": {
       "enabled": false,
       "min": {
@@ -1285,6 +1329,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "adjcore:generic.safe_fall_distance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "attributeslib:arrow_velocity": {

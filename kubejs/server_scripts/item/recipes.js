@@ -188,6 +188,16 @@ ServerEvents.recipes((event) => {
 		'netherdepthsupgrade:ender_eye',
 
 		/botania:mana_infusion\/.*_leaves_dupe/,
+
+		'alexscaves:seeking_arrow',
+		'cataclysm:void_scatter_arrow',
+		'minecraft:spectral_arrow',
+		'naturalist:spectral_arrow_from_glow_goop',
+		'rediscovered:purple_arrow',
+		'quark:tools/crafting/torch_arrow',
+		'tide:deep_aqua_arrow',
+
+		'create:crafting/kinetics/super_glue'
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -251,6 +261,38 @@ ServerEvents.recipes((event) => {
 	).id('adj:lodestone')
 
 	event.recipes.botania.mana_infusion('naturescompass:naturescompass', 'minecraft:compass').mana(1000000).id('adj:nature_compass')
+
+	function itemsOnGround(ingredients, output, id, inBlock) {
+		let recipe = {
+			"type": "lychee:item_inside",
+			"item_in": [],
+			"blocks_in": (inBlock) ? inBlock : "*",
+			"post": [
+				{
+					"type": "drop_item",
+					"item": (Array.isArray(output)) ? output[0] : output,
+					"count": (Array.isArray(output)) ? output[1] : 1,
+				}
+			]
+		}
+
+		ingredients.forEach(i => {
+			if (Array.isArray(i)) {
+				for (let j = 0; j < i[1]; j++) {
+					recipe.item_in.push({
+						"item": i[0]
+					})
+				}
+			}
+			else {
+				recipe.item_in.push({
+					"item": i
+				})
+			}
+		})
+
+		event.custom(recipe).id((id) ? id : `adj:${flattenedID((Array.isArray(output)) ? output[0] : output)}`)
+	}
 
 	/**
 	 * Registers a BotanicAdds Gaia Plate recipe
@@ -452,19 +494,6 @@ ServerEvents.recipes((event) => {
 		40,
 		[
 			['3+', 'output', 2]
-		]
-	)
-
-	alloyForgeRecipe(
-		[
-			['#c:gold_ingots', 3],
-			['#c:copper_ingots', 3]
-		],
-		'output',
-		1,
-		5,
-		[
-			['2+', 'output', 2]
 		]
 	)
 
@@ -2159,7 +2188,7 @@ ServerEvents.recipes((event) => {
 	).id('adj:durasteel_engine')
 
 	const cookingTimeOverrides = {
-		'artifacts:eternal_steak': 120, // in seconds btw
+		'artifacts:eternal_steak': 60 * 15, // in seconds btw
 		'born_in_chaos_v1:smoked_monster_flesh': 15,
 		'born_in_chaos_v1:smoked_fish': 10,
 		'alexscaves:cooked_dinosaur_chop': 25,
@@ -2839,9 +2868,11 @@ ServerEvents.recipes((event) => {
 	campfireRecipe('soul_torch', '#soul_fire_base_blocks', 'soul_campfire')
 	campfireRecipe('netherexp:ancient_torch', 'magma_block', 'netherexp:ancient_campfire')
 
-	function arrowRecipe(input, outputAmount) {
+	function arrowRecipe(input, outputAmount, output) {
+		let outputArrow = (output) ? output : 'arrow';
+		event.remove({ type: 'crafting_shaped', output: outputArrow })
 		event.shaped(
-			Item.of('arrow', outputAmount),
+			Item.of(outputArrow, outputAmount),
 			[
 				'I',
 				'S',
@@ -2854,12 +2885,24 @@ ServerEvents.recipes((event) => {
 			}
 		).id(`adj:arrow_from_${flattenedID(input)}`)
 	}
-	arrowRecipe('iron_nugget', 8)
-	arrowRecipe('flint', 20)
-	arrowRecipe('ars_nouveau:wilden_spike', 50)
+	arrowRecipe('iron_nugget', 10);
+	arrowRecipe('flint', 25);
+	arrowRecipe('ars_nouveau:wilden_spike', 40);
 
-	event.campfireCooking('minecraft:torch', 'minecraft:stick', 0, 50).id('adj:torch_from_campfire')
-	event.campfireCooking('minecraft:charcoal', '#logs_that_burn', 0.15, 1200).id('adj:charcoal_from_campfire')
+	arrowRecipe('mythicmetals:star_platinum_ingot', 25, 'mythicmetals:star_platinum_arrow');
+	arrowRecipe('mythicmetals:runite_ingot', 30, 'mythicmetals:runite_arrow');
+	arrowRecipe('heart_crystals:heart_crystal_shard', 10, 'heart_crystals:cupids_arrow');
+
+	itemsOnGround([['arrow', 25], 'alexscaves:scarlet_neodymium_ingot'], ['alexscaves:seeking_arrow', 25]);
+	itemsOnGround([['arrow', 15], 'phantom_membrane'], ['rediscovered:purple_arrow', 15]);
+	itemsOnGround([['spectral_arrow', 10], 'cataclysm:void_jaw'], ['cataclysm:void_scatter_arrow', 15]);
+	itemsOnGround([['arrow', 5], ['naturalist:glow_goop', 2]], ['spectral_arrow', 5], 'adj:spectral_arrow_goop');
+	itemsOnGround([['arrow', 10], ['glowstone_dust', 1]], ['spectral_arrow', 10], 'adj:spectral_arrow_glowstone_dust');
+	itemsOnGround([['arrow', 5], 'torch'], ['quark:torch_arrow', 5]);
+	itemsOnGround([['arrow', 15], 'tide:deep_aqua_crystal'], ['tide:deep_aqua_arrow', 5]);
+
+	event.campfireCooking('minecraft:torch', 'minecraft:stick', 0, 50).id('adj:torch_from_campfire');
+	event.campfireCooking('minecraft:charcoal', '#logs_that_burn', 0.15, 1200).id('adj:charcoal_from_campfire');
 
 	// Items to Farmer's Delight Stew recipes
 	const stewIDs = [

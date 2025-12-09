@@ -40,7 +40,7 @@
   "clock_24_hour": true,
   "clock_seasons": true,
   "clock_text_colour": 14737632,
-  "clock_vertical_position": 85,
+  "clock_vertical_position": 165,
   "clock_horizontal_position_left": false,
   "clock_items": [
     "minecraft:clock",

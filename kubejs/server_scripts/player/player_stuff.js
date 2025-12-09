@@ -8,6 +8,7 @@ PlayerEvents.tick(event => {
 	const FlyingUUID = '923052c1-2354-48ba-b01a-51e31360e219'
 	const FishingUUID = 'b790c0a0-0934-41e2-a2f4-d59b6671db5b'
 	const SpellBookManaUUID = 'b790c0a0-0934-41e2-a2f4-d59b6671db5b'
+	const ExtraFortuneUUID = '766a19b7-a084-4797-af71-409699208487'
 
 	// Base attributes
 	const miningSpeedAttribute = player.getAttribute('attributeslib:mining_speed')
@@ -27,7 +28,6 @@ PlayerEvents.tick(event => {
 	let hasPrism = false;
 	let spellBookTier = 0;
 	inventory.forEach(item => {
-
 		switch (item.id) {
 			case 'structure_gel:building_tool':
 				hasPrism = true;
@@ -46,7 +46,6 @@ PlayerEvents.tick(event => {
 				if (spellBookTier < 3) spellBookTier = 3;
 				break;
 		}
-
 	})
 	const creativeFlightAttribute = player.getAttribute('attributeslib:creative_flight');
 	const flying = creativeFlightAttribute.getModifier(FlyingUUID)
@@ -60,7 +59,6 @@ PlayerEvents.tick(event => {
 	const maxManaAttribute = player.getAttribute('ars_nouveau:ars_nouveau.perk.max_mana');
 	const spellBookMana = maxManaAttribute.getModifier(SpellBookManaUUID);
 	if (!spellBookMana && spellBookTier > 0) {
-
 		let amount = 0;
 		switch (spellBookTier) {
 			case 2:
@@ -72,8 +70,15 @@ PlayerEvents.tick(event => {
 		}
 		maxManaAttribute.addPermanentModifier(new $AttributeModifier(SpellBookManaUUID, 'Spell Book Max Mana', amount, $Operation.ADDITION))
 	}
-	else if (spellBookMana && spellBookTier == 0)
+	else if (spellBookMana && spellBookTier == 0) {
 		maxManaAttribute.removeModifier(SpellBookManaUUID);
+	}
+
+	const extraFortuneAttribute = player.getAttribute('adjcore:player.extra_fortune_level');
+	const extraFortune = extraFortuneAttribute.getModifier(ExtraFortuneUUID);
+	if (!extraFortune) {
+		extraFortuneAttribute.addPermanentModifier(new $AttributeModifier(ExtraFortuneUUID, 'More Ore drops by default', 1, $Operation.ADDITION))
+	}
 
 
 	// const persistentData = player.getPersistentData();

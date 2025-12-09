@@ -36,13 +36,6 @@ function setEntityAttributes(entity, health, damage, armor) {
 	entity.setAttributeBaseValue($ALObjects.Attributes.CRIT_CHANCE.get(), 0);
 }
 
-const entitiesScalingWithSize = [
-	'minecraft:magma_cube',
-	'minecraft:slime',
-	'minecraft:phantom',
-	'the_bumblezone:honey_slime'
-]
-
 /**
  * @param {Internal.LivingEntity_} entity 
  * @param {number} currentStage 
@@ -75,7 +68,7 @@ function scaleEntity(entity, currentStage) {
 		armor = getStageValue(armorArr, currentStage)
 	}
 
-	if (entitiesScalingWithSize.includes(entity.type)) {
+	if (global.entitiesScalingWithSize.includes(entity.type)) {
 		let size = entity.getNbt().getInt('Size');
 		health *= Math.pow(2, size);
 		damage += (damage * Math.ceil(size * 1.5));
@@ -215,7 +208,7 @@ function hardcoreModifications(entity) {
 				'mcdw:scythe_jailors_scythe': 2,
 				'minecraft:iron_axe': 9,
 				'minecraft:diamond_axe': 2
-				
+
 			}));
 			break;
 		}

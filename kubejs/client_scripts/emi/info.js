@@ -60,7 +60,7 @@ JEIEvents.information(event => {
 		'Collects passing time while in your inventory which can then be spent to accelerate the tick speed of any block.'
 	])
 
-	event.addItem(['minecraft:fletching_table', '@morevillagers', /*'dungeonsweaponry:weaponry_table'*/], [
+	event.addItem(['minecraft:fletching_table', '@morevillagers'], [
 		'Workstation for Villagers. Serves no purpose outside of that.'
 	])
 
@@ -85,8 +85,12 @@ JEIEvents.information(event => {
 		'Look through your recipe browser to see what potions can be crafted that way.'
 	])
 
-	event.addItem(/^(?!.*floating).*_ore.*$/, [
+	event.addItem(/^(?!.*floating).*_ore$/, [
 		'All ores are highly resistant to explosives, making mining with explosives more efficient with Fortune!'
+	])
+
+	event.addItem('artifacts:everlasting_beef', [
+		'Infinitely renewable food source with a cooldown! 1/500 drop from Cows and Cow-like mobs. Looting boosts the odds to 1/400.'
 	])
 
 	/* 

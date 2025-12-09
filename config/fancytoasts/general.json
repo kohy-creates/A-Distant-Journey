@@ -1,0 +1,14 @@
+{
+  "isJadeHiding": true,
+  "areSoundsEnabled": true,
+  "taskVolume": 1.15,
+  "goalVolume": 1.15,
+  "challengeVolume": 1.15,
+  "loopsStrength": 1.0,
+  "loopsSpeed": 1.0,
+  "offsetX": 0,
+  "offsetY": -50,
+  "toastAnchor": "TOP",
+  "toastScreenBehavior": "TRANSPARENT",
+  "version": 1
+}

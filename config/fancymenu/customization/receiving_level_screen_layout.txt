@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = receiving_level_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1763827781915
+  last_edited_time = 1764784638735
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:79864e09-28d5-49dd-8f07-9de031304bc8-1763827766305] = [groups:][instances:]
+  [loading_requirement_container_meta:0db69f27-04f8-4bdf-a81b-32da72b138d4-1764784633437] = [groups:][instances:]
 }
 
 customization {
@@ -49,7 +49,7 @@ element {
   sticky_anchor = false
   anchor_point = mid-centered
   x = -57
-  y = -104
+  y = -100
   width = 119
   height = 187
   stretch_x = true

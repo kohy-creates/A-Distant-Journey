@@ -52,7 +52,7 @@
 		hide_infinite_effects = false
 		#Maximum amount of status effects rendered in a single row.
 		#Range: 1 ~ 255
-		max_columns = 3
+		max_columns = 8
 		#Space between individual effect widgets on y-axis.
 		#Range: > 0
 		widget_space_y = 1

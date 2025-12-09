@@ -82,10 +82,5 @@
 		"#adj:warped_forest": "adj:music.biome.warped_forest",
 		"#adj:basalt_deltas": "adj:music.biome.basalt_deltas"
 	},
-	"boss": {
-		"minecraft:wither": {
-			"loop": "adj:music.boss.wither_loop",
-			"stop": "adj:music.boss.wither_stop"
-		}
-	}
+	"boss": {}
 }

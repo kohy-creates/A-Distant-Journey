@@ -1,0 +1,807 @@
+{
+	"music.overworld.day": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/calm1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/calm3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/hal2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/hal3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/hal4",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/piano2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative4",
+				"stream": true
+			}
+		]
+	},
+	"music.overworld.rain": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/piano3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/one_more_day",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.overworld.thunder": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/creative/creative2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative6",
+				"stream": true
+			}
+		]
+	},
+	"music.overworld.night": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/calm2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/hal1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/nuance1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/piano1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/nuance2",
+				"stream": true
+			}
+		]
+	},
+	"music.biome.snowy.day": {
+		"sounds": [
+			{
+				"name": "adj:music/flake",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/kyoto",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.cherry_grove.day": {
+		"sounds": [
+			{
+				"name": "music/game/bromeliad",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "music/game/echo_in_the_wind",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.cherry_grove.night": {
+		"sounds": [
+			{
+				"name": "adj:music/os_piano",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "music/game/comforting_memories",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.mountains.day": {
+		"sounds": [
+			{
+				"name": "music/game/a_familiar_room",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/watcher",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "music/game/floating_dream",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/stand_tall",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.mountains.night": {
+		"sounds": [
+			{
+				"name": "adj:music/pokopoko",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/watcher",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/an_ordinary_day",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "music/game/comforting_memories",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "music/game/infinite_amethyst",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.mountains.rain": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/left_to_bloom",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.forest.night": {
+		"sounds": [
+			{
+				"name": "adj:music/broken_clocks",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/evren",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/fireflies",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.swamp.day": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/swamp/labyrinthine",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "music/game/swamp/firebugs",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.swamp.night": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/fireflies",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "music/game/swamp/aerie",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.badlands.day": {
+		"sounds": [
+			{
+				"name": "adj:music/cacti_canyon",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.desert.day": {
+		"sounds": [
+			{
+				"name": "music/game/crescent_dunes",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.desert.rain": {
+		"sounds": [
+			{
+				"name": "adj:music/canyon_clearance",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.desert.thunder": {
+		"sounds": [
+			{
+				"name": "adj:music/roaming_wanderer",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.beach.day": {
+		"sounds": [
+			{
+				"name": "adj:music/lilypad",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.beach.night": {
+		"sounds": [
+			{
+				"name": "adj:music/beach_house",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.ocean.day": {
+		"sounds": [
+			{
+				"name": "adj:music/coral_rise",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.mushroom_island": {
+		"sounds": [
+			{
+				"name": "adj:music/mooshroom_island",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.ocean.night": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/water/axolotl",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/water/dragon_fish",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/water/shuniji",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.warm_ocean.night": {
+		"sounds": [
+			{
+				"name": "adj:music/tropical_slime_scramble",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.warm_caves": {
+		"sounds": [
+			{
+				"name": "adj:music/miscible",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.forlorn_hollows": {
+		"sounds": [
+			{
+				"name": "adj:music/fizz",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.primordial_caves": {
+		"sounds": [
+			{
+				"name": "adj:music/nostalgia_feeling",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/twilight_cavern",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.caves": {
+		"sounds": [
+			{
+				"name": "adj:music/deeper",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/eld_unknown",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/puzzlebox",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/wending",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.lush_caves": {
+		"sounds": [
+			{
+				"name": "adj:music/featherfall",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/komorebi",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/twilight_cavern",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.deep_dark": {
+		"sounds": [
+			{
+				"name": "music/game/ancestry",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/graveyard",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/sensoring",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.abyssal_chasm": {
+		"sounds": [
+			{
+				"name": "adj:music/hydrothermal_vent",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/the_abyssal_monument",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.magnetic_caves": {
+		"sounds": [
+			{
+				"name": "adj:music/guldrum",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.toxic_caves": {
+		"sounds": [
+			{
+				"name": "adj:music/soggier_cave",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.candy_cavity": {
+		"sounds": [
+			{
+				"name": "adj:music/lochan",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/nostalgia_factor",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/twilight_cavern",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.nether": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/nether/nether1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/nether/nether2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/nether/nether3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/nether/nether4",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/nether/nether_wastes/rubedo",
+				"stream": true
+			}
+		]
+	},
+	"music.biome.soul_sand_valley": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/nether/soulsand_valley/so_below",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.warped_forest": {
+		"sounds": [
+			{
+				"name": "adj:music/psilopsychotic",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/electrophilic_attack",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/obsidian_cavern",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.withered_forest": {
+		"sounds": [
+			{
+				"name": "adj:music/bubbles",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.crimson_forest": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/nether/crimson_forest/chrysopoeia",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.biome.basalt_deltas": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/nether/soulsand_valley/so_below",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.end": {
+		"sounds": [
+			{
+				"name": "adj:music/dubious_kadenia",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/electrophilic_attack",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/empty_rooms",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/endless",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/mosaic",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/obsidian_cavern",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/vacuum_decay",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/ki",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/intro",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/eleven",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.the_aether.day": {
+		"sounds": [
+			{
+				"name": "adj:music/below_and_above",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/etterathder",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/flight_of_fancy",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/soothing_voyage",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/wonderful_wings",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.the_aether.night": {
+		"sounds": [
+			{
+				"name": "adj:music/featherfall",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/yakusoku",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.skylands.day": {
+		"sounds": [
+			{
+				"name": "adj:music/far_lands",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/calm1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/calm3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/hal2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/hal3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/hal4",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/piano2",
+				"stream": true
+			},
+			{
+				"name": "adj:music/chris",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.skylands.night": {
+		"sounds": [
+			{
+				"name": "adj:music/far_lands",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/door",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/equinoxe",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.the_bumblezone": {
+		"sounds": [
+			{
+				"name": "adj:music/stolen_grid",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.menu": {
+		"sounds": [
+			{
+				"name": "adj:music/finnbacka",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.menu_optional": {
+		"sounds": [
+			{
+				"name": "minecraft:music/menu/menu1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/menu/menu2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/menu/menu3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/menu/menu4",
+				"stream": true
+			},
+			{
+				"name": "adj:music/deeper",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/fireflies",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/infinite_amethyst",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/stand_tall",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/one_more_day",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/left_to_bloom",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/wending",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/lilypad",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "adj:music/yakusoku",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	}
+}

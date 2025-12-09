@@ -231,8 +231,11 @@
 		"quark:berry_sack": "berry_good:sweet_berry_basket",
 		"quark:glowberry_sack": "berry_good:glow_berry_basket",
 
+		"farmersdelight:rope": "supplementaries:rope",
+
 		"quark:crate": "minecraft:air",
 		"quark:rope": "supplementaries:rope",
+		"quark:paper_lantern": "hearth_and_home:white_paper_lantern",
 
 		"create:oak_window_pane": "minecraft:glass_pane",
 		"create:spruce_window_pane": "minecraft:glass_pane",

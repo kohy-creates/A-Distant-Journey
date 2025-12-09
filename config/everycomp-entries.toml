@@ -675,6 +675,12 @@
 			brass_tiles = true
 			brass_brick = true
 
+		[types.cut_block_type.etcetera]
+			leveled_stone = true
+
+		[types.cut_block_type.ribbits]
+			mossy_oak_planks = true
+
 #Disables specific entries
 [entries]
 

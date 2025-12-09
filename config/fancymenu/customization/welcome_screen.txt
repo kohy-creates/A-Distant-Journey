@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = welcome_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1763899885116
+  last_edited_time = 1764784775724
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:ff8f6e8e-ec7d-4c08-b17a-b8a1287fdcc4-1763899856066] = [groups:][instances:]
+  [loading_requirement_container_meta:5b29b356-5e3a-4726-bf87-0208773a7e71-1764784683696] = [groups:][instances:]
 }
 
 customization {
@@ -222,7 +222,7 @@ element {
 element {
   interactable = false
   mouse_following = true
-  source = > *If you didn't bother reading this at all then please don't bother asking on Discord 'Erm, what keybind does <insert anything here>. Please.*%n%~kohara
+  source = > *If you didn't bother reading this at all then please don't ask on Discord 'Erm, what keybind does <insert anything here>. Please. I won't let your laziness strain our patience*%n%~kohara (Author)
   source_mode = direct
   nine_slice_border_top = 5
   nine_slice_border_right = 5

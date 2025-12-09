@@ -1,0 +1,21 @@
+{
+  "config": {
+    "percentageOfObtaining": 5.0,
+    "blockList": [
+      "minecraft:coal",
+      "minecraft:diamond",
+      "minecraft:raw_iron",
+      "minecraft:raw_gold",
+      "minecraft:raw_copper",
+      "minecraft:emerald",
+      "minecraft:redstone",
+      "minecraft:flint",
+      "minecraft:lapis_lazuli",
+      "minecraft:glowstone_dust",
+      "rediscovered:ruby",
+      "mythicmetals:raw_orichalcum",
+      "mythicmetals:raw_mythril"
+    ],
+    "isEnable": true
+  }
+}

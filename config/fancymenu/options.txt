@@ -14,7 +14,7 @@ B:advanced_customization_mode = 'true';
 
 ##[loading]
 
-S:preload_resources = '';
+S:preload_resources = '[source:local]config/fancymenu/assets/main_menu/title_animated.fma%!source_end!%';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '';
 B:game_intro_fade_out = 'true';
@@ -67,7 +67,7 @@ F:ui_scale = '4.0';
 B:play_ui_click_sounds = 'true';
 B:enable_ui_text_shadow = 'true';
 I:context_menu_hover_open_speed = '1';
-S:ui_theme = 'dark';
+S:ui_theme = 'nether';
 
 
 ##[debug_overlay]
@@ -86,7 +86,7 @@ B:show_welcome_screen = 'false';
 
 ##[keyframe_editor]
 
-B:arrow_keys_move_preview = 'false';
+B:arrow_keys_move_preview = 'true';
 
 
 ##[advanced]

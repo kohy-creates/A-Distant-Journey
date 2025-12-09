@@ -92,6 +92,7 @@
 		"twilightforest:mangrove_chest_boat",
 		"twilightforest:mangrove_leaves",
 		"twilightforest:mangrove_sapling",
+		"twilightdelight:mangrove_cabinet",
 
 		"twilightforest:oak_banister",
 		"twilightforest:spruce_banister",
@@ -1039,6 +1040,38 @@
 
 		"botanicadds:elvenwood",
 		"botanicadds:elvenwood_log",
+
+		"create_things_and_misc:oak_sail",
+		"create_things_and_misc:birch_sail",
+		"create_things_and_misc:spruce_sail",
+		"create_things_and_misc:acacia_sail",
+		"create_things_and_misc:dark_oak_sail",
+		"create_things_and_misc:jungle_sail",
+		"create_things_and_misc:warped_sail",
+		"create_things_and_misc:crimson_sail",
+		"create_things_and_misc:mangrove_sail",
+		"create_things_and_misc:bamboo_sail",
+		"create_things_and_misc:cherry_sail",
+		"create_things_and_misc:copper_knife",
+		"create_things_and_misc:brass_knife",
+		"create_things_and_misc:zinc_knife",
+		"create_things_and_misc:neon_tube",
+		"create_things_and_misc:sticky_launcher",
+		"create_things_and_misc:brass_sticky_launcher",
+
+		"createutilities:gearcube",
+
+		"etcetera:frame",
+		"etcetera:terracotta_vase",
+		"etcetera:prickly_can",
+		"etcetera:turtle_raft",
+		"etcetera:wrench",
+		"etcetera:chisel",
+		"etcetera:hammer",
+		"etcetera:dice",
+
+		"nameless_trinkets:mysterious_trinket"
+		
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
 	

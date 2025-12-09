@@ -1,0 +1,9 @@
+{
+  "config": {
+    "slownessTime": 80,
+    "slownessLevel": 1,
+    "frostWalkerLevel": 1,
+    "isEnable": true,
+    "inmuneToFreezing": true
+  }
+}

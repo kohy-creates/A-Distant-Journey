@@ -23,7 +23,8 @@ const tags = [
 	"curios:body",
 	//"curios:accessory",
 	"curios:quiver",
-	"curios:hands"
+	"curios:hands",
+	"curios:trinkets",
 ]
 
 ServerEvents.tags('item', event => {

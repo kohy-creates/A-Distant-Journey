@@ -5,6 +5,16 @@ enabled = true
 contentMargin = 3
 #List of item IDs that should be ignored by Obscure Tooltips.
 ignoredItems = ["quality_equipment:reforge_gui_button"]
+#Whether Obscure Tooltips should display the second line in the tooltip header.
+labelsEnabled = true
+#Whether Obscure Tooltips should display drop shadows.
+shadowsEnabled = true
+#The opacity of the drop shadows.
+#Range: 0.0 ~ 1.0
+shadowOpacity = 0.3
+#Whether to show a hint about enabling the built-in Vibrant Tooltips resource pack on game start.
+#Automatically disabled after being shown once.
+showVibrantTooltipsHint = false
 
 [AutoWrapping]
 	#Whether Obscure Tooltips should wrap lines in tooltips.
@@ -35,4 +45,11 @@ ignoredItems = ["quality_equipment:reforge_gui_button"]
 	toolPreviewWhitelist = ["minecraft:trident", "minecraft:bow", "minecraft:crossbow"]
 	#List of item IDs that should never display a 3D tool/weapon preview.
 	toolPreviewBlacklist = []
+
+[Sounds]
+	#Whether Obscure Tooltips should play sound effects.
+	soundsEnabled = true
+	#The volume multiplier for tooltip sound effects.
+	#Range: 0.0 ~ 4.0
+	soundVolume = 1.0
 

@@ -59,7 +59,7 @@
     "randomSize": true,
     "randomFadingSpeed": true,
     "transparency": 0.75,
-    "sizeMultiplier": 1.4
+    "sizeMultiplier": 2.0
   },
   "rain": {
     "enabled": false,

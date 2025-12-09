@@ -1,11 +1,11 @@
-// global.mobs = []
+global.mobs = []
 
 global.WitherStormFlyingSpeed = 0.005;
 
 EntityJSEvents.attributes(event => {
 
 	// Disabled if I don't need it for testing so that it doesn't linger in memory
-	// global.mobs = event.getAllTypes();
+	global.mobs = event.getAllTypes();
 
 	event.modify('player', attributes => {
 		attributes.add('generic.max_health', 100);

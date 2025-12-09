@@ -1,0 +1,12 @@
+#Enables the Lucky Temple structure spawn in the overworld
+luckyTemples = true
+#Whether breaking a Lucky Block in creative mode should activate its effect
+creativeDestroy = true
+#Whether the experimental Luck System should be enabled (Enabling this will cause lucky drops to be generally less variant)
+enableLuck = false
+#A list of loot tables to add Lucky Blocks to
+loot_tables = []
+#The weight of Lucky Blocks in the loot tables specified above (higher weight = more likely to generate)
+#Range: > 0
+lootTableWeight = 3
+

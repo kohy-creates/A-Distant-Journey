@@ -12,3 +12,6 @@ cataclysm:draugr_head
 /_fossil_head
 cataclysm:koboldediator_skull
 /botania:cosmetic
+/etcetera:.*_hood
+/etcetera:.*_sweater
+/etcetera:trader

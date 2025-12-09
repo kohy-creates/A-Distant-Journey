@@ -13,8 +13,26 @@ variable {
 }
 
 variable {
+  name = option.bossbar_style
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
   name = time_in_intro_screen
   value = 
   reset_on_launch = true
+}
+
+variable {
+  name = option.show_mods_button
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
+  name = option.show_player_doll
+  value = 1
+  reset_on_launch = false
 }
 

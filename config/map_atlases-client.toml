@@ -6,7 +6,7 @@
 	only_show_y_when_has_slices = true
 	#Global scale of entire minimap HUD. Keep at 1 for pixel perfect consistency
 	#Range: 0.0 ~ 20.0
-	scale = 1.66
+	scale = 1.5
 	#If 'true', the Mini-Map of the Active Map will be drawn on the HUD while the Atlas is active.
 	enabled = true
 	#How many maps to display in a single minimap. Essentially zoom. Can be a fraction
@@ -57,7 +57,7 @@
 	#Plays page turn sound when current active map changes. Works best when paired with no rotation and no player follow
 	map_change_sound = false
 	#Automatically switches to the nearest slice when possible
-	automatic_slice_change = false
+	automatic_slice_change = true
 	#Hides minimap when inventory is open
 	hide_when_inventory_is_open = false
 	#Shows a background texture for each map, useful to see where each map ends

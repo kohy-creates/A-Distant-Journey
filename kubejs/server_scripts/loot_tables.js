@@ -5,27 +5,45 @@ LootJS.modifiers((event) => {
 		'farmersdelight:wheat_dough': 'create:dough',
 		'rediscovered:quiver': 'supplementaries:quiver',
 		'create:copper_nugget': 'mythicmetals:copper_nugget',
-		'minecraft:chest': 'quark:oak_chest'
-	}
+		'minecraft:chest': 'quark:oak_chest',
 
+		"twilightforest:mangrove_log": "minecraft:mangrove_log",
+		"twilightforest:stripped_mangrove_log": "minecraft:stripped_mangrove_log",
+		"twilightforest:mangrove_wood": "minecraft:mangrove_wood",
+		"twilightforest:stripped_mangrove_wood": "minecraft:stripped_mangrove_wood",
+		"twilightforest:mangrove_planks": "minecraft:mangrove_planks",
+		"twilightforest:mangrove_stairs": "minecraft:mangrove_stairs",
+		"twilightforest:mangrove_slab": "minecraft:mangrove_slab",
+		"twilightforest:mangrove_fence": "minecraft:mangrove_fence",
+		"twilightforest:mangrove_fence_gate": "minecraft:mangrove_fence_gate",
+		"twilightforest:mangrove_door": "minecraft:mangrove_door",
+		"twilightforest:mangrove_trapdoor": "minecraft:mangrove_trapdoor",
+		"twilightforest:mangrove_button": "minecraft:mangrove_button",
+		"twilightforest:mangrove_pressure_plate": "minecraft:mangrove_pressure_plate",
+		"twilightforest:mangrove_sign": "minecraft:mangrove_sign",
+		"twilightforest:mangrove_wall_sign": "minecraft:mangrove_wall_sign",
+		"twilightforest:mangrove_hanging_sign": "minecraft:mangrove_hanging_sign",
+		"twilightforest:mangrove_wall_hanging_sign": "minecraft:mangrove_wall_hanging_sign",
+		"twilightforest:mangrove_boat": "minecraft:mangrove_boat",
+		"twilightforest:mangrove_chest_boat": "minecraft:mangrove_chest_boat",
+		"twilightforest:mangrove_leaves": "minecraft:mangrove_leaves",
+		"twilightforest:mangrove_sapling": "minecraft:mangrove_sapling",
+		"twilightdelight:mangrove_cabinet": "farmersdelight:mangrove_cabinet",
+	}
 	for (const [before, after] of Object.entries(replaceItemsMap)) {
 		event.addLootTableModifier(/.*/).modifyLoot(Ingredient.of(before), itemstack => {
 			return Ingredient.of(after)
 		});
 	}
 
-	const removedItems = [
+	const removedFromLoot = [
 		global.blacklistedItems,
-		/quark\:.*_shard/
+		/quark\:.*_shard/,
+		'artifacts:everlasting_beef'
 	]
-
-	event.addLootTableModifier(/.*/).removeLoot(removedItems);
-
-	event.addLootTableModifier(/chests\//)
-		.pool(pool => {
-			pool.addLoot(LootEntry.of('simplyswords:runic_tablet'))
-				.randomChance(0.07)
-		});
+	removedFromLoot.forEach(e => {
+		event.addLootTableModifier(/.*/).removeLoot(e)
+	})
 
 	const skullFragmentDrop = (pool) => {
 		pool.rolls(1);
@@ -91,6 +109,22 @@ LootJS.modifiers((event) => {
 				.limitCount([1, 2])
 				.applyLootingBonus([0, 1]);
 		});
+
+	event.addEntityLootModifier([
+		'cow',
+		'mooshroom',
+		'aether:flying_cow',
+		'witherstormmod:sickened_cow',
+		'witherstormmod:sickened_mushroom_cow',
+		'twilightforest:deer',
+		'naturalist:deer'
+	])
+		.pool(pool => {
+			pool.rolls(1);
+			pool.randomChanceWithLooting(0.002, 0.0005)
+				.addLoot(LootEntry.of('artifacts:everlasting_beef'))
+				.limitCount(1)
+		})
 
 	event.addEntityLootModifier('ars_nouveau:wilden_boss')
 		.removeLoot('ars_nouveau:wilden_tribute')

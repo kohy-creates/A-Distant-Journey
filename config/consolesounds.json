@@ -1,0 +1,18 @@
+{
+  "enableHoverSounds": true,
+  "enableInGameClickSounds": true,
+  "enableCraftingSounds": true,
+  "enableSliderSounds": true,
+  "playSoundOnPauseMenu": true,
+  "playSoundOnInGameMenu": true,
+  "playSoundOnMenuExit": true,
+  "playSoundOnInGameMenuExit": true,
+  "hoverVolume": 100,
+  "inGameClickVolume": 100,
+  "craftingVolume": 100,
+  "sliderVolume": 100,
+  "onPauseMenuVolume": 100,
+  "inGameMenuVolume": 100,
+  "menuExitVolume": 100,
+  "onInGameMenuExitVolume": 100
+}
