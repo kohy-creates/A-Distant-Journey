@@ -1,0 +1,67 @@
+{
+  "client_settings": {
+    "color_settings": {
+      "moon_texture_color": "ffffff",
+      "sky_light_color": "3333ff"
+    },
+    "moon_size": 20.0,
+    "moon_texture_location": "minecraft:textures/environment/moon_phases.png"
+  },
+  "dimension_chances": {
+    "minecraft:overworld": {
+      "chance": 0,
+      "min_number_of_nights_between": 1,
+      "valid_moon_phases": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "drops": {
+    "drop_enhancer": {}
+  },
+  "mob_settings": {
+    "blocks_sleeping": {
+      "type": "corgilib:flipped",
+      "condition_to_flip": {
+        "type": "corgilib:any"
+      }
+    },
+    "lunar_spawn_settings": {
+      "force_surface_spawning": false,
+      "mob_spawn_settings": {
+        "spawn_costs": {},
+        "spawners": {
+          "ambient": [],
+          "axolotls": [],
+          "creature": [],
+          "misc": [],
+          "monster": [],
+          "underground_water_creature": [],
+          "water_ambient": [],
+          "water_creature": []
+        }
+      },
+      "slimes_spawn_everywhere": false,
+      "use_biome_spawn_settings": true
+    },
+    "mob_effects": [],
+    "spawn_category_multiplier": {
+      "monster": 0.3333333
+    }
+  },
+  "text_components": {
+    "end_notification": {},
+    "name": {
+      "key": "Tutorial Moon",
+      "color": "F0A3FF"
+    },
+    "start_notification": {}
+  }
+}

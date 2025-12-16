@@ -11,19 +11,7 @@ ItemEvents.modification(event => {
 		/enderium/,
 		/dark_metal/,
 	]
-
 	event.modify(fireImmuneItems, item => {
 		item.setFireResistant(true);
-	})
-
-	event.modify(/stardew_fishing\:.*bobber/, item => {
-		item.setMaxDamage(0);
-	})
-
-	event.modify([
-		/.*aether.*\:.*glove/,
-		/umbral_skies\:.*gloves/,
-	], item => {
-		item.setMaxDamage(0);
 	})
 })

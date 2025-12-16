@@ -21,7 +21,7 @@
 	cave_creature_spawn_count_modifier = 1.75
 	#The percent chance that drowned have to spawn wearing diving gear in the Abyssal Chasm. 0 = no diving gear wearing drowned will spawn
 	#Range: 0.0 ~ 1.0
-	drowned_diving_gear_spawn_chance = 0.2
+	drowned_diving_gear_spawn_chance = 0.35
 
 [mob-behavior]
 	#How many cpu cores big mobs(tremorzilla, atlatitan, grottoceratops etc) should utilize when pathing. Bigger number = less impact on TPS
@@ -71,7 +71,7 @@
 	nuke_spawn_item_drops = true
 	#The scale of nuclear bomb destruction. multiply this by 16 to get the radius of a nuclear bomb explosion.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	nuclear_explosion_size_modifier = 4.0
+	nuclear_explosion_size_modifier = 5.0
 	#Whether the Totem of Possession can be applied to players.
 	totem_of_possession_works_on_players = true
 	#The amount of time (in ticks) it takes to charge up the Cloak of Darkness ability.
@@ -83,7 +83,7 @@
 
 [potion-behavior]
 	#Whether the Sugar Rush changes the tick rate of the game in the area of affected players.
-	sugar_rush_slows_time = true
+	sugar_rush_slows_time = false
 
 [vanilla-changes]
 	#percent chance of bastion having a cave tablet for magnetic caves in its loot table:
@@ -114,5 +114,5 @@
 	#Whether a loot chest is added to vanilla's witch huts. This is included to provide another place to find candy cavity biome cave tablets.
 	loot_chest_in_witch_huts = true
 	#Whether the Enchantments added by AC appear in vanilla loot tables.
-	enchantments_in_loot = false
+	enchantments_in_loot = true
 

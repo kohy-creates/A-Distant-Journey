@@ -609,7 +609,7 @@ global.armorOverrides = {
 			operation: 0
 		}
 	},
-	'born_in_chaos_v1:nigthmare_mantleofthe_night': {
+	'born_in_chaos_v1:nightmare_mantleofthe_night': {
 		'generic.armor': {
 			values: [6, 8, 7, 5],
 			operation: 0

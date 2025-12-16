@@ -3,8 +3,8 @@ ItemEvents.pickedUp(event => {
 
 	const server = event.getServer();
 
-	if (!server.persistentData.hasShownCredits) {
-		server.persistentData.hasShownCredits = true;
+	if (!server.persistentData.is_completed) {
+		server.persistentData.is_completed = true;
 
 		const pos = event.getPlayer().getBlock().getPos();
 

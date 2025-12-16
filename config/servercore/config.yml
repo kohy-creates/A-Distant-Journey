@@ -110,8 +110,8 @@ mob-spawning:
       spawn-interval: 1
 
     - category: 'CREATURE'
-      mobcap: 20
-      spawn-interval: 300
+      mobcap: 25
+      spawn-interval: 200
 
     - category: 'AMBIENT'
       mobcap: 15

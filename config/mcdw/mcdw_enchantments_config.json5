@@ -59,11 +59,11 @@
 				"Offset Note:    higher offset = more health recovered,",
 				"Default:        100f"
 			],
-			"offset": 70.0,
+			"offset": 55.0,
 			"isEnabled": true,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
-			"maxLevel": 3,
+			"maxLevel": 4,
 			"procChance": null
 		},
 		"BONUS_SHOT": {
@@ -100,7 +100,7 @@
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
-			"procChance": 10
+			"procChance": 15
 		},
 		"CHAINS": {
 			"comment": null,
@@ -270,11 +270,11 @@
 				"Offset Note:    higher offset = more health recovered,",
 				"Default:        100f"
 			],
-			"offset": 8.5,
+			"offset": 6.5,
 			"isEnabled": true,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
-			"maxLevel": 3,
+			"maxLevel": 4,
 			"procChance": null
 		},
 		"LEVITATION_SHOT": {
@@ -298,7 +298,7 @@
 		"OVERCHARGE": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -347,7 +347,7 @@
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
-			"procChance": 20
+			"procChance": 15
 		},
 		"RAMPAGING": {
 			"comment": null,
@@ -446,7 +446,7 @@
 				"Offset Note:    higher offset = less additional XP,",
 				"Default:        3.0f"
 			],
-			"offset": 6.0,
+			"offset": 7.0,
 			"isEnabled": true,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
@@ -496,7 +496,7 @@
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
-			"procChance": 20
+			"procChance": 10
 		},
 		"VOID_SHOT": {
 			"comment": null,
@@ -504,8 +504,8 @@
 			"isEnabled": true,
 			"isAvailableForEnchantedBookOffer": false,
 			"isAvailableForRandomSelection": true,
-			"maxLevel": 3,
-			"procChance": 25
+			"maxLevel": 1,
+			"procChance": 15
 		},
 		"VOID_STRIKE": {
 			"comment": null,
@@ -513,8 +513,8 @@
 			"isEnabled": true,
 			"isAvailableForEnchantedBookOffer": false,
 			"isAvailableForRandomSelection": true,
-			"maxLevel": 3,
-			"procChance": 15
+			"maxLevel": 1,
+			"procChance": 10
 		},
 		"WEAKENING": {
 			"comment": null,

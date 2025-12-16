@@ -94,6 +94,29 @@
 		"twilightforest:mangrove_sapling",
 		"twilightdelight:mangrove_cabinet",
 
+		"twilightforest:sorting_log",
+		"twilightforest:stripped_sorting_log",
+		"twilightforest:sorting_wood",
+		"twilightforest:stripped_sorting_wood",
+		"twilightforest:sorting_planks",
+		"twilightforest:sorting_stairs",
+		"twilightforest:sorting_slab",
+		"twilightforest:sorting_fence",
+		"twilightforest:sorting_fence_gate",
+		"twilightforest:sorting_door",
+		"twilightforest:sorting_trapdoor",
+		"twilightforest:sorting_button",
+		"twilightforest:sorting_pressure_plate",
+		"twilightforest:sorting_sign",
+		"twilightforest:sorting_wall_sign",
+		"twilightforest:sorting_hanging_sign",
+		"twilightforest:sorting_wall_hanging_sign",
+		"twilightforest:sorting_boat",
+		"twilightforest:sorting_chest_boat",
+		"twilightforest:sorting_leaves",
+		"twilightforest:sorting_sapling",
+		"twilightdelight:sorting_cabinet",
+
 		"twilightforest:oak_banister",
 		"twilightforest:spruce_banister",
 		"twilightforest:birch_banister",
@@ -565,8 +588,6 @@
 		"ftbquests:book",
 		"netherdepthsupgrade:lava_fishing_rod",
 
-		"supplementaries:cannon",
-		"supplementaries:cannonball",
 		"supplementaries:altimeter",
 
 		"create_power_loader:empty_andesite_chunk_loader",
@@ -1070,7 +1091,20 @@
 		"etcetera:hammer",
 		"etcetera:dice",
 
-		"nameless_trinkets:mysterious_trinket"
+		"nameless_trinkets:mysterious_trinket",
+
+		"netherexp:skeleton_skull_candle",
+		"netherexp:soul_skeleton_skull_candle",
+		"netherexp:ancient_skeleton_skull_candle",
+
+		"twilightforest:zombie_skull_candle",
+		"twilightforest:skeleton_skull_candle",
+		"twilightforest:wither_skeleton_skull_candle",
+		"twilightforest:creeper_skull_candle",
+		"twilightforest:player_skull_candle",
+		"twilightforest:piglin_skull_candle",
+
+		"unusualend:healing_lantern"
 		
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

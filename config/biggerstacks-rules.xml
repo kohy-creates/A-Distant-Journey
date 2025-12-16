@@ -1,10 +1,8 @@
 <ruleset>
-	<rule stacksize="64">
+	<rule stacksize="1">
 		<or>
-			<condition>id = minecraft:ender_pearl</condition>
-			<!-- causes duplication glitches with jukeboxes
 			<condition>tag includes adj:music_disc</condition>
-			-->
+			<condition>id = alexscaves:biome_treat</condition>
 		</or>
 	</rule>
 	<rule stacksize="99">
@@ -15,6 +13,8 @@
 			<condition>id = minecraft:saddle</condition>
 			<condition>id ends_with horse_armor</condition>
 			<condition>is_food</condition>
+			<condition>id = minecraft:ender_pearl</condition>
+			<condition>id = alexscaves:waste_drum</condition>
 		</or>
 	</rule>
 	<rule stacksize="999">

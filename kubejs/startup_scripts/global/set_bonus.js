@@ -670,23 +670,14 @@ global.setBonusMap = {
 	},
 	'mythicmetals:bronze': {
 		description: [
-			"Increases dealt damage by flat 5",
-			"1 defense"
+			"Increases dealt damage by 2"
 		],
 		effects: [
 			{
 				type: "attribute",
 				value: {
 					id: "generic.attack_damage",
-					value: 5,
-					operation: 0
-				}
-			},
-			{
-				type: "attribute",
-				value: {
-					id: "generic.armor",
-					value: 1,
+					value: 2,
 					operation: 0
 				}
 			}
@@ -981,16 +972,24 @@ global.setBonusMap = {
 	},
 	'born_in_chaos_v1:nightmare_mantleofthe_night': {
 		description: [
-			'Increases effectiveness of',
-			'dark magic weapons and items',
-			'Increases spell damage by 8'
+			'Increases effectiveness of dark magic weapons and items',
+			'Increases spell damage by 7',
+			'Increases spell armor penetration by 15'
 		],
 		effects: [
 			{
 				type: "attribute",
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
-					value: 8,
+					value: 7,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: "attributeslib:armor_pierce",
+					value: 15,
 					operation: 0
 				}
 			},

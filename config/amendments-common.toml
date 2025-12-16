@@ -109,7 +109,7 @@
 	torch_fire_offhand = false
 	#Duration of the on fire effect applied by torches. In seconds
 	#Range: 1 ~ 60
-	torch_fire_duration = 2
+	torch_fire_duration = 3
 
 [lily_pad]
 	#Allows lilypads to have any block placed ontop

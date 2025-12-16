@@ -31,4 +31,33 @@ StartupEvents.registry('item', registry => {
 		.appliesTo('Rose Gold Armor and Tools')
 		.ingredients('Another Diamond')
 		.texture('kubejs:item/diamond_upgrade')
+
+	registry.create('wooden_helmet', 'helmet')
+		.maxDamage(110)
+		.displayName('Wooden Helmet')
+		.tier('wooden')
+	registry.create('wooden_chestplate', 'chestplate')
+		.maxDamage(110)
+		.displayName('Wooden Chestplate')
+		.tier('wooden')
+	registry.create('wooden_leggings', 'leggings')
+		.maxDamage(110)
+		.displayName('Wooden Leggings')
+		.tier('wooden')
+	registry.create('wooden_boots', 'boots')
+		.maxDamage(110)
+		.displayName('Wooden Boots')
+		.tier('wooden')
+})
+
+ItemEvents.armorTierRegistry(event => {
+	event.add('wooden', tier => {
+		tier.durabilityMultiplier = 4
+		tier.slotProtections = [0, 1, 1, 1]
+		tier.enchantmentValue = 5
+		tier.equipSound = 'minecraft:item.armor.equip_turtle'
+		tier.repairIngredient = '#planks'
+		tier.toughness = 0
+		tier.knockbackResistance = 0
+	})
 })

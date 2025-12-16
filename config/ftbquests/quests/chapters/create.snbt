@@ -386,6 +386,27 @@
 			x: 1.5d
 			y: 4.0d
 		}
+		{
+			dependencies: ["57A550E2F3090147"]
+			icon: "createutilities:void_casing"
+			id: "28583EFCD06F1117"
+			subtitle: "Craft a Void Steel Ingot and Void Casing"
+			tasks: [
+				{
+					id: "1687BE04E2D72D9E"
+					item: "createutilities:void_steel_ingot"
+					type: "item"
+				}
+				{
+					id: "32D52D7D87E75F4C"
+					item: "createutilities:void_casing"
+					type: "item"
+				}
+			]
+			title: "Made in Abyss"
+			x: -2.5d
+			y: -0.5d
+		}
 	]
-	title: "Creating a Factory"
+	title: "Managing a Factory"
 }

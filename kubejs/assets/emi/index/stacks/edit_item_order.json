@@ -253,6 +253,601 @@
 		"item:rediscovered:dragon_armor_plating_smithing_template",
 		"item:unusualend:ancient_armor_trim_smithing_template",
 		"item:unusualend:pearlescent_upgrade_smithing_template",
+		"item:aether:aechor_plant_spawn_egg",
+		"item:aether:aerbunny_spawn_egg",
+		"item:aether:aerwhale_spawn_egg",
+		"item:aether:blue_swet_spawn_egg",
+		"item:aether:cockatrice_spawn_egg",
+		"item:aether:evil_whirlwind_spawn_egg",
+		"item:aether:fire_minion_spawn_egg",
+		"item:aether:flying_cow_spawn_egg",
+		"item:aether:golden_swet_spawn_egg",
+		"item:aether:mimic_spawn_egg",
+		"item:aether:moa_spawn_egg",
+		"item:aether:phyg_spawn_egg",
+		"item:aether:sentry_spawn_egg",
+		"item:aether:sheepuff_spawn_egg",
+		"item:aether:slider_spawn_egg",
+		"item:aether:sun_spirit_spawn_egg",
+		"item:aether:valkyrie_queen_spawn_egg",
+		"item:aether:valkyrie_spawn_egg",
+		"item:aether:whirlwind_spawn_egg",
+		"item:aether:zephyr_spawn_egg",
+		"item:aether_redux:blightbunny_spawn_egg",
+		"item:aether_redux:mykapod_spawn_egg",
+		"item:aether_redux:shimmercow_spawn_egg",
+		"item:aether_redux:vanilla_swet_spawn_egg",
+		"item:alexscaves:spawn_egg_atlatitan",
+		"item:alexscaves:spawn_egg_boundroid",
+		"item:alexscaves:spawn_egg_brainiac",
+		"item:alexscaves:spawn_egg_candicorn",
+		"item:alexscaves:spawn_egg_caniac",
+		"item:alexscaves:spawn_egg_caramel_cube",
+		"item:alexscaves:spawn_egg_corrodent",
+		"item:alexscaves:spawn_egg_deep_one",
+		"item:alexscaves:spawn_egg_deep_one_knight",
+		"item:alexscaves:spawn_egg_deep_one_mage",
+		"item:alexscaves:spawn_egg_ferrouslime",
+		"item:alexscaves:spawn_egg_forsaken",
+		"item:alexscaves:spawn_egg_gammaroach",
+		"item:alexscaves:spawn_egg_gingerbread_man",
+		"item:alexscaves:spawn_egg_gloomoth",
+		"item:alexscaves:spawn_egg_gossamer_worm",
+		"item:alexscaves:spawn_egg_grottoceratops",
+		"item:alexscaves:spawn_egg_gum_worm",
+		"item:alexscaves:spawn_egg_gumbeeper",
+		"item:alexscaves:spawn_egg_gummy_bear",
+		"item:alexscaves:spawn_egg_hullbreaker",
+		"item:alexscaves:spawn_egg_lanternfish",
+		"item:alexscaves:spawn_egg_licowitch",
+		"item:alexscaves:spawn_egg_luxtructosaurus",
+		"item:alexscaves:spawn_egg_magnetron",
+		"item:alexscaves:spawn_egg_mine_guardian",
+		"item:alexscaves:spawn_egg_notor",
+		"item:alexscaves:spawn_egg_nucleeper",
+		"item:alexscaves:spawn_egg_radgill",
+		"item:alexscaves:spawn_egg_raycat",
+		"item:alexscaves:spawn_egg_relicheirus",
+		"item:alexscaves:spawn_egg_sea_pig",
+		"item:alexscaves:spawn_egg_subterranodon",
+		"item:alexscaves:spawn_egg_sweetish_fish",
+		"item:alexscaves:spawn_egg_teletor",
+		"item:alexscaves:spawn_egg_tremorsaurus",
+		"item:alexscaves:spawn_egg_tremorzilla",
+		"item:alexscaves:spawn_egg_trilocaris",
+		"item:alexscaves:spawn_egg_tripodfish",
+		"item:alexscaves:spawn_egg_underzealot",
+		"item:alexscaves:spawn_egg_vallumraptor",
+		"item:alexscaves:spawn_egg_vesper",
+		"item:alexscaves:spawn_egg_watcher",
+		"item:alexsmobs:spawn_egg_alligator_snapping_turtle",
+		"item:alexsmobs:spawn_egg_anaconda",
+		"item:alexsmobs:spawn_egg_anteater",
+		"item:alexsmobs:spawn_egg_bald_eagle",
+		"item:alexsmobs:spawn_egg_banana_slug",
+		"item:alexsmobs:spawn_egg_bison",
+		"item:alexsmobs:spawn_egg_blobfish",
+		"item:alexsmobs:spawn_egg_blue_jay",
+		"item:alexsmobs:spawn_egg_bone_serpent",
+		"item:alexsmobs:spawn_egg_bunfungus",
+		"item:alexsmobs:spawn_egg_cachalot_whale",
+		"item:alexsmobs:spawn_egg_caiman",
+		"item:alexsmobs:spawn_egg_capuchin_monkey",
+		"item:alexsmobs:spawn_egg_catfish",
+		"item:alexsmobs:spawn_egg_centipede",
+		"item:alexsmobs:spawn_egg_cockroach",
+		"item:alexsmobs:spawn_egg_comb_jelly",
+		"item:alexsmobs:spawn_egg_cosmaw",
+		"item:alexsmobs:spawn_egg_cosmic_cod",
+		"item:alexsmobs:spawn_egg_crimson_mosquito",
+		"item:alexsmobs:spawn_egg_crocodile",
+		"item:alexsmobs:spawn_egg_crow",
+		"item:alexsmobs:spawn_egg_devils_hole_pupfish",
+		"item:alexsmobs:spawn_egg_dropbear",
+		"item:alexsmobs:spawn_egg_elephant",
+		"item:alexsmobs:spawn_egg_emu",
+		"item:alexsmobs:spawn_egg_endergrade",
+		"item:alexsmobs:spawn_egg_enderiophage",
+		"item:alexsmobs:spawn_egg_farseer",
+		"item:alexsmobs:spawn_egg_flutter",
+		"item:alexsmobs:spawn_egg_fly",
+		"item:alexsmobs:spawn_egg_flying_fish",
+		"item:alexsmobs:spawn_egg_frilled_shark",
+		"item:alexsmobs:spawn_egg_froststalker",
+		"item:alexsmobs:spawn_egg_gazelle",
+		"item:alexsmobs:spawn_egg_gelada_monkey",
+		"item:alexsmobs:spawn_egg_giant_squid",
+		"item:alexsmobs:spawn_egg_gorilla",
+		"item:alexsmobs:spawn_egg_grizzly_bear",
+		"item:alexsmobs:spawn_egg_guster",
+		"item:alexsmobs:spawn_egg_hammerhead_shark",
+		"item:alexsmobs:spawn_egg_hummingbird",
+		"item:alexsmobs:spawn_egg_jerboa",
+		"item:alexsmobs:spawn_egg_kangaroo",
+		"item:alexsmobs:spawn_egg_komodo_dragon",
+		"item:alexsmobs:spawn_egg_laviathan",
+		"item:alexsmobs:spawn_egg_leafcutter_ant",
+		"item:alexsmobs:spawn_egg_lobster",
+		"item:alexsmobs:spawn_egg_maned_wolf",
+		"item:alexsmobs:spawn_egg_mantis_shrimp",
+		"item:alexsmobs:spawn_egg_mimic_octopus",
+		"item:alexsmobs:spawn_egg_mimicube",
+		"item:alexsmobs:spawn_egg_moose",
+		"item:alexsmobs:spawn_egg_mudskipper",
+		"item:alexsmobs:spawn_egg_mungus",
+		"item:alexsmobs:spawn_egg_murmur",
+		"item:alexsmobs:spawn_egg_orca",
+		"item:alexsmobs:spawn_egg_platypus",
+		"item:alexsmobs:spawn_egg_potoo",
+		"item:alexsmobs:spawn_egg_raccoon",
+		"item:alexsmobs:spawn_egg_rain_frog",
+		"item:alexsmobs:spawn_egg_rattlesnake",
+		"item:alexsmobs:spawn_egg_rhinoceros",
+		"item:alexsmobs:spawn_egg_roadrunner",
+		"item:alexsmobs:spawn_egg_rocky_roller",
+		"item:alexsmobs:spawn_egg_seagull",
+		"item:alexsmobs:spawn_egg_seal",
+		"item:alexsmobs:spawn_egg_shoebill",
+		"item:alexsmobs:spawn_egg_skelewag",
+		"item:alexsmobs:spawn_egg_skreecher",
+		"item:alexsmobs:spawn_egg_skunk",
+		"item:alexsmobs:spawn_egg_snow_leopard",
+		"item:alexsmobs:spawn_egg_soul_vulture",
+		"item:alexsmobs:spawn_egg_spectre",
+		"item:alexsmobs:spawn_egg_straddler",
+		"item:alexsmobs:spawn_egg_stradpole",
+		"item:alexsmobs:spawn_egg_sugar_glider",
+		"item:alexsmobs:spawn_egg_sunbird",
+		"item:alexsmobs:spawn_egg_tarantula_hawk",
+		"item:alexsmobs:spawn_egg_tasmanian_devil",
+		"item:alexsmobs:spawn_egg_terrapin",
+		"item:alexsmobs:spawn_egg_tiger",
+		"item:alexsmobs:spawn_egg_toucan",
+		"item:alexsmobs:spawn_egg_triops",
+		"item:alexsmobs:spawn_egg_tusklin",
+		"item:alexsmobs:spawn_egg_underminer",
+		"item:alexsmobs:spawn_egg_void_worm",
+		"item:alexsmobs:spawn_egg_warped_mosco",
+		"item:alexsmobs:spawn_egg_warped_toad",
+		"item:aquamirae:anglerfish_spawn_egg",
+		"item:aquamirae:captain_cornelia_spawn_egg",
+		"item:aquamirae:eel_spawn_egg",
+		"item:aquamirae:golden_moth_spawn_egg",
+		"item:aquamirae:maw_spawn_egg",
+		"item:aquamirae:maze_mother_spawn_egg",
+		"item:aquamirae:pillagers_patrol_spawn_egg",
+		"item:aquamirae:spinefish_spawn_egg",
+		"item:aquamirae:tortured_soul_spawn_egg",
+		"item:ars_nouveau:drygmy_se",
+		"item:ars_nouveau:starbuncle_se",
+		"item:ars_nouveau:whirlisprig_se",
+		"item:ars_nouveau:wilden_guardian_se",
+		"item:ars_nouveau:wilden_hunter_se",
+		"item:ars_nouveau:wilden_stalker_se",
+		"item:artifacts:mimic_spawn_egg",
+		"item:born_in_chaos_v1:baby_skeleton_minion_spawn_egg",
+		"item:born_in_chaos_v1:baby_skeleton_spawn_egg",
+		"item:born_in_chaos_v1:baby_spider_controlled_spawn_egg",
+		"item:born_in_chaos_v1:baby_spider_spawn_egg",
+		"item:born_in_chaos_v1:barrel_zombie_spawn_egg",
+		"item:born_in_chaos_v1:bloody_gadfly_spawn_egg",
+		"item:born_in_chaos_v1:bone_imp_minion_spawn_egg",
+		"item:born_in_chaos_v1:bone_imp_spawn_egg",
+		"item:born_in_chaos_v1:bonescaller_not_despawn_spawn_egg",
+		"item:born_in_chaos_v1:bonescaller_spawn_egg",
+		"item:born_in_chaos_v1:controlled_baby_skeleton_spawn_egg",
+		"item:born_in_chaos_v1:controlled_spiritual_assistant_spawn_egg",
+		"item:born_in_chaos_v1:corpse_fish_spawn_egg",
+		"item:born_in_chaos_v1:corpse_fly_spawn_egg",
+		"item:born_in_chaos_v1:dark_vortex_spawn_egg",
+		"item:born_in_chaos_v1:decaying_zombie_not_despawn_spawn_egg",
+		"item:born_in_chaos_v1:decaying_zombie_spawn_egg",
+		"item:born_in_chaos_v1:decrepit_skeleton_spawn_egg",
+		"item:born_in_chaos_v1:diamond_termite_spawn_egg",
+		"item:born_in_chaos_v1:dire_hound_leader_spawn_egg",
+		"item:born_in_chaos_v1:door_knight_not_despawn_spawn_egg",
+		"item:born_in_chaos_v1:door_knight_spawn_egg",
+		"item:born_in_chaos_v1:dread_hound_not_despawn_spawn_egg",
+		"item:born_in_chaos_v1:dread_hound_spawn_egg",
+		"item:born_in_chaos_v1:fallen_chaos_knight_spawn_egg",
+		"item:born_in_chaos_v1:felsteed_spawn_egg",
+		"item:born_in_chaos_v1:firelight_not_despawn_spawn_egg",
+		"item:born_in_chaos_v1:firelight_spawn_egg",
+		"item:born_in_chaos_v1:glutton_fish_spawn_egg",
+		"item:born_in_chaos_v1:infernal_spirit_spawn_egg",
+		"item:born_in_chaos_v1:krampus_henchman_spawn_egg",
+		"item:born_in_chaos_v1:krampus_spawn_egg",
+		"item:born_in_chaos_v1:lifestealer_spawn_egg",
+		"item:born_in_chaos_v1:lifestealer_true_form_spawn_egg",
+		"item:born_in_chaos_v1:lord_pumpkinhead_head_spawn_egg",
+		"item:born_in_chaos_v1:lord_pumpkinhead_spawn_egg",
+		"item:born_in_chaos_v1:lord_pumpkinhead_withouta_horse_spawn_egg",
+		"item:born_in_chaos_v1:lord_the_headless_spawn_egg",
+		"item:born_in_chaos_v1:lords_felsteed_spawn_egg",
+		"item:born_in_chaos_v1:maggot_spawn_egg",
+		"item:born_in_chaos_v1:missionary_raider_spawn_egg",
+		"item:born_in_chaos_v1:missioner_spawn_egg",
+		"item:born_in_chaos_v1:mother_spider_spawn_egg",
+		"item:born_in_chaos_v1:mr_pumpkin_controlled_spawn_egg",
+		"item:born_in_chaos_v1:mr_pumpkin_spawn_egg",
+		"item:born_in_chaos_v1:mrs_pumpkin_spawn_egg",
+		"item:born_in_chaos_v1:nightmare_stalker_spawn_egg",
+		"item:born_in_chaos_v1:phantom_creeper_copy_spawn_egg",
+		"item:born_in_chaos_v1:phantom_creeper_spawn_egg",
+		"item:born_in_chaos_v1:pumpkin_bomb_spawn_egg",
+		"item:born_in_chaos_v1:pumpkin_bruiser_spawn_egg",
+		"item:born_in_chaos_v1:pumpkin_dunce_spawn_egg",
+		"item:born_in_chaos_v1:pumpkin_spirit_spawn_egg",
+		"item:born_in_chaos_v1:pumpkinhead_spawn_egg",
+		"item:born_in_chaos_v1:restless_spirit_spawn_egg",
+		"item:born_in_chaos_v1:riding_felsteed_spawn_egg",
+		"item:born_in_chaos_v1:riding_lords_felsteed_spawn_egg",
+		"item:born_in_chaos_v1:scarlet_persecutor_spawn_egg",
+		"item:born_in_chaos_v1:seared_spirit_not_despawn_spawn_egg",
+		"item:born_in_chaos_v1:seared_spirit_spawn_egg",
+		"item:born_in_chaos_v1:senor_pumpkin_spawn_egg",
+		"item:born_in_chaos_v1:siamese_skeletons_spawn_egg",
+		"item:born_in_chaos_v1:siamese_skeletonsleft_spawn_egg",
+		"item:born_in_chaos_v1:siamese_skeletonsright_spawn_egg",
+		"item:born_in_chaos_v1:sir_pumpkinhead_spawn_egg",
+		"item:born_in_chaos_v1:sir_pumpkinhead_without_horse_spawn_egg",
+		"item:born_in_chaos_v1:sir_the_headless_spawn_egg",
+		"item:born_in_chaos_v1:skeleton_demoman_spawn_egg",
+		"item:born_in_chaos_v1:skeleton_thrasher_not_despawn_spawn_egg",
+		"item:born_in_chaos_v1:skeleton_thrasher_spawn_egg",
+		"item:born_in_chaos_v1:spirit_guide_assistant_spawn_egg",
+		"item:born_in_chaos_v1:spirit_guide_spawn_egg",
+		"item:born_in_chaos_v1:spiritof_chaos_spawn_egg",
+		"item:born_in_chaos_v1:supreme_bonescaller_not_despawn_spawn_egg",
+		"item:born_in_chaos_v1:supreme_bonescaller_spawn_egg",
+		"item:born_in_chaos_v1:supreme_bonescaller_stage_2_spawn_egg",
+		"item:born_in_chaos_v1:swarmer_spawn_egg",
+		"item:born_in_chaos_v1:thornshell_crab_spawn_egg",
+		"item:born_in_chaos_v1:zombie_bruiser_spawn_egg",
+		"item:born_in_chaos_v1:zombie_clown_not_despawn_spawn_egg",
+		"item:born_in_chaos_v1:zombie_clown_spawn_egg",
+		"item:born_in_chaos_v1:zombie_fisherman_spawn_egg",
+		"item:born_in_chaos_v1:zombie_lumberjack_spawn_egg",
+		"item:cataclysm:amethyst_crab_spawn_egg",
+		"item:cataclysm:ancient_remnant_spawn_egg",
+		"item:cataclysm:aptrgangr_spawn_egg",
+		"item:cataclysm:cindaria_spawn_egg",
+		"item:cataclysm:clawdian_spawn_egg",
+		"item:cataclysm:coral_golem_spawn_egg",
+		"item:cataclysm:coralssus_spawn_egg",
+		"item:cataclysm:deepling_angler_spawn_egg",
+		"item:cataclysm:deepling_brute_spawn_egg",
+		"item:cataclysm:deepling_priest_spawn_egg",
+		"item:cataclysm:deepling_spawn_egg",
+		"item:cataclysm:deepling_warlock_spawn_egg",
+		"item:cataclysm:draugr_spawn_egg",
+		"item:cataclysm:elite_draugr_spawn_egg",
+		"item:cataclysm:ender_golem_spawn_egg",
+		"item:cataclysm:ender_guardian_spawn_egg",
+		"item:cataclysm:endermaptera_spawn_egg",
+		"item:cataclysm:hippocamtus_spawn_egg",
+		"item:cataclysm:ignis_spawn_egg",
+		"item:cataclysm:ignited_berserker_spawn_egg",
+		"item:cataclysm:ignited_revenant_spawn_egg",
+		"item:cataclysm:kobolediator_spawn_egg",
+		"item:cataclysm:koboleton_spawn_egg",
+		"item:cataclysm:lionfish_spawn_egg",
+		"item:cataclysm:maledictus_spawn_egg",
+		"item:cataclysm:modern_remnant_spawn_egg",
+		"item:cataclysm:nameless_sorcerer_spawn_egg",
+		"item:cataclysm:netherite_ministrosity_spawn_egg",
+		"item:cataclysm:netherite_monstrosity_spawn_egg",
+		"item:cataclysm:octohost_spawn_egg",
+		"item:cataclysm:royal_draugr_spawn_egg",
+		"item:cataclysm:scylla_spawn_egg",
+		"item:cataclysm:symbiocto_spawn_egg",
+		"item:cataclysm:the_baby_leviathan_spawn_egg",
+		"item:cataclysm:the_harbinger_spawn_egg",
+		"item:cataclysm:the_leviathan_spawn_egg",
+		"item:cataclysm:the_prowler_spawn_egg",
+		"item:cataclysm:the_watcher_spawn_egg",
+		"item:cataclysm:urchinkin_spawn_egg",
+		"item:cataclysm:wadjet_spawn_egg",
+		"item:crittersandcompanions:dragonfly_spawn_egg",
+		"item:crittersandcompanions:dumbo_octopus_spawn_egg",
+		"item:crittersandcompanions:ferret_spawn_egg",
+		"item:crittersandcompanions:jumping_spider_spawn_egg",
+		"item:crittersandcompanions:koi_fish_spawn_egg",
+		"item:crittersandcompanions:leaf_insect_spawn_egg",
+		"item:crittersandcompanions:otter_spawn_egg",
+		"item:crittersandcompanions:red_panda_spawn_egg",
+		"item:crittersandcompanions:sea_bunny_spawn_egg",
+		"item:crittersandcompanions:shima_enaga_spawn_egg",
+		"item:ecologics:coconut_crab_spawn_egg",
+		"item:ecologics:penguin_spawn_egg",
+		"item:ecologics:squirrel_spawn_egg",
+		"item:etcetera:chapple_spawn_egg",
+		"item:evilcraft:controlled_zombie_spawn_egg",
+		"item:evilcraft:netherfish_spawn_egg",
+		"item:evilcraft:poisonous_libelle_spawn_egg",
+		"item:evilcraft:vengeance_spirit_spawn_egg",
+		"item:evilcraft:werewolf_spawn_egg",
+		"item:galosphere:berserker_spawn_egg",
+		"item:galosphere:preserved_spawn_egg",
+		"item:galosphere:sparkle_spawn_egg",
+		"item:galosphere:specterpillar_spawn_egg",
+		"item:galosphere:spectre_spawn_egg",
+		"item:majruszsdifficulty:cerberus_spawn_egg",
+		"item:majruszsdifficulty:creeperling_spawn_egg",
+		"item:majruszsdifficulty:cursed_armor_spawn_egg",
+		"item:majruszsdifficulty:giant_spawn_egg",
+		"item:majruszsdifficulty:illusioner_spawn_egg",
+		"item:majruszsdifficulty:tank_spawn_egg",
+		"item:minecraft:allay_spawn_egg",
+		"item:minecraft:axolotl_spawn_egg",
+		"item:minecraft:bat_spawn_egg",
+		"item:minecraft:bee_spawn_egg",
+		"item:minecraft:blaze_spawn_egg",
+		"item:minecraft:camel_spawn_egg",
+		"item:minecraft:cat_spawn_egg",
+		"item:minecraft:cave_spider_spawn_egg",
+		"item:minecraft:chicken_spawn_egg",
+		"item:minecraft:cod_spawn_egg",
+		"item:minecraft:cow_spawn_egg",
+		"item:minecraft:creeper_spawn_egg",
+		"item:minecraft:dolphin_spawn_egg",
+		"item:minecraft:donkey_spawn_egg",
+		"item:minecraft:drowned_spawn_egg",
+		"item:minecraft:elder_guardian_spawn_egg",
+		"item:minecraft:ender_dragon_spawn_egg",
+		"item:minecraft:enderman_spawn_egg",
+		"item:minecraft:endermite_spawn_egg",
+		"item:minecraft:evoker_spawn_egg",
+		"item:minecraft:fox_spawn_egg",
+		"item:minecraft:frog_spawn_egg",
+		"item:minecraft:ghast_spawn_egg",
+		"item:minecraft:glow_squid_spawn_egg",
+		"item:minecraft:goat_spawn_egg",
+		"item:minecraft:guardian_spawn_egg",
+		"item:minecraft:hoglin_spawn_egg",
+		"item:minecraft:horse_spawn_egg",
+		"item:minecraft:husk_spawn_egg",
+		"item:minecraft:iron_golem_spawn_egg",
+		"item:minecraft:llama_spawn_egg",
+		"item:minecraft:magma_cube_spawn_egg",
+		"item:minecraft:mooshroom_spawn_egg",
+		"item:minecraft:mule_spawn_egg",
+		"item:minecraft:ocelot_spawn_egg",
+		"item:minecraft:panda_spawn_egg",
+		"item:minecraft:parrot_spawn_egg",
+		"item:minecraft:phantom_spawn_egg",
+		"item:minecraft:pig_spawn_egg",
+		"item:minecraft:piglin_brute_spawn_egg",
+		"item:minecraft:piglin_spawn_egg",
+		"item:minecraft:pillager_spawn_egg",
+		"item:minecraft:polar_bear_spawn_egg",
+		"item:minecraft:pufferfish_spawn_egg",
+		"item:minecraft:rabbit_spawn_egg",
+		"item:minecraft:ravager_spawn_egg",
+		"item:minecraft:salmon_spawn_egg",
+		"item:minecraft:sheep_spawn_egg",
+		"item:minecraft:shulker_spawn_egg",
+		"item:minecraft:silverfish_spawn_egg",
+		"item:minecraft:skeleton_horse_spawn_egg",
+		"item:minecraft:skeleton_spawn_egg",
+		"item:minecraft:slime_spawn_egg",
+		"item:minecraft:sniffer_spawn_egg",
+		"item:minecraft:snow_golem_spawn_egg",
+		"item:minecraft:spider_spawn_egg",
+		"item:minecraft:squid_spawn_egg",
+		"item:minecraft:stray_spawn_egg",
+		"item:minecraft:strider_spawn_egg",
+		"item:minecraft:tadpole_spawn_egg",
+		"item:minecraft:trader_llama_spawn_egg",
+		"item:minecraft:tropical_fish_spawn_egg",
+		"item:minecraft:turtle_spawn_egg",
+		"item:minecraft:vex_spawn_egg",
+		"item:minecraft:villager_spawn_egg",
+		"item:minecraft:vindicator_spawn_egg",
+		"item:minecraft:wandering_trader_spawn_egg",
+		"item:minecraft:warden_spawn_egg",
+		"item:minecraft:witch_spawn_egg",
+		"item:minecraft:wither_skeleton_spawn_egg",
+		"item:minecraft:wither_spawn_egg",
+		"item:minecraft:wolf_spawn_egg",
+		"item:minecraft:zoglin_spawn_egg",
+		"item:minecraft:zombie_horse_spawn_egg",
+		"item:minecraft:zombie_spawn_egg",
+		"item:minecraft:zombie_villager_spawn_egg",
+		"item:minecraft:zombified_piglin_spawn_egg",
+		"item:mutantmonsters:creeper_minion_spawn_egg",
+		"item:mutantmonsters:mutant_creeper_spawn_egg",
+		"item:mutantmonsters:mutant_enderman_spawn_egg",
+		"item:mutantmonsters:mutant_skeleton_spawn_egg",
+		"item:mutantmonsters:mutant_snow_golem_spawn_egg",
+		"item:mutantmonsters:mutant_zombie_spawn_egg",
+		"item:mutantmonsters:spider_pig_spawn_egg",
+		"item:naturalist:alligator_spawn_egg",
+		"item:naturalist:bass_spawn_egg",
+		"item:naturalist:bear_spawn_egg",
+		"item:naturalist:bluejay_spawn_egg",
+		"item:naturalist:boar_spawn_egg",
+		"item:naturalist:butterfly_spawn_egg",
+		"item:naturalist:canary_spawn_egg",
+		"item:naturalist:cardinal_spawn_egg",
+		"item:naturalist:caterpillar_spawn_egg",
+		"item:naturalist:catfish_spawn_egg",
+		"item:naturalist:coral_snake_spawn_egg",
+		"item:naturalist:deer_spawn_egg",
+		"item:naturalist:dragonfly_spawn_egg",
+		"item:naturalist:duck_spawn_egg",
+		"item:naturalist:elephant_spawn_egg",
+		"item:naturalist:finch_spawn_egg",
+		"item:naturalist:firefly_spawn_egg",
+		"item:naturalist:giraffe_spawn_egg",
+		"item:naturalist:hippo_spawn_egg",
+		"item:naturalist:lion_spawn_egg",
+		"item:naturalist:lizard_spawn_egg",
+		"item:naturalist:rattlesnake_spawn_egg",
+		"item:naturalist:rhino_spawn_egg",
+		"item:naturalist:robin_spawn_egg",
+		"item:naturalist:snail_spawn_egg",
+		"item:naturalist:snake_spawn_egg",
+		"item:naturalist:sparrow_spawn_egg",
+		"item:naturalist:tortoise_spawn_egg",
+		"item:naturalist:vulture_spawn_egg",
+		"item:naturalist:zebra_spawn_egg",
+		"item:netherdepthsupgrade:blazefish_spawn_egg",
+		"item:netherdepthsupgrade:bonefish_spawn_egg",
+		"item:netherdepthsupgrade:eyeball_fish_spawn_egg",
+		"item:netherdepthsupgrade:fortress_grouper_spawn_egg",
+		"item:netherdepthsupgrade:glowdine_spawn_egg",
+		"item:netherdepthsupgrade:lava_pufferfish_spawn_egg",
+		"item:netherdepthsupgrade:magmacubefish_spawn_egg",
+		"item:netherdepthsupgrade:obsidianfish_spawn_egg",
+		"item:netherdepthsupgrade:searing_cod_spawn_egg",
+		"item:netherdepthsupgrade:soulsucker_spawn_egg",
+		"item:netherdepthsupgrade:wither_bonefish_spawn_egg",
+		"item:netherexp:apparition_spawn_egg",
+		"item:netherexp:banshee_spawn_egg",
+		"item:netherexp:carcass_spawn_egg",
+		"item:netherexp:ecto_slab_spawn_egg",
+		"item:netherexp:stampede_spawn_egg",
+		"item:netherexp:vessel_spawn_egg",
+		"item:netherexp:wisp_spawn_egg",
+		"item:phantasm:behemoth_spawn_egg",
+		"item:phantasm:crystie_spawn_egg",
+		"item:quark:crab_spawn_egg",
+		"item:quark:forgotten_spawn_egg",
+		"item:quark:foxhound_spawn_egg",
+		"item:quark:shiba_spawn_egg",
+		"item:quark:stoneling_spawn_egg",
+		"item:quark:toretoise_spawn_egg",
+		"item:quark:wraith_spawn_egg",
+		"item:rediscovered:beast_boy_spawn_egg",
+		"item:rediscovered:black_steve_spawn_egg",
+		"item:rediscovered:fish_spawn_egg",
+		"item:rediscovered:melee_pigman_spawn_egg",
+		"item:rediscovered:pigman_spawn_egg",
+		"item:rediscovered:rana_spawn_egg",
+		"item:rediscovered:ranged_pigman_spawn_egg",
+		"item:rediscovered:steve_spawn_egg",
+		"item:rediscovered:zombie_pigman_spawn_egg",
+		"item:ribbits:ribbit_fisherman_spawn_egg",
+		"item:ribbits:ribbit_gardener_spawn_egg",
+		"item:ribbits:ribbit_merchant_spawn_egg",
+		"item:ribbits:ribbit_nitwit_spawn_egg",
+		"item:ribbits:ribbit_sorcerer_spawn_egg",
+		"item:the_bumblezone:bee_queen_spawn_egg",
+		"item:the_bumblezone:beehemoth_spawn_egg",
+		"item:the_bumblezone:honey_slime_spawn_egg",
+		"item:the_bumblezone:rootmin_spawn_egg",
+		"item:the_bumblezone:sentry_watcher_spawn_egg",
+		"item:the_bumblezone:variant_bee_spawn_egg",
+		"item:tide:angelfish_spawn_egg",
+		"item:tide:barracuda_spawn_egg",
+		"item:tide:bass_spawn_egg",
+		"item:tide:bluegill_spawn_egg",
+		"item:tide:catfish_spawn_egg",
+		"item:tide:clayfish_spawn_egg",
+		"item:tide:guppy_spawn_egg",
+		"item:tide:mackerel_spawn_egg",
+		"item:tide:mint_carp_spawn_egg",
+		"item:tide:ocean_perch_spawn_egg",
+		"item:tide:pike_spawn_egg",
+		"item:tide:sailfish_spawn_egg",
+		"item:tide:trout_spawn_egg",
+		"item:tide:tuna_spawn_egg",
+		"item:tide:yellow_perch_spawn_egg",
+		"item:twilightforest:adherent_spawn_egg",
+		"item:twilightforest:alpha_yeti_spawn_egg",
+		"item:twilightforest:armored_giant_spawn_egg",
+		"item:twilightforest:bighorn_sheep_spawn_egg",
+		"item:twilightforest:blockchain_goblin_spawn_egg",
+		"item:twilightforest:boar_spawn_egg",
+		"item:twilightforest:carminite_broodling_spawn_egg",
+		"item:twilightforest:carminite_ghastguard_spawn_egg",
+		"item:twilightforest:carminite_ghastling_spawn_egg",
+		"item:twilightforest:carminite_golem_spawn_egg",
+		"item:twilightforest:death_tome_spawn_egg",
+		"item:twilightforest:deer_spawn_egg",
+		"item:twilightforest:dwarf_rabbit_spawn_egg",
+		"item:twilightforest:fire_beetle_spawn_egg",
+		"item:twilightforest:giant_miner_spawn_egg",
+		"item:twilightforest:harbinger_cube_spawn_egg",
+		"item:twilightforest:hedge_spider_spawn_egg",
+		"item:twilightforest:helmet_crab_spawn_egg",
+		"item:twilightforest:hostile_wolf_spawn_egg",
+		"item:twilightforest:hydra_spawn_egg",
+		"item:twilightforest:ice_crystal_spawn_egg",
+		"item:twilightforest:king_spider_spawn_egg",
+		"item:twilightforest:knight_phantom_spawn_egg",
+		"item:twilightforest:kobold_spawn_egg",
+		"item:twilightforest:lich_spawn_egg",
+		"item:twilightforest:lower_goblin_knight_spawn_egg",
+		"item:twilightforest:maze_slime_spawn_egg",
+		"item:twilightforest:minoshroom_spawn_egg",
+		"item:twilightforest:minotaur_spawn_egg",
+		"item:twilightforest:mist_wolf_spawn_egg",
+		"item:twilightforest:mosquito_swarm_spawn_egg",
+		"item:twilightforest:naga_spawn_egg",
+		"item:twilightforest:penguin_spawn_egg",
+		"item:twilightforest:pinch_beetle_spawn_egg",
+		"item:twilightforest:quest_ram_spawn_egg",
+		"item:twilightforest:raven_spawn_egg",
+		"item:twilightforest:redcap_sapper_spawn_egg",
+		"item:twilightforest:redcap_spawn_egg",
+		"item:twilightforest:skeleton_druid_spawn_egg",
+		"item:twilightforest:slime_beetle_spawn_egg",
+		"item:twilightforest:snow_guardian_spawn_egg",
+		"item:twilightforest:snow_queen_spawn_egg",
+		"item:twilightforest:squirrel_spawn_egg",
+		"item:twilightforest:stable_ice_core_spawn_egg",
+		"item:twilightforest:swarm_spider_spawn_egg",
+		"item:twilightforest:tiny_bird_spawn_egg",
+		"item:twilightforest:towerwood_borer_spawn_egg",
+		"item:twilightforest:troll_spawn_egg",
+		"item:twilightforest:unstable_ice_core_spawn_egg",
+		"item:twilightforest:ur_ghast_spawn_egg",
+		"item:twilightforest:winter_wolf_spawn_egg",
+		"item:twilightforest:wraith_spawn_egg",
+		"item:twilightforest:yeti_spawn_egg",
+		"item:unusualend:bluk_spawn_egg",
+		"item:unusualend:bolok_spawn_egg",
+		"item:unusualend:dragling_spawn_egg",
+		"item:unusualend:ender_blob_spawn_egg",
+		"item:unusualend:ender_firefly_spawn_egg",
+		"item:unusualend:enderbulb_spawn_egg",
+		"item:unusualend:endstone_golem_spawn_egg",
+		"item:unusualend:endstone_trapper_spawn_egg",
+		"item:unusualend:glub_spawn_egg",
+		"item:unusualend:small_enderbulb_spawn_egg",
+		"item:unusualend:spunkler_spawn_egg",
+		"item:unusualend:undead_enderling_spawn_egg",
+		"item:upgrade_aquatic:flare_spawn_egg",
+		"item:upgrade_aquatic:goose_spawn_egg",
+		"item:upgrade_aquatic:great_thrasher_spawn_egg",
+		"item:upgrade_aquatic:jellyfish_spawn_egg",
+		"item:upgrade_aquatic:lionfish_spawn_egg",
+		"item:upgrade_aquatic:nautilus_spawn_egg",
+		"item:upgrade_aquatic:perch_spawn_egg",
+		"item:upgrade_aquatic:pike_spawn_egg",
+		"item:upgrade_aquatic:thrasher_spawn_egg",
+		"item:witherstormmod:sickened_bee_spawn_egg",
+		"item:witherstormmod:sickened_cat_spawn_egg",
+		"item:witherstormmod:sickened_chicken_spawn_egg",
+		"item:witherstormmod:sickened_cow_spawn_egg",
+		"item:witherstormmod:sickened_creeper_spawn_egg",
+		"item:witherstormmod:sickened_iron_golem_spawn_egg",
+		"item:witherstormmod:sickened_mushroom_cow_spawn_egg",
+		"item:witherstormmod:sickened_parrot_spawn_egg",
+		"item:witherstormmod:sickened_phantom_spawn_egg",
+		"item:witherstormmod:sickened_pig_spawn_egg",
+		"item:witherstormmod:sickened_pillager_spawn_egg",
+		"item:witherstormmod:sickened_skeleton_spawn_egg",
+		"item:witherstormmod:sickened_snow_golem_spawn_egg",
+		"item:witherstormmod:sickened_spider_spawn_egg",
+		"item:witherstormmod:sickened_villager_spawn_egg",
+		"item:witherstormmod:sickened_vindicator_spawn_egg",
+		"item:witherstormmod:sickened_wolf_spawn_egg",
+		"item:witherstormmod:sickened_zombie_spawn_egg",
+		"item:witherstormmod:tentacle_spawn_egg",
+		"item:witherstormmod:withered_symbiont_spawn_egg",
 		"item:the_bumblezone:super_candle_netherexp:ancient",
 		"item:supplementaries:candle_holder_netherexp:ancient",
 		"item:suppsquared:gold_candle_holder_netherexp:ancient",
@@ -438,7 +1033,6 @@
 		"item:supplementaries:sign_post_oak",
 		"item:minecraft:oak_hanging_sign",
 		"item:minecraft:oak_boat",
-		"item:minecraft:oak_chest_boat",
 		"item:minecraft:birch_log",
 		"item:minecraft:birch_wood",
 		"item:quark:birch_post",
@@ -475,7 +1069,6 @@
 		"item:supplementaries:sign_post_birch",
 		"item:minecraft:birch_hanging_sign",
 		"item:minecraft:birch_boat",
-		"item:minecraft:birch_chest_boat",
 		"item:minecraft:spruce_log",
 		"item:minecraft:spruce_wood",
 		"item:quark:spruce_post",
@@ -512,7 +1105,6 @@
 		"item:supplementaries:sign_post_spruce",
 		"item:minecraft:spruce_hanging_sign",
 		"item:minecraft:spruce_boat",
-		"item:minecraft:spruce_chest_boat",
 		"item:minecraft:jungle_log",
 		"item:minecraft:jungle_wood",
 		"item:quark:jungle_post",
@@ -549,7 +1141,6 @@
 		"item:supplementaries:sign_post_jungle",
 		"item:minecraft:jungle_hanging_sign",
 		"item:minecraft:jungle_boat",
-		"item:minecraft:jungle_chest_boat",
 		"item:minecraft:acacia_log",
 		"item:minecraft:acacia_wood",
 		"item:quark:acacia_post",
@@ -586,7 +1177,6 @@
 		"item:supplementaries:sign_post_acacia",
 		"item:minecraft:acacia_hanging_sign",
 		"item:minecraft:acacia_boat",
-		"item:minecraft:acacia_chest_boat",
 		"item:minecraft:dark_oak_log",
 		"item:minecraft:dark_oak_wood",
 		"item:quark:dark_oak_post",
@@ -623,7 +1213,6 @@
 		"item:supplementaries:sign_post_dark_oak",
 		"item:minecraft:dark_oak_hanging_sign",
 		"item:minecraft:dark_oak_boat",
-		"item:minecraft:dark_oak_chest_boat",
 		"item:minecraft:mangrove_log",
 		"item:minecraft:mangrove_wood",
 		"item:quark:mangrove_post",
@@ -661,7 +1250,6 @@
 		"item:supplementaries:sign_post_mangrove",
 		"item:minecraft:mangrove_hanging_sign",
 		"item:minecraft:mangrove_boat",
-		"item:minecraft:mangrove_chest_boat",
 		"item:minecraft:cherry_log",
 		"item:minecraft:cherry_wood",
 		"item:quark:cherry_post",
@@ -698,7 +1286,6 @@
 		"item:supplementaries:sign_post_cherry",
 		"item:minecraft:cherry_hanging_sign",
 		"item:minecraft:cherry_boat",
-		"item:minecraft:cherry_chest_boat",
 		"item:minecraft:bamboo_block",
 		"item:quark:bamboo_post",
 		"item:minecraft:stripped_bamboo_block",
@@ -737,7 +1324,6 @@
 		"item:supplementaries:sign_post_bamboo",
 		"item:minecraft:bamboo_hanging_sign",
 		"item:minecraft:bamboo_raft",
-		"item:minecraft:bamboo_chest_raft",
 		"item:ecologics:coconut_log",
 		"item:ecologics:coconut_wood",
 		"item:everycomp:q/ecologics/coconut_post",
@@ -774,7 +1360,6 @@
 		"item:supplementaries:ecologics/sign_post_coconut",
 		"item:ecologics:coconut_hanging_sign",
 		"item:ecologics:coconut_boat",
-		"item:ecologics:coconut_chest_boat",
 		"item:ecologics:walnut_log",
 		"item:ecologics:walnut_wood",
 		"item:everycomp:q/ecologics/walnut_post",
@@ -811,7 +1396,6 @@
 		"item:supplementaries:ecologics/sign_post_walnut",
 		"item:ecologics:walnut_hanging_sign",
 		"item:ecologics:walnut_boat",
-		"item:ecologics:walnut_chest_boat",
 		"item:botania:livingwood_log",
 		"item:everycomp:q/botania/livingwood_post",
 		"item:botania:stripped_livingwood_log",
@@ -901,6 +1485,31 @@
 		"item:ars_nouveau:archwood_pressure_plate",
 		"item:ars_nouveau:archwood_button",
 		"item:supplementaries:ars_nouveau/sign_post_archwood",
+		"item:evilcraft:undead_log",
+		"item:evilcraft:undead_wood",
+		"item:everycomp:q/evilcraft/undead_post",
+		"item:evilcraft:undead_planks",
+		"item:everycomp:q/evilcraft/undead_bookshelf",
+		"item:everycomp:hc/evilcraft/undead_bench",
+		"item:everycomp:hc/evilcraft/undead_chair",
+		"item:everycomp:hc/evilcraft/undead_couch",
+		"item:everycomp:hc/evilcraft/undead_dining_bench",
+		"item:everycomp:hc/evilcraft/undead_side_table",
+		"item:everycomp:hc/evilcraft/undead_desk",
+		"item:everycomp:hc/evilcraft/undead_nightstand",
+		"item:everycomp:hc/evilcraft/undead_table",
+		"item:everycomp:hc/evilcraft/undead_counter",
+		"item:everycomp:q/evilcraft/undead_chest",
+		"item:everycomp:hc/evilcraft/undead_fancy_bed",
+		"item:evilcraft:undead_planks_stairs",
+		"item:evilcraft:undead_slab",
+		"item:v_slab_compat:evilcraft/undead_vertical_slab",
+		"item:suppsquared:evilcraft/item_shelf_undead",
+		"item:evilcraft:undead_fence",
+		"item:evilcraft:undead_fence_gate",
+		"item:everycomp:q/evilcraft/undead_ladder",
+		"item:everycomp:hnhome/evilcraft/undead_lattice",
+		"item:supplementaries:evilcraft/sign_post_undead",
 		"item:enhanced_mushrooms:mushroom_hyphae",
 		"item:everycomp:q/enhanced_mushrooms/mushroom_post",
 		"item:enhanced_mushrooms:stripped_mushroom_stem",
@@ -927,6 +1536,7 @@
 		"item:enhanced_mushrooms:mushroom_fence_gate",
 		"item:enhanced_mushrooms:mushroom_door",
 		"item:enhanced_mushrooms:mushroom_trapdoor",
+		"item:enhanced_mushrooms:mushroom_ladder",
 		"item:everycomp:hnhome/enhanced_mushrooms/mushroom_lattice",
 		"item:enhanced_mushrooms:mushroom_pressure_plate",
 		"item:enhanced_mushrooms:mushroom_button",
@@ -934,7 +1544,6 @@
 		"item:supplementaries:enhanced_mushrooms/sign_post_mushroom",
 		"item:enhanced_mushrooms:mushroom_hanging_sign",
 		"item:enhanced_mushrooms:mushroom_boat",
-		"item:enhanced_mushrooms:mushroom_chest_boat",
 		"item:quark:azalea_log",
 		"item:quark:azalea_wood",
 		"item:quark:azalea_post",
@@ -967,6 +1576,7 @@
 		"item:quark:azalea_door",
 		"item:quark:azalea_trapdoor",
 		"item:quark:azalea_ladder",
+		"item:quark:azalea_ladder",
 		"item:everycomp:hnhome/quark/azalea_lattice",
 		"item:quark:azalea_pressure_plate",
 		"item:quark:azalea_button",
@@ -974,7 +1584,6 @@
 		"item:supplementaries:quark/sign_post_azalea",
 		"item:quark:azalea_hanging_sign",
 		"item:quark:azalea_boat",
-		"item:quark:azalea_chest_boat",
 		"item:alexscaves:thornwood_log",
 		"item:alexscaves:thornwood_wood",
 		"item:everycomp:q/alexscaves/thornwood_post",
@@ -992,7 +1601,7 @@
 		"item:everycomp:hc/alexscaves/thornwood_nightstand",
 		"item:everycomp:hc/alexscaves/thornwood_table",
 		"item:everycomp:hc/alexscaves/thornwood_counter",
-		"item:everycomp:fd/alexscaves/thornwood_cabinet",
+		"item:alexscavesdelight:thornwood_cabinet",
 		"item:everycomp:q/alexscaves/thornwood_chest",
 		"item:everycomp:hc/alexscaves/thornwood_fancy_bed",
 		"item:alexscaves:thornwood_stairs",
@@ -1011,7 +1620,6 @@
 		"item:supplementaries:alexscaves/sign_post_thornwood",
 		"item:alexscaves:thornwood_hanging_sign",
 		"item:alexscaves:thornwood_boat",
-		"item:alexscaves:thornwood_chest_boat",
 		"item:alexscaves:pewen_log",
 		"item:alexscaves:pewen_wood",
 		"item:everycomp:q/alexscaves/pewen_post",
@@ -1029,7 +1637,7 @@
 		"item:everycomp:hc/alexscaves/pewen_nightstand",
 		"item:everycomp:hc/alexscaves/pewen_table",
 		"item:everycomp:hc/alexscaves/pewen_counter",
-		"item:everycomp:fd/alexscaves/pewen_cabinet",
+		"item:alexscavesdelight:pewen_cabinet",
 		"item:everycomp:q/alexscaves/pewen_chest",
 		"item:everycomp:hc/alexscaves/pewen_fancy_bed",
 		"item:alexscaves:pewen_stairs",
@@ -1048,7 +1656,6 @@
 		"item:supplementaries:alexscaves/sign_post_pewen",
 		"item:alexscaves:pewen_hanging_sign",
 		"item:alexscaves:pewen_boat",
-		"item:alexscaves:pewen_chest_boat",
 		"item:quark:blossom_log",
 		"item:quark:blossom_wood",
 		"item:quark:blossom_post",
@@ -1070,13 +1677,13 @@
 		"item:quark:blossom_door",
 		"item:quark:blossom_trapdoor",
 		"item:quark:blossom_ladder",
+		"item:quark:blossom_ladder",
 		"item:quark:blossom_pressure_plate",
 		"item:quark:blossom_button",
 		"item:quark:blossom_sign",
 		"item:supplementaries:quark/sign_post_blossom",
 		"item:quark:blossom_hanging_sign",
 		"item:quark:blossom_boat",
-		"item:quark:blossom_chest_boat",
 		"item:quark:ancient_log",
 		"item:quark:ancient_wood",
 		"item:quark:ancient_post",
@@ -1098,13 +1705,13 @@
 		"item:quark:ancient_door",
 		"item:quark:ancient_trapdoor",
 		"item:quark:ancient_ladder",
+		"item:quark:ancient_ladder",
 		"item:quark:ancient_pressure_plate",
 		"item:quark:ancient_button",
 		"item:quark:ancient_sign",
 		"item:supplementaries:quark/sign_post_ancient",
 		"item:quark:ancient_hanging_sign",
 		"item:quark:ancient_boat",
-		"item:quark:ancient_chest_boat",
 		"item:snifferplus:stone_pine_log",
 		"item:snifferplus:stone_pine_wood",
 		"item:everycomp:q/snifferplus/stone_pine_post",
@@ -1141,16 +1748,12 @@
 		"item:supplementaries:snifferplus/sign_post_stone_pine",
 		"item:snifferplus:stone_pine_hanging_sign",
 		"item:snifferplus:stone_pine_boat",
-		"item:snifferplus:stone_pine_chest_boat",
 		"item:upgrade_aquatic:driftwood_log",
 		"item:upgrade_aquatic:driftwood",
-		"item:everycomp:q/upgrade_aquatic/driftwood_post",
 		"item:upgrade_aquatic:stripped_driftwood_log",
 		"item:upgrade_aquatic:stripped_driftwood",
-		"item:everycomp:q/upgrade_aquatic/stripped_driftwood_post",
 		"item:upgrade_aquatic:driftwood_planks",
 		"item:upgrade_aquatic:driftwood_bookshelf",
-		"item:everycomp:q/upgrade_aquatic/driftwood_bookshelf",
 		"item:everycomp:hc/upgrade_aquatic/driftwood_bench",
 		"item:everycomp:hc/upgrade_aquatic/driftwood_chair",
 		"item:everycomp:hc/upgrade_aquatic/driftwood_couch",
@@ -1162,7 +1765,6 @@
 		"item:everycomp:hc/upgrade_aquatic/driftwood_counter",
 		"item:everycomp:fd/upgrade_aquatic/driftwood_cabinet",
 		"item:upgrade_aquatic:driftwood_chest",
-		"item:everycomp:q/upgrade_aquatic/driftwood_chest",
 		"item:everycomp:hc/upgrade_aquatic/driftwood_fancy_bed",
 		"item:upgrade_aquatic:driftwood_stairs",
 		"item:upgrade_aquatic:driftwood_slab",
@@ -1172,7 +1774,7 @@
 		"item:upgrade_aquatic:driftwood_fence_gate",
 		"item:upgrade_aquatic:driftwood_door",
 		"item:upgrade_aquatic:driftwood_trapdoor",
-		"item:everycomp:q/upgrade_aquatic/driftwood_ladder",
+		"item:upgrade_aquatic:driftwood_ladder",
 		"item:everycomp:hnhome/upgrade_aquatic/driftwood_lattice",
 		"item:upgrade_aquatic:driftwood_pressure_plate",
 		"item:upgrade_aquatic:driftwood_button",
@@ -1180,7 +1782,6 @@
 		"item:supplementaries:upgrade_aquatic/sign_post_driftwood",
 		"item:upgrade_aquatic:driftwood_hanging_sign",
 		"item:upgrade_aquatic:driftwood_boat",
-		"item:upgrade_aquatic:driftwood_chest_boat",
 		"item:betterarcheology:rotten_log",
 		"item:betterarcheology:rotten_planks",
 		"item:everycomp:q/betterarcheology/rotten_bookshelf",
@@ -1242,13 +1843,10 @@
 		"item:supplementaries:born_in_chaos_v1/sign_post_scorched",
 		"item:upgrade_aquatic:river_log",
 		"item:upgrade_aquatic:river_wood",
-		"item:everycomp:q/upgrade_aquatic/river_post",
 		"item:upgrade_aquatic:stripped_river_log",
 		"item:upgrade_aquatic:stripped_river_wood",
-		"item:everycomp:q/upgrade_aquatic/stripped_river_post",
 		"item:upgrade_aquatic:river_planks",
 		"item:upgrade_aquatic:river_bookshelf",
-		"item:everycomp:q/upgrade_aquatic/river_bookshelf",
 		"item:everycomp:hc/upgrade_aquatic/river_bench",
 		"item:everycomp:hc/upgrade_aquatic/river_chair",
 		"item:everycomp:hc/upgrade_aquatic/river_couch",
@@ -1260,7 +1858,6 @@
 		"item:everycomp:hc/upgrade_aquatic/river_counter",
 		"item:everycomp:fd/upgrade_aquatic/river_cabinet",
 		"item:upgrade_aquatic:river_chest",
-		"item:everycomp:q/upgrade_aquatic/river_chest",
 		"item:everycomp:hc/upgrade_aquatic/river_fancy_bed",
 		"item:upgrade_aquatic:river_stairs",
 		"item:upgrade_aquatic:river_slab",
@@ -1270,7 +1867,7 @@
 		"item:upgrade_aquatic:river_fence_gate",
 		"item:upgrade_aquatic:river_door",
 		"item:upgrade_aquatic:river_trapdoor",
-		"item:everycomp:q/upgrade_aquatic/river_ladder",
+		"item:upgrade_aquatic:river_ladder",
 		"item:everycomp:hnhome/upgrade_aquatic/river_lattice",
 		"item:upgrade_aquatic:river_pressure_plate",
 		"item:upgrade_aquatic:river_button",
@@ -1278,7 +1875,6 @@
 		"item:supplementaries:upgrade_aquatic/sign_post_river",
 		"item:upgrade_aquatic:river_hanging_sign",
 		"item:upgrade_aquatic:river_boat",
-		"item:upgrade_aquatic:river_chest_boat",
 		"item:minecraft:crimson_stem",
 		"item:minecraft:crimson_hyphae",
 		"item:quark:crimson_post",
@@ -1482,7 +2078,6 @@
 		"item:supplementaries:aether/sign_post_skyroot",
 		"item:aether:skyroot_hanging_sign",
 		"item:aether:skyroot_boat",
-		"item:aether:skyroot_chest_boat",
 		"item:aether_redux:fieldsproot_log",
 		"item:aether_redux:fieldsproot_wood",
 		"item:everycomp:q/aether_redux/fieldsproot_post",
@@ -1519,7 +2114,6 @@
 		"item:supplementaries:aether_redux/sign_post_fieldsproot",
 		"item:aether_redux:fieldsproot_hanging_sign",
 		"item:aether_redux:fieldsproot_boat",
-		"item:aether_redux:fieldsproot_chest_boat",
 		"item:aether_redux:crystal_log",
 		"item:aether_redux:crystal_wood",
 		"item:everycomp:q/aether_redux/crystal_post",
@@ -1556,7 +2150,6 @@
 		"item:supplementaries:aether_redux/sign_post_crystal",
 		"item:aether_redux:crystal_hanging_sign",
 		"item:aether_redux:crystal_boat",
-		"item:aether_redux:crystal_chest_boat",
 		"item:aether_redux:glacia_log",
 		"item:aether_redux:glacia_wood",
 		"item:everycomp:q/aether_redux/glacia_post",
@@ -1593,7 +2186,6 @@
 		"item:supplementaries:aether_redux/sign_post_glacia",
 		"item:aether_redux:glacia_hanging_sign",
 		"item:aether_redux:glacia_boat",
-		"item:aether_redux:glacia_chest_boat",
 		"item:aether_redux:cloudcap_stem",
 		"item:aether_redux:cloudcap_hyphae",
 		"item:everycomp:q/aether_redux/cloudcap_post",
@@ -1630,7 +2222,6 @@
 		"item:supplementaries:aether_redux/sign_post_cloudcap",
 		"item:aether_redux:cloudcap_hanging_sign",
 		"item:aether_redux:cloudcap_boat",
-		"item:aether_redux:cloudcap_chest_boat",
 		"item:aether_redux:blightwillow_log",
 		"item:aether_redux:blightwillow_wood",
 		"item:everycomp:q/aether_redux/blightwillow_post",
@@ -1667,7 +2258,6 @@
 		"item:supplementaries:aether_redux/sign_post_blightwillow",
 		"item:aether_redux:blightwillow_hanging_sign",
 		"item:aether_redux:blightwillow_boat",
-		"item:aether_redux:blightwillow_chest_boat",
 		"item:aether_redux:jellyshroom_stem",
 		"item:aether_redux:jellyshroom_hyphae",
 		"item:everycomp:q/aether_redux/jellyshroom_post",
@@ -1701,7 +2291,6 @@
 		"item:supplementaries:aether_redux/sign_post_jellyshroom",
 		"item:aether_redux:jellyshroom_hanging_sign",
 		"item:aether_redux:jellyshroom_boat",
-		"item:aether_redux:jellyshroom_chest_boat",
 		"item:cataclysm:chorus_stem",
 		"item:cataclysm:chorus_planks",
 		"item:everycomp:q/cataclysm/chorus_bookshelf",
@@ -1841,7 +2430,6 @@
 		"item:supplementaries:ecologics/sign_post_flowering_azalea",
 		"item:ecologics:flowering_azalea_hanging_sign",
 		"item:ecologics:flowering_azalea_boat",
-		"item:ecologics:flowering_azalea_chest_boat",
 		"item:twilightforest:mangrove_log",
 		"item:twilightforest:mangrove_wood",
 		"item:quark:mangrove_post",
@@ -1880,7 +2468,6 @@
 		"item:supplementaries:sign_post_mangrove",
 		"item:twilightforest:mangrove_hanging_sign",
 		"item:twilightforest:mangrove_boat",
-		"item:twilightforest:mangrove_chest_boat",
 		"item:ribbits:mossy_oak_planks",
 		"item:ribbits:mossy_oak_planks_stairs",
 		"item:ribbits:mossy_oak_planks_slab",
@@ -1905,7 +2492,6 @@
 		"item:everycomp:hc/twilightforest/mining_nightstand",
 		"item:everycomp:hc/twilightforest/mining_table",
 		"item:everycomp:hc/twilightforest/mining_counter",
-		"item:everycomp:fd/twilightforest/mining_cabinet",
 		"item:twilightdelight:mining_cabinet",
 		"item:twilightforest:mining_chest",
 		"item:everycomp:hc/twilightforest/mining_fancy_bed",
@@ -1925,7 +2511,6 @@
 		"item:supplementaries:twilightforest/sign_post_mining",
 		"item:twilightforest:mining_hanging_sign",
 		"item:twilightforest:mining_boat",
-		"item:twilightforest:mining_chest_boat",
 		"item:twilightforest:canopy_log",
 		"item:twilightforest:canopy_wood",
 		"item:everycomp:q/twilightforest/canopy_post",
@@ -1943,7 +2528,6 @@
 		"item:everycomp:hc/twilightforest/canopy_nightstand",
 		"item:everycomp:hc/twilightforest/canopy_table",
 		"item:everycomp:hc/twilightforest/canopy_counter",
-		"item:everycomp:fd/twilightforest/canopy_cabinet",
 		"item:twilightdelight:canopy_cabinet",
 		"item:twilightforest:canopy_chest",
 		"item:everycomp:hc/twilightforest/canopy_fancy_bed",
@@ -1963,7 +2547,6 @@
 		"item:supplementaries:twilightforest/sign_post_canopy",
 		"item:twilightforest:canopy_hanging_sign",
 		"item:twilightforest:canopy_boat",
-		"item:twilightforest:canopy_chest_boat",
 		"item:twilightforest:twilight_oak_log",
 		"item:twilightforest:twilight_oak_wood",
 		"item:everycomp:q/twilightforest/twilight_oak_post",
@@ -1981,7 +2564,6 @@
 		"item:everycomp:hc/twilightforest/twilight_oak_nightstand",
 		"item:everycomp:hc/twilightforest/twilight_oak_table",
 		"item:everycomp:hc/twilightforest/twilight_oak_counter",
-		"item:everycomp:fd/twilightforest/twilight_oak_cabinet",
 		"item:twilightdelight:twilight_oak_cabinet",
 		"item:twilightforest:twilight_oak_chest",
 		"item:everycomp:hc/twilightforest/twilight_oak_fancy_bed",
@@ -2001,7 +2583,6 @@
 		"item:supplementaries:twilightforest/sign_post_twilight_oak",
 		"item:twilightforest:twilight_oak_hanging_sign",
 		"item:twilightforest:twilight_oak_boat",
-		"item:twilightforest:twilight_oak_chest_boat",
 		"item:twilightforest:dark_log",
 		"item:twilightforest:dark_wood",
 		"item:everycomp:q/twilightforest/dark_post",
@@ -2019,7 +2600,6 @@
 		"item:everycomp:hc/twilightforest/dark_nightstand",
 		"item:everycomp:hc/twilightforest/dark_table",
 		"item:everycomp:hc/twilightforest/dark_counter",
-		"item:everycomp:fd/twilightforest/dark_cabinet",
 		"item:twilightdelight:dark_cabinet",
 		"item:twilightforest:dark_chest",
 		"item:everycomp:hc/twilightforest/dark_fancy_bed",
@@ -2039,7 +2619,6 @@
 		"item:supplementaries:twilightforest/sign_post_dark",
 		"item:twilightforest:dark_hanging_sign",
 		"item:twilightforest:dark_boat",
-		"item:twilightforest:dark_chest_boat",
 		"item:twilightforest:transformation_log",
 		"item:twilightforest:transformation_wood",
 		"item:everycomp:q/twilightforest/transformation_post",
@@ -2057,7 +2636,6 @@
 		"item:everycomp:hc/twilightforest/transformation_nightstand",
 		"item:everycomp:hc/twilightforest/transformation_table",
 		"item:everycomp:hc/twilightforest/transformation_counter",
-		"item:everycomp:fd/twilightforest/transformation_cabinet",
 		"item:twilightdelight:transformation_cabinet",
 		"item:twilightforest:transformation_chest",
 		"item:everycomp:hc/twilightforest/transformation_fancy_bed",
@@ -2077,7 +2655,8 @@
 		"item:supplementaries:twilightforest/sign_post_transformation",
 		"item:twilightforest:transformation_hanging_sign",
 		"item:twilightforest:transformation_boat",
-		"item:twilightforest:transformation_chest_boat",
+		"item:evilcraft:reinforced_undead_planks",
+		"item:evilcraft:reinforced_undead_planks_stairs",
 		"item:twilightforest:time_log",
 		"item:twilightforest:time_wood",
 		"item:everycomp:q/twilightforest/time_post",
@@ -2095,7 +2674,6 @@
 		"item:everycomp:hc/twilightforest/time_nightstand",
 		"item:everycomp:hc/twilightforest/time_table",
 		"item:everycomp:hc/twilightforest/time_counter",
-		"item:everycomp:fd/twilightforest/time_cabinet",
 		"item:twilightdelight:time_cabinet",
 		"item:twilightforest:time_chest",
 		"item:everycomp:hc/twilightforest/time_fancy_bed",
@@ -2115,28 +2693,13 @@
 		"item:supplementaries:twilightforest/sign_post_time",
 		"item:twilightforest:time_hanging_sign",
 		"item:twilightforest:time_boat",
-		"item:twilightforest:time_chest_boat",
 		"item:twilightforest:sorting_log",
 		"item:twilightforest:sorting_wood",
-		"item:everycomp:q/twilightforest/sorting_post",
 		"item:twilightforest:stripped_sorting_log",
 		"item:twilightforest:stripped_sorting_wood",
-		"item:everycomp:q/twilightforest/stripped_sorting_post",
 		"item:twilightforest:sorting_planks",
-		"item:everycomp:q/twilightforest/sorting_bookshelf",
-		"item:everycomp:hc/twilightforest/sorting_bench",
-		"item:everycomp:hc/twilightforest/sorting_chair",
-		"item:everycomp:hc/twilightforest/sorting_couch",
-		"item:everycomp:hc/twilightforest/sorting_dining_bench",
-		"item:everycomp:hc/twilightforest/sorting_side_table",
-		"item:everycomp:hc/twilightforest/sorting_desk",
-		"item:everycomp:hc/twilightforest/sorting_nightstand",
-		"item:everycomp:hc/twilightforest/sorting_table",
-		"item:everycomp:hc/twilightforest/sorting_counter",
-		"item:everycomp:fd/twilightforest/sorting_cabinet",
 		"item:twilightdelight:sorting_cabinet",
 		"item:twilightforest:sorting_chest",
-		"item:everycomp:hc/twilightforest/sorting_fancy_bed",
 		"item:twilightforest:sorting_stairs",
 		"item:twilightforest:sorting_slab",
 		"item:v_slab_compat:twilightforest/sorting_vertical_slab",
@@ -2145,15 +2708,12 @@
 		"item:twilightforest:sorting_fence_gate",
 		"item:twilightforest:sorting_door",
 		"item:twilightforest:sorting_trapdoor",
-		"item:everycomp:q/twilightforest/sorting_ladder",
-		"item:everycomp:hnhome/twilightforest/sorting_lattice",
 		"item:twilightforest:sorting_pressure_plate",
 		"item:twilightforest:sorting_button",
 		"item:twilightforest:sorting_sign",
 		"item:supplementaries:twilightforest/sign_post_sorting",
 		"item:twilightforest:sorting_hanging_sign",
 		"item:twilightforest:sorting_boat",
-		"item:twilightforest:sorting_chest_boat",
 		"item:v_slab_compat:witherstormmod/tainted_stone_vertical_slab",
 		"item:v_slab_compat:botania/red_pavement_vertical_slab",
 		"item:v_slab_compat:botania/metamorphic_plains_bricks_vertical_slab",
@@ -3499,6 +4059,2386 @@
 			"after": "item:unusualend:ancient_armor_trim_smithing_template"
 		},
 		{
+			"stack": "item:aether:aechor_plant_spawn_egg",
+			"after": "item:minecraft:spawner"
+		},
+		{
+			"stack": "item:aether:aerbunny_spawn_egg",
+			"after": "item:aether:aechor_plant_spawn_egg"
+		},
+		{
+			"stack": "item:aether:aerwhale_spawn_egg",
+			"after": "item:aether:aerbunny_spawn_egg"
+		},
+		{
+			"stack": "item:aether:blue_swet_spawn_egg",
+			"after": "item:aether:aerwhale_spawn_egg"
+		},
+		{
+			"stack": "item:aether:cockatrice_spawn_egg",
+			"after": "item:aether:blue_swet_spawn_egg"
+		},
+		{
+			"stack": "item:aether:evil_whirlwind_spawn_egg",
+			"after": "item:aether:cockatrice_spawn_egg"
+		},
+		{
+			"stack": "item:aether:fire_minion_spawn_egg",
+			"after": "item:aether:evil_whirlwind_spawn_egg"
+		},
+		{
+			"stack": "item:aether:flying_cow_spawn_egg",
+			"after": "item:aether:fire_minion_spawn_egg"
+		},
+		{
+			"stack": "item:aether:golden_swet_spawn_egg",
+			"after": "item:aether:flying_cow_spawn_egg"
+		},
+		{
+			"stack": "item:aether:mimic_spawn_egg",
+			"after": "item:aether:golden_swet_spawn_egg"
+		},
+		{
+			"stack": "item:aether:moa_spawn_egg",
+			"after": "item:aether:mimic_spawn_egg"
+		},
+		{
+			"stack": "item:aether:phyg_spawn_egg",
+			"after": "item:aether:moa_spawn_egg"
+		},
+		{
+			"stack": "item:aether:sentry_spawn_egg",
+			"after": "item:aether:phyg_spawn_egg"
+		},
+		{
+			"stack": "item:aether:sheepuff_spawn_egg",
+			"after": "item:aether:sentry_spawn_egg"
+		},
+		{
+			"stack": "item:aether:slider_spawn_egg",
+			"after": "item:aether:sheepuff_spawn_egg"
+		},
+		{
+			"stack": "item:aether:sun_spirit_spawn_egg",
+			"after": "item:aether:slider_spawn_egg"
+		},
+		{
+			"stack": "item:aether:valkyrie_queen_spawn_egg",
+			"after": "item:aether:sun_spirit_spawn_egg"
+		},
+		{
+			"stack": "item:aether:valkyrie_spawn_egg",
+			"after": "item:aether:valkyrie_queen_spawn_egg"
+		},
+		{
+			"stack": "item:aether:whirlwind_spawn_egg",
+			"after": "item:aether:valkyrie_spawn_egg"
+		},
+		{
+			"stack": "item:aether:zephyr_spawn_egg",
+			"after": "item:aether:whirlwind_spawn_egg"
+		},
+		{
+			"stack": "item:aether_redux:blightbunny_spawn_egg",
+			"after": "item:aether:zephyr_spawn_egg"
+		},
+		{
+			"stack": "item:aether_redux:mykapod_spawn_egg",
+			"after": "item:aether_redux:blightbunny_spawn_egg"
+		},
+		{
+			"stack": "item:aether_redux:shimmercow_spawn_egg",
+			"after": "item:aether_redux:mykapod_spawn_egg"
+		},
+		{
+			"stack": "item:aether_redux:vanilla_swet_spawn_egg",
+			"after": "item:aether_redux:shimmercow_spawn_egg"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_atlatitan",
+			"after": "item:aether_redux:vanilla_swet_spawn_egg"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_boundroid",
+			"after": "item:alexscaves:spawn_egg_atlatitan"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_brainiac",
+			"after": "item:alexscaves:spawn_egg_boundroid"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_candicorn",
+			"after": "item:alexscaves:spawn_egg_brainiac"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_caniac",
+			"after": "item:alexscaves:spawn_egg_candicorn"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_caramel_cube",
+			"after": "item:alexscaves:spawn_egg_caniac"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_corrodent",
+			"after": "item:alexscaves:spawn_egg_caramel_cube"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_deep_one",
+			"after": "item:alexscaves:spawn_egg_corrodent"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_deep_one_knight",
+			"after": "item:alexscaves:spawn_egg_deep_one"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_deep_one_mage",
+			"after": "item:alexscaves:spawn_egg_deep_one_knight"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_ferrouslime",
+			"after": "item:alexscaves:spawn_egg_deep_one_mage"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_forsaken",
+			"after": "item:alexscaves:spawn_egg_ferrouslime"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_gammaroach",
+			"after": "item:alexscaves:spawn_egg_forsaken"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_gingerbread_man",
+			"after": "item:alexscaves:spawn_egg_gammaroach"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_gloomoth",
+			"after": "item:alexscaves:spawn_egg_gingerbread_man"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_gossamer_worm",
+			"after": "item:alexscaves:spawn_egg_gloomoth"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_grottoceratops",
+			"after": "item:alexscaves:spawn_egg_gossamer_worm"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_gum_worm",
+			"after": "item:alexscaves:spawn_egg_grottoceratops"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_gumbeeper",
+			"after": "item:alexscaves:spawn_egg_gum_worm"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_gummy_bear",
+			"after": "item:alexscaves:spawn_egg_gumbeeper"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_hullbreaker",
+			"after": "item:alexscaves:spawn_egg_gummy_bear"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_lanternfish",
+			"after": "item:alexscaves:spawn_egg_hullbreaker"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_licowitch",
+			"after": "item:alexscaves:spawn_egg_lanternfish"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_luxtructosaurus",
+			"after": "item:alexscaves:spawn_egg_licowitch"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_magnetron",
+			"after": "item:alexscaves:spawn_egg_luxtructosaurus"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_mine_guardian",
+			"after": "item:alexscaves:spawn_egg_magnetron"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_notor",
+			"after": "item:alexscaves:spawn_egg_mine_guardian"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_nucleeper",
+			"after": "item:alexscaves:spawn_egg_notor"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_radgill",
+			"after": "item:alexscaves:spawn_egg_nucleeper"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_raycat",
+			"after": "item:alexscaves:spawn_egg_radgill"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_relicheirus",
+			"after": "item:alexscaves:spawn_egg_raycat"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_sea_pig",
+			"after": "item:alexscaves:spawn_egg_relicheirus"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_subterranodon",
+			"after": "item:alexscaves:spawn_egg_sea_pig"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_sweetish_fish",
+			"after": "item:alexscaves:spawn_egg_subterranodon"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_teletor",
+			"after": "item:alexscaves:spawn_egg_sweetish_fish"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_tremorsaurus",
+			"after": "item:alexscaves:spawn_egg_teletor"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_tremorzilla",
+			"after": "item:alexscaves:spawn_egg_tremorsaurus"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_trilocaris",
+			"after": "item:alexscaves:spawn_egg_tremorzilla"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_tripodfish",
+			"after": "item:alexscaves:spawn_egg_trilocaris"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_underzealot",
+			"after": "item:alexscaves:spawn_egg_tripodfish"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_vallumraptor",
+			"after": "item:alexscaves:spawn_egg_underzealot"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_vesper",
+			"after": "item:alexscaves:spawn_egg_vallumraptor"
+		},
+		{
+			"stack": "item:alexscaves:spawn_egg_watcher",
+			"after": "item:alexscaves:spawn_egg_vesper"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_alligator_snapping_turtle",
+			"after": "item:alexscaves:spawn_egg_watcher"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_anaconda",
+			"after": "item:alexsmobs:spawn_egg_alligator_snapping_turtle"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_anteater",
+			"after": "item:alexsmobs:spawn_egg_anaconda"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_bald_eagle",
+			"after": "item:alexsmobs:spawn_egg_anteater"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_banana_slug",
+			"after": "item:alexsmobs:spawn_egg_bald_eagle"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_bison",
+			"after": "item:alexsmobs:spawn_egg_banana_slug"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_blobfish",
+			"after": "item:alexsmobs:spawn_egg_bison"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_blue_jay",
+			"after": "item:alexsmobs:spawn_egg_blobfish"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_bone_serpent",
+			"after": "item:alexsmobs:spawn_egg_blue_jay"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_bunfungus",
+			"after": "item:alexsmobs:spawn_egg_bone_serpent"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_cachalot_whale",
+			"after": "item:alexsmobs:spawn_egg_bunfungus"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_caiman",
+			"after": "item:alexsmobs:spawn_egg_cachalot_whale"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_capuchin_monkey",
+			"after": "item:alexsmobs:spawn_egg_caiman"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_catfish",
+			"after": "item:alexsmobs:spawn_egg_capuchin_monkey"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_centipede",
+			"after": "item:alexsmobs:spawn_egg_catfish"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_cockroach",
+			"after": "item:alexsmobs:spawn_egg_centipede"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_comb_jelly",
+			"after": "item:alexsmobs:spawn_egg_cockroach"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_cosmaw",
+			"after": "item:alexsmobs:spawn_egg_comb_jelly"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_cosmic_cod",
+			"after": "item:alexsmobs:spawn_egg_cosmaw"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_crimson_mosquito",
+			"after": "item:alexsmobs:spawn_egg_cosmic_cod"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_crocodile",
+			"after": "item:alexsmobs:spawn_egg_crimson_mosquito"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_crow",
+			"after": "item:alexsmobs:spawn_egg_crocodile"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_devils_hole_pupfish",
+			"after": "item:alexsmobs:spawn_egg_crow"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_dropbear",
+			"after": "item:alexsmobs:spawn_egg_devils_hole_pupfish"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_elephant",
+			"after": "item:alexsmobs:spawn_egg_dropbear"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_emu",
+			"after": "item:alexsmobs:spawn_egg_elephant"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_endergrade",
+			"after": "item:alexsmobs:spawn_egg_emu"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_enderiophage",
+			"after": "item:alexsmobs:spawn_egg_endergrade"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_farseer",
+			"after": "item:alexsmobs:spawn_egg_enderiophage"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_flutter",
+			"after": "item:alexsmobs:spawn_egg_farseer"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_fly",
+			"after": "item:alexsmobs:spawn_egg_flutter"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_flying_fish",
+			"after": "item:alexsmobs:spawn_egg_fly"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_frilled_shark",
+			"after": "item:alexsmobs:spawn_egg_flying_fish"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_froststalker",
+			"after": "item:alexsmobs:spawn_egg_frilled_shark"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_gazelle",
+			"after": "item:alexsmobs:spawn_egg_froststalker"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_gelada_monkey",
+			"after": "item:alexsmobs:spawn_egg_gazelle"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_giant_squid",
+			"after": "item:alexsmobs:spawn_egg_gelada_monkey"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_gorilla",
+			"after": "item:alexsmobs:spawn_egg_giant_squid"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_grizzly_bear",
+			"after": "item:alexsmobs:spawn_egg_gorilla"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_guster",
+			"after": "item:alexsmobs:spawn_egg_grizzly_bear"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_hammerhead_shark",
+			"after": "item:alexsmobs:spawn_egg_guster"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_hummingbird",
+			"after": "item:alexsmobs:spawn_egg_hammerhead_shark"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_jerboa",
+			"after": "item:alexsmobs:spawn_egg_hummingbird"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_kangaroo",
+			"after": "item:alexsmobs:spawn_egg_jerboa"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_komodo_dragon",
+			"after": "item:alexsmobs:spawn_egg_kangaroo"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_laviathan",
+			"after": "item:alexsmobs:spawn_egg_komodo_dragon"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_leafcutter_ant",
+			"after": "item:alexsmobs:spawn_egg_laviathan"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_lobster",
+			"after": "item:alexsmobs:spawn_egg_leafcutter_ant"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_maned_wolf",
+			"after": "item:alexsmobs:spawn_egg_lobster"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_mantis_shrimp",
+			"after": "item:alexsmobs:spawn_egg_maned_wolf"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_mimic_octopus",
+			"after": "item:alexsmobs:spawn_egg_mantis_shrimp"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_mimicube",
+			"after": "item:alexsmobs:spawn_egg_mimic_octopus"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_moose",
+			"after": "item:alexsmobs:spawn_egg_mimicube"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_mudskipper",
+			"after": "item:alexsmobs:spawn_egg_moose"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_mungus",
+			"after": "item:alexsmobs:spawn_egg_mudskipper"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_murmur",
+			"after": "item:alexsmobs:spawn_egg_mungus"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_orca",
+			"after": "item:alexsmobs:spawn_egg_murmur"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_platypus",
+			"after": "item:alexsmobs:spawn_egg_orca"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_potoo",
+			"after": "item:alexsmobs:spawn_egg_platypus"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_raccoon",
+			"after": "item:alexsmobs:spawn_egg_potoo"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_rain_frog",
+			"after": "item:alexsmobs:spawn_egg_raccoon"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_rattlesnake",
+			"after": "item:alexsmobs:spawn_egg_rain_frog"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_rhinoceros",
+			"after": "item:alexsmobs:spawn_egg_rattlesnake"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_roadrunner",
+			"after": "item:alexsmobs:spawn_egg_rhinoceros"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_rocky_roller",
+			"after": "item:alexsmobs:spawn_egg_roadrunner"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_seagull",
+			"after": "item:alexsmobs:spawn_egg_rocky_roller"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_seal",
+			"after": "item:alexsmobs:spawn_egg_seagull"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_shoebill",
+			"after": "item:alexsmobs:spawn_egg_seal"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_skelewag",
+			"after": "item:alexsmobs:spawn_egg_shoebill"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_skreecher",
+			"after": "item:alexsmobs:spawn_egg_skelewag"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_skunk",
+			"after": "item:alexsmobs:spawn_egg_skreecher"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_snow_leopard",
+			"after": "item:alexsmobs:spawn_egg_skunk"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_soul_vulture",
+			"after": "item:alexsmobs:spawn_egg_snow_leopard"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_spectre",
+			"after": "item:alexsmobs:spawn_egg_soul_vulture"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_straddler",
+			"after": "item:alexsmobs:spawn_egg_spectre"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_stradpole",
+			"after": "item:alexsmobs:spawn_egg_straddler"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_sugar_glider",
+			"after": "item:alexsmobs:spawn_egg_stradpole"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_sunbird",
+			"after": "item:alexsmobs:spawn_egg_sugar_glider"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_tarantula_hawk",
+			"after": "item:alexsmobs:spawn_egg_sunbird"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_tasmanian_devil",
+			"after": "item:alexsmobs:spawn_egg_tarantula_hawk"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_terrapin",
+			"after": "item:alexsmobs:spawn_egg_tasmanian_devil"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_tiger",
+			"after": "item:alexsmobs:spawn_egg_terrapin"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_toucan",
+			"after": "item:alexsmobs:spawn_egg_tiger"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_triops",
+			"after": "item:alexsmobs:spawn_egg_toucan"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_tusklin",
+			"after": "item:alexsmobs:spawn_egg_triops"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_underminer",
+			"after": "item:alexsmobs:spawn_egg_tusklin"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_void_worm",
+			"after": "item:alexsmobs:spawn_egg_underminer"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_warped_mosco",
+			"after": "item:alexsmobs:spawn_egg_void_worm"
+		},
+		{
+			"stack": "item:alexsmobs:spawn_egg_warped_toad",
+			"after": "item:alexsmobs:spawn_egg_warped_mosco"
+		},
+		{
+			"stack": "item:aquamirae:anglerfish_spawn_egg",
+			"after": "item:alexsmobs:spawn_egg_warped_toad"
+		},
+		{
+			"stack": "item:aquamirae:captain_cornelia_spawn_egg",
+			"after": "item:aquamirae:anglerfish_spawn_egg"
+		},
+		{
+			"stack": "item:aquamirae:eel_spawn_egg",
+			"after": "item:aquamirae:captain_cornelia_spawn_egg"
+		},
+		{
+			"stack": "item:aquamirae:golden_moth_spawn_egg",
+			"after": "item:aquamirae:eel_spawn_egg"
+		},
+		{
+			"stack": "item:aquamirae:maw_spawn_egg",
+			"after": "item:aquamirae:golden_moth_spawn_egg"
+		},
+		{
+			"stack": "item:aquamirae:maze_mother_spawn_egg",
+			"after": "item:aquamirae:maw_spawn_egg"
+		},
+		{
+			"stack": "item:aquamirae:pillagers_patrol_spawn_egg",
+			"after": "item:aquamirae:maze_mother_spawn_egg"
+		},
+		{
+			"stack": "item:aquamirae:spinefish_spawn_egg",
+			"after": "item:aquamirae:pillagers_patrol_spawn_egg"
+		},
+		{
+			"stack": "item:aquamirae:tortured_soul_spawn_egg",
+			"after": "item:aquamirae:spinefish_spawn_egg"
+		},
+		{
+			"stack": "item:ars_nouveau:drygmy_se",
+			"after": "item:aquamirae:tortured_soul_spawn_egg"
+		},
+		{
+			"stack": "item:ars_nouveau:starbuncle_se",
+			"after": "item:ars_nouveau:drygmy_se"
+		},
+		{
+			"stack": "item:ars_nouveau:whirlisprig_se",
+			"after": "item:ars_nouveau:starbuncle_se"
+		},
+		{
+			"stack": "item:ars_nouveau:wilden_guardian_se",
+			"after": "item:ars_nouveau:whirlisprig_se"
+		},
+		{
+			"stack": "item:ars_nouveau:wilden_hunter_se",
+			"after": "item:ars_nouveau:wilden_guardian_se"
+		},
+		{
+			"stack": "item:ars_nouveau:wilden_stalker_se",
+			"after": "item:ars_nouveau:wilden_hunter_se"
+		},
+		{
+			"stack": "item:artifacts:mimic_spawn_egg",
+			"after": "item:ars_nouveau:wilden_stalker_se"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:baby_skeleton_minion_spawn_egg",
+			"after": "item:artifacts:mimic_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:baby_skeleton_spawn_egg",
+			"after": "item:born_in_chaos_v1:baby_skeleton_minion_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:baby_spider_controlled_spawn_egg",
+			"after": "item:born_in_chaos_v1:baby_skeleton_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:baby_spider_spawn_egg",
+			"after": "item:born_in_chaos_v1:baby_spider_controlled_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:barrel_zombie_spawn_egg",
+			"after": "item:born_in_chaos_v1:baby_spider_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:bloody_gadfly_spawn_egg",
+			"after": "item:born_in_chaos_v1:barrel_zombie_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:bone_imp_minion_spawn_egg",
+			"after": "item:born_in_chaos_v1:bloody_gadfly_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:bone_imp_spawn_egg",
+			"after": "item:born_in_chaos_v1:bone_imp_minion_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:bonescaller_not_despawn_spawn_egg",
+			"after": "item:born_in_chaos_v1:bone_imp_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:bonescaller_spawn_egg",
+			"after": "item:born_in_chaos_v1:bonescaller_not_despawn_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:controlled_baby_skeleton_spawn_egg",
+			"after": "item:born_in_chaos_v1:bonescaller_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:controlled_spiritual_assistant_spawn_egg",
+			"after": "item:born_in_chaos_v1:controlled_baby_skeleton_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:corpse_fish_spawn_egg",
+			"after": "item:born_in_chaos_v1:controlled_spiritual_assistant_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:corpse_fly_spawn_egg",
+			"after": "item:born_in_chaos_v1:corpse_fish_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:dark_vortex_spawn_egg",
+			"after": "item:born_in_chaos_v1:corpse_fly_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:decaying_zombie_not_despawn_spawn_egg",
+			"after": "item:born_in_chaos_v1:dark_vortex_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:decaying_zombie_spawn_egg",
+			"after": "item:born_in_chaos_v1:decaying_zombie_not_despawn_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:decrepit_skeleton_spawn_egg",
+			"after": "item:born_in_chaos_v1:decaying_zombie_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:diamond_termite_spawn_egg",
+			"after": "item:born_in_chaos_v1:decrepit_skeleton_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:dire_hound_leader_spawn_egg",
+			"after": "item:born_in_chaos_v1:diamond_termite_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:door_knight_not_despawn_spawn_egg",
+			"after": "item:born_in_chaos_v1:dire_hound_leader_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:door_knight_spawn_egg",
+			"after": "item:born_in_chaos_v1:door_knight_not_despawn_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:dread_hound_not_despawn_spawn_egg",
+			"after": "item:born_in_chaos_v1:door_knight_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:dread_hound_spawn_egg",
+			"after": "item:born_in_chaos_v1:dread_hound_not_despawn_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:fallen_chaos_knight_spawn_egg",
+			"after": "item:born_in_chaos_v1:dread_hound_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:felsteed_spawn_egg",
+			"after": "item:born_in_chaos_v1:fallen_chaos_knight_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:firelight_not_despawn_spawn_egg",
+			"after": "item:born_in_chaos_v1:felsteed_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:firelight_spawn_egg",
+			"after": "item:born_in_chaos_v1:firelight_not_despawn_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:glutton_fish_spawn_egg",
+			"after": "item:born_in_chaos_v1:firelight_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:infernal_spirit_spawn_egg",
+			"after": "item:born_in_chaos_v1:glutton_fish_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:krampus_henchman_spawn_egg",
+			"after": "item:born_in_chaos_v1:infernal_spirit_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:krampus_spawn_egg",
+			"after": "item:born_in_chaos_v1:krampus_henchman_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:lifestealer_spawn_egg",
+			"after": "item:born_in_chaos_v1:krampus_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:lifestealer_true_form_spawn_egg",
+			"after": "item:born_in_chaos_v1:lifestealer_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:lord_pumpkinhead_head_spawn_egg",
+			"after": "item:born_in_chaos_v1:lifestealer_true_form_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:lord_pumpkinhead_spawn_egg",
+			"after": "item:born_in_chaos_v1:lord_pumpkinhead_head_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:lord_pumpkinhead_withouta_horse_spawn_egg",
+			"after": "item:born_in_chaos_v1:lord_pumpkinhead_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:lord_the_headless_spawn_egg",
+			"after": "item:born_in_chaos_v1:lord_pumpkinhead_withouta_horse_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:lords_felsteed_spawn_egg",
+			"after": "item:born_in_chaos_v1:lord_the_headless_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:maggot_spawn_egg",
+			"after": "item:born_in_chaos_v1:lords_felsteed_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:missionary_raider_spawn_egg",
+			"after": "item:born_in_chaos_v1:maggot_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:missioner_spawn_egg",
+			"after": "item:born_in_chaos_v1:missionary_raider_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:mother_spider_spawn_egg",
+			"after": "item:born_in_chaos_v1:missioner_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:mr_pumpkin_controlled_spawn_egg",
+			"after": "item:born_in_chaos_v1:mother_spider_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:mr_pumpkin_spawn_egg",
+			"after": "item:born_in_chaos_v1:mr_pumpkin_controlled_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:mrs_pumpkin_spawn_egg",
+			"after": "item:born_in_chaos_v1:mr_pumpkin_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:nightmare_stalker_spawn_egg",
+			"after": "item:born_in_chaos_v1:mrs_pumpkin_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:phantom_creeper_copy_spawn_egg",
+			"after": "item:born_in_chaos_v1:nightmare_stalker_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:phantom_creeper_spawn_egg",
+			"after": "item:born_in_chaos_v1:phantom_creeper_copy_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:pumpkin_bomb_spawn_egg",
+			"after": "item:born_in_chaos_v1:phantom_creeper_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:pumpkin_bruiser_spawn_egg",
+			"after": "item:born_in_chaos_v1:pumpkin_bomb_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:pumpkin_dunce_spawn_egg",
+			"after": "item:born_in_chaos_v1:pumpkin_bruiser_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:pumpkin_spirit_spawn_egg",
+			"after": "item:born_in_chaos_v1:pumpkin_dunce_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:pumpkinhead_spawn_egg",
+			"after": "item:born_in_chaos_v1:pumpkin_spirit_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:restless_spirit_spawn_egg",
+			"after": "item:born_in_chaos_v1:pumpkinhead_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:riding_felsteed_spawn_egg",
+			"after": "item:born_in_chaos_v1:restless_spirit_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:riding_lords_felsteed_spawn_egg",
+			"after": "item:born_in_chaos_v1:riding_felsteed_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scarlet_persecutor_spawn_egg",
+			"after": "item:born_in_chaos_v1:riding_lords_felsteed_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:seared_spirit_not_despawn_spawn_egg",
+			"after": "item:born_in_chaos_v1:scarlet_persecutor_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:seared_spirit_spawn_egg",
+			"after": "item:born_in_chaos_v1:seared_spirit_not_despawn_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:senor_pumpkin_spawn_egg",
+			"after": "item:born_in_chaos_v1:seared_spirit_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:siamese_skeletons_spawn_egg",
+			"after": "item:born_in_chaos_v1:senor_pumpkin_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:siamese_skeletonsleft_spawn_egg",
+			"after": "item:born_in_chaos_v1:siamese_skeletons_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:siamese_skeletonsright_spawn_egg",
+			"after": "item:born_in_chaos_v1:siamese_skeletonsleft_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:sir_pumpkinhead_spawn_egg",
+			"after": "item:born_in_chaos_v1:siamese_skeletonsright_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:sir_pumpkinhead_without_horse_spawn_egg",
+			"after": "item:born_in_chaos_v1:sir_pumpkinhead_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:sir_the_headless_spawn_egg",
+			"after": "item:born_in_chaos_v1:sir_pumpkinhead_without_horse_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:skeleton_demoman_spawn_egg",
+			"after": "item:born_in_chaos_v1:sir_the_headless_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:skeleton_thrasher_not_despawn_spawn_egg",
+			"after": "item:born_in_chaos_v1:skeleton_demoman_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:skeleton_thrasher_spawn_egg",
+			"after": "item:born_in_chaos_v1:skeleton_thrasher_not_despawn_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:spirit_guide_assistant_spawn_egg",
+			"after": "item:born_in_chaos_v1:skeleton_thrasher_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:spirit_guide_spawn_egg",
+			"after": "item:born_in_chaos_v1:spirit_guide_assistant_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:spiritof_chaos_spawn_egg",
+			"after": "item:born_in_chaos_v1:spirit_guide_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:supreme_bonescaller_not_despawn_spawn_egg",
+			"after": "item:born_in_chaos_v1:spiritof_chaos_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:supreme_bonescaller_spawn_egg",
+			"after": "item:born_in_chaos_v1:supreme_bonescaller_not_despawn_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:supreme_bonescaller_stage_2_spawn_egg",
+			"after": "item:born_in_chaos_v1:supreme_bonescaller_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:swarmer_spawn_egg",
+			"after": "item:born_in_chaos_v1:supreme_bonescaller_stage_2_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:thornshell_crab_spawn_egg",
+			"after": "item:born_in_chaos_v1:swarmer_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:zombie_bruiser_spawn_egg",
+			"after": "item:born_in_chaos_v1:thornshell_crab_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:zombie_clown_not_despawn_spawn_egg",
+			"after": "item:born_in_chaos_v1:zombie_bruiser_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:zombie_clown_spawn_egg",
+			"after": "item:born_in_chaos_v1:zombie_clown_not_despawn_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:zombie_fisherman_spawn_egg",
+			"after": "item:born_in_chaos_v1:zombie_clown_spawn_egg"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:zombie_lumberjack_spawn_egg",
+			"after": "item:born_in_chaos_v1:zombie_fisherman_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:amethyst_crab_spawn_egg",
+			"after": "item:born_in_chaos_v1:zombie_lumberjack_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:ancient_remnant_spawn_egg",
+			"after": "item:cataclysm:amethyst_crab_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:aptrgangr_spawn_egg",
+			"after": "item:cataclysm:ancient_remnant_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:cindaria_spawn_egg",
+			"after": "item:cataclysm:aptrgangr_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:clawdian_spawn_egg",
+			"after": "item:cataclysm:cindaria_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:coral_golem_spawn_egg",
+			"after": "item:cataclysm:clawdian_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:coralssus_spawn_egg",
+			"after": "item:cataclysm:coral_golem_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:deepling_angler_spawn_egg",
+			"after": "item:cataclysm:coralssus_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:deepling_brute_spawn_egg",
+			"after": "item:cataclysm:deepling_angler_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:deepling_priest_spawn_egg",
+			"after": "item:cataclysm:deepling_brute_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:deepling_spawn_egg",
+			"after": "item:cataclysm:deepling_priest_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:deepling_warlock_spawn_egg",
+			"after": "item:cataclysm:deepling_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:draugr_spawn_egg",
+			"after": "item:cataclysm:deepling_warlock_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:elite_draugr_spawn_egg",
+			"after": "item:cataclysm:draugr_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:ender_golem_spawn_egg",
+			"after": "item:cataclysm:elite_draugr_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:ender_guardian_spawn_egg",
+			"after": "item:cataclysm:ender_golem_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:endermaptera_spawn_egg",
+			"after": "item:cataclysm:ender_guardian_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:hippocamtus_spawn_egg",
+			"after": "item:cataclysm:endermaptera_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:ignis_spawn_egg",
+			"after": "item:cataclysm:hippocamtus_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:ignited_berserker_spawn_egg",
+			"after": "item:cataclysm:ignis_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:ignited_revenant_spawn_egg",
+			"after": "item:cataclysm:ignited_berserker_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:kobolediator_spawn_egg",
+			"after": "item:cataclysm:ignited_revenant_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:koboleton_spawn_egg",
+			"after": "item:cataclysm:kobolediator_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:lionfish_spawn_egg",
+			"after": "item:cataclysm:koboleton_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:maledictus_spawn_egg",
+			"after": "item:cataclysm:lionfish_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:modern_remnant_spawn_egg",
+			"after": "item:cataclysm:maledictus_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:nameless_sorcerer_spawn_egg",
+			"after": "item:cataclysm:modern_remnant_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:netherite_ministrosity_spawn_egg",
+			"after": "item:cataclysm:nameless_sorcerer_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:netherite_monstrosity_spawn_egg",
+			"after": "item:cataclysm:netherite_ministrosity_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:octohost_spawn_egg",
+			"after": "item:cataclysm:netherite_monstrosity_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:royal_draugr_spawn_egg",
+			"after": "item:cataclysm:octohost_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:scylla_spawn_egg",
+			"after": "item:cataclysm:royal_draugr_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:symbiocto_spawn_egg",
+			"after": "item:cataclysm:scylla_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:the_baby_leviathan_spawn_egg",
+			"after": "item:cataclysm:symbiocto_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:the_harbinger_spawn_egg",
+			"after": "item:cataclysm:the_baby_leviathan_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:the_leviathan_spawn_egg",
+			"after": "item:cataclysm:the_harbinger_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:the_prowler_spawn_egg",
+			"after": "item:cataclysm:the_leviathan_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:the_watcher_spawn_egg",
+			"after": "item:cataclysm:the_prowler_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:urchinkin_spawn_egg",
+			"after": "item:cataclysm:the_watcher_spawn_egg"
+		},
+		{
+			"stack": "item:cataclysm:wadjet_spawn_egg",
+			"after": "item:cataclysm:urchinkin_spawn_egg"
+		},
+		{
+			"stack": "item:crittersandcompanions:dragonfly_spawn_egg",
+			"after": "item:cataclysm:wadjet_spawn_egg"
+		},
+		{
+			"stack": "item:crittersandcompanions:dumbo_octopus_spawn_egg",
+			"after": "item:crittersandcompanions:dragonfly_spawn_egg"
+		},
+		{
+			"stack": "item:crittersandcompanions:ferret_spawn_egg",
+			"after": "item:crittersandcompanions:dumbo_octopus_spawn_egg"
+		},
+		{
+			"stack": "item:crittersandcompanions:jumping_spider_spawn_egg",
+			"after": "item:crittersandcompanions:ferret_spawn_egg"
+		},
+		{
+			"stack": "item:crittersandcompanions:koi_fish_spawn_egg",
+			"after": "item:crittersandcompanions:jumping_spider_spawn_egg"
+		},
+		{
+			"stack": "item:crittersandcompanions:leaf_insect_spawn_egg",
+			"after": "item:crittersandcompanions:koi_fish_spawn_egg"
+		},
+		{
+			"stack": "item:crittersandcompanions:otter_spawn_egg",
+			"after": "item:crittersandcompanions:leaf_insect_spawn_egg"
+		},
+		{
+			"stack": "item:crittersandcompanions:red_panda_spawn_egg",
+			"after": "item:crittersandcompanions:otter_spawn_egg"
+		},
+		{
+			"stack": "item:crittersandcompanions:sea_bunny_spawn_egg",
+			"after": "item:crittersandcompanions:red_panda_spawn_egg"
+		},
+		{
+			"stack": "item:crittersandcompanions:shima_enaga_spawn_egg",
+			"after": "item:crittersandcompanions:sea_bunny_spawn_egg"
+		},
+		{
+			"stack": "item:ecologics:coconut_crab_spawn_egg",
+			"after": "item:crittersandcompanions:shima_enaga_spawn_egg"
+		},
+		{
+			"stack": "item:ecologics:penguin_spawn_egg",
+			"after": "item:ecologics:coconut_crab_spawn_egg"
+		},
+		{
+			"stack": "item:ecologics:squirrel_spawn_egg",
+			"after": "item:ecologics:penguin_spawn_egg"
+		},
+		{
+			"stack": "item:etcetera:chapple_spawn_egg",
+			"after": "item:ecologics:squirrel_spawn_egg"
+		},
+		{
+			"stack": "item:evilcraft:controlled_zombie_spawn_egg",
+			"after": "item:etcetera:chapple_spawn_egg"
+		},
+		{
+			"stack": "item:evilcraft:netherfish_spawn_egg",
+			"after": "item:evilcraft:controlled_zombie_spawn_egg"
+		},
+		{
+			"stack": "item:evilcraft:poisonous_libelle_spawn_egg",
+			"after": "item:evilcraft:netherfish_spawn_egg"
+		},
+		{
+			"stack": "item:evilcraft:vengeance_spirit_spawn_egg",
+			"after": "item:evilcraft:poisonous_libelle_spawn_egg"
+		},
+		{
+			"stack": "item:evilcraft:werewolf_spawn_egg",
+			"after": "item:evilcraft:vengeance_spirit_spawn_egg"
+		},
+		{
+			"stack": "item:galosphere:berserker_spawn_egg",
+			"after": "item:evilcraft:werewolf_spawn_egg"
+		},
+		{
+			"stack": "item:galosphere:preserved_spawn_egg",
+			"after": "item:galosphere:berserker_spawn_egg"
+		},
+		{
+			"stack": "item:galosphere:sparkle_spawn_egg",
+			"after": "item:galosphere:preserved_spawn_egg"
+		},
+		{
+			"stack": "item:galosphere:specterpillar_spawn_egg",
+			"after": "item:galosphere:sparkle_spawn_egg"
+		},
+		{
+			"stack": "item:galosphere:spectre_spawn_egg",
+			"after": "item:galosphere:specterpillar_spawn_egg"
+		},
+		{
+			"stack": "item:majruszsdifficulty:cerberus_spawn_egg",
+			"after": "item:galosphere:spectre_spawn_egg"
+		},
+		{
+			"stack": "item:majruszsdifficulty:creeperling_spawn_egg",
+			"after": "item:majruszsdifficulty:cerberus_spawn_egg"
+		},
+		{
+			"stack": "item:majruszsdifficulty:cursed_armor_spawn_egg",
+			"after": "item:majruszsdifficulty:creeperling_spawn_egg"
+		},
+		{
+			"stack": "item:majruszsdifficulty:giant_spawn_egg",
+			"after": "item:majruszsdifficulty:cursed_armor_spawn_egg"
+		},
+		{
+			"stack": "item:majruszsdifficulty:illusioner_spawn_egg",
+			"after": "item:majruszsdifficulty:giant_spawn_egg"
+		},
+		{
+			"stack": "item:majruszsdifficulty:tank_spawn_egg",
+			"after": "item:majruszsdifficulty:illusioner_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:allay_spawn_egg",
+			"after": "item:majruszsdifficulty:tank_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:axolotl_spawn_egg",
+			"after": "item:minecraft:allay_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:bat_spawn_egg",
+			"after": "item:minecraft:axolotl_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:bee_spawn_egg",
+			"after": "item:minecraft:bat_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:blaze_spawn_egg",
+			"after": "item:minecraft:bee_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:camel_spawn_egg",
+			"after": "item:minecraft:blaze_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:cat_spawn_egg",
+			"after": "item:minecraft:camel_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:cave_spider_spawn_egg",
+			"after": "item:minecraft:cat_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:chicken_spawn_egg",
+			"after": "item:minecraft:cave_spider_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:cod_spawn_egg",
+			"after": "item:minecraft:chicken_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:cow_spawn_egg",
+			"after": "item:minecraft:cod_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:creeper_spawn_egg",
+			"after": "item:minecraft:cow_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:dolphin_spawn_egg",
+			"after": "item:minecraft:creeper_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:donkey_spawn_egg",
+			"after": "item:minecraft:dolphin_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:drowned_spawn_egg",
+			"after": "item:minecraft:donkey_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:elder_guardian_spawn_egg",
+			"after": "item:minecraft:drowned_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:ender_dragon_spawn_egg",
+			"after": "item:minecraft:elder_guardian_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:enderman_spawn_egg",
+			"after": "item:minecraft:ender_dragon_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:endermite_spawn_egg",
+			"after": "item:minecraft:enderman_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:evoker_spawn_egg",
+			"after": "item:minecraft:endermite_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:fox_spawn_egg",
+			"after": "item:minecraft:evoker_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:frog_spawn_egg",
+			"after": "item:minecraft:fox_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:ghast_spawn_egg",
+			"after": "item:minecraft:frog_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:glow_squid_spawn_egg",
+			"after": "item:minecraft:ghast_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:goat_spawn_egg",
+			"after": "item:minecraft:glow_squid_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:guardian_spawn_egg",
+			"after": "item:minecraft:goat_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:hoglin_spawn_egg",
+			"after": "item:minecraft:guardian_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:horse_spawn_egg",
+			"after": "item:minecraft:hoglin_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:husk_spawn_egg",
+			"after": "item:minecraft:horse_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:iron_golem_spawn_egg",
+			"after": "item:minecraft:husk_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:llama_spawn_egg",
+			"after": "item:minecraft:iron_golem_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:magma_cube_spawn_egg",
+			"after": "item:minecraft:llama_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:mooshroom_spawn_egg",
+			"after": "item:minecraft:magma_cube_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:mule_spawn_egg",
+			"after": "item:minecraft:mooshroom_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:ocelot_spawn_egg",
+			"after": "item:minecraft:mule_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:panda_spawn_egg",
+			"after": "item:minecraft:ocelot_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:parrot_spawn_egg",
+			"after": "item:minecraft:panda_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:phantom_spawn_egg",
+			"after": "item:minecraft:parrot_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:pig_spawn_egg",
+			"after": "item:minecraft:phantom_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:piglin_brute_spawn_egg",
+			"after": "item:minecraft:pig_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:piglin_spawn_egg",
+			"after": "item:minecraft:piglin_brute_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:pillager_spawn_egg",
+			"after": "item:minecraft:piglin_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:polar_bear_spawn_egg",
+			"after": "item:minecraft:pillager_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:pufferfish_spawn_egg",
+			"after": "item:minecraft:polar_bear_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:rabbit_spawn_egg",
+			"after": "item:minecraft:pufferfish_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:ravager_spawn_egg",
+			"after": "item:minecraft:rabbit_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:salmon_spawn_egg",
+			"after": "item:minecraft:ravager_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:sheep_spawn_egg",
+			"after": "item:minecraft:salmon_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:shulker_spawn_egg",
+			"after": "item:minecraft:sheep_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:silverfish_spawn_egg",
+			"after": "item:minecraft:shulker_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:skeleton_horse_spawn_egg",
+			"after": "item:minecraft:silverfish_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:skeleton_spawn_egg",
+			"after": "item:minecraft:skeleton_horse_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:slime_spawn_egg",
+			"after": "item:minecraft:skeleton_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:sniffer_spawn_egg",
+			"after": "item:minecraft:slime_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:snow_golem_spawn_egg",
+			"after": "item:minecraft:sniffer_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:spider_spawn_egg",
+			"after": "item:minecraft:snow_golem_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:squid_spawn_egg",
+			"after": "item:minecraft:spider_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:stray_spawn_egg",
+			"after": "item:minecraft:squid_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:strider_spawn_egg",
+			"after": "item:minecraft:stray_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:tadpole_spawn_egg",
+			"after": "item:minecraft:strider_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:trader_llama_spawn_egg",
+			"after": "item:minecraft:tadpole_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:tropical_fish_spawn_egg",
+			"after": "item:minecraft:trader_llama_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:turtle_spawn_egg",
+			"after": "item:minecraft:tropical_fish_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:vex_spawn_egg",
+			"after": "item:minecraft:turtle_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:villager_spawn_egg",
+			"after": "item:minecraft:vex_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:vindicator_spawn_egg",
+			"after": "item:minecraft:villager_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:wandering_trader_spawn_egg",
+			"after": "item:minecraft:vindicator_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:warden_spawn_egg",
+			"after": "item:minecraft:wandering_trader_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:witch_spawn_egg",
+			"after": "item:minecraft:warden_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:wither_skeleton_spawn_egg",
+			"after": "item:minecraft:witch_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:wither_spawn_egg",
+			"after": "item:minecraft:wither_skeleton_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:wolf_spawn_egg",
+			"after": "item:minecraft:wither_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:zoglin_spawn_egg",
+			"after": "item:minecraft:wolf_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:zombie_horse_spawn_egg",
+			"after": "item:minecraft:zoglin_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:zombie_spawn_egg",
+			"after": "item:minecraft:zombie_horse_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:zombie_villager_spawn_egg",
+			"after": "item:minecraft:zombie_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:zombified_piglin_spawn_egg",
+			"after": "item:minecraft:zombie_villager_spawn_egg"
+		},
+		{
+			"stack": "item:mutantmonsters:creeper_minion_spawn_egg",
+			"after": "item:minecraft:zombified_piglin_spawn_egg"
+		},
+		{
+			"stack": "item:mutantmonsters:mutant_creeper_spawn_egg",
+			"after": "item:mutantmonsters:creeper_minion_spawn_egg"
+		},
+		{
+			"stack": "item:mutantmonsters:mutant_enderman_spawn_egg",
+			"after": "item:mutantmonsters:mutant_creeper_spawn_egg"
+		},
+		{
+			"stack": "item:mutantmonsters:mutant_skeleton_spawn_egg",
+			"after": "item:mutantmonsters:mutant_enderman_spawn_egg"
+		},
+		{
+			"stack": "item:mutantmonsters:mutant_snow_golem_spawn_egg",
+			"after": "item:mutantmonsters:mutant_skeleton_spawn_egg"
+		},
+		{
+			"stack": "item:mutantmonsters:mutant_zombie_spawn_egg",
+			"after": "item:mutantmonsters:mutant_snow_golem_spawn_egg"
+		},
+		{
+			"stack": "item:mutantmonsters:spider_pig_spawn_egg",
+			"after": "item:mutantmonsters:mutant_zombie_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:alligator_spawn_egg",
+			"after": "item:mutantmonsters:spider_pig_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:bass_spawn_egg",
+			"after": "item:naturalist:alligator_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:bear_spawn_egg",
+			"after": "item:naturalist:bass_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:bluejay_spawn_egg",
+			"after": "item:naturalist:bear_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:boar_spawn_egg",
+			"after": "item:naturalist:bluejay_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:butterfly_spawn_egg",
+			"after": "item:naturalist:boar_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:canary_spawn_egg",
+			"after": "item:naturalist:butterfly_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:cardinal_spawn_egg",
+			"after": "item:naturalist:canary_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:caterpillar_spawn_egg",
+			"after": "item:naturalist:cardinal_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:catfish_spawn_egg",
+			"after": "item:naturalist:caterpillar_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:coral_snake_spawn_egg",
+			"after": "item:naturalist:catfish_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:deer_spawn_egg",
+			"after": "item:naturalist:coral_snake_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:dragonfly_spawn_egg",
+			"after": "item:naturalist:deer_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:duck_spawn_egg",
+			"after": "item:naturalist:dragonfly_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:elephant_spawn_egg",
+			"after": "item:naturalist:duck_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:finch_spawn_egg",
+			"after": "item:naturalist:elephant_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:firefly_spawn_egg",
+			"after": "item:naturalist:finch_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:giraffe_spawn_egg",
+			"after": "item:naturalist:firefly_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:hippo_spawn_egg",
+			"after": "item:naturalist:giraffe_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:lion_spawn_egg",
+			"after": "item:naturalist:hippo_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:lizard_spawn_egg",
+			"after": "item:naturalist:lion_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:rattlesnake_spawn_egg",
+			"after": "item:naturalist:lizard_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:rhino_spawn_egg",
+			"after": "item:naturalist:rattlesnake_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:robin_spawn_egg",
+			"after": "item:naturalist:rhino_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:snail_spawn_egg",
+			"after": "item:naturalist:robin_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:snake_spawn_egg",
+			"after": "item:naturalist:snail_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:sparrow_spawn_egg",
+			"after": "item:naturalist:snake_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:tortoise_spawn_egg",
+			"after": "item:naturalist:sparrow_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:vulture_spawn_egg",
+			"after": "item:naturalist:tortoise_spawn_egg"
+		},
+		{
+			"stack": "item:naturalist:zebra_spawn_egg",
+			"after": "item:naturalist:vulture_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:blazefish_spawn_egg",
+			"after": "item:naturalist:zebra_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:bonefish_spawn_egg",
+			"after": "item:netherdepthsupgrade:blazefish_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:eyeball_fish_spawn_egg",
+			"after": "item:netherdepthsupgrade:bonefish_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:fortress_grouper_spawn_egg",
+			"after": "item:netherdepthsupgrade:eyeball_fish_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:glowdine_spawn_egg",
+			"after": "item:netherdepthsupgrade:fortress_grouper_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:lava_pufferfish_spawn_egg",
+			"after": "item:netherdepthsupgrade:glowdine_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:magmacubefish_spawn_egg",
+			"after": "item:netherdepthsupgrade:lava_pufferfish_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:obsidianfish_spawn_egg",
+			"after": "item:netherdepthsupgrade:magmacubefish_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:searing_cod_spawn_egg",
+			"after": "item:netherdepthsupgrade:obsidianfish_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:soulsucker_spawn_egg",
+			"after": "item:netherdepthsupgrade:searing_cod_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:wither_bonefish_spawn_egg",
+			"after": "item:netherdepthsupgrade:soulsucker_spawn_egg"
+		},
+		{
+			"stack": "item:netherexp:apparition_spawn_egg",
+			"after": "item:netherdepthsupgrade:wither_bonefish_spawn_egg"
+		},
+		{
+			"stack": "item:netherexp:banshee_spawn_egg",
+			"after": "item:netherexp:apparition_spawn_egg"
+		},
+		{
+			"stack": "item:netherexp:carcass_spawn_egg",
+			"after": "item:netherexp:banshee_spawn_egg"
+		},
+		{
+			"stack": "item:netherexp:ecto_slab_spawn_egg",
+			"after": "item:netherexp:carcass_spawn_egg"
+		},
+		{
+			"stack": "item:netherexp:stampede_spawn_egg",
+			"after": "item:netherexp:ecto_slab_spawn_egg"
+		},
+		{
+			"stack": "item:netherexp:vessel_spawn_egg",
+			"after": "item:netherexp:stampede_spawn_egg"
+		},
+		{
+			"stack": "item:netherexp:wisp_spawn_egg",
+			"after": "item:netherexp:vessel_spawn_egg"
+		},
+		{
+			"stack": "item:phantasm:behemoth_spawn_egg",
+			"after": "item:netherexp:wisp_spawn_egg"
+		},
+		{
+			"stack": "item:phantasm:crystie_spawn_egg",
+			"after": "item:phantasm:behemoth_spawn_egg"
+		},
+		{
+			"stack": "item:quark:crab_spawn_egg",
+			"after": "item:phantasm:crystie_spawn_egg"
+		},
+		{
+			"stack": "item:quark:forgotten_spawn_egg",
+			"after": "item:quark:crab_spawn_egg"
+		},
+		{
+			"stack": "item:quark:foxhound_spawn_egg",
+			"after": "item:quark:forgotten_spawn_egg"
+		},
+		{
+			"stack": "item:quark:shiba_spawn_egg",
+			"after": "item:quark:foxhound_spawn_egg"
+		},
+		{
+			"stack": "item:quark:stoneling_spawn_egg",
+			"after": "item:quark:shiba_spawn_egg"
+		},
+		{
+			"stack": "item:quark:toretoise_spawn_egg",
+			"after": "item:quark:stoneling_spawn_egg"
+		},
+		{
+			"stack": "item:quark:wraith_spawn_egg",
+			"after": "item:quark:toretoise_spawn_egg"
+		},
+		{
+			"stack": "item:rediscovered:beast_boy_spawn_egg",
+			"after": "item:quark:wraith_spawn_egg"
+		},
+		{
+			"stack": "item:rediscovered:black_steve_spawn_egg",
+			"after": "item:rediscovered:beast_boy_spawn_egg"
+		},
+		{
+			"stack": "item:rediscovered:fish_spawn_egg",
+			"after": "item:rediscovered:black_steve_spawn_egg"
+		},
+		{
+			"stack": "item:rediscovered:melee_pigman_spawn_egg",
+			"after": "item:rediscovered:fish_spawn_egg"
+		},
+		{
+			"stack": "item:rediscovered:pigman_spawn_egg",
+			"after": "item:rediscovered:melee_pigman_spawn_egg"
+		},
+		{
+			"stack": "item:rediscovered:rana_spawn_egg",
+			"after": "item:rediscovered:pigman_spawn_egg"
+		},
+		{
+			"stack": "item:rediscovered:ranged_pigman_spawn_egg",
+			"after": "item:rediscovered:rana_spawn_egg"
+		},
+		{
+			"stack": "item:rediscovered:steve_spawn_egg",
+			"after": "item:rediscovered:ranged_pigman_spawn_egg"
+		},
+		{
+			"stack": "item:rediscovered:zombie_pigman_spawn_egg",
+			"after": "item:rediscovered:steve_spawn_egg"
+		},
+		{
+			"stack": "item:ribbits:ribbit_fisherman_spawn_egg",
+			"after": "item:rediscovered:zombie_pigman_spawn_egg"
+		},
+		{
+			"stack": "item:ribbits:ribbit_gardener_spawn_egg",
+			"after": "item:ribbits:ribbit_fisherman_spawn_egg"
+		},
+		{
+			"stack": "item:ribbits:ribbit_merchant_spawn_egg",
+			"after": "item:ribbits:ribbit_gardener_spawn_egg"
+		},
+		{
+			"stack": "item:ribbits:ribbit_nitwit_spawn_egg",
+			"after": "item:ribbits:ribbit_merchant_spawn_egg"
+		},
+		{
+			"stack": "item:ribbits:ribbit_sorcerer_spawn_egg",
+			"after": "item:ribbits:ribbit_nitwit_spawn_egg"
+		},
+		{
+			"stack": "item:the_bumblezone:bee_queen_spawn_egg",
+			"after": "item:ribbits:ribbit_sorcerer_spawn_egg"
+		},
+		{
+			"stack": "item:the_bumblezone:beehemoth_spawn_egg",
+			"after": "item:the_bumblezone:bee_queen_spawn_egg"
+		},
+		{
+			"stack": "item:the_bumblezone:honey_slime_spawn_egg",
+			"after": "item:the_bumblezone:beehemoth_spawn_egg"
+		},
+		{
+			"stack": "item:the_bumblezone:rootmin_spawn_egg",
+			"after": "item:the_bumblezone:honey_slime_spawn_egg"
+		},
+		{
+			"stack": "item:the_bumblezone:sentry_watcher_spawn_egg",
+			"after": "item:the_bumblezone:rootmin_spawn_egg"
+		},
+		{
+			"stack": "item:the_bumblezone:variant_bee_spawn_egg",
+			"after": "item:the_bumblezone:sentry_watcher_spawn_egg"
+		},
+		{
+			"stack": "item:tide:angelfish_spawn_egg",
+			"after": "item:the_bumblezone:variant_bee_spawn_egg"
+		},
+		{
+			"stack": "item:tide:barracuda_spawn_egg",
+			"after": "item:tide:angelfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:bass_spawn_egg",
+			"after": "item:tide:barracuda_spawn_egg"
+		},
+		{
+			"stack": "item:tide:bluegill_spawn_egg",
+			"after": "item:tide:bass_spawn_egg"
+		},
+		{
+			"stack": "item:tide:catfish_spawn_egg",
+			"after": "item:tide:bluegill_spawn_egg"
+		},
+		{
+			"stack": "item:tide:clayfish_spawn_egg",
+			"after": "item:tide:catfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:guppy_spawn_egg",
+			"after": "item:tide:clayfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:mackerel_spawn_egg",
+			"after": "item:tide:guppy_spawn_egg"
+		},
+		{
+			"stack": "item:tide:mint_carp_spawn_egg",
+			"after": "item:tide:mackerel_spawn_egg"
+		},
+		{
+			"stack": "item:tide:ocean_perch_spawn_egg",
+			"after": "item:tide:mint_carp_spawn_egg"
+		},
+		{
+			"stack": "item:tide:pike_spawn_egg",
+			"after": "item:tide:ocean_perch_spawn_egg"
+		},
+		{
+			"stack": "item:tide:sailfish_spawn_egg",
+			"after": "item:tide:pike_spawn_egg"
+		},
+		{
+			"stack": "item:tide:trout_spawn_egg",
+			"after": "item:tide:sailfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:tuna_spawn_egg",
+			"after": "item:tide:trout_spawn_egg"
+		},
+		{
+			"stack": "item:tide:yellow_perch_spawn_egg",
+			"after": "item:tide:tuna_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:adherent_spawn_egg",
+			"after": "item:tide:yellow_perch_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:alpha_yeti_spawn_egg",
+			"after": "item:twilightforest:adherent_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:armored_giant_spawn_egg",
+			"after": "item:twilightforest:alpha_yeti_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:bighorn_sheep_spawn_egg",
+			"after": "item:twilightforest:armored_giant_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:blockchain_goblin_spawn_egg",
+			"after": "item:twilightforest:bighorn_sheep_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:boar_spawn_egg",
+			"after": "item:twilightforest:blockchain_goblin_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:carminite_broodling_spawn_egg",
+			"after": "item:twilightforest:boar_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:carminite_ghastguard_spawn_egg",
+			"after": "item:twilightforest:carminite_broodling_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:carminite_ghastling_spawn_egg",
+			"after": "item:twilightforest:carminite_ghastguard_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:carminite_golem_spawn_egg",
+			"after": "item:twilightforest:carminite_ghastling_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:death_tome_spawn_egg",
+			"after": "item:twilightforest:carminite_golem_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:deer_spawn_egg",
+			"after": "item:twilightforest:death_tome_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:dwarf_rabbit_spawn_egg",
+			"after": "item:twilightforest:deer_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:fire_beetle_spawn_egg",
+			"after": "item:twilightforest:dwarf_rabbit_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:giant_miner_spawn_egg",
+			"after": "item:twilightforest:fire_beetle_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:harbinger_cube_spawn_egg",
+			"after": "item:twilightforest:giant_miner_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:hedge_spider_spawn_egg",
+			"after": "item:twilightforest:harbinger_cube_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:helmet_crab_spawn_egg",
+			"after": "item:twilightforest:hedge_spider_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:hostile_wolf_spawn_egg",
+			"after": "item:twilightforest:helmet_crab_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:hydra_spawn_egg",
+			"after": "item:twilightforest:hostile_wolf_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:ice_crystal_spawn_egg",
+			"after": "item:twilightforest:hydra_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:king_spider_spawn_egg",
+			"after": "item:twilightforest:ice_crystal_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:knight_phantom_spawn_egg",
+			"after": "item:twilightforest:king_spider_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:kobold_spawn_egg",
+			"after": "item:twilightforest:knight_phantom_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:lich_spawn_egg",
+			"after": "item:twilightforest:kobold_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:lower_goblin_knight_spawn_egg",
+			"after": "item:twilightforest:lich_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:maze_slime_spawn_egg",
+			"after": "item:twilightforest:lower_goblin_knight_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:minoshroom_spawn_egg",
+			"after": "item:twilightforest:maze_slime_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:minotaur_spawn_egg",
+			"after": "item:twilightforest:minoshroom_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:mist_wolf_spawn_egg",
+			"after": "item:twilightforest:minotaur_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:mosquito_swarm_spawn_egg",
+			"after": "item:twilightforest:mist_wolf_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:naga_spawn_egg",
+			"after": "item:twilightforest:mosquito_swarm_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:penguin_spawn_egg",
+			"after": "item:twilightforest:naga_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:pinch_beetle_spawn_egg",
+			"after": "item:twilightforest:penguin_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:quest_ram_spawn_egg",
+			"after": "item:twilightforest:pinch_beetle_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:raven_spawn_egg",
+			"after": "item:twilightforest:quest_ram_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:redcap_sapper_spawn_egg",
+			"after": "item:twilightforest:raven_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:redcap_spawn_egg",
+			"after": "item:twilightforest:redcap_sapper_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:skeleton_druid_spawn_egg",
+			"after": "item:twilightforest:redcap_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:slime_beetle_spawn_egg",
+			"after": "item:twilightforest:skeleton_druid_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:snow_guardian_spawn_egg",
+			"after": "item:twilightforest:slime_beetle_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:snow_queen_spawn_egg",
+			"after": "item:twilightforest:snow_guardian_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:squirrel_spawn_egg",
+			"after": "item:twilightforest:snow_queen_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:stable_ice_core_spawn_egg",
+			"after": "item:twilightforest:squirrel_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:swarm_spider_spawn_egg",
+			"after": "item:twilightforest:stable_ice_core_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:tiny_bird_spawn_egg",
+			"after": "item:twilightforest:swarm_spider_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:towerwood_borer_spawn_egg",
+			"after": "item:twilightforest:tiny_bird_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:troll_spawn_egg",
+			"after": "item:twilightforest:towerwood_borer_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:unstable_ice_core_spawn_egg",
+			"after": "item:twilightforest:troll_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:ur_ghast_spawn_egg",
+			"after": "item:twilightforest:unstable_ice_core_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:winter_wolf_spawn_egg",
+			"after": "item:twilightforest:ur_ghast_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:wraith_spawn_egg",
+			"after": "item:twilightforest:winter_wolf_spawn_egg"
+		},
+		{
+			"stack": "item:twilightforest:yeti_spawn_egg",
+			"after": "item:twilightforest:wraith_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:bluk_spawn_egg",
+			"after": "item:twilightforest:yeti_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:bolok_spawn_egg",
+			"after": "item:unusualend:bluk_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:dragling_spawn_egg",
+			"after": "item:unusualend:bolok_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:ender_blob_spawn_egg",
+			"after": "item:unusualend:dragling_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:ender_firefly_spawn_egg",
+			"after": "item:unusualend:ender_blob_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:enderbulb_spawn_egg",
+			"after": "item:unusualend:ender_firefly_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:endstone_golem_spawn_egg",
+			"after": "item:unusualend:enderbulb_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:endstone_trapper_spawn_egg",
+			"after": "item:unusualend:endstone_golem_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:glub_spawn_egg",
+			"after": "item:unusualend:endstone_trapper_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:small_enderbulb_spawn_egg",
+			"after": "item:unusualend:glub_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:spunkler_spawn_egg",
+			"after": "item:unusualend:small_enderbulb_spawn_egg"
+		},
+		{
+			"stack": "item:unusualend:undead_enderling_spawn_egg",
+			"after": "item:unusualend:spunkler_spawn_egg"
+		},
+		{
+			"stack": "item:upgrade_aquatic:flare_spawn_egg",
+			"after": "item:unusualend:undead_enderling_spawn_egg"
+		},
+		{
+			"stack": "item:upgrade_aquatic:goose_spawn_egg",
+			"after": "item:upgrade_aquatic:flare_spawn_egg"
+		},
+		{
+			"stack": "item:upgrade_aquatic:great_thrasher_spawn_egg",
+			"after": "item:upgrade_aquatic:goose_spawn_egg"
+		},
+		{
+			"stack": "item:upgrade_aquatic:jellyfish_spawn_egg",
+			"after": "item:upgrade_aquatic:great_thrasher_spawn_egg"
+		},
+		{
+			"stack": "item:upgrade_aquatic:lionfish_spawn_egg",
+			"after": "item:upgrade_aquatic:jellyfish_spawn_egg"
+		},
+		{
+			"stack": "item:upgrade_aquatic:nautilus_spawn_egg",
+			"after": "item:upgrade_aquatic:lionfish_spawn_egg"
+		},
+		{
+			"stack": "item:upgrade_aquatic:perch_spawn_egg",
+			"after": "item:upgrade_aquatic:nautilus_spawn_egg"
+		},
+		{
+			"stack": "item:upgrade_aquatic:pike_spawn_egg",
+			"after": "item:upgrade_aquatic:perch_spawn_egg"
+		},
+		{
+			"stack": "item:upgrade_aquatic:thrasher_spawn_egg",
+			"after": "item:upgrade_aquatic:pike_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_bee_spawn_egg",
+			"after": "item:upgrade_aquatic:thrasher_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_cat_spawn_egg",
+			"after": "item:witherstormmod:sickened_bee_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_chicken_spawn_egg",
+			"after": "item:witherstormmod:sickened_cat_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_cow_spawn_egg",
+			"after": "item:witherstormmod:sickened_chicken_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_creeper_spawn_egg",
+			"after": "item:witherstormmod:sickened_cow_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_iron_golem_spawn_egg",
+			"after": "item:witherstormmod:sickened_creeper_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_mushroom_cow_spawn_egg",
+			"after": "item:witherstormmod:sickened_iron_golem_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_parrot_spawn_egg",
+			"after": "item:witherstormmod:sickened_mushroom_cow_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_phantom_spawn_egg",
+			"after": "item:witherstormmod:sickened_parrot_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_pig_spawn_egg",
+			"after": "item:witherstormmod:sickened_phantom_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_pillager_spawn_egg",
+			"after": "item:witherstormmod:sickened_pig_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_skeleton_spawn_egg",
+			"after": "item:witherstormmod:sickened_pillager_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_snow_golem_spawn_egg",
+			"after": "item:witherstormmod:sickened_skeleton_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_spider_spawn_egg",
+			"after": "item:witherstormmod:sickened_snow_golem_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_villager_spawn_egg",
+			"after": "item:witherstormmod:sickened_spider_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_vindicator_spawn_egg",
+			"after": "item:witherstormmod:sickened_villager_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_wolf_spawn_egg",
+			"after": "item:witherstormmod:sickened_vindicator_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_zombie_spawn_egg",
+			"after": "item:witherstormmod:sickened_wolf_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:tentacle_spawn_egg",
+			"after": "item:witherstormmod:sickened_zombie_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:withered_symbiont_spawn_egg",
+			"after": "item:witherstormmod:tentacle_spawn_egg"
+		},
+		{
 			"stack": "item:the_bumblezone:super_candle_netherexp:ancient",
 			"after": "item:netherexp:ancient_candle"
 		},
@@ -4239,12 +7179,8 @@
 			"after": "item:minecraft:oak_hanging_sign"
 		},
 		{
-			"stack": "item:minecraft:oak_chest_boat",
-			"after": "item:minecraft:oak_boat"
-		},
-		{
 			"stack": "item:minecraft:birch_log",
-			"after": "item:minecraft:oak_chest_boat"
+			"after": "item:minecraft:oak_boat"
 		},
 		{
 			"stack": "item:minecraft:birch_wood",
@@ -4387,12 +7323,8 @@
 			"after": "item:minecraft:birch_hanging_sign"
 		},
 		{
-			"stack": "item:minecraft:birch_chest_boat",
-			"after": "item:minecraft:birch_boat"
-		},
-		{
 			"stack": "item:minecraft:spruce_log",
-			"after": "item:minecraft:birch_chest_boat"
+			"after": "item:minecraft:birch_boat"
 		},
 		{
 			"stack": "item:minecraft:spruce_wood",
@@ -4535,12 +7467,8 @@
 			"after": "item:minecraft:spruce_hanging_sign"
 		},
 		{
-			"stack": "item:minecraft:spruce_chest_boat",
-			"after": "item:minecraft:spruce_boat"
-		},
-		{
 			"stack": "item:minecraft:jungle_log",
-			"after": "item:minecraft:spruce_chest_boat"
+			"after": "item:minecraft:spruce_boat"
 		},
 		{
 			"stack": "item:minecraft:jungle_wood",
@@ -4683,12 +7611,8 @@
 			"after": "item:minecraft:jungle_hanging_sign"
 		},
 		{
-			"stack": "item:minecraft:jungle_chest_boat",
-			"after": "item:minecraft:jungle_boat"
-		},
-		{
 			"stack": "item:minecraft:acacia_log",
-			"after": "item:minecraft:jungle_chest_boat"
+			"after": "item:minecraft:jungle_boat"
 		},
 		{
 			"stack": "item:minecraft:acacia_wood",
@@ -4831,12 +7755,8 @@
 			"after": "item:minecraft:acacia_hanging_sign"
 		},
 		{
-			"stack": "item:minecraft:acacia_chest_boat",
-			"after": "item:minecraft:acacia_boat"
-		},
-		{
 			"stack": "item:minecraft:dark_oak_log",
-			"after": "item:minecraft:acacia_chest_boat"
+			"after": "item:minecraft:acacia_boat"
 		},
 		{
 			"stack": "item:minecraft:dark_oak_wood",
@@ -4979,12 +7899,8 @@
 			"after": "item:minecraft:dark_oak_hanging_sign"
 		},
 		{
-			"stack": "item:minecraft:dark_oak_chest_boat",
-			"after": "item:minecraft:dark_oak_boat"
-		},
-		{
 			"stack": "item:minecraft:mangrove_log",
-			"after": "item:minecraft:dark_oak_chest_boat"
+			"after": "item:minecraft:dark_oak_boat"
 		},
 		{
 			"stack": "item:minecraft:mangrove_wood",
@@ -5131,12 +8047,8 @@
 			"after": "item:minecraft:mangrove_hanging_sign"
 		},
 		{
-			"stack": "item:minecraft:mangrove_chest_boat",
-			"after": "item:minecraft:mangrove_boat"
-		},
-		{
 			"stack": "item:minecraft:cherry_log",
-			"after": "item:minecraft:mangrove_chest_boat"
+			"after": "item:minecraft:mangrove_boat"
 		},
 		{
 			"stack": "item:minecraft:cherry_wood",
@@ -5279,12 +8191,8 @@
 			"after": "item:minecraft:cherry_hanging_sign"
 		},
 		{
-			"stack": "item:minecraft:cherry_chest_boat",
-			"after": "item:minecraft:cherry_boat"
-		},
-		{
 			"stack": "item:minecraft:bamboo_block",
-			"after": "item:minecraft:cherry_chest_boat"
+			"after": "item:minecraft:cherry_boat"
 		},
 		{
 			"stack": "item:quark:bamboo_post",
@@ -5435,12 +8343,8 @@
 			"after": "item:minecraft:bamboo_hanging_sign"
 		},
 		{
-			"stack": "item:minecraft:bamboo_chest_raft",
-			"after": "item:minecraft:bamboo_raft"
-		},
-		{
 			"stack": "item:ecologics:coconut_log",
-			"after": "item:minecraft:bamboo_chest_raft"
+			"after": "item:minecraft:bamboo_raft"
 		},
 		{
 			"stack": "item:ecologics:coconut_wood",
@@ -5583,12 +8487,8 @@
 			"after": "item:ecologics:coconut_hanging_sign"
 		},
 		{
-			"stack": "item:ecologics:coconut_chest_boat",
-			"after": "item:ecologics:coconut_boat"
-		},
-		{
 			"stack": "item:ecologics:walnut_log",
-			"after": "item:ecologics:coconut_chest_boat"
+			"after": "item:ecologics:coconut_boat"
 		},
 		{
 			"stack": "item:ecologics:walnut_wood",
@@ -5731,12 +8631,8 @@
 			"after": "item:ecologics:walnut_hanging_sign"
 		},
 		{
-			"stack": "item:ecologics:walnut_chest_boat",
-			"after": "item:ecologics:walnut_boat"
-		},
-		{
 			"stack": "item:botania:livingwood_log",
-			"after": "item:ecologics:walnut_chest_boat"
+			"after": "item:ecologics:walnut_boat"
 		},
 		{
 			"stack": "item:everycomp:q/botania/livingwood_post",
@@ -6091,8 +8987,108 @@
 			"after": "item:ars_nouveau:archwood_button"
 		},
 		{
-			"stack": "item:enhanced_mushrooms:mushroom_hyphae",
+			"stack": "item:evilcraft:undead_log",
 			"after": "item:supplementaries:ars_nouveau/sign_post_archwood"
+		},
+		{
+			"stack": "item:evilcraft:undead_wood",
+			"after": "item:evilcraft:undead_log"
+		},
+		{
+			"stack": "item:everycomp:q/evilcraft/undead_post",
+			"after": "item:evilcraft:undead_wood"
+		},
+		{
+			"stack": "item:evilcraft:undead_planks",
+			"after": "item:everycomp:q/evilcraft/undead_post"
+		},
+		{
+			"stack": "item:everycomp:q/evilcraft/undead_bookshelf",
+			"after": "item:evilcraft:undead_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/evilcraft/undead_bench",
+			"after": "item:everycomp:q/evilcraft/undead_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/evilcraft/undead_chair",
+			"after": "item:everycomp:hc/evilcraft/undead_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/evilcraft/undead_couch",
+			"after": "item:everycomp:hc/evilcraft/undead_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/evilcraft/undead_dining_bench",
+			"after": "item:everycomp:hc/evilcraft/undead_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/evilcraft/undead_side_table",
+			"after": "item:everycomp:hc/evilcraft/undead_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/evilcraft/undead_desk",
+			"after": "item:everycomp:hc/evilcraft/undead_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/evilcraft/undead_nightstand",
+			"after": "item:everycomp:hc/evilcraft/undead_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/evilcraft/undead_table",
+			"after": "item:everycomp:hc/evilcraft/undead_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/evilcraft/undead_counter",
+			"after": "item:everycomp:hc/evilcraft/undead_table"
+		},
+		{
+			"stack": "item:everycomp:q/evilcraft/undead_chest",
+			"after": "item:everycomp:hc/evilcraft/undead_counter"
+		},
+		{
+			"stack": "item:everycomp:hc/evilcraft/undead_fancy_bed",
+			"after": "item:everycomp:q/evilcraft/undead_chest"
+		},
+		{
+			"stack": "item:evilcraft:undead_planks_stairs",
+			"after": "item:everycomp:hc/evilcraft/undead_fancy_bed"
+		},
+		{
+			"stack": "item:evilcraft:undead_slab",
+			"after": "item:evilcraft:undead_planks_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:evilcraft/undead_vertical_slab",
+			"after": "item:evilcraft:undead_slab"
+		},
+		{
+			"stack": "item:suppsquared:evilcraft/item_shelf_undead",
+			"after": "item:v_slab_compat:evilcraft/undead_vertical_slab"
+		},
+		{
+			"stack": "item:evilcraft:undead_fence",
+			"after": "item:suppsquared:evilcraft/item_shelf_undead"
+		},
+		{
+			"stack": "item:evilcraft:undead_fence_gate",
+			"after": "item:evilcraft:undead_fence"
+		},
+		{
+			"stack": "item:everycomp:q/evilcraft/undead_ladder",
+			"after": "item:evilcraft:undead_fence_gate"
+		},
+		{
+			"stack": "item:everycomp:hnhome/evilcraft/undead_lattice",
+			"after": "item:everycomp:q/evilcraft/undead_ladder"
+		},
+		{
+			"stack": "item:supplementaries:evilcraft/sign_post_undead",
+			"after": "item:everycomp:hnhome/evilcraft/undead_lattice"
+		},
+		{
+			"stack": "item:enhanced_mushrooms:mushroom_hyphae",
+			"after": "item:supplementaries:evilcraft/sign_post_undead"
 		},
 		{
 			"stack": "item:everycomp:q/enhanced_mushrooms/mushroom_post",
@@ -6195,8 +9191,12 @@
 			"after": "item:enhanced_mushrooms:mushroom_door"
 		},
 		{
-			"stack": "item:everycomp:hnhome/enhanced_mushrooms/mushroom_lattice",
+			"stack": "item:enhanced_mushrooms:mushroom_ladder",
 			"after": "item:enhanced_mushrooms:mushroom_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/enhanced_mushrooms/mushroom_lattice",
+			"after": "item:enhanced_mushrooms:mushroom_ladder"
 		},
 		{
 			"stack": "item:enhanced_mushrooms:mushroom_pressure_plate",
@@ -6223,12 +9223,8 @@
 			"after": "item:enhanced_mushrooms:mushroom_hanging_sign"
 		},
 		{
-			"stack": "item:enhanced_mushrooms:mushroom_chest_boat",
-			"after": "item:enhanced_mushrooms:mushroom_boat"
-		},
-		{
 			"stack": "item:quark:azalea_log",
-			"after": "item:enhanced_mushrooms:mushroom_chest_boat"
+			"after": "item:enhanced_mushrooms:mushroom_boat"
 		},
 		{
 			"stack": "item:quark:azalea_wood",
@@ -6355,6 +9351,10 @@
 			"after": "item:quark:azalea_trapdoor"
 		},
 		{
+			"stack": "item:quark:azalea_ladder",
+			"after": "item:quark:azalea_ladder"
+		},
+		{
 			"stack": "item:everycomp:hnhome/quark/azalea_lattice",
 			"after": "item:quark:azalea_ladder"
 		},
@@ -6383,12 +9383,8 @@
 			"after": "item:quark:azalea_hanging_sign"
 		},
 		{
-			"stack": "item:quark:azalea_chest_boat",
-			"after": "item:quark:azalea_boat"
-		},
-		{
 			"stack": "item:alexscaves:thornwood_log",
-			"after": "item:quark:azalea_chest_boat"
+			"after": "item:quark:azalea_boat"
 		},
 		{
 			"stack": "item:alexscaves:thornwood_wood",
@@ -6455,12 +9451,12 @@
 			"after": "item:everycomp:hc/alexscaves/thornwood_table"
 		},
 		{
-			"stack": "item:everycomp:fd/alexscaves/thornwood_cabinet",
+			"stack": "item:alexscavesdelight:thornwood_cabinet",
 			"after": "item:everycomp:hc/alexscaves/thornwood_counter"
 		},
 		{
 			"stack": "item:everycomp:q/alexscaves/thornwood_chest",
-			"after": "item:everycomp:fd/alexscaves/thornwood_cabinet"
+			"after": "item:alexscavesdelight:thornwood_cabinet"
 		},
 		{
 			"stack": "item:everycomp:hc/alexscaves/thornwood_fancy_bed",
@@ -6531,12 +9527,8 @@
 			"after": "item:alexscaves:thornwood_hanging_sign"
 		},
 		{
-			"stack": "item:alexscaves:thornwood_chest_boat",
-			"after": "item:alexscaves:thornwood_boat"
-		},
-		{
 			"stack": "item:alexscaves:pewen_log",
-			"after": "item:alexscaves:thornwood_chest_boat"
+			"after": "item:alexscaves:thornwood_boat"
 		},
 		{
 			"stack": "item:alexscaves:pewen_wood",
@@ -6603,12 +9595,12 @@
 			"after": "item:everycomp:hc/alexscaves/pewen_table"
 		},
 		{
-			"stack": "item:everycomp:fd/alexscaves/pewen_cabinet",
+			"stack": "item:alexscavesdelight:pewen_cabinet",
 			"after": "item:everycomp:hc/alexscaves/pewen_counter"
 		},
 		{
 			"stack": "item:everycomp:q/alexscaves/pewen_chest",
-			"after": "item:everycomp:fd/alexscaves/pewen_cabinet"
+			"after": "item:alexscavesdelight:pewen_cabinet"
 		},
 		{
 			"stack": "item:everycomp:hc/alexscaves/pewen_fancy_bed",
@@ -6679,12 +9671,8 @@
 			"after": "item:alexscaves:pewen_hanging_sign"
 		},
 		{
-			"stack": "item:alexscaves:pewen_chest_boat",
-			"after": "item:alexscaves:pewen_boat"
-		},
-		{
 			"stack": "item:quark:blossom_log",
-			"after": "item:alexscaves:pewen_chest_boat"
+			"after": "item:alexscaves:pewen_boat"
 		},
 		{
 			"stack": "item:quark:blossom_wood",
@@ -6767,6 +9755,10 @@
 			"after": "item:quark:blossom_trapdoor"
 		},
 		{
+			"stack": "item:quark:blossom_ladder",
+			"after": "item:quark:blossom_ladder"
+		},
+		{
 			"stack": "item:quark:blossom_pressure_plate",
 			"after": "item:quark:blossom_ladder"
 		},
@@ -6791,12 +9783,8 @@
 			"after": "item:quark:blossom_hanging_sign"
 		},
 		{
-			"stack": "item:quark:blossom_chest_boat",
-			"after": "item:quark:blossom_boat"
-		},
-		{
 			"stack": "item:quark:ancient_log",
-			"after": "item:quark:blossom_chest_boat"
+			"after": "item:quark:blossom_boat"
 		},
 		{
 			"stack": "item:quark:ancient_wood",
@@ -6879,6 +9867,10 @@
 			"after": "item:quark:ancient_trapdoor"
 		},
 		{
+			"stack": "item:quark:ancient_ladder",
+			"after": "item:quark:ancient_ladder"
+		},
+		{
 			"stack": "item:quark:ancient_pressure_plate",
 			"after": "item:quark:ancient_ladder"
 		},
@@ -6903,12 +9895,8 @@
 			"after": "item:quark:ancient_hanging_sign"
 		},
 		{
-			"stack": "item:quark:ancient_chest_boat",
-			"after": "item:quark:ancient_boat"
-		},
-		{
 			"stack": "item:snifferplus:stone_pine_log",
-			"after": "item:quark:ancient_chest_boat"
+			"after": "item:quark:ancient_boat"
 		},
 		{
 			"stack": "item:snifferplus:stone_pine_wood",
@@ -7051,48 +10039,32 @@
 			"after": "item:snifferplus:stone_pine_hanging_sign"
 		},
 		{
-			"stack": "item:snifferplus:stone_pine_chest_boat",
-			"after": "item:snifferplus:stone_pine_boat"
-		},
-		{
 			"stack": "item:upgrade_aquatic:driftwood_log",
-			"after": "item:snifferplus:stone_pine_chest_boat"
+			"after": "item:snifferplus:stone_pine_boat"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood",
 			"after": "item:upgrade_aquatic:driftwood_log"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/driftwood_post",
-			"after": "item:upgrade_aquatic:driftwood"
-		},
-		{
 			"stack": "item:upgrade_aquatic:stripped_driftwood_log",
-			"after": "item:everycomp:q/upgrade_aquatic/driftwood_post"
+			"after": "item:upgrade_aquatic:driftwood"
 		},
 		{
 			"stack": "item:upgrade_aquatic:stripped_driftwood",
 			"after": "item:upgrade_aquatic:stripped_driftwood_log"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/stripped_driftwood_post",
-			"after": "item:upgrade_aquatic:stripped_driftwood"
-		},
-		{
 			"stack": "item:upgrade_aquatic:driftwood_planks",
-			"after": "item:everycomp:q/upgrade_aquatic/stripped_driftwood_post"
+			"after": "item:upgrade_aquatic:stripped_driftwood"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood_bookshelf",
 			"after": "item:upgrade_aquatic:driftwood_planks"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/driftwood_bookshelf",
-			"after": "item:upgrade_aquatic:driftwood_bookshelf"
-		},
-		{
 			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_bench",
-			"after": "item:everycomp:q/upgrade_aquatic/driftwood_bookshelf"
+			"after": "item:upgrade_aquatic:driftwood_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_chair",
@@ -7135,12 +10107,8 @@
 			"after": "item:everycomp:fd/upgrade_aquatic/driftwood_cabinet"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/driftwood_chest",
-			"after": "item:upgrade_aquatic:driftwood_chest"
-		},
-		{
 			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_fancy_bed",
-			"after": "item:everycomp:q/upgrade_aquatic/driftwood_chest"
+			"after": "item:upgrade_aquatic:driftwood_chest"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood_stairs",
@@ -7175,12 +10143,12 @@
 			"after": "item:upgrade_aquatic:driftwood_door"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/driftwood_ladder",
+			"stack": "item:upgrade_aquatic:driftwood_ladder",
 			"after": "item:upgrade_aquatic:driftwood_trapdoor"
 		},
 		{
 			"stack": "item:everycomp:hnhome/upgrade_aquatic/driftwood_lattice",
-			"after": "item:everycomp:q/upgrade_aquatic/driftwood_ladder"
+			"after": "item:upgrade_aquatic:driftwood_ladder"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood_pressure_plate",
@@ -7207,12 +10175,8 @@
 			"after": "item:upgrade_aquatic:driftwood_hanging_sign"
 		},
 		{
-			"stack": "item:upgrade_aquatic:driftwood_chest_boat",
-			"after": "item:upgrade_aquatic:driftwood_boat"
-		},
-		{
 			"stack": "item:betterarcheology:rotten_log",
-			"after": "item:upgrade_aquatic:driftwood_chest_boat"
+			"after": "item:upgrade_aquatic:driftwood_boat"
 		},
 		{
 			"stack": "item:betterarcheology:rotten_planks",
@@ -7455,36 +10419,24 @@
 			"after": "item:upgrade_aquatic:river_log"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/river_post",
-			"after": "item:upgrade_aquatic:river_wood"
-		},
-		{
 			"stack": "item:upgrade_aquatic:stripped_river_log",
-			"after": "item:everycomp:q/upgrade_aquatic/river_post"
+			"after": "item:upgrade_aquatic:river_wood"
 		},
 		{
 			"stack": "item:upgrade_aquatic:stripped_river_wood",
 			"after": "item:upgrade_aquatic:stripped_river_log"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/stripped_river_post",
-			"after": "item:upgrade_aquatic:stripped_river_wood"
-		},
-		{
 			"stack": "item:upgrade_aquatic:river_planks",
-			"after": "item:everycomp:q/upgrade_aquatic/stripped_river_post"
+			"after": "item:upgrade_aquatic:stripped_river_wood"
 		},
 		{
 			"stack": "item:upgrade_aquatic:river_bookshelf",
 			"after": "item:upgrade_aquatic:river_planks"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/river_bookshelf",
-			"after": "item:upgrade_aquatic:river_bookshelf"
-		},
-		{
 			"stack": "item:everycomp:hc/upgrade_aquatic/river_bench",
-			"after": "item:everycomp:q/upgrade_aquatic/river_bookshelf"
+			"after": "item:upgrade_aquatic:river_bookshelf"
 		},
 		{
 			"stack": "item:everycomp:hc/upgrade_aquatic/river_chair",
@@ -7527,12 +10479,8 @@
 			"after": "item:everycomp:fd/upgrade_aquatic/river_cabinet"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/river_chest",
-			"after": "item:upgrade_aquatic:river_chest"
-		},
-		{
 			"stack": "item:everycomp:hc/upgrade_aquatic/river_fancy_bed",
-			"after": "item:everycomp:q/upgrade_aquatic/river_chest"
+			"after": "item:upgrade_aquatic:river_chest"
 		},
 		{
 			"stack": "item:upgrade_aquatic:river_stairs",
@@ -7567,12 +10515,12 @@
 			"after": "item:upgrade_aquatic:river_door"
 		},
 		{
-			"stack": "item:everycomp:q/upgrade_aquatic/river_ladder",
+			"stack": "item:upgrade_aquatic:river_ladder",
 			"after": "item:upgrade_aquatic:river_trapdoor"
 		},
 		{
 			"stack": "item:everycomp:hnhome/upgrade_aquatic/river_lattice",
-			"after": "item:everycomp:q/upgrade_aquatic/river_ladder"
+			"after": "item:upgrade_aquatic:river_ladder"
 		},
 		{
 			"stack": "item:upgrade_aquatic:river_pressure_plate",
@@ -7599,12 +10547,8 @@
 			"after": "item:upgrade_aquatic:river_hanging_sign"
 		},
 		{
-			"stack": "item:upgrade_aquatic:river_chest_boat",
-			"after": "item:upgrade_aquatic:river_boat"
-		},
-		{
 			"stack": "item:minecraft:crimson_stem",
-			"after": "item:upgrade_aquatic:river_chest_boat"
+			"after": "item:upgrade_aquatic:river_boat"
 		},
 		{
 			"stack": "item:minecraft:crimson_hyphae",
@@ -8415,12 +11359,8 @@
 			"after": "item:aether:skyroot_hanging_sign"
 		},
 		{
-			"stack": "item:aether:skyroot_chest_boat",
-			"after": "item:aether:skyroot_boat"
-		},
-		{
 			"stack": "item:aether_redux:fieldsproot_log",
-			"after": "item:aether:skyroot_chest_boat"
+			"after": "item:aether:skyroot_boat"
 		},
 		{
 			"stack": "item:aether_redux:fieldsproot_wood",
@@ -8563,12 +11503,8 @@
 			"after": "item:aether_redux:fieldsproot_hanging_sign"
 		},
 		{
-			"stack": "item:aether_redux:fieldsproot_chest_boat",
-			"after": "item:aether_redux:fieldsproot_boat"
-		},
-		{
 			"stack": "item:aether_redux:crystal_log",
-			"after": "item:aether_redux:fieldsproot_chest_boat"
+			"after": "item:aether_redux:fieldsproot_boat"
 		},
 		{
 			"stack": "item:aether_redux:crystal_wood",
@@ -8711,12 +11647,8 @@
 			"after": "item:aether_redux:crystal_hanging_sign"
 		},
 		{
-			"stack": "item:aether_redux:crystal_chest_boat",
-			"after": "item:aether_redux:crystal_boat"
-		},
-		{
 			"stack": "item:aether_redux:glacia_log",
-			"after": "item:aether_redux:crystal_chest_boat"
+			"after": "item:aether_redux:crystal_boat"
 		},
 		{
 			"stack": "item:aether_redux:glacia_wood",
@@ -8859,12 +11791,8 @@
 			"after": "item:aether_redux:glacia_hanging_sign"
 		},
 		{
-			"stack": "item:aether_redux:glacia_chest_boat",
-			"after": "item:aether_redux:glacia_boat"
-		},
-		{
 			"stack": "item:aether_redux:cloudcap_stem",
-			"after": "item:aether_redux:glacia_chest_boat"
+			"after": "item:aether_redux:glacia_boat"
 		},
 		{
 			"stack": "item:aether_redux:cloudcap_hyphae",
@@ -9007,12 +11935,8 @@
 			"after": "item:aether_redux:cloudcap_hanging_sign"
 		},
 		{
-			"stack": "item:aether_redux:cloudcap_chest_boat",
-			"after": "item:aether_redux:cloudcap_boat"
-		},
-		{
 			"stack": "item:aether_redux:blightwillow_log",
-			"after": "item:aether_redux:cloudcap_chest_boat"
+			"after": "item:aether_redux:cloudcap_boat"
 		},
 		{
 			"stack": "item:aether_redux:blightwillow_wood",
@@ -9155,12 +12079,8 @@
 			"after": "item:aether_redux:blightwillow_hanging_sign"
 		},
 		{
-			"stack": "item:aether_redux:blightwillow_chest_boat",
-			"after": "item:aether_redux:blightwillow_boat"
-		},
-		{
 			"stack": "item:aether_redux:jellyshroom_stem",
-			"after": "item:aether_redux:blightwillow_chest_boat"
+			"after": "item:aether_redux:blightwillow_boat"
 		},
 		{
 			"stack": "item:aether_redux:jellyshroom_hyphae",
@@ -9291,12 +12211,8 @@
 			"after": "item:aether_redux:jellyshroom_hanging_sign"
 		},
 		{
-			"stack": "item:aether_redux:jellyshroom_chest_boat",
-			"after": "item:aether_redux:jellyshroom_boat"
-		},
-		{
 			"stack": "item:cataclysm:chorus_stem",
-			"after": "item:aether_redux:jellyshroom_chest_boat"
+			"after": "item:aether_redux:jellyshroom_boat"
 		},
 		{
 			"stack": "item:cataclysm:chorus_planks",
@@ -9851,12 +12767,8 @@
 			"after": "item:ecologics:flowering_azalea_hanging_sign"
 		},
 		{
-			"stack": "item:ecologics:flowering_azalea_chest_boat",
-			"after": "item:ecologics:flowering_azalea_boat"
-		},
-		{
 			"stack": "item:twilightforest:mangrove_log",
-			"after": "item:ecologics:flowering_azalea_chest_boat"
+			"after": "item:ecologics:flowering_azalea_boat"
 		},
 		{
 			"stack": "item:twilightforest:mangrove_wood",
@@ -10007,12 +12919,8 @@
 			"after": "item:twilightforest:mangrove_hanging_sign"
 		},
 		{
-			"stack": "item:twilightforest:mangrove_chest_boat",
-			"after": "item:twilightforest:mangrove_boat"
-		},
-		{
 			"stack": "item:ribbits:mossy_oak_planks",
-			"after": "item:twilightforest:mangrove_chest_boat"
+			"after": "item:twilightforest:mangrove_boat"
 		},
 		{
 			"stack": "item:ribbits:mossy_oak_planks_stairs",
@@ -10107,12 +13015,8 @@
 			"after": "item:everycomp:hc/twilightforest/mining_table"
 		},
 		{
-			"stack": "item:everycomp:fd/twilightforest/mining_cabinet",
-			"after": "item:everycomp:hc/twilightforest/mining_counter"
-		},
-		{
 			"stack": "item:twilightdelight:mining_cabinet",
-			"after": "item:everycomp:fd/twilightforest/mining_cabinet"
+			"after": "item:everycomp:hc/twilightforest/mining_counter"
 		},
 		{
 			"stack": "item:twilightforest:mining_chest",
@@ -10187,12 +13091,8 @@
 			"after": "item:twilightforest:mining_hanging_sign"
 		},
 		{
-			"stack": "item:twilightforest:mining_chest_boat",
-			"after": "item:twilightforest:mining_boat"
-		},
-		{
 			"stack": "item:twilightforest:canopy_log",
-			"after": "item:twilightforest:mining_chest_boat"
+			"after": "item:twilightforest:mining_boat"
 		},
 		{
 			"stack": "item:twilightforest:canopy_wood",
@@ -10259,12 +13159,8 @@
 			"after": "item:everycomp:hc/twilightforest/canopy_table"
 		},
 		{
-			"stack": "item:everycomp:fd/twilightforest/canopy_cabinet",
-			"after": "item:everycomp:hc/twilightforest/canopy_counter"
-		},
-		{
 			"stack": "item:twilightdelight:canopy_cabinet",
-			"after": "item:everycomp:fd/twilightforest/canopy_cabinet"
+			"after": "item:everycomp:hc/twilightforest/canopy_counter"
 		},
 		{
 			"stack": "item:twilightforest:canopy_chest",
@@ -10339,12 +13235,8 @@
 			"after": "item:twilightforest:canopy_hanging_sign"
 		},
 		{
-			"stack": "item:twilightforest:canopy_chest_boat",
-			"after": "item:twilightforest:canopy_boat"
-		},
-		{
 			"stack": "item:twilightforest:twilight_oak_log",
-			"after": "item:twilightforest:canopy_chest_boat"
+			"after": "item:twilightforest:canopy_boat"
 		},
 		{
 			"stack": "item:twilightforest:twilight_oak_wood",
@@ -10411,12 +13303,8 @@
 			"after": "item:everycomp:hc/twilightforest/twilight_oak_table"
 		},
 		{
-			"stack": "item:everycomp:fd/twilightforest/twilight_oak_cabinet",
-			"after": "item:everycomp:hc/twilightforest/twilight_oak_counter"
-		},
-		{
 			"stack": "item:twilightdelight:twilight_oak_cabinet",
-			"after": "item:everycomp:fd/twilightforest/twilight_oak_cabinet"
+			"after": "item:everycomp:hc/twilightforest/twilight_oak_counter"
 		},
 		{
 			"stack": "item:twilightforest:twilight_oak_chest",
@@ -10491,12 +13379,8 @@
 			"after": "item:twilightforest:twilight_oak_hanging_sign"
 		},
 		{
-			"stack": "item:twilightforest:twilight_oak_chest_boat",
-			"after": "item:twilightforest:twilight_oak_boat"
-		},
-		{
 			"stack": "item:twilightforest:dark_log",
-			"after": "item:twilightforest:twilight_oak_chest_boat"
+			"after": "item:twilightforest:twilight_oak_boat"
 		},
 		{
 			"stack": "item:twilightforest:dark_wood",
@@ -10563,12 +13447,8 @@
 			"after": "item:everycomp:hc/twilightforest/dark_table"
 		},
 		{
-			"stack": "item:everycomp:fd/twilightforest/dark_cabinet",
-			"after": "item:everycomp:hc/twilightforest/dark_counter"
-		},
-		{
 			"stack": "item:twilightdelight:dark_cabinet",
-			"after": "item:everycomp:fd/twilightforest/dark_cabinet"
+			"after": "item:everycomp:hc/twilightforest/dark_counter"
 		},
 		{
 			"stack": "item:twilightforest:dark_chest",
@@ -10643,12 +13523,8 @@
 			"after": "item:twilightforest:dark_hanging_sign"
 		},
 		{
-			"stack": "item:twilightforest:dark_chest_boat",
-			"after": "item:twilightforest:dark_boat"
-		},
-		{
 			"stack": "item:twilightforest:transformation_log",
-			"after": "item:twilightforest:dark_chest_boat"
+			"after": "item:twilightforest:dark_boat"
 		},
 		{
 			"stack": "item:twilightforest:transformation_wood",
@@ -10715,12 +13591,8 @@
 			"after": "item:everycomp:hc/twilightforest/transformation_table"
 		},
 		{
-			"stack": "item:everycomp:fd/twilightforest/transformation_cabinet",
-			"after": "item:everycomp:hc/twilightforest/transformation_counter"
-		},
-		{
 			"stack": "item:twilightdelight:transformation_cabinet",
-			"after": "item:everycomp:fd/twilightforest/transformation_cabinet"
+			"after": "item:everycomp:hc/twilightforest/transformation_counter"
 		},
 		{
 			"stack": "item:twilightforest:transformation_chest",
@@ -10795,12 +13667,16 @@
 			"after": "item:twilightforest:transformation_hanging_sign"
 		},
 		{
-			"stack": "item:twilightforest:transformation_chest_boat",
+			"stack": "item:evilcraft:reinforced_undead_planks",
 			"after": "item:twilightforest:transformation_boat"
 		},
 		{
+			"stack": "item:evilcraft:reinforced_undead_planks_stairs",
+			"after": "item:evilcraft:reinforced_undead_planks"
+		},
+		{
 			"stack": "item:twilightforest:time_log",
-			"after": "item:twilightforest:transformation_chest_boat"
+			"after": "item:evilcraft:reinforced_undead_planks_stairs"
 		},
 		{
 			"stack": "item:twilightforest:time_wood",
@@ -10867,12 +13743,8 @@
 			"after": "item:everycomp:hc/twilightforest/time_table"
 		},
 		{
-			"stack": "item:everycomp:fd/twilightforest/time_cabinet",
-			"after": "item:everycomp:hc/twilightforest/time_counter"
-		},
-		{
 			"stack": "item:twilightdelight:time_cabinet",
-			"after": "item:everycomp:fd/twilightforest/time_cabinet"
+			"after": "item:everycomp:hc/twilightforest/time_counter"
 		},
 		{
 			"stack": "item:twilightforest:time_chest",
@@ -10947,96 +13819,36 @@
 			"after": "item:twilightforest:time_hanging_sign"
 		},
 		{
-			"stack": "item:twilightforest:time_chest_boat",
-			"after": "item:twilightforest:time_boat"
-		},
-		{
 			"stack": "item:twilightforest:sorting_log",
-			"after": "item:twilightforest:time_chest_boat"
+			"after": "item:twilightforest:time_boat"
 		},
 		{
 			"stack": "item:twilightforest:sorting_wood",
 			"after": "item:twilightforest:sorting_log"
 		},
 		{
-			"stack": "item:everycomp:q/twilightforest/sorting_post",
-			"after": "item:twilightforest:sorting_wood"
-		},
-		{
 			"stack": "item:twilightforest:stripped_sorting_log",
-			"after": "item:everycomp:q/twilightforest/sorting_post"
+			"after": "item:twilightforest:sorting_wood"
 		},
 		{
 			"stack": "item:twilightforest:stripped_sorting_wood",
 			"after": "item:twilightforest:stripped_sorting_log"
 		},
 		{
-			"stack": "item:everycomp:q/twilightforest/stripped_sorting_post",
+			"stack": "item:twilightforest:sorting_planks",
 			"after": "item:twilightforest:stripped_sorting_wood"
 		},
 		{
-			"stack": "item:twilightforest:sorting_planks",
-			"after": "item:everycomp:q/twilightforest/stripped_sorting_post"
-		},
-		{
-			"stack": "item:everycomp:q/twilightforest/sorting_bookshelf",
-			"after": "item:twilightforest:sorting_planks"
-		},
-		{
-			"stack": "item:everycomp:hc/twilightforest/sorting_bench",
-			"after": "item:everycomp:q/twilightforest/sorting_bookshelf"
-		},
-		{
-			"stack": "item:everycomp:hc/twilightforest/sorting_chair",
-			"after": "item:everycomp:hc/twilightforest/sorting_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/twilightforest/sorting_couch",
-			"after": "item:everycomp:hc/twilightforest/sorting_chair"
-		},
-		{
-			"stack": "item:everycomp:hc/twilightforest/sorting_dining_bench",
-			"after": "item:everycomp:hc/twilightforest/sorting_couch"
-		},
-		{
-			"stack": "item:everycomp:hc/twilightforest/sorting_side_table",
-			"after": "item:everycomp:hc/twilightforest/sorting_dining_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/twilightforest/sorting_desk",
-			"after": "item:everycomp:hc/twilightforest/sorting_side_table"
-		},
-		{
-			"stack": "item:everycomp:hc/twilightforest/sorting_nightstand",
-			"after": "item:everycomp:hc/twilightforest/sorting_desk"
-		},
-		{
-			"stack": "item:everycomp:hc/twilightforest/sorting_table",
-			"after": "item:everycomp:hc/twilightforest/sorting_nightstand"
-		},
-		{
-			"stack": "item:everycomp:hc/twilightforest/sorting_counter",
-			"after": "item:everycomp:hc/twilightforest/sorting_table"
-		},
-		{
-			"stack": "item:everycomp:fd/twilightforest/sorting_cabinet",
-			"after": "item:everycomp:hc/twilightforest/sorting_counter"
-		},
-		{
 			"stack": "item:twilightdelight:sorting_cabinet",
-			"after": "item:everycomp:fd/twilightforest/sorting_cabinet"
+			"after": "item:twilightforest:sorting_planks"
 		},
 		{
 			"stack": "item:twilightforest:sorting_chest",
 			"after": "item:twilightdelight:sorting_cabinet"
 		},
 		{
-			"stack": "item:everycomp:hc/twilightforest/sorting_fancy_bed",
-			"after": "item:twilightforest:sorting_chest"
-		},
-		{
 			"stack": "item:twilightforest:sorting_stairs",
-			"after": "item:everycomp:hc/twilightforest/sorting_fancy_bed"
+			"after": "item:twilightforest:sorting_chest"
 		},
 		{
 			"stack": "item:twilightforest:sorting_slab",
@@ -11067,16 +13879,8 @@
 			"after": "item:twilightforest:sorting_door"
 		},
 		{
-			"stack": "item:everycomp:q/twilightforest/sorting_ladder",
-			"after": "item:twilightforest:sorting_trapdoor"
-		},
-		{
-			"stack": "item:everycomp:hnhome/twilightforest/sorting_lattice",
-			"after": "item:everycomp:q/twilightforest/sorting_ladder"
-		},
-		{
 			"stack": "item:twilightforest:sorting_pressure_plate",
-			"after": "item:everycomp:hnhome/twilightforest/sorting_lattice"
+			"after": "item:twilightforest:sorting_trapdoor"
 		},
 		{
 			"stack": "item:twilightforest:sorting_button",
@@ -11097,10 +13901,6 @@
 		{
 			"stack": "item:twilightforest:sorting_boat",
 			"after": "item:twilightforest:sorting_hanging_sign"
-		},
-		{
-			"stack": "item:twilightforest:sorting_chest_boat",
-			"after": "item:twilightforest:sorting_boat"
 		},
 		{
 			"stack": "item:v_slab_compat:witherstormmod/tainted_stone_vertical_slab",
@@ -12774,6 +15574,601 @@
 		"/rediscovered:dragon_armor_plating_smithing_template/",
 		"/unusualend:ancient_armor_trim_smithing_template/",
 		"/unusualend:pearlescent_upgrade_smithing_template/",
+		"/aether:aechor_plant_spawn_egg/",
+		"/aether:aerbunny_spawn_egg/",
+		"/aether:aerwhale_spawn_egg/",
+		"/aether:blue_swet_spawn_egg/",
+		"/aether:cockatrice_spawn_egg/",
+		"/aether:evil_whirlwind_spawn_egg/",
+		"/aether:fire_minion_spawn_egg/",
+		"/aether:flying_cow_spawn_egg/",
+		"/aether:golden_swet_spawn_egg/",
+		"/aether:mimic_spawn_egg/",
+		"/aether:moa_spawn_egg/",
+		"/aether:phyg_spawn_egg/",
+		"/aether:sentry_spawn_egg/",
+		"/aether:sheepuff_spawn_egg/",
+		"/aether:slider_spawn_egg/",
+		"/aether:sun_spirit_spawn_egg/",
+		"/aether:valkyrie_queen_spawn_egg/",
+		"/aether:valkyrie_spawn_egg/",
+		"/aether:whirlwind_spawn_egg/",
+		"/aether:zephyr_spawn_egg/",
+		"/aether_redux:blightbunny_spawn_egg/",
+		"/aether_redux:mykapod_spawn_egg/",
+		"/aether_redux:shimmercow_spawn_egg/",
+		"/aether_redux:vanilla_swet_spawn_egg/",
+		"/alexscaves:spawn_egg_atlatitan/",
+		"/alexscaves:spawn_egg_boundroid/",
+		"/alexscaves:spawn_egg_brainiac/",
+		"/alexscaves:spawn_egg_candicorn/",
+		"/alexscaves:spawn_egg_caniac/",
+		"/alexscaves:spawn_egg_caramel_cube/",
+		"/alexscaves:spawn_egg_corrodent/",
+		"/alexscaves:spawn_egg_deep_one/",
+		"/alexscaves:spawn_egg_deep_one_knight/",
+		"/alexscaves:spawn_egg_deep_one_mage/",
+		"/alexscaves:spawn_egg_ferrouslime/",
+		"/alexscaves:spawn_egg_forsaken/",
+		"/alexscaves:spawn_egg_gammaroach/",
+		"/alexscaves:spawn_egg_gingerbread_man/",
+		"/alexscaves:spawn_egg_gloomoth/",
+		"/alexscaves:spawn_egg_gossamer_worm/",
+		"/alexscaves:spawn_egg_grottoceratops/",
+		"/alexscaves:spawn_egg_gum_worm/",
+		"/alexscaves:spawn_egg_gumbeeper/",
+		"/alexscaves:spawn_egg_gummy_bear/",
+		"/alexscaves:spawn_egg_hullbreaker/",
+		"/alexscaves:spawn_egg_lanternfish/",
+		"/alexscaves:spawn_egg_licowitch/",
+		"/alexscaves:spawn_egg_luxtructosaurus/",
+		"/alexscaves:spawn_egg_magnetron/",
+		"/alexscaves:spawn_egg_mine_guardian/",
+		"/alexscaves:spawn_egg_notor/",
+		"/alexscaves:spawn_egg_nucleeper/",
+		"/alexscaves:spawn_egg_radgill/",
+		"/alexscaves:spawn_egg_raycat/",
+		"/alexscaves:spawn_egg_relicheirus/",
+		"/alexscaves:spawn_egg_sea_pig/",
+		"/alexscaves:spawn_egg_subterranodon/",
+		"/alexscaves:spawn_egg_sweetish_fish/",
+		"/alexscaves:spawn_egg_teletor/",
+		"/alexscaves:spawn_egg_tremorsaurus/",
+		"/alexscaves:spawn_egg_tremorzilla/",
+		"/alexscaves:spawn_egg_trilocaris/",
+		"/alexscaves:spawn_egg_tripodfish/",
+		"/alexscaves:spawn_egg_underzealot/",
+		"/alexscaves:spawn_egg_vallumraptor/",
+		"/alexscaves:spawn_egg_vesper/",
+		"/alexscaves:spawn_egg_watcher/",
+		"/alexsmobs:spawn_egg_alligator_snapping_turtle/",
+		"/alexsmobs:spawn_egg_anaconda/",
+		"/alexsmobs:spawn_egg_anteater/",
+		"/alexsmobs:spawn_egg_bald_eagle/",
+		"/alexsmobs:spawn_egg_banana_slug/",
+		"/alexsmobs:spawn_egg_bison/",
+		"/alexsmobs:spawn_egg_blobfish/",
+		"/alexsmobs:spawn_egg_blue_jay/",
+		"/alexsmobs:spawn_egg_bone_serpent/",
+		"/alexsmobs:spawn_egg_bunfungus/",
+		"/alexsmobs:spawn_egg_cachalot_whale/",
+		"/alexsmobs:spawn_egg_caiman/",
+		"/alexsmobs:spawn_egg_capuchin_monkey/",
+		"/alexsmobs:spawn_egg_catfish/",
+		"/alexsmobs:spawn_egg_centipede/",
+		"/alexsmobs:spawn_egg_cockroach/",
+		"/alexsmobs:spawn_egg_comb_jelly/",
+		"/alexsmobs:spawn_egg_cosmaw/",
+		"/alexsmobs:spawn_egg_cosmic_cod/",
+		"/alexsmobs:spawn_egg_crimson_mosquito/",
+		"/alexsmobs:spawn_egg_crocodile/",
+		"/alexsmobs:spawn_egg_crow/",
+		"/alexsmobs:spawn_egg_devils_hole_pupfish/",
+		"/alexsmobs:spawn_egg_dropbear/",
+		"/alexsmobs:spawn_egg_elephant/",
+		"/alexsmobs:spawn_egg_emu/",
+		"/alexsmobs:spawn_egg_endergrade/",
+		"/alexsmobs:spawn_egg_enderiophage/",
+		"/alexsmobs:spawn_egg_farseer/",
+		"/alexsmobs:spawn_egg_flutter/",
+		"/alexsmobs:spawn_egg_fly/",
+		"/alexsmobs:spawn_egg_flying_fish/",
+		"/alexsmobs:spawn_egg_frilled_shark/",
+		"/alexsmobs:spawn_egg_froststalker/",
+		"/alexsmobs:spawn_egg_gazelle/",
+		"/alexsmobs:spawn_egg_gelada_monkey/",
+		"/alexsmobs:spawn_egg_giant_squid/",
+		"/alexsmobs:spawn_egg_gorilla/",
+		"/alexsmobs:spawn_egg_grizzly_bear/",
+		"/alexsmobs:spawn_egg_guster/",
+		"/alexsmobs:spawn_egg_hammerhead_shark/",
+		"/alexsmobs:spawn_egg_hummingbird/",
+		"/alexsmobs:spawn_egg_jerboa/",
+		"/alexsmobs:spawn_egg_kangaroo/",
+		"/alexsmobs:spawn_egg_komodo_dragon/",
+		"/alexsmobs:spawn_egg_laviathan/",
+		"/alexsmobs:spawn_egg_leafcutter_ant/",
+		"/alexsmobs:spawn_egg_lobster/",
+		"/alexsmobs:spawn_egg_maned_wolf/",
+		"/alexsmobs:spawn_egg_mantis_shrimp/",
+		"/alexsmobs:spawn_egg_mimic_octopus/",
+		"/alexsmobs:spawn_egg_mimicube/",
+		"/alexsmobs:spawn_egg_moose/",
+		"/alexsmobs:spawn_egg_mudskipper/",
+		"/alexsmobs:spawn_egg_mungus/",
+		"/alexsmobs:spawn_egg_murmur/",
+		"/alexsmobs:spawn_egg_orca/",
+		"/alexsmobs:spawn_egg_platypus/",
+		"/alexsmobs:spawn_egg_potoo/",
+		"/alexsmobs:spawn_egg_raccoon/",
+		"/alexsmobs:spawn_egg_rain_frog/",
+		"/alexsmobs:spawn_egg_rattlesnake/",
+		"/alexsmobs:spawn_egg_rhinoceros/",
+		"/alexsmobs:spawn_egg_roadrunner/",
+		"/alexsmobs:spawn_egg_rocky_roller/",
+		"/alexsmobs:spawn_egg_seagull/",
+		"/alexsmobs:spawn_egg_seal/",
+		"/alexsmobs:spawn_egg_shoebill/",
+		"/alexsmobs:spawn_egg_skelewag/",
+		"/alexsmobs:spawn_egg_skreecher/",
+		"/alexsmobs:spawn_egg_skunk/",
+		"/alexsmobs:spawn_egg_snow_leopard/",
+		"/alexsmobs:spawn_egg_soul_vulture/",
+		"/alexsmobs:spawn_egg_spectre/",
+		"/alexsmobs:spawn_egg_straddler/",
+		"/alexsmobs:spawn_egg_stradpole/",
+		"/alexsmobs:spawn_egg_sugar_glider/",
+		"/alexsmobs:spawn_egg_sunbird/",
+		"/alexsmobs:spawn_egg_tarantula_hawk/",
+		"/alexsmobs:spawn_egg_tasmanian_devil/",
+		"/alexsmobs:spawn_egg_terrapin/",
+		"/alexsmobs:spawn_egg_tiger/",
+		"/alexsmobs:spawn_egg_toucan/",
+		"/alexsmobs:spawn_egg_triops/",
+		"/alexsmobs:spawn_egg_tusklin/",
+		"/alexsmobs:spawn_egg_underminer/",
+		"/alexsmobs:spawn_egg_void_worm/",
+		"/alexsmobs:spawn_egg_warped_mosco/",
+		"/alexsmobs:spawn_egg_warped_toad/",
+		"/aquamirae:anglerfish_spawn_egg/",
+		"/aquamirae:captain_cornelia_spawn_egg/",
+		"/aquamirae:eel_spawn_egg/",
+		"/aquamirae:golden_moth_spawn_egg/",
+		"/aquamirae:maw_spawn_egg/",
+		"/aquamirae:maze_mother_spawn_egg/",
+		"/aquamirae:pillagers_patrol_spawn_egg/",
+		"/aquamirae:spinefish_spawn_egg/",
+		"/aquamirae:tortured_soul_spawn_egg/",
+		"/ars_nouveau:drygmy_se/",
+		"/ars_nouveau:starbuncle_se/",
+		"/ars_nouveau:whirlisprig_se/",
+		"/ars_nouveau:wilden_guardian_se/",
+		"/ars_nouveau:wilden_hunter_se/",
+		"/ars_nouveau:wilden_stalker_se/",
+		"/artifacts:mimic_spawn_egg/",
+		"/born_in_chaos_v1:baby_skeleton_minion_spawn_egg/",
+		"/born_in_chaos_v1:baby_skeleton_spawn_egg/",
+		"/born_in_chaos_v1:baby_spider_controlled_spawn_egg/",
+		"/born_in_chaos_v1:baby_spider_spawn_egg/",
+		"/born_in_chaos_v1:barrel_zombie_spawn_egg/",
+		"/born_in_chaos_v1:bloody_gadfly_spawn_egg/",
+		"/born_in_chaos_v1:bone_imp_minion_spawn_egg/",
+		"/born_in_chaos_v1:bone_imp_spawn_egg/",
+		"/born_in_chaos_v1:bonescaller_not_despawn_spawn_egg/",
+		"/born_in_chaos_v1:bonescaller_spawn_egg/",
+		"/born_in_chaos_v1:controlled_baby_skeleton_spawn_egg/",
+		"/born_in_chaos_v1:controlled_spiritual_assistant_spawn_egg/",
+		"/born_in_chaos_v1:corpse_fish_spawn_egg/",
+		"/born_in_chaos_v1:corpse_fly_spawn_egg/",
+		"/born_in_chaos_v1:dark_vortex_spawn_egg/",
+		"/born_in_chaos_v1:decaying_zombie_not_despawn_spawn_egg/",
+		"/born_in_chaos_v1:decaying_zombie_spawn_egg/",
+		"/born_in_chaos_v1:decrepit_skeleton_spawn_egg/",
+		"/born_in_chaos_v1:diamond_termite_spawn_egg/",
+		"/born_in_chaos_v1:dire_hound_leader_spawn_egg/",
+		"/born_in_chaos_v1:door_knight_not_despawn_spawn_egg/",
+		"/born_in_chaos_v1:door_knight_spawn_egg/",
+		"/born_in_chaos_v1:dread_hound_not_despawn_spawn_egg/",
+		"/born_in_chaos_v1:dread_hound_spawn_egg/",
+		"/born_in_chaos_v1:fallen_chaos_knight_spawn_egg/",
+		"/born_in_chaos_v1:felsteed_spawn_egg/",
+		"/born_in_chaos_v1:firelight_not_despawn_spawn_egg/",
+		"/born_in_chaos_v1:firelight_spawn_egg/",
+		"/born_in_chaos_v1:glutton_fish_spawn_egg/",
+		"/born_in_chaos_v1:infernal_spirit_spawn_egg/",
+		"/born_in_chaos_v1:krampus_henchman_spawn_egg/",
+		"/born_in_chaos_v1:krampus_spawn_egg/",
+		"/born_in_chaos_v1:lifestealer_spawn_egg/",
+		"/born_in_chaos_v1:lifestealer_true_form_spawn_egg/",
+		"/born_in_chaos_v1:lord_pumpkinhead_head_spawn_egg/",
+		"/born_in_chaos_v1:lord_pumpkinhead_spawn_egg/",
+		"/born_in_chaos_v1:lord_pumpkinhead_withouta_horse_spawn_egg/",
+		"/born_in_chaos_v1:lord_the_headless_spawn_egg/",
+		"/born_in_chaos_v1:lords_felsteed_spawn_egg/",
+		"/born_in_chaos_v1:maggot_spawn_egg/",
+		"/born_in_chaos_v1:missionary_raider_spawn_egg/",
+		"/born_in_chaos_v1:missioner_spawn_egg/",
+		"/born_in_chaos_v1:mother_spider_spawn_egg/",
+		"/born_in_chaos_v1:mr_pumpkin_controlled_spawn_egg/",
+		"/born_in_chaos_v1:mr_pumpkin_spawn_egg/",
+		"/born_in_chaos_v1:mrs_pumpkin_spawn_egg/",
+		"/born_in_chaos_v1:nightmare_stalker_spawn_egg/",
+		"/born_in_chaos_v1:phantom_creeper_copy_spawn_egg/",
+		"/born_in_chaos_v1:phantom_creeper_spawn_egg/",
+		"/born_in_chaos_v1:pumpkin_bomb_spawn_egg/",
+		"/born_in_chaos_v1:pumpkin_bruiser_spawn_egg/",
+		"/born_in_chaos_v1:pumpkin_dunce_spawn_egg/",
+		"/born_in_chaos_v1:pumpkin_spirit_spawn_egg/",
+		"/born_in_chaos_v1:pumpkinhead_spawn_egg/",
+		"/born_in_chaos_v1:restless_spirit_spawn_egg/",
+		"/born_in_chaos_v1:riding_felsteed_spawn_egg/",
+		"/born_in_chaos_v1:riding_lords_felsteed_spawn_egg/",
+		"/born_in_chaos_v1:scarlet_persecutor_spawn_egg/",
+		"/born_in_chaos_v1:seared_spirit_not_despawn_spawn_egg/",
+		"/born_in_chaos_v1:seared_spirit_spawn_egg/",
+		"/born_in_chaos_v1:senor_pumpkin_spawn_egg/",
+		"/born_in_chaos_v1:siamese_skeletons_spawn_egg/",
+		"/born_in_chaos_v1:siamese_skeletonsleft_spawn_egg/",
+		"/born_in_chaos_v1:siamese_skeletonsright_spawn_egg/",
+		"/born_in_chaos_v1:sir_pumpkinhead_spawn_egg/",
+		"/born_in_chaos_v1:sir_pumpkinhead_without_horse_spawn_egg/",
+		"/born_in_chaos_v1:sir_the_headless_spawn_egg/",
+		"/born_in_chaos_v1:skeleton_demoman_spawn_egg/",
+		"/born_in_chaos_v1:skeleton_thrasher_not_despawn_spawn_egg/",
+		"/born_in_chaos_v1:skeleton_thrasher_spawn_egg/",
+		"/born_in_chaos_v1:spirit_guide_assistant_spawn_egg/",
+		"/born_in_chaos_v1:spirit_guide_spawn_egg/",
+		"/born_in_chaos_v1:spiritof_chaos_spawn_egg/",
+		"/born_in_chaos_v1:supreme_bonescaller_not_despawn_spawn_egg/",
+		"/born_in_chaos_v1:supreme_bonescaller_spawn_egg/",
+		"/born_in_chaos_v1:supreme_bonescaller_stage_2_spawn_egg/",
+		"/born_in_chaos_v1:swarmer_spawn_egg/",
+		"/born_in_chaos_v1:thornshell_crab_spawn_egg/",
+		"/born_in_chaos_v1:zombie_bruiser_spawn_egg/",
+		"/born_in_chaos_v1:zombie_clown_not_despawn_spawn_egg/",
+		"/born_in_chaos_v1:zombie_clown_spawn_egg/",
+		"/born_in_chaos_v1:zombie_fisherman_spawn_egg/",
+		"/born_in_chaos_v1:zombie_lumberjack_spawn_egg/",
+		"/cataclysm:amethyst_crab_spawn_egg/",
+		"/cataclysm:ancient_remnant_spawn_egg/",
+		"/cataclysm:aptrgangr_spawn_egg/",
+		"/cataclysm:cindaria_spawn_egg/",
+		"/cataclysm:clawdian_spawn_egg/",
+		"/cataclysm:coral_golem_spawn_egg/",
+		"/cataclysm:coralssus_spawn_egg/",
+		"/cataclysm:deepling_angler_spawn_egg/",
+		"/cataclysm:deepling_brute_spawn_egg/",
+		"/cataclysm:deepling_priest_spawn_egg/",
+		"/cataclysm:deepling_spawn_egg/",
+		"/cataclysm:deepling_warlock_spawn_egg/",
+		"/cataclysm:draugr_spawn_egg/",
+		"/cataclysm:elite_draugr_spawn_egg/",
+		"/cataclysm:ender_golem_spawn_egg/",
+		"/cataclysm:ender_guardian_spawn_egg/",
+		"/cataclysm:endermaptera_spawn_egg/",
+		"/cataclysm:hippocamtus_spawn_egg/",
+		"/cataclysm:ignis_spawn_egg/",
+		"/cataclysm:ignited_berserker_spawn_egg/",
+		"/cataclysm:ignited_revenant_spawn_egg/",
+		"/cataclysm:kobolediator_spawn_egg/",
+		"/cataclysm:koboleton_spawn_egg/",
+		"/cataclysm:lionfish_spawn_egg/",
+		"/cataclysm:maledictus_spawn_egg/",
+		"/cataclysm:modern_remnant_spawn_egg/",
+		"/cataclysm:nameless_sorcerer_spawn_egg/",
+		"/cataclysm:netherite_ministrosity_spawn_egg/",
+		"/cataclysm:netherite_monstrosity_spawn_egg/",
+		"/cataclysm:octohost_spawn_egg/",
+		"/cataclysm:royal_draugr_spawn_egg/",
+		"/cataclysm:scylla_spawn_egg/",
+		"/cataclysm:symbiocto_spawn_egg/",
+		"/cataclysm:the_baby_leviathan_spawn_egg/",
+		"/cataclysm:the_harbinger_spawn_egg/",
+		"/cataclysm:the_leviathan_spawn_egg/",
+		"/cataclysm:the_prowler_spawn_egg/",
+		"/cataclysm:the_watcher_spawn_egg/",
+		"/cataclysm:urchinkin_spawn_egg/",
+		"/cataclysm:wadjet_spawn_egg/",
+		"/crittersandcompanions:dragonfly_spawn_egg/",
+		"/crittersandcompanions:dumbo_octopus_spawn_egg/",
+		"/crittersandcompanions:ferret_spawn_egg/",
+		"/crittersandcompanions:jumping_spider_spawn_egg/",
+		"/crittersandcompanions:koi_fish_spawn_egg/",
+		"/crittersandcompanions:leaf_insect_spawn_egg/",
+		"/crittersandcompanions:otter_spawn_egg/",
+		"/crittersandcompanions:red_panda_spawn_egg/",
+		"/crittersandcompanions:sea_bunny_spawn_egg/",
+		"/crittersandcompanions:shima_enaga_spawn_egg/",
+		"/ecologics:coconut_crab_spawn_egg/",
+		"/ecologics:penguin_spawn_egg/",
+		"/ecologics:squirrel_spawn_egg/",
+		"/etcetera:chapple_spawn_egg/",
+		"/evilcraft:controlled_zombie_spawn_egg/",
+		"/evilcraft:netherfish_spawn_egg/",
+		"/evilcraft:poisonous_libelle_spawn_egg/",
+		"/evilcraft:vengeance_spirit_spawn_egg/",
+		"/evilcraft:werewolf_spawn_egg/",
+		"/galosphere:berserker_spawn_egg/",
+		"/galosphere:preserved_spawn_egg/",
+		"/galosphere:sparkle_spawn_egg/",
+		"/galosphere:specterpillar_spawn_egg/",
+		"/galosphere:spectre_spawn_egg/",
+		"/majruszsdifficulty:cerberus_spawn_egg/",
+		"/majruszsdifficulty:creeperling_spawn_egg/",
+		"/majruszsdifficulty:cursed_armor_spawn_egg/",
+		"/majruszsdifficulty:giant_spawn_egg/",
+		"/majruszsdifficulty:illusioner_spawn_egg/",
+		"/majruszsdifficulty:tank_spawn_egg/",
+		"/minecraft:allay_spawn_egg/",
+		"/minecraft:axolotl_spawn_egg/",
+		"/minecraft:bat_spawn_egg/",
+		"/minecraft:bee_spawn_egg/",
+		"/minecraft:blaze_spawn_egg/",
+		"/minecraft:camel_spawn_egg/",
+		"/minecraft:cat_spawn_egg/",
+		"/minecraft:cave_spider_spawn_egg/",
+		"/minecraft:chicken_spawn_egg/",
+		"/minecraft:cod_spawn_egg/",
+		"/minecraft:cow_spawn_egg/",
+		"/minecraft:creeper_spawn_egg/",
+		"/minecraft:dolphin_spawn_egg/",
+		"/minecraft:donkey_spawn_egg/",
+		"/minecraft:drowned_spawn_egg/",
+		"/minecraft:elder_guardian_spawn_egg/",
+		"/minecraft:ender_dragon_spawn_egg/",
+		"/minecraft:enderman_spawn_egg/",
+		"/minecraft:endermite_spawn_egg/",
+		"/minecraft:evoker_spawn_egg/",
+		"/minecraft:fox_spawn_egg/",
+		"/minecraft:frog_spawn_egg/",
+		"/minecraft:ghast_spawn_egg/",
+		"/minecraft:glow_squid_spawn_egg/",
+		"/minecraft:goat_spawn_egg/",
+		"/minecraft:guardian_spawn_egg/",
+		"/minecraft:hoglin_spawn_egg/",
+		"/minecraft:horse_spawn_egg/",
+		"/minecraft:husk_spawn_egg/",
+		"/minecraft:iron_golem_spawn_egg/",
+		"/minecraft:llama_spawn_egg/",
+		"/minecraft:magma_cube_spawn_egg/",
+		"/minecraft:mooshroom_spawn_egg/",
+		"/minecraft:mule_spawn_egg/",
+		"/minecraft:ocelot_spawn_egg/",
+		"/minecraft:panda_spawn_egg/",
+		"/minecraft:parrot_spawn_egg/",
+		"/minecraft:phantom_spawn_egg/",
+		"/minecraft:pig_spawn_egg/",
+		"/minecraft:piglin_brute_spawn_egg/",
+		"/minecraft:piglin_spawn_egg/",
+		"/minecraft:pillager_spawn_egg/",
+		"/minecraft:polar_bear_spawn_egg/",
+		"/minecraft:pufferfish_spawn_egg/",
+		"/minecraft:rabbit_spawn_egg/",
+		"/minecraft:ravager_spawn_egg/",
+		"/minecraft:salmon_spawn_egg/",
+		"/minecraft:sheep_spawn_egg/",
+		"/minecraft:shulker_spawn_egg/",
+		"/minecraft:silverfish_spawn_egg/",
+		"/minecraft:skeleton_horse_spawn_egg/",
+		"/minecraft:skeleton_spawn_egg/",
+		"/minecraft:slime_spawn_egg/",
+		"/minecraft:sniffer_spawn_egg/",
+		"/minecraft:snow_golem_spawn_egg/",
+		"/minecraft:spider_spawn_egg/",
+		"/minecraft:squid_spawn_egg/",
+		"/minecraft:stray_spawn_egg/",
+		"/minecraft:strider_spawn_egg/",
+		"/minecraft:tadpole_spawn_egg/",
+		"/minecraft:trader_llama_spawn_egg/",
+		"/minecraft:tropical_fish_spawn_egg/",
+		"/minecraft:turtle_spawn_egg/",
+		"/minecraft:vex_spawn_egg/",
+		"/minecraft:villager_spawn_egg/",
+		"/minecraft:vindicator_spawn_egg/",
+		"/minecraft:wandering_trader_spawn_egg/",
+		"/minecraft:warden_spawn_egg/",
+		"/minecraft:witch_spawn_egg/",
+		"/minecraft:wither_skeleton_spawn_egg/",
+		"/minecraft:wither_spawn_egg/",
+		"/minecraft:wolf_spawn_egg/",
+		"/minecraft:zoglin_spawn_egg/",
+		"/minecraft:zombie_horse_spawn_egg/",
+		"/minecraft:zombie_spawn_egg/",
+		"/minecraft:zombie_villager_spawn_egg/",
+		"/minecraft:zombified_piglin_spawn_egg/",
+		"/mutantmonsters:creeper_minion_spawn_egg/",
+		"/mutantmonsters:mutant_creeper_spawn_egg/",
+		"/mutantmonsters:mutant_enderman_spawn_egg/",
+		"/mutantmonsters:mutant_skeleton_spawn_egg/",
+		"/mutantmonsters:mutant_snow_golem_spawn_egg/",
+		"/mutantmonsters:mutant_zombie_spawn_egg/",
+		"/mutantmonsters:spider_pig_spawn_egg/",
+		"/naturalist:alligator_spawn_egg/",
+		"/naturalist:bass_spawn_egg/",
+		"/naturalist:bear_spawn_egg/",
+		"/naturalist:bluejay_spawn_egg/",
+		"/naturalist:boar_spawn_egg/",
+		"/naturalist:butterfly_spawn_egg/",
+		"/naturalist:canary_spawn_egg/",
+		"/naturalist:cardinal_spawn_egg/",
+		"/naturalist:caterpillar_spawn_egg/",
+		"/naturalist:catfish_spawn_egg/",
+		"/naturalist:coral_snake_spawn_egg/",
+		"/naturalist:deer_spawn_egg/",
+		"/naturalist:dragonfly_spawn_egg/",
+		"/naturalist:duck_spawn_egg/",
+		"/naturalist:elephant_spawn_egg/",
+		"/naturalist:finch_spawn_egg/",
+		"/naturalist:firefly_spawn_egg/",
+		"/naturalist:giraffe_spawn_egg/",
+		"/naturalist:hippo_spawn_egg/",
+		"/naturalist:lion_spawn_egg/",
+		"/naturalist:lizard_spawn_egg/",
+		"/naturalist:rattlesnake_spawn_egg/",
+		"/naturalist:rhino_spawn_egg/",
+		"/naturalist:robin_spawn_egg/",
+		"/naturalist:snail_spawn_egg/",
+		"/naturalist:snake_spawn_egg/",
+		"/naturalist:sparrow_spawn_egg/",
+		"/naturalist:tortoise_spawn_egg/",
+		"/naturalist:vulture_spawn_egg/",
+		"/naturalist:zebra_spawn_egg/",
+		"/netherdepthsupgrade:blazefish_spawn_egg/",
+		"/netherdepthsupgrade:bonefish_spawn_egg/",
+		"/netherdepthsupgrade:eyeball_fish_spawn_egg/",
+		"/netherdepthsupgrade:fortress_grouper_spawn_egg/",
+		"/netherdepthsupgrade:glowdine_spawn_egg/",
+		"/netherdepthsupgrade:lava_pufferfish_spawn_egg/",
+		"/netherdepthsupgrade:magmacubefish_spawn_egg/",
+		"/netherdepthsupgrade:obsidianfish_spawn_egg/",
+		"/netherdepthsupgrade:searing_cod_spawn_egg/",
+		"/netherdepthsupgrade:soulsucker_spawn_egg/",
+		"/netherdepthsupgrade:wither_bonefish_spawn_egg/",
+		"/netherexp:apparition_spawn_egg/",
+		"/netherexp:banshee_spawn_egg/",
+		"/netherexp:carcass_spawn_egg/",
+		"/netherexp:ecto_slab_spawn_egg/",
+		"/netherexp:stampede_spawn_egg/",
+		"/netherexp:vessel_spawn_egg/",
+		"/netherexp:wisp_spawn_egg/",
+		"/phantasm:behemoth_spawn_egg/",
+		"/phantasm:crystie_spawn_egg/",
+		"/quark:crab_spawn_egg/",
+		"/quark:forgotten_spawn_egg/",
+		"/quark:foxhound_spawn_egg/",
+		"/quark:shiba_spawn_egg/",
+		"/quark:stoneling_spawn_egg/",
+		"/quark:toretoise_spawn_egg/",
+		"/quark:wraith_spawn_egg/",
+		"/rediscovered:beast_boy_spawn_egg/",
+		"/rediscovered:black_steve_spawn_egg/",
+		"/rediscovered:fish_spawn_egg/",
+		"/rediscovered:melee_pigman_spawn_egg/",
+		"/rediscovered:pigman_spawn_egg/",
+		"/rediscovered:rana_spawn_egg/",
+		"/rediscovered:ranged_pigman_spawn_egg/",
+		"/rediscovered:steve_spawn_egg/",
+		"/rediscovered:zombie_pigman_spawn_egg/",
+		"/ribbits:ribbit_fisherman_spawn_egg/",
+		"/ribbits:ribbit_gardener_spawn_egg/",
+		"/ribbits:ribbit_merchant_spawn_egg/",
+		"/ribbits:ribbit_nitwit_spawn_egg/",
+		"/ribbits:ribbit_sorcerer_spawn_egg/",
+		"/the_bumblezone:bee_queen_spawn_egg/",
+		"/the_bumblezone:beehemoth_spawn_egg/",
+		"/the_bumblezone:honey_slime_spawn_egg/",
+		"/the_bumblezone:rootmin_spawn_egg/",
+		"/the_bumblezone:sentry_watcher_spawn_egg/",
+		"/the_bumblezone:variant_bee_spawn_egg/",
+		"/tide:angelfish_spawn_egg/",
+		"/tide:barracuda_spawn_egg/",
+		"/tide:bass_spawn_egg/",
+		"/tide:bluegill_spawn_egg/",
+		"/tide:catfish_spawn_egg/",
+		"/tide:clayfish_spawn_egg/",
+		"/tide:guppy_spawn_egg/",
+		"/tide:mackerel_spawn_egg/",
+		"/tide:mint_carp_spawn_egg/",
+		"/tide:ocean_perch_spawn_egg/",
+		"/tide:pike_spawn_egg/",
+		"/tide:sailfish_spawn_egg/",
+		"/tide:trout_spawn_egg/",
+		"/tide:tuna_spawn_egg/",
+		"/tide:yellow_perch_spawn_egg/",
+		"/twilightforest:adherent_spawn_egg/",
+		"/twilightforest:alpha_yeti_spawn_egg/",
+		"/twilightforest:armored_giant_spawn_egg/",
+		"/twilightforest:bighorn_sheep_spawn_egg/",
+		"/twilightforest:blockchain_goblin_spawn_egg/",
+		"/twilightforest:boar_spawn_egg/",
+		"/twilightforest:carminite_broodling_spawn_egg/",
+		"/twilightforest:carminite_ghastguard_spawn_egg/",
+		"/twilightforest:carminite_ghastling_spawn_egg/",
+		"/twilightforest:carminite_golem_spawn_egg/",
+		"/twilightforest:death_tome_spawn_egg/",
+		"/twilightforest:deer_spawn_egg/",
+		"/twilightforest:dwarf_rabbit_spawn_egg/",
+		"/twilightforest:fire_beetle_spawn_egg/",
+		"/twilightforest:giant_miner_spawn_egg/",
+		"/twilightforest:harbinger_cube_spawn_egg/",
+		"/twilightforest:hedge_spider_spawn_egg/",
+		"/twilightforest:helmet_crab_spawn_egg/",
+		"/twilightforest:hostile_wolf_spawn_egg/",
+		"/twilightforest:hydra_spawn_egg/",
+		"/twilightforest:ice_crystal_spawn_egg/",
+		"/twilightforest:king_spider_spawn_egg/",
+		"/twilightforest:knight_phantom_spawn_egg/",
+		"/twilightforest:kobold_spawn_egg/",
+		"/twilightforest:lich_spawn_egg/",
+		"/twilightforest:lower_goblin_knight_spawn_egg/",
+		"/twilightforest:maze_slime_spawn_egg/",
+		"/twilightforest:minoshroom_spawn_egg/",
+		"/twilightforest:minotaur_spawn_egg/",
+		"/twilightforest:mist_wolf_spawn_egg/",
+		"/twilightforest:mosquito_swarm_spawn_egg/",
+		"/twilightforest:naga_spawn_egg/",
+		"/twilightforest:penguin_spawn_egg/",
+		"/twilightforest:pinch_beetle_spawn_egg/",
+		"/twilightforest:quest_ram_spawn_egg/",
+		"/twilightforest:raven_spawn_egg/",
+		"/twilightforest:redcap_sapper_spawn_egg/",
+		"/twilightforest:redcap_spawn_egg/",
+		"/twilightforest:skeleton_druid_spawn_egg/",
+		"/twilightforest:slime_beetle_spawn_egg/",
+		"/twilightforest:snow_guardian_spawn_egg/",
+		"/twilightforest:snow_queen_spawn_egg/",
+		"/twilightforest:squirrel_spawn_egg/",
+		"/twilightforest:stable_ice_core_spawn_egg/",
+		"/twilightforest:swarm_spider_spawn_egg/",
+		"/twilightforest:tiny_bird_spawn_egg/",
+		"/twilightforest:towerwood_borer_spawn_egg/",
+		"/twilightforest:troll_spawn_egg/",
+		"/twilightforest:unstable_ice_core_spawn_egg/",
+		"/twilightforest:ur_ghast_spawn_egg/",
+		"/twilightforest:winter_wolf_spawn_egg/",
+		"/twilightforest:wraith_spawn_egg/",
+		"/twilightforest:yeti_spawn_egg/",
+		"/unusualend:bluk_spawn_egg/",
+		"/unusualend:bolok_spawn_egg/",
+		"/unusualend:dragling_spawn_egg/",
+		"/unusualend:ender_blob_spawn_egg/",
+		"/unusualend:ender_firefly_spawn_egg/",
+		"/unusualend:enderbulb_spawn_egg/",
+		"/unusualend:endstone_golem_spawn_egg/",
+		"/unusualend:endstone_trapper_spawn_egg/",
+		"/unusualend:glub_spawn_egg/",
+		"/unusualend:small_enderbulb_spawn_egg/",
+		"/unusualend:spunkler_spawn_egg/",
+		"/unusualend:undead_enderling_spawn_egg/",
+		"/upgrade_aquatic:flare_spawn_egg/",
+		"/upgrade_aquatic:goose_spawn_egg/",
+		"/upgrade_aquatic:great_thrasher_spawn_egg/",
+		"/upgrade_aquatic:jellyfish_spawn_egg/",
+		"/upgrade_aquatic:lionfish_spawn_egg/",
+		"/upgrade_aquatic:nautilus_spawn_egg/",
+		"/upgrade_aquatic:perch_spawn_egg/",
+		"/upgrade_aquatic:pike_spawn_egg/",
+		"/upgrade_aquatic:thrasher_spawn_egg/",
+		"/witherstormmod:sickened_bee_spawn_egg/",
+		"/witherstormmod:sickened_cat_spawn_egg/",
+		"/witherstormmod:sickened_chicken_spawn_egg/",
+		"/witherstormmod:sickened_cow_spawn_egg/",
+		"/witherstormmod:sickened_creeper_spawn_egg/",
+		"/witherstormmod:sickened_iron_golem_spawn_egg/",
+		"/witherstormmod:sickened_mushroom_cow_spawn_egg/",
+		"/witherstormmod:sickened_parrot_spawn_egg/",
+		"/witherstormmod:sickened_phantom_spawn_egg/",
+		"/witherstormmod:sickened_pig_spawn_egg/",
+		"/witherstormmod:sickened_pillager_spawn_egg/",
+		"/witherstormmod:sickened_skeleton_spawn_egg/",
+		"/witherstormmod:sickened_snow_golem_spawn_egg/",
+		"/witherstormmod:sickened_spider_spawn_egg/",
+		"/witherstormmod:sickened_villager_spawn_egg/",
+		"/witherstormmod:sickened_vindicator_spawn_egg/",
+		"/witherstormmod:sickened_wolf_spawn_egg/",
+		"/witherstormmod:sickened_zombie_spawn_egg/",
+		"/witherstormmod:tentacle_spawn_egg/",
+		"/witherstormmod:withered_symbiont_spawn_egg/",
 		"/the_bumblezone:super_candle_netherexp:ancient/",
 		"/supplementaries:candle_holder_netherexp:ancient/",
 		"/suppsquared:gold_candle_holder_netherexp:ancient/",
@@ -12959,7 +16354,6 @@
 		"/supplementaries:sign_post_oak/",
 		"/minecraft:oak_hanging_sign/",
 		"/minecraft:oak_boat/",
-		"/minecraft:oak_chest_boat/",
 		"/minecraft:birch_log/",
 		"/minecraft:birch_wood/",
 		"/quark:birch_post/",
@@ -12996,7 +16390,6 @@
 		"/supplementaries:sign_post_birch/",
 		"/minecraft:birch_hanging_sign/",
 		"/minecraft:birch_boat/",
-		"/minecraft:birch_chest_boat/",
 		"/minecraft:spruce_log/",
 		"/minecraft:spruce_wood/",
 		"/quark:spruce_post/",
@@ -13033,7 +16426,6 @@
 		"/supplementaries:sign_post_spruce/",
 		"/minecraft:spruce_hanging_sign/",
 		"/minecraft:spruce_boat/",
-		"/minecraft:spruce_chest_boat/",
 		"/minecraft:jungle_log/",
 		"/minecraft:jungle_wood/",
 		"/quark:jungle_post/",
@@ -13070,7 +16462,6 @@
 		"/supplementaries:sign_post_jungle/",
 		"/minecraft:jungle_hanging_sign/",
 		"/minecraft:jungle_boat/",
-		"/minecraft:jungle_chest_boat/",
 		"/minecraft:acacia_log/",
 		"/minecraft:acacia_wood/",
 		"/quark:acacia_post/",
@@ -13107,7 +16498,6 @@
 		"/supplementaries:sign_post_acacia/",
 		"/minecraft:acacia_hanging_sign/",
 		"/minecraft:acacia_boat/",
-		"/minecraft:acacia_chest_boat/",
 		"/minecraft:dark_oak_log/",
 		"/minecraft:dark_oak_wood/",
 		"/quark:dark_oak_post/",
@@ -13144,7 +16534,6 @@
 		"/supplementaries:sign_post_dark_oak/",
 		"/minecraft:dark_oak_hanging_sign/",
 		"/minecraft:dark_oak_boat/",
-		"/minecraft:dark_oak_chest_boat/",
 		"/minecraft:mangrove_log/",
 		"/minecraft:mangrove_wood/",
 		"/quark:mangrove_post/",
@@ -13182,7 +16571,6 @@
 		"/supplementaries:sign_post_mangrove/",
 		"/minecraft:mangrove_hanging_sign/",
 		"/minecraft:mangrove_boat/",
-		"/minecraft:mangrove_chest_boat/",
 		"/minecraft:cherry_log/",
 		"/minecraft:cherry_wood/",
 		"/quark:cherry_post/",
@@ -13219,7 +16607,6 @@
 		"/supplementaries:sign_post_cherry/",
 		"/minecraft:cherry_hanging_sign/",
 		"/minecraft:cherry_boat/",
-		"/minecraft:cherry_chest_boat/",
 		"/minecraft:bamboo_block/",
 		"/quark:bamboo_post/",
 		"/minecraft:stripped_bamboo_block/",
@@ -13258,7 +16645,6 @@
 		"/supplementaries:sign_post_bamboo/",
 		"/minecraft:bamboo_hanging_sign/",
 		"/minecraft:bamboo_raft/",
-		"/minecraft:bamboo_chest_raft/",
 		"/ecologics:coconut_log/",
 		"/ecologics:coconut_wood/",
 		"/everycomp:q\\/ecologics/coconut_post/",
@@ -13295,7 +16681,6 @@
 		"/supplementaries:ecologics\\/sign_post_coconut/",
 		"/ecologics:coconut_hanging_sign/",
 		"/ecologics:coconut_boat/",
-		"/ecologics:coconut_chest_boat/",
 		"/ecologics:walnut_log/",
 		"/ecologics:walnut_wood/",
 		"/everycomp:q\\/ecologics/walnut_post/",
@@ -13332,7 +16717,6 @@
 		"/supplementaries:ecologics\\/sign_post_walnut/",
 		"/ecologics:walnut_hanging_sign/",
 		"/ecologics:walnut_boat/",
-		"/ecologics:walnut_chest_boat/",
 		"/botania:livingwood_log/",
 		"/everycomp:q\\/botania/livingwood_post/",
 		"/botania:stripped_livingwood_log/",
@@ -13422,6 +16806,31 @@
 		"/ars_nouveau:archwood_pressure_plate/",
 		"/ars_nouveau:archwood_button/",
 		"/supplementaries:ars_nouveau\\/sign_post_archwood/",
+		"/evilcraft:undead_log/",
+		"/evilcraft:undead_wood/",
+		"/everycomp:q\\/evilcraft/undead_post/",
+		"/evilcraft:undead_planks/",
+		"/everycomp:q\\/evilcraft/undead_bookshelf/",
+		"/everycomp:hc\\/evilcraft/undead_bench/",
+		"/everycomp:hc\\/evilcraft/undead_chair/",
+		"/everycomp:hc\\/evilcraft/undead_couch/",
+		"/everycomp:hc\\/evilcraft/undead_dining_bench/",
+		"/everycomp:hc\\/evilcraft/undead_side_table/",
+		"/everycomp:hc\\/evilcraft/undead_desk/",
+		"/everycomp:hc\\/evilcraft/undead_nightstand/",
+		"/everycomp:hc\\/evilcraft/undead_table/",
+		"/everycomp:hc\\/evilcraft/undead_counter/",
+		"/everycomp:q\\/evilcraft/undead_chest/",
+		"/everycomp:hc\\/evilcraft/undead_fancy_bed/",
+		"/evilcraft:undead_planks_stairs/",
+		"/evilcraft:undead_slab/",
+		"/v_slab_compat:evilcraft\\/undead_vertical_slab/",
+		"/suppsquared:evilcraft\\/item_shelf_undead/",
+		"/evilcraft:undead_fence/",
+		"/evilcraft:undead_fence_gate/",
+		"/everycomp:q\\/evilcraft/undead_ladder/",
+		"/everycomp:hnhome\\/evilcraft/undead_lattice/",
+		"/supplementaries:evilcraft\\/sign_post_undead/",
 		"/enhanced_mushrooms:mushroom_hyphae/",
 		"/everycomp:q\\/enhanced_mushrooms/mushroom_post/",
 		"/enhanced_mushrooms:stripped_mushroom_stem/",
@@ -13448,6 +16857,7 @@
 		"/enhanced_mushrooms:mushroom_fence_gate/",
 		"/enhanced_mushrooms:mushroom_door/",
 		"/enhanced_mushrooms:mushroom_trapdoor/",
+		"/enhanced_mushrooms:mushroom_ladder/",
 		"/everycomp:hnhome\\/enhanced_mushrooms/mushroom_lattice/",
 		"/enhanced_mushrooms:mushroom_pressure_plate/",
 		"/enhanced_mushrooms:mushroom_button/",
@@ -13455,7 +16865,6 @@
 		"/supplementaries:enhanced_mushrooms\\/sign_post_mushroom/",
 		"/enhanced_mushrooms:mushroom_hanging_sign/",
 		"/enhanced_mushrooms:mushroom_boat/",
-		"/enhanced_mushrooms:mushroom_chest_boat/",
 		"/quark:azalea_log/",
 		"/quark:azalea_wood/",
 		"/quark:azalea_post/",
@@ -13488,6 +16897,7 @@
 		"/quark:azalea_door/",
 		"/quark:azalea_trapdoor/",
 		"/quark:azalea_ladder/",
+		"/quark:azalea_ladder/",
 		"/everycomp:hnhome\\/quark/azalea_lattice/",
 		"/quark:azalea_pressure_plate/",
 		"/quark:azalea_button/",
@@ -13495,7 +16905,6 @@
 		"/supplementaries:quark\\/sign_post_azalea/",
 		"/quark:azalea_hanging_sign/",
 		"/quark:azalea_boat/",
-		"/quark:azalea_chest_boat/",
 		"/alexscaves:thornwood_log/",
 		"/alexscaves:thornwood_wood/",
 		"/everycomp:q\\/alexscaves/thornwood_post/",
@@ -13513,7 +16922,7 @@
 		"/everycomp:hc\\/alexscaves/thornwood_nightstand/",
 		"/everycomp:hc\\/alexscaves/thornwood_table/",
 		"/everycomp:hc\\/alexscaves/thornwood_counter/",
-		"/everycomp:fd\\/alexscaves/thornwood_cabinet/",
+		"/alexscavesdelight:thornwood_cabinet/",
 		"/everycomp:q\\/alexscaves/thornwood_chest/",
 		"/everycomp:hc\\/alexscaves/thornwood_fancy_bed/",
 		"/alexscaves:thornwood_stairs/",
@@ -13532,7 +16941,6 @@
 		"/supplementaries:alexscaves\\/sign_post_thornwood/",
 		"/alexscaves:thornwood_hanging_sign/",
 		"/alexscaves:thornwood_boat/",
-		"/alexscaves:thornwood_chest_boat/",
 		"/alexscaves:pewen_log/",
 		"/alexscaves:pewen_wood/",
 		"/everycomp:q\\/alexscaves/pewen_post/",
@@ -13550,7 +16958,7 @@
 		"/everycomp:hc\\/alexscaves/pewen_nightstand/",
 		"/everycomp:hc\\/alexscaves/pewen_table/",
 		"/everycomp:hc\\/alexscaves/pewen_counter/",
-		"/everycomp:fd\\/alexscaves/pewen_cabinet/",
+		"/alexscavesdelight:pewen_cabinet/",
 		"/everycomp:q\\/alexscaves/pewen_chest/",
 		"/everycomp:hc\\/alexscaves/pewen_fancy_bed/",
 		"/alexscaves:pewen_stairs/",
@@ -13569,7 +16977,6 @@
 		"/supplementaries:alexscaves\\/sign_post_pewen/",
 		"/alexscaves:pewen_hanging_sign/",
 		"/alexscaves:pewen_boat/",
-		"/alexscaves:pewen_chest_boat/",
 		"/quark:blossom_log/",
 		"/quark:blossom_wood/",
 		"/quark:blossom_post/",
@@ -13591,13 +16998,13 @@
 		"/quark:blossom_door/",
 		"/quark:blossom_trapdoor/",
 		"/quark:blossom_ladder/",
+		"/quark:blossom_ladder/",
 		"/quark:blossom_pressure_plate/",
 		"/quark:blossom_button/",
 		"/quark:blossom_sign/",
 		"/supplementaries:quark\\/sign_post_blossom/",
 		"/quark:blossom_hanging_sign/",
 		"/quark:blossom_boat/",
-		"/quark:blossom_chest_boat/",
 		"/quark:ancient_log/",
 		"/quark:ancient_wood/",
 		"/quark:ancient_post/",
@@ -13619,13 +17026,13 @@
 		"/quark:ancient_door/",
 		"/quark:ancient_trapdoor/",
 		"/quark:ancient_ladder/",
+		"/quark:ancient_ladder/",
 		"/quark:ancient_pressure_plate/",
 		"/quark:ancient_button/",
 		"/quark:ancient_sign/",
 		"/supplementaries:quark\\/sign_post_ancient/",
 		"/quark:ancient_hanging_sign/",
 		"/quark:ancient_boat/",
-		"/quark:ancient_chest_boat/",
 		"/snifferplus:stone_pine_log/",
 		"/snifferplus:stone_pine_wood/",
 		"/everycomp:q\\/snifferplus/stone_pine_post/",
@@ -13662,16 +17069,12 @@
 		"/supplementaries:snifferplus\\/sign_post_stone_pine/",
 		"/snifferplus:stone_pine_hanging_sign/",
 		"/snifferplus:stone_pine_boat/",
-		"/snifferplus:stone_pine_chest_boat/",
 		"/upgrade_aquatic:driftwood_log/",
 		"/upgrade_aquatic:driftwood/",
-		"/everycomp:q\\/upgrade_aquatic/driftwood_post/",
 		"/upgrade_aquatic:stripped_driftwood_log/",
 		"/upgrade_aquatic:stripped_driftwood/",
-		"/everycomp:q\\/upgrade_aquatic/stripped_driftwood_post/",
 		"/upgrade_aquatic:driftwood_planks/",
 		"/upgrade_aquatic:driftwood_bookshelf/",
-		"/everycomp:q\\/upgrade_aquatic/driftwood_bookshelf/",
 		"/everycomp:hc\\/upgrade_aquatic/driftwood_bench/",
 		"/everycomp:hc\\/upgrade_aquatic/driftwood_chair/",
 		"/everycomp:hc\\/upgrade_aquatic/driftwood_couch/",
@@ -13683,7 +17086,6 @@
 		"/everycomp:hc\\/upgrade_aquatic/driftwood_counter/",
 		"/everycomp:fd\\/upgrade_aquatic/driftwood_cabinet/",
 		"/upgrade_aquatic:driftwood_chest/",
-		"/everycomp:q\\/upgrade_aquatic/driftwood_chest/",
 		"/everycomp:hc\\/upgrade_aquatic/driftwood_fancy_bed/",
 		"/upgrade_aquatic:driftwood_stairs/",
 		"/upgrade_aquatic:driftwood_slab/",
@@ -13693,7 +17095,7 @@
 		"/upgrade_aquatic:driftwood_fence_gate/",
 		"/upgrade_aquatic:driftwood_door/",
 		"/upgrade_aquatic:driftwood_trapdoor/",
-		"/everycomp:q\\/upgrade_aquatic/driftwood_ladder/",
+		"/upgrade_aquatic:driftwood_ladder/",
 		"/everycomp:hnhome\\/upgrade_aquatic/driftwood_lattice/",
 		"/upgrade_aquatic:driftwood_pressure_plate/",
 		"/upgrade_aquatic:driftwood_button/",
@@ -13701,7 +17103,6 @@
 		"/supplementaries:upgrade_aquatic\\/sign_post_driftwood/",
 		"/upgrade_aquatic:driftwood_hanging_sign/",
 		"/upgrade_aquatic:driftwood_boat/",
-		"/upgrade_aquatic:driftwood_chest_boat/",
 		"/betterarcheology:rotten_log/",
 		"/betterarcheology:rotten_planks/",
 		"/everycomp:q\\/betterarcheology/rotten_bookshelf/",
@@ -13763,13 +17164,10 @@
 		"/supplementaries:born_in_chaos_v1\\/sign_post_scorched/",
 		"/upgrade_aquatic:river_log/",
 		"/upgrade_aquatic:river_wood/",
-		"/everycomp:q\\/upgrade_aquatic/river_post/",
 		"/upgrade_aquatic:stripped_river_log/",
 		"/upgrade_aquatic:stripped_river_wood/",
-		"/everycomp:q\\/upgrade_aquatic/stripped_river_post/",
 		"/upgrade_aquatic:river_planks/",
 		"/upgrade_aquatic:river_bookshelf/",
-		"/everycomp:q\\/upgrade_aquatic/river_bookshelf/",
 		"/everycomp:hc\\/upgrade_aquatic/river_bench/",
 		"/everycomp:hc\\/upgrade_aquatic/river_chair/",
 		"/everycomp:hc\\/upgrade_aquatic/river_couch/",
@@ -13781,7 +17179,6 @@
 		"/everycomp:hc\\/upgrade_aquatic/river_counter/",
 		"/everycomp:fd\\/upgrade_aquatic/river_cabinet/",
 		"/upgrade_aquatic:river_chest/",
-		"/everycomp:q\\/upgrade_aquatic/river_chest/",
 		"/everycomp:hc\\/upgrade_aquatic/river_fancy_bed/",
 		"/upgrade_aquatic:river_stairs/",
 		"/upgrade_aquatic:river_slab/",
@@ -13791,7 +17188,7 @@
 		"/upgrade_aquatic:river_fence_gate/",
 		"/upgrade_aquatic:river_door/",
 		"/upgrade_aquatic:river_trapdoor/",
-		"/everycomp:q\\/upgrade_aquatic/river_ladder/",
+		"/upgrade_aquatic:river_ladder/",
 		"/everycomp:hnhome\\/upgrade_aquatic/river_lattice/",
 		"/upgrade_aquatic:river_pressure_plate/",
 		"/upgrade_aquatic:river_button/",
@@ -13799,7 +17196,6 @@
 		"/supplementaries:upgrade_aquatic\\/sign_post_river/",
 		"/upgrade_aquatic:river_hanging_sign/",
 		"/upgrade_aquatic:river_boat/",
-		"/upgrade_aquatic:river_chest_boat/",
 		"/minecraft:crimson_stem/",
 		"/minecraft:crimson_hyphae/",
 		"/quark:crimson_post/",
@@ -14003,7 +17399,6 @@
 		"/supplementaries:aether\\/sign_post_skyroot/",
 		"/aether:skyroot_hanging_sign/",
 		"/aether:skyroot_boat/",
-		"/aether:skyroot_chest_boat/",
 		"/aether_redux:fieldsproot_log/",
 		"/aether_redux:fieldsproot_wood/",
 		"/everycomp:q\\/aether_redux/fieldsproot_post/",
@@ -14040,7 +17435,6 @@
 		"/supplementaries:aether_redux\\/sign_post_fieldsproot/",
 		"/aether_redux:fieldsproot_hanging_sign/",
 		"/aether_redux:fieldsproot_boat/",
-		"/aether_redux:fieldsproot_chest_boat/",
 		"/aether_redux:crystal_log/",
 		"/aether_redux:crystal_wood/",
 		"/everycomp:q\\/aether_redux/crystal_post/",
@@ -14077,7 +17471,6 @@
 		"/supplementaries:aether_redux\\/sign_post_crystal/",
 		"/aether_redux:crystal_hanging_sign/",
 		"/aether_redux:crystal_boat/",
-		"/aether_redux:crystal_chest_boat/",
 		"/aether_redux:glacia_log/",
 		"/aether_redux:glacia_wood/",
 		"/everycomp:q\\/aether_redux/glacia_post/",
@@ -14114,7 +17507,6 @@
 		"/supplementaries:aether_redux\\/sign_post_glacia/",
 		"/aether_redux:glacia_hanging_sign/",
 		"/aether_redux:glacia_boat/",
-		"/aether_redux:glacia_chest_boat/",
 		"/aether_redux:cloudcap_stem/",
 		"/aether_redux:cloudcap_hyphae/",
 		"/everycomp:q\\/aether_redux/cloudcap_post/",
@@ -14151,7 +17543,6 @@
 		"/supplementaries:aether_redux\\/sign_post_cloudcap/",
 		"/aether_redux:cloudcap_hanging_sign/",
 		"/aether_redux:cloudcap_boat/",
-		"/aether_redux:cloudcap_chest_boat/",
 		"/aether_redux:blightwillow_log/",
 		"/aether_redux:blightwillow_wood/",
 		"/everycomp:q\\/aether_redux/blightwillow_post/",
@@ -14188,7 +17579,6 @@
 		"/supplementaries:aether_redux\\/sign_post_blightwillow/",
 		"/aether_redux:blightwillow_hanging_sign/",
 		"/aether_redux:blightwillow_boat/",
-		"/aether_redux:blightwillow_chest_boat/",
 		"/aether_redux:jellyshroom_stem/",
 		"/aether_redux:jellyshroom_hyphae/",
 		"/everycomp:q\\/aether_redux/jellyshroom_post/",
@@ -14222,7 +17612,6 @@
 		"/supplementaries:aether_redux\\/sign_post_jellyshroom/",
 		"/aether_redux:jellyshroom_hanging_sign/",
 		"/aether_redux:jellyshroom_boat/",
-		"/aether_redux:jellyshroom_chest_boat/",
 		"/cataclysm:chorus_stem/",
 		"/cataclysm:chorus_planks/",
 		"/everycomp:q\\/cataclysm/chorus_bookshelf/",
@@ -14362,7 +17751,6 @@
 		"/supplementaries:ecologics\\/sign_post_flowering_azalea/",
 		"/ecologics:flowering_azalea_hanging_sign/",
 		"/ecologics:flowering_azalea_boat/",
-		"/ecologics:flowering_azalea_chest_boat/",
 		"/twilightforest:mangrove_log/",
 		"/twilightforest:mangrove_wood/",
 		"/quark:mangrove_post/",
@@ -14401,7 +17789,6 @@
 		"/supplementaries:sign_post_mangrove/",
 		"/twilightforest:mangrove_hanging_sign/",
 		"/twilightforest:mangrove_boat/",
-		"/twilightforest:mangrove_chest_boat/",
 		"/ribbits:mossy_oak_planks/",
 		"/ribbits:mossy_oak_planks_stairs/",
 		"/ribbits:mossy_oak_planks_slab/",
@@ -14426,7 +17813,6 @@
 		"/everycomp:hc\\/twilightforest/mining_nightstand/",
 		"/everycomp:hc\\/twilightforest/mining_table/",
 		"/everycomp:hc\\/twilightforest/mining_counter/",
-		"/everycomp:fd\\/twilightforest/mining_cabinet/",
 		"/twilightdelight:mining_cabinet/",
 		"/twilightforest:mining_chest/",
 		"/everycomp:hc\\/twilightforest/mining_fancy_bed/",
@@ -14446,7 +17832,6 @@
 		"/supplementaries:twilightforest\\/sign_post_mining/",
 		"/twilightforest:mining_hanging_sign/",
 		"/twilightforest:mining_boat/",
-		"/twilightforest:mining_chest_boat/",
 		"/twilightforest:canopy_log/",
 		"/twilightforest:canopy_wood/",
 		"/everycomp:q\\/twilightforest/canopy_post/",
@@ -14464,7 +17849,6 @@
 		"/everycomp:hc\\/twilightforest/canopy_nightstand/",
 		"/everycomp:hc\\/twilightforest/canopy_table/",
 		"/everycomp:hc\\/twilightforest/canopy_counter/",
-		"/everycomp:fd\\/twilightforest/canopy_cabinet/",
 		"/twilightdelight:canopy_cabinet/",
 		"/twilightforest:canopy_chest/",
 		"/everycomp:hc\\/twilightforest/canopy_fancy_bed/",
@@ -14484,7 +17868,6 @@
 		"/supplementaries:twilightforest\\/sign_post_canopy/",
 		"/twilightforest:canopy_hanging_sign/",
 		"/twilightforest:canopy_boat/",
-		"/twilightforest:canopy_chest_boat/",
 		"/twilightforest:twilight_oak_log/",
 		"/twilightforest:twilight_oak_wood/",
 		"/everycomp:q\\/twilightforest/twilight_oak_post/",
@@ -14502,7 +17885,6 @@
 		"/everycomp:hc\\/twilightforest/twilight_oak_nightstand/",
 		"/everycomp:hc\\/twilightforest/twilight_oak_table/",
 		"/everycomp:hc\\/twilightforest/twilight_oak_counter/",
-		"/everycomp:fd\\/twilightforest/twilight_oak_cabinet/",
 		"/twilightdelight:twilight_oak_cabinet/",
 		"/twilightforest:twilight_oak_chest/",
 		"/everycomp:hc\\/twilightforest/twilight_oak_fancy_bed/",
@@ -14522,7 +17904,6 @@
 		"/supplementaries:twilightforest\\/sign_post_twilight_oak/",
 		"/twilightforest:twilight_oak_hanging_sign/",
 		"/twilightforest:twilight_oak_boat/",
-		"/twilightforest:twilight_oak_chest_boat/",
 		"/twilightforest:dark_log/",
 		"/twilightforest:dark_wood/",
 		"/everycomp:q\\/twilightforest/dark_post/",
@@ -14540,7 +17921,6 @@
 		"/everycomp:hc\\/twilightforest/dark_nightstand/",
 		"/everycomp:hc\\/twilightforest/dark_table/",
 		"/everycomp:hc\\/twilightforest/dark_counter/",
-		"/everycomp:fd\\/twilightforest/dark_cabinet/",
 		"/twilightdelight:dark_cabinet/",
 		"/twilightforest:dark_chest/",
 		"/everycomp:hc\\/twilightforest/dark_fancy_bed/",
@@ -14560,7 +17940,6 @@
 		"/supplementaries:twilightforest\\/sign_post_dark/",
 		"/twilightforest:dark_hanging_sign/",
 		"/twilightforest:dark_boat/",
-		"/twilightforest:dark_chest_boat/",
 		"/twilightforest:transformation_log/",
 		"/twilightforest:transformation_wood/",
 		"/everycomp:q\\/twilightforest/transformation_post/",
@@ -14578,7 +17957,6 @@
 		"/everycomp:hc\\/twilightforest/transformation_nightstand/",
 		"/everycomp:hc\\/twilightforest/transformation_table/",
 		"/everycomp:hc\\/twilightforest/transformation_counter/",
-		"/everycomp:fd\\/twilightforest/transformation_cabinet/",
 		"/twilightdelight:transformation_cabinet/",
 		"/twilightforest:transformation_chest/",
 		"/everycomp:hc\\/twilightforest/transformation_fancy_bed/",
@@ -14598,7 +17976,8 @@
 		"/supplementaries:twilightforest\\/sign_post_transformation/",
 		"/twilightforest:transformation_hanging_sign/",
 		"/twilightforest:transformation_boat/",
-		"/twilightforest:transformation_chest_boat/",
+		"/evilcraft:reinforced_undead_planks/",
+		"/evilcraft:reinforced_undead_planks_stairs/",
 		"/twilightforest:time_log/",
 		"/twilightforest:time_wood/",
 		"/everycomp:q\\/twilightforest/time_post/",
@@ -14616,7 +17995,6 @@
 		"/everycomp:hc\\/twilightforest/time_nightstand/",
 		"/everycomp:hc\\/twilightforest/time_table/",
 		"/everycomp:hc\\/twilightforest/time_counter/",
-		"/everycomp:fd\\/twilightforest/time_cabinet/",
 		"/twilightdelight:time_cabinet/",
 		"/twilightforest:time_chest/",
 		"/everycomp:hc\\/twilightforest/time_fancy_bed/",
@@ -14636,28 +18014,13 @@
 		"/supplementaries:twilightforest\\/sign_post_time/",
 		"/twilightforest:time_hanging_sign/",
 		"/twilightforest:time_boat/",
-		"/twilightforest:time_chest_boat/",
 		"/twilightforest:sorting_log/",
 		"/twilightforest:sorting_wood/",
-		"/everycomp:q\\/twilightforest/sorting_post/",
 		"/twilightforest:stripped_sorting_log/",
 		"/twilightforest:stripped_sorting_wood/",
-		"/everycomp:q\\/twilightforest/stripped_sorting_post/",
 		"/twilightforest:sorting_planks/",
-		"/everycomp:q\\/twilightforest/sorting_bookshelf/",
-		"/everycomp:hc\\/twilightforest/sorting_bench/",
-		"/everycomp:hc\\/twilightforest/sorting_chair/",
-		"/everycomp:hc\\/twilightforest/sorting_couch/",
-		"/everycomp:hc\\/twilightforest/sorting_dining_bench/",
-		"/everycomp:hc\\/twilightforest/sorting_side_table/",
-		"/everycomp:hc\\/twilightforest/sorting_desk/",
-		"/everycomp:hc\\/twilightforest/sorting_nightstand/",
-		"/everycomp:hc\\/twilightforest/sorting_table/",
-		"/everycomp:hc\\/twilightforest/sorting_counter/",
-		"/everycomp:fd\\/twilightforest/sorting_cabinet/",
 		"/twilightdelight:sorting_cabinet/",
 		"/twilightforest:sorting_chest/",
-		"/everycomp:hc\\/twilightforest/sorting_fancy_bed/",
 		"/twilightforest:sorting_stairs/",
 		"/twilightforest:sorting_slab/",
 		"/v_slab_compat:twilightforest\\/sorting_vertical_slab/",
@@ -14666,15 +18029,12 @@
 		"/twilightforest:sorting_fence_gate/",
 		"/twilightforest:sorting_door/",
 		"/twilightforest:sorting_trapdoor/",
-		"/everycomp:q\\/twilightforest/sorting_ladder/",
-		"/everycomp:hnhome\\/twilightforest/sorting_lattice/",
 		"/twilightforest:sorting_pressure_plate/",
 		"/twilightforest:sorting_button/",
 		"/twilightforest:sorting_sign/",
 		"/supplementaries:twilightforest\\/sign_post_sorting/",
 		"/twilightforest:sorting_hanging_sign/",
 		"/twilightforest:sorting_boat/",
-		"/twilightforest:sorting_chest_boat/",
 		"/v_slab_compat:witherstormmod\\/tainted_stone_vertical_slab/",
 		"/v_slab_compat:botania\\/red_pavement_vertical_slab/",
 		"/v_slab_compat:botania\\/metamorphic_plains_bricks_vertical_slab/",

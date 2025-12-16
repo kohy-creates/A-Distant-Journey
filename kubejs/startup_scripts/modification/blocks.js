@@ -46,4 +46,5 @@ BlockEvents.modification(event => {
 		block.setExplosionResistance(60000);
 		block.setDestroySpeed(100);
 	})
+
 })

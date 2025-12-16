@@ -25,7 +25,7 @@
 	#        "biomesoplenty:redwood"		COMMENT: exclude redwood from Wood Mod for any module
 	#    ]
 	#
-	blacklist = ["ecologics:azalea", "ecologics:flowering_azalea", "quark:blossom", "quark:ancient", "twilightforest:mangrove"]
+	blacklist = ["ecologics:azalea", "ecologics:flowering_azalea", "quark:blossom", "quark:ancient", "twilightforest:mangrove", "twilightforest:sorting"]
 
 [leavestype]
 	#Exclude LeavesType from all of Modules
@@ -69,5 +69,5 @@
 	#        ".*fir_chest",											COMMENT: .* is an RegEx, so it exclude fir_chest from any Supported-Mods & Wood-Mods
 	#    ]
 	#
-	blacklist = ["q/twilightforest/mining_chest", "q/twilightforest/mining_trapped_chest", "q/twilightforest/transformation_chest", "q/twilightforest/transformation_trapped_chest", "q/twilightforest/twilight_oak_chest", "q/twilightforest/twilight_oak_trapped_chest", "q/twilightforest/time_chest", "q/twilightforest/time_trapped_chest", "q/twilightforest/sorting_chest", "q/twilightforest/sorting_trapped_chest", "q/twilightforest/canopy_chest", "q/twilightforest/canopy_trapped_chest", "q/twilightforest/dark_chest", "q/twilightforest/dark_trapped_chest", "fd/twilightforest/.*"]
+	blacklist = ["quark/twilightforest/mining_chest", "quark/twilightforest/mining_trapped_chest", "quark/twilightforest/transformation_chest", "quark/twilightforest/transformation_trapped_chest", "quark/twilightforest/twilight_oak_chest", "quark/twilightforest/twilight_oak_trapped_chest", "quark/twilightforest/time_chest", "quark/twilightforest/time_trapped_chest", "quark/twilightforest/sorting_chest", "quark/twilightforest/sorting_trapped_chest", "quark/twilightforest/canopy_chest", "quark/twilightforest/canopy_trapped_chest", "quark/twilightforest/dark_chest", "quark/twilightforest/dark_trapped_chest", "farmersdelight/twilightforest/.*", "farmersdelight/alexscaves/.*", "quark/upgrade_aquatic/.*"]
 

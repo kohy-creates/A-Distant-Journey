@@ -1,6 +1,6 @@
 {
 	"#minecraft:is_projectile": 4.0,
-	"#minecraft:is_lightning": 5.0,
+	"#minecraft:is_lightning": 2.5,
 	"#minecraft:is_explosion": 3.75,
 	"minecraft:fall": 4.0,
 	"minecraft:falling_anvil": 5.0,
@@ -20,5 +20,7 @@
 	"alexscaves:desolate_dagger": 3.0,
 	"minecraft:in_fire": 7.0,
 	"supplementaries:bamboo_spikes": 7.5,
-	"minecraft:trident": 1.0
+	"minecraft:trident": 1.0,
+	"minecraft:sonic_boom": 16.66667,
+	"alexscaves:raygun": 1.0
 }

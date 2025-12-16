@@ -132,6 +132,21 @@ const moonEventMessages = {
 				'The unstable beings start to fall apart in the sunlight'
 			]
 		}
+	},
+	'adj:tutorial_moon': {
+		color: '#EEEEEE',
+		texts: {
+			start: [
+				'This is going to be a very calm night...',
+				'Monsters are\'t going to be as aggressive this time',
+				'You should be safe to keep on gathering materials and exploring nearby areas'
+			],
+			end: [
+				'The moon slowly sets...',
+				'Next night is not going to be as forgiving though...',
+				'Monsters will only get more and more aggressive',
+			]
+		}
 	}
 };
 
@@ -254,6 +269,14 @@ ServerEvents.tick(event => {
 	}
 	else if (isInBetween(dayTime, 12545, 13450) && messageCount === 1) {
 
+		if (!server.persistentData.tutorialNight) {
+			server.persistentData.tutorialNight = true;
+
+			if (!server.isHardcore()) {
+				server.runCommandSilent('/enhancedcelestials setLunarEvent adj:tutorial_moon')
+			}
+		}
+
 		// Get current lunar forecast
 		let optional = $EnhancedCelestials.lunarForecastWorldData(server.overworld());
 		let id = null;
@@ -273,7 +296,7 @@ ServerEvents.tick(event => {
 					sendEventMessages(true, phase);
 				}
 				else {
-					sendMessage({ text: 'This really doesn\'t feel like a calm night', color: '#d39dff', slide: 'single' })
+					sendMessage({ text: 'This really doesn\'t feel like a calm night', color: '	', slide: 'single' })
 				}
 			}
 			else {

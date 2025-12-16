@@ -4,7 +4,6 @@ global.WitherStormFlyingSpeed = 0.005;
 
 EntityJSEvents.attributes(event => {
 
-	// Disabled if I don't need it for testing so that it doesn't linger in memory
 	global.mobs = event.getAllTypes();
 
 	event.modify('player', attributes => {
@@ -23,8 +22,23 @@ EntityJSEvents.attributes(event => {
 })
 
 EntityJSEvents.modifyEntity(event => {
+
+	const dontTargetPlayers = context => {
+		const { entity, target } = context;
+		if (!target) return true
+		return !target.isPlayer()
+	}
+
 	event.modify('born_in_chaos_v1:maggot', entity => {
-		entity.canAttack(context => false)
+		entity.canAttack(dontTargetPlayers)
 		entity.canCollideWith(context => false)
+	})
+
+	event.modify('upgrade_aquatic:thrasher', entity => {
+		entity.canAttack(dontTargetPlayers)
+	})
+
+	event.modify('upgrade_aquatic:great_thrasher', entity => {
+		entity.canAttack(dontTargetPlayers)
 	})
 })

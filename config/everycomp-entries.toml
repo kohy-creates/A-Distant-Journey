@@ -82,6 +82,9 @@
 			mining = true
 			sorting = true
 
+		[types.wood_type.evilcraft]
+			undead = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -154,6 +157,9 @@
 			transformation = true
 			mining = true
 			sorting = true
+
+		[types.leaves_type.evilcraft]
+			undead = true
 
 	[types.cake]
 
@@ -680,6 +686,9 @@
 
 		[types.cut_block_type.ribbits]
 			mossy_oak_planks = true
+
+		[types.cut_block_type.evilcraft]
+			undead = true
 
 #Disables specific entries
 [entries]

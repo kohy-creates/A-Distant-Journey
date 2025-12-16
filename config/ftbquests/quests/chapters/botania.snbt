@@ -845,7 +845,10 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["4B3625869C4E7079"]
+			dependencies: [
+				"4B3625869C4E7079"
+				"6AAB7BBD64FB4562"
+			]
 			description: [""]
 			id: "2FA5CDE610C7A6EB"
 			subtitle: "Place 4 Gaia Pylons around a powered Beacon and then summon the Gaia Guardian by right-clicking the Beacon with a Terrasteel Ingot"
@@ -988,8 +991,8 @@
 				type: "item"
 			}]
 			title: "Abracadabra, Magic Plants!"
-			x: -3.5d
-			y: -0.5d
+			x: -3.0d
+			y: -1.0d
 		}
 	]
 	title: "Magical Botanics"

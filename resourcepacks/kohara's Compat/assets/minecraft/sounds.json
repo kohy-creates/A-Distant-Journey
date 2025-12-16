@@ -253,5 +253,13 @@
 				"volume": 0.6
 			}
 		]
+	},
+	"ui.button.click": {
+		"replace": true,
+		"sounds": [
+			{
+				"name": "minecraft:random/ui_click"
+			}
+		]
 	}
 }

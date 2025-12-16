@@ -1,0 +1,8 @@
+{
+	"gameMode.adventure": "§aAdventure",
+	"gameMode.changed": "Your game mode has been updated to %s",
+	"gameMode.creative": "§dJourney",
+	"gameMode.hardcore": "§5Hardcore",
+	"gameMode.spectator": "§7Spectator",
+	"gameMode.survival": "§aCasual"
+}

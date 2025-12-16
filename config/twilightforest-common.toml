@@ -24,7 +24,7 @@ uuid_locking = false
 skull_candles = true
 #If false, items that come enchanted when you craft them (such as ironwood or steeleaf gear) will not show this way in the creative inventory.
 #Please note that this doesnt affect the crafting recipes themselves, you will need a datapack to change those.
-default_item_enchantments = true
+default_item_enchantments = false
 #If true, Twilight Forest's bosses will put their drops inside of a chest where they originally spawned instead of dropping the loot directly.
 #Note that the Knight Phantoms are not affected by this as their drops work differently.
 boss_drop_chests = true
@@ -88,14 +88,14 @@ cloudBlockPrecipitationDistance = 32
 	disableTransformationCore = false
 	#Defines the radius at which the Transformation Core works. Can be a number anywhere between 1 and 128.
 	#Range: 1 ~ 128
-	transformationCoreRange = 16
+	transformationCoreRange = 24
 	#If true, prevents the Minewood Core from functioning.
 	disableMiningCore = false
 	#Defines the radius at which the Minewood Core works. Can be a number anywhere between 1 and 128.
 	#Range: 1 ~ 128
 	miningCoreRange = 16
 	#If true, prevents the Sortingwood Core from functioning.
-	disableSortingCore = false
+	disableSortingCore = true
 	#Defines the radius at which the Sortingwood Core works. Can be a number anywhere between 1 and 128.
 	#Range: 1 ~ 128
 	sortingCoreRange = 16

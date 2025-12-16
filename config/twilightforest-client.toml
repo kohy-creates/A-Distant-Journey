@@ -20,5 +20,5 @@ cloudBlockPrecipitationDistance = -1
 #If left empty, the giants will appear the same as the player viewing them does.
 giantSkinUUIDs = []
 #Defines which biomes the aurora shader effect will appear in. Leave the list empty to disable the effect.
-auroraBiomes = ["twilightforest:glacier"]
+auroraBiomes = ["twilightforest:glacier", "twilightforest:enchanted_forest"]
 

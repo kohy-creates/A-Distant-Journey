@@ -116,14 +116,31 @@ ItemEvents.modification(event => {
 
 	//////////////////////////////////////////////////////
 
+	const noDurability = [
+		/stardew_fishing\:.*bobber/,
+		/.*aether.*\:.*glove/,
+		/umbral_skies\:.*gloves/,
+		'the_bumblezone:flower_headwear'
+	]
+	event.modify(noDurability, item => {
+		item.setMaxDamage(0);
+	})
+
+	//////////////////////////////////////////////////////
+
 	maxDurability([
 		toolset('minecraft:golden'),
 		armorset('botania:manaweave')
-	], 140)
+	], 150)
 
 	maxDurability([
 		armorset('create:cardboard')
 	], 70)
+
+	maxDurability([
+		'turtle_helmet',
+		'etcetera:tidal_helmet'
+	], 600)
 
 	maxDurability([
 		toolset('minecraft:wooden'),
@@ -131,7 +148,7 @@ ItemEvents.modification(event => {
 		armorset('minecraft:leather'),
 		armorset('mcdw:glaive_cackling_broom'),
 		'mcdw:staff_battlestaff'
-	], 100)
+	], 110)
 
 	maxDurability([
 		'bow',
@@ -165,13 +182,12 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		armorset('ars_nouveau:arcanist'),
-	], 1800)
+	], 2200)
 
 	maxDurability([
 		toolset('additionaladditions:rose_gold'),
 		toolset('aether_redux:veridium'),
 		toolset('aether_redux:infused_veridium'),
-		armorset('born_in_chaos_v1:nigthmare_mantleofthe_night'),
 		'mcdw:crossbow_pride_of_the_piglins',
 		'mcdw:soul_dagger_soul_knife',
 		toolset('mythicmetals:steel'),
@@ -184,8 +200,10 @@ ItemEvents.modification(event => {
 		toolset('aether:valkyrie'),
 		toolset('lost_aether_content:phoenix'),
 		armorset('aether:phoenix'),
+		armorset('aether:obsidian'),
 		'mcdw:crossbow_azure_seeker',
-		'mcdw:crossbow_firebolt_thrower'
+		'mcdw:crossbow_firebolt_thrower',
+		armorset('born_in_chaos_v1:nightmare_mantleofthe_night'),
 	], 2000)
 
 	maxDurability([

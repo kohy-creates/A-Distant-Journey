@@ -1,29 +1,50 @@
 // 
 // Item Tags
 // 
-ServerEvents.tags('item', event => {
+ServerEvents.tags('item', tags => {
 
-	event.removeAllTagsFrom(global.blacklistedItems)
+	tags.removeAllTagsFrom(global.blacklistedItems)
 
-	event.add('adj:basic_furnaces', [
+	tags.add('adj:vanity', [
+		/etcetera:.*_hat/,
+		/etcetera:.*_sweater/,
+		/etcetera:trader_.*/,
+		/botania:cosmetic_.*/,
+		'supplementaries:enderman_head',
+		'minecraft:creeper_head',
+		'minecraft:player_head',
+		'minecraft:zombie_head',
+		'minecraft:skeleton_skull',
+		'minecraft:dragon_head',
+		'minecraft:piglin_head',
+		'minecraft:wither_skeleton_skull',
+		'the_bumblezone:flower_headgear',
+		'cataclysm:amptrgangr_head',
+		'cataclysm:draugr_head',
+		/_fossil_head/,
+		'cataclysm:koboldediator_skull',
+
+	])
+
+	tags.add('adj:basic_furnaces', [
 		'furnace',
 		/quark\:.*_furnace/
 	])
 
-	event.add('adj:petal_apothecary', [
+	tags.add('adj:petal_apothecary', [
 		/botania\:apothecary.*/
 	])
 
-	event.add('adj:horse_armor', [
+	tags.add('adj:horse_armor', [
 		/.*horse_armor/
 	])
 
-	event.add('adj:clock', [
+	tags.add('adj:clock', [
 		'minecraft:clock',
 		'mythicmetals:platinum_watch'
 	])
 
-	event.remove('forge:glass_panes/colorless', [
+	tags.remove('forge:glass_panes/colorless', [
 		'aether:quicksoil_glass_pane'
 	])
 
@@ -36,7 +57,7 @@ ServerEvents.tags('item', event => {
 		'c:raw_silver_blocks',
 	]
 	silverTags.forEach(tag => {
-		event.remove(tag, [/mythicmetals/])
+		tags.remove(tag, [/mythicmetals/])
 	})
 
 	// Reforges cause nothing is unified (ofc)
@@ -51,15 +72,15 @@ ServerEvents.tags('item', event => {
 	types.forEach(type => {
 		let str = type;
 		if (!type.endsWith('s')) str = str + 's';
-		event.add('adj:equipment/' + str, [
+		tags.add('adj:equipment/' + str, [
 			new RegExp(type)
 		])
-		event.add('adj:reforges/armor', [
+		tags.add('adj:reforges/armor', [
 			'#adj:equipment/' + str
 		])
 	})
 	// Bows
-	event.add('adj:reforges/bows', [
+	tags.add('adj:reforges/bows', [
 		'bow',
 		'crossbow',
 		'additionaladditions:crossbow_with_spyglass',
@@ -71,47 +92,33 @@ ServerEvents.tags('item', event => {
 
 	])
 	// Melee
-	event.add('adj:reforges/melee', [
+	tags.add('adj:reforges/melee', [
 		/sword/,
 		/knife/,
 		/axe/,
 		'trident'
 	])
 	// Shields
-	event.add('adj:reforges/shields', [
+	tags.add('adj:reforges/shields', [
 		/shield/
 	])
 
-	event.removeAllTagsFrom(/mythicmetals:silver/)
-	event.removeAllTagsFrom(/mythicmetals:raw_silver/)
-	event.removeAllTagsFrom('farmersdelight:wheat_dough')
-	event.removeAll('supplementaries:ropes')
-	event.add('supplementaries:ropes', [
+	tags.removeAllTagsFrom(/mythicmetals:silver/)
+	tags.removeAllTagsFrom(/mythicmetals:raw_silver/)
+	tags.removeAllTagsFrom('farmersdelight:wheat_dough')
+	tags.removeAll('supplementaries:ropes')
+	tags.add('supplementaries:ropes', [
 		'supplementaries:rope'
 	])
 
-	event.add('adj:any_map', [
+	tags.add('adj:any_map', [
 		'map',
 		'filled_map',
 		'supplementaries:slice_map',
 		'alexscaves:cave_map'
 	])
 
-	const removedItems = [
-		"ars_nouveau:sorcerer_boots",
-		"ars_nouveau:sorcerer_leggings",
-		"ars_nouveau:sorcerer_robes",
-		"ars_nouveau:sorcerer_hood",
-		"ars_nouveau:battlemage_boots",
-		"ars_nouveau:battlemage_leggings",
-		"ars_nouveau:battlemage_robes",
-		"ars_nouveau:battlemage_hood"
-	]
-	removedItems.forEach(item => {
-		event.removeAllTagsFrom(item)
-	})
-
-	event.add('adj:alloy_forge', [
+	tags.add('adj:alloy_forge', [
 		'alloy_forgery:adamantite_forge_casing_forge_controller',
 		'alloy_forgery:cracked_deepslate_bricks_forge_controller',
 		'alloy_forgery:cracked_stone_bricks_forge_controller',
@@ -119,11 +126,11 @@ ServerEvents.tags('item', event => {
 		'alloy_forgery:nether_bricks_forge_controller',
 	])
 
-	event.add('adj:alloy_forge_casing', [
+	tags.add('adj:alloy_forge_casing', [
 		/adj\:.*casing/
 	])
 
-	event.add('adj:music_disc', [
+	tags.add('adj:music_disc', [
 		/.*\:music_disc_/,
 		'etched:etched_music_disc',
 		'supplementaries:pancake',
@@ -133,84 +140,84 @@ ServerEvents.tags('item', event => {
 		'aether_redux:ancient_sentrite_music_disc'
 	])
 
-	event.removeAllTagsFrom('create:copper_nugget')
+	tags.removeAllTagsFrom('create:copper_nugget')
 
-	event.add('adj:attuned_pearls', [
+	tags.add('adj:attuned_pearls', [
 		/cataclysm:.*eye.*/,
 		'rediscovered:ruby_eye'
 	])
 
-	event.add('adj:ars/glyphs', [
+	tags.add('adj:ars/glyphs', [
 		/.*\:glyph_.*/
 	])
 
-	event.add('adj:ars/rituals', [
+	tags.add('adj:ars/rituals', [
 		/.*\:ritual_.*/
 	])
-	event.remove('adj:ars/rituals', [
+	tags.remove('adj:ars/rituals', [
 		'ars_nouveau:ritual_brazier'
 	])
 
-	event.add('adj:ars/lesser_spell_focus', [
+	tags.add('adj:ars/lesser_spell_focus', [
 		/ars_elemental:lesser_*/
 	])
 
-	event.add('adj:ars/spell_focus', [
+	tags.add('adj:ars/spell_focus', [
 		/ars_elemental:.*_focus/
 	])
-	event.remove('adj:ars/spell_focus', [
+	tags.remove('adj:ars/spell_focus', [
 		/ars_elemental:lesser_*/
 	])
 
-	event.add('adj:ars/sourcelinks', [
+	tags.add('adj:ars/sourcelinks', [
 		/ars_nouveau:.*_sourcelink/
 	])
 
-	event.add('adj:ars/relay', [
+	tags.add('adj:ars/relay', [
 		/ars_nouveau:relay.*/
 	])
 
-	event.add('adj:ars/essence', [
+	tags.add('adj:ars/essence', [
 		/ars_nouveau:.*_essence/
 	])
 
-	event.add('adj:ars/bangle', [
+	tags.add('adj:ars/bangle', [
 		/ars_elemental:.*_bangle/
 	])
 
-	event.add('adj:canvas', [
+	tags.add('adj:canvas', [
 		/xercapaint:.*canvas.*/
 	])
 
-	event.add('adj:tidesinger_upgrade_coral', [
+	tags.add('adj:tidesinger_upgrade_coral', [
 		/^(?!.*dead).*:.*_coral_block$/
 	])
 
-	event.add('adj:treasure_bag', [
+	tags.add('adj:treasure_bag', [
 		/treasure_bag/
 	])
 
-	event.add('adj:archwood_leaves', [
+	tags.add('adj:archwood_leaves', [
 		/_archwood_leaves/
 	])
 
-	event.add('adjcore:curios_dropped_on_death', [
+	tags.add('adjcore:curios_dropped_on_death', [
 		'backpacked:backpack'
 	])
 
-	event.add('forge:buckets/entity_water', [
+	tags.add('forge:buckets/entity_water', [
 		/tide:.*_bucket/,
 		/alexscaves:.*_bucket/
 	])
 
-	event.remove('botania:floating_flowers', [
+	tags.remove('botania:floating_flowers', [
 		'#botania:special_floating_flowers'
 	])
 
-	event.remove('twilightforest:portal/activator', [
+	tags.remove('twilightforest:portal/activator', [
 		'minecraft:diamond'
 	])
-	event.add('twilightforest:portal/activator', [
+	tags.add('twilightforest:portal/activator', [
 		'botania:dragonstone'
 	])
 })
@@ -218,7 +225,7 @@ ServerEvents.tags('item', event => {
 // 
 // Block tags
 // 
-ServerEvents.tags('block', event => {
+ServerEvents.tags('block', tags => {
 
 	const blockNeedsTieredTool = {
 		'minecraft:needs_wooden_tool': [
@@ -264,11 +271,11 @@ ServerEvents.tags('block', event => {
 			}
 		})
 
-		event.remove(tag, map.remove)
-		event.add(tag, map.add)
+		tags.remove(tag, map.remove)
+		tags.add(tag, map.add)
 	}
 
-	event.add('adj:stone', [
+	tags.add('adj:stone', [
 		"minecraft:andesite",
 		"minecraft:diorite",
 		"minecraft:granite",
@@ -295,20 +302,20 @@ ServerEvents.tags('block', event => {
 		"quark:polished_myalite",
 	])
 
-	event.remove('minecraft:mineable/axe', [
+	tags.remove('minecraft:mineable/axe', [
 		/aquamirae\:painting\_/,
 		'summoningrituals:altar'
 	])
 
-	event.remove('minecraft:mineable/pickaxe', [
+	tags.remove('minecraft:mineable/pickaxe', [
 		'ecologics:pot'
 	])
 
-	event.add('minecraft:mineable/pickaxe', [
+	tags.add('minecraft:mineable/pickaxe', [
 		'summoningrituals:altar'
 	])
 
-	event.add('adj:alloy_forge', [
+	tags.add('adj:alloy_forge', [
 		'alloy_forgery:cracked_stone_bricks_forge_controller',
 		'alloy_forgery:cracked_deepslate_bricks_forge_controller',
 		'alloy_forgery:nether_bricks_forge_controller',
@@ -316,11 +323,11 @@ ServerEvents.tags('block', event => {
 		'alloy_forgery:ender_forge_casing_forge_controller'
 	])
 
-	event.add('adj:alloy_forge_casing', [
+	tags.add('adj:alloy_forge_casing', [
 		/adj\:.*casing/
 	])
 
-	event.remove('minecraft:mineable/axe', [
+	tags.remove('minecraft:mineable/axe', [
 		/grass/,
 		/fern/
 	])
@@ -329,61 +336,52 @@ ServerEvents.tags('block', event => {
 // 
 // Entity type tags
 // 
-ServerEvents.tags('entity_type', event => {
+ServerEvents.tags('entity_type', tags => {
 })
 
 // 
 // Damage type tags
 // 
-ServerEvents.tags('damage_type', event => {
-	event.add('adjcore:bypasses_cooldown', [
+ServerEvents.tags('damage_type', tags => {
+	tags.add('adjcore:bypasses_cooldown', [
 		'botania:relic_damage',
 		'botania:player_attack_armor_piercing',
 		'botania:key_explosion',
 		'ars_nouveau:spell',
 	])
 
-	event.remove('adjcore:bypasses_cooldown', [
+	tags.remove('adjcore:bypasses_cooldown', [
 		/cataclysm/
 	])
 
-	event.add('adjcore:dot', [
+	tags.add('adjcore:dot', [
 		'majruszsdifficulty:bleeding',
 		'ars_elemental:poison',
 		'ars_elemental:hellfire'
 	])
 
-	event.add('adj:magic', [
+	tags.add('adj:magic', [
 		'ars_nouveau:spell',
 		'ars_nouveau:crush',
 		'#minecraft:witch_resistant_to'
 	])
-	// event.add('dummmmmmy:is_cold', [
-	// 	'ars_nouveau:frost',
-	// 	'aether:ice_crystal'
-	// ])
-	// event.add('dummmmmmy:is_explosion', [
-	// 	'supplementaries:bomb_explosion'
-	// ])
-	// event.add('dummmmmmy:is_fire', [
-	// 	'ars_nouveau:flare',
-	// 	'ars_elemental:hellfire',
-	// 	'aether:fire_crystal'
-	// ])
-	// event.add('dummmmmmy:is_thorn', [
-	// 	'ars_elemental:poison'
-	// ])
-	// event.add('dummmmmmy:is_wither', [
-	// 	'attributeslib:current_hp_damage'
-	// ])
 })
 
 // 
 // Structure tags
 // 
-ServerEvents.tags('worldgen/structure', event => {
-	event.remove('quark:soul_bead_target', [
+ServerEvents.tags('worldgen/structure', tags => {
+	tags.remove('quark:soul_bead_target', [
 		'minecraft:fortress',
 		'betterfortresses:fortress'
+	])
+})
+
+// Fluid tags
+ServerEvents.tags('fluid', tags => {
+	tags.add('create:bottomless/allow', [
+		'the_bumblezone:sugar_water_still',
+		'the_bumblezone:honey_fluid_still',
+		'netherexp:ectoplasm'
 	])
 })

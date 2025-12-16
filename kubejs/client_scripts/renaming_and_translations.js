@@ -119,7 +119,13 @@ ClientEvents.lang('en_us', event => {
 		'functionalstorage:void_upgrade': 'Drawer Upgrade (Void)',
 		'functionalstorage:redstone_upgrade': 'Drawer Upgrade (Redstone)',
 
-		'confluence:demon_heart': 'Aerwhale King\'s Heart'
+		'confluence:demon_heart': 'Aerwhale King\'s Heart',
+		'immersive_paintings:painting': 'Magic Painting',
+		'tiab:time_in_a_bottle': 'Time In a Bottle'
+	}
+
+	const entityRenames = {
+		'immersive_paintings:painting': 'Magic Painting',
 	}
 
 	for (const [key, value] of Object.entries(extraTranslations)) {
@@ -132,6 +138,10 @@ ClientEvents.lang('en_us', event => {
 
 	for (const [key, value] of Object.entries(itemRenames)) {
 		event.renameItem(key, value);
+	}
+
+	for (const [key, value] of Object.entries(entityRenames)) {
+		event.renameEntity(key, value)
 	}
 
 	global.rediscoveredFurniture.forEach(item => {

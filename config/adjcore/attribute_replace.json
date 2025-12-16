@@ -57,6 +57,16 @@
 			"add": [
 				"attributeslib:crit_chance;0;0.1;MAINHAND"
 			]
+		},
+		"alexscaves:raygun": {
+			"add": [
+				"attributeslib:armor_pierce;0;30;MAINHAND"
+			]
+		},
+		"the_bumblezone:flower_headwear": {
+			"remove": [
+				"minecraft:generic.armor"
+			]
 		}
 	}
 }

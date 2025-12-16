@@ -1,11 +1,11 @@
 
 [Prices]
 	#Set the comfort value boundaries to be -maxComfortRange to maxComfortRange. Allows for more precise customizability! Impact on price is linear between 0 and maxComfortRange
-	maxComfortRange = 800
+	maxComfortRange = 1000
 	#Min percentage of original price that an item can be reduced to. For example, a value of 70 means items can at most be reduced to 70% of their original price. A value of 0 means all items can reach 1 emerald in price. A value of 100 means items cannot go down in price. Only positive comfort values reduce item prices, and maxium comfort means lowest prices! :D
-	minComfortPriceReduction = 60
+	minComfortPriceReduction = 70
 	#Max percentage of original price that an item can go up in price. For example, a value of 0 means items cannot go up in price, and a value of 100 means items can at most double in price. 200 means tripling, etc.
-	maxComfortPriceIncrease = 150
+	maxComfortPriceIncrease = 200
 
 ["Bedroom comfort values"]
 	#Various parameters relative to how comfortable a villager's bedroom is. A bedroom is defined by the room centered around a villager's last-slept-in bed, with a max radius of maxBedroomRadius.

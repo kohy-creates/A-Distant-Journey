@@ -21,7 +21,7 @@ StartupEvents.init(event => {
 		false,
 		$LivingHurtEvent,
 		/**
-		 * @param {Internal.LivingHurtEvent_} event
+		 * @param {$LivingHurtEvent_} event
 		 */
 		event => {
 			const source = event.getSource()

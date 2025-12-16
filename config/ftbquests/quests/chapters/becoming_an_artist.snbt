@@ -1,5 +1,5 @@
 {
-	autofocus_id: "4BECD0660111B4AC"
+	autofocus_id: "3DFCD3D89661B5AF"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "becoming_an_artist"
@@ -37,7 +37,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["026E22A534C341CC"]
+			dependencies: ["3DFCD3D89661B5AF"]
 			description: ["&7&lHINT:&r You can insert and take out Film Rolls by &eright-clicking your Camera in your Inventory&r!"]
 			icon: "exposure:camera"
 			id: "3A017BDC7B799F5B"
@@ -68,7 +68,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["026E22A534C341CC"]
+			dependencies: ["3DFCD3D89661B5AF"]
 			description: [""]
 			icon: "xercapaint:item_palette"
 			id: "4BECD0660111B4AC"
@@ -92,7 +92,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["026E22A534C341CC"]
+			dependencies: ["3DFCD3D89661B5AF"]
 			icon: "minecraft:music_disc_blocks"
 			id: "74568A8CB40BC9F8"
 			shape: "diamond"
@@ -223,7 +223,7 @@
 				item: "exposure:album"
 				type: "item"
 			}]
-			title: "A Collection of Memories"
+			title: "A House of Memories"
 			x: -9.0d
 			y: -1.0d
 		}
@@ -309,7 +309,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["026E22A534C341CC"]
+			dependencies: ["3DFCD3D89661B5AF"]
 			description: ["&7&lHINT:&r Writable Books can be dyed, just like Leather Armor!"]
 			icon: "minecraft:writable_book"
 			id: "1B705CEC3EFEB501"
@@ -322,8 +322,8 @@
 				type: "item"
 			}]
 			title: "Fan Fiction"
-			x: -2.0d
-			y: -1.0d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1B705CEC3EFEB501"]
@@ -339,9 +339,169 @@
 				type: "item"
 			}]
 			title: "Bestseller Author"
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4BECD0660111B4AC"]
+			id: "5F271343FFAAE7C8"
+			subtitle: "Craft a Magic Painting, which allows you to set an image from a URL"
+			tasks: [{
+				id: "338AA0C84FACA413"
+				item: "immersive_paintings:painting"
+				type: "item"
+			}]
+			title: "'Artist'"
 			x: -2.0d
-			y: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F271343FFAAE7C8"]
+			id: "0216A9D6EED05EDB"
+			subtitle: "Craft Grafitti, which roughly works the same way"
+			tasks: [{
+				id: "6AEC25A1857F877B"
+				item: "immersive_paintings:graffiti"
+				type: "item"
+			}]
+			title: "Subway Surfers"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3DFCD3D89661B5AF"]
+			description: ["&7&lHINT:&r Vanity items provide no boosts to stats. But what if you wanted to wear a vanity armor set? Look into the next achievement!"]
+			icon: "etcetera:white_sweater"
+			id: "079C23A4EAF805B1"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Obtain any vanity item"
+			tasks: [{
+				id: "22F9E1BAA94FA9E3"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:vanity"
+					}
+				}
+				title: "Any Vanity Item"
+				type: "item"
+			}]
+			title: "The Act of Role Playing"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["079C23A4EAF805B1"]
+			description: ["&7&lHINT:&r Read the item summary ;)"]
+			icon: "transmog:transmogrification_table"
+			id: "2BE780A67DACFE27"
+			subtitle: "Craft a Transmogrification Table and a Void Fragment"
+			tasks: [
+				{
+					id: "44A9CFC2C9A98E81"
+					item: "transmog:transmogrification_table"
+					type: "item"
+				}
+				{
+					id: "22AE3CD17996758C"
+					item: "transmog:void_fragment"
+					type: "item"
+				}
+			]
+			title: "If I Wanted a Glow Up I'd Pay For It!"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3DFCD3D89661B5AF"]
+			description: [""]
+			icon: "fnaf_plushie_remastered:sewing_table"
+			id: "7E4B8BBFB0884187"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Craft an Easel and a Palette"
+			tasks: [{
+				id: "6B95F62D86C81048"
+				item: "fnaf_plushie_remastered:sewing_table"
+				type: "item"
+			}]
+			title: "100th Plush Market"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"&6&lADJ&r is all about creating!"
+				""
+				"It doesn't stick hard to the plot it sets, leaving it up to &o&dyou&r to write your own stories and canons!"
+				""
+				"You have plethora of tools to express &dyourself&r, &dyour ideas&r in your creations. This achievement chapter is a short showcase of what you can do!"
+			]
+			id: "3DFCD3D89661B5AF"
+			subtitle: "&oRequires 'Benchmarking'"
+			tasks: [{
+				id: "6F326C3202DA415C"
+				title: "Click to complete"
+				type: "checkmark"
+			}]
+			title: "&lClick to read"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7E4B8BBFB0884187"]
+			id: "5B8BE1C0DADD5B73"
+			subtitle: "Make a famously soft IKEA shark"
+			tasks: [{
+				id: "228D46D772D68069"
+				item: "just_blahaj:blahaj"
+				type: "item"
+			}]
+			title: "Blahaj Soft! Must Hug!"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7E4B8BBFB0884187"]
+			id: "5C51858776F08873"
+			subtitle: "Trade with the Plushie Maker Villager and buy an oddly familiar plush from a game I don't remember the name of..."
+			tasks: [{
+				id: "23F32F9F74F28B6C"
+				item: "fnaf_plushie_remastered:foxy_bully_plush"
+				type: "item"
+			}]
+			title: "They Always Come Back"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5B8BE1C0DADD5B73"]
+			id: "1782F792B27F2C54"
+			subtitle: "Craft any of the special Blahaj variants"
+			tasks: [{
+				id: "073742CD53C3F92B"
+				item: "just_blahaj:panhaj"
+				type: "item"
+			}]
+			title: "You Are Free! Free to Express Yourself!"
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5B8BE1C0DADD5B73"]
+			id: "0B5DF52BF17E071A"
+			subtitle: "Dye your Blahaj any color"
+			tasks: [{
+				id: "56365F7F660BE24B"
+				item: "just_blahaj:red_blahaj"
+				type: "item"
+			}]
+			title: "Colormatic!"
+			x: -0.5d
+			y: -5.5d
 		}
 	]
-	title: "Becoming an Artist"
+	title: "The World is My Canvas!"
 }

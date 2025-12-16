@@ -13,22 +13,22 @@
 		#Specifies the invulnerability time when the Wither Storm has been summoned, in seconds. When invulnerable, the Wither Storm doesn't move and can't be attacked.
 		#Default: 50
 		#Range: 1 ~ 320
-		invulnerabilityTime = 120
+		invulnerabilityTime = 40
 		#Specifies the height the Wither Storm will fly at during phase 4 and up.
 		#Default: 75
 		#Range: 10 ~ 150
-		flyingHeight = 75
+		flyingHeight = 85
 		#Makes the Wither Storm randomly adjust it's flying height itself between 40 and 80.
 		#Default: false
 		dynamicFlyingHeight = true
 		#The time (in seconds) that the Wither Storm should take before adjusting it's dynamic flying height.
 		#Default: 60
 		#Range: 15 ~ 1200
-		dynamicFlyingHeightTime = 60
+		dynamicFlyingHeightTime = 40
 		#If the Wither Storm's ultimate target has a command block tool and the Wither Storm is at phase 7, a timer specified by this value (in minutes) + random will countdown until the hole will automatically appear.
 		#Default: 6
 		#Range: 1 ~ 30
-		tillShouldShowHole = 3
+		tillShouldShowHole = 1
 		#Specifies if the bowels entrance hole in the Wither Storm's mass at the end of phase 7 should be available or not.
 		#Default: true
 		shouldShowHole = true
@@ -75,7 +75,7 @@
 		constantBlackhole = false
 		#Specifies if a Wither Storm head should immediately kill the player upon biting them. Does not apply to heads inside the bowels.
 		#Default: false
-		instantChomp = false
+		instantChomp = true
 		#Specifies if the Wither Storm should heal whenever it eats a mob (determined by half the mob's max health).
 		#Default: false
 		healFromChomp = false
@@ -85,7 +85,7 @@
 		#Specifies the targeting type the Wither Storm should use to determine it's ultimate target.
 		#Default: NEAREST
 		#Allowed Values: NEAREST, FARTHEST, GROUP, NONE, RANDOM_STROLL, RANDOM_PLAYER, RANDOMIZED, RANDOM_STROLL_NEAR_PLAYER
-		ultimateTargetingType = "NEAREST"
+		ultimateTargetingType = "GROUP"
 		#Makes the Wither Storm target the player that was farthest from it while using FARTHEST targeting for the configured amount of time (in minutes).
 		#Default: 15
 		#Range: 1 ~ 60
@@ -174,11 +174,11 @@
 			#Distractions will not occur if the Wither Storm's ultimate target is outside the radius determined by this value + its target range. Although, if the ultimate target is inside the radius, but then leaves, a distraction can then later occur.
 			#Default: 1000
 			#Range: 100 ~ 3000
-			maximumDistractionDistance = 1000
+			maximumDistractionDistance = 2000
 			#Distractions will not occur IMMEDIATELY if the Wither Storm's ultimate target is INSIDE the radius determined by this value + its target range. If the target is inside this radius, the Wither Storm will wait before becoming distracted, to see if the target is outside the radius. If not, a distraction will not occur. Set to 0 to disable.
 			#Default: 50
 			#Range: 10 ~ 500
-			minimumDistractionDistance = 50
+			minimumDistractionDistance = 75
 			#Distractions may or may not occur if the conditions are met/unmet based off of a random chance. Toggle to enable/disable.
 			#Default: true
 			randomDistractionChances = true
@@ -222,7 +222,7 @@
 		#The targeting invulnerability time in seconds players who escape from a Wither Storm after injuring a head get.
 		#Default: 40
 		#Range: 0 ~ 60
-		headEscapeTime = 60
+		headEscapeTime = 30
 		#Modifies the tractor beam pull speed, higher = faster.
 		#Default: 0.2
 		#Range: 0.1 ~ 1.0
@@ -255,7 +255,7 @@
 		#Requires restart.
 		#Default: 12
 		#Range: 6 ~ 32
-		chunkLoadingRadius = 12
+		chunkLoadingRadius = 10
 		#Specifies if junk items near the Wither Storm should be immediately destroyed. NOTE: Disabling will cause massive server side and potential FPS lag!.
 		#Default: true
 		removeNearbyJunk = true
@@ -293,11 +293,11 @@
 		#Modifies the Wither Storm's block cluster pull speed by multiplying the default speed with this value.
 		#Default: 1.0
 		#Range: 0.1 ~ 10.0
-		blockClusterPullSpeedModifier = 1.0
+		blockClusterPullSpeedModifier = 1.25
 		#Multiplies the speed of block clusters being pulled in by a Wither Storm's tractor beam by this value.
 		#Default: 1.0
 		#Range: 0.1 ~ 10.0
-		tractorBeamClusterSpeedModifier = 1.0
+		tractorBeamClusterSpeedModifier = 1.25
 		#How far the tractor beams should search for distraction blocks, NOTE: High values may cause lag.
 		#Default: 10
 		#Range: 4 ~ 256
@@ -324,7 +324,7 @@
 		#Higher values makes cave rumbles more 'intense,' and makes more dripstone and glowberries fall.
 		#Default: 0.25
 		#Range: 0.0 ~ 1.0
-		caveRumbleIntensity = 0.25
+		caveRumbleIntensity = 0.3
 		#Specifies if a random chance for extended cave rumbles to occur should be possible.
 		#Default: true
 		chanceForExtendedRumbles = true
@@ -460,7 +460,7 @@
 		canSummonSymbiont = true
 		#Specifies if the Withered Symbiont is hostile towards other mobs (This is only applied to Symbionts spawned after this change is applied).
 		#Default: false
-		shouldSymbiontAttackMobs = false
+		shouldSymbiontAttackMobs = true
 		#Specifies the minimum interval (+random) in seconds that the Wither Storm should check for Withered Symbiont spawn conditions.
 		#Default: 60
 		#Range: 1 ~ 240
@@ -468,40 +468,40 @@
 		#Specifies the delay in minutes (+random) that the Wither Storm will be able to summon a Withered Symbiont.
 		#Default: 10
 		#Range: 1 ~ 20
-		witherStormSummoningDelay = 10
+		witherStormSummoningDelay = 8
 		#Specifies the time in minutes (+random) that the players who killed a Withered Symbiont should be ignored by the Wither Storm for.
 		#Default: 5
 		#Range: 1 ~ 10
-		playerInvulnerableTime = 10
+		playerInvulnerableTime = 5
 		#Specifies the delay in minutes (+random) that the Wither Storm should be able summon a Withered Symbiont for the player it summoned one for.
 		#Default: 10
 		#Range: 1 ~ 60
-		playerSummoningDelay = 10
+		playerSummoningDelay = 8
 		#If a player kills a Withered Symbiont, their sumoning delay will be increased to this value in minutes (+random).
 		#Default: 40
 		#Range: 1 ~ 60
-		playerSummoningDelayOnKill = 30
+		playerSummoningDelayOnKill = 25
 		#Specifies if the Withered Symbiont can be attacked from behind if it's not vulnerable.
 		#Default: false
 		attackableWhenNotVulnerable = false
 		#If multiple players are near the Withered Symbiont, the command block book will automatically drop into the inventory of the player the Symbiont was spawned for, if they are nearby and have inventory space.
 		#Default: true
-		bookDropsInInventory = true
+		bookDropsInInventory = false
 		#Adds this value multiplied by the amount of nearby players to the Symbiont's max health when it is spawned. Set to zero to disable this feature.
 		#Default: 20.0
 		#Range: 0.0 ~ 100.0
-		healthScalePerPlayer = 100.0
+		healthScalePerPlayer = 0.0
 
 	#Flaming Skulls
 	[server.flaming_skulls]
 		#The flaming skull explosion size when they collide with blocks.
 		#Default: 5.0
 		#Range: 1.0 ~ 16.0
-		flamingSkullExplosionSize = 4.0
+		flamingSkullExplosionSize = 5.2
 		#The speed modifier for flaming wither skulls. Higher = faster.
 		#Default: 1.0
 		#Range: 0.5 ~ 8.0
-		flamingSkullSpeedModifier = 0.75
+		flamingSkullSpeedModifier = 1.3334
 
 	#Roaring
 	[server.roaring]

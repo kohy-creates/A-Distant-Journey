@@ -16,7 +16,7 @@
 [mobs]
 	#The max height that Nautilus can spawn at
 	#Range: -64 ~ 320
-	"Nautilus max spawn height" = 30
+	"Nautilus max spawn height" = 50
 
 	[mobs.thrasher]
 		#The max height that Thrashers can spawn at
@@ -24,10 +24,10 @@
 		"Thrasher max spawn height" = 30
 		#The chance of a Thrasher spawning during the daytime
 		#Range: 0.0 ~ 1.0
-		"Thrasher daytime spawn chance" = 0.75
+		"Thrasher daytime spawn chance" = 0.4
 		#The chance a Thrasher has of spawning as a Great Thrasher in Deep Frozen Oceans
 		#Range: 0.0 ~ 1.0
-		"Great Thrasher spawn chance" = 0.25
+		"Great Thrasher spawn chance" = 0.15
 
 	[mobs.squid]
 		#If Squids give nearby entities Blindness when releasing ink

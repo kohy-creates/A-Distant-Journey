@@ -48,7 +48,7 @@ StartupEvents.postInit(event => {
 		potterySherds = [],
 		bannerPatterns = [],
 		smithingTemplates = [],
-		potteryPots = {},
+		spawnEggs = [],
 		archwoodLogs = [];
 
 	Item.list.toArray().forEach(item => {
@@ -93,6 +93,10 @@ StartupEvents.postInit(event => {
 			archwoodLogs.push(id);
 			archwoodLogs.sort();
 		}
+		else if (id.includes('spawn_egg')
+			|| id.endsWith('_se')) {
+			spawnEggs.push(id)
+		}
 	});
 
 	// Ordered woodset item structure
@@ -123,10 +127,11 @@ StartupEvents.postInit(event => {
 		'handcrafted:table',
 		'handcrafted:counter',
 		'farmersdelight:cabinet',
+		'alexscavesdelight:cabinet',
 		'twilightdelight:cabinet',
 		'chest',
-		// 'trapped_chest',
 		'quark:chest',
+		// 'trapped_chest',
 		// 'quark:trapped_chest',
 		'handcrafted:fancy_bed',
 		'stairs',
@@ -142,6 +147,7 @@ StartupEvents.postInit(event => {
 		'fence_gate',
 		'door',
 		'trapdoor',
+		'ladder',
 		'quark:ladder',
 		'hearth_and_home:lattice',
 		'pressure_plate',
@@ -150,9 +156,9 @@ StartupEvents.postInit(event => {
 		'supplementaries:sign_post',
 		'hanging_sign',
 		'boat',
-		'chest_boat',
+		// 'chest_boat',
 		'raft',
-		'chest_raft'
+		// 'chest_raft'
 	];
 
 	// Woodset appearance order
@@ -176,6 +182,7 @@ StartupEvents.postInit(event => {
 		'botania:mossy_dreamwood',
 		'botania:shimmerwood',
 		'ars_nouveau:archwood',
+		'evilcraft:undead',
 		'minecraft:mushroom',
 		'enhanced_mushrooms:mushroom',
 		'quark:azalea',
@@ -255,6 +262,7 @@ StartupEvents.postInit(event => {
 	addOneAfterAnother(potterySherds, 'minecraft:decorated_pot')
 	addOneAfterAnother(bannerPatterns, 'minecraft:loom')
 	addOneAfterAnother(smithingTemplates, 'minecraft:smithing_table')
+	addOneAfterAnother(spawnEggs, 'minecraft:spawner')
 
 	candles.forEach(candle => {
 		if (candle === 'minecraft:candle') {
@@ -373,7 +381,7 @@ StartupEvents.postInit(event => {
 			if (furnitureType.includes(':')) {
 				let [ns, path] = furnitureType.split(':');
 
-				// ✅ If the entry already includes the actual wood type name (after _X_ replacement),
+				// If the entry already includes the actual wood type name (after _X_ replacement),
 				// we should try that exact string first
 				if (path.includes(typeName)) {
 					itemID = `${ns}:${path}`;
@@ -419,6 +427,8 @@ StartupEvents.postInit(event => {
 		}
 	}
 
+
+
 	// const colorOrder = [
 	// 	'white',
 	// 	'light_gray',
@@ -437,7 +447,6 @@ StartupEvents.postInit(event => {
 	// 	'magenta',
 	// 	'pink',
 	// ]
-
 
 	// colorOrder.forEach(color => {
 

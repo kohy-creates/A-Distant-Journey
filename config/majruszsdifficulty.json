@@ -793,24 +793,24 @@
       ]
     },
     "evoker_fang_scroll": {
-      "attack_damage": 14,
+      "attack_damage": 30,
       "attack_range": {
         "min": 8,
         "max": 22
       }
     },
     "sonic_boom_scroll": {
-      "attack_damage": 18,
+      "attack_damage": 100,
       "attack_range": {
-        "min": 12,
-        "max": 20
+        "min": 10,
+        "max": 24
       }
     },
     "wither_sword": {
       "effect": {
         "id": "minecraft:wither",
-        "amplifier": 2,
-        "duration": 8.0
+        "amplifier": 1,
+        "duration": 9.0
       }
     }
   },

@@ -64,8 +64,8 @@ function onWSPhaseChange(newPhase, server) {
 			text.push('R u n   w h i l e   i t \' s   s t i l l   r e g a i n i n g   s t r e n g t h');
 			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 2.5')
 			if (server.isHardcore()) {
-				let slowSpeed = global.WitherStormFlyingSpeed * 1.25;
-				let fastSpeed = global.WitherStormFlyingSpeed * 2.5;
+				let slowSpeed = global.WitherStormFlyingSpeed * 1.3;
+				let fastSpeed = global.WitherStormFlyingSpeed * 3.0;
 				server.runCommandSilent(`/attribute @w witherstormmod:slow_flying_speed base set ${slowSpeed}`)
 				server.runCommandSilent(`/attribute @w witherstormmod:target_stationary_flying_speed base set ${fastSpeed}`)
 				server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 1.75')

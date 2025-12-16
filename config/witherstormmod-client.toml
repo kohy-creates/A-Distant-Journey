@@ -100,7 +100,7 @@
 	[client.performance]
 		#Setting this value to false will disable the debris cloud when rendering the Wither Storm from large distances.
 		#Default: true
-		renderDistantDebris = true
+		renderDistantDebris = false
 		#Specifies if the low res models should be used when being rendered via the distant renderer.
 		#Default: false
 		witherStormLOD = true

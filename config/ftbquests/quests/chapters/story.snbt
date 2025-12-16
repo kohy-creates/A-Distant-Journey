@@ -1534,24 +1534,70 @@
 			dependencies: ["026E22A534C341CC"]
 			icon: {
 				Count: 1
-				id: "shieldexp:wooden_shield"
+				id: "kubejs:wooden_chestplate"
 				tag: {
 					Damage: 0
 				}
 			}
 			id: "65B45B23ECAC37CA"
-			subtitle: "Craft a Wooden Shield"
-			tasks: [{
-				id: "784D1BB5DF354AE1"
-				item: {
-					Count: 1
-					id: "shieldexp:wooden_shield"
-					tag: {
-						Damage: 0
+			subtitle: "Craft Wooden Armor and a Wooden Shield"
+			tasks: [
+				{
+					id: "784D1BB5DF354AE1"
+					item: {
+						Count: 1
+						id: "shieldexp:wooden_shield"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "5AD4DC5738E97871"
+					item: {
+						Count: 1
+						id: "kubejs:wooden_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1EF5DD0392DC0074"
+					item: {
+						Count: 1
+						id: "kubejs:wooden_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46D7DCD5C4DEC5AF"
+					item: {
+						Count: 1
+						id: "kubejs:wooden_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07E7A29EAC2D3249"
+					item: {
+						Count: 1
+						id: "kubejs:wooden_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "Not Today, Thank You!"
 			x: 4.0d
 			y: 1.5d
@@ -2195,7 +2241,7 @@
 			id: "2ED660D1CBFA01C4"
 			shape: "diamond"
 			size: 1.5d
-			subtitle: "Pour time into an Empty Bottle"
+			subtitle: "...and money is everything. Pour time into an Empty Bottle"
 			tasks: [{
 				id: "1BA63E9F989F5C78"
 				item: {
@@ -2205,7 +2251,7 @@
 				}
 				type: "item"
 			}]
-			title: "Time is Money"
+			title: "Time is Money..."
 			x: 27.0d
 			y: 24.0d
 		}

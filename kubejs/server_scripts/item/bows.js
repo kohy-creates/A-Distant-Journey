@@ -31,7 +31,7 @@ EntityEvents.spawned(event => {
 			arrowEntity.persistentData.arrowDamage = arrowDamage;
 			arrowEntity.persistentData.bowDamage = bowDamage;
 
-			arrowEntity.setBaseDamage(global.arrowInternalDamageOverride[arrowEntity.type] || 0);
+			arrowEntity.setBaseDamage(0);
 		}
 		// Disable crit arrows cause the particles are ugly
 		// I handle crits through AttributesLib anyway

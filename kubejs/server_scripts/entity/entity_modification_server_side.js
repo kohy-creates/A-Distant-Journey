@@ -122,7 +122,7 @@ function setGear(entity, isHardcore) {
 				'minecraft:golden_sword': 8,
 				'mcdw:crossbow_pride_of_the_piglins': 8,
 				'minecraft:golden_axe': 4,
-				'minecraft:golden_pickaxe': 4,
+				// 'minecraft:golden_pickaxe': 4,
 			}))
 			break;
 		}

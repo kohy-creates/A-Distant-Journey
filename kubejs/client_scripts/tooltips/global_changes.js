@@ -82,7 +82,11 @@ ItemEvents.tooltip(event => {
 		'born_in_chaos_v1:dark_metal_armor_helmet',
 		'born_in_chaos_v1:dark_metal_armor_chestplate',
 		'born_in_chaos_v1:dark_metal_armor_leggings',
-		'born_in_chaos_v1:dark_metal_armor_boots'
+		'born_in_chaos_v1:dark_metal_armor_boots',
+		'born_in_chaos_v1:nightmare_mantleofthe_night_helmet',
+		'born_in_chaos_v1:nightmare_mantleofthe_night_chestplate',
+		'born_in_chaos_v1:nightmare_mantleofthe_night_leggings',
+		'born_in_chaos_v1:nightmare_mantleofthe_night_boots'
 	]
 	//priority:-100
 	event.addAdvancedToAll((item, advanced, text) => {
@@ -296,9 +300,11 @@ ItemEvents.tooltip(event => {
 
 		if ((!exception || chapter != exception) && !currentPlayer.stages.has(chapter)) {
 
+			let itemName = text.get(0);
+
 			text.clear()
 
-			text.add(0, Text.darkGray('Unknown Item'))
+			text.add(0, itemName)
 			text.add(1, Text.darkGray('Unlocked in Chapter ' + chapter.replace('chapter_', '')))
 
 			if (advanced && global.developerMode) {
@@ -773,7 +779,60 @@ ItemEvents.tooltip(event => {
 		{
 			items: /mcdw:soul_dagger/,
 			text: 'Attacks temporarily boost mana regeneration'
-		}
+		},
+
+		// Alex's Caves
+
+		{ items: "alexscaves:ominous_catalyst", text: "Can be used to awaken the Luxtructosaurus in the core of a volcano" },
+		{ items: "alexscaves:remote_detonator", text: "Used to ignite TNT or Nuclear Bombs from any distance" },
+		{ items: "alexscaves:guano", text: "Throwable feces" },
+		{ items: "alexscaves:fertilizer", text: "Stronger Bone Meal" },
+		{ items: "alexscaves:vanilla_ice_cream_scoop", text: "A basic, yet tasty, snowball" },
+		{ items: "alexscaves:strawberry_ice_cream_scoop", text: "A berry good snowball" },
+		{ items: "alexscaves:sharpened_candy_cane", text: "A dangerous food and a sweet weapon" },
+		{ items: "alexscaves:peppermint_powder", text: "Crushed, minty sugar" },
+		{ items: "alexscaves:sack_of_sating", text: "Craves food now, to feed you later" },
+		{ items: "alexscaves:block_of_azure_neodymium", text: "Repulsive to metals" },
+		{ items: "alexscaves:block_of_scarlet_neodymium", text: "Attractive to metals" },
+		{ items: "alexscaves:hologram_projector", text: "Can display holograms of any mob when combined with a bound holocoder. Hologram will rotate with redstone" },
+		{ items: "alexscaves:magnetic_levitation_rail", text: "Lifts and accellerates minecarts above the rail" },
+		{ items: "alexscaves:metal_swarf", text: "A ferrous sand which has reactive properties to magnetism" },
+		{ items: "alexscaves:cooked_dinosaur_chop", text: "Can be made into dinosaur nuggets!" },
+		{ items: "alexscaves:flytrap", text: "Natively venusian" },
+		{ items: "alexscaves:volcanic_core", text: "The catalyst for mass extinction" },
+		{ items: "alexscaves:nuclear_bomb", text: "Now I am become Death, the destroyer of worlds" },
+		{ items: "alexscaves:radrock", text: "An irradiated variant of stone, seems to almost pulsate at a touch" },
+		{ items: "alexscaves:acidic_radrock", text: "A particularly irradiated variant of stone, can cause Sulfur Buds to form and grow on Sulfur blocks if placed above one" },
+		{ items: "alexscaves:radrock_uranium_ore", text: "The primary source of uranium. Volatile, it seems to hum when close" },
+		{ items: "alexscaves:siren_light", text: "Dyeable light-emitting blocks that can be crafted using Bottles of Radon. Must be clicked with dye to change color" },
+		{ items: "alexscaves:sulfur", text: "A yellow crystalline substance which drops sulfur dust. Can be grown by the droplets of acidic radrock" },
+		{ items: "alexscaves:tremorzilla_egg", text: "A large neon egg made of the remains of other legendary monsters. Hatched by detonation" },
+		{ items: "alexscaves:underweed", text: "A puny, yet hardy plant" },
+		{ items: "alexscaves:unrefined_waste", text: "Disturbingly intact, yet sludgy. Used to craft waste drums or smelted into uranium shards. Made with toxic paste" },
+		{ items: "alexscaves:uranium_rod", text: "Fuel for nuclear furnaces and surprisingly good at containing radioactivity. Used to reload rayguns!" },
+		{ items: "alexscaves:waste_drum", text: "Favored by brainiacs, can be used to tame tremorzillas. Highly explosive. A byproduct of nuclear furnaces" },
+		{ items: "alexscaves:abyssal_altar", text: "Used to trade with the Deep Ones. Pearls and Hearts of the Sea tend to attract their attention" },
+		{ items: "alexscaves:bone_worms", text: "Wriggling organisms which feed on the carcasses of old" },
+		{ items: "alexscaves:bioluminecent_torch", text: "Can be placed underwater" },
+		{ items: "alexscaves:copper_valve", text: "Something of a delayed lever" },
+		{ items: "alexscaves:depth_glass", text: "Raise visibility while looked through underwater" },
+		{ items: "alexscaves:ping_pong_sponge", text: "Can be combined with bioluminesscence to make floaters" },
+		{ items: "alexscaves:tube_worm", text: "Requires silk touch to harvest. Watch for the pokers under water, they're friendly!" },
+		{ items: "alexscaves:beholder", text: "A block that allows players to see through it using an Occult Gem" },
+		{ items: "alexscaves:porous_coprolith", text: "An uncomfortably trypophobic cluster" },
+		{ items: "alexscaves:peering_coprolith", text: "Those aren't bats." },
+		{ items: "alexscaves:forlorn_idol", text: "A totem to a thankless being" },
+		{ items: "alexscaves:block_of_frosting", text: "Sickly sweet!" },
+		{ items: "alexscaves:cake_layer", text: "A little springy!" },
+		{ items: "alexscaves:sprinkles", text: "Colorful!" },
+		{ items: "alexscaves:giant_sweetberry", text: "Can be used to top cakes or sundaes" },
+		{ items: "alexscaves:frostmint", text: "Forms like icicles, and reacts explosively to purple soda" },
+		{ items: "alexscaves:gummy_ring_red", text: "A ring of red gelatin" },
+		{ items: "alexscaves:gummy_ring_green", text: "A ring of green gelatin" },
+		{ items: "alexscaves:gummy_ring_yellow", text: "A ring of yellow gelatin" },
+		{ items: "alexscaves:gummy_ring_blue", text: "A ring of blue gelatin" },
+		{ items: "alexscaves:gummy_ring_pink", text: "A ring of pink gelatin" },
+		{ items: "alexscaves:sundrop", text: "Luminous globs that, when near other sundrops, will form rainbows!" },
 	];
 
 	for (const entry of TIP_CONFIG) {

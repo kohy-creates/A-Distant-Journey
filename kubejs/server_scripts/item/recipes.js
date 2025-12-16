@@ -197,7 +197,11 @@ ServerEvents.recipes((event) => {
 		'quark:tools/crafting/torch_arrow',
 		'tide:deep_aqua_arrow',
 
-		'create:crafting/kinetics/super_glue'
+		'create:crafting/kinetics/super_glue',
+		'createutilities:mixing/void_steel_ingot',
+
+		/nameless_trinkets/,
+		/create:crushing\/raw_.*/,
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -225,12 +229,6 @@ ServerEvents.recipes((event) => {
 			C: 'minecraft:crying_obsidian'
 		}
 	).id('adj:enchanting_table')
-
-	event.replaceInput(
-		{ input: 'minecraft:stick' },
-		'minecraft:stick',
-		'#c:rods/wooden'
-	)
 
 	// Recovery compass has Soulbound on by default
 	event.shaped(
@@ -770,13 +768,6 @@ ServerEvents.recipes((event) => {
 		}
 	).id('minecraft:bundle')
 
-	// Clocks can be replaced with Platinum Watches
-	event.replaceInput(
-		{ input: 'minecraft:clock' },
-		'minecraft:clock',
-		'#adj:clock'
-	)
-
 	// Lychee
 	// Item in block
 	/**
@@ -1112,22 +1103,7 @@ ServerEvents.recipes((event) => {
 		}
 	).id('adj:brass_chunk_loader')
 
-	event.replaceInput({ input: 'mcdw:item_bee_stinger' },
-		'mcdw:item_bee_stinger',
-		'the_bumblezone:bee_stinger'
-	)
-
 	// Unify ropes
-	event.replaceInput(
-		{ output: 'farmersdelight:rope' },
-		'farmersdelight:rope',
-		'supplementaries:rope'
-	)
-	event.replaceOutput(
-		{ output: 'farmersdelight:rope' },
-		'farmersdelight:rope',
-		'supplementaries:rope'
-	)
 	event.shaped(
 		Item.of('farmersdelight:safety_net'),
 		[
@@ -1149,6 +1125,43 @@ ServerEvents.recipes((event) => {
 			F: 'supplementaries:flax'
 		}
 	).id('adj:rope')
+
+
+	// Unification map
+	const unificationMap = {
+		input: {
+			'farmersdelight:wheat_dough': 'create:dough',
+			'#forge:dough/wheat': 'create:dough',
+			'minecraft:chest': '#c:chests/wooden',
+			'minecraft:shield': 'shieldexp:iron_shield',
+			'#c:ender_pearls': 'ender_pearl',
+			'create:copper_nugget': 'mythicmetals:copper_nugget',
+			'minecraft:stick': '#c:rods/wooden',
+			'minecraft:clock': '#adj:clock',
+			'farmersdelight:rope': 'supplementaries:rope',
+			'mcdw:item_bee_stinger': 'the_bumblezone:bee_stinger',
+		},
+		output: {
+			'create:crushed_raw_iron': 'raw_iron',
+			'create:crushed_gold_iron': 'raw_gold',
+			'create:crushed_raw_copper': 'raw_copper',
+			'farmersdelight:wheat_dough': 'create:dough',
+			'create:copper_nugget': 'mythicmetals:copper_nugget',
+			'farmersdelight:rope': 'supplementaries:rope',
+		}
+	}
+	for (const [input, replacement] of Object.entries(unificationMap.input)) {
+		event.replaceInput({ input: input },
+			input,
+			replacement
+		)
+	}
+	for (const [output, replacement] of Object.entries(unificationMap.output)) {
+		event.replaceInput({ output: output },
+			output,
+			replacement
+		)
+	}
 
 	// Unify Silver
 	alloyForgeRecipe(
@@ -1175,35 +1188,11 @@ ServerEvents.recipes((event) => {
 		]
 	)
 
-	// Unify Wheat Dough
-	event.replaceOutput({ output: 'farmersdelight:wheat_dough' },
-		'farmersdelight:wheat_dough',
-		'create:dough'
-	)
-	event.replaceInput({ input: 'farmersdelight:wheat_dough' },
-		'farmersdelight:wheat_dough',
-		'create:dough'
-	)
-	event.replaceInput({ input: '#forge:dough/wheat' },
-		'#forge:dough/wheat',
-		'create:dough'
-	)
-
-	event.replaceInput({ input: 'minecraft:chest' },
-		'minecraft:chest',
-		'#c:chests/wooden'
-	)
-
-	event.replaceInput({ input: 'minecraft:shield' },
-		'minecraft:shield',
-		'shieldexp:iron_shield'
-	)
-
 	// Remove unused MythicMetals recipes
 	event.remove({ input: /manganese/ });
 	event.remove({ input: /quadrillum/ });
 
-	// Unify Honey
+	// Special case - unifying honey
 	event.replaceInput({ input: Fluid.of('create:honey') },
 		Fluid.of('create:honey'),
 		Fluid.of('the_bumblezone:honey_fluid_still')
@@ -1422,11 +1411,9 @@ ServerEvents.recipes((event) => {
 		if (original.id == 'botania:ghost_rail') return;
 		const ingredients = recipe.getOriginalRecipeIngredients()
 		event.remove({ id: recipe.getMod() + ':' + recipe.getPath() });
-		// console.log(original)
-		// console.log(recipe.getPath())
-		// recipe.replaceOutput(original, Item.of(original, original.count * 2));
+
 		event.shaped(
-			Item.of(original, original.count * 2),
+			Item.of(original, Math.max(5, Math.ceil((original.count * 2.5) / 5) * 5)),
 			[
 				'ABC',
 				'DEF',
@@ -1529,11 +1516,6 @@ ServerEvents.recipes((event) => {
 	event.replaceInput({ input: 'minecraft:popped_chorus_fruit', type: 'ars_nouveau:enchanting_apparatus' },
 		"popped_chorus_fruit",
 		"waystones:warp_dust"
-	)
-
-	event.replaceInput({ input: '#c:ender_pearls' },
-		'#c:ender_pearls',
-		'ender_pearl'
 	)
 
 	event.shaped(
@@ -2342,6 +2324,26 @@ ServerEvents.recipes((event) => {
 		5
 	)
 
+	// Void Steel
+	alloyForgeRecipe(
+		[
+			['mythicmetals:steel_ingot', 1],
+			['ender_pearl', 1],
+			['ars_nouveau:source_gem', 2]
+		],
+		['createutilities:void_steel_ingot', 1],
+		1,
+		10,
+		[
+			[
+				'2+', 'output', 2
+			],
+			[
+				'3+', 'output', 3
+			]
+		]
+	)
+
 	// Slightly harder Mythril and Orichalcum
 	alloyForgeRecipe(
 		[
@@ -2501,17 +2503,6 @@ ServerEvents.recipes((event) => {
 	).id('adj:scaffolding')
 
 	// More nuggets from gear
-	// And unification of Copper Nuggets
-
-	event.replaceOutput({ output: 'create:copper_nugget' },
-		'create:copper_nugget',
-		'mythicmetals:copper_nugget'
-	)
-	event.replaceInput({ input: 'create:copper_nugget' },
-		'create:copper_nugget',
-		'mythicmetals:copper_nugget'
-	)
-
 	/**
 	 * @type {Internal.InputItem_[]}
 	 */
@@ -3190,26 +3181,6 @@ ServerEvents.recipes((event) => {
 				S: (ingredients[0].getItemIds().toArray().includes('minecraft:stick')) ? '#c:rods/wooden' : ingredients[0]
 			}
 		).id(`adj:fence_gate/${output.replace(':', '_')}`)
-	})
-
-	event.forEachRecipe({ output: /ladder/, type: 'crafting_shaped' }, recipe => {
-		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
-		const output = recipe.getOriginalRecipeResult().getId();
-
-		event.remove({ id: recipe.getId() })
-
-		event.shaped(
-			Item.of(output, (output == 'quark:iron_ladder') ? 8 : 12),
-			[
-				'S S',
-				'SPS',
-				'S S'
-			],
-			{
-				P: ingredients[4],
-				S: ingredients[0]
-			}
-		).id(`adj:ladder/${output.replace(':', '_')}`)
 	})
 
 	event.forEachRecipe({ output: /ladder/, type: 'crafting_shaped' }, recipe => {

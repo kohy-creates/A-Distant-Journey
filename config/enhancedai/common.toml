@@ -409,9 +409,9 @@
 		#How far away can the mobs see the player. This overrides the vanilla value (16 for most mobs). Setting 'Max' to 0 will leave the follow range as vanilla. Use mods like Mobs Properties Randomness to have more control over the attribute. Only mobs in the entity type tag `enhancedai:mobs/targeting/follow_range_override` will be affected by this override
 		[Mobs.Targeting."Follow range override"]
 			#Range: 0.0 ~ 128.0
-			Minimum = 16.0
+			Minimum = 20.0
 			#Range: 0.0 ~ 128.0
-			Maximum = 32.0
+			Maximum = 40.0
 
 		#How far away can the mobs see the player even through walls. This only works with 'Better Nearby Targeting' enabled. Setting 'Max' to 0 will make mobs not able to see through walls. Use mods like Mobs Properties Randomness to have more control over the attribute; the attribute name is 'enhancedai:xray_follow_range'. Only mobs in the entity type tag `enhancedai:mobs/targeting/apply_xray` will be affected by this override.
 		[Mobs.Targeting."Xray range override"]
@@ -486,7 +486,7 @@
 		#Range: -512 ~ 1024
 		"Max y" = 64
 		#Mobs with Miner AI will not be able to break tile entities
-		"Blacklist tile entities" = false
+		"Blacklist tile entities" = true
 		#Multiplier for the time a mob takes to break blocks. E.g. with this set to 2, mobs will take twice the time to mine a block.
 		#Range: 0.0 ~ 128.0
 		"Time to break multiplier" = 1.25
@@ -671,7 +671,7 @@
 	[Mobs."Air steal"]
 		#How many ticks of air are stolen from entities when attacked by the mob.
 		#Range: 0 ~ 128
-		"Stolen ticks" = 40
+		"Stolen ticks" = 20
 
 	#Allows mobs to call reinforcements (like vanilla zombies can, but better) and have leaders that have a high chance to call reinforcements. Only entity types in the `enhancedai:mobs/leaders` tag can jump. PLEASE NOTE that this feature uses a custom attribute (enhancedai:spawn_reinforcements_chance) instead of the vanilla one. This feature has also an MPR condition `enhancedai:is_leader` to check if the mob is a leader.
 	[Mobs.Leaders]
@@ -688,7 +688,7 @@
 		"Leader spawn reinforcements chance" = 1.0
 		"Reinforces can spawn as leader" = false
 		#If true, leader mobs will have 4x health and +15 armor.
-		"Bonus stats" = true
+		"Bonus stats" = false
 		"Remove vanilla spawn reinforcements chance" = true
 
 	#Makes drowned swim speed based off swim speed attribute instead of movement speed.
@@ -834,9 +834,9 @@
 		#The range from where a pillager will shoot a target
 		[Illagers."Pillager shoot"."Shooting range"]
 			#Range: 1.0 ~ 64.0
-			Minimum = 20.0
+			Minimum = 24.0
 			#Range: 1.0 ~ 64.0
-			Maximum = 28.0
+			Maximum = 32.0
 
 		#The ticks cooldown before shooting. Vanilla is random between 20 and 40
 		[Illagers."Pillager shoot"."Shooting cooldown"]
@@ -1075,7 +1075,7 @@
 
 [Drowned]
 	#Makes drowned able to attack during daytime instead of standing still. Only entity types in the enhancedai:drowned/attack_during_day tag are affected by this feature.
-	"Enable Drowned attack during day" = true
+	"Enable Drowned attack during day" = false
 	#Makes drowned immune to sunlight for a couple of seconds before starting to burn. Only entity types in the enhancedai:drowned/sun_resistant tag are affected by this feature.
 	"Enable Sun resistant drowned" = true
 	#Replaces the drowned swim up goal with a better one, allowing them to leap out of the water. Only entity types in the enhancedai:drowned/change_swim_up tag are affected by this feature.

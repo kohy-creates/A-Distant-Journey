@@ -27,7 +27,7 @@ S:custom_window_icon_16 = '/config/fancymenu/assets/icon_16x.png';
 B:show_custom_window_icon = 'true';
 S:custom_window_icon_macos = '/config/fancymenu/assets/icon.icns';
 S:custom_window_icon_32 = '/config/fancymenu/assets/icon_32x.png';
-S:custom_window_title = 'A Distant Journey ~ The Tale of Seven Eyes';
+S:custom_window_title = '';
 
 
 ##[multiplayer_screen]
