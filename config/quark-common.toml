@@ -1716,7 +1716,7 @@
 		"Enchantments To Register" = []
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = ["netherexp:recoil", "netherexp:barrage", "netherexp:bloodshed", "netherexp:cartridge", "sortilege:arcane", "sortilege:blast", "sortilege:blitz", "sortilege:blizzard", "sortilege:brazier", "sortilege:chaining", "sortilege:ignorance_curse", "sortilege:potency", "sortilege:pull", "sortilege:push", "ars_elemental:soulbound", "sortilege:stability", "sortilege:wisdom", "sortilege:bonk", "sortilege:focus", "minecraft:fire_protection", "minecraft:projectile_protection", "trials:wind_burst", "trials:breach", "trials:density"]
+		"Enchantments To Begone" = ["netherexp:recoil", "netherexp:barrage", "netherexp:bloodshed", "netherexp:cartridge", "sortilege:arcane", "sortilege:blast", "sortilege:blitz", "sortilege:blizzard", "sortilege:brazier", "sortilege:chaining", "sortilege:ignorance_curse", "sortilege:potency", "sortilege:pull", "sortilege:push", "ars_elemental:soulbound", "sortilege:stability", "sortilege:wisdom", "sortilege:bonk", "sortilege:focus", "minecraft:fire_protection", "minecraft:projectile_protection", "evilcraft:life_stealing"]
 
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod

@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate-perspective",
+  "base": {
+    "parent": "evilcraft:item/necromancer_staff_handheld"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "evilcraft:item/necromancer_staff_gui"
+    },
+    "fixed": {
+      "parent": "evilcraft:item/necromancer_staff_gui"
+    },
+    "ground": {
+      "parent": "evilcraft:item/necromancer_staff_handheld"
+    }
+  }
+}

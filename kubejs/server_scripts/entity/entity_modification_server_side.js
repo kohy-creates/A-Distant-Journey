@@ -126,12 +126,14 @@ function setGear(entity, isHardcore) {
 			}))
 			break;
 		}
+
 		case 'minecraft:skeleton': {
 			if (entity.getLevel().getDimension() == 'minecraft:the_nether') {
 				entity.setItemSlot('mainhand', 'mcdw:bow_bonebow')
 			}
 			break;
 		}
+
 		case 'minecraft:wither_skeleton': {
 			const main = weightedRandom({
 				'golden_sword': 14,
@@ -183,6 +185,10 @@ function setGear(entity, isHardcore) {
 			}
 			break;
 		}
+
+		case 'twilightforest:skeleton_druid': {
+			entity.setItemSlot("mainhand", 'simplyswords:gold_scythe');
+		}
 	}
 
 }
@@ -203,6 +209,7 @@ function hardcoreModifications(entity) {
 			}
 			break;
 		}
+
 		case 'minecraft:vindicator': {
 			entity.setItemSlot("mainhand", weightedRandom({
 				'mcdw:scythe_jailors_scythe': 2,
@@ -210,6 +217,11 @@ function hardcoreModifications(entity) {
 				'minecraft:diamond_axe': 2
 
 			}));
+			break;
+		}
+
+		case 'twilightforest:skeleton_druid': {
+			entity.setItemSlot("head", 'mythicmetals:bronze_helmet')
 			break;
 		}
 	}

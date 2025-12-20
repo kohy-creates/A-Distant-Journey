@@ -51,10 +51,24 @@ StartupEvents.postInit(event => {
 		spawnEggs = [],
 		archwoodLogs = [];
 
+	const ignoredWoodTypes = [
+		'ecologics:azalea',
+		'ecologics:flowering_azalea',
+		'botania:mossy_livingwood',
+		'botania:mossy_dreamwood',
+		'botania:shimmerwood',
+		'twilight_forest:sorting',
+		'evilcraft:reinforced_undead',
+		'ribbits:mossy_oak'
+	]
+
 	Item.list.toArray().forEach(item => {
 		const id = item.id;
 		if (id.includes('_planks') && !id.includes('_planks_') && !id.includes('vertical')) {
-			woodTypes.push(id.replace('_planks', ''));
+			const type = id.replace('_planks', '');
+			if (!ignoredWoodTypes.includes(type)) {
+				woodTypes.push(type);
+			};
 		}
 		else if (id.includes('music_disc') || id.includes('record')) {
 			musicDiscs.push(id);
@@ -77,18 +91,6 @@ StartupEvents.postInit(event => {
 		else if (id.includes('smithing_template')) {
 			smithingTemplates.push(id);
 		}
-		// else if (id.startsWith('pottery:')) {
-		// 	let potID = id.replace('pottery:', '').replace('_pot', '').split('_');
-
-		// 	let color = (potID[2]) ? `${potID[1]}_${potID[2]}` : potID[1],
-		// 		shape = potID[0];
-
-
-		// 	if (!potteryPots[color]) potteryPots[color] = [];
-
-		// 	potteryPots[color].push(shape);
-		// 	potteryPots[color].sort();
-		// }
 		else if (id.includes('archwood_log') && !id.includes('stripped')) {
 			archwoodLogs.push(id);
 			archwoodLogs.sort();
@@ -173,14 +175,9 @@ StartupEvents.postInit(event => {
 		'minecraft:cherry',
 		'minecraft:bamboo',
 		'ecologics:coconut',
-		// 'ecologics:azalea',
-		// 'ecologics:flowering_azalea',
 		'ecologics:walnut',
 		'botania:livingwood',
-		'botania:mossy_livingwood',
 		'botania:dreamwood',
-		'botania:mossy_dreamwood',
-		'botania:shimmerwood',
 		'ars_nouveau:archwood',
 		'evilcraft:undead',
 		'minecraft:mushroom',
@@ -205,7 +202,6 @@ StartupEvents.postInit(event => {
 		'twilight_forest:time',
 		'twilight_forest:transformation',
 		'twilight_forest:mining',
-		'twilight_forest:sorting',
 		'netherexp:claret',
 		'aether:skyroot',
 		'aether_redux:fieldsproot',
@@ -219,6 +215,7 @@ StartupEvents.postInit(event => {
 		'unusualend:stripped_chorus_nest',
 		'phantasm:pream',
 		'witherstormmod:tainted',
+
 	]
 	const orderedWoodTypes = [];
 	woodTypeOrder.forEach(type => {

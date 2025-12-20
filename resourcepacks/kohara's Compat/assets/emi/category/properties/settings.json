@@ -1,18 +1,18 @@
 {
 	"emi:info": {
-		"order": -999
+		"order": -9999
 	},
 	"minecraft:crafting": {
-		"order": -998
+		"order": -9998
 	},
 	"minecraft:smelting": {
-		"order": -997
+		"order": -9997
 	},
 	"minecraft:blasting": {
-		"order": -996
+		"order": -9996
 	},
 	"minecraft:smoking": {
-		"order": -995
+		"order": -9995
 	},
 
 	"create:automatic_brewing": {
@@ -24,6 +24,9 @@
 	},
 
 	"emi:fuel": {
+		"order": 9997
+	},
+	"emi_enchanting:enchantments": {
 		"order": 9998
 	},
 	"emi:tag": {

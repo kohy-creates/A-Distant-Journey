@@ -12,49 +12,53 @@ StartupEvents.registry('potion', event => {
 })
 
 MoreJSEvents.registerPotionBrewing((event) => {
+
 	event.addCustomBrewing(
 		'tide:glowfish',
 		Item.of('minecraft:potion', '{Potion:"minecraft:water"}'),
-		Item.of('majruszsdifficulty:recall_potion')
+		'majruszsdifficulty:recall_potion'
 	);
 
+	// Remove doubled or useless potions
+	const removedPotions = [
+		'netherdepthsupgrade:glowdine_glowing',
+		'netherdepthsupgrade:glowdine_long_glowing',
+		'davespotioneering:strong_invisibility',
+		'miners_delight:mining_fatigue',
+		'miners_delight:long_mining_fatigue',
+		'miners_delight:strong_mining_fatigue',
+		'ars_elemental:shock_potion',
+		'ars_elemental:shock_potion_long',
+		'netherdepthsupgrade:obsidianfish_long_resistance',
+		'netherdepthsupgrade:obsidianfish_resistance',
+		'netherdepthsupgrade:obsidianfish_strong_resistance',
+		'netherdepthsupgrade:lava_puffer_long_wither',
+		'netherdepthsupgrade:lava_puffer_long_wither',
+		'witherstormmod:wither',
+		'witherstormmod:strong_wither',
+		'witherstormmod:long_wither',
+		'unusualend:health_boost',
+		'alexsmobs:knockback_resistance',
+		'alexsmobs:strong_knockback_resistance',
+		'alexsmobs:long_knockback_resistance',
+		'unusualend:haste',
+		'unusualend:advanced_haste',
+		'miners_delight:haste',
+		'miners_delight:long_haste',
+		'miners_delight:strong_haste',
+		'additionaladditions:haste_potion',
+		'additionaladditions:long_haste_potion',
+		'additionaladditions:strong_haste_potion',
+	]
+
+	removedPotions.forEach(potion => {
+		event.removeByPotion(null, null, potion);
+	})
+
 	// Universal Glowing
-	event.removeByPotion(null, null, 'netherdepthsupgrade:glowdine_glowing');
-	event.removeByPotion(null, null, 'netherdepthsupgrade:glowdine_long_glowing');
 	event.addPotionBrewing("netherdepthsupgrade:glowdine", "awkward", "alexscaves:glowing");
 
-	// Remove doubled or useless potions
-	event.removeByPotion(null, null, 'davespotioneering:strong_invisibility');
-	event.removeByPotion(null, null, 'miners_delight:mining_fatigue');
-	event.removeByPotion(null, null, 'miners_delight:long_mining_fatigue');
-	event.removeByPotion(null, null, 'miners_delight:strong_mining_fatigue');
-	event.removeByPotion(null, null, 'ars_elemental:shock_potion');
-	event.removeByPotion(null, null, 'ars_elemental:shock_potion_long');
-	event.removeByPotion(null, null, 'netherdepthsupgrade:obsidianfish_long_resistance');
-	event.removeByPotion(null, null, 'netherdepthsupgrade:obsidianfish_resistance');
-	event.removeByPotion(null, null, 'netherdepthsupgrade:obsidianfish_strong_resistance');
-	event.removeByPotion(null, null, 'netherdepthsupgrade:lava_puffer_long_wither');
-	event.removeByPotion(null, null, 'netherdepthsupgrade:lava_puffer_long_wither');
-	event.removeByPotion(null, null, 'witherstormmod:wither');
-	event.removeByPotion(null, null, 'witherstormmod:strong_wither');
-	event.removeByPotion(null, null, 'witherstormmod:long_wither');
-
-	// Universal Knockback Resistance
-	event.removeByPotion(null, null, 'alexsmobs:knockback_resistance');
-	event.removeByPotion(null, null, 'alexsmobs:strong_knockback_resistance');
-	event.removeByPotion(null, null, 'alexsmobs:long_knockback_resistance');
-
 	event.addPotionBrewing("alexsmobs:bear_fur", "strength", "alexsmobs:knockback_resistance");
-
-	// Universal Haste
-	event.removeByPotion(null, null, 'unusualend:haste');
-	event.removeByPotion(null, null, 'unusualend:advanced_haste');
-	event.removeByPotion(null, null, 'miners_delight:haste');
-	event.removeByPotion(null, null, 'miners_delight:long_haste');
-	event.removeByPotion(null, null, 'miners_delight:strong_haste');
-	event.removeByPotion(null, null, 'additionaladditions:haste_potion');
-	event.removeByPotion(null, null, 'additionaladditions:long_haste_potion');
-	event.removeByPotion(null, null, 'additionaladditions:strong_haste_potion');
 
 	event.addPotionBrewing("miners_delight:copper_carrot", "swiftness", "alexscaves:haste");
 

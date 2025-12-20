@@ -237,8 +237,8 @@
 			image: "rediscovered:block/nether_reactor_core"
 			rotation: 45.0d
 			width: 1.75d
-			x: 26.5d
-			y: 10.0d
+			x: 26.0d
+			y: 9.5d
 		}
 		{
 			dependency: "574DD3FD26A23CDE"
@@ -325,7 +325,7 @@
 			image: "born_in_chaos_v1:block/bloktiemnoistali"
 			rotation: 45.0d
 			width: 1.75d
-			x: 17.5d
+			x: 17.0d
 			y: 7.0d
 		}
 		{
@@ -602,6 +602,24 @@
 			width: 1.0d
 			x: 14.479591836734684d
 			y: 0.4132653061224474d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 1.75d
+			image: "twilightforest:block/canopy_log_top"
+			rotation: 45.0d
+			width: 1.75d
+			x: 16.5d
+			y: 3.0d
+		}
+		{
+			dependency: "3F2B685C8C008081"
+			height: 1.75d
+			image: "mythicmetals:block/metallurgium_block_top"
+			rotation: 45.0d
+			width: 1.75d
+			x: -9.0d
+			y: 21.5d
 		}
 	]
 	order_index: 1
@@ -992,7 +1010,7 @@
 				""
 				"Looking to automate the process? &9Create&r mod got you covered!"
 			]
-			icon: "alloy_forgery:stone_bricks_forge_controller"
+			icon: "alloy_forgery:cracked_stone_bricks_forge_controller"
 			id: "6D19FADBF72AC531"
 			subtitle: "Craft a Tier 1 Forge Controller and build an Alloy Forge"
 			tasks: [
@@ -1540,6 +1558,7 @@
 				}
 			}
 			id: "65B45B23ECAC37CA"
+			optional: true
 			subtitle: "Craft Wooden Armor and a Wooden Shield"
 			tasks: [
 				{
@@ -1725,8 +1744,8 @@
 				}
 			]
 			title: "Pizza Hunt!"
-			x: 16.5d
-			y: 2.5d
+			x: 19.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
@@ -1741,7 +1760,7 @@
 				type: "structure"
 			}]
 			title: "Those Were The Days"
-			x: 19.0d
+			x: 19.5d
 			y: 4.0d
 		}
 		{
@@ -1817,6 +1836,7 @@
 		{
 			dependencies: ["379A22A2185CFC8E"]
 			hide_until_deps_complete: true
+			icon: "alloy_forgery:nether_bricks_forge_controller"
 			id: "49D421ADF1794A16"
 			subtitle: "Craft a Hellforge"
 			tasks: [{
@@ -1825,7 +1845,7 @@
 				type: "item"
 			}]
 			title: "Hell's Alloy Kitchen"
-			x: 19.5d
+			x: 18.0d
 			y: 5.0d
 		}
 		{
@@ -1894,8 +1914,8 @@
 				}
 			]
 			title: "From the Depths of Hell"
-			x: 20.0d
-			y: 10.0d
+			x: 20.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["20130F300D432015"]
@@ -1941,6 +1961,7 @@
 			}
 			icon_scale: 0.75d
 			id: "4AA4F99AC384B52F"
+			optional: true
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Construct a Mythrill Drill"
@@ -2203,7 +2224,7 @@
 				type: "item"
 			}]
 			title: "Wayfinder"
-			x: 24.0d
+			x: 24.5d
 			y: 5.5d
 		}
 		{
@@ -2239,6 +2260,7 @@
 			dependencies: ["03DC59E95C1B2EB0"]
 			icon_scale: 0.75d
 			id: "2ED660D1CBFA01C4"
+			optional: true
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "...and money is everything. Pour time into an Empty Bottle"
@@ -2438,7 +2460,7 @@
 				item: "aether:altar"
 				type: "item"
 			}]
-			title: "Enchanting, but Quite Different"
+			title: "Not Quite Enchanting"
 			x: 28.5d
 			y: 13.0d
 		}
@@ -2654,7 +2676,7 @@
 			id: "17404FD2E06F5790"
 			optional: true
 			shape: "rsquare"
-			subtitle: "Obtain a Grand Victory Medal"
+			subtitle: "Kill a Valkyrie Queen without getting hit and obtain a Grand Victory Medal"
 			tasks: [{
 				id: "4A31EF18F8A28552"
 				item: "aether_redux:grand_victory_medal"
@@ -2712,6 +2734,7 @@
 			hide_until_deps_complete: true
 			icon_scale: 0.75d
 			id: "3CF2A61BB7C8D79B"
+			optional: true
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft a Nether Reactor Core"
@@ -2732,8 +2755,8 @@
 				}
 			]
 			title: "Pocket Biome"
-			x: 26.511904761904745d
-			y: 10.023809523809504d
+			x: 26.011904761904745d
+			y: 9.523809523809504d
 		}
 		{
 			dependencies: ["353921E41B80F09D"]
@@ -2952,6 +2975,7 @@
 			icon: "born_in_chaos_v1:nightmare_stalker_skull"
 			icon_scale: 0.75d
 			id: "58D9C1D755CC3E6E"
+			optional: true
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Kill a Nightmare Stalker"
@@ -2963,7 +2987,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 17.5d
+			x: 17.0d
 			y: 7.0d
 		}
 		{
@@ -3607,8 +3631,8 @@
 				type: "item"
 			}]
 			title: "Cosmic Power"
-			x: -8.5d
-			y: 22.0d
+			x: -7.0d
+			y: 21.5d
 		}
 		{
 			dependencies: ["41BD18823BE31271"]
@@ -3621,8 +3645,8 @@
 				type: "item"
 			}]
 			title: "Celestial Synth"
-			x: -9.5d
-			y: 24.0d
+			x: -9.0d
+			y: 23.5d
 		}
 		{
 			dependencies: ["06E7DBDB7C7A790A"]
@@ -3997,6 +4021,63 @@
 			title: "Light in The Darkness"
 			x: 15.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["379A22A2185CFC8E"]
+			description: [
+				"Portal Frame:"
+				""
+				"{image:adj:textures/other/twilight_portal.png width:100 height:100 align:center}"
+				""
+				"2x2 (or larger) square of &9Water&r, surrounded with any kind of &eFlowers&r."
+				""
+				"You can activate the portal by tossing in a singular &dDragonstone&r."
+			]
+			hide_until_deps_complete: true
+			icon: "twilightforest:hollow_oak_sapling"
+			icon_scale: 0.75d
+			id: "55D235AFB0D505D8"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Enter the Twilight Forest"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				icon: "twilightforest:hollow_oak_sapling"
+				id: "143A064307F40469"
+				title: "Enter the Twilight Forest"
+				type: "dimension"
+			}]
+			title: "Story of Eastern Wonderland"
+			x: 16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"646540B4C4803445"
+				"3915141D30CD6CB0"
+			]
+			icon: "mythicmetals:celestium_block"
+			icon_scale: 0.75d
+			id: "52DBAF111AE45F4E"
+			optional: true
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Block of Celestisynth and a Block of Metallurgium"
+			tasks: [
+				{
+					id: "54AEFBFE699EA005"
+					item: "mythicmetals:metallurgium_block"
+					type: "item"
+				}
+				{
+					id: "3A4AA186FE3435B9"
+					item: "mythicmetals:celestium_block"
+					type: "item"
+				}
+			]
+			title: "Rich People Stuff"
+			x: -9.0d
+			y: 21.5d
 		}
 	]
 	title: "Story"

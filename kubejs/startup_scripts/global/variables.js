@@ -30,8 +30,6 @@ function rediscoveredFurniture() {
 
 global.rediscoveredFurniture = rediscoveredFurniture();
 
-global.developerMode = false;
-
 global.armorSuffixes = {
 	head: ['_helmet', '_helm', '_hood', '_skull'],
 	chest: ['_chestplate', '_tunic', '_robes'],
@@ -39,6 +37,15 @@ global.armorSuffixes = {
 	feet: ['_boots']
 };
 
-global.getBiome = function(entity) {
+global.getBiome = function (entity) {
 	return entity.level.getBiome(entity.block.pos).unwrapKey().get().location().toString();
+}
+
+global.toTitleCase = function (str) {
+	return str.replace(
+		/\w\S*/g,
+		function (txt) {
+			return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+		}
+	);
 }

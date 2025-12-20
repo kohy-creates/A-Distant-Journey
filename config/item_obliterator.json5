@@ -1104,7 +1104,11 @@
 		"twilightforest:player_skull_candle",
 		"twilightforest:piglin_skull_candle",
 
-		"unusualend:healing_lantern"
+		"unusualend:healing_lantern",
+
+		"evilcraft:obscured_glass",
+		"evilcraft:entangled_chalice",
+		"evilcraft:corrupted_chalice"
 		
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

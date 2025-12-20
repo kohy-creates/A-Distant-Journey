@@ -264,5 +264,12 @@
 			"duration": "0:55",
 			"level": 4
 		}
+	],
+	"alexsmobsinteraction:health_boost": [
+		{
+			"effect": "minecraft:health_boost",
+			"duration": "4:00",
+			"level": 1
+		}
 	]
 }

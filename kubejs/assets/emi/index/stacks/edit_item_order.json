@@ -1423,7 +1423,6 @@
 		"item:everycomp:q/botania/livingwood_ladder",
 		"item:everycomp:hnhome/botania/livingwood_lattice",
 		"item:supplementaries:botania/sign_post_livingwood",
-		"item:botania:mossy_livingwood_planks",
 		"item:botania:dreamwood_log",
 		"item:everycomp:q/botania/dreamwood_post",
 		"item:botania:stripped_dreamwood_log",
@@ -1451,11 +1450,6 @@
 		"item:everycomp:q/botania/dreamwood_ladder",
 		"item:everycomp:hnhome/botania/dreamwood_lattice",
 		"item:supplementaries:botania/sign_post_dreamwood",
-		"item:botania:mossy_dreamwood_planks",
-		"item:botania:shimmerwood_planks",
-		"item:botania:shimmerwood_planks_stairs",
-		"item:botania:shimmerwood_planks_slab",
-		"item:botania:shimmerwood_planks_slab",
 		"item:everycomp:q/ars_nouveau/archwood_post",
 		"item:everycomp:q/ars_nouveau/stripped_archwood_post",
 		"item:ars_nouveau:archwood_planks",
@@ -2415,21 +2409,6 @@
 		"item:witherstormmod:tainted_button",
 		"item:witherstormmod:tainted_sign",
 		"item:supplementaries:witherstormmod/sign_post_tainted",
-		"item:ecologics:flowering_azalea_log",
-		"item:ecologics:flowering_azalea_wood",
-		"item:ecologics:flowering_azalea_planks",
-		"item:ecologics:flowering_azalea_stairs",
-		"item:ecologics:flowering_azalea_slab",
-		"item:v_slab_compat:ecologics/flowering_azalea_vertical_slab",
-		"item:suppsquared:ecologics/item_shelf_flowering_azalea",
-		"item:ecologics:flowering_azalea_fence",
-		"item:ecologics:flowering_azalea_fence_gate",
-		"item:ecologics:flowering_azalea_door",
-		"item:ecologics:flowering_azalea_trapdoor",
-		"item:ecologics:flowering_azalea_sign",
-		"item:supplementaries:ecologics/sign_post_flowering_azalea",
-		"item:ecologics:flowering_azalea_hanging_sign",
-		"item:ecologics:flowering_azalea_boat",
 		"item:twilightforest:mangrove_log",
 		"item:twilightforest:mangrove_wood",
 		"item:quark:mangrove_post",
@@ -2468,13 +2447,6 @@
 		"item:supplementaries:sign_post_mangrove",
 		"item:twilightforest:mangrove_hanging_sign",
 		"item:twilightforest:mangrove_boat",
-		"item:ribbits:mossy_oak_planks",
-		"item:ribbits:mossy_oak_planks_stairs",
-		"item:ribbits:mossy_oak_planks_slab",
-		"item:ribbits:mossy_oak_planks_slab",
-		"item:ribbits:mossy_oak_planks_fence",
-		"item:ribbits:mossy_oak_planks_fence_gate",
-		"item:ribbits:mossy_oak_door",
 		"item:twilightforest:mining_log",
 		"item:twilightforest:mining_wood",
 		"item:everycomp:q/twilightforest/mining_post",
@@ -2655,8 +2627,6 @@
 		"item:supplementaries:twilightforest/sign_post_transformation",
 		"item:twilightforest:transformation_hanging_sign",
 		"item:twilightforest:transformation_boat",
-		"item:evilcraft:reinforced_undead_planks",
-		"item:evilcraft:reinforced_undead_planks_stairs",
 		"item:twilightforest:time_log",
 		"item:twilightforest:time_wood",
 		"item:everycomp:q/twilightforest/time_post",
@@ -2789,6 +2759,7 @@
 		"item:v_slab_compat:born_in_chaos_v1/black_argillite_brick_vertical_slab",
 		"item:v_slab_compat:alexscaves/abyssmarine_brick_vertical_slab",
 		"item:v_slab_compat:phantasm/void_crystal_tiles_vertical_slab",
+		"item:v_slab_compat:ecologics/flowering_azalea_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/white_tile_vertical_slab",
 		"item:v_slab_compat:unusualend/polished_warped_stone_vertical_slab",
 		"item:v_slab_compat:galosphere/pastel_pink_salt_vertical_slab",
@@ -8739,12 +8710,8 @@
 			"after": "item:everycomp:hnhome/botania/livingwood_lattice"
 		},
 		{
-			"stack": "item:botania:mossy_livingwood_planks",
-			"after": "item:supplementaries:botania/sign_post_livingwood"
-		},
-		{
 			"stack": "item:botania:dreamwood_log",
-			"after": "item:botania:mossy_livingwood_planks"
+			"after": "item:supplementaries:botania/sign_post_livingwood"
 		},
 		{
 			"stack": "item:everycomp:q/botania/dreamwood_post",
@@ -8851,28 +8818,8 @@
 			"after": "item:everycomp:hnhome/botania/dreamwood_lattice"
 		},
 		{
-			"stack": "item:botania:mossy_dreamwood_planks",
-			"after": "item:supplementaries:botania/sign_post_dreamwood"
-		},
-		{
-			"stack": "item:botania:shimmerwood_planks",
-			"after": "item:botania:mossy_dreamwood_planks"
-		},
-		{
-			"stack": "item:botania:shimmerwood_planks_stairs",
-			"after": "item:botania:shimmerwood_planks"
-		},
-		{
-			"stack": "item:botania:shimmerwood_planks_slab",
-			"after": "item:botania:shimmerwood_planks_stairs"
-		},
-		{
-			"stack": "item:botania:shimmerwood_planks_slab",
-			"after": "item:botania:shimmerwood_planks_slab"
-		},
-		{
 			"stack": "item:everycomp:q/ars_nouveau/archwood_post",
-			"after": "item:botania:shimmerwood_planks_slab"
+			"after": "item:supplementaries:botania/sign_post_dreamwood"
 		},
 		{
 			"stack": "item:everycomp:q/ars_nouveau/stripped_archwood_post",
@@ -12707,68 +12654,8 @@
 			"after": "item:witherstormmod:tainted_sign"
 		},
 		{
-			"stack": "item:ecologics:flowering_azalea_log",
-			"after": "item:supplementaries:witherstormmod/sign_post_tainted"
-		},
-		{
-			"stack": "item:ecologics:flowering_azalea_wood",
-			"after": "item:ecologics:flowering_azalea_log"
-		},
-		{
-			"stack": "item:ecologics:flowering_azalea_planks",
-			"after": "item:ecologics:flowering_azalea_wood"
-		},
-		{
-			"stack": "item:ecologics:flowering_azalea_stairs",
-			"after": "item:ecologics:flowering_azalea_planks"
-		},
-		{
-			"stack": "item:ecologics:flowering_azalea_slab",
-			"after": "item:ecologics:flowering_azalea_stairs"
-		},
-		{
-			"stack": "item:v_slab_compat:ecologics/flowering_azalea_vertical_slab",
-			"after": "item:ecologics:flowering_azalea_slab"
-		},
-		{
-			"stack": "item:suppsquared:ecologics/item_shelf_flowering_azalea",
-			"after": "item:v_slab_compat:ecologics/flowering_azalea_vertical_slab"
-		},
-		{
-			"stack": "item:ecologics:flowering_azalea_fence",
-			"after": "item:suppsquared:ecologics/item_shelf_flowering_azalea"
-		},
-		{
-			"stack": "item:ecologics:flowering_azalea_fence_gate",
-			"after": "item:ecologics:flowering_azalea_fence"
-		},
-		{
-			"stack": "item:ecologics:flowering_azalea_door",
-			"after": "item:ecologics:flowering_azalea_fence_gate"
-		},
-		{
-			"stack": "item:ecologics:flowering_azalea_trapdoor",
-			"after": "item:ecologics:flowering_azalea_door"
-		},
-		{
-			"stack": "item:ecologics:flowering_azalea_sign",
-			"after": "item:ecologics:flowering_azalea_trapdoor"
-		},
-		{
-			"stack": "item:supplementaries:ecologics/sign_post_flowering_azalea",
-			"after": "item:ecologics:flowering_azalea_sign"
-		},
-		{
-			"stack": "item:ecologics:flowering_azalea_hanging_sign",
-			"after": "item:supplementaries:ecologics/sign_post_flowering_azalea"
-		},
-		{
-			"stack": "item:ecologics:flowering_azalea_boat",
-			"after": "item:ecologics:flowering_azalea_hanging_sign"
-		},
-		{
 			"stack": "item:twilightforest:mangrove_log",
-			"after": "item:ecologics:flowering_azalea_boat"
+			"after": "item:supplementaries:witherstormmod/sign_post_tainted"
 		},
 		{
 			"stack": "item:twilightforest:mangrove_wood",
@@ -12919,36 +12806,8 @@
 			"after": "item:twilightforest:mangrove_hanging_sign"
 		},
 		{
-			"stack": "item:ribbits:mossy_oak_planks",
-			"after": "item:twilightforest:mangrove_boat"
-		},
-		{
-			"stack": "item:ribbits:mossy_oak_planks_stairs",
-			"after": "item:ribbits:mossy_oak_planks"
-		},
-		{
-			"stack": "item:ribbits:mossy_oak_planks_slab",
-			"after": "item:ribbits:mossy_oak_planks_stairs"
-		},
-		{
-			"stack": "item:ribbits:mossy_oak_planks_slab",
-			"after": "item:ribbits:mossy_oak_planks_slab"
-		},
-		{
-			"stack": "item:ribbits:mossy_oak_planks_fence",
-			"after": "item:ribbits:mossy_oak_planks_slab"
-		},
-		{
-			"stack": "item:ribbits:mossy_oak_planks_fence_gate",
-			"after": "item:ribbits:mossy_oak_planks_fence"
-		},
-		{
-			"stack": "item:ribbits:mossy_oak_door",
-			"after": "item:ribbits:mossy_oak_planks_fence_gate"
-		},
-		{
 			"stack": "item:twilightforest:mining_log",
-			"after": "item:ribbits:mossy_oak_door"
+			"after": "item:twilightforest:mangrove_boat"
 		},
 		{
 			"stack": "item:twilightforest:mining_wood",
@@ -13667,16 +13526,8 @@
 			"after": "item:twilightforest:transformation_hanging_sign"
 		},
 		{
-			"stack": "item:evilcraft:reinforced_undead_planks",
-			"after": "item:twilightforest:transformation_boat"
-		},
-		{
-			"stack": "item:evilcraft:reinforced_undead_planks_stairs",
-			"after": "item:evilcraft:reinforced_undead_planks"
-		},
-		{
 			"stack": "item:twilightforest:time_log",
-			"after": "item:evilcraft:reinforced_undead_planks_stairs"
+			"after": "item:twilightforest:transformation_boat"
 		},
 		{
 			"stack": "item:twilightforest:time_wood",
@@ -14201,6 +14052,10 @@
 		{
 			"stack": "item:v_slab_compat:phantasm/void_crystal_tiles_vertical_slab",
 			"after": "item:phantasm:void_crystal_tiles_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ecologics/flowering_azalea_vertical_slab",
+			"after": "item:ecologics:flowering_azalea_slab"
 		},
 		{
 			"stack": "item:v_slab_compat:hearth_and_home/white_tile_vertical_slab",
@@ -16744,7 +16599,6 @@
 		"/everycomp:q\\/botania/livingwood_ladder/",
 		"/everycomp:hnhome\\/botania/livingwood_lattice/",
 		"/supplementaries:botania\\/sign_post_livingwood/",
-		"/botania:mossy_livingwood_planks/",
 		"/botania:dreamwood_log/",
 		"/everycomp:q\\/botania/dreamwood_post/",
 		"/botania:stripped_dreamwood_log/",
@@ -16772,11 +16626,6 @@
 		"/everycomp:q\\/botania/dreamwood_ladder/",
 		"/everycomp:hnhome\\/botania/dreamwood_lattice/",
 		"/supplementaries:botania\\/sign_post_dreamwood/",
-		"/botania:mossy_dreamwood_planks/",
-		"/botania:shimmerwood_planks/",
-		"/botania:shimmerwood_planks_stairs/",
-		"/botania:shimmerwood_planks_slab/",
-		"/botania:shimmerwood_planks_slab/",
 		"/everycomp:q\\/ars_nouveau/archwood_post/",
 		"/everycomp:q\\/ars_nouveau/stripped_archwood_post/",
 		"/ars_nouveau:archwood_planks/",
@@ -17736,21 +17585,6 @@
 		"/witherstormmod:tainted_button/",
 		"/witherstormmod:tainted_sign/",
 		"/supplementaries:witherstormmod\\/sign_post_tainted/",
-		"/ecologics:flowering_azalea_log/",
-		"/ecologics:flowering_azalea_wood/",
-		"/ecologics:flowering_azalea_planks/",
-		"/ecologics:flowering_azalea_stairs/",
-		"/ecologics:flowering_azalea_slab/",
-		"/v_slab_compat:ecologics\\/flowering_azalea_vertical_slab/",
-		"/suppsquared:ecologics\\/item_shelf_flowering_azalea/",
-		"/ecologics:flowering_azalea_fence/",
-		"/ecologics:flowering_azalea_fence_gate/",
-		"/ecologics:flowering_azalea_door/",
-		"/ecologics:flowering_azalea_trapdoor/",
-		"/ecologics:flowering_azalea_sign/",
-		"/supplementaries:ecologics\\/sign_post_flowering_azalea/",
-		"/ecologics:flowering_azalea_hanging_sign/",
-		"/ecologics:flowering_azalea_boat/",
 		"/twilightforest:mangrove_log/",
 		"/twilightforest:mangrove_wood/",
 		"/quark:mangrove_post/",
@@ -17789,13 +17623,6 @@
 		"/supplementaries:sign_post_mangrove/",
 		"/twilightforest:mangrove_hanging_sign/",
 		"/twilightforest:mangrove_boat/",
-		"/ribbits:mossy_oak_planks/",
-		"/ribbits:mossy_oak_planks_stairs/",
-		"/ribbits:mossy_oak_planks_slab/",
-		"/ribbits:mossy_oak_planks_slab/",
-		"/ribbits:mossy_oak_planks_fence/",
-		"/ribbits:mossy_oak_planks_fence_gate/",
-		"/ribbits:mossy_oak_door/",
 		"/twilightforest:mining_log/",
 		"/twilightforest:mining_wood/",
 		"/everycomp:q\\/twilightforest/mining_post/",
@@ -17976,8 +17803,6 @@
 		"/supplementaries:twilightforest\\/sign_post_transformation/",
 		"/twilightforest:transformation_hanging_sign/",
 		"/twilightforest:transformation_boat/",
-		"/evilcraft:reinforced_undead_planks/",
-		"/evilcraft:reinforced_undead_planks_stairs/",
 		"/twilightforest:time_log/",
 		"/twilightforest:time_wood/",
 		"/everycomp:q\\/twilightforest/time_post/",
@@ -18110,6 +17935,7 @@
 		"/v_slab_compat:born_in_chaos_v1\\/black_argillite_brick_vertical_slab/",
 		"/v_slab_compat:alexscaves\\/abyssmarine_brick_vertical_slab/",
 		"/v_slab_compat:phantasm\\/void_crystal_tiles_vertical_slab/",
+		"/v_slab_compat:ecologics\\/flowering_azalea_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/white_tile_vertical_slab/",
 		"/v_slab_compat:unusualend\\/polished_warped_stone_vertical_slab/",
 		"/v_slab_compat:galosphere\\/pastel_pink_salt_vertical_slab/",

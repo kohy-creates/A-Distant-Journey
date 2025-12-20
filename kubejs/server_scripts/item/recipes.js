@@ -3203,6 +3203,106 @@ ServerEvents.recipes((event) => {
 		).id(`adj:ladder/${output.replace(':', '_')}`)
 	})
 
+	event.shaped(
+		Item.of('upgrade_aquatic:driftwood_ladder', 12),
+		[
+			'S S',
+			'SPS',
+			'S S'
+		],
+		{
+			P: 'upgrade_aquatic:driftwood_planks',
+			S: '#c:rods/wooden'
+		}
+	).id('adj:ladder/upgrade_aquatic_driftwood_ladder')
+
+	event.shaped(
+		Item.of('upgrade_aquatic:river_ladder', 12),
+		[
+			'S S',
+			'SPS',
+			'S S'
+		],
+		{
+			P: 'upgrade_aquatic:river_planks',
+			S: '#c:rods/wooden'
+		}
+	).id('adj:ladder/upgrade_aquatic_river_ladder')
+
+	event.shaped(
+		Item.of('upgrade_aquatic:river_chest', 1),
+		[
+			'PPP',
+			'P P',
+			'PPP'
+		],
+		{
+			P: 'upgrade_aquatic:river_planks'
+		}
+	).id('adj:river_chest')
+
+	event.shaped(
+		Item.of('upgrade_aquatic:river_chest', 4),
+		[
+			'PPP',
+			'P P',
+			'PPP'
+		],
+		{
+			P: '#upgrade_aquatic:river_logs'
+		}
+	).id('adj:river_chest_from_logs')
+
+	event.shaped(
+		Item.of('upgrade_aquatic:driftwood_chest', 1),
+		[
+			'PPP',
+			'P P',
+			'PPP'
+		],
+		{
+			P: 'upgrade_aquatic:driftwood_planks'
+		}
+	).id('adj:driftwood_chest')
+
+	event.shaped(
+		Item.of('upgrade_aquatic:driftwood_chest', 4),
+		[
+			'PPP',
+			'P P',
+			'PPP'
+		],
+		{
+			P: '#upgrade_aquatic:driftwood_logs'
+		}
+	).id('adj:driftwood_chest_from_logs')
+
+	event.shaped(
+		Item.of('upgrade_aquatic:driftwood_bookshelf', 1),
+		[
+			'PPP',
+			'BBB',
+			'PPP'
+		],
+		{
+			P: 'upgrade_aquatic:driftwood_planks',
+			B: 'book'
+		}
+	).id('adj:driftwood_bookshelf')
+
+	event.shaped(
+		Item.of('upgrade_aquatic:river_bookshelf', 1),
+		[
+			'PPP',
+			'BBB',
+			'PPP'
+		],
+		{
+			P: 'upgrade_aquatic:river_planks',
+			B: 'book'
+		}
+	).id('adj:river_bookshelf')
+
 	event.forEachRecipe({ output: /^(?=.*_sign)(?!.*hanging)(?!.*post).*/, type: 'crafting_shaped' }, recipe => {
 
 		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
@@ -4010,7 +4110,103 @@ ServerEvents.recipes((event) => {
 			'12x aether_redux:gravitite_block',
 			'24x mythicmetals:midas_gold_block',
 			'64x ars_nouveau:source_gem_block',
+			'10x evilcraft:garmonbozia'
 		)
 		.recipeTime(toSeconds(45))
 		.id('adj:eyes/arcanum')
+
+	// EvilCraft rework
+	function bloodInfuserRecipe(input, result, bloodAmount, tier, duration, exp, id) {
+		event.custom({
+			"type": "evilcraft:blood_infuser",
+			"item": input,
+			"fluid": {
+				"fluid": "evilcraft:blood",
+				"amount": bloodAmount * 1000
+			},
+			"result": (result instanceof Item) ? result : Item.of(result),
+			"duration": duration * 20,
+			"xp": (exp) ? exp : 3,
+			"tier": tier
+		}).id(`evilcraft:blood_infuser/${id}`)
+	}
+
+	const EvilCraftNewRecipes = [
+		'promise_acceptor_iron',
+		'promise_acceptor_gold',
+		'promise_acceptor_diamond',
+		'promise_tier_1',
+		'promise_tier_2',
+		'promise_tier_3',
+		'promise_speed_0',
+		'promise_efficiency_0'
+	]
+	EvilCraftNewRecipes.forEach(r => {
+		event.remove({ output: `evilcraft:${r}` })
+	})
+
+	bloodInfuserRecipe('ars_nouveau:source_gem_block', 'evilcraft:promise_acceptor_iron', 10, 0, 25, 5, 'core/promise_acceptor_iron')
+	bloodInfuserRecipe('mythicmetals:midas_gold_block', 'evilcraft:promise_acceptor_gold', 40, 1, 100, 8, 'core/promise_acceptor_gold')
+	bloodInfuserRecipe('botania:manasteel_block', 'evilcraft:promise_acceptor_diamond', 160, 2, 250, 10, 'core/promise_acceptor_diamond')
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'evilcraft:bowl_of_promises_tier0',
+			'spider_eye',
+			'evilcraft:dark_gem',
+			'evilcraft:dark_gem'
+		],
+		'evilcraft:promise_acceptor_iron',
+		'evilcraft:promise_tier_1',
+		0
+	).id('adj:promise_of_tenacity_1')
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'evilcraft:bowl_of_promises_tier1',
+			'spider_eye',
+			'evilcraft:dark_gem',
+			'evilcraft:dark_gem'
+		],
+		'evilcraft:promise_acceptor_gold',
+		'evilcraft:promise_tier_2',
+		0
+	).id('adj:promise_of_tenacity_2')
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'evilcraft:bowl_of_promises_tier2',
+			'spider_eye',
+			'evilcraft:dark_gem',
+			'evilcraft:dark_gem'
+		],
+		'evilcraft:promise_acceptor_diamond',
+		'evilcraft:promise_tier_3',
+		0
+	).id('adj:promise_of_tenacity_3')
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'evilcraft:bowl_of_promises_tier1',
+			'rediscovered:ruby_block',
+			'evilcraft:dark_gem',
+			'evilcraft:dark_gem'
+		],
+		'evilcraft:promise_acceptor_iron',
+		'evilcraft:promise_speed_0',
+		0
+	).id('adj:promise_speed_0')
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'evilcraft:bowl_of_promises_tier1',
+			'lapis_block',
+			'evilcraft:dark_gem',
+			'evilcraft:dark_gem'
+		],
+		'evilcraft:promise_acceptor_iron',
+		'evilcraft:promise_efficiency_0',
+		0
+	).id('adj:promise_efficiency_0')
+
 });

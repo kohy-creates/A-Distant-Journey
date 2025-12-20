@@ -33,7 +33,8 @@ ItemEvents.modification(event => {
 		'ars_nouveau:archmage_spell_book',
 		/treasure_bag/,
 		/metallurgium/,
-		/celestium/
+		/celestium/,
+		/unobtainium/
 	], item => {
 		item.rarity = 'epic'
 	});

@@ -54,17 +54,17 @@
 			{
 				"name": "block/enchantment_table/enchant1",
 				"weight": 1,
-				"volume": 0.4
+				"volume": 0.6
 			},
 			{
 				"name": "block/enchantment_table/enchant2",
 				"weight": 1,
-				"volume": 0.4
+				"volume": 0.6
 			},
 			{
 				"name": "block/enchantment_table/enchant3",
 				"weight": 1,
-				"volume": 0.4
+				"volume": 0.6
 			}
 		],
 		"subtitle": "subtitles.block.enchantment_table.use"

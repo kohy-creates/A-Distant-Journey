@@ -33,7 +33,7 @@
 			y: 0.0d
 		}
 	]
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -465,11 +465,19 @@
 		}
 		{
 			dependencies: ["7E4B8BBFB0884187"]
+			icon: "fnaf_plushie_remastered:toy_freddy_plush"
 			id: "5C51858776F08873"
 			subtitle: "Trade with the Plushie Maker Villager and buy an oddly familiar plush from a game I don't remember the name of..."
 			tasks: [{
 				id: "23F32F9F74F28B6C"
-				item: "fnaf_plushie_remastered:foxy_bully_plush"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:fnaf_plushie"
+					}
+				}
+				title: "Any FNAF plushie"
 				type: "item"
 			}]
 			title: "They Always Come Back"
@@ -478,11 +486,19 @@
 		}
 		{
 			dependencies: ["5B8BE1C0DADD5B73"]
+			icon: "just_blahaj:pride_blahaj"
 			id: "1782F792B27F2C54"
 			subtitle: "Craft any of the special Blahaj variants"
 			tasks: [{
 				id: "073742CD53C3F92B"
-				item: "just_blahaj:panhaj"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:blahaj/expressive"
+					}
+				}
+				title: "Any special Blahaj"
 				type: "item"
 			}]
 			title: "You Are Free! Free to Express Yourself!"
@@ -491,11 +507,19 @@
 		}
 		{
 			dependencies: ["5B8BE1C0DADD5B73"]
+			icon: "just_blahaj:red_blahaj"
 			id: "0B5DF52BF17E071A"
 			subtitle: "Dye your Blahaj any color"
 			tasks: [{
 				id: "56365F7F660BE24B"
-				item: "just_blahaj:red_blahaj"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:blahaj/colored"
+					}
+				}
+				title: "Any colored Blahaj"
 				type: "item"
 			}]
 			title: "Colormatic!"

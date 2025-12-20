@@ -321,7 +321,7 @@
 	"Enable Item disruption" = true
 	#Mobs can mine blocks to reach the target. Uses offhand item to mine. Only mobs in the entity type tag enhancedai:mobs/can_mine can spawn with the ability to mine and blocks in the tag enhancedai:miner_blacklist cannot be mined. This feature also adds the block reach attribute to all entities.
 	"Enable Miner mobs" = true
-	#Changes mobs attack range to use the 1.20.2 mechanic
+	#Changes mobs attack range to use the 1.20.2 mechanic. Only entities in the `enhancedai:mobs/melee_attacking` entity type tag will be affected.
 	"Enable Melee attacking" = true
 	#Mobs can bite if are attacked with non-weapons. Only mobs in the enhancedai:mobs/biting_mobs/can_bite entity type tag can bite. Entity types in `mobs/biting_mobs/unaffected_by_bite` tag are unaffected by bites. Damage types in `biting_mobs/doesnt_trigger_bite` tag don't trigger biting mobs.
 	"Enable Biting mobs" = true
@@ -501,7 +501,7 @@
 		#Dimensions where mobs can mine.
 		"Dimension whitelist" = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
 
-	#Changes mobs attack range to use the 1.20.2 mechanic
+	#Changes mobs attack range to use the 1.20.2 mechanic. Only entities in the `enhancedai:mobs/melee_attacking` entity type tag will be affected.
 	[Mobs."Melee attacking"]
 		#If true melee monsters (zombies, etc) will attack like 1.20.2+ and the attack range is based off the forge:entity_reach attribute (default 0.82 blocks).
 		"Attack reach attribute based" = true
@@ -1020,9 +1020,9 @@
 
 [Animals]
 	#Make animals fight back or be scared by players. Use the entity type tag enhancedai:animal/scared_attack/can_be_neutral, enhancedai:animal/scared_attack/can_be_hostile, and enhancedai:animal/scared_attack/can_be_scared_by_players to add/remove animals.
-	"Enable Animal scared attack" = true
+	"Enable Animal scared attack" = false
 	#Makes animals not tempted by food. Use the entity type tag enhancedai:animal/can_ignore_food_temptation to change animals.
-	"Enable Not tempted animals" = true
+	"Enable Not tempted animals" = false
 	#Make animals panic when one is attacked. Only entity types in `enhancedai:animal/can_panic` tag will be affected by this feature.
 	"Enable Animals panic" = true
 
@@ -1068,10 +1068,10 @@
 	[Animals."Animals panic"]
 		#Range at which an animal alerts other animals to panic/attack.
 		#Range: > 1
-		"Flee range" = 16
+		"Flee range" = 4
 		#The flee range will be this value if the animal can see the other animals
 		#Range: > -2147483648
-		"Flee range if seen" = 32
+		"Flee range if seen" = 8
 
 [Drowned]
 	#Makes drowned able to attack during daytime instead of standing still. Only entity types in the enhancedai:drowned/attack_during_day tag are affected by this feature.

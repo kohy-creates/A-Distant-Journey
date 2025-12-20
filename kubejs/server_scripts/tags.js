@@ -26,6 +26,44 @@ ServerEvents.tags('item', tags => {
 
 	])
 
+	tags.add('adj:fnaf_plushie', [
+		/fnaf_plushie_remastered:.*_plush/
+	])
+
+	tags.add('adj:blahaj/colored', [
+		'just_blahaj:white_blahaj',
+		'just_blahaj:orange_blahaj',
+		'just_blahaj:magenta_blahaj',
+		'just_blahaj:light_blue_blahaj',
+		'just_blahaj:yellow_blahaj',
+		'just_blahaj:lime_blahaj',
+		'just_blahaj:pink_blahaj',
+		'just_blahaj:gray_blahaj',
+		'just_blahaj:light_gray_blahaj',
+		'just_blahaj:cyan_blahaj',
+		'just_blahaj:purple_blahaj',
+		'just_blahaj:blue_blahaj',
+		'just_blahaj:brown_blahaj',
+		'just_blahaj:green_blahaj',
+		'just_blahaj:red_blahaj',
+		'just_blahaj:black_blahaj',
+	])
+
+
+	tags.add('adj:blahaj/expressive', [
+		'just_blahaj:creeperhaj',
+		'just_blahaj:palestine_blahaj',
+		'just_blahaj:trans_blahaj',
+		'just_blahaj:pride_blahaj',
+		'just_blahaj:intersex_blahaj',
+		'just_blahaj:bi_blahaj',
+		'just_blahaj:panhaj',
+		'just_blahaj:lesbian_blahaj',
+		'just_blahaj:gay_blahaj',
+		'just_blahaj:enby_blahaj',
+		'just_blahaj:gender_fluid_blahaj',
+	])
+
 	tags.add('adj:basic_furnaces', [
 		'furnace',
 		/quark\:.*_furnace/

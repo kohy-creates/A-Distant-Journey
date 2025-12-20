@@ -3,19 +3,29 @@
 		<or>
 			<condition>tag includes adj:music_disc</condition>
 			<condition>id = alexscaves:biome_treat</condition>
+			<condition>tag includes adj:attuned_pearls</condition>
+			<condition>id = evilcraft:blood_pearl_of_teleportation</condition>
+			<condition>is_bucket</condition>
 		</or>
 	</rule>
 	<rule stacksize="99">
 		<or>
-			<condition>id = minecraft:potion</condition>
-			<condition>id = minecraft:splash_potion</condition>
-			<condition>id = minecraft:lingering_potion</condition>
+			<condition>id ends_with _potion </condition>
+			<condition>id = minecraft:potion </condition>
+			<condition>id = minecraft:experience_bottle</condition>
 			<condition>id = minecraft:saddle</condition>
+			<condition>id = evilcraft:biome_extract</condition>
 			<condition>id ends_with horse_armor</condition>
 			<condition>is_food</condition>
-			<condition>id = minecraft:ender_pearl</condition>
+			<condition>id = farmersdelight:milk_bottle</condition>
+			<condition>tag includes c:ender_pearls</condition>
+			<condition>id = minecraft:ender_eye</condition>
 			<condition>id = alexscaves:waste_drum</condition>
 		</or>
+	</rule>
+	<rule stacksize="99">
+		<condition>id ends_with bottle</condition>
+		<condition>stacksize gt 1</condition>
 	</rule>
 	<rule stacksize="999">
 		<or>

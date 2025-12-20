@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "evilcraft:item/necromancer_staff_smol"
+  }
+}

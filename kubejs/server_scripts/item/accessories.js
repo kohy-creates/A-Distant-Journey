@@ -460,13 +460,13 @@ LootJS.modifiers(event => {
 		'phantom'
 	])
 		.pool(pool => {
-			pool.randomChance(0.07);
+			pool.randomChance(0.1);
 			pool.addLoot(LootEntry.of('confluence:blindfold'))
 		})
 
 	event.addEntityLootModifier('husk')
 		.pool((pool) => {
-			pool.randomChance(0.02)
+			pool.randomChance(0.015)
 			pool.addLoot(LootEntry.of('confluence:energy_bar'))
 		})
 
@@ -488,7 +488,7 @@ LootJS.modifiers(event => {
 			pool.addLoot(LootEntry.of('confluence:ice_skates'))
 		})
 		.pool((pool) => {
-			pool.randomChance(0.01)
+			pool.randomChance(0.008)
 			pool.addLoot(LootEntry.of('confluence:flurry_boots'))
 		})
 

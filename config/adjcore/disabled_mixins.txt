@@ -2,3 +2,4 @@ samebutdifferent.ecologics.mixin.AzaleaTreeGrowerMixin
 net.lyof.sortilege.mixin.LifecycledResourceManagerImplMixin
 xyz.kohara.adjcore.mixins.items.LeadAttachSoundMixin
 chronosacaria.mcdw.mixin.mcdw.ShieldPlayerEntityMixin
+portb.biggerstacks.mixin.client.ItemRendererMixin

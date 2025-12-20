@@ -3788,7 +3788,150 @@ const itemsToTooltip = [
 				]
 			}
 		]
+	},
+
+	// EvilCraft
+	{
+		item: "evilcraft:darkened_apple",
+		summary: [
+			"As you are reading this book, you might have already come across this item. Combining an _Apple_ and a _Dark Gem_ results in a special _Apple_ that when eaten inflicts large amounts of damage for a certain time. If the entity dies because of this effect, it will leave behind some kind of anomaly. I have yet to discover any uses for this phenomenon..."
+		]
+	},
+	{
+		item: "evilcraft:biome_extract",
+		summary: [
+			"Our world is made up of _Biomes_, many different variantions exist. Unfortunately, we can not choose the location of these _Biomes_, or at least not always.",
+			"One of the abilities of the _Environmental Accumulator_ is that it can accept special _Biome Extract Bottles_ which it can fill with the _Biome_ the machine is currently placed in. These bottles can be thrown anywhere on the ground to transform that area to the given biome.",
+			"One major disadvantage of the _Environmental Accumulator_ is that it will degrade its biome over time, so the bottles coming out of it will become pretty useless. If only there was an alternative way to craft these _Biome Extracts_ without bad effects..."
+		]
+	},
+	{
+		item: "evilcraft:humanoid_flesh",
+		summary: [
+			"You might never have noticed before, but when players die they seem to drop a part of their flesh. Eating it seems to be dangerous, maybe eating it at night-time might be more safe. I wouldn’t recommend eating your own flesh though, that’s just nasty, try eating one of your friends instead!"
+		]
+	},
+	{
+		item: "evilcraft:dark_tank",
+		summary: [
+			"Using some _Iron_, _Dark Gems_ and a piece of _Glass_, it is possible to construct a strong container that is able to hold fluids. It is possible to place these tanks somewhere, or hold them in your inventory.",
+			"When it is placed somewhere, you can right-click which gives it a purple-ish glow, and it seems to open up a hole at the bottom of the tank which is able to automatically fill tanks, item containers and players carrying containers underneath it.",
+			"Shift + right-clicking with the tank in your hand and not aiming at a block (because you know you will just place the tank down if you would do so) will enable a special mode to make it automatically try to fill any container you are currently holding if it can accept that fluid.",
+			"It looks like it can hold about sixteen buckets. If that is too limiting for you, these tanks seem to be expandable by placing multiple ones inside a crafting table, no fluids seem to go lost in this process."
+		]
+	},
+	{
+		item: "evilcraft:dark_spike",
+		summary: [
+			"Using a _Dark Gem_ and a piece of _Iron_, I was able to create very sharp and durable _Spikes_. Mobs don't seem to like them very much..."
+		]
+	},
+	{
+		item: "evilcraft:spiked_plate",
+		summary: [
+			"Some _Spikes_ and a _Plate_ will result in a plate which will damage any mob walking over it, me and my peers don’t seem to take any damage though. The powers of the _Dark Gem_ seems to ensure killing mobs in this process to drop the same things when killed by any player.",
+			"For your convenience, they also give off a redstone signal when a mob is taking damage."
+		]
+	},
+	{
+		item: "evilcraft:spikey_claws",
+		summary: [
+			"Nothing is more annoying than swapping tools around when trying to break blocks, and the suddenly having to fight incoming mobs.",
+			"Combining some _Spikes_ allows you to break almost all soft materials very quickly. At the same time, any mobs that come creeping by can also be attacked with sufficient power."
+		]
+	},
+	{
+		item: "evilcraft:potentia_sphere",
+		summary: [
+			"Combining several shiny mundane items will result in a sphere that seems to possess some awesome powers, I might discover a way to harness these powers in the near future. It looks like the power can be inverted by using some _Dark Gems_."
+		]
+	},
+	{
+		item: "evilcraft:dull_dust",
+		summary: [
+			"Combining some _Sugar_ and _Gunpowder_ will result in a weird dust that doesn’t seem to be very useful at the moment, hence the name. Although this might change one day."
+		]
+	},
+	{
+		item: "evilcraft:obscured_glass",
+		summary: [
+			"Some people might find regular _Glass_ too bright. Combining some glass with a _Dark Gem_ seems to make a special type of glass that almost completely reduces the amount of light that gets through. I am still able to look through the glass though, very strange..."
+		]
+	},
+	{
+		item: "evilcraft:exalted_crafter",
+		summary: [
+			"Crafting tables can be inconvenient sometimes when at remote locations. It looks like the _Crushed Dark Gems_ give the power to craft things from within your inventory! Attaching some kind of chest to it gives an easy internal inventory, even your _Ender Chest_ seems to work. Power users might be happy with this item, since it can be bound to a hotkey. Using that same hotkey when the gui is open will clear your inventory, and using the hotkey with shift will balance all the items currently inside the grid. There is a toggle button available that allows you to switch between the return targets when shift-removing items from the crafting grid, you can choose between either the inner item inventory or your player inventory.",
+			"Striking it with lightning seems to make it bound to reality so that it can’t be destroyed or disappear when dropped."
+		]
+	},
+	{
+		item: "evilcraft:display_stand",
+		summary: [
+			"This small block can showcase your favorite items and blocks. It seems to support any wood type, and it can be placed with any rotation you want. You can pipe items in and out from the bottom or the top.",
+			"Interaction from all other sides of the block will be delegated to the item itself, so you can interact with its inventory, fluids, energy, ..."
+		]
+	},
+	{
+		item: "evilcraft:blood_infusion_core",
+		summary: [
+			"This is one of the most profound discoveries based on _Blood_. Mundane items can be infused with _Blood_ to give the very special and interesting properties. The possibilities are endless, as long as you are not afraid to think a bit out of the box."
+		]
+	},
+	{
+		item: "evilcraft:blood_chest",
+		summary: [
+			"My first simple attempt to infuse items with _Blood_ resulted in a simple chest in which tools can bathe in. This bathing causes damage to the tools to slowly disappear. There is however a minor issue which causes tools to rarely attain bad effects, like the _Curse of Breaking_ enchant. I’ll certainly discover another way to purify these tools to get rid of these bad effects."
+		]
+	},
+	{
+		item: "evilcraft:blood_infuser",
+		summary: [
+			"After repairing items, I was sure I could take things to the next level. Items that can accept _Blood_, like the _Dark Tanks_ I introduced before, will be filled with _Blood_ when placed in this machine. Other specific items seem to transform in a special way when filled with _Blood_, here is a non-exhaustive list of items which can be infused. Giving this machine a redstone signal will pause any running process.",
+			"This machine finally allows you to make _Dark Power Gems_ more easily and at a much lower cost."
+		]
+	},
+	{
+		item: "evilcraft:undead_sapling",
+		summary: [
+			"I was able to reanimate dead saplings, the trees that grow from this process are remarkable to say the least. They seem to give off some of Blood if grown naturally, but the saplings that drop still seem to be dead somehow. Combining the wood with a Dark Gem will result in some sticks which will be useful some day.",
+			"Killing a sapling is as simple as shearing a living one in a crafting grid. &oIs that tree growing in a desert?_",
+			"Dropping sticks made from this wood always seems to rotate their lighter side in a certain direction. Could it be pointing to somewhere?"
+		]
+	},
+	{
+		item: "evilcraft:sanguinary_pedestal",
+		summary: [
+			"I was getting tired of pushing mobs off of cliffs and extracting the _Blood_, that is why I constructed a device which is able to extract _Blood_ from nearby _Blood Stains_ and place it in any nearby tanks. Using some _Dark Power Gems_, the _Blood_ efficiency of this _Blood_ extraction can be increased.",
+			"Placing a _Spiked Plate_ on top of it will enhance the capabilities of this plate to also absorb the _Blood_ of the beasts it kills and redirect it to the pedestal."
+		]
+	},
+	{
+		item: "evilcraft:purifier",
+		summary: [
+			"After the unfortunate side-effects of the _Blood Chest_, I decided to design a new machine that is able to remove these bad effects from your tools. Simply by placing a tool with a bad effect inside of this block together with at least one bucket worth of _Blood_ will remove this effect from the item.",
+			"An unintended benefit of this machine is that when filling it completely with _Blood_ and placing an enchanted item together with a _Blook_ (which is just a _Book_ infused with _Blood_), will move a random enchantment from the item to the book, at the cost of three _Buckets of Blood_.",
+			"Recently, I noticed that this machine also allows you to remove _Potion Effects_ from living creatures sitting inside of it by filling the _Purifier_ completely with _Blood_ and giving it an _Empty Bottle_. After a few seconds, the effect will be contained inside the bottle and the creature will be freed of it."
+		]
+	},
+	{
+		item: "evilcraft:entangled_chalice",
+		summary: [
+			"When you have as much experience as I have with infusing items with _Blood_, you will notice that by enhancing a tear of the fearsome _Ghast_ will result in a very special kind of tear. It seems to share all properties when split in half. This gave me the idea to build _Entangled Chalices_ with this tear with the goal of sharing the fluid contents of the chalice with all other chalices that are constructed from the same tear.",
+			"Normally, you will get two chalices sharing contents from the crafting recipe, but when replacing the center _Gold Ingot_ in the recipe with an existing chalice, it will expand the tear network to include another chalice.",
+			"These chalices can be placed in the world or held in your inventory. Shift + right-click with it in your hand to enable the Omni-Supply mode which will continuously try to fill all containers in your inventory with _Blood_."
+		]
+	},
+	{
+		item: "evilcraft:garmonbozia",
+		summary: [
+			"What if it was possible to imbue the darkest thoughts and emotions into this world. This could prove to be an immense source of unimaginable power. With the discovery of vengeance, darkness and blood, I think I may have the essential elements.",
+			"Combining these elements resulted in a strange spiritual energy. It is so otherwordly, that it does not have its own material, which is why it is observed as some kind of creamed corn.",
+			"My subjects say I have gone too far with this, the fools."
+		]
 	}
+
+
 
 ];
 

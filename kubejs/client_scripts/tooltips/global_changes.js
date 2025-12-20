@@ -35,7 +35,8 @@ ItemEvents.tooltip(event => {
 		'majruszsdifficulty:recall_potion',
 		'heart_crystals:heart_crystal',
 		'ars_nouveau:ring_of_lesser_discount',
-		'ars_nouveau:ring_of_greater_discount'
+		'ars_nouveau:ring_of_greater_discount',
+		// '@evilcraft'
 	], (item, advanced, text) => {
 		const original = text.toArray();
 
@@ -275,7 +276,7 @@ ItemEvents.tooltip(event => {
 		text.add(1, Text.of('This item is unobtainable in this modpack').darkGray())
 	})
 
-	//priority: 200
+	//priority: -9900
 	event.addAdvancedToAll((item, advanced, text) => {
 		const original = text.toArray();
 		let chapters = [],
@@ -305,19 +306,21 @@ ItemEvents.tooltip(event => {
 			text.clear()
 
 			text.add(0, itemName)
-			text.add(1, Text.darkGray('Unlocked in Chapter ' + chapter.replace('chapter_', '')))
+			text.add(1, Text.darkGray(`Unlocked in `).append(Text.darkGray(`${global.toTitleCase(chapter.replace('_', ' '))}`).underlined()));
+			text.add(1, Text.darkGray('Unknown item!').bold())
 
-			if (advanced && global.developerMode) {
-				let advancedTooltipLines = [];
-				for (let i = 1; i < 3; i++) {
-					if (original[original.length - i].toString().includes('color=dark_gray')) advancedTooltipLines.push(original[original.length - i]);
+			if (advanced && currentPlayer.isCreative()) {
+				let lines = [];
+				for (let index = original.length - 1; index > 0; index--) {
+					let element = original[index];
+					if (element.toString().includes('color=dark_gray')) {
+						lines.push(element)
+					}
+					else break;
 				}
-				advancedTooltipLines.reverse();
-
-				for (let i = 0; i < advancedTooltipLines.length; i++) {
-					text.add(2 + i, Text.darkGray(advancedTooltipLines[i]));
-				}
-				text.add(2, '')
+				lines.forEach(t => {
+					text.add(3, t)
+				})
 			}
 		}
 	})
@@ -441,7 +444,7 @@ ItemEvents.tooltip(event => {
 		var last = data.last !== undefined ? data.last : false;
 
 		event.addAdvanced(items, (item, advanced, tooltip) => {
-			if (tooltip[0].toString().includes('Unknown Item')) return;
+			if (tooltip[0].toString().includes('gray,obfuscated')) return;
 
 			var maxLen = 50;
 			var iter = 0;
@@ -833,6 +836,85 @@ ItemEvents.tooltip(event => {
 		{ items: "alexscaves:gummy_ring_blue", text: "A ring of blue gelatin" },
 		{ items: "alexscaves:gummy_ring_pink", text: "A ring of pink gelatin" },
 		{ items: "alexscaves:sundrop", text: "Luminous globs that, when near other sundrops, will form rainbows!" },
+
+		// Etcetera
+		{ items: "etcetera:handbell", text: "Can call pets to you if they aren't sitting" },
+
+		{ items: "etcetera:glowing_item_stand", text: "A glowing vertical item frame which can be covered in glass" },
+		{ items: "etcetera:item_stand", text: "A vertical item frame which can be covered in glass" },
+		{ items: "etcetera:squid_lamp", text: "A glowy torch which is more potent underwater" },
+
+		{ items: "etcetera:golden_eggple", text: "May be thrown to hatch a Golden Chapple" },
+		{ items: "etcetera:eggple", text: "Can be thrown to hatch a Chapple" },
+
+		// EvilCraft
+		{ items: "evilcraft:inner_block", text: "Block: %s" },
+		{ items: "evilcraft:blood_chest", text: "Item repairing." },
+		{ items: "evilcraft:blood_stain", text: "A splash of Blood created when an entity falls to death." },
+		{ items: "evilcraft:excrement_pile", text: "Will form below animals." },
+		{ items: "evilcraft:hardened_blood", text: "Dried Blood. Liquidifies with rain or by breaking it." },
+		{ items: "evilcraft:environmental_accumulator", text: "Found at Dark Temples, not craftable." },
+		{ items: "evilcraft:undead_sapling", text: "Grows an Undead Tree." },
+		{ items: "evilcraft:purifier", text: "Disenchanter" },
+		{ items: "evilcraft:spirit_furnace", text: "Cook Vengeance Spirits to obtain their drops." },
+		{ items: "evilcraft:dark_tank", text: "Place in crafting grid with other tanks to increase capacity. Shift + Right click to auto-supply." },
+		{ items: "evilcraft:sanguinary_pedestal_0", text: "Drains blood from blood stains in the area." },
+		{ items: "evilcraft:sanguinary_pedestal_1", text: "Drains more blood from blood stains in the area." },
+		{ items: "evilcraft:spiked_plate", text: "Damages mobs, place on Pedestal to drain blood." },
+		{ items: "evilcraft:spirit_reanimator", text: "Revive Vengeance Spirits." },
+		{ items: "evilcraft:entangled_chalice", text: "Contents of entangled chalices are omnipresent.\nShift + Right click to omni-supply." },
+		{ items: "evilcraft:gem_stone_torch", text: "Blocks Vengeance Spirit spawning in a radius of 15 blocks." },
+		{ items: "evilcraft:eternal_water", text: "An infinite source of water." },
+		{ items: "evilcraft:colossal_blood_chest", text: "An industry-sized Blood Chest." },
+		{ items: "evilcraft:sanguinary_environmental_accumulator", text: "Craftable Environmental Accumulator" },
+		{ items: "evilcraft:flesh_rejuvenated", text: "Infinite source of food" },
+		{ items: "evilcraft:blood_extractor", text: "Hold in inventory when slaying mobs.\nShift + Right click to extract or auto-supply." },
+		{ items: "evilcraft:broom", text: "I can fly!" },
+		{ items: "evilcraft:hardened_blood_shard", text: "Break Hardened Blood with Flint and Steel." },
+		{ items: "evilcraft:dark_power_gem", text: "Throw a Dark Gem in the middle of a pool with at least five non-hardened Blood blocks. Or infuse a Dark Gem with blood." },
+		{ items: "evilcraft:blood_container", text: "DEPRECATED! Place in crafting grid to convert to a Dark Tank." },
+		{ items: "evilcraft:blook", text: "Can absorb item enchants when placed in the Purifier." },
+		{ items: "evilcraft:potentia_sphere", text: "Infuse with blood to make an Ender Pearl." },
+		{ items: "evilcraft:inverted_potentia", text: "Strike with lightning to empower." },
+		{ items: "evilcraft:inverted_potentia_empowered", text: "Struck by lightning." },
+		{ items: "evilcraft:kineticator", text: "Shift + Right click to toggle attraction.\nRight click to change area." },
+		{ items: "evilcraft:kineticator_repelling", text: "Shift + Right click to toggle repelling.\nRight click to change area." },
+		{ items: "evilcraft:vengeance_ring", text: "Might attract or summon Vengeance Spirits.\nShift + Right click to toggle boost." },
+		{ items: "evilcraft:vengeance_focus", text: "Right click to enable Vengeance Spirit-freezing beam." },
+		{ items: "evilcraft:vengeance_pickaxe", text: "Might summon Vengeance Spirits." },
+		{ items: "evilcraft:burning_gem_stone", text: "Passively converts Vengeance Spirit damage to hunger." },
+		{ items: "evilcraft:creative_blood_drop", text: "Creative mode only item to drain and fill infinite amounts of Blood." },
+		{ items: "evilcraft:necromancer_staff", text: "Summon hordes of zombies." },
+		{ items: "evilcraft:invigorating_pendant", text: "Removes bad potion effects." },
+		{ items: "evilcraft:bound_blood_drop", text: "Right click to bind with your Blood Magic soul network." },
+		{ items: "evilcraft:promise_tier_1", text: "Machine tier upgrade, also usable for lower tier recipes. Tank capacity x2." },
+		{ items: "evilcraft:promise_tier_2", text: "Machine tier upgrade, also usable for lower tier recipes. Tank capacity x4." },
+		{ items: "evilcraft:promise_tier_3", text: "Machine tier upgrade, also usable for lower tier recipes. Tank capacity x8." },
+		{ items: "evilcraft:promise_speed_0", text: "Machine speed x2" },
+		{ items: "evilcraft:promise_efficiency_0", text: "Machine Blood efficiency x1.5" },
+		{ items: "evilcraft:bowl_of_promises_tier0", text: "Not used up in crafting." },
+		{ items: "evilcraft:bowl_of_promises_tier1", text: "Not used up in crafting." },
+		{ items: "evilcraft:bowl_of_promises_tier2", text: "Not used up in crafting." },
+		{ items: "evilcraft:bowl_of_promises_tier3", text: "Not used up in crafting." },
+		{ items: "evilcraft:dull_dust", text: "Quite boring dust... Or is it?" },
+		{ items: "evilcraft:blood_waxed_coal", text: "Double your coal efficiency." },
+		{ items: "evilcraft:ender_tear", text: "Rare drop from Endermen." },
+		{ items: "evilcraft:blood_potash", text: "Double your bonemealing efficiency." },
+		{ items: "evilcraft:bucket_eternal_water", text: "An infinite source of water." },
+		{ items: "evilcraft:sceptre_of_thunder", text: "Spawns thunder when activated, single-use." },
+		{ items: "evilcraft:origins_of_darkness", text: "Obtain by feeding a Darkened Apple to a mob and quickly throwing a Book at the resulting anomaly." },
+		{ items: "evilcraft:darkened_apple", text: "I wouldn't eat this, maybe feed it to some animal." },
+		{ items: "evilcraft:effortless_ring", text: "Walk faster and more efficient." },
+		{ items: "evilcraft:condensed_blood", text: "Insert into any machine for extra Blood." },
+		{ items: "evilcraft:primed_pendant", text: "Applies the chosen potion effect." },
+		{ items: "evilcraft:biome_extract", text: "Transforms the target area into the contained biome. Crafted in Environmental Accumulator at desired biome." },
+		{ items: "evilcraft:environmental_accumulation_core", text: "Obtained when breaking a regular Environmental Accumulator." },
+		{ items: "evilcraft:garmonbozia", text: "\"Pain and Sorrow\"" },
+		{ items: "evilcraft:vengeance_essence", text: "Drops when killing a Vengeance Spirit" },
+		{ items: "evilcraft:piercing_vengeance_focus", text: "Right click to enable Vengeance Spirit-killing beam." },
+		{ items: "evilcraft:spikey_claws", text: "Effective against soft materials" },
+		{ items: "evilcraft:spectral_glasses", text: "Look into the spirit world" },
+		{ items: "evilcraft:powerable", text: "Shift + Right click to change power level." },
 	];
 
 	for (const entry of TIP_CONFIG) {

@@ -309,4 +309,8 @@ JEIEvents.information(event => {
 	addInfo("alexscaves:block_of_chocolate", "Surprisingly resistant to melting. Can be used in the Conversion Crucible.")
 	addInfo("alexscaves:conversion_crucible", "A golden cauldron which, with Radiant Essence and Biome Treats, can be used to transmute biomes.")
 	addInfo("alexscaves:confection_oven", "A magical oven able to infinitely summon Gingerbread Men. If Rock Candy of any color is placed under the oven, the Gingerbread Men summoned will take on the color of the placed Rock Candy.")
+
+	// Etcetera
+	addInfo("etcetera:drum", "Will play a sound when hit or landed on, varying in pitch depending on where it's hit! Changes sound dependent on what's underneath.")
+	addInfo("etcetera:crumbling_stone", "When interacted with, it will crumble and eventually break Can be waxed to preserve it")
 })
