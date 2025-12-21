@@ -38,15 +38,15 @@
 	#Set a recommended amount of RAM that is recommended for the modpack to run. If this recommendation is not met then a warning will be displayed when the game is started.
 	#The amount of RAM recommended for stable gameplay.
 	#Range: 128 ~ 51200
-	"#1) Ram Recommended (IN MB)" = 2048
+	"#1) Ram Recommended (IN MB)" = 8000
 	#If the player has less than the recommended amount of RAM assigned to the modpack then a warning will be displayed when the game is started.
 	"#2) Check RAM meets recommendation?" = true
 	#Will the window show on top of all other windows? I highly recommend this is left as true.
 	"#3) Display message box topmost?" = true
 	#Customise the text that appears in the warning message. Will display custom message instead of the default text.
-	"#4) Customise low RAM Warning?" = false
+	"#4) Customise low RAM Warning?" = true
 	#The custom message to be displayed if you have set the previous setting to 'True'. Will display custom message instead of the default text.
-	"#5) Custom Message" = "You should assign more RAM to expierence better performance."
+	"#5) Custom Message" = "A Distant Journey requires at least 8 GB of RAM to run properly. Consider allocating more RAM to your game instance."
 
 ["Recommended RAM Chat Message"]
 	#SetSet a recommended amount of RAM that is recommended for the modpack to run. If this recommendation is not met then a warning will be displayed in chat when a world is loaded.
@@ -54,7 +54,7 @@
 	#Range: 128 ~ 51200
 	"#1) Ram Recommended (IN MB)" = 2048
 	#If the player has less than the recommended amount of RAM assigned to the modpack then a warning will be displayed in chat when a world is loaded.
-	"#2) Check RAM meets recommendation?" = true
+	"#2) Check RAM meets recommendation?" = false
 	#Customise the text that appears in the warning message. Will display custom message instead of the default text.
 	"#3) Customise low RAM Warning?" = false
 	#The custom message to be displayed in chat if you have set the previous setting to 'True'. Will display custom message instead of the default text.

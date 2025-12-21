@@ -39,12 +39,12 @@
     "curseForgeHash": 2830198433,
     "modrinthHash": "f1d0de94c8b72f513b141f6ed211f1dd4d50dc68"
   },
-  "adjcore-1.9.2.jar": {
-    "jarName": "adjcore-1.9.2.jar",
+  "adjcore-1.9.4.jar": {
+    "jarName": "adjcore-1.9.4.jar",
     "modId": "adjcore",
-    "version": "1.9.2",
-    "curseForgeHash": 2992967885,
-    "modrinthHash": "8c3ce9dd3ccea97da5bed2d92b3e4eb6d44b52e5"
+    "version": "1.9.4",
+    "curseForgeHash": 4244158016,
+    "modrinthHash": "78eb28e02c277b608ec3f79e3790b1a1fc39d31d"
   },
   "AdvancedLootInfo-forge-1.20.1-1.6.0.jar": {
     "jarName": "AdvancedLootInfo-forge-1.20.1-1.6.0.jar",
@@ -578,12 +578,12 @@
     "curseForgeHash": 1586719138,
     "modrinthHash": "0410ab9636c69324e3671012af64c7743f6d6079"
   },
-  "ChatImpressiveAnimation-forge-1.4.0+mc1.20.4.jar": {
-    "jarName": "ChatImpressiveAnimation-forge-1.4.0+mc1.20.4.jar",
-    "modId": "chatimpressiveanimation",
-    "version": "1.4.0+mc1.20.4",
-    "curseForgeHash": 3578150021,
-    "modrinthHash": "42983b5b6241fe66b144f941a28b192ece0a4fdb"
+  "chatanimation-forge-1.20.1-1.1.3.jar": {
+    "jarName": "chatanimation-forge-1.20.1-1.1.3.jar",
+    "modId": "chatanimation",
+    "version": "1.1.3",
+    "curseForgeHash": 2576855272,
+    "modrinthHash": "60f1673f321534a6eb8ce1250cd0f221209daf8b"
   },
   "cherishedworlds-forge-6.1.7+1.20.1.jar": {
     "jarName": "cherishedworlds-forge-6.1.7+1.20.1.jar",
@@ -1612,6 +1612,13 @@
     "curseForgeHash": 2056126318,
     "modrinthHash": "d4695d013e9da7089e2906db3f56bc5398e478e2"
   },
+  "immersive-hotbar-1.0.4-1.20-1.20.4.jar": {
+    "jarName": "immersive-hotbar-1.0.4-1.20-1.20.4.jar",
+    "modId": "immersive-hotbar",
+    "version": "1.0.4-1.20-1.20.4",
+    "curseForgeHash": 2349715497,
+    "modrinthHash": "27de7642cba9adea8da15303e75e70dac062e302"
+  },
   "immersive_optimization-forge-1.20.1-0.1.0.jar": {
     "jarName": "immersive_optimization-forge-1.20.1-0.1.0.jar",
     "modId": "immersive_optimization",
@@ -1765,6 +1772,13 @@
     "version": "2.3.5",
     "curseForgeHash": 423607225,
     "modrinthHash": "bfb10b56cb5dcc34f3643472aa09bc4120808d31"
+  },
+  "jamlib-forge-1.3.5+1.20.1.jar": {
+    "jarName": "jamlib-forge-1.3.5+1.20.1.jar",
+    "modId": "jamlib",
+    "version": "1.3.5+1.20.1",
+    "curseForgeHash": 1772241613,
+    "modrinthHash": "6d5ffd184496a979a54a92be86139e4afabbb580"
   },
   "just_blahaj-3.0.0-forge-1.20.1.jar": {
     "jarName": "just_blahaj-3.0.0-forge-1.20.1.jar",
@@ -2485,6 +2499,13 @@
     "curseForgeHash": 1441086174,
     "modrinthHash": "f5f5f792473bb7b85ec221f75c5afb3740afb13a"
   },
+  "rch-supplementaries-compat-forge-1.0.0.jar": {
+    "jarName": "rch-supplementaries-compat-forge-1.0.0.jar",
+    "modId": "rch_supplementaries_compat",
+    "version": "1.0.0",
+    "curseForgeHash": 1864216605,
+    "modrinthHash": "bf036aa56d7db98224ff639ba66ddb66819a93d8"
+  },
   "recipeessentials-1.20.1-4.0.jar": {
     "jarName": "recipeessentials-1.20.1-4.0.jar",
     "modId": "recipeessentials",
@@ -2547,6 +2568,13 @@
     "version": "1.20.1-Forge-3.0.5",
     "curseForgeHash": 3978204156,
     "modrinthHash": "5cc73d3399248300a188164406cd801cc4ae00b3"
+  },
+  "rightclickharvest-forge-4.6.0+1.20.1.jar": {
+    "jarName": "rightclickharvest-forge-4.6.0+1.20.1.jar",
+    "modId": "rightclickharvest",
+    "version": "4.6.0+1.20.1",
+    "curseForgeHash": 146938392,
+    "modrinthHash": "7b467d8d5c093d0ee5214a12ac2a198681f0f0e6"
   },
   "ruok-forge_1.20.1-1.7.2.jar": {
     "jarName": "ruok-forge_1.20.1-1.7.2.jar",
@@ -2706,6 +2734,13 @@
     "version": "1.20.1-4.1",
     "curseForgeHash": 2007224494,
     "modrinthHash": "3e142e4a2e12db1c9a3777879cc021aff49da088"
+  },
+  "SmoothScrollingRefurbished+1.20-1.1.2.jar": {
+    "jarName": "SmoothScrollingRefurbished+1.20-1.1.2.jar",
+    "modId": "smoothscrollingrefurbished",
+    "version": "1.1.2",
+    "curseForgeHash": 956630730,
+    "modrinthHash": "25106afe4000969fd14e0ee70243138e746872b4"
   },
   "smsn-forge-1.3.5-1.20.1.jar": {
     "jarName": "smsn-forge-1.3.5-1.20.1.jar",
@@ -2882,6 +2917,13 @@
     "curseForgeHash": 3016368264,
     "modrinthHash": "f80f9eed728966adcfbcc848633e789645057281"
   },
+  "supermartijn642corelib-1.1.18-forge-mc1.20.1.jar": {
+    "jarName": "supermartijn642corelib-1.1.18-forge-mc1.20.1.jar",
+    "modId": "supermartijn642corelib",
+    "version": "1.1.18",
+    "curseForgeHash": 4078642907,
+    "modrinthHash": "d37e1148b512c67cee704635b4f07d1f9ea8c31c"
+  },
   "supplementaries-1.20-3.1.41.jar": {
     "jarName": "supplementaries-1.20-3.1.41.jar",
     "modId": "supplementaries",
@@ -3021,6 +3063,13 @@
     "version": "1.3.0+1.20",
     "curseForgeHash": 1323485907,
     "modrinthHash": "fb009825144e608895e0c5e52d4fdbcc80b1105f"
+  },
+  "trashcans-1.0.18b-forge-mc1.20.jar": {
+    "jarName": "trashcans-1.0.18b-forge-mc1.20.jar",
+    "modId": "trashcans",
+    "version": "1.0.18b",
+    "curseForgeHash": 257456827,
+    "modrinthHash": "4bc991b861a981921d06b731368239ce6ea571d3"
   },
   "TravelersTitles-1.20-Forge-4.0.2.jar": {
     "jarName": "TravelersTitles-1.20-Forge-4.0.2.jar",

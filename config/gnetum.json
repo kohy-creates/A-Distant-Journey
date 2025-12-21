@@ -32,12 +32,6 @@
       },
       "pass": 3
     },
-    "gnetum.packedElement.right": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
     "minecraft:jump_bar": {
       "enabled": {
         "value": "AUTO"
@@ -80,7 +74,7 @@
       },
       "pass": 2
     },
-    "aether:silver_life_shard_hearts": {
+    "alexsmobsinteraction:farseer_text": {
       "enabled": {
         "value": "AUTO"
       },
@@ -121,6 +115,12 @@
         "value": "AUTO"
       },
       "pass": 2
+    },
+    "alexsmobsinteraction:farseer_effects": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
     },
     "minecraft:hotbar": {
       "enabled": {
@@ -182,12 +182,6 @@
       },
       "pass": 2
     },
-    "create:remaining_air": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
     "minecraft:scoreboard": {
       "enabled": {
         "value": "AUTO"
@@ -202,9 +196,9 @@
     },
     "minecraft:chat_panel": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
-      "pass": 3
+      "pass": 1
     },
     "supplementaries:slimed_overlay": {
       "enabled": {
@@ -272,12 +266,6 @@
       },
       "pass": 2
     },
-    "gnetum.packedElement.left": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
     "create:schematic": {
       "enabled": {
         "value": "AUTO"
@@ -338,11 +326,11 @@
       },
       "pass": 2
     },
-    "artifacts:helium_flamingo_charge": {
+    "twilightforest:quest_ram_indicator": {
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
+      "pass": 3
     },
     "hammerlib:tooltip_engine": {
       "enabled": {
@@ -375,6 +363,12 @@
       "pass": 3
     },
     "minecraft:sleep_fade": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "gnetum:status_bar": {
       "enabled": {
         "value": "AUTO"
       },
@@ -448,6 +442,12 @@
       },
       "pass": 3
     },
+    "ruokmod": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
     "spiffyxgnetum": {
       "enabled": {
         "value": "ON"
@@ -462,6 +462,12 @@
     }
   },
   "mapModdedElementsPost": {
+    "evilcraft": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "combatroll": {
       "enabled": {
         "value": "AUTO"
