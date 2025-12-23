@@ -45,9 +45,23 @@
 	#For example if you want crash report to be shown earlier than latest.log in the available logs list.
 	#Supported values: https://github.com/KostromDan/Crash-Assistant/blob/1.19-1.20.1/app/src/main/java/dev/kostromdan/mods/crash_assistant/app/logs_analyser/LogType.java
 	#Usage: ["CRASH_REPORT", "LOG"]
-	logs_priority_overrides = []
+	logs_priority_overrides = [
+		"CRASH_REPORT",
+		"LOG",
+		"KUBE_JS",
+		"MIXER_LOGGER",
+		"HS_ERR"
+	]
 	#List of blacklisted log files (checked with startswith()). This files won't show in GUI logs list.
-	blacklisted_logs = []
+	blacklisted_logs = [
+		"crafttweaker",
+		"win_event",
+		"disconnect",
+		"debug",
+		"launcher",
+		"rei",
+		"crash_assistant"
+	]
 
 #A simplified GUI that hides the logs list until the user opts into Expert Mode.
 [simple_mode]
@@ -94,7 +108,7 @@
 	#For example if they need to fill some option from "text_under_crashed", etc.
 	#Supports html formatting, placeholders.
 	#Leave empty to prevent showing this warning message.
-	warning_after_upload_all_button_press = ""
+	warning_after_upload_all_button_press = "Make sure to include additional info, e.g. what you were doing before the crash, whether you were on a server or not.\n<b>Please don't just paste the copied text into a support thread</b>, as it makes it way harder to work with your issue."
 	#Puts problematic frame from hs_err to message.
 	put_problematic_frame_to_message = true
 	#Puts analysis result(names of crash reasons) to message, instead of just count.
@@ -143,7 +157,7 @@
 	#If enabled, will add modloader jar name to modlist, to easily track if user changed version of modloader.
 	add_modloader_jar_name = true
 	#If enabled, will add generated modlist.txt, with names of all mods / modids / mixin configs / jarjar mods info to logs.
-	add_modlist_txt_as_log = true
+	add_modlist_txt_as_log = false
 
 #Settings of too many changes warning feature.
 #Notifies end users of the modpack and saying they made too many changes to the modpack.
@@ -151,13 +165,13 @@
 [too_many_changes_warning]
 	#Set to the positive integer to enable feature. Set to negative integer to disable.
 	#How many changes end user should make for warning to be displayed.
-	count = -1
+	count = 1
 	#With this option, you can select the formulation of this warning, currently supported:
 	#   - NOTIFY: Just saying to the end user that what they made many changes and adding random mods or clicking
 	#the "Update All" button is not a good idea without proper testing. It is expected to crash.
 	#   - DROP_SUPPORT: Saying what you are not providing support for that amount of changes, suggesting the end user to
 	#re-install modpack or they are on their own with that amount of changes.
-	formulation_type = "NOTIFY"
+	formulation_type = "DROP_SUPPORT"
 
 #Settings of analysis feature.
 #Analysing logs for most common reasons of crashes and displaying recommendations with fixes.
@@ -177,7 +191,12 @@
 	#Here you can disable some Analysis tools by class names.
 	#List of them can be found here: dev.kostromdan.mods.crash_assistant.app.gui.analysis
 	#For example "MCreatorModDetectorGUI"
-	blacklisted_tools = []
+	blacklisted_tools = [
+		"AzureLibDependenciesAnalysisGUI",
+		"MCreatorModDetectorGUI",
+		"EpicFightDependenciesAnalysisGUI",
+		"CreateDependenciesAnalysisGUI.java"
+	]
 
 #Settings of '/crash_assistant crash' command feature.
 [crash_command]
@@ -229,7 +248,7 @@
 	auto_fix_button_foreground_color = "0_178_0"
 	#Path to a modpack logo to display in the top of the GUI.
 	#Path is relative to the Minecraft instance folder. Leave empty to disable.
-	modpack_logo_path = ""
+	modpack_logo_path = "config/fancymenu/assets/icon.png"
 	#If true, the logo will be larger, Replacing a some of `don't send screenshot` notice.
 	#If false, it will be smaller and logo will be end right where the `don't send screenshot` notice starts.
 	#You should try both, but most likely:

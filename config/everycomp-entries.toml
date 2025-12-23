@@ -85,6 +85,10 @@
 		[types.wood_type.evilcraft]
 			undead = true
 
+		[types.wood_type.window_box]
+			chthonic_yew = true
+			alfthorne = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -160,6 +164,10 @@
 
 		[types.leaves_type.evilcraft]
 			undead = true
+
+		[types.leaves_type.window_box]
+			chthonic_yew = true
+			alfthorne = true
 
 	[types.cake]
 
@@ -689,6 +697,12 @@
 
 		[types.cut_block_type.evilcraft]
 			undead = true
+
+		[types.cut_block_type.window_box]
+			chthonic_yew_wood = true
+			chthonic_yew = true
+			alfthorne_wood = true
+			alfthorne = true
 
 #Disables specific entries
 [entries]

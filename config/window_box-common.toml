@@ -1,0 +1,33 @@
+
+[Snapdresson]
+	# Snapdresson can look inside any items with a tag {Items} or {BlockEntityTag.Items}
+	# A list of item IDs (like the trinket case or shulker box) to force the Snapdresson not to look inside, if their data is inconsistent with the vanilla format
+	snapdresson_prevent_looking_inside = []
+	# A list of top level item NBT-tag keys which should be ignored when comparing two items to see if one matches the other
+	snapdresson_ignore_tags_for_comparison = ["Damage", "RepairCost", "mana", "baubleUUID", "soulbindUUID"]
+
+# The Groundberry will automatically apply to any BrushableBlock, and bury loot from window_box/loot_tables/groundberry/block_id.json
+[Oxidaisel]
+	# The Oxidaisel will automatically apply to any WeatheringCopper, or blocks whose IDs match the oxidized, weathered, exposed pattern.
+	# This list of blocks will add or override conversions, or, if the output is invalid, remove conversions
+	# The list should be a sets of 2: input block ID, output block ID
+	oxidaisel_conversions = []
+
+["Glory Incarnata"]
+	# Whether or not the Glory Incarnata prevents Piglins and Hoglins* from zombifying
+	# *(or any mobs which extend those classes)
+	glory_incarnata_can_prevent = true
+	#
+	# What mobs the Glory Incarnata will cure, and the mobs they are cured into
+	# The list should be a sets of 3: original mob ID, new mob ID, time to cure in ticks
+	glory_incarnata_can_cure = ["minecraft:zombie_villager", "minecraft:villager", "200", "minecraft:zombified_piglin", "minecraft:piglin", "200", "minecraft:zoglin", "minecraft:hoglin", "200"]
+
+[Dispelagonium]
+	# A list of (potion) effect IDs which the Dispelagonium cannot dispel
+	dispelagonium_blacklist = []
+	#
+	# The following potions are also configurably added in order to facilitate the Dispelagonium:
+	enable_wither_potion = true
+	enable_mining_fatigue_potion = true
+	enable_levitation_potion = true
+

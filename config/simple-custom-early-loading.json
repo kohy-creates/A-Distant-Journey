@@ -30,7 +30,7 @@
     {
       // the loading text should be centered and poistioned at 60% from the top of the window
       // loading.png is also available if you want the text without animation
-      "image": "animated.png",
+      "image": "loading.png",
       "position": {
         // using bottom center alignes the bottom of the loading text to the 60%
         // this comes handy as we want to render the loading bar below it

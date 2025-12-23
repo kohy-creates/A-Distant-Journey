@@ -1,0 +1,3 @@
+{
+    "gui.too_many_changes_warning_drop_support": "You've made changes to the modpack! <b>Support won't be provided for edited versions of A Distant Journey</b>.\nHowever, you can ignore this warning if you are 100% sure your edits <b>are not the cause of</b> this issue, or if the crash is completely unrelated to them.\n\nIf you haven't modified the modpack, most likely it's corrupted due to an incorrect update, and you should reinstall it. If reinstalling didn't fix it, this is a false positive and you can ignore this message."
+}
