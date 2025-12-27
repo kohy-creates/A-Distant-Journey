@@ -1092,6 +1092,9 @@
 		"etcetera:dice",
 
 		"nameless_trinkets:mysterious_trinket",
+		"nameless_trinkets:dubious_dust",
+		"nameless_trinkets:glowing_dust",
+		"nameless_trinkets:ultimate_dust",
 
 		"netherexp:skeleton_skull_candle",
 		"netherexp:soul_skeleton_skull_candle",
@@ -1108,7 +1111,15 @@
 
 		"evilcraft:obscured_glass",
 		"evilcraft:entangled_chalice",
-		"evilcraft:corrupted_chalice"
+		"evilcraft:corrupted_chalice",
+
+		"window_box:bouquet",
+		"window_box:topsy_tulip",
+		"window_box:floating_topsy_tulip",
+		"window_box:snapdresson",
+		"window_box:floating_snapdression",
+		"window_box:dispellagonium",
+		"window_box:floating_dispellagonium",
 		
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

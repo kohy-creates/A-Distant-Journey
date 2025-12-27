@@ -421,7 +421,7 @@
 			id: "7E4B8BBFB0884187"
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "Craft an Easel and a Palette"
+			subtitle: "Craft a Sewing Table - work station of the Plushie Maker Villager"
 			tasks: [{
 				id: "6B95F62D86C81048"
 				item: "fnaf_plushie_remastered:sewing_table"
@@ -439,6 +439,7 @@
 				""
 				"You have plethora of tools to express &dyourself&r, &dyour ideas&r in your creations. This achievement chapter is a short showcase of what you can do!"
 			]
+			disable_toast: true
 			id: "3DFCD3D89661B5AF"
 			subtitle: "&oRequires 'Benchmarking'"
 			tasks: [{

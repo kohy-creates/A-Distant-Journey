@@ -215,6 +215,53 @@ ServerEvents.recipes((event) => {
 		event.remove({ type: recipeType })
 	})
 
+	// Wooden Armor
+	event.shaped(
+		'kubejs:wooden_helmet',
+		[
+			'WWW',
+			'W W'
+		],
+		{
+			W: '#logs'
+		}
+	).id('adj:wooden_helmet')
+
+	event.shaped(
+		'kubejs:wooden_chestplate',
+		[
+			'W W',
+			'WWW',
+			'WWW'
+		],
+		{
+			W: '#logs'
+		}
+	).id('adj:wooden_chestplate')
+
+	event.shaped(
+		'kubejs:wooden_leggings',
+		[
+			'WWW',
+			'W W',
+			'W W'
+		],
+		{
+			W: '#logs'
+		}
+	).id('adj:wooden_leggings')
+
+	event.shaped(
+		'kubejs:wooden_boots',
+		[
+			'W W',
+			'W W'
+		],
+		{
+			W: '#logs'
+		}
+	).id('adj:wooden_boots')
+
 	event.shaped(
 		Item.of('enchantinginfuser:enchanting_infuser', 1),
 		[

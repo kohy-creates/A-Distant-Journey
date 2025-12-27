@@ -1,0 +1,6 @@
+%#780EAD%**A harder variant of the main campaign.**%#%
+
+Monsters have %#8540B3%more health%#%, %#8540B3%damage%#% and %#8540B3%enhanced AI%#%. World generation is %#8540B3%slightly deadlier%#%. Designed to be actually hardcore, *but not impossible* - just %#8540B3%torturous%#%.
+
+%#FF0000%**IMPORTANT:**%#% &nNo &npermadeath&r. That's not the idea. 
+> *You can respawn and continue suffering. ;)*

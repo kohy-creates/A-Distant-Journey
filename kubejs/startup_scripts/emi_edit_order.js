@@ -178,6 +178,8 @@ StartupEvents.postInit(event => {
 		'ecologics:walnut',
 		'botania:livingwood',
 		'botania:dreamwood',
+		'window_box:chthonic_yew',
+		'window_box:alfthorne',
 		'ars_nouveau:archwood',
 		'evilcraft:undead',
 		'minecraft:mushroom',

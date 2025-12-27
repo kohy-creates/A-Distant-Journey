@@ -1450,6 +1450,78 @@
 		"item:everycomp:q/botania/dreamwood_ladder",
 		"item:everycomp:hnhome/botania/dreamwood_lattice",
 		"item:supplementaries:botania/sign_post_dreamwood",
+		"item:window_box:chthonic_yew_log",
+		"item:window_box:chthonic_yew_wood",
+		"item:everycomp:q/window_box/chthonic_yew_post",
+		"item:window_box:stripped_chthonic_yew_log",
+		"item:window_box:stripped_chthonic_yew_wood",
+		"item:everycomp:q/window_box/stripped_chthonic_yew_post",
+		"item:window_box:chthonic_yew_planks",
+		"item:everycomp:q/window_box/chthonic_yew_bookshelf",
+		"item:everycomp:hc/window_box/chthonic_yew_bench",
+		"item:everycomp:hc/window_box/chthonic_yew_chair",
+		"item:everycomp:hc/window_box/chthonic_yew_couch",
+		"item:everycomp:hc/window_box/chthonic_yew_dining_bench",
+		"item:everycomp:hc/window_box/chthonic_yew_side_table",
+		"item:everycomp:hc/window_box/chthonic_yew_desk",
+		"item:everycomp:hc/window_box/chthonic_yew_nightstand",
+		"item:everycomp:hc/window_box/chthonic_yew_table",
+		"item:everycomp:hc/window_box/chthonic_yew_counter",
+		"item:everycomp:fd/window_box/chthonic_yew_cabinet",
+		"item:everycomp:q/window_box/chthonic_yew_chest",
+		"item:everycomp:hc/window_box/chthonic_yew_fancy_bed",
+		"item:window_box:chthonic_yew_stairs",
+		"item:window_box:chthonic_yew_slab",
+		"item:v_slab_compat:window_box/chthonic_yew_vertical_slab",
+		"item:suppsquared:window_box/item_shelf_chthonic_yew",
+		"item:window_box:chthonic_yew_fence",
+		"item:window_box:chthonic_yew_fence_gate",
+		"item:window_box:chthonic_yew_door",
+		"item:window_box:chthonic_yew_trapdoor",
+		"item:everycomp:q/window_box/chthonic_yew_ladder",
+		"item:everycomp:hnhome/window_box/chthonic_yew_lattice",
+		"item:window_box:chthonic_yew_pressure_plate",
+		"item:window_box:chthonic_yew_button",
+		"item:window_box:chthonic_yew_sign",
+		"item:supplementaries:window_box/sign_post_chthonic_yew",
+		"item:window_box:chthonic_yew_hanging_sign",
+		"item:window_box:chthonic_yew_boat",
+		"item:window_box:alfthorne_log",
+		"item:window_box:alfthorne_wood",
+		"item:everycomp:q/window_box/alfthorne_post",
+		"item:window_box:stripped_alfthorne_log",
+		"item:window_box:stripped_alfthorne_wood",
+		"item:everycomp:q/window_box/stripped_alfthorne_post",
+		"item:window_box:alfthorne_planks",
+		"item:everycomp:q/window_box/alfthorne_bookshelf",
+		"item:everycomp:hc/window_box/alfthorne_bench",
+		"item:everycomp:hc/window_box/alfthorne_chair",
+		"item:everycomp:hc/window_box/alfthorne_couch",
+		"item:everycomp:hc/window_box/alfthorne_dining_bench",
+		"item:everycomp:hc/window_box/alfthorne_side_table",
+		"item:everycomp:hc/window_box/alfthorne_desk",
+		"item:everycomp:hc/window_box/alfthorne_nightstand",
+		"item:everycomp:hc/window_box/alfthorne_table",
+		"item:everycomp:hc/window_box/alfthorne_counter",
+		"item:everycomp:fd/window_box/alfthorne_cabinet",
+		"item:everycomp:q/window_box/alfthorne_chest",
+		"item:everycomp:hc/window_box/alfthorne_fancy_bed",
+		"item:window_box:alfthorne_stairs",
+		"item:window_box:alfthorne_slab",
+		"item:v_slab_compat:window_box/alfthorne_vertical_slab",
+		"item:suppsquared:window_box/item_shelf_alfthorne",
+		"item:window_box:alfthorne_fence",
+		"item:window_box:alfthorne_fence_gate",
+		"item:window_box:alfthorne_door",
+		"item:window_box:alfthorne_trapdoor",
+		"item:everycomp:q/window_box/alfthorne_ladder",
+		"item:everycomp:hnhome/window_box/alfthorne_lattice",
+		"item:window_box:alfthorne_pressure_plate",
+		"item:window_box:alfthorne_button",
+		"item:window_box:alfthorne_sign",
+		"item:supplementaries:window_box/sign_post_alfthorne",
+		"item:window_box:alfthorne_hanging_sign",
+		"item:window_box:alfthorne_boat",
 		"item:everycomp:q/ars_nouveau/archwood_post",
 		"item:everycomp:q/ars_nouveau/stripped_archwood_post",
 		"item:ars_nouveau:archwood_planks",
@@ -2447,42 +2519,6 @@
 		"item:supplementaries:sign_post_mangrove",
 		"item:twilightforest:mangrove_hanging_sign",
 		"item:twilightforest:mangrove_boat",
-		"item:window_box:chthonic_yew_log",
-		"item:window_box:chthonic_yew_wood",
-		"item:everycomp:q/window_box/chthonic_yew_post",
-		"item:window_box:stripped_chthonic_yew_log",
-		"item:window_box:stripped_chthonic_yew_wood",
-		"item:everycomp:q/window_box/stripped_chthonic_yew_post",
-		"item:window_box:chthonic_yew_planks",
-		"item:everycomp:q/window_box/chthonic_yew_bookshelf",
-		"item:everycomp:hc/window_box/chthonic_yew_bench",
-		"item:everycomp:hc/window_box/chthonic_yew_chair",
-		"item:everycomp:hc/window_box/chthonic_yew_couch",
-		"item:everycomp:hc/window_box/chthonic_yew_dining_bench",
-		"item:everycomp:hc/window_box/chthonic_yew_side_table",
-		"item:everycomp:hc/window_box/chthonic_yew_desk",
-		"item:everycomp:hc/window_box/chthonic_yew_nightstand",
-		"item:everycomp:hc/window_box/chthonic_yew_table",
-		"item:everycomp:hc/window_box/chthonic_yew_counter",
-		"item:everycomp:fd/window_box/chthonic_yew_cabinet",
-		"item:everycomp:q/window_box/chthonic_yew_chest",
-		"item:everycomp:hc/window_box/chthonic_yew_fancy_bed",
-		"item:window_box:chthonic_yew_stairs",
-		"item:window_box:chthonic_yew_slab",
-		"item:v_slab_compat:window_box/chthonic_yew_vertical_slab",
-		"item:suppsquared:window_box/item_shelf_chthonic_yew",
-		"item:window_box:chthonic_yew_fence",
-		"item:window_box:chthonic_yew_fence_gate",
-		"item:window_box:chthonic_yew_door",
-		"item:window_box:chthonic_yew_trapdoor",
-		"item:everycomp:q/window_box/chthonic_yew_ladder",
-		"item:everycomp:hnhome/window_box/chthonic_yew_lattice",
-		"item:window_box:chthonic_yew_pressure_plate",
-		"item:window_box:chthonic_yew_button",
-		"item:window_box:chthonic_yew_sign",
-		"item:supplementaries:window_box/sign_post_chthonic_yew",
-		"item:window_box:chthonic_yew_hanging_sign",
-		"item:window_box:chthonic_yew_boat",
 		"item:twilightforest:mining_log",
 		"item:twilightforest:mining_wood",
 		"item:everycomp:q/twilightforest/mining_post",
@@ -2591,42 +2627,6 @@
 		"item:supplementaries:twilightforest/sign_post_twilight_oak",
 		"item:twilightforest:twilight_oak_hanging_sign",
 		"item:twilightforest:twilight_oak_boat",
-		"item:window_box:alfthorne_log",
-		"item:window_box:alfthorne_wood",
-		"item:everycomp:q/window_box/alfthorne_post",
-		"item:window_box:stripped_alfthorne_log",
-		"item:window_box:stripped_alfthorne_wood",
-		"item:everycomp:q/window_box/stripped_alfthorne_post",
-		"item:window_box:alfthorne_planks",
-		"item:everycomp:q/window_box/alfthorne_bookshelf",
-		"item:everycomp:hc/window_box/alfthorne_bench",
-		"item:everycomp:hc/window_box/alfthorne_chair",
-		"item:everycomp:hc/window_box/alfthorne_couch",
-		"item:everycomp:hc/window_box/alfthorne_dining_bench",
-		"item:everycomp:hc/window_box/alfthorne_side_table",
-		"item:everycomp:hc/window_box/alfthorne_desk",
-		"item:everycomp:hc/window_box/alfthorne_nightstand",
-		"item:everycomp:hc/window_box/alfthorne_table",
-		"item:everycomp:hc/window_box/alfthorne_counter",
-		"item:everycomp:fd/window_box/alfthorne_cabinet",
-		"item:everycomp:q/window_box/alfthorne_chest",
-		"item:everycomp:hc/window_box/alfthorne_fancy_bed",
-		"item:window_box:alfthorne_stairs",
-		"item:window_box:alfthorne_slab",
-		"item:v_slab_compat:window_box/alfthorne_vertical_slab",
-		"item:suppsquared:window_box/item_shelf_alfthorne",
-		"item:window_box:alfthorne_fence",
-		"item:window_box:alfthorne_fence_gate",
-		"item:window_box:alfthorne_door",
-		"item:window_box:alfthorne_trapdoor",
-		"item:everycomp:q/window_box/alfthorne_ladder",
-		"item:everycomp:hnhome/window_box/alfthorne_lattice",
-		"item:window_box:alfthorne_pressure_plate",
-		"item:window_box:alfthorne_button",
-		"item:window_box:alfthorne_sign",
-		"item:supplementaries:window_box/sign_post_alfthorne",
-		"item:window_box:alfthorne_hanging_sign",
-		"item:window_box:alfthorne_boat",
 		"item:twilightforest:dark_log",
 		"item:twilightforest:dark_wood",
 		"item:everycomp:q/twilightforest/dark_post",
@@ -8892,8 +8892,296 @@
 			"after": "item:everycomp:hnhome/botania/dreamwood_lattice"
 		},
 		{
-			"stack": "item:everycomp:q/ars_nouveau/archwood_post",
+			"stack": "item:window_box:chthonic_yew_log",
 			"after": "item:supplementaries:botania/sign_post_dreamwood"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_wood",
+			"after": "item:window_box:chthonic_yew_log"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/chthonic_yew_post",
+			"after": "item:window_box:chthonic_yew_wood"
+		},
+		{
+			"stack": "item:window_box:stripped_chthonic_yew_log",
+			"after": "item:everycomp:q/window_box/chthonic_yew_post"
+		},
+		{
+			"stack": "item:window_box:stripped_chthonic_yew_wood",
+			"after": "item:window_box:stripped_chthonic_yew_log"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/stripped_chthonic_yew_post",
+			"after": "item:window_box:stripped_chthonic_yew_wood"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_planks",
+			"after": "item:everycomp:q/window_box/stripped_chthonic_yew_post"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/chthonic_yew_bookshelf",
+			"after": "item:window_box:chthonic_yew_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/chthonic_yew_bench",
+			"after": "item:everycomp:q/window_box/chthonic_yew_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/chthonic_yew_chair",
+			"after": "item:everycomp:hc/window_box/chthonic_yew_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/chthonic_yew_couch",
+			"after": "item:everycomp:hc/window_box/chthonic_yew_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/chthonic_yew_dining_bench",
+			"after": "item:everycomp:hc/window_box/chthonic_yew_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/chthonic_yew_side_table",
+			"after": "item:everycomp:hc/window_box/chthonic_yew_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/chthonic_yew_desk",
+			"after": "item:everycomp:hc/window_box/chthonic_yew_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/chthonic_yew_nightstand",
+			"after": "item:everycomp:hc/window_box/chthonic_yew_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/chthonic_yew_table",
+			"after": "item:everycomp:hc/window_box/chthonic_yew_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/chthonic_yew_counter",
+			"after": "item:everycomp:hc/window_box/chthonic_yew_table"
+		},
+		{
+			"stack": "item:everycomp:fd/window_box/chthonic_yew_cabinet",
+			"after": "item:everycomp:hc/window_box/chthonic_yew_counter"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/chthonic_yew_chest",
+			"after": "item:everycomp:fd/window_box/chthonic_yew_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/chthonic_yew_fancy_bed",
+			"after": "item:everycomp:q/window_box/chthonic_yew_chest"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_stairs",
+			"after": "item:everycomp:hc/window_box/chthonic_yew_fancy_bed"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_slab",
+			"after": "item:window_box:chthonic_yew_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:window_box/chthonic_yew_vertical_slab",
+			"after": "item:window_box:chthonic_yew_slab"
+		},
+		{
+			"stack": "item:suppsquared:window_box/item_shelf_chthonic_yew",
+			"after": "item:v_slab_compat:window_box/chthonic_yew_vertical_slab"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_fence",
+			"after": "item:suppsquared:window_box/item_shelf_chthonic_yew"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_fence_gate",
+			"after": "item:window_box:chthonic_yew_fence"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_door",
+			"after": "item:window_box:chthonic_yew_fence_gate"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_trapdoor",
+			"after": "item:window_box:chthonic_yew_door"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/chthonic_yew_ladder",
+			"after": "item:window_box:chthonic_yew_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/window_box/chthonic_yew_lattice",
+			"after": "item:everycomp:q/window_box/chthonic_yew_ladder"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_pressure_plate",
+			"after": "item:everycomp:hnhome/window_box/chthonic_yew_lattice"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_button",
+			"after": "item:window_box:chthonic_yew_pressure_plate"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_sign",
+			"after": "item:window_box:chthonic_yew_button"
+		},
+		{
+			"stack": "item:supplementaries:window_box/sign_post_chthonic_yew",
+			"after": "item:window_box:chthonic_yew_sign"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_hanging_sign",
+			"after": "item:supplementaries:window_box/sign_post_chthonic_yew"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_boat",
+			"after": "item:window_box:chthonic_yew_hanging_sign"
+		},
+		{
+			"stack": "item:window_box:alfthorne_log",
+			"after": "item:window_box:chthonic_yew_boat"
+		},
+		{
+			"stack": "item:window_box:alfthorne_wood",
+			"after": "item:window_box:alfthorne_log"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/alfthorne_post",
+			"after": "item:window_box:alfthorne_wood"
+		},
+		{
+			"stack": "item:window_box:stripped_alfthorne_log",
+			"after": "item:everycomp:q/window_box/alfthorne_post"
+		},
+		{
+			"stack": "item:window_box:stripped_alfthorne_wood",
+			"after": "item:window_box:stripped_alfthorne_log"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/stripped_alfthorne_post",
+			"after": "item:window_box:stripped_alfthorne_wood"
+		},
+		{
+			"stack": "item:window_box:alfthorne_planks",
+			"after": "item:everycomp:q/window_box/stripped_alfthorne_post"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/alfthorne_bookshelf",
+			"after": "item:window_box:alfthorne_planks"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/alfthorne_bench",
+			"after": "item:everycomp:q/window_box/alfthorne_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/alfthorne_chair",
+			"after": "item:everycomp:hc/window_box/alfthorne_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/alfthorne_couch",
+			"after": "item:everycomp:hc/window_box/alfthorne_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/alfthorne_dining_bench",
+			"after": "item:everycomp:hc/window_box/alfthorne_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/alfthorne_side_table",
+			"after": "item:everycomp:hc/window_box/alfthorne_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/alfthorne_desk",
+			"after": "item:everycomp:hc/window_box/alfthorne_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/alfthorne_nightstand",
+			"after": "item:everycomp:hc/window_box/alfthorne_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/alfthorne_table",
+			"after": "item:everycomp:hc/window_box/alfthorne_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/alfthorne_counter",
+			"after": "item:everycomp:hc/window_box/alfthorne_table"
+		},
+		{
+			"stack": "item:everycomp:fd/window_box/alfthorne_cabinet",
+			"after": "item:everycomp:hc/window_box/alfthorne_counter"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/alfthorne_chest",
+			"after": "item:everycomp:fd/window_box/alfthorne_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/window_box/alfthorne_fancy_bed",
+			"after": "item:everycomp:q/window_box/alfthorne_chest"
+		},
+		{
+			"stack": "item:window_box:alfthorne_stairs",
+			"after": "item:everycomp:hc/window_box/alfthorne_fancy_bed"
+		},
+		{
+			"stack": "item:window_box:alfthorne_slab",
+			"after": "item:window_box:alfthorne_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:window_box/alfthorne_vertical_slab",
+			"after": "item:window_box:alfthorne_slab"
+		},
+		{
+			"stack": "item:suppsquared:window_box/item_shelf_alfthorne",
+			"after": "item:v_slab_compat:window_box/alfthorne_vertical_slab"
+		},
+		{
+			"stack": "item:window_box:alfthorne_fence",
+			"after": "item:suppsquared:window_box/item_shelf_alfthorne"
+		},
+		{
+			"stack": "item:window_box:alfthorne_fence_gate",
+			"after": "item:window_box:alfthorne_fence"
+		},
+		{
+			"stack": "item:window_box:alfthorne_door",
+			"after": "item:window_box:alfthorne_fence_gate"
+		},
+		{
+			"stack": "item:window_box:alfthorne_trapdoor",
+			"after": "item:window_box:alfthorne_door"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/alfthorne_ladder",
+			"after": "item:window_box:alfthorne_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/window_box/alfthorne_lattice",
+			"after": "item:everycomp:q/window_box/alfthorne_ladder"
+		},
+		{
+			"stack": "item:window_box:alfthorne_pressure_plate",
+			"after": "item:everycomp:hnhome/window_box/alfthorne_lattice"
+		},
+		{
+			"stack": "item:window_box:alfthorne_button",
+			"after": "item:window_box:alfthorne_pressure_plate"
+		},
+		{
+			"stack": "item:window_box:alfthorne_sign",
+			"after": "item:window_box:alfthorne_button"
+		},
+		{
+			"stack": "item:supplementaries:window_box/sign_post_alfthorne",
+			"after": "item:window_box:alfthorne_sign"
+		},
+		{
+			"stack": "item:window_box:alfthorne_hanging_sign",
+			"after": "item:supplementaries:window_box/sign_post_alfthorne"
+		},
+		{
+			"stack": "item:window_box:alfthorne_boat",
+			"after": "item:window_box:alfthorne_hanging_sign"
+		},
+		{
+			"stack": "item:everycomp:q/ars_nouveau/archwood_post",
+			"after": "item:window_box:alfthorne_boat"
 		},
 		{
 			"stack": "item:everycomp:q/ars_nouveau/stripped_archwood_post",
@@ -12880,152 +13168,8 @@
 			"after": "item:twilightforest:mangrove_hanging_sign"
 		},
 		{
-			"stack": "item:window_box:chthonic_yew_log",
-			"after": "item:twilightforest:mangrove_boat"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_wood",
-			"after": "item:window_box:chthonic_yew_log"
-		},
-		{
-			"stack": "item:everycomp:q/window_box/chthonic_yew_post",
-			"after": "item:window_box:chthonic_yew_wood"
-		},
-		{
-			"stack": "item:window_box:stripped_chthonic_yew_log",
-			"after": "item:everycomp:q/window_box/chthonic_yew_post"
-		},
-		{
-			"stack": "item:window_box:stripped_chthonic_yew_wood",
-			"after": "item:window_box:stripped_chthonic_yew_log"
-		},
-		{
-			"stack": "item:everycomp:q/window_box/stripped_chthonic_yew_post",
-			"after": "item:window_box:stripped_chthonic_yew_wood"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_planks",
-			"after": "item:everycomp:q/window_box/stripped_chthonic_yew_post"
-		},
-		{
-			"stack": "item:everycomp:q/window_box/chthonic_yew_bookshelf",
-			"after": "item:window_box:chthonic_yew_planks"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/chthonic_yew_bench",
-			"after": "item:everycomp:q/window_box/chthonic_yew_bookshelf"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/chthonic_yew_chair",
-			"after": "item:everycomp:hc/window_box/chthonic_yew_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/chthonic_yew_couch",
-			"after": "item:everycomp:hc/window_box/chthonic_yew_chair"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/chthonic_yew_dining_bench",
-			"after": "item:everycomp:hc/window_box/chthonic_yew_couch"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/chthonic_yew_side_table",
-			"after": "item:everycomp:hc/window_box/chthonic_yew_dining_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/chthonic_yew_desk",
-			"after": "item:everycomp:hc/window_box/chthonic_yew_side_table"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/chthonic_yew_nightstand",
-			"after": "item:everycomp:hc/window_box/chthonic_yew_desk"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/chthonic_yew_table",
-			"after": "item:everycomp:hc/window_box/chthonic_yew_nightstand"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/chthonic_yew_counter",
-			"after": "item:everycomp:hc/window_box/chthonic_yew_table"
-		},
-		{
-			"stack": "item:everycomp:fd/window_box/chthonic_yew_cabinet",
-			"after": "item:everycomp:hc/window_box/chthonic_yew_counter"
-		},
-		{
-			"stack": "item:everycomp:q/window_box/chthonic_yew_chest",
-			"after": "item:everycomp:fd/window_box/chthonic_yew_cabinet"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/chthonic_yew_fancy_bed",
-			"after": "item:everycomp:q/window_box/chthonic_yew_chest"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_stairs",
-			"after": "item:everycomp:hc/window_box/chthonic_yew_fancy_bed"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_slab",
-			"after": "item:window_box:chthonic_yew_stairs"
-		},
-		{
-			"stack": "item:v_slab_compat:window_box/chthonic_yew_vertical_slab",
-			"after": "item:window_box:chthonic_yew_slab"
-		},
-		{
-			"stack": "item:suppsquared:window_box/item_shelf_chthonic_yew",
-			"after": "item:v_slab_compat:window_box/chthonic_yew_vertical_slab"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_fence",
-			"after": "item:suppsquared:window_box/item_shelf_chthonic_yew"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_fence_gate",
-			"after": "item:window_box:chthonic_yew_fence"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_door",
-			"after": "item:window_box:chthonic_yew_fence_gate"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_trapdoor",
-			"after": "item:window_box:chthonic_yew_door"
-		},
-		{
-			"stack": "item:everycomp:q/window_box/chthonic_yew_ladder",
-			"after": "item:window_box:chthonic_yew_trapdoor"
-		},
-		{
-			"stack": "item:everycomp:hnhome/window_box/chthonic_yew_lattice",
-			"after": "item:everycomp:q/window_box/chthonic_yew_ladder"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_pressure_plate",
-			"after": "item:everycomp:hnhome/window_box/chthonic_yew_lattice"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_button",
-			"after": "item:window_box:chthonic_yew_pressure_plate"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_sign",
-			"after": "item:window_box:chthonic_yew_button"
-		},
-		{
-			"stack": "item:supplementaries:window_box/sign_post_chthonic_yew",
-			"after": "item:window_box:chthonic_yew_sign"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_hanging_sign",
-			"after": "item:supplementaries:window_box/sign_post_chthonic_yew"
-		},
-		{
-			"stack": "item:window_box:chthonic_yew_boat",
-			"after": "item:window_box:chthonic_yew_hanging_sign"
-		},
-		{
 			"stack": "item:twilightforest:mining_log",
-			"after": "item:window_box:chthonic_yew_boat"
+			"after": "item:twilightforest:mangrove_boat"
 		},
 		{
 			"stack": "item:twilightforest:mining_wood",
@@ -13456,152 +13600,8 @@
 			"after": "item:twilightforest:twilight_oak_hanging_sign"
 		},
 		{
-			"stack": "item:window_box:alfthorne_log",
-			"after": "item:twilightforest:twilight_oak_boat"
-		},
-		{
-			"stack": "item:window_box:alfthorne_wood",
-			"after": "item:window_box:alfthorne_log"
-		},
-		{
-			"stack": "item:everycomp:q/window_box/alfthorne_post",
-			"after": "item:window_box:alfthorne_wood"
-		},
-		{
-			"stack": "item:window_box:stripped_alfthorne_log",
-			"after": "item:everycomp:q/window_box/alfthorne_post"
-		},
-		{
-			"stack": "item:window_box:stripped_alfthorne_wood",
-			"after": "item:window_box:stripped_alfthorne_log"
-		},
-		{
-			"stack": "item:everycomp:q/window_box/stripped_alfthorne_post",
-			"after": "item:window_box:stripped_alfthorne_wood"
-		},
-		{
-			"stack": "item:window_box:alfthorne_planks",
-			"after": "item:everycomp:q/window_box/stripped_alfthorne_post"
-		},
-		{
-			"stack": "item:everycomp:q/window_box/alfthorne_bookshelf",
-			"after": "item:window_box:alfthorne_planks"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/alfthorne_bench",
-			"after": "item:everycomp:q/window_box/alfthorne_bookshelf"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/alfthorne_chair",
-			"after": "item:everycomp:hc/window_box/alfthorne_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/alfthorne_couch",
-			"after": "item:everycomp:hc/window_box/alfthorne_chair"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/alfthorne_dining_bench",
-			"after": "item:everycomp:hc/window_box/alfthorne_couch"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/alfthorne_side_table",
-			"after": "item:everycomp:hc/window_box/alfthorne_dining_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/alfthorne_desk",
-			"after": "item:everycomp:hc/window_box/alfthorne_side_table"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/alfthorne_nightstand",
-			"after": "item:everycomp:hc/window_box/alfthorne_desk"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/alfthorne_table",
-			"after": "item:everycomp:hc/window_box/alfthorne_nightstand"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/alfthorne_counter",
-			"after": "item:everycomp:hc/window_box/alfthorne_table"
-		},
-		{
-			"stack": "item:everycomp:fd/window_box/alfthorne_cabinet",
-			"after": "item:everycomp:hc/window_box/alfthorne_counter"
-		},
-		{
-			"stack": "item:everycomp:q/window_box/alfthorne_chest",
-			"after": "item:everycomp:fd/window_box/alfthorne_cabinet"
-		},
-		{
-			"stack": "item:everycomp:hc/window_box/alfthorne_fancy_bed",
-			"after": "item:everycomp:q/window_box/alfthorne_chest"
-		},
-		{
-			"stack": "item:window_box:alfthorne_stairs",
-			"after": "item:everycomp:hc/window_box/alfthorne_fancy_bed"
-		},
-		{
-			"stack": "item:window_box:alfthorne_slab",
-			"after": "item:window_box:alfthorne_stairs"
-		},
-		{
-			"stack": "item:v_slab_compat:window_box/alfthorne_vertical_slab",
-			"after": "item:window_box:alfthorne_slab"
-		},
-		{
-			"stack": "item:suppsquared:window_box/item_shelf_alfthorne",
-			"after": "item:v_slab_compat:window_box/alfthorne_vertical_slab"
-		},
-		{
-			"stack": "item:window_box:alfthorne_fence",
-			"after": "item:suppsquared:window_box/item_shelf_alfthorne"
-		},
-		{
-			"stack": "item:window_box:alfthorne_fence_gate",
-			"after": "item:window_box:alfthorne_fence"
-		},
-		{
-			"stack": "item:window_box:alfthorne_door",
-			"after": "item:window_box:alfthorne_fence_gate"
-		},
-		{
-			"stack": "item:window_box:alfthorne_trapdoor",
-			"after": "item:window_box:alfthorne_door"
-		},
-		{
-			"stack": "item:everycomp:q/window_box/alfthorne_ladder",
-			"after": "item:window_box:alfthorne_trapdoor"
-		},
-		{
-			"stack": "item:everycomp:hnhome/window_box/alfthorne_lattice",
-			"after": "item:everycomp:q/window_box/alfthorne_ladder"
-		},
-		{
-			"stack": "item:window_box:alfthorne_pressure_plate",
-			"after": "item:everycomp:hnhome/window_box/alfthorne_lattice"
-		},
-		{
-			"stack": "item:window_box:alfthorne_button",
-			"after": "item:window_box:alfthorne_pressure_plate"
-		},
-		{
-			"stack": "item:window_box:alfthorne_sign",
-			"after": "item:window_box:alfthorne_button"
-		},
-		{
-			"stack": "item:supplementaries:window_box/sign_post_alfthorne",
-			"after": "item:window_box:alfthorne_sign"
-		},
-		{
-			"stack": "item:window_box:alfthorne_hanging_sign",
-			"after": "item:supplementaries:window_box/sign_post_alfthorne"
-		},
-		{
-			"stack": "item:window_box:alfthorne_boat",
-			"after": "item:window_box:alfthorne_hanging_sign"
-		},
-		{
 			"stack": "item:twilightforest:dark_log",
-			"after": "item:window_box:alfthorne_boat"
+			"after": "item:twilightforest:twilight_oak_boat"
 		},
 		{
 			"stack": "item:twilightforest:dark_wood",
@@ -16996,6 +16996,78 @@
 		"/everycomp:q\\/botania/dreamwood_ladder/",
 		"/everycomp:hnhome\\/botania/dreamwood_lattice/",
 		"/supplementaries:botania\\/sign_post_dreamwood/",
+		"/window_box:chthonic_yew_log/",
+		"/window_box:chthonic_yew_wood/",
+		"/everycomp:q\\/window_box/chthonic_yew_post/",
+		"/window_box:stripped_chthonic_yew_log/",
+		"/window_box:stripped_chthonic_yew_wood/",
+		"/everycomp:q\\/window_box/stripped_chthonic_yew_post/",
+		"/window_box:chthonic_yew_planks/",
+		"/everycomp:q\\/window_box/chthonic_yew_bookshelf/",
+		"/everycomp:hc\\/window_box/chthonic_yew_bench/",
+		"/everycomp:hc\\/window_box/chthonic_yew_chair/",
+		"/everycomp:hc\\/window_box/chthonic_yew_couch/",
+		"/everycomp:hc\\/window_box/chthonic_yew_dining_bench/",
+		"/everycomp:hc\\/window_box/chthonic_yew_side_table/",
+		"/everycomp:hc\\/window_box/chthonic_yew_desk/",
+		"/everycomp:hc\\/window_box/chthonic_yew_nightstand/",
+		"/everycomp:hc\\/window_box/chthonic_yew_table/",
+		"/everycomp:hc\\/window_box/chthonic_yew_counter/",
+		"/everycomp:fd\\/window_box/chthonic_yew_cabinet/",
+		"/everycomp:q\\/window_box/chthonic_yew_chest/",
+		"/everycomp:hc\\/window_box/chthonic_yew_fancy_bed/",
+		"/window_box:chthonic_yew_stairs/",
+		"/window_box:chthonic_yew_slab/",
+		"/v_slab_compat:window_box\\/chthonic_yew_vertical_slab/",
+		"/suppsquared:window_box\\/item_shelf_chthonic_yew/",
+		"/window_box:chthonic_yew_fence/",
+		"/window_box:chthonic_yew_fence_gate/",
+		"/window_box:chthonic_yew_door/",
+		"/window_box:chthonic_yew_trapdoor/",
+		"/everycomp:q\\/window_box/chthonic_yew_ladder/",
+		"/everycomp:hnhome\\/window_box/chthonic_yew_lattice/",
+		"/window_box:chthonic_yew_pressure_plate/",
+		"/window_box:chthonic_yew_button/",
+		"/window_box:chthonic_yew_sign/",
+		"/supplementaries:window_box\\/sign_post_chthonic_yew/",
+		"/window_box:chthonic_yew_hanging_sign/",
+		"/window_box:chthonic_yew_boat/",
+		"/window_box:alfthorne_log/",
+		"/window_box:alfthorne_wood/",
+		"/everycomp:q\\/window_box/alfthorne_post/",
+		"/window_box:stripped_alfthorne_log/",
+		"/window_box:stripped_alfthorne_wood/",
+		"/everycomp:q\\/window_box/stripped_alfthorne_post/",
+		"/window_box:alfthorne_planks/",
+		"/everycomp:q\\/window_box/alfthorne_bookshelf/",
+		"/everycomp:hc\\/window_box/alfthorne_bench/",
+		"/everycomp:hc\\/window_box/alfthorne_chair/",
+		"/everycomp:hc\\/window_box/alfthorne_couch/",
+		"/everycomp:hc\\/window_box/alfthorne_dining_bench/",
+		"/everycomp:hc\\/window_box/alfthorne_side_table/",
+		"/everycomp:hc\\/window_box/alfthorne_desk/",
+		"/everycomp:hc\\/window_box/alfthorne_nightstand/",
+		"/everycomp:hc\\/window_box/alfthorne_table/",
+		"/everycomp:hc\\/window_box/alfthorne_counter/",
+		"/everycomp:fd\\/window_box/alfthorne_cabinet/",
+		"/everycomp:q\\/window_box/alfthorne_chest/",
+		"/everycomp:hc\\/window_box/alfthorne_fancy_bed/",
+		"/window_box:alfthorne_stairs/",
+		"/window_box:alfthorne_slab/",
+		"/v_slab_compat:window_box\\/alfthorne_vertical_slab/",
+		"/suppsquared:window_box\\/item_shelf_alfthorne/",
+		"/window_box:alfthorne_fence/",
+		"/window_box:alfthorne_fence_gate/",
+		"/window_box:alfthorne_door/",
+		"/window_box:alfthorne_trapdoor/",
+		"/everycomp:q\\/window_box/alfthorne_ladder/",
+		"/everycomp:hnhome\\/window_box/alfthorne_lattice/",
+		"/window_box:alfthorne_pressure_plate/",
+		"/window_box:alfthorne_button/",
+		"/window_box:alfthorne_sign/",
+		"/supplementaries:window_box\\/sign_post_alfthorne/",
+		"/window_box:alfthorne_hanging_sign/",
+		"/window_box:alfthorne_boat/",
 		"/everycomp:q\\/ars_nouveau/archwood_post/",
 		"/everycomp:q\\/ars_nouveau/stripped_archwood_post/",
 		"/ars_nouveau:archwood_planks/",
@@ -17993,42 +18065,6 @@
 		"/supplementaries:sign_post_mangrove/",
 		"/twilightforest:mangrove_hanging_sign/",
 		"/twilightforest:mangrove_boat/",
-		"/window_box:chthonic_yew_log/",
-		"/window_box:chthonic_yew_wood/",
-		"/everycomp:q\\/window_box/chthonic_yew_post/",
-		"/window_box:stripped_chthonic_yew_log/",
-		"/window_box:stripped_chthonic_yew_wood/",
-		"/everycomp:q\\/window_box/stripped_chthonic_yew_post/",
-		"/window_box:chthonic_yew_planks/",
-		"/everycomp:q\\/window_box/chthonic_yew_bookshelf/",
-		"/everycomp:hc\\/window_box/chthonic_yew_bench/",
-		"/everycomp:hc\\/window_box/chthonic_yew_chair/",
-		"/everycomp:hc\\/window_box/chthonic_yew_couch/",
-		"/everycomp:hc\\/window_box/chthonic_yew_dining_bench/",
-		"/everycomp:hc\\/window_box/chthonic_yew_side_table/",
-		"/everycomp:hc\\/window_box/chthonic_yew_desk/",
-		"/everycomp:hc\\/window_box/chthonic_yew_nightstand/",
-		"/everycomp:hc\\/window_box/chthonic_yew_table/",
-		"/everycomp:hc\\/window_box/chthonic_yew_counter/",
-		"/everycomp:fd\\/window_box/chthonic_yew_cabinet/",
-		"/everycomp:q\\/window_box/chthonic_yew_chest/",
-		"/everycomp:hc\\/window_box/chthonic_yew_fancy_bed/",
-		"/window_box:chthonic_yew_stairs/",
-		"/window_box:chthonic_yew_slab/",
-		"/v_slab_compat:window_box\\/chthonic_yew_vertical_slab/",
-		"/suppsquared:window_box\\/item_shelf_chthonic_yew/",
-		"/window_box:chthonic_yew_fence/",
-		"/window_box:chthonic_yew_fence_gate/",
-		"/window_box:chthonic_yew_door/",
-		"/window_box:chthonic_yew_trapdoor/",
-		"/everycomp:q\\/window_box/chthonic_yew_ladder/",
-		"/everycomp:hnhome\\/window_box/chthonic_yew_lattice/",
-		"/window_box:chthonic_yew_pressure_plate/",
-		"/window_box:chthonic_yew_button/",
-		"/window_box:chthonic_yew_sign/",
-		"/supplementaries:window_box\\/sign_post_chthonic_yew/",
-		"/window_box:chthonic_yew_hanging_sign/",
-		"/window_box:chthonic_yew_boat/",
 		"/twilightforest:mining_log/",
 		"/twilightforest:mining_wood/",
 		"/everycomp:q\\/twilightforest/mining_post/",
@@ -18137,42 +18173,6 @@
 		"/supplementaries:twilightforest\\/sign_post_twilight_oak/",
 		"/twilightforest:twilight_oak_hanging_sign/",
 		"/twilightforest:twilight_oak_boat/",
-		"/window_box:alfthorne_log/",
-		"/window_box:alfthorne_wood/",
-		"/everycomp:q\\/window_box/alfthorne_post/",
-		"/window_box:stripped_alfthorne_log/",
-		"/window_box:stripped_alfthorne_wood/",
-		"/everycomp:q\\/window_box/stripped_alfthorne_post/",
-		"/window_box:alfthorne_planks/",
-		"/everycomp:q\\/window_box/alfthorne_bookshelf/",
-		"/everycomp:hc\\/window_box/alfthorne_bench/",
-		"/everycomp:hc\\/window_box/alfthorne_chair/",
-		"/everycomp:hc\\/window_box/alfthorne_couch/",
-		"/everycomp:hc\\/window_box/alfthorne_dining_bench/",
-		"/everycomp:hc\\/window_box/alfthorne_side_table/",
-		"/everycomp:hc\\/window_box/alfthorne_desk/",
-		"/everycomp:hc\\/window_box/alfthorne_nightstand/",
-		"/everycomp:hc\\/window_box/alfthorne_table/",
-		"/everycomp:hc\\/window_box/alfthorne_counter/",
-		"/everycomp:fd\\/window_box/alfthorne_cabinet/",
-		"/everycomp:q\\/window_box/alfthorne_chest/",
-		"/everycomp:hc\\/window_box/alfthorne_fancy_bed/",
-		"/window_box:alfthorne_stairs/",
-		"/window_box:alfthorne_slab/",
-		"/v_slab_compat:window_box\\/alfthorne_vertical_slab/",
-		"/suppsquared:window_box\\/item_shelf_alfthorne/",
-		"/window_box:alfthorne_fence/",
-		"/window_box:alfthorne_fence_gate/",
-		"/window_box:alfthorne_door/",
-		"/window_box:alfthorne_trapdoor/",
-		"/everycomp:q\\/window_box/alfthorne_ladder/",
-		"/everycomp:hnhome\\/window_box/alfthorne_lattice/",
-		"/window_box:alfthorne_pressure_plate/",
-		"/window_box:alfthorne_button/",
-		"/window_box:alfthorne_sign/",
-		"/supplementaries:window_box\\/sign_post_alfthorne/",
-		"/window_box:alfthorne_hanging_sign/",
-		"/window_box:alfthorne_boat/",
 		"/twilightforest:dark_log/",
 		"/twilightforest:dark_wood/",
 		"/everycomp:q\\/twilightforest/dark_post/",

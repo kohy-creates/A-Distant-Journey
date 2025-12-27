@@ -7,6 +7,7 @@ version = 1
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -18,6 +19,7 @@ key = "page.up"
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -29,6 +31,7 @@ key = "page.down"
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -40,6 +43,7 @@ key = "home"
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -51,6 +55,7 @@ key = "end"
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -62,6 +67,7 @@ key = "c"
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -73,6 +79,7 @@ key = "v"
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -84,6 +91,7 @@ key = "x"
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -95,6 +103,7 @@ key = "s"
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -106,6 +115,7 @@ key = "z"
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "mouse"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -117,6 +127,7 @@ key = "mouse.right"
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -128,6 +139,7 @@ key = "backspace"
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -139,6 +151,7 @@ key = "e"
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -150,6 +163,7 @@ key = "f1"
 ctrl = "false"
 shift = "true"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -161,6 +175,7 @@ key = "escape"
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -170,6 +185,7 @@ key = "f"
 ctrl = "false"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -181,6 +197,7 @@ key = "f3"
 ctrl = "false"
 shift = "true"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -190,6 +207,7 @@ key = "f10"
 ctrl = "false"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -201,6 +219,7 @@ key = "menu"
 ctrl = "false"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
@@ -210,6 +229,7 @@ key = "enter"
 ctrl = "false"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
 # String representation of the key, or the integer keycode
 # Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.

@@ -20,14 +20,14 @@
 	#
 	# What mobs the Glory Incarnata will cure, and the mobs they are cured into
 	# The list should be a sets of 3: original mob ID, new mob ID, time to cure in ticks
-	glory_incarnata_can_cure = ["minecraft:zombie_villager", "minecraft:villager", "200", "minecraft:zombified_piglin", "minecraft:piglin", "200", "minecraft:zoglin", "minecraft:hoglin", "200"]
+	glory_incarnata_can_cure = ["minecraft:zombie_villager", "minecraft:villager", "3000", "minecraft:zombified_piglin", "minecraft:piglin", "3000", "minecraft:zoglin", "minecraft:hoglin", "3000"]
 
 [Dispelagonium]
 	# A list of (potion) effect IDs which the Dispelagonium cannot dispel
 	dispelagonium_blacklist = []
 	#
 	# The following potions are also configurably added in order to facilitate the Dispelagonium:
-	enable_wither_potion = true
-	enable_mining_fatigue_potion = true
-	enable_levitation_potion = true
+	enable_wither_potion = false
+	enable_mining_fatigue_potion = false
+	enable_levitation_potion = false
 

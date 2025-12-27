@@ -45,23 +45,9 @@
 	#For example if you want crash report to be shown earlier than latest.log in the available logs list.
 	#Supported values: https://github.com/KostromDan/Crash-Assistant/blob/1.19-1.20.1/app/src/main/java/dev/kostromdan/mods/crash_assistant/app/logs_analyser/LogType.java
 	#Usage: ["CRASH_REPORT", "LOG"]
-	logs_priority_overrides = [
-		"CRASH_REPORT",
-		"LOG",
-		"KUBE_JS",
-		"MIXER_LOGGER",
-		"HS_ERR"
-	]
+	logs_priority_overrides = ["CRASH_REPORT", "LOG", "KUBE_JS", "MIXER_LOGGER", "HS_ERR"]
 	#List of blacklisted log files (checked with startswith()). This files won't show in GUI logs list.
-	blacklisted_logs = [
-		"crafttweaker",
-		"win_event",
-		"disconnect",
-		"debug",
-		"launcher",
-		"rei",
-		"crash_assistant"
-	]
+	blacklisted_logs = ["crafttweaker", "win_event", "disconnect", "debug", "launcher", "rei", "crash_assistant"]
 
 #A simplified GUI that hides the logs list until the user opts into Expert Mode.
 [simple_mode]
@@ -184,19 +170,14 @@
 	blacklisted_reasons = []
 
 #Settings of analysis tools feature.
-#Here you can enable disable showing some analysis tools fot end user.
+#Here you can enable or disable showing some analysis tools for end user.
 [analysis_tools]
 	#Enable feature.
 	enabled = true
 	#Here you can disable some Analysis tools by class names.
 	#List of them can be found here: dev.kostromdan.mods.crash_assistant.app.gui.analysis
 	#For example "MCreatorModDetectorGUI"
-	blacklisted_tools = [
-		"AzureLibDependenciesAnalysisGUI",
-		"MCreatorModDetectorGUI",
-		"EpicFightDependenciesAnalysisGUI",
-		"CreateDependenciesAnalysisGUI.java"
-	]
+	blacklisted_tools = ["AzureLibDependenciesAnalysisGUI", "MCreatorModDetectorGUI", "EpicFightDependenciesAnalysisGUI", "CreateDependenciesAnalysisGUI.java"]
 
 #Settings of '/crash_assistant crash' command feature.
 [crash_command]

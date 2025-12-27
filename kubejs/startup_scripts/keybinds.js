@@ -6,7 +6,7 @@ KeyBindEvents.modify(event => {
 	const removedKeybinds = [
 		"key.smoothCamera",
 		"key.spectatorOutlines",
-		"key.advancements",
+		// "key.advancements",
 		"key.entityculling.toggle",
 		"key.hammerlib.render_item",
 		"key.modernfix.config",

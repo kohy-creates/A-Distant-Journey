@@ -787,7 +787,7 @@
 		{
 			dependencies: ["31AA8F1C7BAE7AC3"]
 			id: "2EBA35960CB17035"
-			subtitle: "Asquire Diamonds"
+			subtitle: "Aquire Diamonds"
 			tasks: [{
 				id: "78A1A0FF04D20514"
 				item: "minecraft:diamond"
@@ -1203,7 +1203,7 @@
 					disable_toast: true
 					icon: {
 						Count: 1
-						id: "mythicmetals:copper_axe"
+						id: "mythicmetals:copper_shovel"
 						tag: {
 							Damage: 0
 						}
@@ -1930,7 +1930,7 @@
 				""
 				"Activate it with a Water Bucket."
 				""
-				"You probably knew all of that already, even if you weren't familiar with the Aether. We were all dissappointed to find out it's not real. It's pretty much a cannon event."
+				"You probably knew all of that already, even if you weren't familiar with the Aether. We were all dissappointed to find out it's not real. It's pretty much a canon event."
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:glowstone"

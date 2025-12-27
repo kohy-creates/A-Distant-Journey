@@ -603,13 +603,17 @@ ItemEvents.tooltip(event => {
 		// Botania floating + chibi
 		{
 			items: [
+				/window_box:floating/,
 				/botania:floating/,
 				/botanicadds:*.floating.*/
 			],
 			text: 'Can be planted on any surface'
 		},
 		{
-			items: /botania:.*_chibi/,
+			items: [
+				/botania:.*_chibi/,
+				/window_box:.*_chibi/
+			],
 			text: 'Has a smaller area of effect than its regular size counterpart',
 			opts: { position: 1 }
 		},

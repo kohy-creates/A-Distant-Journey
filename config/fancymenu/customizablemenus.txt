@@ -54,9 +54,6 @@ net.minecraft.client.gui.screens.AccessibilityOptionsScreen {
 net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
 }
 
-net.minecraft.client.gui.screens.inventory.InventoryScreen {
-}
-
 net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
 }
 
@@ -73,5 +70,8 @@ net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 }
 
 com.bisecthosting.mods.bhmenu.modules.publicserverlist.screen.PublicServersScreen {
+}
+
+net.minecraft.client.gui.screens.inventory.InventoryScreen {
 }
 

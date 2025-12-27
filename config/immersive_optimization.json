@@ -30,7 +30,8 @@
     "minecraft:arrow": false,
     "create": false,
     "minecraft:ender_dragon": false,
-    "witherstormmod:wither_storm": false
+    "witherstormmod:wither_storm": false,
+    "botania": false
   },
   "version": 2,
   "name": "immersive_optimization"

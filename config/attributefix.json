@@ -1133,6 +1133,17 @@
         "value": 100
       }
     },
+    "adjcore:generic.health_regeneration": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "confluence:magic_damage": {
       "enabled": false,
       "min": {

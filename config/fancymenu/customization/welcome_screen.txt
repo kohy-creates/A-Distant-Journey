@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = welcome_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1764784775724
+  last_edited_time = 1766785021510
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:5b29b356-5e3a-4726-bf87-0208773a7e71-1764784683696] = [groups:][instances:]
+  [loading_requirement_container_meta:b750465c-a92b-4754-bee0-d1ada272d990-1766784940305] = [groups:][instances:]
 }
 
 customization {
@@ -53,12 +53,12 @@ element {
   base_opacity = 0.5
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -176
-  y = -150
-  width = 356
+  x = -236
+  y = -147
+  width = 473
   height = 280
   stretch_x = false
   stretch_y = false
@@ -125,13 +125,13 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 393d8d72-5f84-495d-8ca1-df8c85add37e-1748114828041
-  x = 14
+  x = 12
   y = 7
-  width = 327
+  width = 444
   height = 268
   stretch_x = false
   stretch_y = false
@@ -163,7 +163,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  hoverlabel = Start your journey!
+  hoverlabel = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"time_in_intro_screen"}}","cases":"30:&6&lStart your journey!","default":"&c&oAre you sure?"}}
   label = Done
   navigatable = true
   widget_active_state_requirement_container_identifier = 547035d4-d561-44c3-992f-c752739fcd05-1748122362624
@@ -191,10 +191,10 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = bottom-centered
-  x = -70
+  x = -74
   y = -30
   width = 150
   height = 20
@@ -258,7 +258,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = mid-centered
   x = 66
@@ -311,7 +311,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = bottom-left
   x = 20
@@ -383,7 +383,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = e7683155-af4d-4301-bd83-4687f714094b-1763899351386

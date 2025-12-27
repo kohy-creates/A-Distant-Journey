@@ -1026,4 +1026,19 @@ global.setBonusMap = {
 			}
 		]
 	},
+	'kubejs:wooden': {
+		description: [
+			'1 defense'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'generic.armor',
+					value: 1,
+					operation: 0
+				}
+			}
+		]
+	},
 }

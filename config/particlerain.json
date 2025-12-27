@@ -8,10 +8,10 @@
     "surfaceRange": 48
   },
   "sound": {
-    "rainVolume": 0.2,
-    "snowVolume": 0.1,
-    "windVolume": 0.32999998,
-    "blockVolume": 0.16
+    "rainVolume": 0.25,
+    "snowVolume": 0.14999999,
+    "windVolume": 0.35,
+    "blockVolume": 0.25
   },
   "wind": {
     "strength": 0.4,
@@ -24,7 +24,7 @@
     "renderDefaultWeather": false,
     "doDefaultSplashing": false,
     "waterTint": true,
-    "tintMix": 0.6,
+    "tintMix": 0.5,
     "shaderpackTint": true,
     "syncRegistries": true,
     "crossBiomeBorder": false,
@@ -156,7 +156,7 @@
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "rain_haze",
-      "enabled": true,
+      "enabled": false,
       "density": 0.1,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -192,7 +192,7 @@
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "snow_haze",
-      "enabled": true,
+      "enabled": false,
       "density": 0.2,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -228,7 +228,7 @@
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "dust_haze",
-      "enabled": true,
+      "enabled": false,
       "density": 0.1,
       "weather": "DURING_WEATHER",
       "precipitation": [

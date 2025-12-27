@@ -1,34 +1,53 @@
 {
+	autofocus_id: "3EAD28D06360BF09"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "the_twilight_forest"
-	group: ""
+	group: "4C4C64E64E42D01F"
 	icon: "twilightforest:hollow_oak_sapling"
 	id: "4BD2F76C7C70A2CC"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["55D235AFB0D505D8"]
-		disable_toast: true
-		icon: "twilightforest:hollow_oak_sapling"
-		icon_scale: 0.75d
-		id: "3EAD28D06360BF09"
-		invisible: true
-		shape: "diamond"
-		size: 2.0d
-		subtitle: "A secondary adventure is exactly what we needed..."
-		tasks: [{
-			dimension: "twilightforest:twilight_forest"
+	quests: [
+		{
+			dependencies: ["55D235AFB0D505D8"]
 			disable_toast: true
 			icon: "twilightforest:hollow_oak_sapling"
-			id: "2ED1CAF3CB0704F9"
-			secret: true
-			title: "Enter the Twilight Forest"
-			type: "dimension"
-		}]
-		title: "The Twilight Forest"
-		x: -0.5d
-		y: -3.0d
-	}]
+			icon_scale: 0.75d
+			id: "3EAD28D06360BF09"
+			invisible: true
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "A secondary adventure is exactly what we needed..."
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				disable_toast: true
+				icon: "twilightforest:hollow_oak_sapling"
+				id: "2ED1CAF3CB0704F9"
+				secret: true
+				title: "Enter the Twilight Forest"
+				type: "dimension"
+			}]
+			title: "The Twilight Forest"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3EAD28D06360BF09"]
+			id: "718E0AAC4FC76ECF"
+			subtitle: "Slay The Naga in its Maze"
+			tasks: [{
+				entity: "twilightforest:naga"
+				icon: "twilightforest:naga_trophy"
+				id: "4BFB14C7753388E7"
+				title: "Kill The Naga"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Time to Even The Scales"
+			x: -0.5d
+			y: -1.0d
+		}
+	]
 	title: "The Twilight Forest"
 }

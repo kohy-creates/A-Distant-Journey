@@ -1,9 +1,9 @@
 {
   "fancyAdvancementToastsEnabled": true,
   "fancyQuestToastsEnabled": true,
-  "advancementToastsEnabled": true,
-  "recipeToastsEnabled": true,
-  "systemToastsEnabled": true,
+  "advancementToastsEnabled": false,
+  "recipeToastsEnabled": false,
+  "systemToastsEnabled": false,
   "tutorialToastsEnabled": false,
   "typesToIgnore": {
     "TASK": false,
