@@ -1645,20 +1645,75 @@ ServerEvents.recipes((event) => {
 	casingRecipe('born_in_chaos_v1:dark_metal_ingot', 'mythicmetals:adamantite_ingot', 'adj:adamantite_forge_casing')
 	casingRecipe('purpur_block', 'end_stone_bricks', 'adj:ender_forge_casing')
 
-	event.shapeless(
-		Item.of('brown_dye', 2),
-		[
-			'blue_dye',
-			'orange_dye'
-		]
-	).id('adj:brown_dye')
-	event.shapeless(
-		Item.of('green_dye', 2),
-		[
-			'blue_dye',
-			'yellow_dye'
-		]
-	).id('adj:green_dye')
+	// Extra Dye recipes
+	const dyeMap = {
+		1: {
+			result: 'brown',
+			combos: [
+				['blue', 'orange'],
+				['black', 'orange'],
+				['red', 'green'],
+				['yellow', 'purple']
+			]
+		},
+		2: {
+			result: 'green',
+			combos: [
+				['blue', 'yellow']
+			]
+		},
+		3: {
+			result: 'black',
+			combos: [
+				['yellow', 'cyan', 'magenta'],
+				['yellow', 'blue', 'green', 'magenta'],
+				['yellow', 'blue', 'yellow', 'blue', 'magenta'],
+				['yellow', 'blue', 'yellow', 'blue', 'purple', 'pink'],
+				['yellow', 'blue', 'yellow', 'blue', 'red', 'blue', 'pink'],
+				['yellow', 'blue', 'yellow', 'blue', 'red', 'blue', 'red', 'white']
+			]
+		},
+		4: {
+			result: 'lime',
+			combos: [
+				['cyan', 'yellow'],
+				['green', 'blue', 'yellow']
+			]
+		},
+		5: {
+			result: 'red',
+			combos: [
+				['magenta', 'yellow'],
+				['pink', 'purple', 'yellow']
+			]
+		},
+		6: {
+			result: 'blue',
+			combos: [
+				['magenta', 'cyan']
+			]
+		}
+	}
+	for (const [k, map] of Object.entries(dyeMap)) {
+		function dye(color) {
+			return `${color}_dye`;
+		}
+
+		let result = dye(map.result);
+		let i = 0;
+		for (let combo of map.combos) {
+			let dyes = [];
+			combo.forEach(d => {
+				dyes.push(dye(d));
+			})
+			event.shapeless(
+				Item.of(result, combo.length),
+				dyes
+			).id(`adj:result_${i}`)
+			i++;
+		}
+	}
+
 
 	// Awakened Ender Pearls
 	event.forEachRecipe({ type: 'crafting_shaped', output: /cataclysm\:.*eye/ }, recipe => {
