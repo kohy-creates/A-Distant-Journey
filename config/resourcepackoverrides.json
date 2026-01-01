@@ -7,8 +7,9 @@
 	"default_packs": [
 		"vanilla",
 		"mod_resources",
-		"Moonlight Mods Dynamic Assets",
 		"fabric",
+		"Moonlight Mods Dynamic Assets",
+		"file/Cubic Leaves 2.3 (performance).zip",
 		"VanillaTweaks.zip",
 		"astraliyte-s-animated-textures-v1-4.zip",
 		"builtin/resource/overrides_pack",
@@ -21,7 +22,6 @@
 		"file/FreshCompats_v1.6.zip",
 		"file/FreshlyTwilighted_v1.0.0.zip",
 		"file/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip",
-		"file/BatBackport-16x-v1.1.0.zip",
 		"file/\u00A76Drodi's Shield [V2.2].zip",
 		"file/\u00A76Drodi's Extendo grip.zip",
 		"file/reinforced_leather19.zip",
@@ -64,6 +64,11 @@
 		"file/Gentler Weather Sounds 2.0.0.zip",
 		"fragmentum",
 		"generated/fragmentum_layer",
+		"obscure_tooltips/packs/vibrant_tooltips",
+		"file/ReEviled_1.1.zip",
+		"file/\u00A7aDer's Shaded Font \u00A7e16x \u00A72v6 \u00A78(\u00A7dA\u00A78).zip",
+		"file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
+		"file/Gentler Weather Sounds 2.1.0.zip",
 		"file/kohara's Compat",
 		"file/ADJ-Music.zip"
 	],
@@ -80,11 +85,6 @@
 			"netherexp:jne_retextures",
 			"unique_nether_wood",
 			"mod/subtle_effects:resourcepacks/biome_color_water_particles",
-			"file/FreshAnimations_v1.9.2.zip",
-			"file/FreshCompats_v1.6.zip",
-			"file/FreshlyTwilighted_v1.0.0.zip",
-			"file/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip",
-			"file/BatBackport-16x-v1.1.0.zip",
 			"file/\u00A76Drodi's Shield [V2.2].zip",
 			"file/\u00A76Drodi's Extendo grip.zip",
 			"file/reinforced_leather19.zip",
@@ -128,7 +128,12 @@
 			"Dyes-Backport-1.1.1.zip",
 			"fragmentum",
 			"generated/fragmentum_layer",
+			"obscure_tooltips/packs/vibrant_tooltips",
 			"file/Twilight JAPPA Pack 1.0.0.zip",
+			"file/ReEviled_1.1.zip",
+			"file/\u00A7aDer's Shaded Font \u00A7e16x \u00A72v6 \u00A78(\u00A7dA\u00A78).zip",
+			"file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
+			"file/Gentler Weather Sounds 2.1.0.zip",
 			"file/kohara's Compat",
 			"file/ADJ-Music.zip"
 		],
@@ -156,6 +161,13 @@
 		"base": [
 			"vanilla"
 		],
+		"defaultoptional": [
+			"file/Cubic Leaves 2.3 (performance).zip",
+			"file/FreshAnimations_v1.9.2.zip",
+			"file/FreshCompats_v1.6.zip",
+			"file/FreshlyTwilighted_v1.0.0.zip",
+			"file/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip"
+		],
 		"$$base": {
 			"fixed_position": true,
 			"default_position": "BOTTOM",
@@ -164,7 +176,13 @@
 		},
 		"$$default": {
 			"hidden": true,
-			"required": true
+			"required": true,
+			"fixed_position": true
+		},
+		"$$defaultoptional": {
+			"hidden": false,
+			"required": false,
+			"fixed_position": true
 		},
 		"$$hidden": {
 			"hidden": true

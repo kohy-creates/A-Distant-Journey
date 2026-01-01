@@ -27,8 +27,9 @@ EntityEvents.spawned(event => {
 			)
 		}
 	}
-	if (global.bossMobs.includes(entity.getType())) {
+	if (global.bossMobs.includes(entity.getType()) && !entity.tags.toArray().includes('adj.announced_spawn')) {
 		event.getServer().runCommandSilent('/tellraw @a[] {"text":"<NAME> has awoken!","color":"#af4bff"}'.replace('<NAME>', entity.getDisplayName().getString()))
+		entity.addTag('adj.announced_spawn');
 	}
 })
 

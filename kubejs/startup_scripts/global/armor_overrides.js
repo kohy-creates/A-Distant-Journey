@@ -575,6 +575,16 @@ global.armorOverrides = {
 			operation: 0
 		},
 	},
+	'mythicmetals:stormyx': {
+		'generic.armor': {
+			values: [6, 8, 7, 6],
+			operation: 0
+		},
+		'generic.movement_speed': {
+			values: [0, 0, 0, 0.04],
+			operation: 1
+		},
+	},
 	'aether:gravitite': {
 		'generic.armor': {
 			values: [7, 10, 9, 7],

@@ -89,6 +89,9 @@
 			chthonic_yew = true
 			alfthorne = true
 
+		[types.wood_type.architects_palette]
+			twisted = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -168,6 +171,9 @@
 		[types.leaves_type.window_box]
 			chthonic_yew = true
 			alfthorne = true
+
+		[types.leaves_type.architects_palette]
+			twisted = true
 
 	[types.cake]
 
@@ -692,9 +698,6 @@
 		[types.cut_block_type.etcetera]
 			leveled_stone = true
 
-		[types.cut_block_type.ribbits]
-			mossy_oak_planks = true
-
 		[types.cut_block_type.evilcraft]
 			undead = true
 
@@ -703,6 +706,68 @@
 			chthonic_yew = true
 			alfthorne_wood = true
 			alfthorne = true
+
+		[types.cut_block_type.architects_palette]
+			abyssaline_brick = true
+			abyssaline_tile = true
+			hadaline_brick = true
+			hadaline_tile = true
+			entrails = true
+			myonite = true
+			myonite_brick = true
+			mushy_myonite_brick = true
+			olivestone_brick = true
+			olivestone_tile = true
+			algal_brick = true
+			overgrown_algal_brick = true
+			coal_ore_brick = true
+			lapis_ore_brick = true
+			redstone_ore_brick = true
+			iron_ore_brick = true
+			gold_ore_brick = true
+			emerald_ore_brick = true
+			diamond_ore_brick = true
+			flint_tile = true
+			polished_packed_ice = true
+			osseous_brick = true
+			withered_osseous_brick = true
+			polished_glowstone = true
+			gilded_sandstone = true
+			warpstone = true
+			twisted = true
+			basalt_tile = true
+			oak_board = true
+			birch_board = true
+			spruce_board = true
+			jungle_board = true
+			dark_oak_board = true
+			acacia_board = true
+			crimson_board = true
+			warped_board = true
+			mangrove_board = true
+			twisted_board = true
+			dripstone_brick = true
+			calcite_brick = true
+			tuff_brick = true
+			cut_nether_brass = true
+			smooth_nether_brass = true
+			esoterrack = true
+			esoterrack_brick = true
+			onyx = true
+			onyx_brick = true
+			wardstone = true
+			wardstone_brick = true
+			ancient_plating = true
+			tread_plate = true
+			oracle_brick = true
+			dark_oracle_brick = true
+			oracle_tile = true
+			cerebral_tile = true
+			moonshale = true
+			moonshale_brick = true
+			craterstone = true
+			nebulite = true
+			polished_nebulite = true
 
 #Disables specific entries
 [entries]
@@ -765,6 +830,13 @@
 			hollow_log_vertical = true
 			banister = true
 			hollow_log_climbable = true
+
+		[entries.wood_type.architects_palette]
+			board_stairs = true
+			railing = true
+			board_slab = true
+			boards = true
+			board_wall = true
 
 	[entries.leaves_type]
 

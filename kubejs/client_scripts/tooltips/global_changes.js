@@ -484,7 +484,6 @@ ItemEvents.tooltip(event => {
 
 
 	const TIP_CONFIG = [
-		// Rediscovered
 		{
 			items: global.rediscoveredFurniture,
 			text: 'Comes with a unique feeling of nostalgia'
@@ -493,8 +492,6 @@ ItemEvents.tooltip(event => {
 			items: 'rediscovered:cyan_rose',
 			text: 'Also known as Blue Rose'
 		},
-
-		// Starter tools
 		{
 			items: [
 				'wooden_sword', 'wooden_axe', 'wooden_pickaxe',
@@ -502,8 +499,6 @@ ItemEvents.tooltip(event => {
 			],
 			text: 'We all have to start somewhere!'
 		},
-
-		// Bleeding items
 		{
 			items: [
 				'golden_apple', 'enchanted_golden_apple',
@@ -516,14 +511,10 @@ ItemEvents.tooltip(event => {
 			text: 'You can unenchant it. But why would you?',
 			opts: { position: 2 }
 		},
-
-		// Campfires
 		{
 			items: /campfire/,
 			text: 'Provides health regeneration'
 		},
-
-		// Sortilege
 		{
 			items: 'sortilege:limitite',
 			text: [
@@ -531,13 +522,23 @@ ItemEvents.tooltip(event => {
 				'Combine the item with it in a Smithing Table using Lapis Lazuli as the template for the recipe'
 			]
 		},
-
-		// Dummy
 		{
 			items: 'dummmmmmy:target_dummy',
 			text: [
 				'An invulnerable, punchable dummy',
 				'Quite perfect for measuring dealt damage'
+			]
+		},
+		{
+			items: [/carpet/, 'farmersdelight:canvas_rug'],
+			text: [
+				'Can be placed on Stairs and Slabs'
+			]
+		},
+		{
+			items: 'flower_pot',
+			text: [
+				'Can hang from the ceiling'
 			]
 		},
 

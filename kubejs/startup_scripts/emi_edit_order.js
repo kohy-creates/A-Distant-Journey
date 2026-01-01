@@ -58,8 +58,8 @@ StartupEvents.postInit(event => {
 		'botania:mossy_dreamwood',
 		'botania:shimmerwood',
 		'twilight_forest:sorting',
-		'evilcraft:reinforced_undead',
-		'ribbits:mossy_oak'
+		'twilight_forest:mangrove',
+		'evilcraft:reinforced_undead'
 	]
 
 	Item.list.toArray().forEach(item => {
@@ -117,6 +117,7 @@ StartupEvents.postInit(event => {
 		'quark:stripped_X_post',
 		'planks',
 		'mosaic',
+		'architects_palette:boards',
 		'bookshelf',
 		'quark:bookshelf',
 		'handcrafted:bench',
@@ -142,10 +143,12 @@ StartupEvents.postInit(event => {
 		'planks_slab',
 		'mosaic_slab',
 		'quark:vertical_slab',
+		'architects_palette:vertical_slab',
 		'quark:mosaic_vertical_slab',
 		'quark:planks_vertical_slab',
 		'suppsquared:item_shelf',
 		'fence',
+		'architects_palette:railing',
 		'fence_gate',
 		'door',
 		'trapdoor',
@@ -198,6 +201,7 @@ StartupEvents.postInit(event => {
 		'minecraft:warped',
 		'mynethersdelight:powdery',
 		'netherexp:smokestalk',
+		'architects_palette:twisted',
 		'twilight_forest:twilight_oak',
 		'twilight_forest:canopy',
 		'twilight_forest:dark',
@@ -235,6 +239,7 @@ StartupEvents.postInit(event => {
 			case 'hearth_and_home': return 'hnhome';
 			case 'farmersdelight': return 'fd';
 			case 'twilightforest': return 'tf';
+			case 'architects_palette': return 'ap';
 			default: return namespace;
 		}
 	}

@@ -4,7 +4,7 @@
     "cockatrice_texture": "blighted"
   },
   "item": {
-    "veridium_type": "modern",
+    "veridium_type": "shadow",
     "swet_ball_type": "gel"
   },
   "tintable_grass": true,
@@ -18,5 +18,5 @@
     "better_moa_sounds": false,
     "better_tempest_sounds": true
   },
-  "use_jappafied_textures": false
+  "use_jappafied_textures": true
 }

@@ -35,6 +35,15 @@ global.bossMobsNoTreasureBag = [
 	"the_bumblezone:cosmic_crystal_entity",
 	"lost_aether_content:aerwhale_king",
 	"rediscovered:red_dragon",
+	"twilightforest:naga",
+	"twilightforest:lich",
+	"twilightforest:minoshroom",
+	"twilightforest:hydra",
+	"twilightforest:knight_phantom",
+	"twilightforest:ur_ghast",
+	"twilightforest:alpha_yeti",
+	"twilightforest:snow_queen",
+	"twilightforest:plateau_boss",
 ]
 
 StartupEvents.registry('item', event => {
@@ -53,10 +62,10 @@ StartupEvents.registry('item', event => {
 
 		let lootTable = modAndEntity[0] + '_' + modAndEntity[1] + (suffix ? `_${suffix}` : '');
 
-		event.createCustom('treasure_bag_' + modAndEntity[1] + (suffix ? `_${suffix}` : ''), () => 
+		event.createCustom('treasure_bag_' + modAndEntity[1] + (suffix ? `_${suffix}` : ''), () =>
 			new $TreasureBag($ResourceLocation.fromNamespaceAndPath('kubejs', 'treasure_bag/' + lootTable))
 		)
-		.displayName(nameTitleCase + ' Treasure Bag');
+			.displayName(nameTitleCase + ' Treasure Bag');
 
 		let lootFilePath = 'kubejs/data/kubejs/loot_tables/treasure_bag/' + lootTable + '.json';
 		if (!JsonIO.read(lootFilePath)) {
@@ -69,7 +78,7 @@ StartupEvents.registry('item', event => {
 			JsonIO.write(modelFilePath, {
 				parent: "item/generated",
 				textures: {
-					layer0: "additionaladditions:item/mysterious_bundle"
+					layer0: "kubejs:item/treasure_bag/placeholder"
 				}
 			});
 			console.log(`Created missing model: ${modelFilePath}`);

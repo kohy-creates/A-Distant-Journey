@@ -1,0 +1,7 @@
+{
+    "parent": "block/template_fire_side",
+    "textures": {
+        "fire": "architects_palette:block/nether_brass_fire_0",
+        "particle": "#fire"
+    }
+}

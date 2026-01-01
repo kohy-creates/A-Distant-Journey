@@ -1,10 +1,15 @@
 #"Embrace The Light!" Client Config
 "Are trims emissive" = false
+#Whether to enable Alex's Caves colored light in cave bomes
+"Alex's Caves Compat" = false
 
 #Light amounts
 [light_amounts]
 	#Range: 0.0 ~ 1.0
 	Underground = 0.6
+	#List of dimensions where ETL will not work in
+	#Band aid to fix e.g. Aether compatibility
+	"Banned Dimensions" = ["aether:the_aether", "the_bumblezone:the_bumblezone"]
 
 	[light_amounts.night]
 		#Range: 0.0 ~ 1.0

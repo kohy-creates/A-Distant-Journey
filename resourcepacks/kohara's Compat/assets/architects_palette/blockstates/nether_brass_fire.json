@@ -1,0 +1,68 @@
+{
+  "multipart": [
+    {
+      "apply": [
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor"
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor",
+          "y": 90
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor",
+          "y": 180
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor",
+          "y": 270
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor2"
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor2",
+          "y": 90
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor2",
+          "y": 180
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor2",
+          "y": 270
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor3"
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor3",
+          "y": 90
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor3",
+          "y": 180
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor3",
+          "y": 270
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor4"
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor4",
+          "y": 90
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor4",
+          "y": 180
+        },
+        {
+          "model": "architects_palette:block/nether_brass_fire/fire_floor4",
+          "y": 270
+        }
+      ]
+    }
+  ]
+}

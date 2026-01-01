@@ -212,10 +212,12 @@ ServerEvents.tags('item', resctrictions => {
 	resctrictions.add('adj:locked_until/chapter_1', [
 		/orichalcum/,
 		/mythril/,
-		/stormyx/,
 		/mythicmetals:steel/,
 		/twilightforest/,
-		/twilightdelight/
+		/twilightdelight/,
+		'mythicmetals:stormyx_ore',
+		'mythicmetals:blackstone_stormyx_ore',
+		'mythicmetals:raw_stormyx'
 	]);
 	resctrictions.add('adj:locked_until/light/chapter_1', [
 		'botania:ender_air_bottle',
@@ -270,7 +272,17 @@ ServerEvents.tags('item', resctrictions => {
 		'botania:elf_glass',
 		'rediscovered:ruby_eye',
 		'kubejs:skull_fragment',
-		'kubejs:hellforge'
+		'kubejs:hellforge',
+		/chthonic_yew/,
+		/alfthorne/,
+		/architect_palette:twisted_/,
+		/architect_palette:.*wardstone/,
+		/architect_palette:.*onyx/,
+		/architect_palette:.*warpstone/,
+		/hadaline/,
+		/entrails/,
+		/architect_palette:.*blackstone.*/,
+		/architect_palette\/twisted/
 	]);
 	resctrictions.add('adj:locked_until/exceptions/chapter_1', [
 		'create:blaze_cake',
@@ -286,10 +298,15 @@ ServerEvents.tags('item', resctrictions => {
 		/aether/,
 		/aether_redux/,
 		/lost_aether_content/,
+		/stormyx/,
 	]);
 	resctrictions.add('adj:locked_until/light/chapter_2', [
 		/everycomp\:.*aether.*/, // also covers redux and lost content
-		/supp.*\:.*aether.*/
+		/supp.*\:.*aether.*/,
+		/nebulite/,
+		/esoterrack/,
+		/moonshale/,
+		/craterstone/
 	]);
 	resctrictions.add('adj:locked_until/exceptions/chapter_2', [
 		'aether:leather_gloves',
@@ -297,7 +314,10 @@ ServerEvents.tags('item', resctrictions => {
 		'aether:iron_gloves',
 		'aether:golden_gloves',
 		'aether:diamond_gloves',
-		/treasure_bag/
+		/treasure_bag/,
+		'mythicmetals:stormyx_ore',
+		'mythicmetals:blackstone_stormyx_ore',
+		'mythicmetals:raw_stormyx'
 	]);
 
 	resctrictions.add('adj:locked_until/chapter_3', [
@@ -353,7 +373,8 @@ ServerEvents.tags('item', resctrictions => {
 		/everycomp\:.*unusualend.*/,
 		/supp.*\:.*unusualend.*/,
 		/supp.*\:.*phantasm.*/,
-		/quark\:myalite/,
+		/myalite/,
+		/architects_palette:oracle/,
 		/quark\:duskbound/,
 		'alloy_forgery:ender_forge_casing_forge_controller',
 		'adj:ender_forge_casing',
@@ -378,7 +399,8 @@ ServerEvents.tags('item', resctrictions => {
 		/celestium/
 	]);
 	resctrictions.add('adj:locked_until/light/chapter_5', [
-		/witherstormmod/
+		/witherstormmod/,
+		'architects_palette:unobtanium_block'
 	]);
 	resctrictions.add('adj:locked_until/exceptions/chapter_5', [
 		'witherstormmod:firework_bundle',

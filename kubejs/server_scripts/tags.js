@@ -30,6 +30,26 @@ ServerEvents.tags('item', tags => {
 		/fnaf_plushie_remastered:.*_plush/
 	])
 
+	tags.add('adj:blahaj/recolorable', [
+		'just_blahaj:white_blahaj',
+		'just_blahaj:orange_blahaj',
+		'just_blahaj:magenta_blahaj',
+		'just_blahaj:light_blue_blahaj',
+		'just_blahaj:yellow_blahaj',
+		'just_blahaj:lime_blahaj',
+		'just_blahaj:pink_blahaj',
+		'just_blahaj:gray_blahaj',
+		'just_blahaj:light_gray_blahaj',
+		'just_blahaj:cyan_blahaj',
+		'just_blahaj:purple_blahaj',
+		'just_blahaj:blue_blahaj',
+		'just_blahaj:brown_blahaj',
+		'just_blahaj:green_blahaj',
+		'just_blahaj:red_blahaj',
+		'just_blahaj:black_blahaj',
+		'just_blahaj:blahaj',
+	])
+
 	tags.add('adj:blahaj/colored', [
 		'just_blahaj:white_blahaj',
 		'just_blahaj:orange_blahaj',
@@ -375,6 +395,9 @@ ServerEvents.tags('block', tags => {
 // Entity type tags
 // 
 ServerEvents.tags('entity_type', tags => {
+	tags.add('witherstormmod:wither_storm_targeting_blacklist', [
+		'evilcraft:vengeance_spirit'
+	])
 })
 
 // 

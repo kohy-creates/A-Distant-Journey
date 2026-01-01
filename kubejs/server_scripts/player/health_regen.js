@@ -17,6 +17,7 @@ EntityEvents.hurt(event => {
 })
 
 PlayerEvents.tick(event => {
+
 	const player = event.player;
 
 	const persistentData = player.persistentData;

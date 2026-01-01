@@ -726,6 +726,17 @@
         "value": 10
       }
     },
+    "enigmaticdice:size_scale": {
+      "enabled": false,
+      "min": {
+        "default": 0.1,
+        "value": 0.1
+      },
+      "max": {
+        "default": 20,
+        "value": 20
+      }
+    },
     "mcdw:attack_range": {
       "enabled": false,
       "min": {

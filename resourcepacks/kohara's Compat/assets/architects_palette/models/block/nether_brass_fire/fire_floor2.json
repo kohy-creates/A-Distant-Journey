@@ -1,0 +1,98 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "architects_palette:block/nether_brass_fire_0",
+		"fire_0": "architects_palette:block/nether_brass_fire_0",
+		"fire_1": "architects_palette:block/nether_brass_fire_1"
+	},
+	"elements": [
+		{
+			"from": [-7, 0, 14.25],
+			"to": [-1, 8, 14.25],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [1, 0, 0]},
+			"faces": {
+				"north": {"uv": [3, 0, 13, 12], "texture": "#fire_0"},
+				"south": {"uv": [3, 0, 13, 12], "texture": "#fire_0"}
+			}
+		},
+		{
+			"from": [16.75, 0, 16.32],
+			"to": [22.75, 8, 16.32],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [17, 0, 0]},
+			"faces": {
+				"north": {"uv": [3, 0, 13, 12], "texture": "#fire_0"},
+				"south": {"uv": [3, 0, 13, 12], "texture": "#fire_0"}
+			}
+		},
+		{
+			"from": [-12, 0, 7.25],
+			"to": [-6, 8, 7.25],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [-4, 0, -7]},
+			"faces": {
+				"north": {"uv": [3, 0, 13, 12], "texture": "#fire_0"},
+				"south": {"uv": [3, 0, 13, 12], "texture": "#fire_0"}
+			}
+		},
+		{
+			"from": [11.75, 0, 9.32],
+			"to": [17.75, 8, 9.32],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [12, 0, -7]},
+			"faces": {
+				"north": {"uv": [3, 0, 13, 12], "texture": "#fire_0"},
+				"south": {"uv": [3, 0, 13, 12], "texture": "#fire_0"}
+			}
+		},
+		{
+			"from": [-3, 0, 8.25],
+			"to": [8, 15, 8.25],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [3, 0, -3]},
+			"faces": {
+				"north": {"uv": [3, 0, 13, 13], "texture": "#fire_1"},
+				"south": {"uv": [3, 0, 13, 13], "texture": "#fire_1"}
+			}
+		},
+		{
+			"from": [13.25, 0, 8.82],
+			"to": [24.25, 15, 8.82],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [19, 0, -3]},
+			"faces": {
+				"north": {"uv": [3, 0, 13, 13], "texture": "#fire_1"},
+				"south": {"uv": [3, 0, 13, 13], "texture": "#fire_1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "little_fire1",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [0, 1]
+				},
+				{
+					"name": "little_fire1",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [2, 3]
+				},
+				{
+					"name": "middle_fire1",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [4, 5]
+				}
+			]
+		}
+	]
+}

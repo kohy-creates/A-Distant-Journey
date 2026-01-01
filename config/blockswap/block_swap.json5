@@ -345,5 +345,12 @@
 		"umbral_skies:hollow_golden_oak_log_horizontal": "aether:golden_oak_log",
 		"umbral_skies:hollow_golden_oak_log_vertical": "aether:golden_oak_log",
 		"umbral_skies:hollow_golden_oak_log_climbable": "aether:golden_oak_log",
+
+		"cataclysm:stone_tiles": "supplementaries:stone_tile",
+		"cataclysm:stone_tile_slab": "supplementaries:stone_tile_slab",
+		"cataclysm:stone_tile_stairs": "supplementaries:stone_tile_stairs",
+		"cataclysm:stone_tile_wall": "supplementaries:stone_tile_wall",
+		"cataclysm:stone_tiles": "supplementaries:stone_tile",
+
 	}
 }

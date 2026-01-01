@@ -3852,7 +3852,8 @@ const itemsToTooltip = [
 	},
 	{
 		item: [
-			'farmersdelight:cooking_pot'
+			'farmersdelight:cooking_pot',
+			'twilightdelight:fiery_cooking_pot'
 		],
 		controls: [
 			{

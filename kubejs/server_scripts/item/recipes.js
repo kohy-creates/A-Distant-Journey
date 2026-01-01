@@ -69,7 +69,19 @@ ServerEvents.recipes((event) => {
 		'botania:spark',
 		'enchantinginfuser:advanced_enchanting_infuser',
 		'twilightforest:uncrafting_table',
-		'ars_elemental:mark_of_mastery'
+		'ars_elemental:mark_of_mastery',
+		'just_blahaj:creeperhaj',
+		'window_box:chthonic_yew_sapling',
+		'window_box:alfthorne_sapling',
+		'architects_palette:unobtanium_block',
+		'architects_palette:esoterrack',
+		'architects_palette:nebulite',
+		'architects_palette:moonshale',
+		'architects_palette:craterstone',
+		'architects_palette:moonshale_bricks',
+		'architects_palette:plating_block',
+
+		/twilightforest:.*chest$/
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -202,6 +214,8 @@ ServerEvents.recipes((event) => {
 
 		/nameless_trinkets/,
 		/create:crushing\/raw_.*/,
+
+		'create_things_and_misc:diluted_bonemeal_craft'
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -338,6 +352,69 @@ ServerEvents.recipes((event) => {
 
 		event.custom(recipe).id((id) ? id : `adj:${flattenedID((Array.isArray(output)) ? output[0] : output)}`)
 	}
+
+
+	// from Architect's Palette
+	function warping(item, output, dimension, id) {
+		let ingr = {};
+		if (item.startsWith('#')) {
+			ingr["tag"] = item.substring(1);
+		}
+		else {
+			ingr["item"] = item
+		}
+
+		let dim = (!dimension || dimension == null) ? 'minecraft:the_nether' : dimension;
+
+		event.custom({
+			type: "architects_palette:warping",
+			dimension: dim,
+			ingredient: [
+				ingr
+			],
+			result: {
+				"item": output
+			}
+		}).id((id) ? id : `adj:warping/${flattenedID(dim)}/${flattenedID(output)}_from_${flattenedID(item)}`)
+	}
+	function aetherWarping(item, output, id) {
+		warping(item, output, 'aether:the_aether', id)
+	}
+	function skylandsWarping(item, output, id) {
+		warping(item, output, 'rediscovered:skylands', id)
+	}
+
+	aetherWarping('andesite', 'architects_palette:esoterrack')
+	aetherWarping('diorite', 'architects_palette:nebulite')
+	aetherWarping('stone', 'architects_palette:moonshale')
+	aetherWarping('cobblestone', 'architects_palette:craterstone')
+	aetherWarping('stone_bricks', 'architects_palette:moonshale_bricks')
+
+	skylandsWarping('cherry_sapling', 'rediscovered:ancient_cherry_sapling')
+	skylandsWarping('cherry_leaves', 'rediscovered:ancient_cherry_leaves')
+
+	event.shaped(
+		'50x architects_palette:unobtanium_block',
+		[
+			'UT',
+			'TU'
+		],
+		{
+			U: 'mythicmetals:unobtainium',
+			T: 'supplementaries:stone_tile'
+		}
+	).id('adj:missing_tiles')
+
+	event.shaped(
+		'20x architects_palette:plating_block',
+		[
+			'PP',
+			'PP'
+		],
+		{
+			P: 'create:iron_sheet'
+		}
+	).id('adj:plating_block')
 
 	/**
 	 * Registers a BotanicAdds Gaia Plate recipe
@@ -1187,6 +1264,8 @@ ServerEvents.recipes((event) => {
 			'minecraft:clock': '#adj:clock',
 			'farmersdelight:rope': 'supplementaries:rope',
 			'mcdw:item_bee_stinger': 'the_bumblezone:bee_stinger',
+			'architects_palette:withered_bone_block': 'netherexp:wither_bone_block',
+			'architects_palette:withered_bone': 'netherexp:fossil_fuel'
 		},
 		output: {
 			'create:crushed_raw_iron': 'raw_iron',
@@ -1677,7 +1756,7 @@ ServerEvents.recipes((event) => {
 			result: 'lime',
 			combos: [
 				['cyan', 'yellow'],
-				['green', 'blue', 'yellow']
+				['white', 'blue', 'yellow']
 			]
 		},
 		5: {
@@ -1694,11 +1773,13 @@ ServerEvents.recipes((event) => {
 			]
 		}
 	}
-	for (const [k, map] of Object.entries(dyeMap)) {
-		function dye(color) {
-			return `${color}_dye`;
-		}
 
+	function dye(color) {
+		return `${color}_dye`;
+	}
+
+	for (const [k, v] of Object.entries(dyeMap)) {
+		let map = dyeMap[k];
 		let result = dye(map.result);
 		let i = 0;
 		for (let combo of map.combos) {
@@ -1708,8 +1789,8 @@ ServerEvents.recipes((event) => {
 			})
 			event.shapeless(
 				Item.of(result, combo.length),
-				dyes
-			).id(`adj:result_${i}`)
+				dyes.sort()
+			).id(`adj:${result}_${i}`)
 			i++;
 		}
 	}
@@ -3332,54 +3413,6 @@ ServerEvents.recipes((event) => {
 	).id('adj:ladder/upgrade_aquatic_river_ladder')
 
 	event.shaped(
-		Item.of('upgrade_aquatic:river_chest', 1),
-		[
-			'PPP',
-			'P P',
-			'PPP'
-		],
-		{
-			P: 'upgrade_aquatic:river_planks'
-		}
-	).id('adj:river_chest')
-
-	event.shaped(
-		Item.of('upgrade_aquatic:river_chest', 4),
-		[
-			'PPP',
-			'P P',
-			'PPP'
-		],
-		{
-			P: '#upgrade_aquatic:river_logs'
-		}
-	).id('adj:river_chest_from_logs')
-
-	event.shaped(
-		Item.of('upgrade_aquatic:driftwood_chest', 1),
-		[
-			'PPP',
-			'P P',
-			'PPP'
-		],
-		{
-			P: 'upgrade_aquatic:driftwood_planks'
-		}
-	).id('adj:driftwood_chest')
-
-	event.shaped(
-		Item.of('upgrade_aquatic:driftwood_chest', 4),
-		[
-			'PPP',
-			'P P',
-			'PPP'
-		],
-		{
-			P: '#upgrade_aquatic:driftwood_logs'
-		}
-	).id('adj:driftwood_chest_from_logs')
-
-	event.shaped(
 		Item.of('upgrade_aquatic:driftwood_bookshelf', 1),
 		[
 			'PPP',
@@ -3409,6 +3442,8 @@ ServerEvents.recipes((event) => {
 
 		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
 		const output = recipe.getOriginalRecipeResult().getId();
+
+		if (!ingredients[7]) return;
 
 		event.remove({ id: recipe.getId() })
 
@@ -4001,6 +4036,14 @@ ServerEvents.recipes((event) => {
 		}
 	})
 
+	// Window Box Chthonic Yew and Alfthorne
+	event.recipes.botania.elven_trade(["window_box:alfthorne_sapling"], "#saplings").id('window_box:petal_apothecary/alfthorne_sapling')
+	// Petal Apothecary ID so that it is stil in the book
+	// Tho honestly I didn't even test it so whatever :3
+
+	warping('window_box:alfthorne_sapling', 'window_box:chthonic_yew_sapling')
+
+
 	// Workshop recipes
 	function workshopRecipe(ingredients, output, id) {
 
@@ -4311,4 +4354,156 @@ ServerEvents.recipes((event) => {
 		0
 	).id('adj:promise_efficiency_0')
 
+
+	// Blahaj recipes
+	const colors = [
+		'white',
+		'light_gray',
+		'gray',
+		'black',
+		'brown',
+		'red',
+		'orange',
+		'yellow',
+		'lime',
+		'green',
+		'cyan',
+		'blue',
+		'purple',
+		'light_blue',
+		'magenta',
+		'pink',
+	]
+	colors.forEach(color => {
+		const blahaj = `just_blahaj:${(color) == 'light_blue' ? '' : `${color}_`}blahaj`;
+
+
+		event.remove({ output: blahaj })
+		event.shapeless(
+			blahaj,
+			[
+				'#adj:blahaj/recolorable',
+				dye(color)
+			]
+		).id(`adj:blahaj/${color}`)
+	})
+
+	const specialBlahaj = {
+		'palestine': [
+			'red_wool',
+			'white_wool',
+			'black_wool'
+		],
+		'trans': [
+			'light_blue_wool',
+			'pink_wool',
+			'white_wool'
+		],
+		'pride': [
+			'red_wool',
+			'orange_wool',
+			'yellow_wool',
+			'lime_wool',
+			'light_blue_wool',
+			'magenta_wool',
+			'purple_wool'
+		],
+		'intersex': [
+			'yellow_wool',
+			'yellow_wool',
+			'magenta_wool'
+		],
+		'bi': [
+			'magenta_wool',
+			'purple_wool',
+			'blue_wool'
+		],
+		'pan': [
+			'magenta_wool',
+			'yellow_wool',
+			'light_blue_wool'
+		],
+		'lesbian': [
+			'red_wool',
+			'orange_wool',
+			'pink_wool',
+			'magenta_wool',
+			'purple_wool'
+		],
+		'gay': [
+			'green_wool',
+			'lime_wool',
+			'white_wool',
+			'light_blue_wool',
+			'blue_wool'
+		],
+		'enby': [
+			'yellow_wool',
+			'white_wool',
+			'purple_wool',
+			'black_wool'
+		],
+		'gender_fluid': [
+			'pink_wool',
+			'white_wool',
+			'magenta_wool',
+			'black_wool',
+			'blue_wool'
+		]
+	}
+
+	for (let [type, /** @param {$InputItem_[]} wool */ wool] of Object.entries(specialBlahaj)) {
+
+		let blahaj = `just_blahaj:${(type) == 'pan' ? 'panhaj' : `${type}_blahaj`}`;
+		event.remove({ output: blahaj });
+		let ingredients = ['just_blahaj:blahaj'];
+		wool.forEach(w => {
+			ingredients.push(w)
+		})
+		event.shapeless(
+			blahaj,
+			ingredients
+		).id(`adj:blahaj/${type}`)
+	}
+
+	event.recipes.botania.mana_infusion('just_blahaj:creeperhaj', 'minecraft:creeper_head').mana(50000).id('adj:blahaj/creeperhaj')
+
+	// Missing Chest recipes
+	const tfChests = [
+		'twilightforest:mining', 'twilightforest:canopy', 'twilightforest:twilight_oak',
+		'twilightforest:dark', 'twilightforest:transformation', 'twilightforest:time',
+		'upgrade_aquatic:river', 'upgrade_aquatic:driftwood'
+	]
+	tfChests.forEach(t => {
+		const [namespace, type] = t.split(':');
+
+		const
+			chestType = `${namespace}:${type}_chest`,
+			planks = `${namespace}:${type}_planks`,
+			logs = `#${namespace}:${type}_logs`;
+
+		event.shaped(
+			Item.of(chestType, 1),
+			[
+				'PPP',
+				'P P',
+				'PPP'
+			],
+			{
+				P: planks
+			}
+		).id(`adj:chests/${namespace}_${type}_from_planks`)
+
+		event.shaped(
+			Item.of(chestType, 4),
+			[
+				'PPP',
+				'P P',
+				'PPP'
+			],
+			{
+				P: logs
+			}
+		).id(`adj:chests/${namespace}_${type}_from_logs`)
+	})
 });

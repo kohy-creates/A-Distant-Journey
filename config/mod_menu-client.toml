@@ -37,7 +37,7 @@ mod_parents = []
 
 [hide]
 	#Shows mods with library badge
-	show_libraries = false
+	show_libraries = true
 	#Makes java mod have random colors
 	hide_mod_links = false
 	#Hides mod's license

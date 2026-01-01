@@ -2,7 +2,7 @@
 [Client]
 	#Defines the global default fog start value
 	#Range: 0.0 ~ 1.0
-	globalfogstart = 0.15
+	globalfogstart = 0.0
 	#Defines the global default fog end value, as a percentage of render distance. At 1.0, the fog end is at render distance. At 0, there is no fog
 	#Range: 0.0 ~ 1.0
 	fogend = 1.0

@@ -1,13 +1,15 @@
 ClientEvents.lang('en_us', event => {
 
 	const extraTranslations = {
-		'rarity.alexscaves:demonic.name': 'Demonic',
-		'rarity.alexscaves:sweet.name': 'Sweet',
-		'rarity.alexscaves:nuclear.name': 'Nuclear',
-		'rarity.alexscaves:rainbow.name': 'Special',
-		'rarity.integrated_stronghold:antique.name': 'Antique',
-		'rarity.artifact.name': 'Artifact',
-		'rarity.botanicadditionsgaiasteel.name': 'Gaiasteel',
+		'rarity.alexscaves.demonic': 'Demonic',
+		'rarity.alexscaves.sweet': 'Sweet',
+		'rarity.alexscaves.nuclear': 'Nuclear',
+		'rarity.alexscaves.rainbow': 'Special',
+		'rarity.integrated_stronghold.antique': 'Antique',
+		'rarity.artifact': 'Artifact',
+		'rarity.botanicadditionsgaiasteel': 'Gaiasteel',
+		'rarity.twilight': 'Twilight',
+		'rarity.alexscavesexemplified.gamma': 'Omega Level Threat',
 
 		'effect.mutantmonsters.chemical_x.description': 'Causes certain mobs to mutate into their way stronger variants; has no effect on players.',
 		'effect.adjcore.cozy_campfire.description': 'So warm, so cozy! Slowly regenerates lost life',
@@ -83,6 +85,11 @@ ClientEvents.lang('en_us', event => {
 		'functionalstorage:oak_1': 'Storage Drawer (1x1)',
 		'functionalstorage:oak_2': 'Storage Drawer (1x2)',
 		'functionalstorage:oak_4': 'Storage Drawer (2x2)',
+		'architects_palette:unobtanium_block': 'Missing Tiles',
+		'architects_palette:entrails': 'Flesh Block',
+		'architects_palette:entrails_slab': 'Flesh Slab',
+		'architects_palette:entrails_vertical_slab': 'Flesh Vertical Slab',
+		'architects_palette:entrails_stairs': 'Flesh Stairs',
 	}
 
 	/** @type {Record<Internal.InputItem_, string>} */

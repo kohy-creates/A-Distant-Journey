@@ -150,6 +150,18 @@
       "action": {
         "category": "armor"
       }
+    },
+    "9": {
+      "title": "Toggle 3D Particles",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:oak_log\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.fbp.toggle_mod",
+          "toggle": false
+        }
+      }
     }
   },
   "Shaders": {

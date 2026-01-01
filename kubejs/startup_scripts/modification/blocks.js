@@ -12,7 +12,7 @@ BlockEvents.modification(event => {
 	})
 
 	event.modify(/^(?!.*floating).*_ore.*$/, block => {
-		block.setExplosionResistance(1000);
+		block.setExplosionResistance(200);
 	})
 
 	event.modify(/aquamirae\:painting\_/, block => {
