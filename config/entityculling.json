@@ -12,7 +12,8 @@
     "create_hypertube:hypertube_entity",
     "create_hypertube:hypertube_entrance_entity",
     "witherstormmod:super_beacon",
-    "witherstormmod:super_support_beacon"
+    "witherstormmod:super_support_beacon",
+    "botania:alfheim_portal"
   ],
   "entityWhitelist": [
     "botania:mana_burst",
@@ -27,14 +28,19 @@
     "witherstormmod:tentacle",
     "witherstormmod:wither_storm_head",
     "witherstormmod:wither_storm_segment",
-    "minecraft:area_effect_cloud"
+    "minecraft:area_effect_cloud",
+    "cataclysm:portal_abyss_blast",
+    "cataclysm:abyss_portal",
+    "cataclysm:abyss_blast_portal",
+    "alexsmobs:void_portal",
+    "botania:flame_ring",
+    "botania:magic_landmine"
   ],
   "tracingDistance": 128,
   "debugMode": false,
   "sleepDelay": 10,
   "hitboxLimit": 50,
   "captureRate": 5,
-  "skipMarkerArmorStands": true,
   "tickCulling": true,
   "tickCullingWhitelist": [
     "create:gantry_contraption",
@@ -80,5 +86,7 @@
   ],
   "disableF3": true,
   "skipEntityCulling": false,
-  "skipBlockEntityCulling": false
+  "skipBlockEntityCulling": false,
+  "blockEntityFrustumCulling": true,
+  "forceDisplayCulling": false
 }

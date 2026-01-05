@@ -1,0 +1,34 @@
+{
+	"type": "create:compacting",
+	"ingredients": [
+	  {
+      "item": "create:zinc_nugget"
+	  },
+	  {
+      "item": "create:zinc_nugget"
+	  },
+	  {
+      "item": "create:zinc_nugget"
+	  },
+	  {
+      "item": "create:zinc_nugget"
+	  },
+	  {
+      "item": "minecraft:gravel"
+	  },
+	  {
+      "item": "minecraft:gravel"
+	  },
+	  {
+      "fluid": "minecraft:water",
+      "nbt": {},
+      "amount": 100
+	  }
+	],
+	"results": [
+	  {
+      "count": 2,
+      "item": "create:asurine"
+	  }
+	]
+}

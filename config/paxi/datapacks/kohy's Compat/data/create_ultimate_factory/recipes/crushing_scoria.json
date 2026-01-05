@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:scoria"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.125,
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "chance": 0.03,
+      "item": "minecraft:blaze_rod"
+    }
+  ],
+  "processingTime": 125
+}

@@ -1,0 +1,35 @@
+{
+	"credit": "Made with Blockbench",
+	"render_type": "translucent",
+	"texture_size": [32, 32],
+	"textures": {
+		"3": "ars_nouveau:block/archfruit/vexing_archfruit_pod_2",
+		"particle": "ars_nouveau:block/archfruit/vexing_archfruit_pod_2"
+	},
+	"elements": [
+		{
+			"from": [4, 3, 7],
+			"to": [12, 11, 15],
+			"faces": {
+				"north": {"uv": [0, 4, 4, 8], "texture": "#3"},
+				"east": {"uv": [0, 4, 4, 8], "texture": "#3"},
+				"south": {"uv": [0, 4, 4, 8], "texture": "#3"},
+				"west": {"uv": [0, 4, 4, 8], "texture": "#3"},
+				"up": {"uv": [4, 4, 0, 0], "texture": "#3"},
+				"down": {"uv": [4, 8, 0, 12], "texture": "#3"}
+			}
+		},
+		{
+			"from": [8, 0, 7],
+			"to": [8, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 8], "texture": "#3"},
+				"east": {"uv": [8.5, 0, 4, 8], "texture": "#3"},
+				"south": {"uv": [0, 0, 0, 8], "texture": "#3"},
+				"west": {"uv": [4, 0, 8.5, 8], "texture": "#3"},
+				"up": {"uv": [0, 4.5, 0, 0], "texture": "#3"},
+				"down": {"uv": [0, 0, 0, 4.5], "texture": "#3"}
+			}
+		}
+	]
+}

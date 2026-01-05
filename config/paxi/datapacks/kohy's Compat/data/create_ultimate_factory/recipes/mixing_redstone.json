@@ -1,0 +1,21 @@
+{
+	"type": "create:mixing",
+	"ingredients": [
+	  {
+      "item": "minecraft:netherrack"
+	  },
+	  {
+      "item": "minecraft:flint"
+	  },
+	  {
+      "fluid": "minecraft:lava",
+      "nbt": {},
+      "amount": 50
+	  }
+	],
+	"results": [
+	  {
+      "item": "minecraft:redstone"
+	  }
+	]
+}

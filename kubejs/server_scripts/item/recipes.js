@@ -8,9 +8,10 @@ ServerEvents.recipes((event) => {
 		return text.replace(':', '_').replace('#', '');
 	}
 
-	/** @type {Internal.InputItem_}*/
+	/** @type {$InputItem_}*/
 	const disabledItemRecipes = [
 		global.rediscoveredFurniture,
+		global.blacklistedItems,
 		'naturescompass:naturescompass',
 		'enchantinginfuser:enchanting_infuser',
 		'tiab:time_in_a_bottle',
@@ -81,14 +82,13 @@ ServerEvents.recipes((event) => {
 		'architects_palette:moonshale_bricks',
 		'architects_palette:plating_block',
 
-		/twilightforest:.*chest$/
+		/twilightforest:.*chest$/,
+		'twilightforest:raw_ironwood',
+		/twilightforest:.*banner_pattern$/,
+
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
-	})
-
-	global.blacklistedItems.forEach(item => {
-		event.remove([{ output: item }/*, { input: item } */])
 	})
 
 	/** @type {Special.RecipeId[]} */
@@ -215,7 +215,11 @@ ServerEvents.recipes((event) => {
 		/nameless_trinkets/,
 		/create:crushing\/raw_.*/,
 
-		'create_things_and_misc:diluted_bonemeal_craft'
+		'create_things_and_misc:diluted_bonemeal_craft',
+		'twilightforest:material/blasted_ironwood_ingot',
+		'twilightforest:material/smelted_ironwood_ingot',
+
+		'create_ultimate_factory:crushing_coral'
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -228,6 +232,58 @@ ServerEvents.recipes((event) => {
 	removeRecipeByType.forEach(recipeType => {
 		event.remove({ type: recipeType })
 	})
+
+	const removeRecipeByInput = [
+		'create:crushed_raw_iron',
+		'create:crushed_raw_gold',
+		'create:crushed_raw_copper',
+		'create:crushed_raw_zinc'
+	]
+	removeRecipeByInput.forEach(item => {
+		event.remove({ input: item })
+	})
+
+	// Unification and replacement map
+	const unificationMap = {
+		input: {
+			'farmersdelight:wheat_dough': 'create:dough',
+			'#forge:dough/wheat': 'create:dough',
+			'minecraft:chest': '#c:chests/wooden',
+			'minecraft:shield': 'shieldexp:iron_shield',
+			'#c:ender_pearls': 'ender_pearl',
+			'create:copper_nugget': 'mythicmetals:copper_nugget',
+			'minecraft:stick': '#c:rods/wooden',
+			'minecraft:clock': '#adj:clock',
+			'farmersdelight:rope': 'supplementaries:rope',
+			'mcdw:item_bee_stinger': 'the_bumblezone:bee_stinger',
+			'architects_palette:withered_bone_block': 'netherexp:wither_bone_block',
+			'architects_palette:withered_bone': 'netherexp:fossil_fuel',
+			'twilightforest:raw_ironwood': 'twilightforest:ironwood_ingot',
+			"minecraft:totem_of_undying": "twilightforest:charm_of_life_2"
+		},
+		output: {
+			'create:crushed_raw_iron': 'raw_iron',
+			'create:crushed_raw_gold': 'raw_gold',
+			'create:crushed_raw_copper': 'raw_copper',
+			'create:crushed_raw_zinc': 'create:raw_zinc',
+			'farmersdelight:wheat_dough': 'create:dough',
+			'create:copper_nugget': 'mythicmetals:copper_nugget',
+			'farmersdelight:rope': 'supplementaries:rope',
+			"minecraft:totem_of_undying": "twilightforest:charm_of_life_1"
+		}
+	}
+	for (const [input, replacement] of Object.entries(unificationMap.input)) {
+		event.replaceInput({ input: input },
+			input,
+			replacement
+		)
+	}
+	for (const [output, replacement] of Object.entries(unificationMap.output)) {
+		event.replaceInput({ output: output },
+			output,
+			replacement
+		)
+	}
 
 	// Wooden Armor
 	event.shaped(
@@ -1250,45 +1306,6 @@ ServerEvents.recipes((event) => {
 		}
 	).id('adj:rope')
 
-
-	// Unification map
-	const unificationMap = {
-		input: {
-			'farmersdelight:wheat_dough': 'create:dough',
-			'#forge:dough/wheat': 'create:dough',
-			'minecraft:chest': '#c:chests/wooden',
-			'minecraft:shield': 'shieldexp:iron_shield',
-			'#c:ender_pearls': 'ender_pearl',
-			'create:copper_nugget': 'mythicmetals:copper_nugget',
-			'minecraft:stick': '#c:rods/wooden',
-			'minecraft:clock': '#adj:clock',
-			'farmersdelight:rope': 'supplementaries:rope',
-			'mcdw:item_bee_stinger': 'the_bumblezone:bee_stinger',
-			'architects_palette:withered_bone_block': 'netherexp:wither_bone_block',
-			'architects_palette:withered_bone': 'netherexp:fossil_fuel'
-		},
-		output: {
-			'create:crushed_raw_iron': 'raw_iron',
-			'create:crushed_gold_iron': 'raw_gold',
-			'create:crushed_raw_copper': 'raw_copper',
-			'farmersdelight:wheat_dough': 'create:dough',
-			'create:copper_nugget': 'mythicmetals:copper_nugget',
-			'farmersdelight:rope': 'supplementaries:rope',
-		}
-	}
-	for (const [input, replacement] of Object.entries(unificationMap.input)) {
-		event.replaceInput({ input: input },
-			input,
-			replacement
-		)
-	}
-	for (const [output, replacement] of Object.entries(unificationMap.output)) {
-		event.replaceInput({ output: output },
-			output,
-			replacement
-		)
-	}
-
 	// Unify Silver
 	alloyForgeRecipe(
 		[
@@ -2133,8 +2150,24 @@ ServerEvents.recipes((event) => {
 	elementalUpgradeRecipe('earth', 'ars_nouveau:earth_essence');
 	elementalUpgradeRecipe('aqua', 'ars_nouveau:water_essence');
 
-	// Glyphs rework
+	// Cheaper materials and stations
+	event.forEachRecipe({ type: 'ars_nouveau:imbuement', output: ['ars_nouveau:source_gem', 'ars_nouveau:source_gem_block'] }, recipe => {
+		event.remove({ id: recipe.getId() });
+		const json = recipe.json;
 
+		const source = json.get('source');
+
+		event.custom({
+			type: "ars_nouveau:imbuement",
+			count: json.get('count'),
+			input: json.get('input'),
+			output: json.get('output'),
+			pedestalItems: json.get('pedestalItems'),
+			source: (source == 500) ? 200 : 800
+		}).id(recipe.getId())
+	})
+
+	// Glyphs rework
 	/**
 	 * @type {Record<Internal.OutputItem_, Internal.InputItem_[]}
 	 */
@@ -2269,6 +2302,343 @@ ServerEvents.recipes((event) => {
 			'ars_nouveau:runic_chalk',
 			'#botania:runes',
 			'#botania:runes'
+		],
+		'ars_nouveau:glyph_animate_block': [
+			'ars_nouveau:conjuration_essence',
+			'#forge:obsidian',
+			'#forge:obsidian',
+			'#forge:obsidian'
+		],
+		'ars_nouveau:glyph_bounce': [
+			'ars_nouveau:abjuration_essence',
+			'#forge:slimeballs',
+			'#forge:slimeballs',
+			'#forge:slimeballs'
+		],
+		'ars_nouveau:glyph_burst': [
+			'ars_nouveau:manipulation_essence',
+			'tnt',
+			'tnt',
+			'tnt',
+			'tnt',
+			'tnt',
+			'firework_star'
+		],
+		'ars_nouveau:glyph_cold_snap': [
+			'ars_nouveau:water_essence',
+			'powder_snow_bucket',
+			'ice'
+		],
+		'ars_nouveau:glyph_conjure_water': [
+			'ars_nouveau:water_essence',
+			'water_bucket'
+		],
+		'ars_nouveau:glyph_crush': [
+			'ars_nouveau:earth_essence',
+			'grindstone',
+			'piston'
+		],
+		'ars_nouveau:glyph_cut': [
+			'ars_nouveau:manipulation_essence',
+			'shears',
+			'iron_sword'
+		],
+		'ars_nouveau:glyph_delay': [
+			'ars_nouveau:manipulation_essence',
+			'repeater',
+			'clock'
+		],
+		'ars_nouveau:glyph_dispel': [
+			'ars_nouveau:abjuration_essence',
+			'milk_bucket',
+			'milk_bucket',
+			'milk_bucket'
+		],
+		'ars_nouveau:glyph_duration_down': [
+			'clock',
+			'glowstone_dust'
+		],
+		'ars_nouveau:glyph_evaporate': [
+			'ars_nouveau:manipulation_essence',
+			'sponge',
+			'sponge',
+			'sponge'
+		],
+		'ars_nouveau:glyph_exchange': [
+			'ars_nouveau:manipulation_essence',
+			'emerald_block',
+			'#forge:ender_pearls',
+			'#forge:ender_pearls'
+		],
+		'ars_nouveau:glyph_fangs': [
+			'ars_nouveau:conjuration_essence',
+			'prismarine_shard',
+			'prismarine_shard',
+			'twilightforest:charm_of_life_2'
+		],
+		'ars_nouveau:glyph_fell': [
+			'ars_nouveau:earth_essence',
+			'diamond_axe'
+		],
+		'ars_nouveau:glyph_flare': [
+			'ars_nouveau:fire_essence',
+			'flint_and_steel',
+			'flint_and_steel',
+			'fire_charge',
+			'fire_charge',
+			'blaze_rod'
+		],
+		'ars_nouveau:glyph_fortune': [
+			'rabbit_foot'
+		],
+		'ars_nouveau:glyph_freeze': [
+			'ars_nouveau:water_essence',
+			'snow_block',
+			'snow_block'
+		],
+		'ars_nouveau:glyph_glide': [
+			'ars_nouveau:air_essence',
+			'elytra',
+			'#forge:gems/diamond',
+			'#forge:gems/diamond',
+			'#forge:gems/diamond'
+		],
+		'ars_nouveau:glyph_gravity': [
+			'ars_nouveau:air_essence',
+			'anvil',
+			'anvil',
+			'#forge:feathers',
+			'#forge:feathers',
+			'#forge:feathers'
+		],
+		'ars_nouveau:glyph_grow': [
+			'ars_nouveau:earth_essence',
+			'bone_block',
+			'bone_block',
+			'bone_block',
+			'bone_block',
+			'bone_block',
+			'#forge:seeds',
+			'#forge:seeds',
+			'#forge:seeds'
+		],
+		'ars_nouveau:glyph_gust': [
+			'ars_nouveau:air_essence',
+			'piston',
+			'piston',
+			'piston'
+		],
+		'ars_nouveau:glyph_harm': [
+			'ars_nouveau:earth_essence',
+			'iron_sword',
+			'iron_sword',
+			'iron_sword'
+		],
+		'ars_nouveau:glyph_harvest': [
+			'ars_nouveau:earth_essence',
+			'iron_hoe'
+		],
+		'ars_nouveau:glyph_heal': [
+			'ars_nouveau:abjuration_essence',
+			'glistering_melon_slice',
+			'glistering_melon_slice',
+			'glistering_melon_slice',
+			'glistering_melon_slice',
+			'golden_apple'
+		],
+		'ars_nouveau:glyph_hex': [
+			'ars_nouveau:abjuration_essence',
+			'fermented_spider_eye',
+			'blaze_rod',
+			'blaze_rod',
+			'blaze_rod',
+			'wither_rose'
+		],
+		'ars_nouveau:glyph_ignite': [
+			'flint_and_steel',
+			'#minecraft:coals',
+			'#minecraft:coals',
+			'#minecraft:coals'
+		],
+		'ars_nouveau:glyph_infuse': [
+			'ars_nouveau:abjuration_essence',
+			'glass_bottle',
+			'#forge:rods/blaze'
+		],
+		'ars_nouveau:glyph_intangible': [
+			'ars_nouveau:manipulation_essence',
+			'phantom_membrane',
+			'phantom_membrane',
+			'phantom_membrane',
+			'#forge:ender_pearls',
+			'#forge:ender_pearls'
+		],
+		'ars_nouveau:glyph_interact': [
+			'ars_nouveau:manipulation_essence',
+			'lever',
+			'#minecraft:wooden_pressure_plates',
+			'#minecraft:buttons'
+		],
+		'ars_nouveau:glyph_launch': [
+			'ars_nouveau:air_essence',
+			'rabbit_hide',
+			'rabbit_hide',
+			'rabbit_hide'
+		],
+		'ars_nouveau:glyph_leap': [
+			'ars_nouveau:air_essence',
+			'ars_nouveau:wilden_wing',
+			'ars_nouveau:wilden_wing',
+			'ars_nouveau:wilden_wing'
+		],
+		'ars_nouveau:glyph_lightning': [
+			'ars_nouveau:air_essence',
+			'lightning_rod',
+			'lightning_rod',
+			'lightning_rod',
+			'heart_of_the_sea'
+		],
+		'ars_nouveau:glyph_linger': [
+			'ars_nouveau:manipulation_essence',
+			'dragon_breath',
+			'#forge:storage_blocks/diamond',
+			'#forge:rods/blaze',
+			'#forge:rods/blaze'
+		],
+		'ars_nouveau:glyph_name': [
+			'ars_nouveau:manipulation_essence',
+			'name_tag'
+		],
+		'ars_nouveau:glyph_orbit': [
+			'compass',
+			'ender_eye',
+			'#forge:rods/blaze'
+		],
+		'ars_nouveau:glyph_phantom_block': [
+			'#forge:glass',
+			'#forge:glass',
+			'#forge:glass',
+			'#forge:glass',
+			'#forge:glass',
+			'#forge:glass',
+			'#forge:glass',
+			'#forge:glass'
+		],
+		'ars_nouveau:glyph_pickup': [
+			'hopper',
+			'hopper'
+		],
+		'ars_nouveau:glyph_pierce': [
+			'arrow',
+			'ars_nouveau:wilden_spike'
+		],
+		'ars_nouveau:glyph_place_block': [
+			'ars_nouveau:manipulation_essence',
+			'dispenser'
+		],
+		'ars_nouveau:glyph_projectile': [
+			'fletching_table',
+			'arrow'
+		],
+		'ars_nouveau:glyph_redstone_signal': [
+			'ars_nouveau:manipulation_essence',
+			'#forge:storage_blocks/redstone',
+			'#forge:storage_blocks/redstone',
+			'#forge:storage_blocks/redstone'
+		],
+		'ars_nouveau:reset': [
+			'target'
+		],
+		'ars_nouveau:glyph_rotate': [
+			'ars_nouveau:manipulation_essence'
+		],
+		'ars_nouveau:glyph_self': [
+			'#minecraft:wooden_pressure_plates',
+			'iron_chestplate'
+		],
+		'ars_nouveau:glyph_sense_magic': [
+			'ars_nouveau:abjuration_essence',
+			'ars_nouveau:dowsing_rod',
+			'ars_nouveau:starbuncle_shards'
+		],
+		'ars_nouveau:glyph_slowfall': [
+			'ars_nouveau:air_essence',
+			'ars_nouveau:wilden_wing',
+			'feather',
+			'feather',
+			'feather',
+			'#forge:rods/blaze',
+			'#forge:crops/nether_wart'
+		],
+		'ars_nouveau:glyph_smelt': [
+			'ars_nouveau:fire_essence',
+			'blast_furnace',
+			'blast_furnace',
+			'blast_furnace',
+			'blast_furnace',
+			'#forge:rods/blaze'
+		],
+		'ars_nouveau:glyph_snare': [
+			'ars_nouveau:earth_essence',
+			'cobweb',
+			'cobweb',
+			'cobweb',
+			'cobweb'
+		],
+		'ars_nouveau:glyph_split': [
+			'ars_nouveau:relay_splitter',
+			'ars_nouveau:wilden_spike',
+			'stonecutter'
+		],
+		'ars_nouveau:glyph_summon_decoy': [
+			'ars_nouveau:conjuration_essence',
+			'armor_stand',
+			'armor_stand',
+			'armor_stand',
+			'armor_stand'
+		],
+		'ars_nouveau:glyph_summon_undead': [
+			'ars_nouveau:conjuration_essence',
+			'bone',
+			'wither_skeleton_skull'
+		],
+		'ars_nouveau:glyph_summon_vex': [
+			'ars_nouveau:conjuration_essence',
+			'twilightforest:charm_of_life_2'
+		],
+		'ars_nouveau:glyph_summon_wolves': [
+			'ars_nouveau:conjuration_essence',
+			'bone',
+			'bone',
+			'bone',
+			'ars_nouveau:wilden_wing',
+			'ars_nouveau:wilden_wing',
+			'ars_nouveau:wilden_wing',
+			'ars_nouveau:wilden_wing'
+		],
+		'ars_nouveau:glyph_toss': [
+			'ars_nouveau:manipulation_essence',
+			'dropper'
+		],
+		'ars_nouveau:glyph_touch': [
+			'#minecraft:buttons'
+		],
+		'ars_nouveau:glyph_underfoot': [
+			'iron_boots',
+			'#minecraft:wooden_pressure_plates'
+		],
+		'ars_nouveau:glyph_wall': [
+			'ars_nouveau:manipulation_essence',
+			'dragon_breath',
+			'#forge:storage_blocks/diamond',
+			'#forge:rods/blaze',
+			'#forge:rods/blaze'
+		],
+		'ars_nouveau:wololo': [
+			'ars_nouveau:abjuration_essence',
+			'#forge:dyes',
+			'#forge:dyes',
+			'#forge:dyes'
 		]
 	}
 
@@ -2793,6 +3163,17 @@ ServerEvents.recipes((event) => {
 				A: 'andesite'
 			}
 		).id(`adj:andesite_alloy_from_${nugget.replace(':', '_')}`)
+		event.shaped(
+			Item.of('create:andesite_alloy', 2),
+			[
+				'AN',
+				'NA'
+			],
+			{
+				N: nugget,
+				A: 'andesite'
+			}
+		).id(`adj:andesite_alloy_from_${nugget.replace(':', '_')}_manual_only`)
 		event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), ['andesite', nugget])
 			.id(`adj:andesite_alloy_from_${nugget.replace(':', '_')}_mixing`)
 	})
@@ -3075,7 +3456,7 @@ ServerEvents.recipes((event) => {
 	itemsOnGround([['arrow', 5], 'torch'], ['quark:torch_arrow', 5]);
 	itemsOnGround([['arrow', 15], 'tide:deep_aqua_crystal'], ['tide:deep_aqua_arrow', 5]);
 
-	event.campfireCooking('minecraft:torch', 'minecraft:stick', 0, 50).id('adj:torch_from_campfire');
+	event.campfireCooking('minecraft:torch', 'minecraft:stick', 0, 30).id('adj:torch_from_campfire');
 	event.campfireCooking('minecraft:charcoal', '#logs_that_burn', 0.15, 1200).id('adj:charcoal_from_campfire');
 
 	// Items to Farmer's Delight Stew recipes
@@ -3122,8 +3503,8 @@ ServerEvents.recipes((event) => {
 		event.recipes.farmersdelight.cooking(
 			ingredients,
 			result,
-			0.35,
-			20,
+			1,
+			300,
 			baseItem
 		).id(recipe.getId());
 	});
@@ -4506,4 +4887,41 @@ ServerEvents.recipes((event) => {
 			}
 		).id(`adj:chests/${namespace}_${type}_from_logs`)
 	})
+
+	// Craftable Heart Crystals
+	event.recipes.ars_nouveau.imbuement(
+		Item.of('heart_crystals:heart_crystal_shard', 5),
+		'create:polished_rose_quartz',
+		1250,
+		[]
+	).id(`adj:heart_crystal_from_imbuement`)
+
+	// Twilight Forest reworks
+	alloyForgeRecipe(
+		[
+			['iron_ingot', 1],
+			['twilightforest:liveroot', 3],
+			['gold_ingot', 1]
+		],
+		['twilightforest:ironwood_ingot', 2],
+		1,
+		5,
+		[
+			['3+', 'output', 3]
+		]
+	)
+
+	alloyForgeRecipe(
+		[
+			['raw_iron', 1],
+			['twilightforest:liveroot', 3],
+			['raw_gold', 1]
+		],
+		['twilightforest:ironwood_ingot', 3],
+		1,
+		5,
+		[
+			['3+', 'output', 4]
+		]
+	)
 });

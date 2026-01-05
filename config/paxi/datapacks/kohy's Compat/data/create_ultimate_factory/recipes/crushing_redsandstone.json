@@ -1,0 +1,18 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:red_sandstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:red_sand"
+    },
+    {
+      "chance": 0.01,
+      "item": "minecraft:nautilus_shell"
+    }
+  ],
+  "processingTime": 150
+}

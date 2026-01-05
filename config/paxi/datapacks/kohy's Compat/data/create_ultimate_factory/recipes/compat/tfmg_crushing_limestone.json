@@ -1,0 +1,28 @@
+{
+  "type": "create:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "create:limestone"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfmg:limesand"
+    },
+    {
+      "chance": 0.125,
+      "item": "minecraft:quartz"
+    },
+    {
+      "chance": 0.08,
+      "item": "minecraft:lapis_lazuli"
+    }
+  ],
+  "processingTime": 250
+}

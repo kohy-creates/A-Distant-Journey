@@ -13,7 +13,7 @@
 	name = "kohara:old_levelup"
 	#Volume of the volume (when Minecraft loads)
 	#Range: 0.0 ~ 10.0
-	volume = 0.5
+	volume = 0.75
 	#Pitch of the sound (when Minecraft loads)
 	#Range: 0.0 ~ 10.0
 	pitch = 1.0
@@ -30,7 +30,7 @@
 	nameResourcesReload = "minecraft:entity.player.levelup"
 	#Volume of the sound (when resources complete reloading)
 	#Range: 0.0 ~ 10.0
-	volumeResourcesReload = 0.03
+	volumeResourcesReload = 0.15
 	#Pitch of the sound (when resources complete reloading)
 	#Range: 0.0 ~ 10.0
 	pitchResourcesReload = 1.1
@@ -47,10 +47,10 @@
 	nameWorld = "minecraft:entity.player.levelup"
 	#Volume of the sound (when the world loads after connecting to a server)
 	#Range: 0.0 ~ 10.0
-	volumeWorld = 0.33
+	volumeWorld = 0.5
 	#Pitch of the sound (when the world loads after connecting to a server)
 	#Range: 0.0 ~ 10.0
-	pitchWorld = 0.75
+	pitchWorld = 0.6
 	#Sound category for the sound played when the world finishes loading (after connecting to a server). EG: "ambient" or "music". Defaults to "master" if Ding cannot find your category.
 	categoryWorld = "master"
 

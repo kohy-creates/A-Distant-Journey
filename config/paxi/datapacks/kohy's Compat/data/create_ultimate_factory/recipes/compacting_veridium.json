@@ -1,0 +1,43 @@
+{
+	"type": "create:compacting",
+	"ingredients": [
+	  {
+      "item": "mythicmetals:copper_nugget"
+	  },
+	  {
+      "item": "mythicmetals:copper_nugget"
+	  },
+	  {
+      "item": "mythicmetals:copper_nugget"
+	  },
+	  {
+      "item": "mythicmetals:copper_nugget"
+	  },
+	  {
+      "item": "mythicmetals:copper_nugget"
+	  },
+	  {
+      "item": "mythicmetals:copper_nugget"
+	  },
+	  {
+      "item": "mythicmetals:copper_nugget"
+	  },
+	  {
+      "item": "minecraft:gravel"
+	  },
+	  {
+      "item": "minecraft:gravel"
+	  },
+	  {
+      "fluid": "minecraft:lava",
+      "nbt": {},
+      "amount": 100
+	  }
+	],
+	"results": [
+	  {
+      "count": 2,
+      "item": "create:veridium"
+	  }
+	]
+}

@@ -154,7 +154,8 @@ global.weapon_overrides = {
 	'mcdw:sword_obsidian_claymore': [64, 0.7],
 	'mcdw:sword_sinister': [42, 1.8],
 
-	'minecraft:trident': [21, 1.1, 0.1]
+	'minecraft:trident': [21, 1.1, 0.1],
+	'farmersdelight:skillet': []
 }
 
 addToolsetOverride('minecraft:wooden', 7)

@@ -71,7 +71,7 @@
       "weapon_attributes": "bettercombat:soul_knife"
     },
     {
-      "item_id_regex": "dagger|knife",
+      "item_id_regex": "dagger",
       "weapon_attributes": "bettercombat:dagger"
     },
     {

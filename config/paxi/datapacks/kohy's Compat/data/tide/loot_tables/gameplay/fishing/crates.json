@@ -1,0 +1,206 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:alternatives",
+							"children": [
+								{
+									"type": "minecraft:loot_table",
+									"conditions": [
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"dimension": "minecraft:the_nether"
+											}
+										}
+									],
+									"name": "tide:gameplay/fishing/crates/nether/lava"
+								},
+								{
+									"type": "minecraft:loot_table",
+									"conditions": [
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"dimension": "minecraft:the_end"
+											}
+										}
+									],
+									"name": "tide:gameplay/fishing/crates/end/lava"
+								},
+								{
+									"type": "minecraft:loot_table",
+									"conditions": [
+										{
+											"condition": "minecraft:entity_properties",
+											"entity": "this",
+											"predicate": {
+												"type_specific": {
+													"type": "tide_fishing",
+													"depth_layer": "depths"
+												}
+											}
+										}
+									],
+									"name": "tide:gameplay/fishing/crates/overworld/lava_deep"
+								},
+								{
+									"type": "minecraft:loot_table",
+									"conditions": [
+										{
+											"condition": "minecraft:entity_properties",
+											"entity": "this",
+											"predicate": {
+												"type_specific": {
+													"type": "tide_fishing",
+													"depth_layer": "underground"
+												}
+											}
+										}
+									],
+									"name": "tide:gameplay/fishing/crates/overworld/lava_underground"
+								},
+								{
+									"type": "minecraft:loot_table",
+									"name": "tide:gameplay/fishing/crates/overworld/lava_surface"
+								}
+							],
+							"conditions": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"type_specific": {
+											"type": "tide_fishing",
+											"is_lava_fishing": true
+										}
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:alternatives",
+							"children": [
+								{
+									"type": "minecraft:loot_table",
+									"conditions": [
+										{
+											"condition": "minecraft:location_check",
+											"predicate": {
+												"dimension": "minecraft:the_end"
+											}
+										}
+									],
+									"name": "tide:gameplay/fishing/crates/end/water"
+								},
+								{
+									"type": "minecraft:loot_table",
+									"conditions": [
+										{
+											"condition": "minecraft:entity_properties",
+											"entity": "this",
+											"predicate": {
+												"type_specific": {
+													"type": "tide_fishing",
+													"depth_layer": "depths"
+												}
+											}
+										}
+									],
+									"name": "tide:gameplay/fishing/crates/overworld/water_deep"
+								},
+								{
+									"type": "minecraft:loot_table",
+									"conditions": [
+										{
+											"condition": "minecraft:entity_properties",
+											"entity": "this",
+											"predicate": {
+												"type_specific": {
+													"type": "tide_fishing",
+													"depth_layer": "underground"
+												}
+											}
+										}
+									],
+									"name": "tide:gameplay/fishing/crates/overworld/water_underground"
+								},
+								{
+									"type": "minecraft:alternatives",
+									"children": [
+										{
+											"type": "minecraft:loot_table",
+											"conditions": [
+												{
+													"condition": "tide:check_biome_tag",
+													"tag": "tide:is_saltwater"
+												}
+											],
+											"name": "tide:gameplay/fishing/crates/overworld/water_ocean"
+										},
+										{
+											"type": "minecraft:loot_table",
+											"name": "tide:gameplay/fishing/crates/overworld/water_river"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "heart_crystals:heart_crystal",
+					"weight": 16,
+					"quality": 1
+				},
+				{
+					"type": "item",
+					"name": "heart_crystals:heart_crystal",
+					"weight": 2,
+					"quality": 1,
+					"functions": [
+						{
+							"type": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "heart_crystals:heart_crystal_shard",
+					"weight": 30,
+					"functions": [
+						{
+							"type": "set_count",
+							"count": {
+								"min": 3,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "empty",
+					"weight": 15,
+					"quality": -1
+				}
+			]
+		}
+	]
+}

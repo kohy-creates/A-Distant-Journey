@@ -1,0 +1,29 @@
+
+#QuitOrNot Settings
+[ConfirmType]
+	#Allowed Values: TOAST, SCREEN, NONE
+	confirmTypeQuitGame = "SCREEN"
+	#Allowed Values: TOAST, SCREEN, NONE
+	confirmTypeQuitSinglePlayer = "TOAST"
+	#Allowed Values: TOAST, SCREEN, NONE
+	confirmTypeQuitMultiplayer = "TOAST"
+
+[ConfirmScreen]
+	#Enable using [Enter | Esc] to [confirm | close the screen]
+	enableKey = true
+	#Only after milliseconds as many as below are the buttons on the screen active
+	#Range: 0 ~ 10000
+	buttonWaitTime = 0
+	#Allowed Values: CLASSIC, BEDROCK
+	confirmScreenStyle = "BEDROCK"
+
+[ConfirmToast]
+	#How long the Toast stays on the screen
+	#Range: 1000 ~ 20000
+	toastKeepTime = 5000
+	#Only if milliseconds as many as below have passed since the Toast appeared will the actions work
+	#Range: 0 ~ 5000
+	toastDelay = 500
+	#Enable dark mode for the Toast
+	toastDarkMode = false
+

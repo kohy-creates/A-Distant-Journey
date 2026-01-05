@@ -34,7 +34,8 @@ ItemEvents.modification(event => {
 		/treasure_bag/,
 		/metallurgium/,
 		/celestium/,
-		/unobtainium/
+		/unobtainium/,
+		/gaiasteel/
 	], item => {
 		item.rarity = 'epic'
 	});

@@ -1,10 +1,10 @@
 #Modify the number of kills required to get a flag from an entity
 #Format: modid:entity-killCount,'minecraft:zombie-50'
-entityTypes = []
+entityTypes = ["born_in_chaos_v1:door_knight-25", "minecraft:wandering_trader-15", "minecraft:iron_golem-10", "minecraft:snow_golem-25", "minecraft:villager-25", "minecraft:elder_guardian-5", "minecraft:creeper-25", "born_in_chaos_v1:barrel_zombie-15", "born_in_chaos_v1:lumberjack_zombie-15", "born_in_chaos_v1:fisherman_zombie-15", "born_in_chaos_v1:lifestealer-5", "born_in_chaos_v1:lifestealer_true_form-5", "born_in_chaos_v1:phantom_creeper-25", "born_in_chaos_v1:phantom_creeper_copy-50", "witherstormmod:withered_symbiont-5"]
 #global kill count for all entities
 #Range: > 1
 globalKillCount = 50
 #Blacklist of entities that cannot be used to make flags
 #Format: modid:entity,'minecraft:zombie'
-entityBlackList = []
+entityBlackList = ["evilcraft:vengeance_spirit"]
 

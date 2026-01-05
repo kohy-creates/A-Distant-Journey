@@ -1,0 +1,13 @@
+{
+	"type": "create:haunting",
+	"ingredients": [
+	  {
+      "item": "minecraft:poppy"
+	  }
+	],
+	"results": [
+	  {
+      "item": "minecraft:wither_rose"
+	  }
+	]
+}

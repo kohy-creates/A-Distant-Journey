@@ -1,1 +1,74 @@
-{}
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "twilightforest:naga_scale"
+				}
+			],
+			"rolls": 1
+		},
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "twilightforest:hedge"
+				}
+			],
+			"rolls": 3
+		},
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "twilightforest:naga_trophy"
+				}
+			],
+			"rolls": 1
+		},
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "twilightforest:naga_banner_pattern"
+				}
+			],
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.25
+				}
+			]
+		}
+	],
+	"random_sequence": "twilightforest:entities/naga"
+}

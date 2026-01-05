@@ -1,0 +1,23 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:brown_mushroom_block"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "chance": 0.75,
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "chance": 0.05,
+      "item": "minecraft:red_mushroom"
+    }
+  ],
+  "processingTime": 350
+}

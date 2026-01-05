@@ -31,9 +31,9 @@
 		{
 			dependencies: ["026E22A534C341CC"]
 			description: [
-				"&7&o'Botanical Energy is an ethereal substance - in essence, it's a mystical form of energy. Its existence is inconsistent to the senses, and its color depends on its surrounding environment."
+				"&7&o'Mana is an ethereal substance - in essence, it's a mystical form of energy. Its existence is inconsistent to the senses, and its color depends on its surrounding environment."
 				""
-				"&7&oThe manipulation of Botanical Energy is likely the most important skill a botanist needs to master.'"
+				"&7&oThe manipulation of Mana is likely the most important skill a botanist needs to master.'"
 				"                           &7&o~Lexica Botania"
 			]
 			icon: "botania:lexicon"
@@ -130,7 +130,7 @@
 				"4389F7F895342C2A"
 			]
 			id: "35B5E5B6F7CC021D"
-			subtitle: "Place down a Botanical Energy Pool"
+			subtitle: "Place down a Mana Pool"
 			tasks: [
 				{
 					id: "4745303AED988F56"
@@ -189,7 +189,7 @@
 				"5F471ABAA31A0667"
 			]
 			id: "4389F7F895342C2A"
-			subtitle: "Place down a Botanical Energy Spreader"
+			subtitle: "Place down a Mana Spreader"
 			tasks: [
 				{
 					id: "46916F845D9BD022"
@@ -238,7 +238,7 @@
 			id: "68A247EB4F6079CA"
 			optional: true
 			shape: "rsquare"
-			subtitle: "Craft a Diluted Botanical Energy Pool"
+			subtitle: "Craft a Diluted Mana Pool"
 			tasks: [{
 				id: "27238622CA6F7C1E"
 				item: "botania:diluted_pool"
@@ -252,7 +252,7 @@
 			dependencies: ["35B5E5B6F7CC021D"]
 			icon: "botania:mana_diamond"
 			id: "0AA4AD4290EE5366"
-			subtitle: "Toss in an item into a partially filled Botanical Energy Pool and infuse it"
+			subtitle: "Toss in an item into a partially filled Mana Pool and infuse it"
 			tasks: [{
 				id: "7D1BDC304C5AF94F"
 				item: {
@@ -292,7 +292,7 @@
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
-			description: ["&7Hint:&r Infused equipment regenerates lost durability from &bBotanical Energy Tablets&r in your inventory."]
+			description: ["&7Hint:&r Infused equipment regenerates lost durability from &bMana Tablets&r in your inventory."]
 			icon: {
 				Count: 1
 				id: "botania:manasteel_chestplate"
@@ -551,7 +551,7 @@
 			description: [
 				"&7Hint: &fUnsure what to do with the &eSparks&r?"
 				""
-				"It's VERY simple - just place one on top of a &bBotanical Energy Pool&r and the second one on the &9Agglomeration Plate&f. They will share &bBotanical Energy&r automatically whenever needed."
+				"It's VERY simple - just place one on top of a &bMana Pool&r and the second one on the &9Agglomeration Plate&f. They will share &bMana&r automatically whenever needed."
 			]
 			icon: "botania:terra_plate"
 			id: "2BF3097896646CA9"
@@ -607,7 +607,7 @@
 				"7FE9B5AB124013D2"
 				"03DC59E95C1B2EB0"
 			]
-			description: ["&7Hint:&r Same as &9Infused equipment&r, &aTerrasteel gear&r can regenerate lost durability from &bBotanical Energy Tablets&r in your inventory."]
+			description: ["&7Hint:&r Same as &9Infused equipment&r, &aTerrasteel gear&r can regenerate lost durability from &bMana Tablets&r in your inventory."]
 			icon: {
 				Count: 1
 				id: "botania:terrasteel_chestplate"
@@ -793,7 +793,7 @@
 			id: "1701D7122A9FDADA"
 			optional: true
 			shape: "rsquare"
-			subtitle: "Craft a Botanical Energy Tablet"
+			subtitle: "Craft a Mana Tablet"
 			tasks: [{
 				id: "37BD1C1A13685B4E"
 				item: "botania:mana_tablet"
@@ -951,7 +951,7 @@
 			id: "2F2C7D360A6EBE2A"
 			optional: true
 			shape: "rsquare"
-			subtitle: "Craft a Botanical Energyseer Monocle"
+			subtitle: "Craft a Manaseer Monocle"
 			tasks: [{
 				id: "77FD519D83C2610B"
 				item: "botania:monocle"

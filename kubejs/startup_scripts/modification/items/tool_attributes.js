@@ -47,11 +47,17 @@ StartupEvents.init(event => {
 
 			// ================= Weapons =================
 			if (event.slotType == 'mainhand') {
+				// if (id.includes('delight') && id.includes('knife')) {
+				// 	event.removeAttribute('generic.attack_speed');
+				// 	event.removeAttribute('generic.attack_damage');
+				// 	return;
+				// }
+
 				if (item instanceof $TieredItem && !(item instanceof $SwordItem)) {
 					let tier = item.getTier();
-					event.addModifier("kubejs:harvest_level", new $AttributeModifier(harvestLevelUUID, "Harvest Level", tier.getLevel(), 'addition'))
+					event.addModifier("kubejs:harvest_level", new $AttributeModifier(harvestLevelUUID, "Harvest Level", tier.getLevel() + 1, 'addition'))
 					let speed = tier.getSpeed();
-					if (id.includes('rose_gold')) speed = 7.0;
+					if (id.includes('rose_gold')) speed = 6.5;
 					event.addModifier("kubejs:mining_speed", new $AttributeModifier(miningSpeedUUID, "Mining Speed", speed, 'addition'))
 				}
 

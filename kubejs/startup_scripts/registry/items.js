@@ -1,8 +1,3 @@
-// const $QuiverItem = Java.loadClass('net.mehvahdjukaar.supplementaries.common.items.QuiverItem')
-const $EyeofEnder = Java.loadClass('net.minecraft.world.entity.projectile.EyeOfEnder')
-const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
-const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
-
 StartupEvents.registry('item', registry => {
 	// Misc items
 	registry.create('enchanters_guide', 'basic')

@@ -6,6 +6,6 @@
 	"hudBackgroundOpacity": 75,
 	"showWhenFull": false,
 	"showHUDInCreative": true,
-	"showKeybinding": true,
+	"showKeybinding": false,
 	"keybindingLabelPosition": "LEFT"
 }

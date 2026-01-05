@@ -1364,6 +1364,17 @@
         "value": 2048
       }
     },
+    "adjcore:generic.healing_reduction": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 0,
+        "value": 0
+      }
+    },
     "attributeslib:arrow_velocity": {
       "enabled": false,
       "min": {

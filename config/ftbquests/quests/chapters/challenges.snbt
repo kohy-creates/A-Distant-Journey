@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "challenges"
+	group: "4C4C64E64E42D01F"
+	id: "1FFE344A0F13154B"
+	order_index: 6
+	quest_links: [ ]
+	quests: [ ]
+	title: "Challenge Zone"
+}

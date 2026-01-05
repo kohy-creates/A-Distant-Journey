@@ -33,7 +33,8 @@ Undead Armies happen when you kill 400 undead mobs in total, or after using an U
 All accessories share the same slot type, so the combo potential is seemingly infinite.
 You can't equip two of the same accessories.
 Waystones are a mid-game way of getting from one place to another in a matter of seconds. They are however a bit complicated when it comes to crafting them.
-Waystones can only be broken with a pickaxe with a harvest level of 4.
+Waystones can only be broken with a pickaxe with a Tool Power of 5.
+Tool Power indicates what blocks the tool can destroy. For example, Obsidian can only be broken with tools that have 4 or more Tool Power.
 Mobs that are currently targetting you will have an indicator shown above their head.
 If you don't see some items you know already in your recipe browser - don't worry! You unlock more and more of them the further you progress.
 Sneak and right-click a Chest with both hands empty to pick it up. You can then place it back anywhere you want. It works with some animals too!
@@ -63,7 +64,7 @@ Enchanting Infusers allow you to select which enchantments you enchant your item
 Did you see all of the new death messages yet?
 Did you see all of the new death messages yet? I mean I'm pretty sure you did, the difficulty is pretty high.
 ADJ doesn't support any language other than English (US), so please don't report any localization issues if you still decide to play on a different language.
-Dandelifeons and Shulk me Nots are all good ways to produce lots of Botanical Energy late-game.
+Dandelifeons and Shulk me Nots are all good ways to produce lots of Mana late-game.
 Legends say this pack was made by a gay furry :3
 You can place a Pet Bed and assign your furry companion to it to allow it to respawn when slain!
 You can't hurt your own pets. At least you shouldn't be able to, according to the mods included.
@@ -71,8 +72,8 @@ Remember to take breaks while playing!
 Place down an Inventory Connector and attach a Storage Terminal to it to create a basic and infinitely expandable storage system.
 Loot chests in structures can be looted by every player in your world, not just whoever finds them first.
 Nights are very dark in ADJ, so make sure you're always carrying a Torch or a Lantern with you at all time.
-An easy way to generate lots of Botanical Energy that requires minimum resources and upkeep are Hydroangeas.
-Thermalillies generate a lot of Botanical Energy while they are active, but go on a 5 minute cooldown afterwards. The amount of energy generated outweights the cooldown though.
+An easy way to generate lots of Mana that requires minimum resources and upkeep are Hydroangeas.
+Thermalillies generate a lot of Mana while they are active, but go on a 5 minute cooldown afterwards. The amount of energy generated outweights the cooldown though.
 Waterwheels are the best stress source in Create. Change my mind.
 You can spin water wheels horizontally instead of vertically, if you're into that sort of thing.
 I asked Discord for tips and got this.

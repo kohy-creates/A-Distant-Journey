@@ -1,0 +1,123 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:rotten_flesh",
+					"weight": 100,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 4
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "born_in_chaos_v1:pieceofdarkmetal",
+					"weight": 100,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 4,
+								"max": 7
+							}
+						},
+						{
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 2
+							},
+							"limit": 14
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "born_in_chaos_v1:pileof_dark_metal",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							},
+							"limit": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "born_in_chaos_v1:seedof_chaos",
+					"weight": 100,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							},
+							"limit": 3
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "born_in_chaos_v1:dark_upgrade",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							},
+							"limit": 2
+						}
+					]
+				}
+			]
+		}
+	],
+	"random_sequence": "born_in_chaos_v1:entities/fallen_chaos_knight"
+}

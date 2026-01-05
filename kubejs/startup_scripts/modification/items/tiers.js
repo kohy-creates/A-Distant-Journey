@@ -13,6 +13,14 @@ const tiers = {
 		enchantmentValue: 16,
 		repairIngredient: '#c:adamantite_ingots'
 	},
+	'diamond': {
+		uses: 2000,
+		speed: 7.0,
+		attackDamageBonus: 5.0,
+		level: 3,
+		enchantmentValue: 10,
+		repairIngredient: 'diamond'
+	},
 	'aquarium': {
 		uses: 455,
 		speed: 6.0,
@@ -294,6 +302,7 @@ ItemEvents.modification(event => {
 	modifyTier('mythicmetals:mythril', 'mythril');
 	modifyTier('mythicmetals:metallurgium', 'metallurgium');
 	modifyTier('mythicmetals:celestium', 'celestium');
+	modifyTier('minecraft:diamond', 'diamond');
 
 	// event.modify('mythicmetals:orichalcum_hammer', item => {
 	// 	item.tier = $TierSortingRegistry.byName('adj:orichalcum');
@@ -312,15 +321,47 @@ StartupEvents.postInit(event => {
 		new $SimpleToolHandler(
 			"pickaxe",
 			$BlockTags.MINEABLE_WITH_PICKAXE,
-			// Your can try a diff approach, but remember that the icons on tooltip will be tested in this order
+			// The icons on tooltip will be tested in this order
 			[
 				"wooden_pickaxe",
-				"stone_pickaxe",
+				"mythicmetals:copper_pickaxe",
 				"iron_pickaxe",
 				"diamond_pickaxe",
 				"netherite_pickaxe",
 				"majruszsdifficulty:enderium_pickaxe",
 				"mythicmetals:metallurgium_pickaxe"
+			]
+		)
+	)
+
+	$HarvestToolProvider.registerHandler(
+		new $SimpleToolHandler(
+			"axe",
+			$BlockTags.MINEABLE_WITH_AXE,
+			[
+				"wooden_axe",
+				"mythicmetals:copper_axe",
+				"iron_axe",
+				"diamond_axe",
+				"netherite_axe",
+				"majruszsdifficulty:enderium_axe",
+				"mythicmetals:metallurgium_axe"
+			]
+		)
+	)
+
+	$HarvestToolProvider.registerHandler(
+		new $SimpleToolHandler(
+			"shovel",
+			$BlockTags.MINEABLE_WITH_SHOVEL,
+			[
+				"wooden_shovel",
+				"mythicmetals:copper_shovel",
+				"iron_shovel",
+				"diamond_shovel",
+				"netherite_shovel",
+				"majruszsdifficulty:enderium_shovel",
+				"mythicmetals:metallurgium_shovel"
 			]
 		)
 	)

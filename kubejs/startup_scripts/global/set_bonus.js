@@ -742,7 +742,7 @@ global.setBonusMap = {
 	},
 	'botania:manasteel': {
 		description: [
-			"10% reduced energy cost on Botanical Energy Tools and Rods",
+			"10% reduced energy cost on Mana Tools and Rods",
 			"15% reduced mana cost on spells",
 			'3 defense'
 		],
@@ -767,8 +767,8 @@ global.setBonusMap = {
 	},
 	'botania:terrasteel': {
 		description: [
-			"20% reduced energy cost on Botanical Energy Tools and Rods",
-			"Passive energy generation on Botanical Energy Tablets",
+			"20% reduced energy cost on Mana Tools and Rods",
+			"Passive energy generation on Mana Tablets",
 			"20% reduced mana cost on spells",
 			'10% reduced damage'
 		],
@@ -793,7 +793,7 @@ global.setBonusMap = {
 	},
 	'botania:manaweave': {
 		description: [
-			"40% reduced energy cost on Botanical Energy Tools and Rods",
+			"40% reduced energy cost on Mana Tools and Rods",
 			"30% reduced mana cost on spells",
 			"Increased profficiency with Rods",
 			'25% increased movement speed'

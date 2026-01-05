@@ -12,11 +12,6 @@
 /-golden_axe
 /-golden_shovel
 /-golden_hoe
-rose_gold_pickaxe
-rose_gold_sword
-rose_gold_axe
-rose_gold_shovel
-rose_gold_hoe
 quark:pickarang
 /-enchanted_book
 /-potion
@@ -33,3 +28,6 @@ quark:pickarang
 /-chestplate
 /-leggings
 /-boots
+/-gloves
+/-music_disc
+etched:blank_music_disc

@@ -1,3 +1,5 @@
+#Range: > 0
+HARDCORE_RESPAW_RADIUS = 10000
 
 #Tools
 [tools]

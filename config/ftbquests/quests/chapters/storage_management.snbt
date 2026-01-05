@@ -316,7 +316,7 @@
 		}
 		{
 			dependencies: ["6A911AFF4185ED0D"]
-			description: ["&7&lHINT: &rHopperhocks &edon't require Botanical Energy to function&r! However, if you provide a constant supply then it's range will be more than doubled."]
+			description: ["&7&lHINT: &rHopperhocks &edon't require Mana to function&r! However, if you provide a constant supply then it's range will be more than doubled."]
 			id: "5F2D087B979A8FFE"
 			subtitle: "Craft a Hopperhock. It puts nearby dropped items into an adjacent Chest"
 			tasks: [{

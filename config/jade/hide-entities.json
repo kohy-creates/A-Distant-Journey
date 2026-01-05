@@ -93,6 +93,11 @@
     "wither_spawn_animation:animated_altar_x",
     "wither_spawn_animation:animated_altar_z",
     "window_box:marker",
-    "minecraft:experience_orb"
+    "minecraft:experience_orb",
+    "rehooked:direction_cube",
+    "alexscaves:candy_cane_hook",
+    "cataclysm:tidal_hook",
+    "enigmaticdice:dragonclaw_hook",
+    "rehooked:hook_projectile"
   ]
 }

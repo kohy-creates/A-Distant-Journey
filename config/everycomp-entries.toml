@@ -92,6 +92,10 @@
 		[types.wood_type.architects_palette]
 			twisted = true
 
+		[types.wood_type.ancient_aether]
+			highsproot = true
+			sakura = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -174,6 +178,14 @@
 
 		[types.leaves_type.architects_palette]
 			twisted = true
+
+		[types.leaves_type.ancient_aether]
+			crystal_skyroot = true
+			enchanted_skyroot = true
+			skyroot_pine = true
+			blue_skyroot_pine = true
+			highsproot = true
+			sakura = true
 
 	[types.cake]
 
@@ -768,6 +780,13 @@
 			craterstone = true
 			nebulite = true
 			polished_nebulite = true
+
+		[types.cut_block_type.ancient_aether]
+			highsproot = true
+			sakura = true
+			carved_tile = true
+			valkyrie_brick = true
+			valkyrie_tile = true
 
 #Disables specific entries
 [entries]

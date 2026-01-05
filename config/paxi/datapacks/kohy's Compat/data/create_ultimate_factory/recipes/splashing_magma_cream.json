@@ -1,0 +1,14 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "minecraft:magma_cream"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.4,
+      "item": "minecraft:slime_ball"
+    }
+  ]
+}

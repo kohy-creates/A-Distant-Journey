@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = generic_dirt_message_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1766067931612
+  last_edited_time = 1767370196484
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:dcf9327a-751e-4e0f-92c7-503316f02c00-1766067922781] = [groups:][instances:]
+  [loading_requirement_container_meta:eeab2c8a-00ea-42a1-aab6-1c2af1dd98fd-1767369193167] = [groups:][instances:]
 }
 
 customization {
@@ -75,7 +75,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1200
   sticky_anchor = false
   anchor_point = mid-centered
   x = -154
@@ -117,7 +117,7 @@ element {
   base_opacity = 0.5
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1200
   sticky_anchor = false
   anchor_point = mid-centered
   x = -57
@@ -147,7 +147,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%**DON'T CLICK ON THE SCREEN**%n%until it's finished loading or the game might crash!%n%^^^
+  source = ^^^%n%**DON'T CLICK ON THE SCREEN**%n%until it's finished loading or the game might crash!%n%%n%%!!smallcaps% {"placeholder":"switch_case","values":{"value":"{"placeholder":"osname"}","cases":"Windows 11:(this is   just   how   windows   works),Windows 10:(this   is   just   how   windows   works)","default":""}} %!!%%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -195,7 +195,7 @@ element {
   x = -150
   y = -20
   width = 298
-  height = 40
+  height = 48
   stretch_x = false
   stretch_y = false
   stay_on_screen = true

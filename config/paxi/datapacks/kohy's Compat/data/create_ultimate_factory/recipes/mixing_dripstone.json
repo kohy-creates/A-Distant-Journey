@@ -1,0 +1,18 @@
+{
+	"type": "create:mixing",
+	"ingredients": [
+	  {
+      "item": "minecraft:calcite"
+	  },
+	  {
+      "fluid": "minecraft:water",
+      "nbt": {},
+      "amount": 200
+	  }
+	],
+	"results": [
+	  {
+      "item": "minecraft:dripstone_block"
+	  }
+	]
+}

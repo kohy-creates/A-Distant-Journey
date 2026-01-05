@@ -1,0 +1,35 @@
+#Default red value for particles
+#Default Ars: 255
+#To match with Botania: 100
+#Range: 0 ~ 255
+particleR = 100
+#Default green value for particles
+#Default Ars: 25
+#To match with Botania: 240
+#Range: 0 ~ 255
+particleG = 240
+#Default blue value for particles
+#Default Ars: 180
+#To match with Botania: 45
+#Range: 0 ~ 255
+particleB = 45
+#Whether to disable Ars Nouveau's mana system, and to use Botania's instead
+disableArsMana = false
+#Botania mana to Ars Nouveau mana conversion
+#Range: > 0
+botaniaToArs = 50
+#Ars Nouveau to Botania mana transfer rate
+#Range: > 0
+arsToBotaniaTransferRate = 1000
+#Hide Ars Nouveau's mana bar
+hideManaBar = false
+#Default Ars Nouveau spellbook color
+#Allowed Values: WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+spellbookColor = "LIGHT_BLUE"
+#Default Ars Nouveau armor color
+#Allowed Values: WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+armorColor = "LIGHT_BLUE"
+#Use botania styled tooltips whenever hovering over blocks or entities with the Wand of the Forest
+#Disables certain Ars tooltips which conflict with Botania's style
+botaniaTooltips = true
+

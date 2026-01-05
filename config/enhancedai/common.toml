@@ -118,7 +118,7 @@
 	[Warden."Warden sonic boom range"]
 		#Vanilla is 15 horizontal and 20 vertical
 		#Range: > -2147483648
-		Range = 50
+		Range = 40
 
 	#Change the distance at which vibrations reach wardens.
 	[Warden."Warden listen range"]
@@ -379,7 +379,7 @@
 	[Mobs.Spawning]
 		#How far away from any player monsters will instantly despawn? Vanilla is 128. Reducing this makes mobs more crowded around players.
 		#Range: 0 ~ 128
-		"Monsters despawning distance" = 128
+		"Monsters despawning distance" = 110
 		#How far away from any player monsters will be able to randomly despawn? Vanilla is 32
 		#Range: 0 ~ 128
 		"Min monsters despawning distance" = 48
@@ -401,7 +401,7 @@
 		"See glowing entities" = true
 		#Mobs in the entity type tag `enhancedai:mobs/targeting/alert_nearby` will alert nearby mobs in this range and target the player.
 		#Range: > 0
-		"Alert range" = 32
+		"Alert range" = 16
 		#Mobs will be able to find better and longer paths to the target the higher this value is. The higher the more performance heavy. Only entity types in the tag `enhancedai:mobs/targeting/visited_nodes_multiplier` tag will be affected by this. Vanilla is 1.0
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Max visited nodes multiplier" = 4.0
@@ -411,14 +411,14 @@
 			#Range: 0.0 ~ 128.0
 			Minimum = 20.0
 			#Range: 0.0 ~ 128.0
-			Maximum = 40.0
+			Maximum = 32.0
 
 		#How far away can the mobs see the player even through walls. This only works with 'Better Nearby Targeting' enabled. Setting 'Max' to 0 will make mobs not able to see through walls. Use mods like Mobs Properties Randomness to have more control over the attribute; the attribute name is 'enhancedai:xray_follow_range'. Only mobs in the entity type tag `enhancedai:mobs/targeting/apply_xray` will be affected by this override.
 		[Mobs.Targeting."Xray range override"]
 			#Range: 0.0 ~ 128.0
-			Minimum = 12.0
+			Minimum = 8.0
 			#Range: 0.0 ~ 128.0
-			Maximum = 24.0
+			Maximum = 16.0
 
 		[Mobs.Targeting."Better hurt by target"]
 			#Mobs will actually switch target when attacked unless it's the same or if the current one it's closer. Only entity types in the entity type tag `enhancedai:mobs/targeting/better_hurt_by` tag will be affected by this. Use the entity type tag `enhancedai:mobs/targeting/allow_target_switch` to allow more entity types to switch targets (e.g. creepers in vanilla can't switch targets).
@@ -671,7 +671,7 @@
 	[Mobs."Air steal"]
 		#How many ticks of air are stolen from entities when attacked by the mob.
 		#Range: 0 ~ 128
-		"Stolen ticks" = 20
+		"Stolen ticks" = 5
 
 	#Allows mobs to call reinforcements (like vanilla zombies can, but better) and have leaders that have a high chance to call reinforcements. Only entity types in the `enhancedai:mobs/leaders` tag can jump. PLEASE NOTE that this feature uses a custom attribute (enhancedai:spawn_reinforcements_chance) instead of the vanilla one. This feature has also an MPR condition `enhancedai:is_leader` to check if the mob is a leader.
 	[Mobs.Leaders]
@@ -680,7 +680,7 @@
 		"Leader chance" = 0.05
 		#At this damage, the chance to spawn reinforcements is 100% of the attribute, otherwise is scaled. E.g. with this set to 6 and enhancedai:spawn_reinforcements_chance attribute set to 0.5 the chance to spawn reinforcements is 50% at 6 damage, 25% at 3 damage or 100% at 12 damage. Set to 0 to disable scaling with damage. This is damage before resistances (armor, etc).
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Spawn reinforcements chance damage scaled" = 6.0
+		"Spawn reinforcements chance damage scaled" = 0.0
 		#How much is enhancedai:spawn_reinforcements_chance reduced by each time a reinforcement is spawned.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Charge per spawn" = 0.05
@@ -777,22 +777,22 @@
 	[Mobs."Teleport anti-cheese"]
 		#Chance for entity types in the enhancedai:anti_cheese/teleport tag to get the Teleport Anti-Cheese AI, teleporting the target near them after not being able to reach them. Entity types in the tag enhancedai:anti_cheese/cant_be_teleported can't be teleported
 		#Range: 0.0 ~ 1.0
-		Chance = 1.0
+		Chance = 0.33
 
 	#Make mobs flee from the target. Use the enhancedai:mobs/can_flee entity type tag to add/remove entities that are affected by this feature. Mobs like animals have they're own feature for fleeing the target due to having different conditions.
 	[Mobs."Flee target"]
 		#Chance for a mob to spawn with the ability to avoid the target
 		#Range: 0.0 ~ 1.0
-		"Avoid target chance" = 0.5
+		"Avoid target chance" = 0.25
 		#Chance for a mob to be able to attack while running from a target. This only works for ranged mobs
 		#Range: 0.0 ~ 1.0
-		"Attack when avoiding chance" = 0.5
+		"Attack when avoiding chance" = 0.2
 		#Distance from the target that will make the mob run away.
 		#Range: > 0
-		"Flee distance far" = 13
+		"Flee distance far" = 11
 		#Distance from the target that counts as near and will make the mob run away faster.
 		#Range: > 0
-		"Flee distance near" = 7
+		"Flee distance near" = 4
 		#Speed multiplier when the mob avoids the target and it's farther than 'Flee Distance Near' blocks from him.
 		#Range: 0.0 ~ 4.0
 		"Flee speed far" = 1.0
@@ -1131,10 +1131,10 @@
 	#Snow golems are healed when hit by snowballs. Only entity types in enhancedai:snow_golem/healed_by_snowballs tag are affected by this feature.
 	["Snow Golems"."Snow golems healed by snowballs"]
 		#Range: 0.0 ~ 1.7976931348623157E308
-		Amount = 1.0
+		Amount = 20.0
 
 	#Snow golems snowballs deal damage. Only entity types in enhancedai:snow_golem/damaging_snowballs tag are affected by this feature.
 	["Snow Golems"."Snow golems damaging snowballs"]
 		#Range: 0.0 ~ 1.7976931348623157E308
-		Damage = 0.5
+		Damage = 5.0
 

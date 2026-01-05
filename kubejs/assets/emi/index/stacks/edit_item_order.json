@@ -212,6 +212,15 @@
 		"item:twilightforest:snow_queen_banner_pattern",
 		"item:twilightforest:ur_ghast_banner_pattern",
 		"item:alexscaves:polarity_armor_trim_smithing_template",
+		"item:ancient_aether:ancient_armor_trim_smithing_template",
+		"item:ancient_aether:ascended_armor_trim_smithing_template",
+		"item:ancient_aether:mechanical_armor_trim_smithing_template",
+		"item:ancient_aether:mosaic_armor_trim_smithing_template",
+		"item:ancient_aether:mysterious_armor_trim_smithing_template",
+		"item:ancient_aether:royal_armor_trim_smithing_template",
+		"item:ancient_aether:solar_armor_trim_smithing_template",
+		"item:ancient_aether:whale_armor_trim_smithing_template",
+		"item:ancient_aether:wynd_armor_trim_smithing_template",
 		"item:cataclysm:cursium_upgrade_smithing_template",
 		"item:cataclysm:ignitium_upgrade_smithing_template",
 		"item:galosphere:silver_upgrade_smithing_template",
@@ -410,6 +419,11 @@
 		"item:alexsmobs:spawn_egg_void_worm",
 		"item:alexsmobs:spawn_egg_warped_mosco",
 		"item:alexsmobs:spawn_egg_warped_toad",
+		"item:ancient_aether:aeronautic_leaper_spawn_egg",
+		"item:ancient_aether:festive_swet_spawn_egg",
+		"item:ancient_aether:fluffalo_spawn_egg",
+		"item:ancient_aether:mutated_aechor_plant_spawn_egg",
+		"item:ancient_aether:slammroot_spawn_egg",
 		"item:aquamirae:anglerfish_spawn_egg",
 		"item:aquamirae:captain_cornelia_spawn_egg",
 		"item:aquamirae:eel_spawn_egg",
@@ -1341,6 +1355,7 @@
 		"item:ecologics:stripped_coconut_wood",
 		"item:everycomp:q/ecologics/stripped_coconut_post",
 		"item:ecologics:coconut_planks",
+		"item:everycomp:ap/ecologics/coconut_boards",
 		"item:everycomp:q/ecologics/coconut_bookshelf",
 		"item:everycomp:hc/ecologics/coconut_bench",
 		"item:everycomp:hc/ecologics/coconut_chair",
@@ -1359,6 +1374,7 @@
 		"item:v_slab_compat:ecologics/coconut_vertical_slab",
 		"item:suppsquared:ecologics/item_shelf_coconut",
 		"item:ecologics:coconut_fence",
+		"item:everycomp:ap/ecologics/coconut_railing",
 		"item:ecologics:coconut_fence_gate",
 		"item:ecologics:coconut_door",
 		"item:ecologics:coconut_trapdoor",
@@ -1377,6 +1393,7 @@
 		"item:ecologics:stripped_walnut_wood",
 		"item:everycomp:q/ecologics/stripped_walnut_post",
 		"item:ecologics:walnut_planks",
+		"item:everycomp:ap/ecologics/walnut_boards",
 		"item:everycomp:q/ecologics/walnut_bookshelf",
 		"item:everycomp:hc/ecologics/walnut_bench",
 		"item:everycomp:hc/ecologics/walnut_chair",
@@ -1395,6 +1412,7 @@
 		"item:v_slab_compat:ecologics/walnut_vertical_slab",
 		"item:suppsquared:ecologics/item_shelf_walnut",
 		"item:ecologics:walnut_fence",
+		"item:everycomp:ap/ecologics/walnut_railing",
 		"item:ecologics:walnut_fence_gate",
 		"item:ecologics:walnut_door",
 		"item:ecologics:walnut_trapdoor",
@@ -1411,6 +1429,7 @@
 		"item:botania:stripped_livingwood_log",
 		"item:everycomp:q/botania/stripped_livingwood_post",
 		"item:botania:livingwood_planks",
+		"item:everycomp:ap/botania/livingwood_boards",
 		"item:everycomp:q/botania/livingwood_bookshelf",
 		"item:everycomp:hc/botania/livingwood_bench",
 		"item:everycomp:hc/botania/livingwood_chair",
@@ -1429,6 +1448,7 @@
 		"item:v_slab_compat:botania/livingwood_vertical_slab",
 		"item:suppsquared:botania/item_shelf_livingwood",
 		"item:botania:livingwood_fence",
+		"item:everycomp:ap/botania/livingwood_railing",
 		"item:botania:livingwood_fence_gate",
 		"item:everycomp:q/botania/livingwood_ladder",
 		"item:everycomp:hnhome/botania/livingwood_lattice",
@@ -1438,6 +1458,7 @@
 		"item:botania:stripped_dreamwood_log",
 		"item:everycomp:q/botania/stripped_dreamwood_post",
 		"item:botania:dreamwood_planks",
+		"item:everycomp:ap/botania/dreamwood_boards",
 		"item:everycomp:q/botania/dreamwood_bookshelf",
 		"item:everycomp:hc/botania/dreamwood_bench",
 		"item:everycomp:hc/botania/dreamwood_chair",
@@ -1456,6 +1477,7 @@
 		"item:v_slab_compat:botania/dreamwood_vertical_slab",
 		"item:suppsquared:botania/item_shelf_dreamwood",
 		"item:botania:dreamwood_fence",
+		"item:everycomp:ap/botania/dreamwood_railing",
 		"item:botania:dreamwood_fence_gate",
 		"item:everycomp:q/botania/dreamwood_ladder",
 		"item:everycomp:hnhome/botania/dreamwood_lattice",
@@ -1467,6 +1489,7 @@
 		"item:window_box:stripped_chthonic_yew_wood",
 		"item:everycomp:q/window_box/stripped_chthonic_yew_post",
 		"item:window_box:chthonic_yew_planks",
+		"item:everycomp:ap/window_box/chthonic_yew_boards",
 		"item:everycomp:q/window_box/chthonic_yew_bookshelf",
 		"item:everycomp:hc/window_box/chthonic_yew_bench",
 		"item:everycomp:hc/window_box/chthonic_yew_chair",
@@ -1485,6 +1508,7 @@
 		"item:v_slab_compat:window_box/chthonic_yew_vertical_slab",
 		"item:suppsquared:window_box/item_shelf_chthonic_yew",
 		"item:window_box:chthonic_yew_fence",
+		"item:everycomp:ap/window_box/chthonic_yew_railing",
 		"item:window_box:chthonic_yew_fence_gate",
 		"item:window_box:chthonic_yew_door",
 		"item:window_box:chthonic_yew_trapdoor",
@@ -1503,6 +1527,7 @@
 		"item:window_box:stripped_alfthorne_wood",
 		"item:everycomp:q/window_box/stripped_alfthorne_post",
 		"item:window_box:alfthorne_planks",
+		"item:everycomp:ap/window_box/alfthorne_boards",
 		"item:everycomp:q/window_box/alfthorne_bookshelf",
 		"item:everycomp:hc/window_box/alfthorne_bench",
 		"item:everycomp:hc/window_box/alfthorne_chair",
@@ -1521,6 +1546,7 @@
 		"item:v_slab_compat:window_box/alfthorne_vertical_slab",
 		"item:suppsquared:window_box/item_shelf_alfthorne",
 		"item:window_box:alfthorne_fence",
+		"item:everycomp:ap/window_box/alfthorne_railing",
 		"item:window_box:alfthorne_fence_gate",
 		"item:window_box:alfthorne_door",
 		"item:window_box:alfthorne_trapdoor",
@@ -1535,6 +1561,7 @@
 		"item:everycomp:q/ars_nouveau/archwood_post",
 		"item:everycomp:q/ars_nouveau/stripped_archwood_post",
 		"item:ars_nouveau:archwood_planks",
+		"item:everycomp:ap/ars_nouveau/archwood_boards",
 		"item:everycomp:q/ars_nouveau/archwood_bookshelf",
 		"item:everycomp:hc/ars_nouveau/archwood_bench",
 		"item:everycomp:hc/ars_nouveau/archwood_chair",
@@ -1553,6 +1580,7 @@
 		"item:v_slab_compat:ars_nouveau/archwood_vertical_slab",
 		"item:suppsquared:ars_nouveau/item_shelf_archwood",
 		"item:ars_nouveau:archwood_fence",
+		"item:everycomp:ap/ars_nouveau/archwood_railing",
 		"item:ars_nouveau:archwood_fence_gate",
 		"item:ars_nouveau:archwood_door",
 		"item:ars_nouveau:archwood_trapdoor",
@@ -1565,6 +1593,7 @@
 		"item:evilcraft:undead_wood",
 		"item:everycomp:q/evilcraft/undead_post",
 		"item:evilcraft:undead_planks",
+		"item:everycomp:ap/evilcraft/undead_boards",
 		"item:everycomp:q/evilcraft/undead_bookshelf",
 		"item:everycomp:hc/evilcraft/undead_bench",
 		"item:everycomp:hc/evilcraft/undead_chair",
@@ -1582,6 +1611,7 @@
 		"item:v_slab_compat:evilcraft/undead_vertical_slab",
 		"item:suppsquared:evilcraft/item_shelf_undead",
 		"item:evilcraft:undead_fence",
+		"item:everycomp:ap/evilcraft/undead_railing",
 		"item:evilcraft:undead_fence_gate",
 		"item:everycomp:q/evilcraft/undead_ladder",
 		"item:everycomp:hnhome/evilcraft/undead_lattice",
@@ -1609,6 +1639,7 @@
 		"item:v_slab_compat:enhanced_mushrooms/mushroom_vertical_slab",
 		"item:suppsquared:enhanced_mushrooms/item_shelf_mushroom",
 		"item:enhanced_mushrooms:mushroom_fence",
+		"item:everycomp:ap/enhanced_mushrooms/mushroom_railing",
 		"item:enhanced_mushrooms:mushroom_fence_gate",
 		"item:enhanced_mushrooms:mushroom_door",
 		"item:enhanced_mushrooms:mushroom_trapdoor",
@@ -1627,6 +1658,7 @@
 		"item:quark:stripped_azalea_wood",
 		"item:quark:stripped_azalea_post",
 		"item:quark:azalea_planks",
+		"item:everycomp:ap/quark/azalea_boards",
 		"item:quark:azalea_bookshelf",
 		"item:quark:azalea_bookshelf",
 		"item:everycomp:hc/quark/azalea_bench",
@@ -1648,6 +1680,7 @@
 		"item:quark:azalea_planks_vertical_slab",
 		"item:suppsquared:quark/item_shelf_azalea",
 		"item:quark:azalea_fence",
+		"item:everycomp:ap/quark/azalea_railing",
 		"item:quark:azalea_fence_gate",
 		"item:quark:azalea_door",
 		"item:quark:azalea_trapdoor",
@@ -1667,6 +1700,7 @@
 		"item:alexscaves:stripped_thornwood_wood",
 		"item:everycomp:q/alexscaves/stripped_thornwood_post",
 		"item:alexscaves:thornwood_planks",
+		"item:everycomp:ap/alexscaves/thornwood_boards",
 		"item:everycomp:q/alexscaves/thornwood_bookshelf",
 		"item:everycomp:hc/alexscaves/thornwood_bench",
 		"item:everycomp:hc/alexscaves/thornwood_chair",
@@ -1685,6 +1719,7 @@
 		"item:v_slab_compat:alexscaves/thornwood_vertical_slab",
 		"item:suppsquared:alexscaves/item_shelf_thornwood",
 		"item:alexscaves:thornwood_fence",
+		"item:everycomp:ap/alexscaves/thornwood_railing",
 		"item:alexscaves:thornwood_fence_gate",
 		"item:alexscaves:thornwood_door",
 		"item:alexscaves:thornwood_trapdoor",
@@ -1703,6 +1738,7 @@
 		"item:alexscaves:stripped_pewen_wood",
 		"item:everycomp:q/alexscaves/stripped_pewen_post",
 		"item:alexscaves:pewen_planks",
+		"item:everycomp:ap/alexscaves/pewen_boards",
 		"item:everycomp:q/alexscaves/pewen_bookshelf",
 		"item:everycomp:hc/alexscaves/pewen_bench",
 		"item:everycomp:hc/alexscaves/pewen_chair",
@@ -1721,6 +1757,7 @@
 		"item:v_slab_compat:alexscaves/pewen_vertical_slab",
 		"item:suppsquared:alexscaves/item_shelf_pewen",
 		"item:alexscaves:pewen_fence",
+		"item:everycomp:ap/alexscaves/pewen_railing",
 		"item:alexscaves:pewen_fence_gate",
 		"item:alexscaves:pewen_door",
 		"item:alexscaves:pewen_trapdoor",
@@ -1795,6 +1832,7 @@
 		"item:snifferplus:stripped_stone_pine_wood",
 		"item:everycomp:q/snifferplus/stripped_stone_pine_post",
 		"item:snifferplus:stone_pine_planks",
+		"item:everycomp:ap/snifferplus/stone_pine_boards",
 		"item:everycomp:q/snifferplus/stone_pine_bookshelf",
 		"item:everycomp:hc/snifferplus/stone_pine_bench",
 		"item:everycomp:hc/snifferplus/stone_pine_chair",
@@ -1813,6 +1851,7 @@
 		"item:v_slab_compat:snifferplus/stone_pine_vertical_slab",
 		"item:suppsquared:snifferplus/item_shelf_stone_pine",
 		"item:snifferplus:stone_pine_fence",
+		"item:everycomp:ap/snifferplus/stone_pine_railing",
 		"item:snifferplus:stone_pine_fence_gate",
 		"item:snifferplus:stone_pine_door",
 		"item:snifferplus:stone_pine_trapdoor",
@@ -1829,6 +1868,7 @@
 		"item:upgrade_aquatic:stripped_driftwood_log",
 		"item:upgrade_aquatic:stripped_driftwood",
 		"item:upgrade_aquatic:driftwood_planks",
+		"item:everycomp:ap/upgrade_aquatic/driftwood_boards",
 		"item:upgrade_aquatic:driftwood_bookshelf",
 		"item:everycomp:hc/upgrade_aquatic/driftwood_bench",
 		"item:everycomp:hc/upgrade_aquatic/driftwood_chair",
@@ -1847,6 +1887,7 @@
 		"item:v_slab_compat:upgrade_aquatic/driftwood_vertical_slab",
 		"item:suppsquared:upgrade_aquatic/item_shelf_driftwood",
 		"item:upgrade_aquatic:driftwood_fence",
+		"item:everycomp:ap/upgrade_aquatic/driftwood_railing",
 		"item:upgrade_aquatic:driftwood_fence_gate",
 		"item:upgrade_aquatic:driftwood_door",
 		"item:upgrade_aquatic:driftwood_trapdoor",
@@ -1860,6 +1901,7 @@
 		"item:upgrade_aquatic:driftwood_boat",
 		"item:betterarcheology:rotten_log",
 		"item:betterarcheology:rotten_planks",
+		"item:everycomp:ap/betterarcheology/rotten_boards",
 		"item:everycomp:q/betterarcheology/rotten_bookshelf",
 		"item:everycomp:hc/betterarcheology/rotten_bench",
 		"item:everycomp:hc/betterarcheology/rotten_chair",
@@ -1878,6 +1920,7 @@
 		"item:v_slab_compat:betterarcheology/rotten_vertical_slab",
 		"item:suppsquared:betterarcheology/item_shelf_rotten",
 		"item:betterarcheology:rotten_fence",
+		"item:everycomp:ap/betterarcheology/rotten_railing",
 		"item:betterarcheology:rotten_fence_gate",
 		"item:betterarcheology:rotten_door",
 		"item:betterarcheology:rotten_trapdoor",
@@ -1892,6 +1935,7 @@
 		"item:born_in_chaos_v1:stripped_scorched_wood",
 		"item:everycomp:q/born_in_chaos_v1/stripped_scorched_post",
 		"item:born_in_chaos_v1:scorched_planks",
+		"item:everycomp:ap/born_in_chaos_v1/scorched_boards",
 		"item:everycomp:q/born_in_chaos_v1/scorched_bookshelf",
 		"item:everycomp:hc/born_in_chaos_v1/scorched_bench",
 		"item:everycomp:hc/born_in_chaos_v1/scorched_chair",
@@ -1910,6 +1954,7 @@
 		"item:born_in_chaos_v1:scorched_planks_slab",
 		"item:suppsquared:born_in_chaos_v1/item_shelf_scorched",
 		"item:born_in_chaos_v1:scorched_planks_fence",
+		"item:everycomp:ap/born_in_chaos_v1/scorched_railing",
 		"item:born_in_chaos_v1:scorched_planks_fence_gate",
 		"item:born_in_chaos_v1:scorched_planks_door",
 		"item:born_in_chaos_v1:scorched_planks_trapdoor",
@@ -1922,6 +1967,7 @@
 		"item:upgrade_aquatic:stripped_river_log",
 		"item:upgrade_aquatic:stripped_river_wood",
 		"item:upgrade_aquatic:river_planks",
+		"item:everycomp:ap/upgrade_aquatic/river_boards",
 		"item:upgrade_aquatic:river_bookshelf",
 		"item:everycomp:hc/upgrade_aquatic/river_bench",
 		"item:everycomp:hc/upgrade_aquatic/river_chair",
@@ -1940,6 +1986,7 @@
 		"item:v_slab_compat:upgrade_aquatic/river_vertical_slab",
 		"item:suppsquared:upgrade_aquatic/item_shelf_river",
 		"item:upgrade_aquatic:river_fence",
+		"item:everycomp:ap/upgrade_aquatic/river_railing",
 		"item:upgrade_aquatic:river_fence_gate",
 		"item:upgrade_aquatic:river_door",
 		"item:upgrade_aquatic:river_trapdoor",
@@ -2029,6 +2076,7 @@
 		"item:mynethersdelight:stripped_powdery_block",
 		"item:mynethersdelight:powdery_planks",
 		"item:mynethersdelight:powdery_mosaic",
+		"item:everycomp:ap/mynethersdelight/powdery_boards",
 		"item:everycomp:q/mynethersdelight/powdery_bookshelf",
 		"item:everycomp:hc/mynethersdelight/powdery_bench",
 		"item:everycomp:hc/mynethersdelight/powdery_chair",
@@ -2048,6 +2096,7 @@
 		"item:v_slab_compat:mynethersdelight/powdery_vertical_slab",
 		"item:suppsquared:mynethersdelight/item_shelf_powdery",
 		"item:mynethersdelight:powdery_fence",
+		"item:everycomp:ap/mynethersdelight/powdery_railing",
 		"item:mynethersdelight:powdery_fence_gate",
 		"item:mynethersdelight:powdery_door",
 		"item:mynethersdelight:powdery_trapdoor",
@@ -2061,6 +2110,7 @@
 		"item:netherexp:smokestalk_block",
 		"item:netherexp:stripped_smokestalk_block",
 		"item:netherexp:smokestalk_planks",
+		"item:everycomp:ap/netherexp/smokestalk_boards",
 		"item:everycomp:q/netherexp/smokestalk_bookshelf",
 		"item:everycomp:hc/netherexp/smokestalk_bench",
 		"item:everycomp:hc/netherexp/smokestalk_chair",
@@ -2079,6 +2129,7 @@
 		"item:v_slab_compat:netherexp/smokestalk_vertical_slab",
 		"item:suppsquared:netherexp/item_shelf_smokestalk",
 		"item:netherexp:smokestalk_fence",
+		"item:everycomp:ap/netherexp/smokestalk_railing",
 		"item:netherexp:smokestalk_fence_gate",
 		"item:netherexp:smokestalk_door",
 		"item:netherexp:smokestalk_trapdoor",
@@ -2129,6 +2180,7 @@
 		"item:netherexp:stripped_claret_hyphae",
 		"item:everycomp:q/netherexp/stripped_claret_post",
 		"item:netherexp:claret_planks",
+		"item:everycomp:ap/netherexp/claret_boards",
 		"item:everycomp:q/netherexp/claret_bookshelf",
 		"item:everycomp:hc/netherexp/claret_bench",
 		"item:everycomp:hc/netherexp/claret_chair",
@@ -2147,6 +2199,7 @@
 		"item:v_slab_compat:netherexp/claret_vertical_slab",
 		"item:suppsquared:netherexp/item_shelf_claret",
 		"item:netherexp:claret_fence",
+		"item:everycomp:ap/netherexp/claret_railing",
 		"item:netherexp:claret_fence_gate",
 		"item:netherexp:claret_door",
 		"item:netherexp:claret_trapdoor",
@@ -2164,6 +2217,7 @@
 		"item:aether:stripped_skyroot_wood",
 		"item:everycomp:q/aether/stripped_skyroot_post",
 		"item:aether:skyroot_planks",
+		"item:everycomp:ap/aether/skyroot_boards",
 		"item:aether:skyroot_bookshelf",
 		"item:everycomp:hc/aether/skyroot_bench",
 		"item:everycomp:hc/aether/skyroot_chair",
@@ -2182,6 +2236,7 @@
 		"item:v_slab_compat:aether/skyroot_vertical_slab",
 		"item:suppsquared:aether/item_shelf_skyroot",
 		"item:aether:skyroot_fence",
+		"item:everycomp:ap/aether/skyroot_railing",
 		"item:aether:skyroot_fence_gate",
 		"item:aether:skyroot_door",
 		"item:aether:skyroot_trapdoor",
@@ -2200,6 +2255,7 @@
 		"item:aether_redux:stripped_fieldsproot_wood",
 		"item:everycomp:q/aether_redux/stripped_fieldsproot_post",
 		"item:aether_redux:fieldsproot_planks",
+		"item:everycomp:ap/aether_redux/fieldsproot_boards",
 		"item:aether_redux:fieldsproot_bookshelf",
 		"item:everycomp:hc/aether_redux/fieldsproot_bench",
 		"item:everycomp:hc/aether_redux/fieldsproot_chair",
@@ -2218,6 +2274,7 @@
 		"item:v_slab_compat:aether_redux/fieldsproot_vertical_slab",
 		"item:suppsquared:aether_redux/item_shelf_fieldsproot",
 		"item:aether_redux:fieldsproot_fence",
+		"item:everycomp:ap/aether_redux/fieldsproot_railing",
 		"item:aether_redux:fieldsproot_fence_gate",
 		"item:aether_redux:fieldsproot_door",
 		"item:aether_redux:fieldsproot_trapdoor",
@@ -2236,6 +2293,7 @@
 		"item:aether_redux:stripped_crystal_wood",
 		"item:everycomp:q/aether_redux/stripped_crystal_post",
 		"item:aether_redux:crystal_planks",
+		"item:everycomp:ap/aether_redux/crystal_boards",
 		"item:aether_redux:crystal_bookshelf",
 		"item:everycomp:hc/aether_redux/crystal_bench",
 		"item:everycomp:hc/aether_redux/crystal_chair",
@@ -2254,6 +2312,7 @@
 		"item:v_slab_compat:aether_redux/crystal_vertical_slab",
 		"item:suppsquared:aether_redux/item_shelf_crystal",
 		"item:aether_redux:crystal_fence",
+		"item:everycomp:ap/aether_redux/crystal_railing",
 		"item:aether_redux:crystal_fence_gate",
 		"item:aether_redux:crystal_door",
 		"item:aether_redux:crystal_trapdoor",
@@ -2272,6 +2331,7 @@
 		"item:aether_redux:stripped_glacia_wood",
 		"item:everycomp:q/aether_redux/stripped_glacia_post",
 		"item:aether_redux:glacia_planks",
+		"item:everycomp:ap/aether_redux/glacia_boards",
 		"item:aether_redux:glacia_bookshelf",
 		"item:everycomp:hc/aether_redux/glacia_bench",
 		"item:everycomp:hc/aether_redux/glacia_chair",
@@ -2290,6 +2350,7 @@
 		"item:v_slab_compat:aether_redux/glacia_vertical_slab",
 		"item:suppsquared:aether_redux/item_shelf_glacia",
 		"item:aether_redux:glacia_fence",
+		"item:everycomp:ap/aether_redux/glacia_railing",
 		"item:aether_redux:glacia_fence_gate",
 		"item:aether_redux:glacia_door",
 		"item:aether_redux:glacia_trapdoor",
@@ -2308,6 +2369,7 @@
 		"item:aether_redux:stripped_cloudcap_hyphae",
 		"item:everycomp:q/aether_redux/stripped_cloudcap_post",
 		"item:aether_redux:cloudcap_planks",
+		"item:everycomp:ap/aether_redux/cloudcap_boards",
 		"item:aether_redux:cloudcap_bookshelf",
 		"item:everycomp:hc/aether_redux/cloudcap_bench",
 		"item:everycomp:hc/aether_redux/cloudcap_chair",
@@ -2326,6 +2388,7 @@
 		"item:v_slab_compat:aether_redux/cloudcap_vertical_slab",
 		"item:suppsquared:aether_redux/item_shelf_cloudcap",
 		"item:aether_redux:cloudcap_fence",
+		"item:everycomp:ap/aether_redux/cloudcap_railing",
 		"item:aether_redux:cloudcap_fence_gate",
 		"item:aether_redux:cloudcap_door",
 		"item:aether_redux:cloudcap_trapdoor",
@@ -2344,6 +2407,7 @@
 		"item:aether_redux:stripped_blightwillow_wood",
 		"item:everycomp:q/aether_redux/stripped_blightwillow_post",
 		"item:aether_redux:blightwillow_planks",
+		"item:everycomp:ap/aether_redux/blightwillow_boards",
 		"item:aether_redux:blightwillow_bookshelf",
 		"item:everycomp:hc/aether_redux/blightwillow_bench",
 		"item:everycomp:hc/aether_redux/blightwillow_chair",
@@ -2362,6 +2426,7 @@
 		"item:v_slab_compat:aether_redux/blightwillow_vertical_slab",
 		"item:suppsquared:aether_redux/item_shelf_blightwillow",
 		"item:aether_redux:blightwillow_fence",
+		"item:everycomp:ap/aether_redux/blightwillow_railing",
 		"item:aether_redux:blightwillow_fence_gate",
 		"item:aether_redux:blightwillow_door",
 		"item:aether_redux:blightwillow_trapdoor",
@@ -2377,6 +2442,7 @@
 		"item:aether_redux:jellyshroom_hyphae",
 		"item:everycomp:q/aether_redux/jellyshroom_post",
 		"item:aether_redux:jellyshroom_planks",
+		"item:everycomp:ap/aether_redux/jellyshroom_boards",
 		"item:aether_redux:jellyshroom_bookshelf",
 		"item:everycomp:hc/aether_redux/jellyshroom_bench",
 		"item:everycomp:hc/aether_redux/jellyshroom_chair",
@@ -2395,6 +2461,7 @@
 		"item:v_slab_compat:aether_redux/jellyshroom_vertical_slab",
 		"item:suppsquared:aether_redux/item_shelf_jellyshroom",
 		"item:aether_redux:jellyshroom_fence",
+		"item:everycomp:ap/aether_redux/jellyshroom_railing",
 		"item:aether_redux:jellyshroom_fence_gate",
 		"item:aether_redux:jellyshroom_door",
 		"item:aether_redux:jellyshroom_trapdoor",
@@ -2408,6 +2475,7 @@
 		"item:aether_redux:jellyshroom_boat",
 		"item:cataclysm:chorus_stem",
 		"item:cataclysm:chorus_planks",
+		"item:everycomp:ap/cataclysm/chorus_boards",
 		"item:everycomp:q/cataclysm/chorus_bookshelf",
 		"item:everycomp:hc/cataclysm/chorus_bench",
 		"item:everycomp:hc/cataclysm/chorus_chair",
@@ -2426,12 +2494,14 @@
 		"item:v_slab_compat:cataclysm/chorus_vertical_slab",
 		"item:suppsquared:cataclysm/item_shelf_chorus",
 		"item:cataclysm:chorus_fence",
+		"item:everycomp:ap/cataclysm/chorus_railing",
 		"item:cataclysm:chorus_trapdoor",
 		"item:everycomp:q/cataclysm/chorus_ladder",
 		"item:everycomp:hnhome/cataclysm/chorus_lattice",
 		"item:supplementaries:cataclysm/sign_post_chorus",
 		"item:unusualend:chorus_nest_planks",
 		"item:unusualend:chorus_nest_mosaic",
+		"item:everycomp:ap/unusualend/chorus_nest_boards",
 		"item:everycomp:q/unusualend/chorus_nest_bookshelf",
 		"item:everycomp:hc/unusualend/chorus_nest_bench",
 		"item:everycomp:hc/unusualend/chorus_nest_chair",
@@ -2451,6 +2521,7 @@
 		"item:unusualend:chorus_nest_mosaic_slab",
 		"item:v_slab_compat:unusualend/chorus_nest_vertical_slab",
 		"item:suppsquared:unusualend/item_shelf_chorus_nest",
+		"item:everycomp:ap/unusualend/chorus_nest_railing",
 		"item:unusualend:chorus_nest_fence_gate",
 		"item:unusualend:chorus_nest_planks_door",
 		"item:unusualend:chorus_nest_trapdoor",
@@ -2468,6 +2539,7 @@
 		"item:phantasm:stripped_pream_wood",
 		"item:everycomp:q/phantasm/stripped_pream_post",
 		"item:phantasm:pream_planks",
+		"item:everycomp:ap/phantasm/pream_boards",
 		"item:everycomp:q/phantasm/pream_bookshelf",
 		"item:everycomp:hc/phantasm/pream_bench",
 		"item:everycomp:hc/phantasm/pream_chair",
@@ -2486,6 +2558,7 @@
 		"item:v_slab_compat:phantasm/pream_vertical_slab",
 		"item:suppsquared:phantasm/item_shelf_pream",
 		"item:phantasm:pream_fence",
+		"item:everycomp:ap/phantasm/pream_railing",
 		"item:phantasm:pream_fence_gate",
 		"item:phantasm:pream_door",
 		"item:phantasm:pream_trapdoor",
@@ -2503,6 +2576,7 @@
 		"item:witherstormmod:stripped_tainted_wood",
 		"item:everycomp:q/witherstormmod/stripped_tainted_post",
 		"item:witherstormmod:tainted_planks",
+		"item:everycomp:ap/witherstormmod/tainted_boards",
 		"item:everycomp:q/witherstormmod/tainted_bookshelf",
 		"item:everycomp:hc/witherstormmod/tainted_bench",
 		"item:everycomp:hc/witherstormmod/tainted_chair",
@@ -2521,6 +2595,7 @@
 		"item:v_slab_compat:witherstormmod/tainted_vertical_slab",
 		"item:suppsquared:witherstormmod/item_shelf_tainted",
 		"item:witherstormmod:tainted_fence",
+		"item:everycomp:ap/witherstormmod/tainted_railing",
 		"item:witherstormmod:tainted_fence_gate",
 		"item:witherstormmod:tainted_door",
 		"item:witherstormmod:tainted_trapdoor",
@@ -2530,6 +2605,44 @@
 		"item:witherstormmod:tainted_button",
 		"item:witherstormmod:tainted_sign",
 		"item:supplementaries:witherstormmod/sign_post_tainted",
+		"item:ancient_aether:highsproot_log",
+		"item:ancient_aether:highsproot_wood",
+		"item:everycomp:q/ancient_aether/highsproot_post",
+		"item:ancient_aether:stripped_highsproot_log",
+		"item:ancient_aether:stripped_highsproot_wood",
+		"item:everycomp:q/ancient_aether/stripped_highsproot_post",
+		"item:ancient_aether:highsproot_planks",
+		"item:everycomp:ap/ancient_aether/highsproot_boards",
+		"item:ancient_aether:highsproot_bookshelf",
+		"item:everycomp:hc/ancient_aether/highsproot_bench",
+		"item:everycomp:hc/ancient_aether/highsproot_chair",
+		"item:everycomp:hc/ancient_aether/highsproot_couch",
+		"item:everycomp:hc/ancient_aether/highsproot_dining_bench",
+		"item:everycomp:hc/ancient_aether/highsproot_side_table",
+		"item:everycomp:hc/ancient_aether/highsproot_desk",
+		"item:everycomp:hc/ancient_aether/highsproot_nightstand",
+		"item:everycomp:hc/ancient_aether/highsproot_table",
+		"item:everycomp:hc/ancient_aether/highsproot_counter",
+		"item:everycomp:fd/ancient_aether/highsproot_cabinet",
+		"item:everycomp:q/ancient_aether/highsproot_chest",
+		"item:everycomp:hc/ancient_aether/highsproot_fancy_bed",
+		"item:ancient_aether:highsproot_stairs",
+		"item:ancient_aether:highsproot_slab",
+		"item:v_slab_compat:ancient_aether/highsproot_vertical_slab",
+		"item:suppsquared:ancient_aether/item_shelf_highsproot",
+		"item:ancient_aether:highsproot_fence",
+		"item:everycomp:ap/ancient_aether/highsproot_railing",
+		"item:ancient_aether:highsproot_fence_gate",
+		"item:ancient_aether:highsproot_door",
+		"item:ancient_aether:highsproot_trapdoor",
+		"item:everycomp:q/ancient_aether/highsproot_ladder",
+		"item:everycomp:hnhome/ancient_aether/highsproot_lattice",
+		"item:ancient_aether:highsproot_pressure_plate",
+		"item:ancient_aether:highsproot_button",
+		"item:ancient_aether:highsproot_sign",
+		"item:supplementaries:ancient_aether/sign_post_highsproot",
+		"item:ancient_aether:highsproot_hanging_sign",
+		"item:ancient_aether:highsproot_boat",
 		"item:twilightforest:mangrove_log",
 		"item:twilightforest:mangrove_wood",
 		"item:quark:mangrove_post",
@@ -2577,6 +2690,7 @@
 		"item:twilightforest:stripped_mining_wood",
 		"item:everycomp:q/twilightforest/stripped_mining_post",
 		"item:twilightforest:mining_planks",
+		"item:everycomp:ap/twilightforest/mining_boards",
 		"item:everycomp:q/twilightforest/mining_bookshelf",
 		"item:everycomp:hc/twilightforest/mining_bench",
 		"item:everycomp:hc/twilightforest/mining_chair",
@@ -2595,6 +2709,7 @@
 		"item:v_slab_compat:twilightforest/mining_vertical_slab",
 		"item:suppsquared:twilightforest/item_shelf_mining",
 		"item:twilightforest:mining_fence",
+		"item:everycomp:ap/twilightforest/mining_railing",
 		"item:twilightforest:mining_fence_gate",
 		"item:twilightforest:mining_door",
 		"item:twilightforest:mining_trapdoor",
@@ -2613,6 +2728,7 @@
 		"item:twilightforest:stripped_canopy_wood",
 		"item:everycomp:q/twilightforest/stripped_canopy_post",
 		"item:twilightforest:canopy_planks",
+		"item:everycomp:ap/twilightforest/canopy_boards",
 		"item:twilightforest:canopy_bookshelf",
 		"item:everycomp:hc/twilightforest/canopy_bench",
 		"item:everycomp:hc/twilightforest/canopy_chair",
@@ -2631,6 +2747,7 @@
 		"item:v_slab_compat:twilightforest/canopy_vertical_slab",
 		"item:suppsquared:twilightforest/item_shelf_canopy",
 		"item:twilightforest:canopy_fence",
+		"item:everycomp:ap/twilightforest/canopy_railing",
 		"item:twilightforest:canopy_fence_gate",
 		"item:twilightforest:canopy_door",
 		"item:twilightforest:canopy_trapdoor",
@@ -2649,6 +2766,7 @@
 		"item:twilightforest:stripped_twilight_oak_wood",
 		"item:everycomp:q/twilightforest/stripped_twilight_oak_post",
 		"item:twilightforest:twilight_oak_planks",
+		"item:everycomp:ap/twilightforest/twilight_oak_boards",
 		"item:everycomp:q/twilightforest/twilight_oak_bookshelf",
 		"item:everycomp:hc/twilightforest/twilight_oak_bench",
 		"item:everycomp:hc/twilightforest/twilight_oak_chair",
@@ -2667,6 +2785,7 @@
 		"item:v_slab_compat:twilightforest/twilight_oak_vertical_slab",
 		"item:suppsquared:twilightforest/item_shelf_twilight_oak",
 		"item:twilightforest:twilight_oak_fence",
+		"item:everycomp:ap/twilightforest/twilight_oak_railing",
 		"item:twilightforest:twilight_oak_fence_gate",
 		"item:twilightforest:twilight_oak_door",
 		"item:twilightforest:twilight_oak_trapdoor",
@@ -2685,6 +2804,7 @@
 		"item:twilightforest:stripped_dark_wood",
 		"item:everycomp:q/twilightforest/stripped_dark_post",
 		"item:twilightforest:dark_planks",
+		"item:everycomp:ap/twilightforest/dark_boards",
 		"item:everycomp:q/twilightforest/dark_bookshelf",
 		"item:everycomp:hc/twilightforest/dark_bench",
 		"item:everycomp:hc/twilightforest/dark_chair",
@@ -2703,6 +2823,7 @@
 		"item:v_slab_compat:twilightforest/dark_vertical_slab",
 		"item:suppsquared:twilightforest/item_shelf_dark",
 		"item:twilightforest:dark_fence",
+		"item:everycomp:ap/twilightforest/dark_railing",
 		"item:twilightforest:dark_fence_gate",
 		"item:twilightforest:dark_door",
 		"item:twilightforest:dark_trapdoor",
@@ -2721,6 +2842,7 @@
 		"item:twilightforest:stripped_transformation_wood",
 		"item:everycomp:q/twilightforest/stripped_transformation_post",
 		"item:twilightforest:transformation_planks",
+		"item:everycomp:ap/twilightforest/transformation_boards",
 		"item:everycomp:q/twilightforest/transformation_bookshelf",
 		"item:everycomp:hc/twilightforest/transformation_bench",
 		"item:everycomp:hc/twilightforest/transformation_chair",
@@ -2739,6 +2861,7 @@
 		"item:v_slab_compat:twilightforest/transformation_vertical_slab",
 		"item:suppsquared:twilightforest/item_shelf_transformation",
 		"item:twilightforest:transformation_fence",
+		"item:everycomp:ap/twilightforest/transformation_railing",
 		"item:twilightforest:transformation_fence_gate",
 		"item:twilightforest:transformation_door",
 		"item:twilightforest:transformation_trapdoor",
@@ -2750,6 +2873,44 @@
 		"item:supplementaries:twilightforest/sign_post_transformation",
 		"item:twilightforest:transformation_hanging_sign",
 		"item:twilightforest:transformation_boat",
+		"item:ancient_aether:sakura_log",
+		"item:ancient_aether:sakura_wood",
+		"item:everycomp:q/ancient_aether/sakura_post",
+		"item:ancient_aether:stripped_sakura_log",
+		"item:ancient_aether:stripped_sakura_wood",
+		"item:everycomp:q/ancient_aether/stripped_sakura_post",
+		"item:ancient_aether:sakura_planks",
+		"item:everycomp:ap/ancient_aether/sakura_boards",
+		"item:ancient_aether:sakura_bookshelf",
+		"item:everycomp:hc/ancient_aether/sakura_bench",
+		"item:everycomp:hc/ancient_aether/sakura_chair",
+		"item:everycomp:hc/ancient_aether/sakura_couch",
+		"item:everycomp:hc/ancient_aether/sakura_dining_bench",
+		"item:everycomp:hc/ancient_aether/sakura_side_table",
+		"item:everycomp:hc/ancient_aether/sakura_desk",
+		"item:everycomp:hc/ancient_aether/sakura_nightstand",
+		"item:everycomp:hc/ancient_aether/sakura_table",
+		"item:everycomp:hc/ancient_aether/sakura_counter",
+		"item:everycomp:fd/ancient_aether/sakura_cabinet",
+		"item:everycomp:q/ancient_aether/sakura_chest",
+		"item:everycomp:hc/ancient_aether/sakura_fancy_bed",
+		"item:ancient_aether:sakura_stairs",
+		"item:ancient_aether:sakura_slab",
+		"item:v_slab_compat:ancient_aether/sakura_vertical_slab",
+		"item:suppsquared:ancient_aether/item_shelf_sakura",
+		"item:ancient_aether:sakura_fence",
+		"item:everycomp:ap/ancient_aether/sakura_railing",
+		"item:ancient_aether:sakura_fence_gate",
+		"item:ancient_aether:sakura_door",
+		"item:ancient_aether:sakura_trapdoor",
+		"item:everycomp:q/ancient_aether/sakura_ladder",
+		"item:everycomp:hnhome/ancient_aether/sakura_lattice",
+		"item:ancient_aether:sakura_pressure_plate",
+		"item:ancient_aether:sakura_button",
+		"item:ancient_aether:sakura_sign",
+		"item:supplementaries:ancient_aether/sign_post_sakura",
+		"item:ancient_aether:sakura_hanging_sign",
+		"item:ancient_aether:sakura_boat",
 		"item:twilightforest:time_log",
 		"item:twilightforest:time_wood",
 		"item:everycomp:q/twilightforest/time_post",
@@ -2757,6 +2918,7 @@
 		"item:twilightforest:stripped_time_wood",
 		"item:everycomp:q/twilightforest/stripped_time_post",
 		"item:twilightforest:time_planks",
+		"item:everycomp:ap/twilightforest/time_boards",
 		"item:everycomp:q/twilightforest/time_bookshelf",
 		"item:everycomp:hc/twilightforest/time_bench",
 		"item:everycomp:hc/twilightforest/time_chair",
@@ -2775,6 +2937,7 @@
 		"item:v_slab_compat:twilightforest/time_vertical_slab",
 		"item:suppsquared:twilightforest/item_shelf_time",
 		"item:twilightforest:time_fence",
+		"item:everycomp:ap/twilightforest/time_railing",
 		"item:twilightforest:time_fence_gate",
 		"item:twilightforest:time_door",
 		"item:twilightforest:time_trapdoor",
@@ -2834,6 +2997,7 @@
 		"item:v_slab_compat:botania/metamorphic_mountain_stone_vertical_slab",
 		"item:v_slab_compat:create/polished_cut_deepslate_vertical_slab",
 		"item:v_slab_compat:upgrade_aquatic/finger_coralstone_vertical_slab",
+		"item:v_slab_compat:ancient_aether/valkyrie_tile_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/white_terracotta_brick_vertical_slab",
 		"item:v_slab_compat:botania/dreamwood_planks_vertical_slab",
 		"item:v_slab_compat:botania/elf_quartz_vertical_slab",
@@ -2886,6 +3050,7 @@
 		"item:v_slab_compat:unusualend/polished_warped_stone_vertical_slab",
 		"item:v_slab_compat:galosphere/pastel_pink_salt_vertical_slab",
 		"item:v_slab_compat:create/cut_scoria_vertical_slab",
+		"item:v_slab_compat:ancient_aether/valkyrie_brick_vertical_slab",
 		"item:v_slab_compat:aether/mossy_holystone_vertical_slab",
 		"item:v_slab_compat:botania/metamorphic_fungal_cobblestone_vertical_slab",
 		"item:v_slab_compat:create/cut_deepslate_brick_vertical_slab",
@@ -2985,6 +3150,7 @@
 		"item:v_slab_compat:the_bumblezone/ancient_wax_diamond_vertical_slab",
 		"item:v_slab_compat:create/small_deepslate_brick_vertical_slab",
 		"item:v_slab_compat:galosphere/polished_pink_salt_vertical_slab",
+		"item:v_slab_compat:ancient_aether/carved_tile_vertical_slab",
 		"item:v_slab_compat:alexscaves/smooth_coprolith_vertical_slab",
 		"item:v_slab_compat:naturalist/smooth_shellstone_vertical_slab",
 		"item:v_slab_compat:galosphere/smooth_lumiere_vertical_slab",
@@ -3990,8 +4156,44 @@
 			"after": "item:minecraft:smithing_table"
 		},
 		{
-			"stack": "item:cataclysm:cursium_upgrade_smithing_template",
+			"stack": "item:ancient_aether:ancient_armor_trim_smithing_template",
 			"after": "item:alexscaves:polarity_armor_trim_smithing_template"
+		},
+		{
+			"stack": "item:ancient_aether:ascended_armor_trim_smithing_template",
+			"after": "item:ancient_aether:ancient_armor_trim_smithing_template"
+		},
+		{
+			"stack": "item:ancient_aether:mechanical_armor_trim_smithing_template",
+			"after": "item:ancient_aether:ascended_armor_trim_smithing_template"
+		},
+		{
+			"stack": "item:ancient_aether:mosaic_armor_trim_smithing_template",
+			"after": "item:ancient_aether:mechanical_armor_trim_smithing_template"
+		},
+		{
+			"stack": "item:ancient_aether:mysterious_armor_trim_smithing_template",
+			"after": "item:ancient_aether:mosaic_armor_trim_smithing_template"
+		},
+		{
+			"stack": "item:ancient_aether:royal_armor_trim_smithing_template",
+			"after": "item:ancient_aether:mysterious_armor_trim_smithing_template"
+		},
+		{
+			"stack": "item:ancient_aether:solar_armor_trim_smithing_template",
+			"after": "item:ancient_aether:royal_armor_trim_smithing_template"
+		},
+		{
+			"stack": "item:ancient_aether:whale_armor_trim_smithing_template",
+			"after": "item:ancient_aether:solar_armor_trim_smithing_template"
+		},
+		{
+			"stack": "item:ancient_aether:wynd_armor_trim_smithing_template",
+			"after": "item:ancient_aether:whale_armor_trim_smithing_template"
+		},
+		{
+			"stack": "item:cataclysm:cursium_upgrade_smithing_template",
+			"after": "item:ancient_aether:wynd_armor_trim_smithing_template"
 		},
 		{
 			"stack": "item:cataclysm:ignitium_upgrade_smithing_template",
@@ -4782,8 +4984,28 @@
 			"after": "item:alexsmobs:spawn_egg_warped_mosco"
 		},
 		{
-			"stack": "item:aquamirae:anglerfish_spawn_egg",
+			"stack": "item:ancient_aether:aeronautic_leaper_spawn_egg",
 			"after": "item:alexsmobs:spawn_egg_warped_toad"
+		},
+		{
+			"stack": "item:ancient_aether:festive_swet_spawn_egg",
+			"after": "item:ancient_aether:aeronautic_leaper_spawn_egg"
+		},
+		{
+			"stack": "item:ancient_aether:fluffalo_spawn_egg",
+			"after": "item:ancient_aether:festive_swet_spawn_egg"
+		},
+		{
+			"stack": "item:ancient_aether:mutated_aechor_plant_spawn_egg",
+			"after": "item:ancient_aether:fluffalo_spawn_egg"
+		},
+		{
+			"stack": "item:ancient_aether:slammroot_spawn_egg",
+			"after": "item:ancient_aether:mutated_aechor_plant_spawn_egg"
+		},
+		{
+			"stack": "item:aquamirae:anglerfish_spawn_egg",
+			"after": "item:ancient_aether:slammroot_spawn_egg"
 		},
 		{
 			"stack": "item:aquamirae:captain_cornelia_spawn_egg",
@@ -8506,8 +8728,12 @@
 			"after": "item:everycomp:q/ecologics/stripped_coconut_post"
 		},
 		{
-			"stack": "item:everycomp:q/ecologics/coconut_bookshelf",
+			"stack": "item:everycomp:ap/ecologics/coconut_boards",
 			"after": "item:ecologics:coconut_planks"
+		},
+		{
+			"stack": "item:everycomp:q/ecologics/coconut_bookshelf",
+			"after": "item:everycomp:ap/ecologics/coconut_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/ecologics/coconut_bench",
@@ -8578,8 +8804,12 @@
 			"after": "item:suppsquared:ecologics/item_shelf_coconut"
 		},
 		{
-			"stack": "item:ecologics:coconut_fence_gate",
+			"stack": "item:everycomp:ap/ecologics/coconut_railing",
 			"after": "item:ecologics:coconut_fence"
+		},
+		{
+			"stack": "item:ecologics:coconut_fence_gate",
+			"after": "item:everycomp:ap/ecologics/coconut_railing"
 		},
 		{
 			"stack": "item:ecologics:coconut_door",
@@ -8650,8 +8880,12 @@
 			"after": "item:everycomp:q/ecologics/stripped_walnut_post"
 		},
 		{
-			"stack": "item:everycomp:q/ecologics/walnut_bookshelf",
+			"stack": "item:everycomp:ap/ecologics/walnut_boards",
 			"after": "item:ecologics:walnut_planks"
+		},
+		{
+			"stack": "item:everycomp:q/ecologics/walnut_bookshelf",
+			"after": "item:everycomp:ap/ecologics/walnut_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/ecologics/walnut_bench",
@@ -8722,8 +8956,12 @@
 			"after": "item:suppsquared:ecologics/item_shelf_walnut"
 		},
 		{
-			"stack": "item:ecologics:walnut_fence_gate",
+			"stack": "item:everycomp:ap/ecologics/walnut_railing",
 			"after": "item:ecologics:walnut_fence"
+		},
+		{
+			"stack": "item:ecologics:walnut_fence_gate",
+			"after": "item:everycomp:ap/ecologics/walnut_railing"
 		},
 		{
 			"stack": "item:ecologics:walnut_door",
@@ -8786,8 +9024,12 @@
 			"after": "item:everycomp:q/botania/stripped_livingwood_post"
 		},
 		{
-			"stack": "item:everycomp:q/botania/livingwood_bookshelf",
+			"stack": "item:everycomp:ap/botania/livingwood_boards",
 			"after": "item:botania:livingwood_planks"
+		},
+		{
+			"stack": "item:everycomp:q/botania/livingwood_bookshelf",
+			"after": "item:everycomp:ap/botania/livingwood_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/botania/livingwood_bench",
@@ -8858,8 +9100,12 @@
 			"after": "item:suppsquared:botania/item_shelf_livingwood"
 		},
 		{
-			"stack": "item:botania:livingwood_fence_gate",
+			"stack": "item:everycomp:ap/botania/livingwood_railing",
 			"after": "item:botania:livingwood_fence"
+		},
+		{
+			"stack": "item:botania:livingwood_fence_gate",
+			"after": "item:everycomp:ap/botania/livingwood_railing"
 		},
 		{
 			"stack": "item:everycomp:q/botania/livingwood_ladder",
@@ -8894,8 +9140,12 @@
 			"after": "item:everycomp:q/botania/stripped_dreamwood_post"
 		},
 		{
-			"stack": "item:everycomp:q/botania/dreamwood_bookshelf",
+			"stack": "item:everycomp:ap/botania/dreamwood_boards",
 			"after": "item:botania:dreamwood_planks"
+		},
+		{
+			"stack": "item:everycomp:q/botania/dreamwood_bookshelf",
+			"after": "item:everycomp:ap/botania/dreamwood_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/botania/dreamwood_bench",
@@ -8966,8 +9216,12 @@
 			"after": "item:suppsquared:botania/item_shelf_dreamwood"
 		},
 		{
-			"stack": "item:botania:dreamwood_fence_gate",
+			"stack": "item:everycomp:ap/botania/dreamwood_railing",
 			"after": "item:botania:dreamwood_fence"
+		},
+		{
+			"stack": "item:botania:dreamwood_fence_gate",
+			"after": "item:everycomp:ap/botania/dreamwood_railing"
 		},
 		{
 			"stack": "item:everycomp:q/botania/dreamwood_ladder",
@@ -9010,8 +9264,12 @@
 			"after": "item:everycomp:q/window_box/stripped_chthonic_yew_post"
 		},
 		{
-			"stack": "item:everycomp:q/window_box/chthonic_yew_bookshelf",
+			"stack": "item:everycomp:ap/window_box/chthonic_yew_boards",
 			"after": "item:window_box:chthonic_yew_planks"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/chthonic_yew_bookshelf",
+			"after": "item:everycomp:ap/window_box/chthonic_yew_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/window_box/chthonic_yew_bench",
@@ -9082,8 +9340,12 @@
 			"after": "item:suppsquared:window_box/item_shelf_chthonic_yew"
 		},
 		{
-			"stack": "item:window_box:chthonic_yew_fence_gate",
+			"stack": "item:everycomp:ap/window_box/chthonic_yew_railing",
 			"after": "item:window_box:chthonic_yew_fence"
+		},
+		{
+			"stack": "item:window_box:chthonic_yew_fence_gate",
+			"after": "item:everycomp:ap/window_box/chthonic_yew_railing"
 		},
 		{
 			"stack": "item:window_box:chthonic_yew_door",
@@ -9154,8 +9416,12 @@
 			"after": "item:everycomp:q/window_box/stripped_alfthorne_post"
 		},
 		{
-			"stack": "item:everycomp:q/window_box/alfthorne_bookshelf",
+			"stack": "item:everycomp:ap/window_box/alfthorne_boards",
 			"after": "item:window_box:alfthorne_planks"
+		},
+		{
+			"stack": "item:everycomp:q/window_box/alfthorne_bookshelf",
+			"after": "item:everycomp:ap/window_box/alfthorne_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/window_box/alfthorne_bench",
@@ -9226,8 +9492,12 @@
 			"after": "item:suppsquared:window_box/item_shelf_alfthorne"
 		},
 		{
-			"stack": "item:window_box:alfthorne_fence_gate",
+			"stack": "item:everycomp:ap/window_box/alfthorne_railing",
 			"after": "item:window_box:alfthorne_fence"
+		},
+		{
+			"stack": "item:window_box:alfthorne_fence_gate",
+			"after": "item:everycomp:ap/window_box/alfthorne_railing"
 		},
 		{
 			"stack": "item:window_box:alfthorne_door",
@@ -9282,8 +9552,12 @@
 			"after": "item:everycomp:q/ars_nouveau/stripped_archwood_post"
 		},
 		{
-			"stack": "item:everycomp:q/ars_nouveau/archwood_bookshelf",
+			"stack": "item:everycomp:ap/ars_nouveau/archwood_boards",
 			"after": "item:ars_nouveau:archwood_planks"
+		},
+		{
+			"stack": "item:everycomp:q/ars_nouveau/archwood_bookshelf",
+			"after": "item:everycomp:ap/ars_nouveau/archwood_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/ars_nouveau/archwood_bench",
@@ -9354,8 +9628,12 @@
 			"after": "item:suppsquared:ars_nouveau/item_shelf_archwood"
 		},
 		{
-			"stack": "item:ars_nouveau:archwood_fence_gate",
+			"stack": "item:everycomp:ap/ars_nouveau/archwood_railing",
 			"after": "item:ars_nouveau:archwood_fence"
+		},
+		{
+			"stack": "item:ars_nouveau:archwood_fence_gate",
+			"after": "item:everycomp:ap/ars_nouveau/archwood_railing"
 		},
 		{
 			"stack": "item:ars_nouveau:archwood_door",
@@ -9402,8 +9680,12 @@
 			"after": "item:everycomp:q/evilcraft/undead_post"
 		},
 		{
-			"stack": "item:everycomp:q/evilcraft/undead_bookshelf",
+			"stack": "item:everycomp:ap/evilcraft/undead_boards",
 			"after": "item:evilcraft:undead_planks"
+		},
+		{
+			"stack": "item:everycomp:q/evilcraft/undead_bookshelf",
+			"after": "item:everycomp:ap/evilcraft/undead_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/evilcraft/undead_bench",
@@ -9470,8 +9752,12 @@
 			"after": "item:suppsquared:evilcraft/item_shelf_undead"
 		},
 		{
-			"stack": "item:evilcraft:undead_fence_gate",
+			"stack": "item:everycomp:ap/evilcraft/undead_railing",
 			"after": "item:evilcraft:undead_fence"
+		},
+		{
+			"stack": "item:evilcraft:undead_fence_gate",
+			"after": "item:everycomp:ap/evilcraft/undead_railing"
 		},
 		{
 			"stack": "item:everycomp:q/evilcraft/undead_ladder",
@@ -9578,8 +9864,12 @@
 			"after": "item:suppsquared:enhanced_mushrooms/item_shelf_mushroom"
 		},
 		{
-			"stack": "item:enhanced_mushrooms:mushroom_fence_gate",
+			"stack": "item:everycomp:ap/enhanced_mushrooms/mushroom_railing",
 			"after": "item:enhanced_mushrooms:mushroom_fence"
+		},
+		{
+			"stack": "item:enhanced_mushrooms:mushroom_fence_gate",
+			"after": "item:everycomp:ap/enhanced_mushrooms/mushroom_railing"
 		},
 		{
 			"stack": "item:enhanced_mushrooms:mushroom_door",
@@ -9650,8 +9940,12 @@
 			"after": "item:quark:stripped_azalea_post"
 		},
 		{
-			"stack": "item:quark:azalea_bookshelf",
+			"stack": "item:everycomp:ap/quark/azalea_boards",
 			"after": "item:quark:azalea_planks"
+		},
+		{
+			"stack": "item:quark:azalea_bookshelf",
+			"after": "item:everycomp:ap/quark/azalea_boards"
 		},
 		{
 			"stack": "item:quark:azalea_bookshelf",
@@ -9734,8 +10028,12 @@
 			"after": "item:suppsquared:quark/item_shelf_azalea"
 		},
 		{
-			"stack": "item:quark:azalea_fence_gate",
+			"stack": "item:everycomp:ap/quark/azalea_railing",
 			"after": "item:quark:azalea_fence"
+		},
+		{
+			"stack": "item:quark:azalea_fence_gate",
+			"after": "item:everycomp:ap/quark/azalea_railing"
 		},
 		{
 			"stack": "item:quark:azalea_door",
@@ -9810,8 +10108,12 @@
 			"after": "item:everycomp:q/alexscaves/stripped_thornwood_post"
 		},
 		{
-			"stack": "item:everycomp:q/alexscaves/thornwood_bookshelf",
+			"stack": "item:everycomp:ap/alexscaves/thornwood_boards",
 			"after": "item:alexscaves:thornwood_planks"
+		},
+		{
+			"stack": "item:everycomp:q/alexscaves/thornwood_bookshelf",
+			"after": "item:everycomp:ap/alexscaves/thornwood_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/alexscaves/thornwood_bench",
@@ -9882,8 +10184,12 @@
 			"after": "item:suppsquared:alexscaves/item_shelf_thornwood"
 		},
 		{
-			"stack": "item:alexscaves:thornwood_fence_gate",
+			"stack": "item:everycomp:ap/alexscaves/thornwood_railing",
 			"after": "item:alexscaves:thornwood_fence"
+		},
+		{
+			"stack": "item:alexscaves:thornwood_fence_gate",
+			"after": "item:everycomp:ap/alexscaves/thornwood_railing"
 		},
 		{
 			"stack": "item:alexscaves:thornwood_door",
@@ -9954,8 +10260,12 @@
 			"after": "item:everycomp:q/alexscaves/stripped_pewen_post"
 		},
 		{
-			"stack": "item:everycomp:q/alexscaves/pewen_bookshelf",
+			"stack": "item:everycomp:ap/alexscaves/pewen_boards",
 			"after": "item:alexscaves:pewen_planks"
+		},
+		{
+			"stack": "item:everycomp:q/alexscaves/pewen_bookshelf",
+			"after": "item:everycomp:ap/alexscaves/pewen_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/alexscaves/pewen_bench",
@@ -10026,8 +10336,12 @@
 			"after": "item:suppsquared:alexscaves/item_shelf_pewen"
 		},
 		{
-			"stack": "item:alexscaves:pewen_fence_gate",
+			"stack": "item:everycomp:ap/alexscaves/pewen_railing",
 			"after": "item:alexscaves:pewen_fence"
+		},
+		{
+			"stack": "item:alexscaves:pewen_fence_gate",
+			"after": "item:everycomp:ap/alexscaves/pewen_railing"
 		},
 		{
 			"stack": "item:alexscaves:pewen_door",
@@ -10322,8 +10636,12 @@
 			"after": "item:everycomp:q/snifferplus/stripped_stone_pine_post"
 		},
 		{
-			"stack": "item:everycomp:q/snifferplus/stone_pine_bookshelf",
+			"stack": "item:everycomp:ap/snifferplus/stone_pine_boards",
 			"after": "item:snifferplus:stone_pine_planks"
+		},
+		{
+			"stack": "item:everycomp:q/snifferplus/stone_pine_bookshelf",
+			"after": "item:everycomp:ap/snifferplus/stone_pine_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/snifferplus/stone_pine_bench",
@@ -10394,8 +10712,12 @@
 			"after": "item:suppsquared:snifferplus/item_shelf_stone_pine"
 		},
 		{
-			"stack": "item:snifferplus:stone_pine_fence_gate",
+			"stack": "item:everycomp:ap/snifferplus/stone_pine_railing",
 			"after": "item:snifferplus:stone_pine_fence"
+		},
+		{
+			"stack": "item:snifferplus:stone_pine_fence_gate",
+			"after": "item:everycomp:ap/snifferplus/stone_pine_railing"
 		},
 		{
 			"stack": "item:snifferplus:stone_pine_door",
@@ -10458,8 +10780,12 @@
 			"after": "item:upgrade_aquatic:stripped_driftwood"
 		},
 		{
-			"stack": "item:upgrade_aquatic:driftwood_bookshelf",
+			"stack": "item:everycomp:ap/upgrade_aquatic/driftwood_boards",
 			"after": "item:upgrade_aquatic:driftwood_planks"
+		},
+		{
+			"stack": "item:upgrade_aquatic:driftwood_bookshelf",
+			"after": "item:everycomp:ap/upgrade_aquatic/driftwood_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_bench",
@@ -10530,8 +10856,12 @@
 			"after": "item:suppsquared:upgrade_aquatic/item_shelf_driftwood"
 		},
 		{
-			"stack": "item:upgrade_aquatic:driftwood_fence_gate",
+			"stack": "item:everycomp:ap/upgrade_aquatic/driftwood_railing",
 			"after": "item:upgrade_aquatic:driftwood_fence"
+		},
+		{
+			"stack": "item:upgrade_aquatic:driftwood_fence_gate",
+			"after": "item:everycomp:ap/upgrade_aquatic/driftwood_railing"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood_door",
@@ -10582,8 +10912,12 @@
 			"after": "item:betterarcheology:rotten_log"
 		},
 		{
-			"stack": "item:everycomp:q/betterarcheology/rotten_bookshelf",
+			"stack": "item:everycomp:ap/betterarcheology/rotten_boards",
 			"after": "item:betterarcheology:rotten_planks"
+		},
+		{
+			"stack": "item:everycomp:q/betterarcheology/rotten_bookshelf",
+			"after": "item:everycomp:ap/betterarcheology/rotten_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/betterarcheology/rotten_bench",
@@ -10654,8 +10988,12 @@
 			"after": "item:suppsquared:betterarcheology/item_shelf_rotten"
 		},
 		{
-			"stack": "item:betterarcheology:rotten_fence_gate",
+			"stack": "item:everycomp:ap/betterarcheology/rotten_railing",
 			"after": "item:betterarcheology:rotten_fence"
+		},
+		{
+			"stack": "item:betterarcheology:rotten_fence_gate",
+			"after": "item:everycomp:ap/betterarcheology/rotten_railing"
 		},
 		{
 			"stack": "item:betterarcheology:rotten_door",
@@ -10710,8 +11048,12 @@
 			"after": "item:everycomp:q/born_in_chaos_v1/stripped_scorched_post"
 		},
 		{
-			"stack": "item:everycomp:q/born_in_chaos_v1/scorched_bookshelf",
+			"stack": "item:everycomp:ap/born_in_chaos_v1/scorched_boards",
 			"after": "item:born_in_chaos_v1:scorched_planks"
+		},
+		{
+			"stack": "item:everycomp:q/born_in_chaos_v1/scorched_bookshelf",
+			"after": "item:everycomp:ap/born_in_chaos_v1/scorched_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/born_in_chaos_v1/scorched_bench",
@@ -10782,8 +11124,12 @@
 			"after": "item:suppsquared:born_in_chaos_v1/item_shelf_scorched"
 		},
 		{
-			"stack": "item:born_in_chaos_v1:scorched_planks_fence_gate",
+			"stack": "item:everycomp:ap/born_in_chaos_v1/scorched_railing",
 			"after": "item:born_in_chaos_v1:scorched_planks_fence"
+		},
+		{
+			"stack": "item:born_in_chaos_v1:scorched_planks_fence_gate",
+			"after": "item:everycomp:ap/born_in_chaos_v1/scorched_railing"
 		},
 		{
 			"stack": "item:born_in_chaos_v1:scorched_planks_door",
@@ -10830,8 +11176,12 @@
 			"after": "item:upgrade_aquatic:stripped_river_wood"
 		},
 		{
-			"stack": "item:upgrade_aquatic:river_bookshelf",
+			"stack": "item:everycomp:ap/upgrade_aquatic/river_boards",
 			"after": "item:upgrade_aquatic:river_planks"
+		},
+		{
+			"stack": "item:upgrade_aquatic:river_bookshelf",
+			"after": "item:everycomp:ap/upgrade_aquatic/river_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/upgrade_aquatic/river_bench",
@@ -10902,8 +11252,12 @@
 			"after": "item:suppsquared:upgrade_aquatic/item_shelf_river"
 		},
 		{
-			"stack": "item:upgrade_aquatic:river_fence_gate",
+			"stack": "item:everycomp:ap/upgrade_aquatic/river_railing",
 			"after": "item:upgrade_aquatic:river_fence"
+		},
+		{
+			"stack": "item:upgrade_aquatic:river_fence_gate",
+			"after": "item:everycomp:ap/upgrade_aquatic/river_railing"
 		},
 		{
 			"stack": "item:upgrade_aquatic:river_door",
@@ -11258,8 +11612,12 @@
 			"after": "item:mynethersdelight:powdery_planks"
 		},
 		{
-			"stack": "item:everycomp:q/mynethersdelight/powdery_bookshelf",
+			"stack": "item:everycomp:ap/mynethersdelight/powdery_boards",
 			"after": "item:mynethersdelight:powdery_mosaic"
+		},
+		{
+			"stack": "item:everycomp:q/mynethersdelight/powdery_bookshelf",
+			"after": "item:everycomp:ap/mynethersdelight/powdery_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/mynethersdelight/powdery_bench",
@@ -11334,8 +11692,12 @@
 			"after": "item:suppsquared:mynethersdelight/item_shelf_powdery"
 		},
 		{
-			"stack": "item:mynethersdelight:powdery_fence_gate",
+			"stack": "item:everycomp:ap/mynethersdelight/powdery_railing",
 			"after": "item:mynethersdelight:powdery_fence"
+		},
+		{
+			"stack": "item:mynethersdelight:powdery_fence_gate",
+			"after": "item:everycomp:ap/mynethersdelight/powdery_railing"
 		},
 		{
 			"stack": "item:mynethersdelight:powdery_door",
@@ -11386,8 +11748,12 @@
 			"after": "item:netherexp:stripped_smokestalk_block"
 		},
 		{
-			"stack": "item:everycomp:q/netherexp/smokestalk_bookshelf",
+			"stack": "item:everycomp:ap/netherexp/smokestalk_boards",
 			"after": "item:netherexp:smokestalk_planks"
+		},
+		{
+			"stack": "item:everycomp:q/netherexp/smokestalk_bookshelf",
+			"after": "item:everycomp:ap/netherexp/smokestalk_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/netherexp/smokestalk_bench",
@@ -11458,8 +11824,12 @@
 			"after": "item:suppsquared:netherexp/item_shelf_smokestalk"
 		},
 		{
-			"stack": "item:netherexp:smokestalk_fence_gate",
+			"stack": "item:everycomp:ap/netherexp/smokestalk_railing",
 			"after": "item:netherexp:smokestalk_fence"
+		},
+		{
+			"stack": "item:netherexp:smokestalk_fence_gate",
+			"after": "item:everycomp:ap/netherexp/smokestalk_railing"
 		},
 		{
 			"stack": "item:netherexp:smokestalk_door",
@@ -11658,8 +12028,12 @@
 			"after": "item:everycomp:q/netherexp/stripped_claret_post"
 		},
 		{
-			"stack": "item:everycomp:q/netherexp/claret_bookshelf",
+			"stack": "item:everycomp:ap/netherexp/claret_boards",
 			"after": "item:netherexp:claret_planks"
+		},
+		{
+			"stack": "item:everycomp:q/netherexp/claret_bookshelf",
+			"after": "item:everycomp:ap/netherexp/claret_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/netherexp/claret_bench",
@@ -11730,8 +12104,12 @@
 			"after": "item:suppsquared:netherexp/item_shelf_claret"
 		},
 		{
-			"stack": "item:netherexp:claret_fence_gate",
+			"stack": "item:everycomp:ap/netherexp/claret_railing",
 			"after": "item:netherexp:claret_fence"
+		},
+		{
+			"stack": "item:netherexp:claret_fence_gate",
+			"after": "item:everycomp:ap/netherexp/claret_railing"
 		},
 		{
 			"stack": "item:netherexp:claret_door",
@@ -11798,8 +12176,12 @@
 			"after": "item:everycomp:q/aether/stripped_skyroot_post"
 		},
 		{
-			"stack": "item:aether:skyroot_bookshelf",
+			"stack": "item:everycomp:ap/aether/skyroot_boards",
 			"after": "item:aether:skyroot_planks"
+		},
+		{
+			"stack": "item:aether:skyroot_bookshelf",
+			"after": "item:everycomp:ap/aether/skyroot_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/aether/skyroot_bench",
@@ -11870,8 +12252,12 @@
 			"after": "item:suppsquared:aether/item_shelf_skyroot"
 		},
 		{
-			"stack": "item:aether:skyroot_fence_gate",
+			"stack": "item:everycomp:ap/aether/skyroot_railing",
 			"after": "item:aether:skyroot_fence"
+		},
+		{
+			"stack": "item:aether:skyroot_fence_gate",
+			"after": "item:everycomp:ap/aether/skyroot_railing"
 		},
 		{
 			"stack": "item:aether:skyroot_door",
@@ -11942,8 +12328,12 @@
 			"after": "item:everycomp:q/aether_redux/stripped_fieldsproot_post"
 		},
 		{
-			"stack": "item:aether_redux:fieldsproot_bookshelf",
+			"stack": "item:everycomp:ap/aether_redux/fieldsproot_boards",
 			"after": "item:aether_redux:fieldsproot_planks"
+		},
+		{
+			"stack": "item:aether_redux:fieldsproot_bookshelf",
+			"after": "item:everycomp:ap/aether_redux/fieldsproot_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/fieldsproot_bench",
@@ -12014,8 +12404,12 @@
 			"after": "item:suppsquared:aether_redux/item_shelf_fieldsproot"
 		},
 		{
-			"stack": "item:aether_redux:fieldsproot_fence_gate",
+			"stack": "item:everycomp:ap/aether_redux/fieldsproot_railing",
 			"after": "item:aether_redux:fieldsproot_fence"
+		},
+		{
+			"stack": "item:aether_redux:fieldsproot_fence_gate",
+			"after": "item:everycomp:ap/aether_redux/fieldsproot_railing"
 		},
 		{
 			"stack": "item:aether_redux:fieldsproot_door",
@@ -12086,8 +12480,12 @@
 			"after": "item:everycomp:q/aether_redux/stripped_crystal_post"
 		},
 		{
-			"stack": "item:aether_redux:crystal_bookshelf",
+			"stack": "item:everycomp:ap/aether_redux/crystal_boards",
 			"after": "item:aether_redux:crystal_planks"
+		},
+		{
+			"stack": "item:aether_redux:crystal_bookshelf",
+			"after": "item:everycomp:ap/aether_redux/crystal_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/crystal_bench",
@@ -12158,8 +12556,12 @@
 			"after": "item:suppsquared:aether_redux/item_shelf_crystal"
 		},
 		{
-			"stack": "item:aether_redux:crystal_fence_gate",
+			"stack": "item:everycomp:ap/aether_redux/crystal_railing",
 			"after": "item:aether_redux:crystal_fence"
+		},
+		{
+			"stack": "item:aether_redux:crystal_fence_gate",
+			"after": "item:everycomp:ap/aether_redux/crystal_railing"
 		},
 		{
 			"stack": "item:aether_redux:crystal_door",
@@ -12230,8 +12632,12 @@
 			"after": "item:everycomp:q/aether_redux/stripped_glacia_post"
 		},
 		{
-			"stack": "item:aether_redux:glacia_bookshelf",
+			"stack": "item:everycomp:ap/aether_redux/glacia_boards",
 			"after": "item:aether_redux:glacia_planks"
+		},
+		{
+			"stack": "item:aether_redux:glacia_bookshelf",
+			"after": "item:everycomp:ap/aether_redux/glacia_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/glacia_bench",
@@ -12302,8 +12708,12 @@
 			"after": "item:suppsquared:aether_redux/item_shelf_glacia"
 		},
 		{
-			"stack": "item:aether_redux:glacia_fence_gate",
+			"stack": "item:everycomp:ap/aether_redux/glacia_railing",
 			"after": "item:aether_redux:glacia_fence"
+		},
+		{
+			"stack": "item:aether_redux:glacia_fence_gate",
+			"after": "item:everycomp:ap/aether_redux/glacia_railing"
 		},
 		{
 			"stack": "item:aether_redux:glacia_door",
@@ -12374,8 +12784,12 @@
 			"after": "item:everycomp:q/aether_redux/stripped_cloudcap_post"
 		},
 		{
-			"stack": "item:aether_redux:cloudcap_bookshelf",
+			"stack": "item:everycomp:ap/aether_redux/cloudcap_boards",
 			"after": "item:aether_redux:cloudcap_planks"
+		},
+		{
+			"stack": "item:aether_redux:cloudcap_bookshelf",
+			"after": "item:everycomp:ap/aether_redux/cloudcap_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/cloudcap_bench",
@@ -12446,8 +12860,12 @@
 			"after": "item:suppsquared:aether_redux/item_shelf_cloudcap"
 		},
 		{
-			"stack": "item:aether_redux:cloudcap_fence_gate",
+			"stack": "item:everycomp:ap/aether_redux/cloudcap_railing",
 			"after": "item:aether_redux:cloudcap_fence"
+		},
+		{
+			"stack": "item:aether_redux:cloudcap_fence_gate",
+			"after": "item:everycomp:ap/aether_redux/cloudcap_railing"
 		},
 		{
 			"stack": "item:aether_redux:cloudcap_door",
@@ -12518,8 +12936,12 @@
 			"after": "item:everycomp:q/aether_redux/stripped_blightwillow_post"
 		},
 		{
-			"stack": "item:aether_redux:blightwillow_bookshelf",
+			"stack": "item:everycomp:ap/aether_redux/blightwillow_boards",
 			"after": "item:aether_redux:blightwillow_planks"
+		},
+		{
+			"stack": "item:aether_redux:blightwillow_bookshelf",
+			"after": "item:everycomp:ap/aether_redux/blightwillow_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/blightwillow_bench",
@@ -12590,8 +13012,12 @@
 			"after": "item:suppsquared:aether_redux/item_shelf_blightwillow"
 		},
 		{
-			"stack": "item:aether_redux:blightwillow_fence_gate",
+			"stack": "item:everycomp:ap/aether_redux/blightwillow_railing",
 			"after": "item:aether_redux:blightwillow_fence"
+		},
+		{
+			"stack": "item:aether_redux:blightwillow_fence_gate",
+			"after": "item:everycomp:ap/aether_redux/blightwillow_railing"
 		},
 		{
 			"stack": "item:aether_redux:blightwillow_door",
@@ -12650,8 +13076,12 @@
 			"after": "item:everycomp:q/aether_redux/jellyshroom_post"
 		},
 		{
-			"stack": "item:aether_redux:jellyshroom_bookshelf",
+			"stack": "item:everycomp:ap/aether_redux/jellyshroom_boards",
 			"after": "item:aether_redux:jellyshroom_planks"
+		},
+		{
+			"stack": "item:aether_redux:jellyshroom_bookshelf",
+			"after": "item:everycomp:ap/aether_redux/jellyshroom_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/aether_redux/jellyshroom_bench",
@@ -12722,8 +13152,12 @@
 			"after": "item:suppsquared:aether_redux/item_shelf_jellyshroom"
 		},
 		{
-			"stack": "item:aether_redux:jellyshroom_fence_gate",
+			"stack": "item:everycomp:ap/aether_redux/jellyshroom_railing",
 			"after": "item:aether_redux:jellyshroom_fence"
+		},
+		{
+			"stack": "item:aether_redux:jellyshroom_fence_gate",
+			"after": "item:everycomp:ap/aether_redux/jellyshroom_railing"
 		},
 		{
 			"stack": "item:aether_redux:jellyshroom_door",
@@ -12774,8 +13208,12 @@
 			"after": "item:cataclysm:chorus_stem"
 		},
 		{
-			"stack": "item:everycomp:q/cataclysm/chorus_bookshelf",
+			"stack": "item:everycomp:ap/cataclysm/chorus_boards",
 			"after": "item:cataclysm:chorus_planks"
+		},
+		{
+			"stack": "item:everycomp:q/cataclysm/chorus_bookshelf",
+			"after": "item:everycomp:ap/cataclysm/chorus_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/cataclysm/chorus_bench",
@@ -12846,8 +13284,12 @@
 			"after": "item:suppsquared:cataclysm/item_shelf_chorus"
 		},
 		{
-			"stack": "item:cataclysm:chorus_trapdoor",
+			"stack": "item:everycomp:ap/cataclysm/chorus_railing",
 			"after": "item:cataclysm:chorus_fence"
+		},
+		{
+			"stack": "item:cataclysm:chorus_trapdoor",
+			"after": "item:everycomp:ap/cataclysm/chorus_railing"
 		},
 		{
 			"stack": "item:everycomp:q/cataclysm/chorus_ladder",
@@ -12870,8 +13312,12 @@
 			"after": "item:unusualend:chorus_nest_planks"
 		},
 		{
-			"stack": "item:everycomp:q/unusualend/chorus_nest_bookshelf",
+			"stack": "item:everycomp:ap/unusualend/chorus_nest_boards",
 			"after": "item:unusualend:chorus_nest_mosaic"
+		},
+		{
+			"stack": "item:everycomp:q/unusualend/chorus_nest_bookshelf",
+			"after": "item:everycomp:ap/unusualend/chorus_nest_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/unusualend/chorus_nest_bench",
@@ -12946,8 +13392,12 @@
 			"after": "item:v_slab_compat:unusualend/chorus_nest_vertical_slab"
 		},
 		{
-			"stack": "item:unusualend:chorus_nest_fence_gate",
+			"stack": "item:everycomp:ap/unusualend/chorus_nest_railing",
 			"after": "item:suppsquared:unusualend/item_shelf_chorus_nest"
+		},
+		{
+			"stack": "item:unusualend:chorus_nest_fence_gate",
+			"after": "item:everycomp:ap/unusualend/chorus_nest_railing"
 		},
 		{
 			"stack": "item:unusualend:chorus_nest_planks_door",
@@ -13014,8 +13464,12 @@
 			"after": "item:everycomp:q/phantasm/stripped_pream_post"
 		},
 		{
-			"stack": "item:everycomp:q/phantasm/pream_bookshelf",
+			"stack": "item:everycomp:ap/phantasm/pream_boards",
 			"after": "item:phantasm:pream_planks"
+		},
+		{
+			"stack": "item:everycomp:q/phantasm/pream_bookshelf",
+			"after": "item:everycomp:ap/phantasm/pream_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/phantasm/pream_bench",
@@ -13086,8 +13540,12 @@
 			"after": "item:suppsquared:phantasm/item_shelf_pream"
 		},
 		{
-			"stack": "item:phantasm:pream_fence_gate",
+			"stack": "item:everycomp:ap/phantasm/pream_railing",
 			"after": "item:phantasm:pream_fence"
+		},
+		{
+			"stack": "item:phantasm:pream_fence_gate",
+			"after": "item:everycomp:ap/phantasm/pream_railing"
 		},
 		{
 			"stack": "item:phantasm:pream_door",
@@ -13154,8 +13612,12 @@
 			"after": "item:everycomp:q/witherstormmod/stripped_tainted_post"
 		},
 		{
-			"stack": "item:everycomp:q/witherstormmod/tainted_bookshelf",
+			"stack": "item:everycomp:ap/witherstormmod/tainted_boards",
 			"after": "item:witherstormmod:tainted_planks"
+		},
+		{
+			"stack": "item:everycomp:q/witherstormmod/tainted_bookshelf",
+			"after": "item:everycomp:ap/witherstormmod/tainted_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/witherstormmod/tainted_bench",
@@ -13226,8 +13688,12 @@
 			"after": "item:suppsquared:witherstormmod/item_shelf_tainted"
 		},
 		{
-			"stack": "item:witherstormmod:tainted_fence_gate",
+			"stack": "item:everycomp:ap/witherstormmod/tainted_railing",
 			"after": "item:witherstormmod:tainted_fence"
+		},
+		{
+			"stack": "item:witherstormmod:tainted_fence_gate",
+			"after": "item:everycomp:ap/witherstormmod/tainted_railing"
 		},
 		{
 			"stack": "item:witherstormmod:tainted_door",
@@ -13262,8 +13728,160 @@
 			"after": "item:witherstormmod:tainted_sign"
 		},
 		{
-			"stack": "item:twilightforest:mangrove_log",
+			"stack": "item:ancient_aether:highsproot_log",
 			"after": "item:supplementaries:witherstormmod/sign_post_tainted"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_wood",
+			"after": "item:ancient_aether:highsproot_log"
+		},
+		{
+			"stack": "item:everycomp:q/ancient_aether/highsproot_post",
+			"after": "item:ancient_aether:highsproot_wood"
+		},
+		{
+			"stack": "item:ancient_aether:stripped_highsproot_log",
+			"after": "item:everycomp:q/ancient_aether/highsproot_post"
+		},
+		{
+			"stack": "item:ancient_aether:stripped_highsproot_wood",
+			"after": "item:ancient_aether:stripped_highsproot_log"
+		},
+		{
+			"stack": "item:everycomp:q/ancient_aether/stripped_highsproot_post",
+			"after": "item:ancient_aether:stripped_highsproot_wood"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_planks",
+			"after": "item:everycomp:q/ancient_aether/stripped_highsproot_post"
+		},
+		{
+			"stack": "item:everycomp:ap/ancient_aether/highsproot_boards",
+			"after": "item:ancient_aether:highsproot_planks"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_bookshelf",
+			"after": "item:everycomp:ap/ancient_aether/highsproot_boards"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/highsproot_bench",
+			"after": "item:ancient_aether:highsproot_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/highsproot_chair",
+			"after": "item:everycomp:hc/ancient_aether/highsproot_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/highsproot_couch",
+			"after": "item:everycomp:hc/ancient_aether/highsproot_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/highsproot_dining_bench",
+			"after": "item:everycomp:hc/ancient_aether/highsproot_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/highsproot_side_table",
+			"after": "item:everycomp:hc/ancient_aether/highsproot_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/highsproot_desk",
+			"after": "item:everycomp:hc/ancient_aether/highsproot_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/highsproot_nightstand",
+			"after": "item:everycomp:hc/ancient_aether/highsproot_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/highsproot_table",
+			"after": "item:everycomp:hc/ancient_aether/highsproot_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/highsproot_counter",
+			"after": "item:everycomp:hc/ancient_aether/highsproot_table"
+		},
+		{
+			"stack": "item:everycomp:fd/ancient_aether/highsproot_cabinet",
+			"after": "item:everycomp:hc/ancient_aether/highsproot_counter"
+		},
+		{
+			"stack": "item:everycomp:q/ancient_aether/highsproot_chest",
+			"after": "item:everycomp:fd/ancient_aether/highsproot_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/highsproot_fancy_bed",
+			"after": "item:everycomp:q/ancient_aether/highsproot_chest"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_stairs",
+			"after": "item:everycomp:hc/ancient_aether/highsproot_fancy_bed"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_slab",
+			"after": "item:ancient_aether:highsproot_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:ancient_aether/highsproot_vertical_slab",
+			"after": "item:ancient_aether:highsproot_slab"
+		},
+		{
+			"stack": "item:suppsquared:ancient_aether/item_shelf_highsproot",
+			"after": "item:v_slab_compat:ancient_aether/highsproot_vertical_slab"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_fence",
+			"after": "item:suppsquared:ancient_aether/item_shelf_highsproot"
+		},
+		{
+			"stack": "item:everycomp:ap/ancient_aether/highsproot_railing",
+			"after": "item:ancient_aether:highsproot_fence"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_fence_gate",
+			"after": "item:everycomp:ap/ancient_aether/highsproot_railing"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_door",
+			"after": "item:ancient_aether:highsproot_fence_gate"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_trapdoor",
+			"after": "item:ancient_aether:highsproot_door"
+		},
+		{
+			"stack": "item:everycomp:q/ancient_aether/highsproot_ladder",
+			"after": "item:ancient_aether:highsproot_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/ancient_aether/highsproot_lattice",
+			"after": "item:everycomp:q/ancient_aether/highsproot_ladder"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_pressure_plate",
+			"after": "item:everycomp:hnhome/ancient_aether/highsproot_lattice"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_button",
+			"after": "item:ancient_aether:highsproot_pressure_plate"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_sign",
+			"after": "item:ancient_aether:highsproot_button"
+		},
+		{
+			"stack": "item:supplementaries:ancient_aether/sign_post_highsproot",
+			"after": "item:ancient_aether:highsproot_sign"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_hanging_sign",
+			"after": "item:supplementaries:ancient_aether/sign_post_highsproot"
+		},
+		{
+			"stack": "item:ancient_aether:highsproot_boat",
+			"after": "item:ancient_aether:highsproot_hanging_sign"
+		},
+		{
+			"stack": "item:twilightforest:mangrove_log",
+			"after": "item:ancient_aether:highsproot_boat"
 		},
 		{
 			"stack": "item:twilightforest:mangrove_wood",
@@ -13450,8 +14068,12 @@
 			"after": "item:everycomp:q/twilightforest/stripped_mining_post"
 		},
 		{
-			"stack": "item:everycomp:q/twilightforest/mining_bookshelf",
+			"stack": "item:everycomp:ap/twilightforest/mining_boards",
 			"after": "item:twilightforest:mining_planks"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/mining_bookshelf",
+			"after": "item:everycomp:ap/twilightforest/mining_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/mining_bench",
@@ -13522,8 +14144,12 @@
 			"after": "item:suppsquared:twilightforest/item_shelf_mining"
 		},
 		{
-			"stack": "item:twilightforest:mining_fence_gate",
+			"stack": "item:everycomp:ap/twilightforest/mining_railing",
 			"after": "item:twilightforest:mining_fence"
+		},
+		{
+			"stack": "item:twilightforest:mining_fence_gate",
+			"after": "item:everycomp:ap/twilightforest/mining_railing"
 		},
 		{
 			"stack": "item:twilightforest:mining_door",
@@ -13594,8 +14220,12 @@
 			"after": "item:everycomp:q/twilightforest/stripped_canopy_post"
 		},
 		{
-			"stack": "item:twilightforest:canopy_bookshelf",
+			"stack": "item:everycomp:ap/twilightforest/canopy_boards",
 			"after": "item:twilightforest:canopy_planks"
+		},
+		{
+			"stack": "item:twilightforest:canopy_bookshelf",
+			"after": "item:everycomp:ap/twilightforest/canopy_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/canopy_bench",
@@ -13666,8 +14296,12 @@
 			"after": "item:suppsquared:twilightforest/item_shelf_canopy"
 		},
 		{
-			"stack": "item:twilightforest:canopy_fence_gate",
+			"stack": "item:everycomp:ap/twilightforest/canopy_railing",
 			"after": "item:twilightforest:canopy_fence"
+		},
+		{
+			"stack": "item:twilightforest:canopy_fence_gate",
+			"after": "item:everycomp:ap/twilightforest/canopy_railing"
 		},
 		{
 			"stack": "item:twilightforest:canopy_door",
@@ -13738,8 +14372,12 @@
 			"after": "item:everycomp:q/twilightforest/stripped_twilight_oak_post"
 		},
 		{
-			"stack": "item:everycomp:q/twilightforest/twilight_oak_bookshelf",
+			"stack": "item:everycomp:ap/twilightforest/twilight_oak_boards",
 			"after": "item:twilightforest:twilight_oak_planks"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/twilight_oak_bookshelf",
+			"after": "item:everycomp:ap/twilightforest/twilight_oak_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/twilight_oak_bench",
@@ -13810,8 +14448,12 @@
 			"after": "item:suppsquared:twilightforest/item_shelf_twilight_oak"
 		},
 		{
-			"stack": "item:twilightforest:twilight_oak_fence_gate",
+			"stack": "item:everycomp:ap/twilightforest/twilight_oak_railing",
 			"after": "item:twilightforest:twilight_oak_fence"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_fence_gate",
+			"after": "item:everycomp:ap/twilightforest/twilight_oak_railing"
 		},
 		{
 			"stack": "item:twilightforest:twilight_oak_door",
@@ -13882,8 +14524,12 @@
 			"after": "item:everycomp:q/twilightforest/stripped_dark_post"
 		},
 		{
-			"stack": "item:everycomp:q/twilightforest/dark_bookshelf",
+			"stack": "item:everycomp:ap/twilightforest/dark_boards",
 			"after": "item:twilightforest:dark_planks"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/dark_bookshelf",
+			"after": "item:everycomp:ap/twilightforest/dark_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/dark_bench",
@@ -13954,8 +14600,12 @@
 			"after": "item:suppsquared:twilightforest/item_shelf_dark"
 		},
 		{
-			"stack": "item:twilightforest:dark_fence_gate",
+			"stack": "item:everycomp:ap/twilightforest/dark_railing",
 			"after": "item:twilightforest:dark_fence"
+		},
+		{
+			"stack": "item:twilightforest:dark_fence_gate",
+			"after": "item:everycomp:ap/twilightforest/dark_railing"
 		},
 		{
 			"stack": "item:twilightforest:dark_door",
@@ -14026,8 +14676,12 @@
 			"after": "item:everycomp:q/twilightforest/stripped_transformation_post"
 		},
 		{
-			"stack": "item:everycomp:q/twilightforest/transformation_bookshelf",
+			"stack": "item:everycomp:ap/twilightforest/transformation_boards",
 			"after": "item:twilightforest:transformation_planks"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/transformation_bookshelf",
+			"after": "item:everycomp:ap/twilightforest/transformation_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/transformation_bench",
@@ -14098,8 +14752,12 @@
 			"after": "item:suppsquared:twilightforest/item_shelf_transformation"
 		},
 		{
-			"stack": "item:twilightforest:transformation_fence_gate",
+			"stack": "item:everycomp:ap/twilightforest/transformation_railing",
 			"after": "item:twilightforest:transformation_fence"
+		},
+		{
+			"stack": "item:twilightforest:transformation_fence_gate",
+			"after": "item:everycomp:ap/twilightforest/transformation_railing"
 		},
 		{
 			"stack": "item:twilightforest:transformation_door",
@@ -14142,8 +14800,160 @@
 			"after": "item:twilightforest:transformation_hanging_sign"
 		},
 		{
-			"stack": "item:twilightforest:time_log",
+			"stack": "item:ancient_aether:sakura_log",
 			"after": "item:twilightforest:transformation_boat"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_wood",
+			"after": "item:ancient_aether:sakura_log"
+		},
+		{
+			"stack": "item:everycomp:q/ancient_aether/sakura_post",
+			"after": "item:ancient_aether:sakura_wood"
+		},
+		{
+			"stack": "item:ancient_aether:stripped_sakura_log",
+			"after": "item:everycomp:q/ancient_aether/sakura_post"
+		},
+		{
+			"stack": "item:ancient_aether:stripped_sakura_wood",
+			"after": "item:ancient_aether:stripped_sakura_log"
+		},
+		{
+			"stack": "item:everycomp:q/ancient_aether/stripped_sakura_post",
+			"after": "item:ancient_aether:stripped_sakura_wood"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_planks",
+			"after": "item:everycomp:q/ancient_aether/stripped_sakura_post"
+		},
+		{
+			"stack": "item:everycomp:ap/ancient_aether/sakura_boards",
+			"after": "item:ancient_aether:sakura_planks"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_bookshelf",
+			"after": "item:everycomp:ap/ancient_aether/sakura_boards"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/sakura_bench",
+			"after": "item:ancient_aether:sakura_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/sakura_chair",
+			"after": "item:everycomp:hc/ancient_aether/sakura_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/sakura_couch",
+			"after": "item:everycomp:hc/ancient_aether/sakura_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/sakura_dining_bench",
+			"after": "item:everycomp:hc/ancient_aether/sakura_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/sakura_side_table",
+			"after": "item:everycomp:hc/ancient_aether/sakura_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/sakura_desk",
+			"after": "item:everycomp:hc/ancient_aether/sakura_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/sakura_nightstand",
+			"after": "item:everycomp:hc/ancient_aether/sakura_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/sakura_table",
+			"after": "item:everycomp:hc/ancient_aether/sakura_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/sakura_counter",
+			"after": "item:everycomp:hc/ancient_aether/sakura_table"
+		},
+		{
+			"stack": "item:everycomp:fd/ancient_aether/sakura_cabinet",
+			"after": "item:everycomp:hc/ancient_aether/sakura_counter"
+		},
+		{
+			"stack": "item:everycomp:q/ancient_aether/sakura_chest",
+			"after": "item:everycomp:fd/ancient_aether/sakura_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/ancient_aether/sakura_fancy_bed",
+			"after": "item:everycomp:q/ancient_aether/sakura_chest"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_stairs",
+			"after": "item:everycomp:hc/ancient_aether/sakura_fancy_bed"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_slab",
+			"after": "item:ancient_aether:sakura_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:ancient_aether/sakura_vertical_slab",
+			"after": "item:ancient_aether:sakura_slab"
+		},
+		{
+			"stack": "item:suppsquared:ancient_aether/item_shelf_sakura",
+			"after": "item:v_slab_compat:ancient_aether/sakura_vertical_slab"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_fence",
+			"after": "item:suppsquared:ancient_aether/item_shelf_sakura"
+		},
+		{
+			"stack": "item:everycomp:ap/ancient_aether/sakura_railing",
+			"after": "item:ancient_aether:sakura_fence"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_fence_gate",
+			"after": "item:everycomp:ap/ancient_aether/sakura_railing"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_door",
+			"after": "item:ancient_aether:sakura_fence_gate"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_trapdoor",
+			"after": "item:ancient_aether:sakura_door"
+		},
+		{
+			"stack": "item:everycomp:q/ancient_aether/sakura_ladder",
+			"after": "item:ancient_aether:sakura_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/ancient_aether/sakura_lattice",
+			"after": "item:everycomp:q/ancient_aether/sakura_ladder"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_pressure_plate",
+			"after": "item:everycomp:hnhome/ancient_aether/sakura_lattice"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_button",
+			"after": "item:ancient_aether:sakura_pressure_plate"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_sign",
+			"after": "item:ancient_aether:sakura_button"
+		},
+		{
+			"stack": "item:supplementaries:ancient_aether/sign_post_sakura",
+			"after": "item:ancient_aether:sakura_sign"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_hanging_sign",
+			"after": "item:supplementaries:ancient_aether/sign_post_sakura"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_boat",
+			"after": "item:ancient_aether:sakura_hanging_sign"
+		},
+		{
+			"stack": "item:twilightforest:time_log",
+			"after": "item:ancient_aether:sakura_boat"
 		},
 		{
 			"stack": "item:twilightforest:time_wood",
@@ -14170,8 +14980,12 @@
 			"after": "item:everycomp:q/twilightforest/stripped_time_post"
 		},
 		{
-			"stack": "item:everycomp:q/twilightforest/time_bookshelf",
+			"stack": "item:everycomp:ap/twilightforest/time_boards",
 			"after": "item:twilightforest:time_planks"
+		},
+		{
+			"stack": "item:everycomp:q/twilightforest/time_bookshelf",
+			"after": "item:everycomp:ap/twilightforest/time_boards"
 		},
 		{
 			"stack": "item:everycomp:hc/twilightforest/time_bench",
@@ -14242,8 +15056,12 @@
 			"after": "item:suppsquared:twilightforest/item_shelf_time"
 		},
 		{
-			"stack": "item:twilightforest:time_fence_gate",
+			"stack": "item:everycomp:ap/twilightforest/time_railing",
 			"after": "item:twilightforest:time_fence"
+		},
+		{
+			"stack": "item:twilightforest:time_fence_gate",
+			"after": "item:everycomp:ap/twilightforest/time_railing"
 		},
 		{
 			"stack": "item:twilightforest:time_door",
@@ -14478,6 +15296,10 @@
 			"after": "item:upgrade_aquatic:finger_coralstone_slab"
 		},
 		{
+			"stack": "item:v_slab_compat:ancient_aether/valkyrie_tile_vertical_slab",
+			"after": "item:ancient_aether:valkyrie_tile_slab"
+		},
+		{
 			"stack": "item:v_slab_compat:hearth_and_home/white_terracotta_brick_vertical_slab",
 			"after": "item:hearth_and_home:white_terracotta_brick_slab"
 		},
@@ -14684,6 +15506,10 @@
 		{
 			"stack": "item:v_slab_compat:create/cut_scoria_vertical_slab",
 			"after": "item:create:cut_scoria_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ancient_aether/valkyrie_brick_vertical_slab",
+			"after": "item:ancient_aether:valkyrie_brick_slab"
 		},
 		{
 			"stack": "item:v_slab_compat:aether/mossy_holystone_vertical_slab",
@@ -15080,6 +15906,10 @@
 		{
 			"stack": "item:v_slab_compat:galosphere/polished_pink_salt_vertical_slab",
 			"after": "item:galosphere:polished_pink_salt_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:ancient_aether/carved_tile_vertical_slab",
+			"after": "item:ancient_aether:carved_tile_slab"
 		},
 		{
 			"stack": "item:v_slab_compat:alexscaves/smooth_coprolith_vertical_slab",
@@ -16008,6 +16838,15 @@
 		"/twilightforest:snow_queen_banner_pattern/",
 		"/twilightforest:ur_ghast_banner_pattern/",
 		"/alexscaves:polarity_armor_trim_smithing_template/",
+		"/ancient_aether:ancient_armor_trim_smithing_template/",
+		"/ancient_aether:ascended_armor_trim_smithing_template/",
+		"/ancient_aether:mechanical_armor_trim_smithing_template/",
+		"/ancient_aether:mosaic_armor_trim_smithing_template/",
+		"/ancient_aether:mysterious_armor_trim_smithing_template/",
+		"/ancient_aether:royal_armor_trim_smithing_template/",
+		"/ancient_aether:solar_armor_trim_smithing_template/",
+		"/ancient_aether:whale_armor_trim_smithing_template/",
+		"/ancient_aether:wynd_armor_trim_smithing_template/",
 		"/cataclysm:cursium_upgrade_smithing_template/",
 		"/cataclysm:ignitium_upgrade_smithing_template/",
 		"/galosphere:silver_upgrade_smithing_template/",
@@ -16206,6 +17045,11 @@
 		"/alexsmobs:spawn_egg_void_worm/",
 		"/alexsmobs:spawn_egg_warped_mosco/",
 		"/alexsmobs:spawn_egg_warped_toad/",
+		"/ancient_aether:aeronautic_leaper_spawn_egg/",
+		"/ancient_aether:festive_swet_spawn_egg/",
+		"/ancient_aether:fluffalo_spawn_egg/",
+		"/ancient_aether:mutated_aechor_plant_spawn_egg/",
+		"/ancient_aether:slammroot_spawn_egg/",
 		"/aquamirae:anglerfish_spawn_egg/",
 		"/aquamirae:captain_cornelia_spawn_egg/",
 		"/aquamirae:eel_spawn_egg/",
@@ -17137,6 +17981,7 @@
 		"/ecologics:stripped_coconut_wood/",
 		"/everycomp:q\\/ecologics/stripped_coconut_post/",
 		"/ecologics:coconut_planks/",
+		"/everycomp:ap\\/ecologics/coconut_boards/",
 		"/everycomp:q\\/ecologics/coconut_bookshelf/",
 		"/everycomp:hc\\/ecologics/coconut_bench/",
 		"/everycomp:hc\\/ecologics/coconut_chair/",
@@ -17155,6 +18000,7 @@
 		"/v_slab_compat:ecologics\\/coconut_vertical_slab/",
 		"/suppsquared:ecologics\\/item_shelf_coconut/",
 		"/ecologics:coconut_fence/",
+		"/everycomp:ap\\/ecologics/coconut_railing/",
 		"/ecologics:coconut_fence_gate/",
 		"/ecologics:coconut_door/",
 		"/ecologics:coconut_trapdoor/",
@@ -17173,6 +18019,7 @@
 		"/ecologics:stripped_walnut_wood/",
 		"/everycomp:q\\/ecologics/stripped_walnut_post/",
 		"/ecologics:walnut_planks/",
+		"/everycomp:ap\\/ecologics/walnut_boards/",
 		"/everycomp:q\\/ecologics/walnut_bookshelf/",
 		"/everycomp:hc\\/ecologics/walnut_bench/",
 		"/everycomp:hc\\/ecologics/walnut_chair/",
@@ -17191,6 +18038,7 @@
 		"/v_slab_compat:ecologics\\/walnut_vertical_slab/",
 		"/suppsquared:ecologics\\/item_shelf_walnut/",
 		"/ecologics:walnut_fence/",
+		"/everycomp:ap\\/ecologics/walnut_railing/",
 		"/ecologics:walnut_fence_gate/",
 		"/ecologics:walnut_door/",
 		"/ecologics:walnut_trapdoor/",
@@ -17207,6 +18055,7 @@
 		"/botania:stripped_livingwood_log/",
 		"/everycomp:q\\/botania/stripped_livingwood_post/",
 		"/botania:livingwood_planks/",
+		"/everycomp:ap\\/botania/livingwood_boards/",
 		"/everycomp:q\\/botania/livingwood_bookshelf/",
 		"/everycomp:hc\\/botania/livingwood_bench/",
 		"/everycomp:hc\\/botania/livingwood_chair/",
@@ -17225,6 +18074,7 @@
 		"/v_slab_compat:botania\\/livingwood_vertical_slab/",
 		"/suppsquared:botania\\/item_shelf_livingwood/",
 		"/botania:livingwood_fence/",
+		"/everycomp:ap\\/botania/livingwood_railing/",
 		"/botania:livingwood_fence_gate/",
 		"/everycomp:q\\/botania/livingwood_ladder/",
 		"/everycomp:hnhome\\/botania/livingwood_lattice/",
@@ -17234,6 +18084,7 @@
 		"/botania:stripped_dreamwood_log/",
 		"/everycomp:q\\/botania/stripped_dreamwood_post/",
 		"/botania:dreamwood_planks/",
+		"/everycomp:ap\\/botania/dreamwood_boards/",
 		"/everycomp:q\\/botania/dreamwood_bookshelf/",
 		"/everycomp:hc\\/botania/dreamwood_bench/",
 		"/everycomp:hc\\/botania/dreamwood_chair/",
@@ -17252,6 +18103,7 @@
 		"/v_slab_compat:botania\\/dreamwood_vertical_slab/",
 		"/suppsquared:botania\\/item_shelf_dreamwood/",
 		"/botania:dreamwood_fence/",
+		"/everycomp:ap\\/botania/dreamwood_railing/",
 		"/botania:dreamwood_fence_gate/",
 		"/everycomp:q\\/botania/dreamwood_ladder/",
 		"/everycomp:hnhome\\/botania/dreamwood_lattice/",
@@ -17263,6 +18115,7 @@
 		"/window_box:stripped_chthonic_yew_wood/",
 		"/everycomp:q\\/window_box/stripped_chthonic_yew_post/",
 		"/window_box:chthonic_yew_planks/",
+		"/everycomp:ap\\/window_box/chthonic_yew_boards/",
 		"/everycomp:q\\/window_box/chthonic_yew_bookshelf/",
 		"/everycomp:hc\\/window_box/chthonic_yew_bench/",
 		"/everycomp:hc\\/window_box/chthonic_yew_chair/",
@@ -17281,6 +18134,7 @@
 		"/v_slab_compat:window_box\\/chthonic_yew_vertical_slab/",
 		"/suppsquared:window_box\\/item_shelf_chthonic_yew/",
 		"/window_box:chthonic_yew_fence/",
+		"/everycomp:ap\\/window_box/chthonic_yew_railing/",
 		"/window_box:chthonic_yew_fence_gate/",
 		"/window_box:chthonic_yew_door/",
 		"/window_box:chthonic_yew_trapdoor/",
@@ -17299,6 +18153,7 @@
 		"/window_box:stripped_alfthorne_wood/",
 		"/everycomp:q\\/window_box/stripped_alfthorne_post/",
 		"/window_box:alfthorne_planks/",
+		"/everycomp:ap\\/window_box/alfthorne_boards/",
 		"/everycomp:q\\/window_box/alfthorne_bookshelf/",
 		"/everycomp:hc\\/window_box/alfthorne_bench/",
 		"/everycomp:hc\\/window_box/alfthorne_chair/",
@@ -17317,6 +18172,7 @@
 		"/v_slab_compat:window_box\\/alfthorne_vertical_slab/",
 		"/suppsquared:window_box\\/item_shelf_alfthorne/",
 		"/window_box:alfthorne_fence/",
+		"/everycomp:ap\\/window_box/alfthorne_railing/",
 		"/window_box:alfthorne_fence_gate/",
 		"/window_box:alfthorne_door/",
 		"/window_box:alfthorne_trapdoor/",
@@ -17331,6 +18187,7 @@
 		"/everycomp:q\\/ars_nouveau/archwood_post/",
 		"/everycomp:q\\/ars_nouveau/stripped_archwood_post/",
 		"/ars_nouveau:archwood_planks/",
+		"/everycomp:ap\\/ars_nouveau/archwood_boards/",
 		"/everycomp:q\\/ars_nouveau/archwood_bookshelf/",
 		"/everycomp:hc\\/ars_nouveau/archwood_bench/",
 		"/everycomp:hc\\/ars_nouveau/archwood_chair/",
@@ -17349,6 +18206,7 @@
 		"/v_slab_compat:ars_nouveau\\/archwood_vertical_slab/",
 		"/suppsquared:ars_nouveau\\/item_shelf_archwood/",
 		"/ars_nouveau:archwood_fence/",
+		"/everycomp:ap\\/ars_nouveau/archwood_railing/",
 		"/ars_nouveau:archwood_fence_gate/",
 		"/ars_nouveau:archwood_door/",
 		"/ars_nouveau:archwood_trapdoor/",
@@ -17361,6 +18219,7 @@
 		"/evilcraft:undead_wood/",
 		"/everycomp:q\\/evilcraft/undead_post/",
 		"/evilcraft:undead_planks/",
+		"/everycomp:ap\\/evilcraft/undead_boards/",
 		"/everycomp:q\\/evilcraft/undead_bookshelf/",
 		"/everycomp:hc\\/evilcraft/undead_bench/",
 		"/everycomp:hc\\/evilcraft/undead_chair/",
@@ -17378,6 +18237,7 @@
 		"/v_slab_compat:evilcraft\\/undead_vertical_slab/",
 		"/suppsquared:evilcraft\\/item_shelf_undead/",
 		"/evilcraft:undead_fence/",
+		"/everycomp:ap\\/evilcraft/undead_railing/",
 		"/evilcraft:undead_fence_gate/",
 		"/everycomp:q\\/evilcraft/undead_ladder/",
 		"/everycomp:hnhome\\/evilcraft/undead_lattice/",
@@ -17405,6 +18265,7 @@
 		"/v_slab_compat:enhanced_mushrooms\\/mushroom_vertical_slab/",
 		"/suppsquared:enhanced_mushrooms\\/item_shelf_mushroom/",
 		"/enhanced_mushrooms:mushroom_fence/",
+		"/everycomp:ap\\/enhanced_mushrooms/mushroom_railing/",
 		"/enhanced_mushrooms:mushroom_fence_gate/",
 		"/enhanced_mushrooms:mushroom_door/",
 		"/enhanced_mushrooms:mushroom_trapdoor/",
@@ -17423,6 +18284,7 @@
 		"/quark:stripped_azalea_wood/",
 		"/quark:stripped_azalea_post/",
 		"/quark:azalea_planks/",
+		"/everycomp:ap\\/quark/azalea_boards/",
 		"/quark:azalea_bookshelf/",
 		"/quark:azalea_bookshelf/",
 		"/everycomp:hc\\/quark/azalea_bench/",
@@ -17444,6 +18306,7 @@
 		"/quark:azalea_planks_vertical_slab/",
 		"/suppsquared:quark\\/item_shelf_azalea/",
 		"/quark:azalea_fence/",
+		"/everycomp:ap\\/quark/azalea_railing/",
 		"/quark:azalea_fence_gate/",
 		"/quark:azalea_door/",
 		"/quark:azalea_trapdoor/",
@@ -17463,6 +18326,7 @@
 		"/alexscaves:stripped_thornwood_wood/",
 		"/everycomp:q\\/alexscaves/stripped_thornwood_post/",
 		"/alexscaves:thornwood_planks/",
+		"/everycomp:ap\\/alexscaves/thornwood_boards/",
 		"/everycomp:q\\/alexscaves/thornwood_bookshelf/",
 		"/everycomp:hc\\/alexscaves/thornwood_bench/",
 		"/everycomp:hc\\/alexscaves/thornwood_chair/",
@@ -17481,6 +18345,7 @@
 		"/v_slab_compat:alexscaves\\/thornwood_vertical_slab/",
 		"/suppsquared:alexscaves\\/item_shelf_thornwood/",
 		"/alexscaves:thornwood_fence/",
+		"/everycomp:ap\\/alexscaves/thornwood_railing/",
 		"/alexscaves:thornwood_fence_gate/",
 		"/alexscaves:thornwood_door/",
 		"/alexscaves:thornwood_trapdoor/",
@@ -17499,6 +18364,7 @@
 		"/alexscaves:stripped_pewen_wood/",
 		"/everycomp:q\\/alexscaves/stripped_pewen_post/",
 		"/alexscaves:pewen_planks/",
+		"/everycomp:ap\\/alexscaves/pewen_boards/",
 		"/everycomp:q\\/alexscaves/pewen_bookshelf/",
 		"/everycomp:hc\\/alexscaves/pewen_bench/",
 		"/everycomp:hc\\/alexscaves/pewen_chair/",
@@ -17517,6 +18383,7 @@
 		"/v_slab_compat:alexscaves\\/pewen_vertical_slab/",
 		"/suppsquared:alexscaves\\/item_shelf_pewen/",
 		"/alexscaves:pewen_fence/",
+		"/everycomp:ap\\/alexscaves/pewen_railing/",
 		"/alexscaves:pewen_fence_gate/",
 		"/alexscaves:pewen_door/",
 		"/alexscaves:pewen_trapdoor/",
@@ -17591,6 +18458,7 @@
 		"/snifferplus:stripped_stone_pine_wood/",
 		"/everycomp:q\\/snifferplus/stripped_stone_pine_post/",
 		"/snifferplus:stone_pine_planks/",
+		"/everycomp:ap\\/snifferplus/stone_pine_boards/",
 		"/everycomp:q\\/snifferplus/stone_pine_bookshelf/",
 		"/everycomp:hc\\/snifferplus/stone_pine_bench/",
 		"/everycomp:hc\\/snifferplus/stone_pine_chair/",
@@ -17609,6 +18477,7 @@
 		"/v_slab_compat:snifferplus\\/stone_pine_vertical_slab/",
 		"/suppsquared:snifferplus\\/item_shelf_stone_pine/",
 		"/snifferplus:stone_pine_fence/",
+		"/everycomp:ap\\/snifferplus/stone_pine_railing/",
 		"/snifferplus:stone_pine_fence_gate/",
 		"/snifferplus:stone_pine_door/",
 		"/snifferplus:stone_pine_trapdoor/",
@@ -17625,6 +18494,7 @@
 		"/upgrade_aquatic:stripped_driftwood_log/",
 		"/upgrade_aquatic:stripped_driftwood/",
 		"/upgrade_aquatic:driftwood_planks/",
+		"/everycomp:ap\\/upgrade_aquatic/driftwood_boards/",
 		"/upgrade_aquatic:driftwood_bookshelf/",
 		"/everycomp:hc\\/upgrade_aquatic/driftwood_bench/",
 		"/everycomp:hc\\/upgrade_aquatic/driftwood_chair/",
@@ -17643,6 +18513,7 @@
 		"/v_slab_compat:upgrade_aquatic\\/driftwood_vertical_slab/",
 		"/suppsquared:upgrade_aquatic\\/item_shelf_driftwood/",
 		"/upgrade_aquatic:driftwood_fence/",
+		"/everycomp:ap\\/upgrade_aquatic/driftwood_railing/",
 		"/upgrade_aquatic:driftwood_fence_gate/",
 		"/upgrade_aquatic:driftwood_door/",
 		"/upgrade_aquatic:driftwood_trapdoor/",
@@ -17656,6 +18527,7 @@
 		"/upgrade_aquatic:driftwood_boat/",
 		"/betterarcheology:rotten_log/",
 		"/betterarcheology:rotten_planks/",
+		"/everycomp:ap\\/betterarcheology/rotten_boards/",
 		"/everycomp:q\\/betterarcheology/rotten_bookshelf/",
 		"/everycomp:hc\\/betterarcheology/rotten_bench/",
 		"/everycomp:hc\\/betterarcheology/rotten_chair/",
@@ -17674,6 +18546,7 @@
 		"/v_slab_compat:betterarcheology\\/rotten_vertical_slab/",
 		"/suppsquared:betterarcheology\\/item_shelf_rotten/",
 		"/betterarcheology:rotten_fence/",
+		"/everycomp:ap\\/betterarcheology/rotten_railing/",
 		"/betterarcheology:rotten_fence_gate/",
 		"/betterarcheology:rotten_door/",
 		"/betterarcheology:rotten_trapdoor/",
@@ -17688,6 +18561,7 @@
 		"/born_in_chaos_v1:stripped_scorched_wood/",
 		"/everycomp:q\\/born_in_chaos_v1/stripped_scorched_post/",
 		"/born_in_chaos_v1:scorched_planks/",
+		"/everycomp:ap\\/born_in_chaos_v1/scorched_boards/",
 		"/everycomp:q\\/born_in_chaos_v1/scorched_bookshelf/",
 		"/everycomp:hc\\/born_in_chaos_v1/scorched_bench/",
 		"/everycomp:hc\\/born_in_chaos_v1/scorched_chair/",
@@ -17706,6 +18580,7 @@
 		"/born_in_chaos_v1:scorched_planks_slab/",
 		"/suppsquared:born_in_chaos_v1\\/item_shelf_scorched/",
 		"/born_in_chaos_v1:scorched_planks_fence/",
+		"/everycomp:ap\\/born_in_chaos_v1/scorched_railing/",
 		"/born_in_chaos_v1:scorched_planks_fence_gate/",
 		"/born_in_chaos_v1:scorched_planks_door/",
 		"/born_in_chaos_v1:scorched_planks_trapdoor/",
@@ -17718,6 +18593,7 @@
 		"/upgrade_aquatic:stripped_river_log/",
 		"/upgrade_aquatic:stripped_river_wood/",
 		"/upgrade_aquatic:river_planks/",
+		"/everycomp:ap\\/upgrade_aquatic/river_boards/",
 		"/upgrade_aquatic:river_bookshelf/",
 		"/everycomp:hc\\/upgrade_aquatic/river_bench/",
 		"/everycomp:hc\\/upgrade_aquatic/river_chair/",
@@ -17736,6 +18612,7 @@
 		"/v_slab_compat:upgrade_aquatic\\/river_vertical_slab/",
 		"/suppsquared:upgrade_aquatic\\/item_shelf_river/",
 		"/upgrade_aquatic:river_fence/",
+		"/everycomp:ap\\/upgrade_aquatic/river_railing/",
 		"/upgrade_aquatic:river_fence_gate/",
 		"/upgrade_aquatic:river_door/",
 		"/upgrade_aquatic:river_trapdoor/",
@@ -17825,6 +18702,7 @@
 		"/mynethersdelight:stripped_powdery_block/",
 		"/mynethersdelight:powdery_planks/",
 		"/mynethersdelight:powdery_mosaic/",
+		"/everycomp:ap\\/mynethersdelight/powdery_boards/",
 		"/everycomp:q\\/mynethersdelight/powdery_bookshelf/",
 		"/everycomp:hc\\/mynethersdelight/powdery_bench/",
 		"/everycomp:hc\\/mynethersdelight/powdery_chair/",
@@ -17844,6 +18722,7 @@
 		"/v_slab_compat:mynethersdelight\\/powdery_vertical_slab/",
 		"/suppsquared:mynethersdelight\\/item_shelf_powdery/",
 		"/mynethersdelight:powdery_fence/",
+		"/everycomp:ap\\/mynethersdelight/powdery_railing/",
 		"/mynethersdelight:powdery_fence_gate/",
 		"/mynethersdelight:powdery_door/",
 		"/mynethersdelight:powdery_trapdoor/",
@@ -17857,6 +18736,7 @@
 		"/netherexp:smokestalk_block/",
 		"/netherexp:stripped_smokestalk_block/",
 		"/netherexp:smokestalk_planks/",
+		"/everycomp:ap\\/netherexp/smokestalk_boards/",
 		"/everycomp:q\\/netherexp/smokestalk_bookshelf/",
 		"/everycomp:hc\\/netherexp/smokestalk_bench/",
 		"/everycomp:hc\\/netherexp/smokestalk_chair/",
@@ -17875,6 +18755,7 @@
 		"/v_slab_compat:netherexp\\/smokestalk_vertical_slab/",
 		"/suppsquared:netherexp\\/item_shelf_smokestalk/",
 		"/netherexp:smokestalk_fence/",
+		"/everycomp:ap\\/netherexp/smokestalk_railing/",
 		"/netherexp:smokestalk_fence_gate/",
 		"/netherexp:smokestalk_door/",
 		"/netherexp:smokestalk_trapdoor/",
@@ -17925,6 +18806,7 @@
 		"/netherexp:stripped_claret_hyphae/",
 		"/everycomp:q\\/netherexp/stripped_claret_post/",
 		"/netherexp:claret_planks/",
+		"/everycomp:ap\\/netherexp/claret_boards/",
 		"/everycomp:q\\/netherexp/claret_bookshelf/",
 		"/everycomp:hc\\/netherexp/claret_bench/",
 		"/everycomp:hc\\/netherexp/claret_chair/",
@@ -17943,6 +18825,7 @@
 		"/v_slab_compat:netherexp\\/claret_vertical_slab/",
 		"/suppsquared:netherexp\\/item_shelf_claret/",
 		"/netherexp:claret_fence/",
+		"/everycomp:ap\\/netherexp/claret_railing/",
 		"/netherexp:claret_fence_gate/",
 		"/netherexp:claret_door/",
 		"/netherexp:claret_trapdoor/",
@@ -17960,6 +18843,7 @@
 		"/aether:stripped_skyroot_wood/",
 		"/everycomp:q\\/aether/stripped_skyroot_post/",
 		"/aether:skyroot_planks/",
+		"/everycomp:ap\\/aether/skyroot_boards/",
 		"/aether:skyroot_bookshelf/",
 		"/everycomp:hc\\/aether/skyroot_bench/",
 		"/everycomp:hc\\/aether/skyroot_chair/",
@@ -17978,6 +18862,7 @@
 		"/v_slab_compat:aether\\/skyroot_vertical_slab/",
 		"/suppsquared:aether\\/item_shelf_skyroot/",
 		"/aether:skyroot_fence/",
+		"/everycomp:ap\\/aether/skyroot_railing/",
 		"/aether:skyroot_fence_gate/",
 		"/aether:skyroot_door/",
 		"/aether:skyroot_trapdoor/",
@@ -17996,6 +18881,7 @@
 		"/aether_redux:stripped_fieldsproot_wood/",
 		"/everycomp:q\\/aether_redux/stripped_fieldsproot_post/",
 		"/aether_redux:fieldsproot_planks/",
+		"/everycomp:ap\\/aether_redux/fieldsproot_boards/",
 		"/aether_redux:fieldsproot_bookshelf/",
 		"/everycomp:hc\\/aether_redux/fieldsproot_bench/",
 		"/everycomp:hc\\/aether_redux/fieldsproot_chair/",
@@ -18014,6 +18900,7 @@
 		"/v_slab_compat:aether_redux\\/fieldsproot_vertical_slab/",
 		"/suppsquared:aether_redux\\/item_shelf_fieldsproot/",
 		"/aether_redux:fieldsproot_fence/",
+		"/everycomp:ap\\/aether_redux/fieldsproot_railing/",
 		"/aether_redux:fieldsproot_fence_gate/",
 		"/aether_redux:fieldsproot_door/",
 		"/aether_redux:fieldsproot_trapdoor/",
@@ -18032,6 +18919,7 @@
 		"/aether_redux:stripped_crystal_wood/",
 		"/everycomp:q\\/aether_redux/stripped_crystal_post/",
 		"/aether_redux:crystal_planks/",
+		"/everycomp:ap\\/aether_redux/crystal_boards/",
 		"/aether_redux:crystal_bookshelf/",
 		"/everycomp:hc\\/aether_redux/crystal_bench/",
 		"/everycomp:hc\\/aether_redux/crystal_chair/",
@@ -18050,6 +18938,7 @@
 		"/v_slab_compat:aether_redux\\/crystal_vertical_slab/",
 		"/suppsquared:aether_redux\\/item_shelf_crystal/",
 		"/aether_redux:crystal_fence/",
+		"/everycomp:ap\\/aether_redux/crystal_railing/",
 		"/aether_redux:crystal_fence_gate/",
 		"/aether_redux:crystal_door/",
 		"/aether_redux:crystal_trapdoor/",
@@ -18068,6 +18957,7 @@
 		"/aether_redux:stripped_glacia_wood/",
 		"/everycomp:q\\/aether_redux/stripped_glacia_post/",
 		"/aether_redux:glacia_planks/",
+		"/everycomp:ap\\/aether_redux/glacia_boards/",
 		"/aether_redux:glacia_bookshelf/",
 		"/everycomp:hc\\/aether_redux/glacia_bench/",
 		"/everycomp:hc\\/aether_redux/glacia_chair/",
@@ -18086,6 +18976,7 @@
 		"/v_slab_compat:aether_redux\\/glacia_vertical_slab/",
 		"/suppsquared:aether_redux\\/item_shelf_glacia/",
 		"/aether_redux:glacia_fence/",
+		"/everycomp:ap\\/aether_redux/glacia_railing/",
 		"/aether_redux:glacia_fence_gate/",
 		"/aether_redux:glacia_door/",
 		"/aether_redux:glacia_trapdoor/",
@@ -18104,6 +18995,7 @@
 		"/aether_redux:stripped_cloudcap_hyphae/",
 		"/everycomp:q\\/aether_redux/stripped_cloudcap_post/",
 		"/aether_redux:cloudcap_planks/",
+		"/everycomp:ap\\/aether_redux/cloudcap_boards/",
 		"/aether_redux:cloudcap_bookshelf/",
 		"/everycomp:hc\\/aether_redux/cloudcap_bench/",
 		"/everycomp:hc\\/aether_redux/cloudcap_chair/",
@@ -18122,6 +19014,7 @@
 		"/v_slab_compat:aether_redux\\/cloudcap_vertical_slab/",
 		"/suppsquared:aether_redux\\/item_shelf_cloudcap/",
 		"/aether_redux:cloudcap_fence/",
+		"/everycomp:ap\\/aether_redux/cloudcap_railing/",
 		"/aether_redux:cloudcap_fence_gate/",
 		"/aether_redux:cloudcap_door/",
 		"/aether_redux:cloudcap_trapdoor/",
@@ -18140,6 +19033,7 @@
 		"/aether_redux:stripped_blightwillow_wood/",
 		"/everycomp:q\\/aether_redux/stripped_blightwillow_post/",
 		"/aether_redux:blightwillow_planks/",
+		"/everycomp:ap\\/aether_redux/blightwillow_boards/",
 		"/aether_redux:blightwillow_bookshelf/",
 		"/everycomp:hc\\/aether_redux/blightwillow_bench/",
 		"/everycomp:hc\\/aether_redux/blightwillow_chair/",
@@ -18158,6 +19052,7 @@
 		"/v_slab_compat:aether_redux\\/blightwillow_vertical_slab/",
 		"/suppsquared:aether_redux\\/item_shelf_blightwillow/",
 		"/aether_redux:blightwillow_fence/",
+		"/everycomp:ap\\/aether_redux/blightwillow_railing/",
 		"/aether_redux:blightwillow_fence_gate/",
 		"/aether_redux:blightwillow_door/",
 		"/aether_redux:blightwillow_trapdoor/",
@@ -18173,6 +19068,7 @@
 		"/aether_redux:jellyshroom_hyphae/",
 		"/everycomp:q\\/aether_redux/jellyshroom_post/",
 		"/aether_redux:jellyshroom_planks/",
+		"/everycomp:ap\\/aether_redux/jellyshroom_boards/",
 		"/aether_redux:jellyshroom_bookshelf/",
 		"/everycomp:hc\\/aether_redux/jellyshroom_bench/",
 		"/everycomp:hc\\/aether_redux/jellyshroom_chair/",
@@ -18191,6 +19087,7 @@
 		"/v_slab_compat:aether_redux\\/jellyshroom_vertical_slab/",
 		"/suppsquared:aether_redux\\/item_shelf_jellyshroom/",
 		"/aether_redux:jellyshroom_fence/",
+		"/everycomp:ap\\/aether_redux/jellyshroom_railing/",
 		"/aether_redux:jellyshroom_fence_gate/",
 		"/aether_redux:jellyshroom_door/",
 		"/aether_redux:jellyshroom_trapdoor/",
@@ -18204,6 +19101,7 @@
 		"/aether_redux:jellyshroom_boat/",
 		"/cataclysm:chorus_stem/",
 		"/cataclysm:chorus_planks/",
+		"/everycomp:ap\\/cataclysm/chorus_boards/",
 		"/everycomp:q\\/cataclysm/chorus_bookshelf/",
 		"/everycomp:hc\\/cataclysm/chorus_bench/",
 		"/everycomp:hc\\/cataclysm/chorus_chair/",
@@ -18222,12 +19120,14 @@
 		"/v_slab_compat:cataclysm\\/chorus_vertical_slab/",
 		"/suppsquared:cataclysm\\/item_shelf_chorus/",
 		"/cataclysm:chorus_fence/",
+		"/everycomp:ap\\/cataclysm/chorus_railing/",
 		"/cataclysm:chorus_trapdoor/",
 		"/everycomp:q\\/cataclysm/chorus_ladder/",
 		"/everycomp:hnhome\\/cataclysm/chorus_lattice/",
 		"/supplementaries:cataclysm\\/sign_post_chorus/",
 		"/unusualend:chorus_nest_planks/",
 		"/unusualend:chorus_nest_mosaic/",
+		"/everycomp:ap\\/unusualend/chorus_nest_boards/",
 		"/everycomp:q\\/unusualend/chorus_nest_bookshelf/",
 		"/everycomp:hc\\/unusualend/chorus_nest_bench/",
 		"/everycomp:hc\\/unusualend/chorus_nest_chair/",
@@ -18247,6 +19147,7 @@
 		"/unusualend:chorus_nest_mosaic_slab/",
 		"/v_slab_compat:unusualend\\/chorus_nest_vertical_slab/",
 		"/suppsquared:unusualend\\/item_shelf_chorus_nest/",
+		"/everycomp:ap\\/unusualend/chorus_nest_railing/",
 		"/unusualend:chorus_nest_fence_gate/",
 		"/unusualend:chorus_nest_planks_door/",
 		"/unusualend:chorus_nest_trapdoor/",
@@ -18264,6 +19165,7 @@
 		"/phantasm:stripped_pream_wood/",
 		"/everycomp:q\\/phantasm/stripped_pream_post/",
 		"/phantasm:pream_planks/",
+		"/everycomp:ap\\/phantasm/pream_boards/",
 		"/everycomp:q\\/phantasm/pream_bookshelf/",
 		"/everycomp:hc\\/phantasm/pream_bench/",
 		"/everycomp:hc\\/phantasm/pream_chair/",
@@ -18282,6 +19184,7 @@
 		"/v_slab_compat:phantasm\\/pream_vertical_slab/",
 		"/suppsquared:phantasm\\/item_shelf_pream/",
 		"/phantasm:pream_fence/",
+		"/everycomp:ap\\/phantasm/pream_railing/",
 		"/phantasm:pream_fence_gate/",
 		"/phantasm:pream_door/",
 		"/phantasm:pream_trapdoor/",
@@ -18299,6 +19202,7 @@
 		"/witherstormmod:stripped_tainted_wood/",
 		"/everycomp:q\\/witherstormmod/stripped_tainted_post/",
 		"/witherstormmod:tainted_planks/",
+		"/everycomp:ap\\/witherstormmod/tainted_boards/",
 		"/everycomp:q\\/witherstormmod/tainted_bookshelf/",
 		"/everycomp:hc\\/witherstormmod/tainted_bench/",
 		"/everycomp:hc\\/witherstormmod/tainted_chair/",
@@ -18317,6 +19221,7 @@
 		"/v_slab_compat:witherstormmod\\/tainted_vertical_slab/",
 		"/suppsquared:witherstormmod\\/item_shelf_tainted/",
 		"/witherstormmod:tainted_fence/",
+		"/everycomp:ap\\/witherstormmod/tainted_railing/",
 		"/witherstormmod:tainted_fence_gate/",
 		"/witherstormmod:tainted_door/",
 		"/witherstormmod:tainted_trapdoor/",
@@ -18326,6 +19231,44 @@
 		"/witherstormmod:tainted_button/",
 		"/witherstormmod:tainted_sign/",
 		"/supplementaries:witherstormmod\\/sign_post_tainted/",
+		"/ancient_aether:highsproot_log/",
+		"/ancient_aether:highsproot_wood/",
+		"/everycomp:q\\/ancient_aether/highsproot_post/",
+		"/ancient_aether:stripped_highsproot_log/",
+		"/ancient_aether:stripped_highsproot_wood/",
+		"/everycomp:q\\/ancient_aether/stripped_highsproot_post/",
+		"/ancient_aether:highsproot_planks/",
+		"/everycomp:ap\\/ancient_aether/highsproot_boards/",
+		"/ancient_aether:highsproot_bookshelf/",
+		"/everycomp:hc\\/ancient_aether/highsproot_bench/",
+		"/everycomp:hc\\/ancient_aether/highsproot_chair/",
+		"/everycomp:hc\\/ancient_aether/highsproot_couch/",
+		"/everycomp:hc\\/ancient_aether/highsproot_dining_bench/",
+		"/everycomp:hc\\/ancient_aether/highsproot_side_table/",
+		"/everycomp:hc\\/ancient_aether/highsproot_desk/",
+		"/everycomp:hc\\/ancient_aether/highsproot_nightstand/",
+		"/everycomp:hc\\/ancient_aether/highsproot_table/",
+		"/everycomp:hc\\/ancient_aether/highsproot_counter/",
+		"/everycomp:fd\\/ancient_aether/highsproot_cabinet/",
+		"/everycomp:q\\/ancient_aether/highsproot_chest/",
+		"/everycomp:hc\\/ancient_aether/highsproot_fancy_bed/",
+		"/ancient_aether:highsproot_stairs/",
+		"/ancient_aether:highsproot_slab/",
+		"/v_slab_compat:ancient_aether\\/highsproot_vertical_slab/",
+		"/suppsquared:ancient_aether\\/item_shelf_highsproot/",
+		"/ancient_aether:highsproot_fence/",
+		"/everycomp:ap\\/ancient_aether/highsproot_railing/",
+		"/ancient_aether:highsproot_fence_gate/",
+		"/ancient_aether:highsproot_door/",
+		"/ancient_aether:highsproot_trapdoor/",
+		"/everycomp:q\\/ancient_aether/highsproot_ladder/",
+		"/everycomp:hnhome\\/ancient_aether/highsproot_lattice/",
+		"/ancient_aether:highsproot_pressure_plate/",
+		"/ancient_aether:highsproot_button/",
+		"/ancient_aether:highsproot_sign/",
+		"/supplementaries:ancient_aether\\/sign_post_highsproot/",
+		"/ancient_aether:highsproot_hanging_sign/",
+		"/ancient_aether:highsproot_boat/",
 		"/twilightforest:mangrove_log/",
 		"/twilightforest:mangrove_wood/",
 		"/quark:mangrove_post/",
@@ -18373,6 +19316,7 @@
 		"/twilightforest:stripped_mining_wood/",
 		"/everycomp:q\\/twilightforest/stripped_mining_post/",
 		"/twilightforest:mining_planks/",
+		"/everycomp:ap\\/twilightforest/mining_boards/",
 		"/everycomp:q\\/twilightforest/mining_bookshelf/",
 		"/everycomp:hc\\/twilightforest/mining_bench/",
 		"/everycomp:hc\\/twilightforest/mining_chair/",
@@ -18391,6 +19335,7 @@
 		"/v_slab_compat:twilightforest\\/mining_vertical_slab/",
 		"/suppsquared:twilightforest\\/item_shelf_mining/",
 		"/twilightforest:mining_fence/",
+		"/everycomp:ap\\/twilightforest/mining_railing/",
 		"/twilightforest:mining_fence_gate/",
 		"/twilightforest:mining_door/",
 		"/twilightforest:mining_trapdoor/",
@@ -18409,6 +19354,7 @@
 		"/twilightforest:stripped_canopy_wood/",
 		"/everycomp:q\\/twilightforest/stripped_canopy_post/",
 		"/twilightforest:canopy_planks/",
+		"/everycomp:ap\\/twilightforest/canopy_boards/",
 		"/twilightforest:canopy_bookshelf/",
 		"/everycomp:hc\\/twilightforest/canopy_bench/",
 		"/everycomp:hc\\/twilightforest/canopy_chair/",
@@ -18427,6 +19373,7 @@
 		"/v_slab_compat:twilightforest\\/canopy_vertical_slab/",
 		"/suppsquared:twilightforest\\/item_shelf_canopy/",
 		"/twilightforest:canopy_fence/",
+		"/everycomp:ap\\/twilightforest/canopy_railing/",
 		"/twilightforest:canopy_fence_gate/",
 		"/twilightforest:canopy_door/",
 		"/twilightforest:canopy_trapdoor/",
@@ -18445,6 +19392,7 @@
 		"/twilightforest:stripped_twilight_oak_wood/",
 		"/everycomp:q\\/twilightforest/stripped_twilight_oak_post/",
 		"/twilightforest:twilight_oak_planks/",
+		"/everycomp:ap\\/twilightforest/twilight_oak_boards/",
 		"/everycomp:q\\/twilightforest/twilight_oak_bookshelf/",
 		"/everycomp:hc\\/twilightforest/twilight_oak_bench/",
 		"/everycomp:hc\\/twilightforest/twilight_oak_chair/",
@@ -18463,6 +19411,7 @@
 		"/v_slab_compat:twilightforest\\/twilight_oak_vertical_slab/",
 		"/suppsquared:twilightforest\\/item_shelf_twilight_oak/",
 		"/twilightforest:twilight_oak_fence/",
+		"/everycomp:ap\\/twilightforest/twilight_oak_railing/",
 		"/twilightforest:twilight_oak_fence_gate/",
 		"/twilightforest:twilight_oak_door/",
 		"/twilightforest:twilight_oak_trapdoor/",
@@ -18481,6 +19430,7 @@
 		"/twilightforest:stripped_dark_wood/",
 		"/everycomp:q\\/twilightforest/stripped_dark_post/",
 		"/twilightforest:dark_planks/",
+		"/everycomp:ap\\/twilightforest/dark_boards/",
 		"/everycomp:q\\/twilightforest/dark_bookshelf/",
 		"/everycomp:hc\\/twilightforest/dark_bench/",
 		"/everycomp:hc\\/twilightforest/dark_chair/",
@@ -18499,6 +19449,7 @@
 		"/v_slab_compat:twilightforest\\/dark_vertical_slab/",
 		"/suppsquared:twilightforest\\/item_shelf_dark/",
 		"/twilightforest:dark_fence/",
+		"/everycomp:ap\\/twilightforest/dark_railing/",
 		"/twilightforest:dark_fence_gate/",
 		"/twilightforest:dark_door/",
 		"/twilightforest:dark_trapdoor/",
@@ -18517,6 +19468,7 @@
 		"/twilightforest:stripped_transformation_wood/",
 		"/everycomp:q\\/twilightforest/stripped_transformation_post/",
 		"/twilightforest:transformation_planks/",
+		"/everycomp:ap\\/twilightforest/transformation_boards/",
 		"/everycomp:q\\/twilightforest/transformation_bookshelf/",
 		"/everycomp:hc\\/twilightforest/transformation_bench/",
 		"/everycomp:hc\\/twilightforest/transformation_chair/",
@@ -18535,6 +19487,7 @@
 		"/v_slab_compat:twilightforest\\/transformation_vertical_slab/",
 		"/suppsquared:twilightforest\\/item_shelf_transformation/",
 		"/twilightforest:transformation_fence/",
+		"/everycomp:ap\\/twilightforest/transformation_railing/",
 		"/twilightforest:transformation_fence_gate/",
 		"/twilightforest:transformation_door/",
 		"/twilightforest:transformation_trapdoor/",
@@ -18546,6 +19499,44 @@
 		"/supplementaries:twilightforest\\/sign_post_transformation/",
 		"/twilightforest:transformation_hanging_sign/",
 		"/twilightforest:transformation_boat/",
+		"/ancient_aether:sakura_log/",
+		"/ancient_aether:sakura_wood/",
+		"/everycomp:q\\/ancient_aether/sakura_post/",
+		"/ancient_aether:stripped_sakura_log/",
+		"/ancient_aether:stripped_sakura_wood/",
+		"/everycomp:q\\/ancient_aether/stripped_sakura_post/",
+		"/ancient_aether:sakura_planks/",
+		"/everycomp:ap\\/ancient_aether/sakura_boards/",
+		"/ancient_aether:sakura_bookshelf/",
+		"/everycomp:hc\\/ancient_aether/sakura_bench/",
+		"/everycomp:hc\\/ancient_aether/sakura_chair/",
+		"/everycomp:hc\\/ancient_aether/sakura_couch/",
+		"/everycomp:hc\\/ancient_aether/sakura_dining_bench/",
+		"/everycomp:hc\\/ancient_aether/sakura_side_table/",
+		"/everycomp:hc\\/ancient_aether/sakura_desk/",
+		"/everycomp:hc\\/ancient_aether/sakura_nightstand/",
+		"/everycomp:hc\\/ancient_aether/sakura_table/",
+		"/everycomp:hc\\/ancient_aether/sakura_counter/",
+		"/everycomp:fd\\/ancient_aether/sakura_cabinet/",
+		"/everycomp:q\\/ancient_aether/sakura_chest/",
+		"/everycomp:hc\\/ancient_aether/sakura_fancy_bed/",
+		"/ancient_aether:sakura_stairs/",
+		"/ancient_aether:sakura_slab/",
+		"/v_slab_compat:ancient_aether\\/sakura_vertical_slab/",
+		"/suppsquared:ancient_aether\\/item_shelf_sakura/",
+		"/ancient_aether:sakura_fence/",
+		"/everycomp:ap\\/ancient_aether/sakura_railing/",
+		"/ancient_aether:sakura_fence_gate/",
+		"/ancient_aether:sakura_door/",
+		"/ancient_aether:sakura_trapdoor/",
+		"/everycomp:q\\/ancient_aether/sakura_ladder/",
+		"/everycomp:hnhome\\/ancient_aether/sakura_lattice/",
+		"/ancient_aether:sakura_pressure_plate/",
+		"/ancient_aether:sakura_button/",
+		"/ancient_aether:sakura_sign/",
+		"/supplementaries:ancient_aether\\/sign_post_sakura/",
+		"/ancient_aether:sakura_hanging_sign/",
+		"/ancient_aether:sakura_boat/",
 		"/twilightforest:time_log/",
 		"/twilightforest:time_wood/",
 		"/everycomp:q\\/twilightforest/time_post/",
@@ -18553,6 +19544,7 @@
 		"/twilightforest:stripped_time_wood/",
 		"/everycomp:q\\/twilightforest/stripped_time_post/",
 		"/twilightforest:time_planks/",
+		"/everycomp:ap\\/twilightforest/time_boards/",
 		"/everycomp:q\\/twilightforest/time_bookshelf/",
 		"/everycomp:hc\\/twilightforest/time_bench/",
 		"/everycomp:hc\\/twilightforest/time_chair/",
@@ -18571,6 +19563,7 @@
 		"/v_slab_compat:twilightforest\\/time_vertical_slab/",
 		"/suppsquared:twilightforest\\/item_shelf_time/",
 		"/twilightforest:time_fence/",
+		"/everycomp:ap\\/twilightforest/time_railing/",
 		"/twilightforest:time_fence_gate/",
 		"/twilightforest:time_door/",
 		"/twilightforest:time_trapdoor/",
@@ -18630,6 +19623,7 @@
 		"/v_slab_compat:botania\\/metamorphic_mountain_stone_vertical_slab/",
 		"/v_slab_compat:create\\/polished_cut_deepslate_vertical_slab/",
 		"/v_slab_compat:upgrade_aquatic\\/finger_coralstone_vertical_slab/",
+		"/v_slab_compat:ancient_aether\\/valkyrie_tile_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/white_terracotta_brick_vertical_slab/",
 		"/v_slab_compat:botania\\/dreamwood_planks_vertical_slab/",
 		"/v_slab_compat:botania\\/elf_quartz_vertical_slab/",
@@ -18682,6 +19676,7 @@
 		"/v_slab_compat:unusualend\\/polished_warped_stone_vertical_slab/",
 		"/v_slab_compat:galosphere\\/pastel_pink_salt_vertical_slab/",
 		"/v_slab_compat:create\\/cut_scoria_vertical_slab/",
+		"/v_slab_compat:ancient_aether\\/valkyrie_brick_vertical_slab/",
 		"/v_slab_compat:aether\\/mossy_holystone_vertical_slab/",
 		"/v_slab_compat:botania\\/metamorphic_fungal_cobblestone_vertical_slab/",
 		"/v_slab_compat:create\\/cut_deepslate_brick_vertical_slab/",
@@ -18781,6 +19776,7 @@
 		"/v_slab_compat:the_bumblezone\\/ancient_wax_diamond_vertical_slab/",
 		"/v_slab_compat:create\\/small_deepslate_brick_vertical_slab/",
 		"/v_slab_compat:galosphere\\/polished_pink_salt_vertical_slab/",
+		"/v_slab_compat:ancient_aether\\/carved_tile_vertical_slab/",
 		"/v_slab_compat:alexscaves\\/smooth_coprolith_vertical_slab/",
 		"/v_slab_compat:naturalist\\/smooth_shellstone_vertical_slab/",
 		"/v_slab_compat:galosphere\\/smooth_lumiere_vertical_slab/",

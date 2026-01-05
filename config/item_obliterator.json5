@@ -70,6 +70,9 @@
 		"twilightforest:mayapple",
 		"twilightforest:wispy_cloud",
 		"twilightforest:fluffy_cloud",
+		"twilightforest:charm_of_keeping_1",
+		"twilightforest:charm_of_keeping_2",
+		"twilightforest:charm_of_keeping_3",
 
 		"twilightforest:mangrove_log",
 		"twilightforest:stripped_mangrove_log",
@@ -1281,6 +1284,14 @@
 		"architects_palette:waxed_weathered_copper_nub",
 		"architects_palette:waxed_oxidized_copper_nub",
 
+		"rehooked:wood_hook",
+		"rehooked:iron_hook",
+		"rehooked:blaze_hook",
+		"rehooked:diamond_hook",
+		"rehooked:red_hook",
+		"rehooked:ender_hook",
+		
+		"majruszsdifficulty:wither_sword",
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
 	

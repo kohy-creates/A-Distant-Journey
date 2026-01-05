@@ -1,0 +1,20 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "create_ultimate_factory:dead_corals"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "chance": 0.25,
+      "count": 3,
+      "item": "minecraft:bone_meal"
+    }
+  ],
+  "processingTime": 250
+}

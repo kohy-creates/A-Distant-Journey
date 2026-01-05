@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:soul_sand"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.125,
+      "item": "minecraft:glowstone_dust"
+    }
+  ],
+  "processingTime": 125
+}
