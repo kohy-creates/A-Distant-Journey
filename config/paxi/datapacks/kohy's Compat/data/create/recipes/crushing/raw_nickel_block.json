@@ -18,12 +18,12 @@
   "results": [
     {
       "count": 9,
-      "item": "create:crushed_raw_nickel"
+      "item": "minecraft:raw_nickel"
     },
     {
       "chance": 0.75,
       "count": 9,
-      "item": "create:experience_nugget"
+      "item": "ars_nouveau:experience_gem"
     }
   ]
 }

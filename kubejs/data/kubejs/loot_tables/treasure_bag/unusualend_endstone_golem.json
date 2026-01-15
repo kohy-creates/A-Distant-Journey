@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "confluence:eye_of_the_golem",
+					"name": "terra_curio:eye_of_the_golem",
 					"quality": 4,
 					"functions": []
 				}

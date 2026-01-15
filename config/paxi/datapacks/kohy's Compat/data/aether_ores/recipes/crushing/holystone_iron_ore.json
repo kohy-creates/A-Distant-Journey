@@ -1,0 +1,27 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "aether_ores:holystone_iron_ore"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:raw_iron"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:raw_iron"
+    },
+    {
+      "chance": 0.75,
+      "item": "ars_nouveau:experience_gem"
+    },
+    {
+      "chance": 0.125,
+      "item": "aether:holystone"
+    }
+  ]
+}

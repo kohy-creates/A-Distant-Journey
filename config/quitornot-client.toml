@@ -4,16 +4,16 @@
 	#Allowed Values: TOAST, SCREEN, NONE
 	confirmTypeQuitGame = "SCREEN"
 	#Allowed Values: TOAST, SCREEN, NONE
-	confirmTypeQuitSinglePlayer = "TOAST"
+	confirmTypeQuitSinglePlayer = "SCREEN"
 	#Allowed Values: TOAST, SCREEN, NONE
-	confirmTypeQuitMultiplayer = "TOAST"
+	confirmTypeQuitMultiplayer = "SCREEN"
 
 [ConfirmScreen]
 	#Enable using [Enter | Esc] to [confirm | close the screen]
 	enableKey = true
 	#Only after milliseconds as many as below are the buttons on the screen active
 	#Range: 0 ~ 10000
-	buttonWaitTime = 0
+	buttonWaitTime = 200
 	#Allowed Values: CLASSIC, BEDROCK
 	confirmScreenStyle = "BEDROCK"
 

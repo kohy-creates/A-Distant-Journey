@@ -24,7 +24,7 @@
 	#Example entry: "glyph_burst"
 	invalid_combos = []
 	#Range: 0.0 ~ 2.147483647E9
-	damage = 28.0
+	damage = 38.0
 	#Range: 0.0 ~ 2.147483647E9
 	amplify = 5.0
 	#Extend time duration, in seconds

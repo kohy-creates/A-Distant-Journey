@@ -1,0 +1,10 @@
+{
+	"material": "minecraft:cracked_deepslate_bricks",
+	"additional_materials": [
+		"minecraft:deepslate_bricks",
+		"minecraft:chiseled_deepslate"
+	],
+	"tier": 1,
+	"speed_multiplier": 1.25,
+	"fuel_capacity": 64000
+}

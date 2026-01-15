@@ -8,18 +8,18 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "confluence:ranger_emblem",
+					"name": "terra_curio:ranger_emblem",
 					"weight": 1,
 					"quality": 4
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:warrior_emblem",
+					"name": "terra_curio:warrior_emblem",
 					"weight": 1,
 					"quality": 4
 				},{
 					"type": "minecraft:item",
-					"name": "confluence:sorcerer_emblem",
+					"name": "terra_curio:sorcerer_emblem",
 					"weight": 1,
 					"quality": 4
 				}

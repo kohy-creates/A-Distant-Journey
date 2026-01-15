@@ -25,8 +25,8 @@
 	invalid_combos = []
 	#Base duration in seconds
 	#Range: > 0
-	duration = 60
+	duration = 40
 	#Extend time duration, in seconds
 	#Range: > 0
-	extend_time = 60
+	extend_time = 20
 

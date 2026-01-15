@@ -25,8 +25,8 @@
 	invalid_combos = []
 	#Potion duration, in seconds
 	#Range: > 0
-	potion_time = 10
+	potion_time = 8
 	#Extend time duration, in seconds
 	#Range: > 0
-	extend_time = 5
+	extend_time = 6
 

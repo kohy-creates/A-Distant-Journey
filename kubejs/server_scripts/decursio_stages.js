@@ -275,14 +275,14 @@ ServerEvents.tags('item', resctrictions => {
 		'kubejs:hellforge',
 		/chthonic_yew/,
 		/alfthorne/,
-		/architect_palette:twisted_/,
-		/architect_palette:.*wardstone/,
-		/architect_palette:.*onyx/,
-		/architect_palette:.*warpstone/,
+		/architects_palette:twisted_/,
+		/architects_palette:.*wardstone/,
+		/architects_palette:.*onyx/,
+		/architects_palette:.*warpstone/,
 		/hadaline/,
 		/entrails/,
-		/architect_palette:.*blackstone.*/,
-		/architect_palette\/twisted/
+		/architects_palette:.*blackstone.*/,
+		/architects_palette\/twisted/
 	]);
 	resctrictions.add('adj:locked_until/exceptions/chapter_1', [
 		'create:blaze_cake',

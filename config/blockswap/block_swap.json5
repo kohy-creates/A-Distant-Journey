@@ -352,5 +352,7 @@
 		"cataclysm:stone_tile_wall": "supplementaries:stone_tile_wall",
 		"cataclysm:stone_tiles": "supplementaries:stone_tile",
 
+		"ecologics:azalea_log": "quark:azalea_log",
+		"ecologics:flowering_azalea_log": "quark:azalea_log"
 	}
 }

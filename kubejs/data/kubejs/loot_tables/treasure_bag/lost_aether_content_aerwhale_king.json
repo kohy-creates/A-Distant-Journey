@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "confluence:demon_heart",
+					"name": "terra_curio:demon_heart",
 					"quality": 4,
 					"functions": []
 				}

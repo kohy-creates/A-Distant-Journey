@@ -42,7 +42,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "confluence:eye_of_the_golem",
+					"name": "terra_curio:eye_of_the_golem",
 					"weight": 1,
 					"quality": 3
 				}

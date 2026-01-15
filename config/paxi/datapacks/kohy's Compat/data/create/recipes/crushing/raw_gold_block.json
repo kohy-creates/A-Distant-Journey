@@ -14,7 +14,7 @@
     {
       "chance": 0.75,
       "count": 18,
-      "item": "create:experience_nugget"
+      "item": "ars_nouveau:experience_gem"
     }
   ]
 }

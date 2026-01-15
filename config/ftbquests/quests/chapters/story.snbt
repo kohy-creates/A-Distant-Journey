@@ -216,7 +216,7 @@
 		}
 		{
 			height: 2.0d
-			image: "tide:block/angler_workshop_top"
+			image: "tide:block/angling_table_top"
 			rotation: 0.0d
 			width: 2.0d
 			x: 6.5d
@@ -406,8 +406,8 @@
 			image: "kubejs:block/ender_forge_casing"
 			rotation: 45.0d
 			width: 1.75d
-			x: 0.5d
-			y: 19.0d
+			x: 0.0d
+			y: 20.0d
 		}
 		{
 			dependency: "379A22A2185CFC8E"
@@ -1494,7 +1494,7 @@
 			subtitle: "Craft an Angling Table to add upgrades to your Fishing Rod"
 			tasks: [{
 				id: "440FAA7491C64FEE"
-				item: "tide:angler_workshop"
+				item: "tide:angling_table"
 				type: "item"
 			}]
 			title: "Competetive Fishing"
@@ -3011,7 +3011,7 @@
 					type: "item"
 				}
 			]
-			title: "Tier 2 Forge"
+			title: "Tier 3 Forge"
 			x: 28.5d
 			y: 21.5d
 		}
@@ -3479,7 +3479,7 @@
 			id: "26E82AD325890954"
 			shape: "diamond"
 			size: 1.5d
-			subtitle: "Construct an Ender Forge. It's tier 3, so it sure is good"
+			subtitle: "Construct an Ender Forge. It's tier 4, so it sure is good"
 			tasks: [
 				{
 					id: "344EEA1737AA9B07"
@@ -3494,8 +3494,8 @@
 				}
 			]
 			title: "The Final Forge"
-			x: 0.5d
-			y: 19.0d
+			x: 0.0d
+			y: 20.0d
 		}
 		{
 			dependencies: ["26E82AD325890954"]
@@ -3507,8 +3507,8 @@
 				type: "item"
 			}]
 			title: "A Star from Heavens"
-			x: 0.0d
-			y: 17.0d
+			x: -2.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
@@ -3631,11 +3631,14 @@
 				type: "item"
 			}]
 			title: "Cosmic Power"
-			x: -7.0d
-			y: 21.5d
+			x: -9.0d
+			y: 23.5d
 		}
 		{
-			dependencies: ["41BD18823BE31271"]
+			dependencies: [
+				"41BD18823BE31271"
+				"6E4C5779C4DA9851"
+			]
 			id: "3915141D30CD6CB0"
 			subtitle: "Create Celestium - the most magical of alloys to ever exist"
 			tasks: [{
@@ -3645,8 +3648,8 @@
 				type: "item"
 			}]
 			title: "Celestial Synth"
-			x: -9.0d
-			y: 23.5d
+			x: -7.0d
+			y: 21.5d
 		}
 		{
 			dependencies: ["06E7DBDB7C7A790A"]

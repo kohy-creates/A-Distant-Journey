@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = receiving_level_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1767370215901
+  last_edited_time = 1768183105213
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:83a6aad7-4897-4634-b520-533e73a19ae3-1767370214024] = [groups:][instances:]
+  [loading_requirement_container_meta:233c82ac-a20d-4923-8d35-92dac64f3623-1768183102451] = [groups:][instances:]
 }
 
 customization {
@@ -145,6 +145,53 @@ element {
   advanced_horizontal_tilt_mode = false
 }
 
+element {
+  source = [source:local]/config/fancymenu/assets/loading/loading.fma
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
+  restart_animated_on_menu_load = false
+  element_type = image
+  instance_identifier = 2ba1032d-57df-4582-b48c-4128b2d36479-1768182903623
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1200
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -54
+  y = -67
+  width = 100
+  height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 9f753e0e-acc1-4cc1-b840-88823c3cdbb1-1768182495623
+  [loading_requirement_container_meta:9f753e0e-acc1-4cc1-b840-88823c3cdbb1-1768182495623] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
+}
+
 vanilla_button {
   button_element_executable_block_identifier = 98ab6825-0068-4743-8dce-a423617adb6f-1741120682280
   [executable_block:98ab6825-0068-4743-8dce-a423617adb6f-1741120682280][type:generic] = [executables:]
@@ -182,7 +229,7 @@ vanilla_button {
   sticky_anchor = false
   anchor_point = mid-centered
   x = -100
-  y = -10
+  y = 44
   width = 200
   height = 9
   stretch_x = false

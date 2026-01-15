@@ -1,0 +1,27 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "aether_ores:holystone_lapis_ore"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "count": 12,
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "chance": 0.75,
+      "item": "ars_nouveau:experience_gem"
+    },
+    {
+      "chance": 0.125,
+      "item": "aether:holystone"
+    }
+  ]
+}

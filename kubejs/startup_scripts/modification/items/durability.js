@@ -152,19 +152,19 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		'bow',
-		'crossbow',
-		'additionaladditions:crossbow_with_spyglass',
 	], 250)
 
 	maxDurability([
 		toolset('mythicmetals:copper'),
 		toolset('aether:holystone'),
+		'crossbow',
+		'additionaladditions:crossbow_with_spyglass',
 	], 300)
 
 	maxDurability([
 		'mcdw:bow_weeping_vine_bow',
 		'mcdw:bow_twisting_vine_bow'
-	], 400)
+	], 430)
 
 	maxDurability([
 		toolset('minecraft:iron'),
@@ -172,7 +172,8 @@ ItemEvents.modification(event => {
 		toolset('aether:zanite'),
 		'mcdw:sickle_sickle',
 		'mcdw:crossbow_butterfly_crossbow',
-		'mcdw:crossbow_exploding_crossbow'
+		'mcdw:crossbow_exploding_crossbow',
+		'farmersdelight:skillet'
 	], 700)
 
 	maxDurability([

@@ -788,6 +788,12 @@
 			valkyrie_brick = true
 			valkyrie_tile = true
 
+		[types.cut_block_type.ascended_quark]
+			polished_icestone = true
+			icestone_bricks = true
+			quicksoil_bricks = true
+			aether_dirt_bricks = true
+
 #Disables specific entries
 [entries]
 

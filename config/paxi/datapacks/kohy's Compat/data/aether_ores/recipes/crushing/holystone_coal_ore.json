@@ -1,0 +1,33 @@
+{
+  "type": "create:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "aether_ores:holystone_coal_ore"
+    }
+  ],
+  "processingTime": 300,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:coal"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:coal"
+    },
+    {
+      "chance": 0.75,
+      "item": "ars_nouveau:experience_gem"
+    },
+    {
+      "chance": 0.125,
+      "item": "aether:holystone"
+    }
+  ]
+}

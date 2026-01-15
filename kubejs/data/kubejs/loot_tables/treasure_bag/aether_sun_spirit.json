@@ -17,7 +17,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "confluence:sun_stone",
+					"name": "terra_curio:sun_stone",
 					"quality": 3,
 					"conditions": [
 						{

@@ -12,7 +12,7 @@
     },
     {
       "chance": 0.75,
-      "item": "create:experience_nugget"
+      "item": "ars_nouveau:experience_gem"
     }
   ]
 }

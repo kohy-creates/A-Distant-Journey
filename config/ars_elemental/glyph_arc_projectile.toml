@@ -22,5 +22,5 @@
 	augment_cost_overrides = []
 	#Max lifespan of the projectile, in seconds.
 	#Range: > 0
-	max_lifespan = 60
+	max_lifespan = 15
 

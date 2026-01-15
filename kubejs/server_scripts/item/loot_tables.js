@@ -35,6 +35,7 @@ LootJS.modifiers((event) => {
 		'create:crushed_raw_gold': 'raw_gold',
 		'create:crushed_raw_copper': 'raw_copper',
 		'create:crushed_raw_zinc': 'create:raw_zinc',
+		'create:experience_nugget': 'ars_nouveau:experience_gem',
 	}
 	for (const [before, after] of Object.entries(replaceItemsMap)) {
 		event.addLootTableModifier(/.*/).replaceLoot(before, after, true)

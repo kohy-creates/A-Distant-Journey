@@ -3,7 +3,7 @@
 	#Production of endoflame
 	#This is mana each tick, to know how much mana/sec multiply by 20 [3]
 	#Range: > 1
-	"Endoflame Production" = 5
+	"Endoflame Production" = 9
 
 ["Hydroangeas / Thermalily Config"]
 	#Hydroangeas duration
@@ -13,7 +13,7 @@
 	#Hydroangeas production
 	#How much mana should it produce each tick [1]
 	#Range: > 1
-	"Hydroangeas Production" = 8
+	"Hydroangeas Production" = 4
 	#Thermalily production
 	#How much mana should it produce each tick [20]
 	#Range: > 1

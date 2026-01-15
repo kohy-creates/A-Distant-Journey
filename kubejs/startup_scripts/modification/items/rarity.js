@@ -1,6 +1,6 @@
 ItemEvents.modification(event => {
 
-	event.modify('@confluence', item => {
+	event.modify('@terra_curio', item => {
 		item.rarity = 'common';
 	});
 

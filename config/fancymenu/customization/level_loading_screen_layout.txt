@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = level_loading_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1766067592536
+  last_edited_time = 1768182537379
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:9cc2b850-9b4d-4963-9a4c-485897ffb176-1766067591401] = [groups:][instances:]
+  [loading_requirement_container_meta:f3adcfa2-ec37-496f-b5f0-afb5ed0ca616-1768182513905] = [groups:][instances:]
 }
 
 customization {
@@ -337,6 +337,53 @@ element {
   advanced_horizontal_tilt_mode = false
 }
 
+element {
+  source = [source:local]/config/fancymenu/assets/loading/loading.fma
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
+  restart_animated_on_menu_load = false
+  element_type = image
+  instance_identifier = 50d8f18a-47e9-4109-b1b9-7098764e8daf-1768182495623
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1200
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -54
+  y = -67
+  width = 100
+  height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 9f753e0e-acc1-4cc1-b840-88823c3cdbb1-1768182495623
+  [loading_requirement_container_meta:9f753e0e-acc1-4cc1-b840-88823c3cdbb1-1768182495623] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
+}
+
 vanilla_button {
   button_element_executable_block_identifier = d166e9ea-b9e4-42ac-b654-b5051d351439-1741113708944
   [executable_block:d166e9ea-b9e4-42ac-b654-b5051d351439-1741113708944][type:generic] = [executables:]
@@ -436,10 +483,10 @@ vanilla_button {
   auto_sizing_base_screen_height = 1200
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -50
-  y = -70
+  x = -54
+  y = -81
   width = 100
-  height = 100
+  height = 104
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -459,7 +506,7 @@ vanilla_button {
   advanced_vertical_tilt_mode = false
   horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_mode = false
-  is_hidden = false
+  is_hidden = true
   automated_button_clicks = 0
 }
 

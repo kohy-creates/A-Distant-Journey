@@ -75,3 +75,6 @@ com.bisecthosting.mods.bhmenu.modules.publicserverlist.screen.PublicServersScree
 net.minecraft.client.gui.screens.inventory.InventoryScreen {
 }
 
+com.plr.quitornot.client.screen.confirm.ConfirmScreen {
+}
+

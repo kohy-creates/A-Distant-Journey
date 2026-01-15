@@ -1,0 +1,6 @@
+{
+	"material": "adj:adamantite_forge_casing",
+	"tier": 3,
+	"speed_multiplier": 1.5,
+	"fuel_capacity": 128000
+}

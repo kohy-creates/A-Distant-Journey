@@ -5,7 +5,7 @@
 	enabled = true
 	#Cost
 	#Range: > -2147483648
-	cost = 100
+	cost = 80
 	#Is Starter Glyph?
 	starter = false
 	#The maximum number of times this glyph may appear in a single spell
@@ -25,8 +25,8 @@
 	invalid_combos = []
 	#Base amount of harvested blocks
 	#Range: > 0
-	base_harvest = 50
+	base_harvest = 70
 	#Additional max blocks per AOE
 	#Range: > 0
-	aoe_bonus = 50
+	aoe_bonus = 40
 

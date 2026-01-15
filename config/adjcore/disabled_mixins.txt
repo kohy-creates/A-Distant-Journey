@@ -3,3 +3,5 @@ net.lyof.sortilege.mixin.LifecycledResourceManagerImplMixin
 xyz.kohara.adjcore.mixins.items.LeadAttachSoundMixin
 chronosacaria.mcdw.mixin.mcdw.ShieldPlayerEntityMixin
 portb.biggerstacks.mixin.client.ItemRendererMixin
+com.bobvarioa.arsisbotania.mixin.ManaCapEventsMixin
+com.bobvarioa.arsisbotania.mixin.ManaUtilMixin

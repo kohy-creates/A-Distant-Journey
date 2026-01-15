@@ -18,7 +18,7 @@ ItemEvents.modification(event => {
 		)
 	})
 
-	event.modify('confluence:sorcerer_emblem', item => {
+	event.modify('terra_curio:sorcerer_emblem', item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
@@ -36,7 +36,7 @@ ItemEvents.modification(event => {
 		)
 	})
 
-	event.modify('confluence:avenger_emblem', item => {
+	event.modify('terra_curio:avenger_emblem', item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
@@ -60,7 +60,7 @@ ItemEvents.modification(event => {
 		)
 	})
 
-	event.modify('confluence:destroyer_emblem', item => {
+	event.modify('terra_curio:destroyer_emblem', item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
@@ -90,7 +90,7 @@ ItemEvents.modification(event => {
 		)
 	})
 
-	event.modify('confluence:celestial_stone', item => {
+	event.modify('terra_curio:celestial_stone', item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
@@ -138,7 +138,7 @@ ItemEvents.modification(event => {
 		)
 	})
 
-	event.modify('confluence:putrid_scent', item => {
+	event.modify('terra_curio:putrid_scent', item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(

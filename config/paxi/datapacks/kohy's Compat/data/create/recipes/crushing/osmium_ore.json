@@ -17,15 +17,15 @@
   "processingTime": 400,
   "results": [
     {
-      "item": "create:crushed_raw_osmium"
+      "item": "minecraft:raw_osmium"
     },
     {
       "chance": 0.75,
-      "item": "create:crushed_raw_osmium"
+      "item": "minecraft:raw_osmium"
     },
     {
       "chance": 0.75,
-      "item": "create:experience_nugget"
+      "item": "ars_nouveau:experience_gem"
     }
   ]
 }

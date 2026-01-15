@@ -24,10 +24,10 @@
 	#Example entry: "glyph_burst"
 	invalid_combos = []
 	#Range: 0.0 ~ 2.147483647E9
-	damage = 23.0
+	damage = 28.0
 	#Range: 0.0 ~ 2.147483647E9
-	amplify = 4.0
+	amplify = 6.0
 	#Damage per block in the air
 	#Range: 0.0 ~ 1.7976931348623157E308
-	airDamage = 3
+	airDamage = 6
 

@@ -90,6 +90,8 @@ ClientEvents.lang('en_us', event => {
 		'architects_palette:entrails_slab': 'Flesh Slab',
 		'architects_palette:entrails_vertical_slab': 'Flesh Vertical Slab',
 		'architects_palette:entrails_stairs': 'Flesh Stairs',
+		'sumonningrituals:altar': 'Twilight Altar',
+		'sumonningrituals:indestructible_altar': 'Twilight Altar (Unbreakable)'
 	}
 
 	/** @type {Record<Internal.InputItem_, string>} */
@@ -117,7 +119,7 @@ ClientEvents.lang('en_us', event => {
 		'artifacts:everlasting_beef': 'Eternal Beef',
 		'tiered:armorers_hammer': 'Reforging Hammer',
 		'mythicmetals:hallowed_ingot': 'Hallowed Alloy Ingot',
-		'confluence:cobalt_shield': 'Heavy Steel Shield',
+		'terra_curio:cobalt_shield': 'Heavy Steel Shield',
 
 		'functionalstorage:l': 'Drawer Upgrade (Capacity)',
 		'functionalstorage:collector_upgrade': 'Drawer Upgrade (Collector)',
@@ -126,9 +128,9 @@ ClientEvents.lang('en_us', event => {
 		'functionalstorage:void_upgrade': 'Drawer Upgrade (Void)',
 		'functionalstorage:redstone_upgrade': 'Drawer Upgrade (Redstone)',
 
-		'confluence:demon_heart': 'Aerwhale King\'s Heart',
+		'terra_curio:demon_heart': 'Aerwhale King\'s Heart',
 		'immersive_paintings:painting': 'Magic Painting',
-		'tiab:time_in_a_bottle': 'Time In a Bottle'
+		'tiab:time_in_a_bottle': 'Time In a Bottle',
 	}
 
 	const entityRenames = {

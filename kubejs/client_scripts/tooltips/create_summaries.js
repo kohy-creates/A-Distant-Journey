@@ -1,6 +1,32 @@
 // Add your items here
 const itemsToTooltip = [
 
+	{
+		item: /ars_nouveau:.*experience_gem/,
+		summary: [
+			'A speck of _inspiration_ from your',
+			'fantastic inventions.'
+		],
+		controls: [
+			{
+				control: 'used',
+				requiresHold: false,
+				text: [
+					'_Redeems Experience_ points contained within.'
+				]
+
+			},
+			{
+				control: 'used while sneaking',
+				requiresHold: false,
+				text: [
+					'Consumes the _entire stack_ instantly.'
+				]
+
+			}
+		]
+	},
+
 	// Botania
 	{
 		item: /botania:.*agricarnation.*/,
@@ -670,7 +696,7 @@ const itemsToTooltip = [
 		]
 	},
 	{
-		item: /botania:.*Manastar.*/,
+		item: /botania:.*manastar.*/,
 		summary: [
 			"_A flower for checking net Mana flow. ",
 			"The imprecise measurements of the _Wand of the Forest_ sometimes won't cut it for telling if you're turning a profit or loss in your _Mana Pools_.",
@@ -2162,51 +2188,45 @@ const itemsToTooltip = [
 	{
 		item: "ars_nouveau:agronomic_sourcelink",
 		summary: [
-			"The Agronomic Sourcelink generates source from crop and tree growth within 15 blocks.",
-			"Bonus source is generated for magical plants such as Mageblooms, Source Berry Bushes, and Archwood Saplings.",
+			"The Agronomic Sourcelink generates Mana from crop and tree growth within 15 blocks.",
+			"Bonus Mana is generated for magical plants such as Mageblooms, Source Berry Bushes, and Archwood Saplings.",
 			"Source will be output from the Sourcelink to nearby jars within 5 blocks.",
 			"Note: Bonemealing crops will not grant Source."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:alchemical_sourcelink",
 		summary: [
-			"Generates source by consuming potions from adjacent potion jars.",
-			"The amount of source varies per potion and is dependent on the complexity of the potion.",
-			"Bonus source is given for the length and level of the potion with multipliers for each effect a potion contains.",
+			"Generates Mana by consuming potions from adjacent potion jars.",
+			"The amount of Mana varies per potion and is dependent on the complexity of the potion.",
+			"Bonus Mana is given for the length and level of the potion with multipliers for each effect a potion contains.",
 			"Utilizing Wixies and Potion Melders is recommended for creating highly complex potions."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:alchemists_crown",
 		summary: [
 			"Allows the wearer to consume potions and flasks instantly from their inventory."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:amplify_arrow",
 		summary: [
 			"Adds two amplifies to the end of the inscribed spell when used.",
 			"Each recipe makes ."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:amulet_of_mana_boost",
 		summary: [
 			"Increases max mana by a moderate amount."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:amulet_of_mana_regen",
 		summary: [
 			"Increases mana regeneration by a moderate amount."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:annotated_codex",
@@ -2216,15 +2236,13 @@ const itemsToTooltip = [
 			"Recording glyphs requires EXP for each glyph known, and the EXP will be consumed upon using the item.",
 			"Using the item again will update the list of known glyphs.",
 			"Other players may use the book to learn the glyphs, consuming the codex in the process."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:bastion_pod",
 		summary: [
 			"A fruit that can be brewed into a Potion of Defence, reducing the amount of damage taken."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:belt_of_levitation",
@@ -2232,24 +2250,21 @@ const itemsToTooltip = [
 			"A belt that allows the user levitate a moderate distance above the ground.",
 			"Useful for climbing mountains! Simply sneak in the air while falling (or jumping) to rise.",
 			"Reduces a small amount of fall damage while worn."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:belt_of_unstable_gifts",
 		summary: [
 			"Occasionally grants a random positive potion effect for a short duration.",
 			"These effects can vary in strength."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:bombegrante_pod",
 		summary: [
 			"A fruit that packs an explosive punch.",
 			"Can be brewed into a Potion of Blasting, causing the target to explode when the duration ends."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:brazier_relay",
@@ -2257,29 +2272,26 @@ const itemsToTooltip = [
 			"Allows the users to bind a Ritual Brazier ritual to a new location.",
 			"Multiple rituals can be connected to the same brazier relay.",
 			"To connect, use the Dominion Wand on your Ritual Brazier, then the relay.",
-			"Source is consumed at the original braziers location.",
+			"Mana is consumed at the original braziers location.",
 			"Can be bound within 15 blocks."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:dominion_wand",
 		summary: [
-			"A tool for configuring Source Relays and automation entities.",
-			"To set a transfer path, use the wand on the object that you would like to take source from, and then use it on the block you would like to send source to.",
-			"For example: Source Jar to Source Relay, Source Relay to Source Relay, or Source Relay to Source Jar.",
+			"A tool for configuring Mana Relays and automation entities.",
+			"To set a transfer path, use the wand on the object that you would like to take Mana from, and then use it on the block you would like to send Mana to.",
+			"For example: Mana Jar to Mana Relay, Mana Relay to Mana Relay, or Mana Relay to Mana Jar.",
 			"To clear connections, sneak and use this wand on a relay.",
 			"You can switch into Strict mode using the radial menu, allowing to specify the side of the blocks to use."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:dowsing_rod",
 		summary: [
 			"A Dowsing Rod provides the user a short duration of Scrying for Budding Amethyst and Magic Find, which will cause magical creatures to glow within 75 blocks of you.",
 			"The Dowsing Rod has a limited number of uses."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:enchanters_eye",
@@ -2288,8 +2300,7 @@ const itemsToTooltip = [
 			"Use the eye on a Scry Crystal to bind the location, or hold a bound Scry Parchment in the offhand.",
 			"Spells will be cast through the eye similar to a Spell Turret, but you are considered the caster for all effects.",
 			"Useful for remote teleportation or item movement."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:enchanters_mirror",
@@ -2297,16 +2308,14 @@ const itemsToTooltip = [
 			"Applies a self spell to the user.",
 			"Spells cast with this mirror are discounted and gain additional bonus duration to all glyphs.",
 			"Apply a spell at the Scribe's table that DOES NOT contain a form such as Heal -> Amplify."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:enchanters_shield",
 		summary: [
 			"Upon blocking damage, the user will gain a short duration of Mana Regeneration and Spell Damage.",
 			"Additionally, this shield will repair over time using the wearers mana."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:enchanters_sword",
@@ -2314,64 +2323,56 @@ const itemsToTooltip = [
 			"Applies a Touch spell before damaging an entity.",
 			"Additionally, all spells gain Spell Damage.",
 			"Apply a spell at the Scribes Table that does NOT contain a form, such as Ignite -> Extend Time."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:frostaya_pod",
 		summary: [
 			"A fruit that can be brewed into a Potion of Freezing, freezing the target over time."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:jar_of_light",
 		summary: [
 			"Summons a light that will follow the user as they move.",
 			"Can be summoned and dismissed at any time."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:jump_ring",
 		summary: [
 			"Allows the user to continue jumping in the air.",
 			"Each jump will expend mana."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:magebloom_crop",
 		summary: [
-			"A magically infused flower, Mageblooms provide additional source to nearby Agronomic Sourcelinks as they grow and provide a source of Magebloom Fiber.",
+			"A magically infused flower. They grow and provide a source of Mana Fiber.",
 			"Mageblooms can also be used in crafting Potions of Spell Damage, increasing the damage of your spells."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:mendosteen_pod",
 		summary: [
 			"A fruit that can be brewed into a Potion of Recovery, increases the amount of healing received from all sources."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:mycelial_sourcelink",
 		summary: [
-			"Generates a moderate amount of source from nearby food, generating more for more nourishing food.",
+			"Generates a moderate amount of Mana from nearby food, generating more for more nourishing food.",
 			"Source Berry food is worth far more than other mundane foods.",
 			"Additionally, the Mycelial Sourcelink will convert Grass or Dirt in the 3x3 below it into Mycelium and will grow mushrooms around it given that the space is empty.",
 			"The Sourcelink will also pull items from nearby pedestals."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:pierce_arrow",
 		summary: [
 			"Adds two pierce to the beginning of the chain.",
 			"Each recipe makes _32_."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:potion_diffuser",
@@ -2379,8 +2380,7 @@ const itemsToTooltip = [
 			"Consumes a potion and applies it to nearby entities, greatly extending the use of the potion.",
 			"To use, bind a Potion Jar to the diffuser using the Dominion Wand.",
 			"Every 10 minutes the diffuser will consume a single potion and apply it every few seconds."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:potion_jar",
@@ -2391,8 +2391,7 @@ const itemsToTooltip = [
 			"The jar may be locked by using a Dominion Wand while sneaking.",
 			"Locked Jars will only receive the potion it is locked to from Wixies.",
 			"Can be used with a Comparator."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:potion_melder",
@@ -2401,46 +2400,8 @@ const itemsToTooltip = [
 			"Use the Dominion Wand from a Potion Jar to Melder to link a jar for consumption.",
 			"Link two input potion jars to the melder.",
 			"Then, use the wand on the Melder and then to a third jar to set the output.",
-			"The Potion Melder requires source per mix."
-		],
-		"controls": []
-	},
-	{
-		item: "ars_nouveau:reactive",
-		summary: [
-			"Reactive is an enchantment that can be applied to ANY item and can be applied and upgraded by the Enchanting Apparatus.",
-			"Tools and armor with the Reactive enchantment have a chance to automatically cast a spell on use or when the player is hurt.",
-			"The spell that the enchantment will cast is dependent on the spell inscribed in the first crafting phase, and the user must have enough mana to cast the spell."
-		],
-		"controls": []
-	},
-	{
-		item: "ars_nouveau:reactive2",
-		summary: [
-			"To enchant an item with Reactive, place any item or armor in the apparatus.",
-			"The spell parchment placed on the pedestal must be inscribed with a valid spell.",
-			"See the Scribes Table for additional information.",
-			"Reactive Enchantment also requires jars of source near the Enchanting Apparatus.",
-			"The first level enchantment requires approximately one third of a jar."
-		],
-		"controls": []
-	},
-	{
-		item: "ars_nouveau:reactive3",
-		summary: [
-			"To upgrade the enchantment, replace the reagent with any item that has an existing Reactive enchantment.",
-			"The Tier 2 reactive enchantment requires an item with Reactive I, and the Tier 3 Reactive enchantment requires an item with Reactive II.",
-			"Higher levels will require a significantly higher amount of source nearby."
-		],
-		"controls": []
-	},
-	{
-		item: "ars_nouveau:reactive4",
-		summary: [
-			"The spell that Reactive gear casts can be changed by placing an enchanted piece of gear into the apparatus with a new inscribed spell parchment.",
-			""
-		],
-		"controls": []
+			"The Potion Melder requires Mana per mix."
+		]
 	},
 	{
 		item: "ars_nouveau:redstone_relay",
@@ -2448,77 +2409,70 @@ const itemsToTooltip = [
 			"Can be connected to other Redstone Relays to wirelessly send a redstone signal.",
 			"Takes input from one side and outputs in all other directions.",
 			"Can be connected within 30 blocks of another relay, and multiple relays can be connected."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:relay",
 		summary: [
-			"Enables the transport of source between Source Jars and other Source Relays.",
-			"To pull source from jars, use the Dominion Wand on the jar, and then on the relay.",
-			"To send between relays or from a relay to a jar, use the wand on the relay and then the target you wish to send source to.",
+			"Enables the transport of Mana between Mana Jars and other Mana Relays.",
+			"To pull Mana from jars, use the Dominion Wand on the jar, and then on the relay.",
+			"To send between relays or from a relay to a jar, use the wand on the relay and then the target you wish to send Mana to.",
 			"Relays may only reach up to 30 blocks away.",
 			"To clear connections, sneak while using the Dominion Wand on the relay."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:relay_collector",
 		summary: [
-			"Operates similar to the Source Relay, but will automatically take from jars it is not linked to within 5 blocks.",
-			"See the instructions on the Source Relay for use."
-		],
-		"controls": []
+			"Operates similar to the Mana Relay, but will automatically take from jars it is not linked to within 5 blocks.",
+			"See the instructions on the Mana Relay for use."
+		]
 	},
 	{
 		item: "ars_nouveau:relay_deposit",
 		summary: [
-			"Operates similar to the Source Relay, but will deposit to jars it is not linked to within 5 blocks.",
-			"See the instructions on the Source Relay for use."
-		],
-		"controls": []
+			"Operates similar to the Mana Relay, but will deposit to jars it is not linked to within 5 blocks.",
+			"See the instructions on the Mana Relay for use."
+		]
 	},
 	{
 		item: "ars_nouveau:relay_splitter",
 		summary: [
-			"Operates similar to the Source Relay, but will support taking from and transferring to multiple jars at once.",
-			"The splitter has a much larger through-put than the Source Relay, and will split this throughput amongst all of its jars.",
-			"See the instructions on the Source Relay for use."
-		],
-		"controls": []
+			"Operates similar to the Mana Relay, but will support taking from and transferring to multiple jars at once.",
+			"The splitter has a much larger through-put than the Mana Relay, and will split this throughput amongst all of its jars.",
+			"See the instructions on the Mana Relay for use."
+		]
 	},
 	{
 		item: "ars_nouveau:relay_warp",
 		summary: [
-			"Operates similar to the Source Relay: Splitter but can teleport source an endless distance between other Warp relays.",
-			"For distances beyond 30 blocks, there is a chance that some source will be lost during warp."
-		],
-		"controls": []
+			"Operates similar to the Mana Relay: Splitter but can teleport Mana an endless distance between other Warp relays.",
+			"For distances beyond 30 blocks, there is a chance that some Mana will be lost during warp."
+		]
 	},
 	{
 		item: "ars_nouveau:ring_of_greater_discount",
 		summary: [
 			"Provides a slightly larger discount over the Lesser Ring of Discount."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:ring_of_lesser_discount",
 		summary: [
 			"In addition to providing a small bonus to maximum mana and mana regen, Rings of Discount reduce the total cost to cast a spell."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:ritual_brazier",
 		summary: [
-			"A brazier that may be used as decoration or for performing rituals.",
+			"A brazier that may be used as _decoration_ or for _performing rituals_.",
+			"To activate your ritual, _interact with the brazier with an empty hand._",
+			"Once activated,_ your ritual can no longer be augmented_ and has been consumed permanently.",
+			"Applying a redstone signal will _disable a running ritual_.",
+			"If a ritual requires _Mana_ to operate, the brazier will pull _Mana_ from nearby _Mana Jars_.",
+			"Information related to rituals and their requirements can be found in their respective entries.",
 			"To light the brazier for decoration, cast a Light spell on the brazier.",
-			"The color of the brazier corresponds with the color of the spell.",
-			"Applying a redstone signal will disable a running ritual.",
-			"For information on performing rituals, see the dedicated section on rituals."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:runic_chalk",
@@ -2526,11 +2480,10 @@ const itemsToTooltip = [
 			"Runic chalk can be used to place permanent Runes on the ground that will cast spells on entities that walk over them.",
 			"To give a rune a spell, inscribe spell parchment using the scribes table.",
 			"Once the rune has cast the spell, it will become uncharged.",
-			"An uncharged rune will charge itself from nearby source jars.",
+			"An uncharged rune will charge itself with Mana from nearby Mana Jars.",
 			"Using Runic Chalk on a temporary rune will convert it to a permanent one.",
 			"Using an essence on the rune will change its pattern."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:scryer_scroll",
@@ -2539,8 +2492,7 @@ const itemsToTooltip = [
 			"To create one, use a Blank Parchment on a Scry Crystal.",
 			"You can remotely access the stored position by placing this item on a pedestal near a Scryer's Oculus.",
 			"Naming this item will allow you to easily recognize it in the Scryer's Oculus interface."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:scryers_crystal",
@@ -2549,8 +2501,7 @@ const itemsToTooltip = [
 			"Right click to enter the camera, or bind the camera to a Scryer's Scroll by using Blank Parchment on the block.",
 			"A Scryer's Scroll will let you remotely access the block via a Scryer's Oculus.",
 			""
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:scryers_oculus",
@@ -2558,34 +2509,29 @@ const itemsToTooltip = [
 			"Allows you to remotely access Scry Crystals.",
 			"To use, place Scryer's Scrolls on nearby pedestals and interact with the Oculus to select which Scry Crystal you would like to access.",
 			"Scry Crystals must be chunk loaded."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:source_jar",
 		summary: [
-			"Source Jars store source gathered from nearby Sourcelinks.",
-			"Source is used in rituals and automation by powering devices like the Imbuement Chamber and Enchanting Apparatus.",
-			"Source may be moved using a Source Relay or by breaking and moving it.",
-			"Devices will use source from nearby jars.",
-			"Source Jars will provide a signal to comparators based on their level."
-		],
-		"controls": []
+			"_Mana Jars_ store Mana produced by _generating flowers_. Unlike Mana Pools, it _can't be used for direct infusions_, but _can be picked up and moved around_.",
+			"Mana Jars are used as catalysts for using Mana in e.g. _rituals_, or in devices like an _Imbuing Chamber_ or an _Enchanting Apparatus_. They will pull mana _directly from nearby Mana Jars_",
+			"Mana may be inserted and removed using either _Mana Spreaders_ or _Mana Relays_.",
+			"Mana Jars will provide a signal to comparators based on their level. In case you ever need to do that for some obscure reason."
+		]
 	},
 	{
 		item: "ars_nouveau:source_lamp",
 		summary: [
-			"Behaves like a copper bulb, but the light and comparator values can be adjusted by casting Light with dampen."
-		],
-		"controls": []
+			"Behaves like a _Copper Bulb_ from _1.21.1_, but the light and comparator values can be adjusted by casting _Light augmented with dampen_."
+		]
 	},
 	{
 		item: "ars_nouveau:spell_prism",
 		summary: [
 			"When a projectile spell hits this block, it is redirected the direction the block is facing.",
 			"Spell Prisms will send a signal to nearby Observers if a spell is redirected."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:spell_sensor",
@@ -2594,8 +2540,7 @@ const itemsToTooltip = [
 			"Output strength is determined by the length of the spell cast.",
 			"Using a Dominion Wand will cause it to trigger when a spell resolves nearby, instead of being cast.",
 			"Using a Spell Parchment will set the sensor to only output when that exact spell is detected."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:split_arrow",
@@ -2603,8 +2548,7 @@ const itemsToTooltip = [
 			"Adds two split to the beginning of the chain.",
 			"If a spell arrow will deal damage, each split arrow will as well.",
 			"Each recipe makes ."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:stable_warp_scroll",
@@ -2613,16 +2557,14 @@ const itemsToTooltip = [
 			"This scroll is not consumed on use and can teleport between dimensions.",
 			"Using a Stabilized Warp Scroll to create a Warp Portal will create a cross dimension warp portal, but consume the scroll.",
 			"This scroll may only be bound to a location a single time."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:starbuncle_shades",
 		summary: [
 			"Using these on a Starbuncle will disable their ability to pick up items off the ground or pick Sourceberries.",
 			"Wanding the starbuncle will drop the glasses."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:summon_focus",
@@ -2630,8 +2572,7 @@ const itemsToTooltip = [
 			"A special casting focus.",
 			"Grants summons from spells additional duration, strength, speed, and deals damage to enemies that kill them.",
 			"Additionally, casting spells that target you like Self and Orbit will cast a copy of the spell on your nearby summons."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:threads",
@@ -2640,16 +2581,14 @@ const itemsToTooltip = [
 			"Upgrading the armor to a new tier will unlock and add additional slots to the armor.",
 			"The Sorcerors set provides the least amount of defence while providing the most powerful slots, while the Battlemage's set provides defence but much weaker slots.",
 			"For recipes on upgrading your armor to the next tier, see the section in the Armor and Perks category."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:vitalic_sourcelink",
 		summary: [
-			"Generates a moderate amount of source from nearby mob death and animal breeding.",
+			"Generates a moderate amount of Mana from nearby mob death and animal breeding.",
 			"Additionally, the Vitalic Sourcelink will generate passive Source from nearby baby animals and will accelerate their growth."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:void_jar",
@@ -2658,15 +2597,13 @@ const itemsToTooltip = [
 			"To turn the jar on and off, use the jar while sneaking.",
 			"To add or remove an item to be destroyed by the jar, use the jar with an item in the off hand, or use an item on the Scribes Table with the jar placed on it.",
 			"The jar must be in your hotbar to function."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:void_prism",
 		summary: [
 			"Destroys any spell projectiles that pass through it."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:wand",
@@ -2675,8 +2612,7 @@ const itemsToTooltip = [
 			"A Wand always starts with Projectile -> Accelerate, and MUST be inscribed with a spell that does not have another form.",
 			"This allows you to cast spells beyond the 10 spell cap.",
 			"If you want a wand that casts Break, inscribe the wand with JUST break, and your result will be a wand with Projectile -> Acclerate -> Break."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:warp_scroll",
@@ -2684,24 +2620,21 @@ const itemsToTooltip = [
 			"A scroll that may be used a single time to teleport to a recorded location.",
 			"However, teleporting across dimensions is not possible.",
 			"Can be used to warp other entities if an inscribed scroll is held in the offhand and the holder casts Blink on an entity."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:wixie_hat",
 		summary: [
 			"Allows starbuncles to transport potions.",
 			"Once wearing a Wixie Hat, use the Dominion Wand to connect them between Potion Jars."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:alakarkinos_charm",
 		summary: [
 			"Alakarkinos can sift sand and gravel to find items found in archaeology sites.",
 			"They can be found on beaches and will give you a token if they receive a Pottery Sherd of any kind."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:allow_scroll",
@@ -2709,8 +2642,7 @@ const itemsToTooltip = [
 			"Provides a list of items to automation related entities.",
 			"To inscribe an item, place on the Scribes Table and use blocks and items on the table while sneaking.",
 			"When given to a Starbuncle, the Starbuncle will only pickup and take items on the scroll."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:alteration_table",
@@ -2721,8 +2653,7 @@ const itemsToTooltip = [
 			"To add or remove a Thread, use the thread on the tablet of the table.",
 			"Removing the armor will apply the threads to the armor.",
 			"To remove a thread, place the armor on the table and interact with the display with an empty hand."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:amethyst_golem_charm",
@@ -2735,8 +2666,7 @@ const itemsToTooltip = [
 			"Once a home has been set, the golem will begin performing tasks over time.",
 			"They will convert Amethyst Blocks into Budding Amethyst, harvest Amethyst Clusters, speed up Budding Amethyst growth, and pick up and store Amethyst Shards.",
 			"If their home is not an inventory, they will ignore items on the ground."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:applying_perks",
@@ -2744,8 +2674,7 @@ const itemsToTooltip = [
 			"Threads may be applied to armor using the Alteration Apparatus.",
 			"Each piece of armor has a unique set of Thread Slots with their own variety of levels.",
 			"Some Threads may require a Thread Slot of a minimum level, but many threads simply increase in power based on the slot they are given."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:archwood",
@@ -2754,8 +2683,7 @@ const itemsToTooltip = [
 			"Rarely, you may stumble upon an Archwood Forest, a biome full of magical creatures, naturally spawning lights, and Archwood trees.",
 			"Can be used as decoration, rituals, or for crafting wands.",
 			"Archwood Trees also have a chance to spawn magical fruits that can be consumed or brewed into potions."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:archwood_grate",
@@ -2764,8 +2692,7 @@ const itemsToTooltip = [
 			"Interacting with the grate will also act as if you are interacting with the block below it, allowing you to bucket liquids below.",
 			"Additionally, items and projectiles will pass through it.",
 			"Can be placed in any direction."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:armor",
@@ -2774,8 +2701,7 @@ const itemsToTooltip = [
 			"The Sorceror's set provides the lowest defence, but provides the most powerful set of slots for Threads.",
 			"The Arcanist's and Battlemage's sets provide increasingly more defence, but fewer and less powerful Thread Slots.",
 			"For more information on Threads, see the section on Armor and Perks."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:armor_upgrading",
@@ -2784,8 +2710,7 @@ const itemsToTooltip = [
 			"Each type of armor has a different number of slots, and those slots vary in size.",
 			"Larger slots will increase the power of threads, and some threads require a slot of a certain size or larger.",
 			"To apply threads, see the section on the Alteration Table."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: /ars_nouveau:.*spell_turret/,
@@ -2793,14 +2718,13 @@ const itemsToTooltip = [
 			"_Turrets_ can be used to cast spells when given a redstone signal, functioning like a _Dispenser_.",
 			"_Turrets_ will accept spells that use Touch and Projectile.",
 			"Spells may be set using an inscribed piece of Spell Parchment.",
-			"In order to cast spells, turrets will draw source from nearby Source Jars.",
+			"In order to cast spells, turrets will draw Mana from nearby Mana Jars.",
 			"Turrets may use Item Pickup and Place Block as long as an inventory is placed adjacent to this block.",
-			"_Enchanted Spell Turrets_ cast spells at half the source cost compared to basic spell turrets.",
+			"_Enchanted Spell Turrets_ cast spells at half the Mana cost compared to basic spell turrets.",
 			"_Timer Spell Turrets_ will automatically fire on a timer.",
 			"To prevent further changes, lock and unlock the turret using the dominion wand.",
 			"Setting the turret to _0 seconds will disable it_.",
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:bookwyrm_charm",
@@ -2808,16 +2732,14 @@ const itemsToTooltip = [
 			"Bookwyrm Charms can be used on a Storage Lectern to increase the number of accessible inventories.",
 			"Augment a Ritual of Awakening with Book and Quills in order to obtain charms.",
 			"In the event that they die or are dispelled, they will drop their charm."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:decorative",
 		summary: [
 			"Purely decorative blocks.",
 			"To see the full list, place Arcane Stone in a Stonecutter."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:deny_scroll",
@@ -2825,8 +2747,7 @@ const itemsToTooltip = [
 			"Provides a list of items to automation related entities.",
 			"To inscribe an item, place on the Scribes Table and use blocks and items on the table while sneaking.",
 			"When given to a Starbuncle, the Starbuncle will pickup and take any item that is NOT on this scroll."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:drygmy_charm",
@@ -2839,8 +2760,7 @@ const itemsToTooltip = [
 			"A Drygmy considers its home to be 10 blocks in every direction from its home.",
 			"The drygmy will use this area to produce items from any entities nearby.",
 			"To get started, place a _chest_ and jar of _Source_ next to the  Henge."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:enchanters_fishing_rod",
@@ -2848,8 +2768,7 @@ const itemsToTooltip = [
 			"Fishing Rods accept a single spell and are inscribed using the Scribes Table.",
 			"Rods always start with Touch and MUST be inscribed with a spell that does not contain a form.",
 			"Fishing Rods can be used like a normal fishing rod, but hooking an entity will allow the user to cast the spell on the hooked entity until the line is broken."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:enchanters_gauntlet",
@@ -2858,8 +2777,7 @@ const itemsToTooltip = [
 			"Gauntlets accept a single spell and are inscribed using the Scribes Table.",
 			"Gauntlets always start with Touch and MUST be inscribed with a spell that does not contain a form.",
 			"Spells cast with the gauntlet are cast with a discount."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:enchanting_apparatus",
@@ -2868,16 +2786,14 @@ const itemsToTooltip = [
 			"To use the Enchanting Apparatus, place any number of Arcane Pedestals within 3 blocks with their items.",
 			"Once you have filled the pedestals, use the middle item on the Enchanting Apparatus block.",
 			"The Enchanting Apparatus requires an Arcane Core next to its base in order to work."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:flask_cannons",
 		summary: [
 			"Flask Cannons can consume potions from bottles and flasks from the players inventory and convert the potion into a Splash or Lingering potion.",
 			"To select the potion to be thrown, use the Radial Menu to select your flask or potion and use the launcher."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:how_to_enchant",
@@ -2886,8 +2802,7 @@ const itemsToTooltip = [
 			"To begin, select a level 1 enchantment and add its items to the pedestals.",
 			"Place a jar of Source nearby, and use the item you want to enchant on the apparatus.",
 			"The apparatus may only apply enchantments that are valid to the item you have given it."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:sky_block",
@@ -2910,19 +2825,16 @@ const itemsToTooltip = [
 			"_Ghostweave_ has the same properties as Mirrorweave, but can be turned into an invisible wall by casting Invisbility on it.",
 			"Casting Dispel will reveal the block again.",
 			"_Sense Magic_ will cause the block to appear solid again."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:imbuement_chamber",
 		summary: [
-			"Imbues items with Source to create new items.",
-			"The primary way to obtain Source Gems, amethyst and lapis may be used to create Source Gems.",
-			"The Imbuement Chamber will passively accumulate source for recipes, or will draw from Source Jars 2 block away.",
-			"Some recipes require additional items placed in pedestals within 1 block of the Imbuement Chamber, such as Essences.",
-			"Items in pedestals will not be consumed."
-		],
-		"controls": []
+			"_Imbues items with Mana_. This is separate from infusing where you just toss items into a Mana Pool - _imbuing is similar, but affects the item on a deeper level_.",
+			"The Imbuement Chamber will _passively generate a tiny bit of Mana_ for recipes, so it doesn't need any input from Mana Spreaders It will also _pull extra Mana_ from nearby _Mana Jars_, accelerating the imbuing process.",
+			"Some recipes require _additional items_ placed in _Pedestals within 1 block of the Imbuement Chamber_.",
+			"Items in Pedestals _will not be consumed_ in the crafting process."
+		]
 	},
 	{
 		item: "ars_nouveau:important_resources",
@@ -2930,8 +2842,7 @@ const itemsToTooltip = [
 			"It's recommended to keep stock of certain resources as they will be used in many crafting recipes.",
 			"While exploring, look for Iron Ore, Gold Ore, Amethyst Shards (or Lapis Lazuli), Diamond, Sourceberries, and Archwood Logs.",
 			"Dowsing Rods can help with locating Budding Amethyst Blocks and magical creatures."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:introduction_to_glyphs",
@@ -2948,8 +2859,7 @@ const itemsToTooltip = [
 			"Augments have no effect on other Augments.",
 			"Glyphs fall into tiers of I, II, or III.",
 			"The Novice’s Spell Book can only cast tier I Glyphs, but higher tiers will be available each time you upgrade your Spell Book."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:introduction_to_spellcrafting",
@@ -2960,8 +2870,7 @@ const itemsToTooltip = [
 			"Once satisfied, you may name the spell and click “Create” to save it.",
 			"Spell Books may hold up to ten spells at once as shown by the bookmarks on the right side of the book.",
 			"Clicking one will swap the spell you are working on."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:item_detector",
@@ -2972,8 +2881,7 @@ const itemsToTooltip = [
 			"To link to an inventory, Dominion Wand an inventory to the display case.",
 			"Wanding while sneaking will invert if the signal outputs below or greater than the set count.",
 			"If a Filter Scroll is given to the Display Case, it will count all items that match the filter."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:learning_glyphs",
@@ -2981,8 +2889,7 @@ const itemsToTooltip = [
 			"New Glyphs may be created through the Scribe’s Table from certain items and paying EXP.",
 			"Once crafted, the Glyph can be consumed to learn it, making it available during spellcrafting.",
 			"Players can share their current Glyph knowledge with each other by crafting an Annotated Codex."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:magelight_torch",
@@ -2992,27 +2899,24 @@ const itemsToTooltip = [
 			"The color of the flame corresponds with your spell color.",
 			"The Magelight Torch on a wall can change the direction of its flames by interacting.",
 			"Use Touch or Projectile Sensitive to target the sconce."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:magical_automation",
 		summary: [
 			"Ars Nouveau supports a wide variety of automation methods via Spell Turrets, magical helpers, and Rituals.",
 			"Using one or a combination of these options can achieve almost anything you want such as farming crops and trees, quarrying the earth, crafting and transporting items, smelting, and brewing potions."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:magical_crafting",
 		summary: [
-			"The Imbuement Chamber allows the conversion of Amethyst Shards or Lapis Lazuli into Source Gems.",
-			"By placing three Arcane Pedestals bearing certain items adjacent to the chamber, Source Gems can be imbued further into Essences which are used in many Glyph recipes.",
+			"The Imbuement Chamber allows the conversion of Amethyst Shards or Lapis Lazuli into Mana Gems.",
+			"By placing three Arcane Pedestals bearing certain items adjacent to the chamber, Mana Gems can be imbued further into Essences which are used in many Glyph recipes.",
 			"Placing an Enchanting Apparatus on top of an Arcane Core allows the crafting of essentials such as Magebloom Seeds, magical equipment, and charms to summon magical helpers.",
 			"It can also directly enchant your gear with enchantments of your choice.",
 			"The Alteration Table allows for slotting in various Threads into magical armor that grant special properties while worn."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:mimic_scroll",
@@ -3020,8 +2924,7 @@ const itemsToTooltip = [
 			"Provides a list of items to automation related entities.",
 			"When this scroll is attached to an inventory, entities will only insert items that already exist in the inventory.",
 			"To attach the scroll, place an item frame on the inventory, and place a Mimic Scroll in it."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:mob_jar",
@@ -3031,19 +2934,7 @@ const itemsToTooltip = [
 			"See the Ritual of Containment for more info.",
 			"To release a mob, cast Dispel on the jar and the mob will be released above the jar.",
 			"Note Blocks placed above a jar will play an ambient sound of the mob inside."
-		],
-		"controls": []
-	},
-	{
-		item: "ars_nouveau:obtaining_gems",
-		summary: [
-			"To obtain Source Gems, you must first build an Imbuement Chamber.",
-			"An Imbuement Chamber imbues items inside it with Source, and will convert them to a new item.",
-			"To obtain a source gem, place an Amethyst or Lapis inside your Imbuement Chamber and wait.",
-			"Imbuement Chambers will consume source from nearby Source Jars to speed up any crafting.",
-			"A Dowsing Rod can be used for finding Budding Amethyst early."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:potion_flask",
@@ -3051,16 +2942,14 @@ const itemsToTooltip = [
 			"A flask that stores 8 charges of a potion.",
 			"To fill the flask, use the flask on a Potion Jar, or craft the flask in a Crafting Table with another potion.",
 			"You may empty the flask by using the flask on a Potion Jar while sneaking."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:reactive_enchantment",
 		summary: [
 			"Items with Reactive have a chance to cast spells when swung.",
 			"The spell on the Spell Parchment determines the spell that will be inscribed on the item."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:repository",
@@ -3069,8 +2958,7 @@ const itemsToTooltip = [
 			"When named, it will display the name as a tooltip, and preserve it when dropped as an item.",
 			"Useful for creating named inventory tabs with the Storage Lectern.",
 			"A Repository Catalog can be used as a proxy for a chain of connected repositories, and respects filter scrolls on repositories when inserting items."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:repository_controller",
@@ -3078,8 +2966,7 @@ const itemsToTooltip = [
 			"Catalogs can insert and extract items from any adjacent and connected repository.",
 			"Catalogs respect filters placed on repositories via item frames while inserting items, and will prioritize existing stacks of an item.",
 			"Filter scrolls can be used on the Catalog, storing the filter and applying it to all connected repositories when interacted with directly."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:scribes_table",
@@ -3092,8 +2979,7 @@ const itemsToTooltip = [
 			"Then, with your spell book in hand, change your spell book to your desired spell as if you were going to cast it.",
 			"Then, use the book on the table while sneaking.",
 			"Your item will now contain that spell."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:shapers_focus",
@@ -3106,8 +2992,7 @@ const itemsToTooltip = [
 			"Modifying or creating a block will duplicate the rest of your spell onto that new block.",
 			"For example, Freeze -> Break will freeze the block, and cast break onto that block.",
 			"Without the focus, break would only be applied to the block that was hit originally.",
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:sourceberry_bush",
@@ -3116,8 +3001,7 @@ const itemsToTooltip = [
 			"A Sourceberry can be used to craft a Potion of Mana Regeneration or consumed as food.",
 			"Starbuncles will automatically harvest fully grown Source Berry Bushes, making them useful for early automation of the Agronomic Sourcelink.",
 			"Sourceberry foods will also grant Mana Regeneration."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:spell_books",
@@ -3126,8 +3010,7 @@ const itemsToTooltip = [
 			"While a novice spell book only has access to Tier 1 spells, the Apprentice and Archmage spell books will unlock tiers two and three.",
 			"Upgrading your spell book will transfer all of the spells that you have learned into your new book.",
 			"Books may be dyed by crafting them with a piece of dye."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:spell_bow",
@@ -3137,8 +3020,7 @@ const itemsToTooltip = [
 			"If no arrows are in the inventory, a spell arrow that deals 0 damage will be cast.",
 			"If there is not enough mana, regular arrows will be fired.",
 			"Enchanter's Bows may use special Augment Arrows for empowering the inscribed spell."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:spell_casting",
@@ -3147,8 +3029,7 @@ const itemsToTooltip = [
 			"Through creative spellcrafting, you can vanquish foes, reshape the world, automate tasks, create spectacles, and so much more!",
 			"To begin spellcasting, you will need to craft a Novice’s Spell Book which will allow you to create, store, and cast spells using Mana.",
 			"Upgrading your Spell Book, learning new Glyphs, and crafting magical equipment will further enhance your ability to cast new and more powerful spells."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:spell_crossbow",
@@ -3156,8 +3037,7 @@ const itemsToTooltip = [
 			"A crossbow that can be inscribed with a spell.",
 			"The mana cost of the spell will be deducted when the bow is loaded if mana is present.",
 			"Enchanter's Crossbows may use special augment arrows to empower their spells."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:starbuncle_charm",
@@ -3178,8 +3058,7 @@ const itemsToTooltip = [
 			"Starbuncles may be bound to a Magebloom Bed using the Dominion Wand and will rest on the bed when there are no other tasks to be done.",
 			"Using a charm on an existing Starbuncle will stack them.",
 			"Stacked starbuncles will transport multiple stacks at a time"
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:storage_lectern",
@@ -3189,16 +3068,14 @@ const itemsToTooltip = [
 			"You can add more Bookwyrms to the lectern by using a Bookwyrm Charm.",
 			"Use the Dominion Wand from an inventory to the lectern in order to bind or remove access.",
 			"Inventories can be connected 30 blocks away."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:summon_bed",
 		summary: [
 			"A decorative bed.",
 			"Starbuncles can be bound to a bed using the Dominion Wand, and they will rest on the bed when there are no other tasks."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:summoning_familiars",
@@ -3207,8 +3084,7 @@ const itemsToTooltip = [
 			"These can be obtained by performing the Ritual of Binding near a relevant entity.",
 			"See the full list of eligible entities in the Familiars section.",
 			"Once you have obtained a Bound Script, use it to learn the familiar."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:volcanic_sourcelink",
@@ -3218,18 +3094,16 @@ const itemsToTooltip = [
 			"As the Volcanic Sourcelink produces Source, it also produces heat, converting stone into magma blocks and then lava.",
 			"The Volcanic Sourcelink automatically outputs to nearby jars, starting with the one closest to it.",
 			"The Volcanic Sourcelink will also take items from surrounding pedestals."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:warp_portal",
 		summary: [
 			"Warp portals, like warp scrolls, provide a one-way teleport to any location, provided it is in the same dimension.",
-			"To construct a Warp Portal, build a frame from Sourcestone or its variants in the shape of a rectangle and provide a full Source Jar nearby.",
+			"To construct a Warp Portal, build a frame from Manastone or its variants in the shape of a rectangle and provide a full Mana Jar nearby.",
 			"Then, throw a warp scroll with a written location into the frame.",
-			"Given there is enough source nearby, the portal will be created."
-		],
-		"controls": []
+			"Given there is enough Mana nearby, the portal will be created."
+		]
 	},
 	{
 		item: "ars_nouveau:weald_waddler",
@@ -3237,8 +3111,7 @@ const itemsToTooltip = [
 			"If a Weald Walker dies, it will be turned into a Weald Waddler.",
 			"Weald Waddlers will slowly grow back into Weald Walkers, and can be sped up by giving them bonemeal.",
 			"A Weald Waddler cannot fight or protect itself until it has grown back to a Walker."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:weald_walker",
@@ -3247,8 +3120,7 @@ const itemsToTooltip = [
 			"A Weald Walker can be created from the Ritual of Awakening.",
 			"When summoned, the Weald Walker will roam randomly unless given a home position.",
 			"To give the Weald Walker a home, use the dominion wand on the Weald Walker, and then the block you wish it to guard."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:whirlisprig_charm",
@@ -3258,31 +3130,29 @@ const itemsToTooltip = [
 			"Wild Whirlisprigs can be befriended and will drop Whirlisprig Tokens if a tree is grown near them.",
 			"To summon a Whirlisprig, use a Whirlisprig charm on any flower.",
 			"Whirlisprigs consider their home to be 10 blocks in any direction from the flower.",
-			"Whirlisprigs require source nearby to operate, and will only generate items if there is a chest placed next to the flower.",
+			"Whirlisprigs require Mana nearby to operate, and will only generate items if there is a chest placed next to the flower.",
 			"You can get your charm back by using Dispel on a Whirlisprig.",
 			"Summoned Whirlisprigs must be happy in order to produce materials, and their mood is determined by the number and diversity of natural materials in their home.",
 			"You may use blocks on the Whirlisprig to gain additional info if a Whirlisprig would enjoy that block in their home.",
 			"Interacting with the Whirlisprig with an empty hand will give you additional info on the Whirlisprig's happiness."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:wilden",
 		summary: [
 			"Wilden are hostile creatures that can be commonly found at night around Wilden Dens.",
 			"While Wilden Defenders may only be found in cold biomes, Stalker and Hunter Dens can be found in any forest biome."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:wixie_charm",
 		summary: [
-			"A Wixie can automatically craft items for you at the expense of source.",
+			"A Wixie can automatically craft items for you at the expense of Mana.",
 			"To obtain a Wixie Token, cast Dispel on a Witch while it is half health or less.",
 			"Once you have obtained a Wixie Charm, use it on a Cauldron to summon your Wixie.",
 			"To select an item for crafting, use your item or block on the Wixie Cauldron.",
 			"The Wixie will select the recipe for crafting based on the inventories nearby, you need not specify the exact materials for the recipe.",
-			"Each craft requires a small amount of source and will be drained from nearby Source Jars.",
+			"Each craft requires a small amount of Mana and will be drained from nearby Mana Jars.",
 			"Wixies can craft multiple items at once by placing pedestals adjacent to the cauldron.",
 			"Wixie's will attempt to craft items in the pedestal, rotating round robin.",
 			"Wixies will autocraft potions using nearby Potion Jars and items.",
@@ -3292,31 +3162,27 @@ const itemsToTooltip = [
 			"To begin, place down an empty Potion Jar, right click the cauldron with an Awkward Potion, and supply Nether Wart from a nearby chest.",
 			"You can select specific inventories for the wixie by using a dominion wand on an inventory, and then the cauldron."
 
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:alakarkinos_charm",
 		summary: [
 			"Loves to dance to nearby jukeboxes."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:applying_perks",
 		summary: [
 			"Threads only apply a single time on an entire armor set, and they do not stack.",
 			"For more information on applying threads, see the Alteration Table."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:armor_upgrading",
 		summary: [
 			"Armor also has three tiers, and these tiers may be increased using the Enchanting Apparatus and the upgrade recipes found in this section.",
 			"Each tier will increase the amount of mana regen the armor grants, and increases the number and size of the slots of the armor."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:mob_jar",
@@ -3325,34 +3191,21 @@ const itemsToTooltip = [
 			"Some examples include: chickens will lay eggs, sheep can be sheared, cows can be milked, and some mobs like the Blaze will turn the jar into a light source.",
 			"Experiment with a variety of mobs to create aesthetic and functional farms.",
 			"Drygmys will also treat the jar as if it were a normal entity in the area."
-		],
-		"controls": []
-	},
-	{
-		item: "ars_nouveau:performing_rituals",
-		summary: [
-			"To activate your ritual, interact with the brazier with an empty hand.",
-			"Once activated, your ritual can no longer be augmented and has been consumed permanently.",
-			"If a ritual requires source to operate, the brazier will pull from source jars within 6 blocks.",
-			"Information related to rituals and their requirements can be found in their respective entries."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:reactive_enchantment",
 		summary: [
 			"Like other enchantments, Reactive levels can only be applied to an item with the previous level of enchantment.",
 			"Reactive 2 requires Reactive 1, etc."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:repository_controller",
 		summary: [
 			"Catalogs are highly performant when used with the Storage Lectern and should be used over other big inventories or systems with many slots.",
 			"Filters are not applied when items are extracted from other systems like a Hopper, and insertions via hopper will not respect the catalogs own filter, but will respect inserting into a filtered repository."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:storage",
@@ -3360,8 +3213,7 @@ const itemsToTooltip = [
 			"Items can be automatically inserted into the lectern by placing them into an unbound inventory that is adjacent to the lectern.",
 			"You may also link a lectern to the 'main' lectern in order to extend the view and access of the original lectern, these lecterns can be chained together within 30 blocks indefinitely.",
 			"Once a lectern is linked to another lectern, it will no longer be able to connect to inventories or accept bookwyrms."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:summoning_familiars",
@@ -3370,39 +3222,34 @@ const itemsToTooltip = [
 			"Selecting a Familiar will summon it in the world and give you Familiar Sickness, preventing you from summoning another one for a short time.",
 			"To obtain your first familiar, perform the Ritual of Binding near a Starbuncle.",
 			"Familiars are bound to the player and cannot be transferred between books."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:warp_portal",
 		summary: [
 			"Portals can be built horizontal or vertical, from 1x1 to 21x21 in size.",
-			"Warping does not cost any source after creation.",
+			"Warping does not cost any Mana after creation.",
 			"Using a Dominion Wand on the portal will change the texture of the portal."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:weald_walker",
 		summary: [
 			"Casts Flare at nearby enemies, careful not to ignite any blocks in the process."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:alakarkinos_charm",
 		summary: [
 			"Alakarkinos can be summoned anywhere by using a charm on a block.",
 			"To set its home, use the Dominion Wand to bind Alakarkinos to a chest or inventory."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:reactive_enchantment",
 		summary: [
 			"The spell inscribed for Reactive can be changed by placing the item in the apparatus with a new inscribed spell parchment."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:storage",
@@ -3410,8 +3257,7 @@ const itemsToTooltip = [
 			"Linked inventories that are named will create a tab in the Storage Lectern, allowing you to view and manipulate all inventories that share that name.",
 			"Unlike normal chests, Repositories will preserve their name when dropped.",
 			"The Name Effect can also name inventories placed in the world."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:summoning_familiars",
@@ -3419,22 +3265,19 @@ const itemsToTooltip = [
 			"Typically only one familiar may be out at a time, and summoning another familiar will remove others bound to you.",
 			"You may dismiss your own familiar by casting Dispel on it.",
 			"In exchange for empowering the owner, familiars will reserve a portion of max mana from their owner for as long as they persist in the world."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:weald_walker",
 		summary: [
 			"Casts Freeze and Cold Snap at nearby enemies."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:wilden",
 		summary: [
 			"An aggressive and fast hunter that can summon allied wolves."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:alakarkinos_charm",
@@ -3442,51 +3285,45 @@ const itemsToTooltip = [
 			"Alakarkinos will seek out gravel or sand that is placed within 3 blocks horizontal and one block vertical around its bound inventory.",
 			"In order to convert blocks into items, Source must be provided near its chest.",
 			"After some time and a few magic tricks, Alakarkinos will destroy the sand or gravel and insert items into the inventory."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:storage",
 		summary: [
 			"Repository Catalogs should be used when possible for large or frequent item automations involving the storage lectern.",
 			"Repository catalogs are bound to a single location that exposes all connected repositories, and is optimized for server performance over other large slot inventories or chests."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:warp_portal",
 		summary: [
 			"A magical portal that can send players, mobs, spells, and items to any location in the same dimension."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:weald_walker",
 		summary: [
 			"Casts an amplified Harm with a Snare effect at nearby enemies."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:wilden",
 		summary: [
 			"Generally spawning in small groups, Stalkers have ground and aerial attacks."
-		],
-		"controls": []
+		]
 	},
 	{
 		item: "ars_nouveau:weald_walker",
 		summary: [
 			"Casts Hex and an amplified Wither at nearby enemies."
-		],
-		"controls": []
+		]
 	},
 	// Ars Additions
 	{
 		item: "ars_additions:ender_source_jar",
 		summary: [
-			"The Ender Source Jar allows you to store source in an ender-connected Source Jar.",
-			"Each jar you place will link to the same pool of source, allowing you to use the Source Jar from anywhere.",
+			"The Ender Mana Jar allows you to _store Mana in an ender-connected Mana Jar_.",
+			"Each jar you place _will be connected together_, allowing you to use the Mana Jar from _anywhere_.",
 		]
 	},
 	{
@@ -3501,9 +3338,9 @@ const itemsToTooltip = [
 	{
 		item: "ars_additions:imbued_spell_parchment",
 		summary: [
-			"You can imbue source into a spell parchment to allow you to cast that spell without consuming mana.",
-			"To cast with an imbued spell parchment, you need to hold use to gather up all the source in the parchment ready to release.",
-			"It takes about half a second to gather up 100 mana worth of source from the parchment, so bigger spells will take a longer time to cast.",
+			"_You can imbue Mana into a spell parchment_ to allow you to _cast that spell without consuming Mana_.",
+			"To cast with an imbued spell parchment, you need to _hold use to gather up all the Mana in the parchment_ ready to release.",
+			"It takes about half a second to gather up 100 mana worth of Mana from the parchment, so bigger spells will take a longer time to cast.",
 		]
 	},
 	{
@@ -3538,16 +3375,6 @@ const itemsToTooltip = [
 			"The Warp Index allows you to access your Storage Lectern anywhere within the same dimension.",
 			"The Stabilized Warp Index does not have the same limitation and will work in any dimension.",
 			"Both of these Warp Indexes require your Storage Lectern to be chunk-loaded.",
-		]
-	},
-	{
-		item: "ars_additions:warp_nexus",
-		summary: [
-			"A Warp Nexus allows interdimensional travel to nine locations of your choice.",
-			"Using the Warp Nexus while Sneaking will open up an inventory to store nine different Warp Scrolls.",
-			"Using the Warp Nexus without Sneaking will open up a Warp menu to allow you to pick your destination.",
-			"Warp Nexus inside Nexus Towers are situated on-top of Source Leylines so they don't require any source to operate.",
-			"Once moved, a Warp Nexus requires 1,000 source per teleport.",
 		]
 	},
 	// Ars Elemental
@@ -3607,7 +3434,7 @@ const itemsToTooltip = [
 		item: "ars_elemental:everfull_urn",
 		summary: [
 			"This magic urn converts Source into water.",
-			"Link a cauldron or an Apothecary to the urn using a dominion wand and it will be refilled for a cheap amount of source.",
+			"Link a cauldron or an Apothecary to the urn using a dominion wand and it will be refilled for a cheap amount of Mana.",
 		]
 	},
 	{
@@ -3626,7 +3453,7 @@ const itemsToTooltip = [
 			"Upgrade of the Spell Prism that can be adjusted to aim to a specific block.",
 			"Use the dominion wand to link the prism to a block.",
 			"This prism also allows lenses, but can't be pushed by pistons.",
-			"Some lens will require a bit of source whenever a spell is redirected.",
+			"Some lens will require a bit of Mana whenever a spell is redirected.",
 			"A Prism Lens can be applied to this advanced prisms to customize how the prism redirects projectiles.",
 			"Arc and Homing lenses change the projectile to be an arc or homing projectile.",
 			"Rainbow lens randomize the color of the projectile, while Acceleration and Deceleration lenses allow to adjust the speed.",
@@ -4017,14 +3844,6 @@ const itemsToTooltip = [
 		]
 	},
 	{
-		item: "evilcraft:entangled_chalice",
-		summary: [
-			"When you have as much experience as I have with infusing items with _Blood_, you will notice that by enhancing a tear of the fearsome _Ghast_ will result in a very special kind of tear. It seems to share all properties when split in half. This gave me the idea to build _Entangled Chalices_ with this tear with the goal of sharing the fluid contents of the chalice with all other chalices that are constructed from the same tear.",
-			"Normally, you will get two chalices sharing contents from the crafting recipe, but when replacing the center _Gold Ingot_ in the recipe with an existing chalice, it will expand the tear network to include another chalice.",
-			"These chalices can be placed in the world or held in your inventory. Shift + right-click with it in your hand to enable the Omni-Supply mode which will continuously try to fill all containers in your inventory with _Blood_."
-		]
-	},
-	{
 		item: "evilcraft:garmonbozia",
 		summary: [
 			"What if it was possible to imbue the darkest thoughts and emotions into this world. This could prove to be an immense source of unimaginable power. With the discovery of vengeance, darkness and blood, I think I may have the essential elements.",
@@ -4032,8 +3851,6 @@ const itemsToTooltip = [
 			"My subjects say I have gone too far with this, the fools."
 		]
 	}
-
-
 
 ];
 

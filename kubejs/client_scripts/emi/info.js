@@ -151,7 +151,7 @@ JEIEvents.information(event => {
 		'Terra Catalyst only serves one purpose - to break down Gaia Spirits into smaller Shards.'
 	])
 
-	addInfo(['botania:mana_diamond', 'botania:mana_diamond_block', 'botania:mana_pearl', 'botania:mana_string', 'botania:mana_quartz', 'botania:mana_powder'], [
+	addInfo(['botania:mana_diamond', 'botania:mana_diamond_block', 'botania:mana_pearl', 'botania:mana_string', 'botania:quartz_mana', /*'botania:mana_powder'*/], [
 		'When tossed into a Mana Pool certain items can be infused with stored Mana, gaining magical properties used in crafting recipes.'
 	])
 
@@ -232,7 +232,7 @@ JEIEvents.information(event => {
 	/*
 		Accessores
 	*/
-	addInfo(['confluence:honey_comb'], [
+	addInfo(['terra_curio:honey_comb'], [
 		'Can be found in any chest in The Bumblezone at a 5% chance.'
 	])
 

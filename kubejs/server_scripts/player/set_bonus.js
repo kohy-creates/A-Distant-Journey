@@ -98,8 +98,9 @@ PlayerEvents.tick(event => {
 			}
 		}
 	}
-
-	tickBonus(player)
+	if (hasActiveBonus) {
+		tickBonus(player)
+	}
 });
 
 PlayerEvents.respawned(event => removeBonus(event.player));
@@ -146,17 +147,6 @@ function removeBonus(player) {
 	});
 }
 
-EntityEvents.hurt('player', event => {
-	//console.log(setBonusActive(event.getPlayer(), 'mythicmetals:kyber'))
-	if (setBonusActive(event.getPlayer(), 'mythicmetals:kyber') && event.getSource().getActual()) {
-		event.getPlayer().getServer().runCommandSilent(
-			// entity.hurt didn't work cause why would it
-			// Nothing to see here, just KubeJS being KubeJS
-			`/damage ${event.getSource().getActual().getUuid().toString()} ${event.damage * 0.66} thorns by ${event.getPlayer().username}`
-		)
-	}
-})
-
 /**
  * Doing those as a function for the sake of visual clarity in this file
  * @param {Internal.Player} player 
@@ -173,7 +163,7 @@ function tickBonus(player) {
 
 			player.addEffect(new $MobEffectInstance('born_in_chaos_v1:light_rampage', 10, amplifier, true, true, true))
 		}
-		if (percentHP < 10) {
+		if (percentHP < 5) {
 			player.removeEffect('born_in_chaos_v1:medium_rampage');
 			player.removeEffect('born_in_chaos_v1:strong_rampage');
 			player.removeEffect('born_in_chaos_v1:furious_rampage');
@@ -200,10 +190,24 @@ function setBonusActive(player, bonus) {
 }
 
 EntityEvents.hurt(event => {
-	const player = event.getSource().getPlayer();
-	if (player) {
-		if (setBonusActive(player, "mythicmetals:palladium")) {
-			player.addEffect(new $MobEffectInstance('kubejs:rapid_healing', 4 * 20, 0));
+	const playerVictim = event.getEntity()
+	const playerSource = event.getSource().getPlayer();
+
+	// On attack
+	if (playerSource) {
+		if (setBonusActive(playerSource, "mythicmetals:palladium")) {
+			playerSource.addEffect(new $MobEffectInstance('kubejs:rapid_healing', 4 * 20, 0));
+		}
+	}
+	// When taking damage
+	else if (playerVictim && playerVictim.getType() === 'minecraft:player') {
+		const actual = event.getSource().getActual();
+		if (setBonusActive(playerVictim, 'mythicmetals:kyber') && actual) {
+			playerVictim.getServer().runCommandSilent(
+				// entity.hurt didn't work cause why would it
+				// Nothing to see here, just KubeJS being KubeJS
+				`/damage ${actual.getUuid().toString()} ${event.damage * 0.66} thorns by ${playerVictim.username}`
+			)
 		}
 	}
 })

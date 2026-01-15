@@ -25,7 +25,7 @@
 	invalid_combos = []
 	#Max ticks entities should track for motion and health, etc. Note: Entities ANYWHERE are tracking this, setting this to a high value is not recommended for low-spec machines.
 	#Range: > 0
-	entityRewindTracking = 60
+	entityRewindTracking = 50
 	#How many ticks should be rewound before augments
 	#Range: 1 ~ 60
 	baseRewindTime = 40

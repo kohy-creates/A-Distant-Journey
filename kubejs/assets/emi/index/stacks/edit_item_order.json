@@ -35,6 +35,7 @@
 		"item:witherstormmod:firework_bundle",
 		"item:sortilege:limitite",
 		"item:dummmmmmy:target_dummy",
+		"item:create:experience_block",
 		"item:supplementaries:flag_pink",
 		"item:supplementaries:flag_purple",
 		"item:supplementaries:flag_brown",
@@ -749,20 +750,106 @@
 		"item:the_bumblezone:rootmin_spawn_egg",
 		"item:the_bumblezone:sentry_watcher_spawn_egg",
 		"item:the_bumblezone:variant_bee_spawn_egg",
+		"item:tide:abyss_angler_spawn_egg",
+		"item:tide:alpha_fish_spawn_egg",
+		"item:tide:amber_rockfish_spawn_egg",
+		"item:tide:anchovy_spawn_egg",
 		"item:tide:angelfish_spawn_egg",
-		"item:tide:barracuda_spawn_egg",
-		"item:tide:bass_spawn_egg",
+		"item:tide:anglerfish_spawn_egg",
+		"item:tide:aquathorn_spawn_egg",
+		"item:tide:arapaima_spawn_egg",
+		"item:tide:ash_perch_spawn_egg",
+		"item:tide:bedrock_bug_spawn_egg",
+		"item:tide:bedrock_tetra_spawn_egg",
+		"item:tide:black_crappie_spawn_egg",
+		"item:tide:blazing_swordfish_spawn_egg",
+		"item:tide:blossom_bass_spawn_egg",
+		"item:tide:blue_neonfish_spawn_egg",
 		"item:tide:bluegill_spawn_egg",
+		"item:tide:brook_trout_spawn_egg",
+		"item:tide:bull_shark_spawn_egg",
+		"item:tide:carp_spawn_egg",
 		"item:tide:catfish_spawn_egg",
-		"item:tide:clayfish_spawn_egg",
+		"item:tide:cave_crawler_spawn_egg",
+		"item:tide:cave_eel_spawn_egg",
+		"item:tide:chasm_eel_spawn_egg",
+		"item:tide:chorus_cod_spawn_egg",
+		"item:tide:coelacanth_spawn_egg",
+		"item:tide:crimson_fangjaw_spawn_egg",
+		"item:tide:crystal_shrimp_spawn_egg",
+		"item:tide:crystalline_carp_spawn_egg",
+		"item:tide:darkness_eater_spawn_egg",
+		"item:tide:deep_blue_spawn_egg",
+		"item:tide:deep_grouper_spawn_egg",
+		"item:tide:devils_hole_pupfish_spawn_egg",
+		"item:tide:dragon_fish_spawn_egg",
+		"item:tide:dripstone_darter_spawn_egg",
+		"item:tide:dutchman_sock_spawn_egg",
+		"item:tide:echo_snapper_spawn_egg",
+		"item:tide:elytrout_spawn_egg",
+		"item:tide:ember_koi_spawn_egg",
+		"item:tide:ender_glider_spawn_egg",
+		"item:tide:enderfin_spawn_egg",
+		"item:tide:endergazer_spawn_egg",
+		"item:tide:flounder_spawn_egg",
+		"item:tide:frostbite_flounder_spawn_egg",
+		"item:tide:gilded_minnow_spawn_egg",
+		"item:tide:glowfish_spawn_egg",
+		"item:tide:great_white_shark_spawn_egg",
 		"item:tide:guppy_spawn_egg",
+		"item:tide:incandescent_larva_spawn_egg",
+		"item:tide:inferno_guppy_spawn_egg",
+		"item:tide:iron_tetra_spawn_egg",
+		"item:tide:judgment_fish_spawn_egg",
+		"item:tide:lapis_lanternfish_spawn_egg",
+		"item:tide:largemouth_bass_spawn_egg",
+		"item:tide:luminescent_jellyfish_spawn_egg",
 		"item:tide:mackerel_spawn_egg",
-		"item:tide:mint_carp_spawn_egg",
+		"item:tide:magma_mackerel_spawn_egg",
+		"item:tide:mahi_mahi_spawn_egg",
+		"item:tide:manta_ray_spawn_egg",
+		"item:tide:mantyvern_spawn_egg",
+		"item:tide:marstilus_spawn_egg",
+		"item:tide:midas_fish_spawn_egg",
+		"item:tide:mirage_catfish_spawn_egg",
+		"item:tide:mooneye_spawn_egg",
+		"item:tide:nephrosilu_spawn_egg",
+		"item:tide:neptune_koi_spawn_egg",
+		"item:tide:obsidian_pike_spawn_egg",
 		"item:tide:ocean_perch_spawn_egg",
+		"item:tide:pale_clubfish_spawn_egg",
+		"item:tide:pentapus_spawn_egg",
 		"item:tide:pike_spawn_egg",
+		"item:tide:pluto_snail_spawn_egg",
+		"item:tide:rainbow_trout_spawn_egg",
+		"item:tide:red_40_spawn_egg",
+		"item:tide:red_snapper_spawn_egg",
 		"item:tide:sailfish_spawn_egg",
-		"item:tide:trout_spawn_egg",
+		"item:tide:sand_tiger_shark_spawn_egg",
+		"item:tide:saturn_cuttlefish_spawn_egg",
+		"item:tide:shadow_shark_spawn_egg",
+		"item:tide:shadow_snapper_spawn_egg",
+		"item:tide:shooting_starfish_spawn_egg",
+		"item:tide:sleepy_carp_spawn_egg",
+		"item:tide:slimy_salmon_spawn_egg",
+		"item:tide:smallmouth_bass_spawn_egg",
+		"item:tide:snatcher_squid_spawn_egg",
+		"item:tide:snook_spawn_egg",
+		"item:tide:soulscale_spawn_egg",
+		"item:tide:spore_stalker_spawn_egg",
+		"item:tide:sturgeon_spawn_egg",
+		"item:tide:sun_emblem_spawn_egg",
+		"item:tide:swordfish_spawn_egg",
 		"item:tide:tuna_spawn_egg",
+		"item:tide:uranias_pisces_spawn_egg",
+		"item:tide:vengeance_spawn_egg",
+		"item:tide:violet_carp_spawn_egg",
+		"item:tide:voidseeker_spawn_egg",
+		"item:tide:volcano_tuna_spawn_egg",
+		"item:tide:walleye_spawn_egg",
+		"item:tide:warped_guppy_spawn_egg",
+		"item:tide:white_crappie_spawn_egg",
+		"item:tide:witherfin_spawn_egg",
 		"item:tide:yellow_perch_spawn_egg",
 		"item:twilightforest:adherent_spawn_egg",
 		"item:twilightforest:alpha_yeti_spawn_egg",
@@ -2212,10 +2299,8 @@
 		"item:netherexp:claret_hanging_sign",
 		"item:aether:skyroot_log",
 		"item:aether:skyroot_wood",
-		"item:everycomp:q/aether/skyroot_post",
 		"item:aether:stripped_skyroot_log",
 		"item:aether:stripped_skyroot_wood",
-		"item:everycomp:q/aether/stripped_skyroot_post",
 		"item:aether:skyroot_planks",
 		"item:everycomp:ap/aether/skyroot_boards",
 		"item:aether:skyroot_bookshelf",
@@ -2229,7 +2314,6 @@
 		"item:everycomp:hc/aether/skyroot_table",
 		"item:everycomp:hc/aether/skyroot_counter",
 		"item:everycomp:fd/aether/skyroot_cabinet",
-		"item:everycomp:q/aether/skyroot_chest",
 		"item:everycomp:hc/aether/skyroot_fancy_bed",
 		"item:aether:skyroot_stairs",
 		"item:aether:skyroot_slab",
@@ -2240,7 +2324,6 @@
 		"item:aether:skyroot_fence_gate",
 		"item:aether:skyroot_door",
 		"item:aether:skyroot_trapdoor",
-		"item:everycomp:q/aether/skyroot_ladder",
 		"item:everycomp:hnhome/aether/skyroot_lattice",
 		"item:aether:skyroot_pressure_plate",
 		"item:aether:skyroot_button",
@@ -3446,6 +3529,10 @@
 		{
 			"stack": "item:dummmmmmy:target_dummy",
 			"after": "item:minecraft:armor_stand"
+		},
+		{
+			"stack": "item:create:experience_block",
+			"after": "item:ars_nouveau:greater_experience_gem"
 		},
 		{
 			"stack": "item:supplementaries:flag_pink",
@@ -6304,64 +6391,408 @@
 			"after": "item:the_bumblezone:sentry_watcher_spawn_egg"
 		},
 		{
-			"stack": "item:tide:angelfish_spawn_egg",
+			"stack": "item:tide:abyss_angler_spawn_egg",
 			"after": "item:the_bumblezone:variant_bee_spawn_egg"
 		},
 		{
-			"stack": "item:tide:barracuda_spawn_egg",
+			"stack": "item:tide:alpha_fish_spawn_egg",
+			"after": "item:tide:abyss_angler_spawn_egg"
+		},
+		{
+			"stack": "item:tide:amber_rockfish_spawn_egg",
+			"after": "item:tide:alpha_fish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:anchovy_spawn_egg",
+			"after": "item:tide:amber_rockfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:angelfish_spawn_egg",
+			"after": "item:tide:anchovy_spawn_egg"
+		},
+		{
+			"stack": "item:tide:anglerfish_spawn_egg",
 			"after": "item:tide:angelfish_spawn_egg"
 		},
 		{
-			"stack": "item:tide:bass_spawn_egg",
-			"after": "item:tide:barracuda_spawn_egg"
+			"stack": "item:tide:aquathorn_spawn_egg",
+			"after": "item:tide:anglerfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:arapaima_spawn_egg",
+			"after": "item:tide:aquathorn_spawn_egg"
+		},
+		{
+			"stack": "item:tide:ash_perch_spawn_egg",
+			"after": "item:tide:arapaima_spawn_egg"
+		},
+		{
+			"stack": "item:tide:bedrock_bug_spawn_egg",
+			"after": "item:tide:ash_perch_spawn_egg"
+		},
+		{
+			"stack": "item:tide:bedrock_tetra_spawn_egg",
+			"after": "item:tide:bedrock_bug_spawn_egg"
+		},
+		{
+			"stack": "item:tide:black_crappie_spawn_egg",
+			"after": "item:tide:bedrock_tetra_spawn_egg"
+		},
+		{
+			"stack": "item:tide:blazing_swordfish_spawn_egg",
+			"after": "item:tide:black_crappie_spawn_egg"
+		},
+		{
+			"stack": "item:tide:blossom_bass_spawn_egg",
+			"after": "item:tide:blazing_swordfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:blue_neonfish_spawn_egg",
+			"after": "item:tide:blossom_bass_spawn_egg"
 		},
 		{
 			"stack": "item:tide:bluegill_spawn_egg",
-			"after": "item:tide:bass_spawn_egg"
+			"after": "item:tide:blue_neonfish_spawn_egg"
 		},
 		{
-			"stack": "item:tide:catfish_spawn_egg",
+			"stack": "item:tide:brook_trout_spawn_egg",
 			"after": "item:tide:bluegill_spawn_egg"
 		},
 		{
-			"stack": "item:tide:clayfish_spawn_egg",
+			"stack": "item:tide:bull_shark_spawn_egg",
+			"after": "item:tide:brook_trout_spawn_egg"
+		},
+		{
+			"stack": "item:tide:carp_spawn_egg",
+			"after": "item:tide:bull_shark_spawn_egg"
+		},
+		{
+			"stack": "item:tide:catfish_spawn_egg",
+			"after": "item:tide:carp_spawn_egg"
+		},
+		{
+			"stack": "item:tide:cave_crawler_spawn_egg",
 			"after": "item:tide:catfish_spawn_egg"
 		},
 		{
-			"stack": "item:tide:guppy_spawn_egg",
-			"after": "item:tide:clayfish_spawn_egg"
+			"stack": "item:tide:cave_eel_spawn_egg",
+			"after": "item:tide:cave_crawler_spawn_egg"
 		},
 		{
-			"stack": "item:tide:mackerel_spawn_egg",
+			"stack": "item:tide:chasm_eel_spawn_egg",
+			"after": "item:tide:cave_eel_spawn_egg"
+		},
+		{
+			"stack": "item:tide:chorus_cod_spawn_egg",
+			"after": "item:tide:chasm_eel_spawn_egg"
+		},
+		{
+			"stack": "item:tide:coelacanth_spawn_egg",
+			"after": "item:tide:chorus_cod_spawn_egg"
+		},
+		{
+			"stack": "item:tide:crimson_fangjaw_spawn_egg",
+			"after": "item:tide:coelacanth_spawn_egg"
+		},
+		{
+			"stack": "item:tide:crystal_shrimp_spawn_egg",
+			"after": "item:tide:crimson_fangjaw_spawn_egg"
+		},
+		{
+			"stack": "item:tide:crystalline_carp_spawn_egg",
+			"after": "item:tide:crystal_shrimp_spawn_egg"
+		},
+		{
+			"stack": "item:tide:darkness_eater_spawn_egg",
+			"after": "item:tide:crystalline_carp_spawn_egg"
+		},
+		{
+			"stack": "item:tide:deep_blue_spawn_egg",
+			"after": "item:tide:darkness_eater_spawn_egg"
+		},
+		{
+			"stack": "item:tide:deep_grouper_spawn_egg",
+			"after": "item:tide:deep_blue_spawn_egg"
+		},
+		{
+			"stack": "item:tide:devils_hole_pupfish_spawn_egg",
+			"after": "item:tide:deep_grouper_spawn_egg"
+		},
+		{
+			"stack": "item:tide:dragon_fish_spawn_egg",
+			"after": "item:tide:devils_hole_pupfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:dripstone_darter_spawn_egg",
+			"after": "item:tide:dragon_fish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:dutchman_sock_spawn_egg",
+			"after": "item:tide:dripstone_darter_spawn_egg"
+		},
+		{
+			"stack": "item:tide:echo_snapper_spawn_egg",
+			"after": "item:tide:dutchman_sock_spawn_egg"
+		},
+		{
+			"stack": "item:tide:elytrout_spawn_egg",
+			"after": "item:tide:echo_snapper_spawn_egg"
+		},
+		{
+			"stack": "item:tide:ember_koi_spawn_egg",
+			"after": "item:tide:elytrout_spawn_egg"
+		},
+		{
+			"stack": "item:tide:ender_glider_spawn_egg",
+			"after": "item:tide:ember_koi_spawn_egg"
+		},
+		{
+			"stack": "item:tide:enderfin_spawn_egg",
+			"after": "item:tide:ender_glider_spawn_egg"
+		},
+		{
+			"stack": "item:tide:endergazer_spawn_egg",
+			"after": "item:tide:enderfin_spawn_egg"
+		},
+		{
+			"stack": "item:tide:flounder_spawn_egg",
+			"after": "item:tide:endergazer_spawn_egg"
+		},
+		{
+			"stack": "item:tide:frostbite_flounder_spawn_egg",
+			"after": "item:tide:flounder_spawn_egg"
+		},
+		{
+			"stack": "item:tide:gilded_minnow_spawn_egg",
+			"after": "item:tide:frostbite_flounder_spawn_egg"
+		},
+		{
+			"stack": "item:tide:glowfish_spawn_egg",
+			"after": "item:tide:gilded_minnow_spawn_egg"
+		},
+		{
+			"stack": "item:tide:great_white_shark_spawn_egg",
+			"after": "item:tide:glowfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:guppy_spawn_egg",
+			"after": "item:tide:great_white_shark_spawn_egg"
+		},
+		{
+			"stack": "item:tide:incandescent_larva_spawn_egg",
 			"after": "item:tide:guppy_spawn_egg"
 		},
 		{
-			"stack": "item:tide:mint_carp_spawn_egg",
+			"stack": "item:tide:inferno_guppy_spawn_egg",
+			"after": "item:tide:incandescent_larva_spawn_egg"
+		},
+		{
+			"stack": "item:tide:iron_tetra_spawn_egg",
+			"after": "item:tide:inferno_guppy_spawn_egg"
+		},
+		{
+			"stack": "item:tide:judgment_fish_spawn_egg",
+			"after": "item:tide:iron_tetra_spawn_egg"
+		},
+		{
+			"stack": "item:tide:lapis_lanternfish_spawn_egg",
+			"after": "item:tide:judgment_fish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:largemouth_bass_spawn_egg",
+			"after": "item:tide:lapis_lanternfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:luminescent_jellyfish_spawn_egg",
+			"after": "item:tide:largemouth_bass_spawn_egg"
+		},
+		{
+			"stack": "item:tide:mackerel_spawn_egg",
+			"after": "item:tide:luminescent_jellyfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:magma_mackerel_spawn_egg",
 			"after": "item:tide:mackerel_spawn_egg"
 		},
 		{
-			"stack": "item:tide:ocean_perch_spawn_egg",
-			"after": "item:tide:mint_carp_spawn_egg"
+			"stack": "item:tide:mahi_mahi_spawn_egg",
+			"after": "item:tide:magma_mackerel_spawn_egg"
 		},
 		{
-			"stack": "item:tide:pike_spawn_egg",
+			"stack": "item:tide:manta_ray_spawn_egg",
+			"after": "item:tide:mahi_mahi_spawn_egg"
+		},
+		{
+			"stack": "item:tide:mantyvern_spawn_egg",
+			"after": "item:tide:manta_ray_spawn_egg"
+		},
+		{
+			"stack": "item:tide:marstilus_spawn_egg",
+			"after": "item:tide:mantyvern_spawn_egg"
+		},
+		{
+			"stack": "item:tide:midas_fish_spawn_egg",
+			"after": "item:tide:marstilus_spawn_egg"
+		},
+		{
+			"stack": "item:tide:mirage_catfish_spawn_egg",
+			"after": "item:tide:midas_fish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:mooneye_spawn_egg",
+			"after": "item:tide:mirage_catfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:nephrosilu_spawn_egg",
+			"after": "item:tide:mooneye_spawn_egg"
+		},
+		{
+			"stack": "item:tide:neptune_koi_spawn_egg",
+			"after": "item:tide:nephrosilu_spawn_egg"
+		},
+		{
+			"stack": "item:tide:obsidian_pike_spawn_egg",
+			"after": "item:tide:neptune_koi_spawn_egg"
+		},
+		{
+			"stack": "item:tide:ocean_perch_spawn_egg",
+			"after": "item:tide:obsidian_pike_spawn_egg"
+		},
+		{
+			"stack": "item:tide:pale_clubfish_spawn_egg",
 			"after": "item:tide:ocean_perch_spawn_egg"
 		},
 		{
-			"stack": "item:tide:sailfish_spawn_egg",
+			"stack": "item:tide:pentapus_spawn_egg",
+			"after": "item:tide:pale_clubfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:pike_spawn_egg",
+			"after": "item:tide:pentapus_spawn_egg"
+		},
+		{
+			"stack": "item:tide:pluto_snail_spawn_egg",
 			"after": "item:tide:pike_spawn_egg"
 		},
 		{
-			"stack": "item:tide:trout_spawn_egg",
+			"stack": "item:tide:rainbow_trout_spawn_egg",
+			"after": "item:tide:pluto_snail_spawn_egg"
+		},
+		{
+			"stack": "item:tide:red_40_spawn_egg",
+			"after": "item:tide:rainbow_trout_spawn_egg"
+		},
+		{
+			"stack": "item:tide:red_snapper_spawn_egg",
+			"after": "item:tide:red_40_spawn_egg"
+		},
+		{
+			"stack": "item:tide:sailfish_spawn_egg",
+			"after": "item:tide:red_snapper_spawn_egg"
+		},
+		{
+			"stack": "item:tide:sand_tiger_shark_spawn_egg",
 			"after": "item:tide:sailfish_spawn_egg"
 		},
 		{
+			"stack": "item:tide:saturn_cuttlefish_spawn_egg",
+			"after": "item:tide:sand_tiger_shark_spawn_egg"
+		},
+		{
+			"stack": "item:tide:shadow_shark_spawn_egg",
+			"after": "item:tide:saturn_cuttlefish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:shadow_snapper_spawn_egg",
+			"after": "item:tide:shadow_shark_spawn_egg"
+		},
+		{
+			"stack": "item:tide:shooting_starfish_spawn_egg",
+			"after": "item:tide:shadow_snapper_spawn_egg"
+		},
+		{
+			"stack": "item:tide:sleepy_carp_spawn_egg",
+			"after": "item:tide:shooting_starfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:slimy_salmon_spawn_egg",
+			"after": "item:tide:sleepy_carp_spawn_egg"
+		},
+		{
+			"stack": "item:tide:smallmouth_bass_spawn_egg",
+			"after": "item:tide:slimy_salmon_spawn_egg"
+		},
+		{
+			"stack": "item:tide:snatcher_squid_spawn_egg",
+			"after": "item:tide:smallmouth_bass_spawn_egg"
+		},
+		{
+			"stack": "item:tide:snook_spawn_egg",
+			"after": "item:tide:snatcher_squid_spawn_egg"
+		},
+		{
+			"stack": "item:tide:soulscale_spawn_egg",
+			"after": "item:tide:snook_spawn_egg"
+		},
+		{
+			"stack": "item:tide:spore_stalker_spawn_egg",
+			"after": "item:tide:soulscale_spawn_egg"
+		},
+		{
+			"stack": "item:tide:sturgeon_spawn_egg",
+			"after": "item:tide:spore_stalker_spawn_egg"
+		},
+		{
+			"stack": "item:tide:sun_emblem_spawn_egg",
+			"after": "item:tide:sturgeon_spawn_egg"
+		},
+		{
+			"stack": "item:tide:swordfish_spawn_egg",
+			"after": "item:tide:sun_emblem_spawn_egg"
+		},
+		{
 			"stack": "item:tide:tuna_spawn_egg",
-			"after": "item:tide:trout_spawn_egg"
+			"after": "item:tide:swordfish_spawn_egg"
+		},
+		{
+			"stack": "item:tide:uranias_pisces_spawn_egg",
+			"after": "item:tide:tuna_spawn_egg"
+		},
+		{
+			"stack": "item:tide:vengeance_spawn_egg",
+			"after": "item:tide:uranias_pisces_spawn_egg"
+		},
+		{
+			"stack": "item:tide:violet_carp_spawn_egg",
+			"after": "item:tide:vengeance_spawn_egg"
+		},
+		{
+			"stack": "item:tide:voidseeker_spawn_egg",
+			"after": "item:tide:violet_carp_spawn_egg"
+		},
+		{
+			"stack": "item:tide:volcano_tuna_spawn_egg",
+			"after": "item:tide:voidseeker_spawn_egg"
+		},
+		{
+			"stack": "item:tide:walleye_spawn_egg",
+			"after": "item:tide:volcano_tuna_spawn_egg"
+		},
+		{
+			"stack": "item:tide:warped_guppy_spawn_egg",
+			"after": "item:tide:walleye_spawn_egg"
+		},
+		{
+			"stack": "item:tide:white_crappie_spawn_egg",
+			"after": "item:tide:warped_guppy_spawn_egg"
+		},
+		{
+			"stack": "item:tide:witherfin_spawn_egg",
+			"after": "item:tide:white_crappie_spawn_egg"
 		},
 		{
 			"stack": "item:tide:yellow_perch_spawn_egg",
-			"after": "item:tide:tuna_spawn_egg"
+			"after": "item:tide:witherfin_spawn_egg"
 		},
 		{
 			"stack": "item:twilightforest:adherent_spawn_egg",
@@ -12156,24 +12587,16 @@
 			"after": "item:aether:skyroot_log"
 		},
 		{
-			"stack": "item:everycomp:q/aether/skyroot_post",
-			"after": "item:aether:skyroot_wood"
-		},
-		{
 			"stack": "item:aether:stripped_skyroot_log",
-			"after": "item:everycomp:q/aether/skyroot_post"
+			"after": "item:aether:skyroot_wood"
 		},
 		{
 			"stack": "item:aether:stripped_skyroot_wood",
 			"after": "item:aether:stripped_skyroot_log"
 		},
 		{
-			"stack": "item:everycomp:q/aether/stripped_skyroot_post",
-			"after": "item:aether:stripped_skyroot_wood"
-		},
-		{
 			"stack": "item:aether:skyroot_planks",
-			"after": "item:everycomp:q/aether/stripped_skyroot_post"
+			"after": "item:aether:stripped_skyroot_wood"
 		},
 		{
 			"stack": "item:everycomp:ap/aether/skyroot_boards",
@@ -12224,12 +12647,8 @@
 			"after": "item:everycomp:hc/aether/skyroot_counter"
 		},
 		{
-			"stack": "item:everycomp:q/aether/skyroot_chest",
-			"after": "item:everycomp:fd/aether/skyroot_cabinet"
-		},
-		{
 			"stack": "item:everycomp:hc/aether/skyroot_fancy_bed",
-			"after": "item:everycomp:q/aether/skyroot_chest"
+			"after": "item:everycomp:fd/aether/skyroot_cabinet"
 		},
 		{
 			"stack": "item:aether:skyroot_stairs",
@@ -12268,12 +12687,8 @@
 			"after": "item:aether:skyroot_door"
 		},
 		{
-			"stack": "item:everycomp:q/aether/skyroot_ladder",
-			"after": "item:aether:skyroot_trapdoor"
-		},
-		{
 			"stack": "item:everycomp:hnhome/aether/skyroot_lattice",
-			"after": "item:everycomp:q/aether/skyroot_ladder"
+			"after": "item:aether:skyroot_trapdoor"
 		},
 		{
 			"stack": "item:aether:skyroot_pressure_plate",
@@ -16661,6 +17076,7 @@
 		"/witherstormmod:firework_bundle/",
 		"/sortilege:limitite/",
 		"/dummmmmmy:target_dummy/",
+		"/create:experience_block/",
 		"/supplementaries:flag_pink/",
 		"/supplementaries:flag_purple/",
 		"/supplementaries:flag_brown/",
@@ -17375,20 +17791,106 @@
 		"/the_bumblezone:rootmin_spawn_egg/",
 		"/the_bumblezone:sentry_watcher_spawn_egg/",
 		"/the_bumblezone:variant_bee_spawn_egg/",
+		"/tide:abyss_angler_spawn_egg/",
+		"/tide:alpha_fish_spawn_egg/",
+		"/tide:amber_rockfish_spawn_egg/",
+		"/tide:anchovy_spawn_egg/",
 		"/tide:angelfish_spawn_egg/",
-		"/tide:barracuda_spawn_egg/",
-		"/tide:bass_spawn_egg/",
+		"/tide:anglerfish_spawn_egg/",
+		"/tide:aquathorn_spawn_egg/",
+		"/tide:arapaima_spawn_egg/",
+		"/tide:ash_perch_spawn_egg/",
+		"/tide:bedrock_bug_spawn_egg/",
+		"/tide:bedrock_tetra_spawn_egg/",
+		"/tide:black_crappie_spawn_egg/",
+		"/tide:blazing_swordfish_spawn_egg/",
+		"/tide:blossom_bass_spawn_egg/",
+		"/tide:blue_neonfish_spawn_egg/",
 		"/tide:bluegill_spawn_egg/",
+		"/tide:brook_trout_spawn_egg/",
+		"/tide:bull_shark_spawn_egg/",
+		"/tide:carp_spawn_egg/",
 		"/tide:catfish_spawn_egg/",
-		"/tide:clayfish_spawn_egg/",
+		"/tide:cave_crawler_spawn_egg/",
+		"/tide:cave_eel_spawn_egg/",
+		"/tide:chasm_eel_spawn_egg/",
+		"/tide:chorus_cod_spawn_egg/",
+		"/tide:coelacanth_spawn_egg/",
+		"/tide:crimson_fangjaw_spawn_egg/",
+		"/tide:crystal_shrimp_spawn_egg/",
+		"/tide:crystalline_carp_spawn_egg/",
+		"/tide:darkness_eater_spawn_egg/",
+		"/tide:deep_blue_spawn_egg/",
+		"/tide:deep_grouper_spawn_egg/",
+		"/tide:devils_hole_pupfish_spawn_egg/",
+		"/tide:dragon_fish_spawn_egg/",
+		"/tide:dripstone_darter_spawn_egg/",
+		"/tide:dutchman_sock_spawn_egg/",
+		"/tide:echo_snapper_spawn_egg/",
+		"/tide:elytrout_spawn_egg/",
+		"/tide:ember_koi_spawn_egg/",
+		"/tide:ender_glider_spawn_egg/",
+		"/tide:enderfin_spawn_egg/",
+		"/tide:endergazer_spawn_egg/",
+		"/tide:flounder_spawn_egg/",
+		"/tide:frostbite_flounder_spawn_egg/",
+		"/tide:gilded_minnow_spawn_egg/",
+		"/tide:glowfish_spawn_egg/",
+		"/tide:great_white_shark_spawn_egg/",
 		"/tide:guppy_spawn_egg/",
+		"/tide:incandescent_larva_spawn_egg/",
+		"/tide:inferno_guppy_spawn_egg/",
+		"/tide:iron_tetra_spawn_egg/",
+		"/tide:judgment_fish_spawn_egg/",
+		"/tide:lapis_lanternfish_spawn_egg/",
+		"/tide:largemouth_bass_spawn_egg/",
+		"/tide:luminescent_jellyfish_spawn_egg/",
 		"/tide:mackerel_spawn_egg/",
-		"/tide:mint_carp_spawn_egg/",
+		"/tide:magma_mackerel_spawn_egg/",
+		"/tide:mahi_mahi_spawn_egg/",
+		"/tide:manta_ray_spawn_egg/",
+		"/tide:mantyvern_spawn_egg/",
+		"/tide:marstilus_spawn_egg/",
+		"/tide:midas_fish_spawn_egg/",
+		"/tide:mirage_catfish_spawn_egg/",
+		"/tide:mooneye_spawn_egg/",
+		"/tide:nephrosilu_spawn_egg/",
+		"/tide:neptune_koi_spawn_egg/",
+		"/tide:obsidian_pike_spawn_egg/",
 		"/tide:ocean_perch_spawn_egg/",
+		"/tide:pale_clubfish_spawn_egg/",
+		"/tide:pentapus_spawn_egg/",
 		"/tide:pike_spawn_egg/",
+		"/tide:pluto_snail_spawn_egg/",
+		"/tide:rainbow_trout_spawn_egg/",
+		"/tide:red_40_spawn_egg/",
+		"/tide:red_snapper_spawn_egg/",
 		"/tide:sailfish_spawn_egg/",
-		"/tide:trout_spawn_egg/",
+		"/tide:sand_tiger_shark_spawn_egg/",
+		"/tide:saturn_cuttlefish_spawn_egg/",
+		"/tide:shadow_shark_spawn_egg/",
+		"/tide:shadow_snapper_spawn_egg/",
+		"/tide:shooting_starfish_spawn_egg/",
+		"/tide:sleepy_carp_spawn_egg/",
+		"/tide:slimy_salmon_spawn_egg/",
+		"/tide:smallmouth_bass_spawn_egg/",
+		"/tide:snatcher_squid_spawn_egg/",
+		"/tide:snook_spawn_egg/",
+		"/tide:soulscale_spawn_egg/",
+		"/tide:spore_stalker_spawn_egg/",
+		"/tide:sturgeon_spawn_egg/",
+		"/tide:sun_emblem_spawn_egg/",
+		"/tide:swordfish_spawn_egg/",
 		"/tide:tuna_spawn_egg/",
+		"/tide:uranias_pisces_spawn_egg/",
+		"/tide:vengeance_spawn_egg/",
+		"/tide:violet_carp_spawn_egg/",
+		"/tide:voidseeker_spawn_egg/",
+		"/tide:volcano_tuna_spawn_egg/",
+		"/tide:walleye_spawn_egg/",
+		"/tide:warped_guppy_spawn_egg/",
+		"/tide:white_crappie_spawn_egg/",
+		"/tide:witherfin_spawn_egg/",
 		"/tide:yellow_perch_spawn_egg/",
 		"/twilightforest:adherent_spawn_egg/",
 		"/twilightforest:alpha_yeti_spawn_egg/",
@@ -18838,10 +19340,8 @@
 		"/netherexp:claret_hanging_sign/",
 		"/aether:skyroot_log/",
 		"/aether:skyroot_wood/",
-		"/everycomp:q\\/aether/skyroot_post/",
 		"/aether:stripped_skyroot_log/",
 		"/aether:stripped_skyroot_wood/",
-		"/everycomp:q\\/aether/stripped_skyroot_post/",
 		"/aether:skyroot_planks/",
 		"/everycomp:ap\\/aether/skyroot_boards/",
 		"/aether:skyroot_bookshelf/",
@@ -18855,7 +19355,6 @@
 		"/everycomp:hc\\/aether/skyroot_table/",
 		"/everycomp:hc\\/aether/skyroot_counter/",
 		"/everycomp:fd\\/aether/skyroot_cabinet/",
-		"/everycomp:q\\/aether/skyroot_chest/",
 		"/everycomp:hc\\/aether/skyroot_fancy_bed/",
 		"/aether:skyroot_stairs/",
 		"/aether:skyroot_slab/",
@@ -18866,7 +19365,6 @@
 		"/aether:skyroot_fence_gate/",
 		"/aether:skyroot_door/",
 		"/aether:skyroot_trapdoor/",
-		"/everycomp:q\\/aether/skyroot_ladder/",
 		"/everycomp:hnhome\\/aether/skyroot_lattice/",
 		"/aether:skyroot_pressure_plate/",
 		"/aether:skyroot_button/",

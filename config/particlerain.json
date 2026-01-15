@@ -10,8 +10,8 @@
   "sound": {
     "rainVolume": 0.25,
     "snowVolume": 0.14999999,
-    "windVolume": 0.35,
-    "blockVolume": 0.25
+    "windVolume": 0.14999999,
+    "blockVolume": 0.07
   },
   "wind": {
     "strength": 0.4,

@@ -17,11 +17,11 @@ PlayerEvents.tick(event => {
 		miningSpeedAttribute.addPermanentModifier(new $AttributeModifier(MiningSpeedUUID, 'Mining speed bonus', 0.25, $Operation.ADDITION))
 	}
 
-	const barSizeAttribute = player.getAttribute('stardew_fishing:bar_size')
-	const barSize = barSizeAttribute.getModifier(FishingUUID);
-	if (!barSize) {
-		barSizeAttribute.addPermanentModifier(new $AttributeModifier(FishingUUID, 'Stardew Fishing Bar Size', 10, $Operation.ADDITION))
-	}
+	// const barSizeAttribute = player.getAttribute('stardew_fishing:bar_size')
+	// const barSize = barSizeAttribute.getModifier(FishingUUID);
+	// if (!barSize) {
+	// 	barSizeAttribute.addPermanentModifier(new $AttributeModifier(FishingUUID, 'Stardew Fishing Bar Size', 10, $Operation.ADDITION))
+	// }
 
 	// Architect Prism grants creative flight when in inventory
 	const inventory = player.getInventory().getAllItems();

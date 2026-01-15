@@ -224,7 +224,7 @@ ServerEvents.tick(event => {
 		const command = '/immersivemessages sendcustom @a[distance=0..] {anchor:0,y:' + y + ',color:"' + color + '"' + (slideArgs ? ',' + slideArgs : '') + '} ' + duration + ' ' + text;
 
 		server.runCommand(
-			commandInWorld(server.getOverworld().getDimension(), command)
+			commandInWorld("minecraft:overworld", command)
 		);
 	}
 

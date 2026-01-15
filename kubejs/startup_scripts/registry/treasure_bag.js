@@ -44,6 +44,7 @@ global.bossMobsNoTreasureBag = [
 	"twilightforest:alpha_yeti",
 	"twilightforest:snow_queen",
 	"twilightforest:plateau_boss",
+	'ancient_aether:mutated_aechor_plant',
 ]
 
 StartupEvents.registry('item', event => {

@@ -23,20 +23,18 @@ ItemEvents.tooltip(event => {
 	}
 
 	/*
-		3 nukes for tooltips
+		4 nukes for tooltips
 		First one completely removes descriptions of items
 		Second one removes the mentions of items protecting against bleeding
 		Third one removes duplicate effect strings for food items
+		Fourth one removes default Ars tooltips from some items
 	*/
-	//priority: 100
 	event.addAdvanced([
 		'@mcdw',
 		'sortilege:limitite',
 		'botanicadds:dreaming_pool',
 		'majruszsdifficulty:recall_potion',
 		'heart_crystals:heart_crystal',
-		'ars_nouveau:ring_of_lesser_discount',
-		'ars_nouveau:ring_of_greater_discount',
 		// 'aquamirae:sea_stew',
 		// 'aquamirae:poseidons_breakfast',
 		// 'aquamirae:sea_caserole'
@@ -54,7 +52,6 @@ ItemEvents.tooltip(event => {
 			text.remove(1)
 		}
 	})
-	//priority: 100
 	event.addAdvancedToAll((item, advanced, text) => {
 		const original = text.toArray();
 		for (let i = original.length - 1; i > 0; i--) {
@@ -66,7 +63,6 @@ ItemEvents.tooltip(event => {
 			}
 		}
 	})
-	//priority: 100
 	event.addAdvancedToAll((item, advanced, text) => {
 		const foodProperties = item.getFoodProperties(currentPlayer)
 		if (foodProperties) {
@@ -88,6 +84,25 @@ ItemEvents.tooltip(event => {
 				for (let i = 1; i < (blue + red) / 2 + 1; i++) {
 					text.remove(1)
 				}
+			}
+		}
+	})
+	event.addAdvanced([
+		'ars_nouveau:ring_of_lesser_discount',
+		'ars_nouveau:ring_of_greater_discount',
+		'ars_nouveau:mana_gem',
+		'ars_nouveau:magebloom',
+		'ars_nouveau:experience_gem',
+		'ars_nouveau:greater_experience_gem'
+	], (item, advanced, text) => {
+		for (let i = text.size() - 1; i > 1; i--) {
+			let element = text[i];
+			if (!text[i].toString().includes('color=dark_gray')) {
+				text.remove(i);
+				if (!advanced) {
+					text.remove(i - 1);
+				}
+				return;
 			}
 		}
 	})
