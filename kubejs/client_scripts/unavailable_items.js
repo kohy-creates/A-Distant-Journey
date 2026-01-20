@@ -9,6 +9,13 @@ ADJClientEvents.itemIsLockedRenderCheck(event => {
 	 */
 	const player = event.getPlayer();
 
+	if (item.getId().includes('valkyrum')) {
+		if (!player.stages.has('valkyrum_unlocked')) {
+			event.cancel();
+			return;
+		}
+	}
+
 	let chapters = [],
 		exceptions = [];
 	item.getTags().toArray().forEach(tag => {

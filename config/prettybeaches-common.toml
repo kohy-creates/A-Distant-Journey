@@ -3,5 +3,5 @@ infiniteBucketWater = false
 #Whether the flooding of adjacent air blocks should be animated or instant.
 animatedFlooding = true
 #List of blocks that should be affected by the adjusted water physics. If you want to have all blocks affected, just include "*" in the list.
-affectedBlocks = ["minecraft:sand"]
+affectedBlocks = ["minecraft:sand", "minecraft:gravel", "minecraft:clay_block", "minecraft:red_sand"]
 

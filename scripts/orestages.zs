@@ -26,3 +26,6 @@ OreStages.addOreStage("chapter_4", <blockstate:majruszsdifficulty:enderium_shard
 // Chapter 5 new ores
 OreStages.addOreStage("chapter_5", <blockstate:mythicmetals:unobtainium_ore>, <blockstate:minecraft:stone>);
 OreStages.addOreStage("chapter_5", <blockstate:mythicmetals:deepslate_unobtainium_ore>, <blockstate:minecraft:deepslate>);
+
+// Side progression
+OreStages.addOreStage("valkyrum_unlocked", <blockstate:ancient_aether:valkyrum_ore>, <blockstate:aether:holystone>);

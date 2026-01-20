@@ -416,14 +416,23 @@ global.setBonusMap = {
 	},
 	'ars_nouveau:arcanist_0': {
 		description: [
-			"Increases all spell damage by 4"
+			"8% increased magic damage",
+			"5% reduced mana cost"
 		],
 		effects: [
 			{
 				type: "attribute",
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
-					value: 4,
+					value: 8,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.05,
 					operation: 0
 				}
 			}
@@ -431,7 +440,8 @@ global.setBonusMap = {
 	},
 	'ars_nouveau:arcanist_1': {
 		description: [
-			"Increases all spell damage by 6",
+			"10% increased magic damage",
+			"6% reduced mana cost",
 			'Press \'R\' to perform a short dash',
 		],
 		effects: [
@@ -439,7 +449,15 @@ global.setBonusMap = {
 				type: "attribute",
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
-					value: 6,
+					value: 10,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.06,
 					operation: 0
 				}
 			},
@@ -463,7 +481,8 @@ global.setBonusMap = {
 	},
 	'ars_nouveau:arcanist_2': {
 		description: [
-			"Increases all spell damage by 12",
+			"13% increased magic damage",
+			"8% reduced mana cost",
 			'Press \'R\' to perform a rapid dash',
 		],
 		effects: [
@@ -471,7 +490,15 @@ global.setBonusMap = {
 				type: "attribute",
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
-					value: 12,
+					value: 13,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.08,
 					operation: 0
 				}
 			},
@@ -495,7 +522,8 @@ global.setBonusMap = {
 	},
 	'ars_elemental:fire': {
 		description: [
-			"Increases all spell damage by 16",
+			"17% increased magic damage",
+			"10% reduced mana cost",
 			'Press \'R\' to perform a rapid dash',
 			'Transforms some of the received',
 			'fire damage into Mana',
@@ -506,7 +534,15 @@ global.setBonusMap = {
 				type: "attribute",
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
-					value: 16,
+					value: 17,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.08,
 					operation: 0
 				}
 			},
@@ -530,7 +566,8 @@ global.setBonusMap = {
 	},
 	'ars_elemental:fire': {
 		description: [
-			"Increases all spell damage by 16",
+			"17% increased magic damage",
+			"10% reduced mana cost",
 			'Press \'R\' to perform a rapid dash',
 			'Transforms some of the received',
 			'fire-type damage into Mana',
@@ -541,7 +578,15 @@ global.setBonusMap = {
 				type: "attribute",
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
-					value: 16,
+					value: 17,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.1,
 					operation: 0
 				}
 			},
@@ -565,7 +610,8 @@ global.setBonusMap = {
 	},
 	'ars_elemental:air': {
 		description: [
-			"Increases all spell damage by 16",
+			"17% increased magic damage",
+			"10% reduced mana cost",
 			'Press \'R\' to perform a rapid dash',
 			'Transforms some of the received',
 			'air-type damage (idk either) into Mana',
@@ -576,7 +622,15 @@ global.setBonusMap = {
 				type: "attribute",
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
-					value: 16,
+					value: 17,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.1,
 					operation: 0
 				}
 			},
@@ -600,7 +654,8 @@ global.setBonusMap = {
 	},
 	'ars_elemental:earth': {
 		description: [
-			"Increases all spell damage by 16",
+			"17% increased magic damage",
+			"10% reduced mana cost",
 			'Press \'R\' to perform a rapid dash',
 			'Transforms some of the received',
 			'earth-type damage into Mana',
@@ -611,7 +666,15 @@ global.setBonusMap = {
 				type: "attribute",
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
-					value: 16,
+					value: 17,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.1,
 					operation: 0
 				}
 			},
@@ -635,7 +698,8 @@ global.setBonusMap = {
 	},
 	'ars_elemental:earth': {
 		description: [
-			"Increases all spell damage by 16",
+			"17% increased magic damage",
+			"10% reduced mana cost",
 			'Press \'R\' to perform a rapid dash',
 			'Transforms some of the received',
 			'water-type damage into Mana',
@@ -646,7 +710,15 @@ global.setBonusMap = {
 				type: "attribute",
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
-					value: 16,
+					value: 17,
+					operation: 0
+				}
+			},
+			{
+				type: "attribute",
+				value: {
+					id: 'adjcore:player.mana_cost_reduction',
+					value: 0.1,
 					operation: 0
 				}
 			},
@@ -958,7 +1030,7 @@ global.setBonusMap = {
 		],
 		effects: []
 	},
-	'aether:valkyrie': {
+	'ancient_aether:valkyrum': {
 		description: [
 			'Grants short distance flight'
 		],
@@ -973,7 +1045,7 @@ global.setBonusMap = {
 	'born_in_chaos_v1:nightmare_mantleofthe_night': {
 		description: [
 			'Increases effectiveness of dark magic weapons and items',
-			'Increases spell damage by 7',
+			'12% increased magic damage',
 			'Increases spell armor penetration by 15'
 		],
 		effects: [
@@ -981,7 +1053,7 @@ global.setBonusMap = {
 				type: "attribute",
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
-					value: 7,
+					value: 12,
 					operation: 0
 				}
 			},

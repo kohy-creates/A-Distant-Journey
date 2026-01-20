@@ -43,7 +43,7 @@
 	allowCastingBySpout = true
 	#.
 	#Display vanilla Log-stripping interactions in JEI.
-	displayLogStrippingRecipes = true
+	displayLogStrippingRecipes = false
 	#.
 	#The amount of Light sources destroyed before Chromatic Compound turns into Refined Radiance.
 	#Range: > 1
@@ -65,7 +65,7 @@
 	#.
 	#Maximum length in blocks of mechanical belts.
 	#Range: > 5
-	maxBeltLength = 20
+	maxBeltLength = 30
 	#.
 	#Maximum length in blocks of chain conveyor connections.
 	#Range: > 5
@@ -387,7 +387,7 @@
 	#.
 	#The total amount of stacks a vault can hold per block in size.
 	#Range: 1 ~ 2048
-	vaultCapacity = 20
+	vaultCapacity = 30
 	#.
 	#The amount of packages a chain conveyor can carry at a time.
 	#Range: > 1

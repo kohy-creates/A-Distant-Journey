@@ -90,17 +90,18 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced([
 		'ars_nouveau:ring_of_lesser_discount',
 		'ars_nouveau:ring_of_greater_discount',
-		'ars_nouveau:mana_gem',
 		'ars_nouveau:magebloom',
 		'ars_nouveau:experience_gem',
-		'ars_nouveau:greater_experience_gem'
+		'ars_nouveau:greater_experience_gem',
+		'ars_nouveau:source_gem',
+		'ars_nouveau:wilden_horn',
+		'ars_nouveau:wilden_spike'
 	], (item, advanced, text) => {
-		for (let i = text.size() - 1; i > 1; i--) {
-			let element = text[i];
+		for (let i = text.size() - 1; i > 0; i--) {
 			if (!text[i].toString().includes('color=dark_gray')) {
 				text.remove(i);
 				if (!advanced) {
-					text.remove(i - 1);
+					// text.remove(i - 1);
 				}
 				return;
 			}

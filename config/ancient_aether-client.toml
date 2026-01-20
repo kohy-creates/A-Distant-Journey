@@ -1,7 +1,7 @@
 
 [Tooltips]
 	#Gives Aether Dungeon Loot a certain rarity in form of a tooltip
-	"Rarity System" = true
+	"Rarity System" = false
 	#Displays the Moas Mid-Air Jumps and Speed as a tooltip on the egg
 	"Moa Egg Tooltips" = true
 	#Displays what mob is summoned by Trapped Dungeon Blocks as well as what boss is required to unlock Boss Doorway Blocks on the item

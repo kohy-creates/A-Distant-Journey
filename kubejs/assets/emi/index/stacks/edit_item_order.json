@@ -111,6 +111,7 @@
 		"item:minecraft:music_disc_strad",
 		"item:minecraft:music_disc_wait",
 		"item:minecraft:music_disc_ward",
+		"item:neapolitan:music_disc_hullabaloo",
 		"item:netherexp:music_disc_buckshot_wonderland",
 		"item:netherexp:music_disc_cricket",
 		"item:phantasm:music_disc_abruption",
@@ -174,6 +175,10 @@
 		"item:minecraft:shelter_pottery_sherd",
 		"item:minecraft:skull_pottery_sherd",
 		"item:minecraft:snort_pottery_sherd",
+		"item:neapolitan:reflection_pottery_sherd",
+		"item:neapolitan:scream_pottery_sherd",
+		"item:neapolitan:snack_pottery_sherd",
+		"item:neapolitan:spider_pottery_sherd",
 		"item:netherexp:botanical_pottery_sherd",
 		"item:netherexp:deception_pottery_sherd",
 		"item:netherexp:eldritch_pottery_sherd",
@@ -194,6 +199,7 @@
 		"item:minecraft:mojang_banner_pattern",
 		"item:minecraft:piglin_banner_pattern",
 		"item:minecraft:skull_banner_pattern",
+		"item:neapolitan:chimpanzee_banner_pattern",
 		"item:supplementaries:dragon_banner_pattern",
 		"item:the_bumblezone:banner_pattern_arrows",
 		"item:the_bumblezone:banner_pattern_bee",
@@ -253,6 +259,7 @@
 		"item:mythicmetals:royal_midas_smithing_template",
 		"item:mythicmetals:tidesinger_smithing_template",
 		"item:mythicmetals:unobtainium_smithing_template",
+		"item:neapolitan:primal_armor_trim_smithing_template",
 		"item:netherexp:pump_charge_upgrade_smithing_template",
 		"item:netherexp:rift_armor_trim_smithing_template",
 		"item:netherexp:spirit_armor_trim_smithing_template",
@@ -708,6 +715,8 @@
 		"item:naturalist:tortoise_spawn_egg",
 		"item:naturalist:vulture_spawn_egg",
 		"item:naturalist:zebra_spawn_egg",
+		"item:neapolitan:chimpanzee_spawn_egg",
+		"item:neapolitan:plantain_spider_spawn_egg",
 		"item:netherdepthsupgrade:blazefish_spawn_egg",
 		"item:netherdepthsupgrade:bonefish_spawn_egg",
 		"item:netherdepthsupgrade:eyeball_fish_spawn_egg",
@@ -2299,8 +2308,10 @@
 		"item:netherexp:claret_hanging_sign",
 		"item:aether:skyroot_log",
 		"item:aether:skyroot_wood",
+		"item:everycomp:q/aether/skyroot_post",
 		"item:aether:stripped_skyroot_log",
 		"item:aether:stripped_skyroot_wood",
+		"item:everycomp:q/aether/stripped_skyroot_post",
 		"item:aether:skyroot_planks",
 		"item:everycomp:ap/aether/skyroot_boards",
 		"item:aether:skyroot_bookshelf",
@@ -2314,6 +2325,7 @@
 		"item:everycomp:hc/aether/skyroot_table",
 		"item:everycomp:hc/aether/skyroot_counter",
 		"item:everycomp:fd/aether/skyroot_cabinet",
+		"item:everycomp:q/aether/skyroot_chest",
 		"item:everycomp:hc/aether/skyroot_fancy_bed",
 		"item:aether:skyroot_stairs",
 		"item:aether:skyroot_slab",
@@ -2324,6 +2336,7 @@
 		"item:aether:skyroot_fence_gate",
 		"item:aether:skyroot_door",
 		"item:aether:skyroot_trapdoor",
+		"item:everycomp:q/aether/skyroot_ladder",
 		"item:everycomp:hnhome/aether/skyroot_lattice",
 		"item:aether:skyroot_pressure_plate",
 		"item:aether:skyroot_button",
@@ -3376,6 +3389,7 @@
 		"item:v_slab_compat:create/small_andesite_brick_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/black_tile_vertical_slab",
 		"item:v_slab_compat:galosphere/silver_tiles_vertical_slab",
+		"item:v_slab_compat:neapolitan/chocolate_brick_vertical_slab",
 		"item:v_slab_compat:aether_redux/divinite_vertical_slab",
 		"item:v_slab_compat:create/exposed_copper_shingle_vertical_slab",
 		"item:v_slab_compat:phantasm/cirite_bricks_vertical_slab",
@@ -3394,6 +3408,7 @@
 		"item:v_slab_compat:galosphere/rose_pink_salt_brick_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/magenta_shingle_vertical_slab",
 		"item:v_slab_compat:ecologics/seashell_tile_vertical_slab",
+		"item:v_slab_compat:neapolitan/chocolate_tile_vertical_slab",
 		"item:v_slab_compat:rediscovered/coarse_dirt_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/pink_shingle_vertical_slab",
 		"item:v_slab_compat:unusualend/chorus_nest_mosaic_vertical_slab",
@@ -3411,6 +3426,7 @@
 		"item:v_slab_compat:netherexp/basalt_vertical_slab",
 		"item:v_slab_compat:aether_redux/shell_shingle_vertical_slab",
 		"item:v_slab_compat:upgrade_aquatic/pillow_coralstone_vertical_slab",
+		"item:v_slab_compat:neapolitan/frond_thatch_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/yellow_shingle_vertical_slab"
 	],
 	"added": [
@@ -3835,8 +3851,12 @@
 			"after": "item:minecraft:music_disc_wait"
 		},
 		{
-			"stack": "item:netherexp:music_disc_buckshot_wonderland",
+			"stack": "item:neapolitan:music_disc_hullabaloo",
 			"after": "item:minecraft:music_disc_ward"
+		},
+		{
+			"stack": "item:netherexp:music_disc_buckshot_wonderland",
+			"after": "item:neapolitan:music_disc_hullabaloo"
 		},
 		{
 			"stack": "item:netherexp:music_disc_cricket",
@@ -4087,8 +4107,24 @@
 			"after": "item:minecraft:skull_pottery_sherd"
 		},
 		{
-			"stack": "item:netherexp:botanical_pottery_sherd",
+			"stack": "item:neapolitan:reflection_pottery_sherd",
 			"after": "item:minecraft:snort_pottery_sherd"
+		},
+		{
+			"stack": "item:neapolitan:scream_pottery_sherd",
+			"after": "item:neapolitan:reflection_pottery_sherd"
+		},
+		{
+			"stack": "item:neapolitan:snack_pottery_sherd",
+			"after": "item:neapolitan:scream_pottery_sherd"
+		},
+		{
+			"stack": "item:neapolitan:spider_pottery_sherd",
+			"after": "item:neapolitan:snack_pottery_sherd"
+		},
+		{
+			"stack": "item:netherexp:botanical_pottery_sherd",
+			"after": "item:neapolitan:spider_pottery_sherd"
 		},
 		{
 			"stack": "item:netherexp:deception_pottery_sherd",
@@ -4167,8 +4203,12 @@
 			"after": "item:minecraft:piglin_banner_pattern"
 		},
 		{
-			"stack": "item:supplementaries:dragon_banner_pattern",
+			"stack": "item:neapolitan:chimpanzee_banner_pattern",
 			"after": "item:minecraft:skull_banner_pattern"
+		},
+		{
+			"stack": "item:supplementaries:dragon_banner_pattern",
+			"after": "item:neapolitan:chimpanzee_banner_pattern"
 		},
 		{
 			"stack": "item:the_bumblezone:banner_pattern_arrows",
@@ -4403,8 +4443,12 @@
 			"after": "item:mythicmetals:tidesinger_smithing_template"
 		},
 		{
-			"stack": "item:netherexp:pump_charge_upgrade_smithing_template",
+			"stack": "item:neapolitan:primal_armor_trim_smithing_template",
 			"after": "item:mythicmetals:unobtainium_smithing_template"
+		},
+		{
+			"stack": "item:netherexp:pump_charge_upgrade_smithing_template",
+			"after": "item:neapolitan:primal_armor_trim_smithing_template"
 		},
 		{
 			"stack": "item:netherexp:rift_armor_trim_smithing_template",
@@ -6223,8 +6267,16 @@
 			"after": "item:naturalist:vulture_spawn_egg"
 		},
 		{
-			"stack": "item:netherdepthsupgrade:blazefish_spawn_egg",
+			"stack": "item:neapolitan:chimpanzee_spawn_egg",
 			"after": "item:naturalist:zebra_spawn_egg"
+		},
+		{
+			"stack": "item:neapolitan:plantain_spider_spawn_egg",
+			"after": "item:neapolitan:chimpanzee_spawn_egg"
+		},
+		{
+			"stack": "item:netherdepthsupgrade:blazefish_spawn_egg",
+			"after": "item:neapolitan:plantain_spider_spawn_egg"
 		},
 		{
 			"stack": "item:netherdepthsupgrade:bonefish_spawn_egg",
@@ -12587,16 +12639,24 @@
 			"after": "item:aether:skyroot_log"
 		},
 		{
-			"stack": "item:aether:stripped_skyroot_log",
+			"stack": "item:everycomp:q/aether/skyroot_post",
 			"after": "item:aether:skyroot_wood"
+		},
+		{
+			"stack": "item:aether:stripped_skyroot_log",
+			"after": "item:everycomp:q/aether/skyroot_post"
 		},
 		{
 			"stack": "item:aether:stripped_skyroot_wood",
 			"after": "item:aether:stripped_skyroot_log"
 		},
 		{
-			"stack": "item:aether:skyroot_planks",
+			"stack": "item:everycomp:q/aether/stripped_skyroot_post",
 			"after": "item:aether:stripped_skyroot_wood"
+		},
+		{
+			"stack": "item:aether:skyroot_planks",
+			"after": "item:everycomp:q/aether/stripped_skyroot_post"
 		},
 		{
 			"stack": "item:everycomp:ap/aether/skyroot_boards",
@@ -12647,8 +12707,12 @@
 			"after": "item:everycomp:hc/aether/skyroot_counter"
 		},
 		{
-			"stack": "item:everycomp:hc/aether/skyroot_fancy_bed",
+			"stack": "item:everycomp:q/aether/skyroot_chest",
 			"after": "item:everycomp:fd/aether/skyroot_cabinet"
+		},
+		{
+			"stack": "item:everycomp:hc/aether/skyroot_fancy_bed",
+			"after": "item:everycomp:q/aether/skyroot_chest"
 		},
 		{
 			"stack": "item:aether:skyroot_stairs",
@@ -12687,8 +12751,12 @@
 			"after": "item:aether:skyroot_door"
 		},
 		{
-			"stack": "item:everycomp:hnhome/aether/skyroot_lattice",
+			"stack": "item:everycomp:q/aether/skyroot_ladder",
 			"after": "item:aether:skyroot_trapdoor"
+		},
+		{
+			"stack": "item:everycomp:hnhome/aether/skyroot_lattice",
+			"after": "item:everycomp:q/aether/skyroot_ladder"
 		},
 		{
 			"stack": "item:aether:skyroot_pressure_plate",
@@ -16895,6 +16963,10 @@
 			"after": "item:galosphere:silver_tiles_slab"
 		},
 		{
+			"stack": "item:v_slab_compat:neapolitan/chocolate_brick_vertical_slab",
+			"after": "item:neapolitan:chocolate_brick_slab"
+		},
+		{
 			"stack": "item:v_slab_compat:aether_redux/divinite_vertical_slab",
 			"after": "item:aether_redux:divinite_slab"
 		},
@@ -16967,6 +17039,10 @@
 			"after": "item:ecologics:seashell_tile_slab"
 		},
 		{
+			"stack": "item:v_slab_compat:neapolitan/chocolate_tile_vertical_slab",
+			"after": "item:neapolitan:chocolate_tile_slab"
+		},
+		{
 			"stack": "item:v_slab_compat:rediscovered/coarse_dirt_vertical_slab",
 			"after": "item:rediscovered:coarse_dirt_slab"
 		},
@@ -17033,6 +17109,10 @@
 		{
 			"stack": "item:v_slab_compat:upgrade_aquatic/pillow_coralstone_vertical_slab",
 			"after": "item:upgrade_aquatic:pillow_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:neapolitan/frond_thatch_vertical_slab",
+			"after": "item:neapolitan:frond_thatch_slab"
 		},
 		{
 			"stack": "item:v_slab_compat:hearth_and_home/yellow_shingle_vertical_slab",
@@ -17152,6 +17232,7 @@
 		"/minecraft:music_disc_strad/",
 		"/minecraft:music_disc_wait/",
 		"/minecraft:music_disc_ward/",
+		"/neapolitan:music_disc_hullabaloo/",
 		"/netherexp:music_disc_buckshot_wonderland/",
 		"/netherexp:music_disc_cricket/",
 		"/phantasm:music_disc_abruption/",
@@ -17215,6 +17296,10 @@
 		"/minecraft:shelter_pottery_sherd/",
 		"/minecraft:skull_pottery_sherd/",
 		"/minecraft:snort_pottery_sherd/",
+		"/neapolitan:reflection_pottery_sherd/",
+		"/neapolitan:scream_pottery_sherd/",
+		"/neapolitan:snack_pottery_sherd/",
+		"/neapolitan:spider_pottery_sherd/",
 		"/netherexp:botanical_pottery_sherd/",
 		"/netherexp:deception_pottery_sherd/",
 		"/netherexp:eldritch_pottery_sherd/",
@@ -17235,6 +17320,7 @@
 		"/minecraft:mojang_banner_pattern/",
 		"/minecraft:piglin_banner_pattern/",
 		"/minecraft:skull_banner_pattern/",
+		"/neapolitan:chimpanzee_banner_pattern/",
 		"/supplementaries:dragon_banner_pattern/",
 		"/the_bumblezone:banner_pattern_arrows/",
 		"/the_bumblezone:banner_pattern_bee/",
@@ -17294,6 +17380,7 @@
 		"/mythicmetals:royal_midas_smithing_template/",
 		"/mythicmetals:tidesinger_smithing_template/",
 		"/mythicmetals:unobtainium_smithing_template/",
+		"/neapolitan:primal_armor_trim_smithing_template/",
 		"/netherexp:pump_charge_upgrade_smithing_template/",
 		"/netherexp:rift_armor_trim_smithing_template/",
 		"/netherexp:spirit_armor_trim_smithing_template/",
@@ -17749,6 +17836,8 @@
 		"/naturalist:tortoise_spawn_egg/",
 		"/naturalist:vulture_spawn_egg/",
 		"/naturalist:zebra_spawn_egg/",
+		"/neapolitan:chimpanzee_spawn_egg/",
+		"/neapolitan:plantain_spider_spawn_egg/",
 		"/netherdepthsupgrade:blazefish_spawn_egg/",
 		"/netherdepthsupgrade:bonefish_spawn_egg/",
 		"/netherdepthsupgrade:eyeball_fish_spawn_egg/",
@@ -19340,8 +19429,10 @@
 		"/netherexp:claret_hanging_sign/",
 		"/aether:skyroot_log/",
 		"/aether:skyroot_wood/",
+		"/everycomp:q\\/aether/skyroot_post/",
 		"/aether:stripped_skyroot_log/",
 		"/aether:stripped_skyroot_wood/",
+		"/everycomp:q\\/aether/stripped_skyroot_post/",
 		"/aether:skyroot_planks/",
 		"/everycomp:ap\\/aether/skyroot_boards/",
 		"/aether:skyroot_bookshelf/",
@@ -19355,6 +19446,7 @@
 		"/everycomp:hc\\/aether/skyroot_table/",
 		"/everycomp:hc\\/aether/skyroot_counter/",
 		"/everycomp:fd\\/aether/skyroot_cabinet/",
+		"/everycomp:q\\/aether/skyroot_chest/",
 		"/everycomp:hc\\/aether/skyroot_fancy_bed/",
 		"/aether:skyroot_stairs/",
 		"/aether:skyroot_slab/",
@@ -19365,6 +19457,7 @@
 		"/aether:skyroot_fence_gate/",
 		"/aether:skyroot_door/",
 		"/aether:skyroot_trapdoor/",
+		"/everycomp:q\\/aether/skyroot_ladder/",
 		"/everycomp:hnhome\\/aether/skyroot_lattice/",
 		"/aether:skyroot_pressure_plate/",
 		"/aether:skyroot_button/",
@@ -20417,6 +20510,7 @@
 		"/v_slab_compat:create\\/small_andesite_brick_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/black_tile_vertical_slab/",
 		"/v_slab_compat:galosphere\\/silver_tiles_vertical_slab/",
+		"/v_slab_compat:neapolitan\\/chocolate_brick_vertical_slab/",
 		"/v_slab_compat:aether_redux\\/divinite_vertical_slab/",
 		"/v_slab_compat:create\\/exposed_copper_shingle_vertical_slab/",
 		"/v_slab_compat:phantasm\\/cirite_bricks_vertical_slab/",
@@ -20435,6 +20529,7 @@
 		"/v_slab_compat:galosphere\\/rose_pink_salt_brick_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/magenta_shingle_vertical_slab/",
 		"/v_slab_compat:ecologics\\/seashell_tile_vertical_slab/",
+		"/v_slab_compat:neapolitan\\/chocolate_tile_vertical_slab/",
 		"/v_slab_compat:rediscovered\\/coarse_dirt_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/pink_shingle_vertical_slab/",
 		"/v_slab_compat:unusualend\\/chorus_nest_mosaic_vertical_slab/",
@@ -20452,6 +20547,7 @@
 		"/v_slab_compat:netherexp\\/basalt_vertical_slab/",
 		"/v_slab_compat:aether_redux\\/shell_shingle_vertical_slab/",
 		"/v_slab_compat:upgrade_aquatic\\/pillow_coralstone_vertical_slab/",
+		"/v_slab_compat:neapolitan\\/frond_thatch_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/yellow_shingle_vertical_slab/"
 	]
 }

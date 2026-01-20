@@ -769,31 +769,31 @@
     "bandage": {
       "normal_effects": [
         {
-          "id": "majruszsdifficulty:glass_regeneration",
+          "id": "minecraft:regeneration",
           "amplifier": 0,
-          "duration": 20.0
+          "duration": 5.0
         },
         {
-          "id": "kubejs:lesser_instant_health",
+          "id": "adjcore:lesser_instant_health",
           "amplifier": 0,
           "duration": 1.0
         }
       ],
       "golden_effects": [
         {
-          "id": "majruszsdifficulty:glass_regeneration",
+          "id": "minecraft:regeneration",
           "amplifier": 1,
-          "duration": 20.0
+          "duration": 10.0
         },
         {
-          "id": "kubejs:lesser_instant_health",
+          "id": "adjcore:lesser_instant_health",
           "amplifier": 1,
           "duration": 1.0
         }
       ]
     },
     "evoker_fang_scroll": {
-      "attack_damage": 30,
+      "attack_damage": 58,
       "attack_range": {
         "min": 8,
         "max": 22

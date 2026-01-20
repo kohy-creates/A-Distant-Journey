@@ -1,5 +1,5 @@
 #Disable the mod functionality
-disableMod = false
+disableMod = true
 pickBoat = true
 #Allowed Values: EIGHT, SIXTEEN, THIRTYTWO
 wakeResolution = "SIXTEEN"

@@ -36,28 +36,80 @@ LootJS.modifiers((event) => {
 		'create:crushed_raw_copper': 'raw_copper',
 		'create:crushed_raw_zinc': 'create:raw_zinc',
 		'create:experience_nugget': 'ars_nouveau:experience_gem',
+
+		'diamond_helmet': 'additionaladditions:rose_gold_helmet',
+		'diamond_chestplate': 'additionaladditions:rose_gold_chestplate',
+		'diamond_leggings': 'additionaladditions:rose_gold_leggings',
+		'diamond_boots': 'additionaladditions:rose_gold_boots',
+		'diamond_sword': 'additionaladditions:rose_gold_sword',
+		'diamond_shovel': 'additionaladditions:rose_gold_shovel',
+		'diamond_axe': 'additionaladditions:rose_gold_axe',
+		'diamond_hoe': 'additionaladditions:rose_gold_hoe',
+		'diamond_pickaxe': 'additionaladditions:rose_gold_pickaxe',
+
+		'iron_helmet': 'rediscovered:plate_helmet',
+		'iron_chestplate': 'rediscovered:plate_chestplate',
+		'iron_leggings': 'rediscovered:plate_leggings',
+		'iron_boots': 'rediscovered:plate_boots',
+
+		'create:brass_ingot': 'mythicmetals:tin_ingot',
+		'create:brass_nugget': 'mythicmetals:tin_nugget',
+		'create:brass_block': 'mythicmetals:tin_block',
+
+		'ars_nouveau:wilden_wing': 'miners_delight:bat_wing',
+
+		'minecraft:enchanted_golden_apple': 'quark:ancient_fruit',
+		'twilightforest:transformation_powder': 'botania:mana_powder',
+
+		'quark:rope': 'supplementaries:rope',
+		'farmersdelight:rope': 'supplementaries:rope',
+
+		'twilightforest:charm_of_keeping_1': 'twilightforest:charm_of_life_1',
+		'alexscaves:banana': 'neapolitan:banana'
 	}
 	for (const [before, after] of Object.entries(replaceItemsMap)) {
 		event.addLootTableModifier(/.*/).replaceLoot(before, after, true)
 	}
 
 	const removedFromLoot = [
-		global.blacklistedItems,
 		/quark\:.*_shard/,
 		'artifacts:everlasting_beef',
 		'twilightforest:raw_ironwood',
-		'twilightforest:uncrafting_table'
-	]
+		'twilightforest:ironwood_ingot',
+		'twilightforest:steeleaf_ingot',
+		'twilightforest:uncrafting_table',
+		'twilightforest:ice_bow',
+		'twilightforest:ender_bow',
+		'twilightforest:triple_bow',
+		'twilightforest:seeker_bow',
+		'minecraft:netherite_ingot',
+
+		'aether:zanite_helmet',
+		'aether:zanite_chestplate',
+		'aether:zanite_leggings',
+		'aether:zanite_boots',
+
+		'aether:zanite_sword',
+		'aether:zanite_axe',
+		'aether:zanite_pickaxe',
+		'aether:zanite_shovel',
+
+		'farmersdelight:diamond_knife',
+		'delightful:flint_knife',
+		'farmersdelight:flint_knife',
+
+	].concat(global.blacklistedItems)
 	removedFromLoot.forEach(e => {
 		event.addLootTableModifier(/.*/).removeLoot(e)
 	})
 
+	/**
+	 * @param {$GroupedLootBuilder_} pool 
+	 */
 	const skullFragmentDrop = (pool) => {
 		pool.rolls(1);
 		pool.randomChanceWithLooting(0.2, 0.1)
-			.addLoot(LootEntry.of('kubejs:skull_fragment'))
-			.limitCount([1, 3])
-			.applyLootingBonus([0, 1]);
+			.addLoot(LootEntry.of('kubejs:skull_fragment').limitCount([1, 3])).applyLootingBonus([0, 1]);
 	}
 	event.addEntityLootModifier('minecraft:wither_skeleton')
 		.removeLoot('minecraft:wither_skeleton_skull')
@@ -65,6 +117,19 @@ LootJS.modifiers((event) => {
 	event.addEntityLootModifier('netherdepthsupgrade:wither_bonefish')
 		.removeLoot('minecraft:wither_skeleton_skull')
 		.pool(skullFragmentDrop);
+
+
+	/**
+	 * @param {$GroupedLootBuilder_} pool 
+	 */
+	const darkGemPool = (pool) => {
+		pool.rolls(1);
+		pool.randomChanceWithLooting(0.05, 0.02)
+			.addAlternativesLoot(
+				LootEntry.of('evilcraft:dark_gem').when((c) => c.randomChance(0.25)).applyLootingBonus([0, 1]),
+				LootEntry.of('evilcraft:dark_gem_crushed').when(c => c.randomChance(1.0)).limitCount([1, 2]).applyLootingBonus([0, 1])
+			)
+	};
 
 	event.addEntityLootModifier(
 		[
@@ -90,13 +155,15 @@ LootJS.modifiers((event) => {
 				.limitCount([1, 2])
 				.applyLootingBonus([0, 1])
 		})
+		.pool(darkGemPool);
 
 	event.addEntityLootModifier('minecraft:skeleton')
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.randomChanceWithLooting(0.02, 0.02)
 				.addLoot(LootEntry.of('minecraft:skeleton_skull'));
-		});
+		})
+		.pool(darkGemPool)
 
 	event.addEntityLootModifier('alexsmobs:hammerhead_shark')
 		.pool((pool) => {
@@ -161,4 +228,20 @@ LootJS.modifiers((event) => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('etcetera:trader_robe'))
 		})
+
+	event.addEntityLootModifier('guardian')
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('ars_nouveau:wilden_spike'))
+				.limitCount([0, 2])
+				.applyLootingBonus([0, 1]);
+		});
+
+	event.addEntityLootModifier('elder_guardian')
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('ars_nouveau:wilden_spike'))
+				.limitCount([0, 7])
+				.applyLootingBonus([0, 3]);
+		});
 });

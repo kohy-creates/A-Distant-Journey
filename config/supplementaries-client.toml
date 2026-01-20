@@ -132,11 +132,11 @@
 #General settings
 [general]
 	#Disables Optifine warn screen
-	no_optifine_warn_screen = false
+	no_optifine_warn_screen = true
 	#Disables Amendments suggestion screen
 	no_amendments_screen = true
 	#Disable incompatible mods warning screen
-	no_incompatible_mods_screen = false
+	no_incompatible_mods_screen = true
 	#Enable Quark style config button on main menu. Needs Configured installed to work
 	config_button = false
 	#Config button Y offset
@@ -145,7 +145,7 @@
 	#Show some tooltip hints to guide players through the mod
 	tooltip_hints = true
 	#Show tooltips items that have been made placeable
-	placeable_tooltips = true
+	placeable_tooltips = false
 	#Enables custom Configured config screen
 	custom_configured_screen = true
 	#ignore this
@@ -169,7 +169,7 @@
 	#Allow to right click with a compass to display current coordinates in numerical form
 	compass_right_click = true
 	#Renders an enchantment glint on placeable enchanted booksNote that turning this on will make book piles use tile renderer instead of baked models making them slower to render
-	placeable_books_glint = false
+	placeable_books_glint = true
 	#Placeable books random colors
 	placeable_books_random_colors = ["brown", "orange", "yellow", "red", "green", "lime", "cyan", "blue", "purple"]
 	#Enables banner pattern tooltip image preview

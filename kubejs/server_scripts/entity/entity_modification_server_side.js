@@ -2,9 +2,9 @@ const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
 const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes")
 
 const chapterMultipliers = {
-	hp: [1.0, 1.05, 1.1, 2.0, 2.0, 3.2],
-	damage: [1.0, 1.05, 1.2, 1.9, 1.9, 2.6],
-	armor: [1.0, 1.0, 1.05, 2.2, 2.2, 2.75]
+	hp: [1.0, 1.05, 1.1, 2.6, 2.6, 4.1],
+	damage: [1.0, 1.05, 1.2, 2.2, 2.2, 3.5],
+	armor: [1.0, 1.0, 1.15, 2.2, 2.2, 3.0]
 }
 
 // 

@@ -2189,7 +2189,7 @@ const itemsToTooltip = [
 		item: "ars_nouveau:agronomic_sourcelink",
 		summary: [
 			"The Agronomic Sourcelink generates Mana from crop and tree growth within 15 blocks.",
-			"Bonus Mana is generated for magical plants such as Mageblooms, Source Berry Bushes, and Archwood Saplings.",
+			"Bonus Mana is generated for magical plants such as Manablooms, Source Berry Bushes, and Archwood Saplings.",
 			"Source will be output from the Sourcelink to nearby jars within 5 blocks.",
 			"Note: Bonemealing crops will not grant Source."
 		]
@@ -2349,7 +2349,7 @@ const itemsToTooltip = [
 		item: "ars_nouveau:magebloom_crop",
 		summary: [
 			"A magically infused flower. They grow and provide a source of Mana Fiber.",
-			"Mageblooms can also be used in crafting Potions of Spell Damage, increasing the damage of your spells."
+			"Manablooms can also be used in crafting Potions of Spell Damage, increasing the damage of your spells."
 		]
 	},
 	{
@@ -2913,7 +2913,7 @@ const itemsToTooltip = [
 		summary: [
 			"The Imbuement Chamber allows the conversion of Amethyst Shards or Lapis Lazuli into Mana Gems.",
 			"By placing three Arcane Pedestals bearing certain items adjacent to the chamber, Mana Gems can be imbued further into Essences which are used in many Glyph recipes.",
-			"Placing an Enchanting Apparatus on top of an Arcane Core allows the crafting of essentials such as Magebloom Seeds, magical equipment, and charms to summon magical helpers.",
+			"Placing an Enchanting Apparatus on top of an Arcane Core allows the crafting of essentials such as Manabloom Seeds, magical equipment, and charms to summon magical helpers.",
 			"It can also directly enchant your gear with enchantments of your choice.",
 			"The Alteration Table allows for slotting in various Threads into magical armor that grant special properties while worn."
 		]
@@ -3055,7 +3055,7 @@ const itemsToTooltip = [
 			"Looking at a Starbuncle will tell you how many chests are being taken from, and input to.",
 			"Using the Dominion Wand on a Starbuncle while sneaking will reset them.",
 			"You may dictate where items go and may be picked up by using Item Scrolls or Item Frames.",
-			"Starbuncles may be bound to a Magebloom Bed using the Dominion Wand and will rest on the bed when there are no other tasks to be done.",
+			"Starbuncles may be bound to a Manabloom Bed using the Dominion Wand and will rest on the bed when there are no other tasks to be done.",
 			"Using a charm on an existing Starbuncle will stack them.",
 			"Stacked starbuncles will transport multiple stacks at a time"
 		]

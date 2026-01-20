@@ -554,6 +554,11 @@
 		"botaniacombat:terrasteel_spear",
 		"botania:phantom_ink",
 		"botania:slime_bottle",
+		"botania:light_relay",
+		"botania:detector_light_relay",
+		"botania:fork_light_relay",
+		"botania:toggle_light_relay",
+		"botania:light_launcher",
 
 		"confluence:magic_quiver",
 		"confluence:molten_quiver",
@@ -626,9 +631,9 @@
 		"unusualend:phantom_arrow",
 		"supplementaries:wrench",
 
-		"waystones:deepslate_waystone",
-		"waystones:blackstone_waystone",
-		"waystones:end_stone_waystone",
+		// "waystones:deepslate_waystone",
+		// "waystones:blackstone_waystone",
+		// "waystones:end_stone_waystone",
 		
 		"alloy_forgery:prismarine_bricks_forge_controller",
 		"alloy_forgery:bricks_forge_controller",
@@ -1296,6 +1301,13 @@
 		"rehooked:ender_hook",
 		
 		"majruszsdifficulty:wither_sword",
+		"majruszsdifficulty:cerberus_fang",
+		
+		"ars_nouveau:worn_notebook",
+		"botania:lexica_botania",
+		
+		"ars_nouveau:glyph_craft",
+		"createutilities:void_battery", 
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
 	

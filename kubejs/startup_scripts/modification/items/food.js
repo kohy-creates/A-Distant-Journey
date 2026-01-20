@@ -32,6 +32,27 @@ ItemEvents.modification(event => {
 		})
 	})
 
+	event.modify('phantasm:pream_berry', item => {
+		item.setFoodProperties(food => {
+			food.removeEffect('minecraft:instant_health');
+			food.effect('adjcore:lesser_instant_health', 1, 0, 1);
+		})
+	})
+
+	event.modify('twilightdelight:milky_113', item => {
+		item.setFoodProperties(food => {
+			food.removeEffect('minecraft:instant_health');
+			food.effect('adjcore:lesser_instant_health', 1, 2, 1);
+		})
+	})
+
+	event.modify('netherexp:nether_pizza_slice', item => {
+		item.setFoodProperties(food => {
+			food.removeEffect('minecraft:instant_health');
+			food.effect('adjcore:lesser_instant_health', 1, 1, 1);
+		})
+	})
+
 	event.modify('honeycomb', item => {
 		item.setFoodProperties(food => {
 			food.effect('alexscaves:sugar_rush', duration("00:08"), 0, 0.1);
@@ -219,7 +240,7 @@ ItemEvents.modification(event => {
 
 	event.modify('minecraft:glistering_melon_slice', item => {
 		item.setFoodProperties(food => {
-			food.effect('instant_health', 1, 0, 0.1);
+			food.effect('adjcore:lesser_instant_health', 1, 0, 0.7);
 			food.alwaysEdible(true);
 			food.hunger(3);
 			food.saturation(0.6)

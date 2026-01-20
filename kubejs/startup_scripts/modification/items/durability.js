@@ -198,7 +198,7 @@ ItemEvents.modification(event => {
 		toolset('minecraft:diamond'),
 		toolset('botania:terrasteel'),
 		toolset('aether:gravitite'),
-		toolset('aether:valkyrie'),
+		toolset('ancient_aether:valkyrum'),
 		toolset('lost_aether_content:phoenix'),
 		armorset('aether:phoenix'),
 		armorset('aether:obsidian'),

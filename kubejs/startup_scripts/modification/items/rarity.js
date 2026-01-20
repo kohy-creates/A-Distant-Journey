@@ -5,11 +5,12 @@ ItemEvents.modification(event => {
 	});
 
 	event.modify([
-		/.*diamond.*/,
+		/diamond/,
 		'turtle_helmet',
 		/orichalcum/,
 		/mythril/,
 		/palladium/,
+		/veridium/,
 		'ars_nouveau:novice_spell_book'
 	], item => {
 		item.rarity = 'uncommon';
@@ -17,7 +18,7 @@ ItemEvents.modification(event => {
 
 	event.modify([
 		'ancient_debris',
-		/.*netherite.*/,
+		/netherite/,
 		'netherexp:nether_pizza',
 		/adamantite/,
 		'ars_nouveau:apprentice_spell_book',
@@ -28,7 +29,6 @@ ItemEvents.modification(event => {
 
 	event.modify([
 		/majruszsdifficulty\:enderium\_.*/,
-		/moresnifferflowers\:giant_/,
 		/creative/,
 		'ars_nouveau:archmage_spell_book',
 		/treasure_bag/,

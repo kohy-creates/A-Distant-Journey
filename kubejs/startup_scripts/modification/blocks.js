@@ -20,6 +20,11 @@ BlockEvents.modification(event => {
 		block.setRequiresTool(false);
 	})
 
+	event.modify('evilcraft:blood_stain', block => {
+		block.setDestroySpeed(0);
+		block.setRequiresTool(false);
+	})
+
 	event.modify('ars_nouveau:portal', block => {
 		block.setLightEmission(12);
 	})

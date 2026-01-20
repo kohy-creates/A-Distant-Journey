@@ -16,11 +16,6 @@ ClientEvents.lang('en_us', event => {
 
 		'enchantment.minecraft.bane_of_arthropods': 'Lurkers\'s Bane',
 
-		'potion.potency.6': 'VII',
-		'potion.potency.7': 'VIII',
-		'potion.potency.8': 'IX',
-		'potion.potency.9': 'X',
-
 		'biome.clifftree.bog': 'Bog',
 		'biome.clifftree.caves': 'Caves',
 		'biome.clifftree.cold_caves': 'Cold Caves',
@@ -90,8 +85,10 @@ ClientEvents.lang('en_us', event => {
 		'architects_palette:entrails_slab': 'Flesh Slab',
 		'architects_palette:entrails_vertical_slab': 'Flesh Vertical Slab',
 		'architects_palette:entrails_stairs': 'Flesh Stairs',
-		'sumonningrituals:altar': 'Twilight Altar',
-		'sumonningrituals:indestructible_altar': 'Twilight Altar (Unbreakable)'
+		'summoningrituals:altar': 'Twilight Altar',
+		'summoningrituals:indestructible_altar': 'Twilight Altar (Unbreakable)',
+
+		'heart_crystals:heart_crystal': 'Life Crystal'
 	}
 
 	/** @type {Record<Internal.InputItem_, string>} */
@@ -131,6 +128,13 @@ ClientEvents.lang('en_us', event => {
 		'terra_curio:demon_heart': 'Aerwhale King\'s Heart',
 		'immersive_paintings:painting': 'Magic Painting',
 		'tiab:time_in_a_bottle': 'Time In a Bottle',
+
+		'minecraft:enchanted_golden_apple': 'Enchanted Golden Apple',
+
+		'ars_nouveau:wilden_horn': 'Fang',
+		'ars_nouveau:wilden_spike': 'Guardian Spike',
+
+		'heart_crystals:heart_crystal': 'Life Crystal'
 	}
 
 	const entityRenames = {

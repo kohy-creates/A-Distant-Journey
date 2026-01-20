@@ -24,7 +24,7 @@ ItemEvents.modification(event => {
 				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.spell_damage',
 					'378ef4cf-94c2-4432-95ce-95ee6c74d17a',
-					6,
+					15,
 					"addition"
 				)
 				.addAttribute(
@@ -42,7 +42,7 @@ ItemEvents.modification(event => {
 				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.spell_damage',
 					'01737022-40a3-4aba-a062-9be48d052661',
-					10,
+					12,
 					"addition"
 				)
 				.addAttribute(
@@ -66,7 +66,7 @@ ItemEvents.modification(event => {
 				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.spell_damage',
 					'46118a26-23a3-4653-8312-254c5f975d3e',
-					8,
+					10,
 					"addition"
 				)
 				.addAttribute(
@@ -132,7 +132,7 @@ ItemEvents.modification(event => {
 				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.spell_damage',
 					'86695f4b-dd1d-4b4c-a5d0-e029556b5e76',
-					3,
+					10,
 					"addition"
 				)
 		)
@@ -144,7 +144,7 @@ ItemEvents.modification(event => {
 				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.spell_damage',
 					'c34266b0-9edb-4274-9e0a-cac12ab24803',
-					2,
+					5,
 					"addition"
 				)
 				.addAttribute(
@@ -178,12 +178,6 @@ ItemEvents.modification(event => {
 					'addition'
 				)
 				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.mana_regen',
-					'75675432-ef02-4eed-9225-e44c433fb936',
-					1,
-					'addition'
-				)
-				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.max_mana',
 					'75675432-ef02-4eed-9225-e44c433fb936',
 					20,
@@ -210,7 +204,7 @@ ItemEvents.modification(event => {
 				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.max_mana',
 					'3cba6935-a4c0-46b6-973a-0f6138662685',
-					20,
+					30,
 					'addition'
 				)
 		)
@@ -223,6 +217,30 @@ ItemEvents.modification(event => {
 					'forge:block_reach',
 					'241fdb51-8a06-4fc1-bcaf-8520c75b29c1',
 					2,
+					'addition'
+				)
+		)
+	})
+
+	event.modify('terra_curio:band_of_regeneration', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute(
+					'adjcore:generic.health_regeneration',
+					'42c679df-5324-421c-8648-1b4440a51c0e',
+					1,
+					'addition'
+				)
+		)
+	})
+
+	event.modify('aether:regeneration_stone', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute(
+					'adjcore:generic.health_regeneration',
+					'42c679df-5324-421c-8648-1b4440a51c0e',
+					4,
 					'addition'
 				)
 		)
@@ -302,7 +320,7 @@ ItemEvents.modification(event => {
 				}
 			]
 		},
-		'aether:valkyrie_gloves': {
+		'ancient_aether:valkyrum_gloves': {
 			damage: 5,
 			operation: 0,
 			extra: [

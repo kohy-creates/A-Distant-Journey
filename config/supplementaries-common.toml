@@ -541,7 +541,7 @@
 	sanity_checks_messages = true
 	#slightly increase this or decrease this number to tweak the red merchant spawn chance. Won't spawn at 0 and will spawn twice as often on 2
 	#Range: 0.0 ~ 10.0
-	red_merchant_spawn_multiplier = 2.0
+	red_merchant_spawn_multiplier = 0.0
 
 #Vanilla tweaks
 [tweaks]

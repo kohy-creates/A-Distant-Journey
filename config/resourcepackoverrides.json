@@ -9,7 +9,7 @@
 		"mod_resources",
 		"fabric",
 		"Moonlight Mods Dynamic Assets",
-		"file/Cubic Leaves 2.3 (performance).zip",
+		"builtin/ancient_aether_texture_tweaks",
 		"VanillaTweaks.zip",
 		"astraliyte-s-animated-textures-v1-4.zip",
 		"builtin/resource/overrides_pack",
@@ -28,8 +28,6 @@
 		"file/Pixelated_v1.3.4_EnhancedVisuals(nox_cgt).zip",
 		"file/Medieval_Style_Lootr.zip",
 		"file/Better Create Palettes 1.3 1.20.1.zip",
-		"continuity:glass_pane_culling_fix",
-		"continuity:default",
 		"builtin/add_pack_finders_test",
 		"file/Soul_Campfire_(1.20).zip",
 		"file/More_Nether_Roots_(1.20).zip",
@@ -44,8 +42,8 @@
 		"file/FadingGlint-v2.2.zip",
 		"file/Frozy's Quest Book.zip",
 		"file/Farcr's Re-Crafted V2.23.zip",
-		"file/waystones_1_20_1_update_4.zip",
-		"file/\u00A7lcolourful containers\u00A78.zip",
+		"file/waystones_1.20.1_update4.zip",
+		"file/\u00A7lColourful Containers\u00A78.zip",
 		"file/\u00A75\u00A7lModded \u00A7f\u00A7lContainers\u00A78.zip",
 		"file/cubic-sun-moon-v1.8.3a.zip",
 		"file/Ars Sound Family renovation V1 [1.20.1].zip",
@@ -69,11 +67,15 @@
 		"file/\u00A7aDer's Shaded Font \u00A7e16x \u00A72v6 \u00A78(\u00A7dA\u00A78).zip",
 		"file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
 		"file/Gentler Weather Sounds 2.1.0.zip",
+		"file/MCA_resourcepack-V3.1.1.zip",
+		"file/Icons - Numerals v.1.1.zip",
+		"file/Pierced Animations - Serious Player Animations - 1.20.x.zip",
 		"file/kohara's Compat",
 		"file/ADJ-Music.zip"
 	],
 	"pack_overrides": {
 		"default": [
+			"builtin/ancient_aether_texture_tweaks",
 			"mod_resources",
 			"Moonlight Mods Dynamic Assets",
 			"fabric",
@@ -108,8 +110,8 @@
 			"file/Aether Regenerated v1.2.1.zip",
 			"file/Frozy's Quest Book.zip",
 			"file/Farcr's Re-Crafted V2.23.zip",
-			"file/waystones_1_20_1_update_4.zip",
-			"file/\u00A7lcolourful containers\u00A78.zip",
+			"file/waystones_1.20.1_update4.zip",
+			"file/\u00A7lColourful Containers\u00A78.zip",
 			"file/\u00A75\u00A7lModded \u00A7f\u00A7lContainers\u00A78.zip",
 			"file/cubic-sun-moon-v1.8.3a.zip",
 			"file/Ars Sound Family renovation V1 [1.20.1].zip",
@@ -134,6 +136,8 @@
 			"file/\u00A7aDer's Shaded Font \u00A7e16x \u00A72v6 \u00A78(\u00A7dA\u00A78).zip",
 			"file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
 			"file/Gentler Weather Sounds 2.1.0.zip",
+			"file/Icons - Numerals v.1.1.zip",
+			"file/MCA_resourcepack-V3.1.1.zip",
 			"file/kohara's Compat",
 			"file/ADJ-Music.zip"
 		],
@@ -151,7 +155,8 @@
 			"railways:green_signals",
 			"railways:legacy_palettes",
 			"witherstormmod:programmer_art",
-			"railways:legacy_semaphore"
+			"railways:legacy_semaphore",
+			"builtin/ancient_aether_programmer_art"
 		],
 		"voiceChat": [
 			"black_icons",
@@ -175,9 +180,9 @@
 			"description": "\"Default resources\""
 		},
 		"$$default": {
-			"hidden": true,
+			"hidden": false,
 			"required": true,
-			"fixed_position": true
+			"fixed_position": false
 		},
 		"$$defaultoptional": {
 			"hidden": false,

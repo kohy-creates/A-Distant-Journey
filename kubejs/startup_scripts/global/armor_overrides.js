@@ -103,6 +103,16 @@ global.armorOverrides = {
 			operation: 1
 		}
 	},
+	'cataclysm:monstrous': {
+		'generic.armor': {
+			values: [9, 0, 0, 0],
+			operation: 0
+		},
+		'adjcore:generic.health_regeneration': {
+			values: [0.5, 0, 0, 0],
+			operation: 0
+		}
+	},
 	'minecraft:netherite': {
 		'generic.armor': {
 			values: [9, 12, 11, 8],
@@ -597,7 +607,7 @@ global.armorOverrides = {
 			operation: 0
 		},
 	},
-	'aether:valkyrie': {
+	'ancient_aether:valkyrum': {
 		'generic.armor': {
 			values: [7, 10, 9, 7],
 			operation: 0

@@ -327,7 +327,7 @@ StartupEvents.postInit(event => {
 				"mythicmetals:copper_pickaxe",
 				"iron_pickaxe",
 				"diamond_pickaxe",
-				"netherite_pickaxe",
+				"mythicmetals:adamantite_pickaxe",
 				"majruszsdifficulty:enderium_pickaxe",
 				"mythicmetals:metallurgium_pickaxe"
 			]

@@ -1,0 +1,17 @@
+{
+  "background": "legacy:icon/background",
+  "packs": [
+    "vanilla",
+    "mod_resources",
+    "legacy:legacy_waters"
+  ],
+  "displayPack": "vanilla",
+  "id": "minecraft",
+  "version": 2,
+  "name": {
+    "translate": "legacy.menu.albums.resource.minecraft"
+  },
+  "description": {
+    "translate": "legacy.menu.albums.resource.minecraft.description"
+  }
+}

@@ -6,7 +6,7 @@
     "builtinCamouflage": true,
     "ttsMode": "PRESS",
     "fluidMode": "SOURCE_ONLY",
-    "reachDistance": 2.0,
+    "reachDistance": 2.5,
     "displayEntities": true,
     "displayBosses": true,
     "displayMode": "TOGGLE",

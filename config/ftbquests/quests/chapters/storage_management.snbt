@@ -6,7 +6,7 @@
 	group: "266DD5C3D1FE65EA"
 	icon: "minecraft:chest"
 	id: "470CC0A899AD68D9"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

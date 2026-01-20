@@ -74,7 +74,7 @@ StartupEvents.registry('item', registry => {
 	createGrapplingHook('tendon', 'Tendon Hook', 2, 17, 14, null, false, true)
 	// Chapter 2
 	createGrapplingHook('swet', 'Swet Hook', 4, 15, 13.5, null, false, true)
-	createGrapplingHook('valkyrie', 'Valkyrie Hook', 1, 27, 9)
+	createGrapplingHook('valkyrum', 'Valkyrum Hook', 1, 27, 9)
 	createGrapplingHook('gravitite', 'Gravitite Hook', 4, 14, 13.5, null, true, null, false, true)
 	// Chapter 3
 	createGrapplingHook('adamantite', 'Adamantite Hook', 2, 18.5, 15)

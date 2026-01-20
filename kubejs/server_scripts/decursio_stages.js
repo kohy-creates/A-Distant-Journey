@@ -66,41 +66,28 @@ function changeGamerules(server, stage) {
 	}
 }
 
-const $TextColor = Java.loadClass("net.minecraft.network.chat.TextColor");
-const $Style = Java.loadClass("net.minecraft.network.chat.Style");
-
-function chapterMessage(text, color) {
-	return Text.of(text).color(color).italic();
-}
-
-const chapterMessagesColors = {
-	newOre: '#32FF82',
-	newDimension: '#FFD700',
-	difficultyIncrease: '#c50909'
-}
-
 const chapterMessages = {
 	'chapter_1': [
-		chapterMessage('The spirits of hell enter the Overworld...', chapterMessagesColors.difficultyIncrease),
-		chapterMessage('The caverns have been blessed with Mythril and Orichalcum', chapterMessagesColors.newOre)
+		global.announcementMsg('The spirits of hell flow into the Overworld...', global.messageColors.difficultyIncrease),
+		global.announcementMsg('The caverns have been blessed with Mythril and Orichalcum', global.messageColors.newOre)
 	],
 	'chapter_2': [
-		chapterMessage('The ancient spirits of darkness have been released', chapterMessagesColors.difficultyIncrease),
-		chapterMessage('Heavenly gates open...', chapterMessagesColors.newDimension),
-		chapterMessage('The hellish depths have been blessed with Palladium', chapterMessagesColors.newOre)
+		global.announcementMsg('The ancient spirits of darkness have been released', global.messageColors.difficultyIncrease),
+		global.announcementMsg('Heavenly gates open...', global.messageColors.newDimension),
+		global.announcementMsg('The hellish depths have been blessed with Palladium', global.messageColors.newOre)
 	],
 	'chapter_3': [
-		chapterMessage('The ancient spirits of light have been released', chapterMessagesColors.difficultyIncrease),
-		chapterMessage('Dreams of a different realm start to materialize...', chapterMessagesColors.newDimension),
-		chapterMessage('Two legendary ores bless your other dimensions', chapterMessagesColors.newOre)
+		global.announcementMsg('The ancient spirits of light have been released', global.messageColors.difficultyIncrease),
+		global.announcementMsg('Dreams of a different realm start to materialize...', global.messageColors.newDimension),
+		global.announcementMsg('Two legendary ores bless your other dimensions', global.messageColors.newOre)
 	],
 	'chapter_4': [
-		chapterMessage('The boundary between dreams and nigthmares lessens...', chapterMessagesColors.difficultyIncrease),
-		chapterMessage('Awakened Ender Pearls start to twitch', chapterMessagesColors.newDimension)
+		global.announcementMsg('The boundary between dreams and nigthmares lessens...', global.messageColors.difficultyIncrease),
+		global.announcementMsg('Awakened Ender Pearls start to twitch', global.messageColors.newDimension)
 	],
 	'chapter_5': [
-		chapterMessage('A withered growl can be heard from across the realms...', chapterMessagesColors.difficultyIncrease),
-		chapterMessage('A metal defying reality appeares in your caves', chapterMessagesColors.newOre)
+		global.announcementMsg('A withered growl can be heard from across the realms...', global.messageColors.difficultyIncrease),
+		global.announcementMsg('A metal defying reality manifests deep underground', global.messageColors.newOre)
 	]
 }
 
@@ -111,15 +98,20 @@ const chapterMessages = {
  */
 function sendChapterAnnouncements(server, stage) {
 	chapterMessages[stage].forEach(msg => {
-		server.players.forEach(player => {
-			player.tell(msg)
-		})
+		global.broadcast(server, msg);
 	})
 }
 
 ADJServerEvents.recipeLookup(event => {
 
 	const item = event.getItem();
+
+	if (item.getId().includes('valkyrum')) {
+		if (!server.persistentData.valkyrumUnlocked) {
+			event.cancel();
+			return;
+		}
+	}
 
 	let chapters = [],
 		exceptions = [];
@@ -201,6 +193,11 @@ PlayerEvents.tick(event => {
 
 		if (stageName === 'chapter_0' && player.level.dimension === 'minecraft:the_nether') {
 			server.persistentData.chapters.putString(STAGE_TO_SET, 'chapter_1');
+		}
+
+		// Valkyrum side progression
+		if (server.persistentData.valkyrumUnlocked && !player.stages.has('valkyrum_unlocked')) {
+			player.stages.add('valkyrum_unlocked');
 		}
 	}
 });
@@ -390,6 +387,7 @@ ServerEvents.tags('item', resctrictions => {
 		'unusualend:chiseled_glass',
 		'unusualend:chiseled_glass_pane',
 		'unusualend:phantom_membrane_block',
+		'endersdelight:ender_shard',
 		/treasure_bag/
 	]);
 
@@ -412,13 +410,16 @@ ServerEvents.tags('item', resctrictions => {
 })
 
 ItemEvents.rightClicked('ender_eye', event => {
-	if (!event.getPlayer().stages.has('chapter_4')) {
+	const player = event.getPlayer();
+	if (!player.stages.has('chapter_4')) {
+		player.displayClientMessage(Component.literal('It\'s not reacting to anything').red(), true)
 		event.cancel();
 	}
 })
 
 BlockEvents.rightClicked('command_block', event => {
 	if (event.getItem().id == 'minecraft:wither_skeleton_skull' && !event.getPlayer().stages.has('chapter_5')) {
+		player.displayClientMessage(Component.literal('It pops back off, away from the block').red(), true)
 		event.cancel();
 	}
 })
@@ -427,6 +428,7 @@ BlockEvents.rightClicked('command_block', event => {
 ////////////////////
 
 const RESET_PROGRESS = 'adjresetprogress';
+const JUMP_PROGRESS = 'jumpprogress';
 const STAGES = [
 	'chapter_0',
 	'chapter_1',
@@ -458,6 +460,27 @@ ServerEvents.commandRegistry(event => {
 		)
 		player.tell(Text.red('Reset all internal progress'))
 		changeGamerules(server, 'chapter_0')
+		return 1
+	}
+
+	event.register(Commands.literal(JUMP_PROGRESS)
+		.requires(s => s.hasPermission(4))
+		.then(Commands.argument('chapter', Arguments.INTEGER.create(event))
+			.executes(c => jumpProgress(c.source.player, c.source.server, Arguments.INTEGER.getResult(c, 'chapter')))
+		)
+	)
+	/**
+	 * 
+	 * @param {$Player_} player 
+	 * @param {$MinecraftServer_} server 
+	 * @param {integer} chapter 
+	 * @returns 
+	 */
+	let jumpProgress = (player, server, chapter) => {
+
+		server.persistentData.chapters.put(STAGE_TO_SET, chapter)
+
+		player.tell(Text.red('Jumped to chapter ' + chapter))
 		return 1
 	}
 })

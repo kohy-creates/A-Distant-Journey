@@ -109,8 +109,8 @@ ServerEvents.recipes((event) => {
 			'diamond',
 			'diamond',
 			'diamond',
-			'ars_nouveau:air_essence',
-			'ars_nouveau:air_essence',
+			'botania:rune_air',
+			'botania:rune_air',
 			'aether:cold_aercloud',
 			'aether:cold_aercloud'
 		],
@@ -481,7 +481,7 @@ ServerEvents.recipes((event) => {
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
 			'tnt',
-			'ars_nouveau:fire_essence',
+			'botania:rune_fire',
 			'gunpowder',
 			'gunpowder',
 			'#sand'
@@ -492,7 +492,7 @@ ServerEvents.recipes((event) => {
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
-			'ars_nouveau:manipulation_essence',
+			'botanicadds:rune_tp',
 			'botanicadds:rune_tp',
 			'chorus_fruit',
 			'aether_redux:gravitite_ingot'
@@ -503,7 +503,6 @@ ServerEvents.recipes((event) => {
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
-			'ars_nouveau:fire_essence',
 			'botania:rune_fire',
 			'botania:rune_summer',
 			'fire_charge',

@@ -4,7 +4,7 @@ KeyBindEvents.modify(event => {
 	 * @type {$KeyMapping$$Type}
 	 */
 	const removedKeybinds = [
-		"key.smoothCamera",
+		// "key.smoothCamera",
 		"key.spectatorOutlines",
 		// "key.advancements",
 		"key.entityculling.toggle",
@@ -31,7 +31,7 @@ KeyBindEvents.modify(event => {
 		"key.shouldersurfing.toggle_z_offset_presets",
 		"key.spelunkers_charm.flashlight_toggle",
 		// "key.showmeyourskin.open_settings",
-		"key.showmeyourskin.global_toggle",
+		// "key.showmeyourskin.global_toggle",
 		"obscure_tooltips_fix.print_screen",
 		// "key.map_atlases.open_minimap",
 		"key.map_atlases.place_pin",
@@ -46,17 +46,17 @@ KeyBindEvents.modify(event => {
 		"treechop.key.toggle_felling",
 		"treechop.key.cycle_sneak_behavior",
 		"treechop.key.open_settings_overlay",
-		"key.ars_nouveau.qc1",
-		"key.ars_nouveau.qc2",
-		"key.ars_nouveau.qc3",
-		"key.ars_nouveau.qc4",
-		"key.ars_nouveau.qc5",
-		"key.ars_nouveau.qc6",
-		"key.ars_nouveau.qc7",
-		"key.ars_nouveau.qc8",
-		"key.ars_nouveau.qc9",
-		"key.ars_nouveau.qc10",
-		"key.ars_nouveau.familiar_toggle",
+		// "key.ars_nouveau.qc1",
+		// "key.ars_nouveau.qc2",
+		// "key.ars_nouveau.qc3",
+		// "key.ars_nouveau.qc4",
+		// "key.ars_nouveau.qc5",
+		// "key.ars_nouveau.qc6",
+		// "key.ars_nouveau.qc7",
+		// "key.ars_nouveau.qc8",
+		// "key.ars_nouveau.qc9",
+		// "key.ars_nouveau.qc10",
+		// "key.ars_nouveau.familiar_toggle",
 		"key.ars_additions.open_lectern",
 		"artifacts.key.helium_flamingo.activate",
 		"artifacts.key.night_vision_goggles.toggle",
@@ -112,4 +112,9 @@ KeyBindEvents.modify(event => {
 			}
 		}
 	})
+})
+
+KeyBindEvents.register(event => {
+	event.create('adjcore.what_is_this', GLFW.GLFW_KEY_GRAVE_ACCENT, 'key.categories.adjcore')
+		.addModifier(KeyModifier.ALT);
 })

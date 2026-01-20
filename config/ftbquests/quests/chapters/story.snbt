@@ -2425,7 +2425,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			title: "Aerial Monarch"
+			title: "Monarch of The Clouds"
 			x: 25.5d
 			y: 16.0d
 		}
@@ -2447,7 +2447,7 @@
 				item: "kubejs:eye_of_angels"
 				type: "item"
 			}]
-			title: "The Angels Fall"
+			title: "HEVEN... FALLS!!"
 			x: 25.5d
 			y: 19.5d
 		}
@@ -2572,7 +2572,7 @@
 				item: "aether:icestone"
 				type: "item"
 			}]
-			title: "Cold as ice"
+			title: "Cold as Ice"
 			x: 30.0d
 			y: 14.5d
 		}
@@ -3979,16 +3979,33 @@
 		}
 		{
 			dependencies: ["4C1D62C4B13A0CE0"]
-			description: ["&7&lHINT:&r &cHeart Crystals&r generate underground semi-frequently."]
+			description: [
+				"&7&lHINT:&r &cLife Crystals&r generate underground semi-frequently. "
+				""
+				"A &eSpelunker Potion&r will help you find them by highlighting them if they are nearby. &cLife Crystals&r can also be crafted at a fair price."
+			]
 			icon: "heart_crystals:heart_crystal"
 			id: "37D84A7023231586"
-			subtitle: "Attain maximum possible health by consuming 15 Heart Crystals"
-			tasks: [{
-				icon: "heart_crystals:heart_crystal"
-				id: "48F026344B65629F"
-				title: "Get to 400 max Health"
-				type: "custom"
+			rewards: [{
+				id: "1F8901EEA0DAEE91"
+				type: "xp"
+				xp: 10
 			}]
+			subtitle: "Attain maximum possible health by consuming 15 Life Crystals"
+			tasks: [
+				{
+					icon: "heart_crystals:heart_crystal"
+					id: "48F026344B65629F"
+					title: "Get to 400 max Health"
+					type: "custom"
+				}
+				{
+					disable_toast: true
+					id: "089ABA44FA5390F4"
+					item: "heart_crystals:heart_crystal"
+					type: "item"
+				}
+			]
 			title: "Topped Off"
 			x: 13.5d
 			y: 2.0d

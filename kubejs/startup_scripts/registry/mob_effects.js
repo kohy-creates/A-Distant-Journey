@@ -10,14 +10,6 @@ StartupEvents.registry('mob_effect', registry => {
 			"multiply_total"
 		);
 
-	registry.create('lesser_instant_health')
-		.color(Color.of('#F82423'))
-		.beneficial()
-		.effectTick((entity, level) => {
-			entity.heal(15 * level);
-			entity.removeEffect('kubejs:lesser_instant_health');
-		})
-
 	registry.create('rapid_healing')
 		.color(Color.of('#F82423'))
 		.beneficial()

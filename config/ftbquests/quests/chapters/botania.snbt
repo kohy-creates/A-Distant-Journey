@@ -13,60 +13,74 @@
 			image: "botanicadds:block/gaiasteel_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: 1.0d
-			y: 9.0d
+			x: 20.0d
+			y: -6.5d
 		}
 		{
 			height: 2.0d
 			image: "botania:block/alfheim_portal_activated"
 			rotation: 0.0d
 			width: 2.0d
-			x: 6.5d
-			y: 6.0d
+			x: 18.5d
+			y: -2.0d
+		}
+		{
+			dependency: "3C8D98C28C22E202"
+			height: 2.0d
+			image: "ars_nouveau:item/ritual_conjure_island_plains"
+			rotation: 0.0d
+			width: 2.0d
+			x: 17.0d
+			y: 0.0d
+		}
+		{
+			dependency: "459AE4954ABBB9C1"
+			height: 2.0d
+			image: "ars_nouveau:item/thread_kindling"
+			rotation: 0.0d
+			width: 2.0d
+			x: 15.5d
+			y: 5.0d
+		}
+		{
+			dependency: "1183BADAC1F706A7"
+			height: 2.0d
+			image: "ars_nouveau:item/homing_projectile"
+			rotation: 0.0d
+			width: 2.0d
+			x: 9.5d
+			y: 7.0d
+		}
+		{
+			height: 1.75d
+			image: "unusualend:block/pearlescent_alloy_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 11.0d
+			y: 9.0d
+		}
+		{
+			height: 1.75d
+			image: "ars_additions:block/magebloom_carpet"
+			rotation: 45.0d
+			width: 1.75d
+			x: 14.0d
+			y: 7.0d
+		}
+		{
+			height: 1.75d
+			image: "ars_nouveau:block/source_gem_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 18.5d
+			y: 3.5d
 		}
 	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["026E22A534C341CC"]
-			description: [
-				"&7&o'Mana is an ethereal substance - in essence, it's a mystical form of energy. Its existence is inconsistent to the senses, and its color depends on its surrounding environment."
-				""
-				"&7&oThe manipulation of Mana is likely the most important skill a botanist needs to master.'"
-				"                           &7&o~Lexica Botania"
-			]
-			icon: "botania:lexicon"
-			icon_scale: 0.75d
-			id: "50E23CFDE69DC684"
-			shape: "diamond"
-			size: 2.0d
-			subtitle: "Magic, tech. Naturally."
-			tasks: [
-				{
-					id: "751250953F8F8CB2"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "botania:mystical_flowers"
-						}
-					}
-					title: "Pick up any Mystical Flower"
-					type: "item"
-				}
-				{
-					id: "3D564DAC8B457BFA"
-					item: "botania:lexicon"
-					type: "item"
-				}
-			]
-			title: "Magical Botanics"
-			x: -2.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["50E23CFDE69DC684"]
+			dependencies: ["4BB4F54ACBA9F3A7"]
 			description: [""]
 			icon: "botania:red_petal"
 			id: "193CFF98260F82B7"
@@ -84,8 +98,8 @@
 				type: "item"
 			}]
 			title: "Petal Power"
-			x: -0.5d
-			y: -0.5d
+			x: 7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["193CFF98260F82B7"]
@@ -106,12 +120,15 @@
 				type: "item"
 			}]
 			title: "Botanical Crafts"
-			x: 1.0d
+			x: 7.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["6013A3AD20AB6F78"]
-			description: [""]
+			description: [
+				""
+				"{image:botania:textures/gui/entries/pure_daisy.png width:100 height:100 align:center}"
+			]
 			icon: "botania:pure_daisy"
 			id: "45C4613857B5FBB1"
 			subtitle: "Plant a Pure Daisy"
@@ -121,8 +138,8 @@
 				type: "item"
 			}]
 			title: "Purity Overdrive"
-			x: 2.5d
-			y: 0.0d
+			x: 8.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -131,32 +148,21 @@
 			]
 			id: "35B5E5B6F7CC021D"
 			subtitle: "Place down a Mana Pool"
-			tasks: [
-				{
-					id: "4745303AED988F56"
-					item: "botania:mana_pool"
-					type: "item"
-				}
-				{
-					block: "botania:mana_pool"
-					block_type: 0
-					id: "30CD6208FCF49D20"
-					replace: false
-					replaced: "minecraft:air"
-					type: "questsadditions:place"
-					value: 1L
-				}
-			]
+			tasks: [{
+				id: "4745303AED988F56"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
 			title: "Bank of Magic"
-			x: 5.5d
-			y: -0.5d
+			x: 10.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6013A3AD20AB6F78"]
 			description: [""]
 			icon: "botania:endoflame"
 			id: "3D75A7B6B23BC097"
-			subtitle: "Craft your first Generating Flora"
+			subtitle: "Craft your first flower that generates Mana"
 			tasks: [{
 				id: "30607C51C3689C10"
 				item: {
@@ -179,15 +185,22 @@
 				type: "item"
 			}]
 			title: "First Power Plant"
-			x: 2.5d
-			y: -1.0d
+			x: 7.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"3D75A7B6B23BC097"
 				"45C4613857B5FBB1"
-				"5F471ABAA31A0667"
 			]
+			icon: {
+				Count: 1
+				id: "botania:twig_wand"
+				tag: {
+					color1: 0
+					color2: 0
+				}
+			}
 			id: "4389F7F895342C2A"
 			subtitle: "Place down a Mana Spreader"
 			tasks: [
@@ -205,31 +218,22 @@
 					type: "questsadditions:place"
 					value: 1L
 				}
+				{
+					id: "162D593846174DDA"
+					item: {
+						Count: 1
+						id: "botania:twig_wand"
+						tag: {
+							color1: 0
+							color2: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "Transporting Magic"
-			x: 4.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["45C4613857B5FBB1"]
-			description: [""]
-			id: "5F471ABAA31A0667"
-			subtitle: "Craft a Wand of The Forest"
-			tasks: [{
-				id: "3EA6084494C19F2D"
-				item: {
-					Count: 1
-					id: "botania:twig_wand"
-					tag: {
-						color1: 0
-						color2: 0
-					}
-				}
-				match_nbt: false
-				type: "item"
-			}]
-			title: "Floral Commmander"
-			x: 4.0d
+			x: 8.0d
 			y: 0.5d
 		}
 		{
@@ -245,12 +249,12 @@
 				type: "item"
 			}]
 			title: "Smaller Storage"
-			x: 6.0d
-			y: -2.5d
+			x: 9.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["35B5E5B6F7CC021D"]
-			icon: "botania:mana_diamond"
+			icon: "botania:manasteel_ingot"
 			id: "0AA4AD4290EE5366"
 			subtitle: "Toss in an item into a partially filled Mana Pool and infuse it"
 			tasks: [{
@@ -262,10 +266,6 @@
 						items: [
 							{
 								Count: 1b
-								id: "botania:mana_string"
-							}
-							{
-								Count: 1b
 								id: "botania:mana_pearl"
 							}
 							{
@@ -274,7 +274,7 @@
 							}
 							{
 								Count: 1b
-								id: "botania:mana_diamond"
+								id: "ars_nouveau:source_gem"
 							}
 							{
 								Count: 1b
@@ -287,78 +287,17 @@
 				type: "item"
 			}]
 			title: "Mana Infusion"
-			x: 7.0d
-			y: -0.5d
+			x: 12.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["0AA4AD4290EE5366"]
-			description: ["&7Hint:&r Infused equipment regenerates lost durability from &bMana Tablets&r in your inventory."]
-			icon: {
-				Count: 1
-				id: "botania:manasteel_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "7FE9B5AB124013D2"
-			optional: true
-			shape: "rsquare"
-			subtitle: "Craft an armor set out of Infused Alloy"
-			tasks: [
-				{
-					id: "060E07625496EA96"
-					item: {
-						Count: 1
-						id: "botania:manasteel_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5875057DCBCA9752"
-					item: {
-						Count: 1
-						id: "botania:manasteel_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6F3487E211F69F7B"
-					item: {
-						Count: 1
-						id: "botania:manasteel_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "762C8F73BE4A260D"
-					item: {
-						Count: 1
-						id: "botania:manasteel_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
+			dependencies: [
+				"0AA4AD4290EE5366"
+				"06C3735EEB6B3733"
 			]
-			title: "Infusion Forging"
-			x: 6.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0AA4AD4290EE5366"]
-			icon: "botania:runic_altar"
+			icon: "botania:rune_air"
 			id: "602FA24B60010322"
-			subtitle: "Craft and place a Runic Altar"
+			subtitle: "Place a Runic Altar and use it to refine an Essence into a Rune"
 			tasks: [
 				{
 					id: "617E27BF7C42C61E"
@@ -366,22 +305,26 @@
 					type: "item"
 				}
 				{
-					block: "botania:runic_altar"
-					block_type: 0
-					id: "3FB077512F97CFC4"
-					replace: false
-					replaced: "minecraft:air"
-					type: "questsadditions:place"
-					value: 1L
+					id: "5A6D63A6C9A13624"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "botania:runes"
+						}
+					}
+					title: "Any Rune"
+					type: "item"
 				}
 			]
-			title: "Runified!"
-			x: 9.0d
-			y: 0.5d
+			title: "Drop Pop Candy!"
+			x: 13.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["24F68EF7693C83A1"]
+			dependencies: ["602FA24B60010322"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "botania:rune_earth"
 			id: "5B1E6DC773B2B75C"
 			optional: true
@@ -409,13 +352,14 @@
 					type: "item"
 				}
 			]
-			title: "Rune Collection: Elements"
-			x: 11.0d
-			y: 2.5d
+			title: "Rune Collection: Four Elements"
+			x: 13.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["24F68EF7693C83A1"]
+			dependencies: ["602FA24B60010322"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "botania:rune_spring"
 			id: "055D249C76639C5D"
 			optional: true
@@ -443,13 +387,14 @@
 					type: "item"
 				}
 			]
-			title: "Rune Collection: Seasons"
-			x: 10.5d
-			y: 3.5d
+			title: "Rune Collection: Concealed Four Seasons"
+			x: 16.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["24F68EF7693C83A1"]
+			dependencies: ["602FA24B60010322"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "botania:rune_lust"
 			id: "67CBFE98BCA401BD"
 			optional: true
@@ -492,13 +437,14 @@
 					type: "item"
 				}
 			]
-			title: "Rune Collection: Deadly Sins"
-			x: 10.5d
-			y: 0.5d
+			title: "Rune Collection: Seven Deadly Sins"
+			x: 14.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["24F68EF7693C83A1"]
+			dependencies: ["602FA24B60010322"]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "botania:rune_mana"
 			id: "3D3BA5103B3F9C89"
 			optional: true
@@ -521,165 +467,71 @@
 					type: "item"
 				}
 			]
-			title: "Rune Collection: Other"
-			x: 11.0d
-			y: 1.5d
+			title: "Rune Collection: Chaos and Harmony"
+			x: 15.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["602FA24B60010322"]
-			icon: "botania:rune_water"
-			id: "24F68EF7693C83A1"
-			subtitle: "Craft a Rune at a Runic Altar"
-			tasks: [{
-				id: "0AC209AAFBBB6CAE"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "botania:runes"
-					}
-				}
-				title: "Any Rune"
-				type: "item"
+			icon: "botania:terrasteel_ingot"
+			id: "356CC1FA4E52AD00"
+			rewards: [{
+				id: "2B3A1A8F150786A7"
+				type: "xp"
+				xp: 50
 			}]
-			title: "Drop Pop Candy!"
-			x: 9.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["24F68EF7693C83A1"]
-			description: [
-				"&7Hint: &fUnsure what to do with the &eSparks&r?"
-				""
-				"It's VERY simple - just place one on top of a &bMana Pool&r and the second one on the &9Agglomeration Plate&f. They will share &bMana&r automatically whenever needed."
-			]
-			icon: "botania:terra_plate"
-			id: "2BF3097896646CA9"
-			subtitle: "Craft a Terrestrial Agglomeration Plate"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Make a Terrestrial Agglomeration Plate and use it to craft a Terrasteel Ingot"
 			tasks: [
 				{
-					id: "51BD21259919F2CE"
+					id: "2218631B34E3757E"
+					item: "botania:terrasteel_ingot"
+					type: "item"
+				}
+				{
+					id: "69A6C4310741E651"
 					item: "botania:terra_plate"
 					type: "item"
 				}
 				{
 					hasCustomPicture: false
-					id: "267CB988C6E40DDE"
-					ignoreState: true
+					icon: "handcrafted:hammer"
+					id: "2E9AB9E00893E728"
+					ignoreState: false
 					layer: true
 					name: "terra_plate"
 					rightclick: false
-					title: "Build a Terrestrial Aglomeration Plate"
+					title: "Click to view the structure"
 					type: "questsadditions:structure"
 				}
 				{
-					count: 2L
-					id: "4837AE9F38C950F3"
-					item: { Count: 2, id: "botania:spark" }
+					count: 5L
+					id: "22A81BCC073C7DAE"
+					item: { Count: 5, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6DEF3A58F8619004"
+					item: { Count: 4, id: "minecraft:lapis_block" }
 					type: "item"
 				}
 			]
-			title: "Nuclear (In)fusion"
-			x: 9.0d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"2BF3097896646CA9"
-				"0AA4AD4290EE5366"
-			]
-			id: "356CC1FA4E52AD00"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "Craft a Terrasteel Ingot"
-			tasks: [{
-				id: "2218631B34E3757E"
-				item: "botania:terrasteel_ingot"
-				type: "item"
-			}]
 			title: "Dancer in the Dark"
-			x: 7.5d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"356CC1FA4E52AD00"
-				"7FE9B5AB124013D2"
-				"03DC59E95C1B2EB0"
-			]
-			description: ["&7Hint:&r Same as &9Infused equipment&r, &aTerrasteel gear&r can regenerate lost durability from &bMana Tablets&r in your inventory."]
-			icon: {
-				Count: 1
-				id: "botania:terrasteel_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "6F289A9F12CC64B9"
-			optional: true
-			shape: "rsquare"
-			subtitle: "Craft a full set of Terrasteel armor"
-			tasks: [
-				{
-					id: "503A2D86FF11E0A5"
-					item: {
-						Count: 1
-						id: "botania:terrasteel_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6D1D1E3CD0D0A049"
-					item: {
-						Count: 1
-						id: "botania:terrasteel_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6443240B4F264BD3"
-					item: {
-						Count: 1
-						id: "botania:terrasteel_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7D8D6C04B5638020"
-					item: {
-						Count: 1
-						id: "botania:terrasteel_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "012FA08F8F4CA482"
-					item: "mythicmetals:hallowed_ingot"
-					type: "item"
-				}
-			]
-			title: "Terraforged"
-			x: 6.0d
-			y: 3.5d
+			x: 15.726662565441195d
+			y: -2.017394906107583d
 		}
 		{
 			dependencies: ["356CC1FA4E52AD00"]
 			icon: "botania:alfheim_portal"
 			id: "5658376D04F1E8AE"
 			min_required_tasks: 4
+			rewards: [{
+				id: "03AEC1265522EB84"
+				type: "xp"
+				xp: 30
+			}]
 			subtitle: "Open an Alfheim Portal"
 			tasks: [
 				{
@@ -718,8 +570,8 @@
 				}
 			]
 			title: "To Another Realm! Kinda..."
-			x: 6.5d
-			y: 6.0d
+			x: 18.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5658376D04F1E8AE"]
@@ -746,21 +598,8 @@
 				}
 			]
 			title: "Elven Upgrads"
-			x: 5.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["24F68EF7693C83A1"]
-			id: "183493A4B4283839"
-			subtitle: "Craft a Botanical Brewery"
-			tasks: [{
-				id: "3CAD89A39EA861BF"
-				item: "botania:brewery"
-				type: "item"
-			}]
-			title: "Childhood Blues"
-			x: 8.0d
-			y: 2.0d
+			x: 18.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5658376D04F1E8AE"]
@@ -785,8 +624,8 @@
 				}
 			]
 			title: "Elven Resources"
-			x: 6.5d
-			y: 7.5d
+			x: 20.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["35B5E5B6F7CC021D"]
@@ -800,26 +639,11 @@
 				type: "item"
 			}]
 			title: "It's Portable Though!"
-			x: 7.0d
-			y: -2.0d
+			x: 11.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["2BF3097896646CA9"]
-			id: "756FFC233E13D545"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "Craft an Ender Air Bottle"
-			tasks: [{
-				id: "460F4ADD6879D6ED"
-				item: "botania:ender_air_bottle"
-				type: "item"
-			}]
-			title: "Otherworldy Fumes"
-			x: 9.75d
-			y: 6.0d
-		}
-		{
-			dependencies: ["756FFC233E13D545"]
+			dependencies: ["54622828F37E8A7E"]
 			id: "22A779AB53F671E4"
 			subtitle: "Craft a Corporea Spark"
 			tasks: [{
@@ -828,11 +652,11 @@
 				type: "item"
 			}]
 			title: "Corporeal"
-			x: 8.5d
-			y: 7.0d
+			x: 20.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["756FFC233E13D545"]
+			dependencies: ["1E174297E96D12B8"]
 			id: "78CA9D2DD67FFC90"
 			subtitle: "Craft a Life Aggregator"
 			tasks: [{
@@ -841,8 +665,8 @@
 				type: "item"
 			}]
 			title: "Moving Out"
-			x: 9.5d
-			y: 8.0d
+			x: 24.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -859,8 +683,8 @@
 				type: "item"
 			}]
 			title: "Doppelganger"
-			x: 6.5d
-			y: 9.0d
+			x: 22.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2FA5CDE610C7A6EB"]
@@ -885,8 +709,8 @@
 				}
 			]
 			title: "Dead and Seek"
-			x: 4.5d
-			y: 10.5d
+			x: 22.01642740650307d
+			y: -3.502778424958592d
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
@@ -911,21 +735,21 @@
 					type: "questsadditions:structure"
 				}
 			]
-			x: 3.0d
-			y: 9.0d
+			x: 22.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
 			id: "6A83A49D8762F83D"
-			subtitle: "Craft a Gaia Spirit Ingot. You can use it instead of Terrasteel to summon a harder version of Guardian of Gaia"
+			subtitle: "Form a Gaia Spirit Ingot"
 			tasks: [{
 				id: "6C7F5EA8FAC38232"
 				item: "botania:gaia_ingot"
 				type: "item"
 			}]
 			title: "Gaiaforged"
-			x: 2.5d
-			y: 10.5d
+			x: 20.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -936,15 +760,15 @@
 			id: "1807373293C4A183"
 			shape: "diamond"
 			size: 1.5d
-			subtitle: "Forge a Gaiasteel Ingot"
+			subtitle: "I'm the love I'm the life of all imagined"
 			tasks: [{
 				id: "4E27FBB9935A920A"
 				item: "botanicadds:gaiasteel_ingot"
 				type: "item"
 			}]
 			title: "They Call Me Gaia"
-			x: 1.0d
-			y: 9.0d
+			x: 20.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
@@ -958,12 +782,11 @@
 				type: "item"
 			}]
 			title: "See More"
-			x: 8.5d
+			x: 12.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["1807373293C4A183"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "127F1C202BCDDF85"
 			shape: "hexagon"
@@ -975,11 +798,11 @@
 				type: "item"
 			}]
 			title: "Core of Nature"
-			x: 0.0d
-			y: 4.0d
+			x: 20.0d
+			y: -10.0d
 		}
 		{
-			dependencies: ["50E23CFDE69DC684"]
+			dependencies: ["193CFF98260F82B7"]
 			description: ["&7&lHINT:&r &aFloral Fertilizer&r will spawn a few different magical plants when used on &aGrass&r, similarly to Bone Meal."]
 			id: "5083404D713C058D"
 			optional: true
@@ -991,9 +814,734 @@
 				type: "item"
 			}]
 			title: "Abracadabra, Magic Plants!"
-			x: -3.0d
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["026E22A534C341CC"]
+			description: [
+				"&lPREPARE TO BE IMPRESSED&r"
+				""
+				"&6&lADJ &rfeatures 3 fairly popular magic mods - &dArs Nouveau&r, &aBotania&r, and &cEvilCraft&r. "
+				""
+				"&o&7Don't you even dare ask me about Iron's Spells...&r"
+				"{@pagebreak}"
+				"Now here is the fun part. If you were even slightly familiar with all of them before - that's good! But in &6&lADJ&r, they all play much differently, so it doesn't really matter if you know or if you don't know what you are doing. All 3 are interconnected on pretty much every level, with their order of progression being flipped a bit."
+				""
+				"Have fun. I know I had designing all of that."
+				"{@pagebreak}"
+				"&lP.S.&r Since none of the guide books for those mods are relevant anymore, I removed all of them. If you &6this achievement tree&r, &6recipe browser&r, &6item descriptions&r and &6common sense&r, you are more than capable of figuring everything out!"
+			]
+			icon_scale: 0.75d
+			id: "4BB4F54ACBA9F3A7"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Click to read"
+			tasks: [{
+				id: "5BAE4D4959118AE4"
+				title: "Click to complete"
+				type: "checkmark"
+			}]
+			title: "World of Magic"
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4E019F5A62D00D6F"]
+			id: "4E3E10AFFF61472E"
+			subtitle: "Craft an Imbuement Chamber"
+			tasks: [{
+				id: "6F7B978F6E7BEA20"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			title: "A Start Into Imbuing"
+			x: 10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["45A92F2D2D809FF1"]
+			id: "23EF943A5D4BB045"
+			subtitle: "Craft a Novice Spell Book"
+			tasks: [{
+				id: "19CC96C5C079978C"
+				item: "ars_nouveau:novice_spell_book"
+				type: "item"
+			}]
+			title: "Introduction to Spellcrafting"
+			x: 11.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0AA4AD4290EE5366"]
+			description: [""]
+			icon: "ars_nouveau:ritual_brazier"
+			id: "0213FAA50290ADF1"
+			subtitle: "Craft a Ritual Brazier"
+			tasks: [{
+				id: "3E4B6604474B0D2D"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			title: "Ritualist"
+			x: 14.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0AA4AD4290EE5366"]
+			description: ["&7&lHINT:&r You can place up to &d8 Pedestals&r around your Enchanting Apparatus! A lot of recipes use more Pedestals than the 4 required by the tutorial."]
+			icon: "ars_nouveau:enchanting_apparatus"
+			id: "45A92F2D2D809FF1"
+			min_required_tasks: 3
+			subtitle: "Craft and set up an Enchanting Apparatus"
+			tasks: [
+				{
+					count: 4L
+					id: "5F74B838F3BF2842"
+					item: { Count: 4, id: "ars_nouveau:arcane_pedestal" }
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					icon: "handcrafted:hammer"
+					id: "2B246DFEAE96A160"
+					ignoreState: true
+					layer: true
+					name: "enchanting_apparatus"
+					rightclick: false
+					title: "Click to view structure"
+					type: "questsadditions:structure"
+				}
+				{
+					id: "1BF0DA5C72629338"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+				{
+					id: "58C6045FC8CD7272"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+			]
+			title: "Enchanting Machinery"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0213FAA50290ADF1"]
+			description: [
+				"&7&lHINT:&r Activate rituals by right-clicking the &eRitual Brazier&r once it says it's ready!"
+				""
+				"Some rituals can be &naugmented&r, amplifying or changing their effects completely. You can amplify rituals by &ethrowing the amplifying items into the Brazier before activation&r."
+			]
+			icon: "ars_nouveau:ritual_moonfall"
+			id: "3C8D98C28C22E202"
+			subtitle: "Craft any Ritual Tablet and insert it into a Ritual Brazier"
+			tasks: [
+				{
+					id: "25AA08F8613203B6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "adj:ars/rituals"
+						}
+					}
+					title: "Craft any Ritual Tablet"
+					type: "item"
+				}
+				{
+					block: "ars_nouveau:ritual_brazier"
+					block_type: 0
+					checkItem: true
+					id: "470472632021048F"
+					isItemInteraction: true
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "adj:ars/rituals"
+						}
+					}
+					title: "Insert a Ritual Tablet into a Ritual Brazier"
+					type: "questsadditions:use"
+					value: 1L
+				}
+			]
+			title: "Quick 101 Into Rituals"
+			x: 15.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["23EF943A5D4BB045"]
+			description: ["&7&lHINT:&r You can open the glyph crafting menu by right-clicking the &eScribe's Table&r with your &dSpellbook&f!"]
+			icon: "ars_nouveau:glyph_projectile"
+			id: "1183BADAC1F706A7"
+			subtitle: "Unlock a new glyph in your Spellbook"
+			tasks: [
+				{
+					id: "1D3F309D0F4FF7A1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "adj:ars/glyphs"
+						}
+					}
+					title: "Craft any Glyph"
+					type: "item"
+				}
+				{
+					id: "0E6F495979A0D2FF"
+					item: "ars_nouveau:scribes_table"
+					type: "item"
+				}
+			]
+			title: "Glyphmania"
+			x: 9.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0AA4AD4290EE5366"]
+			description: [""]
+			id: "65983995FD2CEA8A"
+			subtitle: "Craft a Mana Jar - a different mean of storing Mana"
+			tasks: [{
+				id: "2D611DB979B8BC45"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			title: "mana.jar"
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5CFAC77E43966C73"]
+			description: [
+				"&7&lHINT:&r Arcanist Armor can be imbued with &dThreads&r, which provide a plethora of different effects."
+				"{@pagebreak}"
+				"&7&lHINT 2:&r If you are dedicated to playing as a wizard, this is quite literally the only armor set you will need for most of your playthrough! &dArcanist armor can be upgraded twice&r by enchanting it with resources available &6later in progression&r. Every upgrade increases its &7defense&r, &dmagic bonuses&r and the total number of &dThreads&r you can add to it."
+			]
+			icon: {
+				Count: 1
+				id: "ars_nouveau:arcanist_hood"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "66FE6097FAD75DFF"
+			subtitle: "Enchant your Runite gear and upgrade it into an Arcanist set"
+			tasks: [
+				{
+					id: "07B620B0052449BC"
+					item: {
+						Count: 1
+						id: "ars_nouveau:arcanist_hood"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "071B5BC711BBE512"
+					item: {
+						Count: 1
+						id: "ars_nouveau:arcanist_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "38A35F9FA098C2E9"
+					item: {
+						Count: 1
+						id: "ars_nouveau:arcanist_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "11E84D6EC629A648"
+					item: {
+						Count: 1
+						id: "ars_nouveau:arcanist_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arcane Armory"
+			x: 7.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4BB4F54ACBA9F3A7"]
+			icon: "mythicmetals:runite_ingot"
+			id: "5CFAC77E43966C73"
+			subtitle: "Forge a Runite Ingot"
+			tasks: [{
+				id: "6BDD6FE2789633F0"
+				item: "mythicmetals:runite_ingot"
+				type: "item"
+			}]
+			title: "Runic"
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["573E8C31609DCA26"]
+			description: [""]
+			icon: "ars_nouveau:blank_thread"
+			icon_scale: 0.75d
+			id: "459AE4954ABBB9C1"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft an Alteration Table and a Blank Thread"
+			tasks: [
+				{
+					id: "45CD8B6153074051"
+					item: "ars_nouveau:blank_thread"
+					type: "item"
+				}
+				{
+					id: "7BF6B8AA56D4B58C"
+					item: "ars_nouveau:alteration_table"
+					type: "item"
+				}
+			]
+			title: "Arcane Loom"
+			x: 14.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["65983995FD2CEA8A"]
+			id: "3AEF4B2CFBE2B569"
+			subtitle: "Craft an Ender Mana Jar"
+			tasks: [{
+				id: "7EBA14476750909C"
+				item: "ars_additions:ender_source_jar"
+				type: "item"
+			}]
+			title: "Mana Cloud"
+			x: 15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["65983995FD2CEA8A"]
+			description: [""]
+			icon: "ars_nouveau:relay"
+			id: "579681E66E7B1F88"
+			subtitle: "Craft any Mana Relay to transport Mana stored in Jars from point A to point B"
+			tasks: [
+				{
+					id: "66BF9898CCD7F135"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "adj:ars/relay"
+						}
+					}
+					title: "Craft any Source Relay"
+					type: "item"
+				}
+				{
+					id: "585F96E61385BE8F"
+					item: {
+						Count: 1
+						id: "ars_nouveau:dominion_wand"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Eternal Mana River"
+			x: 14.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["23EF943A5D4BB045"]
+			id: "389BC3ED918250C2"
+			subtitle: "Enhance your Spellbook with materials from both heaven and hell"
+			tasks: [{
+				id: "1C432F08E8C745D1"
+				item: "ars_nouveau:apprentice_spell_book"
+				type: "item"
+			}]
+			title: "Upgrades People, Upgrades"
+			x: 11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["389BC3ED918250C2"]
+			icon_scale: 0.75d
+			id: "0553DD6B21E79BB4"
+			rewards: [{
+				id: "68737A855CD203B4"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Upgrade your Spellbook one final time with the resources from the rift between dimensions"
+			tasks: [{
+				id: "198C9B0E73D2D673"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			title: "Archmage"
+			x: 11.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["45A92F2D2D809FF1"]
+			icon: "ars_nouveau:magebloom_crop"
+			id: "573E8C31609DCA26"
+			subtitle: "Craft a Magebloom Seed and plant some in your garden"
+			tasks: [
+				{
+					id: "7E531C1B8C4E7989"
+					item: "ars_nouveau:magebloom_crop"
+					type: "item"
+				}
+				{
+					block: "ars_nouveau:magebloom_crop"
+					block_type: 0
+					id: "28B257928ACBE264"
+					replace: false
+					replaced: "minecraft:air"
+					title: "Plant 4 Magebloom Seeds"
+					type: "questsadditions:place"
+					value: 4L
+				}
+			]
+			title: "Source Botanics"
+			x: 13.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4E3E10AFFF61472E"]
+			icon: "ars_nouveau:air_essence"
+			id: "06C3735EEB6B3733"
+			subtitle: "Imbue a Mana Gem with natural energies, turning it into an Essence"
+			tasks: [{
+				id: "0E78C41E03F98943"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:ars/essence"
+					}
+				}
+				title: "Craft any Essence"
+				type: "item"
+			}]
+			title: "Essential"
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["45A92F2D2D809FF1"]
+			icon: "ars_elemental:lesser_fire_focus"
+			id: "675C4AB4B1F71DD0"
+			subtitle: "Craft a Lesser Spell Focus to empower a selected school of spells"
+			tasks: [{
+				id: "786FF4D53EDEF7D4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:ars/lesser_spell_focus"
+					}
+				}
+				title: "Any #adj:ars/lesser_spell_focus"
+				type: "item"
+			}]
+			title: "Focus is Key"
+			x: 10.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["602FA24B60010322"]
+			icon: "ars_elemental:base_bangle"
+			id: "3FDD5C479EE1E14F"
+			subtitle: "Craft an enchanted Bangle to boost your spells"
+			tasks: [{
+				id: "3ABBDCF0FDC2423B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:ars/bangle"
+					}
+				}
+				title: "Craft any Bangle"
+				type: "item"
+			}]
+			title: "Pretty Magical"
+			x: 14.5d
 			y: -1.0d
 		}
+		{
+			dependencies: ["3C8D98C28C22E202"]
+			icon: "ars_nouveau:wilden_tribute"
+			id: "57004D0473F07DF1"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Craft a Tablet of Summon Wilden, then summon and kill a Wilden Chimera"
+			tasks: [
+				{
+					id: "12D7735675F38232"
+					item: "ars_nouveau:ritual_wilden_summon"
+					type: "item"
+				}
+				{
+					entity: "ars_nouveau:wilden_boss"
+					icon: "ars_nouveau:wilden_tribute"
+					id: "240AAB9563F2263F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Cursed Chimera"
+			x: 17.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["57004D0473F07DF1"]
+			icon_scale: 0.75d
+			id: "76DA5AEA27C3B576"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Mark of Mastery"
+			tasks: [{
+				id: "6DA53EDAAF80FE23"
+				item: "ars_elemental:mark_of_mastery"
+				type: "item"
+			}]
+			title: "Master Mode"
+			x: 18.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["76DA5AEA27C3B576"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "kubejs:eye_of_arcanum"
+			id: "2816033FD61214F9"
+			shape: "hexagon"
+			size: 4.0d
+			subtitle: "Imbue an Awakened Ender Pearl with forces of magic and turn it into the Eye of Arcanum"
+			tasks: [{
+				id: "7379D46FF74C82E3"
+				item: "kubejs:eye_of_arcanum"
+				type: "item"
+			}]
+			title: "Core of Magic"
+			x: 22.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4BB4F54ACBA9F3A7"]
+			id: "30CABAA97495053C"
+			size: 1.0d
+			subtitle: "Find Dark Ore underground and break it for its gems"
+			tasks: [{
+				id: "4126B4F37145FCFC"
+				item: "evilcraft:dark_gem"
+				type: "item"
+			}]
+			title: "Advent of Ascension"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4BB4F54ACBA9F3A7"]
+			icon: "ars_nouveau:purple_archwood_log"
+			id: "4E019F5A62D00D6F"
+			subtitle: "Chop down any Archwood tree"
+			tasks: [{
+				id: "5BF60A0C586276B0"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:logs/archwood"
+					}
+				}
+				title: "Any Archwood Log"
+				type: "item"
+			}]
+			title: "Wise, Mystical Tree"
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0AA4AD4290EE5366"]
+			id: "69830CAFAA11AB7E"
+			subtitle: "Craft a Botanical Brewery and... well, use it to make Brews!"
+			tasks: [{
+				id: "71022462EAB79FE4"
+				item: "botania:brewery"
+				type: "item"
+			}]
+			title: "Childhood Blues"
+			x: 11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1E174297E96D12B8"]
+			icon: "botania:shulk_me_not"
+			id: "5E492F6CACA28CD9"
+			subtitle: "Craft some of the more powerful Mana generating flowers"
+			tasks: [
+				{
+					id: "2F292B25D79CE1EA"
+					item: "botania:dandelifeon"
+					type: "item"
+				}
+				{
+					id: "5006E364A4968404"
+					item: "botania:shulk_me_not"
+					type: "item"
+				}
+			]
+			title: "At Maximum Force"
+			x: 23.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["602FA24B60010322"]
+			icon: "botania:entropinnyum"
+			id: "59BEE24C8AAB14A7"
+			subtitle: "With newfound materials, explore some of the more quirky, but more efficient ways of generating Mana"
+			tasks: [
+				{
+					id: "6A1BD1211929E099"
+					item: "botania:thermalily"
+					type: "item"
+				}
+				{
+					id: "6F5DF46E49ABF9BA"
+					item: "botania:rosa_arcana"
+					type: "item"
+				}
+				{
+					id: "3E47D2EA387ADEF8"
+					item: "botania:gourmaryllis"
+					type: "item"
+				}
+				{
+					id: "5E71AFE4F5E5FFA7"
+					item: "botania:spectrolus"
+					type: "item"
+				}
+				{
+					id: "354A3FC39A73F0B1"
+					item: "botania:munchdew"
+					type: "item"
+				}
+				{
+					id: "6DFF3CE01DE02995"
+					item: "botania:kekimurus"
+					type: "item"
+				}
+				{
+					id: "6EAE531CC838C755"
+					item: "botania:entropinnyum"
+					type: "item"
+				}
+				{
+					id: "4A4AB6F0E10DE914"
+					item: "botanicadds:flowers/vibrantia"
+					type: "item"
+				}
+				{
+					id: "0C99797382174998"
+					item: "botania:rafflowsia"
+					type: "item"
+				}
+			]
+			title: "Amp Up The Game"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["35B5E5B6F7CC021D"]
+			id: "2D7BFE01824A0C6A"
+			optional: true
+			shape: "rsquare"
+			subtitle: "What even is the purpose of this thing?"
+			tasks: [{
+				id: "71CDEB988922B4FD"
+				item: "botania:pool_minecart"
+				type: "item"
+			}]
+			title: "Mana On Rails!"
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5CFAC77E43966C73"]
+			id: "69E0CD80BEE3CA2E"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a Soul Knife"
+			tasks: [{
+				id: "29472894C7970070"
+				item: {
+					Count: 1
+					id: "mcdw:soul_dagger_soul_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sacrificial"
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4B3625869C4E7079"]
+			id: "54622828F37E8A7E"
+			subtitle: "Bottle up some Ender Air"
+			tasks: [{
+				id: "73019BF4C30B300B"
+				item: "botania:ender_air_bottle"
+				type: "item"
+			}]
+			title: "Smells Funny"
+			x: 20.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1807373293C4A183"]
+			id: "6287D26668962000"
+			subtitle: "Craft a Flügel Tiara"
+			tasks: [{
+				id: "5BCDE3A34A316419"
+				item: {
+					Count: 1
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 0
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "To The Sky!"
+			x: 18.0d
+			y: -6.5d
+		}
 	]
-	title: "Magical Botanics"
+	title: "World of Magic"
 }

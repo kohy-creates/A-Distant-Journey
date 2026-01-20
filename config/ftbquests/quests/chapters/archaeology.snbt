@@ -24,10 +24,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"10E23382BDF3B0D3"
-				"71C9D73CA3D6B704"
-			]
 			icon: {
 				Count: 1
 				id: "betterarcheology:iron_brush"
@@ -283,6 +279,11 @@
 			icon: "minecraft:prize_pottery_sherd"
 			icon_scale: 0.75d
 			id: "45EB941110554E0E"
+			rewards: [{
+				id: "2ADAE38C80D95EC1"
+				type: "xp"
+				xp: 1500
+			}]
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Collect at least one of every Pottery Sherd"
@@ -447,27 +448,40 @@
 					item: "upgrade_aquatic:predator_pottery_sherd"
 					type: "item"
 				}
+				{
+					id: "643EAD2C33627C74"
+					item: "neapolitan:reflection_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "210B0D51BDC91A04"
+					item: "neapolitan:scream_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "627E138285C7B604"
+					item: "neapolitan:snack_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "7632724B33021D00"
+					item: "neapolitan:spider_pottery_sherd"
+					type: "item"
+				}
 			]
 			title: "Certificate of Completion"
 			x: 3.0d
 			y: -1.5d
 		}
 		{
-			id: "10E23382BDF3B0D3"
-			subtitle: "Find a Sniffer Egg"
-			tasks: [{
-				id: "5B68DDAB62403EEA"
-				item: "minecraft:sniffer_egg"
-				type: "item"
-			}]
-			title: "Prehistoric Comeback"
-			x: -1.0d
-			y: 0.5d
-		}
-		{
 			dependencies: ["10E23382BDF3B0D3"]
 			icon: "quark:ancient_sapling"
 			id: "2E0C540677F75107"
+			rewards: [{
+				id: "2365117D8584400E"
+				type: "xp"
+				xp: 100
+			}]
 			subtitle: "Obtain every possible sapling from a Sniffer"
 			tasks: [
 				{
@@ -547,6 +561,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["7599371BBE1AC566"]
 			id: "71C9D73CA3D6B704"
 			subtitle: "Craft an Archeology Table"
 			tasks: [{
@@ -558,6 +573,19 @@
 			x: 3.0d
 			y: 0.5d
 		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			id: "10E23382BDF3B0D3"
+			subtitle: "Find a Sniffer Egg"
+			tasks: [{
+				id: "5B68DDAB62403EEA"
+				item: "minecraft:sniffer_egg"
+				type: "item"
+			}]
+			title: "Prehistoric Comeback"
+			x: -1.0d
+			y: 0.5d
+		}
 	]
-	title: "Archeological Adventures"
+	title: "Trails and Tales"
 }

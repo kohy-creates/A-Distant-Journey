@@ -192,6 +192,20 @@
 		[types.cake.mynethersdelight]
 			magma_cake = true
 
+		[types.cake.twilightdelight]
+			aurora_cake = true
+			torchberry_cake = true
+			phytochemical_cake = true
+			glacier_cake = true
+
+		[types.cake.neapolitan]
+			vanilla_cake = true
+			chocolate_cake = true
+			strawberry_cake = true
+			banana_cake = true
+			mint_cake = true
+			adzuki_cake = true
+
 	[types.cut_block_type]
 
 		[types.cut_block_type.botania]
@@ -788,11 +802,10 @@
 			valkyrie_brick = true
 			valkyrie_tile = true
 
-		[types.cut_block_type.ascended_quark]
-			polished_icestone = true
-			icestone_bricks = true
-			quicksoil_bricks = true
-			aether_dirt_bricks = true
+		[types.cut_block_type.neapolitan]
+			chocolate_brick = true
+			chocolate_tile = true
+			frond_thatch = true
 
 #Disables specific entries
 [entries]
