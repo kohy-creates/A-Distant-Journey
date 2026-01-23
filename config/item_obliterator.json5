@@ -629,6 +629,7 @@
 		"farmersdelight:rope",
 		"farmersdelight:flint_knife",
 		"unusualend:phantom_arrow",
+		"unusualend:purpur_tank",
 		"supplementaries:wrench",
 
 		// "waystones:deepslate_waystone",
@@ -1141,6 +1142,8 @@
 		"evilcraft:obscured_glass",
 		"evilcraft:entangled_chalice",
 		"evilcraft:corrupted_chalice",
+		"evilcraft:origins_of_darkness",
+		"evilcraft:darkened_apple",
 
 		"window_box:bouquet",
 		"window_box:topsy_tulip",

@@ -1,9 +1,14 @@
 # Don't change this! Version used to track needed updates.
-version = 0
-turnOffPotionParticles = "SELF"
+version = 1
+disableParticles = false
+maxParticlesPerSheet = 16384
+particleRenderDistanceMultiplier = 1.0
+asynchronousTicking = true
 reduceAllChance = 0.0
 reduceDecreasedChance = 0.0
-disableParticles = false
+turnOffPotionParticlesV2 = [
+    "NONE"
+]
 
 [byTypeReductions]
 "minecraft:damage_indicator" = 0.0

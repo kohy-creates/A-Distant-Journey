@@ -1528,8 +1528,7 @@ ServerEvents.recipes((event) => {
 		event.recipes.create.mechanical_crafting(
 			waystone,
 			[
-				' BBB ',
-				'BOOOB',
+				'BBBBB',
 				'BSASB',
 				' BSB ',
 				' OWO ',
@@ -3085,9 +3084,9 @@ ServerEvents.recipes((event) => {
 		[
 			['mythicmetals:star_platinum', 1],
 			['botania:elementium_ingot', 1],
-			['aether_redux:gravitite_ingot', 1],
+			['ancient_aether:valkyrum_ingot', 1],
 			['unusualend:pearlescent_ingot', 1],
-			['mythicmetals:unobtainium', 1]
+			['mythicmetals:unobtainium', 2]
 		],
 		['mythicmetals:celestium_ingot', 1],
 		4,
@@ -3100,7 +3099,7 @@ ServerEvents.recipes((event) => {
 			['mythicmetals:palladium_ingot', 1],
 			['botania:terrasteel_ingot', 1],
 			['born_in_chaos_v1:dark_metal_ingot', 1],
-			['mythicmetals:unobtainium', 1]
+			['mythicmetals:unobtainium', 2]
 		],
 		['mythicmetals:metallurgium_ingot', 1],
 		4,
@@ -3119,7 +3118,7 @@ ServerEvents.recipes((event) => {
 		5,
 		[
 			[
-				'2+', 'output', 2
+				'3+', 'output', 2
 			]
 		]
 	)
@@ -3134,7 +3133,37 @@ ServerEvents.recipes((event) => {
 		5,
 		[
 			[
-				'2+', 'output', 2
+				'3+', 'output', 2
+			]
+		]
+	)
+
+	// Valkyrum
+	alloyForgeRecipe(
+		[
+			['ancient_aether:raw_valkyrum', 1],
+			['aether:gravitite_ingot', 1],
+		],
+		['ancient_aether:valkyrum_ingot', 2],
+		2,
+		10,
+		[
+			[
+				'3+', 'output', 3
+			]
+		]
+	)
+	alloyForgeRecipe(
+		[
+			['ancient_aether:valkyrum_ore', 1],
+			['aether:gravitite_ingot', 1],
+		],
+		['ancient_aether:valkyrum_ingot', 2],
+		2,
+		10,
+		[
+			[
+				'3+', 'output', 3
 			]
 		]
 	)

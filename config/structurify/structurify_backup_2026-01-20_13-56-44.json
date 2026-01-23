@@ -1,22 +1,14 @@
 {
   "config_version": "2.0.12",
-  "config_datetime": "2026-01-20_21-03-09",
+  "config_datetime": "2026-01-20_13-52-35",
   "general": {
     "disable_all_structures": false,
-    "prevent_structure_overlap": true,
+    "prevent_structure_overlap": false,
     "enable_global_spacing_and_separation_modifier": true,
     "global_spacing_and_separation_modifier": 1.4
   },
   "structure_namespaces": [],
   "structures": [
-    {
-      "name": "ancient_aether:ancient_dungeon",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
-    },
     {
       "name": "ars_elemental:starbuncle_shrine",
       "is_disabled": true,
@@ -621,7 +613,7 @@
       "name": "lost_aether_content:platinum_dungeon",
       "salt": 1312935463,
       "frequency": 0.6,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:buried_treasures",

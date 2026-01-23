@@ -345,6 +345,10 @@ ServerEvents.tags('block', tags => {
 		/grass/,
 		/fern/
 	])
+
+	tags.remove('c:chests', [
+		'evilcraft:blood_chest'
+	])
 })
 
 // 

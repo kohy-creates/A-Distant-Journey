@@ -1,9 +1,9 @@
 {
   "config_version": "2.0.12",
-  "config_datetime": "2026-01-20_21-03-09",
+  "config_datetime": "2026-01-20_13-56-44",
   "general": {
     "disable_all_structures": false,
-    "prevent_structure_overlap": true,
+    "prevent_structure_overlap": false,
     "enable_global_spacing_and_separation_modifier": true,
     "global_spacing_and_separation_modifier": 1.4
   },
@@ -621,7 +621,7 @@
       "name": "lost_aether_content:platinum_dungeon",
       "salt": 1312935463,
       "frequency": 0.6,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": true
     },
     {
       "name": "minecraft:buried_treasures",

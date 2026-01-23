@@ -31,7 +31,7 @@
 			image: "adj:textures/texts/chapter_1.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 25.0d
+			x: 25.5d
 			y: 3.5d
 		}
 		{
@@ -115,8 +115,8 @@
 			order: -999
 			rotation: 0.0d
 			width: 10.0d
-			x: 24.5d
-			y: 13.5d
+			x: 23.5d
+			y: 15.0d
 		}
 		{
 			dependency: "574DD3FD26A23CDE"
@@ -203,15 +203,15 @@
 			image: "minecraft:block/cake_top"
 			rotation: 0.0d
 			width: 1.75d
-			x: 9.22551020408163d
-			y: 6.2775510204081755d
+			x: 9.0d
+			y: 6.5d
 		}
 		{
 			height: 1.75d
 			image: "enchantinginfuser:block/enchanting_infuser_top_amethyst"
 			rotation: 0.0d
 			width: 1.75d
-			x: 15.0d
+			x: 13.690476190476183d
 			y: 9.5d
 		}
 		{
@@ -317,7 +317,7 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: 28.5d
-			y: 21.5d
+			y: 21.0d
 		}
 		{
 			dependency: "379A22A2185CFC8E"
@@ -325,7 +325,7 @@
 			image: "born_in_chaos_v1:block/bloktiemnoistali"
 			rotation: 45.0d
 			width: 1.75d
-			x: 17.0d
+			x: 18.0d
 			y: 7.0d
 		}
 		{
@@ -341,7 +341,7 @@
 			image: "phantasm:block/crystal_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: 13.309523809523817d
+			x: 12.0d
 			y: 10.714285714285701d
 		}
 		{
@@ -350,8 +350,8 @@
 			image: "minecraft:block/netherite_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: 30.5d
-			y: 20.0d
+			x: 29.5d
+			y: 19.5d
 		}
 		{
 			dependency: "545C995B87BA0947"
@@ -415,8 +415,8 @@
 			image: "adj:textures/texts/lore_nether.png"
 			rotation: 0.0d
 			width: 12.0d
-			x: 25.72619047619051d
-			y: 0.3214285714285481d
+			x: 27.0d
+			y: -0.5d
 		}
 		{
 			dependency: "574DD3FD26A23CDE"
@@ -591,7 +591,7 @@
 			image: "mythicmetals:block/mythril_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: 19.5d
+			x: 20.0d
 			y: 2.0d
 		}
 		{
@@ -609,8 +609,8 @@
 			image: "twilightforest:block/canopy_log_top"
 			rotation: 45.0d
 			width: 1.75d
-			x: 16.5d
-			y: 3.0d
+			x: 17.5d
+			y: 2.5d
 		}
 		{
 			dependency: "3F2B685C8C008081"
@@ -803,13 +803,6 @@
 				"Yes, Chainmail. It is craftable in &6&lADJ&r and partially replaced Iron Armor in the early game."
 				""
 				"Iron Armor requires &7&lIron Sheets&r to craft. Look in your recipe browser to learn how to craft those."
-				""
-				"{@pagebreak}"
-				"This is a great moment to mention the addition of &e&lfull set bonuses&r."
-				""
-				"Most armor sets have a unique effect(s) that will activate when, well... a full set is equipped. Kind of self-explanatory."
-				""
-				"The set bonus is sometimes better than bonuses from individual pieces, so you should think and strategize whether it's better to utilize the set bonus or mix pieces of different sets for their raw stat bonuses."
 			]
 			icon: {
 				Count: 1
@@ -957,7 +950,7 @@
 				type: "item"
 			}]
 			title: "Enchanter"
-			x: 15.0d
+			x: 13.690476190476183d
 			y: 9.5d
 		}
 		{
@@ -993,7 +986,7 @@
 				type: "dimension"
 			}]
 			title: "We Need to Go Deeper"
-			x: 16.0d
+			x: 17.0d
 			y: 5.0d
 		}
 		{
@@ -1349,8 +1342,8 @@
 				type: "item"
 			}]
 			title: "Librarian"
-			x: 16.5d
-			y: 9.5d
+			x: 14.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1366,7 +1359,7 @@
 				""
 				""
 				"{@pagebreak}"
-				"Having troubles understanding how to craft it? Look into the &5Becoming a Wizard&r chapter!"
+				"Having troubles understanding how to craft it? Look into the &5World is Magic&r chapter!"
 			]
 			icon_scale: 0.75d
 			id: "1770E10AFE083ACF"
@@ -1379,7 +1372,7 @@
 				type: "item"
 			}]
 			title: "Unlimited"
-			x: 13.309523809523817d
+			x: 12.0d
 			y: 10.714285714285701d
 		}
 		{
@@ -1424,8 +1417,8 @@
 				}
 			]
 			title: "A Terrible Fortress"
-			x: 19.0d
-			y: 6.0d
+			x: 20.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
@@ -1550,6 +1543,13 @@
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
+			description: [
+				"This is a great moment to mention the addition of &e&lfull set bonuses&r."
+				""
+				"Most armor sets have a unique effect(s) that will activate when, well... a full set is equipped. Kind of self-explanatory."
+				""
+				"The set bonus is sometimes better than bonuses from individual pieces, so you should think and strategize whether it's better to utilize the set bonus or mix pieces of different sets for their raw stat bonuses."
+			]
 			icon: {
 				Count: 1
 				id: "kubejs:wooden_chestplate"
@@ -1666,8 +1666,8 @@
 				type: "item"
 			}]
 			title: "Who's Cutting Onions?"
-			x: 16.0d
-			y: 8.0d
+			x: 15.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["0B0DF609ABC8773D"]
@@ -1679,7 +1679,7 @@
 				type: "item"
 			}]
 			title: "Into Fire"
-			x: 21.0d
+			x: 22.0d
 			y: 5.5d
 		}
 		{
@@ -1692,7 +1692,7 @@
 				type: "item"
 			}]
 			title: "Local Brewery"
-			x: 22.0d
+			x: 23.0d
 			y: 4.0d
 		}
 		{
@@ -1714,11 +1714,11 @@
 				}
 			]
 			title: "Spooky Scary Skeletons"
-			x: 21.0d
+			x: 22.0d
 			y: 7.0d
 		}
 		{
-			dependencies: ["379A22A2185CFC8E"]
+			dependencies: ["0B0DF609ABC8773D"]
 			hide_until_deps_complete: true
 			icon: "netherexp:nether_pizza"
 			id: "3A6A3CAC79DFDDCE"
@@ -1733,18 +1733,13 @@
 					type: "item"
 				}
 				{
-					block: "netherexp:nether_pizza"
-					block_type: 0
-					disable_toast: true
-					id: "635B82A9EAAD4870"
-					replace: false
-					replaced: "minecraft:air"
-					type: "questsadditions:place"
-					value: 1L
+					id: "69C9675BE33912BD"
+					item: "netherexp:nether_pizza_slice"
+					type: "item"
 				}
 			]
 			title: "Pizza Hunt!"
-			x: 19.0d
+			x: 19.5d
 			y: 7.5d
 		}
 		{
@@ -1760,7 +1755,7 @@
 				type: "structure"
 			}]
 			title: "Those Were The Days"
-			x: 19.5d
+			x: 20.0d
 			y: 4.0d
 		}
 		{
@@ -1792,7 +1787,7 @@
 				}
 			]
 			title: "From The Depths"
-			x: 18.5d
+			x: 19.0d
 			y: 3.0d
 		}
 		{
@@ -1845,7 +1840,7 @@
 				type: "item"
 			}]
 			title: "Hell's Alloy Kitchen"
-			x: 18.0d
+			x: 19.0d
 			y: 5.0d
 		}
 		{
@@ -1858,7 +1853,7 @@
 				type: "item"
 			}]
 			title: "Awakened"
-			x: 23.0d
+			x: 24.0d
 			y: 5.5d
 		}
 		{
@@ -1876,7 +1871,7 @@
 				type: "observation"
 			}]
 			title: "Withering Heights"
-			x: 22.0d
+			x: 23.0d
 			y: 8.5d
 		}
 		{
@@ -1995,7 +1990,7 @@
 				}
 			]
 			title: "Drillers"
-			x: 19.5d
+			x: 20.0d
 			y: 2.0d
 		}
 		{
@@ -2224,7 +2219,7 @@
 				type: "item"
 			}]
 			title: "Wayfinder"
-			x: 24.5d
+			x: 25.5d
 			y: 5.5d
 		}
 		{
@@ -2253,8 +2248,8 @@
 				}
 			]
 			title: "Bronze Dungeon"
-			x: 21.0d
-			y: 15.0d
+			x: 20.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["03DC59E95C1B2EB0"]
@@ -2290,8 +2285,8 @@
 				value: 1L
 			}]
 			title: "Sliding Away"
-			x: 21.0d
-			y: 16.0d
+			x: 18.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["574DD3FD26A23CDE"]
@@ -2319,7 +2314,7 @@
 				}
 			]
 			title: "Gold Dungeon"
-			x: 24.0d
+			x: 21.0d
 			y: 15.0d
 		}
 		{
@@ -2348,8 +2343,8 @@
 				}
 			]
 			title: "Silver Dungeon"
-			x: 22.5d
-			y: 15.0d
+			x: 20.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["574DD3FD26A23CDE"]
@@ -2377,8 +2372,8 @@
 				}
 			]
 			title: "Platinum Dungeon"
-			x: 25.5d
-			y: 15.0d
+			x: 23.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["554D78E50EBB7EF8"]
@@ -2393,8 +2388,8 @@
 				value: 1L
 			}]
 			title: "HEVEN... FALLS!"
-			x: 22.5d
-			y: 16.0d
+			x: 19.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["501980860925DC72"]
@@ -2409,8 +2404,8 @@
 				value: 1L
 			}]
 			title: "The Sun Goes Down"
-			x: 24.0d
-			y: 16.0d
+			x: 21.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["170CD4B41CA6F9C1"]
@@ -2449,7 +2444,7 @@
 			}]
 			title: "HEVEN... FALLS!!"
 			x: 25.5d
-			y: 19.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["3B047A7072164813"]
@@ -2577,22 +2572,6 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["574DD3FD26A23CDE"]
-			hide_until_deps_complete: true
-			id: "561902DAAF66FD3A"
-			optional: true
-			shape: "rsquare"
-			subtitle: "Craft a Book of Lore. It will tell you info about any Aether item you put inside!"
-			tasks: [{
-				id: "449F3B9251812280"
-				item: "aether:book_of_lore"
-				type: "item"
-			}]
-			title: "Aetherpedia"
-			x: 21.0d
-			y: 13.0d
-		}
-		{
 			dependencies: ["6541FB163E3300CE"]
 			icon: {
 				Count: 1
@@ -2668,8 +2647,8 @@
 				type: "item"
 			}]
 			title: "Take THAT, Physics!"
-			x: 21.0d
-			y: 17.5d
+			x: 17.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0CC3E441C652E02E"]
@@ -2683,8 +2662,8 @@
 				type: "item"
 			}]
 			title: "Valkyrie Champion"
-			x: 22.5d
-			y: 17.5d
+			x: 19.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["545C995B87BA0947"]
@@ -2698,8 +2677,8 @@
 				type: "item"
 			}]
 			title: "Red Like Roses"
-			x: 24.0d
-			y: 21.5d
+			x: 24.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["20130F300D432015"]
@@ -2776,8 +2755,8 @@
 				type: "item"
 			}]
 			title: "Hammer of Gods"
-			x: 20.0d
-			y: 17.0d
+			x: 18.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["3973363A1DC79F53"]
@@ -2789,8 +2768,8 @@
 				type: "item"
 			}]
 			title: "Ruby Attuned"
-			x: 23.0d
-			y: 22.5d
+			x: 23.5d
+			y: 22.0d
 		}
 		{
 			dependencies: ["545C995B87BA0947"]
@@ -2804,7 +2783,7 @@
 			}]
 			title: "Hidden in The Depths"
 			x: 28.5d
-			y: 19.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["6EC1FF01974E8D02"]
@@ -2881,7 +2860,7 @@
 			]
 			title: "Not Quite Adamantium"
 			x: 27.0d
-			y: 21.5d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -2948,8 +2927,8 @@
 				}
 			]
 			title: "Covered in Debris"
-			x: 30.5d
-			y: 20.0d
+			x: 29.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["25A8ABBC7235D20E"]
@@ -2983,11 +2962,12 @@
 				entity: "born_in_chaos_v1:nightmare_stalker"
 				icon: "born_in_chaos_v1:nightmare_stalker_skull"
 				id: "09CB8AFD413AC207"
-				title: "Worsening Nightmares"
+				title: "Kill a Nightmare Stalker"
 				type: "kill"
 				value: 1L
 			}]
-			x: 17.0d
+			title: "Worsening Nigthmares"
+			x: 18.0d
 			y: 7.0d
 		}
 		{
@@ -3013,7 +2993,7 @@
 			]
 			title: "Tier 3 Forge"
 			x: 28.5d
-			y: 21.5d
+			y: 21.0d
 		}
 		{
 			dependencies: ["25A8ABBC7235D20E"]
@@ -3207,8 +3187,8 @@
 				title: "A Distant Journey"
 				type: "advancement"
 			}]
-			x: 16.0d
-			y: 5.0d
+			x: 17.0d
+			y: 5.05d
 		}
 		{
 			dependencies: ["25A8ABBC7235D20E"]
@@ -4011,20 +3991,27 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["464BE56223B9DADC"]
+			dependencies: ["6541FB163E3300CE"]
 			description: [""]
 			icon: "aether:life_shard"
 			id: "13339DFB11520FBF"
 			subtitle: "Get to 500 total max health by consuming 10 Life Shards"
-			tasks: [{
-				icon: "aether:life_shard"
-				id: "6A97FDE16BB0CD83"
-				title: "Consume 10 Life Shards"
-				type: "custom"
-			}]
+			tasks: [
+				{
+					icon: "aether:life_shard"
+					id: "6A97FDE16BB0CD83"
+					title: "Consume 10 Life Shards"
+					type: "custom"
+				}
+				{
+					id: "512A3C9DB4C1B3CF"
+					item: "aether:life_shard"
+					type: "item"
+				}
+			]
 			title: "Life Surge"
-			x: 24.0d
-			y: 17.5d
+			x: 27.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["37D84A7023231586"]
@@ -4060,16 +4047,25 @@
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Enter the Twilight Forest"
-			tasks: [{
-				dimension: "twilightforest:twilight_forest"
-				icon: "twilightforest:hollow_oak_sapling"
-				id: "143A064307F40469"
-				title: "Enter the Twilight Forest"
-				type: "dimension"
-			}]
+			tasks: [
+				{
+					dimension: "twilightforest:twilight_forest"
+					disable_toast: true
+					icon: "twilightforest:hollow_oak_sapling"
+					id: "143A064307F40469"
+					title: "Enter the Twilight Forest"
+					type: "dimension"
+				}
+				{
+					disable_toast: true
+					id: "2D25C5E49F69FD7C"
+					item: "botania:dragonstone"
+					type: "item"
+				}
+			]
 			title: "Story of Eastern Wonderland"
-			x: 16.5d
-			y: 3.0d
+			x: 17.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -4098,6 +4094,77 @@
 			title: "Rich People Stuff"
 			x: -9.0d
 			y: 21.5d
+		}
+		{
+			dependencies: ["236739201289D4DD"]
+			id: "3C6D5381BA4C55A1"
+			subtitle: "Find a Pigstep Music Disc"
+			tasks: [{
+				id: "2482E7768D577E52"
+				item: "minecraft:music_disc_pigstep"
+				type: "item"
+			}]
+			title: "Pigs Step!"
+			x: 21.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["236739201289D4DD"]
+			id: "765297F2529419A9"
+			subtitle: "Barter for an Enchanted Midas Gold Block"
+			tasks: [{
+				id: "5F17A045AF379A1B"
+				item: "mythicmetals:enchanted_midas_gold_block"
+				type: "item"
+			}]
+			title: "Midas' Touch"
+			x: 21.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Platinum Dungeon!"]
+			hide_until_deps_complete: true
+			icon: "ancient_aether:laboratory_dungeon_key"
+			id: "70CB0A3DAA970B81"
+			subtitle: "Find a Sentry Laboratory"
+			tasks: [
+				{
+					id: "617182CC6E62503D"
+					structure: "ancient_aether:sentry_laboratory"
+					title: "Find a Platinum Dungeon"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "7152390446631410"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Failed Experiments"
+			x: 22.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["70CB0A3DAA970B81"]
+			icon: "aether:aechor_petal"
+			id: "2F46F962D867A81D"
+			subtitle: "Kill the Mutaded Aechor Plant"
+			tasks: [{
+				entity: "ancient_aether:mutated_aechor_plant"
+				icon: "ancient_aether:laboratory_dungeon_key"
+				id: "5822B45E49FA6F39"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Sun Goes Down"
+			x: 22.0d
+			y: 17.0d
 		}
 	]
 	title: "Story"

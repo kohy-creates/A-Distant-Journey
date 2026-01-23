@@ -5,7 +5,13 @@
 	filename: "botania"
 	group: "06918EFE2A3328D6"
 	hide_quest_details_until_startable: true
-	icon: "botania:lexicon"
+	icon: {
+		Count: 1
+		id: "botania:lexicon"
+		tag: {
+			"botania:elven_unlock": 1b
+		}
+	}
 	id: "53B7EA892E14DB2F"
 	images: [
 		{
@@ -74,6 +80,14 @@
 			width: 1.75d
 			x: 18.5d
 			y: 3.5d
+		}
+		{
+			height: 1.75d
+			image: "botania:block/elementium_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 17.5d
+			y: -6.5d
 		}
 	]
 	order_index: 0
@@ -758,6 +772,11 @@
 			]
 			icon_scale: 0.75d
 			id: "1807373293C4A183"
+			rewards: [{
+				id: "0C519F06B59D9031"
+				type: "xp"
+				xp: 300
+			}]
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "I'm the love I'm the life of all imagined"
@@ -1524,7 +1543,15 @@
 		}
 		{
 			dependencies: ["1807373293C4A183"]
+			icon_scale: 0.75d
 			id: "6287D26668962000"
+			rewards: [{
+				id: "5F81154F80DCCD75"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "diamond"
+			size: 1.5d
 			subtitle: "Craft a Flügel Tiara"
 			tasks: [{
 				id: "5BCDE3A34A316419"
@@ -1539,7 +1566,7 @@
 				type: "item"
 			}]
 			title: "To The Sky!"
-			x: 18.0d
+			x: 17.5d
 			y: -6.5d
 		}
 	]

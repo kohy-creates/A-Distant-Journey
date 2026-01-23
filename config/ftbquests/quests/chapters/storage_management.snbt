@@ -148,7 +148,7 @@
 				type: "item"
 			}]
 			title: "Open Source"
-			x: -0.5d
+			x: 0.0d
 			y: 4.5d
 		}
 		{
@@ -368,7 +368,7 @@
 		{
 			dependencies: ["5BE98BA6A0B68228"]
 			id: "0D25681B83E5BD9A"
-			subtitle: "Add a Glyph of Access Ender Inventory into your spellbook"
+			subtitle: "Add a Glyph of Access Ender Inventory into your spellbook."
 			tasks: [{
 				id: "38F4197DFEB0FCEA"
 				item: "ars_nouveau:glyph_ender_inventory"
@@ -377,6 +377,26 @@
 			title: "Mana Entrypoint"
 			x: 3.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["7EDDEFE957513B50"]
+			id: "79057ED4D8791502"
+			subtitle: "Craft a Dark Tank. Multiple can be combined to increase capacity."
+			tasks: [{
+				id: "5B7629229ECBF47A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "evilcraft:dark_tank"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "All That in A Block??"
+			x: -1.0d
+			y: 4.5d
 		}
 	]
 	title: "Storage Management"
