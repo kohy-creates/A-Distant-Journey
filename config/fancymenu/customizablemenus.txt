@@ -78,3 +78,6 @@ net.minecraft.client.gui.screens.inventory.InventoryScreen {
 com.plr.quitornot.client.screen.confirm.ConfirmScreen {
 }
 
+com.quickskin.mod.client.gui.screen.PlayerSkinMenuScreen {
+}
+

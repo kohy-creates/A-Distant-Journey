@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 
 	/** @type {$InputItem_}*/
 	const disabledItemRecipes = [
-		global.rediscoveredFurniture,
+		global.rediscoveredFurniture(),
 		global.blacklistedItems,
 		'naturescompass:naturescompass',
 		'enchantinginfuser:enchanting_infuser',
@@ -95,7 +95,12 @@ ServerEvents.recipes((event) => {
 		'simplyswords:tainted_relic',
 		'ars_nouveau:ring_of_lesser_discount',
 		'ars_nouveau:ring_of_greater_discount',
-		'ars_nouveau:ring_of_potential'
+		'ars_nouveau:ring_of_potential',
+
+		'neapolitan:milk_bottle',
+		'botania:alfheim_portal',
+		'vinery:grapevine_stem',
+		'nethervinery:obsidian_stem'
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -249,7 +254,14 @@ ServerEvents.recipes((event) => {
 		'botania:spawner_claw',
 		'botania:spawner_mover',
 
-		'ars_nouveau:fire_essence_to_magma_block'
+		'ars_nouveau:fire_essence_to_magma_block',
+
+		'ancient_aether:valkyrum',
+		'ancient_redux:valkyrum_enchanting_from_raw_ore',
+
+		'mythicmetals:alloy_forge/alloy_hallowed_from_ingots',
+		'mythicmetals:alloy_forge/alloy_hallowed_from_ores',
+		'mythicmetals:alloy_forge/alloy_hallowed_from_raw_ores',
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -257,7 +269,12 @@ ServerEvents.recipes((event) => {
 
 	const removeRecipeByType = [
 		'aether:repairing',
-		'botania:pure_daisy'
+		'botania:pure_daisy',
+		'vinery:wine_fermentation',
+		'vinery:apple_mashing',
+		'vinery:apple_fermenting',
+		'oreberriesreplanted:vat_recipe',
+		/oreberriesreplanted/
 	]
 	removeRecipeByType.forEach(recipeType => {
 		event.remove({ type: recipeType })
@@ -267,7 +284,8 @@ ServerEvents.recipes((event) => {
 		'create:crushed_raw_iron',
 		'create:crushed_raw_gold',
 		'create:crushed_raw_copper',
-		'create:crushed_raw_zinc'
+		'create:crushed_raw_zinc',
+		/oreberriesreplanted/
 	]
 	removeRecipeByInput.forEach(item => {
 		event.remove({ input: item })
@@ -297,6 +315,13 @@ ServerEvents.recipes((event) => {
 			'botania:manaweave_cloth': 'ars_nouveau:magebloom_block',
 			'ars_nouveau:wilden_wing': 'miners_delight:bat_wing',
 			'alexscaves:banana': 'neapolitan:banana',
+			'neapolitan:milk_bottle': 'farmersdelight:milk_bottle',
+			'create:experience_nugget': 'ars_nouveau:experience_gem',
+			'croptopia:cherry': 'vinery:cherry',
+			'croptopia:flour': 'create:wheat_flour',
+			'#forge:salts': 'galosphere:pink_salt_shard',
+			'#forge:milks': '#c:milk',
+			'#forge:wines': 'vinery:red_wine'
 		},
 		output: {
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
@@ -307,8 +332,7 @@ ServerEvents.recipes((event) => {
 			'farmersdelight:wheat_dough': 'create:dough',
 			'create:copper_nugget': 'mythicmetals:copper_nugget',
 			'farmersdelight:rope': 'supplementaries:rope',
-			"minecraft:totem_of_undying": "twilightforest:charm_of_life_1",
-			'create:experience_nugget': 'ars_nouveau:experience_gem',
+			"minecraft:totem_of_undying": "twilightforest:charm_of_life_1"
 		}
 	}
 	for (const [input, replacement] of Object.entries(unificationMap.input)) {
@@ -323,6 +347,19 @@ ServerEvents.recipes((event) => {
 			replacement
 		)
 	}
+
+	event.recipes.farmersdelight.cutting(
+		[
+			'galosphere:pink_salt',
+			'galosphere:rose_pink_salt',
+			'galosphere:pastel_pink_salt',
+		],
+		'#minecraft:pickaxes',
+		[
+			'2x galosphere:pink_salt_shard',
+			Item.of('galosphere:pink_salt_shard', 1).withChance(0.35)
+		],
+	)
 
 	event.shapeless(
 		'8x magma_block',
@@ -2330,18 +2367,22 @@ ServerEvents.recipes((event) => {
 	elementalUpgradeRecipe('aqua', 'botania:rune_water');
 
 	// Cheaper/Different materials and stations
+	event.replaceInput({ id: 'botania:mana_infusion/manasteel' },
+		'minecraft:iron_ingot',
+		[
+			'minecraft:iron_ingot',
+			'minecraft:gold_ingot'
+		]
+	)
+
 	const manaGemCost = 900;
-	event.recipes.botania.mana_infusion('ars_nouveau:source_gem', 'minecraft:amethyst_shard')
+	event.recipes.botania.mana_infusion('ars_nouveau:source_gem', ['minecraft:amethyst_shard', 'minecraft:lapis_lazuli'])
 		.mana(manaGemCost)
 		.id('adj:mana_gem')
 
 	event.recipes.botania.mana_infusion('ars_nouveau:source_gem_block', 'minecraft:amethyst_block')
 		.mana(manaGemCost * 4)
 		.id('adj:mana_gem_block')
-
-	event.recipes.botania.mana_infusion('ars_nouveau:source_gem', 'minecraft:lapis_lazuli')
-		.mana(manaGemCost)
-		.id('adj:mana_gem_from_lapis')
 
 	event.recipes.botania.mana_infusion('ars_nouveau:source_gem_block', 'minecraft:lapis_block')
 		.mana(manaGemCost * 9)
@@ -3084,7 +3125,7 @@ ServerEvents.recipes((event) => {
 		[
 			['mythicmetals:star_platinum', 1],
 			['botania:elementium_ingot', 1],
-			['ancient_aether:valkyrum_ingot', 1],
+			['ancient_aether:valkyrum', 1],
 			['unusualend:pearlescent_ingot', 1],
 			['mythicmetals:unobtainium', 2]
 		],
@@ -3142,9 +3183,9 @@ ServerEvents.recipes((event) => {
 	alloyForgeRecipe(
 		[
 			['ancient_aether:raw_valkyrum', 1],
-			['aether:gravitite_ingot', 1],
+			['aether_redux:gravitite_ingot', 1],
 		],
-		['ancient_aether:valkyrum_ingot', 2],
+		['ancient_aether:valkyrum', 2],
 		2,
 		10,
 		[
@@ -3156,9 +3197,9 @@ ServerEvents.recipes((event) => {
 	alloyForgeRecipe(
 		[
 			['ancient_aether:valkyrum_ore', 1],
-			['aether:gravitite_ingot', 1],
+			['aether_redux:gravitite_ingot', 1],
 		],
-		['ancient_aether:valkyrum_ingot', 2],
+		['ancient_aether:valkyrum', 2],
 		2,
 		10,
 		[
@@ -3214,7 +3255,7 @@ ServerEvents.recipes((event) => {
 		]
 	)
 
-	// Slightly harder Mythril and Orichalcum
+	// Slightly harder Mythril, Orichalcum and Hallowed Alloy
 	alloyForgeRecipe(
 		[
 			['mythicmetals:raw_mythril', 2],
@@ -3262,6 +3303,49 @@ ServerEvents.recipes((event) => {
 		10,
 		[
 			['3+', 'output', 3]
+		]
+	)
+
+	alloyForgeRecipe(
+		[
+			['mythicmetals:mythril_ingot', 1],
+			['mythicmetals:orichalcum_ingot', 1],
+			['mythicmetals:adamantite_ingot', 1],
+			['botania:pixie_dust', 1]
+		],
+		['mythicmetals:hallowed_ingot', 2],
+		3,
+		20,
+		[
+			['4+', 'output', 3]
+		]
+	)
+	alloyForgeRecipe(
+		[
+			['mythicmetals:raw_mythril', 1],
+			['mythicmetals:raw_orichalcum', 1],
+			['mythicmetals:raw_adamantite', 1],
+			['botania:pixie_dust', 1]
+		],
+		['mythicmetals:hallowed_ingot', 3],
+		3,
+		20,
+		[
+			['4+', 'output', 4]
+		]
+	)
+	alloyForgeRecipe(
+		[
+			['#c:mythril_ores', 1],
+			['#c:orichalcum_ores', 1],
+			['#c:adamantite_ores', 1],
+			['botania:pixie_dust', 1]
+		],
+		['mythicmetals:hallowed_ingot', 3],
+		3,
+		20,
+		[
+			['4+', 'output', 4]
 		]
 	)
 
@@ -4802,10 +4886,16 @@ ServerEvents.recipes((event) => {
 	})
 
 	// Window Box Chthonic Yew and Alfthorne
-	event.recipes.botania.elven_trade(["window_box:alfthorne_sapling"], "#saplings").id('window_box:petal_apothecary/alfthorne_sapling')
-	// Petal Apothecary ID so that it is stil in the book
-	// Tho honestly I didn't even test it so whatever :3
-
+	event.recipes.botania.petal_apothecary('window_box:alfthorne_sapling', [
+		'botania:terrasteel_nugget',
+		'botania:terrasteel_nugget',
+		'botania:terrasteel_nugget',
+		'#botania:glimmering_livingwood_logs',
+		'botania:livingwood_twig',
+		'botania:livingwood_twig',
+		'botania:livingwood_twig',
+		'botania:redstone_root'
+	]).id(`adj:alfthorne_sapling`)
 	warping('window_box:alfthorne_sapling', 'window_box:chthonic_yew_sapling')
 
 
@@ -5307,4 +5397,147 @@ ServerEvents.recipes((event) => {
 			['4+', 'output', 5]
 		]
 	)
+
+	// Vinery x Brewing and Chewing
+	function pouringRecipe(fluid, item, containerItem) {
+		event.custom({
+			type: "brewinandchewin:keg_pouring",
+			amount: 250,
+			filling: true,
+			fluid: fluid,
+			output: {
+				item: item
+			},
+			container: {
+				item: (containerItem) ? containerItem : 'vinery:wine_bottle'
+			},
+			strict: false
+		}).id(`adj:pouring/${flattenedID(item)}`)
+	}
+
+	function fermentingRecipe(basefluid, ingredients, resultFluid, resultItem, containerItem, temperature, experience, fermentingtime) {
+
+		let ingr = [];
+		ingredients.forEach(i => {
+			if (i.startsWith('#')) {
+				ingr.push({
+					tag: i.substring(1)
+				})
+			}
+			else {
+				ingr.push({
+					item: i
+				})
+			}
+		})
+
+		event.custom({
+			type: "brewinandchewin:fermenting",
+			basefluid: {
+				count: 1000,
+				fluid: basefluid
+			},
+			experience: (experience) ? experience : 1.0,
+			fermentingtime: (fermentingtime) ? fermentingRecipe : 9600,
+			ingredients: ingr,
+			recipe_book_tab: "drinks",
+			result: {
+				count: 1000,
+				fluid: resultFluid
+			},
+			temperature: (temperature) ? temperature : 3
+		}).id(`adj:fermenting/${flattenedID(resultFluid)}_from_${flattenedID(basefluid)}`)
+
+		pouringRecipe(resultFluid, resultItem, containerItem)
+	}
+
+	fermentingRecipe('kubejs:red_grapejuice', ['sweet_berries'], 'kubejs:noir_wine', 'vinery:noir_wine');
+	fermentingRecipe('kubejs:red_grapejuice', ['sugar'], 'kubejs:red_wine', 'vinery:red_wine');
+	fermentingRecipe('kubejs:red_grapejuice', ['sugar', 'cocoa_beans'], 'kubejs:strad_wine', 'vinery:strad_wine');
+	fermentingRecipe('kubejs:red_grapejuice', ['vinery:cherry'], 'kubejs:cherry_wine', 'vinery:cherry_wine');
+	fermentingRecipe('kubejs:red_grapejuice', ['sugar', 'feather', 'blaze_rod'], 'kubejs:cristel_wine', 'vinery:cristel_wine');
+	fermentingRecipe('kubejs:red_savanna_grapejuice', ['vinery:cherry', 'honey_bottle'], 'kubejs:lilitu_wine', 'vinery:lilitu_wine');
+	fermentingRecipe('kubejs:red_savanna_grapejuice', ['fermented_spider_eye'], 'kubejs:jo_special_mixture', 'vinery:jo_special_mixture');
+	fermentingRecipe('kubejs:red_taiga_grapejuice', ['vinery:cherry', 'honey_bottle'], 'kubejs:bolvar_wine', 'vinery:bolvar_wine');
+	fermentingRecipe('kubejs:red_taiga_grapejuice', ['chorus_fruit'], 'kubejs:chorus_wine', 'vinery:chorus_wine');
+	fermentingRecipe('kubejs:red_jungle_grapejuice', ['iron_ingot'], 'kubejs:magnetic_wine', 'vinery:magnetic_wine');
+	fermentingRecipe('kubejs:red_jungle_grapejuice', ['sugar', 'cocoa_beans'], 'kubejs:stall_wine', 'vinery:stall_wine');
+	fermentingRecipe('kubejs:red_jungle_grapejuice', ['spider_eye', 'honey_bottle'], 'kubejs:chenet_wine', 'vinery:chenet_wine');
+	fermentingRecipe('kubejs:red_wine', ['vinery:cherry', 'honey_bottle'], 'kubejs:bottle_mojang_noir', 'vinery:bottle_mojang_noir');
+	fermentingRecipe('kubejs:crimson_grapejuice', ['blaze_powder'], 'kubejs:blazewine_pinot', 'nethervinery:blazewine_pinot');
+	fermentingRecipe('kubejs:crimson_grapejuice', ['netherite_scrap'], 'kubejs:netherite_nectar', 'nethervinery:netherite_nectar');
+	fermentingRecipe('kubejs:crimson_grapejuice', ['lava_bucket'], 'kubejs:lava_fizz', 'nethervinery:lava_fizz');
+
+	fermentingRecipe('kubejs:apple_juice', ['sugar'], 'kubejs:apple_cider', 'vinery:apple_cider');
+	fermentingRecipe('kubejs:apple_juice', ['sugar', 'sugar'], 'kubejs:apple_wine', 'vinery:apple_wine');
+
+	fermentingRecipe('kubejs:white_grapejuice', ['sugar', 'glowstone_dust'], 'kubejs:mellohi_wine', 'vinery:mellohi_wine');
+	fermentingRecipe('kubejs:white_grapejuice', ['glow_berries'], 'kubejs:glowing_wine', 'vinery:glowing_wine');
+	fermentingRecipe('kubejs:white_grapejuice', ['honey_bottle', 'sweet_berries'], 'kubejs:solaris_wine', 'vinery:solaris_wine');
+	fermentingRecipe('kubejs:white_savanna_grapejuice', ['gunpowder'], 'kubejs:creepers_crush', 'vinery:creepers_crush');
+	fermentingRecipe('kubejs:white_savanna_grapejuice', ['kelp'], 'kubejs:kelp_cider', 'vinery:kelp_cider');
+	fermentingRecipe('kubejs:white_taiga_grapejuice', ['snowball'], 'kubejs:eiswein', 'vinery:eiswein');
+	fermentingRecipe('kubejs:white_taiga_grapejuice', ['sugar', 'iron_ingot', 'kelp'], 'kubejs:aegis_wine', 'vinery:aegis_wine');
+	fermentingRecipe('kubejs:white_jungle_grapejuice', ['arrow'], 'kubejs:villagers_fright', 'vinery:villagers_fright');
+	fermentingRecipe('kubejs:white_jungle_grapejuice', ['sugar'], 'kubejs:clark_wine', 'vinery:clark_wine');
+
+	fermentingRecipe('kubejs:warped_grapejuice', ['ghast_tear'], 'kubejs:ghastly_grenache', 'nethervinery:ghastly_grenache');
+	fermentingRecipe('kubejs:warped_grapejuice', ['warped_fungus', 'crimson_fungus'], 'kubejs:nether_fizz', 'nethervinery:nether_fizz');
+
+	pouringRecipe('kubejs:red_grapejuice', 'vinery:red_grapejuice');
+	pouringRecipe('kubejs:white_grapejuice', 'vinery:white_grapejuice');
+	pouringRecipe('kubejs:red_taiga_grapejuice', 'vinery:red_taiga_grapejuice');
+	pouringRecipe('kubejs:white_taiga_grapejuice', 'vinery:white_taiga_grapejuice');
+	pouringRecipe('kubejs:red_jungle_grapejuice', 'vinery:red_jungle_grapejuice');
+	pouringRecipe('kubejs:white_jungle_grapejuice', 'vinery:white_jungle_grapejuice');
+	pouringRecipe('kubejs:red_savanna_grapejuice', 'vinery:red_savanna_grapejuice');
+	pouringRecipe('kubejs:white_savanna_grapejuice', 'vinery:white_savanna_grapejuice');
+	pouringRecipe('kubejs:crimson_grapejuice', 'nethervinery:crimson_grapejuice');
+	pouringRecipe('kubejs:warped_grapejuice', 'nethervinery:warped_grapejuice');
+	pouringRecipe('kubejs:apple_juice', 'croptopia:apple_juice', 'glass_bottle');
+
+	event.shaped(
+		'2x vinery:grapevine_stem',
+		[
+			'L',
+			'L',
+			'L'
+		],
+		{
+			L: '#logs'
+		}
+	).id('adj:grapevine_stem')
+
+	event.shaped(
+		'2x nethervinery:obsidian_stem',
+		[
+			'L',
+			'L',
+			'L'
+		],
+		{
+			L: 'obsidian'
+		}
+	).id('adj:obsidian_stem')
+
+	// Ore Berries
+	function oreBerryCrushing(inputType, output) {
+		let berry = `oreberriesreplanted:${inputType}_oreberry`;
+		event.recipes.create.milling([
+			Item.of(output, 3),
+			Item.of(output, 2).withChance(0.25),
+			Item.of(output, 1).withChance(0.4),
+			Item.of('ars_nouveau:experience_gem', 1).withChance(0.15)
+		], berry).id(`adj:ore_berry/${flattenedID(berry)}`)
+	}
+
+	oreBerryCrushing('iron', 'iron_nugget');
+	oreBerryCrushing('gold', 'gold_nugget');
+	oreBerryCrushing('copper', 'mythicmetals:copper_nugget');
+	oreBerryCrushing('tin', 'mythicmetals:tin_nugget');
+	oreBerryCrushing('uranium', 'alexscaves:uranium_shard');
+	oreBerryCrushing('osmium', 'mythicmetals:osmium_nugget');
+	oreBerryCrushing('zinc', 'create:zinc_nugget');
+	oreBerryCrushing('silver', 'galosphere:silver_nugget');
+
 });

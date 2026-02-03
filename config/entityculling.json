@@ -13,7 +13,12 @@
     "create_hypertube:hypertube_entrance_entity",
     "witherstormmod:super_beacon",
     "witherstormmod:super_support_beacon",
-    "botania:alfheim_portal"
+    "botania:alfheim_portal",
+    "vinery:flower_pot",
+    "amendments:hanging_flower_pot",
+    "the_bumblezone:crystalline_flower",
+    "vinery:storage",
+    "nethervinery:storage"
   ],
   "entityWhitelist": [
     "botania:mana_burst",
@@ -82,7 +87,9 @@
     "witherstormmod:wither_storm_segment",
     "witherstormmod:withered_symbiont",
     "witherstormmod:tentacle",
-    "minecraft:area_effect_cloud"
+    "minecraft:area_effect_cloud",
+    "adjcore:heart",
+    "adjcore:mana_star"
   ],
   "disableF3": true,
   "skipEntityCulling": false,

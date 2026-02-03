@@ -187,6 +187,17 @@
         "value": 1024
       }
     },
+    "adjcore:generic.fall_damage_reduction": {
+      "enabled": false,
+      "min": {
+        "default": -2048,
+        "value": -2048
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "stardew_fishing:exp_multiplier": {
       "enabled": false,
       "min": {

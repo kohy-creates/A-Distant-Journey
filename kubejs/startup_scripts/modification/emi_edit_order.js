@@ -38,7 +38,11 @@ StartupEvents.postInit(event => {
 		["enchantinginfuser:advanced_enchanting_infuser", "sortilege:limitite"],
 		["minecraft:armor_stand", "dummmmmmy:target_dummy"],
 
-		['ars_nouveau:greater_experience_gem', 'create:experience_block']
+		['ars_nouveau:greater_experience_gem', 'create:experience_block'],
+
+		['botania:rune_air', 'botania:rune_mana'],
+		['botania:rune_mana', 'botanicadds:rune_tp'],
+		['botanicadds:rune_tp', 'botania:rune_energy'],
 	];
 
 	// Detect available materials
@@ -176,7 +180,7 @@ StartupEvents.postInit(event => {
 		'minecraft:jungle',
 		'minecraft:acacia',
 		'minecraft:dark_oak',
-		'minecraft:mangrove',
+		'minecraft:vangrove',
 		'minecraft:cherry',
 		'minecraft:bamboo',
 		'ecologics:coconut',
@@ -206,6 +210,7 @@ StartupEvents.postInit(event => {
 		'architects_palette:twisted',
 		'twilight_forest:twilight_oak',
 		'twilight_forest:canopy',
+		'twilight_forest:mangrove',
 		'twilight_forest:dark',
 		'twilight_forest:time',
 		'twilight_forest:transformation',
@@ -339,42 +344,64 @@ StartupEvents.postInit(event => {
 							continue;
 					}
 				}
-				// case 'ars_nouveau:archwood': {
-				// 	switch (furnitureType) {
-				// 		case 'log': {
-				// 			for (let l = 0; l < archwoodLogs.length; l++) {
-				// 				let log = archwoodLogs[l];
-				// 				EMIEdit.push([latestAddedCache, log]);
-				// 				latestAddedCache = log;
-				// 			}
-				// 			continue;
-				// 		}
-				// 		case 'stripped_X_log': {
-				// 			for (let l = 0; l < archwoodLogs.length; l++) {
-				// 				let log = archwoodLogs[l].replace(':', ':stripped_');
-				// 				EMIEdit.push([latestAddedCache, log]);
-				// 				latestAddedCache = log;
-				// 			}
-				// 			continue;
-				// 		}
-				// 		case 'wood': {
-				// 			for (let l = 0; l < archwoodLogs.length; l++) {
-				// 				let log = archwoodLogs[l].replace('log', 'wood');
-				// 				EMIEdit.push([latestAddedCache, log]);
-				// 				latestAddedCache = log;
-				// 			}
-				// 			continue;
-				// 		}
-				// 		case 'wood': {
-				// 			for (let l = 0; l < archwoodLogs.length; l++) {
-				// 				let log = archwoodLogs[l].replace('log', 'wood').replace(':', ':stripped_');
-				// 				EMIEdit.push([latestAddedCache, log]);
-				// 				latestAddedCache = log;
-				// 			}
-				// 			continue;
-				// 		}
-				// 	}
-				// }
+				case 'minecraft:mangrove': {
+					switch (furnitureType) {
+						case 'twilightdelight:cabinet': {
+							continue;
+						}
+					}
+				}
+				case 'twilightforest:mangrove': {
+					let blockedNamespaces = [
+						'architects_palette',
+						'quark',
+						'handcrafted'
+					]
+					let furnitureNamespace = furnitureType.split(':')[0]
+					if (furnitureNamespace && blockedNamespaces.includes(furnitureNamespace)) {
+						continue;
+					}
+				}
+				// This never worked for some reason
+				// Might fix it eventually
+				// /*
+				case 'ars_nouveau:archwood': {
+					switch (furnitureType) {
+						case 'log': {
+							for (let l = 0; l < archwoodLogs.length; l++) {
+								let log = archwoodLogs[l];
+								EMIEdit.push([latestAddedCache, log]);
+								latestAddedCache = log;
+							}
+							continue;
+						}
+						case 'stripped_X_log': {
+							for (let l = 0; l < archwoodLogs.length; l++) {
+								let log = archwoodLogs[l].replace(':', ':stripped_');
+								EMIEdit.push([latestAddedCache, log]);
+								latestAddedCache = log;
+							}
+							continue;
+						}
+						case 'wood': {
+							for (let l = 0; l < archwoodLogs.length; l++) {
+								let log = archwoodLogs[l].replace('log', 'wood');
+								EMIEdit.push([latestAddedCache, log]);
+								latestAddedCache = log;
+							}
+							continue;
+						}
+						case 'stripped_X_wood': {
+							for (let l = 0; l < archwoodLogs.length; l++) {
+								let log = archwoodLogs[l].replace('log', 'wood').replace(':', ':stripped_');
+								EMIEdit.push([latestAddedCache, log]);
+								latestAddedCache = log;
+							}
+							continue;
+						}
+					}
+				}
+				// */
 			}
 
 			// Replace _X_ placeholder with actual wood type (e.g. "oak")
@@ -414,13 +441,11 @@ StartupEvents.postInit(event => {
 				// non-namespaced entries, decide how to construct id:
 				// If furnitureType already contains the typeName (e.g. "stripped_oak_log"),
 				// then the correct id is "namespace:furnitureType" (e.g. "minecraft:stripped_oak_log")
-				if (furnitureType.includes(typeName)) {
+				if (furnitureType.startsWith(`${typeName}_`) || furnitureType.endsWith(`_${typeName}`)) {
 					itemID = `${typeNamespace}:${furnitureType}`;
 				} else {
-					// normal case (e.g. "log" -> "minecraft:oak_log")
-					itemID = `${woodType}_${furnitureType}`; // e.g. "minecraft:oak_log"
+					itemID = `${woodType}_${furnitureType}`;
 					if (!Item.exists(itemID)) {
-						// fallback e.g. "minecraft:oak_planks_stairs" vs "minecraft:oak_planks_stairs" edgecases
 						itemID = `${woodType}_planks_${furnitureType}`;
 					}
 				}
@@ -432,8 +457,6 @@ StartupEvents.postInit(event => {
 			latestAddedCache = itemID;
 		}
 	}
-
-
 
 	// const colorOrder = [
 	// 	'white',
@@ -502,23 +525,25 @@ StartupEvents.postInit(event => {
 	});
 
 	// // Add enchantment books
-	// const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
-	// const $EnchantmentsBegone = Java.loadClass('org.violetmoon.quark.content.experimental.module.EnchantmentsBegoneModule')
-	// /** @type {Internal.Enchantment_[]} */
-	// const allEnchants = $ForgeRegistries.ENCHANTMENTS.getValues().toArray().sort();
+	/** @type {any} */
+	const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
+	/** @type {any} */
+	const $EnchantmentsBegone = Java.loadClass('org.violetmoon.quark.content.experimental.module.EnchantmentsBegoneModule')
+	/** @type {Internal.Enchantment_[]} */
+	const allEnchants = $ForgeRegistries.ENCHANTMENTS.getValues().toArray().sort();
 
-	// let addAfter = 'enchantinginfuser:enchanting_infuser'
-	// for (let e = 0; e < allEnchants.length; e++) {
-	// 	let enchant = allEnchants[e];
+	let addAfter = 'enchantinginfuser:enchanting_infuser'
+	for (let e = 0; e < allEnchants.length; e++) {
+		let enchant = allEnchants[e];
 
-	// 	if ($EnchantmentsBegone.shouldBegone(enchant) || enchant.getDescriptionId() === 'enchantment.cofh_core.disabled') continue;
+		if ($EnchantmentsBegone.shouldBegone(enchant) || enchant.getDescriptionId() === 'enchantment.cofh_core.disabled') continue;
 
-	// 	let book = `minecraft:enchanted_book{StoredEnchantments:[{id:"${enchant.getId()}", lvl:${enchant.getMaxLevel().toString().replace('.0', '')}s}]}`
+		let book = `minecraft:enchanted_book{StoredEnchantments:[{id:"${enchant.getId()}", lvl:${enchant.getMaxLevel().toString().replace('.0', '')}s}]}`
 
-	// 	edit.added.push({ stack: stack(book), after: stack(addAfter) });
+		edit.added.push({ stack: stack(book), after: stack(addAfter) });
 
-	// 	addAfter = book;
-	// }
+		addAfter = book;
+	}
 
-	JsonIO.write('kubejs/assets/emi/index/stacks/edit_item_order.json', edit);
+	JsonIO.write('kubejs/assets/emi/i/stacks/edit_item_order.json', edit);
 });

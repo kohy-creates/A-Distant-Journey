@@ -350,7 +350,7 @@
       },
       "pass": 2
     },
-    "confluence:info_hud": {
+    "terra_curio:info_hud": {
       "enabled": {
         "value": "AUTO"
       },

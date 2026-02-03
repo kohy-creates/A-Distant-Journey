@@ -96,6 +96,9 @@
 			highsproot = true
 			sakura = true
 
+		[types.wood_type.vinery]
+			dark_cherry = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -186,6 +189,14 @@
 			blue_skyroot_pine = true
 			highsproot = true
 			sakura = true
+
+		[types.leaves_type.croptopia]
+			cinnamon = true
+
+		[types.leaves_type.vinery]
+			grapevine = true
+			dark_cherry = true
+			apple = true
 
 	[types.cake]
 
@@ -807,6 +818,14 @@
 			chocolate_tile = true
 			frond_thatch = true
 
+		[types.cut_block_type.vinery]
+			dark_cherry = true
+			loam = true
+			coarse_dirt = true
+			dirt = true
+			grass = true
+			dirt_path = true
+
 #Disables specific entries
 [entries]
 
@@ -875,6 +894,9 @@
 			board_slab = true
 			boards = true
 			board_wall = true
+
+		[entries.wood_type.oreberriesreplanted]
+			vat = true
 
 	[entries.leaves_type]
 

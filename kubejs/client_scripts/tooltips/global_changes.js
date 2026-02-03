@@ -540,7 +540,7 @@ ItemEvents.tooltip(event => {
 
 	const TIP_CONFIG = [
 		{
-			items: global.rediscoveredFurniture,
+			items: global.rediscoveredFurniture(),
 			text: 'Comes with a unique feeling of nostalgia'
 		},
 		{

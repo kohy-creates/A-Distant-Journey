@@ -71,15 +71,17 @@ global.messageColors = {
 	newOre: '#32FF82',
 	newDimension: '#FFD700',
 	difficultyIncrease: '#c50909',
+	bossSpawned: '#af4bff',
+	bossDefeated: '#ce93ff'
 }
 
 /**
  * Returns an announcement style message (italic and with a specific color) 
  * Look into global.messageColors for a list of default colors)
  * @param {String} text 
- * @param {$Color_} color 
+ * @param {Color} color
  * @returns 
  */
-global.announcementMsg = function (text, color) {
-	return Text.of(text).color(color).italic();
+global.announcementMsg = function (text, color, noItalic) {
+	return (!noItalic) ? Text.of(text).color(color).italic() : Text.of(text).color(color);
 }

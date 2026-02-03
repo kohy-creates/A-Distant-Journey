@@ -41,9 +41,9 @@
 #Mobs module settings
 [Mobs]
 	#List of items for the Oretoise ponder scene, sepparated by ','.
-	oretoise_module = ["minecraft:coal", "minecraft:raw_iron", "minecraft:raw_copper", "minecraft:redstone", "minecraft:lapis_lazuli"]
+	oretoise_module = ["quark:toretoise_spawn_egg"]
 	#List of items for the FoxHound ponder scene, sepparated by ','.
-	foxhound_module = ["minecraft:furnace", "minecraft:blast_furnace", "minecraft:smoker", "quark:blackstone_furnace", "quark:deepslate_furnace"]
+	foxhound_module = ["quark:foxhound_spawn_egg"]
 
 #Tools module settings
 [Tools]

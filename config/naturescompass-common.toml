@@ -6,7 +6,7 @@
 	displayCoordinates = true
 	#biomeSize * radiusModifier = maxSearchRadius. Raising this value will increase search accuracy but will potentially make the process more resource .
 	#Range: 0 ~ 1000000
-	radiusModifier = 2500
+	radiusModifier = 125000
 	#biomeSize * sampleSpaceModifier = sampleSpace. Lowering this value will increase search accuracy but will make the process more resource intensive.
 	#Range: 0 ~ 1000000
 	sampleSpaceModifier = 16
@@ -14,5 +14,5 @@
 	biomeBlacklist = []
 	#The maximum number of samples to be taken when searching for a biome.
 	#Range: 0 ~ 1000000
-	maxSamples = 50000
+	maxSamples = 500000
 

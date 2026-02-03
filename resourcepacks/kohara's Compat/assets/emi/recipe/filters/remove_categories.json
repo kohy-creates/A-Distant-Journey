@@ -50,6 +50,21 @@
 		},
 		{
 			"category": "functional_storage:dissolution"
+		},
+		{
+			"category": "vinery:wine_fermentation"
+		},
+		{
+			"category": "vinery:apple_mashing"
+		},
+		{
+			"category": "vinery:apple_fermenting"
+		},
+		{
+			"category": "oreberriesreplanted:vat_recipe"
+		},
+		{
+			"category": "aether:repairing"
 		}
 	]
 }

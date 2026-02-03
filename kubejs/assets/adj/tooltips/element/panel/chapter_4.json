@@ -1,0 +1,15 @@
+{
+	"type": "obscure_tooltips:color_rect",
+	"background_palette": {
+		"top_left": "@DEFAULT_PANEL_BACKGROUND_TOP",
+		"top_right": "@DEFAULT_PANEL_BACKGROUND_TOP",
+		"bottom_left": "@DEFAULT_PANEL_BACKGROUND_BOTTOM",
+		"bottom_right": "@DEFAULT_PANEL_BACKGROUND_BOTTOM"
+	},
+	"border_palette": {
+		"top_left": "#6000FFC8",
+		"top_right": "#6000FFC8",
+		"bottom_left": "#5000bf96",
+		"bottom_right": "#5000bf96"
+	}
+}

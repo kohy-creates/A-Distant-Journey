@@ -6,22 +6,22 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "confluence:tsunami_in_a_bottle",
+					"name": "terra_curio:tsunami_in_a_bottle",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:balloon_pufferfish",
+					"name": "terra_curio:balloon_pufferfish",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:sailfish_boots",
+					"name": "terra_curio:sailfish_boots",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:frog_leg",
+					"name": "terra_curio:frog_leg",
 					"weight": 2
 				}
 			]

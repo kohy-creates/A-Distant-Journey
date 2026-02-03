@@ -11,6 +11,13 @@
     "curseForgeHash": 1211594411,
     "modrinthHash": "35cc436e1155ee1ba23e24cd03eca8d92659a1e2"
   },
+  "1.8.1+1.20.1+forge.jar": {
+    "jarName": "1.8.1+1.20.1+forge.jar",
+    "modId": "emi_letsdo_compat",
+    "version": "1.8.1",
+    "curseForgeHash": 4020643785,
+    "modrinthHash": "bf45d3dc317a8e1a2412996b54da88140844a6f8"
+  },
   "[MC-1.20.X] Default Key Setup v1.0.0.6 - 2024-4-1.jar": {
     "jarName": "[MC-1.20.X] Default Key Setup v1.0.0.6 - 2024-4-1.jar",
     "modId": "default_key_setup",
@@ -39,19 +46,19 @@
     "curseForgeHash": 2830198433,
     "modrinthHash": "f1d0de94c8b72f513b141f6ed211f1dd4d50dc68"
   },
-  "adjcore-1.11.0.jar": {
-    "jarName": "adjcore-1.11.0.jar",
+  "adjcore-1.11.4.jar": {
+    "jarName": "adjcore-1.11.4.jar",
     "modId": "adjcore",
-    "version": "1.11.0",
-    "curseForgeHash": 1012228359,
-    "modrinthHash": "e0c6e0801766971c6ad6d948be6af47281fd4ef4"
+    "version": "1.11.4",
+    "curseForgeHash": 1428626237,
+    "modrinthHash": "02e0d4d1645ef0844c0162c14033891a76f3938d"
   },
-  "AdvancedLootInfo-forge-1.20.1-1.6.4.jar": {
-    "jarName": "AdvancedLootInfo-forge-1.20.1-1.6.4.jar",
+  "AdvancedLootInfo-forge-1.20.1-1.7.1.jar": {
+    "jarName": "AdvancedLootInfo-forge-1.20.1-1.7.1.jar",
     "modId": "ali",
-    "version": "1.6.4",
-    "curseForgeHash": 85518937,
-    "modrinthHash": "af8e43cdb3d77f0d006769e6577b62d3eab9a85b"
+    "version": "1.7.1",
+    "curseForgeHash": 3170683389,
+    "modrinthHash": "3babf4e0813a24b82c392c64df15ef3404fa68b6"
   },
   "aeroblender-1.20.1-1.0.1-neoforge.jar": {
     "jarName": "aeroblender-1.20.1-1.0.1-neoforge.jar",
@@ -158,12 +165,12 @@
     "curseForgeHash": 1569512323,
     "modrinthHash": "1687ae1c9475c70f4044e7b381aa8df1c4249e1e"
   },
-  "AmbientSounds_FORGE_v6.3.3_mc1.20.1.jar": {
-    "jarName": "AmbientSounds_FORGE_v6.3.3_mc1.20.1.jar",
+  "AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar": {
+    "jarName": "AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar",
     "modId": "ambientsounds",
-    "version": "6.3.3",
-    "curseForgeHash": 1083459992,
-    "modrinthHash": "b4a0e4937db9c83ec82a6809f8d53ab2b9e7a62c"
+    "version": "6.3.4",
+    "curseForgeHash": 2803957593,
+    "modrinthHash": "e84e7053c4c3a73c7f608c9da516bb5d393aab60"
   },
   "amendments-1.20-2.2.5.jar": {
     "jarName": "amendments-1.20-2.2.5.jar",
@@ -206,6 +213,13 @@
     "version": "6.1.2",
     "curseForgeHash": 2089255590,
     "modrinthHash": "3c4287166225fc010d29f94a546f908f0fdebef8"
+  },
+  "AraxersBestiary-1.20.1-forge-1.4.1.jar": {
+    "jarName": "AraxersBestiary-1.20.1-forge-1.4.1.jar",
+    "modId": "araxers_bestiary",
+    "version": "1.4.1",
+    "curseForgeHash": 3047720370,
+    "modrinthHash": "bee55d8298b874a734c40fe9af7fc804bd2ecda9"
   },
   "Architects-Palette-1.20.1-1.3.6.1.jar": {
     "jarName": "Architects-Palette-1.20.1-1.3.6.1.jar",
@@ -291,6 +305,13 @@
     "curseForgeHash": 3717034118,
     "modrinthHash": "515905f87268f1eb5af2a9878a84914517efe552"
   },
+  "BarteringStation-v8.0.0-1.20.1-Forge.jar": {
+    "jarName": "BarteringStation-v8.0.0-1.20.1-Forge.jar",
+    "modId": "barteringstation",
+    "version": "8.0.0",
+    "curseForgeHash": 3156024669,
+    "modrinthHash": "85668fe9a01aab770ca502e72b5d5bbcf9e6e25b"
+  },
   "bc_particle-0.0.4-forge-1.20.1.jar": {
     "jarName": "bc_particle-0.0.4-forge-1.20.1.jar",
     "modId": "bc_particle",
@@ -333,12 +354,12 @@
     "curseForgeHash": 43773560,
     "modrinthHash": "42e582de11674c68d564c2f314ed115418ad71bd"
   },
-  "Better_Modlist-0.1.14-all.jar": {
-    "jarName": "Better_Modlist-0.1.14-all.jar",
+  "Better_Modlist-0.1.15-all.jar": {
+    "jarName": "Better_Modlist-0.1.15-all.jar",
     "modId": "mod_menu",
-    "version": "0.1.14",
-    "curseForgeHash": 4051424666,
-    "modrinthHash": "699f3fa74694b51b4cd9b5a08dc43ff83212956f"
+    "version": "0.1.15",
+    "curseForgeHash": 2278579030,
+    "modrinthHash": "ce9c4fde387597327c4d6f5609a0ea2d2899b9e4"
   },
   "betterarcheology-1.2.1-1.20.1.jar": {
     "jarName": "betterarcheology-1.2.1-1.20.1.jar",
@@ -522,6 +543,13 @@
     "curseForgeHash": 2967671538,
     "modrinthHash": "ed841cf6ddb24940c96abb365b420cd6ee88fbd3"
   },
+  "BrewinAndChewin-1.20.1-3.2.1.jar": {
+    "jarName": "BrewinAndChewin-1.20.1-3.2.1.jar",
+    "modId": "brewinandchewin",
+    "version": "1.20.1-3.2.1",
+    "curseForgeHash": 2828717628,
+    "modrinthHash": "b11a91386ef9da2569b69fd4c229b1c31dcc2eb9"
+  },
   "bwncr-forge-1.20.1-3.17.2.jar": {
     "jarName": "bwncr-forge-1.20.1-3.17.2.jar",
     "modId": "bwncr",
@@ -542,13 +570,6 @@
     "version": "3.2.0+1.20.1",
     "curseForgeHash": 2212904341,
     "modrinthHash": "fa834f140bf7dce7b67c29b46cb531f4309d3209"
-  },
-  "CapeJS-1.0.0-1.20.1-forge.jar": {
-    "jarName": "CapeJS-1.0.0-1.20.1-forge.jar",
-    "modId": "capejs",
-    "version": "1.0.0-1.20.1",
-    "curseForgeHash": 1421430900,
-    "modrinthHash": "584ff1b8cec33f0382a0482760a1a12cb5120a62"
   },
   "capes-1.5.2+1.20-forge.jar": {
     "jarName": "capes-1.5.2+1.20-forge.jar",
@@ -577,6 +598,13 @@
     "version": "1.4",
     "curseForgeHash": 652383984,
     "modrinthHash": "f455a6e260afa4903703f8b063ecbc6c494887d2"
+  },
+  "CBMultipart-1.20.1-3.3.0.146-universal.jar": {
+    "jarName": "CBMultipart-1.20.1-3.3.0.146-universal.jar",
+    "modId": "cb_multipart",
+    "version": "3.3.0.146",
+    "curseForgeHash": 442261355,
+    "modrinthHash": "7eb4d3f7b9dc4b65cffd848f2949eb5d468dfc32"
   },
   "CerbonsAPI-Forge-1.20.1-1.1.0.jar": {
     "jarName": "CerbonsAPI-Forge-1.20.1-1.1.0.jar",
@@ -669,6 +697,20 @@
     "curseForgeHash": 635589968,
     "modrinthHash": "c65d07748acc57ceb45d53b3964368b84f34d54f"
   },
+  "Cocktails-Delight-1.20.1-Forge-1.3.5.jar": {
+    "jarName": "Cocktails-Delight-1.20.1-Forge-1.3.5.jar",
+    "modId": "brewincompatdelight",
+    "version": "1.0.3",
+    "curseForgeHash": 920687550,
+    "modrinthHash": "61374496ffddebe69b168a0da7e8e5055556da04"
+  },
+  "CodeChickenLib-1.20.1-4.4.0.516-universal.jar": {
+    "jarName": "CodeChickenLib-1.20.1-4.4.0.516-universal.jar",
+    "modId": "codechickenlib",
+    "version": "4.4.0.516",
+    "curseForgeHash": 1091903728,
+    "modrinthHash": "f9b90ff58442b5967366fd90d24980a34540518d"
+  },
   "cofh_core-1.20.1-11.0.2.56.jar": {
     "jarName": "cofh_core-1.20.1-11.0.2.56.jar",
     "modId": "cofh_core",
@@ -744,6 +786,13 @@
     "curseForgeHash": 2144346557,
     "modrinthHash": "f6d3cdd3ec68c5590cf5b2e89c38dbf031824bfd"
   },
+  "copperagebackport-forge-1.20.1-0.1.4.jar": {
+    "jarName": "copperagebackport-forge-1.20.1-0.1.4.jar",
+    "modId": "copperagebackport",
+    "version": "0.1.4",
+    "curseForgeHash": 1022674645,
+    "modrinthHash": "52d698d2b3d7e70927e1aa448528fd9d90725518"
+  },
   "Corgilib-Forge-1.20.1-4.0.3.4.jar": {
     "jarName": "Corgilib-Forge-1.20.1-4.0.3.4.jar",
     "modId": "corgilib",
@@ -779,6 +828,20 @@
     "curseForgeHash": 2399972476,
     "modrinthHash": "ff33e66ea1d828f0a5de39cf31d765e75d0a3859"
   },
+  "cratedelight-25.09.22-1.20-forge.jar": {
+    "jarName": "cratedelight-25.09.22-1.20-forge.jar",
+    "modId": "cratedelight",
+    "version": "25.09.22-1.20-forge",
+    "curseForgeHash": 2673105083,
+    "modrinthHash": "5b6d1c8ab260f193522630a6154ac7c35d978a47"
+  },
+  "cratedelightcroptopia-24.12.27-1.20-forge.jar": {
+    "jarName": "cratedelightcroptopia-24.12.27-1.20-forge.jar",
+    "modId": "cratedelightcroptopia",
+    "version": "24.12.27-1.20-forge",
+    "curseForgeHash": 1613670131,
+    "modrinthHash": "cdf8d140a602dd14a098d07502e61476fbee42a7"
+  },
   "create-1.20.1-6.0.8.jar": {
     "jarName": "create-1.20.1-6.0.8.jar",
     "modId": "create",
@@ -786,12 +849,12 @@
     "curseForgeHash": 2156032012,
     "modrinthHash": "b13d912b9247a38d66d11598c121442585a1c1e9"
   },
-  "create_connected-1.1.10-mc1.20.1-all.jar": {
-    "jarName": "create_connected-1.1.10-mc1.20.1-all.jar",
+  "create_connected-1.1.11-mc1.20.1-all.jar": {
+    "jarName": "create_connected-1.1.11-mc1.20.1-all.jar",
     "modId": "create_connected",
-    "version": "1.1.10-mc1.20.1",
-    "curseForgeHash": 198954090,
-    "modrinthHash": "eea1d04aee638689a99acf66457327b13a4b3f96"
+    "version": "1.1.11-mc1.20.1",
+    "curseForgeHash": 1931517171,
+    "modrinthHash": "ceffe02002c5f5b0938ac4d23f5a8b4c14c6b034"
   },
   "create_hypertube-0.3.0-FORGE.jar": {
     "jarName": "create_hypertube-0.3.0-FORGE.jar",
@@ -835,12 +898,12 @@
     "curseForgeHash": 4138152818,
     "modrinthHash": "ef8fe6a55a12f3bcb6c5e6101472cfbc7f3a16e6"
   },
-  "createcobblestone-1.4.5+forge-1.20.1-106.jar": {
-    "jarName": "createcobblestone-1.4.5+forge-1.20.1-106.jar",
+  "createcobblestone-1.4.8+forge-1.20.1-127.jar": {
+    "jarName": "createcobblestone-1.4.8+forge-1.20.1-127.jar",
     "modId": "createcobblestone",
-    "version": "1.4.5+forge-1.20.1-106",
-    "curseForgeHash": 2547605779,
-    "modrinthHash": "de37561041e967b957814c007a28dc5dfc5735ec"
+    "version": "1.4.8+forge-1.20.1-127",
+    "curseForgeHash": 2361800975,
+    "modrinthHash": "6410620e45fc704f8767b4749713271ad04d2ba2"
   },
   "createcontraptionterminals-1.20-1.2.0.jar": {
     "jarName": "createcontraptionterminals-1.20-1.2.0.jar",
@@ -876,6 +939,20 @@
     "version": "1.20.1-2.3.5",
     "curseForgeHash": 3069885784,
     "modrinthHash": "2f1e69f8c2df17459aff94762dbf197301e67d95"
+  },
+  "Croptopia-1.20.1-FORGE-3.0.4.jar": {
+    "jarName": "Croptopia-1.20.1-FORGE-3.0.4.jar",
+    "modId": "croptopia",
+    "version": "3.0.4",
+    "curseForgeHash": 4197678212,
+    "modrinthHash": "2008e6887b9490c491ddb471e87cfb6d26684dc5"
+  },
+  "CroptopiaAdditions-1.20.1-FORGE-2.4.jar": {
+    "jarName": "CroptopiaAdditions-1.20.1-FORGE-2.4.jar",
+    "modId": "croptopia_additions",
+    "version": "2.4",
+    "curseForgeHash": 1773758289,
+    "modrinthHash": "9acd76c4a33dc2f013be2fcce148bb38101cce77"
   },
   "CullLessLeaves-Reforged-1.20.1-1.0.5.jar": {
     "jarName": "CullLessLeaves-Reforged-1.20.1-1.0.5.jar",
@@ -1241,6 +1318,13 @@
     "curseForgeHash": 3527915803,
     "modrinthHash": "3a651dda978caf2c73504ee4d6c74ba1fb44a9df"
   },
+  "EpheroLib-1.20.1-FORGE-1.2.0.jar": {
+    "jarName": "EpheroLib-1.20.1-FORGE-1.2.0.jar",
+    "modId": "epherolib",
+    "version": "0.1.2",
+    "curseForgeHash": 1652112087,
+    "modrinthHash": "1eca21b906d38321bf60919dd3b12d160e5e6935"
+  },
   "Etcetera-1.20.1-1.1.3-Forge.jar": {
     "jarName": "Etcetera-1.20.1-1.1.3-Forge.jar",
     "modId": "etcetera",
@@ -1402,12 +1486,12 @@
     "curseForgeHash": 2325891344,
     "modrinthHash": "036137a54b8f503794cf38296ff4c7fbf2e9d5cc"
   },
-  "FastSuite-1.20.1-5.1.1.jar": {
-    "jarName": "FastSuite-1.20.1-5.1.1.jar",
+  "FastSuite-1.20.1-5.1.2.jar": {
+    "jarName": "FastSuite-1.20.1-5.1.2.jar",
     "modId": "fastsuite",
-    "version": "5.1.1",
-    "curseForgeHash": 4161769711,
-    "modrinthHash": "dfceb81524a9e1be19bf89d0281c05b6edf5326c"
+    "version": "5.1.2",
+    "curseForgeHash": 2881858684,
+    "modrinthHash": "32ea4495b0e646f8f060e4e97d17044dd9fdefbd"
   },
   "FastWorkbench-1.20.1-8.0.4.jar": {
     "jarName": "FastWorkbench-1.20.1-8.0.4.jar",
@@ -1423,12 +1507,12 @@
     "curseForgeHash": 2683111440,
     "modrinthHash": "417fb6ce8f52abf40bd9d0390371790f9576f8ba"
   },
-  "firstperson-forge-2.6.1-mc1.20.1.jar": {
-    "jarName": "firstperson-forge-2.6.1-mc1.20.1.jar",
+  "firstperson-forge-2.6.2-mc1.20.1.jar": {
+    "jarName": "firstperson-forge-2.6.2-mc1.20.1.jar",
     "modId": "firstperson",
-    "version": "2.6.1",
-    "curseForgeHash": 2900640699,
-    "modrinthHash": "62ad011fab7f9f1e4f15c0be75f4f4c0373442fa"
+    "version": "2.6.2",
+    "curseForgeHash": 1402327767,
+    "modrinthHash": "93d16c14f90879508144a688ac90ef0c9cda4e45"
   },
   "Fnaf Plushie Remastered October 29th.jar": {
     "jarName": "Fnaf Plushie Remastered October 29th.jar",
@@ -1458,12 +1542,12 @@
     "curseForgeHash": 425144973,
     "modrinthHash": "a20b213fe0f3b9e80f7b04159bd4a8a347cd061e"
   },
-  "fragmentum-forge-1.20.1-1.0.8.jar": {
-    "jarName": "fragmentum-forge-1.20.1-1.0.8.jar",
+  "fragmentum-forge-1.20.1-1.1.0.jar": {
+    "jarName": "fragmentum-forge-1.20.1-1.1.0.jar",
     "modId": "fragmentum",
-    "version": "1.0.8",
-    "curseForgeHash": 4221519104,
-    "modrinthHash": "7ec6f43c62973cb920561a849a6ce9f0ad07662f"
+    "version": "1.1.0",
+    "curseForgeHash": 2527251316,
+    "modrinthHash": "41ded356b48454443d550964c9304a9ee282abbd"
   },
   "framework-forge-1.20.1-0.7.15.jar": {
     "jarName": "framework-forge-1.20.1-0.7.15.jar",
@@ -1542,12 +1626,12 @@
     "curseForgeHash": 1801538787,
     "modrinthHash": "e17306593188b9fd16170a9dc47a8e0051a9f1e7"
   },
-  "geckolib-forge-1.20.1-4.8.2.jar": {
-    "jarName": "geckolib-forge-1.20.1-4.8.2.jar",
+  "geckolib-forge-1.20.1-4.8.3.jar": {
+    "jarName": "geckolib-forge-1.20.1-4.8.3.jar",
     "modId": "geckolib",
-    "version": "4.8.2",
-    "curseForgeHash": 1555934041,
-    "modrinthHash": "395a9f21a36dc8466d67c2af67a904e7013460d1"
+    "version": "4.8.3",
+    "curseForgeHash": 4092514766,
+    "modrinthHash": "5428765c6c2e2135da6ee01f2f0478fa0db6aee7"
   },
   "GeophilicReforged-v1.2.0.jar": {
     "jarName": "GeophilicReforged-v1.2.0.jar",
@@ -1647,12 +1731,12 @@
     "curseForgeHash": 2415097384,
     "modrinthHash": "2cb64010b264717174eabc1c547b6c5b1bc051d8"
   },
-  "ImmediatelyFast-Forge-1.5.3+1.20.4.jar": {
-    "jarName": "ImmediatelyFast-Forge-1.5.3+1.20.4.jar",
+  "ImmediatelyFast-Forge-1.5.4+1.20.4.jar": {
+    "jarName": "ImmediatelyFast-Forge-1.5.4+1.20.4.jar",
     "modId": "immediatelyfast",
-    "version": "1.5.3+1.20.4",
-    "curseForgeHash": 2056126318,
-    "modrinthHash": "d4695d013e9da7089e2906db3f56bc5398e478e2"
+    "version": "1.5.4+1.20.4",
+    "curseForgeHash": 4234781540,
+    "modrinthHash": "e2e60485a0c3efa72f1948c952b095150e3ba4fc"
   },
   "immersive_aircraft-1.4.0+1.20.1-forge.jar": {
     "jarName": "immersive_aircraft-1.4.0+1.20.1-forge.jar",
@@ -1724,12 +1808,12 @@
     "curseForgeHash": 45706608,
     "modrinthHash": "f19ae88f41256a74eed7b08b434d5c4695aaa6dd"
   },
-  "insanelib-1.23.4.0.jar": {
-    "jarName": "insanelib-1.23.4.0.jar",
+  "insanelib-1.23.4.2.jar": {
+    "jarName": "insanelib-1.23.4.2.jar",
     "modId": "insanelib",
-    "version": "1.23.4.0",
-    "curseForgeHash": 2757629180,
-    "modrinthHash": "01731162864726b4626fbafee985a091f01a2b3a"
+    "version": "1.23.4.2",
+    "curseForgeHash": 2153241287,
+    "modrinthHash": "d800049b06aa76a1604e44d20c6cfb1b7a670a8e"
   },
   "integrated_api-1.5.3+1.20.1-forge.jar": {
     "jarName": "integrated_api-1.5.3+1.20.1-forge.jar",
@@ -1850,12 +1934,12 @@
     "curseForgeHash": 2143853743,
     "modrinthHash": "4491e242f462499cf05d07f6f99ad1c8f2303615"
   },
-  "Kiwi-1.20.1-Forge-11.10.0.jar": {
-    "jarName": "Kiwi-1.20.1-Forge-11.10.0.jar",
+  "Kiwi-1.20.1-Forge-11.10.1.jar": {
+    "jarName": "Kiwi-1.20.1-Forge-11.10.1.jar",
     "modId": "kiwi",
-    "version": "11.10.0+forge",
-    "curseForgeHash": 2396942516,
-    "modrinthHash": "08059768c1d7690dab557c73faeb3dcbad851d3c"
+    "version": "11.10.1+forge",
+    "curseForgeHash": 2219372695,
+    "modrinthHash": "f8d2fdd1cda71b7b60d8e4ad68ee0070b255b74f"
   },
   "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar": {
     "jarName": "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
@@ -1939,12 +2023,40 @@
     "curseForgeHash": 2703333261,
     "modrinthHash": "6ee59d553e038cd951592c328205e48ab26a960f"
   },
+  "letsdo-herbalbrews-forge-1.0.12.jar": {
+    "jarName": "letsdo-herbalbrews-forge-1.0.12.jar",
+    "modId": "herbalbrews",
+    "version": "1.0.12",
+    "curseForgeHash": 2611086057,
+    "modrinthHash": "3de7feb383868a0db45351580d6ef5b05b776f16"
+  },
+  "letsdo-nethervinery-forge-1.2.19.jar": {
+    "jarName": "letsdo-nethervinery-forge-1.2.19.jar",
+    "modId": "nethervinery",
+    "version": "1.2.19",
+    "curseForgeHash": 3088291310,
+    "modrinthHash": "6df80983483698e392179d4eab3e75e4afdc22b7"
+  },
+  "letsdo-vinery-forge-1.4.41.jar": {
+    "jarName": "letsdo-vinery-forge-1.4.41.jar",
+    "modId": "vinery",
+    "version": "1.4.41",
+    "curseForgeHash": 3539383664,
+    "modrinthHash": "68ed3fa9524bef601064f49f60a30423db2f8fdc"
+  },
   "libertyvillagers-2.0.0+forge+1.20.1.jar": {
     "jarName": "libertyvillagers-2.0.0+forge+1.20.1.jar",
     "modId": "libertyvillagers",
     "version": "2.0.0+forge+1.20.1",
     "curseForgeHash": 1712003149,
     "modrinthHash": "e871b8087dfb7c287d0dc9baafb695941d73d809"
+  },
+  "lightspeed-1.20.1-1.1.2hotfix.jar": {
+    "jarName": "lightspeed-1.20.1-1.1.2hotfix.jar",
+    "modId": "lightspeed",
+    "version": "1.20.1-1.1.2hotfix",
+    "curseForgeHash": 3681148281,
+    "modrinthHash": "9d9ac4e588d27bc51b33498172e95539d03f9381"
   },
   "lionfishapi-2.4-Fix.jar": {
     "jarName": "lionfishapi-2.4-Fix.jar",
@@ -2016,12 +2128,12 @@
     "curseForgeHash": 3283249474,
     "modrinthHash": "e4171447d6924edf0450bd0614a271798be0ef01"
   },
-  "lootjs-forge-1.20.1-2.13.0.jar": {
-    "jarName": "lootjs-forge-1.20.1-2.13.0.jar",
+  "lootjs-forge-1.20.1-2.13.1.jar": {
+    "jarName": "lootjs-forge-1.20.1-2.13.1.jar",
     "modId": "lootjs",
-    "version": "1.20.1-2.13.0",
-    "curseForgeHash": 4083554858,
-    "modrinthHash": "fdf90acf177c19bcbfaa08527f6568bd3e6e622e"
+    "version": "1.20.1-2.13.1",
+    "curseForgeHash": 1389353380,
+    "modrinthHash": "804deb0bd34d69cad873170642b9d7e47fa0d6ad"
   },
   "lootr-forge-1.20-0.7.35.94.jar": {
     "jarName": "lootr-forge-1.20-0.7.35.94.jar",
@@ -2072,12 +2184,12 @@
     "curseForgeHash": 1023939547,
     "modrinthHash": "0037367a8af0d55a1b7f4c43dfc94cbdaca281db"
   },
-  "map_atlases-1.20-6.0.17.jar": {
-    "jarName": "map_atlases-1.20-6.0.17.jar",
+  "map_atlases-1.20-6.0.18.jar": {
+    "jarName": "map_atlases-1.20-6.0.18.jar",
     "modId": "map_atlases",
-    "version": "1.20-6.0.17",
-    "curseForgeHash": 4058868370,
-    "modrinthHash": "a62901799cdb36ca2e9948dced636d76c17d95c7"
+    "version": "1.20-6.0.18",
+    "curseForgeHash": 1996452367,
+    "modrinthHash": "ea5b16fa432694e636b66786ee2224b7c718d1d2"
   },
   "MaxHealthFix-Forge-1.20.1-12.0.3.jar": {
     "jarName": "MaxHealthFix-Forge-1.20.1-12.0.3.jar",
@@ -2149,12 +2261,12 @@
     "curseForgeHash": 3869691106,
     "modrinthHash": "1e7de73072e0adc9f09494cd79a79b1db030c293"
   },
-  "modernfix-forge-5.25.2+mc1.20.1.jar": {
-    "jarName": "modernfix-forge-5.25.2+mc1.20.1.jar",
+  "modernfix-forge-5.26.2+mc1.20.1.jar": {
+    "jarName": "modernfix-forge-5.26.2+mc1.20.1.jar",
     "modId": "modernfix",
-    "version": "5.25.2+mc1.20.1",
-    "curseForgeHash": 3074548209,
-    "modrinthHash": "4069534174e618393f0c14d9dc61ac27a04bb992"
+    "version": "5.26.2+mc1.20.1",
+    "curseForgeHash": 2785638273,
+    "modrinthHash": "0adfc122e9f632d8847688c4c3ed20a1af182afa"
   },
   "modernworldcreation_forge_2.0.2_MC_1.20.1.jar": {
     "jarName": "modernworldcreation_forge_2.0.2_MC_1.20.1.jar",
@@ -2191,12 +2303,12 @@
     "curseForgeHash": 2692017579,
     "modrinthHash": "bdc96a4c3dc9a7ec7c2dee235ecdc32e56016433"
   },
-  "moonlight-1.20-2.16.23-forge.jar": {
-    "jarName": "moonlight-1.20-2.16.23-forge.jar",
+  "moonlight-1.20-2.16.27-forge.jar": {
+    "jarName": "moonlight-1.20-2.16.27-forge.jar",
     "modId": "moonlight",
-    "version": "1.20-2.16.23",
-    "curseForgeHash": 3524849719,
-    "modrinthHash": "c63750ef54ac17d0dc1e58c246c6dac3d8d9ac87"
+    "version": "1.20-2.16.27",
+    "curseForgeHash": 827170608,
+    "modrinthHash": "0a1b384ec20d63e94c56123b53e264dc2afe5b17"
   },
   "More Villager Trades 1.0.0 - 1.20.1.jar": {
     "jarName": "More Villager Trades 1.0.0 - 1.20.1.jar",
@@ -2429,6 +2541,13 @@
     "curseForgeHash": 516527841,
     "modrinthHash": "984f774e71790deaec674c7587bd24e0711871b2"
   },
+  "OreBerries-Replanted-1.20.1-0.5.2.jar": {
+    "jarName": "OreBerries-Replanted-1.20.1-0.5.2.jar",
+    "modId": "oreberriesreplanted",
+    "version": "0.5.2",
+    "curseForgeHash": 508144454,
+    "modrinthHash": "44a8bfb1ded0d4eb2b68a6f0723bd5ce71f8c5d2"
+  },
   "overworld_quartz-1.20.1-1.1.2.jar": {
     "jarName": "overworld_quartz-1.20.1-1.1.2.jar",
     "modId": "overworld_quartz",
@@ -2450,12 +2569,12 @@
     "curseForgeHash": 2275251906,
     "modrinthHash": "5ce53c726965c223c3a0d082ba029b33701f919f"
   },
-  "particle_core-0.3.1+1.20.1+forge.jar": {
-    "jarName": "particle_core-0.3.1+1.20.1+forge.jar",
+  "particle_core-0.3.2+1.20.1+forge.jar": {
+    "jarName": "particle_core-0.3.2+1.20.1+forge.jar",
     "modId": "particle_core",
-    "version": "0.3.1+1.20.1+forge",
-    "curseForgeHash": 4077743380,
-    "modrinthHash": "935a8c19cc7a72364fdfe494d9ddbd599f01588d"
+    "version": "0.3.2+1.20.1+forge",
+    "curseForgeHash": 1864908717,
+    "modrinthHash": "57079d1607ce044533fb076d2db0e2a3d277a4fb"
   },
   "particlerain-4.0.0-beta.5+1.20.1-forge.jar": {
     "jarName": "particlerain-4.0.0-beta.5+1.20.1-forge.jar",
@@ -2548,6 +2667,20 @@
     "curseForgeHash": 1633971404,
     "modrinthHash": "6ccb76043763f929a11f1857a57b41bb70ab7512"
   },
+  "ProjectRed-1.20.1-4.21.0-core.jar": {
+    "jarName": "ProjectRed-1.20.1-4.21.0-core.jar",
+    "modId": "projectred_core",
+    "version": "4.21.0",
+    "curseForgeHash": 2567893141,
+    "modrinthHash": "3c7a62527958c199fb30a08b37f1a634dfb6a715"
+  },
+  "ProjectRed-1.20.1-4.21.0-transmission.jar": {
+    "jarName": "ProjectRed-1.20.1-4.21.0-transmission.jar",
+    "modId": "projectred_transmission",
+    "version": "4.21.0",
+    "curseForgeHash": 28871828,
+    "modrinthHash": "df540136f2ddb27c046ff71a1058716152f3065f"
+  },
   "puffish_biome_dither-1.0.0-1.19.2-forge.jar": {
     "jarName": "puffish_biome_dither-1.0.0-1.19.2-forge.jar",
     "modId": "puffish_biome_dither",
@@ -2597,6 +2730,20 @@
     "curseForgeHash": 2062861024,
     "modrinthHash": "789aeefff75e389bd311cff9ccfe422493dfe694"
   },
+  "Quick Skin - Forge - 1.20.1-2.5.5.jar": {
+    "jarName": "Quick Skin - Forge - 1.20.1-2.5.5.jar",
+    "modId": "quickskin",
+    "version": "2.5.5",
+    "curseForgeHash": 428683019,
+    "modrinthHash": "442d40ed0eb8eecc7d4b9ff33c3ae3c43b44e1d5"
+  },
+  "quick-pack-forge-1.2.1+1.20.1-all.jar": {
+    "jarName": "quick-pack-forge-1.2.1+1.20.1-all.jar",
+    "modId": "quick_pack",
+    "version": "1.2.1",
+    "curseForgeHash": 1854913772,
+    "modrinthHash": "409115dba7ba00dfbe11880365bf15d2c0f0dd6b"
+  },
   "QuitOrNot-1.0.1+Forge+1.20.1.jar": {
     "jarName": "QuitOrNot-1.0.1+Forge+1.20.1.jar",
     "modId": "quitornot",
@@ -2618,12 +2765,12 @@
     "curseForgeHash": 1441086174,
     "modrinthHash": "f5f5f792473bb7b85ec221f75c5afb3740afb13a"
   },
-  "rangedjs-1.2.0-forge.jar": {
-    "jarName": "rangedjs-1.2.0-forge.jar",
+  "rangedjs-1.2.2-forge.jar": {
+    "jarName": "rangedjs-1.2.2-forge.jar",
     "modId": "rangedjs",
-    "version": "1.2.0-forge",
-    "curseForgeHash": 3366067278,
-    "modrinthHash": "85bc3d91ffdb0b46b9e345268ae76003fd20e25a"
+    "version": "1.2.2-forge",
+    "curseForgeHash": 3999987146,
+    "modrinthHash": "850082a23e5ce24e9330bdd47a46710dbe571446"
   },
   "rch-supplementaries-compat-forge-1.0.0.jar": {
     "jarName": "rch-supplementaries-compat-forge-1.0.0.jar",
@@ -2695,19 +2842,12 @@
     "curseForgeHash": 1432081092,
     "modrinthHash": "c83c9b719a6bab33fbd2b3f2f680eb3adbfc1aa1"
   },
-  "rightclickharvest-forge-4.6.0+1.20.1.jar": {
-    "jarName": "rightclickharvest-forge-4.6.0+1.20.1.jar",
+  "rightclickharvest-forge-4.6.1+1.20.1.jar": {
+    "jarName": "rightclickharvest-forge-4.6.1+1.20.1.jar",
     "modId": "rightclickharvest",
-    "version": "4.6.0+1.20.1",
-    "curseForgeHash": 146938392,
-    "modrinthHash": "7b467d8d5c093d0ee5214a12ac2a198681f0f0e6"
-  },
-  "ruok-forge_1.20.1-1.7.2.jar": {
-    "jarName": "ruok-forge_1.20.1-1.7.2.jar",
-    "modId": "ruokmod",
-    "version": "1.7.2",
-    "curseForgeHash": 2463437952,
-    "modrinthHash": "74077c62c147341125ac8ffdbcfd372e1554bf66"
+    "version": "4.6.1+1.20.1",
+    "curseForgeHash": 654121266,
+    "modrinthHash": "539bfd7e456eec310707ca577e029fb9ace626c7"
   },
   "saturn-mc1.20.1-0.1.3.jar": {
     "jarName": "saturn-mc1.20.1-0.1.3.jar",
@@ -2786,12 +2926,12 @@
     "curseForgeHash": 530623821,
     "modrinthHash": "004da821faef53d231bc807634bcb9619aa86256"
   },
-  "ShieldExpansion-1.20.1-1.2.2.jar": {
-    "jarName": "ShieldExpansion-1.20.1-1.2.2.jar",
+  "shieldexp-forge-1.20.1-1.3.5.jar": {
+    "jarName": "shieldexp-forge-1.20.1-1.3.5.jar",
     "modId": "shieldexp",
-    "version": "1.2.2",
-    "curseForgeHash": 1110478714,
-    "modrinthHash": "53e6a67e60067789b8a5152f26034d50c8354bd7"
+    "version": "1.3.5",
+    "curseForgeHash": 2864085009,
+    "modrinthHash": "a0e8830aa1b54ba07f1afecdffccde41c4de93da"
   },
   "ShoulderSurfing-Forge-1.20.1-4.18.2.jar": {
     "jarName": "ShoulderSurfing-Forge-1.20.1-4.18.2.jar",
@@ -3008,12 +3148,12 @@
     "curseForgeHash": 4108207651,
     "modrinthHash": "1f94d509a6c25fa85b748d3cc3015bbbb977a948"
   },
-  "structurify-forge-2.0.14+mc1.20.1.jar": {
-    "jarName": "structurify-forge-2.0.14+mc1.20.1.jar",
+  "structurify-forge-2.0.17+mc1.20.1.jar": {
+    "jarName": "structurify-forge-2.0.17+mc1.20.1.jar",
     "modId": "structurify",
-    "version": "2.0.14",
-    "curseForgeHash": 194779333,
-    "modrinthHash": "b73728bb765882a6df6f018ec4f20a9968747864"
+    "version": "2.0.17",
+    "curseForgeHash": 367218412,
+    "modrinthHash": "0c3271e27f7e997fe38c1adf9b8655a2f0a53e00"
   },
   "StylishEffects-v8.0.2-1.20.1-Forge.jar": {
     "jarName": "StylishEffects-v8.0.2-1.20.1-Forge.jar",
@@ -3043,12 +3183,12 @@
     "curseForgeHash": 3016368264,
     "modrinthHash": "f80f9eed728966adcfbcc848633e789645057281"
   },
-  "supermartijn642corelib-1.1.19-forge-mc1.20.1.jar": {
-    "jarName": "supermartijn642corelib-1.1.19-forge-mc1.20.1.jar",
+  "supermartijn642corelib-1.1.20-forge-mc1.20.1.jar": {
+    "jarName": "supermartijn642corelib-1.1.20-forge-mc1.20.1.jar",
     "modId": "supermartijn642corelib",
-    "version": "1.1.19",
-    "curseForgeHash": 853170914,
-    "modrinthHash": "83cc625bb7483e7c23b320cc13836ebf02a17fa2"
+    "version": "1.1.20",
+    "curseForgeHash": 2861020415,
+    "modrinthHash": "9fa704bce5ef3fc2b38d1ba73cb6f6a38f10e33f"
   },
   "supplementaries-1.20-3.1.42-forge.jar": {
     "jarName": "supplementaries-1.20-3.1.42-forge.jar",

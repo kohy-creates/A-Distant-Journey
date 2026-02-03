@@ -538,7 +538,7 @@
 		}
 		{
 			dependencies: ["356CC1FA4E52AD00"]
-			icon: "botania:alfheim_portal"
+			icon: "window_box:alfthorne_sapling"
 			id: "5658376D04F1E8AE"
 			min_required_tasks: 4
 			rewards: [{
@@ -549,37 +549,14 @@
 			subtitle: "Open an Alfheim Portal"
 			tasks: [
 				{
-					id: "71479690142B487F"
-					item: "botania:alfheim_portal"
-					type: "item"
-				}
-				{
-					hasCustomPicture: false
-					icon: "handcrafted:hammer"
-					id: "5DD00A555212A5E8"
-					ignoreState: true
-					layer: true
-					name: "elven_portal"
-					rightclick: false
-					title: "Click to view the structure"
-					type: "questsadditions:structure"
-				}
-				{
 					count: 2L
 					id: "48B1E193E1B7C033"
 					item: { Count: 2, id: "botania:natura_pylon" }
 					type: "item"
 				}
 				{
-					count: 3L
-					id: "7C6372ACA948B356"
-					item: { Count: 3, id: "botania:glimmering_livingwood_log" }
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "18FE320AA8295640"
-					item: "botania:livingwood_log"
+					id: "34C5B028F682F1FE"
+					item: "window_box:alfthorne_sapling"
 					type: "item"
 				}
 			]
@@ -855,13 +832,13 @@
 			id: "4BB4F54ACBA9F3A7"
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "Click to read"
+			subtitle: "&oRequires 'Benchmarking'"
 			tasks: [{
 				id: "5BAE4D4959118AE4"
 				title: "Click to complete"
 				type: "checkmark"
 			}]
-			title: "World of Magic"
+			title: "&lClick to read"
 			x: 7.0d
 			y: -4.0d
 		}

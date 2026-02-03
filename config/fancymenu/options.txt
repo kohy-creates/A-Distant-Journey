@@ -14,7 +14,7 @@ B:advanced_customization_mode = 'true';
 
 ##[loading]
 
-S:preload_resources = '[source:local]config/fancymenu/assets/main_menu/title_animated.fma%!source_end!%';
+S:preload_resources = '[source:local]config/fancymenu/assets/main_menu/title_animated.fma%!source_end!%[source:local]config/fancymenu/assets/loading/loading.fma%!source_end!%';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '';
 B:game_intro_fade_out = 'true';

@@ -134,8 +134,8 @@ key_iris.keybind.shaderPackSelection:key.keyboard.unknown
 key_key.the_bumblezone.beehemoth_up:key.keyboard.space
 key_key.the_bumblezone.beehemoth_down:key.keyboard.caps.lock
 key_key.toms_storage.open_terminal:key.keyboard.b
-key_key.confluence.metal_detector:key.keyboard.right.control
-key_key.confluence.step_stool:key.keyboard.up
+key_key.terra_curio.metal_detector:key.keyboard.right.control
+key_key.terra_curio.step_stool:key.keyboard.up
 key_key.scholar.toggle_book_tools:key.keyboard.f1
 key_key.scholar.import_book:key.keyboard.f6
 key_key.scholar.export_book:key.keyboard.f7

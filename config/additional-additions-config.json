@@ -11,7 +11,7 @@
   "EnchantmentPrecision": true,
   "EnchantmentSpeed": true,
   "Wrench": false,
-  "CopperPatina": true,
+  "CopperPatina": false,
   "AmethystLamp": {
     "enabled": false,
     "despawnChance": 0.5

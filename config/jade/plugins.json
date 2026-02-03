@@ -26,7 +26,7 @@
     "waxed": true,
     "harvest_tool.new_line": false,
     "entity_health.max_for_render": 0,
-    "entity_health.show_fractions": true,
+    "entity_health.show_fractions": false,
     "mob_spawner": true,
     "redstone": true,
     "fluid_storage": true,
@@ -57,7 +57,7 @@
   },
   "treechop": {
     "plugin": true,
-    "show_tree_block_counts": true,
+    "show_tree_block_counts": false,
     "show_num_chops_remaining": true
   },
   "jade": {
@@ -69,7 +69,7 @@
     "mod_name": false
   },
   "functionalstorage": {
-    "armory": true
+    "armory": false
   },
   "balm": {
     "jade": true
@@ -78,7 +78,7 @@
     "mob_jar": true
   },
   "hammerlib": {
-    "root": true
+    "root": false
   },
   "exposure": {
     "lightroom": true,
@@ -94,6 +94,12 @@
   },
   "twilightforest": {
     "quest_ram_wool": true
+  },
+  "reliquary": {
+    "pedestal": true,
+    "altar": true,
+    "mortar": true,
+    "cauldron": true
   },
   "supplementaries": {
     "hat_stand": true

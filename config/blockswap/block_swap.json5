@@ -353,6 +353,10 @@
 		"cataclysm:stone_tiles": "supplementaries:stone_tile",
 
 		"ecologics:azalea_log": "quark:azalea_log",
-		"ecologics:flowering_azalea_log": "quark:azalea_log"
+		"ecologics:flowering_azalea_log": "quark:azalea_log",
+
+		"ancient_aether:grape_vine": "minecraft:air",
+		"aether_redux:fieldsproot_petals": "minecraft:air",
+		"twilightforest:iron_ladder": "quark:iron_ladder",
 	}
 }

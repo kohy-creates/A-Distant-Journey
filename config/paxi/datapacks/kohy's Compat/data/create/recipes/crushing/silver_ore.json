@@ -17,11 +17,11 @@
   "processingTime": 400,
   "results": [
     {
-      "item": "minecraft:raw_silver"
+      "item": "galosphere:raw_silver"
     },
     {
       "chance": 0.75,
-      "item": "minecraft:raw_silver"
+      "item": "galosphere:raw_silver"
     },
     {
       "chance": 0.75,

@@ -24,7 +24,7 @@
         "exposed_roots_provider": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "minecraft:mangrove_roots"
+            "Name": "twilightforest:mangrove_roots"
           }
         },
         "ground_roots_provider": {
@@ -70,7 +70,7 @@
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:mangrove_leaves",
+        "Name": "twilightforest:mangrove_leaves",
         "Properties": {
           "distance": "7",
           "persistent": "false",
@@ -109,7 +109,7 @@
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:mangrove_log",
+        "Name": "twilightforest:mangrove_log",
         "Properties": {
           "axis": "y"
         }

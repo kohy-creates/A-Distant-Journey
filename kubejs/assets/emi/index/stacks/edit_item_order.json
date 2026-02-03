@@ -611,6 +611,7 @@
 		"item:minecraft:cave_spider_spawn_egg",
 		"item:minecraft:chicken_spawn_egg",
 		"item:minecraft:cod_spawn_egg",
+		"item:minecraft:copper_golem_spawn_egg",
 		"item:minecraft:cow_spawn_egg",
 		"item:minecraft:creeper_spawn_egg",
 		"item:minecraft:dolphin_spawn_egg",
@@ -934,6 +935,8 @@
 		"item:upgrade_aquatic:perch_spawn_egg",
 		"item:upgrade_aquatic:pike_spawn_egg",
 		"item:upgrade_aquatic:thrasher_spawn_egg",
+		"item:vinery:mule_spawn_egg",
+		"item:vinery:wandering_winemaker_spawn_egg",
 		"item:witherstormmod:sickened_bee_spawn_egg",
 		"item:witherstormmod:sickened_cat_spawn_egg",
 		"item:witherstormmod:sickened_chicken_spawn_egg",
@@ -1106,8 +1109,6 @@
 		"item:suppsquared:gold_candle_holder_green",
 		"item:minecraft:oak_wood",
 		"item:quark:oak_post",
-		"item:minecraft:stripped_oak_log",
-		"item:minecraft:stripped_oak_wood",
 		"item:quark:stripped_oak_post",
 		"item:minecraft:oak_planks",
 		"item:architects_palette:oak_boards",
@@ -1144,8 +1145,6 @@
 		"item:minecraft:birch_log",
 		"item:minecraft:birch_wood",
 		"item:quark:birch_post",
-		"item:minecraft:stripped_birch_log",
-		"item:minecraft:stripped_birch_wood",
 		"item:quark:stripped_birch_post",
 		"item:minecraft:birch_planks",
 		"item:architects_palette:birch_boards",
@@ -1182,8 +1181,6 @@
 		"item:minecraft:spruce_log",
 		"item:minecraft:spruce_wood",
 		"item:quark:spruce_post",
-		"item:minecraft:stripped_spruce_log",
-		"item:minecraft:stripped_spruce_wood",
 		"item:quark:stripped_spruce_post",
 		"item:minecraft:spruce_planks",
 		"item:architects_palette:spruce_boards",
@@ -1220,8 +1217,6 @@
 		"item:minecraft:jungle_log",
 		"item:minecraft:jungle_wood",
 		"item:quark:jungle_post",
-		"item:minecraft:stripped_jungle_log",
-		"item:minecraft:stripped_jungle_wood",
 		"item:quark:stripped_jungle_post",
 		"item:minecraft:jungle_planks",
 		"item:architects_palette:jungle_boards",
@@ -1258,8 +1253,6 @@
 		"item:minecraft:acacia_log",
 		"item:minecraft:acacia_wood",
 		"item:quark:acacia_post",
-		"item:minecraft:stripped_acacia_log",
-		"item:minecraft:stripped_acacia_wood",
 		"item:quark:stripped_acacia_post",
 		"item:minecraft:acacia_planks",
 		"item:architects_palette:acacia_boards",
@@ -1296,8 +1289,6 @@
 		"item:minecraft:dark_oak_log",
 		"item:minecraft:dark_oak_wood",
 		"item:quark:dark_oak_post",
-		"item:minecraft:stripped_dark_oak_log",
-		"item:minecraft:stripped_dark_oak_wood",
 		"item:quark:stripped_dark_oak_post",
 		"item:minecraft:dark_oak_planks",
 		"item:architects_palette:dark_oak_boards",
@@ -1334,8 +1325,6 @@
 		"item:minecraft:mangrove_log",
 		"item:minecraft:mangrove_wood",
 		"item:quark:mangrove_post",
-		"item:minecraft:stripped_mangrove_log",
-		"item:minecraft:stripped_mangrove_wood",
 		"item:quark:stripped_mangrove_post",
 		"item:minecraft:mangrove_planks",
 		"item:architects_palette:mangrove_boards",
@@ -1373,8 +1362,6 @@
 		"item:minecraft:cherry_log",
 		"item:minecraft:cherry_wood",
 		"item:quark:cherry_post",
-		"item:minecraft:stripped_cherry_log",
-		"item:minecraft:stripped_cherry_wood",
 		"item:quark:stripped_cherry_post",
 		"item:minecraft:cherry_planks",
 		"item:quark:cherry_bookshelf",
@@ -1408,7 +1395,6 @@
 		"item:minecraft:cherry_boat",
 		"item:minecraft:bamboo_block",
 		"item:quark:bamboo_post",
-		"item:minecraft:stripped_bamboo_block",
 		"item:quark:stripped_bamboo_post",
 		"item:minecraft:bamboo_planks",
 		"item:minecraft:bamboo_mosaic",
@@ -1447,8 +1433,6 @@
 		"item:ecologics:coconut_log",
 		"item:ecologics:coconut_wood",
 		"item:everycomp:q/ecologics/coconut_post",
-		"item:ecologics:stripped_coconut_log",
-		"item:ecologics:stripped_coconut_wood",
 		"item:everycomp:q/ecologics/stripped_coconut_post",
 		"item:ecologics:coconut_planks",
 		"item:everycomp:ap/ecologics/coconut_boards",
@@ -1485,8 +1469,6 @@
 		"item:ecologics:walnut_log",
 		"item:ecologics:walnut_wood",
 		"item:everycomp:q/ecologics/walnut_post",
-		"item:ecologics:stripped_walnut_log",
-		"item:ecologics:stripped_walnut_wood",
 		"item:everycomp:q/ecologics/stripped_walnut_post",
 		"item:ecologics:walnut_planks",
 		"item:everycomp:ap/ecologics/walnut_boards",
@@ -1522,7 +1504,6 @@
 		"item:ecologics:walnut_boat",
 		"item:botania:livingwood_log",
 		"item:everycomp:q/botania/livingwood_post",
-		"item:botania:stripped_livingwood_log",
 		"item:everycomp:q/botania/stripped_livingwood_post",
 		"item:botania:livingwood_planks",
 		"item:everycomp:ap/botania/livingwood_boards",
@@ -1551,7 +1532,6 @@
 		"item:supplementaries:botania/sign_post_livingwood",
 		"item:botania:dreamwood_log",
 		"item:everycomp:q/botania/dreamwood_post",
-		"item:botania:stripped_dreamwood_log",
 		"item:everycomp:q/botania/stripped_dreamwood_post",
 		"item:botania:dreamwood_planks",
 		"item:everycomp:ap/botania/dreamwood_boards",
@@ -1581,8 +1561,6 @@
 		"item:window_box:chthonic_yew_log",
 		"item:window_box:chthonic_yew_wood",
 		"item:everycomp:q/window_box/chthonic_yew_post",
-		"item:window_box:stripped_chthonic_yew_log",
-		"item:window_box:stripped_chthonic_yew_wood",
 		"item:everycomp:q/window_box/stripped_chthonic_yew_post",
 		"item:window_box:chthonic_yew_planks",
 		"item:everycomp:ap/window_box/chthonic_yew_boards",
@@ -1619,8 +1597,6 @@
 		"item:window_box:alfthorne_log",
 		"item:window_box:alfthorne_wood",
 		"item:everycomp:q/window_box/alfthorne_post",
-		"item:window_box:stripped_alfthorne_log",
-		"item:window_box:stripped_alfthorne_wood",
 		"item:everycomp:q/window_box/stripped_alfthorne_post",
 		"item:window_box:alfthorne_planks",
 		"item:everycomp:ap/window_box/alfthorne_boards",
@@ -1714,8 +1690,6 @@
 		"item:supplementaries:evilcraft/sign_post_undead",
 		"item:enhanced_mushrooms:mushroom_hyphae",
 		"item:everycomp:q/enhanced_mushrooms/mushroom_post",
-		"item:enhanced_mushrooms:stripped_mushroom_stem",
-		"item:enhanced_mushrooms:stripped_mushroom_hyphae",
 		"item:everycomp:q/enhanced_mushrooms/stripped_mushroom_post",
 		"item:enhanced_mushrooms:mushroom_planks",
 		"item:enhanced_mushrooms:mushroom_bookshelf",
@@ -1750,8 +1724,6 @@
 		"item:quark:azalea_log",
 		"item:quark:azalea_wood",
 		"item:quark:azalea_post",
-		"item:quark:stripped_azalea_log",
-		"item:quark:stripped_azalea_wood",
 		"item:quark:stripped_azalea_post",
 		"item:quark:azalea_planks",
 		"item:everycomp:ap/quark/azalea_boards",
@@ -1792,8 +1764,6 @@
 		"item:alexscaves:thornwood_log",
 		"item:alexscaves:thornwood_wood",
 		"item:everycomp:q/alexscaves/thornwood_post",
-		"item:alexscaves:stripped_thornwood_log",
-		"item:alexscaves:stripped_thornwood_wood",
 		"item:everycomp:q/alexscaves/stripped_thornwood_post",
 		"item:alexscaves:thornwood_planks",
 		"item:everycomp:ap/alexscaves/thornwood_boards",
@@ -1830,8 +1800,6 @@
 		"item:alexscaves:pewen_log",
 		"item:alexscaves:pewen_wood",
 		"item:everycomp:q/alexscaves/pewen_post",
-		"item:alexscaves:stripped_pewen_log",
-		"item:alexscaves:stripped_pewen_wood",
 		"item:everycomp:q/alexscaves/stripped_pewen_post",
 		"item:alexscaves:pewen_planks",
 		"item:everycomp:ap/alexscaves/pewen_boards",
@@ -1868,25 +1836,37 @@
 		"item:quark:blossom_log",
 		"item:quark:blossom_wood",
 		"item:quark:blossom_post",
-		"item:quark:stripped_blossom_log",
-		"item:quark:stripped_blossom_wood",
 		"item:quark:stripped_blossom_post",
 		"item:quark:blossom_planks",
+		"item:everycomp:ap/quark/blossom_boards",
 		"item:quark:blossom_bookshelf",
 		"item:quark:blossom_bookshelf",
+		"item:everycomp:hc/quark/blossom_bench",
+		"item:everycomp:hc/quark/blossom_chair",
+		"item:everycomp:hc/quark/blossom_couch",
+		"item:everycomp:hc/quark/blossom_dining_bench",
+		"item:everycomp:hc/quark/blossom_side_table",
+		"item:everycomp:hc/quark/blossom_desk",
+		"item:everycomp:hc/quark/blossom_nightstand",
+		"item:everycomp:hc/quark/blossom_table",
+		"item:everycomp:hc/quark/blossom_counter",
+		"item:everycomp:fd/quark/blossom_cabinet",
 		"item:quark:blossom_chest",
 		"item:quark:blossom_chest",
+		"item:everycomp:hc/quark/blossom_fancy_bed",
 		"item:quark:blossom_planks_stairs",
 		"item:quark:blossom_planks_slab",
 		"item:quark:blossom_planks_slab",
 		"item:quark:blossom_planks_vertical_slab",
 		"item:suppsquared:quark/item_shelf_blossom",
 		"item:quark:blossom_fence",
+		"item:everycomp:ap/quark/blossom_railing",
 		"item:quark:blossom_fence_gate",
 		"item:quark:blossom_door",
 		"item:quark:blossom_trapdoor",
 		"item:quark:blossom_ladder",
 		"item:quark:blossom_ladder",
+		"item:everycomp:hnhome/quark/blossom_lattice",
 		"item:quark:blossom_pressure_plate",
 		"item:quark:blossom_button",
 		"item:quark:blossom_sign",
@@ -1896,25 +1876,37 @@
 		"item:quark:ancient_log",
 		"item:quark:ancient_wood",
 		"item:quark:ancient_post",
-		"item:quark:stripped_ancient_log",
-		"item:quark:stripped_ancient_wood",
 		"item:quark:stripped_ancient_post",
 		"item:quark:ancient_planks",
+		"item:everycomp:ap/quark/ancient_boards",
 		"item:quark:ancient_bookshelf",
 		"item:quark:ancient_bookshelf",
+		"item:everycomp:hc/quark/ancient_bench",
+		"item:everycomp:hc/quark/ancient_chair",
+		"item:everycomp:hc/quark/ancient_couch",
+		"item:everycomp:hc/quark/ancient_dining_bench",
+		"item:everycomp:hc/quark/ancient_side_table",
+		"item:everycomp:hc/quark/ancient_desk",
+		"item:everycomp:hc/quark/ancient_nightstand",
+		"item:everycomp:hc/quark/ancient_table",
+		"item:everycomp:hc/quark/ancient_counter",
+		"item:everycomp:fd/quark/ancient_cabinet",
 		"item:quark:ancient_chest",
 		"item:quark:ancient_chest",
+		"item:everycomp:hc/quark/ancient_fancy_bed",
 		"item:quark:ancient_planks_stairs",
 		"item:quark:ancient_planks_slab",
 		"item:quark:ancient_planks_slab",
 		"item:quark:ancient_planks_vertical_slab",
 		"item:suppsquared:quark/item_shelf_ancient",
 		"item:quark:ancient_fence",
+		"item:everycomp:ap/quark/ancient_railing",
 		"item:quark:ancient_fence_gate",
 		"item:quark:ancient_door",
 		"item:quark:ancient_trapdoor",
 		"item:quark:ancient_ladder",
 		"item:quark:ancient_ladder",
+		"item:everycomp:hnhome/quark/ancient_lattice",
 		"item:quark:ancient_pressure_plate",
 		"item:quark:ancient_button",
 		"item:quark:ancient_sign",
@@ -1924,8 +1916,6 @@
 		"item:snifferplus:stone_pine_log",
 		"item:snifferplus:stone_pine_wood",
 		"item:everycomp:q/snifferplus/stone_pine_post",
-		"item:snifferplus:stripped_stone_pine_log",
-		"item:snifferplus:stripped_stone_pine_wood",
 		"item:everycomp:q/snifferplus/stripped_stone_pine_post",
 		"item:snifferplus:stone_pine_planks",
 		"item:everycomp:ap/snifferplus/stone_pine_boards",
@@ -1961,7 +1951,6 @@
 		"item:snifferplus:stone_pine_boat",
 		"item:upgrade_aquatic:driftwood_log",
 		"item:upgrade_aquatic:driftwood",
-		"item:upgrade_aquatic:stripped_driftwood_log",
 		"item:upgrade_aquatic:stripped_driftwood",
 		"item:upgrade_aquatic:driftwood_planks",
 		"item:everycomp:ap/upgrade_aquatic/driftwood_boards",
@@ -2027,8 +2016,6 @@
 		"item:born_in_chaos_v1:scorched_log",
 		"item:born_in_chaos_v1:scorched_wood",
 		"item:everycomp:q/born_in_chaos_v1/scorched_post",
-		"item:born_in_chaos_v1:stripped_scorched_log",
-		"item:born_in_chaos_v1:stripped_scorched_wood",
 		"item:everycomp:q/born_in_chaos_v1/stripped_scorched_post",
 		"item:born_in_chaos_v1:scorched_planks",
 		"item:everycomp:ap/born_in_chaos_v1/scorched_boards",
@@ -2060,8 +2047,6 @@
 		"item:supplementaries:born_in_chaos_v1/sign_post_scorched",
 		"item:upgrade_aquatic:river_log",
 		"item:upgrade_aquatic:river_wood",
-		"item:upgrade_aquatic:stripped_river_log",
-		"item:upgrade_aquatic:stripped_river_wood",
 		"item:upgrade_aquatic:river_planks",
 		"item:everycomp:ap/upgrade_aquatic/river_boards",
 		"item:upgrade_aquatic:river_bookshelf",
@@ -2097,8 +2082,6 @@
 		"item:minecraft:crimson_stem",
 		"item:minecraft:crimson_hyphae",
 		"item:quark:crimson_post",
-		"item:minecraft:stripped_crimson_stem",
-		"item:minecraft:stripped_crimson_hyphae",
 		"item:quark:stripped_crimson_post",
 		"item:minecraft:crimson_planks",
 		"item:architects_palette:crimson_boards",
@@ -2134,8 +2117,6 @@
 		"item:minecraft:warped_stem",
 		"item:minecraft:warped_hyphae",
 		"item:quark:warped_post",
-		"item:minecraft:stripped_warped_stem",
-		"item:minecraft:stripped_warped_hyphae",
 		"item:quark:stripped_warped_post",
 		"item:minecraft:warped_planks",
 		"item:architects_palette:warped_boards",
@@ -2169,7 +2150,6 @@
 		"item:supplementaries:sign_post_warped",
 		"item:minecraft:warped_hanging_sign",
 		"item:mynethersdelight:powdery_block",
-		"item:mynethersdelight:stripped_powdery_block",
 		"item:mynethersdelight:powdery_planks",
 		"item:mynethersdelight:powdery_mosaic",
 		"item:everycomp:ap/mynethersdelight/powdery_boards",
@@ -2204,7 +2184,6 @@
 		"item:supplementaries:mynethersdelight/sign_post_powdery",
 		"item:mynethersdelight:powdery_hanging_sign",
 		"item:netherexp:smokestalk_block",
-		"item:netherexp:stripped_smokestalk_block",
 		"item:netherexp:smokestalk_planks",
 		"item:everycomp:ap/netherexp/smokestalk_boards",
 		"item:everycomp:q/netherexp/smokestalk_bookshelf",
@@ -2239,8 +2218,6 @@
 		"item:architects_palette:twisted_log",
 		"item:architects_palette:twisted_wood",
 		"item:everycomp:q/architects_palette/twisted_post",
-		"item:architects_palette:stripped_twisted_log",
-		"item:architects_palette:stripped_twisted_wood",
 		"item:everycomp:q/architects_palette/stripped_twisted_post",
 		"item:architects_palette:twisted_planks",
 		"item:architects_palette:twisted_boards",
@@ -2272,8 +2249,6 @@
 		"item:architects_palette:twisted_button",
 		"item:supplementaries:architects_palette/sign_post_twisted",
 		"item:everycomp:q/netherexp/claret_post",
-		"item:netherexp:stripped_claret_stem",
-		"item:netherexp:stripped_claret_hyphae",
 		"item:everycomp:q/netherexp/stripped_claret_post",
 		"item:netherexp:claret_planks",
 		"item:everycomp:ap/netherexp/claret_boards",
@@ -2309,8 +2284,6 @@
 		"item:aether:skyroot_log",
 		"item:aether:skyroot_wood",
 		"item:everycomp:q/aether/skyroot_post",
-		"item:aether:stripped_skyroot_log",
-		"item:aether:stripped_skyroot_wood",
 		"item:everycomp:q/aether/stripped_skyroot_post",
 		"item:aether:skyroot_planks",
 		"item:everycomp:ap/aether/skyroot_boards",
@@ -2347,8 +2320,6 @@
 		"item:aether_redux:fieldsproot_log",
 		"item:aether_redux:fieldsproot_wood",
 		"item:everycomp:q/aether_redux/fieldsproot_post",
-		"item:aether_redux:stripped_fieldsproot_log",
-		"item:aether_redux:stripped_fieldsproot_wood",
 		"item:everycomp:q/aether_redux/stripped_fieldsproot_post",
 		"item:aether_redux:fieldsproot_planks",
 		"item:everycomp:ap/aether_redux/fieldsproot_boards",
@@ -2385,8 +2356,6 @@
 		"item:aether_redux:crystal_log",
 		"item:aether_redux:crystal_wood",
 		"item:everycomp:q/aether_redux/crystal_post",
-		"item:aether_redux:stripped_crystal_log",
-		"item:aether_redux:stripped_crystal_wood",
 		"item:everycomp:q/aether_redux/stripped_crystal_post",
 		"item:aether_redux:crystal_planks",
 		"item:everycomp:ap/aether_redux/crystal_boards",
@@ -2423,8 +2392,6 @@
 		"item:aether_redux:glacia_log",
 		"item:aether_redux:glacia_wood",
 		"item:everycomp:q/aether_redux/glacia_post",
-		"item:aether_redux:stripped_glacia_log",
-		"item:aether_redux:stripped_glacia_wood",
 		"item:everycomp:q/aether_redux/stripped_glacia_post",
 		"item:aether_redux:glacia_planks",
 		"item:everycomp:ap/aether_redux/glacia_boards",
@@ -2461,8 +2428,6 @@
 		"item:aether_redux:cloudcap_stem",
 		"item:aether_redux:cloudcap_hyphae",
 		"item:everycomp:q/aether_redux/cloudcap_post",
-		"item:aether_redux:stripped_cloudcap_stem",
-		"item:aether_redux:stripped_cloudcap_hyphae",
 		"item:everycomp:q/aether_redux/stripped_cloudcap_post",
 		"item:aether_redux:cloudcap_planks",
 		"item:everycomp:ap/aether_redux/cloudcap_boards",
@@ -2499,8 +2464,6 @@
 		"item:aether_redux:blightwillow_log",
 		"item:aether_redux:blightwillow_wood",
 		"item:everycomp:q/aether_redux/blightwillow_post",
-		"item:aether_redux:stripped_blightwillow_log",
-		"item:aether_redux:stripped_blightwillow_wood",
 		"item:everycomp:q/aether_redux/stripped_blightwillow_post",
 		"item:aether_redux:blightwillow_planks",
 		"item:everycomp:ap/aether_redux/blightwillow_boards",
@@ -2631,8 +2594,6 @@
 		"item:phantasm:pream_log",
 		"item:phantasm:pream_wood",
 		"item:everycomp:q/phantasm/pream_post",
-		"item:phantasm:stripped_pream_log",
-		"item:phantasm:stripped_pream_wood",
 		"item:everycomp:q/phantasm/stripped_pream_post",
 		"item:phantasm:pream_planks",
 		"item:everycomp:ap/phantasm/pream_boards",
@@ -2668,8 +2629,6 @@
 		"item:witherstormmod:tainted_log",
 		"item:witherstormmod:tainted_wood",
 		"item:everycomp:q/witherstormmod/tainted_post",
-		"item:witherstormmod:stripped_tainted_log",
-		"item:witherstormmod:stripped_tainted_wood",
 		"item:everycomp:q/witherstormmod/stripped_tainted_post",
 		"item:witherstormmod:tainted_planks",
 		"item:everycomp:ap/witherstormmod/tainted_boards",
@@ -2704,8 +2663,6 @@
 		"item:ancient_aether:highsproot_log",
 		"item:ancient_aether:highsproot_wood",
 		"item:everycomp:q/ancient_aether/highsproot_post",
-		"item:ancient_aether:stripped_highsproot_log",
-		"item:ancient_aether:stripped_highsproot_wood",
 		"item:everycomp:q/ancient_aether/stripped_highsproot_post",
 		"item:ancient_aether:highsproot_planks",
 		"item:everycomp:ap/ancient_aether/highsproot_boards",
@@ -2742,8 +2699,6 @@
 		"item:twilightforest:mangrove_log",
 		"item:twilightforest:mangrove_wood",
 		"item:quark:mangrove_post",
-		"item:twilightforest:stripped_mangrove_log",
-		"item:twilightforest:stripped_mangrove_wood",
 		"item:quark:stripped_mangrove_post",
 		"item:twilightforest:mangrove_planks",
 		"item:architects_palette:mangrove_boards",
@@ -2782,8 +2737,6 @@
 		"item:twilightforest:mining_log",
 		"item:twilightforest:mining_wood",
 		"item:everycomp:q/twilightforest/mining_post",
-		"item:twilightforest:stripped_mining_log",
-		"item:twilightforest:stripped_mining_wood",
 		"item:everycomp:q/twilightforest/stripped_mining_post",
 		"item:twilightforest:mining_planks",
 		"item:everycomp:ap/twilightforest/mining_boards",
@@ -2817,11 +2770,42 @@
 		"item:supplementaries:twilightforest/sign_post_mining",
 		"item:twilightforest:mining_hanging_sign",
 		"item:twilightforest:mining_boat",
+		"item:vinery:dark_cherry_log",
+		"item:vinery:dark_cherry_wood",
+		"item:everycomp:q/vinery/dark_cherry_post",
+		"item:everycomp:q/vinery/stripped_dark_cherry_post",
+		"item:vinery:dark_cherry_planks",
+		"item:everycomp:ap/vinery/dark_cherry_boards",
+		"item:everycomp:q/vinery/dark_cherry_bookshelf",
+		"item:everycomp:hc/vinery/dark_cherry_bench",
+		"item:everycomp:hc/vinery/dark_cherry_couch",
+		"item:everycomp:hc/vinery/dark_cherry_dining_bench",
+		"item:everycomp:hc/vinery/dark_cherry_side_table",
+		"item:everycomp:hc/vinery/dark_cherry_desk",
+		"item:everycomp:hc/vinery/dark_cherry_nightstand",
+		"item:everycomp:hc/vinery/dark_cherry_counter",
+		"item:everycomp:q/vinery/dark_cherry_chest",
+		"item:everycomp:hc/vinery/dark_cherry_fancy_bed",
+		"item:vinery:dark_cherry_stairs",
+		"item:vinery:dark_cherry_slab",
+		"item:v_slab_compat:vinery/dark_cherry_vertical_slab",
+		"item:suppsquared:vinery/item_shelf_dark_cherry",
+		"item:vinery:dark_cherry_fence",
+		"item:everycomp:ap/vinery/dark_cherry_railing",
+		"item:vinery:dark_cherry_fence_gate",
+		"item:vinery:dark_cherry_door",
+		"item:vinery:dark_cherry_trapdoor",
+		"item:everycomp:q/vinery/dark_cherry_ladder",
+		"item:vinery:dark_cherry_pressure_plate",
+		"item:vinery:dark_cherry_button",
+		"item:vinery:dark_cherry_sign",
+		"item:supplementaries:vinery/sign_post_dark_cherry",
+		"item:vinery:dark_cherry_hanging_sign",
+		"item:vinery:dark_cherry_boat",
+		"item:nethervinery:reinforced_warped_planks",
 		"item:twilightforest:canopy_log",
 		"item:twilightforest:canopy_wood",
 		"item:everycomp:q/twilightforest/canopy_post",
-		"item:twilightforest:stripped_canopy_log",
-		"item:twilightforest:stripped_canopy_wood",
 		"item:everycomp:q/twilightforest/stripped_canopy_post",
 		"item:twilightforest:canopy_planks",
 		"item:everycomp:ap/twilightforest/canopy_boards",
@@ -2855,11 +2839,11 @@
 		"item:supplementaries:twilightforest/sign_post_canopy",
 		"item:twilightforest:canopy_hanging_sign",
 		"item:twilightforest:canopy_boat",
+		"item:nethervinery:crested_crimson_planks",
+		"item:nethervinery:crested_warped_planks",
 		"item:twilightforest:twilight_oak_log",
 		"item:twilightforest:twilight_oak_wood",
 		"item:everycomp:q/twilightforest/twilight_oak_post",
-		"item:twilightforest:stripped_twilight_oak_log",
-		"item:twilightforest:stripped_twilight_oak_wood",
 		"item:everycomp:q/twilightforest/stripped_twilight_oak_post",
 		"item:twilightforest:twilight_oak_planks",
 		"item:everycomp:ap/twilightforest/twilight_oak_boards",
@@ -2896,8 +2880,6 @@
 		"item:twilightforest:dark_log",
 		"item:twilightforest:dark_wood",
 		"item:everycomp:q/twilightforest/dark_post",
-		"item:twilightforest:stripped_dark_log",
-		"item:twilightforest:stripped_dark_wood",
 		"item:everycomp:q/twilightforest/stripped_dark_post",
 		"item:twilightforest:dark_planks",
 		"item:everycomp:ap/twilightforest/dark_boards",
@@ -2934,8 +2916,6 @@
 		"item:twilightforest:transformation_log",
 		"item:twilightforest:transformation_wood",
 		"item:everycomp:q/twilightforest/transformation_post",
-		"item:twilightforest:stripped_transformation_log",
-		"item:twilightforest:stripped_transformation_wood",
 		"item:everycomp:q/twilightforest/stripped_transformation_post",
 		"item:twilightforest:transformation_planks",
 		"item:everycomp:ap/twilightforest/transformation_boards",
@@ -2969,11 +2949,10 @@
 		"item:supplementaries:twilightforest/sign_post_transformation",
 		"item:twilightforest:transformation_hanging_sign",
 		"item:twilightforest:transformation_boat",
+		"item:nethervinery:reinforced_crimson_planks",
 		"item:ancient_aether:sakura_log",
 		"item:ancient_aether:sakura_wood",
 		"item:everycomp:q/ancient_aether/sakura_post",
-		"item:ancient_aether:stripped_sakura_log",
-		"item:ancient_aether:stripped_sakura_wood",
 		"item:everycomp:q/ancient_aether/stripped_sakura_post",
 		"item:ancient_aether:sakura_planks",
 		"item:everycomp:ap/ancient_aether/sakura_boards",
@@ -3010,8 +2989,6 @@
 		"item:twilightforest:time_log",
 		"item:twilightforest:time_wood",
 		"item:everycomp:q/twilightforest/time_post",
-		"item:twilightforest:stripped_time_log",
-		"item:twilightforest:stripped_time_wood",
 		"item:everycomp:q/twilightforest/stripped_time_post",
 		"item:twilightforest:time_planks",
 		"item:everycomp:ap/twilightforest/time_boards",
@@ -3047,8 +3024,6 @@
 		"item:twilightforest:time_boat",
 		"item:twilightforest:sorting_log",
 		"item:twilightforest:sorting_wood",
-		"item:twilightforest:stripped_sorting_log",
-		"item:twilightforest:stripped_sorting_wood",
 		"item:twilightforest:sorting_planks",
 		"item:twilightdelight:sorting_cabinet",
 		"item:twilightforest:sorting_chest",
@@ -3168,6 +3143,7 @@
 		"item:v_slab_compat:galosphere/lumiere_brick_vertical_slab",
 		"item:v_slab_compat:upgrade_aquatic/silk_coralstone_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/shingle_vertical_slab",
+		"item:v_slab_compat:vinery/coarse_dirt_vertical_slab",
 		"item:v_slab_compat:create/waxed_copper_shingle_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/lime_shingle_vertical_slab",
 		"item:v_slab_compat:botania/black_pavement_vertical_slab",
@@ -3246,6 +3222,7 @@
 		"item:v_slab_compat:the_bumblezone/ancient_wax_diamond_vertical_slab",
 		"item:v_slab_compat:create/small_deepslate_brick_vertical_slab",
 		"item:v_slab_compat:galosphere/polished_pink_salt_vertical_slab",
+		"item:v_slab_compat:vinery/dirt_vertical_slab",
 		"item:v_slab_compat:ancient_aether/carved_tile_vertical_slab",
 		"item:v_slab_compat:alexscaves/smooth_coprolith_vertical_slab",
 		"item:v_slab_compat:naturalist/smooth_shellstone_vertical_slab",
@@ -3267,6 +3244,7 @@
 		"item:v_slab_compat:create/waxed_weathered_copper_shingle_vertical_slab",
 		"item:v_slab_compat:ars_nouveau/sourcestone_basketweave_vertical_slab",
 		"item:v_slab_compat:unusualend/gloopslate_bricks_vertical_slab",
+		"item:v_slab_compat:vinery/grass_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/red_shingle_vertical_slab",
 		"item:v_slab_compat:create/cut_veridium_brick_vertical_slab",
 		"item:v_slab_compat:ars_nouveau/smooth_sourcestone_mosaic_vertical_slab",
@@ -3395,6 +3373,7 @@
 		"item:v_slab_compat:phantasm/cirite_bricks_vertical_slab",
 		"item:v_slab_compat:botania/polished_livingrock_vertical_slab",
 		"item:v_slab_compat:alexscaves/cinder_block_vertical_slab",
+		"item:v_slab_compat:vinery/dirt_path_vertical_slab",
 		"item:v_slab_compat:create/cut_ochrum_vertical_slab",
 		"item:v_slab_compat:supplementaries/blackstone_tile_vertical_slab",
 		"item:v_slab_compat:rediscovered/dirt_vertical_slab",
@@ -3402,6 +3381,7 @@
 		"item:v_slab_compat:upgrade_aquatic/luminous_prismarine_vertical_slab",
 		"item:v_slab_compat:botania/shimmerwood_planks_vertical_slab",
 		"item:v_slab_compat:upgrade_aquatic/prismarine_coralstone_vertical_slab",
+		"item:v_slab_compat:vinery/loam_vertical_slab",
 		"item:v_slab_compat:botania/livingrock_vertical_slab",
 		"item:v_slab_compat:botania/green_pavement_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/green_terracotta_brick_vertical_slab",
@@ -5851,8 +5831,12 @@
 			"after": "item:minecraft:chicken_spawn_egg"
 		},
 		{
-			"stack": "item:minecraft:cow_spawn_egg",
+			"stack": "item:minecraft:copper_golem_spawn_egg",
 			"after": "item:minecraft:cod_spawn_egg"
+		},
+		{
+			"stack": "item:minecraft:cow_spawn_egg",
+			"after": "item:minecraft:copper_golem_spawn_egg"
 		},
 		{
 			"stack": "item:minecraft:creeper_spawn_egg",
@@ -7143,8 +7127,16 @@
 			"after": "item:upgrade_aquatic:pike_spawn_egg"
 		},
 		{
-			"stack": "item:witherstormmod:sickened_bee_spawn_egg",
+			"stack": "item:vinery:mule_spawn_egg",
 			"after": "item:upgrade_aquatic:thrasher_spawn_egg"
+		},
+		{
+			"stack": "item:vinery:wandering_winemaker_spawn_egg",
+			"after": "item:vinery:mule_spawn_egg"
+		},
+		{
+			"stack": "item:witherstormmod:sickened_bee_spawn_egg",
+			"after": "item:vinery:wandering_winemaker_spawn_egg"
 		},
 		{
 			"stack": "item:witherstormmod:sickened_cat_spawn_egg",
@@ -7831,16 +7823,8 @@
 			"after": "item:minecraft:oak_wood"
 		},
 		{
-			"stack": "item:minecraft:stripped_oak_log",
-			"after": "item:quark:oak_post"
-		},
-		{
-			"stack": "item:minecraft:stripped_oak_wood",
-			"after": "item:minecraft:stripped_oak_log"
-		},
-		{
 			"stack": "item:quark:stripped_oak_post",
-			"after": "item:minecraft:stripped_oak_wood"
+			"after": "item:quark:oak_post"
 		},
 		{
 			"stack": "item:minecraft:oak_planks",
@@ -7983,16 +7967,8 @@
 			"after": "item:minecraft:birch_wood"
 		},
 		{
-			"stack": "item:minecraft:stripped_birch_log",
-			"after": "item:quark:birch_post"
-		},
-		{
-			"stack": "item:minecraft:stripped_birch_wood",
-			"after": "item:minecraft:stripped_birch_log"
-		},
-		{
 			"stack": "item:quark:stripped_birch_post",
-			"after": "item:minecraft:stripped_birch_wood"
+			"after": "item:quark:birch_post"
 		},
 		{
 			"stack": "item:minecraft:birch_planks",
@@ -8135,16 +8111,8 @@
 			"after": "item:minecraft:spruce_wood"
 		},
 		{
-			"stack": "item:minecraft:stripped_spruce_log",
-			"after": "item:quark:spruce_post"
-		},
-		{
-			"stack": "item:minecraft:stripped_spruce_wood",
-			"after": "item:minecraft:stripped_spruce_log"
-		},
-		{
 			"stack": "item:quark:stripped_spruce_post",
-			"after": "item:minecraft:stripped_spruce_wood"
+			"after": "item:quark:spruce_post"
 		},
 		{
 			"stack": "item:minecraft:spruce_planks",
@@ -8287,16 +8255,8 @@
 			"after": "item:minecraft:jungle_wood"
 		},
 		{
-			"stack": "item:minecraft:stripped_jungle_log",
-			"after": "item:quark:jungle_post"
-		},
-		{
-			"stack": "item:minecraft:stripped_jungle_wood",
-			"after": "item:minecraft:stripped_jungle_log"
-		},
-		{
 			"stack": "item:quark:stripped_jungle_post",
-			"after": "item:minecraft:stripped_jungle_wood"
+			"after": "item:quark:jungle_post"
 		},
 		{
 			"stack": "item:minecraft:jungle_planks",
@@ -8439,16 +8399,8 @@
 			"after": "item:minecraft:acacia_wood"
 		},
 		{
-			"stack": "item:minecraft:stripped_acacia_log",
-			"after": "item:quark:acacia_post"
-		},
-		{
-			"stack": "item:minecraft:stripped_acacia_wood",
-			"after": "item:minecraft:stripped_acacia_log"
-		},
-		{
 			"stack": "item:quark:stripped_acacia_post",
-			"after": "item:minecraft:stripped_acacia_wood"
+			"after": "item:quark:acacia_post"
 		},
 		{
 			"stack": "item:minecraft:acacia_planks",
@@ -8591,16 +8543,8 @@
 			"after": "item:minecraft:dark_oak_wood"
 		},
 		{
-			"stack": "item:minecraft:stripped_dark_oak_log",
-			"after": "item:quark:dark_oak_post"
-		},
-		{
-			"stack": "item:minecraft:stripped_dark_oak_wood",
-			"after": "item:minecraft:stripped_dark_oak_log"
-		},
-		{
 			"stack": "item:quark:stripped_dark_oak_post",
-			"after": "item:minecraft:stripped_dark_oak_wood"
+			"after": "item:quark:dark_oak_post"
 		},
 		{
 			"stack": "item:minecraft:dark_oak_planks",
@@ -8743,16 +8687,8 @@
 			"after": "item:minecraft:mangrove_wood"
 		},
 		{
-			"stack": "item:minecraft:stripped_mangrove_log",
-			"after": "item:quark:mangrove_post"
-		},
-		{
-			"stack": "item:minecraft:stripped_mangrove_wood",
-			"after": "item:minecraft:stripped_mangrove_log"
-		},
-		{
 			"stack": "item:quark:stripped_mangrove_post",
-			"after": "item:minecraft:stripped_mangrove_wood"
+			"after": "item:quark:mangrove_post"
 		},
 		{
 			"stack": "item:minecraft:mangrove_planks",
@@ -8899,16 +8835,8 @@
 			"after": "item:minecraft:cherry_wood"
 		},
 		{
-			"stack": "item:minecraft:stripped_cherry_log",
-			"after": "item:quark:cherry_post"
-		},
-		{
-			"stack": "item:minecraft:stripped_cherry_wood",
-			"after": "item:minecraft:stripped_cherry_log"
-		},
-		{
 			"stack": "item:quark:stripped_cherry_post",
-			"after": "item:minecraft:stripped_cherry_wood"
+			"after": "item:quark:cherry_post"
 		},
 		{
 			"stack": "item:minecraft:cherry_planks",
@@ -9039,12 +8967,8 @@
 			"after": "item:minecraft:bamboo_block"
 		},
 		{
-			"stack": "item:minecraft:stripped_bamboo_block",
-			"after": "item:quark:bamboo_post"
-		},
-		{
 			"stack": "item:quark:stripped_bamboo_post",
-			"after": "item:minecraft:stripped_bamboo_block"
+			"after": "item:quark:bamboo_post"
 		},
 		{
 			"stack": "item:minecraft:bamboo_planks",
@@ -9195,16 +9119,8 @@
 			"after": "item:ecologics:coconut_wood"
 		},
 		{
-			"stack": "item:ecologics:stripped_coconut_log",
-			"after": "item:everycomp:q/ecologics/coconut_post"
-		},
-		{
-			"stack": "item:ecologics:stripped_coconut_wood",
-			"after": "item:ecologics:stripped_coconut_log"
-		},
-		{
 			"stack": "item:everycomp:q/ecologics/stripped_coconut_post",
-			"after": "item:ecologics:stripped_coconut_wood"
+			"after": "item:everycomp:q/ecologics/coconut_post"
 		},
 		{
 			"stack": "item:ecologics:coconut_planks",
@@ -9347,16 +9263,8 @@
 			"after": "item:ecologics:walnut_wood"
 		},
 		{
-			"stack": "item:ecologics:stripped_walnut_log",
-			"after": "item:everycomp:q/ecologics/walnut_post"
-		},
-		{
-			"stack": "item:ecologics:stripped_walnut_wood",
-			"after": "item:ecologics:stripped_walnut_log"
-		},
-		{
 			"stack": "item:everycomp:q/ecologics/stripped_walnut_post",
-			"after": "item:ecologics:stripped_walnut_wood"
+			"after": "item:everycomp:q/ecologics/walnut_post"
 		},
 		{
 			"stack": "item:ecologics:walnut_planks",
@@ -9495,12 +9403,8 @@
 			"after": "item:botania:livingwood_log"
 		},
 		{
-			"stack": "item:botania:stripped_livingwood_log",
-			"after": "item:everycomp:q/botania/livingwood_post"
-		},
-		{
 			"stack": "item:everycomp:q/botania/stripped_livingwood_post",
-			"after": "item:botania:stripped_livingwood_log"
+			"after": "item:everycomp:q/botania/livingwood_post"
 		},
 		{
 			"stack": "item:botania:livingwood_planks",
@@ -9611,12 +9515,8 @@
 			"after": "item:botania:dreamwood_log"
 		},
 		{
-			"stack": "item:botania:stripped_dreamwood_log",
-			"after": "item:everycomp:q/botania/dreamwood_post"
-		},
-		{
 			"stack": "item:everycomp:q/botania/stripped_dreamwood_post",
-			"after": "item:botania:stripped_dreamwood_log"
+			"after": "item:everycomp:q/botania/dreamwood_post"
 		},
 		{
 			"stack": "item:botania:dreamwood_planks",
@@ -9731,16 +9631,8 @@
 			"after": "item:window_box:chthonic_yew_wood"
 		},
 		{
-			"stack": "item:window_box:stripped_chthonic_yew_log",
-			"after": "item:everycomp:q/window_box/chthonic_yew_post"
-		},
-		{
-			"stack": "item:window_box:stripped_chthonic_yew_wood",
-			"after": "item:window_box:stripped_chthonic_yew_log"
-		},
-		{
 			"stack": "item:everycomp:q/window_box/stripped_chthonic_yew_post",
-			"after": "item:window_box:stripped_chthonic_yew_wood"
+			"after": "item:everycomp:q/window_box/chthonic_yew_post"
 		},
 		{
 			"stack": "item:window_box:chthonic_yew_planks",
@@ -9883,16 +9775,8 @@
 			"after": "item:window_box:alfthorne_wood"
 		},
 		{
-			"stack": "item:window_box:stripped_alfthorne_log",
-			"after": "item:everycomp:q/window_box/alfthorne_post"
-		},
-		{
-			"stack": "item:window_box:stripped_alfthorne_wood",
-			"after": "item:window_box:stripped_alfthorne_log"
-		},
-		{
 			"stack": "item:everycomp:q/window_box/stripped_alfthorne_post",
-			"after": "item:window_box:stripped_alfthorne_wood"
+			"after": "item:everycomp:q/window_box/alfthorne_post"
 		},
 		{
 			"stack": "item:window_box:alfthorne_planks",
@@ -10263,16 +10147,8 @@
 			"after": "item:enhanced_mushrooms:mushroom_hyphae"
 		},
 		{
-			"stack": "item:enhanced_mushrooms:stripped_mushroom_stem",
-			"after": "item:everycomp:q/enhanced_mushrooms/mushroom_post"
-		},
-		{
-			"stack": "item:enhanced_mushrooms:stripped_mushroom_hyphae",
-			"after": "item:enhanced_mushrooms:stripped_mushroom_stem"
-		},
-		{
 			"stack": "item:everycomp:q/enhanced_mushrooms/stripped_mushroom_post",
-			"after": "item:enhanced_mushrooms:stripped_mushroom_hyphae"
+			"after": "item:everycomp:q/enhanced_mushrooms/mushroom_post"
 		},
 		{
 			"stack": "item:enhanced_mushrooms:mushroom_planks",
@@ -10407,16 +10283,8 @@
 			"after": "item:quark:azalea_wood"
 		},
 		{
-			"stack": "item:quark:stripped_azalea_log",
-			"after": "item:quark:azalea_post"
-		},
-		{
-			"stack": "item:quark:stripped_azalea_wood",
-			"after": "item:quark:stripped_azalea_log"
-		},
-		{
 			"stack": "item:quark:stripped_azalea_post",
-			"after": "item:quark:stripped_azalea_wood"
+			"after": "item:quark:azalea_post"
 		},
 		{
 			"stack": "item:quark:azalea_planks",
@@ -10575,16 +10443,8 @@
 			"after": "item:alexscaves:thornwood_wood"
 		},
 		{
-			"stack": "item:alexscaves:stripped_thornwood_log",
-			"after": "item:everycomp:q/alexscaves/thornwood_post"
-		},
-		{
-			"stack": "item:alexscaves:stripped_thornwood_wood",
-			"after": "item:alexscaves:stripped_thornwood_log"
-		},
-		{
 			"stack": "item:everycomp:q/alexscaves/stripped_thornwood_post",
-			"after": "item:alexscaves:stripped_thornwood_wood"
+			"after": "item:everycomp:q/alexscaves/thornwood_post"
 		},
 		{
 			"stack": "item:alexscaves:thornwood_planks",
@@ -10727,16 +10587,8 @@
 			"after": "item:alexscaves:pewen_wood"
 		},
 		{
-			"stack": "item:alexscaves:stripped_pewen_log",
-			"after": "item:everycomp:q/alexscaves/pewen_post"
-		},
-		{
-			"stack": "item:alexscaves:stripped_pewen_wood",
-			"after": "item:alexscaves:stripped_pewen_log"
-		},
-		{
 			"stack": "item:everycomp:q/alexscaves/stripped_pewen_post",
-			"after": "item:alexscaves:stripped_pewen_wood"
+			"after": "item:everycomp:q/alexscaves/pewen_post"
 		},
 		{
 			"stack": "item:alexscaves:pewen_planks",
@@ -10879,40 +10731,80 @@
 			"after": "item:quark:blossom_wood"
 		},
 		{
-			"stack": "item:quark:stripped_blossom_log",
-			"after": "item:quark:blossom_post"
-		},
-		{
-			"stack": "item:quark:stripped_blossom_wood",
-			"after": "item:quark:stripped_blossom_log"
-		},
-		{
 			"stack": "item:quark:stripped_blossom_post",
-			"after": "item:quark:stripped_blossom_wood"
+			"after": "item:quark:blossom_post"
 		},
 		{
 			"stack": "item:quark:blossom_planks",
 			"after": "item:quark:stripped_blossom_post"
 		},
 		{
-			"stack": "item:quark:blossom_bookshelf",
+			"stack": "item:everycomp:ap/quark/blossom_boards",
 			"after": "item:quark:blossom_planks"
 		},
 		{
 			"stack": "item:quark:blossom_bookshelf",
+			"after": "item:everycomp:ap/quark/blossom_boards"
+		},
+		{
+			"stack": "item:quark:blossom_bookshelf",
 			"after": "item:quark:blossom_bookshelf"
 		},
 		{
-			"stack": "item:quark:blossom_chest",
+			"stack": "item:everycomp:hc/quark/blossom_bench",
 			"after": "item:quark:blossom_bookshelf"
 		},
 		{
+			"stack": "item:everycomp:hc/quark/blossom_chair",
+			"after": "item:everycomp:hc/quark/blossom_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/blossom_couch",
+			"after": "item:everycomp:hc/quark/blossom_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/blossom_dining_bench",
+			"after": "item:everycomp:hc/quark/blossom_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/blossom_side_table",
+			"after": "item:everycomp:hc/quark/blossom_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/blossom_desk",
+			"after": "item:everycomp:hc/quark/blossom_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/blossom_nightstand",
+			"after": "item:everycomp:hc/quark/blossom_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/blossom_table",
+			"after": "item:everycomp:hc/quark/blossom_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/blossom_counter",
+			"after": "item:everycomp:hc/quark/blossom_table"
+		},
+		{
+			"stack": "item:everycomp:fd/quark/blossom_cabinet",
+			"after": "item:everycomp:hc/quark/blossom_counter"
+		},
+		{
 			"stack": "item:quark:blossom_chest",
+			"after": "item:everycomp:fd/quark/blossom_cabinet"
+		},
+		{
+			"stack": "item:quark:blossom_chest",
+			"after": "item:quark:blossom_chest"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/blossom_fancy_bed",
 			"after": "item:quark:blossom_chest"
 		},
 		{
 			"stack": "item:quark:blossom_planks_stairs",
-			"after": "item:quark:blossom_chest"
+			"after": "item:everycomp:hc/quark/blossom_fancy_bed"
 		},
 		{
 			"stack": "item:quark:blossom_planks_slab",
@@ -10935,8 +10827,12 @@
 			"after": "item:suppsquared:quark/item_shelf_blossom"
 		},
 		{
-			"stack": "item:quark:blossom_fence_gate",
+			"stack": "item:everycomp:ap/quark/blossom_railing",
 			"after": "item:quark:blossom_fence"
+		},
+		{
+			"stack": "item:quark:blossom_fence_gate",
+			"after": "item:everycomp:ap/quark/blossom_railing"
 		},
 		{
 			"stack": "item:quark:blossom_door",
@@ -10955,8 +10851,12 @@
 			"after": "item:quark:blossom_ladder"
 		},
 		{
-			"stack": "item:quark:blossom_pressure_plate",
+			"stack": "item:everycomp:hnhome/quark/blossom_lattice",
 			"after": "item:quark:blossom_ladder"
+		},
+		{
+			"stack": "item:quark:blossom_pressure_plate",
+			"after": "item:everycomp:hnhome/quark/blossom_lattice"
 		},
 		{
 			"stack": "item:quark:blossom_button",
@@ -10991,40 +10891,80 @@
 			"after": "item:quark:ancient_wood"
 		},
 		{
-			"stack": "item:quark:stripped_ancient_log",
-			"after": "item:quark:ancient_post"
-		},
-		{
-			"stack": "item:quark:stripped_ancient_wood",
-			"after": "item:quark:stripped_ancient_log"
-		},
-		{
 			"stack": "item:quark:stripped_ancient_post",
-			"after": "item:quark:stripped_ancient_wood"
+			"after": "item:quark:ancient_post"
 		},
 		{
 			"stack": "item:quark:ancient_planks",
 			"after": "item:quark:stripped_ancient_post"
 		},
 		{
-			"stack": "item:quark:ancient_bookshelf",
+			"stack": "item:everycomp:ap/quark/ancient_boards",
 			"after": "item:quark:ancient_planks"
 		},
 		{
 			"stack": "item:quark:ancient_bookshelf",
+			"after": "item:everycomp:ap/quark/ancient_boards"
+		},
+		{
+			"stack": "item:quark:ancient_bookshelf",
 			"after": "item:quark:ancient_bookshelf"
 		},
 		{
-			"stack": "item:quark:ancient_chest",
+			"stack": "item:everycomp:hc/quark/ancient_bench",
 			"after": "item:quark:ancient_bookshelf"
 		},
 		{
+			"stack": "item:everycomp:hc/quark/ancient_chair",
+			"after": "item:everycomp:hc/quark/ancient_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/ancient_couch",
+			"after": "item:everycomp:hc/quark/ancient_chair"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/ancient_dining_bench",
+			"after": "item:everycomp:hc/quark/ancient_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/ancient_side_table",
+			"after": "item:everycomp:hc/quark/ancient_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/ancient_desk",
+			"after": "item:everycomp:hc/quark/ancient_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/ancient_nightstand",
+			"after": "item:everycomp:hc/quark/ancient_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/ancient_table",
+			"after": "item:everycomp:hc/quark/ancient_nightstand"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/ancient_counter",
+			"after": "item:everycomp:hc/quark/ancient_table"
+		},
+		{
+			"stack": "item:everycomp:fd/quark/ancient_cabinet",
+			"after": "item:everycomp:hc/quark/ancient_counter"
+		},
+		{
 			"stack": "item:quark:ancient_chest",
+			"after": "item:everycomp:fd/quark/ancient_cabinet"
+		},
+		{
+			"stack": "item:quark:ancient_chest",
+			"after": "item:quark:ancient_chest"
+		},
+		{
+			"stack": "item:everycomp:hc/quark/ancient_fancy_bed",
 			"after": "item:quark:ancient_chest"
 		},
 		{
 			"stack": "item:quark:ancient_planks_stairs",
-			"after": "item:quark:ancient_chest"
+			"after": "item:everycomp:hc/quark/ancient_fancy_bed"
 		},
 		{
 			"stack": "item:quark:ancient_planks_slab",
@@ -11047,8 +10987,12 @@
 			"after": "item:suppsquared:quark/item_shelf_ancient"
 		},
 		{
-			"stack": "item:quark:ancient_fence_gate",
+			"stack": "item:everycomp:ap/quark/ancient_railing",
 			"after": "item:quark:ancient_fence"
+		},
+		{
+			"stack": "item:quark:ancient_fence_gate",
+			"after": "item:everycomp:ap/quark/ancient_railing"
 		},
 		{
 			"stack": "item:quark:ancient_door",
@@ -11067,8 +11011,12 @@
 			"after": "item:quark:ancient_ladder"
 		},
 		{
-			"stack": "item:quark:ancient_pressure_plate",
+			"stack": "item:everycomp:hnhome/quark/ancient_lattice",
 			"after": "item:quark:ancient_ladder"
+		},
+		{
+			"stack": "item:quark:ancient_pressure_plate",
+			"after": "item:everycomp:hnhome/quark/ancient_lattice"
 		},
 		{
 			"stack": "item:quark:ancient_button",
@@ -11103,16 +11051,8 @@
 			"after": "item:snifferplus:stone_pine_wood"
 		},
 		{
-			"stack": "item:snifferplus:stripped_stone_pine_log",
-			"after": "item:everycomp:q/snifferplus/stone_pine_post"
-		},
-		{
-			"stack": "item:snifferplus:stripped_stone_pine_wood",
-			"after": "item:snifferplus:stripped_stone_pine_log"
-		},
-		{
 			"stack": "item:everycomp:q/snifferplus/stripped_stone_pine_post",
-			"after": "item:snifferplus:stripped_stone_pine_wood"
+			"after": "item:everycomp:q/snifferplus/stone_pine_post"
 		},
 		{
 			"stack": "item:snifferplus:stone_pine_planks",
@@ -11251,12 +11191,8 @@
 			"after": "item:upgrade_aquatic:driftwood_log"
 		},
 		{
-			"stack": "item:upgrade_aquatic:stripped_driftwood_log",
-			"after": "item:upgrade_aquatic:driftwood"
-		},
-		{
 			"stack": "item:upgrade_aquatic:stripped_driftwood",
-			"after": "item:upgrade_aquatic:stripped_driftwood_log"
+			"after": "item:upgrade_aquatic:driftwood"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood_planks",
@@ -11515,16 +11451,8 @@
 			"after": "item:born_in_chaos_v1:scorched_wood"
 		},
 		{
-			"stack": "item:born_in_chaos_v1:stripped_scorched_log",
-			"after": "item:everycomp:q/born_in_chaos_v1/scorched_post"
-		},
-		{
-			"stack": "item:born_in_chaos_v1:stripped_scorched_wood",
-			"after": "item:born_in_chaos_v1:stripped_scorched_log"
-		},
-		{
 			"stack": "item:everycomp:q/born_in_chaos_v1/stripped_scorched_post",
-			"after": "item:born_in_chaos_v1:stripped_scorched_wood"
+			"after": "item:everycomp:q/born_in_chaos_v1/scorched_post"
 		},
 		{
 			"stack": "item:born_in_chaos_v1:scorched_planks",
@@ -11647,16 +11575,8 @@
 			"after": "item:upgrade_aquatic:river_log"
 		},
 		{
-			"stack": "item:upgrade_aquatic:stripped_river_log",
-			"after": "item:upgrade_aquatic:river_wood"
-		},
-		{
-			"stack": "item:upgrade_aquatic:stripped_river_wood",
-			"after": "item:upgrade_aquatic:stripped_river_log"
-		},
-		{
 			"stack": "item:upgrade_aquatic:river_planks",
-			"after": "item:upgrade_aquatic:stripped_river_wood"
+			"after": "item:upgrade_aquatic:river_wood"
 		},
 		{
 			"stack": "item:everycomp:ap/upgrade_aquatic/river_boards",
@@ -11795,16 +11715,8 @@
 			"after": "item:minecraft:crimson_hyphae"
 		},
 		{
-			"stack": "item:minecraft:stripped_crimson_stem",
-			"after": "item:quark:crimson_post"
-		},
-		{
-			"stack": "item:minecraft:stripped_crimson_hyphae",
-			"after": "item:minecraft:stripped_crimson_stem"
-		},
-		{
 			"stack": "item:quark:stripped_crimson_post",
-			"after": "item:minecraft:stripped_crimson_hyphae"
+			"after": "item:quark:crimson_post"
 		},
 		{
 			"stack": "item:minecraft:crimson_planks",
@@ -11943,16 +11855,8 @@
 			"after": "item:minecraft:warped_hyphae"
 		},
 		{
-			"stack": "item:minecraft:stripped_warped_stem",
-			"after": "item:quark:warped_post"
-		},
-		{
-			"stack": "item:minecraft:stripped_warped_hyphae",
-			"after": "item:minecraft:stripped_warped_stem"
-		},
-		{
 			"stack": "item:quark:stripped_warped_post",
-			"after": "item:minecraft:stripped_warped_hyphae"
+			"after": "item:quark:warped_post"
 		},
 		{
 			"stack": "item:minecraft:warped_planks",
@@ -12083,12 +11987,8 @@
 			"after": "item:minecraft:warped_hanging_sign"
 		},
 		{
-			"stack": "item:mynethersdelight:stripped_powdery_block",
-			"after": "item:mynethersdelight:powdery_block"
-		},
-		{
 			"stack": "item:mynethersdelight:powdery_planks",
-			"after": "item:mynethersdelight:stripped_powdery_block"
+			"after": "item:mynethersdelight:powdery_block"
 		},
 		{
 			"stack": "item:mynethersdelight:powdery_mosaic",
@@ -12223,12 +12123,8 @@
 			"after": "item:mynethersdelight:powdery_hanging_sign"
 		},
 		{
-			"stack": "item:netherexp:stripped_smokestalk_block",
-			"after": "item:netherexp:smokestalk_block"
-		},
-		{
 			"stack": "item:netherexp:smokestalk_planks",
-			"after": "item:netherexp:stripped_smokestalk_block"
+			"after": "item:netherexp:smokestalk_block"
 		},
 		{
 			"stack": "item:everycomp:ap/netherexp/smokestalk_boards",
@@ -12363,16 +12259,8 @@
 			"after": "item:architects_palette:twisted_wood"
 		},
 		{
-			"stack": "item:architects_palette:stripped_twisted_log",
-			"after": "item:everycomp:q/architects_palette/twisted_post"
-		},
-		{
-			"stack": "item:architects_palette:stripped_twisted_wood",
-			"after": "item:architects_palette:stripped_twisted_log"
-		},
-		{
 			"stack": "item:everycomp:q/architects_palette/stripped_twisted_post",
-			"after": "item:architects_palette:stripped_twisted_wood"
+			"after": "item:everycomp:q/architects_palette/twisted_post"
 		},
 		{
 			"stack": "item:architects_palette:twisted_planks",
@@ -12495,16 +12383,8 @@
 			"after": "item:supplementaries:architects_palette/sign_post_twisted"
 		},
 		{
-			"stack": "item:netherexp:stripped_claret_stem",
-			"after": "item:everycomp:q/netherexp/claret_post"
-		},
-		{
-			"stack": "item:netherexp:stripped_claret_hyphae",
-			"after": "item:netherexp:stripped_claret_stem"
-		},
-		{
 			"stack": "item:everycomp:q/netherexp/stripped_claret_post",
-			"after": "item:netherexp:stripped_claret_hyphae"
+			"after": "item:everycomp:q/netherexp/claret_post"
 		},
 		{
 			"stack": "item:netherexp:claret_planks",
@@ -12643,16 +12523,8 @@
 			"after": "item:aether:skyroot_wood"
 		},
 		{
-			"stack": "item:aether:stripped_skyroot_log",
-			"after": "item:everycomp:q/aether/skyroot_post"
-		},
-		{
-			"stack": "item:aether:stripped_skyroot_wood",
-			"after": "item:aether:stripped_skyroot_log"
-		},
-		{
 			"stack": "item:everycomp:q/aether/stripped_skyroot_post",
-			"after": "item:aether:stripped_skyroot_wood"
+			"after": "item:everycomp:q/aether/skyroot_post"
 		},
 		{
 			"stack": "item:aether:skyroot_planks",
@@ -12795,16 +12667,8 @@
 			"after": "item:aether_redux:fieldsproot_wood"
 		},
 		{
-			"stack": "item:aether_redux:stripped_fieldsproot_log",
-			"after": "item:everycomp:q/aether_redux/fieldsproot_post"
-		},
-		{
-			"stack": "item:aether_redux:stripped_fieldsproot_wood",
-			"after": "item:aether_redux:stripped_fieldsproot_log"
-		},
-		{
 			"stack": "item:everycomp:q/aether_redux/stripped_fieldsproot_post",
-			"after": "item:aether_redux:stripped_fieldsproot_wood"
+			"after": "item:everycomp:q/aether_redux/fieldsproot_post"
 		},
 		{
 			"stack": "item:aether_redux:fieldsproot_planks",
@@ -12947,16 +12811,8 @@
 			"after": "item:aether_redux:crystal_wood"
 		},
 		{
-			"stack": "item:aether_redux:stripped_crystal_log",
-			"after": "item:everycomp:q/aether_redux/crystal_post"
-		},
-		{
-			"stack": "item:aether_redux:stripped_crystal_wood",
-			"after": "item:aether_redux:stripped_crystal_log"
-		},
-		{
 			"stack": "item:everycomp:q/aether_redux/stripped_crystal_post",
-			"after": "item:aether_redux:stripped_crystal_wood"
+			"after": "item:everycomp:q/aether_redux/crystal_post"
 		},
 		{
 			"stack": "item:aether_redux:crystal_planks",
@@ -13099,16 +12955,8 @@
 			"after": "item:aether_redux:glacia_wood"
 		},
 		{
-			"stack": "item:aether_redux:stripped_glacia_log",
-			"after": "item:everycomp:q/aether_redux/glacia_post"
-		},
-		{
-			"stack": "item:aether_redux:stripped_glacia_wood",
-			"after": "item:aether_redux:stripped_glacia_log"
-		},
-		{
 			"stack": "item:everycomp:q/aether_redux/stripped_glacia_post",
-			"after": "item:aether_redux:stripped_glacia_wood"
+			"after": "item:everycomp:q/aether_redux/glacia_post"
 		},
 		{
 			"stack": "item:aether_redux:glacia_planks",
@@ -13251,16 +13099,8 @@
 			"after": "item:aether_redux:cloudcap_hyphae"
 		},
 		{
-			"stack": "item:aether_redux:stripped_cloudcap_stem",
-			"after": "item:everycomp:q/aether_redux/cloudcap_post"
-		},
-		{
-			"stack": "item:aether_redux:stripped_cloudcap_hyphae",
-			"after": "item:aether_redux:stripped_cloudcap_stem"
-		},
-		{
 			"stack": "item:everycomp:q/aether_redux/stripped_cloudcap_post",
-			"after": "item:aether_redux:stripped_cloudcap_hyphae"
+			"after": "item:everycomp:q/aether_redux/cloudcap_post"
 		},
 		{
 			"stack": "item:aether_redux:cloudcap_planks",
@@ -13403,16 +13243,8 @@
 			"after": "item:aether_redux:blightwillow_wood"
 		},
 		{
-			"stack": "item:aether_redux:stripped_blightwillow_log",
-			"after": "item:everycomp:q/aether_redux/blightwillow_post"
-		},
-		{
-			"stack": "item:aether_redux:stripped_blightwillow_wood",
-			"after": "item:aether_redux:stripped_blightwillow_log"
-		},
-		{
 			"stack": "item:everycomp:q/aether_redux/stripped_blightwillow_post",
-			"after": "item:aether_redux:stripped_blightwillow_wood"
+			"after": "item:everycomp:q/aether_redux/blightwillow_post"
 		},
 		{
 			"stack": "item:aether_redux:blightwillow_planks",
@@ -13931,16 +13763,8 @@
 			"after": "item:phantasm:pream_wood"
 		},
 		{
-			"stack": "item:phantasm:stripped_pream_log",
-			"after": "item:everycomp:q/phantasm/pream_post"
-		},
-		{
-			"stack": "item:phantasm:stripped_pream_wood",
-			"after": "item:phantasm:stripped_pream_log"
-		},
-		{
 			"stack": "item:everycomp:q/phantasm/stripped_pream_post",
-			"after": "item:phantasm:stripped_pream_wood"
+			"after": "item:everycomp:q/phantasm/pream_post"
 		},
 		{
 			"stack": "item:phantasm:pream_planks",
@@ -14079,16 +13903,8 @@
 			"after": "item:witherstormmod:tainted_wood"
 		},
 		{
-			"stack": "item:witherstormmod:stripped_tainted_log",
-			"after": "item:everycomp:q/witherstormmod/tainted_post"
-		},
-		{
-			"stack": "item:witherstormmod:stripped_tainted_wood",
-			"after": "item:witherstormmod:stripped_tainted_log"
-		},
-		{
 			"stack": "item:everycomp:q/witherstormmod/stripped_tainted_post",
-			"after": "item:witherstormmod:stripped_tainted_wood"
+			"after": "item:everycomp:q/witherstormmod/tainted_post"
 		},
 		{
 			"stack": "item:witherstormmod:tainted_planks",
@@ -14223,16 +14039,8 @@
 			"after": "item:ancient_aether:highsproot_wood"
 		},
 		{
-			"stack": "item:ancient_aether:stripped_highsproot_log",
-			"after": "item:everycomp:q/ancient_aether/highsproot_post"
-		},
-		{
-			"stack": "item:ancient_aether:stripped_highsproot_wood",
-			"after": "item:ancient_aether:stripped_highsproot_log"
-		},
-		{
 			"stack": "item:everycomp:q/ancient_aether/stripped_highsproot_post",
-			"after": "item:ancient_aether:stripped_highsproot_wood"
+			"after": "item:everycomp:q/ancient_aether/highsproot_post"
 		},
 		{
 			"stack": "item:ancient_aether:highsproot_planks",
@@ -14375,16 +14183,8 @@
 			"after": "item:twilightforest:mangrove_wood"
 		},
 		{
-			"stack": "item:twilightforest:stripped_mangrove_log",
-			"after": "item:quark:mangrove_post"
-		},
-		{
-			"stack": "item:twilightforest:stripped_mangrove_wood",
-			"after": "item:twilightforest:stripped_mangrove_log"
-		},
-		{
 			"stack": "item:quark:stripped_mangrove_post",
-			"after": "item:twilightforest:stripped_mangrove_wood"
+			"after": "item:quark:mangrove_post"
 		},
 		{
 			"stack": "item:twilightforest:mangrove_planks",
@@ -14535,16 +14335,8 @@
 			"after": "item:twilightforest:mining_wood"
 		},
 		{
-			"stack": "item:twilightforest:stripped_mining_log",
-			"after": "item:everycomp:q/twilightforest/mining_post"
-		},
-		{
-			"stack": "item:twilightforest:stripped_mining_wood",
-			"after": "item:twilightforest:stripped_mining_log"
-		},
-		{
 			"stack": "item:everycomp:q/twilightforest/stripped_mining_post",
-			"after": "item:twilightforest:stripped_mining_wood"
+			"after": "item:everycomp:q/twilightforest/mining_post"
 		},
 		{
 			"stack": "item:twilightforest:mining_planks",
@@ -14675,8 +14467,140 @@
 			"after": "item:twilightforest:mining_hanging_sign"
 		},
 		{
-			"stack": "item:twilightforest:canopy_log",
+			"stack": "item:vinery:dark_cherry_log",
 			"after": "item:twilightforest:mining_boat"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_wood",
+			"after": "item:vinery:dark_cherry_log"
+		},
+		{
+			"stack": "item:everycomp:q/vinery/dark_cherry_post",
+			"after": "item:vinery:dark_cherry_wood"
+		},
+		{
+			"stack": "item:everycomp:q/vinery/stripped_dark_cherry_post",
+			"after": "item:everycomp:q/vinery/dark_cherry_post"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_planks",
+			"after": "item:everycomp:q/vinery/stripped_dark_cherry_post"
+		},
+		{
+			"stack": "item:everycomp:ap/vinery/dark_cherry_boards",
+			"after": "item:vinery:dark_cherry_planks"
+		},
+		{
+			"stack": "item:everycomp:q/vinery/dark_cherry_bookshelf",
+			"after": "item:everycomp:ap/vinery/dark_cherry_boards"
+		},
+		{
+			"stack": "item:everycomp:hc/vinery/dark_cherry_bench",
+			"after": "item:everycomp:q/vinery/dark_cherry_bookshelf"
+		},
+		{
+			"stack": "item:everycomp:hc/vinery/dark_cherry_couch",
+			"after": "item:everycomp:hc/vinery/dark_cherry_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/vinery/dark_cherry_dining_bench",
+			"after": "item:everycomp:hc/vinery/dark_cherry_couch"
+		},
+		{
+			"stack": "item:everycomp:hc/vinery/dark_cherry_side_table",
+			"after": "item:everycomp:hc/vinery/dark_cherry_dining_bench"
+		},
+		{
+			"stack": "item:everycomp:hc/vinery/dark_cherry_desk",
+			"after": "item:everycomp:hc/vinery/dark_cherry_side_table"
+		},
+		{
+			"stack": "item:everycomp:hc/vinery/dark_cherry_nightstand",
+			"after": "item:everycomp:hc/vinery/dark_cherry_desk"
+		},
+		{
+			"stack": "item:everycomp:hc/vinery/dark_cherry_counter",
+			"after": "item:everycomp:hc/vinery/dark_cherry_nightstand"
+		},
+		{
+			"stack": "item:everycomp:q/vinery/dark_cherry_chest",
+			"after": "item:everycomp:hc/vinery/dark_cherry_counter"
+		},
+		{
+			"stack": "item:everycomp:hc/vinery/dark_cherry_fancy_bed",
+			"after": "item:everycomp:q/vinery/dark_cherry_chest"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_stairs",
+			"after": "item:everycomp:hc/vinery/dark_cherry_fancy_bed"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_slab",
+			"after": "item:vinery:dark_cherry_stairs"
+		},
+		{
+			"stack": "item:v_slab_compat:vinery/dark_cherry_vertical_slab",
+			"after": "item:vinery:dark_cherry_slab"
+		},
+		{
+			"stack": "item:suppsquared:vinery/item_shelf_dark_cherry",
+			"after": "item:v_slab_compat:vinery/dark_cherry_vertical_slab"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_fence",
+			"after": "item:suppsquared:vinery/item_shelf_dark_cherry"
+		},
+		{
+			"stack": "item:everycomp:ap/vinery/dark_cherry_railing",
+			"after": "item:vinery:dark_cherry_fence"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_fence_gate",
+			"after": "item:everycomp:ap/vinery/dark_cherry_railing"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_door",
+			"after": "item:vinery:dark_cherry_fence_gate"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_trapdoor",
+			"after": "item:vinery:dark_cherry_door"
+		},
+		{
+			"stack": "item:everycomp:q/vinery/dark_cherry_ladder",
+			"after": "item:vinery:dark_cherry_trapdoor"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_pressure_plate",
+			"after": "item:everycomp:q/vinery/dark_cherry_ladder"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_button",
+			"after": "item:vinery:dark_cherry_pressure_plate"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_sign",
+			"after": "item:vinery:dark_cherry_button"
+		},
+		{
+			"stack": "item:supplementaries:vinery/sign_post_dark_cherry",
+			"after": "item:vinery:dark_cherry_sign"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_hanging_sign",
+			"after": "item:supplementaries:vinery/sign_post_dark_cherry"
+		},
+		{
+			"stack": "item:vinery:dark_cherry_boat",
+			"after": "item:vinery:dark_cherry_hanging_sign"
+		},
+		{
+			"stack": "item:nethervinery:reinforced_warped_planks",
+			"after": "item:vinery:dark_cherry_boat"
+		},
+		{
+			"stack": "item:twilightforest:canopy_log",
+			"after": "item:nethervinery:reinforced_warped_planks"
 		},
 		{
 			"stack": "item:twilightforest:canopy_wood",
@@ -14687,16 +14611,8 @@
 			"after": "item:twilightforest:canopy_wood"
 		},
 		{
-			"stack": "item:twilightforest:stripped_canopy_log",
-			"after": "item:everycomp:q/twilightforest/canopy_post"
-		},
-		{
-			"stack": "item:twilightforest:stripped_canopy_wood",
-			"after": "item:twilightforest:stripped_canopy_log"
-		},
-		{
 			"stack": "item:everycomp:q/twilightforest/stripped_canopy_post",
-			"after": "item:twilightforest:stripped_canopy_wood"
+			"after": "item:everycomp:q/twilightforest/canopy_post"
 		},
 		{
 			"stack": "item:twilightforest:canopy_planks",
@@ -14827,8 +14743,16 @@
 			"after": "item:twilightforest:canopy_hanging_sign"
 		},
 		{
-			"stack": "item:twilightforest:twilight_oak_log",
+			"stack": "item:nethervinery:crested_crimson_planks",
 			"after": "item:twilightforest:canopy_boat"
+		},
+		{
+			"stack": "item:nethervinery:crested_warped_planks",
+			"after": "item:nethervinery:crested_crimson_planks"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_log",
+			"after": "item:nethervinery:crested_warped_planks"
 		},
 		{
 			"stack": "item:twilightforest:twilight_oak_wood",
@@ -14839,16 +14763,8 @@
 			"after": "item:twilightforest:twilight_oak_wood"
 		},
 		{
-			"stack": "item:twilightforest:stripped_twilight_oak_log",
-			"after": "item:everycomp:q/twilightforest/twilight_oak_post"
-		},
-		{
-			"stack": "item:twilightforest:stripped_twilight_oak_wood",
-			"after": "item:twilightforest:stripped_twilight_oak_log"
-		},
-		{
 			"stack": "item:everycomp:q/twilightforest/stripped_twilight_oak_post",
-			"after": "item:twilightforest:stripped_twilight_oak_wood"
+			"after": "item:everycomp:q/twilightforest/twilight_oak_post"
 		},
 		{
 			"stack": "item:twilightforest:twilight_oak_planks",
@@ -14991,16 +14907,8 @@
 			"after": "item:twilightforest:dark_wood"
 		},
 		{
-			"stack": "item:twilightforest:stripped_dark_log",
-			"after": "item:everycomp:q/twilightforest/dark_post"
-		},
-		{
-			"stack": "item:twilightforest:stripped_dark_wood",
-			"after": "item:twilightforest:stripped_dark_log"
-		},
-		{
 			"stack": "item:everycomp:q/twilightforest/stripped_dark_post",
-			"after": "item:twilightforest:stripped_dark_wood"
+			"after": "item:everycomp:q/twilightforest/dark_post"
 		},
 		{
 			"stack": "item:twilightforest:dark_planks",
@@ -15143,16 +15051,8 @@
 			"after": "item:twilightforest:transformation_wood"
 		},
 		{
-			"stack": "item:twilightforest:stripped_transformation_log",
-			"after": "item:everycomp:q/twilightforest/transformation_post"
-		},
-		{
-			"stack": "item:twilightforest:stripped_transformation_wood",
-			"after": "item:twilightforest:stripped_transformation_log"
-		},
-		{
 			"stack": "item:everycomp:q/twilightforest/stripped_transformation_post",
-			"after": "item:twilightforest:stripped_transformation_wood"
+			"after": "item:everycomp:q/twilightforest/transformation_post"
 		},
 		{
 			"stack": "item:twilightforest:transformation_planks",
@@ -15283,8 +15183,12 @@
 			"after": "item:twilightforest:transformation_hanging_sign"
 		},
 		{
-			"stack": "item:ancient_aether:sakura_log",
+			"stack": "item:nethervinery:reinforced_crimson_planks",
 			"after": "item:twilightforest:transformation_boat"
+		},
+		{
+			"stack": "item:ancient_aether:sakura_log",
+			"after": "item:nethervinery:reinforced_crimson_planks"
 		},
 		{
 			"stack": "item:ancient_aether:sakura_wood",
@@ -15295,16 +15199,8 @@
 			"after": "item:ancient_aether:sakura_wood"
 		},
 		{
-			"stack": "item:ancient_aether:stripped_sakura_log",
-			"after": "item:everycomp:q/ancient_aether/sakura_post"
-		},
-		{
-			"stack": "item:ancient_aether:stripped_sakura_wood",
-			"after": "item:ancient_aether:stripped_sakura_log"
-		},
-		{
 			"stack": "item:everycomp:q/ancient_aether/stripped_sakura_post",
-			"after": "item:ancient_aether:stripped_sakura_wood"
+			"after": "item:everycomp:q/ancient_aether/sakura_post"
 		},
 		{
 			"stack": "item:ancient_aether:sakura_planks",
@@ -15447,16 +15343,8 @@
 			"after": "item:twilightforest:time_wood"
 		},
 		{
-			"stack": "item:twilightforest:stripped_time_log",
-			"after": "item:everycomp:q/twilightforest/time_post"
-		},
-		{
-			"stack": "item:twilightforest:stripped_time_wood",
-			"after": "item:twilightforest:stripped_time_log"
-		},
-		{
 			"stack": "item:everycomp:q/twilightforest/stripped_time_post",
-			"after": "item:twilightforest:stripped_time_wood"
+			"after": "item:everycomp:q/twilightforest/time_post"
 		},
 		{
 			"stack": "item:twilightforest:time_planks",
@@ -15595,16 +15483,8 @@
 			"after": "item:twilightforest:sorting_log"
 		},
 		{
-			"stack": "item:twilightforest:stripped_sorting_log",
-			"after": "item:twilightforest:sorting_wood"
-		},
-		{
-			"stack": "item:twilightforest:stripped_sorting_wood",
-			"after": "item:twilightforest:stripped_sorting_log"
-		},
-		{
 			"stack": "item:twilightforest:sorting_planks",
-			"after": "item:twilightforest:stripped_sorting_wood"
+			"after": "item:twilightforest:sorting_wood"
 		},
 		{
 			"stack": "item:twilightdelight:sorting_cabinet",
@@ -16079,6 +15959,10 @@
 			"after": "item:hearth_and_home:shingle_slab"
 		},
 		{
+			"stack": "item:v_slab_compat:vinery/coarse_dirt_vertical_slab",
+			"after": "item:vinery:coarse_dirt_slab"
+		},
+		{
 			"stack": "item:v_slab_compat:create/waxed_copper_shingle_vertical_slab",
 			"after": "item:create:waxed_copper_shingle_slab"
 		},
@@ -16391,6 +16275,10 @@
 			"after": "item:galosphere:polished_pink_salt_slab"
 		},
 		{
+			"stack": "item:v_slab_compat:vinery/dirt_vertical_slab",
+			"after": "item:vinery:dirt_slab"
+		},
+		{
 			"stack": "item:v_slab_compat:ancient_aether/carved_tile_vertical_slab",
 			"after": "item:ancient_aether:carved_tile_slab"
 		},
@@ -16473,6 +16361,10 @@
 		{
 			"stack": "item:v_slab_compat:unusualend/gloopslate_bricks_vertical_slab",
 			"after": "item:unusualend:gloopslate_bricks_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:vinery/grass_vertical_slab",
+			"after": "item:vinery:grass_slab"
 		},
 		{
 			"stack": "item:v_slab_compat:hearth_and_home/red_shingle_vertical_slab",
@@ -16987,6 +16879,10 @@
 			"after": "item:alexscaves:cinder_block_slab"
 		},
 		{
+			"stack": "item:v_slab_compat:vinery/dirt_path_vertical_slab",
+			"after": "item:vinery:dirt_path_slab"
+		},
+		{
 			"stack": "item:v_slab_compat:create/cut_ochrum_vertical_slab",
 			"after": "item:create:cut_ochrum_slab"
 		},
@@ -17013,6 +16909,10 @@
 		{
 			"stack": "item:v_slab_compat:upgrade_aquatic/prismarine_coralstone_vertical_slab",
 			"after": "item:upgrade_aquatic:prismarine_coralstone_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:vinery/loam_vertical_slab",
+			"after": "item:vinery:loam_slab"
 		},
 		{
 			"stack": "item:v_slab_compat:botania/livingrock_vertical_slab",
@@ -17732,6 +17632,7 @@
 		"/minecraft:cave_spider_spawn_egg/",
 		"/minecraft:chicken_spawn_egg/",
 		"/minecraft:cod_spawn_egg/",
+		"/minecraft:copper_golem_spawn_egg/",
 		"/minecraft:cow_spawn_egg/",
 		"/minecraft:creeper_spawn_egg/",
 		"/minecraft:dolphin_spawn_egg/",
@@ -18055,6 +17956,8 @@
 		"/upgrade_aquatic:perch_spawn_egg/",
 		"/upgrade_aquatic:pike_spawn_egg/",
 		"/upgrade_aquatic:thrasher_spawn_egg/",
+		"/vinery:mule_spawn_egg/",
+		"/vinery:wandering_winemaker_spawn_egg/",
 		"/witherstormmod:sickened_bee_spawn_egg/",
 		"/witherstormmod:sickened_cat_spawn_egg/",
 		"/witherstormmod:sickened_chicken_spawn_egg/",
@@ -18227,8 +18130,6 @@
 		"/suppsquared:gold_candle_holder_green/",
 		"/minecraft:oak_wood/",
 		"/quark:oak_post/",
-		"/minecraft:stripped_oak_log/",
-		"/minecraft:stripped_oak_wood/",
 		"/quark:stripped_oak_post/",
 		"/minecraft:oak_planks/",
 		"/architects_palette:oak_boards/",
@@ -18265,8 +18166,6 @@
 		"/minecraft:birch_log/",
 		"/minecraft:birch_wood/",
 		"/quark:birch_post/",
-		"/minecraft:stripped_birch_log/",
-		"/minecraft:stripped_birch_wood/",
 		"/quark:stripped_birch_post/",
 		"/minecraft:birch_planks/",
 		"/architects_palette:birch_boards/",
@@ -18303,8 +18202,6 @@
 		"/minecraft:spruce_log/",
 		"/minecraft:spruce_wood/",
 		"/quark:spruce_post/",
-		"/minecraft:stripped_spruce_log/",
-		"/minecraft:stripped_spruce_wood/",
 		"/quark:stripped_spruce_post/",
 		"/minecraft:spruce_planks/",
 		"/architects_palette:spruce_boards/",
@@ -18341,8 +18238,6 @@
 		"/minecraft:jungle_log/",
 		"/minecraft:jungle_wood/",
 		"/quark:jungle_post/",
-		"/minecraft:stripped_jungle_log/",
-		"/minecraft:stripped_jungle_wood/",
 		"/quark:stripped_jungle_post/",
 		"/minecraft:jungle_planks/",
 		"/architects_palette:jungle_boards/",
@@ -18379,8 +18274,6 @@
 		"/minecraft:acacia_log/",
 		"/minecraft:acacia_wood/",
 		"/quark:acacia_post/",
-		"/minecraft:stripped_acacia_log/",
-		"/minecraft:stripped_acacia_wood/",
 		"/quark:stripped_acacia_post/",
 		"/minecraft:acacia_planks/",
 		"/architects_palette:acacia_boards/",
@@ -18417,8 +18310,6 @@
 		"/minecraft:dark_oak_log/",
 		"/minecraft:dark_oak_wood/",
 		"/quark:dark_oak_post/",
-		"/minecraft:stripped_dark_oak_log/",
-		"/minecraft:stripped_dark_oak_wood/",
 		"/quark:stripped_dark_oak_post/",
 		"/minecraft:dark_oak_planks/",
 		"/architects_palette:dark_oak_boards/",
@@ -18455,8 +18346,6 @@
 		"/minecraft:mangrove_log/",
 		"/minecraft:mangrove_wood/",
 		"/quark:mangrove_post/",
-		"/minecraft:stripped_mangrove_log/",
-		"/minecraft:stripped_mangrove_wood/",
 		"/quark:stripped_mangrove_post/",
 		"/minecraft:mangrove_planks/",
 		"/architects_palette:mangrove_boards/",
@@ -18494,8 +18383,6 @@
 		"/minecraft:cherry_log/",
 		"/minecraft:cherry_wood/",
 		"/quark:cherry_post/",
-		"/minecraft:stripped_cherry_log/",
-		"/minecraft:stripped_cherry_wood/",
 		"/quark:stripped_cherry_post/",
 		"/minecraft:cherry_planks/",
 		"/quark:cherry_bookshelf/",
@@ -18529,7 +18416,6 @@
 		"/minecraft:cherry_boat/",
 		"/minecraft:bamboo_block/",
 		"/quark:bamboo_post/",
-		"/minecraft:stripped_bamboo_block/",
 		"/quark:stripped_bamboo_post/",
 		"/minecraft:bamboo_planks/",
 		"/minecraft:bamboo_mosaic/",
@@ -18568,8 +18454,6 @@
 		"/ecologics:coconut_log/",
 		"/ecologics:coconut_wood/",
 		"/everycomp:q\\/ecologics/coconut_post/",
-		"/ecologics:stripped_coconut_log/",
-		"/ecologics:stripped_coconut_wood/",
 		"/everycomp:q\\/ecologics/stripped_coconut_post/",
 		"/ecologics:coconut_planks/",
 		"/everycomp:ap\\/ecologics/coconut_boards/",
@@ -18606,8 +18490,6 @@
 		"/ecologics:walnut_log/",
 		"/ecologics:walnut_wood/",
 		"/everycomp:q\\/ecologics/walnut_post/",
-		"/ecologics:stripped_walnut_log/",
-		"/ecologics:stripped_walnut_wood/",
 		"/everycomp:q\\/ecologics/stripped_walnut_post/",
 		"/ecologics:walnut_planks/",
 		"/everycomp:ap\\/ecologics/walnut_boards/",
@@ -18643,7 +18525,6 @@
 		"/ecologics:walnut_boat/",
 		"/botania:livingwood_log/",
 		"/everycomp:q\\/botania/livingwood_post/",
-		"/botania:stripped_livingwood_log/",
 		"/everycomp:q\\/botania/stripped_livingwood_post/",
 		"/botania:livingwood_planks/",
 		"/everycomp:ap\\/botania/livingwood_boards/",
@@ -18672,7 +18553,6 @@
 		"/supplementaries:botania\\/sign_post_livingwood/",
 		"/botania:dreamwood_log/",
 		"/everycomp:q\\/botania/dreamwood_post/",
-		"/botania:stripped_dreamwood_log/",
 		"/everycomp:q\\/botania/stripped_dreamwood_post/",
 		"/botania:dreamwood_planks/",
 		"/everycomp:ap\\/botania/dreamwood_boards/",
@@ -18702,8 +18582,6 @@
 		"/window_box:chthonic_yew_log/",
 		"/window_box:chthonic_yew_wood/",
 		"/everycomp:q\\/window_box/chthonic_yew_post/",
-		"/window_box:stripped_chthonic_yew_log/",
-		"/window_box:stripped_chthonic_yew_wood/",
 		"/everycomp:q\\/window_box/stripped_chthonic_yew_post/",
 		"/window_box:chthonic_yew_planks/",
 		"/everycomp:ap\\/window_box/chthonic_yew_boards/",
@@ -18740,8 +18618,6 @@
 		"/window_box:alfthorne_log/",
 		"/window_box:alfthorne_wood/",
 		"/everycomp:q\\/window_box/alfthorne_post/",
-		"/window_box:stripped_alfthorne_log/",
-		"/window_box:stripped_alfthorne_wood/",
 		"/everycomp:q\\/window_box/stripped_alfthorne_post/",
 		"/window_box:alfthorne_planks/",
 		"/everycomp:ap\\/window_box/alfthorne_boards/",
@@ -18835,8 +18711,6 @@
 		"/supplementaries:evilcraft\\/sign_post_undead/",
 		"/enhanced_mushrooms:mushroom_hyphae/",
 		"/everycomp:q\\/enhanced_mushrooms/mushroom_post/",
-		"/enhanced_mushrooms:stripped_mushroom_stem/",
-		"/enhanced_mushrooms:stripped_mushroom_hyphae/",
 		"/everycomp:q\\/enhanced_mushrooms/stripped_mushroom_post/",
 		"/enhanced_mushrooms:mushroom_planks/",
 		"/enhanced_mushrooms:mushroom_bookshelf/",
@@ -18871,8 +18745,6 @@
 		"/quark:azalea_log/",
 		"/quark:azalea_wood/",
 		"/quark:azalea_post/",
-		"/quark:stripped_azalea_log/",
-		"/quark:stripped_azalea_wood/",
 		"/quark:stripped_azalea_post/",
 		"/quark:azalea_planks/",
 		"/everycomp:ap\\/quark/azalea_boards/",
@@ -18913,8 +18785,6 @@
 		"/alexscaves:thornwood_log/",
 		"/alexscaves:thornwood_wood/",
 		"/everycomp:q\\/alexscaves/thornwood_post/",
-		"/alexscaves:stripped_thornwood_log/",
-		"/alexscaves:stripped_thornwood_wood/",
 		"/everycomp:q\\/alexscaves/stripped_thornwood_post/",
 		"/alexscaves:thornwood_planks/",
 		"/everycomp:ap\\/alexscaves/thornwood_boards/",
@@ -18951,8 +18821,6 @@
 		"/alexscaves:pewen_log/",
 		"/alexscaves:pewen_wood/",
 		"/everycomp:q\\/alexscaves/pewen_post/",
-		"/alexscaves:stripped_pewen_log/",
-		"/alexscaves:stripped_pewen_wood/",
 		"/everycomp:q\\/alexscaves/stripped_pewen_post/",
 		"/alexscaves:pewen_planks/",
 		"/everycomp:ap\\/alexscaves/pewen_boards/",
@@ -18989,25 +18857,37 @@
 		"/quark:blossom_log/",
 		"/quark:blossom_wood/",
 		"/quark:blossom_post/",
-		"/quark:stripped_blossom_log/",
-		"/quark:stripped_blossom_wood/",
 		"/quark:stripped_blossom_post/",
 		"/quark:blossom_planks/",
+		"/everycomp:ap\\/quark/blossom_boards/",
 		"/quark:blossom_bookshelf/",
 		"/quark:blossom_bookshelf/",
+		"/everycomp:hc\\/quark/blossom_bench/",
+		"/everycomp:hc\\/quark/blossom_chair/",
+		"/everycomp:hc\\/quark/blossom_couch/",
+		"/everycomp:hc\\/quark/blossom_dining_bench/",
+		"/everycomp:hc\\/quark/blossom_side_table/",
+		"/everycomp:hc\\/quark/blossom_desk/",
+		"/everycomp:hc\\/quark/blossom_nightstand/",
+		"/everycomp:hc\\/quark/blossom_table/",
+		"/everycomp:hc\\/quark/blossom_counter/",
+		"/everycomp:fd\\/quark/blossom_cabinet/",
 		"/quark:blossom_chest/",
 		"/quark:blossom_chest/",
+		"/everycomp:hc\\/quark/blossom_fancy_bed/",
 		"/quark:blossom_planks_stairs/",
 		"/quark:blossom_planks_slab/",
 		"/quark:blossom_planks_slab/",
 		"/quark:blossom_planks_vertical_slab/",
 		"/suppsquared:quark\\/item_shelf_blossom/",
 		"/quark:blossom_fence/",
+		"/everycomp:ap\\/quark/blossom_railing/",
 		"/quark:blossom_fence_gate/",
 		"/quark:blossom_door/",
 		"/quark:blossom_trapdoor/",
 		"/quark:blossom_ladder/",
 		"/quark:blossom_ladder/",
+		"/everycomp:hnhome\\/quark/blossom_lattice/",
 		"/quark:blossom_pressure_plate/",
 		"/quark:blossom_button/",
 		"/quark:blossom_sign/",
@@ -19017,25 +18897,37 @@
 		"/quark:ancient_log/",
 		"/quark:ancient_wood/",
 		"/quark:ancient_post/",
-		"/quark:stripped_ancient_log/",
-		"/quark:stripped_ancient_wood/",
 		"/quark:stripped_ancient_post/",
 		"/quark:ancient_planks/",
+		"/everycomp:ap\\/quark/ancient_boards/",
 		"/quark:ancient_bookshelf/",
 		"/quark:ancient_bookshelf/",
+		"/everycomp:hc\\/quark/ancient_bench/",
+		"/everycomp:hc\\/quark/ancient_chair/",
+		"/everycomp:hc\\/quark/ancient_couch/",
+		"/everycomp:hc\\/quark/ancient_dining_bench/",
+		"/everycomp:hc\\/quark/ancient_side_table/",
+		"/everycomp:hc\\/quark/ancient_desk/",
+		"/everycomp:hc\\/quark/ancient_nightstand/",
+		"/everycomp:hc\\/quark/ancient_table/",
+		"/everycomp:hc\\/quark/ancient_counter/",
+		"/everycomp:fd\\/quark/ancient_cabinet/",
 		"/quark:ancient_chest/",
 		"/quark:ancient_chest/",
+		"/everycomp:hc\\/quark/ancient_fancy_bed/",
 		"/quark:ancient_planks_stairs/",
 		"/quark:ancient_planks_slab/",
 		"/quark:ancient_planks_slab/",
 		"/quark:ancient_planks_vertical_slab/",
 		"/suppsquared:quark\\/item_shelf_ancient/",
 		"/quark:ancient_fence/",
+		"/everycomp:ap\\/quark/ancient_railing/",
 		"/quark:ancient_fence_gate/",
 		"/quark:ancient_door/",
 		"/quark:ancient_trapdoor/",
 		"/quark:ancient_ladder/",
 		"/quark:ancient_ladder/",
+		"/everycomp:hnhome\\/quark/ancient_lattice/",
 		"/quark:ancient_pressure_plate/",
 		"/quark:ancient_button/",
 		"/quark:ancient_sign/",
@@ -19045,8 +18937,6 @@
 		"/snifferplus:stone_pine_log/",
 		"/snifferplus:stone_pine_wood/",
 		"/everycomp:q\\/snifferplus/stone_pine_post/",
-		"/snifferplus:stripped_stone_pine_log/",
-		"/snifferplus:stripped_stone_pine_wood/",
 		"/everycomp:q\\/snifferplus/stripped_stone_pine_post/",
 		"/snifferplus:stone_pine_planks/",
 		"/everycomp:ap\\/snifferplus/stone_pine_boards/",
@@ -19082,7 +18972,6 @@
 		"/snifferplus:stone_pine_boat/",
 		"/upgrade_aquatic:driftwood_log/",
 		"/upgrade_aquatic:driftwood/",
-		"/upgrade_aquatic:stripped_driftwood_log/",
 		"/upgrade_aquatic:stripped_driftwood/",
 		"/upgrade_aquatic:driftwood_planks/",
 		"/everycomp:ap\\/upgrade_aquatic/driftwood_boards/",
@@ -19148,8 +19037,6 @@
 		"/born_in_chaos_v1:scorched_log/",
 		"/born_in_chaos_v1:scorched_wood/",
 		"/everycomp:q\\/born_in_chaos_v1/scorched_post/",
-		"/born_in_chaos_v1:stripped_scorched_log/",
-		"/born_in_chaos_v1:stripped_scorched_wood/",
 		"/everycomp:q\\/born_in_chaos_v1/stripped_scorched_post/",
 		"/born_in_chaos_v1:scorched_planks/",
 		"/everycomp:ap\\/born_in_chaos_v1/scorched_boards/",
@@ -19181,8 +19068,6 @@
 		"/supplementaries:born_in_chaos_v1\\/sign_post_scorched/",
 		"/upgrade_aquatic:river_log/",
 		"/upgrade_aquatic:river_wood/",
-		"/upgrade_aquatic:stripped_river_log/",
-		"/upgrade_aquatic:stripped_river_wood/",
 		"/upgrade_aquatic:river_planks/",
 		"/everycomp:ap\\/upgrade_aquatic/river_boards/",
 		"/upgrade_aquatic:river_bookshelf/",
@@ -19218,8 +19103,6 @@
 		"/minecraft:crimson_stem/",
 		"/minecraft:crimson_hyphae/",
 		"/quark:crimson_post/",
-		"/minecraft:stripped_crimson_stem/",
-		"/minecraft:stripped_crimson_hyphae/",
 		"/quark:stripped_crimson_post/",
 		"/minecraft:crimson_planks/",
 		"/architects_palette:crimson_boards/",
@@ -19255,8 +19138,6 @@
 		"/minecraft:warped_stem/",
 		"/minecraft:warped_hyphae/",
 		"/quark:warped_post/",
-		"/minecraft:stripped_warped_stem/",
-		"/minecraft:stripped_warped_hyphae/",
 		"/quark:stripped_warped_post/",
 		"/minecraft:warped_planks/",
 		"/architects_palette:warped_boards/",
@@ -19290,7 +19171,6 @@
 		"/supplementaries:sign_post_warped/",
 		"/minecraft:warped_hanging_sign/",
 		"/mynethersdelight:powdery_block/",
-		"/mynethersdelight:stripped_powdery_block/",
 		"/mynethersdelight:powdery_planks/",
 		"/mynethersdelight:powdery_mosaic/",
 		"/everycomp:ap\\/mynethersdelight/powdery_boards/",
@@ -19325,7 +19205,6 @@
 		"/supplementaries:mynethersdelight\\/sign_post_powdery/",
 		"/mynethersdelight:powdery_hanging_sign/",
 		"/netherexp:smokestalk_block/",
-		"/netherexp:stripped_smokestalk_block/",
 		"/netherexp:smokestalk_planks/",
 		"/everycomp:ap\\/netherexp/smokestalk_boards/",
 		"/everycomp:q\\/netherexp/smokestalk_bookshelf/",
@@ -19360,8 +19239,6 @@
 		"/architects_palette:twisted_log/",
 		"/architects_palette:twisted_wood/",
 		"/everycomp:q\\/architects_palette/twisted_post/",
-		"/architects_palette:stripped_twisted_log/",
-		"/architects_palette:stripped_twisted_wood/",
 		"/everycomp:q\\/architects_palette/stripped_twisted_post/",
 		"/architects_palette:twisted_planks/",
 		"/architects_palette:twisted_boards/",
@@ -19393,8 +19270,6 @@
 		"/architects_palette:twisted_button/",
 		"/supplementaries:architects_palette\\/sign_post_twisted/",
 		"/everycomp:q\\/netherexp/claret_post/",
-		"/netherexp:stripped_claret_stem/",
-		"/netherexp:stripped_claret_hyphae/",
 		"/everycomp:q\\/netherexp/stripped_claret_post/",
 		"/netherexp:claret_planks/",
 		"/everycomp:ap\\/netherexp/claret_boards/",
@@ -19430,8 +19305,6 @@
 		"/aether:skyroot_log/",
 		"/aether:skyroot_wood/",
 		"/everycomp:q\\/aether/skyroot_post/",
-		"/aether:stripped_skyroot_log/",
-		"/aether:stripped_skyroot_wood/",
 		"/everycomp:q\\/aether/stripped_skyroot_post/",
 		"/aether:skyroot_planks/",
 		"/everycomp:ap\\/aether/skyroot_boards/",
@@ -19468,8 +19341,6 @@
 		"/aether_redux:fieldsproot_log/",
 		"/aether_redux:fieldsproot_wood/",
 		"/everycomp:q\\/aether_redux/fieldsproot_post/",
-		"/aether_redux:stripped_fieldsproot_log/",
-		"/aether_redux:stripped_fieldsproot_wood/",
 		"/everycomp:q\\/aether_redux/stripped_fieldsproot_post/",
 		"/aether_redux:fieldsproot_planks/",
 		"/everycomp:ap\\/aether_redux/fieldsproot_boards/",
@@ -19506,8 +19377,6 @@
 		"/aether_redux:crystal_log/",
 		"/aether_redux:crystal_wood/",
 		"/everycomp:q\\/aether_redux/crystal_post/",
-		"/aether_redux:stripped_crystal_log/",
-		"/aether_redux:stripped_crystal_wood/",
 		"/everycomp:q\\/aether_redux/stripped_crystal_post/",
 		"/aether_redux:crystal_planks/",
 		"/everycomp:ap\\/aether_redux/crystal_boards/",
@@ -19544,8 +19413,6 @@
 		"/aether_redux:glacia_log/",
 		"/aether_redux:glacia_wood/",
 		"/everycomp:q\\/aether_redux/glacia_post/",
-		"/aether_redux:stripped_glacia_log/",
-		"/aether_redux:stripped_glacia_wood/",
 		"/everycomp:q\\/aether_redux/stripped_glacia_post/",
 		"/aether_redux:glacia_planks/",
 		"/everycomp:ap\\/aether_redux/glacia_boards/",
@@ -19582,8 +19449,6 @@
 		"/aether_redux:cloudcap_stem/",
 		"/aether_redux:cloudcap_hyphae/",
 		"/everycomp:q\\/aether_redux/cloudcap_post/",
-		"/aether_redux:stripped_cloudcap_stem/",
-		"/aether_redux:stripped_cloudcap_hyphae/",
 		"/everycomp:q\\/aether_redux/stripped_cloudcap_post/",
 		"/aether_redux:cloudcap_planks/",
 		"/everycomp:ap\\/aether_redux/cloudcap_boards/",
@@ -19620,8 +19485,6 @@
 		"/aether_redux:blightwillow_log/",
 		"/aether_redux:blightwillow_wood/",
 		"/everycomp:q\\/aether_redux/blightwillow_post/",
-		"/aether_redux:stripped_blightwillow_log/",
-		"/aether_redux:stripped_blightwillow_wood/",
 		"/everycomp:q\\/aether_redux/stripped_blightwillow_post/",
 		"/aether_redux:blightwillow_planks/",
 		"/everycomp:ap\\/aether_redux/blightwillow_boards/",
@@ -19752,8 +19615,6 @@
 		"/phantasm:pream_log/",
 		"/phantasm:pream_wood/",
 		"/everycomp:q\\/phantasm/pream_post/",
-		"/phantasm:stripped_pream_log/",
-		"/phantasm:stripped_pream_wood/",
 		"/everycomp:q\\/phantasm/stripped_pream_post/",
 		"/phantasm:pream_planks/",
 		"/everycomp:ap\\/phantasm/pream_boards/",
@@ -19789,8 +19650,6 @@
 		"/witherstormmod:tainted_log/",
 		"/witherstormmod:tainted_wood/",
 		"/everycomp:q\\/witherstormmod/tainted_post/",
-		"/witherstormmod:stripped_tainted_log/",
-		"/witherstormmod:stripped_tainted_wood/",
 		"/everycomp:q\\/witherstormmod/stripped_tainted_post/",
 		"/witherstormmod:tainted_planks/",
 		"/everycomp:ap\\/witherstormmod/tainted_boards/",
@@ -19825,8 +19684,6 @@
 		"/ancient_aether:highsproot_log/",
 		"/ancient_aether:highsproot_wood/",
 		"/everycomp:q\\/ancient_aether/highsproot_post/",
-		"/ancient_aether:stripped_highsproot_log/",
-		"/ancient_aether:stripped_highsproot_wood/",
 		"/everycomp:q\\/ancient_aether/stripped_highsproot_post/",
 		"/ancient_aether:highsproot_planks/",
 		"/everycomp:ap\\/ancient_aether/highsproot_boards/",
@@ -19863,8 +19720,6 @@
 		"/twilightforest:mangrove_log/",
 		"/twilightforest:mangrove_wood/",
 		"/quark:mangrove_post/",
-		"/twilightforest:stripped_mangrove_log/",
-		"/twilightforest:stripped_mangrove_wood/",
 		"/quark:stripped_mangrove_post/",
 		"/twilightforest:mangrove_planks/",
 		"/architects_palette:mangrove_boards/",
@@ -19903,8 +19758,6 @@
 		"/twilightforest:mining_log/",
 		"/twilightforest:mining_wood/",
 		"/everycomp:q\\/twilightforest/mining_post/",
-		"/twilightforest:stripped_mining_log/",
-		"/twilightforest:stripped_mining_wood/",
 		"/everycomp:q\\/twilightforest/stripped_mining_post/",
 		"/twilightforest:mining_planks/",
 		"/everycomp:ap\\/twilightforest/mining_boards/",
@@ -19938,11 +19791,42 @@
 		"/supplementaries:twilightforest\\/sign_post_mining/",
 		"/twilightforest:mining_hanging_sign/",
 		"/twilightforest:mining_boat/",
+		"/vinery:dark_cherry_log/",
+		"/vinery:dark_cherry_wood/",
+		"/everycomp:q\\/vinery/dark_cherry_post/",
+		"/everycomp:q\\/vinery/stripped_dark_cherry_post/",
+		"/vinery:dark_cherry_planks/",
+		"/everycomp:ap\\/vinery/dark_cherry_boards/",
+		"/everycomp:q\\/vinery/dark_cherry_bookshelf/",
+		"/everycomp:hc\\/vinery/dark_cherry_bench/",
+		"/everycomp:hc\\/vinery/dark_cherry_couch/",
+		"/everycomp:hc\\/vinery/dark_cherry_dining_bench/",
+		"/everycomp:hc\\/vinery/dark_cherry_side_table/",
+		"/everycomp:hc\\/vinery/dark_cherry_desk/",
+		"/everycomp:hc\\/vinery/dark_cherry_nightstand/",
+		"/everycomp:hc\\/vinery/dark_cherry_counter/",
+		"/everycomp:q\\/vinery/dark_cherry_chest/",
+		"/everycomp:hc\\/vinery/dark_cherry_fancy_bed/",
+		"/vinery:dark_cherry_stairs/",
+		"/vinery:dark_cherry_slab/",
+		"/v_slab_compat:vinery\\/dark_cherry_vertical_slab/",
+		"/suppsquared:vinery\\/item_shelf_dark_cherry/",
+		"/vinery:dark_cherry_fence/",
+		"/everycomp:ap\\/vinery/dark_cherry_railing/",
+		"/vinery:dark_cherry_fence_gate/",
+		"/vinery:dark_cherry_door/",
+		"/vinery:dark_cherry_trapdoor/",
+		"/everycomp:q\\/vinery/dark_cherry_ladder/",
+		"/vinery:dark_cherry_pressure_plate/",
+		"/vinery:dark_cherry_button/",
+		"/vinery:dark_cherry_sign/",
+		"/supplementaries:vinery\\/sign_post_dark_cherry/",
+		"/vinery:dark_cherry_hanging_sign/",
+		"/vinery:dark_cherry_boat/",
+		"/nethervinery:reinforced_warped_planks/",
 		"/twilightforest:canopy_log/",
 		"/twilightforest:canopy_wood/",
 		"/everycomp:q\\/twilightforest/canopy_post/",
-		"/twilightforest:stripped_canopy_log/",
-		"/twilightforest:stripped_canopy_wood/",
 		"/everycomp:q\\/twilightforest/stripped_canopy_post/",
 		"/twilightforest:canopy_planks/",
 		"/everycomp:ap\\/twilightforest/canopy_boards/",
@@ -19976,11 +19860,11 @@
 		"/supplementaries:twilightforest\\/sign_post_canopy/",
 		"/twilightforest:canopy_hanging_sign/",
 		"/twilightforest:canopy_boat/",
+		"/nethervinery:crested_crimson_planks/",
+		"/nethervinery:crested_warped_planks/",
 		"/twilightforest:twilight_oak_log/",
 		"/twilightforest:twilight_oak_wood/",
 		"/everycomp:q\\/twilightforest/twilight_oak_post/",
-		"/twilightforest:stripped_twilight_oak_log/",
-		"/twilightforest:stripped_twilight_oak_wood/",
 		"/everycomp:q\\/twilightforest/stripped_twilight_oak_post/",
 		"/twilightforest:twilight_oak_planks/",
 		"/everycomp:ap\\/twilightforest/twilight_oak_boards/",
@@ -20017,8 +19901,6 @@
 		"/twilightforest:dark_log/",
 		"/twilightforest:dark_wood/",
 		"/everycomp:q\\/twilightforest/dark_post/",
-		"/twilightforest:stripped_dark_log/",
-		"/twilightforest:stripped_dark_wood/",
 		"/everycomp:q\\/twilightforest/stripped_dark_post/",
 		"/twilightforest:dark_planks/",
 		"/everycomp:ap\\/twilightforest/dark_boards/",
@@ -20055,8 +19937,6 @@
 		"/twilightforest:transformation_log/",
 		"/twilightforest:transformation_wood/",
 		"/everycomp:q\\/twilightforest/transformation_post/",
-		"/twilightforest:stripped_transformation_log/",
-		"/twilightforest:stripped_transformation_wood/",
 		"/everycomp:q\\/twilightforest/stripped_transformation_post/",
 		"/twilightforest:transformation_planks/",
 		"/everycomp:ap\\/twilightforest/transformation_boards/",
@@ -20090,11 +19970,10 @@
 		"/supplementaries:twilightforest\\/sign_post_transformation/",
 		"/twilightforest:transformation_hanging_sign/",
 		"/twilightforest:transformation_boat/",
+		"/nethervinery:reinforced_crimson_planks/",
 		"/ancient_aether:sakura_log/",
 		"/ancient_aether:sakura_wood/",
 		"/everycomp:q\\/ancient_aether/sakura_post/",
-		"/ancient_aether:stripped_sakura_log/",
-		"/ancient_aether:stripped_sakura_wood/",
 		"/everycomp:q\\/ancient_aether/stripped_sakura_post/",
 		"/ancient_aether:sakura_planks/",
 		"/everycomp:ap\\/ancient_aether/sakura_boards/",
@@ -20131,8 +20010,6 @@
 		"/twilightforest:time_log/",
 		"/twilightforest:time_wood/",
 		"/everycomp:q\\/twilightforest/time_post/",
-		"/twilightforest:stripped_time_log/",
-		"/twilightforest:stripped_time_wood/",
 		"/everycomp:q\\/twilightforest/stripped_time_post/",
 		"/twilightforest:time_planks/",
 		"/everycomp:ap\\/twilightforest/time_boards/",
@@ -20168,8 +20045,6 @@
 		"/twilightforest:time_boat/",
 		"/twilightforest:sorting_log/",
 		"/twilightforest:sorting_wood/",
-		"/twilightforest:stripped_sorting_log/",
-		"/twilightforest:stripped_sorting_wood/",
 		"/twilightforest:sorting_planks/",
 		"/twilightdelight:sorting_cabinet/",
 		"/twilightforest:sorting_chest/",
@@ -20289,6 +20164,7 @@
 		"/v_slab_compat:galosphere\\/lumiere_brick_vertical_slab/",
 		"/v_slab_compat:upgrade_aquatic\\/silk_coralstone_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/shingle_vertical_slab/",
+		"/v_slab_compat:vinery\\/coarse_dirt_vertical_slab/",
 		"/v_slab_compat:create\\/waxed_copper_shingle_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/lime_shingle_vertical_slab/",
 		"/v_slab_compat:botania\\/black_pavement_vertical_slab/",
@@ -20367,6 +20243,7 @@
 		"/v_slab_compat:the_bumblezone\\/ancient_wax_diamond_vertical_slab/",
 		"/v_slab_compat:create\\/small_deepslate_brick_vertical_slab/",
 		"/v_slab_compat:galosphere\\/polished_pink_salt_vertical_slab/",
+		"/v_slab_compat:vinery\\/dirt_vertical_slab/",
 		"/v_slab_compat:ancient_aether\\/carved_tile_vertical_slab/",
 		"/v_slab_compat:alexscaves\\/smooth_coprolith_vertical_slab/",
 		"/v_slab_compat:naturalist\\/smooth_shellstone_vertical_slab/",
@@ -20388,6 +20265,7 @@
 		"/v_slab_compat:create\\/waxed_weathered_copper_shingle_vertical_slab/",
 		"/v_slab_compat:ars_nouveau\\/sourcestone_basketweave_vertical_slab/",
 		"/v_slab_compat:unusualend\\/gloopslate_bricks_vertical_slab/",
+		"/v_slab_compat:vinery\\/grass_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/red_shingle_vertical_slab/",
 		"/v_slab_compat:create\\/cut_veridium_brick_vertical_slab/",
 		"/v_slab_compat:ars_nouveau\\/smooth_sourcestone_mosaic_vertical_slab/",
@@ -20516,6 +20394,7 @@
 		"/v_slab_compat:phantasm\\/cirite_bricks_vertical_slab/",
 		"/v_slab_compat:botania\\/polished_livingrock_vertical_slab/",
 		"/v_slab_compat:alexscaves\\/cinder_block_vertical_slab/",
+		"/v_slab_compat:vinery\\/dirt_path_vertical_slab/",
 		"/v_slab_compat:create\\/cut_ochrum_vertical_slab/",
 		"/v_slab_compat:supplementaries\\/blackstone_tile_vertical_slab/",
 		"/v_slab_compat:rediscovered\\/dirt_vertical_slab/",
@@ -20523,6 +20402,7 @@
 		"/v_slab_compat:upgrade_aquatic\\/luminous_prismarine_vertical_slab/",
 		"/v_slab_compat:botania\\/shimmerwood_planks_vertical_slab/",
 		"/v_slab_compat:upgrade_aquatic\\/prismarine_coralstone_vertical_slab/",
+		"/v_slab_compat:vinery\\/loam_vertical_slab/",
 		"/v_slab_compat:botania\\/livingrock_vertical_slab/",
 		"/v_slab_compat:botania\\/green_pavement_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/green_terracotta_brick_vertical_slab/",

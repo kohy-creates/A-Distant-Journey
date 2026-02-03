@@ -17,11 +17,11 @@
   "processingTime": 400,
   "results": [
     {
-      "item": "minecraft:raw_osmium"
+      "item": "mythicmetals:raw_osmium"
     },
     {
       "chance": 0.75,
-      "item": "minecraft:raw_osmium"
+      "item": "mythicmetals:raw_osmium"
     },
     {
       "chance": 0.75,

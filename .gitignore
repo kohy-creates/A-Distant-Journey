@@ -111,3 +111,9 @@ spiffy_instance_data/
 /immersive_paintings/
 /cachedImages/
 /cache/
+lightspeed-cache/
+quickskin-cache/
+quickskin/uploades/
+config/skin-preferences.json
+config/quickskin-client.json
+emi.json

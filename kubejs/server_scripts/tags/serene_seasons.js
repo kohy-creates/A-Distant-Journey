@@ -20,6 +20,7 @@ const crops = {
 		'ars_nouveau:green_archwood_sapling',
 		'rediscovered:ancient_cherry_sapling',
 		'cherry_sapling',
+		'vinery:dark_cherry_sapling',
 		'ancient_aether:sakura_sapling',
 		'evilcraft:undead_sapling',
 		'snifferplus:stone_pine_sapling',
@@ -32,6 +33,7 @@ const crops = {
 	],
 	summer: [
 		'quark:yellow_blossom_sapling',
+		'vinery:dark_cherry_sapling',
 		'ars_elemental:yellow_archwood_sapling',
 		'rediscovered:ancient_cherry_sapling',
 		'cherry_sapling',
@@ -90,11 +92,13 @@ ServerEvents.tags('item', tags => {
 	])
 	tags.add('sereneseasons:spring_crops', [
 		crops.spring,
+		'vinery:cherry',
 		'ars_nouveau:magebloom'
 	])
 	tags.add('sereneseasons:summer_crops', [
 		crops.summer,
 		'minecraft:potato',
+		'vinery:cherry',
 		'supplementaries:flax',
 		'supplementaries:flax_seeds',
 		'ars_nouveau:magebloom'

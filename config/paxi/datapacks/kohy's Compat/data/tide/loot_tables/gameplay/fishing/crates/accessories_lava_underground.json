@@ -6,27 +6,27 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "confluence:cross_necklace",
+					"name": "terra_curio:cross_necklace",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:putrid_scent",
+					"name": "terra_curio:putrid_scent",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:panic_necklace",
+					"name": "terra_curio:panic_necklace",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:star_cloak",
+					"name": "terra_curio:star_cloak",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:titan_glove",
+					"name": "terra_curio:titan_glove",
 					"weight": 2
 				}
 			]

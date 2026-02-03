@@ -25,7 +25,7 @@
 	#        "biomesoplenty:redwood"		COMMENT: exclude redwood from Wood Mod for any module
 	#    ]
 	#
-	blacklist = ["ecologics:azalea", "ecologics:flowering_azalea", "quark:blossom", "quark:ancient", "twilightforest:mangrove", "twilightforest:sorting"]
+	blacklist = ["ecologics:azalea", "ecologics:flowering_azalea", "twilightforest:sorting"]
 
 [leavestype]
 	#Exclude LeavesType from all of Modules
@@ -42,7 +42,7 @@
 	#    ]
 	#    NOTE: This excluded one entryset from all WoodTypes/LeavesTypes
 	#
-	blacklist = ["quark:hedge", "quark:vertical_slab", "quark:vertical_planks", "quark:hollow_log", "quark:leaf_carpet", "handcrafted:corner_trim", "handcrafted:pillar_trim", "handcrafted:cupboard", "handcrafted:shelf", "handcrafted:drawer", "create:window", "create:window_pane", "hearth_and_home:vertical_trim", "hearth_and_home:parquet", "hearth_and_home:trim", "hearth_and_home:sanded_wood", "functionalstorage:1", "functionalstorage:2", "functionalstorage:4", "rediscovered:chair", "rediscovered:table", "twilightforest:hollow_log_horizontal", "twilightforest:hollow_log_vertical", "twilightforest:banister", "twilightforest:hollow_log_climbable", "architects_palette:board_stairs", "architects_palette:board_slab", "architects_palette:board_wall"]
+	blacklist = ["quark:hedge", "quark:vertical_slab", "quark:vertical_planks", "quark:hollow_log", "quark:leaf_carpet", "handcrafted:corner_trim", "handcrafted:pillar_trim", "handcrafted:cupboard", "handcrafted:shelf", "handcrafted:drawer", "create:window", "create:window_pane", "hearth_and_home:vertical_trim", "hearth_and_home:parquet", "hearth_and_home:trim", "hearth_and_home:sanded_wood", "functionalstorage:1", "functionalstorage:2", "functionalstorage:4", "rediscovered:chair", "rediscovered:table", "twilightforest:hollow_log_horizontal", "twilightforest:hollow_log_vertical", "twilightforest:banister", "twilightforest:hollow_log_climbable", "architects_palette:board_stairs", "architects_palette:board_slab", "architects_palette:board_wall", "oreberriesreplanted:vat"]
 
 [module]
 	#Exclude Module From Wood-Good, Stone-Zone & Gems-Realm
@@ -69,5 +69,5 @@
 	#        ".*fir_chest",											COMMENT: .* is an RegEx, so it exclude fir_chest from any Supported-Mods & Wood-Mods
 	#    ]
 	#
-	blacklist = ["quark/twilightforest/mining_chest", "quark/twilightforest/mining_trapped_chest", "quark/twilightforest/transformation_chest", "quark/twilightforest/transformation_trapped_chest", "quark/twilightforest/twilight_oak_chest", "quark/twilightforest/twilight_oak_trapped_chest", "quark/twilightforest/time_chest", "quark/twilightforest/time_trapped_chest", "quark/twilightforest/sorting_chest", "quark/twilightforest/sorting_trapped_chest", "quark/twilightforest/canopy_chest", "quark/twilightforest/canopy_trapped_chest", "quark/twilightforest/dark_chest", "quark/twilightforest/dark_trapped_chest", "farmersdelight/twilightforest/.*", "farmersdelight/alexscaves/.*", "quark/upgrade_aquatic/.*"]
+	blacklist = ["quark/twilightforest/mining_chest", "quark/twilightforest/mining_trapped_chest", "quark/twilightforest/transformation_chest", "quark/twilightforest/transformation_trapped_chest", "quark/twilightforest/twilight_oak_chest", "quark/twilightforest/twilight_oak_trapped_chest", "quark/twilightforest/time_chest", "quark/twilightforest/time_trapped_chest", "quark/twilightforest/sorting_chest", "quark/twilightforest/sorting_trapped_chest", "quark/twilightforest/canopy_chest", "quark/twilightforest/canopy_trapped_chest", "quark/twilightforest/dark_chest", "quark/twilightforest/dark_trapped_chest", "quark/twilightforest/mangrove_chest", "quark/twilightforest/mangrove_trapped_chest", "farmersdelight/twilightforest/.*", "farmersdelight/alexscaves/.*", "quark/upgrade_aquatic/.*"]
 

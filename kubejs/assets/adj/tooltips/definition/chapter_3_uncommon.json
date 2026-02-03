@@ -1,0 +1,8 @@
+{
+	"priority": 50,
+	"style": "adj:chapter_3_uncommon",
+	"filter": {
+		"type": "obscure_tooltips:rarity",
+		"rarity": "chapter_3_uncommon"
+	}
+}

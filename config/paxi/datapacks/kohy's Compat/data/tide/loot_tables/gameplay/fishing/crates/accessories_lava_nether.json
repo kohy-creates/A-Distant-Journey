@@ -6,17 +6,17 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "confluence:magma_stone",
+					"name": "terra_curio:magma_stone",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:lava_charm",
+					"name": "terra_curio:lava_charm",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:obsidian_rose",
+					"name": "terra_curio:obsidian_rose",
 					"weight": 2
 				}
 			]

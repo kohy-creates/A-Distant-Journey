@@ -6,27 +6,27 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "confluence:band_of_regeneration",
+					"name": "terra_curio:band_of_regeneration",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:hermes_boots",
+					"name": "terra_curio:hermes_boots",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:ancient_chisel",
+					"name": "terra_curio:ancient_chisel",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:climbing_claws",
+					"name": "terra_curio:climbing_claws",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"name": "confluence:cloud_in_a_bottle",
+					"name": "terra_curio:cloud_in_a_bottle",
 					"weight": 2
 				}
 			]

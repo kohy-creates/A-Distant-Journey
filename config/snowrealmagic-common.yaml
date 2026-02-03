@@ -9,7 +9,7 @@ snowSpawnMaxLightLevel: 9
 snowPersistMaxLightLevel: 11
 snowReduceFallDamage: true
 sustainGrassIfLayerMoreThanOne: true
-sneakSnowball: true
+sneakSnowball: false
 fancySnowOnUpperSlab: true
 mobSpawningMaxLayers: 8
 snow-cover:
@@ -26,7 +26,7 @@ accumulation:
 integration:
   accumulationWinterOnly: true
 debug:
-  weatherTickSlowness: 16
+  weatherTickSlowness: 14
   preventWorldgenLogSpam: true
   mobSpawningCommand: false
   skipSnowLoggingMushroom: true

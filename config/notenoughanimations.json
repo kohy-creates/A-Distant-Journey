@@ -59,9 +59,14 @@
   "freezingAnimation": true,
   "huggingAnimation": true,
   "narutoRunning": false,
-  "enableInWorldBookRendering": false,
   "disableLegSmoothing": false,
   "bowAnimation": "CUSTOM_V1",
   "customBowRotationLock": true,
-  "burningAnimation": true
+  "clampCrossbowAnimations": false,
+  "burningAnimation": true,
+  "hideItemsForTheseBows": [],
+  "mapHolding": [
+    "minecraft:filled_map",
+    "antiqueatlas:antique_atlas"
+  ]
 }

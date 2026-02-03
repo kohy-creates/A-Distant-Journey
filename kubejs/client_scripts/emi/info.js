@@ -203,7 +203,7 @@ JEIEvents.information(event => {
 	addInfo(['minecraft:ancient_debris',], [
 		'Spelunker Potions do not highlight Ancient Debris. To compensate, Debris generates slightly more frequently'
 	])
-	addInfo(['ancient_aether:valkyrum_ore', 'aether_redux:raw_valkyrum', 'aether_redux:raw_valkyrum_block', 'ancient_aether:valkyrum_ingot', 'ancient_aether:valkyrum_block'], [
+	addInfo(['ancient_aether:valkyrum_ore', 'aether_redux:raw_valkyrum', 'aether_redux:raw_valkyrum_block', 'ancient_aether:valkyrum', 'ancient_aether:valkyrum_block'], [
 		'Valkyrum generates in the lower parts of The Aether after killing Valkyrie Queen.'
 	])
 	// event.addItem(['majruszsdifficulty:enderium_shard_ore', 'majruszsdifficulty:enderium_ingot', 'majruszsdifficulty:enderium_block', 'majruszsdifficulty:enderium_shard'], [

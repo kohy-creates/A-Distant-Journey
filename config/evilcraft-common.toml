@@ -25,7 +25,7 @@
 
 	[worldgeneration.general]
 		#The spawn chance for loot chests in dark temples, set to zero to completely disable.
-		darkTempleChestChance = 0.15
+		darkTempleChestChance = 0.25
 		#Spawn extra silverfish blocks in all biomes.
 		extraSilverfish = false
 
@@ -115,11 +115,11 @@
 
 	[machine.spirit_reanimator]
 		#The required amount of ticks for each reanimation.
-		requiredTicks = 500
+		requiredTicks = 15000
 		#If the Box of Eternal Closure should be cleared after a revival.
 		clearBoxContents = true
 		#How much mB per tick this machine should consume.
-		mBPerTick = 5
+		mBPerTick = 15
 
 	[machine.entangled_chalice]
 		#If the fluid should be rendered statically. Fluids won't be shown fluently, but more efficiently.
@@ -153,7 +153,7 @@
 
 	[item.flesh_werewolf]
 		#Humanoid flesh will drop in a 1/X chance.
-		humanoidFleshDropChance = 5
+		humanoidFleshDropChance = 2
 
 	[item.flesh_humanoid]
 		#Humanoid flesh will drop in a 1/X chance.
@@ -221,7 +221,7 @@
 
 	[item.burning_gem_stone]
 		#How much damage this item can take.
-		maxDamage = 64
+		maxDamage = 250
 
 	[item.vein_sword]
 		#The multiply boost this sword has on the blood that is obtained.

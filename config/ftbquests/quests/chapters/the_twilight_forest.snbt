@@ -6,6 +6,14 @@
 	group: "4C4C64E64E42D01F"
 	icon: "twilightforest:hollow_oak_sapling"
 	id: "4BD2F76C7C70A2CC"
+	images: [{
+		height: 1.75d
+		image: "twilightforest:block/canopy_log_top"
+		rotation: 45.0d
+		width: 1.75d
+		x: 1.5d
+		y: -3.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -35,7 +43,7 @@
 		{
 			dependencies: ["3EAD28D06360BF09"]
 			id: "718E0AAC4FC76ECF"
-			subtitle: "Slay The Naga in its Maze"
+			subtitle: "Slay The Naga in its Maze, breaking the spell around the Lich's tower"
 			tasks: [{
 				entity: "twilightforest:naga"
 				icon: "twilightforest:naga_trophy"
@@ -46,6 +54,96 @@
 			}]
 			title: "Time to Even The Scales"
 			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3EAD28D06360BF09"]
+			icon_scale: 0.75d
+			id: "3A4CC32D572734A8"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Give Quest Ram what it's missing"
+			tasks: [{
+				id: "78F36F05DC7F5F81"
+				item: "twilightforest:quest_ram_trophy"
+				type: "item"
+			}]
+			title: "Consummate Baahs"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3EAD28D06360BF09"]
+			description: ["&7&lHINT: &r&bMagic Maps&r will show you a huge fragment of your surrounding area and highlight important structures in the Twilight Forest. If you don't want to spend an eternity walking around, it is &eTHE way&r."]
+			icon: "twilightforest:magic_map_focus"
+			id: "731EC9704C2561F1"
+			subtitle: "Craft a Magic Map to make everything infinitely easier to find"
+			tasks: [
+				{
+					id: "25EA9AB22427EE19"
+					item: "twilightforest:magic_map"
+					type: "item"
+				}
+				{
+					id: "580D86D940DDD68C"
+					item: "twilightforest:magic_map_focus"
+					type: "item"
+				}
+			]
+			title: "Twilight Positioning System"
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["718E0AAC4FC76ECF"]
+			id: "33DE618E8B49FC45"
+			tasks: [{
+				id: "69EB5DAD373D92D3"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["718E0AAC4FC76ECF"]
+			icon: {
+				Count: 1
+				id: "twilightforest:naga_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7581829B71266DB9"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a Naga armor set"
+			tasks: [
+				{
+					id: "1B3DD5F9EF1D7E83"
+					item: {
+						Count: 1
+						id: "twilightforest:naga_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D6A107EFCE4FC74"
+					item: {
+						Count: 1
+						id: "twilightforest:naga_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Naga Armorer"
+			x: 1.0d
 			y: -1.0d
 		}
 	]

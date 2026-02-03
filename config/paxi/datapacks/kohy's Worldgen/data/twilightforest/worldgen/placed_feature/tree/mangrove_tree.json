@@ -41,7 +41,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "minecraft:mangrove_propagule",
+          "Name": "twilightforest:mangrove_propagule",
           "Properties": {
             "stage": "0",
             "waterlogged": "false"

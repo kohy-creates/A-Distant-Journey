@@ -11,11 +11,11 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "confluence:workshop"
+                    "name": "terra_curio:workshop"
                 }
             ],
             "rolls": 1.0
         }
     ],
-    "random_sequence": "confluence:blocks/workshop"
+    "random_sequence": "terra_curio:blocks/workshop"
 }

@@ -1,0 +1,10 @@
+{
+  "shieldList": [],
+  "shieldBlacklist": [],
+  "stashingCooldown": true,
+  "generalCooldown": true,
+  "speedModification": true,
+  "advancedExplosions": false,
+  "lenientParry": false,
+  "lenientStamina": false
+}

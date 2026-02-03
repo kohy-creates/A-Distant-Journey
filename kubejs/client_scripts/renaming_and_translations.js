@@ -157,7 +157,7 @@ ClientEvents.lang('en_us', event => {
 		event.renameEntity(key, value)
 	}
 
-	global.rediscoveredFurniture.forEach(item => {
+	global.rediscoveredFurniture().forEach(item => {
 		let name = item
 			.replace('rediscovered:', '')
 			.replace('_', ' ')

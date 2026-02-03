@@ -797,6 +797,9 @@ global.hpModifications = {
 	'ancient_aether:aeronautic_leaper': [60, 6, 0],
 	'ancient_aether:mutated_aechor_plant': [1600, 15, 8],
 	'window_box:marker': [100, 15, 0],
+	'minecraft:copper_golem': [60, 1, 10],
+	'vinery:mule': [265, 15, 0],
+	'vinery:wandering_winemaker': [250, 15, [10, 20, 30, 40, 50, 60]],
 }
 
 global.entitiesScalingWithSize = [
@@ -804,7 +807,11 @@ global.entitiesScalingWithSize = [
 	'minecraft:slime',
 	'minecraft:phantom',
 	'the_bumblezone:honey_slime',
-	'twilightforest:maze_slime'
+	'twilightforest:maze_slime',
+	'aether:blue_swet',
+	'aether:golden_swet',
+	'aether_redux:vanilla_swet',
+	'aether_redux:festive_swet'
 ]
 
 global.autoscaleMobs = [
@@ -885,6 +892,7 @@ global.autoscaleMobs = [
 
 global.scaleThroughChapters = [
 	'minecraft:wandering_trader',
+	'vinery:wandering_winemaker',
 	'minecraft:villager',
 	'minecraft:wolf',
 	'minecraft:iron_golem',

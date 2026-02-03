@@ -1,5 +1,91 @@
+/** @type {any} */
+const $Rarity = Java.loadClass("net.minecraft.world.item.Rarity")
+/** @type {any} */
+const $UnaryOperator = Java.loadClass("java.util.function.UnaryOperator")
+/** @type {any} */
+const $UtilsJS = Java.loadClass("dev.latvian.mods.kubejs.util.UtilsJS")
+/** @type {any} */
+const $Style = Java.loadClass("net.minecraft.network.chat.Style")
+const withColorMethod = $Style.EMPTY.class.declaredMethods.filter((method) => method.name.includes("m_131148_"))[0]
+
+function obscureTooltipsPath(path) {
+	return `kubejs/assets/adj/tooltips/${path}`
+}
+
+function darkenHex(hex, percent, noHash) {
+	return ((noHash) ? '' : '#') + hex
+		.replace('#', '')
+		.match(/.{2}/g)
+		.map(c => Math.max(0, Math.min(255, Math.round(parseInt(c, 16) * (1 - percent / 100)))))
+		.map(c => c.toString(16).padStart(2, '0'))
+		.join('');
+}
+
+function createRarity(/** @type {string} */ name, /** @type {number} */ colorCode) {
+	let color = $UtilsJS.makeFunctionProxy("startup", $UnaryOperator, (style) => {
+		return withColorMethod.invoke(style, Color.of(colorCode).createTextColorJS())
+	})
+
+	// ObscureTooltips integration
+	JsonIO.write(obscureTooltipsPath(`definition/${name}.json`), {
+		priority: 50,
+		style: `adj:${name}`,
+		filter: {
+			type: "obscure_tooltips:rarity",
+			rarity: `${name}`
+		}
+	})
+
+	JsonIO.write(obscureTooltipsPath(`style/${name}.json`), {
+		panel: `adj:${name}`,
+		frame: "obscure_tooltips:default",
+		slot: "obscure_tooltips:default",
+		icon: "obscure_tooltips:default",
+		effects: []
+	})
+
+	JsonIO.write(obscureTooltipsPath(`element/panel/${name}.json`), {
+		type: "obscure_tooltips:color_rect",
+		background_palette: {
+			top_left: "@DEFAULT_PANEL_BACKGROUND_TOP",
+			top_right: "@DEFAULT_PANEL_BACKGROUND_TOP",
+			bottom_left: "@DEFAULT_PANEL_BACKGROUND_BOTTOM",
+			bottom_right: "@DEFAULT_PANEL_BACKGROUND_BOTTOM"
+		},
+		border_palette: {
+			top_left: `#60${colorCode.replace('#', '')}`,
+			top_right: `#60${colorCode.replace('#', '')}`,
+			bottom_left: `#50${darkenHex(colorCode, 25, true)}`,
+			bottom_right: `#50${darkenHex(colorCode, 25, true)}`
+		}
+	})
+
+	return $Rarity["create(java.lang.String,java.util.function.UnaryOperator)"](name, color)
+}
+
+createRarity("chapter_0", '#FFFFFF')
+createRarity("chapter_0_uncommon", '#9696FF')
+createRarity("chapter_0_rare", '#96FF96')
+createRarity("chapter_1", '#FFC896')
+createRarity("chapter_1_uncommon", '#FF9696')
+createRarity("chapter_1_rare", '#FF96FF')
+createRarity("chapter_2", '#D2A0FF')
+createRarity("chapter_2_uncommon", '#96FF0A')
+createRarity("chapter_2_rare", '#FFFF0A')
+createRarity("chapter_3", '#05C8FF')
+createRarity("chapter_3_uncommon", '#05C8FF')
+createRarity("chapter_3_rare", '#B428FF')
+createRarity("chapter_4", '#00FFC8')
+createRarity("chapter_4_uncommon", '#00FF00')
+createRarity("chapter_4_rare", '#2B60DE')
+createRarity("chapter_5", '#6C2DC7')
+createRarity("chapter_5_uncommon", '#FF00FF')
+createRarity("chapter_5_rare", '#A3191A')
+createRarity("chapter_6", '#ff288c')
+
 ItemEvents.modification(event => {
 
+	// For reference to self - editing those DOES impact the later Terraria-like rarity system
 	event.modify('@terra_curio', item => {
 		item.rarity = 'common';
 	});
@@ -7,22 +93,51 @@ ItemEvents.modification(event => {
 	event.modify([
 		/diamond/,
 		'turtle_helmet',
+		/zanite/,
 		/orichalcum/,
 		/mythril/,
 		/palladium/,
-		/veridium/,
-		'ars_nouveau:novice_spell_book'
+		'ars_nouveau:novice_spell_book',
+		/obsidian/,
+		'minecraft:potion',
+		/vinery:.*_wine/,
+		/vinery:.*_mixture/,
+		/vinery:.*_nectar/,
+		/vinery:.*_fizz/,
+		/vinery:.*_pinot/,
+		/vinery:.*_grenache/,
+		/vinery:.*_cider/,
+		'vinery:eiswein',
+		/ars_nouveau:.*essence/,
+		'botanicadds:rune_energy',
+		'botanicadds:rune_tp',
+		'botania:rune_mana',
+		'botania:rune_air',
+		'botania:rune_fire',
+		'botania:rune_earth',
+		'botania:rune_water',
+		'phantom_membrane',
+		'rediscovered:purple_arrow',
 	], item => {
 		item.rarity = 'uncommon';
 	});
 
 	event.modify([
 		'ancient_debris',
+		/veridium/,
 		/netherite/,
 		'netherexp:nether_pizza',
 		/adamantite/,
 		'ars_nouveau:apprentice_spell_book',
-		/gravitite/
+		/gravitite/,
+		'vinery:villagers_fright',
+		/witherstormmod:command_block_/,
+		'minecraft:experience_bottle',
+		'botania:rune_spring',
+		'botania:rune_summer',
+		'botania:rune_autumn',
+		'botania:rune_winter',
+		/ars_elemental:.*essence/,
 	], item => {
 		item.rarity = 'rare';
 	});
@@ -34,9 +149,68 @@ ItemEvents.modification(event => {
 		/treasure_bag/,
 		/metallurgium/,
 		/celestium/,
+		/valkyrum/,
 		/unobtainium/,
-		/gaiasteel/
+		/gaiasteel/,
+		'minecraft:enchanted_book',
+		'quark:ancient_tome',
+		'botania:rune_lust',
+		'botania:rune_pride',
+		'botania:rune_envy',
+		'botania:rune_gluttony',
+		'botania:rune_wrath',
+		'botania:rune_greed',
+		'botania:rune_sloth',
 	], item => {
 		item.rarity = 'epic'
 	});
+
+	// Terraria-like rarity system
+	function matchesAny(id, list) {
+		// This looks weird but uhmm... Whatever works I guess
+		return list.some(p => p instanceof RegExp ? p.test(id) : new RegExp(p).test(id))
+	}
+
+	function getRarity(chapter, baseRarity) {
+		switch (baseRarity) {
+			case 'epic': {
+				const rar = Number.parseInt(chapter.replace('chapter_', ''));
+				rar++;
+				return `chapter_${rar}`
+			};
+			case 'rare':
+			case 'uncommon': {
+				return `${chapter}_${baseRarity}`;
+			};
+			default: {
+				return chapter;
+			}
+		}
+	}
+
+	Item.getList().forEach(item => {
+		const id = item.getId();
+
+		let itemRarity = item.getRarity().name().toLowerCase();
+		let foundMatch = false;
+		let rarity = 'chapter_0';
+		Object.keys(global.stageRestrictions).forEach(chapter => {
+			const data = global.stageRestrictions[chapter];
+			if (matchesAny(id, data.list) || matchesAny(id, data.light) && !matchesAny(id, data.exceptions)) {
+				foundMatch = true;
+				rarity = getRarity(chapter, itemRarity);
+			}
+		})
+		if (!foundMatch) {
+			rarity = getRarity('chapter_0', itemRarity);
+		}
+		event.modify(id, item => {
+			item.rarity = rarity;
+		})
+	});
+
+	// Overrides
+	event.modify('structure_gel:building_tool', item => {
+		item.rarity = 'chapter_6'
+	})
 });

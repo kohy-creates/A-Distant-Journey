@@ -40,13 +40,7 @@ const itemsToTooltip = [
 	{
 		item: "botania:alfheim_portal",
 		summary: [
-			"_The next step in the journey.... ",
-			"Once upon a time, _Elves_ shared the world with us _Minecraftians_.",
-			"Due to events unknown to us, they were banished back to their own world, _Alfheim_, never to return.",
-			"Experiments have been performed in an attempt to re-establish a connection between the two worlds, and a theoretical procedure for creating such a portal has been devised.",
-			"Actually creating this portal would prove to be an arduous task: quite a few unusual resources would be necessary.",
-			"The net requirements come down to 8 _Livingwood_ blocks, 3 _Glimmering Livingwood_ blocks, an _Elven Gateway Core_ (read on), and at least 2 _Mana Pools_ and _Natura Pylons_ (read on).",
-			"The _Livingwood_ blocks can be of any variant (logs or wood, stripped or not, etc.), so feel free to mix it up if you're feeling fancy.",
+			"Did your Alfheim portal close? Just hit this thing again with a Wand of The Forest."
 		]
 	},
 	{
@@ -2181,6 +2175,23 @@ const itemsToTooltip = [
 		summary: [
 			"The _Chthonic Yew_ tree is said to be a gateway to the underworld. When grown, its trunk forms a hollow containing a portal to the _Nether_. It requires a 2x2 of saplings with 4 blocks of vertical space above them. Its wood is a deep black.",
 			"_Lasciate ogne speranza, voi ch'intrate_"
+		]
+	},
+	{
+		item: 'window_box:alfthorne_sapling',
+		summary: [
+			'A special type of tree. It contains a _portal to Alfheim_ in its huge trunk, allowing you to _trade resources with Elves_ on the other side.'
+		],
+		controls: [
+			{
+				control: 'Growing an Alfthorne tree',
+				noBaseText: true,
+				text: [
+					'Alfthorne tree _will not grow by itself_, nor can you use Bone Meal on it.',
+					'In order to make it grow, you need to place _2 Mana Pools nearby_ (both filled to some extent), and a _Natura Pylon_ on top of both.',
+					'Then, right-click the sapling with a _Wand of The Forest_ and watch it grown. Make sure it has enough space, as it is kind of big.'
+				]
+			}
 		]
 	},
 

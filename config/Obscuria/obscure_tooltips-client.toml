@@ -6,9 +6,9 @@ contentMargin = 3
 #List of item IDs that should be ignored by Obscure Tooltips.
 ignoredItems = ["quality_equipment:reforge_gui_button"]
 #Whether Obscure Tooltips should display the second line in the tooltip header.
-labelsEnabled = true
+labelsEnabled = false
 #Whether Obscure Tooltips should display drop shadows.
-shadowsEnabled = true
+shadowsEnabled = false
 #The opacity of the drop shadows.
 #Range: 0.0 ~ 1.0
 shadowOpacity = 0.3

@@ -162,7 +162,7 @@
 	 * The GUI scale at which recipe screenshots are saved. Use 0 to use the current
 	 * GUI scale.
 	 */
-	recipe-screenshot-scale: 0;
+	recipe-screenshot-scale: 7;
 
 	/**
 	 * The pages in the left sidebar
