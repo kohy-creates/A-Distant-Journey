@@ -3704,6 +3704,19 @@ const itemsToTooltip = [
 	},
 	{
 		item: [
+			'farmersdelight:skillet',
+		],
+		controls: [
+			{
+				control: 'placed on a Stove',
+				text: [
+					'Allows an entire stack of items to be queued for faster cooking'
+				]
+			}
+		]
+	},
+	{
+		item: [
 			'transmog:transmogrification_table'
 		],
 		summary: [
@@ -3715,14 +3728,14 @@ const itemsToTooltip = [
 		],
 		controls: [
 			{
-				control: 'When fueled',
+				control: 'fueled',
 				text: [
 					'Uses the _second input_ as target appearance',
 					'for the _first input item_'
 				]
 			},
 			{
-				control: 'When Void Fragment is used as target',
+				control: 'Void Fragment is used as target',
 				text: [
 					'Makes the item visually disappear'
 				]
@@ -3861,7 +3874,104 @@ const itemsToTooltip = [
 			"Combining these elements resulted in a strange spiritual energy. It is so otherwordly, that it does not have its own material, which is why it is observed as some kind of creamed corn.",
 			"My subjects say I have gone too far with this, the fools."
 		]
-	}
+	},
+
+	// Handcrafted
+	{
+		item: /_counter/,
+		summary: [
+			'_Right-clicking_ it with certain materials will _change its looks_.'
+		],
+		controls: [
+			{
+				control: 'Accepted materials',
+				noBaseText: true,
+				text: [
+					'All vanilla Planks, Andesite, Granite, Diorite, Calcite, Deepslate, Bricks, Quartz Block, Smooth Stone'
+				]
+			},
+			{
+				control: 'right-clicked with a Hammer',
+				requiresHold: false,
+				text: [
+					'Changes the look of the block'
+				]
+			}
+		]
+	},
+	{
+		item: [
+			/_bench/,
+			/_chair/,
+			/_couch/
+		],
+		summary: [
+		],
+		controls: [
+			{
+				control: 'right-clicked with a Cushion',
+				requiresHold: false,
+				text: [
+					'Changes the look of the block'
+				]
+			}
+		]
+	},
+	{
+		item: [
+			/_side_table/,
+			/_nigthstand/,
+			/handcrafted:.*_table/,
+			/hc.*_table/,
+		],
+		summary: [
+		],
+		controls: [
+			{
+				control: 'right-clicked with a Sheet',
+				requiresHold: false,
+				text: [
+					'Changes the look of the block'
+				]
+			}
+		]
+	},
+	{
+		item: [
+			/_fancy_bed/,
+		],
+		summary: [
+		],
+		controls: [
+			{
+				control: 'right-clicked with a Cushion',
+				requiresHold: false,
+				text: [
+					'Changes the look of the block'
+				]
+			},
+			{
+				control: 'right-clicked with a Sheet',
+				requiresHold: false,
+				text: [
+					'Changes the look of the block'
+				]
+			}
+		]
+	},
+	{
+		item: 'handcrafted:kitchen_hood_pipe',
+		summary: [],
+		controls: [
+			{
+				control: 'right-clicked with a Hammer',
+				requiresHold: false,
+				text: [
+					'Changes the look of the block'
+				]
+			}
+		]
+	},
 
 ];
 

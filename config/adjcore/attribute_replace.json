@@ -19,7 +19,7 @@
 				"obscure_api:critical_hit"
 			],
 			"add": [
-				"attributeslib:crit_damage;0;1;MAINHAND",
+				"attributeslib:crit_damage;0;2;MAINHAND",
 				"attributeslib:crit_chance;0;0.25;MAINHAND"
 			]
 		},

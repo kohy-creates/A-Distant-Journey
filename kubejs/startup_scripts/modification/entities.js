@@ -8,10 +8,12 @@ EntityJSEvents.attributes(event => {
 
 	event.modify('player', attributes => {
 		attributes.add('generic.max_health', 100);
-		attributes.add('generic.attack_damage', 1);
-		attributes.add('combatroll:count', 0);
+		attributes.add('generic.attack_damage', 1.0);
+		attributes.add('combatroll:count', 0.0);
+		attributes.add('attributeslib:crit_chance', 0.0)
 		attributes.add('attributeslib:crit_damage', 2.0);
-		attributes.add('attributeslib:draw_speed', 0.85);
+		// attributes.add('attributeslib:draw_speed', 0.85);
+		attributes.add('generic.attack_speed', 2.0)
 	})
 
 	event.modify('witherstormmod:wither_storm', attributes => {

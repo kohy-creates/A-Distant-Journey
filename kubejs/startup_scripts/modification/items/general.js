@@ -14,4 +14,5 @@ ItemEvents.modification(event => {
 	event.modify(fireImmuneItems, item => {
 		item.setFireResistant(true);
 	})
+	
 })

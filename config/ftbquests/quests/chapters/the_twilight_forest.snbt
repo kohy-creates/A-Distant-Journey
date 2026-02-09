@@ -98,9 +98,10 @@
 			dependencies: ["718E0AAC4FC76ECF"]
 			id: "33DE618E8B49FC45"
 			tasks: [{
-				id: "69EB5DAD373D92D3"
-				item: "twilightforest:lich_trophy"
-				type: "item"
+				entity: "twilightforest:lich"
+				id: "751A22012F5D8C69"
+				type: "kill"
+				value: 1L
 			}]
 			x: -0.5d
 			y: 0.5d
@@ -145,6 +146,64 @@
 			title: "Naga Armorer"
 			x: 1.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["33DE618E8B49FC45"]
+			id: "1DBCDCBED96264BB"
+			tasks: [{
+				block: "twilightforest:trophy_pedestal"
+				block_type: 0
+				checkItem: false
+				id: "5FB1440B27A341C8"
+				isItemInteraction: true
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:boss_trophy"
+					}
+				}
+				type: "questsadditions:use"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1DBCDCBED96264BB"]
+			id: "57096EC0B254AADA"
+			tasks: [{
+				entity: "twilightforest:knight_phantom"
+				id: "32E7EADC698CAC44"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["57096EC0B254AADA"]
+			id: "42A94C9266966DD4"
+			tasks: [{
+				entity: "twilightforest:minotaur"
+				id: "7BD4DF65E3818A18"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["42A94C9266966DD4"]
+			id: "23C6460818CAA8F0"
+			tasks: [{
+				entity: "twilightforest:hydra"
+				id: "4F4D3448CD12FD69"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.5d
+			y: 3.5d
 		}
 	]
 	title: "The Twilight Forest"

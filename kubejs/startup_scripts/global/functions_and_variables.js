@@ -54,7 +54,7 @@ global.toTitleCase = function (str) {
 }
 
 /**
- * 
+ * @type {void}
  * @param {$MinecraftServer_} server 
  * @param {$ComponentKJS_} msg 
  */
@@ -65,7 +65,7 @@ global.broadcast = function (server, msg) {
 }
 
 /**
- * @type {Record<String, $Color_>}
+ * @type {Record<String, Internal.Color>}
  */
 global.messageColors = {
 	newOre: '#32FF82',
@@ -79,9 +79,12 @@ global.messageColors = {
  * Returns an announcement style message (italic and with a specific color) 
  * Look into global.messageColors for a list of default colors)
  * @param {String} text 
- * @param {Color} color
- * @returns 
+ * @param {Internal.Color} color
+ * @param {boolean} noItalic
+ * @returns {Internal.TextWrapper}
  */
 global.announcementMsg = function (text, color, noItalic) {
 	return (!noItalic) ? Text.of(text).color(color).italic() : Text.of(text).color(color);
 }
+
+global.baseCritChance = 0.04;

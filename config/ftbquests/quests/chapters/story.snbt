@@ -31,7 +31,7 @@
 			image: "adj:textures/texts/chapter_1.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 25.5d
+			x: 27.0d
 			y: 3.5d
 		}
 		{
@@ -620,6 +620,15 @@
 			width: 1.75d
 			x: -9.0d
 			y: 21.5d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 1.75d
+			image: "ancient_aether:block/valkyrum_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 17.5d
+			y: 14.5d
 		}
 	]
 	order_index: 1
@@ -2442,7 +2451,7 @@
 				item: "kubejs:eye_of_angels"
 				type: "item"
 			}]
-			title: "HEVEN... FALLS!!"
+			title: "Kneel Before The Angels"
 			x: 25.5d
 			y: 18.0d
 		}
@@ -4154,7 +4163,7 @@
 			dependencies: ["70CB0A3DAA970B81"]
 			icon: "aether:aechor_petal"
 			id: "2F46F962D867A81D"
-			subtitle: "Kill the Mutaded Aechor Plant"
+			subtitle: "Kill the Mutated Aechor Plant"
 			tasks: [{
 				entity: "ancient_aether:mutated_aechor_plant"
 				icon: "ancient_aether:laboratory_dungeon_key"
@@ -4165,6 +4174,43 @@
 			title: "The Sun Goes Down"
 			x: 22.0d
 			y: 17.0d
+		}
+		{
+			dependencies: ["112388B5EDB9C9D2"]
+			id: "09398D1D38C7ED0D"
+			subtitle: "Brew any Antidote"
+			tasks: [{
+				id: "3D6F7CB4E2079D48"
+				item: {
+					Count: 1
+					id: "sortilege:antidote"
+					tag: {
+						Potion: "alexsmobs:lava_vision"
+					}
+				}
+				match_nbt: false
+				title: "Any Antidote"
+				type: "item"
+			}]
+			title: "Be Gone!"
+			x: 23.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0CC3E441C652E02E"]
+			icon_scale: 0.75d
+			id: "47D482E31D5852AE"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Forge a Valkyrum Ingot"
+			tasks: [{
+				id: "2DD0AAB04722992E"
+				item: "ancient_aether:valkyrum"
+				type: "item"
+			}]
+			title: "Valkyrien Skies"
+			x: 17.5d
+			y: 14.5d
 		}
 	]
 	title: "Story"

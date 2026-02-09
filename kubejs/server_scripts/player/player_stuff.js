@@ -87,6 +87,8 @@ PlayerEvents.tick(event => {
 	// 	persistentData.putBoolean('gaveRing', true)
 	// 	player.give('enigmaticlegacy:cursed_ring')
 	// }
+	player.getAttribute('attributeslib:crit_chance').setBaseValue(0.0);
+	player.getAttribute('generic.attack_speed').setBaseValue(2.0);
 
 
 })
@@ -99,25 +101,33 @@ FTBQuestsEvents.completed('16BAA229C57F181A', event => {
 	})
 })
 
-EntityEvents.hurt(event => {
-	const player = event.getSource().getPlayer();
-	if (player) {
+ADJServerEvents.adjHurt(event => {
+	const player = event.getAttacker();
+	if (player && player instanceof $Player) {
 		const item = player.getMainHandItem();
-		if (item.getId().includes('katana')) {
+		const id = item.getId();
+		const victim = event.getVictim();
+		if (id.includes('katana')) {
 			const pdata = player.persistentData;
 			if (!pdata.katanaCombo) {
 				pdata.katanaCombo = 0;
 			}
 			pdata.katanaCombo++;
-
 			if (pdata.katanaCombo >= 3) {
 				pdata.katanaCombo = 0;
-
 				player.addEffect(new $MobEffectInstance('speed', 4 * 20, 0));
+				// player.playNotifySound()
 			}
 		}
-		if (item.getId().includes('stormyx')) {
-			event.getEntity().addEffect(new $MobEffectInstance('cofh_core:shocked', 8 * 20, 0))
+		if (id.includes('stormyx')) {
+			victim.addEffect(new $MobEffectInstance('cofh_core:shocked', 8 * 20, 0))
+		}
+		if (id.includes('mcdw:soul_dagger')) {
+			player.addEffect(new $MobEffectInstance('ars_nouveau:mana_regen', 2 * 20, (id === 'mcdw:soul_dagger_eternal_knife') ? 1 : 0));
+		}
+		if (id === 'mcdw:dagger_resolute_tempest_knife') {
+			victim.addEffect(new $MobEffectInstance('slowness', 10 * 20, 1)) // -30%
+			player.addEffect(new $MobEffectInstance('speed', 10 * 20, 2)) // +30%
 		}
 	}
 })

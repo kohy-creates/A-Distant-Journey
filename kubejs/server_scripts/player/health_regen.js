@@ -8,7 +8,6 @@ const maxFireTicks = 300;
 
 EntityEvents.hurt(event => {
 	const entity = event.getEntity();
-	entity.health = Math.ceil(entity.health);
 	if (entity.remainingFireTicks > maxFireTicks) entity.remainingFireTicks = maxFireTicks;
 	if (entity.isPlayer()) {
 		entity.persistentData.putLong('timeSinceLastHurt', 0);

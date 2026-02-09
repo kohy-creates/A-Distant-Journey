@@ -40,7 +40,20 @@ farmlandDestroyEffects = true
 amethystSparkleDisplayType = "ON"
 amethystSparkleEmittingBlocks = [
     "minecraft:amethyst_block",
-    "minecraft:budding_amethyst"
+    "minecraft:budding_amethyst",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air"
 ]
 amethystSparkleSounds = true
 floweringAzaleaPetals = true
@@ -49,11 +62,11 @@ sculkVeinSculkDust = true
 sculkShriekerDestroySouls = true
 sculkCatalystDestroySouls = true
 calibratedSculkSensorAmethystSparkle = true
-campfireSizzlingSoundVolume = 0.5
+campfireSizzlingSoundVolume = 0.20261438
 replacePowderSnowFlakes = true
 lavaCauldronEffects = true
 enderEyePlacedRings = true
-enderEyePlacedRingsDuration = 10
+enderEyePlacedRingsDuration = 20
 enderEyePlacedParticlesDisplayType = "BOTH"
 eyeColors = [
     [ "minecraft:ender_eye", { r = 122, g = 186, b = 171 } ]
@@ -64,7 +77,7 @@ replaceOminousVaultConnection = true
 cobwebMovementSounds = true
 cakeEatParticles = true
 cakeEatSounds = true
-rainWaterRipples = true
+rainWaterRipples = false
 rainWaterRipplesDensity = 0.35
 underwaterBlockBreakBubbles = true
 decoratedPotsSpawnBubbles = true
@@ -84,7 +97,7 @@ campfireSparks = true
 torchSparks = true
 lanternSparksDensity = 1
 lavaSparksDisplayType = "ON"
-lavaSparksDensity = 1.0
+lavaSparksDensity = 0.1
 brewingStandSparks = true
 
 [updatedSmoke]

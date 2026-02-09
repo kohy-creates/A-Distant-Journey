@@ -120,13 +120,19 @@ ItemEvents.modification(event => {
 		/stardew_fishing\:.*bobber/,
 		/.*aether.*\:.*glove/,
 		/umbral_skies\:.*gloves/,
-		'the_bumblezone:flower_headwear'
+		'the_bumblezone:flower_headwear',
+		/accents/
 	]
 	event.modify(noDurability, item => {
 		item.setMaxDamage(0);
 	})
 
 	//////////////////////////////////////////////////////
+
+	maxDurability([
+		'create:sand_paper',
+		'create:red_sand_paper'
+	], 30)
 
 	maxDurability([
 		toolset('minecraft:golden'),

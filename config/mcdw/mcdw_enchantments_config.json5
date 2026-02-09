@@ -38,7 +38,7 @@
 		"ACCELERATE": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -47,7 +47,7 @@
 		"AMBUSH": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -60,7 +60,7 @@
 				"Default:        100f"
 			],
 			"offset": 55.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 4,
@@ -69,7 +69,7 @@
 		"BONUS_SHOT": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -78,7 +78,7 @@
 		"BURST_BOWSTRING": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": false,
 			"isAvailableForRandomSelection": false,
 			"maxLevel": 3,
@@ -87,7 +87,7 @@
 		"BUSY_BEE": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": false,
 			"isAvailableForRandomSelection": false,
 			"maxLevel": 1,
@@ -105,7 +105,7 @@
 		"CHAINS": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -114,7 +114,7 @@
 		"CHARGE": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -150,7 +150,7 @@
 		"DIPPING_POISON": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -163,7 +163,7 @@
 				"Default:        20f"
 			],
 			"offset": 10.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": false,
 			"isAvailableForRandomSelection": false,
 			"maxLevel": 3,
@@ -172,7 +172,7 @@
 		"ECHO": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -186,7 +186,7 @@
 				"Default:        3.25f"
 			],
 			"offset": 4.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -195,7 +195,7 @@
 		"EXPLODING": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -204,7 +204,7 @@
 		"FREEZING": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -231,7 +231,7 @@
 		"GROWING": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -240,7 +240,7 @@
 		"GUARDING_STRIKE": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -249,7 +249,7 @@
 		"ILLAGERS_BANE": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -258,7 +258,7 @@
 		"JUNGLE_POISON": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -280,7 +280,7 @@
 		"LEVITATION_SHOT": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -316,7 +316,7 @@
 		"PHANTOMS_MARK": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -334,7 +334,7 @@
 		"PROSPECTOR": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -343,7 +343,7 @@
 		"RADIANCE": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -352,7 +352,7 @@
 		"RAMPAGING": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -397,7 +397,7 @@
 		"SHADOW_BARB": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": false,
 			"isAvailableForRandomSelection": false,
 			"maxLevel": 1,
@@ -406,7 +406,7 @@
 		"SHADOW_SHOT": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": false,
 			"isAvailableForRandomSelection": false,
 			"maxLevel": 1,
@@ -424,7 +424,7 @@
 		"SHOCKWAVE": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -474,7 +474,7 @@
 		"SWIRLING": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -483,7 +483,7 @@
 		"TEMPO_THEFT": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -492,7 +492,7 @@
 		"THUNDERING": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": true,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 3,
@@ -501,7 +501,7 @@
 		"VOID_SHOT": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": false,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 1,
@@ -510,7 +510,7 @@
 		"VOID_STRIKE": {
 			"comment": null,
 			"offset": 0.0,
-			"isEnabled": true,
+			"isEnabled": false,
 			"isAvailableForEnchantedBookOffer": false,
 			"isAvailableForRandomSelection": true,
 			"maxLevel": 1,

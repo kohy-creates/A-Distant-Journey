@@ -18,7 +18,19 @@
 			"minecraft:slime": 10,
 			"the_bumblezone:honey_slime": 10,
 			"alexscaves:ferrouslime": 10,
-			"born_in_chaos_v1:restless_spirit": 13
+			"twilightforest:maze_slime": 10,
+			"aether:blue_swet": 10,
+			"aether:golden_swet": 10,
+			"aether_redux:vanilla_swet": 10,
+			"ancient_aether:festive_swet": 10,
+			"born_in_chaos_v1:restless_spirit": 14,
+			"minecraft:player": 3
+		}
+	},
+	"minecraft:mob_attack_no_aggro": {
+		"iframes": 0,
+		"overrides": {
+			"minecraft:player": 3
 		}
 	},
 	"minecraft:mob_projectile": {
@@ -31,9 +43,12 @@
 		"iframes": 8
 	},
 	"minecraft:on_fire": {
-		"iframes": 9
+		"iframes": 8
 	},
 	"minecraft:in_fire": {
-		"iframes": 9
+		"iframes": 8
+	},
+	"minecraft:freeze": {
+		"iframes": 0
 	}
 }

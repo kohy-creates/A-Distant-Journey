@@ -86,7 +86,9 @@ createRarity("chapter_6", '#ff288c')
 ItemEvents.modification(event => {
 
 	// For reference to self - editing those DOES impact the later Terraria-like rarity system
-	event.modify('@terra_curio', item => {
+	event.modify([
+		'terra_curio'
+	], item => {
 		item.rarity = 'common';
 	});
 
@@ -98,8 +100,11 @@ ItemEvents.modification(event => {
 		/mythril/,
 		/palladium/,
 		'ars_nouveau:novice_spell_book',
+		'ars_nouveau:apprentice_spell_book',
+		'ars_nouveau:archmage_spell_book',
 		/obsidian/,
 		'minecraft:potion',
+		'the_bumblezone:potion_candle',
 		/vinery:.*_wine/,
 		/vinery:.*_mixture/,
 		/vinery:.*_nectar/,
@@ -118,6 +123,18 @@ ItemEvents.modification(event => {
 		'botania:rune_water',
 		'phantom_membrane',
 		'rediscovered:purple_arrow',
+		/music_disc/,
+		'architects_palette:ender_pearl_block',
+		'mythicmetals:osmium_chainmail_helmet',
+		'mythicmetals:osmium_chainmail_chestplate',
+		'mythicmetals:osmium_chainmail_leggings',
+		'mythicmetals:osmium_chainmail_boots',
+		/manasteel/,
+		'botania:mana_powder',
+		'ars_nouveau:source_gem',
+		'ars_nouveau:source_gem_block',
+		/botania:lens/,
+		/botania:mana_/,
 	], item => {
 		item.rarity = 'uncommon';
 	});
@@ -128,16 +145,21 @@ ItemEvents.modification(event => {
 		/netherite/,
 		'netherexp:nether_pizza',
 		/adamantite/,
-		'ars_nouveau:apprentice_spell_book',
-		/gravitite/,
 		'vinery:villagers_fright',
 		/witherstormmod:command_block_/,
-		'minecraft:experience_bottle',
 		'botania:rune_spring',
 		'botania:rune_summer',
 		'botania:rune_autumn',
 		'botania:rune_winter',
 		/ars_elemental:.*essence/,
+		'heart_crystals:heart_lantern',
+		/banner_pattern/,
+		'the_bumblezone:flower_headwear',
+		'the_bumblezone:bee_soup',
+		/ars_.*:thread.*/,
+		'aether:altar',
+		'aether:freezer',
+		'aether:incubator'
 	], item => {
 		item.rarity = 'rare';
 	});
@@ -145,7 +167,7 @@ ItemEvents.modification(event => {
 	event.modify([
 		/majruszsdifficulty\:enderium\_.*/,
 		/creative/,
-		'ars_nouveau:archmage_spell_book',
+		/gravitite/,
 		/treasure_bag/,
 		/metallurgium/,
 		/celestium/,
@@ -161,6 +183,17 @@ ItemEvents.modification(event => {
 		'botania:rune_wrath',
 		'botania:rune_greed',
 		'botania:rune_sloth',
+		/the_bumblezone:essence/,
+		'the_bumblezone:crystalline_flower',
+		'the_bumblezone:stinger_spear',
+		'the_bumblezone:bumble_bee_chestplate_trans_1',
+		'the_bumblezone:bumble_bee_chestplate_trans_2',
+		'the_bumblezone:windy_air',
+		'aquamirae:coral_lance',
+		/royal_jelly/,
+		/experience_chunk/,
+		'minecraft:experience_bottle',
+		/ars_nouveau:arcanist/
 	], item => {
 		item.rarity = 'epic'
 	});
@@ -174,7 +207,8 @@ ItemEvents.modification(event => {
 	function getRarity(chapter, baseRarity) {
 		switch (baseRarity) {
 			case 'epic': {
-				const rar = Number.parseInt(chapter.replace('chapter_', ''));
+				let rar = Number.parseInt(chapter.replace('chapter_', ''));
+				if (!rar) rar = 0;
 				rar++;
 				return `chapter_${rar}`
 			};
@@ -206,11 +240,15 @@ ItemEvents.modification(event => {
 		}
 		event.modify(id, item => {
 			item.rarity = rarity;
+			item.fireResistant = (rarity != 'chapter_0');
 		})
 	});
 
 	// Overrides
-	event.modify('structure_gel:building_tool', item => {
+	event.modify([
+		'structure_gel:building_tool',
+		/treasure_bag/
+	], item => {
 		item.rarity = 'chapter_6'
 	})
 });

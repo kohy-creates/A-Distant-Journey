@@ -86,8 +86,11 @@ LootJS.modifiers((event) => {
 	 */
 	const skullFragmentDrop = (pool) => {
 		pool.rolls(1);
-		pool.randomChanceWithLooting(0.2, 0.1)
-			.addLoot(LootEntry.of('kubejs:skull_fragment').limitCount([1, 3])).applyLootingBonus([0, 1]);
+		pool.addLoot(LootEntry.of('kubejs:skull_fragment')
+			.when(c => c.randomChanceWithLooting(0.2, 0.1))
+			.limitCount([1, 3])
+			.applyLootingBonus([0, 1])
+		);
 	}
 	event.addEntityLootModifier('minecraft:wither_skeleton')
 		.removeLoot('minecraft:wither_skeleton_skull')
@@ -121,61 +124,76 @@ LootJS.modifiers((event) => {
 		])
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.25, 0.15)
-				.addLoot(LootEntry.of('minecraft:feather'))
+			pool.addLoot(LootEntry.of('minecraft:feather')
 				.limitCount([0, 2])
-				.applyLootingBonus([0, 1]);
+				.applyLootingBonus([0, 1])
+				.when(c => c.randomChanceWithLooting(0.25, 0.15))
+			);
 		})
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.05, 0.025)
-				.addLoot(LootEntry.of('born_in_chaos_v1:pieceofdarkmetal'))
+			pool.addLoot(LootEntry.of('born_in_chaos_v1:pieceofdarkmetal')
 				.limitCount([1, 2])
 				.applyLootingBonus([0, 1])
+				.when(c => c.randomChanceWithLooting(0.05, 0.025))
+			)
+
 		})
 		.pool(darkGemPool);
 
 	event.addEntityLootModifier('minecraft:skeleton')
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.02, 0.02)
-				.addLoot(LootEntry.of('minecraft:skeleton_skull'));
+			pool.addLoot(LootEntry.of('minecraft:skeleton_skull').when(c => c.randomChanceWithLooting(0.02, 0.02)));
 		})
 		.pool(darkGemPool)
+
+	event.addEntityLootModifier('minecraft:stray')
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('born_in_chaos_v1:permafrost_shard').limitCount([1, 2]).applyLootingBonus([0, 1]).when(c => c.randomChanceWithLooting(0.33, 0.17)))
+		})
 
 	event.addEntityLootModifier('alexsmobs:hammerhead_shark')
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.9, 0.1)
-				.addLoot(LootEntry.of('alexsmobs:shark_tooth'))
-				.limitCount([1, 2])
-				.applyLootingBonus([0, 1]);
+			pool.addLoot(
+				LootEntry.of('alexsmobs:shark_tooth')
+					.limitCount([1, 2])
+					.applyLootingBonus([0, 1])
+					.when(c => c.randomChanceWithLooting(0.9, 0.1))
+			);
 		});
 
 	event.addEntityLootModifier('alexsmobs:frilled_shark')
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.5, 0.1)
-				.addLoot(LootEntry.of('alexsmobs:shark_tooth'))
-				.limitCount([1, 2])
-				.applyLootingBonus([0, 1]);
+			pool
+				.addLoot(
+					LootEntry.of('alexsmobs:shark_tooth')
+						.limitCount([1, 2])
+						.applyLootingBonus([0, 1])
+						.when(c => c.randomChanceWithLooting(0.5, 0.1))
+				);
 		});
 
 	event.addEntityLootModifier('born_in_chaos_v1:corpse_fish')
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.1, 0.05)
-				.addLoot(LootEntry.of('alexsmobs:shark_tooth'))
-				.applyLootingBonus([0, 1]);
+			pool
+				.addLoot(LootEntry.of('alexsmobs:shark_tooth')
+					.applyLootingBonus([0, 1])
+					.when(c => c.randomChanceWithLooting(0.1, 0.05)));
 		});
 
 	event.addEntityLootModifier('born_in_chaos_v1:glutton_fish')
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.333, 0.05)
-				.addLoot(LootEntry.of('alexsmobs:shark_tooth'))
-				.limitCount([1, 2])
-				.applyLootingBonus([0, 1]);
+			pool
+				.addLoot(LootEntry.of('alexsmobs:shark_tooth')
+					.limitCount([1, 2])
+					.applyLootingBonus([0, 1])
+					.when(c => c.randomChanceWithLooting(0.333, 0.05)));
 		});
 
 	event.addEntityLootModifier([
@@ -189,37 +207,71 @@ LootJS.modifiers((event) => {
 	])
 		.pool(pool => {
 			pool.rolls(1);
-			pool.randomChanceWithLooting(0.002, 0.0005)
-				.addLoot(LootEntry.of('artifacts:everlasting_beef'))
+			pool.addLoot(LootEntry.of('artifacts:everlasting_beef')
+				.when(c => c.randomChanceWithLooting(0.002, 0.0005))
 				.limitCount(1)
+			)
 		})
 
 	event.addEntityLootModifier('ars_nouveau:wilden_boss')
 		.removeLoot('ars_nouveau:wilden_tribute')
 
-	event.addEntityLootModifier('wandering_trader')
-		.pool(pool => {
-			pool.rolls(1);
-			pool.addLoot(LootEntry.of('etcetera:trader_hood'))
-		})
-		.pool(pool => {
-			pool.rolls(1);
-			pool.addLoot(LootEntry.of('etcetera:trader_robe'))
-		})
+	// event.addEntityLootModifier('wandering_trader')
+	// 	.pool(pool => {
+	// 		pool.rolls(1);
+	// 		pool.addLoot(LootEntry.of('etcetera:trader_hood'))
+	// 	})
+	// 	.pool(pool => {
+	// 		pool.rolls(1);
+	// 		pool.addLoot(LootEntry.of('etcetera:trader_robe'))
+	// 	})
 
 	event.addEntityLootModifier('guardian')
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.addLoot(LootEntry.of('ars_nouveau:wilden_spike'))
+			pool.addLoot(LootEntry.of('ars_nouveau:wilden_spike')
 				.limitCount([0, 2])
-				.applyLootingBonus([0, 1]);
+				.applyLootingBonus([0, 1])
+			);
 		});
 
 	event.addEntityLootModifier('elder_guardian')
 		.pool((pool) => {
 			pool.rolls(1);
-			pool.addLoot(LootEntry.of('ars_nouveau:wilden_spike'))
+			pool.addLoot(LootEntry.of('ars_nouveau:wilden_spike')
 				.limitCount([0, 7])
-				.applyLootingBonus([0, 3]);
+				.applyLootingBonus([0, 3])
+			);
 		});
+
+	function mcdw(type, item) {
+		return `mcdw:${type}_${item}`
+	}
+
+	event.addEntityLootModifier('minecraft:witch')
+		.removeLoot(mcdw('glaive', 'cackling_broom'))
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of(mcdw('glaive', 'cackling_broom')).when(c => c.randomChanceWithLooting(0.05, 0.025)))
+		});
+
+	event.addLootTableModifier('chests/end_city_treasure')
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of(mcdw('sword', 'obsidian_claymore')).withChance(0.15))
+		})
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of(mcdw('bow', 'call_of_the_void')).withChance(0.15))
+		})
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of(mcdw('crossbow', 'veiled_crossbow')).withChance(0.15))
+		})
+
+	event.addLootTableModifier('aquamirae:chests/frozen_chest')
+		.pool((pool) => {
+			pool.rolls(1).randomChance(1);
+			pool.addLoot(LootEntry.of('twilightforest:ice_bow'))
+		})
 });

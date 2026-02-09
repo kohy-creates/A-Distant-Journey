@@ -59,6 +59,10 @@ ClientEvents.lang('en_us', event => {
 		'block.adj.ender_forge_casing': 'Ender Forge Casing',
 		'block.adj.adamantite_forge_casing': 'Adamantite Forge Casing',
 
+		'architects_palette.info.dimension.rediscovered.skylands': 'the Skylands',
+		
+		'block.aether.potted_skyroot_sapling': 'Potted Skyroot Sapling',
+
 	}
 
 	/** @type {Record<Internal.Block_, string>} */
@@ -134,7 +138,11 @@ ClientEvents.lang('en_us', event => {
 		'ars_nouveau:wilden_horn': 'Fang',
 		'ars_nouveau:wilden_spike': 'Guardian Spike',
 
-		'heart_crystals:heart_crystal': 'Life Crystal'
+		'heart_crystals:heart_crystal': 'Life Crystal',
+		'farmersdelight:skillet': 'Frying Pan',
+		'alexscaves:sombrero': 'Desert Sombrero',
+
+		'twilightforest:ice_bow': 'Winter\'s Touch'
 	}
 
 	const entityRenames = {

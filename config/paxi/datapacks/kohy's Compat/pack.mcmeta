@@ -15,6 +15,14 @@
 			{
 				"namespace": "^botania$",
 				"path": "^advancements/challenge.*$"
+			},
+			{
+				"namespace": "^croptopia$",
+				"path": "^loot_modifiers/.*$"
+			},
+			{
+				"namespace": "^uniqueaccessories$",
+				"path": "^loot_modifiers/.*$"
 			}
 		]
 	}

@@ -898,6 +898,9 @@
 		[entries.wood_type.oreberriesreplanted]
 			vat = true
 
+		[entries.wood_type.copperagebackport]
+			shelf = true
+
 	[entries.leaves_type]
 
 		[entries.leaves_type.quark]

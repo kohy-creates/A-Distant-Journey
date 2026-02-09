@@ -1,0 +1,37 @@
+{
+	"format_version": "1.21.11",
+	"parent": "block/thin_block",
+	"render_type": "cutout",
+	"textures": {
+		"1": "kohara:block/snow_overlay",
+		"particle": "block/snow",
+		"texture": "block/snow"
+	},
+	"elements": [
+		{
+			"from": [-0.02, 0.1, -0.02],
+			"to": [16.02, 10.1, 16.02],
+			"faces": {
+				"north": {"uv": [0, 6, 16, 16], "texture": "#texture", "cullface": "north"},
+				"east": {"uv": [0, 6, 16, 16], "texture": "#texture", "cullface": "east"},
+				"south": {"uv": [0, 6, 16, 16], "texture": "#texture", "cullface": "south"},
+				"west": {"uv": [0, 6, 16, 16], "texture": "#texture", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "down"}
+			}
+		},
+		{
+			"from": [-0.02, -15.9, -0.02],
+			"to": [16.02, 0.1, 16.02],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.05609, -2.01402, -0.05609]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "west"},
+				"up": {"uv": [9, 12, 9, 12], "texture": "#1", "cullface": "up"},
+				"down": {"uv": [16, 16, 14, 14], "texture": "#1", "cullface": "down"}
+			}
+		}
+	]
+}

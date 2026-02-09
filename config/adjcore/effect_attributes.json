@@ -14,7 +14,7 @@
 	"minecraft:strength": {
 		"replace": true,
 		"attributes": [
-			"minecraft:generic.attack_damage;0.15;2"
+			"minecraft:generic.attack_damage;0.1;2"
 		]
 	},
 	"minecraft:weakness": {
@@ -57,9 +57,37 @@
 	"rediscovered:crimson_veil": {
 		"replace": true,
 		"attributes": [
-			"minecraft:generic.attack_damage;3;0",
-			"minecraft:generic.armor;4;0",
-			"rediscovered:undead_damage_scaling;0.1;1"
+			"rediscovered:undead_damage_scaling;0.001;1"
+		]
+	},
+	"farmersdelight:comfort": {
+		"replace": false,
+		"attributes": [
+			"adjcore:generic.health_regeneration;1.5;0"
+		]
+	},
+	"farmersdelight:nourishment": {
+		"replace": false,
+		"attributes": [
+			"adjcore:generic.health_regeneration;0.5;0",
+			"minecraft:generic.armor;2;0",
+			"minecraft:generic.attack_damage;0.05;1",
+			"minecraft:generic.movement_speed;0.08;1",
+			"minecraft:generic.attack_speed;0.04;1",
+			"attributeslib:mining_speed;0.15;0"
+		]
+	},
+	"cofh_core:shocked": {
+		"replace": true,
+		"attributes": [
+			"minecraft:generic.movement_speed;-0.1;1",
+			"attributeslib:healing_received;-0.2;0"
+		]
+	},
+	"minecraft:wither": {
+		"replace": false,
+		"attributes": [
+			"attributeslib:healing_received;-0.3;0"
 		]
 	}
 }

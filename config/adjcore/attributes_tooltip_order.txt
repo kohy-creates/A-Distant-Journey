@@ -4,5 +4,7 @@ minecraft:generic.attack_damage
 kubejs:ranged_damage
 minecraft:generic.attack_speed
 minecraft:generic.armor
+attributeslib:crit_chance
+attributeslib:crit_damage
 adjcore:generic.damage_reduction
 adjcore:generic.projectile_damage_reduction

@@ -358,5 +358,7 @@
 		"ancient_aether:grape_vine": "minecraft:air",
 		"aether_redux:fieldsproot_petals": "minecraft:air",
 		"twilightforest:iron_ladder": "quark:iron_ladder",
+
+		// "snowrealmagic:snow": "minecraft:snow",
 	}
 }

@@ -2,56 +2,79 @@
 	"eye.appear_choir": {
 		"sounds": [
 			{
-				"name": "adj:eye/appear_choir",
-				"stream": false
+				"name": "adj:eye/appear_choir"
 			}
 		]
 	},
 	"eye.appear": {
 		"sounds": [
 			{
-				"name": "adj:eye/appear",
-				"stream": false
+				"name": "adj:eye/appear"
 			}
 		]
 	},
 	"eye.collect": {
 		"sounds": [
 			{
-				"name": "adj:eye/collect",
-				"stream": false
+				"name": "adj:eye/collect"
 			}
 		]
 	},
 	"eye.collect_bg": {
 		"sounds": [
 			{
-				"name": "adj:eye/collect_bg",
-				"stream": false
+				"name": "adj:eye/collect_bg"
 			}
 		]
 	},
 	"eye.loop": {
 		"sounds": [
 			{
-				"name": "adj:eye/loop",
-				"stream": false
+				"name": "adj:eye/loop"
 			}
 		]
 	},
 	"eye.prepare_spawn": {
 		"sounds": [
 			{
-				"name": "adj:eye/prepare_spawn",
-				"stream": false
+				"name": "adj:eye/prepare_spawn"
 			}
 		]
 	},
 	"summoning_altar_spawn": {
 		"sounds": [
 			{
-				"name": "adj:summoning_altar_spawn",
-				"stream": false
+				"name": "adj:summoning_altar_spawn"
+			}
+		]
+	},
+	"item.last_laugh.drop_loot": {
+		"sounds": [
+			{
+				"name": "adj:item/last_laugh_spawn_loot"
+			}
+		]
+	},
+	"item.veiled_crossbow.shoot": {
+		"sounds": [
+			{
+				"name": "adj:item/veiled_crossbow_shoot_1"
+			},
+			{
+				"name": "adj:item/veiled_crossbow_shoot_2"
+			},
+			{
+				"name": "adj:item/veiled_crossbow_shoot_3"
+			}
+		]
+	},
+	"generic.critial_hit": {
+		"sounds": [
+			{
+				"name": "adj:entity/crit_strike_1"
+			},
+			{
+				"name": "adj:entity/crit_strike_2"
 			}
 		]
 	}

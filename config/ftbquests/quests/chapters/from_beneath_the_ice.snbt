@@ -151,7 +151,10 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["1A27ABCC4980970F"]
+			dependencies: [
+				"1A27ABCC4980970F"
+				"20130F300D432015"
+			]
 			hide_until_deps_complete: true
 			id: "2363640DE385B123"
 			subtitle: "Find an Illager Ship and retrieve a Shell Horn"
@@ -268,7 +271,7 @@
 				type: "questsadditions:use"
 				value: 1L
 			}]
-			title: "Cornelia's Treaures"
+			title: "Deep Sea Treasures"
 			x: -2.0d
 			y: -5.5d
 		}

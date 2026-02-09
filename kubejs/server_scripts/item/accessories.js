@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
 			I: 'iron_ingot',
 			L: 'heart_crystals:heart_crystal'
 		}
-	)
+	).id('adj:band_of_regeneration')
 
 	event.shaped(
 		'terra_curio:obsidian_skull',
@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
 			O: 'obsidian',
 			S: 'skeleton_skull'
 		}
-	)
+	).id('adj:obsidian_skull')
 
 	event.shaped(
 		'terra_curio:shark_tooth_necklace',
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
 			T: 'alexsmobs:shark_tooth',
 			S: 'string'
 		}
-	)
+	).id('adj:shark_tooth_necklace')
 
 	event.shaped(
 		'terra_curio:aglet',
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
 			T: 'mythicmetals:tin_ingot',
 			B: 'mythicmetals:bronze_ingot'
 		}
-	)
+	).id('adj:aglet')
 
 	event.shaped(
 		'terra_curio:cobalt_shield',
@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
 		{
 			S: 'mythicmetals:steel_ingot'
 		}
-	)
+	).id('adj:heavy_steel_shield')
 
 	event.shaped(
 		'terra_curio:shiny_red_balloon',
@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
 			L: 'leather',
 			R: 'red_dye'
 		}
-	)
+	).id('adj:shiny_red_balloon')
 
 	event.shaped(
 		'terra_curio:lucky_horseshoe',
@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
 		{
 			G: 'mythicmetals:midas_gold_ingot'
 		}
-	)
+	).id('adj:lucky_horseshoe')
 
 	event.shaped(
 		'terra_curio:rifle_scope',
@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
 			B: 'mythicmetals:steel_ingot',
 			S: 'spyglass'
 		}
-	)
+	).id('adj:rifle_scope')
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
@@ -191,7 +191,7 @@ ServerEvents.recipes(event => {
 		'glass_bottle',
 		'terra_curio:cloud_in_a_bottle',
 		100
-	)
+	).id('adj:cloud_in_a_bottle')
 
 	// event.recipes.ars_nouveau.enchanting_apparatus(
 	// 	[
@@ -222,7 +222,7 @@ ServerEvents.recipes(event => {
 		"result": {
 			"item": "terra_curio:fart_in_a_jar"
 		}
-	})
+	}).id('adj:fart_in_a_jar')
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
@@ -238,24 +238,24 @@ ServerEvents.recipes(event => {
 		'terra_curio:cloud_in_a_bottle',
 		'terra_curio:blizzard_in_a_bottle',
 		500
-	)
+	).id('adj:blizzard_in_a_bottle')
 
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
-			'#c:sands',
-			'#c:sands',
-			'#c:sands',
-			'#c:sands',
-			'#c:sands',
-			'#c:sands',
-			'#c:sands',
-			'#c:sands'
+			'#sand',
+			'#sand',
+			'#sand',
+			'#sand',
+			'#sand',
+			'#sand',
+			'#sand',
+			'#sand'
 		],
 		'terra_curio:cloud_in_a_bottle',
 		'terra_curio:sandstorm_in_a_bottle',
 		1000
-	)
+	).id('adj:sandstorm_in_a_bottle')
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
@@ -266,17 +266,17 @@ ServerEvents.recipes(event => {
 		'rediscovered:rose',
 		'terra_curio:obsidian_rose',
 		200
-	)
+	).id('adj:obsidian_rose')
 
 	event.recipes.botania.mana_infusion(
 		'terra_curio:titan_glove',
 		'terra_curio:feral_claws',
-	).mana(50000)
+	).mana(150000).id('adj:titan_glove')
 
 	event.recipes.botania.mana_infusion(
 		'terra_curio:paladins_shield',
 		'terra_curio:cobalt_shield',
-	).mana(500000)
+	).mana(750000).id('adj:paladins_shield')
 
 	event.recipes.botania.runic_altar(
 		'terra_curio:magma_stone',
@@ -289,22 +289,20 @@ ServerEvents.recipes(event => {
 			'mythicmetals:palladium_ingot'
 		],
 		15000
-	)
+	).id('adj:magma_stone')
 
 	event.recipes.botania.runic_altar(
 		'terra_curio:feral_claws',
 		[
 			'aether:leather_gloves',
-			'aether:iron_gloves',
 			'botania:rune_earth',
 			'botania:green_petal',
 			'botania:green_petal',
 			'botania:lime_petal',
-			'botania:lime_petal',
-			'mythicmetals:prometheum_ingot'
+			'botania:lime_petal'
 		],
 		15000
-	)
+	).id('adj:feral_claws')
 
 	event.recipes.botania.petal_apothecary(
 		'terra_curio:flower_boots',
@@ -320,7 +318,7 @@ ServerEvents.recipes(event => {
 			'botania:magenta_petal',
 			'botania:purple_petal',
 		]
-	)
+	).id('adj:flower_boots')
 
 	const inter = 'mythicmetals:steel_boots';
 	event.recipes.create.sequenced_assembly(
@@ -331,7 +329,7 @@ ServerEvents.recipes(event => {
 			event.recipes.create.deploying(inter, [inter, Item.of('iron_ingot')]),
 			event.recipes.create.deploying(inter, [inter, Item.of('blaze_powder')]),
 		]
-	).transitionalItem(inter).loops(3)
+	).transitionalItem(inter).loops(3).id('adj:rocket_boots')
 
 })
 
@@ -402,14 +400,12 @@ LootJS.modifiers(event => {
 		'born_in_chaos_v1:baby_spider',
 		'born_in_chaos_v1:baby_spider_controlled'
 	]).pool((pool) => {
-		pool.randomChance(0.03)
-		pool.addLoot(LootEntry.of('terra_curio:bezoar'))
+		pool.addLoot(LootEntry.of('terra_curio:bezoar').when(c => c.randomChance(0.03)))
 	})
 
 	event.addEntityLootModifier('minecraft:wither_skeleton')
 		.pool((pool) => {
-			pool.randomChance(0.03)
-			pool.addLoot(LootEntry.of('terra_curio:holy_water'))
+			pool.addLoot(LootEntry.of('terra_curio:holy_water').when(c => c.randomChance(0.03)))
 		})
 
 	event.addEntityLootModifier([
@@ -432,8 +428,7 @@ LootJS.modifiers(event => {
 		'witherstormmod:sickened_pig',
 		'witherstormmod:sickened_snow_golem',
 	]).pool((pool) => {
-		pool.randomChance(0.01)
-		pool.addLoot(LootEntry.of('terra_curio:holy_water'))
+		pool.addLoot(LootEntry.of('terra_curio:holy_water').when(c => c.randomChance(0.01)))
 	})
 
 	event.addEntityLootModifier([
@@ -448,11 +443,9 @@ LootJS.modifiers(event => {
 
 	])
 		.pool((pool) => {
-			pool.randomChance(0.01)
-			pool.addLoot(LootEntry.of('terra_curio:vitamins'))
+			pool.addLoot(LootEntry.of('terra_curio:vitamins').when(c => c.randomChance(0.01)))
 		}).pool((pool) => {
-			pool.randomChance(0.01)
-			pool.addLoot(LootEntry.of('terra_curio:shackle'))
+			pool.addLoot(LootEntry.of('terra_curio:shackle').when(c => c.randomChance(0.015)))
 		})
 
 	event.addEntityLootModifier([
@@ -460,78 +453,65 @@ LootJS.modifiers(event => {
 		'phantom'
 	])
 		.pool(pool => {
-			pool.randomChance(0.1);
-			pool.addLoot(LootEntry.of('terra_curio:blindfold'))
+			pool.addLoot(LootEntry.of('terra_curio:blindfold').when(c => c.randomChance(0.08)))
 		})
 
 	event.addEntityLootModifier('husk')
 		.pool((pool) => {
-			pool.randomChance(0.015)
-			pool.addLoot(LootEntry.of('terra_curio:energy_bar'))
+			pool.addLoot(LootEntry.of('terra_curio:energy_bar').when(c => c.randomChance(0.015)))
 		})
 
 	event.addEntityLootModifier('minecraft:phantom')
 		.pool((pool) => {
-			pool.randomChance(0.1)
-			pool.addLoot(LootEntry.of('terra_curio:energy_bar'))
+			pool.addLoot(LootEntry.of('terra_curio:energy_bar').when(c => c.randomChance(0.1)))
 		})
 
 	event.addEntityLootModifier(['minecraft:slime', 'minecraft:stray'])
 		.pool((pool) => {
-			pool.randomChance(0.02)
-			pool.addLoot(LootEntry.of('terra_curio:fast_clock'))
+			pool.addLoot(LootEntry.of('terra_curio:fast_clock').when(c => c.randomChance(0.02)))
 		})
 
 	event.addEntityLootModifier(['minecraft:stray'])
 		.pool((pool) => {
-			pool.randomChance(0.01)
-			pool.addLoot(LootEntry.of('terra_curio:ice_skates'))
+			pool.addLoot(LootEntry.of('terra_curio:ice_skates').when(c => c.randomChance(0.01)))
 		})
 		.pool((pool) => {
-			pool.randomChance(0.008)
-			pool.addLoot(LootEntry.of('terra_curio:flurry_boots'))
+			pool.addLoot(LootEntry.of('terra_curio:flurry_boots').when(c => c.randomChance(0.008)))
 		})
 
 	event.addEntityLootModifier(['minecraft:guardian'])
 		.pool((pool) => {
-			pool.randomChance(0.05)
-			pool.addLoot(LootEntry.of('terra_curio:hand_drill'))
+			pool.addLoot(LootEntry.of('terra_curio:hand_drill').when(c => c.randomChance(0.009)))
 		})
 
 	event.addEntityLootModifier(['minecraft:enderman'])
 		.pool((pool) => {
-			pool.randomChance(0.1)
-			pool.addLoot(LootEntry.of('terra_curio:trifold_map'))
+			pool.addLoot(LootEntry.of('terra_curio:trifold_map').when(c => c.randomChance(0.05)))
 		})
 
 	event.addEntityLootModifier(['minecraft:shulker'])
 		.pool((pool) => {
-			pool.randomChance(0.12)
-			pool.addLoot(LootEntry.of('terra_curio:shot_put'))
+			pool.addLoot(LootEntry.of('terra_curio:shot_put').when(c => c.randomChance(0.12)))
 		})
 
 	event.addEntityLootModifier(['born_in_chaos_v1:fallen_chaos_knight'])
 		.pool((pool) => {
-			pool.randomChance(0.15)
-			pool.addLoot(LootEntry.of('terra_curio:black_belt'))
+			pool.addLoot(LootEntry.of('terra_curio:black_belt').when(c => c.randomChance(0.15)))
 		})
 
 	event.addEntityLootModifier(['mutantmonsters:mutant_zombie'])
 		.pool((pool) => {
-			pool.randomChance(0.33)
-			pool.addLoot(LootEntry.of('terra_curio:flesh_knuckles'))
+			pool.addLoot(LootEntry.of('terra_curio:flesh_knuckles').when(c => c.randomChance(0.33)))
 		})
 
 	event.addEntityLootModifier(['minecraft:warden'])
 		.pool((pool) => {
-			pool.randomChance(1)
-			pool.addLoot(LootEntry.of('terra_curio:flashlight'))
+			pool.addLoot(LootEntry.of('terra_curio:flashlight').when(c => c.randomChance(1)))
 		})
 
 	event.addLootTableModifier(['minecraft:chests/ancient_city'])
 		.pool((pool) => {
-			pool.addLoot(LootEntry.of('terra_curio:flashlight'))
-				.randomChance(0.2)
+			pool.addLoot(LootEntry.of('terra_curio:flashlight').when(c => c.randomChance(0.2)))
 		})
 })
 

@@ -652,7 +652,7 @@ global.armorOverrides = {
 	},
 	'born_in_chaos_v1:dark_metal_armor': {
 		'generic.armor': {
-			values: [9, 12, 11, 8],
+			values: [10, 13, 12, 10],
 			operation: 0
 		},
 		'generic.knockback_resistance': {

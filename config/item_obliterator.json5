@@ -20,6 +20,9 @@
 		"tide:depth_meter",
 
 		"aquamirae:divider",
+		"aquamirae:poisoned_chakra",
+		"aquamirae:maze_rose",
+		"aquamirae:terrible_sword",
 
 		"aether:chainmail_gloves",
 
@@ -75,6 +78,10 @@
 		"twilightforest:charm_of_keeping_1",
 		"twilightforest:charm_of_keeping_2",
 		"twilightforest:charm_of_keeping_3",
+		"twilightforest:red_thread",
+		"twilightforest:crumble_horn",
+		
+		"alexscaves:beholder",
 
 		// "twilightforest:mangrove_log",
 		// "twilightforest:stripped_mangrove_log",
@@ -315,6 +322,7 @@
 		"cataclysm:stone_tile_slab",
 		"cataclysm:stone_tile_stairs",
 		"cataclysm:stone_tile_wall",
+		"cataclysm:cursed_bow",
 		"v_slab_compat:cataclysm/stone_tile_vertical_slab",
 
 		"netherexp:shotgun_fist",
@@ -1357,12 +1365,21 @@
 		"croptopia:milk_bottle",
 		"croptopia:knife",
 		"croptopia:milk_bottle",
-		"croptopia:mortar_and_pestile",
 		"croptopia:food_press",
 		"croptopia:cooking_pan",
 		"croptopia:cherry",
 		"croptopia:cherry_sapling",
 		"croptopia_additions:carbonation_machine",
+		"croptopia:beef_jerky",
+		"croptopia:pork_jerky",
+		"croptopia:frying_pan",
+		"croptopia:guide",
+		"croptopia:mortar_and_pestle",
+		"croptopia:walnut",
+
+		"delightftul:acorn",
+
+		"herbalbrews:stove",
 		
 		"ancient_aether:ancient_dungeon_key",
         "ancient_aether:ancient_sword",
@@ -1553,11 +1570,28 @@
         
 		"vinery:vinery_standard",
         "herbalbrews:herbalbrews_banner",
-        "lilis_lucky_lures:lilis_lucky_lures_banner",
         "v_slab_compat:vinery/grass_vertical_slab",
         "v_slab_compat:vinery/coarse_dirt_vertical_slab",
         "v_slab_compat:vinery/dirt_vertical_slab",
         "v_slab_compat:vinery/dirt_path_vertical_slab",
+
+		"minecraft:oak_shelf",
+		"minecraft:spruce_shelf",
+		"minecraft:birch_shelf",
+		"minecraft:jungle_shelf",
+		"minecraft:dark_oak_shelf",
+		"minecraft:acacia_shelf",
+		"minecraft:crimson_shelf",
+		"minecraft:warped_shelf",
+		"minecraft:cherry_shelf",
+		"minecraft:bamboo_shelf",
+		"minecraft:mangrove_shelf",
+		"minecraft:pale_oak_shelf",
+
+		"fnaf_plushie_remastered:sewing_table",
+
+		"accents:hermes_boots",
+		"accents:quiver"
 		
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

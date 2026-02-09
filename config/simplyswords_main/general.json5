@@ -3,7 +3,7 @@
 	"weaponImpactSoundsVolume": 0.4000000059604645,
 	"enableWeaponFootfalls": true,
 	"enablePassiveParticles": true,
-	"enableUniqueGemSockets": true,
+	"enableUniqueGemSockets": false,
 	"compatGobberEndWeaponsUnbreakable": true,
 	"compatEnableSpellPowerScaling": true
 }

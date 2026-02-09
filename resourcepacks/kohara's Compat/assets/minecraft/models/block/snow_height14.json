@@ -1,0 +1,38 @@
+{
+	"format_version": "1.21.11",
+	"parent": "block/thin_block",
+	"render_type": "cutout",
+	"textures": {
+		"1": "kohara:block/snow_overlay",
+		"particle": "block/snow",
+		"texture": "block/snow"
+	},
+	"elements": [
+		{
+			"from": [-0.03604, 0.1002, -0.03604],
+			"to": [16.03604, 14.1282, 16.03604],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.016, 0, -0.016]},
+			"faces": {
+				"north": {"uv": [0, 2, 16, 16], "texture": "#texture", "cullface": "north"},
+				"east": {"uv": [0, 2, 16, 16], "texture": "#texture", "cullface": "east"},
+				"south": {"uv": [0, 2, 16, 16], "texture": "#texture", "cullface": "south"},
+				"west": {"uv": [0, 2, 16, 16], "texture": "#texture", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#texture"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#texture", "cullface": "down"}
+			}
+		},
+		{
+			"from": [-0.03604, -15.9318, -0.03604],
+			"to": [16.03604, 0.1002, 16.03604],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.0722, -2.01805, -0.0722]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1", "cullface": "west"},
+				"up": {"uv": [9, 12, 9, 12], "texture": "#1", "cullface": "up"},
+				"down": {"uv": [16, 16, 14, 14], "texture": "#1", "cullface": "down"}
+			}
+		}
+	]
+}

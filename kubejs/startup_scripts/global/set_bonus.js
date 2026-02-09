@@ -49,7 +49,8 @@ global.setBonusMap = {
 	},
 	'minecraft:diamond': {
 		description: [
-			'Incoming damage reduced by 7%'
+			'Incoming damage reduced by 7%',
+			'5% increased critical strike chance'
 		],
 		effects: [
 			{
@@ -73,7 +74,7 @@ global.setBonusMap = {
 	'minecraft:netherite': {
 		description: [
 			'Incoming damage reduced by 7%',
-			'5% increased crit chance',
+			'5% increased critical strike chance',
 			'Become immune to fire'
 		],
 		effects: [
@@ -146,7 +147,7 @@ global.setBonusMap = {
 	'majruszsdifficulty:enderium': {
 		description: [
 			'Incoming damage reduced by 10%',
-			'10% increased crit chance',
+			'10% increased critical strike chance',
 			'Become immune to fire',
 			'You will be saved if you fall into the void'
 		],
@@ -179,7 +180,7 @@ global.setBonusMap = {
 	'mythicmetals:metallurgium': {
 		description: [
 			'Incoming damage reduced by 15%',
-			'15% increased crit chance',
+			'15% increased critical strike chance',
 			'Become immune to fire',
 		],
 		effects: [

@@ -210,21 +210,21 @@ ServerEvents.tags('item', restrictions => {
 	restrictions.add('adj:locked_until/light/chapter_1', global.stageRestrictions.chapter_1.light);
 	restrictions.add('adj:locked_until/exceptions/chapter_1', global.stageRestrictions.chapter_1.exceptions);
 
-	restrictions.add('adj:locked_until/chapter_2', global.stageRestrictions.chapter_1.list);
-	restrictions.add('adj:locked_until/light/chapter_2', global.stageRestrictions.chapter_1.light);
-	restrictions.add('adj:locked_until/exceptions/chapter_2', global.stageRestrictions.chapter_1.exceptions);
+	restrictions.add('adj:locked_until/chapter_2', global.stageRestrictions.chapter_2.list);
+	restrictions.add('adj:locked_until/light/chapter_2', global.stageRestrictions.chapter_2.light);
+	restrictions.add('adj:locked_until/exceptions/chapter_2', global.stageRestrictions.chapter_2.exceptions);
 
-	restrictions.add('adj:locked_until/chapter_3', global.stageRestrictions.chapter_1.list);
-	restrictions.add('adj:locked_until/light/chapter_3', global.stageRestrictions.chapter_1.light);
-	restrictions.add('adj:locked_until/exceptions/chapter_3', global.stageRestrictions.chapter_1.exceptions);
+	restrictions.add('adj:locked_until/chapter_3', global.stageRestrictions.chapter_3.list);
+	restrictions.add('adj:locked_until/light/chapter_3', global.stageRestrictions.chapter_3.light);
+	restrictions.add('adj:locked_until/exceptions/chapter_3', global.stageRestrictions.chapter_3.exceptions);
 
-	restrictions.add('adj:locked_until/chapter_4', global.stageRestrictions.chapter_1.list);
-	restrictions.add('adj:locked_until/light/chapter_4', global.stageRestrictions.chapter_1.light);
-	restrictions.add('adj:locked_until/exceptions/chapter_4', global.stageRestrictions.chapter_1.exceptions);
+	restrictions.add('adj:locked_until/chapter_4', global.stageRestrictions.chapter_4.list);
+	restrictions.add('adj:locked_until/light/chapter_4', global.stageRestrictions.chapter_4.light);
+	restrictions.add('adj:locked_until/exceptions/chapter_4', global.stageRestrictions.chapter_4.exceptions);
 
-	restrictions.add('adj:locked_until/chapter_5', global.stageRestrictions.chapter_1.list);
-	restrictions.add('adj:locked_until/light/chapter_5', global.stageRestrictions.chapter_1.light);
-	restrictions.add('adj:locked_until/exceptions/chapter_5', global.stageRestrictions.chapter_1.exceptions);
+	restrictions.add('adj:locked_until/chapter_5', global.stageRestrictions.chapter_5.list);
+	restrictions.add('adj:locked_until/light/chapter_5', global.stageRestrictions.chapter_5.light);
+	restrictions.add('adj:locked_until/exceptions/chapter_5', global.stageRestrictions.chapter_5.exceptions);
 
 
 })
@@ -298,7 +298,7 @@ ServerEvents.commandRegistry(event => {
 	 */
 	let jumpProgress = (player, server, chapter) => {
 
-		server.persistentData.chapters.put(STAGE_TO_SET, chapter)
+		server.persistentData.chapters.put(STAGE_TO_SET, `chapter_${chapter}`)
 
 		player.tell(Text.red('Jumped to chapter ' + chapter))
 		return 1

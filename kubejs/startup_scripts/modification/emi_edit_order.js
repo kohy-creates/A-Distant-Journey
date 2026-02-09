@@ -55,7 +55,8 @@ StartupEvents.postInit(event => {
 		bannerPatterns = [],
 		smithingTemplates = [],
 		spawnEggs = [],
-		archwoodLogs = [];
+		archwoodLogs = [],
+		mcdwItems = [];
 
 	const ignoredWoodTypes = [
 		'ecologics:azalea',
@@ -104,6 +105,9 @@ StartupEvents.postInit(event => {
 		else if (id.includes('spawn_egg')
 			|| id.endsWith('_se')) {
 			spawnEggs.push(id)
+		}
+		else if (id.includes('mcdw:')) {
+			mcdwItems.push(id);
 		}
 	});
 
@@ -364,7 +368,7 @@ StartupEvents.postInit(event => {
 				}
 				// This never worked for some reason
 				// Might fix it eventually
-				// /*
+				/*
 				case 'ars_nouveau:archwood': {
 					switch (furnitureType) {
 						case 'log': {
@@ -401,7 +405,7 @@ StartupEvents.postInit(event => {
 						}
 					}
 				}
-				// */
+				*/
 			}
 
 			// Replace _X_ placeholder with actual wood type (e.g. "oak")
@@ -481,6 +485,13 @@ StartupEvents.postInit(event => {
 
 	// })
 
+	let addAfter = "mythicmetals:celestium_elytra";
+	for (let item of mcdwItems.sort()) {
+		EMIEdit.push([addAfter, item]);
+		addAfter = item;
+
+	}
+
 	verticalSlabs.forEach(vSlab => {
 		for (let e = 0; e < EMIEdit.length; e++) {
 			let entry = EMIEdit[e];
@@ -494,7 +505,7 @@ StartupEvents.postInit(event => {
 	// Build EMI JSON
 	let edit = {
 		removed: [
-			// 'item:minecraft:enchanted_book',
+			'item:minecraft:enchanted_book',
 			'item:minecraft:suspicious_stew',
 			'item:minecraft:lingering_potion',
 			'item:minecraft:splash_potion',
@@ -504,7 +515,7 @@ StartupEvents.postInit(event => {
 		],
 		added: [],
 		filters: [
-			// '/minecraft:enchanted_book/',
+			'/minecraft:enchanted_book/',
 			'/minecraft:suspicious_stew/',
 			'/minecraft:lingering_potion/',
 			'/minecraft:splash_potion/',
@@ -532,7 +543,7 @@ StartupEvents.postInit(event => {
 	/** @type {Internal.Enchantment_[]} */
 	const allEnchants = $ForgeRegistries.ENCHANTMENTS.getValues().toArray().sort();
 
-	let addAfter = 'enchantinginfuser:enchanting_infuser'
+	addAfter = 'enchantinginfuser:enchanting_infuser'
 	for (let e = 0; e < allEnchants.length; e++) {
 		let enchant = allEnchants[e];
 
@@ -545,5 +556,5 @@ StartupEvents.postInit(event => {
 		addAfter = book;
 	}
 
-	JsonIO.write('kubejs/assets/emi/i/stacks/edit_item_order.json', edit);
+	JsonIO.write('kubejs/assets/emi/index/stacks/edit_item_order.json', edit);
 });

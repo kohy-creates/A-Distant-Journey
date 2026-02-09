@@ -13,18 +13,30 @@ StartupEvents.registry('mob_effect', registry => {
 	registry.create('rapid_healing')
 		.color(Color.of('#F82423'))
 		.beneficial()
-		.effectTick((entity, level) => {
-			if (entity.age % 10 == 0) {
-				entity.heal(1);
-			}
-		})
+		.modifyAttribute(
+			'adjcore:generic.health_regeneration',
+			'07d281d2-87ab-4078-b80f-d813aaf670c6',
+			2.0,
+			'addition'
+		)
 
 	registry.create('prometheum_regeneration')
 		.color(Color.of('#F82423'))
 		.beneficial()
-		.effectTick((entity, level) => {
-			if (entity.age % 20 == 0) {
-				entity.heal(0.5);
+		.modifyAttribute(
+			'adjcore:generic.health_regeneration',
+			'aeb5b123-26b9-454d-bff2-b80730a3369d',
+			0.5,
+			'addition'
+		)
+
+	registry.create('shadow_apparitions')
+		.color(Color.of('#5300c0'))
+		.harmful()
+		.effectTick((entity, amplifier) => {
+			if (Math.random() < (0.02 * (amplifier + 1))) {
+				entity.attack(entity.level.damageSources().magic(), 8 + level);
+				entity.level.playSound(null, entity.getPos(), 'simplyswords:dark_sword_attack_03');
 			}
 		})
 })

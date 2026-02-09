@@ -13,12 +13,9 @@ const drawerBlocks = [
 BlockEvents.placed(event => {
 	const block = event.getBlock();
 	const id = block.getId();
-
 	if (id.includes('functionalstorage')) {
-		console.log(id)
 		let server = event.getServer();
 		let pos = [block.x, block.y, block.z];
-
 		if (drawerBlocks.includes(id)) {
 			server.scheduleInTicks(1, () => {
 				server.runCommandSilent(

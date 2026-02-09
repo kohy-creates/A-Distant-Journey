@@ -57,9 +57,6 @@ net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
 net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
 }
 
-com.jab125.mpuc.client.gui.screen.changelog.NewChangelogScreen {
-}
-
 net.minecraft.client.gui.screens.CreditsAndAttributionScreen {
 }
 
@@ -79,5 +76,11 @@ com.plr.quitornot.client.screen.confirm.ConfirmScreen {
 }
 
 com.quickskin.mod.client.gui.screen.PlayerSkinMenuScreen {
+}
+
+com.jab125.mpuc.client.gui.screen.changelog.NewChangelogScreen {
+}
+
+top.theillusivec4.curios.client.gui.CuriosScreenV2 {
 }
 

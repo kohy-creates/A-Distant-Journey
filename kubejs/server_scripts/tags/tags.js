@@ -23,6 +23,7 @@ ServerEvents.tags('item', tags => {
 		'cataclysm:draugr_head',
 		/_fossil_head/,
 		'cataclysm:koboldediator_skull',
+		'accents:'
 
 	])
 
@@ -82,6 +83,9 @@ ServerEvents.tags('item', tags => {
 		'just_blahaj:gay_blahaj',
 		'just_blahaj:enby_blahaj',
 		'just_blahaj:gender_fluid_blahaj',
+		'just_blahaj:ace_blahaj',
+		'just_blahaj:aromantic_blahaj',
+		'just_blahaj:aroace_blahaj',
 	])
 
 	tags.add('adj:basic_furnaces', [
@@ -281,6 +285,52 @@ ServerEvents.tags('item', tags => {
 
 	tags.add('witherstormmod:cure_base', [
 		'#c:slime_balls'
+	])
+
+	tags.add('forge:salts', [
+		'galosphere:pink_salt_shard'
+	])
+
+	tags.add('mythicmetals:osmium_equipment', [
+		'mythicmetals:osmium_chainmail_helmet',
+		'mythicmetals:osmium_chainmail_chestplate',
+		'mythicmetals:osmium_chainmail_leggings',
+		'mythicmetals:osmium_chainmail_boots'
+	])
+
+	tags.add('forge:rums', [
+		/.*delight.*:.*_rum/
+	])
+
+	tags.add('forge:wines', [
+		'vinery:red_wine'
+	])
+
+	tags.add('twilightforest:dark_logs', [
+		'#twilightforest:darkwood_logs'
+	])
+
+	tags.add('twilightforest:time_logs', [
+		'#twilightforest:timewood_logs'
+	])
+
+	tags.add('twilightforest:transformation_logs', [
+		'#twilightforest:transwood_logs'
+	])
+
+	tags.add('adj:salt', [
+		'galosphere:pink_salt',
+		'galosphere:rose_pink_salt',
+		'galosphere:pastel_pink_salt',
+	])
+
+	tags.remove('c:chests', [
+		'evilcraft:blood_chest'
+	])
+
+	tags.add('adj:boss_trophy', [
+		/twilightforest:.*trophy/,
+		/umbral_skies:.*trophy/,
 	])
 })
 

@@ -1,5 +1,6 @@
 {
 	"removed": [
+		"item:minecraft:enchanted_book",
 		"item:minecraft:suspicious_stew",
 		"item:minecraft:lingering_potion",
 		"item:minecraft:splash_potion",
@@ -36,6 +37,9 @@
 		"item:sortilege:limitite",
 		"item:dummmmmmy:target_dummy",
 		"item:create:experience_block",
+		"item:botania:rune_mana",
+		"item:botanicadds:rune_tp",
+		"item:botania:rune_energy",
 		"item:supplementaries:flag_pink",
 		"item:supplementaries:flag_purple",
 		"item:supplementaries:flag_brown",
@@ -1322,43 +1326,6 @@
 		"item:supplementaries:sign_post_dark_oak",
 		"item:minecraft:dark_oak_hanging_sign",
 		"item:minecraft:dark_oak_boat",
-		"item:minecraft:mangrove_log",
-		"item:minecraft:mangrove_wood",
-		"item:quark:mangrove_post",
-		"item:quark:stripped_mangrove_post",
-		"item:minecraft:mangrove_planks",
-		"item:architects_palette:mangrove_boards",
-		"item:quark:mangrove_bookshelf",
-		"item:handcrafted:mangrove_bench",
-		"item:handcrafted:mangrove_chair",
-		"item:handcrafted:mangrove_couch",
-		"item:handcrafted:mangrove_dining_bench",
-		"item:handcrafted:mangrove_side_table",
-		"item:handcrafted:mangrove_desk",
-		"item:handcrafted:mangrove_nightstand",
-		"item:handcrafted:mangrove_table",
-		"item:handcrafted:mangrove_counter",
-		"item:farmersdelight:mangrove_cabinet",
-		"item:twilightdelight:mangrove_cabinet",
-		"item:quark:mangrove_chest",
-		"item:handcrafted:mangrove_fancy_bed",
-		"item:minecraft:mangrove_stairs",
-		"item:minecraft:mangrove_slab",
-		"item:quark:mangrove_vertical_slab",
-		"item:suppsquared:item_shelf_mangrove",
-		"item:minecraft:mangrove_fence",
-		"item:architects_palette:mangrove_railing",
-		"item:minecraft:mangrove_fence_gate",
-		"item:minecraft:mangrove_door",
-		"item:minecraft:mangrove_trapdoor",
-		"item:quark:mangrove_ladder",
-		"item:hearth_and_home:mangrove_lattice",
-		"item:minecraft:mangrove_pressure_plate",
-		"item:minecraft:mangrove_button",
-		"item:minecraft:mangrove_sign",
-		"item:supplementaries:sign_post_mangrove",
-		"item:minecraft:mangrove_hanging_sign",
-		"item:minecraft:mangrove_boat",
 		"item:minecraft:cherry_log",
 		"item:minecraft:cherry_wood",
 		"item:quark:cherry_post",
@@ -1953,26 +1920,13 @@
 		"item:upgrade_aquatic:driftwood",
 		"item:upgrade_aquatic:stripped_driftwood",
 		"item:upgrade_aquatic:driftwood_planks",
-		"item:everycomp:ap/upgrade_aquatic/driftwood_boards",
 		"item:upgrade_aquatic:driftwood_bookshelf",
-		"item:everycomp:hc/upgrade_aquatic/driftwood_bench",
-		"item:everycomp:hc/upgrade_aquatic/driftwood_chair",
-		"item:everycomp:hc/upgrade_aquatic/driftwood_couch",
-		"item:everycomp:hc/upgrade_aquatic/driftwood_dining_bench",
-		"item:everycomp:hc/upgrade_aquatic/driftwood_side_table",
-		"item:everycomp:hc/upgrade_aquatic/driftwood_desk",
-		"item:everycomp:hc/upgrade_aquatic/driftwood_nightstand",
-		"item:everycomp:hc/upgrade_aquatic/driftwood_table",
-		"item:everycomp:hc/upgrade_aquatic/driftwood_counter",
 		"item:everycomp:fd/upgrade_aquatic/driftwood_cabinet",
 		"item:upgrade_aquatic:driftwood_chest",
-		"item:everycomp:hc/upgrade_aquatic/driftwood_fancy_bed",
 		"item:upgrade_aquatic:driftwood_stairs",
 		"item:upgrade_aquatic:driftwood_slab",
-		"item:v_slab_compat:upgrade_aquatic/driftwood_vertical_slab",
 		"item:suppsquared:upgrade_aquatic/item_shelf_driftwood",
 		"item:upgrade_aquatic:driftwood_fence",
-		"item:everycomp:ap/upgrade_aquatic/driftwood_railing",
 		"item:upgrade_aquatic:driftwood_fence_gate",
 		"item:upgrade_aquatic:driftwood_door",
 		"item:upgrade_aquatic:driftwood_trapdoor",
@@ -2698,35 +2652,17 @@
 		"item:ancient_aether:highsproot_boat",
 		"item:twilightforest:mangrove_log",
 		"item:twilightforest:mangrove_wood",
-		"item:quark:mangrove_post",
-		"item:quark:stripped_mangrove_post",
 		"item:twilightforest:mangrove_planks",
-		"item:architects_palette:mangrove_boards",
-		"item:quark:mangrove_bookshelf",
-		"item:handcrafted:mangrove_bench",
-		"item:handcrafted:mangrove_chair",
-		"item:handcrafted:mangrove_couch",
-		"item:handcrafted:mangrove_dining_bench",
-		"item:handcrafted:mangrove_side_table",
-		"item:handcrafted:mangrove_desk",
-		"item:handcrafted:mangrove_nightstand",
-		"item:handcrafted:mangrove_table",
-		"item:handcrafted:mangrove_counter",
 		"item:farmersdelight:mangrove_cabinet",
 		"item:twilightdelight:mangrove_cabinet",
 		"item:twilightforest:mangrove_chest",
-		"item:quark:mangrove_chest",
-		"item:handcrafted:mangrove_fancy_bed",
 		"item:twilightforest:mangrove_stairs",
 		"item:twilightforest:mangrove_slab",
-		"item:quark:mangrove_vertical_slab",
 		"item:suppsquared:item_shelf_mangrove",
 		"item:twilightforest:mangrove_fence",
-		"item:architects_palette:mangrove_railing",
 		"item:twilightforest:mangrove_fence_gate",
 		"item:twilightforest:mangrove_door",
 		"item:twilightforest:mangrove_trapdoor",
-		"item:quark:mangrove_ladder",
 		"item:hearth_and_home:mangrove_lattice",
 		"item:twilightforest:mangrove_pressure_plate",
 		"item:twilightforest:mangrove_button",
@@ -2841,6 +2777,24 @@
 		"item:twilightforest:canopy_boat",
 		"item:nethervinery:crested_crimson_planks",
 		"item:nethervinery:crested_warped_planks",
+		"item:minecraft:mangrove_log",
+		"item:minecraft:mangrove_wood",
+		"item:minecraft:mangrove_planks",
+		"item:farmersdelight:mangrove_cabinet",
+		"item:minecraft:mangrove_stairs",
+		"item:minecraft:mangrove_slab",
+		"item:suppsquared:item_shelf_mangrove",
+		"item:minecraft:mangrove_fence",
+		"item:minecraft:mangrove_fence_gate",
+		"item:minecraft:mangrove_door",
+		"item:minecraft:mangrove_trapdoor",
+		"item:hearth_and_home:mangrove_lattice",
+		"item:minecraft:mangrove_pressure_plate",
+		"item:minecraft:mangrove_button",
+		"item:minecraft:mangrove_sign",
+		"item:supplementaries:sign_post_mangrove",
+		"item:minecraft:mangrove_hanging_sign",
+		"item:minecraft:mangrove_boat",
 		"item:twilightforest:twilight_oak_log",
 		"item:twilightforest:twilight_oak_wood",
 		"item:everycomp:q/twilightforest/twilight_oak_post",
@@ -3041,6 +2995,53 @@
 		"item:supplementaries:twilightforest/sign_post_sorting",
 		"item:twilightforest:sorting_hanging_sign",
 		"item:twilightforest:sorting_boat",
+		"item:mcdw:axe_anchor",
+		"item:mcdw:axe_encrusted_anchor",
+		"item:mcdw:bow_bonebow",
+		"item:mcdw:bow_call_of_the_void",
+		"item:mcdw:bow_elite_power_bow",
+		"item:mcdw:bow_phantom_bow",
+		"item:mcdw:bow_power_bow",
+		"item:mcdw:bow_sabrewing",
+		"item:mcdw:bow_twisting_vine_bow",
+		"item:mcdw:bow_weeping_vine_bow",
+		"item:mcdw:crossbow_azure_seeker",
+		"item:mcdw:crossbow_butterfly_crossbow",
+		"item:mcdw:crossbow_exploding_crossbow",
+		"item:mcdw:crossbow_firebolt_thrower",
+		"item:mcdw:crossbow_heavy_crossbow",
+		"item:mcdw:crossbow_imploding_crossbow",
+		"item:mcdw:crossbow_pride_of_the_piglins",
+		"item:mcdw:crossbow_slayer_crossbow",
+		"item:mcdw:crossbow_veiled_crossbow",
+		"item:mcdw:dagger_backstabber",
+		"item:mcdw:dagger_fangs_of_frost",
+		"item:mcdw:dagger_resolute_tempest_knife",
+		"item:mcdw:dagger_swift_striker",
+		"item:mcdw:dagger_void_touched_blade",
+		"item:mcdw:glaive_cackling_broom",
+		"item:mcdw:glaive_grave_bane",
+		"item:mcdw:glaive_venom_glaive",
+		"item:mcdw:hammer_bone_cudgel",
+		"item:mcdw:hammer_boneclub",
+		"item:mcdw:hammer_gravity",
+		"item:mcdw:hammer_great_hammer",
+		"item:mcdw:hammer_stormlander",
+		"item:mcdw:scythe_frost_scythe",
+		"item:mcdw:scythe_jailors_scythe",
+		"item:mcdw:scythe_skull_scythe",
+		"item:mcdw:scythe_soul_scythe",
+		"item:mcdw:sickle_last_laugh_gold",
+		"item:mcdw:sickle_last_laugh_silver",
+		"item:mcdw:sickle_nightmares_bite",
+		"item:mcdw:sickle_sickle",
+		"item:mcdw:soul_dagger_eternal_knife",
+		"item:mcdw:soul_dagger_soul_knife",
+		"item:mcdw:soul_dagger_truthseeker",
+		"item:mcdw:staff_battlestaff",
+		"item:mcdw:sword_heartstealer",
+		"item:mcdw:sword_obsidian_claymore",
+		"item:mcdw:sword_sinister",
 		"item:v_slab_compat:witherstormmod/tainted_stone_vertical_slab",
 		"item:v_slab_compat:botania/red_pavement_vertical_slab",
 		"item:v_slab_compat:botania/metamorphic_plains_bricks_vertical_slab",
@@ -3111,6 +3112,7 @@
 		"item:v_slab_compat:rediscovered/grass_vertical_slab",
 		"item:v_slab_compat:create/waxed_oxidized_copper_shingle_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/terracotta_brick_vertical_slab",
+		"item:v_slab_compat:upgrade_aquatic/driftwood_vertical_slab",
 		"item:v_slab_compat:botania/metamorphic_forest_cobblestone_vertical_slab",
 		"item:v_slab_compat:netherexp/soul_slate_brick_vertical_slab",
 		"item:v_slab_compat:born_in_chaos_v1/black_argillite_brick_vertical_slab",
@@ -3529,6 +3531,18 @@
 		{
 			"stack": "item:create:experience_block",
 			"after": "item:ars_nouveau:greater_experience_gem"
+		},
+		{
+			"stack": "item:botania:rune_mana",
+			"after": "item:botania:rune_air"
+		},
+		{
+			"stack": "item:botanicadds:rune_tp",
+			"after": "item:botania:rune_mana"
+		},
+		{
+			"stack": "item:botania:rune_energy",
+			"after": "item:botanicadds:rune_tp"
 		},
 		{
 			"stack": "item:supplementaries:flag_pink",
@@ -8675,156 +8689,8 @@
 			"after": "item:minecraft:dark_oak_hanging_sign"
 		},
 		{
-			"stack": "item:minecraft:mangrove_log",
-			"after": "item:minecraft:dark_oak_boat"
-		},
-		{
-			"stack": "item:minecraft:mangrove_wood",
-			"after": "item:minecraft:mangrove_log"
-		},
-		{
-			"stack": "item:quark:mangrove_post",
-			"after": "item:minecraft:mangrove_wood"
-		},
-		{
-			"stack": "item:quark:stripped_mangrove_post",
-			"after": "item:quark:mangrove_post"
-		},
-		{
-			"stack": "item:minecraft:mangrove_planks",
-			"after": "item:quark:stripped_mangrove_post"
-		},
-		{
-			"stack": "item:architects_palette:mangrove_boards",
-			"after": "item:minecraft:mangrove_planks"
-		},
-		{
-			"stack": "item:quark:mangrove_bookshelf",
-			"after": "item:architects_palette:mangrove_boards"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_bench",
-			"after": "item:quark:mangrove_bookshelf"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_chair",
-			"after": "item:handcrafted:mangrove_bench"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_couch",
-			"after": "item:handcrafted:mangrove_chair"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_dining_bench",
-			"after": "item:handcrafted:mangrove_couch"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_side_table",
-			"after": "item:handcrafted:mangrove_dining_bench"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_desk",
-			"after": "item:handcrafted:mangrove_side_table"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_nightstand",
-			"after": "item:handcrafted:mangrove_desk"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_table",
-			"after": "item:handcrafted:mangrove_nightstand"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_counter",
-			"after": "item:handcrafted:mangrove_table"
-		},
-		{
-			"stack": "item:farmersdelight:mangrove_cabinet",
-			"after": "item:handcrafted:mangrove_counter"
-		},
-		{
-			"stack": "item:twilightdelight:mangrove_cabinet",
-			"after": "item:farmersdelight:mangrove_cabinet"
-		},
-		{
-			"stack": "item:quark:mangrove_chest",
-			"after": "item:twilightdelight:mangrove_cabinet"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_fancy_bed",
-			"after": "item:quark:mangrove_chest"
-		},
-		{
-			"stack": "item:minecraft:mangrove_stairs",
-			"after": "item:handcrafted:mangrove_fancy_bed"
-		},
-		{
-			"stack": "item:minecraft:mangrove_slab",
-			"after": "item:minecraft:mangrove_stairs"
-		},
-		{
-			"stack": "item:quark:mangrove_vertical_slab",
-			"after": "item:minecraft:mangrove_slab"
-		},
-		{
-			"stack": "item:suppsquared:item_shelf_mangrove",
-			"after": "item:quark:mangrove_vertical_slab"
-		},
-		{
-			"stack": "item:minecraft:mangrove_fence",
-			"after": "item:suppsquared:item_shelf_mangrove"
-		},
-		{
-			"stack": "item:architects_palette:mangrove_railing",
-			"after": "item:minecraft:mangrove_fence"
-		},
-		{
-			"stack": "item:minecraft:mangrove_fence_gate",
-			"after": "item:architects_palette:mangrove_railing"
-		},
-		{
-			"stack": "item:minecraft:mangrove_door",
-			"after": "item:minecraft:mangrove_fence_gate"
-		},
-		{
-			"stack": "item:minecraft:mangrove_trapdoor",
-			"after": "item:minecraft:mangrove_door"
-		},
-		{
-			"stack": "item:quark:mangrove_ladder",
-			"after": "item:minecraft:mangrove_trapdoor"
-		},
-		{
-			"stack": "item:hearth_and_home:mangrove_lattice",
-			"after": "item:quark:mangrove_ladder"
-		},
-		{
-			"stack": "item:minecraft:mangrove_pressure_plate",
-			"after": "item:hearth_and_home:mangrove_lattice"
-		},
-		{
-			"stack": "item:minecraft:mangrove_button",
-			"after": "item:minecraft:mangrove_pressure_plate"
-		},
-		{
-			"stack": "item:minecraft:mangrove_sign",
-			"after": "item:minecraft:mangrove_button"
-		},
-		{
-			"stack": "item:supplementaries:sign_post_mangrove",
-			"after": "item:minecraft:mangrove_sign"
-		},
-		{
-			"stack": "item:minecraft:mangrove_hanging_sign",
-			"after": "item:supplementaries:sign_post_mangrove"
-		},
-		{
-			"stack": "item:minecraft:mangrove_boat",
-			"after": "item:minecraft:mangrove_hanging_sign"
-		},
-		{
 			"stack": "item:minecraft:cherry_log",
-			"after": "item:minecraft:mangrove_boat"
+			"after": "item:minecraft:dark_oak_boat"
 		},
 		{
 			"stack": "item:minecraft:cherry_wood",
@@ -11199,88 +11065,36 @@
 			"after": "item:upgrade_aquatic:stripped_driftwood"
 		},
 		{
-			"stack": "item:everycomp:ap/upgrade_aquatic/driftwood_boards",
+			"stack": "item:upgrade_aquatic:driftwood_bookshelf",
 			"after": "item:upgrade_aquatic:driftwood_planks"
 		},
 		{
-			"stack": "item:upgrade_aquatic:driftwood_bookshelf",
-			"after": "item:everycomp:ap/upgrade_aquatic/driftwood_boards"
-		},
-		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_bench",
-			"after": "item:upgrade_aquatic:driftwood_bookshelf"
-		},
-		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_chair",
-			"after": "item:everycomp:hc/upgrade_aquatic/driftwood_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_couch",
-			"after": "item:everycomp:hc/upgrade_aquatic/driftwood_chair"
-		},
-		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_dining_bench",
-			"after": "item:everycomp:hc/upgrade_aquatic/driftwood_couch"
-		},
-		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_side_table",
-			"after": "item:everycomp:hc/upgrade_aquatic/driftwood_dining_bench"
-		},
-		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_desk",
-			"after": "item:everycomp:hc/upgrade_aquatic/driftwood_side_table"
-		},
-		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_nightstand",
-			"after": "item:everycomp:hc/upgrade_aquatic/driftwood_desk"
-		},
-		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_table",
-			"after": "item:everycomp:hc/upgrade_aquatic/driftwood_nightstand"
-		},
-		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_counter",
-			"after": "item:everycomp:hc/upgrade_aquatic/driftwood_table"
-		},
-		{
 			"stack": "item:everycomp:fd/upgrade_aquatic/driftwood_cabinet",
-			"after": "item:everycomp:hc/upgrade_aquatic/driftwood_counter"
+			"after": "item:upgrade_aquatic:driftwood_bookshelf"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood_chest",
 			"after": "item:everycomp:fd/upgrade_aquatic/driftwood_cabinet"
 		},
 		{
-			"stack": "item:everycomp:hc/upgrade_aquatic/driftwood_fancy_bed",
-			"after": "item:upgrade_aquatic:driftwood_chest"
-		},
-		{
 			"stack": "item:upgrade_aquatic:driftwood_stairs",
-			"after": "item:everycomp:hc/upgrade_aquatic/driftwood_fancy_bed"
+			"after": "item:upgrade_aquatic:driftwood_chest"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood_slab",
 			"after": "item:upgrade_aquatic:driftwood_stairs"
 		},
 		{
-			"stack": "item:v_slab_compat:upgrade_aquatic/driftwood_vertical_slab",
-			"after": "item:upgrade_aquatic:driftwood_slab"
-		},
-		{
 			"stack": "item:suppsquared:upgrade_aquatic/item_shelf_driftwood",
-			"after": "item:v_slab_compat:upgrade_aquatic/driftwood_vertical_slab"
+			"after": "item:upgrade_aquatic:driftwood_slab"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood_fence",
 			"after": "item:suppsquared:upgrade_aquatic/item_shelf_driftwood"
 		},
 		{
-			"stack": "item:everycomp:ap/upgrade_aquatic/driftwood_railing",
-			"after": "item:upgrade_aquatic:driftwood_fence"
-		},
-		{
 			"stack": "item:upgrade_aquatic:driftwood_fence_gate",
-			"after": "item:everycomp:ap/upgrade_aquatic/driftwood_railing"
+			"after": "item:upgrade_aquatic:driftwood_fence"
 		},
 		{
 			"stack": "item:upgrade_aquatic:driftwood_door",
@@ -14179,64 +13993,12 @@
 			"after": "item:twilightforest:mangrove_log"
 		},
 		{
-			"stack": "item:quark:mangrove_post",
+			"stack": "item:twilightforest:mangrove_planks",
 			"after": "item:twilightforest:mangrove_wood"
 		},
 		{
-			"stack": "item:quark:stripped_mangrove_post",
-			"after": "item:quark:mangrove_post"
-		},
-		{
-			"stack": "item:twilightforest:mangrove_planks",
-			"after": "item:quark:stripped_mangrove_post"
-		},
-		{
-			"stack": "item:architects_palette:mangrove_boards",
-			"after": "item:twilightforest:mangrove_planks"
-		},
-		{
-			"stack": "item:quark:mangrove_bookshelf",
-			"after": "item:architects_palette:mangrove_boards"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_bench",
-			"after": "item:quark:mangrove_bookshelf"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_chair",
-			"after": "item:handcrafted:mangrove_bench"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_couch",
-			"after": "item:handcrafted:mangrove_chair"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_dining_bench",
-			"after": "item:handcrafted:mangrove_couch"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_side_table",
-			"after": "item:handcrafted:mangrove_dining_bench"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_desk",
-			"after": "item:handcrafted:mangrove_side_table"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_nightstand",
-			"after": "item:handcrafted:mangrove_desk"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_table",
-			"after": "item:handcrafted:mangrove_nightstand"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_counter",
-			"after": "item:handcrafted:mangrove_table"
-		},
-		{
 			"stack": "item:farmersdelight:mangrove_cabinet",
-			"after": "item:handcrafted:mangrove_counter"
+			"after": "item:twilightforest:mangrove_planks"
 		},
 		{
 			"stack": "item:twilightdelight:mangrove_cabinet",
@@ -14247,40 +14009,24 @@
 			"after": "item:twilightdelight:mangrove_cabinet"
 		},
 		{
-			"stack": "item:quark:mangrove_chest",
-			"after": "item:twilightforest:mangrove_chest"
-		},
-		{
-			"stack": "item:handcrafted:mangrove_fancy_bed",
-			"after": "item:quark:mangrove_chest"
-		},
-		{
 			"stack": "item:twilightforest:mangrove_stairs",
-			"after": "item:handcrafted:mangrove_fancy_bed"
+			"after": "item:twilightforest:mangrove_chest"
 		},
 		{
 			"stack": "item:twilightforest:mangrove_slab",
 			"after": "item:twilightforest:mangrove_stairs"
 		},
 		{
-			"stack": "item:quark:mangrove_vertical_slab",
-			"after": "item:twilightforest:mangrove_slab"
-		},
-		{
 			"stack": "item:suppsquared:item_shelf_mangrove",
-			"after": "item:quark:mangrove_vertical_slab"
+			"after": "item:twilightforest:mangrove_slab"
 		},
 		{
 			"stack": "item:twilightforest:mangrove_fence",
 			"after": "item:suppsquared:item_shelf_mangrove"
 		},
 		{
-			"stack": "item:architects_palette:mangrove_railing",
-			"after": "item:twilightforest:mangrove_fence"
-		},
-		{
 			"stack": "item:twilightforest:mangrove_fence_gate",
-			"after": "item:architects_palette:mangrove_railing"
+			"after": "item:twilightforest:mangrove_fence"
 		},
 		{
 			"stack": "item:twilightforest:mangrove_door",
@@ -14291,12 +14037,8 @@
 			"after": "item:twilightforest:mangrove_door"
 		},
 		{
-			"stack": "item:quark:mangrove_ladder",
-			"after": "item:twilightforest:mangrove_trapdoor"
-		},
-		{
 			"stack": "item:hearth_and_home:mangrove_lattice",
-			"after": "item:quark:mangrove_ladder"
+			"after": "item:twilightforest:mangrove_trapdoor"
 		},
 		{
 			"stack": "item:twilightforest:mangrove_pressure_plate",
@@ -14751,8 +14493,80 @@
 			"after": "item:nethervinery:crested_crimson_planks"
 		},
 		{
-			"stack": "item:twilightforest:twilight_oak_log",
+			"stack": "item:minecraft:mangrove_log",
 			"after": "item:nethervinery:crested_warped_planks"
+		},
+		{
+			"stack": "item:minecraft:mangrove_wood",
+			"after": "item:minecraft:mangrove_log"
+		},
+		{
+			"stack": "item:minecraft:mangrove_planks",
+			"after": "item:minecraft:mangrove_wood"
+		},
+		{
+			"stack": "item:farmersdelight:mangrove_cabinet",
+			"after": "item:minecraft:mangrove_planks"
+		},
+		{
+			"stack": "item:minecraft:mangrove_stairs",
+			"after": "item:farmersdelight:mangrove_cabinet"
+		},
+		{
+			"stack": "item:minecraft:mangrove_slab",
+			"after": "item:minecraft:mangrove_stairs"
+		},
+		{
+			"stack": "item:suppsquared:item_shelf_mangrove",
+			"after": "item:minecraft:mangrove_slab"
+		},
+		{
+			"stack": "item:minecraft:mangrove_fence",
+			"after": "item:suppsquared:item_shelf_mangrove"
+		},
+		{
+			"stack": "item:minecraft:mangrove_fence_gate",
+			"after": "item:minecraft:mangrove_fence"
+		},
+		{
+			"stack": "item:minecraft:mangrove_door",
+			"after": "item:minecraft:mangrove_fence_gate"
+		},
+		{
+			"stack": "item:minecraft:mangrove_trapdoor",
+			"after": "item:minecraft:mangrove_door"
+		},
+		{
+			"stack": "item:hearth_and_home:mangrove_lattice",
+			"after": "item:minecraft:mangrove_trapdoor"
+		},
+		{
+			"stack": "item:minecraft:mangrove_pressure_plate",
+			"after": "item:hearth_and_home:mangrove_lattice"
+		},
+		{
+			"stack": "item:minecraft:mangrove_button",
+			"after": "item:minecraft:mangrove_pressure_plate"
+		},
+		{
+			"stack": "item:minecraft:mangrove_sign",
+			"after": "item:minecraft:mangrove_button"
+		},
+		{
+			"stack": "item:supplementaries:sign_post_mangrove",
+			"after": "item:minecraft:mangrove_sign"
+		},
+		{
+			"stack": "item:minecraft:mangrove_hanging_sign",
+			"after": "item:supplementaries:sign_post_mangrove"
+		},
+		{
+			"stack": "item:minecraft:mangrove_boat",
+			"after": "item:minecraft:mangrove_hanging_sign"
+		},
+		{
+			"stack": "item:twilightforest:twilight_oak_log",
+			"after": "item:minecraft:mangrove_boat"
 		},
 		{
 			"stack": "item:twilightforest:twilight_oak_wood",
@@ -15551,6 +15365,194 @@
 			"after": "item:twilightforest:sorting_hanging_sign"
 		},
 		{
+			"stack": "item:mcdw:axe_anchor",
+			"after": "item:mythicmetals:celestium_elytra"
+		},
+		{
+			"stack": "item:mcdw:axe_encrusted_anchor",
+			"after": "item:mcdw:axe_anchor"
+		},
+		{
+			"stack": "item:mcdw:bow_bonebow",
+			"after": "item:mcdw:axe_encrusted_anchor"
+		},
+		{
+			"stack": "item:mcdw:bow_call_of_the_void",
+			"after": "item:mcdw:bow_bonebow"
+		},
+		{
+			"stack": "item:mcdw:bow_elite_power_bow",
+			"after": "item:mcdw:bow_call_of_the_void"
+		},
+		{
+			"stack": "item:mcdw:bow_phantom_bow",
+			"after": "item:mcdw:bow_elite_power_bow"
+		},
+		{
+			"stack": "item:mcdw:bow_power_bow",
+			"after": "item:mcdw:bow_phantom_bow"
+		},
+		{
+			"stack": "item:mcdw:bow_sabrewing",
+			"after": "item:mcdw:bow_power_bow"
+		},
+		{
+			"stack": "item:mcdw:bow_twisting_vine_bow",
+			"after": "item:mcdw:bow_sabrewing"
+		},
+		{
+			"stack": "item:mcdw:bow_weeping_vine_bow",
+			"after": "item:mcdw:bow_twisting_vine_bow"
+		},
+		{
+			"stack": "item:mcdw:crossbow_azure_seeker",
+			"after": "item:mcdw:bow_weeping_vine_bow"
+		},
+		{
+			"stack": "item:mcdw:crossbow_butterfly_crossbow",
+			"after": "item:mcdw:crossbow_azure_seeker"
+		},
+		{
+			"stack": "item:mcdw:crossbow_exploding_crossbow",
+			"after": "item:mcdw:crossbow_butterfly_crossbow"
+		},
+		{
+			"stack": "item:mcdw:crossbow_firebolt_thrower",
+			"after": "item:mcdw:crossbow_exploding_crossbow"
+		},
+		{
+			"stack": "item:mcdw:crossbow_heavy_crossbow",
+			"after": "item:mcdw:crossbow_firebolt_thrower"
+		},
+		{
+			"stack": "item:mcdw:crossbow_imploding_crossbow",
+			"after": "item:mcdw:crossbow_heavy_crossbow"
+		},
+		{
+			"stack": "item:mcdw:crossbow_pride_of_the_piglins",
+			"after": "item:mcdw:crossbow_imploding_crossbow"
+		},
+		{
+			"stack": "item:mcdw:crossbow_slayer_crossbow",
+			"after": "item:mcdw:crossbow_pride_of_the_piglins"
+		},
+		{
+			"stack": "item:mcdw:crossbow_veiled_crossbow",
+			"after": "item:mcdw:crossbow_slayer_crossbow"
+		},
+		{
+			"stack": "item:mcdw:dagger_backstabber",
+			"after": "item:mcdw:crossbow_veiled_crossbow"
+		},
+		{
+			"stack": "item:mcdw:dagger_fangs_of_frost",
+			"after": "item:mcdw:dagger_backstabber"
+		},
+		{
+			"stack": "item:mcdw:dagger_resolute_tempest_knife",
+			"after": "item:mcdw:dagger_fangs_of_frost"
+		},
+		{
+			"stack": "item:mcdw:dagger_swift_striker",
+			"after": "item:mcdw:dagger_resolute_tempest_knife"
+		},
+		{
+			"stack": "item:mcdw:dagger_void_touched_blade",
+			"after": "item:mcdw:dagger_swift_striker"
+		},
+		{
+			"stack": "item:mcdw:glaive_cackling_broom",
+			"after": "item:mcdw:dagger_void_touched_blade"
+		},
+		{
+			"stack": "item:mcdw:glaive_grave_bane",
+			"after": "item:mcdw:glaive_cackling_broom"
+		},
+		{
+			"stack": "item:mcdw:glaive_venom_glaive",
+			"after": "item:mcdw:glaive_grave_bane"
+		},
+		{
+			"stack": "item:mcdw:hammer_bone_cudgel",
+			"after": "item:mcdw:glaive_venom_glaive"
+		},
+		{
+			"stack": "item:mcdw:hammer_boneclub",
+			"after": "item:mcdw:hammer_bone_cudgel"
+		},
+		{
+			"stack": "item:mcdw:hammer_gravity",
+			"after": "item:mcdw:hammer_boneclub"
+		},
+		{
+			"stack": "item:mcdw:hammer_great_hammer",
+			"after": "item:mcdw:hammer_gravity"
+		},
+		{
+			"stack": "item:mcdw:hammer_stormlander",
+			"after": "item:mcdw:hammer_great_hammer"
+		},
+		{
+			"stack": "item:mcdw:scythe_frost_scythe",
+			"after": "item:mcdw:hammer_stormlander"
+		},
+		{
+			"stack": "item:mcdw:scythe_jailors_scythe",
+			"after": "item:mcdw:scythe_frost_scythe"
+		},
+		{
+			"stack": "item:mcdw:scythe_skull_scythe",
+			"after": "item:mcdw:scythe_jailors_scythe"
+		},
+		{
+			"stack": "item:mcdw:scythe_soul_scythe",
+			"after": "item:mcdw:scythe_skull_scythe"
+		},
+		{
+			"stack": "item:mcdw:sickle_last_laugh_gold",
+			"after": "item:mcdw:scythe_soul_scythe"
+		},
+		{
+			"stack": "item:mcdw:sickle_last_laugh_silver",
+			"after": "item:mcdw:sickle_last_laugh_gold"
+		},
+		{
+			"stack": "item:mcdw:sickle_nightmares_bite",
+			"after": "item:mcdw:sickle_last_laugh_silver"
+		},
+		{
+			"stack": "item:mcdw:sickle_sickle",
+			"after": "item:mcdw:sickle_nightmares_bite"
+		},
+		{
+			"stack": "item:mcdw:soul_dagger_eternal_knife",
+			"after": "item:mcdw:sickle_sickle"
+		},
+		{
+			"stack": "item:mcdw:soul_dagger_soul_knife",
+			"after": "item:mcdw:soul_dagger_eternal_knife"
+		},
+		{
+			"stack": "item:mcdw:soul_dagger_truthseeker",
+			"after": "item:mcdw:soul_dagger_soul_knife"
+		},
+		{
+			"stack": "item:mcdw:staff_battlestaff",
+			"after": "item:mcdw:soul_dagger_truthseeker"
+		},
+		{
+			"stack": "item:mcdw:sword_heartstealer",
+			"after": "item:mcdw:staff_battlestaff"
+		},
+		{
+			"stack": "item:mcdw:sword_obsidian_claymore",
+			"after": "item:mcdw:sword_heartstealer"
+		},
+		{
+			"stack": "item:mcdw:sword_sinister",
+			"after": "item:mcdw:sword_obsidian_claymore"
+		},
+		{
 			"stack": "item:v_slab_compat:witherstormmod/tainted_stone_vertical_slab",
 			"after": "item:witherstormmod:tainted_stone_slab"
 		},
@@ -15829,6 +15831,10 @@
 		{
 			"stack": "item:v_slab_compat:hearth_and_home/terracotta_brick_vertical_slab",
 			"after": "item:hearth_and_home:terracotta_brick_slab"
+		},
+		{
+			"stack": "item:v_slab_compat:upgrade_aquatic/driftwood_vertical_slab",
+			"after": "item:upgrade_aquatic:driftwood_slab"
 		},
 		{
 			"stack": "item:v_slab_compat:botania/metamorphic_forest_cobblestone_vertical_slab",
@@ -17017,9 +17023,1026 @@
 		{
 			"stack": "item:v_slab_compat:hearth_and_home/yellow_shingle_vertical_slab",
 			"after": "item:hearth_and_home:yellow_shingle_slab"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_elemental:mirror_shield\", lvl:4s}]}",
+			"after": "item:enchantinginfuser:enchanting_infuser"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:chain_reaction\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_elemental:mirror_shield\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:cobweb_shot\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:chain_reaction\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:fuse_shot\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:cobweb_shot\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:gravity\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:fuse_shot\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:leeching\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:gravity\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:poison_cloud\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:leeching\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:replenish\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:poison_cloud\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:ricochet\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:replenish\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:rushdown\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:ricochet\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:shared_pain\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:rushdown\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:soul_devourer\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:shared_pain\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:soul_siphon\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:soul_devourer\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:stunning\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:soul_siphon\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:weakening\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:stunning\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:wild_rage\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:weakening\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"cofh_core:holding\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mcdw:wild_rage\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:air_affinity\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"cofh_core:holding\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:angler\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:air_affinity\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:bulwark\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:angler\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:cavalier\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:bulwark\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:damage_ender\", lvl:5s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:cavalier\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:damage_illager\", lvl:5s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:damage_ender\", lvl:5s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:damage_villager\", lvl:5s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:damage_illager\", lvl:5s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:displacement\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:damage_villager\", lvl:5s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:excavating\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:displacement\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:fire_rebuke\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:excavating\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:frost_aspect\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:fire_rebuke\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:frost_rebuke\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:frost_aspect\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:gourmand\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:frost_rebuke\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:hunter\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:gourmand\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:instigating\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:hunter\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:leech\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:instigating\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:magic_edge\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:leech\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:phalanx\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:magic_edge\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:pilfering\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:phalanx\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:magic_protection\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:pilfering\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:quick_draw\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:magic_protection\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:reach\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:quick_draw\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:soulbound\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:reach\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:trueshot\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:soulbound\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:vitality\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:trueshot\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:volley\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:vitality\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:vorpal\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:volley\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:xp_boost\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:vorpal\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:curse_fool\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:xp_boost\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:curse_mercy\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:curse_fool\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobsinteraction:lightweight\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:curse_mercy\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobsinteraction:stretchy_accumulation\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobsinteraction:lightweight\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobsinteraction:rolling_thunder\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobsinteraction:stretchy_accumulation\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobsinteraction:stabilizer\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobsinteraction:rolling_thunder\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sea_swing\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobsinteraction:stabilizer\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bonking\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sea_swing\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:herd_phalanx\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bonking\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:x_ray\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:herd_phalanx\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sharp_cane\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:x_ray\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:detonating_death\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sharp_cane\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:taxing_bellow\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:detonating_death\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:field_extension\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:taxing_bellow\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:tsunami\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:field_extension\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncy_ball\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:tsunami\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:enveloping_bubble\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncy_ball\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:far_flung\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:enveloping_bubble\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seekcandy\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:far_flung\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:explosive_flavor\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seekcandy\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:charting_call\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:explosive_flavor\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sated_blade\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:charting_call\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:lasting_morale\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sated_blade\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dazing_sweep\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:lasting_morale\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:straight_hook\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dazing_sweep\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:energy_efficiency\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:straight_hook\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:crystallization\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:energy_efficiency\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:rapid_possession\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:crystallization\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:swiftwood\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:rapid_possession\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:soak_seeking\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:swiftwood\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:relentless_darkness\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:soak_seeking\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:shaded_respite\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:relentless_darkness\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:multiple_mint\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:shaded_respite\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:ferrous_haste\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:multiple_mint\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:second_wave\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:ferrous_haste\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:humungous_hex\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:second_wave\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:twilight_perfection\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:humungous_hex\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:arrow_inducting\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:twilight_perfection\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:spell_lasting\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:arrow_inducting\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:heavy_slam\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:spell_lasting\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dark_nock\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:heavy_slam\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:plummeting_flight\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dark_nock\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:flinging\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:plummeting_flight\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sightless\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:flinging\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:precise_volley\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sightless\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_split\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:precise_volley\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:targeted_ricochet\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_split\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seapairing\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:targeted_ricochet\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:solar\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seapairing\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncing_bolt\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:solar\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_splash\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncing_bolt\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:gamma_ray\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_splash\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:peppermint_punting\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:gamma_ray\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:astral_transferring\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:peppermint_punting\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:double_stab\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:astral_transferring\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:chomping_spirit\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:double_stab\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:impending_stab\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:chomping_spirit\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:board_return\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:impending_stab\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:serpentfriend\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:board_return\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:lavawax\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:serpentfriend\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:straddle_jump\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:lavawax\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:shadow_hands\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:straddle_jump\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:disc_jockey\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:shadow_hands\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:speedster\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:disc_jockey\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:frost_fang\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:speedster\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:rejuvenation\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:frost_fang\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_boost\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:rejuvenation\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:psychic_wall\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_boost\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:chain_lightning\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:psychic_wall\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:linked_inventory\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:chain_lightning\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:defusal\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:linked_inventory\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_siphon\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:defusal\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:tethered_teleport\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_siphon\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:healing_aura\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:tethered_teleport\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:magnetic\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:healing_aura\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:gluttonous\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:magnetic\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:total_recall\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:gluttonous\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:deflection\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:total_recall\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:fireproof\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:deflection\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immunity_frame\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:fireproof\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:amphibious\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immunity_frame\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:intimidation\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:amphibious\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:herding\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:intimidation\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:poison_resistance\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:herding\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:warping_bite\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:poison_resistance\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blight_curse\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:warping_bite\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immaturity_curse\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blight_curse\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:infamy_curse\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immaturity_curse\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:undead_curse\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:infamy_curse\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blazing_protection\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:undead_curse\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:void_cloud\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blazing_protection\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:ore_scenting\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:void_cloud\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:muffled\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:ore_scenting\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:bubbling\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:muffled\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:vampire\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:bubbling\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:charisma\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:vampire\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:mana_boost\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:charisma\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:mana_regen\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:mana_boost\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:mana_regen\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"veinmining:vein_mining\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:reactive\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"rediscovered:rapid_shot\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"veinmining:vein_mining\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"backpacked:funnelling\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"rediscovered:rapid_shot\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"backpacked:imbued_hide\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"backpacked:funnelling\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"backpacked:looted\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"backpacked:imbued_hide\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"backpacked:marksman\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"backpacked:looted\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"backpacked:repairman\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"backpacked:marksman\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"obscure_api:distance\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"backpacked:repairman\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"obscure_api:fast_spin\", lvl:5s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"obscure_api:distance\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"obscure_api:mirror\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"obscure_api:fast_spin\", lvl:5s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"netherdepthsupgrade:hell_strider\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"obscure_api:mirror\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"create:capacity\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"netherdepthsupgrade:hell_strider\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"create:potato_recovery\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"create:capacity\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mynethersdelight:poaching\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"create:potato_recovery\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:alleviating\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"mynethersdelight:poaching\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:ascension_curse\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:alleviating\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:fleeting_curse\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:ascension_curse\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:launch\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:fleeting_curse\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:obedience\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:launch\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:reeling\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:obedience\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:reforming\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:reeling\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:shockwave\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:reforming\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:spread_of_ailments\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:shockwave\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:vengeance\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:spread_of_ailments\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:comb_cutter\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:vengeance\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:hive_lifeline\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:comb_cutter\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:neurotoxins\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:hive_lifeline\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:potent_poison\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:neurotoxins\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:reckless\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:potent_poison\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:echo\", lvl:5s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:reckless\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:prospector\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:echo\", lvl:5s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rapid_regen\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:prospector\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_strike\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rapid_regen\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_shot\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_strike\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:lucky_explorer\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_shot\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:cowardice\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:lucky_explorer\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:committed\", lvl:5s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:cowardice\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rampaging\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:committed\", lvl:5s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:radiance\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rampaging\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:leeching\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:radiance\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"additionaladditions:precision\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:leeching\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"additionaladditions:speed\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"additionaladditions:precision\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"betterarcheology:penetrating_strike\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"additionaladditions:speed\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"betterarcheology:soaring_winds\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"betterarcheology:penetrating_strike\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"betterarcheology:tunneling\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"betterarcheology:soaring_winds\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:multi_roll\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"betterarcheology:tunneling\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:acrobat\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:multi_roll\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:longfooted\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:acrobat\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"netherexp:artemis\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:longfooted\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"netherexp:phantasm_hull\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"netherexp:artemis\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"sortilege:magic_protection\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"netherexp:phantasm_hull\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"sortilege:soulbound\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"sortilege:magic_protection\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"sortilege:blessing\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"sortilege:soulbound\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:benevolence\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"sortilege:blessing\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:boloks_fury\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:benevolence\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:boloks_head\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:boloks_fury\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:boloks_wings\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:boloks_head\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:bonding\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:boloks_wings\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:everlasting\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:bonding\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:joust\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:everlasting\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:arcane_recovery\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:joust\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"supplementaries:stasis\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"unusualend:arcane_recovery\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:power\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"supplementaries:stasis\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:flame\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:power\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:infinity\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:flame\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:punch\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:infinity\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:piercing\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:punch\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:binding_curse\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:piercing\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:binding_curse\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sharpness\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:smite\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sharpness\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:unbreaking\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:smite\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:efficiency\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:unbreaking\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:fire_aspect\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:efficiency\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:lure\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:fire_aspect\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:frost_walker\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:lure\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:knockback\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:frost_walker\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:luck_of_the_sea\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:knockback\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:fortune\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:luck_of_the_sea\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:looting\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:fortune\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:mending\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:looting\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:multishot\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:mending\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:respiration\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:multishot\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:feather_falling\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:respiration\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:blast_protection\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:feather_falling\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:protection\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:blast_protection\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:quick_charge\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:protection\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:soul_speed\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:quick_charge\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sweeping\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:soul_speed\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:swift_sneak\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sweeping\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:thorns\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:swift_sneak\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:channeling\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:thorns\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:impaling\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:channeling\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:loyalty\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:impaling\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:riptide\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:loyalty\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:silk_touch\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:riptide\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:vanishing_curse\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:silk_touch\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:depth_strider\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:vanishing_curse\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:aqua_affinity\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:depth_strider\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:sustain\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:aqua_affinity\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:rupture\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:sustain\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:enfeeble\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:rupture\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscavesexemplified:magneticism\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:enfeeble\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"evilcraft:breaking\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscavesexemplified:magneticism\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"evilcraft:poison_tip\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"evilcraft:breaking\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"evilcraft:unusing\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"evilcraft:poison_tip\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"evilcraft:vengeance\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"evilcraft:unusing\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"twilightforest:chill_aura\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"evilcraft:vengeance\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"twilightforest:fire_react\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"twilightforest:chill_aura\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"farmersdelight:backstabbing\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"twilightforest:fire_react\", lvl:3s}]}"
 		}
 	],
 	"filters": [
+		"/minecraft:enchanted_book/",
 		"/minecraft:suspicious_stew/",
 		"/minecraft:lingering_potion/",
 		"/minecraft:splash_potion/",
@@ -17057,6 +18080,9 @@
 		"/sortilege:limitite/",
 		"/dummmmmmy:target_dummy/",
 		"/create:experience_block/",
+		"/botania:rune_mana/",
+		"/botanicadds:rune_tp/",
+		"/botania:rune_energy/",
 		"/supplementaries:flag_pink/",
 		"/supplementaries:flag_purple/",
 		"/supplementaries:flag_brown/",
@@ -18343,43 +19369,6 @@
 		"/supplementaries:sign_post_dark_oak/",
 		"/minecraft:dark_oak_hanging_sign/",
 		"/minecraft:dark_oak_boat/",
-		"/minecraft:mangrove_log/",
-		"/minecraft:mangrove_wood/",
-		"/quark:mangrove_post/",
-		"/quark:stripped_mangrove_post/",
-		"/minecraft:mangrove_planks/",
-		"/architects_palette:mangrove_boards/",
-		"/quark:mangrove_bookshelf/",
-		"/handcrafted:mangrove_bench/",
-		"/handcrafted:mangrove_chair/",
-		"/handcrafted:mangrove_couch/",
-		"/handcrafted:mangrove_dining_bench/",
-		"/handcrafted:mangrove_side_table/",
-		"/handcrafted:mangrove_desk/",
-		"/handcrafted:mangrove_nightstand/",
-		"/handcrafted:mangrove_table/",
-		"/handcrafted:mangrove_counter/",
-		"/farmersdelight:mangrove_cabinet/",
-		"/twilightdelight:mangrove_cabinet/",
-		"/quark:mangrove_chest/",
-		"/handcrafted:mangrove_fancy_bed/",
-		"/minecraft:mangrove_stairs/",
-		"/minecraft:mangrove_slab/",
-		"/quark:mangrove_vertical_slab/",
-		"/suppsquared:item_shelf_mangrove/",
-		"/minecraft:mangrove_fence/",
-		"/architects_palette:mangrove_railing/",
-		"/minecraft:mangrove_fence_gate/",
-		"/minecraft:mangrove_door/",
-		"/minecraft:mangrove_trapdoor/",
-		"/quark:mangrove_ladder/",
-		"/hearth_and_home:mangrove_lattice/",
-		"/minecraft:mangrove_pressure_plate/",
-		"/minecraft:mangrove_button/",
-		"/minecraft:mangrove_sign/",
-		"/supplementaries:sign_post_mangrove/",
-		"/minecraft:mangrove_hanging_sign/",
-		"/minecraft:mangrove_boat/",
 		"/minecraft:cherry_log/",
 		"/minecraft:cherry_wood/",
 		"/quark:cherry_post/",
@@ -18974,26 +19963,13 @@
 		"/upgrade_aquatic:driftwood/",
 		"/upgrade_aquatic:stripped_driftwood/",
 		"/upgrade_aquatic:driftwood_planks/",
-		"/everycomp:ap\\/upgrade_aquatic/driftwood_boards/",
 		"/upgrade_aquatic:driftwood_bookshelf/",
-		"/everycomp:hc\\/upgrade_aquatic/driftwood_bench/",
-		"/everycomp:hc\\/upgrade_aquatic/driftwood_chair/",
-		"/everycomp:hc\\/upgrade_aquatic/driftwood_couch/",
-		"/everycomp:hc\\/upgrade_aquatic/driftwood_dining_bench/",
-		"/everycomp:hc\\/upgrade_aquatic/driftwood_side_table/",
-		"/everycomp:hc\\/upgrade_aquatic/driftwood_desk/",
-		"/everycomp:hc\\/upgrade_aquatic/driftwood_nightstand/",
-		"/everycomp:hc\\/upgrade_aquatic/driftwood_table/",
-		"/everycomp:hc\\/upgrade_aquatic/driftwood_counter/",
 		"/everycomp:fd\\/upgrade_aquatic/driftwood_cabinet/",
 		"/upgrade_aquatic:driftwood_chest/",
-		"/everycomp:hc\\/upgrade_aquatic/driftwood_fancy_bed/",
 		"/upgrade_aquatic:driftwood_stairs/",
 		"/upgrade_aquatic:driftwood_slab/",
-		"/v_slab_compat:upgrade_aquatic\\/driftwood_vertical_slab/",
 		"/suppsquared:upgrade_aquatic\\/item_shelf_driftwood/",
 		"/upgrade_aquatic:driftwood_fence/",
-		"/everycomp:ap\\/upgrade_aquatic/driftwood_railing/",
 		"/upgrade_aquatic:driftwood_fence_gate/",
 		"/upgrade_aquatic:driftwood_door/",
 		"/upgrade_aquatic:driftwood_trapdoor/",
@@ -19719,35 +20695,17 @@
 		"/ancient_aether:highsproot_boat/",
 		"/twilightforest:mangrove_log/",
 		"/twilightforest:mangrove_wood/",
-		"/quark:mangrove_post/",
-		"/quark:stripped_mangrove_post/",
 		"/twilightforest:mangrove_planks/",
-		"/architects_palette:mangrove_boards/",
-		"/quark:mangrove_bookshelf/",
-		"/handcrafted:mangrove_bench/",
-		"/handcrafted:mangrove_chair/",
-		"/handcrafted:mangrove_couch/",
-		"/handcrafted:mangrove_dining_bench/",
-		"/handcrafted:mangrove_side_table/",
-		"/handcrafted:mangrove_desk/",
-		"/handcrafted:mangrove_nightstand/",
-		"/handcrafted:mangrove_table/",
-		"/handcrafted:mangrove_counter/",
 		"/farmersdelight:mangrove_cabinet/",
 		"/twilightdelight:mangrove_cabinet/",
 		"/twilightforest:mangrove_chest/",
-		"/quark:mangrove_chest/",
-		"/handcrafted:mangrove_fancy_bed/",
 		"/twilightforest:mangrove_stairs/",
 		"/twilightforest:mangrove_slab/",
-		"/quark:mangrove_vertical_slab/",
 		"/suppsquared:item_shelf_mangrove/",
 		"/twilightforest:mangrove_fence/",
-		"/architects_palette:mangrove_railing/",
 		"/twilightforest:mangrove_fence_gate/",
 		"/twilightforest:mangrove_door/",
 		"/twilightforest:mangrove_trapdoor/",
-		"/quark:mangrove_ladder/",
 		"/hearth_and_home:mangrove_lattice/",
 		"/twilightforest:mangrove_pressure_plate/",
 		"/twilightforest:mangrove_button/",
@@ -19862,6 +20820,24 @@
 		"/twilightforest:canopy_boat/",
 		"/nethervinery:crested_crimson_planks/",
 		"/nethervinery:crested_warped_planks/",
+		"/minecraft:mangrove_log/",
+		"/minecraft:mangrove_wood/",
+		"/minecraft:mangrove_planks/",
+		"/farmersdelight:mangrove_cabinet/",
+		"/minecraft:mangrove_stairs/",
+		"/minecraft:mangrove_slab/",
+		"/suppsquared:item_shelf_mangrove/",
+		"/minecraft:mangrove_fence/",
+		"/minecraft:mangrove_fence_gate/",
+		"/minecraft:mangrove_door/",
+		"/minecraft:mangrove_trapdoor/",
+		"/hearth_and_home:mangrove_lattice/",
+		"/minecraft:mangrove_pressure_plate/",
+		"/minecraft:mangrove_button/",
+		"/minecraft:mangrove_sign/",
+		"/supplementaries:sign_post_mangrove/",
+		"/minecraft:mangrove_hanging_sign/",
+		"/minecraft:mangrove_boat/",
 		"/twilightforest:twilight_oak_log/",
 		"/twilightforest:twilight_oak_wood/",
 		"/everycomp:q\\/twilightforest/twilight_oak_post/",
@@ -20062,6 +21038,53 @@
 		"/supplementaries:twilightforest\\/sign_post_sorting/",
 		"/twilightforest:sorting_hanging_sign/",
 		"/twilightforest:sorting_boat/",
+		"/mcdw:axe_anchor/",
+		"/mcdw:axe_encrusted_anchor/",
+		"/mcdw:bow_bonebow/",
+		"/mcdw:bow_call_of_the_void/",
+		"/mcdw:bow_elite_power_bow/",
+		"/mcdw:bow_phantom_bow/",
+		"/mcdw:bow_power_bow/",
+		"/mcdw:bow_sabrewing/",
+		"/mcdw:bow_twisting_vine_bow/",
+		"/mcdw:bow_weeping_vine_bow/",
+		"/mcdw:crossbow_azure_seeker/",
+		"/mcdw:crossbow_butterfly_crossbow/",
+		"/mcdw:crossbow_exploding_crossbow/",
+		"/mcdw:crossbow_firebolt_thrower/",
+		"/mcdw:crossbow_heavy_crossbow/",
+		"/mcdw:crossbow_imploding_crossbow/",
+		"/mcdw:crossbow_pride_of_the_piglins/",
+		"/mcdw:crossbow_slayer_crossbow/",
+		"/mcdw:crossbow_veiled_crossbow/",
+		"/mcdw:dagger_backstabber/",
+		"/mcdw:dagger_fangs_of_frost/",
+		"/mcdw:dagger_resolute_tempest_knife/",
+		"/mcdw:dagger_swift_striker/",
+		"/mcdw:dagger_void_touched_blade/",
+		"/mcdw:glaive_cackling_broom/",
+		"/mcdw:glaive_grave_bane/",
+		"/mcdw:glaive_venom_glaive/",
+		"/mcdw:hammer_bone_cudgel/",
+		"/mcdw:hammer_boneclub/",
+		"/mcdw:hammer_gravity/",
+		"/mcdw:hammer_great_hammer/",
+		"/mcdw:hammer_stormlander/",
+		"/mcdw:scythe_frost_scythe/",
+		"/mcdw:scythe_jailors_scythe/",
+		"/mcdw:scythe_skull_scythe/",
+		"/mcdw:scythe_soul_scythe/",
+		"/mcdw:sickle_last_laugh_gold/",
+		"/mcdw:sickle_last_laugh_silver/",
+		"/mcdw:sickle_nightmares_bite/",
+		"/mcdw:sickle_sickle/",
+		"/mcdw:soul_dagger_eternal_knife/",
+		"/mcdw:soul_dagger_soul_knife/",
+		"/mcdw:soul_dagger_truthseeker/",
+		"/mcdw:staff_battlestaff/",
+		"/mcdw:sword_heartstealer/",
+		"/mcdw:sword_obsidian_claymore/",
+		"/mcdw:sword_sinister/",
 		"/v_slab_compat:witherstormmod\\/tainted_stone_vertical_slab/",
 		"/v_slab_compat:botania\\/red_pavement_vertical_slab/",
 		"/v_slab_compat:botania\\/metamorphic_plains_bricks_vertical_slab/",
@@ -20132,6 +21155,7 @@
 		"/v_slab_compat:rediscovered\\/grass_vertical_slab/",
 		"/v_slab_compat:create\\/waxed_oxidized_copper_shingle_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/terracotta_brick_vertical_slab/",
+		"/v_slab_compat:upgrade_aquatic\\/driftwood_vertical_slab/",
 		"/v_slab_compat:botania\\/metamorphic_forest_cobblestone_vertical_slab/",
 		"/v_slab_compat:netherexp\\/soul_slate_brick_vertical_slab/",
 		"/v_slab_compat:born_in_chaos_v1\\/black_argillite_brick_vertical_slab/",

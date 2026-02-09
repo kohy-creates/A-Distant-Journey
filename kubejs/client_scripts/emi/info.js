@@ -83,10 +83,6 @@ JEIEvents.information(event => {
 		'Collects passing time while in your inventory which can then be spent to accelerate the tick speed of any block.'
 	])
 
-	addInfo(['minecraft:fletching_table', '@morevillagers'], [
-		'Workstation for Villagers. Serves no purpose outside of that.'
-	])
-
 	addInfo('kubejs:enchanters_guide', [
 		'Sold by Wandering Traders. Used to craft an Enchanting Table.'
 	])
@@ -151,7 +147,7 @@ JEIEvents.information(event => {
 		'Terra Catalyst only serves one purpose - to break down Gaia Spirits into smaller Shards.'
 	])
 
-	addInfo(['botania:mana_diamond', 'botania:mana_diamond_block', 'botania:mana_pearl', 'botania:mana_string', 'botania:quartz_mana', /*'botania:mana_powder'*/], [
+	addInfo(['botania:mana_diamond', 'botania:mana_diamond_block', 'botania:mana_pearl', /*'botania:mana_string'*/, 'botania:quartz_mana', 'botania:mana_powder'], [
 		'When tossed into a Mana Pool certain items can be infused with stored Mana, gaining magical properties used in crafting recipes.'
 	])
 

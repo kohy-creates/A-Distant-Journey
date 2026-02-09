@@ -5,8 +5,8 @@ attackedParrotFeathers = true
 attackedSnowGolemSnowflakes = true
 attackedSheepFluff = true
 attackedSlimeSlime = true
-allayMagicDensity = 0.2
-vexMagicDensity = 0.2
+allayMagicDensity = 0.39869281045751653
+vexMagicDensity = 0.5
 sheepShearFluff = true
 improvedDragonFireballTrail = true
 dragonsBreathClouds = true
@@ -56,8 +56,8 @@ drowningBubbleAlpha = 0.59738564
 forceDrowningBubblesToColumn = false
 potionRingsDisplayType = "DEFAULT"
 potionRingsParticleType = "BOTH"
-potionRingsScale = 1.0
-potionRingsAlpha = 1.0
+potionRingsScale = 1.1993464
+potionRingsAlpha = 0.8013072
 NPCsHavePotionRings = true
 
 [humanoids.frostyBreath]
@@ -90,19 +90,20 @@ mobRunning = false
 playerRunningRequiresSpeed = true
 
 [burning]
-smokeType = "DEFAULT"
+smokeType = "UPDATED"
 smokeDensity = 1.0
 flamesDensity = 1.0
 sparksDensity = 1.0
-soundVolume = 0.3
+soundVolume = 0.4509804
 entityBlocklist = [
-    "minecraft:lightning_bolt"
+    "minecraft:lightning_bolt",
+    "minecraft:item"
 ]
 extinguishSteam = true
 
 [explosives]
 tntUpdateSmoke = true
-tntFlamesDensity = 3
+tntFlamesDensity = 4
 tntSparks = true
 creeperSmoke = "UPDATED"
 creeperSparks = true

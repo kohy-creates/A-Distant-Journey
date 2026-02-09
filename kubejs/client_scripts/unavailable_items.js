@@ -1,12 +1,6 @@
 ADJClientEvents.itemIsLockedRenderCheck(event => {
 
-	/**
-	 * @type {$Item_}
-	 */
 	const item = event.getItemStack();
-	/**
-	 * @type {$LocalPlayer_}
-	 */
 	const player = event.getPlayer();
 
 	if (item.getId().includes('valkyrum')) {

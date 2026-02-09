@@ -13,7 +13,6 @@ ADJClientEvents.playerTitle(event => {
 						.append(Text.of(' '))
 						.append(Text.of($ADJCore.toSmallUnicode(map.text.value)).color(map.text.color))
 				event.setTitle(comp)
-				return;
 			}
 			else continue;
 		}

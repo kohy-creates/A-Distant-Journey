@@ -20,7 +20,8 @@ global.stageRestrictions = {
 			'mcdw:bow_twisting_vine_bow',
 			'mcdw:bow_weeping_vine_bow',
 			'mcdw:crossbow_azure_seeker',
-			'mcdw:crossbow_pride_of_the_piglins'
+			'mcdw:crossbow_pride_of_the_piglins',
+			/terrasteel/
 		],
 		light: [
 			'botania:ender_air_bottle',
@@ -87,6 +88,7 @@ global.stageRestrictions = {
 			/architects_palette:.*blackstone.*/,
 			/architects_palette\/twisted/,
 			/botania:.*spark.*/,
+			'botania:lens_paint'
 		],
 		exceptions: [
 			'create:blaze_cake',
@@ -105,7 +107,8 @@ global.stageRestrictions = {
 			/lost_aether_content/,
 			/stormyx/,
 			'mcdw:soul_dagger_soul_knife',
-			'mcdw:crossbow_firebolt_thrower'
+				'mcdw:crossbow_firebolt_thrower',
+				'ars_nouveau:apprentice_spell_book'
 		],
 		light: [
 			/everycomp\:.*aether.*/, // also covers redux and lost content
@@ -114,7 +117,8 @@ global.stageRestrictions = {
 			/esoterrack/,
 			/moonshale/,
 			/craterstone/,
-			'mcdw:bow_sabrewing'
+			'mcdw:bow_sabrewing',
+			'simplyswords:tainted_relic'
 		],
 		exceptions: [
 			'aether:leather_gloves',
@@ -146,7 +150,14 @@ global.stageRestrictions = {
 			'mcdw:scythe_skull_scythe',
 			'mcdw:soul_dagger_truthseeker',
 			'mcdw:sword_heartstealer',
-			'mcdw:crossbow_heavy_crossbow'
+			'mcdw:crossbow_heavy_crossbow',
+			'botania:gaia_pylon',
+			'botania:gaia_ingot',
+			'botania:life_essence',
+			'botania:gaia_spreader',
+			/gaiasteel/,
+			'botanicadds:gaia_shard',
+			/botanicadds:.*ring_gaia/
 		],
 		light: [
 			'mythicmetals:aegis_smithing_template',
@@ -184,7 +195,8 @@ global.stageRestrictions = {
 			'mcdw:sword_sinister_sword',
 			'mcdw:bow_call_of_the_void',
 			'mcdw:crossbow_imploding_crossbow',
-			'mcdw:crossbow_veiled_crossbow'
+			'mcdw:crossbow_veiled_crossbow',
+			'ars_nouveau:archmage_spell_book'
 		],
 		light: [
 			/end_stone/,
@@ -222,7 +234,11 @@ global.stageRestrictions = {
 			/unobtainium/,
 			/metallurgium/,
 			/celestium/,
-			'mcdw:crossbow_slayer_crossbow'
+			'mcdw:crossbow_slayer_crossbow',
+			/ars_elemental:.*hat/,
+			/ars_elemental:.*robes/,
+			/ars_elemental:.*leggings/,
+			/ars_elemental:.*boots/
 		],
 		light: [
 			/witherstormmod/,

@@ -19,7 +19,7 @@
 	#If 'true' and TerraBlender is present, Quark will add a TerraBlender region. The region will contain vanilla biomes and the Glimmering Weald.
 	"Terrablender Add Region" = true
 	#Quark will set this weight for its TerraBlender region.
-	"Terrablender Region Weight" = 1
+	"Terrablender Region Weight" = 3
 	#If 'true', Quark will modify the `minecraft:overworld` MultiNoiseBiomeSourceParameterList preset, even when Terrablender is installed.
 	#This will have various knock-on effects but might make the Weald more common, or appear closer to modded biomes. Who knows?
 	"Terrablender Modify Vanilla Anyway" = false
@@ -491,7 +491,7 @@
 			"Can Act As Axe" = true
 
 	[tools.seed_pouch]
-		"Max Items" = 640
+		"Max Items" = 9999
 		"Show All Variants In Creative" = false
 		"Shift Range" = 3
 		#Allow putting bone meal into the Seed Pouch (or anything else in the tag 'quark:seed_pouch_fertilizers')

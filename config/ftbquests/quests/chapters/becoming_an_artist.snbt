@@ -63,7 +63,7 @@
 					type: "item"
 				}
 			]
-			title: "Capturing The Moment"
+			title: "I Just Wanna Feel This Moment"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -87,7 +87,7 @@
 					type: "item"
 				}
 			]
-			title: "Joy of Painting"
+			title: "The Joy of Painting"
 			x: -2.0d
 			y: 1.0d
 		}
@@ -148,8 +148,8 @@
 				type: "item"
 			}]
 			title: "The Color Update"
-			x: -3.0d
-			y: 2.0d
+			x: -3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4BECD0660111B4AC"]
@@ -169,8 +169,8 @@
 				type: "item"
 			}]
 			title: "Artpop"
-			x: -1.0d
-			y: 2.0d
+			x: -0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3A017BDC7B799F5B"]
@@ -236,7 +236,7 @@
 				item: "exposure:photograph_frame"
 				type: "item"
 			}]
-			title: "Framed Forever"
+			title: "Forever In Our Memories"
 			x: -9.0d
 			y: 1.0d
 		}
@@ -321,7 +321,7 @@
 				item: "minecraft:writable_book"
 				type: "item"
 			}]
-			title: "Fan Fiction"
+			title: "101 on Writing Fan Fiction"
 			x: -4.0d
 			y: -2.0d
 		}
@@ -338,7 +338,7 @@
 				}
 				type: "item"
 			}]
-			title: "Bestseller Author"
+			title: "Bestselling Author"
 			x: -5.0d
 			y: -3.0d
 		}
@@ -369,12 +369,11 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["3DFCD3D89661B5AF"]
+			dependencies: ["7E4B8BBFB0884187"]
 			description: ["&7&lHINT:&r Vanity items provide no boosts to stats. But what if you wanted to wear a vanity armor set? Look into the next achievement!"]
 			icon: "etcetera:white_sweater"
 			id: "079C23A4EAF805B1"
-			shape: "diamond"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "Obtain any vanity item"
 			tasks: [{
 				id: "22F9E1BAA94FA9E3"
@@ -389,8 +388,8 @@
 				type: "item"
 			}]
 			title: "The Act of Role Playing"
-			x: 0.0d
-			y: -2.0d
+			x: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["079C23A4EAF805B1"]
@@ -411,25 +410,25 @@
 				}
 			]
 			title: "If I Wanted a Glow Up I'd Pay For It!"
-			x: 1.0d
-			y: -3.0d
+			x: -1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3DFCD3D89661B5AF"]
 			description: [""]
-			icon: "fnaf_plushie_remastered:sewing_table"
+			icon: "accents:sewing_station"
 			id: "7E4B8BBFB0884187"
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "Craft a Sewing Table - work station of the Plushie Maker Villager"
+			subtitle: "Craft a Sewing Table"
 			tasks: [{
-				id: "6B95F62D86C81048"
-				item: "fnaf_plushie_remastered:sewing_table"
+				id: "155068BEFE00571F"
+				item: "accents:sewing_station"
 				type: "item"
 			}]
-			title: "100th Plush Market"
-			x: -2.0d
-			y: -3.0d
+			title: "Sewsan Storm"
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			description: [
@@ -461,8 +460,8 @@
 				type: "item"
 			}]
 			title: "Blahaj Soft! Must Hug!"
-			x: -1.0d
-			y: -4.0d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7E4B8BBFB0884187"]
@@ -481,9 +480,9 @@
 				title: "Any FNAF plushie"
 				type: "item"
 			}]
-			title: "They Always Come Back"
-			x: -3.0d
-			y: -4.0d
+			title: "100th Plush Market"
+			x: 1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5B8BE1C0DADD5B73"]
@@ -503,8 +502,8 @@
 				type: "item"
 			}]
 			title: "You Are Free! Free to Express Yourself!"
-			x: 0.5d
-			y: -4.5d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5B8BE1C0DADD5B73"]
@@ -524,8 +523,8 @@
 				type: "item"
 			}]
 			title: "Colormatic!"
-			x: -0.5d
-			y: -5.5d
+			x: 2.5d
+			y: -4.0d
 		}
 	]
 	title: "The World is My Canvas!"

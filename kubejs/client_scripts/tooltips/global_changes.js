@@ -1,15 +1,5 @@
-/**
- * @type {$LocalPlayer_}
- */
-let currentPlayer = null;
-
-ClientEvents.tick(event => {
-	if (!currentPlayer && event.player) {
-		currentPlayer = event.player;
-	}
-});
-
 ItemEvents.tooltip(event => {
+	const currentPlayer = Client.player;
 
 	function colorDurabilityText(p, t) {
 		if (p > 0.6) {
@@ -63,30 +53,6 @@ ItemEvents.tooltip(event => {
 			}
 		}
 	})
-	event.addAdvancedToAll((item, advanced, text) => {
-		const foodProperties = item.getFoodProperties(currentPlayer)
-		if (foodProperties) {
-			const effects = foodProperties.getEffects();
-
-			const original = text.toArray();
-			let red = [], blue = [];
-			for (let i = 1; i < original.length; i++) {
-				if (text[i].toString().includes('color=red')) {
-					red++;
-				}
-				else if (text[i].toString().includes('color=blue')) {
-					blue++;
-				}
-				else break;
-			}
-
-			if (effects.size() * 2 == (blue + red)) {
-				for (let i = 1; i < (blue + red) / 2 + 1; i++) {
-					text.remove(1)
-				}
-			}
-		}
-	})
 	event.addAdvanced([
 		'ars_nouveau:ring_of_lesser_discount',
 		'ars_nouveau:ring_of_greater_discount',
@@ -95,7 +61,7 @@ ItemEvents.tooltip(event => {
 		'ars_nouveau:greater_experience_gem',
 		'ars_nouveau:source_gem',
 		'ars_nouveau:wilden_horn',
-		'ars_nouveau:wilden_spike'
+		'ars_nouveau:wilden_spike',
 	], (item, advanced, text) => {
 		for (let i = text.size() - 1; i > 0; i--) {
 			if (!text[i].toString().includes('color=dark_gray')) {
@@ -108,12 +74,68 @@ ItemEvents.tooltip(event => {
 		}
 	})
 
+	event.addAdvanced([
+		/_counter/,
+		/_fancy_bed/,
+		/_bench/,
+		/_chair/,
+		/_side_table/,
+		/_nightstand/,
+		/_desk/,
+		/handcrafted:.*_table/,
+		/hc.*_table/,
+		/_couch/,
+		'handcrafted:hammer',
+		'handcrafted:kitchen_hood_pipe',
+		/crockery_combo/,
+		/handcrafted:.*cushion/,
+		/handcrafted:.*sheet/
+	], (item, advanced, text) => {
+
+		let startPos = 0;
+		for (let i = text.size() - 1; i > 0; i--) {
+			if (!text[i].toString().includes('color=dark_gray')) {
+				startPos = i;
+				break;
+			}
+		}
+		if (!startPos) return;
+		const id = item.getId();
+		let linesToRemove = 1;
+		if (event.shift) {
+			if (id.includes('counter')
+				|| id.includes('fancy_bed')) {
+				linesToRemove = 4
+			}
+			else if (id.includes('bench')
+				|| id.includes('chair')
+				|| id.includes('couch')
+				|| id.includes('nightstand')
+				|| id.includes('side_table')
+				|| id.includes('table')
+				|| id.includes('crockery_combo')) {
+				linesToRemove = 2
+			}
+			// else if (id.includes('desk')) {
+			// 	linesToRemove = 1
+			// }
+		}
+		if (advanced) linesToRemove++;
+
+		let i = 0;
+		for (let a = startPos; a > 0; a--) {
+			text.remove(a)
+			i++;
+			if (i === linesToRemove) break;
+		}
+	})
+
 	// Global tooltip modifications
 	// Targetted mainly towards tools
 	const attributesIgnoredItems = [
 		'sortilege:lapis_shield'
 	]
-	/** @type {InputItem_} */
+	/** @type {$Item$$Type} */
 	const setBonusItems = [
 		'botania:manasteel_helmet',
 		'botania:manasteel_chestplate',
@@ -165,8 +187,10 @@ ItemEvents.tooltip(event => {
 			}
 		}
 		else {
+			let weapon = false;
 			for (let i = 1; i < text.length; i++) {
 				let line = text[i].toString();
+				if (line.includes('color=dark_green') && line.includes('attack_damage')) weapon = true;
 				if (line.includes('color=blue') && line.includes('Mining Speed')) {
 					const match = line.match(/attributeslib\.value\.flat', args=\[(\d+(?:\.\d+)?)\]/);
 					if (match) {
@@ -186,6 +210,36 @@ ItemEvents.tooltip(event => {
 						const number = parseInt(match[1], 10);
 						text.remove(i);
 						text.add(i, Text.darkGreen(' ' + number + ' Tool Power'))
+					}
+				}
+				else if (line.includes('mainhand') && Object.keys(global.arrowDamage).includes(item.getId())) {
+					text.remove(i);
+					text.add(i, Text.gray('When used as Ammo:'))
+				}
+				else if (weapon && line.includes('color=blue') && line.includes('attributeslib:crit_chance')) {
+					const match = line.match(/attributeslib\.value\.percent', args=\[(\d+)\]/);
+					if (match) {
+						const number = parseInt(match[1], 10);
+						text.remove(i);
+						text.add(i, Text.darkGreen(' ' + number + '% Critical Strike Chance'))
+					}
+				}
+				else if (Object.keys(global.bowDamage).includes(item.getId())) {
+					if (line.includes('color=blue') && line.includes('attributeslib:crit_chance')) {
+						const match = line.match(/attributeslib\.value\.percent', args=\[(\d+)\]/);
+						if (match) {
+							const number = parseInt(match[1], 10);
+							text.remove(i);
+							text.add(i, Text.darkGreen(' ' + number + '% Critical Strike Chance'))
+						}
+					}
+					else if (line.includes('color=blue') && line.includes('Ranged Damage')) {
+						const match = line.match(/attributeslib\.value\.flat', args=\[(\d+)\]/);
+						if (match) {
+							const number = parseInt(match[1], 10);
+							text.remove(i);
+							text.add(i, Text.darkGreen(' ' + number + ' Ranged Damage'))
+						}
 					}
 				}
 			}
@@ -329,6 +383,7 @@ ItemEvents.tooltip(event => {
 		text.clear()
 		text.add(0, Text.of('Removed item').darkGray())
 		text.add(1, Text.of('This item is unobtainable in this modpack').darkGray())
+		if (advanced) text.add(2, Text.of(item.getId()).darkGray().italic())
 	})
 
 	//priority: -9900
@@ -439,7 +494,7 @@ ItemEvents.tooltip(event => {
 
 
 	/**
-	 * Adds tooltip lines to one or more items using the simplified `tip()` interface.
+	 * Adds tooltip lines to one or more items, simplified
 	 *
 	 * @param {string|string[]|RegExp|RegExp[]} items  
 	 * Item ID, array of IDs, or regex patterns.  
@@ -449,8 +504,8 @@ ItemEvents.tooltip(event => {
 	 *
 	 * @param {string|string[]} text  
 	 * Tooltip text to add.  
-	 * - Single string → one line  
-	 * - Array of strings → multiple lines
+	 * - Single string -> one line  
+	 * - Array of strings -> multiple lines
 	 *
 	 * @param {Object} [opts]  
 	 * Optional settings that control how the tooltip behaves.
@@ -461,11 +516,11 @@ ItemEvents.tooltip(event => {
 	 *
 	 * @param {number|null} [opts.position=null]  
 	 * Priority / ordering of the tooltip:  
-	 * - `null` → default behavior  
+	 * - null -> default behavior  
 	 * - Higher numbers push the tooltip lower  
 	 * - Lower numbers pull it higher
 	 *
-	 * @param {boolean} [opts.last=false]  
+	 * @param {boolean} [opts.last=false]
 	 * If true, forces these tooltip lines to appear at the bottom.
 	 *
 	 * @example
@@ -547,17 +602,112 @@ ItemEvents.tooltip(event => {
 			items: 'rediscovered:cyan_rose',
 			text: 'Also known as Blue Rose'
 		},
+
 		{
 			items: [
-				'wooden_sword', 'wooden_axe', 'wooden_pickaxe',
-				'wooden_hoe', 'wooden_shovel', 'shieldexp:wooden_shield'
+				'fletching_table',
+				/morevillagers/,
+				'accents:sewing_station',
+				'blast_furnace',
+				'smoker',
+				'brewing_stand',
+				'lectern',
+				'stonecutter',
+				'composter',
+				'cauldron',
+				'cartography_table',
+				'loom',
+				'grindstone',
+				'smithing_table'
+			],
+			text: 'Work station for Villagers'
+		},
+		{
+			items: [
+				'summoningrituals:indestructible_altar'
+			],
+			text: [
+				'Unbreakable. Found naturally in the Final Castle.'
+			]
+		},
+		{
+			items: [
+				'summoningrituals:altar',
+				'summoningrituals:indestructible_altar'
+			],
+			text: [
+				'Used for crafting items and summoning mobs through not-so-complex rituals'
+			]
+		},
+		{
+			items: [
+				'minecraft:smoker'
+			],
+			text: [
+				'Used for cooking food'
+			]
+		},
+		{
+			items: [
+				'accents:sewing_station'
+			],
+			text: [
+				'Used for making vanity items and some decorations'
+			]
+		},
+		{
+			items: [
+				'vinery:grapevine_pot'
+			],
+			text: [
+				'Used for mashing Grapes into Juice'
+			]
+		},
+		{
+			items: [
+				'brewinandchewin:keg'
+			],
+			text: [
+				'Used for brewing the good stuff'
+			]
+		},
+		{
+			items: [
+				'accents:sewing_station',
+				'terra_curio:workshop',
+				'vinery:grapevine_pot',
+				'herbalbrews:cauldron',
+				'brewinandchewin:keg',
+				'botania:brewery',
+				'summoningrituals:altar',
+				'summoningrituals:indestructible_altar',
+				'alexsmobs:capsid',
+				'aether:incubator',
+				'aether:freezer',
+				'aether:altar',
+			],
+			text: [
+				'Used for special crafting',
+			]
+		},
+
+		{
+			items: [
+				'wooden_sword',
+				'wooden_axe',
+				'wooden_pickaxe',
+				'wooden_hoe',
+				'wooden_shovel',
+				'shieldexp:wooden_shield'
 			],
 			text: 'We all have to start somewhere!'
 		},
 		{
 			items: [
-				'golden_apple', 'enchanted_golden_apple',
-				'majruszsdifficulty:bandage', 'majruszsdifficulty:golden_bandage'
+				'golden_apple',
+				'enchanted_golden_apple',
+				'majruszsdifficulty:bandage',
+				'majruszsdifficulty:golden_bandage'
 			],
 			text: 'Stops bleeding'
 		},
@@ -585,7 +735,10 @@ ItemEvents.tooltip(event => {
 			]
 		},
 		{
-			items: [/carpet/, 'farmersdelight:canvas_rug'],
+			items: [
+				/carpet/,
+				'farmersdelight:canvas_rug'
+			],
 			text: [
 				'Can be placed on Stairs and Slabs'
 			]
@@ -597,7 +750,7 @@ ItemEvents.tooltip(event => {
 			]
 		},
 
-		// Botania flowers
+		// Botania
 		{
 			items: [
 				/botania\:.*_mystical_flower/,
@@ -612,6 +765,10 @@ ItemEvents.tooltip(event => {
 		{
 			items: 'botania:diluted_pool',
 			text: 'Has 10x smaller Mana capacity than a normal Mana Pool'
+		},
+		{
+			items: 'botania:alfheim_portal',
+			text: 'Uncraftable. See \'Alfthorne Sapling\' instead.'
 		},
 
 		// Small misc
@@ -794,7 +951,6 @@ ItemEvents.tooltip(event => {
 			]
 		},
 
-		// Ars Nouveau
 		{
 			items: /ars_nouveau:arcanist/,
 			text: [
@@ -802,8 +958,6 @@ ItemEvents.tooltip(event => {
 				'Can be imbued with different magical threads'
 			]
 		},
-
-		// Mutant Monsters
 		{
 			items: [
 				'mutantmonsters:mutant_skeleton_skull',
@@ -813,35 +967,39 @@ ItemEvents.tooltip(event => {
 			],
 			text: 'WIP! PLEASE DON\'T USE'
 		},
-
-		// Delight stoves
 		{
 			items: /.*delight.*:.*stove.*/,
 			text: 'Acts like a Campfire with 6 total slots'
 		},
-
-		// Heart crystals
 		{
 			items: 'heart_crystals:heart_crystal',
 			text: 'Increases max health by 20, up to 400'
 		},
-
-		// Naturalist
 		{
 			items: 'naturalist:bug_net',
 			text: 'Used to catch butterflies'
 		},
-
-		// Bumblezone
 		{
 			items: /the_bumblezone:string_curtain/,
 			text: 'Can be extended downwards by right-clicking with a String'
 		},
-
-		// MCDW
 		{
 			items: /mcdw:soul_dagger/,
 			text: 'Attacks temporarily boost mana regeneration'
+		},
+		{
+			items: 'heart_crystals:heart_lantern',
+			text: 'Increases health regeneration when placed'
+		},
+
+		// Handcrafted
+		{
+			items: [
+				/handcrafted:.*cushion/,
+				/handcrafted:.*sheet/,
+				'handcrafted:hammer'
+			],
+			text: 'Changes the look of some furniture blocks when used on them'
 		},
 
 		// Alex's Caves
@@ -899,11 +1057,9 @@ ItemEvents.tooltip(event => {
 
 		// Etcetera
 		{ items: "etcetera:handbell", text: "Can call pets to you if they aren't sitting" },
-
 		{ items: "etcetera:glowing_item_stand", text: "A glowing vertical item frame which can be covered in glass" },
 		{ items: "etcetera:item_stand", text: "A vertical item frame which can be covered in glass" },
 		{ items: "etcetera:squid_lamp", text: "A glowy torch which is more potent underwater" },
-
 		{ items: "etcetera:golden_eggple", text: "May be thrown to hatch a Golden Chapple" },
 		{ items: "etcetera:eggple", text: "Can be thrown to hatch a Chapple" },
 

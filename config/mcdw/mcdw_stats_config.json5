@@ -122,9 +122,9 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"damage": 6,
-			"attackSpeed": -3.200000047683716,
+			"attackSpeed": -3.0,
 			"repairIngredient": [
-				"minecraft:diamond"
+				"mythicmetals:adamantite_ingot"
 			]
 		},
 		"SWORD_IRON_SWORD_VAR": {
@@ -176,9 +176,10 @@
 			"isEnabled": true,
 			"material": "netherite",
 			"damage": 6,
-			"attackSpeed": -3.299999952316284,
+			"attackSpeed": -3.0999999046325684,
 			"repairIngredient": [
-				"minecraft:netherite_scrap"
+				"minecraft:obsidian",
+				"minecraft:crying_obsidian"
 			]
 		},
 		"SWORD_RAPIER": {
@@ -196,7 +197,8 @@
 			"damage": 6,
 			"attackSpeed": -2.9000000953674316,
 			"repairIngredient": [
-				"minecraft:iron_ingot"
+				"minecraft:netherite_ingot",
+				"mythicmetals:adamantite_ingot"
 			]
 		},
 		"SWORD_SPONGE_STRIKER": {
@@ -225,7 +227,7 @@
 			"damage": 8,
 			"attackSpeed": -3.4000000953674316,
 			"repairIngredient": [
-				"minecraft:iron_ingot"
+				"mythicmetals:aquarium_ingot"
 			]
 		},
 		"AXE_AXE": {
@@ -243,7 +245,7 @@
 			"damage": 8,
 			"attackSpeed": -3.4000000953674316,
 			"repairIngredient": [
-				"minecraft:diamond"
+				"mythicmetals:aquarium_ingot"
 			]
 		},
 		"AXE_FIREBRAND": {
@@ -301,7 +303,7 @@
 			"damage": 1,
 			"attackSpeed": -1.7000000476837158,
 			"repairIngredient": [
-				"minecraft:diamond"
+				"unusualend:pearlescent_ingot"
 			]
 		},
 		"DAGGER_CHILL_GALE_KNIFE": {
@@ -328,7 +330,7 @@
 			"damage": 1,
 			"attackSpeed": -1.5,
 			"repairIngredient": [
-				"minecraft:iron_ingot"
+				"born_in_chaos_v1:permafrost_shard"
 			]
 		},
 		"DAGGER_MOON": {
@@ -346,7 +348,7 @@
 			"damage": 2,
 			"attackSpeed": -2.200000047683716,
 			"repairIngredient": [
-				"minecraft:iron_ingot"
+				"mythicmetals:hallowed_ingot"
 			]
 		},
 		"DAGGER_SHEAR_DAGGER": {
@@ -364,7 +366,7 @@
 			"damage": 1,
 			"attackSpeed": -1.7000000476837158,
 			"repairIngredient": [
-				"minecraft:netherite_scrap"
+				"unusualend:pearlescent_ingot"
 			]
 		},
 		"DAGGER_TEMPEST_KNIFE": {
@@ -400,7 +402,7 @@
 			"damage": 1,
 			"attackSpeed": -1.7999999523162842,
 			"repairIngredient": [
-				"minecraft:diamond"
+				"mythicmetals:star_platinum"
 			]
 		}
 	},
@@ -411,16 +413,16 @@
 			"damage": 4,
 			"attackSpeed": -2.799999952316284,
 			"repairIngredient": [
-				"minecraft:netherite_scrap"
+				"majruszsdifficulty:enderium_ingot"
 			]
 		},
 		"SOUL_DAGGER_SOUL_KNIFE": {
 			"isEnabled": true,
-			"material": "iron",
+			"material": "diamond",
 			"damage": 4,
 			"attackSpeed": -2.799999952316284,
 			"repairIngredient": [
-				"minecraft:iron_ingot"
+				"mythicmetals:runite_ingot"
 			]
 		},
 		"SOUL_DAGGER_TRUTHSEEKER": {
@@ -429,7 +431,7 @@
 			"damage": 3,
 			"attackSpeed": -2.799999952316284,
 			"repairIngredient": [
-				"minecraft:netherite_scrap"
+				"minecraft:netherite_ingot"
 			]
 		}
 	},
@@ -449,7 +451,7 @@
 			"damage": 7,
 			"attackSpeed": -3.200000047683716,
 			"repairIngredient": [
-				"minecraft:netherite_scrap"
+				"minecraft:netherite_ingot"
 			]
 		},
 		"HAMMER_FLAIL": {
@@ -467,7 +469,7 @@
 			"damage": 6,
 			"attackSpeed": -3.200000047683716,
 			"repairIngredient": [
-				"minecraft:diamond"
+				"mythicmetals:star_platinum"
 			]
 		},
 		"HAMMER_GREAT_HAMMER": {
@@ -476,7 +478,7 @@
 			"damage": 6,
 			"attackSpeed": -3.200000047683716,
 			"repairIngredient": [
-				"minecraft:iron_ingot"
+				"mythicmetals:steel_ingot"
 			]
 		},
 		"HAMMER_MACE": {
@@ -494,7 +496,7 @@
 			"damage": 7,
 			"attackSpeed": -3.200000047683716,
 			"repairIngredient": [
-				"minecraft:diamond"
+				"mythicmetals:stormyx_ingot"
 			]
 		},
 		"HAMMER_SUNS_GRACE": {
@@ -543,7 +545,7 @@
 			"damage": 2,
 			"attackSpeed": -2.0999999046325684,
 			"repairIngredient": [
-				"minecraft:iron_ingot"
+				"minecraft:emerald"
 			]
 		},
 		"SICKLE_LAST_LAUGH_SILVER": {
@@ -552,16 +554,16 @@
 			"damage": 2,
 			"attackSpeed": -2.0999999046325684,
 			"repairIngredient": [
-				"minecraft:iron_ingot"
+				"minecraft:emerald"
 			]
 		},
 		"SICKLE_NIGHTMARES_BITE": {
-			"isEnabled": false,
+			"isEnabled": true,
 			"material": "iron",
 			"damage": 2,
 			"attackSpeed": -2.0999999046325684,
 			"repairIngredient": [
-				"minecraft:iron_ingot"
+				"twilightforest:steeleaf_ingot"
 			]
 		},
 		"SICKLE_SICKLE": {
@@ -576,7 +578,7 @@
 	},
 	"scytheStats": {
 		"SCYTHE_FROST_SCYTHE": {
-			"isEnabled": false,
+			"isEnabled": true,
 			"material": "diamond",
 			"damage": 4,
 			"attackSpeed": -2.9000000953674316,
@@ -599,7 +601,7 @@
 			"damage": 4,
 			"attackSpeed": -2.9000000953674316,
 			"repairIngredient": [
-				"minecraft:diamond"
+				"minecraft:netherite_ingot"
 			]
 		},
 		"SCYTHE_SOUL_SCYTHE": {
@@ -677,7 +679,7 @@
 			"damage": 6,
 			"attackSpeed": -3.0,
 			"repairIngredient": [
-				"minecraft:iron_ingot"
+				"mythicmetals:midas_gold_ingot"
 			]
 		},
 		"GLAIVE_VENOM_GLAIVE": {
@@ -1066,7 +1068,7 @@
 			]
 		},
 		"BOW_WINTERS_TOUCH": {
-			"isEnabled": true,
+			"isEnabled": false,
 			"material": "diamond",
 			"projectileDamage": 0.0,
 			"drawSpeed": 15,
