@@ -246,6 +246,12 @@ ItemEvents.modification(event => {
 
 	// Overrides
 	event.modify([
+		'quark:ancient_fruit'
+	], item => {
+		item.rarity = 'chapter_3_uncommon'
+	})
+
+	event.modify([
 		'structure_gel:building_tool',
 		/treasure_bag/
 	], item => {

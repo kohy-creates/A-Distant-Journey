@@ -1,0 +1,19 @@
+{
+  "options": {
+    "mode": "REMEMBER_RECENT",
+    "pinnedModsSize": 10,
+    "recentModsSize": 10,
+    "pinKey": "ALT",
+    "unpinKey": "CONTROL",
+    "showBadges": true,
+    "pinnedText": "Pinned",
+    "recentText": "Recent",
+    "persistOnRestart": false,
+    "saveOnUpdate": true,
+    "pinnedMods": [],
+    "recentMods": [
+      "modlistmemory"
+    ],
+    "scrollAmount": 0.0
+  }
+}

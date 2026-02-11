@@ -294,7 +294,9 @@ ServerEvents.recipes((event) => {
 		'oreberriesreplanted:vat_recipe',
 		/oreberriesreplanted/,
 		'twilightforest:crumble_horn',
-		'twilightforest:uncrafting'
+		'twilightforest:uncrafting',
+		'jumbofurnace:jumbo_smelting',
+		'morered:soldering'
 	]
 	removeRecipeByType.forEach(recipeType => {
 		event.remove({ type: recipeType })
@@ -352,6 +354,7 @@ ServerEvents.recipes((event) => {
 			'croptopia:walnut': 'ecologics:walnut',
 			'croptopia:food_press': 'minecraft:air',
 			'croptopia_additions:carbonation_machine': 'minecraft:air',
+			'morered:stone_plate': 'smooth_stone_slab'
 
 		},
 		output: {
@@ -774,6 +777,33 @@ ServerEvents.recipes((event) => {
 		event.custom(recipe)
 			.id(`adj:alloying/${flattenedID((Array.isArray(output)) ? output[0] : (output.includes(' ')) ? output.split(' ')[1] : output)}_from_${flattenedID(inputs[0][0])}`);
 	}
+
+	alloyForgeRecipe(
+		[
+			['minecraft:copper_ingot', 1],
+			['minecraft:redstone', 5]
+		],
+		['morered:red_alloy_ingot', 1],
+		1,
+		5,
+		[
+			['3+', 'output', 2],
+			['4+', 'output', 3],
+		]
+	)
+	alloyForgeRecipe(
+		[
+			['minecraft:raw_copper', 1],
+			['minecraft:redstone', 5]
+		],
+		['morered:red_alloy_ingot', 2],
+		1,
+		5,
+		[
+			['3+', 'output', 3],
+			['4+', 'output', 4],
+		]
+	)
 
 	alloyForgeRecipe(
 		[
@@ -1748,7 +1778,7 @@ ServerEvents.recipes((event) => {
 			],
 			{
 				I: material,
-				R: 'redstone_dust'
+				R: 'redstone'
 			}
 		).id(`adj:gear_from_${material.replace('#', '').replace(':', '_')}`)
 	}
@@ -3581,32 +3611,30 @@ ServerEvents.recipes((event) => {
 		'minecraft:iron_nugget',
 		'create:zinc_nugget'
 	]
-	alloyNuggets.forEach(nugget => {
-		event.shaped(
-			Item.of('create:andesite_alloy', 2),
-			[
-				'NA',
-				'AN'
-			],
-			{
-				N: nugget,
-				A: 'andesite'
-			}
-		).id(`adj:andesite_alloy_from_${nugget.replace(':', '_')}`)
-		event.shaped(
-			Item.of('create:andesite_alloy', 2),
-			[
-				'AN',
-				'NA'
-			],
-			{
-				N: nugget,
-				A: 'andesite'
-			}
-		).id(`adj:andesite_alloy_from_${nugget.replace(':', '_')}_manual_only`)
-		event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), ['andesite', nugget])
-			.id(`adj:andesite_alloy_from_${nugget.replace(':', '_')}_mixing`)
-	})
+	event.shaped(
+		Item.of('create:andesite_alloy', 2),
+		[
+			'NA',
+			'AN'
+		],
+		{
+			N: alloyNuggets,
+			A: 'andesite'
+		}
+	).id(`adj:andesite_alloy_1_manual_only`)
+	event.shaped(
+		Item.of('create:andesite_alloy', 2),
+		[
+			'AN',
+			'NA'
+		],
+		{
+			N: alloyNuggets,
+			A: 'andesite'
+		}
+	).id(`adj:andesite_alloy_2_manual_only`)
+	event.recipes.create.mixing(Item.of('create:andesite_alloy', 2), ['andesite', alloyNuggets])
+		.id(`adj:andesite_alloy_mixing`)
 
 	// FunctionalStorage
 	event.shaped(

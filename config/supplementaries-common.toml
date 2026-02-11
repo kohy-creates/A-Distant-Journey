@@ -345,7 +345,7 @@
 		stick_pole = true
 		#Maximum allowed pole length
 		#Range: 0 ~ 256
-		pole_length = 16
+		pole_length = 32
 
 	[building.goblet]
 		enabled = true

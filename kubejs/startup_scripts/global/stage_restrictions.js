@@ -21,7 +21,8 @@ global.stageRestrictions = {
 			'mcdw:bow_weeping_vine_bow',
 			'mcdw:crossbow_azure_seeker',
 			'mcdw:crossbow_pride_of_the_piglins',
-			/terrasteel/
+			/terrasteel/,
+			/midas_gold/
 		],
 		light: [
 			'botania:ender_air_bottle',

@@ -68,13 +68,61 @@
 			}
 		]
 	},
-	"generic.critial_hit": {
+	"item.imploding_crossbow.explode": {
+		"sounds": [
+			{
+				"name": "adj:item/imploding_crossbow_explode_1"
+			},
+			{
+				"name": "adj:item/imploding_crossbow_explode_2"
+			},
+			{
+				"name": "adj:item/imploding_crossbow_explode_3"
+			}
+		]
+	},
+	"generic.critical_hit": {
 		"sounds": [
 			{
 				"name": "adj:entity/crit_strike_1"
 			},
 			{
 				"name": "adj:entity/crit_strike_2"
+			}
+		]
+	},
+	"enchantment.void_strike.activate": {
+		"sounds": [
+			{
+				"name": "adj:enchantment/void_strike/activate_1"
+			},
+			{
+				"name": "adj:enchantment/void_strike/activate_2"
+			},
+			{
+				"name": "adj:enchantment/void_strike/activate_3"
+			},
+			{
+				"name": "adj:enchantment/void_strike/activate_4"
+			},
+			{
+				"name": "adj:enchantment/void_strike/activate_5"
+			}
+		]
+	},
+	"enchantment.void_strike.deactivate": {
+		"sounds": [
+			{
+				"name": "adj:enchantment/void_strike/deactivate_1"
+			},
+			{
+				"name": "adj:enchantment/void_strike/deactivate_2"
+			},
+			{
+				"name": "adj:enchantment/void_strike/deactivate_3"
+			},
+			{
+				"name": "adj:enchantment/void_strike/deactivate_4"
 			}
 		]
 	}

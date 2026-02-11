@@ -42,7 +42,7 @@
 	#    ]
 	#    NOTE: This excluded one entryset from all WoodTypes/LeavesTypes
 	#
-	blacklist = ["quark:hedge", "quark:vertical_slab", "quark:vertical_planks", "quark:hollow_log", "quark:leaf_carpet", "handcrafted:corner_trim", "handcrafted:pillar_trim", "handcrafted:cupboard", "handcrafted:shelf", "handcrafted:drawer", "create:window", "create:window_pane", "hearth_and_home:vertical_trim", "hearth_and_home:parquet", "hearth_and_home:trim", "hearth_and_home:sanded_wood", "functionalstorage:1", "functionalstorage:2", "functionalstorage:4", "rediscovered:chair", "rediscovered:table", "twilightforest:hollow_log_horizontal", "twilightforest:hollow_log_vertical", "twilightforest:banister", "twilightforest:hollow_log_climbable", "architects_palette:board_stairs", "architects_palette:board_slab", "architects_palette:board_wall", "oreberriesreplanted:vat"]
+	blacklist = ["quark:hedge", "quark:vertical_slab", "quark:vertical_planks", "quark:hollow_log", "quark:leaf_carpet", "handcrafted:corner_trim", "handcrafted:pillar_trim", "handcrafted:cupboard", "handcrafted:shelf", "handcrafted:drawer", "create:window", "create:window_pane", "hearth_and_home:vertical_trim", "hearth_and_home:parquet", "hearth_and_home:trim", "hearth_and_home:sanded_wood", "functionalstorage:1", "functionalstorage:2", "functionalstorage:4", "rediscovered:chair", "rediscovered:table", "twilightforest:hollow_log_horizontal", "twilightforest:hollow_log_vertical", "twilightforest:banister", "twilightforest:hollow_log_climbable", "architects_palette:board_stairs", "architects_palette:board_slab", "architects_palette:board_wall", "oreberriesreplanted:vat", "copperagebackport:shelf"]
 
 [module]
 	#Exclude Module From Wood-Good, Stone-Zone & Gems-Realm

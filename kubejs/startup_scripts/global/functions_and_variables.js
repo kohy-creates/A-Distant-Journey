@@ -88,3 +88,54 @@ global.announcementMsg = function (text, color, noItalic) {
 }
 
 global.baseCritChance = 0.04;
+
+/**
+ * Returns a list of all entities in a given radius around coordinates
+ * @param {Internal.Level} world
+ * @param {double} x 
+ * @param {double} y 
+ * @param {double} z 
+ * @param {double} radius 
+ * @returns {Internal.Entity[]}
+ */
+global.getEntitiesInRadius = function (world, x, y, z, radius) {
+	let entities = [];
+	world.getEntitiesWithin(AABB.of(
+		x - radius, y - radius, z - radius,
+		x + radius, y + radius, z + radius
+	)).forEach((entity) => {
+		if (entity.distanceToSqr(new Vec3d(x, y, z) <= radius)) {
+			entities.push(entity)
+		}
+	})
+	return entities;
+}
+
+const $ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey")
+const DAMAGE_TYPE = $ResourceKey.createRegistryKey("damage_type")
+const $DamageSource = Java.loadClass('net.minecraft.world.damagesource.DamageSource')
+global.getDamageSource = function (/** @type {Internal.Level}*/ level, /** @type {Internal.DamageType_}*/ damageType, projectile, thrower) {
+	const resourceKey = $ResourceKey.create(DAMAGE_TYPE, Utils.id(damageType))
+	const holder = level.registryAccess().registryOrThrow(DAMAGE_TYPE).getHolderOrThrow(resourceKey)
+	return new $DamageSource(holder, projectile, thrower)
+}
+
+/**
+ * Returns a random number between min (inclusive) and max (exclusive)
+ */
+global.getRandomNumber = function (min, max) {
+	return Math.random() * (max - min) + min;
+}
+
+/**
+ * Returns a random integer between min (inclusive) and max (inclusive).
+ * The value is no lower than min (or the next integer greater than min
+ * if min isn't an integer) and no greater than max (or the next integer
+ * lower than max if max isn't an integer).
+ * Using Math.round() will give you a non-uniform distribution!
+ */
+global.getRandomInt = function (min, max) {
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}

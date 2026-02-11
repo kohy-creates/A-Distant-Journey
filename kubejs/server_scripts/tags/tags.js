@@ -332,6 +332,10 @@ ServerEvents.tags('item', tags => {
 		/twilightforest:.*trophy/,
 		/umbral_skies:.*trophy/,
 	])
+
+	tags.add('botania:mana_diamond_gems', [
+		'ars_nouveau:source_gem'
+	])
 })
 
 // 
@@ -399,6 +403,8 @@ ServerEvents.tags('block', tags => {
 	tags.remove('c:chests', [
 		'evilcraft:blood_chest'
 	])
+
+	tags.removeAll('jumbofurnace:jumbofurnaceable');
 })
 
 // 

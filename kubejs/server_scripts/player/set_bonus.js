@@ -1,4 +1,3 @@
-const $UUID = Java.loadClass('java.util.UUID');
 const $MobEffectInstance = Java.loadClass('net.minecraft.world.effect.MobEffectInstance');
 
 PlayerEvents.tick(event => {

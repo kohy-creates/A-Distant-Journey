@@ -65,6 +65,15 @@
 		},
 		{
 			"category": "aether:repairing"
+		},
+		{
+			"category": "jumbofurnace:jumbo_furnace_upgraded"
+		},
+		{
+			"category": "jumbofurnace:jumbo_smelting"
+		},
+		{
+			"category": "morered:soldering"
 		}
 	]
 }

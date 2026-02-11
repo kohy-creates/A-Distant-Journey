@@ -1,8 +1,6 @@
 const $Player = Java.loadClass('net.minecraft.world.entity.player.Player');
 const $AbstractArrow = Java.loadClass('net.minecraft.world.entity.projectile.AbstractArrow');
 
-const $EventPriority = Java.loadClass('net.minecraftforge.eventbus.api.EventPriority');
-const $MinecraftForge = Java.loadClass("net.minecraftforge.common.MinecraftForge");
 const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent")
 
 // From https://discord.com/channels/303440391124942858/1155238168732368926/1155238168732368926

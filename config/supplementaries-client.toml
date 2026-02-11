@@ -163,13 +163,13 @@
 #Game tweaks
 [tweaks]
 	#Allow to right click with a clock to display current time in numerical form
-	clock_right_click = true
+	clock_right_click = false
 	#Adds an overlay to projectile weapons in gui displaying currently selected ammo
 	projectile_weapon_overlay = true
 	#Allow to right click with a compass to display current coordinates in numerical form
-	compass_right_click = true
+	compass_right_click = false
 	#Renders an enchantment glint on placeable enchanted booksNote that turning this on will make book piles use tile renderer instead of baked models making them slower to render
-	placeable_books_glint = true
+	placeable_books_glint = false
 	#Placeable books random colors
 	placeable_books_random_colors = ["brown", "orange", "yellow", "red", "green", "lime", "cyan", "blue", "purple"]
 	#Enables banner pattern tooltip image preview

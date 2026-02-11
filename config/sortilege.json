@@ -1,6 +1,6 @@
 {
 	"TECHNICAL": {
-		"VERSION_DO_NOT_EDIT": 2.0,
+		"VERSION_DO_NOT_EDIT": 2.1,
 		"FORCE_RESET": false
 	},
 	"enchantments": {
@@ -47,6 +47,7 @@
 			"override_default_enchanting": false
 		},
 		"allow_inventory_enchanting": false,
+		"mining_master_integration": true,
 		"magic_protection_protection_compatibility": false,
 		"better_feather_falling": 99,
 		"better_unbreaking": 99,
@@ -65,9 +66,10 @@
 			"blizzard": false,
 			"blast": false,
 			"blitz": false,
+			"blessing": false,
 			"bonk": false,
 			"ignorance_curse": false,
-			"magic_protection": true,
+			"magic_protection": false,
 			"arcane": false,
 			"soulbound": true
 		}
@@ -75,8 +77,8 @@
 	"experience": {
 		"witch_hat": {
 			"enable": false,
-			"drop_chance": 0.25,
-			"xp_bonus": 4
+			"drop_chance": 0.1,
+			"xp_bonus": 3
 		},
 		"increased_enchant_costs": true,
 		"costs": [
@@ -95,7 +97,7 @@
 		"xp_bounty": {
 			"tag_is_whitelist": false,
 			"value": 10,
-			"chance": 0.1
+			"chance": 0.05
 		},
 		"recipe_locks": {}
 	},
@@ -117,7 +119,7 @@
 		"antidote": {
 			"enable": true,
 			"effect_blacklist": [],
-			"stack_size": 8,
+			"stack_size": 99,
 			"immunity_time": 600
 		},
 		"potion": {
@@ -152,6 +154,7 @@
 			},
 			"default_xp_cost": 0,
 			"default_charge_time": 1,
+			"pierce_blocks": false,
 			"entries": []
 		}
 	}

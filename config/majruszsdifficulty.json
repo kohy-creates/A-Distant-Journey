@@ -399,7 +399,6 @@
         "is_scaled_by_crd": false,
         "entity_type": "born_in_chaos_v1:skeleton_thrasher",
         "effect": {
-          "id": "kubejs:armor_shred",
           "amplifier": 1,
           "duration": 40.0
         }
@@ -410,7 +409,6 @@
         "is_scaled_by_crd": false,
         "entity_type": "born_in_chaos_v1:skeleton_thrasher_not_despawn",
         "effect": {
-          "id": "kubejs:armor_shred",
           "amplifier": 1,
           "duration": 20.0
         }
