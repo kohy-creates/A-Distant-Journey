@@ -36,7 +36,6 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:durasteel_engine',
 		'witherstormmod:super_beacon',
 		'witherstormmod:super_support_beacon',
-		// 'map_atlases:atlas',
 		'supplementaries:rope',
 
 		'ars_nouveau:arcanist_boots',
@@ -186,7 +185,6 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:alloy_forge/forge_stormyx_ingot_from_raw_ore',
 
 		'minecraft:bread',
-		'map_atlases:craft_atlas',
 		'botania:flighttiara_0',
 
 		/ars_additions:locate_structure/,
@@ -5002,7 +5000,7 @@ ServerEvents.recipes((event) => {
 		'feather',
 		'compass',
 		'additionaladditions:depth_meter'
-	], Item.of('map_atlases:atlas', '{empty:9}'))
+	], Item.of('map_atlas'))
 
 	const curioToWorkshopList = [
 		'botania:mana_ring',

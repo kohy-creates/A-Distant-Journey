@@ -79,6 +79,21 @@
 			{
 				"name": "adj:item/imploding_crossbow_explode_3"
 			}
+		],
+		"subtitle": ""
+	},
+	"item.terra_blade.slash": {
+		"sounds": [
+			{
+				"name": "adj:item/terra_blade"
+			}
+		]
+	},
+	"item.star_platinum.spawn_star": {
+		"sounds": [
+			{
+				"name": "adj:item/falling_star"
+			}
 		]
 	},
 	"generic.critical_hit": {
@@ -89,7 +104,8 @@
 			{
 				"name": "adj:entity/crit_strike_2"
 			}
-		]
+		],
+		"subtitle": "Critical hit!"
 	},
 	"enchantment.void_strike.activate": {
 		"sounds": [

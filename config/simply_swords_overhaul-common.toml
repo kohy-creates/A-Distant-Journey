@@ -18,13 +18,13 @@ enableWatcherChanges = true
 enableWhisperwindChanges = true
 #Emberlash: Bonus damage dealt per stack of Smouldering (default: 0.75)
 #Range: 0.0 ~ 10.0
-emberlashSmoulderDamageMultiplier = 4.0
+emberlashSmoulderDamageMultiplier = 9.0
 #Emberlash: Distance in blocks for the dash ability (default: 12)
 #Range: 1 ~ 12
 emberlashDashDistance = 10
 #Emberlash: Percentage of Max HP restored after dashing (default: 10%)
 #Range: 0 ~ 100
-emberlashHealPercentage = 2
+emberlashHealPercentage = 3
 #Emberlash: Maximum level of Smouldering that can be applied to a target (default: 254)
 #Range: 1 ~ 254
 emberlashMaxSmoulderLevel = 3

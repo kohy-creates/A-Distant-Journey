@@ -690,7 +690,12 @@ ItemEvents.tooltip(event => {
 				'Used for special crafting',
 			]
 		},
-
+		{
+			items: /spear/,
+			text: [
+				'Critical hits reduce enemy defense'
+			]
+		},
 		{
 			items: [
 				'wooden_sword',

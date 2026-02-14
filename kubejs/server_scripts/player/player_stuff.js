@@ -99,21 +99,34 @@ FTBQuestsEvents.completed('16BAA229C57F181A', event => {
 
 ADJServerEvents.adjHurt(event => {
 	if (event.isCritical()) {
+		/** @type {Internal.LivingEntity} */
 		const victim = event.getVictim()
 		const level = victim.getLevel();
 		if (!level.isClientSide()) {
 			level.playSound(null, new Vec3d(victim.x, victim.y + victim.eyeHeight, victim.z), 'adj:generic.critical_hit', 'players');
+		}
+
+		const player = event.getAttacker();
+		if (player instanceof $Player) {
+			const item = player.getMainHandItem();
+			const id = item.getId();
+
+			if (id.includes('spear')) {
+				victim.addEffect(new $MobEffectInstance('kubejs:pierced', 7 * 20, 0, true, false, true))
+			}
 		}
 	}
 })
 
 // A huge block that only triggers when a player is hurt by something, or if something hurts a player
 const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent")
+const $MobType = Java.loadClass("net.minecraft.world.entity.MobType")
 NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 	const attacker = event.getSource().getActual();
 	const victim = event.getEntity();
 
-	if (attacker && attacker instanceof $Player) {
+	// console.log(event.getSource(), event.getSource().getImmediate(), event.getSource().getType())
+	if (attacker && attacker instanceof $Player && event.getSource().getImmediate() instanceof $Player) {
 		let item = attacker.getMainHandItem();
 		let id = item.getId();
 
@@ -130,7 +143,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 			if (pdata.katanaCombo >= 3) {
 				pdata.katanaCombo = 0;
 				attacker.addEffect(new $MobEffectInstance('speed', 4 * 20, 0));
-				// player.playNotifySound()
+				player.playNotifySound('simplyswords:magic_sword_attack_02', 'players', 0.75, 1.2 + Math.random() * 0.4)
 			}
 		}
 		if (id.includes('stormyx')) {
@@ -139,12 +152,38 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 		if (id.includes('mcdw:soul_dagger')) {
 			attacker.addEffect(new $MobEffectInstance('ars_nouveau:mana_regen', 2 * 20, (id === 'mcdw:soul_dagger_eternal_knife') ? 1 : 0));
 		}
+		if (id.includes('star_platinum')) {
+			let fallingStar = level.createEntity('botania:falling_star');
+			fallingStar.setPos(new Vec3d(victim.x, victim.y + 16, victim.z));
+			fallingStar.setMotionY(-1)
+			fallingStar.setOwner(attacker);
+			fallingStar.spawn();
+		}
 
 		// Stuff that depends on item ID
 		switch (id) {
 			case 'mcdw:dagger_resolute_tempest_knife': {
 				victim.addEffect(new $MobEffectInstance('slowness', 10 * 20, 1)) // -30%
 				attacker.addEffect(new $MobEffectInstance('speed', 10 * 20, 2)) // +30%
+				break;
+			}
+			case 'mcdw:glaive_grave_bane': {
+				if (victim.mobType === $MobType.UNDEAD) {
+					victim.addEffect(new $MobEffectInstance('ars_nouveau:hex', 10 * 20, 0, false, true, true))
+				}
+				break;
+			}
+			case 'mcdw:glaive_venom_glaive': {
+				victim.addEffect(new $MobEffectInstance('minecraft:poison', 7 * 20, 0, false, true, true))
+				break;
+			}
+			case 'mcdw:sword_heartstealer': {
+				attacker.heal(event.getAmount() * 0.045);
+				break;
+			}
+			case 'mcdw:scythe_frost_scythe':
+			case 'mcdw:dagger_fangs_of_frost': {
+				victim.setTicksFrozen(victim.getTicksFrozen() + 30)
 				break;
 			}
 		}
@@ -291,4 +330,29 @@ EntityEvents.death(event => {
 			}
 		}
 	}
+})
+
+// Terra Blade slashes
+const $TerraSlashEntity = Java.loadClass('xyz.kohara.adjcore.registry.entities.TerraSlashEntity');
+const $ADJEntities = Java.loadClass('xyz.kohara.adjcore.registry.ADJEntities');
+NetworkEvents.dataReceived('execute_terra_slash', event => {
+	let server = event.getServer();
+	let player = event.getPlayer();
+	let level = player.getLevel();
+
+	server.scheduleInTicks(4, () => {
+		const slash = new $TerraSlashEntity($ADJEntities.TERRA_SLASH.get(), level)
+		slash.setPos(new Vec3d(player.x, player.y + player.getEyeHeight() - 0.35, player.z));
+		slash.setDisplayAngles(player.xRot, player.yRot);
+		slash.setDeltaMovement(player.getLookAngle().scale(3));
+		slash.setOwner(player);
+
+		level.addFreshEntity(slash)
+	})
+});
+
+EntityEvents.spawned('botania:mana_burst', event => {
+	const entity = event.getEntity();
+
+	if (entity.nbt.lensStack.id === 'botania:terra_sword') event.cancel()
 })

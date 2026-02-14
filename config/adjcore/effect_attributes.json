@@ -89,5 +89,12 @@
 		"attributes": [
 			"attributeslib:healing_received;-0.3;0"
 		]
+	},
+	"ars_nouveau:hex": {
+		"replace": true,
+		"attributes": [
+			"adjcore:generic.damage_reduction;-0.15;0",
+			"attributeslib:healing_received;-0.25;0"
+		]
 	}
 }

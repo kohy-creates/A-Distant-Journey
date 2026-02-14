@@ -43,6 +43,15 @@ StartupEvents.registry('item', registry => {
 		.maxDamage(110)
 		.displayName('Wooden Boots')
 		.tier('wooden')
+
+	registry.create('map_atlas')
+		.displayName('Map Atlas')
+		.rarity('epic')
+
+	registry.create('map_atlas_waypoints')
+		.displayName('Map Atlas')
+		.rarity('epic')
+		.tooltip('§6Waypoints Upgrade')
 })
 
 ItemEvents.armorTierRegistry(event => {

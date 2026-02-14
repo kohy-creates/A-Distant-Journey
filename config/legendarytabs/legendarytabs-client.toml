@@ -30,7 +30,7 @@
 	# If enabled, show the passive skill tree button in the tabs menu.
 	"Passive Skill Tree Tab Enabled " = true
 	# If enabled, show the backpack button for Backpacked mod in the tabs menu.
-	"Backpacked Tab Enabled " = true
+	"Backpacked Tab Enabled " = false
 	# If enabled, show the backpack button for Travelers Backpack mod in the tabs menu.
 	"Travelers Backpack Tab Enabled " = true
 	# If enabled, show the diet button in the tabs menu.
