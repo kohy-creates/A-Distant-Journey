@@ -170,7 +170,7 @@
 				alexscaves:guanostone_redstone_ore
 				aether_ores:holystone_redstone_ore
 				rediscovered:ruby_ore
-				redicovered:deepslate_ruby_ore
+				rediscovered:deepslate_ruby_ore
 			]
 			// default: #FF2E2E
 			highlightColor: "#FF2E2E"
@@ -434,6 +434,15 @@
 			highlightColor: "#FC5B72"
 			transition: true
 			effectRadius: 24
+		}
+		{
+			blockIds: [
+				evilcraft:dark_ore
+				evilcraft:dark_ore_deepslate
+			]
+			highlightColor: "#833F9E"
+			transition: true
+			effectRadius: 16
 		}
 	]
 }

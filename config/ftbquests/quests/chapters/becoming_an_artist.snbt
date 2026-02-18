@@ -251,7 +251,7 @@
 			}]
 			title: "Recycling"
 			x: 1.5d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["74568A8CB40BC9F8"]
@@ -270,7 +270,7 @@
 			}]
 			title: "New Label"
 			x: 1.5d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -388,7 +388,7 @@
 				type: "item"
 			}]
 			title: "The Act of Role Playing"
-			x: -1.0d
+			x: 0.5d
 			y: -3.5d
 		}
 		{
@@ -410,8 +410,8 @@
 				}
 			]
 			title: "If I Wanted a Glow Up I'd Pay For It!"
-			x: -1.0d
-			y: -5.0d
+			x: 0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3DFCD3D89661B5AF"]
@@ -460,29 +460,8 @@
 				type: "item"
 			}]
 			title: "Blahaj Soft! Must Hug!"
-			x: 2.5d
+			x: 2.0d
 			y: -2.5d
-		}
-		{
-			dependencies: ["7E4B8BBFB0884187"]
-			icon: "fnaf_plushie_remastered:toy_freddy_plush"
-			id: "5C51858776F08873"
-			subtitle: "Trade with the Plushie Maker Villager and buy an oddly familiar plush from a game I don't remember the name of..."
-			tasks: [{
-				id: "23F32F9F74F28B6C"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "adj:fnaf_plushie"
-					}
-				}
-				title: "Any FNAF plushie"
-				type: "item"
-			}]
-			title: "100th Plush Market"
-			x: 1.0d
-			y: -3.5d
 		}
 		{
 			dependencies: ["5B8BE1C0DADD5B73"]
@@ -502,7 +481,7 @@
 				type: "item"
 			}]
 			title: "You Are Free! Free to Express Yourself!"
-			x: 4.0d
+			x: 3.5d
 			y: -2.5d
 		}
 		{
@@ -523,7 +502,7 @@
 				type: "item"
 			}]
 			title: "Colormatic!"
-			x: 2.5d
+			x: 2.0d
 			y: -4.0d
 		}
 	]

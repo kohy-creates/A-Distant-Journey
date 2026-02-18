@@ -1,6 +1,6 @@
 global.mobs = []
 
-global.WitherStormFlyingSpeed = 0.005;
+global.WitherStormFlyingSpeed = 0.01;
 
 EntityJSEvents.attributes(event => {
 
@@ -18,7 +18,7 @@ EntityJSEvents.attributes(event => {
 
 	event.modify('witherstormmod:wither_storm', attributes => {
 		attributes.add('witherstormmod:slow_flying_speed', global.WitherStormFlyingSpeed);
-		attributes.add('witherstormmod:target_stationary_flying_speed', global.WitherStormFlyingSpeed);
+		attributes.add('witherstormmod:target_stationary_flying_speed', global.WitherStormFlyingSpeed * 1.33334);
 	})
 
 })

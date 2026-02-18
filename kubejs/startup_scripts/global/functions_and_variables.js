@@ -139,3 +139,26 @@ global.getRandomInt = function (min, max) {
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+global.zenithSwords = [
+	{ item: "minecraft:wooden_sword", ingredient: true, color: 0x956445, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "botania:terra_sword", ingredient: true, color: 0x69E561, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "mythicmetals:palladium_sword", color: 0xFC8F08, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "botania:elementium_sword", color: 0xDD82A3, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "mythicmetals:stormyx_sword", color: 0xAE347D, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "mcdw:sword_sinister", color: 0x800012, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "mythicmetals:star_platinum_sword", color: 0xEEBE6C, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "mythicmetals:orichalcum_sword", color: 0x77D96F, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "ancient_aether:valkyrum_sword", color: 0xF1EAD9, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "unusualend:pearlescent_sword", color: 0xDD6DCF, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "mythicmetals:metallurgium_sword", ingredient: true, color: 0xFCDE49, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "majruszsdifficulty:enderium_sword", color: 0x7E5885, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "minecraft:netherite_sword", color: 0x8F7F82, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "additionaladditions:rose_gold_sword", color: 0xFCCDC2, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "minecraft:iron_sword", color: 0xC6C4BA, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "create:cardboard_sword", ingredient: true, color: 0xECC599, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "lost_aether_content:phoenix_sword", ingredient: true, color: 0xFCBB42, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "twilightforest:ice_sword", ingredient: true, color: 0x7D9CB9, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "twilightforest:knightmetal_sword", ingredient: true, color: 0xC2D3AC, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "zenith:zenith", color: 0xb2ffb4, rotation_center_height: 0.125, rotation: 0.785, scale: 7.5, trail_width: 5 }
+]

@@ -96,6 +96,13 @@
 			}
 		]
 	},
+	"item.zenith.swing": {
+		"sounds": [
+			{
+				"name": "adj:item/zenith"
+			}
+		]
+	},
 	"generic.critical_hit": {
 		"sounds": [
 			{

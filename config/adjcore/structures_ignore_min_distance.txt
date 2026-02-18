@@ -1,1 +1,15 @@
 witherstormmod:storm_spawn_platform
+alexscaves:abyssal_ruins
+alexscaves:acid_pit
+alexscaves:cake_cave
+alexscaves:dino_bowl
+alexscaves:donut_arch
+alexscaves:ferrocave
+alexscaves:forlorn_bridge
+alexscaves:forlorn_canyon
+alexscaves:gingerbread_town
+alexscaves:licowitch_tower
+alexscaves:ocean_trench
+alexscaves:soda_bottle
+alexscaves:underground_cabin
+alexscaves:volcano

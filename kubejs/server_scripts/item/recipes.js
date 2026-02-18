@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
 		return text.replace(':', '_').replace('#', '');
 	}
 
-	/** @type {$InputItem_}*/
+	/** @type {Internal.InputItem[]}*/
 	const disabledItemRecipes = [
 		global.rediscoveredFurniture(),
 		global.blacklistedItems,
@@ -37,32 +37,25 @@ ServerEvents.recipes((event) => {
 		'witherstormmod:super_beacon',
 		'witherstormmod:super_support_beacon',
 		'supplementaries:rope',
-
 		'ars_nouveau:arcanist_boots',
 		'ars_nouveau:arcanist_hood',
 		'ars_nouveau:arcanist_leggings',
 		'ars_nouveau:arcanist_robes',
-
 		/ars_elemental:.*_boots/,
 		/ars_elemental:.*_robes/,
 		/ars_elemental:.*_leggings/,
 		/ars_elemental:.*_hat/,
-
 		'ars_nouveau:worn_notebook',
 		'quark:pipe',
 		'quark:encased_pipe',
-
 		'@functionalstorage',
-
 		'experienceobelisk:cognitive_flux',
 		'botania:redstone_root',
-
 		'minecraft:chest',
 		'farmersdelight:dough',
 		'mythicmetals:orichalcum_hammer',
 		'botania:terra_sword',
 		'minecraft:lodestone',
-
 		'botania:mana_pylon',
 		'botania:natura_pylon',
 		'botania:gaia_pylon',
@@ -80,31 +73,25 @@ ServerEvents.recipes((event) => {
 		'architects_palette:craterstone',
 		'architects_palette:moonshale_bricks',
 		'architects_palette:plating_block',
-
 		/twilightforest:.*chest$/,
 		'twilightforest:raw_ironwood',
 		/twilightforest:.*banner_pattern$/,
-
 		'ars_nouveau:source_jar',
 		'ars_additions:ender_source_jar',
-
 		'@nameless_trinkets',
 		'@ftbquests',
-
 		'simplyswords:tainted_relic',
 		'ars_nouveau:ring_of_lesser_discount',
 		'ars_nouveau:ring_of_greater_discount',
 		'ars_nouveau:ring_of_potential',
-
 		'neapolitan:milk_bottle',
 		'botania:alfheim_portal',
 		'vinery:grapevine_stem',
 		'nethervinery:obsidian_stem',
-
-		/projectredtransmission:.*_wire/,
-		/cb_microblock:.*/,
-
 		'accents:sewing_kit',
+		/itemfilters/,
+		/.*aether.*\:.*cape/,
+		/constructionwand/
 	]
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -118,23 +105,18 @@ ServerEvents.recipes((event) => {
 		'rediscovered:studded_chestplate_from_iron',
 		'moresnifferflowers:netherite_scrap_from_part_recycling',
 		'create_ultimate_factory:crushing_netherite',
-
 		'mythicmetals:alloy_forge/alloy_celestium_from_ingots',
 		'mythicmetals:alloy_forge/alloy_celestium_from_ingots_alt',
 		'mythicmetals:alloy_forge/alloy_celestium_from_ores',
 		'mythicmetals:alloy_forge/alloy_celestium_from_raw_ores',
-
 		'mythicmetals:alloy_forge/alloy_metallurgium_from_ingots',
 		'mythicmetals:alloy_forge/alloy_metallurgium_from_ingots_alt',
 		'mythicmetals:alloy_forge/alloy_metallurgium_from_ores',
 		'mythicmetals:alloy_forge/alloy_metallurgium_from_raw_ores',
-
 		'create:crafting/materials/copper_nugget',
 		'create:crafting/materials/copper_ingot',
-
 		'suppsquared:copper_lantern',
 		'suppsquared:copper_lantern_2',
-
 		'ars_nouveau:unbreaking_2',
 		'ars_nouveau:unbreaking_3',
 		'ars_nouveau:protection_5',
@@ -149,66 +131,51 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:efficiency_5',
 		'ars_nouveau:power_4',
 		'ars_nouveau:power_5',
-
 		'create:mixing/andesite_alloy',
 		'create:mixing/andesite_alloy_from_zinc',
 		'create:crafting/materials/andesite_alloy',
 		'create:crafting/materials/andesite_alloy_from_zinc',
-
 		'farmersdelight:pie_crust',
 		'delightful:food/pie_crust_from_fat',
-
 		'experienceobelisk:cognitive_alloy',
 		'experienceobelisk:metamorpher/cognitive_alloy_metamorphosis',
-
 		'sortilege:experience_bottle',
-
 		'sortilege:cauldron/turtle_master',
 		'sortilege:cauldron/slow_falling',
 		'sortilege:cauldron/poison',
 		'sortilege:cauldron/leaping',
-
 		'minecraft:candle',
 		'delightful:candle_from_animal_fat',
-
 		'quark:tweaks/crafting/utility/bent/bread',
 		'create:crafting/appliances/dough',
 		'create:mixing/dough_by_mixing',
-
 		'mythicmetals:alloy_forge/alloy_steel_from_ingots',
 		'mythicmetals:alloy_forge/alloy_steel_from_ores',
 		'mythicmetals:alloy_forge/alloy_steel_from_raw_ores',
-
 		'mythicmetals:blasting/blast_stormyx_ingot_from_raw_ore',
 		'mythicmetals:blasting/blast_stormyx_ingot_from_ores',
 		'mythicmetals:alloy_forge/forge_stormyx_ingot_from_ores',
 		'mythicmetals:alloy_forge/forge_stormyx_ingot_from_raw_ore',
-
 		'minecraft:bread',
 		'botania:flighttiara_0',
-
 		/ars_additions:locate_structure/,
 		'mythicmetals:blasting/blast_adamantite_ingot_from_ores',
 		'mythicmetals:blasting/blast_adamantite_ingot_from_raw_ore',
 		'mythicmetals:blasting/blast_adamantite_nugget_from_equipment',
-
 		/alloy_forgery:compat/,
 		/alloy_forgery:.*_block/,
-
-		/mythicmetals:alloy_forge\/forge_adamantite_ingot/,
+		/mythicmetals:alloy_forge\/blast_adamantite_ingot/,
 		/mythicmetals:alloy_forge\/forge_mythril_ingot/,
 		/mythicmetals:alloy_forge\/forge_orichalcum_ingot/,
-
+		/mythicmetals:blasting\/blast_orichalcum_ingot/,
+		/mythicmetals:blasting\/blast_mythril_ingot/,
 		'unusualend:pearly_ingot_recipe',
-
 		'minecraft:netherite_ingot',
 		'alloy_forgery:netherite_from_gold_and_scrap',
 		'experienceobelisk:metamorpher/netherite_ingot_metamorphosis',
-
 		'mythicmetals:blasting/blast_mythril_ingot_from_ores',
 		'mythicmetals:blasting/blast_mythril_ingot_from_raw_ore',
 		'mythicmetals:blasting/blast_mythril_nugget_from_equipment',
-
 		'alloy_forgery:compat/silver_ingot_from_raw_ores',
 		'alloy_forgery:compat/silver_ingot_from_ores',
 		'create:smoking/bread',
@@ -216,9 +183,7 @@ ServerEvents.recipes((event) => {
 		'create:mixing/brass_ingot',
 		'minecraft:ender_eye',
 		'netherdepthsupgrade:ender_eye',
-
 		/botania:mana_infusion\/.*_leaves_dupe/,
-
 		'alexscaves:seeking_arrow',
 		'cataclysm:void_scatter_arrow',
 		'minecraft:spectral_arrow',
@@ -227,57 +192,63 @@ ServerEvents.recipes((event) => {
 		'quark:tools/crafting/torch_arrow',
 		'tide:deep_aqua_arrow',
 		'netherexp:phasmo_arrow',
-
 		'create:crafting/kinetics/super_glue',
 		'createutilities:mixing/void_steel_ingot',
-
 		/create:crushing\/raw_.*/,
-
 		'create_things_and_misc:diluted_bonemeal_craft',
 		'twilightforest:material/blasted_ironwood_ingot',
 		'twilightforest:material/smelted_ironwood_ingot',
-
 		'create_ultimate_factory:crushing_coral',
 		'create_ultimate_factory:crushing_blackstone',
 		'create_ultimate_factory:crushing_endstone',
 		/create:crushing\/.*_recycling/,
-
 		'ars_nouveau:sourcestone',
 		'ars_nouveau:imbuement_lapis',
 		'ars_nouveau:imbuement_amethyst',
 		'ars_nouveau:imbuement_amethyst_block',
 		/ars_nouveau:crush_.*$/,
 		/ars_elemental:.*_crush$/,
-
 		'ars_nouveau:spell_bow',
 		'ars_nouveau:spell_crossbow',
 		'ars_nouveau:enchanters_mirror',
 		'ars_nouveau:enchanters_shield',
 		'ars_nouveau:enchanters_sword',
-
 		'create:crafting/materials/experience_nugget_from_block',
 		'create:crafting/materials/experience_block',
-
 		'botania:spawner_claw',
 		'botania:spawner_mover',
-
 		'ars_nouveau:fire_essence_to_magma_block',
-
 		'ancient_aether:valkyrum',
 		'aether_redux:valkyrum_enchanting_from_raw_ore',
-
 		'mythicmetals:alloy_forge/alloy_hallowed_from_ingots',
 		'mythicmetals:alloy_forge/alloy_hallowed_from_ores',
 		'mythicmetals:alloy_forge/alloy_hallowed_from_raw_ores',
 		/cutting\/.*trophy/,
-
 		'etcetera:white_sweater',
 		'etcetera:white_hat',
-
 		/handcrafted:.*_sheet/,
 		/handcrafted:.*_cushion/,
-
-		'twilightdelight:cutting/ice_bow'
+		'twilightdelight:cutting/ice_bow',
+		'mynethersdelight:crafting/tnt_alt',
+		'zenith:zenith',
+		'majruszsdifficulty:enderium_ingot_horizontal',
+		'majruszsdifficulty:enderium_ingot_vertical',
+		'neapolitan:chocolate/chocolate_bar',
+		'neapolitan:chocolate/chocolate_bar_from_chocolate_block',
+		'neapolitan:chocolate/chocolate_block',
+		'neapolitan:milk/milk_bottles_from_bucket',
+		/minecraft\:dye_.*_wool/,
+		'endersdelight:cutting/ender_shard',
+		'evilcraft:crafting/weather_container',
+		'terra_curio:obsidian_skull',
+		'terra_curio:ice_skates',
+		'terra_curio:blizzard_in_a_bottle',
+		'terra_curio:rocket_boots',
+		'create_ultimate_factory:haunting_apple',
+		'evilcraft:special/vengeance_pickaxe',
+		'evilcraft:special/vein_sword',
+		'evilcraft:special/minecraft_dead_bush',
+		/mythicmetals:.*\/forge_adamantite_ingot/
 	]
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -325,7 +296,6 @@ ServerEvents.recipes((event) => {
 			'aether:skyroot_stick': '#forge:rods/wooden',
 			'minecraft:clock': '#adj:clock',
 			'farmersdelight:rope': 'supplementaries:rope',
-			'mcdw:item_bee_stinger': 'the_bumblezone:bee_stinger',
 			'architects_palette:withered_bone_block': 'netherexp:wither_bone_block',
 			'architects_palette:withered_bone': 'netherexp:fossil_fuel',
 			'twilightforest:raw_ironwood': 'twilightforest:ironwood_ingot',
@@ -352,8 +322,10 @@ ServerEvents.recipes((event) => {
 			'croptopia:walnut': 'ecologics:walnut',
 			'croptopia:food_press': 'minecraft:air',
 			'croptopia_additions:carbonation_machine': 'minecraft:air',
-			'morered:stone_plate': 'smooth_stone_slab'
-
+			'morered:stone_plate': 'smooth_stone_slab',
+			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
+			'croptopia:chocolate': 'neapolitan:chocolate_bar',
+			'upgrade_aquatic:thrasher_tooth': 'alexsmobs:shark_tooth'
 		},
 		output: {
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
@@ -364,7 +336,8 @@ ServerEvents.recipes((event) => {
 			'farmersdelight:wheat_dough': 'create:dough',
 			'create:copper_nugget': 'mythicmetals:copper_nugget',
 			'farmersdelight:rope': 'supplementaries:rope',
-			"minecraft:totem_of_undying": "twilightforest:charm_of_life_1"
+			"minecraft:totem_of_undying": "twilightforest:charm_of_life_1",
+			'create:bar_of_chocolate': 'neapolitan:chocolate_bar'
 		}
 	}
 	for (const [input, replacement] of Object.entries(unificationMap.input)) {
@@ -514,6 +487,51 @@ ServerEvents.recipes((event) => {
 		}
 	).id('adj:lodestone')
 
+	// Dyed blocks consistency and tweaks
+	Color.DYE.forEach(color => {
+
+		event.shapeless(
+			`8x minecraft:${color}_terracotta`,
+			[
+				`minecraft:${color}_dye`,
+				'minecraft:terracotta',
+				'minecraft:terracotta',
+				'minecraft:terracotta',
+				'minecraft:terracotta',
+				'minecraft:terracotta',
+				'minecraft:terracotta',
+				'minecraft:terracotta',
+				'minecraft:terracotta'
+			]
+		).id(`minecraft:${color}_terracotta`)
+
+		event.shaped(
+			`4x hearth_and_home:${color}_terracotta_bricks`,
+			[
+				'TT',
+				'TT'
+			],
+			{
+				T: `minecraft:${color}_terracotta`
+			}
+		).id(`adj:${color}_terracotta_bricks`)
+
+		event.shapeless(
+			`8x hearth_and_home:${color}_terracotta_bricks`,
+			[
+				`minecraft:${color}_dye`,
+				'hearth_and_home:terracotta_bricks',
+				'hearth_and_home:terracotta_bricks',
+				'hearth_and_home:terracotta_bricks',
+				'hearth_and_home:terracotta_bricks',
+				'hearth_and_home:terracotta_bricks',
+				'hearth_and_home:terracotta_bricks',
+				'hearth_and_home:terracotta_bricks',
+				'hearth_and_home:terracotta_bricks'
+			]
+		).id(`hearth_and_home:${color}_terracotta_bricks`)
+	})
+
 	event.recipes.botania.mana_infusion('naturescompass:naturescompass', 'minecraft:compass').mana(1000000).id('adj:nature_compass')
 
 	function itemsOnGround(ingredients, output, id, inBlock, comment) {
@@ -620,9 +638,17 @@ ServerEvents.recipes((event) => {
 	 * @param {number} mana - Mana cost
 	 */
 	function gaiaPlateRecipe(inputs, output, mana) {
-		const ingredients = inputs.map(id =>
-			id.startsWith("#") ? { tag: id.slice(1) } : { item: id }
-		);
+		const ingredients = inputs.map(id => {
+			if (typeof id === "string") {
+				return id.startsWith("#") ? { tag: id.slice(1) } : { item: id }
+			}
+			if (id && id.toJson) {
+				return id.toJson()
+			}
+
+			return id
+		})
+
 
 		event.custom({
 			type: "botanicadds:gaia_plate",
@@ -914,20 +940,6 @@ ServerEvents.recipes((event) => {
 	terrasteelArmorRecipe(rune('autumn'), 'botania:manasteel_leggings', 'botania:terrasteel_leggings');
 	terrasteelArmorRecipe(rune('winter'), 'botania:manasteel_boots', 'botania:terrasteel_boots');
 
-	event.shaped(
-		'botania:terra_sword',
-		[
-			' S ',
-			' S ',
-			'THT'
-		],
-		{
-			T: 'botania:livingwood_twig',
-			S: 'botania:terrasteel_ingot',
-			H: 'mythicmetals:hallowed_ingot',
-		}
-	).id('botania:terra_sword')
-
 	event.custom({
 		'type': 'create:pressing',
 		'ingredients': [
@@ -1075,9 +1087,10 @@ ServerEvents.recipes((event) => {
 					item,
 					'brick',
 					'brick',
+					'brick',
 					'brick'
 				]
-			)
+			).id(`adj:sherd_copying/${flattenedID(item.id)}`)
 		}
 	})
 
@@ -1297,41 +1310,9 @@ ServerEvents.recipes((event) => {
 		}
 	}).id('adj:recall_potion')
 
-	event.custom({
-		'type': 'lychee:block_interacting',
-		'post': [
-			{
-				'type': 'drop_item',
-				'contextual': [
-					{
-						'type': 'execute',
-						'command': 'playsound minecraft:block.amethyst_cluster.break block @a[distance=0..] ~ ~ ~ 1 1.65',
-						'hide': true
-					},
-					{
-						'type': 'execute',
-						'command': 'particle minecraft:item amethyst_shard ~ ~ ~ 0.05 0.05 0.05 0.05 12 force',
-						'hide': true
-					},
-					{
-						'type': 'chance',
-						'chance': 0.25
-					}
-				],
-				'item': 'spelunker:amethyst_dust'
-			}
-		],
-		'item_in': {
-			'item': 'minecraft:amethyst_shard'
-		},
-		'block_in': {
-			'tag': 'adj:stone'
-		}
-	}).id('adj:amethyst_dust')
 
-	event.recipes.create.crushing(
-		[Item.of('spelunker:amethyst_dust')], 'amethyst_shard', 20
-	).id('adj:amethyst_dust_crushing')
+
+	event.recipes.create.milling([Item.of('spelunker:amethyst_dust'), Item.of('spelunker:amethyst_dust').withChance(0.25)], 'amethyst_shard', 60).id('adj:amethyst_dust_crushing')
 
 	event.shaped(
 		Item.of('supplementaries:quiver'),
@@ -1348,20 +1329,6 @@ ServerEvents.recipes((event) => {
 
 	// Weapons
 	event.shaped(
-		Item.of('botania:star_sword'),
-		[
-			' S ',
-			'GSG',
-			' T '
-		],
-		{
-			S: 'mythicmetals:star_platinum',
-			T: 'botania:terra_sword',
-			G: 'botanicadds:gaiasteel_ingot'
-		}
-	).id('botania:star_sword');
-
-	event.shaped(
 		Item.of('botania:thunder_sword'),
 		[
 			' S ',
@@ -1370,7 +1337,7 @@ ServerEvents.recipes((event) => {
 		],
 		{
 			S: 'mythicmetals:stormyx_ingot',
-			T: 'botania:terra_sword',
+			T: 'botania:livingwood_twig',
 			G: 'botanicadds:gaiasteel_ingot'
 		}
 	).id('botania:thunder_sword')
@@ -1502,31 +1469,6 @@ ServerEvents.recipes((event) => {
 	event.remove({ input: /manganese/ });
 	event.remove({ input: /quadrillum/ });
 
-	// Special case - unifying honey
-	event.replaceInput({ input: Fluid.of('create:honey') },
-		Fluid.of('create:honey'),
-		Fluid.of('the_bumblezone:honey_fluid_still')
-	)
-
-	const honeyMap = {
-		'create:honey': 'the_bumblezone:honey_fluid_still',
-		'create:honey_bucket': 'the_bumblezone:honey_bucket'
-	}
-	event.forEachRecipe({}, recipe => {
-
-		let json = recipe.json.toString();
-
-		for (const [before, after] of Object.entries(honeyMap)) {
-			if (!json.includes(before)) return;
-
-			event.remove({ id: recipe.getId() })
-
-			json = json.replace(before, after);
-			event.custom(JSON.parse(json)).id(recipe.getId())
-		}
-
-	})
-
 	// Harder Bread
 	event.replaceInput({ output: '#forge:dough' },
 		'wheat',
@@ -1600,6 +1542,7 @@ ServerEvents.recipes((event) => {
 		'waystones:warp_dust',
 		[
 			Item.of('endersdelight:ender_shard'),
+			Item.of('spelunker:amethyst_dust'),
 			Item.of('spelunker:amethyst_dust')
 		]
 	).id('adj:warp_dust')
@@ -1684,42 +1627,6 @@ ServerEvents.recipes((event) => {
 			W: 'waystones:waystone'
 		}
 	).id('adj:waystones/warp_plate')
-
-	event.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: 'constructionwand' }, (recipe) => {
-		const output = recipe.getOriginalRecipeResult();
-		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
-
-		event.remove({ id: recipe.getId() });
-		if (output.id.toString().includes('core')) {
-			event.recipes.ars_nouveau.enchanting_apparatus(
-				[
-					// ingredients[0],
-					ingredients[1],
-					ingredients[2],
-					ingredients[3],
-					ingredients[5],
-					ingredients[6],
-					ingredients[7],
-					// ingredients[8]
-				],
-				ingredients[4],
-				output
-			).id(`adj:construction_wand/${output.getId().split(':')[1]}`)
-		}
-		else {
-			event.recipes.ars_nouveau.enchanting_apparatus(
-				[
-					ingredients[2],
-					ingredients[2],
-					ingredients[2],
-					'ars_nouveau:source_gem_block',
-					'ars_nouveau:source_gem_block'
-				],
-				'stick',
-				output
-			).id(`adj:construction_wand/${output.getId().split(':')[1]}`)
-		}
-	})
 
 	// Better rail crafting
 	event.forEachRecipe({ type: 'crafting_shaped', output: [/rail/, /create_hypertube\:/] }, (recipe) => {
@@ -2067,7 +1974,11 @@ ServerEvents.recipes((event) => {
 			},
 			{
 				"item": "witherstormmod:command_block_book"
+			}/*,
+			{
+				"item": "constructionwands:infinity_wand"
 			}
+				*/
 		],
 		"result": {
 			"item": "structure_gel:building_tool"
@@ -3072,18 +2983,17 @@ ServerEvents.recipes((event) => {
 		'botania:rune_greed',
 	], 'kubejs:eye_of_verdant_bloom', 2000000)
 
-	const inter = Item.of('minecraft:ender_eye');
+	let inter = Item.of('minecraft:ender_eye');
 	event.recipes.create.sequenced_assembly(
 		Item.of('kubejs:eye_of_ethercraft'),
 		'ender_eye',
 		[
 			event.recipes.create.deploying(inter, [inter, Item.of('create:precision_mechanism')]),
 			event.recipes.create.filling(inter, [inter, Fluid.lava()]),
-			event.recipes.create.deploying(inter, [inter, Item.of('ars_nouveau:source_gem_block')]),
-			event.recipes.create.deploying(inter, [inter, Item.of('create:large_cogwheel')]),
+			event.recipes.create.deploying(inter, [inter, Item.of('createutilities:void_casing')]),
 			event.recipes.create.deploying(inter, [inter, Item.of('create:brass_block')]),
 			event.recipes.create.deploying(inter, [inter, Item.of('create:cogwheel')]),
-			event.recipes.create.filling(inter, [inter, Fluid.of('the_bumblezone:royal_jelly_fluid_still', 1000)]),
+			event.recipes.create.filling(inter, [inter, Fluid.of('evilcraft:blood', 1000)]),
 		]
 	).transitionalItem(inter).loops(16).id('adj:eyes/ethercraft')
 
@@ -3093,14 +3003,15 @@ ServerEvents.recipes((event) => {
 		Item.of('mythicmetals:durasteel_engine'),
 		[
 			'IHI',
-			'SBS',
-			'III'
+			'SAS',
+			'BIB'
 		],
 		{
-			I: Item.of('mythicmetals:steel_ingot'),
-			H: Item.of('hopper'),
-			S: Item.of('gunpowder'),
-			B: Item.of('mythicmetals:steel_block'),
+			I: 'mythicmetals:steel_ingot',
+			H: 'hopper',
+			S: 'gunpowder',
+			B: 'mythicmetals:steel_block',
+			A: 'netherite_ingot'
 		}
 	).id('adj:durasteel_engine')
 
@@ -3288,6 +3199,18 @@ ServerEvents.recipes((event) => {
 		2,
 		5
 	)
+
+	// Enderium is now made in an Alloy Forge
+	alloyForgeRecipe(
+		[
+			['majruszsdifficulty:enderium_shard', 6],
+			['ender_eye', 1],
+		],
+		['majruszsdifficulty:enderium_ingot', 1],
+		4,
+		30
+	)
+
 
 	// Void Steel
 	alloyForgeRecipe(
@@ -3520,7 +3443,8 @@ ServerEvents.recipes((event) => {
 	const nuggetsBlacklist = [
 		'create:experience_nugget',
 		'alexscaves:dinosaur_nugget',
-		'alexscaves:cave_painting_dino_nuggets'
+		'alexscaves:cave_painting_dino_nuggets',
+		'born_in_chaos_v1:dark_metal_nugget'
 	]
 	event.forEachRecipe([{ type: 'smelting' }, { type: 'blasting' }], recipe => {
 		const output = recipe.getOriginalRecipeResult();
@@ -3932,7 +3856,6 @@ ServerEvents.recipes((event) => {
 		'unusal_end:ender_stew_recipe',
 		'alexscaves:vesper_stew',
 		'alexscaves:seething_stew',
-		'the_bumblezone:bee_soup',
 		'unusualend:warped_stew_recipe',
 		'aquamirae:poseidons_breakfast',
 		'unusualend:blob_stew_recipe',
@@ -4143,7 +4066,7 @@ ServerEvents.recipes((event) => {
 				{
 					P: ingredients[0]
 				}
-			).id(`adj:trapdoor/${output.replace(':', '_')}`)
+			).id(recipe.getId())
 		}
 		else if (ingredients.length === 4) {
 			const output = recipe.getOriginalRecipeResult().getId();
@@ -4158,7 +4081,7 @@ ServerEvents.recipes((event) => {
 				{
 					P: ingredients[0]
 				}
-			).id(`adj:trapdoor/${output.replace(':', '_')}`)
+			).id(recipe.getId())
 		}
 	})
 
@@ -4178,7 +4101,7 @@ ServerEvents.recipes((event) => {
 			{
 				P: ingredients[0]
 			}
-		).id(`adj:stairs/${output.replace(':', '_')}`)
+		).id(recipe.getId())
 	})
 
 	event.forEachRecipe({ output: /^(?=.*fence)(?!.*gate).*/, type: 'crafting_shaped' }, recipe => {
@@ -4203,7 +4126,7 @@ ServerEvents.recipes((event) => {
 				P: ingredients[slotToUse],
 				S: (ingredients[Math.abs(slotToUse - 1)].getItemIds().toArray().includes('minecraft:stick')) ? '#forge:rods/wooden' : ingredients[Math.abs(slotToUse - 1)]
 			}
-		).id(`adj:fence/${output.replace(':', '_')}`)
+		).id(recipe.getId())
 	})
 
 	event.forEachRecipe({ output: /fence_gate/, type: 'crafting_shaped' }, recipe => {
@@ -4242,7 +4165,7 @@ ServerEvents.recipes((event) => {
 				P: ingredients[4],
 				S: ingredients[0]
 			}
-		).id(`adj:ladder/${output.replace(':', '_')}`)
+		).id(recipe.getId())
 	})
 
 	event.shaped(
@@ -4322,7 +4245,7 @@ ServerEvents.recipes((event) => {
 				F: ingredients[5],
 				G: (ingredients[7].getItemIds().toArray().includes('minecraft:stick')) ? '#forge:rods/wooden' : ingredients[7],
 			}
-		).id(`adj:sign/${output.replace(':', '_')}`)
+		).id(recipe.getId())
 	})
 
 	alloyForgeRecipe(
@@ -4342,16 +4265,12 @@ ServerEvents.recipes((event) => {
 
 	event.recipes.create.mixing('experienceobelisk:cognitive_flux', [
 		'2x quartz',
-		'1x soul_sand',
-		'1x botania:mana_powder',
-		// Fluid.water(0.25)
-	]).id('adj:cognitive_flux_from_soul_sand')
-	event.recipes.create.mixing('experienceobelisk:cognitive_flux', [
-		'2x quartz',
-		'1x soul_soil',
-		'1x botania:mana_powder',
-		// Fluid.water(0.25)
-	]).id('adj:cognitive_flux_from_soul_soil')
+		[
+			'soul_sand',
+			'soul_soil',
+		],
+		'botania:mana_powder',
+	]).id('adj:cognitive_flux')
 
 	event.custom({
 		"type": "experienceobelisk:molecular_metamorphosis",
@@ -4928,6 +4847,20 @@ ServerEvents.recipes((event) => {
 		event.recipes.botania.petal_apothecary(flw, items).id(`botania:petal_apothecary/${flowerName}`)
 	}
 
+	const ritualOverrides = {
+		types: {
+			blue: 'ars_nouveau:blue_archwood_log'
+		},
+		rituals: {
+			// 'ars_nouveau:ritual_cloudshaping': {
+			// 	type: 'blue',
+			// 	ingredients: [
+			// 		'ars_nouveau:source_gem_block',
+			// 		'feather',
+			// 	]
+			// }
+		}
+	}
 	event.forEachRecipe({ type: 'crafting_shapeless' }, recipe => {
 		const output = recipe.getOriginalRecipeResult();
 		if (!(output.getId().includes('ars') && output.getId().includes('ritual_'))) return;
@@ -4937,12 +4870,20 @@ ServerEvents.recipes((event) => {
 		if (ingredients[0].getItemIds().stream().anyMatch(id => id.toString().includes('archwood'))) {
 
 			let ingr = [];
-			for (let i = 0; i < ingredients.size(); i++) {
-				let essence = ingredients[i].getItemIds().toArray()[0];
-				if (essence.includes('_essence')) {
-					ingr.push(Ingredient.of(essenceToRuneMap[essence]))
+			if (Object.keys(ritualOverrides.rituals).includes(output.id)) {
+				ingr.push(ritualOverrides.types[ritualOverrides.rituals[output.id].type]);
+				ritualOverrides.rituals[output.id].ingredients.forEach(i => {
+					ingr.push(i);
+				})
+			}
+			else {
+				for (let i = 0; i < ingredients.size(); i++) {
+					let essence = ingredients[i].getItemIds().toArray()[0];
+					if (essence.includes('_essence')) {
+						ingr.push(Ingredient.of(essenceToRuneMap[essence]))
+					}
+					else ingr.push(ingredients[i]);
 				}
-				else ingr.push(ingredients[i]);
 			}
 
 			event.remove({ id: recipe.getId() })
@@ -4974,7 +4915,7 @@ ServerEvents.recipes((event) => {
 
 		let iMap = [];
 		ingredients.forEach(i => {
-			iMap.push(Item.of(i))
+			iMap.push(i instanceof Item ? i : Item.of(i))
 		})
 
 		if (id) {
@@ -5039,7 +4980,8 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:dull_trinket',
 		'botanicadds:aura_ring_gaia',
 		'botanicadds:mana_ring_gaia',
-		'create:googles'
+		'create:googles',
+		'botania:invisibility_cloak',
 	]
 	const curioToWorkshopRegex = [
 		/botania:cosmetic.*/,
@@ -5184,6 +5126,49 @@ ServerEvents.recipes((event) => {
 		.recipeTime(toSeconds(45))
 		.id('adj:eyes/arcanum')
 
+	event.recipes.summoningrituals.altar('mythicmetals:hallowed_ingot')
+		.itemOutput('botania:terra_sword')
+		.input(
+			'mythicmetals:stormyx_sword',
+			'mcdw:sword_sinister',
+			'mythicmetals:star_platinum_sword',
+			'mythicmetals:orichalcum_sword',
+			'ancient_aether:valkyrum_sword',
+			'unusualend:pearlescent_sword',
+			'mythicmetals:palladium_sword',
+			'botania:elementium_sword'
+		)
+		.recipeTime(toSeconds(25))
+		.id('botania:terra_sword')
+
+	// Zenith
+	const swords = [
+		{
+			item: 'witherstormmod:command_block_book'
+		},
+		{
+			item: 'mythicmetals:unobtainium_block'
+		},
+		{
+			item: 'mythicmetals:unobtainium_block'
+		}
+	];
+	global.zenithSwords.forEach(obj => {
+		if (obj.ingredient) {
+			swords.push({
+				item: obj.item
+			})
+		}
+	})
+	event.custom({
+		"type": "witherstormmod:item_craft_super_beacon",
+		"condition": "all_supports",
+		"ingredients": swords,
+		"result": {
+			"item": "zenith:zenith"
+		}
+	}).id('adj:zenith')
+
 	// EvilCraft rework
 	function bloodInfuserRecipe(input, result, bloodAmount, tier, duration, exp, id) {
 		event.custom({
@@ -5208,7 +5193,14 @@ ServerEvents.recipes((event) => {
 		'promise_tier_2',
 		'promise_tier_3',
 		'promise_speed_0',
-		'promise_efficiency_0'
+		'promise_efficiency_0',
+		'potentia_sphere',
+		'inverted_potentia',
+		'dull_dust',
+		'vengeance_ring',
+		'box_of_eternal_closure',
+		'piercing_vengeance_focus',
+		'spirit_reanimator'
 	]
 	EvilCraftNewRecipes.forEach(r => {
 		event.remove({ output: `evilcraft:${r}` })
@@ -5216,7 +5208,111 @@ ServerEvents.recipes((event) => {
 
 	bloodInfuserRecipe('ars_nouveau:source_gem_block', 'evilcraft:promise_acceptor_iron', 10, 0, 25, 5, 'core/promise_acceptor_iron')
 	bloodInfuserRecipe('mythicmetals:midas_gold_block', 'evilcraft:promise_acceptor_gold', 40, 1, 100, 8, 'core/promise_acceptor_gold')
-	bloodInfuserRecipe('botania:manasteel_block', 'evilcraft:promise_acceptor_diamond', 160, 2, 250, 10, 'core/promise_acceptor_diamond')
+	bloodInfuserRecipe('aether_redux:', 'evilcraft:promise_acceptor_diamond', 160, 2, 250, 10, 'core/promise_acceptor_diamond')
+
+	event.recipes.create.mixing('evilcraft:potentia_sphere', [
+		'slime_ball',
+		'glowstone_dust',
+		'glowstone_dust',
+		'glowstone_dust',
+		'redstone',
+		'redstone',
+		'lapis_lazuli',
+		'vengeance_focus',
+		'eternal_water'
+	], 120).id('adj:potentia_sphere')
+
+	event.recipes.ars_nouveau.imbuement(
+		'evilcraft:potentia_sphere',
+		'evilcraft:inverted_potentia',
+		300,
+		[
+			'evilcraft:dark_gem',
+			'evilcraft:dark_gem',
+			'evilcraft:dark_gem'
+		]
+	).id('adj:inverted_potentia')
+
+	event.shapeless(
+		'evilcraft:dull_dust',
+		[
+			'supplementaries:ash',
+			'sugar'
+		]
+	).id('adj:dull_dust_manual_only')
+	event.recipes.create.mixing('2x evilcraft:dull_dust', [
+		'supplementaries:ash',
+		'sugar'
+	], 50).id('adj:dull_dust_mixing')
+
+	event.recipes.create.milling('evilcraft:dark_gem_crushed', 'evilcraft:dark_gem').id('adj:dark_gem_crushed')
+
+	event.replaceInput({ id: 'minecraft:tinted_glass' },
+		'amethyst_shard',
+		[
+			'amethyst_shard',
+			'evilcraft:dark_gem'
+		]
+	)
+
+	event.shapeless(
+		'evilcraft:weather_container',
+		[
+			'glass_bottle',
+			'evilcraft:dark_gem',
+			'evilcraft:dull_dust'
+		]
+	)
+
+	workshopRecipe([
+		Item.of('evilcraft:dark_gem_crushed', 8),
+		'botania:manasteel_ingot'
+	], 'evilcraft:vengeance_ring', 'adj:vengeance_ring')
+
+	event.shaped(
+		'evilcraft:box_of_eternal_closure',
+		[
+			'DDD',
+			'ICI',
+			'DDD'
+		],
+		{
+			D: 'evilcraft:dark_gem',
+			I: 'iron_ingot',
+			C: '#forge:chests/wooden'
+		}
+	).id('adj:box_of_eternal_closure')
+
+	workshopRecipe([
+		'evilcraft:vengeance_ring',
+		'diamond',
+		Item.of('ars_nouveau:source_gem', 4)
+	], 'evilcraft:vengeance_focus', 'adj:vengeance_focus')
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'evilcraft:blood_orb_filled',
+			'evilcraft:blood_orb_filled',
+			'evilcraft:blood_orb_filled',
+			'evilcraft:blood_orb_filled',
+			'minecraft:end_crystal',
+			'minecraft:end_crystal',
+			'botania:rune_wrath',
+			'botania:rune_mana'
+		],
+		'evilcraft:vengeance_focus',
+		'evilcraft:piercing_vengeance_focus',
+		8000
+	).id('adj:piercing_vengeance_focus')
+
+	terraPlateAndGaiaPlate([
+		'evilcraft:bucket_eternal_water',
+		'#forge:glass',
+		'#forge:glass',
+		'#forge:glass',
+		'#forge:glass',
+		'mythicmetals:aquarium_block'
+	], 'evilcraft:eternal_water', 125000)
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
@@ -5695,6 +5791,12 @@ ServerEvents.recipes((event) => {
 
 	sewingRecipe('handcrafted:light_blue_cushion', 'just_blahaj:blahaj')
 
+	sewingRecipe('minecraft:white_wool', 'aether:white_cape')
+	sewingRecipe('minecraft:red_wool', 'aether:red_cape')
+	sewingRecipe('minecraft:yellow_wool', 'aether:yellow_cape')
+	sewingRecipe('minecraft:pink_wool', 'ancient_aether:pink_cape')
+	sewingRecipe('minecraft:blue_wool', 'aether:blue_cape')
+
 	// MC Dungeons Weapons
 
 	function mcdw(type, item) {
@@ -6159,4 +6261,341 @@ ServerEvents.recipes((event) => {
 		]
 	).id(`adj:mcdw/butterfly_crossbow`)
 
+	// Accessories
+	event.shaped(
+		'terra_curio:band_of_regeneration',
+		[
+			' L ',
+			'I I',
+			' I '
+		],
+		{
+			I: 'iron_ingot',
+			L: 'heart_crystals:heart_crystal'
+		}
+	).id('adj:band_of_regeneration')
+
+	event.shaped(
+		'terra_curio:obsidian_skull',
+		[
+			'OOO',
+			'OSO',
+			'OOO'
+		],
+		{
+			O: 'obsidian',
+			S: 'skeleton_skull'
+		}
+	).id('adj:obsidian_skull')
+
+	event.shaped(
+		'terra_curio:shark_tooth_necklace',
+		[
+			' S ',
+			'T T',
+			'TTT'
+		],
+		{
+			T: 'alexsmobs:shark_tooth',
+			S: 'string'
+		}
+	).id('adj:shark_tooth_necklace')
+
+	event.shaped(
+		'terra_curio:aglet',
+		[
+			'BTB',
+		],
+		{
+			T: 'mythicmetals:tin_ingot',
+			B: 'mythicmetals:bronze_ingot'
+		}
+	).id('adj:aglet')
+
+	event.shaped(
+		'terra_curio:cobalt_shield',
+		[
+			'S S',
+			'SSS',
+			' S '
+		],
+		{
+			S: 'mythicmetals:steel_ingot'
+		}
+	).id('adj:heavy_steel_shield')
+
+	event.shaped(
+		'terra_curio:shiny_red_balloon',
+		[
+			'RLR',
+			'RBR',
+			' S '
+		],
+		{
+			S: 'string',
+			B: 'slime_ball',
+			L: 'leather',
+			R: 'red_dye'
+		}
+	).id('adj:shiny_red_balloon')
+
+	event.shaped(
+		'terra_curio:lucky_horseshoe',
+		[
+			'G G',
+			'G G',
+			'GGG'
+		],
+		{
+			G: 'mythicmetals:midas_gold_ingot'
+		}
+	).id('adj:lucky_horseshoe')
+
+	event.shaped(
+		'terra_curio:rifle_scope',
+		[
+			'BSG',
+		],
+		{
+			G: 'glass',
+			B: 'mythicmetals:steel_ingot',
+			S: 'spyglass'
+		}
+	).id('adj:rifle_scope')
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'aether:cold_aercloud',
+			'aether:cold_aercloud',
+			'aether:cold_aercloud',
+			'aether:cold_aercloud',
+			'aether:cold_aercloud',
+			'aether:cold_aercloud',
+			'aether:cold_aercloud',
+			'aether:cold_aercloud'
+		],
+		'glass_bottle',
+		'terra_curio:cloud_in_a_bottle',
+		100
+	).id('adj:cloud_in_a_bottle')
+
+	// event.recipes.ars_nouveau.enchanting_apparatus(
+	// 	[
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost',
+	// 		'farmersdelight:organic_compost'
+	// 	],
+	// 	'terra_curio:cloud_in_a_bottle',
+	// 	'terra_curio:fart_in_a_jar',
+	// 	300
+	// )
+
+	event.custom({
+		"type": "terra_curio:workshop",
+		"ingredients": [
+			{
+				"item": "terra_curio:cloud_in_a_bottle"
+			},
+			{
+				"item": "artifacts:whoopee_cushion"
+			}
+		],
+		"result": {
+			"item": "terra_curio:fart_in_a_jar"
+		}
+	}).id('adj:fart_in_a_jar')
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'snow_block',
+			'snow_block',
+			'snow_block',
+			'snow_block',
+			'snow_block',
+			'snow_block',
+			'snow_block',
+			'snow_block'
+		],
+		'terra_curio:cloud_in_a_bottle',
+		'terra_curio:blizzard_in_a_bottle',
+		500
+	).id('adj:blizzard_in_a_bottle')
+
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'#sand',
+			'#sand',
+			'#sand',
+			'#sand',
+			'#sand',
+			'#sand',
+			'#sand',
+			'#sand'
+		],
+		'terra_curio:cloud_in_a_bottle',
+		'terra_curio:sandstorm_in_a_bottle',
+		1000
+	).id('adj:sandstorm_in_a_bottle')
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'obsidian',
+			'obsidian',
+			'obsidian'
+		],
+		'rediscovered:rose',
+		'terra_curio:obsidian_rose',
+		200
+	).id('adj:obsidian_rose')
+
+	event.recipes.botania.mana_infusion(
+		'terra_curio:titan_glove',
+		'terra_curio:feral_claws',
+	).mana(150000).id('adj:titan_glove')
+
+	event.recipes.botania.mana_infusion(
+		'terra_curio:paladins_shield',
+		'terra_curio:cobalt_shield',
+	).mana(750000).id('adj:paladins_shield')
+
+	event.recipes.botania.runic_altar(
+		'terra_curio:magma_stone',
+		[
+			'magma_block',
+			'magma_block',
+			'magma_block',
+			'magma_block',
+			'magma_block',
+			'mythicmetals:palladium_ingot'
+		],
+		15000
+	).id('adj:magma_stone')
+
+	event.recipes.botania.runic_altar(
+		'terra_curio:feral_claws',
+		[
+			'aether:leather_gloves',
+			'botania:rune_earth',
+			'botania:green_petal',
+			'botania:green_petal',
+			'botania:lime_petal',
+			'botania:lime_petal'
+		],
+		15000
+	).id('adj:feral_claws')
+
+	event.recipes.botania.petal_apothecary(
+		'terra_curio:flower_boots',
+		[
+			'leather_boots',
+			'botania:red_petal',
+			'botania:orange_petal',
+			'botania:yellow_petal',
+			'botania:lime_petal',
+			'botania:cyan_petal',
+			'botania:light_blue_petal',
+			'botania:blue_petal',
+			'botania:magenta_petal',
+			'botania:purple_petal',
+		]
+	).id('adj:flower_boots')
+
+	inter = Item.of('mythicmetals:steel_boots');
+	event.recipes.create.sequenced_assembly(
+		'terra_curio:rocket_boots',
+		'mythicmetals:steel_boots',
+		[
+			event.recipes.create.deploying(inter, [inter, Item.of('quark:gunpowder_sack')]),
+			event.recipes.create.deploying(inter, [inter, Item.of('iron_ingot')]),
+			event.recipes.create.deploying(inter, [inter, Item.of('blaze_powder')]),
+		]
+	).transitionalItem(inter).loops(3).id('adj:rocket_boots')
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'ars_nouveau:source_gem',
+			'ars_nouveau:source_gem',
+			'ars_nouveau:source_gem',
+			'ars_nouveau:source_gem'
+		],
+		'honeycomb',
+		'terra_curio:honey_comb'
+	).id('adj:enchanted_comb')
+
+	// Construction Wands
+	event.recipes.create.mechanical_crafting(
+		'constructionwand:iron_wand',
+		[
+			' I ',
+			'IBI',
+			' A ',
+			' S ',
+			' S '
+		],
+		{
+			I: 'iron_ingot',
+			B: 'iron_block',
+			S: '#forge:rods/wooden',
+			A: 'evilcraft:dark_power_gem'
+		}
+	).id('adj:constructionwands/iron_wand')
+
+	event.recipes.create.mechanical_crafting(
+		'constructionwand:iron_wand',
+		[
+			' I ',
+			'IBI',
+			' A ',
+			' S ',
+			' S '
+		],
+		{
+			I: 'diamond',
+			B: 'diamond_block',
+			S: '#forge:rods/wooden',
+			A: 'evilcraft:dark_power_gem'
+		}
+	).id('adj:constructionwands/diamond_wand')
+
+	event.recipes.summoningrituals.altar('constructionwand:diamond_wand')
+		.input(
+			'nether_star',
+			'botanicadds:gaiasteel_ingot',
+			'botanicadds:gaiasteel_ingot',
+			'mythicmetals:unobtainium'
+		)
+		.itemOutput('constructionwand:infinity_wand')
+		.recipeTime(toSeconds(25))
+		.id('adj:constructionwands/infinity_wand')
+
+	event.recipes.summoningrituals.altar('constructionwand:core_angel')
+		.input(
+			'botanicadds:gaiasteel_ingot',
+			'mythicmetals:unobtainium',
+			'botania:rune_gluttony',
+		)
+		.itemOutput('constructionwand:core_destruction')
+		.recipeTime(toSeconds(15))
+		.id('adj:constructionwands/core_destruction')
+
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'botania:pixie_dust',
+			'botania:pixie_dust',
+			'botania:pixie_dust',
+			'botania:rune_mana',
+			'aether:cold_aercloud',
+			'aether:cold_aercloud',
+			'aether:cold_aercloud',
+			'aether:cold_aercloud'
+		],
+		'gold_block',
+		'constructionwand:core_angel'
+	).id('adj:constructionwands/core_angel')
 });

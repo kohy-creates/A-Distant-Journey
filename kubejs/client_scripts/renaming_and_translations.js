@@ -60,7 +60,7 @@ ClientEvents.lang('en_us', event => {
 		'block.adj.adamantite_forge_casing': 'Adamantite Forge Casing',
 
 		'architects_palette.info.dimension.rediscovered.skylands': 'the Skylands',
-		
+
 		'block.aether.potted_skyroot_sapling': 'Potted Skyroot Sapling',
 
 	}
@@ -92,7 +92,23 @@ ClientEvents.lang('en_us', event => {
 		'summoningrituals:altar': 'Twilight Altar',
 		'summoningrituals:indestructible_altar': 'Twilight Altar (Unbreakable)',
 
-		'heart_crystals:heart_crystal': 'Life Crystal'
+		'heart_crystals:heart_crystal': 'Life Crystal',
+
+		'create:cut_limestone': 'Cut Marble',
+		'create:cut_limestone_stairs': 'Cut Marble Stairs',
+		'create:cut_limestone_wall': 'Cut Marble Wall',
+		'create:polished_cut_limestone': 'Polished Cut Marble',
+		'create:polished_cut_limestone_stairs': 'Polished Cut Marble Staris',
+		'create:polished_cut_limestone_wall': 'Polished Cut Marble Wall',
+		'create:cut_limestone_bricks': 'Cut Marble Bricks',
+		'create:cut_limestone_brick_stairs': 'Cut Marble Brick Stairs',
+		'create:cut_limestone_brick_wall': 'Cut Marble Brick Wall',
+		'create:small_limestone_bricks': 'Small Marble Bricks',
+		'create:small_limestone_brick_stairs': 'Small Marble Brick Stairs',
+		'create:small_limestone_brick_wall': 'Small Marble Brick Wall',
+		'create:layered_limestone': 'Layered Marble',
+		'create:limestone_pillar': 'Marble Pillar',
+		'create:limestone': 'Marble',
 	}
 
 	/** @type {Record<Internal.InputItem_, string>} */
@@ -142,7 +158,16 @@ ClientEvents.lang('en_us', event => {
 		'farmersdelight:skillet': 'Frying Pan',
 		'alexscaves:sombrero': 'Desert Sombrero',
 
-		'twilightforest:ice_bow': 'Winter\'s Touch'
+		'twilightforest:ice_bow': 'Winter\'s Touch',
+
+		'mythicmetals:metallurgium_sword': 'Rageblade',
+		'twilightforest:fiery_sword': 'Volcano',
+		'evilcraft:burning_gem_stone': 'Burning Gemstone',
+		'terra_curio:honey_comb': 'Enchanted Comb',
+
+		'evilcraft:promise_acceptor_iron': 'Mana Promise Acceptor',
+		'evilcraft:promise_acceptor_gold': 'Midas Gold Promise Acceptor',
+		'evilcraft:promise_acceptor_diamond': 'Veridium Promise Acceptor',
 	}
 
 	const entityRenames = {

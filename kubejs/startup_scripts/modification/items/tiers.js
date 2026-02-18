@@ -119,9 +119,9 @@ const tiers = {
 	},
 	'mythril_drill': {
 		uses: 1764,
-		speed: 20,
+		speed: 21,
 		attackDamageBonus: 3.0,
-		level: 3,
+		level: 4,
 		enchantmentValue: 20,
 		repairIngredient: '#c:mythril_ingots'
 	},

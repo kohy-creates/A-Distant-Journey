@@ -25,7 +25,7 @@
     "spelunkery:magnetic_compass",
     "firmaciv:nav_clock",
     "firmaciv:firmaciv_compass",
-    "map_atlases:atlas"
+    "kubejs:map_atlas"
   ],
   "compass_y_items": [
     "spelunkery:depth_gauge",
@@ -33,7 +33,7 @@
     "additionaladditions:depth_meter",
     "supplementaries:altimeter",
     "depthmeter:depthmeter",
-    "map_atlases:atlas"
+    "kubejs:map_atlas"
   ],
   "compass_z_items": [
     "firmaciv:sextant"
@@ -66,8 +66,10 @@
     "oreganized:thermometer",
     "toughasnails:thermometer",
     "legendarysurvivaloverhaul:thermometer",
-    "cold_sweat:thermometer"
+    "cold_sweat:thermometer",
+    "tide:climate_gauge"
   ],
+  "compat_playerlocatorplus": true,
   "compat_xaeros": true,
   "compat_antique_atlas": true,
   "compat_oreganized_temperature": true,
@@ -85,7 +87,7 @@
     "minecraft:map",
     "minecraft:filled_map",
     "minecraft:empty_map",
-    "map_atlases:atlas",
+    "kubejs:map_atlas",
     "map_atlases:end_atlas",
     "map_atlases:nether_atlas",
     "naturescompass:naturescompass",
@@ -122,5 +124,6 @@
   "compat_breezy": true,
   "wind_items": [
     "breezy:gust_gauge"
-  ]
+  ],
+  "compat_dead_reckoning": true
 }

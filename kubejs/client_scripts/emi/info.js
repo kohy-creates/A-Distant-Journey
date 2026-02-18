@@ -24,8 +24,21 @@ JEIEvents.information(event => {
 	}
 
 	addInfo('minecraft:apple', [
-		'An apple a day keeps the doctor away. At least that\'s what they say...'
+		'An apple a day keeps the doctor away. At least that\'s what they say...',
+		'Fun fact, I added this description around March 2025 while testing out how to add them and I kept it ever since.'
 	]);
+
+	addInfo(['evilcraft:hardened_blood'], [
+		'Liquid Blood left in the world will slowly dry up, forming blocks of Hardened Blood.'
+	])
+	addInfo(['evilcraft:hardened_blood_shard', 'evilcraft:hardened_blood'], [
+		'Breaking Hardened Blood will drop a few Hardened Blood Shards. Smelting the block instead will always result in the maximum amount of shards possible (and it comes with a neat EXP bonus too!).'
+	])
+
+	addInfo('supplementaries:ash', [
+		'Ash has a chance to appear when any flammable wood burns down.'
+	])
+
 	addInfo(['#minecraft:beds', '#upgrade_aquatic:bedrolls'], [
 		'Beds no longer skip the night instantly, instead they will greatly accelerate the flow of time while sleeping, speeding up some processes.'
 	]);
@@ -229,13 +242,6 @@ JEIEvents.information(event => {
 	])
 
 	/*
-		Accessores
-	*/
-	addInfo(['terra_curio:honey_comb'], [
-		'Can be found in any chest in The Bumblezone at a 5% chance.'
-	])
-
-	/*
 		Alex's Caves
 	*/
 	addInfo("alexscaves:scarlet_neodymium_ingot", "Used to craft blocks that attract metal or add to magnets to increase range.")
@@ -305,8 +311,6 @@ JEIEvents.information(event => {
 	addInfo("alexscaves:drain", "Act similarly to a reusable sponge, where they will remove any water above it and any water connected to that.")
 	addInfo("alexscaves:enigmatic_engine", "Dropped from Hullbreakers, and used in a multiblock to build submarines in a 3x3 grid of copper blocks with a 3x2 window of depth glass.")
 	addInfo("alexscaves:moth_ball", "Gloomoth deterrent. 5 can be placed in one block, and can dispel gloomoths from 15 blocks if clustered.")
-	addInfo("alexscaves:block_of_chocolate", "Surprisingly resistant to melting. Can be used in the Conversion Crucible.")
-	addInfo("alexscaves:conversion_crucible", "A golden cauldron which, with Radiant Essence and Biome Treats, can be used to transmute biomes.")
 	addInfo("alexscaves:confection_oven", "A magical oven able to infinitely summon Gingerbread Men. If Rock Candy of any color is placed under the oven, the Gingerbread Men summoned will take on the color of the placed Rock Candy.")
 
 	// Etcetera

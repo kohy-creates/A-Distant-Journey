@@ -1,7 +1,6 @@
 LootJS.modifiers((event) => {
 
 	const replaceItemsMap = {
-		'create:honey_bucket': 'the_bumblezone:honey_bucket',
 		'farmersdelight:wheat_dough': 'create:dough',
 		'rediscovered:quiver': 'supplementaries:quiver',
 		'create:copper_nugget': 'mythicmetals:copper_nugget',
@@ -43,7 +42,9 @@ LootJS.modifiers((event) => {
 		'farmersdelight:rope': 'supplementaries:rope',
 
 		'twilightforest:charm_of_keeping_1': 'twilightforest:charm_of_life_1',
-		'alexscaves:banana': 'neapolitan:banana'
+		'alexscaves:banana': 'neapolitan:banana',
+		'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
+		'upgrade_aquatic:thrasher_tooth': 'alexsmobs:shark_tooth'
 	}
 	for (const [before, after] of Object.entries(replaceItemsMap)) {
 		event.addLootTableModifier(/.*/).replaceLoot(before, after, true)

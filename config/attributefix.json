@@ -121,17 +121,6 @@
         "value": 10
       }
     },
-    "tetra:ability_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "attributeslib:armor_pierce": {
       "enabled": false,
       "min": {
@@ -152,17 +141,6 @@
       "max": {
         "default": 100000,
         "value": 100000
-      }
-    },
-    "stardew_fishing:line_strength": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
       }
     },
     "sortilege:generic.staff_damage": {
@@ -196,17 +174,6 @@
       "max": {
         "default": 1,
         "value": 1
-      }
-    },
-    "stardew_fishing:exp_multiplier": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "obscure_api:magic_resistance": {
@@ -251,17 +218,6 @@
       "max": {
         "default": 1024,
         "value": 1024
-      }
-    },
-    "stardew_fishing:bar_size": {
-      "enabled": false,
-      "min": {
-        "default": 4,
-        "value": 4
-      },
-      "max": {
-        "default": 142,
-        "value": 142
       }
     },
     "additionalentityattributes:generic.magic_protection": {
@@ -572,17 +528,6 @@
         "value": 2147483647
       }
     },
-    "stardew_fishing:treasure_chance_bonus": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "minecraft:horse.jump_strength": {
       "enabled": true,
       "min": {
@@ -825,17 +770,6 @@
         "value": 2048
       }
     },
-    "enhancedai:generic.xray_follow_range": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 256,
-        "value": 256
-      }
-    },
     "attributeslib:cold_damage": {
       "enabled": false,
       "min": {
@@ -944,28 +878,6 @@
       "max": {
         "default": 24,
         "value": 24
-      }
-    },
-    "tetra:draw_strength": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
-    "diet:natural_regeneration": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2,
-        "value": 2
       }
     },
     "additionalentityattributes:player.water_visibility": {
@@ -1078,17 +990,6 @@
         "value": 1024
       }
     },
-    "tetra:draw_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "reach-entity-attributes:attack_range": {
       "enabled": false,
       "min": {
@@ -1098,17 +999,6 @@
       "max": {
         "default": 1024,
         "value": 1024
-      }
-    },
-    "tetra:ability_cooldown": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
       }
     },
     "terra_curio:armor_pass": {
@@ -1362,17 +1252,6 @@
       "max": {
         "default": 2048,
         "value": 2048
-      }
-    },
-    "adjcore:generic.healing_reduction": {
-      "enabled": false,
-      "min": {
-        "default": -1,
-        "value": -1
-      },
-      "max": {
-        "default": 0,
-        "value": 0
       }
     },
     "terra_curio:ranged_velocity": {

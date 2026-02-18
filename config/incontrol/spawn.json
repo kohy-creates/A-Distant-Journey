@@ -33,7 +33,9 @@
 			"mutantmonsters:mutant_creeper",
 			"mutantmonsters:mutant_zombie",
 			"mutantmonsters:mutant_skeleton",
-			"mutantmonsters:mutant_enderman"
+			"mutantmonsters:mutant_enderman",
+			"upgrade_aquatic:thrasher",
+			"upgrade_aquatic:great_thrasher"
 		],
 		"result": "deny"
 	}

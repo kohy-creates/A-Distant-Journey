@@ -82,9 +82,9 @@ MoreJSEvents.updateVillagerOffers(event => {
 				offer.setSecondInput('kubejs:diamond_upgrade')
 			}
 		}
-		else if (id.endsWith('_plush')) {
-			offer.setFirstInput(Item.of(offer.costA, offer.costA.count * 3))
-			offer.setSecondInput(Item.of(offer.costB, offer.costB.count + 3))
-		}
+		// else if (id.endsWith('_plush')) {
+		// 	offer.setFirstInput(Item.of(offer.costA, offer.costA.count * 3))
+		// 	offer.setSecondInput(Item.of(offer.costB, offer.costB.count + 3))
+		// }
 	})
 })

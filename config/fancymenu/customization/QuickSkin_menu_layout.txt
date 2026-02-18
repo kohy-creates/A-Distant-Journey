@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = com.quickskin.mod.client.gui.screen.PlayerSkinMenuScreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1770163035791
+  last_edited_time = 1771199348160
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:97f354c7-9181-4301-bde2-4b0241a3a349-1770163034242] = [groups:][instances:]
+  [loading_requirement_container_meta:87c60023-0f20-4cb9-96d2-cd324d1f5f9b-1771191996447] = [groups:][instances:]
 }
 
 customization {

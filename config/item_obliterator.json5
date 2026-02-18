@@ -19,6 +19,10 @@
 
 		"tide:depth_meter",
 
+		"neapolitan:chocolate_block",
+
+		"upgrade_aquatic:thrasher_tooth",
+
 		"aquamirae:divider",
 		"aquamirae:poisoned_chakra",
 		"aquamirae:maze_rose",
@@ -80,32 +84,6 @@
 		"twilightforest:charm_of_keeping_3",
 		"twilightforest:red_thread",
 		"twilightforest:crumble_horn",
-		
-		"alexscaves:beholder",
-
-		// "twilightforest:mangrove_log",
-		// "twilightforest:stripped_mangrove_log",
-		// "twilightforest:mangrove_wood",
-		// "twilightforest:stripped_mangrove_wood",
-		// "twilightforest:mangrove_planks",
-		// "twilightforest:mangrove_stairs",
-		// "twilightforest:mangrove_slab",
-		// "twilightforest:mangrove_fence",
-		// "twilightforest:mangrove_fence_gate",
-		// "twilightforest:mangrove_door",
-		// "twilightforest:mangrove_trapdoor",
-		// "twilightforest:mangrove_button",
-		// "twilightforest:mangrove_pressure_plate",
-		// "twilightforest:mangrove_sign",
-		// "twilightforest:mangrove_wall_sign",
-		// "twilightforest:mangrove_hanging_sign",
-		// "twilightforest:mangrove_wall_hanging_sign",
-		// "twilightforest:mangrove_boat",
-		// "twilightforest:mangrove_chest_chest",
-		// "twilightforest:mangrove_chest_boat",
-		// "twilightforest:mangrove_leaves",
-		// "twilightforest:mangrove_sapling",
-		// "twilightdelight:mangrove_cabinet",
 
 		"twilightforest:sorting_log",
 		"twilightforest:stripped_sorting_log",
@@ -323,6 +301,7 @@
 		"cataclysm:stone_tile_stairs",
 		"cataclysm:stone_tile_wall",
 		"cataclysm:cursed_bow",
+		"cataclysm:wrath_of_the_desert",
 		"v_slab_compat:cataclysm/stone_tile_vertical_slab",
 
 		"netherexp:shotgun_fist",
@@ -657,6 +636,10 @@
 		"alloy_forgery:adamantite_block_forge_controller",
 
 		"alexsmobs:shark_tooth_arrow",
+		"alexsmobs:banana",
+		"alexscaves:biome_treat",
+		"alexscaves:conversion_crucible",
+		"alexscaves:beholder",
 
 		"ars_nouveau:sorcerer_boots",
 		"ars_nouveau:sorcerer_leggings",
@@ -666,6 +649,7 @@
 		"ars_nouveau:battlemage_leggings",
 		"ars_nouveau:battlemage_robes",
 		"ars_nouveau:battlemage_hood",
+		"ars_nouveau:ritual_cloudshaping",
 
 		"nourished_nether:glowing_obsidian",
 
@@ -1148,6 +1132,7 @@
 		"twilightforest:creeper_skull_candle",
 		"twilightforest:player_skull_candle",
 		"twilightforest:piglin_skull_candle",
+		"twilightforest:glass_sword",
 
 		"unusualend:healing_lantern",
 
@@ -1157,6 +1142,7 @@
 		"evilcraft:origins_of_darkness",
 		"evilcraft:darkened_apple",
 		"evilcraft:efortless_ring",
+		"evilcraft:corrupted_tear",
 
 		"window_box:bouquet",
 		"window_box:topsy_tulip",
@@ -1372,26 +1358,31 @@
 		"croptopia:guide",
 		"croptopia:mortar_and_pestle",
 		"croptopia:walnut",
+		"croptopia:chocolate",
+		"croptopia:banana",
+		"croptopia:banana_sapling",
+
+		"cratedelight:sugar_bag",
+		"cratedelight:gunpowder_bag",
+		"cratedelight:cocoabeans_bag",
+		"cratedelight:golden_apple_crate",
+		"cratedelight:golden_carrot_crate",
+		"cratedelight:glowberry_crate",
+		"cratedelight:cod_crate",
+		"cratedelight:salmon_crate",
+		"cratedelight:cookie_bag",
+		"cratedelight:bread_bag",
+		"cratedelight:sugar_bag",
+		"cratedelight:pumpkin_slice_crate",
+		"cratedelight:berry_crate",
+		"cratedelight:apple_crate",
 
 		"delightftul:acorn",
-
-		"herbalbrews:stove",
 		
 		"ancient_aether:ancient_dungeon_key",
         "ancient_aether:ancient_sword",
         "ancient_aether:ancient_pendant",
         "ancient_aether:ancient_ring",
-
-		"brewincompatdelight:white_vine",
-		"brewincompatdelight:red_vine",
-		"brewincompatdelight:sweet_red_vine",
-		"brewincompatdelight:mulled_vine",
-		"brewincompatdelight:peach_vine",
-		"brewincompatdelight:red_grape_seeds",
-		"brewincompatdelight:white_grape_seeds",
-		"brewincompatdelight:red_grapes",
-		"brewincompatdelight:red_grapes_crate",
-		"brewincompatdelight:white_grapes_crate",
 
 		"vinery:dark_cherry_chair",
 		"vinery:dark_cherry_table",

@@ -21,7 +21,7 @@
 				"path": "^loot_modifiers/.*$"
 			},
 			{
-				"namespace": "^uniqueaccessories$",
+				"namespace": "^evilcraft$",
 				"path": "^loot_modifiers/.*$"
 			}
 		]

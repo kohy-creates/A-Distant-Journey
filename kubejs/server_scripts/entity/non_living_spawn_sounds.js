@@ -6,7 +6,7 @@ EntityEvents.spawned(event => {
 			break;
 		}
 		case 'botania:falling_star': {
-			entity.level.playSound(null, entity.x, entity.y, entity.z, 'adj:item.star_platinum.spawn_star', 'players', 1, 1)
+			entity.level.playSound(null, entity.x, entity.y - 10, entity.z, 'adj:item.star_platinum.spawn_star', 'players', 1.5, 1)
 			break;
 		}
 	}

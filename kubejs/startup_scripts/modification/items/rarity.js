@@ -104,7 +104,6 @@ ItemEvents.modification(event => {
 		'ars_nouveau:archmage_spell_book',
 		/obsidian/,
 		'minecraft:potion',
-		'the_bumblezone:potion_candle',
 		/vinery:.*_wine/,
 		/vinery:.*_mixture/,
 		/vinery:.*_nectar/,
@@ -154,8 +153,6 @@ ItemEvents.modification(event => {
 		/ars_elemental:.*essence/,
 		'heart_crystals:heart_lantern',
 		/banner_pattern/,
-		'the_bumblezone:flower_headwear',
-		'the_bumblezone:bee_soup',
 		/ars_.*:thread.*/,
 		'aether:altar',
 		'aether:freezer',
@@ -183,12 +180,6 @@ ItemEvents.modification(event => {
 		'botania:rune_wrath',
 		'botania:rune_greed',
 		'botania:rune_sloth',
-		/the_bumblezone:essence/,
-		'the_bumblezone:crystalline_flower',
-		'the_bumblezone:stinger_spear',
-		'the_bumblezone:bumble_bee_chestplate_trans_1',
-		'the_bumblezone:bumble_bee_chestplate_trans_2',
-		'the_bumblezone:windy_air',
 		'aquamirae:coral_lance',
 		/royal_jelly/,
 		/experience_chunk/,
@@ -230,7 +221,7 @@ ItemEvents.modification(event => {
 		let rarity = 'chapter_0';
 		Object.keys(global.stageRestrictions).forEach(chapter => {
 			const data = global.stageRestrictions[chapter];
-			if (matchesAny(id, data.list) || matchesAny(id, data.light) && !matchesAny(id, data.exceptions)) {
+			if ((matchesAny(id, data.list) || matchesAny(id, data.light)) && !matchesAny(id, data.exceptions)) {
 				foundMatch = true;
 				rarity = getRarity(chapter, itemRarity);
 			}

@@ -154,11 +154,11 @@
     "7": {
       "title": "Open World Map",
       "icon": {
-        "stack": "{Count:1b,id:\"minecraft:filled_map\"}"
+        "stack": "{Count:1b,id:\"kubejs:map_atlas\"}"
       },
       "action": {
         "key": {
-          "key": "key.journeymap.map_toggle_alt",
+          "key": "gui.xaero_open_map",
           "toggle": false
         }
       }

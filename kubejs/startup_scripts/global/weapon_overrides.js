@@ -117,9 +117,8 @@ global.weapon_overrides = {
 	'ancient_aether:valkyrum_lance': [36, 1.3],
 	'botania:manasteel_pick': [15 * defaultAttackDamage[1], defaultAttackSpeed[1]],
 	'botania:elementium_pick': [22 * defaultAttackDamage[1], defaultAttackSpeed[1]],
-	'botania:terra_sword': [37, 1.8, 0, 0, 15],
+	'botania:terra_sword': [65, 1.8],
 	'botania:thunder_sword': [33, 2.5, 0, 0, 15],
-	'botania:star_sword': [48, 1.3, 0, 0, 20],
 	'cataclysm:gauntlet_of_guard': [40, 3.1, 0, 0, 15],
 	'cataclysm:gauntlet_of_bulwark': [40, 3.1, 0, 0, 15],
 	'cataclysm:gauntlet_of_maelstrom': [40, 3.1, 0, 0, 15],
@@ -152,10 +151,11 @@ global.weapon_overrides = {
 	'mcdw:staff_battlestaff': [11, 1.4],
 	'mcdw:sword_heartstealer': [43, 0.8],
 	'mcdw:sword_obsidian_claymore': [64, 0.7],
-	'mcdw:sword_sinister': [42, 1.8],
+	'mcdw:sword_sinister': [42, 1.8, 0.14],
 
 	'minecraft:trident': [21, 1.1, 0.1],
-	'farmersdelight:skillet': [14, 1]
+	'farmersdelight:skillet': [14, 1],
+	'zenith:zenith': [50, 3.5, 0.14]
 }
 
 addToolsetOverride('minecraft:wooden', 7)

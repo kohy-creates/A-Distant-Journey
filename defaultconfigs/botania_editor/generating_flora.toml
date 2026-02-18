@@ -47,7 +47,7 @@
 	#Production of entropinnyum
 	#How much mana entropinnyum produces each explosion (also defines max mana) [6500]
 	#Range: > 1
-	"Entropinnyum Prod" = 10000
+	"Entropinnyum Prod" = 8000
 
 ["Kekimurus Config"]
 	#Production of kekimurus

@@ -16,7 +16,7 @@ global.stageRestrictions = {
 			'mcdw:sickle_last_laugh_gold',
 			'mcdw:bow_bonebow',
 			'mcdw:bow_elite_power_bow',
-			'mcdw:bow_power_bow',
+			// 'mcdw:bow_power_bow',
 			'mcdw:bow_twisting_vine_bow',
 			'mcdw:bow_weeping_vine_bow',
 			'mcdw:crossbow_azure_seeker',
@@ -108,17 +108,17 @@ global.stageRestrictions = {
 			/lost_aether_content/,
 			/stormyx/,
 			'mcdw:soul_dagger_soul_knife',
-				'mcdw:crossbow_firebolt_thrower',
-				'ars_nouveau:apprentice_spell_book'
+			'mcdw:crossbow_firebolt_thrower',
+			'ars_nouveau:apprentice_spell_book',
+			'mcdw:bow_sabrewing'
 		],
 		light: [
-			/everycomp\:.*aether.*/, // also covers redux and lost content
+			/everycomp\:.*aether.*/, // also covers redux, lost content and ancient
 			/supp.*\:.*aether.*/,
 			/nebulite/,
 			/esoterrack/,
 			/moonshale/,
 			/craterstone/,
-			'mcdw:bow_sabrewing',
 			'simplyswords:tainted_relic'
 		],
 		exceptions: [
@@ -127,6 +127,11 @@ global.stageRestrictions = {
 			'aether:iron_gloves',
 			'aether:golden_gloves',
 			'aether:diamond_gloves',
+			'aether:white_cape',
+			'aether:yellow_cape',
+			'aether:red_cape',
+			'aether:blue_cape',
+			'ancient_aether:pink_cape',
 			/treasure_bag/,
 			'mythicmetals:stormyx_ore',
 			'mythicmetals:blackstone_stormyx_ore',
@@ -145,7 +150,6 @@ global.stageRestrictions = {
 			'botania:terrasteel_chestplate',
 			'botania:terrasteel_leggings',
 			'botania:terrasteel_boots',
-			'botania:terra_blade',
 			'mcdw:dagger_resolute_tempest_knife',
 			'mcdw:hammer_bone_cudgel',
 			'mcdw:scythe_skull_scythe',
@@ -197,7 +201,8 @@ global.stageRestrictions = {
 			'mcdw:bow_call_of_the_void',
 			'mcdw:crossbow_imploding_crossbow',
 			'mcdw:crossbow_veiled_crossbow',
-			'ars_nouveau:archmage_spell_book'
+			'ars_nouveau:archmage_spell_book',
+			'botania:terra_sword',
 		],
 		light: [
 			/end_stone/,
@@ -239,7 +244,8 @@ global.stageRestrictions = {
 			/ars_elemental:.*hat/,
 			/ars_elemental:.*robes/,
 			/ars_elemental:.*leggings/,
-			/ars_elemental:.*boots/
+			/ars_elemental:.*boots/,
+			'zenith:zenith',
 		],
 		light: [
 			/witherstormmod/,

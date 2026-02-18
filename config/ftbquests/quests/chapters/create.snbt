@@ -6,6 +6,14 @@
 	group: "266DD5C3D1FE65EA"
 	icon: "create:andesite_alloy"
 	id: "50D5FA1B376C34B5"
+	images: [{
+		height: 1.75d
+		image: "toms_storage:block/cable_frame"
+		rotation: 45.0d
+		width: 1.75d
+		x: -0.5d
+		y: 6.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -97,7 +105,7 @@
 							value: "forge:plates"
 						}
 					}
-					title: "Any #forge:plates"
+					title: "Any Sheet"
 					type: "item"
 				}
 				{
@@ -129,7 +137,7 @@
 			]
 			title: "Wind Maker"
 			x: 5.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -171,8 +179,8 @@
 				type: "item"
 			}]
 			title: "It's Clobbering Time!"
-			x: -0.5d
-			y: 5.5d
+			x: -2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6F6E4CEDDF413E18"]
@@ -234,9 +242,9 @@
 				item: "create:redstone_link"
 				type: "item"
 			}]
-			title: "Wireless Device"
+			title: "Wireless Device Patriot"
 			x: 3.0d
-			y: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -277,7 +285,7 @@
 				type: "item"
 			}]
 			title: "Technomancer's Wand"
-			x: 4.0d
+			x: 3.0d
 			y: 3.0d
 		}
 		{
@@ -290,8 +298,8 @@
 				type: "item"
 			}]
 			title: "Steampunk Vision"
-			x: 4.5d
-			y: 2.0d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["782BB3D700FBD243"]
@@ -384,7 +392,7 @@
 			}]
 			title: "Hyperspeed Plus"
 			x: 1.5d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["57A550E2F3090147"]
@@ -406,6 +414,127 @@
 			title: "Made in Abyss"
 			x: -2.5d
 			y: -0.5d
+		}
+		{
+			dependencies: ["3393638E574BEB0D"]
+			id: "469D3A0EDD34A3DD"
+			tasks: [{
+				id: "0152C4C78E9EF518"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["74E81719E903F908"]
+			id: "1ED1728E638D38FA"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a weapon forbidden by the Geneva Convetion"
+			tasks: [{
+				id: "7DAAA7245268482E"
+				item: {
+					Count: 1
+					id: "create:potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Heavy Weapons, I Love It!"
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["74E81719E903F908"]
+			icon_scale: 0.75d
+			id: "1F26665F0A3C4065"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "475313D5F70C6DB2"
+				item: {
+					Count: 1
+					id: "constructionwand:iron_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0288AADCBD95EB2D"]
+			id: "6DE114694DBEDAF9"
+			tasks: [{
+				id: "22690B2D1BB11B6A"
+				item: "create:cardboard"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			icon: "create:cardboard_sword"
+			id: "616FF40D22D802A4"
+			tasks: [
+				{
+					id: "72B62B46FBDE2B5F"
+					item: "create:cardboard_sword"
+					type: "item"
+				}
+				{
+					id: "5AAB1227A699DD5D"
+					item: {
+						Count: 1
+						id: "create:cardboard_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "780524B957F49885"
+					item: {
+						Count: 1
+						id: "create:cardboard_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4DB7D0731E720663"
+					item: {
+						Count: 1
+						id: "create:cardboard_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "028E1E6BDEBDE3FC"
+					item: {
+						Count: 1
+						id: "create:cardboard_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 1.0d
 		}
 	]
 	title: "Managing a Factory"

@@ -271,11 +271,6 @@
 			metamorphic_mesa_cobblestone = true
 			metamorphic_mesa_bricks = true
 
-		[types.cut_block_type.the_bumblezone]
-			ancient_wax_bricks = true
-			ancient_wax_diamond = true
-			ancient_wax_compound_eyes = true
-
 		[types.cut_block_type.phantasm]
 			polished_obsidian_bricks = true
 			crystal_tiles = true

@@ -9,7 +9,6 @@
 		},
 		"minecraft:the_nether": "adj:music.nether",
 		"minecraft:the_end": "adj:music.end",
-		"the_bumblezone:the_bumblezone": "adj:music.the_bumblezone",
 		"rediscovered:skylands": {
 			"day": "adj:music.skylands.day",
 			"night": "adj:music.skylands.night"

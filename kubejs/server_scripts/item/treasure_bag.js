@@ -57,33 +57,3 @@ EntityEvents.death((event) => {
 		}
 	}
 });
-
-// LootJS.modifiers(event => {
-
-// 	[
-// 		//"witherstormmod:witherstorm",
-// 		//"witherstormmod:withered_symbiont",
-// 		"botania:doppleganger",
-// 		"cataclysm:ignis",
-// 		"cataclysm:netherite_monstrosity",
-// 		"cataclysm:ender_guardian",
-// 		"cataclysm:the_harbinger",
-// 		"cataclysm:the_leviathan",
-// 		"cataclysm:ancient_remnant",
-// 		"cataclysm:maledictus",
-// 		"cataclysm:scylla",
-// 		"unusualend:endstone_golem",
-// 		"unusualend:enderblob_queen",
-// 		"ars_nouveau:wilden_boss",
-// 		"aether:slider",
-// 		"aether:valkyrie_queen",
-// 		"aether:sun_spirit",
-// 		"alexscaves:luxtructosaurus",
-// 		"the_bumblezone:cosmic_crystal_entity",
-// 		"lost_aether_content:aerwhale_king",
-// 		"rediscovered:red_dragon"
-// 	].forEach(boss => {
-// 		event.addEntityLootModifier(boss)
-// 			.removeLoot(Ingredient.of(/^(?!.*dungeon_key).*/));
-// 	})
-// })

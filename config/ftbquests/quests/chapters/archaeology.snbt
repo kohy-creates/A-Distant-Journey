@@ -20,7 +20,7 @@
 		x: 3.0d
 		y: -1.5d
 	}]
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -83,7 +83,7 @@
 				type: "item"
 			}]
 			title: "Ancient Restoration"
-			x: 0.0d
+			x: 1.0d
 			y: -3.5d
 		}
 		{
@@ -482,7 +482,7 @@
 				type: "xp"
 				xp: 100
 			}]
-			subtitle: "Obtain every possible sapling from a Sniffer"
+			subtitle: "Obtain every possible Sniffer plant"
 			tasks: [
 				{
 					id: "16682AF0C585999C"
@@ -510,55 +510,24 @@
 					type: "item"
 				}
 				{
-					id: "4A9DD22310F35853"
-					item: "snifferplus:stone_pine_sapling"
+					id: "43A06EFC359FC0AA"
+					item: "quark:ancient_sapling"
 					type: "item"
 				}
 				{
-					id: "43A06EFC359FC0AA"
-					item: "quark:ancient_sapling"
+					id: "60843A8209923D53"
+					item: "minecraft:torchflower"
+					type: "item"
+				}
+				{
+					id: "76525F290E6B6E13"
+					item: "minecraft:pitcher_plant"
 					type: "item"
 				}
 			]
 			title: "Ancient Flora Restoration Program"
 			x: -2.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["10E23382BDF3B0D3"]
-			icon: "minecraft:torchflower"
-			id: "462719EF646AA7CA"
-			subtitle: "Obtain every Sniffer plant"
-			tasks: [
-				{
-					id: "50AE787CE84257F2"
-					item: "minecraft:torchflower"
-					type: "item"
-				}
-				{
-					id: "7C3B677BD823315B"
-					item: "minecraft:pitcher_plant"
-					type: "item"
-				}
-				{
-					id: "5D4E1690AB2201AA"
-					item: "snifferplus:ivy"
-					type: "item"
-				}
-				{
-					id: "27E060B3E95D159E"
-					item: "snifferplus:fiddlefern"
-					type: "item"
-				}
-				{
-					id: "7BA1176337F172FB"
-					item: "snifferplus:tall_fiddlefern"
-					type: "item"
-				}
-			]
-			title: "Regrown-Reborn"
-			x: -2.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]

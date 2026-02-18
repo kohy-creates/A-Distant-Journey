@@ -75,7 +75,7 @@
 		}
 		{
 			height: 1.75d
-			image: "ars_nouveau:block/source_gem_block"
+			image: "galosphere:block/chiseled_amethyst"
 			rotation: 45.0d
 			width: 1.75d
 			x: 18.5d
@@ -88,6 +88,14 @@
 			width: 1.75d
 			x: 17.5d
 			y: -6.5d
+		}
+		{
+			height: 1.75d
+			image: "evilcraft:block/undead_log_top_stripped"
+			rotation: 45.0d
+			width: 1.75d
+			x: 1.5d
+			y: 0.5d
 		}
 	]
 	order_index: 0
@@ -1394,7 +1402,7 @@
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
-			icon: "botania:shulk_me_not"
+			icon: "botania:dandelifeon"
 			id: "5E492F6CACA28CD9"
 			subtitle: "Craft some of the more powerful Mana generating flowers"
 			tasks: [
@@ -1502,7 +1510,7 @@
 				type: "item"
 			}]
 			title: "Sacrificial"
-			x: 5.5d
+			x: 8.5d
 			y: -6.0d
 		}
 		{
@@ -1545,6 +1553,615 @@
 			title: "To The Sky!"
 			x: 17.5d
 			y: -6.5d
+		}
+		{
+			dependencies: ["30CABAA97495053C"]
+			id: "463D406FC669A4A5"
+			subtitle: "Find a Dark Temple anywhere in the Overworld"
+			tasks: [{
+				icon: "evilcraft:environmental_accumulator"
+				id: "3BC7DA82D827F88D"
+				structure: "evilcraft:dark_temple"
+				title: "Find a Dark Temple"
+				type: "structure"
+			}]
+			title: "Temple Riders"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["463D406FC669A4A5"]
+			icon: {
+				Count: 1
+				id: "evilcraft:weather_container"
+				tag: {
+					weather: "EMPTY"
+				}
+			}
+			id: "084801A9B094A135"
+			subtitle: "Use an Environental Accumulator to fill a Weather Container with... well, weather"
+			tasks: [
+				{
+					id: "58487D97F17B8EA9"
+					item: {
+						Count: 1
+						id: "evilcraft:weather_container"
+						tag: {
+							weather: "EMPTY"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "302FD03D7DDD1EE3"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "evilcraft:weather_container"
+									tag: {
+										weather: "CLEAR"
+									}
+								}
+								{
+									Count: 1b
+									id: "evilcraft:weather_container"
+									tag: {
+										weather: "RAIN"
+									}
+								}
+								{
+									Count: 1b
+									id: "evilcraft:weather_container"
+									tag: {
+										weather: "LIGHTNING"
+									}
+								}
+							]
+						}
+					}
+					title: "Filled Weather Containers"
+					type: "item"
+				}
+			]
+			title: "My Little Sunshine"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["463D406FC669A4A5"]
+			id: "4F763699CEFAE048"
+			subtitle: "Craft a Biome Extract Bottle"
+			tasks: [{
+				id: "6411C0A91F0028DD"
+				item: "evilcraft:biome_extract"
+				type: "item"
+			}]
+			title: "Transforming Ecosystems"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["30CABAA97495053C"]
+			description: ["&7&lHINT: &rYou can protect yourself against Vengeance Spirits with e.g. a &eBurning Gemstone&r. Both the Ring and the Gemstone will work for as long as they are in your inventory."]
+			id: "1FDC7F34049BA9DB"
+			subtitle: "Obtain a Vengeance Ring and see just how many Vengeful Spirits surround you"
+			tasks: [{
+				id: "1C91346FFC10DFCE"
+				item: "evilcraft:vengeance_ring"
+				type: "item"
+			}]
+			title: "A World of Nigthmares Never Seen Before"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1FDC7F34049BA9DB"]
+			description: ["&7&lHINT: &rIn order to catch &cVengeance Spirits&r, place a &dBox of Eternal Closures&r nearby and focus the Spirit down using a &dVengeance Focus&r. If you did everything right, the Spirit will end up caught in the Box!"]
+			icon: "evilcraft:vengeance_focus"
+			id: "721A9AC45D492F41"
+			subtitle: "Get yourself a 'Catch a Vengeance Spirit' DIY set"
+			tasks: [
+				{
+					id: "6083E06A39663863"
+					item: "evilcraft:vengeance_focus"
+					type: "item"
+				}
+				{
+					id: "74243343E453F516"
+					item: "evilcraft:box_of_eternal_closure"
+					type: "item"
+				}
+			]
+			title: "Evil Sealed Within"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["30CABAA97495053C"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "evilcraft:blood_extractor"
+			}
+			id: "3C3CD5B17FA9BF1F"
+			subtitle: "Obtain a Blood Extractor and fill it up to 5 Buckets"
+			tasks: [
+				{
+					id: "12F9EA4E1B37314B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "evilcraft:blood_extractor"
+					}
+					type: "item"
+				}
+				{
+					id: "1F0EA53E3E778943"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Amount: 5000
+								FluidName: "evilcraft:blood"
+							}
+						}
+						id: "evilcraft:blood_extractor"
+						tag: {
+							Fluid: {
+								Amount: 5000
+								FluidName: "evilcraft:blood"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Nursing School"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3C3CD5B17FA9BF1F"]
+			id: "631C617E054BE4EF"
+			subtitle: "Make a Blood Infuser"
+			tasks: [{
+				id: "521F8B05682BE93D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "evilcraft:blood_infuser"
+				}
+				type: "item"
+			}]
+			title: "Dark Arts 101"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["631C617E054BE4EF"]
+			id: "475982941B714122"
+			subtitle: "Plant a tree that bears fruit in Blood"
+			tasks: [{
+				id: "5363422C28339923"
+				item: "evilcraft:undead_sapling"
+				type: "item"
+			}]
+			title: "It's Raining Blood"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["631C617E054BE4EF"]
+			icon: "evilcraft:promise_tier_1"
+			id: "6261A7A69EE61DA9"
+			min_required_tasks: 1
+			subtitle: "Upgrade your blood-dependant machines using some Promises"
+			tasks: [
+				{
+					disable_toast: true
+					id: "37C80A859F7D3E8C"
+					item: "evilcraft:promise_tier_1"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3763E49DE87FFE7F"
+					item: "evilcraft:promise_speed_0"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "66689E91B3184ABB"
+					item: "evilcraft:promise_efficiency_0"
+					type: "item"
+				}
+			]
+			title: "Empty Promises"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["30CABAA97495053C"]
+			id: "0433C962730896A6"
+			subtitle: "Make a Sanguinary Pedetstal to automatically collect any nearby blood stains."
+			tasks: [{
+				id: "4FDBE653D0A2F388"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "evilcraft:sanguinary_pedestal_0"
+				}
+				type: "item"
+			}]
+			title: "Vampirism"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["30CABAA97495053C"]
+			id: "4FB77EF920326066"
+			subtitle: "Enchant a Zanite Gemstone into a Warp Stone"
+			tasks: [{
+				id: "0EA283773F3E7D6C"
+				item: {
+					Count: 1
+					id: "waystones:warp_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Blink and You'll Miss Me!"
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4FB77EF920326066"]
+			icon: "waystones:waystone"
+			id: "2C8E322D7390BBED"
+			subtitle: "\"You must construct additional Pylons\""
+			tasks: [{
+				id: "571EDEF2C6671B9F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "waystones:waystones"
+					}
+				}
+				title: "Any Waystone"
+				type: "item"
+			}]
+			title: "Warp Network"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["69E0CD80BEE3CA2E"]
+			id: "6FBD7E57DB0590EE"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Is there even anything that can stop you at this point?"
+			tasks: [{
+				id: "38B757FE173CC953"
+				item: {
+					Count: 1
+					id: "mcdw:soul_dagger_eternal_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "To All Beloved Eternity"
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["66FE6097FAD75DFF"]
+			icon: {
+				Count: 1
+				id: "ars_elemental:air_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "02557062117354D6"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a full set of Aethermancer's Armor"
+			tasks: [
+				{
+					id: "02542735F36F7F76"
+					item: {
+						Count: 1
+						id: "ars_elemental:air_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29F0A9578F8888EE"
+					item: {
+						Count: 1
+						id: "ars_elemental:air_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "132CBF32F7B9455D"
+					item: {
+						Count: 1
+						id: "ars_elemental:air_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "143CE25F4FD3CD08"
+					item: {
+						Count: 1
+						id: "ars_elemental:air_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Master of Air"
+			x: 5.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["66FE6097FAD75DFF"]
+			icon: {
+				Count: 1
+				id: "ars_elemental:fire_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5CA095DDD4286144"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a full set of Pyromancer's Armor"
+			tasks: [
+				{
+					id: "13A88C1E80BD539C"
+					item: {
+						Count: 1
+						id: "ars_elemental:fire_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79E4E0A57EDE7205"
+					item: {
+						Count: 1
+						id: "ars_elemental:fire_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5096B17DE4B2FAB0"
+					item: {
+						Count: 1
+						id: "ars_elemental:fire_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58EC2EF073979298"
+					item: {
+						Count: 1
+						id: "ars_elemental:fire_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Master of Air"
+			x: 6.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["66FE6097FAD75DFF"]
+			icon: {
+				Count: 1
+				id: "ars_elemental:aqua_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6B1CF27E2F917216"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a full set of Aquamancer's Armor"
+			tasks: [
+				{
+					id: "6AE29223050BFAD6"
+					item: {
+						Count: 1
+						id: "ars_elemental:aqua_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B8553970F4813C8"
+					item: {
+						Count: 1
+						id: "ars_elemental:aqua_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6676D5C298D8B980"
+					item: {
+						Count: 1
+						id: "ars_elemental:aqua_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "171B82733AE17101"
+					item: {
+						Count: 1
+						id: "ars_elemental:aqua_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Master of Water"
+			x: 7.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["66FE6097FAD75DFF"]
+			icon: {
+				Count: 1
+				id: "ars_elemental:earth_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0EEF9805C5E887AC"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a full set of Geomancer's Armor"
+			tasks: [
+				{
+					id: "1C35A61499ABBD8D"
+					item: {
+						Count: 1
+						id: "ars_elemental:earth_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6FB0A094E7835D5E"
+					item: {
+						Count: 1
+						id: "ars_elemental:earth_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "67D32BDF6BD181C1"
+					item: {
+						Count: 1
+						id: "ars_elemental:earth_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "70EB68251CB7C356"
+					item: {
+						Count: 1
+						id: "ars_elemental:earth_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Master of Earth"
+			x: 8.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"721A9AC45D492F41"
+				"6261A7A69EE61DA9"
+			]
+			icon: "evilcraft:piercing_vengeance_focus"
+			id: "2BA39149B3E2C1EA"
+			subtitle: "Kill a Vengeance Spirit using a Piercing Vengeance Focus"
+			tasks: [
+				{
+					id: "0D1943C73691858D"
+					item: "evilcraft:piercing_vengeance_focus"
+					type: "item"
+				}
+				{
+					id: "0F74CFCE4141D0B9"
+					item: "evilcraft:vengeance_essence"
+					type: "item"
+				}
+			]
+			title: "VENGEANCE!!!"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2BA39149B3E2C1EA"]
+			icon_scale: 0.75d
+			id: "704371D70C883EEF"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Form Garmonbozia"
+			tasks: [{
+				id: "7D2AD0E0DC60C5F7"
+				item: "evilcraft:garmonbozia"
+				type: "item"
+			}]
+			title: "Pain and Sorrow"
+			x: 1.5d
+			y: 0.5d
 		}
 	]
 	title: "World of Magic"

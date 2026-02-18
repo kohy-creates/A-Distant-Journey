@@ -7,6 +7,7 @@
 			<condition>id = evilcraft:blood_pearl_of_teleportation</condition>
 			<condition>is_bucket</condition>
 			<condition>id = twilightforest:charm_of_life_2</condition>
+			<condition>id = evilcraft:blood_extractor</condition>
 		</or>
 	</rule>
 	<rule stacksize="4">

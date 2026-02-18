@@ -1,0 +1,363 @@
+
+#修饰系统配置
+[modifiers]
+	#是否启用饰品修饰系统
+	#注意：如果检测到安装了 Baubles Reforked 模组，此选项默认为 false
+	#你仍然可以手动启用此选项，但不建议同时使用两个模组的修饰符系统
+	enabled = true
+
+#铁砧重铸系统配置
+[anvilRecast]
+	#重铸所需经验等级
+	#Range: 1 ~ 100
+	expCost = 3
+	#重铸消耗的材料数量
+	#Range: 1 ~ 64
+	materialCost = 1
+
+[mana]
+	#默认最大魔力值
+	#Range: 10 ~ 100000
+	defaultMaxMana = 100
+	#魔力恢复冷却时间（以tick为单位，20 tick = 1秒）
+	#Range: 0 ~ 20000
+	manaRegenCooldown = 20
+	#每次恢复的魔力量
+	#Range: 1 ~ 10000
+	manaRegenRate = 3
+	#魔力恢复间隔（以tick为单位）
+	#Range: 1 ~ 20000
+	manaRegenInterval = 20
+	#创造模式每tick恢复的魔力量
+	#Range: 1 ~ 10000
+	creativeRegenRate = 5
+	#若已安装 Iron's Spells 模组，是否使用其魔力系统
+	useIronsSpellsMana = false
+	#若已安装 Botania 模组，是否使用其魔力系统
+	useBotaniaMana = false
+
+[arcingOrb]
+	#移动速度增益倍率
+	#Range: 0.0 ~ 1000.0
+	speedBoost = 0.25
+	#每tick的充能速率和魔力消耗
+	#Range: 0.1 ~ 5000.0
+	chargeRate = 0.5
+	#最小充能需求
+	#Range: 1.0 ~ 5000.0
+	minCharge = 5.0
+	#最大充能值
+	#Range: 10.0 ~ 10000.0
+	maxCharge = 100.0
+	#伤害系数
+	#Range: 0.01 ~ 100.0
+	damageMultiplier = 0.133
+	#闪避技能的位移距离
+	#Range: 1.0 ~ 2000.0
+	dashDistance = 5.0
+	#闪避技能冷却时间（单位：tick）
+	#Range: 1 ~ 20000
+	dashCooldown = 20
+	#闪避技能消耗的魔力值
+	#Range: 1.0 ~ 10000.0
+	dashManaCost = 10.0
+	#跳跃时闪避的额外推力系数
+	#Range: 0.0 ~ 1.0
+	dashJumpBoost = 0.3
+
+[dragonsEye]
+	#最大渲染方块数量
+	#更大的数值可能会影响性能
+	#范围: 50-10000
+	#Range: 50 ~ 10000
+	max_render_blocks = 200
+	#渲染范围（以方块为单位）
+	#这个值会被平方来计算实际范围
+	#默认值12表示12*12的范围
+	#范围: 1-128
+	#Range: 1 ~ 128
+	render_range = 12
+
+	[dragonsEye.valuable]
+		#贵重矿物组 - 在这里添加要探测的额外贵重矿石
+		#添加方式示例：
+		#["minecraft:ancient_debris", "create:zinc_ore", "thermal:silver_ore"]
+		#或者每个矿石单独一行：
+		#[
+		#    "minecraft:ancient_debris",
+		#    "create:zinc_ore",
+		#    "thermal:silver_ore"
+		#]
+		ores = []
+
+	[dragonsEye.common]
+		#常见矿物组 - 在这里添加要探测的额外普通矿石
+		#添加方式示例：
+		#["create:copper_ore", "thermal:tin_ore", "mekanism:osmium_ore"]
+		#注意：每个矿石ID之间需要用逗号分隔，最后一个不需要加逗号
+		ores = []
+
+	[dragonsEye.redstone]
+		#红石矿物组 - 在这里添加要探测的额外红石类矿石
+		#添加方式示例：
+		#["thermal:cinnabar_ore", "projectred:electrotine_ore"]
+		#注意：矿石ID格式必须是 模组id:方块id
+		ores = []
+
+[enderCrown]
+	#末影人跟随范围
+	#Range: 8.0 ~ 32.0
+	followRange = 16.0
+	#伤害免疫触发概率
+	#Range: 0.0 ~ 1.0
+	immunityChance = 0.02
+	#传送范围
+	#Range: 8.0 ~ 64.0
+	teleportRange = 32.0
+	#是否启用水伤害
+	waterDamageEnabled = false
+
+[faelisClaw]
+	#攻击力增益百分比
+	#Range: 0.0 ~ 100.0
+	damageBoost = 0.25
+	#流血效果触发概率
+	#Range: 0.0 ~ 1.0
+	bleedChance = 0.25
+	#流血效果持续时间(tick)
+	#Range: 20 ~ 12000
+	bleedDuration = 300
+	#普通状态下流血持续时间倍率
+	#Range: 0.1 ~ 100.0
+	normalDurationMultiplier = 0.3333333333333333
+
+[manaCandy]
+	#魔力糖果恢复的魔力值
+	#Range: 1 ~ 20000
+	restore = 50
+
+[manaCrystal]
+	#魔力水晶增加的魔力上限值
+	#Range: 1 ~ 50000
+	maxIncrease = 10
+
+[manaReagent]
+	#魔力试剂减少的魔力上限值
+	#Range: 1 ~ 50000
+	maxDecrease = 10
+
+[poisonStone]
+	#毒石触发中毒效果的概率
+	#Range: 0.0 ~ 1.0
+	chance = 0.2
+	#中毒效果持续时间(tick)
+	#Range: 20 ~ 40000
+	duration = 60
+	#中毒效果等级
+	#Range: 0 ~ 255
+	amplifier = 0
+	#对中毒目标的伤害倍率
+	#Range: 1.0 ~ 500.0
+	damageMultiplier = 2.0
+	#是否启用毒石的伤害加成效果
+	activateDamageEvent = true
+
+[polarizedStone]
+	#物品吸引范围
+	#Range: 4.0 ~ 64.0
+	attractionRange = 12.0
+	#物品吸引速度
+	#Range: 0.1 ~ 10.0
+	attractionSpeed = 0.5
+	#弹射物防御范围
+	#Range: 1.0 ~ 10.0
+	deflectionRange = 2.0
+	#每秒防御消耗魔力/秒
+	#Range: 0.0 ~ 5000.0
+	deflectionManaCost = 5.0
+
+[shield]
+	#完全免伤所需的伤害计数
+	#Range: 1 ~ 100
+	maxDamageCount = 3
+	#基础伤害减免百分比
+	#Range: 0.0 ~ 1.0
+	damageReduction = 0.2
+	#爆炸伤害减免系数
+	#Range: 0.0 ~ 1.0
+	explosionReduction = 0.25
+	#是否启用伤害护盾效果
+	#需要安装前置模组 First Aid 才能生效
+	#true - 启用
+	#false - 禁用
+	#注意：此功能需要安装 First Aid 模组才能正常工作，如果没安装可以忽略此配置
+	enable_effect = true
+	#伤害护盾触发概率
+	#需要安装前置模组 First Aid 才能生效
+	#范围: 0.0 到 1.0
+	#例如: 0.1 表示 10% 的触发概率
+	#注意：此功能需要安装 First Aid 模组才能正常工作，如果没安装可以忽略此配置
+	#Range: 0.0 ~ 1.0
+	trigger_chance = 0.1
+
+[greaterInertiaStone]
+	#击退抗性增加值
+	#Range: 0.0 ~ 1.0
+	knockbackResistance = 0.4
+	#移动速度增加百分比
+	#Range: -1.0 ~ 30.0
+	movementSpeed = 1.5
+	#跳跃高度提升值
+	#Range: 0.0 ~ 100.0
+	jumpBoost = 0.4
+	#摔落伤害减免系数(0.25表示减免75%)
+	#Range: 0.0 ~ 1.0
+	fallReduction = 0.25
+	#跨步高度增加值
+	#Range: -1.0 ~ 10.0
+	stepHeight = 0.4
+
+[witherRing]
+	#凋零效果触发概率
+	#Range: 0.0 ~ 1.0
+	chance = 0.2
+	#凋零效果持续时间(tick)
+	#Range: 20 ~ 6000
+	duration = 100
+	#凋零效果等级
+	#Range: 0 ~ 4
+	amplifier = 0
+
+#结构战利品配置
+#配置格式：物品ID,权重,最小数量,最大数量;多个物品用分号分隔
+["Loot Settings"]
+	#沙漠神殿战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	desertPyramidLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#丛林神庙战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	jungleTempleLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#废弃矿井战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	abandonedMineshaftLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#要塞图书馆战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	strongholdLibraryLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#林地府邸战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	woodlandMansionLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#村庄教堂战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageTempleLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#沉船宝藏配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	shipwreckTreasureLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#掠夺者前哨站配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	pillagerOutpostLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#埋藏宝藏配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	buriedTreasureLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#大型水下废墟配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	underwaterRuinBigLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#小型水下废墟配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	underwaterRuinSmallLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#雪屋地下室配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	iglooChestLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#堡垒遗迹-宝藏室配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	bastionTreasureLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#堡垒遗迹-桥梁配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	bastionBridgeLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#堡垒遗迹-居住区配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	bastionHousingLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#堡垒遗迹-杂项配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	bastionOtherLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#废弃传送门配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	ruinedPortalLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#末地城战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	endCityLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#远古城市配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	ancientCityLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#小型地牢配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	simpleDungeonLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#要塞走廊配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	strongholdCorridorLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#恐龙化石配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	fossilDinosaurLoot = ""
+	#哺乳动物化石配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	fossilMammalLoot = ""
+	#沉船补给配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	shipwreckSupplyLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#林地制图室配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	woodlandCartographyLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#要塞十字厅配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	strongholdCrossingLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#沉船地图配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	shipwreckMapLoot = "trinketsandbaubles:glowing_powder,10,1,2;trinketsandbaubles:glowing_ingot,1,1,1"
+	#盔甲匠战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageArmorerLoot = ""
+	#屠夫战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageButcherLoot = ""
+	#制图师战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageCartographerLoot = ""
+	#平原村庄房屋配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villagePlainsHouseLoot = ""
+	#渔夫战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageFisherLoot = ""
+	#制箭师战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageFletcherLoot = ""
+	#制革厂战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageTanneryLoot = ""
+	#村庄图书馆配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageLibraryLoot = ""
+	#石匠战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageMasonLoot = ""
+	#牧羊人战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageShepherdLoot = ""
+	#工具匠战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageToolsmithLoot = ""
+	#武器匠战利品配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageWeaponsmithLoot = ""
+	#沙漠村庄房屋配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageDesertHouseLoot = ""
+	#雪原村庄房屋配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageSnowyHouseLoot = ""
+	#热带草原村庄房屋配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageSavannaHouseLoot = ""
+	#针叶林村庄房屋配置
+	#格式：物品ID,权重,最小数量,最大数量（用分号分隔）
+	villageTaigaHouseLoot = ""
+

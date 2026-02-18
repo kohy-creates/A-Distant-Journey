@@ -262,6 +262,9 @@
 		#The time in ticks the player will remain turned after the interaction has ended. Set to 0 to disable. This config option only applies when camera is decoupled.
 		#Range: > 0
 		turning_lock_time = 4
+		#The speed multiplier at which the player rotation converges to the movement direction of the player.
+		#Range: 0.05000000074505806 ~ 1.0
+		turning_speed_multiplier = 0.25
 
 [object_picker]
 	#The raytrace distance used for the dynamic crosshair.

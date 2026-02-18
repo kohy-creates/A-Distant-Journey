@@ -28,4 +28,6 @@
 	#Hide alert icon after X ticks, set to <= 0 to disable
 	#Range: > -2
 	hideAlertAfterTicks = -1
+	#Play an alert sound when mobs target the player
+	playAlertSound = false
 

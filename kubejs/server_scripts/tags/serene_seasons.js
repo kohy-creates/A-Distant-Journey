@@ -1,7 +1,7 @@
 const crops = {
 	year_round: [
 		'phantasm:pream_sapling',
-		'quark:purple_blossom_sapling',
+		'quark:lavender_blossom_sapling',
 		'ars_nouveau:purple_archwood_sapling',
 		'architects_palette:twisted_sapling',
 		'evilcraft:undead_sapling',

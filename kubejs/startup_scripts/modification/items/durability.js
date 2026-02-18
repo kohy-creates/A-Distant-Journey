@@ -120,8 +120,8 @@ ItemEvents.modification(event => {
 		/stardew_fishing\:.*bobber/,
 		/.*aether.*\:.*glove/,
 		/umbral_skies\:.*gloves/,
-		'the_bumblezone:flower_headwear',
-		/accents/
+		/accents/,
+		'evilcraft:burning_gemstone'
 	]
 	event.modify(noDurability, item => {
 		item.setMaxDamage(0);
@@ -202,7 +202,6 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('minecraft:diamond'),
-		toolset('botania:terrasteel'),
 		toolset('aether:gravitite'),
 		toolset('ancient_aether:valkyrum'),
 		toolset('lost_aether_content:phoenix'),
@@ -212,6 +211,10 @@ ItemEvents.modification(event => {
 		'mcdw:crossbow_firebolt_thrower',
 		armorset('born_in_chaos_v1:nightmare_mantleofthe_night'),
 	], 2000)
+
+	maxDurability([
+		toolset('botania:terrasteel'),
+	], 3500)
 
 	maxDurability([
 		toolset('minecraft:netherite'),

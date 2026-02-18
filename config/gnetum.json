@@ -5,8 +5,12 @@
   "showHudFps": {
     "value": "ON"
   },
+  "downscale": {
+    "value": "OFF"
+  },
   "numberOfPasses": 3,
   "maxFps": 30,
+  "screenMaxFps": 20,
   "mapVanillaElements": {
     "minecraft:record_overlay": {
       "enabled": {
@@ -49,6 +53,12 @@
         "value": "AUTO"
       },
       "pass": 2
+    },
+    "xaeroworldmap:xaero_wm_crosshair_message": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
     },
     "patchouli:multiblock_progress": {
       "enabled": {
@@ -145,6 +155,12 @@
         "value": "AUTO"
       },
       "pass": 3
+    },
+    "xaerominimap:xaero": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
     },
     "gnetum:minecraft_hand": {
       "enabled": {
@@ -302,6 +318,12 @@
       },
       "pass": 3
     },
+    "aether_protect_your_moa:moa_jumps_gravitite": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "create:track_placement": {
       "enabled": {
         "value": "AUTO"
@@ -391,6 +413,12 @@
         "value": "AUTO"
       },
       "pass": 1
+    },
+    "exposure:viewfinder": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
     },
     "minecraft:spyglass": {
       "enabled": {
@@ -486,11 +514,23 @@
       },
       "pass": 3
     },
+    "exposure": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "bettercombat": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 3
+    },
+    "xaerominimap": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
     },
     "architectury": {
       "enabled": {

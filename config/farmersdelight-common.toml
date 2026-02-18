@@ -12,7 +12,7 @@
 	richSoilBoostChance = 0.2
 	#How much of a bonus (in percentage) should each level of Fortune grant to Cutting Board chances? Set it to 0.0 to disable this.
 	#Range: 0.0 ~ 1.0
-	cuttingBoardFortuneBonus = 0.1
+	cuttingBoardFortuneBonus = 0.25
 	#Should players be able to reel back rope, bottom to top, when sneak-using with an empty hand on them?
 	enableRopeReeling = true
 	#A list of dye colors that, when used as the background of a Canvas Sign, should default to white text when placed.
@@ -22,7 +22,7 @@
 #Farming
 [farming]
 	#Which rope should Tomato Vines leave behind when mined by hand?
-	defaultTomatoVineRope = "farmersdelight:rope"
+	defaultTomatoVineRope = "supplementaries:rope"
 	#Should tomato vines be able to climb any rope tagged as farmersdelight:ropes?
 	#Beware: this will convert these blocks into the block specified in defaultTomatoVineRope.
 	enableTomatoVineClimbingTaggedRopes = true
@@ -30,7 +30,7 @@
 #Recipe book
 [recipe_book]
 	#Should the Cooking Pot have a Recipe Book available on its interface?
-	enableRecipeBookCookingPot = true
+	enableRecipeBookCookingPot = false
 
 #Vanilla item overrides
 [overrides]
@@ -39,7 +39,7 @@
 	#Should Rabbit Stew grant users the jumping prowess of a rabbit when eaten?
 	rabbitStewJumpBoost = true
 	#Should the Dispenser be able to operate a Cutting Board in front of it?
-	dispenserUsesToolsOnCuttingBoard = true
+	dispenserUsesToolsOnCuttingBoard = false
 
 	#Stack size overrides
 	[overrides.stack_size]

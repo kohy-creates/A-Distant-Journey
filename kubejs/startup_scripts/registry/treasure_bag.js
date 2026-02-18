@@ -32,7 +32,6 @@ global.bossMobsNoTreasureBag = [
 	'aether:valkyrie_queen',
 	'aether:sun_spirit',
 	'alexscaves:luxtructosaurus',
-	'the_bumblezone:cosmic_crystal_entity',
 	'lost_aether_content:aerwhale_king',
 	'rediscovered:red_dragon',
 	'twilightforest:naga',

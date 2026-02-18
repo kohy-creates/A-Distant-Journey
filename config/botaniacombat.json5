@@ -51,9 +51,9 @@
 		// Keep in mind this is in addition to 120 mana per durability. If set, mana is required for summoning stars
 		"starcallerProjectileCost": 0,
 		// Starcaller projectile
-		"fallingStarNormalDamage": 30.0,
+		"fallingStarNormalDamage": 7.0,
 		// Starcaller projectile, 25% chance of using this instead of normal damage
-		"fallingStarHighDamage": 60.0,
+		"fallingStarHighDamage": 7.0,
 		// Missile from Unstable Reservoir Rod (does not effect Gaia Gaurdian)
 		"missileDamage": 19.0,
 		// Flugel Tiara mana cost per tick

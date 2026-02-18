@@ -460,8 +460,8 @@
 			image: "adj:textures/texts/chapter_5.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: -8.5d
-			y: 26.5d
+			x: -7.5d
+			y: 26.0d
 		}
 		{
 			dependency: "0F84B7A1DA0FDD37"
@@ -478,8 +478,8 @@
 			image: "mythicmetals:block/unobtainium_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: -7.0d
-			y: 23.5d
+			x: -6.0d
+			y: 22.5d
 		}
 		{
 			dependency: "3F2B685C8C008081"
@@ -498,8 +498,8 @@
 			order: -999
 			rotation: 0.0d
 			width: 10.0d
-			x: -10.0d
-			y: 24.0d
+			x: -8.0d
+			y: 24.5d
 		}
 		{
 			dependency: "3E479B783B24C730"
@@ -572,8 +572,8 @@
 			order: -999
 			rotation: -30.0d
 			width: 10.0d
-			x: 19.0d
-			y: 43.5d
+			x: 19.5d
+			y: 43.0d
 		}
 		{
 			dependency: "2FC4D1B2E42E2124"
@@ -615,11 +615,11 @@
 		{
 			dependency: "3F2B685C8C008081"
 			height: 1.75d
-			image: "mythicmetals:block/metallurgium_block_top"
+			image: "mythicmetals:block/celestium_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: -9.0d
-			y: 21.5d
+			x: -8.0d
+			y: 20.5d
 		}
 		{
 			dependency: "574DD3FD26A23CDE"
@@ -629,6 +629,33 @@
 			width: 1.75d
 			x: 17.5d
 			y: 14.5d
+		}
+		{
+			dependency: "4564BF670D10E0FA"
+			height: 1.75d
+			image: "botania:block/terrasteel_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: -2.5d
+			y: 18.5d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 1.75d
+			image: "mythicmetals:block/unobtainium_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 18.0d
+			y: 39.5d
+		}
+		{
+			dependency: "3F2B685C8C008081"
+			height: 1.75d
+			image: "mythicmetals:block/metallurgium_block_top"
+			rotation: 45.0d
+			width: 1.75d
+			x: -10.0d
+			y: 22.5d
 		}
 	]
 	order_index: 1
@@ -1351,14 +1378,11 @@
 				type: "item"
 			}]
 			title: "Librarian"
-			x: 14.0d
-			y: 10.5d
+			x: 14.5d
+			y: 11.0d
 		}
 		{
-			dependencies: [
-				"22391120726D6ACC"
-				"45A92F2D2D809FF1"
-			]
+			dependencies: ["22391120726D6ACC"]
 			description: [
 				"The aforementioned safe way of increasing an item's maximum amount of enchantments!"
 				""
@@ -3520,6 +3544,7 @@
 			id: "640E291225CA8A2A"
 			shape: "diamond"
 			size: 1.5d
+			subtitle: "Find the Ruined Citadel"
 			tasks: [{
 				icon: "cataclysm:obsidian_bricks"
 				id: "05D9D28F25889860"
@@ -3527,6 +3552,7 @@
 				title: "Find the Ruined Citadel"
 				type: "structure"
 			}]
+			title: "Living in Nothingness"
 			x: -0.5d
 			y: 23.0d
 		}
@@ -3607,12 +3633,13 @@
 				type: "item"
 			}]
 			title: "(Un)obtainable"
-			x: -7.0d
-			y: 23.5d
+			x: -6.0d
+			y: 22.5d
 		}
 		{
 			dependencies: ["41BD18823BE31271"]
 			id: "646540B4C4803445"
+			shape: "pentagon"
 			subtitle: "Create Metallurgium - the toughest of alloys to ever exist"
 			tasks: [{
 				id: "57B1E2D14E6ADA44"
@@ -3620,8 +3647,8 @@
 				type: "item"
 			}]
 			title: "Cosmic Power"
-			x: -9.0d
-			y: 23.5d
+			x: -8.0d
+			y: 22.5d
 		}
 		{
 			dependencies: [
@@ -3629,6 +3656,7 @@
 				"6E4C5779C4DA9851"
 			]
 			id: "3915141D30CD6CB0"
+			shape: "pentagon"
 			subtitle: "Create Celestium - the most magical of alloys to ever exist"
 			tasks: [{
 				icon: "mythicmetals:celestium_ingot"
@@ -3637,8 +3665,8 @@
 				type: "item"
 			}]
 			title: "Celestial Synth"
-			x: -7.0d
-			y: 21.5d
+			x: -6.0d
+			y: 20.5d
 		}
 		{
 			dependencies: ["06E7DBDB7C7A790A"]
@@ -3938,7 +3966,7 @@
 			dependencies: ["00BD4BF3FFC6172B"]
 			description: [""]
 			id: "18F8F611C29DF3A7"
-			subtitle: "Resummon a Withered Symbiont by tossing appropriate items onto a powered Super Beacon and collect one final Enchanted Command Block Book"
+			subtitle: "Resummon a Withered Symbiont by tossing appropriate items onto a powered Super Beacon"
 			tasks: [{
 				advancement: "adj:resummon_withered_symbiont"
 				criterion: ""
@@ -3962,7 +3990,7 @@
 				item: "structure_gel:building_tool"
 				type: "item"
 			}]
-			title: "Architect's Prism"
+			title: "Journey's End"
 			x: 15.96428571428568d
 			y: 42.35714285714284d
 		}
@@ -4101,8 +4129,8 @@
 				}
 			]
 			title: "Rich People Stuff"
-			x: -9.0d
-			y: 21.5d
+			x: -8.0d
+			y: 20.5d
 		}
 		{
 			dependencies: ["236739201289D4DD"]
@@ -4211,6 +4239,66 @@
 			title: "Valkyrien Skies"
 			x: 17.5d
 			y: 14.5d
+		}
+		{
+			dependencies: ["6E4C5779C4DA9851"]
+			icon_scale: 0.75d
+			id: "38E1B52E67727660"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Terra Blade"
+			tasks: [{
+				id: "4E1A7F015B2765D5"
+				item: {
+					Count: 1
+					id: "botania:terra_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sword of The True Heroes"
+			x: -2.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["18F8F611C29DF3A7"]
+			icon_scale: 0.75d
+			id: "01883CFF273619E2"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft The Zenith, the culmination of the weapons you used throughout the game (and those that you skipped)"
+			tasks: [{
+				id: "2BC2586E38CB31F9"
+				item: "zenith:zenith"
+				type: "item"
+			}]
+			title: "Infinity +1"
+			x: 18.0d
+			y: 39.5d
+		}
+		{
+			dependencies: ["646540B4C4803445"]
+			icon_scale: 0.75d
+			id: "4405FD0CF84656FA"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Trigger the Darkness of Midnight"
+			tasks: [{
+				id: "43675AB1D8869DCB"
+				item: {
+					Count: 1
+					id: "mythicmetals:metallurgium_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Let The Devil Out!"
+			x: -10.0d
+			y: 22.5d
 		}
 	]
 	title: "Story"

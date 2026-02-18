@@ -281,19 +281,16 @@ StartupEvents.postInit(event => {
 
 	candles.forEach(candle => {
 		if (candle === 'minecraft:candle') {
-			EMIEdit.push([candle, 'the_bumblezone:super_candle']);
-			EMIEdit.push(['the_bumblezone:super_candle', 'supplementaries:candle_holder']);
+			EMIEdit.push([candle, 'supplementaries:candle_holder']);
 			EMIEdit.push(['supplementaries:candle_holder', 'suppsquared:gold_candle_holder']);
 		}
 		else {
 			let color = candle.replace('minecraft:', '').replace('_candle', '');
 
-			let superCandle = `the_bumblezone:super_candle_${color}`,
-				holder = `supplementaries:candle_holder_${color}`,
+			let holder = `supplementaries:candle_holder_${color}`,
 				goldenHolder = `suppsquared:gold_candle_holder_${color}`;
 
-			EMIEdit.push([candle, superCandle]);
-			EMIEdit.push([superCandle, holder]);
+			EMIEdit.push([candle, holder]);
 			EMIEdit.push([holder, goldenHolder]);
 		}
 	})

@@ -62,13 +62,13 @@ function onWSPhaseChange(newPhase, server) {
 		case 0: {
 			text.push('A horror beyond comprehension has awoken');
 			text.push('R u n   w h i l e   i t \' s   s t i l l   r e g a i n i n g   s t r e n g t h');
-			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 2.5')
+			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 1')
 			if (server.isHardcore()) {
-				let slowSpeed = global.WitherStormFlyingSpeed * 1.3;
-				let fastSpeed = global.WitherStormFlyingSpeed * 3.0;
+				let slowSpeed = global.WitherStormFlyingSpeed * 1.6;
+				let fastSpeed = global.WitherStormFlyingSpeed * 3.5;
 				server.runCommandSilent(`/attribute @w witherstormmod:slow_flying_speed base set ${slowSpeed}`)
 				server.runCommandSilent(`/attribute @w witherstormmod:target_stationary_flying_speed base set ${fastSpeed}`)
-				server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 1.75')
+				server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 1')
 			}
 			break;
 		}
@@ -87,7 +87,7 @@ function onWSPhaseChange(newPhase, server) {
 		case 3: {
 			text.push('The Wither Storm grows stronger');
 			text.push('It grew tentacles. Do not let them catch you...');
-			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 1.75')
+			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 1.5')
 			break;
 		}
 		case 4: {
@@ -95,7 +95,7 @@ function onWSPhaseChange(newPhase, server) {
 			text.push('It started pursuing you');
 			text.push('If you are still in your base, now is the time to leave')
 			text.push('It\'s slow, but nothing is going to stop it')
-			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 0.66666')
+			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 0.8')
 			break;
 		}
 		case 5: {
@@ -112,7 +112,7 @@ function onWSPhaseChange(newPhase, server) {
 			text.push('Approach it and it will reawaken.')
 			text.push('It\'s best to leave it for now, it will wake up soon anyway.')
 			text.push('You can take this time to gear up, think of an escape route.')
-			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 0.5')
+			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 0.8')
 			break;
 		}
 		case 7: {

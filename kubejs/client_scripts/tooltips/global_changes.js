@@ -62,6 +62,13 @@ ItemEvents.tooltip(event => {
 		'ars_nouveau:source_gem',
 		'ars_nouveau:wilden_horn',
 		'ars_nouveau:wilden_spike',
+		'evilcraft:vengeance_ring',
+		'botania:ancient_will_ahrim',
+		'botania:ancient_will_dharok',
+		'botania:ancient_will_guthan',
+		'botania:ancient_will_torag',
+		'botania:ancient_will_verac',
+		'botania:ancient_will_karil',
 	], (item, advanced, text) => {
 		for (let i = text.size() - 1; i > 0; i--) {
 			if (!text[i].toString().includes('color=dark_gray')) {
@@ -245,8 +252,84 @@ ItemEvents.tooltip(event => {
 			}
 		}
 
+		// Customize the enchantment line because I can
+		for (let i = 1; i < text.length; i++) if (text[i].toString().includes('Enchantments')) {
+			let str = text[i].toString();
+			let match = str.match(/(\d+)\/(\d+) Enchantments/);
+
+			if (!match) return;
+
+			let enchantCount = item.getEnchantments().size()
+
+			let firstNumber = Text.of(enchantCount.toString().replace('.0', ''));
+			let secondNumber = Text.of(parseInt(match[2]).toString().replace('.0', ''));
+
+			let grayFormatting = (enchantCount == 0) ? true : false;
+			let redFormatting = (enchantCount === match[2]) ? true : false;
+
+			text.remove(i)
+			let enchantments = [];
+			if (item.isEnchanted()) for (let newEnchantLine = 1; newEnchantLine < text.length; newEnchantLine++) {
+				if (text[newEnchantLine].toString().includes('enchantments')) {
+					text.remove(newEnchantLine)
+					for (let iter = 0; iter < enchantCount; iter++) {
+						enchantments.push(text[newEnchantLine]);
+						text.remove(newEnchantLine)
+					}
+					text.remove(newEnchantLine - 1)
+					break;
+				}
+			}
+			const enchLine = Text.join([
+				Text.gray("Enchantments: "),
+				(redFormatting) ? firstNumber.color('#FF3D3D') : ((grayFormatting) ? firstNumber.color('#454545') : firstNumber.color('#DF3DFF')),
+				Text.of("/").gray(),
+				(redFormatting) ? secondNumber.darkRed('#8F0E0E') : ((grayFormatting) ? secondNumber.color('#999999') : secondNumber.color('#6D0E8F')),
+			]);
+			let enchLinePos = text.length;
+			// This looks wrong but it works so don't touch it
+			if (advanced) for (let j = text.length - 1; j > -1; j--) {
+				let line = text[j].toString();
+				if (!line.includes('}[style={color=dark_gray}]')) {
+					enchLinePos = j + 1;
+					break;
+				}
+			}
+
+			text.add(enchLinePos, enchLine)
+			text.add(enchLinePos, '')
+			enchLinePos++;
+
+			if (enchantments.length > 0) {
+				for (let iter = 0; iter < enchantments.length; iter++) {
+					text.add(enchLinePos + 1 + iter, Text.join([
+						Text.gray(" ◇"),
+						Text.of(enchantments[iter])
+					]));
+				}
+			}
+			break;
+		}
+
 		if (item.maxDamage != 0) {
-			let pos = (advanced) ? text.length - 2 : text.length;
+			let pos = text.length;
+			if (advanced) {
+				for (let e = 0; e < text.length; e++) {
+					let line = text[e].toString();
+					if (line.includes('durability')) {
+						text.remove(e);
+						break;
+					}
+				}
+
+				for (let g = text.length - 1; g > -1; g--) {
+					let line = text[g].toString();
+					if (!line.includes('}[style={color=dark_gray}]')) {
+						pos = g + 1;
+						break;
+					}
+				}
+			}
 
 			let damage = [item.maxDamage - item.damageValue, item.maxDamage]
 
@@ -269,56 +352,6 @@ ItemEvents.tooltip(event => {
 			]))
 			text.add(pos, '')
 		}
-
-		// Customize the enchantment line because I can
-		for (let i = 1; i < text.length; i++) {
-			if (text[i].toString().includes('Enchantments')) {
-				let str = text[i].toString();
-				let match = str.match(/'(\d+)\/(\d+) Enchantments'/);
-
-				let firstNumber = Text.of(parseInt(match[1]).toString().replace('.0', ''));
-				let secondNumber = Text.of(parseInt(match[2]).toString().replace('.0', ''));
-
-				let grayFormatting = (match[1] == 0) ? true : false;
-				let redFormatting = (match[1] === match[2]) ? true : false;
-
-				text.remove(i)
-				let enchantments = [];
-				if (item.isEnchanted()) {
-					for (let newEnchantLine = 1; newEnchantLine < text.length; newEnchantLine++) {
-						if (text[newEnchantLine].toString().includes('enchantments')) {
-							text.remove(newEnchantLine)
-							for (let iter = 0; iter < match[1]; iter++) {
-								enchantments.push(text[newEnchantLine]);
-								text.remove(newEnchantLine)
-							}
-							text.remove(newEnchantLine - 1)
-							break;
-						}
-					}
-				}
-				const enchLine = Text.join([
-					Text.gray("Enchantments: "),
-					(redFormatting) ? firstNumber.red() : ((grayFormatting) ? firstNumber.darkGray() : firstNumber.lightPurple()),
-					Text.of("/").gray(),
-					(redFormatting) ? secondNumber.darkRed() : ((grayFormatting) ? secondNumber.gray() : secondNumber.darkPurple()),
-				]);
-				const enchLinePos = (advanced) ? text.length - 3 : text.length - 1;
-				text.add(enchLinePos, enchLine)
-				text.add(enchLinePos + 1, '')
-
-				if (enchantments.length > 0) {
-					for (let iter = 0; iter < enchantments.length; iter++) {
-						text.add(enchLinePos + 1 + iter, Text.join([
-							Text.gray(" ◇"),
-							Text.of(enchantments[iter])
-						]));
-					}
-				}
-				break;
-			}
-		}
-
 
 		// Remove default set bonus items
 		if (setBonusItems.includes(item.getId().toString())) {
@@ -498,9 +531,6 @@ ItemEvents.tooltip(event => {
 	 *
 	 * @param {string|string[]|RegExp|RegExp[]} items  
 	 * Item ID, array of IDs, or regex patterns.  
-	 * - Strings must be full item IDs (e.g. `"minecraft:stick"`).  
-	 * - Regex patterns match multiple items.  
-	 * - Arrays can mix strings and regex.
 	 *
 	 * @param {string|string[]} text  
 	 * Tooltip text to add.  
@@ -511,13 +541,12 @@ ItemEvents.tooltip(event => {
 	 * Optional settings that control how the tooltip behaves.
 	 *
 	 * @param {boolean} [opts.gray=true]  
-	 * Whether to render the tooltip in gray text.  
-	 * Set `false` to keep original coloring.
+	 * Whether to render the tooltip in gray text. Defaults to true
 	 *
 	 * @param {number|null} [opts.position=null]  
 	 * Priority / ordering of the tooltip:  
-	 * - null -> default behavior  
-	 * - Higher numbers push the tooltip lower  
+	 * - null -> default behavior
+	 * - Higher numbers push the tooltip lower
 	 * - Lower numbers pull it higher
 	 *
 	 * @param {boolean} [opts.last=false]
@@ -546,38 +575,39 @@ ItemEvents.tooltip(event => {
 	}
 
 	function addTooltipLine(data) {
-		// Unpack fields with manual defaults (KubeJS cannot use default parameters)
-		var items = data.items;
-		var text = Array.isArray(data.text) ? data.text : [data.text];
-		var gray = data.gray !== undefined ? data.gray : true;
-		var position = data.position !== undefined ? data.position : null;
-		var last = data.last !== undefined ? data.last : false;
+		let items = data.items;
+		let text = Array.isArray(data.text) ? data.text : [data.text];
+		let gray = data.gray !== undefined ? data.gray : true;
+		let position = data.position !== undefined ? data.position : null;
+		let last = data.last !== undefined ? data.last : false;
 
 		event.addAdvanced(items, (item, advanced, tooltip) => {
 			if (tooltip[0].toString().includes('gray,obfuscated')) return;
 
-			var maxLen = 50;
-			var iter = 0;
+			let maxLen = 50;
+			let iter = 0;
 
-			var pos = last
-				? (tooltip[tooltip.size() - 1].toString().includes('color=dark_gray')
-					? tooltip.size() - 1
-					: tooltip.size())
-				: (position !== null ? position : 1);
+			let pos = (last) ? (tooltip[tooltip.size() - 1].toString().includes('color=dark_gray') ? tooltip.size() - 1 : tooltip.size()) : (position !== null ? position : 1);
 
 			text.forEach(line => {
-				wrapLine(line, maxLen).forEach(wrapped => {
-					tooltip.add(pos + iter, gray ? Text.gray(wrapped) : Text.of(wrapped));
+				if (typeof line === 'string') {
+					wrapLine(line, maxLen).forEach(wrapped => {
+						tooltip.add(pos + iter, gray ? Text.gray(wrapped) : Text.of(wrapped));
+						iter++;
+					});
+				}
+				else {
+					tooltip.add(pos + iter, line);
 					iter++;
-				});
+				}
 			});
 		});
 	}
 
 	function wrapLine(str, max) {
-		var words = str.split(' ');
-		var out = [];
-		var current = '';
+		let words = str.split(' ');
+		let out = [];
+		let current = '';
 
 		words.forEach(word => {
 			if ((current + word).length + 1 <= max)
@@ -775,8 +805,65 @@ ItemEvents.tooltip(event => {
 			items: 'botania:alfheim_portal',
 			text: 'Uncraftable. See \'Alfthorne Sapling\' instead.'
 		},
+		{
+			items: [
+				/window_box:floating/,
+				/botania:floating/,
+				/botanicadds:*.floating.*/
+			],
+			text: 'Can be planted on any surface'
+		},
+		{
+			items: [
+				/botania:.*_chibi/,
+				/window_box:.*_chibi/
+			],
+			text: 'Has a smaller area of effect than its regular size counterpart',
+			opts: { position: 1 }
+		},
+		{
+			items: 'botania:ancient_will_ahrim',
+			text: [
+				Text.darkGray(' ◇ ').append(Text.red('Critical hits')).append(Text.gray(' apply Weakness'))
+			],
+			opts: { position: 2 }
+		},
+		{
+			items: 'botania:ancient_will_dharok',
+			text: [
+				Text.darkGray(' ◇ ').append(Text.red('Critical hits')).append(Text.gray(' are stronger while low on health'))
+			],
+			opts: { position: 2 }
+		},
+		{
+			items: 'botania:ancient_will_guthan',
+			text: [
+				Text.darkGray(' ◇ ').append(Text.red('Critical hits')).append(Text.gray(' heal for a fraction of dealt damage'))
+			],
+			opts: { position: 2 }
+		},
+		{
+			items: 'botania:ancient_will_torag',
+			text: [
+				Text.darkGray(' ◇ ').append(Text.red('Critical hits')).append(Text.gray(' slow mobs downs'))
+			],
+			opts: { position: 2 }
+		},
+		{
+			items: 'botania:ancient_will_verac',
+			text: [
+				Text.darkGray(' ◇ ').append(Text.red('Critical hits')).append(Text.gray(' splash to nearby mobs'))
+			],
+			opts: { position: 2 }
+		},
+		{
+			items: 'botania:ancient_will_karil',
+			text: [
+				Text.darkGray(' ◇ ').append(Text.red('Critical hits')).append(Text.gray(' apply Wither'))
+			],
+			opts: { position: 2 }
+		},
 
-		// Small misc
 		{ items: 'berry_good:glowgurt', text: 'Gurt: Glow.' },
 		{ items: 'suspicious_stew', text: 'Like a box of chocolates, just disgusting' },
 
@@ -790,7 +877,6 @@ ItemEvents.tooltip(event => {
 			text: 'Jumps with enthusiasm if you are in a slime chunk'
 		},
 
-		// Compass / time / depth
 		{
 			items: ['minecraft:compass', 'minecraft:recovery_compass'],
 			text: 'Tells your horizontal location'
@@ -816,24 +902,6 @@ ItemEvents.tooltip(event => {
 			items: 'minecraft:recovery_compass',
 			text: 'Points you towards the location of your last death',
 			opts: { position: 3 }
-		},
-
-		// Botania floating + chibi
-		{
-			items: [
-				/window_box:floating/,
-				/botania:floating/,
-				/botanicadds:*.floating.*/
-			],
-			text: 'Can be planted on any surface'
-		},
-		{
-			items: [
-				/botania:.*_chibi/,
-				/window_box:.*_chibi/
-			],
-			text: 'Has a smaller area of effect than its regular size counterpart',
-			opts: { position: 1 }
 		},
 
 		// Netherexp
@@ -985,10 +1053,6 @@ ItemEvents.tooltip(event => {
 			text: 'Used to catch butterflies'
 		},
 		{
-			items: /the_bumblezone:string_curtain/,
-			text: 'Can be extended downwards by right-clicking with a String'
-		},
-		{
 			items: /mcdw:soul_dagger/,
 			text: 'Attacks temporarily boost mana regeneration'
 		},
@@ -1089,9 +1153,8 @@ ItemEvents.tooltip(event => {
 		{ items: "evilcraft:colossal_blood_chest", text: "An industry-sized Blood Chest" },
 		{ items: "evilcraft:sanguinary_environmental_accumulator", text: "Craftable Environmental Accumulator" },
 		{ items: "evilcraft:flesh_rejuvenated", text: "Infinite source of food" },
-		{ items: "evilcraft:blood_extractor", text: ["Hold in inventory when slaying mobs.", "Shift + Right click to extract or auto-supply"] },
+		{ items: "evilcraft:blood_extractor", text: ["Hold in inventory when slaying mobs to fill it with Blood.", "Shift + Right click to extract or auto-supply"] },
 		{ items: "evilcraft:broom", text: "I think I'll try defying gravity" },
-		{ items: "evilcraft:hardened_blood_shard", text: "Break Hardened Blood with Flint and Steel" },
 		{ items: "evilcraft:dark_power_gem", text: "Throw a Dark Gem in the middle of a pool with at least five non-hardened Blood blocks. Or infuse a Dark Gem with blood" },
 		{ items: "evilcraft:blood_container", text: "DEPRECATED! Place in crafting grid to convert to a Dark Tank" },
 		{ items: "evilcraft:blook", text: "Can absorb item enchants when placed in the Purifier" },
@@ -1100,7 +1163,7 @@ ItemEvents.tooltip(event => {
 		{ items: "evilcraft:inverted_potentia_empowered", text: "Struck by lightning" },
 		{ items: "evilcraft:kineticator", text: ["Shift + Right click to toggle attraction.", "Right click to change area"] },
 		{ items: "evilcraft:kineticator_repelling", text: ["Shift + Right click to toggle repelling.", "Right click to change area"] },
-		{ items: "evilcraft:vengeance_ring", text: ["Might attract or summon Vengeance Spirits.", "Shift + Right click to toggle boost"] },
+		{ items: "evilcraft:vengeance_ring", text: ["Might attract or summon Vengeance Spirits"] },
 		{ items: "evilcraft:vengeance_focus", text: "Right click to enable Vengeance Spirit-freezing beam" },
 		{ items: "evilcraft:vengeance_pickaxe", text: "Might summon Vengeance Spirits" },
 		{ items: "evilcraft:burning_gem_stone", text: "Passively converts Vengeance Spirit damage to hunger" },

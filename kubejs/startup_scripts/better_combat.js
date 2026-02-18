@@ -36,9 +36,13 @@ if (Platform.isClientEnvironment()) {
 	global.playerAttackStart = (player, attackHand) => {
 		(() => {
 			if (!player) return;
-			switch (player.getMainHandItem().getId()) {
+			const id = player.getMainHandItem().getId();
+			switch (id) {
+				case 'zenith:zenith':
 				case 'botania:terra_sword': {
-					player.sendData('execute_terra_slash', {});
+					player.sendData('player_attack_start', {
+						weapon: id
+					});
 					break;
 				}
 			}

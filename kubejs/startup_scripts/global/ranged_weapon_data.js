@@ -37,6 +37,8 @@ global.bowDamage = {
 	'twilightforest:seeker_bow': [18, 0.06],
 	'twilightforest:ender_bow': 35,
 
+	'tide:starlight_bow': [30, 0.14, 0.2]
+
 }
 
 /**
@@ -74,6 +76,8 @@ global.arrowDamage = {
 	'alexscaves:seeking_arrow': 5,
 	'alexscaves:burrowing_arrow': 4,
 
+	'tide:star_arrow': 0,
+
 	'minecraft:trident': 21,
 	'cataclysm:ceraunus': 56,
 }
@@ -81,7 +85,9 @@ global.arrowDamage = {
 global.arrowPierce = {
 	'mythicmetals:runite_arrow': 1,
 	'mythicmetals:tipped_runite_arrow': 1,
-	'twilightforest:ice_arrow': 2,
+	'twilightforest:ice_arrow': 1,
+
+	'tide:star_arrow': 9,
 
 	// 'too_many_bows:frostbite_arrow': 2,
 

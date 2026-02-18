@@ -146,15 +146,15 @@
 				""
 				"Every weapon has new attack animations. &7You are probably familiar with those already, as they are present in every of the generic RPG modpacks (such as this one), so I am not going to talk about it."
 				""
-				"Jump attacks will &cno longer critically hit&f. &cCritical chance&r is a separate stat that now works off of chance. You start with &c5% base chance&r which you can increase with &6accessories&r and &aexperience&r (more on that one on the next page)."
+				"Jump attacks will &cno longer critically hit&f. &cCritical chance&r is a separate stat that now works off of chance. Every weapon has some built-in chance to &6perform a critical hit&r, dealing double damage."
+				""
+				"Critical chance can be increased with different armor sets, accessories, etc."
 				""
 				"{@pagebreak}"
 				""
-				"The &aExperience&r system has been altered a little."
+				"The &aExperience&r system has also been altered a little."
 				""
 				"You can only have up to &a50 levels&r at a time. You also &akeep more levels on death&r."
-				""
-				"Every &a4 levels&f your &cCrit Chance&f increases by 1%."
 				""
 				"{@pagebreak}"
 				""
@@ -215,24 +215,11 @@
 			id: "7D7F1AD28AE3CF50"
 			min_required_tasks: 1
 			subtitle: "Click to read"
-			tasks: [
-				{
-					id: "024212DF63502725"
-					item: {
-						Count: 1
-						id: "patchouli:guide_book"
-						tag: {
-							"patchouli:book": "via_romana:guide"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "44A6E7A76A3DD992"
-					item: "via_romana:charting_map"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "44A6E7A76A3DD992"
+				item: "via_romana:charting_map"
+				type: "item"
+			}]
 			title: "&l&fTutorial:&r &6Quick Travel"
 			x: 1.5d
 			y: -4.5d
@@ -271,38 +258,15 @@
 				""
 				"Having a &7Compass&r in your inventory will allow you to see your horizontal position again. Similarly, carrying a &6Depth Meter&r will allow you to see your vertical position. Both of these can be &eput into a Bundle&r and will &econtinue to work&r from inside of it."
 				""
-				"{@pagebreak}"
-				""
-				"If normal coordinates aren't doing it for you, try crafting an &6Atlas&r! It uses &eEmpty Maps&r to... well... map the locations you've been to. It's essentially both &ea minimap&r as well as &ea world map&r."
-				""
-				"If you run out of maps for it to use, you can add Empty Maps to the Atlas by &ecombining them in your crafting grid&r."
-				""
-				"You can &eput markers on your Atlas' map&r, &eright click Portals&r and &enamed Banners to add waypoints&r and probably do a lot more stuff that I was unable to figure out while playtesting."
+				"If normal coordinates aren't doing it for you, try crafting an &6Atlas&r! Having it in your inventory will unlock you a &eminimap&r and a &eworld map&r, both with the ability to set &ewaypoints&r."
 			]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					Parent: {
-						maps: [I; ]
-					}
-				}
-				id: "map_atlases:atlas"
-				tag: { }
-			}
+			icon: "kubejs:map_atlas"
 			id: "133F7123D4CC512B"
 			subtitle: "Click to read"
 			tasks: [
 				{
 					id: "49FB7CD04073A89E"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								maps: [I; ]
-							}
-						}
-						id: "map_atlases:atlas"
-					}
+					item: "kubejs:map_atlas"
 					type: "item"
 				}
 				{

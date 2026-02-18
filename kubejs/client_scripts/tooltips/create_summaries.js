@@ -1791,16 +1791,6 @@ const itemsToTooltip = [
 		]
 	},
 	{
-		item: "botania:terra_sword",
-		summary: [
-			"_A sword that fires a beam that damages mobs. ",
-			"The _Green Blade_, crafted from _Green Ingots_, is a sword infused with the strength of nature.",
-			"It's on par with a _Light Blue Sword_ in terms of raw power, and when swung, can sometimes fire a beam that will deal as much as a melee hit would.",
-			"Additionally, it can use _Mana_ for durability, much like _Blue Tools_ can.",
-			"No Broken Hero Sword"
-		]
-	},
-	{
 		item: "botania:terraform_rod",
 		summary: [
 			"_A rod for terraforming. ",
@@ -3744,6 +3734,18 @@ const itemsToTooltip = [
 	},
 
 	// EvilCraft
+	{
+		item: 'evilcraft:weather_container',
+		summary: [],
+		controls: [
+			{
+				control: 'tossed',
+				text: [
+					'Changes the current weather to whatever is stored inside'
+				]
+			}
+		]
+	},
 	{
 		item: "evilcraft:darkened_apple",
 		summary: [

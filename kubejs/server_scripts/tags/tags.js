@@ -18,7 +18,6 @@ ServerEvents.tags('item', tags => {
 		'minecraft:dragon_head',
 		'minecraft:piglin_head',
 		'minecraft:wither_skeleton_skull',
-		'the_bumblezone:flower_headgear',
 		'cataclysm:amptrgangr_head',
 		'cataclysm:draugr_head',
 		/_fossil_head/,
@@ -27,9 +26,9 @@ ServerEvents.tags('item', tags => {
 
 	])
 
-	tags.add('adj:fnaf_plushie', [
-		/fnaf_plushie_remastered:.*_plush/
-	])
+	// tags.add('adj:fnaf_plushie', [
+	// 	/fnaf_plushie_remastered:.*_plush/
+	// ])
 
 	tags.add('adj:blahaj/recolorable', [
 		'just_blahaj:white_blahaj',
@@ -457,8 +456,6 @@ ServerEvents.tags('worldgen/structure', tags => {
 // Fluid tags
 ServerEvents.tags('fluid', tags => {
 	tags.add('create:bottomless/allow', [
-		'the_bumblezone:sugar_water_still',
-		'the_bumblezone:honey_fluid_still',
 		'netherexp:ectoplasm'
 	])
 })

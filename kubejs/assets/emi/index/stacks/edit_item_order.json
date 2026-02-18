@@ -130,18 +130,6 @@
 		"item:quark:music_disc_wind",
 		"item:rediscovered:music_disc_calm4",
 		"item:supplementaries:music_disc_heave_ho",
-		"item:the_bumblezone:music_disc_a_last_first_last",
-		"item:the_bumblezone:music_disc_bee_laxing_with_the_hom_bees",
-		"item:the_bumblezone:music_disc_bee_ware_of_the_temple",
-		"item:the_bumblezone:music_disc_beenna_box",
-		"item:the_bumblezone:music_disc_drowning_in_despair",
-		"item:the_bumblezone:music_disc_flight_of_the_bumblebee_rimsky_korsakov",
-		"item:the_bumblezone:music_disc_honey_bee_rat_faced_boy",
-		"item:the_bumblezone:music_disc_knowing_renren",
-		"item:the_bumblezone:music_disc_la_bee_da_loca",
-		"item:the_bumblezone:music_disc_life_renren",
-		"item:the_bumblezone:music_disc_radiance_renren",
-		"item:the_bumblezone:music_disc_rivers_of_honey_moserao",
 		"item:twilightforest:music_disc_findings",
 		"item:twilightforest:music_disc_home",
 		"item:twilightforest:music_disc_maker",
@@ -205,14 +193,6 @@
 		"item:minecraft:skull_banner_pattern",
 		"item:neapolitan:chimpanzee_banner_pattern",
 		"item:supplementaries:dragon_banner_pattern",
-		"item:the_bumblezone:banner_pattern_arrows",
-		"item:the_bumblezone:banner_pattern_bee",
-		"item:the_bumblezone:banner_pattern_eyes",
-		"item:the_bumblezone:banner_pattern_honeycombs",
-		"item:the_bumblezone:banner_pattern_peace",
-		"item:the_bumblezone:banner_pattern_pluses",
-		"item:the_bumblezone:banner_pattern_sun",
-		"item:the_bumblezone:banner_pattern_swords",
 		"item:twilightforest:alpha_yeti_banner_pattern",
 		"item:twilightforest:hydra_banner_pattern",
 		"item:twilightforest:knight_phantom_banner_pattern",
@@ -758,12 +738,6 @@
 		"item:rediscovered:ranged_pigman_spawn_egg",
 		"item:rediscovered:steve_spawn_egg",
 		"item:rediscovered:zombie_pigman_spawn_egg",
-		"item:the_bumblezone:bee_queen_spawn_egg",
-		"item:the_bumblezone:beehemoth_spawn_egg",
-		"item:the_bumblezone:honey_slime_spawn_egg",
-		"item:the_bumblezone:rootmin_spawn_egg",
-		"item:the_bumblezone:sentry_watcher_spawn_egg",
-		"item:the_bumblezone:variant_bee_spawn_egg",
 		"item:tide:abyss_angler_spawn_egg",
 		"item:tide:alpha_fish_spawn_egg",
 		"item:tide:amber_rockfish_spawn_egg",
@@ -961,154 +935,68 @@
 		"item:witherstormmod:sickened_zombie_spawn_egg",
 		"item:witherstormmod:tentacle_spawn_egg",
 		"item:witherstormmod:withered_symbiont_spawn_egg",
-		"item:the_bumblezone:super_candle_netherexp:ancient",
 		"item:supplementaries:candle_holder_netherexp:ancient",
 		"item:suppsquared:gold_candle_holder_netherexp:ancient",
-		"item:the_bumblezone:super_candle_unusualend:citrine",
 		"item:supplementaries:candle_holder_unusualend:citrine",
 		"item:suppsquared:gold_candle_holder_unusualend:citrine",
-		"item:the_bumblezone:super_candle_magenta",
 		"item:supplementaries:candle_holder_magenta",
 		"item:suppsquared:gold_candle_holder_magenta",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_gray",
-		"item:supplementaries:candle_holder_the_bumblezone:super_gray",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_gray",
-		"item:the_bumblezone:super_candle_white",
 		"item:supplementaries:candle_holder_white",
 		"item:suppsquared:gold_candle_holder_white",
-		"item:the_bumblezone:super_candle_purple",
 		"item:supplementaries:candle_holder_purple",
 		"item:suppsquared:gold_candle_holder_purple",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_pink",
-		"item:supplementaries:candle_holder_the_bumblezone:super_pink",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_pink",
-		"item:the_bumblezone:super_candle_spelunkers_charm:candle_helmet",
 		"item:supplementaries:candle_holder_spelunkers_charm:candle_helmet",
 		"item:suppsquared:gold_candle_holder_spelunkers_charm:candle_helmet",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_light_blue",
-		"item:supplementaries:candle_holder_the_bumblezone:super_light_blue",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_light_blue",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_yellow",
-		"item:supplementaries:candle_holder_the_bumblezone:super_yellow",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_yellow",
-		"item:the_bumblezone:super_candle_twilightforest:skeleton_skull",
 		"item:supplementaries:candle_holder_twilightforest:skeleton_skull",
 		"item:suppsquared:gold_candle_holder_twilightforest:skeleton_skull",
-		"item:the_bumblezone:super_candle_netherexp:ancient_skeleton_skull",
 		"item:supplementaries:candle_holder_netherexp:ancient_skeleton_skull",
 		"item:suppsquared:gold_candle_holder_netherexp:ancient_skeleton_skull",
-		"item:the_bumblezone:super_candle_twilightforest:piglin_skull",
 		"item:supplementaries:candle_holder_twilightforest:piglin_skull",
 		"item:suppsquared:gold_candle_holder_twilightforest:piglin_skull",
-		"item:the_bumblezone:super_candle_light_blue",
 		"item:supplementaries:candle_holder_light_blue",
 		"item:suppsquared:gold_candle_holder_light_blue",
-		"item:the_bumblezone:super_candle_blue",
 		"item:supplementaries:candle_holder_blue",
 		"item:suppsquared:gold_candle_holder_blue",
-		"item:the_bumblezone:super_candle_orange",
 		"item:supplementaries:candle_holder_orange",
 		"item:suppsquared:gold_candle_holder_orange",
-		"item:the_bumblezone:super_candle_the_bumblezone:super",
-		"item:supplementaries:candle_holder_the_bumblezone:super",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super",
-		"item:the_bumblezone:super_candle_light_gray",
 		"item:supplementaries:candle_holder_light_gray",
 		"item:suppsquared:gold_candle_holder_light_gray",
-		"item:the_bumblezone:super_candle_gray",
 		"item:supplementaries:candle_holder_gray",
 		"item:suppsquared:gold_candle_holder_gray",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_white",
-		"item:supplementaries:candle_holder_the_bumblezone:super_white",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_white",
-		"item:the_bumblezone:super_candle_red",
 		"item:supplementaries:candle_holder_red",
 		"item:suppsquared:gold_candle_holder_red",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_red",
-		"item:supplementaries:candle_holder_the_bumblezone:super_red",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_red",
-		"item:the_bumblezone:super_candle_pink",
 		"item:supplementaries:candle_holder_pink",
 		"item:suppsquared:gold_candle_holder_pink",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_green",
-		"item:supplementaries:candle_holder_the_bumblezone:super_green",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_green",
-		"item:the_bumblezone:super_candle_lime",
 		"item:supplementaries:candle_holder_lime",
 		"item:suppsquared:gold_candle_holder_lime",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_cyan",
-		"item:supplementaries:candle_holder_the_bumblezone:super_cyan",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_cyan",
-		"item:the_bumblezone:super_candle_netherexp:soul_skeleton_skull",
 		"item:supplementaries:candle_holder_netherexp:soul_skeleton_skull",
 		"item:suppsquared:gold_candle_holder_netherexp:soul_skeleton_skull",
-		"item:the_bumblezone:super_candle_netherexp:soul",
 		"item:supplementaries:candle_holder_netherexp:soul",
 		"item:suppsquared:gold_candle_holder_netherexp:soul",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_magenta",
-		"item:supplementaries:candle_holder_the_bumblezone:super_magenta",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_magenta",
-		"item:the_bumblezone:super_candle_black",
 		"item:supplementaries:candle_holder_black",
 		"item:suppsquared:gold_candle_holder_black",
-		"item:the_bumblezone:super_candle_twilightforest:zombie_skull",
 		"item:supplementaries:candle_holder_twilightforest:zombie_skull",
 		"item:suppsquared:gold_candle_holder_twilightforest:zombie_skull",
-		"item:the_bumblezone:super_candle_spelunkers_charm:candle_on_helmet",
 		"item:supplementaries:candle_holder_spelunkers_charm:candle_on_helmet",
 		"item:suppsquared:gold_candle_holder_spelunkers_charm:candle_on_helmet",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_light_gray",
-		"item:supplementaries:candle_holder_the_bumblezone:super_light_gray",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_light_gray",
-		"item:the_bumblezone:super_candle_brown",
 		"item:supplementaries:candle_holder_brown",
 		"item:suppsquared:gold_candle_holder_brown",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_purple",
-		"item:supplementaries:candle_holder_the_bumblezone:super_purple",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_purple",
-		"item:the_bumblezone:super_candle_yellow",
 		"item:supplementaries:candle_holder_yellow",
 		"item:suppsquared:gold_candle_holder_yellow",
-		"item:the_bumblezone:super_candle_twilightforest:player_skull",
 		"item:supplementaries:candle_holder_twilightforest:player_skull",
 		"item:suppsquared:gold_candle_holder_twilightforest:player_skull",
-		"item:the_bumblezone:super_candle_netherexp:treacherous",
 		"item:supplementaries:candle_holder_netherexp:treacherous",
 		"item:suppsquared:gold_candle_holder_netherexp:treacherous",
-		"item:the_bumblezone:super_candle_twilightforest:wither_skeleton_skull",
 		"item:supplementaries:candle_holder_twilightforest:wither_skeleton_skull",
 		"item:suppsquared:gold_candle_holder_twilightforest:wither_skeleton_skull",
-		"item:the_bumblezone:super_candle_twilightforest:creeper_skull",
 		"item:supplementaries:candle_holder_twilightforest:creeper_skull",
 		"item:suppsquared:gold_candle_holder_twilightforest:creeper_skull",
-		"item:the_bumblezone:super_candle",
 		"item:supplementaries:candle_holder",
 		"item:suppsquared:gold_candle_holder",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_lime",
-		"item:supplementaries:candle_holder_the_bumblezone:super_lime",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_lime",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_blue",
-		"item:supplementaries:candle_holder_the_bumblezone:super_blue",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_blue",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_brown",
-		"item:supplementaries:candle_holder_the_bumblezone:super_brown",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_brown",
-		"item:the_bumblezone:super_candle_netherexp:skeleton_skull",
 		"item:supplementaries:candle_holder_netherexp:skeleton_skull",
 		"item:suppsquared:gold_candle_holder_netherexp:skeleton_skull",
-		"item:the_bumblezone:super_candle_cyan",
 		"item:supplementaries:candle_holder_cyan",
 		"item:suppsquared:gold_candle_holder_cyan",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_orange",
-		"item:supplementaries:candle_holder_the_bumblezone:super_orange",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_orange",
-		"item:the_bumblezone:super_candle_the_bumblezone:potion",
-		"item:supplementaries:candle_holder_the_bumblezone:potion",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:potion",
-		"item:the_bumblezone:super_candle_the_bumblezone:super_black",
-		"item:supplementaries:candle_holder_the_bumblezone:super_black",
-		"item:suppsquared:gold_candle_holder_the_bumblezone:super_black",
-		"item:the_bumblezone:super_candle_green",
 		"item:supplementaries:candle_holder_green",
 		"item:suppsquared:gold_candle_holder_green",
 		"item:minecraft:oak_wood",
@@ -3153,7 +3041,6 @@
 		"item:v_slab_compat:aether/icestone_vertical_slab",
 		"item:v_slab_compat:create/cut_limestone_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/light_gray_terracotta_brick_vertical_slab",
-		"item:v_slab_compat:the_bumblezone/ancient_wax_compound_eyes_vertical_slab",
 		"item:v_slab_compat:ecologics/snow_brick_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/blue_shingle_vertical_slab",
 		"item:v_slab_compat:alexscaves/smooth_limestone_vertical_slab",
@@ -3219,9 +3106,7 @@
 		"item:v_slab_compat:ars_nouveau/gilded_sourcestone_mosaic_vertical_slab",
 		"item:v_slab_compat:botania/metamorphic_plains_stone_vertical_slab",
 		"item:v_slab_compat:botania/shimmerrock_vertical_slab",
-		"item:v_slab_compat:the_bumblezone/ancient_wax_bricks_vertical_slab",
 		"item:v_slab_compat:create/polished_cut_asurine_vertical_slab",
-		"item:v_slab_compat:the_bumblezone/ancient_wax_diamond_vertical_slab",
 		"item:v_slab_compat:create/small_deepslate_brick_vertical_slab",
 		"item:v_slab_compat:galosphere/polished_pink_salt_vertical_slab",
 		"item:v_slab_compat:vinery/dirt_vertical_slab",
@@ -3905,56 +3790,8 @@
 			"after": "item:rediscovered:music_disc_calm4"
 		},
 		{
-			"stack": "item:the_bumblezone:music_disc_a_last_first_last",
-			"after": "item:supplementaries:music_disc_heave_ho"
-		},
-		{
-			"stack": "item:the_bumblezone:music_disc_bee_laxing_with_the_hom_bees",
-			"after": "item:the_bumblezone:music_disc_a_last_first_last"
-		},
-		{
-			"stack": "item:the_bumblezone:music_disc_bee_ware_of_the_temple",
-			"after": "item:the_bumblezone:music_disc_bee_laxing_with_the_hom_bees"
-		},
-		{
-			"stack": "item:the_bumblezone:music_disc_beenna_box",
-			"after": "item:the_bumblezone:music_disc_bee_ware_of_the_temple"
-		},
-		{
-			"stack": "item:the_bumblezone:music_disc_drowning_in_despair",
-			"after": "item:the_bumblezone:music_disc_beenna_box"
-		},
-		{
-			"stack": "item:the_bumblezone:music_disc_flight_of_the_bumblebee_rimsky_korsakov",
-			"after": "item:the_bumblezone:music_disc_drowning_in_despair"
-		},
-		{
-			"stack": "item:the_bumblezone:music_disc_honey_bee_rat_faced_boy",
-			"after": "item:the_bumblezone:music_disc_flight_of_the_bumblebee_rimsky_korsakov"
-		},
-		{
-			"stack": "item:the_bumblezone:music_disc_knowing_renren",
-			"after": "item:the_bumblezone:music_disc_honey_bee_rat_faced_boy"
-		},
-		{
-			"stack": "item:the_bumblezone:music_disc_la_bee_da_loca",
-			"after": "item:the_bumblezone:music_disc_knowing_renren"
-		},
-		{
-			"stack": "item:the_bumblezone:music_disc_life_renren",
-			"after": "item:the_bumblezone:music_disc_la_bee_da_loca"
-		},
-		{
-			"stack": "item:the_bumblezone:music_disc_radiance_renren",
-			"after": "item:the_bumblezone:music_disc_life_renren"
-		},
-		{
-			"stack": "item:the_bumblezone:music_disc_rivers_of_honey_moserao",
-			"after": "item:the_bumblezone:music_disc_radiance_renren"
-		},
-		{
 			"stack": "item:twilightforest:music_disc_findings",
-			"after": "item:the_bumblezone:music_disc_rivers_of_honey_moserao"
+			"after": "item:supplementaries:music_disc_heave_ho"
 		},
 		{
 			"stack": "item:twilightforest:music_disc_home",
@@ -4205,40 +4042,8 @@
 			"after": "item:neapolitan:chimpanzee_banner_pattern"
 		},
 		{
-			"stack": "item:the_bumblezone:banner_pattern_arrows",
-			"after": "item:supplementaries:dragon_banner_pattern"
-		},
-		{
-			"stack": "item:the_bumblezone:banner_pattern_bee",
-			"after": "item:the_bumblezone:banner_pattern_arrows"
-		},
-		{
-			"stack": "item:the_bumblezone:banner_pattern_eyes",
-			"after": "item:the_bumblezone:banner_pattern_bee"
-		},
-		{
-			"stack": "item:the_bumblezone:banner_pattern_honeycombs",
-			"after": "item:the_bumblezone:banner_pattern_eyes"
-		},
-		{
-			"stack": "item:the_bumblezone:banner_pattern_peace",
-			"after": "item:the_bumblezone:banner_pattern_honeycombs"
-		},
-		{
-			"stack": "item:the_bumblezone:banner_pattern_pluses",
-			"after": "item:the_bumblezone:banner_pattern_peace"
-		},
-		{
-			"stack": "item:the_bumblezone:banner_pattern_sun",
-			"after": "item:the_bumblezone:banner_pattern_pluses"
-		},
-		{
-			"stack": "item:the_bumblezone:banner_pattern_swords",
-			"after": "item:the_bumblezone:banner_pattern_sun"
-		},
-		{
 			"stack": "item:twilightforest:alpha_yeti_banner_pattern",
-			"after": "item:the_bumblezone:banner_pattern_swords"
+			"after": "item:supplementaries:dragon_banner_pattern"
 		},
 		{
 			"stack": "item:twilightforest:hydra_banner_pattern",
@@ -6417,32 +6222,8 @@
 			"after": "item:rediscovered:steve_spawn_egg"
 		},
 		{
-			"stack": "item:the_bumblezone:bee_queen_spawn_egg",
-			"after": "item:rediscovered:zombie_pigman_spawn_egg"
-		},
-		{
-			"stack": "item:the_bumblezone:beehemoth_spawn_egg",
-			"after": "item:the_bumblezone:bee_queen_spawn_egg"
-		},
-		{
-			"stack": "item:the_bumblezone:honey_slime_spawn_egg",
-			"after": "item:the_bumblezone:beehemoth_spawn_egg"
-		},
-		{
-			"stack": "item:the_bumblezone:rootmin_spawn_egg",
-			"after": "item:the_bumblezone:honey_slime_spawn_egg"
-		},
-		{
-			"stack": "item:the_bumblezone:sentry_watcher_spawn_egg",
-			"after": "item:the_bumblezone:rootmin_spawn_egg"
-		},
-		{
-			"stack": "item:the_bumblezone:variant_bee_spawn_egg",
-			"after": "item:the_bumblezone:sentry_watcher_spawn_egg"
-		},
-		{
 			"stack": "item:tide:abyss_angler_spawn_egg",
-			"after": "item:the_bumblezone:variant_bee_spawn_egg"
+			"after": "item:rediscovered:zombie_pigman_spawn_egg"
 		},
 		{
 			"stack": "item:tide:alpha_fish_spawn_egg",
@@ -7229,600 +7010,256 @@
 			"after": "item:witherstormmod:tentacle_spawn_egg"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_netherexp:ancient",
-			"after": "item:netherexp:ancient_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_netherexp:ancient",
-			"after": "item:the_bumblezone:super_candle_netherexp:ancient"
+			"after": "item:netherexp:ancient_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_netherexp:ancient",
 			"after": "item:supplementaries:candle_holder_netherexp:ancient"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_unusualend:citrine",
-			"after": "item:unusualend:citrine_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_unusualend:citrine",
-			"after": "item:the_bumblezone:super_candle_unusualend:citrine"
+			"after": "item:unusualend:citrine_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_unusualend:citrine",
 			"after": "item:supplementaries:candle_holder_unusualend:citrine"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_magenta",
-			"after": "item:minecraft:magenta_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_magenta",
-			"after": "item:the_bumblezone:super_candle_magenta"
+			"after": "item:minecraft:magenta_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_magenta",
 			"after": "item:supplementaries:candle_holder_magenta"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_gray",
-			"after": "item:the_bumblezone:super_candle_gray"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_gray",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_gray"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_gray",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_gray"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_white",
-			"after": "item:minecraft:white_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_white",
-			"after": "item:the_bumblezone:super_candle_white"
+			"after": "item:minecraft:white_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_white",
 			"after": "item:supplementaries:candle_holder_white"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_purple",
-			"after": "item:minecraft:purple_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_purple",
-			"after": "item:the_bumblezone:super_candle_purple"
+			"after": "item:minecraft:purple_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_purple",
 			"after": "item:supplementaries:candle_holder_purple"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_pink",
-			"after": "item:the_bumblezone:super_candle_pink"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_pink",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_pink"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_pink",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_pink"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_spelunkers_charm:candle_helmet",
-			"after": "item:spelunkers_charm:candle_helmet"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_spelunkers_charm:candle_helmet",
-			"after": "item:the_bumblezone:super_candle_spelunkers_charm:candle_helmet"
+			"after": "item:spelunkers_charm:candle_helmet"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_spelunkers_charm:candle_helmet",
 			"after": "item:supplementaries:candle_holder_spelunkers_charm:candle_helmet"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_light_blue",
-			"after": "item:the_bumblezone:super_candle_light_blue"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_light_blue",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_light_blue"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_light_blue",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_light_blue"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_yellow",
-			"after": "item:the_bumblezone:super_candle_yellow"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_yellow",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_yellow"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_yellow",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_yellow"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_twilightforest:skeleton_skull",
-			"after": "item:twilightforest:skeleton_skull_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_twilightforest:skeleton_skull",
-			"after": "item:the_bumblezone:super_candle_twilightforest:skeleton_skull"
+			"after": "item:twilightforest:skeleton_skull_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_twilightforest:skeleton_skull",
 			"after": "item:supplementaries:candle_holder_twilightforest:skeleton_skull"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_netherexp:ancient_skeleton_skull",
-			"after": "item:netherexp:ancient_skeleton_skull_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_netherexp:ancient_skeleton_skull",
-			"after": "item:the_bumblezone:super_candle_netherexp:ancient_skeleton_skull"
+			"after": "item:netherexp:ancient_skeleton_skull_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_netherexp:ancient_skeleton_skull",
 			"after": "item:supplementaries:candle_holder_netherexp:ancient_skeleton_skull"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_twilightforest:piglin_skull",
-			"after": "item:twilightforest:piglin_skull_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_twilightforest:piglin_skull",
-			"after": "item:the_bumblezone:super_candle_twilightforest:piglin_skull"
+			"after": "item:twilightforest:piglin_skull_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_twilightforest:piglin_skull",
 			"after": "item:supplementaries:candle_holder_twilightforest:piglin_skull"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_light_blue",
-			"after": "item:minecraft:light_blue_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_light_blue",
-			"after": "item:the_bumblezone:super_candle_light_blue"
+			"after": "item:minecraft:light_blue_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_light_blue",
 			"after": "item:supplementaries:candle_holder_light_blue"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_blue",
-			"after": "item:minecraft:blue_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_blue",
-			"after": "item:the_bumblezone:super_candle_blue"
+			"after": "item:minecraft:blue_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_blue",
 			"after": "item:supplementaries:candle_holder_blue"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_orange",
-			"after": "item:minecraft:orange_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_orange",
-			"after": "item:the_bumblezone:super_candle_orange"
+			"after": "item:minecraft:orange_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_orange",
 			"after": "item:supplementaries:candle_holder_orange"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super",
-			"after": "item:the_bumblezone:super_candle"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_light_gray",
-			"after": "item:minecraft:light_gray_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_light_gray",
-			"after": "item:the_bumblezone:super_candle_light_gray"
+			"after": "item:minecraft:light_gray_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_light_gray",
 			"after": "item:supplementaries:candle_holder_light_gray"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_gray",
-			"after": "item:minecraft:gray_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_gray",
-			"after": "item:the_bumblezone:super_candle_gray"
+			"after": "item:minecraft:gray_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_gray",
 			"after": "item:supplementaries:candle_holder_gray"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_white",
-			"after": "item:the_bumblezone:super_candle_white"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_white",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_white"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_white",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_white"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_red",
-			"after": "item:minecraft:red_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_red",
-			"after": "item:the_bumblezone:super_candle_red"
+			"after": "item:minecraft:red_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_red",
 			"after": "item:supplementaries:candle_holder_red"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_red",
-			"after": "item:the_bumblezone:super_candle_red"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_red",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_red"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_red",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_red"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_pink",
-			"after": "item:minecraft:pink_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_pink",
-			"after": "item:the_bumblezone:super_candle_pink"
+			"after": "item:minecraft:pink_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_pink",
 			"after": "item:supplementaries:candle_holder_pink"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_green",
-			"after": "item:the_bumblezone:super_candle_green"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_green",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_green"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_green",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_green"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_lime",
-			"after": "item:minecraft:lime_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_lime",
-			"after": "item:the_bumblezone:super_candle_lime"
+			"after": "item:minecraft:lime_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_lime",
 			"after": "item:supplementaries:candle_holder_lime"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_cyan",
-			"after": "item:the_bumblezone:super_candle_cyan"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_cyan",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_cyan"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_cyan",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_cyan"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_netherexp:soul_skeleton_skull",
-			"after": "item:netherexp:soul_skeleton_skull_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_netherexp:soul_skeleton_skull",
-			"after": "item:the_bumblezone:super_candle_netherexp:soul_skeleton_skull"
+			"after": "item:netherexp:soul_skeleton_skull_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_netherexp:soul_skeleton_skull",
 			"after": "item:supplementaries:candle_holder_netherexp:soul_skeleton_skull"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_netherexp:soul",
-			"after": "item:netherexp:soul_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_netherexp:soul",
-			"after": "item:the_bumblezone:super_candle_netherexp:soul"
+			"after": "item:netherexp:soul_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_netherexp:soul",
 			"after": "item:supplementaries:candle_holder_netherexp:soul"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_magenta",
-			"after": "item:the_bumblezone:super_candle_magenta"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_magenta",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_magenta"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_magenta",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_magenta"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_black",
-			"after": "item:minecraft:black_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_black",
-			"after": "item:the_bumblezone:super_candle_black"
+			"after": "item:minecraft:black_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_black",
 			"after": "item:supplementaries:candle_holder_black"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_twilightforest:zombie_skull",
-			"after": "item:twilightforest:zombie_skull_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_twilightforest:zombie_skull",
-			"after": "item:the_bumblezone:super_candle_twilightforest:zombie_skull"
+			"after": "item:twilightforest:zombie_skull_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_twilightforest:zombie_skull",
 			"after": "item:supplementaries:candle_holder_twilightforest:zombie_skull"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_spelunkers_charm:candle_on_helmet",
-			"after": "item:spelunkers_charm:candle_on_helmet"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_spelunkers_charm:candle_on_helmet",
-			"after": "item:the_bumblezone:super_candle_spelunkers_charm:candle_on_helmet"
+			"after": "item:spelunkers_charm:candle_on_helmet"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_spelunkers_charm:candle_on_helmet",
 			"after": "item:supplementaries:candle_holder_spelunkers_charm:candle_on_helmet"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_light_gray",
-			"after": "item:the_bumblezone:super_candle_light_gray"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_light_gray",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_light_gray"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_light_gray",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_light_gray"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_brown",
-			"after": "item:minecraft:brown_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_brown",
-			"after": "item:the_bumblezone:super_candle_brown"
+			"after": "item:minecraft:brown_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_brown",
 			"after": "item:supplementaries:candle_holder_brown"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_purple",
-			"after": "item:the_bumblezone:super_candle_purple"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_purple",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_purple"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_purple",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_purple"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_yellow",
-			"after": "item:minecraft:yellow_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_yellow",
-			"after": "item:the_bumblezone:super_candle_yellow"
+			"after": "item:minecraft:yellow_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_yellow",
 			"after": "item:supplementaries:candle_holder_yellow"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_twilightforest:player_skull",
-			"after": "item:twilightforest:player_skull_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_twilightforest:player_skull",
-			"after": "item:the_bumblezone:super_candle_twilightforest:player_skull"
+			"after": "item:twilightforest:player_skull_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_twilightforest:player_skull",
 			"after": "item:supplementaries:candle_holder_twilightforest:player_skull"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_netherexp:treacherous",
-			"after": "item:netherexp:treacherous_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_netherexp:treacherous",
-			"after": "item:the_bumblezone:super_candle_netherexp:treacherous"
+			"after": "item:netherexp:treacherous_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_netherexp:treacherous",
 			"after": "item:supplementaries:candle_holder_netherexp:treacherous"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_twilightforest:wither_skeleton_skull",
-			"after": "item:twilightforest:wither_skeleton_skull_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_twilightforest:wither_skeleton_skull",
-			"after": "item:the_bumblezone:super_candle_twilightforest:wither_skeleton_skull"
+			"after": "item:twilightforest:wither_skeleton_skull_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_twilightforest:wither_skeleton_skull",
 			"after": "item:supplementaries:candle_holder_twilightforest:wither_skeleton_skull"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_twilightforest:creeper_skull",
-			"after": "item:twilightforest:creeper_skull_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_twilightforest:creeper_skull",
-			"after": "item:the_bumblezone:super_candle_twilightforest:creeper_skull"
+			"after": "item:twilightforest:creeper_skull_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_twilightforest:creeper_skull",
 			"after": "item:supplementaries:candle_holder_twilightforest:creeper_skull"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle",
-			"after": "item:minecraft:candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder",
-			"after": "item:the_bumblezone:super_candle"
+			"after": "item:minecraft:candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder",
 			"after": "item:supplementaries:candle_holder"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_lime",
-			"after": "item:the_bumblezone:super_candle_lime"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_lime",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_lime"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_lime",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_lime"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_blue",
-			"after": "item:the_bumblezone:super_candle_blue"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_blue",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_blue"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_blue",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_blue"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_brown",
-			"after": "item:the_bumblezone:super_candle_brown"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_brown",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_brown"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_brown",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_brown"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_netherexp:skeleton_skull",
-			"after": "item:netherexp:skeleton_skull_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_netherexp:skeleton_skull",
-			"after": "item:the_bumblezone:super_candle_netherexp:skeleton_skull"
+			"after": "item:netherexp:skeleton_skull_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_netherexp:skeleton_skull",
 			"after": "item:supplementaries:candle_holder_netherexp:skeleton_skull"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_cyan",
-			"after": "item:minecraft:cyan_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_cyan",
-			"after": "item:the_bumblezone:super_candle_cyan"
+			"after": "item:minecraft:cyan_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_cyan",
 			"after": "item:supplementaries:candle_holder_cyan"
 		},
 		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_orange",
-			"after": "item:the_bumblezone:super_candle_orange"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_orange",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_orange"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_orange",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_orange"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:potion",
-			"after": "item:the_bumblezone:potion_candle"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:potion",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:potion"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:potion",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:potion"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_the_bumblezone:super_black",
-			"after": "item:the_bumblezone:super_candle_black"
-		},
-		{
-			"stack": "item:supplementaries:candle_holder_the_bumblezone:super_black",
-			"after": "item:the_bumblezone:super_candle_the_bumblezone:super_black"
-		},
-		{
-			"stack": "item:suppsquared:gold_candle_holder_the_bumblezone:super_black",
-			"after": "item:supplementaries:candle_holder_the_bumblezone:super_black"
-		},
-		{
-			"stack": "item:the_bumblezone:super_candle_green",
-			"after": "item:minecraft:green_candle"
-		},
-		{
 			"stack": "item:supplementaries:candle_holder_green",
-			"after": "item:the_bumblezone:super_candle_green"
+			"after": "item:minecraft:green_candle"
 		},
 		{
 			"stack": "item:suppsquared:gold_candle_holder_green",
@@ -15997,10 +15434,6 @@
 			"after": "item:hearth_and_home:light_gray_terracotta_brick_slab"
 		},
 		{
-			"stack": "item:v_slab_compat:the_bumblezone/ancient_wax_compound_eyes_vertical_slab",
-			"after": "item:the_bumblezone:ancient_wax_compound_eyes_slab"
-		},
-		{
 			"stack": "item:v_slab_compat:ecologics/snow_brick_vertical_slab",
 			"after": "item:ecologics:snow_brick_slab"
 		},
@@ -16261,16 +15694,8 @@
 			"after": "item:botania:shimmerrock_slab"
 		},
 		{
-			"stack": "item:v_slab_compat:the_bumblezone/ancient_wax_bricks_vertical_slab",
-			"after": "item:the_bumblezone:ancient_wax_bricks_slab"
-		},
-		{
 			"stack": "item:v_slab_compat:create/polished_cut_asurine_vertical_slab",
 			"after": "item:create:polished_cut_asurine_slab"
-		},
-		{
-			"stack": "item:v_slab_compat:the_bumblezone/ancient_wax_diamond_vertical_slab",
-			"after": "item:the_bumblezone:ancient_wax_diamond_slab"
 		},
 		{
 			"stack": "item:v_slab_compat:create/small_deepslate_brick_vertical_slab",
@@ -17209,324 +16634,324 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:curse_fool\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dark_nock\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:far_flung\", lvl:3s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:curse_mercy\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:plummeting_flight\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dark_nock\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:swiftwood\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:plummeting_flight\", lvl:3s}]}"
-		},
-		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:detonating_death\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:swiftwood\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:far_flung\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:field_extension\", lvl:4s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:explosive_flavor\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:detonating_death\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:enveloping_bubble\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:field_extension\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:twilight_perfection\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:enveloping_bubble\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:rapid_possession\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:twilight_perfection\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:straight_hook\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:rapid_possession\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:herd_phalanx\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:straight_hook\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dazing_sweep\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:herd_phalanx\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncy_ball\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dazing_sweep\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:double_stab\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncy_ball\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sightless\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:double_stab\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:solar\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sightless\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:precise_volley\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:solar\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:gamma_ray\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:precise_volley\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:soak_seeking\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:gamma_ray\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:flinging\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:soak_seeking\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:tsunami\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:flinging\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:humungous_hex\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:tsunami\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:taxing_bellow\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:humungous_hex\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:peppermint_punting\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:taxing_bellow\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sated_blade\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:peppermint_punting\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_split\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sated_blade\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:shaded_respite\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_split\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:ferrous_haste\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:shaded_respite\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seapairing\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:ferrous_haste\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:lasting_morale\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seapairing\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:arrow_inducting\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:lasting_morale\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncing_bolt\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:arrow_inducting\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:spell_lasting\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncing_bolt\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:explosive_flavor\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:spell_lasting\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:impending_stab\", lvl:3s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:explosive_flavor\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:crystallization\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:impending_stab\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:second_wave\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:crystallization\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sharp_cane\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:second_wave\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:targeted_ricochet\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sharp_cane\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seekcandy\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:targeted_ricochet\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:x_ray\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seekcandy\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bonking\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:x_ray\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_splash\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bonking\", lvl:1s}]}"
-		},
-		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sea_swing\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_splash\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:enveloping_bubble\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:multiple_mint\", lvl:2s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:taxing_bellow\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sea_swing\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:energy_efficiency\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:multiple_mint\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:charting_call\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:energy_efficiency\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:heavy_slam\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:charting_call\", lvl:4s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:crystallization\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:taxing_bellow\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:relentless_darkness\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:heavy_slam\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:crystallization\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:far_flung\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:charting_call\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:relentless_darkness\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:chomping_spirit\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:far_flung\", lvl:3s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:swiftwood\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:charting_call\", lvl:4s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:astral_transferring\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:lasting_morale\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:swiftwood\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:straight_hook\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:lasting_morale\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:targeted_ricochet\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:straight_hook\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:chomping_spirit\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:targeted_ricochet\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:solar\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:chomping_spirit\", lvl:2s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:lavawax\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:gamma_ray\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:solar\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:twilight_perfection\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:gamma_ray\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:peppermint_punting\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:twilight_perfection\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:heavy_slam\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:peppermint_punting\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bonking\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:heavy_slam\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:impending_stab\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bonking\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_split\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:impending_stab\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:flinging\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_split\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:plummeting_flight\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:flinging\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:arrow_inducting\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:plummeting_flight\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:field_extension\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:arrow_inducting\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:ferrous_haste\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:field_extension\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:spell_lasting\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:ferrous_haste\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:precise_volley\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:spell_lasting\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:herd_phalanx\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:precise_volley\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncy_ball\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:herd_phalanx\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:shaded_respite\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncy_ball\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:multiple_mint\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:shaded_respite\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:humungous_hex\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:multiple_mint\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dazing_sweep\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:humungous_hex\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:soak_seeking\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dazing_sweep\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sated_blade\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:soak_seeking\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_splash\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sated_blade\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seekcandy\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_splash\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seapairing\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seekcandy\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:second_wave\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seapairing\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:double_stab\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:second_wave\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:x_ray\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:double_stab\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:astral_transferring\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:x_ray\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sightless\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:astral_transferring\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:serpentfriend\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:lavawax\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sharp_cane\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sightless\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:energy_efficiency\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sharp_cane\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncing_bolt\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:energy_efficiency\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:rapid_possession\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncing_bolt\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:tsunami\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:rapid_possession\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dark_nock\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:tsunami\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:lavawax\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dark_nock\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:board_return\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:serpentfriend\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:lavawax\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:straddle_jump\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:serpentfriend\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:board_return\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:rejuvenation\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:straddle_jump\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:tethered_teleport\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:rejuvenation\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:gluttonous\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:tethered_teleport\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:magnetic\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:gluttonous\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:defusal\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:magnetic\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:shadow_hands\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:defusal\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:frost_fang\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:shadow_hands\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:herding\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:frost_fang\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:poison_resistance\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:herding\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:intimidation\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:poison_resistance\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:amphibious\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:intimidation\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:deflection\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:amphibious\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:speedster\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:deflection\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:total_recall\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:speedster\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:fireproof\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:total_recall\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:straddle_jump\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:serpentfriend\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:disc_jockey\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:fireproof\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:straddle_jump\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immunity_frame\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:total_recall\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:disc_jockey\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_siphon\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immunity_frame\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:total_recall\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:magnetic\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immunity_frame\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_boost\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_siphon\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:psychic_wall\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_boost\", lvl:3s}]}"
-		},
-		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:warping_bite\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:psychic_wall\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:magnetic\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:healing_aura\", lvl:2s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:intimidation\", lvl:2s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:warping_bite\", lvl:1s}]}"
 		},
 		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:defusal\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:intimidation\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:gluttonous\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:defusal\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:poison_resistance\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:gluttonous\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:psychic_wall\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:poison_resistance\", lvl:1s}]}"
+		},
+		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:chain_lightning\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:healing_aura\", lvl:2s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:psychic_wall\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:linked_inventory\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:chain_lightning\", lvl:2s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immaturity_curse\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:amphibious\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:linked_inventory\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:fireproof\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:amphibious\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:deflection\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:fireproof\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:herding\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:deflection\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:frost_fang\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:herding\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_siphon\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:frost_fang\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:tethered_teleport\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_siphon\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:rejuvenation\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:tethered_teleport\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:healing_aura\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:rejuvenation\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:speedster\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:healing_aura\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:shadow_hands\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:speedster\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_boost\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:shadow_hands\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immaturity_curse\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_boost\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:undead_curse\", lvl:1s}]}",
@@ -17541,32 +16966,32 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:infamy_curse\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:void_cloud\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:bubbling\", lvl:2s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blight_curse\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:vampire\", lvl:2s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:void_cloud\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:bubbling\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:muffled\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:void_cloud\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blazing_protection\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:vampire\", lvl:2s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:muffled\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:muffled\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:vampire\", lvl:2s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blazing_protection\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:ore_scenting\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:muffled\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:bubbling\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:ore_scenting\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:vampire\", lvl:2s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:charisma\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:bubbling\", lvl:2s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:ore_scenting\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:mana_boost\", lvl:3s}]}",
@@ -17657,80 +17082,64 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:spread_of_ailments\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:comb_cutter\", lvl:2s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:lucky_explorer\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:vengeance\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:hive_lifeline\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:comb_cutter\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:neurotoxins\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:hive_lifeline\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:potent_poison\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:neurotoxins\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rampaging\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"the_bumblezone:potent_poison\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_shot\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rampaging\", lvl:4s}]}"
-		},
-		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:echo\", lvl:5s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_shot\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:lucky_explorer\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:cowardice\", lvl:4s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_polarity\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:echo\", lvl:5s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_anti_entropy\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:cowardice\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_polarity\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_anti_entropy\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rapid_regen\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_polarity\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_strike\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rapid_regen\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:prospector\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_strike\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:radiance\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:prospector\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:lucky_explorer\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:radiance\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:committed\", lvl:5s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:lucky_explorer\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_shot\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_anti_entropy\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:reckless\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:committed\", lvl:5s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_shot\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:leeching\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:reckless\", lvl:4s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"additionaladditions:precision\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:radiance\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:leeching\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:cowardice\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:radiance\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:committed\", lvl:5s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:cowardice\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rapid_regen\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:committed\", lvl:5s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rampaging\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rapid_regen\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:prospector\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rampaging\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_strike\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:prospector\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"additionaladditions:precision\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_strike\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"additionaladditions:speed\", lvl:3s}]}",
@@ -17833,20 +17242,20 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:piercing\", lvl:4s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\", lvl:4s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:smite\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:binding_curse\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:smite\", lvl:4s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sharpness\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\", lvl:4s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:smite\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sharpness\", lvl:4s}]}"
-		},
-		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:unbreaking\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:smite\", lvl:4s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sharpness\", lvl:4s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:efficiency\", lvl:3s}]}",
@@ -17957,16 +17366,16 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:depth_strider\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:rupture\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:sustain\", lvl:3s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:aqua_affinity\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:sustain\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:rupture\", lvl:3s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:rupture\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:sustain\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:enfeeble\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:sustain\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:rupture\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"evilcraft:breaking\", lvl:3s}]}",
@@ -18129,18 +17538,6 @@
 		"/quark:music_disc_wind/",
 		"/rediscovered:music_disc_calm4/",
 		"/supplementaries:music_disc_heave_ho/",
-		"/the_bumblezone:music_disc_a_last_first_last/",
-		"/the_bumblezone:music_disc_bee_laxing_with_the_hom_bees/",
-		"/the_bumblezone:music_disc_bee_ware_of_the_temple/",
-		"/the_bumblezone:music_disc_beenna_box/",
-		"/the_bumblezone:music_disc_drowning_in_despair/",
-		"/the_bumblezone:music_disc_flight_of_the_bumblebee_rimsky_korsakov/",
-		"/the_bumblezone:music_disc_honey_bee_rat_faced_boy/",
-		"/the_bumblezone:music_disc_knowing_renren/",
-		"/the_bumblezone:music_disc_la_bee_da_loca/",
-		"/the_bumblezone:music_disc_life_renren/",
-		"/the_bumblezone:music_disc_radiance_renren/",
-		"/the_bumblezone:music_disc_rivers_of_honey_moserao/",
 		"/twilightforest:music_disc_findings/",
 		"/twilightforest:music_disc_home/",
 		"/twilightforest:music_disc_maker/",
@@ -18204,14 +17601,6 @@
 		"/minecraft:skull_banner_pattern/",
 		"/neapolitan:chimpanzee_banner_pattern/",
 		"/supplementaries:dragon_banner_pattern/",
-		"/the_bumblezone:banner_pattern_arrows/",
-		"/the_bumblezone:banner_pattern_bee/",
-		"/the_bumblezone:banner_pattern_eyes/",
-		"/the_bumblezone:banner_pattern_honeycombs/",
-		"/the_bumblezone:banner_pattern_peace/",
-		"/the_bumblezone:banner_pattern_pluses/",
-		"/the_bumblezone:banner_pattern_sun/",
-		"/the_bumblezone:banner_pattern_swords/",
 		"/twilightforest:alpha_yeti_banner_pattern/",
 		"/twilightforest:hydra_banner_pattern/",
 		"/twilightforest:knight_phantom_banner_pattern/",
@@ -18757,12 +18146,6 @@
 		"/rediscovered:ranged_pigman_spawn_egg/",
 		"/rediscovered:steve_spawn_egg/",
 		"/rediscovered:zombie_pigman_spawn_egg/",
-		"/the_bumblezone:bee_queen_spawn_egg/",
-		"/the_bumblezone:beehemoth_spawn_egg/",
-		"/the_bumblezone:honey_slime_spawn_egg/",
-		"/the_bumblezone:rootmin_spawn_egg/",
-		"/the_bumblezone:sentry_watcher_spawn_egg/",
-		"/the_bumblezone:variant_bee_spawn_egg/",
 		"/tide:abyss_angler_spawn_egg/",
 		"/tide:alpha_fish_spawn_egg/",
 		"/tide:amber_rockfish_spawn_egg/",
@@ -18960,154 +18343,68 @@
 		"/witherstormmod:sickened_zombie_spawn_egg/",
 		"/witherstormmod:tentacle_spawn_egg/",
 		"/witherstormmod:withered_symbiont_spawn_egg/",
-		"/the_bumblezone:super_candle_netherexp:ancient/",
 		"/supplementaries:candle_holder_netherexp:ancient/",
 		"/suppsquared:gold_candle_holder_netherexp:ancient/",
-		"/the_bumblezone:super_candle_unusualend:citrine/",
 		"/supplementaries:candle_holder_unusualend:citrine/",
 		"/suppsquared:gold_candle_holder_unusualend:citrine/",
-		"/the_bumblezone:super_candle_magenta/",
 		"/supplementaries:candle_holder_magenta/",
 		"/suppsquared:gold_candle_holder_magenta/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_gray/",
-		"/supplementaries:candle_holder_the_bumblezone:super_gray/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_gray/",
-		"/the_bumblezone:super_candle_white/",
 		"/supplementaries:candle_holder_white/",
 		"/suppsquared:gold_candle_holder_white/",
-		"/the_bumblezone:super_candle_purple/",
 		"/supplementaries:candle_holder_purple/",
 		"/suppsquared:gold_candle_holder_purple/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_pink/",
-		"/supplementaries:candle_holder_the_bumblezone:super_pink/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_pink/",
-		"/the_bumblezone:super_candle_spelunkers_charm:candle_helmet/",
 		"/supplementaries:candle_holder_spelunkers_charm:candle_helmet/",
 		"/suppsquared:gold_candle_holder_spelunkers_charm:candle_helmet/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_light_blue/",
-		"/supplementaries:candle_holder_the_bumblezone:super_light_blue/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_light_blue/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_yellow/",
-		"/supplementaries:candle_holder_the_bumblezone:super_yellow/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_yellow/",
-		"/the_bumblezone:super_candle_twilightforest:skeleton_skull/",
 		"/supplementaries:candle_holder_twilightforest:skeleton_skull/",
 		"/suppsquared:gold_candle_holder_twilightforest:skeleton_skull/",
-		"/the_bumblezone:super_candle_netherexp:ancient_skeleton_skull/",
 		"/supplementaries:candle_holder_netherexp:ancient_skeleton_skull/",
 		"/suppsquared:gold_candle_holder_netherexp:ancient_skeleton_skull/",
-		"/the_bumblezone:super_candle_twilightforest:piglin_skull/",
 		"/supplementaries:candle_holder_twilightforest:piglin_skull/",
 		"/suppsquared:gold_candle_holder_twilightforest:piglin_skull/",
-		"/the_bumblezone:super_candle_light_blue/",
 		"/supplementaries:candle_holder_light_blue/",
 		"/suppsquared:gold_candle_holder_light_blue/",
-		"/the_bumblezone:super_candle_blue/",
 		"/supplementaries:candle_holder_blue/",
 		"/suppsquared:gold_candle_holder_blue/",
-		"/the_bumblezone:super_candle_orange/",
 		"/supplementaries:candle_holder_orange/",
 		"/suppsquared:gold_candle_holder_orange/",
-		"/the_bumblezone:super_candle_the_bumblezone:super/",
-		"/supplementaries:candle_holder_the_bumblezone:super/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super/",
-		"/the_bumblezone:super_candle_light_gray/",
 		"/supplementaries:candle_holder_light_gray/",
 		"/suppsquared:gold_candle_holder_light_gray/",
-		"/the_bumblezone:super_candle_gray/",
 		"/supplementaries:candle_holder_gray/",
 		"/suppsquared:gold_candle_holder_gray/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_white/",
-		"/supplementaries:candle_holder_the_bumblezone:super_white/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_white/",
-		"/the_bumblezone:super_candle_red/",
 		"/supplementaries:candle_holder_red/",
 		"/suppsquared:gold_candle_holder_red/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_red/",
-		"/supplementaries:candle_holder_the_bumblezone:super_red/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_red/",
-		"/the_bumblezone:super_candle_pink/",
 		"/supplementaries:candle_holder_pink/",
 		"/suppsquared:gold_candle_holder_pink/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_green/",
-		"/supplementaries:candle_holder_the_bumblezone:super_green/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_green/",
-		"/the_bumblezone:super_candle_lime/",
 		"/supplementaries:candle_holder_lime/",
 		"/suppsquared:gold_candle_holder_lime/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_cyan/",
-		"/supplementaries:candle_holder_the_bumblezone:super_cyan/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_cyan/",
-		"/the_bumblezone:super_candle_netherexp:soul_skeleton_skull/",
 		"/supplementaries:candle_holder_netherexp:soul_skeleton_skull/",
 		"/suppsquared:gold_candle_holder_netherexp:soul_skeleton_skull/",
-		"/the_bumblezone:super_candle_netherexp:soul/",
 		"/supplementaries:candle_holder_netherexp:soul/",
 		"/suppsquared:gold_candle_holder_netherexp:soul/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_magenta/",
-		"/supplementaries:candle_holder_the_bumblezone:super_magenta/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_magenta/",
-		"/the_bumblezone:super_candle_black/",
 		"/supplementaries:candle_holder_black/",
 		"/suppsquared:gold_candle_holder_black/",
-		"/the_bumblezone:super_candle_twilightforest:zombie_skull/",
 		"/supplementaries:candle_holder_twilightforest:zombie_skull/",
 		"/suppsquared:gold_candle_holder_twilightforest:zombie_skull/",
-		"/the_bumblezone:super_candle_spelunkers_charm:candle_on_helmet/",
 		"/supplementaries:candle_holder_spelunkers_charm:candle_on_helmet/",
 		"/suppsquared:gold_candle_holder_spelunkers_charm:candle_on_helmet/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_light_gray/",
-		"/supplementaries:candle_holder_the_bumblezone:super_light_gray/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_light_gray/",
-		"/the_bumblezone:super_candle_brown/",
 		"/supplementaries:candle_holder_brown/",
 		"/suppsquared:gold_candle_holder_brown/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_purple/",
-		"/supplementaries:candle_holder_the_bumblezone:super_purple/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_purple/",
-		"/the_bumblezone:super_candle_yellow/",
 		"/supplementaries:candle_holder_yellow/",
 		"/suppsquared:gold_candle_holder_yellow/",
-		"/the_bumblezone:super_candle_twilightforest:player_skull/",
 		"/supplementaries:candle_holder_twilightforest:player_skull/",
 		"/suppsquared:gold_candle_holder_twilightforest:player_skull/",
-		"/the_bumblezone:super_candle_netherexp:treacherous/",
 		"/supplementaries:candle_holder_netherexp:treacherous/",
 		"/suppsquared:gold_candle_holder_netherexp:treacherous/",
-		"/the_bumblezone:super_candle_twilightforest:wither_skeleton_skull/",
 		"/supplementaries:candle_holder_twilightforest:wither_skeleton_skull/",
 		"/suppsquared:gold_candle_holder_twilightforest:wither_skeleton_skull/",
-		"/the_bumblezone:super_candle_twilightforest:creeper_skull/",
 		"/supplementaries:candle_holder_twilightforest:creeper_skull/",
 		"/suppsquared:gold_candle_holder_twilightforest:creeper_skull/",
-		"/the_bumblezone:super_candle/",
 		"/supplementaries:candle_holder/",
 		"/suppsquared:gold_candle_holder/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_lime/",
-		"/supplementaries:candle_holder_the_bumblezone:super_lime/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_lime/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_blue/",
-		"/supplementaries:candle_holder_the_bumblezone:super_blue/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_blue/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_brown/",
-		"/supplementaries:candle_holder_the_bumblezone:super_brown/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_brown/",
-		"/the_bumblezone:super_candle_netherexp:skeleton_skull/",
 		"/supplementaries:candle_holder_netherexp:skeleton_skull/",
 		"/suppsquared:gold_candle_holder_netherexp:skeleton_skull/",
-		"/the_bumblezone:super_candle_cyan/",
 		"/supplementaries:candle_holder_cyan/",
 		"/suppsquared:gold_candle_holder_cyan/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_orange/",
-		"/supplementaries:candle_holder_the_bumblezone:super_orange/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_orange/",
-		"/the_bumblezone:super_candle_the_bumblezone:potion/",
-		"/supplementaries:candle_holder_the_bumblezone:potion/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:potion/",
-		"/the_bumblezone:super_candle_the_bumblezone:super_black/",
-		"/supplementaries:candle_holder_the_bumblezone:super_black/",
-		"/suppsquared:gold_candle_holder_the_bumblezone:super_black/",
-		"/the_bumblezone:super_candle_green/",
 		"/supplementaries:candle_holder_green/",
 		"/suppsquared:gold_candle_holder_green/",
 		"/minecraft:oak_wood/",
@@ -21152,7 +20449,6 @@
 		"/v_slab_compat:aether\\/icestone_vertical_slab/",
 		"/v_slab_compat:create\\/cut_limestone_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/light_gray_terracotta_brick_vertical_slab/",
-		"/v_slab_compat:the_bumblezone\\/ancient_wax_compound_eyes_vertical_slab/",
 		"/v_slab_compat:ecologics\\/snow_brick_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/blue_shingle_vertical_slab/",
 		"/v_slab_compat:alexscaves\\/smooth_limestone_vertical_slab/",
@@ -21218,9 +20514,7 @@
 		"/v_slab_compat:ars_nouveau\\/gilded_sourcestone_mosaic_vertical_slab/",
 		"/v_slab_compat:botania\\/metamorphic_plains_stone_vertical_slab/",
 		"/v_slab_compat:botania\\/shimmerrock_vertical_slab/",
-		"/v_slab_compat:the_bumblezone\\/ancient_wax_bricks_vertical_slab/",
 		"/v_slab_compat:create\\/polished_cut_asurine_vertical_slab/",
-		"/v_slab_compat:the_bumblezone\\/ancient_wax_diamond_vertical_slab/",
 		"/v_slab_compat:create\\/small_deepslate_brick_vertical_slab/",
 		"/v_slab_compat:galosphere\\/polished_pink_salt_vertical_slab/",
 		"/v_slab_compat:vinery\\/dirt_vertical_slab/",

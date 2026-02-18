@@ -1,5 +1,3 @@
- execute as @a[tag=adj.qd_can_reset,advancements={the_bumblezone:the_queens_desire/journeys_end=false}] run function adj:queens_desire_reset
-
 # I am running so few datapacks that I won't even bother with doing stuff like adj.marker
 execute as @e[type=marker] at @s run function adj:as_markers
 
