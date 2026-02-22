@@ -2,10 +2,10 @@
   "configVersion": 5,
   "perf": {
     "maxParticleAmount": 700,
-    "particleDensity": 60,
-    "particleStormDensity": 110,
+    "particleDensity": 35,
+    "particleStormDensity": 70,
     "particleDistance": 16,
-    "surfaceRange": 40
+    "surfaceRange": 32
   },
   "sound": {
     "rainVolume": 0.2,
@@ -14,7 +14,7 @@
     "blockVolume": 0.07
   },
   "wind": {
-    "strength": 0.4,
+    "strength": 0.3,
     "strengthVariance": 0.3,
     "gustFrequency": 0.2,
     "modulationSpeed": 0.04,
@@ -54,10 +54,10 @@
       "needsSkyAccess": true,
       "spawnPos": "SKY",
       "gravity": 0.9,
-      "windStrength": 0.5,
+      "windStrength": 0.3,
       "stormWindStrength": 1.0,
       "rotationAmount": 0.0,
-      "lifetime": 3000,
+      "lifetime": 1000,
       "opacity": 1.0,
       "size": 1.5,
       "constantScreenSize": false,

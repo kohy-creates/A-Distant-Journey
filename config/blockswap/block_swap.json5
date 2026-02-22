@@ -143,14 +143,6 @@
 		"quark:mossy_cobblestone_bricks_slab": "minecraft:mossy_cobblestone_slab",
 		"quark:mossy_cobblestone_bricks_stairs": "minecraft:mossy_cobblestone_stairs",
 		"quark:mossy_cobblestone_bricks_wall": "minecraft:mossy_cobblestone_wall",
-
-		// "quark:oak_chest": "minecraft:chest",
-		// "quark:spruce_chest": "minecraft:chest",
-		// "quark:birch_chest": "minecraft:chest",
-		// "quark:jungle_chest": "minecraft:chest",
-		// "quark:acacia_chest": "minecraft:chest",
-		// "quark:dark_oak_chest": "minecraft:chest",
-		// "quark:mangrove_chest": "minecraft:chest",
 		
 		"quark:lootr_oak_chest": "lootr:lootr_chest",
 		"quark:lootr_spruce_chest": "lootr:lootr_chest",
@@ -218,12 +210,6 @@
 		"quark:blue_blossom_leaf_carpet": "minecraft:cyan_carpet",
 		"quark:yellow_blossom_leaf_carpet": "minecraft:yellow_carpet",
 		"quark:orange_blossom_leaf_carpet": "minecraft:orange_carpet",
-
-		// "quark:potted_red_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
-		// "quark:potted_lavender_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
-		// "quark:potted_blue_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
-		// "quark:potted_yellow_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
-		// "quark:potted_orange_blossom_sapling": "minecraft:potted_flowering_azalea_bush",
 
 		"quark:carrot_crate": "farmersdelight:carrot_crate",
 		"quark:potato_crate": "farmersdelight:potato_crate",
@@ -357,8 +343,24 @@
 
 		"ancient_aether:grape_vine": "minecraft:air",
 		"aether_redux:fieldsproot_petals": "minecraft:air",
+		"quark:iron_rod": "minecraft:air",
 		"twilightforest:iron_ladder": "quark:iron_ladder",
 
-		// "snowrealmagic:snow": "minecraft:snow",
+		"quark:limestone_bricks_slab": "alexscaves:smooth_limestone_slab",
+		"quark:polished_limestone_slab": "alexscaves:smooth_limestone_slab",
+		"quark:polished_limestone_vertical_slab": "v_slab_compat:alexscaves/smooth_limestone_vertical_slab",
+		"quark:polished_limestone_stairs": "alexscaves:smooth_limestone_stairs",
+		"quark:limestone_pillar": "alexscaves:limestone_pillar",
+		"quark:limestone_stairs": "alexscaves:limestone_stairs",
+		"quark:limestone_bricks_stairs": "alexscaves:smooth_limestone_stairs",
+		"quark:chiseled_limestone_bricks": "alexscaves:limestone_chiseled",
+		"quark:polished_limestone": "alexscaves:smooth_limestone",
+		"quark:limestone_wall": "alexscaves:limestone_wall",
+		"quark:limestone_bricks_vertical_slab": "v_slab_compat:alexscaves/smooth_limestone_vertical_slab",
+		"quark:limestone_bricks": "alexscaves:smooth_limestone",
+		"quark:limestone": "alexscaves:limestone",
+		"quark:limestone_slab": "alexscaves:limestone_slab",
+		"quark:limestone_bricks_wall": "alexscaves:smooth_limestone_wall",
+		"quark:limestone_vertical_slab": "v_slab_compat:alexscaves/smooth_limestone_vertical_slab"
 	}
 }

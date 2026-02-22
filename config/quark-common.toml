@@ -58,7 +58,7 @@
 	"Ender Watcher" = true
 	"Feeding Trough" = false
 	Gravisand = true
-	"Iron Rod" = true
+	"Iron Rod" = false
 	"Metal Buttons" = true
 	"Obsidian Plate" = true
 	"Pistons Move Tile Entities" = true
@@ -1172,7 +1172,7 @@
 			Dimensions = ["minecraft:the_nether"]
 
 	[world.new_stone_types]
-		"Enable Limestone" = false
+		"Enable Limestone" = true
 		"Enable Jasper" = true
 		"Enable Shale" = true
 		"Enable Myalite" = true

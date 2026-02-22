@@ -186,7 +186,7 @@
 						value: "exposure:developed_film_rolls"
 					}
 				}
-				title: "Any #exposure:developed_film_rolls"
+				title: "Any Developed Film Roll"
 				type: "item"
 			}]
 			title: "Printing Process"

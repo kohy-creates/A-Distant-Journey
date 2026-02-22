@@ -31,10 +31,10 @@
 		basaltGeneratorEnabled = true
 		#.
 		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
-		stoneGeneratorEnabled = true
+		stoneGeneratorEnabled = false
 		#.
 		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
-		limestoneGeneratorEnabled = true
+		limestoneGeneratorEnabled = false
 		#.
 		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
 		scoriaGeneratorEnabled = true
@@ -45,5 +45,5 @@
 		#.
 		#Enables the generator. When disabled, the generator is replaced with unset generators. Make a backup before doing this.
 		#(Also requires deepslate generators datapack, https://modrinth.com/datapack/create-cobblestone-deepslate-generators)
-		cobbledDeepslateGeneratorEnabled = true
+		cobbledDeepslateGeneratorEnabled = false
 

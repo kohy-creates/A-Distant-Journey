@@ -831,7 +831,7 @@
 			}]
 			title: "DIAMONDS!"
 			x: 13.5d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4C1D62C4B13A0CE0"]
@@ -1771,7 +1771,7 @@
 					type: "item"
 				}
 			]
-			title: "Pizza Hunt!"
+			title: "Pizza Hunt"
 			x: 19.5d
 			y: 7.5d
 		}
@@ -2238,7 +2238,7 @@
 			id: "26A9109005EE03BF"
 			optional: true
 			shape: "rsquare"
-			subtitle: "Attune an Awakened Ender Pearl. It will now guide you to a specific structure"
+			subtitle: "Attune an Awakened Ender Pearl towards any target"
 			tasks: [{
 				id: "6B372FC31E51D4D5"
 				item: {
@@ -2482,7 +2482,7 @@
 		{
 			dependencies: ["3B047A7072164813"]
 			id: "6541FB163E3300CE"
-			subtitle: "Construct an Altar"
+			subtitle: "Construct an Aether Altar"
 			tasks: [{
 				id: "0BF0A396571796CD"
 				item: "aether:altar"
@@ -2750,22 +2750,11 @@
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft a Nether Reactor Core"
-			tasks: [
-				{
-					id: "1E11D05ACEC1F2D2"
-					item: "rediscovered:nether_reactor_core"
-					type: "item"
-				}
-				{
-					block: "rediscovered:nether_reactor_core"
-					block_type: 0
-					id: "2127CA9C9FEC69B2"
-					replace: false
-					replaced: "minecraft:air"
-					type: "questsadditions:place"
-					value: 1L
-				}
-			]
+			tasks: [{
+				id: "1E11D05ACEC1F2D2"
+				item: "rediscovered:nether_reactor_core"
+				type: "item"
+			}]
 			title: "Pocket Biome"
 			x: 26.011904761904745d
 			y: 9.523809523809504d
@@ -2793,6 +2782,7 @@
 		}
 		{
 			dependencies: ["3973363A1DC79F53"]
+			description: ["&7&lHINT: &rUnlike other Attuned Eyes, &ethis one works like a Compass&r."]
 			id: "6EC1FF01974E8D02"
 			subtitle: "Attune an Awakened Ender Pearl with rubies and follow it in the direction it opens"
 			tasks: [{
@@ -4147,6 +4137,7 @@
 		}
 		{
 			dependencies: ["236739201289D4DD"]
+			description: ["&7&lHINT: &rYou can barter with Piglins with &6Midas Gold Ingots&r ;)"]
 			id: "765297F2529419A9"
 			subtitle: "Barter for an Enchanted Midas Gold Block"
 			tasks: [{

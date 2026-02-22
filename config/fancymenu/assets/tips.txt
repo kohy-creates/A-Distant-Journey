@@ -84,3 +84,116 @@ Different arrow types, in addition to having different on-hit effects, have diff
 If an item can't be crafted through a Crafting Table, try finding it in other tabs in your recipe browser.
 Gravitite Ore is the easiest to find at the bottom of islands in the Aether.
 Don't forget to use accessories and improve them as you progress.
+Aerogel acts as an explosion-resistant, transparent block.
+Days in the Aether last 3 times longer than in the Overworld.
+Aether Altars can repair damaged items and enhance existing items. They use Ambrosium Shards as fuel.
+You can easily automate Ambrosium with Orechids - just give them some Holystone.
+Bouncy Cloud Blocks are a funny alternative to Launch Pads.
+Weird Cloud Blocks are sort of a polar opposite to Bouncy Cloud Blocks - they will push anything passing them down with extreme velocities.
+The Champs and Champettes are pretty baller.
+Always check your surroundings before entering a fight.
+Don't leave your house without closing the door.
+Cold Parachutes can be crafted with 4 Cloud Blocks.
+Don't fear the Creepers. They can't spawn outside of Caves.
+Dart Shooters can be crafted with Skyroot Planks and Golden Amber.
+Golden, Poison, and Enchanted Darts are not affected by gravity.
+'Easier' rarely equals to 'more fun'.
+Never dig straight down. Unless you know what you're doing.
+The best time to do anything is before it's too late. The earlier you do it, the earlier you're going to see the effects.
+If a drop looks too big, it probably is. Fall damage accumulates like crazy.
+Dungeons in The Aether can contain extremely powerful and unique rewards. They have various difficulties: from Bronze, Silver, Gold to Platinum.
+Gravitite can be forged into powerful armor and tools. The full armor set will negate fall damage and increase your jump strenght. The tools can levitate blocks with right-click.
+Never expect that nothing will happen while you're gone.
+The leaves of Golden Oak trees occasionally drop Golden Apples. Their logs also yield valuable Golden Amber.
+Golden Parachutes have 20 uses rather than one.
+You can harvest Aechor Plant's poison with Skyroot Buckets.
+Holystone tools occasionally generate Ambrosium Shards.
+Icestone freezes water into Ice and lava into Obsidian.
+Some chests are only pretending - they are mimics!
+You can always come back later and mine some more.
+Moa Eggs can be incubated into baby Moas with the Incubator.
+Baby Moas will stay put when right clicking them with a Nature Staff.
+Parachutes auto-activate when falling off an island in The Aether.
+Try submerging yourself in water while wearing Phoenix armor. Something comical will happen.
+Placing a Saddle on Flying Pigs turns them into a mount.
+You can craft a Mount Bell to be able to 'store' and recall your mount at any time.
+Be careful not to misclick when building portals.
+Quicksoil increases the speed of walking mobs and sliding items. It also prevents players from sneaking.
+Raw meat is not really better than no meat. All raw meat items have a chance to cause additional hunger loss!
+A Skyroot Remedy Bucket for poison can be obtained by enchanting poison.
+Always treat modders with respect. Even if the mod is mediocre at best.
+Don't take huge risks far from home, unless you don't value your inventory.
+Sheepuff occasionally puff their wool out, making them float.
+A shelter made of dirt is still a shelter.
+Slimes do exist... I think. In fact, they might even have an entire night dedicated to them...
+Always keep a spare stack of blocks in your inventory.
+The modpack is only as fun as you make it.
+When Valkyries are defeated they will drop a Victory Medal. With enough of them, you can challenge their Queen to a duel.
+Watch where you step - deep shafts can be anywhere.
+Cloud Blocks prevent fall damage when landed upon.
+Zanite tools gain strength the more they are used.
+Zephyrs shoot Snowballs with a force that can throw you off islands.
+Undead mobs are damaged by health potions and healed by damage potions.
+Zombies, Skeletons, and Spiders are all immune to poison damage.
+Villagers will become witches when struck by lightning. Similar behavior extends to a few other mobs as well!
+Hatching chicken eggs can spawn four chickens on very, very rare occasions.
+Lava will spread faster and further in The Nether.
+The Sun, Moon, and Stars all move towards the west.
+Zombies sometimes spawn with their head encased in Slime - useful if you need any for your contraptions!
+You can deflect Ghast Fireballs by attacking them.
+Spiders, Silverfish, Bees, Endermites, Shulkers and Creepers all take extra damage from Lurker's Bane enchantment.
+Large fossils are buried under swamps and deserts. Myths say they are relics of [REDACTED].
+Sneaking/Crouching will prevent you from falling off the side of blocks.
+Placing a Campfire beneath a Bee Nest will make those Bees passive.
+Lava Buckets can be used as fuel in the Furnace, smelting up to 100 items per Bucket.
+Old Wooden tools can be used as fuel in the Furnace.
+Most metal tools can be smelted back into half an ingot.
+Piglins really love gold. They seem extra fond of the special Midas Gold.
+The lower a dog's tail, the less health they have left.
+You can heal your tamed dogs by feeding them any meat.
+You can lure animals into following you by holding a food they like.
+Wet sponges will immediately dry when placed in The Nether.
+Boats have two passenger slots, of which one can be replaced with a Chest.
+Building a Boat is probably one of the funniest recipe changes I've made.
+Fun fact: Shulkers are considered a type of Golem.
+The instrument of a Note Block is determined by the block underneath it.
+Some mobs have innate defense points, even if they aren't wearing any armor.
+Undead mobs will not burn in daylight if they are wearing a helmet.
+Iron Golems can be healed with Iron Ingots. They also slowly regenerate life on their own.
+Turtles only drop scutes when a baby grows into an adult.
+Feeding baby animals will make them grow up faster.
+Snowballs will briefly freeze the mob they hit, slowing them down.
+Fishing up Crates is a good way of farming extra resources.
+By placing a boat in lava you can make a temporary platform.
+Creepers are afraid of cats and will run away from them.
+Falling blocks like sand and gravel instantly break when falling onto a torch.
+4 String or Cotton can be combined in a 2x2 crafting grid to make Wool.
+Barrels are a convenient alternative to chests.
+Chests and Barrels can be upgraded with resources, increasing their storage capacity.
+If a Skeleton's or Stray's arrow kills a Creeper, the Creeper drops a random music disc.
+A red mooshroom will become a brown mooshroom (and vice versa) when struck by lightning.
+Beds no longer explode in The Nether and The End. You can no longer cheese certain things, just get better.
+Some blocks can reduce fall damage. For example, Hay Bales and Beds.
+Interacting with a bed Bed will change your spawn point.
+You can sleep in a Bedroll to skip the night without changing your respawn location.
+Coarse Dirt can be converted into normal dirt by tilling it with a Hoe.
+Piglins are scared of Soul Fire, including Soul Torches, Soul Campfires and Soul Lanterns.
+Goats can be milked using a bucket. I actually didn't know that until I found out by accident.
+Be careful around Goats. They like to push players and other animals off cliffs.
+Pointed Dripstone placed below Lava will slowly drip lava particles, which can slowly fill Cauldrons placed underneath.
+Fish and Axolotls can be safely picked up using buckets.
+Renaming a bucket with a mob inside will rename that mob as well.
+Axolotls like to eat Tropical Fish.
+Honeycombs can be used to wax Copper Blocks, which prevents them from oxidizing.
+Azalea trees grow above Lush Cave. Digging down next to one will lead you to that biome!
+You cannot leave The End without defeating the Ender Dragon.. or dying.
+It takes roughly 4 minutes to break an obsidian block by hand.
+You can harvest infinite snowballs from a snow golem's trail.
+Mushrooms can only be placed on blocks where there's no direct sunlight.
+Hostile mobs cannot spawn in a mushroom biome.
+You can shear a Mooshroom to turn it into a normal Cow.
+Zombies dislike it when you stab them with a sword.
+If you stay under water too long you may drown.
+Like any items, buckets will burn in lava, but not when it is IN the bucket.
+Wither Skeletons are known to lose their heads.
+There is a small chance that an Endermite will spawn when an Enderpearl lands.

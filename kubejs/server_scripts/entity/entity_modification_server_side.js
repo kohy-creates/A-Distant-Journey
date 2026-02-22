@@ -112,8 +112,10 @@ function specialCase(entity) {
 /**
  * 
  * @param {Internal.LivingEntity_} entity 
+ * @param {boolean} isHardcore 
+ * @param {number} currentStage 
  */
-function setGear(entity, isHardcore) {
+function setGear(entity, isHardcore, currentStage) {
 	switch (entity.type) {
 		case 'minecraft:piglin': {
 			entity.setItemSlot('mainhand', weightedRandom({
@@ -125,9 +127,18 @@ function setGear(entity, isHardcore) {
 			break;
 		}
 
+		case 'minecraft:stray':
 		case 'minecraft:skeleton': {
 			if (entity.getLevel().getDimension() == 'minecraft:the_nether') {
-				entity.setItemSlot('mainhand', 'mcdw:bow_bonebow')
+				entity.setItemSlot('mainhand', weightedRandom({
+					'mcdw:bow_bonebow': 10,
+					'mcwd:bow_twisting_vine_bow': 4,
+					'mcwd:bow_twisting_weeping_bow': 4,
+				}))
+				entity.setDropChance('mainhand', 0.05)
+			}
+			else if (currentStage >= 3) {
+				entity.setItemSlot('mainhand', 'mcdw:bow_power_bow')
 			}
 			break;
 		}
@@ -147,7 +158,7 @@ function setGear(entity, isHardcore) {
 		case 'minecraft:husk':
 		case 'minecraft:zombie': {
 			entity.setItemSlot("mainhand", weightedRandom({
-				'minecraft:air': 44,
+				'minecraft:air': (isHardcore) ? 35 : 44,
 				'mythicmetals:copper_axe': 1,
 				'mythicmetals:copper_shovel': 2,
 				'mythicmetals:copper_hoe': 2,
@@ -159,7 +170,7 @@ function setGear(entity, isHardcore) {
 				entity.setDropChance("head", 1.0);
 			}
 
-			if (randomChance(15)) {
+			if (randomChance(12)) {
 				entity.setItemSlot('offhand', Item.of('torch', randomAmount(7, 15)));
 				entity.setDropChance("offhand", 1.0);
 			}
@@ -185,7 +196,8 @@ function setGear(entity, isHardcore) {
 		}
 
 		case 'twilightforest:skeleton_druid': {
-			entity.setItemSlot("mainhand", 'simplyswords:gold_scythe');
+			entity.setItemSlot("mainhand", 'simplyswords:mythicmetals_compat/bronze/bronze_scythe');
+			break;
 		}
 	}
 
@@ -249,7 +261,7 @@ EntityEvents.spawned((event) => {
 	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""))
 
 	scaleEntity(entity, currentStage)
-	setGear(entity, isHardcore)
+	setGear(entity, isHardcore, currentStage)
 	if (isHardcore) {
 		hardcoreModifications(entity)
 	};

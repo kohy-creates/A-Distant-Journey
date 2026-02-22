@@ -41,7 +41,7 @@
 
 	[block.blood_stain]
 		#The amount of blood per HP (2HP = 1 heart) of the max mob health that will be added to this blockState when a mob dies from fall damage.
-		bloodMBPerHP = 2
+		bloodMBPerHP = 4
 		#Blocks onto which no blood stains can be spawned. Regular expressions are allowed.
 		spawnBlacklist = ["tconstruct:.*"]
 		#If blood stains should be spawned on block entities.
@@ -69,7 +69,7 @@
 		#Item names that can not be repaired. Regular expressions are allowed.
 		itemBlacklist = ["minecraft:stick"]
 		#The amount Blood mB required for repairing one damage value.
-		mBPerDamage = 1
+		mBPerDamage = 2
 		#If the Blood Chest should add random bad enchants with a small chance to repairing items.
 		addRandomBadEnchants = true
 
@@ -89,7 +89,7 @@
 
 	[machine.spirit_furnace]
 		#How much mB per tick this furnace should consume.
-		mBPerTick = 25
+		mBPerTick = 10
 		#If the machine should play mob death sounds.
 		mobDeathSounds = true
 		#Custom mob drops. Maps entity names to a loot table resource location. Expects the format entityname|loottable. For example: 'minecraft:pig|minecraft:entities/sheep'
@@ -99,7 +99,7 @@
 		#How much mB per tick this furnace should consume for player spirit.
 		playerMBPerTick = 100
 		#The required amount of ticks for each HP for cooking an entity.
-		requiredTicksPerHp = 10
+		requiredTicksPerHp = 30
 		#How much mB per tick this furnace should consume for boss mob spirit.
 		bossMBPerTick = 250
 		#Custom player drops. Maps player UUID to an itemstack. Expects the format domain:itemname:amount:meta for items where amount and meta are optional.
@@ -111,7 +111,7 @@
 		#If the fluid should be rendered statically. Fluids won't be shown fluently, but more efficiently.
 		staticBlockRendering = false
 		#If creative versions for all fluids should be added to the creative tab.
-		creativeTabFluids = true
+		creativeTabFluids = false
 
 	[machine.spirit_reanimator]
 		#The required amount of ticks for each reanimation.
@@ -129,13 +129,13 @@
 		#The base amount of concurrent items that need to be available before efficiency can rise.
 		baseConcurrentItems = 1
 		#The amount of ticks required for repairing one damage value.
-		ticksPerDamage = 2
+		ticksPerDamage = 1
 		#The amount Blood mB required for repairing one damage value.
-		baseMBPerDamage = 1
+		baseMBPerDamage = 2
 
 	[machine.sang_envir_acc]
 		#The base blood usage in mB for recipes, this is multiplied with the cooldown time per recipe.
-		baseUsage = 50
+		baseUsage = 30
 
 [item]
 

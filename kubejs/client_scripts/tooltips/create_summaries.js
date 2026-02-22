@@ -749,10 +749,7 @@ const itemsToTooltip = [
 			"Once upon a time, _Elves_ shared the world with us _Minecraftians_.",
 			"Due to events unknown to us, they were banished back to their own world, _Alfheim_, never to return.",
 			"Experiments have been performed in an attempt to re-establish a connection between the two worlds, and a theoretical procedure for creating such a portal has been devised.",
-			"Actually creating this portal would prove to be an arduous task: quite a few unusual resources would be necessary.",
-			"The net requirements come down to 8 _Livingwood_ blocks, 3 _Glimmering Livingwood_ blocks, an _Elven Gateway Core_ (read on), and at least 2 _Mana Pools_ and _Natura Pylons_ (read on).",
-			"The _Livingwood_ blocks can be of any variant (logs or wood, stripped or not, etc.), so feel free to mix it up if you're feeling fancy.",
-			"Crafting the _Elven Gateway Core_..."
+			"Actually creating this portal would prove to be an arduous task: an _Alfthorne Sapling_ is the only way to create portals."
 		]
 	},
 	{
@@ -4005,11 +4002,11 @@ ItemEvents.tooltip((tooltip) => {
 				if (tooltipItem.hasOwnProperty("summary")) {
 					// define line number
 					tooltipItem.summary.forEach((line) => {
-						const lines = wrapText(line, 50);
-						lines.forEach((splitLine) => {
-							text.add(lineNumber, createFormattedTextObjectArray(splitLine));
+						const wrappedLines = wrapFormattedText(line, 50);
+						wrappedLines.forEach((formattedLine) => {
+							text.add(lineNumber, formattedLine);
 							lineNumber++;
-						})
+						});
 					});
 				}
 				// Add Controls
@@ -4026,7 +4023,7 @@ ItemEvents.tooltip((tooltip) => {
 						lineNumber++;
 						control.text.forEach((line) => {
 							let formattedTextObjectArray =
-								createFormattedTextObjectArray(line);
+								createFormattedSegments(line);
 							// Add a space before each line
 							formattedTextObjectArray.unshift(" ");
 							// Add the line to the tooltip
@@ -4042,6 +4039,9 @@ ItemEvents.tooltip((tooltip) => {
 	});
 });
 
+const colorOrange = 0xc7954b;
+const colorYellow = 0xeeda78;
+
 /**
  *
  * A function to create a formatted text object array
@@ -4050,52 +4050,59 @@ ItemEvents.tooltip((tooltip) => {
  * @param {line} A string of text to be formatted
  * @returns {textObjects} An array of text objects
  */
-function createFormattedTextObjectArray(line) {
-	// check if the first character is a _, if it is, the summary starts with a yellow text
+function createFormattedSegments(line) {
 	let startsInYellow = line.startsWith("_");
-	// remove the _ if it does
 	if (startsInYellow) {
 		line = line.substring(1);
 	}
-	// get the summary line and split it into an array
+
 	let lineContents = line.split("_");
-	// define an interator for the for each loop
 	let i = 0;
-	// Create an empty array for text objects to be added to
-	let textObjects = [];
+	let segments = [];
+
 	lineContents.forEach((textComponent) => {
-		// Every other text component is orange
 		let textColor = i % 2 == 0 ? colorOrange : colorYellow;
-		// Unless the summary starts with yellow
 		if (startsInYellow) {
 			textColor = i % 2 == 0 ? colorYellow : colorOrange;
 		}
-		// Add the text component and color it
-		let textObject = new Text().of(textComponent);
-		textObject.color(textColor);
-		textObjects.push(textObject);
+		segments.push({
+			text: textComponent,
+			color: textColor
+		});
 		i++;
 	});
-	return textObjects;
+
+	return segments;
 }
 
-const colorOrange = 0xc7954b;
-const colorYellow = 0xeeda78;
+function wrapFormattedText(line, maxLength) {
 
-function wrapText(str, maxLength) {
-	const words = str.split(' ');
+	let segments = createFormattedSegments(line);
+
 	let lines = [];
-	let currentLine = '';
+	let currentLine = [];
+	let currentLength = 0;
 
-	for (let word of words) {
-		if ((currentLine + word).length <= maxLength) {
-			currentLine += (currentLine ? ' ' : '') + word;
-		} else {
-			if (currentLine) lines.push(currentLine);
-			currentLine = word;
-		}
+	segments.forEach((segment) => {
+		const words = segment.text.split(/(\s+)/);
+		words.forEach((part) => {
+			const partLength = part.length;
+			if (partLength === 0) return;
+			if (currentLength + partLength > maxLength && currentLine.length > 0) {
+				lines.push(currentLine);
+				currentLine = [];
+				currentLength = 0;
+			}
+			let textObject = new Text().of(part);
+			textObject.color(segment.color);
+			currentLine.push(textObject);
+			currentLength += partLength;
+
+		});
+	});
+
+	if (currentLine.length > 0) {
+		lines.push(currentLine);
 	}
-
-	if (currentLine) lines.push(currentLine);
 	return lines;
 }

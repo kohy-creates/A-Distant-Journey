@@ -82,10 +82,10 @@
 	[client.boss_music]
 		#Toggles the Wither Storm boss theme. NOTE: this theme is from MC:SM and is subject to copyright.
 		#Default: false
-		playWitherStormTheme = true
+		playWitherStormTheme = false
 		#Toggles the Withered Symbiont theme, created for CWSM by Mar Mar.
 		#Default: true
-		playSymbiontTheme = true
+		playSymbiontTheme = false
 
 	#Instancing
 	[client.instancing]

@@ -6,21 +6,49 @@
 	group: "266DD5C3D1FE65EA"
 	icon: "create:andesite_alloy"
 	id: "50D5FA1B376C34B5"
-	images: [{
-		height: 1.75d
-		image: "toms_storage:block/cable_frame"
-		rotation: 45.0d
-		width: 1.75d
-		x: -0.5d
-		y: 6.5d
-	}]
+	images: [
+		{
+			height: 1.75d
+			image: "toms_storage:block/cable_frame"
+			rotation: 45.0d
+			width: 1.75d
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			height: 1.75d
+			image: "createutilities:block/void_casing"
+			rotation: 45.0d
+			width: 1.75d
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			height: 1.75d
+			image: "create_connected:block/fan_catalyst_core"
+			rotation: 45.0d
+			width: 1.75d
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			height: 1.75d
+			image: "create:block/symmetry_mirror"
+			rotation: 45.0d
+			width: 1.75d
+			x: 1.5d
+			y: 5.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["026E22A534C341CC"]
 			description: [
-				"&7&lHINT:&r Don't know how to operate any of the machine components? Hold &l&7W&r while hovering over the item in your inventory to &7&nPonder&r!"
+				"&7&lHINT:&r Don't know how to operate any of the machine components? Hold &7W&r while hovering over the item in your inventory to &7&nPonder&r! This will play a cutscene that will showcase how to use the block."
+				""
+				"Coming from someone who had no knowledge of how the &6Create&r mod worked when I was starting my journey into playing modpacks - &eit is completely possible to figure out what to do with just those Ponders&r. And some tiny hints from the achievement tree ;)"
 				""
 				"&7&o*In Patrick Star's voice* "
 				"          &r&7WE HAVE TECHNOLOGY."
@@ -87,8 +115,8 @@
 				type: "item"
 			}]
 			title: "Merry Go Round"
-			x: -0.5d
-			y: -2.5d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6F6E4CEDDF413E18"]
@@ -115,7 +143,7 @@
 				}
 			]
 			title: "Bonk!"
-			x: 3.0d
+			x: 4.5d
 			y: 1.0d
 		}
 		{
@@ -136,8 +164,8 @@
 				}
 			]
 			title: "Wind Maker"
-			x: 5.0d
-			y: 2.0d
+			x: 4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -180,7 +208,7 @@
 			}]
 			title: "It's Clobbering Time!"
 			x: -2.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6F6E4CEDDF413E18"]
@@ -192,7 +220,7 @@
 				type: "item"
 			}]
 			title: "Stay Loaded!"
-			x: 1.5d
+			x: 2.0d
 			y: 1.0d
 		}
 		{
@@ -216,7 +244,7 @@
 				}
 			]
 			title: "HYPERSPEED!!"
-			x: 1.5d
+			x: 2.0d
 			y: 2.5d
 		}
 		{
@@ -243,8 +271,8 @@
 				type: "item"
 			}]
 			title: "Wireless Device Patriot"
-			x: 3.0d
-			y: -0.5d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -277,29 +305,24 @@
 		}
 		{
 			dependencies: ["0288AADCBD95EB2D"]
-			id: "6A26A5A7164A715C"
-			subtitle: "Craft a Wrench"
-			tasks: [{
-				id: "2ED0D6E726A076B9"
-				item: "create:wrench"
-				type: "item"
-			}]
-			title: "Technomancer's Wand"
-			x: 3.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["0288AADCBD95EB2D"]
+			icon: "create:wrench"
 			id: "3AF5D7FFED311674"
-			subtitle: "Craft a set of Goggles"
-			tasks: [{
-				id: "53FE75172499F81D"
-				item: "create:goggles"
-				type: "item"
-			}]
-			title: "Steampunk Vision"
-			x: 4.0d
-			y: 2.5d
+			subtitle: "Craft some steampunker's essentials"
+			tasks: [
+				{
+					id: "53FE75172499F81D"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "28520C046BC40314"
+					item: "create:wrench"
+					type: "item"
+				}
+			]
+			title: "Technomantic!"
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["782BB3D700FBD243"]
@@ -315,8 +338,8 @@
 				type: "item"
 			}]
 			title: "Core of Technology"
-			x: -6.0d
-			y: 0.0d
+			x: -8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1FA28AA6F3F8D048"]
@@ -329,7 +352,7 @@
 			}]
 			title: "Mechanised!"
 			x: -0.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -344,8 +367,8 @@
 				type: "item"
 			}]
 			title: "NEVER Give Up (And Unload)"
-			x: -2.0d
-			y: 4.5d
+			x: -2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["57A550E2F3090147"]
@@ -391,7 +414,7 @@
 				type: "item"
 			}]
 			title: "Hyperspeed Plus"
-			x: 1.5d
+			x: 2.0d
 			y: 3.5d
 		}
 		{
@@ -418,11 +441,13 @@
 		{
 			dependencies: ["3393638E574BEB0D"]
 			id: "469D3A0EDD34A3DD"
+			subtitle: "Craft a Mechanical Belt"
 			tasks: [{
 				id: "0152C4C78E9EF518"
 				item: "create:belt_connector"
 				type: "item"
 			}]
+			title: "Conveyor Belts"
 			x: 2.0d
 			y: -3.0d
 		}
@@ -443,9 +468,9 @@
 				}
 				type: "item"
 			}]
-			title: "Heavy Weapons, I Love It!"
+			title: "Judge, Jury, EXECUTIONER!"
 			x: 1.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["74E81719E903F908"]
@@ -453,6 +478,7 @@
 			id: "1F26665F0A3C4065"
 			shape: "diamond"
 			size: 1.5d
+			subtitle: "Craft any Construction Wand"
 			tasks: [{
 				id: "475313D5F70C6DB2"
 				item: {
@@ -465,23 +491,30 @@
 				}
 				type: "item"
 			}]
+			title: "Abracadabra, Castle!"
 			x: -0.5d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0288AADCBD95EB2D"]
 			id: "6DE114694DBEDAF9"
+			subtitle: "Make yourself some good old Cardboard!"
 			tasks: [{
 				id: "22690B2D1BB11B6A"
 				item: "create:cardboard"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.0d
+			title: "You Can Build a Country Out Of This!"
+			x: 6.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["6DE114694DBEDAF9"]
 			icon: "create:cardboard_sword"
 			id: "616FF40D22D802A4"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Become THE warrior of Cardboard"
 			tasks: [
 				{
 					id: "72B62B46FBDE2B5F"
@@ -533,6 +566,181 @@
 					type: "item"
 				}
 			]
+			title: "I Fear NOTHING!"
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0288AADCBD95EB2D"]
+			id: "425B181E9952E9B4"
+			subtitle: "Craft a Chute"
+			tasks: [{
+				id: "21ED3E9E9D61A1A1"
+				item: "create:chute"
+				type: "item"
+			}]
+			title: "It Looks Like A Trash Can"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["28583EFCD06F1117"]
+			icon: "createutilities:void_tank"
+			icon_scale: 0.75d
+			id: "2B0A1D5A6C3DE343"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft all means of wireless transmission of materials"
+			tasks: [
+				{
+					id: "3D3C2D7C4B18A594"
+					item: "createutilities:void_chest"
+					type: "item"
+				}
+				{
+					id: "71101456C671E2E2"
+					item: "createutilities:void_motor"
+					type: "item"
+				}
+				{
+					id: "4616B2F2624B92A3"
+					item: "createutilities:void_tank"
+					type: "item"
+				}
+			]
+			title: "From Limbo!"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["105677C4F6A081CA"]
+			description: ["&7&lHINT: &rYou don't need &6Catalysts&r to enable Fan recipes (like e.g. &9Haunting&r), but they save some space and are safer to use than leaving open fires around."]
+			id: "41AAF22B7E5F60E6"
+			subtitle: "Make a Fan Catalyst"
+			tasks: [{
+				id: "29BACAA35F289154"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
+			title: "Compact!"
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["41AAF22B7E5F60E6"]
+			icon: "create_connected:fan_blasting_catalyst"
+			icon_scale: 0.75d
+			id: "4CFE9D721C7866BA"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft every Fan Catalyst variant"
+			tasks: [
+				{
+					id: "555F0C44C34FE783"
+					item: "create_connected:fan_blasting_catalyst"
+					type: "item"
+				}
+				{
+					id: "6301360E74852016"
+					item: "create_connected:fan_smoking_catalyst"
+					type: "item"
+				}
+				{
+					id: "032129606F417B5A"
+					item: "create_connected:fan_splashing_catalyst"
+					type: "item"
+				}
+				{
+					id: "67314806890383A3"
+					item: "create_connected:fan_haunting_catalyst"
+					type: "item"
+				}
+			]
+			title: "Industrial Elementalist"
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["74E81719E903F908"]
+			icon_scale: 0.75d
+			id: "33A6791C74B51E03"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Obtain a Wand of Symmetry"
+			tasks: [{
+				id: "53600F0AC574DEEE"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			title: "Forma Perfecta"
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["57A550E2F3090147"]
+			id: "78B17C7E84E71049"
+			subtitle: "Apply a Copper Ingot to a Stripped Log and make Copper Casing"
+			tasks: [{
+				id: "557D809E6DB3A1A3"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			title: "Copper Era"
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["78B17C7E84E71049"]
+			id: "46250305F85E7380"
+			subtitle: "Make a Spout to splash liquids onto items below"
+			tasks: [{
+				id: "5B3B09B7171C246E"
+				item: "create:spout"
+				type: "item"
+			}]
+			title: "Spoutnik"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["78B17C7E84E71049"]
+			icon: "create:fluid_pipe"
+			id: "6D0A8E49329601B1"
+			subtitle: "Make some Fluid Pipes"
+			tasks: [
+				{
+					id: "79DFCC50E77CC762"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "3E0C393449A4C3AC"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			title: "Fluid Manipulation"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0288AADCBD95EB2D"]
+			icon: "create:blaze_burner"
+			id: "245F2D587B782EDD"
+			subtitle: "Catch a Blaze into a Blaze Burner"
+			tasks: [
+				{
+					id: "7AFAFF796606D5CF"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					id: "6E2BC673E9C00F7F"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "Too Hot! Too Hot!!"
 			x: 6.5d
 			y: 1.0d
 		}

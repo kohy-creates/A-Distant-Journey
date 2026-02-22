@@ -42,7 +42,7 @@ StartupEvents.postInit(event => {
 
 		['botania:rune_air', 'botania:rune_mana'],
 		['botania:rune_mana', 'botanicadds:rune_tp'],
-		['botanicadds:rune_tp', 'botania:rune_energy'],
+		['botanicadds:rune_tp', 'botanicadds:rune_energy'],
 	];
 
 	// Detect available materials

@@ -891,3 +891,48 @@ global.scaleThroughChapters = [
 	'minecraft:iron_golem',
 	'minecraft:snow_golem'
 ]
+
+global.bossMobs = [
+	'minecraft:ender_dragon', // The Deviants' Unobstructed Light
+	'minecraft:wither', // Even If It's Forgotten by the World
+	'minecraft:warden', // No boss music
+	global.bossMobsNoTreasureBag,
+	global.bossMobsAddTreasureBag,
+]
+
+global.bossMobsAddTreasureBag = [
+	'botania:doppleganger', // Concealed Four Seasons (default form), Secret God Matara (Hardmode form)
+	'cataclysm:ignis', // Memento of the Avaricious Beast (1st Phase), Memento of All Living Organisms (2nd Phase) (both Gouyoku Ibun ver)
+	'cataclysm:netherite_monstrosity', // Tortoise Dragon (WBaWC ver)
+	'cataclysm:ender_guardian', // Joutounin of Ceramics
+	'cataclysm:the_harbinger', // Idolatrize World
+	'cataclysm:the_leviathan', // Corpse Voyage (UDoALG ver)
+	'cataclysm:ancient_remnant', // Ore From The Age of Gods
+	'cataclysm:maledictus', // Magus Night
+	'cataclysm:scylla', // Watatsuki's Spell Card ~ Divine Sea Battle
+	'unusualend:endstone_golem', // Lunatic Dreamer
+	'unusualend:enderblob_queen', // Pierrot of The Star Spangled Banner
+	'ars_nouveau:wilden_boss', // Prince Shoutoku's Pegasus (UDoALG ver)
+	'aether:slider', // The Reversed Wheel of Fortune
+	'aether:valkyrie_queen', // Old Yuanxian
+	'aether:sun_spirit', // Magic Straw-Hat Jizo
+	'ancient_aether:mutated_aechor_plant', // Futatsuiwa from Sado (UDoALG ver)
+	'lost_aether_content:aerwhale_king', // Hallucinations Atop a Bivalve 
+	'rediscovered:red_dragon', // Illusionary Joururi
+	'alexscaves:luxtructosaurus', // Seraphic Chicken (WBaWC ver)
+	'twilightforest:naga', // Cheat Against The Impossible Danmaku
+	'twilightforest:lich', // Might as Well Stake Your Life to Solve the Riddle
+	'twilightforest:minoshroom', // A Pair of Divine Beasts
+	'twilightforest:hydra', // Smoking Dragon
+	'twilightforest:knight_phantom', // The Path to Yomi Where None Turn Back
+	'twilightforest:ur_ghast', // Pure Furies
+	'twilightforest:alpha_yeti', // There's a Monster In The Woods
+	'twilightforest:snow_queen', // Hoshifuru Tenma no Yama (I forgot the English title lmao)
+	'aquamirae:captain_cornelia', // Captain Murasa (UFO ver)
+]
+
+global.bossMobsNoTreasureBag = [
+	'witherstormmod:command_block', // Fire's of Hokkai (when approaching), Because I'm Used to Being the Last One Left (WBaWC mix I found on youtube) (while fighting)
+	'witherstormmod:wither_storm', // No boss music
+	'witherstormmod:withered_symbiont', // Reminiscence of Deer-Hunting
+]

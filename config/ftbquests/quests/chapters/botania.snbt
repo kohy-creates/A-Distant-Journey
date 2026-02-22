@@ -20,7 +20,7 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: 20.0d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			height: 2.0d
@@ -87,15 +87,79 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: 17.5d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			height: 1.75d
 			image: "evilcraft:block/undead_log_top_stripped"
 			rotation: 45.0d
 			width: 1.75d
-			x: 1.5d
-			y: 0.5d
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			height: 1.75d
+			image: "evilcraft:block/blood_infuser_up"
+			rotation: 45.0d
+			width: 1.75d
+			x: 23.0d
+			y: -7.5d
+		}
+		{
+			color: 5810943
+			dependency: "1BD8220FB53E11D8"
+			height: 2.0d
+			image: "minecraft:item/spawn_egg"
+			rotation: 0.0d
+			width: 2.0d
+			x: 24.0d
+			y: -9.0d
+		}
+		{
+			dependency: "5B1E6DC773B2B75C"
+			height: 2.0d
+			image: "botania:item/rune_air"
+			rotation: 0.0d
+			width: 2.0d
+			x: 11.861503395679037d
+			y: -7.094588891373206d
+		}
+		{
+			dependency: "055D249C76639C5D"
+			height: 2.0d
+			image: "botania:item/rune_spring"
+			rotation: 0.0d
+			width: 2.0d
+			x: 12.932931967107614d
+			y: -5.880303177087491d
+		}
+		{
+			dependency: "3D3BA5103B3F9C89"
+			height: 2.0d
+			image: "botanicadds:item/rune_tp"
+			rotation: 0.0d
+			width: 2.0d
+			x: 14.111503395679037d
+			y: -7.130303177087491d
+		}
+		{
+			dependency: "67CBFE98BCA401BD"
+			height: 2.0d
+			image: "botania:item/rune_wrath"
+			rotation: 0.0d
+			width: 2.0d
+			x: 15.147217681393322d
+			y: -5.844588891373206d
+		}
+		{
+			color: 14549991
+			dependency: "1BD8220FB53E11D8"
+			height: 2.0d
+			image: "minecraft:item/spawn_egg_overlay"
+			rotation: 0.0d
+			width: 2.0d
+			x: 24.0d
+			y: -9.0d
 		}
 	]
 	order_index: 0
@@ -176,7 +240,7 @@
 				type: "item"
 			}]
 			title: "Bank of Magic"
-			x: 10.0d
+			x: 9.5d
 			y: 0.5d
 		}
 		{
@@ -200,10 +264,18 @@
 								Count: 1b
 								id: "botania:hydroangeas"
 							}
+							{
+								Count: 1b
+								id: "botanicadds:flowers/rainute"
+							}
+							{
+								Count: 1b
+								id: "botanicadds:flowers/glaciflora"
+							}
 						]
 					}
 				}
-				title: "Hydroangea or Endoflame"
+				title: "Hydroangea, Endoflame, Rainute or Glaciflora"
 				type: "item"
 			}]
 			title: "First Power Plant"
@@ -272,7 +344,7 @@
 			}]
 			title: "Smaller Storage"
 			x: 9.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["35B5E5B6F7CC021D"]
@@ -375,7 +447,7 @@
 				}
 			]
 			title: "Rune Collection: Four Elements"
-			x: 13.5d
+			x: 14.5d
 			y: -3.5d
 		}
 		{
@@ -410,7 +482,7 @@
 				}
 			]
 			title: "Rune Collection: Concealed Four Seasons"
-			x: 16.5d
+			x: 15.5d
 			y: -3.5d
 		}
 		{
@@ -460,7 +532,7 @@
 				}
 			]
 			title: "Rune Collection: Seven Deadly Sins"
-			x: 14.5d
+			x: 17.5d
 			y: -3.5d
 		}
 		{
@@ -490,7 +562,7 @@
 				}
 			]
 			title: "Rune Collection: Chaos and Harmony"
-			x: 15.5d
+			x: 16.5d
 			y: -3.5d
 		}
 		{
@@ -574,7 +646,7 @@
 		}
 		{
 			dependencies: ["5658376D04F1E8AE"]
-			icon: "botanicadds:elven_altar"
+			icon: "botania:elven_spreader"
 			id: "2592E5F46B3D4C5E"
 			optional: true
 			shape: "rsquare"
@@ -595,6 +667,11 @@
 					item: "botanicadds:dreaming_pool"
 					type: "item"
 				}
+				{
+					id: "29C1CB2148DF410C"
+					item: "botania:elven_spreader"
+					type: "item"
+				}
 			]
 			title: "Elven Upgrads"
 			x: 18.5d
@@ -602,6 +679,7 @@
 		}
 		{
 			dependencies: ["5658376D04F1E8AE"]
+			description: ["&7&lHINT: &rJust toss the items into the &aAlfheim Portal&r and let the elves do the rest."]
 			icon: "botania:dragonstone"
 			id: "4B3625869C4E7079"
 			subtitle: "Trade your infused items for their elven equivalents"
@@ -638,8 +716,8 @@
 				type: "item"
 			}]
 			title: "It's Portable Though!"
-			x: 11.0d
-			y: 2.0d
+			x: 10.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["54622828F37E8A7E"]
@@ -651,7 +729,7 @@
 				type: "item"
 			}]
 			title: "Corporeal"
-			x: 20.5d
+			x: 20.0d
 			y: 1.0d
 		}
 		{
@@ -735,7 +813,7 @@
 				}
 			]
 			x: 22.0d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
@@ -772,7 +850,7 @@
 			}]
 			title: "They Call Me Gaia"
 			x: 20.0d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
@@ -786,8 +864,8 @@
 				type: "item"
 			}]
 			title: "See More"
-			x: 12.0d
-			y: -1.0d
+			x: 11.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1807373293C4A183"]
@@ -828,13 +906,15 @@
 				""
 				"&6&lADJ &rfeatures 3 fairly popular magic mods - &dArs Nouveau&r, &aBotania&r, and &cEvilCraft&r. "
 				""
-				"&o&7Don't you even dare ask me about Iron's Spells...&r"
+				"&o&7Don't you even dare to ask me about Iron's Spells...&r"
 				"{@pagebreak}"
-				"Now here is the fun part. If you were even slightly familiar with all of them before - that's good! But in &6&lADJ&r, they all play much differently, so it doesn't really matter if you know or if you don't know what you are doing. All 3 are interconnected on pretty much every level, with their order of progression being flipped a bit."
+				"Now here is the fun part. If you were even slightly familiar with all of them before - that's good! But in &6&lADJ&r, they all play much differently, so it doesn't really matter whether you kno what you are doing, or whether you don't. "
 				""
-				"Have fun. I know I had designing all of that."
+				"All 3 are interconnected on pretty much every level, with their order of progression being flipped around a bit and spread throughout modpack progression."
+				""
+				"Have fun! I know I had plenty designing all of that."
 				"{@pagebreak}"
-				"&lP.S.&r Since none of the guide books for those mods are relevant anymore, I removed all of them. If you &6this achievement tree&r, &6recipe browser&r, &6item descriptions&r and &6common sense&r, you are more than capable of figuring everything out!"
+				"&7&l&oP.S.&r &o&7Since none of the guide books for those mods are relevant anymore (&2Lexica Botania&r&7&o, &6&oWorn Notebook&r&7&o, &8&oOrigins of Darkness&r&7&o), I removed all of them. If you combine &ethis achievement tree&r&7&o, your &erecipe browser&r&7&o, &eitem descriptions&r&7&o and some &ecommon sense&r&7&o, you are more than capable of figuring everything out yourself!"
 			]
 			icon_scale: 0.75d
 			id: "4BB4F54ACBA9F3A7"
@@ -888,7 +968,7 @@
 				type: "item"
 			}]
 			title: "Ritualist"
-			x: 14.0d
+			x: 13.5d
 			y: 0.5d
 		}
 		{
@@ -1016,7 +1096,7 @@
 				type: "item"
 			}]
 			title: "mana.jar"
-			x: 13.5d
+			x: 13.0d
 			y: 1.5d
 		}
 		{
@@ -1335,7 +1415,10 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["76DA5AEA27C3B576"]
+			dependencies: [
+				"76DA5AEA27C3B576"
+				"704371D70C883EEF"
+			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			icon: "kubejs:eye_of_arcanum"
@@ -1349,8 +1432,8 @@
 				type: "item"
 			}]
 			title: "Core of Magic"
-			x: 22.0d
-			y: 4.0d
+			x: 18.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["4BB4F54ACBA9F3A7"]
@@ -1472,25 +1555,20 @@
 					item: "botania:rafflowsia"
 					type: "item"
 				}
+				{
+					id: "72D9AFFA8929DBF6"
+					item: "window_box:queen_anelace"
+					type: "item"
+				}
+				{
+					id: "4ADF4DC4C102AB62"
+					item: "window_box:candysnuft"
+					type: "item"
+				}
 			]
 			title: "Amp Up The Game"
 			x: 12.0d
 			y: -2.0d
-		}
-		{
-			dependencies: ["35B5E5B6F7CC021D"]
-			id: "2D7BFE01824A0C6A"
-			optional: true
-			shape: "rsquare"
-			subtitle: "What even is the purpose of this thing?"
-			tasks: [{
-				id: "71CDEB988922B4FD"
-				item: "botania:pool_minecart"
-				type: "item"
-			}]
-			title: "Mana On Rails!"
-			x: 10.0d
-			y: 2.5d
 		}
 		{
 			dependencies: ["5CFAC77E43966C73"]
@@ -1552,7 +1630,7 @@
 			}]
 			title: "To The Sky!"
 			x: 17.5d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["30CABAA97495053C"]
@@ -1566,7 +1644,7 @@
 				type: "structure"
 			}]
 			title: "Temple Riders"
-			x: 3.5d
+			x: 3.0d
 			y: -4.0d
 		}
 		{
@@ -1629,7 +1707,7 @@
 				}
 			]
 			title: "My Little Sunshine"
-			x: 2.0d
+			x: 1.5d
 			y: -4.5d
 		}
 		{
@@ -1642,7 +1720,7 @@
 				type: "item"
 			}]
 			title: "Transforming Ecosystems"
-			x: 2.0d
+			x: 1.5d
 			y: -3.5d
 		}
 		{
@@ -1656,8 +1734,8 @@
 				type: "item"
 			}]
 			title: "A World of Nigthmares Never Seen Before"
-			x: 4.0d
-			y: -3.0d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1FDC7F34049BA9DB"]
@@ -1678,7 +1756,7 @@
 				}
 			]
 			title: "Evil Sealed Within"
-			x: 3.0d
+			x: 2.5d
 			y: -2.0d
 		}
 		{
@@ -1727,7 +1805,7 @@
 			]
 			title: "Nursing School"
 			x: 5.0d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3C3CD5B17FA9BF1F"]
@@ -1746,7 +1824,7 @@
 			}]
 			title: "Dark Arts 101"
 			x: 5.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["631C617E054BE4EF"]
@@ -1759,7 +1837,7 @@
 			}]
 			title: "It's Raining Blood"
 			x: 5.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["631C617E054BE4EF"]
@@ -1788,8 +1866,8 @@
 				}
 			]
 			title: "Empty Promises"
-			x: 4.0d
-			y: -1.0d
+			x: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["30CABAA97495053C"]
@@ -1808,7 +1886,7 @@
 			}]
 			title: "Vampirism"
 			x: 5.0d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["30CABAA97495053C"]
@@ -1826,8 +1904,8 @@
 				type: "item"
 			}]
 			title: "Blink and You'll Miss Me!"
-			x: 4.0d
-			y: -5.0d
+			x: 3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["4FB77EF920326066"]
@@ -1847,8 +1925,8 @@
 				type: "item"
 			}]
 			title: "Warp Network"
-			x: 3.0d
-			y: -6.0d
+			x: 2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["69E0CD80BEE3CA2E"]
@@ -2144,8 +2222,8 @@
 				}
 			]
 			title: "VENGEANCE!!!"
-			x: 3.0d
-			y: -1.0d
+			x: 2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2BA39149B3E2C1EA"]
@@ -2160,8 +2238,128 @@
 				type: "item"
 			}]
 			title: "Pain and Sorrow"
-			x: 1.5d
-			y: 0.5d
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["602FA24B60010322"]
+			id: "6250E2C5F4887068"
+			subtitle: "Plant an Exoflame to fuel your Furnaces (and Blaze Burners!)"
+			tasks: [{
+				block: "botania:exoflame"
+				block_type: 0
+				id: "28FDE94188C821EF"
+				replace: false
+				replaced: "minecraft:air"
+				type: "questsadditions:place"
+				value: 1L
+			}]
+			title: "Powah!"
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6013A3AD20AB6F78"]
+			id: "229B705AD7EA1F3A"
+			subtitle: "Plant a Bergamute to silence any nearby noise"
+			tasks: [{
+				block: "botania:bergamute"
+				block_type: 0
+				id: "6A5BFF83E58B0265"
+				replace: false
+				replaced: "minecraft:air"
+				type: "questsadditions:place"
+				value: 1L
+			}]
+			title: "Silencio!"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["602FA24B60010322"]
+			id: "11B25BA1F5DB0532"
+			subtitle: "Plant a Fallen Kanade"
+			tasks: [{
+				block: "botania:fallen_kanade"
+				block_type: 0
+				id: "5C68DEAF2A47B13B"
+				replace: false
+				replaced: "minecraft:air"
+				type: "questsadditions:place"
+				value: 1L
+			}]
+			title: "Healing Power"
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["54622828F37E8A7E"]
+			id: "2EEC4146ACBACBF9"
+			subtitle: "Craft a Life Imbuer"
+			tasks: [{
+				id: "63F1F7EDF1069477"
+				item: "botania:spawner_claw"
+				type: "item"
+			}]
+			title: "Constant Overdrive"
+			x: 21.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6CF9448B3FA32156"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "evilcraft:spirit_reanimator"
+			}
+			icon_scale: 0.75d
+			id: "1BD8220FB53E11D8"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Reanimate a captured Vengeance Spirit into a Spawn Egg"
+			tasks: [
+				{
+					id: "1403410DA587EB5B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "evilcraft:spirit_reanimator"
+					}
+					type: "item"
+				}
+				{
+					id: "54C28B6B894B2142"
+					item: "minecraft:allay_spawn_egg"
+					title: "Any Spawn Egg"
+					type: "item"
+				}
+			]
+			title: "Which Was First...?"
+			x: 23.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["475982941B714122"]
+			id: "71A3A4FEA5D416CB"
+			subtitle: "Craft a Chest that repairs your items in exchange for Blood"
+			tasks: [{
+				id: "060AFFA273A0641B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "evilcraft:blood_chest"
+				}
+				type: "item"
+			}]
+			title: "Blood Money Deals"
+			x: 5.0d
+			y: 2.5d
 		}
 	]
 	title: "World of Magic"

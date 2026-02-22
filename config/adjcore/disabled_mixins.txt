@@ -6,3 +6,4 @@ portb.biggerstacks.mixin.client.ItemRendererMixin
 com.bobvarioa.arsisbotania.mixin.ManaCapEventsMixin
 com.bobvarioa.arsisbotania.mixin.ManaUtilMixin
 info.partonetrain.botaniacombat.mixin.bettercombat.TerraBladeItemMixin
+net.dragonegg.moreburners.mixin.BasinCategoryMixin

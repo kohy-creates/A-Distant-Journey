@@ -118,11 +118,5 @@ config/skin-preferences.json
 config/quickskin-client.json
 emi.json
 moonlight-global-datapacks/
--emi.json
 foolproof.json
-journeymap/data/
-journeymap/icon/
-journeymap/server/
-journeymap/journeymap.log
-journeymap/colorpalette.json
-journeymap/colorpalette.html
+XaeroWaypoints_BACKUP*/

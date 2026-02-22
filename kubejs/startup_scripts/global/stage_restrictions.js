@@ -173,6 +173,7 @@ global.stageRestrictions = {
 		exceptions: [
 			/rediscovered\:large\_brick/,
 			/rediscovered\:brittle\_/,
+			'rediscovered:nether_reactor_core',
 			'rediscovered:purple_arrow',
 			/rediscovered\:studded/,
 			/rediscovered\:plate/,

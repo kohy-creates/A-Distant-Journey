@@ -10,7 +10,7 @@ EntityEvents.hurt((event) => {
 
 	const entity = event.getEntity();
 
-	if (global.bossMobsNoTreasureBag.includes(entity.getType())) {
+	if (global.bossMobsAddTreasureBag.includes(entity.getType())) {
 
 		const player = event.getSource().getActual();
 		if (player == null || !player.isPlayer()) return;
@@ -34,7 +34,7 @@ EntityEvents.hurt((event) => {
 EntityEvents.death((event) => {
 
 	const entity = event.getEntity();
-	if (!global.bossMobsNoTreasureBag.includes(entity.getType())) return;
+	if (!global.bossMobsAddTreasureBag.includes(entity.getType())) return;
 	const persistentData = entity.getPersistentData();
 
 	if (persistentData.playersToReward) {

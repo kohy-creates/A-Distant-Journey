@@ -17,6 +17,8 @@
 		"minecraft:shield",
 		"minecraft:enchanting_table",
 
+		"born_in_chaos_v1:mint_ice_cream",
+
 		"tide:depth_meter",
 
 		"neapolitan:chocolate_block",
@@ -640,6 +642,9 @@
 		"alexscaves:biome_treat",
 		"alexscaves:conversion_crucible",
 		"alexscaves:beholder",
+		// "alexscaves:vanilla_ice_cream_scoop",
+		// "alexscaves:chocolate_ice_cream_scoop",
+		// "alexscaves:strawberry_ice_cream_scoop",
 
 		"ars_nouveau:sorcerer_boots",
 		"ars_nouveau:sorcerer_leggings",
@@ -1082,30 +1087,11 @@
 		"botanicadds:elvenwood",
 		"botanicadds:elvenwood_log",
 
-		"create_things_and_misc:oak_sail",
-		"create_things_and_misc:birch_sail",
-		"create_things_and_misc:spruce_sail",
-		"create_things_and_misc:acacia_sail",
-		"create_things_and_misc:dark_oak_sail",
-		"create_things_and_misc:jungle_sail",
-		"create_things_and_misc:warped_sail",
-		"create_things_and_misc:crimson_sail",
-		"create_things_and_misc:mangrove_sail",
-		"create_things_and_misc:bamboo_sail",
-		"create_things_and_misc:cherry_sail",
-		"create_things_and_misc:copper_knife",
-		"create_things_and_misc:brass_knife",
-		"create_things_and_misc:zinc_knife",
-		"create_things_and_misc:neon_tube",
-		"create_things_and_misc:sticky_launcher",
-		"create_things_and_misc:brass_sticky_launcher",
-		"create_things_and_misc:spout_gun",
-		"create_things_and_misc:spout_gun_water",
-		"create_things_and_misc:spout_gun_lava",
-		"create_things_and_misc:spout_gun_chocolate",
-		"create_things_and_misc:spout_gun_honey",
-		"create_things_and_misc:spout_gun_glue",
-
+		"moreburners:copper_coil",
+		"moreburners:nickel_coil",
+		"moreburners:heat_upgrade",
+		"moreburners:induction_heater",
+		"createutilities:void_battery",
 		"createutilities:gearcube",
 
 		"etcetera:frame",
@@ -1138,10 +1124,9 @@
 
 		"evilcraft:obscured_glass",
 		"evilcraft:entangled_chalice",
-		"evilcraft:corrupted_chalice",
 		"evilcraft:origins_of_darkness",
 		"evilcraft:darkened_apple",
-		"evilcraft:efortless_ring",
+		"evilcraft:effortless_ring",
 		"evilcraft:corrupted_tear",
 
 		"window_box:bouquet",
@@ -1309,7 +1294,6 @@
 		"botania:lexica_botania",
 		
 		"ars_nouveau:glyph_craft",
-		"createutilities:void_battery",
 
 		"croptopia:walnut_sapling",
 		"croptopia:tomato",
@@ -1361,6 +1345,13 @@
 		"croptopia:chocolate",
 		"croptopia:banana",
 		"croptopia:banana_sapling",
+		"croptopia:chocolate_ice_cream",
+		"croptopia:strawberry_ice_cream",
+		"croptopia:vanilla_ice_cream",
+		"croptopia:rum_raisin_ice_cream",
+		"croptopia:vanilla_ice_cream",
+		"croptopia:pecan_ice_cream",
+		"croptopia:mango_ice_cream",
 
 		"cratedelight:sugar_bag",
 		"cratedelight:gunpowder_bag",
@@ -1534,7 +1525,28 @@
 		"morered:bitwise_or_gate",
 		"morered:bitwise_and_gate",
 		"morered:bitwise_xor_gate",
-		"morered:bitwise_xnor_gate"
+		"morered:bitwise_xnor_gate",
+
+		"create:cut_andesite_bricks",
+		"create:cut_andesite_brick_slab",
+		"create:cut_andesite_brick_stairs",
+		"create:cut_andesite_brick_wall",
+		"v_slab_compat:create/cut_andesite_brick_vertical_slab",
+		"create:cut_diorite_bricks",
+		"create:cut_diorite_brick_slab",
+		"create:cut_diorite_brick_stairs",
+		"create:cut_diorite_brick_wall",
+		"v_slab_compat:create/cut_diorite_brick_vertical_slab",
+		"create:cut_andesite_bricks",
+		"create:cut_andesite_brick_slab",
+		"create:cut_andesite_brick_stairs",
+		"create:cut_andesite_brick_wall",
+		"v_slab_compat:create/cut_andesite_brick_vertical_slab",
+		"create:cut_tuff_bricks",
+		"create:cut_tuff_brick_slab",
+		"create:cut_tuff_brick_stairs",
+		"create:cut_tuff_brick_wall",
+		"v_slab_compat:create/cut_tuff_brick_vertical_slab",
 		
 	],
 	// Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

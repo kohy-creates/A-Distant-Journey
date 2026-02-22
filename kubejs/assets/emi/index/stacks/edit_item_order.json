@@ -39,7 +39,7 @@
 		"item:create:experience_block",
 		"item:botania:rune_mana",
 		"item:botanicadds:rune_tp",
-		"item:botania:rune_energy",
+		"item:botanicadds:rune_energy",
 		"item:supplementaries:flag_pink",
 		"item:supplementaries:flag_purple",
 		"item:supplementaries:flag_brown",
@@ -2991,7 +2991,6 @@
 		"item:v_slab_compat:naturalist/shellstone_vertical_slab",
 		"item:v_slab_compat:create/polished_cut_scoria_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/light_blue_tile_vertical_slab",
-		"item:v_slab_compat:create_things_and_misc/brass_brick_vertical_slab",
 		"item:v_slab_compat:ars_nouveau/gilded_sourcestone_small_bricks_vertical_slab",
 		"item:v_slab_compat:create/cut_diorite_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/red_terracotta_brick_vertical_slab",
@@ -3287,7 +3286,6 @@
 		"item:v_slab_compat:galosphere/polished_rose_pink_salt_vertical_slab",
 		"item:v_slab_compat:phantasm/crystal_tiles_vertical_slab",
 		"item:v_slab_compat:botania/red_quartz_vertical_slab",
-		"item:v_slab_compat:create_things_and_misc/brass_tiles_vertical_slab",
 		"item:v_slab_compat:hearth_and_home/white_shingle_vertical_slab",
 		"item:v_slab_compat:create/cut_scorchia_vertical_slab",
 		"item:v_slab_compat:netherexp/basalt_vertical_slab",
@@ -3426,7 +3424,7 @@
 			"after": "item:botania:rune_mana"
 		},
 		{
-			"stack": "item:botania:rune_energy",
+			"stack": "item:botanicadds:rune_energy",
 			"after": "item:botanicadds:rune_tp"
 		},
 		{
@@ -15234,10 +15232,6 @@
 			"after": "item:hearth_and_home:light_blue_tile_slab"
 		},
 		{
-			"stack": "item:v_slab_compat:create_things_and_misc/brass_brick_vertical_slab",
-			"after": "item:create_things_and_misc:brass_brick_slab"
-		},
-		{
 			"stack": "item:v_slab_compat:ars_nouveau/gilded_sourcestone_small_bricks_vertical_slab",
 			"after": "item:ars_nouveau:gilded_sourcestone_small_bricks_slab"
 		},
@@ -16418,10 +16412,6 @@
 			"after": "item:botania:red_quartz_slab"
 		},
 		{
-			"stack": "item:v_slab_compat:create_things_and_misc/brass_tiles_vertical_slab",
-			"after": "item:create_things_and_misc:brass_tiles_slab"
-		},
-		{
 			"stack": "item:v_slab_compat:hearth_and_home/white_shingle_vertical_slab",
 			"after": "item:hearth_and_home:white_shingle_slab"
 		},
@@ -16634,324 +16624,324 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:curse_fool\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:far_flung\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:field_extension\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ensorcellation:curse_mercy\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:detonating_death\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:far_flung\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:explosive_flavor\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:detonating_death\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:enveloping_bubble\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:explosive_flavor\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sea_swing\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:enveloping_bubble\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:astral_transferring\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:field_extension\", lvl:4s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:taxing_bellow\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sea_swing\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:astral_transferring\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:crystallization\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:double_stab\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:taxing_bellow\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:relentless_darkness\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:crystallization\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:double_stab\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:charting_call\", lvl:4s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:second_wave\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:relentless_darkness\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:swiftwood\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:charting_call\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:lasting_morale\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:swiftwood\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:straight_hook\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:lasting_morale\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:targeted_ricochet\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:straight_hook\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:chomping_spirit\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:targeted_ricochet\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sharp_cane\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:second_wave\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:solar\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:chomping_spirit\", lvl:2s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sharp_cane\", lvl:2s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:gamma_ray\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:herd_phalanx\", lvl:3s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:solar\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:twilight_perfection\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:gamma_ray\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:swiftwood\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:herd_phalanx\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:peppermint_punting\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:twilight_perfection\", lvl:3s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:tsunami\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:swiftwood\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:heavy_slam\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:peppermint_punting\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_splash\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:tsunami\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:multiple_mint\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_splash\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sated_blade\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:multiple_mint\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:enveloping_bubble\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sated_blade\", lvl:2s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bonking\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:heavy_slam\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:enveloping_bubble\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:impending_stab\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seekcandy\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bonking\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_split\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:impending_stab\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:flinging\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_split\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:plummeting_flight\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:flinging\", lvl:3s}]}"
-		},
-		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:arrow_inducting\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:plummeting_flight\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seekcandy\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:field_extension\", lvl:4s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:straight_hook\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:arrow_inducting\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:ferrous_haste\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:field_extension\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:spell_lasting\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:ferrous_haste\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:precise_volley\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:spell_lasting\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:herd_phalanx\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:precise_volley\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:straight_hook\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncy_ball\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:herd_phalanx\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:shaded_respite\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncy_ball\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:multiple_mint\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:shaded_respite\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:ferrous_haste\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:humungous_hex\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:multiple_mint\", lvl:2s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncy_ball\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dazing_sweep\", lvl:2s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:peppermint_punting\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:humungous_hex\", lvl:2s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:soak_seeking\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dazing_sweep\", lvl:2s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:spell_lasting\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:peppermint_punting\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sated_blade\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:soak_seeking\", lvl:3s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:gamma_ray\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:spell_lasting\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_splash\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sated_blade\", lvl:2s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:detonating_death\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:gamma_ray\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seekcandy\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_splash\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:shaded_respite\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:detonating_death\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seapairing\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seekcandy\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:precise_volley\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:shaded_respite\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:second_wave\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seapairing\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:crystallization\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:precise_volley\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:double_stab\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:second_wave\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:explosive_flavor\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:crystallization\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:x_ray\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:double_stab\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:astral_transferring\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:x_ray\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:far_flung\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:explosive_flavor\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sightless\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:astral_transferring\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:far_flung\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sharp_cane\", lvl:2s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:impending_stab\", lvl:3s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sightless\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:energy_efficiency\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sharp_cane\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncing_bolt\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:energy_efficiency\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:rapid_possession\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncing_bolt\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:tsunami\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:rapid_possession\", lvl:3s}]}"
-		},
-		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dark_nock\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:tsunami\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:impending_stab\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:lavawax\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_split\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dark_nock\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:board_return\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:lavawax\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sea_swing\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:triple_split\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dazing_sweep\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:sea_swing\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:energy_efficiency\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:dazing_sweep\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seapairing\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:energy_efficiency\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:twilight_perfection\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:seapairing\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:rapid_possession\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:twilight_perfection\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:soak_seeking\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:rapid_possession\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:x_ray\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:soak_seeking\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:chomping_spirit\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:x_ray\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:heavy_slam\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:chomping_spirit\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncing_bolt\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:heavy_slam\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:plummeting_flight\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:bouncing_bolt\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:charting_call\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:plummeting_flight\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:targeted_ricochet\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:charting_call\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:lasting_morale\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:targeted_ricochet\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:flinging\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:lasting_morale\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:lavawax\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexscaves:flinging\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:serpentfriend\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:board_return\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:lavawax\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:straddle_jump\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:board_return\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:serpentfriend\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:disc_jockey\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:straddle_jump\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:board_return\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:shadow_hands\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"alexsmobs:straddle_jump\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:total_recall\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:disc_jockey\", lvl:1s}]}"
-		},
-		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immunity_frame\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:total_recall\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:magnetic\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immunity_frame\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:warping_bite\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:magnetic\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:intimidation\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:warping_bite\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:defusal\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:intimidation\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:gluttonous\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:defusal\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:poison_resistance\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:gluttonous\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:psychic_wall\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:poison_resistance\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:chain_lightning\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:psychic_wall\", lvl:3s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:linked_inventory\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:chain_lightning\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:amphibious\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:linked_inventory\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:fireproof\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:amphibious\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:deflection\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:fireproof\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:herding\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:deflection\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:shadow_hands\", lvl:4s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:frost_fang\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:herding\", lvl:2s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immunity_frame\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_siphon\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:fireproof\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:frost_fang\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:tethered_teleport\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_siphon\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:fireproof\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:warping_bite\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_siphon\", lvl:1s}]}"
 		},
 		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:deflection\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:warping_bite\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:amphibious\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:deflection\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:poison_resistance\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:amphibious\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:speedster\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:poison_resistance\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:linked_inventory\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:speedster\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:defusal\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:linked_inventory\", lvl:1s}]}"
+		},
+		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:rejuvenation\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:tethered_teleport\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:defusal\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:healing_aura\", lvl:2s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:rejuvenation\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:speedster\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:herding\", lvl:2s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:healing_aura\", lvl:2s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:shadow_hands\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:speedster\", lvl:3s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:total_recall\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:herding\", lvl:2s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_boost\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:shadow_hands\", lvl:4s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:total_recall\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:chain_lightning\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_boost\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:tethered_teleport\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:chain_lightning\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:psychic_wall\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:tethered_teleport\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:magnetic\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:psychic_wall\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:gluttonous\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:magnetic\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:intimidation\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:gluttonous\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:disc_jockey\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:intimidation\", lvl:2s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:immaturity_curse\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:health_boost\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:disc_jockey\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:undead_curse\", lvl:1s}]}",
@@ -16966,32 +16956,32 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:infamy_curse\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:bubbling\", lvl:2s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:muffled\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blight_curse\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:void_cloud\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:bubbling\", lvl:2s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:muffled\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:void_cloud\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blazing_protection\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:muffled\", lvl:1s}]}"
-		},
-		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:vampire\", lvl:2s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blazing_protection\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:muffled\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:ore_scenting\", lvl:3s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:vampire\", lvl:2s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:charisma\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:void_cloud\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:ore_scenting\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:bubbling\", lvl:2s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:void_cloud\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blazing_protection\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:bubbling\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:charisma\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"domesticationinnovation:blazing_protection\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"ars_nouveau:mana_boost\", lvl:3s}]}",
@@ -17082,64 +17072,64 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:spread_of_ailments\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:lucky_explorer\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rampaging\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"allurement:vengeance\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:echo\", lvl:5s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:lucky_explorer\", lvl:1s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_polarity\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:echo\", lvl:5s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_anti_entropy\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_polarity\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rampaging\", lvl:4s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_shot\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_anti_entropy\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:echo\", lvl:5s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:reckless\", lvl:4s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:cowardice\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_shot\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:leeching\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:reckless\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:radiance\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:leeching\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:cowardice\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:radiance\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:committed\", lvl:5s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:cowardice\", lvl:4s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rapid_regen\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:committed\", lvl:5s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rampaging\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rapid_regen\", lvl:4s}]}"
-		},
-		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:prospector\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rampaging\", lvl:4s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:reckless\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:leeching\", lvl:4s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_strike\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:reckless\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:prospector\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_strike\", lvl:3s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:lucky_explorer\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:prospector\", lvl:4s}]}"
 		},
 		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:committed\", lvl:5s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:lucky_explorer\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_anti_entropy\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:committed\", lvl:5s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:radiance\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_anti_entropy\", lvl:1s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_polarity\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:radiance\", lvl:4s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rapid_regen\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:curse_of_polarity\", lvl:1s}]}"
+		},
+		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"additionaladditions:precision\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:void_strike\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"kubejs:rapid_regen\", lvl:4s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"additionaladditions:speed\", lvl:3s}]}",
@@ -17158,16 +17148,16 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"betterarcheology:soaring_winds\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:multi_roll\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:longfooted\", lvl:3s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"betterarcheology:tunneling\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:longfooted\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:multi_roll\", lvl:1s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:multi_roll\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:longfooted\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:acrobat\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:longfooted\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"combatroll:multi_roll\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"netherexp:artemis\", lvl:2s}]}",
@@ -17246,16 +17236,16 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:binding_curse\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\", lvl:4s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sharpness\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:smite\", lvl:4s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sharpness\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\", lvl:4s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sharpness\", lvl:4s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:unbreaking\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sharpness\", lvl:4s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\", lvl:4s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:efficiency\", lvl:3s}]}",
@@ -17278,20 +17268,20 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:frost_walker\", lvl:2s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:luck_of_the_sea\", lvl:1s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:looting\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:knockback\", lvl:2s}]}"
+		},
+		{
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:luck_of_the_sea\", lvl:1s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:looting\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:fortune\", lvl:1s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:luck_of_the_sea\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:looting\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:fortune\", lvl:1s}]}"
-		},
-		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:mending\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:looting\", lvl:1s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:fortune\", lvl:1s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:multishot\", lvl:1s}]}",
@@ -17302,16 +17292,16 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:multishot\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:protection\", lvl:4s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:blast_protection\", lvl:4s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:respiration\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:blast_protection\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:protection\", lvl:4s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:protection\", lvl:4s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:blast_protection\", lvl:4s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:feather_falling\", lvl:4s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:blast_protection\", lvl:4s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:protection\", lvl:4s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:quick_charge\", lvl:3s}]}",
@@ -17366,16 +17356,16 @@
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:depth_strider\", lvl:3s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:sustain\", lvl:3s}]}",
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:rupture\", lvl:3s}]}",
 			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:aqua_affinity\", lvl:1s}]}"
 		},
 		{
-			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:rupture\", lvl:3s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:sustain\", lvl:3s}]}"
+			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:sustain\", lvl:3s}]}",
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:rupture\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:enfeeble\", lvl:1s}]}",
-			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:rupture\", lvl:3s}]}"
+			"after": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"galosphere:sustain\", lvl:3s}]}"
 		},
 		{
 			"stack": "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"evilcraft:breaking\", lvl:3s}]}",
@@ -17447,7 +17437,7 @@
 		"/create:experience_block/",
 		"/botania:rune_mana/",
 		"/botanicadds:rune_tp/",
-		"/botania:rune_energy/",
+		"/botanicadds:rune_energy/",
 		"/supplementaries:flag_pink/",
 		"/supplementaries:flag_purple/",
 		"/supplementaries:flag_brown/",
@@ -20399,7 +20389,6 @@
 		"/v_slab_compat:naturalist\\/shellstone_vertical_slab/",
 		"/v_slab_compat:create\\/polished_cut_scoria_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/light_blue_tile_vertical_slab/",
-		"/v_slab_compat:create_things_and_misc\\/brass_brick_vertical_slab/",
 		"/v_slab_compat:ars_nouveau\\/gilded_sourcestone_small_bricks_vertical_slab/",
 		"/v_slab_compat:create\\/cut_diorite_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/red_terracotta_brick_vertical_slab/",
@@ -20695,7 +20684,6 @@
 		"/v_slab_compat:galosphere\\/polished_rose_pink_salt_vertical_slab/",
 		"/v_slab_compat:phantasm\\/crystal_tiles_vertical_slab/",
 		"/v_slab_compat:botania\\/red_quartz_vertical_slab/",
-		"/v_slab_compat:create_things_and_misc\\/brass_tiles_vertical_slab/",
 		"/v_slab_compat:hearth_and_home\\/white_shingle_vertical_slab/",
 		"/v_slab_compat:create\\/cut_scorchia_vertical_slab/",
 		"/v_slab_compat:netherexp\\/basalt_vertical_slab/",

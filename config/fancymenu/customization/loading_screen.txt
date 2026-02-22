@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1770249213106
+  last_edited_time = 1771442759904
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:92821d1a-b89d-4abe-8cb1-4ca716356b6e-1770249196833] = [groups:][instances:]
+  [loading_requirement_container_meta:9bfad237-9078-46ed-bcd3-6653046be3aa-1771442734288] = [groups:][instances:]
 }
 
 customization {
@@ -20,7 +20,7 @@ customization {
 customization {
   action = autoscale
   basewidth = 1920
-  baseheight = 1200
+  baseheight = 1080
 }
 
 menu_background {
@@ -71,7 +71,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1083
   sticky_anchor = false
   anchor_point = mid-centered
   x = -236
@@ -90,7 +90,7 @@ element {
   animated_offset_y = 0
   load_once_per_session = false
   in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
+  layer_hidden_in_editor = true
   rotation_degrees = 0.0
   advanced_rotation_mode = false
   vertical_tilt_degrees = 0.0
@@ -383,13 +383,13 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1083
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -79
-  y = -113
-  width = 159
-  height = 159
+  x = -74
+  y = -117
+  width = 148
+  height = 148
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -485,8 +485,7 @@ element {
 
 element {
   bar_color = #444444
-  background_color = #ABC8F7FF
-  background_texture = [source:local]/config/fancymenu/assets/empty.png
+  background_color = #111111
   direction = right
   progress_for_element_anchor = false
   progress_source = {"placeholder":"game_loading_progress"}
@@ -503,7 +502,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1083
   sticky_anchor = false
   anchor_point = bottom-centered
   x = -100

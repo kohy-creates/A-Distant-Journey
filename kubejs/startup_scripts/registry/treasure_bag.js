@@ -1,52 +1,5 @@
 const $TreasureBag = Java.loadClass('com.majruszsdifficulty.items.TreasureBag')
 
-/**
- * @type {Internal.EntityType_}
- */
-global.bossMobs = [
-	'minecraft:ender_dragon',
-	'minecraft:wither',
-	'minecraft:warden',
-	global.bossMobsNoTreasureBag
-]
-
-/**
- * @type {Internal.EntityType_}
- */
-global.bossMobsNoTreasureBag = [
-	'witherstormmod:witherstorm',
-	'witherstormmod:withered_symbiont',
-	'botania:doppleganger',
-	'cataclysm:ignis',
-	'cataclysm:netherite_monstrosity',
-	'cataclysm:ender_guardian',
-	'cataclysm:the_harbinger',
-	'cataclysm:the_leviathan',
-	'cataclysm:ancient_remnant',
-	'cataclysm:maledictus',
-	'cataclysm:scylla',
-	'unusualend:endstone_golem',
-	'unusualend:enderblob_queen',
-	'ars_nouveau:wilden_boss',
-	'aether:slider',
-	'aether:valkyrie_queen',
-	'aether:sun_spirit',
-	'alexscaves:luxtructosaurus',
-	'lost_aether_content:aerwhale_king',
-	'rediscovered:red_dragon',
-	'twilightforest:naga',
-	'twilightforest:lich',
-	'twilightforest:minoshroom',
-	'twilightforest:hydra',
-	'twilightforest:knight_phantom',
-	'twilightforest:ur_ghast',
-	'twilightforest:alpha_yeti',
-	'twilightforest:snow_queen',
-	'twilightforest:plateau_boss',
-	'ancient_aether:mutated_aechor_plant',
-	'aquamirae:captain_cornelia'
-]
-
 StartupEvents.registry('item', event => {
 
 	function createTreasureBag(name, suffix) {
@@ -86,7 +39,7 @@ StartupEvents.registry('item', event => {
 		}
 	}
 
-	global.bossMobsNoTreasureBag.forEach(mob => {
+	global.bossMobsAddTreasureBag.forEach(mob => {
 		if (mob === 'botania:doppleganger') {
 			createTreasureBag(mob);
 			createTreasureBag(mob, 'hardmode');

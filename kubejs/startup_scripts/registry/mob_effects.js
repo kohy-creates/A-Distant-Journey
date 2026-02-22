@@ -30,7 +30,7 @@ global.shadowApparitionsTick = function (entity, amplifier) {
  * @param {Internal.Entity} entity 
  * @param {integer} amplifier 
  */
-global.voidStikeTick = function (entity, amplifier, fromBow) {
+global.voidStrikeTick = function (entity, amplifier, fromBow) {
 	const level = entity.getLevel();
 	if (!level.isClientSide()) {
 		const data = entity.getPersistentData().voidStrike;
@@ -117,12 +117,12 @@ StartupEvents.registry('mob_effect', registry => {
 	registry.create('void_strike')
 		.color(Color.of('#5300c0'))
 		.harmful()
-		.effectTick((entity, amplifier) => global.voidStikeTick(entity, amplifier, false))
+		.effectTick((entity, amplifier) => global.voidStrikeTick(entity, amplifier, false))
 
 	registry.create('void_shot')
 		.color(Color.of('#5300c0'))
 		.harmful()
-		.effectTick((entity, amplifier) => global.voidStikeTick(entity, amplifier, true))
+		.effectTick((entity, amplifier) => global.voidStrikeTick(entity, amplifier, true))
 
 	registry.create('echo_cooldown')
 		.color(Color.of('#FFFFFF'))

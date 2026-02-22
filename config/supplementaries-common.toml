@@ -16,10 +16,10 @@
 		narrator_enabled = true
 		#Max text
 		#Range: 0 ~ 10000
-		max_text = 32
+		max_text = 1000
 		#Maximum block range
 		#Range: 0 ~ 100000000
-		range = 64
+		range = 128
 
 	[redstone.bellows]
 		enabled = true

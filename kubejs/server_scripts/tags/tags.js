@@ -335,6 +335,83 @@ ServerEvents.tags('item', tags => {
 	tags.add('botania:mana_diamond_gems', [
 		'ars_nouveau:source_gem'
 	])
+
+	tags.add('adj:construction_wands', [
+		/constructionwand:.*wand/
+	])
+
+	tags.remove('forge:ender_pearls', [
+		'unusualend:wandering_pearl'
+	])
+
+	tags.add('adj:spawn_eggs', [
+		/spawn_egg/,
+		/ars_nouveau:.*_se$/
+	])
+
+	tags.add('architects_palette:withered_bones', [
+		'netherexp:fossil_fuel'
+	])
+
+	tags.add('forge:wool', [
+		'#c:wool'
+	])
+
+	tags.add('forge:rums', [
+		/brewinandchewin:.*_rum/
+	])
+
+	tags.remove('forge:rods/wooden', [
+		'aether:skyroot_stick'
+	])
+
+	tags.add('create_ultimate_factory:dead_corals', [
+		/upgrade_aquatic:dead_.*_coral.*/,
+		/upgrade_aquatic:elder_prismarine_coral/,
+		/upgrade_aquatic:dead_coralstone/
+	])
+
+	tags.add('adj:compostable', [
+		'#adj:small_coral',
+		'#small_flowers',
+		'#leaves',
+		'bamboo',
+		'grass',
+		'fern'
+	])
+
+	tags.add('adj:small_coral', [
+		'minecraft:tube_coral',
+		'minecraft:brain_coral',
+		'minecraft:bubble_coral',
+		'minecraft:fire_coral',
+		'minecraft:horn_coral',
+		'upgrade_aquatic:acan_coral',
+		'upgrade_aquatic:finger_coral',
+		'upgrade_aquatic:star_coral',
+		'upgrade_aquatic:moss_coral',
+		'upgrade_aquatic:petal_coral',
+		'upgrade_aquatic:branch_coral',
+		'upgrade_aquatic:rock_coral',
+		'upgrade_aquatic:pillow_coral',
+		'upgrade_aquatic:chrome_coral',
+		'upgrade_aquatic:silk_coral',
+		'minecraft:tube_coral_fan',
+		'minecraft:brain_coral_fan',
+		'minecraft:bubble_coral_fan',
+		'minecraft:fire_coral_fan',
+		'minecraft:horn_coral_fan',
+		'upgrade_aquatic:acan_coral_fan',
+		'upgrade_aquatic:finger_coral_fan',
+		'upgrade_aquatic:star_coral_fan',
+		'upgrade_aquatic:moss_coral_fan',
+		'upgrade_aquatic:petal_coral_fan',
+		'upgrade_aquatic:branch_coral_fan',
+		'upgrade_aquatic:rock_coral_fan',
+		'upgrade_aquatic:pillow_coral_fan',
+		'upgrade_aquatic:chrome_coral_fan',
+		'upgrade_aquatic:silk_coral_fan',
+	])
 })
 
 // 
@@ -404,6 +481,12 @@ ServerEvents.tags('block', tags => {
 	])
 
 	tags.removeAll('jumbofurnace:jumbofurnaceable');
+
+	tags.add('adj:temp_twilight_mangrove',
+		/twilight.*mangrove_/,
+		/tf.*mangrove_/
+	)
+
 })
 
 // 

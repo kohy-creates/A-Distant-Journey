@@ -66,3 +66,5 @@ Brushing Cobwebs
 Growing bioluminescent mushrooms
 Re-enchanting enchantments
 Updating loading_screen.txt
+Maximizing RAM consumption
+Lagging out for no reason
