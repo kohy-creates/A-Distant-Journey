@@ -551,6 +551,10 @@
 		"botania:toggle_light_relay",
 		"botania:light_launcher",
 		"botania:star_sword",
+		"botanicadds:elvenwood",
+		"botanicadds:elvenwood_log",
+		"botania:lexica_botania",
+		"botania:cosmetic_engineer_goggles",
 
 		"terra_curio:magic_quiver",
 		"terra_curio:molten_quiver",
@@ -1084,13 +1088,10 @@
 		"minecraft:chest",
 		"minecraft:trapped_chest",
 
-		"botanicadds:elvenwood",
-		"botanicadds:elvenwood_log",
-
 		"moreburners:copper_coil",
 		"moreburners:nickel_coil",
 		"moreburners:heat_upgrade",
-		"moreburners:induction_heater",
+		"moreburners:electric_burner",
 		"createutilities:void_battery",
 		"createutilities:gearcube",
 
@@ -1290,9 +1291,7 @@
 		"majruszsdifficulty:wither_sword",
 		"majruszsdifficulty:cerberus_fang",
 		
-		"ars_nouveau:worn_notebook",
-		"botania:lexica_botania",
-		
+		"ars_nouveau:worn_notebook",		
 		"ars_nouveau:glyph_craft",
 
 		"croptopia:walnut_sapling",

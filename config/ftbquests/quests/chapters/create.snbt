@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "create"
 	group: "266DD5C3D1FE65EA"
-	icon: "create:andesite_alloy"
+	icon: "kubejs:eye_of_ethercraft"
 	id: "50D5FA1B376C34B5"
 	images: [
 		{

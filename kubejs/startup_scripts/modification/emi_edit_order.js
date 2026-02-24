@@ -1,7 +1,12 @@
 StartupEvents.postInit(event => {
 
+	// No need to run this on dedicated servers
+	// Idk how much of an optimization tgat is, but it's always something
+	if (!Platform.isClientEnvironment()) return;
+
 	// Other order overwrites
 	const EMIEdit = [
+		// Note to self: the pattern is [ITEM, TO_PLACE_AFTER]
 		['kubejs:eye_of_verdant_bloom', 'structure_gel:building_tool'],
 
 		["minecraft:furnace", "alloy_forgery:cracked_stone_bricks_forge_controller"],

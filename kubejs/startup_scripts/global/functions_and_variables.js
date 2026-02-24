@@ -156,7 +156,7 @@ global.zenithSwords = [
 	{ item: "minecraft:netherite_sword", color: 0x8F7F82, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "additionaladditions:rose_gold_sword", color: 0xFCCDC2, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "minecraft:iron_sword", color: 0xC6C4BA, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
-	{ item: "create:cardboard_sword", ingredient: true, color: 0xECC599, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
+	{ item: "create:cardboard_sword", ingredient: true, color: 0xECC599, rotation_center_height: 0.125, rotation: 0.785, scale: 2.75, trail_width: 3 },
 	{ item: "lost_aether_content:phoenix_sword", ingredient: true, color: 0xFCBB42, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "twilightforest:ice_sword", ingredient: true, color: 0x7D9CB9, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "twilightforest:knightmetal_sword", ingredient: true, color: 0xC2D3AC, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },

@@ -5,13 +5,7 @@
 	filename: "botania"
 	group: "06918EFE2A3328D6"
 	hide_quest_details_until_startable: true
-	icon: {
-		Count: 1
-		id: "botania:lexicon"
-		tag: {
-			"botania:elven_unlock": 1b
-		}
-	}
+	icon: "kubejs:eye_of_arcanum"
 	id: "53B7EA892E14DB2F"
 	images: [
 		{

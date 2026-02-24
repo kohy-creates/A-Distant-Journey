@@ -96,6 +96,7 @@ ServerEvents.recipes((event) => {
 		/toms_storage:ts\..*_terminal/,
 		'toms_storage:ts.inventory_connector',
 		/toms_storage:ts\..*_filter/,
+		'botania:conjuration_catalyst'
 	];
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -260,7 +261,8 @@ ServerEvents.recipes((event) => {
 		'neapolitan:cake',
 		'ars_nouveau:ghostweave',
 		'ars_nouveau:sky_block',
-		'ars_nouveau:falseweave'
+		'ars_nouveau:falseweave',
+		'ars_nouveau:imbuement_conjuration_essence'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -443,7 +445,7 @@ ServerEvents.recipes((event) => {
 
 	event.forEachRecipe({ output: [/carpet/], type: 'crafting_shaped' }, recipe => sewingRecipe(
 		recipe.getOriginalRecipeIngredients().toArray()[0].getItemIds()[0], // this looks unholy
-		recipe.getOriginalRecipeResult(),
+		recipe.getOriginalRecipeResult().getId(),
 		3,
 		recipe.getId())
 	);
@@ -2238,9 +2240,6 @@ ServerEvents.recipes((event) => {
 		}
 	).id('adj:enchanters_mirror');
 
-	/**
-	 * @type {Record<InputItem_, Internal.InputItem_>}
-	 */
 	const runiteToArcanist = {
 		'mythicmetals:runite_helmet': 'ars_nouveau:arcanist_hood',
 		'mythicmetals:runite_chestplate': 'ars_nouveau:arcanist_robes',
@@ -2297,7 +2296,7 @@ ServerEvents.recipes((event) => {
 		],
 		"sourceCost": 2500,
 		"tier": 1
-	}).id(`adj:arcanist_upgrade_1`)
+	}).id(`adj:arcanist_upgrade_1`);
 
 	event.custom({
 		"type": "ars_nouveau:armor_upgrade",
@@ -2345,10 +2344,10 @@ ServerEvents.recipes((event) => {
 		],
 		"sourceCost": 5000,
 		"tier": 2
-	}).id(`adj:arcanist_upgrade_2`)
+	}).id(`adj:arcanist_upgrade_2`);
 
 
-	event.remove({ type: 'ars_elemental:armor_upgrade' })
+	event.remove({ type: 'ars_elemental:armor_upgrade' });
 
 	/**
 	 * 
@@ -2356,19 +2355,8 @@ ServerEvents.recipes((event) => {
 	 * @param {Internal.InputItem_} essence 
 	 */
 	function elementalUpgradeRecipe(element, essence) {
-		let armorPieces = [
-			'boots',
-			'robes',
-			'leggings',
-			'hat'
-		]
-		let armorTags = [
-			'ars_nouveau:boot',
-			'ars_nouveau:robe',
-			'ars_nouveau:legs',
-			'ars_nouveau:hood'
-
-		]
+		let armorPieces = ['boots', 'robes', 'leggings', 'hat'];
+		let armorTags = ['ars_nouveau:boot', 'ars_nouveau:robe', 'ars_nouveau:legs', 'ars_nouveau:hood'];
 		let i = 0;
 		armorPieces.forEach(itemType => {
 			event.custom({
@@ -2405,9 +2393,9 @@ ServerEvents.recipes((event) => {
 				],
 				"sourceCost": 7000,
 				"tier": 3
-			}).id(`adj:${element}_${itemType}`)
+			}).id(`adj:${element}_${itemType}`);
 			i++;
-		})
+		});
 	}
 	elementalUpgradeRecipe('air', 'botania:rune_air');
 	elementalUpgradeRecipe('fire', 'botania:rune_fire');
@@ -2421,27 +2409,27 @@ ServerEvents.recipes((event) => {
 			'minecraft:iron_ingot',
 			'minecraft:gold_ingot'
 		]
-	)
+	);
 
 	const manaGemCost = 900;
 	event.recipes.botania.mana_infusion('ars_nouveau:source_gem', ['minecraft:amethyst_shard', 'minecraft:lapis_lazuli'])
 		.mana(manaGemCost)
-		.id('adj:mana_gem')
+		.id('adj:mana_gem');
 
 	event.recipes.botania.mana_infusion('ars_nouveau:source_gem_block', 'minecraft:amethyst_block')
 		.mana(manaGemCost * 4)
-		.id('adj:mana_gem_block')
+		.id('adj:mana_gem_block');
 
 	event.recipes.botania.mana_infusion('ars_nouveau:source_gem_block', 'minecraft:lapis_block')
 		.mana(manaGemCost * 9)
-		.id('adj:mana_gem_block_from_lapis')
+		.id('adj:mana_gem_block_from_lapis');
 
 	event.recipes.ars_nouveau.imbuement(
 		'lapis_lazuli',
 		Item.of('botanicadds:mana_lapis', 1),
 		500,
 		[]
-	).id(`adj:mana_lapis`)
+	).id(`adj:mana_lapis`);
 
 	event.recipes.ars_nouveau.imbuement(
 		'lapis_block',
@@ -2452,7 +2440,7 @@ ServerEvents.recipes((event) => {
 
 	event.recipes.botania.mana_infusion('ars_nouveau:sourcestone', '#forge:stone')
 		.mana(600)
-		.id('adj:sourcestone')
+		.id('adj:sourcestone');
 
 	event.shaped(
 		'ars_nouveau:source_jar',
@@ -2484,6 +2472,231 @@ ServerEvents.recipes((event) => {
 		}
 	).id('adj:ender_mana_jar');
 
+	// Different Essence crafts
+	const essenceRecipes = {
+		'ars_nouveau:air_essence': [
+			{
+				source: 4500,
+				ingredients: [
+					'minecraft:arrow',
+					'minecraft:feather',
+					'minecraft:feather',
+				]
+			},
+			{
+				source: 2000,
+				ingredients: [
+					'minecraft:arrow',
+					'miners_delight:bat_wing',
+					'miners_delight:bat_wing',
+				]
+			},
+			{
+				source: 1300,
+				ingredients: [
+					'minecraft:arrow',
+					'aether:cold_aercloud',
+					'aether:cold_aercloud',
+				]
+			},
+		],
+		'ars_nouveau:water_essence': [
+			{
+				source: 4500,
+				ingredients: [
+					'minecraft:water_bucket',
+					'minecraft:water_bucket',
+					'minecraft:water_bucket'
+				]
+			},
+			{
+				source: 2000,
+				ingredients: [
+					'minecraft:water_bucket',
+					'minecraft:kelp',
+					'minecraft:prismarine'
+				]
+			},
+			{
+				source: 1300,
+				ingredients: [
+					'minecraft:water_bucket',
+					'upgrade_aquatic:prismarine_coral_block',
+					'upgrade_aquatic:prismarine_coral_block'
+				]
+			},
+		],
+		'ars_nouveau:fire_essence': [
+			{
+				source: 4500,
+				ingredients: [
+					'minecraft:gunpowder',
+					'minecraft:coal',
+					'minecraft:torch'
+				]
+			},
+			{
+				source: 2000,
+				ingredients: [
+					'minecraft:gunpowder',
+					'netherexp:fossil_fuel',
+					'minecraft:torch'
+				]
+			},
+			{
+				source: 1300,
+				ingredients: [
+					'minecraft:fire_charge',
+					'netherexp:fossil_fuel',
+					'netherdepthsupgrade:searing_cod'
+				]
+			},
+		],
+		'ars_nouveau:earth_essence': [
+			{
+				source: 4500,
+				ingredients: [
+					'minecraft:iron_ingot',
+					'minecraft:rooted_dirt',
+					'minecraft:rooted_dirt'
+				]
+			},
+			{
+				source: 2000,
+				ingredients: [
+					'minecraft:iron_ingot',
+					'minecraft:moss_block',
+					'minecraft:coarse_dirt'
+				]
+			},
+			{
+				source: 1300,
+				ingredients: [
+					'minecraft:iron_ingot',
+					'create:tree_fertilizer',
+					'aether:aether_dirt'
+				]
+			},
+		],
+		'ars_nouveau:abjuration_essence': [
+			{
+				source: 4500,
+				ingredients: [
+					'minecraft:sugar',
+					'minecraft:spider_eye',
+					'amethyst_shard'
+				]
+			},
+			{
+				source: 2000,
+				ingredients: [
+					'minecraft:sugar',
+					'minecraft:fermented_spider_eye',
+					'#c:milk'
+				]
+			},
+			{
+				source: 1300,
+				ingredients: [
+					'supplementaries:sugar_cube',
+					'fermented_spider_eye',
+					'botania:pixie_dust'
+				]
+			},
+		],
+		'ars_nouveau:conjuration_essence': [
+			{
+				source: 4500,
+				ingredients: [
+					'minecraft:book',
+					'minecraft:bone',
+					'netherexp:fossil_fuel'
+				]
+			},
+			{
+				source: 2000,
+				ingredients: [
+					'minecraft:book',
+					'ars_nouveau:wilden_horn',
+					'netherexp:fossil_fuel'
+				]
+			},
+			{
+				source: 1300,
+				ingredients: [
+					'book',
+					'ars_nouveau:wilden_horn',
+					'ars_nouveau:starbuncle_shards'
+				]
+			},
+		],
+		'ars_nouveau:manipulation_essence': [
+			{
+				source: 4500,
+				ingredients: [
+					'minecraft:redstone',
+					'minecraft:piston',
+					'#adj:clock'
+				]
+			},
+			{
+				source: 2000,
+				ingredients: [
+					'morered:red_alloy_ingot',
+					'minecraft:piston',
+					'supplementaries:clock_block'
+				]
+			},
+			{
+				source: 1300,
+				ingredients: [
+					'morered:red_alloy_ingot',
+					'botania:piston_relay',
+					'create:cuckoo_clock'
+				]
+			},
+		],
+		'ars_elemental:anima_essence': [
+			{
+				source: 6500,
+				ingredients: [
+					'golden_apple',
+					'kubejs:skull_fragment',
+					'bone_meal'
+				]
+			},
+			{
+				source: 3000,
+				ingredients: [
+					'golden_apple',
+					'wither_skeleton_skull',
+					'bone_block'
+				]
+			},
+			{
+				source: 1800,
+				ingredients: [
+					'enchanted_golden_apple',
+					'wither_skeleton_skull',
+					'netherexp:wither_bone_block'
+				]
+			},
+		],
+	}
+	for (let [essence, recipeList] of Object.entries(essenceRecipes)) {
+		event.remove({ output: essence, type: 'ars_nouveau:imbuement' });
+		let i = 0;
+		for (let recipe of recipeList) {
+			i++;
+			event.recipes.ars_nouveau.imbuement(
+				'ars_nouveau:source_gem',
+				essence,
+				(recipe.source) ? recipe.source : 2000,
+				recipe.ingredients
+			).id(`adj:ars_essences/${flattenedID(essence)}_${i}`);
+		}
+	}
+
 	// Crushing recipes for Crush glyph
 	event.forEachRecipe({ type: 'create:milling' }, recipe => {
 
@@ -2506,7 +2719,7 @@ ServerEvents.recipes((event) => {
 				count: (count) ? count.getAsInt() : 1,
 				item: item.getAsString(),
 				chance: (chance) ? chance.getAsFloat() : 1.0
-			})
+			});
 		})
 		if (quit) return;
 
@@ -2532,8 +2745,8 @@ ServerEvents.recipes((event) => {
 			input: input,
 			output: outputs,
 			skip_block_place: false
-		}).id(recipe.getId() + '_ars_crush')
-	})
+		}).id(recipe.getId() + '_ars_crush');
+	});
 
 	// Glyphs rework
 	/**
@@ -3013,7 +3226,7 @@ ServerEvents.recipes((event) => {
 			'blue_wool',
 			'blue_wool'
 		]
-	}
+	};
 
 	// Glyphs are more expensive to craft experience-wise
 	// and some have changed recipes
@@ -3032,7 +3245,7 @@ ServerEvents.recipes((event) => {
 				id,
 				glyphOverride,
 				expCost
-			).id(recipe.getId())
+			).id(recipe.getId());
 		}
 		else {
 			event.custom({
@@ -3041,9 +3254,9 @@ ServerEvents.recipes((event) => {
 				type: "ars_nouveau:glyph",
 				exp: expCost,
 				inputItems: recipe.json.get('inputItems')
-			}).id(recipe.getId())
+			}).id(recipe.getId());
 		}
-	})
+	});
 
 	// Essences and essence transforms
 	function essenceTransform(essence, material, result, amount) {
@@ -3052,7 +3265,7 @@ ServerEvents.recipes((event) => {
 			essence,
 		]
 		for (let i = 0; i < amount; i++) {
-			essence.push(material);
+			inputs.push(material);
 		}
 		event.shapeless(
 			Item.of(result, amount),
@@ -4453,7 +4666,7 @@ ServerEvents.recipes((event) => {
 		}
 	).id('adj:candle_from_animal_fat')
 
-	// Reworking Botania
+	// Botania rework
 	// Runes
 	function rune(name) {
 		return (Item.exists(`botania:rune_${name}`)) ? `botania:rune_${name}` : `botanicadds:rune_${name}`
@@ -4586,7 +4799,7 @@ ServerEvents.recipes((event) => {
 
 		'ars_nouveau:manipulation_essence': 'botanicadds:rune_tp',
 		'ars_nouveau:abjuration_essence': 'botania:rune_mana',
-		'ars_nouveau:conjuration_essence': 'botania:rune_energy',
+		'ars_nouveau:conjuration_essence': 'botanicadds:rune_energy',
 	}
 
 	for (const [essence, rune] of Object.entries(essenceToRuneMap)) {
@@ -7109,7 +7322,7 @@ ServerEvents.recipes((event) => {
 			event.recipes.create.deploying(inter, [inter, ['create:zinc_nugget', 'iron_nugget']]),
 			event.recipes.create.pressing(inter, [inter])
 		]
-	).transitionalItem(inter).times(1).id('adj:create_track')
+	).transitionalItem(inter).loops(1).id('adj:create_track')
 
 	event.recipes.create.mechanical_crafting(
 		'2x create:crushing_wheel',

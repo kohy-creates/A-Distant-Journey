@@ -11,7 +11,7 @@ global.LCETips = {
 	'ars_nouveau:manipulation_essence': ['Manipulation Essence', 'Mana Gem imbued with powers of manipulation'],
 	'ars_nouveau:conjuration_essence': ['Conjuration Essence', 'Mana Gem imbued with powers of conjuration'],
 	'ars_nouveau:abjuration_essence': ['Abjuration Essence', 'Mana Gem imbued with powers of abjuration'],
-	'ars_elemental:anima_essence': ['Anima Essence', 'Mana Gem imbued with beast spirits. The only essence without a rune form'],
+	'ars_elemental:anima_essence': ['Anima Essence', 'Mana Gem imbued with forces of life and death. The only essence without a rune form'],
 	'botania:rune_air': ['Rune of Air', 'Air Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
 	'botania:rune_water': ['Rune of Water', 'Air Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
 	'botania:rune_fire': ['Rune of Fire', 'Fire Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
