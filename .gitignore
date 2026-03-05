@@ -115,14 +115,15 @@ lightspeed-cache/
 quickskin_cache/
 quickskin/uploads/
 config/skin-preferences.json
+config/quickskin-preferences.json
 config/quickskin-client.json
 emi.json
 moonlight-global-datapacks/
 foolproof.json
 XaeroWaypoints_BACKUP*/
-spark/activity.json
-emi_edit_order.json
+edit_item_order.json
 indigo-renderer.properties
 showmeyourskin.json
 oculus.properties
 modlist.json
+config/spark/activity.json

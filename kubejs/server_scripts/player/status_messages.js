@@ -20,7 +20,8 @@ EntityEvents.spawned(event => {
 		if (event.success) {
 			const randomMsg = nightmareStalkerMsgs[Math.floor(Math.random() * nightmareStalkerMsgs.length)];
 			event.getServer().runCommandSilent(
-				commandAtEntity(entity, `/immersivemessages sendcustom @p[] {anchor:0,y:100,shake:1,obfuscate:1,color:"#c50000",slideoutright:1,slideleft:1,wave:1} 6 ${randomMsg}`)
+				// commandAtEntity(entity, `/immersivemessages sendcustom @p[] {anchor:0,y:100,shake:1,obfuscate:1,color:"#c50000",slideoutright:1,slideleft:1,wave:1} 6 ${randomMsg}`)
+				commandAtEntity(entity, `/eta queue @a[distance=0..] status_messages "<dur:100><color col=c50000><fade in=10 out=10><typewriter speed=45><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${randomMsg}</offset></align></anchor></typewriter></fade></color></dur:100}>`)
 			)
 			event.getServer().runCommandSilent(
 				commandAtEntity(entity, '/playsound born_in_chaos_v1:stalker_roar_distant hostile @p[] ~ ~ ~ 0 0.5 0.2')
@@ -195,41 +196,12 @@ ServerEvents.tick(event => {
 
 	function sendMessage(options) {
 		const text = options.text || '';
-		const y = options.y !== undefined ? options.y : 100;
 		const color = options.color || '#EEEEEE';
-		const duration = options.duration !== undefined ? options.duration : 6;
-		const slide = options.slide || 'single';
+		const duration = (options.duration !== undefined ? options.duration : 6) * 20;
 
-		let slideArgs = '';
-
-		switch (slide) {
-			case 'single':
-				slideArgs = 'slideup:1,slideoutdown:1';
-				break;
-			case 'intro':
-				slideArgs = 'slideup:1,slideoutright:1';
-				break;
-			case 'next':
-				slideArgs = 'slideleft:1,slideoutright:1';
-				break;
-			case 'outro':
-				slideArgs = 'slideleft:1,slideoutdown:1';
-				break;
-			case 'none':
-			case null:
-			case undefined:
-				slideArgs = '';
-				break;
-			default:
-				console.warn('Unknown slide type: ' + slide);
-				break;
-		}
-
-		const command = '/immersivemessages sendcustom @a[distance=0..] {anchor:0,y:' + y + ',color:"' + color + '"' + (slideArgs ? ',' + slideArgs : '') + '} ' + duration + ' ' + text;
-
-		server.runCommand(
-			commandInWorld("minecraft:overworld", command)
-		);
+		// const command = '/immersivemessages sendcustom @a[distance=0..] {anchor:0,y:' + y + ',color:"' + color + '"' + (slideArgs ? ',' + slideArgs : '') + '} ' + duration + ' ' + text;
+		const command = `/eta queue @a[predicate=adj:in_overworld] status_messages "<dur:${duration}><color col=${color}><fade in=10 out=10><typewriter speed=45><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${text}</offset></align></anchor></typewriter></fade></color></dur>"`
+		server.runCommand(command);
 	}
 
 	function sendEventMessages(isWitherStorm, moonEventOrPhase, isStart) {
@@ -251,24 +223,14 @@ ServerEvents.tick(event => {
 			texts = moonEventMessages[moonEventOrPhase].texts[(isStart) ? 'start' : 'end'];
 		}
 		for (let i = 0; i < texts.length; i++) {
-			let anim = 'single';
-			if (texts.length > 1) {
-				anim = 'next';
-				if (i == texts.length - 1) {
-					anim = 'outro';
-				}
-				else if (i == 0) {
-					anim = 'intro'
-				}
-			}
-			sendMessage({ text: texts[i], color: color, slide: anim, duration: duration })
+			sendMessage({ text: texts[i], color: color, duration: duration })
 		}
 	}
 
 	if (isInBetween(dayTime, 12000, 12599) && messageCount === 0) {
 
 		// Night is falling
-		sendMessage({ text: 'Night is falling upon this world...', slide: 'single' });
+		sendMessage({ text: 'Night is falling upon this world...' });
 		messageCount = 1;
 
 	}
@@ -301,11 +263,11 @@ ServerEvents.tick(event => {
 					sendEventMessages(true, phase);
 				}
 				else {
-					sendMessage({ text: 'This really doesn\'t feel like a calm night', color: '	', slide: 'single' })
+					sendMessage({ text: 'This really doesn\'t feel like a calm night', color: '	' })
 				}
 			}
 			else {
-				sendMessage({ text: 'This is going to be a calm night', slide: 'single' });
+				sendMessage({ text: 'This is going to be a calm night' });
 			}
 		}
 		else {
@@ -322,7 +284,7 @@ ServerEvents.tick(event => {
 
 		// Moon sets message
 		if (moonEvent === 'enhancedcelestials:default') {
-			sendMessage({ text: 'The moon slowly sets, monsters crawl back into the shadows', slide: 'single' });
+			sendMessage({ text: 'The moon slowly sets, monsters crawl back into the shadows' });
 		}
 		else {
 			sendEventMessages(false, moonEvent, false)

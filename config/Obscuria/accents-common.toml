@@ -19,12 +19,17 @@ modifiersEnabled = false
 	strawHat = ["minecraft:generic.attack_speed multiply:0.05"]
 	topHat = ["minecraft:generic.luck addition:1"]
 	wizardHat = ["minecraft:generic.movement_speed multiply:0.025", "minecraft:generic.attack_damage multiply:0.025"]
+	kingMask = ["minecraft:generic.knockback_resistance addition:0.1"]
+	wideBrimHat = ["minecraft:generic.attack_damage multiply:0.05"]
+	tundraHood = ["minecraft:generic.armor addition:1"]
+	scarf = ["minecraft:generic.max_health multiply:0.05"]
 
 [Chest]
 	bandolier = ["minecraft:generic.attack_speed multiply:0.05"]
 	quiver = ["minecraft:generic.attack_speed multiply:0.025", "minecraft:generic.attack_damage multiply:0.025"]
 	sheathedKatana = ["minecraft:generic.attack_damage multiply:0.05"]
 	wings = ["minecraft:generic.movement_speed multiply:0.025", "minecraft:generic.knockback_resistance multiply:0.025"]
+	itemSatchel = ["minecraft:generic.attack_speed multiply:0.05"]
 
 [Legs]
 	holsteredBelt = ["minecraft:generic.attack_speed multiply:0.05"]

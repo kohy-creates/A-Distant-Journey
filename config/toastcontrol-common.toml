@@ -25,7 +25,7 @@
 		#Range: 0 ~ 4000
 		force_time = 0
 		#If toasts are translucent.
-		translucent = true
+		translucent = false
 		#If toasts are transparent.  Overrides translucency.
 		transparent = false
 		#How many toasts will be displayed on screen at once.

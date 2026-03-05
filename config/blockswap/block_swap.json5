@@ -337,6 +337,14 @@
 		"cataclysm:stone_tile_stairs": "supplementaries:stone_tile_stairs",
 		"cataclysm:stone_tile_wall": "supplementaries:stone_tile_wall",
 		"cataclysm:stone_tiles": "supplementaries:stone_tile",
+		"cataclysm:polished_sandstone": "minecraft:cut_sandstone",
+		"cataclysm:blackstone_pillar": "netherexp:polished_blackstone_pillar",
+
+		"phantasm:polished_obsidian": "cataclysm:polished_obsidian",
+		"phantasm:polished_obsidian_bricks": "cataclysm:polished_obsidian",
+		"phantasm:polished_obsidian_bricks_stairs": "cataclysm:polished_obsidian_stairs",
+		"phantasm:polished_obsidian_bricks_slab": "cataclysm:polished_obsidian_slab",
+		"v_slab_compat:phantasm/polished_obsidian_bricks_vertical_slab": "v_slab_compat:cataclysm/polished_obsidian_vertical_slab",
 
 		"ecologics:azalea_log": "quark:azalea_log",
 		"ecologics:flowering_azalea_log": "quark:azalea_log",

@@ -67,7 +67,7 @@ PlayerEvents.tick(event => {
 	const miningSpeedAttribute = player.getAttribute('attributeslib:mining_speed')
 	const mining_speed = miningSpeedAttribute.getModifier(MiningSpeedUUID);
 	if (!mining_speed) {
-		miningSpeedAttribute.addPermanentModifier(new $AttributeModifier(MiningSpeedUUID, 'Mining speed bonus', 0.25, $Operation.ADDITION))
+		miningSpeedAttribute.addPermanentModifier(new $AttributeModifier(MiningSpeedUUID, 'Mining speed bonus', 0.15, $Operation.ADDITION))
 	}
 
 	player.getAttribute('attributeslib:crit_chance').setBaseValue(0.0);

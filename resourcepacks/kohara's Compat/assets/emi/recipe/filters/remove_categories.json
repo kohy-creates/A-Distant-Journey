@@ -40,9 +40,6 @@
 			"category": "ars_nouveau:scry_ritual"
 		},
 		{
-			"category": "create:mystery_conversion"
-		},
-		{
 			"category": "waystones:warp_plate"
 		},
 		{
@@ -67,7 +64,7 @@
 			"category": "aether:repairing"
 		},
 		{
-			"category": "jumbofurnace:jumbo_furnace_upgraded"
+			"category": "jumbofurnace:jumbo_furnace_upgrade"
 		},
 		{
 			"category": "jumbofurnace:jumbo_smelting"

@@ -1,0 +1,2 @@
+com.tiviacz.travelersbackpack.client.screens.BackpackScreen
+com.tiviacz.travelersbackpack.client.screens.BackpackSettingsScreen

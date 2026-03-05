@@ -1,0 +1,8 @@
+
+#Common config settings
+[common]
+	#Enables backpacks spawning in loot chests
+	enableLoot = false
+	#Enables trade for Villager Backpack in Librarian villager trades
+	enableVillagerTrade = false
+

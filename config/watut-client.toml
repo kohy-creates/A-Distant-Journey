@@ -55,7 +55,7 @@
 	#Range: > -2147483648
 	tickReceiveAndRenderRateOfGUIUpdates = 10
 	#Privacy setting, if you dont want to send very detailed info of your screen for everyone to see and instead use the old basic gui visual, set this to true
-	dontSendDetailedGUIInfo = false
+	dontSendDetailedGUIInfo = true
 	#Privacy setting, if you dont want to show the items you are transferring to and from yourself and containers, set this to true
-	dontSendItemInfo = false
+	dontSendItemInfo = true
 

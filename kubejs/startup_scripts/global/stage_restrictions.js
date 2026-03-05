@@ -233,7 +233,8 @@ global.stageRestrictions = {
 			'unusualend:chiseled_glass_pane',
 			'unusualend:phantom_membrane_block',
 			'endersdelight:ender_shard',
-			/treasure_bag/
+			/treasure_bag/,
+			/polished_obsidian/
 		]
 	},
 	'chapter_5': {

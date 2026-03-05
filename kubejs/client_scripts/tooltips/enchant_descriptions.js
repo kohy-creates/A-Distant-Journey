@@ -180,7 +180,5 @@ ItemEvents.tooltip(event => {
 				desc.darkGray()
 			]))
 		}
-
 	})
-
 })

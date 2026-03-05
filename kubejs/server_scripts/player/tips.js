@@ -1,5 +1,9 @@
 PlayerEvents.inventoryChanged(event => {
 	const id = event.getItem().getItem().getId();
+
+	/**
+	 * @type {Array}
+	 */
 	const tip = global.LCETips[id];
 	if (!tip) return;
 
@@ -13,10 +17,24 @@ PlayerEvents.inventoryChanged(event => {
 	if (!data.hasSeenTipsFor[id]) {
 		data.hasSeenTipsFor[id] = true;
 
+		let title, description;
+		if (tip.length === 1) {
+			title = global.toTitleCase(id.split(':')[1].replace('_', ' '));
+			description = tip[0];
+		}
+		else {
+			title = tip[0];
+			description = tip[1]
+		}
+
+		if (!description.endsWith('.')) {
+			description = description + '.'; // cause I often forget
+		}
+
 		player.sendData('lce_tip', {
 			item: id,
-			title: tip[0],
-			description: (!tip[1].endsWith('.')) ? tip[1] + '.' : tip[1], // cause I often forget
+			title: title,
+			description: description, // cause I often forget
 			duration: tip[2] ?? 200
 		});
 	}

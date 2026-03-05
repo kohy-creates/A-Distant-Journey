@@ -84,12 +84,9 @@ com.jab125.mpuc.client.gui.screen.changelog.NewChangelogScreen {
 top.theillusivec4.curios.client.gui.CuriosScreenV2 {
 }
 
-com.mrcrayfish.backpacked.client.gui.screen.inventory.BackpackScreen {
+com.tiviacz.travelersbackpack.client.screens.BackpackSettingsScreen {
 }
 
-journeymap.client.ui.dialog.ServerOptionsManager {
-}
-
-journeymap.client.ui.dialog.OptionsManager {
+com.tiviacz.travelersbackpack.client.screens.BackpackScreen {
 }
 

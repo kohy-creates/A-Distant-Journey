@@ -9,12 +9,16 @@
 				"path": "^advancements/recipes.*$"
 			},
 			{
-				"namespace": "^(?!botania$|the_bumblezone$|adj$|born_in_chaos_v1$|true_ending$|unusualend$|twilightforest$|evilcraft$)",
+				"namespace": "^(?!adj$|born_in_chaos_v1$|true_ending$|unusualend$|twilightforest$)",
 				"path": "^advancements/.*$"
 			},
 			{
-				"namespace": "^botania$",
-				"path": "^advancements/challenge.*$"
+				"namespace": "^(evilcraft$|croptopia$|travelersbackpack$)",
+				"path": "^loot_modifiers/.*$"
+			},
+			{
+				"namespace": "^travelersbackpack$",
+				"path": "^loot_tables/blocks/.*$"
 			}
 		]
 	}

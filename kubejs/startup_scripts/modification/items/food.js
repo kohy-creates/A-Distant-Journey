@@ -172,7 +172,7 @@ ItemEvents.modification(event => {
 		['galosphere:lichen_cordyceps', 1],
 		['galosphere:golden_lichen_cordyceps', 3],
 		['chorus_fruit', 2],
-		['golden_carrot', [5, 1.2]],
+		['golden_carrot', [7, 1.2]],
 		['baked_potato', 4],
 		[[
 			'carrot',

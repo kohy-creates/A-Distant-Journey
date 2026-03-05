@@ -21,6 +21,6 @@
 	pause_game: true
 	progression_mode: "flexible"
 	show_lock_icons: false
-	title: "A Distant Journey"
+	title: "<grad from=F67AFF to=FAD9FF hue=true f=0.75 s=30>A Distant Journey"
 	version: 13
 }

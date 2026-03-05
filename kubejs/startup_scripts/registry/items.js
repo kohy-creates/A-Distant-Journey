@@ -53,11 +53,20 @@ StartupEvents.registry('item', registry => {
 		.displayName('Map Atlas')
 		.rarity('epic')
 
-	// 	registry.create('map_atlas_waypoints')
-	// 		.unstackable()
-	// 		.displayName('Map Atlas')
-	// 		.rarity('epic')
-	// 		.tooltip('§6Waypoints Upgrade')
+	registry.create('soul_sand_paper', 'create:sandpaper')
+		.displayName('Soul Sand Paper')
+		.unstackable()
+		.maxDamage(100)
+
+	registry.create('gravisand_paper', 'create:sandpaper')
+		.displayName('Gravisand Paper')
+		.unstackable()
+		.maxDamage(300)
+
+	registry.create('tainted_sand_paper', 'create:sandpaper')
+		.displayName('Tainted Sand Paper')
+		.unstackable()
+		.maxDamage(99999)
 })
 
 ItemEvents.armorTierRegistry(event => {

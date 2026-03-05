@@ -1422,7 +1422,7 @@
 			}]
 			title: "[Ba]king [Br]ead"
 			x: 7.5d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
@@ -1545,14 +1545,31 @@
 				"18F794CFEE554641"
 				"4C1D62C4B13A0CE0"
 			]
+			icon: {
+				Count: 1
+				id: "travelersbackpack:standard"
+				tag: {
+					StorageSlots: 27
+					Tier: 0
+					ToolSlots: 2
+					UpgradeSlots: 2
+				}
+			}
 			icon_scale: 0.75d
 			id: "3CEF12213D904295"
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft a Backpack to increase your inventory space"
 			tasks: [{
-				id: "7A862ACC7479B9DA"
-				item: "backpacked:backpack"
+				id: "6732A06D28725BFE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "travelersbackpack:custom_travelers_backpack"
+					}
+				}
+				title: "Any Backpack"
 				type: "item"
 			}]
 			title: "Backpacked!"
@@ -4063,7 +4080,7 @@
 				""
 				"{image:adj:textures/other/twilight_portal.png width:100 height:100 align:center}"
 				""
-				"2x2 (or larger) square of &9Water&r, surrounded with any kind of &eFlowers&r."
+				"2x2 (or larger) square of &eLumisene&r (<b>1 Bucket is enough!!</b>), surrounded with any kind of &aFlowers&r."
 				""
 				"You can activate the portal by tossing in a singular &dDragonstone&r."
 			]
@@ -4087,6 +4104,11 @@
 					disable_toast: true
 					id: "2D25C5E49F69FD7C"
 					item: "botania:dragonstone"
+					type: "item"
+				}
+				{
+					id: "2A53E9D377CB220F"
+					item: "supplementaries:lumisene_bucket"
 					type: "item"
 				}
 			]

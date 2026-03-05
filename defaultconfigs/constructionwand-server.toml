@@ -24,7 +24,7 @@
 [iron_wand]
 	#Wand durability
 	#Range: > 1
-	durability = 700
+	durability = 1500
 	#Wand block limit
 	#Range: > 1
 	limit = 24
@@ -33,14 +33,14 @@
 	angel = 4
 	#Wand destruction block limit (0 to disable destruction core)
 	#Range: > 0
-	destruction = 9
+	destruction = 1
 	#Allow wand upgrading by putting the wand together with a wand core in a crafting grid.
 	upgradeable = true
 
 [diamond_wand]
 	#Wand durability
 	#Range: > 1
-	durability = 2000
+	durability = 4000
 	#Wand block limit
 	#Range: > 1
 	limit = 32
@@ -49,7 +49,7 @@
 	angel = 8
 	#Wand destruction block limit (0 to disable destruction core)
 	#Range: > 0
-	destruction = 25
+	destruction = 9
 	#Allow wand upgrading by putting the wand together with a wand core in a crafting grid.
 	upgradeable = true
 
@@ -62,7 +62,7 @@
 	angel = 16
 	#Wand destruction block limit (0 to disable destruction core)
 	#Range: > 0
-	destruction = 25
+	destruction = 9
 	#Allow wand upgrading by putting the wand together with a wand core in a crafting grid.
 	upgradeable = true
 
@@ -72,10 +72,10 @@
 	InfinityWandCreative = 2048
 	#Maximum placement range (0: unlimited). Affects all wands and is meant for lag prevention, not game balancing.
 	#Range: > 0
-	MaxRange = 100
+	MaxRange = 50
 	#Number of operations that can be undone
 	#Range: > 0
-	UndoHistory = 3
+	UndoHistory = 10
 	#Place blocks below you while falling > 10 blocks with angel core (Can be used to save you from drops/the void)
 	AngelFalling = false
 	#Blocks to treat equally when in Similar mode. Enter block IDs seperated by ;

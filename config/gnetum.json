@@ -156,9 +156,27 @@
       },
       "pass": 3
     },
+    "create_pattern_schematics:pattern_schematic": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
     "xaerominimap:xaero": {
       "enabled": {
         "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "travelersbackpack:travelers_backpack": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "emberstextapi:immersive_messages": {
+      "enabled": {
+        "value": "OFF"
       },
       "pass": 1
     },
@@ -347,6 +365,12 @@
         "value": "AUTO"
       },
       "pass": 2
+    },
+    "emberstextapi:legacy_immersive_messages": {
+      "enabled": {
+        "value": "OFF"
+      },
+      "pass": 3
     },
     "twilightforest:quest_ram_indicator": {
       "enabled": {

@@ -299,10 +299,10 @@ function showPlayerTip(player, item, title, description, duration) {
 NetworkEvents.dataReceived('lce_tip', event => {
 	const data = event.getData();
 	showPlayerTip(
-		event.getPlayer(), 
-		data.item, 
-		data.title, 
-		data.description, 
+		event.getPlayer(),
+		data.item,
+		data.title,
+		data.description,
 		data.duration
 	)
 });
@@ -313,14 +313,31 @@ KeyBindEvents.keyRelease('adjcore.what_is_this', event => {
 	const handItem = player.getMainHandItem();
 	if (handItem) {
 		const id = handItem.getItem().getId();
+		/**
+		 * @type {Array}
+		 */
 		const tip = global.LCETips[id];
 		if (!tip) return;
+
+		let title, description;
+		if (tip.length === 1) {
+			title = global.toTitleCase(id.split(':')[1].replace('_', ' '));
+			description = tip[0];
+		}
+		else {
+			title = tip[0];
+			description = tip[1]
+		}
+
+		if (!description.endsWith('.')) {
+			description = description + '.'; // cause I often forget
+		}
 
 		showPlayerTip(
 			event.getPlayer(),
 			id,
-			tip[0],
-			(!tip[1].endsWith('.')) ? tip[1] + '.' : tip[1], // cause I often forget
+			title,
+			description,
 			tip[2] ?? 200
 		)
 	}

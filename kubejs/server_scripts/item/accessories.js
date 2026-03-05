@@ -9,7 +9,7 @@ const tags = [
 	"curios:aether_pendant",
 	"curios:necklace",
 	"curios:bundle",
-	"curios:back",
+	// "curios:back",
 	"curios:head",
 	"curios:ring",
 	"curios:an_focus",

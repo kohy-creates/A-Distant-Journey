@@ -48,6 +48,8 @@ StartupEvents.postInit(event => {
 		['botania:rune_air', 'botania:rune_mana'],
 		['botania:rune_mana', 'botanicadds:rune_tp'],
 		['botanicadds:rune_tp', 'botanicadds:rune_energy'],
+
+		['architects_palette:chiseled_moonshale', 'architects_palette:moonshale_flagstone']
 	];
 
 	// Detect available materials

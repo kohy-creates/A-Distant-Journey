@@ -1,8 +1,8 @@
 global.LCETips = {
-	'botania:manasteel_ingot': ["Manasteel Ingot", "An ingot infused with Mana, a valuable crafting material."],
-	'ars_nouveau:source_gem': ["Mana Gem", "A gem transformed by Mana into something completely different, a valuable crafting material for magical items."],
+	'botania:manasteel_ingot': ['Manasteel Ingot', 'An ingot infused with Mana, a valuable crafting material.'],
+	'ars_nouveau:source_gem': ['Mana Gem', 'A gem transformed by Mana into something completely different, a valuable crafting material for magical items.'],
 	'ars_nouveau:magebloom_crop': ['Manabloom Seed', 'A seed infused with Mana, used to farm Manablooms.'],
-	'botania:terrasteel_ingot': ["Terrasteel Ingot", "A more powerful version of a Manasteel Ingot, infused with ludicrous amounts of Mana."],
+	'botania:terrasteel_ingot': ['Terrasteel Ingot', 'A more powerful version of a Manasteel Ingot, infused with ludicrous amounts of Mana.'],
 
 	'ars_nouveau:air_essence': ['Air Essence', 'Mana Gem imbued with elemental powers of air'],
 	'ars_nouveau:water_essence': ['Water Essence', 'Mana Gem imbued with elemental powers of water'],
@@ -20,7 +20,38 @@ global.LCETips = {
 	'botanicadds:rune_energy': ['Rune of Energy', 'Conjuration Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
 	'botania:rune_mana': ['Rune of Mana', 'Abjuration Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
 
-	'botania:spawner_mover': ["Life Aggregator", 'A one-time use tool that can move a singular Monster Spawner from anywhere to anywhere.'],
+	'botania:spawner_mover': ['Life Aggregator', 'A one-time use tool that can move a singular Monster Spawner from anywhere to anywhere.'],
 
 	'botania:pure_daisy': ['Pure Daisy', 'Automatically purifies and transforms blocks in a 3x3 area around it'],
+
+	'create:andesite_alloy': ['Andesite Alloy', 'A small cube of mixed stone and bits of metal. Material for plethora of different recipes.'],
+	'create:sand_paper': ['Used to polish certain materials, refining them into something usable for more advanced recipes.'],
+	'create:red_sand_paper': ['Used to polish certain materials, making them usable for more advanced recipes, and blocks, making them slightly prettier.'],
+
+	'zenith:zenith': ['Zenith', 'The Infinity +1 Sword. At this point, I don\'t think anything can even *try* to stop you.'],
+	'create:cardboard_sword': ['Cardboard Sword', 'I... I don\'t know why you\'d ever craft this thing honestly...'],
+
+	'botania:bergamute': ['Dampens down any sounds coming from nearby blocks or entities. Stacks multiple times for an even stronger effect.'],
+	'botania:overgrowth_seed': ['Turns Grass Blocks into Enchanted Soil when planted on them. Enchanted Soil causes functional flora planted on top of it to work faster than usual.'],
+	'botania:black_lotus': ['Throwing it into a Mana Pool will cause it to fall apart, instantly adding extra Mana to the pool.'],
+
+	'alexscaves:metal_swarf': ['A ferrous sand which has reactive properties to magnetism'],
+	'alexscaves:radrock': ['An irradiated variant of stone, seems to almost pulsate at a touch'],
+	'alexscaves:acidic_radrock': ['A particularly irradiated variant of stone, can cause Sulfur Buds to form and grow on Sulfur blocks if placed above one'],
+	'alexscaves:radrock_uranium_ore': ['The primary source of uranium. Volatile, it seems to hum when close'],
+	'alexscaves:siren_light': ['Dyeable light-emitting blocks that can be crafted using Bottles of Radon. Must be clicked with dye to change color'],
+	'alexscaves:sulfur': ['A yellow crystalline substance which drops sulfur dust. Can be grown by the droplets of acidic radrock'],
+	'alexscaves:tremorzilla_egg': ['A large neon egg made of the remains of other legendary monsters. Hatched by detonation'],
+	'alexscaves:underweed': ['A puny, yet hardy plant'],
+	'alexscaves:unrefined_waste': ['Disturbingly intact, yet sludgy. Used to craft waste drums or smelted into uranium shards. Made with toxic paste'],
+	'alexscaves:uranium_rod': ['Fuel for nuclear furnaces and surprisingly good at containing radioactivity. Used to reload rayguns!'],
+	'alexscaves:waste_drum': ['Favored by brainiacs, can be used to tame tremorzillas. Highly explosive. A byproduct of nuclear furnaces'],
+	'alexscaves:abyssal_altar': ['Used to trade with the Deep Ones. Pearls and Hearts of the Sea tend to attract their attention'],
+	'alexscaves:bone_worms': ['Wriggling organisms which feed on the carcasses of old'],
+	'alexscaves:porous_coprolith': ['An uncomfortably trypophobic cluster'],
+	'alexscaves:frostmint': ['Forms like icicles, and reacts explosively to purple soda'],
+	'alexscaves:sundrop': ['Luminous globs that, when near other sundrops, will form rainbows!'],
+
+	'evilcraft:creative_blood_drop': ['Creative mode only item to drain and fill infinite amounts of Blood'],
+	'evilcraft:biome_extract': ['Transforms the target area it lands on into the contained biome. Crafted at Environemntal Accumulators at a desired biome.'],
 }

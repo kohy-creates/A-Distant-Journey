@@ -226,7 +226,7 @@
 		enabled = true
 		#Gives the flammable effext also when merely stepping on lumisene. Turning this off if you think effects are not something that should be applied like that and just by drinking it.
 		#Range: 0 ~ 10000
-		flammable_from_lumisene_block_duration = 50
+		flammable_from_lumisene_block_duration = 70
 
 		[functional.lumisene.lumisene_bottle]
 			#Enables lumisene bottles and the flammable effect and lumisene bottles. Turn off if you think its over the top and doesnt match with existing effects

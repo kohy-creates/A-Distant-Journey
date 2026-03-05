@@ -1,0 +1,9 @@
+#Enable displaying and sending future villager trades
+enableFutureTrades = true
+#Send vanilla villager level in merchant packets (compat mode for trade UI mods)
+compatibilitySafePacketLevel = true
+#Villager professions where FVTV should not modify trade synchronization
+bypassedVillagerProfessions = ["minecraft:nitwit", "minecraft:none"]
+#If true, fallback to vanilla behavior when FVTV trade sync fails
+failOpenOnTradeSyncError = true
+

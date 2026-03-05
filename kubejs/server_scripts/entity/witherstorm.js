@@ -127,7 +127,7 @@ function onWSPhaseChange(newPhase, server) {
 	if (!server.isHardcore()) {
 		let command;
 		text.forEach(line => {
-			command = `/immersivemessages sendcustom @a {anchor:0,y:120,shake:1,obfuscate:1,color:"#af4bff",slideoutright:1,slideleft:1,wave:1} 7 ${line}`
+			command = `/eta queue @a[predicate=adj:in_overworld] status_messages "<dur:140><color col=#af4bff><fade in=10 out=10><obfuscate mode=reveal speed=150 direction=random><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${line}</offset></align></anchor></obfuscate></fade></color></dur>"`
 			server.runCommand(command)
 		})
 	}

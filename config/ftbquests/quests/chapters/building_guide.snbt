@@ -6,6 +6,25 @@
 	id: "65D630E0154A8068"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		description: [
+			"&6&lADJ&r is all about creating!"
+			""
+			"It doesn't stick hard to the plot it sets, leaving it up to &o&dyou&r to write your own stories and canons!"
+			""
+			"You have plethora of tools to express &dyourself&r, &dyour ideas&r in your creations. This achievement chapter is a short showcase of what you can do!"
+		]
+		disable_toast: true
+		id: "0D5DCB39BCFF5678"
+		subtitle: "&oRequires 'Benchmarking'"
+		tasks: [{
+			id: "74D5DCFA3EA9A8A0"
+			title: "Click to complete"
+			type: "checkmark"
+		}]
+		title: "&lClick to read"
+		x: 0.0d
+		y: -1.0d
+	}]
 	title: "Building Guide"
 }

@@ -86,6 +86,7 @@ LootJS.modifiers((event) => {
 
 	].concat(global.blacklistedItems)
 	removedFromLoot.forEach(e => {
+		if (!(e instanceof RegExp) && !Item.exists(e)) return;
 		event.addLootTableModifier(/.*/).removeLoot(e)
 	})
 
@@ -102,11 +103,49 @@ LootJS.modifiers((event) => {
 	}
 	event.addEntityLootModifier('minecraft:wither_skeleton')
 		.removeLoot('minecraft:wither_skeleton_skull')
-		.pool(skullFragmentDrop);
+		.pool(skullFragmentDrop)
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('travelersbackpack:wither').when(c => c.randomChanceWithLooting(0.002, 0.001)));
+		});
 	event.addEntityLootModifier('netherdepthsupgrade:wither_bonefish')
 		.removeLoot('minecraft:wither_skeleton_skull')
 		.pool(skullFragmentDrop);
 
+	event.addEntityLootModifier('minecraft:blaze')
+		.pool(skullFragmentDrop)
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('travelersbackpack:blaze').when(c => c.randomChanceWithLooting(0.002, 0.001)));
+		});
+
+	event.addEntityLootModifier('minecraft:warden')
+		.pool(skullFragmentDrop)
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('travelersbackpack:warden'));
+		});
+
+	event.addEntityLootModifier('minecraft:enderman')
+		.pool(skullFragmentDrop)
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('travelersbackpack:enderman').when(c => c.randomChanceWithLooting(0.002, 0.001)));
+		});
+
+	event.addEntityLootModifier('minecraft:ghast')
+		.pool(skullFragmentDrop)
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('travelersbackpack:ghast').when(c => c.randomChanceWithLooting(0.05, 0.025)));
+		});
+
+	event.addEntityLootModifier('mutantmonsters:mutant_creeper')
+		.pool(skullFragmentDrop)
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('travelersbackpack:creeper').when(c => c.randomChanceWithLooting(0.15, 0.075)));
+		});
 
 	/**
 	 * @param {$GroupedLootBuilder_} pool 
@@ -155,12 +194,16 @@ LootJS.modifiers((event) => {
 			pool.addLoot(LootEntry.of('minecraft:skeleton_skull').when(c => c.randomChanceWithLooting(0.02, 0.02)));
 		})
 		.pool(darkGemPool)
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('travelersbackpack:skeleton').when(c => c.randomChanceWithLooting(0.002, 0.001)));
+		});
 
 	event.addEntityLootModifier('minecraft:stray')
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('born_in_chaos_v1:permafrost_shard').limitCount([1, 2]).applyLootingBonus([0, 1]).when(c => c.randomChanceWithLooting(0.33, 0.17)))
-		})
+		});
 
 	event.addEntityLootModifier('alexsmobs:hammerhead_shark')
 		.pool((pool) => {
@@ -250,10 +293,14 @@ LootJS.modifiers((event) => {
 				.limitCount([0, 7])
 				.applyLootingBonus([0, 3])
 			);
+		})
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('travelersbackpack:sponge').when(c => c.randomChanceWithLooting(0.25, 0.08)));
 		});
 
 	function mcdw(type, item) {
-		return `mcdw:${type}_${item}`
+		return `mcdw:${type}_${item}`;
 	}
 
 	event.addEntityLootModifier('minecraft:witch')
@@ -275,11 +322,26 @@ LootJS.modifiers((event) => {
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of(mcdw('crossbow', 'veiled_crossbow')).withChance(0.15))
-		})
+		});
 
 	event.addLootTableModifier('aquamirae:chests/frozen_chest')
 		.pool((pool) => {
 			pool.rolls(1).randomChance(1);
 			pool.addLoot(LootEntry.of('twilightforest:ice_bow'))
-		})
+		});
+
+	event.addLootTableModifier(/^(?=.*\bvillage\b)(?=.*\bchest\b).*/)
+		.pool((pool) => {
+			pool.addLoot(LootEntry.of('travelersbackpack:villager').when(c => c.randomChance(0.05)))
+		});
+
+	event.addLootTableModifier('minecraft:chests/desert_pyramid')
+		.pool((pool) => {
+			pool.addLoot(LootEntry.of('travelersbackpack:sandstone').when(c => c.randomChance(0.15)))
+		});
+
+	event.addLootTableModifier('minecraft:chests/igloo_chest')
+		.pool((pool) => {
+			pool.addLoot(LootEntry.of('travelersbackpack:snow').when(c => c.randomChance(0.5)))
+		});
 });
