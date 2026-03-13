@@ -1,0 +1,58 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"tries": 10,
+		"xz_spread": 3,
+		"y_spread": 1,
+		"feature": {
+			"feature": {
+				"config": {
+					"to_place": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "adjblocks:cattail"
+						}
+					}
+				},
+				"type": "minecraft:simple_block"
+			},
+			"placement": [
+				{
+					"heightmap": "OCEAN_FLOOR",
+					"type": "minecraft:heightmap"
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_blocks",
+								"offset": [
+									0,
+									0,
+									0
+								],
+								"blocks": [
+									"minecraft:air",
+									"minecraft:water"
+								]
+							},
+							{
+								"type": "minecraft:matching_blocks",
+								"offset": [
+									0,
+									1,
+									0
+								],
+								"blocks": [
+									"minecraft:air"
+								]
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}

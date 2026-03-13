@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = com.plr.quitornot.client.screen.confirm.ConfirmScreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1768183987346
+  last_edited_time = 1772753212498
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:bb25f9d2-30ff-4634-a61a-79e4803e0315-1768183921617] = [groups:][instances:]
+  [loading_requirement_container_meta:65aa0b68-f36e-418e-b1a3-8c5e87a4c797-1772753194867] = [groups:][instances:]
 }
 
 customization {
@@ -38,8 +38,7 @@ vanilla_button {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  hoverlabel = I'm not done yet!
-  label = &cNo
+  label = <color col=F52727><pulse>No
   navigatable = true
   widget_active_state_requirement_container_identifier = bba3344a-7312-4dbd-b0e4-66946a6d5de0-1768183791653
   [loading_requirement_container_meta:bba3344a-7312-4dbd-b0e4-66946a6d5de0-1768183791653] = [groups:][instances:]
@@ -103,7 +102,7 @@ vanilla_button {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = &aYes
+  label = <color col=63FF5C><pulse>Yes
   navigatable = true
   widget_active_state_requirement_container_identifier = 7c23fece-af96-43f0-a787-e539a4878c11-1768183791653
   [loading_requirement_container_meta:7c23fece-af96-43f0-a787-e539a4878c11-1768183791653] = [groups:][instances:]
@@ -130,7 +129,7 @@ vanilla_button {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1203
   sticky_anchor = false
   anchor_point = mid-centered
   x = -106

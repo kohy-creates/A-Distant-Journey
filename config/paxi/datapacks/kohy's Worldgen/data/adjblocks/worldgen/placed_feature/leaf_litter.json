@@ -1,0 +1,25 @@
+{
+	"feature": "adjblocks:leaf_litter",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 2
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 17,
+			"noise_factor": 9,
+			"noise_offset": -0.2
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING_NO_LEAVES"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

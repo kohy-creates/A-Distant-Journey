@@ -52,7 +52,6 @@ const crops = {
 		'minecraft:sugar_cane',
 		'upgrade_aquatic:river_sapling',
 		'evilcraft:undead_sapling',
-		'ecologics:walnut_sapling',
 		'twilightforest:canopy_sapling',
 		'twilightforest:darkwood_sapling',
 		'aether_redux:blightwillow_sapling',

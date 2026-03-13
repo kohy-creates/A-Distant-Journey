@@ -8,11 +8,9 @@
 	quest_links: [ ]
 	quests: [{
 		description: [
-			"&6&lADJ&r is all about creating!"
+			"&6&lADJ&r is all about creating! And this is the second time I say this."
 			""
-			"It doesn't stick hard to the plot it sets, leaving it up to &o&dyou&r to write your own stories and canons!"
-			""
-			"You have plethora of tools to express &dyourself&r, &dyour ideas&r in your creations. This achievement chapter is a short showcase of what you can do!"
+			"I have selected a handful of both more and less popular mods for decorations, while also trying to highlight blocks from the &lmuch&r more popular ones that I felt like were kind of... going under the radar. "
 		]
 		disable_toast: true
 		id: "0D5DCB39BCFF5678"

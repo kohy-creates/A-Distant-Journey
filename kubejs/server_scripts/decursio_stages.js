@@ -1,9 +1,18 @@
 const CURRENT_STAGE = 'current_stage'
 const STAGE_TO_SET = 'next_stage'
 
-const gamerules = {
+const STAGES = [
+	'chapter_0',
+	'chapter_1',
+	'chapter_2',
+	'chapter_3',
+	'chapter_4',
+	'chapter_5'
+]
+
+const GAMERULES = {
 	'chapter_0': {
-		'artifacts.crystalHeart.healthBonus': '40',
+		'artifacts.crystalHeart.healthBonus': '20',
 		'artifacts.aquaDashers.enabled': false,
 		'artifacts.cloudInABottle.enabled': false,
 		'naughtinessMechanics': false,
@@ -11,6 +20,8 @@ const gamerules = {
 		'reducedDebugInfo': true,
 		'seasonalEvents': false,
 		'halloweenEvent': false,
+		'hungerLimitsSaturation': false,
+		'maxSaturation': '30',
 		// those few never change
 
 		'theappearanceoftheNightmareStalker': false,
@@ -57,7 +68,7 @@ const gamerules = {
  * @param {string} stage 
  */
 function changeGamerules(server, stage) {
-	const rulesToApply = gamerules[stage];
+	const rulesToApply = GAMERULES[stage];
 
 	if (!rulesToApply) return;
 
@@ -97,6 +108,7 @@ const chapterMessages = {
  * @param {string} stage 
  */
 function sendChapterAnnouncements(server, stage) {
+	console.log(stage)
 	chapterMessages[stage].forEach(msg => {
 		global.broadcast(server, msg);
 	})
@@ -155,16 +167,20 @@ ServerEvents.tick(event => {
 	if (stageToSet) {
 		const stageName = stageToSet.toString().replace("\"", "")
 		if (!persistentData.chapters.get(stageName)) {
-			console.log('Progressing the world to stage \'' + stageName + '\'')
-			persistentData.chapters.putString(CURRENT_STAGE, stageName);
-			server.runCommandSilent(
-				'/gamestate ' + stageName
-			);
-			persistentData.chapters.put(stageName, true);
-			changeGamerules(server, stageName);
-			sendChapterAnnouncements(server, stageName);
+			const currentIndex = Number.parseInt(stageName.replace('chapter_', ''));
+			for (let i = 1; i <= currentIndex; i++) {
+				let stageToGrant = STAGES[i];
+
+				persistentData.chapters.putString(CURRENT_STAGE, stageToGrant);
+				server.runCommandSilent('/gamestate ' + stageToGrant);
+
+				persistentData.chapters.putBoolean(stageToGrant, true);
+
+				changeGamerules(server, stageToGrant);
+				sendChapterAnnouncements(server, stageToGrant);
+			}
 		}
-		else console.log('Attempted to reapply a stage that was already present!')
+		else console.log('Attempted to jump to a stage that was already present!')
 		persistentData.chapters.remove(STAGE_TO_SET);
 	}
 })
@@ -249,14 +265,7 @@ BlockEvents.rightClicked('command_block', event => {
 
 const RESET_PROGRESS = 'adjresetprogress';
 const JUMP_PROGRESS = 'jumpprogress';
-const STAGES = [
-	'chapter_0',
-	'chapter_1',
-	'chapter_2',
-	'chapter_3',
-	'chapter_4',
-	'chapter_5'
-]
+
 ServerEvents.commandRegistry(event => {
 
 	const { commands: Commands, arguments: Arguments } = event

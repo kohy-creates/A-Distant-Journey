@@ -1,0 +1,36 @@
+{
+  "parent": "phantasm:find_choral_riff",
+  "criteria": {
+    "shot_choral_arrow": {
+      "conditions": {
+        "killing_blow": {
+          "direct_entity": {
+            "type": "phantasm:choral_arrow"
+          }
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.phantasm.use_choral_arrow.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "phantasm:choral_arrow"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.phantasm.use_choral_arrow"
+    }
+  },
+  "requirements": [
+    [
+      "shot_choral_arrow"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

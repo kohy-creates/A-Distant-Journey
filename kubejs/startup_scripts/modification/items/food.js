@@ -215,7 +215,7 @@ ItemEvents.modification(event => {
 		['endersdelight:uncanny_cookies', [4, 0.5]],
 		['endersdelight:chorus_stew', [6, 0.5]],
 		['endersdelight:endermite_stew', [6, 0.5]],
-		['dustydecorations:cooked_bratwurst', [8, 0.6]]
+		['dustydecorations:cooked_bratwurst', [8, 0.6]],
 
 	];
 
@@ -236,6 +236,10 @@ ItemEvents.modification(event => {
 		item.setFoodProperties(food => {
 			food.effect('hunger', duration("0:30"), 0, 0.3)
 		})
+	})
+
+	event.modify('minecraft:milk_bucket', item => {
+		item.setFoodProperties(food => { })
 	})
 
 	event.modify('minecraft:glistering_melon_slice', item => {

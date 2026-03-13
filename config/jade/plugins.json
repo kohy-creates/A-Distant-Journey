@@ -95,12 +95,6 @@
   "twilightforest": {
     "quest_ram_wool": true
   },
-  "reliquary": {
-    "pedestal": true,
-    "altar": true,
-    "mortar": true,
-    "cauldron": true
-  },
   "supplementaries": {
     "hat_stand": true
   },

@@ -1,0 +1,205 @@
+{
+	"type": "minecraft:flower",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:weighted_state_provider",
+						"entries": [
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "north",
+										"flower_amount": "1"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "east",
+										"flower_amount": "1"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "south",
+										"flower_amount": "1"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "west",
+										"flower_amount": "1"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "north",
+										"flower_amount": "2"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "east",
+										"flower_amount": "2"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "south",
+										"flower_amount": "2"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "west",
+										"flower_amount": "2"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "north",
+										"flower_amount": "3"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "east",
+										"flower_amount": "3"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "south",
+										"flower_amount": "3"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "west",
+										"flower_amount": "3"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "north",
+										"flower_amount": "4"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "east",
+										"flower_amount": "4"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "south",
+										"flower_amount": "4"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "adjblocks:leaf_litter",
+									"Properties": {
+										"facing": "west",
+										"flower_amount": "4"
+									}
+								},
+								"weight": 1
+							}
+						]
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_blocks",
+								"blocks": [
+									"air"
+								]
+							},
+							{
+								"type": "minecraft:matching_blocks",
+								"offset": [
+									0,
+									-1,
+									0
+								],
+								"blocks": "#adjblocks:leaf_litter_generates_on"
+							}
+						]
+					}
+				}
+			]
+		},
+		"tries": 64,
+		"xz_spread": 6,
+		"y_spread": 2
+	}
+}

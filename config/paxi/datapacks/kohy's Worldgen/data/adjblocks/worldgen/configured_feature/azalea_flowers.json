@@ -1,0 +1,13 @@
+{
+	"type": "adjblocks:azalea_flower_patch",
+	"config": {
+		"vertical_range": 4,
+		"xz_radius": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 4,
+				"min_inclusive": 2
+			}
+		}
+	}
+}

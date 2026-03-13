@@ -648,15 +648,6 @@
 			x: 18.0d
 			y: 39.5d
 		}
-		{
-			dependency: "3F2B685C8C008081"
-			height: 1.75d
-			image: "mythicmetals:block/metallurgium_block_top"
-			rotation: 45.0d
-			width: 1.75d
-			x: -10.0d
-			y: 22.5d
-		}
 	]
 	order_index: 1
 	quest_links: [ ]
@@ -1673,7 +1664,13 @@
 		}
 		{
 			dependencies: ["7D5AA020D867BC37"]
-			description: ["An important change to mention is that &cFurnaces can no longer cook food&r, meaning you have to use &6Campfires&r or &6Smokers&f."]
+			description: [
+				"An important change to mention is that &cFurnaces can no longer cook food&r, meaning you have to use &6Campfires&r or &6Smokers&f."
+				""
+				"Another important change is that &6food drains way slower&r than in vanilla. Moreover, max saturation you can have at a single time was &eincreased from 20 to 30&r. Values above 20 won't show up on your hunger bar, but if it is higher than that, you will receive a &ccomplimentary health regeneration buff&r!"
+				"{@pagebreak}"
+				"If you don't know what saturation is - uhm, don't worry about it kitten. Just know that if the apple that represents your hunger has a &6golden border&r, it's good."
+			]
 			id: "6D4E948B6A4CE5E1"
 			optional: true
 			shape: "rsquare"
@@ -4059,7 +4056,7 @@
 		}
 		{
 			dependencies: ["37D84A7023231586"]
-			description: ["&cHeart Lanterns&r give all players around then the &cRegeneration&r effect."]
+			description: ["&7&lHINT:&r &cHeart Lanterns&r increase life regeneration of all friendly mobs around them by 1 HP/s."]
 			id: "212630BDD7C97684"
 			optional: true
 			shape: "rsquare"
@@ -4290,28 +4287,6 @@
 			title: "Infinity +1"
 			x: 18.0d
 			y: 39.5d
-		}
-		{
-			dependencies: ["646540B4C4803445"]
-			icon_scale: 0.75d
-			id: "4405FD0CF84656FA"
-			shape: "diamond"
-			size: 1.5d
-			subtitle: "Trigger the Darkness of Midnight"
-			tasks: [{
-				id: "43675AB1D8869DCB"
-				item: {
-					Count: 1
-					id: "mythicmetals:metallurgium_sword"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Let The Devil Out!"
-			x: -10.0d
-			y: 22.5d
 		}
 	]
 	title: "Story"

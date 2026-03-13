@@ -17,12 +17,6 @@
 			livingwood = true
 			dreamwood = true
 
-		[types.wood_type.ecologics]
-			flowering_azalea = true
-			azalea = true
-			coconut = true
-			walnut = true
-
 		[types.wood_type.born_in_chaos_v1]
 			scorched = true
 
@@ -69,9 +63,6 @@
 		[types.wood_type.enhanced_mushrooms]
 			mushroom = true
 
-		[types.wood_type.snifferplus]
-			stone_pine = true
-
 		[types.wood_type.twilightforest]
 			twilight_oak = true
 			canopy = true
@@ -99,6 +90,9 @@
 		[types.wood_type.vinery]
 			dark_cherry = true
 
+		[types.wood_type.beachparty]
+			palm = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -120,10 +114,6 @@
 
 		[types.leaves_type.ars_elemental]
 			yellow_archwood = true
-
-		[types.leaves_type.ecologics]
-			coconut = true
-			walnut = true
 
 		[types.leaves_type.alexscaves]
 			ancient = true
@@ -152,9 +142,6 @@
 
 		[types.leaves_type.rediscovered]
 			ancient_cherry = true
-
-		[types.leaves_type.snifferplus]
-			stone_pine = true
 
 		[types.leaves_type.twilightdelight]
 			ironwood = true
@@ -197,6 +184,9 @@
 			grapevine = true
 			dark_cherry = true
 			apple = true
+
+		[types.leaves_type.beachparty]
+			palm = true
 
 	[types.cake]
 
@@ -272,12 +262,12 @@
 			metamorphic_mesa_bricks = true
 
 		[types.cut_block_type.phantasm]
-			polished_obsidian_bricks = true
-			crystal_tiles = true
-			void_crystal_tiles = true
 			pream = true
-			raw_purpur_bricks = true
-			cirite_bricks = true
+			polished_obsidian_brick = true
+			crystal_tile = true
+			void_crystal_tile = true
+			raw_purpur_brick = true
+			cirite_brick = true
 
 		[types.cut_block_type.galosphere]
 			silver_tiles = true
@@ -412,15 +402,6 @@
 			warped_stone_tiles = true
 			shiny_crystal_tiles = true
 			enderblob_moult_brick = true
-
-		[types.cut_block_type.ecologics]
-			coconut = true
-			seashell_tile = true
-			ice_brick = true
-			snow_brick = true
-			walnut = true
-			azalea = true
-			flowering_azalea = true
 
 		[types.cut_block_type.ars_nouveau]
 			sourcestone = true
@@ -710,9 +691,6 @@
 		[types.cut_block_type.enhanced_mushrooms]
 			mushroom = true
 
-		[types.cut_block_type.snifferplus]
-			stone_pine = true
-
 		[types.cut_block_type.twilightforest]
 			twilight_oak = true
 			canopy = true
@@ -816,6 +794,10 @@
 			dirt = true
 			grass = true
 			dirt_path = true
+
+		[types.cut_block_type.beachparty]
+			thatch = true
+			palm = true
 
 #Disables specific entries
 [entries]

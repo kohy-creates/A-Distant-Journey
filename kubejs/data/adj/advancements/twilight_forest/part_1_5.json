@@ -1,0 +1,18 @@
+{
+	"parent": "adj:root",
+	"display": {
+		"icon": {
+			"item": "dirt"
+		},
+		"description": "",
+		"title": "TF Part 1.5",
+		"announce_to_chat": false,
+		"show_toast": false,
+		"hidden": false
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "impossible"
+		}
+	}
+}

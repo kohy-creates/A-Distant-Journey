@@ -283,6 +283,7 @@ ServerEvents.recipes((event) => {
 		/netherexp:cooking\/.*netherite.*/,
 		'farmersdelight:bread_from_smelting',
 		'travelersbackpack:netherite',
+		'minecraft:charcoal'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -355,7 +356,6 @@ ServerEvents.recipes((event) => {
 			'#c:cinnamon': 'croptopia:cinnamon',
 			'twilightforest:fallen_leaves': '#leaves',
 			'croptopia:salt': 'galosphere:pink_salt_shard',
-			'croptopia:walnut': 'ecologics:walnut',
 			'croptopia:food_press': 'air',
 			'croptopia_additions:carbonation_machine': 'air',
 			'morered:stone_plate': 'smooth_stone_slab',
@@ -363,7 +363,9 @@ ServerEvents.recipes((event) => {
 			'croptopia:chocolate': 'neapolitan:chocolate_bar',
 			'upgrade_aquatic:thrasher_tooth': 'alexsmobs:shark_tooth',
 			'botania:abtruse_platform': 'ars_nouveau:mirrorweave',
-			'botania:spectral_platform': 'ars_nouveau:falseweave'
+			'botania:spectral_platform': 'ars_nouveau:falseweave',
+			'rubinated_nether:ruby': 'rediscovered:ruby',
+			'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
 		},
 		output: {
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
@@ -375,7 +377,9 @@ ServerEvents.recipes((event) => {
 			'create:copper_nugget': 'mythicmetals:copper_nugget',
 			'farmersdelight:rope': 'supplementaries:rope',
 			"totem_of_undying": "twilightforest:charm_of_life_1",
-			'create:bar_of_chocolate': 'neapolitan:chocolate_bar'
+			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
+			'rubinated_nether:ruby': 'rediscovered:ruby',
+			'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
 		}
 	};
 	for (const [input, replacement] of Object.entries(unificationMap.input)) {
@@ -390,6 +394,16 @@ ServerEvents.recipes((event) => {
 			replacement
 		);
 	};
+
+	event.recipes.farmersdelight.cutting('#adj:scorched_logs', '#pickaxes', [
+		'1x charcoal',
+		Item.of('charcoal').withChance(0.334)
+	]).id('adj:charcoal_cutting_manual_only');
+
+	event.recipes.create.milling([
+		'2x charcoal',
+		Item.of('charcoal').withChance(0.25)
+	], '#adj:scorched_logs', 120).id('adj:charcoal_from_milling');
 
 	event.shaped(
 		'hopper',
@@ -538,6 +552,7 @@ ServerEvents.recipes((event) => {
 		}
 	).id('adj:wooden_boots');
 
+	// Enchanting Table
 	event.shaped(
 		Item.of('enchantinginfuser:enchanting_infuser', 1),
 		[
@@ -552,6 +567,8 @@ ServerEvents.recipes((event) => {
 			C: 'crying_obsidian'
 		}
 	).id('adj:enchanting_table');
+
+	event.recipes.farmersdelight.cooking(['alexsmobs:triops_egg', 'alexsmobs:triops_egg', 'alexsmobs:stink_bottle'], 'alexsmobs:mosquito_repellent_stew', 1, 100, 'minecraft:bowl')
 
 	// Random and probably dumb idea, but make polished blocks actual polishing recipes
 	const toPolishedMap = {
@@ -4333,7 +4350,7 @@ ServerEvents.recipes((event) => {
 	itemsOnGround([['arrow', 10], 'netherexp:phasmo_shard'], ['netherexp:phasmo_arrow', 10]);
 
 	event.campfireCooking('torch', 'stick', 0, 30).id('adj:torch_from_campfire');
-	event.campfireCooking('charcoal', '#logs_that_burn', 0.15, 1200).id('adj:charcoal_from_campfire');
+	event.campfireCooking('born_in_chaos_v1:scorched_log', '#logs_that_burn', 0.15, 1000).id('adj:scorched_log'); // thank you RF for inspo
 	event.campfireCooking('leather', 'rotten_flesh', 0.02, 12000).id('adj:rotten_flesh_to_leather_10_minutes');
 
 	// Items to Farmer's Delight Stew recipes
@@ -5105,13 +5122,13 @@ ServerEvents.recipes((event) => {
 			['mythicmetals:deepslate_adamantite_ore', 1],
 		],
 		'aether:holystone': [
-			['aether_ores:holystone_coal_ore', 10500],
-			['aether_ores:holystone_iron_ore', 7500],
-			['aether_ores:holystone_gold_ore', 4500],
-			['aether_ores:holystone_emerald_ore', 800],
-			['aether_ores:holystone_redstone_ore', 2200],
-			['aether_ores:holystone_lapis_ore', 2000],
-			['aether_ores:holystone_diamond_ore', 250],
+			['aether_overworld_ores:holystone_coal_ore', 10500],
+			['aether_overworld_ores:holystone_iron_ore', 7500],
+			['aether_overworld_ores:holystone_gold_ore', 4500],
+			['aether_overworld_ores:holystone_emerald_ore', 800],
+			['aether_overworld_ores:holystone_redstone_ore', 2200],
+			['aether_overworld_ores:holystone_lapis_ore', 2000],
+			['aether_overworld_ores:holystone_diamond_ore', 250],
 			['ancient_aether:valkyrum_ore', 150],
 			['ancient_aether:aether_quartz_ore', 5000],
 			['aether:ambrosium_ore', 23500],
@@ -6345,7 +6362,7 @@ ServerEvents.recipes((event) => {
 
 		ingrOriginal.forEach(i => {
 			for (let id of i.getItemIds().toArray()) {
-				if (global.blacklistedItems.includes(id) || id === 'bowl') continue;
+				if (global.isItemDisabled(id) || id === 'bowl') continue;
 				ingr.push(i);
 			}
 		})
@@ -7200,6 +7217,23 @@ ServerEvents.recipes((event) => {
 		}
 	).id(`adj:toms_storage/tag_storage_filter`)
 
+	event.recipes.create.mechanical_crafting(
+		'toms_storage:ts.adv_wireless_terminal',
+		[
+			'    R',
+			'WW WT',
+			'MWRMT',
+			'SSSSS'
+		],
+		{
+			T: 'stick',
+			S: 'create:sturdy_sheet',
+			R: 'redstone_block',
+			M: 'morered:red_alloy_ingot',
+			W: 'morered:red_alloy_wire',
+		}
+	).id('adj:toms_storage/wireless_terminal')
+
 	// Create reworks
 	const CreateNewRecipes = [
 		'wrench',
@@ -7565,7 +7599,7 @@ ServerEvents.recipes((event) => {
 	event.recipes.create.mixing(
 		'create:pulp',
 		[
-			'3x paper',
+			'6x paper',
 			Fluid.water(250)
 		]
 	).id('adj:pulp_alternative')

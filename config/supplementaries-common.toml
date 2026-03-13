@@ -3,8 +3,8 @@
 	wind_vane = true
 	clock_block = true
 	redstone_illuminator = true
-	crank = true
-	cog_block = true
+	crank = false
+	cog_block = false
 	gold_door = true
 	gold_trapdoor = true
 	lock_block = true
@@ -19,10 +19,10 @@
 		max_text = 1000
 		#Maximum block range
 		#Range: 0 ~ 100000000
-		range = 128
+		range = 256
 
 	[redstone.bellows]
-		enabled = true
+		enabled = false
 		#bellows pushes air following this equation: 
 		#air=(sin(2PI*ticks/period)<0), with period = base_period-(redstone_power-1)*power_scaling 
 		#represents base period at 1 power
@@ -60,7 +60,7 @@
 		work_from_any_side = false
 
 	[redstone.turn_table]
-		enabled = true
+		enabled = false
 		#can rotate entities standing on it?
 		rotate_entities = true
 		#Allows turn table to shuffle containers content when rotated over horizontal axis
@@ -91,7 +91,7 @@
 
 [functional]
 	fodder = true
-	hourglass = true
+	hourglass = false
 
 	[functional.rope]
 		#Allows ropes to be supported & attached to solid block sides
@@ -130,7 +130,7 @@
 		#Allows all entities to be captured by cages and jars. Not meant for survival
 		allow_all_mobs = false
 		#Allows all baby mobs to be captured by cages
-		cage_allow_all_babies = false
+		cage_allow_all_babies = true
 		#Dynamically allows all small mobs inside cages depending on their hitbox size
 		cage_auto_detect = false
 		#Makes it so all (hostile) mobs captured by cages and jars will be set to persistent so they won't despawn when released
@@ -139,12 +139,12 @@
 		#Range: 1 ~ 100
 		health_threshold = 100
 		#When on, if a mob is tameable, it will only be capturable when tamed.
-		require_taming = true
+		require_taming = false
 
 	[functional.safe]
 		enabled = true
 		#Makes safes only breakable by their owner or by a player in creative
-		prevent_breaking = false
+		prevent_breaking = true
 		#Make safes simpler so they do not require keys:
 		#they will be bound to the first person that opens one and only that person will be able to interact with them
 		simple_safes = false
@@ -164,7 +164,7 @@
 		enabled = true
 		tipped_spikes = true
 		#Allows entities killed by spikes to drop loot as if they were killed by a player
-		player_loot = false
+		player_loot = true
 		#Alternative mode for bamboo spikes. Allows only harmful effects to be applied on them and they obtain infinite durability
 		only_allow_harmful_effects = true
 		#Populate the creative inventory with all tipped spikes variations
@@ -226,7 +226,7 @@
 		enabled = true
 		#Gives the flammable effext also when merely stepping on lumisene. Turning this off if you think effects are not something that should be applied like that and just by drinking it.
 		#Range: 0 ~ 10000
-		flammable_from_lumisene_block_duration = 70
+		flammable_from_lumisene_block_duration = 140
 
 		[functional.lumisene.lumisene_bottle]
 			#Enables lumisene bottles and the flammable effect and lumisene bottles. Turn off if you think its over the top and doesnt match with existing effects
@@ -288,7 +288,7 @@
 		replace_daub = true
 
 	[building.iron_gate]
-		enabled = true
+		enabled = false
 		#Allows two iron gates to be opened simultaneously when on top of the other
 		double_opening = true
 		#Makes iron (ang gold) gates behave like their door counterpart so for example iron gates will only be openable by redstone
@@ -388,7 +388,7 @@
 		angle = 69.44395478041653
 
 	[building.flower_box]
-		enabled = true
+		enabled = false
 		#Makes so flower boxes can only contain one tall flower item per block
 		simple_mode = true
 
@@ -399,7 +399,7 @@
 [tools]
 	candy = true
 	stasis = true
-	altimeter = true
+	altimeter = false
 	confetti_popper = true
 
 	[tools.quiver]
@@ -413,7 +413,7 @@
 		#Range: 0.0 ~ 1.0
 		quiver_skeleton_spawn_chance = 0.03
 		#Allows quiver to only be used when in offhand or in curio slot
-		only_works_in_curio = false
+		only_works_in_curio = true
 		#Arrows you pickup will try to go in a quiver if available provided it has some arrow of the same type
 		quiver_pickup = true
 		#If the chance for a skeleton to spawn with a quiver will be affected by local difficulty. If true, you wont ever see them on easy and very rarely on normal. Similar logic to equipment
@@ -449,7 +449,7 @@
 			feather_falling_prevents_breaking = true
 
 	[tools.wrench]
-		enabled = true
+		enabled = false
 		#Allows wrenches to bypass a block interaction action prioritizing their own when on said hand
 		#Allowed Values: MAIN_HAND, OFF_HAND, BOTH, NONE
 		bypass_when_on = "MAIN_HAND"
@@ -463,7 +463,7 @@
 		exclusive_to_crossbows = false
 
 	[tools.flute]
-		enabled = true
+		enabled = false
 		#Radius in which an unbound flute will search pets
 		#Range: 0 ~ 500
 		unbound_radius = 64
@@ -472,7 +472,7 @@
 		bound_distance = 64
 
 	[tools.bomb]
-		enabled = true
+		enabled = false
 		#Bomb explosion radius (damage depends on this)
 		#Range: 0.1 ~ 10.0
 		explosion_radius = 2.0
@@ -494,7 +494,7 @@
 			break_blocks = "WEAK"
 
 	[tools.slingshot]
-		enabled = true
+		enabled = false
 		#Slingshot range multiplier. Affect the initial projectile speed
 		#Range: 0.0 ~ 5.0
 		range_multiplier = 1.0
@@ -530,7 +530,7 @@
 	#Enable Creative Tab
 	creative_tab = true
 	#Set to false to disable custom dispenser behaviors (i.e: filling jars) if for some reason they are causing trouble
-	dispensers = true
+	dispensers = false
 	#Creates a creative tab full of filled jars
 	jar_tab = false
 	#Save generated resources to disk in a 'debug' folder in your game directory. Mainly for debug purposes but can be used to generate assets in all wood types for your mods :0
@@ -668,10 +668,10 @@
 		throwable_slimeballs = true
 		#Thrown slimeballs will shortly nerf the player jump height. Disable if you don't want this effect as it can be quite powerful
 		#Allowed Values: NEVER, ALWAYS, NORMAL_DIFFICULTY, HARD_DIFFICULTY
-		hinders_jump = "NORMAL_DIFFICULTY"
+		hinders_jump = "HARD_DIFFICULTY"
 		#Duration of the slimed effect in ticks
 		#Range: 0 ~ 1000
-		duration = 200
+		duration = 300
 		#Chance that a slime mob will apply slimed effect on successful attack. Multiplied by the slime size
 		#Range: 0.0 ~ 1.0
 		chance_per_slime_size = 0.15

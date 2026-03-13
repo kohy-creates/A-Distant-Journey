@@ -28,7 +28,7 @@
 			image: "create_connected:block/fan_catalyst_core"
 			rotation: 45.0d
 			width: 1.75d
-			x: 6.5d
+			x: 4.5d
 			y: -3.0d
 		}
 		{
@@ -657,7 +657,7 @@
 				}
 			]
 			title: "Industrial Elementalist"
-			x: 6.5d
+			x: 4.5d
 			y: -3.0d
 		}
 		{
@@ -743,6 +743,52 @@
 			title: "Too Hot! Too Hot!!"
 			x: 6.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["7EDDEFE957513B50"]
+			id: "79057ED4D8791502"
+			subtitle: "Craft a Dark Tank. Multiple can be combined to increase capacity."
+			tasks: [{
+				id: "5B7629229ECBF47A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "evilcraft:dark_tank"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "All That in A Block??"
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["78B17C7E84E71049"]
+			id: "7EDDEFE957513B50"
+			subtitle: "Craft a Fluid Tank"
+			tasks: [{
+				id: "325D1AF582AA8DCB"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			title: "Not Only Items!"
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7EDDEFE957513B50"]
+			id: "59124904F1A83FE8"
+			subtitle: "Craft a Void Tank"
+			tasks: [{
+				id: "78AB3894CB6704C4"
+				item: "createutilities:void_tank"
+				type: "item"
+			}]
+			title: "Open Source"
+			x: 0.5d
+			y: -5.5d
 		}
 	]
 	title: "Managing a Factory"

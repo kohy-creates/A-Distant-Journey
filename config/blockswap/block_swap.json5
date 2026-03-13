@@ -45,9 +45,9 @@
 		"minecraft:enchanting_table": "enchantinginfuser:enchanting_infuser",
 		"unusualend:infested_end_stone": "majruszsdifficulty:infested_end_stone",
 
-		"quark:thatch": "hearth_and_home:thatch",
-		"quark:thatch_slab": "hearth_and_home:thatch_slab",
-		"quark:thatch_stairs": "hearth_and_home:thatch_stairs",
+		"quark:thatch": "beachparty:thatch",
+		"quark:thatch_slab": "beachparty:thatch_slab",
+		"quark:thatch_stairs": "beachparty:thatch_stairs",
 
 		"quark:shingles": "hearth_and_home:shingles",
 		"quark:shingles_slab": "hearth_and_home:shingle_slab",
@@ -342,12 +342,9 @@
 
 		"phantasm:polished_obsidian": "cataclysm:polished_obsidian",
 		"phantasm:polished_obsidian_bricks": "cataclysm:polished_obsidian",
-		"phantasm:polished_obsidian_bricks_stairs": "cataclysm:polished_obsidian_stairs",
-		"phantasm:polished_obsidian_bricks_slab": "cataclysm:polished_obsidian_slab",
-		"v_slab_compat:phantasm/polished_obsidian_bricks_vertical_slab": "v_slab_compat:cataclysm/polished_obsidian_vertical_slab",
-
-		"ecologics:azalea_log": "quark:azalea_log",
-		"ecologics:flowering_azalea_log": "quark:azalea_log",
+		"phantasm:polished_obsidian_brick_stairs": "cataclysm:polished_obsidian_stairs",
+		"phantasm:polished_obsidian_brick_slab": "cataclysm:polished_obsidian_slab",
+		"v_slab_compat:phantasm/polished_obsidian_brick_vertical_slab": "v_slab_compat:cataclysm/polished_obsidian_vertical_slab",
 
 		"ancient_aether:grape_vine": "minecraft:air",
 		"aether_redux:fieldsproot_petals": "minecraft:air",

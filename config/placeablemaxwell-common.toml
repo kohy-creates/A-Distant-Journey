@@ -1,0 +1,6 @@
+#Enable holiday features.
+holidayFeaturesEnabled = true
+#Force a specific holiday. Set to NONE to disable.
+#Allowed Values: NONE, XMAS
+forceHoliday = "NONE"
+

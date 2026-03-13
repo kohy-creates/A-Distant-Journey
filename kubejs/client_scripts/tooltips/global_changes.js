@@ -195,6 +195,7 @@ ItemEvents.tooltip(event => {
 		}
 		else {
 			let weapon = false;
+			let food = false;
 			for (let i = 1; i < text.length; i++) {
 				let line = text[i].toString();
 				if (line.includes('color=dark_green') && line.includes('attack_damage')) weapon = true;
@@ -222,6 +223,28 @@ ItemEvents.tooltip(event => {
 				else if (line.includes('mainhand') && Object.keys(global.arrowDamage).includes(item.getId())) {
 					text.remove(i);
 					text.add(i, Text.gray('When used as Ammo:'))
+				}
+				else if (item.getItem().getFoodProperties() != null) {
+					if (line.includes('mainhand')) {
+						text.remove(i);
+						text.add(i, Text.gray('When eaten:'));
+					}
+					else if (line.includes('color=blue') && line.includes('Hunger Restored')) {
+						const match = line.match(/attributeslib\.value\.flat', args=\[([\d.]+)\]/);
+						if (match) {
+							const number = parseFloat(match[1]); // use parseFloat instead of parseInt
+							text.remove(i);
+							text.add(i, Text.darkGreen(' Restores ' + number + ' Hunger'));
+						}
+					}
+					else if (line.includes('color=blue') && line.includes('Saturation Restored')) {
+						const match = line.match(/attributeslib\.value\.flat', args=\[([\d.]+)\]/);
+						if (match) {
+							const number = parseFloat(match[1]); // use parseFloat
+							text.remove(i);
+							text.add(i, Text.darkGreen(' Restores ' + number + ' Saturation'));
+						}
+					}
 				}
 				else if (weapon && line.includes('color=blue') && line.includes('attributeslib:crit_chance')) {
 					const match = line.match(/attributeslib\.value\.percent', args=\[(\d+)\]/);

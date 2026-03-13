@@ -228,6 +228,94 @@
       "is_scaled_by_crd": false
     },
     "mob_groups": {
+      "barrel_zombie": {
+        "required_game_stage": "chapter_1",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:barrel_zombie",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:zombie_fisherman",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "bonescaller": {
+        "required_game_stage": "chapter_2",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:bonescaller",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:door_knight",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "fallen_chaos_knight": {
+        "required_game_stage": "chapter_3",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:dark_vortex",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "mother_spider": {
+        "required_game_stage": "chapter_3",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:mother_spider",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 2,
+          "max": 2
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:swarmer",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
       "piglins": {
         "required_game_stage": "normal",
         "chance": 0.25,
@@ -249,6 +337,52 @@
           }
         ]
       },
+      "seared_spirit": {
+        "required_game_stage": "chapter_3",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:seared_spirit",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 2,
+          "max": 4
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:firelight",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:bone_imp",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "skeleton_demoman": {
+        "required_game_stage": "chapter_1",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:skeleton_demoman",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:skeleton_demoman",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
       "skeletons": {
         "required_game_stage": "normal",
         "chance": 0.1,
@@ -267,6 +401,130 @@
           {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:mob_groups/skeleton_sidekick"
+          }
+        ]
+      },
+      "spirit_guide": {
+        "required_game_stage": "chapter_3",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:spirit_guide",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 2,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:siamese_skeletons",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "spiritof_chaos": {
+        "required_game_stage": "master",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:mother_spider",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:dire_hound_leader",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:glutton_fish",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:nightmare_stalker",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:missioner",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:krampus",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:sir_pumpkinhead",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:supreme_bonescaller",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:lifestealer_true_form",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 1
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "supreme_bonescaller": {
+        "required_game_stage": "chapter_3",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:supreme_bonescaller",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_thrasher",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "swarmer": {
+        "required_game_stage": "chapter_3",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:swarmer",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:bloody_gadfly",
+            "equipment": "minecraft:"
           }
         ]
       },
@@ -399,6 +657,7 @@
         "is_scaled_by_crd": false,
         "entity_type": "born_in_chaos_v1:skeleton_thrasher",
         "effect": {
+          "id": "kubejs:armor_shred",
           "amplifier": 1,
           "duration": 40.0
         }
@@ -409,6 +668,7 @@
         "is_scaled_by_crd": false,
         "entity_type": "born_in_chaos_v1:skeleton_thrasher_not_despawn",
         "effect": {
+          "id": "kubejs:armor_shred",
           "amplifier": 1,
           "duration": 20.0
         }
@@ -417,53 +677,12 @@
     "mobs_spawn_stronger": {
       "is_enabled": false,
       "health_bonus": {
-        "__default": 0.0,
-        "chapter_1": 0.2,
-        "chapter_2": 0.5,
-        "chapter_3": 0.8,
-        "chapter_4": 1.4,
-        "chapter_5": 2.0
+        "__default": 0.0
       },
       "damage_bonus": {
-        "__default": 0.0,
-        "chapter_1": 0.1,
-        "chapter_2": 0.3,
-        "chapter_3": 0.5,
-        "chapter_4": 0.9,
-        "chapter_5": 1.2
+        "__default": 0.0
       },
-      "excluded_mobs": [
-        "witherstormmod:witherstorm",
-        "witherstormmod:command_block",
-        "witherstormmod:tentacle",
-        "witherstormmod:tentacle_spike",
-        "witherstormmod:wither_storm",
-        "witherstormmod:wither_storm_head",
-        "witherstormmod:wither_storm_segment",
-        "witherstormmod:withered_symbiont",
-        "botania:doppleganger",
-        "cataclysm:ignis",
-        "cataclysm:netherite_monstrosity",
-        "cataclysm:ender_guardian",
-        "cataclysm:the_harbinger",
-        "cataclysm:the_leviathan",
-        "cataclysm:ancient_remnant",
-        "cataclysm:maledictus",
-        "cataclysm:scylla",
-        "unusualend:endstone_golem",
-        "unusualend:enderblob_queen",
-        "minecraft:ender_dragon",
-        "minecraft:wither",
-        "minecraft:warden",
-        "ars_nouveau:wilden_boss",
-        "aether:slider",
-        "aether:valkyrie_queen",
-        "aether:sun_spirit",
-        "alexscaves:luxtructosaurus",
-        "the_bumblezone:cosmic_crystal_entity",
-        "lost_aether_content:aerwhale_king",
-        "rediscovered:red_dragon"
-      ]
+      "excluded_mobs": []
     },
     "pillager_with_fireworks": {
       "is_enabled": true,
@@ -494,7 +713,7 @@
       "is_scaled_by_crd": true
     },
     "spawn_player_zombie": {
-      "is_enabled": true,
+      "is_enabled": false,
       "required_game_stage": "normal",
       "chance": 1.0,
       "is_scaled_by_crd": false,
@@ -524,10 +743,10 @@
     "reset_all_participants_kills": true,
     "wave_duration": 1200.0,
     "preparing_duration": 12.0,
-    "highlight_delay": 300.0,
+    "highlight_delay": 30.0,
     "extra_size_ratio_per_player": 0.5,
     "area_radius": 60,
-    "kill_requirement": 500,
+    "kill_requirement": 800,
     "kill_requirement_first": 200,
     "kill_requirement_warning": 5,
     "waves": [

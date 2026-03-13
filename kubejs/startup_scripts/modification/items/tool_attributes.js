@@ -38,11 +38,6 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 
 	// Weapons
 	if (event.slotType == 'mainhand') {
-		// if (id.includes('delight') && id.includes('knife')) {
-		// 	event.removeAttribute('generic.attack_speed');
-		// 	event.removeAttribute('generic.attack_damage');
-		// 	return;
-		// }
 
 		if (item instanceof $TieredItem && !(item instanceof $SwordItem)) {
 			let tier = item.getTier();
@@ -120,6 +115,13 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 		}
 		else if (global.arrowDamage[id]) {
 			event.addModifier('kubejs:ranged_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Ranged Damage', global.arrowDamage[id], 'addition'))
+		}
+
+		let food = item.getFoodProperties();
+		if (food != null) {
+			let uuid = '8c7e24a4-e4e0-4183-b011-8771358e6b50';
+			event.addModifier('kubejs:food.hunger', new $AttributeModifier(uuid, 'Food Hunger', food.getNutrition(), 'addition'));
+			event.addModifier('kubejs:food.saturation', new $AttributeModifier(uuid, 'Food Hunger', food.getNutrition() * food.getSaturationModifier(), 'addition'));
 		}
 	}
 

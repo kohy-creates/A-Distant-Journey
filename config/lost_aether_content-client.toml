@@ -20,7 +20,7 @@
 	#
 	# Plays dynamic boss music during the fight with the Aerwhale King.
 	# Default: true
-	aerwhale_king_boss_music = true
+	aerwhale_king_boss_music = false
 	#
 	# Modifies how mountable Aether mobs feel while riding to resemble different versions of the mod. This has no effect on gameplay.
 	#

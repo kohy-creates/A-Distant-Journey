@@ -155,6 +155,14 @@
 			x: 24.0d
 			y: -9.0d
 		}
+		{
+			height: 1.75d
+			image: "mythicmetals:block/midas_gold_block_top"
+			rotation: 45.0d
+			width: 1.75d
+			x: 7.0d
+			y: 4.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
@@ -323,22 +331,6 @@
 			title: "Transporting Magic"
 			x: 8.0d
 			y: 0.5d
-		}
-		{
-			dependencies: ["35B5E5B6F7CC021D"]
-			description: [""]
-			id: "68A247EB4F6079CA"
-			optional: true
-			shape: "rsquare"
-			subtitle: "Craft a Diluted Mana Pool"
-			tasks: [{
-				id: "27238622CA6F7C1E"
-				item: "botania:diluted_pool"
-				type: "item"
-			}]
-			title: "Smaller Storage"
-			x: 9.0d
-			y: 1.5d
 		}
 		{
 			dependencies: ["35B5E5B6F7CC021D"]
@@ -710,8 +702,8 @@
 				type: "item"
 			}]
 			title: "It's Portable Though!"
-			x: 10.0d
-			y: 1.5d
+			x: 9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["54622828F37E8A7E"]
@@ -859,7 +851,7 @@
 			}]
 			title: "See More"
 			x: 11.0d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1807373293C4A183"]
@@ -1474,8 +1466,8 @@
 				type: "item"
 			}]
 			title: "Childhood Blues"
-			x: 11.0d
-			y: -0.5d
+			x: 12.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
@@ -2353,6 +2345,103 @@
 			}]
 			title: "Blood Money Deals"
 			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0AA4AD4290EE5366"]
+			icon: "experienceobelisk:cognitive_flux"
+			id: "56A3013493D0EBF3"
+			subtitle: "Mix some Cognitive Flux and smelt it into Cognitive Amalgams"
+			tasks: [
+				{
+					id: "73F994B338349114"
+					item: "experienceobelisk:cognitive_flux"
+					type: "item"
+				}
+				{
+					id: "6C278D0E46EEEC4C"
+					item: "experienceobelisk:cognitive_amalgam"
+					type: "item"
+				}
+			]
+			title: "Cognition"
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["217462FD5B23940F"]
+			icon: "experienceobelisk:attunement_staff"
+			id: "07251A7CB6D1996D"
+			subtitle: "Place down an Experience Fountain and bind it to an Obelisk to be able to gather and use Liquid Experience"
+			tasks: [
+				{
+					id: "4A9CBEBD2C641472"
+					item: "experienceobelisk:experience_fountain"
+					type: "item"
+				}
+				{
+					id: "342E5C2EF2C123F3"
+					item: "experienceobelisk:attunement_staff"
+					type: "item"
+				}
+			]
+			title: "Fountain of Wisdom"
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["07251A7CB6D1996D"]
+			icon_scale: 0.75d
+			id: "172F69DA002C34E2"
+			rewards: [{
+				id: "5C17C2C218CD98F4"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Enchant a Golden Apple"
+			tasks: [{
+				id: "7BEC2837B5C77C92"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			title: "OVERPOWERED!!"
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["217462FD5B23940F"]
+			id: "34DE119F9947227A"
+			subtitle: "Create a Molecular Metamorpher"
+			tasks: [{
+				id: "65840A4DDD90A565"
+				item: {
+					Count: 1
+					id: "experienceobelisk:molecular_metamorpher"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Gamma Radiation"
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["56A3013493D0EBF3"]
+			id: "217462FD5B23940F"
+			subtitle: "Craft an Experience Obelisk to store and liquify your Experience"
+			tasks: [{
+				id: "74C1BF6ACB24CAB6"
+				item: {
+					Count: 1
+					id: "experienceobelisk:experience_obelisk"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Experience Bank"
+			x: 10.0d
 			y: 2.5d
 		}
 	]

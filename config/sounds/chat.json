@@ -24,6 +24,6 @@
 		"@kohara_"
 	],
 	"ignoreSystemChats": false,
-	"enableChatSoundCooldown": false,
-	"chatSoundCooldown": 0.5
+	"enableChatSoundCooldown": true,
+	"chatSoundCooldown": 0.05
 }

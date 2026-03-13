@@ -1,0 +1,45 @@
+{
+  "parent": "adj:root",
+  "criteria": {
+    "is_acidburnt_abysses": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biome": "phantasm:acidburnt_abysses",
+              "position": {
+                "y": {
+                  "max": 256.0,
+                  "min": 50.0
+                }
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.phantasm.find_acidburnt_abysses.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "phantasm:acidic_nihilium"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.phantasm.find_acidburnt_abysses"
+    }
+  },
+  "requirements": [
+    [
+      "is_acidburnt_abysses"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

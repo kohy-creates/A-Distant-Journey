@@ -1,0 +1,17 @@
+var allMods = ModListUtils.getCurrentModList(true);
+var mods = allMods.stream().toMap(m -> m.modId, m -> m);
+
+var m_essential_container = mods.get("essential-container");
+if (m_essential_container != null) {
+    var warn = Startup.addCrashWarning("⚠️ <strong>Essentails detected</strong>! ⚠️\n\nEssentials mod is redudant as an alternative is already present in the modpack - E4MC. Just press 'Host World' button in the pause menu.");
+    warn.withModActions(m_essential_container);
+    Startup.markForCrash();
+}
+
+var m_optifine = mods.get("optifine");
+if (m_optifine != null) {
+    var warn = Startup.addCrashWarning("⚠️ <strong>Optifine detected</strong>! ⚠️\n\nOptiFine is incompatible with many modern mods and is also redundant due to how many performance mods are already included (with all of them greatly outperforming it).");
+    warn.withModActions(m_optifine);
+    Startup.markForCrash();
+}
+

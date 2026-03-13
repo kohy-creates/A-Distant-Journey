@@ -1,0 +1,25 @@
+{
+	"feature": "adjblocks:wildflowers_red",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 3
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 15,
+			"noise_factor": 12,
+			"noise_offset": -0.02
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

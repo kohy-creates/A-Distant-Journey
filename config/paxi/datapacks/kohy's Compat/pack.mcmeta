@@ -6,19 +6,15 @@
 	"filter": {
 		"block": [
 			{
-				"path": "^advancements/recipes.*$"
+				"path": "^advancements/recipes/.*$"
 			},
 			{
-				"namespace": "^(?!adj$|born_in_chaos_v1$|true_ending$|unusualend$|twilightforest$)",
+				"namespace": "^(?!(adj|born_in_chaos_v1|true_ending|unusualend|phantasm|twilightforest|minecraft)$).+",
 				"path": "^advancements/.*$"
 			},
 			{
-				"namespace": "^(evilcraft$|croptopia$|travelersbackpack$)",
-				"path": "^loot_modifiers/.*$"
-			},
-			{
-				"namespace": "^travelersbackpack$",
-				"path": "^loot_tables/blocks/.*$"
+				"namespace": "^trofers$",
+				"path": "^trofers/.*$"
 			}
 		]
 	}

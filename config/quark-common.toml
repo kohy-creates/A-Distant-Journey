@@ -108,7 +108,7 @@
 		"Delayed Update List" = ["minecraft:dispenser", "minecraft:dropper"]
 
 [building]
-	"Celebratory Lamps" = true
+	"Celebratory Lamps" = false
 	"Compressed Blocks" = true
 	"Duskbound Blocks" = true
 	"Framed Glass" = true
@@ -1347,7 +1347,7 @@
 				"Is Blacklist" = false
 
 [mobs]
-	Crabs = false
+	Crabs = true
 	Forgotten = true
 	Foxhound = true
 	Shiba = true
@@ -1389,7 +1389,7 @@
 
 	[mobs.foxhound]
 		#The chance coal will tame a foxhound
-		"Tame Chance" = 0.05
+		"Tame Chance" = 0.12
 		"Foxhounds Speed Up Furnaces" = true
 
 		[mobs.foxhound.spawn_config]
@@ -1458,8 +1458,8 @@
 					"Is Blacklist" = true
 
 	[mobs.stonelings]
-		"Max Y Level" = 0
-		"Enable Diamond Heart" = true
+		"Max Y Level" = 32
+		"Enable Diamond Heart" = false
 		#When enabled, stonelings are much more aggressive in checking for players
 		"Cautious Stonelings" = false
 		"Tamable Stonelings" = true
@@ -1476,7 +1476,7 @@
 			#Allowed values: [1,)
 			"Min Group Size" = 1
 			#Allowed values: [1,)
-			"Max Group Size" = 1
+			"Max Group Size" = 2
 
 			[mobs.stonelings.spawn_config.biomes]
 
@@ -1749,7 +1749,7 @@
 		"Village Spawn Nerf" = false
 		#Distance at which villages will spawn as normal. Effect scales linearly from world spawn
 		"Village Spawn Nerf Distance" = 350
-		"Non Griefing Entities" = ["minecraft:enderman"]
+		"Non Griefing Entities" = ["minecraft:enderman", "minecraft:ender_dragon"]
 		"Elytra Allowed Dimensions" = ["minecraft:the_end"]
 
 	[experimental.overlay_shader]

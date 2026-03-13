@@ -1,11 +1,10 @@
 const vengeanceSpiritBanned = [
-	global.bossMobs,
 	'evilcraft:vengeance_spirit',
 	'evilcraft:controlled_zombie',
 	'evilcraft:werewolf',
 	'window_box:marker',
 	'window_box:fake_player'
-]
+].concat(global.bossMobs)
 
 EntityEvents.spawned(event => {
 	const entity = event.getEntity();

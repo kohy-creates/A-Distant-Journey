@@ -322,5 +322,31 @@
 		},
 		"texture": "quark:attribute/attack_damage",
 		"compare": "higher_better"
+	},
+	"kubejs:food.hunger": {
+		"display": {
+			"mainhand": "flat",
+			"offhand": "flat",
+			"feet": "flat",
+			"legs": "flat",
+			"chest": "flat",
+			"head": "flat",
+			"potion": "flat"
+		},
+		"texture": "kohara:attribute/hunger",
+		"compare": "higher_better"
+	},
+	"kubejs:food.saturation": {
+		"display": {
+			"mainhand": "flat",
+			"offhand": "flat",
+			"feet": "flat",
+			"legs": "flat",
+			"chest": "flat",
+			"head": "flat",
+			"potion": "flat"
+		},
+		"texture": "kohara:attribute/saturation",
+		"compare": "higher_better"
 	}
 }

@@ -1,0 +1,45 @@
+{
+  "parent": "adj:root",
+  "criteria": {
+    "is_dreaming_den": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biome": "phantasm:dreaming_den"
+            },
+            "position": {
+              "y": {
+                "min": 32.0,
+                "max": 255.0
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.phantasm.find_dreaming_den.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "phantasm:vivid_nihilium"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.phantasm.find_dreaming_den"
+    }
+  },
+  "requirements": [
+    [
+      "is_dreaming_den"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

@@ -48,7 +48,12 @@ const replaceItemsMap = {
 	'twilightforest:charm_of_keeping_1': 'twilightforest:charm_of_life_1',
 	'alexscaves:banana': 'neapolitan:banana',
 	'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
-	'upgrade_aquatic:thrasher_tooth': 'alexsmobs:shark_tooth'
+	'upgrade_aquatic:thrasher_tooth': 'alexsmobs:shark_tooth',
+
+	'rubinated_nether:ruby': 'rediscovered:ruby',
+	'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
+
+	'minecraft:shield': 'shieldexp:iron_shield'
 }
 
 LootJS.modifiers((event) => {
@@ -58,6 +63,7 @@ LootJS.modifiers((event) => {
 	}
 
 	const removedFromLoot = [
+		/travelersbackpack/,
 		/quark\:.*_shard/,
 		'artifacts:everlasting_beef',
 		'twilightforest:raw_ironwood',
@@ -86,8 +92,17 @@ LootJS.modifiers((event) => {
 
 	].concat(global.blacklistedItems)
 	removedFromLoot.forEach(e => {
-		if (!(e instanceof RegExp) && !Item.exists(e)) return;
 		event.addLootTableModifier(/.*/).removeLoot(e)
+	})
+
+	const removeModifiersFromMods = [
+		'terra_curio',
+		'evilcraft',
+		'croptopia',
+		'travelersbackpack'
+	]
+	removeModifiersFromMods.forEach(mod => {
+		event.removeGlobalModifier(`@${mod}`);
 	})
 
 	/**

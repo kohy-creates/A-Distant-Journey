@@ -1,7 +1,7 @@
 StartupEvents.postInit(event => {
 
 	// No need to run this on dedicated servers
-	// Idk how much of an optimization tgat is, but it's always something
+	// Idk how much of an optimization that is, but it's always something
 	if (!Platform.isClientEnvironment()) return;
 
 	// Other order overwrites
@@ -66,8 +66,6 @@ StartupEvents.postInit(event => {
 		mcdwItems = [];
 
 	const ignoredWoodTypes = [
-		'ecologics:azalea',
-		'ecologics:flowering_azalea',
 		'botania:mossy_livingwood',
 		'botania:mossy_dreamwood',
 		'botania:shimmerwood',
@@ -194,8 +192,7 @@ StartupEvents.postInit(event => {
 		'minecraft:vangrove',
 		'minecraft:cherry',
 		'minecraft:bamboo',
-		'ecologics:coconut',
-		'ecologics:walnut',
+		'beachparty:palm',
 		'botania:livingwood',
 		'botania:dreamwood',
 		'window_box:chthonic_yew',
@@ -334,10 +331,6 @@ StartupEvents.postInit(event => {
 					}
 					break;
 				}
-				case 'ecologis:flowering_azalea':
-				case 'ecologics:azalea': {
-					continue;
-				}
 				case 'upgrade_aquatic:driftwood': {
 					switch (furnitureType) {
 						case 'wood':
@@ -466,29 +459,6 @@ StartupEvents.postInit(event => {
 		}
 	}
 
-	// const colorOrder = [
-	// 	'white',
-	// 	'light_gray',
-	// 	'gray',
-	// 	'black',
-	// 	'brown',
-	// 	'red',
-	// 	'orange',
-	// 	'yellow',
-	// 	'lime',
-	// 	'green',
-	// 	'cyan',
-	// 	'light_blue',
-	// 	'blue',
-	// 	'purple',
-	// 	'magenta',
-	// 	'pink',
-	// ]
-
-	// colorOrder.forEach(color => {
-
-	// })
-
 	let addAfter = "mythicmetals:celestium_elytra";
 	for (let item of mcdwItems.sort()) {
 		EMIEdit.push([addAfter, item]);
@@ -515,7 +485,8 @@ StartupEvents.postInit(event => {
 			'item:minecraft:splash_potion',
 			'item:minecraft:tipped_arrow',
 			'item:alexscaves:jelly_bean',
-			'item:mythicmetals:tipped_runite_arrow'
+			'item:mythicmetals:tipped_runite_arrow',
+			'item:architects_palette:moonshale_flagstone'
 		],
 		added: [],
 		filters: [
@@ -526,7 +497,8 @@ StartupEvents.postInit(event => {
 			'/minecraft:tipped_arrow/',
 			'/mythicmetals:tipped_runite_arrow/',
 			'/alexscaves:jelly_bean/',
-			'/spawn_egg/'
+			'/spawn_egg/',
+			'/architects_palette:moonshale_flagstone/'
 		]
 	};
 
@@ -536,8 +508,19 @@ StartupEvents.postInit(event => {
 	EMIEdit.forEach(([after, item]) => {
 		edit.removed.push(stack(item));
 		edit.added.push({ stack: stack(item), after: stack(after) });
-		edit.filters.push(`/${item.replace('/', '\\/')}/`);
+		// edit.filters.push(`/${item.replace('/', '\\/')}/`);
 	});
+	global.blacklistedItems.forEach(i => {
+		let pattern;
+		if (i instanceof RegExp) {
+			let p = i.source;
+			pattern = `/${p}/`;
+		}
+		else {
+			pattern = `${i}`
+		}
+		edit.filters.push(pattern);
+	})
 
 	// // Add enchantment books
 	/** @type {any} */

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        }
+      ],
+      "recipe": {
+        "type": "create:crushing",
+        "ingredients": [
+          {
+            "item": "aether_overworld_ores:holystone_iron_ore"
+          }
+        ],
+        "processingTime": 350,
+        "results": [
+          {
+            "count": 2,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "chance": 0.25,
+            "item": "minecraft:raw_iron"
+          },
+          {
+            "chance": 0.75,
+            "item": "ars_nouveau:experience_gem"
+          },
+          {
+            "chance": 0.12,
+            "item": "aether:holystone"
+          }
+        ]
+      }
+    }
+  ]
+}

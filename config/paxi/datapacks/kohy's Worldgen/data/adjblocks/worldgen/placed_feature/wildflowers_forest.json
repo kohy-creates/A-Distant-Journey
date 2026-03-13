@@ -1,0 +1,25 @@
+{
+	"feature": "adjblocks:wildflowers_forest",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 2
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 24,
+			"noise_factor": 26,
+			"noise_offset": -0.02
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

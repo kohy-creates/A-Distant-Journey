@@ -17,7 +17,7 @@ backupsToKeep = 3
 #60 = each hour
 #1440 = each day
 #Range: 1 ~ 32767
-timer = 60
+timer = 120
 #Compression level:
 #  0  = no compression (low CPU usage, larger files)
 #  9  = maximum compression (high CPU usage, smaller files)

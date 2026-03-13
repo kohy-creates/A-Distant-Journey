@@ -1,7 +1,3 @@
-LootJS.modifiers((event) => {
-	event.removeGlobalModifier("@terra_curio");
-});
-
 const tags = [
 	"curios:aether_ring",
 	"curios:aether_cape",

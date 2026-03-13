@@ -1,3 +1,5 @@
+kubejs:food.hunger
+kubejs:food.saturation
 kubejs:harvest_level
 kubejs:mining_speed
 minecraft:generic.attack_damage

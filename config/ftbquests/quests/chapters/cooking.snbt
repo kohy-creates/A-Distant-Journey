@@ -8,11 +8,11 @@
 	quest_links: [ ]
 	quests: [{
 		description: [
-			"&6&lADJ&r is all about creating!"
+			"&6&lADJ&r is all about creating! This its the third and final time I am saying this."
 			""
-			"It doesn't stick hard to the plot it sets, leaving it up to &o&dyou&r to write your own stories and canons!"
+			"You lose hunger way slower in &6&lADJ&r, as it is kind of a secondary mechanic made to be FUN rather than ANNOYING to constantly maintain. I mean of course you still have to eat something once every few minutes, but it is still far less annoying than in the base game."
 			""
-			"You have plethora of tools to express &dyourself&r, &dyour ideas&r in your creations. This achievement chapter is a short showcase of what you can do!"
+			"Cook something funny, I believe in you."
 		]
 		disable_toast: true
 		id: "1E5E55D6C87BAA30"

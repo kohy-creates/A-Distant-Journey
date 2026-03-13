@@ -99,6 +99,16 @@ StartupEvents.registry('mob_effect', registry => {
 			'addition'
 		)
 
+	registry.create('overfed')
+		.color(Color.of('#F82423'))
+		.beneficial()
+		.modifyAttribute(
+			'adjcore:generic.health_regeneration',
+			'e5c460c4-5771-4951-a02c-5dab71bef3d0',
+			0.25,
+			'addition'
+		)
+
 	registry.create('prometheum_regeneration')
 		.color(Color.of('#F82423'))
 		.beneficial()

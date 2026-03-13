@@ -197,7 +197,10 @@ ClientEvents.lang('en_us', event => {
 		'travelersbackpack:chicken': 'Chicken Backpack',
 		'travelersbackpack:squid': 'Squid Backpack',
 		'travelersbackpack:villager': 'Villager Backpack',
-		'travelersbackpack:iron_golem': 'Iron Golem Backpack'
+		'travelersbackpack:iron_golem': 'Iron Golem Backpack',
+
+		'morered:red_alloy_wire': 'Redstone Cable',
+		'experienceobelisk:cognitium': 'Liquid Experience',
 	}
 
 	/** @type {Record<Internal.InputItem_, string>} */
@@ -259,7 +262,9 @@ ClientEvents.lang('en_us', event => {
 		'constructionwand:infinity_wand': 'Unobtanium Construction Wand',
 		'toms_storage:ts.item_filter': 'Storage Filter',
 		'toms_storage:ts.polymorphic_item_filter': 'Polymorphic Storage Filter',
-		'toms_storage:ts.tag_item_filter': 'Tag Storage Filter'
+		'toms_storage:ts.tag_item_filter': 'Tag Storage Filter',
+
+		'experienceobelisk:cognitium_bucket': 'Liquid Experience Bucket',
 	}
 
 	const entityRenames = {
@@ -293,15 +298,4 @@ ClientEvents.lang('en_us', event => {
 		event.renameItem(item, 'Ancient ' + name);
 	})
 
-	// global.quarkVerticalSlabs.forEach(slab => {
-	// 	let name = slab
-	// 		.replace('quark:', '')
-	// 		.replace('_vertical', '')
-	// 		.replace(/\_/g, ' ')
-	// 		.toLowerCase()
-	// 		.split(' ')
-	// 		.map(word => word.charAt(0).toUpperCase() + word.slice(1))
-	// 		.join(' ');
-	// 	event.renameBlock(slab, name)
-	// })
 })
