@@ -54,21 +54,21 @@ BlockEvents.rightClicked(event => {
 			player.addItemCooldown(item.id, 8);
 			player.level.spawnParticles("happy_villager", false, blockPos.x + 0.5, blockPos.y + 1.5, blockPos.z + 0.5, 1, 0.25, 1, 15, 0.01);
 		}
-		player.swing('main_hand', true)
+		player.swing('main_hand', true);
 		player.level.playSound(null, blockPos, 'item.bone_meal.use', 'neutral');
 	}
 
 	if (item.id == 'kubejs:eye_of_ethercraft' && block.id == 'create:blaze_burner') {
 		const pos = event.getBlock().pos;
-		//const blockEntity = world.getBlockEntity(pos);
+		const facing = event.getBlock().properties.facing;
 
 		event.getServer().runCommand(
-			'/execute in ' + event.getLevel().getDimension() + ' positioned ' + pos.x + ' ' + pos.y + ' ' + pos.z + ' run setblock ~ ~ ~ create:blaze_burner[blaze=seething,facing=north]'
-		)
+			'/execute in ' + event.getLevel().getDimension() + ' positioned ' + pos.x + ' ' + pos.y + ' ' + pos.z + ` run setblock ~ ~ ~ create:blaze_burner[blaze=seething,facing=${facing}]`
+		);
 		event.getServer().runCommand(
-			'/execute in ' + event.getLevel().getDimension() + ' positioned ' + pos.x + ' ' + pos.y + ' ' + pos.z + ' run data merge block ~ ~ ~ {burnTimeRemaining:6400,fuelLevel:2}'
-		)
-		player.addItemCooldown(item.id, 200)
-		player.swing('main_hand', true)
+			'/execute in ' + event.getLevel().getDimension() + ' positioned ' + pos.x + ' ' + pos.y + ' ' + pos.z + ' run data merge block ~ ~ ~ {burnTimeRemaining:12800,fuelLevel:2}'
+		);
+		player.addItemCooldown(item.id, 300);
+		player.swing('main_hand', true);
 	}
 })
