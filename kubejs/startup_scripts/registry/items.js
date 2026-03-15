@@ -1,4 +1,5 @@
 StartupEvents.registry('item', registry => {
+
 	// Misc items
 	registry.create('enchanters_guide', 'basic')
 		.unstackable()
@@ -6,18 +7,18 @@ StartupEvents.registry('item', registry => {
 		.displayName('Enchanter\'s Guide')
 		.rarity('uncommon')
 		.tooltip('§7You don\'t understand a single word inside')
-		.tooltip('§7Used to craft an Enchanting Table')
+		.tooltip('§7Used to craft an Enchanting Table');
 
 	registry.create('manasteel_sheet', 'basic')
 		.maxStackSize(64)
 		.texture('kubejs:item/manasteel_sheet')
 		.displayName('Manasteel Sheet')
-		.tooltip('§7Used to craft Manasteel Armor')
+		.tooltip('§7Used to craft Manasteel Armor');
 
 	registry.create('skull_fragment', 'basic')
 		.maxStackSize(64)
 		.texture('kubejs:item/skull_fragment')
-		.displayName('Skull Fragment')
+		.displayName('Skull Fragment');
 
 	registry.create('diamond_upgrade', 'smithing_template')
 		.helmetIcon().chestplateIcon().leggingsIcon().bootsIcon()
@@ -25,48 +26,65 @@ StartupEvents.registry('item', registry => {
 		.diamondIcon()
 		.appliesTo('Rose Gold Armor and Tools')
 		.ingredients('Another Diamond')
-		.texture('kubejs:item/diamond_upgrade')
+		.texture('kubejs:item/diamond_upgrade');
 
+	registry.create('map_atlas')
+		.unstackable()
+		.displayName('Atlas')
+		.tooltip('§7Provides a minimap and a world map')
+		.tooltip('§7while in your inventory')
+		.tooltip('§7Works from inside of a Backpack!')
+		.rarity('epic');
+
+	// Eye of Ethercraft pieces
+	for (let i = 0; i < 3; i++) {
+		registry.create(`ethercraft_piece_${i + 1}`)
+			.unstackable()
+			.displayName(`Piece of Ethercraft (#${i + 1})`)
+			.rarity('epic')
+	}
+
+	// Wooden Armor
 	registry.create('wooden_helmet', 'helmet')
 		.unstackable()
 		.maxDamage(110)
 		.displayName('Wooden Helmet')
-		.tier('wooden')
+		.tier('wooden');
+
 	registry.create('wooden_chestplate', 'chestplate')
 		.unstackable()
 		.maxDamage(110)
 		.displayName('Wooden Chestplate')
-		.tier('wooden')
+		.tier('wooden');
+
 	registry.create('wooden_leggings', 'leggings')
 		.unstackable()
 		.maxDamage(110)
 		.displayName('Wooden Leggings')
-		.tier('wooden')
+		.tier('wooden');
+
 	registry.create('wooden_boots', 'boots')
 		.unstackable()
 		.maxDamage(110)
 		.displayName('Wooden Boots')
-		.tier('wooden')
+		.tier('wooden');
 
-	registry.create('map_atlas')
-		.unstackable()
-		.displayName('Map Atlas')
-		.rarity('epic')
-
+	// Upgraded Sand Paper
 	registry.create('soul_sand_paper', 'create:sandpaper')
 		.displayName('Soul Sand Paper')
 		.unstackable()
-		.maxDamage(100)
+		.maxDamage(100);
 
 	registry.create('gravisand_paper', 'create:sandpaper')
 		.displayName('Gravisand Paper')
 		.unstackable()
-		.maxDamage(300)
+		.maxDamage(300);
 
 	registry.create('tainted_sand_paper', 'create:sandpaper')
 		.displayName('Tainted Sand Paper')
 		.unstackable()
-		.maxDamage(99999)
+		.maxDamage(99999);
+
 })
 
 ItemEvents.armorTierRegistry(event => {
