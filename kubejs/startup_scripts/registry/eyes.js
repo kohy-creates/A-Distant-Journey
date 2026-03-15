@@ -1,26 +1,140 @@
-global.eyeEffects = {}
+const $Player = Java.loadClass('net.minecraft.world.entity.player.Player');
 
+global.eyeEffects = {};
+
+/**
+ * Eye of Cinders on-tick effects:
+ *  - Fire Resistance if not on fire, similarly to Turtle Helmet's Water Breathing
+ * 	- Immunity to Wither
+ * 
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} stack 
+ */
 global.eyeEffects.cindersTick = function (slotContext, stack) {
-	slotContext.getWearer()
-		.addEffect(new $MobEffectInstance("fire_resistance", 10, 0, true, false, false))
+	const wearer = slotContext.getWearer();
+	if (!wearer.isOnFire()) {
+		wearer.addEffect(new $MobEffectInstance("fire_resistance", 18, 0, true, false, false));
+	}
+	wearer.removeEffect('minecraft:wither');
 };
 
+/**
+ * Eye of Angels on-tick effects:
+ * 	- Slow Falling if sneaking
+ * 
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} stack 
+ */
 global.eyeEffects.angelsTick = (slotContext, stack) => {
 	const wearer = slotContext.getWearer();
-	if (wearer.isPlayer() && wearer.isCrouching())
-		wearer.addEffect(new $MobEffectInstance('slow_falling', 10, 0, false, false, false))
+	if (wearer instanceof $Player && wearer.isCrouching()) {
+		wearer.addEffect(new $MobEffectInstance('slow_falling', 10, 0, false, false, false));
+	}
 };
 
-global.eyeEffects.desolationTick = function (slotContext, stack) { };
+/**
+ * Eye of Desolation on-tick effects:
+ * 	- Life regeneration bonus that increases as health goes down
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} stack 
+ */
+global.eyeEffects.desolationTick = function (slotContext, stack) {
+	if (!stack.hasNBT()) {
+		stack.nbt = {};
+	}
+	stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
+};
+/**
+ * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx 
+ */
+global.eyeEffects.desolationAttributeTick = function (ctx) {
+	const wearer = ctx.slotContext.getWearer();
+	const regenStrength = Math.max((1 - (wearer.getHealth() / wearer.getMaxHealth())) - 0.25, 0) * 8;
+	ctx.modify('adjcore:generic.health_regeneration', 'kubejs.dynamic.eye_of_desolation', regenStrength, 'addition');
+}
 
-global.eyeEffects.ethercraftTick = function (slotContext, stack) { };
+/**
+ * Eye of Ethercraft on-tick effects:
+ * 	- Block reach bonus that gets doubled while sneaking
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} stack 
+ */
+global.eyeEffects.ethercraftTick = function (slotContext, stack) {
+	if (!stack.hasNBT()) {
+		stack.nbt = {};
+	}
+	stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
+};
+/**
+ * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx 
+ */
+global.eyeEffects.ethercraftAttributeTick = function (ctx) {
+	const wearer = ctx.slotContext.getWearer();
+	if (wearer instanceof $Player) {
+		ctx.modify('forge:block_reach', 'kubejs.dynamic.eye_of_ethercraft', (wearer.isShiftKeyDown()) ? 6 : 3, 'addition');
+	}
+};
 
+/**
+ * 
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} stack 
+ */
 global.eyeEffects.dreamsTick = function (slotContext, stack) { };
 
+/**
+ * 
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} stack 
+ */
 global.eyeEffects.arcanumTick = function (slotContext, stack) { };
 
-global.eyeEffects.verdancyTick = function (slotContext, stack) { };
+/**
+ * 
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} stack 
+ */
+global.eyeEffects.verdancyTick = function (slotContext, stack) {
+	const wearer = slotContext.getWearer();
+	const blockBelow = wearer.level.getBlock(wearer.blockPosition.x, wearer.blockPosition.y, wearer.blockPosition.z);
+	if (blockBelow.getId() === 'minecraft:dirt') {
+		blockBelow.set('minecraft:grass_block');
+	}
+};
 
+/**
+ * Eye of Hedonism on-tick effects:
+ * 	- 0.5% chance per tick to feed the player by one point
+ * 
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} stack 
+ */
+global.eyeEffects.hedonismTick = function (slotContext, stack) {
+	const wearer = slotContext.getWearer();
+	if (wearer instanceof $Player) {
+		if (Math.random() <= 0.005) {
+			const hunger = wearer.getFoodLevel();
+			if (hunger >= 20) {
+				wearer.setSaturation(wearer.getSaturation() + 1)
+			}
+			else {
+				wearer.setFoodLevel(hunger + 1)
+			}
+		}
+	}
+};
+
+/**
+ * Eye of Curiosity on-tick effects:
+ * 	- Immunity to Slowness
+ * 
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} stack 
+ */
+global.eyeEffects.curiosityTick = function (slotContext, stack) {
+	const wearer = slotContext.getWearer();
+	wearer.removeEffect('minecraft:slowness');
+};
 
 StartupEvents.registry('item', event => {
 
@@ -41,7 +155,7 @@ StartupEvents.registry('item', event => {
 
 	function getAttrUuid() {
 		if (!eyeUUIDs[i]) {
-			console.error('Maximum amount of Eye slots were reached!');
+			console.error('Maximum amount of Eye slots was reached!');
 			return null;
 		}
 		return eyeUUIDs[i];
@@ -83,15 +197,9 @@ StartupEvents.registry('item', event => {
 				'addition'
 			)
 			.addAttribute(
-				'attributeslib:crit_chance',
-				getAttrUuid(),
-				0.15,
-				'addition'
-			)
-			.addAttribute(
 				'minecraft:generic.attack_speed',
 				getAttrUuid(),
-				-0.15,
+				-0.1,
 				'multiply_total'
 			)
 	);
@@ -118,7 +226,7 @@ StartupEvents.registry('item', event => {
 			.addAttribute(
 				'attributeslib:life_steal',
 				getAttrUuid(),
-				0.13,
+				0.09,
 				'addition'
 			)
 	);
@@ -130,24 +238,7 @@ StartupEvents.registry('item', event => {
 		'\'It\'s empty. Just like me\'',
 		CuriosJSCapabilityBuilder.create()
 			.curioTick((slotContext, stack) => global.eyeEffects.desolationTick(slotContext, stack))
-			.addAttribute(
-				'minecraft:generic.attack_damage',
-				getAttrUuid(),
-				0.2,
-				'multiply_total'
-			)
-			.addAttribute(
-				'minecraft:generic.attack_speed',
-				getAttrUuid(),
-				0.15,
-				'multiply_total'
-			)
-			.addAttribute(
-				'attributeslib:armor_shred',
-				getAttrUuid(),
-				15,
-				'addition'
-			)
+			.modifyAttribute((ctx) => global.eyeEffects.desolationAttributeTick(ctx))
 	);
 
 	registerEye(
@@ -157,12 +248,7 @@ StartupEvents.registry('item', event => {
 		'\'I tried to make Create enjoyable again\'',
 		CuriosJSCapabilityBuilder.create()
 			.curioTick((slotContext, stack) => global.eyeEffects.ethercraftTick(slotContext, stack))
-			.addAttribute(
-				'forge:block_reach',
-				getAttrUuid(),
-				3,
-				'addition'
-			)
+			.modifyAttribute(ctx => global.eyeEffects.ethercraftAttributeTick(ctx))
 	);
 
 	registerEye(
@@ -221,5 +307,23 @@ StartupEvents.registry('item', event => {
 		'\'Tech mod disguised as a magic mod tbh\'',
 		CuriosJSCapabilityBuilder.create()
 			.curioTick((slotContext, stack) => global.eyeEffects.verdancyTick(slotContext, stack))
+	)
+
+	registerEye(
+		'eye_of_hedonism',
+		'Eye of Hedonism',
+		'#b60000',
+		'\'The cheaper the wine, the better it is for the soul\'',
+		CuriosJSCapabilityBuilder.create()
+			.curioTick((slotContext, stack) => global.eyeEffects.hedonismTick(slotContext, stack))
+	)
+
+	registerEye(
+		'eye_of_exploration',
+		'Eye of Curiosity',
+		'#28f19e',
+		'\'This one was frustrating, wasn\'t it?\'',
+		CuriosJSCapabilityBuilder.create()
+			.curioTick((slotContext, stack) => global.eyeEffects.curiosityTick(slotContext, stack))
 	)
 })
