@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#392e26",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:draugr"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.draugr",
+				"color": "#392e26"
+			}
+		]
+	}
+}

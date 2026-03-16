@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#dbd1d1",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:carminite_ghastling"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.carminite_ghastling",
+				"color": "#dbd1d1"
+			}
+		]
+	}
+}

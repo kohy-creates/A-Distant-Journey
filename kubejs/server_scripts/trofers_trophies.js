@@ -7,6 +7,7 @@ const trophyConfig = {
     },
     joinedProgress: {
         'born_in_chaos_v1:phantom_creeper_copy': 'born_in_chaos_v1:phantom_creeper',
+        'majruszsdifficulty:giant': 'minecraft:giant'
     },
     disableTrophiesFor: [],
     noTrophyMessageFor: []
@@ -32,10 +33,10 @@ EntityEvents.death(event => {
     if (entity.getEntityType().getCategory().toString() === 'MONSTER') {
         let type = entity.getType();
         if (trophyConfig.disableTrophiesFor.includes(type)) return;
-        const player = event.getSource().getActual();
+        let player = event.getSource().getActual();
         if (player instanceof $Player) {
-            const server = event.getServer();
-            const data = server.getPersistentData();
+            let server = event.getServer();
+            let data = server.getPersistentData();
             if (!data.monsterKills) {
                 data.monsterKills = {};
             }
@@ -46,15 +47,15 @@ EntityEvents.death(event => {
                 data.monsterKills[type] = 0;
             }
             data.monsterKills[type]++;
-            const amountRequired = (trophyConfig.overrides[type]) ? trophyConfig.overrides[type] : 50;
+            let amountRequired = (trophyConfig.overrides[type]) ? trophyConfig.overrides[type] : 50;
             if (data.monsterKills[type] % amountRequired === 0) {
 
                 if (!trophyConfig.noTrophyMessageFor.includes(type)) {
                     server.runCommand(
-                        `/tellraw @a ["",{"selector":"${player.getUuid()}", "color": "yellow"},{"text": " has killed the ${getOrdinal(amountRequired)} ", "color": "yellow"},{"translate":"${entity.getEntityType().getDescriptionId()}", "color": "yellow"}]`
+                        `/tellraw @a ["",{"selector":"${player.getUuid()}", "color": "yellow"},{"text": " has killed the ${data.monsterKills[type]}${getOrdinal(data.monsterKills[type])} ", "color": "yellow"},{"translate":"${entity.getEntityType().getDescriptionId()}", "color": "yellow"}]`
                     );
                 }
-                player.give(Item.of('trofers:trophy', {}));
+                player.give(Item.of('trofers:large_plate', `{BlockEntityTag:{Trophy:'adj:trophies/${type.replace(':', '_')}'}}`));
             }
         }
     }

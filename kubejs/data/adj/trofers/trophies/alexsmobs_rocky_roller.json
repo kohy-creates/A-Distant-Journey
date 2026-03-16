@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#8a7b6f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexsmobs:rocky_roller"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexsmobs.rocky_roller",
+				"color": "#8a7b6f"
+			}
+		]
+	}
+}

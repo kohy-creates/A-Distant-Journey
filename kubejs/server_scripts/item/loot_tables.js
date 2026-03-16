@@ -106,6 +106,16 @@ LootJS.modifiers((event) => {
 	})
 
 	/**
+	 * Random seed drops from plants
+	 * @param {$GroupedLootBuilder_} pool 
+	 */
+	const seedFromPlantDrop = (pool) => {
+		pool.rolls(1);
+		pool.addLoot(LootEntry.of('#adj:seeds_from_grass');
+		);
+	}
+
+	/**
 	 * @param {$GroupedLootBuilder_} pool 
 	 */
 	const skullFragmentDrop = (pool) => {

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#464a57",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexsmobs:farseer"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexsmobs.farseer",
+				"color": "#464a57"
+			}
+		]
+	}
+}

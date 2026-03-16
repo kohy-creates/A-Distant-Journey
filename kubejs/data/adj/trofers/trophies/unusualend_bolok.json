@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#26517d",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "unusualend:bolok"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.unusualend.bolok",
+				"color": "#26517d"
+			}
+		]
+	}
+}

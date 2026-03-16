@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#b48b6a",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:helmet_crab"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.helmet_crab",
+				"color": "#b48b6a"
+			}
+		]
+	}
+}

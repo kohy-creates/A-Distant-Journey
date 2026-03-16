@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#360006",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:harbinger_cube"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.harbinger_cube",
+				"color": "#360006"
+			}
+		]
+	}
+}

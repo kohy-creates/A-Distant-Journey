@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#412f4b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:sickened_pillager"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.sickened_pillager",
+				"color": "#412f4b"
+			}
+		]
+	}
+}

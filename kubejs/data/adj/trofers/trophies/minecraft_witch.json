@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#43363e",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:witch"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.witch",
+				"color": "#43363e"
+			}
+		]
+	}
+}

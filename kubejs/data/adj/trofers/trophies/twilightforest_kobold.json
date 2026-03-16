@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#3a298b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:kobold"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.kobold",
+				"color": "#3a298b"
+			}
+		]
+	}
+}

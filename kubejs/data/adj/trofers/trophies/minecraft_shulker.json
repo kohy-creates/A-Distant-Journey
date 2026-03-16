@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#916d8a",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:shulker"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.shulker",
+				"color": "#916d8a"
+			}
+		]
+	}
+}

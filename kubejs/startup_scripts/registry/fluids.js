@@ -53,7 +53,7 @@ StartupEvents.registry('fluid', event => {
 		event.create(id)
 			.thinTexture(color)
 			.bucketColor(0x00FFFF)
-			.displayName(global.toTitleCase(id.replace('_', ' ').replace('_', ' ').replace('_', ' ')))
+			.displayName(Utils.toTitleCase(id.replace('_', ' ').replace('_', ' ').replace('_', ' ')))
 			.noBucket()
 			.noBlock()
 	}

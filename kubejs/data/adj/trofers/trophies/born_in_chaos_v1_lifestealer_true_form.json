@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#141417",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.25
+	},
+	"effects": {},
+	"entity": {
+		"type": "born_in_chaos_v1:lifestealer_true_form"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.born_in_chaos_v1.lifestealer_true_form",
+				"color": "#141417"
+			}
+		]
+	}
+}

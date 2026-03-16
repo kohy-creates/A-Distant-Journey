@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#a1a8ad",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:winter_wolf"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.winter_wolf",
+				"color": "#a1a8ad"
+			}
+		]
+	}
+}

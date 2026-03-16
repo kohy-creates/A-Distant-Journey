@@ -52,7 +52,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
+      "pass": 1
     },
     "xaeroworldmap:xaero_wm_crosshair_message": {
       "enabled": {
@@ -144,6 +144,12 @@
       },
       "pass": 3
     },
+    "fairylights:overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
     "minecraft:potion_icons": {
       "enabled": {
         "value": "AUTO"
@@ -182,7 +188,7 @@
     },
     "gnetum:minecraft_hand": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
       "pass": 1
     },
@@ -206,9 +212,9 @@
     },
     "minecraft:item_name": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
-      "pass": 2
+      "pass": 1
     },
     "minecraft:experience_bar": {
       "enabled": {
@@ -230,9 +236,9 @@
     },
     "minecraft:chat_panel": {
       "enabled": {
-        "value": "OFF"
+        "value": "AUTO"
       },
-      "pass": 1
+      "pass": 2
     },
     "supplementaries:slimed_overlay": {
       "enabled": {
@@ -437,6 +443,12 @@
         "value": "AUTO"
       },
       "pass": 1
+    },
+    "rubinated_nether:ruby_lens_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
     },
     "exposure:viewfinder": {
       "enabled": {

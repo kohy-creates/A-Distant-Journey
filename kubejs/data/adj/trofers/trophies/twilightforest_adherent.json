@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#05003a",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:adherent"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.adherent",
+				"color": "#05003a"
+			}
+		]
+	}
+}

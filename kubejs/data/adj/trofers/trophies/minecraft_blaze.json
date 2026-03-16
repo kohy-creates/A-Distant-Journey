@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#bf8820",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:blaze"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.blaze",
+				"color": "#bf8820"
+			}
+		]
+	}
+}

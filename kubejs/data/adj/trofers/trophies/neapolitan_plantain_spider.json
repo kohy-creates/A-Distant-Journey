@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#5b3e14",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "neapolitan:plantain_spider"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.neapolitan.plantain_spider",
+				"color": "#5b3e14"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#5e3f2f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:redcap_sapper"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.redcap_sapper",
+				"color": "#5e3f2f"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#100421",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:urchinkin"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.urchinkin",
+				"color": "#100421"
+			}
+		]
+	}
+}

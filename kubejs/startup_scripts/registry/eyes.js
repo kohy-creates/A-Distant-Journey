@@ -27,7 +27,7 @@ global.eyeEffects.cindersTick = function (slotContext, stack) {
  */
 global.eyeEffects.angelsTick = (slotContext, stack) => {
 	const wearer = slotContext.getWearer();
-	if (wearer instanceof $Player && wearer.isCrouching()) {
+	if (wearer instanceof $Player && wearer.isShiftKeyDown()) {
 		wearer.addEffect(new $MobEffectInstance('slow_falling', 10, 0, false, false, false));
 	}
 };
@@ -49,6 +49,7 @@ global.eyeEffects.desolationTick = function (slotContext, stack) {
  */
 global.eyeEffects.desolationAttributeTick = function (ctx) {
 	const wearer = ctx.slotContext.getWearer();
+	if (!wearer) return;
 	const regenStrength = Math.max((1 - (wearer.getHealth() / wearer.getMaxHealth())) - 0.25, 0) * 8;
 	ctx.modify('adjcore:generic.health_regeneration', 'kubejs.dynamic.eye_of_desolation', regenStrength, 'addition');
 }
@@ -70,7 +71,7 @@ global.eyeEffects.ethercraftTick = function (slotContext, stack) {
  */
 global.eyeEffects.ethercraftAttributeTick = function (ctx) {
 	const wearer = ctx.slotContext.getWearer();
-	if (wearer instanceof $Player) {
+	if (wearer && wearer instanceof $Player) {
 		ctx.modify('forge:block_reach', 'kubejs.dynamic.eye_of_ethercraft', (wearer.isShiftKeyDown()) ? 6 : 3, 'addition');
 	}
 };
@@ -98,7 +99,7 @@ global.eyeEffects.verdancyTick = function (slotContext, stack) {
 	const wearer = slotContext.getWearer();
 	const blockBelow = wearer.level.getBlock(wearer.blockPosition.x, wearer.blockPosition.y, wearer.blockPosition.z);
 	if (blockBelow.getId() === 'minecraft:dirt') {
-		blockBelow.set('minecraft:grass_block');
+		wearer.level.setBlock(blockBelow.pos, Block.getBlock('minecraft:grass_block').defaultBlockState(), 3);
 	}
 };
 

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#896736",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:ignited_berserker"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.ignited_berserker",
+				"color": "#896736"
+			}
+		]
+	}
+}

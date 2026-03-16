@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#42364b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:sickened_phantom"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.sickened_phantom",
+				"color": "#42364b"
+			}
+		]
+	}
+}

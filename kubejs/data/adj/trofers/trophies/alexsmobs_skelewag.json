@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#bdd79d",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexsmobs:skelewag"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexsmobs.skelewag",
+				"color": "#bdd79d"
+			}
+		]
+	}
+}

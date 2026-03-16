@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#2f353b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "born_in_chaos_v1:dread_hound_not_despawn"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.born_in_chaos_v1.dread_hound_not_despawn",
+				"color": "#2f353b"
+			}
+		]
+	}
+}

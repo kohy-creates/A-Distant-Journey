@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#9c8970",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:ancient_remnant"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.ancient_remnant",
+				"color": "#9c8970"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#726345",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:husk"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.husk",
+				"color": "#726345"
+			}
+		]
+	}
+}

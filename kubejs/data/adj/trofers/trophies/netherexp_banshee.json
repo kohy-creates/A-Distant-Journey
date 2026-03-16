@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#265961",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "netherexp:banshee"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.netherexp.banshee",
+				"color": "#265961"
+			}
+		]
+	}
+}

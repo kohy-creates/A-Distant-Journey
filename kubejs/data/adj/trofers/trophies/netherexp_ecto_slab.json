@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#15353c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "netherexp:ecto_slab"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.netherexp.ecto_slab",
+				"color": "#15353c"
+			}
+		]
+	}
+}

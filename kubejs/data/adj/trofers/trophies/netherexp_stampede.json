@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#4b3d33",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "netherexp:stampede"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.netherexp.stampede",
+				"color": "#4b3d33"
+			}
+		]
+	}
+}

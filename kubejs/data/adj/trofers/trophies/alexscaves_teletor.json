@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#3e2e44",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexscaves:teletor"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexscaves.teletor",
+				"color": "#3e2e44"
+			}
+		]
+	}
+}

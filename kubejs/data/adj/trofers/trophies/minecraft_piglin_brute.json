@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#905f41",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:piglin_brute"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.piglin_brute",
+				"color": "#905f41"
+			}
+		]
+	}
+}

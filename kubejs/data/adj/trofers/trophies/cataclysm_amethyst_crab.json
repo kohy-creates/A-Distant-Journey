@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#625f65",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:amethyst_crab"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.amethyst_crab",
+				"color": "#625f65"
+			}
+		]
+	}
+}

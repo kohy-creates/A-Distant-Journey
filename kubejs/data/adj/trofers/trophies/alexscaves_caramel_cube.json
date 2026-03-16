@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#bb7515",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexscaves:caramel_cube"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexscaves.caramel_cube",
+				"color": "#bb7515"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#a88e7b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.25
+	},
+	"effects": {},
+	"entity": {
+		"type": "ars_nouveau:wilden_boss"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.ars_nouveau.wilden_boss",
+				"color": "#a88e7b"
+			}
+		]
+	}
+}

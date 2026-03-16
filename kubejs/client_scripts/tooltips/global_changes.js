@@ -472,7 +472,7 @@ ItemEvents.tooltip(event => {
 			text.clear()
 
 			text.add(0, itemName)
-			text.add(1, Text.darkGray(`Unlocked in `).append(Text.darkGray(`${global.toTitleCase(chapter.replace('_', ' '))}`).underlined()));
+			text.add(1, Text.darkGray(`Unlocked in `).append(Text.darkGray(`${Utils.toTitleCase(chapter.replace('_', ' '))}`).underlined()));
 			text.add(1, Text.darkGray('Unknown item!').bold())
 
 			if (advanced && currentPlayer.isCreative()) {

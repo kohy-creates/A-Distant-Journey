@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#272242",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "phantasm:behemoth"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.phantasm.behemoth",
+				"color": "#272242"
+			}
+		]
+	}
+}

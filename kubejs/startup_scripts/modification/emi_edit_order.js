@@ -164,6 +164,8 @@ StartupEvents.postInit(event => {
 		'suppsquared:item_shelf',
 		'fence',
 		'architects_palette:railing',
+		'twilightforest:banister',
+		'umbral_skies:banister',
 		'fence_gate',
 		'door',
 		'trapdoor',

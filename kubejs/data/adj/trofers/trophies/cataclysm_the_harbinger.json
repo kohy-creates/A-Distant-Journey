@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#534c51",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:the_harbinger"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.the_harbinger",
+				"color": "#534c51"
+			}
+		]
+	}
+}

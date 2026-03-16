@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#472e56",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "unusualend:enderbulb"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.unusualend.enderbulb",
+				"color": "#472e56"
+			}
+		]
+	}
+}

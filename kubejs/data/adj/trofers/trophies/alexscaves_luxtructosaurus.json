@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#3d1b21",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.09
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexscaves:luxtructosaurus"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexscaves.luxtructosaurus",
+				"color": "#3d1b21"
+			}
+		]
+	}
+}

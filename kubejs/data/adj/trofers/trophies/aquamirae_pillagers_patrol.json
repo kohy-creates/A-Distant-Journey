@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#000000",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "aquamirae:pillagers_patrol"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.aquamirae.pillagers_patrol",
+				"color": "#000000"
+			}
+		]
+	}
+}

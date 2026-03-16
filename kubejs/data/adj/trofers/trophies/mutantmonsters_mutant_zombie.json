@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#277b6c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "mutantmonsters:mutant_zombie"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.mutantmonsters.mutant_zombie",
+				"color": "#277b6c"
+			}
+		]
+	}
+}

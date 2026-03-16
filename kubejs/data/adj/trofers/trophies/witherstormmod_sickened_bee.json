@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#63445c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:sickened_bee"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.sickened_bee",
+				"color": "#63445c"
+			}
+		]
+	}
+}

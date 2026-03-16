@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#8a825f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "born_in_chaos_v1:siamese_skeletons"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.born_in_chaos_v1.siamese_skeletons",
+				"color": "#8a825f"
+			}
+		]
+	}
+}

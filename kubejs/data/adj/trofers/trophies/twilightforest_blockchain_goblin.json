@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#7c8b8a",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:blockchain_goblin"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.blockchain_goblin",
+				"color": "#7c8b8a"
+			}
+		]
+	}
+}

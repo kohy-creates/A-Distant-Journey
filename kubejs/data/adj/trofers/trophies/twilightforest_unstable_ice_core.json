@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#87a3d7",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:unstable_ice_core"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.unstable_ice_core",
+				"color": "#87a3d7"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#306b63",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.15
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:giant"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.giant",
+				"color": "#306b63"
+			}
+		]
+	}
+}

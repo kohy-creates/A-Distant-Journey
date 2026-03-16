@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#4f4264",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:sickened_wolf"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.sickened_wolf",
+				"color": "#4f4264"
+			}
+		]
+	}
+}

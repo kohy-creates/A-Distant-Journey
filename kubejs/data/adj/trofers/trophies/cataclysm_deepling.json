@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#1f3443",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:deepling"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.deepling",
+				"color": "#1f3443"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#8a6497",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:sickened_iron_golem"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.sickened_iron_golem",
+				"color": "#8a6497"
+			}
+		]
+	}
+}

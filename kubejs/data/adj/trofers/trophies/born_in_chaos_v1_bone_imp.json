@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#393a3d",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "born_in_chaos_v1:bone_imp"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.born_in_chaos_v1.bone_imp",
+				"color": "#393a3d"
+			}
+		]
+	}
+}

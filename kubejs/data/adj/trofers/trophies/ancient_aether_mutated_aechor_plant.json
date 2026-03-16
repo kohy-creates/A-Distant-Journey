@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#8a8da1",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.25
+	},
+	"effects": {},
+	"entity": {
+		"type": "ancient_aether:mutated_aechor_plant"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.ancient_aether.mutated_aechor_plant",
+				"color": "#8a8da1"
+			}
+		]
+	}
+}

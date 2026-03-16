@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#8c836b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "galosphere:berserker"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.galosphere.berserker",
+				"color": "#8c836b"
+			}
+		]
+	}
+}

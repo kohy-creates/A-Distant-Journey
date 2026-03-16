@@ -8,7 +8,7 @@ StartupEvents.registry('banner_pattern', registry => {
 		registry.createCustom(id, () => new $BannerPattern(id)).tag(tag ? tag : 'minecraft:no_item_required');
 
 		Color.DYE.forEach(color => {
-			lang[`block.minecraft.banner.kubejs.${id}.${color}`] = `${global.toTitleCase(color)} ${global.toTitleCase(id.split('/')[1].replace('_', ''))}`
+			lang[`block.minecraft.banner.kubejs.${id}.${color}`] = `${Utils.toTitleCase(color)} ${Utils.toTitleCase(id.split('/')[1].replace('_', ''))}`
 		})
 	}
 

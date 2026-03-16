@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#261e38",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:endermaptera"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.endermaptera",
+				"color": "#261e38"
+			}
+		]
+	}
+}

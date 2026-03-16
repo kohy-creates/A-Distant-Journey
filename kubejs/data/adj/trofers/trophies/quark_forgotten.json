@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#5f5a52",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "quark:forgotten"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.quark.forgotten",
+				"color": "#5f5a52"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#a0917d",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:koboleton"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.koboleton",
+				"color": "#a0917d"
+			}
+		]
+	}
+}

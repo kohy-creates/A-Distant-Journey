@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#978373",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexsmobs:bone_serpent"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexsmobs.bone_serpent",
+				"color": "#978373"
+			}
+		]
+	}
+}

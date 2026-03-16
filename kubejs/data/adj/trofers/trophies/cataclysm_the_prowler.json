@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#52484c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:the_prowler"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.the_prowler",
+				"color": "#52484c"
+			}
+		]
+	}
+}

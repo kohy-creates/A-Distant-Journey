@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#553e33",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:netherite_monstrosity"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.netherite_monstrosity",
+				"color": "#553e33"
+			}
+		]
+	}
+}

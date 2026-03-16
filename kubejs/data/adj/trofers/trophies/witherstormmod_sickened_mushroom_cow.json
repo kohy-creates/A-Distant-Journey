@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#6f2a8c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:sickened_mushroom_cow"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.sickened_mushroom_cow",
+				"color": "#6f2a8c"
+			}
+		]
+	}
+}

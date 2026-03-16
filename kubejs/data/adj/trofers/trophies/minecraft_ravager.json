@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#575551",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:ravager"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.ravager",
+				"color": "#575551"
+			}
+		]
+	}
+}

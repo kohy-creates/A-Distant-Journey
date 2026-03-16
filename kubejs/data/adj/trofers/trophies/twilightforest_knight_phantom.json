@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#735a49",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:knight_phantom"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.knight_phantom",
+				"color": "#735a49"
+			}
+		]
+	}
+}

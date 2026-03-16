@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#5a3e42",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:the_watcher"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.the_watcher",
+				"color": "#5a3e42"
+			}
+		]
+	}
+}

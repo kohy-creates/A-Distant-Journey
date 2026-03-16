@@ -705,7 +705,7 @@
 
 	#Gives mobs a chance to negate damage when equipped with a shield. Only entity types in `enhancedai:mobs/can_equip_shield` tag will be equipped a shield.
 	[Mobs.Shielding]
-		"Chance to equip" = 0.08
+		"Chance to equip" = 0.0
 
 	#Makes mobs be able to climb ladders and similar blocks. Only entity types in `enhancedai:mobs/can_climb` tag are affected by this feature.
 	[Mobs.Climbing]

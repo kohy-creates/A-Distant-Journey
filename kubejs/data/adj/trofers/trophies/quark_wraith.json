@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#c9e5e6",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "quark:wraith"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.quark.wraith",
+				"color": "#c9e5e6"
+			}
+		]
+	}
+}

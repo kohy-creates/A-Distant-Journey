@@ -89,4 +89,3 @@ com.tiviacz.travelersbackpack.client.screens.BackpackSettingsScreen {
 
 com.tiviacz.travelersbackpack.client.screens.BackpackScreen {
 }
-

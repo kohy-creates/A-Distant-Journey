@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#768eab",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "upgrade_aquatic:thrasher"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.upgrade_aquatic.thrasher",
+				"color": "#768eab"
+			}
+		]
+	}
+}

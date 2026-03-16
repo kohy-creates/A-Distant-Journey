@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#5d5b6f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "ancient_aether:aeronautic_leaper"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.ancient_aether.aeronautic_leaper",
+				"color": "#5d5b6f"
+			}
+		]
+	}
+}

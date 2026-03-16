@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#f6d095",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexsmobs:guster"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexsmobs.guster",
+				"color": "#f6d095"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#867f64",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:upper_goblin_knight"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.upper_goblin_knight",
+				"color": "#867f64"
+			}
+		]
+	}
+}

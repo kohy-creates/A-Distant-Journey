@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#535262",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:phantom"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.phantom",
+				"color": "#535262"
+			}
+		]
+	}
+}

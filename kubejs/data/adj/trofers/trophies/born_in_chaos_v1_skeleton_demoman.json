@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#423332",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "born_in_chaos_v1:skeleton_demoman"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.born_in_chaos_v1.skeleton_demoman",
+				"color": "#423332"
+			}
+		]
+	}
+}

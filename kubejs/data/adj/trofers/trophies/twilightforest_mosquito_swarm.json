@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#171512",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:mosquito_swarm"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.mosquito_swarm",
+				"color": "#171512"
+			}
+		]
+	}
+}

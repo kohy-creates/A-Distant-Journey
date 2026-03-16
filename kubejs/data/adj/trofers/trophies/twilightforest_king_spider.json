@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#35210f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:king_spider"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.king_spider",
+				"color": "#35210f"
+			}
+		]
+	}
+}

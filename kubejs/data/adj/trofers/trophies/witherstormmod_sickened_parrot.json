@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#533b67",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:sickened_parrot"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.sickened_parrot",
+				"color": "#533b67"
+			}
+		]
+	}
+}

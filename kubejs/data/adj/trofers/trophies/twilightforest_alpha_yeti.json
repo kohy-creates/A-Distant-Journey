@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#b5bcc6",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.15
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:alpha_yeti"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.alpha_yeti",
+				"color": "#b5bcc6"
+			}
+		]
+	}
+}

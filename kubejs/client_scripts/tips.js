@@ -321,7 +321,7 @@ KeyBindEvents.keyRelease('adjcore.what_is_this', event => {
 
 		let title, description;
 		if (tip.length === 1) {
-			title = global.toTitleCase(id.split(':')[1].replace('_', ' '));
+			title = Utils.toTitleCase(id.split(':')[1].replace('_', ' '));
 			description = tip[0];
 		}
 		else {

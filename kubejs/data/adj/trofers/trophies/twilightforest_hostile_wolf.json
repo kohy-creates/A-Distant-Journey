@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#c4bebd",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:hostile_wolf"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.hostile_wolf",
+				"color": "#c4bebd"
+			}
+		]
+	}
+}

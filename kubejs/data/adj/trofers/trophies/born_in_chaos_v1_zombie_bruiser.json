@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#4e492d",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "born_in_chaos_v1:zombie_bruiser"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.born_in_chaos_v1.zombie_bruiser",
+				"color": "#4e492d"
+			}
+		]
+	}
+}

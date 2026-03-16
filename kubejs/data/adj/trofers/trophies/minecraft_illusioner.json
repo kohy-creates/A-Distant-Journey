@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#365a76",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:illusioner"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.illusioner",
+				"color": "#365a76"
+			}
+		]
+	}
+}

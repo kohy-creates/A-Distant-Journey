@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#000000",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:tainted_slime"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.tainted_slime",
+				"color": "#000000"
+			}
+		]
+	}
+}

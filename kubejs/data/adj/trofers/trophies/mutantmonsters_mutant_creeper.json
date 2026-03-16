@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#55bc36",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "mutantmonsters:mutant_creeper"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.mutantmonsters.mutant_creeper",
+				"color": "#55bc36"
+			}
+		]
+	}
+}

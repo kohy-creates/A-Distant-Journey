@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#27707b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexscaves:deep_one_mage"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexscaves.deep_one_mage",
+				"color": "#27707b"
+			}
+		]
+	}
+}

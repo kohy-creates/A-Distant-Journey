@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#7a413c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexsmobs:centipede_head"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexsmobs.centipede_head",
+				"color": "#7a413c"
+			}
+		]
+	}
+}

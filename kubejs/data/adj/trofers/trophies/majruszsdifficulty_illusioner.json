@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#3a2a30",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "majruszsdifficulty:illusioner"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.majruszsdifficulty.illusioner",
+				"color": "#3a2a30"
+			}
+		]
+	}
+}

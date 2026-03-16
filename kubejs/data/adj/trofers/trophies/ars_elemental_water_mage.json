@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#e0d9d6",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "ars_elemental:water_mage"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.ars_elemental.water_mage",
+				"color": "#e0d9d6"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#60292b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.15
+	},
+	"effects": {},
+	"entity": {
+		"type": "rediscovered:red_dragon"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.rediscovered.red_dragon",
+				"color": "#60292b"
+			}
+		]
+	}
+}

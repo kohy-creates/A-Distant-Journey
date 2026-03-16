@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#b5a396",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:carminite_golem"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.carminite_golem",
+				"color": "#b5a396"
+			}
+		]
+	}
+}

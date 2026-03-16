@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#384b64",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.25
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexsmobs:warped_mosco"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexsmobs.warped_mosco",
+				"color": "#384b64"
+			}
+		]
+	}
+}

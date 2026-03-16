@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#7e6f43",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "born_in_chaos_v1:pumpkin_spirit"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.born_in_chaos_v1.pumpkin_spirit",
+				"color": "#7e6f43"
+			}
+		]
+	}
+}

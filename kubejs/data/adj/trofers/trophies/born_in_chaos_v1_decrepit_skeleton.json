@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#a8a7a8",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "born_in_chaos_v1:decrepit_skeleton"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.born_in_chaos_v1.decrepit_skeleton",
+				"color": "#a8a7a8"
+			}
+		]
+	}
+}

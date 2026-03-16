@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#524636",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "ars_nouveau:wilden_stalker"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.ars_nouveau.wilden_stalker",
+				"color": "#524636"
+			}
+		]
+	}
+}

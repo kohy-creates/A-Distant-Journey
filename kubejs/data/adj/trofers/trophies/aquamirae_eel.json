@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#2d394c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.25
+	},
+	"effects": {},
+	"entity": {
+		"type": "aquamirae:eel"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.aquamirae.eel",
+				"color": "#2d394c"
+			}
+		]
+	}
+}

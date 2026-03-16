@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#0c1e32",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexscaves:deep_one"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexscaves.deep_one",
+				"color": "#0c1e32"
+			}
+		]
+	}
+}

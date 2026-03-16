@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#0d374b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexsmobs:void_worm_part"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexsmobs.void_worm_part",
+				"color": "#0d374b"
+			}
+		]
+	}
+}

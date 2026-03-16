@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#a26831",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:fire_beetle"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.fire_beetle",
+				"color": "#a26831"
+			}
+		]
+	}
+}

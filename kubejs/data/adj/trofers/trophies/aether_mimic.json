@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#624b3c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "aether:mimic"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.aether.mimic",
+				"color": "#624b3c"
+			}
+		]
+	}
+}

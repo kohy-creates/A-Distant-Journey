@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#26162b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:wither_storm"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.wither_storm",
+				"color": "#26162b"
+			}
+		]
+	}
+}

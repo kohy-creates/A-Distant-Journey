@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#303710",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:carminite_broodling"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.carminite_broodling",
+				"color": "#303710"
+			}
+		]
+	}
+}

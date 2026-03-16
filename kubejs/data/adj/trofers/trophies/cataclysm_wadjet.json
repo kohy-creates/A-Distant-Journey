@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#927a62",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:wadjet"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.wadjet",
+				"color": "#927a62"
+			}
+		]
+	}
+}

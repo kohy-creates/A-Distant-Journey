@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#8b5f2c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.2
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:ignis"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.ignis",
+				"color": "#8b5f2c"
+			}
+		]
+	}
+}

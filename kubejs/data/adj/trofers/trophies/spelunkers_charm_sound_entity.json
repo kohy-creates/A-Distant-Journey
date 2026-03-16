@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#000000",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "spelunkers_charm:sound_entity"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.spelunkers_charm.sound_entity",
+				"color": "#000000"
+			}
+		]
+	}
+}

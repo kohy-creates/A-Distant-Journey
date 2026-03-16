@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#5c4115",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:pinch_beetle"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.pinch_beetle",
+				"color": "#5c4115"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#2c0a10",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "born_in_chaos_v1:firelight"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.born_in_chaos_v1.firelight",
+				"color": "#2c0a10"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#0d221f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:cave_spider"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.cave_spider",
+				"color": "#0d221f"
+			}
+		]
+	}
+}

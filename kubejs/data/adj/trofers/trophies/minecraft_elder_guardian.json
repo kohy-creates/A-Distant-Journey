@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#a39f8f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.25
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:elder_guardian"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.elder_guardian",
+				"color": "#a39f8f"
+			}
+		]
+	}
+}

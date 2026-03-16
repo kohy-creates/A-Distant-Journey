@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#a5a4a5",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "majruszsdifficulty:tank"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.majruszsdifficulty.tank",
+				"color": "#a5a4a5"
+			}
+		]
+	}
+}

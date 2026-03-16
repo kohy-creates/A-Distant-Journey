@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#a53036",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:coralssus"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.coralssus",
+				"color": "#a53036"
+			}
+		]
+	}
+}

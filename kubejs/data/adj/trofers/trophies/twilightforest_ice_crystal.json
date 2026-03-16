@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#abc6f4",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:ice_crystal"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.ice_crystal",
+				"color": "#abc6f4"
+			}
+		]
+	}
+}

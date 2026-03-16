@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#2d164d",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.08
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:the_leviathan"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.the_leviathan",
+				"color": "#2d164d"
+			}
+		]
+	}
+}

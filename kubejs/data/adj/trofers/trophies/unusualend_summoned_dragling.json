@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#3d1d35",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "unusualend:summoned_dragling"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.unusualend.summoned_dragling",
+				"color": "#3d1d35"
+			}
+		]
+	}
+}

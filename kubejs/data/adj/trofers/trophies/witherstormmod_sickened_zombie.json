@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#362e43",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:sickened_zombie"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.sickened_zombie",
+				"color": "#362e43"
+			}
+		]
+	}
+}

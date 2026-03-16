@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#b56b66",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "rediscovered:zombie_pigman"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.rediscovered.zombie_pigman",
+				"color": "#b56b66"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#40214f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:sickened_creeper"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.sickened_creeper",
+				"color": "#40214f"
+			}
+		]
+	}
+}

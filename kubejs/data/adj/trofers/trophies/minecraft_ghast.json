@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#e3e2e2",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.125
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:ghast"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.ghast",
+				"color": "#e3e2e2"
+			}
+		]
+	}
+}

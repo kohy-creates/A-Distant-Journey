@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#ba3339",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexscaves:gumbeeper"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexscaves.gumbeeper",
+				"color": "#ba3339"
+			}
+		]
+	}
+}

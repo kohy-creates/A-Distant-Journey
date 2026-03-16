@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#000000",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "majruszsdifficulty:cursed_armor"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.majruszsdifficulty.cursed_armor",
+				"color": "#000000"
+			}
+		]
+	}
+}

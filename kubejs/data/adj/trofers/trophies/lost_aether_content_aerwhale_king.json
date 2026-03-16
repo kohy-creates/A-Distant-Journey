@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#9aa2ae",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.125
+	},
+	"effects": {},
+	"entity": {
+		"type": "lost_aether_content:aerwhale_king"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.lost_aether_content.aerwhale_king",
+				"color": "#9aa2ae"
+			}
+		]
+	}
+}

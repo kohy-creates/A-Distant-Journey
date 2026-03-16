@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#342238",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:sickened_spider"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.sickened_spider",
+				"color": "#342238"
+			}
+		]
+	}
+}

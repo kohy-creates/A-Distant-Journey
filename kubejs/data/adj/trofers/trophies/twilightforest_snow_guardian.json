@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#306b63",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:snow_guardian"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.snow_guardian",
+				"color": "#306b63"
+			}
+		]
+	}
+}

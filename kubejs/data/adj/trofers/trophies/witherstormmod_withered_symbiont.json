@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#1b1227",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:withered_symbiont"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.withered_symbiont",
+				"color": "#1b1227"
+			}
+		]
+	}
+}

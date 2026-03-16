@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#3d7542",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.25
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexscaves:nucleeper"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexscaves.nucleeper",
+				"color": "#3d7542"
+			}
+		]
+	}
+}

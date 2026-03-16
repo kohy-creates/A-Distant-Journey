@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#306b63",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "majruszsdifficulty:giant"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.majruszsdifficulty.giant",
+				"color": "#306b63"
+			}
+		]
+	}
+}

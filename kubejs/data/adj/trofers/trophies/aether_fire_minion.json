@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#d9410c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "aether:fire_minion"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.aether.fire_minion",
+				"color": "#d9410c"
+			}
+		]
+	}
+}

@@ -44,15 +44,6 @@ global.getBiome = function (entity) {
 	return entity.level.getBiome(entity.block.pos).unwrapKey().get().location().toString();
 }
 
-global.toTitleCase = function (str) {
-	return str.replace(
-		/\w\S*/g,
-		function (txt) {
-			return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-		}
-	);
-}
-
 /**
  * @type {void}
  * @param {$MinecraftServer_} server 

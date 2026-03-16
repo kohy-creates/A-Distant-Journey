@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#2a7c84",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "unusualend:warped_balloon"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.unusualend.warped_balloon",
+				"color": "#2a7c84"
+			}
+		]
+	}
+}

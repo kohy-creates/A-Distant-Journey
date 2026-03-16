@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#98568b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexscaves:licowitch"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexscaves.licowitch",
+				"color": "#98568b"
+			}
+		]
+	}
+}

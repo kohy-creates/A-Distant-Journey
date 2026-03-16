@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#614a4c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexsmobs:murmur"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexsmobs.murmur",
+				"color": "#614a4c"
+			}
+		]
+	}
+}

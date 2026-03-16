@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#70584b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:minotaur"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.minotaur",
+				"color": "#70584b"
+			}
+		]
+	}
+}

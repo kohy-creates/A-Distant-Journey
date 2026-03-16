@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#4f1c07",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:magma_cube"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.magma_cube",
+				"color": "#4f1c07"
+			}
+		]
+	}
+}

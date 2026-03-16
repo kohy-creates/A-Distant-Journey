@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#46241f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "evilcraft:netherfish"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.evilcraft.netherfish",
+				"color": "#46241f"
+			}
+		]
+	}
+}

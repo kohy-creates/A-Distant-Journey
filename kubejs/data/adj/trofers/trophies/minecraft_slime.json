@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#63ac51",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:slime"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.slime",
+				"color": "#63ac51"
+			}
+		]
+	}
+}

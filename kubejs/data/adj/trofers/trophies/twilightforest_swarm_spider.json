@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#210b20",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "twilightforest:swarm_spider"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.twilightforest.swarm_spider",
+				"color": "#210b20"
+			}
+		]
+	}
+}

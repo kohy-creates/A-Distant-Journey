@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#595c60",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "aquamirae:captain_cornelia"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.aquamirae.captain_cornelia",
+				"color": "#595c60"
+			}
+		]
+	}
+}

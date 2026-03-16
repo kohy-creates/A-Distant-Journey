@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#7e3540",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexsmobs:dropbear"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexsmobs.dropbear",
+				"color": "#7e3540"
+			}
+		]
+	}
+}

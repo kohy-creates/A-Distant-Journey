@@ -743,7 +743,7 @@
     "reset_all_participants_kills": true,
     "wave_duration": 1200.0,
     "preparing_duration": 15.0,
-    "highlight_delay": 20.0,
+    "highlight_delay": 30.0,
     "extra_size_ratio_per_player": 0.6,
     "area_radius": 60,
     "kill_requirement": 1000,

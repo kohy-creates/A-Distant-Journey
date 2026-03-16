@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#3d2c43",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "cataclysm:deepling_warlock"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.cataclysm.deepling_warlock",
+				"color": "#3d2c43"
+			}
+		]
+	}
+}

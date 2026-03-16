@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#d9410c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.25
+	},
+	"effects": {},
+	"entity": {
+		"type": "aether:sun_spirit"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.aether.sun_spirit",
+				"color": "#d9410c"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#262526",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.15
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:ender_dragon"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.ender_dragon",
+				"color": "#262526"
+			}
+		]
+	}
+}

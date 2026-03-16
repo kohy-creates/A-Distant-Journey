@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#100718",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "witherstormmod:tentacle"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.witherstormmod.tentacle",
+				"color": "#100718"
+			}
+		]
+	}
+}

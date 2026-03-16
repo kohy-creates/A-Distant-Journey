@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#757777",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:silverfish"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.silverfish",
+				"color": "#757777"
+			}
+		]
+	}
+}

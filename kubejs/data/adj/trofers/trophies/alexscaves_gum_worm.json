@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#8ab7c6",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.2
+	},
+	"effects": {},
+	"entity": {
+		"type": "alexscaves:gum_worm"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.alexscaves.gum_worm",
+				"color": "#8ab7c6"
+			}
+		]
+	}
+}
