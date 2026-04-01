@@ -6,7 +6,6 @@ ADJClientEvents.itemIsLockedRenderCheck(event => {
 	if (item.getId().includes('valkyrum')) {
 		if (!player.stages.has('valkyrum_unlocked')) {
 			event.cancel();
-			return;
 		}
 	}
 

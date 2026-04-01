@@ -7,22 +7,24 @@ boneMealUsingParticles = true
 flintAndSteelParticles = true
 increasedItemBreakParticles = true
 waterEvaporateFromBucketSteam = true
-waterBucketUseParticles = true
-lavaBucketUseParticles = true
+fluidBucketUseParticles = true
 powderSnowBucketUseParticles = true
+powderSnowBucketBlockPlaceSound = true
 lingeringPotionClouds = true
 splashPotionClouds = true
 structureVoidItemMarker = true
+spawnEggUseSoundVolume = 0.5
+spawnEggUseParticles = false
 
 [itemRarity]
-particlesDisplayType = "OFF"
-particleColorType = "NAME_COLOR"
-mixedColorName = true
-useItemBorder = true
+particlesDisplayType = "ON"
+particleColorType = "RARITY_COLOR"
+mixedColorName = false
+useItemBorder = false
 colorOverrides = [  ]
-particleMaxHeight = 1.0
-particleMaxSpeed = 1.0
-particleDensity = 1.0
+particleMaxHeight = 0.8464052
+particleMaxSpeed = 0.7457516
+particleDensity = 0.5970588235294116
 
 [projectiles]
 enderPearlTrailDensity = 0.5

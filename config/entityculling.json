@@ -18,7 +18,8 @@
     "amendments:hanging_flower_pot",
     "the_bumblezone:crystalline_flower",
     "vinery:storage",
-    "nethervinery:storage"
+    "nethervinery:storage",
+    "swinginglanterns:lantern"
   ],
   "entityWhitelist": [
     "botania:mana_burst",

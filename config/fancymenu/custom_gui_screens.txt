@@ -4,28 +4,6 @@ overridden_screens {
 }
 
 custom_gui {
-  identifier = ingame_wiki
-  title = Wiki
-  allow_esc = true
-  transparent_world_background = true
-  transparent_world_background_overlay = true
-  pause_game = true
-  popup_mode = false
-  popup_mode_background_overlay = true
-}
-
-custom_gui {
-  identifier = death_screen_new
-  title = 
-  allow_esc = false
-  transparent_world_background = true
-  transparent_world_background_overlay = false
-  pause_game = false
-  popup_mode = false
-  popup_mode_background_overlay = true
-}
-
-custom_gui {
   identifier = welcome_screen
   title = 
   allow_esc = false

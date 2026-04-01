@@ -1,0 +1,34 @@
+
+[portal_gun]
+	#If true, portals can be placed only on blocks in the Portalable block tag
+	portalable_tag = false
+	#How far the Portal Gun can shoot and open a portal
+	#Range: > 0
+	portal_gun_shoot_range = 256
+	#If true, the Portal Gun will require energy to create and upkeep portals
+	portal_gun_uses_energy = false
+	#The maximum amount of energy the Portal Gun can store in itself
+	#Range: 0 ~ 9223372036854775807
+	portal_gun_max_energy_stored = 1000000
+	#If true, the Portal Gun will consume energy when shooting the portal, not when it actually opens
+	portal_gun_consume_on_shot = false
+	#The amount of energy the Portal Gun uses when shooting/opening the portal
+	#Range: 0 ~ 9223372036854775807
+	portal_gun_shoot_consumption = 2500
+	#The amount of energy the Portal Gun uses when two portals are open
+	#Range: 0 ~ 9223372036854775807
+	portal_gun_passive_consumption = 10
+	#The amount of energy the Portal Gun uses when two portals are open
+	#Range: 0 ~ 9223372036854775807
+	portal_gun_interdimensional_passive_consumption = 100
+
+[long_fall_boots]
+	#If true, the Long Fall Boots will require energy to dampen fall/impact damage
+	long_fall_boots_use_energy = false
+	#The maximum amount of energy the Long Fall Boots can store in itself
+	#Range: 0 ~ 9223372036854775807
+	long_fall_boots_max_energy_stored = 128000
+	#The amount of energy the Long Fall Boots use when dampening the damage
+	#Range: 0 ~ 9223372036854775807
+	fall_energy_consumption = 250
+

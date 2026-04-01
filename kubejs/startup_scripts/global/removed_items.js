@@ -60,18 +60,38 @@ global.blacklistedItems = [
 	'twilightforest:crumble_horn',
 	/twilightforest:sorting_/,
 	'twilightdelight:sorting_cabinet',
-	// /twilightforest:.*_banister/,
-	// 'umbral_skies:skyroot_banister',
-	/twilightforest:.*_hollow_log/,
-	/umbral_skies:.*_hollow_log/,
+	/twilightforest:hollow_.*_log/,
+	/umbral_skies:hollow_.*_log/,
+	/twilightforest:hollow_.*_stem/,
+	/umbral_skies:hollow_.*_stem/,
+	/twilightforest:.*_trophy/,
+	/umbral_skies:.*_trophy/,
+	/twilightforest:.*_skull_candle/,
+	'twilightforest:glass_sword',
+	'twilightforest:steeleaf_helmet',
+	'twilightforest:steeleaf_chestplate',
+	'twilightforest:steeleaf_leggings',
+	'twilightforest:steeleaf_boots',
+	'twilightforest:steeleaf_sword',
+	'twilightforest:steeleaf_axe',
+	'twilightforest:steeleaf_pickaxe',
+	'twilightforest:steeleaf_shovel',
+	'twilightforest:steeleaf_hoe',
+	'twilightdelight:steeleaf_knife',
+	'twilightforest:spiral_bricks',
+	'twilightforest:raw_venison',
+	'twilightdelight:raw_venison_rib',
+	'twilightforest:cooked_venison',
+	'twilightdelight:cooked_venison_rib',
+	'twilightforest:knightmetal_ring',
 
 	'handcrafted:wood_plate',
 	'handcrafted:wood_cup',
 	'handcrafted:wood_cookery_combo',
 	'handcrafted:wood_bowl',
 
-	/hearth_and_home:.*_shelf/,
-	/hearth_and_home:.*_drawer/,
+	/handcrafted:.*_shelf/,
+	/handcrafted:.*_drawer/,
 	/handcrafted:.*_trim/,
 
 	/hearth_and_home:.*_parquet/,
@@ -434,9 +454,6 @@ global.blacklistedItems = [
 	'etcetera:hammer',
 	'etcetera:dice',
 
-	/twilightforest:.*_skull_candle/,
-	'twilightforest:glass_sword',
-
 	'evilcraft:obscured_glass',
 	'evilcraft:entangled_chalice',
 	'evilcraft:origins_of_darkness',
@@ -556,6 +573,10 @@ global.blacklistedItems = [
 	'croptopia:vanilla_ice_cream',
 	'croptopia:pecan_ice_cream',
 	'croptopia:mango_ice_cream',
+	'croptopia:cheese',
+	'croptopia:grilled_cheese',
+	'croptopia:cheesecake',
+	'croptopia:cheese_pizza',
 
 	'cratedelight:sugar_bag',
 	'cratedelight:gunpowder_bag',
@@ -690,7 +711,26 @@ global.blacklistedItems = [
 	'rubinated_nether:rubination_altar',
 	'rubinated_nether:ruby_block',
 	/rubinated_nether:altar_stone.*/,
-]
+
+	/aperture_innovations:concrete_surface/,
+	/aperture_innovations:metal_surface/,
+	'aperture_innovations:long_fall_boots',
+
+	'twilightforest:ironwood_sword',
+	'experienceobelisk:cognitive_sword',
+	'experienceobelisk:cognitive_helmet',
+	'experienceobelisk:cognitive_chestplate',
+	'experienceobelisk:cognitive_leggings',
+	'experienceobelisk:cognitive_boots',
+	'experienceobelisk:cognitive_bow',
+	'twilightforest:phantom_helmet',
+	'twilightforest:phantom_chestplate',
+	'twilightforest:phantom_gloves',
+	'twilightdelight:knightmetal_knife',
+	'twilightforest:knightmetal_pickaxe',
+	'twilightforest:block_and_chain',
+	'twilightforest:moon_dial'
+];
 
 global.isItemDisabled = function (item) {
 	let id = (item instanceof Item) ? item.getId() : item;
@@ -700,4 +740,4 @@ global.isItemDisabled = function (item) {
 		}
 		return entry === id;
 	});
-}
+};

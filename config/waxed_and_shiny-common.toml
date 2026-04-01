@@ -1,0 +1,18 @@
+
+["Configs for Waxed & Shiny"]
+	#Auto generate the waxing recipes with wax
+	#Default: true
+	generate_waxing_recipes = true
+	#Wax, Wax Blocks and Wax Pillar
+	#Default: true
+	wax_and_wax_blocks = true
+	#More Candle variants (soul, cupric, ender)
+	#Default: true
+	candle_variants = true
+	#Tall Candles
+	#Default: true
+	tall_candles = true
+	#Waxed Blocks
+	#Default: true
+	waxed_blocks = true
+

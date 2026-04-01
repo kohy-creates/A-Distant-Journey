@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = creative_mode_inventory_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1773362305213
+  last_edited_time = 1774458046946
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:32933bf9-f134-4466-8274-9721f6be1697-1773359590626] = [groups:][instances:]
+  [loading_requirement_container_meta:5c22db34-5d7e-41e4-bc2f-b6105d2380db-1774457978028] = [groups:][instances:]
 }
 
 customization {

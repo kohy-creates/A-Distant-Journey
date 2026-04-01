@@ -1,5 +1,5 @@
 {
-	"parent": "adj:root",
+	"parent": "adj:twilight_forest/blank",
 	"display": {
 		"icon": {
 			"item": "dirt"

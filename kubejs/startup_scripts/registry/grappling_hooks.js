@@ -33,7 +33,8 @@ StartupEvents.registry('item', registry => {
 			return new $HookItem(type)
 		})
 			.tag('curios:hook')
-			.displayName(name)
+			.displayName(name);
+
 		$HookRegistry.registerHook(type,
 			new $HookData(
 				type,
@@ -58,37 +59,37 @@ StartupEvents.registry('item', registry => {
 			pullSpeed: pullSpeed,
 			isCreative: isCreative,
 			chain: !!chain
-		}
-	}
+		};
+	};
 
 	// Chapter 0
-	createGrapplingHook('silk', 'Silk Hook', 8, 10, 9, null, false, true)
-	createGrapplingHook('grappling', 'Grappling Hook', 1, 13, 12)
-	createGrapplingHook('amethyst', 'Amethyst Hook', 1, 11.5, 10)
-	createGrapplingHook('ivy', 'Ivy Whip', 3, 18, 13, null, false, true)
-	createGrapplingHook('slime', 'Slime Hook', 3, 13, 13, null, false, true)
+	createGrapplingHook('silk', 'Silk Hook', 8, 10, 9, null, false, true);
+	createGrapplingHook('grappling', 'Grappling Hook', 1, 13, 12);
+	createGrapplingHook('amethyst', 'Amethyst Hook', 1, 11.5, 10);
+	createGrapplingHook('ivy', 'Ivy Whip', 3, 18, 13, null, false, true);
+	createGrapplingHook('slime', 'Slime Hook', 3, 13, 13, null, false, true);
 	// Chapter 1
-	createGrapplingHook('steeleaf', 'Steeleaf Hook', 3, 20, 17)
-	createGrapplingHook('orichalcum', 'Orichalcum Hook', 2, 17, 14, defaultPullSpeed * 1.3, null, false, true)
-	createGrapplingHook('pixie', 'Pixie Hook', 3, 10, 11.5, null, true, null, false, true)
-	createGrapplingHook('tendon', 'Tendon Hook', 2, 17, 14, null, false, true)
+	createGrapplingHook('steeleaf', 'Steeleaf Hook', 3, 20, 17);
+	createGrapplingHook('orichalcum', 'Orichalcum Hook', 2, 17, 14, defaultPullSpeed * 1.3, null, false, true);
+	createGrapplingHook('pixie', 'Pixie Hook', 3, 10, 11.5, null, true, null, false, true);
+	createGrapplingHook('tendon', 'Tendon Hook', 2, 17, 14, null, false, true);
 	// Chapter 2
-	createGrapplingHook('swet', 'Swet Hook', 4, 15, 13.5, null, false, true)
-	createGrapplingHook('valkyrum', 'Valkyrum Hook', 1, 27, 9)
-	createGrapplingHook('gravitite', 'Gravitite Hook', 4, 14, 13.5, null, true, null, false, true)
+	createGrapplingHook('swet', 'Swet Hook', 4, 15, 13.5, null, false, true);
+	createGrapplingHook('valkyrum', 'Valkyrum Hook', 1, 27, 9);
+	createGrapplingHook('gravitite', 'Gravitite Hook', 4, 14, 13.5, null, true, null, false, true);
 	// Chapter 3
 	createGrapplingHook('adamantite', 'Adamantite Hook', 2, 18.5, 15)
 	// Chapter 4
-	createGrapplingHook('dissonance', 'Hook of Dissonance', 1, 21, 14, 300, null, false, true)
+	createGrapplingHook('dissonance', 'Hook of Dissonance', 1, 21, 14, 300, null, false, true);
 	// Chapter 5
-	createGrapplingHook('tainted', 'Tainted Hook', 4, 23, 18, defaultPullSpeed * 1.6, null, false, true)
+	createGrapplingHook('tainted', 'Tainted Hook', 4, 23, 18, defaultPullSpeed * 1.6, null, false, true);
 })
 
 StartupEvents.registry('block', registry => {
 	/** @type {any} */
-	const $ChainBlock = Java.loadClass('net.minecraft.world.level.block.ChainBlock')
+	const $ChainBlock = Java.loadClass('net.minecraft.world.level.block.ChainBlock');
 	/** @type {any} */
-	const $BlockProperties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
+	const $BlockProperties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties');
 
 	const chainProperties = $BlockProperties.of()
 		.forceSolidOn()
@@ -100,9 +101,9 @@ StartupEvents.registry('block', registry => {
 
 		if (!data.chain) return;
 
-		registry.createCustom(`${id}_chain`, () => new $ChainBlock(chainProperties))
-	})
-})
+		registry.createCustom(`${id}_chain`, () => new $ChainBlock(chainProperties));
+	});
+});
 
 StartupEvents.postInit(event => {
 	/** @type {any} */
@@ -112,6 +113,6 @@ StartupEvents.postInit(event => {
 
 		if (!data.chain) return;
 
-		$ChainRegistry.registerChain(id.replace('_hook', ''), () => Block.getBlock(`${id}_chain`))
-	})
-})
+		$ChainRegistry.registerChain(id.replace('_hook', ''), () => Block.getBlock(`${id}_chain`));
+	});
+});

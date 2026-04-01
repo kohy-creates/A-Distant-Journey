@@ -28,6 +28,7 @@
 			<condition>tag includes c:ender_pearls</condition>
 			<condition>id = minecraft:ender_eye</condition>
 			<condition>id = alexscaves:waste_drum</condition>
+			<condition>id = alexsmobs:lava_bottle</condition>
 		</or>
 	</rule>
 	<rule stacksize="99">

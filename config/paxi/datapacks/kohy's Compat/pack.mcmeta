@@ -15,6 +15,10 @@
 			{
 				"namespace": "^trofers$",
 				"path": "^trofers/.*$"
+			},
+			{
+				"namespace": "^gateways$",
+				"path": "^gateways/.*$"
 			}
 		]
 	}

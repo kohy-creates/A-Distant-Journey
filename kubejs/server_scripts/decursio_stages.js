@@ -1,117 +1,115 @@
-const CURRENT_STAGE = 'current_stage'
-const STAGE_TO_SET = 'next_stage'
+const DecursioStages = {
+	CURRENT_STAGE: 'current_stage',
+	STAGE_TO_SET: 'next_stage',
+	STAGES: [
+		'chapter_0',
+		'chapter_1',
+		'chapter_2',
+		'chapter_3',
+		'chapter_4',
+		'chapter_5'
+	],
+	GAMERULES: {
+		'chapter_0': {
+			'artifacts.crystalHeart.healthBonus': '20',
+			'artifacts.aquaDashers.enabled': false,
+			'artifacts.cloudInABottle.enabled': false,
+			'naughtinessMechanics': false,
+			'generationofInfectedDiamonds': false,
+			'reducedDebugInfo': true,
+			'seasonalEvents': false,
+			'halloweenEvent': false,
+			'hungerLimitsSaturation': false,
+			'maxSaturation': '30',
+			// those few never change
 
-const STAGES = [
-	'chapter_0',
-	'chapter_1',
-	'chapter_2',
-	'chapter_3',
-	'chapter_4',
-	'chapter_5'
-]
+			'theappearanceoftheNightmareStalker': false,
+			'corpseFishSpawn': false,
+			'darkVortexSpawn': false,
+			'bonescallerSpawn': false,
+			'doPatrolSpawning': false,
 
-const GAMERULES = {
-	'chapter_0': {
-		'artifacts.crystalHeart.healthBonus': '20',
-		'artifacts.aquaDashers.enabled': false,
-		'artifacts.cloudInABottle.enabled': false,
-		'naughtinessMechanics': false,
-		'generationofInfectedDiamonds': false,
-		'reducedDebugInfo': true,
-		'seasonalEvents': false,
-		'halloweenEvent': false,
-		'hungerLimitsSaturation': false,
-		'maxSaturation': '30',
-		// those few never change
+			'fallenChaosKnightSpawn': false,
+			'spiritOfChaosSpawn': false,
+			'zombieClownSpawn': false,
+			'doInsomnia': false,
 
-		'theappearanceoftheNightmareStalker': false,
-		'corpseFishSpawn': false,
-		'darkVortexSpawn': false,
-		'bonescallerSpawn': false,
-		'doPatrolSpawning': false,
+			'motherSpiderSpawn': false,
+			'krampusSpawn': false,
+			'gluttonFishSpawn': false,
 
-		'fallenChaosKnightSpawn': false,
-		'spiritOfChaosSpawn': false,
-		'zombieClownSpawn': false,
-		'doInsomnia': false,
-
-		'motherSpiderSpawn': false,
-		'krampusSpawn': false,
-		'gluttonFishSpawn': false,
-
-		'missionarySpawn': false,
-		'lifestealerSpawn': false,
+			'missionarySpawn': false,
+			'lifestealerSpawn': false,
+		},
+		'chapter_1': {
+			'theappearanceoftheNightmareStalker': true,
+			'corpseFishSpawn': true,
+			'darkVortexSpawn': true,
+			'bonescallerSpawn': true,
+			'doPatrolSpawning': true,
+		},
+		'chapter_2': {
+			'doInsomnia': true,
+			'fallenChaosKnightSpawn': true,
+			'spiritOfChaosSpawn': true,
+			'zombieClownSpawn': true,
+		},
+		'chapter_3': {
+			'motherSpiderSpawn': true,
+			'krampusSpawn': true,
+			'gluttonFishSpawn': true,
+		}
 	},
-	'chapter_1': {
-		'theappearanceoftheNightmareStalker': true,
-		'corpseFishSpawn': true,
-		'darkVortexSpawn': true,
-		'bonescallerSpawn': true,
-		'doPatrolSpawning': true,
+	/**
+	 * Takes gamerules from a map and applies them
+	 * @param {Internal.MinecraftServer} server
+	 * @param {string} stage 
+	 */
+	changeGamerules: function (server, stage) {
+		const rulesToApply = DecursioStages.GAMERULES[stage];
+
+		if (!rulesToApply) return;
+
+		for (const [gamerule, value] of Object.entries(rulesToApply)) {
+			server.gameRules.set(gamerule, value)
+		}
 	},
-	'chapter_2': {
-		'doInsomnia': true,
-		'fallenChaosKnightSpawn': true,
-		'spiritOfChaosSpawn': true,
-		'zombieClownSpawn': true,
+	chapterMessages: {
+		'chapter_1': [
+			global.announcementMsg('The spirits of hell flow into the Overworld...', global.messageColors.difficultyIncrease),
+			global.announcementMsg('The caverns have been blessed with Mythril and Orichalcum', global.messageColors.newOre)
+		],
+		'chapter_2': [
+			global.announcementMsg('The ancient spirits of darkness have been released', global.messageColors.difficultyIncrease),
+			global.announcementMsg('Heavenly gates open...', global.messageColors.newDimension),
+			global.announcementMsg('The hellish depths have been blessed with Palladium', global.messageColors.newOre)
+		],
+		'chapter_3': [
+			global.announcementMsg('The ancient spirits of light have been released', global.messageColors.difficultyIncrease),
+			global.announcementMsg('Dreams of a different realm start to materialize...', global.messageColors.newDimension),
+			global.announcementMsg('Two legendary ores bless your other dimensions', global.messageColors.newOre)
+		],
+		'chapter_4': [
+			global.announcementMsg('The boundary between dreams and nigthmares lessens...', global.messageColors.difficultyIncrease),
+			global.announcementMsg('Awakened Ender Pearls start to twitch', global.messageColors.newDimension)
+		],
+		'chapter_5': [
+			global.announcementMsg('A withered growl can be heard from across the realms...', global.messageColors.difficultyIncrease),
+			global.announcementMsg('A metal defying reality manifests deep underground', global.messageColors.newOre)
+		]
 	},
-	'chapter_3': {
-		'motherSpiderSpawn': true,
-		'krampusSpawn': true,
-		'gluttonFishSpawn': true,
+	/**
+	 * Broadcasts all chat announcements for a given chapter
+	 * @param {Internal.MinecraftServer} server
+	 * @param {string} stage 
+	 */
+	sendChapterAnnouncements: function (server, stage) {
+		console.log(stage)
+		DecursioStages.chapterMessages[stage].forEach(msg => {
+			global.broadcast(server, msg);
+		})
 	}
-}
 
-/**
- * Takes gamerules from a map and applies them
- * @param {Internal.MinecraftServer} server
- * @param {string} stage 
- */
-function changeGamerules(server, stage) {
-	const rulesToApply = GAMERULES[stage];
-
-	if (!rulesToApply) return;
-
-	for (const [gamerule, value] of Object.entries(rulesToApply)) {
-		server.gameRules.set(gamerule, value)
-	}
-}
-
-const chapterMessages = {
-	'chapter_1': [
-		global.announcementMsg('The spirits of hell flow into the Overworld...', global.messageColors.difficultyIncrease),
-		global.announcementMsg('The caverns have been blessed with Mythril and Orichalcum', global.messageColors.newOre)
-	],
-	'chapter_2': [
-		global.announcementMsg('The ancient spirits of darkness have been released', global.messageColors.difficultyIncrease),
-		global.announcementMsg('Heavenly gates open...', global.messageColors.newDimension),
-		global.announcementMsg('The hellish depths have been blessed with Palladium', global.messageColors.newOre)
-	],
-	'chapter_3': [
-		global.announcementMsg('The ancient spirits of light have been released', global.messageColors.difficultyIncrease),
-		global.announcementMsg('Dreams of a different realm start to materialize...', global.messageColors.newDimension),
-		global.announcementMsg('Two legendary ores bless your other dimensions', global.messageColors.newOre)
-	],
-	'chapter_4': [
-		global.announcementMsg('The boundary between dreams and nigthmares lessens...', global.messageColors.difficultyIncrease),
-		global.announcementMsg('Awakened Ender Pearls start to twitch', global.messageColors.newDimension)
-	],
-	'chapter_5': [
-		global.announcementMsg('A withered growl can be heard from across the realms...', global.messageColors.difficultyIncrease),
-		global.announcementMsg('A metal defying reality manifests deep underground', global.messageColors.newOre)
-	]
-}
-
-/**
- * Broadcasts all chat announcements for a given chapter
- * @param {Internal.MinecraftServer} server
- * @param {string} stage 
- */
-function sendChapterAnnouncements(server, stage) {
-	console.log(stage)
-	chapterMessages[stage].forEach(msg => {
-		global.broadcast(server, msg);
-	})
 }
 
 ADJServerEvents.recipeLookup(event => {
@@ -157,38 +155,39 @@ ServerEvents.tick(event => {
 		persistentData.chapters = {};
 	}
 	if (!persistentData.chapters.current_stage) {
-		persistentData.chapters.putString(CURRENT_STAGE, 'chapter_0');
-		changeGamerules(server, 'chapter_0');
+		persistentData.chapters.putString(DecursioStages.CURRENT_STAGE, 'chapter_0');
+		DecursioStages.changeGamerules(server, 'chapter_0');
 		return;
-
 	}
 
-	const stageToSet = persistentData.chapters.get(STAGE_TO_SET);
+	const stageToSet = persistentData.chapters.get(DecursioStages.STAGE_TO_SET);
 	if (stageToSet) {
 		const stageName = stageToSet.toString().replace("\"", "")
 		if (!persistentData.chapters.get(stageName)) {
 			const currentIndex = Number.parseInt(stageName.replace('chapter_', ''));
 			for (let i = 1; i <= currentIndex; i++) {
-				let stageToGrant = STAGES[i];
+				let stageToGrant = DecursioStages.STAGES[i];
 
-				persistentData.chapters.putString(CURRENT_STAGE, stageToGrant);
+				persistentData.chapters.putString(DecursioStages.CURRENT_STAGE, stageToGrant);
 				server.runCommandSilent('/gamestate ' + stageToGrant);
 
 				persistentData.chapters.putBoolean(stageToGrant, true);
 
-				changeGamerules(server, stageToGrant);
-				sendChapterAnnouncements(server, stageToGrant);
+				DecursioStages.changeGamerules(server, stageToGrant);
+				DecursioStages.sendChapterAnnouncements(server, stageToGrant);
+
+				TwilightForestProgression.onChapterUpdate(server, stageToGrant);
 			}
 		}
 		else console.log('Attempted to jump to a stage that was already present!')
-		persistentData.chapters.remove(STAGE_TO_SET);
+		persistentData.chapters.remove(DecursioStages.STAGE_TO_SET);
 	}
-})
+});
 
 PlayerEvents.tick(event => {
 	const player = event.getPlayer();
 	const server = event.getServer();
-	const stage = server.persistentData.chapters.get(CURRENT_STAGE);
+	const stage = server.persistentData.chapters.get(DecursioStages.CURRENT_STAGE);
 	if (stage) {
 		const stageName = stage.toString().replace("\"", "");
 		const currentIndex = Number.parseInt(stageName.replace('chapter_', ''));
@@ -196,7 +195,7 @@ PlayerEvents.tick(event => {
 		if (!player.stages.has(stageName)) {
 
 			for (let i = 0; i <= currentIndex; i++) {
-				let stageToGrant = STAGES[i];
+				let stageToGrant = DecursioStages.STAGES[i];
 				if (!player.stages.has(stageToGrant)) {
 					player.stages.add(stageToGrant);
 					server.runCommandSilent(
@@ -208,7 +207,7 @@ PlayerEvents.tick(event => {
 		}
 
 		if (stageName === 'chapter_0' && player.level.dimension === 'minecraft:the_nether') {
-			server.persistentData.chapters.putString(STAGE_TO_SET, 'chapter_1');
+			server.persistentData.chapters.putString(DecursioStages.STAGE_TO_SET, 'chapter_1');
 		}
 
 		// Valkyrum side progression
@@ -241,63 +240,59 @@ ServerEvents.tags('item', restrictions => {
 	restrictions.add('adj:locked_until/chapter_5', global.stageRestrictions.chapter_5.list);
 	restrictions.add('adj:locked_until/light/chapter_5', global.stageRestrictions.chapter_5.light);
 	restrictions.add('adj:locked_until/exceptions/chapter_5', global.stageRestrictions.chapter_5.exceptions);
-
-
-})
+});
 
 ItemEvents.rightClicked('ender_eye', event => {
 	const player = event.getPlayer();
 	if (!player.stages.has('chapter_4')) {
-		player.displayClientMessage(Component.literal('It\'s not reacting to anything').red(), true)
+		player.displayClientMessage(Component.literal('It\'s not reacting to anything').red(), true);
 		event.cancel();
 	}
-})
+});
 
 BlockEvents.rightClicked('command_block', event => {
-	if (event.getItem().id == 'minecraft:wither_skeleton_skull' && !event.getPlayer().stages.has('chapter_5')) {
-		player.displayClientMessage(Component.literal('It pops back off, away from the block').red(), true)
+	const player = event.getPlayer();
+	if (event.getItem().id == 'minecraft:wither_skeleton_skull' && !player.stages.has('chapter_5')) {
+		player.displayClientMessage(Component.literal('It pops back off, away from the block').red(), true);
 		event.cancel();
 	}
-})
+});
 
 ////////////////////
 ////////////////////
-
-const RESET_PROGRESS = 'adjresetprogress';
-const JUMP_PROGRESS = 'jumpprogress';
 
 ServerEvents.commandRegistry(event => {
 
-	const { commands: Commands, arguments: Arguments } = event
+	const { commands: Commands, arguments: Arguments } = event;
 
-	event.register(Commands.literal(RESET_PROGRESS)
+	event.register(Commands.literal('adjresetprogress')
 		.requires(s => s.hasPermission(4))
 		.executes(c => resetProgress(c.source.player, c.source.server))
-	)
+	);
 	let resetProgress = (player, server) => {
 		let serverData = server.persistentData;
-		STAGES.forEach(stage => {
-			player.stages.remove(stage)
-			serverData.chapters.remove(stage)
+		DecursioStages.STAGES.forEach(stage => {
+			player.stages.remove(stage);
+			serverData.chapters.remove(stage);
 			server.runCommandSilent(
 				'/decstages remove ' + player.getUsername() + ' ' + stage + ' true'
-			)
-		})
-		serverData.chapters.remove(CURRENT_STAGE)
+			);
+		});
+		serverData.chapters.remove(DecursioStages.CURRENT_STAGE);
 		server.runCommandSilent(
 			'/gamestate normal'
-		)
-		player.tell(Text.red('Reset all internal progress'))
-		changeGamerules(server, 'chapter_0')
-		return 1
+		);
+		player.tell(Text.red('Reset all internal progress'));
+		DecursioStages.changeGamerules(server, 'chapter_0');
+		return 1;
 	}
 
-	event.register(Commands.literal(JUMP_PROGRESS)
+	event.register(Commands.literal('jumpprogress')
 		.requires(s => s.hasPermission(4))
 		.then(Commands.argument('chapter', Arguments.INTEGER.create(event))
 			.executes(c => jumpProgress(c.source.player, c.source.server, Arguments.INTEGER.getResult(c, 'chapter')))
 		)
-	)
+	);
 	/**
 	 * 
 	 * @param {$Player_} player 
@@ -307,9 +302,9 @@ ServerEvents.commandRegistry(event => {
 	 */
 	let jumpProgress = (player, server, chapter) => {
 
-		server.persistentData.chapters.put(STAGE_TO_SET, `chapter_${chapter}`)
+		server.persistentData.chapters.put(DecursioStages.STAGE_TO_SET, `chapter_${chapter}`);
 
-		player.tell(Text.red('Jumped to chapter ' + chapter))
-		return 1
+		player.tell(Text.red('Jumped to chapter ' + chapter));
+		return 1;
 	}
-})
+});

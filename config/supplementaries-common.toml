@@ -246,7 +246,7 @@
 	stone_lamp = true
 	stone_tile = true
 	blackstone_tile = true
-	bunting = true
+	bunting = false
 	sconce = true
 	sconce_lever = true
 	pancake = true

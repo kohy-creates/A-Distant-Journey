@@ -51,9 +51,9 @@ global.getBiome = function (entity) {
  */
 global.broadcast = function (server, msg) {
 	server.players.forEach(player => {
-		player.tell(msg)
-	})
-}
+		player.tell(msg);
+	});
+};
 
 /**
  * @type {Record<String, Internal.Color>}
@@ -63,8 +63,9 @@ global.messageColors = {
 	newDimension: '#FFD700',
 	difficultyIncrease: '#c50909',
 	bossSpawned: '#af4bff',
-	bossDefeated: '#ce93ff'
-}
+	bossDefeated: '#ce93ff',
+	twilightForestProgress: '#86fbff'
+};
 
 /**
  * Returns an announcement style message (italic and with a specific color) 
@@ -75,8 +76,8 @@ global.messageColors = {
  * @returns {Internal.TextWrapper}
  */
 global.announcementMsg = function (text, color, noItalic) {
-	return (!noItalic) ? Text.of(text).color(color).italic() : Text.of(text).color(color);
-}
+	return (noItalic) ? Text.of(text).color(color) : Text.of(text).color(color).italic();
+};
 
 global.baseCritChance = 0.04;
 
@@ -96,41 +97,41 @@ global.getEntitiesInRadius = function (world, x, y, z, radius) {
 		x + radius, y + radius, z + radius
 	)).forEach((entity) => {
 		if (entity.distanceToSqr(new Vec3d(x, y, z) <= radius)) {
-			entities.push(entity)
+			entities.push(entity);
 		}
-	})
+	});
 	return entities;
-}
+};
 
-const $ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey")
-const DAMAGE_TYPE = $ResourceKey.createRegistryKey("damage_type")
-const $DamageSource = Java.loadClass('net.minecraft.world.damagesource.DamageSource')
+const $ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey");
+const DAMAGE_TYPE = $ResourceKey.createRegistryKey("damage_type");
+const $DamageSource = Java.loadClass('net.minecraft.world.damagesource.DamageSource');
 global.getDamageSource = function (/** @type {Internal.Level}*/ level, /** @type {Internal.DamageType_}*/ damageType, projectile, thrower) {
-	const resourceKey = $ResourceKey.create(DAMAGE_TYPE, Utils.id(damageType))
-	const holder = level.registryAccess().registryOrThrow(DAMAGE_TYPE).getHolderOrThrow(resourceKey)
-	return new $DamageSource(holder, projectile, thrower)
-}
+	const resourceKey = $ResourceKey.create(DAMAGE_TYPE, Utils.id(damageType));
+	const holder = level.registryAccess().registryOrThrow(DAMAGE_TYPE).getHolderOrThrow(resourceKey);
+	return new $DamageSource(holder, projectile, thrower);
+};
 
 /**
  * Returns a random number between min (inclusive) and max (exclusive)
  */
 global.getRandomNumber = function (min, max) {
 	return Math.random() * (max - min) + min;
-}
+};
 
 /**
  * Returns a random integer between min (inclusive) and max (inclusive).
- * The value is no lower than min (or the next integer greater than min
- * if min isn't an integer) and no greater than max (or the next integer
- * lower than max if max isn't an integer).
- * Using Math.round() will give you a non-uniform distribution!
  */
 global.getRandomInt = function (min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+};
 
+/**
+ * List of swords that make up the Zenith.
+ * If an entry has 'ingredient: true', then it will be a part of the crafting recipe.
+ */
 global.zenithSwords = [
 	{ item: "minecraft:wooden_sword", ingredient: true, color: 0x956445, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "botania:terra_sword", ingredient: true, color: 0x69E561, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
@@ -152,4 +153,15 @@ global.zenithSwords = [
 	{ item: "twilightforest:ice_sword", ingredient: true, color: 0x7D9CB9, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "twilightforest:knightmetal_sword", ingredient: true, color: 0xC2D3AC, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "zenith:zenith", color: 0xb2ffb4, rotation_center_height: 0.125, rotation: 0.785, scale: 7.5, trail_width: 5 }
-]
+];
+
+global.toTitleCase = function (str) {
+	return str.replace(
+		/\w\S*/g,
+		text => text.charAt(0).toUpperCase() + text.substring(1).toLowerCase()
+	);
+};
+
+global.textReplaceAll = function (str, find, replace) {
+	return str.replace(new RegExp(find.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), replace);
+};

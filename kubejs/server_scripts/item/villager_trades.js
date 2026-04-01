@@ -31,7 +31,7 @@ MoreJSEvents.wandererTrades(event => {
 			VillagerUtils.createSimpleTrade('12x minecraft:emerald', 'quark:diamond_heart').maxUses(1),
 			VillagerUtils.createSimpleTrade('20x minecraft:emerald', 'artifacts:crystal_heart').maxUses(1),
 		]
-	]
+	];
 
 	event.removeVanillaTrades(1);
 	event.removeModdedTrades(1);
@@ -46,7 +46,7 @@ MoreJSEvents.wandererTrades(event => {
 	});
 })
 
-const $TieredItem = Java.loadClass('net.minecraft.world.item.TieredItem')
+const $TieredItem = Java.loadClass('net.minecraft.world.item.TieredItem');
 const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 // const $SwordItem = Java.loadClass('net.minecraft.world.item.SwordItem')
 
@@ -76,13 +76,17 @@ const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 					firstItem: /.*/,
 					secondItem: /.*/,
 					outputItem: output
-				})
+				});
 			}
-		})
-	})
+		});
+
+		event.removeTrades({ firstItem: /.*/, secondItem: /.*/, outputItem: 'blaze_rod', });
+		event.removeTrades({ firstItem: /.*/, secondItem: /.*/, outputItem: 'magma_cream', });
+		event.removeTrades({ firstItem: /.*/, secondItem: /.*/, outputItem: 'ghast_tear', });
+	});
 
 	MoreJSEvents.updateVillagerOffers(event => {
-		
+
 		const offers = event.getAddedOffers();
 
 		offers.forEach(offer => {
@@ -115,8 +119,8 @@ const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 					offer.setSecondInput('kubejs:diamond_upgrade')
 				}
 			}
-		})
-	})
+		});
+	});
 })();
 
 MoreJSEvents.villagerTrades(event => {
@@ -127,7 +131,7 @@ MoreJSEvents.villagerTrades(event => {
 		13,
 		15,
 		30
-	]
+	];
 
 	function newBasicTrade(profession, level, inputs, output, maxUses, priceMul) {
 		event.addCustomTrade(profession, level, (offer, entity, random) => {

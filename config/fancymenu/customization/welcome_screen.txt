@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = welcome_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1766785021510
+  last_edited_time = 1773966163402
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:b750465c-a92b-4754-bee0-d1ada272d990-1766784940305] = [groups:][instances:]
+  [loading_requirement_container_meta:21d2ebd0-126c-44ac-add2-5a60109423c5-1773964935446] = [groups:][instances:]
 }
 
 customization {
@@ -83,8 +83,8 @@ element {
 
 element {
   interactable = true
-  source = {"placeholder":"file_text","values":{"path_or_url":"/config/fancymenu/assets/welcome_screen.txt","mode":"all","separator":"\n","last_lines":"1"}}
-  source_mode = direct
+  source = [source:local]/config/fancymenu/assets/welcome_screen.txt
+  source_mode = resource
   shadow = false
   scale = 1.0
   base_color = #FFFFFFFF
@@ -125,13 +125,13 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1200
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 393d8d72-5f84-495d-8ca1-df8c85add37e-1748114828041
-  x = 12
+  x = 17
   y = 7
-  width = 444
+  width = 439
   height = 268
   stretch_x = false
   stretch_y = false
@@ -156,15 +156,14 @@ element {
 
 element {
   button_element_executable_block_identifier = 6ee0978e-e482-420e-bce7-b4326c643b6e-1748122362624
-  [executable_action_instance:192ba8f0-ddf9-455b-935d-4441b6d885f4-1748122397524][action_type:closegui] = 
   [executable_action_instance:c875ec8f-8ce2-4ab0-bc05-47e67d172d9b-1748122404358][action_type:set_variable] = has_seen_intro_menu:1
-  [executable_block:6ee0978e-e482-420e-bce7-b4326c643b6e-1748122362624][type:generic] = [executables:192ba8f0-ddf9-455b-935d-4441b6d885f4-1748122397524;c875ec8f-8ce2-4ab0-bc05-47e67d172d9b-1748122404358;]
+  [executable_action_instance:192ba8f0-ddf9-455b-935d-4441b6d885f4-1748122397524][action_type:closegui] = 
+  [executable_block:6ee0978e-e482-420e-bce7-b4326c643b6e-1748122362624][type:generic] = [executables:c875ec8f-8ce2-4ab0-bc05-47e67d172d9b-1748122404358;192ba8f0-ddf9-455b-935d-4441b6d885f4-1748122397524;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  hoverlabel = {"placeholder":"switch_case","values":{"value":"{"placeholder":"getvariable","values":{"name":"time_in_intro_screen"}}","cases":"30:&6&lStart your journey!","default":"&c&oAre you sure?"}}
-  label = Done
+  label = <pulse>Start your journey!
   navigatable = true
   widget_active_state_requirement_container_identifier = 547035d4-d561-44c3-992f-c752739fcd05-1748122362624
   [loading_requirement_container_meta:547035d4-d561-44c3-992f-c752739fcd05-1748122362624] = [groups:][instances:]
@@ -191,7 +190,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1200
   sticky_anchor = false
   anchor_point = bottom-centered
   x = -74

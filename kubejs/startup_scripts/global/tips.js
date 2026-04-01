@@ -54,4 +54,7 @@ global.LCETips = {
 
 	'evilcraft:creative_blood_drop': ['Creative mode only item to drain and fill infinite amounts of Blood'],
 	'evilcraft:biome_extract': ['Transforms the target area it lands on into the contained biome. Crafted at Environemntal Accumulators at a desired biome.'],
+
+	'minecraft:clock': ['Tells time whenever in your inventory, a Bundle, or a Backpack.'],
+	'mythicmetals:platinum_watch': ['Tells time whenever in your inventory, a Bundle, or a Backpack.'],
 }

@@ -348,5 +348,83 @@
 		},
 		"texture": "kohara:attribute/saturation",
 		"compare": "higher_better"
+	},
+	"adjcore:generic.health_regeneration": {
+		"display": {
+			"mainhand": "difference",
+			"offhand": "difference",
+			"feet": "difference",
+			"legs": "difference",
+			"chest": "difference",
+			"head": "difference",
+			"potion": "difference"
+		},
+		"texture": "kohara:attribute/health_regeneration",
+		"compare": "higher_better"
+	},
+	"attributeslib:armor_pierce": {
+		"display": {
+			"mainhand": "difference",
+			"offhand": "difference",
+			"feet": "difference",
+			"legs": "difference",
+			"chest": "difference",
+			"head": "difference",
+			"potion": "difference"
+		},
+		"texture": "kohara:attribute/armor_penetration",
+		"compare": "higher_better"
+	},
+	"ars_nouveau:ars_nouveau.perk.max_mana": {
+		"display": {
+			"mainhand": "difference",
+			"offhand": "difference",
+			"feet": "difference",
+			"legs": "difference",
+			"chest": "difference",
+			"head": "difference",
+			"potion": "difference"
+		},
+		"texture": "kohara:attribute/max_mana",
+		"compare": "higher_better"
+	},
+	"ars_nouveau:ars_nouveau.perk.mana_regen": {
+		"display": {
+			"mainhand": "difference",
+			"offhand": "difference",
+			"feet": "difference",
+			"legs": "difference",
+			"chest": "difference",
+			"head": "difference",
+			"potion": "difference"
+		},
+		"texture": "kohara:attribute/mana_regeneration",
+		"compare": "higher_better"
+	},
+	"ars_nouveau:ars_nouveau.perk.spell_damage": {
+		"display": {
+			"mainhand": "difference",
+			"offhand": "difference",
+			"feet": "difference",
+			"legs": "difference",
+			"chest": "difference",
+			"head": "difference",
+			"potion": "difference"
+		},
+		"texture": "kohara:attribute/spell_power",
+		"compare": "higher_better"
+	},
+	"adjcore:player.mana_cost_reduction": {
+		"display": {
+			"mainhand": "difference",
+			"offhand": "difference",
+			"feet": "difference",
+			"legs": "difference",
+			"chest": "difference",
+			"head": "difference",
+			"potion": "difference"
+		},
+		"texture": "kohara:attribute/spell_discount",
+		"compare": "higher_better"
 	}
 }

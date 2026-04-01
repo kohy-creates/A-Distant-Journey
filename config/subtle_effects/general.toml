@@ -27,6 +27,7 @@ leavesLandingOnWaterRipples = true
 leavesLandingOnWaterKeepMomentum = true
 fallenLeavesLifeTime = 60
 rainIncreasesLeavesMovementSpeed = true
+staticFlameBrightness = true
 fireOverlayHeight = -0.19705883
 fireOverlayAlpha = 0.8006536
 fireOverlayAlphaWithFireResistance = 0.24509804

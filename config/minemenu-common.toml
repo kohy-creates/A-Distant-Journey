@@ -1,6 +1,6 @@
 
 [general]
-	toggle = false
+	toggle = true
 	rightClickToEdit = false
 	releaseToSelect = false
 	menuAnimation = true

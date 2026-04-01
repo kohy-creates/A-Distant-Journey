@@ -67,13 +67,40 @@ ServerEvents.tags('block', tags => {
 	tags.removeAll('twilightforest:portal/fluid');
 	tags.add('twilightforest:portal/fluid', [
 		'supplementaries:lumisene'
-	])
+	]);
 
 	tags.add('alexsmobs:frostalker_fears', [
 		'cataclysm:altar_of_fire'
-	])
+	]);
 
 	tags.add('cataclysm:ignis_can_destroy_cracked_block', [
 		/.*\:cracked_.*/
+	]);
+
+	tags.add('twilightforest:trophies', [
+		/trofers/
+	]);
+
+	tags.add('snowrealmagic:offset_y', [
+		'adjblocks:twig',
+		'adjblocks:pebble'
+	]);
+
+	tags.add('snowrealmagic:containables', [
+		'adjblocks:twig',
+		'adjblocks:pebble',
+		/placeablemaxwell/
+	]);
+
+	tags.add('botania:horn_of_the_covering_breakable', [
+		'snowrealmagic:snow'
+	]);
+
+	tags.add('botania:horn_of_the_wild_breakable', [
+		'adjblocks:twig'
+	]);
+
+	tags.add('snowrealmagic:cannot_accumulate_on', [
+		/placeablemaxwell/
 	])
 });

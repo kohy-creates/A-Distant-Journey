@@ -19,7 +19,7 @@ PlayerEvents.inventoryChanged(event => {
 
 		let title, description;
 		if (tip.length === 1) {
-			title = Utils.toTitleCase(id.split(':')[1].replace('_', ' '));
+			title = global.toTitleCase(global.textReplaceAll(id.split(':')[1]), '_', '');
 			description = tip[0];
 		}
 		else {

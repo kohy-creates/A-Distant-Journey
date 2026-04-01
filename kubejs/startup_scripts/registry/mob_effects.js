@@ -46,27 +46,27 @@ global.voidStrikeTick = function (entity, amplifier, fromBow) {
 		data.mul += step;
 
 		if (data.ticks === 1) {
-			level.playSound(null, new Vec3d(entity.x, entity.y + entity.getEyeHeight(), entity.z), 'adj:enchantment.void_strike.activate', 'neutral')
+			level.playSound(null, new Vec3d(entity.x, entity.y + entity.getEyeHeight(), entity.z), 'adj:enchantment.void_strike.activate', 'neutral');
 		}
 
 		const box = entity.getBoundingBox();
-		const pX = box.minX + (Math.random() * (box.maxX - box.minX))
-		const pY = box.minY + (Math.random() * (box.maxY - box.minY))
-		const pZ = box.minZ + (Math.random() * (box.maxZ - box.minZ))
+		const pX = box.minX + (Math.random() * (box.maxX - box.minX));
+		const pY = box.minY + (Math.random() * (box.maxY - box.minY));
+		const pZ = box.minZ + (Math.random() * (box.maxZ - box.minZ));
 
 		level.spawnParticles(
 			'born_in_chaos_v1:darkspots', true,
 			pX, pY, pZ,
 			0, 0, 0,
 			1, 0
-		)
+		);
 
 		if (data.ticks === 160) {
 			entity.getPersistentData().remove('voidStrike');
 			level.playSound(null, new Vec3d(entity.x, entity.y + entity.getEyeHeight(), entity.z), 'adj:enchantment.void_strike.deactivate', 'neutral');
 		}
 	}
-}
+};
 
 StartupEvents.registry('mob_effect', registry => {
 	registry.create('armor_shred')
@@ -97,7 +97,7 @@ StartupEvents.registry('mob_effect', registry => {
 			'07d281d2-87ab-4078-b80f-d813aaf670c6',
 			2.0,
 			'addition'
-		)
+		);
 
 	registry.create('overfed')
 		.color(Color.of('#F82423'))
@@ -107,7 +107,7 @@ StartupEvents.registry('mob_effect', registry => {
 			'e5c460c4-5771-4951-a02c-5dab71bef3d0',
 			0.25,
 			'addition'
-		)
+		);
 
 	registry.create('prometheum_regeneration')
 		.color(Color.of('#F82423'))
@@ -117,26 +117,26 @@ StartupEvents.registry('mob_effect', registry => {
 			'aeb5b123-26b9-454d-bff2-b80730a3369d',
 			0.5,
 			'addition'
-		)
+		);
 
 	registry.create('shadow_apparitions')
 		.color(Color.of('#5300c0'))
 		.harmful()
-		.effectTick((entity, amplifier) => global.shadowApparitionsTick(entity, amplifier))
+		.effectTick((entity, amplifier) => global.shadowApparitionsTick(entity, amplifier));
 
 	registry.create('void_strike')
 		.color(Color.of('#5300c0'))
 		.harmful()
-		.effectTick((entity, amplifier) => global.voidStrikeTick(entity, amplifier, false))
+		.effectTick((entity, amplifier) => global.voidStrikeTick(entity, amplifier, false));
 
 	registry.create('void_shot')
 		.color(Color.of('#5300c0'))
 		.harmful()
-		.effectTick((entity, amplifier) => global.voidStrikeTick(entity, amplifier, true))
+		.effectTick((entity, amplifier) => global.voidStrikeTick(entity, amplifier, true));
 
 	registry.create('echo_cooldown')
 		.color(Color.of('#FFFFFF'))
-		.beneficial()
+		.beneficial();
 
 	registry.create('rampage')
 		.color(Color.DARK_RED)
@@ -152,5 +152,5 @@ StartupEvents.registry('mob_effect', registry => {
 			'72cb6926-2df2-4fd2-b1af-99ee1199ef91',
 			'0.065',
 			'multiply_base'
-		)
-})
+		);
+});

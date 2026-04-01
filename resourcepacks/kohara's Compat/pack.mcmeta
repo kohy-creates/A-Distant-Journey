@@ -8,6 +8,10 @@
       {
         "namespace": "^afterimages$",
         "path": "^afterimages/entities/.*$"
+      },
+      {
+        "namespace": "^minecraft$",
+        "path": "^sounds/blocks/.*.json$"
       }
     ]
   }

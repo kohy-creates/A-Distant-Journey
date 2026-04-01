@@ -1114,4 +1114,50 @@ global.setBonusMap = {
 			}
 		]
 	},
+	'twilightforest:ironwood': {
+		description: [
+			'Ores will sometimes drop more items'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:player.extra_fortune_level',
+					value: 1,
+					operation: 0
+				}
+			}
+		]
+	},
+	'mythicmetals:mythril': {
+		description: [
+			'Ores will sometimes drop more items',
+			'Immunity to Mining Fatigue'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:player.extra_fortune_level',
+					value: 1,
+					operation: 0
+				}
+			}
+		]
+	},
+	'twilightforest:knightmetal': {
+		description: [
+			'Reduces incoming damage by 10%'
+		],
+		effects: [
+			{
+				type: 'attribute',
+				value: {
+					id: 'adjcore:generic.damage_reduction',
+					value: 0,
+					operation: 0.1
+				}
+			}
+		]
+	},
 }

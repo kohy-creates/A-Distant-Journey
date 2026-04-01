@@ -120,14 +120,34 @@ PlayerEvents.tick(event => {
 	critDamageAttr.removeModifier(WillOfDharockUUID)
 	critDamageAttr.addTransientModifier(new $AttributeModifier(WillOfDharockUUID, 'Will of Dharock', willOfDharockAmount, $Operation.ADDITION))
 
-	// const persistentData = player.getPersistentData();
+	const pData = player.getPersistentData();
 
 	// if (player.getServer().isHardcore() && !persistentData.gaveRing) {
 	// 	persistentData.putBoolean('gaveRing', true)
 	// 	player.give('enigmaticlegacy:cursed_ring')
 	// }
 
-})
+	if (pData.elsa_crossbow_tickdown && pData.elsa_crossbow_tickdown > 0) {
+		pData.elsa_crossbow_tickdown--;
+		player.sendData('elsa_crossbow_draw', {
+			amount: pData.elsa_crossbow_tickdown
+		});
+	}
+	else {
+		if (player.mainHandItem.getId() === 'kubejs:elsa_crossbow' && player.mainHandItem.nbt.Charged) {
+			let nbt = player.mainHandItem.nbt;
+			nbt.remove('Charged');
+			nbt.remove('ChargedProjectiles');
+			player.mainHandItem.setNbt(nbt);
+		}
+		if (player.offhandItem.getId() === 'kubejs:elsa_crossbow' && player.offhandItem.nbt.Charged) {
+			let nbt = player.offhandItem.nbt;
+			nbt.remove('Charged');
+			nbt.remove('ChargedProjectiles');
+			player.offhandItem.setNbt(nbt);
+		}
+	}
+});
 
 ADJServerEvents.adjHurt(event => {
 	if (event.isCritical()) {

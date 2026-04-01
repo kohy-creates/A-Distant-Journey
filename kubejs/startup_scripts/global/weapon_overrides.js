@@ -195,3 +195,20 @@ addToolsetOverride('mythicmetals:celestium', 75)
 addToolsetOverride('mythicmetals:metallurgium', 75)
 addToolsetOverride('witherstorm:command_block', 51)
 addToolsetOverride('simplyswords:runic', 42)
+
+global.toolReachOverrides = {
+	'twilightforest:ironwood_pickaxe': 1.5,
+	'twilightforest:ironwood_axe': 1.5,
+	'twilightforest:ironwood_hoe': 1.5,
+	'twilightforest:ironwood_shovel': 1.5,
+	'mythicmetals:mythril_pickaxe': 1.5,
+	'mythicmetals:mythril_axe': 1.5,
+	'mythicmetals:mythril_hoe': 1.5,
+	'mythicmetals:mythril_shovel': 1.5,
+	'experienceobelisk:cognitive_pickaxe': 3,
+	'experienceobelisk:cognitive_axe': 3,
+	'experienceobelisk:cognitive_hoe': 3,
+	'experienceobelisk:cognitive_shovel': 3,
+	'experienceobelisk:cognitive_shears': 3,
+	'experienceobelisk:flint_and_cognitive_alloy': 3
+};

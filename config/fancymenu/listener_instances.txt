@@ -1,0 +1,73 @@
+type = listener_instances
+
+listener_instance {
+  listener_instance_identifier = f7ae69df-ea4b-4170-bcf8-5bd0cd21d1a5-1774452561296
+  listener_provider_identifier = effect_gained
+  listener_instance_action_script_identifier = 179c040f-1b51-458c-a776-a9534a03c1a0-1774452561296
+  [executable_action_instance:5fb7ace6-23e7-4859-8384-9dfb113a6976-1774452602427][action_type:set_variable] = hud.is_hungry:1
+  [executable_block:643ad8ce-2ae5-4db3-a54c-5b737df22f5a-1774452600042][type:if] = [executables:5fb7ace6-23e7-4859-8384-9dfb113a6976-1774452602427;][appended:46d3a09d-41be-43e6-80b8-90a8b280a32f-1774455020273]
+  [executable_action_instance:9c0fdffe-8c4d-4b7c-9d02-dd6ec6278e9b-1774455054920][action_type:set_variable] = hud.has_wither:1
+  [executable_block:46d3a09d-41be-43e6-80b8-90a8b280a32f-1774455020273][type:else-if] = [executables:9c0fdffe-8c4d-4b7c-9d02-dd6ec6278e9b-1774455054920;][appended:3e7f7075-9df5-4334-b4dc-2bd7e55169e7-1774455092438]
+  [executable_action_instance:5946a85d-c921-4200-9a59-c1964682ff3b-1774455095211][action_type:set_variable] = hud.is_poisoned:1
+  [executable_block:3e7f7075-9df5-4334-b4dc-2bd7e55169e7-1774455092438][type:else-if] = [executables:5946a85d-c921-4200-9a59-c1964682ff3b-1774455095211;]
+  [else_if_executable_block_body:3e7f7075-9df5-4334-b4dc-2bd7e55169e7-1774455092438] = 342afa21-8285-4255-aa7d-879ab3733e1c-1774455069227
+  [loading_requirement_container_meta:342afa21-8285-4255-aa7d-879ab3733e1c-1774455069227] = [groups:][instances:0729810c-fbe7-413c-84c2-0c877d7ac1c7-1774455070141;]
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:0729810c-fbe7-413c-84c2-0c877d7ac1c7-1774455070141] = ["mode":"equals","text":"$$effect_key","compare_with":"minecraft:poison"]$
+  [else_if_executable_block_body:46d3a09d-41be-43e6-80b8-90a8b280a32f-1774455020273] = ed7bd7b3-2630-475a-9c64-de8c6908da20-1774454962739
+  [loading_requirement_container_meta:ed7bd7b3-2630-475a-9c64-de8c6908da20-1774454962739] = [groups:group_1774454983151;][instances:]
+  [loading_requirement_group:group_1774454983151] = [group_mode:or]
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][group:group_1774454983151][req_id:8945dc3e-ffbe-45ec-b5f1-42dcac67f33e-1774454986640] = ["mode":"equals","text":"$$effect_key","compare_with":"minecraft:wither"]$
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][group:group_1774454983151][req_id:d0b2238b-48eb-4c79-b3c4-493541bd6e30-1774454998101] = ["mode":"equals","text":"$$effect_key","compare_with":"witherstormmod:wither_sickness"]$
+  [if_executable_block_body:643ad8ce-2ae5-4db3-a54c-5b737df22f5a-1774452600042] = 9c9ea948-4a0e-440d-b10c-600b0fbbfe53-1774452574734
+  [loading_requirement_container_meta:9c9ea948-4a0e-440d-b10c-600b0fbbfe53-1774452574734] = [groups:][instances:d720c83a-2b41-41c6-ae97-a4daefcaed55-1774452575813;]
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:d720c83a-2b41-41c6-ae97-a4daefcaed55-1774452575813] = ["mode":"equals","text":"$$effect_key","compare_with":"minecraft:hunger"]$
+  [if_executable_block_collapsed:643ad8ce-2ae5-4db3-a54c-5b737df22f5a-1774452600042] = false
+  [executable_block:179c040f-1b51-458c-a776-a9534a03c1a0-1774452561296][type:generic] = [executables:643ad8ce-2ae5-4db3-a54c-5b737df22f5a-1774452600042;]
+}
+
+listener_instance {
+  listener_instance_identifier = c40bc96f-62f1-40cc-aa67-c35542ceda51-1774452624116
+  listener_provider_identifier = effect_lost
+  listener_instance_action_script_identifier = 803261ac-cd38-4ab8-9dad-112cf753f29e-1774452624116
+  [executable_action_instance:073972e1-e626-45e8-a6b1-d55cd69273cc-1774452648391][action_type:set_variable] = hud.is_hungry:0
+  [executable_block:179616e6-6261-4b5e-af90-a7de9bf28c41-1774452645653][type:if] = [executables:073972e1-e626-45e8-a6b1-d55cd69273cc-1774452648391;][appended:e284b0d8-b898-45ad-beab-7da88cee892a-1774455399402]
+  [executable_action_instance:5eedfb30-3fac-4e28-bca7-e8c5b3e4cc71-1774455403417][action_type:set_variable] = hud.has_wither:0
+  [executable_block:e284b0d8-b898-45ad-beab-7da88cee892a-1774455399402][type:else-if] = [executables:5eedfb30-3fac-4e28-bca7-e8c5b3e4cc71-1774455403417;][appended:b682a173-0a2a-4c28-b437-e90ee26c8a76-1774455449636]
+  [executable_action_instance:eb47b339-c578-4baa-8398-e64b53e2ea91-1774455452437][action_type:set_variable] = hud.is_poisoned:0
+  [executable_block:b682a173-0a2a-4c28-b437-e90ee26c8a76-1774455449636][type:else-if] = [executables:eb47b339-c578-4baa-8398-e64b53e2ea91-1774455452437;]
+  [else_if_executable_block_body:b682a173-0a2a-4c28-b437-e90ee26c8a76-1774455449636] = fe3a1212-fb36-4ca4-bcd0-d66f503c5319-1774455413371
+  [loading_requirement_container_meta:fe3a1212-fb36-4ca4-bcd0-d66f503c5319-1774455413371] = [groups:][instances:0d1500e4-6f37-47e3-ae76-43e95a897a4a-1774455414321;]
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:0d1500e4-6f37-47e3-ae76-43e95a897a4a-1774455414321] = ["mode":"equals","text":"$$effect_key","compare_with":"minecraft:poison"]$
+  [else_if_executable_block_body:e284b0d8-b898-45ad-beab-7da88cee892a-1774455399402] = 57b27034-b987-49d5-a066-3ee577b71a31-1774455349143
+  [loading_requirement_container_meta:57b27034-b987-49d5-a066-3ee577b71a31-1774455349143] = [groups:is_wither;][instances:]
+  [loading_requirement_group:is_wither] = [group_mode:or]
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][group:is_wither][req_id:4e93c2ef-f5e3-4727-a9c1-994608ee5c17-1774455359855] = ["mode":"equals","text":"$$effect_key","compare_with":"minecraft:wither"]$
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][group:is_wither][req_id:ba3bf2bc-cc38-4eb4-9c95-e810b7678a18-1774455375523] = ["mode":"equals","text":"$$effect_key","compare_with":"witherstormmod:wither_sickness"]$
+  [if_executable_block_body:179616e6-6261-4b5e-af90-a7de9bf28c41-1774452645653] = e94569d6-72c6-4a7e-8366-14b2b23920b2-1774452628085
+  [loading_requirement_container_meta:e94569d6-72c6-4a7e-8366-14b2b23920b2-1774452628085] = [groups:][instances:e328cd00-1034-4633-b4a0-14c60f4e12cf-1774452628943;]
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:e328cd00-1034-4633-b4a0-14c60f4e12cf-1774452628943] = ["mode":"equals","text":"$$effect_key","compare_with":"minecraft:hunger"]$
+  [if_executable_block_collapsed:179616e6-6261-4b5e-af90-a7de9bf28c41-1774452645653] = false
+  [executable_block:803261ac-cd38-4ab8-9dad-112cf753f29e-1774452624116][type:generic] = [executables:179616e6-6261-4b5e-af90-a7de9bf28c41-1774452645653;]
+}
+
+listener_instance {
+  listener_instance_identifier = f616d2b2-ba7c-4906-9b17-d4aacd63944f-1774455258425
+  listener_provider_identifier = stopped_freezing
+  listener_instance_action_script_identifier = ff3fa4f8-c20e-41f0-9451-d214821563b0-1774455258425
+  [executable_action_instance:c8c1bc26-aaba-4bd1-940b-b4ef873513de-1774455261585][action_type:set_variable] = hud.is_freezing:0
+  [executable_block:ff3fa4f8-c20e-41f0-9451-d214821563b0-1774455258425][type:generic] = [executables:c8c1bc26-aaba-4bd1-940b-b4ef873513de-1774455261585;]
+}
+
+listener_instance {
+  listener_instance_identifier = d4bfffd6-b590-4cbd-9ea7-bfa1f0b455bc-1774455147440
+  listener_provider_identifier = started_freezing
+  listener_instance_action_script_identifier = 225f0b09-4d7c-4d1f-bdf8-7390897bccd6-1774455147440
+  [executable_action_instance:49e23fff-6101-4717-8acd-27d8dc150031-1774455243595][action_type:set_variable] = hud.is_freezing:1
+  [executable_block:ee508e27-a1e8-49d9-88cb-640ab0c14796-1774455236396][type:if] = [executables:49e23fff-6101-4717-8acd-27d8dc150031-1774455243595;]
+  [if_executable_block_body:ee508e27-a1e8-49d9-88cb-640ab0c14796-1774455236396] = f0162be5-6b55-4a88-91fd-742441e86ef2-1774455226333
+  [loading_requirement_container_meta:f0162be5-6b55-4a88-91fd-742441e86ef2-1774455226333] = [groups:][instances:907416f6-2bc3-4632-9f2e-1cce5e326807-1774455227136;]
+  [loading_requirement:fancymenu_visibility_requirement_is_number][requirement_mode:if][req_id:907416f6-2bc3-4632-9f2e-1cce5e326807-1774455227136] = ["mode":"equals","number":"$$freezing_intensity","compare_with":"1.0"]$
+  [if_executable_block_collapsed:ee508e27-a1e8-49d9-88cb-640ab0c14796-1774455236396] = false
+  [executable_block:225f0b09-4d7c-4d1f-bdf8-7390897bccd6-1774455147440][type:generic] = [executables:ee508e27-a1e8-49d9-88cb-640ab0c14796-1774455236396;]
+}
+

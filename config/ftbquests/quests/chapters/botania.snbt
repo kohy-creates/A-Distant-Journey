@@ -115,8 +115,8 @@
 			image: "botania:item/rune_air"
 			rotation: 0.0d
 			width: 2.0d
-			x: 11.861503395679037d
-			y: -7.094588891373206d
+			x: 11.5d
+			y: -7.464285714285715d
 		}
 		{
 			dependency: "055D249C76639C5D"
@@ -124,8 +124,8 @@
 			image: "botania:item/rune_spring"
 			rotation: 0.0d
 			width: 2.0d
-			x: 12.932931967107614d
-			y: -5.880303177087491d
+			x: 12.571428571428577d
+			y: -6.25d
 		}
 		{
 			dependency: "3D3BA5103B3F9C89"
@@ -133,8 +133,8 @@
 			image: "botanicadds:item/rune_tp"
 			rotation: 0.0d
 			width: 2.0d
-			x: 14.111503395679037d
-			y: -7.130303177087491d
+			x: 13.75d
+			y: -7.5d
 		}
 		{
 			dependency: "67CBFE98BCA401BD"
@@ -142,8 +142,8 @@
 			image: "botania:item/rune_wrath"
 			rotation: 0.0d
 			width: 2.0d
-			x: 15.147217681393322d
-			y: -5.844588891373206d
+			x: 14.785714285714285d
+			y: -6.214285714285715d
 		}
 		{
 			color: 14549991
@@ -162,6 +162,14 @@
 			width: 1.75d
 			x: 7.0d
 			y: 4.0d
+		}
+		{
+			height: 1.75d
+			image: "waystones:block/andesite_waystone_bottom_bottom"
+			rotation: 45.0d
+			width: 1.75d
+			x: 10.5d
+			y: -2.5d
 		}
 	]
 	order_index: 0
@@ -433,8 +441,8 @@
 				}
 			]
 			title: "Rune Collection: Four Elements"
-			x: 14.5d
-			y: -3.5d
+			x: 13.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["602FA24B60010322"]
@@ -468,8 +476,8 @@
 				}
 			]
 			title: "Rune Collection: Concealed Four Seasons"
-			x: 15.5d
-			y: -3.5d
+			x: 14.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["602FA24B60010322"]
@@ -518,8 +526,8 @@
 				}
 			]
 			title: "Rune Collection: Seven Deadly Sins"
-			x: 17.5d
-			y: -3.5d
+			x: 16.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["602FA24B60010322"]
@@ -548,8 +556,8 @@
 				}
 			]
 			title: "Rune Collection: Chaos and Harmony"
-			x: 16.5d
-			y: -3.5d
+			x: 15.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["602FA24B60010322"]
@@ -715,8 +723,8 @@
 				type: "item"
 			}]
 			title: "Corporeal"
-			x: 20.0d
-			y: 1.0d
+			x: 19.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
@@ -1492,6 +1500,7 @@
 		}
 		{
 			dependencies: ["602FA24B60010322"]
+			description: ["&7&oYes, the achievement requires you to craft all of them."]
 			icon: "botania:entropinnyum"
 			id: "59BEE24C8AAB14A7"
 			subtitle: "With newfound materials, explore some of the more quirky, but more efficient ways of generating Mana"
@@ -1553,8 +1562,8 @@
 				}
 			]
 			title: "Amp Up The Game"
-			x: 12.0d
-			y: -2.0d
+			x: 14.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5CFAC77E43966C73"]
@@ -1875,9 +1884,9 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["30CABAA97495053C"]
+			dependencies: ["602FA24B60010322"]
 			id: "4FB77EF920326066"
-			subtitle: "Enchant a Zanite Gemstone into a Warp Stone"
+			subtitle: "Pour some Dimensional Juice onto a Rune of Teleportation"
 			tasks: [{
 				id: "0EA283773F3E7D6C"
 				item: {
@@ -1890,29 +1899,57 @@
 				type: "item"
 			}]
 			title: "Blink and You'll Miss Me!"
-			x: 3.5d
-			y: -5.5d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4FB77EF920326066"]
 			icon: "waystones:waystone"
+			icon_scale: 0.75d
 			id: "2C8E322D7390BBED"
+			shape: "diamond"
+			size: 1.5d
 			subtitle: "\"You must construct additional Pylons\""
 			tasks: [{
 				id: "571EDEF2C6671B9F"
 				item: {
 					Count: 1
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					tag: {
-						value: "waystones:waystones"
+						items: [
+							{
+								Count: 1b
+								id: "waystones:waystone"
+							}
+							{
+								Count: 1b
+								id: "waystones:mossy_waystone"
+							}
+							{
+								Count: 1b
+								id: "waystones:sandy_waystone"
+							}
+							{
+								Count: 1b
+								id: "waystones:deepslate_waystone"
+							}
+							{
+								Count: 1b
+								id: "waystones:blackstone_waystone"
+							}
+							{
+								Count: 1b
+								id: "waystones:end_stone_waystone"
+							}
+						]
 					}
 				}
 				title: "Any Waystone"
 				type: "item"
 			}]
 			title: "Warp Network"
-			x: 2.5d
-			y: -6.5d
+			x: 10.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["69E0CD80BEE3CA2E"]
@@ -2288,8 +2325,8 @@
 				type: "item"
 			}]
 			title: "Constant Overdrive"
-			x: 21.0d
-			y: 1.0d
+			x: 21.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6CF9448B3FA32156"]

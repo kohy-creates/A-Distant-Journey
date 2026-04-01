@@ -1,0 +1,6 @@
+
+["Configs for Waxed & Shiny"]
+	#Showing an overlay effect on waxed blocks while holding honeycomb or wax
+	#Default: true
+	shining_overlay_on_waxed_blocks = true
+

@@ -6,6 +6,7 @@ global.stageRestrictions = {
 			/mythicmetals:steel/,
 			/twilightforest/,
 			/twilightdelight/,
+			/umbral_skies/,
 			'mythicmetals:stormyx_ore',
 			'mythicmetals:blackstone_stormyx_ore',
 			'mythicmetals:raw_stormyx',
@@ -97,7 +98,16 @@ global.stageRestrictions = {
 			'create:empty_blaze_burner',
 			'galosphere:warped_anchor',
 			'netherexp:soul_soil_layer',
-			/treasure_bag/
+			/treasure_bag/,
+			'twilightforest:oak_banister',
+			'twilightforest:birch_banister',
+			'twilightforest:acacia_banister',
+			'twilightforest:spruce_banister',
+			'twilightforest:jungle_banister',
+			'twilightforest:dark_oak_banister',
+			'twilightforest:bamboo_banister',
+			'twilightforest:vangrove_banister',
+			'twilightforest:cherry_banister',
 		]
 	},
 	'chapter_2': {
@@ -162,7 +172,16 @@ global.stageRestrictions = {
 			'botania:gaia_spreader',
 			/gaiasteel/,
 			'botanicadds:gaia_shard',
-			/botanicadds:.*ring_gaia/
+			/botanicadds:.*ring_gaia/,
+			'mythicmetals:mythril_helmet',
+			'mythicmetals:mythril_chestplate',
+			'mythicmetals:mythril_leggings',
+			'mythicmetals:mythril_boots',
+			'mythicmetals:mythril_pickaxe',
+			'mythicmetals:mythril_axe',
+			'mythicmetals:mythril_shovel',
+			'mythicmetals:mythril_hoe',
+			'mythicmetals:mythril_drill'
 		],
 		light: [
 			'mythicmetals:aegis_smithing_template',

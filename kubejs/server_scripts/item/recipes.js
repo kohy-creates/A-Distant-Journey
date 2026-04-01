@@ -5,13 +5,16 @@ ServerEvents.recipes((event) => {
 		if (text.includes(' ')) {
 			text = text.split(' ')[1];
 		}
-		return text.replace(':', '_').replace('#', '');
+		return text
+			.replace(':', '_')
+			.replace('#', '')
+			.replace('/', '_')
+			.replace('.', '_');
 	}
 
 	/** @type {Internal.InputItem[]}*/
 	const disabledItemRecipes = [
 		global.rediscoveredFurniture(),
-		global.blacklistedItems,
 		'naturescompass:naturescompass',
 		'enchantinginfuser:enchanting_infuser',
 		'tiab:time_in_a_bottle',
@@ -98,7 +101,10 @@ ServerEvents.recipes((event) => {
 		/toms_storage:ts\..*_filter/,
 		'botania:conjuration_catalyst',
 		'travelersbackpack:netherite_tier_upgrade',
-	];
+		/placeablemaxwell/,
+		/gateways/,
+		/twilightforest:fiery/,
+	].concat(global.blacklistedItems);
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
 	});
@@ -283,7 +289,19 @@ ServerEvents.recipes((event) => {
 		/netherexp:cooking\/.*netherite.*/,
 		'farmersdelight:bread_from_smelting',
 		'travelersbackpack:netherite',
-		'minecraft:charcoal'
+		'minecraft:charcoal',
+		'create:compacting/chocolate',
+		'twilightdelight:cooking/transformation_powder',
+		'miners_delight:cutting/glow_squid',
+		'miners_delight:cutting/squid',
+		'miners_delight:cutting/baked_squid',
+		'croptopia:olive_oil',
+		'croptopia:soy_sauce',
+		/umbral_skies:.*gloves/,
+		/aether:.*gloves/,
+		'brewinandchewin:fermenting/egg_grog_from_milk',
+		'twilightdelight:cutting/phantom_chestplate',
+		'twilightdelight:cutting/phantom_helmet'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -301,7 +319,8 @@ ServerEvents.recipes((event) => {
 		'twilightforest:uncrafting',
 		'jumbofurnace:jumbo_smelting',
 		'morered:soldering',
-		'ars_nouveau:armor_upgrade'
+		'ars_nouveau:armor_upgrade',
+		'ars_nouveau:enchantment_apparatus'
 	];
 	removeRecipeByType.forEach(recipeType => {
 		event.remove({ type: recipeType })
@@ -356,8 +375,6 @@ ServerEvents.recipes((event) => {
 			'#c:cinnamon': 'croptopia:cinnamon',
 			'twilightforest:fallen_leaves': '#leaves',
 			'croptopia:salt': 'galosphere:pink_salt_shard',
-			'croptopia:food_press': 'air',
-			'croptopia_additions:carbonation_machine': 'air',
 			'morered:stone_plate': 'smooth_stone_slab',
 			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
 			'croptopia:chocolate': 'neapolitan:chocolate_bar',
@@ -366,6 +383,15 @@ ServerEvents.recipes((event) => {
 			'botania:spectral_platform': 'ars_nouveau:falseweave',
 			'rubinated_nether:ruby': 'rediscovered:ruby',
 			'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
+			'miners_delight:tentacles': 'croptopia:calamari',
+			'delightful:roasted_acron': 'croptopia:roasted_nuts',
+			'croptopia:cooked_bacon': 'farmersdelight:cooked_bacon',
+			'croptopia:bacon': 'farmersdelight:bacon',
+			'croptopia:cheese': 'brewinandchewin:flaxen_cheese_wedge',
+			'twilightforest:raw_venison': 'naturalist:venison',
+			'twilightforest:cooked_venison': 'naturalist:cooked_venison',
+			'twilightforest:fiery_tears': 'twilightforest:fiery_blood',
+			'twilightforest:knightmetal_ring': 'iron_ingot',
 		},
 		output: {
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
@@ -380,6 +406,8 @@ ServerEvents.recipes((event) => {
 			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
 			'rubinated_nether:ruby': 'rediscovered:ruby',
 			'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
+			'miners_delight:tentacles': 'croptopia:calamari',
+			'miners_delight:baked_tentacles': 'croptopia:cooked_calamari',
 		}
 	};
 	for (const [input, replacement] of Object.entries(unificationMap.input)) {
@@ -404,6 +432,88 @@ ServerEvents.recipes((event) => {
 		'2x charcoal',
 		Item.of('charcoal').withChance(0.25)
 	], '#adj:scorched_logs', 120).id('adj:charcoal_from_milling');
+
+	event.custom({
+		"type": "farmersdelight:cutting",
+		"ingredients": [
+			{
+				"item": "miners_delight:glow_squid"
+			}
+		],
+		"result": [
+			{
+				"count": 3,
+				"item": "croptopia:glowing_calamari"
+			},
+			{
+				"chance": 0.5,
+				"item": "croptopia:glowing_calamari"
+			},
+			{
+				"item": "minecraft:glow_ink_sac"
+			},
+			{
+				"chance": 0.5,
+				"count": 2,
+				"item": "minecraft:glow_ink_sac"
+			}
+		],
+		"tool": {
+			"tag": "forge:tools/knives"
+		}
+	}).id('adj:cutting/glow_squid');
+
+	event.custom({
+		"type": "farmersdelight:cutting",
+		"ingredients": [
+			{
+				"item": "miners_delight:squid"
+			}
+		],
+		"result": [
+			{
+				"count": 3,
+				"item": "croptopia:calamari"
+			},
+			{
+				"chance": 0.5,
+				"item": "croptopia:calamari"
+			},
+			{
+				"item": "minecraft:ink_sac"
+			},
+			{
+				"chance": 0.5,
+				"count": 2,
+				"item": "minecraft:ink_sac"
+			}
+		],
+		"tool": {
+			"tag": "forge:tools/knives"
+		}
+	}).id('adj:cutting/squid');
+
+	event.custom({
+		"type": "farmersdelight:cutting",
+		"ingredients": [
+			{
+				"item": "miners_delight:baked_squid"
+			}
+		],
+		"result": [
+			{
+				"count": 3,
+				"item": "croptopia:cooked_calamari"
+			},
+			{
+				"chance": 0.5,
+				"item": "croptopia:cooked_calamari"
+			}
+		],
+		"tool": {
+			"tag": "forge:tools/knives"
+		}
+	}).id('adj:cutting/baked_squid');
 
 	event.shaped(
 		'hopper',
@@ -485,25 +595,6 @@ ServerEvents.recipes((event) => {
 		3,
 		recipe.getId())
 	);
-
-	// Create Experience Block <-> Experience Gem
-	event.shaped(
-		'create:experience_block',
-		[
-			'GG',
-			'GG',
-		],
-		{
-			G: 'ars_nouveau:greater_experience_gem'
-		}
-	).id('adj:experience_block');
-
-	event.shapeless(
-		'4x ars_nouveau:greater_experience_gem',
-		[
-			'create:experience_block',
-		]
-	).id('adj:experience_gem_from_block');
 
 	// Wooden Armor
 	event.shaped(
@@ -1616,7 +1707,7 @@ ServerEvents.recipes((event) => {
 			'#forge:foods/meat/cooked',
 			/cooked_/,
 			'#alexscaves:gelatins',
-			// 'bread',
+			'bread',
 			'farmersdelight:fried_egg',
 			/roasted/,
 			'delightful:cactus_steak',
@@ -1629,6 +1720,8 @@ ServerEvents.recipes((event) => {
 			'dried_kelp'
 		]
 	});
+
+	event.smoking('bread', 'create:dough', 0.7, 200).id('adj:bread_in_smoker');
 
 	event.shaped(
 		Item.of('wither_skeleton_skull'),
@@ -1791,32 +1884,49 @@ ServerEvents.recipes((event) => {
 		event.remove({ output: item })
 	});
 
-	event.recipes.create.pressing('2x endersdelight:ender_shard', 'ender_pearl').id('adj:ender_shard');
+	event.recipes.create.milling('2x endersdelight:ender_shard', 'ender_pearl').id('adj:ender_shard');
+
+	event.recipes.create.mixing(
+		[
+			Fluid.of('kubejs:dimensional_juice', 500),
+			'obsidian'
+		],
+		[
+			Fluid.of('minecraft:water', 500),
+			'waystones:warp_dust',
+			'waystones:warp_dust',
+			'waystones:warp_dust',
+			'crying_obsidian'
+		],
+		240,
+		'superheated'
+	).id('adj:dimensional_juice');
 
 	event.shapeless(
 		'waystones:warp_dust',
 		[
-			Item.of('endersdelight:ender_shard'),
-			Item.of('spelunker:amethyst_dust'),
-			Item.of('spelunker:amethyst_dust')
+			'endersdelight:ender_shard',
+			'spelunker:amethyst_dust',
+			'spelunker:amethyst_dust',
+			'spelunker:amethyst_dust'
 		]
-	).id('adj:warp_dust');
+	).id('adj:warp_dust_manual_only');
 
-	event.recipes.ars_nouveau.enchanting_apparatus(
+	event.recipes.create.mixing(
+		'waystones:warp_dust',
 		[
-			'waystones:warp_dust',
-			'waystones:warp_dust',
-			'waystones:warp_dust',
-			'waystones:warp_dust',
-			'botanicadds:rune_tp',
-			'evilcraft:dark_gem',
-			'evilcraft:dark_gem',
-			'evilcraft:dark_gem'
-		],
-		'aether:zanite_gemstone',
+			'endersdelight:ender_shard',
+			'spelunker:amethyst_dust',
+		]
+	).id('adj:warp_dust_mixing');
+
+	event.recipes.create.filling(
 		'waystones:warp_stone',
-		7000
-	).id('adj:waystones/warp_stone');
+		[
+			'botanicadds:rune_tp',
+			Fluid.of('kubejs:dimensional_juice', 1000)
+		]
+	).id('adj:warp_stone');
 
 	function waystoneRecipe(waystone, material) {
 		event.recipes.create.mechanical_crafting(
@@ -2225,8 +2335,12 @@ ServerEvents.recipes((event) => {
 				"item": "kubejs:eye_of_arcanum"
 			},
 			{
-				"item": "witherstormmod:command_block_book"
-			}/*,
+				"item": "kubejs:eye_of_hedonism"
+			},
+			{
+				"item": "kubejs:eye_of_exploration"
+			},
+			/*,
 			{
 				"item": "constructionwands:infinity_wand"
 			}
@@ -3465,7 +3579,6 @@ ServerEvents.recipes((event) => {
 	// Eyes
 	gaiaPlateRecipe([
 		'botanicadds:gaiasteel_block',
-		// 'botania:terrasteel_block',
 		'botania:dragonstone_block',
 		'botania:dragonstone_block',
 		'botania:dragonstone_block',
@@ -3478,21 +3591,92 @@ ServerEvents.recipes((event) => {
 		'botania:rune_wrath',
 		'botania:rune_lust',
 		'botania:rune_greed',
-	], 'kubejs:eye_of_verdant_bloom', 2000000)
+	], 'kubejs:eye_of_verdant_bloom', 1000000)
 
-	let inter = Item.of('ender_eye');
-	event.recipes.create.sequenced_assembly(
-		Item.of('kubejs:eye_of_ethercraft'),
+	// Eye of Hedonism
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'twilightdelight:fiery_snakes_block',
+			'twilightdelight:meef_wellington_block',
+			'twilightdelight:lily_chicken_block',
+			'vinery:cristel_wine',
+			'vinery:creepers_crush',
+			'croptopia:eggplant_parmesan',
+			'brewinandchewin:scarlet_pierogi',
+			'delightful:deluxe_cheeseburger',
+		],
 		'ender_eye',
+		'kubejs:eye_of_hedonism',
+		5000,
+		false
+	).id('adj:eye_of_hedonism');
+
+	// Eye of Arcanum
+	event.recipes.summoningrituals.altar('ender_eye')
+		.itemOutput('kubejs:eye_of_arcanum')
+		.input(
+			'ars_elemental:mark_of_mastery',
+			'12x aether_redux:gravitite_block',
+			'24x mythicmetals:midas_gold_block',
+			'64x ars_nouveau:source_gem_block',
+			'10x evilcraft:garmonbozia'
+		)
+		.recipeTime(toSeconds(45))
+		.id('adj:eyes/arcanum');
+
+	// Ethercraft Crafting Tree
+	let inter = Item.of('create:brass_block');
+	event.recipes.create.sequenced_assembly(
+		Item.of('kubejs:ethercraft_piece_1'),
+		inter,
 		[
 			event.recipes.create.deploying(inter, [inter, Item.of('create:precision_mechanism')]),
 			event.recipes.create.filling(inter, [inter, Fluid.lava()]),
 			event.recipes.create.deploying(inter, [inter, Item.of('createutilities:void_casing')]),
-			event.recipes.create.deploying(inter, [inter, Item.of('create:brass_block')]),
 			event.recipes.create.deploying(inter, [inter, Item.of('create:cogwheel')]),
 			event.recipes.create.filling(inter, [inter, Fluid.of('supplementaries:lumisene', 1000)]),
 		]
-	).transitionalItem(inter).loops(24).id('adj:eyes/ethercraft')
+	).transitionalItem(inter).loops(5).id('adj:eyes/ethercraft/piece_1');
+
+	event.recipes.create.mechanical_crafting(
+		'kubejs:ethercraft_piece_2',
+		[
+			' SSS ',
+			'SH HS',
+			'S H S',
+			'SH HS',
+			' SSS '
+		],
+		{
+			S: 'mythicmetals:steel_ingot',
+			H: 'create:shaft'
+		}
+	).id('adj:ethecraft_piece_2')
+
+	inter = Item.of('create:brass_block');
+	event.recipes.create.sequenced_assembly(
+		Item.of('kubejs:ethercraft_piece_3'),
+		inter,
+		[
+			event.recipes.create.deploying(inter, [inter, Item.of('create:blaze_cake')]),
+			event.recipes.create.deploying(inter, [inter, Item.of('create:large_cogwheel')]),
+			event.recipes.create.filling(inter, [inter, Fluid.of('supplementaries:lumisene', 1000)]),
+			event.recipes.create.deploying(inter, [inter, Item.of('create:shaft')]),
+		]
+	).transitionalItem(inter).loops(5).id('adj:eyes/ethercraft/piece_3');
+
+	event.recipes.create.mixing(
+		'kubejs:eye_of_ethercraft',
+		[
+			Fluid.of('kubejs:dimensional_juice', 1000),
+			'kubejs:ethercraft_piece_1',
+			'kubejs:ethercraft_piece_2',
+			'kubejs:ethercraft_piece_3',
+			'ender_eye',
+		],
+		1200,
+		'superheated'
+	).id('adj:eye_of_ethercraft');
 
 	event.shaped(
 		Item.of('mythicmetals:durasteel_engine'),
@@ -4366,8 +4550,6 @@ ServerEvents.recipes((event) => {
 		'unusualend:blob_stew_recipe',
 		'alexscaves:primordial_soup',
 		'mynethersdelight:crafting/rock_soup',
-		'croptopia_additions:ramen',
-		'croptopia_additions:green_bean_casserole',
 		'croptopia:chicken_and_rice',
 		'croptopia:cashew_chicken',
 		'croptopia:crema',
@@ -4382,7 +4564,6 @@ ServerEvents.recipes((event) => {
 		'neapolitan:adzuki_stew',
 		'neapolitan:adzuki_curry'
 	];
-
 	event.forEachRecipe([{ type: 'crafting_shaped' }, { type: 'crafting_shapeless' }], recipe => {
 		if (recipe == null) return;
 		if (!stewIDs.includes(recipe.getId())) return;
@@ -4425,8 +4606,7 @@ ServerEvents.recipes((event) => {
 		const id = boat.split(':')
 		const mod = id[0];
 		const type = id[1].replace('_boat', '').replace('_raft', '');
-		// console.log(id)
-		// console.log(type)
+		// console.log(i, type);
 		const boatType = `${(mod == 'upgrade_aquatic' || mod == 'enhanced_mushrooms') ? 'blueprint' : mod}:${(mod === 'aether' || mod === 'aether_redux') ? `${type}_` : ((mod == 'moresnifferflowers') ? `mod_${type}_` : '')}${isChestRecipe ? 'chest_' : ''}boat`
 
 		function plankShapeChecks(xzAxis) {
@@ -5381,7 +5561,7 @@ ServerEvents.recipes((event) => {
 				]
 			}
 		}
-	}
+	};
 	event.forEachRecipe({ type: 'crafting_shapeless' }, recipe => {
 		if (recipe == null) return;
 		const output = recipe.getOriginalRecipeResult();
@@ -5408,15 +5588,15 @@ ServerEvents.recipes((event) => {
 				}
 			}
 
-			event.remove({ id: recipe.getId() })
+			event.remove({ id: recipe.getId() });
 
 			event.recipes.botania.runic_altar(
 				output,
 				ingr,
 				5000
-			).id(recipe.getId())
+			).id(recipe.getId());
 		}
-	})
+	});
 
 	// Window Box Chthonic Yew and Alfthorne
 	event.recipes.botania.petal_apothecary('window_box:alfthorne_sapling', [
@@ -5428,8 +5608,8 @@ ServerEvents.recipes((event) => {
 		'botania:livingwood_twig',
 		'botania:livingwood_twig',
 		'botania:redstone_root'
-	]).id(`adj:alfthorne_sapling`)
-	warping('window_box:alfthorne_sapling', 'window_box:chthonic_yew_sapling')
+	]).id(`adj:alfthorne_sapling`);
+	warping('window_box:alfthorne_sapling', 'window_box:chthonic_yew_sapling');
 
 
 	// Workshop recipes
@@ -5437,33 +5617,34 @@ ServerEvents.recipes((event) => {
 
 		let iMap = [];
 		ingredients.forEach(i => {
-			iMap.push(i instanceof Item ? i : Item.of(i))
-		})
+			iMap.push(i instanceof Item ? i : Item.of(i));
+		});
 
 		if (id) {
 			event.custom({
 				"type": "terra_curio:workshop",
 				"ingredients": iMap,
 				"result": (output instanceof Item) ? output : Item.of(output)
-			}).id(id)
+			}).id(id);
 		}
 		else {
 			event.custom({
 				"type": "terra_curio:workshop",
 				"ingredients": iMap,
 				"result": (output instanceof Item) ? output : Item.of(output)
-			}).id(`adj:workshop/${flattenedID(output)}`)
+			}).id(`adj:workshop/${flattenedID(output)}`);
 		}
 	}
 
 	workshopRecipe([
 		'book',
-		'8x map',
-		'4x ink_sac',
+		'16x map',
+		'8x ink_sac',
+		'3x glow_ink_sac',
 		'feather',
 		'compass',
 		'additionaladditions:depth_meter'
-	], Item.of('kubejs:map_atlas'), 'adj:map_atlas')
+	], Item.of('kubejs:map_atlas'), 'adj:map_atlas');
 
 	const curioToWorkshopList = [
 		'botania:mana_ring',
@@ -5504,15 +5685,11 @@ ServerEvents.recipes((event) => {
 		'botanicadds:mana_ring_gaia',
 		'create:googles',
 		'botania:invisibility_cloak',
-	]
+	];
 	const curioToWorkshopRegex = [
 		/botania:cosmetic.*/,
-		/aether:.*gloves/,
-		/umbral_skies:.*gloves/,
-	]
-	const curioToWorkshopBlacklist = [
-		'aether:netherite_gloves'
-	]
+	];
+	const curioToWorkshopBlacklist = [];
 	event.forEachRecipe({}, recipe => {
 		if (recipe == null) return;
 		if (recipe.getId().includes('_repair')) return;
@@ -5534,7 +5711,7 @@ ServerEvents.recipes((event) => {
 
 				let id = ids[0];
 
-				if (id === 'botania:mana_string') id = 'ars_nouveau:magebloom_fiber'
+				if (id === 'botania:mana_string') id = 'ars_nouveau:magebloom_fiber';
 				counts[id] = (counts[id] || 0) + 1;
 			});
 
@@ -5544,10 +5721,86 @@ ServerEvents.recipes((event) => {
 
 			event.remove({ id: recipe.getId() });
 
-			workshopRecipe(newIngredients, output, recipe.getId())
-
+			workshopRecipe(newIngredients, output, recipe.getId());
 		}
-	})
+	});
+
+	workshopRecipe([
+		'3x leather'
+	], 'aether:leather_gloves');
+
+	workshopRecipe([
+		'2x iron_ingot',
+		'1x leather',
+		'1x string'
+	], 'aether:iron_gloves');
+
+	workshopRecipe([
+		'2x gold_ingot',
+		'1x leather',
+		'1x string'
+	], 'aether:golden_gloves');
+
+	workshopRecipe([
+		'2x diamond',
+		'1x leather',
+		'1x string'
+	], 'aether:diamond_gloves');
+
+	workshopRecipe([
+		'aether:diamond_gloves',
+		'netherite_ingot',
+		'4x ars_nouveau:magebloom_fiber'
+	], 'aether:netherite_gloves');
+
+	workshopRecipe([
+		'3x aether:zanite_gemstone',
+		'1x leather',
+		'1x ars_nouveau:magebloom_fiber'
+	], 'aether:zanite_gloves');
+
+	workshopRecipe([
+		'2x aether:gravitite_ingot',
+		'1x aether:ambrosium_shard',
+		'1x leather',
+		'3x ars_nouveau:magebloom_fiber'
+	], 'aether:gravitite_gloves');
+
+	workshopRecipe([
+		'3x iron_ingot',
+		'3x ancient_aether:valkyrum',
+		'1x leather',
+		'1x string'
+	], 'ancient_aether:valkyrum_gloves');
+
+	workshopRecipe([
+		'2x twilightforest:steeleaf_ingot',
+		'1x leather',
+		'1x string'
+	], 'umbral_skies:steeleaf_gloves');
+
+	workshopRecipe([
+		'2x twilightforest:ironwood_ingot',
+		'1x aether:leather_gloves',
+		'1x string'
+	], 'umbral_skies:ironwood_gloves');
+
+	workshopRecipe([
+		'2x twilightforest:fiery_ingot',
+		'1x netherite_ingot',
+		'3x ars_nouveau:magebloom_fiber'
+	], 'umbral_skies:fiery_gloves');
+
+	workshopRecipe([
+		'6x twilightforest:arctic_fur',
+		'1x string'
+	], 'umbral_skies:arctic_gloves');
+
+	workshopRecipe([
+		'5x twilightforest:alpha_yeti_fur',
+		'3x ars_nouveau:magebloom_fiber'
+	], 'umbral_skies:yeti_gloves');
+
 
 	// Binding Wayfinders
 	function locateStructureRitual(structure, ingredients) {
@@ -5601,6 +5854,7 @@ ServerEvents.recipes((event) => {
 	function toSeconds(time) {
 		return time * 20
 	}
+
 	event.recipes.summoningrituals.altar('botania:elementium_block')
 		.itemOutput('botania:flight_tiara')
 		.input(
@@ -5610,7 +5864,7 @@ ServerEvents.recipes((event) => {
 			'4x botania:ender_air_bottle'
 		)
 		.recipeTime(toSeconds(30))
-		.id('botania:flight_tiara_0')
+		.id('botania:flight_tiara_0');
 
 	event.recipes.summoningrituals.altar('ars_nouveau:wilden_tribute')
 		.itemOutput('5x ars_elemental:mark_of_mastery')
@@ -5625,7 +5879,7 @@ ServerEvents.recipes((event) => {
 			'ars_elemental:anima_essence',
 		)
 		.recipeTime(toSeconds(20))
-		.id('adj:mark_of_mastery')
+		.id('adj:mark_of_mastery');
 
 	event.recipes.summoningrituals.altar('enchantinginfuser:enchanting_infuser')
 		.itemOutput('enchantinginfuser:advanced_enchanting_infuser')
@@ -5635,19 +5889,7 @@ ServerEvents.recipes((event) => {
 			'2x netherite_ingot'
 		)
 		.recipeTime(toSeconds(10))
-		.id('adj:advanced_enchanting_table')
-
-	event.recipes.summoningrituals.altar('ender_eye')
-		.itemOutput('kubejs:eye_of_arcanum')
-		.input(
-			'ars_elemental:mark_of_mastery',
-			'12x aether_redux:gravitite_block',
-			'24x mythicmetals:midas_gold_block',
-			'64x ars_nouveau:source_gem_block',
-			'10x evilcraft:garmonbozia'
-		)
-		.recipeTime(toSeconds(45))
-		.id('adj:eyes/arcanum')
+		.id('adj:advanced_enchanting_table');
 
 	event.recipes.summoningrituals.altar('mythicmetals:hallowed_ingot')
 		.itemOutput('botania:terra_sword')
@@ -5662,7 +5904,21 @@ ServerEvents.recipes((event) => {
 			'botania:elementium_sword'
 		)
 		.recipeTime(toSeconds(25))
-		.id('botania:terra_sword')
+		.id('botania:terra_sword');
+
+	event.recipes.summoningrituals.altar('crafting_table')
+		.itemOutput('twilightforest:uncrafting_table')
+		.input(
+			'mythicmetals:hallowed_ingot',
+			'mythicmetals:hallowed_ingot',
+			'mythicmetals:hallowed_ingot',
+			'botania:life_essence',
+			'botania:life_essence',
+			'botania:crafting_halo'
+		)
+		.recipeTime(toSeconds(30))
+		.id('adj:uncrafting_table');
+
 
 	// Zenith
 	const swords = [
@@ -6165,6 +6421,132 @@ ServerEvents.recipes((event) => {
 	).id(`adj:heart_crystal_from_imbuement`)
 
 	// Twilight Forest reworks
+	const twilightItemsToRemoveRecipes = [
+		'twilightforest:ironwood_helmet',
+		'twilightforest:ironwood_chestplate',
+		'twilightforest:ironwood_leggings',
+		'twilightforest:ironwood_boots',
+		'twilightforest:ironwood_axe',
+		'twilightforest:ironwood_hoe',
+		'twilightforest:ironwood_shovel',
+		'twilightforest:ironwood_pickaxe',
+	];
+	twilightItemsToRemoveRecipes.forEach(item => {
+		event.remove({ output: item });
+	});
+
+	event.shaped(
+		'twilightforest:ironwood_helmet',
+		[
+			'IWI',
+			'R R'
+		],
+		{
+			R: 'botania:redstone_root',
+			W: 'kubejs:wooden_helmet',
+			I: 'twilightforest:ironwood_ingot'
+		}
+	).id('adj:ironwood_helmet');
+
+	event.shaped(
+		'twilightforest:ironwood_chestplate',
+		[
+			'S S',
+			'IWI',
+			'RSR'
+		],
+		{
+			R: 'botania:redstone_root',
+			W: 'kubejs:wooden_chestplate',
+			I: 'twilightforest:ironwood_ingot',
+			S: 'stick'
+		}
+	).id('adj:ironwood_chestplate');
+
+	event.shaped(
+		'twilightforest:ironwood_leggings',
+		[
+			'IWI',
+			'R R',
+			'S S',
+		],
+		{
+			R: 'botania:redstone_root',
+			W: 'kubejs:wooden_leggings',
+			I: 'twilightforest:ironwood_ingot',
+			S: 'stick'
+		}
+	).id('adj:ironwood_leggings');
+
+	event.shaped(
+		'twilightforest:ironwood_boots',
+		[
+			'IWI',
+			'R R'
+		],
+		{
+			R: 'botania:redstone_root',
+			W: 'kubejs:wooden_boots',
+			I: 'twilightforest:ironwood_ingot'
+		}
+	).id('adj:ironwood_boots');
+
+	event.shaped(
+		'twilightforest:ironwood_pickaxe',
+		[
+			'IWI',
+			' R ',
+			' R '
+		],
+		{
+			R: 'botania:redstone_root',
+			W: 'wooden_pickaxe',
+			I: 'twilightforest:ironwood_ingot'
+		}
+	).id('adj:ironwood_pickaxe');
+
+	event.shaped(
+		'twilightforest:ironwood_axe',
+		[
+			'IW',
+			'IR',
+			' R'
+		],
+		{
+			R: 'botania:redstone_root',
+			W: 'wooden_axe',
+			I: 'twilightforest:ironwood_ingot'
+		}
+	).id('adj:ironwood_axe');
+
+	event.shaped(
+		'twilightforest:ironwood_shovel',
+		[
+			'IWI',
+			' R ',
+			' R '
+		],
+		{
+			R: 'botania:redstone_root',
+			W: 'wooden_shovel',
+			I: 'twilightforest:ironwood_ingot'
+		}
+	).id('adj:ironwood_shovel');
+
+	event.shaped(
+		'twilightforest:ironwood_hoe',
+		[
+			'IIW',
+			'  R',
+			'  R'
+		],
+		{
+			R: 'botania:redstone_root',
+			W: 'wooden_hoe',
+			I: 'twilightforest:ironwood_ingot'
+		}
+	).id('adj:ironwood_hoe');
+
 	alloyForgeRecipe(
 		[
 			['iron_ingot', 1],
@@ -6178,7 +6560,7 @@ ServerEvents.recipes((event) => {
 			['3+', 'output', 3],
 			['4+', 'output', 4]
 		]
-	)
+	);
 
 	alloyForgeRecipe(
 		[
@@ -6193,7 +6575,7 @@ ServerEvents.recipes((event) => {
 			['3+', 'output', 4],
 			['4+', 'output', 5]
 		]
-	)
+	);
 
 	event.recipes.ars_nouveau.imbuement(
 		'aether:cold_aercloud',
@@ -6202,7 +6584,7 @@ ServerEvents.recipes((event) => {
 		[
 			'botania:rune_water',
 		]
-	).id('adj:rainy_cloud_block')
+	).id('adj:rainy_cloud_block');
 
 	event.recipes.ars_nouveau.imbuement(
 		'aether:cold_aercloud',
@@ -6211,7 +6593,7 @@ ServerEvents.recipes((event) => {
 		[
 			'botania:rune_winter',
 		]
-	).id('adj:rainy_snowy_block')
+	).id('adj:rainy_snowy_block');
 
 	// Vinery x Brewing and Chewing
 	function pouringRecipe(fluid, item, containerItem) {
@@ -6266,37 +6648,37 @@ ServerEvents.recipes((event) => {
 		pouringRecipe(resultFluid, resultItem, containerItem)
 	}
 
-	fermentingRecipe('kubejs:red_grapejuice', ['sweet_berries'], 'kubejs:noir_wine', 'vinery:noir_wine');
-	fermentingRecipe('kubejs:red_grapejuice', ['sugar'], 'kubejs:red_wine', 'vinery:red_wine');
-	fermentingRecipe('kubejs:red_grapejuice', ['sugar', 'cocoa_beans'], 'kubejs:strad_wine', 'vinery:strad_wine');
-	fermentingRecipe('kubejs:red_grapejuice', ['vinery:cherry'], 'kubejs:cherry_wine', 'vinery:cherry_wine');
-	fermentingRecipe('kubejs:red_grapejuice', ['sugar', 'feather', 'blaze_rod'], 'kubejs:cristel_wine', 'vinery:cristel_wine');
-	fermentingRecipe('kubejs:red_savanna_grapejuice', ['vinery:cherry', 'honey_bottle'], 'kubejs:lilitu_wine', 'vinery:lilitu_wine');
-	fermentingRecipe('kubejs:red_savanna_grapejuice', ['fermented_spider_eye'], 'kubejs:jo_special_mixture', 'vinery:jo_special_mixture');
-	fermentingRecipe('kubejs:red_taiga_grapejuice', ['vinery:cherry', 'honey_bottle'], 'kubejs:bolvar_wine', 'vinery:bolvar_wine');
-	fermentingRecipe('kubejs:red_taiga_grapejuice', ['chorus_fruit'], 'kubejs:chorus_wine', 'vinery:chorus_wine');
-	fermentingRecipe('kubejs:red_jungle_grapejuice', ['iron_ingot'], 'kubejs:magnetic_wine', 'vinery:magnetic_wine');
+	fermentingRecipe('kubejs:red_grapejuice', ['croptopia:black_berry', 'croptopia:black_berry', 'croptopia:black_berry'], 'kubejs:noir_wine', 'vinery:noir_wine');
+	fermentingRecipe('kubejs:red_grapejuice', ['sugar', 'brown_mushroom'], 'kubejs:red_wine', 'vinery:red_wine');
+	fermentingRecipe('kubejs:red_grapejuice', ['sugar', 'cocoa_beans', 'cocoa_beans'], 'kubejs:strad_wine', 'vinery:strad_wine');
+	fermentingRecipe('kubejs:red_grapejuice', ['vinery:cherry', 'vinery:cherry', 'vinery:cherry'], 'kubejs:cherry_wine', 'vinery:cherry_wine');
+	fermentingRecipe('kubejs:red_grapejuice', ['heart_crystals:heart_crystal', 'croptopia:starfruit', 'glowstone_dust', 'sugar'], 'kubejs:cristel_wine', 'vinery:cristel_wine');
+	fermentingRecipe('kubejs:red_savanna_grapejuice', ['vinery:cherry', 'vinery:cherry', 'honey_bottle'], 'kubejs:lilitu_wine', 'vinery:lilitu_wine');
+	fermentingRecipe('kubejs:red_savanna_grapejuice', ['fermented_spider_eye', 'redstone', 'redstone', 'honey_bottle'], 'kubejs:jo_special_mixture', 'vinery:jo_special_mixture');
+	fermentingRecipe('kubejs:red_taiga_grapejuice', ['vinery:cherry', 'vinery:cherry', 'honey_bottle'], 'kubejs:bolvar_wine', 'vinery:bolvar_wine');
+	fermentingRecipe('kubejs:red_taiga_grapejuice', ['endersdelight:ethereal_saffron', 'endersdelight:sight_fragment', 'chorus_fruit'], 'kubejs:chorus_wine', 'vinery:chorus_wine');
+	fermentingRecipe('kubejs:red_jungle_grapejuice', ['alexscaves:scarlet_neodymium_ingot', 'iron_ingot', 'miners_delight:copper_carrot'], 'kubejs:magnetic_wine', 'vinery:magnetic_wine');
 	fermentingRecipe('kubejs:red_jungle_grapejuice', ['spider_eye', 'honey_bottle'], 'kubejs:chenet_wine', 'vinery:chenet_wine');
-	fermentingRecipe('kubejs:red_wine', ['vinery:cherry', 'honey_bottle'], 'kubejs:bottle_mojang_noir', 'vinery:bottle_mojang_noir');
-	fermentingRecipe('kubejs:crimson_grapejuice', ['blaze_powder'], 'kubejs:blazewine_pinot', 'nethervinery:blazewine_pinot');
-	fermentingRecipe('kubejs:crimson_grapejuice', ['netherite_scrap'], 'kubejs:netherite_nectar', 'nethervinery:netherite_nectar');
-	fermentingRecipe('kubejs:crimson_grapejuice', ['lava_bucket'], 'kubejs:lava_fizz', 'nethervinery:lava_fizz');
+	fermentingRecipe('kubejs:red_wine', ['vinery:cherry', 'honey_bottle', 'golden_apple', 'sugar'], 'kubejs:bottle_mojang_noir', 'vinery:bottle_mojang_noir');
+	fermentingRecipe('kubejs:crimson_grapejuice', ['blaze_rod', 'weeping_vines', 'glowstone_dust'], 'kubejs:blazewine_pinot', 'nethervinery:blazewine_pinot');
+	fermentingRecipe('kubejs:crimson_grapejuice', ['netherite_scrap', 'create:cinder_flour', 'crimson_fungus', 'blaze_powder'], 'kubejs:netherite_nectar', 'nethervinery:netherite_nectar');
+	fermentingRecipe('kubejs:crimson_grapejuice', ['lava_bucket', 'blaze_powder', 'create:cinder_flour'], 'kubejs:lava_fizz', 'nethervinery:lava_fizz');
 
 	fermentingRecipe('kubejs:apple_juice', ['sugar'], 'kubejs:apple_cider', 'vinery:apple_cider');
-	fermentingRecipe('kubejs:apple_juice', ['sugar', 'sugar'], 'kubejs:apple_wine', 'vinery:apple_wine');
+	fermentingRecipe('kubejs:apple_juice', ['sugar', 'sugar', 'brown_mushroom'], 'kubejs:apple_wine', 'vinery:apple_wine');
 
 	fermentingRecipe('kubejs:white_grapejuice', ['sugar', 'glowstone_dust'], 'kubejs:mellohi_wine', 'vinery:mellohi_wine');
-	fermentingRecipe('kubejs:white_grapejuice', ['glow_berries'], 'kubejs:glowing_wine', 'vinery:glowing_wine');
-	fermentingRecipe('kubejs:white_grapejuice', ['honey_bottle', 'sweet_berries'], 'kubejs:solaris_wine', 'vinery:solaris_wine');
-	fermentingRecipe('kubejs:white_savanna_grapejuice', ['gunpowder'], 'kubejs:creepers_crush', 'vinery:creepers_crush');
-	fermentingRecipe('kubejs:white_savanna_grapejuice', ['kelp'], 'kubejs:kelp_cider', 'vinery:kelp_cider');
-	fermentingRecipe('kubejs:white_taiga_grapejuice', ['snowball'], 'kubejs:eiswein', 'vinery:eiswein');
+	fermentingRecipe('kubejs:white_grapejuice', ['glow_berries', 'glow_berries', 'glow_berries', 'glow_berries'], 'kubejs:glowing_wine', 'vinery:glowing_wine');
+	fermentingRecipe('kubejs:white_grapejuice', ['honey_bottle', 'sweet_berries', 'glow_berries', 'ambrosium_shard'], 'kubejs:solaris_wine', 'vinery:solaris_wine');
+	fermentingRecipe('kubejs:white_savanna_grapejuice', ['creeper_head', 'gunpowder', 'sugar', 'sugar'], 'kubejs:creepers_crush', 'vinery:creepers_crush');
+	fermentingRecipe('kubejs:white_savanna_grapejuice', ['kelp', 'kelp', 'sugar'], 'kubejs:kelp_cider', 'vinery:kelp_cider');
+	fermentingRecipe('kubejs:white_taiga_grapejuice', ['twilightforest:aurora_block', 'ice', 'ice'], 'kubejs:eiswein', 'vinery:eiswein');
 	fermentingRecipe('kubejs:white_taiga_grapejuice', ['sugar', 'iron_ingot', 'kelp'], 'kubejs:aegis_wine', 'vinery:aegis_wine');
-	fermentingRecipe('kubejs:white_jungle_grapejuice', ['arrow'], 'kubejs:villagers_fright', 'vinery:villagers_fright');
-	fermentingRecipe('kubejs:white_jungle_grapejuice', ['sugar'], 'kubejs:clark_wine', 'vinery:clark_wine');
+	fermentingRecipe('kubejs:white_jungle_grapejuice', ['emerald', 'gunpowder', 'spider_eye'], 'kubejs:villagers_fright', 'vinery:villagers_fright');
+	fermentingRecipe('kubejs:white_jungle_grapejuice', ['sugar', 'sugar', 'sugar'], 'kubejs:clark_wine', 'vinery:clark_wine');
 
-	fermentingRecipe('kubejs:warped_grapejuice', ['ghast_tear'], 'kubejs:ghastly_grenache', 'nethervinery:ghastly_grenache');
-	fermentingRecipe('kubejs:warped_grapejuice', ['warped_fungus', 'crimson_fungus'], 'kubejs:nether_fizz', 'nethervinery:nether_fizz');
+	fermentingRecipe('kubejs:warped_grapejuice', ['ghast_tear', 'gunpowder', 'sugar'], 'kubejs:ghastly_grenache', 'nethervinery:ghastly_grenache');
+	fermentingRecipe('kubejs:warped_grapejuice', ['warped_fungus', 'crimson_fungus', 'nether_wart', 'netherexp:lightspores'], 'kubejs:nether_fizz', 'nethervinery:nether_fizz');
 
 	pouringRecipe('kubejs:red_grapejuice', 'vinery:red_grapejuice');
 	pouringRecipe('kubejs:white_grapejuice', 'vinery:white_grapejuice');
@@ -6357,6 +6739,7 @@ ServerEvents.recipes((event) => {
 	// Croptopia
 	event.forEachRecipe([{ input: 'croptopia:cooking_pot' }, { input: 'croptopia:frying_pan' }], recipe => {
 		if (recipe == null) return;
+
 		const ingrOriginal = recipe.getOriginalRecipeIngredients();
 		let ingr = [];
 
@@ -6365,13 +6748,13 @@ ServerEvents.recipes((event) => {
 				if (global.isItemDisabled(id) || id === 'bowl') continue;
 				ingr.push(i);
 			}
-		})
+		});
 		if (ingr.length > 6) return;
 
 		const result = recipe.getOriginalRecipeResult();
 		let bowlItem;
 
-		switch (result.getId().replace('croptopia:', '').replace('croptopia_additions:', '')) {
+		switch (result.getId().replace('croptopia:', '')) {
 			case 'rum_raisin_ice_cream':
 			case 'steamed_rice':
 			case 'pecan_ice_cream':
@@ -6398,7 +6781,48 @@ ServerEvents.recipes((event) => {
 		else {
 			event.recipes.farmersdelight.cooking(ingr, result, 1.5, 400).id(recipe.getId())
 		}
-	})
+	});
+
+	event.forEachRecipe([{ input: 'croptopia:food_press' }], recipe => {
+		if (recipe == null) return;
+
+		const ingrOriginal = recipe.getOriginalRecipeIngredients();
+		let ingr = [];
+
+		ingrOriginal.forEach(i => {
+			for (let id of i.getItemIds().toArray()) {
+				if (global.isItemDisabled(id)) continue;
+				ingr.push(i);
+			}
+		});
+		if (ingr.length > 6) return;
+
+		const result = recipe.getOriginalRecipeResult();
+
+		event.shapeless(
+			result.id,
+			ingr
+		).id(`adj:croptopia/${flattenedID(recipe.getId())}`);
+
+	});
+
+	event.shapeless(
+		'croptopia:olive_oil',
+		[
+			'croptopia:olive',
+			'croptopia:olive',
+			'glass_bottle'
+		]
+	).id('adj:olive_oil');
+
+	event.shapeless(
+		'croptopia:soy_sauce',
+		[
+			'croptopia:soybean',
+			'croptopia:soybean',
+			Item.of('minecraft:potion', 1, '{Potion:"minecraft:water"}')
+		]
+	).id('adj:soy_sauce');
 
 	// MC Dungeons Weapons
 	function mcdw(type, item) {
@@ -6849,6 +7273,20 @@ ServerEvents.recipes((event) => {
 	).id(`adj:mcdw/butterfly_crossbow`)
 
 	// Accessories
+	event.shaped(
+		'terra_curio:ancient_chisel',
+		[
+			'  P',
+			' S ',
+			'M  '
+		],
+		{
+			P: '#planks',
+			S: 'stick',
+			M: 'mythicmetals:raw_mythril'
+		}
+	).id('adj:ancient_chisel');
+
 	event.shaped(
 		'terra_curio:band_of_regeneration',
 		[
@@ -7603,6 +8041,26 @@ ServerEvents.recipes((event) => {
 			Fluid.water(250)
 		]
 	).id('adj:pulp_alternative')
+
+	event.shaped(
+		'create:experience_block',
+		[
+			'GG',
+			'GG',
+		],
+		{
+			G: 'ars_nouveau:greater_experience_gem'
+		}
+	).id('adj:experience_block');
+
+	event.shapeless(
+		'4x ars_nouveau:greater_experience_gem',
+		[
+			'create:experience_block',
+		]
+	).id('adj:experience_gem_from_block');
+
+	event.recipes.create.compacting('neapolitan:chocolate_bar', Fluid.of('create:chocolate', 250)).id('adj:create_compacting_chocolate_new');
 
 	// More logical Copycat Blocks
 	// Like BE FR WHY DOES EVERYTHING HAVE TO BOIL DOWN TO A STONECUTTER???

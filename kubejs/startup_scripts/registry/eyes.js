@@ -96,11 +96,13 @@ global.eyeEffects.arcanumTick = function (slotContext, stack) { };
  * @param {Internal.ItemStack} stack 
  */
 global.eyeEffects.verdancyTick = function (slotContext, stack) {
-	const wearer = slotContext.getWearer();
-	const blockBelow = wearer.level.getBlock(wearer.blockPosition.x, wearer.blockPosition.y, wearer.blockPosition.z);
-	if (blockBelow.getId() === 'minecraft:dirt') {
-		wearer.level.setBlock(blockBelow.pos, Block.getBlock('minecraft:grass_block').defaultBlockState(), 3);
-	}
+	// const wearer = slotContext.getWearer();
+	// const blockBelow = wearer.getLevel().getBlock(wearer.blockPosition.below());
+	// if (blockBelow.id === 'minecraft:dirt') {
+	// 	blockBelow.set('minecraft:grass_block', {
+	// 		snowy: 'false'
+	// 	});
+	// }
 };
 
 /**
@@ -177,7 +179,7 @@ StartupEvents.registry('item', event => {
 			.texture(`kubejs:item/${id}`)
 			.rarity('epic')
 			.tooltip(`§7${description}`)
-			.displayName(`<neon><shake><pulse><color col=${color}>${name}</color></pulse></shake></neon>`)
+			.displayName(`<shake a=0.2><neon r=1.2><pulse><color col=${color}>${name}</color></pulse></shake></neon>`)
 			.tag('curios:accessory')
 			.tag('adj:eyes');
 		i++;

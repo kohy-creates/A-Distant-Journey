@@ -664,4 +664,64 @@ global.armorOverrides = {
 			operation: 1
 		}
 	},
+	'twilightforest:ironwood': {
+		'generic.armor': {
+			values: [3, 4, 4, 3],
+			operation: 0
+		},
+		'attributeslib:mining_speed': {
+			values: [0, 0.12, 0.05, 0],
+			operation: 0,
+		},
+		'generic.movement_speed': {
+			values: [0, 0, 0, 0.04],
+			operation: 1
+		}
+	},
+	'mythicmetals:mythril': {
+		'generic.armor': {
+			values: [9, 10, 9, 8],
+			operation: 0
+		},
+		'attributeslib:mining_speed': {
+			values: [0.04, 0.18, 0.09, 0],
+			operation: 0,
+		},
+		'generic.movement_speed': {
+			values: [0, 0, 0, 0.06],
+			operation: 1
+		}
+	},
+	'twilightforest:knigthmetal': {
+		'generic.armor': {
+			values: [6, 9, 8, 7],
+			operation: 0
+		},
+		'generic.movement_speed': {
+			values: [0, p(-5), p(-4), p(-3)],
+			operation: 1
+		},
+		'adjcore:generic.damage_reduction': {
+			values: [0, 0, 0.04, 0],
+			operation: 1
+		},
+		'adjcore:generic.health_regeneration': {
+			values: [0, 1, 0, 0],
+			operation: 1
+		}
+	},
+	'twilightforest:naga': {
+		'generic.armor': {
+			values: [0, 5, 4, 0],
+			operation: 0
+		},
+		'generic.movement_speed': {
+			values: [0, 0, 0.12, 0],
+			operation: 1
+		},
+		'adjcore:generic.health_regeneration': {
+			values: [0, 2.5, 0, 0],
+			operation: 0
+		}
+	}
 }

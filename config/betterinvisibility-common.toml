@@ -1,0 +1,28 @@
+
+#Better Invisibility Config Settings
+[common]
+	#Show armor and weapons when invisible (default:false)
+	showArmorWeapons = false
+	#Show invisiblity potion particles (default:false)
+	showParticles = false
+	#Invisible to Mob AI when invisible (default:true)
+	invisibleToMobs = true
+	#Radius of Invisibility Effect (default: 30)
+	#Range: 1 ~ 100
+	invisibilityRadius = 30
+	#Invisiblity detection distance (default: 3)
+	#Range: 1 ~ 10
+	proximityDetectionDistance = 3
+	#Can sneak by mobs when inside detection distance (default:true)
+	sneakWhenClose = true
+	#Invisibility effect removed when discovered by Mobs (default:true)
+	discoveryRemovesInvisibility = true
+	#Invisibility effect removed if Player attacks (default:true)
+	attackRemovesInvisibility = true
+	#Remove invisibility particles from other mobs (default:true)
+	removeParticlesFromMobs = false
+	#Player loses sight when invisible (default:false)
+	blindWhenInvisible = false
+	#Mod sounds on (default:true)
+	soundsOn = true
+

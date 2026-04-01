@@ -71,6 +71,9 @@
 		},
 		{
 			"category": "morered:soldering"
+		},
+		{
+			"category": "trading_floor:potential_villager_trade"
 		}
 	]
 }

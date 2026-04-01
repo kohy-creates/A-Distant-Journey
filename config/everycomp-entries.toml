@@ -799,6 +799,9 @@
 			thatch = true
 			palm = true
 
+		[types.cut_block_type.waxed]
+			waxed_prismarine = true
+
 #Disables specific entries
 [entries]
 

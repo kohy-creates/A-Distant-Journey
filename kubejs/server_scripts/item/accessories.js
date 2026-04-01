@@ -55,15 +55,6 @@ ServerEvents.tags('item', event => {
 		/ars_nouveau:.*_focus/,
 	])
 
-	event.add('adjtweaks:curio_exclusions/gloves', [
-		/aether:.*_gloves/,
-		/umbral_skies:.*gloves/,
-		'lost_aether_content:power_gloves',
-	])
-
-	event.add('adjtweaks:curio_exclusions/quivers', [
-		/quiver/
-	])
 });
 
 LootJS.modifiers(event => {

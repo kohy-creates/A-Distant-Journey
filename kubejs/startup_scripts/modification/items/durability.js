@@ -280,9 +280,21 @@ ItemEvents.modification(event => {
 	], 8000)
 
 	maxDurability([
-		toolset('mythicmetals:mythril'),
+		toolset('twilightforest:ironwood'),
+	], 1100)
+
+	maxDurability([
+		toolset('twilightforest:knightmetal'),
+	], 2000)
+
+
+	maxDurability([
 		toolset('mythicmetals:orichalcum'),
 	], 2000)
+
+	maxDurability([
+		toolset('mythicmetals:mythril'),
+	], 3200)
 
 	maxDurability([
 		armorset('minecraft:chainmail'),

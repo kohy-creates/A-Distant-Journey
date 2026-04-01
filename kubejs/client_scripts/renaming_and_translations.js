@@ -53,8 +53,7 @@ ClientEvents.lang('en_us', event => {
 		'architects_palette.info.dimension.rediscovered.skylands': 'the Skylands',
 
 		'block.aether.potted_skyroot_sapling': 'Potted Skyroot Sapling',
-
-	}
+	};
 
 	/** @type {Record<Internal.Block_, string>} */
 	const blockRenames = {
@@ -201,7 +200,7 @@ ClientEvents.lang('en_us', event => {
 
 		'morered:red_alloy_wire': 'Redstone Cable',
 		'experienceobelisk:cognitium': 'Liquid Experience',
-	}
+	};
 
 	/** @type {Record<Internal.InputItem_, string>} */
 	const itemRenames = {
@@ -265,7 +264,11 @@ ClientEvents.lang('en_us', event => {
 		'toms_storage:ts.tag_item_filter': 'Tag Storage Filter',
 
 		'experienceobelisk:cognitium_bucket': 'Liquid Experience Bucket',
-	}
+
+		'aether:leather_gloves': 'Leather Fistwraps',
+		'aether:obsidian_gloves': 'Obsidian Gauntlets',
+		'aether:phoenix_gloves': 'Phoenix Gauntlets',
+	};
 
 	const entityRenames = {
 		'immersive_paintings:painting': 'Magic Painting',
@@ -288,14 +291,8 @@ ClientEvents.lang('en_us', event => {
 	}
 
 	global.rediscoveredFurniture().forEach(item => {
-		let name = item
-			.replace('rediscovered:', '')
-			.replace('_', ' ')
-			.toLowerCase()
-			.split(' ')
-			.map(word => word.charAt(0).toUpperCase() + word.slice(1))
-			.join(' ');
+		let name = global.toTitleCase(global.textReplaceAll(item.replace('rediscovered:', ''), '_', ' '));
 		event.renameItem(item, 'Ancient ' + name);
-	})
+	});
 
-})
+});

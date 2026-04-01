@@ -396,6 +396,17 @@
         "value": 1024
       }
     },
+    "doublejumpattribute:doublejumpattribute": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "attributeslib:prot_pierce": {
       "enabled": false,
       "min": {
@@ -570,6 +581,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "cataclysm:nature_heal": {
+      "enabled": false,
+      "min": {
+        "default": -256,
+        "value": -256
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additionalentityattributes:player.critical_bonus_damage": {
@@ -1078,6 +1100,17 @@
         "value": 1
       }
     },
+    "cataclysm:additional_critical_damage": {
+      "enabled": false,
+      "min": {
+        "default": -512,
+        "value": -512
+      },
+      "max": {
+        "default": 512,
+        "value": 512
+      }
+    },
     "terra_curio:pickup_range": {
       "enabled": false,
       "min": {
@@ -1155,6 +1188,17 @@
         "value": 1000000
       }
     },
+    "cataclysm:eat_speed": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "rediscovered:cimson_veil_damage_scaling": {
       "enabled": false,
       "min": {
@@ -1208,6 +1252,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "cataclysm:charge_time": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 512,
+        "value": 512
       }
     },
     "combatroll:count": {

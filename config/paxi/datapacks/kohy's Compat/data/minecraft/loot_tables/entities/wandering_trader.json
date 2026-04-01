@@ -20,6 +20,28 @@
 					]
 				}
 			]
+		},
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "etcetera:trader_hood",
+					"functions": []
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "etcetera:trader_robe",
+					"functions": []
+				}
+			]
 		}
 	]
 }

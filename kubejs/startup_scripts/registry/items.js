@@ -1,3 +1,56 @@
+/**
+ * 
+ * @param {Internal.ProjectileHitBlockEventJS} event 
+ */
+global.elsaCrossbowBlockHit = function (event) {
+	const arrow = event.getArrow();
+	arrow.level.spawnParticles('minecraft:smoke', true, arrow.x, arrow.y - 0.1, arrow.z, 0.15, 0.15, 0.15, 10, 0.01);
+	arrow.level.spawnParticles('cataclysm:spark', true, arrow.x, arrow.y - 0.1, arrow.z, 0, 0, 0, 4, 0.08);
+	arrow.kill();
+};
+
+/** 
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} stack 
+ */
+global.chaliceOfBloodTick = function (slotContext, stack) {
+	if (!stack.hasNBT()) {
+		stack.nbt = {};
+	}
+	stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
+};
+/**
+ * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx 
+ */
+global.chaliceOfBloodAttributeTick = function (ctx) {
+
+}
+
+/**
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} stack 
+ */
+global.theCommunityTick = function (slotContext, stack) {
+	if (!stack.hasNBT()) {
+		stack.nbt = {};
+	}
+	stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
+};
+/**
+ * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx 
+ */
+global.theCommunityAttributeTick = function (ctx) {
+
+}
+
+/**
+ * @param {Internal.SlotContext} slotContext 
+ * @param {Internal.ItemStack} oldStack 
+ * @param {Internal.ItemStack} newStack 
+ */
+global.roseRingOnEquip = function (slotContext, oldStack, newStack) {
+};
+
 StartupEvents.registry('item', registry => {
 
 	// Misc items
@@ -41,7 +94,7 @@ StartupEvents.registry('item', registry => {
 		registry.create(`ethercraft_piece_${i + 1}`)
 			.unstackable()
 			.displayName(`Piece of Ethercraft (#${i + 1})`)
-			.rarity('epic')
+			.rarity('epic');
 	}
 
 	// Wooden Armor
@@ -85,7 +138,158 @@ StartupEvents.registry('item', registry => {
 		.unstackable()
 		.maxDamage(99999);
 
-})
+	registry.create('elsa_crossbow', 'crossbow')
+		.crossbow(crossbow => {
+			crossbow
+				.modifyCrossbow(attr => attr
+					.ammo(itemstack => false)
+					.infinity()
+					.fullChargeTick(9999, 0)
+				)
+				.onArrowHit(arrow => {
+					arrow.hitBlock(event => global.elsaCrossbowBlockHit(event))
+				})
+		})
+		.unstackable()
+		.maxDamage(3000)
+		.displayName('Monster-Piercing Elephant Crossbow');
+
+	registry.create('bloodstone_choker')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute(
+					'combatroll:recharge',
+					'b888ea99-c203-42db-a337-4898c812aaad',
+					0.35,
+					'multiply_base'
+				)
+				.addAttribute(
+					'adjcore:generic.damage_reduction',
+					'b888ea99-c203-42db-a337-4898c812aaad',
+					0.06,
+					'addition'
+				)
+				.addAttribute(
+					'generic.movement_speed',
+					'b888ea99-c203-42db-a337-4898c812aaad',
+					0.08,
+					'multiply_base'
+				)
+				.addAttribute(
+					'generic.attack_damage',
+					'b888ea99-c203-42db-a337-4898c812aaad',
+					0.12,
+					'multiply_base'
+				)
+				.addAttribute(
+					'attribtueslib:arrow_damage',
+					'b888ea99-c203-42db-a337-4898c812aaad',
+					0.12,
+					'addition'
+				)
+				.addAttribute(
+					'ars_nouveau:ars_nouveau.perk.spell_power',
+					'b888ea99-c203-42db-a337-4898c812aaad',
+					12,
+					'addition'
+				)
+		)
+		.unstackable()
+		.tag('curios:accessory');
+
+	registry.create('chalice_of_blood')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.modifyAttribute(ctx => global.chaliceOfBloodAttributeTick(ctx))
+				.curioTick((slotContext, stack) => global.chaliceOfBloodTick(slotContext, stack))
+				.canEquipFromUse((slotContext, stack) => false)
+		)
+		.unstackable()
+		.modelJson({
+			"parent": "kubejs:item/chalice_of_blood_0",
+			"elements": [],
+			"overrides": [
+				{ "predicate": { "custom_model_data": 1 }, "model": "kubejs:item/chalice_of_blood_1" },
+				{ "predicate": { "custom_model_data": 2 }, "model": "kubejs:item/chalice_of_blood_2" },
+				{ "predicate": { "custom_model_data": 3 }, "model": "kubejs:item/chalice_of_blood_3" },
+				{ "predicate": { "custom_model_data": 4 }, "model": "kubejs:item/chalice_of_blood_4" },
+				{ "predicate": { "custom_model_data": 5 }, "model": "kubejs:item/chalice_of_blood_5" }
+			]
+		})
+		.tag('curios:accessory');
+
+	registry.create('ring/test_ring')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.textureJson({
+			'layer0': 'kubejs:item/ring_base_iron',
+			'layer1': 'kubejs:item/ring_base_gem'
+		})
+		.color(1, 0xAA00EE)
+		.tag('curios:accessory');
+
+	registry.create('kiketsu_card')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.displayName('Kiketsu Matriarch\'s Threat')
+		.unstackable()
+		.tag('curios:accessory')
+
+	registry.create('rose_ring')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.onEquip(((slotContext, oldStack, newStack) => global.roseRingOnEquip(slotContext, oldStack, newStack)))
+		)
+		.displayName('Ring of Roses')
+		.unstackable()
+		.tag('curios:accessory');
+
+	registry.create('wither_rose_ring')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.onEquip(((slotContext, oldStack, newStack) => global.roseRingOnEquip(slotContext, oldStack, newStack)))
+		)
+		.unstackable()
+		.displayName('Dead Ring of Roses')
+		.tag('curios:accessory');
+
+	registry.create('ring_of_fire')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory');
+
+	registry.create('pocketful_of_sunshine')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory');
+
+	registry.create('decayed_clover')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory');
+
+	registry.create('slider_pickaxe', 'pickaxe')
+		.maxDamage(2500)
+		.tier('slider_pickaxe');
+
+	registry.create('the_community')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.modifyAttribute(ctx => global.theCommunityAttributeTick(ctx))
+				.curioTick((slotContext, stack) => global.theCommunityTick(slotContext, stack))
+		)
+		.unstackable()
+		.tag('curios:accessory');
+});
 
 ItemEvents.armorTierRegistry(event => {
 	event.add('wooden', tier => {
@@ -96,5 +300,17 @@ ItemEvents.armorTierRegistry(event => {
 		tier.repairIngredient = '#planks'
 		tier.toughness = 0
 		tier.knockbackResistance = 0
-	})
-})
+	});
+});
+
+ItemEvents.toolTierRegistry(event => {
+	event.add('slider_pickaxe', tier => {
+		tier.uses = 2500
+		tier.speed = 7.5
+		tier.attackDamageBonus = 2
+		tier.level = 3
+		tier.enchantmentValue = 20
+		tier.repairIngredient = '#forge:ingots/iron'
+	});
+});
+

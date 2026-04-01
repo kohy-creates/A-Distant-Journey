@@ -21,4 +21,12 @@ ServerEvents.tags('damage_type', tags => {
 		'ars_nouveau:crush',
 		'#minecraft:witch_resistant_to'
 	]);
+
+	tags.add('bypasses_invulnerability', [
+		'adj:chalice_of_blood'
+	]);
+
+	tags.add('bypasses_cooldown', [
+		'adj:chalice_of_blood'
+	]);
 });

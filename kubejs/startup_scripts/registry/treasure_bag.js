@@ -1,14 +1,10 @@
-const $TreasureBag = Java.loadClass('com.majruszsdifficulty.items.TreasureBag')
+const $TreasureBag = Java.loadClass('com.majruszsdifficulty.items.TreasureBag');
 
 StartupEvents.registry('item', event => {
 
 	function createTreasureBag(name, suffix) {
 		let modAndEntity = name.split(':');
-		let nameTitleCase = modAndEntity[1]
-			.replace('_', ' ')
-			.split(' ')
-			.map(word => word.charAt(0).toUpperCase() + word.slice(1))
-			.join(' ');
+		let nameTitleCase = global.toTitleCase(global.textReplaceAll(modAndEntity[1], '_', ''));
 
 		if (suffix) {
 			nameTitleCase += ` (${suffix.charAt(0).toUpperCase() + suffix.slice(1)})`;
@@ -41,11 +37,9 @@ StartupEvents.registry('item', event => {
 
 	global.bossMobsAddTreasureBag.forEach(mob => {
 		if (mob === 'botania:doppleganger') {
-			createTreasureBag(mob);
 			createTreasureBag(mob, 'hardmode');
-		} else {
-			createTreasureBag(mob);
 		}
+		createTreasureBag(mob);
 	});
 
 });

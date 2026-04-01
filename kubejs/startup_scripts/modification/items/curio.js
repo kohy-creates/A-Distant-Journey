@@ -321,13 +321,18 @@ ItemEvents.modification(event => {
 			]
 		},
 		'ancient_aether:valkyrum_gloves': {
-			damage: 5,
+			damage: 0,
 			operation: 0,
 			extra: [
 				{
 					attribute: 'forge:block_reach',
 					value: 3,
 					operation: 0
+				},
+				{
+					attribute: 'generic.attack_damage',
+					value: 0.1,
+					operation: 1
 				}
 			]
 		},
@@ -339,16 +344,21 @@ ItemEvents.modification(event => {
 					attribute: 'adjcore:player.mana_cost_reduction',
 					operation: 0,
 					value: 0.05
+				},
+				{
+					attribute: 'ars_nouveau:perk.spell_damage',
+					operation: 0,
+					value: 8
 				}
 			]
 		},
 		'aether:netherite_gloves': {
-			damage: 4,
+			damage: 5,
 			operation: 0,
 			extra: [
 				{
 					attribute: 'attributeslib:crit_chance',
-					value: 0.05,
+					value: 0.04,
 					operation: 0
 				}
 			]
@@ -360,6 +370,55 @@ ItemEvents.modification(event => {
 				{
 					attribute: 'generic.attack_knockback',
 					value: 0.25,
+					operation: 0
+				}
+			]
+		},
+		'umbral_skies:ironwood_gloves': {
+			damage: 0,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'forge:block_reach',
+					value: 1,
+					operation: 0
+				},
+				{
+					attribute: 'forge:entity_reach',
+					value: 1,
+					operation: 0
+				}
+			]
+		},
+		'umbral_skies:fiery_gloves': {
+			damage: 0,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'attributeslib:fire_damage',
+					value: 3,
+					operation: 0
+				}
+			]
+		},
+		'umbral_skies:knightmetal_gloves': {
+			damage: -0.04,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'adjcore:generic.damage_reduction',
+					value: 0.08,
+					operation: 0
+				}
+			]
+		},
+		'umbral_skies:yeti_gloves': {
+			damage: 0,
+			operation: 0,
+			extra: [
+				{
+					attribute: 'attributeslib:cold_damage',
+					value: 3,
 					operation: 0
 				}
 			]

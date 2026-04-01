@@ -483,7 +483,7 @@
 		playerSummoningDelayOnKill = 25
 		#Specifies if the Withered Symbiont can be attacked from behind if it's not vulnerable.
 		#Default: false
-		attackableWhenNotVulnerable = false
+		attackableWhenNotVulnerable = true
 		#If multiple players are near the Withered Symbiont, the command block book will automatically drop into the inventory of the player the Symbiont was spawned for, if they are nearby and have inventory space.
 		#Default: true
 		bookDropsInInventory = false

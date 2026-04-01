@@ -1,0 +1,57 @@
+#Cookie Creeper quantity
+#Range: > 0
+cookieCreeperQuantity = 25
+#Dark Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+darkCreeperExplosionRadius = 24.0
+#Earth Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+earthCreeperExplosionRadius = 6.0
+#Electric Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+electricCreeperExplosionRadius = 7.0
+#Fire Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+fireCreeperExplosionRadius = 4.0
+#Ice Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+iceCreeperExplosionRadius = 10.0
+#Ghost Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+ghostCreeperExplosionRadius = 2.5
+#Light Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+lightCreeperExplosionRadius = 2.0
+#Magma Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+magmaCreeperExplosionRadius = 2.0
+#Psychic Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+psychicCreeperExplosionRadius = 3.0
+#Reverse Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+reverseCreeperExplosionRadius = 6.0
+#Spider Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+spiderCreeperExplosionRadius = 7.0
+#Water Creeper explosion radius
+#Range: 0.0 ~ 1.7976931348623157E308
+waterCreeperExplosionRadius = 5.0
+#A list of blocks which dark creepers destroy
+darkCreeperDestroyBlocks = ["minecraft:torch", "minecraft:redstone_torch", "minecraft:redstone_lamp", "minecraft:redstone_wall_torch", "minecraft:glowstone", "minecraft:lantern", "minecraft:sea_lantern", "minecraft:shroomlight", "minecraft:campfire", "minecraft:soul_campfire"]
+#Ghost Creeper damage multiplier (compared to regular creeper)
+#Range: 0.0 ~ 1.7976931348623157E308
+ghostCreeperDamageMultiplier = 0.7
+#Psychica Creeper launch multiplier (compared to regular creeper)
+#Range: 0.0 ~ 1.7976931348623157E308
+psychicCreeperLaunchMultiplier = 7.0
+#Spider Creeper poison time on medium difficulty (easy = 0.66x, hard = 1.5x)
+#Range: 0.0 ~ 1.7976931348623157E308
+spiderCreeperPoisonTimeMedium = 10.0
+#Water Creeper permanent puddle radius
+#Range: 0.0 ~ 1.7976931348623157E308
+waterCreeperPermanentRadius = 1.0
+#Ghost Creeper spawn chance when an elemental creeper dies
+#Range: 0.0 ~ 1.0
+ghoseCreeperSpawnChance = 0.05
+

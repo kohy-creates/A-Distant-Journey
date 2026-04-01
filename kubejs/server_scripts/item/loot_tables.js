@@ -53,7 +53,9 @@ const replaceItemsMap = {
 	'rubinated_nether:ruby': 'rediscovered:ruby',
 	'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
 
-	'minecraft:shield': 'shieldexp:iron_shield'
+	'minecraft:shield': 'shieldexp:iron_shield',
+	'twilightforest:raw_venison': 'naturalist:venison',
+	'twilightforest:cooked_venison': 'naturalist:cooked_venison',
 }
 
 LootJS.modifiers((event) => {
@@ -68,7 +70,6 @@ LootJS.modifiers((event) => {
 		'artifacts:everlasting_beef',
 		'twilightforest:raw_ironwood',
 		'twilightforest:ironwood_ingot',
-		'twilightforest:steeleaf_ingot',
 		'twilightforest:uncrafting_table',
 		'twilightforest:ice_bow',
 		'twilightforest:ender_bow',
@@ -105,25 +106,101 @@ LootJS.modifiers((event) => {
 		event.removeGlobalModifier(`@${mod}`);
 	})
 
-	/**
-	 * Random seed drops from plants
-	 * @param {$GroupedLootBuilder_} pool 
-	 */
-	const seedFromPlantDrop = (pool) => {
-		pool.rolls(1);
-		pool.addLoot(LootEntry.of('#adj:seeds_from_grass');
-		);
-	}
+	const replaceSeedsIn = [
+		'grass',
+		'fern',
+		'tall_grass',
+		'large_fern'
+	]
+	replaceSeedsIn.forEach(block => {
+		event.addBlockLootModifier(block)
+			.removeLoot('minecraft:wheat_seeds')
+			.pool((pool) => {
+				pool.rolls(1);
+				pool.randomChanceWithEnchantment(
+					'minecraft:fortune',
+					[
+						0.1,
+						0.05
+					]
+				);
+				pool.not(c => {
+					c.matchMainHand(ForgeItemFilter.canPerformAction('shears_dig'))
+				});
+				pool.addWeightedLoot([
+					LootEntry.of('wheat_seeds').withWeight(350),
+					LootEntry.of('beetroot_seeds').withWeight(80),
+					LootEntry.of('pumpkin_seeds').withWeight(2),
+					LootEntry.of('melon_seeds').withWeight(2),
+					LootEntry.of('etcetera:cotton_seeds').withWeight(210),
+					LootEntry.of('croptopia:vanilla_seeds').withWeight(4),
+					LootEntry.of('croptopia:artichoke_seed').withWeight(4),
+					LootEntry.of('croptopia:asparagus_seed').withWeight(4),
+					LootEntry.of('croptopia:barley_seed').withWeight(4),
+					LootEntry.of('croptopia:basil_seed').withWeight(4),
+					LootEntry.of('croptopia:bellpepper_seed').withWeight(4),
+					LootEntry.of('croptopia:blackbean_seed').withWeight(4),
+					LootEntry.of('croptopia:blackberry_seed').withWeight(4),
+					LootEntry.of('croptopia:blueberry_seed').withWeight(4),
+					LootEntry.of('croptopia:broccoli_seed').withWeight(4),
+					LootEntry.of('croptopia:cantaloupe_seed').withWeight(4),
+					LootEntry.of('croptopia:cauliflower_seed').withWeight(4),
+					LootEntry.of('croptopia:celery_seed').withWeight(4),
+					LootEntry.of('croptopia:chile_pepper_seed').withWeight(4),
+					LootEntry.of('croptopia:coffee_seed').withWeight(4),
+					LootEntry.of('croptopia:corn_seed').withWeight(4),
+					LootEntry.of('croptopia:cranberry_seed').withWeight(4),
+					LootEntry.of('croptopia:cucumber_seed').withWeight(4),
+					LootEntry.of('croptopia:currant_seed').withWeight(4),
+					LootEntry.of('croptopia:eggplant_seed').withWeight(4),
+					LootEntry.of('croptopia:elderberry_seed').withWeight(4),
+					LootEntry.of('croptopia:garlic_seed').withWeight(4),
+					LootEntry.of('croptopia:ginger_seed').withWeight(4),
+					LootEntry.of('croptopia:greenbean_seed').withWeight(4),
+					LootEntry.of('croptopia:greenonion_seed').withWeight(4),
+					LootEntry.of('croptopia:honeydew_seed').withWeight(4),
+					LootEntry.of('croptopia:hops_seed').withWeight(4),
+					LootEntry.of('croptopia:kale_seed').withWeight(4),
+					LootEntry.of('croptopia:kiwi_seed').withWeight(4),
+					LootEntry.of('croptopia:leek_seed').withWeight(4),
+					LootEntry.of('croptopia:lettuce_seed').withWeight(4),
+					LootEntry.of('croptopia:mustard_seed').withWeight(4),
+					LootEntry.of('croptopia:oat_seed').withWeight(4),
+					LootEntry.of('croptopia:olive_seed').withWeight(4),
+					LootEntry.of('croptopia:peanut_seed').withWeight(4),
+					LootEntry.of('croptopia:pepper_seed').withWeight(4),
+					LootEntry.of('croptopia:pineapple_seed').withWeight(4),
+					LootEntry.of('croptopia:radish_seed').withWeight(4),
+					LootEntry.of('croptopia:raspberry_seed').withWeight(4),
+					LootEntry.of('croptopia:rhubarb_seed').withWeight(4),
+					LootEntry.of('croptopia:rutabaga_seed').withWeight(4),
+					LootEntry.of('croptopia:saguaro_seed').withWeight(4),
+					LootEntry.of('croptopia:soybean_seed').withWeight(4),
+					LootEntry.of('croptopia:spinach_seed').withWeight(4),
+					LootEntry.of('croptopia:squash_seed').withWeight(4),
+					LootEntry.of('croptopia:sweetpotato_seed').withWeight(4),
+					LootEntry.of('croptopia:tomatillo_seed').withWeight(4),
+					LootEntry.of('croptopia:turmeric_seed').withWeight(4),
+					LootEntry.of('croptopia:turnip_seed').withWeight(4),
+					LootEntry.of('croptopia:vanilla_seeds').withWeight(4),
+					LootEntry.of('croptopia:yam_seed').withWeight(4),
+					LootEntry.of('croptopia:zucchini_seed').withWeight(4),
+
+				])
+			});
+	});
+
 
 	/**
-	 * @param {$GroupedLootBuilder_} pool 
+	 * @param {Internal.GroupedLootBuilder_} pool 
 	 */
 	const skullFragmentDrop = (pool) => {
 		pool.rolls(1);
-		pool.addLoot(LootEntry.of('kubejs:skull_fragment')
-			.when(c => c.randomChanceWithLooting(0.2, 0.1))
-			.limitCount([1, 3])
-			.applyLootingBonus([0, 1])
+		pool.addLoot(
+			LootEntry.of('kubejs:skull_fragment')
+				.when(c => c.randomChanceWithLooting(0.2, 0.1))
+				.limitCount([1, 3])
+				.applyLootingBonus([0, 1])
 		);
 	}
 	event.addEntityLootModifier('minecraft:wither_skeleton')
@@ -138,35 +215,30 @@ LootJS.modifiers((event) => {
 		.pool(skullFragmentDrop);
 
 	event.addEntityLootModifier('minecraft:blaze')
-		.pool(skullFragmentDrop)
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:blaze').when(c => c.randomChanceWithLooting(0.002, 0.001)));
 		});
 
 	event.addEntityLootModifier('minecraft:warden')
-		.pool(skullFragmentDrop)
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:warden'));
 		});
 
 	event.addEntityLootModifier('minecraft:enderman')
-		.pool(skullFragmentDrop)
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:enderman').when(c => c.randomChanceWithLooting(0.002, 0.001)));
 		});
 
 	event.addEntityLootModifier('minecraft:ghast')
-		.pool(skullFragmentDrop)
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:ghast').when(c => c.randomChanceWithLooting(0.05, 0.025)));
 		});
 
 	event.addEntityLootModifier('mutantmonsters:mutant_creeper')
-		.pool(skullFragmentDrop)
 		.pool((pool) => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:creeper').when(c => c.randomChanceWithLooting(0.15, 0.075)));
@@ -292,16 +364,6 @@ LootJS.modifiers((event) => {
 	event.addEntityLootModifier('ars_nouveau:wilden_boss')
 		.removeLoot('ars_nouveau:wilden_tribute')
 
-	// event.addEntityLootModifier('wandering_trader')
-	// 	.pool(pool => {
-	// 		pool.rolls(1);
-	// 		pool.addLoot(LootEntry.of('etcetera:trader_hood'))
-	// 	})
-	// 	.pool(pool => {
-	// 		pool.rolls(1);
-	// 		pool.addLoot(LootEntry.of('etcetera:trader_robe'))
-	// 	})
-
 	event.addEntityLootModifier('guardian')
 		.pool((pool) => {
 			pool.rolls(1);
@@ -327,6 +389,16 @@ LootJS.modifiers((event) => {
 	function mcdw(type, item) {
 		return `mcdw:${type}_${item}`;
 	}
+
+	event.addEntityLootModifier('twilightforest:skeleton_druid')
+		.pool((pool) => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('twilightforest:steeleaf_ingot')
+				.limitCount([1, 2])
+				.applyLootingBonus([0, 1])
+				.when(c => c.randomChanceWithLooting(0.25, 0.0833))
+			);
+		})
 
 	event.addEntityLootModifier('minecraft:witch')
 		.removeLoot(mcdw('glaive', 'cackling_broom'))

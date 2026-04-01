@@ -1,5 +1,5 @@
 {
-	"parent": "adj:root",
+	"parent": "adj:twilight_forest/part_3",
 	"display": {
 		"icon": {
 			"item": "dirt"

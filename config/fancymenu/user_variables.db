@@ -19,20 +19,86 @@ variable {
 }
 
 variable {
-  name = time_in_intro_screen
-  value = 
-  reset_on_launch = true
-}
-
-variable {
   name = option.show_mods_button
   value = 1
   reset_on_launch = false
 }
 
 variable {
-  name = option.show_player_doll
-  value = 1
+  name = has_seen_server_list
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = hud.has_wither
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = hud.is_poison
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = hud.is_poisoned
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = hud.is_hungry
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = has_visited_kofi
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = hud.hunger_level
+  value = 250
+  reset_on_launch = false
+}
+
+variable {
+  name = time_in_intro_screen
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = hud.is_freezing
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = option.hunger_style
+  value = steak
+  reset_on_launch = false
+}
+
+variable {
+  name = hud.saturation_level
+  value = 150
+  reset_on_launch = false
+}
+
+variable {
+  name = hud.has_wither_sickness
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = hud.hunger_level_color
+  value = 3
   reset_on_launch = false
 }
 

@@ -3,10 +3,10 @@
 globalMultiplier = 0.5
 #DamageSource exhaustion type multiplier
 #Range: 0.0 ~ 10.0
-damageTypeMultiplier = 0.66
+damageTypeMultiplier = 0.85
 #Jump multiplier
 #Range: 0.0 ~ 10.0
-jumpMultiplier = 0.4
+jumpMultiplier = 1.0
 #Swimming exhaustion multiplier
 #Range: 0.0 ~ 10.0
 swimMultiplier = 1.5

@@ -1,7 +1,7 @@
 {
   "armor": {
     "3": {
-      "title": "Loadout 3",
+      "title": "Loadout 3 (Hotkey: F3)",
       "icon": {
         "stack": "{Count:1b,id:\"minecraft:diamond_chestplate\",tag:{Damage:0}}"
       },
@@ -13,7 +13,7 @@
       }
     },
     "4": {
-      "title": "Loadout 2",
+      "title": "Loadout 2 (Hotkey: F2)",
       "icon": {
         "stack": "{Count:1b,id:\"minecraft:golden_chestplate\",tag:{Damage:0}}"
       },
@@ -25,7 +25,7 @@
       }
     },
     "5": {
-      "title": "Loadout 1",
+      "title": "Loadout 1 (Hotkey: F1)",
       "icon": {
         "stack": "{Count:1b,id:\"minecraft:leather_chestplate\",tag:{Damage:0}}"
       },
@@ -50,6 +50,18 @@
     }
   },
   "Creative": {
+    "0": {
+      "title": "Skip time by 12 hours",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:clock\"}"
+      },
+      "action": {
+        "command": {
+          "command": "time add 12000",
+          "clipboard": false
+        }
+      }
+    },
     "3": {
       "title": "Gamemode: Survival",
       "icon": {
@@ -159,6 +171,18 @@
       "action": {
         "key": {
           "key": "gui.xaero_open_map",
+          "toggle": false
+        }
+      }
+    },
+    "9": {
+      "title": "Toggle First Person Model (Hotkey: F6)",
+      "icon": {
+        "stack": "{Count:1b,id:\"minecraft:player_head\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.firstperson.toggle",
           "toggle": false
         }
       }

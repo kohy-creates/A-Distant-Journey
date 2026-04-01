@@ -15,49 +15,48 @@ const nightmareStalkerMsgs = [
 
 EntityEvents.spawned(event => {
 	const entity = event.getEntity();
+	const server = event.getServer();
 
 	if (entity.getType() === 'born_in_chaos_v1:nightmare_stalker') {
 		if (event.success) {
 			const randomMsg = nightmareStalkerMsgs[Math.floor(Math.random() * nightmareStalkerMsgs.length)];
 			event.getServer().runCommandSilent(
-				commandAtEntity(entity, `/eta queue @a[distance=0..] status_messages "<dur:100><color col=c50000><fade in=10 out=10><typewriter speed=60><obfuscate mode=reveal speed=115 direction=random><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${randomMsg}</offset></align></anchor></typewriter></fade></color></obfuscate>"`)
-			)
+				commandAtEntity(entity, `/eta queue @a[distance=0..] status_messages "<dur:100><color col=c50000><fade in=10 out=10><typewriter speed=60><obfuscate mode=reveal speed=115 direction=random><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${randomMsg}"`)
+			);
 			event.getServer().runCommandSilent(
 				commandAtEntity(entity, '/playsound born_in_chaos_v1:stalker_roar_distant hostile @p[] ~ ~ ~ 0 0.5 0.2')
-			)
+			);
 		}
 	}
 	if (global.bossMobs.includes(entity.getType()) && !entity.tags.toArray().includes('adj.announced_spawn')) {
-		global.broadcast(
-			global.announcementMessage(`${entity.getDisplayName().getString()} has awoken!`, global.messageColors.bossSpawned, true)
-		)
+		global.broadcast(server, global.announcementMsg(`${entity.getDisplayName().getString()} has awoken!`, global.messageColors.bossSpawned, true));
 		entity.addTag('adj.announced_spawn');
 	}
-})
+});
 
 EntityEvents.death(event => {
 	const entity = event.getEntity();
 	if (global.bossMobs.includes(entity.getType())) {
-		global.broadcast(
-			global.announcementMessage(`${entity.getDisplayName().getString()} has been defeated!`, global.messageColors.bossDefeated, true)
-		)
+		global.broadcast(server, global.announcementMsg(`${entity.getDisplayName().getString()} has been defeated!`, global.messageColors.bossDefeated, true));
 	}
-})
+});
 
 const $EnhancedCelestials = Java.loadClass('dev.corgitaco.enhancedcelestials.EnhancedCelestials');
 const $Registry = Java.loadClass("net.minecraft.core.Registry");
 const $LunarEventClass = Java.loadClass("dev.corgitaco.enhancedcelestials.api.lunarevent.LunarEvent");
 const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
 const $Registries = Java.loadClass("net.minecraft.core.registries.Registries");
-const $EnhancedCelestialsRegistry = Java.loadClass("dev.corgitaco.enhancedcelestials.api.EnhancedCelestialsRegistry")
+const $EnhancedCelestialsRegistry = Java.loadClass("dev.corgitaco.enhancedcelestials.api.EnhancedCelestialsRegistry");
 
 let messageCount = 0;
 let CurrentLunarEvent;
 
+// I really don't need it but it makes the code a bit more readable for me ^^
 function isInBetween(num, var1, var2) {
 	return (num >= var1 && num <= var2);
 }
 
+// Don't ask me where I got this from, cause I don't remember at all
 function brighten(hex, p) {
 	return '#' + [0, 2, 4]
 		.map(i => {
@@ -187,7 +186,7 @@ const witherStormMessages = {
 			'But sooner or later it will be over'
 		]
 	}
-}
+};
 
 ServerEvents.tick(event => {
 	const server = event.getServer();
@@ -199,7 +198,7 @@ ServerEvents.tick(event => {
 		const duration = (options.duration !== undefined ? options.duration : 6) * 20;
 
 		// const command = '/immersivemessages sendcustom @a[distance=0..] {anchor:0,y:' + y + ',color:"' + color + '"' + (slideArgs ? ',' + slideArgs : '') + '} ' + duration + ' ' + text;
-		const command = `/eta queue @a[predicate=adj:in_overworld] status_messages "<dur:${duration}><color col=${color}><fade in=10 out=10><typewriter speed=45><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${text}</offset></align></anchor></typewriter></fade></color></dur>"`
+		const command = `/eta queue @a[predicate=adj:in_overworld] status_messages "<dur:${duration}><color col=${color}><fade in=10 out=10><typewriter speed=45><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${text}"`
 		server.runCommand(command);
 	}
 

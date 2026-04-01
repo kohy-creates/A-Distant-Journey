@@ -1,35 +1,35 @@
-const $TieredItem = Java.loadClass('net.minecraft.world.item.TieredItem')
-const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem')
-const $SwordItem = Java.loadClass('net.minecraft.world.item.SwordItem')
-const $AttributeModifier = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier")
-const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes")
-const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
-const $ItemAttributeModifierEvent = Java.loadClass('net.minecraftforge.event.ItemAttributeModifierEvent')
-const $PerkUtil = Java.loadClass("com.hollingsworth.arsnouveau.api.util.PerkUtil")
+const $TieredItem = Java.loadClass('net.minecraft.world.item.TieredItem');
+const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
+const $SwordItem = Java.loadClass('net.minecraft.world.item.SwordItem');
+const $AttributeModifier = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier");
+const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes");
+const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation');
+const $ItemAttributeModifierEvent = Java.loadClass('net.minecraftforge.event.ItemAttributeModifierEvent');
+const $PerkUtil = Java.loadClass("com.hollingsworth.arsnouveau.api.util.PerkUtil");
 
-const miningSpeedUUID = '80091653-9902-44f9-95a7-d627610856c0'
-const harvestLevelUUID = '84257908-8296-4470-ad2e-97e5db59b64e'
+const miningSpeedUUID = '80091653-9902-44f9-95a7-d627610856c0';
+const harvestLevelUUID = '84257908-8296-4470-ad2e-97e5db59b64e';
 
 const slots = [
 	'head', 'chest', 'legs', 'feet'
-]
+];
 
 const modifierUUIDs = [
 	'2AD3F246-FEE1-4E67-B886-69FD380BB150',
 	'9F3D476D-C118-4544-8365-64846904B48E',
 	'D8499B04-0E66-4726-AB29-64469D734E0D',
 	'845DB27C-C624-495F-8C9F-6020A9A58B6B'
-]
+];
 
 const weaponModifierUUIDs = [
 	'CB3F55D3-645C-4F38-A497-9C13A33DB5CF',
 	'FA233E1C-4180-4865-B01B-BCCE9785ACA3',
-]
+];
 
 const manaModifierUUIDs = {
 	max: 'f6c78e01-58d6-4807-86fa-3209d1ea3725',
 	regen: '8c3c0988-ddbc-4237-8ef3-7867811881e2'
-}
+};
 
 NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 	const stack = event.getItemStack();
@@ -122,6 +122,11 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 			let uuid = '8c7e24a4-e4e0-4183-b011-8771358e6b50';
 			event.addModifier('kubejs:food.hunger', new $AttributeModifier(uuid, 'Food Hunger', food.getNutrition(), 'addition'));
 			event.addModifier('kubejs:food.saturation', new $AttributeModifier(uuid, 'Food Hunger', food.getNutrition() * food.getSaturationModifier(), 'addition'));
+		}
+
+		if (Object.keys(global.toolReachOverrides).includes(id)) {
+			event.removeAttribute('forge:block_reach');
+			event.addModifier('forge:block_reach', new $AttributeModifier(weaponModifierUUIDs[0], 'ADJ Block Reach', global.toolReachOverrides[id], 'addition'));
 		}
 	}
 

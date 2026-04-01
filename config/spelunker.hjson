@@ -70,7 +70,7 @@
 			blockIds: [
 				minecraft:emerald_ore
 				minecraft:deepslate_emerald_ore
-				aether_ores:holystone_emerald_ore
+				aether_overworld_ores:holystone_emerald_ore
 			]
 			// default: #2EFF35
 			highlightColor: "#2EFF35"
@@ -83,7 +83,7 @@
 			blockIds: [
 				minecraft:copper_ore
 				minecraft:deepslate_copper_ore
-				aether_ores:holystone_copper_ore
+				aether_overworld_ores:holystone_copper_ore
 			]
 			// default: #EB5E34
 			highlightColor: "#EB5E34"
@@ -97,7 +97,7 @@
 				minecraft:gold_ore
 				minecraft:deepslate_gold_ore
 				minecraft:nether_gold_ore
-				aether_ores:holystone_gold_ore
+				aether_overworld_ores:holystone_gold_ore
 			]
 			// default: #FFF52E
 			highlightColor: "#FFF52E"
@@ -110,7 +110,7 @@
 			blockIds: [
 				minecraft:lapis_ore
 				minecraft:deepslate_lapis_ore
-				aether_ores:holystone_lapis_ore
+				aether_overworld_ores:holystone_lapis_ore
 			]
 			// default: #312EFF
 			highlightColor: "#312EFF"
@@ -138,7 +138,7 @@
 				minecraft:iron_ore
 				minecraft:deepslate_iron_ore
 				phantasm:cirite_iron_ore
-				aether_ores:holystone_iron_ore
+				aether_overworld_ores:holystone_iron_ore
 				alexscaves:galena_iron_ore
 			]
 			// default: #FFD1BD
@@ -152,9 +152,8 @@
 			blockIds: [
 				minecraft:diamond_ore
 				minecraft:deepslate_diamond_ore
-				aether_ores:holystone_diamond_ore
+				aether_overworld_ores:holystone_diamond_ore
 				born_in_chaos_v1:infected_diamond_ore
-				born_in_chaos_v1:deepslate_infected_diamond_ore
 			]
 			// default: #2EE0FF
 			highlightColor: "#2EE0FF"
@@ -168,7 +167,7 @@
 				minecraft:redstone_ore
 				minecraft:deepslate_redstone_ore
 				alexscaves:guanostone_redstone_ore
-				aether_ores:holystone_redstone_ore
+				aether_overworld_ores:holystone_redstone_ore
 				rediscovered:ruby_ore
 				rediscovered:deepslate_ruby_ore
 			]
@@ -183,7 +182,7 @@
 			blockIds: [
 				minecraft:coal_ore
 				minecraft:deepslate_coal_ore
-				aether_ores:holystone_coal_ore
+				aether_overworld_ores:holystone_coal_ore
 				netherexp:fossil_fuel_ore
 				alexscaves:coprolith_coal_ore
 			]
@@ -212,7 +211,7 @@
 			]
 			highlightColor: "#870B13"
 			transition: true
-			effectRadius: 16
+			effectRadius: 12
 		}
 		{
 			blockIds: [

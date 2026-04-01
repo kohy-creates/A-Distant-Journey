@@ -16,7 +16,6 @@ StartupEvents.registry('fluid', event => {
 		'nethervinery:blazewine_pinot': 0xF25523,
 		'nethervinery:netherite_nectar': 0xDA1D2B,
 		'nethervinery:lava_fizz': 0xC42200,
-		// 'nethervinery:improved_lava_fizz': 'none',
 		'vinery:mellohi_wine': 0x9FB589,
 		'vinery:glowing_wine': 0xFCCF54,
 		'vinery:solaris_wine': 0xCEAE57,
@@ -29,10 +28,8 @@ StartupEvents.registry('fluid', event => {
 		'vinery:jellie_wine': 0xDB7786,
 		'vinery:apple_cider': 0xD1AD75,
 		'vinery:apple_wine': 0xD6D375,
-		// 'vinery:mead': 'none',
 		'nethervinery:ghastly_grenache': 0x28BE92,
 		'nethervinery:nether_fizz': 0xC86EC5,
-		// 'nethervinery:improved_nether_fizz': 'none',
 
 		'vinery:red_grapejuice': 0x412345,
 		'vinery:white_grapejuice': 0x6A8268,
@@ -46,15 +43,21 @@ StartupEvents.registry('fluid', event => {
 		'nethervinery:warped_grapejuice': 0x208B87,
 
 		'croptopia:apple_juice': 0xE0AB1F,
-	}
+	};
 
 	for (const [wine, color] of Object.entries(vineryWines)) {
 		let id = wine.split(':')[1];
 		event.create(id)
 			.thinTexture(color)
 			.bucketColor(0x00FFFF)
-			.displayName(Utils.toTitleCase(id.replace('_', ' ').replace('_', ' ').replace('_', ' ')))
+			.displayName(global.toTitleCase(global.textReplaceAll(id, '_', ' ')))
 			.noBucket()
-			.noBlock()
+			.noBlock();
 	}
+
+	event.create('dimensional_juice')
+		.thickTexture(0x65219E)
+		.bucketColor(0x65219E)
+		.displayName('Dimensional Juice')
+		.noBlock();
 })

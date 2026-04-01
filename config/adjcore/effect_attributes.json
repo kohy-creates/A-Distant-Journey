@@ -96,5 +96,11 @@
 			"adjcore:generic.damage_reduction;-0.15;0",
 			"attributeslib:healing_received;-0.25;0"
 		]
+	},
+	"ars_nouveau:spell_damage": {
+		"replace": true,
+		"attributes": [
+			"ars_nouveau:ars_nouveau.perk.spell_damage;15;0"
+		]
 	}
 }

@@ -258,7 +258,7 @@ PlayerEvents.tick(event => {
 	// const currentInventory = player.menu();
 	// console.log(currentInventory);
 
-	const currentTip = data.tip.active
+	const currentTip = data.tip.active;
 
 	if (currentTip) {
 		if (showTimer == 0) {
@@ -277,7 +277,7 @@ PlayerEvents.tick(event => {
 		}
 		showTimer++;
 	}
-})
+});
 
 function showPlayerTip(player, item, title, description, duration) {
 	const pData = player.persistentData;
@@ -293,7 +293,7 @@ function showPlayerTip(player, item, title, description, duration) {
 		title: title,
 		description: description,
 		duration: (duration) ? duration : 200
-	}
+	};
 }
 
 NetworkEvents.dataReceived('lce_tip', event => {
@@ -304,7 +304,7 @@ NetworkEvents.dataReceived('lce_tip', event => {
 		data.title,
 		data.description,
 		data.duration
-	)
+	);
 });
 
 KeyBindEvents.keyRelease('adjcore.what_is_this', event => {
@@ -321,7 +321,7 @@ KeyBindEvents.keyRelease('adjcore.what_is_this', event => {
 
 		let title, description;
 		if (tip.length === 1) {
-			title = Utils.toTitleCase(id.split(':')[1].replace('_', ' '));
+			title = global.toTitleCase(global.textReplaceAll(id.split(':')[1]), '_', '');
 			description = tip[0];
 		}
 		else {
@@ -339,6 +339,6 @@ KeyBindEvents.keyRelease('adjcore.what_is_this', event => {
 			title,
 			description,
 			tip[2] ?? 200
-		)
+		);
 	}
-})
+});

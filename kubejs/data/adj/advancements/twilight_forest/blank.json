@@ -1,4 +1,19 @@
 {
 	"parent": "adj:root",
-	"criteria": {}
+	"display": {
+		"icon": {
+			"item": "minecraft:obsidian"
+		},
+		"title": "Twilight Forest Progress Root",
+		"description": "",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"cod": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"requirements": [],
+	"sends_telemetry_event": false
 }

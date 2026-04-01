@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "kubejs:item/chalice_of_blood_2"
+	},
+	"overrides": []
+}

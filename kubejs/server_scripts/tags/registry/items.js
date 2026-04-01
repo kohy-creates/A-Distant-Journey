@@ -429,5 +429,19 @@ ServerEvents.tags('item', tags => {
 	tags.add('adj:scorched_logs', [
 		/born_in_chaos_v1:.*scorched_log/,
 		/born_in_chaos_v1:.*scorched_wood.*/
-	])
+	]);
+
+	tags.removeAllTagsFrom('rubinated_nether:ruby');
+
+	tags.removeAllTagsFrom(/twilight,*:.*venison.*/);
+	tags.add('twilightdelight:vension_raw', [
+		'naturalist:venison'
+	]);
+	tags.add('twilightdelight:vension_cooked', [
+		'naturalist:cooked_venison'
+	]);
+
+	tags.remove('twilightforest:fiery_vial', [
+		'twilightforest:fiery_tears'
+	]);
 });
