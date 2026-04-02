@@ -21,7 +21,7 @@ global.onRoll = (player, velocity) => {
 	if (!player) return;
 
 	const mainHand = player.getMainHandItem();
-	const offHand = player.getMainHandItem();
+	const offHand = player.getOffHandItem();
 
 	if (mainHand.getId() === 'kubejs:elsa_crossbow' || offHand.getId() === 'kubejs:elsa_crossbow') {
 		player.getPersistentData().elsa_crossbow_tickdown = 120;
@@ -32,10 +32,14 @@ global.onRoll = (player, velocity) => {
 			mainHand.setNbt(nbt);
 		}
 		else {
-			let nbt = mainHand.nbt;
+			let nbt = offHand.nbt;
 			nbt.Charged = true;
 			nbt.ChargedProjectiles = [{ id: 'minecraft:arrow', Count: 1 }];
-			mainHand.setNbt(nbt);
+			offHand.setNbt(nbt);
 		}
+	}
+
+	if (player.isCuriosEquipped('kubejs:bloodstone_choker')) {
+		player.setAbsorptionAmount(Math.min(player.getAbsorptionAmount() + 10, 30));
 	}
 };

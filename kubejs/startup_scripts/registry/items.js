@@ -9,6 +9,18 @@ global.elsaCrossbowBlockHit = function (event) {
 	arrow.kill();
 };
 
+/**
+ * 
+ * @param {Internal.CrossbowUseContext} event 
+ */
+global.elsaCrossbowShoot = function (event) {
+	const player = event.getPlayer();
+	if (player) {
+		player.level.playSound(null, playet.x, player.y + player.getEyeHeight(), player.z, 'minecraft:block.anvil.place', 'players', 1, Math.random() * .25 + 0.95)
+		player.getPersistentData().elsa_crossbow_tickdown = 1;
+	}
+};
+
 /** 
  * @param {Internal.SlotContext} slotContext 
  * @param {Internal.ItemStack} stack 
@@ -149,6 +161,9 @@ StartupEvents.registry('item', registry => {
 				.onArrowHit(arrow => {
 					arrow.hitBlock(event => global.elsaCrossbowBlockHit(event))
 				})
+				.onUse(event => {
+					event.shoot(event => global.elsaCrossbowShoot(event))
+				});
 		})
 		.unstackable()
 		.maxDamage(3000)

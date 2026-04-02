@@ -62,7 +62,7 @@ variable {
 
 variable {
   name = hud.hunger_level
-  value = 250
+  value = 230
   reset_on_launch = false
 }
 
@@ -86,7 +86,7 @@ variable {
 
 variable {
   name = hud.saturation_level
-  value = 150
+  value = 130
   reset_on_launch = false
 }
 
@@ -98,7 +98,7 @@ variable {
 
 variable {
   name = hud.hunger_level_color
-  value = 3
+  value = 2
   reset_on_launch = false
 }
 

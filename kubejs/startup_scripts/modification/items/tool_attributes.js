@@ -130,6 +130,12 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 		}
 	}
 
+	if (event.slotType == 'mainhand' || event.slotType == 'offhand') {
+		if (item.id === 'kubejs:elsa_crossbow') {
+			event.addModifier('combatroll:count', new $AttributeModifier('72a192cc-f439-410b-a296-13f560012cbe', 'ADJ Block Reach', 1, 'addition'));
+		}
+	}
+
 	// Armor
 	if (item instanceof $ArmorItem) {
 		for (const [slot, suffixes] of Object.entries(global.armorSuffixes)) {
