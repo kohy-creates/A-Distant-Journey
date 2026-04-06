@@ -1,0 +1,2 @@
+&bWorld border&r starts &310 &3000 &3blocks&r away in any direction from the center of the world.
+%#FFEE00%*The default%#% %#FF00FF%**ADJ**%#% %#FFEE00%experience!*%#%

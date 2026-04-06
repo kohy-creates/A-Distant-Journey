@@ -32,7 +32,7 @@ const TwilightForestProgression = {
 		const data = persistentData.tfProgress;
 
 		function isCompletedNotUnlocked(type) {
-			if (!data[type]) {
+			if (!data || !data[type]) {
 				return false;
 			}
 			return (data[type].completed && !data[type].unlocked);
@@ -57,13 +57,13 @@ const TwilightForestProgression = {
 			}
 			case 'chapter_4': {
 				if (
-					data.tfProgress
-					&& data.tfProgress.progressMerge
-					&& data.tfProgress.progressMerge.hydra
-					&& data.tfProgress.progressMerge.ur_ghast
-					&& !data.tfProgress.progressMerge.unlocked
+					data
+					&& data.progressMerge
+					&& data.progressMerge.hydra
+					&& data.progressMerge.ur_ghast
+					&& !data.progressMerge.unlocked
 				) {
-					data.tfProgress.progressMerge.unlocked = true;
+					data.progressMerge.unlocked = true;
 					global.broadcast(server, global.announcementMsg(Text.of(TwilightForestProgression.messages.hydra), global.messageColors.twilightForestProgress));
 				}
 				break;

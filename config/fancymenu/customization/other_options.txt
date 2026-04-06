@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = other_options
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1774453057001
+  last_edited_time = 1775409907533
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:56c67f46-c6af-4fa4-87a4-9d75086b508f-1774453052147] = [groups:][instances:]
+  [loading_requirement_container_meta:1405745e-461c-4a36-9132-fdd8bdeb2ffd-1775409845654] = [groups:][instances:]
 }
 
 customization {
@@ -504,7 +504,7 @@ element {
   shadow = true
   scale = 1.0
   base_color = #FFFFFFFF
-  text_border = 2
+  text_border = 0
   line_spacing = 2
   auto_line_wrapping = true
   remove_html_breaks = true
@@ -531,11 +531,11 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 126
-  y = 131
+  x = 123
+  y = 3
   width = 173
   height = 40
   stretch_x = false
@@ -563,6 +563,7 @@ element {
 
 element {
   slider_type = list
+  pre_selected_value = {"placeholder":"getvariable","values":{"name":"option.hunger_style"}}
   slider_label = Hunger Indicator Style: %!n!%{"placeholder":"switch_case",%!n!%%!s!%%!s!%%!s!%%!s!%"values":{%!n!%%!s!%%!s!%%!s!%%!s!%%!s!%%!s!%%!s!%%!s!%"value":"$$value",%!n!%%!s!%%!s!%%!s!%%!s!%%!s!%%!s!%%!s!%%!s!%"cases":"apple:&cApple,steak:&eSteak,carrot:&6Carrot,chorus_fruit:&5Chorus Fruit",%!n!%%!s!%%!s!%%!s!%%!s!%%!s!%%!s!%%!s!%%!s!%"default":"default case"%!n!%%!s!%%!s!%%!s!%%!s!%}%!n!%}
   min_range_value = 0.0
   max_range_value = 3.0
@@ -595,7 +596,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = mid-centered
   x = -206

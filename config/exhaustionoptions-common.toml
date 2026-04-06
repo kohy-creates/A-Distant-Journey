@@ -3,13 +3,13 @@
 globalMultiplier = 0.5
 #DamageSource exhaustion type multiplier
 #Range: 0.0 ~ 10.0
-damageTypeMultiplier = 0.85
+damageTypeMultiplier = 2.2
 #Jump multiplier
 #Range: 0.0 ~ 10.0
-jumpMultiplier = 1.0
+jumpMultiplier = 1.4
 #Swimming exhaustion multiplier
 #Range: 0.0 ~ 10.0
-swimMultiplier = 1.5
+swimMultiplier = 2.0
 #Underwater walking exhaustion multiplier
 #Range: 0.0 ~ 10.0
 underwaterWalkMultiplier = 1.5
@@ -18,7 +18,7 @@ underwaterWalkMultiplier = 1.5
 shallowWaterWalkMultiplier = 1.5
 #Sprinting exhaustion multiplier
 #Range: 0.0 ~ 10.0
-sprintMultiplier = 0.5
+sprintMultiplier = 0.64
 #Block mining exhaustion multiplier
 #Range: 0.0 ~ 10.0
 blockMiningMultiplier = 0.66

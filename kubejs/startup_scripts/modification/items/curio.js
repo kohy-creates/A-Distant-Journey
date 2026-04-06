@@ -15,8 +15,8 @@ ItemEvents.modification(event => {
 					0.4,
 					"addition"
 				)
-		)
-	})
+		);
+	});
 
 	event.modify('terra_curio:sorcerer_emblem', item => {
 		item.attachCuriosCapability(
@@ -30,77 +30,47 @@ ItemEvents.modification(event => {
 				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.max_mana',
 					'378ef4cf-94c2-4432-95ce-95ee6c74d17a',
-					30,
+					20,
 					"addition"
 				)
-		)
-	})
+		);
+	});
 
 	event.modify('terra_curio:avenger_emblem', item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.spell_damage',
-					'01737022-40a3-4aba-a062-9be48d052661',
-					12,
-					"addition"
-				)
-				.addAttribute(
-					'generic.attack_damage',
+					'kubejs:damage_dealt',
 					'01737022-40a3-4aba-a062-9be48d052661',
 					0.12,
 					"multiply_base"
 				)
-				.addAttribute(
-					'attributeslib:arrow_damage',
-					'01737022-40a3-4aba-a062-9be48d052661',
-					0.12,
-					"addition"
-				)
-		)
-	})
+		);
+	});
 
 	event.modify('terra_curio:destroyer_emblem', item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.spell_damage',
-					'46118a26-23a3-4653-8312-254c5f975d3e',
-					10,
-					"addition"
-				)
-				.addAttribute(
 					'attributeslib:crit_chance',
 					'46118a26-23a3-4653-8312-254c5f975d3e',
-					0.15,
+					0.1,
 					"addition"
 				)
 				.addAttribute(
-					'generic.attack_damage',
+					'kubejs:damage_dealt',
 					'46118a26-23a3-4653-8312-254c5f975d3e',
 					0.1,
 					"multiply_base"
 				)
-				.addAttribute(
-					'attributeslib:arrow_damage',
-					'46118a26-23a3-4653-8312-254c5f975d3e',
-					0.1,
-					"addition"
-				)
-		)
-	})
+		);
+	});
 
 	event.modify('terra_curio:celestial_stone', item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
 					'generic.attack_speed',
-					'86695f4b-dd1d-4b4c-a5d0-e029556b5e76',
-					0.1,
-					"multiply_base"
-				)
-				.addAttribute(
-					'generic.attack_damage',
 					'86695f4b-dd1d-4b4c-a5d0-e029556b5e76',
 					0.1,
 					"multiply_base"
@@ -118,22 +88,10 @@ ItemEvents.modification(event => {
 					"addition"
 				)
 				.addAttribute(
-					'attributeslib:arrow_damage',
+					'kubejs:damage_dealt',
 					'86695f4b-dd1d-4b4c-a5d0-e029556b5e76',
 					0.1,
 					"multiply_base"
-				)
-				.addAttribute(
-					'attributeslib:arrow_damage',
-					'86695f4b-dd1d-4b4c-a5d0-e029556b5e76',
-					0.1,
-					"addition"
-				)
-				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.spell_damage',
-					'86695f4b-dd1d-4b4c-a5d0-e029556b5e76',
-					10,
-					"addition"
 				)
 		)
 	})
@@ -142,28 +100,16 @@ ItemEvents.modification(event => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.spell_damage',
-					'c34266b0-9edb-4274-9e0a-cac12ab24803',
-					5,
-					"addition"
-				)
-				.addAttribute(
 					'attributeslib:crit_chance',
 					'c34266b0-9edb-4274-9e0a-cac12ab24803',
 					0.05,
 					"addition"
 				)
 				.addAttribute(
-					'generic.attack_damage',
+					'kubejs:damage_dealth',
 					'c34266b0-9edb-4274-9e0a-cac12ab24803',
 					0.05,
-					"multiply_total"
-				)
-				.addAttribute(
-					'attributeslib:arrow_damage',
-					'c34266b0-9edb-4274-9e0a-cac12ab24803',
-					0.05,
-					"addition"
+					"multiply_base"
 				)
 		)
 	})
@@ -183,8 +129,8 @@ ItemEvents.modification(event => {
 					20,
 					'addition'
 				)
-		)
-	})
+		);
+	});
 
 	event.modify('ars_nouveau:ring_of_greater_discount', item => {
 		item.attachCuriosCapability(
@@ -196,19 +142,13 @@ ItemEvents.modification(event => {
 					'addition'
 				)
 				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.mana_regen',
-					'3cba6935-a4c0-46b6-973a-0f6138662685',
-					2,
-					'addition'
-				)
-				.addAttribute(
 					'ars_nouveau:ars_nouveau.perk.max_mana',
 					'3cba6935-a4c0-46b6-973a-0f6138662685',
-					30,
+					20,
 					'addition'
 				)
-		)
-	})
+		);
+	});
 
 	event.modify('cataclysm:chitin_claw', item => {
 		item.attachCuriosCapability(
@@ -219,8 +159,8 @@ ItemEvents.modification(event => {
 					2,
 					'addition'
 				)
-		)
-	})
+		);
+	});
 
 	event.modify('terra_curio:band_of_regeneration', item => {
 		item.attachCuriosCapability(
@@ -231,8 +171,8 @@ ItemEvents.modification(event => {
 					1,
 					'addition'
 				)
-		)
-	})
+		);
+	});
 
 	event.modify('aether:regeneration_stone', item => {
 		item.attachCuriosCapability(
@@ -243,12 +183,9 @@ ItemEvents.modification(event => {
 					4,
 					'addition'
 				)
-		)
-	})
+		);
+	});
 
-	/**
-	 * @type {Record<string, { damage: number, operation: number, extra: { attribute: string, value: number, operation: number }[] }>}
-	 */
 	const gloves = {
 		'aether:iron_gloves': {
 			damage: 2,
@@ -425,13 +362,16 @@ ItemEvents.modification(event => {
 		}
 	};
 
+	let i = 0;
 	for (const [glove, entry] of Object.entries(gloves)) {
 		event.modify(glove, item => {
 			const capability = CuriosJSCapabilityBuilder.create();
+			const uuid = `56a40da3-6e0c-4838-8842-e3b4638dcb${(i < 10) ? `0${i}` : i}`;
+
 			if (entry.damage > 0) {
 				capability.addAttribute(
 					'generic.attack_damage',
-					'56a40da3-6e0c-4838-8842-e3b4638dcbb3',
+					uuid,
 					entry.damage,
 					$Operation.fromValue(entry.operation || 0)
 				)
@@ -440,13 +380,14 @@ ItemEvents.modification(event => {
 			entry.extra.forEach(element => {
 				capability.addAttribute(
 					element.attribute,
-					'56a40da3-6e0c-4838-8842-e3b4638dcbb3',
+					uuid,
 					element.value,
 					$Operation.fromValue(element.operation || 0)
 				)
 			});
 
 			item.attachCuriosCapability(capability)
-		})
+		});
+		i++;
 	}
 })

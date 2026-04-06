@@ -115,7 +115,7 @@ StartupEvents.registry('mob_effect', registry => {
 		.modifyAttribute(
 			'adjcore:generic.health_regeneration',
 			'aeb5b123-26b9-454d-bff2-b80730a3369d',
-			0.5,
+			2.5,
 			'addition'
 		);
 
@@ -144,13 +144,95 @@ StartupEvents.registry('mob_effect', registry => {
 		.modifyAttribute(
 			'minecraft:generic.attack_speed',
 			'72cb6926-2df2-4fd2-b1af-99ee1199ef91',
-			'0.075',
+			0.075,
 			'multiply_base'
 		)
 		.modifyAttribute(
 			'minecraft:generic.attack_damage',
 			'72cb6926-2df2-4fd2-b1af-99ee1199ef91',
-			'0.065',
+			0.065,
 			'multiply_base'
+		);
+
+	registry.create('merfolk_form')
+		.color(Color.WHITE)
+		.beneficial()
+		.modifyAttribute(
+			'forge:swim_speed',
+			'44a47d78-e4ed-4d3a-96c4-43ecbdfc4332',
+			0.6,
+			'multiply_base'
+		)
+		.modifyAttribute(
+			'additionalentityattributes:player.water_visibility',
+			'44a47d78-e4ed-4d3a-96c4-43ecbdfc4332',
+			0.75,
+			'multiply_base'
+		);
+
+	registry.create('werewolf_form')
+		.color(Color.WHITE)
+		.beneficial()
+		.modifyAttribute(
+			'generic.armor',
+			'659361d2-3a21-49d2-915c-174480622987',
+			3,
+			'addition'
+		)
+		.modifyAttribute(
+			'generic.attack_damage',
+			'659361d2-3a21-49d2-915c-174480622987',
+			0.51,
+			'multiply_base'
+		)
+		.modifyAttribute(
+			'generic.movement_speed',
+			'659361d2-3a21-49d2-915c-174480622987',
+			0.5,
+			'multiply_base'
+		)
+		.modifyAttribute(
+			'generic.attack_speed',
+			'659361d2-3a21-49d2-915c-174480622987',
+			0.51,
+			'multiply_base'
+		)
+		.modifyAttribute(
+			'attributeslib:crit_chance',
+			'659361d2-3a21-49d2-915c-174480622987',
+			0.02,
+			'addition'
+		)
+		.modifyAttribute(
+			'adjcore:generic.health_regeneration',
+			'659361d2-3a21-49d2-915c-174480622987',
+			0.5,
+			'addition'
+		);
+
+	registry.create('seed_of_hope')
+		.color(Color.WHITE)
+		.beneficial()
+		.modifyAttribute(
+			'generic.movement_speed',
+			'90a940d6-e9ca-4804-9e95-d8f02edb38ee',
+			0.25,
+			'multiply_base'
+		)
+		.modifyAttribute(
+			'adjcore:generic.health_regeneration',
+			'90a940d6-e9ca-4804-9e95-d8f02edb38ee',
+			1,
+			'addition'
+		);
+
+	registry.create('forest_aura')
+		.beneficial()
+		.color(Color.WHITE)
+		.modifyAttribute(
+			'adjcore:generic.health_regeneration',
+			'01b98e60-d0d8-40c2-a885-f34f36b0114c',
+			1,
+			'addition'
 		);
 });

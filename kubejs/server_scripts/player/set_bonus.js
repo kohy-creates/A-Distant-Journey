@@ -160,7 +160,7 @@ function tickBonus(player) {
 			else if (percentHP <= 40) amplifier = 2;
 			else if (percentHP <= 60) amplifier = 1;
 
-			player.addEffect(new $MobEffectInstance('born_in_chaos_v1:light_rampage', 10, amplifier, true, true, true))
+			player.addEffect(new $MobEffectInstance('born_in_chaos_v1:light_rampage', 10, amplifier, true, true, true));
 		}
 		if (percentHP < 5) {
 			player.removeEffect('born_in_chaos_v1:medium_rampage');
@@ -171,7 +171,7 @@ function tickBonus(player) {
 		}
 	}
 	else if (setBonusActive(player, 'mythicmetals:prometheum')) {
-		const isExposedToSunlight = (player.level.getHeightmapPos("motion_blocking_no_leaves", player.block.pos) <= player.block.pos);
+		const isExposedToSunlight = (player.level.getHeightmapPos("motion_blocking_no_leaves", player.block.pos) <= player.block.pos) && player.level.isDay();
 		if (isExposedToSunlight) {
 			player.addEffect(new $MobEffectInstance('kubejs:prometheum_regeneration', 4 * 20, 0));
 		}

@@ -1,0 +1,10 @@
+^^^
+## Hosting Worlds
+^^^
+After pressing `Host World`, you will receive a **short link in chat**. **Anyone** can join your world using that link as a **temporary server address** - it's used in the exact same way you'd use a regular server adress, like *mc.hypixel.com*.
+
+If you'd want to keep this a local, LAN game, **you are also given an option to disable the link**, so don't worry about that!
+
+All of this is possible thanks to **E4MC** - a mod dedicated specfically to hosting worlds. Learn more about it [**HERE**](https://modrinth.com/mod/e4mc).
+
+&7**NOTE:**&r __Hosting a world requires a tanky enough machine__. If you can barely run ADJ, hosting a world is only going to make the modpack run worse. Altough it can get expensive, consider investing in a server host instead.

@@ -1,6 +1,24 @@
 type = user_variables
 
 variable {
+  name = pause.tutorial_progress
+  value = 8
+  reset_on_launch = false
+}
+
+variable {
+  name = pause.seen_tutorial
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
+  name = pause.in_tutorial
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
   name = debug
   value = 1
   reset_on_launch = false
@@ -43,6 +61,12 @@ variable {
 }
 
 variable {
+  name = world.border_size
+  value = 10k
+  reset_on_launch = false
+}
+
+variable {
   name = hud.is_poisoned
   value = 0
   reset_on_launch = false
@@ -62,7 +86,7 @@ variable {
 
 variable {
   name = hud.hunger_level
-  value = 230
+  value = 250
   reset_on_launch = false
 }
 
@@ -86,7 +110,7 @@ variable {
 
 variable {
   name = hud.saturation_level
-  value = 130
+  value = 150
   reset_on_launch = false
 }
 
@@ -98,7 +122,7 @@ variable {
 
 variable {
   name = hud.hunger_level_color
-  value = 2
+  value = 3
   reset_on_launch = false
 }
 

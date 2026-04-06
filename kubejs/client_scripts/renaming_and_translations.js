@@ -200,6 +200,9 @@ ClientEvents.lang('en_us', event => {
 
 		'morered:red_alloy_wire': 'Redstone Cable',
 		'experienceobelisk:cognitium': 'Liquid Experience',
+
+		'nether_wart': 'Crimson Wart',
+		'nether_wart_block': 'Crimson Wart Block',
 	};
 
 	/** @type {Record<Internal.InputItem_, string>} */

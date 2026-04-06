@@ -91,5 +91,5 @@ B:arrow_keys_move_preview = 'true';
 
 ##[advanced]
 
-L:placeholder_caching_duration_ms = '30';
-L:requirement_caching_duration_ms = '0';
+L:placeholder_caching_duration_ms = '50';
+L:requirement_caching_duration_ms = '50';

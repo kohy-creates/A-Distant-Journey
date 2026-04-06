@@ -1,0 +1,5 @@
+^^^
+**Where's Mods Button?**
+^^^
+------
+It's hidden by default, but you can choose to enable it in settings, if you want to tweak some client mod configs.

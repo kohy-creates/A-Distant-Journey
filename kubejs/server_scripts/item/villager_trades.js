@@ -119,19 +119,20 @@ const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 					offer.setSecondInput('kubejs:diamond_upgrade')
 				}
 			}
+
+			offer.setVillagerExperience(
+					
+			);
 		});
 	});
 })();
 
 MoreJSEvents.villagerTrades(event => {
 
-	const villagerXP = [
-		2,
-		6,
-		13,
-		15,
-		30
-	];
+	const villagerXP = {
+		buy: 4,
+		sell: 6
+	}
 
 	function newBasicTrade(profession, level, inputs, output, maxUses, priceMul) {
 		event.addCustomTrade(profession, level, (offer, entity, random) => {
@@ -144,7 +145,7 @@ MoreJSEvents.villagerTrades(event => {
 			}
 			offer.setOutput(output);
 			offer.setMaxUses((maxUses) ? maxUses : 8);
-			offer.setVillagerExperience(villagerXP[level - 1]);
+			offer.setVillagerExperience((output.includes('emerald') ? villagerXP.buy : villagerXP.sell));
 			offer.setPriceMultiplier((priceMul) ? priceMul : 0.05);
 		});
 	}

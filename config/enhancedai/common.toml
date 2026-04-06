@@ -677,7 +677,7 @@
 	[Mobs.Leaders]
 		#Chance for a mob to become a leader. Leader mobs have a high chance to spawn reinforcements.
 		#Range: 0.0 ~ 1.0
-		"Leader chance" = 0.05
+		"Leader chance" = 0.0
 		#At this damage, the chance to spawn reinforcements is 100% of the attribute, otherwise is scaled. E.g. with this set to 6 and enhancedai:spawn_reinforcements_chance attribute set to 0.5 the chance to spawn reinforcements is 50% at 6 damage, 25% at 3 damage or 100% at 12 damage. Set to 0 to disable scaling with damage. This is damage before resistances (armor, etc).
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Spawn reinforcements chance damage scaled" = 0.0
@@ -689,7 +689,7 @@
 		"Reinforces can spawn as leader" = false
 		#If true, leader mobs will have 4x health and +15 armor.
 		"Bonus stats" = false
-		"Remove vanilla spawn reinforcements chance" = true
+		"Remove vanilla spawn reinforcements chance" = false
 
 	#Makes drowned swim speed based off swim speed attribute instead of movement speed.
 	[Mobs.Swimmers]

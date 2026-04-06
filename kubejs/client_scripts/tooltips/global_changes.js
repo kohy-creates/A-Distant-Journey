@@ -744,7 +744,7 @@ ItemEvents.tooltip(event => {
 			]
 		},
 		{
-			items: /spear/,
+			items: /.*_spear$/,
 			text: [
 				'Critical hits reduce enemy defense'
 			]
@@ -756,9 +756,18 @@ ItemEvents.tooltip(event => {
 				'wooden_pickaxe',
 				'wooden_hoe',
 				'wooden_shovel',
-				'shieldexp:wooden_shield'
+				'shieldexp:wooden_shield',
 			],
-			text: 'We all have to start somewhere!'
+			text: '\'We all have to start somewhere!\''
+		},
+		{
+			items: [
+				'kubejs:wooden_helmet',
+				'kubejs:wooden_chestplate',
+				'kubejs:wooden_leggings',
+				'kubejs:wooden_boots',
+			],
+			text: '\'It\'s better than nothing...\''
 		},
 		{
 			items: [
@@ -767,11 +776,11 @@ ItemEvents.tooltip(event => {
 				'majruszsdifficulty:bandage',
 				'majruszsdifficulty:golden_bandage'
 			],
-			text: 'Stops bleeding'
+			text: 'Stops bleeding.'
 		},
 		{
 			items: 'enchanted_golden_apple',
-			text: 'You can unenchant it. But why would you?',
+			text: 'You can unenchant it. But like... why?',
 			opts: { position: 2 }
 		},
 		{

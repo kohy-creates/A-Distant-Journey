@@ -789,7 +789,7 @@ global.hpModifications = {
 	'minecraft:copper_golem': [60, 1, 10],
 	'vinery:mule': [265, 15, 0],
 	'vinery:wandering_winemaker': [250, 15, [10, 20, 30, 40, 50, 60]],
-}
+};
 
 global.entitiesScalingWithSize = [
 	'minecraft:magma_cube',
@@ -800,7 +800,7 @@ global.entitiesScalingWithSize = [
 	'aether:golden_swet',
 	'aether_redux:vanilla_swet',
 	'aether_redux:festive_swet'
-]
+];
 
 global.autoscaleMobs = [
 	'minecraft:zombie',
@@ -880,7 +880,7 @@ global.autoscaleMobs = [
 	'aquamirae:anglerfish',
 	'aquamirae:maze_mother',
 	'aquamirae:tortured_soul'
-]
+];
 
 global.scaleThroughChapters = [
 	'minecraft:wandering_trader',
@@ -889,15 +889,7 @@ global.scaleThroughChapters = [
 	'minecraft:wolf',
 	'minecraft:iron_golem',
 	'minecraft:snow_golem'
-]
-
-global.bossMobs = [
-	'minecraft:ender_dragon', // The Deviants' Unobstructed Light
-	'minecraft:wither', // Even If It's Forgotten by the World
-	'minecraft:warden', // No boss music
-	global.bossMobsNoTreasureBag,
-	global.bossMobsAddTreasureBag,
-]
+];
 
 global.bossMobsAddTreasureBag = [
 	'botania:doppleganger', // Concealed Four Seasons (default form), Secret God Matara (Hardmode form)
@@ -928,10 +920,17 @@ global.bossMobsAddTreasureBag = [
 	'twilightforest:alpha_yeti', // There's a Monster In The Woods
 	'twilightforest:snow_queen', // Hoshifuru Tenma no Yama (I forgot the English title lmao)
 	'aquamirae:captain_cornelia', // Captain Murasa (UFO ver)
-]
+];
 
 global.bossMobsNoTreasureBag = [
 	'witherstormmod:command_block', // Fire's of Hokkai (when approaching), Because I'm Used to Being the Last One Left (WBaWC mix I found on youtube) (while fighting)
 	'witherstormmod:wither_storm', // No boss music
 	'witherstormmod:withered_symbiont', // Reminiscence of Deer-Hunting
-]
+];
+
+
+global.bossMobs = [
+	'minecraft:ender_dragon', // The Deviants' Unobstructed Light
+	'minecraft:wither', // Even If It's Forgotten by the World
+	'minecraft:warden', // No boss music
+].concat(global.bossMobsNoTreasureBag).concat(global.bossMobsAddTreasureBag);

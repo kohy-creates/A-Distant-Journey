@@ -1,0 +1,5 @@
+^^^
+**Skin Changer**
+^^^
+------
+You can change your used skin and cape there. Visible to all players in Multiplayer, and you can import your own ones.

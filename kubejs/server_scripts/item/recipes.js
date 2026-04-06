@@ -104,6 +104,14 @@ ServerEvents.recipes((event) => {
 		/placeablemaxwell/,
 		/gateways/,
 		/twilightforest:fiery/,
+		'mythicmetals:mythril_pickaxe',
+		'mythicmetals:mythril_axe',
+		'mythicmetals:mythril_shovel',
+		'mythicmetals:mythril_hoe',
+		'mythicmetals:mythril_helmet',
+		'mythicmetals:mythril_chestplate',
+		'mythicmetals:mythril_leggings',
+		'mythicmetals:mythril_boots'
 	].concat(global.blacklistedItems);
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -301,7 +309,8 @@ ServerEvents.recipes((event) => {
 		/aether:.*gloves/,
 		'brewinandchewin:fermenting/egg_grog_from_milk',
 		'twilightdelight:cutting/phantom_chestplate',
-		'twilightdelight:cutting/phantom_helmet'
+		'twilightdelight:cutting/phantom_helmet',
+		'create:crushing/nether_wart_block',
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -3577,6 +3586,7 @@ ServerEvents.recipes((event) => {
 	sewingRecipe('ars_nouveau:magebloom_block', 'ars_nouveau:sky_block')
 
 	// Eyes
+	// Eye of Verdancy
 	gaiaPlateRecipe([
 		'botanicadds:gaiasteel_block',
 		'botania:dragonstone_block',
@@ -3624,7 +3634,7 @@ ServerEvents.recipes((event) => {
 		.recipeTime(toSeconds(45))
 		.id('adj:eyes/arcanum');
 
-	// Ethercraft Crafting Tree
+	// Eye of Ethercraft crafting tree
 	let inter = Item.of('create:brass_block');
 	event.recipes.create.sequenced_assembly(
 		Item.of('kubejs:ethercraft_piece_1'),
@@ -3678,6 +3688,7 @@ ServerEvents.recipes((event) => {
 		'superheated'
 	).id('adj:eye_of_ethercraft');
 
+	// Mythril gear recipes
 	event.shaped(
 		Item.of('mythicmetals:durasteel_engine'),
 		[
@@ -3692,7 +3703,24 @@ ServerEvents.recipes((event) => {
 			B: 'mythicmetals:steel_block',
 			A: 'netherite_ingot'
 		}
-	).id('adj:durasteel_engine')
+	).id('adj:durasteel_engine');
+
+	function mythrilRecipe(type) {
+		event.smithing(
+			`mythicmetals:mythril_${type}`,
+			'netherite_scrap',
+			`twilightforest:ironwood_${type}`,
+			'mythicmetals:mythril_ingot'
+		).id(`adj:mythril_${type}`);
+	}
+
+	mythrilRecipe('pickaxe');
+	mythrilRecipe('axe');
+	mythrilRecipe('shovel');
+	mythrilRecipe('hoe');
+	mythrilRecipe('helmet');
+	mythrilRecipe('leggings');
+	mythrilRecipe('boots');
 
 	const cookingTimeOverrides = {
 		'artifacts:eternal_steak': 60 * 15, // in seconds btw
@@ -7298,7 +7326,32 @@ ServerEvents.recipes((event) => {
 			I: 'iron_ingot',
 			L: 'heart_crystals:heart_crystal'
 		}
-	).id('adj:band_of_regeneration')
+	).id('adj:band_of_regeneration');
+
+	workshopRecipe([
+		'terra_curio:band_of_regeneration',
+		'2x mythicmetals:runite_ingot',
+	], 'kubejs:band_of_starpower');
+
+	workshopRecipe([
+		'terra_curio:band_of_regeneration',
+		'kubejs:band_of_starpower',
+	], 'kubejs:band_of_mana_regeneration');
+
+	workshopRecipe([
+		'kubejs:band_of_mana_regeneration',
+		'terra_curio:shackle',
+	], 'kubejs:mana_cuffs');
+
+	workshopRecipe([
+		'terra_curio:celestial_stone',
+		'kubejs:moon_shell',
+	], 'kubejs:celestial_shell');
+
+	workshopRecipe([
+		'kubejs:neptunes_shell',
+		'kubejs:moon_charm',
+	], 'kubejs:moon_shell');
 
 	event.shaped(
 		'terra_curio:obsidian_skull',
@@ -8651,5 +8704,5 @@ ServerEvents.recipes((event) => {
 			'glass_bottle',
 			'glass_bottle',
 		]
-	).id('adj:lumisene_bucket')
+	).id('adj:lumisene_bucket');
 });

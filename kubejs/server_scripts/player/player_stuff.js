@@ -1,15 +1,10 @@
-const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier')
-const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
+const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier');
+const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation');
 const $Integer = Java.loadClass('java.lang.Integer');
+const $Mob = Java.loadClass('net.minecraft.world.entity.Mob');
 
 PlayerEvents.tick(event => {
 	const player = event.player;
-
-	const MiningSpeedUUID = '923052c1-2354-48ba-b01a-51e31360e218';
-	const FlyingUUID = '923052c1-2354-48ba-b01a-51e31360e219';
-	const SpellBookManaUUID = 'b790c0a0-0934-41e2-a2f4-d59b6671db5b';
-	const ExtraFortuneUUID = '766a19b7-a084-4797-af71-409699208487';
-	const WillOfDharockUUID = 'c17e38c0-78aa-422d-8e41-4243bc5a153f';
 
 	// Bits of code that depend on players having something in their inventories
 	const inventory = player.getInventory().getAllItems();
@@ -30,22 +25,19 @@ PlayerEvents.tick(event => {
 				if (spellBookTier < 2) spellBookTier = 2;
 				break;
 			}
+			case 'ars_nouveau:creative_spell_book':
 			case 'ars_nouveau:archmage_spell_book': {
 				if (spellBookTier < 3) spellBookTier = 3;
 				break;
 			}
-			case 'ars_nouveau:creative_spell_book': {
-				if (spellBookTier < 3) spellBookTier = 3;
-				break;
-			}
 		}
-	})
+	});
 
 	if (player.getMainHandItem().getId() === 'zenith:zenith') {
-		let nbt = player.getMainHandItem().nbt
+		let nbt = player.getMainHandItem().nbt;
 
 		if (nbt && !nbt.zenith_parts) {
-			let parts = []
+			let parts = [];
 
 			global.zenithSwords.forEach(part => {
 				if (!Item.exists(part.item)) return;
@@ -56,19 +48,36 @@ PlayerEvents.tick(event => {
 					rotation: part.rotation,
 					scale: part.scale,
 					trail_width: part.trail_width
-				})
-			})
+				});
+			});
 
-			nbt.zenith_parts = parts
+			nbt.zenith_parts = parts;
 		}
 	}
 
 	// Base attributes
-	const miningSpeedAttribute = player.getAttribute('attributeslib:mining_speed')
-	const mining_speed = miningSpeedAttribute.getModifier(MiningSpeedUUID);
-	if (!mining_speed) {
-		miningSpeedAttribute.addPermanentModifier(new $AttributeModifier(MiningSpeedUUID, 'Mining speed bonus', 0.15, $Operation.ADDITION))
+	// I hope this works. If not, then I roll back
+	/**
+	 * @param {Internal.Attribute_} attribute 
+	 * @param {string} modifierUUID 
+	 * @param {string} name
+	 * @param {number} baseValue
+	 * @param {Internal.AttributeModifier$Operation_} operation 
+	 */
+	function addBaseAttribtue(attribute, modifierUUID, name, baseValue, operation) {
+		let att = player.getAttribute(attribute);
+		let attModifier = att.getModifier(modifierUUID);
+		if (!attModifier) {
+			att.addPermanentModifier(new $AttributeModifier(modifierUUID, name, baseValue, operation));
+		}
 	}
+
+	addBaseAttribtue('attributeslib:mining_speed', '923052c1-2354-48ba-b01a-51e31360e218', 'Base mining speed bonus', 0.15, 'addition');
+	addBaseAttribtue('adjcore:player.extra_fortune_level', '766a19b7-a084-4797-af71-409699208487', 'More ore drops by default', 1, 'addition');
+
+	const FlyingUUID = '923052c1-2354-48ba-b01a-51e31360e219';
+	const SpellBookManaUUID = 'b790c0a0-0934-41e2-a2f4-d59b6671db5b';
+	const WillOfDharockUUID = 'c17e38c0-78aa-422d-8e41-4243bc5a153f';
 
 	player.getAttribute('attributeslib:crit_chance').setBaseValue(0.0);
 	player.getAttribute('generic.attack_speed').setBaseValue(2.0);
@@ -89,22 +98,16 @@ PlayerEvents.tick(event => {
 		let amount = 0;
 		switch (spellBookTier) {
 			case 2:
-				amount = 25;
+				amount = 20;
 				break;
 			case 3:
-				amount = 50;
+				amount = 40;
 				break;
 		}
 		maxManaAttribute.addPermanentModifier(new $AttributeModifier(SpellBookManaUUID, 'Spell Book Max Mana', amount, $Operation.ADDITION))
 	}
 	else if (spellBookMana && spellBookTier == 0) {
 		maxManaAttribute.removeModifier(SpellBookManaUUID);
-	}
-
-	const extraFortuneAttribute = player.getAttribute('adjcore:player.extra_fortune_level');
-	const extraFortune = extraFortuneAttribute.getModifier(ExtraFortuneUUID);
-	if (!extraFortune) {
-		extraFortuneAttribute.addPermanentModifier(new $AttributeModifier(ExtraFortuneUUID, 'More Ore drops by default', 1, $Operation.ADDITION))
 	}
 
 	const helmet = player.getHeadArmorItem();
@@ -118,14 +121,32 @@ PlayerEvents.tick(event => {
 		}
 	}
 	critDamageAttr.removeModifier(WillOfDharockUUID)
-	critDamageAttr.addTransientModifier(new $AttributeModifier(WillOfDharockUUID, 'Will of Dharock', willOfDharockAmount, $Operation.ADDITION))
+	critDamageAttr.addTransientModifier(new $AttributeModifier(WillOfDharockUUID, 'Will of Dharock', willOfDharockAmount, $Operation.ADDITION));
 
+	// Global damage attribute
+	// Here read: something that increases all damage dealt
+	const damageDealtAttr = player.getAttribute('kubejs:damage_dealt');
+	const d = damageDealtAttr.getValue();
+
+	/**
+	 * @param {Internal.Attribute_} attribute 
+	 * @param {boolean} convertFromDecimal 
+	 * @param {Internal.AttributeModifier$Operation_} operation 
+	 */
+	function applyBonusToAttribute(attribute, convertFromDecimal, operation) {
+		let uuid = 'd8e20186-7fec-4c85-b538-ff8ccde850d4';
+		let damageAttr = player.getAttribute(attribute);
+		damageAttr.removeModifier(uuid);
+		let am = (convertFromDecimal) ? (d * 100) - 100 : d - 1.0;
+		damageAttr.addTransientModifier(new $AttributeModifier(uuid, 'Damage Dealt Attribute', am, operation));
+	}
+
+	applyBonusToAttribute('generic.attack_damage', false, 'multiply_base');
+	applyBonusToAttribute('attributeslib:arrow_damage', false, 'addition');
+	applyBonusToAttribute('ars_nouveau:ars_nouveau.perk.spell_damage', true, 'addition');
+
+	// Stuff reliant on persistent data
 	const pData = player.getPersistentData();
-
-	// if (player.getServer().isHardcore() && !persistentData.gaveRing) {
-	// 	persistentData.putBoolean('gaveRing', true)
-	// 	player.give('enigmaticlegacy:cursed_ring')
-	// }
 
 	if (pData.elsa_crossbow_tickdown && pData.elsa_crossbow_tickdown > 0) {
 		pData.elsa_crossbow_tickdown--;
@@ -147,6 +168,46 @@ PlayerEvents.tick(event => {
 			player.offhandItem.setNbt(nbt);
 		}
 	}
+
+	// Overfed effect
+	if (player.getSaturation() > 20) {
+		player.addEffect(new $MobEffectInstance('kubejs:overfed', 3, 0, true, false, true));
+	}
+
+	if (player.isAlive()) {
+		if (player.isCuriosEquipped('kubejs:pocketful_of_sunshine')) {
+			if (!pData.pocketfulOfSunshineTimer && pData.pocketfulOfSunshineTimer != 0) {
+				pData.pocketfulOfSunshineTimer = -1;
+			}
+			pData.pocketfulOfSunshineTimer++;
+			if (pData.pocketfulOfSunshineTimer >= 100) {
+				pData.pocketfulOfSunshineTimer = -1
+				if (player.getAbsorptionAmount() < 50) {
+					player.setAbsorptionAmount(player.getAbsorptionAmount() + 1);
+				}
+			}
+		}
+
+		// Neptune Shell and Moon Charm
+		let isMerfolkActive = false;
+		if ((
+			player.isCuriosEquipped('kubejs:neptunes_shell')
+			|| player.isCuriosEquipped('kubejs:moon_shell')
+			|| player.isCuriosEquipped('kubejs:celestial_shell')
+		) && player.isInWaterOrBubble()) {
+			isMerfolkActive = true;
+			player.addEffect(new $MobEffectInstance('kubejs:merfolk_form', 3, 0, true, false, true));
+
+		}
+
+		if ((
+			player.isCuriosEquipped('kubejs:moon_charm')
+			|| player.isCuriosEquipped('kubejs:moon_shell')
+			|| player.isCuriosEquipped('kubejs:celestial_shell')
+		) && player.getLevel().isNight() && !isMerfolkActive) {
+			player.addEffect(new $MobEffectInstance('kubejs:werewolf_form', 3, 0, true, false, true));
+		}
+	}	
 });
 
 ADJServerEvents.adjHurt(event => {
@@ -163,7 +224,7 @@ ADJServerEvents.adjHurt(event => {
 			let item = player.getMainHandItem();
 			let id = item.getId();
 
-			if (id.includes('spear')) {
+			if (id.endsWith('_spear')) {
 				victim.addEffect(new $MobEffectInstance('kubejs:pierced', 7 * 20, 0, true, false, true))
 			}
 
@@ -253,19 +314,45 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 				break;
 			}
 			case 'mcdw:sword_heartstealer': {
-				attacker.heal(event.getAmount() * 0.045);
+				attacker.heal(event.getAmount() * 0.06);
 				break;
 			}
 			case 'mcdw:scythe_frost_scythe':
 			case 'mcdw:dagger_fangs_of_frost': {
-				victim.setTicksFrozen(victim.getTicksFrozen() + 30)
+				victim.setTicksFrozen(victim.getTicksFrozen() + 30);
+				break;
+			}
+			case 'mcdw:dagger_backstabber':
+			case 'mcdw:dagger_swift_striker': {
+				if (victim instanceof $Mob && victim.getTarget() != attacker) {
+					event.setAmount(event.getAmount() * 1.5);
+					level.playSound(null, new Vec3d(victim.x, victim.y + victim.getEyeHeight(), victim.z), 'block.anvil.place', 'neutral', 1, Math.random() * 0.25 + 0.9);
+				}
+				break;
+			}
+			case 'twilightforest:fiery_sword': {
+				if (attacker.persistentData.fierySwordCanExplode) {
+					level.spawnParticles(
+						'amendments:fireball_explosion',
+						true,
+						victim.x, victim.y + victim.getEyeHeight(), victim.z,
+						0, 0, 0,
+						1, 0
+					);
+					level.playSound(null, new Vec3d(victim.x, victim.y + victim.getEyeHeight(), victim.z), 'entity.generic.explode', 'players');
+					global.getEntitiesInRadius(level, x, y, z, 1.75).forEach(/** @param {Internal.Entity_} e*/ e => {
+						e.attack(global.getDamageSource(level, 'minecraft:player_explosion', null, player), 12);
+						e.setSecondsOnFire(4);
+					});
+					player.persistentData.fierySwordCanExplode = false;
+				}
 				break;
 			}
 		}
 
 		// Stuff that depends on persistent data
 		if (data.voidStrike) {
-			event.setAmount(event.getAmount() * (data.voidStrike.mul + 100) / 100)
+			event.setAmount(event.getAmount() * (data.voidStrike.mul + 100) / 100);
 			level.playSound(null, new Vec3d(victim.x, victim.y + victim.getEyeHeight(), victim.z), 'adj:enchantment.void_strike.deactivate', 'neutral');
 			data.remove('voidStrike');
 		}
@@ -323,6 +410,17 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 			}
 		}
 	}
+	// Separate section to check for non-player-immediate damage
+	if (attacker && attacker instanceof $Player) {
+		// Accessories
+		let type = event.getSource().getType();
+		if (attacker.isCuriosEquipped('kubejs:withering_necklace') && type !== 'minecraft.wither') {
+			victim.addEffect(new $MobEffectInstance('wither', 10 * 20, 1));
+		}
+		if (attacker.isCuriosEquipped('kubejs:ring_of_fire') && victim.isOnFire()) {
+			event.setAmount(event.getAmount() + 5);
+		}
+	}
 
 	// Players getting hurt
 	// Note to self: no need to check if not null cause there is always a damage target
@@ -348,8 +446,29 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 				}
 			}
 		}
+
+		// Accessories
+		if (victim.isCuriosEquipped('kubejs:wither_rose_ring')) {
+			attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 0.6);
+			attacker.addEffect(new $MobEffectInstance('wither', 4 * 20, 1));
+		}
+		else if (victim.isCuriosEquipped('kubejs:rose_ring')) {
+			attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 0.35);
+		}
+
+		if (victim.isCuriosEquipped('kubejs:mana_cuffs')) {
+			victim.adjcore$restoreMana(event.getAmount());
+		}
 	}
-})
+
+	if (event.getSource().getType() === 'wither') {
+		global.getEntitiesInRadius(victim.level, victim.x, victim.y, victim.z, 32).forEach(entity => {
+			if (entity instanceof $Player && entity.isCuriosEquipped('kubejs:withering_necklace')) {
+				entity.heal(Math.ceil(event.getAmount() * 0.33));
+			}
+		})
+	}
+});
 
 EntityEvents.death(event => {
 	const player = event.getSource().getActual();
@@ -360,23 +479,46 @@ EntityEvents.death(event => {
 		let victim = event.getEntity();
 		let level = victim.getLevel();
 
+		function dropItem(item, min, max, atEntity, sound, volume, pitch, particle, delta) {
+			if (Math.random() <= 0.05) {
+				const amount = global.getRandomInt(min, max);
+				const entity = level.createEntity('minecraft:item');
+				entity.setPos(new Vec3d(atEntity.x, atEntity.y, atEntity.z));
+				entity.setItem(Item.of(item, amount));
+				entity.setPickUpDelay(15);
+				entity.setMotionX((Math.random() - 0.5) * 0.3);
+				entity.setMotionY(Math.random() * 0. + 0.1);
+				entity.setMotionZ((Math.random() - 0.5) * 0.3);
+				entity.spawn();
+				if (sound) {
+					let v = (volume) ? volume : 0.75;
+					let p = (pitch) ? pitch : 1.0;
+					level.playSound(null, atEntity.x, atEntity.y, atEntity.z, sound, 'neutral', volume, pitch);
+				}
+				if (particle) {
+					let d = (delta) ? delta : 0.33;
+					level.spawnParticles(particle, false, victim.x, victim.y, victim.z, d, d, d, Math.ceil(amount * 2.5), 0)
+				}
+			}
+		}
+
+		switch (id) {
+			case 'mcdw:sickle_last_laught_silver':
+			case 'mcdw:sickle_last_laught_gold': {
+				if (Math.random() <= 0.2) {
+					dropItem('emerald', 1, 3, victim, 'adj:item.last_laugh.drop_loot', 'neutral', 0.75, 1.0, 'happy_villager');
+				}
+				break;
+			}
+		}
+
 		let enchantments = item.getEnchantments();
 		for (const enchId of Object.keys(enchantments)) {
 			let enchLevel = enchantments.get(enchId);
 			switch (enchId) {
 				case 'kubejs:prospector': {
 					if (Math.random() <= 0.05) {
-						const amount = global.getRandomInt(1, 1 + enchLevel);
-						const entity = level.createEntity('minecraft:item');
-						entity.setPos(new Vec3d(victim.x, victim.y, victim.z));
-						entity.setItem(Item.of('minecraft:emerald', amount));
-						entity.setPickUpDelay(15);
-						entity.setMotionX((Math.random() - 0.5) * 0.3);
-						entity.setMotionY(Math.random() * 0. + 0.1);
-						entity.setMotionZ((Math.random() - 0.5) * 0.3);
-						entity.spawn();
-						level.playSound(null, victim.x, victim.y, victim.z, 'adj:item.last_laugh.drop_loot', 'neutral', 0.75, 1.0);
-						level.spawnParticles('happy_villager', false, victim.x, victim.y, victim.z, 0.33, 0.33, 0.33, Math.ceil(amount * 2.5), 0)
+						dropItem('emerald', 1, 1 + level, victim, 'adj:item.last_laugh.drop_loot', 'neutral', 0.75, 1.0, 'happy_villager');
 					}
 					break;
 				}
@@ -403,8 +545,20 @@ EntityEvents.death(event => {
 				}
 			}
 		}
+
+		// Accessories
+		if (player.isCuriosEquipped('kubejs:kiketsu_card')) {
+			if (Math.random() <= 0.12) {
+				dropItem(weightedRandom({
+					'gold_nugget': 100,
+					'iron_nugget': 170,
+					'mythicmetals:copper_nugget': 300,
+					'mythicmetals:tin_nugget': 125,
+				}), 1, 2, victim, 'adj:item.last_laugh.drop_loot', 'neutral', 0.75, 1.0, 'happy_villager');
+			}
+		}
 	}
-})
+});
 
 // BetterCombat stuff
 // Terra Blade slashes, Zenith sounds
@@ -433,5 +587,21 @@ NetworkEvents.dataReceived('player_attack_start', event => {
 			level.playSound(null, player.x, player.y + player.getEyeHeight(), player.z, 'adj:item.zenith.swing', 'players', 1.0, 1);
 			break;
 		}
+		case 'twilightforest:fiery_sword': {
+			if (!player.persistentData.fierySwordCanExplode) {
+				player.persistentData.fierySwordCanExplode = true;
+			}
+		}
 	}
 });
+
+// NetworkEvents.dataReceived('player_attack_hit', event => {
+// 	let server = event.getServer();
+// 	let player = event.getPlayer();
+// 	let level = player.getLevel();
+// 	let data = event.getData();
+
+// 	switch (data.weapon) {
+		
+// 	}
+// });

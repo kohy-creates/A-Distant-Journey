@@ -38,6 +38,7 @@ if (Platform.isClientEnvironment()) {
 			if (!player) return;
 			const id = player.getMainHandItem().getId();
 			switch (id) {
+				case 'twilightforest:fiery_sword':
 				case 'zenith:zenith':
 				case 'botania:terra_sword': {
 					player.sendData('player_attack_start', {
@@ -58,6 +59,15 @@ if (Platform.isClientEnvironment()) {
 	global.playerAttackHit = (player, attackHand, targets, cursorTarget) => {
 		(() => {
 			if (targets.isEmpty()) return;
+			const id = player.getMainHandItem().getId();
+			switch (id) {
+				case 'twilightforest:fiery_sword': {
+					player.sendData('player_attack_hit', {
+						weapon: id
+					});
+					break;
+				}
+			}
 		})();
 	};
 }

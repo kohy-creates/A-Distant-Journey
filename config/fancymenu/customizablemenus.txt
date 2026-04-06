@@ -89,3 +89,10 @@ com.tiviacz.travelersbackpack.client.screens.BackpackSettingsScreen {
 
 com.tiviacz.travelersbackpack.client.screens.BackpackScreen {
 }
+
+net.minecraft.client.gui.screens.ConfirmScreen {
+}
+
+net.minecraft.client.gui.screens.worldselection.EditWorldScreen {
+}
+

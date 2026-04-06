@@ -1,0 +1,5 @@
+^^^
+**Picture Mode**
+^^^
+------
+Allows you to take isometric screenshots of your builds. Pretty aesthetic if you ask me, but it's buggy at times ;)

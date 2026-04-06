@@ -13,7 +13,7 @@ const trophyConfig = {
     },
     disableTrophiesFor: [],
     noTrophyMessageFor: []
-}
+};
 
 EntityEvents.death(event => {
 
@@ -61,4 +61,4 @@ EntityEvents.death(event => {
             }
         }
     }
-})
+});

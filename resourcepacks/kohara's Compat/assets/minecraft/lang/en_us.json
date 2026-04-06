@@ -4,5 +4,19 @@
 	"gameMode.creative": "§dJourney",
 	"gameMode.hardcore": "§5Hardcore",
 	"gameMode.spectator": "§7Spectator",
-	"gameMode.survival": "§aCasual"
+	"gameMode.survival": "§aCasual",
+	
+	"attribute.name.generic.armor": "Defense",
+	"attribute.name.generic.armor_toughness": "Armor Toughness",
+	"attribute.name.generic.attack_damage": "Melee Damage",
+	"attribute.name.generic.attack_knockback": "Knockback",
+	"attribute.name.generic.attack_speed": "Melee Speed",
+	"attribute.name.generic.flying_speed": "Flying Speed",
+	"attribute.name.generic.follow_range": "Aggro Range",
+	"attribute.name.generic.knockback_resistance": "Knockback Resistance",
+	"attribute.name.generic.luck": "Luck",
+	"attribute.name.generic.max_health": "Max Health",
+	"attribute.name.generic.movement_speed": "Movement Speed",
+	"attribute.name.horse.jump_strength": "Horse Jump Strength",
+	"attribute.name.zombie.spawn_reinforcements": "Zombie Reinforcements"
 }

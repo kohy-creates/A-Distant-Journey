@@ -1,0 +1,2 @@
+&bWorld &bborder&r starts &32 &3500 &3blocks&r away in any direction from the center of the world. 
+%#FF0000%*SOME STRUCTURES MIGHT BE MISSING!*%#%

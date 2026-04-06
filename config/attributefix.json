@@ -429,6 +429,17 @@
         "value": 10
       }
     },
+    "kubejs:damage_dealt": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "minecraft:generic.flying_speed": {
       "enabled": true,
       "min": {

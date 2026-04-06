@@ -103,7 +103,7 @@ const tiers = {
 	},
 	'midas_gold': {
 		uses: 300,
-		speed: 13.0,
+		speed: 8.0,
 		attackDamageBonus: 3.0,
 		level: 3,
 		enchantmentValue: 30,
@@ -122,7 +122,7 @@ const tiers = {
 		speed: 21,
 		attackDamageBonus: 3.0,
 		level: 4,
-		enchantmentValue: 20,
+		enchantmentValue: 25,
 		repairIngredient: '#c:mythril_ingots'
 	},
 	'orichalcum': {
@@ -213,7 +213,7 @@ const tiers = {
 		enchantmentValue: 15,
 		repairIngredient: 'diamond',
 	}
-}
+};
 
 const blockTags = [
 	'minecraft:needs_stone_tool',
@@ -222,40 +222,14 @@ const blockTags = [
 	'forge:needs_netherite_tool',
 	'adjcore:needs_tier_5_tool',
 	'adjcore:needs_tier_6_tool',
-]
-
-function tierBelow(number) {
-	switch (number) {
-		case 0:
-			return [$Tiers.WOOD];
-		case 1:
-			return [$Tiers.STONE];
-		case 2:
-			return [$Tiers.IRON];
-		case 3:
-			return [$Tiers.DIAMOND];
-		default:
-			return [$Tiers.NETHERITE];
-	}
-}
-
-
-function tierAbove(number) {
-	switch (number) {
-		case 0:
-			return [$Tiers.WOOD];
-		case 1:
-			return [$Tiers.STONE];
-		case 2:
-			return [$Tiers.IRON];
-		case 3:
-			return [$Tiers.DIAMOND];
-		default:
-			return [$Tiers.NETHERITE]
-	}
-}
+];
 
 StartupEvents.init(event => {
+	function tierBelow(number) {
+		let tiers = [$Tiers.WOOD, $Tiers.STONE, $Tiers.IRON, $Tiers.DIAMOND, $Tiers.NETHERITE];
+		return [tiers[(number > 4) ? 4 : number]];
+	};
+
 	for (const key in tiers) {
 		let tier = tiers[key];
 		let forgeTier = new $ForgeTier(
@@ -266,10 +240,10 @@ StartupEvents.init(event => {
 			tier.enchantmentValue,
 			$BlockTags.create($ResourceLocation.parse("adj:needs_" + key + "_tool")),
 			() => Ingredient.of(tier.repairIngredient)
-		)
+		);
 		$TierSortingRegistry.registerTier(forgeTier, $ResourceLocation.parse('adj:' + key), tierBelow(tier.level), []);
 	}
-})
+});
 
 ItemEvents.modification(event => {
 	const toolset = [
@@ -278,14 +252,14 @@ ItemEvents.modification(event => {
 		'_axe',
 		'_shovel',
 		'_hoe',
-	]
+	];
 	function modifyTier(itemCat, tier) {
 		toolset.forEach(tool => {
 			const itemId = itemCat + tool;
 			event.modify(itemId, item => {
 				item.tier = $TierSortingRegistry.byName($ResourceLocation.parse('adj:' + tier));
-			})
-		})
+			});
+		});
 	}
 	modifyTier('mythicmetals:adamantite', 'adamantite');
 	modifyTier('mythicmetals:mythril', 'mythril');
@@ -304,65 +278,49 @@ ItemEvents.modification(event => {
 	modifyTier('mythicmetals:celestium', 'celestium');
 	modifyTier('minecraft:diamond', 'diamond');
 
-	// event.modify('mythicmetals:orichalcum_hammer', item => {
-	// 	item.tier = $TierSortingRegistry.byName('adj:orichalcum');
-	// })
-
 	event.modify('mythicmetals:mythril_drill', item => {
 		item.tier = $TierSortingRegistry.byName('adj:mythril_drill');
-	})
-
-})
+	});
+});
 
 StartupEvents.postInit(event => {
-	let $HarvestToolProvider = Java.loadClass("snownee.jade.addon.harvest.HarvestToolProvider")
-	let $SimpleToolHandler = Java.loadClass("snownee.jade.addon.harvest.SimpleToolHandler")
+	let $HarvestToolProvider = Java.loadClass("snownee.jade.addon.harvest.HarvestToolProvider");
+	let $SimpleToolHandler = Java.loadClass("snownee.jade.addon.harvest.SimpleToolHandler");
+
+	function displayTools(type) {
+		return [
+			// The icons on tooltip will be tested in this order
+			`wooden_${type}`,
+			`mythicmetals:copper_${type}`,
+			`iron_${type}`,
+			`diamond_${type}`,
+			`mythicmetals:adamantite_${type}`,
+			`majruszsdifficulty:enderium_${type}`,
+			`mythicmetals:metallurgium_${type}`
+		];
+	}
+
 	$HarvestToolProvider.registerHandler(
 		new $SimpleToolHandler(
 			"pickaxe",
 			$BlockTags.MINEABLE_WITH_PICKAXE,
-			// The icons on tooltip will be tested in this order
-			[
-				"wooden_pickaxe",
-				"mythicmetals:copper_pickaxe",
-				"iron_pickaxe",
-				"diamond_pickaxe",
-				"mythicmetals:adamantite_pickaxe",
-				"majruszsdifficulty:enderium_pickaxe",
-				"mythicmetals:metallurgium_pickaxe"
-			]
+			displayTools('pickaxe')
 		)
-	)
+	);
 
 	$HarvestToolProvider.registerHandler(
 		new $SimpleToolHandler(
 			"axe",
 			$BlockTags.MINEABLE_WITH_AXE,
-			[
-				"wooden_axe",
-				"mythicmetals:copper_axe",
-				"iron_axe",
-				"diamond_axe",
-				"netherite_axe",
-				"majruszsdifficulty:enderium_axe",
-				"mythicmetals:metallurgium_axe"
-			]
+			displayTools('axe')
 		)
-	)
+	);
 
 	$HarvestToolProvider.registerHandler(
 		new $SimpleToolHandler(
 			"shovel",
 			$BlockTags.MINEABLE_WITH_SHOVEL,
-			[
-				"wooden_shovel",
-				"mythicmetals:copper_shovel",
-				"iron_shovel",
-				"diamond_shovel",
-				"netherite_shovel",
-				"majruszsdifficulty:enderium_shovel",
-				"mythicmetals:metallurgium_shovel"
-			]
+			displayTools('shovel')
 		)
-	)
-})
+	);
+});

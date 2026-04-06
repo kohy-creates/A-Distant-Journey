@@ -1,0 +1,2 @@
+&bWorld &bborder&r starts &330 &3million &3blocks&r away in any direction from the center of the world. 
+%#888888%*Regular, infinite world. No catch here.*%#%
