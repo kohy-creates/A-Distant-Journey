@@ -121,7 +121,7 @@ const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 			}
 
 			offer.setVillagerExperience(
-					
+				(output.getId().includes('emerald')) ? 4 : 6
 			);
 		});
 	});
