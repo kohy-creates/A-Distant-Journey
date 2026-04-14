@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#454744",
+		"accent": "#464845",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.evoker",
-				"color": "#454744"
+				"color": "#464845"
 			}
 		]
 	}

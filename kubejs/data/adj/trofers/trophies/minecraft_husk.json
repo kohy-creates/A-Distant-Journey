@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#726345",
+		"accent": "#796a4a",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.husk",
-				"color": "#726345"
+				"color": "#796a4a"
 			}
 		]
 	}

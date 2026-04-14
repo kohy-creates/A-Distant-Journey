@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#e2e2e2",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "dried_ghast:happy_ghast"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.dried_ghast.happy_ghast",
+				"color": "#e2e2e2"
+			}
+		]
+	}
+}

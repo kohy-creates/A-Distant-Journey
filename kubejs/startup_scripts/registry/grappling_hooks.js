@@ -66,8 +66,9 @@ StartupEvents.registry('item', registry => {
 	createGrapplingHook('silk', 'Silk Hook', 8, 10, 9, null, false, true);
 	createGrapplingHook('grappling', 'Grappling Hook', 1, 13, 12);
 	createGrapplingHook('amethyst', 'Amethyst Hook', 1, 11.5, 10);
-	createGrapplingHook('ivy', 'Ivy Whip', 3, 18, 13, null, false, true);
+	createGrapplingHook('ivy', 'Ivy Whip', 3, 16, 13, null, false, true);
 	createGrapplingHook('slime', 'Slime Hook', 3, 13, 13, null, false, true);
+	createGrapplingHook('candy_cane', 'Candy Cane Hook', 1, 18, 18, null, false, true);
 	// Chapter 1
 	createGrapplingHook('steeleaf', 'Steeleaf Hook', 3, 20, 17);
 	createGrapplingHook('orichalcum', 'Orichalcum Hook', 2, 17, 14, defaultPullSpeed * 1.3, null, false, true);

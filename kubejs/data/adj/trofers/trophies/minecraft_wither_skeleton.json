@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#2e2f2f",
+		"accent": "#252626",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.wither_skeleton",
-				"color": "#2e2f2f"
+				"color": "#252626"
 			}
 		]
 	}

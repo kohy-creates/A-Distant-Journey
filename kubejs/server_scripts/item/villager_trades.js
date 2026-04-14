@@ -70,7 +70,7 @@ const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 	];
 
 	MoreJSEvents.villagerTrades(event => {
-		global.blacklistedItems.forEach(output => {
+		global.blacklistedItemsArray.forEach(output => {
 			if (global.isItemDisabled(output) && !replacementsList.includes(output)) {
 				event.removeTrades({
 					firstItem: /.*/,

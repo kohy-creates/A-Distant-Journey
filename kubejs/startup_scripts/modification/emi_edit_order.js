@@ -74,8 +74,7 @@ StartupEvents.postInit(event => {
 		'evilcraft:reinforced_undead'
 	]
 
-	Item.list.toArray().forEach(item => {
-		const id = item.id;
+	Item.getTypeList().forEach(id => {
 		if (id.includes('_planks') && !id.includes('_planks_') && !id.includes('vertical')) {
 			const type = id.replace('_planks', '');
 			if (!ignoredWoodTypes.includes(type)) {
@@ -512,17 +511,9 @@ StartupEvents.postInit(event => {
 		edit.added.push({ stack: stack(item), after: stack(after) });
 		// edit.filters.push(`/${item.replace('/', '\\/')}/`);
 	});
-	global.blacklistedItems.forEach(i => {
-		let pattern;
-		if (i instanceof RegExp) {
-			let p = i.source;
-			pattern = `/${p}/`;
-		}
-		else {
-			pattern = `${i}`
-		}
-		edit.filters.push(pattern);
-	})
+	global.blacklistedItemsArray.forEach(i => {
+		edit.filters.push(`/${i}/`);
+	});
 
 	// // Add enchantment books
 	/** @type {any} */

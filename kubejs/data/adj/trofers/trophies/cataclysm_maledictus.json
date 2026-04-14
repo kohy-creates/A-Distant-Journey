@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#2cb093",
+		"accent": "#876f53",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.cataclysm.maledictus",
-				"color": "#2cb093"
+				"color": "#876f53"
 			}
 		]
 	}

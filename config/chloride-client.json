@@ -10,7 +10,7 @@
   "fpsDisplayShadow": false,
   "fog": true,
   "blueBand": true,
-  "customFog": true,
+  "customFog": false,
   "fogStart": 0,
   "fogEnd": 192,
   "fogShape": "CYLINDER",

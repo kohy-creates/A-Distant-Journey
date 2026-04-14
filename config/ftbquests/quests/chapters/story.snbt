@@ -4288,6 +4288,26 @@
 			x: 18.0d
 			y: 39.5d
 		}
+		{
+			dependencies: ["41BD18823BE31271"]
+			icon: "create_cataclysm:cataclysmic_alloy"
+			id: "0E1167447AFB1F55"
+			shape: "pentagon"
+			tasks: [
+				{
+					id: "1EEF4410A7C3EDFB"
+					item: "create_cataclysm:cataclysmic_alloy"
+					type: "item"
+				}
+				{
+					id: "1011548C4196B78D"
+					item: "create_cataclysm:cataclysmic_sheet"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 24.0d
+		}
 	]
 	title: "Story"
 }

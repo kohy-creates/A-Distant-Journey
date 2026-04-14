@@ -112,7 +112,7 @@ global.stageRestrictions = {
 	},
 	'chapter_2': {
 		list: [
-			/palladium/,
+			/mythicmetals:palladium/,
 			/aether/,
 			/aether_redux/,
 			/lost_aether_content/,
@@ -270,6 +270,7 @@ global.stageRestrictions = {
 		],
 		light: [
 			/witherstormmod/,
+			/witherstorm_delight/,
 			'architects_palette:unobtanium_block'
 		],
 		exceptions: [

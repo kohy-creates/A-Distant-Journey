@@ -44,7 +44,7 @@ ServerEvents.tags('entity_type', tags => {
 		'alexsmobs:sand_shot',
 		'alexsmobs:shark_tooth_arrow',
 		'alexsmobs:tossed_item',
-		'galosphere:silver_bomb',
+		'galosphere:palladium_bomb',
 		'galosphere:glow_flare',
 		'galosphere:spectre_flare',
 		'supplementaries:bomb',

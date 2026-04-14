@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#938c85",
+		"accent": "#89827a",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.mutantmonsters.mutant_skeleton",
-				"color": "#938c85"
+				"color": "#89827a"
 			}
 		]
 	}

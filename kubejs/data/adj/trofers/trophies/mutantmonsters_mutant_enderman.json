@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#0b0b0b",
+		"accent": "#130e14",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.mutantmonsters.mutant_enderman",
-				"color": "#0b0b0b"
+				"color": "#130e14"
 			}
 		]
 	}

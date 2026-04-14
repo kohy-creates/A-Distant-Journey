@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#262526",
+		"accent": "#282728",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.ender_dragon",
-				"color": "#262526"
+				"color": "#282728"
 			}
 		]
 	}

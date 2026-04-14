@@ -177,9 +177,9 @@ element {
   [executable_action_instance:57af3282-b952-4d4c-83d7-86400956eb12-1755889636160][action_type:opengui] = pause_screen
   [executable_action_instance:1c50ff9d-ee37-4386-9661-dbf2b41c6001-1755890287293][action_type:openlink] = https://koharasbasement.wiki.gg/
   [executable_block:5d3dda89-fffc-43a1-92ab-c163fddc91d2-1755888947022][type:generic] = [executables:ea77dafb-2e90-45a6-9754-89826425b0cf-1755890282526;57af3282-b952-4d4c-83d7-86400956eb12-1755889636160;1c50ff9d-ee37-4386-9661-dbf2b41c6001-1755890287293;]
-  backgroundnormal = [source:local]/config/fancymenu/assets/icons/wiki_button.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/icons/wiki_button_hovered.png
-  background_texture_inactive = [source:local]/config/fancymenu/assets/icons/wiki_button_inactive.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/buttons/wiki/normal.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/buttons/wiki/hovered.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/buttons/wiki/inactive.png
   restartbackgroundanimations = true
   nine_slice_custom_background = true
   nine_slice_border_x = 5

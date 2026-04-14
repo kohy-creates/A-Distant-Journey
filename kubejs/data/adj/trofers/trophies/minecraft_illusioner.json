@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#365a76",
+		"accent": "#375a76",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.illusioner",
-				"color": "#365a76"
+				"color": "#375a76"
 			}
 		]
 	}

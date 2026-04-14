@@ -115,7 +115,7 @@ global.eyeEffects.verdancyTick = function (slotContext, stack) {
 global.eyeEffects.hedonismTick = function (slotContext, stack) {
 	const wearer = slotContext.getWearer();
 	if (wearer instanceof $Player) {
-		if (Math.random() <= 0.005) {
+		if (Math.random() <= 0.002) {
 			const hunger = wearer.getFoodLevel();
 			if (hunger >= 20) {
 				wearer.setSaturation(wearer.getSaturation() + 1)

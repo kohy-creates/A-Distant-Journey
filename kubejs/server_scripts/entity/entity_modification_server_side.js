@@ -102,7 +102,7 @@ function randomAmount(min, max) {
  * 
  * @param {Internal.Entity_} entity 
  */
-function specialCase(entity) {
+function specialCase(entity, currentStage) {
 	switch (entity.type) {
 		case 'born_in_chaos_v1:nightmare_stalker':
 			scaleEntity(entity, currentStage)
@@ -250,15 +250,15 @@ EntityEvents.spawned((event) => {
 		else return;
 	}
 
-	entity.server.scheduleInTicks(1, () => {
-		specialCase(entity)
-	})
-
 	if (!(entity instanceof $LivingEntity)) return
 
 	let isHardcore = event.server.worldData.isHardcore()
 	let chapters = event.server.persistentData.chapters || {}
 	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""))
+
+	entity.server.scheduleInTicks(1, () => {
+		specialCase(entity, currentStage)
+	});
 
 	scaleEntity(entity, currentStage)
 	setGear(entity, isHardcore, currentStage)

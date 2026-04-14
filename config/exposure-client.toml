@@ -135,8 +135,8 @@
 [tutorial]
 	#Toast that teaches hovering mouse over camera parts will be shown when attachments menu is first opened. Default: true.
 	#*This setting will be automatically set to false on first show.*
-	attachments_show_info_toast = true
+	attachments_show_info_toast = false
 	#Toast that teaches wiki opening will be shown when attachments menu is first opened, after info toast. Default: true.
 	#*This setting will be automatically set to false on first show.*
-	attachments_show_wiki_toast = true
+	attachments_show_wiki_toast = false
 

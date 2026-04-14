@@ -4,7 +4,7 @@
 	#To edit the damage numbers color you'll have to edit the config file manually
 	#How much the dummy swings in degrees with respect to the damage dealt. default=0.75
 	#Range: 0.0 ~ 2.0
-	animation_intensity = 0.75
+	animation_intensity = 0.2
 	#Show hearths instead of damage dealt? (1 hearth = two damage)
 	show_hearths = false
 	#Show damage numbers on entity
@@ -13,12 +13,12 @@
 	full_bright_damage_numbers = true
 	#How crits should be shown
 	#Allowed Values: OFF, COLOR, COLOR_AND_MULTIPLIER
-	crit_mode = "COLOR"
+	crit_mode = "OFF"
 	#Show hay particles when dealing damage
 	hay_particles = true
 	#Skin used by the dummy
 	#Allowed Values: DEFAULT, ORIGINAL, ALTERNATIVE, DUNGEONS
-	texture = "DUNGEONS"
+	texture = "DEFAULT"
 
 	#Add here custom colors (in hex format) to associate with your damage types. This is a map from damage source ID to a color where you can add new entries for each
 	[visuals.damage_type_colors]

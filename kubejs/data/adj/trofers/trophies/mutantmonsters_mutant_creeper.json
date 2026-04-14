@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#55bc36",
+		"accent": "#65b558",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.mutantmonsters.mutant_creeper",
-				"color": "#55bc36"
+				"color": "#65b558"
 			}
 		]
 	}

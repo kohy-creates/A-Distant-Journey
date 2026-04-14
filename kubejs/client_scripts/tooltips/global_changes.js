@@ -433,63 +433,7 @@ ItemEvents.tooltip(event => {
 			text.add(1, potionLine);
 			text.add(2, '');
 		}
-	})
-
-	event.addAdvanced(global.blacklistedItems, (item, advanced, text) => {
-		text.clear()
-		text.add(0, Text.of('Removed item').darkGray())
-		text.add(1, Text.of('This item is unobtainable in this modpack').darkGray())
-		if (advanced) text.add(2, Text.of(item.getId()).darkGray().italic())
-	})
-
-	//priority: -9900
-	event.addAdvancedToAll((item, advanced, text) => {
-		const original = text.toArray();
-		let chapters = [],
-			exceptions = [];
-		item.getTags().toArray().forEach(tag => {
-			const str = tag.toString();
-			if (!str.includes('chapter_')) return;
-			const match = str.match(/adj:locked_until\/.*[^ ]*?(chapter_\w+)/);
-			if (str.includes('exceptions')) {
-				exceptions.push(match[1]);
-			}
-			else {
-				chapters.push(match[1]);
-			}
-		});
-
-		if (chapters.length == 0) return;
-
-		let
-			chapter = chapters.sort()[chapters.length - 1],
-			exception = exceptions.sort()[exceptions.length - 1];;
-
-		if ((!exception || chapter != exception) && !currentPlayer.stages.has(chapter)) {
-
-			let itemName = text.get(0);
-
-			text.clear()
-
-			text.add(0, itemName)
-			text.add(1, Text.darkGray(`Unlocked in `).append(Text.darkGray(`${global.toTitleCase(chapter.replace('_', ' '))}`).underlined()));
-			text.add(1, Text.darkGray('Unknown item!').bold())
-
-			if (advanced && currentPlayer.isCreative()) {
-				let lines = [];
-				for (let index = original.length - 1; index > 0; index--) {
-					let element = original[index];
-					if (element.toString().includes('color=dark_gray')) {
-						lines.push(element)
-					}
-					else break;
-				}
-				lines.forEach(t => {
-					text.add(3, t)
-				})
-			}
-		}
-	})
+	});
 
 	// Set bonus messages
 	event.addAdvanced(['#adj:reforges/armor'], (item, advanced, text) => {
@@ -1029,10 +973,6 @@ ItemEvents.tooltip(event => {
 		{ items: 'galosphere:warped_anchor', text: 'Requires Allurite Blocks as fuel' },
 		{ items: 'galosphere:combustion_table', text: 'Used to customize Silver Bombs' },
 		{ items: 'galosphere:stranded_membrane_block', text: 'Pushes items and entities in the direction its facing' },
-		{
-			items: 'galosphere:silver_balance',
-			text: 'Produces a redstone signal that gets stronger the harder the block placed directly on top of it is to break'
-		},
 
 		// Wither Storm Mod
 		{

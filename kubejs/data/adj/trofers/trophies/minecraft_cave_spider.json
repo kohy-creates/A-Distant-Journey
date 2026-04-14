@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#0d221f",
+		"accent": "#0e221f",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.cave_spider",
-				"color": "#0d221f"
+				"color": "#0e221f"
 			}
 		]
 	}

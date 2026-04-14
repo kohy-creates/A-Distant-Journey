@@ -5,7 +5,6 @@
 	"gameMode.hardcore": "§5Hardcore",
 	"gameMode.spectator": "§7Spectator",
 	"gameMode.survival": "§aCasual",
-	
 	"attribute.name.generic.armor": "Defense",
 	"attribute.name.generic.armor_toughness": "Armor Toughness",
 	"attribute.name.generic.attack_damage": "Melee Damage",
@@ -18,5 +17,11 @@
 	"attribute.name.generic.max_health": "Max Health",
 	"attribute.name.generic.movement_speed": "Movement Speed",
 	"attribute.name.horse.jump_strength": "Horse Jump Strength",
-	"attribute.name.zombie.spawn_reinforcements": "Zombie Reinforcements"
+	"attribute.name.zombie.spawn_reinforcements": "Zombie Reinforcements",
+	"event.minecraft.raid": "Illager Raid",
+	"entity.minecraft.wither": "Wither",
+	"entity.minecraft.ender_dragon": "Ender Dragon",
+	"event.minecraft.raid.raiders_remaining": "",
+	"event.minecraft.raid.victory": "Victory!",
+	"event.minecraft.raid.defeat": "Defeat..."
 }

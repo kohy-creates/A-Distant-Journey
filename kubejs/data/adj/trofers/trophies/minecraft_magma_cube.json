@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#4f1c07",
+		"accent": "#521c07",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.magma_cube",
-				"color": "#4f1c07"
+				"color": "#521c07"
 			}
 		]
 	}

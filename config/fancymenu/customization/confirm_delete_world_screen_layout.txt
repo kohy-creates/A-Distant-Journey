@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = confirm_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1775391834255
+  last_edited_time = 1775751508251
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:07fd6bdf-e60b-45fd-bbfe-68a2deb24bbd-1775391723592] = [groups:][instances:]
+  [loading_requirement_container_meta:5ac23397-8baf-4bf6-b643-0923c32ea865-1775751496383] = [groups:][instances:]
 }
 
 customization {
@@ -75,7 +75,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1200
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 345262
@@ -87,7 +87,8 @@ element {
   stretch_y = false
   stay_on_screen = true
   element_loading_requirement_container_identifier = 9c9a5f99-2ee8-453b-8905-770e6de2894a-1775391729068
-  [loading_requirement_container_meta:9c9a5f99-2ee8-453b-8905-770e6de2894a-1775391729068] = [groups:][instances:]
+  [loading_requirement_container_meta:9c9a5f99-2ee8-453b-8905-770e6de2894a-1775391729068] = [groups:][instances:d3970ce0-fc78-49f3-a899-652bc2726c50-1775751502245;]
+  [loading_requirement:fancymenu_loading_requirement_is_world_loaded][requirement_mode:if_not][req_id:d3970ce0-fc78-49f3-a899-652bc2726c50-1775751502245] = 
   enable_parallax = false
   parallax_intensity_v2 = 0.5
   invert_parallax = false
@@ -141,7 +142,7 @@ vanilla_button {
   sticky_anchor = false
   anchor_point = vanilla
   x = 325
-  y = 156
+  y = 162
   width = 150
   height = 20
   stretch_x = false
@@ -170,9 +171,9 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = a68beb3c-71df-4e51-9866-0beed996ca5f-1775391441729
   [executable_block:a68beb3c-71df-4e51-9866-0beed996ca5f-1775391441729][type:generic] = [executables:]
-  backgroundnormal = [source:local]/config/fancymenu/assets/icons/red_button.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/icons/red_button_hovered.png
-  background_texture_inactive = [source:local]/config/fancymenu/assets/icons/red_button_inactive.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/buttons/red/normal.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/buttons/red/hovered.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/buttons/red/inactive.png
   restartbackgroundanimations = true
   nine_slice_custom_background = true
   nine_slice_border_x = 5
@@ -207,7 +208,7 @@ vanilla_button {
   sticky_anchor = false
   anchor_point = vanilla
   x = 165
-  y = 156
+  y = 162
   width = 150
   height = 20
   stretch_x = false

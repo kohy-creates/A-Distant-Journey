@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#aaa699",
+		"accent": "#a8a7a7",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.skeleton",
-				"color": "#aaa699"
+				"color": "#a8a7a7"
 			}
 		]
 	}

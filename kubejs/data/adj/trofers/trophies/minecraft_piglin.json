@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#a76a4c",
+		"accent": "#a6694c",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.piglin",
-				"color": "#a76a4c"
+				"color": "#a6694c"
 			}
 		]
 	}

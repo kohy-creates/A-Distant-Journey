@@ -23,8 +23,8 @@ function darkenHex(hex, percent, noHash) {
 
 function createRarity(/** @type {string} */ name, /** @type {number} */ colorCode) {
 	let color = $UtilsJS.makeFunctionProxy("startup", $UnaryOperator, (style) => {
-		return withColorMethod.invoke(style, Color.of(colorCode).createTextColorJS())
-	})
+		return withColorMethod.invoke(style, Color.of(colorCode).createTextColorJS());
+	});
 
 	// ObscureTooltips integration
 	JsonIO.write(obscureTooltipsPath(`definition/${name}.json`), {
@@ -89,7 +89,7 @@ ItemEvents.modification(event => {
 	event.modify([
 		'terra_curio'
 	], item => {
-		item.rarity = 'common';
+		item.rarity = 'uncommon';
 	});
 
 	event.modify([
@@ -98,7 +98,7 @@ ItemEvents.modification(event => {
 		/zanite/,
 		/orichalcum/,
 		/mythril/,
-		/palladium/,
+		/mythicmetals:palladium/,
 		'ars_nouveau:novice_spell_book',
 		'ars_nouveau:apprentice_spell_book',
 		'ars_nouveau:archmage_spell_book',
@@ -213,8 +213,8 @@ ItemEvents.modification(event => {
 		}
 	}
 
-	Item.getList().forEach(item => {
-		const id = item.getId();
+	Item.getTypeList().forEach(id => {
+		const item = Item.of(id);
 
 		let itemRarity = item.getRarity().name().toLowerCase();
 		let foundMatch = false;
@@ -237,15 +237,21 @@ ItemEvents.modification(event => {
 
 	// Overrides
 	event.modify([
+		'sortilege:limitite'
+	], item => {
+		item.rarity = 'chapter_1_rare'
+	});
+
+	event.modify([
 		'quark:ancient_fruit'
 	], item => {
 		item.rarity = 'chapter_3_uncommon'
-	})
+	});
 
 	event.modify([
 		'structure_gel:building_tool',
 		/treasure_bag/
 	], item => {
 		item.rarity = 'chapter_6'
-	})
+	});
 });

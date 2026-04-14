@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#b0775e",
+		"accent": "#b3795e",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.hoglin",
-				"color": "#b0775e"
+				"color": "#b3795e"
 			}
 		]
 	}

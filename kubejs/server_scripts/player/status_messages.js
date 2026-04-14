@@ -6,28 +6,10 @@ function commandInWorld(world, command) {
 	return '/execute in ' + world + ' run ' + command.replace(/\//g, '');
 }
 
-const nightmareStalkerMsgs = [
-	"Something is following you...",
-	"You're not alone...  Stay alert...",
-	"A distant roar can be heard...",
-	"A nightmare has materialized nearby..."
-];
-
 EntityEvents.spawned(event => {
 	const entity = event.getEntity();
 	const server = event.getServer();
 
-	if (entity.getType() === 'born_in_chaos_v1:nightmare_stalker') {
-		if (event.success) {
-			const randomMsg = nightmareStalkerMsgs[Math.floor(Math.random() * nightmareStalkerMsgs.length)];
-			event.getServer().runCommandSilent(
-				commandAtEntity(entity, `/eta queue @a[distance=0..] status_messages "<dur:100><color col=c50000><fade in=10 out=10><typewriter speed=60><obfuscate mode=reveal speed=115 direction=random><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${randomMsg}"`)
-			);
-			event.getServer().runCommandSilent(
-				commandAtEntity(entity, '/playsound born_in_chaos_v1:stalker_roar_distant hostile @p[] ~ ~ ~ 0 0.5 0.2')
-			);
-		}
-	}
 	if (global.bossMobs.includes(entity.getType()) && !entity.tags.toArray().includes('adj.announced_spawn')) {
 		global.broadcast(server, global.announcementMsg(`${entity.getDisplayName().getString()} has awoken!`, global.messageColors.bossSpawned, true));
 		entity.addTag('adj.announced_spawn');

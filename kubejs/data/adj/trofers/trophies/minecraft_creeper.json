@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#69b260",
+		"accent": "#69b360",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.creeper",
-				"color": "#69b260"
+				"color": "#69b360"
 			}
 		]
 	}

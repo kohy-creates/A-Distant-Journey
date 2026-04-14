@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#869cb1",
+		"accent": "#859cb1",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.vex",
-				"color": "#869cb1"
+				"color": "#859cb1"
 			}
 		]
 	}

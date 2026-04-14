@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#a39f8f",
+		"accent": "#9a9480",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.elder_guardian",
-				"color": "#a39f8f"
+				"color": "#9a9480"
 			}
 		]
 	}

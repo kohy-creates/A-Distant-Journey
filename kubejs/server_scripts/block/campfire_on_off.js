@@ -58,6 +58,7 @@ BlockEvents.rightClicked(event => {
 // Candles are on by default
 BlockEvents.placed(/candle/, event => {
 	const block = event.getBlock();
+
 	const props = block.getProperties();
 	if (props.lit == 'true') return;
 	const newProps = {};
@@ -77,4 +78,43 @@ BlockEvents.placed(/candle/, event => {
 		newWickProps['lit'] = true;
 		up.set(up.id, newWickProps);
 	}
-})
+});
+
+BlockEvents.placed(/candle/, event => {
+	const block = event.getBlock();
+
+	const props = block.getProperties();
+	if (props.lit == 'true') return;
+	const newProps = {};
+	for (let key in props) {
+		newProps[key] = props[key];
+	}
+	newProps['lit'] = true;
+	block.set(block.id, newProps);
+	if (block.id.includes('super_candle')) {
+		const up = block.up;
+		if (up.id.includes('super_candle_wick'));
+		const propsWick = up.getProperties();
+		const newWickProps = {};
+		for (let keyWick in propsWick) {
+			newWickProps[keyWick] = propsWick[keyWick];
+		}
+		newWickProps['lit'] = true;
+		up.set(up.id, newWickProps);
+	}
+});
+
+BlockEvents.placed([
+	/furnace/,
+	'smoker'
+], event => {
+	let block = event.getBlock();
+
+	let props = block.getProperties();
+	let newProps = {};
+	newProps['lit'] = false;
+	for (let prop in props) {
+		newProps[prop] = props[prop];
+	}
+	block.set(block.id, newProps);
+});

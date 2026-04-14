@@ -41,8 +41,6 @@ StartupEvents.registry('fluid', event => {
 		'vinery:white_savanna_grapejuice': 0x668056,
 		'nethervinery:crimson_grapejuice': 0xBD0645,
 		'nethervinery:warped_grapejuice': 0x208B87,
-
-		'croptopia:apple_juice': 0xE0AB1F,
 	};
 
 	for (const [wine, color] of Object.entries(vineryWines)) {

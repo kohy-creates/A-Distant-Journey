@@ -60,6 +60,9 @@
     "show_tree_block_counts": false,
     "show_num_chops_remaining": true
   },
+  "unusual_delight": {
+    "tick_dino": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,

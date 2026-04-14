@@ -133,18 +133,6 @@
         "category": "Creative"
       }
     },
-    "4": {
-      "title": "Social Interactions (Multiplayer only)",
-      "icon": {
-        "stack": "{Count:1b,id:\"minecraft:player_head\"}"
-      },
-      "action": {
-        "key": {
-          "key": "key.socialInteractions",
-          "toggle": false
-        }
-      }
-    },
     "5": {
       "title": "Shaders",
       "icon": {
@@ -192,7 +180,7 @@
     "4": {
       "title": "Open Shader Selection",
       "icon": {
-        "stack": "{Count:1b,ForgeCaps:{Parent:{Items:[],Size:0}},id:\"unusualend:bolok_research_notes\"}"
+        "stack": "{Count:1b,id:\"minecraft:filled_map\"}"
       },
       "action": {
         "key": {

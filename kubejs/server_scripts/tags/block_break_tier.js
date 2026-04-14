@@ -13,7 +13,7 @@ ServerEvents.tags('block', tags => {
 		],
 		'minecraft:needs_diamond_tool': [
 			/end_stone/,
-			/palladium/,
+			/mythicmetals:palladium/,
 			/purpur/,
 			/orichalcum/,
 			/mythril/,

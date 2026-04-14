@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#4f4f4e",
+		"accent": "#4f4f4f",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.vindicator",
-				"color": "#4f4f4e"
+				"color": "#4f4f4f"
 			}
 		]
 	}

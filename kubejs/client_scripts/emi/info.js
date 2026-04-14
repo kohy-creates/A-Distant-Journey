@@ -75,9 +75,13 @@ JEIEvents.information(event => {
 		'Obtained by striking a Lumiere Block with lightning. Not very useful in its current state, but at least the animated texture looks cool.',
 	]);
 
-	addInfo(['galosphere:combustion_table', 'galosphere:silver_bomb'], [
+	addInfo(['galosphere:combustion_table', 'galosphere:palladium_bomb'], [
 		'Combustion Table can be used to customize Silver Bombs.',
 		'Gunpowder increases blast radius, Strings increase fuse duration, Slimeballs increase the bounciness of the bomb.'
+	]);
+
+	addInfo(['honeycomb_block', 'waxed:empty_honeycomb'], [
+		'Honeycomb Blocks can be emptied of their honey by right-clicking them with an Empty Bottle. Empty Honeycombs can be smelted into Wax Blocks. '
 	]);
 
 	addInfo('netherexp:warped_wart', [

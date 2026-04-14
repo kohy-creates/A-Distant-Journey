@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#e7e0e0",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "dried_ghast:ghastling"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.dried_ghast.ghastling",
+				"color": "#e7e0e0"
+			}
+		]
+	}
+}

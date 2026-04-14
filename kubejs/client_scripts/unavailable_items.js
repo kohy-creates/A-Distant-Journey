@@ -1,35 +1,82 @@
+const UnavailableItems = {
+	/** @type {Internal.Stages_} */
+	stages: null,
+	cache: {
+		ticker: 0,
+		interval: 5,
+		currentChapter: 0,
+		chapterCached: null,
+		bannedItems: new Set([typeof String]),
+		shouldHide: function (id) {
+			return this.bannedItems.has(String(id));
+		}
+	},
+};
+
+ClientEvents.tick(event => {
+	UnavailableItems.cache.ticker++;
+	if (UnavailableItems.cache.ticker == UnavailableItems.cache.interval) {
+		UnavailableItems.cache.ticker = 0;
+
+		let player = event.getPlayer();
+		UnavailableItems.stages = player.getStages();
+		let highestStage = 0;
+		UnavailableItems.stages.all.toArray().forEach(stage => {
+			if (!stage.includes('chapter_')) return;
+			const s = stage.slice(-1);
+			if (s > highestStage) highestStage = s;
+		});
+		UnavailableItems.cache.currentChapter = highestStage;
+
+		if (!UnavailableItems.cache.chapterCached || UnavailableItems.cache.chapterCached != UnavailableItems.cache.currentChapter) {
+			Utils.runAsync(() => {
+				console.log('Generating undiscovered item cache...', 'This is running async btw!')
+				UnavailableItems.cache.bannedItems = new Set([typeof String]);
+				Item.getTypeList().toArray().forEach(/** @param {Internal.Item} item*/ item => {
+					const tags = Item.of(item).getTags().toArray();
+
+					let maxChapter = null;
+					let maxException = null;
+
+					for (let tag of tags) {
+						let str = tag.toString();
+
+						if (!str.includes('chapter_')) continue;
+
+						let chapter = str.slice(-2, -1);
+
+						if (str.includes('exceptions') && (!maxException || chapter > maxException)) {
+							maxException = chapter;
+						}
+						else if (!maxChapter || chapter > maxChapter) {
+							maxChapter = chapter;
+						}
+					}
+
+					if (maxChapter && (!maxException || maxChapter != maxException) && UnavailableItems.cache.currentChapter < maxChapter) {
+						UnavailableItems.cache.bannedItems.add(String(item));
+					}
+				});
+				console.log(
+					`Finished generating undiscovered item cache for chapter ${UnavailableItems.cache.currentChapter}`,
+					`Cached list size: ${UnavailableItems.cache.bannedItems.size}`
+				);
+				UnavailableItems.cache.chapterCached = UnavailableItems.cache.currentChapter;
+			});
+		}
+	}
+});
+
 ADJClientEvents.itemIsLockedRenderCheck(event => {
 
-	const item = event.getItemStack();
-	const player = event.getPlayer();
+	const id = event.getItemStack().getItem().getId();
 
-	if (item.getId().includes('valkyrum')) {
-		if (!player.stages.has('valkyrum_unlocked')) {
-			event.cancel();
-		}
+	if (UnavailableItems.cache.shouldHide(id)) {
+		event.cancel();
+		return;
 	}
 
-	let chapters = [],
-		exceptions = [];
-	item.getTags().toArray().forEach(tag => {
-		const str = tag.toString();
-		if (!str.includes('chapter_')) return;
-		const match = str.match(/adj:locked_until\/.*[^ ]*?(chapter_\w+)/);
-		if (str.includes('exceptions')) {
-			exceptions.push(match[1]);
-		}
-		else {
-			chapters.push(match[1]);
-		}
-	});
-
-	if (chapters.length == 0) return;
-
-	let
-		chapter = chapters.sort()[chapters.length - 1],
-		exception = exceptions.sort()[exceptions.length - 1];;
-
-	if ((!exception || chapter != exception) && !player.getStages().has(chapter)) {
+	if (id.includes('valkyrum') && !UnavailableItems.stages.has('valkyrum_unlocked')) {
 		event.cancel();
 	}
-})
+});

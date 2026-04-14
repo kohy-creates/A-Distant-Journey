@@ -111,8 +111,10 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:mythril_helmet',
 		'mythicmetals:mythril_chestplate',
 		'mythicmetals:mythril_leggings',
-		'mythicmetals:mythril_boots'
-	].concat(global.blacklistedItems);
+		'mythicmetals:mythril_boots',
+		'create_cataclysm:cataclysmic_alloy',
+		'create:creative_blaze_cake'
+	].concat(global.blacklistedItemsArray);
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
 	});
@@ -283,13 +285,9 @@ ServerEvents.recipes((event) => {
 		/sortilege:.*_staff/,
 		'naturalist:teddy_bear',
 		'simplyswords:unique_melting',
-		'croptopia:toast_from_bread',
 		'neapolitan:banana/dried_banana',
 		'mynethersdelight:bread_from_smelting',
-		'croptopia:caramel_from_sugar',
 		'born_in_chaos_v1:fried_maggot_k',
-		'croptopia:raisins_from_grape',
-		'croptopia:popcorn_from_corn',
 		'neapolitan:vanilla/dried_vanilla_pods',
 		'miners_delight:smoked_bat_wing',
 		'create:smelting/bread',
@@ -303,14 +301,12 @@ ServerEvents.recipes((event) => {
 		'miners_delight:cutting/glow_squid',
 		'miners_delight:cutting/squid',
 		'miners_delight:cutting/baked_squid',
-		'croptopia:olive_oil',
-		'croptopia:soy_sauce',
 		/umbral_skies:.*gloves/,
 		/aether:.*gloves/,
 		'brewinandchewin:fermenting/egg_grog_from_milk',
 		'twilightdelight:cutting/phantom_chestplate',
 		'twilightdelight:cutting/phantom_helmet',
-		'create:crushing/nether_wart_block',
+		'create:crushing/nether_wart_block'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -353,7 +349,6 @@ ServerEvents.recipes((event) => {
 		input: {
 			'farmersdelight:wheat_dough': 'create:dough',
 			'#forge:dough/wheat': 'create:dough',
-			'croptopia:dough': 'create:dough',
 			'chest': '#forge:chests/wooden',
 			'shield': 'shieldexp:iron_shield',
 			'#c:ender_pearls': 'ender_pearl',
@@ -373,30 +368,20 @@ ServerEvents.recipes((event) => {
 			'alexscaves:banana': 'neapolitan:banana',
 			'neapolitan:milk_bottle': 'farmersdelight:milk_bottle',
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
-			'croptopia:cherry': 'vinery:cherry',
-			'croptopia:flour': 'create:wheat_flour',
 			'#forge:salts': 'galosphere:pink_salt_shard',
 			'#forge:milks': '#c:milk',
 			'#forge:milk_bottles': 'farmersdelight:milk_bottle',
 			'#forge:wines': 'vinery:red_wine',
 			'#botania:mana_diamond_gems': 'ars_nouveau:source_gem',
 			'#architects_palette:withered_bones': 'netherexp:fossil_fuel',
-			'#c:cinnamon': 'croptopia:cinnamon',
 			'twilightforest:fallen_leaves': '#leaves',
-			'croptopia:salt': 'galosphere:pink_salt_shard',
 			'morered:stone_plate': 'smooth_stone_slab',
 			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
-			'croptopia:chocolate': 'neapolitan:chocolate_bar',
 			'upgrade_aquatic:thrasher_tooth': 'alexsmobs:shark_tooth',
 			'botania:abtruse_platform': 'ars_nouveau:mirrorweave',
 			'botania:spectral_platform': 'ars_nouveau:falseweave',
 			'rubinated_nether:ruby': 'rediscovered:ruby',
 			'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
-			'miners_delight:tentacles': 'croptopia:calamari',
-			'delightful:roasted_acron': 'croptopia:roasted_nuts',
-			'croptopia:cooked_bacon': 'farmersdelight:cooked_bacon',
-			'croptopia:bacon': 'farmersdelight:bacon',
-			'croptopia:cheese': 'brewinandchewin:flaxen_cheese_wedge',
 			'twilightforest:raw_venison': 'naturalist:venison',
 			'twilightforest:cooked_venison': 'naturalist:cooked_venison',
 			'twilightforest:fiery_tears': 'twilightforest:fiery_blood',
@@ -415,8 +400,6 @@ ServerEvents.recipes((event) => {
 			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
 			'rubinated_nether:ruby': 'rediscovered:ruby',
 			'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
-			'miners_delight:tentacles': 'croptopia:calamari',
-			'miners_delight:baked_tentacles': 'croptopia:cooked_calamari',
 		}
 	};
 	for (const [input, replacement] of Object.entries(unificationMap.input)) {
@@ -441,88 +424,6 @@ ServerEvents.recipes((event) => {
 		'2x charcoal',
 		Item.of('charcoal').withChance(0.25)
 	], '#adj:scorched_logs', 120).id('adj:charcoal_from_milling');
-
-	event.custom({
-		"type": "farmersdelight:cutting",
-		"ingredients": [
-			{
-				"item": "miners_delight:glow_squid"
-			}
-		],
-		"result": [
-			{
-				"count": 3,
-				"item": "croptopia:glowing_calamari"
-			},
-			{
-				"chance": 0.5,
-				"item": "croptopia:glowing_calamari"
-			},
-			{
-				"item": "minecraft:glow_ink_sac"
-			},
-			{
-				"chance": 0.5,
-				"count": 2,
-				"item": "minecraft:glow_ink_sac"
-			}
-		],
-		"tool": {
-			"tag": "forge:tools/knives"
-		}
-	}).id('adj:cutting/glow_squid');
-
-	event.custom({
-		"type": "farmersdelight:cutting",
-		"ingredients": [
-			{
-				"item": "miners_delight:squid"
-			}
-		],
-		"result": [
-			{
-				"count": 3,
-				"item": "croptopia:calamari"
-			},
-			{
-				"chance": 0.5,
-				"item": "croptopia:calamari"
-			},
-			{
-				"item": "minecraft:ink_sac"
-			},
-			{
-				"chance": 0.5,
-				"count": 2,
-				"item": "minecraft:ink_sac"
-			}
-		],
-		"tool": {
-			"tag": "forge:tools/knives"
-		}
-	}).id('adj:cutting/squid');
-
-	event.custom({
-		"type": "farmersdelight:cutting",
-		"ingredients": [
-			{
-				"item": "miners_delight:baked_squid"
-			}
-		],
-		"result": [
-			{
-				"count": 3,
-				"item": "croptopia:cooked_calamari"
-			},
-			{
-				"chance": 0.5,
-				"item": "croptopia:cooked_calamari"
-			}
-		],
-		"tool": {
-			"tag": "forge:tools/knives"
-		}
-	}).id('adj:cutting/baked_squid');
 
 	event.shaped(
 		'hopper',
@@ -604,6 +505,195 @@ ServerEvents.recipes((event) => {
 		3,
 		recipe.getId())
 	);
+
+	// Workshop recipes
+	function workshopRecipe(ingredients, output, id) {
+
+		let iMap = [];
+		ingredients.forEach(i => {
+			iMap.push(i instanceof Item ? i : Item.of(i));
+		});
+
+		if (id) {
+			event.custom({
+				"type": "terra_curio:workshop",
+				"ingredients": iMap,
+				"result": (output instanceof Item) ? output : Item.of(output)
+			}).id(id);
+		}
+		else {
+			event.custom({
+				"type": "terra_curio:workshop",
+				"ingredients": iMap,
+				"result": (output instanceof Item) ? output : Item.of(output)
+			}).id(`adj:workshop/${flattenedID(output)}`);
+		}
+	}
+
+	workshopRecipe([
+		'book',
+		'16x map',
+		'8x ink_sac',
+		'3x glow_ink_sac',
+		'feather',
+		'compass',
+		'additionaladditions:depth_meter'
+	], Item.of('kubejs:map_atlas'), 'adj:map_atlas');
+
+	const curioToWorkshopList = [
+		'botania:mana_ring',
+		'botania:mana_ring_greater',
+		'botania:aura_ring',
+		'botania:aura_ring_greater',
+		'botania:magnet_ring',
+		'botania:magnet_ring_greater',
+		'botania:water_ring',
+		'botania:swap_ring',
+		'botania:dodge_ring',
+		'botania:mining_ring',
+		'botania:pixie_ring',
+		'botania:reach_ring',
+		'botania:travel_belt',
+		'botania:super_travel_belt',
+		'botania:speed_up_belt',
+		'botania:knockback_belt',
+		'botania:ice_pendant',
+		'botania:lava_pendant',
+		'botania:super_lava_pendant',
+		'botania:cloud_pendant',
+		'botania:super_cloud_pendant',
+		'botania:inbisibility_cloak',
+		'botania:holy_cloak',
+		'botania:unholy_cloak',
+		'botania:balance_cloak',
+		'botania:third_eye',
+		'botania:monocle',
+		'botania:tiny_planet',
+		'botania:goddes_charm',
+		'botania:diva_charm',
+		'botania:blood_pendant',
+		'cataclysm:sticky_gloves',
+		'ars_nouveau:mundane_belt',
+		'ars_nouveau:dull_trinket',
+		'botanicadds:aura_ring_gaia',
+		'botanicadds:mana_ring_gaia',
+		'create:googles',
+		'botania:invisibility_cloak',
+	];
+	const curioToWorkshopRegex = [
+		/botania:cosmetic.*/,
+	];
+	const curioToWorkshopBlacklist = [];
+	event.forEachRecipe({}, recipe => {
+		if (!recipe) return;
+		if (recipe.getId().includes('_repair')) return;
+
+		const output = recipe.getOriginalRecipeResult();
+		const id = output.getId();
+
+		let regexed = curioToWorkshopRegex.some(rx => rx.test(id));
+		if (curioToWorkshopBlacklist.includes(id)) regexed = false;
+
+		if (curioToWorkshopList.includes(id) || regexed) {
+			let ingredients = recipe.getOriginalRecipeIngredients();
+
+			let counts = {};
+
+			ingredients.forEach(i => {
+				const ids = i.asIngredient().getItemIds();
+				if (!ids.length) return;
+
+				let id = ids[0];
+
+				if (id === 'botania:mana_string') id = 'ars_nouveau:magebloom_fiber';
+				counts[id] = (counts[id] || 0) + 1;
+			});
+
+			let newIngredients = Object.entries(counts).map(([id, count]) => {
+				return `${count}x ${id}`;
+			});
+
+			event.remove({ id: recipe.getId() });
+
+			workshopRecipe(newIngredients, output, recipe.getId());
+		}
+	});
+
+	workshopRecipe([
+		'3x leather'
+	], 'aether:leather_gloves');
+
+	workshopRecipe([
+		'2x iron_ingot',
+		'1x leather',
+		'1x string'
+	], 'aether:iron_gloves');
+
+	workshopRecipe([
+		'2x gold_ingot',
+		'1x leather',
+		'1x string'
+	], 'aether:golden_gloves');
+
+	workshopRecipe([
+		'2x diamond',
+		'1x leather',
+		'1x string'
+	], 'aether:diamond_gloves');
+
+	workshopRecipe([
+		'aether:diamond_gloves',
+		'netherite_ingot',
+		'4x ars_nouveau:magebloom_fiber'
+	], 'aether:netherite_gloves');
+
+	workshopRecipe([
+		'3x aether:zanite_gemstone',
+		'1x leather',
+		'1x ars_nouveau:magebloom_fiber'
+	], 'aether:zanite_gloves');
+
+	workshopRecipe([
+		'2x aether:gravitite_ingot',
+		'1x aether:ambrosium_shard',
+		'1x leather',
+		'3x ars_nouveau:magebloom_fiber'
+	], 'aether:gravitite_gloves');
+
+	workshopRecipe([
+		'3x iron_ingot',
+		'3x ancient_aether:valkyrum',
+		'1x leather',
+		'1x string'
+	], 'ancient_aether:valkyrum_gloves');
+
+	workshopRecipe([
+		'2x twilightforest:steeleaf_ingot',
+		'1x leather',
+		'1x string'
+	], 'umbral_skies:steeleaf_gloves');
+
+	workshopRecipe([
+		'2x twilightforest:ironwood_ingot',
+		'1x aether:leather_gloves',
+		'1x string'
+	], 'umbral_skies:ironwood_gloves');
+
+	workshopRecipe([
+		'2x twilightforest:fiery_ingot',
+		'1x netherite_ingot',
+		'3x ars_nouveau:magebloom_fiber'
+	], 'umbral_skies:fiery_gloves');
+
+	workshopRecipe([
+		'6x twilightforest:arctic_fur',
+		'1x string'
+	], 'umbral_skies:arctic_gloves');
+
+	workshopRecipe([
+		'5x twilightforest:alpha_yeti_fur',
+		'3x ars_nouveau:magebloom_fiber'
+	], 'umbral_skies:yeti_gloves');
 
 	// Wooden Armor
 	event.shaped(
@@ -889,7 +979,21 @@ ServerEvents.recipes((event) => {
 		}
 	})
 
-	event.recipes.botania.mana_infusion('naturescompass:naturescompass', 'compass').mana(1000000).id('adj:nature_compass');
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'#leaves',
+			'#leaves',
+			'#leaves',
+			'orichalcum_block',
+			'orichalcum_block',
+			'botania:manasteel_block',
+			'botania:dragonstone_block',
+			'#saplings'
+		],
+		'compass',
+		'naturescompass:naturescompass',
+		10000
+	).id('adj:nature_compass');
 
 	function itemsOnGround(ingredients, output, id, inBlock, comment) {
 		let recipe = {
@@ -1434,22 +1538,21 @@ ServerEvents.recipes((event) => {
 	};
 	templateRecipe('born_in_chaos_v1:dark_upgrade', 'born_in_chaos_v1:dark_metal_nugget', 'born_in_chaos_v1:dark_metal_ingot', 'born_in_chaos_v1:seedof_chaos');
 	templateRecipe('additionaladditions:rose_gold_upgrade', 'iron_ingot', 'cobblestone', 'additionaladditions:rose_gold_alloy');
-	templateRecipe('galosphere:silver_upgrade_smithing_template', 'galosphere:silver_ingot', '#planks', 'iron_ingot');
 	templateRecipe('mythicmetals:osmium_chainmail_smithing_template', 'mythicmetals:osmium_nugget', 'andesite', 'mythicmetals:osmium_ingot');
 
 	// Pottery Sherd copying
-	Item.list.toArray().forEach(/** @param {Internal.Item} item*/ item => {
-		if (item.id.includes('_sherd')) {
+	Item.getTypeList().forEach(id => {
+		if (id.includes('_sherd')) {
 			event.shapeless(
-				Item.of(item, 2),
+				Item.of(id, 2),
 				[
-					item,
+					id,
 					'brick',
 					'brick',
 					'brick',
 					'brick'
 				]
-			).id(`adj:sherd_copying/${flattenedID(item.id)}`)
+			).id(`adj:sherd_copying/${flattenedID(id)}`)
 		}
 	});
 
@@ -1530,11 +1633,10 @@ ServerEvents.recipes((event) => {
 
 	// Helper getter for the next few things
 	let copperItems = []
-	const pattern1 = /^(minecraft|create):copper_/
 	let rustyItems = []
-	const pattern2 = /netherexp:rusty_/
-	Item.getList().forEach(item => {
-		let id = item.id.toString();
+	Item.getTypeList().forEach(id => {
+		const pattern1 = /^(minecraft|create):copper_/
+		const pattern2 = /netherexp:rusty_/
 		if (pattern1.test(id)) {
 			copperItems.push(insertIntoID(id, 'MODIF_'));
 		} else if (pattern2.test(id)) {
@@ -1576,7 +1678,7 @@ ServerEvents.recipes((event) => {
 				? { tag: item.slice(1) }
 				: { item: item },
 			block_in: block,
-			post: (function () {
+			post: (() => {
 				let base = [
 					{ type: 'place', block: toPlace },
 					{ type: 'damage_item' }
@@ -1597,7 +1699,7 @@ ServerEvents.recipes((event) => {
 
 	// Derustifying items
 	rustyItems.forEach(item => {
-		lycheeItemOnBlockTransform('#axes', item, item.replace('rusty_', ''), ['particle wax_off ~ ~ ~ 0.5 0.5 0.5 1 15', 'playsound item.axe.scrape block @a[distance=0..] ~ ~ ~ 1 1'])
+		lycheeItemOnBlockTransform('#axes', item, item.replace('rusty_', ''), ['particle wax_off ~ ~ ~ 0.5 0.5 0.5 1 15', 'playsound item.axe.scrape block @a[distance=0..] ~ ~ ~ 1 1']);
 		// And also rusting them in Ectoplasm
 		lycheeItemInBlock(item.replace('rusty_', ''), ectoplasm, item);
 	});
@@ -1801,12 +1903,12 @@ ServerEvents.recipes((event) => {
 		}
 	).id('adj:rope');
 
-	// Unify Silver
+	// Galosphere Palaldium -> Silver
 	alloyForgeRecipe(
 		[
-			['#c:raw_silver_ores', 2],
+			['galosphere:raw_palladium', 2],
 		],
-		['galosphere:silver_ingot', 3],
+		['galosphere:palladium_ingot', 3],
 		1,
 		5,
 		[
@@ -1815,9 +1917,9 @@ ServerEvents.recipes((event) => {
 	);
 	alloyForgeRecipe(
 		[
-			['#c:silver_ores', 1],
+			['#adj:silver_ores', 1],
 		],
-		['galosphere:silver_ingot', 2],
+		['galosphere:palladium_ingot', 2],
 		1,
 		5,
 		[
@@ -1825,6 +1927,100 @@ ServerEvents.recipes((event) => {
 			['3+', 'output', 4]
 		]
 	);
+
+	const removeGalosphereRecipesFor = [
+		'palladium_lattice',
+		'chandelier',
+		'combustion_table',
+		'spectre_flare',
+		'palladium_bomb',
+		'soul_chandelier',
+		'weapon_rack'
+	];
+	removeGalosphereRecipesFor.forEach(item => event.remove({ output: `galosphere:${item}` }));
+
+	event.shaped(
+		'16x galosphere:palladium_lattice',
+		[
+			'SSS',
+			'SSS'
+		],
+		{
+			S: 'galosphere:palladium_ingot'
+		}
+	).id('adj:silver_lattice');
+
+	event.shaped(
+		'galosphere:chandelier',
+		[
+			'H H',
+			'CCC',
+			'SSS'
+		],
+		{
+			S: 'galosphere:palladium_ingot',
+			H: 'chain',
+			C: 'candle'
+		}
+	).id('adj:galosphere_chandelier');
+
+	event.shaped(
+		'galosphere:soul_chandelier',
+		[
+			'H H',
+			'CCC',
+			'SSS'
+		],
+		{
+			S: 'galosphere:palladium_ingot',
+			H: 'chain',
+			C: 'soul_candle'
+		}
+	).id('adj:galosphere_soul_chandelier');
+
+	event.shaped(
+		'galosphere:combustion_table',
+		[
+			'BS',
+			'PP',
+			'PP'
+		],
+		{
+			B: 'galosphere:palladium_bomb',
+			S: 'galosphere:palladium_ingot',
+			P: '#planks'
+		}
+	).id('adj:combustion_table');
+
+	event.shapeless(
+		'galosphere:spectre_flare',
+		['galosphere:bottle_of_spectre', 'galosphere:palladium_ingot', 'redstone']
+	).id('adj:spectre_flare');
+
+	workshopRecipe(['3x galosphere:palladium_ingot', '2x gunpowder', 'string'], '2x galosphere:palladium_bomb', 'adj:silver_bombs');
+
+	event.shaped(
+		'galosphere:weapon_rack',
+		[
+			'SIS'
+		],
+		{
+			S: 'galosphere:palladium_ingot',
+			I: 'item_frame'
+		}
+	).id('adj:weapon_rack');
+
+	event.shaped(
+		'galosphere:pink_salt_lamp',
+		[
+			'P',
+			'S'
+		],
+		{
+			S: 'galosphere:palladium_ingot',
+			P: 'galosphere:pink_salt_cluster'
+		}
+	).id('adj:pink_salt_lamp');
 
 	// Harder Bread
 	event.replaceInput({ output: '#forge:dough' },
@@ -2768,212 +2964,44 @@ ServerEvents.recipes((event) => {
 	// Different Essence crafts
 	const essenceRecipes = {
 		'ars_nouveau:air_essence': [
-			{
-				source: 4500,
-				ingredients: [
-					'arrow',
-					'feather',
-					'feather',
-				]
-			},
-			{
-				source: 2000,
-				ingredients: [
-					'arrow',
-					'miners_delight:bat_wing',
-					'miners_delight:bat_wing',
-				]
-			},
-			{
-				source: 1300,
-				ingredients: [
-					'arrow',
-					'aether:cold_aercloud',
-					'aether:cold_aercloud',
-				]
-			},
+			{ source: 4500, ingredients: ['arrow', 'feather', 'feather',] },
+			{ source: 2000, ingredients: ['arrow', 'miners_delight:bat_wing', 'miners_delight:bat_wing',] },
+			{ source: 1300, ingredients: ['arrow', 'aether:cold_aercloud', 'aether:cold_aercloud',] },
 		],
 		'ars_nouveau:water_essence': [
-			{
-				source: 4500,
-				ingredients: [
-					'water_bucket',
-					'water_bucket',
-					'water_bucket'
-				]
-			},
-			{
-				source: 2000,
-				ingredients: [
-					'water_bucket',
-					'kelp',
-					'prismarine'
-				]
-			},
-			{
-				source: 1300,
-				ingredients: [
-					'water_bucket',
-					'upgrade_aquatic:prismarine_coral_block',
-					'upgrade_aquatic:prismarine_coral_block'
-				]
-			},
+			{ source: 4500, ingredients: ['water_bucket', 'water_bucket', 'water_bucket'] },
+			{ source: 2000, ingredients: ['water_bucket', 'kelp', 'prismarine'] },
+			{ source: 1300, ingredients: ['water_bucket', 'upgrade_aquatic:prismarine_coral_block', 'upgrade_aquatic:prismarine_coral_block'] },
 		],
 		'ars_nouveau:fire_essence': [
-			{
-				source: 4500,
-				ingredients: [
-					'gunpowder',
-					'coal',
-					'torch'
-				]
-			},
-			{
-				source: 2000,
-				ingredients: [
-					'gunpowder',
-					'netherexp:fossil_fuel',
-					'torch'
-				]
-			},
-			{
-				source: 1300,
-				ingredients: [
-					'fire_charge',
-					'netherexp:fossil_fuel',
-					'netherdepthsupgrade:searing_cod'
-				]
-			},
+			{ source: 4500, ingredients: ['gunpowder', 'coal', 'torch'] },
+			{ source: 2000, ingredients: ['gunpowder', 'netherexp:fossil_fuel', 'torch'] },
+			{ source: 1300, ingredients: ['fire_charge', 'netherexp:fossil_fuel', 'netherdepthsupgrade:searing_cod'] },
 		],
 		'ars_nouveau:earth_essence': [
-			{
-				source: 4500,
-				ingredients: [
-					'iron_ingot',
-					'rooted_dirt',
-					'rooted_dirt'
-				]
-			},
-			{
-				source: 2000,
-				ingredients: [
-					'iron_ingot',
-					'moss_block',
-					'coarse_dirt'
-				]
-			},
-			{
-				source: 1300,
-				ingredients: [
-					'iron_ingot',
-					'create:tree_fertilizer',
-					'aether:aether_dirt'
-				]
-			},
+			{ source: 4500, ingredients: ['iron_ingot', 'rooted_dirt', 'rooted_dirt'] },
+			{ source: 2000, ingredients: ['iron_ingot', 'moss_block', 'coarse_dirt'] },
+			{ source: 1300, ingredients: ['iron_ingot', 'create:tree_fertilizer', 'aether:aether_dirt'] },
 		],
 		'ars_nouveau:abjuration_essence': [
-			{
-				source: 4500,
-				ingredients: [
-					'sugar',
-					'spider_eye',
-					'amethyst_shard'
-				]
-			},
-			{
-				source: 2000,
-				ingredients: [
-					'sugar',
-					'fermented_spider_eye',
-					'#c:milk'
-				]
-			},
-			{
-				source: 1300,
-				ingredients: [
-					'supplementaries:sugar_cube',
-					'fermented_spider_eye',
-					'botania:pixie_dust'
-				]
-			},
+			{ source: 4500, ingredients: ['sugar', 'spider_eye', 'amethyst_shard'] },
+			{ source: 2000, ingredients: ['sugar', 'fermented_spider_eye', '#c:milk'] },
+			{ source: 1300, ingredients: ['supplementaries:sugar_cube', 'fermented_spider_eye', 'botania:pixie_dust'] },
 		],
 		'ars_nouveau:conjuration_essence': [
-			{
-				source: 4500,
-				ingredients: [
-					'book',
-					'bone',
-					'netherexp:fossil_fuel'
-				]
-			},
-			{
-				source: 2000,
-				ingredients: [
-					'book',
-					'ars_nouveau:wilden_horn',
-					'netherexp:fossil_fuel'
-				]
-			},
-			{
-				source: 1300,
-				ingredients: [
-					'book',
-					'ars_nouveau:wilden_horn',
-					'ars_nouveau:starbuncle_shards'
-				]
-			},
+			{ source: 4500, ingredients: ['book', 'bone', 'netherexp:fossil_fuel'] },
+			{ source: 2000, ingredients: ['book', 'ars_nouveau:wilden_horn', 'netherexp:fossil_fuel'] },
+			{ source: 1300, ingredients: ['book', 'ars_nouveau:wilden_horn', 'ars_nouveau:starbuncle_shards'] },
 		],
 		'ars_nouveau:manipulation_essence': [
-			{
-				source: 4500,
-				ingredients: [
-					'redstone',
-					'piston',
-					'#adj:clock'
-				]
-			},
-			{
-				source: 2000,
-				ingredients: [
-					'morered:red_alloy_ingot',
-					'piston',
-					'supplementaries:clock_block'
-				]
-			},
-			{
-				source: 1300,
-				ingredients: [
-					'morered:red_alloy_ingot',
-					'botania:piston_relay',
-					'create:cuckoo_clock'
-				]
-			},
+			{ source: 4500, ingredients: ['redstone', 'piston', '#adj:clock'] },
+			{ source: 2000, ingredients: ['morered:red_alloy_ingot', 'piston', 'supplementaries:clock_block'] },
+			{ source: 1300, ingredients: ['morered:red_alloy_ingot', 'botania:piston_relay', 'create:cuckoo_clock'] },
 		],
 		'ars_elemental:anima_essence': [
-			{
-				source: 6500,
-				ingredients: [
-					'golden_apple',
-					'kubejs:skull_fragment',
-					'bone_meal'
-				]
-			},
-			{
-				source: 3000,
-				ingredients: [
-					'golden_apple',
-					'wither_skeleton_skull',
-					'bone_block'
-				]
-			},
-			{
-				source: 1800,
-				ingredients: [
-					'enchanted_golden_apple',
-					'wither_skeleton_skull',
-					'netherexp:wither_bone_block'
-				]
-			},
+			{ source: 6500, ingredients: ['golden_apple', 'kubejs:skull_fragment', 'bone_meal'] },
+			{ source: 3000, ingredients: ['golden_apple', 'wither_skeleton_skull', 'bone_block'] },
+			{ source: 1800, ingredients: ['enchanted_golden_apple', 'wither_skeleton_skull', 'netherexp:wither_bone_block'] },
 		],
 	};
 	for (let [essence, recipeList] of Object.entries(essenceRecipes)) {
@@ -3047,479 +3075,87 @@ ServerEvents.recipes((event) => {
 	 * @type {Record<Internal.OutputItem_, Internal.InputItem_[]}
 	 */
 	const glyphsMap = {
-		'ars_nouveau:glyph_amplify': [
-			'blaze_powder',
-			'botania:manasteel_ingot'
-		],
-		'ars_elemental:glyph_arc_projectile': [
-			'spectral_arrow',
-			'slime_ball',
-			'arrow',
-			'botania:manasteel_ingot'
-		],
-		'ars_nouveau:glyph_randomize': [
-			'mythicmetals:runite_ingot',
-			'quark:redstone_randomizer',
-		],
-		'ars_nouveau:glyph_sensitive': [
-			'poppy',
-			'ars_nouveau:source_gem_block',
-			'botania:mana_pearl',
-			'dandelion'
-		],
-		'ars_nouveau:glyph_aoe': [
-			'gunpowder',
-			'bone_meal'
-		],
-		'ars_nouveau:glyph_accelerate': [
-			'sugar',
-			'honeycomb',
-			'botania:rune_air'
-		],
-		'ars_nouveau:glyph_dampen': [
-			'#forge:wool',
-			'#forge:wool',
-			'#forge:wool',
-			'#forge:wool',
-		],
-		'ars_nouveau:glyph_decelerate': [
-			'cobweb',
-			'cobweb',
-			'cobweb',
-			'#adj:clock'
-		],
-		'ars_nouveau:glyph_extract': [
-			'botania:glass_pickaxe',
-		],
-		'ars_nouveau:glyph_break': [
-			'mythicmetals:copper_pickaxe',
-			'mythicmetals:copper_axe',
-			'mythicmetals:copper_shovel',
-			'mythicmetals:copper_hoe'
-		],
-		'ars_nouveau:glyph_light': [
-			'lantern',
-			'botania:rune_fire'
-		],
-		'ars_nouveau:glyph_craft': [
-			'botania:assembly_halo',
-
-		],
-		'ars_nouveau:glyph_pull': [
-			'#c:tools/fishing_rod',
-			'ars_nouveau:magebloom_fiber',
-			'ars_nouveau:magebloom_fiber'
-		],
-		'ars_nouveau:glyph_summon_steed': [
-			'ars_elemental:anima_essence',
-			'saddle',
-			'lead',
-			'hay_block',
-			'golden_carrot'
-		],
-		'ars_nouveau:glyph_ender_inventory': [
-			'botanicadds:rune_tp',
-			'createutilities:void_casing',
-			'createutilities:void_casing',
-			'createutilities:void_casing'
-		],
-		'ars_elemental:glyph_spark': [
-			'botania:rune_air',
-			'botania:rune_water',
-			'copper_ingot'
-		],
-		'ars_nouveau:glyph_explosion': [
-			'botania:rune_fire',
-			'tnt',
-			'mythicmetals:morkite_block',
-			'mythicmetals:morkite_block',
-		],
-		'ars_nouveau:glyph_firework': [
-			'botania:rune_fire',
-			'paper',
-			'gunpowder',
-			'gunpowder',
-			'#c:dyes',
-			'#c:dyes',
-			'#c:dyes',
-			'#c:dyes'
-		],
-		'ars_nouveau:glyph_invisibility': [
-			'botania:rune_mana',
-			'ars_nouveau:magebloom_block',
-			'golden_carrot',
-			'nether_wart_block'
-		],
-		'ars_nouveau:glyph_wind_shear': [
-			'botania:rune_air',
-			'botania:rune_air',
-			'botania:rune_air',
-			'botania:rune_air',
-		],
-		'ars_nouveau:glyph_blink': [
-			'botanicadds:rune_tp',
-			'botania:rune_mana',
-			'waystones:warp_dust',
-			'waystones:warp_dust',
-			'waystones:warp_dust',
-			'waystones:warp_dust',
-		],
-		'ars_nouveau:glyph_wither': [
-			'botania:rune_mana',
-			'netherexp:wither_bone_block',
-			'netherexp:wither_bone_block',
-			'netherexp:wither_bone_block',
-			'wither_skeleton_skull',
-			'soul_sand',
-			'soul_sand'
-		],
-		'ars_nouveau:glyph_rune': [
-			'ars_nouveau:runic_chalk',
-			'botania:rune_spring',
-			'botania:rune_summer',
-			'botania:rune_autumn',
-			'botania:rune_winter',
-		],
-		'ars_nouveau:glyph_animate_block': [
-			'botanicadds:rune_energy',
-			'botania:rune_wrath',
-			'botania:rune_earth',
-			'#forge:obsidian',
-			'#forge:obsidian',
-		],
-		'ars_nouveau:glyph_bounce': [
-			'botania:rune_mana',
-			'slime_block',
-			'slime_block',
-			'slime_block',
-			'slime_block',
-		],
-		'ars_nouveau:glyph_burst': [
-			'botania:rune_summer',
-			'botania:rune_wrath',
-			'firework_star'
-		],
-		'ars_nouveau:glyph_cold_snap': [
-			'botania:rune_winter',
-			'botania:rune_water',
-			'ice'
-		],
-		'ars_nouveau:glyph_conjure_water': [
-			'botania:rune_water',
-			'botania:rune_water',
-			'botania:rune_water',
-			'#c:buckets/water'
-		],
-		'ars_nouveau:glyph_crush': [
-			'botania:rune_spring',
-			'botania:rune_earth',
-			'create:andesite_alloy',
-			'create:andesite_alloy',
-			'create:andesite_alloy',
-			'smooth_stone',
-			'smooth_stone',
-			'smooth_stone',
-		],
-		'ars_nouveau:glyph_cut': [
-			'botania:elementium_shears',
-		],
-		'ars_nouveau:glyph_delay': [
-			'quartz_block',
-			'clock'
-		],
-		'ars_nouveau:glyph_dispel': [
-			'botania:rune_mana',
-			'milk_bucket',
-		],
-		'ars_nouveau:glyph_duration_down': [
-			'clock',
-			'glowstone_dust'
-		],
-		'ars_nouveau:glyph_evaporate': [
-			'botania:rune_summer',
-			'sponge',
-			'sponge',
-			'sponge'
-		],
-		'ars_nouveau:glyph_exchange': [
-			'botanicadds:rune_tp',
-			'emerald_block',
-			'waystones:warp_dust',
-			'waystones:warp_dust'
-		],
-		'ars_nouveau:glyph_fangs': [
-			'botanicadds:rune_energy',
-			'prismarine_shard',
-			'prismarine_shard',
-			'twilightforest:charm_of_life_2'
-		],
-		'ars_nouveau:glyph_fell': [
-			'botania:rune_earth',
-			'#c:axes'
-		],
-		'ars_nouveau:glyph_flare': [
-			'botania:rune_fire',
-			'flint_and_steel',
-			'fire_charge',
-			'fire_charge'
-		],
-		'ars_nouveau:glyph_fortune': [
-			'rabbit_foot',
-			'aether_redux:golden_clover'
-		],
-		'ars_nouveau:glyph_freeze': [
-			'botania:rune_winter',
-			'snow_block',
-			'snow_block'
-		],
-		'ars_nouveau:glyph_glide': [
-			'botania:rune_greed',
-			'botania:rune_envy',
-			'botania:rune_air',
-			'elytra',
-			'botania:dragonstone',
-			'botania:dragonstone',
-			'mythicmetals:unobtainium'
-		],
-		'ars_nouveau:glyph_gravity': [
-			'botanicadds:rune_mana',
-			'anvil',
-		],
-		'ars_nouveau:glyph_grow': [
-			'botania:rune_earth',
-			'botania:fertilizer',
-			'botania:fertilizer',
-			'create:tree_fertilizer',
-			'create:tree_fertilizer',
-			'create:tree_fertilizer',
-			'#forge:seeds',
-			'#forge:seeds',
-			'#forge:seeds'
-		],
-		'ars_nouveau:glyph_gust': [
-			'botania:rune_air',
-			'piston',
-			'piston',
-			'piston'
-		],
-		'ars_nouveau:glyph_harm': [
-			'golden_sword',
-			'mythicmetals:copper_sword',
-			'wooden_sword'
-		],
-		'ars_nouveau:glyph_harvest': [
-			'botania:rune_earth',
-			'iron_hoe'
-		],
-		'ars_nouveau:glyph_heal': [
-			'botania:rune_spring',
-			'majruszsdifficulty:bandage',
-			'majruszsdifficulty:bandage',
-			'majruszsdifficulty:bandage',
-			'majruszsdifficulty:bandage',
-			'heart_crystals:heart_crystal'
-		],
-		'ars_nouveau:glyph_hex': [
-			'botania:rune_gluttony',
-			'botania:rune_lust',
-			'botania:rune_greed',
-			'botania:rune_wrath',
-			'botania:rune_sloth',
-			'botania:rune_envy',
-			'botania:rune_pride',
-		],
-		'ars_nouveau:glyph_ignite': [
-			'flint_and_steel',
-			'#coals',
-			'#coals',
-			'#coals'
-		],
-		'ars_nouveau:glyph_infuse': [
-			'botania:rune_mana',
-			'glass_bottle',
-			'#forge:rods/blaze'
-		],
-		'ars_nouveau:glyph_intangible': [
-			'botanicadds:rune_tp',
-			'phantom_membrane',
-			'phantom_membrane',
-			'phantom_membrane',
-			'waystones:warp_dust',
-			'waystones:warp_dust'
-		],
-		'ars_nouveau:glyph_interact': [
-			'lever',
-			'#wooden_pressure_plates',
-			'#buttons'
-		],
-		'ars_nouveau:glyph_launch': [
-			'botania:rune_air',
-			'leather',
-			'leather',
-			'leather',
-			'rabbit_foot',
-		],
-		'ars_nouveau:glyph_leap': [
-			'botania:rune_air',
-			'miners_delight:bat_wing',
-			'miners_delight:bat_wing',
-			'miners_delight:bat_wing'
-		],
-		'ars_nouveau:glyph_lightning': [
-			'botania:rune_air',
-			'botania:rune_water',
-			'lightning_rod',
-			'heart_of_the_sea'
-		],
-		'ars_nouveau:glyph_linger': [
-			'botanicadds:rune_tp',
-			'dragon_breath',
-			'#forge:storage_blocks/diamond',
-			'#forge:rods/blaze',
-			'#forge:rods/blaze'
-		],
-		'ars_nouveau:glyph_name': [
-			'name_tag',
-			'ars_nouveau:magebloom_fiber'
-		],
-		'ars_nouveau:glyph_orbit': [
-			'botania:rune_autumn',
-			'aether:gravitite_ingot',
-			'aether:gravitite_ingot',
-			'aether:gravitite_ingot'
-		],
-		'ars_nouveau:glyph_phantom_block': [
-			'#forge:glass',
-			'#forge:glass',
-			'#forge:glass',
-			'#forge:glass',
-			'#forge:glass',
-			'#forge:glass',
-			'#forge:glass',
-			'#forge:glass'
-		],
-		'ars_nouveau:glyph_pickup': [
-			'botania:hopperhock',
-			'botania:rune_tp'
-		],
-		'ars_nouveau:glyph_pierce': [
-			'arrow',
-			'mythicmetals:runite_arrow',
-			'ars_nouveau:wilden_spike'
-		],
-		'ars_nouveau:glyph_place_block': [
-			'botanicadds:rune_tp',
-			'dispenser'
-		],
-		'ars_nouveau:glyph_projectile': [
-			'botania:livingwood_bow',
-		],
-		'ars_nouveau:glyph_redstone_signal': [
-			'#forge:storage_blocks/redstone',
-			'#forge:storage_blocks/redstone',
-			'#forge:storage_blocks/redstone'
-		],
-		'ars_nouveau:reset': [
-			'target'
-		],
-		'ars_nouveau:glyph_rotate': [
-			'botanicadds:rune_tp'
-		],
-		'ars_nouveau:glyph_self': [
-			'#wooden_pressure_plates',
-			'iron_chestplate'
-		],
-		'ars_nouveau:glyph_sense_magic': [
-			'botania:rune_mana',
-			'ars_nouveau:dowsing_rod',
-			'ars_nouveau:starbuncle_shards'
-		],
-		'ars_nouveau:glyph_slowfall': [
-			'botania:rune_air',
-			'miners_delight:bat_wing',
-			'feather',
-			'feather',
-			'feather',
-			'#forge:rods/blaze',
-			'#forge:crops/nether_wart'
-		],
-		'ars_nouveau:glyph_smelt': [
-			'botania:rune_fire',
-			'alloy_forgery:cracked_stone_bricks_forge_controller',
-			'coal_block'
-		],
-		'ars_nouveau:glyph_snare': [
-			'botania:rune_earth',
-			'cobweb',
-			'cobweb',
-			'cobweb',
-			'cobweb'
-		],
-		'ars_nouveau:glyph_split': [
-			'ars_nouveau:relay_splitter',
-			'ars_nouveau:sourcestone',
-			'ars_nouveau:sourcestone',
-			'ars_nouveau:sourcestone',
-			'ars_nouveau:sourcestone'
-		],
-		'ars_nouveau:glyph_summon_decoy': [
-			'botanicadds:rune_energy',
-			'ars_elemental:anima_essence',
-			'armor_stand',
-			'armor_stand',
-			'armor_stand',
-			'armor_stand'
-		],
-		'ars_nouveau:glyph_summon_undead': [
-			'botanicadds:rune_energy',
-			'ars_elemental:anima_essence',
-			'netherexp:wither_bone_block',
-			'skeleton_skull',
-			'architects_palette:rotten_flesh_block',
-			'architects_palette:rotten_flesh_block'
-		],
-		'ars_nouveau:glyph_summon_vex': [
-			'botanicadds:rune_energy',
-			'ars_elemental:anima_essence',
-			'twilightforest:charm_of_life_2'
-		],
-		'ars_nouveau:glyph_summon_wolves': [
-			'botanicadds:rune_energy',
-			'ars_elemental:anima_essence',
-			'bone',
-			'bone',
-			'bone',
-			'miners_delight:bat_wing',
-		],
-		'ars_nouveau:glyph_toss': [
-			'botania:rune_air',
-			'dropper'
-		],
-		'ars_nouveau:glyph_touch': [
-			'#buttons'
-		],
-		'ars_nouveau:glyph_underfoot': [
-			'iron_boots',
-			'#wooden_pressure_plates'
-		],
-		'ars_nouveau:glyph_wall': [
-			'botanicadds:rune_tp',
-			'dragon_breath',
-			'quark:myalite_bricks',
-			'rediscovered:large_bricks',
-			'mud_bricks',
-			'unusualend:shiny_crystal_bricks'
-		],
-		'ars_nouveau:wololo': [
-			'red_wool',
-			'red_wool',
-			'red_wool',
-			'red_wool',
-			'blue_wool',
-			'blue_wool',
-			'blue_wool',
-			'blue_wool'
-		]
+		'ars_nouveau:glyph_amplify': ['blaze_powder', 'botania:manasteel_ingot'],
+		'ars_elemental:glyph_arc_projectile': ['spectral_arrow', 'slime_ball', 'arrow', 'botania:manasteel_ingot'],
+		'ars_nouveau:glyph_randomize': ['mythicmetals:runite_ingot', 'quark:redstone_randomizer',],
+		'ars_nouveau:glyph_sensitive': ['poppy', 'ars_nouveau:source_gem_block', 'botania:mana_pearl', 'dandelion'],
+		'ars_nouveau:glyph_aoe': ['gunpowder', 'bone_meal'],
+		'ars_nouveau:glyph_accelerate': ['sugar', 'honeycomb', 'botania:rune_air'],
+		'ars_nouveau:glyph_dampen': ['#forge:wool', '#forge:wool', '#forge:wool', '#forge:wool',],
+		'ars_nouveau:glyph_decelerate': ['cobweb', 'cobweb', 'cobweb', '#adj:clock'],
+		'ars_nouveau:glyph_extract': ['botania:glass_pickaxe',],
+		'ars_nouveau:glyph_break': ['mythicmetals:copper_pickaxe', 'mythicmetals:copper_axe', 'mythicmetals:copper_shovel', 'mythicmetals:copper_hoe'],
+		'ars_nouveau:glyph_light': ['lantern', 'botania:rune_fire'],
+		'ars_nouveau:glyph_craft': ['botania:assembly_halo',],
+		'ars_nouveau:glyph_pull': ['#c:tools/fishing_rod', 'ars_nouveau:magebloom_fiber', 'ars_nouveau:magebloom_fiber'],
+		'ars_nouveau:glyph_summon_steed': ['ars_elemental:anima_essence', 'saddle', 'lead', 'hay_block', 'golden_carrot'],
+		'ars_nouveau:glyph_ender_inventory': ['botanicadds:rune_tp', 'createutilities:void_casing', 'createutilities:void_casing', 'createutilities:void_casing'],
+		'ars_elemental:glyph_spark': ['botania:rune_air', 'botania:rune_water', 'copper_ingot'],
+		'ars_nouveau:glyph_explosion': ['botania:rune_fire', 'tnt', 'mythicmetals:morkite_block', 'mythicmetals:morkite_block',],
+		'ars_nouveau:glyph_firework': ['botania:rune_fire', 'paper', 'gunpowder', 'gunpowder', '#c:dyes', '#c:dyes', '#c:dyes', '#c:dyes'],
+		'ars_nouveau:glyph_invisibility': ['botania:rune_mana', 'ars_nouveau:magebloom_block', 'golden_carrot', 'nether_wart_block'],
+		'ars_nouveau:glyph_wind_shear': ['botania:rune_air', 'botania:rune_air', 'botania:rune_air', 'botania:rune_air',],
+		'ars_nouveau:glyph_blink': ['botanicadds:rune_tp', 'botania:rune_mana', 'waystones:warp_dust', 'waystones:warp_dust', 'waystones:warp_dust', 'waystones:warp_dust',],
+		'ars_nouveau:glyph_wither': ['botania:rune_mana', 'netherexp:wither_bone_block', 'netherexp:wither_bone_block', 'netherexp:wither_bone_block', 'wither_skeleton_skull', 'soul_sand', 'soul_sand'],
+		'ars_nouveau:glyph_rune': ['ars_nouveau:runic_chalk', 'botania:rune_spring', 'botania:rune_summer', 'botania:rune_autumn', 'botania:rune_winter',],
+		'ars_nouveau:glyph_animate_block': ['botanicadds:rune_energy', 'botania:rune_wrath', 'botania:rune_earth', '#forge:obsidian', '#forge:obsidian',],
+		'ars_nouveau:glyph_bounce': ['botania:rune_mana', 'slime_block', 'slime_block', 'slime_block', 'slime_block',],
+		'ars_nouveau:glyph_burst': ['botania:rune_summer', 'botania:rune_wrath', 'firework_star'],
+		'ars_nouveau:glyph_cold_snap': ['botania:rune_winter', 'botania:rune_water', 'ice'],
+		'ars_nouveau:glyph_conjure_water': ['botania:rune_water', 'botania:rune_water', 'botania:rune_water', '#c:buckets/water'],
+		'ars_nouveau:glyph_crush': ['botania:rune_spring', 'botania:rune_earth', 'create:andesite_alloy', 'create:andesite_alloy', 'create:andesite_alloy', 'smooth_stone', 'smooth_stone', 'smooth_stone',],
+		'ars_nouveau:glyph_cut': ['botania:elementium_shears',],
+		'ars_nouveau:glyph_delay': ['quartz_block', 'clock'],
+		'ars_nouveau:glyph_dispel': ['botania:rune_mana', 'milk_bucket',],
+		'ars_nouveau:glyph_duration_down': ['clock', 'glowstone_dust'],
+		'ars_nouveau:glyph_evaporate': ['botania:rune_summer', 'sponge', 'sponge', 'sponge'],
+		'ars_nouveau:glyph_exchange': ['botanicadds:rune_tp', 'emerald_block', 'waystones:warp_dust', 'waystones:warp_dust'],
+		'ars_nouveau:glyph_fangs': ['botanicadds:rune_energy', 'prismarine_shard', 'prismarine_shard', 'twilightforest:charm_of_life_2'],
+		'ars_nouveau:glyph_fell': ['botania:rune_earth', '#c:axes'],
+		'ars_nouveau:glyph_flare': ['botania:rune_fire', 'flint_and_steel', 'fire_charge', 'fire_charge'],
+		'ars_nouveau:glyph_fortune': ['rabbit_foot', 'aether_redux:golden_clover'],
+		'ars_nouveau:glyph_freeze': ['botania:rune_winter', 'snow_block', 'snow_block'],
+		'ars_nouveau:glyph_glide': ['botania:rune_greed', 'botania:rune_envy', 'botania:rune_air', 'elytra', 'botania:dragonstone', 'botania:dragonstone', 'mythicmetals:unobtainium'],
+		'ars_nouveau:glyph_gravity': ['botanicadds:rune_mana', 'anvil',],
+		'ars_nouveau:glyph_grow': ['botania:rune_earth', 'botania:fertilizer', 'botania:fertilizer', 'create:tree_fertilizer', 'create:tree_fertilizer', 'create:tree_fertilizer', '#forge:seeds', '#forge:seeds', '#forge:seeds'],
+		'ars_nouveau:glyph_gust': ['botania:rune_air', 'piston', 'piston', 'piston'],
+		'ars_nouveau:glyph_harm': ['golden_sword', 'mythicmetals:copper_sword', 'wooden_sword'],
+		'ars_nouveau:glyph_harvest': ['botania:rune_earth', 'iron_hoe'],
+		'ars_nouveau:glyph_heal': ['botania:rune_spring', 'majruszsdifficulty:bandage', 'majruszsdifficulty:bandage', 'majruszsdifficulty:bandage', 'majruszsdifficulty:bandage', 'heart_crystals:heart_crystal'],
+		'ars_nouveau:glyph_hex': ['botania:rune_gluttony', 'botania:rune_lust', 'botania:rune_greed', 'botania:rune_wrath', 'botania:rune_sloth', 'botania:rune_envy', 'botania:rune_pride',],
+		'ars_nouveau:glyph_ignite': ['flint_and_steel', '#coals', '#coals', '#coals'],
+		'ars_nouveau:glyph_infuse': ['botania:rune_mana', 'glass_bottle', '#forge:rods/blaze'],
+		'ars_nouveau:glyph_intangible': ['botanicadds:rune_tp', 'phantom_membrane', 'phantom_membrane', 'phantom_membrane', 'waystones:warp_dust', 'waystones:warp_dust'],
+		'ars_nouveau:glyph_interact': ['lever', '#wooden_pressure_plates', '#buttons'],
+		'ars_nouveau:glyph_launch': ['botania:rune_air', 'leather', 'leather', 'leather', 'rabbit_foot',],
+		'ars_nouveau:glyph_leap': ['botania:rune_air', 'miners_delight:bat_wing', 'miners_delight:bat_wing', 'miners_delight:bat_wing'],
+		'ars_nouveau:glyph_lightning': ['botania:rune_air', 'botania:rune_water', 'lightning_rod', 'heart_of_the_sea'],
+		'ars_nouveau:glyph_linger': ['botanicadds:rune_tp', 'dragon_breath', '#forge:storage_blocks/diamond', '#forge:rods/blaze', '#forge:rods/blaze'],
+		'ars_nouveau:glyph_name': ['name_tag', 'ars_nouveau:magebloom_fiber'],
+		'ars_nouveau:glyph_orbit': ['botania:rune_autumn', 'aether:gravitite_ingot', 'aether:gravitite_ingot', 'aether:gravitite_ingot'],
+		'ars_nouveau:glyph_phantom_block': ['#forge:glass', '#forge:glass', '#forge:glass', '#forge:glass', '#forge:glass', '#forge:glass', '#forge:glass', '#forge:glass'],
+		'ars_nouveau:glyph_pickup': ['botania:hopperhock', 'botania:rune_tp'],
+		'ars_nouveau:glyph_pierce': ['arrow', 'mythicmetals:runite_arrow', 'ars_nouveau:wilden_spike'],
+		'ars_nouveau:glyph_place_block': ['botanicadds:rune_tp', 'dispenser'],
+		'ars_nouveau:glyph_projectile': ['botania:livingwood_bow',],
+		'ars_nouveau:glyph_redstone_signal': ['#forge:storage_blocks/redstone', '#forge:storage_blocks/redstone', '#forge:storage_blocks/redstone'],
+		'ars_nouveau:reset': ['target'],
+		'ars_nouveau:glyph_rotate': ['botanicadds:rune_tp'],
+		'ars_nouveau:glyph_self': ['#wooden_pressure_plates', 'iron_chestplate'],
+		'ars_nouveau:glyph_sense_magic': ['botania:rune_mana', 'ars_nouveau:dowsing_rod', 'ars_nouveau:starbuncle_shards'],
+		'ars_nouveau:glyph_slowfall': ['botania:rune_air', 'miners_delight:bat_wing', 'feather', 'feather', 'feather', '#forge:rods/blaze', '#forge:crops/nether_wart'],
+		'ars_nouveau:glyph_smelt': ['botania:rune_fire', 'alloy_forgery:cracked_stone_bricks_forge_controller', 'coal_block'],
+		'ars_nouveau:glyph_snare': ['botania:rune_earth', 'cobweb', 'cobweb', 'cobweb', 'cobweb'],
+		'ars_nouveau:glyph_split': ['ars_nouveau:relay_splitter', 'ars_nouveau:sourcestone', 'ars_nouveau:sourcestone', 'ars_nouveau:sourcestone', 'ars_nouveau:sourcestone'],
+		'ars_nouveau:glyph_summon_decoy': ['botanicadds:rune_energy', 'ars_elemental:anima_essence', 'armor_stand', 'armor_stand', 'armor_stand', 'armor_stand'],
+		'ars_nouveau:glyph_summon_undead': ['botanicadds:rune_energy', 'ars_elemental:anima_essence', 'netherexp:wither_bone_block', 'skeleton_skull', 'architects_palette:rotten_flesh_block', 'architects_palette:rotten_flesh_block'],
+		'ars_nouveau:glyph_summon_vex': ['botanicadds:rune_energy', 'ars_elemental:anima_essence', 'twilightforest:charm_of_life_2'],
+		'ars_nouveau:glyph_summon_wolves': ['botanicadds:rune_energy', 'ars_elemental:anima_essence', 'bone', 'bone', 'bone', 'miners_delight:bat_wing',],
+		'ars_nouveau:glyph_toss': ['botania:rune_air', 'dropper'],
+		'ars_nouveau:glyph_touch': ['#buttons'],
+		'ars_nouveau:glyph_underfoot': ['iron_boots', '#wooden_pressure_plates'],
+		'ars_nouveau:glyph_wall': ['botanicadds:rune_tp', 'dragon_breath', 'quark:myalite_bricks', 'rediscovered:large_bricks', 'mud_bricks', 'unusualend:shiny_crystal_bricks'],
+		'ars_nouveau:wololo': ['red_wool', 'red_wool', 'red_wool', 'red_wool', 'blue_wool', 'blue_wool', 'blue_wool', 'blue_wool']
 	};
 
 	// Glyphs are more expensive to craft experience-wise
@@ -3611,9 +3247,9 @@ ServerEvents.recipes((event) => {
 			'twilightdelight:lily_chicken_block',
 			'vinery:cristel_wine',
 			'vinery:creepers_crush',
-			'croptopia:eggplant_parmesan',
 			'brewinandchewin:scarlet_pierogi',
 			'delightful:deluxe_cheeseburger',
+			'brewinandchewin:withering_dross',
 		],
 		'ender_eye',
 		'kubejs:eye_of_hedonism',
@@ -3723,7 +3359,7 @@ ServerEvents.recipes((event) => {
 	mythrilRecipe('boots');
 
 	const cookingTimeOverrides = {
-		'artifacts:eternal_steak': 60 * 15, // in seconds btw
+		'artifacts:eternal_steak': 60 * 15, // in seconds btw, so this is 15 minutes
 		'born_in_chaos_v1:smoked_monster_flesh': 15,
 		'born_in_chaos_v1:smoked_fish': 10,
 		'alexscaves:cooked_dinosaur_chop': 25,
@@ -3797,7 +3433,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	// Different alloy recipes
-	// Harder Celestium and Metallurgium
+	// Harder Celestium, Metallurgium and Cataclysmium
 	alloyForgeRecipe(
 		[
 			['mythicmetals:star_platinum', 1],
@@ -3809,7 +3445,7 @@ ServerEvents.recipes((event) => {
 		['mythicmetals:celestium_ingot', 1],
 		4,
 		100
-	)
+	);
 
 	alloyForgeRecipe(
 		[
@@ -3822,7 +3458,22 @@ ServerEvents.recipes((event) => {
 		['mythicmetals:metallurgium_ingot', 1],
 		4,
 		100
-	)
+	);
+
+	alloyForgeRecipe(
+		[
+			['born_in_chaos_v1:chaos_component', 1],
+			['cataclysm:ignitium_ingot', 1],
+			['cataclysm:cursium_ingot', 1],
+			['cataclysm:ancient_metal_ingot', 1],
+			['cataclysm:black_steel_ingot', 1],
+			['cataclysm:witherite_ingot', 1],
+			['mythicmetals:unobtainium', 2]
+		],
+		['create_cataclysm:cataclysmic_alloy', 1],
+		4,
+		100
+	);
 
 	// Stormyx
 	alloyForgeRecipe(
@@ -4210,14 +3861,14 @@ ServerEvents.recipes((event) => {
 
 	// Quark Pipes
 	event.shaped(
-		Item.of('quark:pipe', 12),
+		Item.of('quark:pipe', 20),
 		[
 			'I',
 			'G',
 			'I'
 		],
 		{
-			I: 'create:brass_ingot',
+			I: 'create:brass_sheet',
 			G: '#forge:glass'
 		}
 	).id('adj:pipes')
@@ -4578,17 +4229,6 @@ ServerEvents.recipes((event) => {
 		'unusualend:blob_stew_recipe',
 		'alexscaves:primordial_soup',
 		'mynethersdelight:crafting/rock_soup',
-		'croptopia:chicken_and_rice',
-		'croptopia:cashew_chicken',
-		'croptopia:crema',
-		'croptopia:beef_stew',
-		'croptopia:nether_wart_stew',
-		'croptopia:potato_soup',
-		'croptopia:ajvar',
-		'croptopia:steamed_broccoli',
-		'croptopia:steamed_green_beans',
-		'croptopia:salsa',
-		'croptopia:artichoke_dip',
 		'neapolitan:adzuki_stew',
 		'neapolitan:adzuki_curry'
 	];
@@ -5232,14 +4872,14 @@ ServerEvents.recipes((event) => {
 	).id('adj:spawner_claw')
 
 	// All Leaves support Conjuration Catalyst
-	Item.list.toArray().forEach(/** @param {Internal.Item} item*/ item => {
-		if (item.id.includes('_leaves') && item.id !== 'botania:horn_leaves') {
-			event.recipes.botania.mana_infusion(Item.of(item, 2), item)
+	Item.getTypeList().forEach(id => {
+		if (id.includes('_leaves') && id !== 'botania:horn_leaves') {
+			event.recipes.botania.mana_infusion(Item.of(id, 2), id)
 				.mana(2000)
 				.catalyst('botania:conjuration_catalyst')
-				.id(`botania:mana_infusion/${(item.id.split(':')[0] != 'minecraft') ? item.id.split(':')[0] + '_' : ''}${item.id.split(':')[1]}_dupe`)
+				.id(`botania:mana_infusion/${(id.split(':')[0] != 'minecraft') ? id.split(':')[0] + '_' : ''}${id.split(':')[1]}_dupe`);
 		}
-	})
+	});
 
 	// Pure Daisy transforms (all default ones have been removed completely)
 	const pureDaisyMap = {
@@ -5314,7 +4954,7 @@ ServerEvents.recipes((event) => {
 			['mythicmetals:morkite_ore', 6000],
 			['mythicmetals:runite_ore', 4550],
 			['rediscovered:ruby_ore', 5200],
-			['galosphere:silver_ore', 19000],
+			['galosphere:palladium_ore', 19000],
 			['mythicmetals:kyber_ore', 4000],
 			['mythicmetals:prometheum_ore', 3500],
 			['mythicmetals:mythril_ore', 65],
@@ -5639,197 +5279,6 @@ ServerEvents.recipes((event) => {
 	]).id(`adj:alfthorne_sapling`);
 	warping('window_box:alfthorne_sapling', 'window_box:chthonic_yew_sapling');
 
-
-	// Workshop recipes
-	function workshopRecipe(ingredients, output, id) {
-
-		let iMap = [];
-		ingredients.forEach(i => {
-			iMap.push(i instanceof Item ? i : Item.of(i));
-		});
-
-		if (id) {
-			event.custom({
-				"type": "terra_curio:workshop",
-				"ingredients": iMap,
-				"result": (output instanceof Item) ? output : Item.of(output)
-			}).id(id);
-		}
-		else {
-			event.custom({
-				"type": "terra_curio:workshop",
-				"ingredients": iMap,
-				"result": (output instanceof Item) ? output : Item.of(output)
-			}).id(`adj:workshop/${flattenedID(output)}`);
-		}
-	}
-
-	workshopRecipe([
-		'book',
-		'16x map',
-		'8x ink_sac',
-		'3x glow_ink_sac',
-		'feather',
-		'compass',
-		'additionaladditions:depth_meter'
-	], Item.of('kubejs:map_atlas'), 'adj:map_atlas');
-
-	const curioToWorkshopList = [
-		'botania:mana_ring',
-		'botania:mana_ring_greater',
-		'botania:aura_ring',
-		'botania:aura_ring_greater',
-		'botania:magnet_ring',
-		'botania:magnet_ring_greater',
-		'botania:water_ring',
-		'botania:swap_ring',
-		'botania:dodge_ring',
-		'botania:mining_ring',
-		'botania:pixie_ring',
-		'botania:reach_ring',
-		'botania:travel_belt',
-		'botania:super_travel_belt',
-		'botania:speed_up_belt',
-		'botania:knockback_belt',
-		'botania:ice_pendant',
-		'botania:lava_pendant',
-		'botania:super_lava_pendant',
-		'botania:cloud_pendant',
-		'botania:super_cloud_pendant',
-		'botania:inbisibility_cloak',
-		'botania:holy_cloak',
-		'botania:unholy_cloak',
-		'botania:balance_cloak',
-		'botania:third_eye',
-		'botania:monocle',
-		'botania:tiny_planet',
-		'botania:goddes_charm',
-		'botania:diva_charm',
-		'botania:blood_pendant',
-		'cataclysm:sticky_gloves',
-		'ars_nouveau:mundane_belt',
-		'ars_nouveau:dull_trinket',
-		'botanicadds:aura_ring_gaia',
-		'botanicadds:mana_ring_gaia',
-		'create:googles',
-		'botania:invisibility_cloak',
-	];
-	const curioToWorkshopRegex = [
-		/botania:cosmetic.*/,
-	];
-	const curioToWorkshopBlacklist = [];
-	event.forEachRecipe({}, recipe => {
-		if (recipe == null) return;
-		if (recipe.getId().includes('_repair')) return;
-
-		const output = recipe.getOriginalRecipeResult();
-		const id = output.getId();
-
-		let regexed = curioToWorkshopRegex.some(rx => rx.test(id));
-		if (curioToWorkshopBlacklist.includes(id)) regexed = false;
-
-		if (curioToWorkshopList.includes(id) || regexed) {
-			let ingredients = recipe.getOriginalRecipeIngredients();
-
-			let counts = {};
-
-			ingredients.forEach(i => {
-				const ids = i.asIngredient().getItemIds();
-				if (!ids.length) return;
-
-				let id = ids[0];
-
-				if (id === 'botania:mana_string') id = 'ars_nouveau:magebloom_fiber';
-				counts[id] = (counts[id] || 0) + 1;
-			});
-
-			let newIngredients = Object.entries(counts).map(([id, count]) => {
-				return `${count}x ${id}`;
-			});
-
-			event.remove({ id: recipe.getId() });
-
-			workshopRecipe(newIngredients, output, recipe.getId());
-		}
-	});
-
-	workshopRecipe([
-		'3x leather'
-	], 'aether:leather_gloves');
-
-	workshopRecipe([
-		'2x iron_ingot',
-		'1x leather',
-		'1x string'
-	], 'aether:iron_gloves');
-
-	workshopRecipe([
-		'2x gold_ingot',
-		'1x leather',
-		'1x string'
-	], 'aether:golden_gloves');
-
-	workshopRecipe([
-		'2x diamond',
-		'1x leather',
-		'1x string'
-	], 'aether:diamond_gloves');
-
-	workshopRecipe([
-		'aether:diamond_gloves',
-		'netherite_ingot',
-		'4x ars_nouveau:magebloom_fiber'
-	], 'aether:netherite_gloves');
-
-	workshopRecipe([
-		'3x aether:zanite_gemstone',
-		'1x leather',
-		'1x ars_nouveau:magebloom_fiber'
-	], 'aether:zanite_gloves');
-
-	workshopRecipe([
-		'2x aether:gravitite_ingot',
-		'1x aether:ambrosium_shard',
-		'1x leather',
-		'3x ars_nouveau:magebloom_fiber'
-	], 'aether:gravitite_gloves');
-
-	workshopRecipe([
-		'3x iron_ingot',
-		'3x ancient_aether:valkyrum',
-		'1x leather',
-		'1x string'
-	], 'ancient_aether:valkyrum_gloves');
-
-	workshopRecipe([
-		'2x twilightforest:steeleaf_ingot',
-		'1x leather',
-		'1x string'
-	], 'umbral_skies:steeleaf_gloves');
-
-	workshopRecipe([
-		'2x twilightforest:ironwood_ingot',
-		'1x aether:leather_gloves',
-		'1x string'
-	], 'umbral_skies:ironwood_gloves');
-
-	workshopRecipe([
-		'2x twilightforest:fiery_ingot',
-		'1x netherite_ingot',
-		'3x ars_nouveau:magebloom_fiber'
-	], 'umbral_skies:fiery_gloves');
-
-	workshopRecipe([
-		'6x twilightforest:arctic_fur',
-		'1x string'
-	], 'umbral_skies:arctic_gloves');
-
-	workshopRecipe([
-		'5x twilightforest:alpha_yeti_fur',
-		'3x ars_nouveau:magebloom_fiber'
-	], 'umbral_skies:yeti_gloves');
-
-
 	// Binding Wayfinders
 	function locateStructureRitual(structure, ingredients) {
 
@@ -5854,33 +5303,34 @@ ServerEvents.recipes((event) => {
 
 	locateStructureRitual('#ars_nouveau:wilden_den', ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'ars_nouveau:source_gem', rune('wrath')]);
 	locateStructureRitual('betterfortresses:fortress', ['nether_bricks', 'nether_bricks', 'nether_bricks', 'quark:soul_bead']);
-	locateStructureRitual('minecraft:pillager_outpost', ['emerald_block', 'galosphere:silver_block', rune('greed')]);
+	locateStructureRitual('minecraft:pillager_outpost', ['emerald_block', 'galosphere:palladium_block', rune('greed')]);
 	locateStructureRitual('betteroceanmonuments:ocean_monument', ['prismarine', 'prismarine', 'prismarine', 'prismarine', rune('water')]);
 	locateStructureRitual('minecraft:trail_ruins', ['rediscovered:ruby', 'rediscovered:ruby', 'rediscovered:ruby']);
 	locateStructureRitual('minecraft:end_city', ['ender_eye', 'purpur_block', 'purpur_block', 'purpur_block', rune('envy')]);
 	locateStructureRitual('minecraft:ancient_city', ['deepslate_bricks', 'deepslate_bricks', 'deepslate_bricks', 'echo_shard', 'echo_shard']);
 	locateStructureRitual('aether:bronze_dungeon', ['mythicmetals:bronze_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
-	locateStructureRitual('aether:silver_dungeon', ['galosphere:silver_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
+	locateStructureRitual('aether:silver_dungeon', ['galosphere:palladium_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
 	locateStructureRitual('aether:gold_dungeon', ['gold_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
 	locateStructureRitual('lost_aether_content:platinum_dungeon', ['mythicmetals:platinum_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
 
 	// Aether repairing
-	Item.list.toArray().forEach(/** @param {Internal.Item} item*/ item => {
+	Item.getTypeList().forEach(id => {
+		const item = Item.of(id);
 		const maxDamage = item.maxDamage;
 		if (maxDamage > 0) {
 			event.custom({
 				"type": "aether:repairing",
 				"ingredient": {
-					"item": item.getId()
+					"item": id
 				},
 				"repairTime": Math.ceil((1.75 * Math.sqrt(maxDamage)) * 20)
-			}).id(`adj:repairing/${flattenedID(item.getId())}`)
+			}).id(`adj:repairing/${flattenedID(id)}`);
 		}
 	})
 
 	// Summoning Rituals
 	function toSeconds(time) {
-		return time * 20
+		return time * 20;
 	}
 
 	event.recipes.summoningrituals.altar('botania:elementium_block')
@@ -6645,16 +6095,10 @@ ServerEvents.recipes((event) => {
 		let ingr = [];
 		ingredients.forEach(i => {
 			if (i.startsWith('#')) {
-				ingr.push({
-					tag: i.substring(1)
-				})
+				ingr.push({ tag: i.substring(1) });
 			}
-			else {
-				ingr.push({
-					item: i
-				})
-			}
-		})
+			else ingr.push({ item: i });
+		});
 
 		event.custom({
 			type: "brewinandchewin:fermenting",
@@ -6671,16 +6115,16 @@ ServerEvents.recipes((event) => {
 				fluid: resultFluid
 			},
 			temperature: (temperature) ? temperature : 3
-		}).id(`adj:fermenting/${flattenedID(resultFluid)}_from_${flattenedID(basefluid)}`)
+		}).id(`adj:fermenting/${flattenedID(resultFluid)}_from_${flattenedID(basefluid)}`);
 
-		pouringRecipe(resultFluid, resultItem, containerItem)
+		pouringRecipe(resultFluid, resultItem, containerItem);
 	}
 
-	fermentingRecipe('kubejs:red_grapejuice', ['croptopia:black_berry', 'croptopia:black_berry', 'croptopia:black_berry'], 'kubejs:noir_wine', 'vinery:noir_wine');
+	fermentingRecipe('kubejs:red_grapejuice', ['ars_nouveau:sourceberry_bush', 'ars_nouveau:sourceberry_bush', 'ars_nouveau:sourceberry_bush'], 'kubejs:noir_wine', 'vinery:noir_wine');
 	fermentingRecipe('kubejs:red_grapejuice', ['sugar', 'brown_mushroom'], 'kubejs:red_wine', 'vinery:red_wine');
 	fermentingRecipe('kubejs:red_grapejuice', ['sugar', 'cocoa_beans', 'cocoa_beans'], 'kubejs:strad_wine', 'vinery:strad_wine');
 	fermentingRecipe('kubejs:red_grapejuice', ['vinery:cherry', 'vinery:cherry', 'vinery:cherry'], 'kubejs:cherry_wine', 'vinery:cherry_wine');
-	fermentingRecipe('kubejs:red_grapejuice', ['heart_crystals:heart_crystal', 'croptopia:starfruit', 'glowstone_dust', 'sugar'], 'kubejs:cristel_wine', 'vinery:cristel_wine');
+	fermentingRecipe('kubejs:red_grapejuice', ['heart_crystals:heart_crystal', 'phantasm:starflower', 'glowstone_dust', 'sugar'], 'kubejs:cristel_wine', 'vinery:cristel_wine');
 	fermentingRecipe('kubejs:red_savanna_grapejuice', ['vinery:cherry', 'vinery:cherry', 'honey_bottle'], 'kubejs:lilitu_wine', 'vinery:lilitu_wine');
 	fermentingRecipe('kubejs:red_savanna_grapejuice', ['fermented_spider_eye', 'redstone', 'redstone', 'honey_bottle'], 'kubejs:jo_special_mixture', 'vinery:jo_special_mixture');
 	fermentingRecipe('kubejs:red_taiga_grapejuice', ['vinery:cherry', 'vinery:cherry', 'honey_bottle'], 'kubejs:bolvar_wine', 'vinery:bolvar_wine');
@@ -6697,7 +6141,7 @@ ServerEvents.recipes((event) => {
 
 	fermentingRecipe('kubejs:white_grapejuice', ['sugar', 'glowstone_dust'], 'kubejs:mellohi_wine', 'vinery:mellohi_wine');
 	fermentingRecipe('kubejs:white_grapejuice', ['glow_berries', 'glow_berries', 'glow_berries', 'glow_berries'], 'kubejs:glowing_wine', 'vinery:glowing_wine');
-	fermentingRecipe('kubejs:white_grapejuice', ['honey_bottle', 'sweet_berries', 'glow_berries', 'ambrosium_shard'], 'kubejs:solaris_wine', 'vinery:solaris_wine');
+	fermentingRecipe('kubejs:white_grapejuice', ['honey_bottle', 'sweet_berries', 'glow_berries', 'aether:ambrosium_shard'], 'kubejs:solaris_wine', 'vinery:solaris_wine');
 	fermentingRecipe('kubejs:white_savanna_grapejuice', ['creeper_head', 'gunpowder', 'sugar', 'sugar'], 'kubejs:creepers_crush', 'vinery:creepers_crush');
 	fermentingRecipe('kubejs:white_savanna_grapejuice', ['kelp', 'kelp', 'sugar'], 'kubejs:kelp_cider', 'vinery:kelp_cider');
 	fermentingRecipe('kubejs:white_taiga_grapejuice', ['twilightforest:aurora_block', 'ice', 'ice'], 'kubejs:eiswein', 'vinery:eiswein');
@@ -6718,7 +6162,6 @@ ServerEvents.recipes((event) => {
 	pouringRecipe('kubejs:white_savanna_grapejuice', 'vinery:white_savanna_grapejuice');
 	pouringRecipe('kubejs:crimson_grapejuice', 'nethervinery:crimson_grapejuice');
 	pouringRecipe('kubejs:warped_grapejuice', 'nethervinery:warped_grapejuice');
-	pouringRecipe('kubejs:apple_juice', 'croptopia:apple_juice', 'glass_bottle');
 
 	event.shaped(
 		'2x vinery:grapevine_stem',
@@ -6762,95 +6205,7 @@ ServerEvents.recipes((event) => {
 	oreBerryCrushing('uranium', 'alexscaves:uranium_shard');
 	oreBerryCrushing('osmium', 'mythicmetals:osmium_nugget');
 	oreBerryCrushing('zinc', 'create:zinc_nugget');
-	oreBerryCrushing('silver', 'galosphere:silver_nugget');
-
-	// Croptopia
-	event.forEachRecipe([{ input: 'croptopia:cooking_pot' }, { input: 'croptopia:frying_pan' }], recipe => {
-		if (recipe == null) return;
-
-		const ingrOriginal = recipe.getOriginalRecipeIngredients();
-		let ingr = [];
-
-		ingrOriginal.forEach(i => {
-			for (let id of i.getItemIds().toArray()) {
-				if (global.isItemDisabled(id) || id === 'bowl') continue;
-				ingr.push(i);
-			}
-		});
-		if (ingr.length > 6) return;
-
-		const result = recipe.getOriginalRecipeResult();
-		let bowlItem;
-
-		switch (result.getId().replace('croptopia:', '')) {
-			case 'rum_raisin_ice_cream':
-			case 'steamed_rice':
-			case 'pecan_ice_cream':
-			case 'mango_ice_cream':
-			case 'vanilla_ice_cream':
-			case 'chicken_and_dumplings':
-			case 'pad_thai':
-			case 'chicken_curry':
-			case 'eggplant_curry':
-			case 'chicken_and_noodles':
-			case 'chicken_and_dumplings':
-			case 'tofu_and_dumplings':
-			case 'spaghetti_squash':
-			case 'chicken_and_noodles':
-			case 'pumpkin_soup': {
-				bowlItem = 'bowl';
-				break;
-			}
-		}
-
-		if (bowlItem) {
-			event.recipes.farmersdelight.cooking(ingr, result, 1.5, 400, bowlItem).id(recipe.getId())
-		}
-		else {
-			event.recipes.farmersdelight.cooking(ingr, result, 1.5, 400).id(recipe.getId())
-		}
-	});
-
-	event.forEachRecipe([{ input: 'croptopia:food_press' }], recipe => {
-		if (recipe == null) return;
-
-		const ingrOriginal = recipe.getOriginalRecipeIngredients();
-		let ingr = [];
-
-		ingrOriginal.forEach(i => {
-			for (let id of i.getItemIds().toArray()) {
-				if (global.isItemDisabled(id)) continue;
-				ingr.push(i);
-			}
-		});
-		if (ingr.length > 6) return;
-
-		const result = recipe.getOriginalRecipeResult();
-
-		event.shapeless(
-			result.id,
-			ingr
-		).id(`adj:croptopia/${flattenedID(recipe.getId())}`);
-
-	});
-
-	event.shapeless(
-		'croptopia:olive_oil',
-		[
-			'croptopia:olive',
-			'croptopia:olive',
-			'glass_bottle'
-		]
-	).id('adj:olive_oil');
-
-	event.shapeless(
-		'croptopia:soy_sauce',
-		[
-			'croptopia:soybean',
-			'croptopia:soybean',
-			Item.of('minecraft:potion', 1, '{Potion:"minecraft:water"}')
-		]
-	).id('adj:soy_sauce');
+	oreBerryCrushing('silver', 'galosphere:palladium_nugget');
 
 	// MC Dungeons Weapons
 	function mcdw(type, item) {
@@ -7061,7 +6416,7 @@ ServerEvents.recipes((event) => {
 			'botania:rune_greed',
 			'botania:rune_greed',
 			'emerald_block',
-			'galosphere:silver_block'
+			'galosphere:palladium_block'
 		],
 		mcdw('sickle', 'sickle'),
 		mcdw('sickle', 'last_laugh_silver')
@@ -7336,10 +6691,10 @@ ServerEvents.recipes((event) => {
 	workshopRecipe([
 		'terra_curio:band_of_regeneration',
 		'kubejs:band_of_starpower',
-	], 'kubejs:band_of_mana_regeneration');
+	], 'kubejs:mana_regeneration_band');
 
 	workshopRecipe([
-		'kubejs:band_of_mana_regeneration',
+		'kubejs:mana_regeneration_band',
 		'terra_curio:shackle',
 	], 'kubejs:mana_cuffs');
 

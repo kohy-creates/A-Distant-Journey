@@ -15,7 +15,11 @@ I don't have any words for this to be honest
 go support i'll switch to dps
 you could really use a support ult right there tbh
 looks like someone wasn't ready to put on a show
-if (hardcore) { player.sendMessage("LMAOOOO) };
+if (hardcore) { player.sendMessage("LMAOOOO") };
 And it's only going to get worse from here
-Admit it. It's entirely your fault
+Admit it. It's ENTIRELY your fault
 Now I've become death. Literally
+This 100% could have been avoided
+I bet it wasn't even 5 minutes since the last one...
+.  .  .
+I have no words for this honestly...

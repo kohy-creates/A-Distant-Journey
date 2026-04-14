@@ -410,8 +410,8 @@
 		}
 		{
 			blockIds: [
-				galosphere:silver_ore
-				galosphere:deepslate_silver_ore
+				galosphere:palladium_ore
+				galosphere:deepslate_palladium_ore
 			]
 			highlightColor: "#AFCCCC"
 			transition: true

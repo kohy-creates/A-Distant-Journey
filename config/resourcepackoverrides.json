@@ -34,7 +34,7 @@
 		"file/CU - 3d Wrench.zip",
 		"file/SHC Enhanced Fire.zip",
 		"file/Frozy's Quest Book.zip",
-		"file/Farcr's Re-Crafted V2.25.zip",
+		"file/Farcr's Re-Crafted V2.26.zip",
 		"file/waystones_1.20.1_update_5.zip",
 		"file/\u00A7lColourful Containers\u00A78.zip",
 		"file/\u00A75\u00A7lModded \u00A7f\u00A7lContainers\u00A78.zip",
@@ -46,7 +46,7 @@
 		"scholar:colored_books",
 		"scholar:chiseled_bookshelf_colored_books",
 		"file/Re-Simple-Storage.zip",
-		"phantasm:fd_compat",
+		"phantasm:compat_farmersdelight",
 		"file/thinned.zip",
 		"delightful:overhauls",
 		"file/Fancy Crops v1.3.zip",
@@ -95,9 +95,9 @@
 			"file/SHC Enhanced Fire.zip",
 			"file/Aether Regenerated v1.2.1.zip",
 			"file/Frozy's Quest Book.zip",
-			"file/Farcr's Re-Crafted V2.25.zip",
+			"file/Farcr's Re-Crafted V2.26.zip",
 			"file/waystones_1.20.1_update_5.zip",
-			"phantasm:fd_compat",
+			"phantasm:compat_farmersdelight",
 			"file/thinned.zip",
 			"file/\u00A7lColourful Containers\u00A78.zip",
 			"file/\u00A75\u00A7lModded \u00A7f\u00A7lContainers\u00A78.zip",
@@ -169,7 +169,7 @@
 		"$$default": {
 			"hidden": false,
 			"required": true,
-			"fixed_position": true,
+			"fixed_position": false,
 			"force_compatible": true
 		},
 		"$$defaultoptional": {

@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#43363e",
+		"accent": "#43373e",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.witch",
-				"color": "#43363e"
+				"color": "#43373e"
 			}
 		]
 	}

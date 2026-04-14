@@ -555,6 +555,71 @@
 			x: -1.0d
 			y: 0.5d
 		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			id: "34BDAD6C0CC939AA"
+			tasks: [{
+				id: "2918AF7F85F4FD2D"
+				item: "betterarcheology:radiance_totem"
+				title: "Lost Totems: Totem of Radiance"
+				type: "item"
+			}]
+			title: "Lost Totems: Totem of Radiance"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			id: "363286DEAB1138D6"
+			tasks: [{
+				id: "4A47B8502B0699E8"
+				item: "betterarcheology:growth_totem"
+				type: "item"
+			}]
+			title: "Lost Totems: Totem of Growth"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			id: "59D525C3C29FF263"
+			tasks: [{
+				id: "5EC2257A4DDBFC20"
+				item: {
+					Count: 1
+					id: "betterarcheology:soul_totem"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Lost Totems: Totem of Souls"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			id: "2E8EC728EFDBF100"
+			tasks: [{
+				id: "6A7051CC9C870055"
+				item: {
+					Count: 1
+					id: "betterarcheology:torrent_totem"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Lost Totems: Totem of Torrents"
+			x: 5.0d
+			y: 2.0d
+		}
 	]
 	title: "Trails and Tales"
 }

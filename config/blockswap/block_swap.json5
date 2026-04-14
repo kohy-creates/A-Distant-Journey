@@ -500,5 +500,7 @@
 		"twilightforest:nagastone_stairs_right": "twilightforest:nagastone_stairs_left",
 		"twilightforest:mossy_nagastone_stairs_right": "twilightforest:mossy_nagastone_stairs_left",
 		"twilightforest:cracked_nagastone_stairs_right": "twilightforest:cracked_nagastone_stairs_left",
+
+		"quark:dirt_bricks": "minecraft:coarse_dirt"
 	}
 }

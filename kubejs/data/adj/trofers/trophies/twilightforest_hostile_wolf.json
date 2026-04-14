@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#c4bebd",
+		"accent": "#c5bfbe",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.twilightforest.hostile_wolf",
-				"color": "#c4bebd"
+				"color": "#c5bfbe"
 			}
 		]
 	}

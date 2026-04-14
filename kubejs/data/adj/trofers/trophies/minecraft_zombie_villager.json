@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#52603b",
+		"accent": "#53613b",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.zombie_villager",
-				"color": "#52603b"
+				"color": "#53613b"
 			}
 		]
 	}

@@ -326,7 +326,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 			case 'mcdw:dagger_swift_striker': {
 				if (victim instanceof $Mob && victim.getTarget() != attacker) {
 					event.setAmount(event.getAmount() * 1.5);
-					level.playSound(null, new Vec3d(victim.x, victim.y + victim.getEyeHeight(), victim.z), 'block.anvil.place', 'neutral', 1, Math.random() * 0.25 + 0.9);
+					level.playSound(null, victim.x, victim.y + victim.getEyeHeight(), victim.z, 'block.anvil.place', 'neutral', 1, Math.random() * 0.25 + 0.9);
 				}
 				break;
 			}
@@ -339,12 +339,12 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 						0, 0, 0,
 						1, 0
 					);
-					level.playSound(null, new Vec3d(victim.x, victim.y + victim.getEyeHeight(), victim.z), 'entity.generic.explode', 'players');
-					global.getEntitiesInRadius(level, x, y, z, 1.75).forEach(/** @param {Internal.Entity_} e*/ e => {
-						e.attack(global.getDamageSource(level, 'minecraft:player_explosion', null, player), 12);
+					level.playSound(null, victim.x, victim.y + victim.getEyeHeight(), victim.z, 'entity.generic.explode', 'neutral', 1, Math.random() * 0.2 + 0.9);
+					global.getEntitiesInRadius(level, victim.x, victim.y, victim.z, 1.75).forEach(/** @param {Internal.Entity_} e*/ e => {
+						e.attack(global.getDamageSource(level, 'minecraft:player_explosion', null, attacker), event.getAmount() * 0.15);
 						e.setSecondsOnFire(4);
 					});
-					player.persistentData.fierySwordCanExplode = false;
+					attacker.persistentData.fierySwordCanExplode = false;
 				}
 				break;
 			}
@@ -493,7 +493,7 @@ EntityEvents.death(event => {
 				if (sound) {
 					let v = (volume) ? volume : 0.75;
 					let p = (pitch) ? pitch : 1.0;
-					level.playSound(null, atEntity.x, atEntity.y, atEntity.z, sound, 'neutral', volume, pitch);
+					level.playSound(null, atEntity.x, atEntity.y, atEntity.z, sound, 'neutral', v, p);
 				}
 				if (particle) {
 					let d = (delta) ? delta : 0.33;

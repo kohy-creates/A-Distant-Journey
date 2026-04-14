@@ -1,4 +1,4 @@
-galosphere:silver_bomb
+galosphere:palladium_bomb
 /_boat
 /_raft
 /potion

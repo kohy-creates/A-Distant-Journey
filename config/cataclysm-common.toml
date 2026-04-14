@@ -126,7 +126,7 @@
 		void_forge_cooldown = 100
 		#Void Forge Rune Damage
 		#Range: 0.0 ~ 1000000.0
-		void_forge_rune_damage = 7.0
+		void_forge_rune_damage = 70.0
 
 		[tools_and_abilities.void_forge.tool_config]
 			#Tool attack damage
@@ -158,7 +158,7 @@
 		missile_cooldown = 40
 		#Missile Damage
 		#Range: 0.0 ~ 100000.0
-		missile_damage = 16.0
+		missile_damage = 40.0
 		#Howitzer Cooldown
 		#Range: 0 ~ 1000
 		howitzer_cooldown = 100
@@ -177,7 +177,7 @@
 		void_core_cooldown = 160
 		#Void Core Rune Damage
 		#Range: 0.0 ~ 1000000.0
-		void_core_rune_damage = 7.0
+		void_core_rune_damage = 132.0
 
 	[tools_and_abilities.sandstorm]
 		#Cooldown
@@ -226,7 +226,7 @@
 	[tools_and_abilities.ceraunus]
 		#Ceraunus Wave Damage
 		#Range: 0.0 ~ 1000000.0
-		ceraunus_wave_damage = 6.0
+		ceraunus_wave_damage = 60.0
 		#Ceraunus Cooldown
 		#Range: 0 ~ 1000000
 		ceraunus_cooldown = 150

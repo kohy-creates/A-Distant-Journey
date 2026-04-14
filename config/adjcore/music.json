@@ -81,5 +81,274 @@
 		"#adj:warped_forest": "adj:music.biome.warped_forest",
 		"#adj:basalt_deltas": "adj:music.biome.basalt_deltas"
 	},
-	"boss": {}
+	"boss": {
+		"botania:doppleganger": {
+			"phase_1": {
+				"track": "adj:music.boss.doppleganger",
+				"title": "doppleganger",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"cataclysm:ignis": {
+			"phase_1": {
+				"track": "adj:music.boss.ignis",
+				"title": "ignis_phase_1",
+				"author": "ZUN",
+				"distance": 100
+			},
+			"phase_2": {
+				"track": "adj:music.boss.ignis",
+				"title": "ignis_phase_2",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"cataclysm:netherite_monstrosity": {
+			"phase_1": {
+				"track": "adj:music.boss.netherite_monstrosity",
+				"title": "netherite_monstrosity",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"cataclysm:ender_guardian": {
+			"phase_1": {
+				"track": "adj:music.boss.ender_guardian",
+				"title": "ender_guardian",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"cataclysm:the_harbinger": {
+			"phase_1": {
+				"track": "adj:music.boss.the_harbinger",
+				"title": "the_harbinger",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"cataclysm:the_leviathan": {
+			"phase_1": {
+				"track": "adj:music.boss.the_leviathan",
+				"title": "the_leviathan",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"cataclysm:ancient_remnant": {
+			"phase_1": {
+				"track": "adj:music.boss.ancient_remnant",
+				"title": "ancient_remnant",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"cataclysm:maledictus": {
+			"phase_1": {
+				"track": "adj:music.boss.maledictus",
+				"title": "maledictus",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"cataclysm:scylla": {
+			"phase_1": {
+				"track": "adj:music.boss.scylla",
+				"title": "scylla",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"unusualend:endstone_golem": {
+			"phase_1": {
+				"track": "adj:music.boss.endstone_golem",
+				"title": "endstone_golem",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"unusualend:enderblob_queen": {
+			"phase_1": {
+				"track": "adj:music.boss.enderblob_queen",
+				"title": "enderblob_queen",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"ars_nouveau:wilden_boss": {
+			"phase_1": {
+				"track": "adj:music.boss.wilden_boss",
+				"title": "wilden_boss",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"aether:slider": {
+			"phase_1": {
+				"track": "adj:music.boss.slider",
+				"title": "slider",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"aether:valkyrie_queen": {
+			"phase_1": {
+				"track": "adj:music.boss.valkyrie_queen",
+				"title": "valkyrie_queen",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"aether:sun_spirit": {
+			"phase_1": {
+				"track": "adj:music.boss.sun_spirit",
+				"title": "sun_spirit",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"ancient_aether:mutated_aechor_plant": {
+			"phase_1": {
+				"track": "adj:music.boss.mutated_aechor_plant",
+				"title": "mutated_aechor_plant",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"lost_aether_content:aerwhale_king": {
+			"phase_1": {
+				"track": "adj:music.boss.aerwhale_king",
+				"title": "aerwhale_king",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"rediscovered:red_dragon": {
+			"phase_1": {
+				"track": "adj:music.boss.red_dragon",
+				"title": "red_dragon",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"alexscaves:luxtructosaurus": {
+			"phase_1": {
+				"track": "adj:music.boss.luxtructosaurus",
+				"title": "luxtructosaurus",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"twilightforest:naga": {
+			"phase_1": {
+				"track": "adj:music.boss.naga",
+				"title": "naga",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"twilightforest:lich": {
+			"phase_1": {
+				"track": "adj:music.boss.lich",
+				"title": "lich",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"twilightforest:minoshroom": {
+			"phase_1": {
+				"track": "adj:music.boss.minoshroom",
+				"title": "minoshroom",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"twilightforest:hydra": {
+			"phase_1": {
+				"track": "adj:music.boss.hydra",
+				"title": "hydra",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"twilightforest:knight_phantom": {
+			"phase_1": {
+				"track": "adj:music.boss.knight_phantom",
+				"title": "knight_phantom",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"twilightforest:ur_ghast": {
+			"phase_1": {
+				"track": "adj:music.boss.ur_ghast",
+				"title": "ur_ghast",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"twilightforest:alpha_yeti": {
+			"phase_1": {
+				"track": "adj:music.boss.alpha_yeti",
+				"title": "alpha_yeti",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"twilightforest:snow_queen": {
+			"phase_1": {
+				"track": "adj:music.boss.snow_queen",
+				"title": "snow_queen",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"aquamirae:captain_cornelia": {
+			"phase_1": {
+				"track": "adj:music.boss.captain_cornelia",
+				"title": "captain_cornelia",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"witherstormmod:command_block": {
+			"phase_1": {
+				"track": "adj:music.boss.command_block.approaching",
+				"title": "command_block_phase_1",
+				"author": "ZUN",
+				"distance": 150
+			},
+			"phase_2": {
+				"track": "adj:music.boss.command_block.combat",
+				"title": "command_block_phase_2",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"witherstormmod:withered_symbiont": {
+			"phase_1": {
+				"track": "adj:music.boss.withered_symbiont",
+				"title": "withered_symbiont",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"minecraft:ender_dragon": {
+			"phase_1": {
+				"track": "adj:music.boss.ender_dragon",
+				"title": "ender_dragon",
+				"author": "ZUN",
+				"distance": 100
+			}
+		},
+		"minecraft:wither": {
+			"phase_1": {
+				"track": "adj:music.boss.wither",
+				"title": "wither",
+				"author": "ZUN",
+				"distance": 100
+			}
+		}
+	}
 }

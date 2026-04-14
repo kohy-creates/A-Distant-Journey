@@ -1,8 +1,8 @@
 ServerEvents.tags('item', tags => {
 
-	global.blacklistedItems.forEach(i => {
-		tags.removeAllTagsFrom(i);
-	})
+	// global.blacklistedItemsArray.forEach(i => {
+	// 	tags.removeAllTagsFrom(i);
+	// });
 
 	tags.add('adj:vanity', [
 		/etcetera:.*_hat/,
@@ -444,4 +444,20 @@ ServerEvents.tags('item', tags => {
 	tags.remove('twilightforest:fiery_vial', [
 		'twilightforest:fiery_tears'
 	]);
+
+	const palladiumTags = [
+		'c:palladium_ingots',
+		'c:palladium_ores',
+		'c:raw_palladium_blocks',
+		'c:raw_palladium_ores',
+		'c:palladium_nuggets',
+		'c:palladium_blocks',
+	];
+	palladiumTags.forEach(tag => tags.remove(tag, [/galosphere/]));
+
+	tags.add('adj:silver_ores', [
+		'galosphere:palladium_ore',
+		'galosphere:deepslate_palladium_ore',
+	]);
+
 });

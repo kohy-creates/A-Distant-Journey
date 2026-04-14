@@ -36,22 +36,22 @@
 	sinister_carrot_loot_chance = 0.3
 	#percent chance of burried treasure loot table containing Bubbling book:
 	#Range: 0.0 ~ 1.0
-	bubbling_loot_chance = 0.65
+	bubbling_loot_chance = 0.5
 	#percent chance of woodland mansion loot table containing Vampire book:
 	#Range: 0.0 ~ 1.0
-	vampirism_loot_chance = 0.22
+	vampirism_loot_chance = 0.2
 	#percent chance of end city loot table containing Void Cloud book:
 	#Range: 0.0 ~ 1.0
-	void_cloud_loot_chance = 0.19
+	void_cloud_loot_chance = 0.1
 	#percent chance of mineshaft loot table containing Ore Scenting book:
 	#Range: 0.0 ~ 1.0
-	ore_scenting_loot_chance = 0.15
+	ore_scenting_loot_chance = 0.1
 	#percent chance of ancient city loot table containing Muffled book:
 	#Range: 0.0 ~ 1.0
-	muffled_loot_chance = 0.19
+	muffled_loot_chance = 0.15
 	#percent chance of nether fortress loot table containing Blazing Protection book:
 	#Range: 0.0 ~ 1.0
-	blazing_protection_loot_chance = 0.2
+	blazing_protection_loot_chance = 0.12
 
 [enchantments]
 	#true if health boost enchant is enabled, false if disabled

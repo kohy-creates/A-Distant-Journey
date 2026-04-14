@@ -96,3 +96,6 @@ net.minecraft.client.gui.screens.ConfirmScreen {
 net.minecraft.client.gui.screens.worldselection.EditWorldScreen {
 }
 
+io.github.thecsdev.betterstats.api.client.gui.screen.BetterStatsScreenWrapper {
+}
+

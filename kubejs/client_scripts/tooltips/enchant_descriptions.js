@@ -131,7 +131,9 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced('minecraft:enchanted_book', (item, advanced, tooltip) => {
 
 		/** @type {any[]} */
-		const enchantments = item.nbt.StoredEnchantments;
+		let nbt = item.nbt;
+		if (!nbt) return;
+		const enchantments = nbt.StoredEnchantments;
 		if (!enchantments) return;
 		const amount = enchantments.length;
 		if (amount == 0) return;

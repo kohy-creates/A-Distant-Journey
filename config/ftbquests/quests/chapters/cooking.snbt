@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "cooking"
 	group: "12494D4A5CAA903A"
+	icon: "kubejs:eye_of_hedonism"
 	id: "438B2CBD4872B65D"
 	order_index: 2
 	quest_links: [ ]

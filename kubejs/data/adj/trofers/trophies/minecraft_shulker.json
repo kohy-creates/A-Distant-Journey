@@ -1,6 +1,6 @@
 {
 	"colors": {
-		"accent": "#916d8a",
+		"accent": "#926e8b",
 		"base": "#606060"
 	},
 	"display": {
@@ -15,7 +15,7 @@
 		"with": [
 			{
 				"translate": "entity.minecraft.shulker",
-				"color": "#916d8a"
+				"color": "#926e8b"
 			}
 		]
 	}

@@ -91,27 +91,22 @@ LootJS.modifiers((event) => {
 		'delightful:flint_knife',
 		'farmersdelight:flint_knife',
 
-	].concat(global.blacklistedItems)
-	removedFromLoot.forEach(e => {
-		event.addLootTableModifier(/.*/).removeLoot(e)
-	})
+	].concat(global.blacklistedItemsArray);
+	removedFromLoot.forEach(e => event.addLootTableModifier(/.*/).removeLoot(e));
 
 	const removeModifiersFromMods = [
 		'terra_curio',
 		'evilcraft',
-		'croptopia',
 		'travelersbackpack'
-	]
-	removeModifiersFromMods.forEach(mod => {
-		event.removeGlobalModifier(`@${mod}`);
-	})
+	];
+	removeModifiersFromMods.forEach(mod => event.removeGlobalModifier(`@${mod}`));
 
 	const replaceSeedsIn = [
 		'grass',
 		'fern',
 		'tall_grass',
 		'large_fern'
-	]
+	];
 	replaceSeedsIn.forEach(block => {
 		event.addBlockLootModifier(block)
 			.removeLoot('minecraft:wheat_seeds')
@@ -124,69 +119,14 @@ LootJS.modifiers((event) => {
 						0.05
 					]
 				);
-				pool.not(c => {
-					c.matchMainHand(ForgeItemFilter.canPerformAction('shears_dig'))
-				});
+				pool.not(c => c.matchMainHand(ForgeItemFilter.canPerformAction('shears_dig')));
 				pool.addWeightedLoot([
 					LootEntry.of('wheat_seeds').withWeight(350),
 					LootEntry.of('beetroot_seeds').withWeight(80),
 					LootEntry.of('pumpkin_seeds').withWeight(2),
 					LootEntry.of('melon_seeds').withWeight(2),
 					LootEntry.of('etcetera:cotton_seeds').withWeight(210),
-					LootEntry.of('croptopia:vanilla_seeds').withWeight(4),
-					LootEntry.of('croptopia:artichoke_seed').withWeight(4),
-					LootEntry.of('croptopia:asparagus_seed').withWeight(4),
-					LootEntry.of('croptopia:barley_seed').withWeight(4),
-					LootEntry.of('croptopia:basil_seed').withWeight(4),
-					LootEntry.of('croptopia:bellpepper_seed').withWeight(4),
-					LootEntry.of('croptopia:blackbean_seed').withWeight(4),
-					LootEntry.of('croptopia:blackberry_seed').withWeight(4),
-					LootEntry.of('croptopia:blueberry_seed').withWeight(4),
-					LootEntry.of('croptopia:broccoli_seed').withWeight(4),
-					LootEntry.of('croptopia:cantaloupe_seed').withWeight(4),
-					LootEntry.of('croptopia:cauliflower_seed').withWeight(4),
-					LootEntry.of('croptopia:celery_seed').withWeight(4),
-					LootEntry.of('croptopia:chile_pepper_seed').withWeight(4),
-					LootEntry.of('croptopia:coffee_seed').withWeight(4),
-					LootEntry.of('croptopia:corn_seed').withWeight(4),
-					LootEntry.of('croptopia:cranberry_seed').withWeight(4),
-					LootEntry.of('croptopia:cucumber_seed').withWeight(4),
-					LootEntry.of('croptopia:currant_seed').withWeight(4),
-					LootEntry.of('croptopia:eggplant_seed').withWeight(4),
-					LootEntry.of('croptopia:elderberry_seed').withWeight(4),
-					LootEntry.of('croptopia:garlic_seed').withWeight(4),
-					LootEntry.of('croptopia:ginger_seed').withWeight(4),
-					LootEntry.of('croptopia:greenbean_seed').withWeight(4),
-					LootEntry.of('croptopia:greenonion_seed').withWeight(4),
-					LootEntry.of('croptopia:honeydew_seed').withWeight(4),
-					LootEntry.of('croptopia:hops_seed').withWeight(4),
-					LootEntry.of('croptopia:kale_seed').withWeight(4),
-					LootEntry.of('croptopia:kiwi_seed').withWeight(4),
-					LootEntry.of('croptopia:leek_seed').withWeight(4),
-					LootEntry.of('croptopia:lettuce_seed').withWeight(4),
-					LootEntry.of('croptopia:mustard_seed').withWeight(4),
-					LootEntry.of('croptopia:oat_seed').withWeight(4),
-					LootEntry.of('croptopia:olive_seed').withWeight(4),
-					LootEntry.of('croptopia:peanut_seed').withWeight(4),
-					LootEntry.of('croptopia:pepper_seed').withWeight(4),
-					LootEntry.of('croptopia:pineapple_seed').withWeight(4),
-					LootEntry.of('croptopia:radish_seed').withWeight(4),
-					LootEntry.of('croptopia:raspberry_seed').withWeight(4),
-					LootEntry.of('croptopia:rhubarb_seed').withWeight(4),
-					LootEntry.of('croptopia:rutabaga_seed').withWeight(4),
-					LootEntry.of('croptopia:saguaro_seed').withWeight(4),
-					LootEntry.of('croptopia:soybean_seed').withWeight(4),
-					LootEntry.of('croptopia:spinach_seed').withWeight(4),
-					LootEntry.of('croptopia:squash_seed').withWeight(4),
-					LootEntry.of('croptopia:sweetpotato_seed').withWeight(4),
-					LootEntry.of('croptopia:tomatillo_seed').withWeight(4),
-					LootEntry.of('croptopia:turmeric_seed').withWeight(4),
-					LootEntry.of('croptopia:turnip_seed').withWeight(4),
-					LootEntry.of('croptopia:vanilla_seeds').withWeight(4),
-					LootEntry.of('croptopia:yam_seed').withWeight(4),
-					LootEntry.of('croptopia:zucchini_seed').withWeight(4),
-
-				])
+				]);
 			});
 	});
 

@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = level_loading_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1775336599017
+  last_edited_time = 1776173511832
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:c6720687-4992-42d6-a98d-d7ccba357d3d-1775336585275] = [groups:][instances:]
+  [loading_requirement_container_meta:0113e402-8b01-439b-a166-5f86ba318afa-1776172908218] = [groups:][instances:]
 }
 
 customization {
@@ -45,7 +45,7 @@ element {
   base_opacity = 0.5
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1200
   sticky_anchor = false
   anchor_point = mid-centered
   x = -57
@@ -92,7 +92,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1200
   sticky_anchor = false
   anchor_point = mid-centered
   x = -165
@@ -122,7 +122,7 @@ element {
 
 element {
   interactable = true
-  source = Girls are Now Praying
+  source = %!!smallcaps%Girls   are   Now   Praying%!!%
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -167,9 +167,9 @@ element {
   auto_sizing_base_screen_height = 1200
   sticky_anchor = false
   anchor_point = bottom-right
-  x = -125
-  y = -36
-  width = 116
+  x = -137
+  y = -30
+  width = 120
   height = 15
   stretch_x = false
   stretch_y = false
@@ -193,8 +193,8 @@ element {
 }
 
 element {
-  bar_color = #80FF80
-  background_color = #808080
+  bar_color = #00FC01
+  background_color = #000000
   direction = right
   progress_for_element_anchor = false
   progress_source = {"placeholder":"world_load_progress"}
@@ -214,10 +214,10 @@ element {
   auto_sizing_base_screen_height = 1200
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -102
-  y = 45
-  width = 200
-  height = 20
+  x = -122
+  y = 52
+  width = 242
+  height = 5
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -241,10 +241,10 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%**{"placeholder":"world_load_progress"}%**%n%^^^
+  source = ^^^%n%{"placeholder":"world_load_progress"}%%n%^^^
   source_mode = direct
-  shadow = true
-  scale = 1.25
+  shadow = false
+  scale = 1.0
   base_color = #FFFFFFFF
   text_border = 2
   line_spacing = 2
@@ -283,12 +283,11 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1200
   sticky_anchor = false
-  anchor_point = element
-  anchor_point_element = 26b63d87-b950-4b8a-bc52-c4a8ec8ec368-1741010785233
-  x = 45
-  y = 3
+  anchor_point = mid-centered
+  x = -57
+  y = 37
   width = 110
   height = 15
   stretch_x = false
@@ -532,7 +531,7 @@ vanilla_button {
   sticky_anchor = false
   anchor_point = vanilla
   x = 220
-  y = 146
+  y = 166
   width = 200
   height = 9
   stretch_x = false

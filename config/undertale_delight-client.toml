@@ -1,0 +1,5 @@
+
+[TitleScreenSettings]
+	#Enable title screen music
+	enableTitleScreenMusic = false
+

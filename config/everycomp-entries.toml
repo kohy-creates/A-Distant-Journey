@@ -177,9 +177,6 @@
 			highsproot = true
 			sakura = true
 
-		[types.leaves_type.croptopia]
-			cinnamon = true
-
 		[types.leaves_type.vinery]
 			grapevine = true
 			dark_cherry = true
@@ -187,6 +184,9 @@
 
 		[types.leaves_type.beachparty]
 			palm = true
+
+		[types.leaves_type.galosphere]
+			opal = true
 
 	[types.cake]
 
@@ -206,6 +206,9 @@
 			banana_cake = true
 			mint_cake = true
 			adzuki_cake = true
+
+		[types.cake.veggiesdelight]
+			carrot_cake = true
 
 	[types.cut_block_type]
 
@@ -270,8 +273,6 @@
 			cirite_brick = true
 
 		[types.cut_block_type.galosphere]
-			silver_tiles = true
-			silver_panel = true
 			smooth_amethyst = true
 			smooth_allurite = true
 			smooth_lumiere = true
@@ -287,6 +288,9 @@
 			pink_salt_brick = true
 			rose_pink_salt_brick = true
 			pastel_pink_salt_brick = true
+			palladium_tiles = true
+			palladium_panel = true
+			opal_brick = true
 
 		[types.cut_block_type.cataclysm]
 			polished_end_stone = true
@@ -801,6 +805,14 @@
 
 		[types.cut_block_type.waxed]
 			waxed_prismarine = true
+
+		[types.cut_block_type.kubejs]
+			cinnabar = true
+			polished_cinnabar = true
+			cinnabar_bricks = true
+			sulfur = true
+			polished_sulfur = true
+			sulfur_bricks = true
 
 #Disables specific entries
 [entries]

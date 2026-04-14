@@ -21,7 +21,7 @@
 			rotation: 0.0d
 			width: 2.0d
 			x: -7.5d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependency: "1DC3FEA4EA21551B"
@@ -30,7 +30,7 @@
 			rotation: 0.0d
 			width: 3.0d
 			x: -11.0d
-			y: 0.0d
+			y: 1.0d
 		}
 	]
 	order_index: 0
@@ -74,7 +74,7 @@
 			id: "4BECD0660111B4AC"
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "Craft an Easel and a Palette"
+			subtitle: "Craft an Easel, a Palette, a Canvas and start painting!"
 			tasks: [
 				{
 					id: "636254EBFFDD5CE7"
@@ -84,6 +84,18 @@
 				{
 					id: "381CA88621AA202F"
 					item: "xercapaint:item_palette"
+					type: "item"
+				}
+				{
+					id: "5543EFAA6A7EA9DF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "adj:canvas"
+						}
+					}
+					title: "Any Canvas"
 					type: "item"
 				}
 			]
@@ -148,28 +160,7 @@
 				type: "item"
 			}]
 			title: "The Color Update"
-			x: -3.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["4BECD0660111B4AC"]
-			icon: "xercapaint:item_canvas"
-			id: "31FBE61EE6BDB2D3"
-			subtitle: "Craft a Canvas and place it on your Easel"
-			tasks: [{
-				id: "6BB2DCE965BE6E4F"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "adj:canvas"
-					}
-				}
-				title: "Craft any Canvas"
-				type: "item"
-			}]
-			title: "Artpop"
-			x: -0.5d
+			x: -3.0d
 			y: 2.5d
 		}
 		{
@@ -190,8 +181,8 @@
 				type: "item"
 			}]
 			title: "Printing Process"
-			x: -6.0d
-			y: 0.0d
+			x: -5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5B5CD3D317CB17D8"]
@@ -212,7 +203,7 @@
 			]
 			title: "Captured Moment"
 			x: -7.5d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1DC3FEA4EA21551B"]
@@ -225,7 +216,7 @@
 			}]
 			title: "A House of Memories"
 			x: -9.0d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1DC3FEA4EA21551B"]
@@ -238,7 +229,7 @@
 			}]
 			title: "Forever In Our Memories"
 			x: -9.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["74568A8CB40BC9F8"]
@@ -352,8 +343,8 @@
 				type: "item"
 			}]
 			title: "'Artist'"
-			x: -2.0d
-			y: 3.0d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5F271343FFAAE7C8"]
@@ -365,8 +356,8 @@
 				type: "item"
 			}]
 			title: "Subway Surfers"
-			x: -2.0d
-			y: 4.5d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7E4B8BBFB0884187"]
@@ -503,6 +494,53 @@
 			}]
 			title: "&lClick to read"
 			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3A017BDC7B799F5B"]
+			icon: "exposure_expanded:deconverge_filter"
+			id: "087EF13C4C09AE82"
+			subtitle: "Obtain one of each items that can modify your Camera - a filter, a lens and a flash"
+			tasks: [
+				{
+					id: "27D088359A7DEBCF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "exposure:filters"
+						}
+					}
+					title: "Any Camera Filter"
+					type: "item"
+				}
+				{
+					id: "260B4D8B25E9A52F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "exposure:lenses"
+						}
+					}
+					title: "Any Camera Lens"
+					type: "item"
+				}
+				{
+					id: "6B821892CE4080B6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "exposure:flashes"
+						}
+					}
+					title: "A Camera Flash"
+					type: "item"
+				}
+			]
+			title: "Aesthetical!"
+			x: -5.5d
 			y: -1.0d
 		}
 	]

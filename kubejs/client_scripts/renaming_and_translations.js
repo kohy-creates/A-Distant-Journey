@@ -203,6 +203,22 @@ ClientEvents.lang('en_us', event => {
 
 		'nether_wart': 'Crimson Wart',
 		'nether_wart_block': 'Crimson Wart Block',
+		'netherexp:nether_wart_beard': 'Crimson Wart Beard',
+		'quark:nether_wart_sack': 'Crimson Wart Sack',
+
+		'galosphere:palladium_block': 'Silver Block',
+		'galosphere:palladium_panel': 'Silver Panel',
+		'galosphere:palladium_panel_stairs': 'Silver Panel Stairs',
+		'galosphere:palladium_panel_slab': 'Silver Panel Slab',
+		'v_slab_compat:galosphere/palladium_panel_vertical_slab': 'Silver Panel Vertical Slab',
+		'galosphere:palladium_tiles': 'Silver Tiles',
+		'galosphere:palladium_tiles_stairs': 'Silver Tiles Stairs',
+		'galosphere:palladium_tiles_slab': 'Silver Tiles Slab',
+		'v_slab_compat:galosphere/palladium_tiles_vertical_slab': 'Silver Tiles Vertical Slab',
+		'galosphere:palladium_lattice': 'Silver Bars',
+		'galosphere:palladium_ore': 'Silver Ore',
+		'galosphere:deepslate_palladium_ore': 'Deepslate Silver Ore',
+		'galosphere:raw_palladium_block': 'Raw Silver Block'
 	};
 
 	/** @type {Record<Internal.InputItem_, string>} */
@@ -271,6 +287,13 @@ ClientEvents.lang('en_us', event => {
 		'aether:leather_gloves': 'Leather Fistwraps',
 		'aether:obsidian_gloves': 'Obsidian Gauntlets',
 		'aether:phoenix_gloves': 'Phoenix Gauntlets',
+
+		'nether_wart': 'Crimson Wart',
+
+		'galosphere:palladium_bomb': 'Silver Bomb',
+		'galosphere:raw_palladium': 'Raw Silver',
+		'galosphere:palladium_ingot': 'Silver Ingot',
+		'galosphere:palladium_nugget': 'Silver Nugget',
 	};
 
 	const entityRenames = {

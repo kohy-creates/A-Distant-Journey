@@ -8,6 +8,8 @@
 			<condition>is_bucket</condition>
 			<condition>id = twilightforest:charm_of_life_2</condition>
 			<condition>id = evilcraft:blood_extractor</condition>
+			<condition>id = minecraft:nether_star</condition>
+			<condition>id = witherstormmod:withered_nether_star</condition>
 		</or>
 	</rule>
 	<rule stacksize="4">

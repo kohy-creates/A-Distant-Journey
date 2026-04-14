@@ -24,7 +24,7 @@ useItemBorder = false
 colorOverrides = [  ]
 particleMaxHeight = 0.8464052
 particleMaxSpeed = 0.7457516
-particleDensity = 0.5970588235294116
+particleDensity = 0.2970588235294116
 
 [projectiles]
 enderPearlTrailDensity = 0.5

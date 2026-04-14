@@ -5,7 +5,7 @@
 	disable_toast: true
 	filename: "intro"
 	group: ""
-	icon: "ars_nouveau:worn_notebook"
+	icon: "aether:book_of_lore"
 	id: "6827135B158F87E2"
 	images: [{
 		height: 10.0d
@@ -364,6 +364,33 @@
 			title: "&l&fBasics:&r &cDying"
 			x: -2.5d
 			y: -0.5d
+		}
+		{
+			dependencies: ["4A074153AE2D521D"]
+			description: [
+				"I'll write this one down because it was causing &oplenty&r of confusion before the 1.4.0 update."
+				""
+				"&2&lThe &a&lhappier &2&lyour Villagers, the &e&llower &2&ltheir prices!"
+				""
+				"Now that I got that out of the way, let me dive into how this system actually works..."
+				"{@pagebreak}"
+				"If your Villagers are all mashed together in a huge breeder, with no proper housing whatsoever, &cthey become unhappy&r. Same if they &ecan't go outside for a long while&r, &etoo many live in the same house&r or &ehave no house or their house is too small&r. While &cunhappy&r, their prices will be &cincreased proportionally to their unhapiness&r (max &c+50%&r)."
+				""
+				"The &aopposite&r happens if you provide them with everything they need"
+			]
+			icon: "artifacts:villager_hat"
+			id: "0A034500CAB88067"
+			subtitle: "Click to read"
+			tasks: [{
+				icon: "minecraft:emerald"
+				id: "2E40564B1DFE7CAD"
+				structure: "#minecraft:village"
+				title: "Find any Viillage"
+				type: "structure"
+			}]
+			title: "&l&fTutorial:&r &aVillager Happiness"
+			x: 0.5d
+			y: -1.0d
 		}
 	]
 	title: "Intro"
