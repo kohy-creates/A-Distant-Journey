@@ -128,3 +128,5 @@ oculus.properties
 modlist.json
 config/spark/activity.json
 .boss_checklist_data/
+servers.dat
+servers.dat.old
