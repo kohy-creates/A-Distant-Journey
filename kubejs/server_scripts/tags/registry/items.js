@@ -460,4 +460,28 @@ ServerEvents.tags('item', tags => {
 		'galosphere:deepslate_palladium_ore',
 	]);
 
+	tags.add('c:raw_gravitite_ores', ['aether_redux:raw_gravitite', 'kubejs:gravitite_dust']);
+	tags.add('c:raw_valkyrum_ores', ['aether_redux:raw_valkyrum', 'kubejs:valkyrum_dust']);
+	tags.add('c:raw_veridium_ores', ['aether_redux:raw_veridium', 'kubejs:veridium_dust']);
+	tags.add('c:raw_azure_neodymium_ores', ['alexscaves:raw_azure_neodymium', 'kubejs:azure_neodymium_dust']);
+	tags.add('c:raw_scarlet_neodymium_ores', ['alexscaves:raw_scarlet_neodymium', 'kubejs:scarlet_neodymium_dust']);
+	tags.add('c:raw_zinc_ores', ['create:raw_zinc', 'kubejs:zinc_dust']);
+	tags.add('c:raw_bismuth_ores', ['etcetera:raw_bismuth', 'kubejs:bismuth_dust']);
+	tags.add('c:raw_silver_ores', ['galosphere:raw_palladium', 'kubejs:silver_dust']);
+	tags.add('c:raw_copper_ores', ['raw_copper', 'kubejs:copper_dust']);
+	tags.add('c:raw_gold_ores', ['raw_gold', 'kubejs:gold_dust']);
+	tags.add('c:raw_iron_ores', ['raw_iron', 'kubejs:iron_dust']);
+	tags.add('c:raw_adamantite_ores', ['mythicmetals:raw_adamantite', 'kubejs:adamantite_dust']);
+	tags.add('c:raw_aquarium_ores', ['mythicmetals:raw_aquarium', 'kubejs:aquarium_dust']);
+	tags.add('c:raw_kyber_ores', ['mythicmetals:raw_kyber', 'kubejs:kyber_dust']);
+	tags.add('c:raw_midas_gold_ores', ['mythicmetals:raw_midas_gold', 'kubejs:midas_gold_dust']);
+	tags.add('c:raw_mythril_ores', ['mythicmetals:raw_mythril', 'kubejs:mythril_dust']);
+	tags.add('c:raw_orichalcum_ores', ['mythicmetals:raw_orichalcum', 'kubejs:orichalcum_dust']);
+	tags.add('c:raw_osmium_ores', ['mythicmetals:raw_osmium', 'kubejs:osmium_dust']);
+	tags.add('c:raw_palladium_ores', ['mythicmetals:raw_palladium', 'kubejs:palladium_dust']);
+	tags.add('c:raw_platinum_ores', ['mythicmetals:raw_platinum', 'kubejs:platinum_dust']);
+	tags.add('c:raw_prometheum_ores', ['mythicmetals:raw_prometheum', 'kubejs:prometheum_dust']);
+	tags.add('c:raw_runite_ores', ['mythicmetals:raw_runite', 'kubejs:runite_dust']);
+	tags.add('c:raw_stormyx_ores', ['mythicmetals:raw_stormyx', 'kubejs:stormyx_dust']);
+	tags.add('c:raw_tin_ores', ['mythicmetals:raw_tin', 'kubejs:tin_dust']);
 });

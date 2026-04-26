@@ -131,6 +131,20 @@ LootJS.modifiers((event) => {
 	});
 
 
+	event.addEntityLootModifier('glow_squid')
+		.removeLoot('miners_delight:glow_squid')
+		.pool(pool => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('miners_delight:glow_squid').when(c => c.randomChance(0.5)));
+		});
+
+	event.addEntityLootModifier('squid')
+		.removeLoot('miners_delight:squid')
+		.pool(pool => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('miners_delight:squid').when(c => c.randomChance(0.5)));
+		});
+
 	/**
 	 * @param {Internal.GroupedLootBuilder_} pool 
 	 */

@@ -19,12 +19,6 @@
     "water_color": 5403556,
     "water_fog_color": 2699581
   },
-  "particle": {
-    "options": {
-      "type": "minecraft:snowflake"
-    },
-    "probability": 0.0004
-  },
   "features": [
     [],
     [

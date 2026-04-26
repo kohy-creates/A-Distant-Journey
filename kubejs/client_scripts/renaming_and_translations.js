@@ -53,6 +53,12 @@ ClientEvents.lang('en_us', event => {
 		'architects_palette.info.dimension.rediscovered.skylands': 'the Skylands',
 
 		'block.aether.potted_skyroot_sapling': 'Potted Skyroot Sapling',
+
+		'entity.minecraft.villager.animal_tamer': 'Animal Tamer',
+		'entity.minecraft.villager.archeologist': 'Archeologist',
+		'entity.minecraft.villager.gardener': 'Gardener',
+		'entity.minecraft.villager.spelunker': 'Spelunker',
+		'entity.minecraft.villager.werewolf': 'Werewolf',
 	};
 
 	/** @type {Record<Internal.Block_, string>} */

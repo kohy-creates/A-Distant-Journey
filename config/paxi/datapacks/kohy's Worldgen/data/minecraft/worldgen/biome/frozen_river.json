@@ -15,12 +15,6 @@
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "particle": {
-      "options": {
-        "type": "minecraft:snowflake"
-      },
-      "probability": 0.0004
-    },
     "grass_color": 7911573,
     "sky_color": 10009068,
     "water_color": 8303069,

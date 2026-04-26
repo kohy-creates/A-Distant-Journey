@@ -6,6 +6,7 @@ const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Att
 const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation');
 const $ItemAttributeModifierEvent = Java.loadClass('net.minecraftforge.event.ItemAttributeModifierEvent');
 const $PerkUtil = Java.loadClass("com.hollingsworth.arsnouveau.api.util.PerkUtil");
+const $BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem');
 
 const miningSpeedUUID = '80091653-9902-44f9-95a7-d627610856c0';
 const harvestLevelUUID = '84257908-8296-4470-ad2e-97e5db59b64e';
@@ -174,22 +175,22 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 					if (overrides[attribute].values[slots.indexOf(slot)] == 0) continue;
 					event.addModifier(attribute,
 						new $AttributeModifier(uuid, uuid, overrides[attribute].values[slots.indexOf(slot)],
-							$Operation.fromValue(overrides[attribute].operation || 0)))
+							$Operation.fromValue(overrides[attribute].operation || 0)));
 				}
 
 				if (id.includes('ars_nouveau:') || id.includes('ars_elemental:')) {
 					let iPerkHolder = $PerkUtil.getPerkHolder(stack);
 					if (iPerkHolder) {
 						iPerkHolder.getPerkInstances().forEach(perkInstance => {
-							let perk = perkInstance.getPerk();;
+							let perk = perkInstance.getPerk();
 							let multiMap = perk.getModifiers(event.slotType, stack, perkInstance.getSlot().value);
 							multiMap.asMap().entrySet().forEach(entry => {
 								let a = entry.getKey();
 								entry.getValue().forEach(value => {
 									event.addModifier(a, value);
-								})
-							})
-						})
+								});
+							});
+						});
 					}
 				}
 
@@ -197,4 +198,17 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 			}
 		}
 	}
-})
+
+	if (item instanceof $BlockItem) {
+		let block = item.getBlock();
+		let power = 0;
+		try {
+			power = block.getEnchantPowerBonus(block.defaultBlockState(), null, null);
+		} catch (e) {
+			return;
+		}
+		if (event.getSlotType() == 'mainhand' && power > 0) {
+			event.addModifier('kubejs:enchantment_power', new $AttributeModifier('a9b8810d-b148-4eec-9120-5a9d78117297', 'Block Enchantment Bonus', power, 'addition'));
+		}
+	}
+});

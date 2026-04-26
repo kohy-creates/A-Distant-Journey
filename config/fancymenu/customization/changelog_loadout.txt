@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = com.jab125.mpuc.client.gui.screen.changelog.NewChangelogScreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1770162981767
+  last_edited_time = 1776254169790
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:a57d53ef-e756-4c68-b800-35ef8462ade0-1770162979936] = [groups:][instances:]
+  [loading_requirement_container_meta:da7f2bae-2f69-44a2-9e75-48448fb7a69f-1776253851996] = [groups:][instances:]
 }
 
 customization {

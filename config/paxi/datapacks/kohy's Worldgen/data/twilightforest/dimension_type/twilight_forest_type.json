@@ -1,7 +1,7 @@
 {
   "ambient_light": 0.0,
   "bed_works": true,
-  "coordinate_scale": 0.125,
+  "coordinate_scale": 1,
   "effects": "twilightforest:renderer",
   "fixed_time": 13000,
   "has_ceiling": false,
@@ -10,7 +10,7 @@
   "height": 288,
   "infiniburn": "#minecraft:infiniburn_overworld",
   "logical_height": 288,
-  "min_y": -48,
+  "min_y": -32,
   "monster_spawn_block_light_limit": 7,
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",

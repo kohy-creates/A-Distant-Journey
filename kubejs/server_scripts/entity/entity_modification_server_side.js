@@ -155,6 +155,7 @@ function setGear(entity, isHardcore, currentStage) {
 			break;
 		}
 
+		case 'witherstormmod:sickened_zombie':
 		case 'minecraft:husk':
 		case 'minecraft:zombie': {
 			entity.setItemSlot("mainhand", weightedRandom({
@@ -213,9 +214,9 @@ function hardcoreModifications(entity) {
 	switch (entity.type) {
 		case 'minecraft:wither_skeleton': {
 			if (randomChance(10)) {
-				entity.setItemSlot("mainhand", "mythicmetals:midas_gold_sword")
-				entity.setItemSlot("head", "mythicmetals:midas_gold_helmet")
-				entity.setItemSlot("chest", "mythicmetals:midas_gold_chestplate")
+				entity.setItemSlot("mainhand", "mythicmetals:midas_gold_sword");
+				entity.setItemSlot("head", "mythicmetals:midas_gold_helmet");
+				entity.setItemSlot("chest", "mythicmetals:midas_gold_chestplate");
 			}
 			break;
 		}
@@ -231,7 +232,7 @@ function hardcoreModifications(entity) {
 		}
 
 		case 'twilightforest:skeleton_druid': {
-			entity.setItemSlot("head", 'mythicmetals:bronze_helmet')
+			entity.setItemSlot("head", 'mythicmetals:bronze_helmet');
 			break;
 		}
 	}
@@ -239,7 +240,7 @@ function hardcoreModifications(entity) {
 
 // Events
 EntityEvents.spawned((event) => {
-	let entity = event.entity
+	let entity = event.entity;
 
 	if (entity.getType() === 'minecraft:player') return;
 	const tags = entity.getTags().toArray();
@@ -250,25 +251,19 @@ EntityEvents.spawned((event) => {
 		else return;
 	}
 
-	if (!(entity instanceof $LivingEntity)) return
+	if (!(entity instanceof $LivingEntity)) return;
 
-	let isHardcore = event.server.worldData.isHardcore()
-	let chapters = event.server.persistentData.chapters || {}
-	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""))
+	let isHardcore = event.server.worldData.isHardcore();
+	let chapters = event.server.persistentData.chapters || {};
+	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""));
 
 	entity.server.scheduleInTicks(1, () => {
-		specialCase(entity, currentStage)
+		specialCase(entity, currentStage);
 	});
 
-	scaleEntity(entity, currentStage)
-	setGear(entity, isHardcore, currentStage)
+	scaleEntity(entity, currentStage);
+	setGear(entity, isHardcore, currentStage);
 	if (isHardcore) {
-		hardcoreModifications(entity)
+		hardcoreModifications(entity);
 	};
-})
-
-ServerEvents.loaded(function (event) {
-	event.server.runCommandSilent(
-		"/scoreboard players set @s trueEnding_settings.dragonhealth " + global.hpModifications['minecraft:ender_dragon'][0]
-	)
 })

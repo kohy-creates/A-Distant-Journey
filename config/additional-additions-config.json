@@ -37,7 +37,7 @@
   "PoweredRailsCopperRecipe": false,
   "GlowBerryEatGlow": {
     "enabled": true,
-    "duration": 10
+    "duration": 8
   },
   "HastePotions": false
 }

@@ -214,13 +214,14 @@ ItemEvents.modification(event => {
 	}
 
 	Item.getTypeList().forEach(id => {
-		const item = Item.of(id);
+		// console.log(id)
+		let item = Item.of(id);
 
 		let itemRarity = item.getRarity().name().toLowerCase();
 		let foundMatch = false;
 		let rarity = 'chapter_0';
 		Object.keys(global.stageRestrictions).forEach(chapter => {
-			const data = global.stageRestrictions[chapter];
+			let data = global.stageRestrictions[chapter];
 			if ((matchesAny(id, data.list) || matchesAny(id, data.light)) && !matchesAny(id, data.exceptions)) {
 				foundMatch = true;
 				rarity = getRarity(chapter, itemRarity);

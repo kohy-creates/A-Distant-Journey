@@ -103,7 +103,7 @@
 		renderDistantDebris = false
 		#Specifies if the low res models should be used when being rendered via the distant renderer.
 		#Default: false
-		witherStormLOD = true
+		witherStormLOD = false
 		#Uses larger cubes to make up the the phase 4 and up models. May result in a performance increase.
 		#Default: false
 		lowResModels = false

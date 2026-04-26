@@ -113,7 +113,7 @@
 		"keep_equipped": true,
 		"consume_soulbound": false,
 		"show_coordinates_on_death": false,
-		"glowing_killer": true
+		"glowing_killer": false
 	},
 	"brewing": {
 		"antidote": {

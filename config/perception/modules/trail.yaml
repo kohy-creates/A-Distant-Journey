@@ -52,7 +52,29 @@ entityTrails:
         # Ending color of the trail in ARGB format
         fadeOutColor: '#80000000'
         # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
-        maxPoints: 30
+        maxPoints: 35
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.25
+            z: 0.0
+        # Trail thickness
+        size: 0.15
+        # Frequency of trail point placement
+        updateFrequency: 1
+    witherstormmod:sickened_phantom:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FF38007D'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80000000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 35
         # Minimum object movement speed to place trail points
         minSpeed: 0.001
         # Position offset of the trail in the opposite direction from the object's movement

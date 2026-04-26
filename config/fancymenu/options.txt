@@ -14,11 +14,11 @@ B:advanced_customization_mode = 'true';
 
 ##[loading]
 
-S:preload_resources = '[source:local]config/fancymenu/assets/main_menu/title_animated.fma%!source_end!%[source:local]config/fancymenu/assets/loading/loading.fma%!source_end!%';
+S:preload_resources = '[source:local]config/fancymenu/assets/main_menu/title_animated.fma%!source_end!%[source:local]config/fancymenu/assets/loading/loading.fma%!source_end!%[source:local]config/fancymenu/assets/intro.fma%!source_end!%[source:location]adj:sounds/enter_world.ogg%!source_end!%';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '[source:local]/config/fancymenu/assets/intro.fma';
 B:game_intro_fade_out = 'true';
-S:custom_game_intro_skip_text = 'ᴘʀᴇss ᴀɴʏ ʙᴜᴛᴛᴏɴ ᴛᴏ sᴋɪᴘ';
+S:custom_game_intro_skip_text = ' ';
 
 
 ##[window]
@@ -74,9 +74,9 @@ S:ui_theme = 'oled_purple';
 
 B:debug_overlay_show_basic_screen_category = 'true';
 B:show_debug_overlay = 'false';
-B:debug_overlay_show_resources_category = 'true';
+B:debug_overlay_show_resources_category = 'false';
 B:debug_overlay_show_system_category = 'false';
-B:debug_overlay_show_advanced_screen_category = 'true';
+B:debug_overlay_show_advanced_screen_category = 'false';
 
 
 ##[tutorial]

@@ -516,8 +516,8 @@
 			image: "adj:textures/texts/lore_witherstorm.png"
 			rotation: 0.0d
 			width: 12.0d
-			x: 2.945238095238089d
-			y: 36.611904761904846d
+			x: 4.0d
+			y: 37.0d
 		}
 		{
 			dependency: "0898408ED8FBAF57"
@@ -536,16 +536,6 @@
 			width: 1.75d
 			x: 2.0d
 			y: 32.0d
-		}
-		{
-			dependency: "2FC4D1B2E42E2124"
-			height: 5.0d
-			image: "adj:textures/other/bg_grass_dirt.png"
-			order: -999
-			rotation: -90.0d
-			width: 10.0d
-			x: 18.0d
-			y: 38.0d
 		}
 		{
 			dependency: "603D3F9B2298333B"
@@ -646,6 +636,34 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: 18.0d
+			y: 39.5d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 1.75d
+			image: "witherstormmod:block/withered_phlegm_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: -6.0d
+			y: 33.5d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 5.0d
+			image: "adj:textures/other/bg_grass.png"
+			order: -999
+			rotation: -90.0d
+			width: 10.0d
+			x: 18.5d
+			y: 39.0d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 1.75d
+			image: "witherstorm_delight:block/wither_stove_top_on"
+			rotation: 45.0d
+			width: 1.75d
+			x: 14.5d
 			y: 39.5d
 		}
 	]
@@ -3690,7 +3708,7 @@
 			}]
 			title: ". . ."
 			x: -3.0428571428571303d
-			y: 30.897619047619102d
+			y: 31.0d
 		}
 		{
 			dependencies: ["3E479B783B24C730"]
@@ -3700,6 +3718,9 @@
 				"However, in order for them to start spawning, &lyou will need to get close to it&r. You can hide underground until one appears."
 				""
 				"It also needs solid land to spawn them, so you'll need to wait for it to move further if it is e.g. in the middle of an ocean."
+				""
+				"{@pagebreak}"
+				"&7&lHINT 2:&r Sometimes an &5Eye of The Symbiont&r can drop in place of the &6Command Block Book&r. Don't worry, you can turn it into the latter with a &lvery&r simple crafting recipe."
 			]
 			hide_until_deps_complete: true
 			icon: "witherstormmod:command_block_book"
@@ -3725,7 +3746,7 @@
 		}
 		{
 			dependencies: ["3E479B783B24C730"]
-			description: ["&7&lHINT:&r &5The Wither Storm&r will always prioritize chasing the player who has an Amulet in their inventory."]
+			description: [""]
 			hide_until_deps_complete: true
 			id: "2E334E5F94908B83"
 			subtitle: "Craft an Amulet to help with tracking the Wither Storm"
@@ -3740,23 +3761,6 @@
 			}]
 			title: "Order of The Stone"
 			x: -1.5d
-			y: 33.0d
-		}
-		{
-			dependencies: ["3E479B783B24C730"]
-			hide_until_deps_complete: true
-			id: "553D82FB7D555F9D"
-			subtitle: "Craft a Phasometer to monitor the Wither Storm's growth"
-			tasks: [{
-				id: "426F705628565A55"
-				item: {
-					Count: 1
-					id: "witherstormmod:phasometer"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -4.5d
 			y: 33.0d
 		}
 		{
@@ -3809,6 +3813,7 @@
 				title: "The Beast Falls"
 				type: "advancement"
 			}]
+			title: "The Strong Turn Weak"
 			x: 5.0d
 			y: 32.0d
 		}
@@ -3840,7 +3845,7 @@
 				type: "advancement"
 			}]
 			title: "The Watcher"
-			x: -0.5d
+			x: 0.0d
 			y: 33.5d
 		}
 		{
@@ -3885,19 +3890,28 @@
 			y: 33.0d
 		}
 		{
-			dependencies: ["3E479B783B24C730"]
+			dependencies: ["494840EAB1FB2573"]
+			description: [""]
 			hide_until_deps_complete: true
 			id: "7832C35257E664E1"
 			subtitle: "Cure a wither sickened mob by feeding it Golden Apple Stew"
-			tasks: [{
-				advancement: "adj:cured_sickened_mob"
-				criterion: ""
-				id: "3C97E4673971787B"
-				type: "advancement"
-			}]
+			tasks: [
+				{
+					advancement: "adj:cured_sickened_mob"
+					criterion: ""
+					id: "3C97E4673971787B"
+					title: "Feed a Sickened Mob a Golden Apple Stew"
+					type: "advancement"
+				}
+				{
+					id: "7384C21EF0B66271"
+					item: "witherstormmod:golden_apple_stew"
+					type: "item"
+				}
+			]
 			title: "Plague Doctor"
-			x: -3.0d
-			y: 33.5d
+			x: -4.5d
+			y: 35.0d
 		}
 		{
 			dependencies: ["19068C7B62786F99"]
@@ -3919,6 +3933,7 @@
 		}
 		{
 			dependencies: ["088E92D166861F41"]
+			description: [""]
 			hide_until_deps_complete: true
 			id: "2FC4D1B2E42E2124"
 			shape: "hexagon"
@@ -4307,6 +4322,89 @@
 			]
 			x: -7.0d
 			y: 24.0d
+		}
+		{
+			dependencies: ["18F8F611C29DF3A7"]
+			icon_scale: 0.75d
+			id: "350D42040726FDDA"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Literally why would you ever go out of your way to bake that"
+			tasks: [{
+				id: "02FF7A4599FE6BE1"
+				item: "witherstorm_delight:formidifried_egg"
+				type: "item"
+			}]
+			title: "Formidifried"
+			x: 14.5d
+			y: 39.5d
+		}
+		{
+			dependencies: ["3E479B783B24C730"]
+			description: [
+				"Mobs which stay too long near The Wither Storm will suffer a mysterious condition known as &5Wither Sickness&r. Over time, they will grow weaker and transform into a powerful &5Sickened&r variant."
+				""
+				"&6Players&r are partially immune to the disease, only suffering a &5progressing max health reduction&r."
+				"{@pagebreak}"
+				"The more The Wither Storm grows, &cthe more infected mobs you will see in your world&r, even outside its vicinity. Don't be surprised if all of a sudden &5Sickened mobs&r start spawning during nights or underground. &4It can only get worse from here&r."
+			]
+			icon: "witherstormmod:withered_bone"
+			id: "494840EAB1FB2573"
+			subtitle: "Kill some Sickened mobs and collect their drops"
+			tasks: [
+				{
+					id: "2C4CA2F7A650DDE9"
+					item: "witherstormmod:withered_bone"
+					type: "item"
+				}
+				{
+					id: "7FD4776D7F9B3EE2"
+					item: "witherstormmod:withered_flesh"
+					type: "item"
+				}
+				{
+					id: "643C8F68529E00B9"
+					item: "witherstormmod:withered_spider_eye"
+					type: "item"
+				}
+				{
+					id: "3206E4EC60F1877D"
+					item: "witherstormmod:tainted_dust"
+					type: "item"
+				}
+			]
+			title: "Withering Away"
+			x: -4.5d
+			y: 33.5d
+		}
+		{
+			dependencies: ["494840EAB1FB2573"]
+			icon_scale: 0.75d
+			id: "4EBF126E2037E270"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft or find a Withered Flegm Block"
+			tasks: [{
+				id: "1580704541E19685"
+				item: "witherstormmod:withered_phlegm_block"
+				type: "item"
+			}]
+			title: "Yuck Vacuum Hopper"
+			x: -6.0d
+			y: 33.5d
+		}
+		{
+			dependencies: ["494840EAB1FB2573"]
+			id: "00DE59EBCC3F31C9"
+			subtitle: "Taint a Carved Pumpkin"
+			tasks: [{
+				id: "6F7F78F71168CC13"
+				item: "witherstormmod:tainted_carved_pumpkin"
+				type: "item"
+			}]
+			title: "Cyclops"
+			x: -3.0d
+			y: 33.5d
 		}
 	]
 	title: "Story"

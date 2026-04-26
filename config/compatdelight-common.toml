@@ -1,0 +1,123 @@
+
+[compat]
+	#Enable compat registrations for 'ad_astra'
+	ad_astra = false
+	#Enable compat registrations for 'apotheosis'
+	apotheosis = false
+	#Enable compat registrations for 'ae2'
+	ae2 = false
+	#Enable compat registrations for 'ars_nouveau'
+	ars_nouveau = true
+	#Enable compat registrations for 'biomesoplenty'
+	biomesoplenty = false
+	#Enable compat registrations for 'bloodmagic'
+	bloodmagic = false
+	#Enable compat registrations for 'blue_skies'
+	blue_skies = false
+	#Enable compat registrations for 'born_in_chaos_v1'
+	born_in_chaos_v1 = true
+	#Enable compat registrations for 'bosses_of_mass_destruction'
+	bosses_of_mass_destruction = false
+	#Enable compat registrations for 'botania'
+	botania = true
+	#Enable compat registrations for 'the_bumblezone'
+	the_bumblezone = false
+	#Enable compat registrations for 'bygonenether'
+	bygonenether = false
+	#Enable compat registrations for 'conjurer_illager'
+	conjurer_illager = false
+	#Enable compat registrations for 'cyclic'
+	cyclic = false
+	#Enable compat registrations for 'deeperdarker'
+	deeperdarker = false
+	#Enable compat registrations for 'draconicevolution'
+	draconicevolution = false
+	#Enable compat registrations for 'ecologics'
+	ecologics = false
+	#Enable compat registrations for 'enderio'
+	enderio = false
+	#Enable compat registrations for 'enigmaticlegacy'
+	enigmaticlegacy = false
+	#Enable compat registrations for 'enlightened_end'
+	enlightened_end = false
+	#Enable compat registrations for 'evilcraft'
+	evilcraft = true
+	#Enable compat registrations for 'bigreactors'
+	bigreactors = false
+	#Enable compat registrations for 'forbidden_arcanus'
+	forbidden_arcanus = false
+	#Enable compat registrations for 'friendsandfoes'
+	friendsandfoes = false
+	#Enable compat registrations for 'graveyard'
+	graveyard = false
+	#Enable compat registrations for 'hexerei'
+	hexerei = false
+	#Enable compat registrations for 'irons_spellbooks'
+	irons_spellbooks = false
+	#Enable compat registrations for 'legendarycreatures'
+	legendarycreatures = false
+	#Enable compat registrations for 'malum'
+	malum = false
+	#Enable compat registrations for 'mekanism'
+	mekanism = false
+	#Enable compat registrations for 'midnight'
+	midnight = false
+	#Enable compat registrations for 'mowziesmobs'
+	mowziesmobs = false
+	#Enable compat registrations for 'mutantmonsters'
+	mutantmonsters = true
+	#Enable compat registrations for 'mysticalagriculture'
+	mysticalagriculture = false
+	#Enable compat registrations for 'naturalist'
+	naturalist = true
+	#Enable compat registrations for 'naturesaura'
+	naturesaura = false
+	#Enable compat registrations for 'nourished_nether'
+	nourished_nether = false
+	#Enable compat registrations for 'occultism'
+	occultism = false
+	#Enable compat registrations for 'biomeswevegone'
+	biomeswevegone = false
+	#Enable compat registrations for 'outer_end'
+	outer_end = false
+	#Enable compat registrations for 'rats'
+	rats = false
+	#Enable compat registrations for 'refinedstorage'
+	refinedstorage = false
+	#Enable compat registrations for 'regions_unexplored'
+	regions_unexplored = false
+	#Enable compat registrations for 'stalwart_dungeons'
+	stalwart_dungeons = false
+	#Enable compat registrations for 'supplementaries'
+	supplementaries = true
+	#Enable compat registrations for 'toughasnails'
+	toughasnails = false
+	#Enable compat registrations for 'tropicraft'
+	tropicraft = false
+	#Enable compat registrations for 'yungscavebiomes'
+	yungscavebiomes = false
+	#Enable compat registrations for 'palegarden'
+	palegarden = false
+
+[features]
+	#Expose Void Delight
+	void_delight = true
+	#Expose Bamboo Delight
+	bamboo_delight = true
+	#Expose Coral Delight
+	coral_delight = true
+	#Expose Caves Delight
+	caves_delight = true
+	#Expose Boss Delight
+	boss_delight = true
+	#Expose Flower Delight
+	flower_delight = true
+	#Expose Nature Delight
+	nature_delight = true
+	#Expose Sweet Delight
+	sweet_delight = true
+	#Expose Vegetables Delight
+	vegetables_delight = true
+	#Expose Ingredients Delight
+	ingredients_delight = true
+

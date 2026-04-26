@@ -21,12 +21,6 @@
       "replace_current_music": false,
       "sound": "minecraft:music.overworld.jagged_peaks"
     },
-    "particle": {
-      "options": {
-        "type": "minecraft:snowflake"
-      },
-      "probability": 0.0004
-    },
     "sky_color": 4486617,
     "water_color": 8303069,
     "water_fog_color": 1319727

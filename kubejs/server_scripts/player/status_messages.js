@@ -6,30 +6,6 @@ function commandInWorld(world, command) {
 	return '/execute in ' + world + ' run ' + command.replace(/\//g, '');
 }
 
-EntityEvents.spawned(event => {
-	const entity = event.getEntity();
-	const server = event.getServer();
-
-	if (global.bossMobs.includes(entity.getType()) && !entity.tags.toArray().includes('adj.announced_spawn')) {
-		global.broadcast(server, global.announcementMsg(`${entity.getDisplayName().getString()} has awoken!`, global.messageColors.bossSpawned, true));
-		entity.addTag('adj.announced_spawn');
-	}
-});
-
-EntityEvents.death(event => {
-	const entity = event.getEntity();
-	if (global.bossMobs.includes(entity.getType())) {
-		global.broadcast(server, global.announcementMsg(`${entity.getDisplayName().getString()} has been defeated!`, global.messageColors.bossDefeated, true));
-	}
-});
-
-const $EnhancedCelestials = Java.loadClass('dev.corgitaco.enhancedcelestials.EnhancedCelestials');
-const $Registry = Java.loadClass("net.minecraft.core.Registry");
-const $LunarEventClass = Java.loadClass("dev.corgitaco.enhancedcelestials.api.lunarevent.LunarEvent");
-const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
-const $Registries = Java.loadClass("net.minecraft.core.registries.Registries");
-const $EnhancedCelestialsRegistry = Java.loadClass("dev.corgitaco.enhancedcelestials.api.EnhancedCelestialsRegistry");
-
 let messageCount = 0;
 let CurrentLunarEvent;
 
@@ -136,39 +112,12 @@ const moonEventMessages = {
 	}
 };
 
-
-const witherStormMessages = {
-	color: '#d39dff',
-	texts: {
-		2: [
-			'This is not going to be a calm night. Far from it',
-			'But it is going to be alright',
-			'It has to be'
-		],
-		3: [
-			'The Wither Storm is getting stronger with each passing moment',
-			'You still have time to prepare your escape route',
-			"It knows where you are, but it's not strong enough to follow you yet",
-			'Start planning. Now. There is no time to be wasted'
-		],
-		4: [
-			'The Wither Storm can sense where you are. It is following you',
-			"Keep moving. It's slow but it will surely find you at some point",
-			'Run. Stay away from your base. Or hide underground'
-		],
-		6: [
-			'Even if you hide underground, eventually it will make it to Bedrock',
-			'It started mutating Zombies into Withered Symbionts',
-			'Killing them will be valuable towards defeating it',
-			'Stay safe. I wish you best of luck'
-		],
-		7: [
-			"It's been a long time",
-			// 'The Wither Storm destroyed anything in its path',
-			'But sooner or later it will be over'
-		]
-	}
-};
+const $EnhancedCelestials = Java.loadClass('dev.corgitaco.enhancedcelestials.EnhancedCelestials');
+const $Registry = Java.loadClass("net.minecraft.core.Registry");
+const $LunarEventClass = Java.loadClass("dev.corgitaco.enhancedcelestials.api.lunarevent.LunarEvent");
+const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
+const $Registries = Java.loadClass("net.minecraft.core.registries.Registries");
+const $EnhancedCelestialsRegistry = Java.loadClass("dev.corgitaco.enhancedcelestials.api.EnhancedCelestialsRegistry");
 
 ServerEvents.tick(event => {
 	const server = event.getServer();
@@ -189,12 +138,12 @@ ServerEvents.tick(event => {
 		let duration = 5;
 		if (isWitherStorm) {
 			duration = 7;
-			color = witherStormMessages.color;
-			for (let i = moonEventOrPhase; i < 7; i++) {
-				if (!witherStormMessages.texts[i]) {
+			color = WitherStorm.witherStormMessages.color;
+			for (let i = moonEventOrPhase - 1; i < 7; i++) {
+				if (!WitherStorm.witherStormMessages.texts[i]) {
 					continue;
 				}
-				texts = witherStormMessages.texts[i];
+				texts = WitherStorm.witherStormMessages.texts[i];
 			}
 		}
 		else {

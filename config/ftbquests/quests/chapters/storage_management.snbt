@@ -203,49 +203,6 @@
 		}
 		{
 			dependencies: ["6A911AFF4185ED0D"]
-			icon: "ironchest:copper_chest"
-			id: "6E33A0786596E0A5"
-			min_required_tasks: 1
-			subtitle: "Upgrade your plain, boring chest to a Copper Chest"
-			tasks: [
-				{
-					id: "431F231CA6BA31C8"
-					item: "ironchest:copper_chest"
-					type: "item"
-				}
-				{
-					id: "01CC730EF8EEBC22"
-					item: "ironchest:wood_to_copper_chest_upgrade"
-					type: "item"
-				}
-			]
-			title: "Iron Chests"
-			x: 1.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["6E33A0786596E0A5"]
-			icon: "ironchest:diamond_chest"
-			id: "71B1D2F0C5652D22"
-			subtitle: "Upgrade your chest to a Diamond Chest. It's as big as it can get"
-			tasks: [
-				{
-					id: "195243F9D7C943DF"
-					item: "ironchest:diamond_chest"
-					type: "item"
-				}
-				{
-					id: "0A5874488A64D18D"
-					item: "ironchest:gold_to_diamond_chest_upgrade"
-					type: "item"
-				}
-			]
-			title: "Superspacious"
-			x: 3.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["6A911AFF4185ED0D"]
 			id: "72165200201BE4B0"
 			subtitle: "Craft some Brass Item Pipes. You can use it to, well, transport items"
 			tasks: [{
@@ -345,6 +302,49 @@
 			title: "Golemancy!"
 			x: -0.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["6A911AFF4185ED0D"]
+			id: "5AEAE441317F89D3"
+			subtitle: "Craft a Repository, which acts as a double chest in one block!"
+			tasks: [{
+				id: "377B7D497607D6E5"
+				item: "ars_nouveau:repository"
+				type: "item"
+			}]
+			title: "Space to Storage Ratio"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5AEAE441317F89D3"]
+			icon: "ars_nouveau:bookwyrm_charm"
+			id: "12FE09325C0BD40F"
+			subtitle: "Make a relatively simple connected storage system using Bookwyrms"
+			tasks: [
+				{
+					id: "2EE98C5D669833DB"
+					item: "ars_nouveau:storage_lectern"
+					type: "item"
+				}
+				{
+					id: "626387F291A7ECBE"
+					item: "ars_nouveau:bookwyrm_charm"
+					type: "item"
+				}
+				{
+					id: "07782D06657F0795"
+					item: {
+						Count: 1
+						id: "ars_nouveau:dominion_wand"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Storage CAN Be Magical!"
+			x: 3.0d
+			y: 1.0d
 		}
 	]
 	title: "Storage Management"

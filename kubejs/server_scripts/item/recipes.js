@@ -298,9 +298,6 @@ ServerEvents.recipes((event) => {
 		'minecraft:charcoal',
 		'create:compacting/chocolate',
 		'twilightdelight:cooking/transformation_powder',
-		'miners_delight:cutting/glow_squid',
-		'miners_delight:cutting/squid',
-		'miners_delight:cutting/baked_squid',
 		/umbral_skies:.*gloves/,
 		/aether:.*gloves/,
 		'brewinandchewin:fermenting/egg_grog_from_milk',
@@ -386,6 +383,7 @@ ServerEvents.recipes((event) => {
 			'twilightforest:cooked_venison': 'naturalist:cooked_venison',
 			'twilightforest:fiery_tears': 'twilightforest:fiery_blood',
 			'twilightforest:knightmetal_ring': 'iron_ingot',
+			'alexscaves:sulfur_dust': 'kubejs:crushed_sulfur',
 		},
 		output: {
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
@@ -1224,6 +1222,11 @@ ServerEvents.recipes((event) => {
 				type = 'tag';
 				input = input.substring(1);
 			}
+			else if (input.includes('raw_')) {
+				type = 'tag';
+				if (input.includes(':')) input = input.split(':')[1];
+				input = `c:raw_${input.replace('raw_', '')}_ores`
+			}
 
 			let object = {};
 			object[type] = input;
@@ -1904,29 +1907,29 @@ ServerEvents.recipes((event) => {
 	).id('adj:rope');
 
 	// Galosphere Palaldium -> Silver
-	alloyForgeRecipe(
-		[
-			['galosphere:raw_palladium', 2],
-		],
-		['galosphere:palladium_ingot', 3],
-		1,
-		5,
-		[
-			['2+', 'output', 4]
-		]
-	);
-	alloyForgeRecipe(
-		[
-			['#adj:silver_ores', 1],
-		],
-		['galosphere:palladium_ingot', 2],
-		1,
-		5,
-		[
-			['2+', 'output', 3],
-			['3+', 'output', 4]
-		]
-	);
+	// alloyForgeRecipe(
+	// 	[
+	// 		['galosphere:raw_palladium', 2],
+	// 	],
+	// 	['galosphere:palladium_ingot', 3],
+	// 	1,
+	// 	5,
+	// 	[
+	// 		['2+', 'output', 4]
+	// 	]
+	// );
+	// alloyForgeRecipe(
+	// 	[
+	// 		['#adj:silver_ores', 1],
+	// 	],
+	// 	['galosphere:palladium_ingot', 2],
+	// 	1,
+	// 	5,
+	// 	[
+	// 		['2+', 'output', 3],
+	// 		['3+', 'output', 4]
+	// 	]
+	// );
 
 	const removeGalosphereRecipesFor = [
 		'palladium_lattice',
@@ -2545,11 +2548,9 @@ ServerEvents.recipes((event) => {
 			{
 				"item": "kubejs:eye_of_exploration"
 			},
-			/*,
 			{
-				"item": "constructionwands:infinity_wand"
+				"item": "witherstormmod:command_block_book"
 			}
-				*/
 		],
 		"result": {
 			"item": "structure_gel:building_tool"
@@ -8052,12 +8053,80 @@ ServerEvents.recipes((event) => {
 	).id('adj:lumisene');
 
 	event.shapeless(
-		'3x supplementaries:lumisene_bottle',
+		'4x supplementaries:lumisene_bottle',
 		[
 			'supplementaries:lumisene_bucket',
 			'glass_bottle',
 			'glass_bottle',
 			'glass_bottle',
+			'glass_bottle',
 		]
-	).id('adj:lumisene_bucket');
+	).id('adj:lumisene_bottles');
+
+	// Ore Dusts
+	function oreDustRecipes(dustID, rawOre, ingot) {
+
+		event.replaceInput([{ type: 'smelting' }, { type: 'blasting' }, { type: 'aether:enchanting' }],
+			rawOre,
+			`#c:raw_${dustID.split(':')[1].replace('_dust', '')}_ores`
+		);
+
+		event.recipes.create.milling([dustID, Item.of(dustID).withChance(0.2)], rawOre, 300).id(`adj:ore_dusts/${flattenedID(dustID)}/milling`);
+		event.recipes.create.crushing([dustID, Item.of(dustID).withChance(0.4), Item.of(dustID).withChance(0.05)], rawOre, 300).id(`adj:ore_dusts/${flattenedID(dustID)}/crushing`);
+
+		event.recipes.create.milling([dustID], ingot, 200).id(`adj:ore_dusts/${flattenedID(dustID)}/milling_from_ingot`);
+		event.recipes.create.crushing([dustID], ingot, 200).id(`adj:ore_dusts/${flattenedID(dustID)}/crushing_from_ingot`);
+	}
+
+	oreDustRecipes('kubejs:gravitite_dust', 'aether_redux:raw_gravitite', 'aether:gravitite_ingot')
+	oreDustRecipes('kubejs:valkyrum_dust', 'aether_redux:raw_valkyrum', 'ancient_aether:valkyrum_ingot')
+	oreDustRecipes('kubejs:veridium_dust', 'aether_redux:raw_veridium', 'aether_redux:veridium_ingot')
+	oreDustRecipes('kubejs:azure_neodymium_dust', 'alexcaves:raw_azure_neodymium', 'alexcaves:azure_neodymium_ingot')
+	oreDustRecipes('kubejs:scarlet_neodymium_dust', 'alexcaves:raw_scarlet_neodymium', 'alexcaves:scarlet_neodymium_ingot')
+	oreDustRecipes('kubejs:zinc_dust', 'create:raw_zinc', 'create:zinc_ingot')
+	oreDustRecipes('kubejs:bismuth_dust', 'etcetera:raw_bismuth', 'etcetera:bismuth_ingot')
+	oreDustRecipes('kubejs:silver_dust', 'galosphere:raw_palladium', 'galosphere:palladium_ingot')
+	oreDustRecipes('kubejs:copper_dust', 'raw_copper', 'copper_ingot')
+	oreDustRecipes('kubejs:gold_dust', 'raw_gold', 'gold_ingot')
+	oreDustRecipes('kubejs:iron_dust', 'raw_iron', 'iron_ingot')
+	oreDustRecipes('kubejs:adamantite_dust', 'mythicmetals:raw_adamantite', 'mythicmetals:adamantite_ingot')
+	oreDustRecipes('kubejs:aquarium_dust', 'mythicmetals:raw_aquarium', 'mythicmetals:aquarium_ingot')
+	oreDustRecipes('kubejs:kyber_dust', 'mythicmetals:raw_kyber', 'mythicmetals:kyber_ingot')
+	oreDustRecipes('kubejs:midas_gold_dust', 'mythicmetals:raw_midas_gold', 'mythicmetals:midas_gold_ingot')
+	oreDustRecipes('kubejs:mythril_dust', 'mythicmetals:raw_mythril', 'mythicmetals:mythril_ingot')
+	oreDustRecipes('kubejs:orichalcum_dust', 'mythicmetals:raw_orichalcum', 'mythicmetals:orichalcum_ingot')
+	oreDustRecipes('kubejs:osmium_dust', 'mythicmetals:raw_osmium', 'mythicmetals:osmium_ingot')
+	oreDustRecipes('kubejs:palladium_dust', 'mythicmetals:raw_palladium', 'mythicmetals:palladium_ingot')
+	oreDustRecipes('kubejs:platinum_dust', 'mythicmetals:raw_platinum', 'mythicmetals:platinum_ingot')
+	oreDustRecipes('kubejs:prometheum_dust', 'mythicmetals:raw_prometheum', 'mythicmetals:prometheum_ingot')
+	oreDustRecipes('kubejs:runite_dust', 'mythicmetals:raw_runite', 'mythicmetals:runite_ingot')
+	oreDustRecipes('kubejs:stormyx_dust', 'mythicmetals:raw_stormyx', 'mythicmetals:stormyx_ingot')
+	oreDustRecipes('kubejs:tin_dust', 'mythicmetals:raw_tin', 'mythicmetals:tin_ingot')
+
+	// Sulfur and Cinnabar
+	function fullBlockSet(base, polished, bricks) {
+
+		event.shaped(`4x kubejs:${polished}`, ['AA', 'AA'], { A: `kubejs:${base}` }).id(`adj:${polished}_from_${base}`);
+		event.shaped(`4x kubejs:${bricks}`, ['AA', 'AA'], { A: `kubejs:${polished}` }).id(`adj:${bricks}_from_${polished}`);
+		event.shaped(`kubejs:chiseled_${base}`, ['A', 'A'], { A: `kubejs:${bricks}_slab` }).id(`adj:chiseled_${base}`);
+
+		const sets = [base, polished, bricks];
+		sets.forEach(id => {
+			const b = `kubejs:${id}`;
+			event.shaped(`6x ${b}_slab`, ['AAA'], { A: b }).id(`adj:${id}_slab`);
+			event.shaped(`4x ${b}_stairs`, ['A  ', 'AA ', 'AAA'], { A: b }).id(`adj:${id}_stairs`);
+			event.shaped(`6x ${b}_wall`, ['AAA', 'AAA'], { A: b }).id(`adj:${id}_wall`);
+			event.stonecutting(`2x ${b}_slab`, b).id(`adj:${id}_slab_stonecutting`);
+			event.stonecutting(`${b}_stairs`, b).id(`adj:${id}_stairs_stonecutting`);
+			event.stonecutting(`${b}_wall`, b).id(`adj:${id}_wall_stonecutting`);
+		});
+
+		event.stonecutting(`kubejs:${polished}`, `kubejs:${base}`).id(`adj:${polished}_stonecutting`);
+		event.stonecutting(`kubejs:${bricks}`, `kubejs:${polished}`).id(`adj:${bricks}_stonecutting`);
+	}
+
+	fullBlockSet('cinnabar', 'polished_cinnabar', 'cinnabar_bricks');
+	fullBlockSet('sulfur', 'polished_sulfur', 'sulfur_bricks');
+
+	event.recipes.create.milling(['kubejs:crushed_sulfur', Item.of('kubejs:crushed_sulfur').withChance(0.5)], 'kubejs:sulfur', 200).id('adj:crushed_sulfur');
 });

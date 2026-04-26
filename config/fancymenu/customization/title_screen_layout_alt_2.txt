@@ -3442,7 +3442,7 @@ vanilla_button {
   [executable_block:da7d39bf-8814-4a2f-8c1b-a2044c057a6e-1756230810359][type:generic] = [executables:]
   backgroundnormal = [source:local]/config/fancymenu/assets/buttons/darkmode/normal.png
   backgroundhovered = [source:local]/config/fancymenu/assets/buttons/darkmode/hovered.png
-  background_texture_inactive = [source:local]/config/fancymenu/assets/buttons/dark_mode/inactive.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/buttons/darkmode/inactive.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5

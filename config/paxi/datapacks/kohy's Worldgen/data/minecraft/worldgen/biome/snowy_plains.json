@@ -23,12 +23,6 @@
       "replace_current_music": false,
       "sound": "minecraft:music.overworld.snowy_slopes"
     },
-    "particle": {
-      "options": {
-        "type": "minecraft:snowflake"
-      },
-      "probability": 0.0006
-    },
     "sky_color": 10009068,
     "water_color": 8303069,
     "water_fog_color": 1319727

@@ -1,6 +1,17 @@
 type = listener_instances
 
 listener_instance {
+  listener_instance_identifier = 21a02a0d-995d-4205-aef8-546d87b39a48-1776380716635
+  listener_provider_identifier = player_death
+  listener_instance_action_script_identifier = d472be0c-fd2c-4a07-81e3-0f0a848412f7-1776380716635
+  [executable_action_instance:1f4c6dab-4de7-4535-aa37-14b88ffa4d3a-1776380720202][action_type:set_variable] = hud.has_wither:0
+  [executable_action_instance:4f187b1c-fdbf-4366-be80-932b5401c1cc-1776380723069][action_type:set_variable] = hud.is_poisoned:0
+  [executable_action_instance:4349cf7a-8bac-4254-9a92-79b1d28eac7c-1776380724860][action_type:set_variable] = hud.is_freezing:0
+  [executable_action_instance:a3e022f3-d8cb-4ab0-a1e1-4d3811e82947-1776380727604][action_type:set_variable] = hud.is_hungry:0
+  [executable_block:d472be0c-fd2c-4a07-81e3-0f0a848412f7-1776380716635][type:generic] = [executables:1f4c6dab-4de7-4535-aa37-14b88ffa4d3a-1776380720202;4f187b1c-fdbf-4366-be80-932b5401c1cc-1776380723069;4349cf7a-8bac-4254-9a92-79b1d28eac7c-1776380724860;a3e022f3-d8cb-4ab0-a1e1-4d3811e82947-1776380727604;]
+}
+
+listener_instance {
   listener_instance_identifier = f7ae69df-ea4b-4170-bcf8-5bd0cd21d1a5-1774452561296
   listener_provider_identifier = effect_gained
   listener_instance_action_script_identifier = 179c040f-1b51-458c-a776-a9534a03c1a0-1774452561296

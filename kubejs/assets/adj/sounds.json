@@ -148,5 +148,43 @@
 				"name": "adj:enchantment/void_strike/deactivate_4"
 			}
 		]
+	},
+	"ui.select_game": {
+		"sounds": [
+			{
+				"name": "adj:select_game"
+			}
+		]
+	},
+	"ui.enter_world": {
+		"sounds": [
+			{
+				"name": "adj:enter_world"
+			}
+		]
+	},
+	"ui.achievement_complete": {
+		"sounds": [
+			{
+				"name": "adj:achievement_complete",
+				"volume": 0.75
+			}
+		]
+	},
+	"event.progress_chapter": {
+		"sounds": [
+			{
+				"name": "adj:progress_chapter",
+				"volume": 0.5
+			}
+		]
+	},
+	"event.craft_prism": {
+		"sounds": [
+			{
+				"name": "adj:craft_prism",
+				"volume": 0.75
+			}
+		]
 	}
 }

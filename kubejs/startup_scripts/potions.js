@@ -67,7 +67,8 @@ MoreJSEvents.registerPotionBrewing((event) => {
 		'additionaladditions:haste_potion',
 		'additionaladditions:long_haste_potion',
 		'additionaladditions:strong_haste_potion',
-		'alesxsmobs:lava_vision',
+		'alexsmobs:lava_vision',
+		'alexsmobs:long_lava_vision',
 		'netherdepthsupgrade:lava_vision'
 	];
 

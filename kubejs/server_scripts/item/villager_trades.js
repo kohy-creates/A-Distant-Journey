@@ -218,7 +218,7 @@ MoreJSEvents.villagerTrades(event => {
 	newBasicTrade('farmer', 1, '1x emerald', '5x wheat', 16);
 	newBasicTrade('farmer', 1, '1x emerald', '6x potato', 16);
 	newBasicTrade('farmer', 1, '1x emerald', '5x carrot', 16);
-	newBasicTrade('farmer', 1, '1x emerald', '6x sugar_cane', 16);
+	newBasicTrade('farmer', 1, '1x emerald', '4x sugar_cane', 16);
 	newBasicTrade('farmer', 1, '28x sugar_cane', '1x emerald', 16);
 	newBasicTrade('farmer', 2, '1x emerald', '4x egg', 16);
 	newBasicTrade('farmer', 2, '16x egg', '1x emerald', 16);

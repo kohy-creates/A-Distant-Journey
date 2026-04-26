@@ -13,6 +13,16 @@ global.itemEffects = {
 	},
 
 	theCommunity: {
+		buffs: {
+			'generic.attack_damage': ['multiply_base', 0.05, 0.15],
+			'generic.armor': ['addition', 0, 4],
+			'generic.attack_speed': ['multiply_base', 0.04, 0.1],
+			'generic.movement_speed': ['multiply_total', 0.04, 0.1],
+			'adjcore:generic.health_regeneration': ['addition', 0.25, 2],
+			'adjcore:generic.damage_reduction': ['addition', 0, 0.05],
+			'attributeslib:arrow_damage': ['addition', 0.05, 0.15],
+			'ars_nouveau:ars_nouveau.perk.spell_damage': ['addition', 5, 15],
+		},
 		/**
 		 * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx 
 		 */
@@ -22,24 +32,16 @@ global.itemEffects = {
 			if (!(entity instanceof $Player)) return;
 			if (entity.level.isClientSide()) return; // server only
 
-			const buffs = {
-				'generic.attack_damage': ['addition', 0.05, 0.15],
-				'generic.armor': ['addition', 0, 4],
-				'generic.attack_speed': ['multiply_base', 0.04, 0.1],
-				'generic.movement_speed': ['multiply_base', 0.04, 0.1],
-				'adjcore:generic.health_regeneration': ['addition', 0.25, 2],
-				'adjcore:generic.damage_reduction': ['addition', 0, 0.05],
-				'attributeslib:arrow_damage': ['addition', 0.05, 0.15],
-				'ars_nouveau:ars_nouveau.perk.spell_damage': ['addition', 5, 15],
-			};
-
-			const serverData = entity.getServer().persistentData.killedBosses || [];
-			const killed = serverData.length;
+			/**
+			 * @type {Internal.CompoundTag_}
+			 */
+			const serverData = entity.getServer().persistentData.killedBosses || {};
+			const killed = serverData.size();
 
 			const total = global.bossMobs.length || 1;
 			const progress = killed / total;
 
-			for (let [attributeKey, values] of Object.entries(buffs)) {
+			for (let [attributeKey, values] of Object.entries(this.buffs)) {
 				let value = values[1] + (values[2] - values[1]) * progress;
 
 				ctx.modify(
@@ -919,6 +921,43 @@ StartupEvents.registry('item', registry => {
 		.unstackable()
 		.tag('curios:accessory')
 		.rarity('uncommon');
+
+	function registerDust(name, color) {
+		registry.create(global.textReplaceAll(name.toLowerCase(), ' ', '_'))
+			.displayName(name)
+			.textureJson({
+				'layer0': `kubejs:item/ore_dust_base`,
+				'layer1': `kubejs:item/ore_dust`,
+			})
+			.color(1, color)
+			.tag('adj:ore_dusts');
+	}
+	registerDust('Gravitite Dust', 0x895983);
+	registerDust('Valkyrum Dust', 0xb18e6d);
+	registerDust('Veridium Dust', 0x365b8a);
+	registerDust('Azure Neodymium Dust', 0x122a6e);
+	registerDust('Scarlet Neodymium Dust', 0x6b1017);
+	registerDust('Zinc Dust', 0x80908a);
+	registerDust('Bismuth Dust', 0x6e676f);
+	registerDust('Silver Dust', 0x5a7072);
+	registerDust('Copper Dust', 0x8e6149);
+	registerDust('Gold Dust', 0xd19f30);
+	registerDust('Iron Dust', 0x9a8570);
+	registerDust('Adamantite Dust', 0x792129);
+	registerDust('Aquarium Dust', 0x3b6b9e);
+	registerDust('Kyber Dust', 0x6b4782);
+	registerDust('Midas Gold Dust', 0xb76e19);
+	registerDust('Mythril Dust', 0x2e5471);
+	registerDust('Orichalcum Dust', 0x437a50);
+	registerDust('Osmium Dust', 0x4b5f78);
+	registerDust('Palladium Dust', 0xbb5718);
+	registerDust('Platinum Dust', 0xbdacf5);
+	registerDust('Prometheum Dust', 0x377c5f);
+	registerDust('Runite Dust', 0x1a5c75);
+	registerDust('Stormyx Dust', 0x7d4371);
+	registerDust('Tin Dust', 0x7f6164);
+	registerDust('Crushed Sulfur', 0xbeaf66);
+
 });
 
 ItemEvents.armorTierRegistry(event => {

@@ -22,6 +22,7 @@
 		"file/FreshlyTwilighted_v1.0.0.zip",
 		"file/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip",
 		"file/AL's Boss Rush+FA 1.1.zip",
+		"file/Fresh Aether 1.2.zip",
 		"file/AL's Boss Rush 1.1.zip",
 		"file/Medieval_Style_Lootr.zip",
 		"builtin/add_pack_finders_test",
@@ -66,7 +67,8 @@
 		"file/cuter_mmonsters.zip",
 		"file/Cataclysm Reimagined v1.3.5 for Forge.zip",
 		"file/kohara's Compat",
-		"file/ADJ-Music.zip"
+		"file/ADJ-Music.zip",
+		"file/ADJ Music"
 	],
 	"pack_overrides": {
 		"default": [
@@ -158,7 +160,8 @@
 			"file/FreshCompats_v1.6.zip",
 			"file/FreshlyTwilighted_v1.0.0.zip",
 			"file/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip",
-			"file/AL's Boss Rush+FA 1.1.zip"
+			"file/AL's Boss Rush+FA 1.1.zip",
+			"file/Fresh Aether 1.2.zip"
 		],
 		"$$base": {
 			"fixed_position": true,

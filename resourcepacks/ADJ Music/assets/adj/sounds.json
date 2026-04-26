@@ -647,6 +647,11 @@
 				"name": "adj:music/wonderful_wings",
 				"stream": true,
 				"volume": 0.5
+			},
+			{
+				"name": "adj:music/stolen_grid",
+				"stream": true,
+				"volume": 0.5
 			}
 		]
 	},
@@ -721,21 +726,12 @@
 			}
 		]
 	},
-	"music.the_bumblezone": {
-		"sounds": [
-			{
-				"name": "adj:music/stolen_grid",
-				"stream": true,
-				"volume": 0.5
-			}
-		]
-	},
 	"music.menu": {
 		"sounds": [
 			{
 				"name": "adj:music/finnbacka",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.9
 			}
 		]
 	},

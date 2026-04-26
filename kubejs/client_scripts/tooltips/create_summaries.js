@@ -27,6 +27,22 @@ const itemsToTooltip = [
 		]
 	},
 
+	{
+		item: 'witherstormmod:withered_nether_star',
+		summary: [
+			'There it is. _Your trophy_.',
+			'A material you can use to craft another block that will bring you a step closer towards _ascending to godhood_, obtained from an eldritch horror which would remain dormant forever, if it wasn\'t for you.',
+			'',
+			'Do you not feel any regret?',
+			'A huge chunk of your world is now a broken, destroyed mess.',
+			'Villages that once thrived - burned and swept away.',
+			'Relics of the past that predate the creation of your world - gone.',
+			'None of this had to happen.',
+			'',
+			'_I hope you are satisfied._'
+		]
+	},
+
 	// Botania
 	{
 		item: /botania:.*agricarnation.*/,

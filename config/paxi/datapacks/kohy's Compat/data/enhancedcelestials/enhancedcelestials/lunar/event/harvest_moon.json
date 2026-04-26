@@ -5,10 +5,7 @@
       "sky_light_color": "99833b"
     },
     "moon_size": 30.0,
-    "moon_texture_location": "minecraft:textures/environment/moon_phases.png",
-    "sound_track": {
-      "sound_id": "enhancedcelestials:harvest_moon"
-    }
+    "moon_texture_location": "minecraft:textures/environment/moon_phases.png"
   },
   "dimension_chances": {
     "minecraft:overworld": {

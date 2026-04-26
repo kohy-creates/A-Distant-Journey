@@ -1,0 +1,21 @@
+{
+  "feature": {
+    "config": {},
+    "type": "no_op"
+  },
+  "placement": [
+    {
+      "type": "oreberriesreplanted:change_range",
+      "bottom_offset": -64,
+      "maximum": 120,
+      "rarity": 5,
+      "top_offset": 0
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

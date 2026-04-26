@@ -1,19 +1,34 @@
 {
-  "config_version": "2.0.19",
-  "config_datetime": "2026-03-17_21-09-20",
+  "config_version": "2.0.22",
+  "config_datetime": "2026-04-18_01-22-58",
   "general": {
     "disable_all_structures": false,
-    "prevent_structure_overlap": true,
+    "prevent_structure_overlap": false,
     "enable_global_spacing_and_separation_modifier": true,
     "global_spacing_and_separation_modifier": 1.4
   },
   "structure_namespaces": [
+    {
+      "name": "alexscaves",
+      "is_disabled": false,
+      "override_global_distance_from_world_center": true,
+      "min_distance_from_world_center": 0,
+      "max_distance_from_world_center": 0,
+      "exclude_from_overlap_prevention": true
+    },
     {
       "name": "global",
       "is_disabled": false,
       "override_global_distance_from_world_center": false,
       "min_distance_from_world_center": 150,
       "max_distance_from_world_center": 0
+    },
+    {
+      "name": "integrated_villages",
+      "is_disabled": false,
+      "override_global_flatness_check": false,
+      "enable_flatness_check": true,
+      "flatness_check_allow_non_solid_blocks": false
     }
   ],
   "structures": [
@@ -24,6 +39,22 @@
       "blacklisted_biomes": [],
       "step": "surface_structures",
       "terrain_adaptation": "none"
+    },
+    {
+      "name": "ars_additions:ruined_portal",
+      "is_disabled": true,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [],
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin"
+    },
+    {
+      "name": "ars_additions:ruined_portal_large",
+      "is_disabled": true,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [],
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin"
     },
     {
       "name": "ars_elemental:starbuncle_shrine",

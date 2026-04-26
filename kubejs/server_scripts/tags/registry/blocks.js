@@ -102,5 +102,41 @@ ServerEvents.tags('block', tags => {
 
 	tags.add('snowrealmagic:cannot_accumulate_on', [
 		/placeablemaxwell/
-	])
+	]);
+
+	const fluidloggableMap = {
+		both: [],
+		loggable: [
+			'ars_nouveau:arcane_platform',
+			'ars_nouveau:arcane_pedestal',
+			'ars_nouveau:arcane_core',
+			'ars_nouveau:imbuement_chamber',
+			'ars_nouveau:arcane_platform',
+			/mana_jar/,
+			/ars.*sconce/,
+			/spell_turret/,
+			/ars.*sbed/,
+			/ars.*relay/,
+			'ars_nouveau:alteration_table',
+			'ars_nouveau:alteration_table',
+			'ars_nouveau:whirlisprig_flower',
+			'supplementaries:urn',
+			/botania:floating_/,
+			/botanicadds:.*floating.*/,
+			/windowbox:.*floating.*/,
+			/botania:apothecary/,
+			'botania:starfield',
+			'botania:cocoon',
+			/botania:.*pylon.*/,
+			/botanicadds:.*pylon.*/,
+			/botania:.*spreader.*/
+		],
+		permeable: [],
+	};
+	tags.add('adj:fluidloggable', fluidloggableMap.both.concat(fluidloggableMap.loggable));
+	tags.add('adj:fluid_permeable', fluidloggableMap.both.concat(fluidloggableMap.permeable));
+
+	tags.add('base_stone_overworld', [
+		'kubejs:cinnabar'
+	]);
 });

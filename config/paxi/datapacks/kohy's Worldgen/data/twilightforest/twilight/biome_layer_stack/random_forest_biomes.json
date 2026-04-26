@@ -17,13 +17,12 @@
                         "twilightforest:firefly_forest"
                       ],
                       "layer_type": "twilightforest:random_biomes",
-                      "rare_biome_chance": 15,
+                      "rare_biome_chance": 40,
                       "rare_biomes": [
                         "twilightforest:lake",
                         "twilightforest:dense_mushroom_forest",
                         "twilightforest:enchanted_forest",
-                        "twilightforest:clearing",
-                        "twilightforest:spooky_forest"
+                        "twilightforest:clearing"
                       ],
                       "salt": 1
                     },

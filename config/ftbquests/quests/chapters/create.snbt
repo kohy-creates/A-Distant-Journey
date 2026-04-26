@@ -28,7 +28,7 @@
 			image: "create_connected:block/fan_catalyst_core"
 			rotation: 45.0d
 			width: 1.75d
-			x: 4.5d
+			x: 5.5d
 			y: -3.0d
 		}
 		{
@@ -143,7 +143,7 @@
 				}
 			]
 			title: "Bonk!"
-			x: 4.5d
+			x: 5.5d
 			y: 1.0d
 		}
 		{
@@ -164,7 +164,7 @@
 				}
 			]
 			title: "Wind Maker"
-			x: 4.5d
+			x: 5.5d
 			y: -1.0d
 		}
 		{
@@ -321,7 +321,7 @@
 				}
 			]
 			title: "Technomantic!"
-			x: 4.5d
+			x: 5.5d
 			y: 3.0d
 		}
 		{
@@ -505,7 +505,7 @@
 				type: "item"
 			}]
 			title: "You Can Build a Country Out Of This!"
-			x: 6.0d
+			x: 7.0d
 			y: 2.5d
 		}
 		{
@@ -567,7 +567,7 @@
 				}
 			]
 			title: "I Fear NOTHING!"
-			x: 7.0d
+			x: 8.0d
 			y: 2.5d
 		}
 		{
@@ -580,7 +580,7 @@
 				type: "item"
 			}]
 			title: "It Looks Like A Trash Can"
-			x: 6.0d
+			x: 7.0d
 			y: -0.5d
 		}
 		{
@@ -623,7 +623,7 @@
 				type: "item"
 			}]
 			title: "Compact!"
-			x: 5.5d
+			x: 6.5d
 			y: -2.0d
 		}
 		{
@@ -657,7 +657,7 @@
 				}
 			]
 			title: "Industrial Elementalist"
-			x: 4.5d
+			x: 5.5d
 			y: -3.0d
 		}
 		{
@@ -741,7 +741,7 @@
 				}
 			]
 			title: "Too Hot! Too Hot!!"
-			x: 6.5d
+			x: 7.5d
 			y: 1.0d
 		}
 		{
@@ -789,6 +789,40 @@
 			title: "Open Source"
 			x: 0.5d
 			y: -5.5d
+		}
+		{
+			dependencies: ["6F6E4CEDDF413E18"]
+			id: "662943A1F3D11D75"
+			subtitle: "Craft a Millstone"
+			tasks: [{
+				id: "1B8F6DEA26AB9F94"
+				item: "create:millstone"
+				type: "item"
+			}]
+			title: "Crushing Time"
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["662943A1F3D11D75"]
+			icon: "kubejs:iron_dust"
+			id: "248650C7DEACA661"
+			subtitle: "Crush raw ores into Ore Dust to effectively multiply your mining trip results"
+			tasks: [{
+				id: "0CF2C6577A34DE3B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:ore_dusts"
+					}
+				}
+				title: "Any Ore Dust"
+				type: "item"
+			}]
+			title: "Efficiency Boost"
+			x: 4.0d
+			y: -2.0d
 		}
 	]
 	title: "Managing a Factory"

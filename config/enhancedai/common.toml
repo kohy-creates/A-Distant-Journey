@@ -889,7 +889,7 @@
 		[Creepers."Creeper swell".Angry]
 			#Chance for a creeper to spawn angry
 			#Range: 0.0 ~ 1.0
-			Chance = 0.03
+			Chance = 0.0
 			#If true, Angry Creeper emits particles
 			Particles = true
 			#If true, Angry Creeper will have a name

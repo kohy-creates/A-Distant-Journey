@@ -41,148 +41,147 @@
 			}
 		},
 		{
-			"new": {
-				"Name": "twilightforest:spiral_bricks",
-				"Properties": {
-					"axis": "x",
-					"diagonal": "TOP_LEFT"
-				}
-			},
 			"old": {
-				"Name": "twilightforest:nagastone_stairs_left",
-				"Properties": {
-					"facing": "east",
-					"half": "top",
-					"shape": "straight",
-					"waterlogged": "false"
-				}
+			"Name": "twilightforest:spiral_bricks",
+			"Properties": {
+				"axis": "x",
+				"diagonal": "TOP_LEFT"
+			}
+			},
+			"new": {
+			"Name": "twilightforest:nagastone_stairs_left",
+			"Properties": {
+				"facing": "east",
+				"half": "top",
+				"shape": "straight",
+				"waterlogged": "false"
+			}
 			}
 		},
 		{
-			"new": {
-				"Name": "twilightforest:spiral_bricks",
-				"Properties": {
-					"axis": "x",
-					"diagonal": "TOP_RIGT"
-				}
-			},
 			"old": {
-				"Name": "twilightforest:nagastone_stairs_left",
-				"Properties": {
-					"facing": "west",
-					"half": "top",
-					"shape": "straight",
-					"waterlogged": "false"
-				}
+			"Name": "twilightforest:spiral_bricks",
+			"Properties": {
+				"axis": "x",
+				"diagonal": "TOP_RIGHT"
+			}
+			},
+			"new": {
+			"Name": "twilightforest:nagastone_stairs_left",
+			"Properties": {
+				"facing": "west",
+				"half": "top",
+				"shape": "straight",
+				"waterlogged": "false"
+			}
 			}
 		},
 		{
-			"new": {
-				"Name": "twilightforest:spiral_bricks",
-				"Properties": {
-					"axis": "x",
-					"diagonal": "BOTTOM_LEFT"
-				}
-			},
 			"old": {
-				"Name": "twilightforest:nagastone_stairs_left",
-				"Properties": {
-					"facing": "east",
-					"half": "bottom",
-					"shape": "straight",
-					"waterlogged": "false"
-				}
+			"Name": "twilightforest:spiral_bricks",
+			"Properties": {
+				"axis": "x",
+				"diagonal": "BOTTOM_LEFT"
+			}
+			},
+			"new": {
+			"Name": "twilightforest:nagastone_stairs_left",
+			"Properties": {
+				"facing": "east",
+				"half": "bottom",
+				"shape": "straight",
+				"waterlogged": "false"
+			}
 			}
 		},
 		{
-			"new": {
-				"Name": "twilightforest:spiral_bricks",
-				"Properties": {
-					"axis": "x",
-					"diagonal": "BOTTOM_RIGHT"
-				}
-			},
 			"old": {
-				"Name": "twilightforest:nagastone_stairs_left",
-				"Properties": {
-					"facing": "west",
-					"half": "bottom",
-					"shape": "straight",
-					"waterlogged": "false"
-				}
+			"Name": "twilightforest:spiral_bricks",
+			"Properties": {
+				"axis": "x",
+				"diagonal": "BOTTOM_RIGHT"
 			}
-		},
-		,
-		{
-			"new": {
-				"Name": "twilightforest:spiral_bricks",
-				"Properties": {
-					"axis": "z",
-					"diagonal": "TOP_LEFT"
-				}
 			},
-			"old": {
-				"Name": "twilightforest:nagastone_stairs_left",
-				"Properties": {
-					"facing": "north",
-					"half": "top",
-					"shape": "straight",
-					"waterlogged": "false"
-				}
+			"new": {
+			"Name": "twilightforest:nagastone_stairs_left",
+			"Properties": {
+				"facing": "west",
+				"half": "bottom",
+				"shape": "straight",
+				"waterlogged": "false"
+			}
 			}
 		},
 		{
-			"new": {
-				"Name": "twilightforest:spiral_bricks",
-				"Properties": {
-					"axis": "z",
-					"diagonal": "TOP_RIGT"
-				}
-			},
 			"old": {
-				"Name": "twilightforest:nagastone_stairs_left",
-				"Properties": {
-					"facing": "south",
-					"half": "top",
-					"shape": "straight",
-					"waterlogged": "false"
-				}
+			"Name": "twilightforest:spiral_bricks",
+			"Properties": {
+				"axis": "z",
+				"diagonal": "TOP_LEFT"
+			}
+			},
+			"new": {
+			"Name": "twilightforest:nagastone_stairs_left",
+			"Properties": {
+				"facing": "north",
+				"half": "top",
+				"shape": "straight",
+				"waterlogged": "false"
+			}
 			}
 		},
 		{
-			"new": {
-				"Name": "twilightforest:spiral_bricks",
-				"Properties": {
-					"axis": "z",
-					"diagonal": "BOTTOM_LEFT"
-				}
-			},
 			"old": {
-				"Name": "twilightforest:nagastone_stairs_left",
-				"Properties": {
-					"facing": "north",
-					"half": "bottom",
-					"shape": "straight",
-					"waterlogged": "false"
-				}
+			"Name": "twilightforest:spiral_bricks",
+			"Properties": {
+				"axis": "z",
+				"diagonal": "TOP_RIGHT"
+			}
+			},
+			"new": {
+			"Name": "twilightforest:nagastone_stairs_left",
+			"Properties": {
+				"facing": "south",
+				"half": "top",
+				"shape": "straight",
+				"waterlogged": "false"
+			}
 			}
 		},
 		{
-			"new": {
-				"Name": "twilightforest:spiral_bricks",
-				"Properties": {
-					"axis": "z",
-					"diagonal": "BOTTOM_RIGHT"
-				}
-			},
 			"old": {
-				"Name": "twilightforest:nagastone_stairs_left",
-				"Properties": {
-					"facing": "south",
-					"half": "bottom",
-					"shape": "straight",
-					"waterlogged": "false"
-				}
+			"Name": "twilightforest:spiral_bricks",
+			"Properties": {
+				"axis": "z",
+				"diagonal": "BOTTOM_LEFT"
+			}
+			},
+			"new": {
+			"Name": "twilightforest:nagastone_stairs_left",
+			"Properties": {
+				"facing": "north",
+				"half": "bottom",
+				"shape": "straight",
+				"waterlogged": "false"
+			}
+			}
+		},
+		{
+			"old": {
+			"Name": "twilightforest:spiral_bricks",
+			"Properties": {
+				"axis": "z",
+				"diagonal": "BOTTOM_RIGHT"
+			}
+			},
+			"new": {
+			"Name": "twilightforest:nagastone_stairs_left",
+			"Properties": {
+				"facing": "south",
+				"half": "bottom",
+				"shape": "straight",
+				"waterlogged": "false"
+			}
 			}
 		}
 	],
@@ -190,14 +189,9 @@
 		"minecraft:enchanting_table": "enchantinginfuser:enchanting_infuser",
 		"unusualend:infested_end_stone": "majruszsdifficulty:infested_end_stone",
 
-		"quark:thatch": "beachparty:thatch",
-		"quark:thatch_slab": "beachparty:thatch_slab",
-		"quark:thatch_stairs": "beachparty:thatch_stairs",
-
-		// Some backwards compatiblity
-		"hearth_and_home:thatch": "beachparty:thatch",
-		"hearth_and_home:thatch_slab": "beachparty:thatch_slab",
-		"hearth_and_home:thatch_stairs": "beachparty:thatch_stairs",
+		"quark:thatch": "hearth_and_home:thatch",
+		"quark:thatch_slab": "hearth_and_home:thatch_slab",
+		"quark:thatch_stairs": "hearth_and_home:thatch_stairs",
 
 		"quark:shingles": "hearth_and_home:shingles",
 		"quark:shingles_slab": "hearth_and_home:shingle_slab",
@@ -501,6 +495,13 @@
 		"twilightforest:mossy_nagastone_stairs_right": "twilightforest:mossy_nagastone_stairs_left",
 		"twilightforest:cracked_nagastone_stairs_right": "twilightforest:cracked_nagastone_stairs_left",
 
-		"quark:dirt_bricks": "minecraft:coarse_dirt"
+		"quark:dirt_bricks": "minecraft:coarse_dirt",
+		"beachparty:sandwaves": "minecraft:sand",
+		
+		"alexscaves:sulfur": "kubejs:sulfur",
+		"alexscaves:sulfur_bud_small": "minecraft:air",
+		"alexscaves:sulfur_bud_medium": "minecraft:air",
+		"alexscaves:sulfur_bud_large": "minecraft:air",
+		"alexscaves:sulfur_cluster": "minecraft:air",
 	}
 }

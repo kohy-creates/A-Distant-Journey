@@ -16,4 +16,4 @@ ItemEvents.pickedUp(event => {
 			`/execute in ${event.getLevel().getDimension()} positioned ${x} ${y} ${z} as @a[distance=..24] run credits @s`
 		)
 	}
-})
+});

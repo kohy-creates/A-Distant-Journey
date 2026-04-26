@@ -166,17 +166,19 @@ ServerEvents.tick(event => {
 		if (!persistentData.chapters.get(stageName)) {
 			const currentIndex = Number.parseInt(stageName.replace('chapter_', ''));
 			for (let i = 1; i <= currentIndex; i++) {
+
 				let stageToGrant = DecursioStages.STAGES[i];
+				if (!persistentData.chapters[stageToGrant]) {
+					persistentData.chapters.putString(DecursioStages.CURRENT_STAGE, stageToGrant);
+					server.runCommandSilent('/gamestate ' + stageToGrant);
 
-				persistentData.chapters.putString(DecursioStages.CURRENT_STAGE, stageToGrant);
-				server.runCommandSilent('/gamestate ' + stageToGrant);
+					persistentData.chapters.putBoolean(stageToGrant, true);
 
-				persistentData.chapters.putBoolean(stageToGrant, true);
+					DecursioStages.changeGamerules(server, stageToGrant);
+					DecursioStages.sendChapterAnnouncements(server, stageToGrant);
 
-				DecursioStages.changeGamerules(server, stageToGrant);
-				DecursioStages.sendChapterAnnouncements(server, stageToGrant);
-
-				TwilightForestProgression.onChapterUpdate(server, stageToGrant);
+					TwilightForestProgression.onChapterUpdate(server, stageToGrant);
+				}
 			}
 		}
 		else console.log('Attempted to jump to a stage that was already present!')

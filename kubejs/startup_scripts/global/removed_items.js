@@ -6,6 +6,11 @@ const RemovedItems = {
 		'born_in_chaos_v1:mint_ice_cream',
 
 		'tide:depth_meter',
+		'tide:pocket_watch',
+		'tide:lunar_calendar',
+		'tide:climate_gauge',
+		'tide:weather_radio',
+		'tide:enchanted_pocket_watch',
 
 		'neapolitan:chocolate_block',
 
@@ -85,6 +90,17 @@ const RemovedItems = {
 		'twilightforest:cooked_venison',
 		'twilightdelight:cooked_venison_rib',
 		'twilightforest:knightmetal_ring',
+		'twilightforest:ironwood_sword',
+		'twilightdelight:ironwood_knife',
+		'twilightforest:phantom_helmet',
+		'twilightforest:phantom_chestplate',
+		'twilightforest:phantom_gloves',
+		'twilightdelight:knightmetal_knife',
+		'twilightforest:knightmetal_pickaxe',
+		'twilightforest:block_and_chain',
+		'twilightforest:moon_dial',
+		/twilightforest:.*nagastone.*_right/,
+		'twilightforest:fiery_tears',
 
 		'handcrafted:wood_plate',
 		'handcrafted:wood_cup',
@@ -125,6 +141,12 @@ const RemovedItems = {
 		'enligthened_end:dashing_leggings_leggings',
 
 		'experienceobelisk:cognitive_rod',
+		'experienceobelisk:cognitive_sword',
+		'experienceobelisk:cognitive_helmet',
+		'experienceobelisk:cognitive_chestplate',
+		'experienceobelisk:cognitive_leggings',
+		'experienceobelisk:cognitive_boots',
+		'experienceobelisk:cognitive_bow',
 
 		'artifacts:power_glove',
 		'artifacts:obsidian_skull',
@@ -145,6 +167,7 @@ const RemovedItems = {
 		'spelunkers_charm:dripstone_rock',
 		'spelunkers_charm:basalt_rock',
 		'spelunkers_charm:redstone_cluster',
+		'spelunkers_charm:candle_helmet',
 
 		/witherstormmod:gold_command_block_.*/,
 		/witherstormmod:wooden_command_block_.*/,
@@ -301,12 +324,7 @@ const RemovedItems = {
 		'terra_curio:stalkers_quiver',
 		'terra_curio:cell_phone',
 		'terra_curio:tally_counter',
-		'terra_curio:copper_watch',
-		'terra_curio:gold_watch',
-		'terra_curio:tin_watch',
-		'terra_curio:platinum_watch',
-		'terra_curio:silver_watch',
-		'terra_curio:tungsten_watch',
+		/terra_curio:.*_watch/,
 		'terra_curio:depth_meter',
 		'terra_curio:compass',
 		'terra_curio:pda',
@@ -326,6 +344,11 @@ const RemovedItems = {
 		'terra_curio:shield_of_cthulhu',
 		'terra_curio:tabi',
 		'terra_curio:master_ninja_gear',
+		'terra_curio:brain_of_confusion',
+		'terra_curio:worm_scarf',
+		'terra_curio:hive_pack',
+		'terra_curio:royal_gel',
+		'terra_curio:angler_earring',
 
 		'hammerlib:gears/wooden',
 		'hammerlib:gears/stone',
@@ -360,11 +383,7 @@ const RemovedItems = {
 		'create_power_loader:empty_brass_chunk_loader',
 		'create:handheld_worldshaper',
 
-		'create:crushed_raw_osmium',
-		'create:crushed_raw_platinum',
-		'create:crushed_raw_silver',
-		'create:crushed_raw_tin',
-		'create:crushed_raw_uranium',
+		/create:crushed_raw_.*/,
 
 		'farmersdelight:wheat_dough',
 		'farmersdelight:rope',
@@ -388,6 +407,7 @@ const RemovedItems = {
 		'alexscaves:biome_treat',
 		'alexscaves:conversion_crucible',
 		'alexscaves:beholder',
+		/alexscaves:.*sulfur.*/,
 
 		'ars_nouveau:sorcerer_boots',
 		'ars_nouveau:sorcerer_leggings',
@@ -398,6 +418,10 @@ const RemovedItems = {
 		'ars_nouveau:battlemage_robes',
 		'ars_nouveau:battlemage_hood',
 		'ars_nouveau:ritual_cloudshaping',
+		/ars_nouveau:.*sourcelink/,
+		'ars_nouveau:worn_notebook',
+		'ars_nouveau:glyph_craft',
+		'ars_elemental:everfull_urn',
 
 		'nourished_nether:glowing_obsidian',
 
@@ -514,14 +538,13 @@ const RemovedItems = {
 		/architects_palette:weeping_blackstone.*/,
 		/architects_palette:twisting_blackstone.*/,
 		/architects_palette:.*heavy.*_bricks.*/,
+		'architects_palette:moonshale_flagstone',
 
 		/rehooked/,
 
 		'majruszsdifficulty:wither_sword',
 		'majruszsdifficulty:cerberus_fang',
-
-		'ars_nouveau:worn_notebook',
-		'ars_nouveau:glyph_craft',
+		/majruszsdifficulty:.*infernal_sponge/,
 
 		'cratedelight:sugar_bag',
 		'cratedelight:gunpowder_bag',
@@ -539,6 +562,7 @@ const RemovedItems = {
 		'cratedelight:apple_crate',
 
 		'delightftul:acorn',
+		'delightful:crystalline_knife',
 
 		'ancient_aether:ancient_dungeon_key',
 		'ancient_aether:ancient_sword',
@@ -578,6 +602,15 @@ const RemovedItems = {
 		/vinery:mangrove_wine_rack_.*/,
 		/vinery:.*_lattice/,
 
+		'vinery:vinery_standard',
+		/vinery.*floorboard$/,
+		'v_slab_compat:vinery/grass_vertical_slab',
+		'v_slab_compat:vinery/coarse_dirt_vertical_slab',
+		'v_slab_compat:vinery/dirt_vertical_slab',
+		'v_slab_compat:vinery/dirt_path_vertical_slab',
+		'vinery:straw_hat',
+		/vinery:winemaker_.*/,
+
 		'nethervinery:crimson_fermentation_barrel',
 		'nethervinery:crimson_grapevine_pot',
 		'nethervinery:crimson_apple_press',
@@ -598,7 +631,10 @@ const RemovedItems = {
 		'beachparty:wet_hay_block',
 		'beachparty:palm_glass',
 		'beachparty:palm_glass_pane',
-		'vinery:palm_floorboards',
+		/beachparty:.*thatch.*/,
+		'beachparty:sandwaves',
+		/beachparty.*floorboard$/,
+		'beachparty:completionist_banner',
 
 		'minecraft:copper_nugget',
 		'minecraft:copper_leggings',
@@ -623,12 +659,6 @@ const RemovedItems = {
 		'oreberriesreplanted:lead_oreberry_bush',
 		'oreberriesreplanted:aluminum_oreberry',
 		'oreberriesreplanted:aluminum_oreberry_bush',
-
-		'vinery:vinery_standard',
-		'v_slab_compat:vinery/grass_vertical_slab',
-		'v_slab_compat:vinery/coarse_dirt_vertical_slab',
-		'v_slab_compat:vinery/dirt_vertical_slab',
-		'v_slab_compat:vinery/dirt_path_vertical_slab',
 
 		/minecraft:.*_shelf/,
 
@@ -655,26 +685,22 @@ const RemovedItems = {
 		'rubinated_nether:runestone',
 		'rubinated_nether:rubination_altar',
 		'rubinated_nether:ruby_block',
-		/rubinated_nether:altar_stone.*/,
+		/rubinated_nether:.*altar_stone.*/,
 
 		/aperture_innovations:concrete_surface/,
 		/aperture_innovations:metal_surface/,
 		'aperture_innovations:long_fall_boots',
+		'aperture_innovations:antline',
+		'aperture_innovations:antline_checkmark',
+		'aperture_innovations:antline_timer',
+		'aperture_innovations:weighted_storage_cube',
+		'aperture_innovations:weighted_companion_cube',
+		'aperture_innovations:pedestal_button',
+		'aperture_innovations:large_button',
 
-		'twilightforest:ironwood_sword',
-		'experienceobelisk:cognitive_sword',
-		'experienceobelisk:cognitive_helmet',
-		'experienceobelisk:cognitive_chestplate',
-		'experienceobelisk:cognitive_leggings',
-		'experienceobelisk:cognitive_boots',
-		'experienceobelisk:cognitive_bow',
-		'twilightforest:phantom_helmet',
-		'twilightforest:phantom_chestplate',
-		'twilightforest:phantom_gloves',
-		'twilightdelight:knightmetal_knife',
-		'twilightforest:knightmetal_pickaxe',
-		'twilightforest:block_and_chain',
-		'twilightforest:moon_dial'
+
+
+
 	]
 };
 
@@ -682,12 +708,10 @@ global.blacklistedItems = new Set([typeof String]);
 
 function regenerateBlacklist() {
 	Item.getTypeList().forEach(id => {
-		console.log(id)
 		if (RemovedItems.list.some(entry => {
 			if (entry && entry instanceof RegExp) {
 				if (entry.test(id)) {
-					// console.log(`${id} matches regex ${entry.source}`);
-					return true
+					return true;
 				}
 				else return false;
 			}
@@ -699,7 +723,7 @@ function regenerateBlacklist() {
 
 	global.blacklistedItemsArray = Array.from(global.blacklistedItems);
 
-	console.log(`Added ${global.blacklistedItemsArray.length} items to the blacklist`)
+	console.log(`Added ${global.blacklistedItemsArray.length} items to the blacklist`);
 }
 
 StartupEvents.postInit(event => {

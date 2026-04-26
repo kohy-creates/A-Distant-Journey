@@ -48,7 +48,10 @@
     "unusualend:warped_lantern",
     "minecraft:copper_lantern",
     "minecraft:exposed_copper_lantern",
-    "heart_crystals:heart_lantern"
+    "heart_crystals:heart_lantern",
+    "twilightforest:filled_ore_map",
+    "twilightforest:filled_maze_map",
+    "twilightforest:filled_magic_map"
   ],
   "enableAnimationSmoothing": true,
   "enableInWorldMapRendering": true,
@@ -105,5 +108,7 @@
     "minecraft:weathered_copper_lantern",
     "minecraft:oxidized_copper_lantern",
     "minecraft:copper_lantern"
-  ]
+  ],
+  "maxBlockingAngle": 15.0,
+  "maxNormalAngle": 50.0
 }

@@ -1,6 +1,6 @@
 global.mobs = [];
 
-global.WitherStormFlyingSpeed = 0.01;
+global.WitherStormFlyingSpeed = 0.014;
 
 EntityJSEvents.attributes(event => {
 

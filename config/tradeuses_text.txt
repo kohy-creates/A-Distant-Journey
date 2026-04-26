@@ -1,0 +1,2 @@
+§6§lPurchase count: §7{uses}§8/§7{max_uses}
+§8§o({uses_left} left in stock)

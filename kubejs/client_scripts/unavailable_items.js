@@ -27,8 +27,8 @@ ClientEvents.tick(event => {
 			if (s > highestStage) highestStage = s;
 		});
 		UnavailableItems.cache.currentChapter = highestStage;
+		if (UnavailableItems.cache.chapterCached == null || UnavailableItems.cache.chapterCached != UnavailableItems.cache.currentChapter) {
 
-		if (!UnavailableItems.cache.chapterCached || UnavailableItems.cache.chapterCached != UnavailableItems.cache.currentChapter) {
 			Utils.runAsync(() => {
 				console.log('Generating undiscovered item cache...', 'This is running async btw!')
 				UnavailableItems.cache.bannedItems = new Set([typeof String]);

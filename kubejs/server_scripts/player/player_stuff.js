@@ -1,5 +1,4 @@
 const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier');
-const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation');
 const $Integer = Java.loadClass('java.lang.Integer');
 const $Mob = Java.loadClass('net.minecraft.world.entity.Mob');
 
@@ -78,6 +77,7 @@ PlayerEvents.tick(event => {
 	const FlyingUUID = '923052c1-2354-48ba-b01a-51e31360e219';
 	const SpellBookManaUUID = 'b790c0a0-0934-41e2-a2f4-d59b6671db5b';
 	const WillOfDharockUUID = 'c17e38c0-78aa-422d-8e41-4243bc5a153f';
+	const WitherStormUUID = 'c17e38c0-78aa-422d-8e41-4243bc5a153f';
 
 	player.getAttribute('attributeslib:crit_chance').setBaseValue(0.0);
 	player.getAttribute('generic.attack_speed').setBaseValue(2.0);
@@ -86,7 +86,7 @@ PlayerEvents.tick(event => {
 	const creativeFlightAttribute = player.getAttribute('attributeslib:creative_flight');
 	const flying = creativeFlightAttribute.getModifier(FlyingUUID)
 	if (!flying && hasPrism) {
-		creativeFlightAttribute.addPermanentModifier(new $AttributeModifier(FlyingUUID, 'Architect\'s Prism', 1, $Operation.ADDITION))
+		creativeFlightAttribute.addPermanentModifier(new $AttributeModifier(FlyingUUID, 'Architect\'s Prism', 1, 'addition'))
 	}
 	else if (flying && !hasPrism) {
 		creativeFlightAttribute.removeModifier(FlyingUUID)
@@ -104,7 +104,7 @@ PlayerEvents.tick(event => {
 				amount = 40;
 				break;
 		}
-		maxManaAttribute.addPermanentModifier(new $AttributeModifier(SpellBookManaUUID, 'Spell Book Max Mana', amount, $Operation.ADDITION))
+		maxManaAttribute.addPermanentModifier(new $AttributeModifier(SpellBookManaUUID, 'Spell Book Max Mana', amount, 'addition'))
 	}
 	else if (spellBookMana && spellBookTier == 0) {
 		maxManaAttribute.removeModifier(SpellBookManaUUID);
@@ -121,7 +121,7 @@ PlayerEvents.tick(event => {
 		}
 	}
 	critDamageAttr.removeModifier(WillOfDharockUUID)
-	critDamageAttr.addTransientModifier(new $AttributeModifier(WillOfDharockUUID, 'Will of Dharock', willOfDharockAmount, $Operation.ADDITION));
+	critDamageAttr.addTransientModifier(new $AttributeModifier(WillOfDharockUUID, 'Will of Dharock', willOfDharockAmount, 'addition'));
 
 	// Global damage attribute
 	// Here read: something that increases all damage dealt
@@ -207,7 +207,16 @@ PlayerEvents.tick(event => {
 		) && player.getLevel().isNight() && !isMerfolkActive) {
 			player.addEffect(new $MobEffectInstance('kubejs:werewolf_form', 3, 0, true, false, true));
 		}
-	}	
+	}
+
+	// Wither Storm stuff
+	const musicPitch = player.getAttribute('adjcore:client.music_pitch');
+	musicPitch.removeModifier(WitherStormUUID);
+	const server = event.getServer();
+	if (server.persistentData.witherStormActive) {
+		let phase = server.persistentData.witherStormPhase;
+		musicPitch.addTransientModifier(new $AttributeModifier(WitherStormUUID, 'Consequences of Your Own Actions', Math.min(phase * -0.07), 'multiply_base'));
+	}
 });
 
 ADJServerEvents.adjHurt(event => {

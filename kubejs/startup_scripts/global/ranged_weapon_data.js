@@ -1,6 +1,3 @@
-/**
- * @type {Record<InputItem_, number>}
- */
 global.bowDamage = {
 	'minecraft:bow': 6,
 	'ars_nouveau:spell_bow': 34,
@@ -43,9 +40,6 @@ global.bowDamage = {
 
 }
 
-/**
- * @type {Record<Special.EntityType|InputItem_, number>}
- */
 global.arrowDamage = {
 
 	'minecraft:arrow': 4,
@@ -90,15 +84,9 @@ global.arrowPierce = {
 	'twilightforest:ice_arrow': 1,
 
 	'tide:star_arrow': 9,
-
-	// 'too_many_bows:frostbite_arrow': 2,
-
 	'tide:deep_aqua_arrow': 5
 }
 
-/**
- * @type {Record<Special.EntityType, number>}
- */
 global.monsterRangedDamageBase = {
 	'minecraft:skeleton': 13,
 	'minecraft:stray': 12,
@@ -106,6 +94,8 @@ global.monsterRangedDamageBase = {
 	'minecraft:pillager': 17,
 	'minecraft:illusioner': 20,
 	'minecraft:piglin': 16,
+	'witherstormmod:tainted_skeleton': 50,
+	'witherstormmod:tainted_pillager': 65,
 }
 
 global.monsterRangedDamageMul = {

@@ -28,7 +28,7 @@ const simplySwordsTypes = [
 	'_scythe'
 ];
 
-// Balancing multipliers for Simply Swords
+// Multipliers for Simply Swords
 const simplySwordsAttackDamage = [
 	0.85,
 	1.0,
@@ -54,9 +54,8 @@ function roundToNearest(value, step) {
 function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 	let i = 0;
 
-	// Fallbacks for undefined args (no default params in KubeJS)
-	if (typeof arg2 === 'undefined') arg2 = 1; // speed multiplier
-	if (typeof arg3 === 'undefined') arg3 = 1; // damage multiplier
+	if (typeof arg2 === 'undefined') arg2 = 1;
+	if (typeof arg3 === 'undefined') arg3 = 1;
 
 	toolset.forEach(function (tool) {
 		const name = toolsetName + tool;
@@ -66,7 +65,6 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 		var attackDamage, attackSpeed;
 
 		if (Array.isArray(arg1)) {
-			// Direct per-tool damage values
 			attackDamage = Math.ceil(arg1[i] * arg3);
 			attackSpeed = roundToNearest(defaultAttackSpeed[i] * arg2, 0.05);
 		} else {
@@ -79,8 +77,7 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 		i++;
 	});
 
-	// --- Simply Swords support ---
-	const baseMaterial = toolsetName.split(':')[1]; // e.g. "gold", "steel"
+	const baseMaterial = toolsetName.split(':')[1];
 	const compatPath = 'simplyswords:mythicmetals_compat/' + baseMaterial + '/' + baseMaterial;
 
 	let j = 0;
@@ -106,11 +103,6 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 	});
 }
 
-
-
-/**
- * @type {{ [key in InputItem_]: number[] }}
- */
 global.weapon_overrides = {
 	// attack damage, attack speed, crit chance, crit damage, armor penetration
 	'mythicmetals:mythril_drill': [round(16 * defaultAttackDamage[1]), defaultAttackSpeed[1]],

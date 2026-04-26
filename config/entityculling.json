@@ -90,7 +90,12 @@
     "witherstormmod:tentacle",
     "minecraft:area_effect_cloud",
     "adjcore:heart",
-    "adjcore:mana_star"
+    "adjcore:mana_star",
+    "witherstormmod:block_cluster",
+    "witherstormmod:formidibomb",
+    "witherstormmod:command_block",
+    "witherstormmod:flaming_wither_skull",
+    "witherstormmod:blue_flaming_wither_skull"
   ],
   "disableF3": true,
   "skipEntityCulling": false,

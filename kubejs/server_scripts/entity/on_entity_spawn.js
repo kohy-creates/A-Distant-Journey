@@ -52,8 +52,11 @@ EntityEvents.spawned(event => {
 			break;
 		}
 		case 'minecraft:item': {
-			const itemID = entity.nbt.Item.id;
-			console.log(itemID)
+			let nbt = entity.nbt;
+			if (!nbt) return;
+			let item = nbt.Item;
+			if (!item) return;
+			const itemID = item.id;
 			switch (itemID) {
 				case 'minecraft:nether_star':
 				case 'witherstormmod:withered_nether_star': {

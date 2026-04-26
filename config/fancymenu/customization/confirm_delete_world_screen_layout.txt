@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = confirm_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1775751508251
+  last_edited_time = 1776254635623
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:5ac23397-8baf-4bf6-b643-0923c32ea865-1775751496383] = [groups:][instances:]
+  [loading_requirement_container_meta:ae46b1b3-5784-493e-8b25-61137e4951ae-1776254632342] = [groups:][instances:]
 }
 
 customization {
@@ -32,15 +32,15 @@ layout_action_executable_blocks {
 }
 
 element {
-  interactable = true
-  source = ^^^%n%Your world will **not** be moved to the Trash Can. It will be &cgone entirely.%n%Associated backups won't be deleted, you will need to delete them manually.%n%^^^
+  interactable = false
+  source = ^^^%n%Your world will **not** be moved to the Trash Can. It will be &cgone &cfor &cgood&r.%n%Associated automatic backups won't be deleted, you will need to delete them manually.%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
   base_color = #FFFFFFFF
   text_border = 2
   line_spacing = 2
-  enable_scrolling = true
+  enable_scrolling = false
   auto_line_wrapping = true
   remove_html_breaks = true
   code_block_single_color = #737373FF

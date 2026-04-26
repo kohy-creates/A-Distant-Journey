@@ -1,0 +1,18 @@
+{
+  "replace": true,
+  "values": [
+    "twilightforest:hedge_maze",
+    "twilightforest:quest_grove",
+    "twilightforest:mushroom_tower",
+    "twilightforest:naga_courtyard",
+    "twilightforest:lich_tower",
+    "twilightforest:labyrinth",
+    "twilightforest:hydra_lair",
+    "twilightforest:knight_stronghold",
+    "twilightforest:dark_tower",
+    "twilightforest:yeti_cave",
+    "twilightforest:aurora_palace",
+    "twilightforest:troll_cave",
+    "twilightforest:final_castle"
+  ]
+}

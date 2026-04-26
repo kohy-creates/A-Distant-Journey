@@ -9,7 +9,7 @@
     "harvest_tool.show_unbreakable": true,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
-    "item_storage.normal_amount": 9,
+    "item_storage.normal_amount": 27,
     "item_storage": true,
     "harvest_tool": true,
     "armor_stand": true,
@@ -38,7 +38,7 @@
     "beehive": true,
     "item_storage.detailed_amount": 54,
     "player_head": true,
-    "block_states": true,
+    "block_states": false,
     "lectern": true,
     "entity_armor": true,
     "harvest_tool.creative": true,
@@ -59,9 +59,6 @@
     "plugin": true,
     "show_tree_block_counts": false,
     "show_num_chops_remaining": true
-  },
-  "unusual_delight": {
-    "tick_dino": true
   },
   "jade": {
     "coordinates.rel": false,
