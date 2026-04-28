@@ -53,10 +53,10 @@ EntityEvents.spawned(event => {
 			arrowEntity.setNbt(nbt)
 		}
 	}
-})
+});
 
 const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent")
-NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
+NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.LivingHurtEvent_} event */ event => {
 	const source = event.getSource()
 
 	const rangedDamageSources = [
@@ -70,7 +70,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 		const shooter = source.getActual();
 		if (!shooter) return;
 		let damage;
-		const arrowEntity = event.source.getImmediate();
+		const arrowEntity = source.getImmediate();
 		if (shooter instanceof $Player && arrowEntity instanceof $AbstractArrow) {
 
 			// Certain arrows ignore velocity multiplier

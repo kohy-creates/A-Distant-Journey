@@ -424,8 +424,8 @@
 			image: "adj:textures/texts/lore_aether.png"
 			rotation: 0.0d
 			width: 12.0d
-			x: 35.67857142857146d
-			y: 16.654761904761884d
+			x: 36.5d
+			y: 16.5d
 		}
 		{
 			dependency: "25A8ABBC7235D20E"
@@ -581,8 +581,8 @@
 			image: "mythicmetals:block/mythril_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: 20.0d
-			y: 2.0d
+			x: 30.5d
+			y: 18.0d
 		}
 		{
 			dependency: "37D84A7023231586"
@@ -644,7 +644,7 @@
 			image: "witherstormmod:block/withered_phlegm_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: -6.0d
+			x: -5.5d
 			y: 33.5d
 		}
 		{
@@ -2011,7 +2011,7 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["5AEA2A64181AED93"]
+			dependencies: ["2B93B1B8E92CAD45"]
 			icon: {
 				Count: 1
 				id: "mythicmetals:mythril_drill"
@@ -2055,8 +2055,8 @@
 				}
 			]
 			title: "Drillers"
-			x: 20.0d
-			y: 2.0d
+			x: 30.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["574DD3FD26A23CDE"]
@@ -3910,7 +3910,7 @@
 				}
 			]
 			title: "Plague Doctor"
-			x: -4.5d
+			x: -5.0d
 			y: 35.0d
 		}
 		{
@@ -4374,7 +4374,7 @@
 				}
 			]
 			title: "Withering Away"
-			x: -4.5d
+			x: -3.5d
 			y: 33.5d
 		}
 		{
@@ -4390,7 +4390,7 @@
 				type: "item"
 			}]
 			title: "Yuck Vacuum Hopper"
-			x: -6.0d
+			x: -5.5d
 			y: 33.5d
 		}
 		{
@@ -4403,8 +4403,53 @@
 				type: "item"
 			}]
 			title: "Cyclops"
-			x: -3.0d
-			y: 33.5d
+			x: -3.5d
+			y: 35.5d
+		}
+		{
+			dependencies: ["494840EAB1FB2573"]
+			icon: "witherstorm_delight:tainted_essence"
+			id: "3E2EF52784EFF652"
+			subtitle: "Cook up some Tainted Essence"
+			tasks: [{
+				id: "3166BA4E00CA4A2D"
+				item: "witherstorm_delight:tainted_essence"
+				type: "item"
+			}]
+			title: "Necrotic Cooking"
+			x: -2.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["3E2EF52784EFF652"]
+			icon: "witherstorm_delight:withered_rice"
+			id: "4FC46C0A664132B9"
+			subtitle: "Taint some cooking ingredients"
+			tasks: [
+				{
+					id: "1C0216EB87E36CAA"
+					item: "witherstorm_delight:withered_rice"
+					type: "item"
+				}
+				{
+					id: "2374F6BE2EFB2F31"
+					item: "witherstorm_delight:withered_cabbage_seeds"
+					type: "item"
+				}
+				{
+					id: "3E6C5480AE419431"
+					item: "witherstorm_delight:withered_tomato_seeds"
+					type: "item"
+				}
+				{
+					id: "0362CBDA6CD788FC"
+					item: "witherstorm_delight:tainted_mushroom_colony"
+					type: "item"
+				}
+			]
+			title: "Through Death, Reborn"
+			x: -2.0d
+			y: 36.5d
 		}
 	]
 	title: "Story"

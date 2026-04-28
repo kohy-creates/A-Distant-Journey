@@ -494,6 +494,7 @@ const RemovedItems = {
 		'evilcraft:darkened_apple',
 		'evilcraft:effortless_ring',
 		'evilcraft:corrupted_tear',
+		'evilcraft:ender_tear',
 
 		'window_box:bouquet',
 		'window_box:topsy_tulip',

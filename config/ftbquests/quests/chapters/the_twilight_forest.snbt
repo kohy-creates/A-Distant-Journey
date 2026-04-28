@@ -11,8 +11,8 @@
 		image: "twilightforest:block/canopy_log_top"
 		rotation: 45.0d
 		width: 1.75d
-		x: 1.5d
-		y: -3.0d
+		x: 1.0d
+		y: -4.5d
 	}]
 	order_index: 0
 	quest_links: [ ]
@@ -37,8 +37,8 @@
 				type: "dimension"
 			}]
 			title: "The Twilight Forest"
-			x: -0.5d
-			y: -3.0d
+			x: 2.4882453796329997d
+			y: -3.1203079219006895d
 		}
 		{
 			dependencies: ["3EAD28D06360BF09"]
@@ -53,8 +53,8 @@
 				value: 1L
 			}]
 			title: "Time to Even The Scales"
-			x: -0.5d
-			y: -1.0d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3EAD28D06360BF09"]
@@ -69,8 +69,8 @@
 				type: "item"
 			}]
 			title: "Consummate Baahs"
-			x: 1.5d
-			y: -3.0d
+			x: 1.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3EAD28D06360BF09"]
@@ -91,8 +91,8 @@
 				}
 			]
 			title: "Twilight Positioning System"
-			x: -0.5d
-			y: -5.0d
+			x: 2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["718E0AAC4FC76ECF"]
@@ -144,8 +144,8 @@
 				}
 			]
 			title: "Naga Armorer"
-			x: 1.0d
-			y: -1.0d
+			x: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["33DE618E8B49FC45"]
@@ -166,7 +166,7 @@
 				type: "questsadditions:use"
 				value: 1L
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: 2.0d
 		}
 		{
@@ -178,23 +178,57 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: 3.5d
 		}
 		{
-			dependencies: ["57096EC0B254AADA"]
-			id: "42A94C9266966DD4"
+			dependencies: ["33DE618E8B49FC45"]
+			id: "0757324FFD3819A1"
 			tasks: [{
-				entity: "twilightforest:minotaur"
-				id: "7BD4DF65E3818A18"
+				id: "78246B36C9206A71"
+				structure: "twilightforest:labyrinth"
+				type: "structure"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0757324FFD3819A1"]
+			id: "004B1FB44B211C7C"
+			tasks: [{
+				entity: "twilightforest:minoshroom"
+				id: "3730F9222D5CD8FA"
 				type: "kill"
 				value: 1L
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: 3.5d
 		}
 		{
-			dependencies: ["42A94C9266966DD4"]
+			dependencies: ["0757324FFD3819A1"]
+			id: "1096F464B45D63FF"
+			tasks: [{
+				id: "5A3811B34FE6B4CE"
+				item: "twilightdelight:maze_stove"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["57096EC0B254AADA"]
+			id: "09A687D368150F4B"
+			tasks: [{
+				entity: "twilightforest:ur_ghast"
+				id: "3CB70F19584AD8F1"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["004B1FB44B211C7C"]
 			id: "23C6460818CAA8F0"
 			tasks: [{
 				entity: "twilightforest:hydra"
@@ -202,8 +236,458 @@
 				type: "kill"
 				value: 1L
 			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"23C6460818CAA8F0"
+				"09A687D368150F4B"
+			]
+			id: "4C5FB897B907366A"
+			tasks: [{
+				entity: "twilightforest:alpha_yeti"
+				id: "1B3F80B7EF34D321"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4C5FB897B907366A"]
+			id: "6AF57344A6530D2E"
+			tasks: [{
+				entity: "twilightforest:snow_queen"
+				id: "0AA3209E98621C4C"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6AF57344A6530D2E"]
+			icon: "twilightforest:magic_beans"
+			id: "0AD5DEABD53DD691"
+			tasks: [
+				{
+					id: "53663C695A075110"
+					item: "twilightforest:magic_beans"
+					type: "item"
+				}
+				{
+					block: "twilightforest:uberous_soil"
+					block_type: 0
+					checkItem: false
+					id: "33C2D27B1317C031"
+					isItemInteraction: true
+					item: "twilightforest:magic_beans"
+					type: "questsadditions:use"
+					value: 1L
+				}
+			]
 			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0AD5DEABD53DD691"]
+			id: "635B3CA9DF9AEFE0"
+			tasks: [{
+				id: "5D6349A755F0A204"
+				item: {
+					Count: 1
+					id: "twilightforest:giant_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["635B3CA9DF9AEFE0"]
+			icon: {
+				Count: 1
+				id: "twilightforest:lamp_of_cinders"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "137CCC12CF3F56E2"
+			tasks: [
+				{
+					id: "274431A6A827CE29"
+					item: "twilightforest:giant_obsidian"
+					type: "item"
+				}
+				{
+					id: "4B41332C817F8710"
+					item: {
+						Count: 1
+						id: "twilightforest:lamp_of_cinders"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["33DE618E8B49FC45"]
+			icon: {
+				Count: 1
+				id: "twilightforest:twilight_scepter"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2C9F25210FFED3D3"
+			tasks: [
+				{
+					id: "4D34DDAEBE61A8AB"
+					item: {
+						Count: 1
+						id: "twilightforest:fortification_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B04EFF9D75767D2"
+					item: {
+						Count: 1
+						id: "twilightforest:lifedrain_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "33B919E16F4CFAFD"
+					item: {
+						Count: 1
+						id: "twilightforest:twilight_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["137CCC12CF3F56E2"]
+			id: "3669FAFD806AE09C"
+			tasks: [{
+				id: "663EFCF2A685EEDC"
+				structure: "twilightforest:final_castle"
+				type: "structure"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"23C6460818CAA8F0"
+				"09A687D368150F4B"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "137DF4F56A85289F"
+			tasks: [{
+				id: "3F8ACB74A09DC532"
+				item: "twilightforest:fiery_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["137DF4F56A85289F"]
+			icon: {
+				Count: 1
+				id: "twilightforest:fiery_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7A8CFD6D8C74B9AA"
+			tasks: [
+				{
+					id: "381445987E41B545"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "76529D227CAF36F8"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0C2C678B89F07BE7"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0662EE47E6357EA5"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["137DF4F56A85289F"]
+			id: "1AB1539B48BA3163"
+			tasks: [{
+				id: "4A3B0AC1CAF829A2"
+				item: {
+					Count: 1
+					id: "twilightforest:fiery_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3EAD28D06360BF09"]
+			id: "4C4EBDFDC00FEDDD"
+			tasks: [{
+				id: "7C8041551668B91F"
+				item: "twilightforest:ironwood_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4C4EBDFDC00FEDDD"]
+			icon: {
+				Count: 1
+				id: "twilightforest:ironwood_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "460F1292C2D8A621"
+			tasks: [
+				{
+					id: "25E77CABBD28E44F"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0448DC0C70D77314"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4BE0778F7067930C"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13556ACB9B41DAAA"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31AE6B255609A9BB"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "363CB3BB33EFDB97"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6587B3AF07C78302"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "549FA33111A1FEBC"
+					item: {
+						Count: 1
+						id: "twilightforest:ironwood_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1AB1539B48BA3163"]
+			id: "0881FEAE5601CEE1"
+			tasks: [{
+				id: "7CF77C834E0F1C4C"
+				item: {
+					Count: 1
+					id: "twilightdelight:teardrop_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3669FAFD806AE09C"]
+			icon: "summoningrituals:altar"
+			id: "7404E901169113BF"
+			tasks: [{
+				icon: "summoningrituals:altar"
+				id: "62633AC33CC332CB"
+				title: "Craft something with the Twilight Altar"
+				type: "custom"
+			}]
+			x: 6.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["7404E901169113BF"]
+			id: "50E324237A1C2859"
+			tasks: [{
+				id: "0A6CB670244A5F80"
+				item: "twilightforest:uncrafting_table"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7404E901169113BF"]
+			id: "79726FD968415372"
+			tasks: [{
+				id: "2AEDABAC22E6F63A"
+				item: {
+					Count: 1
+					id: "constructionwand:infinity_wand"
+					tag: {
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7404E901169113BF"]
+			id: "53B0AFB0527EDA63"
+			tasks: [{
+				id: "58FA9CB812A1E39D"
+				item: {
+					Count: 1
+					id: "kubejs:elsa_crossbow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["137DF4F56A85289F"]
+			id: "73A9695959C736A0"
+			tasks: [{
+				id: "40F901ED043B52AF"
+				item: "twilightdelight:fiery_cooking_pot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
 		}
 	]
 	title: "The Twilight Forest"

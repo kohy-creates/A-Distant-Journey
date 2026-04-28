@@ -543,6 +543,34 @@
 			x: -5.5d
 			y: -1.0d
 		}
+		{
+			dependencies: ["3DFCD3D89661B5AF"]
+			description: ["&7&lHINT:&r You can import your own MIDI files to play from any of the instruments. There is a tutorial how to do it when you use the item."]
+			icon: {
+				Count: 1
+				id: "immersive_melodies:piano"
+				tag: { }
+			}
+			id: "2ECD1945E2D50A86"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Obtain any instrument"
+			tasks: [{
+				id: "6CC98B0F2CB36E59"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "immersive_melodies:instruments"
+					}
+				}
+				title: "Any instrument"
+				type: "item"
+			}]
+			title: "Musical Cacophony, Yeaaaah"
+			x: -2.0d
+			y: -3.0d
+		}
 	]
 	title: "The World is My Canvas!"
 }

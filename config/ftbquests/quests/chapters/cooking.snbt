@@ -3,29 +3,387 @@
 	default_quest_shape: ""
 	filename: "cooking"
 	group: "12494D4A5CAA903A"
-	icon: "kubejs:eye_of_hedonism"
+	icon: "farmersdelight:cabbage_leaf"
 	id: "438B2CBD4872B65D"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		description: [
-			"&6&lADJ&r is all about creating! This its the third and final time I am saying this."
-			""
-			"You lose hunger way slower in &6&lADJ&r, as it is kind of a secondary mechanic made to be FUN rather than ANNOYING to constantly maintain. I mean of course you still have to eat something once every few minutes, but it is still far less annoying than in the base game."
-			""
-			"Cook something funny, I believe in you."
-		]
-		disable_toast: true
-		id: "1E5E55D6C87BAA30"
-		subtitle: "&oRequires 'Benchmarking'"
-		tasks: [{
-			id: "6AC23B0FABE2E0D6"
-			title: "Click to complete"
-			type: "checkmark"
-		}]
-		title: "&lClick to read"
-		x: -1.5d
-		y: 0.0d
-	}]
-	title: "Cooking Meals"
+	quests: [
+		{
+			description: [
+				"&6&lADJ&r is all about creating! This its the third and final time I am saying this."
+				""
+				"You lose hunger way slower in &6&lADJ&r, as it is kind of a secondary mechanic made to be FUN rather than ANNOYING to constantly maintain. I mean of course you still have to eat something once every few minutes, but it is still far less annoying than in the base game."
+				""
+				"Cook something funny, I believe in you."
+			]
+			disable_toast: true
+			id: "1E5E55D6C87BAA30"
+			subtitle: "&oRequires 'Benchmarking'"
+			tasks: [{
+				id: "6AC23B0FABE2E0D6"
+				title: "Click to complete"
+				type: "checkmark"
+			}]
+			title: "&lClick to read"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E5E55D6C87BAA30"]
+			id: "59292630076634C2"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "6B64E76A3B3A7243"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["59292630076634C2"]
+			icon: "farmersdelight:cooking_pot"
+			id: "4939DB41E905F987"
+			tasks: [
+				{
+					id: "15DED6F772877A28"
+					item: {
+						Count: 1
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "103461DB32644A8E"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1E5E55D6C87BAA30"]
+			icon: "minecraft:wheat_seeds"
+			id: "4FCBD845E6A74E67"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Collect and plant some seeds"
+			tasks: [
+				{
+					id: "008B58B03BAF1ABE"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:seeds"
+						}
+					}
+					title: "Any Seed"
+					type: "item"
+				}
+				{
+					block: "minecraft:farmland"
+					block_type: 0
+					checkItem: false
+					id: "22B87E4A963AC623"
+					isItemInteraction: true
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:seeds"
+						}
+					}
+					title: "Plant 4 Seeds"
+					type: "questsadditions:use"
+					value: 4L
+				}
+			]
+			title: "A Seedy Place"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1E5E55D6C87BAA30"]
+			icon: {
+				Count: 1
+				id: "farmersdelight:iron_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1245EDB9C524ACC7"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [
+				{
+					id: "283FF824A5F5966E"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					id: "0F085E41FEE8E34E"
+					item: {
+						Count: 1
+						id: "farmersdelight:iron_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4FCBD845E6A74E67"]
+			id: "6100892E5C88774C"
+			subtitle: "Plant a full stack of Potatoes"
+			tasks: [{
+				block: "minecraft:farmland"
+				block_type: 0
+				checkItem: false
+				icon: "minecraft:potato"
+				id: "2A8D550220BC794D"
+				isItemInteraction: true
+				item: "minecraft:potato"
+				title: "Plant a full stack of Potatoes"
+				type: "questsadditions:use"
+				value: 99L
+			}]
+			title: "In The Loving Memory Of..."
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4FCBD845E6A74E67"]
+			id: "74019EFD0ED8F657"
+			tasks: [{
+				id: "7EF9308BDE820C3D"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["74019EFD0ED8F657"]
+			description: [
+				"{image:adj:textures/other/farm_tutorial_1.png width:100 height:100 align:center}"
+				"1. Start by digging a 3x3 hole."
+				"{@pagebreak}"
+				"{image:adj:textures/other/farm_tutorial_2.png width:100 height:100 align:center}"
+				"2. Place your Water Wheel sideways and pour down your &9Water&r. "
+				"Add a singular block to make it flow in one direction. If the wheel is spinning, you did it well. "
+				"Place a &7Shaft&r upwards from the Water Wheel."
+				"{@pagebreak}"
+				"{image:adj:textures/other/farm_tutorial_3.png width:100 height:100 align:center}"
+				"3. Cover everything with any block (Glass was used here in place of Dirt for clarity) and place down the &6Mechanical Bearing&r on top of the &7Shaft&r."
+				"{@pagebreak}"
+				"{image:adj:textures/other/farm_tutorial_4.png width:100 height:100 align:center}"
+				"4. Add &9Water&r and till the area around the farm in a circle like shown above."
+				"{@pagebreak}"
+				"{image:adj:textures/other/farm_tutorial_5.png width:100 height:100 align:center}"
+				"5. Place &6Linear Chasis&r in a line like this from the center."
+				"{@pagebreak}"
+				"{image:adj:textures/other/farm_tutorial_6.png width:100 height:100 align:center}"
+				"6. Add &7Mechanical Harvesters&r to the 4 most outer &6Chasis&r blocks."
+				"{@pagebreak}"
+				"{image:adj:textures/other/farm_tutorial_7.png width:100 height:100 align:center}"
+				"7. Add Chests."
+				"{@pagebreak}"
+				"{image:adj:textures/other/farm_tutorial_8.png width:100 height:100 align:center}"
+				"8. &aGlue&r the Chests to the rest of the contraption. You can easily do this by right-clicking one end of the Chasis first with &aSuper Glue&r, and then right-click the outer Chest."
+				"{@pagebreak}"
+				"{image:adj:textures/other/farm_tutorial_9.png width:100 height:100 align:center}"
+				"9. Right-click the &6Mechanical Bearing&r with an empty hand to update the contraption and make it move."
+				"{@pagebreak}"
+				"{image:adj:textures/other/farm_tutorial_10.png width:100 height:100 align:center}"
+				"10. Finally, add plant any crop you want! Harvesters will automatically replant them when harvested."
+			]
+			icon: "create:mechanical_bearing"
+			icon_scale: 0.75d
+			id: "5A7B54BA138CB903"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "&oBecause I know this can be intimidating at times..."
+			tasks: [
+				{
+					disable_toast: true
+					id: "4DFBACE65D83AA36"
+					item: "create:mechanical_bearing"
+					type: "item"
+				}
+				{
+					count: 6L
+					disable_toast: true
+					id: "12FF3D1203A31D00"
+					item: { Count: 5, id: "create:linear_chassis" }
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "5D01B6EB6C08E525"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "6843211EDB7295FA"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "50F1D8071D257D69"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 2L
+					disable_toast: true
+					id: "4D8C306E5BD94A1D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:chests"
+						}
+					}
+					title: "Any Chest"
+					type: "item"
+				}
+				{
+					count: 4L
+					disable_toast: true
+					id: "59FECD4AB05CA56E"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3C4133423F852406"
+					title: "Click to complete"
+					type: "checkmark"
+				}
+			]
+			title: "&f&lTutorial:&r &aSimple Automatic Crop Farm"
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["74019EFD0ED8F657"]
+			icon: "sliceanddice:fertilizer_bucket"
+			id: "527267F3EB74C2DA"
+			tasks: [
+				{
+					disable_toast: true
+					id: "77E4E15A9F5598A0"
+					item: "sliceanddice:fertilizer_bucket"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "5DE54E44B8C10E94"
+					item: "sliceanddice:sprinkler"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1E5E55D6C87BAA30"]
+			icon: "brewinandchewin:keg"
+			id: "7BABB7161F25736B"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Collect and plant some seeds"
+			tasks: [{
+				id: "63C7A704BAF739F8"
+				item: "brewinandchewin:keg"
+				type: "item"
+			}]
+			title: "A Seedy Place"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7BABB7161F25736B"]
+			id: "4A71C07A5B9FEB5F"
+			tasks: [{
+				id: "32C9AC557B82064A"
+				item: "vinery:grapevine_pot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7BABB7161F25736B"]
+			icon: "vinery:red_grape"
+			id: "7D4147C7C4278ADB"
+			tasks: [{
+				id: "5EC5351189D00F77"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "c:grapes"
+					}
+				}
+				title: "Any Grapes"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7D4147C7C4278ADB"
+				"4A71C07A5B9FEB5F"
+			]
+			icon: "vinery:red_taiga_grapejuice"
+			id: "062D356DADB6229A"
+			tasks: [
+				{
+					id: "47886F0F76F959AF"
+					item: "vinery:wine_bottle"
+					type: "item"
+				}
+				{
+					id: "404B78C04DC008FA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "vinery:grapejuice"
+						}
+					}
+					title: "Any Grapejuice"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["74019EFD0ED8F657"]
+			id: "63792CCA3D65640C"
+			tasks: [{
+				id: "4582938A0B0E73C7"
+				item: "botania:agricarnation"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+	]
+	title: "Crops Of The Wild"
 }

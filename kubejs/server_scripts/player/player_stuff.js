@@ -234,7 +234,7 @@ ADJServerEvents.adjHurt(event => {
 			let id = item.getId();
 
 			if (id.endsWith('_spear')) {
-				victim.addEffect(new $MobEffectInstance('kubejs:pierced', 7 * 20, 0, true, false, true))
+				victim.addEffect(new $MobEffectInstance('kubejs:pierced', 7 * 20, 0, true, false, true));
 			}
 
 			let helmet = player.getHeadArmorItem();
@@ -242,21 +242,21 @@ ADJServerEvents.adjHurt(event => {
 				case 'botania:terrasteel_helmet': {
 					let nbt = helmet.nbt;
 					if (nbt.AncientWill_ahrim) {
-						victim.addEffect(new $MobEffectInstance('minecraft:weakness', 8 * 20, 1, true, false, true))
+						victim.addEffect(new $MobEffectInstance('minecraft:weakness', 8 * 20, 1, true, false, true));
 					}
 					if (nbt.AncientWill_guthan) {
 						player.heal(Math.ceil(event.getDamage() * 0.1))
 					}
 					if (nbt.AncientWill_torag) {
-						victim.addEffect(new $MobEffectInstance('minecraft:slowness', 8 * 20, 1, true, false, true))
+						victim.addEffect(new $MobEffectInstance('minecraft:slowness', 8 * 20, 1, true, false, true));
 					}
 					if (nbt.AncientWill_verac) {
 						global.getEntitiesInRadius(level, victim.x, victim.y, victim.z, 1.5).forEach(/** @param {Internal.Entity_} entity */ entity => {
-							entity.attack(global.getDamageSource(level, 'minecraft:player_attack', null, player), Math.ceil(event.getDamage() * 0.33))
-						})
+							entity.attack(global.getDamageSource(level, 'minecraft:player_attack', null, player), Math.ceil(event.getDamage() * 0.33));
+						});
 					}
 					if (nbt.AncientWill_karil) {
-						victim.addEffect(new $MobEffectInstance('minecraft:wither', 8 * 20, 2, true, false, true))
+						victim.addEffect(new $MobEffectInstance('minecraft:wither', 8 * 20, 2, true, false, true));
 					}
 				}
 			}
@@ -266,8 +266,9 @@ ADJServerEvents.adjHurt(event => {
 
 // A huge block that only triggers when a player is hurt by something, or if something hurts a player
 const $MobType = Java.loadClass("net.minecraft.world.entity.MobType")
-NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
+NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.LivingHurtEvent_} event */ event => {
 	const attacker = event.getSource().getActual();
+	/** @type {Internal.LivingEntity_} */
 	const victim = event.getEntity();
 
 	// console.log(event.getSource(), event.getSource().getImmediate(), event.getSource().getType())
@@ -288,7 +289,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 			if (pdata.katanaCombo >= 3) {
 				pdata.katanaCombo = 0;
 				attacker.addEffect(new $MobEffectInstance('speed', 5 * 20, 0));
-				attacker.playNotifySound('simplyswords:magic_sword_attack_02', 'players', 1.5, 1.2 + Math.random() * 0.2)
+				attacker.playNotifySound('simplyswords:magic_sword_attack_02', 'players', 1.5, 1.2 + Math.random() * 0.2);
 			}
 		}
 		if (id.includes('stormyx')) {
@@ -308,18 +309,18 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 		// Stuff that depends on item ID
 		switch (id) {
 			case 'mcdw:dagger_resolute_tempest_knife': {
-				victim.addEffect(new $MobEffectInstance('slowness', 10 * 20, 1)) // -30%
-				attacker.addEffect(new $MobEffectInstance('speed', 10 * 20, 2)) // +30%
+				victim.addEffect(new $MobEffectInstance('slowness', 10 * 20, 1)); // -30%
+				attacker.addEffect(new $MobEffectInstance('speed', 10 * 20, 2)); // +30%
 				break;
 			}
 			case 'mcdw:glaive_grave_bane': {
 				if (victim.mobType === $MobType.UNDEAD) {
-					victim.addEffect(new $MobEffectInstance('ars_nouveau:hex', 10 * 20, 0, false, true, true))
+					victim.addEffect(new $MobEffectInstance('ars_nouveau:hex', 10 * 20, 1, false, true, true)); // Vulnerability Hex II = 30% increased damage
 				}
 				break;
 			}
 			case 'mcdw:glaive_venom_glaive': {
-				victim.addEffect(new $MobEffectInstance('minecraft:poison', 7 * 20, 0, false, true, true))
+				victim.addEffect(new $MobEffectInstance('minecraft:poison', 7 * 20, 0, false, true, true));
 				break;
 			}
 			case 'mcdw:sword_heartstealer': {
@@ -339,6 +340,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 				}
 				break;
 			}
+			case 'twilightdelight:teardrop_sword':
 			case 'twilightforest:fiery_sword': {
 				if (attacker.persistentData.fierySwordCanExplode) {
 					level.spawnParticles(
@@ -350,7 +352,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 					);
 					level.playSound(null, victim.x, victim.y + victim.getEyeHeight(), victim.z, 'entity.generic.explode', 'neutral', 1, Math.random() * 0.2 + 0.9);
 					global.getEntitiesInRadius(level, victim.x, victim.y, victim.z, 1.75).forEach(/** @param {Internal.Entity_} e*/ e => {
-						e.attack(global.getDamageSource(level, 'minecraft:player_explosion', null, attacker), event.getAmount() * 0.15);
+						e.attack(global.getDamageSource(level, 'minecraft:player_explosion', null, attacker), event.getAmount() * 0.6);
 						e.setSecondsOnFire(4);
 					});
 					attacker.persistentData.fierySwordCanExplode = false;

@@ -335,22 +335,10 @@ StartupEvents.registry('item', registry => {
 					'multiply_base'
 				)
 				.addAttribute(
-					'generic.attack_damage',
+					'kubejs:damage_dealt',
 					'b888ea99-c203-42db-a337-4898c812aaad',
 					0.12,
 					'multiply_base'
-				)
-				.addAttribute(
-					'attribtueslib:arrow_damage',
-					'b888ea99-c203-42db-a337-4898c812aaad',
-					0.12,
-					'addition'
-				)
-				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.spell_power',
-					'b888ea99-c203-42db-a337-4898c812aaad',
-					12,
-					'addition'
 				)
 		)
 		.unstackable()

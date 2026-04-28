@@ -88,8 +88,8 @@
 			image: "evilcraft:block/undead_log_top_stripped"
 			rotation: 45.0d
 			width: 1.75d
-			x: 2.0d
-			y: 1.0d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			height: 1.75d
@@ -194,7 +194,7 @@
 				type: "item"
 			}]
 			title: "Petal Power"
-			x: 7.0d
+			x: 6.5d
 			y: -2.0d
 		}
 		{
@@ -216,7 +216,7 @@
 				type: "item"
 			}]
 			title: "Botanical Crafts"
-			x: 7.0d
+			x: 6.5d
 			y: -0.5d
 		}
 		{
@@ -234,7 +234,7 @@
 				type: "item"
 			}]
 			title: "Purity Overdrive"
-			x: 8.5d
+			x: 8.0d
 			y: -0.5d
 		}
 		{
@@ -289,7 +289,7 @@
 				type: "item"
 			}]
 			title: "First Power Plant"
-			x: 7.0d
+			x: 6.5d
 			y: 1.0d
 		}
 		{
@@ -338,7 +338,7 @@
 			]
 			title: "Transporting Magic"
 			x: 8.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["35B5E5B6F7CC021D"]
@@ -890,7 +890,7 @@
 				type: "item"
 			}]
 			title: "Abracadabra, Magic Plants!"
-			x: 8.5d
+			x: 8.0d
 			y: -2.0d
 		}
 		{
@@ -921,8 +921,8 @@
 				type: "checkmark"
 			}]
 			title: "&lClick to read"
-			x: 7.0d
-			y: -4.0d
+			x: 6.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4E019F5A62D00D6F"]
@@ -935,7 +935,7 @@
 			}]
 			title: "A Start Into Imbuing"
 			x: 10.5d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["45A92F2D2D809FF1"]
@@ -1156,8 +1156,8 @@
 				}
 			]
 			title: "Arcane Armory"
-			x: 7.0d
-			y: -7.5d
+			x: 6.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["4BB4F54ACBA9F3A7"]
@@ -1170,8 +1170,8 @@
 				type: "item"
 			}]
 			title: "Runic"
-			x: 7.0d
-			y: -6.0d
+			x: 6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["573E8C31609DCA26"]
@@ -1322,8 +1322,8 @@
 				type: "item"
 			}]
 			title: "Essential"
-			x: 12.0d
-			y: -4.0d
+			x: 11.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["45A92F2D2D809FF1"]
@@ -1440,8 +1440,8 @@
 				type: "item"
 			}]
 			title: "Advent of Ascension"
-			x: 5.0d
-			y: -4.0d
+			x: 4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4BB4F54ACBA9F3A7"]
@@ -1462,7 +1462,7 @@
 			}]
 			title: "Wise, Mystical Tree"
 			x: 9.0d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
@@ -1583,8 +1583,8 @@
 				type: "item"
 			}]
 			title: "Sacrificial"
-			x: 8.5d
-			y: -6.0d
+			x: 8.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["4B3625869C4E7079"]
@@ -1639,8 +1639,8 @@
 				type: "structure"
 			}]
 			title: "Temple Riders"
-			x: 3.0d
-			y: -4.0d
+			x: 2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["463D406FC669A4A5"]
@@ -1702,8 +1702,8 @@
 				}
 			]
 			title: "My Little Sunshine"
-			x: 1.5d
-			y: -4.5d
+			x: 0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["463D406FC669A4A5"]
@@ -1715,8 +1715,8 @@
 				type: "item"
 			}]
 			title: "Transforming Ecosystems"
-			x: 1.5d
-			y: -3.5d
+			x: 0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["30CABAA97495053C"]
@@ -1729,8 +1729,8 @@
 				type: "item"
 			}]
 			title: "A World of Nigthmares Never Seen Before"
-			x: 3.5d
-			y: -2.5d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1FDC7F34049BA9DB"]
@@ -1751,8 +1751,8 @@
 				}
 			]
 			title: "Evil Sealed Within"
-			x: 2.5d
-			y: -2.0d
+			x: 1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["30CABAA97495053C"]
@@ -1799,8 +1799,8 @@
 				}
 			]
 			title: "Nursing School"
-			x: 5.0d
-			y: -2.0d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3C3CD5B17FA9BF1F"]
@@ -1818,8 +1818,8 @@
 				type: "item"
 			}]
 			title: "Dark Arts 101"
-			x: 5.0d
-			y: -0.5d
+			x: 4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["631C617E054BE4EF"]
@@ -1831,8 +1831,8 @@
 				type: "item"
 			}]
 			title: "It's Raining Blood"
-			x: 5.0d
-			y: 1.0d
+			x: 4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["631C617E054BE4EF"]
@@ -1861,8 +1861,8 @@
 				}
 			]
 			title: "Empty Promises"
-			x: 3.5d
-			y: -0.5d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["30CABAA97495053C"]
@@ -1880,8 +1880,8 @@
 				type: "item"
 			}]
 			title: "Vampirism"
-			x: 5.0d
-			y: -6.0d
+			x: 4.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["602FA24B60010322"]
@@ -1969,8 +1969,8 @@
 				type: "item"
 			}]
 			title: "To All Beloved Eternity"
-			x: 10.0d
-			y: -6.0d
+			x: 9.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["66FE6097FAD75DFF"]
@@ -2032,8 +2032,8 @@
 				}
 			]
 			title: "Master of Air"
-			x: 5.5d
-			y: -8.5d
+			x: 5.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["66FE6097FAD75DFF"]
@@ -2095,8 +2095,8 @@
 				}
 			]
 			title: "Master of Air"
-			x: 6.5d
-			y: -9.0d
+			x: 6.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["66FE6097FAD75DFF"]
@@ -2158,8 +2158,8 @@
 				}
 			]
 			title: "Master of Water"
-			x: 7.5d
-			y: -9.0d
+			x: 7.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["66FE6097FAD75DFF"]
@@ -2221,8 +2221,8 @@
 				}
 			]
 			title: "Master of Earth"
-			x: 8.5d
-			y: -8.5d
+			x: 8.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -2245,8 +2245,8 @@
 				}
 			]
 			title: "VENGEANCE!!!"
-			x: 2.0d
-			y: -0.5d
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2BA39149B3E2C1EA"]
@@ -2261,8 +2261,8 @@
 				type: "item"
 			}]
 			title: "Pain and Sorrow"
-			x: 2.0d
-			y: 1.0d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["602FA24B60010322"]
@@ -2295,7 +2295,7 @@
 				value: 1L
 			}]
 			title: "Silencio!"
-			x: 6.0d
+			x: 5.5d
 			y: -0.5d
 		}
 		{
@@ -2381,8 +2381,8 @@
 				type: "item"
 			}]
 			title: "Blood Money Deals"
-			x: 5.0d
-			y: 2.5d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
@@ -2480,6 +2480,25 @@
 			title: "Experience Bank"
 			x: 10.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["4E019F5A62D00D6F"]
+			id: "0715EDB6A4B814FE"
+			subtitle: "Craft a Dowsing Rod. You can use them to find Amethyst easily"
+			tasks: [{
+				id: "3B4F73E3CA775F3E"
+				item: {
+					Count: 1
+					id: "ars_nouveau:dowsing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Gold Rush"
+			x: 9.0d
+			y: -5.5d
 		}
 	]
 	title: "World of Magic"

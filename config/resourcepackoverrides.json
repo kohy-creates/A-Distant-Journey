@@ -34,8 +34,9 @@
 		"file/Farcr's Re-Create 1.6.zip",
 		"file/CU - 3d Wrench.zip",
 		"file/SHC Enhanced Fire.zip",
+		"ImmersiveResprites-1.1.zip",
 		"file/Frozy's Quest Book.zip",
-		"file/Farcr's Re-Crafted V2.26.zip",
+		"file/Farcr's Re-Crafted V2.27.zip",
 		"file/waystones_1.20.1_update_5.zip",
 		"file/\u00A7lColourful Containers\u00A78.zip",
 		"file/\u00A75\u00A7lModded \u00A7f\u00A7lContainers\u00A78.zip",
@@ -95,9 +96,10 @@
 			"file/Farcr's Re-Create 1.6.zip",
 			"file/CU - 3d Wrench.zip",
 			"file/SHC Enhanced Fire.zip",
+			"ImmersiveResprites-1.1.zip",
 			"file/Aether Regenerated v1.2.1.zip",
 			"file/Frozy's Quest Book.zip",
-			"file/Farcr's Re-Crafted V2.26.zip",
+			"file/Farcr's Re-Crafted V2.27.zip",
 			"file/waystones_1.20.1_update_5.zip",
 			"phantasm:compat_farmersdelight",
 			"file/thinned.zip",
@@ -170,14 +172,14 @@
 			"description": "\"Default resources\""
 		},
 		"$$default": {
-			"hidden": false,
+			"hidden": true,
 			"required": true,
-			"fixed_position": false,
+			"fixed_position": true,
 			"force_compatible": true
 		},
 		"$$defaultoptional": {
-			"hidden": false,
-			"required": false,
+			"hidden": true,
+			"required": true,
 			"fixed_position": true
 		},
 		"$$hidden": {

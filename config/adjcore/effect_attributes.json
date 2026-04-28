@@ -60,12 +60,6 @@
 			"rediscovered:undead_damage_scaling;0.001;1"
 		]
 	},
-	"farmersdelight:comfort": {
-		"replace": false,
-		"attributes": [
-			"adjcore:generic.health_regeneration;1.5;0"
-		]
-	},
 	"farmersdelight:nourishment": {
 		"replace": false,
 		"attributes": [

@@ -155,9 +155,9 @@
 				"1A27ABCC4980970F"
 				"20130F300D432015"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			id: "2363640DE385B123"
-			subtitle: "Find an Illager Ship and retrieve a Shell Horn"
+			subtitle: "Find an Illager Ship and retrieve a Shell Horn\\n(requires Chapter 2)"
 			tasks: [{
 				id: "2CEFD98D6AA544A4"
 				item: "aquamirae:shell_horn"
@@ -169,6 +169,7 @@
 		}
 		{
 			dependencies: ["2363640DE385B123"]
+			hide_until_deps_complete: true
 			id: "347EF4FA36CA9EA8"
 			shape: "hexagon"
 			size: 2.0d

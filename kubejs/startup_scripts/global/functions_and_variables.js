@@ -88,7 +88,7 @@ global.baseCritChance = 0.04;
  * @param {double} y 
  * @param {double} z 
  * @param {double} radius 
- * @returns {Internal.Entity[]}
+ * @returns {Internal.Entity_[]}
  */
 global.getEntitiesInRadius = function (world, x, y, z, radius) {
 	let entities = [];

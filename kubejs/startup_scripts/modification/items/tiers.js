@@ -119,7 +119,7 @@ const tiers = {
 	},
 	'mythril_drill': {
 		uses: 1764,
-		speed: 21,
+		speed: 28,
 		attackDamageBonus: 3.0,
 		level: 4,
 		enchantmentValue: 25,

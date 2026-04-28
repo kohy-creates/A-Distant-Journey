@@ -188,6 +188,10 @@ global.armorOverrides = {
 			values: [1, 1, 0, 0],
 			operation: 0
 		},
+		'ars_nouveau:ars_nouveau.perk.spell_damage': {
+			values: [1, 1, 0, 0],
+			operation: 0
+		},
 		'adjcore:player.mana_cost_reduction': {
 			values: [0, 0, p(5), 0]
 		}

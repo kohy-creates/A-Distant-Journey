@@ -35,29 +35,29 @@ const WitherStorm = {
 	witherStormMessages: {
 		color: '#d39dff',
 		texts: {
-			2: [
+			'phase_2': [
 				'This is not going to be a calm night. Far from it',
 				'But it is going to be alright',
 				'It has to be'
 			],
-			3: [
+			'phase_3': [
 				'The Wither Storm is getting stronger with each passing moment',
 				'You still have time to prepare your escape route',
 				"It knows where you are, but it's not strong enough to follow you yet",
 				'Start planning. Now. There is no time to be wasted'
 			],
-			4: [
+			'phase_4': [
 				'The Wither Storm can sense where you are. It is following you',
 				"Keep moving. It's slow but it will surely find you at some point",
 				'Run. Stay away from your base. Or hide underground'
 			],
-			6: [
+			'phase_5': [
 				'Even if you hide underground, eventually it will make it to Bedrock',
 				'It started mutating Zombies into Withered Symbionts',
 				'Killing them will be valuable towards defeating it',
 				'Stay safe. I wish you best of luck'
 			],
-			7: [
+			'phase_7': [
 				"It's been a long time",
 				// 'The Wither Storm destroyed anything in its path',
 				'But sooner or later it will be over'
@@ -188,7 +188,8 @@ function onWSPhaseChange(newPhase, server) {
 EntityEvents.checkSpawn(event => {
 	const server = event.getServer();
 	const entity = event.getEntity();
-	if (server.persistentData.witherStormActive) {
+	const dimension = entity.level.dimension.toString();
+	if (dimension === 'minecraft:overworld' && server.persistentData.witherStormActive && event.getType().toString() === 'NATURAL') {
 		let chance = -1;
 		switch (server.persistentData.witherStormPhase) {
 			case 3: { chance = 0.015; break; }
@@ -201,7 +202,7 @@ EntityEvents.checkSpawn(event => {
 			let groupSize = global.getRandomInt(1, Math.ceil(server.persistentData.witherStormPhase / 2));
 			for (let i = 0; i < groupSize; i++) {
 				server.runCommandSilent(
-					`summon ${WitherStorm.sickenedMap[entity.type]} ${event.x} ${event.y} ${event.z}`
+					`execute in ${dimension} run summon ${WitherStorm.sickenedMap[entity.type]} ${event.x} ${event.y} ${event.z}`
 				);
 			}
 			server.scheduleInTicks(1, () => entity.remove('discarded'));

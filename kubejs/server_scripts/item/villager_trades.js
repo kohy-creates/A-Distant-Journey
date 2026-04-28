@@ -210,6 +210,7 @@ MoreJSEvents.villagerTrades(event => {
 
 	// Cleric
 	newPremiumTrade('cleric', 3, '3x emerald', 'minecraft:rabbit_foot', 5);
+	newPremiumTrade('cleric', 3, '20x emerald', 'terra_curio:cross_necklace', 2);
 	newBasicTrade('cleric', 1, '8x soul_sand', '1x emerald');
 	newBasicTrade('cleric', 4, ['8x emerald', '1x apple'], 'minecraft:golden_apple');
 	newBasicTrade('cleric', 5, '64x emerald', '1x alexsmobs:soul_heart');

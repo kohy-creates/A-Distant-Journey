@@ -94,8 +94,8 @@ global.monsterRangedDamageBase = {
 	'minecraft:pillager': 17,
 	'minecraft:illusioner': 20,
 	'minecraft:piglin': 16,
-	'witherstormmod:tainted_skeleton': 50,
-	'witherstormmod:tainted_pillager': 65,
+	'witherstormmod:sickened_skeleton': 50,
+	'witherstormmod:sickened_pillager': 60,
 }
 
 global.monsterRangedDamageMul = {

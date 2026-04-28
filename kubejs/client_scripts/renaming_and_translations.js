@@ -59,6 +59,8 @@ ClientEvents.lang('en_us', event => {
 		'entity.minecraft.villager.gardener': 'Gardener',
 		'entity.minecraft.villager.spelunker': 'Spelunker',
 		'entity.minecraft.villager.werewolf': 'Werewolf',
+
+		'curios.identifier.atlas': 'Atlas',
 	};
 
 	/** @type {Record<Internal.Block_, string>} */

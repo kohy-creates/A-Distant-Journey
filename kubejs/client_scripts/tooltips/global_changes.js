@@ -887,6 +887,11 @@ ItemEvents.tooltip(event => {
 						}
 					}
 				}
+				else if (line.includes('color=blue') && line.includes('unbreakable')) {
+					text.remove(i);
+					text.add(i, Text.of('<neon r=0.66><rainbow f=0.2>Unbreakable</rainbow></neon>'));
+					text.add(i, '');
+				}
 			}
 		}
 
@@ -949,7 +954,7 @@ ItemEvents.tooltip(event => {
 			break;
 		}
 
-		if (item.maxDamage != 0) {
+		if (item.maxDamage != 0 && (item.nbt && !item.nbt.Unbreakable)) {
 			let pos = text.length;
 			if (advanced) {
 				for (let e = 0; e < text.length; e++) {

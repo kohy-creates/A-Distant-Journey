@@ -2081,7 +2081,7 @@ ServerEvents.recipes((event) => {
 
 	// Harder Waystones
 	let waystonesRemove = [
-		'#waystones:waystones',
+		/waystones:.*waystone/,
 		'waystones:portstone',
 		'waystones:sharestone',
 		'waystones:warp_plate',
@@ -5374,7 +5374,7 @@ ServerEvents.recipes((event) => {
 		.itemOutput('botania:terra_sword')
 		.input(
 			'mythicmetals:stormyx_sword',
-			'mcdw:sword_sinister',
+			'twilightdelight:teardrop_sword',
 			'mythicmetals:star_platinum_sword',
 			'mythicmetals:orichalcum_sword',
 			'ancient_aether:valkyrum_sword',

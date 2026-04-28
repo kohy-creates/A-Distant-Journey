@@ -199,6 +199,7 @@
 			hide_dependency_lines: true
 			icon: "betterarcheology:wolf_fossil"
 			id: "47315ED04C15EF9B"
+			subtitle: "Reconstruct a Wolf Fossil"
 			tasks: [
 				{
 					id: "7022E07464068339"
@@ -559,6 +560,7 @@
 			dependencies: ["7599371BBE1AC566"]
 			hide_dependency_lines: true
 			id: "34BDAD6C0CC939AA"
+			subtitle: "Find a Totem of Radiance"
 			tasks: [{
 				id: "2918AF7F85F4FD2D"
 				item: "betterarcheology:radiance_totem"
@@ -573,6 +575,7 @@
 			dependencies: ["7599371BBE1AC566"]
 			hide_dependency_lines: true
 			id: "363286DEAB1138D6"
+			subtitle: "Find a Totem of Growth"
 			tasks: [{
 				id: "4A47B8502B0699E8"
 				item: "betterarcheology:growth_totem"
@@ -586,6 +589,7 @@
 			dependencies: ["7599371BBE1AC566"]
 			hide_dependency_lines: true
 			id: "59D525C3C29FF263"
+			subtitle: "Find a Totem of Souls"
 			tasks: [{
 				id: "5EC2257A4DDBFC20"
 				item: {
@@ -605,6 +609,7 @@
 			dependencies: ["7599371BBE1AC566"]
 			hide_dependency_lines: true
 			id: "2E8EC728EFDBF100"
+			subtitle: "Find a Totem of Torrents"
 			tasks: [{
 				id: "6A7051CC9C870055"
 				item: {

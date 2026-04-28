@@ -52,6 +52,8 @@
 				""
 				"&7&o*In Patrick Star's voice* "
 				"          &r&7WE HAVE TECHNOLOGY."
+				"{@pagebreak}"
+				"If you are familiar with &6Create&r then &aYES&r, the recipes &aHAVE BEEN&r changed. Love it or hate it, it's just the way it is."
 			]
 			id: "57A550E2F3090147"
 			shape: "diamond"
@@ -106,7 +108,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["57A550E2F3090147"]
+			dependencies: ["3393638E574BEB0D"]
 			id: "7F7BED49AACB2F52"
 			subtitle: "Make a Water Wheel - the easiest way to generate stress for your machines"
 			tasks: [{
@@ -115,8 +117,8 @@
 				type: "item"
 			}]
 			title: "Merry Go Round"
-			x: 1.0d
-			y: 1.0d
+			x: 1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6F6E4CEDDF413E18"]
@@ -220,7 +222,7 @@
 				type: "item"
 			}]
 			title: "Stay Loaded!"
-			x: 2.0d
+			x: 2.5d
 			y: 1.0d
 		}
 		{
@@ -249,13 +251,21 @@
 		}
 		{
 			dependencies: ["57A550E2F3090147"]
+			icon: "create:polished_rose_quartz"
 			id: "52D84E41D1800FE6"
-			subtitle: "Polish up some Rose Quartz"
-			tasks: [{
-				id: "52205D7EE97781DC"
-				item: "create:polished_rose_quartz"
-				type: "item"
-			}]
+			subtitle: "Polish up some Rose Quartz and turn it into an Electron Tube"
+			tasks: [
+				{
+					id: "52205D7EE97781DC"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+				{
+					id: "525F1B1AACC9AE29"
+					item: "create:electron_tube"
+					type: "item"
+				}
+			]
 			title: "Quartz 'N' Roses"
 			x: -2.0d
 			y: 1.0d
@@ -277,7 +287,7 @@
 		{
 			dependencies: [
 				"1FA28AA6F3F8D048"
-				"693B03EE6AE51892"
+				"52D84E41D1800FE6"
 			]
 			id: "20C40A85BDDEC015"
 			subtitle: "Craft a Deployer"
@@ -287,7 +297,7 @@
 				type: "item"
 			}]
 			title: "A Representation of Yourself"
-			x: -2.0d
+			x: -2.5d
 			y: 3.0d
 		}
 		{
@@ -301,7 +311,7 @@
 			}]
 			title: "So Precise!"
 			x: -3.5d
-			y: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0288AADCBD95EB2D"]
@@ -321,8 +331,8 @@
 				}
 			]
 			title: "Technomantic!"
-			x: 5.5d
-			y: 3.0d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["782BB3D700FBD243"]
@@ -390,19 +400,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["52D84E41D1800FE6"]
-			id: "693B03EE6AE51892"
-			subtitle: "Craft an Electron Tube"
-			tasks: [{
-				id: "57410F5344E414C0"
-				item: "create:electron_tube"
-				type: "item"
-			}]
-			title: "Electricity! Kind of..."
-			x: -2.0d
-			y: 2.0d
-		}
-		{
 			dependencies: ["76EC8D76904524E9"]
 			id: "1F7EC6B4AE7F015A"
 			optional: true
@@ -413,7 +410,7 @@
 				item: "create_hypertube:hypertube_accelerator"
 				type: "item"
 			}]
-			title: "Hyperspeed Plus"
+			title: "HYPERSPEED Premium"
 			x: 2.0d
 			y: 3.5d
 		}
@@ -448,8 +445,8 @@
 				type: "item"
 			}]
 			title: "Conveyor Belts"
-			x: 2.0d
-			y: -3.0d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["74E81719E903F908"]
@@ -474,6 +471,14 @@
 		}
 		{
 			dependencies: ["74E81719E903F908"]
+			icon: {
+				Count: 1
+				id: "constructionwand:diamond_wand"
+				tag: {
+					Damage: 0
+					wand_options: { }
+				}
+			}
 			icon_scale: 0.75d
 			id: "1F26665F0A3C4065"
 			shape: "diamond"
@@ -483,12 +488,12 @@
 				id: "475313D5F70C6DB2"
 				item: {
 					Count: 1
-					id: "constructionwand:iron_wand"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
-						wand_options: { }
+						value: "adj:construction_wands"
 					}
 				}
+				title: "Any Construction Wand"
 				type: "item"
 			}]
 			title: "Abracadabra, Castle!"
@@ -505,7 +510,7 @@
 				type: "item"
 			}]
 			title: "You Can Build a Country Out Of This!"
-			x: 7.0d
+			x: 6.5d
 			y: 2.5d
 		}
 		{
@@ -567,8 +572,8 @@
 				}
 			]
 			title: "I Fear NOTHING!"
-			x: 8.0d
-			y: 2.5d
+			x: 7.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0288AADCBD95EB2D"]
@@ -666,7 +671,7 @@
 			id: "33A6791C74B51E03"
 			shape: "diamond"
 			size: 1.5d
-			subtitle: "Obtain a Wand of Symmetry"
+			subtitle: "Craft a Wand of Symmetry"
 			tasks: [{
 				id: "53600F0AC574DEEE"
 				item: "create:wand_of_symmetry"
@@ -716,6 +721,11 @@
 				{
 					id: "3E0C393449A4C3AC"
 					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "0234D56E095ACF65"
+					item: "sliceanddice:sprinkler"
 					type: "item"
 				}
 			]
@@ -823,6 +833,49 @@
 			title: "Efficiency Boost"
 			x: 4.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["469D3A0EDD34A3DD"]
+			icon: "create:andesite_tunnel"
+			id: "309AF9E713F69FF9"
+			subtitle: "Craft one of each - an Andesite Tunnel and an Andesite Funnel"
+			tasks: [
+				{
+					id: "5BD48902CB2FCBC9"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+				{
+					id: "3CF746A516427FA9"
+					item: "create:andesite_tunnel"
+					type: "item"
+				}
+			]
+			title: "Tunnels and Funnels"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["57A550E2F3090147"]
+			icon: "create:white_sail"
+			id: "249B2F4ECDC6790A"
+			subtitle: "Construct a simple Windmill to power your machines"
+			tasks: [
+				{
+					id: "71897277B9B6D8A9"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "61D535308D6E70A5"
+					item: { Count: 8, id: "create:white_sail" }
+					type: "item"
+				}
+			]
+			title: "Sail On!"
+			x: 1.0d
+			y: 1.0d
 		}
 	]
 	title: "Managing a Factory"
