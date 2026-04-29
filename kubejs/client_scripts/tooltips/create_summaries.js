@@ -3602,22 +3602,6 @@ const itemsToTooltip = [
 	},
 	{
 		item: [
-			'glow_item_frame',
-			'item_frame'
-		],
-		controls: [
-			{
-				control: "right-clicked with empty hand",
-				requiresHold: false,
-				text: [
-					"Turns the Item Frame _invisible_",
-					"Do it again to make it _visible_ again"
-				]
-			}
-		]
-	},
-	{
-		item: [
 			'xercapaint:item_palette'
 		],
 		controls: [

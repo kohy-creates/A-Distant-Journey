@@ -34,6 +34,7 @@ const RemovedItems = {
 
 		/quark:paper_lantern.*/,
 		/quark:.*limestone.*/,
+		/quark:vertical_.*planks/,
 
 		'create:oak_window_pane',
 		'create:spruce_window_pane',
@@ -135,6 +136,8 @@ const RemovedItems = {
 		'netherexp:pump_charge_upgrade_smithing_template',
 		'netherexp:pump_charge_shotgun',
 		/netherexp:.*_skull_candle/,
+		'jadensnetherexpansiondelight:ecto_knife',
+		'jadensnetherexpansiondelight:ecto_ingot',
 
 		'verdantvibes:gardening_table',
 
@@ -373,7 +376,6 @@ const RemovedItems = {
 
 		'ftbquests:book',
 		'netherdepthsupgrade:lava_fishing_rod',
-		'waxed:wick',
 
 		'supplementaries:altimeter',
 		'supplementaries:wrench',
@@ -562,7 +564,7 @@ const RemovedItems = {
 		'cratedelight:berry_crate',
 		'cratedelight:apple_crate',
 
-		'delightftul:acorn',
+		'delightful:acorn',
 		'delightful:crystalline_knife',
 
 		'ancient_aether:ancient_dungeon_key',
@@ -593,6 +595,7 @@ const RemovedItems = {
 		'vinery:mead',
 		'vinery:jellie_wine',
 		'vinery:dark_cherry_floorboards',
+		'vinery:dark_cherry_beam',
 
 		/vinery:spruce_wine_rack_.*/,
 		/vinery:birch_wine_rack_.*/,

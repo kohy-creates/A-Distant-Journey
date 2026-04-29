@@ -49,10 +49,6 @@ JEIEvents.information(event => {
 		'Can be used to return any colored block back into its colorless form.'
 	]);
 
-	// event.addItem(['item_frame', 'glow_item_frame'], [
-	// 	'Item Frames can be turned invisible by sneaking and clicking them with an empty hand if they have an item inside and can be dyed with Dyes.'
-	// ]);
-
 	addInfo(['suspicious_stew'], [
 		'Barely looks apetizing. Cooking it with different types of flowers will result in different potion effects when eaten.'
 	]);

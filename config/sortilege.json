@@ -125,8 +125,8 @@
 		"potion": {
 			"stack_size": 99,
 			"duration_multiplier": 1,
-			"drinking_time": 30,
-			"cooldown": 900
+			"drinking_time": 5,
+			"cooldown": 0
 		},
 		"cauldron": {
 			"enable": true,

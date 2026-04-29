@@ -5,10 +5,62 @@
 	group: "12494D4A5CAA903A"
 	icon: "farmersdelight:cabbage_leaf"
 	id: "438B2CBD4872B65D"
+	images: [
+		{
+			height: 1.75d
+			image: "nethervinery:block/crimson_crate_top"
+			rotation: 45.0d
+			width: 1.75d
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			height: 1.75d
+			image: "create:block/bearing_top"
+			rotation: 45.0d
+			width: 1.75d
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			height: 1.75d
+			image: "minecraft:block/smithing_table_top"
+			rotation: 45.0d
+			width: 1.75d
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			height: 1.75d
+			image: "neapolitan:block/vanilla_cake_top"
+			rotation: 45.0d
+			width: 1.75d
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependency: "5F89BD9F8F5373EC"
+			height: 1.75d
+			image: "minecraft:block/cake_top"
+			rotation: 0.0d
+			width: 1.75d
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			height: 1.75d
+			image: "quark:block/iron_pillar_top"
+			rotation: 45.0d
+			width: 1.75d
+			x: -4.0d
+			y: 4.5d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["3C48F0B4F29CF0A8"]
 			description: [
 				"&6&lADJ&r is all about creating! This its the third and final time I am saying this."
 				""
@@ -18,7 +70,7 @@
 			]
 			disable_toast: true
 			id: "1E5E55D6C87BAA30"
-			subtitle: "&oRequires 'Benchmarking'"
+			subtitle: "&oRequires 'Time to Farm!'"
 			tasks: [{
 				id: "6AC23B0FABE2E0D6"
 				title: "Click to complete"
@@ -33,11 +85,13 @@
 			id: "59292630076634C2"
 			shape: "diamond"
 			size: 2.0d
+			subtitle: "Construct a Stove"
 			tasks: [{
 				id: "6B64E76A3B3A7243"
 				item: "farmersdelight:stove"
 				type: "item"
 			}]
+			title: "...and Chewin'"
 			x: 0.0d
 			y: 1.0d
 		}
@@ -45,6 +99,7 @@
 			dependencies: ["59292630076634C2"]
 			icon: "farmersdelight:cooking_pot"
 			id: "4939DB41E905F987"
+			subtitle: "Make a Frying Pan and a Cooking Pot"
 			tasks: [
 				{
 					id: "15DED6F772877A28"
@@ -63,8 +118,9 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: 2.0d
+			title: "Cooking Essentials"
+			x: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1E5E55D6C87BAA30"]
@@ -110,65 +166,38 @@
 		}
 		{
 			dependencies: ["1E5E55D6C87BAA30"]
-			icon: {
-				Count: 1
-				id: "farmersdelight:iron_knife"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "minecraft:honeycomb"
 			id: "1245EDB9C524ACC7"
 			shape: "diamond"
 			size: 2.0d
+			subtitle: "Gather some Honeycombs and a Honey Bottle from a Beehive or a Bee Nest"
 			tasks: [
 				{
-					id: "283FF824A5F5966E"
-					item: "farmersdelight:cutting_board"
+					count: 3L
+					id: "700CAB48389D9E87"
+					item: "minecraft:honeycomb"
 					type: "item"
 				}
 				{
-					id: "0F085E41FEE8E34E"
-					item: {
-						Count: 1
-						id: "farmersdelight:iron_knife"
-						tag: {
-							Damage: 0
-						}
-					}
+					id: "6359F2E0FEEC777F"
+					item: "minecraft:honey_bottle"
 					type: "item"
 				}
 			]
+			title: "Beekeper Beatrix"
 			x: 0.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["4FCBD845E6A74E67"]
-			id: "6100892E5C88774C"
-			subtitle: "Plant a full stack of Potatoes"
-			tasks: [{
-				block: "minecraft:farmland"
-				block_type: 0
-				checkItem: false
-				icon: "minecraft:potato"
-				id: "2A8D550220BC794D"
-				isItemInteraction: true
-				item: "minecraft:potato"
-				title: "Plant a full stack of Potatoes"
-				type: "questsadditions:use"
-				value: 99L
-			}]
-			title: "In The Loving Memory Of..."
-			x: -4.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["4FCBD845E6A74E67"]
 			id: "74019EFD0ED8F657"
+			subtitle: "Craft a Mechanical Harvester"
 			tasks: [{
 				id: "7EF9308BDE820C3D"
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
+			title: "Agricultural Revolution"
 			x: -6.0d
 			y: -1.0d
 		}
@@ -281,6 +310,9 @@
 			dependencies: ["74019EFD0ED8F657"]
 			icon: "sliceanddice:fertilizer_bucket"
 			id: "527267F3EB74C2DA"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft Liquid Fertilizer. You can use Sprinklers to spray it down on your plants"
 			tasks: [
 				{
 					disable_toast: true
@@ -295,7 +327,8 @@
 					type: "item"
 				}
 			]
-			x: -6.5d
+			title: "&f&lFertilizers: &r&aLiquid Fertilizer"
+			x: -7.0d
 			y: -2.5d
 		}
 		{
@@ -304,31 +337,21 @@
 			id: "7BABB7161F25736B"
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "Collect and plant some seeds"
+			subtitle: "Craft a Keg to start brewing the funny stuff"
 			tasks: [{
 				id: "63C7A704BAF739F8"
 				item: "brewinandchewin:keg"
 				type: "item"
 			}]
-			title: "A Seedy Place"
+			title: "Brewin'..."
 			x: -4.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["7BABB7161F25736B"]
-			id: "4A71C07A5B9FEB5F"
-			tasks: [{
-				id: "32C9AC557B82064A"
-				item: "vinery:grapevine_pot"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["7BABB7161F25736B"]
 			icon: "vinery:red_grape"
 			id: "7D4147C7C4278ADB"
+			subtitle: "Collect some wild Grapes"
 			tasks: [{
 				id: "5EC5351189D00F77"
 				item: {
@@ -341,24 +364,115 @@
 				title: "Any Grapes"
 				type: "item"
 			}]
-			x: -5.5d
+			title: "Grapeful"
+			x: -6.0d
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"7D4147C7C4278ADB"
-				"4A71C07A5B9FEB5F"
-			]
-			icon: "vinery:red_taiga_grapejuice"
-			id: "062D356DADB6229A"
+			dependencies: ["74019EFD0ED8F657"]
+			id: "63792CCA3D65640C"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft an Agricarnation"
+			tasks: [{
+				id: "4582938A0B0E73C7"
+				item: "botania:agricarnation"
+				type: "item"
+			}]
+			title: "&f&lFertilizers: &r&aAgricarnation"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["56D06670965D8835"]
+			icon: {
+				Count: 1
+				id: "vinery:cristel_wine"
+				tag: { }
+			}
+			id: "2CE5A910A9C7B3EA"
+			subtitle: "Brew one of each - a bottle of Red Wine and a bottle of White Wine"
 			tasks: [
 				{
-					id: "47886F0F76F959AF"
+					id: "4A06690F19C65AF4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "vinery:white_wine"
+						}
+					}
+					title: "Any White Wine"
+					type: "item"
+				}
+				{
+					id: "6B316CE28D387AA5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "vinery:red_wine"
+						}
+					}
+					title: "Any Red Wine"
+					type: "item"
+				}
+			]
+			title: "The Cheaper The Better"
+			x: -7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7BABB7161F25736B"]
+			id: "235B6E77FA1030A1"
+			subtitle: "Brew some Beer"
+			tasks: [{
+				id: "328AE406A5B629F3"
+				item: "brewinandchewin:beer"
+				type: "item"
+			}]
+			title: "Medieval Beverages"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["56D06670965D8835"]
+			icon_scale: 0.75d
+			id: "4CE7BE7B3B7783F0"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Brew Netherite Nectar"
+			tasks: [{
+				id: "4BBB0874F8E1CC3E"
+				item: {
+					Count: 1
+					id: "nethervinery:netherite_nectar"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Metallic Madness"
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7D4147C7C4278ADB"]
+			icon: "vinery:grapevine_pot"
+			id: "56D06670965D8835"
+			subtitle: "Stomp some Grapes down into juice and then collect it into a Wine Bottle"
+			tasks: [
+				{
+					id: "644B16EE8E0ACF64"
+					item: "vinery:grapevine_pot"
+					type: "item"
+				}
+				{
+					id: "609A5F770497399E"
 					item: "vinery:wine_bottle"
 					type: "item"
 				}
 				{
-					id: "404B78C04DC008FA"
+					id: "618A78BB23B6FA34"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -370,19 +484,302 @@
 					type: "item"
 				}
 			]
+			title: "Grapejuice World"
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7D4147C7C4278ADB"]
+			description: ["&7&lHINT&r: &5Obsidian Stems&r are only an alternate variant, &cNether-specific Grapes&r can grow just as well on regular &6Grapevine Stems&r."]
+			icon: "vinery:grapevine_stem"
+			id: "0CB78B0B5CFD4B70"
+			subtitle: "Craft some Grapevine Stems to grown your Grapes on"
+			tasks: [
+				{
+					id: "7B3AF7B432A765AB"
+					item: "vinery:grapevine_stem"
+					type: "item"
+				}
+				{
+					id: "7C845DF43F070E3F"
+					item: "nethervinery:obsidian_stem"
+					type: "item"
+				}
+			]
+			title: "Let's Do a Vinery"
 			x: -5.5d
 			y: 2.5d
 		}
 		{
-			dependencies: ["74019EFD0ED8F657"]
-			id: "63792CCA3D65640C"
+			dependencies: ["1245EDB9C524ACC7"]
+			icon: "waxed:wax_block"
+			id: "19D5270E71350796"
+			subtitle: "Make some Wax"
+			tasks: [
+				{
+					id: "6CF6C6C68DA50A77"
+					item: "waxed:empty_honeycomb"
+					type: "item"
+				}
+				{
+					id: "6DDFFC171B75A68C"
+					item: "waxed:wax_block"
+					type: "item"
+				}
+			]
+			title: "Waxed"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["59292630076634C2"]
+			icon: "farmersdelight:cutting_board"
+			id: "33A3600023AC54F3"
+			subtitle: "Make a Cutting Board and a simple Knife"
+			tasks: [
+				{
+					id: "4DD03DDA93385C8C"
+					item: {
+						Count: 1
+						id: "farmersdelight:iron_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7CB697764E67F21E"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			title: "Cutting Edge"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4939DB41E905F987"]
+			id: "4FCCFD3ED32E4990"
+			subtitle: "Make some Chicken Soup - a Polish special!"
 			tasks: [{
-				id: "4582938A0B0E73C7"
-				item: "botania:agricarnation"
+				id: "6D9D435B7DCB2AD5"
+				item: "farmersdelight:chicken_soup"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -2.5d
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["74019EFD0ED8F657"]
+			id: "5AACD96F037CA267"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft Rich Soil. It can be tilled into a more powerful variant of Farmland"
+			tasks: [{
+				id: "48AC89AF2F1446F4"
+				item: "farmersdelight:rich_soil"
+				type: "item"
+			}]
+			title: "&f&lFertilizers: &r&aRich Soil"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4939DB41E905F987"]
+			icon_scale: 0.75d
+			id: "7F07DA3194E316D1"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Put all of your Culinary Efforts into making a Pot of Fiery Fondue"
+			tasks: [{
+				id: "3B3D44E79DDF8105"
+				item: "brewinandchewin:fiery_fondue_pot"
+				type: "item"
+			}]
+			title: "Feast Worth a King"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["59292630076634C2"]
+			icon: "create:wheat_flour"
+			id: "73777E71CF66626E"
+			subtitle: "Mill some Wheat Flour and form some Wheat Dough"
+			tasks: [
+				{
+					id: "1F14857DC3ED8187"
+					item: "create:wheat_flour"
+					type: "item"
+				}
+				{
+					id: "160F4B6A446E4C17"
+					item: "create:dough"
+					type: "item"
+				}
+			]
+			title: "I Like To Cook and I Love to Bake"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73777E71CF66626E"]
+			id: "5F89BD9F8F5373EC"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Bake a Cake"
+			tasks: [{
+				id: "17B1D3ADB8D35419"
+				item: "minecraft:cake"
+				type: "item"
+			}]
+			title: "The Lie"
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["73777E71CF66626E"]
+			description: [""]
+			id: "369CDCF4288D6D76"
+			shape: "square"
+			subtitle: "Jessy, we need to bake bread"
+			tasks: [{
+				id: "223797444583BBC4"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			title: "[Ba]king [Br]ead"
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5F89BD9F8F5373EC"]
+			icon: "neapolitan:strawberry_cake"
+			icon_scale: 0.75d
+			id: "79DA3ADFEC24981C"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft every Cake variant"
+			tasks: [
+				{
+					id: "11B77CA114A7DAE2"
+					item: "neapolitan:vanilla_cake"
+					type: "item"
+				}
+				{
+					id: "281266C7C791B4F2"
+					item: "neapolitan:chocolate_cake"
+					type: "item"
+				}
+				{
+					id: "7D7AEFF8C97E1763"
+					item: "neapolitan:strawberry_cake"
+					type: "item"
+				}
+				{
+					id: "4036BF8F0B3A1183"
+					item: "neapolitan:banana_cake"
+					type: "item"
+				}
+				{
+					id: "20AB2B531887AF6C"
+					item: "neapolitan:mint_cake"
+					type: "item"
+				}
+				{
+					id: "25EA90AA6E3D562A"
+					item: "neapolitan:adzuki_cake"
+					type: "item"
+				}
+				{
+					id: "79732A86B5F6B324"
+					item: "twilightdelight:aurora_cake"
+					type: "item"
+				}
+				{
+					id: "7BA470C01C0FA088"
+					item: "twilightdelight:torchberry_cake"
+					type: "item"
+				}
+				{
+					id: "20913F03DDF8555F"
+					item: "twilightdelight:phytochemical_cake"
+					type: "item"
+				}
+				{
+					id: "16C47B70080A579F"
+					item: "twilightdelight:glacier_cake"
+					type: "item"
+				}
+				{
+					id: "782722C02FECA243"
+					item: "veggiesdelight:carrot_cake"
+					type: "item"
+				}
+			]
+			title: "ALL THE CAKE!!"
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["19D5270E71350796"]
+			icon: "waxed:wick"
+			id: "7DBB43B9F1F335F2"
+			subtitle: "Make a large candle by placing a Wick on top of any Wax Pillars"
+			tasks: [
+				{
+					id: "32A96553DD6DD07A"
+					item: "waxed:wick"
+					type: "item"
+				}
+				{
+					block: "waxed:wax_pillars"
+					block_type: 1
+					checkItem: false
+					id: "1A518A06AA02DD9B"
+					isItemInteraction: true
+					item: "waxed:wick"
+					title: "Place a Wick on top of a Wax Pillar"
+					type: "questsadditions:use"
+					value: 1L
+				}
+			]
+			title: "No One Mourns The Wicked"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["235B6E77FA1030A1"]
+			icon_scale: 0.75d
+			id: "488261B2768FC805"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Upgrade your Beer. 'Upgrade' is actually such a funny word in this concept"
+			tasks: [{
+				id: "097AF39015545B08"
+				item: "brewinandchewin:steel_toe_stout"
+				type: "item"
+			}]
+			title: "Iron Stomach"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1E5E55D6C87BAA30"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "54930731DEEDD96B"
+			shape: "hexagon"
+			size: 4.0d
+			subtitle: "Imbue an Awakened Ender Pearl with everything that is tasty and turn it into the Eye of Hedonism"
+			tasks: [{
+				id: "53B83EA5F4601FA8"
+				item: "kubejs:eye_of_hedonism"
+				type: "item"
+			}]
+			title: "Core of All That Is Fun"
+			x: -2.0d
+			y: -4.0d
 		}
 	]
 	title: "Crops Of The Wild"

@@ -1,14 +1,50 @@
 ItemEvents.modification(event => {
 
+	function duration(string, mul) {
+		let timeTotal, times = string.split(':');
+		if (times.length === 3) {
+			timeTotal =
+				(parseInt(times[0]) * 60 * 60 * 20) + // hours
+				(parseInt(times[1]) * 60 * 20) + // minutes
+				(parseInt(times[2]) * 20); // seconds
+		} else if (times.length === 2) {
+			timeTotal =
+				(parseInt(times[0]) * 60 * 20) + // minutes
+				(parseInt(times[1]) * 20); // seconds
+		}
+		if (mul) timeTotal *= mul;
+		return timeTotal;
+	}
+
 	const nourishment = 'farmersdelight:nourishment'
 
 	event.modify(/.*/, item => {
 		if (item.getFoodProperties() != null) {
 			item.setFoodProperties(food => {
-				food.alwaysEdible()
+				food.alwaysEdible();
+
+				// Replace Comfort effect with Nourishment
+				// Backport from FD 1.3.0 until I update and all addons do as well
+				let replaceComfortWithNourishment = false;
+				/**
+				 * @type {Internal.MobEffectInstance_}
+				 */
+				let comfortInstance, comfortChance;
+				item.getFoodProperties().getEffects().forEach(entry => {
+					const instance = entry.getFirst();
+					if (instance.getEffect().descriptionId === 'effect.farmersdelight.comfort') {
+						replaceComfortWithNourishment = true;
+						comfortInstance = instance;
+						comfortChance = entry.getSecond();
+					};
+				});
+				if (replaceComfortWithNourishment) {
+					food.removeEffect('farmersdelight:comfort');
+					food.effect(nourishment, comfortInstance.getDuration(), comfortInstance.getAmplifier(), comfortChance);
+				}
 			})
 		}
-	})
+	});
 
 	event.modify('aquamirae:poseidons_breakfast', item => {
 		item.setFoodProperties(food => {
@@ -16,7 +52,7 @@ ItemEvents.modification(event => {
 				.removeEffect('obscure_api:rush')
 				.effect(nourishment, duration("30:00"), 0, 1);
 		})
-	})
+	});
 
 	event.modify('aquamirae:sea_stew', item => {
 		item.setFoodProperties(food => {
@@ -24,47 +60,23 @@ ItemEvents.modification(event => {
 				.removeEffect('minecraft:strength')
 				.effect(nourishment, duration("10:00"), 0, 1);
 		})
-	})
+	});
 
 	event.modify('aquamirae:sea_casserole', item => {
 		item.setFoodProperties(food => {
 			food.removeEffect('obscure_api:rush');
 		})
-	})
-
-	event.modify('phantasm:pream_berry', item => {
-		item.setFoodProperties(food => {
-			food.removeEffect('minecraft:instant_health');
-			food.effect('adjcore:lesser_instant_health', 1, 0, 1);
-		})
-	})
-
-	event.modify('twilightdelight:milky_113', item => {
-		item.setFoodProperties(food => {
-			food.removeEffect('minecraft:instant_health');
-			food.effect('adjcore:lesser_instant_health', 1, 2, 1);
-		})
-	})
-
-	event.modify('netherexp:nether_pizza_slice', item => {
-		item.setFoodProperties(food => {
-			food.removeEffect('minecraft:instant_health');
-			food.effect('adjcore:lesser_instant_health', 1, 1, 1);
-		})
-	})
+	});
 
 	event.modify('honeycomb', item => {
 		item.setFoodProperties(food => {
-			food.effect('alexscaves:sugar_rush', duration("00:08"), 0, 0.1);
+			food.effect('alexscaves:sugar_rush', duration("00:06"), 0, 0.01);
 			food.hunger(2).saturation(0.1);
 			food.fastToEat();
 			food.alwaysEdible();
 		})
-	})
+	});
 
-	/**
-	 * @type {InputItem_[]}
-	 */
 	const fastToEat = [
 		'beetroot',
 		'delightful:source_berry_cookie',
@@ -91,7 +103,7 @@ ItemEvents.modification(event => {
 				food.fastToEat();
 			})
 		})
-	})
+	});
 
 	/**
 	 * @type {InputItem_[]}
@@ -236,11 +248,11 @@ ItemEvents.modification(event => {
 		item.setFoodProperties(food => {
 			food.effect('hunger', duration("0:30"), 0, 0.3)
 		})
-	})
+	});
 
 	event.modify('minecraft:milk_bucket', item => {
 		item.setFoodProperties(food => { })
-	})
+	});
 
 	event.modify('minecraft:glistering_melon_slice', item => {
 		item.setFoodProperties(food => {
@@ -249,21 +261,5 @@ ItemEvents.modification(event => {
 			food.hunger(3);
 			food.saturation(0.6)
 		})
-	})
+	});
 });
-
-function duration(string, mul) {
-	let timeTotal, times = string.split(':');
-	if (times.length === 3) {
-		timeTotal =
-			(parseInt(times[0]) * 60 * 60 * 20) + //Hours
-			(parseInt(times[1]) * 60 * 20) + // Minutes
-			(parseInt(times[2]) * 20); // Seconds
-	} else if (times.length === 2) {
-		timeTotal =
-			(parseInt(times[0]) * 60 * 20) + // Minutes
-			(parseInt(times[1]) * 20); // Seconds
-	}
-	if (mul) timeTotal *= mul;
-	return timeTotal;
-}

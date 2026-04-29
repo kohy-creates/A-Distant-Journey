@@ -278,6 +278,7 @@ global.stageRestrictions = {
 			'witherstormmod:phasometer',
 			'witherstormmod:golden_apple_stew',
 			'witherstormmod:amulet',
+			'witherstormmod_delight:cooking_pot_of_golden_apple_stew',
 			/treasure_bag/
 		]
 	}

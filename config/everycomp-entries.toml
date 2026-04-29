@@ -814,6 +814,13 @@
 			polished_sulfur = true
 			sulfur_bricks = true
 
+		[types.cut_block_type.jellyfishing]
+			coralstone = true
+			polished_coralstone = true
+			scrap_metal = true
+			chrome_metal = true
+			chrome_brick = true
+
 #Disables specific entries
 [entries]
 

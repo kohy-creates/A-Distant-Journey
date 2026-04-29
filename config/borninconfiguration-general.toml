@@ -15,9 +15,9 @@
 	#Whether you gain naughtiness from certain actions
 	NAUGHTINESS_ENABLED = false
 	#Chaotic Spring event enabled
-	CHAOTIC_SPRING_ENABLED = true
+	CHAOTIC_SPRING_ENABLED = false
 	#Chilling Horror event enabled
-	CHILLING_HORROR_ENABLED = true
+	CHILLING_HORROR_ENABLED = false
 
 [Weapons]
 	#Amount of phantom bombs that gets spawned when thrown

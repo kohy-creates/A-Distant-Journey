@@ -198,15 +198,6 @@
 			y: 22.5d
 		}
 		{
-			dependency: "5F89BD9F8F5373EC"
-			height: 1.75d
-			image: "minecraft:block/cake_top"
-			rotation: 0.0d
-			width: 1.75d
-			x: 9.0d
-			y: 6.5d
-		}
-		{
 			height: 1.75d
 			image: "enchantinginfuser:block/enchanting_infuser_top_amethyst"
 			rotation: 0.0d
@@ -1418,22 +1409,6 @@
 			y: 10.714285714285701d
 		}
 		{
-			dependencies: ["3C48F0B4F29CF0A8"]
-			description: [""]
-			id: "369CDCF4288D6D76"
-			optional: true
-			shape: "rsquare"
-			subtitle: "Jessy, we need to bake bread"
-			tasks: [{
-				id: "223797444583BBC4"
-				item: "minecraft:bread"
-				type: "item"
-			}]
-			title: "[Ba]king [Br]ead"
-			x: 7.5d
-			y: 5.5d
-		}
-		{
 			dependencies: ["379A22A2185CFC8E"]
 			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Fortress!"]
 			hide_until_deps_complete: true
@@ -1586,21 +1561,6 @@
 			y: 1.357142857142847d
 		}
 		{
-			dependencies: ["3C48F0B4F29CF0A8"]
-			id: "5F89BD9F8F5373EC"
-			optional: true
-			shape: "rsquare"
-			subtitle: "Bake a Cake"
-			tasks: [{
-				id: "17B1D3ADB8D35419"
-				item: "minecraft:cake"
-				type: "item"
-			}]
-			title: "The Lie"
-			x: 8.5d
-			y: 5.0d
-		}
-		{
 			dependencies: ["026E22A534C341CC"]
 			description: [
 				"This is a great moment to mention the addition of &e&lfull set bonuses&r."
@@ -1700,7 +1660,7 @@
 			}]
 			title: "Pork Chop"
 			x: 7.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			disable_toast: true

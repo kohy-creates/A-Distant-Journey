@@ -113,7 +113,8 @@ ServerEvents.recipes((event) => {
 		'mythicmetals:mythril_leggings',
 		'mythicmetals:mythril_boots',
 		'create_cataclysm:cataclysmic_alloy',
-		'create:creative_blaze_cake'
+		'create:creative_blaze_cake',
+		'xercapaint:item_canvas'
 	].concat(global.blacklistedItemsArray);
 	disabledItemRecipes.forEach(item => {
 		event.remove({ output: item })
@@ -303,7 +304,10 @@ ServerEvents.recipes((event) => {
 		'brewinandchewin:fermenting/egg_grog_from_milk',
 		'twilightdelight:cutting/phantom_chestplate',
 		'twilightdelight:cutting/phantom_helmet',
-		'create:crushing/nether_wart_block'
+		'create:crushing/nether_wart_block',
+		'immersive_paintings:painting',
+		'immersive_paintings:graffiti',
+		'brewinandchewin:keg'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -384,6 +388,7 @@ ServerEvents.recipes((event) => {
 			'twilightforest:fiery_tears': 'twilightforest:fiery_blood',
 			'twilightforest:knightmetal_ring': 'iron_ingot',
 			'alexscaves:sulfur_dust': 'kubejs:crushed_sulfur',
+			'farmersdelight:canvas': 'xercapaint:item_canvas'
 		},
 		output: {
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
@@ -398,6 +403,7 @@ ServerEvents.recipes((event) => {
 			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
 			'rubinated_nether:ruby': 'rediscovered:ruby',
 			'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
+			'farmersdelight:canvas': 'xercapaint:item_canvas'
 		}
 	};
 	for (const [input, replacement] of Object.entries(unificationMap.input)) {
@@ -422,6 +428,19 @@ ServerEvents.recipes((event) => {
 		'2x charcoal',
 		Item.of('charcoal').withChance(0.25)
 	], '#adj:scorched_logs', 120).id('adj:charcoal_from_milling');
+
+	event.shaped(
+		'brewinandchewin:keg',
+		[
+			'IPI',
+			'I I',
+			'PPP'
+		],
+		{
+			I: 'iron_ingot',
+			P: '#planks'
+		}
+	)
 
 	event.shaped(
 		'hopper',
@@ -8129,4 +8148,8 @@ ServerEvents.recipes((event) => {
 	fullBlockSet('sulfur', 'polished_sulfur', 'sulfur_bricks');
 
 	event.recipes.create.milling(['kubejs:crushed_sulfur', Item.of('kubejs:crushed_sulfur').withChance(0.5)], 'kubejs:sulfur', 200).id('adj:crushed_sulfur');
+
+	// Immersive Paintings
+	event.recipes.botania.mana_infusion('immersive_paintings:painting', 'painting').mana(15000).id('adj:magic_painting');
+	event.recipes.botania.mana_infusion('2x immersive_paintings:graffiti', 'quark:glass_item_frame').mana(15000).id('adj:magic_painting');
 });

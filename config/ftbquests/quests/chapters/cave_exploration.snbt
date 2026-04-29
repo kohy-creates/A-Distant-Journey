@@ -6,6 +6,22 @@
 	id: "71F13BF704EDC145"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "4ED4E1C82BC94113"
+		shape: "diamond"
+		size: 2.0d
+		tasks: [{
+			id: "5E398FA823935E59"
+			item: {
+				Count: 1
+				id: "alexscaves:cave_tablet"
+				tag: { }
+			}
+			match_nbt: false
+			type: "item"
+		}]
+		x: 0.5d
+		y: -0.5d
+	}]
 	title: "Cave Exploration"
 }

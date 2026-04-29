@@ -56,6 +56,7 @@ const replaceItemsMap = {
 	'minecraft:shield': 'shieldexp:iron_shield',
 	'twilightforest:raw_venison': 'naturalist:venison',
 	'twilightforest:cooked_venison': 'naturalist:cooked_venison',
+	'farmersdelight:canvas': 'xercapaint:item_canvas'
 }
 
 LootJS.modifiers((event) => {
