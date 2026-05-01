@@ -1,7 +1,0 @@
-
-[visuals]
-	#Whether Magnetic items move around your inventory when in magnetic caves
-	MAGNETIC_MOVEMENT_ENABLED = true
-	#Patchouli Reminder
-	PATCHOULI_REMINDER_ENABLED = false
-
