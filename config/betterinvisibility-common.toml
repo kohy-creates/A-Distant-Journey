@@ -16,7 +16,7 @@
 	#Can sneak by mobs when inside detection distance (default:true)
 	sneakWhenClose = true
 	#Invisibility effect removed when discovered by Mobs (default:true)
-	discoveryRemovesInvisibility = true
+	discoveryRemovesInvisibility = false
 	#Invisibility effect removed if Player attacks (default:true)
 	attackRemovesInvisibility = true
 	#Remove invisibility particles from other mobs (default:true)

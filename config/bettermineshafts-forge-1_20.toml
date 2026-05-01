@@ -76,7 +76,7 @@
 		# The spawn rate for cobwebs.
 		# Default: .15
 		#Range: 0.0 ~ 1.0
-		"Cobweb Spawn Rate" = 0.15
+		"Cobweb Spawn Rate" = 0.25
 		# The spawn rate for minecarts holding chests in small shafts.
 		# Default: .00125
 		#Range: 0.0 ~ 1.0
@@ -102,5 +102,5 @@
 		# Default: 9
 		#
 		#Range: 0 ~ 1000
-		"Small Shaft Piece Chain Length" = 9
+		"Small Shaft Piece Chain Length" = 11
 

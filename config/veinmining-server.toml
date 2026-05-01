@@ -26,7 +26,7 @@ toolDamageMultiplier = 1
 addExhaustion = true
 #The multiplier to player exhaustion from blocks that are vein mined.
 #Range: 0.0 ~ 1000.0
-exhaustionMultiplier = 0.66
+exhaustionMultiplier = 1
 #Determines the vein mineable blocks based on a preset option or a configured list.
 #Allowed Values: CONFIG_LIST, ALL, ORES, ORES_LOGS, ORES_STONE, ORES_STONE_LOGS, NO_BLOCK_ENTITIES
 blocks = "CONFIG_LIST"
@@ -36,5 +36,5 @@ blocksList = ["#c:ores", "#forge:ores"]
 #Allowed Values: ALLOW, DENY
 blocksListType = "ALLOW"
 #The groups of blocks or block tags that are vein mined together.
-groupsList = ["#forge:obsidian", "forge:ores/silver", "forge:ores/quartz", "forge:ores/lapis", "forge:ores/mythril", "forge:ores/kyber", "forge:ores/unobtainium", "forge:ores/tin", "forge:ores/prometheum", "forge:ores/aquarium", "forge:ores/runite", "forge:ores/ruby", "forge:ores/copper", "forge:ores/adamantite", "forge:ores/morkite", "forge:ores/midas_gold", "forge:ores/uranium", "forge:ores/quadrillum", "forge:ores/stormyx", "forge:ores/iron", "forge:ores/platinum", "forge:ores/orichalcum", "forge:ores/starrite", "forge:ores/osmium", "forge:ores/banglum", "forge:ores/diamond", "forge:ores/redstone", "forge:ores/palladium", "forge:ores/gold", "forge:ores/manganese", "forge:ores/coal", "forge:ores/zinc", "forge:ores/carmot", "forge:ores/emerald", "forge:ores/netherite_scrap"]
+groupsList = ["#forge:obsidian", "#forge:ores/silver", "#forge:ores/quartz", "#forge:ores/lapis", "#forge:ores/mythril", "#forge:ores/kyber", "#forge:ores/unobtainium", "#forge:ores/tin", "#forge:ores/prometheum", "#forge:ores/aquarium", "#forge:ores/runite", "#forge:ores/ruby", "#forge:ores/copper", "#forge:ores/adamantite", "#forge:ores/morkite", "#forge:ores/midas_gold", "#forge:ores/uranium", "#forge:ores/quadrillum", "#forge:ores/stormyx", "#forge:ores/iron", "#forge:ores/platinum", "#forge:ores/orichalcum", "#forge:ores/starrite", "#forge:ores/osmium", "#forge:ores/banglum", "#forge:ores/diamond", "#forge:ores/redstone", "#forge:ores/palladium", "#forge:ores/gold", "#forge:ores/manganese", "#forge:ores/coal", "#forge:ores/zinc", "#forge:ores/carmot", "#forge:ores/emerald", "#forge:ores/netherite_scrap"]
 

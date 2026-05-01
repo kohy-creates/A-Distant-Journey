@@ -1,7 +1,7 @@
 # This is cooldown value of mount spawn in SECONDS. Default: 5
-cooldownValue = 5
+cooldownValue = 3
 # If true, Mount Bauble will be destroyed when the mount is released, otherwise the Mount Bauble will remain in your hand without the mount inside it. Default: true
-destructionUponRelease = true
+destructionUponRelease = false
 # If true, Broken Mount Bauble will appear in the slot when the mount dies, otherwise, it will not appear and the mount cannot be resurrected. Default: true
 brokenBaubleAppearance = true
 # If true, custom tooltip is shows on Bauble Mounts items Default: true

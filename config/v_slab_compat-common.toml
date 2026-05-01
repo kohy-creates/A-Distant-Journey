@@ -1,3 +1,3 @@
 #mod ids blacklist
-blacklist = ["securitycraft", "rediscovered"]
+blacklist = ["securitycraft"]
 

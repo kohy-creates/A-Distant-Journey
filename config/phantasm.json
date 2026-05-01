@@ -125,7 +125,7 @@
        "crystalline_tools": {
          "durability": 4000,
          // Strength of the xp efficiency boost. Set to 0 to disable the feature
-         "efficiency_boost": 2
+         "efficiency_boost": 1.5
        }
      }
    },
@@ -139,7 +139,7 @@
      "equipment": {
        "choral_arrow": {
          // Range (in blocks) for the beam of Choral Arrows shot from a Crossbow
-         "crossbow_range": 15,
+         "crossbow_range": 30,
          // Duration (in ticks) for the Charm effect from Choral Arrows shot from a Bow
          "charm_duration": 30,
          // Duration (in ticks) for the Charm effect on players from Choral Arrows shot from a Bow

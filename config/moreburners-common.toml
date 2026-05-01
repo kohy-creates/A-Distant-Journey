@@ -13,7 +13,7 @@
 	#Settings for exoflame compat parameters
 	[parameters.exoflame_compat]
 		#Maximum number of blaze burner exoflame can provide heat sustainably.
-		boost_rate = 9
+		boost_rate = 5
 		#Maximum number of blaze burner exoflame can provide heat sustainably when superheated.
 		seething_boost_rate = 1
 

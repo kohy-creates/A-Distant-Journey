@@ -22,7 +22,7 @@
 [Weapons]
 	#Amount of phantom bombs that gets spawned when thrown
 	#Range: > 1
-	PHANTOM_BOMB_COUNT = 2
+	PHANTOM_BOMB_COUNT = 4
 	#Amount of seconds for the cooldown of pumpkin pistol with the hat on
 	#Range: > 0
 	UPGRADED_PUMPKIN_PISTOL_COOLDOWN = 1
@@ -34,7 +34,7 @@
 	NUTBREAKER_HEAD_CHANCE = 0.3499999940395355
 	#Amount of Mr.Pumpkins spawned
 	#Range: > 1
-	PUMPKIN_STAFF_SUMMON_AMOUNT = 1
+	PUMPKIN_STAFF_SUMMON_AMOUNT = 2
 
 	[Weapons.Mobs]
 

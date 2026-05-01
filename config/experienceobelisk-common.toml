@@ -32,7 +32,7 @@
 		SpawnDelayMax = 500
 		#The XP value of spawned orbs. Default = 12
 		#Range: 1 ~ 32767
-		OrbValue = 12
+		OrbValue = 6
 		#The number of spawns until the bookshelf decays. Default = 50
 		#Range: 1 ~ 10000
 		Spawns = 50
@@ -49,7 +49,7 @@
 		SpawnDelayMax = 500
 		#The XP value of spawned orbs. Default = 24
 		#Range: 1 ~ 32767
-		OrbValue = 24
+		OrbValue = 12
 		#The number of spawns until the bookshelf decays. Default = 100
 		#Range: 1 ~ 10000
 		Spawns = 100
@@ -66,7 +66,7 @@
 		SpawnDelayMax = 500
 		#The XP value of spawned orbs. Default = 12
 		#Range: 1 ~ 32767
-		OrbValue = 12
+		OrbValue = 6
 		#The number of spawns until the bookshelf decays. Default = 50
 		#Range: 1 ~ 10000
 		Spawns = 100
@@ -101,14 +101,14 @@
 
 ["Fluorescent Jelly"]
 	#How many hunger points Fluorescent Jelly gives the player. Set to 0 to disable eating completely. Default = 2
-	Nutrition = 2
+	Nutrition = 1
 	#How much saturation Fluorescent Jelly gives the player. Default = 1.0
-	Saturation = 1.0
+	Saturation = 1
 
 ["Enlightened Amulet"]
 	#The range of the enlightened amulet in blocks. Accepts decimals. Default = 8.0.
 	#Range: 1.0 ~ 16.0
-	Range = 8.0
+	Range = 12.0
 	#Whether the enlightened amulet ignores orbs spawned by Experience Fountains. Default = true
 	Ignores = true
 	#Whether the enlightened amulet ignores orbs spawned by Infected Bookshelves. Default = false
@@ -127,5 +127,5 @@
 ["Cognitive Bow"]
 	#Whether to show the projectile velocity & accuracy boost in the tooltip. Default = true
 	#Disable this if tooltip components are being displayed in the wrong order.
-	Show = true
+	Show = false
 

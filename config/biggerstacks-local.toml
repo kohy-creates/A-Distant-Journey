@@ -9,5 +9,5 @@
 	#- Pretty pipes has its extract rate scaled up
 	#- XNet can already extract a variable amount, but you will be able to go past 64 to the new maximum stack limit
 	#- Cyclic still extracts 1 stack (more than 64 items) per tick, but the size of the stack is adjusted
-	"Increase transfer rate" = true
+	"Increase transfer rate" = false
 
