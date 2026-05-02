@@ -1021,13 +1021,13 @@ ItemEvents.tooltip(event => {
 
 		let drinkingTime, cooldown;
 		if (original[1] && original[1].toString().includes('sortilege.potion.drinking_time')) {
-			drinkingTime = original[1].toString().match(/\d+/g);
+			drinkingTime = original[1].toString().match(/(\d+(?:\.\d+)?)/g);
 		}
 		if (original[1] && original[1].toString().includes('sortilege.staff.cooldown')) {
-			cooldown = original[1].toString().match(/\d+/g);
+			cooldown = original[1].toString().match(/(\d+(?:\.\d+)?)/g);
 		}
 		else if (original[2] && original[2].toString().includes('sortilege.staff.cooldown')) {
-			cooldown = original[2].toString().match(/\d+/g);
+			cooldown = original[2].toString().match(/(\d+(?:\.\d+)?)/g);
 		};
 
 		let potionLine;

@@ -214,8 +214,8 @@ StartupEvents.registry('item', registry => {
 	registry.create('manasteel_sheet', 'basic')
 		.maxStackSize(64)
 		.texture('kubejs:item/manasteel_sheet')
-		.displayName('Manasteel Sheet')
-		.tooltip('§7Used to craft Manasteel Armor');
+		.displayName('Manasteel Sheet');
+		// .tooltip('§7Used to craft Manasteel Armor');
 
 	registry.create('skull_fragment', 'basic')
 		.maxStackSize(64)
@@ -945,6 +945,12 @@ StartupEvents.registry('item', registry => {
 	registerDust('Stormyx Dust', 0x7d4371);
 	registerDust('Tin Dust', 0x7f6164);
 	registerDust('Crushed Sulfur', 0xbeaf66);
+
+	registry.create('rune_life')
+		.maxStackSize(64)
+		.tag('botania:runes')
+		.displayName('Rune of Life')
+		.texture('kubejs:item/rune_of_life')
 
 });
 

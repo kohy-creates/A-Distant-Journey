@@ -34,7 +34,7 @@ PlayerEvents.inventoryChanged(event => {
 		player.sendData('lce_tip', {
 			item: id,
 			title: title,
-			description: description, // cause I often forget
+			description: description,
 			duration: tip[2] ?? 200
 		});
 	}

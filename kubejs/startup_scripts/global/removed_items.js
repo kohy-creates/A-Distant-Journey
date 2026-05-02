@@ -702,7 +702,10 @@ const RemovedItems = {
 		'aperture_innovations:pedestal_button',
 		'aperture_innovations:large_button',
 
-
+		'waxed:ender_wax_block',
+		'waxed:cupric_wax_block',
+		'waxed:ender_candle',
+		'waxed:cupric_candle',
 
 
 	]

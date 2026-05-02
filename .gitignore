@@ -130,3 +130,4 @@ config/spark/activity.json
 .boss_checklist_data/
 servers.dat
 servers.dat.old
+config/structurify/structurify_backup_*.json

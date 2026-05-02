@@ -78,6 +78,11 @@ PlayerEvents.tick(event => {
 	const SpellBookManaUUID = 'b790c0a0-0934-41e2-a2f4-d59b6671db5b';
 	const WillOfDharockUUID = 'c17e38c0-78aa-422d-8e41-4243bc5a153f';
 	const WitherStormUUID = 'c17e38c0-78aa-422d-8e41-4243bc5a153f';
+	const EnchantmentUUIDs = {
+		cowardice: '1c581140-8d35-4640-b01a-5b93c9c84c3a',
+		rapid_regen: '524057f6-1b13-4e22-ba7c-0612c2b44060',
+		reckless: '14f5a499-4bba-4876-aef7-0b08096b51a3',
+	};
 
 	player.getAttribute('attributeslib:crit_chance').setBaseValue(0.0);
 	player.getAttribute('generic.attack_speed').setBaseValue(2.0);
@@ -206,6 +211,39 @@ PlayerEvents.tick(event => {
 			|| player.isCuriosEquipped('kubejs:celestial_shell')
 		) && player.getLevel().isNight() && !isMerfolkActive) {
 			player.addEffect(new $MobEffectInstance('kubejs:werewolf_form', 3, 0, true, false, true));
+		}
+	}
+
+	// On tick enchantment stuff
+	const maxHealthAttribute = player.getAttribute('generic.max_health');
+	maxHealthAttribute.removeModifier(EnchantmentUUIDs.reckless);
+
+	damageDealtAttr.removeModifier(EnchantmentUUIDs.cowardice);
+	damageDealtAttr.removeModifier(EnchantmentUUIDs.reckless);
+
+	const healthRegenAttr = player.getAttribute('adjcore:generic.health_regeneration');
+	healthRegenAttr.removeModifier(EnchantmentUUIDs.rapid_regen);
+
+	const chestplate = player.getChestArmorItem();
+	let chestplateEnchants = chestplate.getEnchantments();
+	for (const enchId of Object.keys(chestplateEnchants)) {
+		let enchLevel = chestplateEnchants.get(enchId);
+		switch (enchId) {
+			case 'kubejs:rapid_regen': {
+				healthRegenAttr.addTransientModifier(new $AttributeModifier(EnchantmentUUIDs.rapid_regen, 'Rapid Regen', 0.25 + enchLevel * 0.5, 'addition'));
+				break;
+			}
+			case 'kubejs:reckless': {
+				maxHealthAttribute.addTransientModifier(new $AttributeModifier(EnchantmentUUIDs.reckless, 'Reckless', -0.4, 'multiply_base'));
+				damageDealtAttr.addTransientModifier(new $AttributeModifier(EnchantmentUUIDs.reckless, 'Reckless', 0.4 + 0.2 * enchLevel, 'multiply_base'));
+				break;
+			}
+			case 'kubejs:cowardice': {
+				if (player.health / player.maxHealth <= 0.95) {
+					damageDealtAttr.addTransientModifier(new $AttributeModifier(EnchantmentUUIDs.cowardice, 'Cowardice', 0.06 * (level + 1), 'multiply_total'));
+				}
+				break;
+			}
 		}
 	}
 

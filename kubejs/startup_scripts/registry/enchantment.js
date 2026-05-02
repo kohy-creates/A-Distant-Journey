@@ -5,21 +5,21 @@ StartupEvents.registry('enchantment', registry => {
 		.treasureOnly()
 		.minCost(level => { return 7 + 6 * (level - 1) })
 		.maxCost(level => { return 8 + 6 * level })
-		.maxLevel(4)
+		.maxLevel(4);
 
 	registry.create('echo')
 		.weapon()
 		.rare()
 		.minCost(level => { return 7 + 6 * (level - 1) })
 		.maxCost(level => { return 14 + 6 * level })
-		.maxLevel(5)
+		.maxLevel(5);
 
 	registry.create('leeching')
 		.weapon()
 		.uncommon()
 		.minCost(level => { return 10 + 5 * (level - 1) })
 		.maxCost(level => { return 10 + 9 * level })
-		.maxLevel(4)
+		.maxLevel(4);
 
 	registry.create('prospector')
 		.weapon()
@@ -27,26 +27,26 @@ StartupEvents.registry('enchantment', registry => {
 		.treasureOnly()
 		.minCost(level => { return 7 + 6 * (level - 1) })
 		.maxCost(level => { return 8 + 6 * level })
-		.maxLevel(4)
+		.maxLevel(4);
 
 	registry.create('rampaging')
 		.weapon()
 		.veryRare()
 		.minCost(level => { return 10 + 5 * (level - 1) })
 		.maxCost(level => { return 16 + 6 * level })
-		.maxLevel(4)
+		.maxLevel(4);
 
 	registry.create('cowardice')
 		.armorChest()
 		.veryRare()
 		.minCost(level => { return 10 + 5 * (level - 1) })
 		.maxCost(level => { return 16 + 6 * level })
-		.maxLevel(4)
+		.maxLevel(3);
 
 	registry.create('lucky_explorer')
 		.armorFeet()
 		.treasureOnly()
-		.untradeable()
+		.untradeable();
 
 	registry.create('reckless')
 		.armorChest()
@@ -55,7 +55,7 @@ StartupEvents.registry('enchantment', registry => {
 		.treasureOnly()
 		.minCost(level => { return 10 + 5 * (level - 1) })
 		.maxCost(level => { return 16 + 5 * level })
-		.maxLevel(4)
+		.maxLevel(4);
 
 	registry.create('rapid_regen')
 		.armorChest()
@@ -63,7 +63,7 @@ StartupEvents.registry('enchantment', registry => {
 		.treasureOnly()
 		.minCost(level => { return 15 + 10 * (level - 1) })
 		.maxCost(level => { return 16 + 13 * level })
-		.maxLevel(4)
+		.maxLevel(4);
 
 	registry.create('void_strike')
 		.untradeable()
@@ -72,7 +72,7 @@ StartupEvents.registry('enchantment', registry => {
 		.curse()
 		.minCost(level => { return 15 + 10 * (level - 1) })
 		.maxCost(level => { return 16 + 13 * level })
-		.maxLevel(3)
+		.maxLevel(3);
 
 	registry.create('void_shot')
 		.untradeable()
@@ -82,34 +82,26 @@ StartupEvents.registry('enchantment', registry => {
 		.curse()
 		.minCost(level => { return 15 + 10 * (level - 1) })
 		.maxCost(level => { return 16 + 13 * level })
-		.maxLevel(3)
+		.maxLevel(3);
 
 	registry.create('committed')
 		.weapon()
 		.rare()
 		.minCost(level => { return 7 + 6 * (level - 1) })
 		.maxCost(level => { return 14 + 6 * level })
-		.maxLevel(5)
+		.maxLevel(5);
 
 	registry.create('curse_of_polarity')
 		.weapon()
 		.veryRare()
 		.curse()
 		.minCost(level => { return 20 })
-		.maxCost(level => { return 50 })
+		.maxCost(level => { return 50 });
 
 	registry.create('curse_of_anti_entropy')
 		.armor()
 		.veryRare()
 		.curse()
 		.minCost(level => { return 20 })
-		.maxCost(level => { return 50 })
-
-	// registry.create('deferred_damage')
-	// 	.armor()
-	// 	.veryRare()
-	// 	.curse()
-	// 	.treasureOnly()
-	// 	.minCost(level => { return 30 })
-	// 	.maxCost(level => { return 50 })
-})
+		.maxCost(level => { return 50 });
+});

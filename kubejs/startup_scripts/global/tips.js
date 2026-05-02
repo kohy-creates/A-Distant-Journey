@@ -1,9 +1,9 @@
 global.LCETips = {
-	'botania:manasteel_ingot': ['Manasteel Ingot', 'An ingot infused with Mana, a valuable crafting material.'],
+	'twilightforest:mining_tree': ['Mining Tree', 'Slowly sucks in underground ores to its level.'],
+	'twilightforest:transformation_sapling': ['Transformation Sapling', 'Changes the surrounding biome over time to Enchanted Forest. Kind of destructive, depending on how you look at it.'],
+
 	'ars_nouveau:source_gem': ['Mana Gem', 'A gem transformed by Mana into something completely different, a valuable crafting material for magical items.'],
 	'ars_nouveau:magebloom_crop': ['Manabloom Seed', 'A seed infused with Mana, used to farm Manablooms.'],
-	'botania:terrasteel_ingot': ['Terrasteel Ingot', 'A more powerful version of a Manasteel Ingot, infused with ludicrous amounts of Mana.'],
-
 	'ars_nouveau:air_essence': ['Air Essence', 'Mana Gem imbued with elemental powers of air'],
 	'ars_nouveau:water_essence': ['Water Essence', 'Mana Gem imbued with elemental powers of water'],
 	'ars_nouveau:fire_essence': ['Fire Essence', 'Mana Gem imbued with elemental powers of fire'],
@@ -11,7 +11,29 @@ global.LCETips = {
 	'ars_nouveau:manipulation_essence': ['Manipulation Essence', 'Mana Gem imbued with powers of manipulation'],
 	'ars_nouveau:conjuration_essence': ['Conjuration Essence', 'Mana Gem imbued with powers of conjuration'],
 	'ars_nouveau:abjuration_essence': ['Abjuration Essence', 'Mana Gem imbued with powers of abjuration'],
-	'ars_elemental:anima_essence': ['Anima Essence', 'Mana Gem imbued with forces of life and death. The only essence without a rune form'],
+	'ars_elemental:anima_essence': ['Anima Essence', 'Mana Gem imbued with forces of life and death.'],
+
+	'create:andesite_alloy': ['Andesite Alloy', 'A small cube of mixed stone and bits of metal. Material for plethora of different recipes.'],
+	'create:sand_paper': ['Used to polish certain materials, refining them into something usable for more advanced recipes.'],
+	'create:red_sand_paper': ['Used to polish certain materials, making them usable for more advanced recipes, and blocks, making them slightly prettier.'],
+	'create:mechanical_bearing': ['Mechanical Bearing', 'Rotates attached structures.'],
+	'create:gantry_shaft': ['Gantry Shaft', 'Moves structures horizontally.'],
+	'create:gantry_carriage': ['Gantry Carriage', 'Carries structures along gantry shafts.'],
+	'create:pulse_extender': ['Pulse Extender', 'Extends incoming redstone signals.'],
+	'create:pulse_repeater': ['Pulse Repeater', 'Repeats incoming redstone pulses after a scheduled delay.'],
+	'create:analog_lever': ['Analog Lever', 'Outputs adjustable redstone signal strength.'],
+	'create:display_link': ['Display Link', 'Sends information to display boards.'],
+	'create:display_board': ['Display Board', 'Shows text and numbers from linked devices.'],
+	'create:redstone_link': ['Redstone Link', 'Transmits redstone signals wirelessly on set frequency.'],
+	'create:rose_quartz': ['Rose Quartz', 'Used in precision components.'],
+	'create:polished_rose_quartz': ['Polished Rose Quartz', 'Refined version of Rose Quartz for advanced recipes.'],
+	'create:cardboard_sword': ['Cardboard Sword', 'I... I don\'t know why you\'d ever craft this thing honestly...'],
+
+	'zenith:zenith': ['Zenith', 'The Infinity +1 Sword. At this point, I don\'t think anything can even *try* to stop you.'],
+
+	'botania:bergamute': ['Dampens down any sounds coming from nearby blocks or entities. Stacks multiple times for an even stronger effect.'],
+	'botania:overgrowth_seed': ['Turns Grass Blocks into Enchanted Soil when planted on them. Enchanted Soil causes functional flora planted on top of it to work faster than usual.'],
+	'botania:black_lotus': ['Throwing it into a Mana Pool will cause it to fall apart, instantly adding extra Mana to the pool.'],
 	'botania:rune_air': ['Rune of Air', 'Air Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
 	'botania:rune_water': ['Rune of Water', 'Air Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
 	'botania:rune_fire': ['Rune of Fire', 'Fire Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
@@ -19,21 +41,11 @@ global.LCETips = {
 	'botanicadds:rune_tp': ['Rune of Teleportation', 'Manipulation Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
 	'botanicadds:rune_energy': ['Rune of Energy', 'Conjuration Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
 	'botania:rune_mana': ['Rune of Mana', 'Abjuration Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
-
+	'kubejs:rune_life': ['Rune of Life', 'Anima Essence encased in Livingrock, further connected with Mana. In this form, it is more stable for use in crafting recipes.'],
+	'botania:manasteel_ingot': ['Manasteel Ingot', 'An ingot infused with Mana, a valuable crafting material.'],
+	'botania:terrasteel_ingot': ['Terrasteel Ingot', 'A more powerful version of a Manasteel Ingot, infused with ludicrous amounts of Mana.'],
 	'botania:spawner_mover': ['Life Aggregator', 'A one-time use tool that can move a singular Monster Spawner from anywhere to anywhere.'],
-
 	'botania:pure_daisy': ['Pure Daisy', 'Automatically purifies and transforms blocks in a 3x3 area around it'],
-
-	'create:andesite_alloy': ['Andesite Alloy', 'A small cube of mixed stone and bits of metal. Material for plethora of different recipes.'],
-	'create:sand_paper': ['Used to polish certain materials, refining them into something usable for more advanced recipes.'],
-	'create:red_sand_paper': ['Used to polish certain materials, making them usable for more advanced recipes, and blocks, making them slightly prettier.'],
-
-	'zenith:zenith': ['Zenith', 'The Infinity +1 Sword. At this point, I don\'t think anything can even *try* to stop you.'],
-	'create:cardboard_sword': ['Cardboard Sword', 'I... I don\'t know why you\'d ever craft this thing honestly...'],
-
-	'botania:bergamute': ['Dampens down any sounds coming from nearby blocks or entities. Stacks multiple times for an even stronger effect.'],
-	'botania:overgrowth_seed': ['Turns Grass Blocks into Enchanted Soil when planted on them. Enchanted Soil causes functional flora planted on top of it to work faster than usual.'],
-	'botania:black_lotus': ['Throwing it into a Mana Pool will cause it to fall apart, instantly adding extra Mana to the pool.'],
 
 	'alexscaves:metal_swarf': ['A ferrous sand which has reactive properties to magnetism'],
 	'alexscaves:radrock': ['An irradiated variant of stone, seems to almost pulsate at a touch'],
@@ -57,4 +69,7 @@ global.LCETips = {
 
 	'minecraft:clock': ['Tells time whenever in your inventory, a Bundle, or a Backpack.'],
 	'mythicmetals:platinum_watch': ['Tells time whenever in your inventory, a Bundle, or a Backpack.'],
+
+	'minecraft:lodestone': ['Lodestone', 'Anchors Compasses to a fixed location.'],
+	'minecraft:respawn_anchor': ['Respawn Anchor', 'Allows respawning in the Nether. Requires Glowstone to charge.'],
 }

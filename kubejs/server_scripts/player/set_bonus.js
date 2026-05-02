@@ -148,7 +148,7 @@ function removeBonus(player) {
 
 /**
  * Doing those as a function for the sake of visual clarity in this file
- * @param {Internal.Player} player 
+ * @param {Internal.Player_} player 
  */
 function tickBonus(player) {
 	if (setBonusActive(player, 'born_in_chaos_v1:dark_metal_armor')) {
@@ -172,7 +172,7 @@ function tickBonus(player) {
 	}
 	else if (setBonusActive(player, 'mythicmetals:prometheum')) {
 		const isExposedToSunlight = (player.level.getHeightmapPos("motion_blocking_no_leaves", player.block.pos) <= player.block.pos) && player.level.isDay();
-		if (isExposedToSunlight) {
+		if (isExposedToSunlight && player.level.isDay() && !player.level.isRaining()) {
 			player.addEffect(new $MobEffectInstance('kubejs:prometheum_regeneration', 4 * 20, 0));
 		}
 	}

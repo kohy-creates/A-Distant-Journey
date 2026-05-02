@@ -96,10 +96,25 @@ const enchantmentDescriptions = {
 			"level"
 		]
 	},
-	'kubejs:cowardice': {},
-	'kubejs:lucky_explorer': {},
-	'kubejs:reckless': {},
-	'kubejs:rapid_regen': {},
+	'kubejs:cowardice': {
+		base: "Increases dealt damage by {}% while above 95% health",
+		args: [
+			"12 + 6 * (level - 1)"
+		]
+	},
+	'kubejs:lucky_explorer': "Chance to find some Emeralds while running around",
+	'kubejs:reckless': {
+		base: 'Max health reduced by 40%. Increases damage dealt by {}%',
+		args: [
+			'60 + (level - 1) *  20'
+		]
+	},
+	'kubejs:rapid_regen': {
+		base: 'Increases life regeneration by {} HP/s',
+		args: [
+			'0.25 + level * 0.5'
+		]
+	},
 	'kubejs:void_strike': {
 		base: "Applies a rising damage multiplier to hit mobs (0% -> {}%).",
 		args: [
@@ -177,10 +192,7 @@ ItemEvents.tooltip(event => {
 				desc = Text.translate(`enchantment.${idSplit[0]}.${idSplit[1]}.desc`);
 			}
 
-			tooltip.add(i + 1, Text.join([
-				Text.darkGray('   ▷ '),
-				desc.darkGray()
-			]))
+			tooltip.add(i + 1, Text.join([Text.darkGray('   ▷ '), desc.darkGray()]))
 		}
 	})
 })

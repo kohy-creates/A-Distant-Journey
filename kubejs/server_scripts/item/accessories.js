@@ -28,11 +28,7 @@ ServerEvents.tags('item', event => {
 	// Every curio goes into the accessory slot
 	tags.forEach(tagId => {
 		let tag = event.get(tagId);
-		tag.getObjectIds().forEach(entry => {
-			if (entry.namespace != "backpacked") { // Except for backpacks
-				event.add('curios:accessory', entry);
-			}
-		});
+		tag.getObjectIds().forEach(entry => event.add('curios:accessory', entry));
 		tag.removeAll();
 	});
 
@@ -61,7 +57,7 @@ ServerEvents.tags('item', event => {
 		/.* aether.* cape /,
 	]);
 
-	
+
 	event.add('curios:atlas', [
 		'kubejs:map_atlas'
 	]);

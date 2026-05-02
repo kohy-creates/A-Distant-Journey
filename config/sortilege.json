@@ -126,7 +126,7 @@
 			"stack_size": 99,
 			"duration_multiplier": 1,
 			"drinking_time": 5,
-			"cooldown": 0
+			"cooldown": 10
 		},
 		"cauldron": {
 			"enable": true,

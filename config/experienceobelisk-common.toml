@@ -103,7 +103,7 @@
 	#How many hunger points Fluorescent Jelly gives the player. Set to 0 to disable eating completely. Default = 2
 	Nutrition = 1
 	#How much saturation Fluorescent Jelly gives the player. Default = 1.0
-	Saturation = 1
+	Saturation = 1.0
 
 ["Enlightened Amulet"]
 	#The range of the enlightened amulet in blocks. Accepts decimals. Default = 8.0.

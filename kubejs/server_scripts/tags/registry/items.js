@@ -486,4 +486,6 @@ ServerEvents.tags('item', tags => {
 	tags.add('c:raw_tin_ores', ['mythicmetals:raw_tin', 'kubejs:tin_dust']);
 
 	tags.remove('c:crops/cactus', ['cactus']);
+	
+	tags.add('adj:pressure_plates', [/pressure_plate$/]);
 });

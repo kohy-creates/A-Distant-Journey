@@ -7,6 +7,10 @@ const chapterMultipliers = {
 	armor: [1.0, 1.0, 1.15, 2.2, 2.2, 3.0]
 }
 
+const EntityModifications = {
+
+};
+
 // Helpers
 function getStageValue(arr, stage) {
 	if (!Array.isArray(arr)) return arr
