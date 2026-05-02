@@ -62,3 +62,16 @@ EntityEvents.death(event => {
         }
     }
 });
+
+LootJS.modifiers(event => {
+    global.bossMobs.forEach(bossId => {
+        if (bossId === 'botania:doppelganger' || bossId === 'witherstormmod:wither_storm') return;
+        event.addEntityLootModifier(bossId)
+            .pool(pool => {
+                pool.addLoot(
+                    LootEntry.of('trofers:large_pillar', 1, `{BlockEntityTag:{Trophy:'adj:trophies/${bossId.replace(':', '_')}'}}`)
+                        .when(c => c.randomChance(0.1))
+                );
+            });
+    });
+});
