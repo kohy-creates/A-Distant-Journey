@@ -226,7 +226,9 @@ ClientEvents.lang('en_us', event => {
 		'galosphere:palladium_lattice': 'Silver Bars',
 		'galosphere:palladium_ore': 'Silver Ore',
 		'galosphere:deepslate_palladium_ore': 'Deepslate Silver Ore',
-		'galosphere:raw_palladium_block': 'Raw Silver Block'
+		'galosphere:raw_palladium_block': 'Raw Silver Block',
+		
+		'overworld_quartz:overworld_quartz_ore': 'Quartz Ore',
 	};
 
 	/** @type {Record<Internal.InputItem_, string>} */

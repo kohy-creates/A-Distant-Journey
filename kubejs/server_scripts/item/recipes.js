@@ -3151,11 +3151,11 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:glyph_heal': ['majruszsdifficulty:golden_bandage', 'majruszsdifficulty:bandage', 'majruszsdifficulty:bandage', 'majruszsdifficulty:bandage', 'majruszsdifficulty:bandage', 'heart_crystals:heart_crystal'],
 		'ars_nouveau:glyph_hex': ['botania:rune_gluttony', 'botania:rune_lust', 'botania:rune_greed', 'botania:rune_wrath', 'botania:rune_sloth', 'botania:rune_envy', 'botania:rune_pride',],
 		'ars_nouveau:glyph_ignite': ['flint_and_steel', '#coals', '#coals', '#coals'],
-		'ars_nouveau:glyph_infuse': ['botania:rune_mana', 'glass_bottle', 'nether_wart', '#forge:rods/blaze'],
+		'ars_nouveau:glyph_infuse': ['botania:rune_mana', 'glass_bottle', 'nether_wart', 'blaze_rod'],
 		'ars_nouveau:glyph_intangible': ['botanicadds:rune_tp', 'phantom_membrane', 'phantom_membrane', 'phantom_membrane', 'waystones:warp_dust', 'waystones:warp_dust'],
 		'ars_nouveau:glyph_interact': ['lever', '#wooden_pressure_plates', '#buttons'],
 		'ars_nouveau:glyph_launch': ['botania:rune_air', 'slime_block', 'leather', 'leather', 'rabbit_foot',],
-		'ars_nouveau:glyph_leap': ['botania:rune_air', 'slime_block', 'miners_delight:bat_winminers_delight:bat_winminers_delight'],
+		'ars_nouveau:glyph_leap': ['botania:rune_air', 'slime_block', 'miners_delight:bat_wing', 'miners_delight:bat_wing'],
 		'ars_nouveau:glyph_lightning': ['botania:rune_air', 'botania:rune_water', 'lightning_rod', 'heart_of_the_sea'],
 		'ars_nouveau:glyph_linger': ['botanicadds:rune_tp', 'aether_redux:veridium_ingot', 'aether:zanite_block', 'blaze_rod', 'blaze_rod'],
 		'ars_nouveau:glyph_name': ['name_tag', 'ars_nouveau:magebloom_fiber', 'ars_nouveau:magebloom_fiber'],
@@ -3170,7 +3170,7 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:glyph_rotate': ['botanicadds:rune_tp', 'create:mechanical_bearing'],
 		'ars_nouveau:glyph_self': ['iron_chestplate', '#adj:pressure_plates'],
 		'ars_nouveau:glyph_sense_magic': ['botania:rune_mana', 'ars_nouveau:dowsing_rod', 'amethyst_shard', 'amethyst_shard', 'amethyst_shard'],
-		'ars_nouveau:glyph_slowfall': ['botania:rune_air', 'miners_delight:bat_wing', 'feather', 'feather', 'feather', '#forge:rods/blaze', '#forge:crops/nether_wart'],
+		'ars_nouveau:glyph_slowfall': ['botania:rune_air', 'miners_delight:bat_wing', 'feather', 'feather', 'feather', 'blaze_rod', '#forge:crops/nether_wart'],
 		'ars_nouveau:glyph_smelt': ['botania:rune_fire', 'alloy_forgery:cracked_stone_bricks_forge_controller', 'coal_block'],
 		'ars_nouveau:glyph_snare': ['botania:rune_earth', 'stone_pressure_plate', 'iron_door', 'iron_door', 'iron_door', 'iron_door'],
 		'ars_nouveau:glyph_split': ['ars_nouveau:relay_splitter', 'ars_nouveau:sourcestone', 'ars_nouveau:sourcestone', 'ars_nouveau:sourcestone'],
@@ -5963,12 +5963,12 @@ ServerEvents.recipes((event) => {
 		event.remove({ output: item });
 	});
 
-	
+
 
 	alloyForgeRecipe(
 		[
 			['mythicmetals:palladium_ingot', 1],
-			['mythicmetals:gold_ingot', 1],
+			['gold_ingot', 1],
 			['twilightforest:fiery_blood', 2]
 		],
 		['twilightforest:fiery_ingot', 2],
@@ -8211,7 +8211,7 @@ ServerEvents.recipes((event) => {
 
 	// Immersive Paintings
 	event.recipes.botania.mana_infusion('immersive_paintings:painting', 'painting').mana(15000).id('adj:magic_painting');
-	event.recipes.botania.mana_infusion('2x immersive_paintings:graffiti', 'quark:glass_item_frame').mana(15000).id('adj:magic_painting');
+	event.recipes.botania.mana_infusion('2x immersive_paintings:graffiti', 'quark:glass_item_frame').mana(15000).id('adj:graffiti');
 
 	// Aperture Innovations ~ Portal Guns
 	function portalGunRecipe(dyes, variant) {
@@ -8220,7 +8220,7 @@ ServerEvents.recipes((event) => {
 			Item.of('aperture_innovations:portal_gun', (variant) ? { variant: `aperture_innovations:${variant}` } : {}),
 			'iron_block',
 			[
-				event.recipes.create.deploying(inter, [inter, Item.of('gravitite_ingot')]),
+				event.recipes.create.deploying(inter, [inter, Item.of('aether:gravitite_ingot')]),
 				event.recipes.create.deploying(inter, [inter, Item.of(dyes[0])]),
 				event.recipes.create.deploying(inter, [inter, Item.of(dyes[1])]),
 				event.recipes.create.pressing(inter, inter),

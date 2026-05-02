@@ -452,8 +452,13 @@ ServerEvents.tags('item', tags => {
 		'c:raw_palladium_ores',
 		'c:palladium_nuggets',
 		'c:palladium_blocks',
+		'forge:ores/palladium',
+		'forge:raw_materials/palladium',
+		'forge:ingots/palladium',
+		'forge:nuggets/palladium',
+		'forge:storage_blocks/raw_palladium',
 	];
-	palladiumTags.forEach(tag => tags.remove(tag, [/galosphere/]));
+	palladiumTags.forEach(tag => tags.remove(tag, ['@galosphere']));
 
 	tags.add('adj:silver_ores', [
 		'galosphere:palladium_ore',

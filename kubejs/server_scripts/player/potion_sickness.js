@@ -7,7 +7,6 @@ NativeEvents.onEvent('highest', false, $LivingHealEvent, /** @param {Internal.Li
 	if (entity instanceof $Player) {
 		let healReceivedAttr = entity.getAttributeValue($ALObjects.Attributes.HEALING_RECEIVED.get());
 		let baseHealPotAmount = (50.0) * healReceivedAttr;
-		console.log(event.getAmount())
 		if (event.getAmount() % baseHealPotAmount == 0) {
 			if (entity.hasEffect('kubejs:potion_sickness')) {
 				event.setCanceled(true);
