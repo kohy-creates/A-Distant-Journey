@@ -311,19 +311,6 @@ const itemsToTooltip = [
 		]
 	},
 	{
-		item: "botania:diluted_pool",
-		summary: [
-			"_Mana storage for the masses. ",
-			"The _Mana Pool_ is, simply put, a storage for _Mana_.",
-			"It accepts Mana from _Mana Spreaders_, and any adjacent ones will fill from it automatically.",
-			"All _Functional Flora_ require a nearby _Mana Pool_ to draw power from.",
-			"Making a _Mana Pool_.",
-			"Tossing certain resources into a _Mana Pool_ will infuse them with _Mana_ from the pool, turning them into more magically-useful forms, like _Blue Ingots_ or _Infused Pearls_.",
-			"A _Wand of the Forest_ can read the _Mana_ levels in a pool, much like a _Mana Spreader_.",
-			"A _Redstone Comparator_ can also output a signal based on percentage full...."
-		]
-	},
-	{
 		item: /botania:.*dreadthorn.*/,
 		summary: [
 			"_Damages adult animals. ",
@@ -395,27 +382,16 @@ const itemsToTooltip = [
 			"_Ignites and speeds up Furnaces. ",
 			"Conversely to its _Generating_ counterpart, the _Exoflame_ uses _Mana_ to generate heat.",
 			"Any _Furnaces_ near an active _Exoflame_ are fueled and given a speed boost.",
+			"A single _Exoflame_ can also power up up to _5 nearby Blaze Burners_, or keep 1 _Superheated_ without the need to feed it Blaze Cookies.",
 			"_But we should be going nowhere fast_."
-		]
-	},
-	{
-		item: "botania:fabulous_pool",
-		summary: [
-			"_Mana storage for the masses. ",
-			"The _Mana Pool_ is, simply put, a storage for _Mana_.",
-			"It accepts Mana from _Mana Spreaders_, and any adjacent ones will fill from it automatically.",
-			"All _Functional Flora_ require a nearby _Mana Pool_ to draw power from.",
-			"Making a _Mana Pool_.",
-			"Tossing certain resources into a _Mana Pool_ will infuse them with _Mana_ from the pool, turning them into more magically-useful forms, like _Blue Ingots_ or _Infused Pearls_.",
-			"A _Wand of the Forest_ can read the _Mana_ levels in a pool, much like a _Mana Spreader_.",
-			"A _Redstone Comparator_ can also output a signal based on percentage full...."
 		]
 	},
 	{
 		item: /botania:.*fallen_kanade.*/,
 		summary: [
-			"_Powerful, short range regeneration. ",
-			"The _Fallen Kanade_ is a flower with angelic properties; it creates an aura of healing from _Mana_ to apply a regeneration effect to any _players_ and _tamed pets_ nearby.",
+			"_Powerful, medium range regeneration._",
+			"The _Fallen Kanade_ is a flower with angelic properties; it creates an aura of healing from _Mana_ to apply a healing effect to _any friendly mob_ nearby, regenerating _2 HP/s_.",
+			"It also passively _reduces harmful effect duration_ of healed mobs by roughly 25% by making them tick down faster.",
 			"_Hand Sonic, version four_."
 		]
 	},
@@ -662,7 +638,7 @@ const itemsToTooltip = [
 		]
 	},
 	{
-		item: "botania:mana_pool",
+		item: ["botania:mana_pool", "botania:diluted_pool", "botania:fabulous_pool"],
 		summary: [
 			"_Mana storage for the masses. ",
 			"The _Mana Pool_ is, simply put, a storage for _Mana_.",
