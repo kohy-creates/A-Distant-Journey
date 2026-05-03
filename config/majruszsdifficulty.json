@@ -400,7 +400,7 @@
         "sidekick_types": [
           {
             "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:mob_groups/skeleton_sidekick"
+            "equipment": "minecraft:"
           }
         ]
       },
@@ -426,7 +426,7 @@
         ]
       },
       "spiritof_chaos": {
-        "required_game_stage": "master",
+        "required_game_stage": "chapter_5",
         "chance": 0.15,
         "is_scaled_by_crd": true,
         "leader_types": [
@@ -552,7 +552,7 @@
         ],
         "sidekicks_count": {
           "min": 2,
-          "max": 4
+          "max": 3
         },
         "sidekick_types": [
           {
@@ -560,15 +560,7 @@
             "equipment": "majruszsdifficulty:undead_army/wave_2_mob"
           },
           {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob"
-          },
-          {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob"
-          },
-          {
-            "type": "minecraft:husk",
             "equipment": "majruszsdifficulty:undead_army/wave_2_mob"
           }
         ]
@@ -595,85 +587,7 @@
         ]
       }
     },
-    "mobs_apply_effects": [
-      {
-        "required_game_stage": "normal",
-        "chance": 0.5,
-        "is_scaled_by_crd": true,
-        "entity_type": "minecraft:spider",
-        "effect": {
-          "id": "minecraft:poison",
-          "amplifier": 0,
-          "duration": 4.0
-        }
-      },
-      {
-        "required_game_stage": "normal",
-        "chance": 0.5,
-        "is_scaled_by_crd": true,
-        "entity_type": "minecraft:slime",
-        "effect": {
-          "id": "minecraft:slowness",
-          "amplifier": 0,
-          "duration": 7.0
-        }
-      },
-      {
-        "required_game_stage": "normal",
-        "chance": 0.75,
-        "is_scaled_by_crd": true,
-        "entity_type": "minecraft:phantom",
-        "effect": {
-          "id": "minecraft:weakness",
-          "amplifier": 0,
-          "duration": 7.0
-        }
-      },
-      {
-        "required_game_stage": "normal",
-        "chance": 0.25,
-        "is_scaled_by_crd": true,
-        "entity_type": "minecraft:zombie",
-        "effect": {
-          "id": "majruszsdifficulty:bleeding",
-          "amplifier": 1,
-          "duration": 20.0
-        }
-      },
-      {
-        "required_game_stage": "normal",
-        "chance": 0.25,
-        "is_scaled_by_crd": true,
-        "entity_type": "minecraft:husk",
-        "effect": {
-          "id": "majruszsdifficulty:bleeding",
-          "amplifier": 1,
-          "duration": 20.0
-        }
-      },
-      {
-        "required_game_stage": "normal",
-        "chance": 0.25,
-        "is_scaled_by_crd": false,
-        "entity_type": "born_in_chaos_v1:skeleton_thrasher",
-        "effect": {
-          "id": "kubejs:armor_shred",
-          "amplifier": 1,
-          "duration": 40.0
-        }
-      },
-      {
-        "required_game_stage": "normal",
-        "chance": 0.25,
-        "is_scaled_by_crd": false,
-        "entity_type": "born_in_chaos_v1:skeleton_thrasher_not_despawn",
-        "effect": {
-          "id": "kubejs:armor_shred",
-          "amplifier": 1,
-          "duration": 20.0
-        }
-      }
-    ],
+    "mobs_apply_effects": [],
     "mobs_spawn_stronger": {
       "is_enabled": false,
       "health_bonus": {
