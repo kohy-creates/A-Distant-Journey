@@ -1,24 +1,16 @@
-function chance(p) {
-	if (Math.random() * 100 <= p) {
-		return true;
+const MutantMonsters = {
+	mutantMap: {
+		'minecraft:zombie': 'mutantmonsters:mutant_zombie',
+		'born_in_chaos_v1:decaying_zombie': 'mutantmonsters:mutant_zombie',
+		'born_in_chaos_v1:barrel_zombie': 'mutantmonsters:mutant_zombie',
+		'born_in_chaos_v1:zombie_fisherman': 'mutantmonsters:mutant_zombie',
+		'born_in_chaos_v1:zombie_lumberjack': 'mutantmonsters:mutant_zombie',
+		'minecraft:skeleton': 'mutantmonsters:mutant_skeleton',
+		'born_in_chaos_v1:skeleton_thrasher': 'mutantmonsters:mutant_skeleton',
+		'minecraft:enderman': 'mutantmonsters:mutant_enderman',
+		'minecraft:creeper': 'mutantmonsters:mutant_creeper',
+		'born_in_chaos_v1:phantom_creeper': 'mutantmonsters:mutant_creeper',
 	}
-	return false;
-}
-
-/**
- * @type {Record<Special.EntityType, Special.EntityType>}
- */
-const mutantMap = {
-	'minecraft:zombie': 'mutantmonsters:mutant_zombie',
-	'born_in_chaos_v1:decaying_zombie': 'mutantmonsters:mutant_zombie',
-	'born_in_chaos_v1:barrel_zombie': 'mutantmonsters:mutant_zombie',
-	'born_in_chaos_v1:zombie_fisherman': 'mutantmonsters:mutant_zombie',
-	'born_in_chaos_v1:zombie_lumberjack': 'mutantmonsters:mutant_zombie',
-	'minecraft:skeleton': 'mutantmonsters:mutant_skeleton',
-	'born_in_chaos_v1:skeleton_thrasher': 'mutantmonsters:mutant_skeleton',
-	'minecraft:enderman': 'mutantmonsters:mutant_enderman',
-	'minecraft:creeper': 'mutantmonsters:mutant_creeper',
-	'born_in_chaos_v1:phantom_creeper': 'mutantmonsters:mutant_creeper',
 }
 
 EntityEvents.checkSpawn(event => {
@@ -28,15 +20,15 @@ EntityEvents.checkSpawn(event => {
 		let server = event.getServer();
 		let chapter = parseInt(String(server.persistentData.chapters.current_stage).replace('chapter_', ''));
 
-		let chanceToSpawn;
+		let shouldReplaceSpawn;
 		if (chapter >= 2) {
-			chanceToSpawn = (server.isHardcore()) ? chance(1.5) : chance(0.75);
+			shouldReplaceSpawn = (server.isHardcore()) ? global.ifRandomChance(1.5) : global.ifRandomChance(0.75);
 		}
 		else if (server.isHardcore()) {
-			chanceToSpawn = (chapter == 1) ? chance(0.75) : chance(0.25);
+			shouldReplaceSpawn = (chapter == 1) ? global.ifRandomChance(0.75) : global.ifRandomChance(0.25);
 		}
 
-		if (chanceToSpawn) {
+		if (shouldReplaceSpawn) {
 			let level = event.getLevel();
 			let pos = entity.blockPosition(); // BlockPos
 
@@ -61,7 +53,7 @@ EntityEvents.checkSpawn(event => {
 			// to prevent suffocating
 			if (clear) {
 				server.runCommandSilent(
-					`summon ${mutantMap[type]} ${event.x} ${event.y} ${event.z}`
+					`execute in ${event.level.dimension.toString()} run summon ${MutantMonsters.mutantMap[type]} ${event.x} ${event.y} ${event.z}`
 				);
 				server.scheduleInTicks(1, () => entity.remove("discarded"));
 				event.cancel();

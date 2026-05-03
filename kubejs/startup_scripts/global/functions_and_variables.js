@@ -37,7 +37,7 @@ global.armorSuffixes = {
 
 /**
  * Returns the ID of the biome an entity is standing in
- * @param {$Entity_} entity 
+ * @param {Internal.Entity_} entity 
  * @returns {String}
  */
 global.getBiome = function (entity) {
@@ -45,9 +45,11 @@ global.getBiome = function (entity) {
 }
 
 /**
+ * Broadcasts a message to every player on the server.
+ * Since it does require a server argument, it is a server-side only function.
  * @type {void}
- * @param {$MinecraftServer_} server 
- * @param {$ComponentKJS_} msg 
+ * @param {Internal.MinecraftServer_} server 
+ * @param {Internal.ComponentKJS_} msg 
  */
 global.broadcast = function (server, msg) {
 	server.players.forEach(player => {
@@ -106,26 +108,50 @@ global.getEntitiesInRadius = function (world, x, y, z, radius) {
 const $ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey");
 const DAMAGE_TYPE = $ResourceKey.createRegistryKey("damage_type");
 const $DamageSource = Java.loadClass('net.minecraft.world.damagesource.DamageSource');
-global.getDamageSource = function (/** @type {Internal.Level}*/ level, /** @type {Internal.DamageType_}*/ damageType, projectile, thrower) {
+/**
+ * Returns a damage type instance by its ResourceLocation.
+ * @param {Internal.Level_} level 
+ * @param {Internal.DamageType_} damageType 
+ * @param {Internal.Entity_|null} projectile 
+ * @param {Internal.Entity_|null} thrower 
+ * @returns 
+ */
+global.getDamageSource = function (level, damageType, projectile, thrower) {
 	const resourceKey = $ResourceKey.create(DAMAGE_TYPE, Utils.id(damageType));
 	const holder = level.registryAccess().registryOrThrow(DAMAGE_TYPE).getHolderOrThrow(resourceKey);
 	return new $DamageSource(holder, projectile, thrower);
 };
 
 /**
- * Returns a random number between min (inclusive) and max (exclusive)
+ * Returns a random number between min (inclusive) and max (inclusive)
+ * @param {number} min 
+ * @param {number} max 
+ * @returns {number}
  */
 global.getRandomNumber = function (min, max) {
-	return Math.random() * (max - min) + min;
+	return Math.random() * (max - min + 1) + min;
 };
 
 /**
  * Returns a random integer between min (inclusive) and max (inclusive).
+ * @param {integer} min 
+ * @param {integer} max 
+ * @returns {number}
  */
 global.getRandomInt = function (min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+/**
+ * Returns a true at a specified chance.
+ * Chance is a number from 0 to 100.
+ * @param {number} chance 
+ * @returns {boolean}
+ */
+global.ifRandomChance = function (chance) {
+	return (Math.random() <= chance / (chance >= 1) ? 100 : 1);
 };
 
 /**
@@ -155,6 +181,11 @@ global.zenithSwords = [
 	{ item: "zenith:zenith", color: 0xb2ffb4, rotation_center_height: 0.125, rotation: 0.785, scale: 7.5, trail_width: 5 }
 ];
 
+/**
+ * Transforms uncapitalized strings To Title Case.
+ * @param {string} str 
+ * @returns {string}
+ */
 global.toTitleCase = function (str) {
 	return str.replace(
 		/\w\S*/g,
@@ -162,6 +193,55 @@ global.toTitleCase = function (str) {
 	);
 };
 
+/**
+ * Replaces all occurences of a string with whatever you want to.
+ * Because for some reason JS' 'replaceAll' and 'replace' were a bit wonky.
+ * @param {string} str 
+ * @param {string} find 
+ * @param {string} replace 
+ * @returns {string}
+ * @example
+ * const text = 'Cherry Cherry Banana Cherry';
+ * const afterReplace = global.textReplaceAll(text, 'Cherry', 'Apple');
+ * // returns 'Apple Apple Banana Apple'
+ */
 global.textReplaceAll = function (str, find, replace) {
 	return str.replace(new RegExp(find.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), replace);
 };
+
+/**
+ * Returns a randomly picked object from a weigted list.
+ * @param {Record<object, number>} weightMap 
+ * @returns {object}
+ * @example
+ * entity.setItemSlot('mainhand', global.weightedRandom({
+ * 		'mcdw:bow_bonebow': 10,
+ *		'mcwd:bow_twisting_vine_bow': 4,
+ *		'mcwd:bow_twisting_weeping_bow': 4,
+ *	}));
+ */
+global.weightedRandom = function (weightMap) {
+	let entries = Object.keys(weightMap);
+	let totalWeight = 0;
+	for (let i = 0; i < entries.length; i++) {
+		totalWeight += weightMap[entries[i]];
+	}
+	let random = Math.random() * totalWeight;
+	for (let j = 0; j < entries.length; j++) {
+		let key = entries[j];
+		let weight = weightMap[key];
+		if (random < weight) return key;
+		random -= weight;
+	}
+};
+
+/**
+ * Returns the current chapter the player/server is on.
+ * Since it requires a server argument, it is server-side only.
+ * @param {Internal.MinecraftServer_} server 
+ */
+global.getCurrentChapter = function (server) {
+	let chapters = server.persistentData.chapters || {};
+	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""));
+	return currentStage;
+}

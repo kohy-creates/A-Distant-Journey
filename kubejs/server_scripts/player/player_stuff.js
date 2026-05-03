@@ -598,7 +598,7 @@ EntityEvents.death(event => {
 		// Accessories
 		if (player.isCuriosEquipped('kubejs:kiketsu_card')) {
 			if (Math.random() <= 0.12) {
-				dropItem(weightedRandom({
+				dropItem(global.weightedRandom({
 					'gold_nugget': 100,
 					'iron_nugget': 170,
 					'mythicmetals:copper_nugget': 300,
