@@ -493,4 +493,6 @@ ServerEvents.tags('item', tags => {
 	tags.remove('c:crops/cactus', ['cactus']);
 	
 	tags.add('adj:pressure_plates', [/pressure_plate$/]);
+
+	tags.add('witherstormmod:command_block_tools', 'zenith:zenith');
 });
