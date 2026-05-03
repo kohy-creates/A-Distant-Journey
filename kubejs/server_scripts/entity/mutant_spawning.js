@@ -16,7 +16,7 @@ const MutantMonsters = {
 EntityEvents.checkSpawn(event => {
 	const entity = event.getEntity();
 	const type = entity.getType();
-	if (event.getType().toString() == 'NATURAL' && mutantMap[type]) {
+	if (event.getType().toString() == 'NATURAL' && MutantMonsters.mutantMap[type]) {
 		let server = event.getServer();
 		let chapter = parseInt(String(server.persistentData.chapters.current_stage).replace('chapter_', ''));
 

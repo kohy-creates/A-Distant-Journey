@@ -328,7 +328,7 @@ ServerEvents.recipes((event) => {
 		'jumbofurnace:jumbo_smelting',
 		'morered:soldering',
 		'ars_nouveau:armor_upgrade',
-		'ars_nouveau:enchantment_apparatus'
+		'ars_nouveau:enchantment'
 	];
 	removeRecipeByType.forEach(recipeType => {
 		event.remove({ type: recipeType })
@@ -8220,7 +8220,7 @@ ServerEvents.recipes((event) => {
 			Item.of('aperture_innovations:portal_gun', (variant) ? { variant: `aperture_innovations:${variant}` } : {}),
 			'iron_block',
 			[
-				event.recipes.create.deploying(inter, [inter, Item.of('aether:gravitite_ingot')]),
+				event.recipes.create.deploying(inter, [inter, Item.of('aether_redux:gravitite_ingot')]),
 				event.recipes.create.deploying(inter, [inter, Item.of(dyes[0])]),
 				event.recipes.create.deploying(inter, [inter, Item.of(dyes[1])]),
 				event.recipes.create.pressing(inter, inter),
@@ -8233,7 +8233,7 @@ ServerEvents.recipes((event) => {
 	}
 
 	portalGunRecipe(['orange_dye', 'blue_dye']);
-	portalGunRecipe(['light_blue', 'blue_dye'], 'atlas');
+	portalGunRecipe(['light_blue_dye', 'blue_dye'], 'atlas');
 	portalGunRecipe(['red_dye', 'yellow_dye'], 'pbody');
 	portalGunRecipe(['lime_dye', 'green_dye'], 'reloaded');
 });

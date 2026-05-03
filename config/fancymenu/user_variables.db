@@ -92,7 +92,7 @@ variable {
 
 variable {
   name = hud.hunger_level
-  value = 195
+  value = 200
   reset_on_launch = false
 }
 
@@ -116,7 +116,7 @@ variable {
 
 variable {
   name = hud.saturation_level
-  value = 95
+  value = 100
   reset_on_launch = false
 }
 

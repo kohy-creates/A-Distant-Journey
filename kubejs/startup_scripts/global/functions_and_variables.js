@@ -151,7 +151,7 @@ global.getRandomInt = function (min, max) {
  * @returns {boolean}
  */
 global.ifRandomChance = function (chance) {
-	return (Math.random() <= chance / (chance >= 1) ? 100 : 1);
+	return (Math.random() <= chance / 100);
 };
 
 /**
