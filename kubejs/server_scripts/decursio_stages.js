@@ -47,9 +47,9 @@ const DecursioStages = {
 			'darkVortexSpawn': true,
 			'bonescallerSpawn': true,
 			'doPatrolSpawning': true,
+			'doInsomnia': true,
 		},
 		'chapter_2': {
-			'doInsomnia': true,
 			'fallenChaosKnightSpawn': true,
 			'spiritOfChaosSpawn': true,
 			'zombieClownSpawn': true,
@@ -87,14 +87,14 @@ const DecursioStages = {
 		'chapter_3': [
 			global.announcementMsg('The ancient spirits of light have been released', global.messageColors.difficultyIncrease),
 			global.announcementMsg('Dreams of a different realm start to materialize...', global.messageColors.newDimension),
-			global.announcementMsg('Two legendary ores bless your other dimensions', global.messageColors.newOre)
+			global.announcementMsg('Two legendary ores bless other dimensions', global.messageColors.newOre)
 		],
 		'chapter_4': [
 			global.announcementMsg('The boundary between dreams and nigthmares lessens...', global.messageColors.difficultyIncrease),
-			global.announcementMsg('Awakened Ender Pearls start to twitch', global.messageColors.newDimension)
+			global.announcementMsg('Awakened Ender Pearls start to twitch...', global.messageColors.newDimension)
 		],
 		'chapter_5': [
-			global.announcementMsg('A withered growl can be heard from across the realms...', global.messageColors.difficultyIncrease),
+			global.announcementMsg('A withered growl can be heard across all realms...', global.messageColors.difficultyIncrease),
 			global.announcementMsg('A metal defying reality manifests deep underground', global.messageColors.newOre)
 		]
 	},
