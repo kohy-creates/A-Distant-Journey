@@ -117,7 +117,7 @@ const EntityModifications = {
 				case 'minecraft:villager':
 				case 'minecraft:wandering_trader':
 				case 'born_in_chaos_v1:nightmare_stalker': {
-					scaleEntity(entity, currentStage);
+					EntityModifications._logic.scaleEntity(entity, currentStage);
 					break;
 				}
 				case 'minecraft:warden': {
