@@ -34,12 +34,15 @@ ServerEvents.tags('item', event => {
 
 	event.remove('curios:back', [
 		'#elytraslot:elytra',
-		/.*aether.*:.*_cape/,
+		'#aether:accessories_capes',
 		'accents:wings',
 		'accents:bandolier',
 		'accents:sheathed_katana',
 		'accents:item_satchel',
 	]);
+
+	event.removeAll('accents:trinkets/back');
+	event.removeAll('aether:accessories_capes');
 
 	event.remove('curios:ring', [
 		'botanicadds:aura_ring_gaia',
@@ -54,7 +57,8 @@ ServerEvents.tags('item', event => {
 		'accents:bandolier',
 		'accents:sheathed_katana',
 		'accents:item_satchel',
-		/.* aether.* cape /,
+		/.*aether.*:.*_cape$/,
+		/.*aether.*:.*_cloak$/
 	]);
 
 
