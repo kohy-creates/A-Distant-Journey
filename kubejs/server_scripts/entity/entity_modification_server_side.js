@@ -95,7 +95,7 @@ const EntityModifications = {
 				armor += (armor * size);
 			}
 			if (global.bossMobs.includes(type)) {
-				health = this.scaleBossHP(entity, server);
+				health = this.scaleBossHP(entity, health, server);
 			}
 			this.setEntityAttributes(entity, health, damage, armor)
 		}
@@ -125,8 +125,8 @@ const EntityModifications = {
 					break;
 				}
 				case 'minecraft:wither': {
-					server.runCommand(`/scale set pehkui:hitbox_width 3.5 ${uuid}`);
-					server.runCommand(`/scale set pehkui:hitbox_height 1.5 ${uuid}`);
+					server.runCommand(`/scale set pehkui:hitbox_width 6 ${uuid}`);
+					server.runCommand(`/scale set pehkui:hitbox_height 2.5 ${uuid}`);
 					break;
 				}
 			}
