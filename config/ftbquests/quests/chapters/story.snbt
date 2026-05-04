@@ -40,7 +40,7 @@
 			image: "adj:textures/texts/chapter_2.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 28.5d
+			x: 29.5d
 			y: 16.0d
 		}
 		{
@@ -49,8 +49,8 @@
 			image: "adj:textures/texts/chapter_3.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 23.0d
-			y: 25.5d
+			x: 22.5d
+			y: 26.0d
 		}
 		{
 			height: 5.0d
@@ -237,7 +237,7 @@
 			image: "aether:block/utility/altar_side"
 			rotation: 0.0d
 			width: 1.75d
-			x: 28.5d
+			x: 27.0d
 			y: 13.0d
 		}
 		{
@@ -298,7 +298,7 @@
 			image: "aether:block/construction/enchanted_gravitite"
 			rotation: 45.0d
 			width: 1.75d
-			x: 31.0d
+			x: 29.5d
 			y: 13.0d
 		}
 		{
@@ -2019,71 +2019,6 @@
 			y: 18.0d
 		}
 		{
-			dependencies: ["574DD3FD26A23CDE"]
-			description: ["&l&7HINT:&r Tools that don't originate from The Aether are less efficient in that dimension."]
-			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "aether:skyroot_pickaxe"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "34A59C4497FDDB7F"
-			subtitle: "Craft any Skyroot Tool and slowly climb up the progression ladder. Again"
-			tasks: [{
-				id: "08257CC485AC63DF"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "aether:skyroot_sword"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "aether:skyroot_shovel"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "aether:skyroot_pickaxe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "aether:skyroot_axe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "aether:skyroot_hoe"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				title: "Any Skyroot Tool"
-				type: "item"
-			}]
-			title: "Back to the (Sky)Roots"
-			x: 25.5d
-			y: 13.0d
-		}
-		{
 			dependencies: ["6AAB7BBD64FB4562"]
 			id: "03DC59E95C1B2EB0"
 			subtitle: "Create Hallowed Alloy. Any resemblance to other games is *purely* a coincidence"
@@ -2157,7 +2092,7 @@
 				type: "item"
 			}]
 			title: "Isn't It Zanite Pick?"
-			x: 27.0d
+			x: 25.5d
 			y: 11.5d
 		}
 		{
@@ -2221,7 +2156,7 @@
 				type: "item"
 			}]
 			title: "Heavenforged"
-			x: 30.0d
+			x: 28.5d
 			y: 11.5d
 		}
 		{
@@ -2481,11 +2416,11 @@
 				type: "item"
 			}]
 			title: "Not Quite Enchanting"
-			x: 28.5d
+			x: 27.0d
 			y: 13.0d
 		}
 		{
-			dependencies: ["34A59C4497FDDB7F"]
+			dependencies: ["574DD3FD26A23CDE"]
 			icon: {
 				Count: 1
 				id: "aether_redux:infused_veridium_pickaxe"
@@ -2556,6 +2491,7 @@
 							]
 						}
 					}
+					title: "Any Veridium Tool"
 					type: "item"
 				}
 				{
@@ -2565,11 +2501,11 @@
 				}
 			]
 			title: "Ambrosial Infusion"
-			x: 25.5d
-			y: 11.5d
+			x: 24.0d
+			y: 14.5d
 		}
 		{
-			dependencies: ["34A59C4497FDDB7F"]
+			dependencies: ["574DD3FD26A23CDE"]
 			id: "3B047A7072164813"
 			subtitle: "Get a Zanite Gemstone"
 			tasks: [{
@@ -2578,7 +2514,7 @@
 				type: "item"
 			}]
 			title: "Angelic Hardware"
-			x: 27.0d
+			x: 25.5d
 			y: 13.0d
 		}
 		{
@@ -2593,7 +2529,7 @@
 				type: "item"
 			}]
 			title: "Cold as Ice"
-			x: 30.0d
+			x: 28.5d
 			y: 14.5d
 		}
 		{
@@ -2657,7 +2593,7 @@
 				}
 			]
 			title: "Defying Gravity"
-			x: 31.0d
+			x: 29.5d
 			y: 13.0d
 		}
 		{
@@ -2695,7 +2631,7 @@
 			hide_dependency_lines: false
 			hide_until_deps_complete: true
 			id: "3973363A1DC79F53"
-			subtitle: "Mine out a Ruby"
+			subtitle: "Go mine some rubies"
 			tasks: [{
 				id: "0F415EE3B310B62E"
 				item: "rediscovered:ruby"
@@ -4026,7 +3962,7 @@
 				}
 			]
 			title: "Life Surge"
-			x: 27.5d
+			x: 26.0d
 			y: 14.5d
 		}
 		{

@@ -50,6 +50,7 @@ const OnHitDebuffConfig = [
 EntityEvents.hurt('player', event => {
 	const player = event.getPlayer();
 	const attacker = event.getSource().getActual();
+	if (!attacker) return;
 	const type = attacker.type;
 
 	let chosenEntry;

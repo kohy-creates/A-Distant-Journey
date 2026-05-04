@@ -706,8 +706,8 @@ const RemovedItems = {
 		'waxed:cupric_wax_block',
 		'waxed:ender_candle',
 		'waxed:cupric_candle',
-
-
+		'waxed:waxed_arid_sand',
+		'waxed:waxed_red_arid_sand'
 	]
 };
 

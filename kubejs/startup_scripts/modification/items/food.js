@@ -26,6 +26,7 @@ ItemEvents.modification(event => {
 				// Replace Comfort effect with Nourishment
 				// Backport from FD 1.3.0 until I update and all addons do as well
 				let replaceComfortWithNourishment = false;
+				let containsNourishment = false;
 				/**
 				 * @type {Internal.MobEffectInstance_}
 				 */
@@ -36,9 +37,12 @@ ItemEvents.modification(event => {
 						replaceComfortWithNourishment = true;
 						comfortInstance = instance;
 						comfortChance = entry.getSecond();
-					};
+					}
+					else if (instance.getEffect().descriptionId === 'effect.farmersdelight.nourishment') {
+						containsNourishment = true;
+					}
 				});
-				if (replaceComfortWithNourishment) {
+				if (replaceComfortWithNourishment && !containsNourishment) {
 					food.removeEffect('farmersdelight:comfort');
 					food.effect(nourishment, comfortInstance.getDuration(), comfortInstance.getAmplifier(), comfortChance);
 				}
@@ -105,9 +109,6 @@ ItemEvents.modification(event => {
 		})
 	});
 
-	/**
-	 * @type {InputItem_[]}
-	 */
 	const rawFish = [
 		'beef',
 		'porkchop',

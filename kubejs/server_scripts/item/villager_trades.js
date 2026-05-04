@@ -1,7 +1,7 @@
 MoreJSEvents.wandererTrades(event => {
 
 	function emeraldTrade(item, count) {
-		return VillagerUtils.createSimpleTrade(Item.of(item, count), 'emerald').maxUses(6);
+		return VillagerUtils.createSimpleTrade(Item.of(item, count), 'emerald').maxUses(999);
 	}
 
 	let wanderingTraderTrades = [
@@ -10,26 +10,21 @@ MoreJSEvents.wandererTrades(event => {
 			VillagerUtils.createSimpleTrade(Item.of('minecraft:potion', '{Potion:"minecraft:water"}'), 'emerald').maxUses(3),
 			emeraldTrade('minecraft:paper', 14),
 			emeraldTrade('minecraft:bread', 4),
-			emeraldTrade('minecraft:stick', 24),
 			emeraldTrade('minecraft:sweet_berries', 12),
-			VillagerUtils.createSimpleTrade('1x minecraft:golden_apple', '10x minecraft:emerald').maxUses(2),
-			VillagerUtils.createSimpleTrade('15x minecraft:emerald', 'terra_curio:extendo_grip').maxUses(2),
+			VillagerUtils.createSimpleTrade('1x minecraft:golden_apple', '9x minecraft:emerald').maxUses(3),
+			VillagerUtils.createSimpleTrade('15x minecraft:emerald', 'terra_curio:extendo_grip').maxUses(4),
 			emeraldTrade('minecraft:potato', 20),
-			emeraldTrade('minecraft:iron_ingot', 5),
-			emeraldTrade('minecraft:gold_ingot', 3),
-			emeraldTrade('minecraft:carrot', 20),
+			emeraldTrade('minecraft:iron_ingot', 4),
 			emeraldTrade('minecraft:beetroot_soup', 1),
-			emeraldTrade('minecraft:rabbit_foot', 1),
 			emeraldTrade('minecraft:rotten_flesh', 40),
-			emeraldTrade('mythicmetals:tin_ingot', 4),
-			emeraldTrade('amethyst_shard', 8),
-			emeraldTrade('create:andesite_alloy', 8),
-			emeraldTrade('coal', 12),
+			emeraldTrade('amethyst_shard', 7),
+			emeraldTrade('coal', 11),
+			VillagerUtils.createSimpleTrade('3x emerald', '25x wallpapers:primary_wallpaper_roll').maxUses(999)
 		],
 		[
-			VillagerUtils.createSimpleTrade(['minecraft:book', '6x minecraft:emerald'], 'kubejs:enchanters_guide').maxUses(1),
-			VillagerUtils.createSimpleTrade('12x minecraft:emerald', 'quark:diamond_heart').maxUses(1),
-			VillagerUtils.createSimpleTrade('20x minecraft:emerald', 'artifacts:crystal_heart').maxUses(1),
+			VillagerUtils.createSimpleTrade(['minecraft:book', '5x minecraft:emerald'], 'kubejs:enchanters_guide').maxUses(1),
+			VillagerUtils.createSimpleTrade('38x minecraft:emerald', 'quark:diamond_heart').maxUses(1),
+			VillagerUtils.createSimpleTrade('24x minecraft:emerald', 'artifacts:crystal_heart').maxUses(1),
 		]
 	];
 
@@ -307,4 +302,4 @@ MoreJSEvents.villagerTrades(event => {
 	newBasicTrade('fletcher', 3, '7x emerald', '14x alexsmobs:roadrunner_feather');
 	newBasicTrade('fletcher', 3, '7x emerald', '24x quark:torch_arrow');
 
-})
+});

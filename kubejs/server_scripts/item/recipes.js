@@ -5957,13 +5957,34 @@ ServerEvents.recipes((event) => {
 		'twilightforest:ironwood_shovel',
 		'twilightforest:ironwood_pickaxe',
 		'twilightforest:fiery_ingot',
-
 	];
 	twilightItemsToRemoveRecipes.forEach(item => {
 		event.remove({ output: item });
 	});
 
+	function fieryItemRecipe(input, output) {
+		event.recipes.ars_nouveau.enchanting_apparatus(
+			[
+				'twilightforest:fiery_ingot',
+				'twilightforest:fiery_ingot',
+				'botania:rune_fire',
+				'netherrack',
+				'netherrack',
+				'netherrack'
+			],
+			input,
+			output,
+			0,
+			true
+		).id(`adj:fiery_gear/${flattenedID(output)}`);
+	}
 
+	fieryItemRecipe('iron_helmet', 'twilightforest:fiery_helmet');
+	fieryItemRecipe('iron_chestplate', 'twilightforest:fiery_chestplate');
+	fieryItemRecipe('iron_leggings', 'twilightforest:fiery_leggings');
+	fieryItemRecipe('iron_boots', 'twilightforest:fiery_boots');
+	fieryItemRecipe('iron_sword', 'twilightforest:fiery_sword');
+	fieryItemRecipe('iron_pickaxe', 'twilightforest:fiery_pickaxe');
 
 	alloyForgeRecipe(
 		[
