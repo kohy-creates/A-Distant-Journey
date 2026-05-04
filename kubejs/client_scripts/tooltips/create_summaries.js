@@ -3593,6 +3593,35 @@ const itemsToTooltip = [
 	},
 	{
 		item: [
+			/wallpapers:.*wallpaper_roll$/,
+		],
+		controls: [
+			{
+				control: 'right-clicked on any Planks',
+				requiresHold: false,
+				text: [
+					'Transforms the _Planks_ into a _Wallpaper Block_'
+				]
+			}
+		]
+	},
+	{
+		item: [
+			/wallpapers:.*skirting_board$/,
+		],
+		controls: [
+			{
+				control: 'right-clicked on any Wallpaper Block',
+				requiresHold: false,
+				text: [
+					'Adds a _Skirting Board_ to the clicked block.',
+					'Can be added _separately to the top_ and _to the bottom_ of the block.'
+				]
+			}
+		]
+	},
+	{
+		item: [
 			'kubejs:eye_of_verdant_bloom'
 		],
 		controls: [

@@ -683,7 +683,9 @@ ItemEvents.tooltip(event => {
 		'handcrafted:kitchen_hood_pipe',
 		/crockery_combo/,
 		/handcrafted:.*cushion/,
-		/handcrafted:.*sheet/
+		/handcrafted:.*sheet/,
+		/wallpapers:.*wallpaper_roll$/,
+		/wallpapers:.*skirting_board$/,
 	], (item, advanced, text) => {
 
 		let startPos = 0;
