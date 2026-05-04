@@ -18,7 +18,7 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.armor',
 					value: 2,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -34,7 +34,7 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.armor',
 					value: 2,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -42,7 +42,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.05,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -58,7 +58,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -66,7 +66,7 @@ global.setBonusMap = {
 				value: {
 					id: 'attributeslib:crit_chance',
 					value: 0.05,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -83,7 +83,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.07,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -91,7 +91,7 @@ global.setBonusMap = {
 				value: {
 					id: 'attributeslib:crit_chance',
 					value: 0.05,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -115,7 +115,7 @@ global.setBonusMap = {
 				value: {
 					id: 'combatroll:count',
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -123,7 +123,7 @@ global.setBonusMap = {
 				value: {
 					id: 'combatroll:recharge',
 					value: 0.2,
-					operation: 1
+					operation: 'multiply_base'
 				}
 			},
 			{
@@ -131,7 +131,7 @@ global.setBonusMap = {
 				value: {
 					id: 'combatroll:distance',
 					value: 4,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -139,7 +139,7 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.movement_speed',
 					value: 0.1,
-					operation: 1
+					operation: 'multiply_base'
 				}
 			}
 		]
@@ -157,7 +157,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -165,7 +165,7 @@ global.setBonusMap = {
 				value: {
 					id: 'attributeslib:crit_chance',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -189,7 +189,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.15,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -197,7 +197,7 @@ global.setBonusMap = {
 				value: {
 					id: 'attributeslib:crit_chance',
 					value: 0.15,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -220,7 +220,7 @@ global.setBonusMap = {
 				value: {
 					id: 'combatroll:count',
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			// {
@@ -228,7 +228,7 @@ global.setBonusMap = {
 			// 	value: {
 			// 		id: 'combatroll:distance',
 			// 		value: 1,
-			// 		operation: 0
+			// 		operation: 'addition'
 			// 	}
 			// }
 		]
@@ -245,7 +245,7 @@ global.setBonusMap = {
 				value: {
 					id: 'combatroll:count',
 					value: 2,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -253,7 +253,7 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.armor',
 					value: 2,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -269,7 +269,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.projectile_damage_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -277,7 +277,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 		]
@@ -292,7 +292,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.projectile_damage_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -311,7 +311,7 @@ global.setBonusMap = {
 				value: {
 					id: 'combatroll:count',
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -319,7 +319,7 @@ global.setBonusMap = {
 				value: {
 					id: 'combatroll:distance',
 					value: 1.5,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -327,7 +327,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.projectile_damage_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -343,7 +343,7 @@ global.setBonusMap = {
 				value: {
 					id: 'attributeslib:experience_gained',
 					value: 0.3,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -351,7 +351,7 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.armor',
 					value: 2,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -367,7 +367,7 @@ global.setBonusMap = {
 				value: {
 					id: 'ars_nouveau:ars_nouveau.perk.max_mana',
 					value: 40,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -375,7 +375,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -395,7 +395,7 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.armor',
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -410,7 +410,7 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.armor',
 					value: 6,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -426,7 +426,7 @@ global.setBonusMap = {
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
 					value: 8,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -434,7 +434,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.05,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -451,7 +451,7 @@ global.setBonusMap = {
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
 					value: 10,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -459,7 +459,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.06,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -467,7 +467,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:count",
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -475,7 +475,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:distance",
 					value: -0.5,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -492,7 +492,7 @@ global.setBonusMap = {
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
 					value: 13,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -500,7 +500,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.08,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -508,7 +508,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:count",
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -516,7 +516,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:distance",
 					value: 1.5,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -536,7 +536,7 @@ global.setBonusMap = {
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
 					value: 17,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -544,7 +544,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.08,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -552,7 +552,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:count",
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -560,7 +560,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:distance",
 					value: 3.0,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -580,7 +580,7 @@ global.setBonusMap = {
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
 					value: 17,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -588,7 +588,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -596,7 +596,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:count",
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -604,7 +604,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:distance",
 					value: 3.0,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -624,7 +624,7 @@ global.setBonusMap = {
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
 					value: 17,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -632,7 +632,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -640,7 +640,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:count",
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -648,7 +648,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:distance",
 					value: 3.0,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -668,7 +668,7 @@ global.setBonusMap = {
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
 					value: 17,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -676,7 +676,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -684,7 +684,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:count",
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -692,7 +692,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:distance",
 					value: 3.0,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -712,7 +712,7 @@ global.setBonusMap = {
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
 					value: 17,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -720,7 +720,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -728,7 +728,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:count",
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -736,7 +736,7 @@ global.setBonusMap = {
 				value: {
 					id: "combatroll:distance",
 					value: 3.0,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -751,7 +751,7 @@ global.setBonusMap = {
 				value: {
 					id: "generic.attack_damage",
 					value: 2,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -767,7 +767,7 @@ global.setBonusMap = {
 				value: {
 					id: "adjcore:generic.damage_reduction",
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -775,7 +775,7 @@ global.setBonusMap = {
 				value: {
 					id: "generic.knockback_resistance",
 					value: 21.37,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -825,7 +825,7 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.armor',
 					value: 3,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -833,7 +833,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.15,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -851,7 +851,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -859,7 +859,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.2,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -877,7 +877,7 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.movement_speed',
 					value: 0.25,
-					operation: 1
+					operation: 'multiply_base'
 				}
 			},
 			{
@@ -885,7 +885,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.mana_cost_reduction',
 					value: 0.3,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -900,7 +900,7 @@ global.setBonusMap = {
 				value: {
 					id: 'additionalentityattributes:player.water_visibility',
 					value: 1.6,
-					operation: 1
+					operation: 'multiply_base'
 				}
 			}
 		]
@@ -915,7 +915,7 @@ global.setBonusMap = {
 				value: {
 					id: 'additionalentityattributes:player.water_visibility',
 					value: 0.7,
-					operation: 1
+					operation: 'multiply_base'
 				}
 			}
 		]
@@ -932,7 +932,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -940,7 +940,7 @@ global.setBonusMap = {
 				value: {
 					id: 'attributeslib:fire_damage',
 					value: 5,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -964,7 +964,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.1,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -972,7 +972,7 @@ global.setBonusMap = {
 				value: {
 					id: 'attributeslib:armor_pierce',
 					value: 20,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -994,7 +994,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.05,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -1012,7 +1012,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0.05,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -1020,7 +1020,7 @@ global.setBonusMap = {
 				value: {
 					id: 'forge:step_height_addition',
 					value: 0.6,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -1055,7 +1055,7 @@ global.setBonusMap = {
 				value: {
 					id: "ars_nouveau:ars_nouveau.perk.spell_damage",
 					value: 12,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 			{
@@ -1063,7 +1063,7 @@ global.setBonusMap = {
 				value: {
 					id: "attributeslib:armor_pierce",
 					value: 15,
-					operation: 0
+					operation: 'addition'
 				}
 			},
 		]
@@ -1086,7 +1086,7 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.movement_speed',
 					value: 0.1,
-					operation: 1
+					operation: 'multiply_base'
 				}
 			},
 			{
@@ -1094,7 +1094,7 @@ global.setBonusMap = {
 				value: {
 					id: 'combatroll:count',
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -1109,7 +1109,7 @@ global.setBonusMap = {
 				value: {
 					id: 'generic.armor',
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -1124,7 +1124,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.extra_fortune_level',
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -1140,7 +1140,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:player.extra_fortune_level',
 					value: 1,
-					operation: 0
+					operation: 'addition'
 				}
 			}
 		]
@@ -1155,7 +1155,7 @@ global.setBonusMap = {
 				value: {
 					id: 'adjcore:generic.damage_reduction',
 					value: 0,
-					operation: 0.1
+					operation: 'addition'
 				}
 			}
 		]

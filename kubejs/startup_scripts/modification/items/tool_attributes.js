@@ -3,7 +3,6 @@ const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 const $SwordItem = Java.loadClass('net.minecraft.world.item.SwordItem');
 const $AttributeModifier = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier");
 const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes");
-const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation');
 const $ItemAttributeModifierEvent = Java.loadClass('net.minecraftforge.event.ItemAttributeModifierEvent');
 const $PerkUtil = Java.loadClass("com.hollingsworth.arsnouveau.api.util.PerkUtil");
 const $BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem');
@@ -174,8 +173,7 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 					event.removeAttribute(attribute);
 					if (overrides[attribute].values[slots.indexOf(slot)] == 0) continue;
 					event.addModifier(attribute,
-						new $AttributeModifier(uuid, uuid, overrides[attribute].values[slots.indexOf(slot)],
-							$Operation.fromValue(overrides[attribute].operation || 0)));
+						new $AttributeModifier(uuid, uuid, overrides[attribute].values[slots.indexOf(slot)], overrides[attribute].operation || 'addition'));
 				}
 
 				if (id.includes('ars_nouveau:') || id.includes('ars_elemental:')) {

@@ -93,7 +93,7 @@ PlayerEvents.tick(event => {
 			if (effect.type === 'effect') player.addEffect(new $MobEffectInstance(effect.value.id, -1, effect.value.amplifier));
 			else if (effect.type === 'attribute') {
 				let uuid = effect.value.uuid || global.genericSetBonusUUID;
-				player.getAttribute(effect.value.id).addPermanentModifier(new $AttributeModifier(uuid, 'Set bonus', effect.value.value, $Operation.fromValue(effect.value.operation)));
+				player.getAttribute(effect.value.id).addPermanentModifier(new $AttributeModifier(uuid, 'Set bonus', effect.value.value, effect.value.operation));
 			}
 		}
 	}
