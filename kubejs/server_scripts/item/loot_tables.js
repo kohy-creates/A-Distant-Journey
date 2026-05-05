@@ -92,6 +92,8 @@ LootJS.modifiers((event) => {
 		'delightful:flint_knife',
 		'farmersdelight:flint_knife',
 
+		'aether:life_shard',
+
 	].concat(global.blacklistedItemsArray);
 	removedFromLoot.forEach(e => event.addLootTableModifier(/.*/).removeLoot(e));
 

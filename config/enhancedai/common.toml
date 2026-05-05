@@ -501,6 +501,18 @@
 		#Dimensions where mobs can mine.
 		"Dimension whitelist" = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
 
+		[Mobs."Miner mobs"."Block respawn"]
+			#Time in ticks for a mined block to respawn. Set to 0 for no respawn. (20 ticks = 1 second)
+			Time = 0
+			#If true, block respawn time will scale based on the block's hardness.
+			"Scale time by hardness" = false
+			#Base respawn time in ticks for a block (used if scaling by hardness is enabled).
+			"Respawn by hardness base time" = 200
+			#Multiplier applied to the block's hardness when calculating respawn time (used if scaling by hardness is enabled).
+			"Hardness respawn multiplier" = 100.0
+			#If true, when a respawning block respawns on top of an obstructing block, the obstructing block will drop as if mined with a pickaxe (by default the obstructing block drops itself).
+			"Use pickaxe drop" = false
+
 	#Changes mobs attack range to use the 1.20.2 mechanic. Only entities in the `enhancedai:mobs/melee_attacking` entity type tag will be affected.
 	[Mobs."Melee attacking"]
 		#If true melee monsters (zombies, etc) will attack like 1.20.2+ and the attack range is based off the forge:entity_reach attribute (default 0.82 blocks).

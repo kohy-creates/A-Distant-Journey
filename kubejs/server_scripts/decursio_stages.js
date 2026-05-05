@@ -91,7 +91,8 @@ const DecursioStages = {
 		],
 		'chapter_4': [
 			global.announcementMsg('The boundary between dreams and nigthmares lessens...', global.messageColors.difficultyIncrease),
-			global.announcementMsg('Awakened Ender Pearls start to twitch...', global.messageColors.newDimension)
+			global.announcementMsg('Awakened Ender Pearls start to twitch...', global.messageColors.newDimension),
+			global.announcementMsg('Prometheum mineralizes in Underground Jungle and Lush Caves', global.messageColors.newOre)
 		],
 		'chapter_5': [
 			global.announcementMsg('A withered growl can be heard across all realms...', global.messageColors.difficultyIncrease),

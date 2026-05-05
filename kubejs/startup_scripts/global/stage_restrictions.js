@@ -120,7 +120,8 @@ global.stageRestrictions = {
 			'mcdw:soul_dagger_soul_knife',
 			'mcdw:crossbow_firebolt_thrower',
 			'ars_nouveau:apprentice_spell_book',
-			'mcdw:bow_sabrewing'
+			'mcdw:bow_sabrewing',
+			'kubejs:decayed_clover'
 		],
 		light: [
 			/everycomp\:.*aether.*/, // also covers redux, lost content and ancient
@@ -129,7 +130,9 @@ global.stageRestrictions = {
 			/esoterrack/,
 			/moonshale/,
 			/craterstone/,
-			'simplyswords:tainted_relic'
+			'simplyswords:tainted_relic',
+			'botania:tiny_planet',
+			'botania:tiny_planet_block',
 		],
 		exceptions: [
 			'aether:leather_gloves',
@@ -145,7 +148,8 @@ global.stageRestrictions = {
 			/treasure_bag/,
 			'mythicmetals:stormyx_ore',
 			'mythicmetals:blackstone_stormyx_ore',
-			'mythicmetals:raw_stormyx'
+			'mythicmetals:raw_stormyx',
+			'mythicmetals:mythril_drill_smithing_template',
 		]
 	},
 	'chapter_3': {
@@ -173,6 +177,7 @@ global.stageRestrictions = {
 			/gaiasteel/,
 			'botanicadds:gaia_shard',
 			/botanicadds:.*ring_gaia/,
+			'mythicmetals:durasteel_engine',
 			'mythicmetals:mythril_helmet',
 			'mythicmetals:mythril_chestplate',
 			'mythicmetals:mythril_leggings',
@@ -181,13 +186,14 @@ global.stageRestrictions = {
 			'mythicmetals:mythril_axe',
 			'mythicmetals:mythril_shovel',
 			'mythicmetals:mythril_hoe',
-			'mythicmetals:mythril_drill'
+			'mythicmetals:mythril_drill',
+			'aether:life_shard'
 		],
 		light: [
 			'mythicmetals:aegis_smithing_template',
 			'ancient_debris',
 			'@rediscovered',
-			'suppsquared:heavy_key'
+			'suppsquared:heavy_key',
 		],
 		exceptions: [
 			/rediscovered\:large\_brick/,
@@ -203,7 +209,8 @@ global.stageRestrictions = {
 			'rediscovered:ancient_crying_obsidian',
 			'rediscovered:scarecrow',
 			/rediscovered:.*slab/,
-			/treasure_bag/
+			/treasure_bag/,
+			'mythicmetals:mythril_drill_smithing_template',
 		]
 	},
 	'chapter_4': {
@@ -211,6 +218,7 @@ global.stageRestrictions = {
 			/enderium/,
 			/starrite/,
 			/star_platinum/,
+			/prometeum/,
 			'mcdw:dagger_backstabber',
 			'mcdw:dagger_swift_striker',
 			'mcdw:daggervoid_touched_blade',

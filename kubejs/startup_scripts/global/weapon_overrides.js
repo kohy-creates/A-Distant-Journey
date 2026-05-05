@@ -64,14 +64,9 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 
 		var attackDamage, attackSpeed;
 
-		if (Array.isArray(arg1)) {
-			attackDamage = Math.ceil(arg1[i] * arg3);
-			attackSpeed = roundToNearest(defaultAttackSpeed[i] * arg2, 0.05);
-		} else {
-			// Scaled base damage
-			attackDamage = Math.ceil(arg1 * defaultAttackDamage[i] * arg3);
-			attackSpeed = roundToNearest(defaultAttackSpeed[i] * arg2, 0.05);
-		}
+		// Scaled base damage
+		attackDamage = Math.ceil(arg1 * defaultAttackDamage[i] * arg3);
+		attackSpeed = roundToNearest(defaultAttackSpeed[i] * arg2, 0.05);
 
 		global.weapon_overrides[name] = [attackDamage, attackSpeed];
 		i++;
@@ -157,18 +152,16 @@ addToolsetOverride('minecraft:gold', 12)
 addToolsetOverride('mythicmetals:aquarium', 13)
 addToolsetOverride('mythicmetals:tidesinger', 15)
 addToolsetOverride('mythicmetals:bronze', 14)
-addToolsetOverride('mythicmetals:kyber', 15)
+addToolsetOverride('mythicmetals:kyber', 16)
 addToolsetOverride('additionaladditions:rose_gold', 16)
-addToolsetOverride('minecraft:diamond', 21)
+addToolsetOverride('minecraft:diamond', 23)
 addToolsetOverride('cataclysm:black_steel', 23)
 addToolsetOverride('botania:manasteel', 15, 1.125)
-addToolsetOverride('mythicmetals:prometheum', 19)
 addToolsetOverride('mythicmetals:steel', 28, 0.775)
 addToolsetOverride('mythicmetals:mythril', 15)
-addToolsetOverride('mythicmetals:orichalcum', 25)
-addToolsetOverride('experienceobelisk:cognitive', 23)
+addToolsetOverride('mythicmetals:orichalcum', 20, 1.125)
 addToolsetOverride('mythicmetals:midas_gold', 18)
-addToolsetOverride('mythicmetals:stormyx', 27, 1.125)
+addToolsetOverride('mythicmetals:stormyx', 29, 1.125)
 addToolsetOverride('botania:elementium', 23)
 addToolsetOverride('mythicmetals:palladium', 28)
 addToolsetOverride('aether:skyroot', 22)
@@ -179,6 +172,7 @@ addToolsetOverride('ancient_aether:valkyrum', 48)
 addToolsetOverride('lost_aether_content:phoenix', 46)
 addToolsetOverride('minecraft:netherite', 56)
 addToolsetOverride('mythicmetals:adamantite', 52)
+addToolsetOverride('mythicmetals:prometheum', 70, 0.6)
 addToolsetOverride('mythicmetals:star_platinum', 64)
 addToolsetOverride('unusualend:pearlescent', 68)
 addToolsetOverride('phantasm:crystalline', 58)

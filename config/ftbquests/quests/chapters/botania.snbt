@@ -2500,6 +2500,30 @@
 			x: 9.0d
 			y: -5.5d
 		}
+		{
+			dependencies: ["5658376D04F1E8AE"]
+			icon: "botanicadds:mana_tesseract"
+			id: "3A705369D933684C"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a Mana Tesseract"
+			tasks: [
+				{
+					count: 2L
+					id: "50B888AF7F3D620A"
+					item: "botanicadds:mana_tesseract"
+					type: "item"
+				}
+				{
+					id: "17707F044C9227F2"
+					item: "botanicadds:tesseract_attuner"
+					type: "item"
+				}
+			]
+			title: "Tesselating"
+			x: 18.5d
+			y: -3.5d
+		}
 	]
 	title: "World of Magic"
 }

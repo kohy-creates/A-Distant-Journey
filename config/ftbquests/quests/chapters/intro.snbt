@@ -392,6 +392,29 @@
 			x: 0.5d
 			y: -1.0d
 		}
+		{
+			dependencies: ["4A074153AE2D521D"]
+			description: [
+				"&6Mounts&r are probably the easiest mean of getting around quickly for exploration."
+				""
+				"With &6Saddles&r being &ecraftable&r, getting a mount is very easy. But keeping them around isn't always an easy task... They tend to &owander away&r, never to be seen again."
+				""
+				"This is where a &6Mount Bauble&r comes in! It allows you to &3store your mount&r inside to quickly summon it by pressing the &e&lF&r key! You can then press it again to desummon it and store it back into the Bauble."
+				""
+				"If your mount dies, you can resurrect them by combining the &6Mount Bauble&r with the deceased mount with an &3Echo Shard&r. "
+			]
+			icon: "baublemounts:mount_bauble"
+			id: "074605390A97E49A"
+			subtitle: "Click to read"
+			tasks: [{
+				id: "77AA59F786588953"
+				item: "baublemounts:mount_bauble"
+				type: "item"
+			}]
+			title: "&l&fTutorial:&r &6Mounts"
+			x: 0.5d
+			y: -5.0d
+		}
 	]
 	title: "Intro"
 }

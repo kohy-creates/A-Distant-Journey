@@ -590,7 +590,7 @@
 			image: "twilightforest:block/canopy_log_top"
 			rotation: 45.0d
 			width: 1.75d
-			x: 17.5d
+			x: 16.5d
 			y: 2.5d
 		}
 		{
@@ -656,6 +656,15 @@
 			width: 1.75d
 			x: 14.5d
 			y: 39.5d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 1.75d
+			image: "rubinated_nether:block/ruby_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 23.0d
+			y: 19.0d
 		}
 	]
 	order_index: 1
@@ -3943,10 +3952,13 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["6541FB163E3300CE"]
+			dependencies: ["545C995B87BA0947"]
 			description: [""]
 			icon: "aether:life_shard"
+			icon_scale: 0.75d
 			id: "13339DFB11520FBF"
+			shape: "diamond"
+			size: 1.5d
 			subtitle: "Get to 500 total max health by consuming 10 Life Shards"
 			tasks: [
 				{
@@ -3962,8 +3974,8 @@
 				}
 			]
 			title: "Life Surge"
-			x: 26.0d
-			y: 14.5d
+			x: 23.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["37D84A7023231586"]
@@ -4021,7 +4033,7 @@
 				}
 			]
 			title: "Story of Eastern Wonderland"
-			x: 17.5d
+			x: 16.5d
 			y: 2.5d
 		}
 		{
@@ -4346,6 +4358,55 @@
 			title: "Through Death, Reborn"
 			x: -2.0d
 			y: 36.5d
+		}
+		{
+			dependencies: ["379A22A2185CFC8E"]
+			description: ["&7&lHINT:&r You can equip it with a &6Harness&r of your choice to turn it into a floating mount!"]
+			icon: "dried_ghast:dried_ghast"
+			id: "0562284D4662E981"
+			subtitle: "Rescue a Dry Ghast and place it in any bed of Water"
+			tasks: [
+				{
+					id: "30E6142711743E32"
+					item: "dried_ghast:dried_ghast"
+					type: "item"
+				}
+				{
+					block: "dried_ghast:dried_ghast"
+					block_type: 0
+					icon: "minecraft:water_bucket"
+					id: "6D318A760E76974D"
+					replace: false
+					replaced: "minecraft:water"
+					title: "Place the Dried Ghast in Water"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "To The Skies!"
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E9823FB2C7C6D19"]
+			icon: "mythicmetals:prometheum_ingot"
+			id: "0BB72C64921769F6"
+			subtitle: "Collect and forge some Prometheum"
+			tasks: [
+				{
+					id: "38E9BB16F51FCEF4"
+					item: "mythicmetals:prometheum_ingot"
+					type: "item"
+				}
+				{
+					id: "7A8A287830398606"
+					item: "mythicmetals:raw_prometheum"
+					type: "item"
+				}
+			]
+			title: "Bloomful"
+			x: 14.5d
+			y: 25.5d
 		}
 	]
 	title: "Story"

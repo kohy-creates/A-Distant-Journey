@@ -61,7 +61,6 @@ const RemovedItems = {
 
 		'twilightforest:moss_patch',
 		'twilightforest:mayapple',
-		/twilightforest:.*_cloud/,
 		/twilightforest:charm_of_keeping_.*/,
 		'twilightforest:red_thread',
 		'twilightforest:crumble_horn',
@@ -102,6 +101,8 @@ const RemovedItems = {
 		'twilightforest:moon_dial',
 		/twilightforest:.*nagastone.*_right/,
 		'twilightforest:fiery_tears',
+		'twilightforest:clover_patch',
+		'twilightforest:chopped_clover',
 
 		'handcrafted:wood_plate',
 		'handcrafted:wood_cup',
@@ -185,6 +186,8 @@ const RemovedItems = {
 
 		/mythicmetals:.*silver.*/,
 
+		'mythicmeltas:carmot_ore',
+		'mythicmeltas:deepslate_carmot_ore',
 		'mythicmetals:carmot_ingot',
 		'mythicmetals:raw_carmot',
 		'mythicmetals:carmot_nugget',
@@ -321,6 +324,7 @@ const RemovedItems = {
 		'botania:scorched_grass',
 		'botania:infused_grass',
 		'botania:mutated_grass',
+		'botania:invisibility_cloak',
 
 		'terra_curio:magic_quiver',
 		'terra_curio:molten_quiver',

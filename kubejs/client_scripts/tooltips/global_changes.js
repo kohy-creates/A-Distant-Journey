@@ -158,7 +158,7 @@ const TooltipEdits = {
 		},
 		{
 			items: [
-				/carpet/,
+				/carpet$/,
 				'farmersdelight:canvas_rug'
 			],
 			text: [

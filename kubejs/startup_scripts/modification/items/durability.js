@@ -250,7 +250,6 @@ ItemEvents.modification(event => {
 	maxDurability('mutantmonsters:hulk_hammer', 1500);
 
 	maxDurability([
-		toolset('mythicmetals:prometheum'),
 		armorset('aether:neptune'),
 		'mcdw:glaive_venom_glaive'
 	], 1700);
@@ -307,6 +306,7 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('mythicmetals:mythril'),
+		toolset('twilightforest:fiery')
 	], 3200);
 
 	maxDurability([
@@ -340,6 +340,7 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('mythicmetals:star_platinum'),
+		toolset('mythicmetals:prometheum'),
 	], 6000);
 
 	maxDurability([

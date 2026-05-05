@@ -1,19 +1,21 @@
-let hardcore;
+const HealthRegen = {
+	hardcore: false,
+	maxFireTicks: 240
+};
+
 ServerEvents.loaded(event => {
-	hardcore = event.getServer().isHardcore()
+	HealthRegen.hardcore = event.getServer().isHardcore()
 	event.getServer().gameRules.set('naturalRegeneration', false);
 });
 
-const maxFireTicks = 300;
-
 EntityEvents.hurt(event => {
 	const entity = event.getEntity();
-	if (entity.remainingFireTicks > maxFireTicks) entity.remainingFireTicks = maxFireTicks;
-	if (entity.isPlayer()) {
+	if (entity.remainingFireTicks > HealthRegen.maxFireTicks) entity.remainingFireTicks = HealthRegen.maxFireTicks;
+	if (entity.isPlayer() && entity.getAbsorptionAmount() == 0) {
 		entity.persistentData.putLong('timeSinceLastHurt', 0);
 		entity.persistentData.putShort('regenerationTimer', 0);
 	}
-})
+});
 
 PlayerEvents.tick(event => {
 
@@ -45,7 +47,7 @@ PlayerEvents.tick(event => {
 	else if (player.foodLevel < 6) R *= 0.2;
 	else if (player.foodLevel == 0) R *= 0;
 
-	if (hardcore && player.saturation == 0 && player.foodLevel < 20) R *= 0.75;
+	if (HealthRegen.hardcore && player.saturation == 0 && player.foodLevel < 20) R *= 0.75;
 
 	RC = persistentData.regenerationTimer
 

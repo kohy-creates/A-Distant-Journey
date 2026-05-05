@@ -57,7 +57,7 @@
 		// Missile from Unstable Reservoir Rod (does not effect Gaia Gaurdian)
 		"missileDamage": 19.0,
 		// Flugel Tiara mana cost per tick
-		"tiaraCost": 15,
+		"tiaraCost": 10,
 		// Flugel Tiara mana cost per tick when flight meter is empty and Eye of the Flugel is in inventory
 		"tiaraOverkillCost": 50,
 		// Additional time to be removed from the tiara each tick of flight (should be positive). 0 = 60 secs max (default lexicon is wrong), 1 = 30 secs, 2 = 15 secs, etc

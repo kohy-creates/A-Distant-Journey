@@ -128,6 +128,15 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 			event.removeAttribute('forge:block_reach');
 			event.addModifier('forge:block_reach', new $AttributeModifier(weaponModifierUUIDs[0], 'ADJ Block Reach', global.toolReachOverrides[id], 'addition'));
 		}
+
+		if (id.includes('prometheum/prometheum')
+			|| id === 'mythicmetals:prometheum_sword'
+			|| id === 'mythicmetals:prometheum_axe'
+			|| id === 'mythicmetals:prometheum_pickaxe'
+			|| id === 'mythicmetals:prometheum_hoe'
+			|| id === 'mythicmetals:prometheum_shovel') {
+			event.addModifier('attributeslib:life_steal', new $AttributeModifier(weaponModifierUUIDs[0], 'Prometheum Native Lifesteal', 0.06, 'addition'));
+		}
 	}
 
 	if (event.slotType == 'mainhand' || event.slotType == 'offhand') {

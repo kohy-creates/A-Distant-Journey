@@ -10,6 +10,6 @@ StartupEvents.registry('attribute', event => {
 	registerAttribute('kubejs:ranged_damage', 'Ranged Damage', 0, 0, 10);
 	registerAttribute('kubejs:food.hunger', 'Hunger Restored', 0, 0, 10);
 	registerAttribute('kubejs:food.saturation', 'Saturation Restored', 0, 0, 10);
-	registerAttribute('kubejs:damage_dealt', 'Damage Dealt', 1, 0, 1000);
+	registerAttribute('kubejs:damage_dealt', 'Damage', 1, 0, 1000);
 	registerAttribute('kubejs:enchantment_power', 'Enchanting Table Power', 0, 0, 1000);
 });

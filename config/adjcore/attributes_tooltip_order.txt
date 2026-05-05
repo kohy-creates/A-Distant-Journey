@@ -2,11 +2,11 @@ kubejs:food.hunger
 kubejs:food.saturation
 kubejs:harvest_level
 kubejs:mining_speed
+minecraft:generic.armor
+adjcore:generic.damage_reduction
+adjcore:generic.projectile_damage_reduction
 minecraft:generic.attack_damage
 kubejs:ranged_damage
 minecraft:generic.attack_speed
-minecraft:generic.armor
 attributeslib:crit_chance
 attributeslib:crit_damage
-adjcore:generic.damage_reduction
-adjcore:generic.projectile_damage_reduction

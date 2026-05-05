@@ -88,31 +88,19 @@ ItemEvents.modification(event => {
 
 	const gloves = {
 		'aether:iron_gloves': {
-			damage: 2,
+			damage: 1,
 			operation: 'addition',
 			extra: []
 		},
 		'aether:golden_gloves': {
-			damage: 2,
+			damage: 1,
 			operation: 'addition',
-			extra: [
-				{
-					attribute: 'generic.luck',
-					value: 1,
-					operation: 'addition'
-				}
-			]
+			extra: [{ attribute: 'generic.luck', value: 1, operation: 'addition' }]
 		},
 		'aether:zanite_gloves': {
 			damage: 0.06,
 			operation: 'multiply_base',
-			extra: [
-				{
-					attribute: 'adjcore:player.mana_cost_reduction',
-					operation: 'addition',
-					value: 0.05
-				}
-			]
+			extra: [{ attribute: 'adjcore:player.mana_cost_reduction', operation: 'addition', value: 0.05 }]
 		},
 		'aether:diamond_gloves': {
 			damage: 3,
@@ -127,138 +115,66 @@ ItemEvents.modification(event => {
 		'aether:neptune_gloves': {
 			damage: 0.06,
 			operation: 'multiply_base',
-			extra: [
-				{
-					attribute: 'forge:swim_speed',
-					value: 0.25,
-					operation: 'multiply_base'
-				}
-			]
+			extra: [{ attribute: 'forge:swim_speed', value: 0.25, operation: 'multiply_base' }]
 		},
 		'aether:phoenix_gloves': {
 			damage: 0,
 			operation: 'addition',
-			extra: [
-				{
-					attribute: 'attributeslib:fire_damage',
-					value: 4,
-					operation: 'addition'
-				}
-			]
+			extra: [{ attribute: 'attributeslib:fire_damage', value: 4, operation: 'addition' }]
 		},
 		'aether:obsidian_gloves': {
 			damage: 10,
 			operation: 'addition',
-			extra: [
-				{
-					attribute: 'generic.attack_speed',
-					value: -0.25,
-					operation: 'multiply_total'
-				}
-			]
+			extra: [{ attribute: 'generic.attack_speed', value: -0.25, operation: 'multiply_total' }]
 		},
 		'ancient_aether:valkyrum_gloves': {
 			damage: 0,
 			operation: 'addition',
 			extra: [
-				{
-					attribute: 'forge:block_reach',
-					value: 3,
-					operation: 'addition'
-				},
-				{
-					attribute: 'generic.attack_damage',
-					value: 0.1,
-					operation: 'multiply_base'
-				}
+				{ attribute: 'forge:block_reach', value: 3, operation: 'addition' },
+				{ attribute: 'generic.attack_damage', value: 0.1, operation: 'multiply_base' }
 			]
 		},
 		'aether:gravitite_gloves': {
 			damage: 0.1,
 			operation: 'multiply_base',
 			extra: [
-				{
-					attribute: 'adjcore:player.mana_cost_reduction',
-					operation: 'addition',
-					value: 0.05
-				},
-				{
-					attribute: 'ars_nouveau:perk.spell_damage',
-					operation: 'addition',
-					value: 8
-				}
+				{ attribute: 'adjcore:player.mana_cost_reduction', operation: 'addition', value: 0.05 },
+				{ attribute: 'ars_nouveau:perk.spell_damage', operation: 'addition', value: 8 }
 			]
 		},
 		'aether:netherite_gloves': {
 			damage: 5,
 			operation: 'addition',
-			extra: [
-				{
-					attribute: 'attributeslib:crit_chance',
-					value: 0.04,
-					operation: 'addition'
-				}
-			]
+			extra: [{ attribute: 'attributeslib:crit_chance', value: 0.04, operation: 'addition' }]
 		},
 		'lost_aether_content:power_gloves': {
 			damage: 0.05,
 			operation: 'multiply_base',
-			extra: [
-				{
-					attribute: 'generic.attack_knockback',
-					value: 0.25,
-					operation: 'addition'
-				}
-			]
+			extra: [{ attribute: 'generic.attack_knockback', value: 0.25, operation: 'addition' }]
 		},
 		'umbral_skies:ironwood_gloves': {
 			damage: 0,
 			operation: 'addition',
 			extra: [
-				{
-					attribute: 'forge:block_reach',
-					value: 1,
-					operation: 'addition'
-				},
-				{
-					attribute: 'forge:entity_reach',
-					value: 1,
-					operation: 'addition'
-				}
+				{ attribute: 'forge:block_reach', value: 1, operation: 'addition' },
+				{ attribute: 'forge:entity_reach', value: 1, operation: 'addition' }
 			]
 		},
 		'umbral_skies:fiery_gloves': {
 			damage: 0,
 			operation: 'addition',
-			extra: [
-				{
-					attribute: 'attributeslib:fire_damage',
-					value: 3,
-					operation: 'addition'
-				}
-			]
+			extra: [{ attribute: 'attributeslib:fire_damage', value: 3, operation: 'addition' }]
 		},
 		'umbral_skies:knightmetal_gloves': {
-			damage: -0.04,
-			operation: 'addition',
-			extra: [
-				{
-					attribute: 'adjcore:generic.damage_reduction',
-					value: 0.08,
-					operation: 'addition'
-				}
-			]
+			damage: -0.05,
+			operation: 'multiply_base',
+			extra: [{ attribute: 'adjcore:generic.damage_reduction', value: 0.08, operation: 'addition' }]
 		},
 		'umbral_skies:yeti_gloves': {
 			damage: 0,
 			operation: 'addition',
-			extra: [
-				{
-					attribute: 'attributeslib:cold_damage',
-					value: 3,
-					operation: 'addition'
-				}
-			]
+			extra: [{ attribute: 'attributeslib:cold_damage', value: 3, operation: 'addition' }]
 		}
 	};
 

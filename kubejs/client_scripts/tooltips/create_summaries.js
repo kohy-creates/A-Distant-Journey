@@ -3675,7 +3675,7 @@ const itemsToTooltip = [
 			{
 				control: 'wearing 3 Enderium armor pieces',
 				text: [
-					'Replaces _Chorus Fruit_ teleport with a _random potion effect_'
+					'Replaces _Chorus Fruit_ teleport with a _random potion effect_.'
 				]
 			}
 		]
@@ -3683,13 +3683,38 @@ const itemsToTooltip = [
 	{
 		item: [
 			'farmersdelight:cooking_pot',
-			'twilightdelight:fiery_cooking_pot'
+			'witherstorm_delight:command_cooking_pot',
 		],
 		controls: [
 			{
-				control: 'placed on a Stove',
+				control: 'placed on a Stove or a Campfire',
 				text: [
-					'Enables Cooking recipes'
+					'Becomes _heated_ and enables _Cooking recipes_.'
+				]
+			}
+		]
+	},
+	{
+		item: [
+			'twilightdelight:fiery_cooking_pot',
+		],
+		summary: [
+			'Automatically _heats itself_ without the need to be placed over a Stove or a Campfire.'
+		],
+	},
+	{
+		item: [
+			'miners_delight:copper_pot'
+		],
+		summary: [
+			'Has only _4 item slots_ compared to the usual _6_.',
+			'Some _Soups_ can be cooked in a _Copper Pot_ instead of a _Cooking Pot_ to make them able to be poured into _Copper Cups_, yielding _2 servings with half the usual nutrition value_.'
+		],
+		controls: [
+			{
+				control: 'placed on a Stove or a Campfire',
+				text: [
+					'Becomes _heated_ and enables _Cooking recipes_.'
 				]
 			}
 		]
