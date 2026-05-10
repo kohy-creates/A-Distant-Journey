@@ -14,7 +14,7 @@
           "distribution": [
             {
               "weight": 1,
-              "data": 8
+              "data": 1
             },
             {
               "weight": 36,
@@ -22,7 +22,7 @@
                 "type": "minecraft:uniform",
                 "value": {
                   "min_inclusive": 0,
-                  "max_inclusive": 2
+                  "max_inclusive": 1
                 }
               }
             }

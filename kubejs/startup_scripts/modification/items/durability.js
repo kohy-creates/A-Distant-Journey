@@ -121,7 +121,10 @@ ItemEvents.modification(event => {
 		/.*aether.*\:.*glove/,
 		/umbral_skies\:.*gloves/,
 		/accents/,
-		'evilcraft:burning_gemstone'
+		'evilcraft:burning_gemstone',
+		'lost_aether_content:swetty_mask',
+		'lost_aether_content:invincibility_gem',
+		'lost_aether_content:flaming_gemstone'
 	]
 	event.modify(noDurability, item => {
 		item.setMaxDamage(0);
@@ -135,7 +138,8 @@ ItemEvents.modification(event => {
 	], 30);
 
 	maxDurability([
-		armorset('create:cardboard')
+		armorset('create:cardboard'),
+		'lost_aether_content:sentry_shield'
 	], 70);
 
 	maxDurability([

@@ -1,0 +1,8 @@
+{
+	"values": [
+		"minecraft:ocean",
+		"minecraft:cold_ocean",
+		"minecraft:lukewarm_ocean",
+		"minecraft:warm_ocean"
+	]
+}

@@ -93,6 +93,7 @@ const TooltipEdits = {
 				'aether:incubator',
 				'aether:freezer',
 				'aether:altar',
+				'rubinated_nether:freezer'
 			],
 			text: [
 				'Used for special crafting',
@@ -726,6 +727,10 @@ ItemEvents.tooltip(event => {
 		}
 	})
 
+	function parseMath(expr) {
+		return Function(`'use strict'; return (${expr})`)()
+	}
+
 	// Global tooltip modifications
 	// Targetted mainly towards tools
 	const attributesIgnoredItems = [
@@ -1012,7 +1017,71 @@ ItemEvents.tooltip(event => {
 				text.remove(1);
 			}
 		}
-	})
+
+		// Enchantment descriptions
+		let isEnchantedBook = (item.id === 'minecraft:enchanted_book');
+		if (item.isEnchanted() && event.isShift() || isEnchantedBook) {
+			/** @type {any[]} */
+			let nbt = item.nbt;
+			if (!nbt) return;
+			let enchantments = isEnchantedBook ? nbt.StoredEnchantments : nbt.Enchantments;
+			if (!enchantments) return;
+			let amount = enchantments.length;
+			if (amount == 0) return;
+
+			let startAt = 2;
+			if (!isEnchantedBook) for (let a = 0; a < text.length; a++) {
+				let line = text[a];
+				if (line.toString().includes('Enchantments: ')) {
+					startAt = a + 1;
+					break;
+				}
+
+			}
+
+			// Prettier entries
+			if (isEnchantedBook) for (let i = startAt; i < amount + startAt; i++) {
+				let line = text[i];
+				text.remove(i);
+				text.add(i, Text.join([
+					Text.gray(' ◇'),
+					Text.of(line)
+				]));
+			}
+
+			// Descriptions
+			for (let i = startAt; i < amount * 2 + startAt; i = i + 2) {
+				let enchant = enchantments[(i - startAt) / 2];
+				let id = enchant.id;
+				let level = enchant.lvl;
+
+				/**	@type {Internal.MutableComponent_|String} */
+				let desc = EnchantmentDescriptions[id];
+				if (desc) {
+					if (desc.base) {
+						let base = desc.base;
+						let args = desc.args;
+						for (let i = 0; i < args.length; i++) {
+							let arg = args[i];
+							let value = parseMath(arg.replace('level', level));
+							base = base.replace('{}', value);
+						}
+						desc = Text.of(base);
+					}
+					else {
+						desc = Text.of(desc);
+					}
+				}
+				// Fallback logic
+				else {
+					let idSplit = id.split(':')
+					desc = Text.translate(`enchantment.${idSplit[0]}.${idSplit[1]}.desc`);
+				}
+
+				text.add(i + 1, Text.join([Text.darkGray('   ▷ '), desc.darkGray()]))
+			}
+		}
+	});
 
 	event.addAdvanced([
 		'potion',

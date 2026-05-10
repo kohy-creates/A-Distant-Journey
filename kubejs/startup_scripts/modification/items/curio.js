@@ -82,7 +82,92 @@ ItemEvents.modification(event => {
 	event.modify('aether:regeneration_stone', item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
-				.addAttribute('adjcore:generic.health_regeneration', '42c679df-5324-421c-8648-1b4440a51c0e', 4, 'addition')
+				.addAttribute('adjcore:generic.health_regeneration', '316d63e4-7f7d-4fed-a813-2f588a7b6afb', 4, 'addition')
+		);
+	});
+
+	event.modify('aether_redux:ring_of_wisdom', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('attributeslib:experience_gained', '49f641d5-4ed1-48c0-9cb8-9fad2a4b72a6', 0.3, 'addition')
+		);
+	});
+
+	event.modify('ancient_aether:valkyrum_pendant', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('forge:block_reach', 'e7dc3f42-7446-4916-ab32-3d0e61c7cb7a', 1, 'addition')
+				.addAttribute('terra_curio:pickup_range', 'e7dc3f42-7446-4916-ab32-3d0e61c7cb7a', 3, 'addition')
+		);
+	});
+
+	event.modify('ancient_aether:hermes_pendant', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('generic.movement_speed', '9ea52887-2d3d-449e-8a8e-c51c1b86c6eb', 0.08, 'multiply_base')
+				.addAttribute('additionalentityattributes:generic.lava_speed', 'e7dc3f42-7446-4916-ab32-3d0e61c7cb7a', 0.5, 'multiply_base')
+				.addAttribute('additionalentityattributes:generic.water_speed', 'e7dc3f42-7446-4916-ab32-3d0e61c7cb7a', 0.5, 'multiply_base')
+		);
+	});
+
+	event.modify('ancient_aether:warrior_pendant', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('generic.armor', 'cc3686d5-b60a-4fa4-9114-9c11bd23c855', 4, 'addition')
+				.addAttribute('adjcore:generic.damage_reduction', 'cc3686d5-b60a-4fa4-9114-9c11bd23c855', 0.04, 'addition')
+		);
+	});
+
+	event.modify('aether_redux:airbound_cape', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('doublejumpattribute:doublejumpattribute', 'fb0bb38d-4129-41d3-9bf1-1b374f0d71e15', 1, 'addition')
+		);
+	});
+
+	event.modify('aether_redux:grand_valkyrie_medal', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('kubejs:damage_dealt', 'fb0bb38d-4129-41d3-9bf1-1b374f0d71e15', 0.05, 'multiply_base')
+				.addAttribute('attributeslib:crit_chance', 'fb0bb38d-4129-41d3-9bf1-1b374f0d71e15', 0.05, 'addition')
+		);
+	});
+
+	event.modify('aether_redux:solar_emblem', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('attributeslib:fire_damage', 'fb0bb38d-4129-41d3-9bf1-1b374f0d71e15', 2, 'addition')
+				.addAttribute('attributeslib:armor_pierce', 'fb0bb38d-4129-41d3-9bf1-1b374f0d71e15', 5, 'addition')
+		);
+	});
+
+	event.modify('aether_redux:solar_emblem', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('attributeslib:fire_damage', 'fb0bb38d-4129-41d3-9bf1-1b374f0d71e15', 2, 'addition')
+				.addAttribute('attributeslib:armor_pierce', 'fb0bb38d-4129-41d3-9bf1-1b374f0d71e15', 5, 'addition')
+		);
+	});
+
+	event.modify('aether_redux:vampire_amulet', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('attributeslib:life_steal', 'fb0bb38d-4129-41d3-9bf1-1b374f0d71e15', 0.03, 'addition')
+		);
+	});
+
+	event.modify('aether_redux:snailshell_speed', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('generic.knockback_reduction', '6288b965-25b6-408a-9dbc-edd8c432e25a', 0.4, 'addition')
+				.addAttribute('forge:entity_gravity', '6288b965-25b6-408a-9dbc-edd8c432e25a', -0.25, 'addition')
+		);
+	});
+
+	event.modify('lost_aether_content:invincibility_gem', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('attributeslib:dodge_chance', '6288b965-25b6-408a-9dbc-edd8c432e25a', 0.16, 'addition')
 		);
 	});
 

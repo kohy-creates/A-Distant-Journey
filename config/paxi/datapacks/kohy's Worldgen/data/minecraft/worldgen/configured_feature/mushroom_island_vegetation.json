@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:random_selector",
+	"config": {
+		"features": [
+			{
+				"chance": 0.475,
+				"feature": {
+					"feature": "twilightforest:mushroom/brown_canopy_mushroom",
+					"placement": []
+				}
+			},
+			{
+				"chance": 0.525,
+				"feature": {
+					"feature": "twilightforest:mushroom/red_canopy_mushroom",
+					"placement": []
+				}
+			}
+		],
+		"default": {
+			"feature": {
+				"config": {
+					"feature_false": {
+						"feature": "minecraft:huge_brown_mushroom",
+						"placement": []
+					},
+					"feature_true": {
+						"feature": "minecraft:huge_red_mushroom",
+						"placement": []
+					}
+				},
+				"type": "minecraft:random_boolean_selector"
+			},
+			"placement": []
+		}
+	}
+}

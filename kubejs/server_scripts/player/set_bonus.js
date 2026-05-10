@@ -93,12 +93,12 @@ PlayerEvents.tick(event => {
 			if (effect.type === 'effect') player.addEffect(new $MobEffectInstance(effect.value.id, -1, effect.value.amplifier));
 			else if (effect.type === 'attribute') {
 				let uuid = effect.value.uuid || global.genericSetBonusUUID;
-				player.getAttribute(effect.value.id).addPermanentModifier(new $AttributeModifier(uuid, 'Set bonus', effect.value.value, effect.value.operation));
+				player.getAttribute(effect.value.id).addPermanentModifier(new $AttributeModifier(uuid, 'Set bonus', effect.value.value, effect.value.operation || 'addition'));
 			}
 		}
 	}
 	if (hasActiveBonus) {
-		tickBonus(player)
+		tickBonus(player);
 	}
 });
 
@@ -176,6 +176,17 @@ function tickBonus(player) {
 			player.addEffect(new $MobEffectInstance('kubejs:prometheum_regeneration', 4 * 20, 0));
 		}
 	}
+	else if (setBonusActive(player, 'aether:phoenix')) {
+		const percentHP = Math.round((player.health / player.maxHealth) * 100);
+		if (percentHP <= 30) {
+			player.addEffect(new $MobEffectInstance('kubejs:phoenix_defense', 40, 0, true, true, true));
+		}
+	}
+	else if (setBonusActive(player, 'aether:obsidian')) {
+		if (player.isShiftKeyDown()) {
+			player.addEffect(new $MobEffectInstance('kubejs:defensive_stance', 4, 0, true, true, true));
+		}
+	}
 }
 
 /**
@@ -189,7 +200,7 @@ function setBonusActive(player, bonus) {
 }
 
 EntityEvents.hurt(event => {
-	const playerVictim = event.getEntity()
+	const playerVictim = event.getEntity();
 	const playerSource = event.getSource().getPlayer();
 
 	// On attack

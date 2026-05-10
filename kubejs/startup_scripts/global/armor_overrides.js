@@ -106,16 +106,23 @@ global.armorOverrides = {
 	},
 	'twilightforest:fiery': {
 		'generic.armor': {
-			values: [9, 10, 10, 8]
+			values: [8, 10, 9, 8]
 		},
 		'generic.knockback_resistance': {
 			values: [0, 0, p(12.5), 0]
 		},
 		'adjcore:generic.health_regeneration': {
-			values: [1, 1, 0, 0]
+			values: [0.5, 0.5, 0, 0]
 		},
 		'attributeslib:crit_chance': {
-			values: [, 0.04, 0.06, 0]
+			values: [0, 0.08, 0.06, 0]
+		},
+		'kubejs:damage_dealt': {
+			values: [0.12, 0, 0, 0],
+			operation: 'multiply_base'
+		},
+		'attributeslib:fire_damage': {
+			values: [0, 0, 2, 3]
 		}
 	},
 	'majruszsdifficulty:enderium': {
@@ -398,7 +405,11 @@ global.armorOverrides = {
 			values: [p(9), p(7), p(5), 0],
 			operation: 'multiply_base'
 		},
-		'generic.movement:speed': {
+		'generic.attack_speed': {
+			values: [0, p(8), 0, 0],
+			operation: 'multiply_base'
+		},
+		'generic.movement_speed': {
 			values: [0, 0, 0, p(5)],
 			operation: 'multiply_base'
 		}
@@ -578,6 +589,9 @@ global.armorOverrides = {
 		},
 		'doublejumpattribute:doublejumpattribute': {
 			values: [0, 0, 1, 0]
+		},
+		'additionalentityattributes:generic.magic_protection': {
+			values: [0, 0, 0, 0]
 		}
 	},
 	'aether:gravitite': {
@@ -605,21 +619,38 @@ global.armorOverrides = {
 	},
 	'aether:phoenix': {
 		'generic.armor': {
-			values: [9, 11, 10, 9]
+			values: [14, 16, 14, 12]
 		},
-		'attributeslib:fire_damage': {
-			values: [0, 2, 1, 0]
+		'generic.attack_damage': {
+			values: [p(12), p(9), p(7), 0],
+			operation: 'multiply_base'
 		},
+		'generic.attack_speed': {
+			values: [0, p(8), 0, 0],
+			operation: 'multiply_base'
+		},
+		'generic.attack_speed': {
+			values: [0, p(5), 0, 0],
+			operation: 'multiply_base'
+		},
+		'generic.movement_speed': {
+			values: [0, 0, 0, p(9)],
+			operation: 'multiply_base'
+		}
 	},
 	'aether:obsidian': {
 		'generic.armor': {
-			values: [10, 12, 12, 11]
+			values: [17, 19, 17, 15]
 		},
 		'adjcore:generic.damage_reduction': {
-			values: [p(2.5), p(7), 0, 0]
+			values: [p(3), p(7), 0, 0]
 		},
 		'generic.movement_speed': {
-			values: [p(-4), p(-4), p(-4), p(-4)],
+			values: [p(-6), p(-6), p(-6), p(-6)],
+			operation: 'multiply_base'
+		},
+		'generic.attack_speed': {
+			values: [0, p(-7), p(-5), 0],
 			operation: 'multiply_base'
 		},
 	},

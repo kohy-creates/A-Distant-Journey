@@ -145,11 +145,11 @@ EntityEvents.death(event => {
 			break;
 		}
 		case 'twilightforest:minoshroom': {
-			process('minoshroom', 3);
+			process('minoshroom', 2);
 			break;
 		}
 		case 'twilightforest:knight_phantom': {
-			process('knight_phantom', 3);
+			process('knight_phantom', 2);
 			break;
 		}
 		case 'twilightforest:ur_ghast': {

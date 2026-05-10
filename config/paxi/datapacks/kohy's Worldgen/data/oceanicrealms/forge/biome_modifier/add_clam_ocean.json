@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#oceanicrealms:oceans",
+	"features": "oceanicrealms:clam",
+	"step": "vegetal_decoration"
+}

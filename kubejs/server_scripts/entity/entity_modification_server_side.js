@@ -3,9 +3,9 @@ const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Att
 
 const EntityModifications = {
 	chapterMultipliers: {
-		hp: [1.0, 1.05, 1.1, 2.6, 2.6, 4.1],
-		damage: [1.0, 1.05, 1.2, 2.2, 2.2, 3.5],
-		armor: [1.0, 1.0, 1.15, 2.2, 2.2, 3.0]
+		hp: [1.0, 1.05, 1.1, 3.1, 3.1, 5.2],
+		damage: [1.0, 1.05, 1.15, 3.0, 3.0, 4.2],
+		armor: [1.0, 1.0, 1.1, 2.2, 2.2, 3.5]
 	},
 	_logic: {
 		/**

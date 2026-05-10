@@ -8,5 +8,5 @@ ServerEvents.tags('worldgen/structure', tags => {
 
 	tags.add('cataclysm:berserker_spawn', [
 		'betterfortresses:fortress'
-	])
+	]);
 });

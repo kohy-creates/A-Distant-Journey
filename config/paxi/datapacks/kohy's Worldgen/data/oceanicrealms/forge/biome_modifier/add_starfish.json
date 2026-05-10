@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#minecraft:is_ocean",
+	"features": "oceanicrealms:starfish_ocean",
+	"step": "top_layer_modification"
+}

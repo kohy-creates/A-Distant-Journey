@@ -1,0 +1,10 @@
+{
+	"type": "lithostitched:remove_features",
+	"biomes": [
+		"minecraft:mushroom_fields"
+	],
+	"features": [
+		"stonycliffs:cliff_feature"
+	],
+	"step": "underground_decoration"
+}

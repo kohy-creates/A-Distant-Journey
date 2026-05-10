@@ -143,9 +143,9 @@ const tiers = {
 	},
 	'prometheum': {
 		uses: 1472,
-		speed: 6.5,
+		speed: 8.5,
 		attackDamageBonus: 4.0,
-		level: 3,
+		level: 4,
 		enchantmentValue: 15,
 		repairIngredient: '#c:prometheum_ingots'
 	},
@@ -167,7 +167,7 @@ const tiers = {
 	},
 	'star_platinum': {
 		uses: 1300,
-		speed: 12.0,
+		speed: 10.0,
 		attackDamageBonus: 4.0,
 		level: 5,
 		enchantmentValue: 18,
@@ -183,7 +183,7 @@ const tiers = {
 	},
 	'stormyx': {
 		uses: 1305,
-		speed: 7,
+		speed: 7.2,
 		attackDamageBonus: 3.5,
 		level: 3,
 		enchantmentValue: 12,
@@ -199,7 +199,7 @@ const tiers = {
 	},
 	'enderium': {
 		uses: 8000,
-		speed: 12,
+		speed: 11,
 		attackDamageBonus: 5.0,
 		level: 5,
 		enchantmentValue: 15,
@@ -212,7 +212,15 @@ const tiers = {
 		level: 4,
 		enchantmentValue: 15,
 		repairIngredient: 'diamond',
-	}
+	},
+	'phoenix': {
+		uses: 8000,
+		speed: 12,
+		attackDamageBonus: 5.0,
+		level: 5,
+		enchantmentValue: 15,
+		repairIngredient: 'botania:rune_fire',
+	},
 };
 
 const blockTags = [
@@ -277,6 +285,8 @@ ItemEvents.modification(event => {
 	modifyTier('mythicmetals:metallurgium', 'metallurgium');
 	modifyTier('mythicmetals:celestium', 'celestium');
 	modifyTier('minecraft:diamond', 'diamond');
+	modifyTier('mythicmetals:star_platinum', 'star_platinum');
+	modifyTier('lost_aether_content', 'phoenix');
 
 	event.modify('mythicmetals:mythril_drill', item => {
 		item.tier = $TierSortingRegistry.byName('adj:mythril_drill');

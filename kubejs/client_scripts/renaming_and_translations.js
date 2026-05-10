@@ -140,7 +140,7 @@ ClientEvents.lang('en_us', event => {
 		'create:veridium_pillar': 'Viridstone Pillar',
 		'create:veridium': 'Viridstone',
 
-		'aether:altar': 'Aether Altar',
+		'aether:altar': 'Zanite Altar',
 		'spelunkers_charm:dead_grass': 'Cave Grass',
 
 		'aether:cold_aercloud': 'Cloud Block',
@@ -304,6 +304,8 @@ ClientEvents.lang('en_us', event => {
 		'galosphere:raw_palladium': 'Raw Silver',
 		'galosphere:palladium_ingot': 'Silver Ingot',
 		'galosphere:palladium_nugget': 'Silver Nugget',
+
+		'hybrid-aquatic:sulfur': 'Sulfur Dust',
 	};
 
 	const entityRenames = {

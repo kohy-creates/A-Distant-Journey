@@ -65,7 +65,7 @@ Did you see all of the new death messages yet?
 Did you see all of the new death messages yet? I mean I'm pretty sure you did, the difficulty is pretty high.
 ADJ doesn't support any language other than English (US), so please don't report any localization issues if you still decide to play on a different language.
 Dandelifeons and Shulk me Nots are all good ways to produce lots of Mana late-game.
-Legends say this pack was made by a gay furry :3
+Rumors say this pack was made by a gay furry approaching their 20s :3
 You can place a Pet Bed and assign your furry companion to it to allow it to respawn when slain!
 You can't hurt your own pets. At least you shouldn't be able to, according to the mods included.
 Remember to take breaks while playing!
@@ -196,4 +196,4 @@ Zombies dislike it when you stab them with a sword.
 If you stay under water too long you may drown.
 Like any items, buckets will burn in lava, but not when it is IN the bucket.
 Wither Skeletons are known to lose their heads.
-There is a small chance that an Endermite will spawn when an Enderpearl lands.
+There is a small chance that an Endermite will spawn when an Ender Pearl lands.

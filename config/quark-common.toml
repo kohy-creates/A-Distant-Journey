@@ -812,7 +812,7 @@
 		[world.big_stone_clusters.calcite]
 			Enabled = true
 			#Allowed values: [0,)
-			Rarity = 4
+			Rarity = 5
 			"Min Y Level" = 20
 			"Max Y Level" = 80
 			#Allowed values: [0,)
@@ -843,7 +843,7 @@
 		[world.big_stone_clusters.limestone]
 			Enabled = true
 			#Allowed values: [0,)
-			Rarity = 4
+			Rarity = 5
 			"Min Y Level" = 20
 			"Max Y Level" = 80
 			#Allowed values: [0,)

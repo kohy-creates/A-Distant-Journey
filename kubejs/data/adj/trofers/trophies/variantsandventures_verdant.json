@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#828760",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "variantsandventures:verdant"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.variantsandventures.verdant",
+				"color": "#828760"
+			}
+		]
+	}
+}

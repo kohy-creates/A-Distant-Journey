@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#oceanicrealms:oceans",
+	"features": "oceanicrealms:reef_rock_deep",
+	"step": "top_layer_modification"
+}

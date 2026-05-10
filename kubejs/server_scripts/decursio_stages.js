@@ -28,6 +28,7 @@ const DecursioStages = {
 			'darkVortexSpawn': false,
 			'bonescallerSpawn': false,
 			'doPatrolSpawning': false,
+			'corpseFlySpawn': true,
 
 			'fallenChaosKnightSpawn': false,
 			'spiritOfChaosSpawn': false,
@@ -37,6 +38,7 @@ const DecursioStages = {
 			'motherSpiderSpawn': false,
 			'krampusSpawn': false,
 			'gluttonFishSpawn': false,
+			'bloodyGadflySpawn': false,
 
 			'missionarySpawn': false,
 			'lifestealerSpawn': false,
@@ -58,6 +60,8 @@ const DecursioStages = {
 			'motherSpiderSpawn': true,
 			'krampusSpawn': true,
 			'gluttonFishSpawn': true,
+			'bloodyGadflySpawn': true,
+			'corpseFlySpawn': false,
 		}
 	},
 	/**
@@ -245,19 +249,45 @@ ServerEvents.tags('item', restrictions => {
 	restrictions.add('adj:locked_until/exceptions/chapter_5', global.stageRestrictions.chapter_5.exceptions);
 });
 
-ItemEvents.rightClicked('ender_eye', event => {
-	const player = event.getPlayer();
-	if (!player.stages.has('chapter_4')) {
-		player.displayClientMessage(Component.literal('It\'s not reacting to anything').red(), true);
-		event.cancel();
+const InteractionLimits = {
+	'ender_eye': {
+		chapter: 4,
+		message: 'It\'s not reacting to anything...'
+	},
+	'aquamirae:shell_horn': {
+		chapter: 2,
+		message: 'It doesn\'t make any sound...'
 	}
-});
+};
+
+for (let [item, data] of Object.entries(InteractionLimits)) {
+	ItemEvents.rightClicked(item, event => {
+		const player = event.getPlayer();
+		if (!player.stages.has(`chapter_${data.chapter}`)) {
+			player.displayClientMessage(Component.literal(data.message).red(), true);
+			// if (data.specialAction) data.specialAction(event);
+			event.cancel();
+		}
+	});
+}
 
 BlockEvents.rightClicked('command_block', event => {
 	const player = event.getPlayer();
 	if (event.getItem().id == 'minecraft:wither_skeleton_skull' && !player.stages.has('chapter_5')) {
 		player.displayClientMessage(Component.literal('It pops back off, away from the block').red(), true);
 		event.cancel();
+	}
+});
+
+EntityEvents.hurt('cataclysm:netherite_monstrosity', event => {
+	const attacker = event.getSource().getActual();
+	if (attacker.isPlayer()) {
+		if (!attacker.stages.has('chapter_3')) {
+			event.cancel();
+		}
+	}
+	else {
+		event.cancel()
 	}
 });
 

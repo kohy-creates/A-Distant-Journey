@@ -4,19 +4,19 @@ biomeColorRain = true
 
 [biomes]
 biomeParticlesRadius = 32
+mushroomSporeDensity = 10
 mushroomSporeBiomes = [
     "minecraft:mushroom_fields"
 ]
-mushroomSporeDensity = 10
+pollenDensity = 50
 pollenBiomes = [
     "minecraft:flower_forest",
     "minecraft:sunflower_plains"
 ]
-pollenDensity = 50
+sculkDustDensity = 5
 sculkDustBiomes = [
     "minecraft:deep_dark"
 ]
-sculkDustDensity = 5
 
 [geysers]
 useUpdatedSmoke = false
@@ -95,12 +95,12 @@ habitatBiomeDensity = 3
 [waterfalls]
 waterfallsEnabled = true
 smallWaterfallsEnabled = true
-waterfallUpdateFrequency = 12
+waterfallUpdateFrequency = 20
 randomizeWaterfallParticleRotation = false
-mediumWaterfallParticleDensity = 0.33235294
+mediumWaterfallParticleDensity = 0.3382353
 mediumWaterfallHeightThreshold = 6
 forceSpawnMediumWaterfallParticles = true
 largeWaterfallsEnabled = true
-largeWaterfallParticleDensity = 0.22058824
-largeWaterfallHeightThreshold = 15
+largeWaterfallParticleDensity = 0.1882353
+largeWaterfallHeightThreshold = 18
 forceSpawnLargeWaterfallParticles = true

@@ -347,7 +347,7 @@
 		{
 			dependency: "545C995B87BA0947"
 			height: 1.75d
-			image: "mythicmetals:block/hallowed_block"
+			image: "aether:block/natural/cold_aercloud"
 			rotation: 45.0d
 			width: 1.75d
 			x: 27.0d
@@ -433,8 +433,8 @@
 			image: "adj:textures/texts/lore_end.png"
 			rotation: 0.0d
 			width: 12.0d
-			x: 9.154761904761948d
-			y: 18.976190476190453d
+			x: 9.0d
+			y: 19.0d
 		}
 		{
 			dependency: "4564BF670D10E0FA"
@@ -567,7 +567,7 @@
 			y: 36.5d
 		}
 		{
-			dependency: "379A22A2185CFC8E"
+			dependency: "545C995B87BA0947"
 			height: 1.75d
 			image: "mythicmetals:block/mythril_block"
 			rotation: 45.0d
@@ -608,8 +608,8 @@
 			image: "ancient_aether:block/valkyrum_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: 17.5d
-			y: 14.5d
+			x: 18.0d
+			y: 15.5d
 		}
 		{
 			dependency: "4564BF670D10E0FA"
@@ -658,13 +658,31 @@
 			y: 39.5d
 		}
 		{
-			dependency: "379A22A2185CFC8E"
+			dependency: "545C995B87BA0947"
 			height: 1.75d
 			image: "rubinated_nether:block/ruby_block"
 			rotation: 45.0d
 			width: 1.75d
+			x: 29.0d
+			y: 23.0d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 1.75d
+			image: "mythicmetals:block/palladium_block"
+			rotation: 45.0d
+			width: 1.75d
 			x: 23.0d
 			y: 19.0d
+		}
+		{
+			dependency: "6E9823FB2C7C6D19"
+			height: 1.75d
+			image: "phantasm:block/chiseled_obsidian"
+			rotation: 45.0d
+			width: 1.75d
+			x: 14.5d
+			y: 20.0d
 		}
 	]
 	order_index: 1
@@ -2358,7 +2376,7 @@
 			}]
 			title: "HEVEN... FALLS!"
 			x: 19.0d
-			y: 14.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["501980860925DC72"]
@@ -2621,21 +2639,6 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["0CC3E441C652E02E"]
-			id: "17404FD2E06F5790"
-			optional: true
-			shape: "rsquare"
-			subtitle: "Kill a Valkyrie Queen without getting hit and obtain a Grand Victory Medal"
-			tasks: [{
-				id: "4A31EF18F8A28552"
-				item: "aether_redux:grand_victory_medal"
-				type: "item"
-			}]
-			title: "Valkyrie Champion"
-			x: 19.0d
-			y: 15.5d
-		}
-		{
 			dependencies: ["545C995B87BA0947"]
 			hide_dependency_lines: false
 			hide_until_deps_complete: true
@@ -2727,7 +2730,7 @@
 				item: "rediscovered:ruby_eye"
 				type: "item"
 			}]
-			title: "Ruby Attuned"
+			title: "Rubinated"
 			x: 23.5d
 			y: 22.0d
 		}
@@ -2764,7 +2767,7 @@
 		{
 			dependencies: ["0BACB5A08F178376"]
 			description: [
-				"Restored Portal Frame:"
+				"&7&lHINT:&r Restored Portal Frame:"
 				""
 				"{image:adj:textures/other/skylands_portal.png width:100 height:100 align:center}"
 				""
@@ -3952,7 +3955,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["545C995B87BA0947"]
+			dependencies: ["03DC59E95C1B2EB0"]
 			description: [""]
 			icon: "aether:life_shard"
 			icon_scale: 0.75d
@@ -3974,8 +3977,8 @@
 				}
 			]
 			title: "Life Surge"
-			x: 23.0d
-			y: 19.0d
+			x: 29.0d
+			y: 23.0d
 		}
 		{
 			dependencies: ["37D84A7023231586"]
@@ -3996,7 +3999,7 @@
 		{
 			dependencies: ["379A22A2185CFC8E"]
 			description: [
-				"Portal Frame:"
+				"&7&lHINT:&r Portal Frame:"
 				""
 				"{image:adj:textures/other/twilight_portal.png width:100 height:100 align:center}"
 				""
@@ -4102,7 +4105,7 @@
 				{
 					id: "617182CC6E62503D"
 					structure: "ancient_aether:sentry_laboratory"
-					title: "Find a Platinum Dungeon"
+					title: "Find a Sentry Laboratory"
 					type: "structure"
 				}
 				{
@@ -4170,8 +4173,8 @@
 				type: "item"
 			}]
 			title: "Valkyrien Skies"
-			x: 17.5d
-			y: 14.5d
+			x: 18.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6E4C5779C4DA9851"]
@@ -4407,6 +4410,88 @@
 			title: "Bloomful"
 			x: 14.5d
 			y: 25.5d
+		}
+		{
+			dependencies: ["545C995B87BA0947"]
+			icon_scale: 0.75d
+			id: "261AEEDB3594893E"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Pickup a Phoenix Cape from a Platinum Dungeon's Chest"
+			tasks: [{
+				id: "66A2F1EC764C468F"
+				item: {
+					Count: 1
+					id: "lost_aether_content:phoenix_cape"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Reborn From The Chaos"
+			x: 23.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["6E9823FB2C7C6D19"]
+			description: ["&7&lHINT:&r &6Phoenix set&r is oriented more around &coffense&r, while the &5Obsidian set&r is oriented more around &9defense&r. They are more or less interchangeable, so don't worry about losing them!"]
+			icon: {
+				Count: 1
+				id: "aether:obsidian_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 0.75d
+			id: "2EF1045D112DACF5"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Either expose any piece of Phoenix armor to rain or submerge it in water"
+			tasks: [{
+				id: "1FB3018AE0BF9ED6"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "aether:obsidian_helmet"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:obsidian_chestplate"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:obsidian_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:obsidian_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Obsidian armor piece"
+				type: "item"
+			}]
+			title: "Fortify Your Minds!"
+			x: 14.5d
+			y: 20.0d
 		}
 	]
 	title: "Story"

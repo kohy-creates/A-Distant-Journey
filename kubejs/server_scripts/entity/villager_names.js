@@ -23,6 +23,7 @@
 		 */
 		const villager = event.getEntity();
 
+		if (!villager.getCustomName()) return;
 		let name = villager.getCustomName().getString().split(' ')[0];
 		if (event.getOffers().toArray().length > 0) {
 			const profession = (villager.nbt.VillagerData.profession).toString().split(':');

@@ -25,7 +25,7 @@
 	#        "biomesoplenty:redwood"		COMMENT: exclude redwood from Wood Mod for any module
 	#    ]
 	#
-	blacklist = ["twilightforest:sorting"]
+	blacklist = ["twilightforest:sorting", "hybrid-aquatic:driftwood"]
 
 [leavestype]
 	#Exclude LeavesType from all of Modules

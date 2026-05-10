@@ -87,9 +87,9 @@ ItemEvents.modification(event => {
 
 	// For reference to self - editing those DOES impact the later Terraria-like rarity system
 	event.modify([
-		'terra_curio'
+		// empty in case i want to edit it in the future
 	], item => {
-		item.rarity = 'uncommon';
+		item.rarity = 'common';
 	});
 
 	event.modify([
@@ -136,6 +136,7 @@ ItemEvents.modification(event => {
 		'ars_nouveau:source_gem_block',
 		/botania:lens/,
 		/botania:mana_/,
+		'@terra_curio'
 	], item => {
 		item.rarity = 'uncommon';
 	});

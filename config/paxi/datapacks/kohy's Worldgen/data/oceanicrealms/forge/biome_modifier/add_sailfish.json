@@ -1,0 +1,10 @@
+{
+	"type": "forge:add_spawns",
+	"biomes": "#oceanicrealms:warm_oceans",
+	"spawners": {
+		"type": "oceanicrealms:sailfish",
+		"weight": 20,
+		"minCount": 1,
+		"maxCount": 1
+	}
+}

@@ -1,8 +1,8 @@
 ServerEvents.tags('item', tags => {
 
-	// global.blacklistedItemsArray.forEach(i => {
-	// 	tags.removeAllTagsFrom(i);
-	// });
+	global.blacklistedItemsArray.forEach(i => {
+		tags.removeAllTagsFrom(i);
+	});
 
 	tags.add('adj:vanity', [
 		/etcetera:.*_hat/,
@@ -495,4 +495,6 @@ ServerEvents.tags('item', tags => {
 	tags.add('adj:pressure_plates', [/pressure_plate$/]);
 
 	tags.add('witherstormmod:command_block_tools', 'zenith:zenith');
+
+	tags.removeAll('lost_aether_content:phoenix_tools');
 });

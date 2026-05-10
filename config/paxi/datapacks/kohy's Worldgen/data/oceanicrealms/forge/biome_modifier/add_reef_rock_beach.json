@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "minecraft:beach",
+	"features": "oceanicrealms:reef_rock_beach",
+	"step": "top_layer_modification"
+}

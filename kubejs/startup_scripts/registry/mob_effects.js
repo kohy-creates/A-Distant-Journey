@@ -239,4 +239,42 @@ StartupEvents.registry('mob_effect', registry => {
 	registry.create('potion_sickness')
 		.harmful()
 		.color(Color.RED_DYE);
+
+	registry.create('phoenix_defense')
+		.beneficial()
+		.color(Color.ORANGE_DYE)
+		.modifyAttribute(
+			'adjcore:generic.health_regeneration',
+			'511279fb-3547-4a95-844c-6cdaba85e550',
+			3.5,
+			'addition'
+		)
+		.modifyAttribute(
+			'generic.armor',
+			'511279fb-3547-4a95-844c-6cdaba85e550',
+			2,
+			'addition'
+		);
+
+	registry.create('defensive_stance')
+		.beneficial()
+		.color(Color.DARK_PURPLE)
+		.modifyAttribute(
+			'generic.armor',
+			'511279fb-3547-4a95-844c-6cdaba85e550',
+			20,
+			'addition'
+		)
+		.modifyAttribute(
+			'adjcore:generic.damage_reduciton',
+			'511279fb-3547-4a95-844c-6cdaba85e550',
+			0.05,
+			'addition'
+		)
+		.modifyAttribute(
+			'generic.movement_speed',
+			'511279fb-3547-4a95-844c-6cdaba85e550',
+			-0.35,
+			'multiply_total'
+		);
 });

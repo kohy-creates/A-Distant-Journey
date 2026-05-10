@@ -1,0 +1,32 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "oceanicrealms:reef_rock_deep",
+				"config": {
+					"structures": [
+						"oceanicrealms:reef_rock_deep1",
+						"oceanicrealms:reef_rock_deep2",
+						"oceanicrealms:reef_rock_deep3",
+						"oceanicrealms:reef_rock_deep4"
+					]
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": [
+							"minecraft:water"
+						]
+					}
+				}
+			]
+		},
+		"tries": 2,
+		"xz_spread": 16,
+		"y_spread": 0
+	}
+}

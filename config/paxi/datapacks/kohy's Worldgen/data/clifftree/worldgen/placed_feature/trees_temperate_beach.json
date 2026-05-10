@@ -1,5 +1,5 @@
 {
-  "feature": "clifftree:jungle_tree_alt",
+  "feature": "beachparty:palm_tree",
   "placement": [
     {
       "type": "minecraft:count",
@@ -8,7 +8,7 @@
         "distribution": [
           {
             "data": 0,
-            "weight": 24
+            "weight": 4
           },
           {
             "data": 1,

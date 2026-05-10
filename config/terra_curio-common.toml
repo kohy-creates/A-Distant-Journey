@@ -344,7 +344,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes.Shackle]
 		#Range: 0 ~ 1024
-		armor = 3
+		armor = 1
 
 	[Attributes."Shark Tooth Necklace"]
 		#Range: 0 ~ 10000

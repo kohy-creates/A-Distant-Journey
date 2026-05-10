@@ -1,4 +1,5 @@
 {
   "io.github.thecsdev.betterstats.api.client.gui.screen.BetterStatsScreenWrapper": true,
-  "title_screen": true
+  "title_screen": true,
+  "creative_mode_inventory_screen": false
 }

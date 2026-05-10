@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:disk",
+	"config": {
+		"half_height": 2,
+		"radius": 8,
+		"state_provider": {
+			"fallback": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "oceanicrealms:sedimentary_sandstone"
+				}
+			},
+			"rules": [
+			]
+		},
+		"target": {
+			"type": "minecraft:matching_blocks",
+			"blocks": [
+				"minecraft:gravel",
+				"minecraft:dirt",
+				"minecraft:sand"
+			]
+		}
+	}
+}

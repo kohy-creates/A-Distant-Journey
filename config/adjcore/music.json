@@ -83,7 +83,7 @@
 	},
 	"boss": {
 		"botania:doppleganger": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.doppleganger",
 				"title": "doppleganger",
 				"author": "ZUN",
@@ -91,9 +91,9 @@
 			}
 		},
 		"cataclysm:ignis": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.ignis",
-				"title": "ignis_phase_1",
+				"title": "ignis_phase_0",
 				"author": "ZUN",
 				"distance": 100
 			},
@@ -113,7 +113,7 @@
 			}
 		},
 		"cataclysm:ender_guardian": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.ender_guardian",
 				"title": "ender_guardian",
 				"author": "ZUN",
@@ -121,7 +121,7 @@
 			}
 		},
 		"cataclysm:the_harbinger": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.the_harbinger",
 				"title": "the_harbinger",
 				"author": "ZUN",
@@ -129,7 +129,7 @@
 			}
 		},
 		"cataclysm:the_leviathan": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.the_leviathan",
 				"title": "the_leviathan",
 				"author": "ZUN",
@@ -137,7 +137,7 @@
 			}
 		},
 		"cataclysm:ancient_remnant": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.ancient_remnant",
 				"title": "ancient_remnant",
 				"author": "ZUN",
@@ -145,7 +145,7 @@
 			}
 		},
 		"cataclysm:maledictus": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.maledictus",
 				"title": "maledictus",
 				"author": "ZUN",
@@ -153,7 +153,7 @@
 			}
 		},
 		"cataclysm:scylla": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.scylla",
 				"title": "scylla",
 				"author": "ZUN",
@@ -161,7 +161,7 @@
 			}
 		},
 		"unusualend:endstone_golem": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.endstone_golem",
 				"title": "endstone_golem",
 				"author": "ZUN",
@@ -169,7 +169,7 @@
 			}
 		},
 		"unusualend:enderblob_queen": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.enderblob_queen",
 				"title": "enderblob_queen",
 				"author": "ZUN",
@@ -177,7 +177,7 @@
 			}
 		},
 		"ars_nouveau:wilden_boss": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.wilden_boss",
 				"title": "wilden_boss",
 				"author": "ZUN",
@@ -233,7 +233,7 @@
 			}
 		},
 		"alexscaves:luxtructosaurus": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.luxtructosaurus",
 				"title": "luxtructosaurus",
 				"author": "ZUN",
@@ -241,7 +241,7 @@
 			}
 		},
 		"twilightforest:naga": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.naga",
 				"title": "naga",
 				"author": "ZUN",
@@ -249,7 +249,7 @@
 			}
 		},
 		"twilightforest:lich": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.lich",
 				"title": "lich",
 				"author": "ZUN",
@@ -257,7 +257,7 @@
 			}
 		},
 		"twilightforest:minoshroom": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.minoshroom",
 				"title": "minoshroom",
 				"author": "ZUN",
@@ -265,7 +265,7 @@
 			}
 		},
 		"twilightforest:hydra": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.hydra",
 				"title": "hydra",
 				"author": "ZUN",
@@ -273,7 +273,7 @@
 			}
 		},
 		"twilightforest:knight_phantom": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.knight_phantom",
 				"title": "knight_phantom",
 				"author": "ZUN",
@@ -281,7 +281,7 @@
 			}
 		},
 		"twilightforest:ur_ghast": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.ur_ghast",
 				"title": "ur_ghast",
 				"author": "ZUN",
@@ -289,7 +289,7 @@
 			}
 		},
 		"twilightforest:alpha_yeti": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.alpha_yeti",
 				"title": "alpha_yeti",
 				"author": "ZUN",
@@ -297,7 +297,7 @@
 			}
 		},
 		"twilightforest:snow_queen": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.snow_queen",
 				"title": "snow_queen",
 				"author": "ZUN",
@@ -305,7 +305,7 @@
 			}
 		},
 		"aquamirae:captain_cornelia": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.captain_cornelia",
 				"title": "captain_cornelia",
 				"author": "ZUN",
@@ -313,15 +313,15 @@
 			}
 		},
 		"witherstormmod:command_block": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.command_block.approaching",
-				"title": "command_block_phase_1",
+				"title": "command_block_phase_0",
 				"author": "ZUN",
-				"distance": 150
+				"distance": 175
 			},
-			"phase_2": {
+			"phase_1": {
 				"track": "adj:music.boss.command_block.combat",
-				"title": "command_block_phase_2",
+				"title": "command_block_phase_1",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -335,7 +335,7 @@
 			}
 		},
 		"minecraft:ender_dragon": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.ender_dragon",
 				"title": "ender_dragon",
 				"author": "ZUN",
@@ -343,7 +343,7 @@
 			}
 		},
 		"minecraft:wither": {
-			"phase_1": {
+			"phase_0": {
 				"track": "adj:music.boss.wither",
 				"title": "wither",
 				"author": "ZUN",

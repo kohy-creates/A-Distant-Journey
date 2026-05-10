@@ -1,0 +1,8 @@
+{
+  "type": "hybrid-aquatic:ha_loot_modifier",
+  "chance": 0,
+  "conditions": [],
+  "item_tag": "hybrid-aquatic:fishing_treasure",
+  "tables": [],
+  "target": "minecraft:gameplay/fishing"
+}

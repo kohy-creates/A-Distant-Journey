@@ -23,7 +23,9 @@ global.stageRestrictions = {
 			'mcdw:crossbow_azure_seeker',
 			'mcdw:crossbow_pride_of_the_piglins',
 			/terrasteel/,
-			/midas_gold/
+			/midas_gold/,
+			'ender_eye',
+			/cataclysm:.*_eye/
 		],
 		light: [
 			'botania:ender_air_bottle',
@@ -121,7 +123,8 @@ global.stageRestrictions = {
 			'mcdw:crossbow_firebolt_thrower',
 			'ars_nouveau:apprentice_spell_book',
 			'mcdw:bow_sabrewing',
-			'kubejs:decayed_clover'
+			'kubejs:decayed_clover',
+			'aquamirae:shell_horn',
 		],
 		light: [
 			/everycomp\:.*aether.*/, // also covers redux, lost content and ancient
@@ -187,7 +190,12 @@ global.stageRestrictions = {
 			'mythicmetals:mythril_shovel',
 			'mythicmetals:mythril_hoe',
 			'mythicmetals:mythril_drill',
-			'aether:life_shard'
+			'aether:life_shard',
+			'mythicmetals:orichalcum_hammer',
+			/twilightforest:fiery_/,
+			'tiab:time_in_a_bottle',
+			'cataclysm:monstrous_eye',
+			'cataclysm:flame_eye',
 		],
 		light: [
 			'mythicmetals:aegis_smithing_template',
@@ -218,7 +226,7 @@ global.stageRestrictions = {
 			/enderium/,
 			/starrite/,
 			/star_platinum/,
-			/prometeum/,
+			/prometheum/,
 			'mcdw:dagger_backstabber',
 			'mcdw:dagger_swift_striker',
 			'mcdw:daggervoid_touched_blade',
@@ -231,6 +239,20 @@ global.stageRestrictions = {
 			'mcdw:crossbow_veiled_crossbow',
 			'ars_nouveau:archmage_spell_book',
 			'botania:terra_sword',
+			'aether:phoenix_helmet',
+			'aether:phoenix_chestplate',
+			'aether:phoenix_leggings',
+			'aether:phoenix_boots',
+			'lost_aether_content:phoenix_sword',
+			'lost_aether_content:phoenix_hoe',
+			'lost_aether_content:phoenix_pickaxe',
+			'lost_aether_content:phoenix_axe',
+			'lost_aether_content:phoenix_shovel',
+			'aether:obsidian_helmet',
+			'aether:obsidian_chestplate',
+			'aether:obsidian_leggings',
+			'aether:obsidian_boots',
+			'cataclysm:void_eye',
 		],
 		light: [
 			/end_stone/,

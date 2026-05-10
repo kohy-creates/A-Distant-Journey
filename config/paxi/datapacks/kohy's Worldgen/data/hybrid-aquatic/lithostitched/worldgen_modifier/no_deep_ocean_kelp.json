@@ -1,0 +1,6 @@
+{
+    "type": "lithostitched:remove_features",
+    "biomes": "#minecraft:is_deep_ocean",
+    "features": [],
+    "step": "vegetal_decoration"
+}

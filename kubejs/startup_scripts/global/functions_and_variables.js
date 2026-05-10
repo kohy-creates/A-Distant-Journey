@@ -244,4 +244,8 @@ global.getCurrentChapter = function (server) {
 	let chapters = server.persistentData.chapters || {};
 	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""));
 	return currentStage;
-}
+};
+
+global.roundToNearest = function (value, step) {
+	return Math.round(value / step) * step;
+};

@@ -12,7 +12,6 @@ ServerEvents.recipes((event) => {
 			.replace('.', '_');
 	}
 
-	/** @type {Internal.InputItem[]}*/
 	const disabledItemRecipes = [
 		global.rediscoveredFurniture(),
 		'naturescompass:naturescompass',
@@ -312,10 +311,22 @@ ServerEvents.recipes((event) => {
 		'immersive_paintings:graffiti',
 		'brewinandchewin:keg',
 		/aperture_innovations:portal_gun/,
+		'mythicmetals:smelting/prometheum_ingot_from_ores',
+		'mythicmetals:smelting/prometheum_ingot_from_raw_ore',
 		'mythicmetals:blasting/blast_prometheum_ingot_from_ores',
 		'mythicmetals:blasting/blast_prometheum_ingot_from_raw_ore',
 		'mythicmetals:alloy_forge/forge_prometheum_ingot_from_ores',
-		'mythicmetals:alloy_forge/forge_prometheum_ingot_from_raw_ore'
+		'mythicmetals:alloy_forge/forge_prometheum_ingot_from_raw_ore',
+		'beachparty:mini_fridge_freezing/powder_snow_bucket',
+		'beachparty:mini_fridge_freezing/blue_ice',
+		'beachparty:mini_fridge_freezing/packed_ice',
+		'rubinated_nether:ruby_from_ruby_shard',
+		'rubinated_nether:ruby_from_ruby_block',
+		'rubinated_nether:ruby_from_molten_ruby',
+		'spelunkers_charm:rocks_to_cobblestone',
+		'spelunkers_charm:basalt_rocks_to_basalt',
+		'spelunkers_charm:dripstone_rock_to_dripstone',
+		'spelunkers_charm:deepslate_rock_to_cobbled_deepslate',
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -334,7 +345,8 @@ ServerEvents.recipes((event) => {
 		'jumbofurnace:jumbo_smelting',
 		'morered:soldering',
 		'ars_nouveau:armor_upgrade',
-		'ars_nouveau:enchantment'
+		'ars_nouveau:enchantment',
+		'beachparty:palm_bar_mixing'
 	];
 	removeRecipeByType.forEach(recipeType => {
 		event.remove({ type: recipeType })
@@ -395,8 +407,9 @@ ServerEvents.recipes((event) => {
 			'twilightforest:cooked_venison': 'naturalist:cooked_venison',
 			'twilightforest:fiery_tears': 'twilightforest:fiery_blood',
 			'twilightforest:knightmetal_ring': 'iron_ingot',
-			'alexscaves:crushed_sulfur': 'kubejs:crushed_sulfur',
-			'farmersdelight:canvas': 'xercapaint:item_canvas'
+			'alexscaves:sulfur_dust': 'hybrid-aquatic:sulfur',
+			'farmersdelight:canvas': 'xercapaint:item_canvas',
+			'crittersandcompanions:pearl': 'hybrid-aquatic:pearl',
 		},
 		output: {
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
@@ -426,6 +439,18 @@ ServerEvents.recipes((event) => {
 			replacement
 		);
 	};
+
+	event.shaped(
+		'rediscovered:ruby',
+		[
+			'SSS',
+			'SSS',
+			'SSS'
+		],
+		{
+			S: 'rubinated_nether:ruby_shard'
+		}
+	).id('adj:ruby_from_shards');
 
 	event.recipes.farmersdelight.cutting('#adj:scorched_logs', '#pickaxes', [
 		'1x charcoal',
@@ -524,12 +549,15 @@ ServerEvents.recipes((event) => {
 	sewingRecipe('pink_wool', 'ancient_aether:pink_cape');
 	sewingRecipe('blue_wool', 'aether:blue_cape');
 
-	event.forEachRecipe({ output: [/carpet/], type: 'crafting_shaped' }, recipe => sewingRecipe(
-		recipe.getOriginalRecipeIngredients().toArray()[0].getItemIds()[0], // this looks unholy
-		recipe.getOriginalRecipeResult().getId(),
-		3,
-		recipe.getId())
-	);
+	event.forEachRecipe({ output: [/carpet/], type: 'crafting_shaped' }, recipe => {
+		if (!recipe) return;
+		sewingRecipe(
+			recipe.getOriginalRecipeIngredients().toArray()[0].getItemIds()[0], // this looks unholy
+			recipe.getOriginalRecipeResult().getId(),
+			3,
+			recipe.getId()
+		)
+	});
 
 	// Workshop recipes
 	function workshopRecipe(ingredients, output, id) {
@@ -602,6 +630,11 @@ ServerEvents.recipes((event) => {
 		'botanicadds:aura_ring_gaia',
 		'botanicadds:mana_ring_gaia',
 		'create:googles',
+		'aether_redux:feather_of_warding',
+		'aether_redux:enchanted_ring',
+		'aether_redux:ring_of_wisdom',
+		'aether_redux:sentry_ring'
+
 	];
 	const curioToWorkshopRegex = [
 		/botania:cosmetic.*/,
@@ -1022,7 +1055,7 @@ ServerEvents.recipes((event) => {
 		let recipe = {
 			"type": "lychee:item_inside",
 			"item_in": [],
-			"blocks_in": (inBlock) ? inBlock : "*",
+			"block_in": (inBlock) ? inBlock : "*",
 			"post": [
 				{
 					"type": "drop_item",
@@ -1531,7 +1564,7 @@ ServerEvents.recipes((event) => {
 		'quark:smithing_template_rune'
 	];
 	event.forEachRecipe({ type: 'crafting_shaped' }, (recipe) => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		let output = recipe.getOriginalRecipeResult();
 		if (output.id.indexOf('_smithing_template') === -1) {
 			if (!otherTemplates.includes(output.id)) return
@@ -2242,7 +2275,7 @@ ServerEvents.recipes((event) => {
 
 	// Better rail crafting
 	event.forEachRecipe({ type: 'crafting_shaped', output: [/rail/] }, (recipe) => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		const original = recipe.getOriginalRecipeResult();
 		if (original.id == 'botania:ghost_rail') return;
 		const ingredients = recipe.getOriginalRecipeIngredients();
@@ -2511,7 +2544,7 @@ ServerEvents.recipes((event) => {
 
 	// Awakened Ender Pearls
 	event.forEachRecipe({ type: 'crafting_shaped', output: /cataclysm\:.*eye/ }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		const result = recipe.getOriginalRecipeResult();
 
 		if (!result || !result.id) return;
@@ -2520,7 +2553,7 @@ ServerEvents.recipes((event) => {
 			ingredients = [];
 		originalIngredients.forEach(ingredient => {
 			let isAir = ingredient.getItemIds().some(i => i == 'air');
-			let isEnderEye = ingredient.getItemIds().some(i => i == 'ender_eye');
+			let isEnderEye = ingredient.getItemIds().some(i => i == 'minecraft:ender_eye');
 
 			if (!isAir && !isEnderEye) {
 				ingredients.push(ingredient);
@@ -3054,7 +3087,7 @@ ServerEvents.recipes((event) => {
 
 	// Crushing recipes for Crush glyph
 	event.forEachRecipe({ type: 'create:milling' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 
 		const json = recipe.json;
 
@@ -3110,7 +3143,7 @@ ServerEvents.recipes((event) => {
 		'ars_elemental:glyph_arc_projectile': ['spectral_arrow', 'slime_ball', 'snowball', 'snowball', 'botania:manasteel_ingot'],
 		'ars_nouveau:glyph_randomize': ['mythicmetals:runite_ingot', 'mythicmetals:runite_ingot', 'quark:redstone_randomizer', '#adj:pressure_plates', '#adj:pressure_plates'],
 		'ars_nouveau:glyph_sensitive': ['shears', '#c:glass_blocks', '#wool', '#wool'],
-		'ars_nouveau:glyph_aoe': ['quark:gunpowder_sack', 'quark:gunpowder_sack', 'kubejs:crushed_sulfur', 'kubejs:crushed_sulfur', 'kubejs:crushed_sulfur', 'bone_meal'],
+		'ars_nouveau:glyph_aoe': ['quark:gunpowder_sack', 'quark:gunpowder_sack', 'hybrid-aquatic:sulfur', 'hybrid-aquatic:sulfur', 'hybrid-aquatic:sulfur', 'bone_meal'],
 		'ars_nouveau:glyph_accelerate': ['botania:rune_air', 'sugar', 'sugar', 'honeycomb_block'],
 		'ars_nouveau:glyph_dampen': ['#wool', '#wool', '#wool', '#wool', '#wool', '#wool'],
 		'ars_nouveau:glyph_decelerate': ['fermented_spider_eye', 'cobweb', 'cobweb', 'cobweb', 'cobweb',],
@@ -3192,7 +3225,7 @@ ServerEvents.recipes((event) => {
 	// Glyphs are more expensive to craft experience-wise
 	// and some have changed recipes
 	event.forEachRecipe({ type: 'ars_nouveau:glyph' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 
 		const id = recipe.getOriginalRecipeResult().id;
 		const expCost = Math.floor(recipe.json.get('exp') * 1.25);
@@ -3424,11 +3457,11 @@ ServerEvents.recipes((event) => {
 		}
 	}
 	event.forEachRecipe({ type: 'smoking' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		overrideCooking('smoking', recipe)
 	})
 	event.forEachRecipe({ type: 'campfire_cooking' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		overrideCooking('campfire', recipe)
 	})
 
@@ -3789,7 +3822,7 @@ ServerEvents.recipes((event) => {
 
 	// Change Metallurgium and Celestium gear recipes
 	event.forEachRecipe([{ type: 'smithing_transform', output: /celestium/ }, { type: 'smithing_transform', output: /metallurgium/ }], recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 
 		const JSON = recipe.json;
 
@@ -3842,7 +3875,7 @@ ServerEvents.recipes((event) => {
 		'born_in_chaos_v1:dark_metal_nugget'
 	]
 	event.forEachRecipe([{ type: 'smelting' }, { type: 'blasting' }], recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		const output = recipe.getOriginalRecipeResult();
 		const input = recipe.getOriginalRecipeIngredients();
 		if (output.getId().includes('nugget') && !nuggetsBlacklist.includes(output.getId())) {
@@ -4267,7 +4300,7 @@ ServerEvents.recipes((event) => {
 		'neapolitan:adzuki_curry'
 	];
 	event.forEachRecipe([{ type: 'crafting_shaped' }, { type: 'crafting_shapeless' }], recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		if (!stewIDs.includes(recipe.getId())) return;
 
 		let ingredients = recipe.getOriginalRecipeIngredients();
@@ -4428,7 +4461,7 @@ ServerEvents.recipes((event) => {
 	}
 
 	event.forEachRecipe({ output: /(boat|.*_raft$)/, type: 'crafting_shaped' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		const result = recipe.getOriginalRecipeResult();
 		event.remove({ id: recipe.getId() });
 
@@ -4442,7 +4475,7 @@ ServerEvents.recipes((event) => {
 
 	// Trapdoor, Stairs, Fence and Fence Gates recipes yield more
 	event.forEachRecipe({ output: /trapdoor/, type: 'crafting_shaped' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
 		if (ingredients.length === 6) {
 			const output = recipe.getOriginalRecipeResult().getId();
@@ -4477,7 +4510,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	event.forEachRecipe({ output: /stairs/, type: 'crafting_shaped' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
 		const output = recipe.getOriginalRecipeResult().getId();
 
@@ -4497,7 +4530,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	event.forEachRecipe({ output: /^(?=.*fence)(?!.*gate).*/, type: 'crafting_shaped' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
 		const output = recipe.getOriginalRecipeResult().getId();
 
@@ -4524,7 +4557,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	event.forEachRecipe({ output: /fence_gate/, type: 'crafting_shaped' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
 		const output = recipe.getOriginalRecipeResult().getId();
 
@@ -4545,7 +4578,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	event.forEachRecipe({ output: /ladder/, type: 'crafting_shaped' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
 		const output = recipe.getOriginalRecipeResult().getId();
 
@@ -4618,7 +4651,7 @@ ServerEvents.recipes((event) => {
 	).id('adj:river_bookshelf')
 
 	event.forEachRecipe({ output: /^(?=.*_sign)(?!.*hanging)(?!.*post).*/, type: 'crafting_shaped' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 
 		const ingredients = recipe.getOriginalRecipeIngredients().toArray();
 		const output = recipe.getOriginalRecipeResult().getId();
@@ -4691,7 +4724,7 @@ ServerEvents.recipes((event) => {
 	}).id('adj:cognitive_alloy')
 
 	event.forEachRecipe({ type: 'experienceobelisk:molecular_metamorphosis' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		const json = recipe.json.deepCopy()
 
 		let object = {}
@@ -5293,7 +5326,7 @@ ServerEvents.recipes((event) => {
 		}
 	};
 	event.forEachRecipe({ type: 'crafting_shapeless' }, recipe => {
-		if (recipe == null) return;
+		if (!recipe) return;
 		const output = recipe.getOriginalRecipeResult();
 		if (!(output.getId().includes('ars') && output.getId().includes('ritual_'))) return;
 
@@ -5377,18 +5410,17 @@ ServerEvents.recipes((event) => {
 
 	// Aether repairing
 	Item.getTypeList().forEach(id => {
-		const item = Item.of(id);
-		const maxDamage = item.maxDamage;
+		const maxDamage = Item.of(id).maxDamage;
 		if (maxDamage > 0) {
 			event.custom({
-				"type": "aether:repairing",
-				"ingredient": {
-					"item": id
+				type: "aether:repairing",
+				ingredient: {
+					item: id
 				},
-				"repairTime": Math.ceil((1.75 * Math.sqrt(maxDamage)) * 20)
+				repairTime: Math.ceil((1.4 * Math.sqrt(maxDamage)) * 20)
 			}).id(`adj:repairing/${flattenedID(id)}`);
 		}
-	})
+	});
 
 	// Summoning Rituals
 	function toSeconds(time) {
@@ -5976,29 +6008,47 @@ ServerEvents.recipes((event) => {
 		event.remove({ output: item });
 	});
 
-	function fieryItemRecipe(input, output) {
-		event.recipes.ars_nouveau.enchanting_apparatus(
-			[
-				'twilightforest:fiery_ingot',
-				'twilightforest:fiery_ingot',
-				'botania:rune_fire',
-				'netherrack',
-				'netherrack',
-				'netherrack'
-			],
-			input,
+	function fieryItemRecipe(output, shape) {
+		event.shaped(
 			output,
-			0,
-			true
+			shape,
+			{
+				I: 'twilightforest:fiery_ingot',
+				R: 'botania:rune_fire',
+				O: 'obsidian',
+				B: 'blaze_rod'
+			}
 		).id(`adj:fiery_gear/${flattenedID(output)}`);
 	}
 
-	fieryItemRecipe('iron_helmet', 'twilightforest:fiery_helmet');
-	fieryItemRecipe('iron_chestplate', 'twilightforest:fiery_chestplate');
-	fieryItemRecipe('iron_leggings', 'twilightforest:fiery_leggings');
-	fieryItemRecipe('iron_boots', 'twilightforest:fiery_boots');
-	fieryItemRecipe('iron_sword', 'twilightforest:fiery_sword');
-	fieryItemRecipe('iron_pickaxe', 'twilightforest:fiery_pickaxe');
+	fieryItemRecipe('twilightforest:fiery_helmet', [
+		'IOI',
+		'O O'
+	]);
+	fieryItemRecipe('twilightforest:fiery_chestplate', [
+		'I I',
+		'ORO',
+		'OIO'
+	]);
+	fieryItemRecipe('twilightforest:fiery_leggings', [
+		'IRI',
+		'O O',
+		'O O'
+	]);
+	fieryItemRecipe('twilightforest:fiery_boots', [
+		'O O',
+		'I I'
+	]);
+	fieryItemRecipe('twilightforest:fiery_sword', [
+		' I ',
+		'OIO',
+		' B '
+	]);
+	fieryItemRecipe('twilightforest:fiery_pickaxe', [
+		'IRI',
+		' B ',
+		' B '
+	]);
 
 	alloyForgeRecipe(
 		[
@@ -6189,6 +6239,12 @@ ServerEvents.recipes((event) => {
 	).id('adj:rainy_snowy_block');
 
 	// Vinery x Brewing and Chewing
+	/**
+	 * 
+	 * @param {Internal.FluidType_} fluid 
+	 * @param {Internal.Item_} item 
+	 * @param {Internal.Item_} containerItem 
+	 */
 	function pouringRecipe(fluid, item, containerItem) {
 		event.custom({
 			type: "brewinandchewin:keg_pouring",
@@ -6205,6 +6261,21 @@ ServerEvents.recipes((event) => {
 		}).id(`adj:pouring/${flattenedID(item)}`)
 	}
 
+	/**
+	 * 
+	 * @param {Internal.FluidType_} basefluid 
+	 * @param {Internal.Item_[]} ingredients 
+	 * @param {Internal.FluidType_} resultFluid 
+	 * @param {Internal.Item_} resultItem 
+	 * @param {Internal.Item_} containerItem
+	 * Defaults to `vinery:wine_bottle` 
+	 * @param {number} temperature 
+	 * Number ranges from 1 - 5, defaults to 3
+	 * @param {number} experience
+	 * Defaults to 1.0 
+	 * @param {number} fermentingtime
+	 * Defaults to 9600, which is 480 seconds (8 minutes) 
+	 */
 	function fermentingRecipe(basefluid, ingredients, resultFluid, resultItem, containerItem, temperature, experience, fermentingtime) {
 
 		let ingr = [];
@@ -6222,7 +6293,7 @@ ServerEvents.recipes((event) => {
 				fluid: basefluid
 			},
 			experience: (experience) ? experience : 1.0,
-			fermentingtime: (fermentingtime) ? fermentingRecipe : 9600,
+			fermentingtime: (fermentingtime) ? fermentingtime : 9600,
 			ingredients: ingr,
 			recipe_book_tab: "drinks",
 			result: {
@@ -6259,13 +6330,20 @@ ServerEvents.recipes((event) => {
 	fermentingRecipe('kubejs:white_grapejuice', ['honey_bottle', 'sweet_berries', 'glow_berries', 'aether:ambrosium_shard'], 'kubejs:solaris_wine', 'vinery:solaris_wine');
 	fermentingRecipe('kubejs:white_savanna_grapejuice', ['creeper_head', 'gunpowder', 'sugar', 'sugar'], 'kubejs:creepers_crush', 'vinery:creepers_crush');
 	fermentingRecipe('kubejs:white_savanna_grapejuice', ['kelp', 'kelp', 'sugar'], 'kubejs:kelp_cider', 'vinery:kelp_cider');
-	fermentingRecipe('kubejs:white_taiga_grapejuice', ['twilightforest:aurora_block', 'ice', 'ice'], 'kubejs:eiswein', 'vinery:eiswein');
+	fermentingRecipe('kubejs:white_taiga_grapejuice', ['twilightforest:aurora_block', 'neapolitan:ice_cubes', 'neapolitan:ice_cubes'], 'kubejs:eiswein', 'vinery:eiswein');
 	fermentingRecipe('kubejs:white_taiga_grapejuice', ['sugar', 'iron_ingot', 'kelp'], 'kubejs:aegis_wine', 'vinery:aegis_wine');
 	fermentingRecipe('kubejs:white_jungle_grapejuice', ['emerald', 'gunpowder', 'spider_eye'], 'kubejs:villagers_fright', 'vinery:villagers_fright');
 	fermentingRecipe('kubejs:white_jungle_grapejuice', ['sugar', 'sugar', 'sugar'], 'kubejs:clark_wine', 'vinery:clark_wine');
 
 	fermentingRecipe('kubejs:warped_grapejuice', ['ghast_tear', 'gunpowder', 'sugar'], 'kubejs:ghastly_grenache', 'nethervinery:ghastly_grenache');
 	fermentingRecipe('kubejs:warped_grapejuice', ['warped_fungus', 'crimson_fungus', 'nether_wart', 'netherexp:lightspores'], 'kubejs:nether_fizz', 'nethervinery:nether_fizz');
+
+	fermentingRecipe('honey', ['ice', 'sugar'], 'kubejs:coconut_cocktail', 'beachparty:coconut_cocktail', 'beachparty:coconut_open', 1, 1.0, 4800);
+	fermentingRecipe('brewinandchewin:red_rum', ['neapolitan:ice_cubes', 'sweet_berries', 'sugar'], 'kubejs:sweetberry_cocktail', 'beachparty:sweetberries_cocktail', 'glass_bottle', 1, 1.0, 4800);
+	fermentingRecipe('milk', ['neapolitan:ice_cubes', 'cocoa_beans', 'sugar'], 'kubejs:cocoa_cocktail', 'beachparty:cocoa_cocktail', 'glass_bottle', 1, 1.0, 4800);
+	fermentingRecipe('milk', ['neapolitan:ice_cubes', 'farmersdelight:pumpkin_slice', 'farmersdelight:pumpkin_slice', 'sugar'], 'kubejs:pumpkin_cocktail', 'beachparty:pumpkin_cocktail', 'glass_bottle', 1, 1.0, 4800);
+	fermentingRecipe('brewinandchewin:beer', ['neapolitan:ice_cubes', 'melon_slice', 'neapolitan:strawberries', 'sugar'], 'kubejs:melon_cocktail', 'beachparty:melon_cocktail', 'glass_bottle', 1, 1.0, 4800);
+	fermentingRecipe('honey', ['neapolitan:ice_cubes', 'farmersdelight:milk_bottle', 'farmersdelight:milk_bottle'], 'kubejs:honey_cocktail', 'beachparty:honey_cocktail', 'glass_bottle', 1, 1.0, 4800);
 
 	pouringRecipe('kubejs:red_grapejuice', 'vinery:red_grapejuice');
 	pouringRecipe('kubejs:white_grapejuice', 'vinery:white_grapejuice');
@@ -6772,7 +6850,7 @@ ServerEvents.recipes((event) => {
 	).id(`adj:mcdw/butterfly_crossbow`)
 
 	// Accessories
-	event.recipes.botania.mana_infusion('kubejs:decayed_clover', 'aether_redux:lucky_clover').mana(150000).id('adj:decayed_clover');
+	event.recipes.botania.mana_infusion('kubejs:decayed_clover', 'aether_redux:golden_clover').mana(150000).id('adj:decayed_clover');
 
 	event.shaped(
 		'terra_curio:ancient_chisel',
@@ -8251,7 +8329,7 @@ ServerEvents.recipes((event) => {
 	fullBlockSet('cinnabar', 'polished_cinnabar', 'cinnabar_bricks');
 	fullBlockSet('sulfur', 'polished_sulfur', 'sulfur_bricks');
 
-	event.recipes.create.milling(['kubejs:crushed_sulfur', Item.of('kubejs:crushed_sulfur').withChance(0.5)], 'kubejs:sulfur', 200).id('adj:crushed_sulfur');
+	event.recipes.create.milling(['hybrid-aquatic:sulfur', Item.of('hybrid-aquatic:sulfur').withChance(0.5)], 'kubejs:sulfur', 200).id('adj:crushed_sulfur');
 
 	// Immersive Paintings
 	event.recipes.botania.mana_infusion('immersive_paintings:painting', 'painting').mana(15000).id('adj:magic_painting');
@@ -8292,7 +8370,7 @@ ServerEvents.recipes((event) => {
 			'botanicadds:gaiasteel_nugget',
 			'botanicadds:gaiasteel_nugget',
 		],
-		'5x prometheum_ingot',
+		'5x mythicmetals:prometheum_ingot',
 		500000
 	);
 
@@ -8309,4 +8387,81 @@ ServerEvents.recipes((event) => {
 			event.recipes.create.pressing(inter, inter),
 		]
 	).transitionalItem(inter).loops(2).id('adj:life_shard');
+
+	// Rework Neptune, Phoenix and Obsidian armor
+	function phoenixGearRecipe(input, output, addObsidianRecipeVariant, baseObsidianItem) {
+		event.recipes.ars_nouveau.enchanting_apparatus(
+			[
+				'mythicmetals:star_platinum',
+				'mythicmetals:midas_gold_block',
+				'mythicmetals:midas_gold_block',
+				'botania:rune_wrath',
+				'botania:blaze_block',
+				'botania:blaze_block',
+			],
+			input,
+			output,
+			1000,
+			true
+		).id(`adj:phoenix_gear/${flattenedID(output)}`);
+
+		if (addObsidianRecipeVariant) itemsOnGround(
+			[baseObsidianItem],
+			output,
+			`adj:phoenix_gear/${flattenedID(output)}_from_obsidian_armor`,
+			'ars_nouveau:magic_fire',
+			'Toss the armor piece into Magic Fire\nto make it burn bright again');
+	}
+
+	phoenixGearRecipe('mythicmetals:palladium_helmet', 'aether:phoenix_helmet', true, 'aether:obsidian_helmet');
+	phoenixGearRecipe('mythicmetals:palladium_chestplate', 'aether:phoenix_chestplate', true, 'aether:obsidian_chestplate');
+	phoenixGearRecipe('mythicmetals:palladium_leggings', 'aether:phoenix_leggings', true, 'aether:obsidian_leggings');
+	phoenixGearRecipe('mythicmetals:palladium_boots', 'aether:phoenix_boots', true, 'aether:obsidian_boots');
+
+	phoenixGearRecipe('mythicmetals:palladium_sword', 'lost_aether_content:phoenix_sword');
+	phoenixGearRecipe('mythicmetals:palladium_axe', 'lost_aether_content:phoenix_axe');
+	phoenixGearRecipe('mythicmetals:palladium_pickaxe', 'lost_aether_content:phoenix_pickaxe');
+	phoenixGearRecipe('mythicmetals:palladium_shovel', 'lost_aether_content:phoenix_shovel');
+	phoenixGearRecipe('mythicmetals:palladium_hoe', 'lost_aether_content:phoenix_hoe');
+
+	// A  bit more universal Cakes
+	event.replaceInput(/cake/, 'wheat', 'create:dough');
+	event.replaceInput(/cake/, 'milk_bucket', 'farmersdelight:milk_bottle');
+
+	// All Aether freezing recipes go into Rubinated Nether's freezer instead
+	event.forEachRecipe({ type: "aether:freezing" }, recipe => {
+		if (!recipe) return;
+		const json = recipe.json;
+		const result = recipe.getOriginalRecipeResult();
+
+		event.remove({ id: recipe.getId() });
+
+		if (result.id == 'minecraft:blue_ice'
+			|| result.id == 'minecraft:ice'
+			|| result.id == 'minecraft:packed_ice'
+			|| result.id == 'minecraft:obsidian'
+			|| result.id == 'rubinated_nether:ruby') return;
+
+		console.log(json)
+
+		event.custom({
+			type: "rubinated_nether:freezing",
+			cookingtime: json.get('cookingtime'),
+			experience: json.get('experience'),
+			ingredient: json.get('ingredient'),
+			result: result
+		}).id(recipe.getId());
+	});
+
+	event.custom({
+		type: "rubinated_nether:freezing",
+		cookingtime: 400,
+		experience: 1,
+		ingredient: Ingredient.of('rubinated_nether:molten_ruby'),
+		result: 'rediscovered:ruby'
+	}).id('adj:ruby_from_molten_ruby');
+
+	// ADJ ~ The Ocean Update
+	event.smoking('dried_kelp', 'oceanicrealms:giant_kelp', 0.2, 200).id('adj:dried_kelp_from_giant_kelp');
+	event.smoking('dried_kelp', 'hybrid-aquatic:sea_lettuce', 0.2, 200).id('adj:dried_kelp_from_sea_lettuce');
 });

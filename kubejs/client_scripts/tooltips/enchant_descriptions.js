@@ -1,4 +1,4 @@
-const enchantmentDescriptions = {
+const EnchantmentDescriptions = {
 	'minecraft:protection': 'Reduces damage from physical sources.',
 	'minecraft:feather_falling': 'Reduces fall damage.',
 	'minecraft:blast_protection': 'Reduces damage from environmental effects and magic.',
@@ -136,63 +136,4 @@ const enchantmentDescriptions = {
 	'kubejs:curse_of_polarity': 'Enchanted weapon either deals 50% more damage or no damage at all.',
 	'kubejs:curse_of_anti_entropy': 'Chance to freeze attacking mobs, but also to set you on fire at the same time.',
 	'kubejs:deferred_damage': 'Defers a portion of the damage received and transforms it into damage over time.'
-}
-ItemEvents.tooltip(event => {
-
-	function parseMath(expr) {
-		return Function(`'use strict'; return (${expr})`)()
-	}
-
-	event.addAdvanced('minecraft:enchanted_book', (item, advanced, tooltip) => {
-
-		/** @type {any[]} */
-		let nbt = item.nbt;
-		if (!nbt) return;
-		const enchantments = nbt.StoredEnchantments;
-		if (!enchantments) return;
-		const amount = enchantments.length;
-		if (amount == 0) return;
-
-		// Prettier entries
-		for (let i = 2; i < amount + 2; i++) {
-			let line = tooltip[i];
-			tooltip.remove(i);
-			tooltip.add(i, Text.join([
-				Text.gray(' ◇'),
-				Text.of(line)
-			]));
-		}
-
-		// Descriptions
-		for (let i = amount + 1; i > 1; i--) {
-			let enchant = enchantments[i - 2];
-			let id = enchant.id;
-			let level = enchant.lvl;
-
-			/**	@type {Internal.MutableComponent_|String} */
-			let desc = enchantmentDescriptions[id];
-			if (desc) {
-				if (desc.base) {
-					let base = desc.base;
-					let args = desc.args;
-					for (let i = 0; i < args.length; i++) {
-						let arg = args[i];
-						let value = parseMath(arg.replace('level', level));
-						base = base.replace('{}', value);
-					}
-					desc = Text.of(base);
-				}
-				else {
-					desc = Text.of(desc);
-				}
-			}
-			// Fallback logic
-			else {
-				let idSplit = id.split(':')
-				desc = Text.translate(`enchantment.${idSplit[0]}.${idSplit[1]}.desc`);
-			}
-
-			tooltip.add(i + 1, Text.join([Text.darkGray('   ▷ '), desc.darkGray()]))
-		}
-	})
-})
+};

@@ -56,7 +56,9 @@ const replaceItemsMap = {
 	'minecraft:shield': 'shieldexp:iron_shield',
 	'twilightforest:raw_venison': 'naturalist:venison',
 	'twilightforest:cooked_venison': 'naturalist:cooked_venison',
-	'farmersdelight:canvas': 'xercapaint:item_canvas'
+	'farmersdelight:canvas': 'xercapaint:item_canvas',
+
+	'aether:skyroot_stick': 'stick',
 }
 
 LootJS.modifiers((event) => {
@@ -93,6 +95,24 @@ LootJS.modifiers((event) => {
 		'farmersdelight:flint_knife',
 
 		'aether:life_shard',
+
+		'lost_aether_content:phoenix_sword',
+		'lost_aether_content:phoenix_pickaxe',
+		'lost_aether_content:phoenix_shovel',
+		'lost_aether_content:phoenix_hoe',
+		'lost_aether_content:phoenix_axe',
+		'aether:phoenix_helmet',
+		'aether:phoenix_chestplate',
+		'aether:phoenix_leggings',
+		'aether:phoenix_boots',
+
+		'aether:neptune_helmet',
+		'aether:neptune_chestplate',
+		'aether:neptune_leggings',
+		'aether:neptune_boots',
+
+		'ancient_aether:warrior_pendant',
+		'aether:regeneration_stone',
 
 	].concat(global.blacklistedItemsArray);
 	removedFromLoot.forEach(e => event.addLootTableModifier(/.*/).removeLoot(e));

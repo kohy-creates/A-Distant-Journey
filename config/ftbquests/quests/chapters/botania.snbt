@@ -737,7 +737,7 @@
 			}]
 			title: "Moving Out"
 			x: 24.0d
-			y: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1495,8 +1495,8 @@
 				}
 			]
 			title: "At Maximum Force"
-			x: 23.5d
-			y: -5.0d
+			x: 24.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["602FA24B60010322"]

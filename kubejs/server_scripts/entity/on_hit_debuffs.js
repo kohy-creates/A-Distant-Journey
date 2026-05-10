@@ -57,9 +57,12 @@ EntityEvents.hurt('player', event => {
 
 	entryIterator: for (let entry of OnHitDebuffConfig) {
 		typeChecker: for (let mob of entry.mobs) {
-			if (mob instanceof RegExp && mob.test(type)) {
-				chosenEntry = entry;
-				break entryIterator;
+			if (mob instanceof RegExp) {
+				if (mob.test(type)) {
+					chosenEntry = entry;
+					break entryIterator;
+				}
+				else continue typeChecker;
 			}
 			else if ((!mob.includes(':') && mob == type.replace('minecraft:', '')) || mob == type) {
 				chosenEntry = entry;

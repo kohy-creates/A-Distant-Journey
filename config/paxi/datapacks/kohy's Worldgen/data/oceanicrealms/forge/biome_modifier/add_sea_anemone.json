@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#minecraft:is_ocean",
+	"features": "oceanicrealms:sea_anemone",
+	"step": "top_layer_modification"
+}

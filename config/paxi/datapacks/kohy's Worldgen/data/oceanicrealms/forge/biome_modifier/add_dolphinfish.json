@@ -1,0 +1,10 @@
+{
+	"type": "forge:add_spawns",
+	"biomes": "#oceanicrealms:warm_oceans",
+	"spawners": {
+		"type": "oceanicrealms:dolphinfish",
+		"weight": 20,
+		"minCount": 5,
+		"maxCount": 7
+	}
+}

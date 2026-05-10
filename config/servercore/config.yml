@@ -6,19 +6,19 @@ features:
   # Stops the server from loading spawn chunks.
   disable-spawn-chunks: true
   # Prevents lagspikes caused by players moving into unloaded chunks.
-  prevent-moving-into-unloaded-chunks: false
+  prevent-moving-into-unloaded-chunks: true
   # The amount of ticks between auto-saves when /save-on is active.
   autosave-interval: 6000
   # The fraction that decides the chance of experience orbs being able to merge with each other. (1 = 100%, 40 = 2.5%)
   # Note that just like in vanilla, experience orbs will still need to be of the same size to actually merge.
   xp-merge-fraction: 3
   # The radius in blocks that experience orbs will merge at.
-  xp-merge-radius: 4.5
+  xp-merge-radius: 8
   # The radius in blocks that items will merge at.
-  item-merge-radius: 4.5
+  item-merge-radius: 8
   lobotomize-villagers:
     # Makes villagers tick less often if they are stuck in a 1x1 space.
-    enabled: true
+    enabled: false
     # Decides the interval in between villager ticks when lobotomized.
     tick-interval: 20
 

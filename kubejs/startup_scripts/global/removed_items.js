@@ -21,8 +21,6 @@ const RemovedItems = {
 		'aquamirae:maze_rose',
 		'aquamirae:terrible_sword',
 
-		'aether:chainmail_gloves',
-
 		'rediscovered:quiver',
 		'rediscovered:grass_slab',
 		'rediscovered:podzol_slab',
@@ -575,6 +573,30 @@ const RemovedItems = {
 		'ancient_aether:ancient_sword',
 		'ancient_aether:ancient_pendant',
 		'ancient_aether:ancient_ring',
+		'aether:iron_ring',
+		'aether:golden_ring',
+		'aether:iron_pendant',
+		'aether:golden_pendant',
+		'aether:ice_ring',
+		'aether:zanite_ring',
+		'ancient_aether:valkyrum_ring',
+		'ancient_aether:hermes_ring',
+		'ancient_aether:warrior_ring',
+		'ancient_aether:growth_ring',
+		'aether:zanite_pendant',
+		'ancient_aether:growth_pendant',
+		'aether:cloud_staff',
+		'lost_aether_content:power_gloves',
+		'lost_aether_content:agility_boots',
+		'aether:phoenix_gloves',
+		'aether:obsidian_gloves',
+		'aetherdelight:skyjade_knife',
+		'aetherdelight:stratus_knife',
+		'ancient_aether:grapes',
+		'aether_redux:shroom_ring',
+		'ancient_aether:valkyrum_lance',
+		'aether:chainmail_gloves',
+		'aether:freezer',
 
 		'vinery:dark_cherry_chair',
 		'vinery:dark_cherry_table',
@@ -642,7 +664,9 @@ const RemovedItems = {
 		/beachparty:.*thatch.*/,
 		'beachparty:sandwaves',
 		/beachparty.*floorboard$/,
-		'beachparty:completionist_banner',
+		'beachparty:beachparty_banner',
+		'beachparty:palm_bar',
+		'beachparty:message_in_a_bottle',
 
 		'minecraft:copper_nugget',
 		'minecraft:copper_leggings',
@@ -711,11 +735,23 @@ const RemovedItems = {
 		'waxed:ender_candle',
 		'waxed:cupric_candle',
 		'waxed:waxed_arid_sand',
-		'waxed:waxed_red_arid_sand'
+		'waxed:waxed_red_arid_sand',
+
+		/hybrid\-aquatic:driftwood/,
+		/hybrid\-aquatic:.*crate.*/,
+		/hybrid\-aquatic:.*karkinos.*/,
+		'hybrid-aquatic:crab_pot',
+		/hybrid\-aquatic:diving_/,
+		
+		'crittersandcompanions:pearl',
+		'crittersandcompanions:pearl_necklace_1',
+		'crittersandcompanions:pearl_necklace_2',
+		'crittersandcompanions:pearl_necklace_3',
 	]
 };
 
 global.blacklistedItems = new Set([typeof String]);
+global.blacklistedItemsArray = [];
 
 function regenerateBlacklist() {
 	Item.getTypeList().forEach(id => {

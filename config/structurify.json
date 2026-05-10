@@ -1,9 +1,9 @@
 {
   "config_version": "2.0.22",
-  "config_datetime": "2026-05-02_21-43-20",
+  "config_datetime": "2026-05-09_22-18-47",
   "general": {
     "disable_all_structures": false,
-    "prevent_structure_overlap": false,
+    "prevent_structure_overlap": true,
     "enable_global_spacing_and_separation_modifier": true,
     "global_spacing_and_separation_modifier": 1.3
   },
@@ -718,18 +718,6 @@
       }
     },
     {
-      "spacing": 30,
-      "separation": 20,
-      "name": "betterfortresses:fortress",
-      "is_disabled": false,
-      "salt": 784827271,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "betterfortresses:fortress": 1
-      }
-    },
-    {
       "spacing": 80,
       "separation": 50,
       "name": "cataclysm:burning_arena",
@@ -763,16 +751,6 @@
       "override_global_spacing_and_separation_modifier": true,
       "structure_weights": {
         "cataclysm:soul_black_smith": 1
-      }
-    },
-    {
-      "name": "create_ltab:the_caretakersbunker",
-      "is_disabled": false,
-      "salt": 1,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "structure_weights": {
-        "create_ltab:the_caretakersbunker": 1
       }
     },
     {
@@ -821,13 +799,13 @@
       }
     },
     {
-      "spacing": 16,
+      "spacing": 14,
       "separation": 11,
       "name": "minecraft:nether_complexes",
       "is_disabled": false,
       "salt": 30084232,
       "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
+      "override_global_spacing_and_separation_modifier": true,
       "structure_weights": {
         "minecraft:bastion_remnant": 3,
         "minecraft:fortress": 2

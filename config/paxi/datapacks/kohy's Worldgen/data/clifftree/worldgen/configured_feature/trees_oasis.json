@@ -5,7 +5,7 @@
     "features": [
       {
         "chance": 0.25,
-        "feature": "clifftree:jungle_tree_alt"
+        "feature": "beachparty:palm_tree"
       },
       {
         "chance": 0.2,

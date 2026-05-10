@@ -3,6 +3,24 @@
 		{
 			"id": "/anvil\/enchanting/",
 			"category": "emi:anvil_repairing"
+		},
+		{
+			"id": "/ars_elemental.soulbound/"
+		},
+		{
+			"category": "minecraft:crafting_special_repairitem"
+		},
+		{
+			"category": "minecraft:smithing_trim"
+		},
+		{
+			"category": "beachparty:mini_fridge_freezing"
+		},
+		{
+			"category": "beachparty:tiki_bar_mixing"
+		},
+		{
+			"id": "/ars_nouveau.reactive/"
 		}
 	]
 }

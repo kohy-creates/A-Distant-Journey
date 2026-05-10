@@ -1,0 +1,5 @@
+
+["Spawning Settings"]
+	#disable/enable natural spawning of crabs
+	spawnCrabs = false
+

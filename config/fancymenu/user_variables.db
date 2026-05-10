@@ -68,7 +68,7 @@ variable {
 
 variable {
   name = world.border_size
-  value = 10k
+  value = 20k
   reset_on_launch = false
 }
 

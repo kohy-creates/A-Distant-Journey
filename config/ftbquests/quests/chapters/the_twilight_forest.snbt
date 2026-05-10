@@ -6,14 +6,81 @@
 	group: "4C4C64E64E42D01F"
 	icon: "twilightforest:hollow_oak_sapling"
 	id: "4BD2F76C7C70A2CC"
-	images: [{
-		height: 1.75d
-		image: "twilightforest:block/canopy_log_top"
-		rotation: 45.0d
-		width: 1.75d
-		x: 1.0d
-		y: -4.5d
-	}]
+	images: [
+		{
+			height: 1.75d
+			image: "etcetera:block/iridescent_wool"
+			rotation: 45.0d
+			width: 1.75d
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			height: 0.1d
+			image: "minecraft:textures/misc/white.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			height: 1.5d
+			image: "kubejs:item/eye_of_angels"
+			rotation: 0.0d
+			width: 1.5d
+			x: -5.002443870129831d
+			y: -1.366735504825641d
+		}
+		{
+			height: 0.1d
+			image: "minecraft:textures/misc/white.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			height: 1.5d
+			image: "kubejs:item/eye_of_dreams"
+			rotation: 0.0d
+			width: 1.5d
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			height: 0.1d
+			image: "minecraft:textures/misc/white.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			height: 1.5d
+			image: "kubejs:item/eye_of_desolation"
+			rotation: 0.0d
+			width: 1.5d
+			x: -5.002443870129831d
+			y: 7.133264495174352d
+		}
+		{
+			height: 1.75d
+			image: "twilightforest:block/ironwood_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			color: 5045512
+			height: 1.75d
+			image: "minecraft:block/dark_oak_leaves"
+			rotation: 45.0d
+			width: 1.75d
+			x: 4.5d
+			y: -3.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -62,7 +129,7 @@
 			id: "3A4CC32D572734A8"
 			shape: "diamond"
 			size: 1.5d
-			subtitle: "Give Quest Ram what it's missing"
+			subtitle: "Give a Quest Ram all of the colors its missing"
 			tasks: [{
 				id: "78F36F05DC7F5F81"
 				item: "twilightforest:quest_ram_trophy"
@@ -70,7 +137,7 @@
 			}]
 			title: "Consummate Baahs"
 			x: 1.0d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3EAD28D06360BF09"]
@@ -92,7 +159,7 @@
 			]
 			title: "Twilight Positioning System"
 			x: 2.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["718E0AAC4FC76ECF"]
@@ -225,7 +292,7 @@
 				value: 1L
 			}]
 			x: -1.5d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["004B1FB44B211C7C"]
@@ -237,7 +304,7 @@
 				value: 1L
 			}]
 			x: 0.5d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -252,7 +319,7 @@
 				value: 1L
 			}]
 			x: -0.5d
-			y: 6.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["4C5FB897B907366A"]
@@ -263,8 +330,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.5d
-			y: 8.0d
+			x: -2.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6AF57344A6530D2E"]
@@ -287,8 +354,8 @@
 					value: 1L
 				}
 			]
-			x: 2.5d
-			y: 8.5d
+			x: -3.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["0AD5DEABD53DD691"]
@@ -304,8 +371,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 8.0d
+			x: -2.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["635B3CA9DF9AEFE0"]
@@ -335,8 +402,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 6.5d
+			x: -0.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["33DE618E8B49FC45"]
@@ -383,8 +450,8 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
-			y: 0.0d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["137CCC12CF3F56E2"]
@@ -394,8 +461,8 @@
 				structure: "twilightforest:final_castle"
 				type: "structure"
 			}]
-			x: 6.0d
-			y: 5.0d
+			x: 1.5d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -410,66 +477,7 @@
 				item: "twilightforest:fiery_ingot"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["137DF4F56A85289F"]
-			icon: {
-				Count: 1
-				id: "twilightforest:fiery_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "7A8CFD6D8C74B9AA"
-			tasks: [
-				{
-					id: "381445987E41B545"
-					item: {
-						Count: 1
-						id: "twilightforest:fiery_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "76529D227CAF36F8"
-					item: {
-						Count: 1
-						id: "twilightforest:fiery_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0C2C678B89F07BE7"
-					item: {
-						Count: 1
-						id: "twilightforest:fiery_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0662EE47E6357EA5"
-					item: {
-						Count: 1
-						id: "twilightforest:fiery_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			x: -4.5d
+			x: 2.5d
 			y: 6.5d
 		}
 		{
@@ -486,8 +494,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 8.5d
+			x: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3EAD28D06360BF09"]
@@ -509,7 +517,10 @@
 					Damage: 0
 				}
 			}
+			icon_scale: 0.75d
 			id: "460F1292C2D8A621"
+			shape: "diamond"
+			size: 1.5d
 			tasks: [
 				{
 					id: "25E77CABBD28E44F"
@@ -617,8 +628,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 10.5d
+			x: 5.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3669FAFD806AE09C"]
@@ -630,8 +641,8 @@
 				title: "Craft something with the Twilight Altar"
 				type: "custom"
 			}]
-			x: 6.0d
-			y: 3.5d
+			x: 2.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7404E901169113BF"]
@@ -641,8 +652,8 @@
 				item: "twilightforest:uncrafting_table"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.5d
+			x: 3.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7404E901169113BF"]
@@ -658,8 +669,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: 1.5d
+			x: 3.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["7404E901169113BF"]
@@ -675,8 +686,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 3.5d
+			x: 3.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["137DF4F56A85289F"]
@@ -686,8 +697,53 @@
 				item: "twilightdelight:fiery_cooking_pot"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 8.0d
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7404E901169113BF"]
+			id: "12F4562EEF0E5E45"
+			tasks: [{
+				id: "299E93CA71D34AA6"
+				item: "terra_curio:gravity_globe"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3EAD28D06360BF09"]
+			icon: "twilightforest:time_sapling"
+			icon_scale: 0.75d
+			id: "5A0CDDCFB8D64EC5"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "306B7FFA7FDA691D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "twilightforest:transformation_sapling"
+							}
+							{
+								Count: 1b
+								id: "twilightforest:mining_sapling"
+							}
+							{
+								Count: 1b
+								id: "twilightforest:time_sapling"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
 		}
 	]
 	title: "The Twilight Forest"

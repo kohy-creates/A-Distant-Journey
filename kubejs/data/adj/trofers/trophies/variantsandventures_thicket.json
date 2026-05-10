@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#2a614e",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "variantsandventures:thicket"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.variantsandventures.thicket",
+				"color": "#2a614e"
+			}
+		]
+	}
+}

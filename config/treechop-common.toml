@@ -120,7 +120,7 @@
 
 	[compatibility.general]
 		#Only chop when using the correct tool for drops, if any (does nothing in vanilla, but some mods add tool requirements to logs
-		choppingRequiresCorrectToolForDrops = true
+		choppingRequiresCorrectToolForDrops = false
 		#Only chop when using a tool that increases block breaking speed (such as axes for logs)
 		choppingRequiresFastBreakingTool = false
 		#Prevent chopping when right-clicking blocks

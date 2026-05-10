@@ -470,6 +470,7 @@
 		"v_slab_compat:phantasm/polished_obsidian_brick_vertical_slab": "v_slab_compat:cataclysm/polished_obsidian_vertical_slab",
 
 		"ancient_aether:grape_vine": "minecraft:air",
+		"ancient_aether:sky_grass": "aether_redux:short_aether_grass",
 		"aether_redux:fieldsproot_petals": "minecraft:air",
 		"quark:iron_rod": "minecraft:air",
 		"twilightforest:iron_ladder": "quark:iron_ladder",

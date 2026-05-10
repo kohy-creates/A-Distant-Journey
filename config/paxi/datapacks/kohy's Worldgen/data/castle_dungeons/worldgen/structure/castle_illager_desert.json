@@ -1,0 +1,112 @@
+{
+	"biomes": "#castle_dungeons:has_structure/castle_illager_desert",
+	"max_size": 8,
+	"min_size": 4,
+	"pieces": {
+		"door": "castle_dungeons:illager_castle/desert/pieces/door",
+		"hallway": "castle_dungeons:illager_castle/desert/pieces/hallway",
+		"hallway_entrance": "castle_dungeons:illager_castle/desert/pieces/hallway_entrance",
+		"hallway_window": "castle_dungeons:illager_castle/desert/pieces/hallway_window",
+		"passage": "castle_dungeons:illager_castle/desert/pieces/passage",
+		"room": "castle_dungeons:illager_castle/desert/pieces/room",
+		"stairs": "castle_dungeons:illager_castle/desert/pieces/stairs",
+		"tower": "castle_dungeons:illager_castle/desert/pieces/tower",
+		"tower_balustrade": "castle_dungeons:illager_castle/desert/pieces/tower_balustrade",
+		"tower_entrance": "castle_dungeons:illager_castle/desert/pieces/tower_entrance",
+		"tower_window": "castle_dungeons:illager_castle/desert/pieces/tower_window",
+		"walk": "castle_dungeons:illager_castle/desert/pieces/walk",
+		"walk_balustrade": "castle_dungeons:illager_castle/desert/pieces/walk_balustrade",
+		"wall": "castle_dungeons:illager_castle/desert/pieces/wall"
+	},
+	"processors": [],
+	"rooms": [
+		{
+			"max_count": 2,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/alchemy",
+			"weight": 2
+		},
+		{
+			"max_count": 5,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/bed",
+			"weight": 1
+		},
+		{
+			"max_count": 3,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/blacksmith",
+			"weight": 2
+		},
+		{
+			"max_count": 5,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/cake",
+			"weight": 1
+		},
+		{
+			"max_count": 3,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/coal_storage",
+			"weight": 1
+		},
+		{
+			"max_count": 3,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/dinning",
+			"weight": 5
+		},
+		{
+			"max_count": 2,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/enchanting",
+			"weight": 3
+		},
+		{
+			"max_count": 3,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/food_storage",
+			"weight": 1
+		},
+		{
+			"max_count": 3,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/hay_storage",
+			"weight": 1
+		},
+		{
+			"max_count": 3,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/jukebox",
+			"weight": 2
+		},
+		{
+			"max_count": 3,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/kitchen",
+			"weight": 2
+		},
+		{
+			"max_count": 2,
+			"min_count": 1,
+			"structure": "castle_dungeons:illager_castle/common/rooms/library",
+			"weight": 1
+		},
+		{
+			"max_count": 3,
+			"min_count": 0,
+			"structure": "castle_dungeons:illager_castle/common/rooms/storage",
+			"weight": 2
+		},
+		{
+			"max_count": 1,
+			"min_count": 1,
+			"structure": "castle_dungeons:illager_castle/common/rooms/throne",
+			"weight": 10
+		}
+	],
+	"spawn_overrides": {},
+	"step": "surface_structures",
+	"terrain_adaptation": "beard_box",
+	"type": "castle_dungeons:castle"
+}

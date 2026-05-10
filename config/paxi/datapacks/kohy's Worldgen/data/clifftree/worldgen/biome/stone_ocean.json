@@ -73,7 +73,8 @@
       "minecraft:glow_lichen",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:seagrass_warm"
+      "minecraft:seagrass_warm",
+      "minecraft:kelp_cold"
     ],
     [
       "clifftree:extra_gold_remove",

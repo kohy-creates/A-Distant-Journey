@@ -1,0 +1,10 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": [
+		"minecraft:mushroom_fields"
+	],
+	"features": [
+		"kohara:mushroom_fields/cliffs"
+	],
+	"step": "underground_decoration"
+}

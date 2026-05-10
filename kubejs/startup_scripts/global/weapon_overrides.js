@@ -1,11 +1,3 @@
-function round(number) {
-	return Math.round(number);
-}
-
-function roundTo1Decimal(num) {
-	return round(num * 10) / 10;
-}
-
 // Base vanilla toolsets
 const toolset = [
 	'_sword',
@@ -47,10 +39,6 @@ const simplySwordsAttackSpeed = [
 	1.1
 ];
 
-function roundToNearest(value, step) {
-	return Math.round(value / step) * step;
-}
-
 function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 	let i = 0;
 
@@ -66,7 +54,7 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 
 		// Scaled base damage
 		attackDamage = Math.ceil(arg1 * defaultAttackDamage[i] * arg3);
-		attackSpeed = roundToNearest(defaultAttackSpeed[i] * arg2, 0.05);
+		attackSpeed = global.roundToNearest(defaultAttackSpeed[i] * arg2, 0.05);
 
 		global.weapon_overrides[name] = [attackDamage, attackSpeed];
 		i++;
@@ -90,17 +78,17 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 			if (Object.keys(global.weapon_overrides).includes(id)) return;
 
 			const attackDamage = Math.ceil(arg1 * damageMult * arg3);
-			const attackSpeed = roundToNearest(speedVal * arg2, 0.05);
+			const attackSpeed = global.roundToNearest(speedVal * arg2, 0.05);
 
 			global.weapon_overrides[id] = [attackDamage, attackSpeed];
 		});
 		j++;
 	});
-}
+};
 
 global.weapon_overrides = {
 	// attack damage, attack speed, crit chance, crit damage, armor penetration
-	'mythicmetals:mythril_drill': [round(32 * defaultAttackDamage[1]), defaultAttackSpeed[1]],
+	'mythicmetals:mythril_drill': [Math.round(32 * defaultAttackDamage[1]), defaultAttackSpeed[1]],
 	'ancient_aether:valkyrum_lance': [42, 1.3],
 	'botania:manasteel_pick': [15 * defaultAttackDamage[1], defaultAttackSpeed[1]],
 	'botania:elementium_pick': [23 * defaultAttackDamage[1], defaultAttackSpeed[1]],
@@ -120,66 +108,66 @@ global.weapon_overrides = {
 	'mcdw:dagger_void_touched_blade': [58, 2.2],
 	'mcdw:glaive_cackling_broom': [17, 1],
 	'mcdw:glaive_grave_bane': [26, 1],
-	'mcdw:glaive_venom_glaive': [19, 1],
-	'mcdw:hammer_boneclub': [23, 0.8],
-	'mcdw:hammer_bone_cudgel': [64, 0.8],
-	'mcdw:hammer_gravity': [90, 0.8],
-	'mcdw:hammer_great_hammer': [23, 0.8],
-	'mcdw:hammer_stormlander': [28, 0.8],
-	'mcdw:scythe_jailors_scythe': [21, 1.1],
-	'mcdw:scythe_skull_scythe': [54, 1.1],
-	'mcdw:scythe_soul_scythe': [24, 1.1],
+	'mcdw:glaive_venom_glaive': [21, 1],
+	'mcdw:hammer_boneclub': [31, 0.8],
+	'mcdw:hammer_bone_cudgel': [84, 0.8],
+	'mcdw:hammer_gravity': [102, 0.8],
+	'mcdw:hammer_great_hammer': [28, 0.8],
+	'mcdw:hammer_stormlander': [38, 0.8],
+	'mcdw:scythe_jailors_scythe': [22, 1.1],
+	'mcdw:scythe_skull_scythe': [64, 1.1],
+	'mcdw:scythe_soul_scythe': [30, 1.1],
 	'mcdw:sickle_sickle': [10, 1.9],
-	'mcdw:sickle_the_last_laught_silver': [21, 1.9],
-	'mcdw:sickle_the_last_laught_gold': [21, 1.9],
+	'mcdw:sickle_the_last_laught_silver': [19, 1.9],
+	'mcdw:sickle_the_last_laught_gold': [19, 1.9],
 	'mcdw:soul_dagger_soul_knife': [45, 1.2],
 	'mcdw:soul_dagger_truthseeker': [65, 1.2],
-	'mcdw:soul_dagger_eternal_knife': [80, 1.2],
-	'mcdw:staff_battlestaff': [10, 1.3],
-	'mcdw:sword_heartstealer': [43, 0.8],
-	'mcdw:sword_obsidian_claymore': [118, 0.7, 0.24],
-	'mcdw:sword_sinister': [65, 1.8, 0.14],
+	'mcdw:soul_dagger_eternal_knife': [85, 1.2],
+	'mcdw:staff_battlestaff': [9, 1.8],
+	'mcdw:sword_heartstealer': [53, 0.8],
+	'mcdw:sword_obsidian_claymore': [121, 0.7, 0.24],
+	'mcdw:sword_sinister': [58, 1.8, 0.14],
 
 	'minecraft:trident': [21, 1.1, 0.08],
 	'farmersdelight:skillet': [12, 1],
-	'zenith:zenith': [90, 3.5, 0.14]
-}
+	'zenith:zenith': [110, 3.5, 0.14]
+};
 
-addToolsetOverride('minecraft:wooden', 7)
-addToolsetOverride('mythicmetals:copper', 9)
-addToolsetOverride('minecraft:iron', 12)
-addToolsetOverride('minecraft:gold', 12)
-addToolsetOverride('mythicmetals:aquarium', 13)
-addToolsetOverride('mythicmetals:tidesinger', 15)
-addToolsetOverride('mythicmetals:bronze', 14)
-addToolsetOverride('mythicmetals:kyber', 16)
-addToolsetOverride('additionaladditions:rose_gold', 16)
-addToolsetOverride('minecraft:diamond', 23)
-addToolsetOverride('cataclysm:black_steel', 23)
-addToolsetOverride('botania:manasteel', 15, 1.125)
-addToolsetOverride('mythicmetals:steel', 28, 0.775)
-addToolsetOverride('mythicmetals:mythril', 15)
-addToolsetOverride('mythicmetals:orichalcum', 20, 1.125)
-addToolsetOverride('mythicmetals:midas_gold', 18)
-addToolsetOverride('mythicmetals:stormyx', 29, 1.125)
-addToolsetOverride('botania:elementium', 23)
-addToolsetOverride('mythicmetals:palladium', 28)
-addToolsetOverride('aether:skyroot', 22)
-addToolsetOverride('aether:holystone', 29)
-addToolsetOverride('aether:zanite', 35)
-addToolsetOverride('aether:gravitite', 42, 0.75)
-addToolsetOverride('ancient_aether:valkyrum', 48)
-addToolsetOverride('lost_aether_content:phoenix', 46)
-addToolsetOverride('minecraft:netherite', 56)
-addToolsetOverride('mythicmetals:adamantite', 52)
-addToolsetOverride('mythicmetals:prometheum', 70, 0.6)
-addToolsetOverride('mythicmetals:star_platinum', 64)
-addToolsetOverride('unusualend:pearlescent', 68)
-addToolsetOverride('phantasm:crystalline', 58)
-addToolsetOverride('majruszsdifficulty:enderium', 72)
-addToolsetOverride('mythicmetals:celestium', 90)
-addToolsetOverride('mythicmetals:metallurgium', 90)
-addToolsetOverride('witherstorm:command_block', 101)
+addToolsetOverride('minecraft:wooden', 7);
+addToolsetOverride('mythicmetals:copper', 9);
+addToolsetOverride('minecraft:iron', 12);
+addToolsetOverride('minecraft:gold', 12);
+addToolsetOverride('mythicmetals:aquarium', 13);
+addToolsetOverride('mythicmetals:tidesinger', 15);
+addToolsetOverride('mythicmetals:bronze', 14);
+addToolsetOverride('mythicmetals:kyber', 16);
+addToolsetOverride('additionaladditions:rose_gold', 16);
+addToolsetOverride('minecraft:diamond', 23);
+addToolsetOverride('cataclysm:black_steel', 23);
+addToolsetOverride('botania:manasteel', 15, 1.125);
+addToolsetOverride('mythicmetals:steel', 28, 0.775);
+addToolsetOverride('mythicmetals:mythril', 15);
+addToolsetOverride('mythicmetals:orichalcum', 20, 1.125);
+addToolsetOverride('mythicmetals:midas_gold', 18);
+addToolsetOverride('mythicmetals:stormyx', 29, 1.125);
+addToolsetOverride('botania:elementium', 23);
+addToolsetOverride('mythicmetals:palladium', 28);
+addToolsetOverride('aether:skyroot', 15);
+addToolsetOverride('aether:holystone', 18);
+addToolsetOverride('aether:zanite', 28);
+addToolsetOverride('aether:gravitite', 35, 0.75);
+addToolsetOverride('ancient_aether:valkyrum', 42);
+addToolsetOverride('minecraft:netherite', 50);
+addToolsetOverride('mythicmetals:adamantite', 48);
+addToolsetOverride('mythicmetals:prometheum', 65, 0.6);
+addToolsetOverride('mythicmetals:star_platinum', 60);
+addToolsetOverride('lost_aether_content:phoenix', 76);
+addToolsetOverride('unusualend:pearlescent', 64);
+addToolsetOverride('phantasm:crystalline', 55);
+addToolsetOverride('majruszsdifficulty:enderium', 72);
+addToolsetOverride('mythicmetals:celestium', 80);
+addToolsetOverride('mythicmetals:metallurgium', 80);
+addToolsetOverride('witherstorm:command_block', 94);
 
 global.toolReachOverrides = {
 	'twilightforest:ironwood_pickaxe': 1.5,

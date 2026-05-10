@@ -110,11 +110,6 @@ ItemEvents.modification(event => {
 	});
 
 	const rawFish = [
-		'beef',
-		'porkchop',
-		'mutton',
-		'chicken',
-		'rabbit',
 		'cod',
 		'rediscovered:raw_fish',
 		'salmon',
@@ -155,9 +150,7 @@ ItemEvents.modification(event => {
 		'delightful:raw_goat',
 		'born_in_chaos_v1:rotten_fish'
 	]
-	/**
-	 * @type {InputItem_[]}
-	 */
+
 	const rawMeatNoFish = [
 		'beef',
 		'porkchop',
@@ -173,11 +166,9 @@ ItemEvents.modification(event => {
 
 	const rawMeat = rawFish.concat(rawMeatNoFish);
 
-	/**
-	 * @type {[InputItem_|InputItem_[], number|number[]][]}
-	 */
 	const foodMap = [
 		['apple', 2],
+		['beachparty:coconut_open', 1],
 		['melon_slice', 1],
 		['sweet_berries', 1],
 		['glow_berries', 1],
@@ -210,8 +201,6 @@ ItemEvents.modification(event => {
 			'upgrade_aquatic:cooked_lionfish'
 		], [5, 0.6]],
 		['bread', 6],
-		// ['buzzier_bees:honey_bread', 7],
-		// ['buzzier_bees:glazed_porkchop', [8, 0.8]],
 		['berry_good:sweet_berry_mince', [3, 0.3]],
 		['berry_good:glowgurt', [8, 0.8]],
 		[['mushroom_stew', 'beetroot_soup', 'suspicious_stew'], [8, 1.0]],
@@ -223,12 +212,9 @@ ItemEvents.modification(event => {
 		], [1, 0.3]],
 		['netherexp:hogham', [3, 0.4]],
 		['mynethersdelight:burnt_roll', [5, 0.6]],
-		['delightful:acorn', [1, 0.1]],
-		['delightful:roasted_acorn', [3, 0.5]],
 		['endersdelight:uncanny_cookies', [4, 0.5]],
 		['endersdelight:chorus_stew', [6, 0.5]],
 		['endersdelight:endermite_stew', [6, 0.5]],
-		['dustydecorations:cooked_bratwurst', [8, 0.6]],
 
 	];
 
@@ -247,12 +233,16 @@ ItemEvents.modification(event => {
 
 	event.modify(rawMeat, item => {
 		item.setFoodProperties(food => {
+			food.removeEffect('hunger')
 			food.effect('hunger', duration("0:30"), 0, 0.3)
 		})
 	});
 
 	event.modify('minecraft:milk_bucket', item => {
-		item.setFoodProperties(food => { })
+		item.setFoodProperties(food => {
+			food.hunger(1);
+			food.saturation(1);
+		})
 	});
 
 	event.modify('minecraft:glistering_melon_slice', item => {

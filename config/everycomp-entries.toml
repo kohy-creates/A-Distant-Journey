@@ -93,6 +93,9 @@
 		[types.wood_type.beachparty]
 			palm = true
 
+		[types.wood_type.hybrid-aquatic]
+			driftwood = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -820,6 +823,9 @@
 			scrap_metal = true
 			chrome_metal = true
 			chrome_brick = true
+
+		[types.cut_block_type.hybrid-aquatic]
+			driftwood = true
 
 #Disables specific entries
 [entries]
