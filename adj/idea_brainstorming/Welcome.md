@@ -1,5 +1,8 @@
-This is your new *vault*.
+# Welcome!
 
-Make a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!
+This is the vault for all of my ADJ ideas.
 
-When you are ready, delete this note and make the vault your own.
+It uses [Obsidian.md](https://obsidian.md/) to organize and visualize connections between articles. If you download it on your PC, you can open this folder to see the entire vault and all of the connections. At the time of writing this, I have no idea if there is an export function and I also don't know where I could even insert the exported files.
+
+## Sections:
+- [[Mod Additions]]

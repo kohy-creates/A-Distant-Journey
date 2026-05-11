@@ -1,0 +1,21 @@
+{
+	"feature": "kohara:underground_jungle/vegetation/grass",
+	"placement": [
+		{
+			"type": "minecraft:count_on_every_layer",
+			"count": 12
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:would_survive",
+				"state": {
+					"Name": "jungle_sapling"
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

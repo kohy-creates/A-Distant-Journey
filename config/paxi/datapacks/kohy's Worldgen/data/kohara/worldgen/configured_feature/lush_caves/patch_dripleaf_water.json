@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 32,
+    "xz_spread": 16,
+    "y_spread": 3,
+    "feature": {
+      "feature": "minecraft:dripleaf_water",
+      "placement": [
+        {
+          "type": "minecraft:environment_scan",
+          "direction_of_search": "down",
+          "max_steps": 32,
+          "target_condition": {
+            "type": "minecraft:matching_block_tag",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "tag": "minecraft:big_dripleaf_placeable"
+          },
+          "allowed_search_condition": {
+            "type": "minecraft:true"
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:water"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1047,11 +1047,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.2,
+              0.5
+            ],
+            "erosion": [
+              -0.2225,
+              0.05
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -1647,11 +1677,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.11,
+              0.03
+            ],
+            "erosion": [
+              -1,
+              0.55
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -2097,11 +2157,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.11,
+              0.03
+            ],
+            "erosion": [
+              -0.78,
+              0.55
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -2697,11 +2787,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              -1,
+              0.55
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -3117,11 +3237,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              0.5
+            ],
+            "erosion": [
+              -0.78,
+              0.55
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -3927,11 +4077,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.5,
+              1
+            ],
+            "erosion": [
+              -0.2225,
+              0.55
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -4347,11 +4527,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.2,
+              -0.17
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -5007,11 +5217,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.17,
+              -0.11
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -5307,11 +5547,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.11,
+              1
+            ],
+            "erosion": [
+              0.55,
+              1
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -5547,11 +5817,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              -0.78,
+              1
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -6027,11 +6327,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              0.05,
+              1
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -7377,11 +7707,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.17,
+              0.03
+            ],
+            "erosion": [
+              -0.78,
+              1
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -7677,11 +8037,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              -0.375,
+              1
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -8367,11 +8757,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.17,
+              -0.11
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -8607,11 +9027,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.11,
+              0.03
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -8817,11 +9267,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              -0.78,
+              1
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -9207,11 +9687,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.11,
+              1
+            ],
+            "erosion": [
+              -1,
+              0.55
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -10077,11 +10587,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              0.5
+            ],
+            "erosion": [
+              -0.78,
+              0.55
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -10527,11 +11067,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.5,
+              1
+            ],
+            "erosion": [
+              -0.2225,
+              0.55
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -11097,11 +11667,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.2,
+              1
+            ],
+            "erosion": [
+              0.45,
+              0.55
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -11817,11 +12417,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.11,
+              1
+            ],
+            "erosion": [
+              -0.375,
+              0.55
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.1,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -17037,11 +17667,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.11,
+              0.03
+            ],
+            "erosion": [
+              -1,
+              -0.78
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -17967,11 +18627,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              -1,
+              -0.78
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -18687,11 +19377,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.5,
+              1
+            ],
+            "erosion": [
+              -0.78,
+              -0.2225
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -20937,11 +21657,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              -0.78,
+              -0.2225
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -21447,11 +22197,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.5,
+              1
+            ],
+            "erosion": [
+              -0.2225,
+              0.05
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -23097,11 +23877,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              -0.375,
+              -0.2225
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -24027,11 +24837,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.11,
+              0.03
+            ],
+            "erosion": [
+              -1,
+              -0.78
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -24237,11 +25077,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              -0.78,
+              -0.2225
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -24957,11 +25827,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              -1,
+              -0.78
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {
@@ -25737,11 +26637,41 @@
             ],
             "depth": [
               0,
-              1
+              0
             ],
             "offset": 0
           },
           "biome": "minecraft:jungle"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.5,
+              1
+            ],
+            "erosion": [
+              -0.78,
+              -0.2225
+            ],
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "depth": [
+              0.15,
+              1.1
+            ],
+            "offset": 0
+          },
+          "biome": "kohara:underground_jungle"
         },
         {
           "parameters": {

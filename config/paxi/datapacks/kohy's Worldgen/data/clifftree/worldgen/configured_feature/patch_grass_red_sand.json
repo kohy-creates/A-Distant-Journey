@@ -6,10 +6,21 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "adjblocks:short_dry_grass"
-            }
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "adjblocks:short_dry_grass"
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "adjblocks:tall_dry_grass"
+                },
+                "weight": 1
+              }
+            ]
           }
         }
       },

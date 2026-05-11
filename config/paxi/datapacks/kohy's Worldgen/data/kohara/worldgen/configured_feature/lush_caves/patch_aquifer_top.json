@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 200,
+    "xz_spread": 16,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 60,
+                "data": {
+                  "Name": "minecraft:water"
+                }
+              },
+              {
+                "weight": 90,
+                "data": {
+                  "Name": "minecraft:moss_block"
+                }
+              },
+              {
+                "weight": 10,
+                "data": {
+                  "Name": "minecraft:glow_lichen",
+                  "Properties": {
+                    "waterlogged": "true",
+                    "west": "false",
+                    "up": "true",
+                    "south": "false",
+                    "north": "false",
+                    "east": "false",
+                    "down": "false"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:hanging_roots",
+                  "Properties": {
+                    "waterlogged": "true"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:environment_scan",
+          "direction_of_search": "down",
+          "max_steps": 32,
+          "target_condition": {
+            "type": "minecraft:matching_block_tag",
+            "offset": [
+              0,
+              1,
+              0
+            ],
+            "tag": "minecraft:big_dripleaf_placeable"
+          },
+          "allowed_search_condition": {
+            "type": "minecraft:true"
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:water"
+          }
+        }
+      ]
+    }
+  }
+}

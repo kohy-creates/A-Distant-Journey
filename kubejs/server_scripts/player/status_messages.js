@@ -16,11 +16,15 @@ function isInBetween(num, var1, var2) {
 
 // Don't ask me where I got this from, cause I don't remember at all
 function brighten(hex, p) {
-	return '#' + [0, 2, 4]
-		.map(i => {
-			const v = parseInt(hex.slice(1 + i, 3 + i), 16);
-			return Math.round(v + (255 - v) * p).toString(16).padStart(2, '0');
-		}).join('');
+	return '#' + [0, 2, 4].map(i => {
+		const v = parseInt(hex.slice(1 + i, 3 + i), 16);
+		const result = Math.round(
+			p >= 0 ? v + (255 - v) * p : v * (1 + p)
+		);
+		return Math.max(0, Math.min(255, result))
+			.toString(16)
+			.padStart(2, '0');
+	}).join('');
 }
 
 const moonEventMessages = {

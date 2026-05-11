@@ -4,6 +4,7 @@
     "blacklist": false,
     "blocks": [
       "#adj:fluidloggable_blocks",
+      "minecraft:big_dripleaf_stem",
       "minecraft:stonecutter",
       "minecraft:grindstone",
       "minecraft:lectern",

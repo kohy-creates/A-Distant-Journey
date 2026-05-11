@@ -1,0 +1,19 @@
+{
+	"replace": false,
+	"values": [
+   {"id":"environmental:pine_sapling", "required": false},
+   {"id":"hearthandharvest:peanuts", "required": false},
+   {"id":"neapolitan:strawberry_bush", "required": false},
+   {"id":"neapolitan:mint", "required": false},
+   {"id":"sob:peanuts", "required": false},
+   {"id":"windswept:chestnut_sapling", "required": false},
+   {"id":"windswept:pine_sapling", "required": false},
+   {"id":"windswept:wild_berry_bush", "required": false},
+   {"id":"windswept:holly_sapling", "required": false},
+   {"id":"quark:blue_blossom_sapling", "required": false},
+   {"id":"would:fir_sapling", "required": false},
+   {"id":"would:pine_sapling", "required": false},
+   {"id":"would:cedar_sapling", "required": false},
+   {"id":"would:blue_spruce_sapling", "required": false}
+	]
+}

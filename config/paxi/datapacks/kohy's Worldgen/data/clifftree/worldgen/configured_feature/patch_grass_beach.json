@@ -6,10 +6,21 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "adjblocks:short_dry_grass"
-            }
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "adjblocks:short_dry_grass"
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "adjblocks:tall_dry_grass"
+                },
+                "weight": 1
+              }
+            ]
           }
         }
       },
@@ -25,20 +36,20 @@
               },
               {
                 "type": "minecraft:matching_blocks",
-            "offset": [
-              0,
-              -1,
-              0
-            ],
-            "blocks": "minecraft:sand"
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "blocks": "minecraft:sand"
               }
             ]
           }
         }
       ]
     },
-    "tries": 12,
-    "xz_spread": 2,
+    "tries": 36,
+    "xz_spread": 4,
     "y_spread": 2
   }
 }

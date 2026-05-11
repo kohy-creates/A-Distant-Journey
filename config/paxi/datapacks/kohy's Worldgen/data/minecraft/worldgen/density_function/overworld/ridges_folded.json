@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:mul",
+	"argument1": -1,
+	"argument2": {
+		"type": "minecraft:add",
+		"argument1": -0.333333333333,
+		"argument2": {
+			"type": "minecraft:abs",
+			"argument": {
+				"type": "minecraft:add",
+				"argument1": -0.6666666666666666,
+				"argument2": "minecraft:overworld/ridges"
+			}
+		}
+	}
+}

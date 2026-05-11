@@ -1,0 +1,106 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 32,
+    "xz_spread": 16,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_random_selector",
+        "config": {
+          "features": [
+            {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:glow_lichen",
+                      "Properties": {
+                        "down": "true",
+                        "east": "false",
+                        "north": "false",
+                        "south": "false",
+                        "up": "false",
+                        "waterlogged": "true",
+                        "west": "false"
+                      }
+                    }
+                  }
+                }
+              },
+              "placement": []
+            },
+            {
+              "feature": {
+                "type": "minecraft:block_column",
+                "config": {
+                  "direction": "up",
+                  "allowed_placement": {
+                    "type": "minecraft:matching_fluids",
+                    "fluids": "minecraft:water"
+                  },
+                  "prioritize_tip": true,
+                  "layers": [
+                    {
+                      "height": 1,
+                      "provider": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:tall_seagrass",
+                          "Properties": {
+                            "half": "lower"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "height": 1,
+                      "provider": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:tall_seagrass",
+                          "Properties": {
+                            "half": "upper"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "placement": []
+            }
+          ]
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:environment_scan",
+          "direction_of_search": "down",
+          "max_steps": 32,
+          "target_condition": {
+            "type": "minecraft:matching_block_tag",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "tag": "minecraft:big_dripleaf_placeable"
+          },
+          "allowed_search_condition": {
+            "type": "minecraft:true"
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:water"
+          }
+        }
+      ]
+    }
+  }
+}

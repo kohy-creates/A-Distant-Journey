@@ -41,6 +41,7 @@ ClientEvents.lang('en_us', event => {
 		'biome.nullscape.crystal_peaks': 'Crystal Peaks',
 		'biome.nullscape.shadowlands': 'Shadowlands',
 		'biome.netherexp.sorrowsquash_pastures': 'Sorrowsquash Pastures',
+		'biome.kohara.underground_jungle': 'Underground Jungle',
 
 		'block.alloy_forgery.adamantite_forge_casing_forge_controller': 'Adamantite Forge',
 		'block.alloy_forgery.cracked_deepslate_bricks_forge_controller': 'Deepslate Bricks Forge',

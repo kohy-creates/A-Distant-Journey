@@ -141,10 +141,14 @@ ServerEvents.tags('block', tags => {
 	]);
 
 	tags.add('base_stone_overworld', [
-		'botania:metamorphic_fungal_stone'
+		'botania:metamorphic_fungal_stone',
+		'packed_mud',
+		'quark:permafrost'
 	]);
 
 	tags.add('minecraft:stone_ore_replaceables', [
-		'botania:metamorphic_fungal_stone'
+		'botania:metamorphic_fungal_stone',
+		'packed_mud',
+		'quark:permafrost'
 	]);
 });

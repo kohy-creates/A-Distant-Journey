@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:ore",
+	"config": {
+		"targets": [
+			{
+				"target": {
+					"predicate_type": "minecraft:tag_match",
+					"tag": "minecraft:base_stone_overworld"
+				},
+				"state": {
+					"Name": "minecraft:honeycomb_block"
+				}
+			},
+			{
+				"target": {
+					"predicate_type": "minecraft:tag_match",
+					"tag": "dirt"
+				},
+				"state": {
+					"Name": "minecraft:honeycomb_block"
+				}
+			}
+		],
+		"size": 16,
+		"discard_chance_on_air_exposure": 0
+	}
+}

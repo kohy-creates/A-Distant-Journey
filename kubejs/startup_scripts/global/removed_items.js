@@ -742,6 +742,11 @@ const RemovedItems = {
 		/hybrid\-aquatic:.*karkinos.*/,
 		'hybrid-aquatic:crab_pot',
 		/hybrid\-aquatic:diving_/,
+		'hybrid-aquatic:raft',
+		'hybrid-aquatic:dunegrass',
+		'hybrid-aquatic:tall_dunegrass',
+		'hybrid-aquatic:water_lettuce',
+		'hybrid-aquatic:red_algae',
 		
 		'crittersandcompanions:pearl',
 		'crittersandcompanions:pearl_necklace_1',

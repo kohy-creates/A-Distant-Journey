@@ -1,0 +1,57 @@
+{
+  "feature": "corn_delight:patch_wild_corn",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 70
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:matching_block_tag",
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "tag": "minecraft:sand"
+            }
+          },
+          {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "blocks": [
+                "minecraft:snow_block"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "farmersdelight:biome_tag",
+      "tag": "minecraft:is_overworld"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+	"replace": false,
+	"values": [
+    {"id":"neapolitan:strawberry_pips", "required": false},
+    {"id":"neapolitan:mint_sprout", "required": false},
+    {"id":"environmental:pine_sapling", "required": false},
+    {"id":"hearthandharvest:peanut", "required": false},
+    {"id":"sob:peanut", "required": false},
+    {"id":"windswept:chestnut_sapling", "required": false},
+    {"id":"windswept:pine_sapling", "required": false},
+    {"id":"windswept:wild_berries", "required": false},
+    {"id":"windswept:wild_berry_pips", "required": false},
+    {"id":"windswept:holly_sapling", "required": false},
+    {"id":"quark:blue_blossom_sapling", "required": false},
+    {"id":"would:fir_sapling", "required": false},
+    {"id":"would:pine_sapling", "required": false},
+    {"id":"would:cedar_sapling", "required": false},
+    {"id":"would:blue_spruce_sapling", "required": false}
+	]
+}

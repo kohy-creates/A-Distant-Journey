@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:beach",
+  "features": "veggiesdelight:patch_wild_turnips",
+  "step": "vegetal_decoration"
+}

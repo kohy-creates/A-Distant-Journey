@@ -1,0 +1,91 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:block_column",
+          "config": {
+            "direction": "up",
+            "allowed_placement": {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:air",
+                "minecraft:water",
+                "minecraft:big_dripleaf"
+              ]
+            },
+            "prioritize_tip": true,
+            "layers": [
+              {
+                "height": 2,
+                "provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:big_dripleaf_stem",
+                    "Properties": {
+                      "waterlogged": "true",
+                      "facing": "north"
+                    }
+                  }
+                }
+              },
+              {
+                "height": {
+                  "type": "minecraft:uniform",
+                  "value": {
+                    "min_inclusive": 2,
+                    "max_inclusive": 5
+                  }
+                },
+                "provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:big_dripleaf_stem",
+                    "Properties": {
+                      "waterlogged": "false",
+                      "facing": "north"
+                    }
+                  }
+                }
+              },
+              {
+                "height": 1,
+                "provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:big_dripleaf",
+                    "Properties": {
+                      "waterlogged": "false",
+                      "tilt": "none",
+                      "facing": "north"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:would_survive",
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "state": {
+                "Name": "minecraft:big_dripleaf",
+                "Properties": {
+                  "facing": "north"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "feature": "kohara:lush_caves/swamp_terrain",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 32
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

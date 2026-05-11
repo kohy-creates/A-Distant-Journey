@@ -29,13 +29,12 @@
   },
   "features": [
     [],
-    [
-    ],
+    [],
     [
       "minecraft:amethyst_geode",
       "clifftree:ore_diamond_tuff"
     ],
-    [ 
+    [
       "minecraft:fossil_upper",
       "minecraft:fossil_lower",
       "minecraft:monster_room",
@@ -92,7 +91,19 @@
       "minecraft:rooted_azalea_tree",
       "minecraft:spore_blossom",
       "minecraft:classic_vines_cave_feature",
-      "clifftree:seagrass_cave"
+      "clifftree:seagrass_cave",
+      "kohara:lush_caves/aquifer_dripleaf",
+      "kohara:lush_caves/aquifer_dripleaf_top",
+      "kohara:lush_caves/aquifer_seagrass",
+      "kohara:lush_caves/aquifer_top",
+      "kohara:lush_caves/bee_nest",
+      "kohara:lush_caves/clay_in_water",
+      "kohara:lush_caves/clay_in_water_top",
+      "kohara:lush_caves/lush_caves_dirt",
+      "kohara:lush_caves/lush_caves_grass",
+      "kohara:lush_caves/lush_caves_vines",
+      "kohara:lush_caves/trees_lush_caves",
+      "kohara:lush_caves/waterlily_cave"
     ],
     [
       "minecraft:freeze_top_layer"
