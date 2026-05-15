@@ -2285,15 +2285,22 @@
 			dependencies: ["6013A3AD20AB6F78"]
 			id: "229B705AD7EA1F3A"
 			subtitle: "Plant a Bergamute to silence any nearby noise"
-			tasks: [{
-				block: "botania:bergamute"
-				block_type: 0
-				id: "6A5BFF83E58B0265"
-				replace: false
-				replaced: "minecraft:air"
-				type: "questsadditions:place"
-				value: 1L
-			}]
+			tasks: [
+				{
+					block: "botania:bergamute"
+					block_type: 0
+					id: "6A5BFF83E58B0265"
+					replace: false
+					replaced: "minecraft:air"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					id: "4BC8FB0D890DA6B7"
+					item: "botania:bergamute"
+					type: "item"
+				}
+			]
 			title: "Silencio!"
 			x: 5.5d
 			y: -0.5d
@@ -2302,15 +2309,22 @@
 			dependencies: ["602FA24B60010322"]
 			id: "11B25BA1F5DB0532"
 			subtitle: "Plant a Fallen Kanade"
-			tasks: [{
-				block: "botania:fallen_kanade"
-				block_type: 0
-				id: "5C68DEAF2A47B13B"
-				replace: false
-				replaced: "minecraft:air"
-				type: "questsadditions:place"
-				value: 1L
-			}]
+			tasks: [
+				{
+					block: "botania:fallen_kanade"
+					block_type: 0
+					id: "5C68DEAF2A47B13B"
+					replace: false
+					replaced: "minecraft:air"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					id: "03D758934C9F6D2E"
+					item: "botania:fallen_kanade"
+					type: "item"
+				}
+			]
 			title: "Healing Power"
 			x: 13.5d
 			y: -3.5d

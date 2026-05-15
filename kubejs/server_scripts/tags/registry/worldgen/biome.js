@@ -4,20 +4,14 @@ ServerEvents.tags('worldgen/biome', tags => {
 		'#is_beach'
 	]);
 
-	tags.add('oceanicrealms:oceans', [
-		'#is_ocean'
-	]);
-
 	tags.add('adj:moderate_and_tropical_oceans', [
 		'ocean',
 		'deep_ocean',
-		'oceanicrealms:sandstone_ocean',
 		'lukewarm_ocean',
 		'deep_lukewarm_ocean',
 		'warm_ocean'
 	]);
 	tags.add('adj:tropical_oceans', [
-		'oceanicrealms:sandstone_ocean',
 		'lukewarm_ocean',
 		'deep_lukewarm_ocean',
 		'warm_ocean',

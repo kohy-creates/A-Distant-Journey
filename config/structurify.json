@@ -1,6 +1,6 @@
 {
-  "config_version": "2.0.22",
-  "config_datetime": "2026-05-09_22-18-47",
+  "config_version": "2.0.24",
+  "config_datetime": "2026-05-15_22-59-45",
   "general": {
     "disable_all_structures": false,
     "prevent_structure_overlap": true,
@@ -29,40 +29,29 @@
       "override_global_flatness_check": false,
       "enable_flatness_check": true,
       "flatness_check_allow_non_solid_blocks": false
+    },
+    {
+      "name": "witherstormmod",
+      "is_disabled": false,
+      "exclude_from_overlap_prevention": true
     }
   ],
   "structures": [
     {
       "name": "ancient_aether:ancient_dungeon",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
+      "is_disabled": true
     },
     {
       "name": "ars_additions:ruined_portal",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      "is_disabled": true
     },
     {
       "name": "ars_additions:ruined_portal_large",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      "is_disabled": true
     },
     {
       "name": "ars_elemental:starbuncle_shrine",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -73,10 +62,6 @@
     {
       "name": "born_in_chaos_v1:firewell",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -89,10 +74,6 @@
     {
       "name": "born_in_chaos_v1:grave_2003wise",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -105,10 +86,6 @@
     {
       "name": "born_in_chaos_v1:grave_2_dling",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -121,10 +98,6 @@
     {
       "name": "born_in_chaos_v1:grave_d_4rk_devil_x",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -137,10 +110,6 @@
     {
       "name": "born_in_chaos_v1:grave_darktitan",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -153,10 +122,6 @@
     {
       "name": "born_in_chaos_v1:grave_derivas",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -169,10 +134,6 @@
     {
       "name": "born_in_chaos_v1:grave_euthymia",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -185,10 +146,6 @@
     {
       "name": "born_in_chaos_v1:grave_feral",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -201,10 +158,6 @@
     {
       "name": "born_in_chaos_v1:grave_fubuki_banzai",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -217,10 +170,6 @@
     {
       "name": "born_in_chaos_v1:grave_memesus",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -233,10 +182,6 @@
     {
       "name": "born_in_chaos_v1:grave_mike_and_rory",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -249,10 +194,6 @@
     {
       "name": "born_in_chaos_v1:grave_nino_4416",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -265,10 +206,6 @@
     {
       "name": "born_in_chaos_v1:grave_orion",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -281,10 +218,6 @@
     {
       "name": "born_in_chaos_v1:grave_petasi",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -297,10 +230,6 @@
     {
       "name": "born_in_chaos_v1:grave_plug",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -313,10 +242,6 @@
     {
       "name": "born_in_chaos_v1:grave_rotborne",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -329,10 +254,6 @@
     {
       "name": "born_in_chaos_v1:grave_somfunambulist",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -345,10 +266,6 @@
     {
       "name": "born_in_chaos_v1:grave_tem_187",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -361,10 +278,6 @@
     {
       "name": "born_in_chaos_v1:grave_the_gentleman_frog",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -375,12 +288,12 @@
       ]
     },
     {
+      "name": "born_in_chaos_v1:infernal_pumpkin",
+      "is_disabled": true
+    },
+    {
       "name": "idas:ars_nouveau/archmages_tower",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -393,10 +306,6 @@
     {
       "name": "idas:castle",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -409,10 +318,6 @@
     {
       "name": "idas:enchantingtower",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -425,10 +330,6 @@
     {
       "name": "integrated_villages:airship_village",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -441,10 +342,6 @@
     {
       "name": "integrated_villages:clockwork_village",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none",
       "override_global_biome_check": false,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -457,10 +354,6 @@
     {
       "name": "medieval_buildings:ship",
       "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none",
       "override_global_biome_check": true,
       "enable_biome_check": false,
       "biome_check_mode": "BLACKLIST",
@@ -471,92 +364,54 @@
       ]
     },
     {
+      "name": "nova_structures:illager_camp",
+      "blacklisted_biomes": [
+        "minecraft:river"
+      ]
+    },
+    {
       "name": "nova_structures:tavern_acacia",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     },
     {
       "name": "nova_structures:tavern_birch",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     },
     {
       "name": "nova_structures:tavern_cherry",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     },
     {
       "name": "nova_structures:tavern_dark_oak",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     },
     {
       "name": "nova_structures:tavern_desert",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     },
     {
       "name": "nova_structures:tavern_jungle",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     },
     {
       "name": "nova_structures:tavern_mangrove",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     },
     {
       "name": "nova_structures:tavern_oak",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     },
     {
       "name": "nova_structures:tavern_snowy",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     },
     {
       "name": "nova_structures:tavern_spruce",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     },
     {
       "name": "nova_structures:tavern_swamp",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     }
   ],
   "structure_sets": [
@@ -902,5 +757,6 @@
         "witherstormmod:bowels": 1
       }
     }
-  ]
+  ],
+  "structure_template_pools": []
 }

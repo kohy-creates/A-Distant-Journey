@@ -3,7 +3,8 @@ EntityEvents.spawned(event => {
 	const server = event.getServer();
 
 	const bossesSkipMessages = [
-		'witherstormmod:command_block'
+		'witherstormmod:command_block',
+		'cataclysm:netherite_monstrosity'
 	]
 
 	if (global.bossMobs.includes(entity.getType()) && !bossesSkipMessages.includes(entity.getType()) && !entity.tags.toArray().includes('adj.announced_spawn')) {

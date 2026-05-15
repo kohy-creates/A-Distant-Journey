@@ -62,14 +62,14 @@ const RemovedItems = {
 		/twilightforest:charm_of_keeping_.*/,
 		'twilightforest:red_thread',
 		'twilightforest:crumble_horn',
-		/twilightforest:sorting_/,
+		/twilight(forest|delight):sorting_/,
+		/twilight(forest|delight):mining_/,
+		/twilight(forest|delight):transformation_/,
+		/twilight(forest|delight):time_/,
 		'twilightdelight:sorting_cabinet',
 		/twilightforest:hollow_.*_log/,
-		/umbral_skies:hollow_.*_log/,
 		/twilightforest:hollow_.*_stem/,
-		/umbral_skies:hollow_.*_stem/,
 		/twilightforest:.*_trophy/,
-		/umbral_skies:.*_trophy/,
 		/twilightforest:.*_skull_candle/,
 		'twilightforest:glass_sword',
 		'twilightforest:steeleaf_helmet',
@@ -100,7 +100,8 @@ const RemovedItems = {
 		/twilightforest:.*nagastone.*_right/,
 		'twilightforest:fiery_tears',
 		'twilightforest:clover_patch',
-		'twilightforest:chopped_clover',
+		'twilightdelight:chopped_clover',
+		'twilightforest:zombie_scepter',
 
 		'handcrafted:wood_plate',
 		'handcrafted:wood_cup',
@@ -120,7 +121,6 @@ const RemovedItems = {
 
 		'v_slab_compat:phantasm/polished_obsidian_bricks_vertical_slab',
 
-		'cataclysm:meat_shredder',
 		'cataclysm:ignitium_elytra_chestplate',
 		/cataclysm:stone_tile.*/,
 		'cataclysm:cursed_bow',
@@ -128,6 +128,7 @@ const RemovedItems = {
 		'v_slab_compat:cataclysm/stone_tile_vertical_slab',
 		'cataclysm:polished_sandstone',
 		'cataclysm:blackstone_pillar',
+		'cataclysm:chiseled_end_stone_bricks',
 
 		'netherexp:shotgun_fist',
 		'netherexp:shotgun_core',
@@ -161,15 +162,6 @@ const RemovedItems = {
 		'artifacts:cross_necklace',
 		'artifacts:pocket_piston',
 		'artifacts:thorn_pendant',
-
-		'spelunkers_charm:crate',
-		'spelunkers_charm:encased_geyser',
-		'spelunkers_charm:rock',
-		'spelunkers_charm:deepslate_rock',
-		'spelunkers_charm:dripstone_rock',
-		'spelunkers_charm:basalt_rock',
-		'spelunkers_charm:redstone_cluster',
-		'spelunkers_charm:candle_helmet',
 
 		/witherstormmod:gold_command_block_.*/,
 		/witherstormmod:wooden_command_block_.*/,
@@ -323,6 +315,9 @@ const RemovedItems = {
 		'botania:infused_grass',
 		'botania:mutated_grass',
 		'botania:invisibility_cloak',
+		'botania:crafty_crate',
+		/botania:pattern_/,
+		'botania:placeholder',
 
 		'terra_curio:magic_quiver',
 		'terra_curio:molten_quiver',
@@ -730,9 +725,7 @@ const RemovedItems = {
 		'aperture_innovations:pedestal_button',
 		'aperture_innovations:large_button',
 
-		'waxed:ender_wax_block',
 		'waxed:cupric_wax_block',
-		'waxed:ender_candle',
 		'waxed:cupric_candle',
 		'waxed:waxed_arid_sand',
 		'waxed:waxed_red_arid_sand',
@@ -747,11 +740,13 @@ const RemovedItems = {
 		'hybrid-aquatic:tall_dunegrass',
 		'hybrid-aquatic:water_lettuce',
 		'hybrid-aquatic:red_algae',
-		
+
 		'crittersandcompanions:pearl',
 		'crittersandcompanions:pearl_necklace_1',
 		'crittersandcompanions:pearl_necklace_2',
 		'crittersandcompanions:pearl_necklace_3',
+
+		'endergetic:cracked_end_stone_bricks',
 	]
 };
 

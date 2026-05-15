@@ -238,7 +238,8 @@ global.weightedRandom = function (weightMap) {
 /**
  * Returns the current chapter the player/server is on.
  * Since it requires a server argument, it is server-side only.
- * @param {Internal.MinecraftServer_} server 
+ * @param {Internal.MinecraftServer_} server
+ * @returns {integer}
  */
 global.getCurrentChapter = function (server) {
 	let chapters = server.persistentData.chapters || {};

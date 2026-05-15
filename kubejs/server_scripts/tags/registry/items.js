@@ -319,11 +319,6 @@ ServerEvents.tags('item', tags => {
 		'evilcraft:blood_chest'
 	]);
 
-	tags.add('adj:boss_trophy', [
-		/twilightforest:.*trophy/,
-		/umbral_skies:.*trophy/,
-	]);
-
 	tags.add('botania:mana_diamond_gems', [
 		'ars_nouveau:source_gem'
 	]);
@@ -491,10 +486,38 @@ ServerEvents.tags('item', tags => {
 	tags.add('c:raw_tin_ores', ['mythicmetals:raw_tin', 'kubejs:tin_dust']);
 
 	tags.remove('c:crops/cactus', ['cactus']);
-	
+
 	tags.add('adj:pressure_plates', [/pressure_plate$/]);
 
 	tags.add('witherstormmod:command_block_tools', 'zenith:zenith');
 
 	tags.removeAll('lost_aether_content:phoenix_tools');
+
+	const $BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries');
+	let workstations = [];
+	VillagerUtils.getProfessions().forEach(profession => {
+
+		/** @type {Internal.Registry_<Internal.PoiType_>} */
+		let poiRegistry = $BuiltInRegistries.POINT_OF_INTEREST_TYPE;
+		let itemId = null;
+		poiRegistry.forEach( /** @param {Internal.PoiType_} poiType */ poiType => {
+			/** @type {Internal.Holder_<Internal.PoiType_>} */
+			const holder = poiRegistry.wrapAsHolder(poiType);
+
+			if (profession.heldJobSite().test(holder)) {
+				/** @type {Set<Internal.BlockState_>} */
+				let set = poiType.matchingStates();
+				let i = 0;
+				set.forEach(blockState => {
+					if (i > 0) return;
+					itemId = blockState.getBlock().asItem().getId();
+					i++;
+				});
+			}
+		});
+		if (!itemId || global.isItemDisabled(itemId)) return;
+		workstations.push(itemId);
+	});
+
+	tags.add('c:villager_job_sites', workstations);
 });

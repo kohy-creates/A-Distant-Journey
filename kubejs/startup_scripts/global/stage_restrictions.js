@@ -6,7 +6,6 @@ global.stageRestrictions = {
 			/mythicmetals:steel/,
 			/twilightforest/,
 			/twilightdelight/,
-			/umbral_skies/,
 			'mythicmetals:stormyx_ore',
 			'mythicmetals:blackstone_stormyx_ore',
 			'mythicmetals:raw_stormyx',
@@ -196,6 +195,7 @@ global.stageRestrictions = {
 			'tiab:time_in_a_bottle',
 			'cataclysm:monstrous_eye',
 			'cataclysm:flame_eye',
+			'cataclysm:mech_eye'
 		],
 		light: [
 			'mythicmetals:aegis_smithing_template',
@@ -219,6 +219,7 @@ global.stageRestrictions = {
 			/rediscovered:.*slab/,
 			/treasure_bag/,
 			'mythicmetals:mythril_drill_smithing_template',
+			'rediscovered:zombie_pigman_spawn_egg',
 		]
 	},
 	'chapter_4': {
@@ -260,6 +261,7 @@ global.stageRestrictions = {
 			/chorus/,
 			/purpur/,
 			/unusualend/,
+			/endergetic/,
 			/phantasm/,
 			/everycomp\:.*phantasm.*/,
 			/everycomp\:.*unusualend.*/,

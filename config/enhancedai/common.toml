@@ -285,11 +285,11 @@
 	#Only entity types in the `enhancedai:shulker/apply_armor_modifiers` tag will be affected by this feature.
 	[Shulkers."Shulker armor"]
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Armor when closed" = 30.0
+		"Armor when closed" = 60.0
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Armor when peeking" = 20.0
+		"Armor when peeking" = 30.0
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Armor when open" = 10.0
+		"Armor when open" = 8.0
 
 	[Shulkers."Shulker attack"]
 
@@ -401,7 +401,7 @@
 		"See glowing entities" = true
 		#Mobs in the entity type tag `enhancedai:mobs/targeting/alert_nearby` will alert nearby mobs in this range and target the player.
 		#Range: > 0
-		"Alert range" = 16
+		"Alert range" = 20
 		#Mobs will be able to find better and longer paths to the target the higher this value is. The higher the more performance heavy. Only entity types in the tag `enhancedai:mobs/targeting/visited_nodes_multiplier` tag will be affected by this. Vanilla is 1.0
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Max visited nodes multiplier" = 4.0
@@ -479,12 +479,12 @@
 	[Mobs."Miner mobs"]
 		#Chance for a mob in the entity type tag enhancedai:can_be_miner to spawn with the miner ability
 		#Range: 0.0 ~ 1.0
-		"Miner chance" = 0.07
+		"Miner chance" = 0.05
 		#Mobs with Miner AI will spawn with a Stone Pickaxe that never drops.
 		"Equip stone pick" = true
 		#Mobs can mine from the bottom of the world to this Y level.
 		#Range: -512 ~ 1024
-		"Max y" = 64
+		"Max y" = 50
 		#Mobs with Miner AI will not be able to break tile entities
 		"Blacklist tile entities" = true
 		#Multiplier for the time a mob takes to break blocks. E.g. with this set to 2, mobs will take twice the time to mine a block.
@@ -568,17 +568,17 @@
 		#Chance for a mob to spawn with Ender Pearls in the offhand.
 		#I recommend Mobs Properties Randomness to have more control over mobs equipment.
 		#Range: 0.0 ~ 1.0
-		"Equip ender pearl chance" = 0.05
+		"Equip ender pearl chance" = 0.03
 		#Inaccuracy when throwing the ender pearl.
 		#Range: 1 ~ 16
-		Inaccuracy = 3
+		Inaccuracy = 5
 
 		#How many ender pearls will Mobs spawn with.
 		[Mobs."Pearler mobs"."Ender pearl amount"]
 			#Range: 0.0 ~ 16.0
-			Minimum = 2.0
+			Minimum = 1.0
 			#Range: 0.0 ~ 16.0
-			Maximum = 4.0
+			Maximum = 3.0
 
 	#Let mobs use Fishing Rods, reeling players in. Either put a Fishing Rod in main or off hand and when near enough from the target they will use it. Only mobs in enhancedai:mobs/can_equip_fishing_rod entity type tag are affected by this feature.
 	[Mobs."Fisher mobs"]
@@ -1146,10 +1146,10 @@
 	#Snow golems are healed when hit by snowballs. Only entity types in enhancedai:snow_golem/healed_by_snowballs tag are affected by this feature.
 	["Snow Golems"."Snow golems healed by snowballs"]
 		#Range: 0.0 ~ 1.7976931348623157E308
-		Amount = 20.0
+		Amount = 30.0
 
 	#Snow golems snowballs deal damage. Only entity types in enhancedai:snow_golem/damaging_snowballs tag are affected by this feature.
 	["Snow Golems"."Snow golems damaging snowballs"]
 		#Range: 0.0 ~ 1.7976931348623157E308
-		Damage = 5.0
+		Damage = 4.0
 

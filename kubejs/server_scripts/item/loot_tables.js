@@ -595,4 +595,14 @@ LootJS.modifiers((event) => {
 		.pool((pool) => {
 			pool.addLoot(LootEntry.of('terra_curio:flashlight').when(c => c.randomChance(0.2)))
 		});
+
+	global.bossMobs.forEach(boss => {
+		event.addEntityLootModifier(boss)
+			.pool(pool => {
+				pool.addLoot(
+					LootEntry.of('minecraft:potion', '{Potion:"minecraft:healing"}')
+						.limitCount([5, 12])
+				)
+			});
+	});
 });

@@ -1,6 +1,0 @@
-{
-	"type": "forge:add_features",
-	"biomes": "#adj:moderately_temperate_oceans",
-	"features": "oceanicrealms:red_algae",
-	"step": "top_layer_modification"
-}

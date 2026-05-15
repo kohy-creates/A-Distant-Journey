@@ -6,52 +6,52 @@
 		[tools_and_abilities.ignitium_armor.armor_config]
 			#Armor_Multiplier
 			#Range: 0.0 ~ 1000000.0
-			armor_multiplier = 1.0
+			armor_multiplier = 0
 			#Toughness
 			#Range: 0.0 ~ 1000000.0
-			toughness = 4.0
+			toughness = 0
 			#Knockback Resistance
 			#Range: 0.0 ~ 1000000.0
-			knockback_resistance = 0.15
+			knockback_resistance = 0
 
 	[tools_and_abilities.cursium_armor]
 
 		[tools_and_abilities.cursium_armor.armor_config]
 			#Armor_Multiplier
 			#Range: 0.0 ~ 1000000.0
-			armor_multiplier = 1.0
+			armor_multiplier = 0
 			#Toughness
 			#Range: 0.0 ~ 1000000.0
-			toughness = 4.0
+			toughness = 0
 			#Knockback Resistance
 			#Range: 0.0 ~ 1000000.0
-			knockback_resistance = 0.05
+			knockback_resistance = 0
 
 	[tools_and_abilities.bone_reptile_armor]
 
 		[tools_and_abilities.bone_reptile_armor.armor_config]
 			#Armor_Multiplier
 			#Range: 0.0 ~ 1000000.0
-			armor_multiplier = 1.0
+			armor_multiplier = 0
 			#Toughness
 			#Range: 0.0 ~ 1000000.0
-			toughness = 2.5
+			toughness = 0
 			#Knockback Resistance
 			#Range: 0.0 ~ 1000000.0
-			knockback_resistance = 0.15
+			knockback_resistance = 0
 
 	[tools_and_abilities.bloom_stone_armor]
 
 		[tools_and_abilities.bloom_stone_armor.armor_config]
 			#Armor_Multiplier
 			#Range: 0.0 ~ 1000000.0
-			armor_multiplier = 1.0
+			armor_multiplier = 0
 			#Toughness
 			#Range: 0.0 ~ 1000000.0
-			toughness = 2.0
+			toughness = 0
 			#Knockback Resistance
 			#Range: 0.0 ~ 1000000.0
-			knockback_resistance = 0.1
+			knockback_resistance = 0
 
 	[tools_and_abilities.incinerator]
 		#Incinerator Cooldown
@@ -61,10 +61,10 @@
 		[tools_and_abilities.incinerator.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 14.0
+			attack_damage = 60.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.4
+			attack_speed = 3.4
 
 	[tools_and_abilities.bulwark_of_the_flame]
 		#Bulwark Of The Flame Cooldown
@@ -76,10 +76,10 @@
 		[tools_and_abilities.gauntlet_of_guard.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 11.0
+			attack_damage = 48.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.6
+			attack_speed = 4.6
 
 	[tools_and_abilities.gauntlet_of_bulwark]
 		#Gauntlet Of Bulwark Cooldown
@@ -89,10 +89,10 @@
 		[tools_and_abilities.gauntlet_of_bulwark.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 11.0
+			attack_damage = 48.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.6
+			attack_speed = 4.6
 
 	[tools_and_abilities.gauntlet_of_maelstrom]
 		#Maelstrom Cooldown
@@ -102,23 +102,23 @@
 		[tools_and_abilities.gauntlet_of_maelstrom.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 11.0
+			attack_damage = 48.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.6
+			attack_speed = 4.6
 
 	[tools_and_abilities.infernal_forge]
 		#Infernal Forge Cooldown
 		#Range: 0 ~ 1000
-		infernal_forge_cooldown = 80
+		infernal_forge_cooldown = 100
 
 		[tools_and_abilities.infernal_forge.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 13.0
+			attack_damage = 49.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.0
+			attack_speed = 2.9
 
 	[tools_and_abilities.void_forge]
 		#Void Forge Cooldown
@@ -131,10 +131,10 @@
 		[tools_and_abilities.void_forge.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 13.0
+			attack_damage = 70.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.0
+			attack_speed = 2.9
 
 	[tools_and_abilities.brontes]
 		#Brontes Storm Damage
@@ -147,29 +147,29 @@
 		[tools_and_abilities.brontes.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 13.0
+			attack_damage = 39.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.0
+			attack_speed = 3.0
 
 	[tools_and_abilities.wither_assault_shoulder_weapon]
 		#Missile Cooldown
 		#Range: 0 ~ 1000
-		missile_cooldown = 40
+		missile_cooldown = 15
 		#Missile Damage
 		#Range: 0.0 ~ 100000.0
-		missile_damage = 40.0
+		missile_damage = 110.0
 		#Howitzer Cooldown
 		#Range: 0 ~ 1000
-		howitzer_cooldown = 100
+		howitzer_cooldown = 160
 
 	[tools_and_abilities.void_assault_shoulder_weapon]
 		#Howitzer Cooldown
 		#Range: 0 ~ 1000
-		howitzer_cooldown = 160
+		howitzer_cooldown = 120
 		#VASW Rune Damage
 		#Range: 0.0 ~ 1000000.0
-		vasw_rune_damage = 7.0
+		vasw_rune_damage = 30.0
 
 	[tools_and_abilities.void_core]
 		#Cooldown
@@ -177,28 +177,28 @@
 		void_core_cooldown = 160
 		#Void Core Rune Damage
 		#Range: 0.0 ~ 1000000.0
-		void_core_rune_damage = 132.0
+		void_core_rune_damage = 172.0
 
 	[tools_and_abilities.sandstorm]
 		#Cooldown
 		#Range: 0 ~ 1000
-		sandstorm_cooldown = 300
+		sandstorm_cooldown = 400
 
 	[tools_and_abilities.soul_render]
 		#Soul Render Cooldown
 		#Range: 0 ~ 1000
-		soul_render_cooldown = 100
+		soul_render_cooldown = 120
 		#Phantom Halberd Damage
 		#Range: 0.0 ~ 1000000.0
-		phantom_halberd_damage = 12.0
+		phantom_halberd_damage = 40.0
 
 		[tools_and_abilities.soul_render.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 15.0
+			attack_damage = 60.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.05
+			attack_speed = 3.05
 
 	[tools_and_abilities.immolator]
 		#Immolator Cooldown
@@ -208,20 +208,20 @@
 		[tools_and_abilities.immolator.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 8.5
+			attack_damage = 32
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.6
+			attack_speed = 3.6
 
 	[tools_and_abilities.tidal_claws]
 
 		[tools_and_abilities.tidal_claws.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 8.0
+			attack_damage = 23.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.6
+			attack_speed = 2.9
 
 	[tools_and_abilities.ceraunus]
 		#Ceraunus Wave Damage
@@ -229,23 +229,23 @@
 		ceraunus_wave_damage = 60.0
 		#Ceraunus Cooldown
 		#Range: 0 ~ 1000000
-		ceraunus_cooldown = 150
+		ceraunus_cooldown = 90
 
 		[tools_and_abilities.ceraunus.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 16.0
+			attack_damage = 64.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 0.7
+			attack_speed = 2.8
 
 	[tools_and_abilities.astrape]
 		#Astrape Damage
 		#Range: 0.0 ~ 1000000.0
-		astrape_damage = 11.0
+		astrape_damage = 60.0
 		#Astrape Area Damage
 		#Range: 0.0 ~ 1000000.0
-		astrape_area_damage = 2.0
+		astrape_area_damage = 40.0
 		#Astrape Cooldown
 		#Range: 0 ~ 1000000
 		astrape_cooldown = 60
@@ -253,30 +253,30 @@
 		[tools_and_abilities.astrape.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 10.5
+			attack_damage = 60.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.4
+			attack_speed = 3.4
 
 	[tools_and_abilities.meat_shredder]
 
 		[tools_and_abilities.meat_shredder.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 8.5
+			attack_damage = 78.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.4
+			attack_speed = 3.6
 
 	[tools_and_abilities.annihilator]
 
 		[tools_and_abilities.annihilator.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 8.5
+			attack_damage = 50.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.6
+			attack_speed = 3.6
 
 	[tools_and_abilities.cursed_bow]
 		#Cursed Bow Damage
@@ -291,20 +291,20 @@
 	[tools_and_abilities.laser_gatling]
 		#Laser Damage
 		#Range: 0.0 ~ 1000000.0
-		laser_damage = 7.0
+		laser_damage = 22
 
 	[tools_and_abilities.ancient_spear]
 		#SandStorm
 		#Range: 0.0 ~ 1000000.0
-		sand_storm_damage = 6.0
+		sand_storm_damage = 30.0
 
 		[tools_and_abilities.ancient_spear.tool_config]
 			#Tool attack damage
 			#Range: 0.0 ~ 1000000.0
-			attack_damage = 9.5
+			attack_damage = 40.0
 			#Tool attack speed
 			#Range: 0.0 ~ 1000000.0
-			attack_speed = 1.4
+			attack_speed = 3.4
 
 [mobs]
 
@@ -358,21 +358,21 @@
 		[mobs.ender_guardian.cap_config]
 			#Damage Cap
 			#Range: 0.0 ~ 1000000.0
-			damage_cap = 22.0
+			damage_cap = 999999.0
 			#Dps Cap
 			#Range: 1.0 ~ 1000000.0
-			dps_cap = 13.0
+			dps_cap = 999999.0
 			#DPS Limit Time
 			#Range: 1 ~ 100
 			dps_limit_time = 20
 			#Range Cap
 			#Range: 1.0 ~ 1000000.0
-			range_cap = 12.0
+			range_cap = 40.0
 
 		[mobs.ender_guardian.nature_heal_config]
 			#Nature Heal
 			#Range: 0.0 ~ 1000000.0
-			nature_heal = 25.0
+			nature_heal = 5.0
 
 		[mobs.ender_guardian.respawner_config]
 			#Respawner
@@ -385,7 +385,7 @@
 	[mobs.ender_golem]
 		#Void Rune Damage
 		#Range: 0.0 ~ 1000000.0
-		void_rune_damage = 7.0
+		void_rune_damage = 50.0
 
 		[mobs.ender_golem.combat_config]
 			#Scale mob health by this value
@@ -407,12 +407,12 @@
 			dps_limit_time = 20
 			#Range Cap
 			#Range: 1.0 ~ 1000000.0
-			range_cap = 8.0
+			range_cap = 40.0
 
 		[mobs.ender_golem.nature_heal_config]
 			#Nature Heal
 			#Range: 0.0 ~ 1000000.0
-			nature_heal = 25.0
+			nature_heal = 5.0
 
 		[mobs.ender_golem.ignore_mobgriefing_config]
 			#Ignore MobGriefing
@@ -454,21 +454,21 @@
 		[mobs.netherite_monstrosity.cap_config]
 			#Damage Cap
 			#Range: 0.0 ~ 1000000.0
-			damage_cap = 25.0
+			damage_cap = 999999.0
 			#Dps Cap
 			#Range: 1.0 ~ 1000000.0
-			dps_cap = 20.0
+			dps_cap = 999999.0
 			#DPS Limit Time
 			#Range: 1 ~ 100
 			dps_limit_time = 20
 			#Range Cap
 			#Range: 1.0 ~ 1000000.0
-			range_cap = 18.0
+			range_cap = 40.0
 
 		[mobs.netherite_monstrosity.nature_heal_config]
 			#Nature Heal
 			#Range: 0.0 ~ 1000000.0
-			nature_heal = 25.0
+			nature_heal = 5.0
 
 		[mobs.netherite_monstrosity.respawner_config]
 			#Respawner
@@ -506,21 +506,21 @@
 		[mobs.ignis.cap_config]
 			#Damage Cap
 			#Range: 0.0 ~ 1000000.0
-			damage_cap = 20.0
+			damage_cap = 999999.0
 			#Dps Cap
 			#Range: 1.0 ~ 1000000.0
-			dps_cap = 14.0
+			dps_cap = 999999.0
 			#DPS Limit Time
 			#Range: 1 ~ 100
 			dps_limit_time = 20
 			#Range Cap
 			#Range: 1.0 ~ 1000000.0
-			range_cap = 15.0
+			range_cap = 40.0
 
 		[mobs.ignis.nature_heal_config]
 			#Nature Heal
 			#Range: 0.0 ~ 1000000.0
-			nature_heal = 25.0
+			nature_heal = 5.0
 
 		[mobs.ignis.ignore_mobgriefing_config]
 			#Ignore MobGriefing
@@ -576,21 +576,21 @@
 		[mobs.harbinger.cap_config]
 			#Damage Cap
 			#Range: 0.0 ~ 1000000.0
-			damage_cap = 22.0
+			damage_cap = 999999.0
 			#Dps Cap
 			#Range: 1.0 ~ 1000000.0
-			dps_cap = 14.0
+			dps_cap = 999999.0
 			#DPS Limit Time
 			#Range: 1 ~ 100
 			dps_limit_time = 20
 			#Range Cap
 			#Range: 1.0 ~ 1000000.0
-			range_cap = 35.0
+			range_cap = 40.0
 
 		[mobs.harbinger.nature_heal_config]
 			#Nature Heal
 			#Range: 0.0 ~ 1000000.0
-			nature_heal = 25.0
+			nature_heal = 5.0
 
 		[mobs.harbinger.respawner_config]
 			#Respawner
@@ -683,21 +683,21 @@
 		[mobs.leviathan.cap_config]
 			#Damage Cap
 			#Range: 0.0 ~ 1000000.0
-			damage_cap = 20.0
+			damage_cap = 999999.0
 			#Dps Cap
 			#Range: 1.0 ~ 1000000.0
-			dps_cap = 15.0
+			dps_cap = 999999.0
 			#DPS Limit Time
 			#Range: 1 ~ 100
 			dps_limit_time = 20
 			#Range Cap
 			#Range: 1.0 ~ 1000000.0
-			range_cap = 38.0
+			range_cap = 40.0
 
 		[mobs.leviathan.nature_heal_config]
 			#Nature Heal
 			#Range: 0.0 ~ 1000000.0
-			nature_heal = 25.0
+			nature_heal = 5.0
 
 	[mobs.baby_leviathan]
 
@@ -737,21 +737,21 @@
 		[mobs.ancient_remnant.cap_config]
 			#Damage Cap
 			#Range: 0.0 ~ 1000000.0
-			damage_cap = 21.0
+			damage_cap = 999999.0
 			#Dps Cap
 			#Range: 1.0 ~ 1000000.0
-			dps_cap = 14.0
+			dps_cap = 999999.0
 			#DPS Limit Time
 			#Range: 1 ~ 100
 			dps_limit_time = 20
 			#Range Cap
 			#Range: 1.0 ~ 1000000.0
-			range_cap = 14.0
+			range_cap = 40.0
 
 		[mobs.ancient_remnant.nature_heal_config]
 			#Nature Heal
 			#Range: 0.0 ~ 1000000.0
-			nature_heal = 25.0
+			nature_heal = 5.0
 
 		[mobs.ancient_remnant.respawner_config]
 			#Respawner
@@ -840,21 +840,21 @@
 		[mobs.maledictus.cap_config]
 			#Damage Cap
 			#Range: 0.0 ~ 1000000.0
-			damage_cap = 20.0
+			damage_cap = 999999.0
 			#Dps Cap
 			#Range: 1.0 ~ 1000000.0
-			dps_cap = 13.0
+			dps_cap = 999999.0
 			#DPS Limit Time
 			#Range: 1 ~ 100
 			dps_limit_time = 20
 			#Range Cap
 			#Range: 1.0 ~ 1000000.0
-			range_cap = 14.0
+			range_cap = 40.0
 
 		[mobs.maledictus.nature_heal_config]
 			#Nature Heal
 			#Range: 0.0 ~ 1000000.0
-			nature_heal = 25.0
+			nature_heal = 5.0
 
 		[mobs.maledictus.ignore_mobgriefing_config]
 			#Ignore MobGriefing
@@ -876,7 +876,7 @@
 		[mobs.aptrgangr.nature_heal_config]
 			#Nature Heal
 			#Range: 0.0 ~ 1000000.0
-			nature_heal = 25.0
+			nature_heal = 5.0
 
 	[mobs.scylla]
 		#Spear Damage
@@ -917,16 +917,16 @@
 		[mobs.scylla.cap_config]
 			#Damage Cap
 			#Range: 0.0 ~ 1000000.0
-			damage_cap = 21.0
+			damage_cap = 999999.0
 			#Dps Cap
 			#Range: 1.0 ~ 1000000.0
-			dps_cap = 13.0
+			dps_cap = 999999.0
 			#DPS Limit Time
 			#Range: 1 ~ 100
 			dps_limit_time = 20
 			#Range Cap
 			#Range: 1.0 ~ 1000000.0
-			range_cap = 12.0
+			range_cap = 40.0
 
 		[mobs.scylla.respawner_config]
 			#Respawner
@@ -935,7 +935,7 @@
 		[mobs.scylla.nature_heal_config]
 			#Nature Heal
 			#Range: 0.0 ~ 1000000.0
-			nature_heal = 25.0
+			nature_heal = 5.0
 
 		[mobs.scylla.ignore_mobgriefing_config]
 			#Ignore MobGriefing
@@ -954,16 +954,16 @@
 		[mobs.clawdian.cap_config]
 			#Damage Cap
 			#Range: 0.0 ~ 1000000.0
-			damage_cap = 21.0
+			damage_cap = 999999.0
 			#Dps Cap
 			#Range: 1.0 ~ 1000000.0
-			dps_cap = 12.0
+			dps_cap = 999999.0
 			#DPS Limit Time
 			#Range: 1 ~ 100
 			dps_limit_time = 20
 			#Range Cap
 			#Range: 1.0 ~ 1000000.0
-			range_cap = 12.0
+			range_cap = 40.0
 
 		[mobs.clawdian.ignore_mobgriefing_config]
 			#Ignore MobGriefing
@@ -972,7 +972,7 @@
 		[mobs.clawdian.nature_heal_config]
 			#Nature Heal
 			#Range: 0.0 ~ 1000000.0
-			nature_heal = 25.0
+			nature_heal = 5.0
 
 [blocks]
 

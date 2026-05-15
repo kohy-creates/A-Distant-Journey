@@ -1,7 +1,0 @@
-{
-	"values": [
-		"minecraft:beach",
-		"#minecraft:is_ocean",
-		"#forge:is_swamp"
-	]
-}

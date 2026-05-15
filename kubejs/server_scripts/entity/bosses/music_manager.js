@@ -28,8 +28,30 @@ ServerEvents.tick(event => {
 			}
 		}
 	}
-})
-
-EntityEvents.hurt('cataclysm:netherite_monstrosity', event => {
-	event.getEntity().addTag('phase_1');
+	let netheriteMonstrosity;
+	for (let entity of event.getServer().getLevel('minecraft:the_nether').getAllEntities()) {
+		if (entity.type == 'cataclysm:netherite_monstrosity') {
+			netheriteMonstrosity = entity;
+			break;
+		}
+	}
+	if (netheriteMonstrosity) {
+		let isAwoken = netheriteMonstrosity.nbt.is_Awaken;
+		if (isAwoken) {
+			netheriteMonstrosity.addTag('phase_1')
+		}
+	}
+	let theHarbinger;
+	for (let entity of event.getServer().getLevel('minecraft:overworld').getAllEntities()) {
+		if (entity.type == 'cataclysm:the_harbinger') {
+			theHarbinger = entity;
+			break;
+		}
+	}
+	if (theHarbinger) {
+		let isAwoken = theHarbinger.nbt.is_act;
+		if (isAwoken) {
+			theHarbinger.addTag('phase_1')
+		}
+	}
 });

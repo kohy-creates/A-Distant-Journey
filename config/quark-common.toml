@@ -1676,14 +1676,14 @@
 	"Game Nerfs" = true
 	"Narrator Readout" = false
 	"Overlay Shader" = false
-	"Spawner Replacer" = false
+	"Spawner Replacer" = true
 	#Allows placing variant blocks automatically via a selector menu triggered from a keybind
 	"Variant Selector" = false
 	"Villager Rerolling Rework" = false
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
-		"Vertical Shift" = 0
+		"Vertical Shift" = 10
 
 	[experimental.climate_control_remover]
 		#Disables the temperature comparison when choosing biomes to generate.
@@ -1732,7 +1732,7 @@
 		#Makes Boats not glide on ice
 		"Disable Ice Roads" = false
 		#Makes Sheep not drop Wool when killed
-		"Disable Wool Drops" = true
+		"Disable Wool Drops" = false
 		#Disables mob griefing for only specific entities
 		"Enable Selective Mob Griefing" = true
 		#Force Elytra to only work in specific dimensions
@@ -1761,7 +1761,7 @@
 	[experimental.spawner_replacer]
 		#Mobs to be replaced with other mobs.
 		#Format is: "mob1,mob2", i.e. "minecraft:spider,minecraft:skeleton"
-		"Replace Mobs" = []
+		"Replace Mobs" = ["twilightforest:hostile_wolf,twilightforest:hedge_spider"]
 
 	#Allows placing variant blocks automatically via a selector menu triggered from a keybind
 	[experimental.variant_selector]

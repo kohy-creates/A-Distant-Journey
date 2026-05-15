@@ -279,7 +279,7 @@
 					type: "item"
 				}
 			]
-			title: "Corporeal (But In The Storage Tab)"
+			title: "&f&lTutorial:&r &dSimple Corporea Network"
 			x: -3.0d
 			y: 3.5d
 		}

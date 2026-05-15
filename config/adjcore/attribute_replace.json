@@ -47,6 +47,15 @@
 			"remove": [
 				"minecraft:generic.armor"
 			]
+		},
+		"endergetic:booflo_vest": {
+			"remove": [
+				"minecraft:generic.armor"
+			],
+			"add": [
+				"minecraft:generic.armor;0;15;CHEST",
+				"adjcore:generic.safe_fall_distance;0;5;CHEST"
+			]
 		}
 	}
 }

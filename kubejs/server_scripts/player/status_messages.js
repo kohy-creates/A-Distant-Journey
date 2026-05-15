@@ -119,8 +119,6 @@ const moonEventMessages = {
 const $EnhancedCelestials = Java.loadClass('dev.corgitaco.enhancedcelestials.EnhancedCelestials');
 const $Registry = Java.loadClass("net.minecraft.core.Registry");
 const $LunarEventClass = Java.loadClass("dev.corgitaco.enhancedcelestials.api.lunarevent.LunarEvent");
-const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
-const $Registries = Java.loadClass("net.minecraft.core.registries.Registries");
 const $EnhancedCelestialsRegistry = Java.loadClass("dev.corgitaco.enhancedcelestials.api.EnhancedCelestialsRegistry");
 
 ServerEvents.tick(event => {

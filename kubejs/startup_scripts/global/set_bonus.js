@@ -48,7 +48,7 @@ global.setBonusMap = {
 	},
 	'mythicmetals:adamantite': {
 		description: [
-			'Press \'R\' to perform a rapid dash',
+			'Press \'T\' to perform a rapid dash',
 			'Well-timed dash can dodge damage',
 			'10% increased movement speed'
 		],
@@ -82,7 +82,7 @@ global.setBonusMap = {
 	},
 	'minecraft:leather': {
 		description: [
-			'Press \'R\' to perform a rapid dash',
+			'Press \'T\' to perform a rapid dash',
 			'Well-timed dash can dodge damage'
 		],
 		effects: [
@@ -91,7 +91,7 @@ global.setBonusMap = {
 	},
 	'galosphere:sterling': {
 		description: [
-			'Press \'R\' to perform a rapid dash',
+			'Press \'T\' to perform a rapid dash',
 			'Grants 2 max dash charges',
 			'2 extra defense'
 		],
@@ -121,7 +121,7 @@ global.setBonusMap = {
 	'rediscovered:studded': {
 		description: [
 			'Reduces incoming projectile damage by extra 10%',
-			'Press \'R\' to perform a rapid dash with increased dash distance',
+			'Press \'T\' to perform a rapid dash with increased dash distance',
 			'Well-timed dash can dodge damage',
 		],
 		effects: [
@@ -179,7 +179,7 @@ global.setBonusMap = {
 		description: [
 			"14% increased magic damage",
 			"8% reduced mana cost",
-			'Press \'R\' to perform a short dash',
+			'Press \'T\' to perform a short dash',
 		],
 		effects: [
 			{ type: "attribute", value: { id: "ars_nouveau:ars_nouveau.perk.spell_damage", value: 14 } },
@@ -192,7 +192,7 @@ global.setBonusMap = {
 		description: [
 			"22% increased magic damage",
 			"8% reduced mana cost",
-			'Press \'R\' to perform a rapid dash',
+			'Press \'T\' to perform a rapid dash',
 		],
 		effects: [
 			{ type: "attribute", value: { id: "ars_nouveau:ars_nouveau.perk.spell_damage", value: 22 } },
@@ -204,21 +204,7 @@ global.setBonusMap = {
 	'ars_elemental:fire': {
 		description: [
 			"15% reduced mana cost",
-			'Press \'R\' to perform a rapid dash',
-			'Transforms some of the received',
-			'fire damage into Mana',
-			'Can\'t be set on fire'
-		],
-		effects: [
-			{ type: "attribute", value: { id: 'adjcore:player.mana_cost_reduction', value: 0.15 } },
-			{ type: "attribute", value: { id: "combatroll:count", value: 1 } },
-			{ type: "attribute", value: { id: "combatroll:distance", value: 3.0 } }
-		]
-	},
-	'ars_elemental:fire': {
-		description: [
-			"15% reduced mana cost",
-			'Press \'R\' to perform a rapid dash',
+			'Press \'T\' to perform a rapid dash',
 			'Transforms some of the received',
 			'fire-type damage into Mana',
 			'Can\'t be set on fire'
@@ -232,7 +218,7 @@ global.setBonusMap = {
 	'ars_elemental:air': {
 		description: [
 			"15% reduced mana cost",
-			'Press \'R\' to perform a rapid dash',
+			'Press \'T\' to perform a rapid dash',
 			'Transforms some of the received',
 			'air-type damage (idk either) into Mana',
 			'Greatly reduces fall damage'
@@ -246,7 +232,7 @@ global.setBonusMap = {
 	'ars_elemental:earth': {
 		description: [
 			"15% reduced mana cost",
-			'Press \'R\' to perform a rapid dash',
+			'Press \'T\' to perform a rapid dash',
 			'Transforms some of the received',
 			'earth-type damage into Mana',
 			'Replenishes hunger underground if starving'
@@ -260,7 +246,7 @@ global.setBonusMap = {
 	'ars_elemental:earth': {
 		description: [
 			"15% reduced mana cost",
-			'Press \'R\' to perform a rapid dash',
+			'Press \'T\' to perform a rapid dash',
 			'Transforms some of the received',
 			'water-type damage into Mana',
 			'Replenishes your breath if about to drown'

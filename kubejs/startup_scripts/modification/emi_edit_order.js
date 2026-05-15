@@ -164,7 +164,6 @@ StartupEvents.postInit(event => {
 		'fence',
 		'architects_palette:railing',
 		'twilightforest:banister',
-		'umbral_skies:banister',
 		'fence_gate',
 		'door',
 		'trapdoor',
@@ -236,6 +235,7 @@ StartupEvents.postInit(event => {
 		'unusualend:chorus_nest',
 		'unusualend:stripped_chorus_nest',
 		'phantasm:pream',
+		'endergetic:poise',
 		'witherstormmod:tainted',
 
 	]

@@ -130,7 +130,9 @@ global.weapon_overrides = {
 
 	'minecraft:trident': [21, 1.1, 0.08],
 	'farmersdelight:skillet': [12, 1],
-	'zenith:zenith': [110, 3.5, 0.14]
+	'zenith:zenith': [110, 3.5, 0.14],
+
+	'cataclysm:infernal_forge': [66, 1]
 };
 
 addToolsetOverride('minecraft:wooden', 7);

@@ -60,4 +60,8 @@ ServerEvents.tags('entity_type', tags => {
 		'cataclysm:ignis',
 		'quark:foxhound'
 	]);
+
+	tags.add('cataclysm:harbinger_none_targets', [
+		'evilcraft:vengeance_spirit'
+	]);
 });

@@ -13,7 +13,7 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: -0.5d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			height: 1.75d
@@ -28,8 +28,8 @@
 			image: "create_connected:block/fan_catalyst_core"
 			rotation: 45.0d
 			width: 1.75d
-			x: 5.5d
-			y: -3.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			height: 1.75d
@@ -37,7 +37,7 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: 1.5d
-			y: 5.0d
+			y: 4.5d
 		}
 	]
 	order_index: 0
@@ -145,7 +145,7 @@
 				}
 			]
 			title: "Bonk!"
-			x: 5.5d
+			x: 4.0d
 			y: 1.0d
 		}
 		{
@@ -166,8 +166,8 @@
 				}
 			]
 			title: "Wind Maker"
-			x: 5.5d
-			y: -1.0d
+			x: 4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -210,7 +210,7 @@
 			}]
 			title: "It's Clobbering Time!"
 			x: -2.0d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6F6E4CEDDF413E18"]
@@ -246,7 +246,7 @@
 				}
 			]
 			title: "HYPERSPEED!!"
-			x: 2.0d
+			x: 1.5d
 			y: 2.5d
 		}
 		{
@@ -285,10 +285,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"1FA28AA6F3F8D048"
-				"52D84E41D1800FE6"
-			]
+			dependencies: ["52D84E41D1800FE6"]
 			id: "20C40A85BDDEC015"
 			subtitle: "Craft a Deployer"
 			tasks: [{
@@ -297,11 +294,11 @@
 				type: "item"
 			}]
 			title: "A Representation of Yourself"
-			x: -2.5d
-			y: 3.0d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["20C40A85BDDEC015"]
+			dependencies: ["6D5E23CA57F59F07"]
 			id: "782BB3D700FBD243"
 			subtitle: "Assemble a Precision Mechanism"
 			tasks: [{
@@ -310,8 +307,8 @@
 				type: "item"
 			}]
 			title: "So Precise!"
-			x: -3.5d
-			y: 4.0d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0288AADCBD95EB2D"]
@@ -331,7 +328,7 @@
 				}
 			]
 			title: "Technomantic!"
-			x: 4.5d
+			x: 4.0d
 			y: 2.5d
 		}
 		{
@@ -362,7 +359,7 @@
 			}]
 			title: "Mechanised!"
 			x: -0.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -378,7 +375,7 @@
 			}]
 			title: "NEVER Give Up (And Unload)"
 			x: -2.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["57A550E2F3090147"]
@@ -411,7 +408,7 @@
 				type: "item"
 			}]
 			title: "HYPERSPEED Premium"
-			x: 2.0d
+			x: 2.5d
 			y: 3.5d
 		}
 		{
@@ -467,7 +464,7 @@
 			}]
 			title: "Judge, Jury, EXECUTIONER!"
 			x: 1.0d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["74E81719E903F908"]
@@ -498,7 +495,7 @@
 			}]
 			title: "Abracadabra, Castle!"
 			x: -0.5d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0288AADCBD95EB2D"]
@@ -510,8 +507,8 @@
 				type: "item"
 			}]
 			title: "You Can Build a Country Out Of This!"
-			x: 6.5d
-			y: 2.5d
+			x: 5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6DE114694DBEDAF9"]
@@ -585,8 +582,8 @@
 				type: "item"
 			}]
 			title: "It Looks Like A Trash Can"
-			x: 7.0d
-			y: -0.5d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["28583EFCD06F1117"]
@@ -628,8 +625,8 @@
 				type: "item"
 			}]
 			title: "Compact!"
-			x: 6.5d
-			y: -2.0d
+			x: 5.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["41AAF22B7E5F60E6"]
@@ -662,8 +659,8 @@
 				}
 			]
 			title: "Industrial Elementalist"
-			x: 5.5d
-			y: -3.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["74E81719E903F908"]
@@ -679,7 +676,7 @@
 			}]
 			title: "Forma Perfecta"
 			x: 1.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["57A550E2F3090147"]
@@ -751,7 +748,7 @@
 				}
 			]
 			title: "Too Hot! Too Hot!!"
-			x: 7.5d
+			x: 5.5d
 			y: 1.0d
 		}
 		{
@@ -810,7 +807,7 @@
 				type: "item"
 			}]
 			title: "Crushing Time"
-			x: 3.5d
+			x: 3.0d
 			y: -0.5d
 		}
 		{
@@ -832,7 +829,7 @@
 			}]
 			title: "Efficiency Boost"
 			x: 4.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["469D3A0EDD34A3DD"]
@@ -853,7 +850,7 @@
 			]
 			title: "Tunnels and Funnels"
 			x: 3.5d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["57A550E2F3090147"]

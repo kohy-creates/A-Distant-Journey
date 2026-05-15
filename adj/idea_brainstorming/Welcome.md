@@ -6,3 +6,4 @@ It uses [Obsidian.md](https://obsidian.md/) to organize and visualize connection
 
 ## Sections:
 - [[Mod Additions]]
+- [[Update Checklists]]

@@ -142,7 +142,6 @@ ClientEvents.lang('en_us', event => {
 		'create:veridium': 'Viridstone',
 
 		'aether:altar': 'Zanite Altar',
-		'spelunkers_charm:dead_grass': 'Cave Grass',
 
 		'aether:cold_aercloud': 'Cloud Block',
 		'aether:blue_aercloud': 'Bouncy Cloud Block',

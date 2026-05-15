@@ -82,7 +82,6 @@ KeyBindEvents.modify(event => {
 		"key.shouldersurfing.toggle_z_offset_presets",
 		"key.screenshot_viewer.open_screenshots_screen",
 		// "key.showmeyourskin.global_toggle",
-		"key.spelunkers_charm.flashlight_toggle",
 		"key.spectatorOutlines",
 		"key.trade_cycling.cycle_trades",
 		"key.toastcontrol.clear",

@@ -3,7 +3,7 @@
 		"iframes": 0
 	},
 	"#adjcore:player_melee": {
-		"iframes": 8
+		"iframes": 5
 	},
 	"#minecraft:is_projectile": {
 		"iframes": 0
@@ -23,7 +23,15 @@
 			"aether_redux:vanilla_swet": 10,
 			"ancient_aether:festive_swet": 10,
 			"born_in_chaos_v1:restless_spirit": 14,
-			"minecraft:player": 3
+			"minecraft:player": 3,
+			"hybrid-aquatic:big_red_jellyfish": 10,
+			"hybrid-aquatic:blue_jellyfish": 10,
+			"hybrid-aquatic:box_jellyfish": 10,
+			"hybrid-aquatic:crown_jellyfish": 10,
+			"hybrid-aquatic:firework_jellyfish": 10,
+			"hybrid-aquatic:lions_mane_jellyfish": 10,
+			"hybrid-aquatic:nomura_jellyfish": 10,
+			"cataclysm:netherite_monstrosity": 5
 		}
 	},
 	"minecraft:mob_attack_no_aggro": {

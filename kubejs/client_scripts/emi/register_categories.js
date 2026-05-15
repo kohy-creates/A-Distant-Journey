@@ -97,7 +97,8 @@ const $BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltIn
 JEIAddedEvents.registerRecipes((event) => {
 	VillagerUtils.getProfessions().forEach(profession => {
 		let descriptionID = profession.name();
-		if (descriptionID.includes(':')) {
+		if (descriptionID === 'nitwit') return;
+		else if (descriptionID.includes(':')) {
 			descriptionID = descriptionID.split(':')[1];
 		}
 

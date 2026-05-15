@@ -3,7 +3,7 @@ const UnavailableItems = {
 	stages: null,
 	cache: {
 		ticker: 0,
-		interval: 5,
+		interval: 60,
 		currentChapter: 0,
 		chapterCached: null,
 		bannedItems: new Set([typeof String]),
@@ -73,10 +73,8 @@ ADJClientEvents.itemIsLockedRenderCheck(event => {
 
 	if (UnavailableItems.cache.shouldHide(id)) {
 		event.cancel();
-		return;
 	}
-
-	if (id.includes('valkyrum') && !UnavailableItems.stages.has('valkyrum_unlocked')) {
+	else if (id.includes('valkyrum') && !UnavailableItems.stages.has('valkyrum_unlocked')) {
 		event.cancel();
 	}
 });

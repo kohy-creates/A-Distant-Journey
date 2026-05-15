@@ -301,7 +301,6 @@ ServerEvents.recipes((event) => {
 		'minecraft:charcoal',
 		'create:compacting/chocolate',
 		'twilightdelight:cooking/transformation_powder',
-		/umbral_skies:.*gloves/,
 		/aether:.*gloves/,
 		'brewinandchewin:fermenting/egg_grog_from_milk',
 		'twilightdelight:cutting/phantom_chestplate',
@@ -323,10 +322,7 @@ ServerEvents.recipes((event) => {
 		'rubinated_nether:ruby_from_ruby_shard',
 		'rubinated_nether:ruby_from_ruby_block',
 		'rubinated_nether:ruby_from_molten_ruby',
-		'spelunkers_charm:rocks_to_cobblestone',
-		'spelunkers_charm:basalt_rocks_to_basalt',
-		'spelunkers_charm:dripstone_rock_to_dripstone',
-		'spelunkers_charm:deepslate_rock_to_cobbled_deepslate',
+		'cataclysm:mech_eye'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -346,7 +342,8 @@ ServerEvents.recipes((event) => {
 		'morered:soldering',
 		'ars_nouveau:armor_upgrade',
 		'ars_nouveau:enchantment',
-		'beachparty:palm_bar_mixing'
+		'beachparty:palm_bar_mixing',
+		'twilightforest:transformation'
 	];
 	removeRecipeByType.forEach(recipeType => {
 		event.remove({ type: recipeType })
@@ -410,6 +407,7 @@ ServerEvents.recipes((event) => {
 			'alexscaves:sulfur_dust': 'hybrid-aquatic:sulfur',
 			'farmersdelight:canvas': 'xercapaint:item_canvas',
 			'crittersandcompanions:pearl': 'hybrid-aquatic:pearl',
+			'twilightforest:transformation_powder': 'botania:mana_powder'
 		},
 		output: {
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
@@ -508,6 +506,14 @@ ServerEvents.recipes((event) => {
 			Item.of('galosphere:pink_salt_shard', 1).withChance(0.35)
 		],
 	).id('adj:pink_salt_shard');
+
+	event.smoking('dried_kelp', 'hybrid-aquatic:sea_lettuce', 0.2, 200).id('adj:dried_kelp_from_sea_lettuce');
+	event.smoking('dried_kelp', 'seagrass', 0.2, 200).id('adj:dried_kelp_from_seagrass');
+
+	event.replaceInput({ id: 'quark:building/crafting/iron_plate' },
+		'iron_ingot',
+		'create:iron_sheet',
+	);
 
 	// Accents sewing recipes for Vanity items
 	function sewingRecipe(input, output, outputCount, id) {
@@ -723,34 +729,6 @@ ServerEvents.recipes((event) => {
 		'1x string'
 	], 'ancient_aether:valkyrum_gloves');
 
-	workshopRecipe([
-		'2x twilightforest:steeleaf_ingot',
-		'1x leather',
-		'1x string'
-	], 'umbral_skies:steeleaf_gloves');
-
-	workshopRecipe([
-		'2x twilightforest:ironwood_ingot',
-		'1x aether:leather_gloves',
-		'1x string'
-	], 'umbral_skies:ironwood_gloves');
-
-	workshopRecipe([
-		'2x twilightforest:fiery_ingot',
-		'1x netherite_ingot',
-		'3x ars_nouveau:magebloom_fiber'
-	], 'umbral_skies:fiery_gloves');
-
-	workshopRecipe([
-		'6x twilightforest:arctic_fur',
-		'1x string'
-	], 'umbral_skies:arctic_gloves');
-
-	workshopRecipe([
-		'5x twilightforest:alpha_yeti_fur',
-		'3x ars_nouveau:magebloom_fiber'
-	], 'umbral_skies:yeti_gloves');
-
 	// Wooden Armor
 	event.shaped(
 		'kubejs:wooden_helmet',
@@ -861,6 +839,8 @@ ServerEvents.recipes((event) => {
 		'packed_ice': 'architects_palette:polished_packed_ice',
 		'glowstone': 'architects_palette:polished_glowstone',
 		'architects_palette:nebulite': 'architects_palette:polished_nebulite',
+		'kubejs:sulfur': 'kubejs:polished_sulfur',
+		'kubejs:cinnabar': 'kubejs:polished_cinnabar'
 	};
 	Object.keys(toPolishedMap).forEach(item => {
 		const out = toPolishedMap[item];
@@ -1033,6 +1013,18 @@ ServerEvents.recipes((event) => {
 				}
 			).id(`adj:paper_lantern/${color}`);
 		}
+
+		event.shaped(
+			`create:${c}_seat`,
+			[
+				'C',
+				'S'
+			],
+			{
+				S: '#wooden_slabs',
+				C: `handcrafted:${c}_cushion`
+			}
+		).id(`create:crafting/kinetics/${c}_seat`)
 	})
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
@@ -1137,13 +1129,14 @@ ServerEvents.recipes((event) => {
 	).id('adj:missing_tiles');
 
 	event.shaped(
-		'20x architects_palette:plating_block',
+		'30x architects_palette:plating_block',
 		[
-			'PP',
-			'PP'
+			'PPP',
+			'P P',
+			'PPP'
 		],
 		{
-			P: 'create:iron_sheet'
+			P: 'create:sturdy_sheet'
 		}
 	).id('adj:plating_block');
 
@@ -1267,6 +1260,22 @@ ServerEvents.recipes((event) => {
 		1000000
 	);
 
+	/**
+	 * @example 
+	 * alloyForgeRecipe(
+	 *	[
+	 *		['copper_ingot', 1],
+	 *		['redstone', 5]
+	 *	],
+	 *	['morered:red_alloy_ingot', 1],
+	 *	1,
+	 *	5,
+	 *	[
+	 *		['3+', 'output', 2],
+	 *		['4+', 'output', 3],
+	 *	]
+	 * );
+	 */
 	function alloyForgeRecipe(inputs, output, minTier, fuelPerTick, tierOverrides) {
 
 		let recipe = {
@@ -2542,7 +2551,7 @@ ServerEvents.recipes((event) => {
 	};
 
 
-	// Awakened Ender Pearls
+	// Attuned Awakened Ender Pearls
 	event.forEachRecipe({ type: 'crafting_shaped', output: /cataclysm\:.*eye/ }, recipe => {
 		if (!recipe) return;
 		const result = recipe.getOriginalRecipeResult();
@@ -2567,6 +2576,7 @@ ServerEvents.recipes((event) => {
 			0
 		).id(`adj:awakened_pearls/${result.getId().split(':')[1]}`)
 	});
+
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
 			'rediscovered:ruby',
@@ -2581,6 +2591,27 @@ ServerEvents.recipes((event) => {
 		'rediscovered:ruby_eye',
 		0
 	).id(`adj:awakened_pearls/ruby_ender_pearl`);
+
+	event.recipes.create.mechanical_crafting(
+		'cataclysm:mech_eye',
+		[
+			'  MMM  ',
+			' MRGRM ',
+			'MRGAGRM',
+			'MGAEAGM',
+			'MRGAGRM',
+			' MRGRM ',
+			'  MMM  ',
+		],
+		{
+			M: 'create:sturdy_sheet',
+			R: 'redstone_block',
+			E: 'ender_eye',
+			G: '#forge:glass/colorless',
+			A: 'mythicmetals:adamantite_ingot'
+
+		}
+	).id('adj:awakened_pearls/mech_eye');
 
 	// End game Architect's Prism recipes
 	event.custom({
@@ -3031,44 +3062,44 @@ ServerEvents.recipes((event) => {
 	// Different Essence crafts
 	const essenceRecipes = {
 		'ars_nouveau:air_essence': [
-			{ source: 4500, ingredients: ['arrow', 'feather', 'feather',] },
-			{ source: 2000, ingredients: ['arrow', 'miners_delight:bat_wing', 'miners_delight:bat_wing',] },
-			{ source: 1300, ingredients: ['arrow', 'aether:cold_aercloud', 'aether:cold_aercloud',] },
+			{ source: 2100, ingredients: ['arrow', 'feather', 'feather',] },
+			{ source: 1400, ingredients: ['arrow', 'miners_delight:bat_wing', 'miners_delight:bat_wing',] },
+			{ source: 700, ingredients: ['arrow', 'aether:cold_aercloud', 'aether:cold_aercloud',] },
 		],
 		'ars_nouveau:water_essence': [
-			{ source: 4500, ingredients: ['water_bucket', 'water_bucket', 'water_bucket'] },
-			{ source: 2000, ingredients: ['water_bucket', 'kelp', 'prismarine'] },
-			{ source: 1300, ingredients: ['water_bucket', 'upgrade_aquatic:prismarine_coral_block', 'upgrade_aquatic:prismarine_coral_block'] },
+			{ source: 2100, ingredients: ['water_bucket', 'water_bucket', 'water_bucket'] },
+			{ source: 1400, ingredients: ['water_bucket', 'kelp', 'prismarine'] },
+			{ source: 700, ingredients: ['water_bucket', 'upgrade_aquatic:prismarine_coral_block', 'upgrade_aquatic:prismarine_coral_block'] },
 		],
 		'ars_nouveau:fire_essence': [
-			{ source: 4500, ingredients: ['gunpowder', 'coal', 'torch'] },
-			{ source: 2000, ingredients: ['gunpowder', 'netherexp:fossil_fuel', 'torch'] },
-			{ source: 1300, ingredients: ['fire_charge', 'netherexp:fossil_fuel', 'netherdepthsupgrade:searing_cod'] },
+			{ source: 2100, ingredients: ['gunpowder', 'coal', 'torch'] },
+			{ source: 1400, ingredients: ['gunpowder', 'netherexp:fossil_fuel', 'torch'] },
+			{ source: 700, ingredients: ['fire_charge', 'netherexp:fossil_fuel', 'netherdepthsupgrade:searing_cod'] },
 		],
 		'ars_nouveau:earth_essence': [
-			{ source: 4500, ingredients: ['iron_ingot', 'rooted_dirt', 'rooted_dirt'] },
-			{ source: 2000, ingredients: ['iron_ingot', 'moss_block', 'coarse_dirt'] },
-			{ source: 1300, ingredients: ['iron_ingot', 'create:tree_fertilizer', 'aether:aether_dirt'] },
+			{ source: 2100, ingredients: ['iron_ingot', 'rooted_dirt', 'rooted_dirt'] },
+			{ source: 1400, ingredients: ['iron_ingot', 'moss_block', 'coarse_dirt'] },
+			{ source: 700, ingredients: ['iron_ingot', 'create:tree_fertilizer', 'aether:aether_dirt'] },
 		],
 		'ars_nouveau:abjuration_essence': [
-			{ source: 4500, ingredients: ['sugar', 'spider_eye', 'amethyst_shard'] },
-			{ source: 2000, ingredients: ['sugar', 'fermented_spider_eye', '#c:milk'] },
-			{ source: 1300, ingredients: ['supplementaries:sugar_cube', 'fermented_spider_eye', 'botania:pixie_dust'] },
+			{ source: 2100, ingredients: ['sugar', 'spider_eye', 'amethyst_shard'] },
+			{ source: 1400, ingredients: ['sugar', 'fermented_spider_eye', '#c:milk'] },
+			{ source: 700, ingredients: ['supplementaries:sugar_cube', 'fermented_spider_eye', 'botania:pixie_dust'] },
 		],
 		'ars_nouveau:conjuration_essence': [
-			{ source: 4500, ingredients: ['book', 'bone', 'netherexp:fossil_fuel'] },
-			{ source: 2000, ingredients: ['book', 'ars_nouveau:wilden_horn', 'netherexp:fossil_fuel'] },
-			{ source: 1300, ingredients: ['book', 'ars_nouveau:wilden_horn', 'ars_nouveau:starbuncle_shards'] },
+			{ source: 2100, ingredients: ['book', 'bone', 'netherexp:fossil_fuel'] },
+			{ source: 1400, ingredients: ['book', 'ars_nouveau:wilden_horn', 'netherexp:fossil_fuel'] },
+			{ source: 700, ingredients: ['book', 'ars_nouveau:wilden_horn', 'ars_nouveau:starbuncle_shards'] },
 		],
 		'ars_nouveau:manipulation_essence': [
-			{ source: 4500, ingredients: ['redstone', 'piston', '#adj:clock'] },
-			{ source: 2000, ingredients: ['morered:red_alloy_ingot', 'piston', 'supplementaries:clock_block'] },
-			{ source: 1300, ingredients: ['morered:red_alloy_ingot', 'botania:piston_relay', 'create:cuckoo_clock'] },
+			{ source: 2100, ingredients: ['redstone', 'piston', '#adj:clock'] },
+			{ source: 1400, ingredients: ['morered:red_alloy_ingot', 'piston', 'supplementaries:clock_block'] },
+			{ source: 700, ingredients: ['morered:red_alloy_ingot', 'botania:piston_relay', 'create:cuckoo_clock'] },
 		],
 		'ars_elemental:anima_essence': [
-			{ source: 6500, ingredients: ['golden_apple', 'kubejs:skull_fragment', 'bone_meal'] },
-			{ source: 3000, ingredients: ['golden_apple', 'wither_skeleton_skull', 'bone_block'] },
-			{ source: 1800, ingredients: ['enchanted_golden_apple', 'wither_skeleton_skull', 'netherexp:wither_bone_block'] },
+			{ source: 2100, ingredients: ['golden_apple', 'kubejs:skull_fragment', 'bone_meal'] },
+			{ source: 1400, ingredients: ['golden_apple', 'wither_skeleton_skull', 'bone_block'] },
+			{ source: 700, ingredients: ['enchanted_golden_apple', 'wither_skeleton_skull', 'netherexp:wither_bone_block'] },
 		],
 	};
 	for (let [essence, recipeList] of Object.entries(essenceRecipes)) {
@@ -4180,7 +4211,9 @@ ServerEvents.recipes((event) => {
 		'ancient_aether:ambrosium_campfire',
 		'aether:ambrosium_torch',
 		'architects_palette:nether_brass_torch',
-		'copper_torch'
+		'copper_torch',
+		'endergetic:ender_torch',
+		'endergetic:ender_campfire'
 	]
 	earlyGameReworkItems.forEach(item => {
 		event.remove({ type: 'crafting_shaped', output: item })
@@ -4202,28 +4235,29 @@ ServerEvents.recipes((event) => {
 	function torchTransform(input, output, amount) {
 		let ingredients = [input];
 		for (let i = 0; i < amount; i++) {
-			ingredients.push('torch')
+			ingredients.push('torch');
 		}
 		event.shapeless(
 			Item.of(output, amount),
 			ingredients
-		).id(`adj:torch_transform_${flattenedID(output)}_from_${(Array.isArray(input) ? flattenedID(input[0]) : flattenedID(input))}`)
+		).id(`adj:torch_transform_${flattenedID(output)}_from_${(Array.isArray(input) ? flattenedID(input[0]) : flattenedID(input))}`);
 	}
-	torchRecipe('#c:coal', 8)
-	torchRecipe('slime_ball', 3)
-	torchRecipe('flint', 4)
-	torchRecipe('blaze_powder', 12)
-	torchRecipe('born_in_chaos_v1:fire_dust', 8)
+	torchRecipe('#c:coal', 8);
+	torchRecipe('slime_ball', 3);
+	torchRecipe('flint', 4);
+	torchRecipe('blaze_powder', 12);
+	torchRecipe('born_in_chaos_v1:fire_dust', 8);
 
-	torchTransform('#soul_fire_base_blocks', 'soul_torch', 3)
-	torchTransform('netherexp:ancient_wax', 'netherexp:ancient_torch', 6)
-	torchTransform('redstone', 'redstone_torch', 1)
-	torchTransform(['tide:luminescent_jellyfish', 'tide:sun_emblem'], 'tide:jelly_torch', 8)
-	torchTransform('witherstormmod:tainted_dust', 'witherstormmod:tainted_torch', 2)
-	torchTransform('alexscaves:bioluminesscence', 'alexscaves:bioluminescent_torch', 3)
-	torchTransform('aether:ambrosium_shard', 'aether:ambrosium_torch', 5)
-	torchTransform('architects_palette:nether_brass_nugget', 'architects_palette:nether_brass_torch', 3)
-	torchTransform('mythicmetals:copper_nugget', 'copper_torch', 3)
+	torchTransform('#soul_fire_base_blocks', 'soul_torch', 3);
+	torchTransform('netherexp:ancient_wax', 'netherexp:ancient_torch', 6);
+	torchTransform('redstone', 'redstone_torch', 1);
+	torchTransform(['tide:luminescent_jellyfish', 'tide:sun_emblem'], 'tide:jelly_torch', 8);
+	torchTransform('witherstormmod:tainted_dust', 'witherstormmod:tainted_torch', 2);
+	torchTransform('alexscaves:bioluminesscence', 'alexscaves:bioluminescent_torch', 3);
+	torchTransform('aether:ambrosium_shard', 'aether:ambrosium_torch', 5);
+	torchTransform('architects_palette:nether_brass_nugget', 'architects_palette:nether_brass_torch', 3);
+	torchTransform('mythicmetals:copper_nugget', 'copper_torch', 3);
+	torchTransform('#endergetic:ender_fire_base_blocks', 'endergetic:ender_torch', 3);
 
 	function campfireRecipe(torchInput, baseInput, output) {
 		event.shaped(
@@ -4239,16 +4273,17 @@ ServerEvents.recipes((event) => {
 				L: '#logs_that_burn',
 				B: baseInput
 			}
-		).id(`adj:campfire/${flattenedID(output)}`)
+		).id(`adj:campfire/${flattenedID(output)}`);
 	}
-	campfireRecipe('torch', '#logs_that_burn', 'campfire')
-	campfireRecipe('soul_torch', '#soul_fire_base_blocks', 'soul_campfire')
-	campfireRecipe('netherexp:ancient_torch', 'magma_block', 'netherexp:ancient_campfire')
-	campfireRecipe('aether:ambrosium_torch', '#logs_that_burn', 'ancient_aether:ambrosium_campfire')
+	campfireRecipe('torch', '#logs_that_burn', 'campfire');
+	campfireRecipe('soul_torch', '#soul_fire_base_blocks', 'soul_campfire');
+	campfireRecipe('netherexp:ancient_torch', 'magma_block', 'netherexp:ancient_campfire');
+	campfireRecipe('aether:ambrosium_torch', '#logs_that_burn', 'ancient_aether:ambrosium_campfire');
+	campfireRecipe('endergetic:ender_torch', '#endergetic:ender_fire_base_blocks', 'endergetic:ender_campfire');
 
 	function arrowRecipe(input, outputAmount, output) {
 		let outputArrow = (output) ? output : 'arrow';
-		event.remove({ type: 'crafting_shaped', output: outputArrow })
+		event.remove({ type: 'crafting_shaped', output: outputArrow });
 		event.shaped(
 			Item.of(outputArrow, outputAmount),
 			[
@@ -4261,7 +4296,7 @@ ServerEvents.recipes((event) => {
 				S: 'stick',
 				F: 'feather'
 			}
-		).id(`adj:arrow_from_${flattenedID(input)}`)
+		).id(`adj:arrow_from_${flattenedID(input)}`);
 	}
 	arrowRecipe('iron_nugget', 10);
 	arrowRecipe('flint', 25);
@@ -4792,121 +4827,21 @@ ServerEvents.recipes((event) => {
 		}
 		return null;
 	}
-	const manaAmounts = [
-		5200,
-		8000,
-		12000
-	]
+	const manaAmounts = [5200, 8000, 12000];
 	const runeCraftingMap = {
-		'water': {
-			tier: 1,
-			items: [
-				'botania:mana_powder',
-				'botania:mana_powder',
-				'ars_nouveau:water_essence'
-			]
-		},
-		'fire': {
-			tier: 1,
-			items: [
-				'botania:mana_powder',
-				'botania:mana_powder',
-				'ars_nouveau:fire_essence'
-			]
-		},
-		'air': {
-			tier: 1,
-			items: [
-				'botania:mana_powder',
-				'botania:mana_powder',
-				'ars_nouveau:air_essence'
-			]
-		},
-		'earth': {
-			tier: 1,
-			items: [
-				'botania:mana_powder',
-				'botania:mana_powder',
-				'ars_nouveau:earth_essence'
-			]
-		},
-		'mana': {
-			tier: 1,
-			items: [
-				'botania:mana_powder',
-				'botania:mana_powder',
-				'ars_nouveau:abjuration_essence',
-			]
-		},
-		'spring': {
-			tier: 2,
-			items: [
-				rune('water'),
-				rune('fire'),
-				'#flowers',
-				'#flowers',
-				'#flowers',
-				'#leaves'
-			]
-		},
-		'summer': {
-			tier: 2,
-			items: [
-				rune('air'),
-				rune('earth'),
-				'#sand',
-				'#sand',
-				'water_bucket',
-				'dead_bush'
-			]
-		},
-		'autumn': {
-			tier: 2,
-			items: [
-				rune('fire'),
-				rune('air'),
-				'wheat',
-				'carrot',
-				'potato',
-				'farmersdelight:onion'
-			]
-		},
-		'winter': {
-			tier: 2,
-			items: [
-				rune('earth'),
-				rune('water'),
-				'snow_block',
-				'snow_block',
-				'leather',
-				'#wool'
-			]
-		},
-		'tp': {
-			tier: 1,
-			items: [
-				'botania:mana_powder',
-				'botania:mana_powder',
-				'ars_nouveau:manipulation_essence',
-			]
-		},
-		'energy': {
-			tier: 1,
-			items: [
-				'botania:mana_powder',
-				'botania:mana_powder',
-				'ars_nouveau:conjuration_essence',
-			]
-		},
-		'life': {
-			tier: 1,
-			items: [
-				'botania:mana_powder',
-				'botania:mana_powder',
-				'ars_elemental:anima_essence',
-			]
-		}
-	}
+		'water': { tier: 1, items: ['botania:mana_powder', 'ars_nouveau:water_essence'] },
+		'fire': { tier: 1, items: ['botania:mana_powder', 'ars_nouveau:fire_essence'] },
+		'air': { tier: 1, items: ['botania:mana_powder', 'ars_nouveau:air_essence'] },
+		'earth': { tier: 1, items: ['botania:mana_powder', 'ars_nouveau:earth_essence'] },
+		'mana': { tier: 1, items: ['botania:mana_powder', 'ars_nouveau:abjuration_essence'] },
+		'spring': { tier: 2, items: [rune('water'), rune('fire'), 'botania:mana_powder', 'ars_nouveau:source_gem'] },
+		'summer': { tier: 2, items: [rune('air'), rune('earth'), 'botania:mana_powder', 'ars_nouveau:source_gem'] },
+		'autumn': { tier: 2, items: [rune('fire'), rune('air'), 'botania:mana_powder', 'ars_nouveau:source_gem'] },
+		'winter': { tier: 2, items: [rune('earth'), rune('water'), 'botania:mana_powder', 'ars_nouveau:source_gem'] },
+		'tp': { tier: 1, items: ['botania:mana_powder', 'ars_nouveau:manipulation_essence'] },
+		'energy': { tier: 1, items: ['botania:mana_powder', 'ars_nouveau:conjuration_essence'] },
+		'life': { tier: 1, items: ['botania:mana_powder', 'ars_elemental:anima_essence'] }
+	};
 
 	for (const [runeName, entry] of Object.entries(runeCraftingMap)) {
 		let targetRune = rune(runeName);
@@ -4917,8 +4852,8 @@ ServerEvents.recipes((event) => {
 			Item.of(targetRune, (entry.tier == 1) ? 2 : 1),
 			entry.items,
 			manaAmounts[entry.tier - 1]
-		).id('botania:runic_altar/' + runeName)
-	}
+		).id('botania:runic_altar/' + runeName);
+	};
 
 	const essenceToRuneMap = {
 		'ars_nouveau:fire_essence': 'botania:rune_fire',
@@ -4929,14 +4864,14 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:manipulation_essence': 'botanicadds:rune_tp',
 		'ars_nouveau:abjuration_essence': 'botania:rune_mana',
 		'ars_nouveau:conjuration_essence': 'botanicadds:rune_energy',
-	}
+	};
 
 	for (const [essence, rune] of Object.entries(essenceToRuneMap)) {
 		event.replaceInput({ not: { type: 'crafting_shapeless' } },
 			essence,
 			rune
-		)
-	}
+		);
+	};
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
@@ -4951,8 +4886,8 @@ ServerEvents.recipes((event) => {
 		],
 		'evilcraft:dark_power_gem',
 		'botania:spawner_mover',
-		10000
-	).id('adj:spawner_mover')
+		5000
+	).id('adj:spawner_mover');
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
@@ -4965,12 +4900,16 @@ ServerEvents.recipes((event) => {
 		],
 		'evilcraft:dark_power_gem',
 		'botania:spawner_claw',
-		3500
-	).id('adj:spawner_claw')
+		3333
+	).id('adj:spawner_claw');
 
 	// All Leaves support Conjuration Catalyst
 	Item.getTypeList().forEach(id => {
-		if (id.includes('_leaves') && id !== 'botania:horn_leaves') {
+		if (
+			!global.isItemDisabled(id)
+			&& id.includes('_leaves')
+			&& id !== 'botania:horn_leaves'
+		) {
 			event.recipes.botania.mana_infusion(Item.of(id, 2), id)
 				.mana(2000)
 				.catalyst('botania:conjuration_catalyst')
@@ -5065,13 +5004,7 @@ ServerEvents.recipes((event) => {
 			['mythicmetals:deepslate_adamantite_ore', 1],
 		],
 		'aether:holystone': [
-			['aether_overworld_ores:holystone_coal_ore', 10500],
-			['aether_overworld_ores:holystone_iron_ore', 7500],
-			['aether_overworld_ores:holystone_gold_ore', 4500],
-			['aether_overworld_ores:holystone_emerald_ore', 800],
-			['aether_overworld_ores:holystone_redstone_ore', 2200],
-			['aether_overworld_ores:holystone_lapis_ore', 2000],
-			['aether_overworld_ores:holystone_diamond_ore', 250],
+
 			['ancient_aether:valkyrum_ore', 150],
 			['ancient_aether:aether_quartz_ore', 5000],
 			['aether:ambrosium_ore', 23500],
@@ -7436,8 +7369,7 @@ ServerEvents.recipes((event) => {
 		],
 		{
 			P: [
-				'dried_kelp',
-				'farmersdelight:straw'
+				'dried_kelp'
 			]
 		}
 	).id('adj:mechanical_belt')
@@ -7450,8 +7382,7 @@ ServerEvents.recipes((event) => {
 		],
 		{
 			P: [
-				'dried_kelp_block',
-				'farmersdelight:straw_bale'
+				'dried_kelp_block'
 			]
 		}
 	).id('adj:mechanical_belt_bulk')
@@ -7630,25 +7561,11 @@ ServerEvents.recipes((event) => {
 		}
 	).id('adj:spout')
 
-	Color.DYE.forEach(c => {
-		event.shaped(
-			`create:${c}_seat`,
-			[
-				'C',
-				'S'
-			],
-			{
-				S: '#wooden_slabs',
-				C: `handcrafted:${c}_cushion`
-			}
-		).id(`create:crafting/kinetics/${c}_seat`)
-	})
-
 	event.recipes.create.mixing(
 		'create:pulp',
 		[
 			'6x paper',
-			Fluid.water(250)
+			Fluid.water(400)
 		]
 	).id('adj:pulp_alternative')
 
@@ -7671,6 +7588,13 @@ ServerEvents.recipes((event) => {
 	).id('adj:experience_gem_from_block');
 
 	event.recipes.create.compacting('neapolitan:chocolate_bar', Fluid.of('create:chocolate', 250)).id('adj:create_compacting_chocolate_new');
+
+	workshopRecipe([
+		'create:brass_sheet',
+		'4x create:cogwheel',
+		'4x create:large_cogwheel',
+		'2x iron_ingot'
+	], 'create:precision_mechanism');
 
 	// More logical Copycat Blocks
 	// Like BE FR WHY DOES EVERYTHING HAVE TO BOIL DOWN TO A STONECUTTER???
@@ -8307,7 +8231,7 @@ ServerEvents.recipes((event) => {
 	// Sulfur and Cinnabar
 	function fullBlockSet(base, polished, bricks) {
 
-		event.shaped(`4x kubejs:${polished}`, ['AA', 'AA'], { A: `kubejs:${base}` }).id(`adj:${polished}_from_${base}`);
+		// event.shaped(`4x kubejs:${polished}`, ['AA', 'AA'], { A: `kubejs:${base}` }).id(`adj:${polished}_from_${base}`);
 		event.shaped(`4x kubejs:${bricks}`, ['AA', 'AA'], { A: `kubejs:${polished}` }).id(`adj:${bricks}_from_${polished}`);
 		event.shaped(`kubejs:chiseled_${base}`, ['A', 'A'], { A: `kubejs:${bricks}_slab` }).id(`adj:chiseled_${base}`);
 
@@ -8322,7 +8246,7 @@ ServerEvents.recipes((event) => {
 			event.stonecutting(`${b}_wall`, b).id(`adj:${id}_wall_stonecutting`);
 		});
 
-		event.stonecutting(`kubejs:${polished}`, `kubejs:${base}`).id(`adj:${polished}_stonecutting`);
+		// event.stonecutting(`kubejs:${polished}`, `kubejs:${base}`).id(`adj:${polished}_stonecutting`);
 		event.stonecutting(`kubejs:${bricks}`, `kubejs:${polished}`).id(`adj:${bricks}_stonecutting`);
 	}
 
@@ -8461,7 +8385,25 @@ ServerEvents.recipes((event) => {
 		result: 'rediscovered:ruby'
 	}).id('adj:ruby_from_molten_ruby');
 
-	// ADJ ~ The Ocean Update
-	event.smoking('dried_kelp', 'oceanicrealms:giant_kelp', 0.2, 200).id('adj:dried_kelp_from_giant_kelp');
-	event.smoking('dried_kelp', 'hybrid-aquatic:sea_lettuce', 0.2, 200).id('adj:dried_kelp_from_sea_lettuce');
+	// Alex's Caves
+	/**
+	 * @type {Special.RecipeId[]}
+	 */
+	const removeACRecipes = [
+		'alexscaves:ominous_catalyst'
+	];
+	removeACRecipes.forEach(recipe => {
+		recipe.remove({ id: recipe });
+	});
+
+	alloyForgeRecipe(
+		[
+			['alexscaves:amber_curiosity', 1],
+			['alexscaves:heavy_bone', 10]
+		],
+		['alexscaves:ominous_catalyst', 1],
+		3,
+		20,
+		[]
+	);
 });

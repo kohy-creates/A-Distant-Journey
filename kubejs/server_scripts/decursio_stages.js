@@ -113,43 +113,72 @@ const DecursioStages = {
 		DecursioStages.chapterMessages[stage].forEach(msg => {
 			global.broadcast(server, msg);
 		})
-	}
-
+	},
+	cache: {
+		ticker: 0,
+		interval: 100,
+		currentChapter: 0,
+		chapterCached: null,
+		bannedItems: new Set([typeof String]),
+		shouldHide: function (id) {
+			return this.bannedItems.has(String(id));
+		}
+	},
 }
 
-ADJServerEvents.recipeLookup(event => {
+ServerEvents.tick(event => {
+	DecursioStages.cache.ticker++;
+	if (DecursioStages.cache.ticker == DecursioStages.cache.interval) {
+		DecursioStages.cache.ticker = 0;
 
-	const item = event.getItem();
+		DecursioStages.cache.currentChapter = global.getCurrentChapter(event.getServer());
+		if (DecursioStages.cache.chapterCached == null || DecursioStages.cache.chapterCached != DecursioStages.cache.currentChapter) {
 
-	if (item.getId().includes('valkyrum')) {
-		if (!server.persistentData.valkyrumUnlocked) {
-			event.cancel();
-			return;
+			Utils.runAsync(() => {
+				console.log('Generating undiscovered item cache...', 'This is running async btw!')
+				DecursioStages.cache.bannedItems = new Set([typeof String]);
+				Item.getTypeList().toArray().forEach(/** @param {Internal.Item} item*/ item => {
+					const tags = Item.of(item).getTags().toArray();
+
+					let maxChapter = null;
+					let maxException = null;
+
+					for (let tag of tags) {
+						let str = tag.toString();
+
+						if (!str.includes('chapter_')) continue;
+
+						let chapter = str.slice(-2, -1);
+
+						if (str.includes('exceptions') && (!maxException || chapter > maxException)) {
+							maxException = chapter;
+						}
+						else if (!maxChapter || chapter > maxChapter) {
+							maxChapter = chapter;
+						}
+					}
+
+					if (maxChapter && (!maxException || maxChapter != maxException) && DecursioStages.cache.currentChapter < maxChapter) {
+						DecursioStages.cache.bannedItems.add(String(item));
+					}
+				});
+				console.log(
+					`Finished generating undiscovered item cache for chapter ${DecursioStages.cache.currentChapter} (server-side)`,
+					`Cached list size: ${DecursioStages.cache.bannedItems.size}`
+				);
+				DecursioStages.cache.chapterCached = DecursioStages.cache.currentChapter;
+			});
 		}
 	}
+});
 
-	let chapters = [],
-		exceptions = [];
-	item.getTags().toArray().forEach(tag => {
-		const str = tag.toString();
-		if (!str.includes('chapter_')) return;
-		const match = str.match(/adj:locked_until\/.*[^ ]*?(chapter_\w+)/);
-		if (str.includes('exceptions')) {
-			exceptions.push(match[1]);
-		}
-		else {
-			chapters.push(match[1]);
-		}
-	});
-
-	if (chapters.length == 0) return;
-
-	let
-		chapter = chapters.sort()[chapters.length - 1],
-		exception = exceptions.sort()[exceptions.length - 1];;
-
-	if ((!exception || chapter != exception) && !event.getLevel().getServer().persistentData.chapters[chapter]) {
-		event.cancel()
+ADJServerEvents.recipeLookup(event => {
+	const item = event.getItem().getId();
+	if (DecursioStages.cache.shouldHide(item)) {
+		event.cancel();
+	}
+	else if (item.includes('valkyrum') && !server.persistentData.valkyrumUnlocked) {
+		event.cancel();
 	}
 })
 
@@ -270,26 +299,6 @@ for (let [item, data] of Object.entries(InteractionLimits)) {
 		}
 	});
 }
-
-BlockEvents.rightClicked('command_block', event => {
-	const player = event.getPlayer();
-	if (event.getItem().id == 'minecraft:wither_skeleton_skull' && !player.stages.has('chapter_5')) {
-		player.displayClientMessage(Component.literal('It pops back off, away from the block').red(), true);
-		event.cancel();
-	}
-});
-
-EntityEvents.hurt('cataclysm:netherite_monstrosity', event => {
-	const attacker = event.getSource().getActual();
-	if (attacker.isPlayer()) {
-		if (!attacker.stages.has('chapter_3')) {
-			event.cancel();
-		}
-	}
-	else {
-		event.cancel()
-	}
-});
 
 ////////////////////
 ////////////////////

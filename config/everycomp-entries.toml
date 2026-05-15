@@ -96,6 +96,9 @@
 		[types.wood_type.hybrid-aquatic]
 			driftwood = true
 
+		[types.wood_type.endergetic]
+			poise = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -819,6 +822,10 @@
 
 		[types.cut_block_type.hybrid-aquatic]
 			driftwood = true
+
+		[types.cut_block_type.endergetic]
+			poise = true
+			eumus_brick = true
 
 #Disables specific entries
 [entries]

@@ -448,12 +448,6 @@
 		"twilightforest:hollow_warped_stem_climbable": "minecraft:warped_stem",
 		"twilightforest:hollow_vangrove_log_climbable": "minecraft:mangrove_log",
 		"twilightforest:hollow_cherry_log_climbable": "minecraft:cherry_log",
-		"umbral_skies:hollow_skyroot_log_horizontal": "aether:skyroot_log",
-		"umbral_skies:hollow_skyroot_log_vertical": "aether:skyroot_log",
-		"umbral_skies:hollow_skyroot_log_climbable": "aether:skyroot_log",
-		"umbral_skies:hollow_golden_oak_log_horizontal": "aether:golden_oak_log",
-		"umbral_skies:hollow_golden_oak_log_vertical": "aether:golden_oak_log",
-		"umbral_skies:hollow_golden_oak_log_climbable": "aether:golden_oak_log",
 
 		"cataclysm:stone_tiles": "supplementaries:stone_tile",
 		"cataclysm:stone_tile_slab": "supplementaries:stone_tile_slab",
@@ -504,5 +498,8 @@
 		"alexscaves:sulfur_bud_medium": "minecraft:air",
 		"alexscaves:sulfur_bud_large": "minecraft:air",
 		"alexscaves:sulfur_cluster": "minecraft:air",
+
+		"endergetic:cracked_end_stone_bricks": "architects_palette:cracked_end_stone_bricks",
+		"cataclysm:chiseled_end_stone_bricks": "endergetic:chiseled_end_stone_bricks",
 	}
 }

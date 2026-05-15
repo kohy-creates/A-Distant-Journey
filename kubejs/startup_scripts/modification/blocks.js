@@ -38,7 +38,7 @@ BlockEvents.modification(event => {
 		'witherstormmod:tainted_mushroom': 2,
 		'witherstorm_delight:tainted_mushroom_colony': 4,
 		'witherstormmod:withered_phlegm_block': 6,
-		'witherstormmod:tainted_dust': 1,
+		'witherstormmod:tainted_dust': 2,
 		'torchflower': 14,
 		'potted_torchflower': 14,
 		'netherexp:soul_torchflower': 10,
