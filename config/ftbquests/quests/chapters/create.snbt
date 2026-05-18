@@ -13,7 +13,7 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: -0.5d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			height: 1.75d
@@ -28,7 +28,7 @@
 			image: "create_connected:block/fan_catalyst_core"
 			rotation: 45.0d
 			width: 1.75d
-			x: 6.0d
+			x: 7.5d
 			y: -2.0d
 		}
 		{
@@ -36,8 +36,25 @@
 			image: "create:block/symmetry_mirror"
 			rotation: 45.0d
 			width: 1.75d
-			x: 1.5d
+			x: 2.0d
 			y: 4.5d
+		}
+		{
+			height: 1.75d
+			image: "create:block/rose_quartz_lamp_powered"
+			rotation: 45.0d
+			width: 1.75d
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependency: "1F26665F0A3C4065"
+			height: 3.0d
+			image: "constructionwand:item/infinity_wand"
+			rotation: -45.0d
+			width: 3.0d
+			x: 1.0d
+			y: 9.0d
 		}
 	]
 	order_index: 0
@@ -97,7 +114,7 @@
 		{
 			dependencies: ["57A550E2F3090147"]
 			id: "6F6E4CEDDF413E18"
-			subtitle: "Apply Andesite Alloy to a Stripped Log and make an Andesite Casing"
+			subtitle: "Apply Andesite Alloy to a Stripped Log and make Andesite Casing"
 			tasks: [{
 				id: "2A7B545F8598ED8D"
 				item: "create:andesite_casing"
@@ -117,8 +134,8 @@
 				type: "item"
 			}]
 			title: "Merry Go Round"
-			x: 1.5d
-			y: -3.5d
+			x: 1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6F6E4CEDDF413E18"]
@@ -145,7 +162,7 @@
 				}
 			]
 			title: "Bonk!"
-			x: 4.0d
+			x: 5.0d
 			y: 1.0d
 		}
 		{
@@ -166,8 +183,8 @@
 				}
 			]
 			title: "Wind Maker"
-			x: 4.0d
-			y: -0.5d
+			x: 5.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -209,8 +226,8 @@
 				type: "item"
 			}]
 			title: "It's Clobbering Time!"
-			x: -2.0d
-			y: 6.0d
+			x: -2.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6F6E4CEDDF413E18"]
@@ -246,7 +263,7 @@
 				}
 			]
 			title: "HYPERSPEED!!"
-			x: 1.5d
+			x: 2.5d
 			y: 2.5d
 		}
 		{
@@ -271,7 +288,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["6F6E4CEDDF413E18"]
+			dependencies: ["2E41E0EED9433EE0"]
 			id: "4FC3696D42A25C66"
 			subtitle: "Craft a set of Redstone Links"
 			tasks: [{
@@ -281,8 +298,8 @@
 				type: "item"
 			}]
 			title: "Wireless Device Patriot"
-			x: 2.5d
-			y: -1.5d
+			x: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["52D84E41D1800FE6"]
@@ -307,7 +324,7 @@
 				type: "item"
 			}]
 			title: "So Precise!"
-			x: -2.5d
+			x: -3.0d
 			y: 2.5d
 		}
 		{
@@ -328,8 +345,8 @@
 				}
 			]
 			title: "Technomantic!"
-			x: 4.0d
-			y: 2.5d
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["782BB3D700FBD243"]
@@ -374,7 +391,7 @@
 				type: "item"
 			}]
 			title: "NEVER Give Up (And Unload)"
-			x: -2.5d
+			x: -3.0d
 			y: 4.5d
 		}
 		{
@@ -393,8 +410,8 @@
 				type: "item"
 			}]
 			title: "Extra Sticky Situation"
-			x: -2.0d
-			y: -2.0d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["76EC8D76904524E9"]
@@ -408,7 +425,7 @@
 				type: "item"
 			}]
 			title: "HYPERSPEED Premium"
-			x: 2.5d
+			x: 3.5d
 			y: 3.5d
 		}
 		{
@@ -442,8 +459,8 @@
 				type: "item"
 			}]
 			title: "Conveyor Belts"
-			x: 2.5d
-			y: -2.5d
+			x: 3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["74E81719E903F908"]
@@ -463,8 +480,8 @@
 				type: "item"
 			}]
 			title: "Judge, Jury, EXECUTIONER!"
-			x: 1.0d
-			y: 6.0d
+			x: 1.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["74E81719E903F908"]
@@ -495,7 +512,7 @@
 			}]
 			title: "Abracadabra, Castle!"
 			x: -0.5d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0288AADCBD95EB2D"]
@@ -507,8 +524,8 @@
 				type: "item"
 			}]
 			title: "You Can Build a Country Out Of This!"
-			x: 5.0d
-			y: 2.0d
+			x: 6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6DE114694DBEDAF9"]
@@ -569,7 +586,7 @@
 				}
 			]
 			title: "I Fear NOTHING!"
-			x: 7.0d
+			x: 7.5d
 			y: 3.5d
 		}
 		{
@@ -582,12 +599,12 @@
 				type: "item"
 			}]
 			title: "It Looks Like A Trash Can"
-			x: 5.0d
-			y: 0.0d
+			x: 6.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["28583EFCD06F1117"]
-			icon: "createutilities:void_tank"
+			icon: "createutilities:void_chest"
 			icon_scale: 0.75d
 			id: "2B0A1D5A6C3DE343"
 			shape: "diamond"
@@ -625,8 +642,8 @@
 				type: "item"
 			}]
 			title: "Compact!"
-			x: 5.0d
-			y: -1.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["41AAF22B7E5F60E6"]
@@ -659,7 +676,7 @@
 				}
 			]
 			title: "Industrial Elementalist"
-			x: 6.0d
+			x: 7.5d
 			y: -2.0d
 		}
 		{
@@ -675,7 +692,7 @@
 				type: "item"
 			}]
 			title: "Forma Perfecta"
-			x: 1.5d
+			x: 2.0d
 			y: 4.5d
 		}
 		{
@@ -701,8 +718,8 @@
 				type: "item"
 			}]
 			title: "Spoutnik"
-			x: 0.5d
-			y: -4.0d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["78B17C7E84E71049"]
@@ -727,8 +744,8 @@
 				}
 			]
 			title: "Fluid Manipulation"
-			x: -1.5d
-			y: -4.0d
+			x: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0288AADCBD95EB2D"]
@@ -748,7 +765,7 @@
 				}
 			]
 			title: "Too Hot! Too Hot!!"
-			x: 5.5d
+			x: 7.0d
 			y: 1.0d
 		}
 		{
@@ -768,7 +785,7 @@
 				type: "item"
 			}]
 			title: "All That in A Block??"
-			x: -1.5d
+			x: -0.5d
 			y: -5.5d
 		}
 		{
@@ -785,19 +802,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["7EDDEFE957513B50"]
-			id: "59124904F1A83FE8"
-			subtitle: "Craft a Void Tank"
-			tasks: [{
-				id: "78AB3894CB6704C4"
-				item: "createutilities:void_tank"
-				type: "item"
-			}]
-			title: "Open Source"
-			x: 0.5d
-			y: -5.5d
-		}
-		{
 			dependencies: ["6F6E4CEDDF413E18"]
 			id: "662943A1F3D11D75"
 			subtitle: "Craft a Millstone"
@@ -806,9 +810,9 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			title: "Crushing Time"
+			title: "Harlow Mill"
 			x: 3.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["662943A1F3D11D75"]
@@ -829,7 +833,7 @@
 			}]
 			title: "Efficiency Boost"
 			x: 4.0d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["469D3A0EDD34A3DD"]
@@ -849,11 +853,11 @@
 				}
 			]
 			title: "Tunnels and Funnels"
-			x: 3.5d
-			y: -3.5d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["57A550E2F3090147"]
+			dependencies: ["3393638E574BEB0D"]
 			icon: "create:white_sail"
 			id: "249B2F4ECDC6790A"
 			subtitle: "Construct a simple Windmill to power your machines"
@@ -871,8 +875,210 @@
 				}
 			]
 			title: "Sail On!"
-			x: 1.0d
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4AF5A14D685A8B9D"]
+			icon: "create:powdered_obsidian"
+			id: "2B77F8D93AF67B2E"
+			subtitle: "Using your new, stronger crusher, crush some Obsidian and form the outcome dust into a Sturdy Sheet"
+			tasks: [
+				{
+					id: "6C54D471A61ED287"
+					item: "create:powdered_obsidian"
+					type: "item"
+				}
+				{
+					id: "464E3EC597913903"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["57A550E2F3090147"]
+			icon: "morered:red_alloy_ingot"
+			id: "2E41E0EED9433EE0"
+			subtitle: "Forge some Red Alloy and turn it into much easier to use Cables"
+			tasks: [
+				{
+					id: "405758D1F1F49C28"
+					item: "morered:red_alloy_ingot"
+					type: "item"
+				}
+				{
+					id: "62706C3F58DA52E5"
+					item: "morered:red_alloy_wire"
+					type: "item"
+				}
+			]
+			title: "Project Red"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2E41E0EED9433EE0"]
+			icon: "create:pulse_timer"
+			id: "1C83A314A9328906"
+			subtitle: "Craft one of each of these fancy pulse stuff blocks. I don't even know what I could use them for"
+			tasks: [
+				{
+					id: "3BDECD706E2BDB72"
+					item: "create:pulse_repeater"
+					type: "item"
+				}
+				{
+					id: "4BB41A57967D16FB"
+					item: "create:pulse_extender"
+					type: "item"
+				}
+				{
+					id: "0D4822EE34A8C7BF"
+					item: "create:pulse_timer"
+					type: "item"
+				}
+			]
+			title: "Pulseoximeter"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1FA28AA6F3F8D048"]
+			description: [
+				"&7&lHINT:&r The ponder sequence of an &6Elevator Pulley&r has it nicely explained how to do it. "
+				""
+				"If you can follow it and build a working elevator, &eunderstanding the rest of Create is not going to be much of a problem to you&r ;)"
+			]
+			icon: "create:elevator_pulley"
+			icon_scale: 0.75d
+			id: "366E03A71E6D16D0"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Construct a simple elevator"
+			tasks: [
+				{
+					id: "0841D8AE01FFC936"
+					item: "create:elevator_pulley"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "218691184FBCEA7A"
+					item: { Count: 4, id: "create:redstone_contact" }
+					type: "item"
+				}
+				{
+					id: "148B7709187E5B2F"
+					item: "create:contraption_controls"
+					type: "item"
+				}
+			]
+			title: "A Much Fancier Ladder"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2B77F8D93AF67B2E"]
+			icon: "createoreexcavation:vein_atlas"
+			id: "0DF7C1D9FD64EC02"
+			subtitle: "Craft a basic kit that will help you discover hidden ore veins"
+			tasks: [
+				{
+					id: "04ECF66A51CCCBC2"
+					item: "createoreexcavation:sample_drill"
+					type: "item"
+				}
+				{
+					id: "239B6032CA16286A"
+					item: "createoreexcavation:vein_finder"
+					type: "item"
+				}
+				{
+					id: "055DC6162D918BAD"
+					item: "createoreexcavation:vein_atlas"
+					type: "item"
+				}
+			]
+			title: "The Beginning of a Quarry"
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["245F2D587B782EDD"]
+			id: "481458F192966C80"
+			subtitle: "Bake a Blaze Cake to feed your Blaze Burners"
+			tasks: [{
+				id: "3470F56AF26E67B4"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			title: "Magmatic Confections"
+			x: 8.5d
 			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2B77F8D93AF67B2E"
+				"0DF7C1D9FD64EC02"
+			]
+			icon: "createoreexcavation:drilling_machine"
+			id: "21FD14EED53159E6"
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "Start drilling!"
+			tasks: [
+				{
+					id: "125643EFC742A5F8"
+					item: "createoreexcavation:drilling_machine"
+					type: "item"
+				}
+				{
+					id: "1607EA7E67A6E114"
+					item: "createoreexcavation:extractor"
+					type: "item"
+				}
+			]
+			title: "Infinitely Renewable Nonrenewables"
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2B77F8D93AF67B2E"]
+			id: "3F94568833CDFA90"
+			subtitle: "Apply a Sturdy Sheet to Brass Casing to create Train Casing"
+			tasks: [{
+				id: "06E6E7C67B8DC6DF"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			title: "Train Era...?"
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3F94568833CDFA90"]
+			icon: "create:track_station"
+			id: "4D3342044AA6A7EE"
+			subtitle: "Start constructing some trains!"
+			tasks: [
+				{
+					id: "13C0D8F1C9F7E223"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "45738EC0C24B069D"
+					item: { Count: 8, id: "create:track" }
+					type: "item"
+				}
+			]
+			title: "All Aboard...!"
+			x: -7.0d
+			y: 6.5d
 		}
 	]
 	title: "Managing a Factory"

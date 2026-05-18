@@ -212,7 +212,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 		#Range: 0.0 ~ 10.0
 		attackDamage = 0.1
 		#Range: 0.0 ~ 1.0
-		criticalChance = 0.15
+		criticalChance = 0.1
 		#Range: 0.0 ~ 10.0
 		rangedDamage = 0.1
 		#Range: 0.0 ~ 10.0
@@ -220,7 +220,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes.EyeOfTheGolem]
 		#Range: 0.0 ~ 1.0
-		criticalChance = 0.2
+		criticalChance = 0.1
 
 	[Attributes."Feral Claws"]
 		#Range: 0.0 ~ 10.0

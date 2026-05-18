@@ -269,7 +269,9 @@ ServerEvents.tags('item', tags => {
 		'#botania:special_floating_flowers'
 	]);
 
-	tags.remove('twilightforest:portal/activator');
+	tags.remove('twilightforest:portal/activator', [
+		'diamond'
+	]);
 	tags.add('twilightforest:portal/activator', [
 		'botania:dragonstone'
 	]);
@@ -518,6 +520,25 @@ ServerEvents.tags('item', tags => {
 		if (!itemId || global.isItemDisabled(itemId)) return;
 		workstations.push(itemId);
 	});
-
 	tags.add('c:villager_job_sites', workstations);
+
+	/** @type {Internal.DyeableLeatherItem_} */
+	const $DyableLeatherItem = Java.loadClass('net.minecraft.world.item.DyeableLeatherItem');
+	let wineRacks = [];
+	let dyableItems = [];
+	Item.getTypeList().forEach(id => {
+		if (!global.isItemDisabled(id)) {
+			if (id.match(/vinery:.*rack.*/)) {
+				wineRacks.push(id);
+			}
+			const item = Item.of(id).getItem();
+			if (item instanceof $DyableLeatherItem) {
+				dyableItems.push(id);
+			}
+		}
+	});
+	tags.add('adj:wine_racks', wineRacks);
+	tags.add('adj:dyable_items', dyableItems);
+
+	tags.add('adj:spark_upgrades', [/^botania:spark_upgrade_.*$/])
 });

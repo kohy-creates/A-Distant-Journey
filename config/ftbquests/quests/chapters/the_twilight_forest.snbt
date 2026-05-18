@@ -8,14 +8,6 @@
 	id: "4BD2F76C7C70A2CC"
 	images: [
 		{
-			height: 1.75d
-			image: "etcetera:block/iridescent_wool"
-			rotation: 45.0d
-			width: 1.75d
-			x: 1.0d
-			y: -4.0d
-		}
-		{
 			height: 0.1d
 			image: "minecraft:textures/misc/white.png"
 			rotation: 0.0d
@@ -25,11 +17,11 @@
 		}
 		{
 			height: 1.5d
-			image: "kubejs:item/eye_of_angels"
+			image: "kubejs:item/eye_of_cinders"
 			rotation: 0.0d
 			width: 1.5d
-			x: -5.002443870129831d
-			y: -1.366735504825641d
+			x: -5.0d
+			y: 0.5d
 		}
 		{
 			height: 0.1d
@@ -41,11 +33,11 @@
 		}
 		{
 			height: 1.5d
-			image: "kubejs:item/eye_of_dreams"
+			image: "kubejs:item/eye_of_angels"
 			rotation: 0.0d
 			width: 1.5d
 			x: -5.0d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			height: 0.1d
@@ -57,28 +49,35 @@
 		}
 		{
 			height: 1.5d
-			image: "kubejs:item/eye_of_desolation"
+			image: "kubejs:item/eye_of_dreams"
 			rotation: 0.0d
 			width: 1.5d
-			x: -5.002443870129831d
-			y: 7.133264495174352d
+			x: -5.0d
+			y: 9.0d
 		}
 		{
 			height: 1.75d
 			image: "twilightforest:block/ironwood_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: 4.0d
-			y: -6.5d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
-			color: 5045512
-			height: 1.75d
-			image: "minecraft:block/dark_oak_leaves"
-			rotation: 45.0d
-			width: 1.75d
-			x: 4.5d
-			y: -3.0d
+			height: 5.0d
+			image: "adj:textures/texts/chapter_5_5.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			height: 6.0d
+			image: "adj:textures/texts/quote.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -2.5d
+			y: -7.0d
 		}
 	]
 	order_index: 0
@@ -86,6 +85,11 @@
 	quests: [
 		{
 			dependencies: ["55D235AFB0D505D8"]
+			description: [
+				"As you were able to read from the tiny bit of lore I wrote for the &dTwilight Forest&r, while the wielding nation has been &cgone&r for a long time, the protective spells designed to keep them safe persist, making your life ever so slightly more difficult in the process."
+				""
+				"In order to break the spells and be able to venture deeper into the forest and discover the &7Final Castle&r, you will need to &edefeat some bosses&r that are connected to the defensive spells. Oh, and collect some &eEyes&r beforehands. Since the dimension was created artificially, it gets more stable the more of them you have ;)"
+			]
 			disable_toast: true
 			icon: "twilightforest:hollow_oak_sapling"
 			icon_scale: 0.75d
@@ -104,8 +108,8 @@
 				type: "dimension"
 			}]
 			title: "The Twilight Forest"
-			x: 2.4882453796329997d
-			y: -3.1203079219006895d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3EAD28D06360BF09"]
@@ -122,22 +126,6 @@
 			title: "Time to Even The Scales"
 			x: 0.5d
 			y: -1.5d
-		}
-		{
-			dependencies: ["3EAD28D06360BF09"]
-			icon_scale: 0.75d
-			id: "3A4CC32D572734A8"
-			shape: "diamond"
-			size: 1.5d
-			subtitle: "Give a Quest Ram all of the colors its missing"
-			tasks: [{
-				id: "78F36F05DC7F5F81"
-				item: "twilightforest:quest_ram_trophy"
-				type: "item"
-			}]
-			title: "Consummate Baahs"
-			x: 1.0d
-			y: -4.0d
 		}
 		{
 			dependencies: ["3EAD28D06360BF09"]
@@ -158,18 +146,25 @@
 				}
 			]
 			title: "Twilight Positioning System"
-			x: 2.5d
-			y: -5.0d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["718E0AAC4FC76ECF"]
+			dependencies: [
+				"718E0AAC4FC76ECF"
+				"20130F300D432015"
+			]
 			id: "33DE618E8B49FC45"
+			subtitle: "Slay The Lich in its tower, further breaking the spells put on The Twilight Forest"
 			tasks: [{
 				entity: "twilightforest:lich"
+				icon: "twilightforest:lich_trophy"
 				id: "751A22012F5D8C69"
+				title: "Kill The Lich"
 				type: "kill"
 				value: 1L
 			}]
+			title: "Bring Out Your Dead"
 			x: -0.5d
 			y: 0.5d
 		}
@@ -211,12 +206,18 @@
 				}
 			]
 			title: "Naga Armorer"
-			x: -1.0d
+			x: -0.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["33DE618E8B49FC45"]
+			description: [
+				"&7&lHINT:&r &eTrophies&r drop from hostile mobs every &e50th kill&r (sometimes more, sometimes less)."
+				""
+				"&cBosses&r drop their trophies &e10% of the time&r when killed."
+			]
 			id: "1DBCDCBED96264BB"
+			subtitle: "Claim your title by placing any Mob Trophy on a Trophy Pedestal in the ruins in Dark Forest"
 			tasks: [{
 				block: "twilightforest:trophy_pedestal"
 				block_type: 0
@@ -230,79 +231,123 @@
 						value: "adj:boss_trophy"
 					}
 				}
+				title: "Place a mob trophy on a Trophy Pedestal"
 				type: "questsadditions:use"
 				value: 1L
 			}]
+			title: "Trophy Champion"
 			x: -1.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["1DBCDCBED96264BB"]
 			id: "57096EC0B254AADA"
+			subtitle: "Put the Knight Phantom back to rest"
 			tasks: [{
 				entity: "twilightforest:knight_phantom"
+				icon: "twilightforest:knight_phantom_trophy"
 				id: "32E7EADC698CAC44"
+				title: "Kill a Knight Phantom"
 				type: "kill"
 				value: 1L
 			}]
+			title: "Carminite Aclimation"
 			x: -1.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["33DE618E8B49FC45"]
+			description: ["&7&lHINT:&r A &eMaze Map&r might help you navigate through it to the &cMinoshroom&r."]
+			icon: "twilightforest:mazestone_brick"
 			id: "0757324FFD3819A1"
-			tasks: [{
-				id: "78246B36C9206A71"
-				structure: "twilightforest:labyrinth"
-				type: "structure"
-			}]
+			min_required_tasks: 1
+			subtitle: "Find a maze in a Twilight Swamp"
+			tasks: [
+				{
+					disable_toast: true
+					icon: "twilightforest:mazestone_brick"
+					id: "78246B36C9206A71"
+					structure: "twilightforest:labyrinth"
+					title: "Find a maze in the Twilight Swamp"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "0E51EFB581DD0783"
+					item: "twilightforest:maze_map"
+					type: "item"
+				}
+			]
+			title: "Ariadna's Thread"
 			x: 0.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["0757324FFD3819A1"]
 			id: "004B1FB44B211C7C"
+			subtitle: "Kill the Minoshroom in its maze"
 			tasks: [{
 				entity: "twilightforest:minoshroom"
+				icon: "twilightforest:minoshroom_trophy"
 				id: "3730F9222D5CD8FA"
+				title: "Kill a Minoshroom"
 				type: "kill"
 				value: 1L
 			}]
+			title: "Mighty Stroganoff"
 			x: 0.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["0757324FFD3819A1"]
 			id: "1096F464B45D63FF"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a Maze Stove"
 			tasks: [{
 				id: "5A3811B34FE6B4CE"
 				item: "twilightdelight:maze_stove"
 				type: "item"
 			}]
+			title: "Cooking With Minotaurs"
 			x: 2.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["57096EC0B254AADA"]
+			dependencies: [
+				"57096EC0B254AADA"
+				"545C995B87BA0947"
+			]
 			id: "09A687D368150F4B"
+			subtitle: "Slay the Ur-Ghast and collect its blood"
 			tasks: [{
 				entity: "twilightforest:ur_ghast"
+				icon: "twilightforest:ur_ghast_trophy"
 				id: "3CB70F19584AD8F1"
+				title: "Kill an Ur-Ghast"
 				type: "kill"
 				value: 1L
 			}]
+			title: "Tears of Red"
 			x: -1.5d
 			y: 6.0d
 		}
 		{
-			dependencies: ["004B1FB44B211C7C"]
+			dependencies: [
+				"004B1FB44B211C7C"
+				"545C995B87BA0947"
+			]
 			id: "23C6460818CAA8F0"
+			subtitle: "Defeat the mighty Hydra and collect its blood"
 			tasks: [{
 				entity: "twilightforest:hydra"
+				icon: "twilightforest:hydra_trophy"
 				id: "4F4D3448CD12FD69"
+				title: "Kill a Hydra"
 				type: "kill"
 				value: 1L
 			}]
+			title: "Hydra Slayer"
 			x: 0.5d
 			y: 6.0d
 		}
@@ -310,26 +355,35 @@
 			dependencies: [
 				"23C6460818CAA8F0"
 				"09A687D368150F4B"
+				"6E9823FB2C7C6D19"
 			]
 			id: "4C5FB897B907366A"
+			subtitle: "Defeat the Alpha Yeti in its lair"
 			tasks: [{
 				entity: "twilightforest:alpha_yeti"
+				icon: "twilightforest:alpha_yeti_trophy"
 				id: "1B3F80B7EF34D321"
+				title: "Kill an Alpha Yeti"
 				type: "kill"
 				value: 1L
 			}]
+			title: "In The Hall of The Mountain King"
 			x: -0.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["4C5FB897B907366A"]
 			id: "6AF57344A6530D2E"
+			subtitle: "Kill the Snow Queen in her castle on the glaciers"
 			tasks: [{
 				entity: "twilightforest:snow_queen"
+				icon: "twilightforest:snow_queen_trophy"
 				id: "0AA3209E98621C4C"
+				title: "Kill a Snow Queen"
 				type: "kill"
 				value: 1L
 			}]
+			title: "Let It Go!"
 			x: -2.0d
 			y: 10.0d
 		}
@@ -337,6 +391,7 @@
 			dependencies: ["6AF57344A6530D2E"]
 			icon: "twilightforest:magic_beans"
 			id: "0AD5DEABD53DD691"
+			subtitle: "Dig down to the troll caves, find Magic Beans and plant them on Uberous Soil"
 			tasks: [
 				{
 					id: "53663C695A075110"
@@ -350,29 +405,52 @@
 					id: "33C2D27B1317C031"
 					isItemInteraction: true
 					item: "twilightforest:magic_beans"
+					title: "Plant Magic Beans on Uberous Soil"
 					type: "questsadditions:use"
 					value: 1L
 				}
 			]
 			x: -3.0d
-			y: 11.5d
+			y: 9.0d
 		}
 		{
-			dependencies: ["0AD5DEABD53DD691"]
-			id: "635B3CA9DF9AEFE0"
-			tasks: [{
-				id: "5D6349A755F0A204"
-				item: {
-					Count: 1
-					id: "twilightforest:giant_pickaxe"
-					tag: {
-						Damage: 0
-					}
+			dependencies: ["6AF57344A6530D2E"]
+			icon: {
+				Count: 1
+				id: "twilightforest:giant_pickaxe"
+				tag: {
+					Damage: 0
 				}
-				type: "item"
-			}]
-			x: -2.0d
-			y: 13.0d
+			}
+			id: "635B3CA9DF9AEFE0"
+			subtitle: "Defeat the Giants living in the clouds and get their drops"
+			tasks: [
+				{
+					id: "5D6349A755F0A204"
+					item: {
+						Count: 1
+						id: "twilightforest:giant_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31A1DEF7656771FB"
+					item: {
+						Count: 1
+						id: "twilightforest:giant_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Gigantica"
+			x: -2.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["635B3CA9DF9AEFE0"]
@@ -384,6 +462,7 @@
 				}
 			}
 			id: "137CCC12CF3F56E2"
+			subtitle: "Dive down into Troll Caves, break the large Obsidian and find a Lamp of Cinders"
 			tasks: [
 				{
 					id: "274431A6A827CE29"
@@ -402,8 +481,9 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 14.0d
+			title: "Cinder Laments"
+			x: -2.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["33DE618E8B49FC45"]
@@ -415,6 +495,7 @@
 				}
 			}
 			id: "2C9F25210FFED3D3"
+			subtitle: "Obtain one of every Scepter from The Lich"
 			tasks: [
 				{
 					id: "4D34DDAEBE61A8AB"
@@ -450,19 +531,24 @@
 					type: "item"
 				}
 			]
+			title: "Scepticismistic"
 			x: -2.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["137CCC12CF3F56E2"]
 			id: "3669FAFD806AE09C"
+			subtitle: "Burn away the thorns surrounding the Final Castle and enter its premises"
 			tasks: [{
+				icon: "twilightforest:castle_brick"
 				id: "663EFCF2A685EEDC"
 				structure: "twilightforest:final_castle"
+				title: "Enter the Final Castle"
 				type: "structure"
 			}]
-			x: 1.5d
-			y: 13.0d
+			title: "In The Hall of a... Who?"
+			x: -0.5d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -472,17 +558,20 @@
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
 			id: "137DF4F56A85289F"
+			subtitle: "Combine Palladium, Gold and Burning Blood to make Magmatic Alloy"
 			tasks: [{
 				id: "3F8ACB74A09DC532"
 				item: "twilightforest:fiery_ingot"
 				type: "item"
 			}]
+			title: "Kissed By The Flames"
 			x: 2.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["137DF4F56A85289F"]
 			id: "1AB1539B48BA3163"
+			subtitle: "Craft the Volcano"
 			tasks: [{
 				id: "4A3B0AC1CAF829A2"
 				item: {
@@ -494,18 +583,21 @@
 				}
 				type: "item"
 			}]
+			title: "Erupcja"
 			x: 4.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["3EAD28D06360BF09"]
 			id: "4C4EBDFDC00FEDDD"
+			subtitle: "Forge Ironwood"
 			tasks: [{
 				id: "7C8041551668B91F"
 				item: "twilightforest:ironwood_ingot"
 				type: "item"
 			}]
-			x: 4.0d
+			title: "Barskin"
+			x: 3.5d
 			y: -4.5d
 		}
 		{
@@ -521,6 +613,7 @@
 			id: "460F1292C2D8A621"
 			shape: "diamond"
 			size: 1.5d
+			subtitle: "Upgrade (most of) your early game materials to their Ironwood counterparts"
 			tasks: [
 				{
 					id: "25E77CABBD28E44F"
@@ -611,53 +704,47 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["1AB1539B48BA3163"]
-			id: "0881FEAE5601CEE1"
-			tasks: [{
-				id: "7CF77C834E0F1C4C"
-				item: {
-					Count: 1
-					id: "twilightdelight:teardrop_sword"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 5.5d
-			y: 5.5d
+			title: "Ironwood Squad"
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3669FAFD806AE09C"]
 			icon: "summoningrituals:altar"
 			id: "7404E901169113BF"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Craft anything with a Twilight Altar"
 			tasks: [{
 				icon: "summoningrituals:altar"
 				id: "62633AC33CC332CB"
 				title: "Craft something with the Twilight Altar"
 				type: "custom"
 			}]
+			title: "Twilit Power of The Ancient Ones"
 			x: 2.0d
-			y: 11.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["7404E901169113BF"]
+			hide_dependency_lines: true
 			id: "50E324237A1C2859"
+			subtitle: "Craft an Uncrafting Table. This sounds funny tbh..."
 			tasks: [{
 				id: "0A6CB670244A5F80"
 				item: "twilightforest:uncrafting_table"
 				type: "item"
 			}]
+			title: "&f&lTwilight Altar:&r &6Uncrafting Table"
 			x: 3.5d
 			y: 11.5d
 		}
 		{
 			dependencies: ["7404E901169113BF"]
+			dependency_requirement: "one_started"
+			hide_dependency_lines: true
 			id: "79726FD968415372"
+			subtitle: "Craft an Unobtainium Construction Wand"
 			tasks: [{
 				id: "2AEDABAC22E6F63A"
 				item: {
@@ -669,12 +756,15 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 10.0d
+			title: "&f&lTwilight Altar:&r &5Unobtainium Construction Wand"
+			x: 2.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["7404E901169113BF"]
+			hide_dependency_lines: true
 			id: "53B0AFB0527EDA63"
+			subtitle: "Craft a Monster-Piercing Elephant Crossbow"
 			tasks: [{
 				id: "58FA9CB812A1E39D"
 				item: {
@@ -686,64 +776,38 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 12.5d
+			title: "&f&lTwilight Altar:&r &cMonster-Piercing Elephant Crossbow"
+			x: 1.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["137DF4F56A85289F"]
 			id: "73A9695959C736A0"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft a Twilight-Cooker 9001 (Magma Powered)"
 			tasks: [{
 				id: "40F901ED043B52AF"
 				item: "twilightdelight:fiery_cooking_pot"
 				type: "item"
 			}]
+			title: "Thermobucket Sisters"
 			x: 4.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7404E901169113BF"]
+			hide_dependency_lines: true
 			id: "12F4562EEF0E5E45"
+			subtitle: "Craft a Gravity Globe"
 			tasks: [{
 				id: "299E93CA71D34AA6"
 				item: "terra_curio:gravity_globe"
 				type: "item"
 			}]
+			title: "&f&lTwilight Altar&r: <rainbow>Gravity Globe"
 			x: 0.5d
 			y: 11.5d
-		}
-		{
-			dependencies: ["3EAD28D06360BF09"]
-			icon: "twilightforest:time_sapling"
-			icon_scale: 0.75d
-			id: "5A0CDDCFB8D64EC5"
-			shape: "diamond"
-			size: 1.5d
-			tasks: [{
-				id: "306B7FFA7FDA691D"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "twilightforest:transformation_sapling"
-							}
-							{
-								Count: 1b
-								id: "twilightforest:mining_sapling"
-							}
-							{
-								Count: 1b
-								id: "twilightforest:time_sapling"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			x: 4.5d
-			y: -3.0d
 		}
 	]
 	title: "The Twilight Forest"

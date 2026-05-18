@@ -169,7 +169,7 @@ ItemEvents.modification(event => {
 	maxDurability([
 		'mcdw:bow_weeping_vine_bow',
 		'mcdw:bow_twisting_vine_bow'
-	], 430);
+	], 400);
 
 	maxDurability([
 		toolset('mythicmetals:bronze'),
@@ -251,10 +251,9 @@ ItemEvents.modification(event => {
 		toolset('mythicmetals:steel'),
 	], 1300);
 
-	maxDurability('mutantmonsters:hulk_hammer', 1500);
+	maxDurability('mutantmonsters:hulk_hammer', 1700);
 
 	maxDurability([
-		armorset('aether:neptune'),
 		'mcdw:glaive_venom_glaive'
 	], 1700);
 
@@ -273,11 +272,11 @@ ItemEvents.modification(event => {
 		'mcdw:crossbow_azure_seeker',
 		'mcdw:crossbow_firebolt_thrower',
 		armorset('born_in_chaos_v1:nightmare_mantleofthe_night'),
-	], 2000);
+	], 1800);
 
 	maxDurability([
 		toolset('twilightforest:knightmetal'),
-	], 2000);
+	], 2200);
 
 	maxDurability([
 		toolset('mythicmetals:orichalcum'),
@@ -304,22 +303,23 @@ ItemEvents.modification(event => {
 		'mcdw:crossbow_heavy_crossbow',
 		'mcdw:bow_winters_touch',
 		'mcdw:soul_dagger_truthseeker',
+		armorset('aether:neptune'),
 		'mcdw:scythe_skull_scythe',
 		'mcdw:sword_heartstealer'
-	], 3000);
+	], 4000);
 
 	maxDurability([
 		toolset('mythicmetals:mythril'),
 		toolset('twilightforest:fiery')
-	], 3200);
+	], 4200);
 
 	maxDurability([
 		toolset('botania:terrasteel'),
-	], 3500);
+	], 4500);
 
 	maxDurability([
 		'mcdw:dagger_resolute_tempest_knife'
-	], 3700);
+	], 4700);
 
 	maxDurability([
 		toolset('phantasm:crystalline'),
@@ -327,13 +327,13 @@ ItemEvents.modification(event => {
 		'mcdw:dagger_backstabber',
 		'mcdw:dagger_void_touched_blade',
 		'mcdw:bow_call_of_the_void'
-	], 4000);
+	], 5000);
 
 	maxDurability([
 		'mcdw:dagger_swift_striker',
 		'mcdw:hammer_gravity',
 		'mcdw:crossbow_veiled_crossbow'
-	], 4500);
+	], 5500);
 
 	maxDurability([
 		toolset('majruszsdifficulty:enderium'),
@@ -345,7 +345,7 @@ ItemEvents.modification(event => {
 	maxDurability([
 		toolset('mythicmetals:star_platinum'),
 		toolset('mythicmetals:prometheum'),
-	], 6000);
+	], 5000);
 
 	maxDurability([
 		toolset('mythicmetals:celestium'),

@@ -31,7 +31,7 @@
     {"id":"thicket:hazel_sapling", "required": false},
     {"id":"would:willow_sapling", "required": false},
     {"id":"would:fir_sapling", "required": false},
-    {"id":"would:cedar_sapling,", "required": false},
+    {"id":"would:cedar_sapling", "required": false},
     {"id":"would:aspen_sapling", "required": false},
     {"id":"would:walnut_sapling", "required": false}
 	]

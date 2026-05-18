@@ -523,3 +523,4 @@
 		#Specifies if drops should be preserved using block clusters (gravestones) for all mobs, not just players.
 		#Default: false
 		preserveDropsForAllMobs = false
+

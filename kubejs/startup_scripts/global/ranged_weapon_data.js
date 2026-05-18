@@ -36,7 +36,7 @@ global.bowDamage = {
 
 	'tide:starlight_bow': [28, 0.14, 0.2],
 
-	'kubejs:elsa_crossbow': [118, 0.24, 2.0],
+	'kubejs:elsa_crossbow': [118, 0.24],
 
 }
 

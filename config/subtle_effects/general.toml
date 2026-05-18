@@ -1,8 +1,10 @@
 # Don't change this! Version used to track needed updates.
 version = 0
 enableParticleCulling = true
-particleRenderDistance = 5
-particleCullingBlocklist = [  ]
+particleRenderDistance = 4
+particleCullingBlocklist = [
+    "minecraft:campfire_signal_smoke"
+]
 cullParticlesInUnloadedChunks = true
 allowUsingBlendedRenderType = true
 spellParticlesUseBlendedRenderType = true

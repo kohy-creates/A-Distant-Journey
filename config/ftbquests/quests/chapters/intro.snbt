@@ -1,5 +1,5 @@
 {
-	autofocus_id: "6C4C8FF43FCED01D"
+	autofocus_id: "4A074153AE2D521D"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	disable_toast: true
@@ -314,7 +314,7 @@
 			description: [
 				"Just to make your life worse, &6ADJ &rfeatures &aSeasons&r!"
 				""
-				"Every season lasts &e30 in-game days total&r (divided into &ethree subseasons&r, each lasting &e10 days&r)."
+				"Every season lasts &e90 in-game days total&r (divided into &ethree subseasons&r, each lasting &e30 days&r)."
 				""
 				"It really isn't as threatening as it sounds though! &oUnless you don't have enough food stocked up...&r"
 				""

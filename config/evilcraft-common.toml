@@ -41,7 +41,7 @@
 
 	[block.blood_stain]
 		#The amount of blood per HP (2HP = 1 heart) of the max mob health that will be added to this blockState when a mob dies from fall damage.
-		bloodMBPerHP = 4
+		bloodMBPerHP = 8
 		#Blocks onto which no blood stains can be spawned. Regular expressions are allowed.
 		spawnBlacklist = ["tconstruct:.*"]
 		#If blood stains should be spawned on block entities.
@@ -49,13 +49,13 @@
 
 	[block.undead_leaves]
 		#How much Blood (mB) can be produced at most as a Blood Stain on each random tick.
-		maxBloodStainAmount = 25
+		maxBloodStainAmount = 100
 
 	[block.spiked_plate]
 		#The multiplier for amount of mB to receive per mob HP.
-		mobMultiplier = 3.0
+		mobMultiplier = 7.5
 		#The amount of damage per time.
-		damage = 10.0
+		damage = 20.0
 
 	[block.gem_stone_torch]
 		#The radius that will be kept spirit-proof.

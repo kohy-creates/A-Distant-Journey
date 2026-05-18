@@ -247,6 +247,19 @@ PlayerEvents.tick(event => {
 		}
 	}
 
+	let 
+		isAquariumActive = setBonusActive(player, 'mythicmetals:aquarium'),
+		isTidesingerActive = setBonusActive(player, 'mythicmetals:tidesinger'),
+		isNeptuneActive = setBonusActive(player, 'aether:neptune');
+	if (isAquariumActive || isTidesingerActive || isNeptuneActive) {
+		if (!player.isUnderWater()) {
+			let duration = 15;
+			if (isTidesingerActive) duration = 30; 
+			else if (isNeptuneActive) duration = 80;
+			player.addEffect(new $MobEffectInstance('water_breathing', duration * 20 + 1, 0, true, true, true));
+		}
+	}
+
 	// Wither Storm stuff
 	const musicPitch = player.getAttribute('adjcore:client.music_pitch');
 	musicPitch.removeModifier(WitherStormUUID);
@@ -297,6 +310,9 @@ ADJServerEvents.adjHurt(event => {
 						victim.addEffect(new $MobEffectInstance('minecraft:wither', 8 * 20, 2, true, false, true));
 					}
 				}
+			}
+			if (setBonusActive(player, 'twilightforest:fiery')) {
+				player.addEffect(new $MobEffectInstance('unusualend:swift_strikes', 5 * 20, 1, true, false, true));
 			}
 		}
 	}
@@ -367,7 +383,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 			}
 			case 'mcdw:scythe_frost_scythe':
 			case 'mcdw:dagger_fangs_of_frost': {
-				victim.setTicksFrozen(victim.getTicksFrozen() + 30);
+				victim.setTicksFrozen(victim.getTicksFrozen() + 25);
 				break;
 			}
 			case 'mcdw:dagger_backstabber':
@@ -388,9 +404,11 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 						0, 0, 0,
 						1, 0
 					);
+					console.log( event.getAmount())
 					level.playSound(null, victim.x, victim.y + victim.getEyeHeight(), victim.z, 'entity.generic.explode', 'neutral', 1, Math.random() * 0.2 + 0.9);
 					global.getEntitiesInRadius(level, victim.x, victim.y, victim.z, 1.75).forEach(/** @param {Internal.Entity_} e*/ e => {
-						e.attack(global.getDamageSource(level, 'minecraft:player_explosion', null, attacker), event.getAmount() * 0.6);
+						if (e == attacker) return;
+						e.attack(global.getDamageSource(level, 'minecraft:player_explosion', null, attacker), event.getAmount() * 0.3);
 						e.setSecondsOnFire(4);
 					});
 					attacker.persistentData.fierySwordCanExplode = false;

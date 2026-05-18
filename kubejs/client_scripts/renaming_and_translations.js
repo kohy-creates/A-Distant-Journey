@@ -227,8 +227,23 @@ ClientEvents.lang('en_us', event => {
 		'galosphere:palladium_ore': 'Silver Ore',
 		'galosphere:deepslate_palladium_ore': 'Deepslate Silver Ore',
 		'galosphere:raw_palladium_block': 'Raw Silver Block',
-		
+
 		'overworld_quartz:overworld_quartz_ore': 'Quartz Ore',
+
+		'vinery:oak_wine_rack_small': 'Small Wine Rack',
+		'vinery:oak_wine_rack_mid': 'Medium Wine Rack',
+		'vinery:oak_wine_rack_big': 'Big Wine Rack',
+		'vinery:bamboo_wine_rack_small': 'Small Bamboo Wine Rack',
+		'vinery:bamboo_wine_rack_mid': 'Medium Bamboo Wine Rack',
+		'vinery:bamboo_wine_rack_big': 'Big Bamboo Wine Rack',
+		'nethervinery:crimson_wine_rack_small': 'Small Crimson Wine Rack',
+		'nethervinery:crimson_wine_rack_mid': 'Medium Crimson Wine Rack',
+		'nethervinery:crimson_wine_rack_big': 'Big Crimson Wine Rack',
+		'nethervinery:warped_wine_rack_small': 'Small Warped Wine Rack',
+		'nethervinery:warped_wine_rack_mid': 'Medium Warped Wine Rack',
+		'nethervinery:warped_wine_rack_big': 'Big Warped Wine Rack',
+
+		'twilightdelight:fiery_cooking_pot': 'Twilight-Cooker 9001 (Magma Powered)'
 	};
 
 	/** @type {Record<Internal.InputItem_, string>} */
@@ -276,7 +291,6 @@ ClientEvents.lang('en_us', event => {
 		'alexscaves:sombrero': 'Desert Sombrero',
 		'twilightforest:ice_bow': 'Winter\'s Touch',
 		'mythicmetals:metallurgium_sword': 'Rageblade',
-		'twilightforest:fiery_sword': 'Volcano',
 		'evilcraft:burning_gem_stone': 'Burning Gemstone',
 		'terra_curio:honey_comb': 'Enchanted Comb',
 
@@ -287,7 +301,7 @@ ClientEvents.lang('en_us', event => {
 		'alexscaves:pearl': 'Pink Pearl',
 		'constructionwand:iron_wand': 'Iron Construction Wand',
 		'constructionwand:diamond_wand': 'Diamond Construction Wand',
-		'constructionwand:infinity_wand': 'Unobtanium Construction Wand',
+		'constructionwand:infinity_wand': 'Unobtainium Construction Wand',
 		'toms_storage:ts.item_filter': 'Storage Filter',
 		'toms_storage:ts.polymorphic_item_filter': 'Polymorphic Storage Filter',
 		'toms_storage:ts.tag_item_filter': 'Tag Storage Filter',
@@ -306,10 +320,28 @@ ClientEvents.lang('en_us', event => {
 		'galosphere:palladium_nugget': 'Silver Nugget',
 
 		'hybrid-aquatic:sulfur': 'Sulfur Dust',
+
+		'xercapaint:item_canvas': 'Painting Canvas (1x1)',
+		'xercapaint:item_canvas_long': 'Painting Canvas (2x1)',
+		'xercapaint:item_canvas_tall': 'Painting Canvas (1x2)',
+		'xercapaint:item_canvas_large': 'Painting Canvas (2x2)',
+
+		'twilightforest:fiery_ingot': 'Magmatic Alloy Ingot',
+		'twilightdelight:fiery_knife': 'Molten Knife',
+		'twilightdelight:teardrop_sword': 'Teardrop Cleaver',
+		'twilightforest:fiery_pickaxe': 'Molten Pickaxe',
+		'twilightforest:fiery_sword': 'Volcano',
+		'twilightforest:fiery_helmet': 'Molten Helmet',
+		'twilightforest:fiery_chestplate': 'Molten Chestplate',
+		'twilightforest:fiery_leggings': 'Molten Leggings',
+		'twilightforest:fiery_boots': 'Molten Boots',
+		'twilightforest:fiery_blood': 'Burning Blood',
 	};
 
 	const entityRenames = {
 		'immersive_paintings:painting': 'Magic Painting',
+		'immersive_paintings:glow_painting': 'Luminescent Magic Painting',
+		'immersive_paintings:glow_graffiti': 'Luminescent Graffiti',
 	}
 
 	for (const [key, value] of Object.entries(extraTranslations)) {

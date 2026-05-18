@@ -190,9 +190,14 @@ function tickBonus(player) {
 }
 
 /**
- * @param {Internal.Player} player 
+ * @param {Internal.Player_} player 
  * @param {string} bonus 
  * @returns {boolean}
+ * 
+ * @example
+ * if (setBonusActive(player, "mythicmetals:prometheum")) {
+ * 		player.heal(10);
+ * }
  */
 function setBonusActive(player, bonus) {
 	const lookFor = bonus.split(':');

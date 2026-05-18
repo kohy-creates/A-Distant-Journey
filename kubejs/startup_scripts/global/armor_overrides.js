@@ -106,7 +106,7 @@ global.armorOverrides = {
 	},
 	'twilightforest:fiery': {
 		'generic.armor': {
-			values: [8, 10, 9, 8]
+			values: [9, 11, 10, 9]
 		},
 		'generic.knockback_resistance': {
 			values: [0, 0, p(12.5), 0]
@@ -120,9 +120,6 @@ global.armorOverrides = {
 		'kubejs:damage_dealt': {
 			values: [0.12, 0, 0, 0],
 			operation: 'multiply_base'
-		},
-		'attributeslib:fire_damage': {
-			values: [0, 0, 2, 3]
 		}
 	},
 	'majruszsdifficulty:enderium': {
@@ -487,7 +484,7 @@ global.armorOverrides = {
 	},
 	'mythicmetals:tidesinger': {
 		'generic.armor': {
-			values: [6, 8, 7, 5]
+			values: [7, 9, 8, 6]
 		},
 		'forge:swim_speed': {
 			values: [0, 0.05, 0.3, 0.35],
@@ -605,8 +602,16 @@ global.armorOverrides = {
 	},
 	'aether:neptune': {
 		'generic.armor': {
-			values: [9, 10, 10, 8]
+			values: [10, 12, 11, 10]
 		},
+		'forge:swim_speed': {
+			values: [0, 0.15, 0.4, 0.45],
+			operation: 'multiply_base'
+		},
+		'additionalentityattributes:player.water_visibility': {
+			values: [0.5, 0, 0, 0],
+			operation: 'multiply_base'
+		}
 	},
 	'ancient_aether:valkyrum': {
 		'generic.armor': {

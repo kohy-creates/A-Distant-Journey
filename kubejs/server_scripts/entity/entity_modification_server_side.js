@@ -3,8 +3,8 @@ const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Att
 
 const EntityModifications = {
 	chapterMultipliers: {
-		hp: [1.0, 1.05, 1.1, 3.1, 3.1, 5.2],
-		damage: [1.0, 1.05, 1.15, 3.0, 3.0, 4.2],
+		hp: [1.0, 1.05, 1.1, 3.5, 3.5, 5.1],
+		damage: [1.0, 1.05, 1.15, 2.7, 2.7, 4],
 		armor: [1.0, 1.0, 1.1, 2.2, 2.2, 3.5]
 	},
 	_logic: {
@@ -152,17 +152,17 @@ const EntityModifications = {
 
 				case 'minecraft:stray':
 				case 'minecraft:skeleton': {
-					if (entity.getLevel().getDimension() == 'minecraft:the_nether') {
-						entity.setItemSlot('mainhand', global.weightedRandom({
-							'mcdw:bow_bonebow': 10,
-							'mcwd:bow_twisting_vine_bow': 4,
-							'mcwd:bow_twisting_weeping_bow': 4,
-						}));
-						entity.setDropChance('mainhand', 0.05);
-					}
-					else if (currentStage >= 3) {
-						entity.setItemSlot('mainhand', 'mcdw:bow_power_bow');
-					}
+					// if (entity.getLevel().getDimension() == 'minecraft:the_nether') {
+					// 	entity.setItemSlot('mainhand', global.weightedRandom({
+					// 		'mcdw:bow_bonebow': 10,
+					// 		'mcwd:bow_twisting_vine_bow': 4,
+					// 		'mcwd:bow_twisting_weeping_bow': 4,
+					// 	}));
+					// 	entity.setDropChance('mainhand', 0.05);
+					// }
+					// else if (currentStage >= 3) {
+					// 	entity.setItemSlot('mainhand', 'mcdw:bow_power_bow');
+					// }
 					break;
 				}
 

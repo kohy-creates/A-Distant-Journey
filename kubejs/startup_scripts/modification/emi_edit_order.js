@@ -48,8 +48,11 @@ StartupEvents.postInit(event => {
 		['botania:rune_air', 'botania:rune_mana'],
 		['botania:rune_mana', 'botanicadds:rune_tp'],
 		['botanicadds:rune_tp', 'botanicadds:rune_energy'],
+		['botanicadds:rune_energy', 'kubejs:rune_life'],
 
-		['architects_palette:chiseled_moonshale', 'architects_palette:moonshale_flagstone']
+		['architects_palette:chiseled_moonshale', 'architects_palette:moonshale_flagstone'],
+		
+		['create:rotation_speed_controller', 'create:creative_motor'],
 	];
 
 	// Detect available materials
@@ -75,6 +78,7 @@ StartupEvents.postInit(event => {
 	]
 
 	Item.getTypeList().forEach(id => {
+		if (global.isItemDisabled(id)) return;
 		if (id.includes('_planks') && !id.includes('_planks_') && !id.includes('vertical')) {
 			const type = id.replace('_planks', '');
 			if (!ignoredWoodTypes.includes(type)) {

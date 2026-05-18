@@ -293,13 +293,7 @@ global.setBonusMap = {
 			"Attacks increase life regeneration"
 		],
 		effects: [
-			{
-				type: 'effect',
-				value: {
-					id: 'minecraft:fire_resistance',
-					amplifier: 0,
-				}
-			}
+			{ type: 'effect', value: { id: 'minecraft:fire_resistance', amplifier: 0 } }
 		]
 	},
 	'mythicmetals:prometheum': {
@@ -343,20 +337,33 @@ global.setBonusMap = {
 			{ type: 'attribute', value: { id: 'adjcore:player.mana_cost_reduction', value: 0.3 } }
 		]
 	},
+	'mythicmetals:aquarium': {
+		description: [
+			"Improved underwater visibility",
+			'Grants extra 10 seconds of underwater breathing'
+		],
+		effects: [
+			{ type: 'attribute', value: { id: 'additionalentityattributes:player.water_visibility', value: 0.7, operation: 'multiply_base' } }
+		]
+	},
 	'mythicmetals:tidesinger': {
 		description: [
-			"Greatly improved underwater visibility"
+			"Greatly improved underwater visibility",
+			'Grants extra 30 seconds of underwater breathing'
 		],
 		effects: [
 			{ type: 'attribute', value: { id: 'additionalentityattributes:player.water_visibility', value: 1.6, operation: 'multiply_base' } }
 		]
 	},
-	'mythicmetals:aquarium': {
+	'aether:neptune': {
 		description: [
-			"Improved underwater visibility"
+			'Further ncreased movement speed in water',
+			"Greatly improved underwater visibility",
+			'Grants extra 80 seconds of underwater breathing'
 		],
 		effects: [
-			{ type: 'attribute', value: { id: 'additionalentityattributes:player.water_visibility', value: 0.7, operation: 'multiply_base' } }
+			{ type: 'attribute', value: { id: 'additionalentityattributes:player.water_visibility', value: 2.0, operation: 'multiply_base' } },
+			{ type: 'attribute', value: { id: 'forge:swim_speed', value: 0.5, operation: 'multiply_total' } }
 		]
 	},
 	'cataclysm:ignitium': {
@@ -404,12 +411,6 @@ global.setBonusMap = {
 			{ type: 'attribute', value: { id: 'adjcore:generic.damage_reduction', value: 0.05 } },
 			{ type: 'attribute', value: { id: 'forge:step_height_addition', value: 0.6 } }
 		]
-	},
-	'aether:neptune': {
-		description: [
-			'Increases movement speed in water'
-		],
-		effects: []
 	},
 	'ancient_aether:valkyrum': {
 		description: [
@@ -490,6 +491,15 @@ global.setBonusMap = {
 		],
 		effects: [
 			{ type: 'attribute', value: { id: 'adjcore:generic.damage_reduction', value: 0 } }
+		]
+	},
+	'twilightforest:fiery': {
+		description: [
+			'Landing a critical strike temporarily boosts melee speed',
+			'Become immune to fire'
+		],
+		effects: [
+			{ type: 'effect', value: { id: 'minecraft:fire_resistance', amplifier: 0 } },
 		]
 	},
 }

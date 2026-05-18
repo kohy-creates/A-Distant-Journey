@@ -625,6 +625,22 @@
 			x: 5.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["7599371BBE1AC566"]
+			hide_dependency_lines: true
+			id: "40E1904B75697867"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Find a Relic music disc"
+			tasks: [{
+				id: "60F39D677273DB72"
+				item: "minecraft:music_disc_relic"
+				type: "item"
+			}]
+			title: "Relic"
+			x: -1.0d
+			y: -1.5d
+		}
 	]
 	title: "Trails and Tales"
 }

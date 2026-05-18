@@ -8,10 +8,17 @@ const TooltipEdits = {
 			items: 'rediscovered:cyan_rose',
 			text: 'Also known as Blue Rose'
 		},
-
 		{
 			items: '#c:villager_job_sites',
 			text: 'Work station for Villagers'
+		},
+		{
+			items: '#adj:dyable_items',
+			text: 'Can be dyed'
+		},
+		{
+			items: '#minecraft:trim_materials',
+			text: 'Trim material'
 		},
 		{
 			items: [

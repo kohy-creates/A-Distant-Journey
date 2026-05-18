@@ -179,13 +179,13 @@
 			y: 19.45544217687076d
 		}
 		{
-			dependency: "1F3DB68EA2A45EB7"
+			dependency: "0F84B7A1DA0FDD37"
 			height: 5.0d
 			image: "adj:textures/texts/chapter_4.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 7.5d
-			y: 26.0d
+			x: 1.5d
+			y: 18.5d
 		}
 		{
 			dependency: "1F3DB68EA2A45EB7"
@@ -239,15 +239,6 @@
 			width: 1.75d
 			x: 27.0d
 			y: 13.0d
-		}
-		{
-			dependency: "25A8ABBC7235D20E"
-			height: 1.75d
-			image: "rediscovered:block/ancient_crying_obsidian"
-			rotation: 0.0d
-			width: 1.75d
-			x: 19.0d
-			y: 21.0d
 		}
 		{
 			dependency: "25A8ABBC7235D20E"
@@ -354,7 +345,7 @@
 			y: 24.0d
 		}
 		{
-			dependency: "4564BF670D10E0FA"
+			dependency: "0F84B7A1DA0FDD37"
 			height: 5.609981515711645d
 			image: "adj:textures/other/bg_void.png"
 			order: -999
@@ -379,8 +370,8 @@
 			image: "majruszsdifficulty:block/enderium_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: 4.5d
-			y: 27.0d
+			x: 0.5d
+			y: 22.5d
 		}
 		{
 			dependency: "6086C058455AE6AD"
@@ -388,8 +379,8 @@
 			image: "cataclysm:item/void_eye"
 			rotation: 0.0d
 			width: 2.25d
-			x: -2.0d
-			y: 20.5d
+			x: 1.0d
+			y: 25.5d
 		}
 		{
 			dependency: "4564BF670D10E0FA"
@@ -398,7 +389,7 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: 0.0d
-			y: 20.0d
+			y: 20.5d
 		}
 		{
 			dependency: "379A22A2185CFC8E"
@@ -443,25 +434,25 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: -0.5d
-			y: 23.0d
+			y: 24.5d
 		}
 		{
-			dependency: "1F3DB68EA2A45EB7"
+			dependency: "3F2B685C8C008081"
 			height: 5.0d
 			image: "adj:textures/texts/chapter_5.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: -7.5d
-			y: 26.0d
+			x: -8.5d
+			y: 25.5d
 		}
 		{
-			dependency: "0F84B7A1DA0FDD37"
+			dependency: "3F2B685C8C008081"
 			height: 6.0d
 			image: "adj:textures/texts/lore_command_block.png"
 			rotation: 0.0d
 			width: 12.0d
-			x: -10.0d
-			y: 29.5d
+			x: -9.0d
+			y: 28.5d
 		}
 		{
 			dependency: "3F2B685C8C008081"
@@ -498,8 +489,8 @@
 			image: "adj:textures/texts/chapter_5_5.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 2.230952380952381d
-			y: 29.564285714285802d
+			x: 1.0d
+			y: 34.0d
 		}
 		{
 			dependency: "3E479B783B24C730"
@@ -507,8 +498,8 @@
 			image: "adj:textures/texts/lore_witherstorm.png"
 			rotation: 0.0d
 			width: 12.0d
-			x: 4.0d
-			y: 37.0d
+			x: 1.5d
+			y: 37.5d
 		}
 		{
 			dependency: "0898408ED8FBAF57"
@@ -636,7 +627,7 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: -5.5d
-			y: 33.5d
+			y: 31.5d
 		}
 		{
 			dependency: "2FC4D1B2E42E2124"
@@ -683,6 +674,34 @@
 			width: 1.75d
 			x: 14.5d
 			y: 20.0d
+		}
+		{
+			dependency: "3F2B685C8C008081"
+			height: 1.75d
+			image: "minecraft:block/command_block_back"
+			rotation: 45.0d
+			width: 1.75d
+			x: -1.0d
+			y: 28.5d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_5_5.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 19.0d
+			y: 35.5d
+		}
+		{
+			dependency: "4564BF670D10E0FA"
+			height: 5.609981515711645d
+			image: "adj:textures/other/bg_void.png"
+			order: -999
+			rotation: 10.0d
+			width: 10.0d
+			x: 3.0d
+			y: 25.5d
 		}
 	]
 	order_index: 1
@@ -1691,9 +1710,8 @@
 		}
 		{
 			disable_toast: true
-			icon_scale: 0.75d
 			id: "23FAB8177B6ED9C6"
-			shape: "diamond"
+			shape: "hexagon"
 			size: 2.0d
 			subtitle: "The heart of your adventure"
 			tasks: [{
@@ -2894,24 +2912,6 @@
 			y: 19.5d
 		}
 		{
-			dependencies: ["25A8ABBC7235D20E"]
-			hide_until_deps_complete: true
-			icon: "minecraft:obsidian"
-			id: "659D131B0E8B1383"
-			optional: true
-			shape: "rsquare"
-			subtitle: "Find an Obsidian Wall in the middle of nowhere"
-			tasks: [{
-				id: "50F3AF07076D0CEA"
-				structure: "rediscovered:obsidian_wall"
-				title: "Find Obsidian Wall"
-				type: "structure"
-			}]
-			title: "The Great Wall"
-			x: 19.0d
-			y: 21.0d
-		}
-		{
 			dependencies: ["379A22A2185CFC8E"]
 			hide_until_deps_complete: true
 			icon: "born_in_chaos_v1:nightmare_stalker_skull"
@@ -3184,8 +3184,8 @@
 				}
 			]
 			title: "Nostalgic Flora"
-			x: 21.0d
-			y: 21.5d
+			x: 19.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["0F84B7A1DA0FDD37"]
@@ -3283,8 +3283,8 @@
 				}
 			]
 			title: "Hidden Gems"
-			x: 2.0d
-			y: 20.0d
+			x: 2.5d
+			y: 21.5d
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
@@ -3298,7 +3298,7 @@
 			}]
 			title: "Confusing Fruit"
 			x: 4.0d
-			y: 20.5d
+			y: 21.0d
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
@@ -3313,8 +3313,8 @@
 				type: "structure"
 			}]
 			title: "The City at The End of The Game"
-			x: 2.0d
-			y: 24.5d
+			x: 4.0d
+			y: 25.0d
 		}
 		{
 			dependencies: ["22BC61DC0C61020A"]
@@ -3332,8 +3332,8 @@
 				type: "item"
 			}]
 			title: "Sky's The Limit"
-			x: 2.0d
-			y: 26.0d
+			x: 5.0d
+			y: 26.5d
 		}
 		{
 			dependencies: ["22BC61DC0C61020A"]
@@ -3348,8 +3348,8 @@
 				value: 1L
 			}]
 			title: "This Block Moves!"
-			x: 0.5d
-			y: 25.0d
+			x: 3.0d
+			y: 26.5d
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
@@ -3365,11 +3365,14 @@
 				value: 1L
 			}]
 			title: "Strange Shards"
-			x: 4.5d
-			y: 25.5d
+			x: 2.0d
+			y: 23.0d
 		}
 		{
-			dependencies: ["5DAF45D22D8929C9"]
+			dependencies: [
+				"5DAF45D22D8929C9"
+				"26E82AD325890954"
+			]
 			icon_scale: 0.75d
 			id: "6B2AE4F13A56D99C"
 			shape: "diamond"
@@ -3381,8 +3384,8 @@
 				type: "item"
 			}]
 			title: "Strange Ingot"
-			x: 4.5d
-			y: 27.0d
+			x: 0.5d
+			y: 22.5d
 		}
 		{
 			dependencies: ["06975D33E820F6B9"]
@@ -3438,7 +3441,7 @@
 			]
 			title: "The Final Forge"
 			x: 0.0d
-			y: 20.0d
+			y: 20.5d
 		}
 		{
 			dependencies: ["26E82AD325890954"]
@@ -3465,8 +3468,8 @@
 				type: "item"
 			}]
 			title: "Journey to The End"
-			x: 1.5d
-			y: 23.0d
+			x: 2.5d
+			y: 24.5d
 		}
 		{
 			dependencies: ["6086C058455AE6AD"]
@@ -3484,7 +3487,7 @@
 			}]
 			title: "Living in Nothingness"
 			x: -0.5d
-			y: 23.0d
+			y: 24.5d
 		}
 		{
 			dependencies: ["640E291225CA8A2A"]
@@ -3498,8 +3501,8 @@
 				type: "item"
 			}]
 			title: "I Stared Into The Void"
-			x: -3.750000000000007d
-			y: 25.035714285714278d
+			x: -3.0d
+			y: 25.5d
 		}
 		{
 			dependencies: ["3F2B685C8C008081"]
@@ -3535,8 +3538,8 @@
 		{
 			dependencies: ["4C8E061A81250AC1"]
 			id: "06E7DBDB7C7A790A"
-			shape: "hexagon"
-			size: 2.0d
+			shape: "diamond"
+			size: 1.5d
 			subtitle: "Find the Command Block"
 			tasks: [{
 				icon: "minecraft:command_block"
@@ -3603,18 +3606,18 @@
 			hide_until_deps_complete: true
 			id: "3E479B783B24C730"
 			shape: "hexagon"
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Finish what's already there"
 			tasks: [{
 				icon: "minecraft:wither_skeleton_skull"
 				id: "33348AC40FBB3C9C"
 				observe_type: 5
 				timer: 0L
-				title: "Summon it"
+				title: "Unleash it again"
 				to_observe: "witherstormmod:wither_storm"
 				type: "observation"
 			}]
-			title: ". . ."
+			title: "<shake><obfuscated>.A.d.s1.2d"
 			x: -3.0428571428571303d
 			y: 31.0d
 		}
@@ -3668,7 +3671,7 @@
 				type: "item"
 			}]
 			title: "Order of The Stone"
-			x: -1.5d
+			x: -3.0d
 			y: 33.0d
 		}
 		{
@@ -3753,15 +3756,15 @@
 				type: "advancement"
 			}]
 			title: "The Watcher"
-			x: 0.0d
-			y: 33.5d
+			x: -2.0d
+			y: 34.0d
 		}
 		{
 			dependencies: ["636684C648DFFC9D"]
 			id: "603D3F9B2298333B"
 			invisible: true
 			shape: "hexagon"
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Witness The Wither Storm coming back from the dead"
 			tasks: [{
 				advancement: "adj:weakened_arise_stronger"
@@ -3818,8 +3821,8 @@
 				}
 			]
 			title: "Plague Doctor"
-			x: -5.0d
-			y: 35.0d
+			x: -6.0d
+			y: 32.5d
 		}
 		{
 			dependencies: ["19068C7B62786F99"]
@@ -4285,8 +4288,8 @@
 				}
 			]
 			title: "Withering Away"
-			x: -3.5d
-			y: 33.5d
+			x: -4.5d
+			y: 32.5d
 		}
 		{
 			dependencies: ["494840EAB1FB2573"]
@@ -4302,7 +4305,7 @@
 			}]
 			title: "Yuck Vacuum Hopper"
 			x: -5.5d
-			y: 33.5d
+			y: 31.5d
 		}
 		{
 			dependencies: ["494840EAB1FB2573"]
@@ -4314,8 +4317,8 @@
 				type: "item"
 			}]
 			title: "Cyclops"
-			x: -3.5d
-			y: 35.5d
+			x: -5.5d
+			y: 33.5d
 		}
 		{
 			dependencies: ["494840EAB1FB2573"]
@@ -4328,8 +4331,8 @@
 				type: "item"
 			}]
 			title: "Necrotic Cooking"
-			x: -2.0d
-			y: 35.0d
+			x: -4.5d
+			y: 34.0d
 		}
 		{
 			dependencies: ["3E2EF52784EFF652"]
@@ -4359,8 +4362,8 @@
 				}
 			]
 			title: "Through Death, Reborn"
-			x: -2.0d
-			y: 36.5d
+			x: -4.5d
+			y: 35.5d
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
@@ -4492,6 +4495,23 @@
 			title: "Fortify Your Minds!"
 			x: 14.5d
 			y: 20.0d
+		}
+		{
+			dependencies: ["3E479B783B24C730"]
+			id: "46ADC2671999F886"
+			subtitle: "Craft a Phasometer to keep track of The Wither Storm from a safe distance"
+			tasks: [{
+				id: "41B7D86F86EDB81C"
+				item: {
+					Count: 1
+					id: "witherstormmod:phasometer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "On My Watch"
+			x: -1.5d
+			y: 32.5d
 		}
 	]
 	title: "Story"

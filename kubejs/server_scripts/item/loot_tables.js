@@ -133,7 +133,7 @@ LootJS.modifiers((event) => {
 	replaceSeedsIn.forEach(block => {
 		event.addBlockLootModifier(block)
 			.removeLoot('minecraft:wheat_seeds')
-			.pool((pool) => {
+			.pool(pool => {
 				pool.rolls(1);
 				pool.randomChanceWithEnchantment(
 					'minecraft:fortune',
@@ -171,7 +171,7 @@ LootJS.modifiers((event) => {
 	/**
 	 * @param {Internal.GroupedLootBuilder_} pool 
 	 */
-	const skullFragmentDrop = (pool) => {
+	const skullFragmentDrop = pool => {
 		pool.rolls(1);
 		pool.addLoot(
 			LootEntry.of('kubejs:skull_fragment')
@@ -183,11 +183,11 @@ LootJS.modifiers((event) => {
 	event.addEntityLootModifier('minecraft:wither_skeleton')
 		.removeLoot('minecraft:wither_skeleton_skull')
 		.pool(skullFragmentDrop)
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:wither').when(c => c.randomChanceWithLooting(0.002, 0.001)));
 		})
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:holy_water').when(c => c.randomChance(0.03)))
 		});;
 	event.addEntityLootModifier('netherdepthsupgrade:wither_bonefish')
@@ -195,37 +195,37 @@ LootJS.modifiers((event) => {
 		.pool(skullFragmentDrop);
 
 	event.addEntityLootModifier('minecraft:blaze')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:blaze').when(c => c.randomChanceWithLooting(0.002, 0.001)));
 		});
 
 	event.addEntityLootModifier('minecraft:warden')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:warden'));
 		})
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:flashlight').when(c => c.randomChance(1)))
 		});
 
 	event.addEntityLootModifier('minecraft:enderman')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:enderman').when(c => c.randomChanceWithLooting(0.002, 0.001)));
 		})
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:trifold_map').when(c => c.randomChance(0.05)))
 		});
 
 	event.addEntityLootModifier('minecraft:ghast')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:ghast').when(c => c.randomChanceWithLooting(0.05, 0.025)));
 		});
 
 	event.addEntityLootModifier('mutantmonsters:mutant_creeper')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:creeper').when(c => c.randomChanceWithLooting(0.15, 0.075)));
 		});
@@ -233,7 +233,7 @@ LootJS.modifiers((event) => {
 	/**
 	 * @param {$GroupedLootBuilder_} pool 
 	 */
-	const darkGemPool = (pool) => {
+	const darkGemPool = pool => {
 		pool.rolls(1);
 		pool.randomChanceWithLooting(0.05, 0.02)
 			.addAlternativesLoot(
@@ -252,7 +252,7 @@ LootJS.modifiers((event) => {
 			'born_in_chaos_v1:zombie_clown',
 			'witherstormmod:sickened_zombie',
 		])
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('minecraft:feather')
 				.limitCount([0, 2])
@@ -260,7 +260,7 @@ LootJS.modifiers((event) => {
 				.when(c => c.randomChanceWithLooting(0.25, 0.15))
 			);
 		})
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('born_in_chaos_v1:pieceofdarkmetal')
 				.limitCount([1, 2])
@@ -272,24 +272,34 @@ LootJS.modifiers((event) => {
 		.pool(darkGemPool);
 
 	event.addEntityLootModifier('minecraft:skeleton')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('minecraft:skeleton_skull').when(c => c.randomChanceWithLooting(0.02, 0.02)));
 		})
 		.pool(darkGemPool)
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:skeleton').when(c => c.randomChanceWithLooting(0.002, 0.001)));
+		})
+		.pool(pool => {
+			pool.rolls(1);
+			pool.addLoot(
+				LootEntry.of('mcdw:bow_bonebow')
+					.when(c => {
+						c.randomChanceWithLooting(0.025, 0.005);
+						c.anyDimension('minecraft:the_nether');
+					})
+			);
 		});
 
 	event.addEntityLootModifier('minecraft:stray')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('born_in_chaos_v1:permafrost_shard').limitCount([1, 2]).applyLootingBonus([0, 1]).when(c => c.randomChanceWithLooting(0.33, 0.17)))
 		});
 
 	event.addEntityLootModifier('alexsmobs:hammerhead_shark')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(
 				LootEntry.of('alexsmobs:shark_tooth')
@@ -300,7 +310,7 @@ LootJS.modifiers((event) => {
 		});
 
 	event.addEntityLootModifier('alexsmobs:frilled_shark')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool
 				.addLoot(
@@ -312,7 +322,7 @@ LootJS.modifiers((event) => {
 		});
 
 	event.addEntityLootModifier('born_in_chaos_v1:corpse_fish')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool
 				.addLoot(LootEntry.of('alexsmobs:shark_tooth')
@@ -321,7 +331,7 @@ LootJS.modifiers((event) => {
 		});
 
 	event.addEntityLootModifier('born_in_chaos_v1:glutton_fish')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool
 				.addLoot(LootEntry.of('alexsmobs:shark_tooth')
@@ -345,36 +355,67 @@ LootJS.modifiers((event) => {
 				.when(c => c.randomChanceWithLooting(0.002, 0.0005))
 				.limitCount(1)
 			)
-		})
+		});
+
+	event.addEntityLootModifier('born_in_chaos_v1:pumpkinhead')
+		.removeLoot(ItemFilter.ALWAYS_TRUE);
+
+	event.addLootTableModifier([
+		'idas:chests/archmages_tower/archmages_tower_library',
+		'idas:chests/archmages_tower/archmages_tower_treasure',
+	])
+		.removeLoot(ItemFilter.ALWAYS_TRUE);
+
+	event.addEntityLootModifier('born_in_chaos_v1:nightmare_stalker')
+		.removeLoot('born_in_chaos_v1:nightmare_stalker_skull')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('born_in_chaos_v1:nightmare_stalker_skull')
+					.when(c => c.randomChanceWithLooting(0.75, 0.25))
+			);
+		});
 
 	event.addEntityLootModifier('ars_nouveau:wilden_boss')
 		.removeLoot('ars_nouveau:wilden_tribute')
 
+	event.addEntityLootModifier([
+		'wolf',
+		'witherstormmod:sickened_wolf',
+		'born_in_chaos_v1:dread_hound'
+	])
+		.pool(pool => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('ars_nouveau:wilden_horn')
+				.when(c => c.randomChanceWithLooting(0.5, 0.25))
+				.applyLootingBonus([0, 1])
+			);
+		});
+
 	event.addEntityLootModifier('guardian')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('ars_nouveau:wilden_spike')
 				.limitCount([0, 2])
 				.applyLootingBonus([0, 1])
 			);
 		})
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:hand_drill').when(c => c.randomChance(0.009)))
 		});
 
 	event.addEntityLootModifier('elder_guardian')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('ars_nouveau:wilden_spike')
 				.limitCount([0, 7])
 				.applyLootingBonus([0, 3])
 			);
 		})
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:sponge').when(c => c.randomChanceWithLooting(0.25, 0.08)));
 		})
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:hand_drill').when(c => c.randomChance(0.25)))
 		});
 
@@ -383,7 +424,7 @@ LootJS.modifiers((event) => {
 	}
 
 	event.addEntityLootModifier('twilightforest:skeleton_druid')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('twilightforest:steeleaf_ingot')
 				.limitCount([1, 2])
@@ -394,43 +435,43 @@ LootJS.modifiers((event) => {
 
 	event.addEntityLootModifier('minecraft:witch')
 		.removeLoot(mcdw('glaive', 'cackling_broom'))
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of(mcdw('glaive', 'cackling_broom')).when(c => c.randomChanceWithLooting(0.05, 0.025)))
 		});
 
 	event.addLootTableModifier('chests/end_city_treasure')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of(mcdw('sword', 'obsidian_claymore')).withChance(0.15))
 		})
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of(mcdw('bow', 'call_of_the_void')).withChance(0.15))
 		})
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of(mcdw('crossbow', 'veiled_crossbow')).withChance(0.15))
 		});
 
 	event.addLootTableModifier('aquamirae:chests/frozen_chest')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1).randomChance(1);
 			pool.addLoot(LootEntry.of('twilightforest:ice_bow'))
 		});
 
 	event.addLootTableModifier(/^(?=.*\bvillage\b)(?=.*\bchest\b).*/)
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('travelersbackpack:villager').when(c => c.randomChance(0.05)))
 		});
 
 	event.addLootTableModifier('minecraft:chests/desert_pyramid')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('travelersbackpack:sandstone').when(c => c.randomChance(0.15)))
 		});
 
 	event.addLootTableModifier('minecraft:chests/igloo_chest')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('travelersbackpack:snow').when(c => c.randomChance(0.5)))
 		});
 
@@ -454,7 +495,7 @@ LootJS.modifiers((event) => {
 		'witherstormmod:sickened_pig',
 		'witherstormmod:sickened_snow_golem',
 	])
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('witherstormmod:tainted_dust')
 				.when(c => c.randomChanceWithLooting(0.2, 0.05))
 				.limitCount([1, 2])
@@ -466,7 +507,7 @@ LootJS.modifiers((event) => {
 		});
 
 	event.addLootTableModifier('artifacts:chests/campsite_chest')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.rolls(1)
 				.randomChance(1 /* If I ever want to change that */)
 			pool.addWeightedLoot([
@@ -479,7 +520,7 @@ LootJS.modifiers((event) => {
 		});
 
 	event.addLootTableModifier('alexscaves:chests/underground_cabin')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.randomChance(1);
 			pool.addWeightedLoot([
 				LootEntry.of('terra_curio:ancient_chisel'),
@@ -490,7 +531,7 @@ LootJS.modifiers((event) => {
 		});
 
 	event.addLootTableModifier('artifacts:entities/mimic')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.randomChance(1);
 			pool.addWeightedLoot([
 				LootEntry.of('terra_curio:putrid_scent'),
@@ -501,7 +542,7 @@ LootJS.modifiers((event) => {
 		});
 
 	event.addLootTableModifier('minecraft:chests/nether_bridge')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.randomChance(0.25);
 			pool.addWeightedLoot([
 				LootEntry.of('terra_curio:magma_stone'),
@@ -512,7 +553,7 @@ LootJS.modifiers((event) => {
 		});
 
 	event.addLootTableModifier('minecraft:chests/ruined_portal')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addWeightedLoot([
 				LootEntry.of('terra_curio:obsidian_skull')
 			])
@@ -523,7 +564,7 @@ LootJS.modifiers((event) => {
 		'cave_spider',
 		'born_in_chaos_v1:baby_spider',
 		'born_in_chaos_v1:baby_spider_controlled'
-	]).pool((pool) => {
+	]).pool(pool => {
 		pool.addLoot(LootEntry.of('terra_curio:bezoar').when(c => c.randomChance(0.03)))
 	});
 
@@ -538,9 +579,9 @@ LootJS.modifiers((event) => {
 		'rediscovered:zombie_pigman',
 
 	])
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:vitamins').when(c => c.randomChance(0.01)))
-		}).pool((pool) => {
+		}).pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:shackle').when(c => c.randomChance(0.015)))
 		})
 
@@ -553,46 +594,46 @@ LootJS.modifiers((event) => {
 		})
 
 	event.addEntityLootModifier('husk')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:energy_bar').when(c => c.randomChance(0.015)))
 		})
 
 	event.addEntityLootModifier('minecraft:phantom')
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:energy_bar').when(c => c.randomChance(0.1)))
 		})
 
 	event.addEntityLootModifier(['minecraft:slime', 'minecraft:stray'])
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:fast_clock').when(c => c.randomChance(0.02)))
 		})
 
 	event.addEntityLootModifier(['minecraft:stray'])
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:ice_skates').when(c => c.randomChance(0.01)))
 		})
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:flurry_boots').when(c => c.randomChance(0.008)))
 		})
 
 
 	event.addEntityLootModifier(['minecraft:shulker'])
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:shot_put').when(c => c.randomChance(0.12)))
 		});
 
 	event.addEntityLootModifier(['born_in_chaos_v1:fallen_chaos_knight'])
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:black_belt').when(c => c.randomChance(0.15)))
 		});
 
 	event.addEntityLootModifier(['mutantmonsters:mutant_zombie'])
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:flesh_knuckles').when(c => c.randomChance(0.33)))
 		});
 
 	event.addLootTableModifier(['minecraft:chests/ancient_city'])
-		.pool((pool) => {
+		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:flashlight').when(c => c.randomChance(0.2)))
 		});
 

@@ -1,0 +1,10 @@
+{
+	"banister": "everycomp:tf/ars_nouveau/archwood_banister",
+	"button": "ars_nouveau:archwood_button",
+	"fence": "ars_nouveau:archwood_fence",
+	"gate": "ars_nouveau:archwood_fence_gate",
+	"planks": "ars_nouveau:archwood_planks",
+	"plate": "ars_nouveau:archwood_pressure_plate",
+	"slab": "ars_nouveau:archwood_slab",
+	"stairs": "ars_nouveau:archwood_stairs"
+}

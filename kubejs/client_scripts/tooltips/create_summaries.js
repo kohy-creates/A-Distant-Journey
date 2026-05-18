@@ -1,5 +1,41 @@
 // Add your items here
 const itemsToTooltip = [
+	{
+		item: 'twilightforest:uncrafting_table',
+		summary: [
+			'I mean it really is what it says.',
+			'It can either be used as a _regular Crafting Table_,',
+			'or as the exact opposite to _uncraft items into their ingredients_.',
+			'Some items are _unable to be broken down_ by an Uncrafting Table.'
+		]
+	},
+
+	{
+		item: 'kubejs:elsa_crossbow',
+		summary: [
+			'Pretty much a _Crossbow_ with the power of an _elephant gun_...',
+			'It _cannot be loaded normally_.',
+			'Monsters are in for a treat.'
+		],
+		controls: [
+			{
+				control: 'dashing',
+				requiresHold: false,
+				text: [
+					'_Loads itself automatically_, and remains loaded for the next 6 seconds.',
+					'This _does not use any arrows_ from player\'s inventory.'
+				]
+			},
+			{
+				control: 'fired',
+				requiresHold: false,
+				text: [
+					'Unleashes an almost _hitscan-like Arrow_ that deals massive damage',
+					'Arrows are _destroyed_ when they _hit a block_.'
+				]
+			}
+		]
+	},
 
 	{
 		item: /ars_nouveau:.*experience_gem/,
@@ -3761,6 +3797,33 @@ const itemsToTooltip = [
 	},
 
 	// EvilCraft
+	{
+		item: 'evilcraft:spirit_furnace',
+		summary: [
+			"I finally succeeded in reviving _Vengeance Spirits_, or at least partially.",
+			"The revived spirits seem to be too weak to live in the real world, but they seem to have all the properties and materials of real mobs though.",
+			"There is however a use for this discovery, when building a large machine that can contain the resulting mob it will, at the cost of a large amount of _Blood_, revive the spirit and immediately cook it alive.",
+			"This will result in the drops of these mobs to be collected in the machine's inventory.",
+			"It looks like the _Box of Eternal Closure_ can indefinitely be reused without the spirit ever getting out of it.",
+		],
+		controls: [
+			{
+				control: "Creating a Spirit Furnace",
+				noBaseText: true,
+				text: [
+					"Spirit Furnaces are _multiblock structures_",
+					"and need to be constructed in a set way:",
+					"_Layer 1:_   _Layer 2:_   _Layer 3:_",
+					"  ⬛⬛⬛        ⬛⬛⬛       ⬛⬛⬛",
+					"  ⬛⬛⬛        ⬛  ⬛       ⬛⬛⬛",
+					"  ⬛⬛⬛        ⬛⬛⬛       ⬛⬛⬛",
+					"",
+					"⬛ - Dark Blood Brick",
+					"_ANY of the Dark Blood Brick blocks_ can be _replaced_ with a _Spirit Furnace_ to activate the multiblock"
+				]
+			}
+		]
+	},
 	{
 		item: 'evilcraft:weather_container',
 		summary: [],

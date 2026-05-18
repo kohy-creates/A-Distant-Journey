@@ -1,5 +1,4 @@
 const $MobEffectEventApplicable = Java.loadClass('net.minecraftforge.event.entity.living.MobEffectEvent$Applicable');
-const $LivingHealEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHealEvent");
 
 NativeEvents.onEvent('highest', false, $LivingHealEvent, /** @param {Internal.LivingHealEvent_} event */ event => {
 	/** @type {Internal.Player_} */

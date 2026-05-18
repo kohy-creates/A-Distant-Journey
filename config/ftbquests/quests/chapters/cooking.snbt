@@ -11,8 +11,8 @@
 			image: "nethervinery:block/crimson_crate_top"
 			rotation: 45.0d
 			width: 1.75d
-			x: -8.5d
-			y: 2.0d
+			x: -9.0d
+			y: 3.5d
 		}
 		{
 			height: 1.75d
@@ -384,12 +384,11 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["56D06670965D8835"]
-			icon: {
-				Count: 1
-				id: "vinery:cristel_wine"
-				tag: { }
-			}
+			dependencies: [
+				"56D06670965D8835"
+				"4CE7BE7B3B7783F0"
+			]
+			icon: "vinery:cristel_wine"
 			id: "2CE5A910A9C7B3EA"
 			subtitle: "Brew one of each - a bottle of Red Wine and a bottle of White Wine"
 			tasks: [
@@ -436,7 +435,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["56D06670965D8835"]
 			icon_scale: 0.75d
 			id: "4CE7BE7B3B7783F0"
 			shape: "diamond"
@@ -452,8 +450,8 @@
 				type: "item"
 			}]
 			title: "Metallic Madness"
-			x: -8.5d
-			y: 2.0d
+			x: -9.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7D4147C7C4278ADB"]
@@ -754,7 +752,7 @@
 			id: "488261B2768FC805"
 			shape: "diamond"
 			size: 1.5d
-			subtitle: "Upgrade your Beer. 'Upgrade' is actually such a funny word in this concept"
+			subtitle: "Upgrade your Beer. 'Upgrade' is actually such a funny word in this scenario"
 			tasks: [{
 				id: "097AF39015545B08"
 				item: "brewinandchewin:steel_toe_stout"
@@ -780,6 +778,27 @@
 			title: "Core of All That Is Fun"
 			x: -2.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["2CE5A910A9C7B3EA"]
+			icon: "vinery:oak_wine_rack_mid"
+			id: "490262D80FA1C0E0"
+			subtitle: "Craft any Wine Rack to store your manufactured goods"
+			tasks: [{
+				id: "7F2821ECC6D75632"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:wine_racks"
+					}
+				}
+				title: "Any Wine Rack"
+				type: "item"
+			}]
+			title: "Winedows"
+			x: -7.5d
+			y: 5.0d
 		}
 	]
 	title: "Crops Of The Wild"

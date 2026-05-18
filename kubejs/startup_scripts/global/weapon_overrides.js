@@ -160,6 +160,7 @@ addToolsetOverride('aether:zanite', 28);
 addToolsetOverride('aether:gravitite', 35, 0.75);
 addToolsetOverride('ancient_aether:valkyrum', 42);
 addToolsetOverride('minecraft:netherite', 50);
+addToolsetOverride('twilightforest:fiery', 62, 0.7);
 addToolsetOverride('mythicmetals:adamantite', 48);
 addToolsetOverride('mythicmetals:prometheum', 65, 0.6);
 addToolsetOverride('mythicmetals:star_platinum', 60);

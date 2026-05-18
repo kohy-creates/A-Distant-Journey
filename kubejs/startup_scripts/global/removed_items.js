@@ -420,6 +420,7 @@ const RemovedItems = {
 		/ars_nouveau:.*sourcelink/,
 		'ars_nouveau:worn_notebook',
 		'ars_nouveau:glyph_craft',
+		'ars_nouveau:jump_ring',
 		'ars_elemental:everfull_urn',
 
 		'nourished_nether:glowing_obsidian',
@@ -583,6 +584,7 @@ const RemovedItems = {
 		'aether:cloud_staff',
 		'lost_aether_content:power_gloves',
 		'lost_aether_content:agility_boots',
+		'lost_aether_content:sentry_shield',
 		'aether:phoenix_gloves',
 		'aether:obsidian_gloves',
 		'aetherdelight:skyjade_knife',

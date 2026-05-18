@@ -91,7 +91,8 @@ global.stageRestrictions = {
 			/architects_palette:.*blackstone.*/,
 			/architects_palette\/twisted/,
 			/botania:.*spark.*/,
-			'botania:lens_paint'
+			'botania:lens_paint',
+			/bifrost/
 		],
 		exceptions: [
 			'create:blaze_cake',
@@ -124,6 +125,7 @@ global.stageRestrictions = {
 			'mcdw:bow_sabrewing',
 			'kubejs:decayed_clover',
 			'aquamirae:shell_horn',
+			'kubejs:slider_pickaxe',
 		],
 		light: [
 			/everycomp\:.*aether.*/, // also covers redux, lost content and ancient
@@ -195,7 +197,19 @@ global.stageRestrictions = {
 			'tiab:time_in_a_bottle',
 			'cataclysm:monstrous_eye',
 			'cataclysm:flame_eye',
-			'cataclysm:mech_eye'
+			'cataclysm:mech_eye',
+			/witherite/,
+			'cataclysm:mechanical_fusion_anvil',
+			'cataclysm:laser_gatling',
+			'cataclysm:meat_shredder',
+			'cataclysm:wither_assault_shoulder_weapon',
+			'alexscaves:tecotnic_shard',
+			'cavedelight:lux_and_ham_sandwich',
+			'cavedelight:volcanic_chop',
+			'cavedelight:tectonic_cheesecake',
+			'alexscaves:extinction_spear',
+			'cavedelight:tectonic_pasta',
+			'alexscaves:tremorzilla_egg'
 		],
 		light: [
 			'mythicmetals:aegis_smithing_template',
@@ -254,6 +268,14 @@ global.stageRestrictions = {
 			'aether:obsidian_leggings',
 			'aether:obsidian_boots',
 			'cataclysm:void_eye',
+			'cataclysm:gauntlet_of_guard',
+			'cataclysm:gauntlet_of_bulwark',
+			'cataclysm:gauntlet_of_maelstrom',
+			'cataclysm:void_forge',
+			'cataclysm:void_core',
+			'cataclysm:gauntlet_of_guard',
+			'cataclysm:void_assault_shoulder_weapon',
+			'kubejs:elsa_crossbow'
 		],
 		light: [
 			/end_stone/,
@@ -268,11 +290,13 @@ global.stageRestrictions = {
 			/supp.*\:.*unusualend.*/,
 			/supp.*\:.*phantasm.*/,
 			/myalite/,
-			/architects_palette:oracle/,
+			/architects_palette:.*oracle/,
 			/quark\:duskbound/,
 			'alloy_forgery:ender_forge_casing_forge_controller',
 			'adj:ender_forge_casing',
 			'born_in_chaos_v1:transmuting_elixir',
+			'born_in_chaos_v1:transmuting_easter_cake',
+			'born_in_chaos_v1:eternal_candy',
 			'end_rod',
 			'kubejs:ender_forge',
 			'kubejs:ender_forge_casing',
@@ -293,17 +317,21 @@ global.stageRestrictions = {
 			/unobtainium/,
 			/metallurgium/,
 			/celestium/,
+			'create_cataclysm:cataclysmic_alloy',
+			'create_cataclysm:cataclysmic_sheet',
 			'mcdw:crossbow_slayer_crossbow',
 			/ars_elemental:.*hat/,
 			/ars_elemental:.*robes/,
 			/ars_elemental:.*leggings/,
 			/ars_elemental:.*boots/,
 			'zenith:zenith',
+			'kubejs:tainted_sand_paper'
 		],
 		light: [
 			/witherstormmod/,
 			/witherstorm_delight/,
-			'architects_palette:unobtanium_block'
+			'architects_palette:unobtanium_block',
+			'create:creative_motor'
 		],
 		exceptions: [
 			'witherstormmod:firework_bundle',

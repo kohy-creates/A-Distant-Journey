@@ -31,13 +31,15 @@
 			"hybrid-aquatic:firework_jellyfish": 10,
 			"hybrid-aquatic:lions_mane_jellyfish": 10,
 			"hybrid-aquatic:nomura_jellyfish": 10,
-			"cataclysm:netherite_monstrosity": 5
+			"cataclysm:netherite_monstrosity": 5,
+			"hybrid-aquatic:sea_urchin": 10
 		}
 	},
 	"minecraft:mob_attack_no_aggro": {
 		"iframes": 0,
 		"overrides": {
-			"minecraft:player": 3
+			"minecraft:player": 3,
+			"hybrid-aquatic:sea_urchin": 10
 		}
 	},
 	"minecraft:mob_projectile": {

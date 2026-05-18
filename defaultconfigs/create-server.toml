@@ -102,7 +102,7 @@
 	#.
 	#Number of sail-type blocks required to increase windmill speed by 1RPM.
 	#Range: > 1
-	windmillSailsPerRPM = 8
+	windmillSailsPerRPM = 4
 	#.
 	#Max Distance in blocks a Weighted Ejector can throw
 	#Range: > 0
@@ -320,7 +320,7 @@
 	#[in Buckets]
 	#The amount of liquid a tank can hold per block.
 	#Range: > 1
-	fluidTankCapacity = 16
+	fluidTankCapacity = 32
 	#.
 	#[in Blocks]
 	#The maximum height a fluid tank can reach.
@@ -330,7 +330,7 @@
 	#[in Blocks]
 	#The maximum distance a mechanical pump can push or pull liquids on either side.
 	#Range: > 1
-	mechanicalPumpRange = 16
+	mechanicalPumpRange = 32
 	#.
 	#[in Blocks]
 	#The maximum distance a hose pulley can draw fluid blocks from.
@@ -488,11 +488,11 @@
 	maxTrackPlacementLength = 32
 	#.
 	#Maximum length of a Train Stations' assembly track.
-	#Range: > 5
+	#Range: 5 ~ 512
 	maxAssemblyLength = 128
 	#.
 	#Maximum amount of bogeys assembled as a single Train.
-	#Range: > 1
+	#Range: 1 ~ 200
 	maxBogeyCount = 20
 	#.
 	#Relative speed of a manually controlled Train compared to a Scheduled one.

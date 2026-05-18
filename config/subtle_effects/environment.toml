@@ -3,12 +3,12 @@ version = 0
 biomeColorRain = true
 
 [biomes]
-biomeParticlesRadius = 32
-mushroomSporeDensity = 10
+biomeParticlesRadius = 24
+mushroomSporeDensity = 15
 mushroomSporeBiomes = [
     "minecraft:mushroom_fields"
 ]
-pollenDensity = 50
+pollenDensity = 40
 pollenBiomes = [
     "minecraft:flower_forest",
     "minecraft:sunflower_plains"
@@ -57,7 +57,8 @@ dimensionBlocklist = [
 ]
 biomesBlocklist = [  ]
 biomesAllowlist = [
-    "minecraft:lush_caves"
+    "minecraft:lush_caves",
+    "kohara:underground_jungle"
 ]
 spawnableBlocks = [
     "minecraft:grass",

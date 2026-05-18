@@ -22,7 +22,7 @@
 			rotation: 0.0d
 			width: 2.0d
 			x: 18.5d
-			y: -2.0d
+			y: -1.497221575041408d
 		}
 		{
 			dependency: "3C8D98C28C22E202"
@@ -30,8 +30,8 @@
 			image: "ars_nouveau:item/ritual_conjure_island_plains"
 			rotation: 0.0d
 			width: 2.0d
-			x: 17.0d
-			y: 0.0d
+			x: 17.5d
+			y: 2.0d
 		}
 		{
 			dependency: "459AE4954ABBB9C1"
@@ -39,8 +39,8 @@
 			image: "ars_nouveau:item/thread_kindling"
 			rotation: 0.0d
 			width: 2.0d
-			x: 15.5d
-			y: 5.0d
+			x: 10.0d
+			y: -11.0d
 		}
 		{
 			dependency: "1183BADAC1F706A7"
@@ -48,8 +48,8 @@
 			image: "ars_nouveau:item/homing_projectile"
 			rotation: 0.0d
 			width: 2.0d
-			x: 9.5d
-			y: 7.0d
+			x: 9.0d
+			y: 8.5d
 		}
 		{
 			height: 1.75d
@@ -57,23 +57,23 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: 11.0d
-			y: 9.0d
+			y: 9.5d
 		}
 		{
 			height: 1.75d
 			image: "ars_additions:block/magebloom_carpet"
 			rotation: 45.0d
 			width: 1.75d
-			x: 14.0d
-			y: 7.0d
+			x: 8.5d
+			y: -9.0d
 		}
 		{
 			height: 1.75d
 			image: "galosphere:block/chiseled_amethyst"
 			rotation: 45.0d
 			width: 1.75d
-			x: 18.5d
-			y: 3.5d
+			x: 17.0d
+			y: 6.0d
 		}
 		{
 			height: 1.75d
@@ -88,16 +88,16 @@
 			image: "evilcraft:block/undead_log_top_stripped"
 			rotation: 45.0d
 			width: 1.75d
-			x: 1.0d
-			y: 0.5d
+			x: -0.5d
+			y: -1.0d
 		}
 		{
 			height: 1.75d
 			image: "evilcraft:block/blood_infuser_up"
 			rotation: 45.0d
 			width: 1.75d
-			x: 23.0d
-			y: -7.5d
+			x: 23.5d
+			y: -7.0d
 		}
 		{
 			color: 5810943
@@ -106,8 +106,8 @@
 			image: "minecraft:item/spawn_egg"
 			rotation: 0.0d
 			width: 2.0d
-			x: 24.0d
-			y: -9.0d
+			x: 25.0d
+			y: -6.0d
 		}
 		{
 			dependency: "5B1E6DC773B2B75C"
@@ -152,8 +152,8 @@
 			image: "minecraft:item/spawn_egg_overlay"
 			rotation: 0.0d
 			width: 2.0d
-			x: 24.0d
-			y: -9.0d
+			x: 25.0d
+			y: -6.0d
 		}
 		{
 			height: 1.75d
@@ -161,7 +161,7 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: 7.0d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
 			height: 1.75d
@@ -170,6 +170,33 @@
 			width: 1.75d
 			x: 10.5d
 			y: -2.5d
+		}
+		{
+			dependency: "22A779AB53F671E4"
+			height: 1.0d
+			image: "botania:item/corporea_spark"
+			rotation: 0.0d
+			width: 1.0d
+			x: 20.0d
+			y: 2.0d
+		}
+		{
+			dependency: "22A779AB53F671E4"
+			height: 1.0d
+			image: "botania:item/corporea_spark"
+			rotation: 0.0d
+			width: 1.0d
+			x: 21.5d
+			y: 2.5d
+		}
+		{
+			dependency: "22A779AB53F671E4"
+			height: 1.0d
+			image: "botania:item/corporea_spark_master"
+			rotation: 0.0d
+			width: 1.0d
+			x: 20.5d
+			y: 3.5d
 		}
 	]
 	order_index: 0
@@ -293,10 +320,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"3D75A7B6B23BC097"
-				"45C4613857B5FBB1"
-			]
+			dependencies: ["45C4613857B5FBB1"]
 			icon: {
 				Count: 1
 				id: "botania:twig_wand"
@@ -376,7 +400,7 @@
 			}]
 			title: "Mana Infusion"
 			x: 12.0d
-			y: 0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -407,7 +431,7 @@
 			]
 			title: "Drop Pop Candy!"
 			x: 13.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["602FA24B60010322"]
@@ -554,6 +578,11 @@
 					item: "botanicadds:rune_energy"
 					type: "item"
 				}
+				{
+					id: "3449AA3E329397BB"
+					item: "kubejs:rune_life"
+					type: "item"
+				}
 			]
 			title: "Rune Collection: Chaos and Harmony"
 			x: 15.0d
@@ -561,6 +590,7 @@
 		}
 		{
 			dependencies: ["602FA24B60010322"]
+			description: ["&7&lHINT:&r In order to make your &9Terrestrial Agglomeration Plate&r work, you need to put a &eSpark&r on top of it and another one on top of your &bMana Pool&r. &9TAP&r cannot accept &bMana&r coming from &cMana Spreaders&r."]
 			icon: "botania:terrasteel_ingot"
 			id: "356CC1FA4E52AD00"
 			rewards: [{
@@ -605,10 +635,16 @@
 					item: { Count: 4, id: "minecraft:lapis_block" }
 					type: "item"
 				}
+				{
+					count: 2L
+					id: "5935BF0307C940B8"
+					item: { Count: 2, id: "botania:spark" }
+					type: "item"
+				}
 			]
 			title: "Dancer in the Dark"
 			x: 15.726662565441195d
-			y: -2.017394906107583d
+			y: -1.517394906107583d
 		}
 		{
 			dependencies: ["356CC1FA4E52AD00"]
@@ -636,7 +672,7 @@
 			]
 			title: "To Another Realm! Kinda..."
 			x: 18.5d
-			y: -2.0d
+			y: -1.497221575041408d
 		}
 		{
 			dependencies: ["5658376D04F1E8AE"]
@@ -669,7 +705,7 @@
 			]
 			title: "Elven Upgrads"
 			x: 18.5d
-			y: -0.5d
+			y: 0.0027784249585920406d
 		}
 		{
 			dependencies: ["5658376D04F1E8AE"]
@@ -696,10 +732,14 @@
 			]
 			title: "Elven Resources"
 			x: 20.5d
-			y: -2.0d
+			y: -1.497221575041408d
 		}
 		{
-			dependencies: ["35B5E5B6F7CC021D"]
+			dependencies: [
+				"35B5E5B6F7CC021D"
+				"0AA4AD4290EE5366"
+			]
+			description: ["&7&lHINT:&r Some magical items will require you to have a &bcharged Mana Tablet&r in your inventory!"]
 			id: "1701D7122A9FDADA"
 			optional: true
 			shape: "rsquare"
@@ -710,8 +750,8 @@
 				type: "item"
 			}]
 			title: "It's Portable Though!"
-			x: 9.5d
-			y: -1.0d
+			x: 11.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["54622828F37E8A7E"]
@@ -724,7 +764,7 @@
 			}]
 			title: "Corporeal"
 			x: 19.5d
-			y: 0.5d
+			y: 1.002778424958592d
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
@@ -737,7 +777,7 @@
 			}]
 			title: "Moving Out"
 			x: 24.0d
-			y: -2.5d
+			y: -1.997221575041408d
 		}
 		{
 			dependencies: [
@@ -755,7 +795,7 @@
 			}]
 			title: "Doppelganger"
 			x: 22.0d
-			y: -2.0d
+			y: -1.497221575041408d
 		}
 		{
 			dependencies: ["2FA5CDE610C7A6EB"]
@@ -781,7 +821,7 @@
 			]
 			title: "Dead and Seek"
 			x: 22.01642740650307d
-			y: -3.502778424958592d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
@@ -820,7 +860,7 @@
 			}]
 			title: "Gaiaforged"
 			x: 20.0d
-			y: -3.5d
+			y: -2.997221575041408d
 		}
 		{
 			dependencies: [
@@ -858,11 +898,12 @@
 				type: "item"
 			}]
 			title: "See More"
-			x: 11.0d
-			y: -0.5d
+			x: 10.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1807373293C4A183"]
+			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "127F1C202BCDDF85"
 			shape: "hexagon"
@@ -948,10 +989,10 @@
 			}]
 			title: "Introduction to Spellcrafting"
 			x: 11.0d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["0AA4AD4290EE5366"]
+			dependencies: ["45A92F2D2D809FF1"]
 			description: [""]
 			icon: "ars_nouveau:ritual_brazier"
 			id: "0213FAA50290ADF1"
@@ -963,7 +1004,7 @@
 			}]
 			title: "Ritualist"
 			x: 13.5d
-			y: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
@@ -1047,8 +1088,8 @@
 				}
 			]
 			title: "Quick 101 Into Rituals"
-			x: 15.5d
-			y: 0.5d
+			x: 15.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["23EF943A5D4BB045"]
@@ -1077,7 +1118,7 @@
 			]
 			title: "Glyphmania"
 			x: 9.5d
-			y: 5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
@@ -1090,8 +1131,8 @@
 				type: "item"
 			}]
 			title: "mana.jar"
-			x: 13.0d
-			y: 1.5d
+			x: 14.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5CFAC77E43966C73"]
@@ -1157,7 +1198,7 @@
 			]
 			title: "Arcane Armory"
 			x: 6.5d
-			y: -8.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4BB4F54ACBA9F3A7"]
@@ -1174,7 +1215,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["573E8C31609DCA26"]
+			dependencies: ["66FE6097FAD75DFF"]
 			description: [""]
 			icon: "ars_nouveau:blank_thread"
 			icon_scale: 0.75d
@@ -1195,8 +1236,8 @@
 				}
 			]
 			title: "Arcane Loom"
-			x: 14.0d
-			y: 7.0d
+			x: 8.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["65983995FD2CEA8A"]
@@ -1208,8 +1249,8 @@
 				type: "item"
 			}]
 			title: "Mana Cloud"
-			x: 15.0d
-			y: 2.0d
+			x: 15.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["65983995FD2CEA8A"]
@@ -1241,8 +1282,8 @@
 				}
 			]
 			title: "Eternal Mana River"
-			x: 14.0d
-			y: 3.5d
+			x: 15.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["23EF943A5D4BB045"]
@@ -1255,7 +1296,7 @@
 			}]
 			title: "Upgrades People, Upgrades"
 			x: 11.0d
-			y: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["389BC3ED918250C2"]
@@ -1276,10 +1317,10 @@
 			}]
 			title: "Archmage"
 			x: 11.0d
-			y: 9.0d
+			y: 9.5d
 		}
 		{
-			dependencies: ["45A92F2D2D809FF1"]
+			dependencies: ["0AA4AD4290EE5366"]
 			icon: "ars_nouveau:magebloom_crop"
 			id: "573E8C31609DCA26"
 			subtitle: "Craft a Magebloom Seed and plant some in your garden"
@@ -1302,7 +1343,7 @@
 			]
 			title: "Source Botanics"
 			x: 13.0d
-			y: 5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4E3E10AFFF61472E"]
@@ -1343,8 +1384,8 @@
 				type: "item"
 			}]
 			title: "Focus is Key"
-			x: 10.5d
-			y: 4.0d
+			x: 13.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["602FA24B60010322"]
@@ -1365,7 +1406,7 @@
 			}]
 			title: "Pretty Magical"
 			x: 14.5d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3C8D98C28C22E202"]
@@ -1390,7 +1431,7 @@
 			]
 			title: "Cursed Chimera"
 			x: 17.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["57004D0473F07DF1"]
@@ -1405,8 +1446,8 @@
 				type: "item"
 			}]
 			title: "Master Mode"
-			x: 18.5d
-			y: 3.5d
+			x: 17.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1426,8 +1467,8 @@
 				type: "item"
 			}]
 			title: "Core of Magic"
-			x: 18.0d
-			y: 8.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4BB4F54ACBA9F3A7"]
@@ -1466,16 +1507,32 @@
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
+			icon: "botania:brewery"
 			id: "69830CAFAA11AB7E"
 			subtitle: "Craft a Botanical Brewery and... well, use it to make Brews!"
-			tasks: [{
-				id: "71022462EAB79FE4"
-				item: "botania:brewery"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "71022462EAB79FE4"
+					item: "botania:brewery"
+					type: "item"
+				}
+				{
+					id: "31860D4B070316EA"
+					item: {
+						Count: 1
+						id: "botania:brew_vial"
+						tag: {
+							brewKey: "botania:strength"
+						}
+					}
+					match_nbt: false
+					title: "Any Vial"
+					type: "item"
+				}
+			]
 			title: "Childhood Blues"
 			x: 12.0d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
@@ -1563,7 +1620,7 @@
 			]
 			title: "Amp Up The Game"
 			x: 14.5d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5CFAC77E43966C73"]
@@ -1597,7 +1654,7 @@
 			}]
 			title: "Smells Funny"
 			x: 20.5d
-			y: -0.5d
+			y: 0.0027784249585920406d
 		}
 		{
 			dependencies: ["1807373293C4A183"]
@@ -1639,8 +1696,8 @@
 				type: "structure"
 			}]
 			title: "Temple Riders"
-			x: 2.0d
-			y: -4.5d
+			x: 2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["463D406FC669A4A5"]
@@ -1702,8 +1759,8 @@
 				}
 			]
 			title: "My Little Sunshine"
-			x: 0.5d
-			y: -5.0d
+			x: 2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["463D406FC669A4A5"]
@@ -1715,8 +1772,8 @@
 				type: "item"
 			}]
 			title: "Transforming Ecosystems"
-			x: 0.5d
-			y: -4.0d
+			x: 1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["30CABAA97495053C"]
@@ -1730,7 +1787,7 @@
 			}]
 			title: "A World of Nigthmares Never Seen Before"
 			x: 2.5d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1FDC7F34049BA9DB"]
@@ -1751,8 +1808,8 @@
 				}
 			]
 			title: "Evil Sealed Within"
-			x: 1.5d
-			y: -2.5d
+			x: 1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["30CABAA97495053C"]
@@ -1800,7 +1857,7 @@
 			]
 			title: "Nursing School"
 			x: 4.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3C3CD5B17FA9BF1F"]
@@ -1818,8 +1875,8 @@
 				type: "item"
 			}]
 			title: "Dark Arts 101"
-			x: 4.0d
-			y: -1.0d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["631C617E054BE4EF"]
@@ -1831,8 +1888,8 @@
 				type: "item"
 			}]
 			title: "It's Raining Blood"
-			x: 4.0d
-			y: 0.5d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["631C617E054BE4EF"]
@@ -1861,7 +1918,7 @@
 				}
 			]
 			title: "Empty Promises"
-			x: 2.5d
+			x: 2.0d
 			y: -1.0d
 		}
 		{
@@ -1881,7 +1938,7 @@
 			}]
 			title: "Vampirism"
 			x: 4.0d
-			y: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["602FA24B60010322"]
@@ -1900,10 +1957,15 @@
 			}]
 			title: "Blink and You'll Miss Me!"
 			x: 12.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4FB77EF920326066"]
+			description: [
+				"&7&lHINT:&r Waystones are &6PER-PLAYER&r! Only players that have interacted with them will be able to teleport to them."
+				""
+				"On the other hand, &dSharestones&r are global no matter what. You can use them to create what I like to refer to as '&dplayer warps&r'."
+			]
 			icon: "waystones:waystone"
 			icon_scale: 0.75d
 			id: "2C8E322D7390BBED"
@@ -2033,7 +2095,7 @@
 			]
 			title: "Master of Air"
 			x: 5.0d
-			y: -9.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["66FE6097FAD75DFF"]
@@ -2096,7 +2158,7 @@
 			]
 			title: "Master of Air"
 			x: 6.0d
-			y: -10.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["66FE6097FAD75DFF"]
@@ -2159,7 +2221,7 @@
 			]
 			title: "Master of Water"
 			x: 7.0d
-			y: -10.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["66FE6097FAD75DFF"]
@@ -2222,7 +2284,7 @@
 			]
 			title: "Master of Earth"
 			x: 8.0d
-			y: -9.5d
+			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -2261,25 +2323,32 @@
 				type: "item"
 			}]
 			title: "Pain and Sorrow"
-			x: 1.0d
-			y: 0.5d
+			x: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["602FA24B60010322"]
 			id: "6250E2C5F4887068"
 			subtitle: "Plant an Exoflame to fuel your Furnaces (and Blaze Burners!)"
-			tasks: [{
-				block: "botania:exoflame"
-				block_type: 0
-				id: "28FDE94188C821EF"
-				replace: false
-				replaced: "minecraft:air"
-				type: "questsadditions:place"
-				value: 1L
-			}]
+			tasks: [
+				{
+					block: "botania:exoflame"
+					block_type: 0
+					id: "28FDE94188C821EF"
+					replace: false
+					replaced: "minecraft:air"
+					type: "questsadditions:place"
+					value: 1L
+				}
+				{
+					id: "3E92430C58E7A472"
+					item: "botania:exoflame"
+					type: "item"
+				}
+			]
 			title: "Powah!"
 			x: 13.5d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6013A3AD20AB6F78"]
@@ -2302,7 +2371,7 @@
 				}
 			]
 			title: "Silencio!"
-			x: 5.5d
+			x: 5.0d
 			y: -0.5d
 		}
 		{
@@ -2327,7 +2396,7 @@
 			]
 			title: "Healing Power"
 			x: 13.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["54622828F37E8A7E"]
@@ -2340,7 +2409,7 @@
 			}]
 			title: "Constant Overdrive"
 			x: 21.5d
-			y: 0.5d
+			y: 1.002778424958592d
 		}
 		{
 			dependencies: ["6CF9448B3FA32156"]
@@ -2376,8 +2445,8 @@
 				}
 			]
 			title: "Which Was First...?"
-			x: 23.0d
-			y: -7.5d
+			x: 23.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["475982941B714122"]
@@ -2395,8 +2464,8 @@
 				type: "item"
 			}]
 			title: "Blood Money Deals"
-			x: 4.0d
-			y: 2.0d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
@@ -2417,7 +2486,7 @@
 			]
 			title: "Cognition"
 			x: 11.0d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["217462FD5B23940F"]
@@ -2437,8 +2506,8 @@
 				}
 			]
 			title: "Fountain of Wisdom"
-			x: 8.5d
-			y: 2.5d
+			x: 8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["07251A7CB6D1996D"]
@@ -2459,7 +2528,7 @@
 			}]
 			title: "OVERPOWERED!!"
 			x: 7.0d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["217462FD5B23940F"]
@@ -2476,7 +2545,7 @@
 			}]
 			title: "Gamma Radiation"
 			x: 9.0d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["56A3013493D0EBF3"]
@@ -2492,8 +2561,8 @@
 				type: "item"
 			}]
 			title: "Experience Bank"
-			x: 10.0d
-			y: 2.5d
+			x: 9.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4E019F5A62D00D6F"]
@@ -2536,7 +2605,168 @@
 			]
 			title: "Tesselating"
 			x: 18.5d
-			y: -3.5d
+			y: -2.997221575041408d
+		}
+		{
+			dependencies: ["356CC1FA4E52AD00"]
+			icon: {
+				Count: 1
+				id: "botania:terrasteel_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7BA9A6DBF30DBA4B"
+			subtitle: "Craft a full set of Terrasteel armor"
+			tasks: [
+				{
+					id: "65119275984E7B46"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43B562E51134E7EF"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30BF81B7FAA8B3C9"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "712476BA13A38146"
+					item: {
+						Count: 1
+						id: "botania:terrasteel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Terrestrial"
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"76DA5AEA27C3B576"
+				"675C4AB4B1F71DD0"
+			]
+			id: "5F4C513D3008D7A6"
+			tasks: [{
+				id: "7557BCE7DBB54C43"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:ars/spell_focus"
+					}
+				}
+				title: "Any upgraded Spell Focus"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["356CC1FA4E52AD00"]
+			id: "496A2EEB2D64E14A"
+			subtitle: "Craft any Spark Augment"
+			tasks: [{
+				id: "5B209185283BB05E"
+				item: "botania:spark_upgrade_dispersive"
+				type: "item"
+			}]
+			title: "Mana Augmentations"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0433C962730896A6"]
+			description: [
+				"If you haven't realised it yet, &cblood&r is dropped on the ground when a mob &cdies to fall damage&r."
+				""
+				"This means that if you take a &3Mob Spawner&r, put it high in the air and let mobs fall to their death, you will be producing some &cblood pools&r on the ground below. Those can be then collected with e.g. a &cSanguinary Pedestal&r (or its upgrade)."
+				""
+				"&lBut it isn't the only way of getting blood!"
+				"{@pagebreak}"
+				"&7Spiked Plates&r make it redundant to put &3Spawners&r high in the air. Any mob that steps on it will receive some damage and leave a certain amount of blood on the spikes. Those can be then drained with a &cSanguinary Pedestal&r directly from the plate. This way, &cmore blood is produced&r."
+				"{@pagebreak}"
+				"The last way would be &4Undead Trees&r. Undead trees periodically drip blood from their leaves, which accumulates below the tree. "
+				""
+				"This is the third time I am going to mention &cSanguinary Pedestals&r. The earlier you remember how useful they are for collecting blood, &ethe earlier you will get to automating the process&r ;)"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Amount: 500
+						FluidName: "evilcraft:blood"
+					}
+				}
+				id: "evilcraft:creative_blood_drop"
+				tag: {
+					Fluid: {
+						Amount: 500
+						FluidName: "evilcraft:blood"
+					}
+				}
+			}
+			id: "75BB15E917464EE9"
+			subtitle: "Click me to read"
+			tasks: [
+				{
+					id: "0B317607A7BBE26C"
+					title: "Click me to complete"
+					type: "checkmark"
+				}
+				{
+					id: "5B9E25BDDD62A444"
+					item: "evilcraft:spiked_plate"
+					type: "item"
+				}
+			]
+			title: "&f&lTutorial:&r &cCollecting Blood"
+			x: 4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["721A9AC45D492F41"]
+			id: "57AB2174C55C524E"
+			tasks: [{
+				id: "246CAC27FC2F29D1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "evilcraft:spirit_furnace"
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
 		}
 	]
 	title: "World of Magic"

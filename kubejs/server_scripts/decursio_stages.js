@@ -138,6 +138,7 @@ ServerEvents.tick(event => {
 				console.log('Generating undiscovered item cache...', 'This is running async btw!')
 				DecursioStages.cache.bannedItems = new Set([typeof String]);
 				Item.getTypeList().toArray().forEach(/** @param {Internal.Item} item*/ item => {
+					if (global.isItemDisabled(item)) return;
 					const tags = Item.of(item).getTags().toArray();
 
 					let maxChapter = null;

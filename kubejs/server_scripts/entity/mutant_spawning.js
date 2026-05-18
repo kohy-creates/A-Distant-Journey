@@ -55,9 +55,20 @@ EntityEvents.checkSpawn(event => {
 				server.runCommandSilent(
 					`execute in ${event.level.dimension.toString()} run summon ${MutantMonsters.mutantMap[type]} ${event.x} ${event.y} ${event.z}`
 				);
+				let spawnMsgs = [
+					"A mutant monster has appeared nearby...",
+					"A powerful mutant monster has risen nearby...",
+					"A champion has appeared..."
+				];
+
+				let randomMsg = spawnMsgs[Math.floor(Math.random() * spawnMsgs.length)];
+				server.runCommandSilent(
+					`/execute in ${event.level.dimension.toString()} run eta queue @a[distance=0..] status_messages "<dur:100><color col=FFEE45><shadow c=C28C29><fade in=10 out=10><typewriter speed=60><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${randomMsg}"`
+				);
 				server.scheduleInTicks(1, () => entity.remove("discarded"));
 				event.cancel();
 			}
 		}
 	}
-})
+});
+
