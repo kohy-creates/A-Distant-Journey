@@ -7,3 +7,4 @@ If something is marked as completed then it means everything on the list was mar
 
 - [ ] [[1.4.0]]
 - [ ] [[1.4.1]]
+- [ ] [[1.4.2]]

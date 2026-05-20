@@ -4,7 +4,7 @@ StartupEvents.registry('item', event => {
 
 	function createTreasureBag(name, suffix) {
 		let modAndEntity = name.split(':');
-		let nameTitleCase = global.toTitleCase(global.textReplaceAll(modAndEntity[1], '_', ''));
+		let nameTitleCase = global.toTitleCase(global.textReplaceAll(modAndEntity[1], '_', ' '));
 
 		if (suffix) {
 			nameTitleCase += ` (${suffix.charAt(0).toUpperCase() + suffix.slice(1)})`;

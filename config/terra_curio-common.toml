@@ -430,7 +430,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Anklet of the Wind"]
 		#Range: 0.0 ~ 10.0
-		movementSpeed = 0.1
+		movementSpeed = 0.06
 
 	[Attributes.Flipper]
 		#Range: 0.0 ~ 10.0

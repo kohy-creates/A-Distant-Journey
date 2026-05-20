@@ -19,7 +19,18 @@
 					"type": "minecraft:item",
 					"name": "lost_aether_content:platinum_key",
 					"quality": 4,
-					"functions": []
+					"functions": [
+						{
+							"function": "set_lore",
+							"lore": [
+								{
+									"text": "In case it didn't drop from the boss ;)",
+									"italic": true,
+									"color": "gray"
+								}
+							]
+						}
+					]
 				}
 			]
 		},

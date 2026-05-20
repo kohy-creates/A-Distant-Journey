@@ -249,15 +249,17 @@
 		{
 			dependencies: ["5F2D087B979A8FFE"]
 			description: [
-				"&7&lHINT:&r I'll be honest, Lexica Botania is a bit confusing on how this works. I'm going to give you a short example to get you started with tinkering!"
+				"It took me like 3 hours to understand how Corporea Sparks worked when I did a playthrough with that mod, so I will leave you a simple tutorial on how to get it started!"
 				""
-				"1. &ePlace a &lMaster&r &eCorporea Spark&r on top of &eany nearby inventory block&r (Chest/Barrel/etc.). This is going to kind of our '&dCorporea Central&r'."
-				"&7&oDon't place anything inside that inventory. The network cannot access its content. It's literally just an anchor for everything."
-				"2. &ePlace a Corporea Spark&r on &eany nearby inventory block&r."
-				"3. &ePlace down a Corporea Index&r and place another Corporea Spark on top of it."
-				"4. Approach the Index and &esay in chat what you want that is in the network's inventory&r, e.g '5 dirt'."
+				"1. Place a &5&lMaster&r &dCorporea Spark&r on top of any nearby inventory block (Chest/Barrel/etc.). This is going to kind of our '&dCorporea Central&r', one is always necessary to make a Corporea Network."
+				"&7&oDon't place anything inside that inventory. The network cannot access its content. It's literally just an anchor for the 'brain' of the network."
+				"2. Place a &dCorporea Spark&r on any other nearby inventory block. Put some useless items into the aforementioned block (we will need them for testing later!)."
+				"3. Place down a &dCorporea Index&r and place another Corporea Spark on top of it."
+				"&7At this point, we have 3 Corporea Sparks total - one Master and two regular."
+				"4. Approach the Index and &lsay in chat&r a &enumber&r and the &ename of the item&r you put in the block's inventory in step 2, e.g. &e'10 dirt'&r."
+				"5. &cBe amazed&r by what you have just accomplished!"
 				"{@pagebreak}"
-				"&7&lHINT 2: &rPlacing a Corporea Spark on top of an &6Inventory Connector&r allows the network to access &eevery connected chest&r, so it's extra powerful!"
+				"&7&lHINT: &rPlacing a Corporea Spark on top of an &6Inventory Connector&r allows the network to access &eevery Chest connected to the Connector block&r, so it's extra powerful! This should also work with &5Storage Lecterns&r, if you prefer using those."
 			]
 			icon: "botania:corporea_spark_master"
 			id: "24C0C6AFE73F1784"
@@ -345,6 +347,19 @@
 			title: "Storage CAN Be Magical!"
 			x: 3.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["72165200201BE4B0"]
+			id: "4BEE6F8968A016D7"
+			subtitle: "...and because of that we have a Golden Hopper"
+			tasks: [{
+				id: "38E50FE5BCAAE5D4"
+				item: "goldenhopper:golden_hopper"
+				type: "item"
+			}]
+			title: "I Don't Get Redstone Item Filters..."
+			x: -3.5d
+			y: -1.0d
 		}
 	]
 	title: "Storage Management"

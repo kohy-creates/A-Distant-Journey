@@ -32,7 +32,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "ars_nouveau:wilden_wing",
+					"name": "miners_delight:bat_wing",
 					"quality": 2,
 					"conditions": []
 				}

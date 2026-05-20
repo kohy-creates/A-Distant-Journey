@@ -462,6 +462,11 @@ ServerEvents.tags('item', tags => {
 		'galosphere:deepslate_palladium_ore',
 	]);
 
+	tags.add('forge:ores/silver', [
+		'galosphere:palladium_ore',
+		'galosphere:deepslate_palladium_ore',
+	]);
+
 	tags.add('c:raw_gravitite_ores', ['aether_redux:raw_gravitite', 'kubejs:gravitite_dust']);
 	tags.add('c:raw_valkyrum_ores', ['aether_redux:raw_valkyrum', 'kubejs:valkyrum_dust']);
 	tags.add('c:raw_veridium_ores', ['aether_redux:raw_veridium', 'kubejs:veridium_dust']);
@@ -532,7 +537,7 @@ ServerEvents.tags('item', tags => {
 				wineRacks.push(id);
 			}
 			const item = Item.of(id).getItem();
-			if (item instanceof $DyableLeatherItem) {
+			if (item instanceof $DyableLeatherItem && id !== 'minecraft:written_book') {
 				dyableItems.push(id);
 			}
 		}
@@ -540,5 +545,9 @@ ServerEvents.tags('item', tags => {
 	tags.add('adj:wine_racks', wineRacks);
 	tags.add('adj:dyable_items', dyableItems);
 
-	tags.add('adj:spark_upgrades', [/^botania:spark_upgrade_.*$/])
+	tags.add('adj:spark_upgrades', [/^botania:spark_upgrade_.*$/]);
+
+	tags.add('forge:ores/enderium_shard', [
+		'majruszsdifficulty:enderium_shard_ore'
+	]);
 });

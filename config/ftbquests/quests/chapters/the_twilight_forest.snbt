@@ -65,7 +65,7 @@
 		}
 		{
 			height: 5.0d
-			image: "adj:textures/texts/chapter_5_5.png"
+			image: "adj:textures/texts/chapter_twilight_forest.png"
 			rotation: 0.0d
 			width: 5.0d
 			x: -2.5d
@@ -73,7 +73,7 @@
 		}
 		{
 			height: 6.0d
-			image: "adj:textures/texts/quote.png"
+			image: "adj:textures/texts/lore_aether.png"
 			rotation: 0.0d
 			width: 12.0d
 			x: -2.5d

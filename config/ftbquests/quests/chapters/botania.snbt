@@ -2695,7 +2695,14 @@
 			subtitle: "Craft any Spark Augment"
 			tasks: [{
 				id: "5B209185283BB05E"
-				item: "botania:spark_upgrade_dispersive"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:spark_upgrades"
+					}
+				}
+				title: "Any Spark Augment"
 				type: "item"
 			}]
 			title: "Mana Augmentations"

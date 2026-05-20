@@ -244,7 +244,7 @@
 			dependency: "25A8ABBC7235D20E"
 			height: 1.75d
 			image: "rediscovered:block/glowing_obsidian"
-			rotation: 0.0d
+			rotation: 45.0d
 			width: 1.75d
 			x: 17.0d
 			y: 23.0d
@@ -307,8 +307,8 @@
 			image: "born_in_chaos_v1:block/bloktiemnoistali"
 			rotation: 45.0d
 			width: 1.75d
-			x: 18.0d
-			y: 7.0d
+			x: 19.0d
+			y: 3.0d
 		}
 		{
 			height: 1.75d
@@ -468,10 +468,10 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_grass_dirt.png"
 			order: -999
-			rotation: 0.0d
+			rotation: 180.0d
 			width: 10.0d
-			x: -2.5d
-			y: 29.0d
+			x: -5.0d
+			y: 27.5d
 		}
 		{
 			dependency: "545C995B87BA0947"
@@ -480,8 +480,8 @@
 			order: -999
 			rotation: 0.0d
 			width: 10.0d
-			x: -8.0d
-			y: 24.5d
+			x: -7.5d
+			y: 24.0d
 		}
 		{
 			dependency: "3E479B783B24C730"
@@ -541,7 +541,7 @@
 			dependency: "42307E5368E7BA1C"
 			height: 5.609981515711645d
 			image: "adj:textures/other/bg_void.png"
-			order: -999
+			order: -998
 			rotation: -30.0d
 			width: 10.0d
 			x: 19.5d
@@ -687,7 +687,7 @@
 		{
 			dependency: "2FC4D1B2E42E2124"
 			height: 5.0d
-			image: "adj:textures/texts/chapter_5_5.png"
+			image: "adj:textures/texts/chapter_6.png"
 			rotation: 0.0d
 			width: 5.0d
 			x: 19.0d
@@ -702,6 +702,117 @@
 			width: 10.0d
 			x: 3.0d
 			y: 25.5d
+		}
+		{
+			dependency: "603D3F9B2298333B"
+			height: 5.0d
+			image: "adj:textures/other/bg_tainted_flesh.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 9.0d
+			y: 32.0d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 5.0d
+			image: "adj:textures/other/bg_tainted_blocks.png"
+			order: -999
+			rotation: 180.0d
+			width: 10.0d
+			x: -4.5d
+			y: 32.0d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_cinders"
+			rotation: 0.0d
+			width: 2.0d
+			x: 10.0d
+			y: 42.5d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_angels"
+			rotation: 0.0d
+			width: 2.0d
+			x: 13.0d
+			y: 42.5d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_dreams"
+			rotation: 0.0d
+			width: 2.0d
+			x: 11.5d
+			y: 44.5d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_desolation"
+			rotation: 0.0d
+			width: 2.0d
+			x: 14.5d
+			y: 44.5d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_verdant_bloom"
+			rotation: 0.0d
+			width: 2.0d
+			x: 17.5d
+			y: 44.5d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_exploration"
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.0d
+			y: 46.5d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_arcanum"
+			rotation: 0.0d
+			width: 2.0d
+			x: 20.5d
+			y: 44.5d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_ethercraft"
+			rotation: 0.0d
+			width: 2.0d
+			x: 19.0d
+			y: 42.5d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_hedonism"
+			rotation: 0.0d
+			width: 2.0d
+			x: 22.0d
+			y: 42.5d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 5.0d
+			image: "adj:textures/other/bg_tainted_blocks.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 1.0d
+			y: 34.5d
 		}
 	]
 	order_index: 1
@@ -1057,7 +1168,7 @@
 			]
 			icon: "minecraft:netherrack"
 			id: "379A22A2185CFC8E"
-			shape: "hexagon"
+			shape: "circle"
 			size: 2.0d
 			subtitle: "Build and enter a Nether Portal"
 			tasks: [{
@@ -1691,9 +1802,7 @@
 			description: [
 				"An important change to mention is that &cFurnaces can no longer cook food&r, meaning you have to use &6Campfires&r or &6Smokers&f."
 				""
-				"Another important change is that &6food drains way slower&r than in vanilla. Moreover, max saturation you can have at a single time was &eincreased from 20 to 30&r. Values above 20 won't show up on your hunger bar, but if it is higher than that, you will receive a &ccomplimentary health regeneration buff&r!"
-				"{@pagebreak}"
-				"If you don't know what saturation is - uhm, don't worry about it kitten. Just know that if the apple that represents your hunger has a &6golden border&r, it's good."
+				"Another important change is that &6food drains way slower&r than in vanilla."
 			]
 			id: "6D4E948B6A4CE5E1"
 			optional: true
@@ -1788,8 +1897,8 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["0B0DF609ABC8773D"]
-			hide_until_deps_complete: true
+			dependencies: ["612A31333B1F6C1D"]
+			dependency_requirement: "one_started"
 			icon: "netherexp:nether_pizza"
 			id: "3A6A3CAC79DFDDCE"
 			optional: true
@@ -1809,7 +1918,7 @@
 				}
 			]
 			title: "Pizza Hunt"
-			x: 19.5d
+			x: 19.0d
 			y: 7.5d
 		}
 		{
@@ -1857,8 +1966,8 @@
 				}
 			]
 			title: "From The Depths"
-			x: 19.0d
-			y: 3.0d
+			x: 18.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1FA64BA25CA7A8D3"]
@@ -2000,7 +2109,7 @@
 			hide_until_deps_complete: true
 			icon: "minecraft:glowstone"
 			id: "574DD3FD26A23CDE"
-			shape: "hexagon"
+			shape: "circle"
 			size: 2.0d
 			subtitle: "Venture into The Aether, a hostile paradise"
 			tasks: [{
@@ -2206,7 +2315,7 @@
 		}
 		{
 			dependencies: ["6B4A4956BDF1E1AB"]
-			icon: "cataclysm:mech_eye"
+			icon: "cataclysm:desert_eye"
 			id: "26A9109005EE03BF"
 			optional: true
 			shape: "rsquare"
@@ -2657,21 +2766,6 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["545C995B87BA0947"]
-			hide_dependency_lines: false
-			hide_until_deps_complete: true
-			id: "3973363A1DC79F53"
-			subtitle: "Go mine some rubies"
-			tasks: [{
-				id: "0F415EE3B310B62E"
-				item: "rediscovered:ruby"
-				type: "item"
-			}]
-			title: "Red Like Roses"
-			x: 24.5d
-			y: 20.5d
-		}
-		{
 			dependencies: ["20130F300D432015"]
 			hide_until_deps_complete: true
 			icon_scale: 0.75d
@@ -2739,7 +2833,7 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["3973363A1DC79F53"]
+			dependencies: ["545C995B87BA0947"]
 			description: ["&7&lHINT: &rUnlike other Attuned Eyes, &ethis one works like a Compass&r."]
 			id: "6EC1FF01974E8D02"
 			subtitle: "Attune an Awakened Ender Pearl with rubies and follow it in the direction it opens"
@@ -2749,8 +2843,8 @@
 				type: "item"
 			}]
 			title: "Rubinated"
-			x: 23.5d
-			y: 22.0d
+			x: 24.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["545C995B87BA0947"]
@@ -2779,8 +2873,8 @@
 				type: "structure"
 			}]
 			title: "Long Forgotten"
-			x: 21.5d
-			y: 23.0d
+			x: 23.0d
+			y: 22.5d
 		}
 		{
 			dependencies: ["0BACB5A08F178376"]
@@ -2793,7 +2887,7 @@
 			]
 			icon: "rediscovered:ancient_cherry_leaves"
 			id: "25A8ABBC7235D20E"
-			shape: "hexagon"
+			shape: "circle"
 			size: 2.0d
 			subtitle: "Enter The Skylands, a dream of something that never happened"
 			tasks: [{
@@ -2805,7 +2899,7 @@
 				type: "dimension"
 			}]
 			title: "We Need to Go Higher!"
-			x: 19.0d
+			x: 20.0d
 			y: 23.0d
 		}
 		{
@@ -2814,12 +2908,14 @@
 			id: "2023AD6F8FC8986A"
 			subtitle: "Find a Pigman Village"
 			tasks: [{
-				id: "19166DACE071F8F6"
-				item: "minecraft:porkchop"
-				type: "item"
+				icon: "minecraft:porkchop"
+				id: "5AD07A31F5EB18F0"
+				structure: "rediscovered:pigman_village"
+				title: "Find a Pigman Village"
+				type: "structure"
 			}]
 			title: "I've Seen You Before...."
-			x: 19.0d
+			x: 20.0d
 			y: 25.0d
 		}
 		{
@@ -2917,7 +3013,6 @@
 			icon: "born_in_chaos_v1:nightmare_stalker_skull"
 			icon_scale: 0.75d
 			id: "58D9C1D755CC3E6E"
-			optional: true
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Kill a Nightmare Stalker"
@@ -2930,8 +3025,8 @@
 				value: 1L
 			}]
 			title: "Worsening Nigthmares"
-			x: 18.0d
-			y: 7.0d
+			x: 19.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6AAB7BBD64FB4562"]
@@ -2961,7 +3056,10 @@
 		{
 			dependencies: ["25A8ABBC7235D20E"]
 			hide_until_deps_complete: true
+			icon_scale: 0.75d
 			id: "04096C5C5F14CD07"
+			shape: "diamond"
+			size: 1.5d
 			subtitle: "Find and enter a Brick Pyramid"
 			tasks: [{
 				icon: "rediscovered:large_bricks"
@@ -3097,7 +3195,7 @@
 			]
 			icon: "cataclysm:void_stone"
 			id: "1F3DB68EA2A45EB7"
-			shape: "hexagon"
+			shape: "circle"
 			size: 2.0d
 			subtitle: "Open a portal to The End and enter the realm where darkness bends"
 			tasks: [{
@@ -3184,7 +3282,7 @@
 				}
 			]
 			title: "Nostalgic Flora"
-			x: 19.0d
+			x: 20.0d
 			y: 21.0d
 		}
 		{
@@ -3219,7 +3317,7 @@
 			dependencies: ["0F84B7A1DA0FDD37"]
 			hide_until_deps_complete: true
 			id: "4564BF670D10E0FA"
-			shape: "hexagon"
+			shape: "circle"
 			size: 2.0d
 			subtitle: "Leave the main island and explore The End"
 			tasks: [{
@@ -3415,11 +3513,10 @@
 			]
 			title: "Local Food"
 			x: 4.0d
-			y: 19.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["7BEDD5A588278AC2"]
-			hide_until_deps_complete: true
 			icon: "alloy_forgery:ender_forge_casing_forge_controller"
 			icon_scale: 0.75d
 			id: "26E82AD325890954"
@@ -3605,7 +3702,7 @@
 			dependencies: ["06E7DBDB7C7A790A"]
 			hide_until_deps_complete: true
 			id: "3E479B783B24C730"
-			shape: "hexagon"
+			shape: "circle"
 			size: 2.0d
 			subtitle: "Finish what's already there"
 			tasks: [{
@@ -3714,7 +3811,7 @@
 		{
 			dependencies: ["59B252C7E4C71A35"]
 			id: "636684C648DFFC9D"
-			shape: "hexagon"
+			shape: "circle"
 			size: 2.0d
 			subtitle: "Blow up the Wither Storm with a Formidibomb"
 			tasks: [{
@@ -3910,6 +4007,7 @@
 		}
 		{
 			dependencies: ["18F8F611C29DF3A7"]
+			description: [""]
 			icon_scale: 1.15d
 			id: "42307E5368E7BA1C"
 			shape: "octagon"
@@ -3920,7 +4018,7 @@
 				item: "structure_gel:building_tool"
 				type: "item"
 			}]
-			title: "Journey's End"
+			title: "<color col=FC4AFF><shadow c=911773><pulse a=0.5><neon>Journey's End"
 			x: 15.96428571428568d
 			y: 42.35714285714284d
 		}
@@ -4145,6 +4243,8 @@
 		{
 			dependencies: ["112388B5EDB9C9D2"]
 			id: "09398D1D38C7ED0D"
+			optional: true
+			shape: "rsquare"
 			subtitle: "Brew any Antidote"
 			tasks: [{
 				id: "3D6F7CB4E2079D48"
@@ -4366,7 +4466,8 @@
 			y: 35.5d
 		}
 		{
-			dependencies: ["379A22A2185CFC8E"]
+			dependencies: ["612A31333B1F6C1D"]
+			dependency_requirement: "one_started"
 			description: ["&7&lHINT:&r You can equip it with a &6Harness&r of your choice to turn it into a floating mount!"]
 			icon: "dried_ghast:dried_ghast"
 			id: "0562284D4662E981"
@@ -4390,8 +4491,8 @@
 				}
 			]
 			title: "To The Skies!"
-			x: 18.0d
-			y: 2.0d
+			x: 17.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["6E9823FB2C7C6D19"]
@@ -4512,6 +4613,65 @@
 			title: "On My Watch"
 			x: -1.5d
 			y: 32.5d
+		}
+		{
+			dependencies: ["379A22A2185CFC8E"]
+			icon: "minecraft:nether_wart_block"
+			id: "612A31333B1F6C1D"
+			subtitle: "Discover all Nether biomes"
+			tasks: [
+				{
+					biome: "minecraft:soul_sand_valley"
+					disable_toast: true
+					icon: "minecraft:soul_sand"
+					id: "654D8EF28B52235F"
+					title: "Vist Soul Sand Valley"
+					type: "biome"
+				}
+				{
+					biome: "minecraft:nether_wastes"
+					disable_toast: true
+					icon: "minecraft:netherrack"
+					id: "51DDE19C45F12038"
+					title: "Visit Nether Wastes"
+					type: "biome"
+				}
+				{
+					biome: "minecraft:basalt_deltas"
+					disable_toast: true
+					icon: "minecraft:basalt"
+					id: "6FB05DCA59CFAACA"
+					title: "Visit Basalt Deltas"
+					type: "biome"
+				}
+				{
+					biome: "minecraft:crimson_forest"
+					disable_toast: true
+					icon: "minecraft:nether_wart_block"
+					id: "27497A7891F56969"
+					title: "Visit Crimson Forest"
+					type: "biome"
+				}
+				{
+					biome: "minecraft:warped_forest"
+					disable_toast: true
+					icon: "minecraft:warped_wart_block"
+					id: "4970C62924BD9C2B"
+					title: "Visit Warped Forest"
+					type: "biome"
+				}
+				{
+					biome: "netherexp:black_ice_glaciers"
+					disable_toast: true
+					icon: "netherexp:black_ice"
+					id: "41131B69BF79EAF0"
+					title: "Visit Black Ice Glaciers"
+					type: "biome"
+				}
+			]
+			title: "Hot Tourist Destinations"
+			x: 17.5d
+			y: 6.5d
 		}
 	]
 	title: "Story"

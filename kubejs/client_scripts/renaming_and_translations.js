@@ -243,7 +243,9 @@ ClientEvents.lang('en_us', event => {
 		'nethervinery:warped_wine_rack_mid': 'Medium Warped Wine Rack',
 		'nethervinery:warped_wine_rack_big': 'Big Warped Wine Rack',
 
-		'twilightdelight:fiery_cooking_pot': 'Twilight-Cooker 9001 (Magma Powered)'
+		'twilightdelight:fiery_cooking_pot': 'Twilight-Cooker 9001 (Magma Powered)',
+		'twilightforest:knightmetal_sword': 'Tempered Claymore',
+		'twilightforest:knightmetal_axe': 'Tempered Greataxe',
 	};
 
 	/** @type {Record<Internal.InputItem_, string>} */
@@ -261,7 +263,7 @@ ClientEvents.lang('en_us', event => {
 		'cataclysm:cursed_eye': 'Awakened Ender Pearl (Cursed Attunment)',
 		'cataclysm:storm_eye': 'Awakened Ender Pearl (Storm Attunment)',
 		'create:dough': 'Wheat Dough',
-		'structure_gel:building_tool': 'Architect\'s Prism',
+		'structure_gel:building_tool': '<color col=FC4AFF><shadow c=911773><pulse a=0.5><neon>Architect\'s Prism</neon><pulse></shadow></color>',
 		'mythicmetals:durasteel_engine': 'Drill Engine',
 		'suspicious_stew': 'Strange Stew',
 		'sortilege:lapis_shield': 'Lazuli Buckler',

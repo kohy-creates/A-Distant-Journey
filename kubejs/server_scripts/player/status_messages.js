@@ -14,19 +14,6 @@ function isInBetween(num, var1, var2) {
 	return (num >= var1 && num <= var2);
 }
 
-// Don't ask me where I got this from, cause I don't remember at all
-function brighten(hex, p) {
-	return '#' + [0, 2, 4].map(i => {
-		const v = parseInt(hex.slice(1 + i, 3 + i), 16);
-		const result = Math.round(
-			p >= 0 ? v + (255 - v) * p : v * (1 + p)
-		);
-		return Math.max(0, Math.min(255, result))
-			.toString(16)
-			.padStart(2, '0');
-	}).join('');
-}
-
 const moonEventMessages = {
 	'enhancedcelestials:harvest_moon': {
 		color: '#ffd500',
@@ -131,7 +118,7 @@ ServerEvents.tick(event => {
 		const duration = (options.duration !== undefined ? options.duration : 6) * 20;
 
 		// const command = '/immersivemessages sendcustom @a[distance=0..] {anchor:0,y:' + y + ',color:"' + color + '"' + (slideArgs ? ',' + slideArgs : '') + '} ' + duration + ' ' + text;
-		const command = `/eta queue @a[predicate=adj:in_overworld] status_messages "<dur:${duration}><color col=${color}><shadow c=${brighten(color, -0.66)}><fade in=10 out=10><typewriter speed=45><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${text}"`
+		const command = `/eta queue @a[predicate=adj:in_overworld] status_messages "<dur:${duration}><color col=${color}><shadow c=${global.amplifyHexColor(color, -0.66)}><fade in=10 out=10><typewriter speed=45><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${text}"`
 		server.runCommand(command);
 	}
 
@@ -150,7 +137,7 @@ ServerEvents.tick(event => {
 		}
 		else {
 			color = moonEventMessages[moonEventOrPhase].color;
-			if (!isStart) color = brighten(color, 0.3333333334);
+			if (!isStart) color = global.amplifyHexColor(color, 0.3333333334);
 			texts = moonEventMessages[moonEventOrPhase].texts[(isStart) ? 'start' : 'end'];
 		}
 		for (let i = 0; i < texts.length; i++) {

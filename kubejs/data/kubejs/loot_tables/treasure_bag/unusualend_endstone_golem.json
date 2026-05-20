@@ -2,17 +2,6 @@
 	"type": "minecraft:gift",
 	"pools": [
 		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "terra_curio:eye_of_the_golem",
-					"quality": 4,
-					"functions": []
-				}
-			]
-		},
-		{
 			"rolls": {
 				"min": 2,
 				"max": 3

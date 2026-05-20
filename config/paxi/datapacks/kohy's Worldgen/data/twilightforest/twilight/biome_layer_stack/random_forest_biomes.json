@@ -11,17 +11,12 @@
                     "parent": {
                       "common_biomes": [
                         "twilightforest:forest",
-                        "twilightforest:dense_forest",
-                        "twilightforest:mushroom_forest",
-                        "twilightforest:oak_savannah",
                         "twilightforest:firefly_forest"
                       ],
                       "layer_type": "twilightforest:random_biomes",
-                      "rare_biome_chance": 40,
+                      "rare_biome_chance": 100,
                       "rare_biomes": [
                         "twilightforest:lake",
-                        "twilightforest:dense_mushroom_forest",
-                        "twilightforest:enchanted_forest",
                         "twilightforest:clearing"
                       ],
                       "salt": 1

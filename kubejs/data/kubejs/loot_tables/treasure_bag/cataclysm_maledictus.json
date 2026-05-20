@@ -2,9 +2,32 @@
 	"type": "minecraft:gift",
 	"pools": [
 		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "simplyswords:magiscythe",
+					"quality": 4,
+					"functions": []
+				},
+				{
+					"type": "minecraft:item",
+					"name": "simplyswords:magispear",
+					"quality": 4,
+					"functions": []
+				},
+				{
+					"type": "minecraft:item",
+					"name": "simplyswords:magiblade",
+					"quality": 4,
+					"functions": []
+				}
+			]
+		},
+		{
 			"rolls": {
-				"min": 3,
-				"max": 4
+				"min": 4,
+				"max": 5
 			},
 			"entries": [
 				{
@@ -20,15 +43,9 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "cataclysm:music_disc_maledictus",
+					"name": "cataclysm:cursium_upgrade_smithing_template",
 					"quality": 3,
-					"functions": [],
-					"conditions": [
-						{
-							"condition": "random_chance",
-							"chance": 0.25
-						}
-					]
+					"functions": []
 				}
 			]
 		}

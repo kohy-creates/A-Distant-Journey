@@ -7,34 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "cataclysm:sandstorm_in_a_bottle",
-					"quality": 4,
-					"conditions": [
-						{
-							"condition": "random_chance",
-							"chance": 0.75
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "cataclysm:remnant_skull",
-					"quality": 4
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "cataclysm:remnant_skull",
 					"quality": 3,
-					"functions": [],
 					"conditions": [
 						{
 							"condition": "random_chance",
@@ -45,22 +18,38 @@
 			]
 		},
 		{
-			"rolls": {
-				"min": 1,
-				"max": 2
-			},
+			"rolls": 1,
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "cataclysm:music_disc_ancient_remnant",
-					"quality": 2
+					"name": "cataclysm:remnant_skull",
+					"quality": 4,
+					"functions": [],
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.25
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:ancient_metal_block",
+					"quality": 4,
+					"functions": [],
+					"conditions": []
 				}
 			]
 		},
 		{
 			"rolls": {
 				"min": 10,
-				"max": 20
+				"max": 25
 			},
 			"entries": [
 				{

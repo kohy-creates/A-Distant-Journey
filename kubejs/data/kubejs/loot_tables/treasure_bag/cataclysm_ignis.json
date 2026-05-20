@@ -2,9 +2,26 @@
 	"type": "minecraft:gift",
 	"pools": [
 		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "simplyswords:emberlash",
+					"quality": 4,
+					"functions": [],
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.75
+						}
+					]
+				}
+			]
+		},
+		{
 			"rolls": {
-				"min": 3,
-				"max": 4
+				"min": 4,
+				"max": 5
 			},
 			"entries": [
 				{
@@ -16,9 +33,20 @@
 			]
 		},
 		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "cataclysm:ignitium_upgrade_smithing_template",
+					"quality": 3,
+					"functions": []
+				}
+			]
+		},
+		{
 			"rolls": {
-				"min": 20,
-				"max": 30
+				"min": 10,
+				"max": 25
 			},
 			"entries": [
 				{
@@ -28,13 +56,8 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "blaze_rod",
+					"name": "blaze_powder",
 					"quality": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "nether_bricks",
-					"quality": 1
 				}
 			]
 		}

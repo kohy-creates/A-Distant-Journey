@@ -116,6 +116,7 @@ ServerEvents.recipes((event) => {
 		'xercapaint:item_canvas',
 		'botania:tiny_planet',
 		'botania:tiny_planet_block',
+		'twilightforest:knightmetal_ingot',
 
 	].concat(global.blacklistedItemsArray);
 	disabledItemRecipes.forEach(item => {
@@ -1503,7 +1504,7 @@ ServerEvents.recipes((event) => {
 			}
 		]
 	}).id('adj:manasteel_sheet_from_pressing');
-	event.recipes.botania.mana_infusion('kubejs:manasteel_sheet', 'create:iron_sheet').mana(3000).id('adj:manasteel_sheet_from_infusion');
+	event.recipes.botania.mana_infusion('kubejs:manasteel_sheet', ['create:iron_sheet', 'create:gold_sheet']).mana(3000).id('adj:manasteel_sheet_from_infusion');
 
 	event.shaped(
 		'kubejs:diamond_upgrade',
@@ -3073,6 +3074,44 @@ ServerEvents.recipes((event) => {
 	elementalUpgradeRecipe('earth', 'botania:rune_earth');
 	elementalUpgradeRecipe('aqua', 'botania:rune_water');
 
+	// Universal Scrying Ritual
+	function scryingRitual(catalyst, searchFor, id) {
+		let recipeId = 'adj:scrying/' + id;
+		event.custom({
+			type: "ars_nouveau:scry_ritual",
+			augment: catalyst,
+			highlight: searchFor,
+			id: recipeId
+		}).id(recipeId);
+	}
+
+	scryingRitual('forge:ores/uranium', 'forge:ores/uranium', 'uranium');
+	scryingRitual('forge:ores/ruby', 'forge:ores/ruby', 'ruby');
+	scryingRitual('forge:ores/unobtainium', 'forge:ores/unobtainium', 'unobtainium');
+	scryingRitual('forge:ores/osmium', 'forge:ores/osmium', 'osmium');
+	scryingRitual('forge:ores/orichalcum', 'forge:ores/orichalcum', 'orichalcum');
+	scryingRitual('forge:ores/banglum', 'forge:ores/banglum', 'banglum');
+	scryingRitual('forge:ores/mythril', 'forge:ores/mythril', 'mythril');
+	scryingRitual('forge:ores/starrite', 'forge:ores/starrite', 'starrite');
+	scryingRitual('forge:ores/manganese', 'forge:ores/manganese', 'manganese');
+	scryingRitual('forge:ores/quadrillum', 'forge:ores/quadrillum', 'quadrillum');
+	scryingRitual('forge:ores/palladium', 'forge:ores/palladium', 'palladium');
+	scryingRitual('forge:ores/carmot', 'forge:ores/carmot', 'carmot');
+	scryingRitual('forge:ores/midas_gold', 'forge:ores/midas_gold', 'midas_gold');
+	scryingRitual('forge:ores/tin', 'forge:ores/tin', 'tin');
+	scryingRitual('forge:ores/runite', 'forge:ores/runite', 'runite');
+	scryingRitual('forge:ores/stormyx', 'forge:ores/stormyx', 'stormyx');
+	scryingRitual('forge:ores/silver', 'forge:ores/silver', 'silver');
+	scryingRitual('forge:ores/aquarium', 'forge:ores/aquarium', 'aquarium');
+	scryingRitual('forge:ores/adamantite', 'forge:ores/adamantite', 'adamantite');
+	scryingRitual('forge:ores/zinc', 'forge:ores/zinc', 'zinc');
+	scryingRitual('forge:ores/platinum', 'forge:ores/platinum', 'platinum');
+	scryingRitual('forge:ores/morkite', 'forge:ores/morkite', 'morkite');
+	scryingRitual('forge:ores/kyber', 'forge:ores/kyber', 'kyber');
+	scryingRitual('forge:ores/emerald', 'forge:ores/emerald', 'emerald');
+	scryingRitual('forge:ores/prometheum', 'forge:ores/prometheum', 'prometheum');
+	scryingRitual('forge:ores/enderium_shard', 'forge:ores/enderium_shard', 'enderium_shard');
+
 	// Cheaper/Different materials and stations
 	event.replaceInput({ id: 'botania:mana_infusion/manasteel' },
 		'iron_ingot',
@@ -3146,44 +3185,44 @@ ServerEvents.recipes((event) => {
 	// Different Essence crafts
 	const essenceRecipes = {
 		'ars_nouveau:air_essence': [
-			{ source: 2100, ingredients: ['arrow', 'feather', 'feather',] },
+			{ source: 2000, ingredients: ['arrow', 'feather', 'feather',] },
 			{ source: 1400, ingredients: ['arrow', 'miners_delight:bat_wing', 'miners_delight:bat_wing',] },
-			{ source: 700, ingredients: ['arrow', 'aether:cold_aercloud', 'aether:cold_aercloud',] },
+			{ source: 800, ingredients: ['arrow', 'aether:cold_aercloud', 'aether:cold_aercloud',] },
 		],
 		'ars_nouveau:water_essence': [
-			{ source: 2100, ingredients: ['water_bucket', 'water_bucket', 'water_bucket'] },
+			{ source: 2000, ingredients: ['water_bucket', 'water_bucket', 'water_bucket'] },
 			{ source: 1400, ingredients: ['water_bucket', 'kelp', 'prismarine'] },
-			{ source: 700, ingredients: ['water_bucket', 'upgrade_aquatic:prismarine_coral_block', 'upgrade_aquatic:prismarine_coral_block'] },
+			{ source: 800, ingredients: ['water_bucket', 'upgrade_aquatic:prismarine_coral_block', 'upgrade_aquatic:prismarine_coral_block'] },
 		],
 		'ars_nouveau:fire_essence': [
-			{ source: 2100, ingredients: ['gunpowder', 'coal', 'torch'] },
+			{ source: 2000, ingredients: ['gunpowder', 'coal', 'torch'] },
 			{ source: 1400, ingredients: ['gunpowder', 'netherexp:fossil_fuel', 'torch'] },
-			{ source: 700, ingredients: ['fire_charge', 'netherexp:fossil_fuel', 'netherdepthsupgrade:searing_cod'] },
+			{ source: 800, ingredients: ['fire_charge', 'netherexp:fossil_fuel', 'netherdepthsupgrade:searing_cod'] },
 		],
 		'ars_nouveau:earth_essence': [
-			{ source: 2100, ingredients: ['iron_ingot', 'rooted_dirt', 'rooted_dirt'] },
+			{ source: 2000, ingredients: ['iron_ingot', 'rooted_dirt', 'rooted_dirt'] },
 			{ source: 1400, ingredients: ['iron_ingot', 'moss_block', 'coarse_dirt'] },
-			{ source: 700, ingredients: ['iron_ingot', 'create:tree_fertilizer', 'aether:aether_dirt'] },
+			{ source: 800, ingredients: ['iron_ingot', 'create:tree_fertilizer', 'aether:aether_dirt'] },
 		],
 		'ars_nouveau:abjuration_essence': [
-			{ source: 2100, ingredients: ['sugar', 'spider_eye', 'amethyst_shard'] },
+			{ source: 2000, ingredients: ['sugar', 'spider_eye', 'amethyst_shard'] },
 			{ source: 1400, ingredients: ['sugar', 'fermented_spider_eye', '#c:milk'] },
-			{ source: 700, ingredients: ['supplementaries:sugar_cube', 'fermented_spider_eye', 'botania:pixie_dust'] },
+			{ source: 800, ingredients: ['supplementaries:sugar_cube', 'fermented_spider_eye', 'botania:pixie_dust'] },
 		],
 		'ars_nouveau:conjuration_essence': [
-			{ source: 2100, ingredients: ['book', 'bone', 'netherexp:fossil_fuel'] },
+			{ source: 2000, ingredients: ['book', 'bone', 'netherexp:fossil_fuel'] },
 			{ source: 1400, ingredients: ['book', 'ars_nouveau:wilden_horn', 'netherexp:fossil_fuel'] },
-			{ source: 700, ingredients: ['book', 'ars_nouveau:wilden_horn', 'ars_nouveau:starbuncle_shards'] },
+			{ source: 800, ingredients: ['book', 'ars_nouveau:wilden_horn', 'ars_nouveau:starbuncle_shards'] },
 		],
 		'ars_nouveau:manipulation_essence': [
-			{ source: 2100, ingredients: ['redstone', 'piston', '#adj:clock'] },
+			{ source: 2000, ingredients: ['redstone', 'piston', '#adj:clock'] },
 			{ source: 1400, ingredients: ['morered:red_alloy_ingot', 'piston', 'supplementaries:clock_block'] },
-			{ source: 700, ingredients: ['morered:red_alloy_ingot', 'botania:piston_relay', 'create:cuckoo_clock'] },
+			{ source: 800, ingredients: ['morered:red_alloy_ingot', 'botania:piston_relay', 'create:cuckoo_clock'] },
 		],
 		'ars_elemental:anima_essence': [
-			{ source: 2100, ingredients: ['golden_apple', 'kubejs:skull_fragment', 'bone_meal'] },
+			{ source: 2000, ingredients: ['golden_apple', 'kubejs:skull_fragment', 'bone_meal'] },
 			{ source: 1400, ingredients: ['golden_apple', 'wither_skeleton_skull', 'bone_block'] },
-			{ source: 700, ingredients: ['enchanted_golden_apple', 'wither_skeleton_skull', 'netherexp:wither_bone_block'] },
+			{ source: 800, ingredients: ['enchanted_golden_apple', 'wither_skeleton_skull', 'netherexp:wither_bone_block'] },
 		],
 	};
 	for (let [essence, recipeList] of Object.entries(essenceRecipes)) {
@@ -6090,6 +6129,19 @@ ServerEvents.recipes((event) => {
 		event.remove({ output: item });
 	});
 
+	alloyForgeRecipe(
+		[
+			['mythicmetals:steel_ingot', 2],
+			['twilightforest:armor_shard_cluster', 1]
+		],
+		['twilightforest:knightmetal_ingot', 2],
+		2,
+		10,
+		[
+			['3+', 'output', 3]
+		]
+	);
+
 	event.shapeless(
 		'twilightforest:rainbow_oak_sapling',
 		[
@@ -8614,4 +8666,30 @@ ServerEvents.recipes((event) => {
 		20,
 		[]
 	);
+
+	// SimplySwords recipes
+	/** @type {Special.RecipeId[]} */
+	const simplySwordsRecipesToRemove = [
+		'simplyswords:righteous_relic',
+		'simplyswords:sunfire'
+	];
+	simplySwordsRecipesToRemove.forEach(id => {
+		event.remove({ id: id });
+	});
+
+	event.recipes.botania.mana_infusion('simplyswords:righteous_relic', 'simplyswords:tainted_relic').mana(500000).id('adj:tainted_relic_cleansing');
+
+	event.shaped(
+		'simplyswords:sunfire',
+		[
+			'P',
+			'H',
+			'R'
+		],
+		{
+			P: 'mythicmetals:palladium_ingot',
+			H: 'mythicmetals:hallowed_ingot',
+			R: 'simplyswords:righteous_relic'
+		}
+	).id('adj:sunfire');
 });

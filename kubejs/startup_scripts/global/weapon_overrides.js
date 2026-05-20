@@ -152,6 +152,7 @@ addToolsetOverride('mythicmetals:mythril', 15);
 addToolsetOverride('mythicmetals:orichalcum', 20, 1.125);
 addToolsetOverride('mythicmetals:midas_gold', 18);
 addToolsetOverride('mythicmetals:stormyx', 29, 1.125);
+addToolsetOverride('twilightforest:knightmetal', 34, 0.65);
 addToolsetOverride('botania:elementium', 23);
 addToolsetOverride('mythicmetals:palladium', 28);
 addToolsetOverride('aether:skyroot', 15);

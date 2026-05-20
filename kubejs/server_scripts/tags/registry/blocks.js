@@ -151,4 +151,33 @@ ServerEvents.tags('block', tags => {
 		'packed_mud',
 		'quark:permafrost'
 	]);
+
+	const palladiumTags = [
+		'c:palladium_ingots',
+		'c:palladium_ores',
+		'c:raw_palladium_blocks',
+		'c:raw_palladium_ores',
+		'c:palladium_nuggets',
+		'c:palladium_blocks',
+		'forge:ores/palladium',
+		'forge:raw_materials/palladium',
+		'forge:ingots/palladium',
+		'forge:nuggets/palladium',
+		'forge:storage_blocks/raw_palladium',
+	];
+	palladiumTags.forEach(tag => tags.remove(tag, ['@galosphere']));
+
+	tags.add('adj:silver_ores', [
+		'galosphere:palladium_ore',
+		'galosphere:deepslate_palladium_ore',
+	]);
+
+	tags.add('forge:ores/silver', [
+		'galosphere:palladium_ore',
+		'galosphere:deepslate_palladium_ore',
+	]);
+
+	tags.add('forge:ores/enderium_shard', [
+		'majruszsdifficulty:enderium_shard_ore'
+	]);
 });

@@ -2,6 +2,17 @@
 	"type": "minecraft:gift",
 	"pools": [
 		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kubejs:slider_pickaxe",
+					"weight": 2,
+					"quality": 4
+				}
+			]
+		},
+		{
 			"rolls": {
 				"min": 10,
 				"max": 30

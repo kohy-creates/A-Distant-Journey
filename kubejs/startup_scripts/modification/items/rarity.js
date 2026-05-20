@@ -12,15 +12,6 @@ function obscureTooltipsPath(path) {
 	return `kubejs/assets/adj/tooltips/${path}`
 }
 
-function darkenHex(hex, percent, noHash) {
-	return ((noHash) ? '' : '#') + hex
-		.replace('#', '')
-		.match(/.{2}/g)
-		.map(c => Math.max(0, Math.min(255, Math.round(parseInt(c, 16) * (1 - percent / 100)))))
-		.map(c => c.toString(16).padStart(2, '0'))
-		.join('');
-}
-
 function createRarity(/** @type {string} */ name, /** @type {number} */ colorCode) {
 	let color = $UtilsJS.makeFunctionProxy("startup", $UnaryOperator, (style) => {
 		return withColorMethod.invoke(style, Color.of(colorCode).createTextColorJS());
@@ -34,7 +25,7 @@ function createRarity(/** @type {string} */ name, /** @type {number} */ colorCod
 			type: "obscure_tooltips:rarity",
 			rarity: `${name}`
 		}
-	})
+	});
 
 	JsonIO.write(obscureTooltipsPath(`style/${name}.json`), {
 		panel: `adj:${name}`,
@@ -42,7 +33,7 @@ function createRarity(/** @type {string} */ name, /** @type {number} */ colorCod
 		slot: "obscure_tooltips:default",
 		icon: "obscure_tooltips:default",
 		effects: []
-	})
+	});
 
 	JsonIO.write(obscureTooltipsPath(`element/panel/${name}.json`), {
 		type: "obscure_tooltips:color_rect",
@@ -55,33 +46,33 @@ function createRarity(/** @type {string} */ name, /** @type {number} */ colorCod
 		border_palette: {
 			top_left: `#60${colorCode.replace('#', '')}`,
 			top_right: `#60${colorCode.replace('#', '')}`,
-			bottom_left: `#50${darkenHex(colorCode, 25, true)}`,
-			bottom_right: `#50${darkenHex(colorCode, 25, true)}`
+			bottom_left: `#50${global.amplifyHexColor(colorCode, -25, true)}`,
+			bottom_right: `#50${global.amplifyHexColor(colorCode, -25, true)}`
 		}
-	})
+	});
 
 	return $Rarity["create(java.lang.String,java.util.function.UnaryOperator)"](name, color)
 }
 
-createRarity("chapter_0", '#FFFFFF')
-createRarity("chapter_0_uncommon", '#9696FF')
-createRarity("chapter_0_rare", '#96FF96')
-createRarity("chapter_1", '#FFC896')
-createRarity("chapter_1_uncommon", '#FF9696')
-createRarity("chapter_1_rare", '#FF96FF')
-createRarity("chapter_2", '#D2A0FF')
-createRarity("chapter_2_uncommon", '#96FF0A')
-createRarity("chapter_2_rare", '#FFFF0A')
-createRarity("chapter_3", '#05C8FF')
-createRarity("chapter_3_uncommon", '#05C8FF')
-createRarity("chapter_3_rare", '#B428FF')
-createRarity("chapter_4", '#00FFC8')
-createRarity("chapter_4_uncommon", '#00FF00')
-createRarity("chapter_4_rare", '#2B60DE')
-createRarity("chapter_5", '#6C2DC7')
-createRarity("chapter_5_uncommon", '#FF00FF')
-createRarity("chapter_5_rare", '#A3191A')
-createRarity("chapter_6", '#ff288c')
+createRarity("chapter_0", '#FFFFFF');
+createRarity("chapter_0_uncommon", '#9696FF');
+createRarity("chapter_0_rare", '#96FF96');
+createRarity("chapter_1", '#FFC896');
+createRarity("chapter_1_uncommon", '#FF9696');
+createRarity("chapter_1_rare", '#FF96FF');
+createRarity("chapter_2", '#D2A0FF');
+createRarity("chapter_2_uncommon", '#96FF0A');
+createRarity("chapter_2_rare", '#FFFF0A');
+createRarity("chapter_3", '#05C8FF');
+createRarity("chapter_3_uncommon", '#05C8FF');
+createRarity("chapter_3_rare", '#B428FF');
+createRarity("chapter_4", '#00FFC8');
+createRarity("chapter_4_uncommon", '#00FF00');
+createRarity("chapter_4_rare", '#2B60DE');
+createRarity("chapter_5", '#6C2DC7');
+createRarity("chapter_5_uncommon", '#FF00FF');
+createRarity("chapter_5_rare", '#A3191A');
+createRarity("chapter_6", '#ff288c');
 
 ItemEvents.modification(event => {
 
@@ -193,8 +184,7 @@ ItemEvents.modification(event => {
 
 	// Terraria-like rarity system
 	function matchesAny(id, list) {
-		// This looks weird but uhmm... Whatever works I guess
-		return list.some(p => p instanceof RegExp ? p.test(id) : new RegExp(p).test(id))
+		return list.some(p => p instanceof RegExp ? p.test(id) : new RegExp(p).test(id));
 	}
 
 	function getRarity(chapter, baseRarity) {
@@ -203,7 +193,7 @@ ItemEvents.modification(event => {
 				let rar = Number.parseInt(chapter.replace('chapter_', ''));
 				if (!rar) rar = 0;
 				rar++;
-				return `chapter_${rar}`
+				return `chapter_${rar}`;
 			};
 			case 'rare':
 			case 'uncommon': {
@@ -228,7 +218,7 @@ ItemEvents.modification(event => {
 				foundMatch = true;
 				rarity = getRarity(chapter, itemRarity);
 			}
-		})
+		});
 		if (!foundMatch) {
 			rarity = getRarity('chapter_0', itemRarity);
 		}

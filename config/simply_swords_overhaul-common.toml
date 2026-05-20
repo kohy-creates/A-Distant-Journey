@@ -88,7 +88,7 @@ soulPyreWitherDuration = 10
 soulPyreWitherLevel = 2
 #Star's Edge: Bonus magic damage dealt on hit (default: 3.0)
 #Range: 0.0 ~ 100.0
-starsEdgeMagicDamage = 3.0
+starsEdgeMagicDamage = 6.0
 #Star's Edge: Delay before teleporting player back in seconds (default: 15)
 #Range: 1 ~ 1000
 starsEdgeTeleportDelay = 15
@@ -115,19 +115,19 @@ starsEdgeDashForce = 3.5
 starsEdgeResistanceDuration = 2
 #Storm's Edge: Cooldown reduction per hit in ticks (default: 20 ticks = 1 second)
 #Range: 1 ~ 1000
-stormsEdgeHitCooldownReduction = 20
+stormsEdgeHitCooldownReduction = 15
 #Storm's Edge: Cooldown of the ability in ticks (default: 200 ticks = 10 seconds)
 #Range: 1 ~ 10000
-stormsEdgeCooldownTicks = 200
+stormsEdgeCooldownTicks = 240
 #Storm's Edge: Dash distance in blocks (default: 12)
 #Range: 0.0 ~ 50.0
-stormsEdgeDashDistance = 12.0
+stormsEdgeDashDistance = 6.0
 #Storm's Edge: Duration of Speed and Haste effects in seconds (default: 15)
 #Range: 0 ~ 10000
-stormsEdgeEffectDuration = 15
+stormsEdgeEffectDuration = 7
 #Storm's Edge: Maximum level of Haste effect (default: 5)
 #Range: 1 ~ 100
-stormsEdgeMaxHasteLevel = 5
+stormsEdgeMaxHasteLevel = 4
 #Watcher: Amount of healing per hit (default: 0.5)
 #Range: 0.0 ~ 100.0
 watcherHitHealAmount = 1.0
@@ -139,5 +139,5 @@ watcherKillHealPercent = 0.04
 whisperwindCooldownTicks = 400
 #Whisper Wind: Dash distance in blocks (default: 22)
 #Range: 0 ~ 100
-whisperwindDashDistance = 22
+whisperwindDashDistance = 14
 

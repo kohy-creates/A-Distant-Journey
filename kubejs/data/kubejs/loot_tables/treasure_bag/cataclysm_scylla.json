@@ -24,24 +24,6 @@
 			"rolls": 1.0
 		},
 		{
-			"name": "disc",
-			"conditions": [
-				{
-					"condition": "random_chance",
-					"chance": 0.25
-				}
-			],
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "cataclysm:music_disc_scylla",
-					"weight": 1,
-					"quality": 3
-				}
-			]
-		},
-		{
 			"bonus_rolls": 0.0,
 			"entries": [
 				{

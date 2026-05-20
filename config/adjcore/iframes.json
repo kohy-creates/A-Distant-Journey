@@ -3,7 +3,7 @@
 		"iframes": 0
 	},
 	"#adjcore:player_melee": {
-		"iframes": 5
+		"iframes": 10
 	},
 	"#minecraft:is_projectile": {
 		"iframes": 0

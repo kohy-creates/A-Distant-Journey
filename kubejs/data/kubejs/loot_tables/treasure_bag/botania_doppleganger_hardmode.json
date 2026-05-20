@@ -8,11 +8,18 @@
 				{
 					"type": "item",
 					"name": "botania:life_essence",
-					"quality": 4,
+					"quality": 3,
 					"functions": [
 						{
 							"function": "set_count",
-							"count": 16
+							"count": {
+								"function": "set_count",
+								"count": {
+									"type": "uniform",
+									"min": 6,
+									"max": 10
+								}
+							}
 						}
 					]
 				}
@@ -26,185 +33,12 @@
 					"chance": 0.2
 				}
 			],
-			"quality": 3,
+			"quality": 2,
 			"rolls": 1,
 			"entries": [
 				{
 					"type": "item",
 					"name": "botania:record_gaia_2"
-				}
-			]
-		},
-		{
-			"name": "manasteel",
-			"conditions": [
-				{
-					"condition": "random_chance",
-					"chance": 0.9
-				}
-			],
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "botania:manasteel_ingot",
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 16,
-								"max": 27
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "mana_pearl",
-			"conditions": [
-				{
-					"condition": "random_chance",
-					"chance": 0.7
-				}
-			],
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "botania:mana_pearl",
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 8,
-								"max": 13
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "mana_diamond",
-			"conditions": [
-				{
-					"condition": "random_chance",
-					"chance": 0.5
-				}
-			],
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "botania:mana_diamond",
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 4,
-								"max": 6
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "runes",
-			"rolls": {
-				"min": 1,
-				"max": 6
-			},
-			"functions": [
-				{
-					"function": "set_count",
-					"count": {
-						"min": 2,
-						"max": 4
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_water"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_fire"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_earth"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_air"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_spring"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_summer"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_autumn"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_winter"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_mana"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_lust"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_gluttony"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_greed"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_sloth"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_wrath"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_envy"
-				},
-				{
-					"type": "item",
-					"quality": 1,
-					"name": "botania:rune_pride"
 				}
 			]
 		},
@@ -226,7 +60,7 @@
 					"type": "item",
 					"entryName": "normalBlackLotus",
 					"name": "botania:black_lotus",
-					"quality": 2,
+					"quality": 1,
 					"weight": 7,
 					"functions": [
 						{
@@ -328,7 +162,7 @@
 			"conditions": [
 				{
 					"condition": "random_chance",
-					"chance": 0.2
+					"chance": 0.17
 				}
 			],
 			"rolls": 1,

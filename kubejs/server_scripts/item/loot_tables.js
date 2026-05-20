@@ -375,9 +375,6 @@ LootJS.modifiers((event) => {
 			);
 		});
 
-	event.addEntityLootModifier('ars_nouveau:wilden_boss')
-		.removeLoot('ars_nouveau:wilden_tribute')
-
 	event.addEntityLootModifier([
 		'wolf',
 		'witherstormmod:sickened_wolf',
@@ -637,13 +634,111 @@ LootJS.modifiers((event) => {
 			pool.addLoot(LootEntry.of('terra_curio:flashlight').when(c => c.randomChance(0.2)))
 		});
 
+	// Boss-specific changes
 	global.bossMobs.forEach(boss => {
-		event.addEntityLootModifier(boss)
-			.pool(pool => {
+		const treasureBag = `kubejs:treasure_bag_${boss.split(':')[1]}`
+		if (Item.exists(treasureBag)) {
+			event.addEntityLootModifier(boss).pool(pool => {
 				pool.addLoot(
-					LootEntry.of('minecraft:potion', '{Potion:"minecraft:healing"}')
-						.limitCount([5, 12])
-				)
+					LootEntry.of(treasureBag, { display: { Lore: ['{"text":"Given to every player who battled the boss","italic":false,"color":"gold"}'] } })
+				);
+				pool.rolls(0);
 			});
+		}
+
+		if (
+			boss !== 'botania:doppleganger'
+			&& boss !== 'witherstormmod:wither_storm'
+		) {
+			event.addEntityLootModifier(boss)
+				.pool(pool => {
+					pool.addLoot(
+						LootEntry.of('trofers:large_pillar', 1, `{BlockEntityTag:{Trophy:'adj:trophies/${boss.replace(':', '_')}'}}`)
+							.when(c => c.randomChance(0.1))
+					);
+				});
+		}
 	});
+
+	event.addLootTableModifier(/kubejs:treasure_bag/)
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('minecraft:potion', '{Potion:"minecraft:healing"}')
+					.limitCount([5, 12])
+			)
+		});
+
+	event.addLootTableModifier(/majruszsdifficulty:.*treasure_bag/)
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('minecraft:potion', '{Potion:"minecraft:healing"}')
+					.limitCount([5, 12])
+			)
+		});
+
+	event.addEntityLootModifier('aquamirae:captain_cornelia')
+		.removeLoot('aquamirae:three_bolt_helmet')
+		.removeLoot('aquamirae:treasure_pouch')
+		.removeLoot('aquamirae:ship_graveyard_echo')
+		.removeLoot('aquamirae:oxygen_tank')
+		.removeLoot('aquamirae:music_disc_forsaken_drownage');
+
+	event.addEntityLootModifier('alexscaves:luxtructosaurus')
+		.removeLoot('alexscaves:tectonic_shard')
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('alexscaves:dinosaur_chop').limitCount([5, 12]));
+		})
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('alexscaves:tectonic_shard').limitCount([3, 5]));
+		});
+
+	event.addEntityLootModifier('ars_nouveau:wilden_boss')
+		.removeLoot('ars_nouveau:wilden_tribute');
+
+	event.addEntityLootModifier('botania:doppleganger')
+		.removeLoot('botaina:life_essence')
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('botania:life_essence').limitCount([2, 3]))
+		});
+
+	event.addLootTableModifier('botania:gaia_guardian_2')
+		.removeLoot('botaina:life_essence')
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('botania:life_essence').limitCount([3, 5]))
+		})
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('minecraft:potion', '{Potion:"minecraft:healing"}')
+					.limitCount([5, 12])
+			)
+		});
+
+	event.addEntityLootModifier('cataclysm:ancient_remnant')
+		.removeLoot('cataclysm:sandstorm_in_a_bottle')
+		.removeLoot('cataclysm:remnant_skull')
+		.removeLoot('cataclysm:ancient_metal_block');
+
+	event.addEntityLootModifier('cataclysm:ender_guardian')
+		.removeLoot('cataclysm:gauntlet_of_guard');
+
+	event.addEntityLootModifier('cataclysm:ignis')
+		.removeLoot('cataclysm:ignitium_ingot');
+
+	event.addEntityLootModifier('cataclysm:maledictus')
+		.removeLoot('cataclysm:cursium_ingot');
+
+	event.addEntityLootModifier('cataclysm:netherite_monstrosity')
+		.removeLoot('cataclysm:monstrous_horn')
+		.removeLoot('cataclysm:lava_power_cell');
+
+	event.addEntityLootModifier('cataclysm:scylla')
+		.removeLoot('cataclysm:lacrima')
+		.removeLoot('cataclysm:essence_of_the_storm');
+
+	event.addEntityLootModifier('cataclysm:the_harbinger')
+		.removeLoot('cataclysm:witherite_block');
+
+	event.addEntityLootModifier('cataclysm:the_leviathan')
+		.removeLoot('cataclysm:tidal_claws')
+		.removeLoot('cataclysm:abyssal_egg');
 });

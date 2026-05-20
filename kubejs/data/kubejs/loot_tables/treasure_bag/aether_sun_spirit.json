@@ -8,7 +8,12 @@
 					"type": "minecraft:item",
 					"name": "aether:sun_altar",
 					"quality": 4,
-					"conditions": []
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.5
+						}
+					]
 				}
 			]
 		},
@@ -25,6 +30,38 @@
 							"chance": 0.75
 						}
 					]
+				}
+			]
+		},
+		{
+			"name": "eye",
+			"conditions": [
+				{
+					"condition": "random_chance",
+					"chance": 0.5
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "terra_curio:eye_of_the_golem",
+					"weight": 1,
+					"quality": 3
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 2,
+				"max": 4
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "aether:ambrosium_block",
+					"quality": 2,
+					"conditions": []
 				}
 			]
 		}

@@ -6,43 +6,9 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "cataclysm:infernal_forge",
-					"quality": 4,
-					"functions": [],
-					"conditions": [
-						{
-							"condition": "random_chance",
-							"chance": 0.5
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
 					"name": "cataclysm:monstrous_horn",
 					"quality": 4,
 					"functions": []
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "cataclysm:music_disc_netherite_monstrosity",
-					"quality": 3,
-					"functions": [],
-					"conditions": [
-						{
-							"condition": "random_chance",
-							"chance": 0.25
-						}
-					]
 				}
 			]
 		},
@@ -57,8 +23,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 24.0,
-								"min": 16.0
+								"max": 3.0,
+								"min": 5.0
 							},
 							"function": "minecraft:set_count"
 						}

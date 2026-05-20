@@ -162,7 +162,8 @@ global.stageRestrictions = {
 			'quark:flamerang',
 			/adamantite/,
 			/hallowed/,
-			// /cursium/,
+			/cursium/,
+			/ignitium/,
 			'cataclysm:the_incinerator',
 			'botania:terrasteel_helmet',
 			'botania:terrasteel_chestplate',
@@ -209,7 +210,10 @@ global.stageRestrictions = {
 			'cavedelight:tectonic_cheesecake',
 			'alexscaves:extinction_spear',
 			'cavedelight:tectonic_pasta',
-			'alexscaves:tremorzilla_egg'
+			'alexscaves:tremorzilla_egg',
+			'cataclysm:infernal_forge',
+			'cataclysm:monstrous_horn',
+			'cataclysm:lava_power_cell'
 		],
 		light: [
 			'mythicmetals:aegis_smithing_template',

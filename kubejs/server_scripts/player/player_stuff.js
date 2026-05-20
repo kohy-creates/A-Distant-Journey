@@ -415,6 +415,21 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 				}
 				break;
 			}
+			case 'twilightforest:knightmetal_sword': {
+				let armor = victim.getArmorValue();
+				if (armor > 0) {
+					// event.setAmount(event.getAmount() + armor / 2); // Twilight Forest does it for me
+					attacker.sendData('add_particle_emitter', { entityId: victim.getId(), particle: 'electric_spark' });
+				}
+				break;
+			}
+			case 'twilightforest:diamond_minotaur_axe': {
+				if (attacker.isSprinting()) {
+					// let speedMul = attacker.getDeltaMovement().length() * 2.5;
+					event.setAmount(event.getAmount() * 1.4);
+				}
+				break;
+			}
 		}
 
 		// Stuff that depends on persistent data

@@ -1,7 +1,7 @@
 
 ["Speed Shoes"]
-	playSound = true
-	showParticle = true
+	playSound = false
+	showParticle = false
 
 ["Information HUD"]
 	#finalTop = screenHeight * top

@@ -2,6 +2,17 @@
 	"type": "minecraft:gift",
 	"pools": [
 		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "simplyswords:ribboncleaver",
+					"quality": 4,
+					"functions": []
+				}
+			]
+		},
+		{
 			"rolls": {
 				"min": 20,
 				"max": 30

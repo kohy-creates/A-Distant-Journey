@@ -102,6 +102,7 @@ const RemovedItems = {
 		'twilightforest:clover_patch',
 		'twilightdelight:chopped_clover',
 		'twilightforest:zombie_scepter',
+		'twilightforest:gold_minotaur_axe',
 
 		'handcrafted:wood_plate',
 		'handcrafted:wood_cup',
@@ -468,6 +469,12 @@ const RemovedItems = {
 		/simplyswords:.*_halberd/,
 
 		/simplyswords:runic_.*/,
+		'simplyswords:tempest',
+		'simplyswords:twisted_blade',
+		'simplyswords:harbinger',
+		'simplyswords:dormant_relic',
+		'simplyswords:bramblethorn',
+		'simplyswords:sword_on_a_stick',
 
 		'trashcans:energy_trash_can',
 		'trashcans:ultimate_trash_can',
@@ -495,6 +502,8 @@ const RemovedItems = {
 		'evilcraft:effortless_ring',
 		'evilcraft:corrupted_tear',
 		'evilcraft:ender_tear',
+		'evilcraft:broom',
+		'evilcraft:broom_part',
 
 		'window_box:bouquet',
 		'window_box:topsy_tulip',
@@ -742,6 +751,7 @@ const RemovedItems = {
 		'hybrid-aquatic:tall_dunegrass',
 		'hybrid-aquatic:water_lettuce',
 		'hybrid-aquatic:red_algae',
+		'hybrid-aquatic:prismarine_rod',
 
 		'crittersandcompanions:pearl',
 		'crittersandcompanions:pearl_necklace_1',
