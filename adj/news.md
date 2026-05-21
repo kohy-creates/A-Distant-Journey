@@ -1,6 +1,6 @@
 ## May 17th 2026
 
-### A Distant Journey 1.4.0 ~ Adventure Squared
+### A Distant Journey 1.4.0 \~ Adventure Squared
 
 The update is going to release **May 28th**
 
