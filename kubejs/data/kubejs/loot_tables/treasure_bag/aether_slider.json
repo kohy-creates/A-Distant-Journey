@@ -8,7 +8,30 @@
 					"type": "minecraft:item",
 					"name": "kubejs:slider_pickaxe",
 					"weight": 2,
-					"quality": 4
+					"quality": 4,
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.75
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kubejs:swet_hook",
+					"weight": 2,
+					"quality": 4,
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.75
+						}
+					]
 				}
 			]
 		},

@@ -11,7 +11,8 @@ mushroomSporeBiomes = [
 pollenDensity = 40
 pollenBiomes = [
     "minecraft:flower_forest",
-    "minecraft:sunflower_plains"
+    "minecraft:sunflower_plains",
+    "twilightforest:clearing"
 ]
 sculkDustDensity = 5
 sculkDustBiomes = [
@@ -52,13 +53,20 @@ bubbleGeyserInactiveTime = 500
 
 [fireflies]
 firefliesEnabled = true
-dimensionBlocklist = [
-    "twilightforest:twilight_forest_type"
-]
+dimensionBlocklist = [  ]
 biomesBlocklist = [  ]
 biomesAllowlist = [
     "minecraft:lush_caves",
-    "kohara:underground_jungle"
+    "kohara:underground_jungle",
+    "twilightforest:clearing",
+    "twilightforest:dark_forest",
+    "twilightforest:dark_forest_center",
+    "twilightforest:dense_forest",
+    "twilightforest:final_plateau",
+    "twilightforest:firefly_forest",
+    "twilightforest:fire_swamp",
+    "twilightforest:forest",
+    "twilightforest:highlands"
 ]
 spawnableBlocks = [
     "minecraft:grass",
@@ -89,9 +97,12 @@ fireflySoundVolume = 1.0
 onlyAllowInHabitatBiomes = false
 habitatBiomes = [
     "minecraft:swamp",
-    "minecraft:mangrove_swamp"
+    "minecraft:mangrove_swamp",
+    "twilightforest:swamp",
+    "twilightforest:fire_swamp",
+    "twilightforest:firefly_forest"
 ]
-habitatBiomeDensity = 3
+habitatBiomeDensity = 4
 
 [waterfalls]
 waterfallsEnabled = true

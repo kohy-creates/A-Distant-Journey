@@ -13,6 +13,23 @@
 			]
 		},
 		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kubejs:bloodstone_choker",
+					"quality": 4,
+					"functions": [],
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.75
+						}
+					]
+				}
+			]
+		},
+		{
 			"rolls": {
 				"min": 20,
 				"max": 30

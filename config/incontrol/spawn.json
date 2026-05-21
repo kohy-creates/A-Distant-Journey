@@ -37,7 +37,9 @@
 			"upgrade_aquatic:thrasher",
 			"upgrade_aquatic:great_thrasher",
 			"hybrid-aquatic:flying_fish",
-			"twilightforest:hostile_wolf"
+			"twilightforest:hostile_wolf",
+			"hybrid-aquatic:otter",
+			"hybrid-aquatic:great_white_shark"
 		],
 		"result": "deny"
 	}

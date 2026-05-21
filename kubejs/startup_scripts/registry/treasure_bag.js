@@ -15,7 +15,7 @@ StartupEvents.registry('item', event => {
 		event.createCustom('treasure_bag_' + modAndEntity[1] + (suffix ? `_${suffix}` : ''), () =>
 			new $TreasureBag($ResourceLocation.fromNamespaceAndPath('kubejs', 'treasure_bag/' + lootTable))
 		)
-			.displayName(nameTitleCase + ' Treasure Bag');
+			.displayName(`<rainbow f=0.25 w=0><neon p=1 r=3>${nameTitleCase} Treasure Bag</neon></rainbow>`);
 
 		let lootFilePath = 'kubejs/data/kubejs/loot_tables/treasure_bag/' + lootTable + '.json';
 		if (!JsonIO.read(lootFilePath)) {

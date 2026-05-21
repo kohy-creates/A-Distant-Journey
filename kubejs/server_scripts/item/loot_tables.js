@@ -71,6 +71,7 @@ LootJS.modifiers((event) => {
 		/travelersbackpack/,
 		/quark\:.*_shard/,
 		'artifacts:everlasting_beef',
+
 		'twilightforest:raw_ironwood',
 		'twilightforest:ironwood_ingot',
 		'twilightforest:uncrafting_table',
@@ -78,6 +79,10 @@ LootJS.modifiers((event) => {
 		'twilightforest:ender_bow',
 		'twilightforest:triple_bow',
 		'twilightforest:seeker_bow',
+		'twilightforest:ice_sword',
+		'twilightforest:ice_bomb',
+		'twilightforest:fiery_blood',
+
 		'minecraft:netherite_ingot',
 
 		'aether:zanite_helmet',
@@ -626,7 +631,7 @@ LootJS.modifiers((event) => {
 
 	event.addEntityLootModifier(['mutantmonsters:mutant_zombie'])
 		.pool(pool => {
-			pool.addLoot(LootEntry.of('terra_curio:flesh_knuckles').when(c => c.randomChance(0.33)))
+			pool.addLoot(LootEntry.of('terra_curio:flesh_knuckles').when(c => c.randomChance(0.334)))
 		});
 
 	event.addLootTableModifier(['minecraft:chests/ancient_city'])
@@ -634,9 +639,42 @@ LootJS.modifiers((event) => {
 			pool.addLoot(LootEntry.of('terra_curio:flashlight').when(c => c.randomChance(0.2)))
 		});
 
+	event.addLootTableModifier(['aether:chests/dungeon/gold/gold_dungeon_reward'])
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('kubejs:gravitite_hook').when(c => c.randomChance(0.5)))
+		});
+
+	event.addEntityLootModifier('born_in_chaos_v1:dread_hound')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('kubejs:moon_charm')
+					.when(c => {
+						c.randomChanceWithLooting(0.01, 0.01);
+					})
+			);
+		});
+
+	event.addEntityLootModifier('drowned')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('kubejs:neptunes_shell')
+					.when(c => {
+						c.randomChanceWithLooting(0.01, 0.01);
+					})
+			);
+		});
+
+	event.addLootTableModifier('mythicmetals:gameplay/better_piglin_bartering')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('kubejs:kiketsu_card').when(c => c.randomChance(0.02))
+			);
+		});
+
 	// Boss-specific changes
 	global.bossMobs.forEach(boss => {
-		const treasureBag = `kubejs:treasure_bag_${boss.split(':')[1]}`
+		let treasureBag = `kubejs:treasure_bag_${boss.split(':')[1]}`;
+		if (!Item.exists(treasureBag)) treasureBag = `majruszsdifficulty:${boss.split(':')[1]}_treasure_bag`;
 		if (Item.exists(treasureBag)) {
 			event.addEntityLootModifier(boss).pool(pool => {
 				pool.addLoot(
@@ -660,22 +698,48 @@ LootJS.modifiers((event) => {
 		}
 	});
 
-	event.addLootTableModifier(/kubejs:treasure_bag/)
+	event.addLootTableModifier([
+		'kubejs:treasure_bag/aether_slider',
+		'kubejs:treasure_bag/aether_sun_spirit',
+		'kubejs:treasure_bag/aether_valkyrie_queen',
+		'kubejs:treasure_bag/alexscaves_luxtructosaurus',
+		'kubejs:treasure_bag/ancient_aether_mutated_aechor_plant',
+		'kubejs:treasure_bag/aquamirae_captain_cornelia',
+		'kubejs:treasure_bag/ars_nouveau_wilden_boss',
+		'kubejs:treasure_bag/botania_doppleganger_hardmode',
+		'kubejs:treasure_bag/botania_doppleganger',
+		'kubejs:treasure_bag/cataclysm_ancient_remnant',
+		'kubejs:treasure_bag/cataclysm_ender_guardian',
+		'kubejs:treasure_bag/cataclysm_ignis',
+		'kubejs:treasure_bag/cataclysm_maledictus',
+		'kubejs:treasure_bag/cataclysm_netherite_monstrosity',
+		'kubejs:treasure_bag/cataclysm_scylla',
+		'kubejs:treasure_bag/cataclysm_the_harbinger',
+		'kubejs:treasure_bag/cataclysm_the_leviathan',
+		'kubejs:treasure_bag/lost_aether_content_aerwhale_king',
+		'kubejs:treasure_bag/rediscovered_red_dragon',
+		'kubejs:treasure_bag/twilightforest_alpha_yeti',
+		'kubejs:treasure_bag/twilightforest_hydra',
+		'kubejs:treasure_bag/twilightforest_knight_phantom',
+		'kubejs:treasure_bag/twilightforest_lich',
+		'kubejs:treasure_bag/twilightforest_minoshroom',
+		'kubejs:treasure_bag/twilightforest_naga',
+		'kubejs:treasure_bag/twilightforest_snow_queen',
+		'kubejs:treasure_bag/twilightforest_ur_ghast',
+		'kubejs:treasure_bag/unusualend_enderblob_queen',
+		'kubejs:treasure_bag/unusualend_endstone_golem',
+		'majruszsdifficulty:ender_dragon_treasure_bag',
+		'majruszsdifficulty:warden_treasure_bag',
+		'majruszsdifficulty:wither_treasure_bag',
+		'majruszsdifficulty:raid_treasure_bag',
+	])
 		.pool(pool => {
+			pool.rolls(1);
 			pool.addLoot(
 				LootEntry.of('minecraft:potion', '{Potion:"minecraft:healing"}')
 					.limitCount([5, 12])
 			)
 		});
-
-	event.addLootTableModifier(/majruszsdifficulty:.*treasure_bag/)
-		.pool(pool => {
-			pool.addLoot(
-				LootEntry.of('minecraft:potion', '{Potion:"minecraft:healing"}')
-					.limitCount([5, 12])
-			)
-		});
-
 	event.addEntityLootModifier('aquamirae:captain_cornelia')
 		.removeLoot('aquamirae:three_bolt_helmet')
 		.removeLoot('aquamirae:treasure_pouch')
@@ -696,13 +760,13 @@ LootJS.modifiers((event) => {
 		.removeLoot('ars_nouveau:wilden_tribute');
 
 	event.addEntityLootModifier('botania:doppleganger')
-		.removeLoot('botaina:life_essence')
+		.removeLoot('botania:life_essence')
 		.pool(pool => {
 			pool.addLoot(LootEntry.of('botania:life_essence').limitCount([2, 3]))
 		});
 
 	event.addLootTableModifier('botania:gaia_guardian_2')
-		.removeLoot('botaina:life_essence')
+		.removeLoot('botania:life_essence')
 		.pool(pool => {
 			pool.addLoot(LootEntry.of('botania:life_essence').limitCount([3, 5]))
 		})
@@ -741,4 +805,42 @@ LootJS.modifiers((event) => {
 	event.addEntityLootModifier('cataclysm:the_leviathan')
 		.removeLoot('cataclysm:tidal_claws')
 		.removeLoot('cataclysm:abyssal_egg');
+
+	event.addEntityLootModifier('twilightforest:naga')
+		.addLoot(pool => {
+			pool.addLoot(
+				LootEntry.of('twilightforest:hedge')
+					.limitCount([12, 28])
+			);
+		});
+
+	event.addEntityLootModifier('twilightforest:lich')
+		.removeLoot('golden_helmet')
+		.removeLoot('golden_chestplate')
+		.removeLoot('golden_leggings')
+		.removeLoot('golden_boots')
+		.removeLoot('golden_sword')
+		.addLoot(pool => {
+			pool.addLoot(
+				LootEntry.of('bone')
+					.limitCount([4, 8])
+			);
+		})
+		.addLoot(pool => {
+			pool.addLoot(
+				LootEntry.of('ender_pearl')
+					.limitCount([2, 5])
+			);
+		});
+
+	event.addEntityLootModifier('twilightforest:minoshroom')
+		.removeLoot('twilightforest:diamond_minotaur_axe');
+
+	event.addEntityLootModifier('witherstormmod:withered_symbiont')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('kubejs:tainted_hook').when(c => c.randomChanceWithLooting(0.5, 0.25))
+			);
+		});
+
 });

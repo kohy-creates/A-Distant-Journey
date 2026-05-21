@@ -179,7 +179,7 @@ StartupEvents.registry('item', event => {
 			.texture(`kubejs:item/${id}`)
 			.rarity('epic')
 			.tooltip(`§7${description}`)
-			.displayName(`<shake a=0.2><neon r=1.2><pulse><color col=${color}>${name}</color></pulse></shake></neon>`)
+			.displayName(`<shake a=0.2><neon r=1.2><pulse><color col=${color}><shadow c=${global.amplifyHexColor(color, -0.75, true)}>${name}</shadow></color></pulse></shake></neon>`)
 			.tag('curios:accessory')
 			.tag('adj:eyes');
 		i++;

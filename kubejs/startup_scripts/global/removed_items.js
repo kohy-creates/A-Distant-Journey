@@ -5,6 +5,8 @@ const RemovedItems = {
 
 		'born_in_chaos_v1:mint_ice_cream',
 
+		'doublejumpattribute:jump_boots',
+
 		'tide:depth_meter',
 		'tide:pocket_watch',
 		'tide:lunar_calendar',
@@ -56,6 +58,14 @@ const RemovedItems = {
 		'create:cherry_window',
 		'create:mangrove_window',
 		'create:bamboo_window',
+		/create:cut_andesite_brick.*/,
+		'v_slab_compat:create/cut_andesite_brick_vertical_slab',
+		/create:cut_diorite_brick.*/,
+		'v_slab_compat:create/cut_diorite_brick_vertical_slab',
+		/create:cut_andesite_brick.*/,
+		'v_slab_compat:create/cut_andesite_brick_vertical_slab',
+		/create:cut_tuff_brick.*/,
+		'v_slab_compat:create/cut_tuff_brick_vertical_slab',
 
 		'twilightforest:moss_patch',
 		'twilightforest:mayapple',
@@ -709,15 +719,6 @@ const RemovedItems = {
 		'morered:hexidecrubrometer',
 		/morered:bitwise_.*/,
 
-		/create:cut_andesite_brick.*/,
-		'v_slab_compat:create/cut_andesite_brick_vertical_slab',
-		/create:cut_diorite_brick.*/,
-		'v_slab_compat:create/cut_diorite_brick_vertical_slab',
-		/create:cut_andesite_brick.*/,
-		'v_slab_compat:create/cut_andesite_brick_vertical_slab',
-		/create:cut_tuff_brick.*/,
-		'v_slab_compat:create/cut_tuff_brick_vertical_slab',
-
 		/travelersbackpack:.*_sleeping_bag/,
 
 		'rubinated_nether:runestone',
@@ -752,11 +753,13 @@ const RemovedItems = {
 		'hybrid-aquatic:water_lettuce',
 		'hybrid-aquatic:red_algae',
 		'hybrid-aquatic:prismarine_rod',
+		'hybrid-aquatic:shark_tooth',
 
 		'crittersandcompanions:pearl',
 		'crittersandcompanions:pearl_necklace_1',
 		'crittersandcompanions:pearl_necklace_2',
 		'crittersandcompanions:pearl_necklace_3',
+		'crittersandcompanions:grappling_hook',
 
 		'endergetic:cracked_end_stone_bricks',
 	]

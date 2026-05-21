@@ -405,12 +405,22 @@
 			]
 			icon: "baublemounts:mount_bauble"
 			id: "074605390A97E49A"
+			min_required_tasks: 1
 			subtitle: "Click to read"
-			tasks: [{
-				id: "77AA59F786588953"
-				item: "baublemounts:mount_bauble"
-				type: "item"
-			}]
+			tasks: [
+				{
+					disable_toast: true
+					id: "77AA59F786588953"
+					item: "baublemounts:mount_bauble"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7D17E3696982F709"
+					item: "baublemounts:vehicle_bauble"
+					type: "item"
+				}
+			]
 			title: "&l&fTutorial:&r &6Mounts"
 			x: 0.5d
 			y: -5.0d

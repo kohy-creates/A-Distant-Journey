@@ -1,32 +1,30 @@
-const tags = [
-	"curios:aether_ring",
-	"curios:aether_cape",
-	"curios:charm",
-	"curios:aether_pendant",
-	"curios:necklace",
-	"curios:bundle",
-	// "curios:back",
-	"curios:head",
-	"curios:ring",
-	"curios:an_focus",
-	"curios:feet",
-	"curios:curio",
-	"curios:aether_shield",
-	"curios:aether_accessory",
-	"curios:belt",
-	"curios:aether_gloves",
-	"curios:bracelet",
-	"curios:body",
-	//"curios:accessory",
-	"curios:quiver",
-	"curios:hands",
-	"curios:trinkets",
-]
-
 ServerEvents.tags('item', event => {
 
+	const curiosTags = [
+		'curios:aether_ring',
+		'curios:aether_cape',
+		'curios:charm',
+		'curios:aether_pendant',
+		'curios:necklace',
+		'curios:bundle',
+		'curios:head',
+		'curios:ring',
+		'curios:an_focus',
+		'curios:feet',
+		'curios:curio',
+		'curios:aether_shield',
+		'curios:aether_accessory',
+		'curios:belt',
+		'curios:aether_gloves',
+		'curios:bracelet',
+		'curios:body',
+		'curios:quiver',
+		'curios:hands',
+		'curios:trinkets',
+	];
+
 	// Every curio goes into the accessory slot
-	tags.forEach(tagId => {
+	curiosTags.forEach(tagId => {
 		let tag = event.get(tagId);
 		tag.getObjectIds().forEach(entry => event.add('curios:accessory', entry));
 		tag.removeAll();
@@ -67,13 +65,13 @@ ServerEvents.tags('item', event => {
 	]);
 
 	// Readd this one thingy to the back tag
-	event.add('curios:back', 'backpacked:backpack')
+	event.add('curios:back', 'backpacked:backpack');
 
 	// Exclusions
 	event.add('adjtweaks:curio_exclusions/spell_focus', [
 		/ars_elemental:.*_focus/,
 		/ars_nouveau:.*_focus/,
-	])
+	]);
 
 });
 
@@ -82,18 +80,18 @@ ItemEvents.rightClicked('terra_curio:demon_heart', event => {
 	if (!player.persistentData.usedDemonHeart) {
 		player.persistentData.usedDemonHeart = true;
 		event.getLevel().playSound(player, player.blockPosition, 'heart_crystals:block.heart_crystal.use', 'players', 1, 1);
-		player.swing("main_hand", true);
+		player.swing('main_hand', true);
 		event.getItem().shrink(1);
-		player.server.runCommandSilent(`/curios add accessory ${player.username} 1`)
+		player.server.runCommandSilent(`/curios add accessory ${player.username} 1`);
 	}
 	event.cancel()
-})
+});
 
 PlayerEvents.loggedIn(event => {
 	const server = event.getServer();
 	const player = event.getPlayer();
 	if (server.hardcore && !player.persistentData.hardcoreInitialized) {
 		player.persistentData.hardcoreInitialized = true;
-		server.runCommandSilent(`/curios add accessory ${player.username} 1`)
+		server.runCommandSilent(`/curios add accessory ${player.username} 1`);
 	}
-})
+});

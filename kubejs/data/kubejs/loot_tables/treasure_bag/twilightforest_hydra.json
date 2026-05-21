@@ -1,1 +1,45 @@
-{}
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 7
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "twilightforest:fiery_blood",
+					"quality": 4
+				}
+			],
+			"rolls": 1
+		},
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "twilightforest:hydra_banner_pattern",
+					"quality": 3
+				}
+			],
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.25
+				}
+			]
+		}
+	],
+	"random_sequence": "twilightforest:entities/hydra"
+}

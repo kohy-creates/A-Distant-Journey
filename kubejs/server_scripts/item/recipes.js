@@ -117,6 +117,7 @@ ServerEvents.recipes((event) => {
 		'botania:tiny_planet',
 		'botania:tiny_planet_block',
 		'twilightforest:knightmetal_ingot',
+		'twilightforest:ice_sword'
 
 	].concat(global.blacklistedItemsArray);
 	disabledItemRecipes.forEach(item => {
@@ -329,7 +330,8 @@ ServerEvents.recipes((event) => {
 		'vinery:oak_wine_rack_big',
 		'vinery:oak_wine_rack_mid',
 		'vinery:oak_wine_rack_small',
-		'born_in_chaos_v1:transmuting_elixirkraft'
+		'born_in_chaos_v1:transmuting_elixirkraft',
+		'hybrid-aquatic:trident'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -1043,8 +1045,8 @@ ServerEvents.recipes((event) => {
 			'#leaves',
 			'#leaves',
 			'#leaves',
-			'orichalcum_block',
-			'orichalcum_block',
+			'mythicmetals:orichalcum_block',
+			'mythicmetals:orichalcum_block',
 			'botania:manasteel_block',
 			'botania:dragonstone_block',
 			'#saplings'
@@ -3544,6 +3546,16 @@ ServerEvents.recipes((event) => {
 		1200,
 		'superheated'
 	).id('adj:eye_of_ethercraft');
+
+	// Eye of Curiosity
+	event.shapeless(
+		'kubejs:eye_of_exploration',
+		[
+			'mythicmetals:enchanted_midas_gold_block', 'cataclysm:witherite_ingot', 'trident',
+			'quark:diamond_heart', 'ender_eye', 'alexscaves:tremorzilla_egg',
+			'twilightforest:ice_bomb', 'aether:sun_altar', 'rediscovered:cyan_rose'
+		]
+	).id('adj:eye_of_curiosity');
 
 	// Mythril gear recipes
 	event.shaped(
@@ -7041,6 +7053,19 @@ ServerEvents.recipes((event) => {
 	event.recipes.botania.mana_infusion('kubejs:decayed_clover', 'aether_redux:golden_clover').mana(150000).id('adj:decayed_clover');
 
 	event.shaped(
+		'kubejs:rose_ring',
+		[
+			' IR',
+			'I I',
+			' I '
+		],
+		{
+			R: 'rose_bush',
+			I: 'iron_ingot'
+		}
+	).id('adj:rose_ring');
+
+	event.shaped(
 		'terra_curio:ancient_chisel',
 		[
 			'  P',
@@ -8692,4 +8717,145 @@ ServerEvents.recipes((event) => {
 			R: 'simplyswords:righteous_relic'
 		}
 	).id('adj:sunfire');
+
+	// Grappling Hooks
+	event.shaped(
+		'kubejs:silk_hook',
+		[
+			' SS',
+			' IS',
+			'S  '
+		],
+		{
+			S: 'crittersandcompanions:silk',
+			I: 'iron_ingot'
+		}
+	).id('adj:silk_hook');
+
+	event.shaped(
+		'kubejs:grappling_hook',
+		[
+			' IF',
+			' CI',
+			'I  '
+		],
+		{
+			C: 'chain',
+			I: 'iron_ingot',
+			F: 'flint'
+		}
+	).id('adj:grappling_hook');
+
+	event.shaped(
+		'kubejs:amethyst_hook',
+		[
+			' AF',
+			' CA',
+			'A  '
+		],
+		{
+			C: 'chain',
+			A: 'amethyst_shard',
+			F: 'flint'
+		}
+	).id('adj:amethyst_hook');
+
+	event.shaped(
+		'kubejs:ivy_hook',
+		[
+			' SF',
+			' VS',
+			'A  '
+		],
+		{
+			S: 'ars_nouveau:magebloom_fiber',
+			A: 'botania:manasteel_ingot',
+			F: 'flint',
+			V: 'vines'
+		}
+	).id('adj:ivy_whip');
+
+	event.shaped(
+		'kubejs:slime_hook',
+		[
+			' SB',
+			' TS',
+			'L  '
+		],
+		{
+			L: 'leather',
+			T: 'string',
+			S: 'slimeball',
+			B: 'slime_block'
+		}
+	).id('adj:slime_hook');
+
+	event.shaped(
+		'kubejs:steeleaf_hook',
+		[
+			' SS',
+			' TS',
+			'L  '
+		],
+		{
+			L: 'leather',
+			T: 'string',
+			S: 'twilightforest:steeleaf_ingot',
+		}
+	).id('adj:steeleaf_hook');
+
+	event.shaped(
+		'kubejs:orichalcum_hook',
+		[
+			' IF',
+			' CI',
+			'I  '
+		],
+		{
+			C: 'chain',
+			I: 'mythicmetals:orichalcum_hook',
+			F: 'flint'
+		}
+	).id('adj:orichalcum_hook');
+
+	event.shaped(
+		'kubejs:pixie_hook',
+		[
+			' PD',
+			' MP',
+			'E  '
+		],
+		{
+			E: 'botania:elementium_ingot',
+			M: 'ars_nouveau:magebloom_fiber',
+			P: 'botania:pixie_dust',
+			D: 'botania:dragonstone'
+		}
+	).id('adj:pixie_hook');
+
+
+	event.shapeless(
+		'kubejs:valkyrum_hook',
+		[
+			'kubejs:gravitite_hook',
+			'ancient_aether:valkyrum',
+			'ancient_aether:valkyrum',
+			'ancient_aether:valkyrum',
+			'ancient_aether:valkyrum'
+		]
+	).id('adj:valkyrum_hook');
+
+	event.shaped(
+		'kubejs:adamantite_hook',
+		[
+			' IF',
+			' CI',
+			'I  '
+		],
+		{
+			C: 'chain',
+			I: 'mythicmetals:adamantite_hook',
+			F: 'flint'
+		}
+	).id('adj:adamantite_hook');
 });

@@ -68,12 +68,12 @@
 			image: "adj:textures/texts/chapter_twilight_forest.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: -2.5d
-			y: -4.0d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			height: 6.0d
-			image: "adj:textures/texts/lore_aether.png"
+			image: "adj:textures/texts/lore_twilight_forest.png"
 			rotation: 0.0d
 			width: 12.0d
 			x: -2.5d
@@ -410,8 +410,8 @@
 					value: 1L
 				}
 			]
-			x: -3.0d
-			y: 9.0d
+			x: -3.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6AF57344A6530D2E"]

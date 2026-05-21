@@ -310,7 +310,7 @@ ItemEvents.tooltip(event => {
 				}
 				else if (line.includes('color=blue') && line.includes('unbreakable')) {
 					text.remove(i);
-					text.add(i, Text.of('<neon r=0.66><rainbow f=0.2>Unbreakable</rainbow></neon>'));
+					text.add(i, Text.of('<neon r=0.66><rainbow f=0.2 w=0.0>Unbreakable</rainbow></neon>'));
 					text.add(i, '');
 				}
 			}

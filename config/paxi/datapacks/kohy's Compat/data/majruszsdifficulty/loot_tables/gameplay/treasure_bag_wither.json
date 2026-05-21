@@ -14,6 +14,52 @@
 			]
 		},
 		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kubejs:withering_necklace",
+					"weight": 1,
+					"quality": 4,
+					"functions": [],
+					"conditions": []
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kubejs:wither_rose_ring",
+					"weight": 1,
+					"quality": 4,
+					"functions": [],
+					"conditions": []
+				}
+			],
+			"conditions": [
+				{
+					"condition": "random_chance",
+					"chance": 0.66
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kubejs:chalice_of_blood",
+					"weight": 1,
+					"quality": 5,
+					"functions": [],
+					"conditions": []
+				}
+			],
+			"conditions": [
+				{
+					"condition": "random_chance",
+					"chance": 0.1
+				}
+			]
+		},
+		{
 			"rolls": {
 				"min": 12.0,
 				"max": 16.0,
@@ -40,7 +86,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:wither_skeleton_skull",
+					"name": "kubejs:skull_fragment",
 					"weight": 5,
 					"quality": 3
 				}

@@ -24,6 +24,22 @@
 			]
 		},
 		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kubejs:hook_of_dissonance",
+					"quality": 3,
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
 			"rolls": {
 				"min": 12,
 				"max": 35

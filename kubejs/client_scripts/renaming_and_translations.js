@@ -244,8 +244,6 @@ ClientEvents.lang('en_us', event => {
 		'nethervinery:warped_wine_rack_big': 'Big Warped Wine Rack',
 
 		'twilightdelight:fiery_cooking_pot': 'Twilight-Cooker 9001 (Magma Powered)',
-		'twilightforest:knightmetal_sword': 'Tempered Claymore',
-		'twilightforest:knightmetal_axe': 'Tempered Greataxe',
 	};
 
 	/** @type {Record<Internal.InputItem_, string>} */
@@ -338,6 +336,8 @@ ClientEvents.lang('en_us', event => {
 		'twilightforest:fiery_leggings': 'Molten Leggings',
 		'twilightforest:fiery_boots': 'Molten Boots',
 		'twilightforest:fiery_blood': 'Burning Blood',
+		'twilightforest:knightmetal_sword': 'Tempered Claymore',
+		'twilightforest:knightmetal_axe': 'Tempered Greataxe',
 	};
 
 	const entityRenames = {

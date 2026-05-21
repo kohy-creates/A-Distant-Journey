@@ -350,6 +350,7 @@
 		}
 		{
 			dependencies: ["72165200201BE4B0"]
+			description: ["&7&lHINT:&r The first slot acts as a filter. &6Golden Hoppers&r will only take &lmatching&r items from the inventory block above them."]
 			id: "4BEE6F8968A016D7"
 			subtitle: "...and because of that we have a Golden Hopper"
 			tasks: [{

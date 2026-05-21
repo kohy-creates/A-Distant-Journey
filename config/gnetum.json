@@ -32,9 +32,9 @@
     },
     "tide:cast_overlay": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
-      "pass": 3
+      "pass": 1
     },
     "minecraft:jump_bar": {
       "enabled": {
@@ -46,7 +46,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
+      "pass": 1
     },
     "minecraft:fps_graph": {
       "enabled": {
@@ -58,7 +58,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "patchouli:multiblock_progress": {
       "enabled": {
@@ -76,7 +76,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
+      "pass": 3
     },
     "structure_gel:building_tool_overlay": {
       "enabled": {
@@ -85,6 +85,12 @@
       "pass": 2
     },
     "alexsmobsinteraction:farseer_text": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "aperture_innovations:portal_crosshair": {
       "enabled": {
         "value": "AUTO"
       },
@@ -100,7 +106,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 2
     },
     "treechop:chopping_indicator": {
       "enabled": {
@@ -118,7 +124,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "netherexp:agitated": {
       "enabled": {
@@ -142,7 +148,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 1
     },
     "fairylights:overlay": {
       "enabled": {
@@ -202,7 +208,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
+      "pass": 1
     },
     "ars_nouveau:tooltip": {
       "enabled": {
@@ -296,9 +302,9 @@
     },
     "tide:minigame_overlay": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
-      "pass": 2
+      "pass": 1
     },
     "minecraft:boss_event_progress": {
       "enabled": {
@@ -322,7 +328,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 2
     },
     "create:blueprint": {
       "enabled": {
@@ -388,7 +394,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
+      "pass": 3
     },
     "additionaladditions:additionalspyglass": {
       "enabled": {
@@ -426,6 +432,12 @@
       },
       "pass": 2
     },
+    "nolijium:hud": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "aether_redux:adrenaline_vignette": {
       "enabled": {
         "value": "AUTO"
@@ -454,7 +466,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 3
+      "pass": 2
     },
     "minecraft:spyglass": {
       "enabled": {
@@ -507,6 +519,12 @@
       "pass": 3
     },
     "ruokmod": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "chloride": {
       "enabled": {
         "value": "AUTO"
       },
@@ -566,7 +584,7 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
+      "pass": 1
     },
     "architectury": {
       "enabled": {

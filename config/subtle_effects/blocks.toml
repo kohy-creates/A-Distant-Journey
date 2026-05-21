@@ -62,11 +62,11 @@ sculkVeinSculkDust = true
 sculkShriekerDestroySouls = true
 sculkCatalystDestroySouls = true
 calibratedSculkSensorAmethystSparkle = true
-campfireSizzlingSoundVolume = 0.20261438
+campfireSizzlingSoundVolume = 0.0
 replacePowderSnowFlakes = true
 lavaCauldronEffects = true
 enderEyePlacedRings = true
-enderEyePlacedRingsDuration = 20
+enderEyePlacedRingsDuration = 30
 enderEyePlacedParticlesDisplayType = "BOTH"
 eyeColors = [
     [ "minecraft:ender_eye", { r = 122, g = 186, b = 171 } ]

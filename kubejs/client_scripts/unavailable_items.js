@@ -37,24 +37,29 @@ ClientEvents.tick(event => {
 					const tags = Item.of(item).getTags().toArray();
 
 					let maxChapter = null;
-					let maxException = null;
+					let maxException = 0;
 
 					for (let tag of tags) {
 						let str = tag.toString();
 
 						if (!str.includes('chapter_')) continue;
 
-						let chapter = str.slice(-2, -1);
+						let match = str.match(/chapter_(\d+)/);
+						if (!match) continue;
 
-						if (str.includes('exceptions') && (!maxException || chapter > maxException)) {
+						let chapter = Number(match[1]);
+						let isException = str.includes('exceptions');
+
+						if (isException && (!maxException || chapter > maxException)) {
 							maxException = chapter;
+							if (maxException == 5) break;
 						}
 						else if (!maxChapter || chapter > maxChapter) {
 							maxChapter = chapter;
 						}
 					}
 
-					if (maxChapter && (!maxException || maxChapter != maxException) && UnavailableItems.cache.currentChapter < maxChapter) {
+					if (maxChapter && (maxChapter > maxException) && UnavailableItems.cache.currentChapter < maxChapter) {
 						UnavailableItems.cache.bannedItems.add(String(item));
 					}
 				});

@@ -58,7 +58,7 @@ drowningBubbleAlpha = 0.59738564
 forceDrowningBubblesToColumn = false
 potionRingsDisplayType = "DEFAULT"
 potionRingsParticleType = "BOTH"
-potionRingsScale = 1.1993464
+potionRingsScale = 1.3300654
 potionRingsAlpha = 0.8013072
 NPCsHavePotionRings = true
 
@@ -74,12 +74,12 @@ enableBreathingEffectsInCreative = true
 stomachGrowlingThreshold = 6
 stomachGrowlingVolume = 1.0
 stomachGrowlingWaitTime = 15
-heartBeatingThreshold = 6
+heartBeatingThreshold = 0
 heartbeatVolume = 1.0
 heartBeatingWaitTime = 3
 
 [dustClouds]
-scale = 1.4411764
+scale = 1.3039216
 alpha = 1.0
 preventWhenRaining = false
 flyIntoWall = true

@@ -280,8 +280,8 @@
 			image: "minecraft:item/ender_eye"
 			rotation: 0.0d
 			width: 2.25d
-			x: 9.988095238095276d
-			y: 25.023809523809504d
+			x: 11.0d
+			y: 24.5d
 		}
 		{
 			dependency: "574DD3FD26A23CDE"
@@ -3097,7 +3097,6 @@
 			icon: "rediscovered:red_dragon_egg"
 			icon_scale: 0.75d
 			id: "6D854F2600B922BD"
-			optional: true
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Pour Dragon's Breath onto a Red Dragon Egg and wait for it to hatch"
@@ -4010,7 +4009,7 @@
 			description: [""]
 			icon_scale: 1.15d
 			id: "42307E5368E7BA1C"
-			shape: "octagon"
+			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Fuse all of your collected Eyes back into The Architect's Prism"
 			tasks: [{
@@ -4036,6 +4035,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "circle"
 			subtitle: "Attain maximum possible health by consuming 15 Life Crystals"
 			tasks: [
 				{

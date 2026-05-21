@@ -38,7 +38,7 @@ FTBQuestsEvents.customTask('6A97FDE16BB0CD83', quest => {
 	})
 });
 
-// TwilightAltar
+// Twilight Altar
 FTBQuestsEvents.customReward('62633AC33CC332CB', quest => {
 	quest.setMaxProgress(1);
 	quest.setCheckTimer(3);

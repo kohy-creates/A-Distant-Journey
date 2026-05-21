@@ -24,28 +24,17 @@
 					"type": "minecraft:item",
 					"name": "terra_curio:sun_stone",
 					"quality": 3,
-					"conditions": [
-						{
-							"condition": "random_chance",
-							"chance": 0.75
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "eye",
-			"conditions": [
-				{
-					"condition": "random_chance",
-					"chance": 0.5
-				}
-			],
-			"rolls": 1,
-			"entries": [
+					"conditions": []
+				},
 				{
 					"type": "minecraft:item",
 					"name": "terra_curio:eye_of_the_golem",
+					"weight": 1,
+					"quality": 3
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kubejs:pocketful_of_sunshine",
 					"weight": 1,
 					"quality": 3
 				}
