@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:is_overworld",
+  "biomes": "#kohara:overworld_like",
   "features": "stonycliffs:cliff_feature",
   "step": "underground_decoration"
 }

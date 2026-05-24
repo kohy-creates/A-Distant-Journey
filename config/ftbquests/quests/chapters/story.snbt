@@ -4673,6 +4673,36 @@
 			x: 17.5d
 			y: 6.5d
 		}
+		{
+			dependencies: ["4C1D62C4B13A0CE0"]
+			description: [""]
+			icon: "kubejs:grappling_hook"
+			id: "5A9AE6E82354F04A"
+			subtitle: "Craft a Grappling Hook"
+			tasks: [{
+				id: "60AAD36177785B01"
+				item: "kubejs:grappling_hook"
+				type: "item"
+			}]
+			title: "Hooked!"
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5AEA2A64181AED93"]
+			id: "5E0A9577C42882A7"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Upgrade your Grappling Hook"
+			tasks: [{
+				id: "08429F562E84B160"
+				item: "kubejs:orichalcum_hook"
+				type: "item"
+			}]
+			title: "Hooked! Again..."
+			x: 18.5d
+			y: 0.0d
+		}
 	]
 	title: "Story"
 }

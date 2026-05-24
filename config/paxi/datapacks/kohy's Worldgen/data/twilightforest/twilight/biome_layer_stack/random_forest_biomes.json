@@ -14,7 +14,7 @@
                         "twilightforest:firefly_forest"
                       ],
                       "layer_type": "twilightforest:random_biomes",
-                      "rare_biome_chance": 100,
+                      "rare_biome_chance": 4,
                       "rare_biomes": [
                         "twilightforest:lake",
                         "twilightforest:clearing"

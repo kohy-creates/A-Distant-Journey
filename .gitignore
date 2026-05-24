@@ -131,3 +131,4 @@ config/spark/activity.json
 servers.dat
 servers.dat.old
 config/structurify/structurify_backup_*.json
+.bobby/

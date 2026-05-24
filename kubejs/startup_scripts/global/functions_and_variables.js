@@ -287,3 +287,14 @@ global.amplifyHexColor = function shadeColor(color, percent, noHash) {
 
 	return ((noHash) ? '' : '#') + RR + GG + BB;
 };
+
+/**
+ * What mobs drop what eyes 
+ * @type {Record<Internal.EntityType_, string>} 
+ */
+global.eyeDrops = {
+	'minecraft:wither': 'cinders',
+	'lost_aether_content:aerwhale_king': 'angels',
+	'rediscovered:red_dragon': 'dreams',
+	'cataclysm:ender_guardian': 'desolation'
+};

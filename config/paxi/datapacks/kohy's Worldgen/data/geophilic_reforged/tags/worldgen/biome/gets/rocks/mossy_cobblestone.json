@@ -3,6 +3,7 @@
 	  {
 		"id": "#forge:is_wet",
 		"required": false
-	  }
+	  },
+	  "twilightforest:swamp"
 	]
 }

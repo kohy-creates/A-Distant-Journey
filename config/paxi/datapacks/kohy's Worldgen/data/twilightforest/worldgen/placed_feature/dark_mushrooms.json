@@ -6,6 +6,10 @@
       "heightmap": "WORLD_SURFACE_WG"
     },
     {
+      "type": "rarity_filter",
+      "chance": 2
+    },
+    {
       "type": "minecraft:biome"
     }
   ]

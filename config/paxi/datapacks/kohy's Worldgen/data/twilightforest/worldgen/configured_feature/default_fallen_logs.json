@@ -2,28 +2,28 @@
   "type": "minecraft:random_selector",
   "config": {
     "default": {
-      "feature": "twilightforest:tf_oak_fallen_log",
+      "feature": "kohara:twilight_forest/fallen_log_twilight_oak",
       "placement": []
     },
     "features": [
       {
         "chance": 0.1,
         "feature": {
-          "feature": "twilightforest:birch_fallen_log",
+          "feature": "clifftree:fallen_log_birch",
           "placement": []
         }
       },
       {
         "chance": 0.2,
         "feature": {
-          "feature": "twilightforest:oak_fallen_log",
+          "feature": "clifftree:fallen_log_oak",
           "placement": []
         }
       },
       {
         "chance": 0.4,
         "feature": {
-          "feature": "twilightforest:canopy_fallen_log",
+          "feature": "kohara:twilight_forest/fallen_log_canopy",
           "placement": []
         }
       }

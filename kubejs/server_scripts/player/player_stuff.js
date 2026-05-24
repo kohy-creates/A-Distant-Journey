@@ -629,14 +629,16 @@ EntityEvents.death(event => {
 		}
 
 		// Accessories
-		if (player.isCuriosEquipped('kubejs:kiketsu_card')) {
-			if (Math.random() <= 0.12) {
-				dropItem(global.weightedRandom({
-					'gold_nugget': 100,
-					'iron_nugget': 170,
-					'mythicmetals:copper_nugget': 300,
-					'mythicmetals:tin_nugget': 125,
-				}), 1, 2, victim, 'adj:item.last_laugh.drop_loot', 'neutral', 0.75, 1.0, 'happy_villager');
+		if (player.isAlive()) {
+			if (player.isCuriosEquipped('kubejs:kiketsu_card')) {
+				if (Math.random() <= 0.12) {
+					dropItem(global.weightedRandom({
+						'gold_nugget': 100,
+						'iron_nugget': 170,
+						'mythicmetals:copper_nugget': 300,
+						'mythicmetals:tin_nugget': 125,
+					}), 1, 2, victim, 'adj:item.last_laugh.drop_loot', 'neutral', 0.75, 1.0, 'happy_villager');
+				}
 			}
 		}
 	}

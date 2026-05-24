@@ -7,16 +7,9 @@
     },
     "features": [
       {
-        "chance": 0.25,
+        "chance": 0.5,
         "feature": {
-          "feature": "twilightforest:tree/vanilla_birch_tree",
-          "placement": []
-        }
-      },
-      {
-        "chance": 0.25,
-        "feature": {
-          "feature": "twilightforest:tree/vanilla_oak_tree",
+          "feature": "trees_birch_and_oak",
           "placement": []
         }
       }

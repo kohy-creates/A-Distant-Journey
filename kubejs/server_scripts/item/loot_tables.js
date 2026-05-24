@@ -59,6 +59,8 @@ const replaceItemsMap = {
 	'farmersdelight:canvas': 'xercapaint:item_canvas',
 
 	'aether:skyroot_stick': 'stick',
+
+	'brass_geodes:ruby': 'rediscovered:ruby'
 }
 
 LootJS.modifiers((event) => {
@@ -380,6 +382,14 @@ LootJS.modifiers((event) => {
 			);
 		});
 
+	event.addEntityLootModifier('born_in_chaos_v1:lifestealer_true_form')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('terra_curio:moon_stone')
+					.when(c => c.randomChanceWithLooting(0.5, 0.25))
+			);
+		});
+
 	event.addEntityLootModifier([
 		'wolf',
 		'witherstormmod:sickened_wolf',
@@ -671,6 +681,16 @@ LootJS.modifiers((event) => {
 			);
 		});
 
+	event.addEntityLootModifier('twilightforest:raven')
+		.removeLoot(ItemFilter.ALWAYS_TRUE);
+	event.addEntityLootModifier('alexsmobs:crow')
+		.removeLoot('feather')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('twilightforest:raven_feather').limitCount([0, 1]).applyLootingBonus([0, 1])
+			)
+		});
+
 	// Boss-specific changes
 	global.bossMobs.forEach(boss => {
 		let treasureBag = `kubejs:treasure_bag_${boss.split(':')[1]}`;
@@ -678,7 +698,16 @@ LootJS.modifiers((event) => {
 		if (Item.exists(treasureBag)) {
 			event.addEntityLootModifier(boss).pool(pool => {
 				pool.addLoot(
-					LootEntry.of(treasureBag, { display: { Lore: ['{"text":"Given to every player who battled the boss","italic":false,"color":"gold"}'] } })
+					LootEntry.of(
+						treasureBag,
+						{
+							display: {
+								Lore: [
+									'{"text":"Given to every player who battled the boss","italic":false,"color":"gold"}'
+								]
+							}
+						}
+					)
 				);
 				pool.rolls(0);
 			});
@@ -696,6 +725,27 @@ LootJS.modifiers((event) => {
 					);
 				});
 		}
+	});
+
+	Object.entries(global.eyeDrops).forEach((entityId, eyeId) => {
+		event.addEntityLootModifier(entityId)
+			.pool(pool => {
+				pool.rolls(0);
+				pool.addLoot(
+					LootEntry.of(
+						`kubejs:eye_of_${eyeId}`,
+						{
+							display: {
+								Lore: [
+									'{"text":"Guaranteed to drop on 1st kill","italic":false,"color":"gold"}',
+									'{"text":"20% chance to drop on every next kill","italic":false,"color":"gold"}',
+									'{"text":"(33% in Hardcore mode)","italic":false,"color":"gold"}'
+								]
+							}
+						}
+					)
+				);
+			});
 	});
 
 	event.addLootTableModifier([

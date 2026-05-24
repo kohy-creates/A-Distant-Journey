@@ -762,6 +762,10 @@ const RemovedItems = {
 		'crittersandcompanions:grappling_hook',
 
 		'endergetic:cracked_end_stone_bricks',
+
+		'brass_geodes:ruby',
+		'brass_geodes:pearl',
+		'brass_geodes:ruby_gem_block'
 	]
 };
 

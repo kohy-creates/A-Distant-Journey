@@ -1,0 +1,40 @@
+type = scheduler_instances
+
+scheduler_instance {
+  scheduler_identifier = hud_hunger
+  scheduler_action_script_identifier = a8102d31-921d-4465-add5-af25229fe137-1779478635815
+  scheduler_start_on_launch = true
+  scheduler_start_delay_ms = 0
+  scheduler_tick_delay_ms = 0
+  scheduler_ticks_to_run = 0
+  [executable_action_instance:eb808940-73cf-460c-86ee-b9305b7869eb-1779479000636][action_type:set_variable] = hud.hunger_level:{"placeholder":"calc","values":{"expression":"5 * {"placeholder":"current_player_hunger_saturation"} + {"placeholder":"current_player_hunger_percent"}","decimal":"false"}}
+  [executable_action_instance:2d6a5936-7614-4e1a-b6e5-4ce10c8ee3f1-1779478977875][action_type:set_variable] = hud.hunger_level_color:{"placeholder":"replace_text","values":{"text":"{"placeholder":"math_ceil","values":{"num":"{"placeholder":"calc","values":{"expression":"{"placeholder":"getvariable","values":{"name":"hud.hunger_level"}} / 100","decimal":"true"}}"}}","search":".0","replacement":"","use_regex":"false","replace_all":"true"}}
+  [executable_block:9cf51fcd-58da-4cbd-aee3-ad188c4b4bb6-1779478657230][type:if] = [executables:eb808940-73cf-460c-86ee-b9305b7869eb-1779479000636;2d6a5936-7614-4e1a-b6e5-4ce10c8ee3f1-1779478977875;]
+  [if_executable_block_body:9cf51fcd-58da-4cbd-aee3-ad188c4b4bb6-1779478657230] = a0bf2c2a-46ce-4a18-af91-a236eaea1f9e-1779478646445
+  [loading_requirement_container_meta:a0bf2c2a-46ce-4a18-af91-a236eaea1f9e-1779478646445] = [groups:][instances:a566aa55-25bc-40b9-a6d8-d1643362de9c-1779478648705;22f14ace-3900-4fcc-bec0-992fcf6b96ff-1779478666910;]
+  [loading_requirement:fancymenu_loading_requirement_is_world_loaded][requirement_mode:if][req_id:a566aa55-25bc-40b9-a6d8-d1643362de9c-1779478648705] = 
+  [loading_requirement:fancymenu_visibility_requirement_is_spectator][requirement_mode:if_not][req_id:22f14ace-3900-4fcc-bec0-992fcf6b96ff-1779478666910] = 
+  [if_executable_block_collapsed:9cf51fcd-58da-4cbd-aee3-ad188c4b4bb6-1779478657230] = false
+  [executable_block:a8102d31-921d-4465-add5-af25229fe137-1779478635815][type:generic] = [executables:9cf51fcd-58da-4cbd-aee3-ad188c4b4bb6-1779478657230;]
+}
+
+scheduler_instance {
+  scheduler_identifier = is_nighttime_irl
+  scheduler_action_script_identifier = 0f8c4e59-429d-4557-b0ab-a4d0ecdfa73c-1779535803419
+  scheduler_start_on_launch = true
+  scheduler_start_delay_ms = 0
+  scheduler_tick_delay_ms = 60000
+  scheduler_ticks_to_run = 0
+  [executable_action_instance:6d58a509-3a31-4d18-801d-7eb5a273f420-1779536095889][action_type:set_variable] = pause.is_nighttime_irl:true
+  [executable_block:913f3fa6-0899-43ac-ba18-eddb2608b209-1779535956959][type:if] = [executables:6d58a509-3a31-4d18-801d-7eb5a273f420-1779536095889;][appended:eae49835-0ae7-469a-85c2-07148ab9e7bc-1779536106743]
+  [executable_action_instance:4f4b9a57-e7e6-4daf-a8f3-812c1926b25b-1779536130224][action_type:set_variable] = pause.is_nighttime_irl:false
+  [executable_block:eae49835-0ae7-469a-85c2-07148ab9e7bc-1779536106743][type:else] = [executables:4f4b9a57-e7e6-4daf-a8f3-812c1926b25b-1779536130224;]
+  [if_executable_block_body:913f3fa6-0899-43ac-ba18-eddb2608b209-1779535956959] = 0a331fec-91c3-42c9-be14-ac53eeb76337-1779535808269
+  [loading_requirement_container_meta:0a331fec-91c3-42c9-be14-ac53eeb76337-1779535808269] = [groups:group_1;][instances:]
+  [loading_requirement_group:group_1] = [group_mode:and]
+  [loading_requirement:fancymenu_visibility_requirement_is_number][requirement_mode:if][group:group_1][req_id:b0e802fc-bb35-4762-8834-fda3504d239c-1779535882901] = ["mode":"bigger-than-or-equals","number":"{"placeholder":"realtimehour","values":{"twelve_hour_format":"false","timezone":"system"}}","compare_with":"22"]$
+  [loading_requirement:fancymenu_visibility_requirement_is_number][requirement_mode:if][group:group_1][req_id:05a23574-0c70-45e2-82c4-978cef32babd-1779535914119] = ["mode":"smaller-than","number":"{"placeholder":"realtimehour","values":{"twelve_hour_format":"false","timezone":"system"}}","compare_with":"6"]$
+  [if_executable_block_collapsed:913f3fa6-0899-43ac-ba18-eddb2608b209-1779535956959] = false
+  [executable_block:0f8c4e59-429d-4557-b0ab-a4d0ecdfa73c-1779535803419][type:generic] = [executables:913f3fa6-0899-43ac-ba18-eddb2608b209-1779535956959;]
+}
+

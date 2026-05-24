@@ -32,6 +32,7 @@
     ],
     [],
     [
+      "kohara:twilight_forest/better_stalactite",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -72,7 +73,8 @@
       "twilightforest:default_fallen_logs"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "kohara:twilight_forest/lich_hanging_leaves"
     ]
   ],
   "has_precipitation": true,
@@ -82,13 +84,13 @@
     "axolotls": [],
     "creature": [
       {
-        "type": "twilightforest:bighorn_sheep",
+        "type": "minecraft:sheep",
         "maxCount": 4,
         "minCount": 4,
         "weight": 12
       },
       {
-        "type": "twilightforest:boar",
+        "type": "naturalist:boar",
         "maxCount": 4,
         "minCount": 4,
         "weight": 10
@@ -100,7 +102,7 @@
         "weight": 10
       },
       {
-        "type": "twilightforest:deer",
+        "type": "naturalist:deer",
         "maxCount": 5,
         "minCount": 4,
         "weight": 15
@@ -112,25 +114,13 @@
         "weight": 5
       },
       {
-        "type": "twilightforest:tiny_bird",
-        "maxCount": 8,
-        "minCount": 4,
-        "weight": 15
-      },
-      {
-        "type": "twilightforest:squirrel",
-        "maxCount": 4,
-        "minCount": 2,
-        "weight": 10
-      },
-      {
-        "type": "twilightforest:dwarf_rabbit",
+        "type": "minecraft:rabbit",
         "maxCount": 5,
         "minCount": 4,
         "weight": 10
       },
       {
-        "type": "twilightforest:raven",
+        "type": "alexsmobs:crow",
         "maxCount": 2,
         "minCount": 1,
         "weight": 10

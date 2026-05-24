@@ -4,6 +4,7 @@ const TheCommunityData = {
 
 ItemEvents.tooltip(event => {
 	event.addAdvanced('kubejs:the_community', (item, advanced, text) => {
+		if (!Client.player) return;
 		Client.player.sendData('the_community_info', {});
 
 		const progress = TheCommunityData.bossesKilled / global.bossMobs.length;

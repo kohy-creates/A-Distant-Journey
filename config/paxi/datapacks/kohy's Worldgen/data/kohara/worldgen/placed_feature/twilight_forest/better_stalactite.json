@@ -1,0 +1,33 @@
+{
+	"feature": "kohara:twilight_forest/better_stalactite",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": 8,
+					"max_inclusive": 12
+				}
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"min_inclusive": {
+					"absolute": 4
+				},
+				"max_inclusive": {
+					"absolute": 40
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

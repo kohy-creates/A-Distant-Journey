@@ -23,6 +23,11 @@
     {
       "id": "biomesoplenty:cherry_blossom_grove",
       "required": false
-    }
+    },
+    "twilightforest:forest",
+    "twilightforest:dark_forest",
+    "twilightforest:dense_forest",
+    "twilightforest:firefly_forest",
+    "twilightforest:highlands"
   ]
 }

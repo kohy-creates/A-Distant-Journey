@@ -9,10 +9,10 @@
 	zombieSearchAndDestroyTurtleEggPercentChance = 0
 	#In addition to the timed delay, an additional percent chance to run for task: mob wander pathfinding
 	#Range: > -2147483648
-	mobWanderingPercentChance = 100
+	mobWanderingPercentChance = 80
 	#Delay in ticks between allowed mob wander pathfinds
 	#Range: > -2147483648
-	mobWanderingDelay = 100
+	mobWanderingDelay = 120
 	#If not near a player, the delay in ticks between wander pathfinds are multiplied by this amount
 	#Range: > -2147483648
 	mobWanderingReducedRateMultiplier = 6
@@ -24,5 +24,5 @@
 	playerProximityReducedRateRangeCutoff = 12
 	#How often in ticks we update our check on how close a mob is to a player
 	#Range: > -2147483648
-	playerProximityReducedRatePlayerScanRate = 40
+	playerProximityReducedRatePlayerScanRate = 60
 

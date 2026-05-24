@@ -19,6 +19,7 @@
     {
       "id": "biomesoplenty:highland",
       "required": false
-    }
+    },
+    "twilightforest:clearing"
   ]
 }

@@ -16,3 +16,4 @@ turnOffPotionParticlesV2 = [
 "minecraft:ambient_entity_effect" = 0.2549019607843137
 "minecraft:entity_effect" = 0.25163398692810474
 "majruszsdifficulty:blood" = 0.24509803921568626
+"minecraft:explosion" = 0.33006535947712434

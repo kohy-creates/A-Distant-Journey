@@ -1,9 +1,4 @@
 
-#EmbersTextAPI Server Configuration
-[general]
-	#Enable the welcome message shown to players on first join
-	welcomeMessageEnabled = false
-
 #Player Markup Access
 #Controls which players can use markup tags like <rainbow> in chat
 [markup]
@@ -33,4 +28,9 @@
 	#Maximum number of characters allowed when renaming an item in an anvil. Vanilla default is 50.
 	#Range: > 1
 	anvilNameMaxLength = 50
+
+#EmbersTextAPI Server Configuration
+[general]
+	#Enable the welcome message shown to players on first join
+	welcomeMessageEnabled = true
 

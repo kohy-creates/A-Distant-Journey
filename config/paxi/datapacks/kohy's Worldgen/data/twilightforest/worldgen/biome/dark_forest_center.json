@@ -32,6 +32,7 @@
     [],
     [],
     [
+      "kohara:twilight_forest/better_stalactite",
       "twilightforest:legacy_coal_ore",
       "twilightforest:legacy_iron_ore",
       "twilightforest:legacy_gold_ore",
@@ -48,14 +49,11 @@
     [],
     [
       "minecraft:patch_grass_normal",
-      "twilightforest:tree/selector/dark_forest_tree_mix",
-      "twilightforest:tree/selector/dark_forest_trees",
-      "twilightforest:tree/darkwood_tree",
+      "kohara:twilight_forest/darkwood_tree_center",
       "twilightforest:dark_grass",
       "twilightforest:dark_ferns",
       "twilightforest:dark_mushglooms",
       "twilightforest:dark_dead_bushes",
-      "twilightforest:dark_pumpkins",
       "twilightforest:dark_mushrooms"
     ]
   ],

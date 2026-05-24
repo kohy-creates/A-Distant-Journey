@@ -6,9 +6,9 @@
   "downfall": 0.8,
   "effects": {
     "fog_color": 0,
-    "foliage_color": 3890751,
-    "grass_color": 4941652,
-    "grass_color_modifier": "twilightforest:dark_forest",
+    "foliage_color": 5868592,
+    "grass_color": 3297820,
+    "grass_color_modifier": "dark_forest",
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -33,6 +33,7 @@
     [],
     [],
     [
+      "kohara:twilight_forest/better_stalactite",
       "twilightforest:legacy_coal_ore",
       "twilightforest:legacy_iron_ore",
       "twilightforest:legacy_gold_ore",
@@ -48,17 +49,15 @@
     ],
     [],
     [
-      "twilightforest:flower_placer",
       "minecraft:patch_grass_normal",
-      "twilightforest:tree/selector/dark_forest_tree_mix",
       "twilightforest:tree/selector/dark_forest_trees",
       "twilightforest:tree/darkwood_tree",
       "twilightforest:dark_grass",
       "twilightforest:dark_ferns",
       "twilightforest:dark_mushglooms",
       "twilightforest:dark_dead_bushes",
-      "twilightforest:dark_pumpkins",
-      "twilightforest:dark_mushrooms"
+      "twilightforest:dark_mushrooms",
+      "kohara:twilight_forest/forest_rock/dark_forest"
     ]
   ],
   "has_precipitation": true,
@@ -67,25 +66,17 @@
       "charge": 0.75,
       "energy_budget": 0.15
     },
-    "minecraft:skeleton": {
+    "variantsandventures:verdant": {
       "charge": 0.85,
       "energy_budget": 0.15
     },
-    "minecraft:witch": {
-      "charge": 0.75,
-      "energy_budget": 0.11
-    },
-    "minecraft:zombie": {
+    "variantsandventures:thicket": {
       "charge": 0.75,
       "energy_budget": 0.15
     },
     "twilightforest:king_spider": {
       "charge": 1.0,
       "energy_budget": 0.5
-    },
-    "twilightforest:kobold": {
-      "charge": 0.7,
-      "energy_budget": 0.11
     },
     "twilightforest:mist_wolf": {
       "charge": 0.5,
@@ -109,13 +100,13 @@
         "weight": 2
       },
       {
-        "type": "minecraft:zombie",
+        "type": "variantsandventures:thicket",
         "maxCount": 2,
         "minCount": 1,
         "weight": 5
       },
       {
-        "type": "minecraft:skeleton",
+        "type": "variantsandventures:verdant",
         "maxCount": 2,
         "minCount": 1,
         "weight": 5
@@ -137,18 +128,6 @@
         "maxCount": 1,
         "minCount": 1,
         "weight": 1
-      },
-      {
-        "type": "twilightforest:kobold",
-        "maxCount": 3,
-        "minCount": 1,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:witch",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 2
       }
     ],
     "underground_water_creature": [],

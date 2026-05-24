@@ -2,7 +2,7 @@
   "type": "twilightforest:lampposts",
   "config": {
     "state": {
-      "Name": "twilightforest:cicada_jar",
+      "Name": "twilightforest:firefly_jar",
       "Properties": {
         "waterlogged": "false"
       }

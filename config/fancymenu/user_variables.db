@@ -115,8 +115,14 @@ variable {
 }
 
 variable {
+  name = pause.is_nighttime_irl
+  value = false
+  reset_on_launch = false
+}
+
+variable {
   name = hud.saturation_level
-  value = 25
+  value = 15
   reset_on_launch = false
 }
 

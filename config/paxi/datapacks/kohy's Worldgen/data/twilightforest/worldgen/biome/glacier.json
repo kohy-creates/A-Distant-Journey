@@ -46,7 +46,8 @@
     [],
     [],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "kohara:twilight_forest/ice_spike"
     ]
   ],
   "has_precipitation": true,
@@ -54,14 +55,7 @@
   "spawners": {
     "ambient": [],
     "axolotls": [],
-    "creature": [
-      {
-        "type": "twilightforest:penguin",
-        "maxCount": 4,
-        "minCount": 2,
-        "weight": 10
-      }
-    ],
+    "creature": [],
     "misc": [],
     "monster": [],
     "underground_water_creature": [],

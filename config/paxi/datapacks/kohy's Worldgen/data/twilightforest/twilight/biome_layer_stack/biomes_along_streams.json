@@ -10,10 +10,6 @@
           "twilightforest:glacier"
         ],
         [
-          "twilightforest:mushroom_forest",
-          "twilightforest:dense_mushroom_forest"
-        ],
-        [
           "twilightforest:swamp",
           "twilightforest:fire_swamp"
         ],
@@ -28,9 +24,7 @@
       ],
       "excluded_neighbor_biomes": [
         "twilightforest:lake",
-        "twilightforest:thornlands",
-        "twilightforest:clearing",
-        "twilightforest:oak_savannah"
+        "twilightforest:thornlands"
       ],
       "layer_type": "twilightforest:seam",
       "salt": 1

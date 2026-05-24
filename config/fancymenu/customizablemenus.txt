@@ -69,9 +69,6 @@ net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 com.bisecthosting.mods.bhmenu.modules.publicserverlist.screen.PublicServersScreen {
 }
 
-net.minecraft.client.gui.screens.inventory.InventoryScreen {
-}
-
 com.plr.quitornot.client.screen.confirm.ConfirmScreen {
 }
 
@@ -100,5 +97,8 @@ com.jab125.mpuc.client.gui.screen.changelog.NewChangelogScreen {
 }
 
 net.minecraft.client.gui.screens.DisconnectedScreen {
+}
+
+net.minecraft.client.gui.screens.inventory.InventoryScreen {
 }
 

@@ -1,0 +1,50 @@
+{
+	"feature": "kohara:twilight_forest/bush",
+	"placement": [
+		{
+			"type": "count",
+			"count": 3
+		},
+		{
+			"type": "rarity_filter",
+			"chance": 2
+		},
+		{
+			"type": "heightmap",
+			"heightmap": "WORLD_SURFACE"
+		},
+		{
+			"type": "block_predicate_filter",
+			"predicate": {
+				"type": "all_of",
+				"predicates": [
+					{
+						"type": "would_survive",
+						"state": {
+							"Name": "oak_sapling"
+						},
+						"offset": [
+							0,
+							0,
+							0
+						]
+					},
+					{
+						"type": "matching_blocks",
+						"blocks": [
+							"air"
+						],
+						"offset": [
+							0,
+							0,
+							0
+						]
+					}
+				]
+			}
+		},
+		{
+			"type": "biome"
+		}
+	]
+}

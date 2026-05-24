@@ -38,6 +38,7 @@
     ],
     [],
     [
+      "kohara:twilight_forest/better_stalactite",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -51,7 +52,8 @@
       "twilightforest:legacy_copper_ore",
       "twilightforest:small_andesite",
       "twilightforest:small_diorite",
-      "twilightforest:small_granite"
+      "twilightforest:small_granite",
+      "kohara:twilight_forest/dirt_patch_surface"
     ],
     [
       "twilightforest:plant_roots",
@@ -60,13 +62,12 @@
     ],
     [],
     [
+      "minecraft:glow_lichen",
       "minecraft:patch_grass_forest",
       "minecraft:patch_tall_grass",
       "minecraft:patch_grass_badlands",
       "minecraft:patch_grass_savanna",
-      "minecraft:patch_sugar_cane",
       "twilightforest:tree/hollow_oak",
-      "twilightforest:mayapple",
       "twilightforest:flower_placer_alt",
       "twilightforest:grove_ruins",
       "twilightforest:foundation",
@@ -79,10 +80,16 @@
       "twilightforest:tree/twilight_oak_tree",
       "twilightforest:tree/large_twilight_oak_tree",
       "twilightforest:tree/selector/canopy_trees",
-      "twilightforest:default_fallen_logs"
+      "twilightforest:default_fallen_logs",
+      "minecraft:forest_flowers",
+      "clifftree:forest_fern",
+      "kohara:twilight_forest/bush",
+      "kohara:twilight_forest/seagrass_global",
+      "twilightforest:huge_lily_pad"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "kohara:twilight_forest/lich_hanging_leaves"
     ]
   ],
   "has_precipitation": true,
@@ -92,13 +99,13 @@
     "axolotls": [],
     "creature": [
       {
-        "type": "twilightforest:bighorn_sheep",
+        "type": "minecraft:sheep",
         "maxCount": 4,
         "minCount": 4,
         "weight": 12
       },
       {
-        "type": "twilightforest:boar",
+        "type": "naturalist:boar",
         "maxCount": 4,
         "minCount": 4,
         "weight": 10
@@ -110,7 +117,7 @@
         "weight": 10
       },
       {
-        "type": "twilightforest:deer",
+        "type": "naturalist:deer",
         "maxCount": 5,
         "minCount": 4,
         "weight": 15
@@ -122,25 +129,13 @@
         "weight": 5
       },
       {
-        "type": "twilightforest:tiny_bird",
-        "maxCount": 8,
-        "minCount": 4,
-        "weight": 15
-      },
-      {
-        "type": "twilightforest:squirrel",
-        "maxCount": 4,
-        "minCount": 2,
-        "weight": 10
-      },
-      {
-        "type": "twilightforest:dwarf_rabbit",
+        "type": "minecraft:rabbit",
         "maxCount": 5,
         "minCount": 4,
         "weight": 10
       },
       {
-        "type": "twilightforest:raven",
+        "type": "alexsmobs:crow",
         "maxCount": 2,
         "minCount": 1,
         "weight": 10

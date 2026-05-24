@@ -5,10 +5,10 @@
     "twilightforest:progress_lich"
   ],
   "allow_biome_surface_decorations": true,
-  "allow_biome_underground_decorations": false,
+  "allow_biome_underground_decorations": true,
   "ambient_spawns": [],
   "biomes": "#twilightforest:valid_yeti_cave_biomes",
-  "chunk_clearance_radius": 2,
+  "chunk_clearance_radius": 3,
   "hint_item": {
     "Count": 1,
     "id": "minecraft:written_book",
@@ -29,7 +29,7 @@
     "0": [
       {
         "type": "twilightforest:yeti",
-        "maxCount": 2,
+        "maxCount": 1,
         "minCount": 1,
         "weight": 5
       }

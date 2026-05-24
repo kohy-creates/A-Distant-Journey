@@ -19,7 +19,9 @@
 		{
 			"id": "minecraft:windswept_hills",
 			"required": false
-		}
+		},
+		"twilightforest:clearing",
+		"twilightforest:highlands"
 	],
 	"replace": true
 }

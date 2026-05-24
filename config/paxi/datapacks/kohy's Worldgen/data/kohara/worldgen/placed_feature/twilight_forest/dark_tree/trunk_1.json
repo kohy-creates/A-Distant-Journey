@@ -1,0 +1,11 @@
+{
+	"feature": "kohara:twilight_forest/dark_tree/trunk",
+	"placement": [
+		{
+			"type": "lithostitched:offset",
+			"x_offset": 1,
+			"y_offset": 0,
+			"z_offset": 0
+		}
+	]
+}

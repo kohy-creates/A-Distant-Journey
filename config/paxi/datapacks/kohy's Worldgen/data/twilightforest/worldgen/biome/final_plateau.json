@@ -28,7 +28,7 @@
     "axolotls": [],
     "creature": [
       {
-        "type": "twilightforest:raven",
+        "type": "alexsmobs:crow",
         "maxCount": 4,
         "minCount": 4,
         "weight": 10

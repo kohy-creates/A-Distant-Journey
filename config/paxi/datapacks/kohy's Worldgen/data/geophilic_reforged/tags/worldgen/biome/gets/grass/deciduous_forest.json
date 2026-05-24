@@ -7,6 +7,8 @@
     {
       "id": "biomesoplenty:old_growth_woodland",
       "required": false
-    }
+    },
+    "twilightforest:forest",
+    "twilightforest:firefly_forest"
   ]
 }

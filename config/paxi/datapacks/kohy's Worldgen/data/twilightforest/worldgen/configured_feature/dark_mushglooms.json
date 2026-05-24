@@ -1,15 +1,26 @@
 {
-  "type": "twilightforest:dark_forest_placer",
+  "type": "flower",
   "config": {
     "feature": {
       "feature": {
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "twilightforest:mushgloom"
-            }
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 14,
+                "data": {
+                  "Name": "twilightforest:mushgloom"
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "Name": "twilightdelight:mushgloom_colony"
+                }
+              }
+            ]
           }
         }
       },

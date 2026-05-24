@@ -44,9 +44,9 @@
 		#Remove the fish's random swimming pathfinder. This will cause fish to stay in position more often.
 		remove_swim = false
 		#Remove the fish's panic pathfinder. This will cause fish to not run away.
-		remove_panic = false
+		remove_panic = true
 		#Remove the fish's AI task to avoid players.
-		remove_avoid_player = false
+		remove_avoid_player = true
 		#Remove the fish's AI task to follow a leader fish to act as a group of fish.
 		remove_follow_leader = false
 		#Remove the fish's AI task to puff up when entities are nearby
@@ -55,9 +55,9 @@
 	#Squid Fish
 	[entity.squid]
 		#Remove the squid's flee pathfinder. This will cause squid to not run away.
-		remove_flee = false
+		remove_flee = true
 		#Remove the squid's random movement pathfinder. This will cause squid to swim around randomly.
-		remove_random_move = false
+		remove_random_move = true
 
 	#Cow
 	[entity.cow]

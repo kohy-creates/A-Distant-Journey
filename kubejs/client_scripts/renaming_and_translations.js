@@ -338,6 +338,13 @@ ClientEvents.lang('en_us', event => {
 		'twilightforest:fiery_blood': 'Burning Blood',
 		'twilightforest:knightmetal_sword': 'Tempered Claymore',
 		'twilightforest:knightmetal_axe': 'Tempered Greataxe',
+		'twilightforest:raven_feather': 'Crow Feather',
+
+		'majruszsdifficulty:wither_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Wither Treasure Bag</neon></rainbow>',
+		'majruszsdifficulty:warden_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Warden Treasure Bag</neon></rainbow>',
+		'majruszsdifficulty:ender_dragon_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Ender Dragon Treasure Bag</neon></rainbow>',
+		'majruszsdifficulty:raid_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Raid Treasure Bag</neon></rainbow>',
+		'majruszsdifficulty:fishing_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Fishing Treasure Bag</neon></rainbow>',
 	};
 
 	const entityRenames = {

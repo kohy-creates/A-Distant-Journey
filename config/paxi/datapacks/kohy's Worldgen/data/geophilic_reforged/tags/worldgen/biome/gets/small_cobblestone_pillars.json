@@ -15,6 +15,7 @@
     {
       "id": "biomesoplenty:rainforest",
       "required": false
-    }
+    },
+    "twilightforest:firefly_forest"
   ]
 }

@@ -13,8 +13,37 @@
       }
     },
     "check_water": false,
-    "decorators": [],
-    "has_leaves": false,
+    "decorators": [
+      {
+        "type": "minecraft:attached_to_leaves",
+        "probability": 0.45,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "block_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "twilightforest:twilight_oak_leaves"
+          }
+        },
+        "directions": [
+          "down",
+          "up",
+          "north",
+          "east",
+          "south",
+          "west"
+        ]
+      },
+      {
+        "type": "minecraft:trunk_vine"
+      },
+      {
+        "type": "minecraft:leave_vine",
+        "probability": 0.15
+      }
+    ],
+    "has_leaves": true,
     "leaves_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
@@ -26,7 +55,7 @@
         }
       }
     },
-    "minimum_size": 0,
+    "minimum_size": 10,
     "roots_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {

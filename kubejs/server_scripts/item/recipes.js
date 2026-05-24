@@ -416,7 +416,8 @@ ServerEvents.recipes((event) => {
 			'alexscaves:sulfur_dust': 'hybrid-aquatic:sulfur',
 			'crittersandcompanions:pearl': 'hybrid-aquatic:pearl',
 			'twilightforest:transformation_powder': 'botania:mana_powder',
-			'ars_elemental:anima_essence': 'kubejs:rune_life'
+			'ars_elemental:anima_essence': 'kubejs:rune_life',
+			'brass_geodes:ruby': 'rediscovered:ruby'
 		},
 		output: {
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
@@ -1128,6 +1129,11 @@ ServerEvents.recipes((event) => {
 
 	skylandsWarping('cherry_sapling', 'rediscovered:ancient_cherry_sapling');
 	skylandsWarping('cherry_leaves', 'rediscovered:ancient_cherry_leaves');
+
+	event.replaceInput({ output: /brass_geodes:.*tinted_glass.*/ },
+		'glass',
+		'tinted_glass'
+	);
 
 	event.shaped(
 		'50x architects_palette:unobtanium_block',
@@ -7184,7 +7190,7 @@ ServerEvents.recipes((event) => {
 		'iron_ingot',
 	], 'terra_curio:lucky_horseshoe')
 
-	bloodInfuserRecipe('terra_curio:sun_stone', 'terra_curio:moon_stone', 35000, 2, 900, 3, 'curio/moon_stone');
+	// bloodInfuserRecipe('terra_curio:sun_stone', 'terra_curio:moon_stone', 35000, 2, 900, 3, 'curio/moon_stone');
 
 	workshopRecipe([
 		'2x glass',
@@ -8771,7 +8777,7 @@ ServerEvents.recipes((event) => {
 			S: 'ars_nouveau:magebloom_fiber',
 			A: 'botania:manasteel_ingot',
 			F: 'flint',
-			V: 'vines'
+			V: 'vine'
 		}
 	).id('adj:ivy_whip');
 
@@ -8785,7 +8791,7 @@ ServerEvents.recipes((event) => {
 		{
 			L: 'leather',
 			T: 'string',
-			S: 'slimeball',
+			S: 'slime_ball',
 			B: 'slime_block'
 		}
 	).id('adj:slime_hook');
@@ -8812,8 +8818,8 @@ ServerEvents.recipes((event) => {
 			'I  '
 		],
 		{
-			C: 'chain',
-			I: 'mythicmetals:orichalcum_hook',
+			C: 'kubejs:grappling_hook',
+			I: 'mythicmetals:orichalcum_ingot',
 			F: 'flint'
 		}
 	).id('adj:orichalcum_hook');

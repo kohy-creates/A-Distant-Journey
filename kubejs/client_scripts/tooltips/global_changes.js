@@ -99,8 +99,8 @@ ItemEvents.tooltip(event => {
 		/crockery_combo/,
 		/handcrafted:.*cushion/,
 		/handcrafted:.*sheet/,
-		/wallpapers:.*wallpaper_roll$/,
-		/wallpapers:.*skirting_board$/,
+		// /wallpapers:.*wallpaper_roll$/,
+		// /wallpapers:.*skirting_board$/,
 	], (item, advanced, text) => {
 
 		let startPos = 0;
