@@ -162,12 +162,12 @@ StartupEvents.registry('mob_effect', registry => {
 			'44a47d78-e4ed-4d3a-96c4-43ecbdfc4332',
 			0.6,
 			'multiply_base'
-		)
-		.modifyAttribute(
-			'additionalentityattributes:player.water_visibility',
-			'44a47d78-e4ed-4d3a-96c4-43ecbdfc4332',
-			0.75,
-			'multiply_base'
+			// )
+			// .modifyAttribute(
+			// 	'additionalentityattributes:player.water_visibility',
+			// 	'44a47d78-e4ed-4d3a-96c4-43ecbdfc4332',
+			// 	0.75,
+			// 	'multiply_base'
 		);
 
 	registry.create('werewolf_form')

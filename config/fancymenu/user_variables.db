@@ -116,7 +116,7 @@ variable {
 
 variable {
   name = pause.is_nighttime_irl
-  value = false
+  value = true
   reset_on_launch = false
 }
 

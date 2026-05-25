@@ -20,7 +20,9 @@
     "water_fog_color": 329011
   },
   "features": [
-    [],
+    [
+      "kohara:twilight_forest/final_plateau_spike"
+    ],
     [],
     [],
     [],

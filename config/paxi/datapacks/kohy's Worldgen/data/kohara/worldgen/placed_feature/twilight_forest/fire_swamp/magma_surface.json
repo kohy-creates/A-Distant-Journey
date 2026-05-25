@@ -1,0 +1,25 @@
+{
+	"feature": "kohara:twilight_forest/fire_swamp/magma_surface",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 24,
+			"noise_factor": 90,
+			"noise_offset": -0.43
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

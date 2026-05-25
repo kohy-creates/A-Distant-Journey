@@ -2,7 +2,7 @@
   "type": "twilightforest:knight_stronghold",
   "adjust_structure_elevation": false,
   "advancements_required": [
-    "twilightforest:progress_trophy_pedestal"
+    "adj:twilight_forest/part_2"
   ],
   "allow_biome_surface_decorations": true,
   "allow_biome_underground_decorations": false,

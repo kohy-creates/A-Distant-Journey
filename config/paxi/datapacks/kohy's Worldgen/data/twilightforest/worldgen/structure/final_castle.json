@@ -2,7 +2,7 @@
   "type": "twilightforest:final_castle",
   "adjust_structure_elevation": false,
   "advancements_required": [
-    "twilightforest:progress_troll"
+    "adj:twilight_forest/part_4_75"
   ],
   "allow_biome_surface_decorations": false,
   "allow_biome_underground_decorations": true,

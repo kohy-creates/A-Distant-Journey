@@ -2,7 +2,7 @@
   "type": "twilightforest:lich_tower",
   "adjust_structure_elevation": true,
   "advancements_required": [
-    "twilightforest:progress_naga"
+    "adj:twilight_forest/part_1"
   ],
   "allow_biome_surface_decorations": false,
   "allow_biome_underground_decorations": true,

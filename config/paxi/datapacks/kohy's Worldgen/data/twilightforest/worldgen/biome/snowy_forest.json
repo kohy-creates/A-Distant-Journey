@@ -51,7 +51,8 @@
     [],
     [
       "twilightforest:tree/selector/snowy_forest_trees",
-      "twilightforest:spruce_fallen_log"
+      "clifftree:fallen_log_spruce",
+      "clifftree:powder_snow_disk"
     ],
     [
       "twilightforest:snow_under_trees",
@@ -70,18 +71,18 @@
         "type": "twilightforest:winter_wolf",
         "maxCount": 1,
         "minCount": 1,
-        "weight": 5
+        "weight": 15
       },
       {
         "type": "twilightforest:yeti",
         "maxCount": 1,
         "minCount": 1,
-        "weight": 5
+        "weight": 10
       }
     ],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.09
+  "temperature": -0.2
 }

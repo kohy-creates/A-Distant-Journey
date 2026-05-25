@@ -23,7 +23,7 @@
       "options": {
         "type": "minecraft:white_ash"
       },
-      "probability": 0.05
+      "probability": 0.025
     },
     "sky_color": 2105930,
     "water_color": 7089196,
@@ -32,7 +32,9 @@
   "features": [
     [],
     [
-      "twilightforest:lava_lake"
+      "twilightforest:lava_lake",
+      "kohara:twilight_forest/fire_swamp/delta",
+      "kohara:twilight_forest/fire_swamp/magma_surface"
     ],
     [],
     [],
@@ -53,7 +55,8 @@
       "twilightforest:legacy_copper_ore",
       "twilightforest:small_andesite",
       "twilightforest:small_diorite",
-      "twilightforest:small_granite"
+      "twilightforest:small_granite",
+      "kohara:twilight_forest/fire_swamp/ore_magma"
     ],
     [
       "twilightforest:plant_roots",
@@ -64,21 +67,12 @@
     [
       "minecraft:patch_grass_forest",
       "minecraft:patch_tall_grass",
-      "minecraft:patch_grass_badlands",
-      "minecraft:patch_grass_savanna",
-      "minecraft:patch_sugar_cane",
-      "twilightforest:tree/hollow_oak",
-      "twilightforest:stone_circle",
       "twilightforest:outside_stalagmite",
       "twilightforest:monolith",
-      "twilightforest:hollow_stump",
-      "twilightforest:hollow_log",
-      "twilightforest:tree/swampy_oak_tree",
       "twilightforest:fire_jet",
       "twilightforest:smoker",
-      "minecraft:patch_sugar_cane_swamp",
       "minecraft:vines",
-      "minecraft:brown_mushroom_swamp"
+      "kohara:twilight_forest/fire_swamp/fire_patch"
     ],
     [
       "minecraft:freeze_top_layer"

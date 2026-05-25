@@ -1,12 +1,12 @@
 {
 	"advancements": [
-		"adj:twilight_forest/blank"
+		"adj:twilight_forest/part_4_75"
 	],
 	"enforcement": "twilightforest:darkness",
 	"locked_biome_toast": {
 		"Count": 1,
 		"id": "dirt"
 	},
-	"multiplier": 0.0,
+	"multiplier": 1.0,
 	"structure_key": ""
 }

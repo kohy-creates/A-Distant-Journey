@@ -2,7 +2,7 @@
   "type": "twilightforest:dark_tower",
   "adjust_structure_elevation": true,
   "advancements_required": [
-    "twilightforest:progress_knights"
+    "adj:twilight_forest/part_2_75"
   ],
   "allow_biome_surface_decorations": false,
   "allow_biome_underground_decorations": true,

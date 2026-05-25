@@ -61,11 +61,11 @@
 			"base_height": 14,
 			"branch_config": {
 				"count_minimum": 4,
-				"downwards_pitch": 0.6,
-				"length": 10.0,
+				"downwards_pitch": 0.2,
+				"length": 11.0,
 				"random_add_count": 2,
-				"random_add_length": 7.0,
-				"spacing_yaw": 0.5
+				"random_add_length": 5.0,
+				"spacing_yaw": 0.215
 			},
 			"branch_start_offset_down": 8,
 			"height_rand_a": 1,

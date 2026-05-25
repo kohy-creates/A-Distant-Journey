@@ -57,9 +57,11 @@
       "twilightforest:hollow_stump",
       "twilightforest:hollow_log",
       "twilightforest:tree/selector/highlands_trees",
-      "minecraft:forest_rock",
+      "kohara:twilight_forest/forest_rock/highlands",
       "minecraft:patch_grass_taiga",
-      "twilightforest:spruce_fallen_log"
+      "clifftree:fallen_log_spruce",
+      "twilightforest:tree/twilight_oak_tree",
+      "twilightforest:lamppost_placer"
     ]
   ],
   "has_precipitation": true,

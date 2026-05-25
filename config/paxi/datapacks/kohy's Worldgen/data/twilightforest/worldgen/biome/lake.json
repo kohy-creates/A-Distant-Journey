@@ -43,7 +43,10 @@
     [],
     [
       "minecraft:seagrass_deep",
-      "minecraft:seagrass_simple"
+      "minecraft:seagrass_simple",
+      "kelp_cold",
+      "twilightforest:huge_lily_pad",
+      "twilightforest:huge_water_lily"
     ],
     [
       "minecraft:freeze_top_layer"

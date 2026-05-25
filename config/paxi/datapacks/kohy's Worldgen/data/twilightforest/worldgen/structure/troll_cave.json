@@ -2,7 +2,7 @@
   "type": "twilightforest:troll_cave",
   "adjust_structure_elevation": false,
   "advancements_required": [
-    "twilightforest:progress_merge"
+    "adj:twilight_forest/part_4_5"
   ],
   "allow_biome_surface_decorations": true,
   "allow_biome_underground_decorations": true,

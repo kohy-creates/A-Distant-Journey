@@ -2,7 +2,7 @@
   "type": "twilightforest:yeti_cave",
   "adjust_structure_elevation": false,
   "advancements_required": [
-    "twilightforest:progress_lich"
+    "adj:twilight_forest/part_3"
   ],
   "allow_biome_surface_decorations": true,
   "allow_biome_underground_decorations": true,
@@ -26,14 +26,7 @@
   },
   "hint_mob": "twilightforest:kobold",
   "labelled_monster_spawns": {
-    "0": [
-      {
-        "type": "twilightforest:yeti",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
-      }
-    ]
+    "0": []
   },
   "spawn_overrides": {
     "ambient": {

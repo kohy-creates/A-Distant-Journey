@@ -343,7 +343,7 @@ global.setBonusMap = {
 			'Grants extra 10 seconds of underwater breathing'
 		],
 		effects: [
-			{ type: 'attribute', value: { id: 'additionalentityattributes:player.water_visibility', value: 0.7, operation: 'multiply_base' } }
+			// { type: 'attribute', value: { id: 'additionalentityattributes:player.water_visibility', value: 0.7, operation: 'multiply_base' } }
 		]
 	},
 	'mythicmetals:tidesinger': {
@@ -352,7 +352,7 @@ global.setBonusMap = {
 			'Grants extra 30 seconds of underwater breathing'
 		],
 		effects: [
-			{ type: 'attribute', value: { id: 'additionalentityattributes:player.water_visibility', value: 1.6, operation: 'multiply_base' } }
+			// { type: 'attribute', value: { id: 'additionalentityattributes:player.water_visibility', value: 1.6, operation: 'multiply_base' } }
 		]
 	},
 	'aether:neptune': {
@@ -362,7 +362,7 @@ global.setBonusMap = {
 			'Grants extra 80 seconds of underwater breathing'
 		],
 		effects: [
-			{ type: 'attribute', value: { id: 'additionalentityattributes:player.water_visibility', value: 2.0, operation: 'multiply_base' } },
+			// { type: 'attribute', value: { id: 'additionalentityattributes:player.water_visibility', value: 2.0, operation: 'multiply_base' } },
 			{ type: 'attribute', value: { id: 'forge:swim_speed', value: 0.5, operation: 'multiply_total' } }
 		]
 	},

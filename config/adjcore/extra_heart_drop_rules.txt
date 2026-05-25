@@ -21,7 +21,7 @@ twilightforest:naga/5-9/1
 twilightforest:lich/5-9/1
 twilightforest:minoshroom/5-9/1
 twilightforest:hydra/5-9/1
-twilightforest:knight_phantom/5-9/1
+twilightforest:knight_phantom/1/1
 twilightforest:ur_ghast/5-9/1
 twilightforest:alpha_yeti/5-9/1
 twilightforest:snow_queen/5-9/1

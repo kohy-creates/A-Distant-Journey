@@ -7,13 +7,6 @@
     },
     "features": [
       {
-        "chance": 0.25,
-        "feature": {
-          "feature": "minecraft:spruce",
-          "placement": []
-        }
-      },
-      {
         "chance": 0.1,
         "feature": {
           "feature": "minecraft:pine",

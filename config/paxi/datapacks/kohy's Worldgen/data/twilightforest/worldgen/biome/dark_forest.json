@@ -50,7 +50,6 @@
     [],
     [
       "minecraft:patch_grass_normal",
-      "twilightforest:tree/selector/dark_forest_trees",
       "twilightforest:tree/darkwood_tree",
       "twilightforest:dark_grass",
       "twilightforest:dark_ferns",
@@ -63,14 +62,6 @@
   "has_precipitation": true,
   "spawn_costs": {
     "minecraft:enderman": {
-      "charge": 0.75,
-      "energy_budget": 0.15
-    },
-    "variantsandventures:verdant": {
-      "charge": 0.85,
-      "energy_budget": 0.15
-    },
-    "variantsandventures:thicket": {
       "charge": 0.75,
       "energy_budget": 0.15
     },
@@ -98,18 +89,6 @@
         "maxCount": 2,
         "minCount": 1,
         "weight": 2
-      },
-      {
-        "type": "variantsandventures:thicket",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 5
-      },
-      {
-        "type": "variantsandventures:verdant",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 5
       },
       {
         "type": "twilightforest:mist_wolf",

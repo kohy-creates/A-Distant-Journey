@@ -23,7 +23,8 @@
       "blocks": [
         "minecraft:podzol",
         "minecraft:coarse_dirt",
-        "minecraft:dirt"
+        "minecraft:dirt",
+        "grass_block"
       ]
     }
   }

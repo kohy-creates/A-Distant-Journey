@@ -490,10 +490,10 @@ global.armorOverrides = {
 			values: [0, 0.05, 0.3, 0.35],
 			operation: 'multiply_base'
 		},
-		'additionalentityattributes:player.water_visibility': {
-			values: [0.25, 0, 0, 0],
-			operation: 'multiply_base'
-		}
+		// 'additionalentityattributes:player.water_visibility': {
+		// 	values: [0.25, 0, 0, 0],
+		// 	operation: 'multiply_base'
+		// }
 	},
 	'mythicmetals:aquarium': {
 		'generic.armor': {
@@ -503,10 +503,10 @@ global.armorOverrides = {
 			values: [0, 0.05, 0.1, 0.15],
 			operation: 'multiply_base'
 		},
-		'additionalentityattributes:player.water_visibility': {
-			values: [0, 0, 0, 0],
-			operation: 'multiply_base'
-		},
+		// 'additionalentityattributes:player.water_visibility': {
+		// 	values: [0, 0, 0, 0],
+		// 	operation: 'multiply_base'
+		// },
 	},
 	'cataclysm:bone_reptile': {
 		'generic.armor': {
@@ -587,9 +587,9 @@ global.armorOverrides = {
 		'doublejumpattribute:doublejumpattribute': {
 			values: [0, 0, 1, 0]
 		},
-		'additionalentityattributes:generic.magic_protection': {
-			values: [0, 0, 0, 0]
-		}
+		// 'additionalentityattributes:generic.magic_protection': {
+		// 	values: [0, 0, 0, 0]
+		// }
 	},
 	'aether:gravitite': {
 		'generic.armor': {
@@ -608,10 +608,10 @@ global.armorOverrides = {
 			values: [0, 0.15, 0.4, 0.45],
 			operation: 'multiply_base'
 		},
-		'additionalentityattributes:player.water_visibility': {
-			values: [0.5, 0, 0, 0],
-			operation: 'multiply_base'
-		}
+		// 'additionalentityattributes:player.water_visibility': {
+		// 	values: [0.5, 0, 0, 0],
+		// 	operation: 'multiply_base'
+		// }
 	},
 	'ancient_aether:valkyrum': {
 		'generic.armor': {

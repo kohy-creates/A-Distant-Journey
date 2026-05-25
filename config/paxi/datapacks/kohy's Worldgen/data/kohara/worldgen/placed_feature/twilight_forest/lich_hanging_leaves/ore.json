@@ -11,7 +11,12 @@
 						"to_place": {
 							"type": "minecraft:simple_state_provider",
 							"state": {
-								"Name": "minecraft:oak_leaves"
+								"Name": "minecraft:oak_leaves",
+								"Properties": {
+									"distance": "7",
+									"persistent": "true",
+									"waterlogged": "false"
+								}
 							}
 						}
 					},

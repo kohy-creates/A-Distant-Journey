@@ -1,12 +1,12 @@
 {
 	"advancements": [
-		"adj:twilight_forest/part_3"
+		"adj:twilight_forest/part_3_5"
 	],
 	"enforcement": "twilightforest:darkness",
 	"locked_biome_toast": {
 		"Count": 1,
 		"id": "dirt"
 	},
-	"multiplier": 0.0,
-	"structure_key": ""
+	"multiplier": 1.0,
+	"structure_key": "twilightforest:yeti_cave"
 }

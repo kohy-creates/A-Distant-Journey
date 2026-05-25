@@ -209,6 +209,10 @@
 			"count": 2
 		},
 		{
+			"type": "rarity_filter",
+			"chance": 4
+		},
+		{
 			"type": "in_square"
 		},
 		{

@@ -35,7 +35,7 @@ global.hpModifications = {
 	'twilightforest:lich': [1100, 15, 5],
 	'twilightforest:minoshroom': [1200, 19, 0],
 	'twilightforest:hydra': [1750, 30, 10],
-	'twilightforest:knight_phantom': [1300, 15, 5],
+	'twilightforest:knight_phantom': [200, 15, 10],
 	'twilightforest:ur_ghast': [1600, 15, 10],
 	'twilightforest:alpha_yeti': [2400, 40, 0],
 	'twilightforest:snow_queen': [3000, 65, 0],
@@ -1044,7 +1044,6 @@ global.bossMobsAddTreasureBag = [
 	'twilightforest:lich', // Might as Well Stake Your Life to Solve the Riddle
 	'twilightforest:minoshroom', // A Pair of Divine Beasts
 	'twilightforest:hydra', // Smoking Dragon
-	'twilightforest:knight_phantom', // The Path to Yomi Where None Turn Back
 	'twilightforest:ur_ghast', // Pure Furies
 	'twilightforest:alpha_yeti', // There's a Monster In The Woods
 	'twilightforest:snow_queen', // Hoshifuru Tenma no Yama (I forgot the English title lmao)
@@ -1055,6 +1054,7 @@ global.bossMobsNoTreasureBag = [
 	'witherstormmod:command_block', // Fire's of Hokkai (when approaching), Because I'm Used to Being the Last One Left (WBaWC mix I found on youtube) (while fighting)
 	'witherstormmod:wither_storm', // No boss music
 	'witherstormmod:withered_symbiont', // Reminiscence of Deer-Hunting
+	'twilightforest:knight_phantom', // The Path to Yomi Where None Turn Back
 ];
 
 

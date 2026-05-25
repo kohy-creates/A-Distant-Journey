@@ -2,7 +2,7 @@
   "type": "twilightforest:hydra_lair",
   "adjust_structure_elevation": false,
   "advancements_required": [
-    "twilightforest:progress_labyrinth"
+    "adj:twilight_forest/part_2_5"
   ],
   "allow_biome_surface_decorations": false,
   "allow_biome_underground_decorations": false,

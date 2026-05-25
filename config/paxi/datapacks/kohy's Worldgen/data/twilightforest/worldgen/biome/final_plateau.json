@@ -20,7 +20,11 @@
     "water_color": 4159204,
     "water_fog_color": 329011
   },
-  "features": [],
+  "features": [
+    [
+      "kohara:twilight_forest/final_plateau_spike"
+    ]
+  ],
   "has_precipitation": true,
   "spawn_costs": {},
   "spawners": {

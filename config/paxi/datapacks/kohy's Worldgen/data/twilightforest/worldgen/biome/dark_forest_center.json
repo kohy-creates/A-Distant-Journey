@@ -29,7 +29,9 @@
     [],
     [],
     [],
-    [],
+    [
+      "kohara:twilight_forest/dark_forest_center/dirt_deltas"
+    ],
     [],
     [
       "kohara:twilight_forest/better_stalactite",
@@ -49,7 +51,7 @@
     [],
     [
       "minecraft:patch_grass_normal",
-      "kohara:twilight_forest/darkwood_tree_center",
+      "kohara:twilight_forest/dark_forest_center/trees",
       "twilightforest:dark_grass",
       "twilightforest:dark_ferns",
       "twilightforest:dark_mushglooms",

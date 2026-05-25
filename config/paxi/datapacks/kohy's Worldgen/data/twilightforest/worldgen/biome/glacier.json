@@ -1,6 +1,9 @@
 {
   "carvers": {
-    "air": "twilightforest:tf_caves"
+    "air": [
+      "twilightforest:tf_caves",
+      "kohara:tf_glacier_cave"
+    ]
   },
   "creature_spawn_probability": 0.2,
   "downfall": 0.1,
@@ -47,7 +50,8 @@
     [],
     [
       "minecraft:freeze_top_layer",
-      "kohara:twilight_forest/ice_spike"
+      "kohara:twilight_forest/ice_spike",
+      "blue_ice"
     ]
   ],
   "has_precipitation": true,

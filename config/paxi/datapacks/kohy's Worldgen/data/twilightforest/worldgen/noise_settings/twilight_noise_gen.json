@@ -60,6 +60,60 @@
         }
       },
       {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
+            "twilightforest:dark_forest_center"
+          ]
+        },
+        "then_run": {
+          "type": "condition",
+          "if_true": {
+            "type": "stone_depth",
+            "add_surface_depth": true,
+            "offset": 0,
+            "secondary_depth_range": 0,
+            "surface_type": "floor"
+          },
+          "then_run": {
+            "type": "sequence",
+            "sequence": [
+              {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:noise_threshold",
+                  "max_threshold": 0.41,
+                  "min_threshold": 0.21212121212121213,
+                  "noise": "minecraft:surface"
+                },
+                "then_run": {
+                  "type": "minecraft:block",
+                  "result_state": {
+                    "Name": "minecraft:netherrack"
+                  }
+                }
+              },
+              {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:noise_threshold",
+                  "max_threshold": 1.7976931348623157E308,
+                  "min_threshold": 0.41212121212121213,
+                  "noise": "minecraft:surface"
+                },
+                "then_run": {
+                  "type": "minecraft:block",
+                  "result_state": {
+                    "Name": "minecraft:coarse_dirt"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
         "type": "minecraft:sequence",
         "sequence": [
           {
@@ -71,57 +125,78 @@
               ]
             },
             "then_run": {
-              "type": "minecraft:condition",
+              "type": "condition",
               "if_true": {
-                "type": "minecraft:stone_depth",
-                "add_surface_depth": false,
+                "type": "stone_depth",
+                "add_surface_depth": true,
                 "offset": 0,
                 "secondary_depth_range": 0,
                 "surface_type": "floor"
               },
               "then_run": {
-                "type": "minecraft:sequence",
+                "type": "sequence",
                 "sequence": [
                   {
                     "type": "minecraft:condition",
                     "if_true": {
-                      "type": "minecraft:noise_threshold",
-                      "max_threshold": 1.7976931348623157E308,
-                      "min_threshold": 0.21212121212121213,
-                      "noise": "minecraft:surface"
+                      "type": "minecraft:stone_depth",
+                      "add_surface_depth": false,
+                      "offset": 0,
+                      "secondary_depth_range": 0,
+                      "surface_type": "floor"
                     },
                     "then_run": {
-                      "type": "minecraft:block",
-                      "result_state": {
-                        "Name": "minecraft:coarse_dirt"
-                      }
-                    }
-                  },
-                  {
-                    "type": "minecraft:condition",
-                    "if_true": {
-                      "type": "minecraft:noise_threshold",
-                      "max_threshold": 1.7976931348623157E308,
-                      "min_threshold": -0.11515151515151514,
-                      "noise": "minecraft:surface"
-                    },
-                    "then_run": {
-                      "type": "minecraft:block",
-                      "result_state": {
-                        "Name": "minecraft:grass_block",
-                        "Properties": {
-                          "snowy": "false"
+                      "type": "minecraft:sequence",
+                      "sequence": [
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "max_threshold": 1.7976931348623157E308,
+                            "min_threshold": 0.41212121212121213,
+                            "noise": "minecraft:surface_secondary"
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:coarse_dirt"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "max_threshold": 1.7976931348623157E308,
+                            "min_threshold": 0.08515151515151514,
+                            "noise": "minecraft:surface"
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:grass_block",
+                              "Properties": {
+                                "snowy": "false"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:block",
+                          "result_state": {
+                            "Name": "minecraft:podzol",
+                            "Properties": {
+                              "snowy": "false"
+                            }
+                          }
                         }
-                      }
+                      ]
                     }
                   },
                   {
-                    "type": "minecraft:block",
+                    "type": "block",
                     "result_state": {
-                      "Name": "minecraft:podzol",
-                      "Properties": {
-                        "snowy": "false"
-                      }
+                      "Name": "dirt"
                     }
                   }
                 ]
@@ -219,22 +294,6 @@
                 {
                   "type": "minecraft:condition",
                   "if_true": {
-                    "type": "minecraft:stone_depth",
-                    "add_surface_depth": false,
-                    "offset": 0,
-                    "secondary_depth_range": 0,
-                    "surface_type": "floor"
-                  },
-                  "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                      "Name": "minecraft:snow_block"
-                    }
-                  }
-                },
-                {
-                  "type": "minecraft:condition",
-                  "if_true": {
                     "type": "minecraft:water",
                     "add_stone_depth": true,
                     "offset": -6,
@@ -253,10 +312,58 @@
                           "surface_type": "floor"
                         },
                         "then_run": {
-                          "type": "minecraft:block",
-                          "result_state": {
-                            "Name": "minecraft:snow_block"
-                          }
+                          "type": "sequence",
+                          "sequence": [
+                            {
+                              "type": "minecraft:condition",
+                              "if_true": {
+                                "type": "minecraft:noise_threshold",
+                                "max_threshold": 1.7976931348623157E308,
+                                "min_threshold": 0.41212121212121213,
+                                "noise": "minecraft:surface_secondary"
+                              },
+                              "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                  "Name": "minecraft:ice"
+                                }
+                              }
+                            },
+                            {
+                              "type": "minecraft:condition",
+                              "if_true": {
+                                "type": "minecraft:water",
+                                "add_stone_depth": false,
+                                "offset": -1,
+                                "surface_depth_multiplier": 0
+                              },
+                              "then_run": {
+                                "type": "condition",
+                                "if_true": {
+                                  "type": "stone_depth",
+                                  "add_surface_depth": false,
+                                  "offset": 0,
+                                  "secondary_depth_range": 0,
+                                  "surface_type": "floor"
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "minecraft:grass_block",
+                                    "Properties": {
+                                      "snowy": "false"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "minecraft:block",
+                              "result_state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          ]
                         }
                       }
                     ]
@@ -380,7 +487,7 @@
                       {
                         "type": "minecraft:block",
                         "result_state": {
-                          "Name": "minecraft:sand"
+                          "Name": "minecraft:gravel"
                         }
                       }
                     ]

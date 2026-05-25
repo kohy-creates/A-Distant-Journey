@@ -99,17 +99,6 @@
         "value": 10
       }
     },
-    "additionalentityattributes:player.collection_range": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 64,
-        "value": 64
-      }
-    },
     "attributeslib:armor_shred": {
       "enabled": false,
       "min": {
@@ -119,6 +108,17 @@
       "max": {
         "default": 2,
         "value": 2
+      }
+    },
+    "additionalentityattributes:player.collection_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 64,
+        "value": 64
       }
     },
     "terra_curio:crit_chance": {
@@ -627,17 +627,6 @@
         "value": 1024
       }
     },
-    "additionalentityattributes:player.critical_bonus_damage": {
-      "enabled": false,
-      "min": {
-        "default": -1,
-        "value": -1
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "adjcore:player.mana_cost_reduction": {
       "enabled": false,
       "min": {
@@ -647,6 +636,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "additionalentityattributes:player.critical_bonus_damage": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "enhancedai:spawn_reinforcements_chance": {
@@ -682,17 +682,6 @@
         "value": 1
       }
     },
-    "additionalentityattributes:generic.lung_capacity": {
-      "enabled": false,
-      "min": {
-        "default": -40000,
-        "value": -40000
-      },
-      "max": {
-        "default": 40000,
-        "value": 40000
-      }
-    },
     "terra_curio:ranged_damage": {
       "enabled": false,
       "min": {
@@ -715,15 +704,15 @@
         "value": 1024
       }
     },
-    "additionalentityattributes:player.bonus_rare_loot_rolls": {
+    "additionalentityattributes:generic.lung_capacity": {
       "enabled": false,
       "min": {
-        "default": 0,
-        "value": 0
+        "default": -40000,
+        "value": -40000
       },
       "max": {
-        "default": 128,
-        "value": 128
+        "default": 40000,
+        "value": 40000
       }
     },
     "attributeslib:overheal": {
@@ -735,6 +724,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "additionalentityattributes:player.bonus_rare_loot_rolls": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 128,
+        "value": 128
       }
     },
     "enigmaticdice:size_scale": {
@@ -935,17 +935,6 @@
         "value": 24
       }
     },
-    "additionalentityattributes:player.water_visibility": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "obscure_api:healing_power": {
       "enabled": false,
       "min": {
@@ -955,6 +944,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "additionalentityattributes:player.water_visibility": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "combatroll:recharge": {

@@ -1,16 +1,16 @@
 {
-  "feature": "twilightforest:troll_roots",
+  "feature": "cave_vine",
   "placement": [
     {
-      "type": "minecraft:heightmap",
-      "heightmap": "WORLD_SURFACE_WG"
+      "type": "minecraft:count",
+      "count": 16
     },
     {
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 60
+          "absolute": 30
         },
         "min_inclusive": {
           "above_bottom": 0
@@ -18,8 +18,21 @@
       }
     },
     {
-      "type": "minecraft:count",
-      "count": 8
+      "type": "in_square"
+    },
+    {
+      "type": "environment_scan",
+      "direction_of_search": "up",
+      "max_steps": 20,
+      "target_condition": {
+        "type": "solid"
+      },
+      "allowed_search_condition": {
+        "type": "matching_blocks",
+        "blocks": [
+          "air"
+        ]
+      }
     },
     {
       "type": "minecraft:biome"

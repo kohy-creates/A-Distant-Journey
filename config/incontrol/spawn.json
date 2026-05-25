@@ -39,7 +39,8 @@
 			"hybrid-aquatic:flying_fish",
 			"twilightforest:hostile_wolf",
 			"hybrid-aquatic:otter",
-			"hybrid-aquatic:great_white_shark"
+			"hybrid-aquatic:great_white_shark",
+			"twilightforest:kobold"
 		],
 		"result": "deny"
 	}

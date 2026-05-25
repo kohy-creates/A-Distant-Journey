@@ -7,6 +7,7 @@
       "kohara:twilight_forest/dark_tree/trunk_2",
       "kohara:twilight_forest/dark_tree/trunk_3",
       "kohara:twilight_forest/dark_tree/trunk_4"
-    ]
+    ],
+    "placement_type": "cancel_on_failure"
   }
 }

@@ -2,7 +2,7 @@
   "type": "twilightforest:highland_caves",
   "config": {
     "floor_level": -0.7,
-    "horizontal_radius_multiplier": 1.0,
+    "horizontal_radius_multiplier": 1.5,
     "lava_level": {
       "above_bottom": 0
     },
@@ -19,6 +19,6 @@
         "above_bottom": 5
       }
     },
-    "yScale": 0.75
+    "yScale": 0.85
   }
 }

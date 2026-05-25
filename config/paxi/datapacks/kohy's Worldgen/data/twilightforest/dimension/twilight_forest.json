@@ -90,9 +90,9 @@
               "-1.2": "twilightforest:fire_swamp",
               "-3.2": "twilightforest:underground"
             },
-            "depth": -0.7,
+            "depth": 0.05,
             "key_biome": "twilightforest:fire_swamp",
-            "scale": 0.5
+            "scale": 0.4
           },
           {
             "biome_layers": {

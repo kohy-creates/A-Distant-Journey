@@ -1,0 +1,23 @@
+{
+	"type": "twilightforest:tf_caves",
+	"config": {
+		"floor_level": -0.7,
+		"horizontal_radius_multiplier": 1.0,
+		"lava_level": {
+			"above_bottom": 0
+		},
+		"probability": 0.25,
+		"replaceable": "#kohara:tf_glacier_cave_replaceable",
+		"vertical_radius_multiplier": 1.2,
+		"y": {
+			"type": "minecraft:uniform",
+			"max_inclusive": {
+				"absolute": 80
+			},
+			"min_inclusive": {
+				"absolute": -5
+			}
+		},
+		"yScale": 1.0
+	}
+}

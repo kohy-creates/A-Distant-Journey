@@ -105,8 +105,8 @@ ItemEvents.modification(event => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute('generic.movement_speed', '9ea52887-2d3d-449e-8a8e-c51c1b86c6eb', 0.08, 'multiply_base')
-				.addAttribute('additionalentityattributes:generic.lava_speed', 'e7dc3f42-7446-4916-ab32-3d0e61c7cb7a', 0.5, 'multiply_base')
-				.addAttribute('additionalentityattributes:generic.water_speed', 'e7dc3f42-7446-4916-ab32-3d0e61c7cb7a', 0.5, 'multiply_base')
+			// .addAttribute('additionalentityattributes:generic.lava_speed', 'e7dc3f42-7446-4916-ab32-3d0e61c7cb7a', 0.5, 'multiply_base')
+			// .addAttribute('additionalentityattributes:generic.water_speed', 'e7dc3f42-7446-4916-ab32-3d0e61c7cb7a', 0.5, 'multiply_base')
 		);
 	});
 

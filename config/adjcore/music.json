@@ -85,7 +85,7 @@
 		"botania:doppleganger": {
 			"phase_0": {
 				"track": "adj:music.boss.doppleganger",
-				"title": "doppleganger",
+				"title": "Concealed Four Seasons",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -93,13 +93,13 @@
 		"cataclysm:ignis": {
 			"phase_0": {
 				"track": "adj:music.boss.ignis",
-				"title": "ignis_phase_0",
+				"title": "Memento of the Avaricious Beast",
 				"author": "ZUN",
 				"distance": 100
 			},
-			"phase_2": {
+			"phase_1": {
 				"track": "adj:music.boss.ignis",
-				"title": "ignis_phase_2",
+				"title": "Memento of All Organisms",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -107,7 +107,7 @@
 		"cataclysm:netherite_monstrosity": {
 			"phase_1": {
 				"track": "adj:music.boss.netherite_monstrosity",
-				"title": "netherite_monstrosity",
+				"title": "Tortoise Dragon",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -115,15 +115,15 @@
 		"cataclysm:ender_guardian": {
 			"phase_0": {
 				"track": "adj:music.boss.ender_guardian",
-				"title": "ender_guardian",
+				"title": "Joutounin of Ceramics",
 				"author": "ZUN",
 				"distance": 100
 			}
 		},
 		"cataclysm:the_harbinger": {
-			"phase_0": {
+			"phase_1": {
 				"track": "adj:music.boss.the_harbinger",
-				"title": "the_harbinger",
+				"title": "Idolatrize World",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -131,7 +131,7 @@
 		"cataclysm:the_leviathan": {
 			"phase_0": {
 				"track": "adj:music.boss.the_leviathan",
-				"title": "the_leviathan",
+				"title": "Corpse Voyage",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -139,7 +139,7 @@
 		"cataclysm:ancient_remnant": {
 			"phase_0": {
 				"track": "adj:music.boss.ancient_remnant",
-				"title": "ancient_remnant",
+				"title": "Ore From The Age of Gods",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -147,7 +147,7 @@
 		"cataclysm:maledictus": {
 			"phase_0": {
 				"track": "adj:music.boss.maledictus",
-				"title": "maledictus",
+				"title": "Magus Night",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -155,7 +155,7 @@
 		"cataclysm:scylla": {
 			"phase_0": {
 				"track": "adj:music.boss.scylla",
-				"title": "scylla",
+				"title": "Watatsuki's Spell Card ~ Divine Sea Battle",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -163,7 +163,7 @@
 		"unusualend:endstone_golem": {
 			"phase_0": {
 				"track": "adj:music.boss.endstone_golem",
-				"title": "endstone_golem",
+				"title": "Lunatic Dreamer",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -171,7 +171,7 @@
 		"unusualend:enderblob_queen": {
 			"phase_0": {
 				"track": "adj:music.boss.enderblob_queen",
-				"title": "enderblob_queen",
+				"title": "Pierrot of The Star Spangled Banner",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -179,7 +179,7 @@
 		"ars_nouveau:wilden_boss": {
 			"phase_0": {
 				"track": "adj:music.boss.wilden_boss",
-				"title": "wilden_boss",
+				"title": "Prince Shoutoku's Pegasus ~ Dark Pegasus",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -187,7 +187,7 @@
 		"aether:slider": {
 			"phase_1": {
 				"track": "adj:music.boss.slider",
-				"title": "slider",
+				"title": "The Reversed Wheel of Fortune",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -195,7 +195,7 @@
 		"aether:valkyrie_queen": {
 			"phase_1": {
 				"track": "adj:music.boss.valkyrie_queen",
-				"title": "valkyrie_queen",
+				"title": "Old Yuanxian",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -203,7 +203,7 @@
 		"aether:sun_spirit": {
 			"phase_1": {
 				"track": "adj:music.boss.sun_spirit",
-				"title": "sun_spirit",
+				"title": "Magic Straw-Hat Jizo",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -211,7 +211,7 @@
 		"ancient_aether:mutated_aechor_plant": {
 			"phase_1": {
 				"track": "adj:music.boss.mutated_aechor_plant",
-				"title": "mutated_aechor_plant",
+				"title": "Futatsuiwa From Sado",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -219,7 +219,7 @@
 		"lost_aether_content:aerwhale_king": {
 			"phase_1": {
 				"track": "adj:music.boss.aerwhale_king",
-				"title": "aerwhale_king",
+				"title": "Hallucinations Atop a Bivalve",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -227,7 +227,7 @@
 		"rediscovered:red_dragon": {
 			"phase_1": {
 				"track": "adj:music.boss.red_dragon",
-				"title": "red_dragon",
+				"title": "Illusionary Joururi",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -235,7 +235,7 @@
 		"alexscaves:luxtructosaurus": {
 			"phase_0": {
 				"track": "adj:music.boss.luxtructosaurus",
-				"title": "luxtructosaurus",
+				"title": "Seraphic Chicken",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -243,7 +243,7 @@
 		"twilightforest:naga": {
 			"phase_0": {
 				"track": "adj:music.boss.naga",
-				"title": "naga",
+				"title": "Cheat Against The Impossible Danmaku",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -251,7 +251,7 @@
 		"twilightforest:lich": {
 			"phase_0": {
 				"track": "adj:music.boss.lich",
-				"title": "lich",
+				"title": "Might as Well Stake Your Life to Solve the Riddle",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -259,7 +259,7 @@
 		"twilightforest:minoshroom": {
 			"phase_0": {
 				"track": "adj:music.boss.minoshroom",
-				"title": "minoshroom",
+				"title": "A Pair of Divine Beasts",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -267,7 +267,7 @@
 		"twilightforest:hydra": {
 			"phase_0": {
 				"track": "adj:music.boss.hydra",
-				"title": "hydra",
+				"title": "Smoking Dragon",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -275,7 +275,7 @@
 		"twilightforest:knight_phantom": {
 			"phase_0": {
 				"track": "adj:music.boss.knight_phantom",
-				"title": "knight_phantom",
+				"title": "The Path to Yomi Where None Turn Back",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -283,7 +283,7 @@
 		"twilightforest:ur_ghast": {
 			"phase_0": {
 				"track": "adj:music.boss.ur_ghast",
-				"title": "ur_ghast",
+				"title": "Pure Furies",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -291,7 +291,7 @@
 		"twilightforest:alpha_yeti": {
 			"phase_0": {
 				"track": "adj:music.boss.alpha_yeti",
-				"title": "alpha_yeti",
+				"title": "There's a Monster In The Woods",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -299,7 +299,7 @@
 		"twilightforest:snow_queen": {
 			"phase_0": {
 				"track": "adj:music.boss.snow_queen",
-				"title": "snow_queen",
+				"title": "Stars Falling on Tenma Mountain",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -307,7 +307,7 @@
 		"aquamirae:captain_cornelia": {
 			"phase_0": {
 				"track": "adj:music.boss.captain_cornelia",
-				"title": "captain_cornelia",
+				"title": "Captain Murasa",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -315,21 +315,21 @@
 		"witherstormmod:command_block": {
 			"phase_0": {
 				"track": "adj:music.boss.command_block.approaching",
-				"title": "command_block_phase_0",
+				"title": "Fires Of Hokkai",
 				"author": "ZUN",
 				"distance": 175
 			},
 			"phase_1": {
 				"track": "adj:music.boss.command_block.combat",
-				"title": "command_block_phase_1",
-				"author": "ZUN",
+				"title": "Because I'm Used to Being the Last One Left (WBaWC Mix)",
+				"author": "ZUN & MiragEden",
 				"distance": 100
 			}
 		},
 		"witherstormmod:withered_symbiont": {
 			"phase_1": {
 				"track": "adj:music.boss.withered_symbiont",
-				"title": "withered_symbiont",
+				"title": "Reminiscence of Deer-Hunting",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -337,7 +337,7 @@
 		"minecraft:ender_dragon": {
 			"phase_0": {
 				"track": "adj:music.boss.ender_dragon",
-				"title": "ender_dragon",
+				"title": "The Deviants' Unobstructed Light ~ Kingdom of Nothingness",
 				"author": "ZUN",
 				"distance": 100
 			}
@@ -345,7 +345,7 @@
 		"minecraft:wither": {
 			"phase_0": {
 				"track": "adj:music.boss.wither",
-				"title": "wither",
+				"title": "Even If It's Forgotten by the World",
 				"author": "ZUN",
 				"distance": 100
 			}

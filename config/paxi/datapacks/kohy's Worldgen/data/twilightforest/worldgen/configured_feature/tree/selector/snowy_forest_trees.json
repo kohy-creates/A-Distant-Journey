@@ -2,7 +2,7 @@
   "type": "minecraft:random_selector",
   "config": {
     "default": {
-      "feature": "twilightforest:tree/snowy_spruce_tree",
+      "feature": "spruce_base",
       "placement": []
     },
     "features": [
