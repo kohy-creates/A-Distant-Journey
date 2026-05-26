@@ -56,7 +56,6 @@ EntityEvents.spawned(event => {
 	}
 });
 
-const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent")
 NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.LivingHurtEvent_} event */ event => {
 	const source = event.getSource()
 

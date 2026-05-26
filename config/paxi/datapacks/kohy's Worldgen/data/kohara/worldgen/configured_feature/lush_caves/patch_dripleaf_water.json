@@ -5,7 +5,7 @@
     "xz_spread": 16,
     "y_spread": 3,
     "feature": {
-      "feature": "minecraft:dripleaf_water",
+      "feature": "kohara:lush_caves/dripleaf_water",
       "placement": [
         {
           "type": "minecraft:environment_scan",

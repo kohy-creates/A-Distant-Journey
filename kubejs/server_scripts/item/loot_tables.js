@@ -274,7 +274,6 @@ LootJS.modifiers((event) => {
 				.applyLootingBonus([0, 1])
 				.when(c => c.randomChanceWithLooting(0.05, 0.025))
 			)
-
 		})
 		.pool(darkGemPool);
 

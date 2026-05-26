@@ -5,6 +5,9 @@ const ExplosionDamage = {
 	'minecraft:tnt': [80, true, 0.5, 0.9, 0.5],
 	'cataclysm:flame_strike': [60, false, 0.75, 1.0, 0.60],
 	'cataclysm:wither_missile': [110, false, 0.5, 1.0, 0.75],
+	'rediscovered:bolt_ball': [60, false, 0.99, 1.0, 0.8],
+	'rediscovered:pylon_burst': [300, false, 0.99, 1.0, 0.8],
+	'minecraft:fireball': [40, true, 0.8, 1.0, 0.7]
 };
 
 ADJServerEvents.explosionDamageCalc(event => {

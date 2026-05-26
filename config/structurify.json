@@ -1,6 +1,6 @@
 {
-  "config_version": "2.0.24",
-  "config_datetime": "2026-05-15_22-59-45",
+  "config_version": "2.0.25",
+  "config_datetime": "2026-05-26_15-36-55",
   "general": {
     "disable_all_structures": false,
     "prevent_structure_overlap": true,
@@ -719,8 +719,34 @@
       }
     },
     {
-      "spacing": 41,
-      "separation": 24,
+      "spacing": 12,
+      "separation": 11,
+      "name": "rediscovered:indev_house",
+      "is_disabled": false,
+      "salt": 933824178,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "structure_weights": {
+        "rediscovered:indev_house_cherry": 1,
+        "rediscovered:indev_house_mossy": 1,
+        "rediscovered:indev_house_default": 1
+      }
+    },
+    {
+      "spacing": 16,
+      "separation": 15,
+      "name": "rediscovered:obsidian_wall",
+      "is_disabled": false,
+      "salt": 476836689,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "structure_weights": {
+        "rediscovered:obsidian_wall": 1
+      }
+    },
+    {
+      "spacing": 40,
+      "separation": 30,
       "name": "rediscovered:pigman_village",
       "is_disabled": false,
       "salt": 570217192,

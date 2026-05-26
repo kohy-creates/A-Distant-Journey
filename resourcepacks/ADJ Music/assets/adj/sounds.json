@@ -48,7 +48,7 @@
 			{
 				"name": "minecraft:music/game/one_more_day",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -97,12 +97,31 @@
 			{
 				"name": "adj:music/flake",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/kyoto",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
+			}
+		]
+	},
+	"music.biome.snowy.night": {
+		"sounds": [
+			{
+				"name": "adj:music/chaos_cubed/ebb",
+				"stream": true,
+				"volume": 0.6
+			},
+			{
+				"name": "adj:music/chaos_cubed/memories",
+				"stream": true,
+				"volume": 0.6
+			},
+			{
+				"name": "adj:music/chaos_cubed/nightly",
+				"stream": true,
+				"volume": 0.6
 			}
 		]
 	},
@@ -111,12 +130,12 @@
 			{
 				"name": "music/game/bromeliad",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "music/game/echo_in_the_wind",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -125,12 +144,17 @@
 			{
 				"name": "adj:music/os_piano",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "music/game/comforting_memories",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
+			},
+			{
+				"name": "adj:music/below_and_above",
+				"stream": true,
+				"volume": 0.6
 			}
 		]
 	},
@@ -139,22 +163,22 @@
 			{
 				"name": "music/game/a_familiar_room",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/watcher",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "music/game/floating_dream",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "minecraft:music/game/stand_tall",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -163,27 +187,27 @@
 			{
 				"name": "adj:music/pokopoko",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/watcher",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/an_ordinary_day",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "music/game/comforting_memories",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "music/game/infinite_amethyst",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -192,7 +216,7 @@
 			{
 				"name": "minecraft:music/game/left_to_bloom",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -201,17 +225,17 @@
 			{
 				"name": "adj:music/broken_clocks",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/evren",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "minecraft:music/game/fireflies",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -220,12 +244,12 @@
 			{
 				"name": "minecraft:music/game/swamp/labyrinthine",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "music/game/swamp/firebugs",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -234,12 +258,17 @@
 			{
 				"name": "minecraft:music/game/fireflies",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "music/game/swamp/aerie",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
+			},
+			{
+				"name": "adj:music/featherfall",
+				"stream": true,
+				"volume": 0.6
 			}
 		]
 	},
@@ -248,7 +277,7 @@
 			{
 				"name": "adj:music/cacti_canyon",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -257,7 +286,7 @@
 			{
 				"name": "music/game/crescent_dunes",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -266,7 +295,7 @@
 			{
 				"name": "adj:music/canyon_clearance",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -275,7 +304,7 @@
 			{
 				"name": "adj:music/roaming_wanderer",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -284,16 +313,21 @@
 			{
 				"name": "adj:music/lilypad",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
 	"music.biome.beach.night": {
 		"sounds": [
 			{
-				"name": "adj:music/beach_house",
+				"name": "adj:music/chaos_cubed/beach_house",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
+			},
+			{
+				"name": "adj:music/chaos_cubed/shores",
+				"stream": true,
+				"volume": 0.6
 			}
 		]
 	},
@@ -302,7 +336,22 @@
 			{
 				"name": "adj:music/coral_rise",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
+			},
+			{
+				"name": "minecraft:music/game/water/axolotl",
+				"stream": true,
+				"volume": 0.6
+			},
+			{
+				"name": "minecraft:music/game/water/dragon_fish",
+				"stream": true,
+				"volume": 0.6
+			},
+			{
+				"name": "minecraft:music/game/water/shuniji",
+				"stream": true,
+				"volume": 0.6
 			}
 		]
 	},
@@ -311,26 +360,7 @@
 			{
 				"name": "adj:music/mooshroom_island",
 				"stream": true,
-				"volume": 0.5
-			}
-		]
-	},
-	"music.biome.ocean.night": {
-		"sounds": [
-			{
-				"name": "minecraft:music/game/water/axolotl",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
-				"name": "minecraft:music/game/water/dragon_fish",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
-				"name": "minecraft:music/game/water/shuniji",
-				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -339,7 +369,7 @@
 			{
 				"name": "adj:music/tropical_slime_scramble",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -348,7 +378,7 @@
 			{
 				"name": "adj:music/miscible",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -357,7 +387,7 @@
 			{
 				"name": "adj:music/fizz",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -366,12 +396,12 @@
 			{
 				"name": "adj:music/nostalgia_feeling",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/twilight_cavern",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -380,22 +410,22 @@
 			{
 				"name": "adj:music/deeper",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/eld_unknown",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/puzzlebox",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "minecraft:music/game/wending",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -404,17 +434,17 @@
 			{
 				"name": "adj:music/featherfall",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/komorebi",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/twilight_cavern",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -423,17 +453,17 @@
 			{
 				"name": "music/game/ancestry",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/graveyard",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/sensoring",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -442,12 +472,12 @@
 			{
 				"name": "adj:music/hydrothermal_vent",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/the_abyssal_monument",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -456,7 +486,7 @@
 			{
 				"name": "adj:music/guldrum",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -465,7 +495,7 @@
 			{
 				"name": "adj:music/soggier_cave",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -474,17 +504,17 @@
 			{
 				"name": "adj:music/lochan",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/nostalgia_factor",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/twilight_cavern",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -517,7 +547,7 @@
 			{
 				"name": "minecraft:music/game/nether/soulsand_valley/so_below",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -526,17 +556,17 @@
 			{
 				"name": "adj:music/psilopsychotic",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/electrophilic_attack",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/obsidian_cavern",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -545,7 +575,7 @@
 			{
 				"name": "adj:music/bubbles",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -554,7 +584,7 @@
 			{
 				"name": "minecraft:music/game/nether/crimson_forest/chrysopoeia",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -563,7 +593,7 @@
 			{
 				"name": "minecraft:music/game/nether/soulsand_valley/so_below",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
@@ -572,100 +602,131 @@
 			{
 				"name": "adj:music/dubious_kadenia",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/electrophilic_attack",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/empty_rooms",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/endless",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/mosaic",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/obsidian_cavern",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/vacuum_decay",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/ki",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/intro",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/eleven",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			}
 		]
 	},
-	"music.the_aether.day": {
+	"music.twilight_forest": {
 		"sounds": [
 			{
-				"name": "adj:music/below_and_above",
+				"name": "adj:music/stolen_grid",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/etterathder",
 				"stream": true,
-				"volume": 0.5
-			},
+				"volume": 0.6
+			}
+		]
+	},
+	"music.twilight_forest.glacier": {
+		"sounds": []
+	},
+	"music.twilight_forest.snowy_forest": {
+		"sounds": []
+	},
+	"music.twilight_forest.final_plateau": {
+		"sounds": []
+	},
+	"music.twilight_forest.fire_swamp": {
+		"sounds": []
+	},
+	"music.the_aether.day": {
+		"sounds": [
 			{
 				"name": "adj:music/flight_of_fancy",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/soothing_voyage",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
 				"name": "adj:music/wonderful_wings",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
 			},
 			{
-				"name": "adj:music/stolen_grid",
+				"name": "aether:music/aether3",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.75
+			},
+			{
+				"name": "aether:music/aether4",
+				"stream": true,
+				"volume": 0.75
+			},
+			{
+				"name": "aether:music/aether5",
+				"stream": true,
+				"volume": 0.75
 			}
 		]
 	},
 	"music.the_aether.night": {
 		"sounds": [
 			{
-				"name": "adj:music/featherfall",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
 				"name": "adj:music/yakusoku",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.6
+			},
+			{
+				"name": "aether:music/aether1",
+				"stream": true,
+				"volume": 0.75
+			},
+			{
+				"name": "aether:music/aether2",
+				"stream": true,
+				"volume": 0.75
 			}
 		]
 	},
@@ -674,7 +735,8 @@
 			{
 				"name": "adj:music/far_lands",
 				"stream": true,
-				"volume": 0.5
+				"volume": 1.0,
+				"weight": 4
 			},
 			{
 				"name": "minecraft:music/game/calm1",
@@ -703,26 +765,21 @@
 			{
 				"name": "adj:music/chris",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.8
 			}
 		]
 	},
 	"music.skylands.night": {
 		"sounds": [
 			{
-				"name": "adj:music/far_lands",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
 				"name": "adj:music/door",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.7
 			},
 			{
 				"name": "adj:music/equinoxe",
 				"stream": true,
-				"volume": 0.5
+				"volume": 0.7
 			}
 		]
 	},
@@ -731,72 +788,7 @@
 			{
 				"name": "adj:music/finnbacka",
 				"stream": true,
-				"volume": 0.9
-			}
-		]
-	},
-	"music.menu_optional": {
-		"sounds": [
-			{
-				"name": "minecraft:music/menu/menu1",
-				"stream": true
-			},
-			{
-				"name": "minecraft:music/menu/menu2",
-				"stream": true
-			},
-			{
-				"name": "minecraft:music/menu/menu3",
-				"stream": true
-			},
-			{
-				"name": "minecraft:music/menu/menu4",
-				"stream": true
-			},
-			{
-				"name": "adj:music/deeper",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
-				"name": "adj:music/fireflies",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
-				"name": "minecraft:music/game/infinite_amethyst",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
-				"name": "minecraft:music/game/stand_tall",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
-				"name": "minecraft:music/game/one_more_day",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
-				"name": "minecraft:music/game/left_to_bloom",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
-				"name": "minecraft:music/game/wending",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
-				"name": "adj:music/lilypad",
-				"stream": true,
-				"volume": 0.5
-			},
-			{
-				"name": "adj:music/yakusoku",
-				"stream": true,
-				"volume": 0.5
+				"volume": 1.0
 			}
 		]
 	},
@@ -805,7 +797,7 @@
 			{
 				"name": "adj:music/boss/concealed_four_seasons",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -814,7 +806,7 @@
 			{
 				"name": "adj:music/boss/memento_of_the_avaricious_beast",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -823,7 +815,7 @@
 			{
 				"name": "adj:music/boss/memento_of_all_living_organisms",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -832,7 +824,7 @@
 			{
 				"name": "adj:music/boss/tortoise_dragon",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -841,7 +833,7 @@
 			{
 				"name": "adj:music/boss/joutounin_of_ceramics",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -850,7 +842,7 @@
 			{
 				"name": "adj:music/boss/idolatrize_world",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -859,7 +851,7 @@
 			{
 				"name": "adj:music/boss/corpse_voyage",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -868,7 +860,7 @@
 			{
 				"name": "adj:music/boss/ore_from_the_age_of_the_gods",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -877,7 +869,7 @@
 			{
 				"name": "adj:music/boss/magus_night",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -886,7 +878,7 @@
 			{
 				"name": "adj:music/boss/watatsukis_spell_card",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -895,7 +887,7 @@
 			{
 				"name": "adj:music/boss/lunatic_dreamer",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -904,7 +896,7 @@
 			{
 				"name": "adj:music/boss/pierrot_of_the_star_spangled_banner",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -913,7 +905,7 @@
 			{
 				"name": "adj:music/boss/prince_shoutokus_pegasus",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -922,7 +914,7 @@
 			{
 				"name": "adj:music/boss/the_reversed_wheel_of_fortune",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -931,7 +923,7 @@
 			{
 				"name": "adj:music/boss/old_yuanxian",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -940,7 +932,7 @@
 			{
 				"name": "adj:music/boss/the_magic_straw_hat_jizo",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -949,7 +941,7 @@
 			{
 				"name": "adj:music/boss/futatsuiwa_from_sado",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -958,7 +950,7 @@
 			{
 				"name": "adj:music/boss/hallucinations_atop_a_bivalve",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -967,7 +959,7 @@
 			{
 				"name": "adj:music/boss/illusionary_joururi",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -976,7 +968,7 @@
 			{
 				"name": "adj:music/boss/seraphic_chicken",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -985,7 +977,7 @@
 			{
 				"name": "adj:music/boss/cheat_against_the_impossible_danmaku",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -994,7 +986,7 @@
 			{
 				"name": "adj:music/boss/might_as_well_stake_your_life_to_solve_the_riddle",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1003,7 +995,7 @@
 			{
 				"name": "adj:music/boss/a_pair_of_divine_beasts",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1012,7 +1004,7 @@
 			{
 				"name": "adj:music/boss/smoking_dragon",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1021,7 +1013,7 @@
 			{
 				"name": "adj:music/boss/the_path_to_yomi_where_none_turn_back",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1030,7 +1022,7 @@
 			{
 				"name": "adj:music/boss/whereabouts_of_pure_heart",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1039,7 +1031,7 @@
 			{
 				"name": "adj:music/boss/theres_a_monster_in_the_woods",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1048,7 +1040,7 @@
 			{
 				"name": "adj:music/boss/starry_mountain_of_tenma",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1057,7 +1049,7 @@
 			{
 				"name": "adj:music/boss/captain_murasa",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1066,7 +1058,7 @@
 			{
 				"name": "adj:music/boss/fires_of_hokkai",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1075,7 +1067,7 @@
 			{
 				"name": "adj:music/boss/last_one_left_is_used_to_it_wbawc",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1084,7 +1076,7 @@
 			{
 				"name": "adj:music/boss/reminiscence_of_deer_hunting",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1093,7 +1085,7 @@
 			{
 				"name": "adj:music/boss/the_deviants_unobstructed_light",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	},
@@ -1102,7 +1094,7 @@
 			{
 				"name": "adj:music/boss/even_if_its_forgotten_by_the_world",
 				"stream": true,
-				"volume": 0.6
+				"volume": 0.8
 			}
 		]
 	}

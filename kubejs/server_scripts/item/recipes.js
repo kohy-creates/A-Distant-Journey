@@ -8864,4 +8864,41 @@ ServerEvents.recipes((event) => {
 			F: 'flint'
 		}
 	).id('adj:adamantite_hook');
+
+	// Create Ore Excavation
+	let salt = 124543534;
+	function oreExcavationBasicVein(output, name, id, spacing, separation, biomes, ticks, stress, drill, icon) {
+		salt++;
+		event.recipes.createoreexcavation.vein(name, Array.isArray(output) ? icon : output)
+			.placement(spacing ? spacing : 256, separation ? separation : 64, salt)
+			.biomeWhitelist(biomes ? biomes : 'is_overworld')
+			.id(`adj:vein/${id}`)
+
+		if (drill) {
+			event.recipes.createoreexcavation.drilling(output, `adj:vein/${id}`, ticks ? ticks : 600)
+				.drill(drill)
+				.stress(stress ? stress : 256)
+				.id(`adj:drilling_vein/${id}`);
+		}
+		else {
+			event.recipes.createoreexcavation.drilling(output, `adj:vein/${id}`, ticks ? ticks : 600)
+				.stress(stress ? stress : 256)
+				.id(`adj:drilling_vein/${id}`);
+		}
+	}
+
+	oreExcavationBasicVein('mythicmetals:raw_platinum', 'Platinum Vein', 'platinum', 64, 32);
+	oreExcavationBasicVein('mythicmetals:raw_osmium', 'Osmium Vein', 'osmium', 64, 32, 'forge:is_mountain');
+	oreExcavationBasicVein('mythicmetals:raw_prometheum', 'Prometheum Vein', 'prometheum', 128, 32, 'c:is_jungle');
+	oreExcavationBasicVein('mythicmetals:raw_orichalcum', 'Orichalcum Vein', 'orichalcum', 128, 32);
+	oreExcavationBasicVein('mythicmetals:raw_mythril', 'Mythril Vein', 'mythril', 128, 32);
+	oreExcavationBasicVein('mythicmetals:raw_palladium', 'Palladium Vein', 'palladium', 256, 32, 'is_nether', 1200, null, 'createoreexcavation:diamond_drill');
+	oreExcavationBasicVein('aether_redux:raw_gravitite', 'Gravitite Vein', 'gravitite', 256, 32, 'aether:is_aether', 1200);
+	oreExcavationBasicVein('aether:zanite_gemstone', 'Zanite Vein', 'zanite', 128, 32, 'aether:is_aether', 800);
+	oreExcavationBasicVein('aether:ambrosium_shard', 'Ambrosium Vein', 'ambrosium', 64, 12, 'aether:is_aether', 400);
+	oreExcavationBasicVein('rediscovered:ruby', 'Ruby Vein', 'ruby', 128, 32, null, 400);
+	oreExcavationBasicVein('mythicmetals:raw_kyber', 'Kyber Vein', 'kyber', 128, 32, null, 800);
+	oreExcavationBasicVein('mythicmetals:raw_stormyx', 'Stormyx Vein', 'stormyx', 128, 16, 'is_nether', 1200);
+	oreExcavationBasicVein('mythicmetals:raw_midas_gold', 'Midas Gold Vein', 'midas_gold', 128, 16, 'is_nether', 800, 192);
+	oreExcavationBasicVein('mythicmetals:raw_adamantite', 'Adamantite Vein', 'adamantite', 512, 128, null, 3500, 2048, 'createoreexcavation:diamond_drill');
 });

@@ -121,12 +121,22 @@ const EntityModifications = {
 					break;
 				}
 				case 'minecraft:warden': {
-					server.runCommand(`/scale set pehkui:hitbox_width 3.0 ${uuid}`);
+					server.runCommand(`/scale set pehkui:hitbox_width 2 ${uuid}`);
+					server.runCommand(`/scale set pehkui:height 1.15 ${uuid}`);
 					break;
 				}
+				case 'cataclysm:the_harbinger':
 				case 'minecraft:wither': {
-					server.runCommand(`/scale set pehkui:hitbox_width 6 ${uuid}`);
-					server.runCommand(`/scale set pehkui:hitbox_height 2.5 ${uuid}`);
+					server.runCommand(`/scale set pehkui:hitbox_width 4 ${uuid}`);
+					server.runCommand(`/scale set pehkui:hitbox_height 1.25 ${uuid}`);
+					break;
+				}
+				case 'rediscovered:rana':
+				case 'rediscovered:beast_boy':
+				case 'rediscovered:black_steve':
+				case 'rediscovered:steve': {
+					server.runCommand(`/scale set pehkui:hitbox_width 1.25 ${uuid}`);
+					server.runCommand(`/scale set pehkui:hitbox_height 1.25 ${uuid}`);
 					break;
 				}
 			}

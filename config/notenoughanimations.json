@@ -87,7 +87,7 @@
   "huggingAnimation": true,
   "narutoRunning": false,
   "disableLegSmoothing": false,
-  "bowAnimation": "VANILLA",
+  "bowAnimation": "CUSTOM_V1",
   "customBowRotationLock": true,
   "clampCrossbowAnimations": false,
   "burningAnimation": true,

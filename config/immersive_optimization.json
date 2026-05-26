@@ -41,6 +41,11 @@
     "witherstormmod:wither_storm_segment": false,
     "witherstormmod:tentacle": false,
     "minecraft:falling_block": false,
+    "rediscovered:red_dragon": false,
+    "minecraft:warden": false,
+    "rediscovered:bolt_ball": false,
+    "rediscovered:thunder_cloud": false,
+    "lost_aether_content:aerwhale_king": false,
     "botania": false
   },
   "version": 2,

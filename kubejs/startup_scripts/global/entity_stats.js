@@ -31,7 +31,7 @@ global.hpModifications = {
 	'lost_aether_content:aerwhale_king': [1700, 50, 8],
 	'rediscovered:red_dragon': [2100, 60, 14],
 	'alexscaves:luxtructosaurus': [3000, 60, 0],
-	'twilightforest:naga': [780, 25, 0],
+	'twilightforest:naga': [700, 25, 0],
 	'twilightforest:lich': [1100, 15, 5],
 	'twilightforest:minoshroom': [1200, 19, 0],
 	'twilightforest:hydra': [1750, 30, 10],

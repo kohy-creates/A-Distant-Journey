@@ -17,11 +17,13 @@
 			"day": "adj:music.the_aether.day",
 			"night": "adj:music.the_aether.night"
 		},
-		"witherstormmod:bowels": "adj:music.end"
+		"witherstormmod:bowels": "adj:music.end",
+		"twilightforest:twilight_forest": "adj:music.twilight_forest"
 	},
 	"biome": {
 		"#adj:snowy": {
 			"day": "adj:music.biome.snowy.day",
+			"night": "adj:music.biome.snowy.night",
 			"rain": "adj:music.biome.snowy.day"
 		},
 		"#adj:cherry_grove": {
@@ -53,13 +55,13 @@
 		},
 		"#adj:beach": {
 			"day": "adj:music.biome.beach.day",
-			"night": "adj:music.biome.beach.night"
+			"night": "adj:music.biome.beach.night",
+			"rain": "adj:music.biome.beach.night"
 		},
 		"#adj:ocean": {
 			"day": "adj:music.biome.ocean.day",
-			"night": "adj:music.biome.ocean.night",
-			"rain": "adj:music.biome.ocean.night",
-			"thunder": "adj:music.biome.ocean.night"
+			"night": "adj:music.biome.beach.night",
+			"rain": "adj:music.biome.beach.night"
 		},
 		"#adj:warm_ocean": {
 			"night": "adj:music.biome.warm_ocean.night"
@@ -189,7 +191,7 @@
 				"track": "adj:music.boss.slider",
 				"title": "The Reversed Wheel of Fortune",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 50
 			}
 		},
 		"aether:valkyrie_queen": {
@@ -197,7 +199,7 @@
 				"track": "adj:music.boss.valkyrie_queen",
 				"title": "Old Yuanxian",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 50
 			}
 		},
 		"aether:sun_spirit": {
@@ -205,7 +207,7 @@
 				"track": "adj:music.boss.sun_spirit",
 				"title": "Magic Straw-Hat Jizo",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 50
 			}
 		},
 		"ancient_aether:mutated_aechor_plant": {
@@ -213,7 +215,7 @@
 				"track": "adj:music.boss.mutated_aechor_plant",
 				"title": "Futatsuiwa From Sado",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 50
 			}
 		},
 		"lost_aether_content:aerwhale_king": {
@@ -229,7 +231,7 @@
 				"track": "adj:music.boss.red_dragon",
 				"title": "Illusionary Joururi",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 200
 			}
 		},
 		"alexscaves:luxtructosaurus": {
@@ -253,7 +255,7 @@
 				"track": "adj:music.boss.lich",
 				"title": "Might as Well Stake Your Life to Solve the Riddle",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 40
 			}
 		},
 		"twilightforest:minoshroom": {
@@ -261,7 +263,7 @@
 				"track": "adj:music.boss.minoshroom",
 				"title": "A Pair of Divine Beasts",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 40
 			}
 		},
 		"twilightforest:hydra": {
@@ -269,7 +271,7 @@
 				"track": "adj:music.boss.hydra",
 				"title": "Smoking Dragon",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 40
 			}
 		},
 		"twilightforest:knight_phantom": {
@@ -277,7 +279,7 @@
 				"track": "adj:music.boss.knight_phantom",
 				"title": "The Path to Yomi Where None Turn Back",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 40
 			}
 		},
 		"twilightforest:ur_ghast": {
@@ -293,7 +295,7 @@
 				"track": "adj:music.boss.alpha_yeti",
 				"title": "There's a Monster In The Woods",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 40
 			}
 		},
 		"twilightforest:snow_queen": {
@@ -301,7 +303,7 @@
 				"track": "adj:music.boss.snow_queen",
 				"title": "Stars Falling on Tenma Mountain",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 50
 			}
 		},
 		"aquamirae:captain_cornelia": {
@@ -317,7 +319,7 @@
 				"track": "adj:music.boss.command_block.approaching",
 				"title": "Fires Of Hokkai",
 				"author": "ZUN",
-				"distance": 175
+				"distance": 200
 			},
 			"phase_1": {
 				"track": "adj:music.boss.command_block.combat",
@@ -331,7 +333,7 @@
 				"track": "adj:music.boss.withered_symbiont",
 				"title": "Reminiscence of Deer-Hunting",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 60
 			}
 		},
 		"minecraft:ender_dragon": {
@@ -339,7 +341,7 @@
 				"track": "adj:music.boss.ender_dragon",
 				"title": "The Deviants' Unobstructed Light ~ Kingdom of Nothingness",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 200
 			}
 		},
 		"minecraft:wither": {
@@ -347,7 +349,7 @@
 				"track": "adj:music.boss.wither",
 				"title": "Even If It's Forgotten by the World",
 				"author": "ZUN",
-				"distance": 100
+				"distance": 110
 			}
 		}
 	}

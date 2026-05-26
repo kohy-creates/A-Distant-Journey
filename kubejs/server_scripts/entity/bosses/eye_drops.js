@@ -22,7 +22,7 @@ EntityEvents.death(event => {
 		}
 		if (Math.random() <= chance) {
 			server.runCommandSilent(
-				`/execute in ${entity.level.dimension} run summon marker ${entity.x} ${entity.y + (entity.eyeHeight / 2)} ${entity.z} {Tags:["adj.eye_marker", "adj.eye_of_${eye}"]}`
+				`/execute in ${entity.level.dimension} positioned ${entity.x} ${entity.y + (entity.eyeHeight / 2)} ${entity.z} ${(entity.type === 'rediscovered:red_dragon') ? 'at @p positioned ~ ~12 ~ ' : ''}run summon marker ~ ~ ~ {Tags:["adj.eye_marker", "adj.eye_of_${eye}"]}`
 			);
 
 			const name = eye.charAt(0).toUpperCase() + eye.slice(1);
