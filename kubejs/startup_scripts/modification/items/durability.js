@@ -117,14 +117,16 @@ ItemEvents.modification(event => {
 	//////////////////////////////////////////////////////
 
 	const noDurability = [
-		/stardew_fishing\:.*bobber/,
 		/.*aether.*\:.*glove/,
-		/umbral_skies\:.*gloves/,
 		/accents/,
 		'evilcraft:burning_gemstone',
 		'lost_aether_content:swetty_mask',
 		'lost_aether_content:invincibility_gem',
-		'lost_aether_content:flaming_gemstone'
+		'lost_aether_content:flaming_gemstone',
+		/beachparty/,
+		/twilightforest:yeti_/,
+		/twilightforest:arctic_/,
+		'twilightforest:lamp_of_cinders'
 	]
 	event.modify(noDurability, item => {
 		item.setMaxDamage(0);
@@ -305,7 +307,8 @@ ItemEvents.modification(event => {
 		'mcdw:soul_dagger_truthseeker',
 		armorset('aether:neptune'),
 		'mcdw:scythe_skull_scythe',
-		'mcdw:sword_heartstealer'
+		'mcdw:sword_heartstealer',
+		'twilightforest:ice_bow'
 	], 4000);
 
 	maxDurability([

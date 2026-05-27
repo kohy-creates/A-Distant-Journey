@@ -1,0 +1,8 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#clifftree:all_caves",
+	"features": [
+		"kohara:underground/sulfur_spike"
+	],
+	"step": "underground_ores"
+}

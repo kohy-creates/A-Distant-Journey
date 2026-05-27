@@ -101,6 +101,7 @@ ItemEvents.tooltip(event => {
 		/handcrafted:.*sheet/,
 		// /wallpapers:.*wallpaper_roll$/,
 		// /wallpapers:.*skirting_board$/,
+		'twilightforest:auroralized_glass'
 	], (item, advanced, text) => {
 
 		let startPos = 0;

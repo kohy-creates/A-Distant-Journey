@@ -744,5 +744,15 @@ global.armorOverrides = {
 		'adjcore:generic.health_regeneration': {
 			values: [0, 2.5, 0, 0]
 		}
+	},
+	'twilightforest:arctic': {
+		'generic.armor': {
+			values: [0, 0, 0, 0]
+		}
+	},
+	'twilightforest:yeti': {
+		'generic.armor': {
+			values: [0, 0, 0, 0]
+		}
 	}
 }

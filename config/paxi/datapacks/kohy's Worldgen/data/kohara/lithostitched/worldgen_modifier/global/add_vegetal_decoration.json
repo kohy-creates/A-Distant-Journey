@@ -3,7 +3,8 @@
 	"biomes": "#kohara:overworld_like",
 	"features": [
 		"kohara:patch_waterlily",
-		"kohara:seagrass_global"
+		"kohara:seagrass_global",
+		"kohara:underground/roots"
 	],
 	"step": "vegetal_decoration"
 }

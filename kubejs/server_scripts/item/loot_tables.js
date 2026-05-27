@@ -130,6 +130,13 @@ LootJS.modifiers((event) => {
 	];
 	removeModifiersFromMods.forEach(mod => event.removeGlobalModifier(`@${mod}`));
 
+	function fromChapter(number) {
+		return {
+			condition: 'adjcore:is_chapter',
+			from: number
+		};
+	}
+
 	const replaceSeedsIn = [
 		'grass',
 		'fern',
@@ -639,7 +646,13 @@ LootJS.modifiers((event) => {
 
 	event.addEntityLootModifier(['mutantmonsters:mutant_zombie'])
 		.pool(pool => {
-			pool.addLoot(LootEntry.of('terra_curio:flesh_knuckles').when(c => c.randomChance(0.334)))
+			pool.addLoot(
+				LootEntry.of('terra_curio:flesh_knuckles')
+					.when(c => {
+						c.randomChance(0.334);
+						c.customCondition(fromChapter(3));
+					})
+			);
 		});
 
 	event.addLootTableModifier(['minecraft:chests/ancient_city'])
@@ -657,7 +670,8 @@ LootJS.modifiers((event) => {
 			pool.addLoot(
 				LootEntry.of('kubejs:moon_charm')
 					.when(c => {
-						c.randomChanceWithLooting(0.01, 0.01);
+						c.randomChanceWithLooting(0.02, 0.01);
+						c.customCondition(fromChapter(3));
 					})
 			);
 		});
@@ -667,7 +681,8 @@ LootJS.modifiers((event) => {
 			pool.addLoot(
 				LootEntry.of('kubejs:neptunes_shell')
 					.when(c => {
-						c.randomChanceWithLooting(0.01, 0.01);
+						c.randomChanceWithLooting(0.02, 0.01);
+						c.customCondition(fromChapter(3));
 					})
 			);
 		});
@@ -687,6 +702,14 @@ LootJS.modifiers((event) => {
 			pool.addLoot(
 				LootEntry.of('twilightforest:raven_feather').limitCount([0, 1]).applyLootingBonus([0, 1])
 			)
+		});
+
+	event.addLootTableModifier('minecraft:chests/simple_dungeon')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('aperture_innovations:portal_gun')
+					.when(c => c.randomChance(0.09))
+			);
 		});
 
 	// Boss-specific changes

@@ -735,10 +735,7 @@
 			y: -1.497221575041408d
 		}
 		{
-			dependencies: [
-				"35B5E5B6F7CC021D"
-				"0AA4AD4290EE5366"
-			]
+			dependencies: ["0AA4AD4290EE5366"]
 			description: ["&7&lHINT:&r Some magical items will require you to have a &bcharged Mana Tablet&r in your inventory!"]
 			id: "1701D7122A9FDADA"
 			optional: true
@@ -751,7 +748,7 @@
 			}]
 			title: "It's Portable Though!"
 			x: 11.0d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["54622828F37E8A7E"]

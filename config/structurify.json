@@ -1,6 +1,6 @@
 {
   "config_version": "2.0.25",
-  "config_datetime": "2026-05-26_15-36-55",
+  "config_datetime": "2026-05-27_15-49-05",
   "general": {
     "disable_all_structures": false,
     "prevent_structure_overlap": true,
@@ -58,6 +58,10 @@
       "biome_check_blacklisted_biomes": [
         "#is_river"
       ]
+    },
+    {
+      "name": "beachparty:beach_hut",
+      "is_disabled": true
     },
     {
       "name": "born_in_chaos_v1:firewell",

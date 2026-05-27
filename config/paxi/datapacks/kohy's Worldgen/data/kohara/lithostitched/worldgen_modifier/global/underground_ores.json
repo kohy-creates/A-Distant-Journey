@@ -1,0 +1,9 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#is_overworld",
+	"features": [
+		"kohara:underground/ore_cinnabar_lower",
+		"kohara:underground/ore_cinnabar_upper"
+	],
+	"step": "underground_ores"
+}

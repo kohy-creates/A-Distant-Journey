@@ -3,7 +3,6 @@
 	"biomes": "#kohara:overworld_like",
 	"features": [
 		"kohara:underground/extra_dirt",
-		"kohara:underground/roots",
 		"kohara:underground/large_dripstone_stone",
 		"kohara:underground/large_dripstone_deepslate",
 		"kohara:underground/magma_near_bedrock_feature"

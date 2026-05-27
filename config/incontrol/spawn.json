@@ -40,7 +40,15 @@
 			"twilightforest:hostile_wolf",
 			"hybrid-aquatic:otter",
 			"hybrid-aquatic:great_white_shark",
-			"twilightforest:kobold"
+			"twilightforest:kobold",
+			"hybrid-aquatic:anglerfish",
+			"hybrid-aquatic:bull_shark",
+			"hybrid-aquatic:carp",
+			"hybrid-aquatic:coelacanth",
+			"hybrid-aquatic:great_white_shark",
+			"hybrid-aquatic:mackerel",
+			"hybrid-aquatic:manta_ray",
+			"hybrid-aquatic:tuna"
 		],
 		"result": "deny"
 	}

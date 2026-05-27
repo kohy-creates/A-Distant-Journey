@@ -1,0 +1,45 @@
+{
+	"feature": "kohara:underground/sulfur_spike",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 12
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 0
+				},
+				"min_inclusive": {
+					"absolute": 60
+				}
+			}
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"direction_of_search": "down",
+			"max_steps": 18,
+			"target_condition": {
+				"type": "minecraft:solid"
+			},
+			"allowed_search_condition": {
+				"type": "minecraft:matching_blocks",
+				"blocks": [
+					"air"
+				]
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

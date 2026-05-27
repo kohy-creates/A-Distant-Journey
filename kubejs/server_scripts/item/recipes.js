@@ -655,8 +655,8 @@ ServerEvents.recipes((event) => {
 		/botania:cosmetic.*/,
 	];
 	const curioToWorkshopBlacklist = [];
-	event.forEachRecipe({}, recipe => {
-		if (!recipe) return;
+	event.forEachRecipe({ id: /.*/ }, recipe => {
+		if (!recipe || recipe == null) return;
 		if (recipe.getId().includes('_repair')) return;
 
 		const output = recipe.getOriginalRecipeResult();
@@ -1182,7 +1182,7 @@ ServerEvents.recipes((event) => {
 		event.custom({
 			type: "botanicadds:gaia_plate",
 			ingredients: ingredients,
-			result: (output instanceof Item) ? output : { item: output },
+			result: (output instanceof String) ? { item: output } : output,
 			mana: mana
 		}).id(`adj:gaia_plate/${flattenedID(output)}`);
 	}
@@ -1591,7 +1591,7 @@ ServerEvents.recipes((event) => {
 		'born_in_chaos_v1:dark_upgrade',
 		'quark:smithing_template_rune'
 	];
-	event.forEachRecipe({ type: 'crafting_shaped' }, (recipe) => {
+	event.forEachRecipe({ type: 'crafting_shaped', output: /.*_smithing_template$/ }, (recipe) => {
 		if (!recipe) return;
 		let output = recipe.getOriginalRecipeResult();
 		if (output.id.indexOf('_smithing_template') === -1) {
@@ -4047,7 +4047,7 @@ ServerEvents.recipes((event) => {
 		'alexscaves:cave_painting_dino_nuggets',
 		'born_in_chaos_v1:dark_metal_nugget'
 	]
-	event.forEachRecipe([{ type: 'smelting' }, { type: 'blasting' }], recipe => {
+	event.forEachRecipe([{ type: 'smelting', output: /nugget/ }, { type: 'blasting', output: /nugget/ }], recipe => {
 		if (!recipe) return;
 		const output = recipe.getOriginalRecipeResult();
 		const input = recipe.getOriginalRecipeIngredients();
@@ -5421,7 +5421,7 @@ ServerEvents.recipes((event) => {
 			}
 		}
 	};
-	event.forEachRecipe({ type: 'crafting_shapeless' }, recipe => {
+	event.forEachRecipe({ type: 'crafting_shapeless', output: /ars.*:ritual_.*/ }, recipe => {
 		if (!recipe) return;
 		const output = recipe.getOriginalRecipeResult();
 		if (!(output.getId().includes('ars') && output.getId().includes('ritual_'))) return;
@@ -6142,10 +6142,84 @@ ServerEvents.recipes((event) => {
 		'twilightforest:ironwood_shovel',
 		'twilightforest:ironwood_pickaxe',
 		'twilightforest:fiery_ingot',
+		'twilightforest:arctic_helmet',
+		'twilightforest:arctic_leggings',
+		'twilightforest:arctic_chestplate',
+		'twilightforest:arctic_boots',
+		'twilightforest:yeti_helmet',
+		'twilightforest:yeti_leggings',
+		'twilightforest:yeti_chestplate',
+		'twilightforest:yeti_boots',
+		'twilightforest:naga_chestplate',
+		'twilightforest:naga_leggings'
 	];
 	twilightItemsToRemoveRecipes.forEach(item => {
 		event.remove({ output: item });
 	});
+
+	workshopRecipe([
+		'5x twilightforest:arctic_fur',
+		'3x leather'
+	], 'twilightforest:arctic_helmet');
+
+	workshopRecipe([
+		'5x twilightforest:arctic_fur',
+		'3x leather'
+	], 'twilightforest:arctic_chestplate');
+
+	workshopRecipe([
+		'5x twilightforest:arctic_fur',
+		'3x leather'
+	], 'twilightforest:arctic_leggings');
+
+	workshopRecipe([
+		'5x twilightforest:arctic_fur',
+		'3x leather'
+	], 'twilightforest:arctic_boots');
+
+	workshopRecipe([
+		'5x twilightforest:alpha_yeti_fur',
+		'3x leather'
+	], 'twilightforest:yeti_helmet');
+
+	workshopRecipe([
+		'5x twilightforest:alpha_yeti_fur',
+		'3x leather'
+	], 'twilightforest:yeti_chestplate');
+
+	workshopRecipe([
+		'5x twilightforest:alpha_yeti_fur',
+		'3x leather'
+	], 'twilightforest:yeti_leggings');
+
+	workshopRecipe([
+		'5x twilightforest:alpha_yeti_fur',
+		'3x leather'
+	], 'twilightforest:yeti_boots');
+
+	event.shaped(
+		'twilightforest:naga_chestplate',
+		[
+			'N N',
+			'NNN',
+			'NNN'
+		],
+		{
+			N: 'twilightforest:naga_scale'
+		}
+	).id('adj:naga_chestplate');
+
+	event.shaped(
+		'twilightforest:naga_leggings',
+		[
+			'NNN',
+			'N N',
+			'N N'
+		],
+		{
+			N: 'twilightforest:naga_scale'
+		}
+	).id('adj:naga_leggings');
 
 	alloyForgeRecipe(
 		[
