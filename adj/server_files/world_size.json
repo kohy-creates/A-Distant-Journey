@@ -1,0 +1,4 @@
+{
+	"world_size": "20k",
+	"__comment": "Allowed values are '20k' (default), '10k', '5k' and 'infinite'"
+}

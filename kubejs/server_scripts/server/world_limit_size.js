@@ -65,8 +65,9 @@ ServerEvents.loaded(event => {
 			WorldSizeLimit.limitSize(server, finalSize);
 		}
 		catch (e) {
-			console.log('File world_size.json not found or could not be read, treating it as infinite');
+			console.log('File world_size.json not found or could not be read, treating it as 20k x 20k');
 			console.log('If you believe this is a bug, you can do \'/kubejs persistent_data server merge {hasSetBorderLimits:false}\' and restart the server');
+			WorldSizeLimit.limitSize(server, WorldSizeLimit.SIZES["20k"]);
 		}
 	}
 });
