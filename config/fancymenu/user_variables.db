@@ -92,7 +92,7 @@ variable {
 
 variable {
   name = hud.hunger_level
-  value = 120
+  value = 125
   reset_on_launch = false
 }
 
