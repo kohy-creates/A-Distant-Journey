@@ -17,39 +17,41 @@ function createRarity(/** @type {string} */ name, /** @type {number} */ colorCod
 		return withColorMethod.invoke(style, Color.of(colorCode).createTextColorJS());
 	});
 
-	// ObscureTooltips integration
-	JsonIO.write(obscureTooltipsPath(`definition/${name}.json`), {
-		priority: 50,
-		style: `adj:${name}`,
-		filter: {
-			type: "obscure_tooltips:rarity",
-			rarity: `${name}`
-		}
-	});
+	if (Platform.isClientEnvironment) {
+		// ObscureTooltips integration
+		JsonIO.write(obscureTooltipsPath(`definition/${name}.json`), {
+			priority: 50,
+			style: `adj:${name}`,
+			filter: {
+				type: "obscure_tooltips:rarity",
+				rarity: `${name}`
+			}
+		});
 
-	JsonIO.write(obscureTooltipsPath(`style/${name}.json`), {
-		panel: `adj:${name}`,
-		frame: "obscure_tooltips:default",
-		slot: "obscure_tooltips:default",
-		icon: "obscure_tooltips:default",
-		effects: []
-	});
+		JsonIO.write(obscureTooltipsPath(`style/${name}.json`), {
+			panel: `adj:${name}`,
+			frame: "obscure_tooltips:default",
+			slot: "obscure_tooltips:default",
+			icon: "obscure_tooltips:default",
+			effects: []
+		});
 
-	JsonIO.write(obscureTooltipsPath(`element/panel/${name}.json`), {
-		type: "obscure_tooltips:color_rect",
-		background_palette: {
-			top_left: "@DEFAULT_PANEL_BACKGROUND_TOP",
-			top_right: "@DEFAULT_PANEL_BACKGROUND_TOP",
-			bottom_left: "@DEFAULT_PANEL_BACKGROUND_BOTTOM",
-			bottom_right: "@DEFAULT_PANEL_BACKGROUND_BOTTOM"
-		},
-		border_palette: {
-			top_left: `#60${colorCode.replace('#', '')}`,
-			top_right: `#60${colorCode.replace('#', '')}`,
-			bottom_left: `#50${global.amplifyHexColor(colorCode, -25, true)}`,
-			bottom_right: `#50${global.amplifyHexColor(colorCode, -25, true)}`
-		}
-	});
+		JsonIO.write(obscureTooltipsPath(`element/panel/${name}.json`), {
+			type: "obscure_tooltips:color_rect",
+			background_palette: {
+				top_left: "@DEFAULT_PANEL_BACKGROUND_TOP",
+				top_right: "@DEFAULT_PANEL_BACKGROUND_TOP",
+				bottom_left: "@DEFAULT_PANEL_BACKGROUND_BOTTOM",
+				bottom_right: "@DEFAULT_PANEL_BACKGROUND_BOTTOM"
+			},
+			border_palette: {
+				top_left: `#60${colorCode.replace('#', '')}`,
+				top_right: `#60${colorCode.replace('#', '')}`,
+				bottom_left: `#50${global.amplifyHexColor(colorCode, -25, true)}`,
+				bottom_right: `#50${global.amplifyHexColor(colorCode, -25, true)}`
+			}
+		});
+	}
 
 	return $Rarity["create(java.lang.String,java.util.function.UnaryOperator)"](name, color)
 }
@@ -209,7 +211,7 @@ ItemEvents.modification(event => {
 		// console.log(id)
 		let item = Item.of(id);
 
-		let itemRarity = item.getRarity().name().toLowerCase();
+		let itemRarity = (id == 'evilcraft:biome_extract') ? 'common' : item.getRarity().name().toLowerCase();
 		let foundMatch = false;
 		let rarity = 'chapter_0';
 		Object.keys(global.stageRestrictions).forEach(chapter => {
