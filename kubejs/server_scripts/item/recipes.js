@@ -8698,6 +8698,11 @@ ServerEvents.recipes((event) => {
 		[]
 	);
 
+	event.replaceOutput({ output: 'alexscaves:candy_cane_hook' },
+		'alexscaves:candy_cane_hook',
+		'kubejs:candy_cane_hook'
+	);
+
 	// SimplySwords recipes
 	/** @type {Special.RecipeId[]} */
 	const simplySwordsRecipesToRemove = [

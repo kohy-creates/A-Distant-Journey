@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"axis=y": {
+			"model": "kubejs:block/candy_cane_hook_chain"
+		},
+		"axis=x": {
+			"model": "kubejs:block/candy_cane_hook_chain",
+			"x": 90,
+			"y": 90
+		},
+		"axis=z": {
+			"model": "kubejs:block/candy_cane_hook_chain",
+			"x": 90
+		}
+	}
+}

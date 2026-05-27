@@ -426,5 +426,18 @@
 		},
 		"texture": "kohara:attribute/spell_discount",
 		"compare": "higher_better"
+	},
+	"kubejs:enchantment_power": {
+		"display": {
+			"mainhand": "flat",
+			"offhand": "flat",
+			"feet": "flat",
+			"legs": "flat",
+			"chest": "flat",
+			"head": "flat",
+			"potion": "flat"
+		},
+		"texture": "kohara:attribute/enchanting",
+		"compare": "higher_better"
 	}
 }
