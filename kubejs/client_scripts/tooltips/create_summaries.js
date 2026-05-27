@@ -20,7 +20,6 @@ const itemsToTooltip = [
 		controls: [
 			{
 				control: 'dashing',
-				requiresHold: false,
 				text: [
 					'_Loads itself automatically_, and remains loaded for the next 6 seconds.',
 					'This _does not use any arrows_ from player\'s inventory.'
@@ -28,7 +27,6 @@ const itemsToTooltip = [
 			},
 			{
 				control: 'fired',
-				requiresHold: false,
 				text: [
 					'Unleashes an almost _hitscan-like Arrow_ that deals massive damage',
 					'Arrows are _destroyed_ when they _hit a block_.'
@@ -46,7 +44,6 @@ const itemsToTooltip = [
 		controls: [
 			{
 				control: 'used',
-				requiresHold: false,
 				text: [
 					'_Redeems Experience_ points contained within.'
 				]
@@ -54,7 +51,6 @@ const itemsToTooltip = [
 			},
 			{
 				control: 'used while sneaking',
-				requiresHold: false,
 				text: [
 					'Consumes the _entire stack_ instantly.'
 				]
@@ -3596,7 +3592,6 @@ const itemsToTooltip = [
 			},
 			{
 				control: 'powered',
-				requiresHold: false,
 				text: [
 					'Increases _damage and defense of all mobs_ in a large radius.',
 					'Building the base out of _Blocks of Netherite_ increases _effect potency_.',
@@ -3605,7 +3600,6 @@ const itemsToTooltip = [
 			},
 			{
 				control: 'powered and a Piglin/Pigman is nearby',
-				requiresHold: false,
 				text: [
 					'_Prevents zombification_ outside of native dimension.'
 				]
@@ -3619,7 +3613,6 @@ const itemsToTooltip = [
 		controls: [
 			{
 				control: 'combined with any Dye',
-				requiresHold: false,
 				text: [
 					'Permanently _adds the used Dye_ to the Palette,',
 					'allowing it to be used to _paint on a Canvas_'
@@ -3634,7 +3627,6 @@ const itemsToTooltip = [
 		controls: [
 			{
 				control: 'right-clicked on any Planks',
-				requiresHold: false,
 				text: [
 					'Transforms the _Planks_ into a _Wallpaper Block_'
 				]
@@ -3648,7 +3640,6 @@ const itemsToTooltip = [
 		controls: [
 			{
 				control: 'right-clicked on any Wallpaper Block',
-				requiresHold: false,
 				text: [
 					'Adds a _Skirting Board_ to the clicked block.',
 					'Can be added _separately to the top_ and _to the bottom_ of the block.'
@@ -3663,7 +3654,6 @@ const itemsToTooltip = [
 		controls: [
 			{
 				control: "used on a bonemealable block",
-				requiresHold: false,
 				text: [
 					"Triggers the _Bone Meal_ effect in a _7x7 area_",
 					"Every block has an individual chance to trigger the effect"
@@ -3671,7 +3661,6 @@ const itemsToTooltip = [
 			},
 			{
 				control: "used on a bonemealable block while sneaking",
-				requiresHold: false,
 				text: [
 					"Triggers the _Bone Meal_ effect on the _target block_",
 					"Unlike the area effect, _it never fails_"
@@ -3686,7 +3675,6 @@ const itemsToTooltip = [
 		controls: [
 			{
 				control: "used on a Blaze Burner",
-				requiresHold: false,
 				text: [
 					"Triggers the _Blaze Cake_ effect on the targeted",
 					"Blaze Burner that lasts much longer"
@@ -3984,7 +3972,6 @@ const itemsToTooltip = [
 			},
 			{
 				control: 'right-clicked with a Hammer',
-				requiresHold: false,
 				text: [
 					'Changes the look of the block'
 				]
@@ -4002,7 +3989,6 @@ const itemsToTooltip = [
 		controls: [
 			{
 				control: 'right-clicked with a Cushion',
-				requiresHold: false,
 				text: [
 					'Changes the look of the block'
 				]
@@ -4021,7 +4007,6 @@ const itemsToTooltip = [
 		controls: [
 			{
 				control: 'right-clicked with a Sheet',
-				requiresHold: false,
 				text: [
 					'Changes the look of the block'
 				]
@@ -4037,14 +4022,12 @@ const itemsToTooltip = [
 		controls: [
 			{
 				control: 'right-clicked with a Cushion',
-				requiresHold: false,
 				text: [
 					'Changes the look of the block'
 				]
 			},
 			{
 				control: 'right-clicked with a Sheet',
-				requiresHold: false,
 				text: [
 					'Changes the look of the block'
 				]
@@ -4057,14 +4040,32 @@ const itemsToTooltip = [
 		controls: [
 			{
 				control: 'right-clicked with a Hammer',
-				requiresHold: false,
 				text: [
 					'Changes the look of the block'
 				]
 			}
 		]
 	},
-
+	{
+		item: /kubejs:.*bandage/,
+		summary: [
+			'A small piece of fabric for medical purposes.'
+		],
+		controls: [
+			{
+				control: 'used',
+				text: [
+					'Restores a small amount of health.'
+				]
+			},
+			{
+				control: 'used on a friendly mob',
+				text: [
+					'Restores a smal amount of its health instead of player\'s.'
+				]
+			}
+		]
+	}
 ];
 
 ItemEvents.tooltip((tooltip) => {

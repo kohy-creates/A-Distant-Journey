@@ -99,8 +99,6 @@ ItemEvents.tooltip(event => {
 		/crockery_combo/,
 		/handcrafted:.*cushion/,
 		/handcrafted:.*sheet/,
-		// /wallpapers:.*wallpaper_roll$/,
-		// /wallpapers:.*skirting_board$/,
 		'twilightforest:auroralized_glass'
 	], (item, advanced, text) => {
 

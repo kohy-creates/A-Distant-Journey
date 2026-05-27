@@ -117,7 +117,9 @@ ServerEvents.recipes((event) => {
 		'botania:tiny_planet',
 		'botania:tiny_planet_block',
 		'twilightforest:knightmetal_ingot',
-		'twilightforest:ice_sword'
+		'twilightforest:ice_sword',
+		/majruszsdifficulty:tattered_.*$/,
+		/majruszsdifficulty:.*bandage/
 
 	].concat(global.blacklistedItemsArray);
 	disabledItemRecipes.forEach(item => {
@@ -446,6 +448,11 @@ ServerEvents.recipes((event) => {
 			replacement
 		);
 	};
+
+	event.shapeless(
+		'20x kubejs:bandage',
+		['majruszsdifficulty:cloth']
+	).id('adj:bandage');
 
 	event.shaped(
 		'rediscovered:ruby',
@@ -8971,6 +8978,7 @@ ServerEvents.recipes((event) => {
 	oreExcavationBasicVein('mythicmetals:raw_prometheum', 'Prometheum Vein', 'prometheum', 128, 32, 'c:is_jungle');
 	oreExcavationBasicVein('mythicmetals:raw_orichalcum', 'Orichalcum Vein', 'orichalcum', 128, 32);
 	oreExcavationBasicVein('mythicmetals:raw_mythril', 'Mythril Vein', 'mythril', 128, 32);
+	oreExcavationBasicVein([Item.of('hybrid-aquatic:sulfur'), Item.of('kubejs:sulfur').withChance(0.2)], 'Sulfur Vein', 'sulfur', 64, 32, null, 500, 128, null, 'kubejs:sulfur');
 	oreExcavationBasicVein('mythicmetals:raw_palladium', 'Palladium Vein', 'palladium', 256, 32, 'is_nether', 1200, null, 'createoreexcavation:diamond_drill');
 	oreExcavationBasicVein('aether_redux:raw_gravitite', 'Gravitite Vein', 'gravitite', 256, 32, 'aether:is_aether', 1200);
 	oreExcavationBasicVein('aether:zanite_gemstone', 'Zanite Vein', 'zanite', 128, 32, 'aether:is_aether', 800);

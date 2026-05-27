@@ -215,7 +215,7 @@ StartupEvents.registry('item', registry => {
 		.maxStackSize(64)
 		.texture('kubejs:item/manasteel_sheet')
 		.displayName('Manasteel Sheet');
-		// .tooltip('§7Used to craft Manasteel Armor');
+	// .tooltip('§7Used to craft Manasteel Armor');
 
 	registry.create('skull_fragment', 'basic')
 		.maxStackSize(64)
@@ -949,7 +949,20 @@ StartupEvents.registry('item', registry => {
 		.maxStackSize(64)
 		.tag('botania:runes')
 		.displayName('Rune of Life')
-		.texture('kubejs:item/rune_of_life')
+		.texture('kubejs:item/rune_of_life');
+
+	registry.create('bandage')
+		.maxStackSize(64)
+		.tag('adj:bandage')
+		.displayName('Bandage')
+		.texture('majruszsdifficulty:item/bandage');
+
+	registry.create('golden_bandage')
+		.maxStackSize(64)
+		.tag('adj:bandage')
+		.displayName('Golden Bandage')
+		.texture('majruszsdifficulty:item/golden_bandage')
+		.rarity('uncommon');
 
 });
 

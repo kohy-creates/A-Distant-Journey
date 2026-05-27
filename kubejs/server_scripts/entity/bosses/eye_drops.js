@@ -32,7 +32,7 @@ EntityEvents.death(event => {
 });
 
 ItemEvents.pickedUp(/kubejs:eye_of_.*/, event => {
-	for (const [entity, eye] of Object.entries(global.eyeDrops)) {
+	for (let [entity, eye] of Object.entries(global.eyeDrops)) {
 		if (eye == event.getItem().getId().toString().replace('kubejs:eye_of_', '')) {
 			let pDataChapters = event.getServer().persistentData.chapters;
 			let currentChapter = parseInt((pDataChapters.current_stage.toString()).replace('chapter_', ''));

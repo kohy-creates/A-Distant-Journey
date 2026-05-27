@@ -898,30 +898,8 @@
   },
   "items": {
     "bandage": {
-      "normal_effects": [
-        {
-          "id": "minecraft:regeneration",
-          "amplifier": 0,
-          "duration": 10.0
-        },
-        {
-          "id": "adjcore:lesser_instant_health",
-          "amplifier": 0,
-          "duration": 1.0
-        }
-      ],
-      "golden_effects": [
-        {
-          "id": "minecraft:regeneration",
-          "amplifier": 1,
-          "duration": 12.0
-        },
-        {
-          "id": "adjcore:lesser_instant_health",
-          "amplifier": 1,
-          "duration": 1.0
-        }
-      ]
+      "normal_effects": [],
+      "golden_effects": []
     },
     "evoker_fang_scroll": {
       "attack_damage": 58,

@@ -1,6 +1,14 @@
 const TooltipEdits = {
 	TIP_CONFIG: [
 		{
+			items: 'hybrid-aquatic:dragonfish',
+			text: '\'Not to be confused with Dragon Fish\''
+		},
+		{
+			items: 'tide:dragon_fish',
+			text: '\'Not to be confused with Dragonfish\''
+		},
+		{
 			items: global.rediscoveredFurniture(),
 			text: 'Comes with a unique feeling of nostalgia'
 		},
@@ -103,26 +111,19 @@ const TooltipEdits = {
 				'wooden_hoe',
 				'wooden_shovel',
 				'shieldexp:wooden_shield',
-			],
-			text: '\'We all have to start somewhere!\''
-		},
-		{
-			items: [
 				'kubejs:wooden_helmet',
 				'kubejs:wooden_chestplate',
 				'kubejs:wooden_leggings',
 				'kubejs:wooden_boots',
 			],
-			text: '\'It\'s better than nothing...\''
+			text: '\'We all have to start somewhere!\''
 		},
 		{
 			items: [
 				'golden_apple',
 				'enchanted_golden_apple',
-				'majruszsdifficulty:bandage',
-				'majruszsdifficulty:golden_bandage'
 			],
-			text: 'Stops bleeding.'
+			text: 'Stops bleeding when eaten.'
 		},
 		{
 			items: 'enchanted_golden_apple',

@@ -60,7 +60,9 @@ const replaceItemsMap = {
 
 	'aether:skyroot_stick': 'stick',
 
-	'brass_geodes:ruby': 'rediscovered:ruby'
+	'brass_geodes:ruby': 'rediscovered:ruby',
+	'majruszsdifficulty:bandage': 'kubejs:bandage',
+	'majruszsdifficulty:golden_bandage': 'kubejs:golden_bandage',
 }
 
 LootJS.modifiers((event) => {
@@ -254,6 +256,18 @@ LootJS.modifiers((event) => {
 				LootEntry.of('evilcraft:dark_gem_crushed').when(c => c.randomChance(1.0)).limitCount([1, 2]).applyLootingBonus([0, 1])
 			)
 	};
+
+	event.addEntityLootModifier([
+		'zombie',
+		'husk',
+		'born_in_chaos_v1:decaying_zombie'
+	])
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('majruszsdifficulty:cloth')
+					.when(c => c.randomChanceWithLooting(0.15, 0.05))
+			)
+		});
 
 	event.addEntityLootModifier(
 		[
@@ -748,18 +762,18 @@ LootJS.modifiers((event) => {
 		}
 	});
 
-	Object.entries(global.eyeDrops).forEach((entityId, eyeId) => {
+	for (let [entityId, eyeId] of Object.entries(global.eyeDrops)) {
 		event.addEntityLootModifier(entityId)
 			.pool(pool => {
 				pool.rolls(0);
 				pool.addLoot(
 					LootEntry.of(
-						`kubejs:eye_of_${eyeId}`,
+						`kubejs:eye_of_${global.eyeDrops[entityId]}`,
 						{
 							display: {
 								Lore: [
 									'{"text":"Guaranteed to drop on 1st kill","italic":false,"color":"gold"}',
-									'{"text":"20% chance to drop on every next kill","italic":false,"color":"gold"}',
+									'{"text":"20%% chance to drop on every next kill","italic":false,"color":"gold"}',
 									'{"text":"(33% in Hardcore mode)","italic":false,"color":"gold"}'
 								]
 							}
@@ -767,7 +781,7 @@ LootJS.modifiers((event) => {
 					)
 				);
 			});
-	});
+	}
 
 	event.addLootTableModifier([
 		'kubejs:treasure_bag/aether_slider',
