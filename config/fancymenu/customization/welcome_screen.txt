@@ -88,7 +88,7 @@ element {
   shadow = false
   scale = 1.0
   base_color = #FFFFFFFF
-  text_border = 2
+  text_border = 4
   line_spacing = 2
   enable_scrolling = true
   auto_line_wrapping = true
