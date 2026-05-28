@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = generic_dirt_message_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1779661378897
+  last_edited_time = 1779976057465
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:2b93c5fb-ca41-472e-905a-22c54bad02d4-1779661291370] = [groups:][instances:]
+  [loading_requirement_container_meta:b193341d-0a6f-45c2-a0a9-0b37dc6154a2-1779976030284] = [groups:][instances:]
 }
 
 menu_background {
@@ -330,6 +330,11 @@ decoration_overlay {
 }
 
 customization {
+  action = setopenaudio
+  path = [source:location]adj:sounds/enter_world.ogg
+}
+
+customization {
   action = backgroundoptions
   keepaspectratio = false
 }
@@ -347,8 +352,7 @@ scroll_list_customization {
 
 layout_action_executable_blocks {
   open_screen_executable_block_identifier = 47ac684d-e04d-49f3-91ce-cd30e1619bf8-1779661353316
-  [executable_action_instance:5c70d195-b537-4c9c-a6d1-c2d0eba95763-1779661356619][action_type:play_audio] = {"audioSource":"[source:location]adj:sounds/enter_world.ogg","soundChannel":"master","baseVolume":1.0}
-  [executable_block:47ac684d-e04d-49f3-91ce-cd30e1619bf8-1779661353316][type:generic] = [executables:5c70d195-b537-4c9c-a6d1-c2d0eba95763-1779661356619;]
+  [executable_block:47ac684d-e04d-49f3-91ce-cd30e1619bf8-1779661353316][type:generic] = [executables:]
 }
 
 element {

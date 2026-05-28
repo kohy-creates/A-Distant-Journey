@@ -110,7 +110,7 @@ variable {
 
 variable {
   name = option.hunger_style
-  value = steak
+  value = apple
   reset_on_launch = false
 }
 
