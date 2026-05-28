@@ -1,3 +1,9 @@
+# 1.4.0.1 (Hotfix)
+
+- Fix launching the pack on Linux Debian.
+- Fix all items behaving like Bandages.
+- Fix world border script on dedicated server.
+
 # Update 1.4.0 ~ Adventure Squared
 
 Took a while, eh?
