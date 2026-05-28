@@ -1,0 +1,331 @@
+# Update 1.4.0 ~ Adventure Squared
+
+Took a while, eh?
+
+Whenever I was close to releasing the update, I kept getting some new ideas to try out and implement. The list kept getting longer and longer, until I decided to leave some stuff for future updates.
+
+This changelog doesn't actually include everything. Both because I want all of you to find out some stuff yourself AND because I forgot about adding those :3 So just give everything a try and see for yourself!
+
+## Backwards compatibility notice
+**Old worlds are NOT compatible with 1.3.2.** Yeah, this sucks, but I can't really do anything about it. You can't even load into your old worlds, as the game just prevents you from doing so, meaning that they won't be corrupted by accident. You can still keep playing them
+
+## Mod changes
+
+Plenty of mods present in 1.3.2 have been removed (or replaced) due to causing issues, or just due to being simply redundant:
+- **Immersive Optimizations** - removed due to causing a minor memory leak + causing a ton of gameplay and performance issues (e.g. distant Wither Storm lagging out the server, Red Dragon getting stuck far from the pyramid)
+- **Perception** - removed due to causing.
+- **Bad Optimizations** - doesn't really optimize much. In fact, I am quite sure the modpack runs better without it.
+- **Presence Footsteps** - enough ambient mods already + it's ran in every modpack ever made.
+- **Hey Berry! SHUT UP!** - redundant
+- **Hellion's Sniffer+** - caused some issues with new content mods
+- **Faster Random** - doesn't do anything 99% of the time.
+- **All of someaddon's mods** - quite redundant, most of them were replaced with alternatives. Removal was made in preparation for the Modrinth release.
+- **Loot Integrations** - it didn't do much at all, since I edit most loot tables myself.
+- **Particular** - was used only for the falling leaves feature.
+- **Ecologics** - didn't really add a whole lot on its own, I only kept it for the coconut palms. I ended up replacing it with Beachparty.
+- **Backpacked** - replaced.
+- **Bedspreads** - redundant.
+- **Better HP** - redundant.
+- **Boss Ultimatum** - redundant.
+- **CapeJS** - replaced with Quick Skin.
+- **CERBON's Better Totem of Undying** - replaced.
+- **Concurrent Chunk Management Engine** - removed as it was an underlying cause of many different console error spam issues and crash bugs.
+- **Ender Storage** - replaced with Create Utilities.
+- **Enhanced Visuals** - too obtrusive and didn't really feel Minecrafty enough.
+- **ExtraSounds Next** - replaced with Sounds.
+- **Fancy Block Particles Renewed** - caused harsh performance problems.
+- **Inline** - wasn't really useful.
+- **Item Physics** - I simply didn't want to use it anymore lol.
+- **Lucky's Spelunker's Charm II** - was only used for a few minor features which I reimplemented in like 5 minutes.
+- **Map Atlases** - replaced with a much better minimap mod. More on that later ;)
+- **More Villager Trades** - replaced.
+- **Item Obliterator** - replaced.
+- **Wakes Reforged** - caused performance issues.
+- **What Are They Up To** - compatibility nightmare.
+- **Zombie Awareness** - caused plethora of side effects on gameplay.
+- **The Bumblezone** - doesn't have as much of a purpose than other.
+- **Enchantment Descriptiosn** - replaced.
+- **Iron Chests** - not needed annymore.
+
+Well that sure is a lot! So now let's go through everything new...
+
+### Villager Comfort
+
+I have received some backlash for including this one lmao.
+
+I reduced some internal happiness values so that in general, villagers are a lot happier in what would be previously making them unhappy. I also reduced the max unhapiness penalty from +100% price markup to +50%, which fun fact, puts it on par with Terraria's. I am looking for some ways to make the hapiness system a bit more visible in-game, so that you can easily tell what could be improved and what not, but that is currently out of scope. A proper villager update is planned at some point btw ;)
+
+### Via Romana
+
+Via Romana fixed all of their crash, lag and stability bugs in the 2.0 release, meaning that I can FINALLY include it in the modpack! This means that the quick travel system made through walking paths is now expanded and better in every way.
+
+### EvilCraft
+
+Magic mod roster is being expanded with the addition of dark crafts and blood magic. This means that you are now able to get mob spawns eggs, change biome into different ones and automate previously non-renewable materials in fancy ways.
+
+### Xaero's Minimap and World Map
+
+Map Atlases was replaced with something less clunky, much more user friendly and not as expensive! The mod itself was alright, but it lacked some core features of a good world map mod AND it was pretty expensive to use reliably, requiring to be 'refueled' with maps.
+
+The core basics of the system haven't changed much - you still need to craft a Map Atlas to be able to use the minimap and worldmap. What is new then?
+- Waypoints. Like actual waypoints and not just banners with names.
+- Atlas has its own dedicated accessory slot and isn't lost on death if equipped there.
+- World map is a lot more detailed and responsive.
+- Both the minimap and world map work underground and in roofed dimensions (currently only The Nether).
+- Map Atlas recipe was nerfed to be more expensive due to all of the above changes, but I'd say it's a worthy investment.
+
+### Botania x Ars Nouveau
+
+Biggest change of the update related to the magic roster is integrating Botania and Ars Nouveau together! This is a VERY new thing that I haven't seen being done before, so please bare with me if bugs arise, as I didn't have enough time to properly test everything.
+
+Let's start with the most important changes of the bunch:
+- Fixed Mana Boost and Mana Regen enchantments, as well as Mana Capacity Threads, having no effect on any armor set with innate magic bonuses.
+> This is probably the biggest change out of the bunch, as it greatly increases maximum mana attainable by players by a hefty ton. I expect this to break some balancing, so expect this to be tweaked after first batches of player feedback arrives.
+
+- Rebalanced most magic gear to provide greater bonuses to maximum Mana, Mana Regen, Spell Power, etc.
+> Magic gear was VERY lackluster before when it comes to mana bonuses, so those are seeing some decent increases. Hopefully this makes mage a viable class. Now I only need to rework the entire ranger class lmao.
+
+- Spell Power is now a percent boost to damage rather than an additive one. Most gear that grants increased Spell Power was buffed even up to tenfold to make the damage scale better in mid- and late-game.
+- All glyphs were kicked down a tier. This means that what was previously a tier 2 and tier 3 glyphs are now tier 1 and tier 2 respectively. Existing tier 1 glyphs are unchanged.
+- Glyph recipes have been changed, making them easier to unlock.
+
+- All generating flora generates about 50% - 60% more mana, and late game producers make even more than before.
+> I had a lot of complaints that Botania is a very slow mod, and since it is a core feature of an already slow modpack, I decided to boost the generation speed of all flowers to make all crafting processes less time consuming.
+
+- Ars' Essence recipes have been changed to require more common materials. They are now also crafted quicker
+- Removed Source and unified it with Mana (Botania). Most blocks that utilize Source have been renamed, retextured/recolored and had their recipes changed.
+- In fact, while on the topic of recipes, most Botania, Ars Nouveau and EvilCraft recipes have been changed to be more interconnected and dependant on each other.
+> In general, those recipes are interconnected, but very streamlined, so you shouldn't have any issues with completing the crafting trees.
+
+- Removed Lexica Botania, Worn Notebook, and whatever the EvilCraft guidebook was called. Relevant (and less relevant) entries have been merged into item descriptions and updated to be a little bit more relevant (if I missed anything then let me know).
+- Merged Botania and Ars Nouveau achievement trees together.
+- Player Mana starts to regenerate earlier. Regeneration amount now scales linearly rather than being soft capped at 20/s.
+- Wilden Chimera now requires sacrificing an Enchanted Golden Apple rather than all 3 Wilden drops.
+- Scrying Ritual now works with all modded ores. Nerfed Tablet recipe.
+- Fallen Kanade now works on ALL friendly mobs, increases health regen by 2 (was 6❗) but now stacks with Regeneration and other sources of healing per second. It now also slightly reduces the duration of harmful effects of all nearby mobs. 
+- Fallen Kanade range increased (2 blocks -> 10 blocks). 
+
+
+### Create
+
+Create also saw some love!
+
+In order to bring some freshness to the mod, since it is used absolutely everywhere, **most recipes have been changed from the base mod**. They aren't any more difficult to craft and are pretty logical. I hope this doesn't really change the mod's pacing, but simply brings a tiny bit of well needed freshness to the mod we all know and love (or know and dislike).
+
+- Added **Create Utilities**, replacing Ender Storage.
+> Ender Storage was a bit lackluster. CU also includes a Void Motor which you can use to transmit rotation power AND stress without any shafts or cogwheels!
+
+- Windmills spin twice as fast.
+> I hope this doesn't make them too overpowered. I buffed it because I recently built one during a playthrough of another modpack, and it was pretty underwhelming for the amount of resources and effort it took.
+
+- Increased Fluid Tank capacity from 16 buckets to 32 buckets (for context, Create's default is 8).
+> In general, they are cheaper, easier to set up in bulk and have more capacity than new **Dark Tanks** (EvilCraft), but the latter have the upside of being able to be merged with other Dark Tanks, increasing their capacity without taking any extra space. I decided to buff the regular fluid tanks so that they aren't completely outclassed.
+- Added Create: Slice and Dice. Because one person asked me to do it and it could be fun.
+
+- Added Create Ore Excavation (with support for most of the modpack's modded ores).
+- Rebalanced (or *rarer* removed) some recipes from Create: Ultimate Factory.
+- Removed Create: Trading Floor, as it didn't really work well with the villager happiness system.
+- Fan recipes take longer to process (7.5s -> 15s) to nerf bulk smelting/smoking. Will be adjusted again if needed.
+- Crush Glyph (Ars Nouveau) now mimics Create milling recipes.
+- Backported some Create mod bugfixes (Create Repair).
+
+### Cracker's Wither Storm
+
+Oh I got PLENTY of feedback and ideas for this one from all of you!
+
+- Wither Storm evolves MUCH quicker in early phases, and slightly faster in later ones.
+> From my tests, stage 1 to stage 4 transformation took about 15 minutes. Previously it was about an hour long.
+
+- Wither Storm is plenty more destructive on the world.
+- Wither Storm moves about 2x quicker. Carries over to Hardcore worlds.
+- Wither Storm can now chase after stationary target at 1.33x its usual speed. Also carries over to Hardcore worlds.
+- Further increased movement speed multipliers in Hardcore mode.
+- Wither Storm now properly jumps to phase 4 when killed in the early phases.
+- Wither Storm plays dead for half as long (5 in-game days -> 3 in-game days).
+- Sickened Mobs can spawn naturally in the world if Wither Storm is in phase 4 and above, with chances rising as it grows stronger.
+- Sickened Mobs in the overworld are slightly weaker. Doesn't apply to Sickened mobs in The Bowels (Command Block fight is just as hard as it should be).
+- All Sickened Mobs can drop Tainted Dust to provide extra resources.
+- Music in the world will play at 70% the usual speed and pitch as long as The Wither Storm is alive (does not apply to boss music).
+
+## Balance Changes
+
+- Increased weapon damage, armor defense, mob health and damage scaling to hopefully make it more worthy to upgrade equipment with progression.
+
+- Reworked and moved Mythril gear (Mythic Metals) to Chapter 3 (from Chapter 1).
+- Reworked and moved Phoenix gear (Aether) to Chapter 4 (from Chapter 2).
+- Reworked and moved Obsidian armor set (Aether) to Chapter 4 (from Chapter 2).
+- Reworked and moved Prometheum gear (Mythic Metals) to Chapter 4 (from Chapter 0).
+- Reworked and moved Neptune armor set (Aether) to Chapter 3 (from Chapter 2).
+- Reworked and moved Terra Blade (Botania) to Chapter 4 (I don't remember from which chapter).
+> All of those sets have been re-tiered and reworked accordingly. Chapter 0, 1 and 2 are just bloated with armor and toolsets, and this is the start of huge power shifts.
+
+- Reworked most armor set bonuses and piece effects.
+- Eternal Beef now takes 15 minutes to cook in a Smoker (or more than an hour over a Campfire).
+- Life Crystals follow a new generation - more generate closer to the bottom of the world, but they start generating as early as Y 60. Generation peaks at about Y -30.
+
+- Conduits deal more damage (2 -> 10).
+> Still not a lot, but I am looking to potentially reworking the defensive capabilities of Conduits in the future.
+
+- Special Arrow recipes have better cost ratio (e.g. homing arrows from Alexs Caves now take 60 to craft and yield 60, crafting for those that have more than 9 ingredients is done through new means).
+- Nuclear Furnace (Alex's Caves) is now about 50% quicker.
+- Heavily nerfed Born in Chaos mobs.
+- Reduced Poison damage by 1 (4 -> 3 on players and 6 -> 5 on entities).
+- Decreased Wither damage (6 + 0.5% of max health -> 3 + 0.3% of max health).
+- Wither effect now applies extra, stacking 30% healing reduction while it's active.
+- Shocked effect inflicted by Stormyx tools inflicts a 10% movement speed penalty and a 20% healing reduction.
+- Fixed Stormyx armor having default defense values, far lower than intended.
+- Ghost of Captain Cornelia can now only be spawned in Chapter 2 and beyond.
+
+- Nerfed Iron, Diamond and Netherite armor sets.
+- Reduced Rose Gold tools mining speed (7 -> 6.5).
+- Reduced Diamond tools mining speed (8 -> 7).
+> Diamond gear was meta since release - you could get all pieces and not have to get anything else for the entire early-game.
+
+- Reduced Hydroangeas passive generation (8 -> 4).
+- Increased Endoflame generation (5 -> 9).
+> I have both of those values written down from BEFORE I decided to buff everything by the aforementioned 50% or so, so those values aren't necessarily true. Just know that they have been flipped around.
+
+- Netherite Ingots no longer generate in loot tables.
+
+- Most MCDW weapons now have unique effects on attacks or on use:
+  - Butterfly Crossbow - arrows don't obey gravity.
+  - Exploding Crossbow - arrows explode regardless of the enchantments present on the item
+  - The Last Laugh - attacks have a chance to spawn resources (mostly nuggets)
+  - Void Touched Blades - now come pre-enchanted with Void Strike.
+  - Grave Bane - undead mobs are affected with Vulnerability Hex.
+  - Venom Glaive - hit mobs are poisoned
+  - Winter's Touch - arrows now freeze mobs on hit
+  - Resolute Tempest Knife - steals movement speed for 10 seconds
+  - Pride of the Piglins - 14% base critical chance rather than 4%.
+  - Azure Seeker, Heavy Crossbow, Slayer Crossbow - projectile velocity increased by 30%, 60% and 120% respectively.
+  - Veiled Crossbow - hitscan arrows.
+  - Call of The Void - shadow apparitions will strike shot mobs for extra damage.
+  - Heartstealer - actually heals the player now
+  - Soul Scythe - 14% base critical strike chance
+  - Skull Scythe - 24% base critical strike chance and 20% increased crit damage (220% total).
+  - Fangs of Frost - slowly freeze target.
+  - Backstabber - deals 50% more damage to mobs that aren't actively targetting you.
+  - Swift Striker - same as above (for now).
+  - Obsidian Claymore - massively increased damage and crit chance.
+> Minecraft Dungeons Weapons mod was introduced on release simply to increase the gear pool in the early game. None of the items had any outstanding abilities - or in fact any abilities at all.
+> There are still some without any special powers. They are all scheduled to get a rework.
+
+- Non-aether items are no longer less effifient in the Aether.
+
+## Other
+
+- Removed all Nicki Minaj references from the splashes. Those were made way before her sudden MAGA drift and before she became an irrelevant whale.
+
+### Gameplay changes
+
+Some fundamental changes have been made to the gameplay of ADJ.
+
+- Default world size is now 20k x 20k (10k blocks in each of the 4 directions from x0 y0).
+> Other sizes you can select are: 
+>   - 10k x 10k (5k blocks in each direction)
+>   - 5x x 5x (2.5k blocks in each direction, **NOT RECOMMENDED**)
+>   - Infinite (vanilla)
+
+- Spriting uses even fewer hunger points (ADJ already had a -33% modifier on that, now it's -50%).
+- Most other actions that drain the hunger bar do it either 50% or 75% slower.
+> Hunger in ADJ is supposed to be a secondary problem with food being more of a roleplaying/buff type stuff.
+
+- Sprinting is now an additive bonus rather than multiplicative.
+> It doesn't sound like so, but it's a HUGE nerf to movement speed buffs. Movement speed when unbuffed remains UNCHANGED.
+
+- Adjusted fall damage values and safe fall distance.
+- Protection enchantments now work again (yeah, they used to not work at all).
+
+- Changed internal damage logic ordering.
+> Let's say you deal 50 damage in a strike against a mob with 50 defense. Here are the differences.
+> Old order:
+>     1. Damage variation (+-15%) - let's say we roll -10%, meaning our damage is now 45.
+>     2. Crit strikes logic - we roll a crit strike, our damage is now 90.
+>     3. Percentage reductions - nothing changes
+>     4. Flat reductions (reduced by half the armor value) - [90 - 50 /2] = 65 damage.
+>     5. Minimum damage (will always be at least 1) - nothing changes
+> Final damage: 65
+> 
+> New order (rules haven't changed):
+>     1. Damage variation - -10%, our damage is 45
+>     2. Percentage reductions - nothing changed
+>     3. Percentage reductions from enchantments - bug fix, but here nothing changed.
+>     4. Flat reductions - [45 - 50 / 2] = 20
+>     5. Minimum damage - nothing changes
+>     6. Crit strikes logic - we roll a crit strike, our damage is now 40
+> Final damage: 40
+>
+> Yes, this is overall a nerf, but this is how it was always supposed to work.
+- All food item can be eaten regardless of food level.
+- Regeneration now provides healing through the health regeneration attribute rather than its own separate logic.
+- Villagers got a whole set of new trades, which include items from many different mods.
+    - Armor sold by Villagers got a hefty price nerf.
+    - Diamond gear sold by Armorsmiths, Toolsmiths and Weaponsmiths now takes a Diamond Upgrade Smithing Template as a second input.
+- Unobtainable (here read: chapter-locked) items are partially hidden. I couldn't hide them fully from JEI due to how mods I use work, but what I could do was make them render slightly differently ;3 
+- Mobs have chance to drop Stars that instantly restore 50 Mana or Hearts which instantly heal 20 Health when collected.
+
+- Spear-type weapons now have their own gimmick - critical strikes reduce enemy defense by 5 for some time. 
+- Star Platinum gear now has a new effect - stars will fall on nearby mobs and deal extra damage.
+> I plan on making more weapon-type specific gimmicks in the future.
+
+- Hellforge is now a tier 2 forge.
+- Adamantite Forge is now a tier 3 forge.
+- Ender Forge is now a tier 4 forge.
+> Since Adamantite Forge is now tier 3 rather than 2, it gets increased output amounts.
+
+- Explosions now use EXPERIMENTAL damage system that is a lot more streamlined and doesn't rely purely on size calculations.
+> Explosion base damage depends on source - arrow, weapon, entity type, etc.
+> Explosions have a radius parameter equal to twice its size. However, they also have a linear damage falloff beyond a certain point.
+
+### Performance changes
+
+First off, the modpack now requires **8 GB of RAM** in order to just launch, with 10GB being recommended. In comparison, version 1.3.2 could be ran with as little as **6 GB** allocated.
+
+Despite the modpack getting heavier, I'd say the performance and stability is up compared to previous versions. Some notable changes include:
+- **Particle Core** update (2.0 -> 3.0), which optimizes particle rendering even further than before.
+- **ModernFix, Gnetum, Ixeris**, all updated as well.
+- **Patched a few separate memory leak issues**, mostly related to chunks and such. Some memory leak issues still persist when leaving and rejoining worlds/servers, but they no longer happen when switching dimensions inside the same world/server or by dying.
+- Changed some config values in different mods to alleviate both client and server load.
+- Introduced new optimization mods. Most of those come with minor performance gains, but they add up together:
+    - Kerria
+    - Async Logger
+    - Dimensional Leak Fix
+    - Biome Spy
+    - Bocchium
+    - Create Better FPS (with shaders)
+    - Explodee
+    - Flerovium (ADJ included it in the past, but had to remove it due to rendering issues with Quark's pipes - those issues have been resolved)
+- Properly fixed Unusual End crashes. They were supposed to be fixed in 1.3.0, but the fix I implemented was done improperly.
+- Both the FreshAnimations resource pack and its addons are no longer hidden in Resource Packs menu for those who wish to disable them for performance reasons.
+- Fixed a very rare random soft lock with Ars Nouveau in death screen.
+
+### Visual/Ambient Changes
+
+- Backported 26.2 music.
+- Reintroduced Aether music in the Aether (previously it went unused).
+- Shifted some music tracks around in the music pools, so expect to rarely hear something new where you haven't heard it before.
+- Added boss-specific music.
+- Made some changes to the sky colors, nighttime stars, nighttime lightning intensity, light colors (we have cool sunrises and sunsets WITHOUT SHADERS now and I am proud of it. They don't have any impact on performance).
+- Potions appear enchanted again, like in the good old days.
+- Backported the 1.21.4 textures of MythicMetals mod.
+- OptiFine, LabyMod, MinecraftCapes and more capes are now shown by default. There is an additional cape picker where you can either choose any vanilla cape, some custom ones that came with the mod, or upload your own one for EVERYONE to see.
+- Fixed all texture issues that limited mip map level to 0. Fuck all of them mod and resource pack devs who can't count to 16, it's really THAT SIMPLE, to make a texture that isn't 10x23 BRUH.
+
+### Bug Fixes
+
+- Fixed Unbreaking Enchantment causing durability bars to go negative.
+- Fixed Forge Controllers not dropping anything when broken.
+- Fixed Locate Structure Ritual being unable to locate Ocean Monuments.
+- Fixed /give creating ghost items on the ground.
+- Fixed Villagers rarely selling nothing.
+- Removed some duplicated mod items and unified mods further.
+- All ADJ specific drop modifications are now shown properly in the recipe browser (previously, e.g. zombies would only show that they can drop Shackles, but wouldn't show the odds).
+- Tooltips of enchanted and naturally generated gloves are no longer screwed up. There were also probably a few different items that had broken tooltip text order, those that i know of are now fixed.
+- Disabled Quark's quick-equip feature as it was an underlying cause for a duplication glitch.
+- Bulk Blasting and Bulk Smoking once again show in the recipe browser (likely a bugfix from TMRV).
+
+- HP no longer gets rounded on hurt to prevent some bugs with decimal health values.
+> Fun fact, standing on a Campfire was a very simple invincibility machine in 1.3.2 and prior due to this bug alone.
+
+- Removed Thrashers and Great Thrashers due to incompatibility issues between Upgrade Aquatic and Better Combat.
+> Fun fact, UA devs said it is a BC issue, and BC dev said it is an UA issue. You call it absurd, I call it Tuesday.

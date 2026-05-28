@@ -1,18 +1,13 @@
-## May 17th 2026
+## May 28th 2026
 
 ### A Distant Journey 1.4.0 \~ Adventure Squared
 
-The update is going to release **May 28th**
+It finally released! Thanks for waiting half a year for what turned out to be the biggest update to the modpack yet!
 
-Usually I'd have an update artwork here, but Blockbench has been acting funnily, so there is likely not going to be any until the release date.
+I didn't have enough time to thoroughly test the modpack, so please be patient with any bugs you might stumble upon and report them to me as soon as possible!
 
-Featuring:
-- Plenty of new, integrated content mods ~ EvilCraft, Twilight Forest, Let's Do series
-- Ars x Botania x EvilCraft magic crossover
-- Plenty of new achievements to earn
-- Reworks upon reworks
-- Balance changes
-- Stability and performance improvements
-- More and less important bug fixes (e.g. Ars Nouveau mana enchantments, making magic class no longer useless).
-
-I still have some things left to finish, but I am very proud of this update. This is more or less what ADJ 1.0.0 was supposed to be on its release day, but ultimately didn't become so until more than half a year later. So far I have been working on ADJ for over a year and a half now, and I had plenty of fun doing so.
+**KNOWN ISSUES:**
+- Dedicated server doesn't work (I hope E4MC still works for world sharing).
+- Fishing crates don't have their loot from 1.3.2. Will be re-added at a later date.
+- Some GUIs have buggy displays; world enter sound doesn't play until much later; loading screen progress doesn't change visually and stays at 0% (all of those are problems with the newest version of FancyMenu and I have no control over any of those).
+- Placeable Maxwells are missing their recipes.
