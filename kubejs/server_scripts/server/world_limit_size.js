@@ -53,21 +53,22 @@ ServerEvents.loaded(event => {
 		console.log('Checking and setting border sizes in Multiplayer...');
 		try {
 			let finalSize;
-			const worldSize = JsonIO.read('world_size.json').worldSize;
+			const worldSize = JsonIO.read('world_size.json').world_size;
 			if (Object.keys(WorldSizeLimit.SIZES).includes(worldSize)) {
-				finalSize = WorldSizeLimit.SIZES[worldSize];
+				console.log(`Using world size '${size}', as specified`);
+				finalSize = worldSize;
 			}
 			else {
 				console.log(`Unusual size, detected (${worldSize}), falling back to 20k x 20k`);
 				console.log(`Accepted size types are: ${Object.keys(WorldSizeLimit.SIZES)}`);
-				finalSize = WorldSizeLimit.SIZES["20k"];
+				finalSize = '20k';
 			}
 			WorldSizeLimit.limitSize(server, finalSize);
 		}
 		catch (e) {
 			console.log('File world_size.json not found or could not be read, treating it as 20k x 20k');
 			console.log('If you believe this is a bug, you can do \'/kubejs persistent_data server merge {hasSetBorderLimits:false}\' and restart the server');
-			WorldSizeLimit.limitSize(server, WorldSizeLimit.SIZES["20k"]);
+			WorldSizeLimit.limitSize(server, '20k');
 		}
 	}
 });
