@@ -103,11 +103,6 @@ const moonEventMessages = {
 	}
 };
 
-const $EnhancedCelestials = Java.loadClass('dev.corgitaco.enhancedcelestials.EnhancedCelestials');
-const $Registry = Java.loadClass("net.minecraft.core.Registry");
-const $LunarEventClass = Java.loadClass("dev.corgitaco.enhancedcelestials.api.lunarevent.LunarEvent");
-const $EnhancedCelestialsRegistry = Java.loadClass("dev.corgitaco.enhancedcelestials.api.EnhancedCelestialsRegistry");
-
 ServerEvents.tick(event => {
 	const server = event.getServer();
 	const dayTime = server.overworld().dayTime() % 24000;

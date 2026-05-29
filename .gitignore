@@ -134,3 +134,4 @@ config/structurify/structurify_backup_*.json
 .bobby/
 /world_size.json
 packetfixer.properties
+servers.dat_old

@@ -108,12 +108,7 @@ ServerEvents.tick(event => {
 });
 
 const $AetherBossFightStart = Java.loadClass('com.aetherteam.aether.event.BossFightEvent$Start');
+NativeEvents.onEvent($AetherBossFightStart, /** @param {Internal.BossFightEvent$Start_} event */ event => event.getEntity().addTag('phase_1'));
+
 const $AetherBossFightStop = Java.loadClass('com.aetherteam.aether.event.BossFightEvent$Stop');
-
-NativeEvents.onEvent($AetherBossFightStart, /** @param {Internal.BossFightEvent$Start_} event */ event => {
-	event.getEntity().addTag('phase_1');
-});
-
-NativeEvents.onEvent($AetherBossFightStop, /** @param {Internal.BossFightEvent$Stop_} event */ event => {
-	event.getEntity().removeTag('phase_1');
-});
+NativeEvents.onEvent($AetherBossFightStop, /** @param {Internal.BossFightEvent$Stop_} event */ event => event.getEntity().removeTag('phase_1'));

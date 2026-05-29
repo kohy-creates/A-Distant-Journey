@@ -4,4 +4,4 @@ BlockEvents.rightClicked('minecraft:snow', event => {
 		&& player.getOffhandItem().getItem().getId() === 'minecraft:air') {
 		event.cancel();
 	}
-})
+});

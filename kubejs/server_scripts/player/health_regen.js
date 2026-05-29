@@ -29,7 +29,7 @@ PlayerEvents.tick(event => {
 		return
 	};
 
-	let RT = persistentData.timeSinceLastHurt
+	let RT = persistentData.contains('timeSinceLastHurt') ? persistentData.getLong('timeSinceLastHurt') : 0;
 	if (RT != null && RT < 1200) {
 		// console.log('increasing RT')
 		persistentData.putLong('timeSinceLastHurt', RT + 1);
@@ -49,7 +49,7 @@ PlayerEvents.tick(event => {
 
 	if (HealthRegen.hardcore && player.saturation == 0 && player.foodLevel < 20) R *= 0.75;
 
-	RC = persistentData.regenerationTimer
+	RC = persistentData.contains('regenerationTimer') ? persistentData.getShort('regenerationTimer') : 0;
 
 	// console.log(`R: ${R} | RT: ${RT} | eRT: ${eRT} | RC: ${RC}`)
 

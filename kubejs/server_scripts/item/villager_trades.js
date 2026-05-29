@@ -41,86 +41,79 @@ MoreJSEvents.wandererTrades(event => {
 	});
 })
 
-const $TieredItem = Java.loadClass('net.minecraft.world.item.TieredItem');
-const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
-// const $SwordItem = Java.loadClass('net.minecraft.world.item.SwordItem')
+const replacementsList = Object.keys(replaceItemsMap);
+const replacementExceptions = [
+	'minecraft:diamond_helmet',
+	'minecraft:diamond_chestplate',
+	'minecraft:diamond_leggings',
+	'minecraft:diamond_boots',
+	'minecraft:diamond_sword',
+	'minecraft:diamond_shovel',
+	'minecraft:diamond_axe',
+	'minecraft:diamond_hoe',
+	'minecraft:diamond_pickaxe',
+	'minecraft:iron_helmet',
+	'minecraft:iron_chestplate',
+	'minecraft:iron_leggings',
+	'minecraft:iron_boots',
+];
 
-(() => {
-
-	const replacementsList = Object.keys(replaceItemsMap);
-	const exceptions = [
-		'minecraft:diamond_helmet',
-		'minecraft:diamond_chestplate',
-		'minecraft:diamond_leggings',
-		'minecraft:diamond_boots',
-		'minecraft:diamond_sword',
-		'minecraft:diamond_shovel',
-		'minecraft:diamond_axe',
-		'minecraft:diamond_hoe',
-		'minecraft:diamond_pickaxe',
-		'minecraft:iron_helmet',
-		'minecraft:iron_chestplate',
-		'minecraft:iron_leggings',
-		'minecraft:iron_boots',
-	];
-
-	MoreJSEvents.villagerTrades(event => {
-		global.blacklistedItemsArray.forEach(output => {
-			if (global.isItemDisabled(output) && !replacementsList.includes(output)) {
-				event.removeTrades({
-					firstItem: /.*/,
-					secondItem: /.*/,
-					outputItem: output
-				});
-			}
-		});
-
-		event.removeTrades({ firstItem: /.*/, secondItem: /.*/, outputItem: 'blaze_rod', });
-		event.removeTrades({ firstItem: /.*/, secondItem: /.*/, outputItem: 'magma_cream', });
-		event.removeTrades({ firstItem: /.*/, secondItem: /.*/, outputItem: 'ghast_tear', });
+MoreJSEvents.villagerTrades(event => {
+	global.blacklistedItemsArray.forEach(output => {
+		if (global.isItemDisabled(output) && !replacementsList.includes(output)) {
+			event.removeTrades({
+				firstItem: /.*/,
+				secondItem: /.*/,
+				outputItem: output
+			});
+		}
 	});
 
-	MoreJSEvents.updateVillagerOffers(event => {
+	event.removeTrades({ firstItem: /.*/, secondItem: /.*/, outputItem: 'blaze_rod', });
+	event.removeTrades({ firstItem: /.*/, secondItem: /.*/, outputItem: 'magma_cream', });
+	event.removeTrades({ firstItem: /.*/, secondItem: /.*/, outputItem: 'ghast_tear', });
+});
 
-		const offers = event.getAddedOffers();
+MoreJSEvents.updateVillagerOffers(event => {
 
-		offers.forEach(offer => {
-			const output = offer.output;
-			const firstInput = offer.firstInput;
-			const secondInput = offer.secondInput;
+	const offers = event.getAddedOffers();
 
-			if (replacementsList.includes(firstInput.getId()) && !exceptions.includes(firstInput.getId())) {
-				offer.setFirstInput(Item.of(replaceItemsMap[firstInput.getId()]))
-			}
-			if (replacementsList.includes(secondInput.getId()) && !exceptions.includes(secondInput.getId())) {
-				offer.setSecondInput(Item.of(replaceItemsMap[secondInput.getId()]))
-			}
-			if (replacementsList.includes(output.getId()) && !exceptions.includes(output.getId())) {
-				offer.setOutput(Item.of(replaceItemsMap[output.getId()]))
-			}
-			else if (output.getItem() instanceof $ArmorItem) {
-				let defense = 0;
-				output.getAttributeModifiers(output.getItem().getEquipmentSlot()).get($Attributes.ARMOR).forEach(modifier => {
-					defense += modifier.getAmount();
-				})
-				let durability = output.getItem().getMaxDamage();
-				offer.setFirstInput(Item.of(offer.getCostA(), Math.round((10.5 + (defense * 1.3)) * Math.min(Math.max(durability / 600, 0.55), 1.75))));
-				if (id.includes('diamond')) {
-					offer.setSecondInput('kubejs:diamond_upgrade')
-				}
-			}
-			else if (output.getItem() instanceof $TieredItem) {
-				if (output.getId().includes('diamond')) {
-					offer.setSecondInput('kubejs:diamond_upgrade')
-				}
-			}
+	offers.forEach(offer => {
+		const output = offer.output;
+		const firstInput = offer.firstInput;
+		const secondInput = offer.secondInput;
 
-			offer.setVillagerExperience(
-				(output.getId().includes('emerald')) ? 4 : 6
-			);
-		});
+		if (replacementsList.includes(firstInput.getId()) && !replacementExceptions.includes(firstInput.getId())) {
+			offer.setFirstInput(Item.of(replaceItemsMap[firstInput.getId()]))
+		}
+		if (replacementsList.includes(secondInput.getId()) && !replacementExceptions.includes(secondInput.getId())) {
+			offer.setSecondInput(Item.of(replaceItemsMap[secondInput.getId()]))
+		}
+		if (replacementsList.includes(output.getId()) && !replacementExceptions.includes(output.getId())) {
+			offer.setOutput(Item.of(replaceItemsMap[output.getId()]))
+		}
+		else if (output.getItem() instanceof $ArmorItem) {
+			let defense = 0;
+			output.getAttributeModifiers(output.getItem().getEquipmentSlot()).get($Attributes.ARMOR).forEach(modifier => {
+				defense += modifier.getAmount();
+			})
+			let durability = output.getItem().getMaxDamage();
+			offer.setFirstInput(Item.of(offer.getCostA(), Math.round((10.5 + (defense * 1.3)) * Math.min(Math.max(durability / 600, 0.55), 1.75))));
+			if (id.includes('diamond')) {
+				offer.setSecondInput('kubejs:diamond_upgrade')
+			}
+		}
+		else if (output.getItem() instanceof $TieredItem) {
+			if (output.getId().includes('diamond')) {
+				offer.setSecondInput('kubejs:diamond_upgrade')
+			}
+		}
+
+		offer.setVillagerExperience(
+			(output.getId().includes('emerald')) ? 4 : 6
+		);
 	});
-})();
+});
 
 MoreJSEvents.villagerTrades(event => {
 

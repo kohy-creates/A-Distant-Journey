@@ -1,6 +1,3 @@
-const $LivingHealEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHealEvent");
-const $MobEffectEventApplicable = Java.loadClass('net.minecraftforge.event.entity.living.MobEffectEvent$Applicable');
-
 // Everything healing related
 NativeEvents.onEvent($LivingHealEvent, /** @param {Internal.LivingHealEvent_} event */ event => {
 	const entity = event.getEntity();

@@ -1,6 +1,3 @@
-const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
-const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes")
-
 const EntityModifications = {
 	chapterMultipliers: {
 		hp: [1.0, 1.05, 1.1, 3.5, 3.5, 5.1],

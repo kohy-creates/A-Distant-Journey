@@ -1,18 +1,14 @@
-/**
- * @type {Internal.Block_}
- */
-const drawerBlocks = [
-	"functionalstorage:oak_1",
-	"functionalstorage:oak_2",
-	"functionalstorage:oak_4",
-	"functionalstorage:compacting_drawer"
-]
-
-// const controllerBlock = "functionalstorage:storage_controller"
-
 BlockEvents.placed(event => {
 	const block = event.getBlock();
 	const id = block.getId();
+
+	const drawerBlocks = [
+		"functionalstorage:oak_1",
+		"functionalstorage:oak_2",
+		"functionalstorage:oak_4",
+		"functionalstorage:compacting_drawer"
+	];
+
 	if (id.includes('functionalstorage')) {
 		let server = event.getServer();
 		let pos = [block.x, block.y, block.z];

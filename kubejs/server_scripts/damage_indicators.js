@@ -1,7 +1,3 @@
-const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
-const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
-const $Registries = Java.loadClass("net.minecraft.core.registries.Registries");
-
 function createTagKey(loc) {
 	return $TagKey.create($Registries.DAMAGE_TYPE, $ResourceLocation.parse(loc));
 }

@@ -1,8 +1,3 @@
-const $AbstractArrow = Java.loadClass('net.minecraft.world.entity.projectile.AbstractArrow');
-const $ALObjects = Java.loadClass('dev.shadowsoffire.attributeslib.api.ALObjects');
-/** @type {Internal.Player_} */
-const $Player = Java.loadClass('net.minecraft.world.entity.player.Player');
-
 /** 
  * @param {Internal.LivingEntity_} shooter 
  * @returns {Internal.ItemStack_}

@@ -1,6 +1,4 @@
 const $BoneMealableBlock = Java.loadClass("net.minecraft.world.level.block.BonemealableBlock")
-const $BlockPos = Java.loadClass("net.minecraft.core.BlockPos")
-const $BurnerBlazeBlock = Java.loadClass("com.simibubi.create.content.processing.burner.BlazeBurnerBlock")
 
 const superBoneMealItems = [
 	'structure_gel:building_tool',

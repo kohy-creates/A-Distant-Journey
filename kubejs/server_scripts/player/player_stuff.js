@@ -1,6 +1,4 @@
-const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier');
-const $Integer = Java.loadClass('java.lang.Integer');
-const $Mob = Java.loadClass('net.minecraft.world.entity.Mob');
+
 
 PlayerEvents.tick(event => {
 	const player = event.player;
@@ -319,7 +317,6 @@ ADJServerEvents.adjHurt(event => {
 })
 
 // A huge block that only triggers when a player is hurt by something, or if something hurts a player
-const $MobType = Java.loadClass("net.minecraft.world.entity.MobType")
 NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.LivingHurtEvent_} event */ event => {
 	const attacker = event.getSource().getActual();
 	/** @type {Internal.LivingEntity_} */

@@ -1,5 +1,3 @@
-const $MobEffectInstance = Java.loadClass('net.minecraft.world.effect.MobEffectInstance');
-
 PlayerEvents.tick(event => {
 	const player = event.getPlayer();
 

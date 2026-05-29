@@ -261,3 +261,40 @@ global.eyeDrops = {
 	'rediscovered:red_dragon': 'dreams',
 	'cataclysm:ender_guardian': 'desolation'
 };
+
+/**
+ * Makes a hex color either lighter or darker based on the second argument.
+ * Percent can be either on a [0, 1) scale or [1, 100]. It can also be negative.
+ * Taken somewhere from StackOverflow
+ * @param {*} color 
+ * @param {number} percent 
+ * @param {boolean} noHash 
+ * @returns {string} 
+ */
+global.amplifyHexColor = function shadeColor(color, percent, noHash) {
+
+	if (percent < 1 && percent > -1) percent *= 100;
+	if (!color.startsWith('#')) color = '#' + color;
+
+	let R = parseInt(color.substring(1, 3), 16);
+	let G = parseInt(color.substring(3, 5), 16);
+	let B = parseInt(color.substring(5, 7), 16);
+
+	R = parseInt(R * (100 + percent) / 100);
+	G = parseInt(G * (100 + percent) / 100);
+	B = parseInt(B * (100 + percent) / 100);
+
+	R = (R < 255) ? R : 255;
+	G = (G < 255) ? G : 255;
+	B = (B < 255) ? B : 255;
+
+	R = Math.round(R)
+	G = Math.round(G)
+	B = Math.round(B)
+
+	let RR = ((R.toString(16).length == 1) ? '0' + R.toString(16) : R.toString(16));
+	let GG = ((G.toString(16).length == 1) ? '0' + G.toString(16) : G.toString(16));
+	let BB = ((B.toString(16).length == 1) ? '0' + B.toString(16) : B.toString(16));
+
+	return ((noHash) ? '' : '#') + RR + GG + BB;
+};
