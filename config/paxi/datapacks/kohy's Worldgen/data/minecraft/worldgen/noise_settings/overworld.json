@@ -261,16 +261,16 @@
 				"if_true": {
 					"random_name": "minecraft:blackstone_near_bedrock",
 					"true_at_and_below": {
-						"above_bottom": 5
+						"above_bottom": 8
 					},
 					"false_at_and_above": {
-						"above_bottom": 8
+						"above_bottom": 15
 					},
 					"type": "minecraft:vertical_gradient"
 				},
 				"then_run": {
 					"result_state": {
-						"Name": "minecraft:bedrock"
+						"Name": "minecraft:blackstone"
 					},
 					"type": "minecraft:block"
 				},
