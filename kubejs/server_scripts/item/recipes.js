@@ -6671,9 +6671,8 @@ ServerEvents.recipes((event) => {
 	function oreBerryCrushing(inputType, output) {
 		let berry = `oreberriesreplanted:${inputType}_oreberry`;
 		event.recipes.create.milling([
-			Item.of(output, 3),
-			Item.of(output, 2).withChance(0.25),
-			Item.of(output, 1).withChance(0.4),
+			Item.of(output, 2),
+			Item.of(output, 1).withChance(0.66),
 			Item.of('ars_nouveau:experience_gem', 1).withChance(0.15)
 		], berry).id(`adj:ore_berry/${flattenedID(berry)}`)
 	}

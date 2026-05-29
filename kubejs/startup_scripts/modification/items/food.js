@@ -247,10 +247,19 @@ ItemEvents.modification(event => {
 
 	event.modify('minecraft:glistering_melon_slice', item => {
 		item.setFoodProperties(food => {
-			food.effect('adjcore:lesser_instant_health', 1, 0, 0.7);
+			food.effect('adjcore:lesser_instant_health', 1, 0, 0.3);
 			food.alwaysEdible(true);
 			food.hunger(3);
 			food.saturation(0.6)
 		})
+	});
+
+	event.modify('oreberriesreplanted:uranium_oreberry', item => {
+		item.setFoodProperties(food => {
+			food.effect('minecraft:instant_damage', 1, 198, 1);
+			food.alwaysEdible(true);
+			food.hunger(999);
+			food.saturation(1);
+		});
 	});
 });
