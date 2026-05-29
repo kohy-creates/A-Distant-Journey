@@ -1,21 +1,21 @@
 {
-    "neoforge:conditions": [
+    "forge:conditions": [
         {
-            "type": "neoforge:mod_loaded",
+            "type": "forge:mod_loaded",
             "modid": "ars_nouveau"
         },
         {
-            "type": "neoforge:not",
+            "type": "forge:not",
             "value": {
-                "type": "neoforge:tag_empty",
+                "type": "forge:tag_empty",
                 "registry": "minecraft:block",
                 "tag": "c:ores/xychorium"
             }
         },
         {
-            "type": "neoforge:not",
+            "type": "forge:not",
             "value": {
-                "type": "neoforge:tag_empty",
+                "type": "forge:tag_empty",
                 "registry": "minecraft:item",
                 "tag": "c:ores/xychorium"
             }
