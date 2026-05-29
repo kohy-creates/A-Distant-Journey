@@ -157,7 +157,7 @@
 	// May look buggy on some blocks when `Fabulous!` rendering is enabled.
 	// Set to `0` to disable.
 	// DEFAULT: `0`
-	"chromaBlockShapeOverlay": 0.099999994,
+	"chromaBlockShapeOverlay": 0.0,
 	// Enable Chroma on tooltip outlines.
 	// DEFAULT: `false`
 	"enableChromaToolTips": false,
