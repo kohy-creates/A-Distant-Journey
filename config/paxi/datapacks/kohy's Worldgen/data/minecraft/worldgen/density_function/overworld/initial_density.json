@@ -1,0 +1,60 @@
+{
+	"argument1": 0.1171875,
+	"argument2": {
+		"argument1": {
+			"from_y": -64,
+			"to_y": -40,
+			"from_value": 0,
+			"to_value": 1,
+			"type": "minecraft:y_clamped_gradient"
+		},
+		"argument2": {
+			"argument1": -0.1171875,
+			"argument2": {
+				"argument1": -0.078125,
+				"argument2": {
+					"argument1": {
+						"from_y": 240,
+						"to_y": 256,
+						"from_value": 1,
+						"to_value": 0,
+						"type": "minecraft:y_clamped_gradient"
+					},
+					"argument2": {
+						"argument1": 0.078125,
+						"argument2": {
+							"input": {
+								"argument1": -0.703125,
+								"argument2": {
+									"argument1": 4,
+									"argument2": {
+										"argument": {
+											"argument1": "minecraft:overworld/depth",
+											"argument2": {
+												"argument": "minecraft:overworld/factor",
+												"type": "minecraft:cache_2d"
+											},
+											"type": "minecraft:mul"
+										},
+										"type": "minecraft:quarter_negative"
+									},
+									"type": "minecraft:mul"
+								},
+								"type": "minecraft:add"
+							},
+							"min": -64,
+							"max": 64,
+							"type": "minecraft:clamp"
+						},
+						"type": "minecraft:add"
+					},
+					"type": "minecraft:mul"
+				},
+				"type": "minecraft:add"
+			},
+			"type": "minecraft:add"
+		},
+		"type": "minecraft:mul"
+	},
+	"type": "minecraft:add"
+}

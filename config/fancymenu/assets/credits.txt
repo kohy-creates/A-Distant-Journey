@@ -7,8 +7,7 @@
 ---
 ^^^
 
-- <rainbow><neon>kohara</neon></rainbow> - Developer
-
+- <rainbow>kohara</rainbow> - Developer
 
 
 ^^^
@@ -16,8 +15,8 @@
 ---
 ^^^
 
-- <neon>brokenemp</neon> - Contributor (Artist)
-- <neon>MidasDaEpik</neon> - Contributor (Artist)
+- brokenemp - Contributor (Artist)
+- MidasDaEpik - Contributor (Artist)
 
 - Whoever I took code from and changed variable names because licensing allowed me to.
 

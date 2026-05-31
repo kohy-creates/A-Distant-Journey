@@ -28,7 +28,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "kubejs:hook_of_dissonance",
+					"name": "kubejs:dissonance_hook",
 					"quality": 3,
 					"conditions": [
 						{

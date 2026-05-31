@@ -10,3 +10,4 @@ net.dragonegg.moreburners.mixin.AnimatedBlazeBurnerMixin
 com.rosemods.heart_crystals.core.mixin.AbstractArrowMixin
 com.ninni.etcetera.mixin.AbstractBlockStateMixin
 xyz.kohara.etl.mixin.StarRendererMixin
+de.keksuccino.fancymenu.mixin.mixins.common.client.MixinLevelRenderer

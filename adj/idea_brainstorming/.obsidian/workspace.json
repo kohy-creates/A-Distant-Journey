@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Update Checklists/1.4.0.md",
+                "file": "Update Checklists/1.4.1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.4.0"
+              "title": "1.4.1"
             }
           },
           {
@@ -213,14 +213,14 @@
   },
   "active": "0ed0de916e212a51",
   "lastOpenFiles": [
-    "Update Checklists/1.4.1.md",
+    "Update Checklists.md",
     "Update Checklists/1.4.0.md",
+    "Update Checklists/1.4.1.md",
     "Major Additions/Alpha Sublevels.md",
     "Major Additions/Healer Subclass.md",
     "Update Checklists/1.4.2.md",
     "Major Additions.md",
     "Reworks.md",
-    "Update Checklists.md",
     "Mod Additions.md",
     "Reworks/Ars Nouveau Summoner and Pets.md",
     "Untitled",

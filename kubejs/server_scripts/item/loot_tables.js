@@ -655,7 +655,7 @@ LootJS.modifiers((event) => {
 		.pool(pool => {
 			pool.addLoot(
 				LootEntry.of('aperture_innovations:portal_gun')
-					.when(c => c.randomChance(0.09))
+					.when(c => c.randomChance(0.06))
 			);
 		});
 

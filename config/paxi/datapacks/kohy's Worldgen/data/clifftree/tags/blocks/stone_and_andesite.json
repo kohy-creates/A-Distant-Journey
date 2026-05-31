@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:stone",
-    "minecraft:andesite"
+    "minecraft:andesite",
+    "kubejs:cinnabar"
   ]
 }

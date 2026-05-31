@@ -531,6 +531,32 @@ ServerEvents.recipes((event) => {
 		'create:iron_sheet',
 	);
 
+	event.replaceInput({ output: 'terra_curio:workshop' },
+		'bookshelf',
+		'#c:bookshelves'
+	);
+
+	event.custom({
+		"type": "create:sequenced_assembly",
+		"ingredient": {
+			"item": "botania:livingrock_slab"
+		},
+		"transitionalItem": {
+			"item": "botania:livingrock_slab"
+		},
+		"sequence": [
+			{ "type": "create:deploying", "ingredients": [{ "item": "botania:livingrock_slab" }, { "item": "minecraft:glowstone_dust" }], "results": [{ "item": "botania:livingrock_slab" }] },
+			{ "type": "create:pressing", "ingredients": [{ "item": "botania:livingrock_slab" }], "results": [{ "item": "botania:livingrock_slab" }] },
+			{ "type": "create:pressing", "ingredients": [{ "item": "botania:livingrock_slab" }], "results": [{ "item": "botania:livingrock_slab" }] }
+		],
+		"results": [
+			{ "item": "quark:smithing_template_rune", "chance": 100 }, { "item": "botania:livingrock_slab", "chance": 8 },
+			{ "item": "create:andesite_alloy", "chance": 8 },
+			{ "item": "minecraft:glowstone_dust", "chance": 5 }
+		],
+		"loops": 2
+	}).id('adj:smithing_template_rune');
+
 	// Accents sewing recipes for Vanity items
 	function sewingRecipe(input, output, outputCount, id) {
 		event.custom({
@@ -2696,7 +2722,7 @@ ServerEvents.recipes((event) => {
 		event.remove({ id: item });
 	});
 
-	event.recipes.botania.mana_infusion('ars_nouveau:magebloom_crop', '#seeds').mana(5000).id('adj:manabloom_crop');
+	event.recipes.botania.mana_infusion('ars_nouveau:magebloom_crop', '#c:seeds').mana(5000).id('adj:manabloom_crop');
 
 	event.shaped(
 		'ars_nouveau:storage_lectern',

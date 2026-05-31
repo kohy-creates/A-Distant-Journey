@@ -1,5 +1,5 @@
 {
-	"type": "minecraft:entity",
+	"type": "minecraft:gift",
 	"pools": [
 		{
 			"bonus_rolls": 0,
@@ -28,7 +28,7 @@
 							"function": "minecraft:set_count"
 						}
 					],
-					"name": "twilightforest:ice"
+					"name": "ice"
 				}
 			],
 			"rolls": 3

@@ -19,6 +19,10 @@
 			{
 				"namespace": "^gateways$",
 				"path": "^gateways/.*$"
+			},
+			{
+				"namespace": "^neapolitan$",
+				"path": "^blueprint/modded_biome_slices/.*$"
 			}
 		]
 	}

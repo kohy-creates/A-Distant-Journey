@@ -1,0 +1,85 @@
+
+#General Settings
+[general]
+	#Enable custom weather particles
+	customParticlesEnabled = true
+	#Horizontal range around the player to spawn particles (blocks)
+	#Range: 4 ~ 64
+	particleRange = 32
+	#Delay in ticks between particle spawn cycles (0 = every tick, 1 = every other tick)
+	#Range: 0 ~ 20
+	particleTickDelay = 1
+	#Rain spawn probability per attempt (0.0 to 1.0, lower = fewer rain particles)
+	#Range: 0.0 ~ 1.0
+	rainDensity = 0.8
+	#Snow spawn probability per attempt (0.0 to 1.0, lower = fewer snow particles)
+	#Range: 0.0 ~ 1.0
+	snowDensity = 0.9
+	#Turn this on if your snow gets dark with shaders
+	disableSnowFade = false
+	#Number of rain particles to spawn per cycle
+	#Range: 1 ~ 128
+	rainParticleCount = 19
+	#Number of snow particles to spawn per cycle
+	#Range: 1 ~ 128
+	snowParticleCount = 16
+	#Disable vanilla weather rendering (rain streaks AND snow). Recommended: true when using custom particles.
+	disableVanillaWeather = true
+	#Rain sound volume multiplier (0.0 = muted, 0.5 = half, 1.0 = vanilla). Only works when disableVanillaWeather is true.
+	#Range: 0.0 ~ 1.0
+	rainSoundVolume = 0.5
+
+#Advanced Rain Settings — changing these may break visual quality, values are interdependent
+[advanced_rain]
+	#Minimum rain spawn height above the player (blocks)
+	#Range: 0 ~ 128
+	rainMinHeight = 6
+	#Maximum rain spawn height above the player (blocks)
+	#Range: 1 ~ 256
+	rainMaxHeight = 32
+	#Minimum rain particle lifetime (ticks, 20 ticks = 1 second)
+	#Range: 1 ~ 200
+	rainMinLifetime = 40
+	#Maximum rain particle lifetime (ticks, 20 ticks = 1 second)
+	#Range: 1 ~ 200
+	rainMaxLifetime = 80
+	#Rain particle gravity (higher = falls faster)
+	#Range: 0.0 ~ 5.0
+	rainGravity = 2.0
+	#Minimum rain particle size
+	#Range: 0.01 ~ 2.0
+	rainQuadSizeMin = 0.35
+	#Maximum rain particle size
+	#Range: 0.01 ~ 2.0
+	rainQuadSizeMax = 0.5
+	#Rain particle opacity (0.0 = invisible, 1.0 = fully opaque)
+	#Range: 0.0 ~ 1.0
+	rainAlpha = 0.7
+
+#Advanced Snow Settings — changing these may break visual quality, values are interdependent
+[advanced_snow]
+	#Minimum snow spawn height relative to the player (blocks, negative = below player)
+	#Range: -128 ~ 128
+	snowMinHeight = -10
+	#Maximum snow spawn height above the player (blocks)
+	#Range: 1 ~ 256
+	snowMaxHeight = 16
+	#Minimum snow particle lifetime (ticks, 20 ticks = 1 second)
+	#Range: 1 ~ 400
+	snowMinLifetime = 60
+	#Maximum snow particle lifetime (ticks, 20 ticks = 1 second)
+	#Range: 1 ~ 400
+	snowMaxLifetime = 90
+	#Snow particle gravity (higher = falls faster)
+	#Range: 0.0 ~ 5.0
+	snowGravity = 0.04
+	#Minimum snow particle size
+	#Range: 0.01 ~ 2.0
+	snowQuadSizeMin = 0.08
+	#Maximum snow particle size
+	#Range: 0.01 ~ 2.0
+	snowQuadSizeMax = 0.12
+	#Snow particle target opacity (0.0 = invisible, 1.0 = fully opaque, fade-in over 5 ticks)
+	#Range: 0.0 ~ 1.0
+	snowAlpha = 0.8
+

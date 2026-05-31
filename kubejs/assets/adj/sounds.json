@@ -156,13 +156,6 @@
 			}
 		]
 	},
-	"ui.enter_world": {
-		"sounds": [
-			{
-				"name": "adj:enter_world"
-			}
-		]
-	},
 	"ui.achievement_complete": {
 		"sounds": [
 			{

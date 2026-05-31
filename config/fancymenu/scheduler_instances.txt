@@ -3,7 +3,7 @@ type = scheduler_instances
 scheduler_instance {
   scheduler_identifier = hud_hunger
   scheduler_action_script_identifier = a8102d31-921d-4465-add5-af25229fe137-1779478635815
-  scheduler_start_on_launch = true
+  scheduler_start_on_launch = false
   scheduler_start_delay_ms = 0
   scheduler_tick_delay_ms = 0
   scheduler_ticks_to_run = 0
@@ -21,7 +21,7 @@ scheduler_instance {
 scheduler_instance {
   scheduler_identifier = is_nighttime_irl
   scheduler_action_script_identifier = 0f8c4e59-429d-4557-b0ab-a4d0ecdfa73c-1779535803419
-  scheduler_start_on_launch = true
+  scheduler_start_on_launch = false
   scheduler_start_delay_ms = 0
   scheduler_tick_delay_ms = 60000
   scheduler_ticks_to_run = 0

@@ -39,7 +39,7 @@
 							"function": "minecraft:set_count"
 						}
 					],
-					"name": "twilightforest:ice"
+					"name": "ice"
 				}
 			],
 			"rolls": 3

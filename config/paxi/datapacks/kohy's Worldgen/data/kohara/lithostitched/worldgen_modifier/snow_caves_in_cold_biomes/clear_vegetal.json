@@ -1,8 +1,0 @@
-{
-	"type": "lithostitched:remove_features",
-	"biomes": "clifftree:frozen_caves",
-	"features": [
-		"clifftree:snow_cave_ceiling"
-	],
-	"step": "vegetal_decoration"
-}

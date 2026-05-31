@@ -17,9 +17,9 @@
 	#If set to true, the 'Allowed Screens' option will work as a Blacklist rather than a Whitelist. WARNING: Use at your own risk as some mods may not support this.
 	"Use Screen List Blacklist" = false
 	#If 'true' and TerraBlender is present, Quark will add a TerraBlender region. The region will contain vanilla biomes and the Glimmering Weald.
-	"Terrablender Add Region" = true
+	"Terrablender Add Region" = false
 	#Quark will set this weight for its TerraBlender region.
-	"Terrablender Region Weight" = 3
+	"Terrablender Region Weight" = 1
 	#If 'true', Quark will modify the `minecraft:overworld` MultiNoiseBiomeSourceParameterList preset, even when Terrablender is installed.
 	#This will have various knock-on effects but might make the Weald more common, or appear closer to modded biomes. Who knows?
 	"Terrablender Modify Vanilla Anyway" = false
@@ -1716,7 +1716,7 @@
 		"Enchantments To Register" = []
 
 	[experimental.enchantments_begone]
-		"Enchantments To Begone" = ["netherexp:recoil", "netherexp:barrage", "netherexp:bloodshed", "netherexp:cartridge", "sortilege:arcane", "sortilege:blast", "sortilege:blitz", "sortilege:blizzard", "sortilege:brazier", "sortilege:chaining", "sortilege:ignorance_curse", "sortilege:potency", "sortilege:pull", "sortilege:push", "ars_elemental:soulbound", "sortilege:stability", "sortilege:wisdom", "sortilege:bonk", "sortilege:focus", "minecraft:fire_protection", "minecraft:projectile_protection", "evilcraft:life_stealing", "twilightforest:destruction", "minecraft:sweeping_edge"]
+		"Enchantments To Begone" = ["netherexp:recoil", "netherexp:barrage", "netherexp:bloodshed", "netherexp:cartridge", "sortilege:arcane", "sortilege:blast", "sortilege:blitz", "sortilege:blizzard", "sortilege:brazier", "sortilege:chaining", "sortilege:ignorance_curse", "sortilege:potency", "sortilege:pull", "sortilege:push", "ars_elemental:soulbound", "sortilege:stability", "sortilege:wisdom", "sortilege:bonk", "sortilege:focus", "minecraft:fire_protection", "minecraft:projectile_protection", "evilcraft:life_stealing", "twilightforest:destruction", "minecraft:sweeping_edge", "minecraft:sweeping"]
 
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod

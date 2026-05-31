@@ -3,6 +3,8 @@ const RemovedItems = {
 		'minecraft:shield',
 		'minecraft:enchanting_table',
 
+		'zenith:true_wooden_sword',
+
 		'born_in_chaos_v1:mint_ice_cream',
 
 		'doublejumpattribute:jump_boots',

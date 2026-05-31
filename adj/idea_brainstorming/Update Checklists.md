@@ -5,6 +5,6 @@ This folder contains all of the checklists I make myself for updates. This is ro
 
 If something is marked as completed then it means everything on the list was marked off as done.
 
-- [ ] [[1.4.0]]
+- [x] [[1.4.0]]
 - [ ] [[1.4.1]]
 - [ ] [[1.4.2]]
