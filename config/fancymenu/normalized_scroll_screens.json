@@ -2,5 +2,6 @@
   "io.github.thecsdev.betterstats.api.client.gui.screen.BetterStatsScreenWrapper": true,
   "creative_mode_inventory_screen": false,
   "inventory_screen": true,
-  "title_screen": true
+  "title_screen": true,
+  "net.leftshift.wormhole.items.custom.PlayerListScreen": false
 }

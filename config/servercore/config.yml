@@ -11,7 +11,7 @@ features:
   autosave-interval: 6000
   # The fraction that decides the chance of experience orbs being able to merge with each other. (1 = 100%, 40 = 2.5%)
   # Note that just like in vanilla, experience orbs will still need to be of the same size to actually merge.
-  xp-merge-fraction: 3
+  xp-merge-fraction: 2
   # The radius in blocks that experience orbs will merge at.
   xp-merge-radius: 8
   # The radius in blocks that items will merge at.
@@ -118,20 +118,20 @@ mob-spawning:
       spawn-interval: 1
 
     - category: 'AXOLOTLS'
-      mobcap: 15
-      spawn-interval: 1
-
-    - category: 'UNDERGROUND_WATER_CREATURE'
-      mobcap: 14
-      spawn-interval: 1
-
-    - category: 'WATER_CREATURE'
       mobcap: 10
       spawn-interval: 1
 
-    - category: 'WATER_AMBIENT'
-      mobcap: 20
+    - category: 'UNDERGROUND_WATER_CREATURE'
+      mobcap: 8
       spawn-interval: 1
+
+    - category: 'WATER_CREATURE'
+      mobcap: 5
+      spawn-interval: 1
+
+    - category: 'WATER_AMBIENT'
+      mobcap: 15
+      spawn-interval: 5
 
 
 # Settings for commands and their formatting.

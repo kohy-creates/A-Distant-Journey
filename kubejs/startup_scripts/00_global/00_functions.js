@@ -1,3 +1,5 @@
+//priority: 1000
+
 global.rediscoveredFurniture = () => {
 	const furnitureTypes = [
 		'chair',
@@ -297,4 +299,48 @@ global.amplifyHexColor = function shadeColor(color, percent, noHash) {
 	let BB = ((B.toString(16).length == 1) ? '0' + B.toString(16) : B.toString(16));
 
 	return ((noHash) ? '' : '#') + RR + GG + BB;
+};
+
+/**
+ * 
+ * @param {string} string 
+ * Duration as a timestamp, e.g. `0:30`for 30 seconds 
+ * @param {number} mul
+ * Additional multiplier, e.g. if timestamp is `0:30` and multiplier is 2, the total duration will be 60 seconds
+ * @returns {number}
+ * Specified duration in ticks
+ */
+global.duration = function (string, mul) {
+	let timeTotal, times = string.split(':');
+	if (times.length === 3) {
+		timeTotal =
+			(parseInt(times[0]) * 60 * 60 * 20) + // hours
+			(parseInt(times[1]) * 60 * 20) + // minutes
+			(parseInt(times[2]) * 20); // seconds
+	} else if (times.length === 2) {
+		timeTotal =
+			(parseInt(times[0]) * 60 * 20) + // minutes
+			(parseInt(times[1]) * 20); // seconds
+	}
+	if (mul) timeTotal *= mul;
+	return timeTotal;
+};
+
+const $MobEffectInstance = Java.loadClass(`net.minecraft.world.effect.MobEffectInstance`);
+/**
+ * 
+ * @param {Internal.Effect_} effect 
+ * @param {string} duration 
+ * @param {num} level 
+ * @param {boolean} isAmbient 
+ * @param {boolean} hideParticles 
+ * @param {boolean} showIcon 
+ * @returns {Internal.MobEffectInstance_}
+ */
+global.newMobEffectInstance = function (effect, duration, level, isAmbient, hideParticles, showIcon) {
+	let ambient = isAmbient ? isAmbient : false;
+	let hide = hideParticles ? hideParticles : false;
+	let icon = showIcon ? showIcon : true;
+	let amplifier = (level) ? level - 1 : 0;
+	return new $MobEffectInstance(effect, global.duration(duration), amplifier, ambient, hide, icon);
 };

@@ -1,3 +1,4 @@
+//priority: 500
 /**
  * Numbers are as follow:
  * - Max Health

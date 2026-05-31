@@ -129,7 +129,8 @@ ItemEvents.modification(event => {
 		'ars_nouveau:source_gem_block',
 		/botania:lens/,
 		/botania:mana_/,
-		'@terra_curio'
+		'@terra_curio',
+		'wormhole:wormhole'
 	], item => {
 		item.rarity = 'uncommon';
 	});
@@ -151,7 +152,8 @@ ItemEvents.modification(event => {
 		/ars_.*:thread.*/,
 		'aether:altar',
 		'aether:freezer',
-		'aether:incubator'
+		'aether:incubator',
+		'brewing_stand'
 	], item => {
 		item.rarity = 'rare';
 	});

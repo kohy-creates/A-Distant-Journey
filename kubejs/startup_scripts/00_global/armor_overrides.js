@@ -1,3 +1,4 @@
+//priority: 500
 // Percent
 function p(num) {
 	return num / 100;

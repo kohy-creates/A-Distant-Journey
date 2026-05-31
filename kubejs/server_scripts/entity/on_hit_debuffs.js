@@ -49,38 +49,47 @@ const OnHitDebuffConfig = [
 
 EntityEvents.hurt('player', event => {
 	const player = event.getPlayer();
-	const attacker = event.getSource().getActual();
-	if (!attacker) return;
-	const type = attacker.type;
+	const source = event.getSource();
+	const attacker = source.getActual();
+	if (attacker) {
+		const type = attacker.type;
 
-	let chosenEntry;
+		let chosenEntry;
 
-	entryIterator: for (let entry of OnHitDebuffConfig) {
-		typeChecker: for (let mob of entry.mobs) {
-			if (mob instanceof RegExp) {
-				if (mob.test(type)) {
+		entryIterator: for (let entry of OnHitDebuffConfig) {
+			typeChecker: for (let mob of entry.mobs) {
+				if (mob instanceof RegExp) {
+					if (mob.test(type)) {
+						chosenEntry = entry;
+						break entryIterator;
+					}
+					else continue typeChecker;
+				}
+				else if ((!mob.includes(':') && mob == type.replace('minecraft:', '')) || mob == type) {
 					chosenEntry = entry;
 					break entryIterator;
 				}
 				else continue typeChecker;
 			}
-			else if ((!mob.includes(':') && mob == type.replace('minecraft:', '')) || mob == type) {
-				chosenEntry = entry;
-				break entryIterator;
+		}
+
+		if (chosenEntry) {
+			let currentStage = global.getCurrentChapter(event.getServer());
+			let chance = chosenEntry.chance, amplifier = chosenEntry.level || 1, duration = chosenEntry.duration;
+			if (Array.isArray(chance)) chance = EntityModifications._logic.getStageValue(chance, currentStage);
+			if (Array.isArray(amplifier)) amplifier = EntityModifications._logic.getStageValue(amplifier, currentStage);
+			if (Array.isArray(duration)) duration = EntityModifications._logic.getStageValue(duration, currentStage);
+
+			if (global.ifRandomChance(chance)) {
+				player.addEffect(new $MobEffectInstance(chosenEntry.id, Math.ceil(duration * 20), amplifier - 1));
 			}
-			else continue typeChecker;
 		}
 	}
-
-	if (chosenEntry) {
-		let currentStage = global.getCurrentChapter(event.getServer());
-		let chance = chosenEntry.chance, amplifier = chosenEntry.level || 1, duration = chosenEntry.duration;
-		if (Array.isArray(chance)) chance = EntityModifications._logic.getStageValue(chance, currentStage);
-		if (Array.isArray(amplifier)) amplifier = EntityModifications._logic.getStageValue(amplifier, currentStage);
-		if (Array.isArray(duration)) duration = EntityModifications._logic.getStageValue(duration, currentStage);
-
-		if (global.ifRandomChance(chance)) {
-			player.addEffect(new $MobEffectInstance(chosenEntry.id, Math.ceil(duration * 20), amplifier - 1));
+	switch (source.getType()) {
+		case 'supplementaries.bamboo_spikes':
+		case 'rediscovered_spikes': {
+			player.addEffect(global.newMobEffectInstance('majruszsdifficulty:bleeding', '0:42', 1));
+			break;
 		}
 	}
 });

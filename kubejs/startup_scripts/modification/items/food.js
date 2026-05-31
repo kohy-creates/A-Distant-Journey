@@ -1,21 +1,5 @@
 ItemEvents.modification(event => {
 
-	function duration(string, mul) {
-		let timeTotal, times = string.split(':');
-		if (times.length === 3) {
-			timeTotal =
-				(parseInt(times[0]) * 60 * 60 * 20) + // hours
-				(parseInt(times[1]) * 60 * 20) + // minutes
-				(parseInt(times[2]) * 20); // seconds
-		} else if (times.length === 2) {
-			timeTotal =
-				(parseInt(times[0]) * 60 * 20) + // minutes
-				(parseInt(times[1]) * 20); // seconds
-		}
-		if (mul) timeTotal *= mul;
-		return timeTotal;
-	}
-
 	const nourishment = 'farmersdelight:nourishment'
 
 	event.modify(/.*/, item => {
@@ -54,7 +38,7 @@ ItemEvents.modification(event => {
 		item.setFoodProperties(food => {
 			food.removeEffect('obscure_api:fury')
 				.removeEffect('obscure_api:rush')
-				.effect(nourishment, duration("30:00"), 0, 1);
+				.effect(nourishment, global.duration("30:00"), 0, 1);
 		})
 	});
 
@@ -62,7 +46,7 @@ ItemEvents.modification(event => {
 		item.setFoodProperties(food => {
 			food.removeEffect('obscure_api:fury')
 				.removeEffect('minecraft:strength')
-				.effect(nourishment, duration("10:00"), 0, 1);
+				.effect(nourishment, global.duration("10:00"), 0, 1);
 		})
 	});
 
@@ -74,7 +58,7 @@ ItemEvents.modification(event => {
 
 	event.modify('honeycomb', item => {
 		item.setFoodProperties(food => {
-			food.effect('alexscaves:sugar_rush', duration("00:06"), 0, 0.01);
+			food.effect('alexscaves:sugar_rush', global.duration("00:06"), 0, 0.01);
 			food.hunger(2).saturation(0.1);
 			food.fastToEat();
 			food.alwaysEdible();
@@ -234,7 +218,7 @@ ItemEvents.modification(event => {
 	event.modify(rawMeat, item => {
 		item.setFoodProperties(food => {
 			food.removeEffect('hunger')
-			food.effect('hunger', duration("0:30"), 0, 0.3)
+			food.effect('hunger', global.duration("0:30"), 0, 0.3)
 		})
 	});
 

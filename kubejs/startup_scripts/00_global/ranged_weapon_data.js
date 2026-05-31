@@ -1,3 +1,4 @@
+//priority: 500
 global.bowDamage = {
 	'minecraft:bow': 8,
 	'ars_nouveau:spell_bow': 34,

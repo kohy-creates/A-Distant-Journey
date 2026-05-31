@@ -111,6 +111,11 @@ JEIEvents.information(event => {
 		'Alternatively, can be crafted by tossing the required ingredients into a Cauldron (filled with water) situated above any Campfire!'
 	]);
 
+	addInfo('majruszsdifficulty:recall_potion', [
+		'Teleports to any player in the server when drank. Brewed by adding a Ender Pearl to an Awkward Potion.',
+		'Alternatively, can be crafted by tossing the required ingredients into a Cauldron (filled with water) situated above any Campfire!'
+	]);
+
 	addInfo('additionaladditions:mysterious_bundle', [
 		'Sold by Wandering Traders. Contains random items.'
 	]);

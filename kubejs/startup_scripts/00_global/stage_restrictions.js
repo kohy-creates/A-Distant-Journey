@@ -1,3 +1,4 @@
+//priority: 500
 global.stageRestrictions = {
 	'chapter_1': {
 		list: [
@@ -91,7 +92,7 @@ global.stageRestrictions = {
 			/hadaline/,
 			/entrails/,
 			/architects_palette:.*blackstone.*/,
-			/architects_palette\/twisted/,
+			/architects_palette\/.*twisted/,
 			/botania:.*spark.*/,
 			'botania:lens_paint',
 			/bifrost/
@@ -253,7 +254,6 @@ global.stageRestrictions = {
 			/rediscovered\:.*ruby/,
 			'rediscovered:gear',
 			'rediscovered:rotational_converter',
-			'rediscovered:spikes',
 			'rediscovered:ancient_crying_obsidian',
 			'rediscovered:scarecrow',
 			/rediscovered:.*slab/,

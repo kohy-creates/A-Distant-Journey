@@ -68,3 +68,7 @@ Re-enchanting enchantments
 Updating loading_screen.txt
 Maximizing RAM consumption
 Lagging out for no reason
+Eating raspberries
+Eating strawberries
+Eating apples
+Eating blueberries

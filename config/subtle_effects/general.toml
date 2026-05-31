@@ -1,6 +1,6 @@
 # Don't change this! Version used to track needed updates.
 version = 0
-enableParticleCulling = true
+enableParticleCulling = false
 particleRenderDistance = 4
 particleCullingBlocklist = [
     "minecraft:campfire_signal_smoke"

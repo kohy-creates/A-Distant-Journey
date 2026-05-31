@@ -244,6 +244,7 @@ ClientEvents.lang('en_us', event => {
 		'nethervinery:warped_wine_rack_big': 'Big Warped Wine Rack',
 
 		'twilightdelight:fiery_cooking_pot': 'Twilight-Cooker 9001 (Magma Powered)',
+		'rediscovered:spikes': 'Old Spikes',
 	};
 
 	/** @type {Record<Internal.InputItem_, string>} */
@@ -346,6 +347,8 @@ ClientEvents.lang('en_us', event => {
 		'majruszsdifficulty:ender_dragon_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Ender Dragon Treasure Bag</neon></rainbow>',
 		'majruszsdifficulty:raid_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Raid Treasure Bag</neon></rainbow>',
 		'majruszsdifficulty:fishing_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Fishing Treasure Bag</neon></rainbow>',
+
+		'wormhole:wormhole': 'Wormhole Potion'
 	};
 
 	const entityRenames = {

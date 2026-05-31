@@ -1,3 +1,4 @@
+//priority: 500
 const genericSetBonusUUID = '645bb590-a4ab-4c0c-bf19-653b14934698';
 global.genericSetBonusUUID = genericSetBonusUUID;
 

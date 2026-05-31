@@ -1,3 +1,4 @@
+//priority: 500
 global.LCETips = {
 	// 'ars_nouveau:source_gem': ['Mana Gem', 'A gem transformed by Mana into something completely different, a valuable crafting material for magical items.'],
 	// 'ars_nouveau:magebloom_crop': ['Manabloom Seed', 'A seed infused with Mana, used to farm Manablooms.'],

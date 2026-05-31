@@ -1,3 +1,4 @@
+//priority: 500
 const RemovedItems = {
 	list: [
 		'minecraft:shield',
@@ -747,6 +748,7 @@ const RemovedItems = {
 		/hybrid\-aquatic:driftwood/,
 		/hybrid\-aquatic:.*crate.*/,
 		/hybrid\-aquatic:.*karkinos.*/,
+		'hybrid-aquatic:ominous_hook',
 		'hybrid-aquatic:crab_pot',
 		/hybrid\-aquatic:diving_/,
 		'hybrid-aquatic:raft',

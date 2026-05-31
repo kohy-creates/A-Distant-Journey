@@ -12,6 +12,7 @@ ItemEvents.rightClicked(event => {
 		}
 		if (healTarget.getHealth() == healTarget.getMaxHealth()) return;
 		healTarget.heal(item.id == 'kubejs:golden_bandage' ? 5.0 : 2.001);
+		healTarget.removeEffect('majruszsdifficulty:bleeding');
 		player.addItemCooldown(item.getItem(), 5);
 		item.shrink(1);
 	}

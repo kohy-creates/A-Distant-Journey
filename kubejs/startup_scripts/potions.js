@@ -1,5 +1,3 @@
-const $MobEffectInstance = Java.loadClass(`net.minecraft.world.effect.MobEffectInstance`);
-
 StartupEvents.registry('potion', event => {
 	event.create('endurance').addEffect(new $MobEffectInstance('minecraft:resistance', 4800));
 	event.create('long_endurance').addEffect(new $MobEffectInstance('minecraft:resistance', 7200));
@@ -15,8 +13,14 @@ MoreJSEvents.registerPotionBrewing((event) => {
 
 	event.addCustomBrewing(
 		'tide:glowfish',
-		Item.of('minecraft:potion', "{Potion:'minecraft:water'}"),
+		Item.of('minecraft:potion', '{Potion:"minecraft:water"}'),
 		'majruszsdifficulty:recall_potion'
+	);
+
+	event.addCustomBrewing(
+		'ender_pearl',
+		Item.of('minecraft:potion', '{Potion:"minecraft:water"}'),
+		'wormhole:wormhole'
 	);
 
 	event.addCustomBrewing(

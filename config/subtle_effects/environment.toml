@@ -21,7 +21,7 @@ sculkDustBiomes = [
 
 [geysers]
 useUpdatedSmoke = false
-flameGeyserSpawnChance = 5
+flameGeyserSpawnChance = 0
 flameGeyserSpawnableBlocks = [
     "minecraft:netherrack",
     "minecraft:blackstone",
@@ -30,7 +30,7 @@ flameGeyserSpawnableBlocks = [
 flameGeyserSoundVolume = 0.5
 flameGeyserActiveTime = 300
 flameGeyserInactiveTime = 500
-smokeGeyserSpawnChance = 5
+smokeGeyserSpawnChance = 0
 smokeGeyserSpawnableBlocks = [
     "minecraft:netherrack",
     "minecraft:blackstone",
@@ -39,7 +39,7 @@ smokeGeyserSpawnableBlocks = [
 smokeGeyserSoundVolume = 0.2
 smokeGeyserActiveTime = 300
 smokeGeyserInactiveTime = 500
-bubbleGeyserSpawnChance = 5
+bubbleGeyserSpawnChance = 0
 bubbleGeyserSpawnableBlocks = [
     "minecraft:sand",
     "minecraft:red_sand",
@@ -93,7 +93,7 @@ spawnableBlocks = [
 defaultDensity = 3
 ignoredSeasons = "DEFAULT"
 fireflyType = "VANILLA"
-fireflySoundVolume = 1.0
+fireflySoundVolume = 1.496732
 onlyAllowInHabitatBiomes = false
 habitatBiomes = [
     "minecraft:swamp",

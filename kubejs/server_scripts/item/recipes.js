@@ -333,7 +333,9 @@ ServerEvents.recipes((event) => {
 		'vinery:oak_wine_rack_mid',
 		'vinery:oak_wine_rack_small',
 		'born_in_chaos_v1:transmuting_elixirkraft',
-		'hybrid-aquatic:trident'
+		'hybrid-aquatic:trident',
+		'quark:automation/crafting/gravisand',
+		'rediscovered:spikes'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -407,6 +409,7 @@ ServerEvents.recipes((event) => {
 			'morered:stone_plate': 'smooth_stone_slab',
 			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
 			'upgrade_aquatic:thrasher_tooth': 'alexsmobs:shark_tooth',
+			'hybrid-aquatic:shark_tooth': 'alexsmobs:shark_tooth',
 			'botania:abtruse_platform': 'ars_nouveau:mirrorweave',
 			'botania:spectral_platform': 'ars_nouveau:falseweave',
 			'rubinated_nether:ruby': 'rediscovered:ruby',
@@ -448,6 +451,17 @@ ServerEvents.recipes((event) => {
 			replacement
 		);
 	};
+
+	event.shapeless(
+		'8x quark:gravisand',
+		[
+			'ender_pearl',
+			'#forge:sand/colorless', '#forge:sand/colorless',
+			'#forge:sand/colorless', '#forge:sand/colorless',
+			'#forge:sand/colorless', '#forge:sand/colorless',
+			'#forge:sand/colorless', '#forge:sand/colorless',
+		]
+	).id('adj:gravisand');
 
 	event.shapeless(
 		'20x kubejs:bandage',
@@ -1901,6 +1915,73 @@ ServerEvents.recipes((event) => {
 			}
 		}
 	}).id('adj:recall_potion');
+
+	event.custom({
+		'type': 'lychee:item_inside',
+		'contextual': [
+			{
+				'type': 'location',
+				'offsetY': -1,
+				'predicate': {
+					'block': {
+						'tag': 'campfires',
+						'state': {
+							'lit': 'true'
+						}
+					}
+				}
+			}
+		],
+		'post': [
+			{
+				'type': 'execute',
+				'command': 'execute align xyz run playsound block.brewing_stand.brew block @a[distance=0..] ~.5 ~.5 ~.5 1 1.3',
+				'hide': true
+			},
+			{
+				'type': 'execute',
+				'command': 'execute align xyz run playsound entity.fishing_bobber.splash block @a[distance=0..] ~.5 ~.5 ~.5 0.5 1.2',
+				'hide': true
+			},
+			{
+				'type': 'place',
+				'block': 'cauldron'
+			},
+			{
+				'type': 'drop_item',
+				'item': 'wormhole:wormhole',
+				'count': 3
+			}
+		],
+		'item_in': [
+			{
+				'item': 'ender_pearl'
+			},
+			{
+				'item': 'brown_mushroom'
+			},
+			{
+				'item': 'red_mushroom'
+			},
+			{
+				'item': 'glass_bottle'
+			},
+			{
+				'item': 'glass_bottle'
+			},
+			{
+				'item': 'glass_bottle'
+			}
+		],
+		'block_in': {
+			'blocks': [
+				'water_cauldron'
+			],
+			'state': {
+				'level': '3'
+			}
+		}
+	}).id('adj:wormhole_potion');
 
 	event.recipes.create.milling([Item.of('spelunker:amethyst_dust'), Item.of('spelunker:amethyst_dust').withChance(0.25)], 'amethyst_shard', 60).id('adj:amethyst_dust_crushing');
 

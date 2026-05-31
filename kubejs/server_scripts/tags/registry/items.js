@@ -257,7 +257,7 @@ ServerEvents.tags('item', tags => {
 	]);
 
 	tags.add('adjcore:curios_dropped_on_death', [
-		'backpacked:backpack'
+		'#travelersbackpack:custom_travelers_backpack'
 	]);
 
 	tags.add('forge:buckets/entity_water', [

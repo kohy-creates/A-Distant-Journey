@@ -23,6 +23,12 @@ PlayerEvents.tick(event => {
 
 	const persistentData = player.persistentData;
 
+	if (
+		player.hasEffect('majruszsdifficulty:bleeding')
+		|| player.hasEffect('wither')
+		|| player.hasEffect('poison')
+	) return;
+
 	// No idea if health can even be negative in this game
 	if (player.health == player.maxHealth || player.health <= 0) {
 		persistentData.putShort('regenerationTimer', 0)

@@ -1,3 +1,4 @@
+//priority: 500
 const replaceItemsMap = {
 	'farmersdelight:wheat_dough': 'create:dough',
 	'rediscovered:quiver': 'supplementaries:quiver',
@@ -49,6 +50,7 @@ const replaceItemsMap = {
 	'alexscaves:banana': 'neapolitan:banana',
 	'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
 	'upgrade_aquatic:thrasher_tooth': 'alexsmobs:shark_tooth',
+	'hybrid-aquatic:shark_tooth': 'alexsmobs:shark_tooth',
 
 	'rubinated_nether:ruby': 'rediscovered:ruby',
 	'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
