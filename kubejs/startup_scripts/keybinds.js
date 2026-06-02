@@ -55,7 +55,7 @@ KeyBindEvents.modify(event => {
 		// "key.showmeyourskin.open_settings",
 		// "key.smoothCamera",
 		"key.socialInteractions",
-		"key.swapOffhand",
+		// "key.swapOffhand",
 		"key.toggleCarriedItemTooltips",
 		"key.toggleSelectedItemTooltips",
 		"key.toggleVisualItemContents",

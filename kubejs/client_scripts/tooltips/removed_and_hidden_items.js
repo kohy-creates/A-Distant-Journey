@@ -1,6 +1,3 @@
-const $ItemTooltipEvent = Java.loadClass('net.minecraftforge.event.entity.player.ItemTooltipEvent');
-const $ItemAttributeModifierEvent = Java.loadClass('net.minecraftforge.event.ItemAttributeModifierEvent');
-
 NativeEvents.onEvent('lowest', false, $ItemTooltipEvent, /** @param {Internal.ItemTooltipEvent_} event */ event => {
 	let item = event.getItemStack();
 	if (UnavailableItems.cache.shouldHide(item.id)) {

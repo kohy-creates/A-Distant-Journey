@@ -48,7 +48,8 @@ const OnHitDebuffConfig = [
 ];
 
 EntityEvents.hurt('player', event => {
-	const player = event.getPlayer();
+	const player = event.getEntity();
+	if (!player.isPlayer()) return;
 	const source = event.getSource();
 	const attacker = source.getActual();
 	if (attacker) {

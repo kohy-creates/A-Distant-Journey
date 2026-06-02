@@ -1,3 +1,4 @@
+//priority: 450
 const UnavailableItems = {
 	/** @type {Internal.Stages_} */
 	stages: null,
@@ -80,7 +81,7 @@ ADJClientEvents.itemIsLockedRenderCheck(event => {
 	if (UnavailableItems.cache.shouldHide(id)) {
 		event.cancel();
 	}
-	else if (id.includes('valkyrum') && !UnavailableItems.stages.has('valkyrum_unlocked')) {
+	else if (id.includes('valkyrum') && (UnavailableItems.stages && !UnavailableItems.stages.has('valkyrum_unlocked'))) {
 		event.cancel();
 	}
 });

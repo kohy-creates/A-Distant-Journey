@@ -1,5 +1,3 @@
-const $BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem');
-
 ItemEvents.tooltip(event => {
 	const currentPlayer = Client.player;
 

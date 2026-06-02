@@ -453,12 +453,12 @@
 	/**
 	 * Whether editing the index is enabled
 	 */
-	edit-mode: false;
+	edit-mode: true;
 
 	/**
 	 * Whether to log untranslated tags as warnings.
 	 */
-	log-untranslated-tags: false;
+	log-untranslated-tags: true;
 
 	/**
 	 * Whether to log ingredients that don't have a representative tag as warnings.

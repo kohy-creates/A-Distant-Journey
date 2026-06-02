@@ -9,7 +9,7 @@
 "Enable Skeletons" = true
 "Enable Slimes" = true
 "Enable Spiders" = true
-"Enable Villagers" = false
+"Enable Villagers" = true
 "Enable Witches" = true
 "Enable Warden" = true
 "Enable Drowned" = true
@@ -128,7 +128,7 @@
 
 [Villagers]
 	#Make villagers fight back. Use the enhancedai:villager/can_attack type tag to add more villagers, only works with entities that extend vanilla Villagers. Attack damage can't be changed via config due to limitation so use mods like Mobs Properties Randomness to change the damage. Base damage is 4.
-	"Enable Villager attacking" = true
+	"Enable Villager attacking" = false
 	#Villagers will alert Iron Golems and Village Guards when panicking
 	"Enable Villager alert protectors" = true
 
@@ -366,7 +366,7 @@
 	"Enable Teleport to target" = true
 	"Enable Pathfinding" = true
 	#Mobs will jump off the ground to emit a shockwave when falling damaging nearby entities. Only entity types in enhancedai:mobs/shockwave/can_use tag are affected by this feature and entity types in the enhancedai:mobs/shockwave/damage_invulnerable tag will not be damaged by the shockwave.
-	"Enable Falling shockwave" = true
+	"Enable Falling shockwave" = false
 	#Prevent players from abusing water or 2 high gaps to bully endermen.
 	"Enable Teleport anti-cheese" = true
 	#Adds a new push resistance attribute to mobs. This is added to some vanilla mobs through MPR data pack

@@ -1,6 +1,13 @@
 {
 	"providers": [
 		{
+			"type": "space",
+			"advances": {
+				" ": 5,
+				"\u200c": 0
+			}
+		},
+		{
 			"type": "bitmap",
 			"file": "kohara:font/smallcaps.png",
 			"ascent": 7,

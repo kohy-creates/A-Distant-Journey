@@ -4073,6 +4073,8 @@ ItemEvents.tooltip((tooltip) => {
 		// add the tooltip to the item
 		tooltip.addAdvanced(tooltipItem.item, (item, advanced, text) => {
 
+			if (UnavailableItems.cache.shouldHide(item.id)) return;
+
 			let addEmptyLine = (text.size() > 1);
 
 			// Add Hold [Shift] for Summary

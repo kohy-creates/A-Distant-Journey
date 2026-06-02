@@ -1,3 +1,4 @@
+//priority: 400
 const TooltipEdits = {
 	TIP_CONFIG: [
 		{
@@ -20,14 +21,14 @@ const TooltipEdits = {
 			items: '#c:villager_job_sites',
 			text: 'Work station for Villagers'
 		},
-		{
-			items: '#adj:dyable_items',
-			text: 'Can be dyed'
-		},
-		{
-			items: '#minecraft:trim_materials',
-			text: 'Trim material'
-		},
+		// {
+		// 	items: '#adj:dyable_items',
+		// 	text: 'Can be dyed'
+		// },
+		// {
+		// 	items: '#minecraft:trim_materials',
+		// 	text: 'Trim material'
+		// },
 		{
 			items: [
 				'summoningrituals:indestructible_altar'
@@ -101,6 +102,12 @@ const TooltipEdits = {
 			items: /.*_spear$/,
 			text: [
 				'Critical hits reduce enemy defense'
+			]
+		},
+		{
+			items: /.*_katan$/,
+			text: [
+				'A combo of 3 hits increases movement speed'
 			]
 		},
 		{

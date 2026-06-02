@@ -13,7 +13,7 @@ const EntityModifications = {
 		 */
 		getStageValue: function (arr, stage) {
 			if (!Array.isArray(arr)) return arr
-			for (let i = stage; i > 0; i--) {
+			for (let i = stage; i > -1; i--) {
 				if (arr[i] != null) return arr[i]
 			}
 			return null
@@ -80,6 +80,7 @@ const EntityModifications = {
 			}
 			// Case 2: arrays per stage (hp[], dmg[], armor[])
 			else {
+				console.log(currentStage)
 				health = this.getStageValue(base[0], currentStage);
 				damage = this.getStageValue(base[1], currentStage);
 				armor = this.getStageValue(base[2], currentStage);

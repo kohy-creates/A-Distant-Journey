@@ -94,7 +94,7 @@ global.weapon_overrides = {
 	'botania:manasteel_pick': [15 * defaultAttackDamage[1], defaultAttackSpeed[1]],
 	'botania:elementium_pick': [23 * defaultAttackDamage[1], defaultAttackSpeed[1]],
 	'botania:terra_sword': [85, 1.8],
-	'botania:thunder_sword': [39, 2.5, 0, 0, 15],
+	'botania:thunder_sword': [12, 10, 0, 0, 15],
 	'cataclysm:gauntlet_of_guard': [40, 3.1, 0, 0, 15],
 	'cataclysm:gauntlet_of_bulwark': [60, 3.1, 0, 0, 15],
 	'cataclysm:gauntlet_of_maelstrom': [60, 3.1, 0, 0, 15],
@@ -133,7 +133,8 @@ global.weapon_overrides = {
 	'farmersdelight:skillet': [12, 1],
 	'zenith:zenith': [110, 3.5, 0.14],
 
-	'cataclysm:infernal_forge': [66, 1]
+	'cataclysm:infernal_forge': [66, 1],
+	'alexsmobs:skelewag_sword': [8, 10],
 };
 
 addToolsetOverride('minecraft:wooden', 7);
