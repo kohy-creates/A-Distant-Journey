@@ -40,6 +40,7 @@
 	</rule>
 	<rule stacksize="999">
 		<or>
+			<condition>id = sereneseasons:calendar</condition>
 			<condition>stacksize gt 1</condition>
 		</or>
 	</rule>
