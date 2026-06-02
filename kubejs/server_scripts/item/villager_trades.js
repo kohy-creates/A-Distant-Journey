@@ -212,7 +212,6 @@ MoreJSEvents.villagerTrades(event => {
 	newBasicTrade('farmer', 2, '1x emerald', '4x egg', 16);
 	newBasicTrade('farmer', 2, '16x egg', '1x emerald', 16);
 	newBasicTrade('farmer', 1, '4x sugar', '1x emerald');
-	newBasicTrade('farmer', 1, '1x emerald', 'minecraft:flower_pot');
 	newBasicTrade('farmer', 1, ['2x emerald', '1x bucket'], 'minecraft:milk_bucket');
 	newBasicTrade('farmer', 1, '12x egg', '3x emerald');
 	newBasicTrade('farmer', 1, '2x emerald', '2x cactus');
@@ -221,7 +220,7 @@ MoreJSEvents.villagerTrades(event => {
 	newBasicTrade('farmer', 2, '3x emerald', '1x ars_nouveau:mendosteen_pod');
 	newBasicTrade('farmer', 2, '3x emerald', '1x ars_nouveau:bastion_pod');
 	newBasicTrade('farmer', 3, '3x emerald', '1x ars_nouveau:frostaya_pod');
-	newBasicTrade('farmer', 3, '3x emerald', '1x ars_nouveau:bombegrante_pod');
+	newBasicTrade('farmer', 3, '3x emerald', '1x ars_nouveau:bombegranate_pod');
 	newBasicTrade('farmer', 4, '27x emerald', '1x ars_nouveau:source_berry_pie');
 	newBasicTrade('farmer', 4, '15x emerald', '4x ars_nouveau:source_berry_roll');
 	newBasicTrade('farmer', 5, '61x emerald', '1x ars_nouveau:magebloom_crop');
@@ -231,6 +230,19 @@ MoreJSEvents.villagerTrades(event => {
 	newBasicTrade('farmer', 5, '10x emerald', '1x quark:ancient_fruit');
 
 	// Florist
+	newBasicTrade('morevillagers:florist', 1, '18x poppy', 'emerald', 16);
+	newBasicTrade('morevillagers:florist', 1, '18x dandelion', 'emerald', 16);
+	newBasicTrade('morevillagers:florist', 1, '14x azure_bluet', 'emerald', 16);
+	newBasicTrade('morevillagers:florist', 1, '15x red_tulip', 'emerald', 16);
+	newBasicTrade('morevillagers:florist', 1, '15x white_tulip', 'emerald', 16);
+	newBasicTrade('morevillagers:florist', 1, '15x orange_tulip', 'emerald', 16);
+	newBasicTrade('morevillagers:florist', 1, '15x pink_tulip', 'emerald', 16);
+	newBasicTrade('morevillagers:florist', 2, '9x emerald', 'ars_nouveau:red_archwood_sapling', 6);
+	newBasicTrade('morevillagers:florist', 2, '9x emerald', 'ars_nouveau:blue_archwood_sapling', 6);
+	newBasicTrade('morevillagers:florist', 2, '9x emerald', 'ars_nouveau:purple_archwood_sapling', 6);
+	newBasicTrade('morevillagers:florist', 2, '9x emerald', 'ars_nouveau:green_archwood_sapling', 6);
+	newBasicTrade('morevillagers:florist', 2, '9x emerald', 'ars_elemental:yellow_archwood_sapling', 6);
+	newBasicTrade('morevillagers:florist', 1, '1x emerald', 'minecraft:flower_pot');
 	newBasicTrade('morevillagers:florist', 3, '1x emerald', '4x podzol');
 	newBasicTrade('morevillagers:florist', 4, '3x emerald', '2x mycelium');
 	newBasicTrade('morevillagers:florist', 5, '5x emerald', '1x create:tree_fertilizer');
