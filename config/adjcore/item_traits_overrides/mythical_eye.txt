@@ -1,2 +1,0 @@
-Mythical Eye
-/kubejs:eye_of
