@@ -335,7 +335,9 @@ ServerEvents.recipes((event) => {
 		'born_in_chaos_v1:transmuting_elixirkraft',
 		'hybrid-aquatic:trident',
 		'quark:automation/crafting/gravisand',
-		'rediscovered:spikes'
+		'rediscovered:spikes',
+		'botania:terra_plate/terrasteel_ingot',
+		'botanicadds:terrasteel'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -5068,6 +5070,12 @@ ServerEvents.recipes((event) => {
 	).id('adj:candle_from_animal_fat')
 
 	// Botania rework
+	terraPlateAndGaiaPlate([
+		'ars_nouveau:source_gem',
+		'botania:mana_diamond',
+		'botania:mana_pearl'
+	], 'botania:terrasteel_ingot', 300000);
+
 	event.shaped(
 		'botania:tiny_planet_block',
 		[
@@ -5084,9 +5092,9 @@ ServerEvents.recipes((event) => {
 	// Runes
 	function rune(name) {
 		let options = [
+			(runeName) => { return `botania:rune_${runeName}` },
 			(runeName) => { return `botanicadds:rune_${runeName}` },
 			(runeName) => { return `kubejs:rune_${runeName}` },
-			(runeName) => { return `botania:rune_${runeName}` }
 		];
 		for (let supplier of options) {
 			let id = supplier(name);

@@ -18,7 +18,7 @@
             "botanicadds:flowers/energizera": false
         },
         "botanicadds:gaia_plate": {
-            "botanicadds:terrasteel": true,
+            "botanicadds:terrasteel": false,
             "botanicadds:gaiasteel_ingot": true,
             "botanicadds:overgrowth_seed": true
         },

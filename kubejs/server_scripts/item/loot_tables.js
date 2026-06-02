@@ -659,6 +659,30 @@ LootJS.modifiers((event) => {
 			);
 		});
 
+	// Recall Potions and Wormhole Potions in loot tables
+	function recallPotRandomDrop(chance, min, max) {
+		let amount = [global.getOrDefault(min, 1), global.getOrDefault(max, 1)];
+		/**
+		 * @param {Internal.GroupedLootBuilder_} pool 
+		 */
+		let potionPool = (pool) => {
+			pool.addAlternativesLoot(
+				LootEntry.of('wormhole:wormhole')
+					.limitCount(amount)
+					.when(c => {
+						c.randomChance(0.5);
+						c.customCondition({
+							condition: 'adjcore:is_multiplayer'
+						});
+					}),
+				LootEntry.of('majruszsdifficulty:recall_potion')
+					.limitCount(amount)
+			);
+			pool.randomChance(chance);
+		}
+		return potionPool;
+	}
+
 	// Boss-specific changes
 	global.bossMobs.forEach(boss => {
 		let treasureBag = `kubejs:treasure_bag_${boss.split(':')[1]}`;

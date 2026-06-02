@@ -344,3 +344,14 @@ global.newMobEffectInstance = function (effect, duration, level, isAmbient, hide
 	let amplifier = (level) ? level - 1 : 0;
 	return new $MobEffectInstance(effect, global.duration(duration), amplifier, ambient, hide, icon);
 };
+
+/**
+ * Returns either the first or second argument if first is null.
+ * Because Rhino wouldn't always work well with '||'.
+ * @param {object} value
+ * @param {object} ifNull
+ * @returns {object} 
+ */
+global.getOrDefault = function (value, ifNull) {
+	return (value) ? value : ifNull;
+};

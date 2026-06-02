@@ -1702,57 +1702,53 @@
 				Count: 1
 				id: "evilcraft:weather_container"
 				tag: {
-					weather: "EMPTY"
+					weather: "CLEAR"
 				}
 			}
 			id: "084801A9B094A135"
+			min_required_tasks: 1
 			subtitle: "Use an Environental Accumulator to fill a Weather Container with... well, weather"
 			tasks: [
 				{
-					id: "58487D97F17B8EA9"
+					disable_toast: true
+					id: "6B10A458AD764391"
 					item: {
 						Count: 1
 						id: "evilcraft:weather_container"
 						tag: {
-							weather: "EMPTY"
+							weather: "RAIN"
 						}
 					}
 					match_nbt: true
 					type: "item"
 				}
 				{
-					id: "302FD03D7DDD1EE3"
+					disable_toast: true
+					id: "39BE950392D89C99"
 					item: {
 						Count: 1
-						id: "itemfilters:or"
+						id: "evilcraft:weather_container"
 						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "evilcraft:weather_container"
-									tag: {
-										weather: "CLEAR"
-									}
-								}
-								{
-									Count: 1b
-									id: "evilcraft:weather_container"
-									tag: {
-										weather: "RAIN"
-									}
-								}
-								{
-									Count: 1b
-									id: "evilcraft:weather_container"
-									tag: {
-										weather: "LIGHTNING"
-									}
-								}
-							]
+							weather: "LIGHTNING"
 						}
 					}
-					title: "Filled Weather Containers"
+					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					disable_toast: true
+					id: "5C047AEE3D99E4C1"
+					item: {
+						Count: 1
+						id: "evilcraft:weather_container"
+						tag: {
+							weather: "CLEAR"
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "My Little Sunshine"
@@ -2664,27 +2660,6 @@
 			title: "Terrestrial"
 			x: 16.5d
 			y: -3.0d
-		}
-		{
-			dependencies: [
-				"76DA5AEA27C3B576"
-				"675C4AB4B1F71DD0"
-			]
-			id: "5F4C513D3008D7A6"
-			tasks: [{
-				id: "7557BCE7DBB54C43"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "adj:ars/spell_focus"
-					}
-				}
-				title: "Any upgraded Spell Focus"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 6.0d
 		}
 		{
 			dependencies: ["356CC1FA4E52AD00"]
