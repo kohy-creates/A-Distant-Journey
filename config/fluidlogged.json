@@ -3,6 +3,8 @@
   "fluidloggable_blocks": {
     "blacklist": false,
     "blocks": [
+      "minecraft:bamboo",
+      "minecraft:sugar_cane",
       "#adj:fluidloggable_blocks",
       "minecraft:big_dripleaf_stem",
       "minecraft:stonecutter",
