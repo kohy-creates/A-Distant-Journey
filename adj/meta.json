@@ -47,12 +47,13 @@
 		},
 		{
 			"id": "1.3.2",
-			"releasedAt": 1763916595000
+			"releasedAt": 1763916595000,
+			"updateType":"incompatible"
 		},
 		{
 			"id": "1.4.0",
 			"releasedAt": 1779991544000,
-			"updateType": "incompatible"
+			"updateType": "minor"
 		},
 		{
 			"id": "1.4.1",
