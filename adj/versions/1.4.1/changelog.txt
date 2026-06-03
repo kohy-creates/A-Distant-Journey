@@ -20,8 +20,8 @@ Hopefully this version will also soon be on Modrinth for more people to enjoy.
 
 ### Gameplay changes
 
-- Added Wormhole Potions.
-- Added Recall and Wormhole potions to a lot of chest loot tables.
+- ~~Added Wormhole Potions~~ Postponed until future update due to problems on dedicated servers.
+- Added Recall Potions to a lot of chest loot tables.
 - Calendars are now stackable to 999.
 - Bamboo and Sugar Cane can now be waterlogged.
 - Florist villager sells a tiny bit more stuff.

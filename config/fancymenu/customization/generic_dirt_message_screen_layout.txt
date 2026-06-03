@@ -330,11 +330,6 @@ decoration_overlay {
 }
 
 customization {
-  action = setopenaudio
-  path = [source:location]adj:sounds/enter_world.ogg
-}
-
-customization {
   action = backgroundoptions
   keepaspectratio = false
 }

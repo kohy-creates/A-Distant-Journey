@@ -17,11 +17,11 @@ MoreJSEvents.registerPotionBrewing((event) => {
 		'majruszsdifficulty:recall_potion'
 	);
 
-	event.addCustomBrewing(
-		'ender_pearl',
-		Item.of('minecraft:potion', '{Potion:"minecraft:water"}'),
-		'wormhole:wormhole'
-	);
+	// event.addCustomBrewing(
+	// 	'ender_pearl',
+	// 	Item.of('minecraft:potion', '{Potion:"minecraft:water"}'),
+	// 	'wormhole:wormhole'
+	// );
 
 	event.addCustomBrewing(
 		'alexsmobs:bone_serpent_tooth',
