@@ -666,7 +666,7 @@ LootJS.modifiers((event) => {
 		 * @param {Internal.GroupedLootBuilder_} pool 
 		 */
 		let potionPool = (pool) => {
-			pool.addAlternativesLoot(
+			pool.randomChance(chance).addAlternativesLoot(
 				LootEntry.of('wormhole:wormhole')
 					.limitCount(amount)
 					.when(c => {
@@ -678,10 +678,243 @@ LootJS.modifiers((event) => {
 				LootEntry.of('majruszsdifficulty:recall_potion')
 					.limitCount(amount)
 			);
-			pool.randomChance(chance);
 		}
 		return potionPool;
 	}
+
+	event.addLootTableModifier('minecraft:chests/ancient_city').pool(recallPotRandomDrop(0.66, 2, 4));
+	event.addLootTableModifier('minecraft:chests/simple_dungeon').pool(recallPotRandomDrop(0.5, 2, 3));
+	event.addLootTableModifier('minecraft:chests/abandoned_mineshaft').pool(recallPotRandomDrop(0.5, 1, 2));
+	event.addLootTableModifier('minecraft:chests/jungle_temple').pool(recallPotRandomDrop(0.5, 2, 3));
+	event.addLootTableModifier('minecraft:chests/nether_fortress').pool(recallPotRandomDrop(0.35, 1, 3));
+	event.addLootTableModifier('minecraft:chests/shipwreck_supply').pool(recallPotRandomDrop(1, 1, 3));
+	event.addLootTableModifier('minecraft:chests/buried_treasure').pool(recallPotRandomDrop(1, 2, 5));
+	event.addLootTableModifier('minecraft:chests/end_city_treasure').pool(recallPotRandomDrop(0.333, 1, 3));
+	event.addLootTableModifier(/minecraft:chests\/.*village.*/).pool(recallPotRandomDrop(0.1, 1, 2));
+	event.addLootTableModifier(/.*chests\/.*witch_villa.*/).pool(recallPotRandomDrop(0.1, 1, 2));
+	event.addLootTableModifier(/nova_structures:chests\/dungeon.*/).pool(recallPotRandomDrop(0.35, 1, 3));
+	event.addLootTableModifier('adjcore:chests/evilcraft_dark_temple').pool(recallPotRandomDrop(0.5, 1, 3));
+	event.addLootTableModifier(/veggiesdelight:chests\/vd_wagon.*/).pool(recallPotRandomDrop(1, 1, 2));
+	event.addLootTableModifier('twilightforest:chests/hedge_maze').pool(recallPotRandomDrop(0.25, 1, 2));
+	event.addLootTableModifier(/twilight_treehouses:chests\/.*/).pool(recallPotRandomDrop(0.25, 1, 3));
+
+	// Fishing + Tide Crates
+	event.addLootTableModifier(/tide:chests\/crates\/.*/).pool(recallPotRandomDrop(0.66, 2, 3));
+
+	event.addLootTableModifier('tide:chests/crates/surface_freshwater')
+		.pool(pool => {
+			pool.rolls([1, 2]);
+			pool.randomChance(0.75).addWeightedLoot([
+				LootEntry.of('raw_iron').withWeight(7).limitCount([1, 2]),
+				LootEntry.of('mythicmetals:raw_tin').withWeight(5).limitCount([1, 2]),
+				LootEntry.of('coal').withWeight(8).limitCount([2, 3]),
+				LootEntry.of('quartz').withWeight(8).limitCount([3, 7]),
+			])
+		})
+		.pool(pool => {
+			pool.randomChance(0.5).addWeightedLoot([
+				LootEntry.of('oak_log').withWeight(20).limitCount([2, 8]),
+				LootEntry.of('birch_log').withWeight(10).limitCount([2, 8]),
+				LootEntry.of('jungle_log').withWeight(4).limitCount([2, 8]),
+				LootEntry.of('dark_oak_log').withWeight(6).limitCount([2, 8]),
+				LootEntry.of('acacia_log').withWeight(6).limitCount([2, 8]),
+				LootEntry.of('spruce_log').withWeight(10).limitCount([2, 8]),
+			])
+		})
+		.pool(pool => {
+			pool.randomChance(0.25).addWeightedLoot([
+				LootEntry.of('oak_sapling').withWeight(30).limitCount([1, 2]),
+				LootEntry.of('birch_sapling').withWeight(20).limitCount([1, 2]),
+				LootEntry.of('jungle_sapling').withWeight(4).limitCount([1, 1]),
+				LootEntry.of('dark_oak_sapling').withWeight(10).limitCount([1, 3]),
+				LootEntry.of('acacia_sapling').withWeight(8).limitCount([1, 2]),
+				LootEntry.of('spruce_sapling').withWeight(14).limitCount([1, 2]),
+			])
+		})
+		.pool(pool => {
+			pool.randomChance(0.15).addWeightedLoot([
+				LootEntry.of('terra_curio:tsunami_in_a_bottle'),
+				LootEntry.of('terra_curio:balloon_pufferfish'),
+				LootEntry.of('terra_curio:sailfish_boots'),
+				LootEntry.of('terra_curio:shoe_spikes'),
+			]);
+		});
+
+	event.addLootTableModifier('tide:chests/crates/surface_saltwater')
+		.pool(pool => {
+			pool.rolls([1, 3]);
+			pool.randomChance(0.75).addWeightedLoot([
+				LootEntry.of('raw_iron').withWeight(7).limitCount([1, 2]),
+				LootEntry.of('mythicmetals:raw_aquarium').withWeight(10).limitCount([1, 2]),
+				LootEntry.of('coal').withWeight(10).limitCount([2, 3]),
+			])
+		})
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('upgrade_aquatic:driftwood_log').limitCount([2, 6])
+			)
+		})
+		.pool(pool => {
+			pool.randomChance(0.1).addWeightedLoot([
+				LootEntry.of('hybrid-aquatic:basking_shark_plushie'),
+				LootEntry.of('hybrid-aquatic:bull_shark_plushie'),
+				LootEntry.of('hybrid-aquatic:frilled_shark_plushie'),
+				LootEntry.of('hybrid-aquatic:great_white_shark_plushie'),
+				LootEntry.of('hybrid-aquatic:hammerhead_shark_plushie'),
+				LootEntry.of('hybrid-aquatic:thresher_shark_plushie'),
+				LootEntry.of('hybrid-aquatic:tiger_shark_plushie'),
+				LootEntry.of('hybrid-aquatic:whale_shark_plushie'),
+			]);
+		})
+		.pool(pool => {
+			pool.randomChance(0.15).addWeightedLoot([
+				LootEntry.of('hybrid-aquatic:manglerfish_fin'),
+				LootEntry.of('hybrid-aquatic:manglerfish_lure'),
+				LootEntry.of('hybrid-aquatic:eel_scarf'),
+				LootEntry.of('hybrid-aquatic:moon_jellyfish_hat'),
+			]);
+		})
+		.pool(pool => {
+			pool.addWeightedLoot([
+				LootEntry.of('terra_curio:tsunami_in_a_bottle'),
+				LootEntry.of('terra_curio:balloon_pufferfish'),
+				LootEntry.of('terra_curio:sailfish_boots'),
+				LootEntry.of('terra_curio:flipper'),
+			]);
+		});
+
+	event.addLootTableModifier('tide:chests/crates/underground')
+		.pool(pool => {
+			pool.rolls([1, 3]);
+			pool.randomChance(0.75).addWeightedLoot([
+				LootEntry.of('raw_iron').withWeight(14).limitCount([1, 3]),
+				LootEntry.of('raw_gold').withWeight(8).limitCount([1, 2]),
+				LootEntry.of('lapis_lazuli').withWeight(8).limitCount([2, 6]),
+				LootEntry.of('mythicmetals:raw_tin').withWeight(5).limitCount([1, 2]),
+				LootEntry.of('coal').withWeight(4).limitCount([2, 3]),
+				LootEntry.of('emerald').withWeight(7).limitCount([1, 3]),
+				LootEntry.of('mythicmetals:raw_mythril').withWeight(7).limitCount([1, 2]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 1 })),
+				LootEntry.of('mythicmetals:raw_orichalcum').withWeight(7).limitCount([1, 2]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 1 })),
+			]);
+		})
+		.pool(pool => {
+			pool.randomChance(0.3).addLoot(
+				LootEntry.of('spelunker:amethyst_dust').limitCount([2, 4])
+			);
+		})
+		.pool(pool => {
+			pool.randomChance(0.75).addWeightedLoot([
+				LootEntry.of('terra_curio:band_of_regeneration'),
+				LootEntry.of('terra_curio:hermes_boots'),
+				LootEntry.of('terra_curio:cloud_in_a_bottle'),
+				LootEntry.of('terra_curio:climbing_claws'),
+			]);
+		});
+
+	event.addLootTableModifier('tide:chests/crates/deep')
+		.pool(pool => {
+			pool.rolls([1, 3]);
+			pool.randomChance(0.75).addWeightedLoot([
+				LootEntry.of('raw_iron').withWeight(14).limitCount([1, 3]),
+				LootEntry.of('raw_gold').withWeight(10).limitCount([1, 2]),
+				LootEntry.of('redstone').withWeight(8).limitCount([2, 10]),
+				LootEntry.of('diamond').withWeight(3).limitCount([1, 3]),
+				LootEntry.of('mythicmetals:raw_mythril').withWeight(8).limitCount([1, 3]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 1 })),
+				LootEntry.of('mythicmetals:raw_orichalcum').withWeight(8).limitCount([1, 3]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 1 })),
+				LootEntry.of('mythicmetals:raw_adamantite').withWeight(5).limitCount([1, 3]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 3 })),
+				LootEntry.of('mythicmetals:unobtainium').withWeight(3).limitCount([1, 2]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 5 })),
+			]);
+		})
+		.pool(pool => {
+			pool.randomChance(0.6).addLoot(
+				LootEntry.of('spelunker:amethyst_dust').limitCount([2, 5])
+			);
+		})
+		.pool(pool => {
+			pool.randomChance(0.75).addWeightedLoot([
+				LootEntry.of('terra_curio:band_of_regeneration'),
+				LootEntry.of('terra_curio:hermes_boots'),
+				LootEntry.of('terra_curio:cloud_in_a_bottle'),
+				LootEntry.of('terra_curio:climbing_claws'),
+			]);
+		});
+
+	event.addLootTableModifier('tide:chests/crates/surface_lava')
+		.pool(pool => {
+			pool.addWeightedLoot([
+				LootEntry.of('terra_curio:cross_necklace'),
+				LootEntry.of('terra_curio:putrid_scent'),
+				LootEntry.of('terra_curio:panic_necklace'),
+				LootEntry.of('terra_curio:star_cloak'),
+				LootEntry.of('terra_curio:titan_glove'),
+			]);
+		});
+
+	event.addLootTableModifier('tide:chests/crates/underground_lava')
+		.pool(pool => {
+			pool.rolls([1, 3]);
+			pool.randomChance(0.75).addWeightedLoot([
+				LootEntry.of('raw_gold').withWeight(35).limitCount([1, 3]),
+				LootEntry.of('redstone').withWeight(23).limitCount([2, 10]),
+				LootEntry.of('diamond').withWeight(8).limitCount([1, 3]),
+				LootEntry.of('mythicmetals:raw_mythril').withWeight(12).limitCount([1, 3]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 1 })),
+				LootEntry.of('mythicmetals:raw_orichalcum').withWeight(12).limitCount([1, 3]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 1 })),
+				LootEntry.of('mythicmetals:raw_adamantite').withWeight(7).limitCount([1, 3]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 3 })),
+				LootEntry.of('mythicmetals:unobtainium').withWeight(4).limitCount([1, 2]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 5 })),
+			]);
+		})
+		.pool(pool => {
+			pool.addWeightedLoot([
+				LootEntry.of('terra_curio:cross_necklace'),
+				LootEntry.of('terra_curio:putrid_scent'),
+				LootEntry.of('terra_curio:panic_necklace'),
+				LootEntry.of('terra_curio:star_cloak'),
+				LootEntry.of('terra_curio:titan_glove'),
+			]);
+		});
+
+	event.addLootTableModifier('tide:chests/crates/deep_lava')
+		.pool(pool => {
+			pool.rolls([1, 3]);
+			pool.randomChance(0.75).addWeightedLoot([
+				LootEntry.of('raw_gold').withWeight(24).limitCount([1, 3]),
+				LootEntry.of('redstone').withWeight(12).limitCount([3, 12]),
+				LootEntry.of('diamond').withWeight(8).limitCount([1, 3]),
+				LootEntry.of('mythicmetals:raw_mythril').withWeight(12).limitCount([1, 3]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 1 })),
+				LootEntry.of('mythicmetals:raw_orichalcum').withWeight(12).limitCount([1, 3]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 1 })),
+				LootEntry.of('mythicmetals:raw_adamantite').withWeight(7).limitCount([1, 3]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 3 })),
+				LootEntry.of('mythicmetals:unobtainium').withWeight(4).limitCount([1, 2]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 5 })),
+			]);
+		})
+		.pool(pool => {
+			pool.addWeightedLoot([
+				LootEntry.of('terra_curio:cross_necklace'),
+				LootEntry.of('terra_curio:putrid_scent'),
+				LootEntry.of('terra_curio:panic_necklace'),
+				LootEntry.of('terra_curio:star_cloak'),
+				LootEntry.of('terra_curio:titan_glove'),
+			]);
+		});
+
+	event.addLootTableModifier('tide:chests/crates/nether')
+		.pool(pool => {
+			pool.rolls([1, 3]);
+			pool.randomChance(0.75).addWeightedLoot([
+				LootEntry.of('quartz').withWeight(17).limitCount([4, 9]),
+				LootEntry.of('raw_gold').withWeight(24).limitCount([1, 3]),
+				LootEntry.of('mythicmetals:raw_midas_gold').withWeight(11).limitCount([1, 3]),
+				LootEntry.of('mythicmetals:raw_stormyx').withWeight(8).limitCount([1, 2]),
+				LootEntry.of('mythicmetals:raw_palladium').withWeight(4).limitCount([1, 2]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 2 })),
+				LootEntry.of('ancient_debris').withWeight(2).limitCount([1, 2]).when(c => c.customCondition({ condition: 'adjcore:is_chapter', from: 3 })),
+			]);
+		})
+		.pool(pool => {
+			pool.addWeightedLoot([
+				LootEntry.of('terra_curio:lava_charm'),
+				LootEntry.of('terra_curio:magma_stone'),
+				LootEntry.of('terra_curio:obsidian_rose'),
+			]);
+		});
 
 	// Boss-specific changes
 	global.bossMobs.forEach(boss => {

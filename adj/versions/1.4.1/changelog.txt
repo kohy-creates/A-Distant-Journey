@@ -1,0 +1,65 @@
+# Update 1.4.1 ~ Rounding Out The Adventure
+
+A first bug fixing patch for the 1.4.0 update. I hope it's the last one before I go back to working on content updates!
+
+Hopefully this version will also soon be on Modrinth for more people to enjoy.
+
+## Mod changes
+
+- Merged FTBQuests Freeze Fix with ADJCore to prevent it from crashing on launch if FTB Quests is not present.
+- Replaced Pretty Rain with something a bit less aesthetic, but much more clean and performant.
+
+## Balance Changes
+
+- Nerfed Oreberries. Rather than being guaranteed to drop 3 nuggets and have an extra chance to drop 2 and/or 1 extra, they now always drop 2 nuggets with a 66% chance to drop 1 extra.
+- Reduced the loot rates of Portal Guns by about 30%.
+- Increased drop chance of Moon Charm (2% -> 5%).
+- Terrasteel is a bit cheaper to make. Mana cost went down from half a Mana Pool worth of Mana to about a third.
+
+## Other
+
+### Gameplay changes
+
+- Added Wormhole Potions.
+- Added Recall and Wormhole potions to a lot of chest loot tables.
+- Calendars are now stackable to 999.
+- Bamboo and Sugar Cane can now be waterlogged.
+- Florist villager sells a tiny bit more stuff.
+- Uranium Oreberries can now be eaten.
+- Tide crates now have unique loot again. Some of them have also seen an expansion in the loot pools.
+- Fish are stackable again.
+
+### Performance changes
+
+- Compressed down boss music. Music pack size went down by like 300 MB.
+- Add a special outlined font and started using this in place of some outlined GUI text.
+- While on the topic of that - optimized HUD text rendering. This is a much bigger optimization than it sounds, because rather than 20 different text elements, I am now only rendering 4
+- EMI no longer reloads itself when chapters are progressed.
+
+- Disabled plenty of FancyMenu mixins. What it means for you is the game will run a bit more smoothly.
+> Literally why are Listeners a thing in the mod?? KUBEJS IS RIGHT THERE. I am not even going to mention the fact that most of them have horrendous performance. WHY DO WE NEED AN EVENT FOR WHEN AN ENTITY ENTERS A SCREEN??? WHO EVEN NEEDS TO INTERCEPT THAT EXACT MOMENT??
+
+### Visual/Ambient Changes
+
+- Resprited Lootr chests.
+- Added 32 new loading screen backgrounds, courtesy of 3 lovely people from Discord - Valerypire, The Dragon and Persie.
+- Resprited Eye of Curiosity and Eye of Hedonism.
+
+### Bug Fixes
+
+- Armor defaults to being properly visible.
+- Fixed description formatting in world creation.
+- Change how global script handling is, well, handled, to make it less reliant on load order randomness to work.
+- Fix the Magma strip at the bottom of the world being Bedrock instead
+- Removed leftover Twilight Forest debug advancements.
+- Fix missing farmer trade.
+- Changed how Malfu's Combat Animations resource pack is loaded to hopefully fix missing animation bugs with BetterCombat.
+- Fixed Chroma outline being enabled by default.
+- Fixed world enter/leave sound playing seemingly in random places during loading.
+- Console no longer gets spammed with errors whenever a player is dead (thanks Ars and Gnetum).
+- Fixed Manabloom Seed being uncraftable.
+- Fixed Snow Queen, Gaia Guardian and Ender Guardian treasure bags being always empty.
+- Fixed Backpacks being kept on death. 
+- Fixed My Little Sunshine achievement being unable to be completed.
+- Fixed Katanas not mentioning their gimmick.
+- Fixed some mobs having default stats (e.g. Blazes, Iron Golems).

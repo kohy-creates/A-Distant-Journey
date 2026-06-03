@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = generic_dirt_message_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1779976057465
+  last_edited_time = 1780443007392
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:b193341d-0a6f-45c2-a0a9-0b37dc6154a2-1779976030284] = [groups:][instances:]
+  [loading_requirement_container_meta:a7f16711-563f-4fe8-8d29-516dc43ce252-1780442972166] = [groups:][instances:]
 }
 
 menu_background {
@@ -625,7 +625,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%**DON'T CLICK ON THE SCREEN**%n%until it's finished loading or the game might crash!%n%%n%%!!smallcaps% {"placeholder":"switch_case","values":{"value":"{"placeholder":"osname"}","cases":"Windows 11:(this is   just   how   windows   works),Windows 10:(this   is   just   how   windows   works)","default":""}} %!!%%n%^^^
+  source = ^^^%n%**DON'T CLICK ON THE SCREEN**%n%until it's finished loading or the game might crash!%n%%n%%!!smallcaps% {"placeholder":"switch_case","values":{"value":"{"placeholder":"osname"}","cases":"Windows 11:(this is just how windows works),Windows 10:(this   is   just   how   windows   works)","default":""}} %!!%%n%^^^
   source_mode = direct
   shadow = true
   enable_scrolling = false

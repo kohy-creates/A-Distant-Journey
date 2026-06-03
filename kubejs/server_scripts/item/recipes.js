@@ -2188,7 +2188,7 @@ ServerEvents.recipes((event) => {
 		{
 			S: 'galosphere:palladium_ingot',
 			H: 'chain',
-			C: 'soul_candle'
+			C: 'waxed:soul_candle'
 		}
 	).id('adj:galosphere_soul_chandelier');
 
@@ -5072,7 +5072,7 @@ ServerEvents.recipes((event) => {
 	// Botania rework
 	terraPlateAndGaiaPlate([
 		'ars_nouveau:source_gem',
-		'botania:mana_diamond',
+		'botania:manasteel_ingot',
 		'botania:mana_pearl'
 	], 'botania:terrasteel_ingot', 300000);
 

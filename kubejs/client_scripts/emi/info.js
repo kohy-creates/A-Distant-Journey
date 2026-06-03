@@ -171,7 +171,7 @@ JEIEvents.information(event => {
 		'Terra Catalyst only serves one purpose - to break down Gaia Spirits into smaller Shards.'
 	]);
 
-	addInfo(['botania:mana_diamond', 'botania:mana_diamond_block', 'botania:mana_pearl', /*'botania:mana_string'*/, 'botania:quartz_mana', 'botania:mana_powder'], [
+	addInfo(['ars_nouveau:source_gem', 'ars_nouveau:source_gem_block', 'botania:mana_pearl', /*'botania:mana_string'*/, 'botania:quartz_mana', 'botania:mana_powder'], [
 		'When tossed into a Mana Pool certain items can be infused with stored Mana, gaining magical properties used in crafting recipes.'
 	]);
 

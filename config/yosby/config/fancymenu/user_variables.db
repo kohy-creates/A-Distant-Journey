@@ -37,62 +37,8 @@ variable {
 }
 
 variable {
-  name = option.show_mods_button
-  value = 0
-  reset_on_launch = false
-}
-
-variable {
-  name = intro.fadeout
-  value = 1
-  reset_on_launch = false
-}
-
-variable {
-  name = has_seen_server_list
-  value = 0
-  reset_on_launch = false
-}
-
-variable {
-  name = hud.has_wither
-  value = 0
-  reset_on_launch = false
-}
-
-variable {
-  name = hud.is_poison
-  value = 0
-  reset_on_launch = false
-}
-
-variable {
-  name = world.border_size
-  value = 20k
-  reset_on_launch = false
-}
-
-variable {
-  name = hud.is_poisoned
-  value = 0
-  reset_on_launch = false
-}
-
-variable {
-  name = hud.is_hungry
-  value = 0
-  reset_on_launch = false
-}
-
-variable {
   name = has_visited_kofi
   value = 
-  reset_on_launch = false
-}
-
-variable {
-  name = hud.hunger_level
-  value = 125
   reset_on_launch = false
 }
 
@@ -103,7 +49,7 @@ variable {
 }
 
 variable {
-  name = hud.is_freezing
+  name = option.show_mods_button
   value = 0
   reset_on_launch = false
 }
@@ -115,26 +61,14 @@ variable {
 }
 
 variable {
-  name = pause.is_nighttime_irl
-  value = false
-  reset_on_launch = false
-}
-
-variable {
-  name = hud.saturation_level
-  value = 15
-  reset_on_launch = false
-}
-
-variable {
-  name = hud.has_wither_sickness
+  name = has_seen_server_list
   value = 0
   reset_on_launch = false
 }
 
 variable {
-  name = hud.hunger_level_color
-  value = 2
+  name = world.border_size
+  value = 20k
   reset_on_launch = false
 }
 

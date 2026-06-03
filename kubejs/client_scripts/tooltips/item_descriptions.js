@@ -30,6 +30,10 @@ const TooltipEdits = {
 		// 	text: 'Trim material'
 		// },
 		{
+			items: 'crittersandcompanions:clam',
+			text: 'Right click to open'
+		},
+		{
 			items: [
 				'summoningrituals:indestructible_altar'
 			],

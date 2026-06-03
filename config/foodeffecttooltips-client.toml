@@ -5,7 +5,7 @@
 	#Use Lists as Whitelists instead.
 	whitelistInstead = false
 	#Blacklisted Item.
-	blacklistItems = ["delightful:ender_nectar"]
+	blacklistItems = ["delightful:ender_nectar", "oreberriesreplanted:uranium_oreberry"]
 	#Blacklisted Mod IDs.
-	blacklistModsIDs = ["beachparty", "vinery", "brewinandchewin", "twilightdelight", "aquamirae", "corn_delight"]
+	blacklistModsIDs = ["beachparty", "vinery", "brewinandchewin", "twilightdelight", "aquamirae", "corn_delight", "tide"]
 

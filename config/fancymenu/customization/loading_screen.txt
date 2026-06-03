@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1779477482277
+  last_edited_time = 1780442863506
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:e6a3c093-b523-4acb-8e7a-c47db1990d8e-1779477477699] = [groups:][instances:]
+  [loading_requirement_container_meta:7fcffb8b-0aad-4e39-9575-0bface570e7a-1780442769265] = [groups:][instances:]
 }
 
 customization {
@@ -575,7 +575,7 @@ element {
 
 element {
   interactable = false
-  source = ^^^%n%%!!smallcaps%%#a0a0a0%Loading   -   {"placeholder":"replace_text","values":{"text":"{"placeholder":"randomtext","values":{"path":"config/fancymenu/assets/loading_screen.txt","interval":"6"}}","search":" ","replacement":"    ","use_regex":"false","replace_all":"true"}}...   -   {"placeholder":"game_loading_progress"}%%#%%!!%%n%^^^
+  source = ^^^%n%%!!smallcaps%%#a0a0a0%Loading - {"placeholder":"randomtext","values":{"path":"config/fancymenu/assets/loading_screen.txt","interval":"6"}}... - {"placeholder":"game_loading_progress"}%%#%%!!%%n%^^^
   source_mode = direct
   shadow = false
   enable_scrolling = false

@@ -43,8 +43,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:0
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","fabric","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","builtin/ancient_aether_texture_tweaks","VanillaTweaks.zip","astraliyte-s-animated-textures-v1-4.zip","builtin/resource/overrides_pack","fresh-particles1-2.zip","netherexp:jne_emissive","netherexp:jne_retextures","unique_nether_wood","mod/subtle_effects:resourcepacks/biome_color_water_particles","file/FreshAnimations_v1.9.2.zip","file/FreshlyTwilighted_v1.0.0.zip","file/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip","file/AL\u0027s Boss Rush+FA 1.1.zip","file/Fresh Aether 1.2.zip","file/AL\u0027s Boss Rush 1.1.zip","file/Medieval_Style_Lootr.zip","file/More_Nether_Roots_(1.20).zip","file/Living_Dragon_(1.20).zip","file/Authentic Shadows_1.20.zip","file/Chat Reporting Helper.zip","file/Create Touch-Ups v1.0.zip","file/Farcr\u0027s Re-Create 1.6.zip","file/CU - 3d Wrench.zip","file/SHC Enhanced Fire.zip","ImmersiveResprites-1.1.zip","file/Frozy\u0027s Quest Book.zip","file/Farcr\u0027s Re-Crafted V2.28.1.zip","file/waystones_1.20.1_update_5.zip","file/§lColourful Containers§8.zip","file/§5§lModded §f§lContainers§8.zip","file/PS Shielded - Xaero Frame 1.0.0.zip","file/cubic-sun-moon-v1.8.5.zip","file/Ars Sound Family renovation V1 [1.20.1].zip","file/Ars Nouveau Refresh 1.0.zip","file/Ars_Loafers.zip","scholar:colored_books","scholar:chiseled_bookshelf_colored_books","file/Re-Simple-Storage.zip","phantasm:compat_farmersdelight","file/thinned.zip","delightful:overhauls","file/Fancy Crops v1.3.zip","file/Aether Regenerated v1.2.1.zip","file/§5VN4\u0027s §l§2FWS+RWS Detailed.zip","Dyes-Backport-1.1.1.zip","file/Twilight JAPPA Pack 1.0.0.zip","generated/fragmentum_layer","obscure_tooltips/packs/vibrant_tooltips","file/ReEviled_1.1.zip","file/Gentler Weather Sounds 2.2.0.zip","file/MCA_resourcepack-V3.1.1.zip","file/sweety_items_20.zip","file/Subtle Font Tweaks v2.2.zip","file/cuter_mmonsters.zip","file/Cataclysm Reimagined v1.3.5 for Forge.zip","file/kohara\u0027s Compat","file/ADJ-Music.zip","file/ADJ Music"]
-incompatibleResourcePacks:["file/AL\u0027s Boss Rush+FA 1.1.zip","file/AL\u0027s Boss Rush+FA 1.1.zip"]
+resourcePacks:["vanilla","mod_resources","fabric","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","builtin/ancient_aether_texture_tweaks","VanillaTweaks.zip","astraliyte-s-animated-textures-v1-4.zip","builtin/resource/overrides_pack","fresh-particles1-2.zip","netherexp:jne_emissive","netherexp:jne_retextures","unique_nether_wood","mod/subtle_effects:resourcepacks/biome_color_water_particles","file/FreshAnimations_v1.9.2.zip","file/FreshlyTwilighted_v1.0.0.zip","file/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip","file/AL\u0027s Boss Rush+FA 1.1.zip","file/Fresh Aether 1.2.zip","file/AL\u0027s Boss Rush 1.1.zip","file/More_Nether_Roots_(1.20).zip","file/Living_Dragon_(1.20).zip","file/Authentic Shadows_1.20.zip","file/Chat Reporting Helper.zip","file/Create Touch-Ups v1.0.zip","file/Farcr\u0027s Re-Create 1.6.zip","file/CU - 3d Wrench.zip","file/SHC Enhanced Fire.zip","ImmersiveResprites-1.1.zip","file/Farcr\u0027s Re-Crafted V2.28.1.zip","file/waystones_1.20.1_update_5.zip","file/§lColourful Containers§8.zip","file/§5§lModded §f§lContainers§8.zip","file/PS Shielded - Xaero Frame 1.0.0.zip","file/cubic-sun-moon-v1.8.5.zip","file/Ars Sound Family renovation V1 [1.20.1].zip","file/Ars Nouveau Refresh 1.0.zip","file/Ars_Loafers.zip","scholar:colored_books","scholar:chiseled_bookshelf_colored_books","file/Re-Simple-Storage.zip","phantasm:compat_farmersdelight","delightful:overhauls","file/Fancy Crops v1.3.zip","file/Aether Regenerated v1.2.1.zip","file/§5VN4\u0027s §l§2FWS+RWS Detailed.zip","Dyes-Backport-1.1.1.zip","file/Twilight JAPPA Pack 1.0.0.zip","generated/fragmentum_layer","obscure_tooltips/packs/vibrant_tooltips","file/ReEviled_1.1.zip","file/[Compressed] Alternative Rain Sounds 1.20-1.20.1.zip","MCA_resourcepack-V3.1.1.zip","file/sweety_items_20.zip","file/Subtle Font Tweaks v2.2.zip","file/cuter_mmonsters.zip","file/Cataclysm Reimagined v1.3.5 for Forge.zip","file/kohara\u0027s Compat","file/ADJ-Music.zip","file/ADJ Music"]
+incompatibleResourcePacks:["file/AL\u0027s Boss Rush+FA 1.1.zip"]
 lastServer:
 lang:en_us
 soundDevice:""
@@ -104,6 +104,7 @@ key_key.screenshot:key.keyboard.f4
 key_key.togglePerspective:key.keyboard.f5
 key_key.smoothCamera:key.keyboard.unknown
 key_key.fullscreen:key.keyboard.f11
+key_key.swapOffhand:key.keyboard.f
 key_key.saveToolbarActivator:key.keyboard.c
 key_key.loadToolbarActivator:key.keyboard.x
 key_key.advancements:key.keyboard.l:CONTROL
@@ -238,7 +239,7 @@ key_adjcore.loadout.2:key.keyboard.f2
 key_adjcore.loadout.3:key.keyboard.f3
 key_adjcore.hide_gui:key.keyboard.f8
 key_key.ftbquests.quests:key.keyboard.l
-key_key.baublemounts.mountsummon:key.keyboard.f
+key_key.baublemounts.mountsummon:key.keyboard.x
 key_key.picturemode.open:key.keyboard.m
 key_key.pingwheel.ping_location:key.keyboard.g
 key_key.configured.open_mod_list:key.keyboard.unknown

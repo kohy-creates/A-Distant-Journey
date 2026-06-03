@@ -745,7 +745,7 @@ const RemovedItems = {
 		'waxed:waxed_arid_sand',
 		'waxed:waxed_red_arid_sand',
 
-		/hybrid\-aquatic:driftwood/,
+		/hybrid\-aquatic:.*driftwood/,
 		/hybrid\-aquatic:.*crate.*/,
 		/hybrid\-aquatic:.*karkinos.*/,
 		'hybrid-aquatic:ominous_hook',

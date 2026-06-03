@@ -21,7 +21,14 @@ ServerEvents.tags('item', tags => {
 		'cataclysm:draugr_head',
 		/_fossil_head/,
 		'cataclysm:koboldediator_skull',
-		'accents:'
+		/^accents:(?!.*sewing).*/,
+		'twilightforest:lamp_of_cinders',
+		'hybrid-aquatic:manglerfish_fin',
+		'hybrid-aquatic:manglerfish_lure',
+		'hybrid-aquatic:eel_scarf',
+		'hybrid-aquatic:moon_jellyfish_hat',
+		'hybrid-aquatic:nautilus_helmet',
+		'hybrid-aquatic:nautilus_pauldrons',
 
 	]);
 

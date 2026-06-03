@@ -7,7 +7,7 @@
   "directionIndicatorVisible": true,
   "playerInfoMode": "COMPACT",
   "teamColorMode": "FULL",
-  "pingSize": 200,
+  "pingSize": 150,
   "channel": "",
   "serverChannels": {},
   "removeRadius": 10,

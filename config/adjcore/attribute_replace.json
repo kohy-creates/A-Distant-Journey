@@ -57,6 +57,41 @@
 				"minecraft:generic.armor;0;15;CHEST",
 				"adjcore:generic.safe_fall_distance;0;5;CHEST"
 			]
+		},
+		"twilightforest:lamp_of_cinders": {
+			"remove": [
+				"minecraft:generic.armor"
+			]
+		},
+		"hybrid-aquatic:manglerfish_fin": {
+			"remove": [
+				"minecraft:generic.armor"
+			]
+		},
+		"hybrid-aquatic:manglerfish_lure": {
+			"remove": [
+				"minecraft:generic.armor"
+			]
+		},
+		"hybrid-aquatic:eel_scarf": {
+			"remove": [
+				"minecraft:generic.armor"
+			]
+		},
+		"hybrid-aquatic:moon_jellyfish_hat": {
+			"remove": [
+				"minecraft:generic.armor"
+			]
+		},
+		"hybrid-aquatic:nautilus_helmet": {
+			"remove": [
+				"minecraft:generic.armor"
+			]
+		},
+		"hybrid-aquatic:nautilus_pauldrons": {
+			"remove": [
+				"minecraft:generic.armor"
+			]
 		}
 	}
 }

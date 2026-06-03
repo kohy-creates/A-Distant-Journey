@@ -23,13 +23,13 @@
       }
     ],
     "autoFishDataBlacklist": [],
-    "crateWeight": 4.0,
+    "crateWeight": 11.0,
     "crateQuality": 1.0,
     "logDataErrors": false
   },
   "items": {
-    "fishItemSizes": "ALWAYS",
-    "bucketableFishItems": "WHEN_LIVING",
+    "fishItemSizes": "NEVER",
+    "bucketableFishItems": "NEVER",
     "fishItemLifespan": 120,
     "enableBedrockBreakingItems": true,
     "pocketWatchBlacklist": []

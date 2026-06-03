@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = level_loading_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1779838380061
+  last_edited_time = 1780485512891
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:b0e66bf7-a0e9-4506-ad03-b2b60244c504-1779838375312] = [groups:][instances:]
+  [loading_requirement_container_meta:c6c5a27e-d0ad-426e-8cb5-e1a7fccc100a-1780485478065] = [groups:][instances:]
 }
 
 menu_background {
@@ -470,7 +470,7 @@ element {
 
 element {
   interactable = true
-  source = %!!smallcaps%Girls   are   Now   Praying%!!%
+  source = %!!smallcaps%Girls are Now Praying%!!%
   source_mode = direct
   shadow = true
   enable_scrolling = false
@@ -504,9 +504,9 @@ element {
   auto_sizing_base_screen_height = 1200
   sticky_anchor = false
   anchor_point = bottom-right
-  x = -137
+  x = -146
   y = -30
-  width = 120
+  width = 129
   height = 15
   stay_on_screen = true
   element_loading_requirement_container_identifier = 9a12d9b4-bbdc-417c-920e-3c0ff7611fd2-1741010709930

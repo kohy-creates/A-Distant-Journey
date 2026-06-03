@@ -129,25 +129,6 @@
         }
       ],
       "rolls": 1.0
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "item",
-          "name": "terra_curio:sailfish_boots"
-        },
-        {
-          "type": "item",
-          "name": "terra_curio:flipper"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "random_chance",
-          "chance": 0.25
-        }
-      ]
     }
   ]
 }
