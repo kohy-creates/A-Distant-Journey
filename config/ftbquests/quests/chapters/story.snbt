@@ -1575,7 +1575,7 @@
 			tasks: [
 				{
 					id: "6D7214F425504287"
-					structure: "#betterfortresses:better_fortresses"
+					structure: "minecraft:fortress"
 					title: "Find a Nether Fortress"
 					type: "structure"
 				}

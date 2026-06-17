@@ -1,6 +1,0 @@
-{
-	"parent": "minecraft:block/chain",
-	"textures": {
-		"all": "kubejs:block/hook_chain_placeholder"
-	}
-}

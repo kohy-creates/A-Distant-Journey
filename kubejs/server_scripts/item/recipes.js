@@ -1227,11 +1227,10 @@ ServerEvents.recipes((event) => {
 			return id;
 		});
 
-
 		event.custom({
 			type: "botanicadds:gaia_plate",
 			ingredients: ingredients,
-			result: (output instanceof String) ? { item: output } : output,
+			result: (typeof output === 'string' || output instanceof String) ? { item: output } : output,
 			mana: mana
 		}).id(`adj:gaia_plate/${flattenedID(output)}`);
 	}
@@ -5615,7 +5614,8 @@ ServerEvents.recipes((event) => {
 	}
 
 	locateStructureRitual('#ars_nouveau:wilden_den', ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'ars_nouveau:source_gem', rune('wrath')]);
-	locateStructureRitual('betterfortresses:fortress', ['nether_bricks', 'nether_bricks', 'nether_bricks', 'quark:soul_bead']);
+	locateStructureRitual('minecraft:fortress', ['nether_bricks', 'nether_bricks', 'nether_bricks', 'quark:soul_bead']);
+	locateStructureRitual('minecraft:bastion_remnant', ['blackstone', 'blackstone', 'blackstone', 'gold_ingot', 'mythicmetals:midas_gold_ingot']);
 	locateStructureRitual('minecraft:pillager_outpost', ['emerald_block', 'galosphere:palladium_block', rune('greed')]);
 	locateStructureRitual('betteroceanmonuments:ocean_monument', ['prismarine', 'prismarine', 'prismarine', 'prismarine', rune('water')]);
 	locateStructureRitual('minecraft:trail_ruins', ['rediscovered:ruby', 'rediscovered:ruby', 'rediscovered:ruby']);
@@ -5625,6 +5625,20 @@ ServerEvents.recipes((event) => {
 	locateStructureRitual('aether:silver_dungeon', ['galosphere:palladium_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
 	locateStructureRitual('aether:gold_dungeon', ['gold_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
 	locateStructureRitual('lost_aether_content:platinum_dungeon', ['mythicmetals:platinum_ingot', 'aether:zanite_gemstone', 'aether:zanite_gemstone', 'aether:ambrosium_shard', 'aether:ambrosium_shard', 'aether:ambrosium_shard']);
+
+	function locateBetterArchaeologyStructure(structure, catalyst1, catalyst2, block) {
+		locateStructureRitual(structure, [catalyst1, catalyst2, block, block, block, 'bone', 'copper_ingot']);
+	}
+
+	locateBetterArchaeologyStructure('#adj:archeology/fossil_jungle', 'jungle_leaves', 'jungle_sapling', 'mud');
+	locateBetterArchaeologyStructure('betterarcheology:fossil_creeper', 'gunpowder', 'gunpowder', 'dirt');
+	locateBetterArchaeologyStructure('#adj:archeology/fossil_chicken', 'feather', 'feather', 'dirt');
+	locateBetterArchaeologyStructure('betterarcheology:villager_grave', 'emerald', 'emerald', 'gravel');
+	locateBetterArchaeologyStructure('#adj:archeology/fossil_underwater', 'prismarine', 'prismarine', 'sand');
+	locateBetterArchaeologyStructure('betterarcheology:fossil_wolf', 'bone', 'wool', 'gravel');
+	locateBetterArchaeologyStructure('betterarcheology:fossil_sheep_0', 'wool', 'wool', 'dirt');
+	locateStructureRitual('betterarcheology:catacombs', ['emerald', 'gold_ingot', 'gold_ingot', 'gold_ingot', 'stone_bricks', 'stone_bricks', 'stone_bricks', rune('greed')]);
+	locateStructureRitual('betterarcheology:light_temple', ['mythicmetals:midas_gold_ingot', 'mythicmetals:midas_gold_ingot', 'gold_ingot', 'gold_ingot', 'stone_bricks', 'stone_bricks', rune('fire')]);
 
 	// Aether repairing
 	Item.getTypeList().forEach(id => {
@@ -9060,7 +9074,7 @@ ServerEvents.recipes((event) => {
 		],
 		{
 			C: 'chain',
-			I: 'mythicmetals:adamantite_hook',
+			I: 'mythicmetals:adamantite_ingot',
 			F: 'flint'
 		}
 	).id('adj:adamantite_hook');

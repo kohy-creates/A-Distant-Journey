@@ -69,6 +69,12 @@
 					"name": "terra_curio:frog_leg",
 					"weight": 1,
 					"quality": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "terra_curio:balloon_pufferfish",
+					"weight": 2,
+					"quality": 1
 				}
 			],
 			"rolls": 1

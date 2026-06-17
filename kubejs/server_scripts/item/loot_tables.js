@@ -734,7 +734,6 @@ LootJS.modifiers((event) => {
 		.pool(pool => {
 			pool.randomChance(0.15).addWeightedLoot([
 				LootEntry.of('terra_curio:tsunami_in_a_bottle'),
-				LootEntry.of('terra_curio:balloon_pufferfish'),
 				LootEntry.of('terra_curio:sailfish_boots'),
 				LootEntry.of('terra_curio:shoe_spikes'),
 			]);
@@ -777,9 +776,9 @@ LootJS.modifiers((event) => {
 		.pool(pool => {
 			pool.addWeightedLoot([
 				LootEntry.of('terra_curio:tsunami_in_a_bottle'),
-				LootEntry.of('terra_curio:balloon_pufferfish'),
 				LootEntry.of('terra_curio:sailfish_boots'),
 				LootEntry.of('terra_curio:flipper'),
+				LootEntry.of('terra_curio:water_walking_boots')
 			]);
 		});
 

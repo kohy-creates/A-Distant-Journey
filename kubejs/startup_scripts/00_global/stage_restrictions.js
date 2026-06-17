@@ -134,10 +134,10 @@ global.stageRestrictions = {
 		light: [
 			/everycomp\:.*aether.*/, // also covers redux, lost content and ancient
 			/supp.*\:.*aether.*/,
-			/twilight(forest|delight):dark_/,
-			/twilight(forest|delight):darkwood_/,
+			/twilight(forest|delight).*dark_/,
+			/twilight(forest|delight).*darkwood_/,
 			/twilightforest\/dark_/,
-			/twilight(forest|delight):mangrove_/,
+			/twilight(forest|delight).*mangrove_/,
 			/twilight(forest|delight):maze/,
 			/twilight(forest|delight):knightmetal/,
 			/twilight(forest|delight):underbrick/,

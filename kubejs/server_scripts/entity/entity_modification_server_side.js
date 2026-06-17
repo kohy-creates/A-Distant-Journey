@@ -241,7 +241,7 @@ const EntityModifications = {
 		 * @param {Internal.LivingEntity_} entity 
 		 */
 		hardcoreModifications: function (entity) {
-			setHealth(entity, Math.ceil(entity.maxHealth * 1.5));
+			EntityModifications._logic.setHealth(entity, Math.ceil(entity.maxHealth * 1.5));
 			entity.setAttributeBaseValue($ALObjects.Attributes.CRIT_CHANCE.get(), 0.1);
 			switch (entity.type) {
 				case 'minecraft:wither_skeleton': {

@@ -1,0 +1,10 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#is_overworld",
+	"features": [
+		"kohara:underground/amethyst_geode_large",
+		"kohara:underground/amethyst_geode_massive",
+		"kohara:underground/dripstone_cluster_plain_caves"
+	],
+	"step": "vegetal_decoration"
+}

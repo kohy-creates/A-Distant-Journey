@@ -12,6 +12,8 @@ function obscureTooltipsPath(path) {
 	return `kubejs/assets/adj/tooltips/${path}`
 }
 
+global.rarities = [];
+
 function createRarity(/** @type {string} */ name, /** @type {number} */ colorCode) {
 	let color = $UtilsJS.makeFunctionProxy("startup", $UnaryOperator, (style) => {
 		return withColorMethod.invoke(style, Color.of(colorCode).createTextColorJS());
@@ -53,6 +55,7 @@ function createRarity(/** @type {string} */ name, /** @type {number} */ colorCod
 		});
 	}
 
+	global.rarities.push(name);
 	return $Rarity["create(java.lang.String,java.util.function.UnaryOperator)"](name, color)
 }
 

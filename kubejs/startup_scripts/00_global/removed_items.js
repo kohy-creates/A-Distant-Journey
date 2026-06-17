@@ -312,7 +312,6 @@ const RemovedItems = {
 		'botania:star_sword',
 		'botanicadds:elvenwood',
 		'botanicadds:elvenwood_log',
-		'botania:lexica_botania',
 		'botania:cosmetic_engineer_goggles',
 		'botania:abtruse_platform',
 		'botania:spectral_platform',
@@ -332,6 +331,7 @@ const RemovedItems = {
 		'botania:crafty_crate',
 		/botania:pattern_/,
 		'botania:placeholder',
+		'botania:lexicon',
 
 		'terra_curio:magic_quiver',
 		'terra_curio:molten_quiver',

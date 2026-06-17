@@ -1,8 +1,7 @@
 {
   "enabled": true,
   "fastUpload": true,
+  "fastLightTextureUpload": false,
   "cache": true,
-  "minCacheSize": 1024,
-  "maxCacheSize": 262144,
   "bufferSize": 4194304
 }

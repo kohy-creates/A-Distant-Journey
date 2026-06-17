@@ -13,7 +13,7 @@
     {
       "key": "ali:block_loot",
       "type": "BLOCK",
-      "icon": "minecraft:diamond_pickaxe",
+      "icon": "minecraft:iron_pickaxe",
       "hide": false,
       "blocks": []
     }
@@ -34,7 +34,8 @@
       "icon": "minecraft:chest",
       "hide": false,
       "pattern": [
-        "^.*:chests/.*$"
+        "^.*:chests/.*$",
+        "^.*:treasure_bag/.*$"
       ]
     },
     {
@@ -75,7 +76,7 @@
       "key": "ali:hero_loot",
       "type": "GAMEPLAY",
       "icon": "minecraft:emerald",
-      "hide": false,
+      "hide": true,
       "pattern": [
         "^.*:gameplay/hero_of_the_village/.*$"
       ]
@@ -105,10 +106,13 @@
         },
         {
           "item": "minecraft:gold_ingot"
+        },
+        {
+          "item": "mythicmetals:midas_gold_ingot"
         }
       ],
       "pattern": [
-        "^.*:gameplay/piglin_bartering.*$"
+        "^.*:gameplay/.*piglin_bartering.*$"
       ]
     },
     {
@@ -140,7 +144,7 @@
       "key": "ali:trade_loot",
       "type": "TRADE",
       "icon": "minecraft:emerald_block",
-      "hide": false,
+      "hide": true,
       "pattern": [
         ".*"
       ]

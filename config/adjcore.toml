@@ -1,5 +1,5 @@
 #Range: > 0
-HARDCORE_RESPAW_RADIUS = 10000
+HARDCORE_RESPAWN_RADIUS = 5000
 
 #Tools
 [tools]
@@ -18,9 +18,6 @@ HARDCORE_RESPAW_RADIUS = 10000
 	#Durability multiplier for items enchanted with Unbreaking
 	#Range: 1.0 ~ 1.7976931348623157E308
 	UNBREAKNG_DURABILITY_MULTIPLIER = 2.0
-	#Removes curio slots other than this one. Also assigns all curios to the specified slot.
-	#Probably case sensitive
-	CURIO_TYPE_TO_KEEP = "accessory"
 	#What enchantment causes Curios to be kept?
 	#Set to a placeholder so that it doesn't crash if set to something modded that isn't loaded
 	SOULBOUND_FOR_CURIOS = "sortilege:soulbound"
@@ -49,13 +46,11 @@ HARDCORE_RESPAW_RADIUS = 10000
 
 #Campfires
 [campfire]
-	#The delay in ticks between Cozy Campfire effect's heals
-	CAMPFIRE_HEAL_RATE = 80
-	#The heal amount of the Cozy Campfire effect
-	CAMPFIRE_HEAL_AMOUNT = 1.0
 	#Radius around the Campfire where players get the effect
+	#Range: 0.0 ~ 64.0
 	CAMPFIRE_HEAL_RADIUS = 16.0
 	#Radius around a signal Campfire
+	#Range: 0.0 ~ 64.0
 	CAMPFIRE_HEAL_RADIUS_SIGNAL = 32.0
 
 #Structures
@@ -63,4 +58,30 @@ HARDCORE_RESPAW_RADIUS = 10000
 	#Minimum distance between structures
 	#Range: 1 ~ 256
 	MIN_STRUCTURE_DISTANCE = 32
+
+[exhaustion_options]
+	#Global exhaustion multiplier
+	#Range: 0.0 ~ 10.0
+	GLOBAL_MULTIPLIER = 0.5
+	#DamageSource exhaustion type multiplier
+	#Range: 0.0 ~ 10.0
+	DAMAGE_TYPE_MULTIPLIER = 2.200000047683716
+	#Jump multiplier
+	#Range: 0.0 ~ 10.0
+	JUMP_MULTIPLIER = 1.399999976158142
+	#Swimming exhaustion multiplier
+	#Range: 0.0 ~ 10.0
+	SWIM_MULTIPLIER = 2.0
+	#Underwater walking exhaustion multiplier
+	#Range: 0.0 ~ 10.0
+	UNDERWATER_WALK_MULTIPLIER = 1.5
+	#Shallow water walking exhaustion multiplier
+	#Range: 0.0 ~ 10.0
+	SHALLOW_WATER_WALK_MULTIPLIER = 1.5
+	#Sprinting exhaustion multiplier
+	#Range: 0.0 ~ 10.0
+	SPRINT_MULTIPLIER = 0.6399999856948853
+	#Block mining exhaustion multiplier
+	#Range: 0.0 ~ 10.0
+	BLOCK_MINING_MULTIPLIER = 0.6600000262260437
 

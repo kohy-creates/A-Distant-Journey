@@ -5,7 +5,10 @@
     "features": [
       {
         "chance": 0.25,
-        "feature": "beachparty:palm_tree"
+        "feature": {
+          "feature": "beachparty:palm_tree",
+          "placement": []
+        }
       },
       {
         "chance": 0.2,
@@ -24,12 +27,12 @@
             },
             {
               "type": "minecraft:matching_block_tag",
-          "offset": [
-            0,
-            -1,
-            0
-          ],
-          "tag": "clifftree:true_dirt"
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "tag": "clifftree:true_dirt"
             }
           ]
         }

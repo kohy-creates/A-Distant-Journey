@@ -1,44 +1,44 @@
 //priority: 500
-// Base vanilla toolsets
-const toolset = [
-	'_sword',
-	'_pickaxe',
-	'_axe',
-	'_shovel',
-	'_hoe'
-];
-
-const defaultAttackDamage = [1, 0.5, 1.12, 0.4, 0.5];
-const defaultAttackSpeed = [1.6, 1.3, 0.9, 1.1, 1.4];
-
-// Simply Swords weapon types
-const simplySwordsTypes = [
-	'_katana',
-	'_spear',
-	'_glaive',
-	'_warglaive',
-	'_chakram',
-	'_scythe'
-];
-
-// Multipliers for Simply Swords
-const simplySwordsAttackDamage = [
-	0.85,
-	1.0,
-	1.2,
-	0.7,
-	0.75,
-	1.35,
-];
-
-const simplySwordsAttackSpeed = [
-	1.6,
-	1.2,
-	1.3,
-	2.0,
-	1.2,
-	1.1
-];
+const WeaponOverrides = {
+	vanilla: {
+		toolset: [
+			'_sword',
+			'_pickaxe',
+			'_axe',
+			'_shovel',
+			'_hoe'
+		],
+		defaultAttackDamage: [1, 0.5, 1.12, 0.4, 0.5],
+		defaultAttackSpeed: [1.6, 1.3, 0.9, 1.1, 1.4],
+	},
+	simplySwords: {
+		types: [
+			'_katana',
+			'_spear',
+			'_glaive',
+			'_warglaive',
+			'_chakram',
+			'_scythe'
+		],
+		// Those are multipliers that are applied to the numbers in the vanilla section for each of the type (respectively)
+		attackDamage: [
+			0.85,
+			1.0,
+			1.2,
+			0.7,
+			0.75,
+			1.35,
+		],
+		attackSpeed: [
+			1.6,
+			1.2,
+			1.3,
+			2.0,
+			1.2,
+			1.1
+		]
+	}
+};
 
 function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 	let i = 0;
@@ -46,7 +46,7 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 	if (typeof arg2 === 'undefined') arg2 = 1;
 	if (typeof arg3 === 'undefined') arg3 = 1;
 
-	toolset.forEach(function (tool) {
+	WeaponOverrides.vanilla.toolset.forEach(function (tool) {
 		const name = toolsetName + tool;
 		if (!Item.of(name)) return;
 		if (Object.keys(global.weapon_overrides).includes(name)) return;
@@ -54,8 +54,8 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 		var attackDamage, attackSpeed;
 
 		// Scaled base damage
-		attackDamage = Math.ceil(arg1 * defaultAttackDamage[i] * arg3);
-		attackSpeed = global.roundToNearest(defaultAttackSpeed[i] * arg2, 0.05);
+		attackDamage = Math.ceil(arg1 * WeaponOverrides.vanilla.defaultAttackDamage[i] * arg3);
+		attackSpeed = global.roundToNearest(WeaponOverrides.vanilla.defaultAttackSpeed[i] * arg2, 0.05);
 
 		global.weapon_overrides[name] = [attackDamage, attackSpeed];
 		i++;
@@ -65,9 +65,9 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 	const compatPath = 'simplyswords:mythicmetals_compat/' + baseMaterial + '/' + baseMaterial;
 
 	let j = 0;
-	simplySwordsTypes.forEach(function (type) {
-		const damageMult = simplySwordsAttackDamage[j];
-		const speedVal = simplySwordsAttackSpeed[j];
+	WeaponOverrides.simplySwords.types.forEach(function (type) {
+		const damageMult = WeaponOverrides.simplySwords.attackDamage[j];
+		const speedVal = WeaponOverrides.simplySwords.attackSpeed[j];
 
 		const vanillaId = 'simplyswords:' + baseMaterial + type;
 		const compatId = compatPath + type;
@@ -89,10 +89,10 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 
 global.weapon_overrides = {
 	// attack damage, attack speed, crit chance, crit damage, armor penetration
-	'mythicmetals:mythril_drill': [Math.round(32 * defaultAttackDamage[1]), defaultAttackSpeed[1]],
+	'mythicmetals:mythril_drill': [Math.round(32 * WeaponOverrides.vanilla.defaultAttackDamage[1]), WeaponOverrides.vanilla.defaultAttackSpeed[1]],
 	'ancient_aether:valkyrum_lance': [42, 1.3],
-	'botania:manasteel_pick': [15 * defaultAttackDamage[1], defaultAttackSpeed[1]],
-	'botania:elementium_pick': [23 * defaultAttackDamage[1], defaultAttackSpeed[1]],
+	'botania:manasteel_pick': [15 * WeaponOverrides.vanilla.defaultAttackDamage[1], WeaponOverrides.vanilla.defaultAttackSpeed[1]],
+	'botania:elementium_pick': [23 * WeaponOverrides.vanilla.defaultAttackDamage[1], WeaponOverrides.vanilla.defaultAttackSpeed[1]],
 	'botania:terra_sword': [85, 1.8],
 	'botania:thunder_sword': [12, 10, 0, 0, 15],
 	'cataclysm:gauntlet_of_guard': [40, 3.1, 0, 0, 15],

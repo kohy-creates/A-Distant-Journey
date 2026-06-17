@@ -36,7 +36,7 @@ createGrapplingHook('candy_cane', 'Candy Cane Hook', '#ff3333', 1, 18, 18, null,
 
 // Chapter 1
 createGrapplingHook('steeleaf', 'Steeleaf Hook', '#158000', 3, 20, 17);
-createGrapplingHook('orichalcum', 'Orichalcum Hook', '#18f55a', 2, 17, 14, defaultPullSpeed * 1.3, null, true);
+createGrapplingHook('orichalcum', 'Orichalcum Hook', '#18f55a', 2, 17, 14, defaultPullSpeed * 1.3, null);
 createGrapplingHook('pixie', 'Pixie Hook', '#ff92c5', 3, 10, 11.5, null, true);
 createGrapplingHook('tendon', 'Tendon Hook', '#8d2038', 2, 17, 14, null, false, true);
 

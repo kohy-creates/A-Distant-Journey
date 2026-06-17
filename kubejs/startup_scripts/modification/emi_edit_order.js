@@ -51,7 +51,7 @@ StartupEvents.postInit(event => {
 		['botanicadds:rune_energy', 'kubejs:rune_life'],
 
 		['architects_palette:chiseled_moonshale', 'architects_palette:moonshale_flagstone'],
-		
+
 		['create:rotation_speed_controller', 'create:creative_motor'],
 	];
 
@@ -66,7 +66,11 @@ StartupEvents.postInit(event => {
 		smithingTemplates = [],
 		spawnEggs = [],
 		archwoodLogs = [],
-		mcdwItems = [];
+		mcdwItems = [],
+		trappedChests = [],
+		chestBoats = [],
+		minecarts = [],
+		rails = [];
 
 	const ignoredWoodTypes = [
 		'botania:mossy_livingwood',
@@ -117,6 +121,18 @@ StartupEvents.postInit(event => {
 		else if (id.includes('mcdw:')) {
 			mcdwItems.push(id);
 		}
+		else if (id.includes('chest_boat') || id.includes('chest_raft')) {
+			chestBoats.push(id);
+		}
+		else if (id.includes('trapped_chest')) {
+			trappedChests.push(id);
+		}
+		else if (id.includes('minecart')) {
+			minecarts.push(id);
+		}
+		else if (id.endsWith('_rail')) {
+			rails.push(id);
+		}
 	});
 
 	// Ordered woodset item structure
@@ -140,20 +156,22 @@ StartupEvents.postInit(event => {
 		'quark:bookshelf',
 		'handcrafted:bench',
 		'handcrafted:chair',
+		'beachparty:chair',
 		'handcrafted:couch',
 		'handcrafted:dining_bench',
 		'handcrafted:side_table',
 		'handcrafted:desk',
 		'handcrafted:nightstand',
 		'handcrafted:table',
+		'beachparty:table',
 		'handcrafted:counter',
+		'mctb:crafting_table',
+		'chest',
+		'quark:chest',
 		'farmersdelight:cabinet',
 		'alexscavesdelight:cabinet',
 		'twilightdelight:cabinet',
-		'chest',
-		'quark:chest',
-		// 'trapped_chest',
-		// 'quark:trapped_chest',
+		'beachparty:cabinet',
 		'handcrafted:fancy_bed',
 		'stairs',
 		'mosaic_stairs',
@@ -180,9 +198,7 @@ StartupEvents.postInit(event => {
 		'supplementaries:sign_post',
 		'hanging_sign',
 		'boat',
-		// 'chest_boat',
 		'raft',
-		// 'chest_raft'
 	];
 
 	// Woodset appearance order
@@ -241,8 +257,7 @@ StartupEvents.postInit(event => {
 		'phantasm:pream',
 		'endergetic:poise',
 		'witherstormmod:tainted',
-
-	]
+	];
 	const orderedWoodTypes = [];
 	woodTypeOrder.forEach(type => {
 		if (woodTypes.includes(type)) orderedWoodTypes.push(type);
@@ -277,16 +292,20 @@ StartupEvents.postInit(event => {
 		let lastAdded = sortedList[0];
 		EMIEdit.push([after, lastAdded])
 		for (let j = 1; j < sortedList.length; j++) {
-			let entry = sortedList[j]
-			EMIEdit.push([lastAdded, entry])
+			let entry = sortedList[j];
+			EMIEdit.push([lastAdded, entry]);
 			lastAdded = entry;
 		}
 	}
-	addOneAfterAnother(musicDiscs, 'minecraft:jukebox')
-	addOneAfterAnother(potterySherds, 'minecraft:decorated_pot')
-	addOneAfterAnother(bannerPatterns, 'minecraft:loom')
-	addOneAfterAnother(smithingTemplates, 'minecraft:smithing_table')
-	addOneAfterAnother(spawnEggs, 'minecraft:spawner')
+	addOneAfterAnother(musicDiscs, 'minecraft:jukebox');
+	addOneAfterAnother(potterySherds, 'minecraft:decorated_pot');
+	addOneAfterAnother(bannerPatterns, 'minecraft:loom');
+	addOneAfterAnother(smithingTemplates, 'minecraft:smithing_table');
+	addOneAfterAnother(spawnEggs, 'minecraft:spawner');
+	addOneAfterAnother(rails, 'minecraft:hopper');
+	addOneAfterAnother(minecarts, rails[rails.length - 1]);
+	addOneAfterAnother(chestBoats, minecarts[minecarts.length - 1]);
+	addOneAfterAnother(trappedChests, 'minecraft:tripwire_hook');
 
 	candles.forEach(candle => {
 		if (candle === 'minecraft:candle') {
@@ -302,10 +321,16 @@ StartupEvents.postInit(event => {
 			EMIEdit.push([candle, holder]);
 			EMIEdit.push([holder, goldenHolder]);
 		}
-	})
+	});
 
 	// Build item order chain for each wood type
 	let latestAddedCache = "minecraft:oak_log";
+
+	function pushPredefined(itemID) {
+		EMIEdit.push([latestAddedCache, itemID]);
+		latestAddedCache = itemID;
+	}
+
 	for (let j = 0; j < woodTypes.length; j++) {
 		let woodType = woodTypes[j];
 		let woodTypeSplit = woodType.split(':');
@@ -319,19 +344,16 @@ StartupEvents.postInit(event => {
 				case 'minecraft:oak': {
 					switch (furnitureType) {
 						case 'quark:bookshelf':
-							itemID = 'minecraft:bookshelf'
-							EMIEdit.push([latestAddedCache, itemID]);
-							latestAddedCache = itemID;
+							pushPredefined('minecraft:bookshelf');
 							continue;
 						case 'quark:ladder':
-							itemID = 'minecraft:ladder'
-							EMIEdit.push([latestAddedCache, itemID]);
-							latestAddedCache = itemID;
+							pushPredefined('minecraft:ladder');
 							continue;
 						case 'suppsquared:item_shelf':
-							itemID = 'supplementaries:item_shelf'
-							EMIEdit.push([latestAddedCache, itemID]);
-							latestAddedCache = itemID;
+							pushPredefined('supplementaries:item_shelf');
+							continue;
+						case 'mctb:crafting_table':
+							pushPredefined('minecraft:crafting_table');
 							continue;
 					}
 					break;
@@ -339,33 +361,36 @@ StartupEvents.postInit(event => {
 				case 'upgrade_aquatic:driftwood': {
 					switch (furnitureType) {
 						case 'wood':
-							itemID = 'upgrade_aquatic:driftwood'
-							EMIEdit.push([latestAddedCache, itemID]);
-							latestAddedCache = itemID;
+							pushPredefined('upgrade_aquatic:driftwood');
 							continue;
 						case 'stripped_X_wood':
-							itemID = 'upgrade_aquatic:stripped_driftwood'
-							EMIEdit.push([latestAddedCache, itemID]);
-							latestAddedCache = itemID;
+							pushPredefined('upgrade_aquatic:stripped_driftwood');
 							continue;
 					}
 				}
 				case 'minecraft:mangrove': {
 					switch (furnitureType) {
+						case 'quark:chest':
+							pushPredefined('quark:mangrove_chest');
+							continue;
+						case 'twilightforest:banister':
+							pushPredefined('twilightforest:vangrove_banister');
+							continue;
+						case 'farmersdelight:cabinet':
 						case 'twilightdelight:cabinet': {
 							continue;
 						}
 					}
 				}
 				case 'twilightforest:mangrove': {
-					let blockedNamespaces = [
-						'architects_palette',
-						'quark',
-						'handcrafted'
-					]
-					let furnitureNamespace = furnitureType.split(':')[0]
-					if (furnitureNamespace && blockedNamespaces.includes(furnitureNamespace)) {
-						continue;
+					switch (furnitureType) {
+						case 'mctb:crafting_table':
+							pushPredefined('mctb:twilight_mangrove_crafting_table');
+							continue;
+						case 'suppsquared:item_shelf':
+						case 'farmersdelight:cabinet': {
+							continue;
+						}
 					}
 				}
 				// This never worked for some reason

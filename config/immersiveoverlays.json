@@ -7,7 +7,7 @@
   "require_item_in_hand": false,
   "search_containers": true,
   "search_containers_for_containers": true,
-  "allow_blocks": true,
+  "allow_blocks": false,
   "allow_blocks_distance": 10,
   "render_background": true,
   "render_endcap": true,

@@ -143,6 +143,17 @@
         "value": 1000
       }
     },
+    "portlib:player.block_break_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "obscure_api:regeneration": {
       "enabled": false,
       "min": {
@@ -152,6 +163,17 @@
       "max": {
         "default": 100000,
         "value": 100000
+      }
+    },
+    "confluence_magic_lib:player.mark_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "sortilege:generic.staff_damage": {
@@ -209,6 +231,28 @@
         "value": 1024
       }
     },
+    "portlib:player.sneaking_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "confluence_magic_lib:player.minion_capacity": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 128,
+        "value": 128
+      }
+    },
     "additionalentityattributes:player.lava_visibility": {
       "enabled": false,
       "min": {
@@ -242,6 +286,28 @@
         "value": 1024
       }
     },
+    "portlib:generic.jump_strength": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 32,
+        "value": 32
+      }
+    },
+    "confluence_magic_lib:player.mob_spawn_speed_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "rediscovered:explosion_resistance": {
       "enabled": false,
       "min": {
@@ -262,6 +328,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "portlib:player.sweeping_damage_ratio": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "minecraft:zombie.spawn_reinforcements": {
@@ -330,6 +407,17 @@
         "value": 10000
       }
     },
+    "portlib:generic.safe_fall_distance": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additionalentityattributes:player.bonus_loot_count_rolls": {
       "enabled": false,
       "min": {
@@ -383,6 +471,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "confluence_magic_lib:player.aggro": {
+      "enabled": false,
+      "min": {
+        "default": -10000,
+        "value": -10000
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
       }
     },
     "minecraft:player.block_break_speed": {
@@ -462,6 +561,17 @@
         "value": 1000
       }
     },
+    "confluence_magic_lib:generic.ranged_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "minecraft:generic.flying_speed": {
       "enabled": true,
       "min": {
@@ -482,6 +592,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "portlib:generic.scale": {
+      "enabled": false,
+      "min": {
+        "default": 0.0625,
+        "value": 0.0625
+      },
+      "max": {
+        "default": 16,
+        "value": 16
       }
     },
     "additionalentityattributes:generic.jump_height": {
@@ -539,6 +660,17 @@
         "value": 10000
       }
     },
+    "portlib:generic.fall_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "botania:pixie_spawn_chance": {
       "enabled": false,
       "min": {
@@ -570,6 +702,17 @@
       "max": {
         "default": 1024,
         "value": 2147483647
+      }
+    },
+    "portlib:generic.burning_time": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "minecraft:horse.jump_strength": {
@@ -726,6 +869,17 @@
         "value": 10
       }
     },
+    "portlib:generic.explosion_knockback_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "additionalentityattributes:player.bonus_rare_loot_rolls": {
       "enabled": false,
       "min": {
@@ -768,6 +922,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "confluence_magic_lib:player.summon_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "additionalentityattributes:generic.water_speed": {
@@ -825,6 +990,39 @@
         "value": 2048
       }
     },
+    "portlib:generic.max_absorption": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
+    "portlib:generic.oxygen_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "confluence_magic_lib:generic.magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "attributeslib:cold_damage": {
       "enabled": false,
       "min": {
@@ -869,6 +1067,28 @@
         "value": 10
       }
     },
+    "portlib:generic.water_movement_efficiency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "fluffy_fur:size_scale": {
+      "enabled": false,
+      "min": {
+        "default": 0.10000000149011612,
+        "value": 0.10000000149011612
+      },
+      "max": {
+        "default": 5,
+        "value": 5
+      }
+    },
     "witherstormmod:hunchback_follow_range": {
       "enabled": false,
       "min": {
@@ -900,6 +1120,28 @@
       "max": {
         "default": 10000,
         "value": 10000
+      }
+    },
+    "portlib:generic.movement_efficiency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "confluence_magic_lib:generic.critical_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "mythicmetals:elytra_rocket_speed": {
@@ -968,6 +1210,17 @@
         "value": 200
       }
     },
+    "fluffy_fur:jump_height_amplifier": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "adjcore:generic.damage_reduction": {
       "enabled": false,
       "min": {
@@ -1034,6 +1287,17 @@
         "value": 1024
       }
     },
+    "confluence_magic_lib:player.pickup_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 64,
+        "value": 64
+      }
+    },
     "forge:swim_speed": {
       "enabled": false,
       "min": {
@@ -1043,6 +1307,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "confluence_magic_lib:generic.dodge_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "reach-entity-attributes:attack_range": {
@@ -1087,6 +1362,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "confluence_magic_lib:generic.armor_penetration": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
       }
     },
     "forge:nametag_distance": {
@@ -1155,6 +1441,17 @@
         "value": 64
       }
     },
+    "portlib:player.mining_efficiency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "obscure_api:parry": {
       "enabled": false,
       "min": {
@@ -1199,6 +1496,17 @@
         "value": 4
       }
     },
+    "confluence_magic_lib:player.summon_knockback": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 5,
+        "value": 5
+      }
+    },
     "ars_nouveau:ars_nouveau.perk.feather": {
       "enabled": false,
       "min": {
@@ -1208,6 +1516,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "confluence_magic_lib:player.mob_spawn_count_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "minecraft:generic.armor": {
@@ -1232,6 +1551,17 @@
         "value": 100
       }
     },
+    "portlib:generic.flying_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "rediscovered:cimson_veil_damage_scaling": {
       "enabled": false,
       "min": {
@@ -1252,6 +1582,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "confluence_magic_lib:generic.ranged_velocity": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "attributeslib:current_hp_damage": {
@@ -1276,6 +1617,28 @@
         "value": 10
       }
     },
+    "fluffy_fur:camera_distance_amplifier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "confluence_magic_lib:player.sentry_capacity": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 128,
+        "value": 128
+      }
+    },
     "minecraft:generic.movement_speed": {
       "enabled": true,
       "min": {
@@ -1298,6 +1661,17 @@
         "value": 512
       }
     },
+    "confluence_magic_lib:player.whip_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 64,
+        "value": 64
+      }
+    },
     "combatroll:count": {
       "enabled": false,
       "min": {
@@ -1318,6 +1692,17 @@
       "max": {
         "default": 256,
         "value": 256
+      }
+    },
+    "portlib:player.submerged_mining_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 20,
+        "value": 20
       }
     },
     "attributeslib:arrow_damage": {

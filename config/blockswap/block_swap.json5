@@ -189,10 +189,15 @@
 		"minecraft:enchanting_table": "enchantinginfuser:enchanting_infuser",
 		"unusualend:infested_end_stone": "majruszsdifficulty:infested_end_stone",
 
+		// Unify Thatch
 		"quark:thatch": "hearth_and_home:thatch",
 		"quark:thatch_slab": "hearth_and_home:thatch_slab",
 		"quark:thatch_stairs": "hearth_and_home:thatch_stairs",
+		"beachparty:thatch": "hearth_and_home:thatch",
+		"beachparty:thatch_slab": "hearth_and_home:thatch_slab",
+		"beachparty:thatch_stairs": "hearth_and_home:thatch_stairs",
 
+		// Huge block to unify Shingles
 		"quark:shingles": "hearth_and_home:shingles",
 		"quark:shingles_slab": "hearth_and_home:shingle_slab",
 		"quark:shingles_vertical_slab": "v_slab_compat:hearth_and_home/shingle_vertical_slab",
@@ -288,6 +293,7 @@
 		"quark:mossy_cobblestone_bricks_stairs": "minecraft:mossy_cobblestone_stairs",
 		"quark:mossy_cobblestone_bricks_wall": "minecraft:mossy_cobblestone_wall",
 		
+		// Unify Lootr Chests across structures.
 		"quark:lootr_oak_chest": "lootr:lootr_chest",
 		"quark:lootr_spruce_chest": "lootr:lootr_chest",
 		"quark:lootr_birch_chest": "lootr:lootr_chest",
@@ -324,6 +330,7 @@
 		"quark:lootr_ancient_trapped_chest": "lootr:lootr_trapped_chest",
 		"quark:lootr_cherry_trapped_chest": "lootr:lootr_trapped_chest",
 
+		// Remove Quark's Hedges from generation
 		"quark:oak_hedge": "minecraft:oak_leaves",
 		"quark:spruce_hedge": "minecraft:spruce_leaves",
 		"quark:birch_hedge": "minecraft:birch_leaves",
@@ -339,6 +346,7 @@
 		"quark:yellow_blossom_hedge": "minecraft:azalea_leaves",
 		"quark:orange_blossom_hedge": "minecraft:azalea_leaves",
 
+		// Remove Quark's Leaf Carpets from generation
 		"quark:oak_leaf_carpet": "minecraft:moss_carpet",
 		"quark:spruce_leaf_carpet": "minecraft:moss_carpet",
 		"quark:birch_leaf_carpet": "minecraft:moss_carpet",
@@ -348,7 +356,6 @@
 		"quark:mangrove_leaf_carpet": "minecraft:moss_carpet",
 		"quark:azalea_leaf_carpet": "minecraft:moss_carpet",
 		"quark:flowering_azalea_leaf_carpet": "minecraft:moss_carpet",
-
 		"quark:red_blossom_leaf_carpet": "minecraft:red_carpet",
 		"quark:lavender_blossom_leaf_carpet": "minecraft:purple_carpet",
 		"quark:blue_blossom_leaf_carpet": "minecraft:cyan_carpet",
@@ -363,7 +370,7 @@
 
 		"farmersdelight:rope": "supplementaries:rope",
 
-		"quark:crate": "minecraft:air",
+		"quark:crate": "tide:wooden_crate",
 		"quark:rope": "supplementaries:rope",
 		"quark:paper_lantern": "hearth_and_home:white_paper_lantern",
 
@@ -391,9 +398,11 @@
 		"twilightforest:moss_patch": "minecraft:moss_carpet",
 		"twilightforest:mayapple": "adjblocks:bush",
 
+		// Unify Clouds a tiny bit
 		"twilightforest:wispy_cloud": "aether:cold_aercloud",
 		"twilightforest:fluffy_cloud": "aether:cold_aercloud",
 
+		// Remove Twilight Forest's Hollow Logs from generation
 		"twilightforest:hollow_twilight_oak_log_horizontal": "twilightforest:twilight_oak_log",
 		"twilightforest:hollow_canopy_log_horizontal": "twilightforest:canopy_log",
 		"twilightforest:hollow_mangrove_log_horizontal": "twilightforest:mangrove_log",
@@ -469,6 +478,7 @@
 		"quark:iron_rod": "minecraft:air",
 		"twilightforest:iron_ladder": "quark:iron_ladder",
 
+		// Unify Limestone
 		"quark:limestone_bricks_slab": "alexscaves:smooth_limestone_slab",
 		"quark:polished_limestone_slab": "alexscaves:smooth_limestone_slab",
 		"quark:polished_limestone_vertical_slab": "v_slab_compat:alexscaves/smooth_limestone_vertical_slab",
@@ -501,5 +511,20 @@
 
 		"endergetic:cracked_end_stone_bricks": "architects_palette:cracked_end_stone_bricks",
 		"cataclysm:chiseled_end_stone_bricks": "endergetic:chiseled_end_stone_bricks",
+
+		// Remove Quark's Hollow Logs from structure generation
+		"quark:hollow_oak_log": "minecraft:oak_log",
+		"quark:hollow_spruce_log": "minecraft:spruce_log",
+		"quark:hollow_birch_log": "minecraft:birch_log",
+		"quark:hollow_jungle_log": "minecraft:jungle_log",
+		"quark:hollow_acacia_log": "minecraft:acacia_log",
+		"quark:hollow_dark_oak_log": "minecraft:dark_oak_log",
+		"quark:hollow_mangrove_log": "minecraft:mangrove_log",
+		"quark:hollow_cherry_log": "minecraft:cherry_log",
+		"quark:hollow_crimson_stem": "minecraft:crimson_stem",
+		"quark:hollow_warped_stem": "minecraft:warped_stem",
+		"quark:hollow_blossom_log": "quark:blossom_log",
+		"quark:hollow_azalea_log": "quark:azalea_log",
+		"quark:hollow_ancient_log": "quark:ancient_log",
 	}
 }

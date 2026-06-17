@@ -63,16 +63,6 @@
 		[types.wood_type.enhanced_mushrooms]
 			mushroom = true
 
-		[types.wood_type.twilightforest]
-			twilight_oak = true
-			canopy = true
-			mangrove = true
-			dark = true
-			time = true
-			transformation = true
-			mining = true
-			sorting = true
-
 		[types.wood_type.evilcraft]
 			undead = true
 
@@ -98,6 +88,16 @@
 
 		[types.wood_type.endergetic]
 			poise = true
+
+		[types.wood_type.twilightforest]
+			twilight_oak = true
+			canopy = true
+			mangrove = true
+			dark = true
+			time = true
+			transformation = true
+			mining = true
+			sorting = true
 
 	[types.leaves_type]
 
@@ -149,22 +149,6 @@
 		[types.leaves_type.rediscovered]
 			ancient_cherry = true
 
-		[types.leaves_type.twilightdelight]
-			ironwood = true
-
-		[types.leaves_type.twilightforest]
-			thorn = true
-			beanstalk = true
-			twilight_oak = true
-			canopy = true
-			mangrove = true
-			dark = true
-			rainbow_oak = true
-			time = true
-			transformation = true
-			mining = true
-			sorting = true
-
 		[types.leaves_type.evilcraft]
 			undead = true
 
@@ -194,16 +178,26 @@
 		[types.leaves_type.galosphere]
 			opal = true
 
+		[types.leaves_type.twilightdelight]
+			ironwood = true
+
+		[types.leaves_type.twilightforest]
+			thorn = true
+			beanstalk = true
+			twilight_oak = true
+			canopy = true
+			mangrove = true
+			dark = true
+			rainbow_oak = true
+			time = true
+			transformation = true
+			mining = true
+			sorting = true
+
 	[types.cake]
 
 		[types.cake.mynethersdelight]
 			magma_cake = true
-
-		[types.cake.twilightdelight]
-			aurora_cake = true
-			torchberry_cake = true
-			phytochemical_cake = true
-			glacier_cake = true
 
 		[types.cake.neapolitan]
 			vanilla_cake = true
@@ -215,6 +209,12 @@
 
 		[types.cake.veggiesdelight]
 			carrot_cake = true
+
+		[types.cake.twilightdelight]
+			aurora_cake = true
+			torchberry_cake = true
+			phytochemical_cake = true
+			glacier_cake = true
 
 	[types.cut_block_type]
 
@@ -701,16 +701,6 @@
 		[types.cut_block_type.enhanced_mushrooms]
 			mushroom = true
 
-		[types.cut_block_type.twilightforest]
-			twilight_oak = true
-			canopy = true
-			mangrove = true
-			dark = true
-			time = true
-			transformation = true
-			mining = true
-			sorting = true
-
 		[types.cut_block_type.etcetera]
 			leveled_stone = true
 
@@ -827,6 +817,16 @@
 			poise = true
 			eumus_brick = true
 
+		[types.cut_block_type.twilightforest]
+			twilight_oak = true
+			canopy = true
+			mangrove = true
+			dark = true
+			time = true
+			transformation = true
+			mining = true
+			sorting = true
+
 #Disables specific entries
 [entries]
 
@@ -883,12 +883,6 @@
 		[entries.wood_type.farmersdelight]
 			cabinet = true
 
-		[entries.wood_type.twilightforest]
-			hollow_log_horizontal = true
-			hollow_log_vertical = true
-			banister = true
-			hollow_log_climbable = true
-
 		[entries.wood_type.architects_palette]
 			board_stairs = true
 			railing = true
@@ -901,6 +895,15 @@
 
 		[entries.wood_type.copperagebackport]
 			shelf = true
+
+		[entries.wood_type.twilightforest]
+			hollow_log_horizontal = true
+			hollow_log_vertical = true
+			banister = true
+			hollow_log_climbable = true
+
+		[entries.wood_type.mctb]
+			crafting_table = true
 
 	[entries.leaves_type]
 

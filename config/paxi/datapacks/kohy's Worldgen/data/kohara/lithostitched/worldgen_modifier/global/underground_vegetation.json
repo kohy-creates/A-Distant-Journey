@@ -1,0 +1,9 @@
+{
+	"type": "lithostitched:add_features",
+	"biomes": "#is_overworld",
+	"features": [
+		"kohara:underground/glow_lichen_aquifer",
+		"kohara:underground/vegetation_aquifer"
+	],
+	"step": "vegetal_decoration"
+}
