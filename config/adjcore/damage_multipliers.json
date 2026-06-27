@@ -8,7 +8,7 @@
 	"minecraft:falling_block": 5.0,
 	"minecraft:hot_floor": 7.0,
 	"minecraft:dragon_breath": 5.0,
-	"cataclysm:abyssal_burn": 4.0,
+	"cataclysm:abyssal_burn": 8.0,
 	"minecraft:starve": 10.0,
 	"minecraft:drown": 10.0,
 	"minecraft:in_wall": 10.0,
@@ -31,5 +31,6 @@
 	"minecraft:cactus": 2.5,
 	"twilightforest:knightmetal": 2,
 	"minecraft:out_of_world": 10,
-	"rediscovered:spikes": 13.3334
+	"rediscovered:spikes": 13.3334,
+	"aether_redux:ember": 6.0
 }

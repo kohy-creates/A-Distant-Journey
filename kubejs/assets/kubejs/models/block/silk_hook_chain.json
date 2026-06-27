@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/chain",
 	"textures": {
-		"all": "kubejs:block/hook_chain/silk"
+		"all": "kubejs:block/hook_chain/silk_hook"
 	}
 }

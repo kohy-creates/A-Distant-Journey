@@ -10,6 +10,7 @@
 			<condition>id = evilcraft:blood_extractor</condition>
 			<condition>id = minecraft:nether_star</condition>
 			<condition>id = witherstormmod:withered_nether_star</condition>
+			<condition>id = alexscaves:heavyweight</condition>
 		</or>
 	</rule>
 	<rule stacksize="4">

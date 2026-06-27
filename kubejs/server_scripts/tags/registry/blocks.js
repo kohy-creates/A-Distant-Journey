@@ -57,11 +57,6 @@ ServerEvents.tags('block', tags => {
 
 	tags.removeAll('jumbofurnace:jumbofurnaceable');
 
-	tags.add('adj:temp_twilight_mangrove', [
-		/twilight.*mangrove_/,
-		/tf.*mangrove_/
-	]);
-
 	tags.removeAll('twilightforest:portal/fluid');
 	tags.add('twilightforest:portal/fluid', [
 		'supplementaries:lumisene'
@@ -87,7 +82,7 @@ ServerEvents.tags('block', tags => {
 	tags.add('snowrealmagic:containables', [
 		'adjblocks:twig',
 		'adjblocks:pebble',
-		/placeablemaxwell/
+		/placeablemaxwell/,
 	]);
 
 	tags.add('botania:horn_of_the_covering_breakable', [
@@ -127,7 +122,8 @@ ServerEvents.tags('block', tags => {
 			'botania:cocoon',
 			/botania:.*pylon.*/,
 			/botanicadds:.*pylon.*/,
-			/botania:.*spreader.*/
+			/botania:.*spreader.*/,
+			'alexscaves:magnetic_light'
 		],
 		permeable: [],
 	};
@@ -177,5 +173,15 @@ ServerEvents.tags('block', tags => {
 
 	tags.add('forge:ores/enderium_shard', [
 		'majruszsdifficulty:enderium_shard_ore'
+	]);
+
+	tags.add('adj:crafting_tables', [
+		'crafting_table',
+		/^mctb:.*$/,
+		/everycomp:mctb/
+	]);
+
+	tags.add('minecraft:climbable', [
+		/_chain$/
 	]);
 });

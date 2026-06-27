@@ -65,4 +65,5 @@ const replaceItemsMap = {
 	'brass_geodes:ruby': 'rediscovered:ruby',
 	'majruszsdifficulty:bandage': 'kubejs:bandage',
 	'majruszsdifficulty:golden_bandage': 'kubejs:golden_bandage',
+	'alexsmobs:maggot': 'born_in_chaos_v1:corpse_maggot',
 };

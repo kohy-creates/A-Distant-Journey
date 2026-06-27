@@ -805,10 +805,47 @@
 		[types.cut_block_type.kubejs]
 			cinnabar = true
 			polished_cinnabar = true
-			cinnabar_bricks = true
 			sulfur = true
 			polished_sulfur = true
+			cinnabar_bricks = true
 			sulfur_bricks = true
+			magenta_tiles = true
+			pink_tiles = true
+			green_tiles = true
+			lime_tiles = true
+			light_gray_tiles = true
+			yellow_tiles = true
+			black_tiles = true
+			light_blue_tiles = true
+			brown_tiles = true
+			cyan_tiles = true
+			orange_tiles = true
+			red_tiles = true
+			gray_tiles = true
+			white_tiles = true
+			blue_tiles = true
+			purple_tiles = true
+			magenta_stone_bricks = true
+			pink_stone_bricks = true
+			green_stone_bricks = true
+			lime_stone_bricks = true
+			light_gray_stone_bricks = true
+			yellow_stone_bricks = true
+			black_stone_bricks = true
+			light_blue_stone_bricks = true
+			brown_stone_bricks = true
+			cyan_stone_bricks = true
+			orange_stone_bricks = true
+			red_stone_bricks = true
+			gray_stone_bricks = true
+			white_stone_bricks = true
+			blue_stone_bricks = true
+			purple_stone_bricks = true
+			rainbow_bricks = true
+			rainbow_tiles = true
+			phantom_purpur = true
+			phantom_purpur_bricks = true
+			phantom_purpur_squares = true
 
 		[types.cut_block_type.hybrid-aquatic]
 			driftwood = true
@@ -866,7 +903,6 @@
 
 		[entries.wood_type.rediscovered]
 			chair = true
-			table = true
 
 		[entries.wood_type.hearth_and_home]
 			lattice = true
@@ -893,9 +929,6 @@
 		[entries.wood_type.oreberriesreplanted]
 			vat = true
 
-		[entries.wood_type.copperagebackport]
-			shelf = true
-
 		[entries.wood_type.twilightforest]
 			hollow_log_horizontal = true
 			hollow_log_vertical = true
@@ -904,6 +937,9 @@
 
 		[entries.wood_type.mctb]
 			crafting_table = true
+
+		[entries.wood_type.copperagebackport]
+			shelf = true
 
 	[entries.leaves_type]
 

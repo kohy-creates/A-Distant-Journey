@@ -54,7 +54,6 @@ LootJS.modifiers((event) => {
 
 		'ancient_aether:warrior_pendant',
 		'aether:regeneration_stone',
-
 	].concat(global.blacklistedItemsArray);
 	removedFromLoot.forEach(e => event.addLootTableModifier(/.*/).removeLoot(e));
 
@@ -178,6 +177,24 @@ LootJS.modifiers((event) => {
 			pool.addLoot(LootEntry.of('travelersbackpack:creeper').when(c => c.randomChanceWithLooting(0.15, 0.075)));
 		});
 
+	event.addEntityLootModifier('alexscaves:magnetron')
+		.pool(pool => {
+			pool.rolls(0);
+			pool.addLoot(LootEntry.of('alexscaves:heart_of_iron'));
+		})
+		.pool(pool => {
+			pool.rolls(2);
+			pool.addLoot(LootEntry.of('alexscaves:raw_scarlet_neodymium').limitCount([-1, 2]).applyLootingBonus([0, 1]));
+			pool.addLoot(LootEntry.of('alexscaves:raw_azure_neodymium').limitCount([-1, 2]).applyLootingBonus([0, 1]));
+		});
+
+	event.addEntityLootModifier('alexscaves:boundroid')
+		.removeLoot('alexscaves:heavyweight')
+		.pool(pool => {
+			pool.rolls(1);
+			pool.addLoot(LootEntry.of('alexscaves:raw_scarlet_neodymium').limitCount([-1, 3]).applyLootingBonus([0, 1]));
+		});
+
 	/**
 	 * @param {$GroupedLootBuilder_} pool 
 	 */
@@ -193,7 +210,9 @@ LootJS.modifiers((event) => {
 	event.addEntityLootModifier([
 		'zombie',
 		'husk',
-		'born_in_chaos_v1:decaying_zombie'
+		'born_in_chaos_v1:decaying_zombie',
+		'variantsandventures:gelid',
+		'variantsandventures:thicket',
 	])
 		.pool(pool => {
 			pool.addLoot(
@@ -527,7 +546,9 @@ LootJS.modifiers((event) => {
 		'spider',
 		'cave_spider',
 		'born_in_chaos_v1:baby_spider',
-		'born_in_chaos_v1:baby_spider_controlled'
+		'born_in_chaos_v1:baby_spider_controlled',
+		'variantsandventures:thicket',
+		'variantsandventures:verdant',
 	]).pool(pool => {
 		pool.addLoot(LootEntry.of('terra_curio:bezoar').when(c => c.randomChance(0.03)))
 	});
@@ -655,7 +676,10 @@ LootJS.modifiers((event) => {
 		.pool(pool => {
 			pool.addLoot(
 				LootEntry.of('aperture_innovations:portal_gun')
-					.when(c => c.randomChance(0.06))
+					.when(c => {
+						c.randomChance(0.06);
+						c.customCondition(fromChapter(2));
+					})
 			);
 		});
 

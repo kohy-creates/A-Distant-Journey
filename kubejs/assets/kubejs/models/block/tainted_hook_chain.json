@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/chain",
 	"textures": {
-		"all": "kubejs:block/hook_chain_placeholder"
+		"all": "kubejs:block/hook_chain/tainted_hook"
 	}
 }

@@ -421,6 +421,8 @@ const RemovedItems = {
 		'alexscaves:conversion_crucible',
 		'alexscaves:beholder',
 		/alexscaves:.*sulfur.*/,
+		'alexscaves:quarry',
+		'alexscaves:quarry_smasher',
 
 		'ars_nouveau:sorcerer_boots',
 		'ars_nouveau:sorcerer_leggings',
@@ -529,6 +531,7 @@ const RemovedItems = {
 		/architects_palette:.*board_stairs/,
 		/architects_palette:.*board_slab/,
 		/architects_palette:.*board_vertical_slab/,
+		/architects_palette:.*ore_brick/,
 
 		'architects_palette:charcoal_block',
 		'architects_palette:unobtanium',
@@ -597,6 +600,7 @@ const RemovedItems = {
 		'aether:golden_pendant',
 		'aether:ice_ring',
 		'aether:zanite_ring',
+		'aether:ice_pendant',
 		'ancient_aether:valkyrum_ring',
 		'ancient_aether:hermes_ring',
 		'ancient_aether:warrior_ring',

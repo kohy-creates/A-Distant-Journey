@@ -1,0 +1,8 @@
+{
+	"priority": 50,
+	"style": "adj:junk",
+	"filter": {
+		"type": "obscure_tooltips:rarity",
+		"rarity": "junk"
+	}
+}

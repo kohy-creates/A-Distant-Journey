@@ -5,3 +5,4 @@ hook
 atlas
 botania_mana
 accessory
+spyglass

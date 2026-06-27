@@ -3,11 +3,11 @@
 	#Cost of orechid each block
 	#How much mana should orechid consume each block [17500]
 	#Range: > 1
-	"Orechid cost" = 12500
+	"Orechid cost" = 9000
 	#Cost of orechid ignem each block
 	#How much mana should orechid ignem consume each block [20000]
 	#Range: > 1
-	"Orechid ignem Cost" = 15000
+	"Orechid ignem Cost" = 12000
 	#Cost of orechid each block in garden of glass
 	#How much mana should orechid consume each block, when in a garden of glass word [700]
 	#Usually this cost is lower than the normal, but it's not a rule
@@ -17,7 +17,7 @@
 	#How much time should the orechid wait before attempting to convert another block [100]
 	#This affects both orechid and orechid ignem
 	#Range: > 1
-	"Orechid delay" = 120
+	"Orechid delay" = 80
 	#Ticks between a block conversion and the other in garden of glass
 	#How much time should the orechid wait before attempting to convert another block, when in a garden of glass word [2]
 	#Usually this delay is lower than the normal, but it's not a rule

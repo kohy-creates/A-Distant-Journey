@@ -59,6 +59,8 @@ function createRarity(/** @type {string} */ name, /** @type {number} */ colorCod
 	return $Rarity["create(java.lang.String,java.util.function.UnaryOperator)"](name, color)
 }
 
+createRarity("quest", '#FFAF00');
+createRarity("junk", '#828282');
 createRarity("chapter_0", '#FFFFFF');
 createRarity("chapter_0_uncommon", '#9696FF');
 createRarity("chapter_0_rare", '#96FF96');
@@ -133,7 +135,14 @@ ItemEvents.modification(event => {
 		/botania:lens/,
 		/botania:mana_/,
 		'@terra_curio',
-		'wormhole:wormhole'
+		'wormhole:wormhole',
+		/pottery_sherd$/,
+		/rediscovered:plate_/,
+		/music_disc/,
+		/armor_trim/,
+		'just_blahaj:creeperhaj',
+		'recovery_compass'
+
 	], item => {
 		item.rarity = 'uncommon';
 	});
@@ -184,7 +193,8 @@ ItemEvents.modification(event => {
 		/royal_jelly/,
 		/experience_chunk/,
 		'minecraft:experience_bottle',
-		/ars_nouveau:arcanist/
+		/ars_nouveau:arcanist/,
+		/elytra/
 	], item => {
 		item.rarity = 'epic'
 	});

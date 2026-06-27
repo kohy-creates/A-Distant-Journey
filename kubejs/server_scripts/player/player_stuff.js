@@ -592,7 +592,7 @@ EntityEvents.death(event => {
 		}
 
 		let enchantments = item.getEnchantments();
-		for (const enchId of Object.keys(enchantments)) {
+		for (let enchId of Object.keys(enchantments)) {
 			let enchLevel = enchantments.get(enchId);
 			switch (enchId) {
 				case 'kubejs:prospector': {
@@ -602,13 +602,13 @@ EntityEvents.death(event => {
 					break;
 				}
 				case 'kubejs:leeching': {
-					const percent = 0.04 + 0.02 * enchLevel;
+					let percent = 0.04 + 0.02 * enchLevel;
 					player.heal(victim.getMaxHealth() * percent);
 					break;
 				}
 				case 'kubejs:rampaging': {
 					let amplifier;
-					const effect = player.getEffect('kubejs:rampaging');
+					let effect = player.getEffect('kubejs:rampaging');
 					if (effect) {
 						amplifier = effect.getAmplifier();
 						if (amplifier < enchLevel - 1) {

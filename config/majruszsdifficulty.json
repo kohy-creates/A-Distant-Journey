@@ -661,7 +661,7 @@
     "extra_size_ratio_per_player": 0.6,
     "area_radius": 60,
     "kill_requirement": 1000,
-    "kill_requirement_first": 300,
+    "kill_requirement_first": 400,
     "kill_requirement_warning": 5,
     "waves": [
       {

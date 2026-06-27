@@ -301,7 +301,9 @@ global.stageRestrictions = {
 			'cataclysm:void_core',
 			'cataclysm:gauntlet_of_guard',
 			'cataclysm:void_assault_shoulder_weapon',
-			'kubejs:elsa_crossbow'
+			'kubejs:elsa_crossbow',
+			'elytra',
+			'alexsmobs:tarantula_hawk_elytra'
 		],
 		light: [
 			/end_stone/,

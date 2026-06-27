@@ -147,6 +147,10 @@
 				{
 					"condition": "minecraft:random_chance",
 					"chance": 0.1
+				},
+				{
+					"condition": "adjcore:is_chapter",
+					"from": 2
 				}
 			]
 		}

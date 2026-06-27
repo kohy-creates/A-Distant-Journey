@@ -825,14 +825,22 @@
 				""
 				"I thought it'd be worth mentioning it here ^^"
 			]
+			icon: "minecraft:crafting_table"
 			id: "026E22A534C341CC"
 			subtitle: "Craft a Crafting Table"
 			tasks: [{
 				consume_items: false
 				id: "2112580059ABD30A"
-				item: "minecraft:crafting_table"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:crafting_tables"
+					}
+				}
 				match_nbt: false
 				only_from_crafting: false
+				title: "Any Crafting Table"
 				type: "item"
 			}]
 			title: "Benchmarking"

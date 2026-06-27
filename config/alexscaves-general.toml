@@ -46,7 +46,7 @@
 
 [block-behavior]
 	#True if players wearing boots can walk on any scarlet neodymium surface.
-	walking_on_magnets = true
+	walking_on_magnets = false
 	#How long (in game ticks) it usually takes for an amber monolith to spawn an animal.
 	#Range: > 1000
 	amber_monolith_mean_time = 32000

@@ -526,5 +526,7 @@
 		"quark:hollow_blossom_log": "quark:blossom_log",
 		"quark:hollow_azalea_log": "quark:azalea_log",
 		"quark:hollow_ancient_log": "quark:ancient_log",
+
+		"galosphere:mole_burrow": "galosphere:tuff_dirt",
 	}
 }

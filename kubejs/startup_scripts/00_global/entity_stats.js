@@ -223,7 +223,7 @@ global.hpModifications = {
 	'born_in_chaos_v1:mrs_pumpkin': [140, 15, 1],
 	'born_in_chaos_v1:pumpkin_bruiser': [260, 23, 6],
 	'born_in_chaos_v1:krampus': [800, 35, 8],
-	'born_in_chaos_v1:krampus_henchman': [130, 177, 5],
+	'born_in_chaos_v1:krampus_henchman': [130, 17, 5],
 	'born_in_chaos_v1:missioner': [400, 40, 5],
 	'born_in_chaos_v1:missionary_raider': [400, 40, 5],
 	'cataclysm:old_netherite_monstrosity': [2500, 105, 0],

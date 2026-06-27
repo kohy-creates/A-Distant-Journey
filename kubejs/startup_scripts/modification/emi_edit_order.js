@@ -53,6 +53,7 @@ StartupEvents.postInit(event => {
 		['architects_palette:chiseled_moonshale', 'architects_palette:moonshale_flagstone'],
 
 		['create:rotation_speed_controller', 'create:creative_motor'],
+		['minecraft:hopper', 'goldenhopper:golden_hopper'],
 	];
 
 	// Detect available materials
@@ -130,7 +131,7 @@ StartupEvents.postInit(event => {
 		else if (id.includes('minecart')) {
 			minecarts.push(id);
 		}
-		else if (id.endsWith('_rail')) {
+		else if (id.endsWith('_rail') || id.endsWith(':rail')) {
 			rails.push(id);
 		}
 	});

@@ -258,7 +258,6 @@ JEIEvents.information(event => {
 	addInfo("alexscaves:scarlet_neodymium_ingot", "Used to craft blocks that attract metal or add to magnets to increase range.");
 	addInfo("alexscaves:azure_neodymium_ingot", "Used to craft blocks that repulse metal or add to magnets to decrease range.");
 	addInfo("alexscaves:holocoder", "Clicking a mob will bind the mob's DNA and allow it to be displayed in a hologram, including yourself.");
-	addInfo("alexscaves:quarry_smasher", "Requires a rectangle of magnetic lights of up to 20 blocks and a magnetic quarry to activate.");
 	addInfo("alexscaves:resistor_shield", "A unique variant of shield that is used to block damage from oncoming attacks or explosions while simultaneously doing continuous damage and knockback to foes in a small radius.");
 	addInfo(["alexscaves:trilocaris_tail", "alexscaves:cooked_trilocaris_tail"], "Dropped by Trilocaris, can be fed to Subterranodons to tame them. Tamed Subterranodon can be ridden and flown to navigate long distances.");
 	addInfo("alexscaves:seething_stew", "Gifts the rage effect when eaten. Can be fed to mobs to heal six hearts of damage and send them into a rage.");

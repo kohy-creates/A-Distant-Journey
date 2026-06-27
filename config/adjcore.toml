@@ -43,6 +43,9 @@ HARDCORE_RESPAWN_RADIUS = 5000
 	#How many armor points for damage to get reduced by 1 (for entities)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	ARMOR_POINT_REDUCTION_FACTOR_ENTITY = 2.0
+	#Maximum amount of damage that can be dealt in a single damage instance. Anything higher than that gets clamped to that value
+	#Range: > 0
+	MAX_DAMAGE_IN_ONE_HIT = 999999
 
 #Campfires
 [campfire]

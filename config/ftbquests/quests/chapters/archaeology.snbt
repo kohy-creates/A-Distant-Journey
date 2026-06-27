@@ -469,6 +469,16 @@
 					item: "neapolitan:spider_pottery_sherd"
 					type: "item"
 				}
+				{
+					id: "42DF6FB24B402D7C"
+					item: "galosphere:thirst_pottery_sherd"
+					type: "item"
+				}
+				{
+					id: "36F5FF8EDE3D0BD9"
+					item: "galosphere:wave_pottery_sherd"
+					type: "item"
+				}
 			]
 			title: "Certificate of Completion"
 			x: 3.0d

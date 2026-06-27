@@ -1,3 +1,4 @@
+//priority: 400
 const DecursioStages = {
 	CURRENT_STAGE: 'current_stage',
 	STAGE_TO_SET: 'next_stage',

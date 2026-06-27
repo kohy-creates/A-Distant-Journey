@@ -65,4 +65,23 @@ StartupEvents.registry('fluid', event => {
 		.bucketColor(0x65219E)
 		.displayName('Dimensional Juice')
 		.noBlock();
-})
+
+	// /** @type {Internal.FluidBuilder_} */
+	// let shimmer = event.create('shimmer')
+	// 	.createAttributes()
+	// 	.sourceTexture('kubejs:block/shimmer_still')
+	// 	.flowingTexture('kubejs:block/shimmer_flowing')
+	// 	.name('Shimmer');
+
+	// shimmer.bucketItem.texture('kubejs:item/shimmer_bucket');
+
+	// shimmer.createAttributes()
+	// 	.convertToSource(false)
+	// 	.explosionResistance(100)
+	// 	.luminosity(13)
+	// 	.rarity('epic')
+	// 	.viscosity(6000)
+	// 	.density(3000)
+	// 	.slopeFindDistance(2)
+	// 	.tickDelay(20);
+});

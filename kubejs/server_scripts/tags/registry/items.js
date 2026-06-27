@@ -325,7 +325,12 @@ ServerEvents.tags('item', tags => {
 	]);
 
 	tags.remove('c:chests', [
-		'evilcraft:blood_chest'
+		'evilcraft:blood_chest',
+		'ender_chest'
+	]);
+	tags.remove('forge:chests', [
+		'evilcraft:blood_chest',
+		'ender_chest'
 	]);
 
 	tags.add('botania:mana_diamond_gems', [
@@ -557,4 +562,60 @@ ServerEvents.tags('item', tags => {
 	tags.add('forge:ores/enderium_shard', [
 		'majruszsdifficulty:enderium_shard_ore'
 	]);
+
+	tags.add('adj:crafting_tables', [
+		'crafting_table',
+		/^mctb:.*$/,
+		/everycomp:mctb/
+	]);
+
+	tags.add('minecraft:planks', [
+		'#aether:planks_crafting'
+	]);
+
+	tags.remove('alexsmobs:insect_items', [
+		'alexsmobs:maggot'
+	]);
+	tags.add('alexsmobs:insect_items', [
+		'born_in_chaos_v1:corpse_maggot'
+	]);
+
+	tags.remove('forge:strings', ['ars_nouveau:magebloom_fiber']);
+	tags.remove('c:strings', ['ars_nouveau:magebloom_fiber']);
+
+	tags.add('forge:quarter_slabs/smooth_stone', ['smooth_stone_slab']);
+
+	tags.add('forge:ores/uranium', ['alexscaves:radrock_uranium_ore']);
+
+	tags.add('alexsmobs:grizzly_bear_breedables', [
+		'salmon',
+		'honeycomb'
+	]);
+
+	tags.add('alexsmobs:komodo_dragon_tameables', [
+		'rotten_flesh',
+	]);
+
+	tags.add('alexsmobs:anaconda_breedables', [
+		'minecraft:chicken',
+		'minecraft:cooked_chicken'
+	]);
+
+	tags.add('alexsmobs:orca_breedables', [
+		'#fishes'
+	]);
+
+	tags.add('aether:holy_repair', ['aether:ambrosium_shard']);
+	tags.add('aether:flaming_repair', ['mythicmetals:palladium_ingot']);
+	tags.add('aether:lightning_repair', ['ars_nouveau:source_gem']);
+	tags.add('aether:vampire_repair', ['rediscovered:ruby']);
+	tags.add('aether:neptune_repair', ['mythicmetals:aquarium_ingot']);
+	tags.add('aether:phoenix_repair', ['mythicmetals:palladium_ingot']);
+	tags.add('aether:obsidian_repair', ['create:sturdy_sheet']);
+
+	tags.add('curios:accessory', [
+		'alexscaves:heavyweight'
+	]);
+
+	tags.remove('')
 });

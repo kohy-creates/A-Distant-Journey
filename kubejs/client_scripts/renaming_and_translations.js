@@ -62,6 +62,7 @@ ClientEvents.lang('en_us', event => {
 		'entity.minecraft.villager.werewolf': 'Werewolf',
 
 		'curios.identifier.atlas': 'Atlas',
+		'curios.identifier.spyglass': 'Spyglass',
 	};
 
 	/** @type {Record<Internal.Block_, string>} */
@@ -391,13 +392,15 @@ ClientEvents.lang('en_us', event => {
 		'majruszsdifficulty:raid_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Raid Treasure Bag</neon></rainbow>',
 		'majruszsdifficulty:fishing_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Fishing Treasure Bag</neon></rainbow>',
 
-		'wormhole:wormhole': 'Wormhole Potion'
+		'wormhole:wormhole': 'Wormhole Potion',
+		'born_in_chaos_v1:corpse_maggot': 'Maggot',
 	};
 
 	const entityRenames = {
 		'immersive_paintings:painting': 'Magic Painting',
 		'immersive_paintings:glow_painting': 'Luminescent Magic Painting',
 		'immersive_paintings:glow_graffiti': 'Luminescent Graffiti',
+		'born_in_chaos_v1:corpse_maggot': 'Maggot',
 	}
 
 	for (const [key, value] of Object.entries(extraTranslations)) {

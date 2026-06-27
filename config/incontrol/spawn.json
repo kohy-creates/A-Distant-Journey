@@ -48,7 +48,8 @@
 			"hybrid-aquatic:great_white_shark",
 			"hybrid-aquatic:mackerel",
 			"hybrid-aquatic:manta_ray",
-			"hybrid-aquatic:tuna"
+			"hybrid-aquatic:tuna",
+			"twilightforest:kobold"
 		],
 		"result": "deny"
 	}

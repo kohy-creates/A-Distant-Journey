@@ -19,7 +19,7 @@
 	#true if ambersol block renders with rays of light emerging from it.
 	ambersol_shines = true
 	#true if irradiated effect makes mobs glow. May conflict with shaders.
-	radiation_glow_effect = true
+	radiation_glow_effect = false
 	#determines how far to the left the subterranodon flight indicator renders on the screen when mounted. Negative numbers will render it on the right. 
 	#Range: -12000 ~ 12000
 	subterranodon_indicator_x = 22

@@ -171,6 +171,10 @@ ItemEvents.modification(event => {
 		);
 	});
 
+	event.modify('alexscaves:heavyweight', item => {
+		item.attachCuriosCapability(CuriosJSCapabilityBuilder.create());
+	});
+
 	const gloves = {
 		'aether:iron_gloves': {
 			damage: 1,
@@ -237,29 +241,6 @@ ItemEvents.modification(event => {
 			damage: 0.05,
 			operation: 'multiply_base',
 			extra: [{ attribute: 'generic.attack_knockback', value: 0.25, operation: 'addition' }]
-		},
-		'umbral_skies:ironwood_gloves': {
-			damage: 0,
-			operation: 'addition',
-			extra: [
-				{ attribute: 'forge:block_reach', value: 1, operation: 'addition' },
-				{ attribute: 'forge:entity_reach', value: 1, operation: 'addition' }
-			]
-		},
-		'umbral_skies:fiery_gloves': {
-			damage: 0,
-			operation: 'addition',
-			extra: [{ attribute: 'attributeslib:fire_damage', value: 3, operation: 'addition' }]
-		},
-		'umbral_skies:knightmetal_gloves': {
-			damage: -0.05,
-			operation: 'multiply_base',
-			extra: [{ attribute: 'adjcore:generic.damage_reduction', value: 0.08, operation: 'addition' }]
-		},
-		'umbral_skies:yeti_gloves': {
-			damage: 0,
-			operation: 'addition',
-			extra: [{ attribute: 'attributeslib:cold_damage', value: 3, operation: 'addition' }]
 		}
 	};
 

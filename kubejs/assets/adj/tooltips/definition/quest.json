@@ -1,0 +1,8 @@
+{
+	"priority": 50,
+	"style": "adj:quest",
+	"filter": {
+		"type": "obscure_tooltips:rarity",
+		"rarity": "quest"
+	}
+}

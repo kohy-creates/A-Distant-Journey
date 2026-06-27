@@ -119,7 +119,9 @@ ServerEvents.recipes((event) => {
 		'twilightforest:knightmetal_ingot',
 		'twilightforest:ice_sword',
 		/majruszsdifficulty:tattered_.*$/,
-		/majruszsdifficulty:.*bandage/
+		/majruszsdifficulty:.*bandage/,
+		'createoreexcavation:drilling_machine',
+		'createoreexcavation:extractor',
 
 	].concat(global.blacklistedItemsArray);
 	disabledItemRecipes.forEach(item => {
@@ -337,7 +339,15 @@ ServerEvents.recipes((event) => {
 		'quark:automation/crafting/gravisand',
 		'rediscovered:spikes',
 		'botania:terra_plate/terrasteel_ingot',
-		'botanicadds:terrasteel'
+		'botanicadds:terrasteel',
+		'enchlibathome:library',
+		'enchlibathome:ender_library',
+		'aether:skyroot_stick',
+		'born_in_chaos_v1:scorched_log_k',
+		'minecraft:light_gray_dye_from_white_tulip',
+		'aether:skyroot_loom',
+		'mythicmetals:crafting/tnt_with_morkite',
+		/mctb:chipped_/,
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -439,6 +449,7 @@ ServerEvents.recipes((event) => {
 			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
 			'rubinated_nether:ruby': 'rediscovered:ruby',
 			'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
+			'aether:skyroot_stick': 'stick',
 		}
 	};
 	for (const [input, replacement] of Object.entries(unificationMap.input)) {
@@ -453,6 +464,90 @@ ServerEvents.recipes((event) => {
 			replacement
 		);
 	};
+
+	event.shaped(
+		'minecraft:loom',
+		[
+			'SS',
+			'PP',
+			'PP'
+		],
+		{
+			S: '#c:string',
+			P: '#planks'
+		}
+	).id('minecraft:loom')
+
+	event.shapeless(
+		'rooted_dirt',
+		['hanging_roots', 'dirt']
+	).id('adj:rooted_dirt');
+
+	event.shapeless(
+		'piglin_banner_pattern',
+		['piglin_head', 'paper']
+	).id('adj:snout_banner_pattern');
+
+	event.smelting('dead_bush', 'adjblocks:bush', 0.1, 200).id('adj:dead_bush_smelting')
+
+	function mushroomBlockRecipe(input, output) {
+		event.shaped(
+			output,
+			[
+				'AA',
+				'AA'
+			],
+			{
+				A: input
+			}
+		).id(`adj:mushroom_block/${flattenedID(output)}`);
+	}
+	mushroomBlockRecipe('red_mushroom_block', 'red_mushroom');
+	mushroomBlockRecipe('brown_mushroom_block', 'brown_mushroom');
+	mushroomBlockRecipe('quark:glow_shroom_block', 'quark:glow_shroom');
+	mushroomBlockRecipe('twilightforest:huge_mushgloom', 'twilightforest:mushgloom');
+
+	event.shapeless(
+		'2x kubejs:cinnabar',
+		['netherrack', 'kubejs:sulfur']
+	).id('adj:cinnabar_from_netherrack_and_sulfur');
+
+	event.shaped(
+		'4x prismarine_bricks',
+		[
+			'PP',
+			'PP'
+		],
+		{
+			P: 'prismarine'
+		}
+	).id('minecraft:prismarine_bricks');
+
+	event.shaped(
+		'8x dark_prismarine',
+		[
+			'PPP',
+			'PIP',
+			'PPP'
+		],
+		{
+			P: 'prismarine',
+			I: 'ink_sac'
+		}
+	).id('minecraft:dark_prismarine');
+
+	event.shaped(
+		'4x tnt',
+		[
+			'GSG',
+			'SGS',
+			'GSG'
+		],
+		{
+			S: '#sand',
+			G: ['gunpowder', 'mythicmetals:morkite']
+		}
+	).id('minecraft:tnt');
 
 	event.shapeless(
 		'8x quark:gravisand',
@@ -481,6 +576,10 @@ ServerEvents.recipes((event) => {
 			S: 'rubinated_nether:ruby_shard'
 		}
 	).id('adj:ruby_from_shards');
+
+	// Thank you RF for inspo
+	event.smelting('born_in_chaos_v1:scorched_log', '#logs_that_burn', 0.1, 500).id('adj:scorched_log');
+	event.campfireCooking('born_in_chaos_v1:scorched_log', '#logs_that_burn', 0.1, 1000).id('adj:scorched_log_campfire');
 
 	event.recipes.farmersdelight.cutting('#adj:scorched_logs', '#pickaxes', [
 		'1x charcoal',
@@ -698,7 +797,7 @@ ServerEvents.recipes((event) => {
 		'aether_redux:enchanted_ring',
 		'aether_redux:ring_of_wisdom',
 		'aether_redux:sentry_ring',
-		/^botania:spark_upgrade_.*$/
+		/^botania:spark_upgrade_.*$/,
 	];
 	const curioToWorkshopRegex = [
 		/botania:cosmetic.*/,
@@ -854,6 +953,34 @@ ServerEvents.recipes((event) => {
 			C: 'crying_obsidian'
 		}
 	).id('adj:enchanting_table');
+
+	// Enchanting Library
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'#c:bookshelves',
+			'#c:bookshelves',
+			'#c:bookshelves',
+			'#c:bookshelves',
+			'crying_obsidian',
+			'crying_obsidian',
+			'obsidian',
+			'obsidian'
+		],
+		'#c:chests/wooden',
+		'enchlibathome:library'
+	).id('adj:enchantment_library');
+
+	event.recipes.summoningrituals.altar('enchlibathome:library')
+		.itemOutput('enchlibathome:ender_library')
+		.input(
+			'ender_chest',
+			'experienceobelisk:calcarine_matrix',
+			'experienceobelisk:cognitive_alloy_block',
+			'experienceobelisk:cognitive_alloy_block',
+			'experienceobelisk:cognitive_alloy_block',
+			'experienceobelisk:cognitive_alloy_block',
+		)
+		.id('adj:enchantment_library_alexandria');
 
 	event.recipes.farmersdelight.cooking(['alexsmobs:triops_egg', 'alexsmobs:triops_egg', 'alexsmobs:stink_bottle'], 'alexsmobs:mosquito_repellent_stew', 1, 100, 'minecraft:bowl')
 
@@ -2615,8 +2742,14 @@ ServerEvents.recipes((event) => {
 	casingRecipe('purpur_block', 'end_stone_bricks', 'adj:ender_forge_casing');
 
 	// Extra Dye recipes
-	const dyeMap = {
-		1: {
+	event.smelting('red_dye', 'crimson_roots', 0.1, 200).id('adj:red_dye_from_crimson_roots');
+	event.smelting('cyan_dye', 'warped_roots', 0.1, 200).id('adj:cyan_dye_from_warped_roots');
+	event.smelting('brown_dye', 'hanging_roots', 0.1, 200).id('adj:brown_dye_from_hanging_roots');
+
+	event.shapeless('white_dye', ['white_tulip']).id('adj:white_dye_from_white_tulip');
+
+	const dyeRecipes = [
+		{
 			result: 'brown',
 			combos: [
 				['blue', 'orange'],
@@ -2625,13 +2758,13 @@ ServerEvents.recipes((event) => {
 				['yellow', 'purple']
 			]
 		},
-		2: {
+		{
 			result: 'green',
 			combos: [
 				['blue', 'yellow']
 			]
 		},
-		3: {
+		{
 			result: 'black',
 			combos: [
 				['yellow', 'cyan', 'magenta'],
@@ -2642,37 +2775,42 @@ ServerEvents.recipes((event) => {
 				['yellow', 'blue', 'yellow', 'blue', 'red', 'blue', 'red', 'white']
 			]
 		},
-		4: {
+		{
 			result: 'lime',
 			combos: [
 				['cyan', 'yellow'],
 				['white', 'blue', 'yellow']
 			]
 		},
-		5: {
+		{
 			result: 'red',
 			combos: [
 				['magenta', 'yellow'],
 				['pink', 'purple', 'yellow']
 			]
 		},
-		6: {
+		{
 			result: 'blue',
 			combos: [
 				['magenta', 'cyan']
 			]
+		},
+		{
+			result: 'magenta',
+			combos: [
+				['purple', 'red', 'white']
+			]
 		}
-	};
+	];
 
 	function dye(color) {
 		return `${color}_dye`;
 	};
 
-	for (const [k, v] of Object.entries(dyeMap)) {
-		let map = dyeMap[k];
-		let result = dye(map.result);
+	for (let recipe of dyeRecipes) {
+		let result = dye(recipe.result);
 		let i = 0;
-		for (let combo of map.combos) {
+		for (let combo of recipe.combos) {
 			let dyes = [];
 			combo.forEach(d => {
 				dyes.push(dye(d));
@@ -3213,13 +3351,13 @@ ServerEvents.recipes((event) => {
 	scryingRitual('forge:ores/unobtainium', 'forge:ores/unobtainium', 'unobtainium');
 	scryingRitual('forge:ores/osmium', 'forge:ores/osmium', 'osmium');
 	scryingRitual('forge:ores/orichalcum', 'forge:ores/orichalcum', 'orichalcum');
-	scryingRitual('forge:ores/banglum', 'forge:ores/banglum', 'banglum');
+	// scryingRitual('forge:ores/banglum', 'forge:ores/banglum', 'banglum');
 	scryingRitual('forge:ores/mythril', 'forge:ores/mythril', 'mythril');
 	scryingRitual('forge:ores/starrite', 'forge:ores/starrite', 'starrite');
-	scryingRitual('forge:ores/manganese', 'forge:ores/manganese', 'manganese');
-	scryingRitual('forge:ores/quadrillum', 'forge:ores/quadrillum', 'quadrillum');
+	// scryingRitual('forge:ores/manganese', 'forge:ores/manganese', 'manganese');
+	// scryingRitual('forge:ores/quadrillum', 'forge:ores/quadrillum', 'quadrillum');
 	scryingRitual('forge:ores/palladium', 'forge:ores/palladium', 'palladium');
-	scryingRitual('forge:ores/carmot', 'forge:ores/carmot', 'carmot');
+	// scryingRitual('forge:ores/carmot', 'forge:ores/carmot', 'carmot');
 	scryingRitual('forge:ores/midas_gold', 'forge:ores/midas_gold', 'midas_gold');
 	scryingRitual('forge:ores/tin', 'forge:ores/tin', 'tin');
 	scryingRitual('forge:ores/runite', 'forge:ores/runite', 'runite');
@@ -3672,7 +3810,7 @@ ServerEvents.recipes((event) => {
 	event.shapeless(
 		'kubejs:eye_of_exploration',
 		[
-			'mythicmetals:enchanted_midas_gold_block', 'cataclysm:witherite_ingot', 'trident',
+			'mythicmetals:enchanted_midas_gold_block', 'cataclysm:witherite_ingot', 'alexscaves:heart_of_iron',
 			'quark:diamond_heart', 'ender_eye', 'alexscaves:tremorzilla_egg',
 			'twilightforest:ice_bomb', 'aether:sun_altar', 'rediscovered:cyan_rose'
 		]
@@ -4583,7 +4721,6 @@ ServerEvents.recipes((event) => {
 	itemsOnGround([['arrow', 10], 'netherexp:phasmo_shard'], ['netherexp:phasmo_arrow', 10]);
 
 	event.campfireCooking('torch', 'stick', 0, 30).id('adj:torch_from_campfire');
-	event.campfireCooking('born_in_chaos_v1:scorched_log', '#logs_that_burn', 0.15, 1000).id('adj:scorched_log'); // thank you RF for inspo
 	event.campfireCooking('leather', 'rotten_flesh', 0.02, 12000).id('adj:rotten_flesh_to_leather_10_minutes');
 
 	// Items to Farmer's Delight Stew recipes
@@ -9080,10 +9217,66 @@ ServerEvents.recipes((event) => {
 	).id('adj:adamantite_hook');
 
 	// Create Ore Excavation
+	// Quarries
+	event.recipes.create.mechanical_crafting(
+		'createoreexcavation:extractor',
+		[
+			'BSCSB',
+			'SEOAS',
+			'RPDPU',
+			'STHTS',
+			'LSSSL'
+		],
+		{
+			A: 'createutilities:graviton_tube',
+			B: 'create:brass_block',
+			S: 'create:brass_sheet',
+			C: 'create:mechanical_pump',
+			E: 'create:electron_tube',
+			O: 'create:hose_pulley',
+			R: 'create:brass_casing',
+			P: 'create:precision_mechanism',
+			D: 'create:mechanical_drill',
+			T: 'create:sturdy_sheet',
+			U: 'create:brass_tunnel',
+			H: 'alexscaves:heart_of_iron',
+			L: 'mythicmetals:steel_block'
+		}
+	).id('adj:extractor');
+
+	event.recipes.create.mechanical_crafting(
+		'createoreexcavation:drilling_machine',
+		[
+			'BSCSB',
+			'SEOAS',
+			'RPDPU',
+			'STHTS',
+			'LSSSL'
+		],
+		{
+			A: 'createutilities:graviton_tube',
+			B: 'create:brass_block',
+			S: 'create:brass_sheet',
+			C: 'create:copper_casing',
+			E: 'create:electron_tube',
+			O: 'create:spout',
+			R: 'create:brass_casing',
+			P: 'create:precision_mechanism',
+			D: 'create:mechanical_drill',
+			T: 'create:sturdy_sheet',
+			U: 'create:brass_tunnel',
+			H: 'alexscaves:heart_of_iron',
+			L: 'mythicmetals:steel_block',
+			H: 'alexscaves:heart_of_iron',
+			L: 'mythicmetals:steel_block'
+		}
+	).id('adj:drilling_machine');
+
+	// Veins
 	let salt = 124543534;
 	function oreExcavationBasicVein(output, name, id, spacing, separation, biomes, ticks, stress, drill, icon) {
 		salt++;
-		event.recipes.createoreexcavation.vein(name, Array.isArray(output) ? icon : output)
+		event.recipes.createoreexcavation.vein(name, icon ? icon : output)
 			.placement(spacing ? spacing : 256, separation ? separation : 64, salt)
 			.biomeWhitelist(biomes ? biomes : 'is_overworld')
 			.id(`adj:vein/${id}`)

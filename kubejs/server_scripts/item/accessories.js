@@ -30,6 +30,10 @@ ServerEvents.tags('item', event => {
 		tag.removeAll();
 	});
 
+	event.remove('curios:accessory', [
+		'spyglass'
+	]);
+
 	event.remove('curios:back', [
 		'#elytraslot:elytra',
 		'#aether:accessories_capes',
@@ -62,6 +66,10 @@ ServerEvents.tags('item', event => {
 
 	event.add('curios:atlas', [
 		'kubejs:map_atlas'
+	]);
+
+	event.add('curios:spyglass', [
+		'spyglass'
 	]);
 
 	// Readd this one thingy to the back tag

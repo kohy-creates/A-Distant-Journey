@@ -80,7 +80,7 @@ const EntityModifications = {
 			}
 			// Case 2: arrays per stage (hp[], dmg[], armor[])
 			else {
-				console.log(currentStage)
+				// console.log(currentStage)
 				health = this.getStageValue(base[0], currentStage);
 				damage = this.getStageValue(base[1], currentStage);
 				armor = this.getStageValue(base[2], currentStage);
@@ -311,5 +311,8 @@ EntityEvents.spawned((event) => {
 
 	server.scheduleInTicks(1, () => {
 		EntityModifications._modifications.specialCase(entity, currentStage, server);
+	});
+	server.scheduleInTicks(2, () => {
+		EntityModifications._logic.setHealth(entity.maxHealth);
 	});
 })

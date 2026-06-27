@@ -2,7 +2,7 @@
   "type": "twilightforest:labyrinth",
   "adjust_structure_elevation": false,
   "advancements_required": [
-    "twilightforest:progress_lich"
+    "adj:twilight_forest/part_2"
   ],
   "allow_biome_surface_decorations": true,
   "allow_biome_underground_decorations": false,

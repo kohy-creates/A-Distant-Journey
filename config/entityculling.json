@@ -1,5 +1,5 @@
 {
-  "configVersion": 7,
+  "configVersion": 8,
   "renderNametagsThroughWalls": false,
   "blockEntityWhitelist": [
     "create:rope_pulley",
@@ -40,7 +40,8 @@
     "cataclysm:abyss_blast_portal",
     "alexsmobs:void_portal",
     "botania:flame_ring",
-    "botania:magic_landmine"
+    "botania:magic_landmine",
+    "quark:soul_bead"
   ],
   "tracingDistance": 128,
   "debugMode": false,
@@ -95,11 +96,23 @@
     "witherstormmod:formidibomb",
     "witherstormmod:command_block",
     "witherstormmod:flaming_wither_skull",
-    "witherstormmod:blue_flaming_wither_skull"
+    "witherstormmod:blue_flaming_wither_skull",
+    "cinematiccataclysm:scylla_cutscene",
+    "minecraft:block_display",
+    "cinematiccataclysm:maledictus_cutscene",
+    "cinematiccataclysm:leviathan_cutscene",
+    "cinematiccataclysm:ancient_remnant_cutscene",
+    "minecraft:text_display",
+    "createbigcannons:cannon_carriage",
+    "createbigcannons:pitch_contraption",
+    "minecraft:item_display",
+    "cinematiccataclysm:ignis_cutscene",
+    "voidscape:corrupted_pawn"
   ],
   "disableF3": true,
   "skipEntityCulling": false,
   "skipBlockEntityCulling": false,
   "blockEntityFrustumCulling": true,
-  "forceDisplayCulling": false
+  "forceDisplayCulling": false,
+  "solidLeaves": false
 }

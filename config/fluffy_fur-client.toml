@@ -3,7 +3,7 @@
 [graphics]
 	#Intensity of screenshake.
 	#Range: 0.0 ~ 10.0
-	screenshakeIntensity = 1.0
+	screenshakeIntensity = 0.5
 	#Enable weather render fix in fabulous graphics.
 	fabulousWeatherFix = true
 	#Enable fancy fog.

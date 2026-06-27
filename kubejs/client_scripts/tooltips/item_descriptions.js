@@ -21,14 +21,10 @@ const TooltipEdits = {
 			items: '#c:villager_job_sites',
 			text: 'Work station for Villagers'
 		},
-		// {
-		// 	items: '#adj:dyable_items',
-		// 	text: 'Can be dyed'
-		// },
-		// {
-		// 	items: '#minecraft:trim_materials',
-		// 	text: 'Trim material'
-		// },
+		{
+			items: 'alexscaves:heavyweight',
+			text: 'Prevents picking up items while equipped'
+		},
 		{
 			items: 'crittersandcompanions:clam',
 			text: 'Right click to open'
