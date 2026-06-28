@@ -2,10 +2,15 @@
 ["food effects tooltip"]
 	#Show suspicious stew food effects tooltips
 	showSuspiciousStewTooltips = false
-	#Use Lists as Whitelists instead.
-	whitelistInstead = false
 	#Blacklisted Item.
 	blacklistItems = ["delightful:ender_nectar", "oreberriesreplanted:uranium_oreberry"]
 	#Blacklisted Mod IDs.
-	blacklistModsIDs = ["beachparty", "vinery", "brewinandchewin", "twilightdelight", "aquamirae", "corn_delight", "tide", "veggiesdelight", "jadensnetherexpansiondelight"]
+	blacklistModsIDs = ["beachparty", "vinery", "brewinandchewin", "twilightdelight", "aquamirae", "corn_delight", "tide", "veggiesdelight", "jadensnetherexpansiondelight", "cavedelight"]
+	#Whitelisted Item.
+	whitelistItems = ["modid:testitem"]
+	#Whitelisted Item.
+	whitelistModsIDs = ["modid"]
+	#Default tooltip behavior for unlisted items
+	#Allowed Values: SHOW, HIDE
+	defaultTooltipBehavior = "SHOW"
 
