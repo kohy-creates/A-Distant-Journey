@@ -7,10 +7,20 @@ ADJServerEvents.botaniaFlowerManaChange(event => {
 		const flower = event.getGeneratingFlower();
 		switch (event.getBlock().id) {
 			case 'botanicadds:flowers/vibrantia':
-			case 'botanicsadds:flowers/floating/vibrantia': {
+			case 'botanicadds:flowers/floating/vibrantia': {
 				const overgrowth = flower.overgrowth;
 				if (amount == 1) {
-					event.setAmount(overgrowth ? 2 : 4);
+					event.setAmount(overgrowth ? 2 : 3);
+				}
+				break;
+			}
+			case 'botanicadds:flowers/rainute':
+			case 'botanicadds:flowers/floating/rainute':
+			case 'botanicadds:flowers/glaciflora':
+			case 'botanicadds:flowers/floating/glaciflora': {
+				const overgrowth = flower.overgrowth;
+				if (amount > 0) {
+					event.setAmount(overgrowth ? 6 : 12);
 				}
 				break;
 			}

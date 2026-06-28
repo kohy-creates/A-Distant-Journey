@@ -20,7 +20,7 @@ MoreJSEvents.registerPotionBrewing((event) => {
 	event.addCustomBrewing(
 		'ender_pearl',
 		Item.of('minecraft:potion', '{Potion:"minecraft:water"}'),
-		'wormhole:wormhole'
+		'wormholepotion:wormhole_potion'
 	);
 
 	event.addCustomBrewing(

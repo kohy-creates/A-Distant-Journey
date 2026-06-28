@@ -524,9 +524,11 @@ const RemovedItems = {
 		'window_box:topsy_tulip',
 		'window_box:floating_topsy_tulip',
 		'window_box:snapdresson',
-		'window_box:floating_snapdression',
+		'window_box:floating_snapdresson',
 		'window_box:dispelagonium',
 		'window_box:floating_dispelagonium',
+		'window_box:candysnuft',
+		'window_box:floating_candysnuft',
 
 		/architects_palette:.*board_stairs/,
 		/architects_palette:.*board_slab/,
