@@ -135,3 +135,4 @@ config/structurify/structurify_backup_*.json
 /world_size.json
 packetfixer.properties
 servers.dat_old
+sdf-cache/

@@ -386,11 +386,11 @@ ClientEvents.lang('en_us', event => {
 		'twilightforest:knightmetal_axe': 'Tempered Greataxe',
 		'twilightforest:raven_feather': 'Crow Feather',
 
-		'majruszsdifficulty:wither_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Wither Treasure Bag</neon></rainbow>',
-		'majruszsdifficulty:warden_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Warden Treasure Bag</neon></rainbow>',
-		'majruszsdifficulty:ender_dragon_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Ender Dragon Treasure Bag</neon></rainbow>',
-		'majruszsdifficulty:raid_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Raid Treasure Bag</neon></rainbow>',
-		'majruszsdifficulty:fishing_treasure_bag': '<rainbow f=0.25 w=0><neon p=1 r=3>Fishing Treasure Bag</neon></rainbow>',
+		'majruszsdifficulty:wither_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Wither Treasure Bag</neon></rainbow>',
+		'majruszsdifficulty:warden_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Warden Treasure Bag</neon></rainbow>',
+		'majruszsdifficulty:ender_dragon_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Ender Dragon Treasure Bag</neon></rainbow>',
+		'majruszsdifficulty:raid_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Raid Treasure Bag</neon></rainbow>',
+		'majruszsdifficulty:fishing_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Fishing Treasure Bag</neon></rainbow>',
 
 		'wormhole:wormhole': 'Wormhole Potion',
 		'born_in_chaos_v1:corpse_maggot': 'Maggot',

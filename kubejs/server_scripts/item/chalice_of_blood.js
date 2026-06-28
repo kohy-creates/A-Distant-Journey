@@ -28,10 +28,10 @@ ItemEvents.rightClicked('kubejs:chalice_of_blood', event => {
 		server.runCommandSilent(`/eta clearqueue ${player.getDisplayName().getString()} chalice1`);
 		server.runCommandSilent(`/eta clearqueue ${player.getDisplayName().getString()} chalice2`);
 		server.runCommandSilent(
-			`/eta queue ${player.getDisplayName().getString()} chalice1 <dur:80><anchor value=BOTTOM_CENTER><fade in=20 out=20><offset y=-90><color col=C44747><wiggle a=0.15 f=2.5><shadow c=6E0C0C>The Chalice will deal between ${minAmount.toString().replace('.0', '')} - ${maxAmount.toString().replace('.0', '')} damage to you`
+			`/eta queue ${player.getDisplayName().getString()} chalice1 <dur:80>[anchor value=BOTTOM_CENTER][fade in=20 out=20][offset y=-90]<color col=C44747>[vibrate f=6 a=0.8]<shadow c=6E0C0C>The Chalice will deal between ${minAmount.toString().replace('.0', '')} - ${maxAmount.toString().replace('.0', '')} damage to you`
 		);
 		server.runCommandSilent(
-			`/eta queue ${player.getDisplayName().getString()} chalice2 <dur:80><anchor value=BOTTOM_CENTER><fade in=20 out=20><offset y=-80><color col=AD0E0E><wiggle a=0.15 f=2.5><shadow c=7A0909>Are you sure? Right-click while sneaking if so`
+			`/eta queue ${player.getDisplayName().getString()} chalice2 <dur:80>[anchor value=BOTTOM_CENTER][fade in=20 out=20][offset y=-80]<color col=AD0E0E>[vibrate f=6 a=0.8]<shadow c=7A0909>Are you sure? Right-click while sneaking if so`
 		);
 	}
 	else {

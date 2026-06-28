@@ -43,7 +43,7 @@ EntityEvents.spawned(event => {
 
 				const randomMsg = nightmareStalkerMsgs[Math.floor(Math.random() * nightmareStalkerMsgs.length)];
 				event.getServer().runCommandSilent(
-					commandAtEntity(entity, `/eta queue @a[distance=0..] status_messages "<dur:100><color col=c50000><shadow c=8C0000><fade in=10 out=10><typewriter speed=60><shake f=16 a=0.1><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${randomMsg}"`)
+					commandAtEntity(entity, `/eta queue @a[distance=0..] status_messages "<dur:100><color col=c50000><shadow c=8C0000>[fade in=10 out=10][vibrate a=0.8 f=8][anchor value=BOTTOM_CENTER][align value=CENTER][offset x=0 y=-85]${randomMsg}"`)
 				);
 				event.getServer().runCommandSilent(
 					commandAtEntity(entity, '/playsound born_in_chaos_v1:stalker_roar_distant hostile @p[] ~ ~ ~ 0 0.5 0.2')

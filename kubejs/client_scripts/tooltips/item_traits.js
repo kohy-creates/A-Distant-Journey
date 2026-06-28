@@ -53,7 +53,7 @@ const ItemTraits = {
 		'adj:vanity': 'vanity item',
 		'adj:dyable_items': 'can be dyed',
 		'minecraft:trim_materials': 'trim material',
-		'adj:eyes': '<rainbow f=0.25 w=0><neon p=1 r=3>mythical eye</neon></rainbow>'
+		'adj:eyes': '<neon r=1><rainbow p=0 f=0.35>mythical eye</neon></rainbow>'
 	}
 };
 

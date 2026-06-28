@@ -113,7 +113,7 @@ ServerEvents.tick(event => {
 		const duration = (options.duration !== undefined ? options.duration : 6) * 20;
 
 		// const command = '/immersivemessages sendcustom @a[distance=0..] {anchor:0,y:' + y + ',color:"' + color + '"' + (slideArgs ? ',' + slideArgs : '') + '} ' + duration + ' ' + text;
-		const command = `/eta queue @a[predicate=adj:in_overworld] status_messages "<dur:${duration}><color col=${color}><shadow c=${global.amplifyHexColor(color, -0.66)}><fade in=10 out=10><typewriter speed=45><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${text}"`
+		const command = `/eta queue @a[predicate=adj:in_overworld] status_messages "<dur:${duration}><color col=${color}><shadow c=${global.amplifyHexColor(color, -0.66)}>[fade in=10 out=10]<typewriter speed=20>[anchor value=BOTTOM_CENTER][align value=CENTER][offset x=0 y=-85]${text}"`
 		server.runCommand(command);
 	}
 
