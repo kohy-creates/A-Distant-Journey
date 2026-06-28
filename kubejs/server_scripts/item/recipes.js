@@ -2090,7 +2090,7 @@ ServerEvents.recipes((event) => {
 			},
 			{
 				'type': 'drop_item',
-				'item': 'wormhole:wormhole',
+				'item': 'wormholepotion:wormhole_potion',
 				'count': 3
 			}
 		],

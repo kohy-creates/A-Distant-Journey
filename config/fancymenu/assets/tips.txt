@@ -87,7 +87,7 @@ Nights are very dark in ADJ, so make sure you're always carrying a Torch or a La
 An easy way to generate lots of Mana that requires minimum resources and upkeep are Hydroangeas.
 Thermalillies generate a lot of Mana while they are active, but go on a 5 minute cooldown afterwards. The amount of energy generated outweights the cooldown though.
 Waterwheels are the best stress source. Change my mind.
-Windmills 
+Windmills have been buffed to spin at twice the speed they normally would in an average modpack with Create mod.
 You can spin water wheels horizontally instead of vertically, if you're into that sort of thing.
 I asked Discord for tips and got this.
 You can change the wood type of a Large Waterwheel if you right-click it with the new wood type you'd like.
@@ -96,7 +96,7 @@ You can craft a Lucky Horseshoe that eliminates fall damage as soon as you enter
 Different arrow types, in addition to having different on-hit effects, have different damage values.
 If an item can't be crafted through a Crafting Table, try finding it in other tabs in your recipe browser.
 Gravitite Ore is the easiest to find at the bottom of islands in the Aether.
-Don't forget to use accessories and improve them as you progress.
+Don't forget to use accessories and improve them as you progress! They help a ton.
 Aerogel acts as an explosion-resistant, transparent block.
 Days in the Aether last 3 times longer than in the Overworld.
 Aether Altars can repair damaged items and enhance existing items. They use Ambrosium Shards as fuel.
@@ -105,20 +105,17 @@ Bouncy Cloud Blocks are a funny alternative to Launch Pads.
 Weird Cloud Blocks are sort of a polar opposite to Bouncy Cloud Blocks - they will push anything passing them down with extreme velocities.
 The Champs and Champettes are pretty baller.
 Always check your surroundings before entering a fight.
-Don't leave your house without closing the door.
-Cold Parachutes can be crafted with 4 Cloud Blocks.
+Don't leave your house without closing the doors.
 Don't fear the Creepers. They can't spawn outside of Caves.
-Dart Shooters can be crafted with Skyroot Planks and Golden Amber.
 Golden, Poison, and Enchanted Darts are not affected by gravity.
 'Easier' rarely equals to 'more fun'.
 Never dig straight down. Unless you know what you're doing.
 The best time to do anything is before it's too late. The earlier you do it, the earlier you're going to see the effects.
 If a drop looks too big, it probably is. Fall damage accumulates like crazy.
-Dungeons in The Aether can contain extremely powerful and unique rewards. They have various difficulties: from Bronze, Silver, Gold to Platinum.
-Gravitite can be forged into powerful armor and tools. The full armor set will negate fall damage and increase your jump strenght. The tools can levitate blocks with right-click.
+Dungeons in The Aether can contain extremely powerful and unique rewards. They have various difficulties: Bronze, Silver, Gold and Platinum.
+Gravitite can be forged into powerful armor and tools. The full armor set will negate fall damage. The tools can levitate blocks with right-click.
 Never expect that nothing will happen while you're gone.
 The leaves of Golden Oak trees occasionally drop Golden Apples. Their logs also yield valuable Golden Amber.
-Golden Parachutes have 20 uses rather than one.
 You can harvest Aechor Plant's poison with Skyroot Buckets.
 Holystone tools occasionally generate Ambrosium Shards.
 Icestone freezes water into Ice and lava into Obsidian.
@@ -126,12 +123,13 @@ Some chests are only pretending - they are mimics!
 You can always come back later and mine some more.
 Moa Eggs can be incubated into baby Moas with the Incubator.
 Baby Moas will stay put when right clicking them with a Nature Staff.
-Parachutes auto-activate when falling off an island in The Aether.
+Parachutes auto-activate when falling off an island in The Aether. Golden Parachutes have 20 total uses rather than one.
 Try submerging yourself in water while wearing Phoenix armor. Something comical will happen.
 Placing a Saddle on Flying Pigs turns them into a mount.
 You can craft a Mount Bell to be able to 'store' and recall your mount at any time.
 Be careful not to misclick when building portals.
 Quicksoil increases the speed of walking mobs and sliding items. It also prevents players from sneaking.
+Asphalt increases movement speed of anything running on top of it.
 Raw meat is not really better than no meat. All raw meat items have a chance to cause additional hunger loss!
 A Skyroot Remedy Bucket for poison can be obtained by enchanting poison.
 Always treat modders with respect. Even if the mod is mediocre at best.
@@ -210,3 +208,7 @@ If you stay under water too long you may drown.
 Like any items, buckets will burn in lava, but not when it is IN the bucket.
 Wither Skeletons are known to lose their heads.
 There is a small chance that an Endermite will spawn when an Ender Pearl lands.
+Chunk Loaders can be crafted, they will load chunks even when you are away from your base.
+Small Water Wheels produce 256 Stress Units. Large Water Wheels Produce 512 Stress Units, but spin twice as slow.
+You can dual wield weapons, and in the process they both attack slightly faster when combined.
+Recall Potions will teleport you back home. You can find them in chests, or you can craft them.

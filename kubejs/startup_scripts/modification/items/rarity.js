@@ -135,7 +135,7 @@ ItemEvents.modification(event => {
 		/botania:lens/,
 		/botania:mana_/,
 		'@terra_curio',
-		'wormhole:wormhole',
+		'wormholepotion:wormhole_potion',
 		/pottery_sherd$/,
 		/rediscovered:plate_/,
 		/music_disc/,

@@ -1,11 +1,23 @@
 ADJServerEvents.botaniaFlowerManaChange(event => {
+
+	const amount = event.getAmount();
+	if (amount == 0) return;
+
 	if (event.isGeneration()) {
 		const flower = event.getGeneratingFlower();
-		switch (event.getBlock().id) { }
+		switch (event.getBlock().id) {
+			case 'botanicadds:flowers/vibrantia':
+			case 'botanicsadds:flowers/floating/vibrantia': {
+				const overgrowth = flower.overgrowth;
+				if (amount == 1) {
+					event.setAmount(overgrowth ? 2 : 4);
+				}
+				break;
+			}
+		}
 	}
 	else {
 		const flower = event.getFunctionalFlower();
-		const amount = event.getAmount();
 		switch (event.getBlock().id) {
 			case 'botania:floating_exoflame':
 			case 'botania:exoflame': {

@@ -31,7 +31,14 @@ ServerEvents.tags('item', event => {
 	});
 
 	event.remove('curios:accessory', [
-		'spyglass'
+		'spyglass',
+		'botania:mana_ring',
+		'botania:mana_ring_greater',
+		'botanicadds:mana_ring_gaia'
+	]);
+
+	event.add('curios:botania_mana', [
+		'botanicadds:mana_ring_gaia'
 	]);
 
 	event.remove('curios:back', [

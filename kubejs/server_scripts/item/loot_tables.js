@@ -691,14 +691,14 @@ LootJS.modifiers((event) => {
 		 */
 		let potionPool = (pool) => {
 			pool.randomChance(chance).addAlternativesLoot(
-				// LootEntry.of('wormhole:wormhole')
-				// 	.limitCount(amount)
-				// 	.when(c => {
-				// 		c.randomChance(0.5);
-				// 		c.customCondition({
-				// 			condition: 'adjcore:is_multiplayer'
-				// 		});
-				// 	}),
+				LootEntry.of('wormholepotion:wormhole_potion')
+					.limitCount(amount)
+					.when(c => {
+						c.randomChance(0.5);
+						c.customCondition({
+							condition: 'adjcore:is_multiplayer'
+						});
+					}),
 				LootEntry.of('majruszsdifficulty:recall_potion')
 					.limitCount(amount)
 			);

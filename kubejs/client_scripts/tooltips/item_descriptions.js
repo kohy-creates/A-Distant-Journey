@@ -324,7 +324,7 @@ const TooltipEdits = {
 		{ items: 'upgrade_aquatic:elder_eye', text: 'Emits redstone signal if there is an entity in front of it' },
 		{ items: 'cauldron', text: 'Can be used to brew some basic potions' },
 		{ items: 'majruszsdifficulty:recall_potion', text: 'Teleports you to your spawn point' },
-		{ items: 'wormhole:wormhole', text: ['Teleports you to any player in the server', 'Does nothing in Singleplayer worlds'] },
+		{ items: 'wormholepotion:wormhole_potion', text: ['Teleports you to any player in the server', 'Does nothing in Singleplayer games'] },
 		{ items: 'naturescompass:naturescompass', text: 'Points in the direction of any biome in the world' },
 		{ items: /bedroll/, text: 'Also known as \'sleeping bag\'' },
 

@@ -2,8 +2,8 @@ ClientEvents.lang('en_us', event => {
 
 	const extraTranslations = {
 
-		'effect.mutantmonsters.chemical_x.description': 'Causes certain mobs to mutate into their way stronger variants; has no effect on players.',
-		'effect.adjcore.cozy_campfire.description': 'So warm, so cozy! Slowly regenerates lost life',
+		'effect.mutantmonsters.chemical_x.desc': 'Causes certain mobs to mutate into their way stronger variants; has no effect on players.',
+		'effect.adjcore.cozy_campfire.desc': 'Slowly regenerates lost life',
 
 		'enchantment.minecraft.bane_of_arthropods': 'Lurkers\'s Bane',
 
@@ -392,7 +392,6 @@ ClientEvents.lang('en_us', event => {
 		'majruszsdifficulty:raid_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Raid Treasure Bag</neon></rainbow>',
 		'majruszsdifficulty:fishing_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Fishing Treasure Bag</neon></rainbow>',
 
-		'wormhole:wormhole': 'Wormhole Potion',
 		'born_in_chaos_v1:corpse_maggot': 'Maggot',
 	};
 
