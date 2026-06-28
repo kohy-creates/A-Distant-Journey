@@ -133,7 +133,7 @@ const RemovedItems = {
 		/hearth_and_home:polished_obsidian/,
 		/hearth_and_home:thatch.*/,
 
-		'v_slab_compat:phantasm/polished_obsidian_bricks_vertical_slab',
+		'phantasm:polished_obsidian',
 
 		'cataclysm:ignitium_elytra_chestplate',
 		/cataclysm:stone_tile.*/,

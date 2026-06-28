@@ -179,7 +179,7 @@ function onWSPhaseChange(newPhase, server) {
 	}
 	if (!server.isHardcore()) {
 		text.forEach(line => {
-			const command = `/eta queue @a status_messages "<dur:140><color col=#af4bff><shadow c=#540C94><fade in=10 out=10><obfuscate mode=reveal speed=100 direction=random><anchor value=BOTTOM_CENTER><align value=CENTER><offset x=0 y=-85>${line}"`;
+			const command = `/eta queue @a status_messages "<dur:140>[fade in=10 out=10][anchor value=BOTTOM_CENTER][align value=CENTER][offset x=0 y=-85]<color col=af4bff><shadow c=540C94>${line}"`;
 			server.runCommandSilent(command);
 		});
 	}

@@ -903,6 +903,7 @@
 
 		[entries.wood_type.rediscovered]
 			chair = true
+			table = true
 
 		[entries.wood_type.hearth_and_home]
 			lattice = true

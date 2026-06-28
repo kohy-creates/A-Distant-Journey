@@ -4330,6 +4330,7 @@
 			icon: "create_cataclysm:cataclysmic_alloy"
 			id: "0E1167447AFB1F55"
 			shape: "pentagon"
+			subtitle: "Forge some Cataclysmic Alloy and press it into a Sheet"
 			tasks: [
 				{
 					id: "1EEF4410A7C3EDFB"
@@ -4342,6 +4343,7 @@
 					type: "item"
 				}
 			]
+			title: "Pure Calamity"
 			x: -7.0d
 			y: 24.0d
 		}

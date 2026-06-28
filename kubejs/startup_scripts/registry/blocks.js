@@ -98,7 +98,7 @@ StartupEvents.registry('block', registry => {
     function registerNeon(color) {
         let id = `${color}_neon`;
         registry.create(id)
-            .lightLevel(15)
+            .lightLevel(1)
             .hardness(1.5)
             .resistance(4)
             .mapColor(getMapColor(color))
@@ -108,14 +108,14 @@ StartupEvents.registry('block', registry => {
             .tagBlock('mineable/pickaxe')
             .tagBoth('adj:neon_block');
 
-        // JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, {
-        //     parent: "minecraft:block/cube_all",
-        //     ambientocclusion: false,
-        //     gui_light: "front",
-        //     textures: {
-        //         all: `kubejs:block/${id}`
-        //     }
-        // })
+        JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, {
+            parent: "minecraft:block/cube_all",
+            ambientocclusion: false,
+            gui_light: "front",
+            textures: {
+                all: `kubejs:block/${id}`
+            }
+        })
     }
 
     Color.DYE.forEach(c => registerAsphalt(c));

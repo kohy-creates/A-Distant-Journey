@@ -26,6 +26,10 @@ const TooltipEdits = {
 			text: 'Prevents picking up items while equipped'
 		},
 		{
+			items: '#adj:asphalt',
+			text: 'Increases running speed'
+		},
+		{
 			items: 'crittersandcompanions:clam',
 			text: 'Right click to open'
 		},

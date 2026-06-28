@@ -22,18 +22,6 @@ ADJServerEvents.botaniaFlowerManaChange(event => {
 				event.setAmount(amount == -35000 ? -20000 : amount);
 				break;
 			}
-			// case 'botania:orechid':
-			// case 'botania:floating_orechid': {
-			// 	console.log(amount)
-			// 	// event.setAmount(amount == -35000 ? -20000 : amount);
-			// 	break;
-			// }
-			// case 'botania:orechid_ignem':
-			// case 'botania:floating_orechid_ignem': {
-			// 	console.log(amount)
-			// 	// event.setAmount(amount == -35000 ? -20000 : amount);
-			// 	break;
-			// }
 		}
 	}
 });

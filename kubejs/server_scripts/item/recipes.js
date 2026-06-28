@@ -348,6 +348,18 @@ ServerEvents.recipes((event) => {
 		'aether:skyroot_loom',
 		'mythicmetals:crafting/tnt_with_morkite',
 		/mctb:chipped_/,
+		'cataclysm:smithing/cursium_helmet',
+		'cataclysm:smithing/cursium_chestplate',
+		'cataclysm:smithing/cursium_leggings',
+		'cataclysm:smithing/cursium_boots',
+		'cataclysm:smithing/ignitium_helmet',
+		'cataclysm:smithing/ignitium_chestplate',
+		'cataclysm:smithing/ignitium_leggings',
+		'cataclysm:smithing/ignitium_boots',
+		'adj:repairing/born_in_chaos_v1_dark_metal_armor_helmet',
+		'adj:repairing/born_in_chaos_v1_dark_metal_armor_chestplate',
+		'adj:repairing/born_in_chaos_v1_dark_metal_armor_leggings',
+		'adj:repairing/born_in_chaos_v1_dark_metal_armor_boots'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -434,7 +446,8 @@ ServerEvents.recipes((event) => {
 			'crittersandcompanions:pearl': 'hybrid-aquatic:pearl',
 			'twilightforest:transformation_powder': 'botania:mana_powder',
 			'ars_elemental:anima_essence': 'kubejs:rune_life',
-			'brass_geodes:ruby': 'rediscovered:ruby'
+			'brass_geodes:ruby': 'rediscovered:ruby',
+			'phantasm:polished_obsidian': 'cataclysm:polished_obsidian'
 		},
 		output: {
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
@@ -490,7 +503,7 @@ ServerEvents.recipes((event) => {
 
 	event.smelting('dead_bush', 'adjblocks:bush', 0.1, 200).id('adj:dead_bush_smelting')
 
-	function mushroomBlockRecipe(input, output) {
+	function mushroomBlockRecipe(output, input) {
 		event.shaped(
 			output,
 			[
@@ -717,7 +730,7 @@ ServerEvents.recipes((event) => {
 		sewingRecipe(
 			recipe.getOriginalRecipeIngredients().toArray()[0].getItemIds()[0], // this looks unholy
 			recipe.getOriginalRecipeResult().getId(),
-			3,
+			8,
 			recipe.getId()
 		)
 	});
@@ -3569,7 +3582,7 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:glyph_summon_steed': ['kubejs:rune_life', 'saddle', 'name_tag', 'lead', 'hay_block', 'golden_carrot'],
 		'ars_nouveau:glyph_ender_inventory': ['botanicadds:rune_tp', 'ender_chest', 'createutilities:void_casing', 'createutilities:void_casing', 'createutilities:void_casing'],
 		'ars_elemental:glyph_spark': ['botania:rune_air', 'botania:rune_water', 'copper_ingot', 'copper_ingot', 'copper_ingot'],
-		'ars_nouveau:glyph_explosion': ['botania:rune_fire', 'tnt', 'kubejs:sulfur', 'kubejs:sulfur', 'mythicmetals:morkite_block', 'mythicmetals:morkite_block',],
+		'ars_nouveau:glyph_explosion': ['botania:rune_fire', 'tnt', 'hybrid-aquatic:sulfur', 'hybrid-aquatic:sulfur', 'mythicmetals:morkite_block', 'mythicmetals:morkite_block',],
 		'ars_nouveau:glyph_firework': ['botania:rune_fire', 'paper', 'gunpowder', 'gunpowder', '#c:dyes', '#c:dyes', '#c:dyes', '#c:dyes', '#c:dyes'],
 		'ars_nouveau:glyph_invisibility': ['botania:rune_mana', 'golden_carrot', 'nether_wart_block'],
 		'ars_nouveau:glyph_wind_shear': ['botania:rune_air', 'shears', 'farmersdelight:iron_knife'],
@@ -3578,7 +3591,7 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:glyph_rune': ['ars_nouveau:runic_chalk', 'botania:rune_spring', 'botania:rune_summer', 'botania:rune_autumn', 'botania:rune_winter',],
 		'ars_nouveau:glyph_animate_block': ['kubejs:rune_life', 'botanicadds:rune_energy', 'botania:rune_wrath', 'botania:rune_earth', '#forge:obsidian', '#forge:obsidian', '#forge:obsidian'],
 		'ars_nouveau:glyph_bounce': ['botania:rune_mana', 'slime_block', 'slime_block', 'slime_block', 'slime_block',],
-		'ars_nouveau:glyph_burst': ['botania:rune_summer', 'botania:rune_wrath', 'kubejs:sulfur', 'kubejs:sulfur', 'firework_star'],
+		'ars_nouveau:glyph_burst': ['botania:rune_summer', 'botania:rune_wrath', 'hybrid-aquatic:sulfur', 'hybrid-aquatic:sulfur', 'firework_star'],
 		'ars_nouveau:glyph_cold_snap': ['botania:rune_winter', 'botania:rune_water', 'snow_block', 'snow_block'],
 		'ars_nouveau:glyph_conjure_water': ['botania:rune_water', 'botania:rune_water', 'evilcraft:bucket_eternal_water'],
 		'ars_nouveau:glyph_crush': ['botania:rune_earth', 'create:andesite_casing', 'create:andesite_casing', 'create:shaft', 'smooth_stone', 'smooth_stone',],
@@ -7457,7 +7470,7 @@ ServerEvents.recipes((event) => {
 	workshopRecipe([
 		'kubejs:mana_regeneration_band',
 		'terra_curio:shackle',
-	], 'kubejs:mana_cuffs');
+	], 'kubejs:magic_cuffs');
 
 	workshopRecipe([
 		'6x botania:livingrock',
@@ -8838,8 +8851,8 @@ ServerEvents.recipes((event) => {
 	oreDustRecipes('kubejs:gravitite_dust', 'aether_redux:raw_gravitite', 'aether_redux:gravitite_ingot')
 	oreDustRecipes('kubejs:valkyrum_dust', 'aether_redux:raw_valkyrum', 'ancient_aether:valkyrum_ingot')
 	oreDustRecipes('kubejs:veridium_dust', 'aether_redux:raw_veridium', 'aether_redux:veridium_ingot')
-	oreDustRecipes('kubejs:azure_neodymium_dust', 'alexcaves:raw_azure_neodymium', 'alexcaves:azure_neodymium_ingot')
-	oreDustRecipes('kubejs:scarlet_neodymium_dust', 'alexcaves:raw_scarlet_neodymium', 'alexcaves:scarlet_neodymium_ingot')
+	// oreDustRecipes('kubejs:azure_neodymium_dust', 'alexcaves:raw_azure_neodymium', 'alexcaves:azure_neodymium_ingot')
+	// oreDustRecipes('kubejs:scarlet_neodymium_dust', 'alexcaves:raw_scarlet_neodymium', 'alexcaves:scarlet_neodymium_ingot')
 	oreDustRecipes('kubejs:zinc_dust', 'create:raw_zinc', 'create:zinc_ingot')
 	oreDustRecipes('kubejs:bismuth_dust', 'etcetera:raw_bismuth', 'etcetera:bismuth_ingot')
 	oreDustRecipes('kubejs:silver_dust', 'galosphere:raw_palladium', 'galosphere:palladium_ingot')
@@ -8860,30 +8873,78 @@ ServerEvents.recipes((event) => {
 	oreDustRecipes('kubejs:stormyx_dust', 'mythicmetals:raw_stormyx', 'mythicmetals:stormyx_ingot')
 	oreDustRecipes('kubejs:tin_dust', 'mythicmetals:raw_tin', 'mythicmetals:tin_ingot')
 
-	// Sulfur and Cinnabar
-	function fullBlockSet(base, polished, bricks) {
+	// ADJ block sets
+	function blockSet(block) {
+		const b = `kubejs:${block}`;
 
-		// event.shaped(`4x kubejs:${polished}`, ['AA', 'AA'], { A: `kubejs:${base}` }).id(`adj:${polished}_from_${base}`);
+		event.shaped(`6x ${b}_slab`, ['AAA'], { A: b }).id(`adj:${block}_slab`);
+		event.shaped(`4x ${b}_stairs`, ['A  ', 'AA ', 'AAA'], { A: b }).id(`adj:${block}_stairs`);
+		event.shaped(`6x ${b}_wall`, ['AAA', 'AAA'], { A: b }).id(`adj:${block}_wall`);
+
+		event.stonecutting(`2x ${b}_slab`, b).id(`adj:${block}_slab_stonecutting`);
+		event.stonecutting(`${b}_stairs`, b).id(`adj:${block}_stairs_stonecutting`);
+		event.stonecutting(`${b}_wall`, b).id(`adj:${block}_wall_stonecutting`);
+	}
+
+	function fullBlockSet(base, polished, bricks) {
 		event.shaped(`4x kubejs:${bricks}`, ['AA', 'AA'], { A: `kubejs:${polished}` }).id(`adj:${bricks}_from_${polished}`);
 		event.shaped(`kubejs:chiseled_${base}`, ['A', 'A'], { A: `kubejs:${bricks}_slab` }).id(`adj:chiseled_${base}`);
 
-		const sets = [base, polished, bricks];
-		sets.forEach(id => {
-			const b = `kubejs:${id}`;
-			event.shaped(`6x ${b}_slab`, ['AAA'], { A: b }).id(`adj:${id}_slab`);
-			event.shaped(`4x ${b}_stairs`, ['A  ', 'AA ', 'AAA'], { A: b }).id(`adj:${id}_stairs`);
-			event.shaped(`6x ${b}_wall`, ['AAA', 'AAA'], { A: b }).id(`adj:${id}_wall`);
-			event.stonecutting(`2x ${b}_slab`, b).id(`adj:${id}_slab_stonecutting`);
-			event.stonecutting(`${b}_stairs`, b).id(`adj:${id}_stairs_stonecutting`);
-			event.stonecutting(`${b}_wall`, b).id(`adj:${id}_wall_stonecutting`);
-		});
+		blockSet(base);
+		blockSet(polished);
+		blockSet(bricks);
 
-		// event.stonecutting(`kubejs:${polished}`, `kubejs:${base}`).id(`adj:${polished}_stonecutting`);
 		event.stonecutting(`kubejs:${bricks}`, `kubejs:${polished}`).id(`adj:${bricks}_stonecutting`);
 	}
 
+	// Sulfur and Cinnabar
+	event.shaped('kubejs:polished_cinnabar_pressure_plate', 'AA', { A: 'kubejs:polished_cinnabar' }).id('adj:polished_cinnabar_pressure_plate');
+	event.shaped('kubejs:polished_sulfur_pressure_plate', 'AA', { A: 'kubejs:polished_sulfur' }).id('adj:polished_sulfur_pressure_plate');
+
 	fullBlockSet('cinnabar', 'polished_cinnabar', 'cinnabar_bricks');
 	fullBlockSet('sulfur', 'polished_sulfur', 'sulfur_bricks');
+
+	// Colored blocks
+	Color.DYE.forEach(c => {
+		// Dyed Stone Bricks
+		event.shapeless(
+			`8x kubejs:${c}_stone_bricks`,
+			[
+				`${c}_dye`,
+				'stone_bricks', 'stone_bricks',
+				'stone_bricks', 'stone_bricks',
+				'stone_bricks', 'stone_bricks',
+				'stone_bricks', 'stone_bricks'
+			]
+		).id(`adj:${c}_stone_bricks`);
+		blockSet(`${c}_stone_bricks`);
+
+		// Dyed Tiles
+		event.shapeless(
+			`8x kubejs:${c}_tiles`,
+			[
+				`${c}_dye`,
+				'supplementaries:stone_tile', 'supplementaries:stone_tile',
+				'supplementaries:stone_tile', 'supplementaries:stone_tile',
+				'supplementaries:stone_tile', 'supplementaries:stone_tile',
+				'supplementaries:stone_tile', 'supplementaries:stone_tile'
+			]
+		).id(`adj:${c}_tiles`);
+		blockSet(`${c}_tiles`);
+
+		// Neon Blocks
+		event.recipes.botania.mana_infusion(`kubejs:${c}_neon`, `alexscaves:radon_lamp_${c}`).mana(1000).id(`adj:${c}_neon_block`);
+
+		// Asphalt
+		let id = c == 'black' ? 'kubejs:asphalt' : `kubejs:${c}_asphalt`;
+		let ingr = [
+			'cobblestone',
+			'cobblestone',
+			'slime_ball'
+		];
+		if (c != 'black') ingr.push(`${c}_dye`);
+		event.recipes.create.mixing(Item.of(id, 2), ingr, 300, 'heated').id(`adj:${c}_asphalt`);
+	});
 
 	event.recipes.create.milling(['hybrid-aquatic:sulfur', Item.of('hybrid-aquatic:sulfur').withChance(0.5)], 'kubejs:sulfur', 200).id('adj:crushed_sulfur');
 
@@ -9309,4 +9370,6 @@ ServerEvents.recipes((event) => {
 	oreExcavationBasicVein('mythicmetals:raw_stormyx', 'Stormyx Vein', 'stormyx', 128, 16, 'is_nether', 1200);
 	oreExcavationBasicVein('mythicmetals:raw_midas_gold', 'Midas Gold Vein', 'midas_gold', 128, 16, 'is_nether', 800, 192);
 	oreExcavationBasicVein('mythicmetals:raw_adamantite', 'Adamantite Vein', 'adamantite', 512, 128, null, 3500, 2048, 'createoreexcavation:diamond_drill');
+
+	// Cursium, Ignitium and Dark Metal recipe reworks
 });
