@@ -1,0 +1,100 @@
+# Update 1.4.2 ~ Rounding Out The Adventure (Part 2)
+
+It's been over a month since the 1.4.0 update, and almost a month since the 1.4.1 patch. I hope you like the *Adventure Squared* update!
+
+ADJ will soon be available on Modrinth! I hope the platform won't go to hell now that they got sold out to some shady company...
+
+## Mod Changes
+
+In preparations for the Modrinth release, I had to remove some mods licensed under ARR (All Rights Reserved) that weren't on Modrinth by default. Those mods being:
+- FastBoot (it was redundant anyway, it was a placebo that did the same thing as LazyDFU)
+- Aether Delight
+- Decorative Bottles
+- Exhaustion Options (integrated into ADJ Core)
+- Forviging Border (integrated into ADJ Core)
+- Faster Fly Break Speed (integrated into ADJ Core)
+- Quit or Not
+- Tax Ocean Architect
+
+- Updated Tide, which fixed plenty of issues related to Fish Satchel.
+- Reintroduced Wormhole Potions.
+- Added More Crafting Tables.
+
+## Gameplay Changes
+
+- Fixed Fortresses being unable to be found with Wayfinding Ritual.
+- Damage over time damage instances no longer cause the screen to shake.
+- Plenty more structures can be located using the Wayfiding Ritual.
+- Fixed mobs in hardcore not getting the 50% health boost (and also it spamming the console with some errors).
+- Arrows are no longer rendered when in players to prevent them from obstructing the view.
+- Enchanted items now AGAIN show a higher rarity.
+- Fixed Adamantite Hook recipe.
+- Removed Tattered Armor.
+- Removed Soul Jar.
+- Added a recipe for Rooted Dirt.
+- Added extra recipes for Red, Cyan and Brown Dyes.
+- Fixed Skyroot Sticks being craftable.
+- Replaced Maggot (Alex's Mobs) with Corpse Maggot (Born in Chaos) wherever possible.
+- Renamed Corpse Maggot to just Maggot.
+- All Chains are now climbable rather than just the vanilla chains block.
+- Added recipes for Mushroom Blocks (extends to modded variants).
+- Ported some of [Myriad](https://myriadmc.org/wiki/)'s recipe additions.
+- Manabloom Fiber can no longer be used in place of String in recipes.
+- Entering Twilight Forest now gives 15 seconds of Slow Falling to save players from dying whenever entering the dimension (cause the mod is awful as shit).
+- Fixed some Twilight Forest progression stops (e.g. Labyrinth being unable to be entered).
+- Kobolds no longer spawn in Twilight Forest.
+- Added a dedicated accessory slot for a Spyglass.
+- Ported over some blocks from [Blockus](https://www.curseforge.com/minecraft/mc-mods/blockus) mod, those being: Dyed Tiles, Dyed Stone Bricks, Neon Blocks and Ashpalt Blocks.
+- Fixed Cinnabar and Sulfur Pressure Plates missing from their block sets.
+- Removed Architect's Pallette Ore Bricks until I add ore brick sets for every ore.
+- Fixed the screen going dark when Raygun (Alex's Caves) is active.
+- Increased Raygun damage (5 -> 14).
+- Increased Gamma Raygun damage (7 -> 21).
+- Raygun recipe changed. It is now chapter 3+ item.
+- Charred Logs can now be made in a Furnace, meaning that Charcoal can now be properly automated again.
+- Mutant monster spawn notification is now shown only when a mutant monsters spawns on a Y level +-10 compared to player's.
+- Fixed Magic Cuffs being uncraftable.
+- Dark Metal Armor, Cursium Armor and Ignitium Armor no longer use Netherite as their base item.
+- Fix the Cataclysmic Alloy quest missing name and description.
+- MythicMetals Nether ores now follow the expanded Nether height distribution.
+- Alex's Caves biomes generate slightly deeper underground to prevent them from spilling to the surface. 
+- Sun Altar (Aether) now works in all dimensions with a daylight cycle.
+- Zombified Piglins no logner get mad when Quartz is mined near them. I didn't even know that was enabled, it was never supposed to be because I HATED THAT in Beyond Depth.
+- Mobs now properly spawn holding Shield Expansion shields rather than the disabled, vanilla ones.
+- Removed Pocket Jukebox.
+- Rain and thunder durations have been tweaked across all seasons. Rains in autumn can last up to 3 days and thunders don't occur naturally in winter.
+
+## Balance Changes
+
+- Sentry Ring ember damage is now slightly bigger (1 -> 6). 
+- Portal Guns now only spawn in chests from Chapter 2 onwards (not retroactive to already looted chests).
+- Generating Flowers can now bind to spreaders up to 10 blocks away (was 6).
+- Exoflames use less mana when making Furnaces burn (300 -> 100). 
+- Fallen Kanade uses less mana when applying its buff (120 -> 25). 
+- Loonium uses less mana per mob spawned (35k -> 20k).
+- Orechids use less mana (12.5k -> 9k for regular and 15k -> 12k for Ignem) and transform blocks faster (once every 6s -> 4s).
+- Carpets are now crafted in batches of 8 rather than 3.
+- Reduced Endoflame generation per tick (12 -> 10, or in other words 240 -> 200 per second).
+- Vibrantia now makes 30 mana per vibration and 60 mana with overgrowth seed. 
+- Rainute and Glaciflora make more mana. 
+- Removed Candysnuft due to its exploitable nature.
+- Movement speed penalty while attacking reduced (-60% -> -30%).
+- Mobs with weapons have been slightly nerfed.
+- Totem of Radiance deals more damage to undead mobs. (4 -> 20, random interval 3s -> 2s).
+- Totem of Torrents is 50% stronger.
+- Totem of Growth has doubled range (5 -> 10) and increased chance to bone meal crops (20% -> 25%).
+- Night passes a lot quicker on multiplayer if only one person is sleeping (2x -> 5x). Maximum/Singleplayer speed remains the same (15x).
+- Terra Blade now uses Fiery Sword instead of Teadrop Cleaver in its recipe.
+
+## Performance and Stability
+
+- Certain blocks no longer provide info overlays (e.g. Cartography Table no longer shows coordinates) due to confusion and lag problems on weaker devices.
+- Fixed crashes in the Oasis biome.
+- ADJ should no longer crash due to LegacyRandomSource related issues.
+- Fixed a Neruina ticking exception related to the Wither Storm.
+
+## Other
+
+- Nether Stars are now once again animated.
+- Fixed loading screen never moving past 0% despite loading everything correctly.
+- ADJ no longer comes pre-bundled with a gif of crying Kris Jenner in one of the folders.

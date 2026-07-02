@@ -30,7 +30,5 @@
   "allowOptifineFallbackProperties": true,
   "enforceOptiFineFloorUVs": true,
   "showReloadErrorToast": true,
-  "exportRotations": false,
-  "asmMaths": true,
-  "logASM": false
+  "exportRotations": false
 }

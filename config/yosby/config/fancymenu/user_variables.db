@@ -72,3 +72,8 @@ variable {
   reset_on_launch = false
 }
 
+variable {
+  name = played_load_sound
+  value = 0
+  reset_on_launch = true
+}
