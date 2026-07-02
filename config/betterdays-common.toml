@@ -30,7 +30,7 @@
 	#A high value will make the interpolation softer and curvier
 	#A low value will make the interpolation closer to a piecewise function
 	#Range: 0.0 ~ 10.0
-	interpolatedTimeSmoothingFactor = 0.25
+	interpolatedTimeSmoothingFactor = 0.5
 	#These are the pairs that define what speed time should run at, at the specified day/night tick
 	#The two default pairs need to exist, but their time speed values can be modified
 	interpolatedTimeList = ["0,1.0", "24000,1.0"]
@@ -104,7 +104,7 @@
 	sleepSpeedMax = 15.0
 	#The minimum speed at which time passes when only 1 player is sleeping in a full server.
 	#Range: 0.0 ~ 24000.0
-	sleepSpeedMin = 2.0
+	sleepSpeedMin = 5.0
 	#The speed at which time passes when all players are sleeping.
 	#Set to -1 to disable this feature (sleepSpeedMax will be used when all players are sleeping).
 	#Range: -1.0 ~ 24000.0
@@ -167,7 +167,7 @@
 			#sleepingPlayers -> the number of players in the current dimension who are sleeping.
 			#totalPlayers -> the number of players in the current dimension (spectators are not counted).
 			#sleepingPercentage -> the percentage of players in the current dimension who are sleeping (does not include % symbol).
-			message = "${player} is now sleeping. [${sleepingPlayers}/${totalPlayers}]"
+			message = "${player} is now sleeping. Night will progress faster."
 			#Sets where this message appears.
 			#Allowed Values: SYSTEM, GAME_INFO
 			type = "GAME_INFO"
@@ -182,7 +182,7 @@
 			#sleepingPlayers -> the number of players in the current dimension who are sleeping.
 			#totalPlayers -> the number of players in the current dimension (spectators are not counted).
 			#sleepingPercentage -> the percentage of players in the current dimension who are sleeping (does not include % symbol).
-			message = "${player} has left their bed. [${sleepingPlayers}/${totalPlayers}]"
+			message = "${player} has left their bed."
 			#Sets where this message appears.
 			#Allowed Values: SYSTEM, GAME_INFO
 			type = "GAME_INFO"

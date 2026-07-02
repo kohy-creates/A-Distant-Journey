@@ -8,7 +8,10 @@ mushroomSporeBiomes = [
 mushroomSporeDensity = 6
 fireflyBiomes = [
     "minecraft:swamp",
-    "minecraft:mangrove_swamp"
+    "minecraft:mangrove_swamp",
+    "twilightforest:firefly_forest",
+    "twilightforest:fire_swamp",
+    "twilightforest:swamp",
 ]
 fireflyDensity = 0
 pollenBiomes = [

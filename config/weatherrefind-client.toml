@@ -11,10 +11,10 @@
 	particleTickDelay = 1
 	#Rain spawn probability per attempt (0.0 to 1.0, lower = fewer rain particles)
 	#Range: 0.0 ~ 1.0
-	rainDensity = 0.8
+	rainDensity = 1.0
 	#Snow spawn probability per attempt (0.0 to 1.0, lower = fewer snow particles)
 	#Range: 0.0 ~ 1.0
-	snowDensity = 0.9
+	snowDensity = 1.0
 	#Turn this on if your snow gets dark with shaders
 	disableSnowFade = false
 	#Number of rain particles to spawn per cycle

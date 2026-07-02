@@ -356,10 +356,9 @@ ServerEvents.recipes((event) => {
 		'cataclysm:smithing/ignitium_chestplate',
 		'cataclysm:smithing/ignitium_leggings',
 		'cataclysm:smithing/ignitium_boots',
-		'adj:repairing/born_in_chaos_v1_dark_metal_armor_helmet',
-		'adj:repairing/born_in_chaos_v1_dark_metal_armor_chestplate',
-		'adj:repairing/born_in_chaos_v1_dark_metal_armor_leggings',
-		'adj:repairing/born_in_chaos_v1_dark_metal_armor_boots'
+		/born_in_chaos_v1:armor_plate_from_dark_metal_k/,
+		'wormholepotion:wormhole_potion',
+		'zenith:zenith_from_true_wooden_sword'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -5850,7 +5849,7 @@ ServerEvents.recipes((event) => {
 		.itemOutput('botania:terra_sword')
 		.input(
 			'mythicmetals:stormyx_sword',
-			'twilightdelight:teardrop_sword',
+			'twilightforest:fiery_sword',
 			'mythicmetals:star_platinum_sword',
 			'mythicmetals:orichalcum_sword',
 			'ancient_aether:valkyrum_sword',
@@ -9372,4 +9371,122 @@ ServerEvents.recipes((event) => {
 	oreExcavationBasicVein('mythicmetals:raw_adamantite', 'Adamantite Vein', 'adamantite', 512, 128, null, 3500, 2048, 'createoreexcavation:diamond_drill');
 
 	// Cursium, Ignitium and Dark Metal recipe reworks
+	event.shaped(
+		'born_in_chaos_v1:armor_plate_from_dark_metal',
+		[
+			'MMD',
+			'DAD',
+			'DMM'
+		],
+		{
+			M: 'born_in_chaos_v1:monster_skin',
+			D: 'born_in_chaos_v1:dark_metal_ingot',
+			A: 'mythicmetals:adamantite_ingot'
+		}
+	).id('adj:armor_plate_from_dark_metal');
+
+	event.smithing('born_in_chaos_v1:dark_metal_armor_helmet', 'born_in_chaos_v1:dark_upgrade', 'iron_helmet', 'born_in_chaos_v1:armor_plate_from_dark_metal').id('adj:dark_metal_helmet');
+	event.smithing('born_in_chaos_v1:dark_metal_armor_chestplate', 'born_in_chaos_v1:dark_upgrade', 'iron_chestplate', 'born_in_chaos_v1:armor_plate_from_dark_metal').id('adj:dark_metal_chestplate');
+	event.smithing('born_in_chaos_v1:dark_metal_armor_leggings', 'born_in_chaos_v1:dark_upgrade', 'iron_leggings', 'born_in_chaos_v1:armor_plate_from_dark_metal').id('adj:dark_metal_leggings');
+	event.smithing('born_in_chaos_v1:dark_metal_armor_boots', 'born_in_chaos_v1:dark_upgrade', 'iron_boots', 'born_in_chaos_v1:armor_plate_from_dark_metal').id('adj:dark_metal_boots');
+
+	event.shaped(
+		'cataclysm:ignitium_helmet',
+		[
+			'ISI',
+			'S S'
+		],
+		{
+			I: 'cataclysm:ignitium_ingot',
+			S: 'mythicmetals:steel_ingot'
+		}
+	).id('adj:ignitium_helmet');
+
+	event.shaped(
+		'cataclysm:ignitium_chestplate',
+		[
+			'I I',
+			'SIS',
+			'SSS',
+		],
+		{
+			I: 'cataclysm:ignitium_ingot',
+			S: 'mythicmetals:steel_ingot'
+		}
+	).id('adj:ignitium_chestplate');
+
+	event.shaped(
+		'cataclysm:ignitium_leggings',
+		[
+			'III',
+			'S S',
+			'S S',
+		],
+		{
+			I: 'cataclysm:ignitium_ingot',
+			S: 'mythicmetals:steel_ingot'
+		}
+	).id('adj:ignitium_leggings');
+
+	event.shaped(
+		'cataclysm:ignitium_boots',
+		[
+			'S S',
+			'I I',
+		],
+		{
+			I: 'cataclysm:ignitium_ingot',
+			S: 'mythicmetals:steel_ingot'
+		}
+	).id('adj:ignitium_boots');
+
+	event.shaped(
+		'cataclysm:cursium_helmet',
+		[
+			'ISI',
+			'S S'
+		],
+		{
+			I: 'cataclysm:cursium_ingot',
+			S: 'cataclysm:black_steel_ingot'
+		}
+	).id('adj:cursium_helmet');
+
+	event.shaped(
+		'cataclysm:cursium_chestplate',
+		[
+			'I I',
+			'SIS',
+			'SSS',
+		],
+		{
+			I: 'cataclysm:cursium_ingot',
+			S: 'cataclysm:black_steel_ingot'
+		}
+	).id('adj:cursium_chestplate');
+
+	event.shaped(
+		'cataclysm:cursium_leggings',
+		[
+			'III',
+			'S S',
+			'S S',
+		],
+		{
+			I: 'cataclysm:cursium_ingot',
+			S: 'cataclysm:black_steel_ingot'
+		}
+	).id('adj:cursium_leggings');
+
+	event.shaped(
+		'cataclysm:cursium_boots',
+		[
+			'S S',
+			'I I',
+		],
+		{
+			I: 'cataclysm:cursium_ingot',
+			S: 'cataclysm:black_steel_ingot'
+		}
+	).id('adj:cursium_boots');
 });

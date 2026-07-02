@@ -34,7 +34,7 @@
 	NUTBREAKER_HEAD_CHANCE = 0.3499999940395355
 	#Amount of Mr.Pumpkins spawned
 	#Range: > 1
-	PUMPKIN_STAFF_SUMMON_AMOUNT = 2
+	PUMPKIN_STAFF_SUMMON_AMOUNT = 1
 
 	[Weapons.Mobs]
 

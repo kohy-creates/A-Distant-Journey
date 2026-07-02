@@ -10,7 +10,7 @@
 
         # Set to % of damage-reduction from Protection Enchantments that should be ignored.
         # Allowed range: 0.0 ~ 1.0 - Default: 0.33
-        penetratingStrikeProtectionIgnorance = 0.33
+        penetratingStrikeProtectionIgnorance = 0.5
 
     [Artifacts.Tunneling]
         # En-/Disables the effects of the Tunneling enchantment.
@@ -46,11 +46,11 @@
 
         # Sets the damage in 1/2 hearts that will be dealt to hostile mobs when a damage tick occurs.
         # Allowed range: 1 ~ 40 - Default: 4
-        radianceTotemDamage = 4
+        radianceTotemDamage = 20
 
         # Sets the average time between damage ticks of the Radiance Totem in seconds. The totem will still damage mobs randomly, but the average time between damage ticks will be this value.
         # Allowed range: 1 ~ 60 - Default: 3
-        radianceTotemDamageTickAverage = 3
+        radianceTotemDamageTickAverage = 2
 
         # Sets the radius around the radiance totem within which entities will be affected by the glowing and damaging effects.
         # Allowed range: 1 ~ 90 - Default: 10
@@ -63,7 +63,7 @@
 
         # Sets the relative strength of the boost the player will get when using the Torrent Totem.
         # Allowed range: 0.1 ~ 3.0 - Default: 1.0
-        torrentTotemBoost = 1.0
+        torrentTotemBoost = 1.5
 
         # En-/Disables giving a player an upwards boost when using the Torrent Totem.
         # Allowed values: true, false - Default: false
@@ -76,20 +76,20 @@
 
         # Sets the radius around the growth totem within which crops will be randomly bonemealed.
         # Allowed range: 1 ~ 50 - Default: 5
-        growthTotemGrowRadius = 5
+        growthTotemGrowRadius = 10
 
         # The growth totem uses the randomTick to determine when it should grow crops. This value determines the chance in % that a random tick actually grows crops to potentially decrease its yield. For example, a 20% chance bonemeals a crop ~10.5 times an hour
         # Allowed range: 1 ~ 100 - Default: 20
-        growthTotemGrowChance = 20
+        growthTotemGrowChance = 25
 
 [Fossils]
     # En-/Disables the effects of the Fossils like PotionEffects etc.
     # Allowed values: true, false - Default: true
-    fossilEffectsEnabled = true
+    fossilEffectsEnabled = false
 
     # Range in Blocks that the Ocelot/Wolf Fossils scare their corresponding mobs away.
     # Allowed range: 10 ~ 50 - Default: 20
-    fossilFleeRange = 20
+    fossilFleeRange = 10
 
     # En-/Disables the slow falling effect of the chicken fossil.
     # Allowed values: true, false - Default: true

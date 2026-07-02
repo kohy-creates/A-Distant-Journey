@@ -32,7 +32,7 @@
   "MusicDiscs": true,
   "NoteBlockAmethystSounds": true,
   "ShipwreckSpyglassLoot": true,
-  "PocketJukebox": true,
+  "PocketJukebox": false,
   "ChickenNugget": false,
   "PoweredRailsCopperRecipe": false,
   "GlowBerryEatGlow": {

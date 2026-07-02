@@ -65,6 +65,7 @@ biomesAllowlist = [
     "twilightforest:final_plateau",
     "twilightforest:firefly_forest",
     "twilightforest:fire_swamp",
+    "twilightforest:swamp",
     "twilightforest:forest",
     "twilightforest:highlands"
 ]

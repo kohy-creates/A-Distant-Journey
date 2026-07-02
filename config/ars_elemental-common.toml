@@ -4,22 +4,22 @@
 
 #Adjust these values to balance how much a spell gets amplified by the matching spell focus, doubled for major foci.
 ["Elemental Spell Foci - Amplify"]
-	"Fire Focus buff" = 1.0
-	"Water Focus buff" = 1.0
-	"Air Focus buff" = 1.0
-	"Earth Focus buff" = 1.0
+	"Fire Focus buff" = 1.5
+	"Water Focus buff" = 1.5
+	"Air Focus buff" = 1.5
+	"Earth Focus buff" = 1.5
 
 #Adjust these values to balance how much an elemental spell gets dampened by a not-matching lesser spell focus
 ["Elemental Spell Foci - Dampening"]
-	"Fire Focus debuff" = -1.0
-	"Water Focus debuff" = -1.0
-	"Air Focus debuff" = -1.0
-	"Earth Focus debuff" = -1.0
+	"Fire Focus debuff" = -1.5
+	"Water Focus debuff" = -1.5
+	"Air Focus debuff" = -1.5
+	"Earth Focus debuff" = -1.5
 
 #Enable or disable the passive bonus of the foci
 ["Elemental Spell Foci - Abilities"]
 	"Enable glyph empowering" = true
-	"Enable regen bonus under special conditions" = true
+	"Enable regen bonus under special conditions" = false
 	"Enable iframe skip combos" = true
 
 #Adjust Elemental Armor Mana Buffs
@@ -34,7 +34,7 @@
 ["Mermaid Fishing"]
 	#How much source mermaids consume per generation
 	#Range: 0 ~ 10000
-	mermaidManaCost = 1000
+	mermaidManaCost = 250
 	#How many channels must occur before a siren produces loot.
 	#Range: 0 ~ 300
 	mermaidMaxProgress = 30
@@ -54,10 +54,10 @@
 ["Source cost"]
 	#How much source does the water urn consume.
 	#Range: 0 ~ 10000
-	waterUrnCost = 100
+	waterUrnCost = 50
 	#How much source does the slipstream elevator consume.
 	#Range: 0 ~ 1000
-	airElevatorCost = 10
+	airElevatorCost = 0
 	#How much source does the bubble elevator consume.
 	#Range: 0 ~ 1000
 	waterElevatorCost = 0

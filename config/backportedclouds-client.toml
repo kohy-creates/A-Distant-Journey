@@ -1,6 +1,0 @@
-#Range: 0.1 ~ 3.4028234663852886E38
-"Cloud distance multiplier" = 4.0
-"Extend frustum" = true
-#Range: 2 ~ 128
-"Cloud render distance" = 128
-

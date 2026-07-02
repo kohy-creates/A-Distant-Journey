@@ -37,26 +37,8 @@ variable {
 }
 
 variable {
-  name = has_visited_kofi
-  value = 
-  reset_on_launch = false
-}
-
-variable {
-  name = time_in_intro_screen
-  value = 
-  reset_on_launch = true
-}
-
-variable {
   name = option.show_mods_button
   value = 1
-  reset_on_launch = false
-}
-
-variable {
-  name = option.hunger_style
-  value = apple
   reset_on_launch = false
 }
 
@@ -69,6 +51,30 @@ variable {
 variable {
   name = world.border_size
   value = 20k
+  reset_on_launch = false
+}
+
+variable {
+  name = has_visited_kofi
+  value = 
+  reset_on_launch = false
+}
+
+variable {
+  name = played_load_sound
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
+  name = time_in_intro_screen
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = option.hunger_style
+  value = apple
   reset_on_launch = false
 }
 

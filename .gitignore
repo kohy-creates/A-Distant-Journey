@@ -136,3 +136,4 @@ config/structurify/structurify_backup_*.json
 packetfixer.properties
 servers.dat_old
 sdf-cache/
+config/jei/world/

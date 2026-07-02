@@ -39,7 +39,7 @@
 		rainFogShader = true
 		#Intensity of Rain Fog effect post process shader.
 		#Range: 0.0 ~ 2.0
-		rainFogShaderIntensity = 0.3
+		rainFogShaderIntensity = 0.2
 		#Intensity of Thunder Fog effect post process shader.
 		#Range: 0.0 ~ 2.0
 		thunderFogShaderIntensity = 0.1

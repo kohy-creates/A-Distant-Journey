@@ -1,2 +1,26 @@
 type = listener_instances
 
+listener_instance {
+  listener_instance_identifier = dc2f9b16-4d55-4ab3-b9a4-10d278c588a7-1783006180577
+  listener_provider_identifier = world_entered
+  listener_instance_action_script_identifier = 576342f7-0fa3-408c-8f63-b36c46195dcb-1783006180577
+  [executable_action_instance:fb086ec2-53d3-43c1-8574-7ef591db0312-1783006191927][action_type:play_audio] = {"audioSource":"[source:local]/config/fancymenu/assets/load.ogg","soundChannel":"master","baseVolume":0.9}
+  [executable_block:576342f7-0fa3-408c-8f63-b36c46195dcb-1783006180577][type:generic] = [executables:fb086ec2-53d3-43c1-8574-7ef591db0312-1783006191927;]
+}
+
+listener_instance {
+  listener_instance_identifier = a9ce0427-7862-46f9-b69a-a0c1224b4dd1-1783006117427
+  listener_provider_identifier = server_joined
+  listener_instance_action_script_identifier = a10eafab-d64e-4341-9033-59b703d16a6e-1783006117427
+  [executable_action_instance:b2105092-e39f-4fc9-b837-e32df998864d-1783006122111][action_type:play_audio] = {"audioSource":"[source:local]/config/fancymenu/assets/load.ogg","soundChannel":"master","baseVolume":0.9}
+  [executable_block:a10eafab-d64e-4341-9033-59b703d16a6e-1783006117427][type:generic] = [executables:b2105092-e39f-4fc9-b837-e32df998864d-1783006122111;]
+}
+
+listener_instance {
+  listener_instance_identifier = 12b97061-2975-4e87-924d-66aeebe14bbd-1783005637427
+  listener_provider_identifier = quit_minecraft
+  listener_instance_action_script_identifier = 3e34267e-828e-4926-a32e-7214de7b4dbf-1783005637427
+  [executable_action_instance:3634c26d-a80b-4228-a03b-0a101d26c6d1-1783005754977][action_type:set_variable] = played_load_sound:0
+  [executable_block:3e34267e-828e-4926-a32e-7214de7b4dbf-1783005637427][type:generic] = [executables:3634c26d-a80b-4228-a03b-0a101d26c6d1-1783005754977;]
+}
+

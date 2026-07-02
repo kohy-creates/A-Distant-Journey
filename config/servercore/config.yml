@@ -143,7 +143,7 @@ commands:
   colors:
     # The colors used in command feedback. You can use hex codes or minecraft legacy color names.
     # The primary color is the most used color in command feedback.
-    primary: 'dark_aqua'
+    primary: 'gold'
     # The secondary color is used for highlighting important information, like values.
     secondary: 'green'
     # The tertiary color is mostly used for text in titles.

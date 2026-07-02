@@ -9,7 +9,7 @@
 	"messageSoundEffect": {
 		"shouldPlay": true,
 		"pitch": 2.0,
-		"volume": 0.8,
+		"volume": 0.5,
 		"id": "message",
 		"soundEvent": "minecraft:block.note_block.hat"
 	},
@@ -23,7 +23,7 @@
 	"mentionKeywords": [
 		"@kohara_"
 	],
-	"ignoreSystemChats": false,
+	"ignoreSystemChats": true,
 	"enableChatSoundCooldown": true,
 	"chatSoundCooldown": 0.05
 }

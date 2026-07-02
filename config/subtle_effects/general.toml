@@ -3,7 +3,8 @@ version = 0
 enableParticleCulling = false
 particleRenderDistance = 4
 particleCullingBlocklist = [
-    "minecraft:campfire_signal_smoke"
+    "minecraft:campfire_signal_smoke",
+    "minecraft:campfire_smoke"
 ]
 cullParticlesInUnloadedChunks = true
 allowUsingBlendedRenderType = true

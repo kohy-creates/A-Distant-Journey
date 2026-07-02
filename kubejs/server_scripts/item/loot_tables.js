@@ -16,7 +16,6 @@ LootJS.modifiers((event) => {
 		'twilightforest:ender_bow',
 		'twilightforest:triple_bow',
 		'twilightforest:seeker_bow',
-		'twilightforest:ice_sword',
 		'twilightforest:ice_bomb',
 
 		'minecraft:netherite_ingot',

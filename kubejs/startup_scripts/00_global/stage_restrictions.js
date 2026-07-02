@@ -224,7 +224,9 @@ global.stageRestrictions = {
 			'alexscaves:tremorzilla_egg',
 			'cataclysm:infernal_forge',
 			'cataclysm:monstrous_horn',
-			'cataclysm:lava_power_cell'
+			'cataclysm:lava_power_cell',
+			/born_in_chaos_v1:dark_metal_armor_/,
+			'born_in_chaos_v1:armor_plate_from_dark_metal'
 		],
 		light: [
 			'mythicmetals:aegis_smithing_template',

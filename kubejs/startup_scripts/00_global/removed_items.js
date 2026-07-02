@@ -143,6 +143,8 @@ const RemovedItems = {
 		'cataclysm:polished_sandstone',
 		'cataclysm:blackstone_pillar',
 		'cataclysm:chiseled_end_stone_bricks',
+		'cataclysm:ignitium_upgrade_smithing_template',
+		'cataclysm:cursium_upgrade_smithing_template',
 
 		'netherexp:shotgun_fist',
 		'netherexp:shotgun_core',

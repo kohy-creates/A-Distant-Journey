@@ -7,7 +7,7 @@ spawnSandwaves = false
 
 [messageInABottle]
 	#Allow spawning of Message in a Bottle
-	allowSpawning = true
+	allowSpawning = false
 	#Maximum number of bottles that can exist simultaneously
 	#Range: > 1
 	maxCount = 2

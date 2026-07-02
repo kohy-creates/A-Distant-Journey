@@ -3,9 +3,9 @@
 	   In vanilla, there is usually a delay of 20 ticks between a mob's attacks. 
 	   7 was chosen because a default Better Combat sword attack takes 13 ticks.
 	*/
-	"mob_additional_attack_cooldown": 7,
+	"mob_additional_attack_cooldown": 8,
 	// The amount of ticks before a mob will launch a Better Combat attack when they are ready to do so.
-	"mob_begin_attack_delay": 10,
+	"mob_begin_attack_delay": 15,
 	/* The amount to add to the "upswing_multiplier" config value when calculating a mob's Better Combat attack upswing.  
 	   A value of 0.0 means the upswing will be at normal speed. 
 	   A value of 0.5 means the upswing will be 50% longer. 

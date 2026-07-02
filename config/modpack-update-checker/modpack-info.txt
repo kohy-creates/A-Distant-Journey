@@ -1,3 +1,12 @@
-A cool little RPG I thought of. I hope you like it!
+A Distant Journey (or ADJ for short) is a modpack which aims to flip the game upside down, making it feel both like a whole different game, but at the same time preserving the vibe of a typical Minecraft modpack. 
 
-I might write more here in the future, but right now I've got more important things to do.
+Is it an adventure/RPG modpack? - Yes. 
+Is it a building/magic/tech/farming/combat modpack? - All of those actually.
+Is it good for roleplaying? - I think so.
+Is it a kitchen sink modpack? - It falls under the definition of one, except it has effort to it.
+
+ADJ is my own vision for an adventure pack, with its main design principle being doing things differently. The core gameplay was altered in almost every possible place, with the game turning into a linearly progressing campaign where more and more items are unlocked the further the player progresses. Progress is gated behind Chapters, each focusing around a different dimension. 
+
+In order to beat the main campaign, you will have to dip your fingers in every content mod to at least some extent, being a bit of a change of pace from adventure packs which just focus on killing bosses and upgrading equipment with no real progression whatsoever. All equipment was also reworked, so the game isn't just about getting diamond armor and keeping it for the rest of the game. I mean you can still do that, but the mobs are likely going to slime you out if you do...
+
+Despite being partially labeled as an RPG, ADJ doesn't put much pressure on its lore. Outside of what's already written, you are free to make your own canons and stories, just like in vanilla Minecraft. It's a sandbox game after all, and I tried my best to keep that feeling all throughout the playthrough. The progression also isn't super strict - in every new chapter, you unlock at least a few new things to do, and you can choose the order in which you do them yourself.

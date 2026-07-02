@@ -17,6 +17,5 @@ de.keksuccino.fancymenu.mixin.mixins.common.client.MixinLocalPlayer
 de.keksuccino.fancymenu.mixin.mixins.common.client.MixinClientPacketListener
 de.keksuccino.fancymenu.mixin.mixins.common.client.MixinGameRenderer
 de.keksuccino.fancymenu.mixin.mixins.common.client.MixinMultiPlayerGameMode 
-de.keksuccino.fancymenu.mixin.mixins.common.server.MixinLivingEntity
 de.keksuccino.fancymenu.mixin.mixins.common.server.MixinServerLevel 
 de.keksuccino.fancymenu.mixin.mixins.common.server.MixinServerPlayer

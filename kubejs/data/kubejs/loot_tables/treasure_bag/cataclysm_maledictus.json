@@ -25,27 +25,21 @@
 			]
 		},
 		{
-			"rolls": {
-				"min": 4,
-				"max": 5
-			},
+			"rolls": 1,
 			"entries": [
 				{
 					"type": "minecraft:item",
 					"name": "cataclysm:cursium_ingot",
 					"quality": 4,
-					"functions": []
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "cataclysm:cursium_upgrade_smithing_template",
-					"quality": 3,
-					"functions": []
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 8,
+								"max": 12
+							}
+						}
+					]
 				}
 			]
 		}

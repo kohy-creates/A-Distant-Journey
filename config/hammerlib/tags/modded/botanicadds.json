@@ -14,7 +14,7 @@
             "botania:generating_special_flowers": {
                 "botanicadds:flowers/tempestea": true,
                 "botanicadds:flowers/vibrantia": true,
-                "botanicadds:flowers/energizera": true,
+                "botanicadds:flowers/energizera": false,
                 "botanicadds:flowers/rainute": true,
                 "botanicadds:flowers/glaciflora": true
             },
@@ -28,7 +28,7 @@
             "botania:petals": {"botanicadds:sculk_petal": true},
             "botania:special_floating_flowers": {
                 "botanicadds:flowers/floating/vibrantia": true,
-                "botanicadds:flowers/floating/energizera": true,
+                "botanicadds:flowers/floating/energizera": false,
                 "botanicadds:flowers/floating/necroidus": true,
                 "botanicadds:flowers/floating/tempestea": true,
                 "botanicadds:flowers/floating/apicaria": true,
@@ -46,7 +46,7 @@
             "botania:generating_special_flowers": {
                 "botanicadds:flowers/tempestea": true,
                 "botanicadds:flowers/vibrantia": true,
-                "botanicadds:flowers/energizera": true,
+                "botanicadds:flowers/energizera": false,
                 "botanicadds:flowers/rainute": true,
                 "botanicadds:flowers/glaciflora": true
             },
