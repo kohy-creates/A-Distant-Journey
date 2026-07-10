@@ -6,8 +6,6 @@
 		"obscure_api:penetration;2": "attributeslib:armor_shred;0",
 		"minecraft:generic.armor_toughness;0": "remove",
 		"forge:entity_reach;0": "remove",
-		"forge:entity_reach;1": "remove",
-		"forge:entity_reach;2": "remove",
 		"rediscovered:fire_resistance;1": "remove",
 		"rediscovered:explosion_resistance;1": "remove",
 		"galosphere:illager_resistance;0": "remove",
@@ -63,32 +61,32 @@
 				"minecraft:generic.armor"
 			]
 		},
-		"hybrid-aquatic:manglerfish_fin": {
+		"hybrid_aquatic:manglerfish_fin": {
 			"remove": [
 				"minecraft:generic.armor"
 			]
 		},
-		"hybrid-aquatic:manglerfish_lure": {
+		"hybrid_aquatic:manglerfish_lure": {
 			"remove": [
 				"minecraft:generic.armor"
 			]
 		},
-		"hybrid-aquatic:eel_scarf": {
+		"hybrid_aquatic:eel_scarf": {
 			"remove": [
 				"minecraft:generic.armor"
 			]
 		},
-		"hybrid-aquatic:moon_jellyfish_hat": {
+		"hybrid_aquatic:moon_jellyfish_hat": {
 			"remove": [
 				"minecraft:generic.armor"
 			]
 		},
-		"hybrid-aquatic:nautilus_helmet": {
+		"hybrid_aquatic:nautilus_helmet": {
 			"remove": [
 				"minecraft:generic.armor"
 			]
 		},
-		"hybrid-aquatic:nautilus_pauldrons": {
+		"hybrid_aquatic:nautilus_pauldrons": {
 			"remove": [
 				"minecraft:generic.armor"
 			]

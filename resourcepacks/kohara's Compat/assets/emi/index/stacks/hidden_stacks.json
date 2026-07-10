@@ -7475,6 +7475,107 @@
         "item:window_box:floating_snapdresson",
         "item:kubejs:celestial_emblem",
         "item:kubejs:azure_neodymium_dust",
-        "item:kubejs:scarlet_neodymium_dust"
+        "item:kubejs:scarlet_neodymium_dust",
+        "item:hybrid_aquatic:driftwood_raft",
+        "biome:hybrid_aquatic:tide_pools",
+        "biome:hybrid_aquatic:cold_trench",
+        "biome:hybrid_aquatic:coral_reef",
+        "biome:hybrid_aquatic:trench",
+        "biome:hybrid_aquatic:tropical_deep_coral_reef",
+        "biome:hybrid_aquatic:deep_coral_reef",
+        "biome:hybrid_aquatic:deep_warm_ocean",
+        "biome:hybrid_aquatic:tropical_river",
+        "biome:hybrid_aquatic:warm_trench",
+        "biome:hybrid_aquatic:frozen_trench",
+        "biome:hybrid_aquatic:sulfuric_caves",
+        "biome:hybrid_aquatic:seagrass_bed",
+        "biome:hybrid_aquatic:lukewarm_trench",
+        "biome:hybrid_aquatic:red_meadow",
+        "item:supplementaries:hybrid_aquatic/sign_post_driftwood",
+        "item:suppsquared:hybrid_aquatic/item_shelf_driftwood",
+        "item:v_slab_compat:hybrid_aquatic/driftwood_vertical_slab",
+        {
+            "type": "fluid",
+            "id": "create:potion",
+            "nbt": "{Bottle:\"REGULAR\",Potion:\"hybrid_aquatic:thorns\"}",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "id": "create:potion",
+            "nbt": "{Bottle:\"REGULAR\",Potion:\"hybrid_aquatic:bleeding\"}",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "id": "create:potion",
+            "nbt": "{Bottle:\"REGULAR\",Potion:\"hybrid_aquatic:blindness\"}",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "id": "create:potion",
+            "nbt": "{Bottle:\"REGULAR\",Potion:\"hybrid_aquatic:buoyancy\"}",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "id": "create:potion",
+            "nbt": "{Bottle:\"REGULAR\",Potion:\"hybrid_aquatic:clarity\"}",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "id": "create:potion",
+            "nbt": "{Bottle:\"REGULAR\",Potion:\"hybrid_aquatic:thalassophobia\"}",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "id": "create:potion",
+            "nbt": "{Bottle:\"REGULAR\",Potion:\"hybrid_aquatic:swimming\"}",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "id": "create:potion",
+            "nbt": "{Bottle:\"REGULAR\",Potion:\"hybrid_aquatic:major_luck\"}",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "id": "create:potion",
+            "nbt": "{Bottle:\"REGULAR\",Potion:\"hybrid_aquatic:corrosion\"}",
+            "amount": 1000
+        },
+        "item:hybrid_aquatic:oak_raft",
+        "item:hybrid_aquatic:spruce_raft",
+        "item:hybrid_aquatic:birch_raft",
+        "item:hybrid_aquatic:dark_oak_raft",
+        "item:hybrid_aquatic:jungle_raft",
+        "item:hybrid_aquatic:acacia_raft",
+        "item:hybrid_aquatic:mangrove_raft",
+        "item:hybrid_aquatic:cherry_raft",
+        "item:hybrid_aquatic:ominous_conch",
+        "item:hybrid_aquatic:shell_beast_spawn_egg",
+        "item:hybrid_aquatic:argonaut",
+        "item:hybrid_aquatic:comically_large_nautilus_shell",
+        "item:hybrid_aquatic:lionfish_spawn_egg",
+        "item:hybrid_aquatic:lionfish",
+        "item:hybrid_aquatic:lobster_spawn_egg",
+        "item:hybrid_aquatic:raw_lobster",
+        "item:hybrid_aquatic:cooked_lobster",
+        "item:hybrid_aquatic:raw_lobster_tail",
+        "item:hybrid_aquatic:cooked_lobster_tail",
+        "item:hybrid_aquatic:lobster_claw",
+        "item:hybrid_aquatic:comb_jelly_spawn_egg",
+        "item:hybrid_aquatic:hammerhead_shark_spawn_egg",
+        "item:hybrid_aquatic:blobfish_spawn_egg",
+        "item:hybrid_aquatic:blobfish",
+        "item:hybrid_aquatic:giant_squid_spawn_egg",
+        "item:hybrid_aquatic:sand_tiger_shark_spawn_egg",
+        "item:hybrid_aquatic:frilled_shark_spawn_egg",
+        "item:hybrid_aquatic:orca_spawn_egg",
+        "item:hybrid_aquatic:diving_weight"
     ]
 }

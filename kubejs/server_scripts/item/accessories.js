@@ -110,3 +110,11 @@ PlayerEvents.loggedIn(event => {
 		server.runCommandSilent(`/curios add accessory ${player.username} 1`);
 	}
 });
+
+// Event is not cancellable because why the fuck would it be
+// ItemEvents.pickedUp(event => {
+// 	const player = event.getPlayer();
+// 	if (player.isCuriosEquipped('alexscaves:heavyweight')) {
+// 		event.cancel();
+// 	}
+// });

@@ -6,6 +6,19 @@
 				"namespace": "^evilcraft$",
 				"path": "^mob_effect/paling$"
 			}
+		},
+		{
+			"type": "filter",
+			"pattern": {
+				"namespace": "^evilcraft$",
+				"path": "^mob_effect/paling$"
+			}
+		},
+		{
+			"type": "filter",
+			"pattern": {
+				"path": "^particle/.*$"
+			}
 		}
 	]
 }

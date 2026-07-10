@@ -189,7 +189,7 @@
         "type": "minecraft:squid",
         "maxCount": 4,
         "minCount": 1,
-        "weight": 30
+        "weight": 50
       }
     ]
   },

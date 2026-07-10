@@ -1116,20 +1116,20 @@
 
 ["Snow Golems"]
 	#Snow golems snowballs freeze entities hit. Only entity types in enhancedai:snow_golem/freezing_snowballs tag are affected by this feature.
-	"Enable Snow golems freezing snowballs" = true
+	"Enable Snow golems freezing snowballs" = false
 	#Makes snowballs not trigger invulnerability frames.
 	"Enable Snowballs invulnerability frames" = true
 	#Snow golems are healed when hit by snowballs. Only entity types in enhancedai:snow_golem/healed_by_snowballs tag are affected by this feature.
 	"Enable Snow golems healed by snowballs" = true
 	#Snow golems snowballs deal damage. Only entity types in enhancedai:snow_golem/damaging_snowballs tag are affected by this feature.
-	"Enable Snow golems damaging snowballs" = true
+	"Enable Snow golems damaging snowballs" = false
 
 	#Snow golems snowballs freeze entities hit. Only entity types in enhancedai:snow_golem/freezing_snowballs tag are affected by this feature.
 	["Snow Golems"."Snow golems freezing snowballs"]
 		#How many ticks the entity hit is frozen for.
 		#Range: > 0
 		Ticks = 30
-		"Stack freeze" = true
+		"Stack freeze" = false
 
 	#Snow golems are healed when hit by snowballs. Only entity types in enhancedai:snow_golem/healed_by_snowballs tag are affected by this feature.
 	["Snow Golems"."Snow golems healed by snowballs"]
@@ -1139,5 +1139,5 @@
 	#Snow golems snowballs deal damage. Only entity types in enhancedai:snow_golem/damaging_snowballs tag are affected by this feature.
 	["Snow Golems"."Snow golems damaging snowballs"]
 		#Range: 0.0 ~ 1.7976931348623157E308
-		Damage = 4.0
+		Damage = 0.5
 

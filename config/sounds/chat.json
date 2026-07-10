@@ -23,7 +23,7 @@
 	"mentionKeywords": [
 		"@kohara_"
 	],
-	"ignoreSystemChats": true,
+	"ignoreSystemChats": false,
 	"enableChatSoundCooldown": true,
 	"chatSoundCooldown": 0.05
 }

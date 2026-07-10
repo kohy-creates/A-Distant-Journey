@@ -4,8 +4,8 @@ ItemEvents.rightClicked(event => {
 		const player = event.getPlayer();
 		player.give(global.weightedRandom({
 			'air': 30,
-			'hybrid-aquatic:pearl': 6,
-			'hybrid-aquatic:black_pearl': 3,
+			'hybrid_aquatic:pearl': 6,
+			'hybrid_aquatic:black_pearl': 3,
 			'alexscaves:pearl': 1
 		}));
 		player.swing(event.getHand(), true);

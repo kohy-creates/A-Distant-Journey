@@ -182,7 +182,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 		#Range: 0.0 ~ 1.0
 		attackKnockback = 0.25
 		#Range: 0.0 ~ 1024.0
-		entityReach = 0.0
+		entityReach = 0.1
 		#Range: -10000 ~ 10000
 		aggro = 0
 
@@ -234,7 +234,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 		#Range: 0.0 ~ 1.0
 		attackKnockback = 0.25
 		#Range: 0.0 ~ 1024.0
-		entityReach = 0.0
+		entityReach = 0.1
 
 	[Attributes."Flesh Knuckles"]
 		#Range: 0 ~ 1024
@@ -274,7 +274,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 		#Range: 0.0 ~ 1.0
 		attackKnockback = 0.25
 		#Range: 0.0 ~ 1024.0
-		entityReach = 0.0
+		entityReach = 0.1
 
 	[Attributes."Molten Quiver"]
 		#Range: 0.0 ~ 10.0
@@ -320,7 +320,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 		#Range: 0.0 ~ 10.0
 		attackKnockback = 0.25
 		#Range: 0.0 ~ 1024.0
-		entityReach = 0.0
+		entityReach = 0.1
 
 	[Attributes."Putrid Scent"]
 		#Range: 0.0 ~ 10.0
@@ -398,7 +398,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 		#Range: 0.0 ~ 10.0
 		attackKnockback = 0.25
 		#Range: 0.0 ~ 1024.0
-		entityReach = 0.0
+		entityReach = 0.1
 
 	[Attributes."Treasure Magnet"]
 		#Range: 0.0 ~ 64.0

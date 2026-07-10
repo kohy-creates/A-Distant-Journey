@@ -8,6 +8,7 @@ if (Platform.isClientEnvironment()) {
 			let $BetterCombatClientEvents = Java.loadClass("net.bettercombat.api.client.BetterCombatClientEvents");
 			let $PlayerAttackStart = Java.loadClass("net.bettercombat.api.client.BetterCombatClientEvents$PlayerAttackStart");
 			let $PlayerAttackHit = Java.loadClass("net.bettercombat.api.client.BetterCombatClientEvents$PlayerAttackHit");
+			let $AttackRangeExtensions = Java.loadClass('net.bettercombat.api.client.AttackRangeExtensions');
 
 			// Register ATTACK_START
 			$BetterCombatClientEvents.ATTACK_START.register(
@@ -26,6 +27,8 @@ if (Platform.isClientEnvironment()) {
 					},
 				}),
 			);
+
+			$AttackRangeExtensions.register(ctx => global.registerRangeExtensions(ctx));
 		})();
 	});
 
@@ -69,5 +72,16 @@ if (Platform.isClientEnvironment()) {
 				}
 			}
 		})();
+	};
+
+	let $Modifier = Java.loadClass('net.bettercombat.api.client.AttackRangeExtensions$Modifier');
+	let $Operation = Java.loadClass('net.bettercombat.api.client.AttackRangeExtensions$Operation');
+	global.registerRangeExtensions = (ctx) => {
+		/** @type {Internal.Player_} */
+		let player = ctx.player();
+		let entityReach = player.getAttributeValue('forge:entity_reach');
+		let modifierValue = entityReach - 3.0;
+
+		return new $Modifier(modifierValue, $Operation.ADD);
 	};
 }

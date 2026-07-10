@@ -62,7 +62,12 @@
 		},
 		{
 			"id": "1.4.2",
-			"releasedAt": 1783035105000
+			"releasedAt": 1783035105000,
+			"updateType": "minor_breaking"
+		},
+		{
+			"id": "1.4.3",
+			"releasedAt": 1783685497000
 		}
 	]
 }

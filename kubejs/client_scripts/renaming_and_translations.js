@@ -365,7 +365,7 @@ ClientEvents.lang('en_us', event => {
 		'galosphere:palladium_ingot': 'Silver Ingot',
 		'galosphere:palladium_nugget': 'Silver Nugget',
 
-		'hybrid-aquatic:sulfur': 'Sulfur Dust',
+		'hybrid_aquatic:sulfur': 'Sulfur Dust',
 
 		'xercapaint:item_canvas': 'Painting Canvas (1x1)',
 		'xercapaint:item_canvas_long': 'Painting Canvas (2x1)',

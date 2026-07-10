@@ -137,7 +137,7 @@ const tiers = {
 		uses: 1234,
 		speed: 8.0,
 		attackDamageBonus: 3.5,
-		level: 4,
+		level: 3,
 		enchantmentValue: 16,
 		repairIngredient: '#c:palladium_ingots'
 	},
@@ -221,6 +221,22 @@ const tiers = {
 		enchantmentValue: 15,
 		repairIngredient: 'botania:rune_fire',
 	},
+	'valkyrum': {
+		uses: 8000,
+		speed: 8,
+		attackDamageBonus: 5.0,
+		level: 3,
+		enchantmentValue: 15,
+		repairIngredient: 'ancient_aether:valkyrum',
+	},
+	'divine': {
+		uses: 8000,
+		speed: 9,
+		attackDamageBonus: 5.0,
+		level: 3,
+		enchantmentValue: 25,
+		repairIngredient: '#ancient_aether:divine_repairing',
+	},
 };
 
 const blockTags = [
@@ -287,6 +303,8 @@ ItemEvents.modification(event => {
 	modifyTier('minecraft:diamond', 'diamond');
 	modifyTier('mythicmetals:star_platinum', 'star_platinum');
 	modifyTier('lost_aether_content', 'phoenix');
+	modifyTier('ancient_aether:valkyrum', 'valkyrum');
+	modifyTier('ancient_aether:divine', 'divine');
 
 	event.modify('mythicmetals:mythril_drill', item => {
 		item.tier = $TierSortingRegistry.byName('adj:mythril_drill');

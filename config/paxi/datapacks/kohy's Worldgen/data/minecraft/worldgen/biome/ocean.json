@@ -194,13 +194,13 @@
         "type": "minecraft:squid",
         "maxCount": 4,
         "minCount": 1,
-        "weight": 1
+        "weight": 60
       },
       {
         "type": "minecraft:dolphin",
         "maxCount": 2,
         "minCount": 1,
-        "weight": 1
+        "weight": 30
       }
     ]
   },

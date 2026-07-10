@@ -24,15 +24,15 @@
 			"ancient_aether:festive_swet": 10,
 			"born_in_chaos_v1:restless_spirit": 14,
 			"minecraft:player": 3,
-			"hybrid-aquatic:big_red_jellyfish": 10,
-			"hybrid-aquatic:blue_jellyfish": 10,
-			"hybrid-aquatic:box_jellyfish": 10,
-			"hybrid-aquatic:crown_jellyfish": 10,
-			"hybrid-aquatic:firework_jellyfish": 10,
-			"hybrid-aquatic:lions_mane_jellyfish": 10,
-			"hybrid-aquatic:nomura_jellyfish": 10,
+			"hybrid_aquatic:big_red_jellyfish": 10,
+			"hybrid_aquatic:blue_jellyfish": 10,
+			"hybrid_aquatic:box_jellyfish": 10,
+			"hybrid_aquatic:crown_jellyfish": 10,
+			"hybrid_aquatic:firework_jellyfish": 10,
+			"hybrid_aquatic:lions_mane_jellyfish": 10,
+			"hybrid_aquatic:nomura_jellyfish": 10,
 			"cataclysm:netherite_monstrosity": 5,
-			"hybrid-aquatic:sea_urchin": 10,
+			"hybrid_aquatic:sea_urchin": 10,
 			"lost_aether_content:aerwhale_king": 10,
 			"botania:doppleganger": 7,
 			"cataclysm:ignis": 7,
@@ -71,7 +71,7 @@
 		"iframes": 0,
 		"overrides": {
 			"minecraft:player": 3,
-			"hybrid-aquatic:sea_urchin": 10
+			"hybrid_aquatic:sea_urchin": 10
 		}
 	},
 	"minecraft:mob_projectile": {

@@ -288,7 +288,7 @@
 	"Hotbar Changer" = false
 	"Inventory Sorting" = false
 	"Item Sharing" = true
-	"Quick Armor Swapping" = true
+	"Quick Armor Swapping" = false
 
 	[management.automatic_tool_restock]
 		#Enchantments deemed important enough to have special priority when finding a replacement
@@ -1555,7 +1555,7 @@
 	"Auto Walk Keybind" = false
 	"Back Button Keybind" = true
 	"Buckets Show Inhabitants" = true
-	Camera = true
+	Camera = false
 	"Chest Searching" = false
 	"Elytra Indicator" = true
 	"Greener Grass" = false
@@ -1592,19 +1592,19 @@
 
 	[client.greener_grass]
 		"Affect Leaves" = true
-		"Affect Water" = false
+		"Affect Water" = true
 		"Block List" = ["minecraft:large_fern", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:fern", "minecraft:grass", "minecraft:potted_fern", "minecraft:sugar_cane", "environmental:giant_tall_grass", "valhelsia_structures:grass_block"]
 		"Leaves List" = ["minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:oak_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "atmospheric:rosewood_leaves", "atmospheric:morado_leaves", "atmospheric:yucca_leaves", "autumnity:maple_leaves", "environmental:willow_leaves", "environmental:hanging_willow_leaves", "minecraft:vine"]
 
 		[client.greener_grass.color_matrix]
-			R = [0.89, 0.0, 0.0]
-			G = [0.0, 1.1066666666666674, 0.0]
-			B = [0.0, 0.0, 1.0]
+			R = [1.0, 0.0, 0.0]
+			G = [0.0, 1.2, 0.0]
+			B = [0.0, 0.0, 0.9466666666666674]
 
 		[client.greener_grass.water_matrix]
-			R = [0.86, 0.0, 0.0]
-			G = [0.0, 1.0, 0.22]
-			B = [0.0, 0.0, 1.22]
+			R = [0.88, 0.0, 0.0]
+			G = [0.14666666666666742, 1.0933333333333326, 0.22]
+			B = [0.0, 0.0, 1.2666666666666675]
 
 	[client.improved_tooltips]
 		"Attribute Tooltips" = true
@@ -1612,7 +1612,7 @@
 		"Shulker Tooltips" = false
 		"Map Tooltips" = true
 		"Enchanting Tooltips" = false
-		"Fuel Time Tooltips" = true
+		"Fuel Time Tooltips" = false
 		"Shulker Box Use Colors" = true
 		"Shulker Box Require Shift" = false
 		"Map Require Shift" = false

@@ -83,7 +83,7 @@
 		[types.wood_type.beachparty]
 			palm = true
 
-		[types.wood_type.hybrid-aquatic]
+		[types.wood_type.hybrid_aquatic]
 			driftwood = true
 
 		[types.wood_type.endergetic]
@@ -847,8 +847,26 @@
 			phantom_purpur_bricks = true
 			phantom_purpur_squares = true
 
-		[types.cut_block_type.hybrid-aquatic]
+		[types.cut_block_type.hybrid_aquatic]
 			driftwood = true
+			white_sandstone = true
+			smooth_white_sandstone = true
+			cut_white_sandstone = true
+			red_brinestone = true
+			red_brinestone_brick = true
+			polished_red_brinestone = true
+			orange_brinestone = true
+			orange_brinestone_brick = true
+			polished_orange_brinestone = true
+			yellow_brinestone = true
+			yellow_brinestone_brick = true
+			polished_yellow_brinestone = true
+			schist = true
+			schist_brick = true
+			polished_schist = true
+			chimneystone = true
+			chimneystone_brick = true
+			polished_chimneystone = true
 
 		[types.cut_block_type.endergetic]
 			poise = true

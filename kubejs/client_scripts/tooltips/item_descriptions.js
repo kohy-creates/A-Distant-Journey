@@ -2,7 +2,7 @@
 const TooltipEdits = {
 	TIP_CONFIG: [
 		{
-			items: 'hybrid-aquatic:dragonfish',
+			items: 'hybrid_aquatic:dragonfish',
 			text: '\'Not to be confused with Dragon Fish\''
 		},
 		{

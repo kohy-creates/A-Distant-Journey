@@ -46,7 +46,7 @@
 	[client.preference]
 		#Toggles the rendering of the debris cloud surrounding the Wither Storm.
 		#Default: true
-		renderDebrisCloud = true
+		renderDebrisCloud = false
 		#Toggles the rendering of debris rings that surround the Wither Storm (much more performant than the debris cloud).
 		#Default: true
 		renderDebrisRings = true

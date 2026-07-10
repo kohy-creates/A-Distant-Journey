@@ -528,5 +528,6 @@
 		"quark:hollow_ancient_log": "quark:ancient_log",
 
 		"galosphere:mole_burrow": "galosphere:tuff_dirt",
+		"hybrid_aquatic:crystalline_sulfur": "kubejs:sulfur"
 	}
 }

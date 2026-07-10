@@ -778,22 +778,32 @@ LootJS.modifiers((event) => {
 		})
 		.pool(pool => {
 			pool.randomChance(0.1).addWeightedLoot([
-				LootEntry.of('hybrid-aquatic:basking_shark_plushie'),
-				LootEntry.of('hybrid-aquatic:bull_shark_plushie'),
-				LootEntry.of('hybrid-aquatic:frilled_shark_plushie'),
-				LootEntry.of('hybrid-aquatic:great_white_shark_plushie'),
-				LootEntry.of('hybrid-aquatic:hammerhead_shark_plushie'),
-				LootEntry.of('hybrid-aquatic:thresher_shark_plushie'),
-				LootEntry.of('hybrid-aquatic:tiger_shark_plushie'),
-				LootEntry.of('hybrid-aquatic:whale_shark_plushie'),
+				LootEntry.of('hybrid_aquatic:basking_shark_plushie'),
+				LootEntry.of('hybrid_aquatic:bull_shark_plushie'),
+				LootEntry.of('hybrid_aquatic:frilled_shark_plushie'),
+				LootEntry.of('hybrid_aquatic:great_white_shark_plushie'),
+				LootEntry.of('hybrid_aquatic:hammerhead_shark_plushie'),
+				LootEntry.of('hybrid_aquatic:thresher_shark_plushie'),
+				LootEntry.of('hybrid_aquatic:tiger_shark_plushie'),
+				LootEntry.of('hybrid_aquatic:whale_shark_plushie'),
 			]);
 		})
 		.pool(pool => {
 			pool.randomChance(0.15).addWeightedLoot([
-				LootEntry.of('hybrid-aquatic:manglerfish_fin'),
-				LootEntry.of('hybrid-aquatic:manglerfish_lure'),
-				LootEntry.of('hybrid-aquatic:eel_scarf'),
-				LootEntry.of('hybrid-aquatic:moon_jellyfish_hat'),
+				LootEntry.of('hybrid_aquatic:manglerfish_fin'),
+				LootEntry.of('hybrid_aquatic:manglerfish_lure'),
+				LootEntry.of('hybrid_aquatic:eel_scarf'),
+				LootEntry.of('hybrid_aquatic:moon_jellyfish_hat'),
+			]);
+		})
+		.pool(pool => {
+			pool.randomChance(0.5).addWeightedLoot([
+				LootEntry.of('hybrid_aquatic:pink_hatxolotl'),
+				LootEntry.of('hybrid_aquatic:cyan_hatxolotl'),
+				LootEntry.of('hybrid_aquatic:blue_hatxolotl'),
+				LootEntry.of('hybrid_aquatic:brown_hatxolotl'),
+				LootEntry.of('hybrid_aquatic:gold_hatxolotl'),
+
 			]);
 		})
 		.pool(pool => {

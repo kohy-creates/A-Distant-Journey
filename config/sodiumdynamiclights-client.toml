@@ -4,7 +4,7 @@
 	#Allowed Values: OFF, SLOW, FAST, REALTIME
 	mode = "REALTIME"
 	#Enable entities light source.
-	entities = true
+	entities = false
 	#Enable first-person player light source.
 	self = true
 	#Enable block entities light source.
@@ -13,8 +13,8 @@
 	water_sensitive_check = true
 	#TNT lighting mode. May be off, simple or fancy.
 	#Allowed Values: OFF, SIMPLE, FANCY
-	tnt = "SIMPLE"
+	tnt = "OFF"
 	#Creeper lighting mode. May be off, simple or fancy.
 	#Allowed Values: OFF, SIMPLE, FANCY
-	creeper = "SIMPLE"
+	creeper = "OFF"
 
