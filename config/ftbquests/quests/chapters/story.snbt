@@ -206,14 +206,6 @@
 			y: 9.5d
 		}
 		{
-			height: 2.0d
-			image: "tide:block/angling_table_top"
-			rotation: 0.0d
-			width: 2.0d
-			x: 6.5d
-			y: 8.0d
-		}
-		{
 			dependency: "20130F300D432015"
 			height: 1.75d
 			image: "minecraft:block/beacon_glass"
@@ -999,55 +991,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["4C1D62C4B13A0CE0"]
-			description: [
-				"Yes, Chainmail. It is craftable in &6&lADJ&r and partially replaced Iron Armor in the early game."
-				""
-				"Iron Armor requires &7&lIron Sheets&r to craft. Look in your recipe browser to learn how to craft those."
-			]
-			icon: {
-				Count: 1
-				id: "minecraft:chainmail_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "3EFE26A55AA562AB"
-			subtitle: "Protect yourself with a piece of Chainmail armor"
-			tasks: [{
-				id: "5DECCCBD89E1226E"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:chainmail_helmet"
-							}
-							{
-								Count: 1b
-								id: "minecraft:chainmail_boots"
-							}
-							{
-								Count: 1b
-								id: "minecraft:chainmail_leggings"
-							}
-							{
-								Count: 1b
-								id: "minecraft:chainmail_chestplate"
-							}
-						]
-					}
-				}
-				title: "Any piece of Chainmal Armor"
-				type: "item"
-			}]
-			title: "Suit Up"
-			x: 12.5d
-			y: 1.0d
-		}
-		{
 			dependencies: [
 				"5C8C8742F4C523FA"
 				"43D3C4FD06261327"
@@ -1648,33 +1591,7 @@
 			}]
 			title: "Fishy Business"
 			x: 5.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["1FA64BA25CA7A8D3"]
-			id: "0B86DFF247F19E41"
-			subtitle: "Craft a Fishing Journal to document your fishy adventure"
-			tasks: [{
-				id: "62F06F906F24BC53"
-				item: "tide:fishing_journal"
-				type: "item"
-			}]
-			title: "Gotta Catch 'Em All!"
-			x: 7.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["1FA64BA25CA7A8D3"]
-			id: "25A6D4B901F93DE5"
-			subtitle: "Craft an Angling Table to add upgrades to your Fishing Rod"
-			tasks: [{
-				id: "440FAA7491C64FEE"
-				item: "tide:angling_table"
-				type: "item"
-			}]
-			title: "Competetive Fishing"
-			x: 6.5d
-			y: 8.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7D5AA020D867BC37"]
@@ -1976,27 +1893,6 @@
 			title: "From The Depths"
 			x: 18.5d
 			y: 1.5d
-		}
-		{
-			dependencies: ["1FA64BA25CA7A8D3"]
-			icon: "minecraft:cod_bucket"
-			id: "589841D213C4466E"
-			subtitle: "Catch a Fish into a Bucket"
-			tasks: [{
-				id: "3FA0D28362112650"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:buckets/entity_water"
-					}
-				}
-				title: "Any Fish in a Bucket"
-				type: "item"
-			}]
-			title: "Tactical Fishing"
-			x: 5.5d
-			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -4695,8 +4591,8 @@
 				type: "item"
 			}]
 			title: "Hooked!"
-			x: 10.5d
-			y: 4.5d
+			x: 12.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5AEA2A64181AED93"]
