@@ -1,6 +1,6 @@
 {
-  "config_version": "2.0.25",
-  "config_datetime": "2026-05-31_03-28-47",
+  "config_version": "2.0.28",
+  "config_datetime": "2026-07-12_23-52-36",
   "general": {
     "disable_all_structures": false,
     "prevent_structure_overlap": true,
@@ -28,7 +28,9 @@
       "is_disabled": false,
       "override_global_flatness_check": false,
       "enable_flatness_check": true,
-      "flatness_check_allow_non_solid_blocks": false
+      "flatness_check_allow_non_solid_blocks": false,
+      "flatness_check_mode": "AUTO",
+      "flatness_check_max_height_difference": 21
     },
     {
       "name": "witherstormmod",
@@ -577,7 +579,57 @@
       }
     },
     {
-      "spacing": 80,
+      "spacing": 30,
+      "separation": 20,
+      "name": "cataclysm:abandoned_structures",
+      "is_disabled": false,
+      "salt": 514659267,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "structure_weights": {
+        "cataclysm:abandoned_temple": 1,
+        "cataclysm:abandoned_spire": 1,
+        "cataclysm:abandoned_village": 1
+      }
+    },
+    {
+      "spacing": 60,
+      "separation": 50,
+      "name": "cataclysm:acropolis",
+      "is_disabled": false,
+      "salt": 913530101,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "structure_weights": {
+        "cataclysm:acropolis": 1
+      }
+    },
+    {
+      "spacing": 24,
+      "separation": 12,
+      "name": "cataclysm:amethyst_nest",
+      "is_disabled": false,
+      "salt": 14325760,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "structure_weights": {
+        "cataclysm:amethyst_nest": 1
+      }
+    },
+    {
+      "spacing": 60,
+      "separation": 50,
+      "name": "cataclysm:ancient_factory",
+      "is_disabled": false,
+      "salt": 319514301,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "structure_weights": {
+        "cataclysm:ancient_factory": 1
+      }
+    },
+    {
+      "spacing": 60,
       "separation": 50,
       "name": "cataclysm:burning_arena",
       "is_disabled": false,
@@ -589,20 +641,69 @@
       }
     },
     {
+      "spacing": 60,
+      "separation": 50,
+      "name": "cataclysm:cursed_pyramid",
+      "is_disabled": false,
+      "salt": 577299997,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "structure_weights": {
+        "cataclysm:cursed_pyramid": 1
+      }
+    },
+    {
+      "spacing": 30,
+      "separation": 20,
+      "name": "cataclysm:desert_structures",
+      "is_disabled": false,
+      "salt": 31547671,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "structure_weights": {
+        "cataclysm:desert_occupied_village": 1,
+        "cataclysm:desert_site": 1
+      }
+    },
+    {
       "spacing": 80,
-      "separation": 79,
+      "separation": 50,
       "name": "cataclysm:frosted_prison",
       "is_disabled": false,
       "salt": 1577172143,
       "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
+      "override_global_spacing_and_separation_modifier": true,
       "structure_weights": {
         "cataclysm:frosted_prison": 1
       }
     },
     {
-      "spacing": 60,
-      "separation": 50,
+      "spacing": 50,
+      "separation": 25,
+      "name": "cataclysm:ruined_citadel",
+      "is_disabled": false,
+      "salt": 367895146,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "structure_weights": {
+        "cataclysm:ruined_citadel": 1
+      }
+    },
+    {
+      "spacing": 50,
+      "separation": 30,
+      "name": "cataclysm:small_integrated_cataclysm",
+      "is_disabled": false,
+      "salt": 166104345,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "structure_weights": {
+        "cataclysm:kobolediator_shrine": 1
+      }
+    },
+    {
+      "spacing": 50,
+      "separation": 40,
       "name": "cataclysm:soul_black_smith",
       "is_disabled": false,
       "salt": 1984567320,
@@ -610,6 +711,18 @@
       "override_global_spacing_and_separation_modifier": true,
       "structure_weights": {
         "cataclysm:soul_black_smith": 1
+      }
+    },
+    {
+      "spacing": 70,
+      "separation": 60,
+      "name": "cataclysm:sunken_city",
+      "is_disabled": false,
+      "salt": 1673928450,
+      "frequency": 1.0,
+      "override_global_spacing_and_separation_modifier": true,
+      "structure_weights": {
+        "cataclysm:sunken_city": 1
       }
     },
     {

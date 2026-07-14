@@ -6,14 +6,24 @@
 	group: "12494D4A5CAA903A"
 	icon: "rediscovered:raw_fish"
 	id: "45C43AE984322757"
-	images: [{
-		height: 2.0d
-		image: "tide:block/angling_table_top"
-		rotation: 0.0d
-		width: 2.0d
-		x: -1.5d
-		y: -3.5d
-	}]
+	images: [
+		{
+			height: 2.0d
+			image: "tide:block/angling_table_top"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			height: 19.0d
+			image: "tide:textures/gui/journal/journal_bg.png"
+			rotation: 0.0d
+			width: 28.0d
+			x: -0.5d
+			y: 6.5d
+		}
+	]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -27,7 +37,7 @@
 				type: "item"
 			}]
 			title: "Gotta Catch 'Em All!"
-			x: 0.5d
+			x: 2.0d
 			y: -1.5d
 		}
 		{
@@ -40,7 +50,7 @@
 				type: "item"
 			}]
 			title: "Competetive Fishing"
-			x: -1.5d
+			x: 0.0d
 			y: -3.5d
 		}
 		{
@@ -61,17 +71,18 @@
 				type: "item"
 			}]
 			title: "Tactical Fishing"
-			x: -3.5d
+			x: -2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1FA64BA25CA7A8D3"]
+			description: ["This category is unlocked automatically whenever you complete the &eFishy Bussiness&r achievement in the main &2Story&r tab!"]
 			disable_toast: true
 			icon: "rediscovered:raw_fish"
 			id: "0D31FCDD5D044B38"
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "A magical journey, full of... fish..."
+			subtitle: "\"Mój stary był fanatyiem wędkarstwa...\""
 			tasks: [{
 				advancement: "adj:fish_something"
 				criterion: ""
@@ -81,8 +92,2115 @@
 				type: "advancement"
 			}]
 			title: "Let's Go Fishing!"
-			x: -1.5d
+			x: 0.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "26DCBC28B83DDD60"
+			tasks: [{
+				id: "57C9BAB5C5CBC7AC"
+				item: {
+					Count: 1
+					id: "tide:iron_tetra"
+					tag: {
+						FishLength: 3.65d
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "45B3AD567A55CDCC"
+			tasks: [{
+				id: "26DACA99B404A485"
+				item: "minecraft:salmon"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "29B46C0D81D2F77F"
+			tasks: [{
+				id: "5479FC833B3220F0"
+				item: "minecraft:pufferfish"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "44257BC8EAF00F52"
+			tasks: [{
+				id: "1BE8E6C5D7F4C3BB"
+				item: "cataclysm:lionfish"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "304201B1C753D56E"
+			tasks: [{
+				id: "7684F3CE26346D12"
+				item: {
+					Count: 1
+					id: "tide:carp"
+					tag: {
+						FishLength: 60.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "192FB159D0F96287"
+			tasks: [{
+				id: "4AF0980EE52DD131"
+				item: {
+					Count: 1
+					id: "tide:yellow_perch"
+					tag: {
+						FishLength: 22.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "63B7581EAA968CD8"
+			tasks: [{
+				id: "3E3228C424D3AD7E"
+				item: {
+					Count: 1
+					id: "tide:black_crappie"
+					tag: {
+						FishLength: 30.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "662CCCA65ACDDF1D"
+			tasks: [{
+				id: "0A571C63E7657A6D"
+				item: {
+					Count: 1
+					id: "tide:white_crappie"
+					tag: {
+						FishLength: 25.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "24ACFD4BC27B69E6"
+			tasks: [{
+				id: "7EA12C06A5573150"
+				item: {
+					Count: 1
+					id: "tide:rainbow_trout"
+					tag: {
+						FishLength: 62.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "2627A33A8E6FB9E4"
+			tasks: [{
+				id: "671F2926055EA75B"
+				item: {
+					Count: 1
+					id: "tide:pike"
+					tag: {
+						FishLength: 70.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "31352399F7F6C2B8"
+			tasks: [{
+				id: "069A9815457ECF73"
+				item: {
+					Count: 1
+					id: "tide:arapaima"
+					tag: {
+						FishLength: 290.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "4350783C019D045E"
+			tasks: [{
+				id: "7E91F6FAD3649E95"
+				item: {
+					Count: 1
+					id: "tide:mirage_catfish"
+					tag: {
+						FishLength: 57.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "4734BCA7CFCE4511"
+			rewards: [{
+				id: "50A3A0D5C2528A41"
+				item: "hybrid_aquatic:tiger_shark_plushie"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B59D4D1AFA258D0"
+				item: {
+					Count: 1
+					id: "tide:sand_tiger_shark"
+					tag: {
+						FishLength: 245.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "7749472B610C1422"
+			tasks: [{
+				id: "44722E0957A56B17"
+				item: {
+					Count: 1
+					id: "tide:frostbite_flounder"
+					tag: {
+						FishLength: 47.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "64F993BEAA5008DB"
+			tasks: [{
+				id: "09D59D70D7C25DAE"
+				item: {
+					Count: 1
+					id: "tide:sturgeon"
+					tag: {
+						FishLength: 195.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "682C4FF8EF1D7706"
+			tasks: [{
+				id: "4A08FB00D4F68D1A"
+				item: {
+					Count: 1
+					id: "tide:bull_shark"
+					tag: {
+						FishLength: 237.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "7B4BB9059DD7BF8E"
+			tasks: [{
+				id: "34E29DECCBC63D2E"
+				item: {
+					Count: 1
+					id: "tide:ocean_perch"
+					tag: {
+						FishLength: 45.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "3230ED231B97840E"
+			tasks: [{
+				id: "22DD9B74252A1577"
+				item: {
+					Count: 1
+					id: "tide:red_snapper"
+					tag: {
+						FishLength: 45.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "2DC2C697527E17E7"
+			tasks: [{
+				id: "5503BF6E2B635B33"
+				item: {
+					Count: 1
+					id: "tide:flounder"
+					tag: {
+						FishLength: 47.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "6204FA52F1B2C9BA"
+			tasks: [{
+				id: "77B9D81918F668B2"
+				item: {
+					Count: 1
+					id: "tide:anchovy"
+					tag: {
+						FishLength: 9.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "5EE175E991F5C5EC"
+			tasks: [{
+				id: "5FB6548D27E38019"
+				item: {
+					Count: 1
+					id: "tide:brook_trout"
+					tag: {
+						FishLength: 40.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "13BF9CEE8A57B0A0"
+			tasks: [{
+				id: "4D28B44D91797D54"
+				item: {
+					Count: 1
+					id: "tide:largemouth_bass"
+					tag: {
+						FishLength: 50.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "366BEDE102201283"
+			tasks: [{
+				id: "19CB120D36BBA8D0"
+				item: {
+					Count: 1
+					id: "tide:smallmouth_bass"
+					tag: {
+						FishLength: 43.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "743AF55219F91859"
+			tasks: [{
+				id: "25689890E274B555"
+				item: {
+					Count: 1
+					id: "tide:guppy"
+					tag: {
+						FishLength: 5.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "43BF32B25D81E0C3"
+			tasks: [{
+				id: "0EAA5E3ECA36203B"
+				item: {
+					Count: 1
+					id: "tide:bluegill"
+					tag: {
+						FishLength: 22.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "0D3E2D33B8EAD905"
+			tasks: [{
+				id: "5B133AF1A899B180"
+				item: {
+					Count: 1
+					id: "tide:walleye"
+					tag: {
+						FishLength: 55.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "4044F42027174442"
+			tasks: [{
+				id: "55D626D1710D7CF6"
+				item: {
+					Count: 1
+					id: "tide:mooneye"
+					tag: {
+						FishLength: 29.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "746C91E3F876580A"
+			tasks: [{
+				id: "6F7922EC50A13E15"
+				item: {
+					Count: 1
+					id: "tide:spore_stalker"
+					tag: {
+						FishLength: 45.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "16A0BFFB009CF0ED"
+			tasks: [{
+				id: "71F603EC666E6B2A"
+				item: {
+					Count: 1
+					id: "tide:blossom_bass"
+					tag: {
+						FishLength: 50.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "796BA63DB6367FB8"
+			tasks: [{
+				id: "29B32167C679CB0D"
+				item: {
+					Count: 1
+					id: "tide:tuna"
+					tag: {
+						FishLength: 120.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "76D572180B22EA2A"
+			tasks: [{
+				id: "7A6ACEDBAD959C03"
+				item: {
+					Count: 1
+					id: "tide:mackerel"
+					tag: {
+						FishLength: 37.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "0039F1FC728B8B94"
+			tasks: [{
+				id: "7684D53D16092FBE"
+				item: {
+					Count: 1
+					id: "tide:snook"
+					tag: {
+						FishLength: 53.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "2E04B05DF84A407F"
+			tasks: [{
+				id: "654886D5C219EB71"
+				item: {
+					Count: 1
+					id: "tide:angelfish"
+					tag: {
+						FishLength: 11.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "13FD4A9E1D0CFCF1"
+			tasks: [{
+				id: "61FA8BAE8D3A24B5"
+				item: "tide:mahi_mahi"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "4F18B74B2D779103"
+			tasks: [{
+				id: "2EC0C7AA5E088FE5"
+				item: {
+					Count: 1
+					id: "tide:catfish"
+					tag: {
+						FishLength: 57.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "68E465A800EDF56A"
+			tasks: [{
+				id: "7A6449CD5574DE35"
+				item: {
+					Count: 1
+					id: "tide:sailfish"
+					tag: {
+						Damage: 0
+						FishLength: 225.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "701844C377D38DDA"
+			tasks: [{
+				id: "2C36E1E990AEA66F"
+				item: {
+					Count: 1
+					id: "tide:swordfish"
+					tag: {
+						Damage: 0
+						FishLength: 235.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "066002B19E190522"
+			tasks: [{
+				id: "2ECDF00242A4E235"
+				item: {
+					Count: 1
+					id: "tide:manta_ray"
+					tag: {
+						FishLength: 525.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "65270603524D7AAE"
+			tasks: [{
+				id: "47783624B0F655F4"
+				item: {
+					Count: 1
+					id: "tide:aquathorn"
+					tag: {
+						FishLength: 38.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "36A7409113BD136F"
+			tasks: [{
+				id: "5046FCC63F4EC9CA"
+				item: {
+					Count: 1
+					id: "tide:neptune_koi"
+					tag: {
+						FishLength: 45.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "267BFC435D5B5A6F"
+			tasks: [{
+				id: "26E902780EA77438"
+				item: {
+					Count: 1
+					id: "tide:deep_grouper"
+					tag: {
+						FishLength: 65.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "3D099EFFF7862439"
+			tasks: [{
+				id: "22C43DE4A662F75E"
+				item: {
+					Count: 1
+					id: "tide:shadow_snapper"
+					tag: {
+						FishLength: 50.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "16C978CEE576BCA0"
+			tasks: [{
+				id: "174BEBF54B587192"
+				item: {
+					Count: 1
+					id: "tide:glowfish"
+					tag: {
+						FishLength: 65.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "7740431624A780A6"
+			tasks: [{
+				id: "245034ED4891DB75"
+				item: {
+					Count: 1
+					id: "tide:anglerfish"
+					tag: {
+						FishLength: 27.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "732F3DD4A4AF1783"
+			tasks: [{
+				id: "564205C6D8A16615"
+				item: {
+					Count: 1
+					id: "tide:abyss_angler"
+					tag: {
+						FishLength: 27.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "462EFDE09F540095"
+			tasks: [{
+				id: "14B08EB899DDA315"
+				item: "minecraft:cod"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "28A50D55F4CB18CD"
+			tasks: [{
+				id: "19FF990EFCE654AA"
+				item: {
+					Count: 1
+					id: "tide:lapis_lanternfish"
+					tag: {
+						FishLength: 10.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "474A07A5A625AEA2"
+			tasks: [{
+				id: "210EA25E94A6C247"
+				item: {
+					Count: 1
+					id: "tide:crystal_shrimp"
+					tag: {
+						FishLength: 6.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "0352A914BAEF9F47"
+			tasks: [{
+				id: "764F742EA56ACA37"
+				item: {
+					Count: 1
+					id: "tide:dripstone_darter"
+					tag: {
+						FishLength: 45.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "67B591A664E380E4"
+			tasks: [{
+				id: "01352A7128044241"
+				item: {
+					Count: 1
+					id: "tide:cave_eel"
+					tag: {
+						FishLength: 102.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "4BA7B9165566636E"
+			rewards: [{
+				id: "66FDBA1DFD741486"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "5494A88A4E3911F6"
+				item: {
+					Count: 1
+					id: "tide:shooting_starfish"
+					tag: {
+						FishLength: 77.5d
+					}
+				}
+				type: "item"
+			}]
+			title: "<neon>Shooting Starfish"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "17E3707900BE627E"
+			tasks: [{
+				id: "0DD9CEEB5BCAF772"
+				item: {
+					Count: 1
+					id: "tide:uranias_pisces"
+					tag: {
+						FishLength: 200.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "1EAFF5E5CB7A2F63"
+			tasks: [{
+				id: "1D4A92D94FFB87AD"
+				item: {
+					Count: 1
+					id: "tide:saturn_cuttlefish"
+					tag: {
+						FishLength: 105.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "18CF709BF2119235"
+			tasks: [{
+				id: "496E2040DA4EEC74"
+				item: {
+					Count: 1
+					id: "tide:pluto_snail"
+					tag: {
+						FishLength: 15.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "64CBCACBE4D5F0FB"
+			tasks: [{
+				id: "466B033C071245D2"
+				item: {
+					Count: 1
+					id: "tide:sun_emblem"
+					tag: {
+						FishLength: 55.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "7F3899D5FE9B17E5"
+			tasks: [{
+				id: "3F3D96612005DEAE"
+				item: {
+					Count: 1
+					id: "tide:marstilus"
+					tag: {
+						FishLength: 112.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "05CA9AEB2322BD3E"
+			rewards: [{
+				id: "38FA18459202995B"
+				item: "hybrid_aquatic:great_white_shark_plushie"
+				type: "item"
+			}]
+			tasks: [{
+				id: "031E975EEA86B44A"
+				item: {
+					Count: 1
+					id: "tide:great_white_shark"
+					tag: {
+						FishLength: 430.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "009AAB1394B2B3E0"
+			tasks: [{
+				id: "6E62496169E14083"
+				item: {
+					Count: 1
+					id: "tide:coelacanth"
+					tag: {
+						FishLength: 165.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "19E0BA72A579262F"
+			tasks: [{
+				id: "4424A1BE5ECA42F8"
+				item: {
+					Count: 1
+					id: "tide:cave_crawler"
+					tag: {
+						FishLength: 52.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "427FA8EEC239778E"
+			tasks: [{
+				id: "27E1EDD1F925624A"
+				item: {
+					Count: 1
+					id: "tide:luminescent_jellyfish"
+					tag: {
+						FishLength: 45.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "02CCFD87BE5165FE"
+			tasks: [{
+				id: "367296DD17A46EAE"
+				item: {
+					Count: 1
+					id: "tide:sleepy_carp"
+					tag: {
+						FishLength: 60.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "3537A52DF9907B86"
+			tasks: [{
+				id: "1FD744C1C1F41091"
+				item: {
+					Count: 1
+					id: "tide:bedrock_bug"
+					tag: {
+						FishLength: 3.75d
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "6227F949F4260801"
+			tasks: [{
+				id: "61C1E595BB49B378"
+				item: {
+					Count: 1
+					id: "tide:incandescent_larva"
+					tag: {
+						FishLength: 3.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "24218A48E4413A11"
+			tasks: [{
+				id: "27DCB52485490076"
+				item: {
+					Count: 1
+					id: "tide:midas_fish"
+					tag: {
+						FishLength: 65.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "5021A1DE595BDE8C"
+			tasks: [{
+				id: "34B7DB485C856EC2"
+				item: {
+					Count: 1
+					id: "tide:devils_hole_pupfish"
+					tag: {
+						FishLength: 2.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "53869B9758242CCF"
+			tasks: [{
+				id: "4BB92CEB7D282966"
+				item: {
+					Count: 1
+					id: "tide:echo_snapper"
+					tag: {
+						FishLength: 75.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "483A3E334FEE3456"
+			tasks: [{
+				id: "1DE6460C54F8E53F"
+				item: {
+					Count: 1
+					id: "tide:chasm_eel"
+					tag: {
+						FishLength: 150.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "6B43451E2AE9ACBF"
+			tasks: [{
+				id: "367010B35E97137C"
+				item: {
+					Count: 1
+					id: "tide:bedrock_tetra"
+					tag: {
+						FishLength: 3.65d
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "6847A52DF5E51C73"
+			tasks: [{
+				id: "3B3407832145CE05"
+				item: {
+					Count: 1
+					id: "tide:gilded_minnow"
+					tag: {
+						FishLength: 11.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "4F54503BC15347A4"
+			tasks: [{
+				id: "6966CA581503058F"
+				item: {
+					Count: 1
+					id: "tide:crystalline_carp"
+					tag: {
+						FishLength: 60.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "04EE18FDFB8CDAE8"
+			tasks: [{
+				id: "720885F9D6445698"
+				item: {
+					Count: 1
+					id: "tide:violet_carp"
+					tag: {
+						FishLength: 72.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "139F41B3FBAF083A"
+			tasks: [{
+				id: "6885DA499FF7182F"
+				item: {
+					Count: 1
+					id: "tide:endergazer"
+					tag: {
+						FishLength: 30.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "7C46E47BA807531F"
+			tasks: [{
+				id: "478B57F3F059E157"
+				item: {
+					Count: 1
+					id: "tide:ender_glider"
+					tag: {
+						FishLength: 59.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "31674B88338ED0E8"
+			tasks: [{
+				id: "164126EA6EE24651"
+				item: {
+					Count: 1
+					id: "tide:chorus_cod"
+					tag: {
+						FishLength: 65.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "3593250333784AA8"
+			tasks: [{
+				id: "14A70022EA32B3BA"
+				item: {
+					Count: 1
+					id: "tide:enderfin"
+					tag: {
+						FishLength: 45.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "71347CBF05AAF4A0"
+			tasks: [{
+				id: "02D8762DAA6846D9"
+				item: {
+					Count: 1
+					id: "tide:amber_rockfish"
+					tag: {
+						FishLength: 47.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "793ED3C887CA13A4"
+			tasks: [{
+				id: "72CB7903587A19B0"
+				item: {
+					Count: 1
+					id: "tide:pale_clubfish"
+					tag: {
+						FishLength: 52.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "406913D40259BC24"
+			tasks: [{
+				id: "39CBE0EDF9E5773D"
+				item: {
+					Count: 1
+					id: "tide:blazing_swordfish"
+					tag: {
+						Damage: 0
+						FishLength: 235.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "6B96205072EB660B"
+			tasks: [{
+				id: "384C3484F075BFF4"
+				item: {
+					Count: 1
+					id: "tide:witherfin"
+					tag: {
+						FishLength: 32.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "37BFE8CD311747B9"
+			tasks: [{
+				id: "2D3555948E0E684A"
+				item: {
+					Count: 1
+					id: "tide:soulscale"
+					tag: {
+						FishLength: 47.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "074BC37C44396495"
+			tasks: [{
+				id: "71B1DA195890EDF3"
+				item: {
+					Count: 1
+					id: "tide:warped_guppy"
+					tag: {
+						FishLength: 5.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "4F796D598ADEA5FA"
+			tasks: [{
+				id: "5F48665F7F86A28C"
+				item: {
+					Count: 1
+					id: "tide:volcano_tuna"
+					tag: {
+						FishLength: 62.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "1ED32B64D86CEAC0"
+			tasks: [{
+				id: "1A30CAC1405DC062"
+				item: {
+					Count: 1
+					id: "tide:ash_perch"
+					tag: {
+						FishLength: 22.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "4448023DA805BFC6"
+			tasks: [{
+				id: "1A669094220C7295"
+				item: {
+					Count: 1
+					id: "tide:magma_mackerel"
+					tag: {
+						FishLength: 37.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "492D3381EB3BC55D"
+			tasks: [{
+				id: "0E52240CC6E831EB"
+				item: {
+					Count: 1
+					id: "tide:darkness_eater"
+					tag: {
+						FishLength: 200.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "45C49698527B68E6"
+			tasks: [{
+				id: "7335B68C5ADBEC11"
+				item: {
+					Count: 1
+					id: "tide:vengeance"
+					tag: {
+						FishLength: 65.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "5ED49E9954450739"
+			tasks: [{
+				id: "1F13D5AC555ABF52"
+				item: {
+					Count: 1
+					id: "tide:deep_blue"
+					tag: {
+						FishLength: 51.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "07F722B90DAA1848"
+			tasks: [{
+				id: "66914FE10D5BD367"
+				item: {
+					Count: 1
+					id: "tide:blue_neonfish"
+					tag: {
+						FishLength: 27.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "0264BCBD20B09E84"
+			tasks: [{
+				id: "56C258DAA3E40C50"
+				item: {
+					Count: 1
+					id: "tide:judgment_fish"
+					tag: {
+						FishLength: 60.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "178CE555FF8C5782"
+			tasks: [{
+				id: "0EAB14636FEB9E9C"
+				item: {
+					Count: 1
+					id: "tide:nephrosilu"
+					tag: {
+						FishLength: 72.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "083A37BD9397C8D1"
+			tasks: [{
+				id: "334285948DADDC19"
+				item: {
+					Count: 1
+					id: "tide:pentapus"
+					tag: {
+						FishLength: 60.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "6E9FB0A3CDB4A840"
+			tasks: [{
+				id: "0B48E85F7F60F3A4"
+				item: {
+					Count: 1
+					id: "tide:shadow_shark"
+					tag: {
+						FishLength: 277.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "7C46A6E1E6C3161A"
+			tasks: [{
+				id: "2EBF0C3F42EC3BE4"
+				item: {
+					Count: 1
+					id: "tide:ember_koi"
+					tag: {
+						FishLength: 45.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "2D2A186AD14EC51B"
+			tasks: [{
+				id: "2AF9AE0C7DA4284A"
+				item: {
+					Count: 1
+					id: "tide:obsidian_pike"
+					tag: {
+						FishLength: 70.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "71ED49600934D13B"
+			tasks: [{
+				id: "41CA16A883EDC588"
+				item: {
+					Count: 1
+					id: "tide:inferno_guppy"
+					tag: {
+						FishLength: 5.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "433E75A26D0D88EE"
+			tasks: [{
+				id: "68D0A06B0B6E2C33"
+				item: {
+					Count: 1
+					id: "tide:crimson_fangjaw"
+					tag: {
+						FishLength: 50.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "5BCC90E5C067F872"
+			tasks: [{
+				id: "37BA46C614C5AF78"
+				item: "alexsmobs:blobfish"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "2F668960D3CC3F84"
+			tasks: [{
+				id: "0AA1DE8A4DA92929"
+				item: "crittersandcompanions:koi_fish"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "0E3E7C147845C5E6"
+			tasks: [{
+				id: "06F7E6736279B7A2"
+				item: "miners_delight:glow_squid"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "4859EE994C49A5D5"
+			tasks: [{
+				id: "11D11E922069EA35"
+				item: "miners_delight:squid"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "5E99C0FECC13C81D"
+			tasks: [{
+				id: "039978FADC6516F3"
+				item: "aquamirae:spinefish"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "3B40E3B2ECE84C1D"
+			tasks: [{
+				id: "0E3696B1D4AC28FC"
+				item: {
+					Count: 1
+					id: "tide:dragon_fish"
+					tag: {
+						FishLength: 650.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "37823850E723757D"
+			tasks: [{
+				id: "2B70FC93A0B664D0"
+				item: {
+					Count: 1
+					id: "tide:voidseeker"
+					tag: {
+						FishLength: 52.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "66D59BAE3183CCB4"
+			tasks: [{
+				id: "758790E6962A583A"
+				item: {
+					Count: 1
+					id: "tide:snatcher_squid"
+					tag: {
+						FishLength: 140.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "5E4C8B5EC7EB3216"
+			tasks: [{
+				id: "26EFDBE14A766A9C"
+				item: {
+					Count: 1
+					id: "tide:mantyvern"
+					tag: {
+						FishLength: 320.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "7E75A79E517E8605"
+			tasks: [{
+				id: "2E519439DDA30179"
+				item: {
+					Count: 1
+					id: "tide:elytrout"
+					tag: {
+						FishLength: 47.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "2C6CC344D77F5105"
+			tasks: [{
+				id: "61078F6FCF45E737"
+				item: {
+					Count: 1
+					id: "tide:dutchman_sock"
+					tag: {
+						FishLength: 5.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "783950463A99BD8E"
+			tasks: [{
+				id: "3CE3AF0231245428"
+				item: {
+					Count: 1
+					id: "tide:red_40"
+					tag: {
+						FishLength: 18.5d
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "46ED3080C19128EB"
+			tasks: [{
+				id: "76ECEF3BB2C0427B"
+				item: "alexsmobs:flying_fish"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "499DDA1A0E938E1A"
+			tasks: [{
+				id: "07DDFE2EC3BF012A"
+				item: "netherdepthsupgrade:lava_pufferfish"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "711B0AD430275666"
+			tasks: [{
+				id: "3764342B653130BF"
+				item: "netherdepthsupgrade:glowdine"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "716C830618CD3AA2"
+			tasks: [{
+				id: "04E2BCD507715199"
+				item: "netherdepthsupgrade:soulsucker"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "71F6EF6BD0D7218E"
+			tasks: [{
+				id: "77FBA98F6B0B4656"
+				item: "netherdepthsupgrade:obsidianfish"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "58A64B1BFF5E0504"
+			tasks: [{
+				id: "253D2722F8C9D52A"
+				item: "netherdepthsupgrade:bonefish"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "134DDD06EC746D4A"
+			tasks: [{
+				id: "2D5B0EA6EA4D7B0F"
+				item: "netherdepthsupgrade:wither_bonefish"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "0D1A622E4936E78E"
+			tasks: [{
+				id: "0D09F9813D7AD303"
+				item: "netherdepthsupgrade:fortress_grouper"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "4973E7F107C415F1"
+			tasks: [{
+				id: "728DA81D72C59DB4"
+				item: "netherdepthsupgrade:eyeball_fish"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "2C78A98907FCB6F6"
+			tasks: [{
+				id: "7E6B2A2DBB273A79"
+				item: "netherdepthsupgrade:blazefish"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "74A0A1800E2B8908"
+			tasks: [{
+				id: "7E12FE78BA224872"
+				item: "netherdepthsupgrade:searing_cod"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "7CB2B22F55F5B241"
+			tasks: [{
+				id: "192BDB324185978E"
+				item: "netherdepthsupgrade:magmacubefish"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "3F46816789D44D93"
+			tasks: [{
+				id: "11125EE80A625FDD"
+				item: "upgrade_aquatic:lionfish"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "527A8DF2768B359E"
+			tasks: [{
+				id: "06A3DC2581D51379"
+				item: "upgrade_aquatic:perch"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "0E405B28E8A7687E"
+			tasks: [{
+				id: "07F4DE2DB86FFF62"
+				item: "alexscaves:radgill"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "066A2C98EF52FC76"
+			tasks: [{
+				id: "0CF742AB64E7855C"
+				item: "alexscaves:tripodfish"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B86DFF247F19E41"]
+			hide_dependency_lines: true
+			id: "58900E52DA34210F"
+			tasks: [{
+				id: "2A1A48B3A17503D7"
+				item: "rediscovered:raw_fish"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.5d
 		}
 	]
 	title: "Let's Go Fishing!"

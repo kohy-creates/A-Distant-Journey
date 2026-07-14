@@ -1,10 +1,10 @@
 {
-	default_autoclaim_rewards: "enabled"
+	default_autoclaim_rewards: "disabled"
 	default_consume_items: false
 	default_quest_disable_jei: false
 	default_quest_shape: "square"
 	default_reward_team: false
-	detection_delay: 20
+	detection_delay: 30
 	disable_gui: false
 	drop_book_on_death: false
 	drop_loot_crates: false
@@ -21,6 +21,6 @@
 	pause_game: true
 	progression_mode: "flexible"
 	show_lock_icons: false
-	title: "<grad colors=F67AFF,FAD9FF hue=true f=0.75 s=30>A Distant Journey"
+	title: "<grad colors=F67AFF,FAD9FF hue=true f=0.75>A Distant Journey"
 	version: 13
 }

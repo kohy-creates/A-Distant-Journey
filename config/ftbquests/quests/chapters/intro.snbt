@@ -7,14 +7,70 @@
 	group: ""
 	icon: "aether:book_of_lore"
 	id: "6827135B158F87E2"
-	images: [{
-		height: 10.0d
-		image: "adj:textures/texts/intro.png"
-		rotation: 0.0d
-		width: 10.0d
-		x: 7.0d
-		y: -3.0d
-	}]
+	images: [
+		{
+			height: 10.0d
+			image: "adj:textures/texts/intro.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 7.053481305621986d
+			y: -2.7056135097984964d
+		}
+		{
+			height: 10.0d
+			image: "minecraft:textures/map/map_background.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			height: 0.0d
+			image: "adj:textures/other/bg_grass.png"
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_grass.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_grass.png"
+			order: -1000
+			rotation: 0.0d
+			width: 10.0d
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			alpha: 150
+			color: 0
+			height: 4.0d
+			image: "structure_gel:item/building_tool_none"
+			order: 3
+			rotation: 0.0d
+			width: 4.0d
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			height: 4.0d
+			image: "structure_gel:item/building_tool_none"
+			order: 4
+			rotation: 0.0d
+			width: 4.0d
+			x: -4.205665624408944d
+			y: -5.700010172802429d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -34,7 +90,6 @@
 				"In order to complete this achievements's task, &ejust click the checkmark icon in the top right corner of this menu&r!"
 			]
 			disable_toast: true
-			icon: "structure_gel:building_tool"
 			id: "4A074153AE2D521D"
 			shape: "hexagon"
 			size: 2.0d
