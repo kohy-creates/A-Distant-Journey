@@ -85,10 +85,10 @@ const RemovedItems = {
 		/twilightforest:.*_trophy/,
 		/twilightforest:.*_skull_candle/,
 		'twilightforest:glass_sword',
-		'twilightforest:steeleaf_helmet',
-		'twilightforest:steeleaf_chestplate',
-		'twilightforest:steeleaf_leggings',
-		'twilightforest:steeleaf_boots',
+		// 'twilightforest:steeleaf_helmet',
+		// 'twilightforest:steeleaf_chestplate',
+		// 'twilightforest:steeleaf_leggings',
+		// 'twilightforest:steeleaf_boots',
 		'twilightforest:steeleaf_sword',
 		'twilightforest:steeleaf_axe',
 		'twilightforest:steeleaf_pickaxe',
@@ -370,7 +370,7 @@ const RemovedItems = {
 
 		'supplementaries:altimeter',
 		'supplementaries:wrench',
-		'supplementaries:flower_box',
+		// 'supplementaries:flower_box',
 
 		'create_power_loader:empty_andesite_chunk_loader',
 		'create_power_loader:empty_brass_chunk_loader',
@@ -419,8 +419,6 @@ const RemovedItems = {
 		'ars_nouveau:jump_ring',
 		'ars_elemental:everfull_urn',
 
-		'nourished_nether:glowing_obsidian',
-
 		'verdantvibes:cattails',
 
 		/functionalstorage:spruce_.*/,
@@ -433,7 +431,6 @@ const RemovedItems = {
 		/functionalstorage:crimson_.*/,
 		/functionalstorage:warped_.*/,
 		/functionalstorage:fluid_.*/,
-
 		/functionalstorage:.*framed_.*/, ,
 		'functionalstorage:simple_compacting_drawer',
 		'functionalstorage:armory_cabinet',
@@ -555,21 +552,6 @@ const RemovedItems = {
 		'majruszsdifficulty:cerberus_fang',
 		/majruszsdifficulty:.*infernal_sponge/,
 
-		'cratedelight:sugar_bag',
-		'cratedelight:gunpowder_bag',
-		'cratedelight:cocoabeans_bag',
-		'cratedelight:golden_apple_crate',
-		'cratedelight:golden_carrot_crate',
-		'cratedelight:glowberry_crate',
-		'cratedelight:cod_crate',
-		'cratedelight:salmon_crate',
-		'cratedelight:cookie_bag',
-		'cratedelight:bread_bag',
-		'cratedelight:sugar_bag',
-		'cratedelight:pumpkin_slice_crate',
-		'cratedelight:berry_crate',
-		'cratedelight:apple_crate',
-
 		'delightful:acorn',
 		'delightful:crystalline_knife',
 
@@ -594,10 +576,8 @@ const RemovedItems = {
 		'lost_aether_content:power_gloves',
 		'lost_aether_content:agility_boots',
 		'lost_aether_content:sentry_shield',
-		'aether:phoenix_gloves',
-		'aether:obsidian_gloves',
-		'aetherdelight:skyjade_knife',
-		'aetherdelight:stratus_knife',
+		// 'aether:phoenix_gloves',
+		// 'aether:obsidian_gloves',
 		'ancient_aether:grapes',
 		'aether_redux:shroom_ring',
 		'ancient_aether:valkyrum_lance',
@@ -621,11 +601,11 @@ const RemovedItems = {
 		'vinery:apple_log',
 		'vinery:apple_wood',
 		'vinery:fermentation_barrel',
-		'vinery:apple_juice',
+		// 'vinery:apple_juice',
 		'vinery:apple_mash',
 		'vinery:apple_press',
-		'vinery:mead',
-		'vinery:jellie_wine',
+		// 'vinery:mead',
+		// 'vinery:jellie_wine',
 		'vinery:dark_cherry_floorboards',
 		'vinery:dark_cherry_beam',
 
@@ -703,7 +683,7 @@ const RemovedItems = {
 		'accents:hermes_boots',
 		'accents:quiver',
 
-		'jumbofurnace:jumbo_furnace',
+		// 'jumbofurnace:jumbo_furnace',
 		'morered:soldering_table',
 		'morered:stone_plate',
 		'morered:hexidecrubrometer',
@@ -755,10 +735,6 @@ const RemovedItems = {
 		'crittersandcompanions:grappling_hook',
 
 		'endergetic:cracked_end_stone_bricks',
-
-		'brass_geodes:ruby',
-		'brass_geodes:pearl',
-		'brass_geodes:ruby_gem_block'
 	]
 };
 

@@ -1,5 +1,5 @@
 {
-	"parent": "block/block",
+	"parent": "block/cube_bottom_top",
 	"textures": {
 		"particle": "kubejs:block/legacy/dirt",
 		"bottom": "kubejs:block/legacy/dirt",

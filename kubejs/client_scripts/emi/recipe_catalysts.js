@@ -24,6 +24,10 @@ JEIAddedEvents.registerRecipeCatalysts(event => {
 		}
 	}
 
+	addRecipeCatalyst('minecraft:smelting', [
+		'jumbofurnace:jumbo_furnace'
+	]);
+
 	addRecipeCatalyst('minecraft:campfire', [
 		'ancient_aether:ambrosium_campfire',
 		'netherexp:ancient_campfire',

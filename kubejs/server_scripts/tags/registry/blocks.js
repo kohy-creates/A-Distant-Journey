@@ -55,7 +55,7 @@ ServerEvents.tags('block', tags => {
 		'evilcraft:blood_chest'
 	]);
 
-	tags.removeAll('jumbofurnace:jumbofurnaceable');
+	// tags.removeAll('jumbofurnace:jumbofurnaceable');
 
 	tags.removeAll('twilightforest:portal/fluid');
 	tags.add('twilightforest:portal/fluid', [

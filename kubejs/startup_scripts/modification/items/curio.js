@@ -1,6 +1,12 @@
 ItemEvents.modification(event => {
 
-	event.modify('supplementaries:quiver', item => {
+	event.modify([
+		'supplementaries:quiver',
+		'kubejs:stalker_quiver',
+		'kubejs:magma_quiver',
+		'kubejs:shock_quiver',
+		'kubejs:compound_quiver'
+	], item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute('attributeslib:arrow_damage', 'd24514f1-276b-4732-a92e-de1e47bd6996', 0.15, "addition")

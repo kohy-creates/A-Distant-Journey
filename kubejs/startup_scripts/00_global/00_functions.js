@@ -364,6 +364,8 @@ global.getOrDefault = function (value, ifNull) {
 global.writeJsonIfAbsent = function (path, json, logAfter) {
 	let p = path;
 	if (!p.endsWith('.json')) p = p + '.json';
-	if (!JsonIO.read(p)) JsonIO.write(p, json);
-	if (logAfter) console.log(logAfter);
+	if (!JsonIO.read(p)) {
+		JsonIO.write(p, json);
+		if (logAfter) console.log(logAfter);
+	}
 };
