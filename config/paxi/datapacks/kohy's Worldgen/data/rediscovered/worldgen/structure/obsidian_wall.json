@@ -1,0 +1,6 @@
+{
+  "type": "rediscovered:obsidian_wall",
+  "biomes": "#rediscovered:has_obsidian_wall",
+  "spawn_overrides": {},
+  "step": "surface_structures"
+}

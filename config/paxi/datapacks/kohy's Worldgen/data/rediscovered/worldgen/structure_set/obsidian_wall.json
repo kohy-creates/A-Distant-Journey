@@ -1,0 +1,20 @@
+{
+  "placement": {
+    "type": "structure_gel:grid_placement",
+    "allowed_near_spawn": true,
+    "exclusion_zone": {
+      "radius": 3,
+      "structures": "#rediscovered:obsidian_wall_avoids"
+    },
+    "offset": 15,
+    "salt": 476836689,
+    "spacing": 16,
+    "structure": "rediscovered:obsidian_wall"
+  },
+  "structures": [
+    {
+      "structure": "rediscovered:obsidian_wall",
+      "weight": 1
+    }
+  ]
+}

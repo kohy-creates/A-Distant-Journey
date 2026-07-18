@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:add",
+  "argument1": "rediscovered:overworld/final_density",
+  "argument2": 0.3
+}

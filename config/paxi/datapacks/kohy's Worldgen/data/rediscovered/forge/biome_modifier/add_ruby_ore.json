@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#rediscovered:has_ruby_ore",
+  "features": "rediscovered:overworld_ruby_ore",
+  "step": "underground_ores"
+}

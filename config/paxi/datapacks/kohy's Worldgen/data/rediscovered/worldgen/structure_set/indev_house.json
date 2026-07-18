@@ -1,0 +1,24 @@
+{
+  "placement": {
+    "type": "structure_gel:grid_placement",
+    "allowed_near_spawn": true,
+    "offset": 11,
+    "salt": 933824178,
+    "spacing": 12,
+    "structure": "rediscovered:indev_house"
+  },
+  "structures": [
+    {
+      "structure": "rediscovered:indev_house_cherry",
+      "weight": 1
+    },
+    {
+      "structure": "rediscovered:indev_house_default",
+      "weight": 1
+    },
+    {
+      "structure": "rediscovered:indev_house_mossy",
+      "weight": 1
+    }
+  ]
+}

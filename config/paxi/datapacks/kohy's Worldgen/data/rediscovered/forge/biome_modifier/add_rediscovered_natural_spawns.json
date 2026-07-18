@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#rediscovered:has_fish_spawns",
+  "spawners": {
+    "type": "rediscovered:fish",
+    "maxCount": 4,
+    "minCount": 3,
+    "weight": 7
+  }
+}

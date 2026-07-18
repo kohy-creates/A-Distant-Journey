@@ -1,5 +1,6 @@
 const CustomBlockRegistry = {
 	customBlocks: [],
+	builders: [],
 	registerCustomBlock: function (id, block, model, properties) {
 		this.customBlocks.push({
 			id: id,
@@ -134,7 +135,8 @@ const CustomBlockRegistry = {
 StartupEvents.registry('block', registry => {
 	CustomBlockRegistry.customBlocks.forEach(b => {
 		const $Capture = b.block;
-		registry.createCustom(b.id, () => new $Capture(b.properties));
+		let builder = registry.createCustom(b.id, () => new $Capture(b.properties));
+		CustomBlockRegistry.builders.push(builder);
 		JsonIO.write(`kubejs/assets/kubejs/models/block/${b.id}.json`, b.model);
 		global.writeJsonIfAbsent(`kubejs/assets/kubejs/blockstates/${b.id}.json`, {
 			variants: {
@@ -148,10 +150,12 @@ StartupEvents.registry('block', registry => {
 });
 
 StartupEvents.registry('item', registry => {
+	let i = 0;
 	CustomBlockRegistry.customBlocks.forEach(b => {
-		registry.createCustom(b.id, () => new $BlockItem(b.id, new $ItemProperties()));
+		registry.createCustom(b.id, () => new $BlockItem(CustomBlockRegistry.builders[i], new $ItemProperties()));
 		global.writeJsonIfAbsent(`kubejs/assets/kubejs/models/item/${b.id}.json`, {
 			parent: `kubejs:block/${b.id}`
 		});
+		i++;
 	});
 });

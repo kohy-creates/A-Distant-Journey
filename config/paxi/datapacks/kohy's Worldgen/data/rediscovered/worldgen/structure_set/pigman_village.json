@@ -1,0 +1,21 @@
+{
+  "placement": {
+    "type": "structure_gel:grid_placement",
+    "allowed_near_spawn": true,
+    "exclusion_zone": {
+      "radius": 10,
+      "structures": "#rediscovered:pigman_village_avoids"
+    },
+    "frequency": 0.75,
+    "offset": 31,
+    "salt": 570217192,
+    "spacing": 45,
+    "structure": "rediscovered:pigman_village"
+  },
+  "structures": [
+    {
+      "structure": "rediscovered:pigman_village",
+      "weight": 1
+    }
+  ]
+}

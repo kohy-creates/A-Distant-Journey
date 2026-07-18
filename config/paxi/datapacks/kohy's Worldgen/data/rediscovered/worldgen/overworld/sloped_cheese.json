@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:mul",
+    "argument1": 4,
+    "argument2": {
+      "type": "minecraft:quarter_negative",
+      "argument": {
+        "": "Factor constant of 1.4 results in mild windswept terrain (old base 3d noise) over the whole world, like in Alpha",
+        "type": "minecraft:mul",
+        "argument1": {
+          "": "overworld/depth defined inline, because we don't need cave biomes",
+          "type": "minecraft:add",
+          "argument1": {
+            "type": "minecraft:y_clamped_gradient",
+            "from_y": -64,
+            "to_y": 320,
+            "from_value": 1.5,
+            "to_value": -1.5
+          },
+          "argument2": "rediscovered:overworld/offset"
+        },
+        "argument2": 1.4
+      }
+    }
+  },
+  "argument2": "minecraft:overworld/base_3d_noise"
+}

@@ -1,0 +1,93 @@
+{
+  "carvers": {},
+  "downfall": 0.4,
+  "effects": {
+    "fog_color": 10529263,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "sky_color": 11779071,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [
+      "minecraft:monster_room"
+    ],
+    [],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "rediscovered:coal_ore",
+      "rediscovered:iron_ore",
+      "rediscovered:iron_ore_burried",
+      "rediscovered:gold_ore",
+      "rediscovered:lapis_ore",
+      "rediscovered:diamond_ore_burried",
+      "rediscovered:redstone_ore",
+      "rediscovered:ruby_ore_small",
+      "rediscovered:ruby_ore_burried",
+      "rediscovered:copper_ore",
+      "rediscovered:granite_ore",
+      "rediscovered:andesite_ore",
+      "rediscovered:calcite_ore",
+      "rediscovered:clay_ore"
+    ],
+    [],
+    [],
+    [
+      "rediscovered:cherry_tree",
+      "rediscovered:flower_cherry_sparse",
+      "rediscovered:classic_flowers",
+      "minecraft:patch_grass_normal"
+    ],
+    [
+      "rediscovered:ice_and_snow_skylands"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {
+    "minecraft:giant": {
+      "charge": 6.5,
+      "energy_budget": 1.0
+    }
+  },
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:chicken",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 150
+      }
+    ],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:giant",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 1
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": [
+      {
+        "type": "rediscovered:fish",
+        "maxCount": 2,
+        "minCount": 2,
+        "weight": 1
+      }
+    ]
+  },
+  "temperature": 0.5
+}

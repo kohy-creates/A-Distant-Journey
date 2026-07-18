@@ -1,0 +1,16 @@
+{
+  "placement": {
+    "type": "structure_gel:grid_placement",
+    "allowed_near_spawn": false,
+    "offset": 31,
+    "salt": 474519853,
+    "spacing": 45,
+    "structure": "rediscovered:brick_pyramid"
+  },
+  "structures": [
+    {
+      "structure": "rediscovered:brick_pyramid",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "rediscovered:brick_pyramid_island",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}
