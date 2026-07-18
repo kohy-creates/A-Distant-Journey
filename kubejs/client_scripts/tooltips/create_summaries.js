@@ -4061,7 +4061,7 @@ const itemsToTooltip = [
 			{
 				control: 'used on a friendly mob',
 				text: [
-					'Restores a smal amount of its health instead of player\'s.'
+					'Restores a small amount of its health instead of player\'s.'
 				]
 			}
 		]

@@ -19,3 +19,5 @@ de.keksuccino.fancymenu.mixin.mixins.common.client.MixinGameRenderer
 de.keksuccino.fancymenu.mixin.mixins.common.client.MixinMultiPlayerGameMode 
 de.keksuccino.fancymenu.mixin.mixins.common.server.MixinServerLevel 
 de.keksuccino.fancymenu.mixin.mixins.common.server.MixinServerPlayer
+xyz.kohara.adjcore.mixins.entity.villager.WanderingTraderMixin
+com.terraformersmc.biolith.impl.mixin.MixinTheEndBiomeSource

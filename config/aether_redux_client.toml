@@ -3,7 +3,7 @@
 
 	[Rendering."Mob Model Upgrades"]
 		#Makes Moas resemble their Mutation models
-		"Moa Model Upgrade" = true
+		"Moa Model Upgrade" = false
 		#Determines which model variation to use for the Moa. Refreshed is sort of a preview for a future design that will be used, the two legacy ones are from the old Moa Foot Type config to change between peaceful-appearing toes and menacing talons for the feet.
 		#Allowed Values: refreshed, legacy_toes, legacy_talons
 		"Moa Model Type" = "refreshed"

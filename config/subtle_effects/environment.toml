@@ -6,7 +6,8 @@ biomeColorRain = true
 biomeParticlesRadius = 24
 mushroomSporeDensity = 15
 mushroomSporeBiomes = [
-    "minecraft:mushroom_fields"
+    "minecraft:mushroom_fields",
+    "clifftree:mushroom_caves"
 ]
 pollenDensity = 40
 pollenBiomes = [
@@ -67,7 +68,9 @@ biomesAllowlist = [
     "twilightforest:fire_swamp",
     "twilightforest:swamp",
     "twilightforest:forest",
-    "twilightforest:highlands"
+    "twilightforest:highlands",
+    "alexscaves:primordial_caves",
+    "neapolitan:strawberry_fields"
 ]
 spawnableBlocks = [
     "minecraft:grass",

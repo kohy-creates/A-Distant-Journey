@@ -100,8 +100,6 @@ StartupEvents.registry('item', registry => {
 StartupEvents.registry('block', registry => {
 	/** @type {any} */
 	const $ChainBlock = Java.loadClass('net.minecraft.world.level.block.ChainBlock');
-	/** @type {any} */
-	const $BlockProperties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties');
 
 	const chainProperties = $BlockProperties.of()
 		.forceSolidOn()

@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/orientable",
+	"textures": {
+		"front": "kubejs:block/legacy/furnace_front_off",
+		"side": "kubejs:block/legacy/furnace_side",
+		"top": "kubejs:block/legacy/furnace_top"
+	}
+}

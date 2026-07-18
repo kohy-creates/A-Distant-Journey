@@ -23,6 +23,62 @@
 			x: -0.5d
 			y: 6.5d
 		}
+		{
+			height: 2.0d
+			image: "adj:textures/other/title_fishing.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "adj:textures/other/title_underground.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "adj:textures/other/title_rare.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "adj:textures/other/title_ocean.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			height: 1.0d
+			image: "adj:textures/other/title_lava.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			height: 1.0d
+			image: "adj:textures/other/title_the_end.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			height: 1.0d
+			image: "adj:textures/other/title_surface.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 7.5d
+			y: -0.5d
+		}
 	]
 	order_index: 3
 	quest_links: [ ]

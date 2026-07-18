@@ -49,6 +49,8 @@
   "immersiveengineering:multiblock_icon": null,
   "immersiveengineering:multiblock_inventory": null,
   "immersiveengineering:multiblock_tank": null,
+  "item-descriptions:block_descriptions": null,
+  "item-descriptions:entity_descriptions": null,
   "jade:block_face": null,
   "jade:distance": null,
   "jade:mod_name": null,

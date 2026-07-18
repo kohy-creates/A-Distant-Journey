@@ -3,7 +3,7 @@
 	"aquarium": true,
 	"banglum": false,
 	"netherBanglum": true,
-	"carmot": false,
+	"carmot": true,
 	"calciteKyber": true,
 	"manganese": false,
 	"kyber": true,
@@ -28,11 +28,12 @@
 	"enableNuggets": true,
 	"enableAnvils": false,
 	"configVersion": 12,
-	"unobtainiumTemplateChance": 0.20000000298023224,
-	"mythrilDrillTemplateChance": 0.5,
+	"unobtainiumTemplateChance": 0.25,
+	"mythrilDrillTemplateChance": 0.6499999761581421,
 	"carmotStaffTemplateChance": 1.0,
 	"disableFunny": true,
 	"disableCommandBlockInStaff": true,
 	"banglumNukeCoreRadius": 32,
-	"shieldPosition": "BOTTOM_LEFT"
+	"shieldPosition": "TOP_LEFT",
+	"disableAbilities": true
 }

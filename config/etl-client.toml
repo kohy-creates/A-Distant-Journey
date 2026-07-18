@@ -1,7 +1,7 @@
 #"Embrace The Light!" Client Config
 "Are trims emissive" = true
 #Whether to enable Alex's Caves colored light in cave bomes
-"Alex's Caves Compat" = false
+"Alex's Caves Compat" = true
 
 #Light amounts
 [light_amounts]

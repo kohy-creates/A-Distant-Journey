@@ -355,3 +355,15 @@ global.newMobEffectInstance = function (effect, duration, level, isAmbient, hide
 global.getOrDefault = function (value, ifNull) {
 	return (value) ? value : ifNull;
 };
+
+/**
+ * Writes to a JSON file only if it isn't already present.
+ * @param {string} path 
+ * @param {object} json 
+ */
+global.writeJsonIfAbsent = function (path, json, logAfter) {
+	let p = path;
+	if (!p.endsWith('.json')) p = p + '.json';
+	if (!JsonIO.read(p)) JsonIO.write(p, json);
+	if (logAfter) console.log(logAfter);
+};

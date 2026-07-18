@@ -179,5 +179,17 @@
 				"volume": 0.75
 			}
 		]
+	},
+	"legacy.record.cat_and_dog": {
+		"sounds": [
+			{
+				"name": "adj:records/cat_and_dog",
+				"volume": 1,
+				"stream": true
+			}
+		]
+	},
+	"empty": {
+		"sounds": []
 	}
 }

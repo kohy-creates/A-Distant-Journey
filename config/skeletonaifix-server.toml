@@ -1,0 +1,9 @@
+#A multiplier for the time between ranged skeleton attacks, i.e. how long it takes the skeleton to reload.
+#The default attack interval in vanilla is between 1-2 seconds depending on difficulty.
+#Range: 0.0 ~ 4.0
+attack_interval_multiplier = 1.0
+#The fraction of the attack interval that can be scaled by distance.
+#Setting this to e.g. 0.25 means 25% of the total attack interval time will scale depending on how far a target is away from the skeleton, while the remaining 75% are fixed.
+#Range: 0.0 ~ 1.0
+attack_interval_distance_scale = 0.5
+

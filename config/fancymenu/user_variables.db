@@ -62,7 +62,7 @@ variable {
 
 variable {
   name = played_load_sound
-  value = 0
+  value = 1
   reset_on_launch = true
 }
 
@@ -74,7 +74,7 @@ variable {
 
 variable {
   name = option.hunger_style
-  value = apple
+  value = carrot
   reset_on_launch = false
 }
 

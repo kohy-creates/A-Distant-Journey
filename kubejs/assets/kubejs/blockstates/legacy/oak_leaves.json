@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"": {
+			"model": "kubejs:block/legacy/oak_leaves"
+		}
+	}
+}

@@ -289,6 +289,10 @@ ClientEvents.lang('en_us', event => {
 		'twilightforest:mangrove_banister': 'Twilight Mangrove Banister',
 		'twilightforest:mangrove_wall_sign': 'Twilight Mangrove Wall Sign',
 		'everycomp:hc/twilightforest/mangrove_counter': 'Twilight Mangrove Counter',
+
+		'ars_nouveau:sourceberry': 'Mana Berry',
+		'ars_nouveau:sourceberry_sack': 'Mana Berry Sack',
+
 	};
 
 	/** @type {Record<Internal.InputItem_, string>} */

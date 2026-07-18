@@ -18,21 +18,19 @@ StartupEvents.registry('item', event => {
 			.displayName(`<neon r=1><rainbow p=0 f=0.35>${nameTitleCase} Treasure Bag</neon></rainbow>`);
 
 		let lootFilePath = 'kubejs/data/kubejs/loot_tables/treasure_bag/' + lootTable + '.json';
-		if (!JsonIO.read(lootFilePath)) {
-			JsonIO.write(lootFilePath, {});
-			console.log(`Created missing loot table: ${lootFilePath}`);
-		}
+		global.writeJsonIfAbsent(lootFilePath, {}, `Created missing loot table: ${lootFilePath}`);
 
 		let modelFilePath = 'kubejs/assets/kubejs/models/item/' + 'treasure_bag_' + modAndEntity[1] + (suffix ? `_${suffix}` : '') + '.json';
-		if (!JsonIO.read(modelFilePath)) {
-			JsonIO.write(modelFilePath, {
+		global.writeJsonIfAbsent(
+			modelFilePath,
+			{
 				parent: 'item/generated',
 				textures: {
 					layer0: 'kubejs:item/treasure_bag/placeholder'
 				}
-			});
-			console.log(`Created missing model: ${modelFilePath}`);
-		}
+			},
+			`Created missing model: ${modelFilePath}`
+		);
 	}
 
 	global.bossMobsAddTreasureBag.forEach(mob => {

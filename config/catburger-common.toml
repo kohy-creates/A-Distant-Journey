@@ -1,0 +1,35 @@
+
+#配置
+#config
+[Config]
+	#Enable CatBurger totem effect
+	active = true
+	#Reset totem cooldown when waking up from bed
+	wakeUpCanResetCooldown = true
+	#Totem effect cooldown in ticks
+	#Range: > 0
+	totemCooldown = 7200
+	#Curios effect cooldown in ticks
+	#Range: > 0
+	curiosCooldown = 1200
+	#Hunger value restored by Curios effect
+	#Range: 0 ~ 20
+	foodRestorationFromCurios = 0
+	#Maximum hunger value that can be restored by Curios
+	#Range: 1 ~ 20
+	foodMaxRestoration = 18
+	#Use percentage-based health restoration (mutually exclusive with fixed value mode)
+	usePercentageHealthRestoration = true
+	#Health restoration percentage based on max health (only effective when percentage mode is enabled)
+	#Range: 0.0 ~ 100.0
+	percentageHealthRestoration = 25.0
+	#Health points restored when totem triggers
+	#Range: > 0
+	healthRestorationFromTotem = 20
+	#Hunger value restored when totem triggers
+	#Range: 0 ~ 20
+	foodRestorationFromTotem = 20
+	#Saturation restored when totem triggers
+	#Range: 0 ~ 20
+	saturationRestorationFromTotem = 20
+

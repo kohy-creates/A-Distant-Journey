@@ -1,0 +1,10 @@
+{
+	"gui.xaero_box_minimap_radar": "%s Minimap entity radar is displayed",
+	"gui.xaero_box_players_pac_required": "The party player menu feature requires the Open Parties and Claims mod!",
+	"gui.xaero_box_claims_pac_required": "The chunk claim feature is disabled and cannot be used.",
+	"gui.xaero_wm_option_requires_minimap": "This option requires the Xaero's Minimap mod.",
+	"gui.xaero_wm_option_requires_ingame": "This option requires you to be in game.",
+	"gui.xaero_no_world_map_item_message": "You need to have this item equipped to be able to use the world map:",
+	"gui.xaero_box_controls": "Controls \n \n Click and drag to scroll the map. \n Scroll the mouse wheel to zoom in and out. \n Right-click the map for some useful shortcuts. \n Some UI buttons have additional key bindings displayed in their tooltip. \n %1$sClick here to edit the key bindings.",
+	"gui.xaero_box_controls_minimap": "\n Waypoint controls: \n §2%s§r to create a new waypoint. \n §2%s§r to create a quick temporary waypoint. \n §2%s§r to switch the waypoint set. \n §2%s§r to toggle rendering all waypoint sets. \n §2%s§r to open the full waypoint menu. \n Right-click an existing waypoint for more waypoint controls. \n \n "
+}

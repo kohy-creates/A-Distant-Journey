@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"down": "kubejs:block/legacy/oak_planks",
+		"east": "kubejs:block/legacy/crafting_table_side",
+		"north": "kubejs:block/legacy/crafting_table_front",
+		"particle": "kubejs:block/legacy/crafting_table_front",
+		"south": "kubejs:block/legacy/crafting_table_side",
+		"up": "kubejs:block/legacy/crafting_table_top",
+		"west": "kubejs:block/legacy/crafting_table_front"
+	}
+}

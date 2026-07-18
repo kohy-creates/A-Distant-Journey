@@ -54,9 +54,10 @@
 		"delightful:overhauls",
 		"file/Fancy Crops v1.3.zip",
 		"file/Aether Regenerated v1.3.zip",
-		"file/\u00A75VN4's \u00A7l\u00A72FWS+RWS Detailed.zip",
+		"file/\u00A75VN4's \u00A7l\u00A72FWS+RWS Default.zip",
 		"file/Tainted's Accurate Wither Storm Models v3.0.2.2.zip",
 		"Dyes-Backport-1.1.1.zip",
+		"file/Mob Grinding Utils Vanillafied.zip",
 		"file/Twilight JAPPA Pack 1.0.0.zip",
 		"fragmentum",
 		"generated/fragmentum_layer",
@@ -117,9 +118,10 @@
 			"file/Re-Simple-Storage.zip",
 			"delightful:overhauls",
 			"file/Fancy Crops v1.3.zip",
-			"file/\u00A75VN4's \u00A7l\u00A72FWS+RWS Detailed.zip",
+			"file/\u00A75VN4's \u00A7l\u00A72FWS+RWS Default.zip",
 			"file/Tainted's Accurate Wither Storm Models v3.0.2.2.zip",
 			"Dyes-Backport-1.1.1.zip",
+			"file/Mob Grinding Utils Vanillafied.zip",
 			"fragmentum",
 			"generated/fragmentum_layer",
 			"obscure_tooltips/packs/vibrant_tooltips",
@@ -180,14 +182,14 @@
 			"description": "\"Default resources\""
 		},
 		"$$default": {
-			"hidden": true,
+			"hidden": false,
 			"required": true,
-			"fixed_position": true,
+			"fixed_position": false,
 			"force_compatible": true
 		},
 		"$$defaultoptional": {
-			"hidden": true,
-			"required": true,
+			"hidden": false,
+			"required": false,
 			"fixed_position": true
 		},
 		"$$hidden": {

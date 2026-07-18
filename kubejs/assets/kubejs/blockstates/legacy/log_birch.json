@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"axis=x": {
+			"model": "kubejs:block/legacy/log_birch_horizontal",
+			"x": 90,
+			"y": 90
+		},
+		"axis=y": {
+			"model": "kubejs:block/legacy/log_birch"
+		},
+		"axis=z": {
+			"model": "kubejs:block/legacy/log_birch_horizontal",
+			"x": 90
+		}
+	}
+}

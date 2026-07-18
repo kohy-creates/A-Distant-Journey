@@ -1,0 +1,9 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"particle": "kubejs:block/legacy/dirt",
+		"bottom": "kubejs:block/legacy/dirt",
+		"top": "kubejs:block/legacy/legacy_grass_block_top",
+		"side": "kubejs:block/legacy/legacy_grass_block"
+	}
+}

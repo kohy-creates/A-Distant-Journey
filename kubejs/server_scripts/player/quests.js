@@ -9,10 +9,12 @@ FTBQuestsEvents.completed(event => {
 			const server = event.getServer();
 
 			const title = object.getRawTitle();
-			player.playNotifySound('adj:ui.achievement_complete', 'players', 0.9, 1.0);
-			server.runCommandSilent(
-				`tellraw @a ["",{"selector":"${player.getUuid()}"},{"text":" has made the achievement "},{"text":"[${title}]","color":"green","hoverEvent":{"action":"show_text","contents":"${object.getRawSubtitle()}"}}]`
-			);
+			if (title !== '') {
+				player.playNotifySound('adj:ui.achievement_complete', 'players', 0.9, 1.0);
+				server.runCommandSilent(
+					`tellraw @a ["",{"selector":"${player.getUuid()}"},{"text":" has made the achievement "},{"text":"[${title}]","color":"green","hoverEvent":{"action":"show_text","contents":"${object.getRawSubtitle()}"}}]`
+				);
+			}
 		}
 	}
 });

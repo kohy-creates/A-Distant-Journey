@@ -1,0 +1,44 @@
+
+#client config
+[Config]
+	#Display scale
+	#Range: 0.1 ~ 10.0
+	scale = 0.7
+	#Float distance (blocks)
+	#Range: 0.0 ~ 100.0
+	floatDistance = 0.1
+	#Time to complete a float cycle (tick)
+	#Range: 1.0 ~ 100.0
+	time = 15.0
+	#Front & back offset
+	#Range: -100.0 ~ 100.0
+	frontBackOffset = -0.4
+	#Vertical offset
+	#Range: -100.0 ~ 100.0
+	verticalOffset = 0.0
+	#Left & right offset
+	#Range: -100.0 ~ 100.0
+	leftRightOffset = 0.8
+	#Enable drag system for position lag effect
+	dragEnabled = true
+	#Drag strength factor
+	#Range: 0.01 ~ 1.0
+	dragStrength = 0.2
+	#Enable rotation drag system for head rotation lag effect
+	rotationDragEnabled = true
+	#Rotation drag smoothness factor
+	#Range: 0.01 ~ 1.0
+	rotationDragSmoothness = 0.2
+	#Use wrapDegrees for angle wrap-around handling (shortest path rotation)
+	rotationDragUseWrapDegrees = false
+	#Allow rotation drag to affect burger model orientation (Y-axis rotation)
+	rotationDragAffectOrientation = false
+	#Enable spring physics system for head rotation smoothing
+	springEnabled = false
+	#Spring stiffness coefficient
+	#Range: 0.1 ~ 2.0
+	springStiffness = 0.9
+	#Spring damping coefficient
+	#Range: 0.1 ~ 0.99
+	springDamping = 0.7
+

@@ -10,7 +10,9 @@ EntityEvents.spawned(event => {
 		'aether:sun_spirit',
 		'ancient_aether:mutated_aechor_plant',
 		'lost_aether_content:aerwhale_king',
-		'rediscovered:red_dragon'
+		'rediscovered:red_dragon',
+		'cataclysm:ancient_remnant',
+		'cataclysm:the_harbinger'
 	];
 
 	if (global.bossMobs.includes(entity.getType()) && !bossesSkipMessages.includes(entity.getType()) && !entity.tags.toArray().includes('adj.announced_spawn')) {

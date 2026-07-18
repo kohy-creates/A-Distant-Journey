@@ -194,6 +194,12 @@
 			mining = true
 			sorting = true
 
+		[types.leaves_type.kubejs]
+			"legacy/oak" = true
+			"legacy/birch" = true
+			"legacy/spruce" = true
+			"legacy/jungle" = true
+
 	[types.cake]
 
 		[types.cake.mynethersdelight]
@@ -846,6 +852,20 @@
 			phantom_purpur = true
 			phantom_purpur_bricks = true
 			phantom_purpur_squares = true
+			"legacy/bricks" = true
+			"legacy/cobblestone" = true
+			"legacy/planks_oak" = true
+			"legacy/planks_birch" = true
+			"legacy/planks_spruce" = true
+			"legacy/planks_jungle" = true
+			"legacy/sandstone" = true
+			"legacy/sandstone_smooth" = true
+			"legacy/quartz_block" = true
+			"legacy/stonebrick" = true
+			"legacy/stone" = true
+			"legacy/legacy_bricks" = true
+			grimite = true
+			polished_grimite = true
 
 		[types.cut_block_type.hybrid_aquatic]
 			driftwood = true

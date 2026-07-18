@@ -5,7 +5,6 @@ const $AttributeModifier = Java.loadClass("net.minecraft.world.entity.ai.attribu
 const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes");
 const $ItemAttributeModifierEvent = Java.loadClass('net.minecraftforge.event.ItemAttributeModifierEvent');
 const $PerkUtil = Java.loadClass("com.hollingsworth.arsnouveau.api.util.PerkUtil");
-const $BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem');
 
 const miningSpeedUUID = '80091653-9902-44f9-95a7-d627610856c0';
 const harvestLevelUUID = '84257908-8296-4470-ad2e-97e5db59b64e';

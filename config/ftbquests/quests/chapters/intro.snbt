@@ -10,14 +10,6 @@
 	images: [
 		{
 			height: 10.0d
-			image: "adj:textures/texts/intro.png"
-			rotation: 0.0d
-			width: 10.0d
-			x: 7.053481305621986d
-			y: -2.7056135097984964d
-		}
-		{
-			height: 10.0d
 			image: "minecraft:textures/map/map_background.png"
 			order: -999
 			rotation: 0.0d
@@ -69,6 +61,14 @@
 			width: 4.0d
 			x: -4.205665624408944d
 			y: -5.700010172802429d
+		}
+		{
+			height: 8.0d
+			image: "adj:textures/other/text_intro.png"
+			rotation: 0.0d
+			width: 9.0d
+			x: 7.107142857142868d
+			y: -3.107142857142861d
 		}
 	]
 	order_index: 0
