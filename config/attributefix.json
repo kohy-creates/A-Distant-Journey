@@ -275,6 +275,17 @@
         "value": 1
       }
     },
+    "kubejs:magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 4096,
+        "value": 4096
+      }
+    },
     "attributeslib:crit_chance": {
       "enabled": false,
       "min": {

@@ -1,0 +1,70 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "minecraft:witch_spawn_egg"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "minecraft:cave_spider_spawn_egg"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "minecraft:spider_spawn_egg"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"name": "minecraft:husk_spawn_egg"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 7,
+					"name": "minecraft:zombie_spawn_egg"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "location_check",
+					"predicate": {
+						"dimension": "minecraft:overworld"
+					}
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "minecraft:blaze_spawn_egg"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 8,
+					"name": "minecraft:wither_skeleton_spawn_egg"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "minecraft:magma_cube_spawn_egg"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "location_check",
+					"predicate": {
+						"dimension": "minecraft:the_nether"
+					}
+				}
+			]
+		}
+	]
+}
