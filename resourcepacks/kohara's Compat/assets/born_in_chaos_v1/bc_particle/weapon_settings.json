@@ -1,0 +1,45 @@
+{
+  "replace": false,
+  "values": {
+    "born_in_chaos_v1:soulbane": {
+      "color_hex": "#85c71f",
+      "color_hex_sec": "#8a9da3",
+      "light": true
+    },
+    "born_in_chaos_v1:frostbitten_blade": {
+      "color_hex": "#d0fbfc",
+      "color_hex_sec": "#6d879f",
+      "light": false
+    },
+    "born_in_chaos_v1:spiritual_sword": {
+      "color_hex": "#e9142f",
+      "color_hex_sec": "#65051e",
+      "light": false
+    },
+    "born_in_chaos_v1:nightmare_scythe": {
+      "color_hex": "#42334b",
+      "color_hex_sec": "#8c8d95",
+      "light": false
+    },
+    "born_in_chaos_v1:darkwarblade": {
+      "color_hex": "#42334b",
+      "color_hex_sec": "#8c8d95",
+      "light": false
+    },
+    "born_in_chaos_v1:great_reaper_axe": {
+      "color_hex": "#42334b",
+      "color_hex_sec": "#8c8d95",
+      "light": false
+    },
+    "born_in_chaos_v1:skullbreaker_hammer": {
+      "color_hex": "#42334b",
+      "color_hex_sec": "#8c8d95",
+      "light": false
+    },
+    "born_in_chaos_v1:soul_cutlass": {
+      "color_hex": "#42334b",
+      "color_hex_sec": "#8c8d95",
+      "light": false
+    }
+  }
+}

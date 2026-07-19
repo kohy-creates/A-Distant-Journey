@@ -41,7 +41,8 @@
     "alexsmobs:void_portal",
     "botania:flame_ring",
     "botania:magic_landmine",
-    "quark:soul_bead"
+    "quark:soul_bead",
+    "alexscaves:spinning_peppermint"
   ],
   "tracingDistance": 128,
   "debugMode": false,

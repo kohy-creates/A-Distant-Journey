@@ -1,0 +1,70 @@
+{
+  "replace": false,
+  "values": {
+    "cataclysm:meat_shredder": {
+      "color_hex": "#ff5858",
+      "color_hex_sec": "#ffa02b",
+      "light": true
+    },
+    "cataclysm:the_immolator": {
+      "color_hex": "#fbbb34",
+      "color_hex_sec": "#e08900",
+      "light": true
+    },
+    "cataclysm:the_incinerator": {
+      "color_hex": "#fbbb34",
+      "color_hex_sec": "#532a32",
+      "light": false
+    },
+    "cataclysm:astrape": {
+      "color_hex": "#fafcfc",
+      "color_hex_sec": "#56a7c0",
+      "light": false
+    },
+    "cataclysm:ceraunus": {
+      "color_hex": "#86b9bc",
+      "color_hex_sec": "#44596d",
+      "light": false
+    },
+    "cataclysm:the_annihilator": {
+      "color_hex": "#75ffe2",
+      "color_hex_sec": "#20b595",
+      "light": true
+    },
+    "cataclysm:soul_render": {
+      "color_hex": "#75ffe2",
+      "color_hex_sec": "#20b595",
+      "light": true
+    },
+    "cataclysm:infernal_forge": {
+      "color_hex": "#e8d748",
+      "color_hex_sec": "#d35c0f",
+      "light": false
+    },
+    "cataclysm:void_forge": {
+      "color_hex": "#e8d748",
+      "color_hex_sec": "#ff7dff",
+      "light": true
+    },
+    "cataclysm:gauntlet_of_guard": {
+      "color_hex": "#201143",
+      "color_hex_sec": "#ff78ff",
+      "light": true
+    },
+    "cataclysm:gauntlet_of_bulwark": {
+      "color_hex": "#201143",
+      "color_hex_sec": "#fbbb34",
+      "light": true
+    },
+    "cataclysm:gauntlet_of_maelstrom": {
+      "color_hex": "#201143",
+      "color_hex_sec": "#c4b176",
+      "light": true
+    },
+    "cataclysm:ancient_spear": {
+      "color_hex": "#c3b076",
+      "color_hex_sec": "#a69564",
+      "light": false
+    }
+  }
+}

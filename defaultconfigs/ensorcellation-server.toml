@@ -54,7 +54,7 @@
 
 	[Enchantments."Air Affinity"]
 		#If TRUE, the Air Affinity Enchantment is available for Helmets.
-		Enable = true
+		Enable = false
 		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
 		Treasure = false
 

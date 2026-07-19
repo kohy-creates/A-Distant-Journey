@@ -5,21 +5,33 @@
  */
 global.shadowApparitionsTick = function (entity, amplifier) {
 	if (!entity.level.isClientSide()) {
-		const chance = 0.05 * (amplifier + 1);
+		const chance = 0.035 * (amplifier + 1);
 
 		if (Math.random() < chance) {
-			const damage = 8 + amplifier;
+			const damage = (7 + amplifier) * (Math.random() * 0.15 + 1);
+			const level = entity.level;
+			const pos = entity.pos;
 
 			entity.attack(
-				global.getDamageSource(entity.level, "minecraft:magic", null, null),
+				global.getDamageSource(level, "minecraft:magic", null, null),
 				damage
 			);
 
-			entity.level.playSound(
+			level.playSound(
 				null,
-				entity.getPos(),
+				pos,
 				'simplyswords:dark_sword_attack_03',
 				'neutral'
+			);
+
+			level.spawnParticles(
+				Math.random() >= 0.5 ? 'sweep_attack' : 'mcdw:offhand_sweep',
+				true,
+				entity.x + entity.getBbWidth() * (Math.random() - 0.5) * 1.5,
+				entity.y + entity.getEyeHeight() * (Math.random() * 0.5 + 0.45),
+				entity.z + entity.getBbWidth() * (Math.random() - 0.5) * 1.5,
+				0, 0, 0,
+				1, 0
 			);
 		}
 	}

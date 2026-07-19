@@ -1,0 +1,40 @@
+{
+  "replace": false,
+  "values": {
+    "aquamirae:fin_cutter": {
+      "color_hex": "#fcfcfc",
+      "color_hex_sec": "#4dd5e5",
+      "light": true
+    },
+    "aquamirae:whisper_of_the_abyss": {
+      "color_hex": "#fc78fc",
+      "color_hex_sec": "#fccafc",
+      "light": true
+    },
+    "aquamirae:divider": {
+      "color_hex": "#fc78fc",
+      "color_hex_sec": "#fccafc",
+      "light": true
+    },
+    "aquamirae:coral_lance": {
+      "color_hex": "#fcfcfc",
+      "color_hex_sec": "#80b5fb",
+      "light": true
+    },
+    "aquamirae:remnants_saber": {
+      "color_hex": "#f9f8ea",
+      "color_hex_sec": "#c9c4a3",
+      "light": true
+    },
+    "aquamirae:poisoned_blade": {
+      "color_hex": "#fcfcfc",
+      "color_hex_sec": "#70d09f",
+      "light": true
+    },
+    "aquamirae:dagger_of_greed": {
+      "color_hex": "#00d3bc",
+      "color_hex_sec": "#fcfcfc",
+      "light": true
+    }
+  }
+}

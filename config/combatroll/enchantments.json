@@ -1,13 +1,13 @@
 {
   "longfooted": {
-    "enabled": true,
+    "enabled": false,
     "max_level": 3,
     "min_cost": 17,
     "step_cost": 13,
     "bonus_per_level": 0.5
   },
   "acrobat": {
-    "enabled": true,
+    "enabled": false,
     "max_level": 3,
     "min_cost": 20,
     "step_cost": 16,
@@ -16,7 +16,7 @@
   "multi_roll": {
     "enabled": true,
     "max_level": 1,
-    "min_cost": 25,
+    "min_cost": 15,
     "step_cost": 17,
     "bonus_per_level": 1.0
   }

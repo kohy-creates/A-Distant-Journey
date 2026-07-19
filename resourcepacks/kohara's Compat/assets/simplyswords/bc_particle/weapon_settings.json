@@ -1,0 +1,236 @@
+{
+  "replace": false,
+  "values": {
+    "simplyswords:dormant_relic": {
+      "color_hex": "DEDAA9",
+      "color_hex_sec": "827F76",
+      "light": true
+    },
+    "simplyswords:tainted_relic": {
+      "color_hex": "444D5C",
+      "color_hex_sec": "21262E",
+      "light": true
+    },
+    "simplyswords:harbinger": {
+      "color_hex": "00BFFF",
+      "color_hex_sec": "003052",
+      "light": true
+    },
+    "simplyswords:righteous_relic": {
+      "color_hex": "DECB35",
+      "color_hex_sec": "825C24",
+      "light": true
+    },
+    "simplyswords:sunfire": {
+      "color_hex": "FFCEAB",
+      "color_hex_sec": "FF3F05",
+      "light": true
+    },
+    "simplyswords:ribboncleaver": {
+      "color_hex": "FF4242",
+      "color_hex_sec": "FFE8E8",
+      "light": true
+    },
+    "simplyswords:enigma": {
+      "color_hex": "42A854",
+      "color_hex_sec": "D9B500",
+      "light": true
+    },
+    "simplyswords:brimstone_claymore": {
+      "color_hex": "FF9905",
+      "color_hex_sec": "FFDC2E",
+      "light": true
+    },
+    "simplyswords:bramblethorn": {
+      "color_hex": "1E961F",
+      "color_hex_sec": "403318",
+      "light": true
+    },
+    "simplyswords:toxic_longsword": {
+      "color_hex": "0F9919",
+      "color_hex_sec": "2C6B2F",
+      "light": true
+    },
+    "simplyswords:emberblade": {
+      "color_hex": "F0740E",
+      "color_hex_sec": "BD4B19",
+      "light": true
+    },
+    "simplyswords:molten_edge": {
+      "color_hex": "FFA129",
+      "color_hex_sec": "F5D61D",
+      "light": true
+    },
+    "simplyswords:emberlash": {
+      "color_hex": "ED4D09",
+      "color_hex_sec": "EDAC09",
+      "light": true
+    },
+    "simplyswords:flamewind": {
+      "color_hex": "2E2C2B",
+      "color_hex_sec": "ED4C09",
+      "light": true
+    },
+    "simplyswords:soulrender": {
+      "color_hex": "2E6978",
+      "color_hex_sec": "182169",
+      "light": true
+    },
+    "simplyswords:hiveheart": {
+      "color_hex": "EBC517",
+      "color_hex_sec": "B08220",
+      "light": true
+    },
+    "simplyswords:decaying_relic": {
+      "color_hex": "BAB46E",
+      "color_hex_sec": "E6DE7C",
+      "light": true
+    },
+    "simplyswords:magiscythe": {
+      "color_hex": "25F5F5",
+      "color_hex_sec": "E6DE7C",
+      "light": true
+    },
+    "simplyswords:magispear": {
+      "color_hex": "25F5F5",
+      "color_hex_sec": "E6DE7C",
+      "light": true
+    },
+    "simplyswords:magiblade": {
+      "color_hex": "25F5F5",
+      "color_hex_sec": "E6DE7C",
+      "light": true
+    },
+    "simplyswords:sword_on_a_stick": {
+      "color_hex": "FF00F8",
+      "color_hex_sec": "00FFFF",
+      "light": true
+    },
+    "simplyswords:twisted_blade": {
+      "color_hex": "EB3131",
+      "color_hex_sec": "B01A1A",
+      "light": true
+    },
+    "simplyswords:whisperwind": {
+      "color_hex": "F4BAFF",
+      "color_hex_sec": "CB54FF",
+      "light": true
+    },
+    "simplyswords:tempest": {
+      "color_hex": "FF970F",
+      "color_hex_sec": "3BF2FF",
+      "light": true
+    },
+    "simplyswords:soulpyre": {
+      "color_hex": "FFFF3B",
+      "color_hex_sec": "26FCFF",
+      "light": true
+    },
+    "simplyswords:hearthflame": {
+      "color_hex": "1F1B1A",
+      "color_hex_sec": "FFAF05",
+      "light": true
+    },
+    "simplyswords:soulkeeper": {
+      "color_hex": "363D42",
+      "color_hex_sec": "46648A",
+      "light": true
+    },
+    "simplyswords:icewhisper": {
+      "color_hex": "A1FAFF",
+      "color_hex_sec": "77BBD4",
+      "light": true
+    },
+    "simplyswords:arcanethyst": {
+      "color_hex": "D28DF7",
+      "color_hex_sec": "C559FF",
+      "light": true
+    },
+    "simplyswords:slumbering_lichblade": {
+      "color_hex": "276B69",
+      "color_hex_sec": "155069",
+      "light": true
+    },
+    "simplyswords:waking_lichblade": {
+      "color_hex": "2E9491",
+      "color_hex_sec": "155069",
+      "light": true
+    },
+    "simplyswords:awakened_lichblade": {
+      "color_hex": "59D8FF",
+      "color_hex_sec": "155069",
+      "light": true
+    },
+    "simplyswords:shadowsting": {
+      "color_hex": "0A1933",
+      "color_hex_sec": "0383FF",
+      "light": true
+    },
+    "simplyswords:stars_edge": {
+      "color_hex": "73FF86",
+      "color_hex_sec": "00FFF3",
+      "light": true
+    },
+    "simplyswords:frostfall": {
+      "color_hex": "BAF4FF",
+      "color_hex_sec": "BAF4FF",
+      "light": true
+    },
+    "simplyswords:livyatan": {
+      "color_hex": "435263",
+      "color_hex_sec": "E6DE7C",
+      "light": true
+    },
+    "simplyswords:watcher_claymore": {
+      "color_hex": "1D1538",
+      "color_hex_sec": "080414",
+      "light": true
+    },
+    "simplyswords:watching_warglaive": {
+      "color_hex": "1D1538",
+      "color_hex_sec": "080414",
+      "light": true
+    },
+    "simplyswords:storms_edge": {
+      "color_hex": "006EFF",
+      "color_hex_sec": "73CEFF",
+      "light": true
+    },
+    "simplyswords:stormbringer": {
+      "color_hex": "006EFF",
+      "color_hex_sec": "73CEFF",
+      "light": true
+    },
+    "simplyswords:soulstealer": {
+      "color_hex": "213140",
+      "color_hex_sec": "2B4157",
+      "light": true
+    },
+    "simplyswords:thunderbrand": {
+      "color_hex": "006EFF",
+      "color_hex_sec": "73CEFF",
+      "light": true
+    },
+    "simplyswords:mjolnir": {
+      "color_hex": "666E85",
+      "color_hex_sec": "2C4FB0",
+      "light": true
+    },
+    "simplyswords:caelestis": {
+      "color_hex": "21192E",
+      "color_hex_sec": "9F2DF7",
+      "light": true
+    },
+    "simplyswords:wickpiercer": {
+      "color_hex": "FFF314",
+      "color_hex_sec": "FFFBED",
+      "light": true
+    }
+    ,
+    "simplyswords:waxweaver": {
+      "color_hex": "FFF314",
+      "color_hex_sec": "FFFBED",
+      "light": true
+    }
+  }
+}

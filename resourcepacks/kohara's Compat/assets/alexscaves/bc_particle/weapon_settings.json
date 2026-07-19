@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": {
+    "alexscaves:ortholance": {
+      "color_hex": "#d1cac1",
+      "color_hex_sec": "#b8ab94",
+      "light": false
+    },
+    "alexscaves:desolate_dagger": {
+      "color_hex": "#4e4653",
+      "color_hex_sec": "#fc0000",
+      "light": false
+    },
+    "alexscaves:sharpened_candy_cane": {
+      "color_hex": "#f6edfc",
+      "color_hex_sec": "#fc3e55",
+      "light": false
+    },
+    "alexscaves:frostmint_spear": {
+      "color_hex": "#e2f6f7",
+      "color_hex_sec": "#74d5cb",
+      "light": false
+    },
+    "alexscaves:extinction_spear": {
+      "color_hex": "#fcd800",
+      "color_hex_sec": "#fc5000",
+      "light": true
+    }
+  }
+}

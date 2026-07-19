@@ -369,3 +369,16 @@ global.writeJsonIfAbsent = function (path, json, logAfter) {
 		if (logAfter) console.log(logAfter);
 	}
 };
+
+/**
+ * Calculates the amount of damage dealt by a magic weapon.
+ * @param {Internal.Player_} player 
+ * @param {number} baseAmount 
+ * @returns {number} - total amount of damage
+ */
+global.calculateSpellDamage = function (player, baseAmount, randomize) {
+	let spellPower = player.getAttribute('ars_nouveau:ars_nouveau.perk.spell_damage').getValue();
+	let mul = 1 + spellPower / 100;
+	let mul2 = (randomize) ? 1 + Math.random() * 0.3 - 0.15 : 1;
+	return baseAmount * mul * mul2;
+};

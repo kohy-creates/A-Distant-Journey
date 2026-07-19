@@ -13,4 +13,5 @@ StartupEvents.registry('attribute', event => {
 	registerAttribute('kubejs:damage_dealt', 'Damage', 1, 0, 1000);
 	registerAttribute('kubejs:enchantment_power', 'Enchanting Table Power', 0, 0, 1000);
 	registerAttribute('kubejs:healing_power', 'Healing Power', 0, 0, 2048);
+	registerAttribute('kubejs:magic_damage', 'Magic Damage', 0, 0, 4096);
 });

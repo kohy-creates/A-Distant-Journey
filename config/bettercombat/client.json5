@@ -7,7 +7,7 @@
 	"hudHighlightColor": 16711680,
 	"isShowingArmsInFirstPerson": false,
 	"isShowingOtherHandFirstPerson": true,
-	"isSweepingParticleEnabled": false,
+	"isSweepingParticleEnabled": true,
 	"isTooltipAttackRangeEnabled": false,
 	"weaponSwingSoundVolume": 100,
 	"isDebugOBBEnabled": true,

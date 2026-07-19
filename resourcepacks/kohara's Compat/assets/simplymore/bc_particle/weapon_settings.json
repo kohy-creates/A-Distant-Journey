@@ -1,0 +1,300 @@
+{
+  "replace": false,
+  "values": {
+    "simplymore:mimicry": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_backhand_blade": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_chakram": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_cutlass": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_claymore": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_dagger": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_deer_horns": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_glaive": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_grandsword": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_great_katana": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_great_spear": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_greataxe": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_greathammer": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_halberd": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_katana": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_khopesh": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_lance": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_longsword": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_pernach": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_quarterstaff": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_rapier": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_sai": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_scythe": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_spear": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_twinblade": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:mimicry_warglaive": {
+      "color_hex": "#898989",
+      "color_hex_sec": "#703d3d",
+      "light": false
+    },
+    "simplymore:great_slither": {
+      "color_hex": "#93ab95",
+      "color_hex_sec": "#577857",
+      "light": false
+    },
+    "simplymore:the_pan": {
+      "color_hex": "FF00F8",
+      "color_hex_sec": "00FFFF",
+      "light": true
+    },
+    "simplymore:molten_flare": {
+      "color_hex": "#a61a16",
+      "color_hex_sec": "#a85218",
+      "light": true
+    },
+    "simplymore:grandfrost": {
+      "color_hex": "#8ca0bb",
+      "color_hex_sec": "#30dfe3",
+      "light": true
+    },
+    "simplymore:glimmerstep": {
+      "color_hex": "#793b7c",
+      "color_hex_sec": "#fcfcfc",
+      "light": true
+    },
+    "simplymore:culterex": {
+      "color_hex": "#160028",
+      "color_hex_sec": "#22043a",
+      "light": false
+    },
+    "simplymore:the_blood_harvester": {
+      "color_hex": "#ad0909",
+      "color_hex_sec": "#0a0000",
+      "light": true
+    },
+    "simplymore:the_vessel_breach": {
+      "color_hex": "#ad0909",
+      "color_hex_sec": "#0a0000",
+      "light": true
+    },
+    "simplymore:matterbane": {
+      "color_hex": "#fcfaf9",
+      "color_hex_sec": "#0a0000",
+      "light": true
+    },
+    "simplymore:smouldering_ruin": {
+      "color_hex": "#0a0000",
+      "color_hex_sec": "#fca3a3",
+      "light": true
+    },
+    "simplymore:myrmedge": {
+      "color_hex": "#834529",
+      "color_hex_sec": "#b57f5a",
+      "light": false
+    },
+    "simplymore:black_pearl": {
+      "color_hex": "#ebebeb",
+      "color_hex_sec": "#e6af15",
+      "light": false
+    },
+    "simplymore:blade_of_the_grotesque": {
+      "color_hex": "#3b4341",
+      "color_hex_sec": "#3b4341",
+      "light": false
+    },
+    "simplymore:vipers_call": {
+      "color_hex": "#797926",
+      "color_hex_sec": "#880000",
+      "light": false
+    },
+    "simplymore:timekeeper": {
+      "color_hex": "#f5fc2e",
+      "color_hex_sec": "#1f4990",
+      "light": false
+    },
+    "simplymore:stasis": {
+      "color_hex": "#dd7e6a",
+      "color_hex_sec": "#44defc",
+      "light": true
+    },
+    "simplymore:tidebreaker": {
+      "color_hex": "#5b595a",
+      "color_hex_sec": "#0d4f12",
+      "light": false
+    },
+    "simplymore:ruyi_jingu_bang": {
+      "color_hex": "#e7c500",
+      "color_hex_sec": "#af1200",
+      "light": false
+    },
+    "simplymore:ruptured_idol": {
+      "color_hex": "#bf8e1a",
+      "color_hex_sec": "#795807",
+      "light": false
+    },
+    "simplymore:ascended_idol": {
+      "color_hex": "#fcfc00",
+      "color_hex_sec": "#fcb918",
+      "light": false
+    },
+    "simplymore:tarnished_idol": {
+      "color_hex": "#fc1818",
+      "color_hex_sec": "#4f4f4f",
+      "light": false
+    },
+    "simplymore:holylight": {
+      "color_hex": "#fcfc00",
+      "color_hex_sec": "#fcb918",
+      "light": true
+    },
+    "simplymore:darksent": {
+      "color_hex": "#fc1818",
+      "color_hex_sec": "#4f4f4f",
+      "light": true
+    },
+    "simplymore:boas_fang": {
+      "color_hex": "#d3dfd4",
+      "color_hex_sec": "#9cba9f",
+      "light": false
+    },
+    "simplymore:earthshatter": {
+      "color_hex": "#ce9049",
+      "color_hex_sec": "#603910",
+      "light": false
+    },
+    "simplymore:soul_foreseer": {
+      "color_hex": "#b8d4eb",
+      "color_hex_sec": "#3e5a83",
+      "light": false
+    },
+    "simplymore:brassturn": {
+      "color_hex": "#ce5439",
+      "color_hex_sec": "#42b08a",
+      "light": false
+    },
+    "simplymore:cindergorge": {
+      "color_hex": "#fc974b",
+      "color_hex_sec": "#fc6922",
+      "light": true
+    },
+    "simplymore:deaths_eyrie": {
+      "color_hex": "#00bbcc",
+      "color_hex_sec": "#181818",
+      "light": true
+    },
+    "simplymore:perforiscus": {
+      "color_hex": "#7f3d3d",
+      "color_hex_sec": "#5b1872",
+      "light": false
+    },
+    "simplymore:revvengine": {
+      "color_hex": "#97abab",
+      "color_hex_sec": "#748285",
+      "light": false
+    },
+    "simplymore:exedrill": {
+      "color_hex": "#b4b4b4",
+      "color_hex_sec": "#5a5a5a",
+      "light": false
+    },
+    "simplymore:jester_penetrate": {
+      "color_hex": "#eeabab",
+      "color_hex_sec": "#d66262",
+      "light": false
+    }
+  }
+}

@@ -594,6 +594,12 @@ ItemEvents.tooltip(event => {
 		});
 	});
 
+	event.addAdvanced(Object.keys(global.magicWeapons), (item, advanced, text) => {
+		let amount = global.magicWeapons[item.id][1];
+		let discount = currentPlayer.getAttribute('adjcore:player.mana_cost_reduction').getValue();
+		amount = (amount - (amount * discount));
+		text.add(1, Text.gray('Uses ').append(Text.blue(String(amount).split('.')[0])).append(Text.gray(' mana')))
+	});
 
 	/**
 	 * Adds tooltip lines to one or more items, simplified

@@ -229,7 +229,7 @@ StartupEvents.registry('item', event => {
 			.addAttribute(
 				'attributeslib:life_steal',
 				getAttrUuid(),
-				0.09,
+				0.05,
 				'addition'
 			)
 	);
@@ -286,19 +286,19 @@ StartupEvents.registry('item', event => {
 			.addAttribute(
 				'ars_nouveau:ars_nouveau.perk.mana_regen',
 				getAttrUuid(),
-				6,
+				15,
 				'addition'
 			)
 			.addAttribute(
 				'ars_nouveau:ars_nouveau.perk.max_mana',
 				getAttrUuid(),
-				40,
+				100,
 				'addition'
 			)
 			.addAttribute(
 				'ars_nouveau:ars_nouveau.perk.spell_damage',
 				getAttrUuid(),
-				5,
+				50,
 				'addition'
 			)
 	)
