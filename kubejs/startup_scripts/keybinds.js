@@ -121,7 +121,7 @@ KeyBindEvents.modify(event => {
 		"treechop.key.open_settings_overlay",
 		"treechop.key.toggle_chopping",
 		"treechop.key.toggle_felling"
-	]
+	];
 
 	const allKeybinds = KeyBindUtil.getAllKeyName();
 	removedKeybinds.forEach(key => {
@@ -131,10 +131,12 @@ KeyBindEvents.modify(event => {
 				event.addHideKey(key);
 			}
 		}
-	})
-})
+	});
+});
 
 KeyBindEvents.register(event => {
-	event.create('adjcore.what_is_this', GLFW.GLFW_KEY_GRAVE_ACCENT, 'key.categories.adjcore')
-		.addModifier(KeyModifier.ALT);
-})
+	// event.create('adjcore.what_is_this', GLFW.GLFW_KEY_GRAVE_ACCENT, 'key.categories.adjcore')
+	// 	.addModifier(KeyModifier.ALT);
+
+	event.create('adjcore.menu', GLFW.GLFW_KEY_M, 'key.categories.adjcore');
+});
