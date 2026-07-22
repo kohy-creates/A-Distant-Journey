@@ -781,8 +781,8 @@
 			"isEnabled": true,
 			"material": "netherite",
 			"projectileDamage": 0.0,
-			"drawSpeed": 14,
-			"range": 18.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:netherite_scrap"
 			]
@@ -792,7 +792,7 @@
 			"material": "stone",
 			"projectileDamage": 0.0,
 			"drawSpeed": 16,
-			"range": 12.0,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:bone"
 			]
@@ -801,8 +801,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 15,
-			"range": 12.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -811,8 +811,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 15,
-			"range": 13.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -821,7 +821,7 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 12,
+			"drawSpeed": 20,
 			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
@@ -831,7 +831,7 @@
 			"isEnabled": true,
 			"material": "netherite",
 			"projectileDamage": 0.0,
-			"drawSpeed": 15,
+			"drawSpeed": 25,
 			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:netherite_scrap"
@@ -841,7 +841,7 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 11,
+			"drawSpeed": 20,
 			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
@@ -851,8 +851,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 25,
-			"range": 15.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -861,8 +861,8 @@
 			"isEnabled": false,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 17,
-			"range": 13.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -871,7 +871,7 @@
 			"isEnabled": true,
 			"material": "netherite",
 			"projectileDamage": 0.0,
-			"drawSpeed": 18,
+			"drawSpeed": 30,
 			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:netherite_scrap"
@@ -881,7 +881,7 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 15,
+			"drawSpeed": 18,
 			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
@@ -891,8 +891,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 16,
-			"range": 15.0,
+			"drawSpeed": 22,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -901,8 +901,8 @@
 			"isEnabled": true,
 			"material": "netherite",
 			"projectileDamage": 0.0,
-			"drawSpeed": 12,
-			"range": 17.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:netherite_scrap"
 			]
@@ -911,7 +911,7 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 17,
+			"drawSpeed": 30,
 			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
@@ -921,8 +921,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 17,
-			"range": 14.0,
+			"drawSpeed": 30,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -931,8 +931,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 20,
-			"range": 14.0,
+			"drawSpeed": 24,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -941,8 +941,8 @@
 			"isEnabled": false,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 17,
-			"range": 13.0,
+			"drawSpeed": 18,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -952,7 +952,7 @@
 			"material": "iron",
 			"projectileDamage": 0.0,
 			"drawSpeed": 20,
-			"range": 14.0,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -961,8 +961,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 30,
-			"range": 13.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -971,8 +971,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 14,
-			"range": 15.0,
+			"drawSpeed": 22,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -981,8 +981,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 16,
-			"range": 13.0,
+			"drawSpeed": 22,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -991,8 +991,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 14,
-			"range": 15.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1001,8 +1001,8 @@
 			"isEnabled": false,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 12,
-			"range": 12.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1011,8 +1011,8 @@
 			"isEnabled": false,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 12,
-			"range": 12.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1021,8 +1021,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 15,
-			"range": 13.0,
+			"drawSpeed": 23,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1031,7 +1031,7 @@
 			"isEnabled": false,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 15,
+			"drawSpeed": 20,
 			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
@@ -1041,8 +1041,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 15,
-			"range": 12.0,
+			"drawSpeed": 25,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1051,8 +1051,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 15,
-			"range": 13.0,
+			"drawSpeed": 23,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1061,8 +1061,8 @@
 			"isEnabled": false,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 11,
-			"range": 15.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1071,8 +1071,8 @@
 			"isEnabled": false,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 15,
-			"range": 14.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1083,8 +1083,8 @@
 			"isEnabled": false,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 9,
-			"range": 8.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1093,8 +1093,8 @@
 			"isEnabled": false,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 9,
-			"range": 9.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1103,8 +1103,8 @@
 			"isEnabled": false,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 9,
-			"range": 8.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1113,8 +1113,8 @@
 			"isEnabled": false,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 9,
-			"range": 8.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:planks"
 			]
@@ -1125,8 +1125,8 @@
 			"isEnabled": false,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 30,
-			"range": 19.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1135,8 +1135,8 @@
 			"isEnabled": false,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 25,
-			"range": 17.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:planks"
 			]
@@ -1145,8 +1145,8 @@
 			"isEnabled": false,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 30,
-			"range": 18.0,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1157,10 +1157,10 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 28,
-			"range": 8.0,
+			"drawSpeed": 9,
+			"range": 16.0,
 			"repairIngredient": [
-				"minecraft:iron_ingot"
+				"create:andesite_alloy"
 			]
 		},
 		"CROSSBOW_AZURE_SEEKER": {
@@ -1168,7 +1168,7 @@
 			"material": "iron",
 			"projectileDamage": 0.0,
 			"drawSpeed": 28,
-			"range": 8.399999618530273,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1177,8 +1177,8 @@
 			"isEnabled": false,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 23,
-			"range": 7.199999809265137,
+			"drawSpeed": 28,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1188,7 +1188,7 @@
 			"material": "iron",
 			"projectileDamage": 0.0,
 			"drawSpeed": 28,
-			"range": 8.0,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1198,7 +1198,7 @@
 			"material": "iron",
 			"projectileDamage": 0.0,
 			"drawSpeed": 28,
-			"range": 8.899999618530273,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1208,7 +1208,7 @@
 			"material": "iron",
 			"projectileDamage": 0.0,
 			"drawSpeed": 28,
-			"range": 8.399999618530273,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1217,8 +1217,8 @@
 			"isEnabled": true,
 			"material": "netherite",
 			"projectileDamage": 0.0,
-			"drawSpeed": 22,
-			"range": 14.0,
+			"drawSpeed": 35,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:netherite_scrap"
 			]
@@ -1227,8 +1227,8 @@
 			"isEnabled": true,
 			"material": "netherite",
 			"projectileDamage": 0.0,
-			"drawSpeed": 26,
-			"range": 8.0,
+			"drawSpeed": 38,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:netherite_scrap"
 			]
@@ -1237,8 +1237,8 @@
 			"isEnabled": false,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 24,
-			"range": 7.0,
+			"drawSpeed": 28,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1247,8 +1247,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 28,
-			"range": 8.0,
+			"drawSpeed": 40,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1258,7 +1258,7 @@
 			"material": "iron",
 			"projectileDamage": 0.0,
 			"drawSpeed": 28,
-			"range": 9.199999809265137,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1267,8 +1267,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 28,
-			"range": 7.900000095367432,
+			"drawSpeed": 37,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1278,7 +1278,7 @@
 			"material": "iron",
 			"projectileDamage": 0.0,
 			"drawSpeed": 28,
-			"range": 11.0,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1287,8 +1287,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 28,
-			"range": 8.600000381469727,
+			"drawSpeed": 38,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1298,7 +1298,7 @@
 			"material": "iron",
 			"projectileDamage": 0.0,
 			"drawSpeed": 38,
-			"range": 8.0,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1307,8 +1307,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 28,
-			"range": 8.0,
+			"drawSpeed": 40,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1317,8 +1317,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 28,
-			"range": 14.199999809265137,
+			"drawSpeed": 32,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1327,8 +1327,8 @@
 			"isEnabled": false,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 24,
-			"range": 14.0,
+			"drawSpeed": 28,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1337,8 +1337,8 @@
 			"isEnabled": true,
 			"material": "netherite",
 			"projectileDamage": 0.0,
-			"drawSpeed": 20,
-			"range": 13.0,
+			"drawSpeed": 24,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:netherite_scrap"
 			]
@@ -1347,8 +1347,8 @@
 			"isEnabled": false,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 20,
-			"range": 8.199999809265137,
+			"drawSpeed": 28,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1358,7 +1358,7 @@
 			"material": "iron",
 			"projectileDamage": 0.0,
 			"drawSpeed": 28,
-			"range": 8.0,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1367,8 +1367,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 25,
-			"range": 12.0,
+			"drawSpeed": 32,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1377,8 +1377,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 40,
-			"range": 8.800000190734863,
+			"drawSpeed": 48,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1387,8 +1387,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 28,
-			"range": 8.0,
+			"drawSpeed": 22,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1397,8 +1397,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 28,
-			"range": 11.0,
+			"drawSpeed": 22,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1407,8 +1407,8 @@
 			"isEnabled": true,
 			"material": "iron",
 			"projectileDamage": 0.0,
-			"drawSpeed": 28,
-			"range": 8.899999618530273,
+			"drawSpeed": 20,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1418,7 +1418,7 @@
 			"material": "iron",
 			"projectileDamage": 0.0,
 			"drawSpeed": 28,
-			"range": 10.199999809265137,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:iron_ingot"
 			]
@@ -1427,8 +1427,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 22,
-			"range": 14.5,
+			"drawSpeed": 38,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]
@@ -1437,8 +1437,8 @@
 			"isEnabled": true,
 			"material": "diamond",
 			"projectileDamage": 0.0,
-			"drawSpeed": 26,
-			"range": 12.5,
+			"drawSpeed": 38,
+			"range": 16.0,
 			"repairIngredient": [
 				"minecraft:diamond"
 			]

@@ -35,9 +35,9 @@
 			height: 1.0d
 			image: "adj:textures/other/title_underground.png"
 			rotation: 0.0d
-			width: 2.5d
-			x: 5.0d
-			y: -2.0d
+			width: 7.5d
+			x: -3.0d
+			y: -6.5d
 		}
 		{
 			height: 1.0d
@@ -51,9 +51,9 @@
 			height: 1.0d
 			image: "adj:textures/other/title_ocean.png"
 			rotation: 0.0d
-			width: 2.5d
-			x: 7.5d
-			y: -3.5d
+			width: 3.5d
+			x: 10.5d
+			y: -4.0d
 		}
 		{
 			height: 1.0d
@@ -67,17 +67,17 @@
 			height: 1.0d
 			image: "adj:textures/other/title_the_end.png"
 			rotation: 0.0d
-			width: 2.5d
-			x: 5.0d
-			y: -0.5d
+			width: 4.0d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			height: 1.0d
 			image: "adj:textures/other/title_surface.png"
 			rotation: 0.0d
-			width: 2.5d
-			x: 7.5d
-			y: -0.5d
+			width: 4.5d
+			x: 11.5d
+			y: -1.0d
 		}
 	]
 	order_index: 3
@@ -2257,6 +2257,27 @@
 			}]
 			x: 8.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["25A6D4B901F93DE5"]
+			icon: "tide:fishing_hook"
+			id: "55947F8EF8AA0FE1"
+			subtitle: "Craft or find any Fishing Hook"
+			tasks: [{
+				id: "70CA6CB3AF1D3C52"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tide:hooks"
+					}
+				}
+				title: "Any #tide:hooks"
+				type: "item"
+			}]
+			title: "Hooked On Fishing"
+			x: -2.0d
+			y: -3.5d
 		}
 	]
 	title: "Let's Go Fishing!"

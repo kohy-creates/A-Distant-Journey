@@ -1,4 +1,4 @@
-//priority: 500
+//priority: 1000
 /**
  * Constants for classes I know are going to be (or might be at some point) shared between files
  * It's easier to keep track of them while they are in one place
@@ -27,3 +27,4 @@ const $Registry = Java.loadClass("net.minecraft.core.Registry");
 const $LunarEventClass = Java.loadClass("dev.corgitaco.enhancedcelestials.api.lunarevent.LunarEvent");
 const $EnhancedCelestialsRegistry = Java.loadClass("dev.corgitaco.enhancedcelestials.api.EnhancedCelestialsRegistry");
 const $PlayerChangedDimensionEvent = Java.loadClass("net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangedDimensionEvent")
+const $PlayerChangeGameModeEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangeGameModeEvent');

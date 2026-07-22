@@ -1,3 +1,4 @@
+// Note: boss trophies are added to drops directly, in 'item/loot_tables.js'
 const trophyConfig = {
     overrides: {
         'minecraft:ghast': 15,
@@ -36,7 +37,7 @@ EntityEvents.death(event => {
         let type = entity.getType();
         if (trophyConfig.disableTrophiesFor.includes(type)) return;
         let player = event.getSource().getActual();
-        if (player instanceof $Player) {
+        if (player instanceof $Player && !player.isFake()) {
             let server = event.getServer();
             let data = server.getPersistentData();
             if (!data.monsterKills) {

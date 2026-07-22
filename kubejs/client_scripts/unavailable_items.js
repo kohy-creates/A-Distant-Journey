@@ -75,13 +75,8 @@ ClientEvents.tick(event => {
 });
 
 ADJClientEvents.itemIsLockedRenderCheck(event => {
-
 	const id = event.getItemStack().getItem().getId();
-
 	if (UnavailableItems.cache.shouldHide(id)) {
-		event.cancel();
-	}
-	else if (id.includes('valkyrum') && (UnavailableItems.stages && !UnavailableItems.stages.has('valkyrum_unlocked'))) {
 		event.cancel();
 	}
 });

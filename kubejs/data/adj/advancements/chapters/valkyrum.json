@@ -1,0 +1,18 @@
+{
+	"parent": "adj:chapters/chapter_2",
+	"display": {
+		"icon": {
+			"item": "netherrack"
+		},
+		"description": "",
+		"title": "Valkyrum Side Progression",
+		"announce_to_chat": false,
+		"show_toast": false,
+		"hidden": false
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "impossible"
+		}
+	}
+}

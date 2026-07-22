@@ -123,18 +123,8 @@ const DecursioStages = {
 		bannedItems: new Set([typeof String]),
 		shouldHide: function (id) {
 			return this.bannedItems.has(String(id));
-		}
-	},
-}
-
-ServerEvents.tick(event => {
-	DecursioStages.cache.ticker++;
-	if (DecursioStages.cache.ticker == DecursioStages.cache.interval) {
-		DecursioStages.cache.ticker = 0;
-
-		DecursioStages.cache.currentChapter = global.getCurrentChapter(event.getServer());
-		if (DecursioStages.cache.chapterCached == null || DecursioStages.cache.chapterCached != DecursioStages.cache.currentChapter) {
-
+		},
+		generateCache: function () {
 			Utils.runAsync(() => {
 				console.log('Generating undiscovered item cache...', 'This is running async btw!')
 				DecursioStages.cache.bannedItems = new Set([typeof String]);
@@ -171,8 +161,41 @@ ServerEvents.tick(event => {
 				DecursioStages.cache.chapterCached = DecursioStages.cache.currentChapter;
 			});
 		}
-	}
-});
+	},
+	hiddenBlocks: {
+		'chapter_1': {
+			'mythicmetals:orichalcum_ore': 'stone',
+			'mythicmetals:tuff_orichalcum_ore': 'tuff',
+			'mythicmetals:smooth_basalt_orichalcum_ore': 'smooth_basalt',
+			'mythicmetals:deepslate_orichalcum_ore': 'deepslate',
+			'mythicmetals:mythril_ore': 'stone',
+			'mythicmetals:deepslate_mythril_ore': 'deepslate',
+		},
+		'chapter_2': {
+			'mythicmetals:palladium_ore': 'netherrack',
+		},
+		'chapter_3': {
+			'ancient_debris': 'netherrack',
+			'mythicmetals:adamantite_ore': 'stone',
+			'mythicmetals:deepslate_adamantite_ore': 'deepslate',
+		},
+		'chapter_4': {
+			'mythicmetals:starrite_ore': 'stone',
+			'mythicmetals:calcite_starrite_ore': 'calcite',
+			'mythicmetals:end_stone_starrite_ore': 'end_stone',
+			'majruszsdifficulty:enderium_shard_ore': 'end_stone',
+			'mythicmetals:prometheum_ore': 'stone',
+			'mythicmetals:deepslate_prometheum_ore': 'deepslate',
+		},
+		'chapter_5': {
+			'mythicmetals:unobtainium_ore': 'stone',
+			'mythicmetals:deepslate_unobtainium_ore': 'deepslate',
+		},
+		'valkyrum': {
+			'ancient_aether:valkyrum_ore': 'aether:holystone'
+		}
+	},
+};
 
 ADJServerEvents.recipeLookup(event => {
 	const item = event.getItem().getId();
@@ -186,6 +209,18 @@ ADJServerEvents.recipeLookup(event => {
 
 ServerEvents.tick(event => {
 	const server = event.getServer();
+
+	// Undiscovered item cache
+	DecursioStages.cache.ticker++;
+	if (DecursioStages.cache.ticker == DecursioStages.cache.interval) {
+		DecursioStages.cache.ticker = 0;
+
+		DecursioStages.cache.currentChapter = global.getCurrentChapter(event.getServer());
+		if (DecursioStages.cache.chapterCached == null || DecursioStages.cache.chapterCached != DecursioStages.cache.currentChapter) {
+			DecursioStages.cache.generateCache();
+		}
+	}
+
 	const persistentData = server.persistentData;
 	if (!persistentData.chapters) {
 		persistentData.chapters = {};
@@ -239,6 +274,7 @@ PlayerEvents.tick(event => {
 					server.runCommandSilent(
 						'/decstages add ' + player.getUsername() + ' ' + stageToGrant + ' true'
 					);
+					global.grantAdvancement(server, player, `adj:chapters/${stageToGrant}`);
 				}
 			}
 
@@ -247,14 +283,40 @@ PlayerEvents.tick(event => {
 		if (stageName === 'chapter_0' && player.level.dimension === 'minecraft:the_nether') {
 			server.persistentData.chapters.putString(DecursioStages.STAGE_TO_SET, 'chapter_1');
 		}
+	}
 
-		// Valkyrum side progression
-		if (server.persistentData.valkyrumUnlocked && !player.stages.has('valkyrum_unlocked')) {
-			player.stages.add('valkyrum_unlocked');
-		}
+	// Valkyrum side progression
+	if (server.persistentData.valkyrumUnlocked && !player.stages.has('valkyrum_unlocked')) {
+		player.stages.add('valkyrum_unlocked');
+		global.grantAdvancement(server, player, `adj:chapters/valkyrum`);
 	}
 });
 
+// Valkyrum side progression
+EntityEvents.death('aether:valkyrie_queen', event => {
+	const server = event.getServer();
+	if (!server.persistentData.valkyrumUnlocked) {
+		server.persistentData.valkyrumUnlocked = true;
+		global.broadcast(server, global.announcementMsg('The depths of The Aether have been blessed with Valkyrum', global.messageColors.newOre));
+	}
+});
+
+
+// Ore Stages
+ServerEvents.revelation(event => {
+	Object.keys(DecursioStages.hiddenBlocks).forEach(chapter => {
+		for (let [state, replacement] of Object.entries(DecursioStages.hiddenBlocks[chapter])) {
+			event.register(`adj:chapters/${chapter}`, rev => {
+				rev.cloakBlockState(state, replacement)
+					.cloakItem(state, replacement);
+
+				let name = `<obfuscate mode=random>${Block.getBlock(replacement).getName().getString()}?</obfuscate>`;
+				rev.replaceBlockName(state, name)
+					.replaceItemName(state, name);
+			});
+		}
+	});
+});
 
 // Restriction tags
 ServerEvents.tags('item', restrictions => {
@@ -302,8 +364,7 @@ for (let [item, data] of Object.entries(InteractionLimits)) {
 	});
 }
 
-////////////////////
-////////////////////
+/// -------------------------------------------------- ///
 
 ServerEvents.commandRegistry(event => {
 
@@ -313,13 +374,25 @@ ServerEvents.commandRegistry(event => {
 		.requires(s => s.hasPermission(4))
 		.executes(c => resetProgress(c.source.player, c.source.server))
 	);
+	/**
+	 * 
+	 * @param {Internal.Player_} player 
+	 * @param {Internal.MinecraftServer_} server 
+	 * @returns 
+	 */
 	let resetProgress = (player, server) => {
 		let serverData = server.persistentData;
 		DecursioStages.STAGES.forEach(stage => {
 			player.stages.remove(stage);
 			serverData.chapters.remove(stage);
 			server.runCommandSilent(
-				'/decstages remove ' + player.getUsername() + ' ' + stage + ' true'
+				`/decstages remove ${player.getUsername()} ${stage} true`
+			);
+			server.runCommandSilent(
+				`/advancement revoke ${player.getUsername()} from adj:twilight_forest/blank`
+			);
+			server.runCommandSilent(
+				`/advancement revoke ${player.getUsername()} from adj:chapters/root`
 			);
 		});
 		serverData.chapters.remove(DecursioStages.CURRENT_STAGE);
@@ -329,7 +402,7 @@ ServerEvents.commandRegistry(event => {
 		player.tell(Text.red('Reset all internal progress'));
 		DecursioStages.changeGamerules(server, 'chapter_0');
 		return 1;
-	}
+	};
 
 	event.register(Commands.literal('jumpprogress')
 		.requires(s => s.hasPermission(4))
@@ -339,16 +412,14 @@ ServerEvents.commandRegistry(event => {
 	);
 	/**
 	 * 
-	 * @param {$Player_} player 
-	 * @param {$MinecraftServer_} server 
+	 * @param {Internal.Player_} player 
+	 * @param {Internal.MinecraftServer_} server 
 	 * @param {integer} chapter 
 	 * @returns 
 	 */
 	let jumpProgress = (player, server, chapter) => {
-
 		server.persistentData.chapters.put(DecursioStages.STAGE_TO_SET, `chapter_${chapter}`);
-
 		player.tell(Text.red('Jumped to chapter ' + chapter));
 		return 1;
-	}
+	};
 });

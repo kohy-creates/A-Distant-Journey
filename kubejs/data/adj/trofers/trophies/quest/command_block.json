@@ -1,0 +1,14 @@
+{
+	"colors": {
+		"accent": "#FFB469",
+		"base": "F0F0F0"
+	},
+	"display": {
+		"scale": 1
+	},
+	"effects": {},
+	"item": {
+		"item": "minecraft:command_block"
+	},
+	"name": "Command Block Trophy"
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": {
+    "simplymore:one_handed_spin_slash_left": [
+      {
+        "particle_type": "slash90",
+        "x_addition": 0.7,
+        "y_addition": -0.1,
+        "pitch_addition": 0.0,
+        "roll_set": 180.0
+      }
+    ]
+  }
+}

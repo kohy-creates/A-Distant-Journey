@@ -1,0 +1,14 @@
+{
+	"colors": {
+		"accent": "#4EA7F2",
+		"base": "#ACD7FA"
+	},
+	"display": {
+		"scale": 1
+	},
+	"effects": {},
+	"item": {
+		"item": "tide:sunflower_fishing_rod"
+	},
+	"name": "Fishing Mastery Trophy"
+}

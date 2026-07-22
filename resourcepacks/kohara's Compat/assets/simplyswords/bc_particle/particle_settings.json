@@ -1,0 +1,102 @@
+{
+  "replace": false,
+  "values": {
+    "simplyswords:dragable_slash_upward": [
+      {
+        "particle_type": "slash180",
+        "x_addition": 0.1,
+        "y_addition": -0.1,
+        "pitch_addition": 0.0,
+        "local_yaw": 45,
+        "roll_set": 85.0
+      }
+    ],
+    "simplyswords:chakram_spin": [
+      {
+        "particle_type": "slash360",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "pitch_addition": 0.0,
+        "roll_set": 180.0
+      }
+    ],
+    "simplyswords:chakram_spin_long": [
+      {
+        "particle_type": "slash360",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      }
+    ],
+    "simplyswords:one_handed_throw_chakram_right": [
+      {
+        "particle_type": "stab",
+        "x_addition": -0.4,
+        "y_addition": -0.3,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      }
+    ],
+    "simplyswords:one_handed_chakram_throw_left": [
+      {
+        "particle_type": "stab",
+        "x_addition": 0.4,
+        "y_addition": -0.3,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      }
+    ],
+    "simplyswords:chakram_spin_long_grounded": [
+      {
+        "particle_type": "slash360",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "pitch_addition": 0.0,
+        "roll_set": -180.0
+      }
+    ],
+    "simplyswords:warglaive_spin": [
+      {
+        "particle_type": "slash360",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "pitch_addition": 0.0,
+        "roll_set": 180.0
+      }
+    ],
+    "simplyswords:warglaive_slash_horizontal_right": {
+      "particle_type": "slash90",
+      "x_addition": 0.7,
+      "y_addition": -0.1,
+      "pitch_addition": 0.0,
+      "local_yaw": 0.0,
+      "roll_set": 0.0
+    },
+    "simplyswords:warglaive_slash_horizontal_left": [
+      {
+        "particle_type": "slash90",
+        "x_addition": 0.7,
+        "y_addition": -0.1,
+        "pitch_addition": 0.0,
+        "roll_set": 180.0
+      }
+    ],
+    "simplyswords:halberd_stab_right": {
+      "particle_type": "stab",
+      "x_addition": 0.2,
+      "y_addition": 0.15,
+      "pitch_addition": 0.0,
+      "roll_set": 190.0
+    },
+    "simplyswords:halberd_slash_vertical_right": [
+      {
+        "particle_type": "slash180",
+        "x_addition": 0.4,
+        "y_addition": -0.1,
+        "local_yaw": 30.0,
+        "roll_set": 0
+      }
+    ]
+  }
+}

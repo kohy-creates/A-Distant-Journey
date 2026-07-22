@@ -41,7 +41,7 @@ MoreJSEvents.wandererTrades(event => {
 	});
 })
 
-const replacementsList = Object.keys(replaceItemsMap);
+const replacementsList = Object.keys(global.replaceItemsMap);
 const replacementExceptions = [
 	'minecraft:diamond_helmet',
 	'minecraft:diamond_chestplate',
@@ -84,13 +84,13 @@ MoreJSEvents.updateVillagerOffers(event => {
 		const secondInput = offer.secondInput;
 
 		if (replacementsList.includes(firstInput.getId()) && !replacementExceptions.includes(firstInput.getId())) {
-			offer.setFirstInput(Item.of(replaceItemsMap[firstInput.getId()]))
+			offer.setFirstInput(Item.of(global.replaceItemsMap[firstInput.getId()]))
 		}
 		if (replacementsList.includes(secondInput.getId()) && !replacementExceptions.includes(secondInput.getId())) {
-			offer.setSecondInput(Item.of(replaceItemsMap[secondInput.getId()]))
+			offer.setSecondInput(Item.of(global.replaceItemsMap[secondInput.getId()]))
 		}
 		if (replacementsList.includes(output.getId()) && !replacementExceptions.includes(output.getId())) {
-			offer.setOutput(Item.of(replaceItemsMap[output.getId()]))
+			offer.setOutput(Item.of(global.replaceItemsMap[output.getId()]))
 		}
 		else if (output.getItem() instanceof $ArmorItem) {
 			let defense = 0;

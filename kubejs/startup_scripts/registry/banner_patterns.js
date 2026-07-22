@@ -9,7 +9,7 @@ StartupEvents.registry('banner_pattern', registry => {
 
 		Color.DYE.forEach(color => {
 			lang[`block.minecraft.banner.kubejs.${id}.${color}`] = `${global.toTitleCase(color)} ${global.toTitleCase(global.textReplaceAll(id.split('/')[1], '_', ''))}`
-		})
+		});
 	}
 
 	registerBannerPattern('moxvallix/chequered');
@@ -86,4 +86,4 @@ StartupEvents.registry('banner_pattern', registry => {
 	registerBannerPattern('moxvallix/trident', 'minecraft:pattern_item/skull');
 
 	JsonIO.write('kubejs/assets/kubejs/lang/en_us.json', lang)
-})
+});

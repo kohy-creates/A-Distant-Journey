@@ -1,0 +1,18 @@
+{
+	"parent": "adj:chapters/chapter_3",
+	"display": {
+		"icon": {
+			"item": "netherrack"
+		},
+		"description": "",
+		"title": "Chapter 1",
+		"announce_to_chat": false,
+		"show_toast": false,
+		"hidden": false
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "impossible"
+		}
+	}
+}

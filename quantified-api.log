@@ -1,0 +1,44 @@
+[Quantified] Quantified API starting
+[Quantified] Quantified Core Starting
+[Quantified] Quantified Async Pool Start
+[Quantified] Quantified GPU Acceleration Starting
+[Quantified] [OpenCL] Background probe scheduled
+[Quantified] OpenCL probe deferred (background)
+[Quantified] [Vulkan] Background probe pending
+[Quantified] [Vulkan] Vulkan probe scheduler armed (maxAttempts=3, initialDelayMs=0, retryDelayMs=60000)
+[Quantified] [Vulkan] Probe scheduled - attempt 1 (initial) in 0 ms
+[Quantified] Vulkan probe deferred (background, isolated legacy runtime)
+[Quantified] [Vulkan] Probe scheduler armed
+[Quantified] Quantified API WebPanel starting
+[Quantified] Forcing API class initialization
+[Quantified] OpenCL core classes loaded
+[Quantified] Vulkan isolated runtime loaded for legacy Minecraft
+[Quantified] API classes initialized successfully
+[Quantified] [Vulkan] Probe succeeded - NVIDIA GeForce RTX 4060 (attempt 1, trigger: initial)
+[Quantified] [OpenCL] Probe skipped - OpenCL runtime unavailable: No Java OpenCL binding found (org.lwjgl.opencl); isolated probe detected NVIDIA Corporation NVIDIA GeForce RTX 4060 but in-process runtime execution is unavailable (binding: NONE)
+[Quantified] [OpenCL] Probe unavailable - attempt 1 (initial) - GPU acceleration disabled
+[Quantified] [OpenCL] GPU detected: NVIDIA GeForce RTX 4060/PCIe/SSE2
+[Quantified] [OpenCL] OpenCL probe triggered (OpenGL context ready)
+[Quantified] [Vulkan] Vulkan probe triggered (OpenGL context ready)
+[Quantified] Quantified API starting
+[Quantified] Quantified Core Starting
+[Quantified] Quantified Async Pool Start
+[Quantified] Quantified GPU Acceleration Starting
+[Quantified] [OpenCL] Background probe scheduled
+[Quantified] OpenCL probe deferred (background)
+[Quantified] [Vulkan] Background probe pending
+[Quantified] [Vulkan] Vulkan probe scheduler armed (maxAttempts=3, initialDelayMs=0, retryDelayMs=60000)
+[Quantified] [Vulkan] Probe scheduled - attempt 1 (initial) in 0 ms
+[Quantified] Vulkan probe deferred (background, isolated legacy runtime)
+[Quantified] [Vulkan] Probe scheduler armed
+[Quantified] Quantified API WebPanel starting
+[Quantified] Forcing API class initialization
+[Quantified] OpenCL core classes loaded
+[Quantified] Vulkan isolated runtime loaded for legacy Minecraft
+[Quantified] API classes initialized successfully
+[Quantified] [Vulkan] Probe succeeded - NVIDIA GeForce RTX 4060 (attempt 1, trigger: initial)
+[Quantified] [OpenCL] Probe skipped - OpenCL runtime unavailable: No Java OpenCL binding found (org.lwjgl.opencl); isolated probe detected NVIDIA Corporation NVIDIA GeForce RTX 4060 but in-process runtime execution is unavailable (binding: NONE)
+[Quantified] [OpenCL] Probe unavailable - attempt 1 (initial) - GPU acceleration disabled
+[Quantified] [OpenCL] GPU detected: NVIDIA GeForce RTX 4060/PCIe/SSE2
+[Quantified] [OpenCL] OpenCL probe triggered (OpenGL context ready)
+[Quantified] [Vulkan] Vulkan probe triggered (OpenGL context ready)

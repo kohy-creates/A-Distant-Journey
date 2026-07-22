@@ -1,6 +1,6 @@
 LootJS.modifiers((event) => {
 
-	for (const [before, after] of Object.entries(replaceItemsMap)) {
+	for (const [before, after] of Object.entries(global.replaceItemsMap)) {
 		event.addLootTableModifier(/.*/).replaceLoot(before, after, true)
 	}
 
