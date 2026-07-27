@@ -307,3 +307,5 @@ global.calculateSpellDamage = function (player, baseAmount, randomize) {
 	let mul2 = (randomize) ? 1 + Math.random() * 0.3 - 0.15 : 1;
 	return baseAmount * mul * mul2;
 };
+
+global.menuHighlightColor = '#77FFFFFF';

@@ -59,7 +59,8 @@ LootJS.modifiers((event) => {
 	const removeModifiersFromMods = [
 		'terra_curio',
 		'evilcraft',
-		'travelersbackpack'
+		'travelersbackpack',
+		'tide'
 	];
 	removeModifiersFromMods.forEach(mod => event.removeGlobalModifier(`@${mod}`));
 

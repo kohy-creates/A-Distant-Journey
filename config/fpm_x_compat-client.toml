@@ -1,0 +1,55 @@
+
+[global]
+	#Vertical body offset applied while crouching during first-person attack animations.
+	#Range: -2.0 ~ 2.0
+	bodyYOffset = -0.1
+	#Interpolation speed for arm pitch bias. 0 is frozen, 1 is instant.
+	#Range: 0.0 ~ 1.0
+	biasSmoothingSpeed = 0.1
+	#Curios/Relics slot name fragments hidden while FPM renders the local first-person body.
+	ignoredAccessorySlots = ["head", "hat", "face", "mask", "goggle"]
+
+[rightArm]
+	#Range: 0.0 ~ 2.0
+	pitchMultiplier = 0.7
+	#Range: -2.0 ~ 2.0
+	pitchOffset = 0.15
+	#Range: 0.0 ~ 4.0
+	pitchCurve = 0.0
+	#Range: 0.0 ~ 1.0
+	pitchCurveFloor = 0.75
+	#Range: -2.0 ~ 2.0
+	upperPitchBias = 0.1
+	#Range: -2.0 ~ 2.0
+	lowerPitchBias = 0.1
+	#Range: -4.0 ~ 4.0
+	positionXOffset = 0.0
+	#Range: -4.0 ~ 4.0
+	positionYOffset = 0.2
+	#Range: -4.0 ~ 6.0
+	positionZOffset = 2.0
+	#Range: -4.0 ~ 6.0
+	lookUpZShift = 2.0
+
+[leftArm]
+	#Range: 0.0 ~ 2.0
+	pitchMultiplier = 0.7
+	#Range: -2.0 ~ 2.0
+	pitchOffset = 0.15
+	#Range: 0.0 ~ 4.0
+	pitchCurve = 0.0
+	#Range: 0.0 ~ 1.0
+	pitchCurveFloor = 0.75
+	#Range: -2.0 ~ 2.0
+	upperPitchBias = 0.1
+	#Range: -2.0 ~ 2.0
+	lowerPitchBias = 0.1
+	#Range: -4.0 ~ 4.0
+	positionXOffset = 0.0
+	#Range: -4.0 ~ 4.0
+	positionYOffset = 0.2
+	#Range: -4.0 ~ 6.0
+	positionZOffset = 2.0
+	#Range: -4.0 ~ 6.0
+	lookUpZShift = 2.0
+

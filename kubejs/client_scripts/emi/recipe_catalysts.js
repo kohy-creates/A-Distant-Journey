@@ -31,7 +31,7 @@ JEIAddedEvents.registerRecipeCatalysts(event => {
 	addRecipeCatalyst('minecraft:campfire', [
 		'ancient_aether:ambrosium_campfire',
 		'netherexp:ancient_campfire',
-		'witherstor_delight:wither_stove'
+		'witherstorm_delight:wither_stove'
 	]);
 
 	addRecipeCatalyst('botania:mana_infusion', [
@@ -65,16 +65,16 @@ JEIAddedEvents.registerRecipeCatalysts(event => {
 	]);
 
 	addRecipeCatalyst('ali:archaeology_loot', [
-		'betterarchaeology:iron_brush',
-		'betterarchaeology:diamond_brush',
-		'betterarchaeology:netherite_brush',
+		'betterarcheology:iron_brush',
+		'betterarcheology:diamond_brush',
+		'betterarcheology:netherite_brush',
 	]);
 
 	addRecipeCatalyst('betterarcheology:identifying', [
 		'brush',
-		'betterarchaeology:iron_brush',
-		'betterarchaeology:diamond_brush',
-		'betterarchaeology:netherite_brush',
+		'betterarcheology:iron_brush',
+		'betterarcheology:diamond_brush',
+		'betterarcheology:netherite_brush',
 	]);
 
 	addRecipeCatalyst('farmersdelight:cooking', [

@@ -1,0 +1,19 @@
+
+#Client-side settings for SlotLib
+[client]
+	#The corner of the player model to place the SlotLib button
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	buttonCorner = "BOTTOM_RIGHT"
+	#Additional X offset for the button in survival inventory
+	#Range: -100 ~ 100
+	buttonXOffset = 0
+	#Additional Y offset for the button in survival inventory
+	#Range: -100 ~ 100
+	buttonYOffset = 0
+	#Additional X offset for the button in creative inventory
+	#Range: -100 ~ 100
+	creativeButtonXOffset = 0
+	#Additional Y offset for the button in creative inventory
+	#Range: -100 ~ 100
+	creativeButtonYOffset = 0
+

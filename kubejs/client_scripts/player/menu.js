@@ -1,188 +1,219 @@
-// const PlayerMenu = {
+// KeyBindEvents.keyRelease('adjcore.menu', event => {
+// 	if (Client.level) {
+// 		RadialMenus.open('adj:player_menu');
+// 	}
+// });
+
+// /// ---------------------------------------------- ///
+
+// RadialMenuEvents.register(event => {
+// 	const ringColors = ['#16a3e4f3', '#1a071bc2'];
+
+// 	try {
+// 		Actions.register('press_key', params => global.keyPressAction(params)); // because the built-in one was acting up on me
+// 		Actions.register('open_menu', params => global.openMenuAction(params));
+// 	}
+// 	catch (e) {
+// 		console.log(e);
+// 	};
+
+
 // 	/**
-// 	 * Simulates the given keybind being pressed
-// 	 * Currently unused, but I kept it cause it might come in handy.
+// 	 * Just here so that I can autocomplete it
+// 	 * @param {Internal.KeyMapping_} keyMapping 
+// 	 * @returns 
+// 	 */
+// 	function getKey(keyMapping) {
+// 		return keyMapping;
+// 	}
+
+// 	/**
+// 	 * 
 // 	 * @param {Internal.KeyMapping_} keyMapping 
 // 	 */
-// 	simulateKeyPress: function (keyMapping) {
-// 		let keyMapping = KeyBindUtil.ToKeyMapping(keyMapping);
-// 		keyMapping.setDown(true);
-// 		keyMapping.clickCount = 1;
-// 	},
+// 	function getHotkey(keyMapping) {
+// 		let mapping = KeyBindUtil.ToKeyMapping(keyMapping);
+// 		return mapping.isUnbound() ? 'UNBOUND' : mapping.getDefaultKey().getDisplayName().getString();
+// 	}
+
+// 	event.create('adj:player_menu')
+// 		.radii(75, 135)
+// 		.animationSpeed(0.8)
+// 		.ringColors(ringColors)
+// 		.slotItem(
+// 			'Armor Settings',
+// 			'iron_chestplate',
+// 			Actions.of('open_menu', { menu: 'adj:armor' }),
+// 			Text.of('Equipped Gear...'),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Shaders',
+// 			'cherry_sapling',
+// 			Actions.of('open_menu', { menu: 'adj:shaders' }),
+// 			Text.of('Shaders...'),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'World Map',
+// 			'kubejs:map_atlas',
+// 			Actions.of('press_key', { key: getKey('gui.xaero_open_map') }),
+// 			Text.of('Open World Map'),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Voice Chat Settings',
+// 			'supplementaries:speaker_block',
+// 			Actions.of('press_key', { key: getKey('key.voice_chat') }),
+// 			Text.of(`Open Voice Chat Settings (Hotkey: ${getHotkey('key.voice_chat')})`),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Mute Mic',
+// 			'note_block',
+// 			Actions.of('press_key', { key: getKey('key.mute_microphone') }),
+// 			Text.of(`Mute/Unmute Microphone (Hotkey: ${getHotkey('key.mute_microphone')})`),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Toggle First Person Model',
+// 			Item.of('player_head', 1, { SkullOwner: `${Client.player.getUsername()}` }),
+// 			Actions.of('press_key', { key: getKey('key.firstperson.toggle') }),
+// 			Text.of(`Toggle Player Model\n(Hotkey: ${getHotkey('key.firstperson.toggle')})`),
+// 			global.menuHighlightColor
+// 		)
+
+// 	event.create('adj:shaders')
+// 		.radii(55, 100)
+// 		.animationSpeed(1.0)
+// 		.ringColors(ringColors)
+// 		.slotItem(
+// 			'Shader Selection',
+// 			'filled_map',
+// 			Actions.of('press_key', { key: getKey('iris.keybind.shaderPackSelection') }),
+// 			Text.of('Open Shaders selection'),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Toggle Shaders',
+// 			'lever',
+// 			Actions.of('press_key', { key: getKey('iris.keybind.toggleShaders') }),
+// 			Text.of('Toggle Shaders'),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Reload Shaders',
+// 			'clock',
+// 			Actions.of('press_key', { key: getKey('iris.keybind.reload') }),
+// 			Text.of('Reload Shaders'),
+// 			global.menuHighlightColor
+// 		)
+
+// 	event.create('adj:armor')
+// 		.radii(55, 100)
+// 		.animationSpeed(1.0)
+// 		.ringColors(ringColors)
+// 		.slotItem(
+// 			'Armor Visibility',
+// 			'rediscovered:gear',
+// 			Actions.of('press_key', { key: getKey('key.showmeyourskin.open_settings') }),
+// 			Text.of(`Configure armor visibility`),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Loadout 1',
+// 			'leather_chestplate',
+// 			Actions.of('press_key', { key: getKey('adjcore.loadout.1') }),
+// 			Text.of(`Loadout #1\n(Hotkey: ${getHotkey('adjcore.loadout.1')})`),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Loadout 2',
+// 			'golden_chestplate',
+// 			Actions.of('press_key', { key: getKey('adjcore.loadout.2') }),
+// 			Text.of(`Loadout #2\n(Hotkey: ${getHotkey('adjcore.loadout.2')})`),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Loadout 3',
+// 			'diamond_chestplate',
+// 			Actions.of('press_key', { key: getKey('adjcore.loadout.3') }),
+// 			Text.of(`Loadout #3\n(Hotkey: ${getHotkey('adjcore.loadout.3')})`),
+// 			global.menuHighlightColor
+// 		)
+
+// 	event.create('adj:creative')
+// 		.radii(55, 100)
+// 		.animationSpeed(1.0)
+// 		.ringColors(ringColors)
+// 		.slotItem(
+// 			'Time Skip',
+// 			'clock',
+// 			Actions.of('run_command', { command: '/time add 12000' }),
+// 			Text.of('Skip time by 12 hours'),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Gamemode 0',
+// 			'oak_planks',
+// 			Actions.of('run_command', { command: '/gamemode survival' }),
+// 			Text.of('Gamemode: Casual'),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Gamemode 1',
+// 			'structure_gel:building_tool',
+// 			Actions.of('run_command', { command: '/gamemode creative' }),
+// 			Text.of('Gamemode: Journey'),
+// 			global.menuHighlightColor
+// 		)
+// 		.slotItem(
+// 			'Gamemode 3',
+// 			'quark:cloud',
+// 			Actions.of('run_command', { command: '/gamemode spectator' }),
+// 			Text.of('Gamemode: Spectator'),
+// 			global.menuHighlightColor
+// 		)
+// });
+
+// /// ---------------------------------------------- ///
+
+// global.openMenuAction = function (params) {
+// 	const menu = params.get('menu').asString('');
+// 	// console.log('Scheduled opening menu ' + menu);
+// 	Client.scheduleInTicks(5, () => {
+// 		RadialMenus.open(menu);
+// 		// console.log('Opening menu ' + menu);
+// 	});
 // };
 
-KeyBindEvents.keyRelease('adjcore.menu', event => {
-	RadialMenus.open('adj:player_menu');
-	console.log('test')
-});
+// const $KeyMapping = Java.loadClass('net.minecraft.client.KeyMapping');
 
-/// ---------------------------------------------- ///
+// global.keyPressAction = function (params) {
+// 	/** @type {Internal.KeyMapping_} */
+// 	const keyStr = params.get('key').asString('');
+// 	let keyMapping = KeyBindUtil.ToKeyMapping(keyStr);
 
-RadialMenuEvents.register(event => {
-	const ringColors = ['1A071B10', 'D91A6B3A'];
-	const highlightColor = '#77FFFFFF';
+// 	console.log('Pressing key ' + keyStr);
 
-	/**
-	 * Just here so that I can autocomplete it
-	 * @param {Internal.KeyMapping_} keyMapping 
-	 * @returns 
-	 */
-	function getKey(keyMapping) {
-		return keyMapping
-	}
+// 	if (!keyMapping) return;
 
-	/**
-	 * 
-	 * @param {Internal.KeyMapping_} keyMapping 
-	 */
-	function getHotkey(keyMapping) {
-		let mapping = KeyBindUtil.ToKeyMapping(keyMapping);
-		return mapping.isUnbound() ? 'UNBOUND' : mapping.getDefaultKey().getDisplayName().getString();
-	}
+// 	Client.scheduleInTicks(6, () => {
+// 		const inputKey = keyMapping.getKey();
 
-	event.create('adj:player_menu')
-		.radii(55, 100)
-		.animationSpeed(1.0)
-		.ringColors(ringColors)
-		.slot(
-			'Armor Settings',
-			Item.of('iron_chestplate'),
-			Actions.of('open_menu', { menu: 'adj:armor' }),
-			Text.of('Equipped Gear...'),
-			highlightColor
-		)
-		.slot(
-			'Shaders',
-			Item.of('cherry_sapling'),
-			Actions.of('open_menu', { menu: 'adj:shaders' }),
-			Text.of('Shaders...'),
-			highlightColor
-		)
-		.slot(
-			'World Map',
-			Item.of('kubejs:map_atlas'),
-			Actions.of('simulate_key', { key_code: getKey('gui.xaero_open_map') }),
-			Text.of('Open World Map'),
-			highlightColor
-		)
-		.slot(
-			'World Map',
-			Item.of('kubejs:map_atlas'),
-			Actions.of('simulate_key', { key_code: getKey('gui.xaero_open_map') }),
-			Text.of('Open World Map'),
-			highlightColor
-		)
-		.slot(
-			'Voice Chat Settings',
-			Item.of('supplementaries:speaker_block'),
-			Actions.of('simulate_key', { key_code: getKey('key.voice_chat_settings') }),
-			Text.of(`Open Voice Chat Settings (Hotkey:${getHotkey('key.voice_chat_settings')})`),
-			highlightColor
-		)
-		.slot(
-			'Mute Mic',
-			Item.of('note_block'),
-			Actions.of('simulate_key', { key_code: getKey('key.mute_microphone') }),
-			Text.of(`Mute/Unmute Microphone (Hotkey:${getHotkey('key.mute_microphone')})`),
-			highlightColor
-		)
+// 		// 1. Simulate discrete click event (increments clickCount so consumeClick() works)
+// 		$KeyMapping.click(inputKey);
 
-	event.create('adj:shaders')
-		.radii(55, 100)
-		.animationSpeed(1.0)
-		.ringColors(ringColors)
-		.slot(
-			'Shader Selection',
-			Item.of('filled_map'),
-			Actions.of('simulate_key', { key_code: getKey('iris.keybind.shaderPackSelection') }),
-			Text.of('Open Shaders selection'),
-			highlightColor
-		)
-		.slot(
-			'Toggle Shaders',
-			Item.of('lever'),
-			Actions.of('simulate_key', { key_code: getKey('iris.keybind.toggleShaders') }),
-			Text.of('Toggle Shaders'),
-			highlightColor
-		)
-		.slot(
-			'Reload Shaders',
-			Item.of('clock'),
-			Actions.of('simulate_key', { key_code: getKey('iris.keybind.reload') }),
-			Text.of('Reload Shaders'),
-			highlightColor
-		)
+// 		// 2. Set key state down
+// 		keyMapping.setDown(true);
+// 		$KeyMapping.set(inputKey, true);
+// 		console.log('Press')
 
-	event.create('adj:armor')
-		.radii(55, 100)
-		.animationSpeed(1.0)
-		.ringColors(ringColors)
-		.slot(
-			'Armor Visibility',
-			Item.of('rediscovered:gear'),
-			Actions.of('simulate_key', { key_code: getKey('key.showmeyourskin.open_settings') }),
-			Text.of(`Configure armor visibility (Hotkey:${getHotkey('key.showmeyourskin.open_settings')})`),
-			highlightColor
-		)
-		.slot(
-			'Loadout 1',
-			Item.of('leather_chestplate'),
-			Actions.of('simulate_key', { key_code: getKey('adjcore.loadout.1') }),
-			Text.of(`Switch loadout to Loadout #1 (Hotkey: ${getHotkey('adjcore.loadout.1')})`),
-			highlightColor
-		)
-		.slot(
-			'Loadout 2',
-			Item.of('gold_chestplate'),
-			Actions.of('simulate_key', { key_code: getKey('adjcore.loadout.2') }),
-			Text.of(`Switch loadout to Loadout #2 (Hotkey: ${getHotkey('adjcore.loadout.2')})`),
-			highlightColor
-		)
-		.slot(
-			'Loadout 3',
-			Item.of('diamond_chestplate'),
-			Actions.of('simulate_key', { key_code: getKey('adjcore.loadout.3') }),
-			Text.of(`Switch loadout to Loadout #3 (Hotkey: ${getHotkey('adjcore.loadout.3')})`),
-			highlightColor
-		)
-
-	event.create('adj:creative')
-		.radii(55, 100)
-		.animationSpeed(1.0)
-		.ringColors(ringColors)
-		.slot(
-			'Time Skip',
-			Item.of('clock'),
-			Actions.of('run_command', { command: '/time add 12000' }),
-			Text.of('Skip time by 12 hours'),
-			highlightColor
-		)
-		.slot(
-			'Gamemode 0',
-			Item.of('oak_planks'),
-			Actions.of('run_command', { command: '/gamemode survival' }),
-			Text.of('Gamemode: Casual'),
-			highlightColor
-		)
-		.slot(
-			'Gamemode 1',
-			Item.of('structure_gel:building_tool'),
-			Actions.of('run_command', { command: '/gamemode creative' }),
-			Text.of('Gamemode: Journey'),
-			highlightColor
-		)
-		.slot(
-			'Gamemode 3',
-			Item.of('quark:cloud'),
-			Actions.of('run_command', { command: '/gamemode spectator' }),
-			Text.of('Gamemode: Spectator'),
-			highlightColor
-		)
-});
-
-/// ---------------------------------------------- ///
-
-Actions.register('open_menu', params => {
-	const menu = params.get('menu').asString('');
-	RadialMenus.open(menu);
-});
+// 		// 3. Release the key on the next tick so it doesn't stay stuck down
+// 		Client.scheduleInTicks(1, () => {
+// 			keyMapping.setDown(false);
+// 			$KeyMapping.set(inputKey, false);
+// 			console.log('Release')
+// 		});
+// 	});
+// };

@@ -34,5 +34,36 @@ ItemEvents.rightClicked(event => {
 			}
 			break;
 		}
+
+		case 'crittersandcompanions:clam': {
+			player.give(global.weightedRandom({
+				'air': 30,
+				'hybrid_aquatic:pearl': 6,
+				'hybrid_aquatic:black_pearl': 3,
+				'alexscaves:pearl': 1
+			}));
+			player.swing(event.getHand(), true);
+			player.level.playSound(null, player.x, player.y, player.z, 'minecraft:entity.turtle.egg_crack', 'players', 0.5, Math.random() * 0.2 + 1.05);
+			item.shrink(1);
+			break;
+		}
+
+		// case 'born_in_chaos_v1:sea_terror_stomach': {
+		// 	if (player.getCooldowns().isOnCooldown(item.id)) return;
+		// 	let amount = global.getRandomInt(2, 4);
+		// 	let loot = {
+		// 		'air': 20,
+		// 		'salmon': 30,
+		// 		'cod': 40,
+		// 		'kelp': 35,
+		// 		'stick': 15,
+		// 		'iron_ingot': 10,
+		// 		'gold_ingot': 4,
+		// 	};
+		// 	for (let i = 0; i < amount; i++) {
+		// 		player.give(global.weightedRandom(loot));
+		// 	}
+		// 	event.cancel();
+		// }
 	}
 })

@@ -39,4 +39,28 @@ EntityJSEvents.modifyEntity(event => {
 		entity.canAttack(ctx => dontTargetPlayers(ctx));
 		entity.canCollideWith(ctx => false);
 	});
+
+	/**
+	 * 
+	 * @param {Internal.EntityType_} entity 
+	 * @param {"undead" | "arthropod" | "illager" | "water"} type 
+	 */
+	function setMobType(entity, type) {
+		event.modify(entity, e => e.mobType());
+	}
+
+	setMobType('creeper', 'arthropod');
+	setMobType('born_in_chaos_v1:phantom_creeper', 'arthropod');
+	setMobType('born_in_chaos_v1:phantom_creeper_copy', 'arthropod');
+	setMobType('mutantmonsters:mutant_creeper', 'arthropod');
+	setMobType('mutantmonsters:creeper_minion', 'arthropod');
+	setMobType('witherstormmod:sickened_creeper', 'arthropod');
+
+	setMobType('shulker', 'arthropod');
+
+	setMobType('born_in_chaos_v1:nightmare_stalker', 'undead');
+	setMobType('born_in_chaos_v1:dire_hound', 'undead');
+	setMobType('born_in_chaos_v1:dire_hound_no_despawn', 'undead');
+	setMobType('born_in_chaos_v1:dire_hound_leader', 'undead');
+
 });

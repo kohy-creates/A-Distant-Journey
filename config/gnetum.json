@@ -108,11 +108,23 @@
       },
       "pass": 2
     },
+    "swinginglanterns:debug_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "treechop:chopping_indicator": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 2
+    },
+    "tide:sonar_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
     },
     "aether:moa_jumps": {
       "enabled": {
@@ -378,6 +390,12 @@
       },
       "pass": 2
     },
+    "tide:fishing_info_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
     "emberstextapi:legacy_immersive_messages": {
       "enabled": {
         "value": "OFF"
@@ -433,6 +451,12 @@
       "pass": 2
     },
     "nolijium:hud": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "memorycatcher:memory_hud": {
       "enabled": {
         "value": "AUTO"
       },
@@ -574,6 +598,12 @@
       },
       "pass": 3
     },
+    "oelib": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "bettercombat": {
       "enabled": {
         "value": "AUTO"
@@ -595,6 +625,12 @@
     "scholar": {
       "enabled": {
         "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "auratip": {
+      "enabled": {
+        "value": "OFF"
       },
       "pass": 3
     }

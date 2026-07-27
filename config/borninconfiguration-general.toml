@@ -22,7 +22,7 @@
 [Weapons]
 	#Amount of phantom bombs that gets spawned when thrown
 	#Range: > 1
-	PHANTOM_BOMB_COUNT = 4
+	PHANTOM_BOMB_COUNT = 3
 	#Amount of seconds for the cooldown of pumpkin pistol with the hat on
 	#Range: > 0
 	UPGRADED_PUMPKIN_PISTOL_COOLDOWN = 1

@@ -1,0 +1,32 @@
+##- DEFAULT: Default indicator style
+##- DETAILED: Detailed indicator style, with item counts
+##- VANILLA: Restores the vanilla indicator style, while keeping the mod's functionality
+##- HOTBAR: Add a hotbar for the offhand slots, similar to the main hand hotbar
+#
+#Allowed Values: DEFAULT, DETAILED, VANILLA, HOTBAR
+indicatorStyle = "DEFAULT"
+##- SKIP: Empty slots are skipped when cycling (default)
+##- CYCLE: Cycle through all empty slots
+##- COLLAPSE: Cycle through empty slots, but consecutive empty slots are collapsed into one
+#
+#Allowed Values: SKIP, CYCLE, COLLAPSE
+emptySlotBehavior = "CYCLE"
+#Whether to render the offhand slots when empty items are in them. (will only take effect if emptySlotBehavior is not SKIP)
+renderEmptyOffhand = false
+##- VANILLA: Default Minecraft behavior (scroll cycles hotbar slots)
+##- OFFHAND_ONLY: Scroll wheel always cycles through offhand slots
+##- MAINHAND_WITH_MODIFIER: Normally cycles offhand, but cycles hotbar when modifier key is held.
+##- OFFHAND_WITH_MODIFIER: Normally cycles hotbar, but cycles offhand when modifier key is held.
+#Allowed Values: VANILLA, OFFHAND_ONLY, MAINHAND_WITH_MODIFIER, OFFHAND_WITH_MODIFIER
+scrollMode = "OFFHAND_WITH_MODIFIER"
+#Invert the direction of the scroll wheel for cycling through offhand items.
+invertScrollDirection = false
+#X offset for the offhand HUD
+#Range: > -2147483648
+xOffset = 0
+#Y offset for the offhand HUD
+#Range: > -2147483648
+yOffset = 0
+#Align the offhand hotbar and the vanilla hotbar to the center of the screen
+alignToCenter = false
+

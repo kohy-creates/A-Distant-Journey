@@ -1,7 +1,7 @@
 {
   "general": {
     "engines": 0,
-    "volume": 1,
+    "volume": 0.802281379699707,
     "useSoundMasterSource": false,
     "scanStepAmount": 100,
     "playSoundWithOffset": true
@@ -204,23 +204,23 @@
   },
   "categories": {
     "animal": {
-      "animal": 1,
+      "animal": 0.9472140669822693,
       "bird": {
-        "bird": 1,
-        "bird_day": 1,
-        "bird_night": 1
+        "bird": 0.8969696760177612,
+        "bird_day": 0.8969696760177612,
+        "bird_night": 0.8969696760177612
       },
-      "cicadas": 1,
+      "cicadas": 0.9472140669822693,
       "cricket": {
-        "cricket": 1,
-        "cricket_day": 1,
-        "cricket_night": 1
+        "cricket": 0.8476190567016602,
+        "cricket_day": 0.8539682626724243,
+        "cricket_night": 0.8476190567016602
       }
     },
-    "cave": 1,
-    "suspense": 1,
+    "cave": 0.8006042242050171,
+    "suspense": 0.8972809910774231,
     "weather": 1,
-    "wind": 1
+    "wind": 0.7522658705711365
   },
   "fade-volume": 0.005,
   "fade-pitch": 0.005,

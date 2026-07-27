@@ -359,7 +359,8 @@ ServerEvents.recipes((event) => {
 		/born_in_chaos_v1:armor_plate_from_dark_metal_k/,
 		'wormholepotion:wormhole_potion',
 		'zenith:zenith_from_true_wooden_sword',
-		'hybrid_aquatic:sulfur'
+		'hybrid_aquatic:sulfur',
+		'born_in_chaos_v1:smoldering_scorche_log_k'
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -615,7 +616,7 @@ ServerEvents.recipes((event) => {
 			I: 'iron_ingot',
 			P: '#planks'
 		}
-	)
+	);
 
 	event.shaped(
 		'hopper',
@@ -4666,7 +4667,6 @@ ServerEvents.recipes((event) => {
 	torchRecipe('slime_ball', 3);
 	torchRecipe('flint', 4);
 	torchRecipe('blaze_powder', 12);
-	torchRecipe('born_in_chaos_v1:fire_dust', 8);
 
 	torchTransform('#soul_fire_base_blocks', 'soul_torch', 3);
 	torchTransform('netherexp:ancient_wax', 'netherexp:ancient_torch', 6);
@@ -7886,21 +7886,21 @@ ServerEvents.recipes((event) => {
 		'crushing_wheel',
 		'tree_fertilizer',
 		'spout'
-	]
+	];
 	CreateNewRecipes.forEach(r => {
 		if (r instanceof RegExp || r.includes(':')) {
-			event.remove({ output: r })
+			event.remove({ output: r });
 		}
 		else {
-			event.remove({ output: `create:${r}` })
+			event.remove({ output: `create:${r}` });
 		}
-	})
+	});
 
 	workshopRecipe([
 		'2x create:golden_sheet',
 		'ars_nouveau:magebloom_fiber',
 		'2x #forge:glass'
-	], 'create:goggles')
+	], 'create:goggles');
 
 	event.shaped(
 		'create:wrench',
@@ -7915,7 +7915,7 @@ ServerEvents.recipes((event) => {
 			C: 'create:cogwheel',
 			S: 'stick'
 		}
-	).id('adj:wrench')
+	).id('adj:wrench');
 
 	event.shaped(
 		'create:water_wheel',
@@ -7928,7 +7928,7 @@ ServerEvents.recipes((event) => {
 			C: 'create:cogwheel',
 			S: '#wooden_slabs'
 		}
-	).id('adj:water_wheel')
+	).id('adj:water_wheel');
 
 	event.shaped(
 		'create:propeller',
@@ -7941,7 +7941,7 @@ ServerEvents.recipes((event) => {
 			I: 'iron_ingot',
 			S: 'create:iron_sheet'
 		}
-	).id('adj:propeller')
+	).id('adj:propeller');
 
 	event.shaped(
 		'4x create:chute',
@@ -7952,7 +7952,7 @@ ServerEvents.recipes((event) => {
 			H: 'hopper',
 			S: 'create:iron_sheet'
 		}
-	).id('adj:chute')
+	).id('adj:chute');
 
 	event.shaped(
 		'create:basin',
@@ -7964,7 +7964,7 @@ ServerEvents.recipes((event) => {
 			C: 'cauldron',
 			A: 'create:andesite_alloy'
 		}
-	).id('adj:basin')
+	).id('adj:basin');
 
 	event.shaped(
 		'create:millstone',
@@ -7979,7 +7979,7 @@ ServerEvents.recipes((event) => {
 			C: 'create:cogwheel',
 			S: 'smooth_stone'
 		}
-	).id('adj:millstone')
+	).id('adj:millstone');
 
 	event.shaped(
 		'create:empty_blaze_burner',
@@ -7993,7 +7993,7 @@ ServerEvents.recipes((event) => {
 			B: 'iron_bars',
 			S: 'create:iron_sheet'
 		}
-	).id('adj:empty_blaze_burner')
+	).id('adj:empty_blaze_burner');
 
 	event.shaped(
 		'create:hand_crank',
@@ -8005,7 +8005,7 @@ ServerEvents.recipes((event) => {
 			P: '#planks',
 			C: 'cobblestone'
 		}
-	).id('adj:hand_crank')
+	).id('adj:hand_crank');
 
 	event.shaped(
 		'create:belt_connector',
@@ -8018,7 +8018,7 @@ ServerEvents.recipes((event) => {
 				'dried_kelp'
 			]
 		}
-	).id('adj:mechanical_belt')
+	).id('adj:mechanical_belt');
 
 	event.shaped(
 		'9x create:belt_connector',
@@ -8031,7 +8031,7 @@ ServerEvents.recipes((event) => {
 				'dried_kelp_block'
 			]
 		}
-	).id('adj:mechanical_belt_bulk')
+	).id('adj:mechanical_belt_bulk');
 
 	event.shaped(
 		'8x create:fluid_pipe',
@@ -8044,7 +8044,7 @@ ServerEvents.recipes((event) => {
 			S: 'create:copper_sheet',
 			P: 'copper_ingot'
 		}
-	).id('adj:fluid_pipe')
+	).id('adj:fluid_pipe');
 
 	event.shaped(
 		'8x create:fluid_pipe',
@@ -8057,7 +8057,7 @@ ServerEvents.recipes((event) => {
 			S: 'create:copper_sheet',
 			P: 'copper_ingot'
 		}
-	).id('adj:fluid_pipe_vertical')
+	).id('adj:fluid_pipe_vertical');
 
 	event.shapeless(
 		'create:mechanical_pump',
@@ -8066,7 +8066,7 @@ ServerEvents.recipes((event) => {
 			'create:cogwheel',
 			'create:andesite_alloy'
 		],
-	).id('adj:mechanical_pump')
+	).id('adj:mechanical_pump');
 
 	event.shaped(
 		'create:speedometer',
@@ -8080,7 +8080,7 @@ ServerEvents.recipes((event) => {
 			I: 'iron_ingot',
 			C: 'create:andesite_casing'
 		}
-	).id('adj:speedometer')
+	).id('adj:speedometer');
 
 	event.shaped(
 		'create:fluid_tank',
@@ -8094,7 +8094,7 @@ ServerEvents.recipes((event) => {
 			G: '#c:glass_panes',
 			B: 'barrel'
 		}
-	).id('adj:fluid_tank')
+	).id('adj:fluid_tank');
 
 	event.shaped(
 		'create:steam_engine',
@@ -8112,7 +8112,7 @@ ServerEvents.recipes((event) => {
 			S: 'create:shaft',
 			C: 'create:brass_ingot'
 		}
-	).id('adj:steam_engine')
+	).id('adj:steam_engine');
 
 	event.shaped(
 		'create:depot',
@@ -8124,7 +8124,7 @@ ServerEvents.recipes((event) => {
 			S: 'stone_slab',
 			A: 'create:andesite_casing'
 		}
-	).id('adj:depot')
+	).id('adj:depot');
 
 	event.shaped(
 		'create:encased_chain_drive',
@@ -8138,7 +8138,7 @@ ServerEvents.recipes((event) => {
 			S: 'create:shaft',
 			A: 'create:andesite_casing'
 		}
-	).id('adj:encased_chain_drive')
+	).id('adj:encased_chain_drive');
 
 	event.shaped(
 		'create:gearshift',
@@ -8152,7 +8152,7 @@ ServerEvents.recipes((event) => {
 			S: 'create:shaft',
 			A: 'create:andesite_casing'
 		}
-	).id('adj:gearshift')
+	).id('adj:gearshift');
 
 	inter = Item.of('create:incomplete_track');
 	event.recipes.create.sequenced_assembly(
@@ -8163,7 +8163,7 @@ ServerEvents.recipes((event) => {
 			event.recipes.create.deploying(inter, [inter, ['create:zinc_nugget', 'iron_nugget']]),
 			event.recipes.create.pressing(inter, [inter])
 		]
-	).transitionalItem(inter).loops(1).id('adj:create_track')
+	).transitionalItem(inter).loops(1).id('adj:create_track');
 
 	event.recipes.create.mechanical_crafting(
 		'2x create:crushing_wheel',
@@ -8179,7 +8179,7 @@ ServerEvents.recipes((event) => {
 			A: 'create:shaft',
 			P: '#planks'
 		}
-	).id('adj:crushing_wheel')
+	).id('adj:crushing_wheel');
 
 	event.recipes.create.mixing(
 		[
@@ -8193,7 +8193,7 @@ ServerEvents.recipes((event) => {
 			'#adj:compostable',
 			'#adj:compostable',
 		]
-	).id('adj:tree_fertilizer')
+	).id('adj:tree_fertilizer');
 
 	event.shaped(
 		'create:spout',
@@ -8205,7 +8205,7 @@ ServerEvents.recipes((event) => {
 			H: 'hopper',
 			C: 'create:copper_casing'
 		}
-	).id('adj:spout')
+	).id('adj:spout');
 
 	event.recipes.create.mixing(
 		'create:pulp',
@@ -8213,7 +8213,7 @@ ServerEvents.recipes((event) => {
 			'6x paper',
 			Fluid.water(400)
 		]
-	).id('adj:pulp_alternative')
+	).id('adj:pulp_alternative');
 
 	event.shaped(
 		'create:experience_block',
@@ -9491,4 +9491,16 @@ ServerEvents.recipes((event) => {
 			S: 'cataclysm:black_steel_ingot'
 		}
 	).id('adj:cursium_boots');
+
+	// Born in Chaos
+	event.shapeless(
+		'8x born_in_chaos_v1:smoldering_scorched_log',
+		[
+			'born_in_chaos_v1:scorched_log', 'born_in_chaos_v1:scorched_log',
+			'born_in_chaos_v1:scorched_log', 'born_in_chaos_v1:scorched_log',
+			'born_in_chaos_v1:scorched_log', 'born_in_chaos_v1:scorched_log',
+			'born_in_chaos_v1:scorched_log', 'born_in_chaos_v1:scorched_log',
+			'blaze_powder'
+		]
+	)
 });

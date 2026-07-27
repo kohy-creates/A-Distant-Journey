@@ -95,7 +95,8 @@ global.stageRestrictions = {
 			/architects_palette\/.*twisted/,
 			/botania:.*spark.*/,
 			'botania:lens_paint',
-			/bifrost/
+			/bifrost/,
+			/born_in_chaos_v1:.*smoldering_schorched/,
 		],
 		exceptions: [
 			'create:blaze_cake',
@@ -113,6 +114,13 @@ global.stageRestrictions = {
 			'twilightforest:bamboo_banister',
 			'twilightforest:vangrove_banister',
 			'twilightforest:cherry_banister',
+			'netherexp:bone_rod',
+			'netherexp:bone_fence',
+			'netherexp:bone_cortical',
+			'netherexp:stacked_bones',
+			'netherexp:stacked_bone_stairs',
+			'netherexp:stacked_bone_slab',
+			'v_slab_compat:netherexp/stacked_bone_vertical_slab',
 		]
 	},
 	'chapter_2': {

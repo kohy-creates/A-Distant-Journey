@@ -11,8 +11,6 @@
 	"Include Opened Screen Tab" = true
 	# If enabled, show the inventory button in the tabs menu.
 	"Inventory Tab Enabled " = true
-	# If enabled, show the body damage button for Legendarysurvivaloverhaul in the tabs menu.
-	"Body Damage Tab Enabled " = true
 	# If enabled, show the reskillable button for Rereskillable or Reskillable Reimagined in the tabs menu.
 	"Reskillable Tab Enabled " = true
 	# If enabled, show the ftb quests button in the tabs menu.
@@ -35,4 +33,6 @@
 	"Travelers Backpack Tab Enabled " = true
 	# If enabled, show the diet button in the tabs menu.
 	"Diet Tab Enabled " = true
+	# If enabled, show the body damage button for Legendarysurvivaloverhaul in the tabs menu.
+	"Body Damage Tab Enabled " = true
 
