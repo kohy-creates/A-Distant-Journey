@@ -185,6 +185,15 @@ global.getCurrentChapter = function (server) {
 	return currentStage;
 };
 
+/**
+ * Rounds a given number to the nearest step.
+ * @param {number} value 
+ * @param {number} step 
+ * @returns {number}
+ * @example
+ * global.roundToNearest(10.12, 0.05);
+ * // returns 10.1
+ */
 global.roundToNearest = function (value, step) {
 	return Math.round(value / step) * step;
 };
@@ -251,9 +260,8 @@ global.duration = function (string, mul) {
 	return timeTotal;
 };
 
-const $MobEffectInstance = Java.loadClass(`net.minecraft.world.effect.MobEffectInstance`);
 /**
- * 
+ * Creates and returns a new MobEffectInstance
  * @param {Internal.Effect_} effect 
  * @param {string} duration 
  * @param {num} level 
@@ -308,4 +316,18 @@ global.calculateSpellDamage = function (player, baseAmount, randomize) {
 	return baseAmount * mul * mul2;
 };
 
-global.menuHighlightColor = '#77FFFFFF';
+/**
+ * Highlight for the player menu, currently unused.
+ */
+// global.menuHighlightColor = '#77FFFFFF';
+
+/** @type {Record<string, string>} */
+global.lang = {};
+/**
+ * Adds a translated key to the bootleg lang datagen.
+ * @param {string} key 
+ * @param {string} value 
+ */
+global.addTranslation = function (key, value) {
+	global.lang[key] = value;
+};
