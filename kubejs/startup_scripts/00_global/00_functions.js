@@ -174,18 +174,6 @@ global.weightedRandom = function (weightMap) {
 };
 
 /**
- * Returns the current chapter the player/server is on.
- * Since it requires a server argument, it is server-side only.
- * @param {Internal.MinecraftServer_} server
- * @returns {integer}
- */
-global.getCurrentChapter = function (server) {
-	let chapters = server.persistentData.chapters || {};
-	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""));
-	return currentStage;
-};
-
-/**
  * Rounds a given number to the nearest step.
  * @param {number} value 
  * @param {number} step 

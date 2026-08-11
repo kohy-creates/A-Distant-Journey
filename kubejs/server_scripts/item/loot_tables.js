@@ -130,7 +130,7 @@ LootJS.modifiers((event) => {
 		pool.rolls(1);
 		pool.addLoot(
 			LootEntry.of('kubejs:skull_fragment')
-				.when(c => c.randomChanceWithLooting(0.2, 0.1))
+				.when(c => c.randomChanceWithLooting(0.33, 0.17))
 				.limitCount([1, 3])
 				.applyLootingBonus([0, 1])
 		);

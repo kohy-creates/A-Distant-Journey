@@ -150,3 +150,14 @@ global.grantAdvancement = function (server, player, advancement) {
 		`/advancement grant ${player.getUsername()} only ${advancement}`
 	);
 };
+
+/**
+ * Returns the current chapter the player/server is on.
+ * @param {Internal.MinecraftServer_} server
+ * @returns {integer}
+ */
+global.getCurrentChapter = function (server) {
+	let chapters = server.persistentData.chapters || {};
+	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""));
+	return currentStage;
+};
