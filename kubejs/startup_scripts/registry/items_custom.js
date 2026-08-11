@@ -40,7 +40,7 @@
 		}
 
 		registerBannerPatternItem('field_masoned');
-		registerBannerPatternItem('bordure_indented_masoned');
+		registerBannerPatternItem('bordure_indented');
 		registerBannerPatternItem('text');
 		registerBannerPatternItem('heart');
 		registerBannerPatternItem('peace');
