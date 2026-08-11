@@ -19,9 +19,9 @@
     },
     "particle": {
       "options": {
-        "type": "subtle_effects:vanilla_firefly"
+        "type": "twilightforest:wandering_firefly"
       },
-      "probability": 0.001
+      "probability": 0.002
     },
     "sky_color": 2105930,
     "water_color": 4159204,
