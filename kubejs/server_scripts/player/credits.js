@@ -13,7 +13,7 @@ ItemEvents.pickedUp(event => {
 		const z = pos.z;
 
 		server.runCommand(
-			`/execute in ${event.getLevel().getDimension()} positioned ${x} ${y} ${z} as @a[distance=..24] run credits @s`
+			`/execute in ${event.getLevel().getDimension()} positioned ${x} ${y} ${z} as @a[distance=..64] run credits @s`
 		)
 	}
 });
