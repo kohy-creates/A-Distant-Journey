@@ -3614,7 +3614,7 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:glyph_gust': ['botania:rune_air', 'piston', 'piston', 'piston'],
 		'ars_nouveau:glyph_harm': ['golden_sword', 'mythicmetals:copper_sword', 'wooden_sword'],
 		'ars_nouveau:glyph_harvest': ['iron_hoe', 'wooden_hoe', 'mythicmetals:copper_hoe'],
-		'ars_nouveau:glyph_heal': ['majruszsdifficulty:golden_bandage', 'majruszsdifficulty:bandage', 'majruszsdifficulty:bandage', 'majruszsdifficulty:bandage', 'majruszsdifficulty:bandage', 'heart_crystals:heart_crystal'],
+		'ars_nouveau:glyph_heal': ['kubejs:golden_bandage', 'kubejs:bandage', 'kubejs:bandage', 'kubejs:bandage', 'kubejs:bandage', 'heart_crystals:heart_crystal'],
 		'ars_nouveau:glyph_hex': ['botania:rune_gluttony', 'botania:rune_lust', 'botania:rune_greed', 'botania:rune_wrath', 'botania:rune_sloth', 'botania:rune_envy', 'botania:rune_pride',],
 		'ars_nouveau:glyph_ignite': ['flint_and_steel', '#coals', '#coals', '#coals'],
 		'ars_nouveau:glyph_infuse': ['botania:rune_mana', 'glass_bottle', 'nether_wart', 'blaze_rod'],
