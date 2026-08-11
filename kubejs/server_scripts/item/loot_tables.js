@@ -1,6 +1,14 @@
 LootJS.modifiers((event) => {
 
-	for (const [before, after] of Object.entries(global.replaceItemsMap)) {
+	for (const [before, after] of Object.entries(global.replaceItemsInChestLoot)) {
+		event.addLootTableModifier(/.*chests.*/).replaceLoot(before, after, true)
+	}
+
+	for (const [before, after] of Object.entries(global.replaceItemsInEntityLoot)) {
+		event.addLootTableModifier(/.*entities.*/).replaceLoot(before, after, true)
+	}
+
+	for (const [before, after] of Object.entries(global.replaceItemsInAllLoot)) {
 		event.addLootTableModifier(/.*/).replaceLoot(before, after, true)
 	}
 
@@ -16,7 +24,6 @@ LootJS.modifiers((event) => {
 		'twilightforest:ender_bow',
 		'twilightforest:triple_bow',
 		'twilightforest:seeker_bow',
-		'twilightforest:ice_bomb',
 
 		'minecraft:netherite_ingot',
 
@@ -54,6 +61,7 @@ LootJS.modifiers((event) => {
 		'ancient_aether:warrior_pendant',
 		'aether:regeneration_stone',
 	].concat(global.blacklistedItemsArray);
+
 	removedFromLoot.forEach(e => event.addLootTableModifier(/.*/).removeLoot(e));
 
 	const removeModifiersFromMods = [
