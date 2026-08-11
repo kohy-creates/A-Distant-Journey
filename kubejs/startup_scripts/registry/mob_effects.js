@@ -289,4 +289,54 @@ StartupEvents.registry('mob_effect', registry => {
 			-0.35,
 			'multiply_total'
 		);
+
+	registry.create('iron_skin')
+		.beneficial()
+		.color(Color.GRAY)
+		.modifyAttribute(
+			'generic.armor',
+			'b074a3d4-dff0-44e9-b72d-f31d8488668f',
+			3,
+			'addition'
+		);
+
+	registry.create('archery')
+		.beneficial()
+		.color(Color.GOLD)
+		.modifyAttribute(
+			'attributeslib:arrow_damage',
+			'c1e3f5b0-4d8a-4f2e-9c6b-1f2e3d4c5b6a',
+			0.1,
+			'addition'
+		)
+		.modifyAttribute(
+			'attributeslib:arrow_velocity',
+			'c1e3f5b0-4d8a-4f2e-9c6b-1f2e3d4c5b6a',
+			0.2,
+			'addition'
+		);
+
+	registry.create('magic_power')
+		.beneficial()
+		.color(Color.LIGHT_BLUE)
+		.modifyAttribute(
+			'ars_nouveau:ars_nouveau.perk.spell_damage',
+			'b423d950-69fa-4a9e-adc7-c976108ff0e0',
+			15,
+			'addition'
+		);
+
+	registry.create('builder')
+		.beneficial()
+		.color(Color.LIGHT_GRAY)
+		.modifyAttribute(
+			'forge:block_reach',
+			'c1e3f5b0-4d8a-4f2e-9c6b-1f2e3d4c5b6a',
+			1.5,
+			'addition'
+		);
+
+	registry.create('thorns')
+		.beneficial()
+		.color(Color.GREEN);
 });

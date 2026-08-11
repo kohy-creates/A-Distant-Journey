@@ -1,16 +1,77 @@
+global.potionRegistry = {
+	endurance: {
+		effects: [
+			{ effect: 'minecraft:resistance', duration: global.duration('4:00') }
+		],
+		ingredient: ['minecraft:iron_block'],
+	},
+	decay: {
+		effects: [
+			{ effect: 'minecraft:wither', duration: global.duration('0:30') }
+		],
+		ingredients: ['netherexp:fossil_fuel']
+	},
+	levitation: {
+		effects: [
+			{ effect: 'minecraft:levitation', duration: global.duration('0:10') }
+		],
+		ingredients: ['minecraft:shulker_shell']
+	},
+	iron_skin: {
+		effects: [
+			{ effect: 'kubejs:iron_skin', duration: global.duration('8:00') }
+		],
+		ingredients: ['minecraft:iron_ingot']
+	},
+	archery: {
+		effects: [
+			{ effect: 'kubejs:archery', duration: global.duration('8:00') }
+		],
+		ingredients: ['minecraft:arrow']
+	},
+	magic_power: {
+		effects: [
+			{ effect: 'kubejs:magic_power', duration: global.duration('4:00') },
+		],
+		ingredients: ['ars_nouveau:source_gem']
+	},
+	builder: {
+		effects: [
+			{ effect: 'kubejs:builder', duration: global.duration('45:00') }
+		],
+		ingredients: ['minecraft:brick_block']
+	},
+	thorns: {
+		effects: [
+			{ effect: 'kubejs:thorns', duration: global.duration('8:00') }
+		],
+		ingredients: ['minecraft:rose_bush']
+	}
+};
+
 StartupEvents.registry('potion', event => {
-	event.create('endurance').addEffect(new $MobEffectInstance('minecraft:resistance', 4800));
-	event.create('long_endurance').addEffect(new $MobEffectInstance('minecraft:resistance', 7200));
-	event.create('strong_endurance').addEffect(new $MobEffectInstance('minecraft:resistance', 2400, 1));
-
-	event.create('decay').addEffect(new $MobEffectInstance('minecraft:wither', 600, 0));
-	event.create('long_decay').addEffect(new $MobEffectInstance('minecraft:wither', 1200, 0));
-	event.create('strong_decay').addEffect(new $MobEffectInstance('minecraft:wither', 400, 1));
-
+	Object.keys(global.potionRegistry).forEach((potion) => {
+		const potionData = global.potionRegistry[potion];
+		const hasRedstoneVariant = potionData.redstone_duration_multiplier !== undefined;
+		const hasGlowstoneVariant = potionData.glowstone_duration_multiplier !== undefined;
+		let builder = event.create(potion);
+		potionData.effects.forEach((effect) => {
+			builder.addEffect(new $MobEffectInstance(effect.effect, effect.duration, global.getOrDefault(effect.amplifier, 0)));
+		});
+	});
 });
 
 MoreJSEvents.registerPotionBrewing((event) => {
 
+	Object.keys(global.potionRegistry).forEach((potion) => {
+		const potionData = global.potionRegistry[potion];
+		const hasRedstoneVariant = potionData.redstone_duration_multiplier !== undefined;
+		const hasGlowstoneVariant = potionData.glowstone_duration_multiplier !== undefined;
+
+		potionData.ingredients.forEach((ingredient) => event.addPotionBrewing(potionData.ingredient, 'awkward', `kubejs:${potion}`));
+	});
+
+	// Custom alchemy recipes
 	event.addCustomBrewing(
 		'tide:glowfish',
 		Item.of('minecraft:potion', '{Potion:"minecraft:water"}'),
@@ -40,6 +101,13 @@ MoreJSEvents.registerPotionBrewing((event) => {
 		'alexsmobs:lava_bottle',
 		Item.of('minecraft:potion', '{Potion:"netherdepthsupgrade:lava_vision"}')
 	);
+
+	// Universal Glowing
+	event.addPotionBrewing('netherdepthsupgrade:glowdine', 'awkward', 'alexscaves:glowing');
+
+	// Replace ingredients
+	event.addPotionBrewing('alexsmobs:bear_fur', 'strength', 'alexsmobs:knockback_resistance');
+	event.addPotionBrewing('miners_delight:copper_carrot', 'swiftness', 'alexscaves:haste');
 
 	// Remove doubled or useless potions
 	const removedPotions = [
@@ -75,67 +143,7 @@ MoreJSEvents.registerPotionBrewing((event) => {
 		'alexsmobs:long_lava_vision',
 		'netherdepthsupgrade:lava_vision'
 	];
-
 	removedPotions.forEach(potion => {
 		event.removeByPotion(null, null, potion);
 	});
-
-	// Universal Glowing
-	event.addPotionBrewing('netherdepthsupgrade:glowdine', 'awkward', 'alexscaves:glowing');
-
-	event.addPotionBrewing('alexsmobs:bear_fur', 'strength', 'alexsmobs:knockback_resistance');
-
-	event.addPotionBrewing('miners_delight:copper_carrot', 'swiftness', 'alexscaves:haste');
-
-	// Recipes for uncraftables that are too cool to skip
-	event.addPotionBrewing('bone', 'swiftness', 'unusualend:swift_strikes_potion');
-	event.addPotionBrewing('bone', 'awkward', 'unusualend:swift_strikes_potion');
-
-	// Endurance
-	event.addPotionBrewing('iron_ingot', 'awkward', 'kubejs:endurance');
-	event.addPotionBrewing('redstone', 'kubejs:endurance', 'kubejs:long_endurance');
-	event.addPotionBrewing('glowstone_dust', 'kubejs:endurance', 'kubejs:strong_endurance');
-
-	// Decay
-	event.addPotionBrewing('netherexp:fossil_fuel', 'poison', 'kubejs:decay');
-	event.addPotionBrewing('redstone', 'kubejs:decay', 'kubejs:long_decay');
-	event.addPotionBrewing('glowstone_dust', 'kubejs:decay', 'kubejs:strong_decay');
-	event.addPotionBrewing('netherexp:fossil_fuel', 'long_poison', 'kubejs:long_decay');
-	event.addPotionBrewing('netherexp:fossil_fuel', 'strong_poison', 'kubejs:strong_decay');
-
-	event.addPotionBrewing('witherstormmod:withered_spider_eye', 'poison', 'kubejs:decay');
-	event.addPotionBrewing('witherstormmod:withered_spider_eye', 'long_poison', 'kubejs:long_decay');
-	event.addPotionBrewing('witherstormmod:withered_spider_eye', 'strong_poison', 'kubejs:strong_decay');
-})
-
-const potionOverrides = {
-	'minecraft:healing': {
-		drinkingTime: 8,
-		cooldown: 60
-	},
-	'minecraft:strong_healing': {
-		drinkingTime: 8,
-		cooldown: 60
-	},
-	'minecraft:harming': {
-		cooldown: 10
-	},
-	'minecraft:strong_harming': {
-		cooldown: 15
-	},
-};
-
-StartupEvents.init(event => {
-	for (const [potion, override] of Object.entries(potionOverrides)) {
-		let json = {
-			potion: potion
-		};
-		if (override.cooldown) {
-			json['cooldown'] = override.cooldown * 20;
-		}
-		if (override.drinkingTime) {
-			json['drinking_time'] = override.drinkingTime;
-		}
-		JsonIO.write(`kubejs/data/sortilege/potions/${potion.split(':')[1]}.json`, json);
-	}
 });

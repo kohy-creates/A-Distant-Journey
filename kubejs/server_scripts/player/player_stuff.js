@@ -538,6 +538,10 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 		if (victim.isCuriosEquipped('kubejs:mana_cuffs')) {
 			victim.adjcore$restoreMana(event.getAmount());
 		}
+
+		if (victim.hasEffect('kubejs:thorns')) {
+			attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 1.5);
+		}
 	}
 
 	if (event.getSource().getType() === 'wither') {
