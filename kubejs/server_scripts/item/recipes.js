@@ -4107,7 +4107,7 @@ ServerEvents.recipes((event) => {
 	alloyForgeRecipe(
 		[
 			['mythicmetals:raw_mythril', 2],
-			['botania:elementium_ingot', 1]
+			['botania:pixie_dust', 1]
 		],
 		['mythicmetals:mythril_ingot', 2],
 		2,
@@ -4115,11 +4115,11 @@ ServerEvents.recipes((event) => {
 		[
 			['3+', 'output', 3]
 		]
-	)
+	);
 	alloyForgeRecipe(
 		[
 			['#c:mythril_ores', 1],
-			['botania:elementium_ingot', 1]
+			['botania:pixie_dust', 1]
 		],
 		['mythicmetals:mythril_ingot', 2],
 		2,
@@ -4127,24 +4127,36 @@ ServerEvents.recipes((event) => {
 		[
 			['3+', 'output', 3]
 		]
-	)
+	);
 
 	alloyForgeRecipe(
 		[
-			['mythicmetals:raw_orichalcum', 2],
-			['botania:elementium_ingot', 1]
+			['mythicmetals:raw_orichalcum', 1],
+			['raw_iron', 1]
 		],
 		['mythicmetals:orichalcum_ingot', 2],
 		2,
 		10,
 		[
-			['3+', 'output', 3]
+			['3+', 'output', 3],
 		]
-	)
+	);
+	alloyForgeRecipe(
+		[
+			['mythicmetals:raw_orichalcum', 1],
+			['iron_ingot', 1]
+		],
+		['mythicmetals:orichalcum_ingot', 1],
+		2,
+		10,
+		[
+			['4+', 'output', 2],
+		]
+	);
 	alloyForgeRecipe(
 		[
 			['#c:orichalcum_ores', 1],
-			['botania:elementium_ingot', 1]
+			['iron_ingot', 1]
 		],
 		['mythicmetals:orichalcum_ingot', 2],
 		2,
@@ -4152,7 +4164,7 @@ ServerEvents.recipes((event) => {
 		[
 			['3+', 'output', 3]
 		]
-	)
+	);
 
 	alloyForgeRecipe(
 		[
