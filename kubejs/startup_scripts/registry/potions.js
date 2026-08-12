@@ -1,4 +1,11 @@
 global.potionRegistry = {
+	dissolved_daybloom: { effects: [], ingredients: ['kubejs:daybloom'], },
+	dissolved_moonglow: { effects: [], ingredients: ['kubejs:moonglow'], },
+	dissolved_blinkroot: { effects: [], ingredients: ['kubejs:blinkroot'], },
+	dissolved_deathweed: { effects: [], ingredients: ['kubejs:deathweed'], },
+	dissolved_waterleaf: { effects: [], ingredients: ['kubejs:waterleaf'], },
+	dissolved_fireblossom: { effects: [], ingredients: ['kubejs:fireblossom'], },
+	dissolved_shiverthorn: { effects: [], ingredients: ['kubejs:shiverthorn'], },
 	endurance: {
 		effects: [
 			{ effect: 'minecraft:resistance', duration: global.duration('4:00') }

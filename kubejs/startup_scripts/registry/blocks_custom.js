@@ -21,6 +21,14 @@ const CustomBlockRegistry = {
 					west: west
 				}
 			}
+		},
+		cross: function (texture) {
+			return {
+				parent: "minecraft:block/cross",
+				textures: {
+					cross: texture
+				}
+			}
 		}
 	}
 };
@@ -32,20 +40,33 @@ const $FurnaceBlock = Java.loadClass('net.minecraft.world.level.block.FurnaceBlo
 const $LeavesBlock = Java.loadClass('net.minecraft.world.level.block.LeavesBlock');
 const $SaplingBlock = Java.loadClass('net.minecraft.world.level.block.SaplingBlock');
 const $PoweredBlock = Java.loadClass('net.minecraft.world.level.block.PoweredBlock');
+const $FlowerBlock = Java.loadClass('net.minecraft.world.level.block.FlowerBlock');
+const $FlowerPotBlock = Java.loadClass('net.minecraft.world.level.block.FlowerPotBlock');
+const $RootBlock = Java.loadClass('net.minecraft.world.level.block.RootBlock');
 
 /// ----------------------------------------------------------- ///
 
 let legacyCraftingTable, legacyGrassBlock, legacyFurnace,
 	legacyOakLeaves, legacyBirchLeaves, legacySpruceLeaves, legacyJungleLeaves,
-	legacyRedstoneBlock;
+	legacyRedstoneBlock,
+	goldenDandelionBlock,
+	daybloomBlock, moonglowBlock, blinkrootBlock,
+	deathweedBlock, waterleafBlock, fireblossomBlock,
+	shiverthornBlock;
 
 /// ----------------------------------------------------------- ///
 
 StartupEvents.registry('block', registry => {
 
+	function noVariantBlockstate(id) {
+		return { variants: { '': { model: `kubejs:block/${id}` } } }
+	}
+
+	function defaultLottTable(id) {
+		return { type: "minecraft:block", pools: [{ bonus_rolls: 0, conditions: [{ condition: "minecraft:survives_explosion" }], entries: [{ type: "minecraft:item", name: `kubejs:${id}` }], rolls: 1 }], random_sequence: `kubejs:blocks/${id}` };
+	}
+
 	/**
-	 * 
-	 * @param {any} blockRegistry 
 	 * @param {string} id 
 	 * @param {Block|Internal.Supplier<Block>} block 
 	 * @param {object} model 
@@ -53,14 +74,8 @@ StartupEvents.registry('block', registry => {
 	 */
 	function registerCustomBlock(id, block, model, properties) {
 		JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, model);
-		global.writeJsonIfAbsent(`kubejs/assets/kubejs/blockstates/${id}.json`, {
-			variants: {
-				'': {
-					model: `kubejs:block/${id}`
-				}
-			}
-		}, `Created missing blockstate definition for block '${id}'`);
-		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, {}, `Created missing loot table for block '${id}'`);
+		global.writeJsonIfAbsent(`kubejs/assets/kubejs/blockstates/${id}.json`, noVariantBlockstate(id), `Created missing blockstate definition for block '${id}'`);
+		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, defaultLottTable(id), `Created missing loot table for block '${id}'`);
 		return registry.createCustom(id, (properties) ? () => new block(properties) : block);
 	};
 
@@ -143,10 +158,55 @@ StartupEvents.registry('block', registry => {
 		$BlockProperties.copy(Blocks.JUNGLE_LEAVES).sound(SoundType.GRASS)
 	);
 
-	// legacyCraftingTable = registerCustomBlock(
-	// 	'legacy/oak_sapling',
-	// 	new $SaplingBlock()
-	// )
+	function registerPottedFlowerBlock(id, flowerBlock) {
+		JsonIO.write(`kubejs/assets/kubejs/models/block/potted_${id}.json`, {
+			parent: 'minecraft:block/flower_pot_cross',
+			textures: {
+				plant: `kubejs:block/${id}`
+			}
+		});
+		global.writeJsonIfAbsent(`kubejs/assets/kubejs/blockstates/potted_${id}.json`, noVariantBlockstate(`potted_${id}`), `Created missing blockstate definition for block '${id}'`);
+		global.writeJsonIfAbsent(
+			`kubejs/data/kubejs/loot_tables/blocks/potted_${id}.json`,
+			{ type: "minecraft:block", pools: [{ bonus_rolls: 0, conditions: [{ condition: "minecraft:survives_explosion" }], entries: [{ type: "minecraft:item", name: "minecraft:flower_pot" }], rolls: 1 }, { bonus_rolls: 0, conditions: [{ condition: "minecraft:survives_explosion" }], entries: [{ type: "minecraft:item", name: `kubejs:${id}` }], rolls: 1 }], random_sequence: `kubejs:blocks/potted_${id}` },
+			`Created missing loot table for block '${id}'`
+		);
+		return registry.createCustom(`potted_${id}`, () => new $PottedFlowerBlock(flowerBlock, $BlockProperties.copy(Blocks.FLOWER_POT)));
+	}
+
+	function registerFlowerBlock(id, effect, properties) {
+		JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, {
+			parent: 'minecraft:block/cross',
+			textures: {
+				cross: `kubejs:block/${id}`
+			}
+		});
+		global.writeJsonIfAbsent(`kubejs/assets/kubejs/blockstates/${id}.json`, noVariantBlockstate(id), `Created missing blockstate definition for block '${id}'`);
+		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, defaultLootTable(id), `Created missing loot table for block '${id}'`);
+		let builder = registry.createCustom(id, () => new $FlowerBlock(effect, properties))
+		registerPottedFlowerBlock(id, builder);
+		return builder;
+	}
+
+	goldenDandelionBlock = registerFlowerBlock('golden_dandelion', 'saturation', $BlockProperties.copy(Blocks.DANDELION));
+
+	daybloomBlock = registerFlowerBlock('daybloom', 'saturation', $BlockProperties.copy(Blocks.DANDELION));
+	moonglowBlock = registerFlowerBlock('moonglow', 'night_vision', $BlockProperties.copy(Blocks.DANDELION));
+	blinkrootBlock = registerFlowerBlock('blinkroot', 'mining_fatigue', $BlockProperties.copy(Blocks.DANDELION));
+	deathweedBlock = registerCustomBlock(
+		'deathweed',
+		$RootBlock,
+		CustomBlockRegistry.Model.cross('kubejs:block/deathweed'),
+		$BlockProperties.copy(Blocks.DANDELION)
+	);
+	waterleafBlock = registerFlowerBlock('waterleaf', 'water_breathing', $BlockProperties.copy(Blocks.DANDELION));
+	fireblossomBlock = registerCustomBlock(
+		'fireblossom',
+		$RootBlock,
+		CustomBlockRegistry.Model.cross('kubejs:block/fireblossom'),
+		$BlockProperties.copy(Blocks.DANDELION)
+	);
+	shiverthornBlock = registerFlowerBlock('shiverthorn', 'slowness', $BlockProperties.copy(Blocks.DANDELION));
 });
 
 /// ----------------------------------------------------------- ///
@@ -172,4 +232,12 @@ StartupEvents.registry('item', registry => {
 	registerBlockItem('legacy/spruce_leaves', legacySpruceLeaves);
 	registerBlockItem('legacy/jungle_leaves', legacyJungleLeaves);
 	registerBlockItem('legacy/redstone_block', legacyRedstoneBlock);
+	registerBlockItem('golden_dandelion', goldenDandelionBlock);
+	registerBlockItem('daybloom', daybloomBlock);
+	registerBlockItem('moonglow', moonglowBlock);
+	registerBlockItem('blinkroot', blinkrootBlock);
+	registerBlockItem('deathweed', deathweedBlock);
+	registerBlockItem('waterleaf', waterleafBlock);
+	registerBlockItem('fireblossom', fireblossomBlock);
+	registerBlockItem('shiverthorn', shiverthornBlock);
 });
