@@ -379,7 +379,6 @@ StartupEvents.registry('banner_pattern', registry => {
 	registerBannerPattern('karottenkarla/progress', 'adj:pattern_item/pride', 'Progress Flag');
 	registerBannerPattern('karottenkarla/queer', 'adj:pattern_item/pride', 'Queer Flag');
 	registerBannerPattern('karottenkarla/rainbow', 'adj:pattern_item/pride', 'Rainbow Flag');
-	registerBannerPattern('karottenkarla/shark', 'adj:pattern_item/pride', 'Shark Flag');
 	registerBannerPattern('karottenkarla/tomboy', 'adj:pattern_item/pride', 'Tomboy Flag');
 	registerBannerPattern('karottenkarla/trans', 'adj:pattern_item/pride', 'Trans Flag');
 	registerBannerPattern('karottenkarla/transfem', 'adj:pattern_item/pride', 'Transfem Flag');
@@ -388,4 +387,5 @@ StartupEvents.registry('banner_pattern', registry => {
 
 	registerBannerPattern('karottenkarla/peace', 'adj:pattern_item/peace', 'Peace Symbol');
 	registerBannerPattern('karottenkarla/heart', 'adj:pattern_item/heart');
+	registerBannerPattern('karottenkarla/shark', 'adj:pattern_item/shark', 'Shark');
 });

@@ -45,6 +45,7 @@
 		registerBannerPatternItem('heart');
 		registerBannerPatternItem('peace');
 		registerBannerPatternItem('pride');
+		registerBannerPatternItem('shark');
 
 	});
 })();

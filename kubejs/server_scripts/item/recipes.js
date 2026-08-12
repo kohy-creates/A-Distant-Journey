@@ -497,12 +497,23 @@ ServerEvents.recipes((event) => {
 		['hanging_roots', 'dirt']
 	).id('adj:rooted_dirt');
 
-	event.shapeless(
-		'piglin_banner_pattern',
-		['piglin_head', 'paper']
-	).id('adj:snout_banner_pattern');
+	// Banner Patterns
+	function bannerPattern(output, input) {
+		event.shapeless(
+			output,
+			!Array.isArray(input) ? [input, 'paper'] : input.concat(['paper'])
+		).id(`adj:banner_pattern/${flattenedID(output)}`);
+	}
 
-	event.smelting('dead_bush', 'adjblocks:bush', 0.1, 200).id('adj:dead_bush_smelting')
+	bannerPattern('piglin_banner_pattern', 'piglin_head');
+	bannerPattern('adj:pride_banner_pattern', ['red_dye', 'orange_dye', 'yellow_dye', 'green_dye', 'blue_dye', 'purple_dye']);
+	bannerPattern('adj:heart_banner_pattern', 'heart_crystals:heart_crystal');
+	bannerPattern('adj:field_masoned_banner_pattern', 'brick_block');
+	bannerPattern('adj:peace_banner_pattern', '#saplings');
+	bannerPattern('adj:bordure_indented_banner_pattern', 'vine');
+	bannerPattern('adj:text_banner_pattern', '#signs');
+
+	event.smelting('dead_bush', 'adjblocks:bush', 0.1, 200).id('adj:dead_bush_smelting');
 
 	function mushroomBlockRecipe(output, input) {
 		event.shaped(
@@ -9514,5 +9525,5 @@ ServerEvents.recipes((event) => {
 			'born_in_chaos_v1:scorched_log', 'born_in_chaos_v1:scorched_log',
 			'blaze_powder'
 		]
-	)
+	).id('adj:smoldering_scorched_log');
 });

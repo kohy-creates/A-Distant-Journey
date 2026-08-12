@@ -267,6 +267,7 @@ MoreJSEvents.villagerTrades(event => {
 	newBasicTrade('fisherman', 2, '17x naturalist:catfish', '1x emerald');
 	newBasicTrade('fisherman', 3, '5x emerald', '7x naturalist:cooked_bass');
 	newBasicTrade('fisherman', 3, '11x naturalist:bass', '1x emerald');
+	newBasicTrade('fisherman', 4, '14x emerald', '1x adj:shark_banner_pattern', 2);
 
 	// Endologist
 	newBasicTrade('morevillagers:enderian', 4, '5x emerald', '3x alexsmobs:cosmic_cod');
