@@ -369,6 +369,24 @@ LootJS.modifiers((event) => {
 			);
 		});
 
+	event.addEntityLootModifier('born_in_chaos_v1:firelight')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('blaze_powder')
+					.limitCount([0, 2])
+					.lootingCount([0, 2])
+			);
+		});
+
+	event.addEntityLootModifier('born_in_chaos_v1:bone_imp')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('blaze_powder')
+					.limitCount([0, 1])
+					.lootingCount([0, 1])
+			);
+		});
+
 	event.addEntityLootModifier([
 		'wolf',
 		'witherstormmod:sickened_wolf',
