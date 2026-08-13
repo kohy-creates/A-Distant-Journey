@@ -58,15 +58,14 @@ EntityEvents.checkSpawn(event => {
 
 				let nearestPlayer = event.level.getNearestPlayer(entity, 128);
 				if (nearestPlayer && Math.abs(event.y - nearestPlayer.y) <= 10) {
-					let spawnMsgs = [
+					let spawnMsg = global.getRandomElement([
 						"A mutant monster has appeared nearby...",
 						"A powerful mutant monster has risen nearby...",
 						"A champion has appeared..."
-					];
+					]);
 
-					let randomMsg = spawnMsgs[Math.floor(Math.random() * spawnMsgs.length)];
 					server.runCommandSilent(
-						`/execute in ${event.level.dimension.toString()} run eta queue @a[distance=0..] status_messages "<dur:100><color col=FFEE45><shadow c=C28C29>[fade in=10 out=10]<typewriter speed=14>[anchor value=BOTTOM_CENTER][align value=CENTER>[offset x=0 y=-85]${randomMsg}"`
+						`/execute in ${event.level.dimension.toString()} run eta queue @a[distance=0..] status_messages "<dur:100><color col=FFEE45><shadow c=C28C29>[fade in=10 out=10]<typewriter speed=14>[anchor value=BOTTOM_CENTER][align value=CENTER>[offset x=0 y=-85]${spawnMsg}"`
 					);
 					server.scheduleInTicks(1, () => entity.remove("discarded"));
 					event.cancel();

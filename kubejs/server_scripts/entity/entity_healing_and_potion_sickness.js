@@ -20,7 +20,7 @@ NativeEvents.onEvent($LivingHealEvent, /** @param {Internal.LivingHealEvent_} ev
 					event.setCanceled(true);
 					return;
 				}
-				entity.addEffect(new $MobEffectInstance('kubejs:potion_sickness', 60 * 20, 0, false, false, true));
+				entity.addEffect(global.newMobEffectInstance('kubejs:potion_sickness', global.duration('1:00'), 0, false, false, true));
 			}
 			break;
 		}

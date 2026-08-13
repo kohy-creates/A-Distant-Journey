@@ -86,7 +86,7 @@ StartupEvents.registry('item', registry => {
 				data.speed * 1.0,
 				((!data.pullSpeed) ? defaultPullSpeed : data.pullSpeed) * 1.0,
 				!!data.isCreative,
-				new $ResourceLocation('kubejs', 'textures/entity/hook/' + type + '.png'),
+				global.resourceLocation('kubejs', 'textures/entity/hook/' + type + '.png'),
 				DEFAULT_PARTICLE_DATA.supplier,
 				DEFAULT_PARTICLE_DATA.min,
 				DEFAULT_PARTICLE_DATA.max,
@@ -124,51 +124,43 @@ StartupEvents.postInit(() => {
 	const MODEL_ROOT = 'kubejs/assets/kubejs/models';
 	const BLOCKSTATE_ROOT = 'kubejs/assets/kubejs/blockstates';
 
-	function writeIfMissing(path, data) {
-		if (JsonIO.read(path) != null) return;
-		JsonIO.write(path, data);
-	}
-
-	writeIfMissing(`${MODEL_ROOT}/item/grappling_hook_placeholder.json`, {
+	global.writeJsonIfAbsent(`${MODEL_ROOT}/item/grappling_hook_placeholder.json`, {
 		parent: 'minecraft:item/generated',
 		textures: {
 			layer0: 'kubejs:item/grappling_hook_placeholder'
 		}
-	});
+	}, 'Created placeholder grappling hook item model');
 
 	Object.entries(global.grapplingHooks).forEach(([id, data]) => {
 		if (data.chain) {
 			$ChainRegistry.registerChain(
 				id.replace('_hook', ''),
 				() => $BuiltInRegistries.BLOCK.get(
-					new $ResourceLocation(
-						'kubejs',
-						`${id}_chain`
-					)
+					global.resourceLocation('kubejs', `${id}_chain`)
 				)
 			);
 		}
 
-		writeIfMissing(`${MODEL_ROOT}/item/${id}.json`, {
+		global.writeJsonIfAbsent(`${MODEL_ROOT}/item/${id}.json`, {
 			parent: 'kubejs:item/grappling_hook_placeholder'
-		});
+		}, `Created placeholder item model for grappling hook ${id}`);
 
 		if (!data.chain) return;
 
 		const chainId = `${id}_chain`;
 
-		writeIfMissing(`${MODEL_ROOT}/block/${chainId}.json`, {
+		global.writeJsonIfAbsent(`${MODEL_ROOT}/block/${chainId}.json`, {
 			parent: 'minecraft:block/chain',
 			textures: {
 				all: 'kubejs:block/hook_chain_placeholder'
 			}
-		});
+		}, `Created chain block model for grappling hook ${id}`);
 
-		writeIfMissing(`${MODEL_ROOT}/item/${chainId}.json`, {
+		global.writeJsonIfAbsent(`${MODEL_ROOT}/item/${chainId}.json`, {
 			parent: `kubejs:block/${chainId}`
-		});
+		}, `Created chain item model for grappling hook ${id}`);
 
-		writeIfMissing(
+		global.writeJsonIfAbsent(
 			`${BLOCKSTATE_ROOT}/${chainId}.json`, {
 			variants: {
 				'axis=y': { model: `kubejs:block/${chainId}` },
@@ -182,6 +174,6 @@ StartupEvents.postInit(() => {
 					x: 90
 				}
 			}
-		});
+		}, `Created blockstate for grappling hook ${id}`);
 	});
 });

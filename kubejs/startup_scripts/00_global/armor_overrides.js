@@ -1,9 +1,4 @@
 //priority: 500
-// Percent
-function p(num) {
-	return num / 100;
-}
-
 global.armorOverrides = {
 	'create:cardboard': {
 		'generic.armor': {
@@ -30,7 +25,7 @@ global.armorOverrides = {
 			values: [4, 5, 4, 4]
 		},
 		'generic.knockback_resistance': {
-			values: [0, p(10), 0, p(5)]
+			values: [0, 0.1, 0, 0.05]
 		},
 	},
 	'rediscovered:plate': {
@@ -38,11 +33,11 @@ global.armorOverrides = {
 			values: [3, 4, 3, 2]
 		},
 		'generic.movement_speed': {
-			values: [p(-3.5), p(-3.5), p(-3.5), p(-3.5)],
+			values: [-0.035, -0.035, -0.035, -0.035],
 			operation: 'multiply_base'
 		},
 		'adjcore:generic.damage_reduction': {
-			values: [0, p(5), 0, 0]
+			values: [0, 0.05, 0, 0]
 		},
 	},
 	'minecraft:iron': {
@@ -58,7 +53,7 @@ global.armorOverrides = {
 			values: [0, 0.05, 0, 0.025]
 		},
 		'generic.attack_damage': {
-			values: [0, p(3), 0, p(3)],
+			values: [0, 0.03, 0, 0.03],
 			operation: 'multiply_base'
 		}
 	},
@@ -70,7 +65,7 @@ global.armorOverrides = {
 			values: [0, 0.1, 0, 0.05]
 		},
 		'generic.attack_damage': {
-			values: [0, p(6), 0, p(4)],
+			values: [0, 0.06, 0, 0.04],
 			operation: 'multiply_base'
 		}
 	},
@@ -82,7 +77,7 @@ global.armorOverrides = {
 			values: [1.5, 0, 0, 0]
 		},
 		'kubejs:damage_dealt': {
-			values: [p(15), 0, 0, 0],
+			values: [0.15, 0, 0, 0],
 			operation: 'multiply_base'
 		}
 	},
@@ -91,14 +86,14 @@ global.armorOverrides = {
 			values: [10, 13, 12, 9]
 		},
 		'generic.knockback_resistance': {
-			values: [p(2.5), p(12.5), p(5), p(5)]
+			values: [0.025, 0.125, 0.05, 0.05]
 		},
 		'generic.movement_speed': {
-			values: [0, 0, 0, p(6)],
+			values: [0, 0, 0, 0.06],
 			operation: 'multiply_base'
 		},
 		'generic.attack_damage': {
-			values: [p(6), p(12), p(6), 0],
+			values: [0.06, 0.12, 0.06, 0],
 			operation: 'multiply_base'
 		},
 		'attributeslib:crit_chance': {
@@ -110,7 +105,7 @@ global.armorOverrides = {
 			values: [9, 11, 10, 9]
 		},
 		'generic.knockback_resistance': {
-			values: [0, 0, p(12.5), 0]
+			values: [0, 0, 0.125, 0]
 		},
 		'adjcore:generic.health_regeneration': {
 			values: [0.5, 0.5, 0, 0]
@@ -131,11 +126,11 @@ global.armorOverrides = {
 			values: [0.05, 0.1, 0.1, 0.05]
 		},
 		'generic.movement_speed': {
-			values: [0, 0, 0, p(8)],
+			values: [0, 0, 0, 0.08],
 			operation: 'multiply_base'
 		},
 		'generic.attack_damage': {
-			values: [p(10), p(16), p(10), 0],
+			values: [0.1, 0.16, 0.1, 0],
 			operation: 'multiply_base'
 		},
 		'attributeslib:crit_chance': {
@@ -150,11 +145,11 @@ global.armorOverrides = {
 			values: [0.1, 0.1, 0.1, 0.1]
 		},
 		'generic.movement_speed': {
-			values: [0, 0, 0, p(10)],
+			values: [0, 0, 0, 0.1],
 			operation: 'multiply_base'
 		},
 		'generic.attack_damage': {
-			values: [p(10), p(20), p(12), p(8)],
+			values: [0.1, 0.2, 0.12, 0.08],
 			operation: 'multiply_base'
 		},
 		'attributeslib:crit_chance': {
@@ -195,7 +190,7 @@ global.armorOverrides = {
 			values: [0, 5, 0, 2]
 		},
 		'adjcore:player.mana_cost_reduction': {
-			values: [0, 0, p(5), 0]
+			values: [0, 0, 0.05, 0]
 		}
 	},
 	'ars_nouveau:arcanist_0': {
@@ -213,7 +208,7 @@ global.armorOverrides = {
 			operation: 'multiply_base'
 		},
 		'adjcore:player.mana_cost_reduction': {
-			values: [0, 0, p(7.5), p(2.5)]
+			values: [0, 0, 0.075, 0.025]
 		},
 		'ars_nouveau:ars_nouveau.perk.spell_damage': {
 			values: [0, 7, 0, 5]
@@ -234,7 +229,7 @@ global.armorOverrides = {
 			operation: 'multiply_base'
 		},
 		'adjcore:player.mana_cost_reduction': {
-			values: [0, 0, p(10), p(2.5)]
+			values: [0, 0, 0.1, 0.025]
 		},
 		'ars_nouveau:ars_nouveau.perk.spell_damage': {
 			values: [0, 20, 0, 10]
@@ -255,7 +250,7 @@ global.armorOverrides = {
 			operation: 'multiply_base'
 		},
 		'adjcore:player.mana_cost_reduction': {
-			values: [0, 0, p(12.5), 0]
+			values: [0, 0, 0.125, 0]
 		},
 		'ars_nouveau:ars_nouveau.perk.spell_damage': {
 			values: [40, 50, 20, 20]
@@ -279,7 +274,7 @@ global.armorOverrides = {
 			values: [0, 0, 0.15, 0]
 		},
 		'adjcore:player.mana_cost_reduction': {
-			values: [0, 0, p(15), 0]
+			values: [0, 0, 0.15, 0]
 		},
 		'ars_nouveau:ars_nouveau.perk.spell_damage': {
 			values: [40, 50, 20, 20]
@@ -303,7 +298,7 @@ global.armorOverrides = {
 			values: [0, 0, 0.15, 0]
 		},
 		'adjcore:player.mana_cost_reduction': {
-			values: [0, 0, p(15), 0]
+			values: [0, 0, 0.15, 0]
 		},
 		'ars_nouveau:ars_nouveau.perk.spell_damage': {
 			values: [40, 50, 20, 20]
@@ -327,7 +322,7 @@ global.armorOverrides = {
 			values: [0, 0, 0.15, 0]
 		},
 		'adjcore:player.mana_cost_reduction': {
-			values: [0, 0, p(15), 0]
+			values: [0, 0, 0.15, 0]
 		},
 		'ars_nouveau:ars_nouveau.perk.spell_damage': {
 			values: [40, 50, 20, 20]
@@ -351,7 +346,7 @@ global.armorOverrides = {
 			values: [0, 0, 0.15, 0]
 		},
 		'adjcore:player.mana_cost_reduction': {
-			values: [0, 0, p(15), 0]
+			values: [0, 0, 0.15, 0]
 		},
 		'ars_nouveau:ars_nouveau.perk.spell_damage': {
 			values: [40, 40, 20, 20]
@@ -367,7 +362,7 @@ global.armorOverrides = {
 			values: [6, 8, 7, 6]
 		},
 		'generic.movement_speed': {
-			values: [0, p(-5), p(-2.5), p(-2.5)],
+			values: [0, -0.05, -0.025, -0.025],
 			operation: 'multiply_base'
 		}
 	},
@@ -400,15 +395,15 @@ global.armorOverrides = {
 			values: [7, 8, 7, 6]
 		},
 		'generic.attack_damage': {
-			values: [p(9), p(7), p(5), 0],
+			values: [0.09, 0.07, 0.05, 0],
 			operation: 'multiply_base'
 		},
 		'generic.attack_speed': {
-			values: [0, p(8), 0, 0],
+			values: [0, 0.08, 0, 0],
 			operation: 'multiply_base'
 		},
 		'generic.movement_speed': {
-			values: [0, 0, 0, p(5)],
+			values: [0, 0, 0, 0.05],
 			operation: 'multiply_base'
 		}
 	},
@@ -424,7 +419,7 @@ global.armorOverrides = {
 			operation: 'multiply_base'
 		},
 		'generic.movement_speed': {
-			values: [p(-4), p(-4), p(-4), p(-4)],
+			values: [-0.04, -0.04, -0.04, -0.04],
 			operation: 'multiply_base'
 		},
 		'generic.attack_damage': {
@@ -437,7 +432,7 @@ global.armorOverrides = {
 			values: [4, 6, 5, 3]
 		},
 		'adjcore:player.mana_cost_reduction': {
-			values: [0, 0, p(5), p(3)]
+			values: [0, 0, 0.05, 0.03]
 		},
 		'ars_nouveau:ars_nouveau.perk.max_mana': {
 			values: [40, 20, 0, 0]
@@ -471,7 +466,7 @@ global.armorOverrides = {
 			values: [0, 0.1, 0.1, 0.1]
 		},
 		'adjcore:player.mana_cost_reduction': {
-			values: [p(10), 0, p(5), p(3)]
+			values: [0.1, 0, 0.05, 0.03]
 		},
 		'ars_nouveau:ars_nouveau.perk.max_mana': {
 			values: [40, 60, 40, 0]
@@ -597,7 +592,7 @@ global.armorOverrides = {
 			values: [8, 9, 9, 7]
 		},
 		'forge:entity_gravity': {
-			values: [p(-7), p(-7), p(-7), p(-7)],
+			values: [-0.07, -0.07, -0.07, -0.07],
 			operation: 'multiply_base'
 		},
 	},
@@ -619,7 +614,7 @@ global.armorOverrides = {
 			values: [10, 11, 10, 9]
 		},
 		'forge:entity_gravity': {
-			values: [p(-10), p(-10), p(-10), p(-10)],
+			values: [-0.1, -0.1, -0.1, -0.1],
 			operation: 'multiply_base'
 		},
 	},
@@ -628,19 +623,19 @@ global.armorOverrides = {
 			values: [14, 16, 14, 12]
 		},
 		'generic.attack_damage': {
-			values: [p(12), p(9), p(7), 0],
+			values: [0.12, 0.09, 0.07, 0],
 			operation: 'multiply_base'
 		},
 		'generic.attack_speed': {
-			values: [0, p(8), 0, 0],
+			values: [0, 0.08, 0, 0],
 			operation: 'multiply_base'
 		},
 		'generic.attack_speed': {
-			values: [0, p(5), 0, 0],
+			values: [0, 0.05, 0, 0],
 			operation: 'multiply_base'
 		},
 		'generic.movement_speed': {
-			values: [0, 0, 0, p(9)],
+			values: [0, 0, 0, 0.09],
 			operation: 'multiply_base'
 		}
 	},
@@ -649,14 +644,14 @@ global.armorOverrides = {
 			values: [17, 19, 17, 15]
 		},
 		'adjcore:generic.damage_reduction': {
-			values: [p(3), p(7), 0, 0]
+			values: [0.03, 0.07, 0, 0]
 		},
 		'generic.movement_speed': {
-			values: [p(-6), p(-6), p(-6), p(-6)],
+			values: [-0.06, -0.06, -0.06, -0.06],
 			operation: 'multiply_base'
 		},
 		'generic.attack_speed': {
-			values: [0, p(-7), p(-5), 0],
+			values: [0, -0.07, -0.05, 0],
 			operation: 'multiply_base'
 		},
 	},
@@ -675,7 +670,7 @@ global.armorOverrides = {
 			operation: 'multiply_base'
 		},
 		'adjcore:player.mana_cost_reduction': {
-			values: [0, p(15), 0, 0]
+			values: [0, 0.15, 0, 0]
 		},
 		'ars_nouveau:ars_nouveau.perk.spell_damage': {
 			values: [0, 0, 6, 8]
@@ -722,7 +717,7 @@ global.armorOverrides = {
 			values: [6, 9, 8, 7]
 		},
 		'generic.movement_speed': {
-			values: [0, p(-5), p(-4), p(-3)],
+			values: [0, -0.05, -0.04, -0.03],
 			operation: 'multiply_base'
 		},
 		'adjcore:generic.damage_reduction': {
@@ -757,3 +752,4 @@ global.armorOverrides = {
 		}
 	}
 }
+

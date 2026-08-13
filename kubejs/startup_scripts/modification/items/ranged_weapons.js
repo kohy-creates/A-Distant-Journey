@@ -1,5 +1,3 @@
-const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity');
-
 function explosion(level, x, y, z, arrow, shouldRemove) {
 	level.spawnParticles(
 		'amendments:fireball_explosion',
@@ -39,13 +37,11 @@ global.explodingBowEntityHit = function (event) {
 global.callOfTheVoidEntityHit = function (event) {
 	const entity = event.getEntity();
 	if (entity instanceof $LivingEntity) {
-		entity.addEffect(new $MobEffectInstance('kubejs:shadow_apparitions', 20 * 10, 0))
+		entity.addEffect(global.newMobEffectInstance('kubejs:shadow_apparitions', global.duration('0:10'), 0))
 	}
 }
 
 ItemEvents.modification(event => {
-	const $CrossbowItem = Java.loadClass("net.minecraft.world.item.CrossbowItem")
-	const $BowItem = Java.loadClass("net.minecraft.world.item.BowItem")
 
 	event.modify('mcdw:crossbow_exploding_crossbow', item => {
 		if (item instanceof $CrossbowItem) {

@@ -705,8 +705,8 @@ ServerEvents.recipes((event) => {
 				"item": input
 			},
 			result: output,
-			count: (outputCount) ? outputCount : 1
-		}).id((id) ? id : `adj:sewing/${flattenedID(output)}_from_${flattenedID(input)}`);
+			count: global.getOrDefault(outputCount, 1)
+		}).id(global.getOrDefault(id, `adj:sewing/${flattenedID(output)}_from_${flattenedID(input)}`));
 	};
 
 	event.shaped(
@@ -850,7 +850,7 @@ ServerEvents.recipes((event) => {
 				let id = ids[0];
 
 				if (id === 'botania:mana_string') id = 'ars_nouveau:magebloom_fiber';
-				counts[id] = (counts[id] || 0) + 1;
+				counts[id] = (global.getOrDefault(counts[id], 0) + 1);
 			});
 
 			let newIngredients = Object.entries(counts).map(([id, count]) => {
@@ -1263,7 +1263,7 @@ ServerEvents.recipes((event) => {
 		let recipe = {
 			"type": "lychee:item_inside",
 			"item_in": [],
-			"block_in": (inBlock) ? inBlock : "*",
+			"block_in": global.getOrDefault(inBlock, "*"),
 			"post": [
 				{
 					"type": "drop_item",
@@ -1271,7 +1271,7 @@ ServerEvents.recipes((event) => {
 					"count": (Array.isArray(output)) ? output[1] : 1,
 				}
 			],
-			"comment": (comment) ? comment : "Toss those items anywhere on the ground,\nclose together, to combine them into the result item!"
+			"comment": global.getOrDefault(comment, "Toss those items anywhere on the ground,\nclose together, to combine them into the result item!")
 		};
 
 		ingredients.forEach(i => {
@@ -1289,7 +1289,7 @@ ServerEvents.recipes((event) => {
 			}
 		});
 
-		event.custom(recipe).id((id) ? id : `adj:${flattenedID((Array.isArray(output)) ? output[0] : output)}`);
+		event.custom(recipe).id(global.getOrDefault(id, `adj:${flattenedID((Array.isArray(output)) ? output[0] : output)}`));
 	}
 
 
@@ -1314,7 +1314,7 @@ ServerEvents.recipes((event) => {
 			result: {
 				"item": output
 			}
-		}).id((id) ? id : `adj:warping/${flattenedID(dim)}/${flattenedID(output)}_from_${flattenedID(item)}`);
+		}).id(global.getOrDefault(id, `adj:warping/${flattenedID(dim)}/${flattenedID(output)}_from_${flattenedID(item)}`));
 	}
 	function aetherWarping(item, output, id) {
 		warping(item, output, 'aether:the_aether', id);
@@ -1370,7 +1370,7 @@ ServerEvents.recipes((event) => {
 	 */
 	function gaiaPlateRecipe(inputs, output, mana) {
 		const ingredients = inputs.map(id => {
-			if (typeof id === "string") {
+			if (global.isString(id)) {
 				return id.startsWith("#") ? { tag: id.slice(1) } : Item.of(id);
 			}
 			if (id && id.toJson) {
@@ -1383,7 +1383,7 @@ ServerEvents.recipes((event) => {
 		event.custom({
 			type: "botanicadds:gaia_plate",
 			ingredients: ingredients,
-			result: (typeof output === 'string' || output instanceof String) ? { item: output } : output,
+			result: (global.isString(output)) ? { item: output } : output,
 			mana: mana
 		}).id(`adj:gaia_plate/${flattenedID(output)}`);
 	}
@@ -2710,7 +2710,7 @@ ServerEvents.recipes((event) => {
 				'III'
 			],
 			{
-				F: (furnace) ? furnace : 'blast_furnace',
+				F: global.getOrDefault(furnace, 'blast_furnace'),
 				I: Item.of(input)
 			}
 		).id(`adj:alloy_forge/${input}_from_${(furnace) ? furnace.split(':')[1] : 'blast_furnace'}`)
@@ -3520,7 +3520,7 @@ ServerEvents.recipes((event) => {
 			event.recipes.ars_nouveau.imbuement(
 				'ars_nouveau:source_gem',
 				essence,
-				(recipe.source) ? recipe.source : 2000,
+				global.getOrDefault(recipe.source, 2000),
 				recipe.ingredients
 			).id(`adj:ars_essences/${flattenedID(essence)}_${i}`);
 		}
@@ -4725,7 +4725,7 @@ ServerEvents.recipes((event) => {
 	campfireRecipe('endergetic:ender_torch', '#endergetic:ender_fire_base_blocks', 'endergetic:ender_campfire');
 
 	function arrowRecipe(input, outputAmount, output) {
-		let outputArrow = (output) ? output : 'arrow';
+		let outputArrow = global.getOrDefault(output, 'arrow');
 		event.remove({ type: 'crafting_shaped', output: outputArrow });
 		event.shaped(
 			Item.of(outputArrow, outputAmount),
@@ -5980,7 +5980,7 @@ ServerEvents.recipes((event) => {
 			},
 			"result": (result instanceof Item) ? result : Item.of(result),
 			"duration": duration * 20,
-			"xp": (exp) ? exp : 3,
+			"xp": global.getOrDefault(exp, 3),
 			"tier": tier
 		}).id(`evilcraft:blood_infuser/${id}`)
 	}
@@ -6806,7 +6806,7 @@ ServerEvents.recipes((event) => {
 				item: item
 			},
 			container: {
-				item: (containerItem) ? containerItem : 'vinery:wine_bottle'
+				item: global.getOrDefault(containerItem, 'vinery:wine_bottle')
 			},
 			strict: false
 		}).id(`adj:pouring/${flattenedID(item)}`)
@@ -6843,15 +6843,15 @@ ServerEvents.recipes((event) => {
 				count: 1000,
 				fluid: basefluid
 			},
-			experience: (experience) ? experience : 1.0,
-			fermentingtime: (fermentingtime) ? fermentingtime : 9600,
+			experience: global.getOrDefault(experience, 1.0),
+			fermentingtime: global.getOrDefault(fermentingtime, 9600),
 			ingredients: ingr,
 			recipe_book_tab: "drinks",
 			result: {
 				count: 1000,
 				fluid: resultFluid
 			},
-			temperature: (temperature) ? temperature : 3
+			temperature: global.getOrDefault(temperature, 3)
 		}).id(`adj:fermenting/${flattenedID(resultFluid)}_from_${flattenedID(basefluid)}`);
 
 		pouringRecipe(resultFluid, resultItem, containerItem);
@@ -8461,7 +8461,7 @@ ServerEvents.recipes((event) => {
 	// Upgraded Sand Paper variants
 	// And slightly more expensive Sand Paper recipes
 	function sandPaperRecipe(sandPaper, material, id) {
-		event.shapeless(sandPaper, ['paper', material, material]).id(id ? id : `adj:sand_paper/${flattenedID(sandPaper)}`);
+		event.shapeless(sandPaper, ['paper', material, material]).id(global.getOrDefault(id, `adj:sand_paper/${flattenedID(sandPaper)}`));
 	}
 
 	sandPaperRecipe('create:sand_paper', 'sand', 'create:crafting/materials/sand_paper');
@@ -9361,20 +9361,20 @@ ServerEvents.recipes((event) => {
 	let salt = 124543534;
 	function oreExcavationBasicVein(output, name, id, spacing, separation, biomes, ticks, stress, drill, icon) {
 		salt++;
-		event.recipes.createoreexcavation.vein(name, icon ? icon : output)
-			.placement(spacing ? spacing : 256, separation ? separation : 64, salt)
-			.biomeWhitelist(biomes ? biomes : 'is_overworld')
+		event.recipes.createoreexcavation.vein(name, global.getOrDefault(icon, output))
+			.placement(global.getOrDefault(spacing, 256), global.getOrDefault(separation, 64), salt)
+			.biomeWhitelist(global.getOrDefault(biomes, 'is_overworld'))
 			.id(`adj:vein/${id}`)
 
 		if (drill) {
-			event.recipes.createoreexcavation.drilling(output, `adj:vein/${id}`, ticks ? ticks : 600)
+			event.recipes.createoreexcavation.drilling(output, `adj:vein/${id}`, global.getOrDefault(ticks, 600))
 				.drill(drill)
-				.stress(stress ? stress : 256)
+				.stress(global.getOrDefault(stress, 256))
 				.id(`adj:drilling_vein/${id}`);
 		}
 		else {
-			event.recipes.createoreexcavation.drilling(output, `adj:vein/${id}`, ticks ? ticks : 600)
-				.stress(stress ? stress : 256)
+			event.recipes.createoreexcavation.drilling(output, `adj:vein/${id}`, global.getOrDefault(ticks, 600))
+				.stress(global.getOrDefault(stress, 256))
 				.id(`adj:drilling_vein/${id}`);
 		}
 	}

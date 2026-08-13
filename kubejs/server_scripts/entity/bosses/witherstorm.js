@@ -192,13 +192,13 @@ EntityEvents.checkSpawn(event => {
 	if (dimension === 'minecraft:overworld' && server.persistentData.witherStormActive && event.getType().toString() === 'NATURAL') {
 		let chance = -1;
 		switch (server.persistentData.witherStormPhase) {
-			case 3: { chance = 0.015; break; }
-			case 4: { chance = 0.04; break; }
-			case 5: { chance = 0.07; break; }
-			case 6: { chance = 0.14; break; }
-			case 7: { chance = 0.28; break; }
+			case 3: { chance = 1.5; break; }
+			case 4: { chance = 4; break; }
+			case 5: { chance = 7; break; }
+			case 6: { chance = 14; break; }
+			case 7: { chance = 28; break; }
 		}
-		if (Math.random() <= chance) {
+		if (global.ifRandomChance(chance)) {
 			let groupSize = global.getRandomInt(1, Math.ceil(server.persistentData.witherStormPhase / 2));
 			for (let i = 0; i < groupSize; i++) {
 				server.runCommandSilent(

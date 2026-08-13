@@ -82,14 +82,14 @@ EntityEvents.hurt('player', event => {
 			if (Array.isArray(duration)) duration = EntityModifications._logic.getStageValue(duration, currentStage);
 
 			if (global.ifRandomChance(chance)) {
-				player.addEffect(new $MobEffectInstance(chosenEntry.id, Math.ceil(duration * 20), amplifier - 1));
+				player.addEffect(global.newMobEffectInstance(chosenEntry.id, Math.ceil(duration * 20), amplifier - 1));
 			}
 		}
 	}
 	switch (source.getType()) {
 		case 'supplementaries.bamboo_spikes':
 		case 'rediscovered_spikes': {
-			player.addEffect(global.newMobEffectInstance('majruszsdifficulty:bleeding', '0:42', 1));
+			player.addEffect(global.newMobEffectInstance('majruszsdifficulty:bleeding', '0:42', 0));
 			break;
 		}
 	}

@@ -665,7 +665,7 @@ ItemEvents.tooltip(event => {
 			let pos = (last) ? (tooltip[tooltip.size() - 1].toString().includes('color=dark_gray') ? tooltip.size() - 1 : tooltip.size()) : (position !== null ? position : 1);
 
 			text.forEach(line => {
-				if (typeof line === 'string') {
+				if (global.isString(line)) {
 					wrapLine(line, maxLen).forEach(wrapped => {
 						tooltip.add(pos + iter, gray ? Text.gray(wrapped) : Text.of(wrapped));
 						iter++;

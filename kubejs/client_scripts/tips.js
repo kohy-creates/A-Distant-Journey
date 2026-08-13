@@ -279,7 +279,7 @@
 // 		item: item,
 // 		title: title,
 // 		description: description,
-// 		duration: (duration) ? duration : 200
+// 		duration: global.getOrDefault(duration, 200)
 // 	};
 // }
 

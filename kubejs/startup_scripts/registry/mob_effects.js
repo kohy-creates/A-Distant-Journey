@@ -5,10 +5,10 @@
  */
 global.shadowApparitionsTick = function (entity, amplifier) {
 	if (!entity.level.isClientSide()) {
-		const chance = 0.035 * (amplifier + 1);
+		const chance = 3.5 * (amplifier + 1);
 
-		if (Math.random() < chance) {
-			const damage = (7 + amplifier) * (Math.random() * 0.15 + 1);
+		if (global.ifRandomChance(chance)) {
+			const damage = (7 + amplifier) * (global.getRandomNumber(0.85, 1.15));
 			const level = entity.level;
 			const pos = entity.pos;
 
@@ -25,11 +25,11 @@ global.shadowApparitionsTick = function (entity, amplifier) {
 			);
 
 			level.spawnParticles(
-				Math.random() >= 0.5 ? 'sweep_attack' : 'mcdw:offhand_sweep',
+				global.ifRandomChance(50) ? 'sweep_attack' : 'mcdw:offhand_sweep',
 				true,
-				entity.x + entity.getBbWidth() * (Math.random() - 0.5) * 1.5,
-				entity.y + entity.getEyeHeight() * (Math.random() * 0.5 + 0.45),
-				entity.z + entity.getBbWidth() * (Math.random() - 0.5) * 1.5,
+				entity.x + entity.getBbWidth() * (global.getRandomNumber(-0.5, 0.5)) * 1.5,
+				entity.y + entity.getEyeHeight() * (global.getRandomNumber(0, 0.5) + 0.45),
+				entity.z + entity.getBbWidth() * (global.getRandomNumber(-0.5, 0.5)) * 1.5,
 				0, 0, 0,
 				1, 0
 			);

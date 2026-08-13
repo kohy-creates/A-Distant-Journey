@@ -1,5 +1,3 @@
-const $Entity = Java.loadClass('net.minecraft.world.entity.Entity');
-const $Level = Java.loadClass('net.minecraft.world.level.Level');
 const $setLevelMethod = $Entity.__javaObject__.getDeclaredMethod('m_284535_', $Level);
 $setLevelMethod.setAccessible(true);
 

@@ -88,7 +88,7 @@ PlayerEvents.tick(event => {
 		player.stages.add('set_bonus.' + matchedBonusId.replace(':', '.'));
 
 		for (const effect of bonus.effects) {
-			if (effect.type === 'effect') player.addEffect(new $MobEffectInstance(effect.value.id, -1, effect.value.amplifier));
+			if (effect.type === 'effect') player.addEffect(global.newMobEffectInstance(effect.value.id, -1, effect.value.amplifier));
 			else if (effect.type === 'attribute') {
 				let uuid = effect.value.uuid || global.genericSetBonusUUID;
 				player.getAttribute(effect.value.id).addPermanentModifier(new $AttributeModifier(uuid, 'Set bonus', effect.value.value, effect.value.operation || 'addition'));
@@ -150,7 +150,7 @@ function removeBonus(player) {
  */
 function tickBonus(player) {
 	if (setBonusActive(player, 'born_in_chaos_v1:dark_metal_armor')) {
-		const percentHP = Math.round((player.health / player.maxHealth) * 100);
+		const percentHP = global.getHealthPercent(player);
 
 		if (percentHP <= 80) {
 			let amplifier = 0;
@@ -158,7 +158,7 @@ function tickBonus(player) {
 			else if (percentHP <= 40) amplifier = 2;
 			else if (percentHP <= 60) amplifier = 1;
 
-			player.addEffect(new $MobEffectInstance('born_in_chaos_v1:light_rampage', 10, amplifier, true, true, true));
+			player.addEffect(global.newMobEffectInstance('born_in_chaos_v1:light_rampage', 10, amplifier, true, true, true));
 		}
 		if (percentHP < 5) {
 			player.removeEffect('born_in_chaos_v1:medium_rampage');
@@ -171,18 +171,18 @@ function tickBonus(player) {
 	else if (setBonusActive(player, 'mythicmetals:prometheum')) {
 		const isExposedToSunlight = (player.level.getHeightmapPos("motion_blocking_no_leaves", player.block.pos) <= player.block.pos) && player.level.isDay();
 		if (isExposedToSunlight && player.level.isDay() && !player.level.isRaining()) {
-			player.addEffect(new $MobEffectInstance('kubejs:prometheum_regeneration', 4 * 20, 0));
+			player.addEffect(global.newMobEffectInstance('kubejs:prometheum_regeneration', global.duration('0:04'), 0));
 		}
 	}
 	else if (setBonusActive(player, 'aether:phoenix')) {
 		const percentHP = Math.round((player.health / player.maxHealth) * 100);
 		if (percentHP <= 30) {
-			player.addEffect(new $MobEffectInstance('kubejs:phoenix_defense', 40, 0, true, true, true));
+			player.addEffect(global.newMobEffectInstance('kubejs:phoenix_defense', global.duration('0:02'), 0, true, true, true));
 		}
 	}
 	else if (setBonusActive(player, 'aether:obsidian')) {
 		if (player.isShiftKeyDown()) {
-			player.addEffect(new $MobEffectInstance('kubejs:defensive_stance', 4, 0, true, true, true));
+			player.addEffect(global.newMobEffectInstance('kubejs:defensive_stance', 4, 0, true, true, true));
 		}
 	}
 }
@@ -209,7 +209,7 @@ EntityEvents.hurt(event => {
 	// On attack
 	if (playerSource) {
 		if (setBonusActive(playerSource, "mythicmetals:palladium")) {
-			playerSource.addEffect(new $MobEffectInstance('kubejs:rapid_healing', 4 * 20, 0));
+			playerSource.addEffect(global.newMobEffectInstance('kubejs:rapid_healing', global.duration('0:04'), 0));
 		}
 	}
 	// When taking damage

@@ -42,7 +42,7 @@ ServerEvents.tags('block', tags => {
 		}
 
 		entries.forEach(block => {
-			if (typeof block === "string" && block.startsWith('-')) {
+			if (global.isString(block) && block.startsWith('-')) {
 				map.remove.push(block.substring(1))
 			} else {
 				map.add.push(block)

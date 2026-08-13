@@ -132,14 +132,14 @@ MoreJSEvents.villagerTrades(event => {
 				offer.setFirstInput(inputs);
 			}
 			offer.setOutput(output);
-			offer.setMaxUses((maxUses) ? maxUses : 8);
+			offer.setMaxUses(global.getOrDefault(maxUses, 8));
 			offer.setVillagerExperience((output.includes('emerald') ? villagerXP.buy : villagerXP.sell));
-			offer.setPriceMultiplier((priceMul) ? priceMul : 0.05);
+			offer.setPriceMultiplier(global.getOrDefault(priceMul, 0.05));
 		});
 	}
 
 	function newPremiumTrade(profession, level, inputs, output, maxUses) {
-		newBasicTrade(profession, level, inputs, output, (maxUses) ? maxUses : 4, 0.2);
+		newBasicTrade(profession, level, inputs, output, global.getOrDefault(maxUses, 4), 0.2);
 	}
 
 	// Backpacks

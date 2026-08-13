@@ -15,12 +15,12 @@ EntityEvents.death(event => {
 		if (!pData.eyes) {
 			pData.eyes = {};
 		}
-		let chance = (server.isHardcore()) ? 0.33 : 0.2;
+		let chance = (server.isHardcore()) ? 33 : 2;
 		if (!pData.eyes[eye]) {
 			pData.eyes[eye] = true;
-			chance = 1;
+			chance = 100;
 		}
-		if (Math.random() <= chance) {
+		if (global.ifRandomChance(chance)) {
 			server.runCommandSilent(
 				`/execute in ${entity.level.dimension} positioned ${entity.x} ${entity.y + (entity.eyeHeight / 2)} ${entity.z} ${(entity.type === 'rediscovered:red_dragon') ? 'at @p positioned ~ ~12 ~ ' : ''}run summon marker ~ ~ ~ {Tags:["adj.eye_marker", "adj.eye_of_${eye}"]}`
 			);

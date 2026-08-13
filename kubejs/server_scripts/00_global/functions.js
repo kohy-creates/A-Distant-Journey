@@ -161,3 +161,12 @@ global.getCurrentChapter = function (server) {
 	let currentStage = parseInt((chapters.current_stage || "chapter_0").replace("chapter_", ""));
 	return currentStage;
 };
+
+/**
+ * Returns 'true' if the server is in hardmode (chapter 3 or higher), 'false' otherwise.
+ * @param {Internal.MinecraftServer_} server 
+ * @returns {boolean}
+ */
+global.isHardmode = function (server) {
+	return global.getCurrentChapter(server) >= 3;
+};

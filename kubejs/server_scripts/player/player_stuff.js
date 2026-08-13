@@ -119,7 +119,7 @@ PlayerEvents.tick(event => {
 	if (helmet.id === 'botania:terrasteel_helmet') {
 		let nbt = helmet.nbt;
 		if (nbt.AncientWill_dharok) {
-			let hp = 1 - player.getHealth() / player.getMaxHealth();
+			let hp = 1 - (global.getHealthPercent(player) / 100);
 			willOfDharockAmount = Math.max(Math.pow(hp - 0.2, 3), 0);
 		}
 	}
@@ -172,11 +172,6 @@ PlayerEvents.tick(event => {
 		}
 	}
 
-	// Overfed effect
-	if (player.getSaturation() > 20) {
-		player.addEffect(new $MobEffectInstance('kubejs:overfed', 3, 0, true, false, true));
-	}
-
 	if (player.isAlive()) {
 		if (player.isCuriosEquipped('kubejs:pocketful_of_sunshine')) {
 			if (!pData.pocketfulOfSunshineTimer && pData.pocketfulOfSunshineTimer != 0) {
@@ -199,7 +194,7 @@ PlayerEvents.tick(event => {
 			|| player.isCuriosEquipped('kubejs:celestial_shell')
 		) && player.isInWaterOrBubble()) {
 			isMerfolkActive = true;
-			player.addEffect(new $MobEffectInstance('kubejs:merfolk_form', 3, 0, true, false, true));
+			player.addEffect(global.newMobEffectInstance('kubejs:merfolk_form', 3, 0, true, false, true));
 
 		}
 
@@ -208,7 +203,7 @@ PlayerEvents.tick(event => {
 			|| player.isCuriosEquipped('kubejs:moon_shell')
 			|| player.isCuriosEquipped('kubejs:celestial_shell')
 		) && player.getLevel().isNight() && !isMerfolkActive) {
-			player.addEffect(new $MobEffectInstance('kubejs:werewolf_form', 3, 0, true, false, true));
+			player.addEffect(global.newMobEffectInstance('kubejs:werewolf_form', 3, 0, true, false, true));
 		}
 	}
 
@@ -237,7 +232,7 @@ PlayerEvents.tick(event => {
 				break;
 			}
 			case 'kubejs:cowardice': {
-				if (player.health / player.maxHealth <= 0.95) {
+				if (global.getHealthPercent(player) <= 95) {
 					damageDealtAttr.addTransientModifier(new $AttributeModifier(EnchantmentUUIDs.cowardice, 'Cowardice', 0.06 * (level + 1), 'multiply_total'));
 				}
 				break;
@@ -254,7 +249,7 @@ PlayerEvents.tick(event => {
 			let duration = 15;
 			if (isTidesingerActive) duration = 30; 
 			else if (isNeptuneActive) duration = 80;
-			player.addEffect(new $MobEffectInstance('water_breathing', duration * 20 + 1, 0, true, true, true));
+			player.addEffect(global.newMobEffectInstance('water_breathing', duration * 20 + 1, 0, true, true, true));
 		}
 	}
 
@@ -283,7 +278,7 @@ ADJServerEvents.adjHurt(event => {
 			let id = item.getId();
 
 			if (id.endsWith('_spear')) {
-				victim.addEffect(new $MobEffectInstance('kubejs:pierced', 7 * 20, 0, true, false, true));
+				victim.addEffect(global.newMobEffectInstance('kubejs:pierced', global.duration('0:07'), 0, true, false, true));
 			}
 
 			let helmet = player.getHeadArmorItem();
@@ -291,13 +286,13 @@ ADJServerEvents.adjHurt(event => {
 				case 'botania:terrasteel_helmet': {
 					let nbt = helmet.nbt;
 					if (nbt.AncientWill_ahrim) {
-						victim.addEffect(new $MobEffectInstance('minecraft:weakness', 8 * 20, 1, true, false, true));
+						victim.addEffect(global.newMobEffectInstance('minecraft:weakness', global.duration('0:08'), 1, true, false, true));
 					}
 					if (nbt.AncientWill_guthan) {
 						player.heal(Math.ceil(event.getDamage() * 0.1))
 					}
 					if (nbt.AncientWill_torag) {
-						victim.addEffect(new $MobEffectInstance('minecraft:slowness', 8 * 20, 1, true, false, true));
+						victim.addEffect(global.newMobEffectInstance('minecraft:slowness', global.duration('0:08'), 1, true, false, true));
 					}
 					if (nbt.AncientWill_verac) {
 						global.getEntitiesInRadius(level, victim.x, victim.y, victim.z, 1.5).forEach(/** @param {Internal.Entity_} entity */ entity => {
@@ -305,12 +300,12 @@ ADJServerEvents.adjHurt(event => {
 						});
 					}
 					if (nbt.AncientWill_karil) {
-						victim.addEffect(new $MobEffectInstance('minecraft:wither', 8 * 20, 2, true, false, true));
+						victim.addEffect(global.newMobEffectInstance('minecraft:wither', global.duration('0:08'), 2, true, false, true));
 					}
 				}
 			}
 			if (setBonusActive(player, 'twilightforest:fiery')) {
-				player.addEffect(new $MobEffectInstance('unusualend:swift_strikes', 5 * 20, 1, true, false, true));
+				player.addEffect(global.newMobEffectInstance('unusualend:swift_strikes', global.duration('0:05'), 1, true, false, true));
 			}
 		}
 	}
@@ -339,15 +334,15 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 			pdata.katanaCombo++;
 			if (pdata.katanaCombo >= 3) {
 				pdata.katanaCombo = 0;
-				attacker.addEffect(new $MobEffectInstance('speed', 5 * 20, 0));
-				attacker.playNotifySound('simplyswords:magic_sword_attack_02', 'players', 1.5, 1.2 + Math.random() * 0.2);
+				attacker.addEffect(global.newMobEffectInstance('speed', global.duration('0:05'), 0));
+				attacker.playNotifySound('simplyswords:magic_sword_attack_02', 'players', 1.5, global.getRandomNumber(1.2, 1.4));
 			}
 		}
 		if (id.includes('stormyx')) {
-			victim.addEffect(new $MobEffectInstance('cofh_core:shocked', 8 * 20, 0))
+			victim.addEffect(global.newMobEffectInstance('cofh_core:shocked', global.duration('0:08'), 0))
 		}
 		if (id.includes('mcdw:soul_dagger')) {
-			attacker.addEffect(new $MobEffectInstance('ars_nouveau:mana_regen', 2 * 20, (id === 'mcdw:soul_dagger_eternal_knife') ? 1 : 0));
+			attacker.addEffect(global.newMobEffectInstance('ars_nouveau:mana_regen', global.duration('0:02'), (id === 'mcdw:soul_dagger_eternal_knife') ? 1 : 0));
 		}
 		if (id.includes('star_platinum')) {
 			let fallingStar = level.createEntity('botania:falling_star');
@@ -360,18 +355,18 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 		// Stuff that depends on item ID
 		switch (id) {
 			case 'mcdw:dagger_resolute_tempest_knife': {
-				victim.addEffect(new $MobEffectInstance('slowness', 10 * 20, 1)); // -30%
-				attacker.addEffect(new $MobEffectInstance('speed', 10 * 20, 2)); // +30%
+				victim.addEffect(global.newMobEffectInstance('slowness', global.duration('0:10'), 1)); // -30%
+				attacker.addEffect(global.newMobEffectInstance('speed', global.duration('0:10'), 2)); // +30%
 				break;
 			}
 			case 'mcdw:glaive_grave_bane': {
 				if (victim.mobType === $MobType.UNDEAD) {
-					victim.addEffect(new $MobEffectInstance('ars_nouveau:hex', 10 * 20, 1, false, true, true)); // Vulnerability Hex II = 30% increased damage
+					victim.addEffect(global.newMobEffectInstance('ars_nouveau:hex', global.duration('0:10'), 1, false, true, true)); // Vulnerability Hex II = 30% increased damage
 				}
 				break;
 			}
 			case 'mcdw:glaive_venom_glaive': {
-				victim.addEffect(new $MobEffectInstance('minecraft:poison', 7 * 20, 0, false, true, true));
+				victim.addEffect(global.newMobEffectInstance('minecraft:poison', global.duration('0:07'), 0, false, true, true));
 				break;
 			}
 			case 'mcdw:sword_heartstealer': {
@@ -387,7 +382,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 			case 'mcdw:dagger_swift_striker': {
 				if (victim instanceof $Mob && victim.getTarget() != attacker) {
 					event.setAmount(event.getAmount() * 1.5);
-					level.playSound(null, victim.x, victim.y + victim.getEyeHeight(), victim.z, 'block.anvil.place', 'neutral', 1, Math.random() * 0.25 + 0.9);
+					level.playSound(null, victim.x, victim.y + victim.getEyeHeight(), victim.z, 'block.anvil.place', 'neutral', 1, global.getRandomNumber(0.9, 1.15));
 				}
 				break;
 			}
@@ -402,7 +397,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 						1, 0
 					);
 					console.log( event.getAmount())
-					level.playSound(null, victim.x, victim.y + victim.getEyeHeight(), victim.z, 'entity.generic.explode', 'neutral', 1, Math.random() * 0.2 + 0.9);
+					level.playSound(null, victim.x, victim.y + victim.getEyeHeight(), victim.z, 'entity.generic.explode', 'neutral', 1, global.getRandomNumber(0.9, 1.1));
 					global.getEntitiesInRadius(level, victim.x, victim.y, victim.z, 1.75).forEach(/** @param {Internal.Entity_} e*/ e => {
 						if (e == attacker) return;
 						e.attack(global.getDamageSource(level, 'minecraft:player_explosion', null, attacker), event.getAmount() * 0.3);
@@ -448,27 +443,27 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 						maxMul: null,
 						mul: 0,
 					}
-					victim.addEffect(new $MobEffectInstance((enchId === 'kubejs:void_strike') ? 'kubejs:void_strike' : 'kubejs:void_shot', 161, enchLevel - 1, false, false, true));
+					victim.addEffect(global.newMobEffectInstance((enchId === 'kubejs:void_strike') ? 'kubejs:void_strike' : 'kubejs:void_shot', 161, enchLevel - 1, false, false, true));
 					break;
 				}
 				case 'kubejs:committed': {
-					const mul = (1 - (victim.health / victim.maxHealth)) * (enchLevel * 0.2)
-					event.setAmount(event.getAmount() + event.getAmount() * mul)
+					const mul = (1 - (global.getHealthPercent(victim) / 100)) * (enchLevel * 0.2);
+					event.setAmount(event.getAmount() + event.getAmount() * mul);
 					break;
 				}
 				case 'kubejs:echo': {
 					if (attacker.hasEffect('kubejs:echo_cooldown')) break;
 
 					let damage = event.getAmount() * 1.5;
-					attacker.addEffect(new $MobEffectInstance('kubejs:echo_cooldown', (9 - enchLevel) * 20, 0, false, false, true))
+					attacker.addEffect(global.newMobEffectInstance('kubejs:echo_cooldown', (9 - enchLevel) * 20, 0, false, false, true))
 					victim.getServer().scheduleInTicks(6, () => {
 						victim.attack(global.getDamageSource(victim.level, 'minecraft:player_attack', null, attacker), damage);
-						victim.level.playSound(null, victim.x, victim.y, victim.z, 'simplyswords:magic_sword_attack_02', 'players', 0.75, 1 + Math.random() * 0.5)
+						victim.level.playSound(null, victim.x, victim.y, victim.z, 'simplyswords:magic_sword_attack_02', 'players', 0.75,global.getRandomNumber(1.0, 1.5))
 					})
 					break;
 				}
 				case 'kubejs:radiance': {
-					if (Math.random() <= 0.2) {
+					if (global.ifRandomChance(20)) {
 						global.getEntitiesInRadius(level, victim.x, victim.y, victim.z, 4.5).forEach(/** @param {Internal.Entity} entity */ entity => {
 							if (entity instanceof $Player) {
 								entity.heal(4 + enchLevel * 4)
@@ -479,7 +474,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 					break;
 				}
 				case 'kubejs:polarity_curse': {
-					if (Math.random() < 0.5) {
+					if (global.ifRandomChance(50)) {
 						event.setAmount(event.getAmount() * 1.5);
 					}
 					else {
@@ -494,7 +489,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 		// Accessories
 		let type = event.getSource().getType();
 		if (attacker.isCuriosEquipped('kubejs:withering_necklace') && type !== 'minecraft.wither') {
-			victim.addEffect(new $MobEffectInstance('wither', 10 * 20, 1));
+			victim.addEffect(global.newMobEffectInstance('wither', global.duration('0:10'), 1));
 		}
 		if (attacker.isCuriosEquipped('kubejs:ring_of_fire') && victim.isOnFire()) {
 			event.setAmount(event.getAmount() + 5);
@@ -516,7 +511,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 				let enchLevel = map[enchId];
 				switch (enchId) {
 					case 'kubejs:curse_of_anti_entropy': {
-						if (Math.random() <= 1 / 8) {
+						if (global.ifRandomChance(12.5)) {
 							victim.setSecondsOnFire(7);
 							attacker.setTicksFrozen(7 * 20)
 						}
@@ -529,7 +524,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 		// Accessories
 		if (victim.isCuriosEquipped('kubejs:wither_rose_ring')) {
 			attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 0.6);
-			attacker.addEffect(new $MobEffectInstance('wither', 4 * 20, 1));
+			attacker.addEffect(global.newMobEffectInstance('wither', global.duration('0:04'), 1));
 		}
 		else if (victim.isCuriosEquipped('kubejs:rose_ring')) {
 			attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 0.35);
@@ -563,23 +558,23 @@ EntityEvents.death(event => {
 		let level = victim.getLevel();
 
 		function dropItem(item, min, max, atEntity, sound, volume, pitch, particle, delta) {
-			if (Math.random() <= 0.05) {
+			if (global.ifRandomChance(5)) {
 				const amount = global.getRandomInt(min, max);
 				const entity = level.createEntity('minecraft:item');
 				entity.setPos(new Vec3d(atEntity.x, atEntity.y, atEntity.z));
 				entity.setItem(Item.of(item, amount));
 				entity.setPickUpDelay(15);
-				entity.setMotionX((Math.random() - 0.5) * 0.3);
-				entity.setMotionY(Math.random() * 0. + 0.1);
-				entity.setMotionZ((Math.random() - 0.5) * 0.3);
+				entity.setMotionX(global.getRandomNumber(-0.15, 0.15));
+				entity.setMotionY(global.getRandomNumber(0, 0.1));
+				entity.setMotionZ(global.getRandomNumber(-0.15, 0.15));
 				entity.spawn();
 				if (sound) {
-					let v = (volume) ? volume : 0.75;
-					let p = (pitch) ? pitch : 1.0;
+					let v = global.getOrDefault(volume, 0.75);
+					let p = global.getOrDefault(pitch, 1.0);
 					level.playSound(null, atEntity.x, atEntity.y, atEntity.z, sound, 'neutral', v, p);
 				}
 				if (particle) {
-					let d = (delta) ? delta : 0.33;
+					let d = global.getOrDefault(delta, 0.33);
 					level.spawnParticles(particle, false, victim.x, victim.y, victim.z, d, d, d, Math.ceil(amount * 2.5), 0)
 				}
 			}
@@ -588,7 +583,7 @@ EntityEvents.death(event => {
 		switch (id) {
 			case 'mcdw:sickle_last_laught_silver':
 			case 'mcdw:sickle_last_laught_gold': {
-				if (Math.random() <= 0.2) {
+				if (global.ifRandomChance(20)) {
 					dropItem('emerald', 1, 3, victim, 'adj:item.last_laugh.drop_loot', 'neutral', 0.75, 1.0, 'happy_villager');
 				}
 				break;
@@ -600,7 +595,7 @@ EntityEvents.death(event => {
 			let enchLevel = enchantments.get(enchId);
 			switch (enchId) {
 				case 'kubejs:prospector': {
-					if (Math.random() <= 0.05) {
+					if (global.ifRandomChance(5)) {
 						dropItem('emerald', 1, 1 + level, victim, 'adj:item.last_laugh.drop_loot', 'neutral', 0.75, 1.0, 'happy_villager');
 					}
 					break;
@@ -622,7 +617,7 @@ EntityEvents.death(event => {
 					else {
 						amplifier = 0;
 					}
-					player.addEffect(new $MobEffectInstance('kubejs:rampaging', 140 + (enchLevel - 1) * 30, amplifier, false, false, true))
+					player.addEffect(global.newMobEffectInstance('kubejs:rampaging', 140 + (enchLevel - 1) * 30, amplifier, false, false, true))
 					player.playNotifySound('block.anvil.place', 'players', 0.5, 0.6 + (amplifier) * 0.15)
 					break;
 				}
@@ -632,7 +627,7 @@ EntityEvents.death(event => {
 		// Accessories
 		if (player.isAlive()) {
 			if (player.isCuriosEquipped('kubejs:kiketsu_card')) {
-				if (Math.random() <= 0.12) {
+				if (global.ifRandomChance(12.5)) {
 					dropItem(global.weightedRandom({
 						'gold_nugget': 100,
 						'iron_nugget': 170,

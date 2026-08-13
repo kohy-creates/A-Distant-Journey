@@ -8,49 +8,49 @@ global.potionRegistry = {
 	dissolved_shiverthorn: { effects: [], ingredients: ['kubejs:shiverthorn'], },
 	endurance: {
 		effects: [
-			{ effect: 'minecraft:resistance', duration: global.duration('4:00') }
+			{ effect: 'minecraft:resistance', duration: '4:00' }
 		],
 		ingredient: ['minecraft:iron_block'],
 	},
 	decay: {
 		effects: [
-			{ effect: 'minecraft:wither', duration: global.duration('0:30') }
+			{ effect: 'minecraft:wither', duration: '0:30' }
 		],
 		ingredients: ['netherexp:fossil_fuel']
 	},
 	levitation: {
 		effects: [
-			{ effect: 'minecraft:levitation', duration: global.duration('0:10') }
+			{ effect: 'minecraft:levitation', duration: '0:10' }
 		],
 		ingredients: ['minecraft:shulker_shell']
 	},
 	iron_skin: {
 		effects: [
-			{ effect: 'kubejs:iron_skin', duration: global.duration('8:00') }
+			{ effect: 'kubejs:iron_skin', duration: '8:00' }
 		],
 		ingredients: ['minecraft:iron_ingot']
 	},
 	archery: {
 		effects: [
-			{ effect: 'kubejs:archery', duration: global.duration('8:00') }
+			{ effect: 'kubejs:archery', duration: '8:00' }
 		],
 		ingredients: ['minecraft:arrow']
 	},
 	magic_power: {
 		effects: [
-			{ effect: 'kubejs:magic_power', duration: global.duration('4:00') },
+			{ effect: 'kubejs:magic_power', duration: '4:00' },
 		],
 		ingredients: ['ars_nouveau:source_gem']
 	},
 	builder: {
 		effects: [
-			{ effect: 'kubejs:builder', duration: global.duration('45:00') }
+			{ effect: 'kubejs:builder', duration: '45:00' }
 		],
 		ingredients: ['minecraft:brick_block']
 	},
 	thorns: {
 		effects: [
-			{ effect: 'kubejs:thorns', duration: global.duration('8:00') }
+			{ effect: 'kubejs:thorns', duration: '8:00' }
 		],
 		ingredients: ['minecraft:rose_bush']
 	}
@@ -63,7 +63,7 @@ StartupEvents.registry('potion', event => {
 		const hasGlowstoneVariant = potionData.glowstone_duration_multiplier !== undefined;
 		let builder = event.create(potion);
 		potionData.effects.forEach((effect) => {
-			builder.addEffect(new $MobEffectInstance(effect.effect, effect.duration, global.getOrDefault(effect.amplifier, 0)));
+			builder.addEffect(global.newMobEffectInstance(effect.effect, global.duration(effect.duration), global.getOrDefault(effect.amplifier, 0)));
 		});
 	});
 });

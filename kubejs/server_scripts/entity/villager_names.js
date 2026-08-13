@@ -13,7 +13,7 @@
 		let tags = villager.getTags().toArray();
 		if (!tags.includes(tag)) {
 			villager.addTag(tag);
-			villager.setCustomName(Text.of(names[Math.floor(Math.random() * names.length)]))
+			villager.setCustomName(global.getRandomElement(names));
 		}
 	})
 

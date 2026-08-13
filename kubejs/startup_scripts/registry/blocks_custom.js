@@ -15,7 +15,7 @@ const CustomBlockRegistry = {
 					down: down,
 					east: east,
 					north: north,
-					particle: particle ? particle : north,
+					particle: global.getOrDefault(particle, north),
 					south: south,
 					up: up,
 					west: west

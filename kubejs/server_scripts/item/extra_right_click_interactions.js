@@ -43,7 +43,7 @@ ItemEvents.rightClicked(event => {
 				'alexscaves:pearl': 1
 			}));
 			player.swing(event.getHand(), true);
-			player.level.playSound(null, player.x, player.y, player.z, 'minecraft:entity.turtle.egg_crack', 'players', 0.5, Math.random() * 0.2 + 1.05);
+			player.level.playSound(null, player.x, player.y, player.z, 'minecraft:entity.turtle.egg_crack', 'players', 0.5, global.getRandomNumber(1.05, 1.25));
 			item.shrink(1);
 			break;
 		}

@@ -1,40 +1,50 @@
 //priority: 1000
 
+/**
+ * @returns {string[]} All rediscovered table and chair IDs. 
+ */
 global.rediscoveredFurniture = () => {
-	const furnitureTypes = [
-		'chair',
-		'table'
-	]
-	const furnitureVariants = [
-		'oak',
-		'cherry',
-		'birch',
-		'acacia',
-		'spruce',
-		'dark_oak',
-		'jungle',
-		'mangrove',
-		'warped',
-		'crimson',
-		'bamboo'
-	]
-
+	const furnitureTypes = ['chair', 'table'];
+	const furnitureVariants = ['oak', 'cherry', 'birch', 'acacia', 'spruce', 'dark_oak', 'jungle', 'mangrove', 'warped', 'crimson', 'bamboo'];
 	let furniture = [];
-
 	furnitureVariants.forEach(variant => {
 		furnitureTypes.forEach(type => {
-			furniture.push('rediscovered:' + variant + '_' + type)
-		})
-	})
-
+			furniture.push('rediscovered:' + variant + '_' + type);
+		});
+	});
 	return furniture;
 };
 
+/**
+ * Utility object for possible armor suffixes.
+ * All code that references this literally just mixes and matches
+ * the suffix to base ID in hopes that it works.
+ */
 global.armorSuffixes = {
 	head: ['_helmet', '_helm', '_hood', '_skull'],
 	chest: ['_chestplate', '_tunic', '_robes'],
 	legs: ['_leggings', '_pants'],
 	feet: ['_boots']
+};
+
+/**
+ * Returns either the first or second argument if first is null.
+ * Because Rhino wouldn't always work well with '||'.
+ * @param {object} value
+ * @param {object} ifNull
+ * @returns {object} 
+ */
+global.getOrDefault = function (value, ifNull) {
+	return (value) ? value : ifNull;
+};
+
+/**
+ * Returns 'true' if the given value is a string, 'false' otherwise.
+ * @param {any} value 
+ * @returns {boolean}
+ */
+global.isString = function (value) {
+	return (typeof value === 'string' || value instanceof String);
 };
 
 /**
@@ -63,7 +73,7 @@ global.getEntitiesInRadius = function (world, x, y, z, radius) {
 		x - radius, y - radius, z - radius,
 		x + radius, y + radius, z + radius
 	)).forEach((entity) => {
-		if (entity.distanceToSqr(new Vec3d(x, y, z) <= radius)) {
+		if (entity.distanceToSqr(new Vec3d(x, y, z)) <= radius) {
 			entities.push(entity);
 		}
 	});
@@ -107,6 +117,14 @@ global.getRandomInt = function (min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+/**
+ * Returns a random element from a given list.
+ * @param {*} list 
+ */
+global.getRandomElement = function (list) {
+	return list[Math.floor(Math.random() * list.length)];
 };
 
 /**
@@ -258,23 +276,17 @@ global.duration = function (string, mul) {
  * @param {boolean} showIcon 
  * @returns {Internal.MobEffectInstance_}
  */
-global.newMobEffectInstance = function (effect, duration, level, isAmbient, hideParticles, showIcon) {
-	let ambient = isAmbient ? isAmbient : false;
-	let hide = hideParticles ? hideParticles : false;
-	let icon = showIcon ? showIcon : true;
-	let amplifier = (level) ? level - 1 : 0;
-	return new $MobEffectInstance(effect, global.duration(duration), amplifier, ambient, hide, icon);
-};
-
-/**
- * Returns either the first or second argument if first is null.
- * Because Rhino wouldn't always work well with '||'.
- * @param {object} value
- * @param {object} ifNull
- * @returns {object} 
- */
-global.getOrDefault = function (value, ifNull) {
-	return (value) ? value : ifNull;
+global.newMobEffectInstance = function (effect, duration, amplifier, isAmbient, hideParticles, showIcon) {
+	let ambient = global.getOrDefault(isAmbient, false);
+	let hide = global.getOrDefault(hideParticles, false);
+	let icon = global.getOrDefault(showIcon, true);
+	let amplifier = global.getOrDefault(amplifier, 0);
+	return new $MobEffectInstance(
+		effect,
+		global.isString(duration) ? global.duration(duration) : duration,
+		amplifier,
+		ambient, hide, icon
+	);
 };
 
 /**
@@ -300,7 +312,7 @@ global.writeJsonIfAbsent = function (path, json, logAfter) {
 global.calculateSpellDamage = function (player, baseAmount, randomize) {
 	let spellPower = player.getAttribute('ars_nouveau:ars_nouveau.perk.spell_damage').getValue();
 	let mul = 1 + spellPower / 100;
-	let mul2 = (randomize) ? 1 + Math.random() * 0.3 - 0.15 : 1;
+	let mul2 = (randomize) ? 1 + global.getRandomNumber(-0.15, 0.15) : 1;
 	return baseAmount * mul * mul2;
 };
 
@@ -318,4 +330,35 @@ global.lang = {};
  */
 global.addTranslation = function (key, value) {
 	global.lang[key] = value;
+};
+
+/**
+ * Returns a new ResourceLocation.
+ * Ngl seeing `new ResourceLocation` without getting a deprecation warning is kinda weird.
+ * @param {string} namespace
+ * @param {string} path
+ * @returns {Internal.ResourceLocation_}
+ */
+global.resourceLocation = function (namespace, path) {
+	return new $ResourceLocation(namespace, path);
+};
+
+/**
+ * Returns the health percentage of an entity as a number between 0 and 100.
+ * @param {Internal.LivingEntity_} entity 
+ * @returns {number}
+ */
+global.getHealthPercent = function (entity) {
+	return entity.getHealth() / entity.getMaxHealth() * 100;
+};
+
+/**
+ * Default function to updates the curio state every tick.
+ * @param {Internal.ItemStack_} stack 
+ */
+global.updateCurioEveryTick = function (stack) {
+	if (!stack.hasNBT()) {
+		stack.nbt = {};
+	}
+	stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
 };

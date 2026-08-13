@@ -33,7 +33,7 @@ BlockEvents.rightClicked(event => {
 			for (let dx = -3; dx <= 3; dx++) {
 				for (let dz = -3; dz <= 3; dz++) {
 					// 30% chance per block
-					if (!(Math.random() <= 0.3)) continue;
+					if (!global.ifRandomChance(30)) continue;
 
 					let targetPos0 = blockPos.offset(dx, 0, dz);
 					let state0 = world.getBlockState(targetPos0);

@@ -1,271 +1,262 @@
 const $ForgeTier = Java.loadClass('net.minecraftforge.common.ForgeTier')
-const $BlockTags = Java.loadClass('net.minecraft.tags.BlockTags')
 const $TierSortingRegistry = Java.loadClass('net.minecraftforge.common.TierSortingRegistry')
 const $Tiers = Java.loadClass('net.minecraft.world.item.Tiers')
-const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
 
-const tiers = {
-	'adamantite': {
-		uses: 3000,
-		speed: 9.0,
-		attackDamageBonus: 5.0,
-		level: 4,
-		enchantmentValue: 16,
-		repairIngredient: '#c:adamantite_ingots'
-	},
-	'diamond': {
-		uses: 2000,
-		speed: 7.0,
-		attackDamageBonus: 5.0,
-		level: 3,
-		enchantmentValue: 10,
-		repairIngredient: 'diamond'
-	},
-	'aquarium': {
-		uses: 455,
-		speed: 6.0,
-		attackDamageBonus: 2.0,
-		level: 2,
-		enchantmentValue: 12,
-		repairIngredient: '#c:aquarium_ingots'
-	},
-	'bronze': {
-		uses: 354,
-		speed: 5.5,
-		attackDamageBonus: 2.5,
-		level: 2,
-		enchantmentValue: 14,
-		repairIngredient: '#c:bronze_ingots'
-	},
-	'carmot': {
-		uses: 1130,
-		speed: 6.0,
-		attackDamageBonus: 3.0,
-		level: 2,
-		enchantmentValue: 20,
-		repairIngredient: '#c:carmot_ingots'
-	},
-	'carmot_staff': {
-		uses: 1230,
-		speed: 6.0,
-		attackDamageBonus: 2.0,
-		level: 2,
-		enchantmentValue: 20,
-		repairIngredient: '#c:carmot_ingots'
-	},
-	'celestium': {
-		uses: 3000,
-		speed: 15.0,
-		attackDamageBonus: 8.0,
-		level: 6,
-		enchantmentValue: 30,
-		repairIngredient: '#c:celestium_ingots'
-	},
-	'copper': {
-		uses: 187,
-		speed: 4.0,
-		attackDamageBonus: 1.5,
-		level: 1,
-		enchantmentValue: 8,
-		repairIngredient: '#c:copper_ingots'
-	},
-	'gilded_midas_gold': {
-		uses: 999,
-		speed: 13.0,
-		attackDamageBonus: 4.0,
-		level: 3,
-		enchantmentValue: 30,
-		repairIngredient: '#c:midas_gold_ingots'
-	},
-	'hallowed': {
-		uses: 1984,
-		speed: 12.0,
-		attackDamageBonus: 5.0,
-		level: 4,
-		enchantmentValue: 20,
-		repairIngredient: '#c:hallowed_ingots'
-	},
-	'kyber': {
-		uses: 889,
-		speed: 6.0,
-		attackDamageBonus: 2.5,
-		level: 2,
-		enchantmentValue: 20,
-		repairIngredient: '#c:kyber_ingots'
-	},
-	'metallurgium': {
-		uses: 3000,
-		speed: 15.0,
-		attackDamageBonus: 8.0,
-		level: 6,
-		enchantmentValue: 30,
-		repairIngredient: '#c:metallurgium_ingots'
-	},
-	'midas_gold': {
-		uses: 300,
-		speed: 8.0,
-		attackDamageBonus: 3.0,
-		level: 3,
-		enchantmentValue: 30,
-		repairIngredient: '#c:midas_gold_ingots'
-	},
-	'mythril': {
-		uses: 1564,
-		speed: 11,
-		attackDamageBonus: 3.0,
-		level: 3,
-		enchantmentValue: 22,
-		repairIngredient: '#c:mythril_ingots'
-	},
-	'mythril_drill': {
-		uses: 1764,
-		speed: 28,
-		attackDamageBonus: 3.0,
-		level: 4,
-		enchantmentValue: 25,
-		repairIngredient: '#c:mythril_ingots'
-	},
-	'orichalcum': {
-		uses: 2048,
-		speed: 3.5,
-		attackDamageBonus: 2.0,
-		level: 3,
-		enchantmentValue: 16,
-		repairIngredient: '#c:orichalcum_ingots'
-	},
-	'palladium': {
-		uses: 1234,
-		speed: 8.0,
-		attackDamageBonus: 3.5,
-		level: 3,
-		enchantmentValue: 16,
-		repairIngredient: '#c:palladium_ingots'
-	},
-	'prometheum': {
-		uses: 1472,
-		speed: 8.5,
-		attackDamageBonus: 4.0,
-		level: 4,
-		enchantmentValue: 15,
-		repairIngredient: '#c:prometheum_ingots'
-	},
-	'runite': {
-		uses: 1337,
-		speed: 6.5,
-		attackDamageBonus: 3.3,
-		level: 2,
-		enchantmentValue: 17,
-		repairIngredient: '#c:runite_ingots'
-	},
-	'royal_midas_gold': {
-		uses: 2147,
-		speed: 21.0,
-		attackDamageBonus: 5.0,
-		level: 3,
-		enchantmentValue: 35,
-		repairIngredient: '#c:midas_gold_ingots'
-	},
-	'star_platinum': {
-		uses: 1300,
-		speed: 10.0,
-		attackDamageBonus: 4.0,
-		level: 5,
-		enchantmentValue: 18,
-		repairIngredient: '#c:star_platinum'
-	},
-	'steel': {
-		uses: 700,
-		speed: 6,
-		attackDamageBonus: 3.0,
-		level: 3,
-		enchantmentValue: 11,
-		repairIngredient: '#c:steel_ingots'
-	},
-	'stormyx': {
-		uses: 1305,
-		speed: 7.2,
-		attackDamageBonus: 3.5,
-		level: 3,
-		enchantmentValue: 12,
-		repairIngredient: '#c:stormyx_ingots'
-	},
-	'tidesinger': {
-		uses: 1233,
-		speed: 9.0,
-		attackDamageBonus: 4.0,
-		level: 2,
-		enchantmentValue: 18,
-		repairIngredient: '#c:aquarium_ingots'
-	},
-	'enderium': {
-		uses: 8000,
-		speed: 11,
-		attackDamageBonus: 5.0,
-		level: 5,
-		enchantmentValue: 15,
-		repairIngredient: 'majruszsdifficulty:enderium_ingot',
-	},
-	'netherite': {
-		uses: 3000,
-		speed: 10,
-		attackDamageBonus: 4.0,
-		level: 4,
-		enchantmentValue: 15,
-		repairIngredient: 'diamond',
-	},
-	'phoenix': {
-		uses: 8000,
-		speed: 12,
-		attackDamageBonus: 5.0,
-		level: 5,
-		enchantmentValue: 15,
-		repairIngredient: 'botania:rune_fire',
-	},
-	'valkyrum': {
-		uses: 8000,
-		speed: 8,
-		attackDamageBonus: 5.0,
-		level: 3,
-		enchantmentValue: 15,
-		repairIngredient: 'ancient_aether:valkyrum',
-	},
-	'divine': {
-		uses: 8000,
-		speed: 9,
-		attackDamageBonus: 5.0,
-		level: 3,
-		enchantmentValue: 25,
-		repairIngredient: '#ancient_aether:divine_repairing',
+const ADJTierRegistry = {
+	tiers: {
+		'adamantite': {
+			uses: 3000,
+			speed: 9.0,
+			attackDamageBonus: 5.0,
+			level: 4,
+			enchantmentValue: 16,
+			repairIngredient: '#c:adamantite_ingots'
+		},
+		'diamond': {
+			uses: 2000,
+			speed: 7.0,
+			attackDamageBonus: 5.0,
+			level: 3,
+			enchantmentValue: 10,
+			repairIngredient: 'diamond'
+		},
+		'aquarium': {
+			uses: 455,
+			speed: 6.0,
+			attackDamageBonus: 2.0,
+			level: 2,
+			enchantmentValue: 12,
+			repairIngredient: '#c:aquarium_ingots'
+		},
+		'bronze': {
+			uses: 354,
+			speed: 5.5,
+			attackDamageBonus: 2.5,
+			level: 2,
+			enchantmentValue: 14,
+			repairIngredient: '#c:bronze_ingots'
+		},
+		'carmot': {
+			uses: 1130,
+			speed: 6.0,
+			attackDamageBonus: 3.0,
+			level: 2,
+			enchantmentValue: 20,
+			repairIngredient: '#c:carmot_ingots'
+		},
+		'carmot_staff': {
+			uses: 1230,
+			speed: 6.0,
+			attackDamageBonus: 2.0,
+			level: 2,
+			enchantmentValue: 20,
+			repairIngredient: '#c:carmot_ingots'
+		},
+		'celestium': {
+			uses: 3000,
+			speed: 15.0,
+			attackDamageBonus: 8.0,
+			level: 6,
+			enchantmentValue: 30,
+			repairIngredient: '#c:celestium_ingots'
+		},
+		'copper': {
+			uses: 187,
+			speed: 4.0,
+			attackDamageBonus: 1.5,
+			level: 1,
+			enchantmentValue: 8,
+			repairIngredient: '#c:copper_ingots'
+		},
+		'gilded_midas_gold': {
+			uses: 999,
+			speed: 13.0,
+			attackDamageBonus: 4.0,
+			level: 3,
+			enchantmentValue: 30,
+			repairIngredient: '#c:midas_gold_ingots'
+		},
+		'hallowed': {
+			uses: 1984,
+			speed: 12.0,
+			attackDamageBonus: 5.0,
+			level: 4,
+			enchantmentValue: 20,
+			repairIngredient: '#c:hallowed_ingots'
+		},
+		'kyber': {
+			uses: 889,
+			speed: 6.0,
+			attackDamageBonus: 2.5,
+			level: 2,
+			enchantmentValue: 20,
+			repairIngredient: '#c:kyber_ingots'
+		},
+		'metallurgium': {
+			uses: 3000,
+			speed: 15.0,
+			attackDamageBonus: 8.0,
+			level: 6,
+			enchantmentValue: 30,
+			repairIngredient: '#c:metallurgium_ingots'
+		},
+		'midas_gold': {
+			uses: 300,
+			speed: 8.0,
+			attackDamageBonus: 3.0,
+			level: 3,
+			enchantmentValue: 30,
+			repairIngredient: '#c:midas_gold_ingots'
+		},
+		'mythril': {
+			uses: 1564,
+			speed: 11,
+			attackDamageBonus: 3.0,
+			level: 3,
+			enchantmentValue: 22,
+			repairIngredient: '#c:mythril_ingots'
+		},
+		'mythril_drill': {
+			uses: 1764,
+			speed: 28,
+			attackDamageBonus: 3.0,
+			level: 4,
+			enchantmentValue: 25,
+			repairIngredient: '#c:mythril_ingots'
+		},
+		'orichalcum': {
+			uses: 2048,
+			speed: 3.5,
+			attackDamageBonus: 2.0,
+			level: 3,
+			enchantmentValue: 16,
+			repairIngredient: '#c:orichalcum_ingots'
+		},
+		'palladium': {
+			uses: 1234,
+			speed: 8.0,
+			attackDamageBonus: 3.5,
+			level: 3,
+			enchantmentValue: 16,
+			repairIngredient: '#c:palladium_ingots'
+		},
+		'prometheum': {
+			uses: 1472,
+			speed: 8.5,
+			attackDamageBonus: 4.0,
+			level: 4,
+			enchantmentValue: 15,
+			repairIngredient: '#c:prometheum_ingots'
+		},
+		'runite': {
+			uses: 1337,
+			speed: 6.5,
+			attackDamageBonus: 3.3,
+			level: 2,
+			enchantmentValue: 17,
+			repairIngredient: '#c:runite_ingots'
+		},
+		'royal_midas_gold': {
+			uses: 2147,
+			speed: 21.0,
+			attackDamageBonus: 5.0,
+			level: 3,
+			enchantmentValue: 35,
+			repairIngredient: '#c:midas_gold_ingots'
+		},
+		'star_platinum': {
+			uses: 1300,
+			speed: 10.0,
+			attackDamageBonus: 4.0,
+			level: 5,
+			enchantmentValue: 18,
+			repairIngredient: '#c:star_platinum'
+		},
+		'steel': {
+			uses: 700,
+			speed: 6,
+			attackDamageBonus: 3.0,
+			level: 3,
+			enchantmentValue: 11,
+			repairIngredient: '#c:steel_ingots'
+		},
+		'stormyx': {
+			uses: 1305,
+			speed: 7.2,
+			attackDamageBonus: 3.5,
+			level: 3,
+			enchantmentValue: 12,
+			repairIngredient: '#c:stormyx_ingots'
+		},
+		'tidesinger': {
+			uses: 1233,
+			speed: 9.0,
+			attackDamageBonus: 4.0,
+			level: 2,
+			enchantmentValue: 18,
+			repairIngredient: '#c:aquarium_ingots'
+		},
+		'enderium': {
+			uses: 8000,
+			speed: 11,
+			attackDamageBonus: 5.0,
+			level: 5,
+			enchantmentValue: 15,
+			repairIngredient: 'majruszsdifficulty:enderium_ingot',
+		},
+		'netherite': {
+			uses: 3000,
+			speed: 10,
+			attackDamageBonus: 4.0,
+			level: 4,
+			enchantmentValue: 15,
+			repairIngredient: 'diamond',
+		},
+		'phoenix': {
+			uses: 8000,
+			speed: 12,
+			attackDamageBonus: 5.0,
+			level: 5,
+			enchantmentValue: 15,
+			repairIngredient: 'botania:rune_fire',
+		},
+		'valkyrum': {
+			uses: 8000,
+			speed: 8,
+			attackDamageBonus: 5.0,
+			level: 3,
+			enchantmentValue: 15,
+			repairIngredient: 'ancient_aether:valkyrum',
+		},
+		'divine': {
+			uses: 8000,
+			speed: 9,
+			attackDamageBonus: 5.0,
+			level: 3,
+			enchantmentValue: 25,
+			repairIngredient: '#ancient_aether:divine_repairing',
+		}
 	},
 };
 
-const blockTags = [
-	'minecraft:needs_stone_tool',
-	'minecraft:needs_iron_tool',
-	'minecraft:needs_diamond_tool',
-	'forge:needs_netherite_tool',
-	'adjcore:needs_tier_5_tool',
-	'adjcore:needs_tier_6_tool',
-];
-
 StartupEvents.init(event => {
 	function tierBelow(number) {
-		let tiers = [$Tiers.WOOD, $Tiers.STONE, $Tiers.IRON, $Tiers.DIAMOND, $Tiers.NETHERITE];
-		return [tiers[(number > 4) ? 4 : number]];
+		let vanillaTiers = [$Tiers.WOOD, $Tiers.STONE, $Tiers.IRON, $Tiers.DIAMOND, $Tiers.NETHERITE];
+		return [vanillaTiers[(number > 4) ? 4 : number]];
 	};
 
-	for (const key in tiers) {
-		let tier = tiers[key];
+	for (const key in ADJTierRegistry.tiers) {
+		let tier = ADJTierRegistry.tiers[key];
 		let forgeTier = new $ForgeTier(
 			tier.level,
 			tier.uses,
 			tier.speed,
 			tier.attackDamageBonus,
 			tier.enchantmentValue,
-			$BlockTags.create($ResourceLocation.parse("adj:needs_" + key + "_tool")),
+			$BlockTags.create(global.resourceLocation('adj', "needs_" + key + "_tool")),
 			() => Ingredient.of(tier.repairIngredient)
 		);
-		$TierSortingRegistry.registerTier(forgeTier, $ResourceLocation.parse('adj:' + key), tierBelow(tier.level), []);
+		$TierSortingRegistry.registerTier(forgeTier, global.resourceLocation('adj', key), tierBelow(tier.level), []);
 	}
 });
 
@@ -281,7 +272,7 @@ ItemEvents.modification(event => {
 		toolset.forEach(tool => {
 			const itemId = itemCat + tool;
 			event.modify(itemId, item => {
-				item.tier = $TierSortingRegistry.byName($ResourceLocation.parse('adj:' + tier));
+				item.tier = $TierSortingRegistry.byName(global.resourceLocation('adj', tier));
 			});
 		});
 	}

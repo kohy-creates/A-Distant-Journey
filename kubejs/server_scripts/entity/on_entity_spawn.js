@@ -34,14 +34,13 @@ EntityEvents.spawned(event => {
 				event.cancel();
 			}
 			else if (event.success) {
-				const nightmareStalkerMsgs = [
+				const randomMsg = global.getRandomElement([
 					"Something is following you...",
 					"You're not alone...  Stay alert...",
 					"A distant roar can be heard...",
 					"A nightmare has materialized nearby..."
-				];
+				]);
 
-				const randomMsg = nightmareStalkerMsgs[Math.floor(Math.random() * nightmareStalkerMsgs.length)];
 				event.getServer().runCommandSilent(
 					commandAtEntity(entity, `/eta queue @a[distance=0..] status_messages "<dur:100><color col=c50000><shadow c=8C0000>[fade in=10 out=10][vibrate a=0.8 f=8][anchor value=BOTTOM_CENTER][align value=CENTER][offset x=0 y=-85]${randomMsg}"`)
 				);

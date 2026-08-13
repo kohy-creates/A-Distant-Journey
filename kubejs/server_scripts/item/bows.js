@@ -13,15 +13,15 @@ EntityEvents.spawned(event => {
 		const shooter = arrowEntity.getOwner()
 		if (shooter instanceof $Player) {
 
-			let arrowDamage = global.arrowDamage[arrowEntity.type] || 4, bowDamage = 0;
+			let arrowDamage = global.getOrDefault(global.arrowDamage[arrowEntity.type], 4), bowDamage = 0;
 
 			const item = getMainRangedWeapon(shooter);
 			if (item) {
-				const power = item.getEnchantments()['minecraft:power'] || 0;
+				const power = global.getOrDefault(item.getEnchantments()['minecraft:power'], 0);
 				let data = global.bowDamage[item.getId()];
 				let damage = data;
 				if (Array.isArray(data)) damage = data[0];
-				bowDamage = ((damage * shooter.getAttributeValue($ALObjects.Attributes.ARROW_DAMAGE.get())) * (1 + power * 0.1)) || 0;
+				bowDamage = global.getOrDefault(((damage * shooter.getAttributeValue($ALObjects.Attributes.ARROW_DAMAGE.get())) * (1 + power * 0.1)), 0);
 
 				switch (item.getId()) {
 					case 'mcdw:crossbow_butterfly_crossbow': {

@@ -69,9 +69,9 @@ const EntityModifications = {
 
 			// Case 1: simple [hp, dmg, armor]
 			if (!Array.isArray(base[0])) {
-				health = base[0] || 100;
-				damage = base[1] || 15;
-				armor = base[2] || 0;
+				health = global.getOrDefault(base[0], 100);
+				damage = global.getOrDefault(base[1], 15);
+				armor = global.getOrDefault(base[2], 0);
 				if (global.autoscaleMobs.includes(type)) {
 					health = Math.ceil(health * EntityModifications.chapterMultipliers.hp[currentStage])
 					damage = Math.ceil(damage * EntityModifications.chapterMultipliers.damage[currentStage])

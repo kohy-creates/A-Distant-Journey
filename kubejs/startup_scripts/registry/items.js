@@ -62,10 +62,7 @@ global.itemEffects = {
 		 * @param {Internal.ItemStack} stack 
 		 */
 		tick: function (slotContext, stack) {
-			if (!stack.hasNBT()) {
-				stack.nbt = {};
-			}
-			stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
+			global.updateCurioEveryTick(stack);
 		}
 	},
 
@@ -75,10 +72,7 @@ global.itemEffects = {
 		 * @param {Internal.ItemStack} stack 
 		 */
 		tick: function (slotContext, stack) {
-			if (!stack.hasNBT()) {
-				stack.nbt = {};
-			}
-			stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
+			global.updateCurioEveryTick(stack);
 		},
 		/**
 		 * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx 
@@ -113,7 +107,7 @@ global.itemEffects = {
 		shoot: function (event) {
 			const player = event.getPlayer();
 			if (player) {
-				player.level.playSound(null, player.x, player.y + player.getEyeHeight(), player.z, 'minecraft:block.anvil.place', 'players', 1, Math.random() * .25 + 0.95);
+				player.level.playSound(null, player.x, player.y + player.getEyeHeight(), player.z, 'minecraft:block.anvil.place', 'players', 1, global.getRandomNumber(0.95, 1.2));
 				player.getPersistentData().elsa_crossbow_tickdown = 1;
 			}
 		}
@@ -125,10 +119,7 @@ global.itemEffects = {
 		 * @param {Internal.ItemStack} stack 
 		 */
 		tick: function (slotContext, stack) {
-			if (!stack.hasNBT()) {
-				stack.nbt = {};
-			}
-			stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
+			global.updateCurioEveryTick(stack);
 		},
 		/**
 		 * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx 
@@ -153,10 +144,7 @@ global.itemEffects = {
 		 * @param {Internal.ItemStack} stack 
 		 */
 		tick: function (slotContext, stack) {
-			if (!stack.hasNBT()) {
-				stack.nbt = {};
-			}
-			stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
+			global.updateCurioEveryTick(stack);
 		},
 		/**
 		 * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx 

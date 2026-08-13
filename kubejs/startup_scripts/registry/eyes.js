@@ -1,5 +1,3 @@
-const $Player = Java.loadClass('net.minecraft.world.entity.player.Player');
-
 global.eyeEffects = {};
 
 /**
@@ -13,7 +11,7 @@ global.eyeEffects = {};
 global.eyeEffects.cindersTick = function (slotContext, stack) {
 	const wearer = slotContext.getWearer();
 	if (!wearer.isOnFire()) {
-		wearer.addEffect(new $MobEffectInstance("fire_resistance", 18, 0, true, false, false));
+		wearer.addEffect(global.newMobEffectInstance("fire_resistance", 18, 0, true, false, false));
 	}
 	wearer.removeEffect('minecraft:wither');
 };
@@ -28,7 +26,7 @@ global.eyeEffects.cindersTick = function (slotContext, stack) {
 global.eyeEffects.angelsTick = (slotContext, stack) => {
 	const wearer = slotContext.getWearer();
 	if (wearer instanceof $Player && wearer.isShiftKeyDown()) {
-		wearer.addEffect(new $MobEffectInstance('slow_falling', 10, 0, false, false, false));
+		wearer.addEffect(global.newMobEffectInstance('slow_falling', 10, 0, false, false, false));
 	}
 };
 
@@ -39,10 +37,7 @@ global.eyeEffects.angelsTick = (slotContext, stack) => {
  * @param {Internal.ItemStack} stack 
  */
 global.eyeEffects.desolationTick = function (slotContext, stack) {
-	if (!stack.hasNBT()) {
-		stack.nbt = {};
-	}
-	stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
+	global.updateCurioEveryTick(stack);
 };
 /**
  * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx 
@@ -50,7 +45,7 @@ global.eyeEffects.desolationTick = function (slotContext, stack) {
 global.eyeEffects.desolationAttributeTick = function (ctx) {
 	const wearer = ctx.slotContext.getWearer();
 	if (!wearer) return;
-	const regenStrength = Math.max((1 - (wearer.getHealth() / wearer.getMaxHealth())) - 0.25, 0) * 8;
+	const regenStrength = Math.max((1 - (global.getHealthPercent(wearer) / 100)) - 0.25, 0) * 8;
 	ctx.modify('adjcore:generic.health_regeneration', 'kubejs.dynamic.eye_of_desolation', regenStrength, 'addition');
 }
 
@@ -61,10 +56,7 @@ global.eyeEffects.desolationAttributeTick = function (ctx) {
  * @param {Internal.ItemStack} stack 
  */
 global.eyeEffects.ethercraftTick = function (slotContext, stack) {
-	if (!stack.hasNBT()) {
-		stack.nbt = {};
-	}
-	stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
+	global.updateCurioEveryTick(stack);
 };
 /**
  * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx 
@@ -115,7 +107,7 @@ global.eyeEffects.verdancyTick = function (slotContext, stack) {
 global.eyeEffects.hedonismTick = function (slotContext, stack) {
 	const wearer = slotContext.getWearer();
 	if (wearer instanceof $Player) {
-		if (Math.random() <= 0.002) {
+		if (global.ifRandomChance(0.2)) {
 			const hunger = wearer.getFoodLevel();
 			if (hunger >= 20) {
 				wearer.setSaturation(wearer.getSaturation() + 1)

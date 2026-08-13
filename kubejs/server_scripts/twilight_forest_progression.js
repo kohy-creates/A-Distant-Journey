@@ -100,7 +100,7 @@ EntityEvents.death(event => {
 		console.log(`Processing progress death for '${entry}'`);
 		if (!data.tfProgress[entry]) {
 			console.log(`Not present, creating tag...`);
-			if (currentChapter >= ((chapterRequired) ? chapterRequired : 0)) {
+			if (currentChapter >= global.getOrDefault(chapterRequired, 0)) {
 				data.tfProgress[entry] = {
 					completed: true,
 					unlocked: true,
@@ -181,9 +181,7 @@ PlayerEvents.tick(event => {
 	function processStageTypical(type) {
 		if (tfProgressData[type] && tfProgressData[type].unlocked && !player.stages.has(`tf_progress.killed_${type}`)) {
 			player.stages.add(`tf_progress.killed_${type}`);
-			server.runCommand(
-				`advancement grant ${player.getName().getString()} only adj:twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair[type]}`
-			);
+			global.grantAdvancement(server, player, `twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair[type]}`);
 		}
 	}
 
@@ -194,9 +192,7 @@ PlayerEvents.tick(event => {
 
 	if (tfProgressData.progressMerge && tfProgressData.progressMerge.unlocked && !player.stages.has('tf_progress.killed_ur_ghast_and_hydra')) {
 		player.stages.add('tf_progress.killed_ur_ghast_and_hydra');
-		server.runCommand(
-			`advancement grant ${player.getName().getString()} only adj:twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair.hydra_and_ur_ghast}`
-		);
+		global.grantAdvancement(server, player, `twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair.hydra_and_ur_ghast}`);
 	}
 
 	processStageTypical('alpha_yeti');
@@ -204,9 +200,7 @@ PlayerEvents.tick(event => {
 
 	if (server.getPersistentData().hasPickedUpLampOfCinders && !player.stages.has('tf_progress.lamp_of_cinders')) {
 		player.stages.add('tf_progress.lamp_of_cinders');
-		server.runCommand(
-			`advancement grant ${player.getName().getString()} only adj:twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair.giants}`
-		);
+		global.grantAdvancement(server, player, `twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair.giants}`);
 	}
 });
 

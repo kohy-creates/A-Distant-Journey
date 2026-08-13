@@ -8,7 +8,7 @@ StartupEvents.registry('block', registry => {
 		];
 		if (extraTypes) types = types.concat(extraTypes);
 
-		if (!texture || (texture && typeof texture === 'string')) {
+		if (!texture || (texture && global.isString(texture))) {
 			types.forEach(type => {
 				registry.create(`${type == 'basic' ? baseId : `${baseId}_${type}`}`, type)
 					.hardness(hardness)
@@ -17,7 +17,7 @@ StartupEvents.registry('block', registry => {
 					.requiresTool(requiresTool)
 					.mapColor(mapColor)
 					.soundType(soundType)
-					.textureAll(texture ? texture : `kubejs:block/${baseId}`)
+					.textureAll(global.getOrDefault(texture, `kubejs:block/${baseId}`))
 					.displayName(type == 'basic' ? name : `${name} ${global.toTitleCase(global.textReplaceAll(type, '_', ''))}`);
 			});
 		}
@@ -83,7 +83,7 @@ StartupEvents.registry('block', registry => {
 			case 'purple': return 'COLOR_PURPLE';
 			case 'magenta': return 'COLOR_MAGENTA';
 			case 'pink': return 'COLOR_PINK';
-			default: return defaultTo ? defaultTo : 'STONE';
+			default: return global.getOrDefault(defaultTo, 'STONE');
 		}
 	}
 
