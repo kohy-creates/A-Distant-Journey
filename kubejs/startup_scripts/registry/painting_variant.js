@@ -350,13 +350,15 @@ StartupEvents.registry('painting_variant', registry => {
 	registerPainting('podagra/tiltedscale', 1, 1, 'Tiltedscale', 'podagra');
 	registerPainting('podagra/tomorrow', 2, 2, 'Tomorrow', 'podagra');
 	registerPainting('podagra/trident', 3, 1, 'Trident', 'podagra');
-	registerPainting('potato/abstractato', 2, 2, 'Abstractato', 'potato');
-	registerPainting('potato/burning_potato', 4, 4, 'Burning Potato', 'potato');
-	registerPainting('potato/ceci', 8, 4, 'Ceci', 'potato');
-	registerPainting('potato/mr_potato', 2, 3, 'Mr Potato', 'potato');
-	registerPainting('potato/poisonous_potato', 8, 8, 'Poisonous Potato', 'potato');
-	registerPainting('potato/potatoe', 4, 2, 'Potatoe', 'potato');
-	registerPainting('potato/ubiquitato', 3, 3, 'Ubiquitato', 'potato');
+
+	registerPainting('potato/abstractato', 2, 2, 'Tasty Shapes', 'Mr. Potato');
+	registerPainting('potato/burning_potato', 4, 4, 'Hot Potato', 'Mr. Potato');
+	registerPainting('potato/ceci', 8, 4, 'This is not a potato', 'Mr. Potato');
+	registerPainting('potato/mr_potato', 2, 3, 'Self Portrait ', 'Mr. Potato');
+	registerPainting('potato/poisonous_potato', 8, 8, 'The Treachery of Potatoes', 'Mr. Potato');
+	registerPainting('potato/potatoe', 4, 2, 'Potato', 'Mr. Potato');
+	registerPainting('potato/ubiquitato', 3, 3, 'In The Spotlight', 'Mr. Potato');
+	
 	registerPainting('slimesmc/accident', 1, 1, 'Accident', 'Slimesmc');
 	registerPainting('slimesmc/afternoon', 1, 3, 'Afternoon', 'Slimesmc');
 	registerPainting('slimesmc/alpha', 2, 2, 'Alpha', 'Slimesmc');
