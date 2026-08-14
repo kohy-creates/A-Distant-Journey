@@ -182,7 +182,7 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 					event.removeAttribute(attribute);
 					if (overrides[attribute].values[slots.indexOf(slot)] == 0) continue;
 					event.addModifier(attribute,
-						new $AttributeModifier(uuid, uuid, overrides[attribute].values[slots.indexOf(slot)], overrides[attribute].operation || 'addition'));
+						new $AttributeModifier(uuid, uuid, overrides[attribute].values[slots.indexOf(slot)], global.getOrDefault(overrides[attribute].operation, 'addition')));
 				}
 
 				if (id.includes('ars_nouveau:') || id.includes('ars_elemental:')) {

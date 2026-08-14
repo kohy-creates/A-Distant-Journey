@@ -108,8 +108,8 @@ ServerEvents.tick(event => {
 	const dayTime = server.overworld().dayTime() % 24000;
 
 	function sendMessage(options) {
-		const text = options.text || '';
-		const color = options.color || '#EEEEEE';
+		const text = global.getOrDefault(options.text, '');
+		const color = global.getOrDefault(options.color, '#EEEEEE');
 		const duration = (options.duration !== undefined ? options.duration : 6) * 20;
 
 		// const command = '/immersivemessages sendcustom @a[distance=0..] {anchor:0,y:' + y + ',color:"' + color + '"' + (slideArgs ? ',' + slideArgs : '') + '} ' + duration + ' ' + text;

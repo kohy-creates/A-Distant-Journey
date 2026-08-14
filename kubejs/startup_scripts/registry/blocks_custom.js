@@ -52,7 +52,8 @@ let legacyCraftingTable, legacyGrassBlock, legacyFurnace,
 	goldenDandelionBlock,
 	daybloomBlock, moonglowBlock, blinkrootBlock,
 	deathweedBlock, waterleafBlock, fireblossomBlock,
-	shiverthornBlock;
+	shiverthornBlock,
+	naturesGiftBlock, jungleRoseBlock;
 
 /// ----------------------------------------------------------- ///
 
@@ -127,7 +128,7 @@ StartupEvents.registry('block', registry => {
 		'legacy/redstone_block',
 		$PoweredBlock,
 		CustomBlockRegistry.Model.simple('kubejs:block/legacy/redstone_block'),
-		$BlockProperties.copy(Blocks.OAK_LEAVES).sound(SoundType.METAL).lightLevel((state) => { return 15; })
+		$BlockProperties.copy(Blocks.REDSTONE_BLOCK).sound(SoundType.METAL).lightLevel((state) => { return 15; })
 	);
 
 	legacyOakLeaves = registerCustomBlock(
@@ -190,7 +191,7 @@ StartupEvents.registry('block', registry => {
 
 	goldenDandelionBlock = registerFlowerBlock('golden_dandelion', 'saturation', $BlockProperties.copy(Blocks.DANDELION));
 
-	daybloomBlock = registerFlowerBlock('daybloom', 'saturation', $BlockProperties.copy(Blocks.DANDELION));
+	daybloomBlock = registerFlowerBlock('daybloom', 'regeneration', $BlockProperties.copy(Blocks.DANDELION));
 	moonglowBlock = registerFlowerBlock('moonglow', 'night_vision', $BlockProperties.copy(Blocks.DANDELION));
 	blinkrootBlock = registerFlowerBlock('blinkroot', 'mining_fatigue', $BlockProperties.copy(Blocks.DANDELION));
 	deathweedBlock = registerCustomBlock(
@@ -207,6 +208,9 @@ StartupEvents.registry('block', registry => {
 		$BlockProperties.copy(Blocks.DANDELION)
 	);
 	shiverthornBlock = registerFlowerBlock('shiverthorn', 'slowness', $BlockProperties.copy(Blocks.DANDELION));
+
+	naturesGiftBlock = registerFlowerBlock('natures_gift', 'ars_nouveau:mana_regen', $BlockProperties.copy(Blocks.DANDELION));
+	jungleRoseBlock = registerFlowerBlock('jungle_rose', 'haste', $BlockProperties.copy(Blocks.DANDELION));
 });
 
 /// ----------------------------------------------------------- ///
@@ -217,10 +221,14 @@ StartupEvents.registry('item', registry => {
 	 * @param {string} id 
 	 * @param {Internal.CustomBuilderObject_} supplier 
 	 */
-	function registerBlockItem(id, supplier) {
-		global.writeJsonIfAbsent(`kubejs/assets/kubejs/models/item/${id}.json`, {
-			parent: `kubejs:block/${id}`
-		});
+	function registerBlockItem(id, supplier, generated) {
+		global.writeJsonIfAbsent(
+			`kubejs/assets/kubejs/models/item/${id}.json`,
+			generated
+				? { parent: "minecraft:item/generated", textures: { layer0: `kubejs:item/${id}` } }
+				: { parent: `kubejs:block/${id}` },
+			`Created missing item model for block item '${id}'`
+		);
 		registry.createCustom(id, () => new $BlockItem(supplier.get(), new $ItemProperties()));
 	}
 
@@ -232,12 +240,14 @@ StartupEvents.registry('item', registry => {
 	registerBlockItem('legacy/spruce_leaves', legacySpruceLeaves);
 	registerBlockItem('legacy/jungle_leaves', legacyJungleLeaves);
 	registerBlockItem('legacy/redstone_block', legacyRedstoneBlock);
-	registerBlockItem('golden_dandelion', goldenDandelionBlock);
-	registerBlockItem('daybloom', daybloomBlock);
-	registerBlockItem('moonglow', moonglowBlock);
-	registerBlockItem('blinkroot', blinkrootBlock);
-	registerBlockItem('deathweed', deathweedBlock);
-	registerBlockItem('waterleaf', waterleafBlock);
-	registerBlockItem('fireblossom', fireblossomBlock);
-	registerBlockItem('shiverthorn', shiverthornBlock);
+	registerBlockItem('golden_dandelion', goldenDandelionBlock, true);
+	registerBlockItem('daybloom', daybloomBlock, true);
+	registerBlockItem('moonglow', moonglowBlock, true);
+	registerBlockItem('blinkroot', blinkrootBlock, true);
+	registerBlockItem('deathweed', deathweedBlock, true);
+	registerBlockItem('waterleaf', waterleafBlock, true);
+	registerBlockItem('fireblossom', fireblossomBlock, true);
+	registerBlockItem('shiverthorn', shiverthornBlock, true);
+	registerBlockItem('natures_gift', naturesGiftBlock, true);
+	registerBlockItem('jungle_rose', jungleRoseBlock, true);
 });

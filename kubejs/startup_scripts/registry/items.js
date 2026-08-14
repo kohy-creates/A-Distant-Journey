@@ -14,14 +14,12 @@ global.itemEffects = {
 
 	theCommunity: {
 		buffs: {
-			'generic.attack_damage': ['multiply_base', 0.05, 0.15],
+			'kubejs:damage_dealt': ['multiply_base', 0.05, 0.15],
 			'generic.armor': ['addition', 0, 4],
 			'generic.attack_speed': ['multiply_base', 0.04, 0.1],
 			'generic.movement_speed': ['multiply_total', 0.04, 0.1],
 			'adjcore:generic.health_regeneration': ['addition', 0.25, 2],
 			'adjcore:generic.damage_reduction': ['addition', 0, 0.05],
-			'attributeslib:arrow_damage': ['addition', 0.05, 0.15],
-			'ars_nouveau:ars_nouveau.perk.spell_damage': ['addition', 5, 15],
 		},
 		/**
 		 * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx 
@@ -30,16 +28,10 @@ global.itemEffects = {
 			const entity = ctx.slotContext.wearer;
 
 			if (!(entity instanceof $Player)) return;
-			if (entity.level.isClientSide()) return; // server only
+			if (entity.level.isClientSide()) return; // run server only
 
-			/**
-			 * @type {Internal.CompoundTag_}
-			 */
-			const serverData = entity.getServer().persistentData.killedBosses || {};
-			const killed = serverData.size();
-
-			const total = global.bossMobs.length || 1;
-			const progress = killed / total;
+			const total = global.getOrDefault(global.bossMobs.length, 1);
+			const progress = global.getKilledBosses(entity.getServer(), true) / total;
 
 			for (let [attributeKey, values] of Object.entries(this.buffs)) {
 				let value = values[1] + (values[2] - values[1]) * progress;
@@ -697,14 +689,6 @@ StartupEvents.registry('item', registry => {
 		.tooltip(Text.gray('Transforms the wearer into a melfork while in the water'))
 		.rarity('uncommon');
 
-	registry.create('natures_gift')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
-
 	registry.create('ring_of_greed')
 		.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
@@ -895,6 +879,29 @@ StartupEvents.registry('item', registry => {
 		.tag('curios:accessory')
 		.rarity('uncommon');
 
+	registry.create('a_very_fine_item')
+		.displayName('A Very Fine Item')
+		.unstackable()
+		.rarity('rare');
+
+	registry.create('the_slicer', 'crossbow')
+		.crossbow(crossbow => { })
+		.unstackable()
+		.maxDamage(1200)
+		.displayName('The Slicer')
+		.tooltip(Text.gray(''))
+		.tooltip('')
+		.rarity('uncommon');
+
+		registry.create('gloopy_bow', 'bow')
+		.bow(bow => { })
+		.unstackable()
+		.maxDamage(1200)
+		.displayName('Gloopy Bow')
+		.tooltip(Text.gray(''))
+		.tooltip('')
+		.rarity('uncommon');
+
 	function registerDust(name, color) {
 		registry.create(global.textReplaceAll(name.toLowerCase(), ' ', '_'))
 			.displayName(name)
@@ -1017,20 +1024,6 @@ StartupEvents.registry('item', registry => {
 			food.hunger(8)
 			food.saturation(0.3)
 		});
-
-	// registry.create('legacy/fish_raw')
-	// 	.displayName('Ancient Raw Fish')
-	// 	.food(food => {
-	// 		food.hunger(2)
-	// 		food.saturation(0.1)
-	// 	});
-
-	// registry.create('legacy/fish_cooked')
-	// 	.displayName('Ancient Cooked Fish')
-	// 	.food(food => {
-	// 		food.hunger(5)
-	// 		food.saturation(0.6)
-	// 	});
 
 	registry.create('legacy/bone')
 		.displayName('Ancient Bone')

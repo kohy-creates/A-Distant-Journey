@@ -181,6 +181,13 @@ ItemEvents.modification(event => {
 		item.attachCuriosCapability(CuriosJSCapabilityBuilder.create());
 	});
 
+	event.modify('kubejs:natures_gift', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('adjcore:player.mana_cost_reduction', '3931b7ae-ff20-42fa-b042-fed45112cf97', 0.06, 'addition')
+		);
+	});
+
 	const gloves = {
 		'aether:iron_gloves': {
 			damage: 1,
@@ -226,8 +233,7 @@ ItemEvents.modification(event => {
 			damage: 0,
 			operation: 'addition',
 			extra: [
-				{ attribute: 'forge:block_reach', value: 3, operation: 'addition' },
-				{ attribute: 'generic.attack_damage', value: 0.1, operation: 'multiply_base' }
+				{ attribute: 'forge:block_reach', value: 2, operation: 'addition' }
 			]
 		},
 		'aether:gravitite_gloves': {
@@ -235,11 +241,11 @@ ItemEvents.modification(event => {
 			operation: 'multiply_base',
 			extra: [
 				{ attribute: 'adjcore:player.mana_cost_reduction', operation: 'addition', value: 0.05 },
-				{ attribute: 'ars_nouveau:perk.spell_damage', operation: 'addition', value: 8 }
+				{ attribute: 'ars_nouveau:perk.spell_damage', operation: 'addition', value: 12 }
 			]
 		},
 		'aether:netherite_gloves': {
-			damage: 5,
+			damage: 4,
 			operation: 'addition',
 			extra: [{ attribute: 'attributeslib:crit_chance', value: 0.04, operation: 'addition' }]
 		},
@@ -261,7 +267,7 @@ ItemEvents.modification(event => {
 					'generic.attack_damage',
 					uuid,
 					entry.damage,
-					entry.operation || 'addition'
+					global.getOrDefault(entry.operation, 'addition')
 				)
 			}
 
@@ -270,7 +276,7 @@ ItemEvents.modification(event => {
 					element.attribute,
 					uuid,
 					element.value,
-					element.operation || 'addition'
+					global.getOrDefault(element.operation, 'addition')
 				)
 			});
 

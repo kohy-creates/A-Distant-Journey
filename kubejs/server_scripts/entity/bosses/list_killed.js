@@ -1,20 +1,13 @@
 EntityEvents.death(event => {
     const id = String(event.getEntity().getType());
-
     if (global.bossMobs.includes(id)) {
-        const pData = event.getServer().getPersistentData();
-
-        if (!pData.killedBosses) {
-            pData.killedBosses = {};
-        }
-
         /**
          * @type {Internal.CompoundTag_}
          */
-        const killedMap = pData.killedBosses;
-        if (!killedMap[id]) {
-            killedMap.put(id, true);
-            console.info(`Internal boss checklist: ${id} completed and marked as so!`);
+        const killedBosses = global.getKilledBosses(event.getServer());
+        if (!killedBosses.includes(id)) {
+            event.getServer().persistentData.killedBosses.put(id, true);
+            console.info(`Internal boss checklist: ${id} was defeated for the first time and marked as so!`);
         }
     }
 });

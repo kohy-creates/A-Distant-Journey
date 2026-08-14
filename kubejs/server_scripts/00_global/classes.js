@@ -26,3 +26,4 @@ const $LunarEventClass = Java.loadClass("dev.corgitaco.enhancedcelestials.api.lu
 const $EnhancedCelestialsRegistry = Java.loadClass("dev.corgitaco.enhancedcelestials.api.EnhancedCelestialsRegistry");
 const $PlayerChangedDimensionEvent = Java.loadClass("net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangedDimensionEvent")
 // const $PlayerChangeGameModeEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangeGameModeEvent');
+const $EntityPickupItemEvent = Java.loadClass('net.minecraftforge.event.entity.player.EntityItemPickupEvent');

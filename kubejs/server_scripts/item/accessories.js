@@ -111,10 +111,9 @@ PlayerEvents.loggedIn(event => {
 	}
 });
 
-// Event is not cancellable because why the fuck would it be
-// ItemEvents.pickedUp(event => {
-// 	const player = event.getPlayer();
-// 	if (player.isCuriosEquipped('alexscaves:heavyweight')) {
-// 		event.cancel();
-// 	}
-// });
+NativeEvents.onEvent($EntityPickupItemEvent, event => {
+	const player = event.getEntity();
+	if (player && player instanceof $Player && player.isCuriosEquipped('alexscaves:heavyweight')) {
+		event.setCancelled(true);
+	}
+});

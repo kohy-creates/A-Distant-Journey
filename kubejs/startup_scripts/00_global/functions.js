@@ -360,5 +360,22 @@ global.updateCurioEveryTick = function (stack) {
 	if (!stack.hasNBT()) {
 		stack.nbt = {};
 	}
-	stack.nbt.t = !(stack.nbt.getBoolean('t') || false);
+	stack.nbt.t = !(global.getOrDefault(stack.nbt.t, false));
+};
+
+/**
+ * Returns a list of all bosses that have been killed on the server.
+ * Only usable on the server side, but present here due to it being used in some curio functions.
+ * @param {Internal.MinecraftServer_} server 
+ * @param {boolean} returnAmount 
+ * Whether to return the amount of killed bosses (true) or the list of killed bosses (false, default).
+ * @returns {string[]|number}
+ */
+global.getKilledBosses = function (server, returnAmount) {
+	let pData = server.persistentData;
+	if (!pData.killedBosses) {
+		pData.killedBosses = {};
+	}
+	let list = Object.keys(pData.killedBosses);
+	return (returnAmount) ? list.length : list;
 };

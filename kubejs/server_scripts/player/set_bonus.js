@@ -90,8 +90,8 @@ PlayerEvents.tick(event => {
 		for (const effect of bonus.effects) {
 			if (effect.type === 'effect') player.addEffect(global.newMobEffectInstance(effect.value.id, -1, effect.value.amplifier));
 			else if (effect.type === 'attribute') {
-				let uuid = effect.value.uuid || global.genericSetBonusUUID;
-				player.getAttribute(effect.value.id).addPermanentModifier(new $AttributeModifier(uuid, 'Set bonus', effect.value.value, effect.value.operation || 'addition'));
+				let uuid = global.getOrDefault(effect.value.uuid, global.genericSetBonusUUID);
+				player.getAttribute(effect.value.id).addPermanentModifier(new $AttributeModifier(uuid, 'Set bonus', effect.value.value, global.getOrDefault(effect.value.operation, 'addition')));
 			}
 		}
 	}
@@ -124,7 +124,7 @@ function removeBonus(player) {
 			for (const effect of bonus.effects) {
 				if (effect.type === 'effect') player.removeEffect(effect.value.id);
 				else if (effect.type === 'attribute') {
-					let uuid = effect.value.uuid || global.genericSetBonusUUID;
+					let uuid = global.getOrDefault(effect.value.uuid, global.genericSetBonusUUID);
 					player.getAttribute(effect.value.id).removeModifier(uuid);
 				}
 			}
