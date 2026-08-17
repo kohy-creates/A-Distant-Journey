@@ -61,7 +61,6 @@ ItemEvents.modification(event => {
 			food.effect('alexscaves:sugar_rush', global.duration("00:06"), 0, 0.01);
 			food.hunger(2).saturation(0.1);
 			food.fastToEat();
-			food.alwaysEdible();
 		})
 	});
 
@@ -232,7 +231,6 @@ ItemEvents.modification(event => {
 	event.modify('minecraft:glistering_melon_slice', item => {
 		item.setFoodProperties(food => {
 			food.effect('adjcore:lesser_instant_health', 1, 0, 0.3);
-			food.alwaysEdible(true);
 			food.hunger(3);
 			food.saturation(0.6)
 		})
@@ -241,7 +239,6 @@ ItemEvents.modification(event => {
 	event.modify('oreberriesreplanted:uranium_oreberry', item => {
 		item.setFoodProperties(food => {
 			food.effect('minecraft:instant_damage', 1, 198, 1);
-			food.alwaysEdible(true);
 			food.hunger(999);
 			food.saturation(1);
 		});

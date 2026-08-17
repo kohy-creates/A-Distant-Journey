@@ -154,27 +154,81 @@ global.itemEffects = {
 };
 
 global.rings = {
+	'minecraft:redstone': {
+		name: 'Redstone Ring',
+		color: '#FF1100',
+		attributes: {
+			gold: [
+				['attributeslib:mining_speed', 'f47ac10b-58cc-4372-a567-0e02b2c3d401', 0.04, 'multiply_base']
+			]
+		}
+	},
+	'minecraft:lapis_lazuli': {
+		name: 'Lapis Ring',
+		color: '#1044A3',
+		attributes: {
+			gold: [
+				['attributeslib:experience_gained', 'b31d8e92-3c41-4a18-9d8a-1a2b3c4d5e02', 0.1, 'addition']
+			]
+		}
+	},
+	'minecraft:emerald': {
+		name: 'Emerald Ring',
+		color: '#11B03E',
+		attributes: {
+			gold: [
+				['generic.luck', 'a88c7d61-2f19-4b8a-8c7d-6e5d4c3b2a03', 1.0, 'addition']
+			]
+		}
+	},
 	'minecraft:diamond': {
 		name: 'Diamond Ring',
-		color: '#27D3F5',
+		color: '#4CEDD3',
 		attributes: {
-			iron: [
-				['attributeslib:crit_chance', 'c90d50d7-1489-4c10-9621-7de4c40d9500', 0.02, 'addition']
-			],
 			gold: [
-				['attributeslib:crit_chance', 'c90d50d7-1489-4c10-9621-7de4c40d9501', 0.04, 'addition']
+				['attributeslib:crit_chance', 'd99f8e72-1a2b-3c4d-5e6f-7a8b9c0d1e04', 0.04, 'addition']
 			]
 		}
 	},
 	'rediscovered:ruby': {
 		name: 'Ruby Ring',
-		color: '#ce1111',
+		color: '#E0122B',
 		attributes: {
-			iron: [
-				['generic.attack_damage', 'c90d50d7-1489-4c10-9621-7de4c40d9502', 1, 'addition']
-			],
 			gold: [
-				['generic.attack_damage', 'c90d50d7-1489-4c10-9621-7de4c40d9503', 2, 'addition']
+				['generic.attack_damage', 'c12a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b05', 1.0, 'addition']
+			]
+		}
+	},
+	'minecraft:amethyst': {
+		name: 'Amethyst Ring',
+		color: '#9A5CC6',
+		attributes: {
+			gold: [
+				['ars_nouveau:ars_nouveau.perk.spell_damage', 'e54b3c2a-1d0e-9f8a-7b6c-5d4e3f2a1b06', 4.0, 'addition']
+			]
+		}
+	},
+	'minecraft:ender_pearl': {
+		name: 'Ender Pearl Ring',
+		color: '#0B4C42',
+		attributes: {
+			gold: [
+				['generic.movement_speed', 'f12e3d4c-5b6a-7f8e-9d0c-1a2b3c4d5e07', 0.04, 'multiply_total']
+			]
+		}
+	},
+	'minecraft:nether_star': {
+		name: 'Ring of Might',
+		color: '#FFFFFF',
+		attributes: {
+			gold: [
+				['attributeslib:mining_speed', 'a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c08', 0.04, 'multiply_base'],
+				['attributeslib:experience_gained', 'b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d09', 0.1, 'addition'],
+				['generic.luck', 'c3d4e5f6-a78b-9c0d-1e2f-3a4b5c6d7e10', 1.0, 'addition'],
+				['attributeslib:crit_chance', 'd4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f11', 0.04, 'addition'],
+				['generic.attack_damage', 'e5f6a78b-9c0d-1e2f-3a4b-5c6d7e8f9a12', 1.0, 'addition'],
+				['ars_nouveau:ars_nouveau.perk.spell_damage', 'f6a78b9c-0d1e-2f3a-4b5c-6d7e8f9a0b13', 4.0, 'addition'],
+				['generic.movement_speed', 'a78b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c14', 0.04, 'multiply_total']
 			]
 		}
 	}
@@ -211,8 +265,8 @@ StartupEvents.registry('item', registry => {
 		.unstackable()
 		.displayName('Atlas')
 		.tooltip('§7Provides a minimap and a world map')
-		.tooltip('§7while in your inventory')
-		.tooltip('§7Works from inside of a Backpack!')
+		.tooltip('§7while equipped or in your inventory')
+		.tooltip('§7Works from inside of a Backpack')
 		.rarity('epic');
 
 	// Eye of Ethercraft pieces
@@ -223,30 +277,67 @@ StartupEvents.registry('item', registry => {
 			.rarity('epic');
 	}
 
-	// Wooden Armor
-	registry.create('wooden_helmet', 'helmet')
-		.unstackable()
-		.maxDamage(110)
-		.displayName('Wooden Helmet')
-		.tier('wooden');
+	// Non-legacy armor sets
+	function registerArmorSet(names, type, maxDamage, rarity) {
+		let pieces = ['helmet', 'chestplate', 'leggings', 'boots'];
+		for (let i = 0; i < pieces.length; i++) {
+			registry.create(`${type}_${pieces[i]}`, pieces[i])
+				.unstackable()
+				.maxDamage(maxDamage)
+				.tier(type)
+				.displayName(names[i])
+				.rarity(global.getOrDefault(rarity, 'common'));
+		}
+	}
 
-	registry.create('wooden_chestplate', 'chestplate')
-		.unstackable()
-		.maxDamage(110)
-		.displayName('Wooden Chestplate')
-		.tier('wooden');
+	registerArmorSet([
+		'Wooden Helmet',
+		'Wooden Chestplate',
+		'Wooden Leggings',
+		'Wooden Boots'
+	], 'wooden', 100);
 
-	registry.create('wooden_leggings', 'leggings')
-		.unstackable()
-		.maxDamage(110)
-		.displayName('Wooden Leggings')
-		.tier('wooden');
+	registerArmorSet([
+		'Sculk Hood',
+		'Sculk Tunic',
+		'Sculk Leggings',
+		'Sculk Boots'
+	], 'sculk', 300, 'rare');
 
-	registry.create('wooden_boots', 'boots')
-		.unstackable()
-		.maxDamage(110)
-		.displayName('Wooden Boots')
-		.tier('wooden');
+	registerArmorSet([
+		'Templar Helmet',
+		'Templar Chestplate',
+		'Templar Leggings',
+		'Templar Boots'
+	], 'templar', 300, 'rare');
+
+	registerArmorSet([
+		'Undead Wolf Helmet',
+		'Undead Wolf Chestplate',
+		'Undead Wolf Leggings',
+		'Undead Wolf Boots'
+	], 'undead_wolf', 300, 'rare');
+
+	registerArmorSet([
+		'Red Fox Helmet',
+		'Red Fox Chestplate',
+		'Red Fox Leggings',
+		'Red Fox Boots'
+	], 'red_fox', 300, 'rare');
+
+	registerArmorSet([
+		'Dark Helmet',
+		'Dark Chestplate',
+		'Dark Leggings',
+		'Dark Boots'
+	], 'dark', 300, 'rare');
+
+	registerArmorSet([
+		'Wither Helmet',
+		'Wither Chestplate',
+		'Wither Leggings',
+		'Wither Boots'
+	], 'wither', 300, 'rare');
 
 	// Upgraded Sand Paper
 	registry.create('soul_sand_paper', 'create:sandpaper')
@@ -414,7 +505,7 @@ StartupEvents.registry('item', registry => {
 		.displayName('Necklace of Withering Heights')
 		.unstackable()
 		.tooltip(Text.gray('Attacks inflict Wither'))
-		.tooltip(Text.gray('Heal for a portion of dealt Wither damage'))
+		.tooltip(Text.gray('Regain some health as your enemies wither'))
 		.tag('curios:accessory')
 		.rarity('uncommon');
 
@@ -446,7 +537,27 @@ StartupEvents.registry('item', registry => {
 			CuriosJSCapabilityBuilder.create()
 		)
 		.unstackable()
-		.tooltip(Text.gray('Deal 5 extra damage to mobs on fire'))
+		.tooltip(Text.gray('Deal 4 extra damage to mobs on fire'))
+		.tag('curios:accessory')
+		.rarity('epic');
+
+	registry.create('shield_of_fire')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tooltip(Text.gray('Defense increased by 4 while on fire'))
+		.tooltip(Text.gray('Grants immunity to fire'))
+		.tag('curios:accessory')
+		.rarity('epic');
+
+	registry.create('palladium_hero_aegis')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tooltip(Text.gray('Defense increased by 4 while on fire'))
+		.tooltip(Text.gray('Grants immunity to fire'))
 		.tag('curios:accessory')
 		.rarity('epic');
 
@@ -890,16 +1001,259 @@ StartupEvents.registry('item', registry => {
 		.maxDamage(1200)
 		.displayName('The Slicer')
 		.tooltip(Text.gray(''))
-		.tooltip('')
 		.rarity('uncommon');
 
-		registry.create('gloopy_bow', 'bow')
+	registry.create('gloopy_bow', 'bow')
 		.bow(bow => { })
 		.unstackable()
 		.maxDamage(1200)
 		.displayName('Gloopy Bow')
 		.tooltip(Text.gray(''))
-		.tooltip('')
+		.rarity('uncommon');
+
+	registry.create('alchemist_glove')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('buzzing_crown')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('celestial_blessing')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('concussive_glove')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('corrupted_ring')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('damage_blessing')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('highlander_blessing')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('pyromancer_blessing')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('scroll_of_containment')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('surgical_glove')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('sweeping_blessing')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('vampire_blessing')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('vengeful_band')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('prismarine_bow', 'bow')
+		.bow(bow => { })
+		.unstackable()
+		.maxDamage(1200)
+		.displayName('Prismarine Bow')
+		.tooltip(Text.gray(''))
+		.rarity('uncommon')
+
+	registry.create('the_phantom', 'bow')
+		.bow(bow => { })
+		.unstackable()
+		.maxDamage(1200)
+		.displayName('The Phantom')
+		.tooltip(Text.gray(''))
+		.rarity('rare')
+
+	registry.create('ambrosia')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('cactus_concoction')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('diamond_berry')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('gigashroom')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('truffle_blue')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('truffle_green')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('truffle_purple')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('truffle_red')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('truffle_white')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('celestial_crystal')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('enchanted_string')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('eternal_tear')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('gleamerite')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('golden_fermented_spider_eye')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('guardian_resonator')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('philosopher_stone')
+		.unstackable()
+		.tag('curios:accessory')
 		.rarity('uncommon');
 
 	function registerDust(name, color) {
@@ -1269,6 +1623,56 @@ ItemEvents.armorTierRegistry(event => {
 		tier.enchantmentValue = 5
 		tier.equipSound = 'minecraft:item.armor.equip_turtle'
 		tier.repairIngredient = '#planks'
+		tier.toughness = 0
+		tier.knockbackResistance = 0
+	});
+
+	event.add('red_fox', tier => {
+		tier.durabilityMultiplier = 4
+		tier.slotProtections = [0, 1, 1, 1]
+		tier.enchantmentValue = 5
+		tier.equipSound = 'minecraft:item.armor.equip_turtle'
+		tier.repairIngredient = 'leather'
+		tier.toughness = 0
+		tier.knockbackResistance = 0
+	});
+
+	event.add('undead_wolf', tier => {
+		tier.durabilityMultiplier = 4
+		tier.slotProtections = [0, 1, 1, 1]
+		tier.enchantmentValue = 5
+		tier.equipSound = 'minecraft:item.armor.equip_turtle'
+		tier.repairIngredient = 'leather'
+		tier.toughness = 0
+		tier.knockbackResistance = 0
+	});
+
+	event.add('dark', tier => {
+		tier.durabilityMultiplier = 4
+		tier.slotProtections = [0, 1, 1, 1]
+		tier.enchantmentValue = 5
+		tier.equipSound = 'minecraft:item.armor.equip_turtle'
+		tier.repairIngredient = 'obsidian'
+		tier.toughness = 0
+		tier.knockbackResistance = 0
+	});
+
+	event.add('wither', tier => {
+		tier.durabilityMultiplier = 4
+		tier.slotProtections = [0, 1, 1, 1]
+		tier.enchantmentValue = 5
+		tier.equipSound = 'minecraft:item.armor.equip_turtle'
+		tier.repairIngredient = 'coal'
+		tier.toughness = 0
+		tier.knockbackResistance = 0
+	});
+
+	event.add('templar', tier => {
+		tier.durabilityMultiplier = 4
+		tier.slotProtections = [0, 1, 1, 1]
+		tier.enchantmentValue = 5
+		tier.equipSound = 'minecraft:item.armor.equip_turtle'
+		tier.repairIngredient = 'iron_ingot'
 		tier.toughness = 0
 		tier.knockbackResistance = 0
 	});
