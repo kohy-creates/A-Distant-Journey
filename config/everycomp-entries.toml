@@ -60,18 +60,12 @@
 		[types.wood_type.witherstormmod]
 			tainted = true
 
-		[types.wood_type.enhanced_mushrooms]
-			mushroom = true
-
 		[types.wood_type.evilcraft]
 			undead = true
 
 		[types.wood_type.window_box]
 			chthonic_yew = true
 			alfthorne = true
-
-		[types.wood_type.architects_palette]
-			twisted = true
 
 		[types.wood_type.ancient_aether]
 			highsproot = true
@@ -155,9 +149,6 @@
 		[types.leaves_type.window_box]
 			chthonic_yew = true
 			alfthorne = true
-
-		[types.leaves_type.architects_palette]
-			twisted = true
 
 		[types.leaves_type.ancient_aether]
 			crystal_skyroot = true
@@ -315,62 +306,6 @@
 			azure_seastone = true
 			azure_seastone_brick = true
 			polished_azure_seastone = true
-
-		[types.cut_block_type.hearth_and_home]
-			cobblestone_brick = true
-			thatch = true
-			polished_calcite = true
-			shingle = true
-			white_shingle = true
-			orange_shingle = true
-			magenta_shingle = true
-			light_blue_shingle = true
-			yellow_shingle = true
-			lime_shingle = true
-			pink_shingle = true
-			gray_shingle = true
-			light_gray_shingle = true
-			cyan_shingle = true
-			purple_shingle = true
-			blue_shingle = true
-			brown_shingle = true
-			green_shingle = true
-			red_shingle = true
-			black_shingle = true
-			terracotta_brick = true
-			white_terracotta_brick = true
-			orange_terracotta_brick = true
-			magenta_terracotta_brick = true
-			light_blue_terracotta_brick = true
-			yellow_terracotta_brick = true
-			lime_terracotta_brick = true
-			pink_terracotta_brick = true
-			gray_terracotta_brick = true
-			light_gray_terracotta_brick = true
-			cyan_terracotta_brick = true
-			purple_terracotta_brick = true
-			blue_terracotta_brick = true
-			brown_terracotta_brick = true
-			green_terracotta_brick = true
-			red_terracotta_brick = true
-			black_terracotta_brick = true
-			tile = true
-			white_tile = true
-			orange_tile = true
-			magenta_tile = true
-			light_blue_tile = true
-			yellow_tile = true
-			lime_tile = true
-			pink_tile = true
-			gray_tile = true
-			light_gray_tile = true
-			cyan_tile = true
-			purple_tile = true
-			blue_tile = true
-			brown_tile = true
-			green_tile = true
-			red_tile = true
-			black_tile = true
 
 		[types.cut_block_type.mynethersdelight]
 			powdery = true
@@ -704,9 +639,6 @@
 			dirt_path = true
 			large_brick = true
 
-		[types.cut_block_type.enhanced_mushrooms]
-			mushroom = true
-
 		[types.cut_block_type.etcetera]
 			leveled_stone = true
 
@@ -718,68 +650,6 @@
 			chthonic_yew = true
 			alfthorne_wood = true
 			alfthorne = true
-
-		[types.cut_block_type.architects_palette]
-			abyssaline_brick = true
-			abyssaline_tile = true
-			hadaline_brick = true
-			hadaline_tile = true
-			entrails = true
-			myonite = true
-			myonite_brick = true
-			mushy_myonite_brick = true
-			olivestone_brick = true
-			olivestone_tile = true
-			algal_brick = true
-			overgrown_algal_brick = true
-			coal_ore_brick = true
-			lapis_ore_brick = true
-			redstone_ore_brick = true
-			iron_ore_brick = true
-			gold_ore_brick = true
-			emerald_ore_brick = true
-			diamond_ore_brick = true
-			flint_tile = true
-			polished_packed_ice = true
-			osseous_brick = true
-			withered_osseous_brick = true
-			polished_glowstone = true
-			gilded_sandstone = true
-			warpstone = true
-			twisted = true
-			basalt_tile = true
-			oak_board = true
-			birch_board = true
-			spruce_board = true
-			jungle_board = true
-			dark_oak_board = true
-			acacia_board = true
-			crimson_board = true
-			warped_board = true
-			mangrove_board = true
-			twisted_board = true
-			dripstone_brick = true
-			calcite_brick = true
-			tuff_brick = true
-			cut_nether_brass = true
-			smooth_nether_brass = true
-			esoterrack = true
-			esoterrack_brick = true
-			onyx = true
-			onyx_brick = true
-			wardstone = true
-			wardstone_brick = true
-			ancient_plating = true
-			tread_plate = true
-			oracle_brick = true
-			dark_oracle_brick = true
-			oracle_tile = true
-			cerebral_tile = true
-			moonshale = true
-			moonshale_brick = true
-			craterstone = true
-			nebulite = true
-			polished_nebulite = true
 
 		[types.cut_block_type.ancient_aether]
 			highsproot = true
@@ -902,6 +772,55 @@
 			mining = true
 			sorting = true
 
+		[types.cut_block_type.redeco]
+			polished_oak = true
+			polished_spruce = true
+			polished_birch = true
+			polished_jungle = true
+			polished_dark_oak = true
+			polished_acacia = true
+			polished_crimson = true
+			polished_warped = true
+			polished_mangrove = true
+			polished_cherry = true
+			polished_bamboo = true
+
+		[types.cut_block_type.clayworks]
+			terracotta = true
+			white_terracotta = true
+			orange_terracotta = true
+			magenta_terracotta = true
+			light_blue_terracotta = true
+			yellow_terracotta = true
+			lime_terracotta = true
+			pink_terracotta = true
+			gray_terracotta = true
+			light_gray_terracotta = true
+			cyan_terracotta = true
+			purple_terracotta = true
+			blue_terracotta = true
+			brown_terracotta = true
+			green_terracotta = true
+			red_terracotta = true
+			black_terracotta = true
+			terracotta_brick = true
+			white_terracotta_brick = true
+			orange_terracotta_brick = true
+			magenta_terracotta_brick = true
+			light_blue_terracotta_brick = true
+			yellow_terracotta_brick = true
+			lime_terracotta_brick = true
+			pink_terracotta_brick = true
+			gray_terracotta_brick = true
+			light_gray_terracotta_brick = true
+			cyan_terracotta_brick = true
+			purple_terracotta_brick = true
+			blue_terracotta_brick = true
+			brown_terracotta_brick = true
+			green_terracotta_brick = true
+			red_terracotta_brick = true
+			black_terracotta_brick = true
+
 #Disables specific entries
 [entries]
 
@@ -910,23 +829,6 @@
 		[entries.wood_type.create]
 			window_pane = true
 			window = true
-
-		[entries.wood_type.handcrafted]
-			counter = true
-			corner_trim = true
-			fancy_bed = true
-			desk = true
-			shelf = true
-			nightstand = true
-			cupboard = true
-			dining_bench = true
-			bench = true
-			couch = true
-			table = true
-			chair = true
-			drawer = true
-			pillar_trim = true
-			side_table = true
 
 		[entries.wood_type.quark]
 			hollow_log = true
@@ -941,13 +843,7 @@
 
 		[entries.wood_type.rediscovered]
 			chair = true
-
-		[entries.wood_type.hearth_and_home]
-			lattice = true
-			parquet = true
-			vertical_trim = true
-			trim = true
-			sanded_wood = true
+			table = true
 
 		[entries.wood_type.functionalstorage]
 			1 = true
@@ -956,13 +852,6 @@
 
 		[entries.wood_type.farmersdelight]
 			cabinet = true
-
-		[entries.wood_type.architects_palette]
-			board_stairs = true
-			railing = true
-			board_slab = true
-			boards = true
-			board_wall = true
 
 		[entries.wood_type.oreberriesreplanted]
 			vat = true
@@ -975,6 +864,30 @@
 
 		[entries.wood_type.mctb]
 			crafting_table = true
+
+		[entries.wood_type.redeco]
+			plank_fence = true
+			table = true
+			stool = true
+			plank_gate = true
+			polished_planks = true
+			sword_mount = true
+			polished_stairs = true
+			pedestal = true
+			chair = true
+			counter = true
+			polished_slab = true
+			drawer_counter = true
+			crate = true
+			bench = true
+			cabinet = true
+			display_case = true
+			coffee_table = true
+			side_table = true
+			lattice = true
+			drawers = true
+			shelf = true
+			cabinet_counter = true
 
 		[entries.wood_type.copperagebackport]
 			shelf = true

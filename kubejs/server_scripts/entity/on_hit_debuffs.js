@@ -53,7 +53,7 @@ EntityEvents.hurt('player', event => {
 	const source = event.getSource();
 	const attacker = source.getActual();
 	if (attacker) {
-		const type = attacker.type;
+		const type = attacker.getType();
 
 		let chosenEntry;
 

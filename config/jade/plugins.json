@@ -68,6 +68,11 @@
     "registry_name": "OFF",
     "mod_name": false
   },
+  "apotheosis": {
+    "adventure": true,
+    "ench": true,
+    "spawner": true
+  },
   "functionalstorage": {
     "armory": false
   },
@@ -83,10 +88,6 @@
   "exposure": {
     "lightroom": true,
     "photograph_frame": true
-  },
-  "item-descriptions": {
-    "block_descriptions": false,
-    "entity_descriptions": false
   },
   "aether_redux": {
     "logicator": true

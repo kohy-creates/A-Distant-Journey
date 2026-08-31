@@ -37,3 +37,18 @@
 	#Entire mods that skip culling (matched against ResourceLocation namespace). Use this for mods whose blocks/entities flicker or behave incorrectly with culling. Example: ["ars_nouveau", "botania"]
 	list = ["ars_nouveau"]
 
+["Async search signal rate"]
+	#Highest rate, in hertz, at which the render thread wakes the occlusion culling thread.
+	#Each wake is a kernel call, so signalling once per frame costs real time at high frame rates
+	#while the culling map itself only refreshes every few frames. 0 disables the limit.
+	#Range: 0 ~ 1000
+	"max hertz" = 120
+
+["Tick culling"]
+	#Skips the client-side tick of entities that are currently culled.
+	#Saves CPU when many entities are loaded, but culled entities stop producing
+	#sounds, particles and animation until they become visible again.
+	#Entities close to the camera, glowing entities, vehicles and anything on the
+	#skip lists always keep ticking.
+	enabled = false
+

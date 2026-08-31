@@ -1,0 +1,33 @@
+{
+  "lunar_event": "adj:blood_moon",
+  "dimensions": {
+    "minecraft:overworld": {
+      "priority": 0,
+      "spawn_requirements": {
+        "weight": 10,
+        "rules": [
+          {
+            "type": "enhancedcelestials2core:min_nights_between",
+            "settings": {
+              "min_nights": 5
+            }
+          },
+          {
+            "type": "enhancedcelestials2core:valid_moon_phase",
+            "settings": {
+              "valid_moon_phases": [
+                0,
+                1,
+                2,
+                3,
+                5,
+                6,
+                7
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

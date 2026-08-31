@@ -8,7 +8,7 @@ const vengeanceSpiritBanned = [
 
 EntityEvents.spawned(event => {
 	const entity = event.getEntity();
-	switch (entity.type) {
+	switch (entity.getType()) {
 		case 'botania:mana_burst': {
 			if (entity.nbt.lensStack.id === 'botania:terra_sword') {
 				event.cancel()

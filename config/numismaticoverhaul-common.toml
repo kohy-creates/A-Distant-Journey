@@ -1,0 +1,5 @@
+#Range: -1000.0 ~ 1000.0
+"% chance for player to drop money" = 10.0
+#Structures that have coins, specific rates can be changed via datapacks.
+Structures = ["minecraft:chests/stronghold_library", "minecraft:chests/bastion_treasure", "minecraft:chests/stronghold_corridor", "minecraft:chests/pillager_outpost", "minecraft:chests/buried_treasure", "minecraft:chests/simple_dungeon", "minecraft:chests/abandoned_mineshaft"]
+

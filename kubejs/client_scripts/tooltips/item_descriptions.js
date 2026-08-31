@@ -448,16 +448,6 @@ const TooltipEdits = {
 			text: 'Increases health regeneration when placed'
 		},
 
-		// Handcrafted
-		{
-			items: [
-				/handcrafted:.*cushion/,
-				/handcrafted:.*sheet/,
-				'handcrafted:hammer'
-			],
-			text: 'Changes the look of some furniture blocks when used on them'
-		},
-
 		// Alex's Caves
 
 		{ items: "alexscaves:ominous_catalyst", text: "Can be used to awaken the Luxtructosaurus in the core of a volcano" },

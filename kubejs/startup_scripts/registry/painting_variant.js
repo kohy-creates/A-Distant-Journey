@@ -11,7 +11,7 @@ StartupEvents.registry('painting_variant', registry => {
 	registerPainting('dennis', 3, 3, 'Dennis', 'Sarah Boeving');
 	registerPainting('pharaox', 2, 2, 'Humble Pharaoh');
 
-	registerPainting('kohara/harlowville ', 2, 2, 'Scarlet Power', 'kohara');
+	registerPainting('kohara/scarlet_power', 2, 2, 'Scarlet Power', 'kohara');
 
 	registerPainting('torrezx/amethyst_trim', 1, 1, 'Amethyst Trim', 'Torrezx');
 	registerPainting('torrezx/camel_s', 1, 2, 'Camel S', 'Torrezx');
@@ -133,7 +133,7 @@ StartupEvents.registry('painting_variant', registry => {
 	registerPainting('dungeons/redstone_golem', 2, 1, 'Redstone Golem', 'Mojang');
 	registerPainting('dungeons/shadow', 3, 3, 'Shadow', 'Mojang');
 	registerPainting('dungeons/skeleton', 3, 3, 'Skeleton', 'Mojang');
-	registerPainting('dungeons/tower ', 11, 16, 'Tower', 'Mojang');
+	registerPainting('dungeons/tower', 11, 16, 'Tower', 'Mojang');
 	registerPainting('dungeons/tropical', 2, 2, 'Tropical', 'Mojang');
 	registerPainting('dungeons/village_on_the_hill', 2, 2, 'Village on The Hill', 'Mojang');
 
@@ -293,7 +293,7 @@ StartupEvents.registry('painting_variant', registry => {
 	registerPainting('galacticspike/woodpecker_bird', 2, 3, 'Woodpecker Bird', 'GalacticSpike');
 	registerPainting('galacticspike/workshop_accident', 2, 2, 'Workshop Accident', 'GalacticSpike');
 
-	registerPainting('mangocraft/harlowville ', 4, 3, 'Harlowville', 'FokaStudio');
+	registerPainting('mangocraft/harlowville', 4, 3, 'Harlowville', 'FokaStudio');
 
 	registerPainting('nicxd/badlands', 1, 1, 'Badlands', 'nicxd');
 	registerPainting('nicxd/badlands_sunrise', 2, 2, 'Badlands Sunrise', 'nicxd');
@@ -354,7 +354,7 @@ StartupEvents.registry('painting_variant', registry => {
 	registerPainting('potato/abstractato', 2, 2, 'Tasty Shapes', 'Mr. Potato');
 	registerPainting('potato/burning_potato', 4, 4, 'Hot Potato', 'Mr. Potato');
 	registerPainting('potato/ceci', 8, 4, 'This is not a potato', 'Mr. Potato');
-	registerPainting('potato/mr_potato', 2, 3, 'Self Portrait ', 'Mr. Potato');
+	registerPainting('potato/mr_potato', 2, 3, 'Self Portrait', 'Mr. Potato');
 	registerPainting('potato/poisonous_potato', 8, 8, 'The Treachery of Potatoes', 'Mr. Potato');
 	registerPainting('potato/potatoe', 4, 2, 'Potato', 'Mr. Potato');
 	registerPainting('potato/ubiquitato', 3, 3, 'In The Spotlight', 'Mr. Potato');

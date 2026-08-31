@@ -123,7 +123,6 @@ ItemEvents.modification(event => {
 		'phantom_membrane',
 		'rediscovered:purple_arrow',
 		/music_disc/,
-		'architects_palette:ender_pearl_block',
 		'mythicmetals:osmium_chainmail_helmet',
 		'mythicmetals:osmium_chainmail_chestplate',
 		'mythicmetals:osmium_chainmail_leggings',

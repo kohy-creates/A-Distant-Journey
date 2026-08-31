@@ -18,8 +18,8 @@ ADJServerEvents.explosionDamageCalc(event => {
 	const ownerEntity = event.getIndirectSourceEntity();
 	const affectedEntity = event.getAffectedEntity();
 
-	if (ExplosionDamage[sourceEntity.type]) {
-		const entry = ExplosionDamage[sourceEntity.type];
+	if (ExplosionDamage[sourceEntity.getType()]) {
+		const entry = ExplosionDamage[sourceEntity.getType()];
 		damage = entry[0];
 		if (entry[1] == true) {
 			let chapter = global.getCurrentChapter(sourceEntity.getServer());

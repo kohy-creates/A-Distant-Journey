@@ -1,0 +1,14 @@
+{
+  "modifiers": [
+    "adj:blood_moon_moon_texture_color",
+    "adj:blood_moon_sky_light_color",
+    "adj:blood_moon_moon_size",
+    "adj:blood_moon_block_sleeping",
+    "adj:blood_moon_force_surface_spawning",
+    "adj:blood_moon_mob_spawn_settings",
+    "adj:blood_moon_mob_effects",
+    "adj:blood_moon_spawn_category_multiplier",
+    "adj:blood_moon_text_components",
+    "adj:blood_moon_name_color"
+  ]
+}

@@ -280,11 +280,11 @@ global.newMobEffectInstance = function (effect, duration, amplifier, isAmbient, 
 	let ambient = global.getOrDefault(isAmbient, false);
 	let hide = global.getOrDefault(hideParticles, false);
 	let icon = global.getOrDefault(showIcon, true);
-	let amplifier = global.getOrDefault(amplifier, 0);
+	let amp = global.getOrDefault(amplifier, 0);
 	return new $MobEffectInstance(
 		effect,
 		global.isString(duration) ? global.duration(duration) : duration,
-		amplifier,
+		amp,
 		ambient, hide, icon
 	);
 };
@@ -378,4 +378,12 @@ global.getKilledBosses = function (server, returnAmount) {
 	}
 	let list = Object.keys(pData.killedBosses);
 	return (returnAmount) ? list.length : list;
+};
+
+/**
+ * Returns a mob effect (as a MobEffect object) by its ID.
+ * @param {string} id 
+ */
+global.getEffect = function (id) {
+	return $ForgeRegistries.MOB_EFFECTS.getValue($ResourceLocation.parse(id));
 };

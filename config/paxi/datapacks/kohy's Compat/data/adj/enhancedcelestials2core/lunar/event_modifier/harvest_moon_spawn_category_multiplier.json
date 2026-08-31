@@ -1,0 +1,8 @@
+{
+  "type": "enhancedcelestials2core:spawn_category_multiplier",
+  "settings": {
+    "multipliers": {
+      "monster": 0.15
+    }
+  }
+}

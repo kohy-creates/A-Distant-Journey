@@ -79,7 +79,6 @@ JEIAddedEvents.registerRecipeCatalysts(event => {
 
 	addRecipeCatalyst('farmersdelight:cooking', [
 		'witherstorm_delight:command_cooking_pot',
-		'miners_delight:copper_pot'
 	]);
 
 	addRecipeCatalyst('create:fan_washing', [

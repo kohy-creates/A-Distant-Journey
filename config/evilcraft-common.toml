@@ -289,6 +289,14 @@
 		#The ^-1 chance for which vengeance spirits could be toggled.
 		vengeanceChance = 3
 
+	[item.mace_of_distortion]
+		#The attack speed modifier of this mace, which is added to the default player attack speed of 4.
+		attackSpeed = -2.4
+
+	[item.mace_of_destruction]
+		#The attack speed modifier of this mace, which is added to the default player attack speed of 4.
+		attackSpeed = -3.0
+
 [mob]
 
 	[mob.kineticator]

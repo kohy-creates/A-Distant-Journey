@@ -81,63 +81,6 @@ ItemEvents.tooltip(event => {
 		}
 	})
 
-	event.addAdvanced([
-		/_counter/,
-		/_fancy_bed/,
-		/_bench/,
-		/_chair/,
-		/_side_table/,
-		/_nightstand/,
-		/_desk/,
-		/handcrafted:.*_table/,
-		/hc.*_table/,
-		/_couch/,
-		'handcrafted:hammer',
-		'handcrafted:kitchen_hood_pipe',
-		/crockery_combo/,
-		/handcrafted:.*cushion/,
-		/handcrafted:.*sheet/,
-		'twilightforest:auroralized_glass'
-	], (item, advanced, text) => {
-
-		let startPos = 0;
-		for (let i = text.size() - 1; i > 0; i--) {
-			if (!text[i].toString().includes('color=dark_gray')) {
-				startPos = i;
-				break;
-			}
-		}
-		if (!startPos) return;
-		const id = item.getId();
-		let linesToRemove = 1;
-		if (event.shift) {
-			if (id.includes('counter')
-				|| id.includes('fancy_bed')) {
-				linesToRemove = 4
-			}
-			else if (id.includes('bench')
-				|| id.includes('chair')
-				|| id.includes('couch')
-				|| id.includes('nightstand')
-				|| id.includes('side_table')
-				|| id.includes('table')
-				|| id.includes('crockery_combo')) {
-				linesToRemove = 2
-			}
-			// else if (id.includes('desk')) {
-			// 	linesToRemove = 1
-			// }
-		}
-		if (advanced) linesToRemove++;
-
-		let i = 0;
-		for (let a = startPos; a > 0; a--) {
-			text.remove(a)
-			i++;
-			if (i === linesToRemove) break;
-		}
-	})
-
 	function parseMath(expr) {
 		return Function(`'use strict'; return (${expr})`)()
 	}

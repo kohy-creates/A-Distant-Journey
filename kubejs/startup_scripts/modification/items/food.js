@@ -72,7 +72,6 @@ ItemEvents.modification(event => {
 		'farmersdelight:honey_cookie',
 		'farmersdelight:sweet_berry_cookie',
 		'delightful:glow_jam_cookie',
-		'miners_delight:bat_cookie',
 		'fruitsdelight:persimmon_cookie',
 		'fruitsdelight:lemon_cookie',
 		'fruitsdelight:cranberry_cookie',
@@ -142,8 +141,6 @@ ItemEvents.modification(event => {
 		'rabbit',
 		'naturalist:duck',
 		'farmersdelight:minced_beef',
-		'miners_delight:squid',
-		'miners_delight:glow_squid',
 		'born_in_chaos_v1:monster_flesh'
 	]
 
@@ -164,7 +161,6 @@ ItemEvents.modification(event => {
 		[[
 			'carrot',
 			'potato',
-			'miners_delight:cave_carrot'
 		], [2, 0.3]],
 		[rawMeat, [2, 0.2]],
 		[[

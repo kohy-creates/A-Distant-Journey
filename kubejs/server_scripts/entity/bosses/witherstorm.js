@@ -202,7 +202,7 @@ EntityEvents.checkSpawn(event => {
 			let groupSize = global.getRandomInt(1, Math.ceil(server.persistentData.witherStormPhase / 2));
 			for (let i = 0; i < groupSize; i++) {
 				server.runCommandSilent(
-					`execute in ${dimension} run summon ${WitherStorm.sickenedMap[entity.type]} ${event.x} ${event.y} ${event.z}`
+					`execute in ${dimension} run summon ${WitherStorm.sickenedMap[entity.getType()]} ${event.x} ${event.y} ${event.z}`
 				);
 			}
 			server.scheduleInTicks(1, () => entity.remove('discarded'));

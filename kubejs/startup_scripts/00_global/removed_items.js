@@ -142,15 +142,6 @@ const RemovedItems = {
 		'twilightforest:zombie_scepter',
 		'twilightforest:gold_minotaur_axe',
 
-		'handcrafted:wood_plate',
-		'handcrafted:wood_cup',
-		'handcrafted:wood_cookery_combo',
-		'handcrafted:wood_bowl',
-
-		/handcrafted:.*_shelf/,
-		/handcrafted:.*_drawer/,
-		/handcrafted:.*_trim/,
-
 		/hearth_and_home:.*_parquet/,
 		/hearth_and_home:.*_trim/,
 		/hearth_and_home:.*_sanded_wood/,
@@ -533,44 +524,6 @@ const RemovedItems = {
 		'window_box:candysnuft',
 		'window_box:floating_candysnuft',
 
-		/architects_palette:.*board_stairs/,
-		/architects_palette:.*board_slab/,
-		/architects_palette:.*board_vertical_slab/,
-		/architects_palette:.*ore_brick/,
-
-		'architects_palette:charcoal_block',
-		'architects_palette:unobtanium',
-		/architects_palette:flint_,*/,
-		'architects_palette:salmon_scales',
-		'architects_palette:cod_scales',
-		'architects_palette:salmon_log',
-		'architects_palette:cod_log',
-		'architects_palette:plating_nub',
-		'architects_palette:withered_bone',
-		'architects_palette:withered_bone_block',
-		'architects_palette:polished_glowstone_nub',
-		'architects_palette:scute_block',
-		'architects_palette:chiseled_end_stone_bricks',
-		/architects_palette:dripstone_brick.*/,
-		'architects_palette:dripstone_pillar',
-		'architects_palette:chiseled_dripstone',
-		/architects_palette:calcite_brick.*/,
-		'architects_palette:calcite_pillar',
-		'architects_palette:chiseled_calcite',
-		/architects_palette:basalt_tile.*/,
-		'architects_palette:basalt_pillar',
-		'architects_palette:cracked_basalt_tiles',
-		'architects_palette:chiseled_basalt_tiles',
-		/architects_palette:tuff_brick.*/,
-		'architects_palette:tuff_pillar',
-		'architects_palette:chiseled_tuff',
-		/architects_palette:ancient_plating.*/,
-		/architects_palette:.*_nub/,
-		/architects_palette:weeping_blackstone.*/,
-		/architects_palette:twisting_blackstone.*/,
-		/architects_palette:.*heavy.*_bricks.*/,
-		'architects_palette:moonshale_flagstone',
-
 		/rehooked/,
 
 		'majruszsdifficulty:wither_sword',
@@ -758,8 +711,6 @@ const RemovedItems = {
 		'crittersandcompanions:pearl_necklace_2',
 		'crittersandcompanions:pearl_necklace_3',
 		'crittersandcompanions:grappling_hook',
-
-		'endergetic:cracked_end_stone_bricks',
 	]
 };
 

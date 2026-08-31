@@ -1,0 +1,7 @@
+
+[general]
+	#Allow piglins to use spectral arrows.
+	piglinUseSpectralArrow = true
+	#Allow glowing hoglins to broadcast hunting signal.
+	glowingHoglinBroadcastHunting = true
+

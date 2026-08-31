@@ -66,7 +66,6 @@ global.replaceItemsInAllLoot = {
 	'create:crushed_raw_copper': 'raw_copper',
 	'create:crushed_raw_zinc': 'create:raw_zinc',
 	'create:experience_nugget': 'ars_nouveau:experience_gem',
-	'ars_nouveau:wilden_wing': 'miners_delight:bat_wing',
 	'twilightforest:transformation_powder': 'botania:mana_powder',
 	'quark:rope': 'supplementaries:rope',
 	'farmersdelight:rope': 'supplementaries:rope',

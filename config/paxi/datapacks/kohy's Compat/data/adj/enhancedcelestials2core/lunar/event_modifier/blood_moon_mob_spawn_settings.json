@@ -1,0 +1,43 @@
+{
+  "type": "enhancedcelestials2core:mob_spawn_settings",
+  "settings": {
+    "spawn_settings": {
+      "spawn_costs": {},
+      "spawners": {
+        "ambient": [],
+        "axolotls": [],
+        "creature": [],
+        "misc": [],
+        "monster": [
+          {
+            "type": "born_in_chaos_v1:seared_spirit",
+            "weight": 15,
+            "minCount": 1,
+            "maxCount": 1
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_clown",
+            "weight": 40,
+            "minCount": 1,
+            "maxCount": 1
+          },
+          {
+            "type": "born_in_chaos_v1:bonescaller",
+            "weight": 30,
+            "minCount": 1,
+            "maxCount": 1
+          },
+          {
+            "type": "born_in_chaos_v1:lifestealer",
+            "weight": 5,
+            "minCount": 1,
+            "maxCount": 1
+          }
+        ],
+        "underground_water_creature": [],
+        "water_ambient": [],
+        "water_creature": []
+      }
+    }
+  }
+}

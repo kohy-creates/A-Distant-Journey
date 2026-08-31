@@ -1,0 +1,21 @@
+{
+  "vanilla": {
+    "fix_focus_bug": true,
+    "attack_sleeping_villagers": true,
+    "fix_experience_loss": true,
+    "fix_resource_filter_leak": true,
+    "fix_density_memoization": true,
+    "remove_anvil_limit": true,
+    "no_anvil_enchant_cost": false,
+    "no_anvil_repair_cost": false,
+    "no_anvil_rename_cost": false,
+    "nicer_map_colors": true,
+    "ctrl_drag_to_crafting_grid": true
+  },
+  "reconnectible_chains": {
+    "enabled": false,
+    "charge_up_ticks": 10,
+    "consume_durability": true,
+    "consume_chains": true
+  }
+}

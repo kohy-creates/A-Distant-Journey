@@ -1,0 +1,10 @@
+{
+  "modifiers": [
+    "adj:slimy_moon_moon_texture_color",
+    "adj:slimy_moon_sky_light_color",
+    "adj:slimy_moon_moon_size",
+    "adj:slimy_moon_slimes_spawn_everywhere",
+    "adj:slimy_moon_mob_spawn_settings",
+    "adj:slimy_moon_text_components"
+  ]
+}

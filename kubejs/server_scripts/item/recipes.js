@@ -68,13 +68,6 @@ ServerEvents.recipes((event) => {
 		'just_blahaj:creeperhaj',
 		'window_box:chthonic_yew_sapling',
 		'window_box:alfthorne_sapling',
-		'architects_palette:unobtanium_block',
-		'architects_palette:esoterrack',
-		'architects_palette:nebulite',
-		'architects_palette:moonshale',
-		'architects_palette:craterstone',
-		'architects_palette:moonshale_bricks',
-		'architects_palette:plating_block',
 		/twilightforest:.*chest$/,
 		'twilightforest:raw_ironwood',
 		/twilightforest:.*banner_pattern$/,
@@ -256,8 +249,6 @@ ServerEvents.recipes((event) => {
 		/cutting\/.*trophy/,
 		'etcetera:white_sweater',
 		'etcetera:white_hat',
-		/handcrafted:.*_sheet/,
-		/handcrafted:.*_cushion/,
 		'twilightdelight:cutting/ice_bow',
 		'mynethersdelight:crafting/tnt_alt',
 		'zenith:zenith',
@@ -298,7 +289,6 @@ ServerEvents.recipes((event) => {
 		'mynethersdelight:bread_from_smelting',
 		'born_in_chaos_v1:fried_maggot_k',
 		'neapolitan:vanilla/dried_vanilla_pods',
-		'miners_delight:smoked_bat_wing',
 		'create:smelting/bread',
 		'quark:tweaks/smelting/bone_meal_utility',
 		/netherexp:cooking\/.*netherite.*/,
@@ -412,15 +402,12 @@ ServerEvents.recipes((event) => {
 			'aether:skyroot_stick': 'stick',
 			'clock': '#adj:clock',
 			'farmersdelight:rope': 'supplementaries:rope',
-			'architects_palette:withered_bone_block': 'netherexp:wither_bone_block',
-			'architects_palette:withered_bone': 'netherexp:fossil_fuel',
 			'twilightforest:raw_ironwood': 'twilightforest:ironwood_ingot',
 			"totem_of_undying": "twilightforest:charm_of_life_2",
 			'botania:mana_string': 'ars_nouveau:magebloom_fiber',
 			'botania:mana_diamond': 'ars_nouveau:source_gem',
 			'botania:mana_diamond_block': 'ars_nouveau:source_gem_block',
 			'botania:manaweave_cloth': 'ars_nouveau:magebloom_block',
-			'ars_nouveau:wilden_wing': 'miners_delight:bat_wing',
 			'alexscaves:banana': 'neapolitan:banana',
 			'neapolitan:milk_bottle': 'farmersdelight:milk_bottle',
 			'create:experience_nugget': 'ars_nouveau:experience_gem',
@@ -429,7 +416,6 @@ ServerEvents.recipes((event) => {
 			'#forge:milk_bottles': 'farmersdelight:milk_bottle',
 			'#forge:wines': 'vinery:red_wine',
 			'#botania:mana_diamond_gems': 'ars_nouveau:source_gem',
-			'#architects_palette:withered_bones': 'netherexp:fossil_fuel',
 			'twilightforest:fallen_leaves': '#leaves',
 			'morered:stone_plate': 'smooth_stone_slab',
 			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
@@ -506,12 +492,12 @@ ServerEvents.recipes((event) => {
 	}
 
 	bannerPattern('piglin_banner_pattern', 'piglin_head');
-	bannerPattern('adj:pride_banner_pattern', ['red_dye', 'orange_dye', 'yellow_dye', 'green_dye', 'blue_dye', 'purple_dye']);
-	bannerPattern('adj:heart_banner_pattern', 'heart_crystals:heart_crystal');
-	bannerPattern('adj:field_masoned_banner_pattern', 'brick_block');
-	bannerPattern('adj:peace_banner_pattern', '#saplings');
-	bannerPattern('adj:bordure_indented_banner_pattern', 'vine');
-	bannerPattern('adj:text_banner_pattern', '#signs');
+	bannerPattern('kubejs:pride_banner_pattern', ['red_dye', 'orange_dye', 'yellow_dye', 'green_dye', 'blue_dye', 'purple_dye']);
+	bannerPattern('kubejs:heart_banner_pattern', 'heart_crystals:heart_crystal');
+	bannerPattern('kubejs:field_masoned_banner_pattern', 'brick_block');
+	bannerPattern('kubejs:peace_banner_pattern', '#saplings');
+	bannerPattern('kubejs:bordure_indented_banner_pattern', 'vine');
+	bannerPattern('kubejs:text_banner_pattern', '#signs');
 
 	event.smelting('dead_bush', 'adjblocks:bush', 0.1, 200).id('adj:dead_bush_smelting');
 
@@ -722,11 +708,6 @@ ServerEvents.recipes((event) => {
 			N: 'iron_nugget'
 		}
 	);
-
-	Color.DYE.forEach(c => {
-		sewingRecipe(`${c}_wool`, `handcrafted:${c}_cushion`, 2);
-		sewingRecipe(`${c}_wool`, `handcrafted:${c}_sheet`);
-	});
 
 	sewingRecipe('accents:sewing_kit', 'etcetera:white_sweater');
 	sewingRecipe('accents:sewing_kit', 'etcetera:white_hat');
@@ -980,32 +961,32 @@ ServerEvents.recipes((event) => {
 	).id('adj:enchanting_table');
 
 	// Enchanting Library
-	event.recipes.ars_nouveau.enchanting_apparatus(
-		[
-			'#c:bookshelves',
-			'#c:bookshelves',
-			'#c:bookshelves',
-			'#c:bookshelves',
-			'crying_obsidian',
-			'crying_obsidian',
-			'obsidian',
-			'obsidian'
-		],
-		'#c:chests/wooden',
-		'enchlibathome:library'
-	).id('adj:enchantment_library');
+	// event.recipes.ars_nouveau.enchanting_apparatus(
+	// 	[
+	// 		'#c:bookshelves',
+	// 		'#c:bookshelves',
+	// 		'#c:bookshelves',
+	// 		'#c:bookshelves',
+	// 		'crying_obsidian',
+	// 		'crying_obsidian',
+	// 		'obsidian',
+	// 		'obsidian'
+	// 	],
+	// 	'#c:chests/wooden',
+	// 	'enchlibathome:library'
+	// ).id('adj:enchantment_library');
 
-	event.recipes.summoningrituals.altar('enchlibathome:library')
-		.itemOutput('enchlibathome:ender_library')
-		.input(
-			'ender_chest',
-			'experienceobelisk:calcarine_matrix',
-			'experienceobelisk:cognitive_alloy_block',
-			'experienceobelisk:cognitive_alloy_block',
-			'experienceobelisk:cognitive_alloy_block',
-			'experienceobelisk:cognitive_alloy_block',
-		)
-		.id('adj:enchantment_library_alexandria');
+	// event.recipes.summoningrituals.altar('enchlibathome:library')
+	// 	.itemOutput('enchlibathome:ender_library')
+	// 	.input(
+	// 		'ender_chest',
+	// 		'experienceobelisk:calcarine_matrix',
+	// 		'experienceobelisk:cognitive_alloy_block',
+	// 		'experienceobelisk:cognitive_alloy_block',
+	// 		'experienceobelisk:cognitive_alloy_block',
+	// 		'experienceobelisk:cognitive_alloy_block',
+	// 	)
+	// 	.id('adj:enchantment_library_alexandria');
 
 	event.recipes.farmersdelight.cooking(['alexsmobs:triops_egg', 'alexsmobs:triops_egg', 'alexsmobs:stink_bottle'], 'alexsmobs:mosquito_repellent_stew', 1, 100, 'minecraft:bowl')
 
@@ -1051,9 +1032,6 @@ ServerEvents.recipes((event) => {
 		'create:cut_scoria': 'create:polished_cut_scoria',
 		'create:cut_scorchia': 'create:polished_cut_scorchia',
 		'create:cut_veridium': 'create:polished_cut_veridium',
-		'packed_ice': 'architects_palette:polished_packed_ice',
-		'glowstone': 'architects_palette:polished_glowstone',
-		'architects_palette:nebulite': 'architects_palette:polished_nebulite',
 		'kubejs:sulfur': 'kubejs:polished_sulfur',
 		'kubejs:cinnabar': 'kubejs:polished_cinnabar'
 	};
@@ -1093,38 +1071,6 @@ ServerEvents.recipes((event) => {
 			['#forge:stripped_wood', 'create:copper_sheet']
 		]
 	};
-
-	// Cancel this because I cannot be bothered to rewrite this at 3 AM
-	Color.DYE.forEach(color => {
-		// manualApplicationRecipes[`minecraft:${color}_wool`] = [
-		// 	'#wool',
-		// 	`${color}_dye`
-		// ]
-		// manualApplicationRecipes[`minecraft:${color}_terracotta`] = [
-		// 	'#terracotta',
-		// 	`${color}_dye`
-		// ]
-		// manualApplicationRecipes[`minecraft:${color}_concrete_powder`] = [
-		// 	'#forge:concrete_powders',
-		// 	`${color}_dye`
-		// ]
-		// manualApplicationRecipes[`hearth_and_home:${color}_paper_lantern`] = [
-		// 	'#hearth_and_home:paper_lanterns',
-		// 	`${color}_dye`
-		// ]
-		// manualApplicationRecipes[`handcrafted:${color}_cushion`] = [
-		// 	'#handcrafted:cushions',
-		// 	`${color}_dye`
-		// ]
-		// manualApplicationRecipes[`create:${color}_seat`] = [
-		// 	'#create:seats',
-		// 	`${color}_dye`
-		// ]
-		// manualApplicationRecipes[`minecraft:${color}_carpet`] = [
-		// 	'#wool_carpets',
-		// 	`${color}_dye`
-		// ]
-	})
 
 	Object.keys(manualApplicationRecipes).forEach(result => {
 		event.remove({ output: result });
@@ -1188,7 +1134,7 @@ ServerEvents.recipes((event) => {
 		).id(`${color}_terracotta`);
 
 		event.shaped(
-			`4x hearth_and_home:${color}_terracotta_bricks`,
+			`4x clayworks:${color}_terracotta_bricks`,
 			[
 				'TT',
 				'TT'
@@ -1199,36 +1145,19 @@ ServerEvents.recipes((event) => {
 		).id(`adj:${color}_terracotta_bricks`);
 
 		event.shapeless(
-			`8x hearth_and_home:${color}_terracotta_bricks`,
+			`8x clayworks:${color}_terracotta_bricks`,
 			[
 				`${color}_dye`,
-				'hearth_and_home:terracotta_bricks',
-				'hearth_and_home:terracotta_bricks',
-				'hearth_and_home:terracotta_bricks',
-				'hearth_and_home:terracotta_bricks',
-				'hearth_and_home:terracotta_bricks',
-				'hearth_and_home:terracotta_bricks',
-				'hearth_and_home:terracotta_bricks',
-				'hearth_and_home:terracotta_bricks'
+				'clayworks:terracotta_bricks',
+				'clayworks:terracotta_bricks',
+				'clayworks:terracotta_bricks',
+				'clayworks:terracotta_bricks',
+				'clayworks:terracotta_bricks',
+				'clayworks:terracotta_bricks',
+				'clayworks:terracotta_bricks',
+				'clayworks:terracotta_bricks'
 			]
-		).id(`hearth_and_home:${color}_terracotta_bricks`);
-
-		if (color != 'white') {
-			event.shaped(
-				`hearth_and_home:${color}_paper_lantern`,
-				[
-					'PSP',
-					'PDP',
-					'PTP'
-				],
-				{
-					D: `${color}_dye`,
-					P: 'paper',
-					T: 'torch',
-					S: 'stick'
-				}
-			).id(`adj:paper_lantern/${color}`);
-		}
+		).id(`clayworks:${color}_terracotta_bricks`);
 
 		event.shaped(
 			`create:${color}_seat`,
@@ -1238,7 +1167,7 @@ ServerEvents.recipes((event) => {
 			],
 			{
 				S: '#wooden_slabs',
-				C: `handcrafted:${color}_cushion`
+				C: `cushionbackport:${color}_cushion`
 			}
 		).id(`create:crafting/kinetics/${color}_seat`)
 	})
@@ -1292,74 +1221,10 @@ ServerEvents.recipes((event) => {
 		event.custom(recipe).id(global.getOrDefault(id, `adj:${flattenedID((Array.isArray(output)) ? output[0] : output)}`));
 	}
 
-
-	// from Architect's Palette
-	function warping(item, output, dimension, id) {
-		let ingr = {};
-		if (item.startsWith('#')) {
-			ingr["tag"] = item.substring(1);
-		}
-		else {
-			ingr["item"] = item
-		}
-
-		let dim = (!dimension || dimension == null) ? 'the_nether' : dimension;
-
-		event.custom({
-			type: "architects_palette:warping",
-			dimension: dim,
-			ingredient: [
-				ingr
-			],
-			result: {
-				"item": output
-			}
-		}).id(global.getOrDefault(id, `adj:warping/${flattenedID(dim)}/${flattenedID(output)}_from_${flattenedID(item)}`));
-	}
-	function aetherWarping(item, output, id) {
-		warping(item, output, 'aether:the_aether', id);
-	}
-	function skylandsWarping(item, output, id) {
-		warping(item, output, 'rediscovered:skylands', id);
-	}
-
-	aetherWarping('andesite', 'architects_palette:esoterrack');
-	aetherWarping('diorite', 'architects_palette:nebulite');
-	aetherWarping('stone', 'architects_palette:moonshale');
-	aetherWarping('cobblestone', 'architects_palette:craterstone');
-	aetherWarping('stone_bricks', 'architects_palette:moonshale_bricks');
-
-	skylandsWarping('cherry_sapling', 'rediscovered:ancient_cherry_sapling');
-	skylandsWarping('cherry_leaves', 'rediscovered:ancient_cherry_leaves');
-
 	event.replaceInput({ output: /brass_geodes:.*tinted_glass.*/ },
 		'glass',
 		'tinted_glass'
 	);
-
-	event.shaped(
-		'50x architects_palette:unobtanium_block',
-		[
-			'UT',
-			'TU'
-		],
-		{
-			U: 'mythicmetals:unobtainium',
-			T: 'supplementaries:stone_tile'
-		}
-	).id('adj:missing_tiles');
-
-	event.shaped(
-		'30x architects_palette:plating_block',
-		[
-			'PPP',
-			'P P',
-			'PPP'
-		],
-		{
-			P: 'create:sturdy_sheet'
-		}
-	).id('adj:plating_block');
 
 	/**
 	 * Registers a Botanic Additions Gaia Plate recipe
@@ -3473,7 +3338,7 @@ ServerEvents.recipes((event) => {
 	const essenceRecipes = {
 		'ars_nouveau:air_essence': [
 			{ source: 2000, ingredients: ['arrow', 'feather', 'feather',] },
-			{ source: 1400, ingredients: ['arrow', 'miners_delight:bat_wing', 'miners_delight:bat_wing',] },
+			{ source: 1400, ingredients: ['arrow', 'ars_nouveau:wilden_wing', 'ars_nouveau:wilden_wing',] },
 			{ source: 800, ingredients: ['arrow', 'aether:cold_aercloud', 'aether:cold_aercloud',] },
 		],
 		'ars_nouveau:water_essence': [
@@ -3632,7 +3497,7 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:glyph_intangible': ['botanicadds:rune_tp', 'phantom_membrane', 'phantom_membrane', 'phantom_membrane', 'waystones:warp_dust', 'waystones:warp_dust'],
 		'ars_nouveau:glyph_interact': ['lever', '#wooden_pressure_plates', '#buttons'],
 		'ars_nouveau:glyph_launch': ['botania:rune_air', 'slime_block', 'leather', 'leather', 'rabbit_foot',],
-		'ars_nouveau:glyph_leap': ['botania:rune_air', 'slime_block', 'miners_delight:bat_wing', 'miners_delight:bat_wing'],
+		'ars_nouveau:glyph_leap': ['botania:rune_air', 'slime_block', 'ars_nouveau:wilden_wing', 'ars_nouveau:wilden_wing'],
 		'ars_nouveau:glyph_lightning': ['botania:rune_air', 'botania:rune_water', 'lightning_rod', 'heart_of_the_sea'],
 		'ars_nouveau:glyph_linger': ['botanicadds:rune_tp', 'aether_redux:veridium_ingot', 'aether:zanite_block', 'blaze_rod', 'blaze_rod'],
 		'ars_nouveau:glyph_name': ['name_tag', 'ars_nouveau:magebloom_fiber', 'ars_nouveau:magebloom_fiber'],
@@ -3647,12 +3512,12 @@ ServerEvents.recipes((event) => {
 		'ars_nouveau:glyph_rotate': ['botanicadds:rune_tp', 'create:mechanical_bearing'],
 		'ars_nouveau:glyph_self': ['iron_chestplate', '#adj:pressure_plates'],
 		'ars_nouveau:glyph_sense_magic': ['botania:rune_mana', 'ars_nouveau:dowsing_rod', 'amethyst_shard', 'amethyst_shard', 'amethyst_shard'],
-		'ars_nouveau:glyph_slowfall': ['botania:rune_air', 'miners_delight:bat_wing', 'feather', 'feather', 'feather', 'blaze_rod', '#forge:crops/nether_wart'],
+		'ars_nouveau:glyph_slowfall': ['botania:rune_air', 'ars_nouveau:wilden_wing', 'feather', 'feather', 'feather', 'blaze_rod', '#forge:crops/nether_wart'],
 		'ars_nouveau:glyph_smelt': ['botania:rune_fire', 'alloy_forgery:cracked_stone_bricks_forge_controller', 'coal_block'],
 		'ars_nouveau:glyph_snare': ['botania:rune_earth', 'stone_pressure_plate', 'iron_door', 'iron_door', 'iron_door', 'iron_door'],
 		'ars_nouveau:glyph_split': ['ars_nouveau:relay_splitter', 'ars_nouveau:sourcestone', 'ars_nouveau:sourcestone', 'ars_nouveau:sourcestone'],
 		'ars_nouveau:glyph_summon_decoy': ['kubejs:rune_life', 'botanicadds:rune_energy', 'armor_stand', 'armor_stand', 'armor_stand', 'armor_stand'],
-		'ars_nouveau:glyph_summon_undead': ['kubejs:rune_life', 'botanicadds:rune_energy', 'netherexp:wither_bone_block', 'skeleton_skull', 'architects_palette:rotten_flesh_block', 'architects_palette:rotten_flesh_block', 'farmersdelight:organic_compost', 'farmersdelight:organic_compost'],
+		'ars_nouveau:glyph_summon_undead': ['kubejs:rune_life', 'botanicadds:rune_energy', 'netherexp:wither_bone_block', 'skeleton_skull', 'rotten_flesh', 'rotten_flesh', 'farmersdelight:organic_compost', 'farmersdelight:organic_compost'],
 		'ars_nouveau:glyph_summon_vex': ['kubejs:rune_life', 'botanicadds:rune_energy', 'emerald_block', 'twilightforest:charm_of_life_2'],
 		'ars_nouveau:glyph_summon_wolves': ['kubejs:rune_life', 'botanicadds:rune_energy', 'bone', 'bone', 'bone', 'rotten_flesh'],
 		'ars_nouveau:glyph_toss': ['botania:rune_air', 'ancient_aether:valkyrum',],
@@ -4654,7 +4519,6 @@ ServerEvents.recipes((event) => {
 		'netherexp:ancient_campfire',
 		'ancient_aether:ambrosium_campfire',
 		'aether:ambrosium_torch',
-		'architects_palette:nether_brass_torch',
 		'copper_torch',
 		'endergetic:ender_torch',
 		'endergetic:ender_campfire'
@@ -4698,7 +4562,6 @@ ServerEvents.recipes((event) => {
 	torchTransform('witherstormmod:tainted_dust', 'witherstormmod:tainted_torch', 2);
 	torchTransform('alexscaves:bioluminesscence', 'alexscaves:bioluminescent_torch', 3);
 	torchTransform('aether:ambrosium_shard', 'aether:ambrosium_torch', 5);
-	torchTransform('architects_palette:nether_brass_nugget', 'architects_palette:nether_brass_torch', 3);
 	torchTransform('mythicmetals:copper_nugget', 'copper_torch', 3);
 	torchTransform('#endergetic:ender_fire_base_blocks', 'endergetic:ender_torch', 3);
 
@@ -5257,7 +5120,7 @@ ServerEvents.recipes((event) => {
 			'MMM'
 		],
 		{
-			M: 'architects_palette:moonshale',
+			M: 'botania:livingrock',
 			P: 'botania:tiny_planet'
 		}
 	).id('adj:tiny_planet_block');
@@ -5923,9 +5786,9 @@ ServerEvents.recipes((event) => {
 			'stone',
 			'stone',
 			'stone',
-			'architects_palette:moonshale',
-			'architects_palette:moonshale',
-			'architects_palette:moonshale'
+			'botania:livingrock',
+			'botania:livingrock',
+			'botania:livingrock'
 		)
 		.recipeTime(toSeconds(10))
 		.id('adj:gravity_globe');
@@ -6385,7 +6248,7 @@ ServerEvents.recipes((event) => {
 		event.remove({ output: blahaj });
 		let ingredients = ['just_blahaj:blahaj'];
 		wool.forEach(w => {
-			ingredients.push(`handcrafted:${w}_sheet`)
+			ingredients.push(`${w}_wool`)
 		})
 		event.shapeless(
 			blahaj,
@@ -6866,7 +6729,7 @@ ServerEvents.recipes((event) => {
 	fermentingRecipe('kubejs:red_savanna_grapejuice', ['fermented_spider_eye', 'redstone', 'redstone', 'honey_bottle'], 'kubejs:jo_special_mixture', 'vinery:jo_special_mixture');
 	fermentingRecipe('kubejs:red_taiga_grapejuice', ['vinery:cherry', 'vinery:cherry', 'honey_bottle'], 'kubejs:bolvar_wine', 'vinery:bolvar_wine');
 	fermentingRecipe('kubejs:red_taiga_grapejuice', ['endersdelight:ethereal_saffron', 'endersdelight:sight_fragment', 'chorus_fruit'], 'kubejs:chorus_wine', 'vinery:chorus_wine');
-	fermentingRecipe('kubejs:red_jungle_grapejuice', ['alexscaves:scarlet_neodymium_ingot', 'iron_ingot', 'miners_delight:copper_carrot'], 'kubejs:magnetic_wine', 'vinery:magnetic_wine');
+	fermentingRecipe('kubejs:red_jungle_grapejuice', ['alexscaves:scarlet_neodymium_ingot', 'iron_ingot', 'oreberries_replanted:iron_oreberry'], 'kubejs:magnetic_wine', 'vinery:magnetic_wine');
 	fermentingRecipe('kubejs:red_jungle_grapejuice', ['spider_eye', 'honey_bottle'], 'kubejs:chenet_wine', 'vinery:chenet_wine');
 	fermentingRecipe('kubejs:red_wine', ['vinery:cherry', 'honey_bottle', 'golden_apple', 'sugar'], 'kubejs:bottle_mojang_noir', 'vinery:bottle_mojang_noir');
 	fermentingRecipe('kubejs:crimson_grapejuice', ['blaze_rod', 'weeping_vines', 'glowstone_dust'], 'kubejs:blazewine_pinot', 'nethervinery:blazewine_pinot');
@@ -7497,8 +7360,7 @@ ServerEvents.recipes((event) => {
 	], 'kubejs:magic_cuffs');
 
 	workshopRecipe([
-		'6x botania:livingrock',
-		'4x architects_palette:moonshale',
+		'10x botania:livingrock',
 		'botania:mana_pearl'
 	], 'botania:tiny_planet',)
 

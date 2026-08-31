@@ -61,7 +61,7 @@ const EntityModifications = {
 		 * @param {Internal.MinecraftServer_} server
 		 */
 		scaleEntity: function (entity, currentStage, server) {
-			let type = entity.type;
+			let type = entity.getType();
 			let base = global.hpModifications[type]
 			if (!base) return
 
@@ -111,7 +111,7 @@ const EntityModifications = {
 		 */
 		specialCase: function (entity, currentStage, server) {
 			let uuid = entity.getUuid();
-			switch (entity.type) {
+			switch (entity.getType()) {
 				case 'minecraft:villager':
 				case 'minecraft:wandering_trader':
 				case 'born_in_chaos_v1:nightmare_stalker': {
@@ -147,7 +147,7 @@ const EntityModifications = {
 		 * @param {number} currentStage 
 		 */
 		setGear: function (entity, isHardcore, currentStage) {
-			switch (entity.type) {
+			switch (entity.getType()) {
 				case 'minecraft:piglin': {
 					entity.setItemSlot('mainhand', global.weightedRandom({
 						'minecraft:golden_sword': 8,
@@ -207,7 +207,7 @@ const EntityModifications = {
 						entity.setDropChance("offhand", 1.0);
 					}
 
-					if (entity.type == 'minecraft:husk') {
+					if (entity.getType() == 'minecraft:husk') {
 						if (global.ifRandomChance(2)) {
 							entity.setItemSlot("head", 'alexsmobs:sombrero');
 						}
@@ -243,7 +243,7 @@ const EntityModifications = {
 		hardcoreModifications: function (entity) {
 			EntityModifications._logic.setHealth(entity, Math.ceil(entity.maxHealth * 1.5));
 			entity.setAttributeBaseValue($ALObjects.Attributes.CRIT_CHANCE.get(), 0.1);
-			switch (entity.type) {
+			switch (entity.getType()) {
 				case 'minecraft:wither_skeleton': {
 					if (global.ifRandomChance(10)) {
 						entity.setItemSlot("mainhand", "mythicmetals:midas_gold_sword");

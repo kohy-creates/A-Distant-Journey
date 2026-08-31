@@ -14,8 +14,10 @@ function isInBetween(num, var1, var2) {
 	return (num >= var1 && num <= var2);
 }
 
+const DEFAULT_MOON = 'enhancedcelestials2core:default';
+
 const moonEventMessages = {
-	'enhancedcelestials:harvest_moon': {
+	'adj:harvest_moon': {
 		color: '#ffd500',
 		texts: {
 			start: [
@@ -28,7 +30,7 @@ const moonEventMessages = {
 			]
 		}
 	},
-	'enhancedcelestials:blood_moon': {
+	'adj:blood_moon': {
 		color: '#ff1e1e',
 		texts: {
 			start: [
@@ -42,7 +44,7 @@ const moonEventMessages = {
 			]
 		}
 	},
-	'enhancedcelestials:blue_moon': {
+	'adj:blue_moon': {
 		color: '#1eaaff',
 		texts: {
 			start: [
@@ -153,23 +155,26 @@ ServerEvents.tick(event => {
 			server.persistentData.tutorialNight = true;
 
 			if (!server.isHardcore()) {
-				server.runCommandSilent('/enhancedcelestials setLunarEvent adj:tutorial_moon')
+				server.runCommandSilent('/ec setLunarEvent adj:tutorial_moon')
 			}
 		}
 
 		// Get current lunar forecast
-		let optional = $EnhancedCelestials.lunarForecastWorldData(server.overworld());
+		/** @type {Internal.Optional_<Internal.LunarForecast_>} */
+		let optional = $lunarForecastWorldData.lunarForecastWorldData(server.overworld());
 		let id = null;
 		if (optional.isPresent()) {
 			let data = optional.get();
+			/** @type {Internal.LunarEvent_} */
 			let currentEvent = data.currentLunarEvent();
-			let registryAccess = server.getOverworld().registryAccess();
-			let lunarRegistry = registryAccess.registryOrThrow($EnhancedCelestialsRegistry.LUNAR_EVENT_KEY);
-			id = lunarRegistry.getKey(currentEvent);
-			server.persistentData.lunarEvent = id.toString();
+			let lunarEventId = server.getOverworld()
+				.registryAccess()
+				.registryOrThrow($EnhancedCelestialsRegistry.LUNAR_EVENT_KEY)
+				.getKey(currentEvent);
+			server.persistentData.lunarEvent = lunarEventId.toString();
 		}
 
-		if (server.persistentData.lunarEvent === 'enhancedcelestials:default') {
+		if (server.persistentData.lunarEvent === DEFAULT_MOON) {
 			if (server.persistentData.witherStormActive == true) {
 				if (!server.isHardcore()) {
 					let phase = Number(server.persistentData.witherStormPhase);
@@ -196,7 +201,7 @@ ServerEvents.tick(event => {
 		let moonEvent = server.persistentData.lunarEvent;
 
 		// Moon sets message
-		if (moonEvent === 'enhancedcelestials:default') {
+		if (moonEvent === DEFAULT_MOON) {
 			sendMessage({ text: 'The moon slowly sets, monsters crawl back into the shadows' });
 		}
 		else {

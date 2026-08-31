@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intro_2"
+	group: "04D058A75BDDEE3C"
+	id: "58A9D42A7C96B2D3"
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [ ]
+	title: "0. Prologue"
+}

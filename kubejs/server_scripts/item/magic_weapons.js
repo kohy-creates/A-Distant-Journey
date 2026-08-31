@@ -46,7 +46,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 				break;
 			}
 			case 'mob': {
-				switch (immediate.type) {
+				switch (immediate.getType()) {
 					case 'alexscaves:water_bolt': {
 						event.setCanceled(true);
 						victim.attack(

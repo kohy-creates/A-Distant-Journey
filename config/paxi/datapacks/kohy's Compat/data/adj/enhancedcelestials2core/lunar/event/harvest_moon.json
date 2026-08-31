@@ -1,0 +1,11 @@
+{
+  "modifiers": [
+    "adj:harvest_moon_moon_texture_color",
+    "adj:harvest_moon_sky_light_color",
+    "adj:harvest_moon_moon_size",
+    "adj:harvest_moon_block_item_drop",
+    "adj:harvest_moon_spawn_category_multiplier",
+    "adj:harvest_moon_text_components",
+    "adj:harvest_moon_name_color"
+  ]
+}

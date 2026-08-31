@@ -6,6 +6,8 @@
 	group: "12494D4A5CAA903A"
 	id: "65D630E0154A8068"
 	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [{
 		description: [

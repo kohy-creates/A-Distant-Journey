@@ -9,6 +9,8 @@
 	parallelLookupMinPacks = 4
 	#Cache per-pack resource existence checks. The persisted cache is loaded lazily so it does not block startup IO.
 	cacheResourceExistence = true
+	#Use a dedicated work-stealing pool for resource reload preparation instead of competing for the shared Minecraft worker pool.
+	dedicatedResourceReloadExecutor = true
 
 [compatibility]
 	#Complete failed third-party client resource reload listeners instead of letting one mod crash the whole loading overlay.

@@ -350,10 +350,6 @@ ServerEvents.tags('item', tags => {
 		/ars_nouveau:.*_se$/
 	]);
 
-	tags.add('architects_palette:withered_bones', [
-		'netherexp:fossil_fuel'
-	]);
-
 	tags.add('forge:wool', [
 		'#c:wool'
 	]);

@@ -18,7 +18,7 @@
 	#Specifies if custom AI behavior should be injected into certain entities (such as mobs running away from the Wither Storm). Disable if facing compatibility issues
 	#Requires restart.
 	#Default: true
-	injectCustomAiBehavior = true
+	injectCustomAiBehavior = false
 	#A list of mobs that should not have custom AI injected into them
 	#Requires restart.
 	injectAiMobBlacklist = ["witherstormmod:example"]

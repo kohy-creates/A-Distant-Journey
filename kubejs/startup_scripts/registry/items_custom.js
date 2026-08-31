@@ -55,13 +55,13 @@
 			if (suffix) {
 				nameTitleCase += ` (${suffix.charAt(0).toUpperCase() + suffix.slice(1)})`;
 			}
-			let name = `<neon r=1><rainbow p=0 f=0.35>${nameTitleCase} Treasure Bag</neon></rainbow>`
+			let displayName = `<neon r=1><rainbow p=0 f=0.35>${nameTitleCase} Treasure Bag</neon></rainbow>`
 
 			let lootTable = modAndEntity[0] + '_' + modAndEntity[1] + (suffix ? `_${suffix}` : '');
-			event.createCustom(
+			registry.createCustom(
 				'treasure_bag_' + modAndEntity[1] + (suffix ? `_${suffix}` : ''), () =>
 				new $TreasureBag(global.resourceLocation('kubejs', 'treasure_bag/' + lootTable))
-			).displayName(name);
+			).displayName(displayName);
 
 			let lootFilePath = 'kubejs/data/kubejs/loot_tables/treasure_bag/' + lootTable + '.json';
 			global.writeJsonIfAbsent(lootFilePath, {}, `Created missing loot table for treasure bag: ${lootFilePath}`);
@@ -75,8 +75,6 @@
 		}
 
 		global.bossMobsAddTreasureBag.forEach(boss => createTreasureBag(boss));
-
 		createTreasureBag('botania:doppleganger', 'hardmode');
-
 	});
 })();

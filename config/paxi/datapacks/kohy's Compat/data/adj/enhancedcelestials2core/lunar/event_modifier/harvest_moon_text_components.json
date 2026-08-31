@@ -1,0 +1,9 @@
+{
+  "type": "enhancedcelestials2core:text_components",
+  "settings": {
+    "components": {
+      "start_notification": {},
+      "end_notification": {}
+    }
+  }
+}

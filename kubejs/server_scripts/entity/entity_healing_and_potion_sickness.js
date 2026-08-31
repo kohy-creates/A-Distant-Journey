@@ -10,7 +10,7 @@ NativeEvents.onEvent($LivingHealEvent, /** @param {Internal.LivingHealEvent_} ev
 	event.setAmount(amount * 0.667);
 	// Note to self: NEVER ROUND THIS VALUE or the health regen attribute gets fucked up
 
-	switch (entity.type) {
+	switch (entity.getType()) {
 		// Handle potion sickness for players
 		case 'minecraft:player': {
 			let healReceivedAttr = entity.getAttributeValue($ALObjects.Attributes.HEALING_RECEIVED.get());

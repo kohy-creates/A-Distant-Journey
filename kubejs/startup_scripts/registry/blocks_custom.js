@@ -42,7 +42,9 @@ const $SaplingBlock = Java.loadClass('net.minecraft.world.level.block.SaplingBlo
 const $PoweredBlock = Java.loadClass('net.minecraft.world.level.block.PoweredBlock');
 const $FlowerBlock = Java.loadClass('net.minecraft.world.level.block.FlowerBlock');
 const $FlowerPotBlock = Java.loadClass('net.minecraft.world.level.block.FlowerPotBlock');
-const $RootBlock = Java.loadClass('net.minecraft.world.level.block.RootBlock');
+const $RootBlock = Java.loadClass('net.minecraft.world.level.block.RootsBlock');
+
+const $MobEffects = Java.loadClass('net.minecraft.world.effect.MobEffects');
 
 /// ----------------------------------------------------------- ///
 
@@ -63,7 +65,7 @@ StartupEvents.registry('block', registry => {
 		return { variants: { '': { model: `kubejs:block/${id}` } } }
 	}
 
-	function defaultLottTable(id) {
+	function defaultLootTable(id) {
 		return { type: "minecraft:block", pools: [{ bonus_rolls: 0, conditions: [{ condition: "minecraft:survives_explosion" }], entries: [{ type: "minecraft:item", name: `kubejs:${id}` }], rolls: 1 }], random_sequence: `kubejs:blocks/${id}` };
 	}
 
@@ -76,7 +78,7 @@ StartupEvents.registry('block', registry => {
 	function registerCustomBlock(id, block, model, properties) {
 		JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, model);
 		global.writeJsonIfAbsent(`kubejs/assets/kubejs/blockstates/${id}.json`, noVariantBlockstate(id), `Created missing blockstate definition for block '${id}'`);
-		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, defaultLottTable(id), `Created missing loot table for block '${id}'`);
+		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, defaultLootTable(id), `Created missing loot table for block '${id}'`);
 		return registry.createCustom(id, (properties) ? () => new block(properties) : block);
 	};
 
@@ -172,10 +174,10 @@ StartupEvents.registry('block', registry => {
 			{ type: "minecraft:block", pools: [{ bonus_rolls: 0, conditions: [{ condition: "minecraft:survives_explosion" }], entries: [{ type: "minecraft:item", name: "minecraft:flower_pot" }], rolls: 1 }, { bonus_rolls: 0, conditions: [{ condition: "minecraft:survives_explosion" }], entries: [{ type: "minecraft:item", name: `kubejs:${id}` }], rolls: 1 }], random_sequence: `kubejs:blocks/potted_${id}` },
 			`Created missing loot table for block '${id}'`
 		);
-		return registry.createCustom(`potted_${id}`, () => new $PottedFlowerBlock(flowerBlock, $BlockProperties.copy(Blocks.FLOWER_POT)));
+		return registry.createCustom(`potted_${id}`, () => new $FlowerPotBlock(`kubejs:${id}`, $BlockProperties.copy(Blocks.FLOWER_POT)));
 	}
 
-	function registerFlowerBlock(id, effect, properties) {
+	function registerFlowerBlock(id, effect, duration, properties) {
 		JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, {
 			parent: 'minecraft:block/cross',
 			textures: {
@@ -184,33 +186,33 @@ StartupEvents.registry('block', registry => {
 		});
 		global.writeJsonIfAbsent(`kubejs/assets/kubejs/blockstates/${id}.json`, noVariantBlockstate(id), `Created missing blockstate definition for block '${id}'`);
 		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, defaultLootTable(id), `Created missing loot table for block '${id}'`);
-		let builder = registry.createCustom(id, () => new $FlowerBlock(effect, properties))
-		registerPottedFlowerBlock(id, builder);
+		let builder = registry.createCustom(id, () => new $FlowerBlock(effect, duration, properties))
+		registerPottedFlowerBlock(id, id);
 		return builder;
 	}
 
-	goldenDandelionBlock = registerFlowerBlock('golden_dandelion', 'saturation', $BlockProperties.copy(Blocks.DANDELION));
+	goldenDandelionBlock = registerFlowerBlock('golden_dandelion', $MobEffects.SATURATION, 2, $BlockProperties.copy(Blocks.DANDELION));
 
-	daybloomBlock = registerFlowerBlock('daybloom', 'regeneration', $BlockProperties.copy(Blocks.DANDELION));
-	moonglowBlock = registerFlowerBlock('moonglow', 'night_vision', $BlockProperties.copy(Blocks.DANDELION));
-	blinkrootBlock = registerFlowerBlock('blinkroot', 'mining_fatigue', $BlockProperties.copy(Blocks.DANDELION));
+	daybloomBlock = registerFlowerBlock('daybloom', $MobEffects.REGENERATION, 180, $BlockProperties.copy(Blocks.DANDELION));
+	moonglowBlock = registerFlowerBlock('moonglow', $MobEffects.NIGHT_VISION, 240, $BlockProperties.copy(Blocks.DANDELION));
+	blinkrootBlock = registerFlowerBlock('blinkroot', $MobEffects.DIG_SLOWDOWN, 180, $BlockProperties.copy(Blocks.DANDELION));
 	deathweedBlock = registerCustomBlock(
 		'deathweed',
 		$RootBlock,
 		CustomBlockRegistry.Model.cross('kubejs:block/deathweed'),
 		$BlockProperties.copy(Blocks.DANDELION)
 	);
-	waterleafBlock = registerFlowerBlock('waterleaf', 'water_breathing', $BlockProperties.copy(Blocks.DANDELION));
+	waterleafBlock = registerFlowerBlock('waterleaf', $MobEffects.WATER_BREATHING, 240, $BlockProperties.copy(Blocks.DANDELION));
 	fireblossomBlock = registerCustomBlock(
 		'fireblossom',
 		$RootBlock,
 		CustomBlockRegistry.Model.cross('kubejs:block/fireblossom'),
 		$BlockProperties.copy(Blocks.DANDELION)
 	);
-	shiverthornBlock = registerFlowerBlock('shiverthorn', 'slowness', $BlockProperties.copy(Blocks.DANDELION));
+	shiverthornBlock = registerFlowerBlock('shiverthorn', $MobEffects.MOVEMENT_SLOWDOWN, 180, $BlockProperties.copy(Blocks.DANDELION));
 
-	naturesGiftBlock = registerFlowerBlock('natures_gift', 'ars_nouveau:mana_regen', $BlockProperties.copy(Blocks.DANDELION));
-	jungleRoseBlock = registerFlowerBlock('jungle_rose', 'haste', $BlockProperties.copy(Blocks.DANDELION));
+	naturesGiftBlock = registerFlowerBlock('natures_gift', $MobEffects.WEAKNESS, 240, $BlockProperties.copy(Blocks.DANDELION));
+	jungleRoseBlock = registerFlowerBlock('jungle_rose', $MobEffects.DIG_SPEED, 240, $BlockProperties.copy(Blocks.DANDELION));
 });
 
 /// ----------------------------------------------------------- ///
@@ -219,9 +221,9 @@ StartupEvents.registry('item', registry => {
 
 	/**
 	 * @param {string} id 
-	 * @param {Internal.CustomBuilderObject_} supplier 
+	 * @param {Internal.CustomBuilderObject_} block 
 	 */
-	function registerBlockItem(id, supplier, generated) {
+	function registerBlockItem(id, block, generated) {
 		global.writeJsonIfAbsent(
 			`kubejs/assets/kubejs/models/item/${id}.json`,
 			generated
@@ -229,7 +231,7 @@ StartupEvents.registry('item', registry => {
 				: { parent: `kubejs:block/${id}` },
 			`Created missing item model for block item '${id}'`
 		);
-		registry.createCustom(id, () => new $BlockItem(supplier.get(), new $ItemProperties()));
+		registry.createCustom(id, () => new $BlockItem(`kubejs:${id}`, new $ItemProperties()));
 	}
 
 	registerBlockItem('legacy/crafting_table', legacyCraftingTable);

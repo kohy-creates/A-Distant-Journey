@@ -108,21 +108,6 @@ LootJS.modifiers((event) => {
 			});
 	});
 
-
-	event.addEntityLootModifier('glow_squid')
-		.removeLoot('miners_delight:glow_squid')
-		.pool(pool => {
-			pool.rolls(1);
-			pool.addLoot(LootEntry.of('miners_delight:glow_squid').when(c => c.randomChanceWithLooting(0.5, 0.5)));
-		});
-
-	event.addEntityLootModifier('squid')
-		.removeLoot('miners_delight:squid')
-		.pool(pool => {
-			pool.rolls(1);
-			pool.addLoot(LootEntry.of('miners_delight:squid').when(c => c.randomChanceWithLooting(0.5, 0.5)));
-		});
-
 	/**
 	 * @param {Internal.GroupedLootBuilder_} pool 
 	 */
@@ -374,7 +359,7 @@ LootJS.modifiers((event) => {
 			pool.addLoot(
 				LootEntry.of('blaze_powder')
 					.limitCount([0, 2])
-					.lootingCount([0, 2])
+					.applyLootingBonus([0, 2])
 			);
 		});
 
@@ -383,7 +368,7 @@ LootJS.modifiers((event) => {
 			pool.addLoot(
 				LootEntry.of('blaze_powder')
 					.limitCount([0, 1])
-					.lootingCount([0, 1])
+					.applyLootingBonus([0, 1])
 			);
 		});
 

@@ -1,6 +1,6 @@
 EntityEvents.spawned(event => {
 	const entity = event.getEntity();
-	const type = entity.type;
+	const type = entity.getType();
 
 	if (global.bossMobs.includes(type)) {
 		entity.addTag('phase_0');
@@ -21,7 +21,7 @@ const BossMusicManager = {
 	 */
 	addPhase1IfNbt: (allMobs, bossId, nbtToCheck) => {
 		for (let entity of allMobs) {
-			if (entity.type == bossId) {
+			if (entity.getType() == bossId) {
 				if (entity.nbt[nbtToCheck]) {
 					entity.addTag('phase_1');
 				}
@@ -50,7 +50,7 @@ const BossMusicManager = {
 		const matches = [];
 
 		for (let entity of allMobs) {
-			if (entity.type == id) {
+			if (entity.getType() == id) {
 				matches.push(entity);
 			}
 		}
@@ -68,7 +68,7 @@ ServerEvents.tick(event => {
 			/** @type {Internal.Entity_} */
 			let commandBlock;
 			for (let entity of BossMusicManager.getAllMobsIn(server, 'witherstormmod:bowels')) {
-				if (entity.type == 'witherstormmod:command_block') {
+				if (entity.getType() == 'witherstormmod:command_block') {
 					commandBlock = entity;
 					break;
 				}

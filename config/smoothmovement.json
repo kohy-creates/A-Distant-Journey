@@ -1,0 +1,42 @@
+{
+  "itemMovement": {
+    "descClient:": "Smooths item movement on the client during server or network lag. Default:true",
+    "enableClient": true,
+    "descServer": "Compensates item movement on the server during low TPS to preserve vanilla behaviour. Default: true",
+    "enableServer": true
+  },
+  "entityMovement": {
+    "descClient:": "Smooths living entity movement on the client during server or network lag. Default: true",
+    "enableClient": true,
+    "descServer": "Compensates living entity movement on the server during low TPS to preserve vanilla behavior. Default: true",
+    "enableServer": true
+  },
+  "minecartMovement": {
+    "descClient:": "Smooths minecart movement on the client during server or network lag. Default: true",
+    "enableClient": true,
+    "descServer": "Compensates minecart movement on the server during low TPS to preserve vanilla physics behavior. Default: true",
+    "enableServer": true
+  },
+  "experienceOrbMovement": {
+    "descServer": "Compensates experience orb movement on the server during low TPS to preserve vanilla collection behavior. Default: true",
+    "enableServer": true
+  },
+  "fallingblockmovement": {
+    "descServer": "Compensates falling block movement on the server during low TPS to preserve vanilla physics behavior. Default: true",
+    "enableServer": true
+  },
+  "projectileMovement": {
+    "descServer": "Compensates projectile movement on the server during low TPS to preserve vanilla travel distance and timing. Default: true",
+    "enableServer": true
+  },
+  "playerMovement": {
+    "descServer": "Compensates player movement calculations during low TPS to reduce rubber-banding issues on the client. default:true",
+    "enableServer": true
+  },
+  "skyMovement": {
+    "descClient:": "Smooths sky/day movement on the client during server or network lag. Default: true",
+    "enableClient": true,
+    "descServer": "Compensates daytime progression on the server during low TPS to preserve vanilla day length. Default: true",
+    "enableServer": true
+  }
+}

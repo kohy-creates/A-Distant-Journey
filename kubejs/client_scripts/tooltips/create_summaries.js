@@ -3728,23 +3728,6 @@ const itemsToTooltip = [
 	},
 	{
 		item: [
-			'miners_delight:copper_pot'
-		],
-		summary: [
-			'Has only _4 item slots_ compared to the usual _6_.',
-			'Some _Soups_ can be cooked in a _Copper Pot_ instead of a _Cooking Pot_ to make them able to be poured into _Copper Cups_, yielding _2 servings with half the usual nutrition value_.'
-		],
-		controls: [
-			{
-				control: 'placed on a Stove or a Campfire',
-				text: [
-					'Becomes _heated_ and enables _Cooking recipes_.'
-				]
-			}
-		]
-	},
-	{
-		item: [
 			'farmersdelight:skillet',
 		],
 		controls: [
@@ -3956,96 +3939,6 @@ const itemsToTooltip = [
 		]
 	},
 
-	// Handcrafted
-	{
-		item: /_counter/,
-		summary: [
-			'_Right-clicking_ it with certain materials will _change its looks_.'
-		],
-		controls: [
-			{
-				control: 'Accepted materials',
-				noBaseText: true,
-				text: [
-					'All vanilla Planks, Andesite, Granite, Diorite, Calcite, Deepslate, Bricks, Quartz Block, Smooth Stone'
-				]
-			},
-			{
-				control: 'right-clicked with a Hammer',
-				text: [
-					'Changes the look of the block'
-				]
-			}
-		]
-	},
-	{
-		item: [
-			/_bench/,
-			/_chair/,
-			/_couch/
-		],
-		summary: [
-		],
-		controls: [
-			{
-				control: 'right-clicked with a Cushion',
-				text: [
-					'Changes the look of the block'
-				]
-			}
-		]
-	},
-	{
-		item: [
-			/_side_table/,
-			/_nigthstand/,
-			/handcrafted:.*_table/,
-			/hc.*_table/,
-		],
-		summary: [
-		],
-		controls: [
-			{
-				control: 'right-clicked with a Sheet',
-				text: [
-					'Changes the look of the block'
-				]
-			}
-		]
-	},
-	{
-		item: [
-			/_fancy_bed/,
-		],
-		summary: [
-		],
-		controls: [
-			{
-				control: 'right-clicked with a Cushion',
-				text: [
-					'Changes the look of the block'
-				]
-			},
-			{
-				control: 'right-clicked with a Sheet',
-				text: [
-					'Changes the look of the block'
-				]
-			}
-		]
-	},
-	{
-		item: 'handcrafted:kitchen_hood_pipe',
-		summary: [],
-		controls: [
-			{
-				control: 'right-clicked with a Hammer',
-				text: [
-					'Changes the look of the block'
-				]
-			}
-		]
-	},
 	{
 		item: /kubejs:.*bandage/,
 		summary: [

@@ -1,0 +1,9 @@
+{
+  "modifiers": [
+    "adj:ender_moon_moon_texture_color",
+    "adj:ender_moon_sky_light_color",
+    "adj:ender_moon_moon_size",
+    "adj:ender_moon_mob_spawn_settings",
+    "adj:ender_moon_text_components"
+  ]
+}

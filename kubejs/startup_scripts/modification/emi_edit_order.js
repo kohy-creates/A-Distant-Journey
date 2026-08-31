@@ -50,8 +50,6 @@ StartupEvents.postInit(event => {
 		['botanicadds:rune_tp', 'botanicadds:rune_energy'],
 		['botanicadds:rune_energy', 'kubejs:rune_life'],
 
-		['architects_palette:chiseled_moonshale', 'architects_palette:moonshale_flagstone'],
-
 		['create:rotation_speed_controller', 'create:creative_motor'],
 		['minecraft:hopper', 'goldenhopper:golden_hopper'],
 	];
@@ -152,7 +150,6 @@ StartupEvents.postInit(event => {
 		'quark:stripped_X_post',
 		'planks',
 		'mosaic',
-		'architects_palette:boards',
 		'bookshelf',
 		'quark:bookshelf',
 		'handcrafted:bench',
@@ -180,12 +177,10 @@ StartupEvents.postInit(event => {
 		'planks_slab',
 		'mosaic_slab',
 		'quark:vertical_slab',
-		'architects_palette:vertical_slab',
 		'quark:mosaic_vertical_slab',
 		'quark:planks_vertical_slab',
 		'suppsquared:item_shelf',
 		'fence',
-		'architects_palette:railing',
 		'twilightforest:banister',
 		'fence_gate',
 		'door',
@@ -236,7 +231,6 @@ StartupEvents.postInit(event => {
 		'minecraft:warped',
 		'mynethersdelight:powdery',
 		'netherexp:smokestalk',
-		'architects_palette:twisted',
 		'twilight_forest:twilight_oak',
 		'twilight_forest:canopy',
 		'twilight_forest:mangrove',
@@ -275,7 +269,6 @@ StartupEvents.postInit(event => {
 			case 'hearth_and_home': return 'hnhome';
 			case 'farmersdelight': return 'fd';
 			case 'twilightforest': return 'tf';
-			case 'architects_palette': return 'ap';
 			default: return namespace;
 		}
 	}
@@ -517,7 +510,6 @@ StartupEvents.postInit(event => {
 			'item:minecraft:tipped_arrow',
 			'item:alexscaves:jelly_bean',
 			'item:mythicmetals:tipped_runite_arrow',
-			'item:architects_palette:moonshale_flagstone'
 		],
 		added: [],
 		filters: [
@@ -529,7 +521,8 @@ StartupEvents.postInit(event => {
 			'/mythicmetals:tipped_runite_arrow/',
 			'/alexscaves:jelly_bean/',
 			'/spawn_egg/',
-			'/architects_palette:moonshale_flagstone/'
+			/item:minecraft:potion{Potion:".*long.*"}/,
+			/item:minecraft:potion{Potion:".*strong.*"}/,
 		]
 	};
 
@@ -546,8 +539,6 @@ StartupEvents.postInit(event => {
 	});
 
 	// // Add enchantment books
-	/** @type {any} */
-	const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
 	/** @type {any} */
 	const $EnchantmentsBegone = Java.loadClass('org.violetmoon.quark.content.experimental.module.EnchantmentsBegoneModule')
 	/** @type {Internal.Enchantment_[]} */

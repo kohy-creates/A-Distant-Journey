@@ -24,7 +24,6 @@ ServerEvents.tags('block', tags => {
 			/waystones\:/,
 			/enderium/,
 			/unobtainium/,
-			'architects_palette:unobtanium_block'
 		],
 		'adjcore:needs_tier_5_tool': [
 			/metallurgium/,

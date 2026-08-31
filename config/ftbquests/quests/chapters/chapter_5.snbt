@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_5"
+	group: "04D058A75BDDEE3C"
+	id: "11CF4E8318FD2EB8"
+	order_index: 5
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [ ]
+	title: "5. Wither Storm"
+}

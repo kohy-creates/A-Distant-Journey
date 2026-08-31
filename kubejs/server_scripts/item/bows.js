@@ -13,7 +13,7 @@ EntityEvents.spawned(event => {
 		const shooter = arrowEntity.getOwner()
 		if (shooter instanceof $Player) {
 
-			let arrowDamage = global.getOrDefault(global.arrowDamage[arrowEntity.type], 4), bowDamage = 0;
+			let arrowDamage = global.getOrDefault(global.arrowDamage[arrowentity.getType()], 4), bowDamage = 0;
 
 			const item = getMainRangedWeapon(shooter);
 			if (item) {
@@ -42,7 +42,7 @@ EntityEvents.spawned(event => {
 		// I handle crits through AttributesLib anyway
 		arrowEntity.setCritArrow(false);
 		// Add pierce to certain arrow types
-		const pierce = global.arrowPierce[arrowEntity.type];
+		const pierce = global.arrowPierce[arrowentity.getType()];
 		if (pierce) {
 			const nbt = arrowEntity.getNbt();
 			nbt.putByte('PierceLevel', nbt.PierceLevel + pierce);
@@ -69,7 +69,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 		if (shooter instanceof $Player && arrowEntity instanceof $AbstractArrow) {
 
 			// Certain arrows ignore velocity multiplier
-			const velocity = (arrowEntity.type === 'alexscaves:seeking_arrow' || arrowEntity.type === 'tide:deep_aqua_arrow' || arrowEntity.type === 'tide:star_arrow') ? 1 : (Math.min(arrowEntity.getDeltaMovement().length(), 3) / 3);
+			const velocity = (arrowentity.getType() === 'alexscaves:seeking_arrow' || arrowentity.getType() === 'tide:deep_aqua_arrow' || arrowentity.getType() === 'tide:star_arrow') ? 1 : (Math.min(arrowEntity.getDeltaMovement().length(), 3) / 3);
 
 			const pData = arrowEntity.persistentData;
 			damage = (pData.arrowDamage + pData.bowDamage) * velocity;
@@ -78,7 +78,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 		else {
 			const velocity = Math.min(arrowEntity.getDeltaMovement().length(), 0.4) / 0.4;
 
-			damage = (global.monsterRangedDamageBase[shooter.type] || 15) * (velocity);
+			damage = (global.getOrDefault(global.monsterRangedDamageBase[shooter.getType()], 15)) * (velocity);
 			const chapter = (shooter.getServer().persistentData.chapters.current_stage).toString().replace('chapter_', '')
 			damage *= global.monsterRangedDamageMul[chapter];
 		}

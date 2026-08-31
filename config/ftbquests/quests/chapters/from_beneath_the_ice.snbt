@@ -53,6 +53,8 @@
 		}
 	]
 	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -112,7 +114,7 @@
 		}
 		{
 			dependencies: ["6A5092882CBFB0D2"]
-			icon: "aquamirae:oxygelium"
+			icon: "aquamirae:oxyhelium"
 			icon_scale: 0.75d
 			id: "1A27ABCC4980970F"
 			shape: "diamond"
@@ -121,7 +123,7 @@
 			tasks: [
 				{
 					disable_toast: true
-					icon: "aquamirae:oxygelium"
+					icon: "aquamirae:oxyhelium"
 					id: "7DA25D67929BC576"
 					structure: "aquamirae:ice_maze/common"
 					title: "Find the Ice Maze"
@@ -129,7 +131,7 @@
 				}
 				{
 					disable_toast: true
-					icon: "aquamirae:oxygelium"
+					icon: "aquamirae:oxyhelium"
 					id: "566D7D8BED38005B"
 					secret: true
 					structure: "aquamirae:ice_maze/arch"
@@ -138,7 +140,7 @@
 				}
 				{
 					disable_toast: true
-					icon: "aquamirae:oxygelium"
+					icon: "aquamirae:oxyhelium"
 					id: "603F224D48D0E599"
 					secret: true
 					structure: "aquamirae:ice_maze/spiral"
@@ -178,7 +180,7 @@
 				entity: "aquamirae:captain_cornelia"
 				icon: {
 					Count: 1
-					id: "aquamirae:remnants_saber"
+					id: "aquamirae:remnant_saber"
 					tag: {
 						Damage: 0
 					}

@@ -1,0 +1,11 @@
+{
+  "modifiers": [
+    "adj:blue_moon_moon_texture_color",
+    "adj:blue_moon_sky_light_color",
+    "adj:blue_moon_moon_size",
+    "adj:blue_moon_mob_effects",
+    "adj:blue_moon_spawn_category_multiplier",
+    "adj:blue_moon_text_components",
+    "adj:blue_moon_name_color"
+  ]
+}

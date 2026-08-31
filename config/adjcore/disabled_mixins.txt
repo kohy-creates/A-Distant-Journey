@@ -21,3 +21,10 @@ de.keksuccino.fancymenu.mixin.mixins.common.server.MixinServerLevel
 de.keksuccino.fancymenu.mixin.mixins.common.server.MixinServerPlayer
 xyz.kohara.adjcore.mixins.entity.villager.WanderingTraderMixin
 com.terraformersmc.biolith.impl.mixin.MixinTheEndBiomeSource
+tallestred.numismaticoverhaul.mixin.ninetynine.BundleItemMixin
+tallestred.numismaticoverhaul.mixin.ninetynine.ContainersMixin
+tallestred.numismaticoverhaul.mixin.ninetynine.FriendlyByteBufMixin
+tallestred.numismaticoverhaul.mixin.ninetynine.ItemEntityMixin
+tallestred.numismaticoverhaul.mixin.ninetynine.ItemStackHandlerMixin
+tallestred.numismaticoverhaul.mixin.ninetynine.ItemStackMixin
+tallestred.numismaticoverhaul.mixin.ninetynine.ServerGamePacketListenerImplMixin

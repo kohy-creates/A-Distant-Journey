@@ -1,0 +1,8 @@
+{
+  "type": "enhancedcelestials2core:block_sleeping",
+  "settings": {
+    "condition": {
+      "type": "corgilib:any"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "enhancedcelestials2core:block_item_drop",
+  "settings": {
+    "settings": {
+      "drop_enhancer": [
+        {
+          "minimum_count": 2,
+          "multipliers": {
+            "#enhancedcelestials:harvest_moon_crops": 2.0
+          }
+        }
+      ]
+    }
+  }
+}

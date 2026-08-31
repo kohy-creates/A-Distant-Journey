@@ -2,7 +2,7 @@ NativeEvents.onEvent("highest", false, $LivingHurtEvent, /** @param {Internal.Li
 	const source = event.getSource();
 	const entity = source.getImmediate();
 	if (!entity) return;
-	switch (entity.type) {
+	switch (entity.getType()) {
 		case 'rediscovered:thunder_cloud': {
 			event.setAmount(180);
 			break;

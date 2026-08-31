@@ -51,8 +51,6 @@ ClientEvents.lang('en_us', event => {
 		'block.adj.ender_forge_casing': 'Ender Forge Casing',
 		'block.adj.adamantite_forge_casing': 'Adamantite Forge Casing',
 
-		'architects_palette.info.dimension.rediscovered.skylands': 'the Skylands',
-
 		'block.aether.potted_skyroot_sapling': 'Potted Skyroot Sapling',
 
 		'entity.minecraft.villager.animal_tamer': 'Animal Tamer',
@@ -84,11 +82,6 @@ ClientEvents.lang('en_us', event => {
 		'functionalstorage:oak_1': 'Storage Drawer (1x1)',
 		'functionalstorage:oak_2': 'Storage Drawer (1x2)',
 		'functionalstorage:oak_4': 'Storage Drawer (2x2)',
-		'architects_palette:unobtanium_block': 'Missing Tiles',
-		'architects_palette:entrails': 'Flesh Block',
-		'architects_palette:entrails_slab': 'Flesh Slab',
-		'architects_palette:entrails_vertical_slab': 'Flesh Vertical Slab',
-		'architects_palette:entrails_stairs': 'Flesh Stairs',
 		'summoningrituals:altar': 'Twilight Altar',
 		'summoningrituals:indestructible_altar': 'Twilight Altar (Unbreakable)',
 

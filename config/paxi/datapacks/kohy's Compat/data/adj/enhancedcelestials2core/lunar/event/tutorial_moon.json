@@ -1,0 +1,8 @@
+{
+  "modifiers": [
+    "adj:tutorial_moon_moon_texture_color",
+    "adj:tutorial_moon_sky_light_color",
+    "adj:tutorial_moon_spawn_category_multiplier",
+    "adj:tutorial_moon_text_components"
+  ]
+}

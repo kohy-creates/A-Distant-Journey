@@ -3,7 +3,6 @@ const crops = {
 		'phantasm:pream_sapling',
 		'quark:lavender_blossom_sapling',
 		'ars_nouveau:purple_archwood_sapling',
-		'architects_palette:twisted_sapling',
 		'evilcraft:undead_sapling',
 		'window_box:chthonic_yew_sapling',
 		'window_box:alfthorne_sapling',

@@ -85,14 +85,8 @@ global.stageRestrictions = {
 			'kubejs:hellforge',
 			/chthonic_yew/,
 			/alfthorne/,
-			/architects_palette:twisted_/,
-			/architects_palette:.*wardstone/,
-			/architects_palette:.*onyx/,
-			/architects_palette:.*warpstone/,
 			/hadaline/,
 			/entrails/,
-			/architects_palette:.*blackstone.*/,
-			/architects_palette\/.*twisted/,
 			/botania:.*spark.*/,
 			'botania:lens_paint',
 			/bifrost/,
@@ -328,7 +322,6 @@ global.stageRestrictions = {
 			/supp.*\:.*unusualend.*/,
 			/supp.*\:.*phantasm.*/,
 			/myalite/,
-			/architects_palette:.*oracle/,
 			/quark\:duskbound/,
 			'alloy_forgery:ender_forge_casing_forge_controller',
 			'adj:ender_forge_casing',
@@ -380,7 +373,6 @@ global.stageRestrictions = {
 		light: [
 			/witherstormmod/,
 			/witherstorm_delight/,
-			'architects_palette:unobtanium_block',
 			'create:creative_motor'
 		],
 		exceptions: [

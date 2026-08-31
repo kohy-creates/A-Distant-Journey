@@ -13,7 +13,7 @@ SummoningRituals.complete(event => {
 		`/execute in ${dimension} positioned ${pos.x} ${pos.y} ${pos.z} run function adj:twilight_altar/stop`
 	);
 	global.getEntitiesInRadius(event.getLevel(), pos.x, pos.y, pos.z, 35).forEach(/** @param {Internal.Entity_} entity */ entity => {
-		const type = entity.type;
+		const type = entity.getType();
 		if (type === 'minecraft:player' && !entity.persistentData.hasCraftedWithTwilightAltar) {
 			entity.persistentData.hasCraftedWithTwilightAltar = true;
 		}

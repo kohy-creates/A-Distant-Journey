@@ -8,7 +8,7 @@
 	"maxChatHistory": 100,
 	// If enabled, the chat history will not be cleared when you leave a server, and instead only be cleared when Minecraft is closed.
 	// DEFAULT: `false`
-	"keepChatHistory": false,
+	"keepChatHistory": true,
 	// If enabled, the server will be ignored if it instructs the client to close the chat bar (for example, if the player is teleported).
 	// DEFAULT: `false`
 	"keepChatBarOpen": false,
