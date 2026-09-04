@@ -821,6 +821,43 @@
 			red_terracotta_brick = true
 			black_terracotta_brick = true
 
+		[types.cut_block_type.astrological]
+			purpurite = true
+			purpurite_tiles = true
+			triphylite = true
+			jade = true
+			jade_bricks = true
+			polished_jade = true
+			reinforced_jade = true
+			light_jade = true
+			light_jade_tiles = true
+			cracked_light_jade_tiles = true
+
+		[types.cut_block_type.terramity]
+			void_tile = true
+			igneostone = true
+			polished_igneostone = true
+			igneostone_brick = true
+			igneostone_tile = true
+			daemonium_plating = true
+			void_panelling = true
+			nyxium_panelling = true
+			nyxium_brick = true
+			nyxium_tile = true
+			nyxium_plating = true
+			stone_tile = true
+			dungeon_brick = true
+			dungeon_tile = true
+			dungeon_block = true
+			reinforced_blackstone = true
+			reinforced_blackstone_brick = true
+			reinforced_blackstone_tile = true
+			reinforced_red_nether_brick = true
+			moonstone = true
+			polished_moonstone = true
+			moonstone_brick = true
+			moonstone_tile = true
+
 #Disables specific entries
 [entries]
 

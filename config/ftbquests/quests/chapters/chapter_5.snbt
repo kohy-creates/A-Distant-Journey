@@ -1,13 +1,697 @@
 {
+	autofocus_id: "1D11D475F590FFE4"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "chapter_5"
 	group: "04D058A75BDDEE3C"
+	icon: "witherstormmod:tainted_dirt"
 	id: "11CF4E8318FD2EB8"
+	images: [
+		{
+			dependency: "3F2B685C8C008081"
+			height: 5.0d
+			image: "adj:textures/other/bg_grass_dirt.png"
+			order: -999
+			rotation: 180.0d
+			width: 10.0d
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependency: "545C995B87BA0947"
+			height: 5.0d
+			image: "adj:textures/other/bg_stone_ores_3.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependency: "603D3F9B2298333B"
+			height: 5.0d
+			image: "adj:textures/other/bg_tainted_flesh.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 14.5d
+			y: 8.5d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 5.0d
+			image: "adj:textures/other/bg_tainted_blocks.png"
+			order: -999
+			rotation: 180.0d
+			width: 10.0d
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 5.0d
+			image: "adj:textures/other/bg_tainted_blocks.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 6.5d
+			y: 11.0d
+		}
+		{
+			dependency: "3F2B685C8C008081"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_5.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependency: "3F2B685C8C008081"
+			height: 6.0d
+			image: "adj:textures/texts/lore_command_block.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependency: "3F2B685C8C008081"
+			height: 1.75d
+			image: "mythicmetals:block/unobtainium_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_5_5.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 6.5d
+			y: 10.5d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 1.75d
+			image: "witherstormmod:block/formidibomb_side"
+			rotation: 45.0d
+			width: 1.75d
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			dependency: "603D3F9B2298333B"
+			height: 1.75d
+			image: "witherstormmod:block/tainted_glass"
+			rotation: 45.0d
+			width: 1.75d
+			x: 17.5d
+			y: 9.5d
+		}
+		{
+			dependency: "3F2B685C8C008081"
+			height: 1.75d
+			image: "mythicmetals:block/celestium_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 1.75d
+			image: "witherstormmod:block/withered_phlegm_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependency: "3F2B685C8C008081"
+			height: 1.75d
+			image: "minecraft:block/command_block_back"
+			rotation: 45.0d
+			width: 1.75d
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependency: "3E479B783B24C730"
+			height: 6.0d
+			image: "adj:textures/texts/lore_witherstorm.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 7.0d
+			y: 14.0d
+		}
+	]
 	order_index: 5
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["640E291225CA8A2A"]
+			disable_toast: true
+			id: "1D11D475F590FFE4"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Kill the Ender Guardian and collect the Eye of Desolation"
+			tasks: [{
+				id: "6CA63C69CCA0532D"
+				item: "kubejs:eye_of_desolation"
+				type: "item"
+			}]
+			title: "I Stared Into The Void"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3F2B685C8C008081"]
+			hide_until_deps_complete: true
+			id: "4C8E061A81250AC1"
+			subtitle: "Attune a Compass to locate the Command Block and follow where it leads you to"
+			tasks: [{
+				id: "21961F7969A95231"
+				item: {
+					Count: 1
+					id: "minecraft:compass"
+					tag: {
+						LodestoneDimension: "minecraft:overworld"
+						LodestonePos: {
+							X: 3440
+							Y: 64
+							Z: 3200
+						}
+						LodestoneTracked: 0b
+						display: {
+							Name: "{\"text\":\"Command Block Compass\",\"italic\":false}"
+						}
+						"quark:compass_calculated": 1b
+						"quark:compass_in_nether": 0b
+					}
+				}
+				type: "item"
+			}]
+			title: "The Tale of the Command Block"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4C8E061A81250AC1"
+				"1D11D475F590FFE4"
+			]
+			id: "06E7DBDB7C7A790A"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Find the Command Block"
+			tasks: [{
+				icon: "minecraft:command_block"
+				id: "42A2DF712BB66AB9"
+				structure: "witherstormmod:storm_spawn_platform"
+				title: "Find the Command Block"
+				type: "structure"
+			}]
+			title: "Raiders of The Lost Block"
+			x: 4.5d
+			y: 4.999999999999993d
+		}
+		{
+			dependencies: [
+				"3F2B685C8C008081"
+				"1D11D475F590FFE4"
+			]
+			hide_until_deps_complete: true
+			icon_scale: 0.75d
+			id: "41BD18823BE31271"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Descend into the caves one final time in search for Unobtainium"
+			tasks: [{
+				id: "20FF7FD6D51A7149"
+				item: "mythicmetals:unobtainium"
+				type: "item"
+			}]
+			title: "(Un)obtainable"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["41BD18823BE31271"]
+			id: "646540B4C4803445"
+			shape: "pentagon"
+			subtitle: "Create Metallurgium - the toughest of alloys to ever exist"
+			tasks: [{
+				id: "57B1E2D14E6ADA44"
+				item: "mythicmetals:metallurgium_ingot"
+				type: "item"
+			}]
+			title: "Cosmic Power"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"41BD18823BE31271"
+				"6E4C5779C4DA9851"
+			]
+			id: "3915141D30CD6CB0"
+			shape: "pentagon"
+			subtitle: "Create Celestium - the most magical of alloys to ever exist"
+			tasks: [{
+				icon: "mythicmetals:celestium_ingot"
+				id: "6B74D20CFE090179"
+				item: "mythicmetals:metallurgium_ingot"
+				type: "item"
+			}]
+			title: "Celestial Synth"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["06E7DBDB7C7A790A"]
+			hide_until_deps_complete: true
+			id: "3E479B783B24C730"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Finish what's already there"
+			tasks: [{
+				icon: "minecraft:wither_skeleton_skull"
+				id: "33348AC40FBB3C9C"
+				observe_type: 5
+				timer: 0L
+				title: "Unleash it again"
+				to_observe: "witherstormmod:wither_storm"
+				type: "observation"
+			}]
+			title: "<shake><obfuscated>.A.d.s1.2d"
+			x: 2.4571428571428697d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3E479B783B24C730"]
+			description: [
+				"&7&lHINT:&r &5Withered Symbionts&r will start spawning shortly after &5The Wither Storm&r evolves to &n&ePhase 5&r&r."
+				""
+				"However, in order for them to start spawning, &lyou will need to get close to it&r. You can hide underground until one appears."
+				""
+				"It also needs solid land to spawn them, so you'll need to wait for it to move further if it is e.g. in the middle of an ocean."
+				""
+				"{@pagebreak}"
+				"&7&lHINT 2:&r Sometimes an &5Eye of The Symbiont&r can drop in place of the &6Command Block Book&r. Don't worry, you can turn it into the latter with a &lvery&r simple crafting recipe."
+			]
+			hide_until_deps_complete: true
+			icon: "witherstormmod:command_block_book"
+			id: "1F2003EDC1D3B0A4"
+			subtitle: "Kill a Withered Symbiont and collect an Enchanted Command Block Book"
+			tasks: [
+				{
+					entity: "witherstormmod:withered_symbiont"
+					icon: "witherstormmod:withered_symbiont_spawn_egg"
+					id: "5796DBA222ED8458"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "4B9BCA02850FB4DD"
+					item: "witherstormmod:command_block_book"
+					type: "item"
+				}
+			]
+			title: "Symbiosis Necrosis"
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3E479B783B24C730"]
+			description: [""]
+			hide_until_deps_complete: true
+			id: "2E334E5F94908B83"
+			subtitle: "Craft an Amulet to help with tracking the Wither Storm"
+			tasks: [{
+				id: "332222E6A97091AF"
+				item: {
+					Count: 1
+					id: "witherstormmod:amulet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Order of The Stone"
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1F2003EDC1D3B0A4"]
+			icon_scale: 0.75d
+			id: "59B252C7E4C71A35"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Construct a Formidibomb"
+			tasks: [{
+				id: "6DBAEA6F6EC2424F"
+				item: {
+					Count: 1
+					id: "witherstormmod:formidibomb"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Formidable"
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["59B252C7E4C71A35"]
+			id: "636684C648DFFC9D"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Blow up the Wither Storm with a Formidibomb"
+			tasks: [{
+				advancement: "adj:strong_grow_weak"
+				criterion: ""
+				id: "30C6F8C473C1E456"
+				title: "The Beast Falls"
+				type: "advancement"
+			}]
+			title: "The Strong Turn Weak"
+			x: 10.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2E334E5F94908B83"]
+			icon: {
+				Count: 1
+				id: "witherstormmod:amulet"
+				tag: {
+					TrackEntityTypes: 1b
+				}
+			}
+			id: "4283AEC8BB7FD410"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Link an Amulet to 4 different mobs, one per color"
+			tasks: [{
+				advancement: "adj:fully_link_amulet"
+				criterion: ""
+				icon: {
+					Count: 1
+					id: "witherstormmod:amulet"
+					tag: {
+						TrackEntityTypes: 1b
+					}
+				}
+				id: "2846966C7BD8642F"
+				title: "Link an Amulet to 4 different mobs"
+				type: "advancement"
+			}]
+			title: "The Watcher"
+			x: 3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["636684C648DFFC9D"]
+			id: "603D3F9B2298333B"
+			invisible: true
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Witness The Wither Storm coming back from the dead"
+			tasks: [{
+				advancement: "adj:weakened_arise_stronger"
+				criterion: ""
+				icon: "netherexp:soul_burning_wither_skull_block"
+				id: "2AE06478E71429F5"
+				title: "Witness the horror rise from the dead"
+				type: "advancement"
+			}]
+			title: "The Weak Arise Stronger"
+			x: 13.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["603D3F9B2298333B"]
+			hide_until_deps_complete: true
+			icon: "witherstormmod:command_block_sword"
+			id: "19068C7B62786F99"
+			subtitle: "Kill another Withered Symbiont and use the dropped Enchanted Command Block Book to craft a Command Block Tool"
+			tasks: [{
+				id: "54B2AC1A87F9E051"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "witherstormmod:command_block_tools"
+					}
+				}
+				title: "Any #witherstormmod:command_block_tools"
+				type: "item"
+			}]
+			title: "Adminstrator Logic"
+			x: 15.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["494840EAB1FB2573"]
+			description: [""]
+			hide_until_deps_complete: true
+			id: "7832C35257E664E1"
+			subtitle: "Cure a wither sickened mob by feeding it Golden Apple Stew"
+			tasks: [
+				{
+					advancement: "adj:cured_sickened_mob"
+					criterion: ""
+					id: "3C97E4673971787B"
+					title: "Feed a Sickened Mob a Golden Apple Stew"
+					type: "advancement"
+				}
+				{
+					id: "7384C21EF0B66271"
+					item: "witherstormmod:golden_apple_stew"
+					type: "item"
+				}
+			]
+			title: "Plague Doctor"
+			x: -1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["19068C7B62786F99"]
+			icon_scale: 0.75d
+			id: "088E92D166861F41"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Aim an Ender Pearl at the opening in The Wither Storm and enter its inside - The Bowels"
+			tasks: [{
+				dimension: "witherstormmod:bowels"
+				icon: "witherstormmod:tainted_sand"
+				id: "6C9463986BF038CE"
+				title: "Enter The Bowels"
+				type: "dimension"
+			}]
+			title: "Belly of The Beast"
+			x: 17.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["088E92D166861F41"]
+			description: [""]
+			hide_until_deps_complete: true
+			id: "2FC4D1B2E42E2124"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Destroy the Command Block and kill The Wither Storm, this time for good"
+			tasks: [{
+				id: "5D595E20D8507E09"
+				item: "witherstormmod:withered_nether_star"
+				type: "item"
+			}]
+			title: "One Story Ends, Another Begins"
+			x: 20.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"646540B4C4803445"
+				"3915141D30CD6CB0"
+			]
+			icon: "mythicmetals:celestium_block"
+			icon_scale: 0.75d
+			id: "52DBAF111AE45F4E"
+			optional: true
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Block of Celestisynth and a Block of Metallurgium"
+			tasks: [
+				{
+					id: "54AEFBFE699EA005"
+					item: "mythicmetals:metallurgium_block"
+					type: "item"
+				}
+				{
+					id: "3A4AA186FE3435B9"
+					item: "mythicmetals:celestium_block"
+					type: "item"
+				}
+			]
+			title: "Rich People Stuff"
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["41BD18823BE31271"]
+			icon: "create_cataclysm:cataclysmic_alloy"
+			id: "0E1167447AFB1F55"
+			shape: "pentagon"
+			subtitle: "Forge some Cataclysmic Alloy and press it into a Sheet"
+			tasks: [
+				{
+					id: "1EEF4410A7C3EDFB"
+					item: "create_cataclysm:cataclysmic_alloy"
+					type: "item"
+				}
+				{
+					id: "1011548C4196B78D"
+					item: "create_cataclysm:cataclysmic_sheet"
+					type: "item"
+				}
+			]
+			title: "Pure Calamity"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3E479B783B24C730"]
+			description: [
+				"Mobs which stay too long near The Wither Storm will suffer a mysterious condition known as &5Wither Sickness&r. Over time, they will grow weaker and transform into a powerful &5Sickened&r variant."
+				""
+				"&6Players&r are partially immune to the disease, only suffering a &5progressing max health reduction&r."
+				"{@pagebreak}"
+				"The more The Wither Storm grows, &cthe more infected mobs you will see in your world&r, even outside its vicinity. Don't be surprised if all of a sudden &5Sickened mobs&r start spawning during nights or underground. &4It can only get worse from here&r."
+			]
+			icon: "witherstormmod:withered_bone"
+			id: "494840EAB1FB2573"
+			subtitle: "Kill some Sickened mobs and collect their drops"
+			tasks: [
+				{
+					id: "2C4CA2F7A650DDE9"
+					item: "witherstormmod:withered_bone"
+					type: "item"
+				}
+				{
+					id: "7FD4776D7F9B3EE2"
+					item: "witherstormmod:withered_flesh"
+					type: "item"
+				}
+				{
+					id: "643C8F68529E00B9"
+					item: "witherstormmod:withered_spider_eye"
+					type: "item"
+				}
+				{
+					id: "3206E4EC60F1877D"
+					item: "witherstormmod:tainted_dust"
+					type: "item"
+				}
+			]
+			title: "Withering Away"
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["494840EAB1FB2573"]
+			icon_scale: 0.75d
+			id: "4EBF126E2037E270"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft or find a Withered Flegm Block"
+			tasks: [{
+				id: "1580704541E19685"
+				item: "witherstormmod:withered_phlegm_block"
+				type: "item"
+			}]
+			title: "Yuck Vacuum Hopper"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["494840EAB1FB2573"]
+			id: "00DE59EBCC3F31C9"
+			subtitle: "Taint a Carved Pumpkin"
+			tasks: [{
+				id: "6F7F78F71168CC13"
+				item: "witherstormmod:tainted_carved_pumpkin"
+				type: "item"
+			}]
+			title: "Cyclops"
+			x: -0.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["494840EAB1FB2573"]
+			icon: "witherstorm_delight:tainted_essence"
+			id: "3E2EF52784EFF652"
+			subtitle: "Cook up some Tainted Essence"
+			tasks: [{
+				id: "3166BA4E00CA4A2D"
+				item: "witherstorm_delight:tainted_essence"
+				type: "item"
+			}]
+			title: "Necrotic Cooking"
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3E479B783B24C730"]
+			id: "46ADC2671999F886"
+			subtitle: "Craft a Phasometer to keep track of The Wither Storm from a safe distance"
+			tasks: [{
+				id: "41B7D86F86EDB81C"
+				item: {
+					Count: 1
+					id: "witherstormmod:phasometer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "On My Watch"
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3E2EF52784EFF652"]
+			icon: "witherstorm_delight:withered_rice"
+			id: "4FC46C0A664132B9"
+			subtitle: "Taint some cooking ingredients"
+			tasks: [
+				{
+					id: "1C0216EB87E36CAA"
+					item: "witherstorm_delight:withered_rice"
+					type: "item"
+				}
+				{
+					id: "2374F6BE2EFB2F31"
+					item: "witherstorm_delight:withered_cabbage_seeds"
+					type: "item"
+				}
+				{
+					id: "3E6C5480AE419431"
+					item: "witherstorm_delight:withered_tomato_seeds"
+					type: "item"
+				}
+				{
+					id: "0362CBDA6CD788FC"
+					item: "witherstorm_delight:tainted_mushroom_colony"
+					type: "item"
+				}
+			]
+			title: "Through Death, Reborn"
+			x: 1.0d
+			y: 12.5d
+		}
+	]
 	title: "5. Wither Storm"
 }

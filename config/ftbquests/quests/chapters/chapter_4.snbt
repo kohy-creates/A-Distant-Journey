@@ -1,13 +1,750 @@
 {
+	autofocus_id: "7EB2D195600E1D0F"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "chapter_4"
 	group: "04D058A75BDDEE3C"
+	icon: "minecraft:end_stone"
 	id: "7B4DA06AB76E230F"
+	images: [
+		{
+			dependency: "1F3DB68EA2A45EB7"
+			height: 5.609981515711645d
+			image: "adj:textures/other/bg_void.png"
+			order: -999
+			rotation: -45.0d
+			width: 10.0d
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependency: "0F84B7A1DA0FDD37"
+			height: 5.609981515711645d
+			image: "adj:textures/other/bg_void.png"
+			order: -999
+			rotation: 45.0d
+			width: 10.0d
+			x: -11.0d
+			y: -0.5d
+		}
+		{
+			dependency: "4564BF670D10E0FA"
+			height: 5.609981515711645d
+			image: "adj:textures/other/bg_void.png"
+			order: -999
+			rotation: 10.0d
+			width: 10.0d
+			x: -11.0d
+			y: 4.5d
+		}
+		{
+			dependency: "0F84B7A1DA0FDD37"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_4.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependency: "1F3DB68EA2A45EB7"
+			height: 1.75d
+			image: "cataclysm:block/chiseled_end_stone_bricks"
+			rotation: 45.0d
+			width: 1.75d
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependency: "1F3DB68EA2A45EB7"
+			height: 2.25d
+			image: "minecraft:item/ender_eye"
+			rotation: 0.0d
+			width: 2.25d
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependency: "4564BF670D10E0FA"
+			height: 1.75d
+			image: "majruszsdifficulty:block/enderium_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: -13.5d
+			y: 1.5d
+		}
+		{
+			dependency: "6086C058455AE6AD"
+			height: 2.25d
+			image: "cataclysm:item/void_eye"
+			rotation: 0.0d
+			width: 2.25d
+			x: -13.0d
+			y: 4.5d
+		}
+		{
+			dependency: "4564BF670D10E0FA"
+			height: 1.75d
+			image: "kubejs:block/ender_forge_casing"
+			rotation: 45.0d
+			width: 1.75d
+			x: -14.0d
+			y: -0.5d
+		}
+		{
+			dependency: "0F84B7A1DA0FDD37"
+			height: 6.0d
+			image: "adj:textures/texts/lore_end.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependency: "4564BF670D10E0FA"
+			height: 1.75d
+			image: "cataclysm:block/void_stone"
+			rotation: 45.0d
+			width: 1.75d
+			x: -14.5d
+			y: 3.5d
+		}
+		{
+			dependency: "0898408ED8FBAF57"
+			height: 1.75d
+			image: "rediscovered:block/glowing_obsidian"
+			rotation: 45.0d
+			width: 1.75d
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependency: "4564BF670D10E0FA"
+			height: 1.75d
+			image: "botania:block/terrasteel_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: -16.5d
+			y: -2.5d
+		}
+		{
+			dependency: "6E9823FB2C7C6D19"
+			height: 1.75d
+			image: "phantasm:block/chiseled_obsidian"
+			rotation: 45.0d
+			width: 1.75d
+			x: 0.5d
+			y: -1.0d
+		}
+	]
 	order_index: 4
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["04096C5C5F14CD07"]
+			id: "7EB2D195600E1D0F"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Kill The Red Dragon and collect the Eye of Dreams"
+			tasks: [{
+				id: "034FAF49DAD05AAA"
+				item: "kubejs:eye_of_dreams"
+				type: "item"
+			}]
+			title: "Out With The Old!"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6E9823FB2C7C6D19"
+				"04096C5C5F14CD07"
+				"7EB2D195600E1D0F"
+			]
+			hide_until_deps_complete: true
+			icon: "rediscovered:dragon_altar"
+			id: "5C5A43A9E26D16BD"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Craft 4 Dragon Pylons. You can use them to resummon Red Dragon at a Brick Pyramid"
+			tasks: [{
+				count: 4L
+				id: "5360E5D6344DEE34"
+				item: { Count: 4, id: "rediscovered:mini_dragon_pylon" }
+				type: "item"
+			}]
+			title: "The Old, Again..."
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6E9823FB2C7C6D19"
+				"0898408ED8FBAF57"
+			]
+			description: ["&7&lHINT: &rIn the meantime prepare the right gear to ride it!"]
+			hide_until_deps_complete: true
+			icon: "rediscovered:red_dragon_egg"
+			icon_scale: 0.75d
+			id: "6D854F2600B922BD"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Pour Dragon's Breath onto a Red Dragon Egg and wait for it to hatch"
+			tasks: [{
+				block: "rediscovered:red_dragon_egg"
+				block_type: 0
+				checkItem: false
+				id: "45DF413EB6557196"
+				isItemInteraction: false
+				item: "minecraft:dragon_breath"
+				title: "Do as the description says"
+				type: "questsadditions:use"
+				value: 1L
+			}]
+			title: "In With The New!"
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"6E9823FB2C7C6D19"
+				"7EB2D195600E1D0F"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:ender_eye"
+			id: "23D842B61D6B17F4"
+			subtitle: "Follow an unattuned Awakened Ender Pearl and see where it guides you to"
+			tasks: [{
+				icon: "minecraft:cracked_stone_bricks"
+				id: "45C13C02C2F5F579"
+				structure: "#integrated_stronghold:integrated_stronghold"
+				title: "Find a ???"
+				type: "structure"
+			}]
+			title: "The Lost Stronghold"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["23D842B61D6B17F4"]
+			description: [
+				"&l&7HINT:&r I don't think I need to remind you how to open an End Portal. If you are playing modpacks then you probably have at least a rough idea how the base game works."
+				""
+				"But just in case it's not obvious - just right click the &3End Portal Frames&r with &dAwakened Ender Pearls&r."
+			]
+			icon: "cataclysm:void_stone"
+			id: "1F3DB68EA2A45EB7"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Open a portal to The End and enter the realm where darkness bends"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				disable_toast: true
+				icon: "minecraft:end_portal_frame"
+				id: "7746C0C5DCF4E279"
+				title: "Enter the Portal"
+				type: "dimension"
+			}]
+			title: "Journey's End...?"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1F3DB68EA2A45EB7"]
+			hide_until_deps_complete: true
+			icon: "minecraft:dragon_head"
+			icon_scale: 0.75d
+			id: "0F84B7A1DA0FDD37"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Break the seal on the dimension by killing the Ender Dragon"
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "4774CE42F4E427D2"
+				title: "Kill the Ender Dragon"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Free The End"
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0F84B7A1DA0FDD37"]
+			hide_until_deps_complete: true
+			id: "02804C4D2D501D99"
+			subtitle: "Hold a Dragon Egg"
+			tasks: [{
+				id: "2FCFC2EC181605D5"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			title: "The Next Generation"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F84B7A1DA0FDD37"]
+			hide_until_deps_complete: true
+			id: "0898408ED8FBAF57"
+			subtitle: "Bottle up some Dragon's Breath"
+			tasks: [{
+				id: "24B7A26E0D0F7800"
+				item: "minecraft:dragon_breath"
+				type: "item"
+			}]
+			title: "You Need a Mint"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F84B7A1DA0FDD37"]
+			hide_until_deps_complete: true
+			id: "4564BF670D10E0FA"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Leave the main island and explore The End"
+			tasks: [{
+				advancement: "adj:remote_getaway"
+				criterion: ""
+				icon: "minecraft:ender_pearl"
+				id: "7426CF963E3B30DF"
+				title: "Enter an End Gateway"
+				type: "advancement"
+			}]
+			title: "Remote Getaway"
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0F84B7A1DA0FDD37"]
+			hide_until_deps_complete: true
+			icon: "minecraft:end_crystal"
+			id: "3E76EA9BD9A391D8"
+			subtitle: "Respawn the Ender Dragon with 4 End Crystals"
+			tasks: [
+				{
+					count: 4L
+					id: "54F4751F51DF0AA4"
+					item: { Count: 4, id: "minecraft:end_crystal" }
+					type: "item"
+				}
+				{
+					advancement: "adj:respawn_dragon"
+					criterion: ""
+					id: "21484760849B7FDA"
+					title: "Respawn the Dragon"
+					type: "advancement"
+				}
+			]
+			title: "The End. Again"
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4564BF670D10E0FA"]
+			hide_until_deps_complete: true
+			icon: "unusualend:prismalite_gem"
+			id: "7BEDD5A588278AC2"
+			subtitle: "Obtain a Shiny Crystal, Prismalite Gem and Citrine Chunk"
+			tasks: [
+				{
+					id: "6E70101559611710"
+					item: "unusualend:shiny_crystal"
+					type: "item"
+				}
+				{
+					id: "5DD32CA07E0BFD0C"
+					item: "unusualend:prismalite_gem"
+					type: "item"
+				}
+				{
+					id: "09267781671F8C68"
+					item: "unusualend:citrine_chunk"
+					type: "item"
+				}
+			]
+			title: "Hidden Gems"
+			x: -11.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4564BF670D10E0FA"]
+			hide_until_deps_complete: true
+			id: "06975D33E820F6B9"
+			subtitle: "Find some Chorus Fruit"
+			tasks: [{
+				id: "6BBA42C9FCE687EA"
+				item: "minecraft:chorus_fruit"
+				type: "item"
+			}]
+			title: "Confusing Fruit"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4564BF670D10E0FA"]
+			hide_until_deps_complete: true
+			icon: "minecraft:purpur_block"
+			id: "22BC61DC0C61020A"
+			subtitle: "Enter an End City"
+			tasks: [{
+				id: "4FF27C092A04B6A7"
+				structure: "minecraft:end_city"
+				title: "Find an End City"
+				type: "structure"
+			}]
+			title: "The City at The End of The Game"
+			x: -10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["22BC61DC0C61020A"]
+			id: "2751CF14E410A5FD"
+			subtitle: "Find an Elytra"
+			tasks: [{
+				id: "10284BC0C550E0DE"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sky's The Limit"
+			x: -9.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["22BC61DC0C61020A"]
+			id: "7863434F8F9EAD57"
+			subtitle: "Kill a Shulker"
+			tasks: [{
+				entity: "minecraft:shulker"
+				icon: "minecraft:shulker_box"
+				id: "15400EB1352B00FD"
+				title: "Kill a Shulker"
+				type: "kill"
+				value: 1L
+			}]
+			title: "This Block Moves!"
+			x: -11.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4564BF670D10E0FA"]
+			hide_until_deps_complete: true
+			id: "5DAF45D22D8929C9"
+			subtitle: "Find Enderium and mine it out"
+			tasks: [{
+				block: "majruszsdifficulty:enderium_shard_ore"
+				block_type: 0
+				checkItem: false
+				id: "718F13D4A9D266B1"
+				type: "questsadditions:break"
+				value: 1L
+			}]
+			title: "Strange Shards"
+			x: -12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5DAF45D22D8929C9"
+				"26E82AD325890954"
+			]
+			icon_scale: 0.75d
+			id: "6B2AE4F13A56D99C"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Form Enderium - one of the most powerful alloys you can get your hands on"
+			tasks: [{
+				id: "1926019A32F85DBD"
+				item: "majruszsdifficulty:enderium_ingot"
+				type: "item"
+			}]
+			title: "Strange Ingot"
+			x: -13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["06975D33E820F6B9"]
+			description: [""]
+			hide_until_deps_complete: true
+			icon: "endersdelight:pearl_pasta"
+			id: "301E14BDA5580CC4"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Cook some of the more 'delicious' dishes from End's cuisine"
+			tasks: [
+				{
+					id: "362E448B4D9ED9BA"
+					item: "endersdelight:chorus_pie"
+					type: "item"
+				}
+				{
+					id: "5FE3FF65BC924ED7"
+					item: "endersdelight:twisted_cereal"
+					type: "item"
+				}
+				{
+					id: "53878C96D29995E1"
+					item: "endersdelight:pearl_pasta"
+					type: "item"
+				}
+			]
+			title: "Local Food"
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7BEDD5A588278AC2"]
+			icon: "alloy_forgery:ender_forge_casing_forge_controller"
+			icon_scale: 0.75d
+			id: "26E82AD325890954"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Construct an Ender Forge. It's tier 4, so it sure is good"
+			tasks: [
+				{
+					id: "344EEA1737AA9B07"
+					item: "alloy_forgery:ender_forge_casing_forge_controller"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0D0619B0619AEA19"
+					item: { Count: 16, id: "adj:ender_forge_casing" }
+					type: "item"
+				}
+			]
+			title: "The Final Forge"
+			x: -14.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["26E82AD325890954"]
+			id: "6E4C5779C4DA9851"
+			subtitle: "Forge Star Platinum"
+			tasks: [{
+				id: "54324531C9597B5E"
+				item: "mythicmetals:star_platinum"
+				type: "item"
+			}]
+			title: "A Star from Heavens"
+			x: -16.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4564BF670D10E0FA"]
+			hide_until_deps_complete: true
+			icon: "cataclysm:void_eye"
+			id: "6086C058455AE6AD"
+			subtitle: "Attune an Awakened Ender Pearl to locate the Citadel"
+			tasks: [{
+				id: "489468EBCC7FACD6"
+				item: "cataclysm:void_eye"
+				type: "item"
+			}]
+			title: "Journey to The End"
+			x: -11.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6086C058455AE6AD"]
+			icon_scale: 0.75d
+			id: "640E291225CA8A2A"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Find the Ruined Citadel"
+			tasks: [{
+				icon: "cataclysm:obsidian_bricks"
+				id: "05D9D28F25889860"
+				structure: "cataclysm:ruined_citadel"
+				title: "Find the Ruined Citadel"
+				type: "structure"
+			}]
+			title: "Living in Nothingness"
+			x: -14.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6E4C5779C4DA9851"]
+			icon_scale: 0.75d
+			id: "38E1B52E67727660"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Terra Blade"
+			tasks: [{
+				id: "4E1A7F015B2765D5"
+				item: {
+					Count: 1
+					id: "botania:terra_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sword of The True Heroes"
+			x: -16.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6E9823FB2C7C6D19"
+				"7EB2D195600E1D0F"
+			]
+			icon: "mythicmetals:prometheum_ingot"
+			id: "0BB72C64921769F6"
+			subtitle: "Collect and forge some Prometheum"
+			tasks: [
+				{
+					id: "38E9BB16F51FCEF4"
+					item: "mythicmetals:prometheum_ingot"
+					type: "item"
+				}
+				{
+					id: "7A8A287830398606"
+					item: "mythicmetals:raw_prometheum"
+					type: "item"
+				}
+			]
+			title: "Bloomful"
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"6E9823FB2C7C6D19"
+				"7EB2D195600E1D0F"
+			]
+			description: ["&7&lHINT:&r &6Phoenix set&r is oriented more around &coffense&r, while the &5Obsidian set&r is oriented more around &9defense&r. They are more or less interchangeable, so don't worry about losing them!"]
+			icon: {
+				Count: 1
+				id: "aether:obsidian_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 0.75d
+			id: "2EF1045D112DACF5"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Either expose any piece of Phoenix armor to rain or submerge it in water"
+			tasks: [{
+				id: "1FB3018AE0BF9ED6"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "aether:obsidian_helmet"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:obsidian_chestplate"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:obsidian_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:obsidian_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Obsidian armor piece"
+				type: "item"
+			}]
+			title: "Fortify Your Minds!"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["640E291225CA8A2A"]
+			id: "3F2B685C8C008081"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Kill the Ender Guardian and collect the Eye of Desolation"
+			tasks: [{
+				id: "3AB436B42C6A6ADE"
+				item: "kubejs:eye_of_desolation"
+				type: "item"
+			}]
+			title: "I Stared Into The Void"
+			x: -17.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6D854F2600B922BD"]
+			description: [""]
+			icon: "rediscovered:ruby_flute"
+			id: "2F2686D8E0B921C5"
+			subtitle: "Craft or find the gear to ride and tame your own Red Dragon"
+			tasks: [
+				{
+					id: "60A79535F5DE9BBA"
+					item: "rediscovered:ruby_flute"
+					type: "item"
+				}
+				{
+					id: "2EEBE0F7BC109212"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+				{
+					id: "7EF6D990C0B376D4"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+				{
+					id: "0E044AB3BD3FDC2A"
+					item: "rediscovered:dragon_armor"
+					type: "item"
+				}
+			]
+			title: "How to Tame Your Dragon 101"
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2F2686D8E0B921C5"]
+			description: [""]
+			icon: "minecraft:grass_block"
+			id: "70E411F4BD751E0E"
+			subtitle: "Fly under the Skylands into the Overworld on your Red Dragon"
+			tasks: [{
+				advancement: "adj:red_dragon_move_dimensions"
+				criterion: ""
+				id: "235A6EE374CF1BB1"
+				title: "Trust the process and fly your Red Dragon to the Overworld"
+				type: "advancement"
+			}]
+			title: "Trust The Process"
+			x: -3.0d
+			y: 8.0d
+		}
+	]
 	title: "4. The End"
 }

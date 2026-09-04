@@ -37,7 +37,6 @@ const RemovedItems = {
 
 		'tide:depth_meter',
 		'tide:pocket_watch',
-		'tide:lunar_calendar',
 		'tide:climate_gauge',
 		'tide:weather_radio',
 		'tide:enchanted_pocket_watch',
@@ -110,10 +109,6 @@ const RemovedItems = {
 		/twilightforest:.*_trophy/,
 		/twilightforest:.*_skull_candle/,
 		'twilightforest:glass_sword',
-		// 'twilightforest:steeleaf_helmet',
-		// 'twilightforest:steeleaf_chestplate',
-		// 'twilightforest:steeleaf_leggings',
-		// 'twilightforest:steeleaf_boots',
 		'twilightforest:steeleaf_sword',
 		'twilightforest:steeleaf_axe',
 		'twilightforest:steeleaf_pickaxe',
@@ -141,13 +136,6 @@ const RemovedItems = {
 		'twilightdelight:chopped_clover',
 		'twilightforest:zombie_scepter',
 		'twilightforest:gold_minotaur_axe',
-
-		/hearth_and_home:.*_parquet/,
-		/hearth_and_home:.*_trim/,
-		/hearth_and_home:.*_sanded_wood/,
-		/hearth_and_home:polished_calcite/,
-		/hearth_and_home:polished_obsidian/,
-		/hearth_and_home:thatch.*/,
 
 		'phantasm:polished_obsidian',
 
@@ -386,7 +374,8 @@ const RemovedItems = {
 
 		'supplementaries:altimeter',
 		'supplementaries:wrench',
-		// 'supplementaries:flower_box',
+		/supplementaries:item_shelf/,
+		/suppsquared:.*_shelf/,
 
 		'create_power_loader:empty_andesite_chunk_loader',
 		'create_power_loader:empty_brass_chunk_loader',
@@ -397,6 +386,7 @@ const RemovedItems = {
 		'farmersdelight:wheat_dough',
 		'farmersdelight:rope',
 		'farmersdelight:flint_knife',
+		/farmersdelight:.*cabinet/,
 
 		'unusualend:phantom_arrow',
 		'unusualend:purpur_tank',
@@ -711,6 +701,13 @@ const RemovedItems = {
 		'crittersandcompanions:pearl_necklace_2',
 		'crittersandcompanions:pearl_necklace_3',
 		'crittersandcompanions:grappling_hook',
+
+		/redeco:polished_.*_planks/,
+		/redeco:polished_.*_stairs/,
+		/redeco:polished_.*_slab/,
+		/redeco:.*cushion/,
+		/redeco:.*pet_bed/,
+		'redeco:paper_pane'
 	]
 };
 

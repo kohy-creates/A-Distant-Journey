@@ -160,17 +160,17 @@ const EntityModifications = {
 
 				case 'minecraft:stray':
 				case 'minecraft:skeleton': {
-					// if (entity.getLevel().getDimension() == 'minecraft:the_nether') {
-					// 	entity.setItemSlot('mainhand', global.weightedRandom({
-					// 		'mcdw:bow_bonebow': 10,
-					// 		'mcwd:bow_twisting_vine_bow': 4,
-					// 		'mcwd:bow_twisting_weeping_bow': 4,
-					// 	}));
-					// 	entity.setDropChance('mainhand', 0.05);
-					// }
-					// else if (currentStage >= 3) {
-					// 	entity.setItemSlot('mainhand', 'mcdw:bow_power_bow');
-					// }
+					if (entity.getLevel().getDimension() == 'minecraft:the_nether') {
+						entity.setItemSlot('mainhand', global.weightedRandom({
+							'mcdw:bow_bonebow': 10,
+							'mcwd:bow_twisting_vine_bow': 4,
+							'mcwd:bow_twisting_weeping_bow': 4,
+						}));
+						entity.setDropChance('mainhand', 0.05);
+					}
+					else if (currentStage >= 3) {
+						entity.setItemSlot('mainhand', 'mcdw:bow_power_bow');
+					}
 					break;
 				}
 

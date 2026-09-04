@@ -649,35 +649,7 @@
 			y: -1.517394906107583d
 		}
 		{
-			dependencies: ["356CC1FA4E52AD00"]
-			icon: "window_box:alfthorne_sapling"
-			id: "5658376D04F1E8AE"
-			min_required_tasks: 4
-			rewards: [{
-				id: "03AEC1265522EB84"
-				type: "xp"
-				xp: 30
-			}]
-			subtitle: "Open an Alfheim Portal"
-			tasks: [
-				{
-					count: 2L
-					id: "48B1E193E1B7C033"
-					item: { Count: 2, id: "botania:natura_pylon" }
-					type: "item"
-				}
-				{
-					id: "34C5B028F682F1FE"
-					item: "window_box:alfthorne_sapling"
-					type: "item"
-				}
-			]
-			title: "To Another Realm! Kinda..."
-			x: 18.5d
-			y: -1.497221575041408d
-		}
-		{
-			dependencies: ["5658376D04F1E8AE"]
+			dependencies: ["588D5DF2ADABBBA0"]
 			icon: "botania:elven_spreader"
 			id: "2592E5F46B3D4C5E"
 			optional: true
@@ -710,7 +682,7 @@
 			y: 0.0027784249585920406d
 		}
 		{
-			dependencies: ["5658376D04F1E8AE"]
+			dependencies: ["588D5DF2ADABBBA0"]
 			description: ["&7&lHINT: &rJust toss the items into the &aAlfheim Portal&r and let the elves do the rest."]
 			icon: "botania:dragonstone"
 			id: "4B3625869C4E7079"
@@ -2579,7 +2551,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["5658376D04F1E8AE"]
+			dependencies: ["588D5DF2ADABBBA0"]
 			icon: "botanicadds:mana_tesseract"
 			id: "3A705369D933684C"
 			optional: true
@@ -2748,6 +2720,33 @@
 			}]
 			x: -0.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["356CC1FA4E52AD00"]
+			icon: "window_box:alfthorne_sapling"
+			id: "588D5DF2ADABBBA0"
+			rewards: [{
+				id: "24CC11C77916151A"
+				type: "xp"
+				xp: 30
+			}]
+			subtitle: "Open an Alfheim Portal"
+			tasks: [
+				{
+					id: "5055497B9F6D2C17"
+					item: "window_box:alfthorne_sapling"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "15832BFF5AF5A45A"
+					item: "botania:natura_pylon"
+					type: "item"
+				}
+			]
+			title: "To Another Realm! Kinda..."
+			x: 18.5d
+			y: -1.5d
 		}
 	]
 	title: "World of Magic"

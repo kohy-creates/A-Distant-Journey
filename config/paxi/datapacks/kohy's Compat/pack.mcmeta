@@ -23,6 +23,10 @@
 			{
 				"namespace": "^neapolitan$",
 				"path": "^blueprint/modded_biome_slices/.*$"
+			},
+			{
+				"namespace": "^mythicmetals$",
+				"path": "^villager_trades/.*$"
 			}
 		]
 	}

@@ -280,6 +280,18 @@
 		"quark:rope": "supplementaries:rope",
 		"quark:paper_lantern": "redeco:white_paper_lantern",
 
+		"farmersdelight:oak_cabinet": "redeco:oak_cabinet",
+		"farmersdelight:spruce_cabinet": "redeco:spruce_cabinet",
+		"farmersdelight:birch_cabinet": "redeco:birch_cabinet",
+		"farmersdelight:jungle_cabinet": "redeco:jungle_cabinet",
+		"farmersdelight:acacia_cabinet": "redeco:acacia_cabinet",
+		"farmersdelight:dark_oak_cabinet": "redeco:dark_oak_cabinet",
+		"farmersdelight:crimson_cabinet": "redeco:crimson_cabinet",
+		"farmersdelight:warped_cabinet": "redeco:warped_cabinet",
+		"farmersdelight:mangrove_cabinet": "redeco:mangrove_cabinet",
+		"farmersdelight:bamboo_cabinet": "redeco:bamboo_cabinet",
+		"farmersdelight:cherry_cabinet": "redeco:cherry_cabinet",
+
 		"create:oak_window_pane": "minecraft:glass_pane",
 		"create:spruce_window_pane": "minecraft:glass_pane",
 		"create:birch_window_pane": "minecraft:glass_pane",

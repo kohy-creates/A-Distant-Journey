@@ -1,13 +1,847 @@
 {
+	autofocus_id: "20130F300D432015"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "chapter_2"
 	group: "04D058A75BDDEE3C"
+	icon: "aether:aether_grass_block"
 	id: "346115814079ECFA"
+	images: [
+		{
+			dependency: "20130F300D432015"
+			height: 5.0d
+			image: "adj:textures/other/bg_nether_ores_2.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 5.0d
+			image: "adj:textures/other/bg_aether_dirt.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependency: "20130F300D432015"
+			height: 1.75d
+			image: "minecraft:block/beacon_glass"
+			rotation: 45.0d
+			width: 1.75d
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependency: "20130F300D432015"
+			height: 1.75d
+			image: "rediscovered:block/nether_reactor_core"
+			rotation: 45.0d
+			width: 1.75d
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 1.75d
+			image: "aether:block/utility/altar_side"
+			rotation: 0.0d
+			width: 1.75d
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 1.75d
+			image: "aether:block/construction/enchanted_gravitite"
+			rotation: 45.0d
+			width: 1.75d
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 6.0d
+			image: "adj:textures/texts/lore_aether.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 5.5d
+			y: -9.5d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 1.75d
+			image: "ancient_aether:block/valkyrum_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_2.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependency: "574DD3FD26A23CDE"
+			height: 5.0d
+			image: "adj:textures/other/bg_aether_dirt.png"
+			order: -999
+			rotation: 180.0d
+			width: 10.0d
+			x: 3.5d
+			y: -4.5d
+		}
+	]
 	order_index: 2
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["20130F300D432015"]
+			hide_until_deps_complete: true
+			icon: "mythicmetals:palladium_ingot"
+			id: "24B17C04E6963192"
+			subtitle: "Go to the very depths of The Nether in search of Palladium"
+			tasks: [
+				{
+					id: "3D2521CAEF08BC78"
+					item: "mythicmetals:raw_palladium"
+					type: "item"
+				}
+				{
+					id: "04B2256ACE400761"
+					item: "mythicmetals:palladium_ingot"
+					type: "item"
+				}
+			]
+			title: "From the Depths of Hell"
+			x: -4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["20130F300D432015"]
+			description: [
+				"&7&lHINT:&r Building an Aether Portal is easy! Just do the same you'd do for a Nether Portal, just out of Glowstone!"
+				""
+				"                   &6⬛⬛⬛⬛"
+				"                   &6⬛    ⬛"
+				"                   &6⬛    ⬛"
+				"                   &6⬛    ⬛"
+				"                   &6⬛⬛⬛⬛"
+				""
+				"Activate it with a Water Bucket."
+				""
+				"You probably knew all of that already, even if you weren't familiar with the Aether. We were all dissappointed to find out it's not real. It's pretty much a canon event."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:glowstone"
+			id: "574DD3FD26A23CDE"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Venture into The Aether, a hostile paradise"
+			tasks: [{
+				dimension: "aether:the_aether"
+				disable_toast: true
+				icon: "aether:aether_grass_block"
+				id: "74B60555C4F8283C"
+				title: "Enter the Portal"
+				type: "dimension"
+			}]
+			title: "UNFAMILIAR HEAVENS"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B047A7072164813"]
+			description: [""]
+			icon: {
+				Count: 1
+				id: "aether:zanite_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "62D18A72555F22DC"
+			subtitle: "Craft any Zanite Tool"
+			tasks: [{
+				id: "549CF55ABD5B9244"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "aether:zanite_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:zanite_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:zanite_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:zanite_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:zanite_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Zanite Tool"
+				type: "item"
+			}]
+			title: "Isn't It Zanite Pick?"
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6541FB163E3300CE"]
+			description: [""]
+			icon: {
+				Count: 1
+				id: "aether:gravitite_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3AB9D9EC6B0EE0A0"
+			subtitle: "Upgrade your Zanite tools to their Gravitite equivalents"
+			tasks: [{
+				id: "721DC7A8BEA9871F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "aether:gravitite_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:gravitite_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:gravitite_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:gravitite_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "aether:gravitite_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Gravitite Tool"
+				type: "item"
+			}]
+			title: "Heavenforged"
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Bronze Dungeon!"]
+			hide_until_deps_complete: true
+			icon: "aether:bronze_dungeon_key"
+			id: "2BA00BEE5144D82B"
+			subtitle: "Find a Bronze Dungeon"
+			tasks: [
+				{
+					id: "423AFB6DEEF550B7"
+					structure: "aether:bronze_dungeon"
+					title: "Find Bronze Dungeon"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "65456C77B31E33E6"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Bronze Dungeon"
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2BA00BEE5144D82B"]
+			icon: "aether:carved_stone"
+			id: "353921E41B80F09D"
+			subtitle: "Kill the Slider, an animated block of bricks"
+			tasks: [{
+				entity: "aether:slider"
+				icon: "aether:bronze_dungeon_key"
+				id: "0174AFD13E6D9478"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Sliding Away"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Gold Dungeon!"]
+			hide_until_deps_complete: true
+			icon: "aether:gold_dungeon_key"
+			id: "501980860925DC72"
+			subtitle: "Find a Gold Dungeon"
+			tasks: [
+				{
+					id: "0F8299E5D856DAB0"
+					structure: "aether:gold_dungeon"
+					title: "Find Gold Dungeon"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "25E3AB6CC49267B2"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Gold Dungeon"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Silver Dungeon!"]
+			hide_until_deps_complete: true
+			icon: "aether:silver_dungeon_key"
+			id: "554D78E50EBB7EF8"
+			subtitle: "Find a Silver Dungeon"
+			tasks: [
+				{
+					id: "0E6651260651D9F0"
+					structure: "aether:silver_dungeon"
+					title: "Find Silver Dungeon"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "22AAF115DE5EFE45"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Silver Dungeon"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Platinum Dungeon!"]
+			hide_until_deps_complete: true
+			icon: "lost_aether_content:platinum_key"
+			id: "170CD4B41CA6F9C1"
+			subtitle: "Find a Platinum Dungeon"
+			tasks: [
+				{
+					id: "4BBC4E6D6F7BB2A5"
+					structure: "lost_aether_content:platinum_dungeon"
+					title: "Find a Platinum Dungeon"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "608E9EEB71F2DDE9"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Platinum Dungeon"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["554D78E50EBB7EF8"]
+			icon: "aether:victory_medal"
+			id: "0CC3E441C652E02E"
+			subtitle: "Kill the Valkyrie Queen, the leader of the Aether's fiercest fighters"
+			tasks: [{
+				entity: "aether:valkyrie_queen"
+				icon: "aether:silver_dungeon_key"
+				id: "6112AEB451DE555B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "HEVEN... FALLS!"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["501980860925DC72"]
+			icon: "aether:sun_altar"
+			id: "464BE56223B9DADC"
+			subtitle: "Kill the Sun Spirit, the one that divides the Day from the Night"
+			tasks: [{
+				entity: "aether:sun_spirit"
+				icon: "aether:gold_dungeon_key"
+				id: "7C385F94FF9BBA4D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Sun Goes Down"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["170CD4B41CA6F9C1"]
+			icon: "lost_aether_content:gale_stone"
+			id: "72FA802480074182"
+			subtitle: "Kill the Aerwhale King. He's... the King of Aerwhales... I think that one doesn't need much explaining"
+			tasks: [{
+				entity: "lost_aether_content:aerwhale_king"
+				icon: "lost_aether_content:platinum_key"
+				id: "5F990F548BDF2E5C"
+				title: "Kill an Aerwhale King"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Monarch of The Clouds"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["72FA802480074182"]
+			description: [
+				"&7&lHINT:&r &nEverything goes downhill from this point onwards&r."
+				""
+				"There is a &c&lhuge difficulty spike&r entering Chapter 3, so make sure you are prepared for it."
+			]
+			hide_until_deps_complete: false
+			icon: "kubejs:eye_of_angels"
+			id: "545C995B87BA0947"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Collect the Eye of Angels"
+			tasks: [{
+				id: "27DEC682B50D154E"
+				item: "kubejs:eye_of_angels"
+				type: "item"
+			}]
+			title: "Kneel Before The Angels"
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3B047A7072164813"]
+			id: "6541FB163E3300CE"
+			subtitle: "Construct an Aether Altar"
+			tasks: [{
+				id: "0BF0A396571796CD"
+				item: "aether:altar"
+				type: "item"
+			}]
+			title: "Not Quite Enchanting"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			icon: {
+				Count: 1
+				id: "aether_redux:infused_veridium_pickaxe"
+				tag: {
+					Damage: 0
+					infusion_level: 64b
+				}
+			}
+			id: "6F34F5362D1545A9"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Infuse a Veridium Tool by right clicking it with an Ambrosium Shard"
+			tasks: [
+				{
+					id: "43E32F96A5648CB3"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_sword"
+									tag: {
+										Damage: 0
+										infusion_level: 64b
+									}
+								}
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_shovel"
+									tag: {
+										Damage: 0
+										infusion_level: 64b
+									}
+								}
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_pickaxe"
+									tag: {
+										Damage: 0
+										infusion_level: 64b
+									}
+								}
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_axe"
+									tag: {
+										Damage: 0
+										infusion_level: 64b
+									}
+								}
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_hoe"
+									tag: {
+										Damage: 0
+										infusion_level: 64b
+									}
+								}
+								{
+									Count: 1b
+									id: "aether_redux:infused_veridium_dart_shooter"
+									tag: {
+										infusion_level: 64b
+									}
+								}
+							]
+						}
+					}
+					title: "Any Veridium Tool"
+					type: "item"
+				}
+				{
+					id: "17EE2F2CDE6E0B66"
+					item: "aether:ambrosium_shard"
+					type: "item"
+				}
+			]
+			title: "Ambrosial Infusion"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			id: "3B047A7072164813"
+			subtitle: "Get a Zanite Gemstone"
+			tasks: [{
+				id: "56D7E60990E88E8E"
+				item: "aether:zanite_gemstone"
+				type: "item"
+			}]
+			title: "Angelic Hardware"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6541FB163E3300CE"]
+			id: "6AA0B069D1C702F1"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Obtain Icestone"
+			tasks: [{
+				id: "0228CB9610FA6D9A"
+				item: "aether:icestone"
+				type: "item"
+			}]
+			title: "Cold as Ice"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6541FB163E3300CE"]
+			icon: {
+				Count: 1
+				id: "aether:gravitite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 0.75d
+			id: "7AC81FC627CCB30B"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a full set of Gravitite armor"
+			tasks: [
+				{
+					id: "5EF46822A013DB06"
+					item: {
+						Count: 1
+						id: "aether:gravitite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72846CB4AECBD267"
+					item: {
+						Count: 1
+						id: "aether:gravitite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D297D8EA62D14CF"
+					item: {
+						Count: 1
+						id: "aether:gravitite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AE46D3E8CDF66AC"
+					item: {
+						Count: 1
+						id: "aether:gravitite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Defying Gravity"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["20130F300D432015"]
+			hide_until_deps_complete: true
+			icon_scale: 0.75d
+			id: "1ADCB4CAD715CCB6"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Beacon"
+			tasks: [
+				{
+					id: "48DD3B2DD416ED50"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+				{
+					block: "minecraft:beacon"
+					block_type: 0
+					id: "6CAAECC09DCA73ED"
+					replace: false
+					replaced: "minecraft:air"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "Beaconator"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["20130F300D432015"]
+			hide_until_deps_complete: true
+			icon_scale: 0.75d
+			id: "3CF2A61BB7C8D79B"
+			optional: true
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Nether Reactor Core"
+			tasks: [{
+				id: "1E11D05ACEC1F2D2"
+				item: "rediscovered:nether_reactor_core"
+				type: "item"
+			}]
+			title: "Pocket Biome"
+			x: 1.011904761904745d
+			y: -4.976190476190496d
+		}
+		{
+			dependencies: ["353921E41B80F09D"]
+			id: "4309E836BAF22148"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Find a Hammer of Kingbdogz in a Bronze Dungeon"
+			tasks: [{
+				id: "21B9627AB5F634BD"
+				item: {
+					Count: 1
+					id: "aether:hammer_of_kingbdogz"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Hammer of Gods"
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["574DD3FD26A23CDE"]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Platinum Dungeon!"]
+			hide_until_deps_complete: true
+			icon: "ancient_aether:laboratory_dungeon_key"
+			id: "70CB0A3DAA970B81"
+			subtitle: "Find a Sentry Laboratory"
+			tasks: [
+				{
+					id: "617182CC6E62503D"
+					structure: "ancient_aether:sentry_laboratory"
+					title: "Find a Sentry Laboratory"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "7152390446631410"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Failed Experiments"
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["70CB0A3DAA970B81"]
+			icon: "aether:aechor_petal"
+			id: "2F46F962D867A81D"
+			subtitle: "Kill the Mutated Aechor Plant"
+			tasks: [{
+				entity: "ancient_aether:mutated_aechor_plant"
+				icon: "ancient_aether:laboratory_dungeon_key"
+				id: "5822B45E49FA6F39"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Sun Goes Down"
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0CC3E441C652E02E"]
+			icon_scale: 0.75d
+			id: "47D482E31D5852AE"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Forge a Valkyrum Ingot"
+			tasks: [{
+				id: "2DD0AAB04722992E"
+				item: "ancient_aether:valkyrum"
+				type: "item"
+			}]
+			title: "Valkyrien Skies"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A24E62380261206"]
+			disable_toast: true
+			icon: "kubejs:eye_of_cinders"
+			id: "20130F300D432015"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Slay the Wither and collect the Eye of Cinders"
+			tasks: [{
+				id: "6087089B4CF44C39"
+				item: "kubejs:eye_of_cinders"
+				type: "item"
+			}]
+			title: "The Beginning"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["353921E41B80F09D"]
+			id: "4E98AEFF38CB858E"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Find an Aerbound Cape in a Bronze Dungeon"
+			tasks: [{
+				id: "1F09BF8DF36CFB08"
+				item: "aether_redux:airbound_cape"
+				type: "item"
+			}]
+			title: "Take THAT, Physics!"
+			x: -8.0d
+			y: -1.5d
+		}
+	]
 	title: "2. The Aether"
 }

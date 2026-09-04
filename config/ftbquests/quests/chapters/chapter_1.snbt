@@ -1,13 +1,548 @@
 {
+	autofocus_id: "379A22A2185CFC8E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "chapter_1"
 	group: "04D058A75BDDEE3C"
+	icon: "minecraft:netherrack"
 	id: "10A794B38767C30C"
+	images: [
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 5.0d
+			image: "adj:textures/other/bg_nether_blackstone.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 5.15d
+			y: 0.9500000000000002d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 5.0d
+			image: "adj:textures/other/bg_stone_ores_2.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 2.65d
+			y: -2.55d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_1.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 1.75d
+			image: "born_in_chaos_v1:block/bloktiemnoistali"
+			rotation: 45.0d
+			width: 1.75d
+			x: 0.1499999999999999d
+			y: -0.04999999999999982d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 6.0d
+			image: "adj:textures/texts/lore_nether.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			dependency: "379A22A2185CFC8E"
+			height: 1.75d
+			image: "twilightforest:block/canopy_log_top"
+			rotation: 45.0d
+			width: 1.75d
+			x: -4.0d
+			y: 2.5d
+		}
+	]
 	order_index: 1
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["379A22A2185CFC8E"]
+			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Fortress!"]
+			hide_until_deps_complete: true
+			icon: "minecraft:nether_bricks"
+			id: "0B0DF609ABC8773D"
+			subtitle: "Find a Nether Fortress"
+			tasks: [
+				{
+					id: "6D7214F425504287"
+					structure: "minecraft:fortress"
+					title: "Find a Nether Fortress"
+					type: "structure"
+				}
+				{
+					disable_toast: true
+					id: "1F363B1A67719149"
+					item: {
+						Count: 1
+						id: "ars_additions:wayfinder"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "A Terrible Fortress"
+			x: 1.15d
+			y: 3.45d
+		}
+		{
+			dependencies: ["0B0DF609ABC8773D"]
+			id: "336C2A75C5BFF1B8"
+			subtitle: "Relieve a Blaze of its rods"
+			tasks: [{
+				id: "1A5E80B3F7215BA0"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			title: "Into Fire"
+			x: 3.15d
+			y: 2.45d
+		}
+		{
+			dependencies: ["336C2A75C5BFF1B8"]
+			id: "112388B5EDB9C9D2"
+			subtitle: "Craft a Brewing Stand"
+			tasks: [{
+				id: "5797B7A0679EF5E3"
+				item: "minecraft:brewing_stand"
+				type: "item"
+			}]
+			title: "Local Brewery"
+			x: 4.15d
+			y: 0.9500000000000002d
+		}
+		{
+			dependencies: ["0B0DF609ABC8773D"]
+			icon: "kubejs:skull_fragment"
+			id: "19E87E63C5C295AE"
+			subtitle: "Obtain a Wither Skeleton Skull"
+			tasks: [
+				{
+					id: "7A32E319C9C01133"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "664A5F004FFCAE89"
+					item: "kubejs:skull_fragment"
+					type: "item"
+				}
+			]
+			title: "Spooky Scary Skeletons"
+			x: 3.15d
+			y: 3.95d
+		}
+		{
+			dependencies: ["379A22A2185CFC8E"]
+			hide_until_deps_complete: true
+			id: "236739201289D4DD"
+			subtitle: "Enter a Bastion"
+			tasks: [{
+				icon: "minecraft:cracked_polished_blackstone_bricks"
+				id: "4C2D1DB3FAA61ACD"
+				structure: "#minecraft:bastion_remnant"
+				title: "Find a Bastion"
+				type: "structure"
+			}]
+			title: "Those Were The Days"
+			x: 1.15d
+			y: 0.9500000000000002d
+		}
+		{
+			dependencies: ["379A22A2185CFC8E"]
+			hide_until_deps_complete: true
+			icon: "mythicmetals:mythril_ingot"
+			id: "5AEA2A64181AED93"
+			subtitle: "Mine and smelt the new ores that appeared in your world"
+			tasks: [
+				{
+					id: "3EF7C81F7F471CAC"
+					item: "mythicmetals:orichalcum_ingot"
+					type: "item"
+				}
+				{
+					id: "7F2BC657FF055127"
+					item: "mythicmetals:raw_orichalcum"
+					type: "item"
+				}
+				{
+					id: "07269A78DD7FAF10"
+					item: "mythicmetals:mythril_ingot"
+					type: "item"
+				}
+				{
+					id: "29F50B1993CEDB0B"
+					item: "mythicmetals:raw_mythril"
+					type: "item"
+				}
+			]
+			title: "From The Depths"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["379A22A2185CFC8E"]
+			hide_until_deps_complete: true
+			icon: "alloy_forgery:nether_bricks_forge_controller"
+			id: "49D421ADF1794A16"
+			subtitle: "Craft a Hellforge"
+			tasks: [{
+				id: "6D577D3521C91C5F"
+				item: "alloy_forgery:nether_bricks_forge_controller"
+				type: "item"
+			}]
+			title: "Hell's Alloy Kitchen"
+			x: 0.1499999999999999d
+			y: 1.9500000000000002d
+		}
+		{
+			dependencies: ["336C2A75C5BFF1B8"]
+			id: "6B4A4956BDF1E1AB"
+			subtitle: "Awaken the magic inside an Ender Pearl"
+			tasks: [{
+				id: "14A7569AF8FE2DB2"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			title: "Awakened"
+			x: 5.15d
+			y: 2.45d
+		}
+		{
+			dependencies: ["6B4A4956BDF1E1AB"]
+			icon: "cataclysm:desert_eye"
+			id: "26A9109005EE03BF"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Attune an Awakened Ender Pearl towards any target"
+			tasks: [{
+				id: "6B372FC31E51D4D5"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:attuned_pearls"
+					}
+				}
+				title: "Any Attuned Pearl"
+				type: "item"
+			}]
+			title: "Wayfinder"
+			x: 6.65d
+			y: 2.45d
+		}
+		{
+			dependencies: ["379A22A2185CFC8E"]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:nightmare_stalker_skull"
+			icon_scale: 0.75d
+			id: "58D9C1D755CC3E6E"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Kill a Nightmare Stalker"
+			tasks: [{
+				entity: "born_in_chaos_v1:nightmare_stalker"
+				icon: "born_in_chaos_v1:nightmare_stalker_skull"
+				id: "09CB8AFD413AC207"
+				title: "Kill a Nightmare Stalker"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Worsening Nigthmares"
+			x: 0.1499999999999999d
+			y: -0.04999999999999982d
+		}
+		{
+			dependencies: ["236739201289D4DD"]
+			id: "3C6D5381BA4C55A1"
+			subtitle: "Find a Pigstep Music Disc"
+			tasks: [{
+				id: "2482E7768D577E52"
+				item: "minecraft:music_disc_pigstep"
+				type: "item"
+			}]
+			title: "Pigs Step!"
+			x: 2.65d
+			y: 0.4500000000000002d
+		}
+		{
+			dependencies: ["236739201289D4DD"]
+			description: ["&7&lHINT: &rYou can barter with Piglins with &6Midas Gold Ingots&r ;)"]
+			id: "765297F2529419A9"
+			subtitle: "Barter for an Enchanted Midas Gold Block"
+			tasks: [{
+				id: "5F17A045AF379A1B"
+				item: "mythicmetals:enchanted_midas_gold_block"
+				type: "item"
+			}]
+			title: "Midas' Touch"
+			x: 2.15d
+			y: 1.4500000000000002d
+		}
+		{
+			dependencies: ["112388B5EDB9C9D2"]
+			id: "09398D1D38C7ED0D"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Brew any Antidote"
+			tasks: [{
+				id: "3D6F7CB4E2079D48"
+				item: {
+					Count: 1
+					id: "sortilege:antidote"
+					tag: {
+						Potion: "alexsmobs:lava_vision"
+					}
+				}
+				match_nbt: false
+				title: "Any Antidote"
+				type: "item"
+			}]
+			title: "Be Gone!"
+			x: 4.15d
+			y: -0.5499999999999998d
+		}
+		{
+			dependencies: ["379A22A2185CFC8E"]
+			icon: "minecraft:nether_wart_block"
+			id: "612A31333B1F6C1D"
+			subtitle: "Discover all Nether biomes"
+			tasks: [
+				{
+					biome: "minecraft:soul_sand_valley"
+					disable_toast: true
+					icon: "minecraft:soul_sand"
+					id: "654D8EF28B52235F"
+					title: "Vist Soul Sand Valley"
+					type: "biome"
+				}
+				{
+					biome: "minecraft:nether_wastes"
+					disable_toast: true
+					icon: "minecraft:netherrack"
+					id: "51DDE19C45F12038"
+					title: "Visit Nether Wastes"
+					type: "biome"
+				}
+				{
+					biome: "minecraft:basalt_deltas"
+					disable_toast: true
+					icon: "minecraft:basalt"
+					id: "6FB05DCA59CFAACA"
+					title: "Visit Basalt Deltas"
+					type: "biome"
+				}
+				{
+					biome: "minecraft:crimson_forest"
+					disable_toast: true
+					icon: "minecraft:nether_wart_block"
+					id: "27497A7891F56969"
+					title: "Visit Crimson Forest"
+					type: "biome"
+				}
+				{
+					biome: "minecraft:warped_forest"
+					disable_toast: true
+					icon: "minecraft:warped_wart_block"
+					id: "4970C62924BD9C2B"
+					title: "Visit Warped Forest"
+					type: "biome"
+				}
+				{
+					biome: "netherexp:black_ice_glaciers"
+					disable_toast: true
+					icon: "netherexp:black_ice"
+					id: "41131B69BF79EAF0"
+					title: "Visit Black Ice Glaciers"
+					type: "biome"
+				}
+			]
+			title: "Hot Tourist Destinations"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5AEA2A64181AED93"]
+			id: "5E0A9577C42882A7"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Upgrade your Grappling Hook"
+			tasks: [{
+				id: "08429F562E84B160"
+				item: "kubejs:orichalcum_hook"
+				type: "item"
+			}]
+			title: "Hooked! Again..."
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["612A31333B1F6C1D"]
+			dependency_requirement: "one_started"
+			icon: "netherexp:nether_pizza"
+			id: "3A6A3CAC79DFDDCE"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Bake and eat the most hellish Pizza"
+			tasks: [
+				{
+					disable_toast: true
+					id: "1B4CC6C12B8D989A"
+					item: "netherexp:nether_pizza"
+					type: "item"
+				}
+				{
+					id: "69C9675BE33912BD"
+					item: "netherexp:nether_pizza_slice"
+					type: "item"
+				}
+			]
+			title: "Pizza Hunt"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["612A31333B1F6C1D"]
+			dependency_requirement: "one_started"
+			description: ["&7&lHINT:&r You can equip it with a &6Harness&r of your choice to turn it into a floating mount!"]
+			icon: "dried_ghast:dried_ghast"
+			id: "0562284D4662E981"
+			subtitle: "Rescue a Dry Ghast and place it in any bed of Water"
+			tasks: [
+				{
+					id: "30E6142711743E32"
+					item: "dried_ghast:dried_ghast"
+					type: "item"
+				}
+				{
+					block: "dried_ghast:dried_ghast"
+					block_type: 0
+					icon: "minecraft:water_bucket"
+					id: "6D318A760E76974D"
+					replace: false
+					replaced: "minecraft:water"
+					title: "Place the Dried Ghast in Water"
+					type: "questsadditions:place"
+					value: 1L
+				}
+			]
+			title: "To The Skies!"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["19E87E63C5C295AE"]
+			icon: "netherexp:ecto_soul_sand"
+			id: "5A24E62380261206"
+			subtitle: "Summon a Wither"
+			tasks: [{
+				icon: "minecraft:wither_skeleton_skull"
+				id: "3A629687CBEED2E7"
+				observe_type: 5
+				timer: 0L
+				title: "Summon a Wither"
+				to_observe: "minecraft:wither"
+				type: "observation"
+			}]
+			title: "Withering Heights"
+			x: 4.15d
+			y: 5.45d
+		}
+		{
+			dependencies: [
+				"5C3628B6D376AB8F"
+				"522528FDCD548F12"
+			]
+			dependency_requirement: "one_completed"
+			description: [""]
+			disable_toast: true
+			icon: "minecraft:netherrack"
+			id: "379A22A2185CFC8E"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "<i>Bring summer clothes</i>"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "1B286A4402E3E143"
+				type: "dimension"
+			}]
+			title: "We Need to Go Deeper"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["379A22A2185CFC8E"]
+			description: [
+				"&7&lHINT:&r Portal Frame:"
+				""
+				"{image:adj:textures/other/twilight_portal.png width:100 height:100 align:center}"
+				""
+				"2x2 (or larger) square of &eLumisene&r (<b>1 Bucket is enough!!</b>), surrounded with any kind of &aFlowers&r."
+				""
+				"You can activate the portal by tossing in a singular &dDragonstone&r."
+			]
+			hide_until_deps_complete: true
+			icon: "twilightforest:hollow_oak_sapling"
+			icon_scale: 0.75d
+			id: "55D235AFB0D505D8"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Enter the Twilight Forest"
+			tasks: [
+				{
+					dimension: "twilightforest:twilight_forest"
+					disable_toast: true
+					icon: "twilightforest:hollow_oak_sapling"
+					id: "143A064307F40469"
+					title: "Enter the Twilight Forest"
+					type: "dimension"
+				}
+				{
+					disable_toast: true
+					id: "2D25C5E49F69FD7C"
+					item: "botania:dragonstone"
+					type: "item"
+				}
+				{
+					id: "2A53E9D377CB220F"
+					item: "supplementaries:lumisene_bucket"
+					type: "item"
+				}
+			]
+			title: "Story of Eastern Wonderland"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5A24E62380261206"]
+			icon: "kubejs:eye_of_cinders"
+			id: "44BE3D4079FF34DF"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Slay the Wither and collect the Eye of Cinders"
+			tasks: [{
+				id: "6946C858081B66FC"
+				item: "kubejs:eye_of_cinders"
+				type: "item"
+			}]
+			title: "The Beginning"
+			x: 4.5d
+			y: 7.5d
+		}
+	]
 	title: "1. The Nether"
 }

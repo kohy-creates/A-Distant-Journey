@@ -1,13 +1,1150 @@
 {
+	autofocus_id: "23FAB8177B6ED9C6"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "intro_2"
 	group: "04D058A75BDDEE3C"
+	icon: "minecraft:grass_block"
 	id: "58A9D42A7C96B2D3"
+	images: [
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_grass.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_grass_dirt.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_stone_ores.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/crafting_table_top"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			height: 1.75d
+			image: "minecraft:block/lava_still"
+			rotation: 0.0d
+			width: 1.75d
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			height: 1.75d
+			image: "enchantinginfuser:block/enchanting_infuser_top_amethyst"
+			rotation: 0.0d
+			width: 1.75d
+			x: 8.690476190476183d
+			y: 6.5d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/texts/chapter_0.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -3.9166666666666146d
+			y: -2.190476190476197d
+		}
+		{
+			height: 6.0d
+			image: "adj:textures/texts/quote.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			height: 1.75d
+			image: "toms_storage:block/cable_frame"
+			rotation: 45.0d
+			width: 1.75d
+			x: 5.80952380952381d
+			y: -1.642857142857153d
+		}
+		{
+			height: 1.75d
+			image: "phantasm:block/crystal_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 7.0d
+			y: 7.714285714285701d
+		}
+		{
+			dependency: "37D84A7023231586"
+			height: 1.0d
+			image: "heart_crystals:block/heart_crystal"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.479591836734684d
+			y: -2.5867346938775526d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_nether_ores.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: 10.5d
+			y: 3.5d
+		}
+	]
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["1F6BAC344E407291"]
+			description: [
+				"&lQuality of life change&r: items stay in Crafting Tables."
+				""
+				"I thought it'd be worth mentioning it here ^^"
+			]
+			icon: "minecraft:crafting_table"
+			id: "026E22A534C341CC"
+			subtitle: "Craft a Crafting Table"
+			tasks: [{
+				consume_items: false
+				id: "2112580059ABD30A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:crafting_tables"
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "Any Crafting Table"
+				type: "item"
+			}]
+			title: "Benchmarking"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23FAB8177B6ED9C6"]
+			icon: "minecraft:oak_log"
+			id: "1F6BAC344E407291"
+			subtitle: "Punch a tree until it breaks"
+			tasks: [{
+				consume_items: false
+				id: "03B4EA4A778BC676"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "Any Log"
+				type: "item"
+			}]
+			title: "Getting Wood"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["026E22A534C341CC"]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5DFE46287A0322BD"
+			subtitle: "Use Planks and Sticks to make a Wooden Pickaxe"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "1D918339C35280F1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "c:pickaxes"
+					}
+				}
+				title: "Any Pickaxe"
+				type: "item"
+			}]
+			title: "Time to Mine!"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DFE46287A0322BD"]
+			id: "29721E49C8325EBE"
+			subtitle: "Construct a better pickaxe"
+			tasks: [{
+				id: "0443D99042D3B0C5"
+				item: {
+					Count: 1
+					id: "mythicmetals:copper_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Getting an Upgrade"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5DFE46287A0322BD"]
+			icon: "minecraft:furnace"
+			id: "610F4BE5F7B24952"
+			subtitle: "Construct a Furnace"
+			tasks: [{
+				id: "6569ED4000ED7847"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "adj:basic_furnaces"
+					}
+				}
+				title: "Any Furnace"
+				type: "item"
+			}]
+			title: "Hot Topic"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4C1D62C4B13A0CE0"]
+			id: "31AA8F1C7BAE7AC3"
+			subtitle: "Craft an Iron Pickaxe"
+			tasks: [{
+				id: "63FB152ABAC6B10C"
+				item: {
+					Count: 1
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Isn't It Iron Pick?"
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4C1D62C4B13A0CE0"]
+			icon: "minecraft:lava_bucket"
+			id: "5C8C8742F4C523FA"
+			subtitle: "Fill a Bucket with lava"
+			tasks: [
+				{
+					id: "42AA94A44C484113"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					id: "24CFBC4136EF1697"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+			]
+			title: "Hot Stuff"
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31AA8F1C7BAE7AC3"]
+			id: "2EBA35960CB17035"
+			subtitle: "Aquire Diamonds"
+			tasks: [{
+				id: "78A1A0FF04D20514"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "DIAMONDS!"
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5C8C8742F4C523FA"
+				"43D3C4FD06261327"
+			]
+			dependency_requirement: "one_completed"
+			id: "5C3628B6D376AB8F"
+			subtitle: "Obtain a block of Obsidian"
+			tasks: [{
+				id: "287AE10F0CB7D310"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			title: "Ice Bucket Challenge"
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"2EBA35960CB17035"
+				"538833C00E37489D"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "43D3C4FD06261327"
+			subtitle: "Craft a Diamond Pickaxe"
+			tasks: [
+				{
+					id: "1933F83A2E1834DC"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6B1BF1B7D2E0BBA5"
+					item: {
+						Count: 1
+						id: "additionaladditions:rose_gold_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D7C7B34FBD230E7"
+					item: "additionaladditions:rose_gold_upgrade"
+					type: "item"
+				}
+				{
+					id: "4BCDFD6FA7232814"
+					item: "kubejs:diamond_upgrade"
+					type: "item"
+				}
+			]
+			title: "Crystal Crusher"
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5C3628B6D376AB8F"
+				"5C22BA84223D3925"
+			]
+			description: [
+				"Before you continue, I'll go over the basics of the enchanting system in &6&lADJ&r."
+				""
+				"&nMost items have an enchantment cap of 3&r. It means that, well, an item &lcan only support 3 enchantments&r at the same time. &eGolden equipment&r can have 1 more enchantment because of its high enchantability"
+				""
+				"(on a side note, &eGold items&r have been &obuffed in durability&r)"
+				""
+				"&oEvery&r enchantment occupies &9one slot&r (with a minor exception which I'll explain later)."
+				""
+				"{@pagebreak}"
+				"The new &e&lEnchanting Table&r, unlike its vanilla counterpart, allows you to choose whatever enchantments you want. Neat!"
+				""
+				""
+				"{@pagebreak}"
+				"Now about the exception to the &c1 enchant&r = &91 slot rule&r: &l&4Curses&r add slots rather than occupy them! "
+				""
+				"If you think you can handle the &4Curses&r' negative effects, then you can put them on your items to increase their enchantment cap! "
+				""
+				"&oThough there is also a safer way to do it without any drawbacks which you'll discover very soon.&r"
+			]
+			icon: "enchantinginfuser:enchanting_infuser"
+			id: "22391120726D6ACC"
+			min_required_tasks: 1
+			subtitle: "Craft an Enchanting Table"
+			tasks: [{
+				id: "769864387A7FC8AF"
+				item: "enchantinginfuser:enchanting_infuser"
+				type: "item"
+			}]
+			title: "Enchanter"
+			x: 8.690476190476183d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"610F4BE5F7B24952"
+				"5C8C8742F4C523FA"
+			]
+			description: [
+				"The primary use of &7&lAlloy Forges&r is to create &calloys&r from &cdifferent metals&r. Self-explanatory."
+				""
+				"Their secondary use is simple - being &omore efficient than Furnaces&r, yielding &omore metals from smelted materials&r!"
+				""
+				"&7&lAlloy Forges&r can be fueled by many different things, but &cLava&r is the most efficient."
+				""
+				"Looking to automate the process? &9Create&r mod got you covered!"
+			]
+			icon: "alloy_forgery:cracked_stone_bricks_forge_controller"
+			id: "6D19FADBF72AC531"
+			subtitle: "Craft a Tier 1 Forge Controller and build an Alloy Forge"
+			tasks: [
+				{
+					id: "608D0B0FFE3FE433"
+					item: "alloy_forgery:cracked_stone_bricks_forge_controller"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7E95D19382782477"
+					item: { Count: 16, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+			]
+			title: "Minecraft Forge"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["026E22A534C341CC"]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3C48F0B4F29CF0A8"
+			subtitle: "Use Planks and Sticks to make a Wooden Hoe"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:wooden_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4512308836390ABD"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "c:hoes"
+					}
+				}
+				title: "Any Hoe"
+				type: "item"
+			}]
+			title: "Time to Farm!"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["026E22A534C341CC"]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7D5AA020D867BC37"
+			subtitle: "Use Planks and Sticks to make a Wooden Sword"
+			tasks: [{
+				id: "72BFBFF806AF3EB7"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "c:swords"
+					}
+				}
+				title: "Any Sword"
+				type: "item"
+			}]
+			title: "Time to Strike!"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["026E22A534C341CC"]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "24C394F8AF478CB5"
+			subtitle: "Use Planks and Sticks to make a Wooden Axe"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:wooden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "1B3A167E58183FC3"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "c:axes"
+					}
+				}
+				title: "Any Axe"
+				type: "item"
+			}]
+			title: "Time to Chop!"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["026E22A534C341CC"]
+			icon: {
+				Count: 1
+				id: "minecraft:golden_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "779E264F220CF3AF"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Construct one type of each tool"
+			tasks: [
+				{
+					disable_toast: true
+					icon: {
+						Count: 1
+						id: "minecraft:iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "5CF2B11FF44F5DAB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:hoes"
+						}
+					}
+					title: "Any Hoe"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: {
+						Count: 1
+						id: "additionaladditions:rose_gold_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "4C4C16E6D40026A4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:pickaxes"
+						}
+					}
+					title: "Any Pickaxe"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: {
+						Count: 1
+						id: "minecraft:golden_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "074AA2651A41CE8E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:axes"
+						}
+					}
+					title: "Any Axe"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: {
+						Count: 1
+						id: "mythicmetals:copper_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "4A76E7381917E162"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:shovels"
+						}
+					}
+					title: "Any Shovel"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: {
+						Count: 1
+						id: "minecraft:fishing_rod"
+						tag: {
+							Damage: 0
+							modifier: {
+								bobber: { }
+								hook: { }
+								line: { }
+							}
+						}
+					}
+					id: "3D23FC209592DBA1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:tools/fishing_rod"
+						}
+					}
+					title: "Any Fishing Rod"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					icon: {
+						Count: 1
+						id: "minecraft:diamond_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "66D58D76A5A04C1D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:swords"
+						}
+					}
+					title: "Any Sword"
+					type: "item"
+				}
+			]
+			title: "MOAR Tools"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4C1D62C4B13A0CE0"]
+			id: "522528FDCD548F12"
+			subtitle: "Craft a Flint and Steel"
+			tasks: [{
+				id: "2C44B417BF2369BF"
+				item: {
+					Count: 1
+					id: "minecraft:flint_and_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "FLINT AND STEEL!"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"026E22A534C341CC"
+				"1F6BAC344E407291"
+			]
+			description: [
+				"&6Campfires&r have a new effect - every &afriendly mob&r around it will get a new effect, &eCozy Campfire&r, which will slowly &cregenerate&r lost life."
+				""
+				"Natural regeneration is way slower in ADJ than in vanilla Minecraft. Investing in alternate sources is vital if you want to stay topped off!"
+				""
+				"Unrelated, but you can right click any campfire to toggle between its lit and unlit state. No need for Shovels, Water or Flint and Steel."
+			]
+			id: "282EF85EE78976F5"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Place down a Campfire"
+			tasks: [{
+				block: "minecraft:campfire"
+				block_type: 0
+				id: "2994EA3A824D65D2"
+				replace: false
+				replaced: "minecraft:air"
+				title: "Place down a Campfire"
+				type: "questsadditions:place"
+				value: 1L
+			}]
+			title: "Let's Go Camping!"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6D19FADBF72AC531"]
+			id: "538833C00E37489D"
+			subtitle: "Craft Rose Gold Alloy in an Alloy Forge"
+			tasks: [{
+				id: "669CD2A8178F4F1C"
+				item: "additionaladditions:rose_gold_alloy"
+				type: "item"
+			}]
+			title: "Gold 'N Roses"
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["22391120726D6ACC"]
+			icon: "minecraft:bookshelf"
+			id: "56CC6B18F6C297AC"
+			subtitle: "Build some Bookshelves around your Infuser to increase its power"
+			tasks: [{
+				id: "71DCC2E013993464"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "c:bookshelves"
+					}
+				}
+				title: "Any Bookshelf"
+				type: "item"
+			}]
+			title: "Librarian"
+			x: 9.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["22391120726D6ACC"]
+			description: [
+				"The aforementioned safe way of increasing an item's maximum amount of enchantments!"
+				""
+				"Combine this with &lany&r item in a &cSmithing Table&r using &9Lapis Lazuli&r as a template. The result will be your item, but with 1 more enchantment slot."
+				""
+				"&eLimitite &rcan be used up to &n3 times on a single item&r (&66&r total slots)."
+				""
+				""
+				"{@pagebreak}"
+				"Having troubles understanding how to craft it? Look into the &5World is Magic&r chapter!"
+			]
+			icon_scale: 0.75d
+			id: "1770E10AFE083ACF"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft Limitite to increase an item's enchantment cap"
+			tasks: [{
+				id: "1DEAC7685F623CAB"
+				item: "sortilege:limitite"
+				type: "item"
+			}]
+			title: "Unlimited"
+			x: 7.0d
+			y: 7.714285714285701d
+		}
+		{
+			dependencies: ["026E22A534C341CC"]
+			id: "6967EAC78DBCC52D"
+			subtitle: "Craft a Fishing Rod out of Sticks and Strings"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:fishing_rod"
+					tag: {
+						Damage: 0
+						modifier: {
+							bobber: { }
+							hook: { }
+							line: { }
+						}
+					}
+				}
+				id: "1AAFB2D42B673DE8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "c:tools/fishing_rod"
+					}
+				}
+				title: "Any Fishing Rod"
+				type: "item"
+			}]
+			title: "Time to Fish!"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6967EAC78DBCC52D"]
+			id: "1FA64BA25CA7A8D3"
+			subtitle: "Catch a fish"
+			tasks: [{
+				advancement: "adj:fish_something"
+				criterion: ""
+				icon: "minecraft:cod"
+				id: "6F43B49E8EB53104"
+				title: "Fish out any Fish"
+				type: "advancement"
+			}]
+			title: "Fishy Business"
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7D5AA020D867BC37"]
+			id: "18F794CFEE554641"
+			subtitle: "Get some Leather"
+			tasks: [{
+				id: "698AFF5FEE94EE45"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			title: "Cow Tipper"
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"18F794CFEE554641"
+				"4C1D62C4B13A0CE0"
+			]
+			icon: {
+				Count: 1
+				id: "travelersbackpack:standard"
+				tag: {
+					StorageSlots: 27
+					Tier: 0
+					ToolSlots: 2
+					UpgradeSlots: 2
+				}
+			}
+			icon_scale: 0.75d
+			id: "3CEF12213D904295"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft a Backpack to increase your inventory space"
+			tasks: [{
+				id: "6732A06D28725BFE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "travelersbackpack:custom_travelers_backpack"
+					}
+				}
+				title: "Any Backpack"
+				type: "item"
+			}]
+			title: "Backpacked!"
+			x: 5.80952380952381d
+			y: -1.642857142857153d
+		}
+		{
+			dependencies: ["026E22A534C341CC"]
+			description: [
+				"This is a great moment to mention the addition of &e&lfull set bonuses&r."
+				""
+				"Most armor sets have a unique effect(s) that will activate when, well... a full set is equipped. Kind of self-explanatory."
+				""
+				"The set bonus is sometimes better than bonuses from individual pieces, so you should think and strategize whether it's better to utilize the set bonus or mix pieces of different sets for their raw stat bonuses."
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:wooden_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "65B45B23ECAC37CA"
+			optional: true
+			subtitle: "Craft Wooden Armor and a Wooden Shield"
+			tasks: [
+				{
+					id: "784D1BB5DF354AE1"
+					item: {
+						Count: 1
+						id: "shieldexp:wooden_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5AD4DC5738E97871"
+					item: {
+						Count: 1
+						id: "kubejs:wooden_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1EF5DD0392DC0074"
+					item: {
+						Count: 1
+						id: "kubejs:wooden_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46D7DCD5C4DEC5AF"
+					item: {
+						Count: 1
+						id: "kubejs:wooden_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07E7A29EAC2D3249"
+					item: {
+						Count: 1
+						id: "kubejs:wooden_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Not Today, Thank You!"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7D5AA020D867BC37"]
+			description: [
+				"An important change to mention is that &cFurnaces can no longer cook food&r, meaning you have to use &6Campfires&r or &6Smokers&f."
+				""
+				"Another important change is that &6food drains way slower&r than in vanilla."
+			]
+			id: "6D4E948B6A4CE5E1"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Cook and eat a Pork Chop"
+			tasks: [{
+				id: "6BED336463B3E4C5"
+				item: "minecraft:cooked_porkchop"
+				type: "item"
+			}]
+			title: "Pork Chop"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			disable_toast: true
+			id: "23FAB8177B6ED9C6"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "The heart of your adventure"
+			tasks: [{
+				advancement: "adj:root"
+				criterion: ""
+				disable_toast: true
+				icon: "minecraft:grass_block"
+				id: "583D3BD764C363C9"
+				title: "A Distant Journey"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C3628B6D376AB8F"]
+			id: "5C22BA84223D3925"
+			subtitle: "Obtain Crying Obsidian"
+			tasks: [{
+				id: "627049E3ED30DCB4"
+				item: "minecraft:crying_obsidian"
+				type: "item"
+			}]
+			title: "Who's Cutting Onions?"
+			x: 10.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"29721E49C8325EBE"
+				"610F4BE5F7B24952"
+			]
+			icon: "minecraft:iron_ingot"
+			id: "4C1D62C4B13A0CE0"
+			subtitle: "Forge an Iron Ingot"
+			tasks: [{
+				id: "0289862B6D741998"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Acquire Hardware"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C1D62C4B13A0CE0"]
+			description: [
+				"&7&lHINT:&r &cLife Crystals&r generate underground semi-frequently. "
+				""
+				"A &eSpelunker Potion&r will help you find them by highlighting them if they are nearby. &cLife Crystals&r can also be crafted at a fair price."
+			]
+			icon: "heart_crystals:heart_crystal"
+			id: "37D84A7023231586"
+			rewards: [{
+				id: "1F8901EEA0DAEE91"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			subtitle: "Attain maximum possible health by consuming 15 Life Crystals"
+			tasks: [
+				{
+					icon: "heart_crystals:heart_crystal"
+					id: "48F026344B65629F"
+					title: "Get to 400 max Health"
+					type: "custom"
+				}
+				{
+					disable_toast: true
+					id: "089ABA44FA5390F4"
+					item: "heart_crystals:heart_crystal"
+					type: "item"
+				}
+			]
+			title: "Topped Off"
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["37D84A7023231586"]
+			description: ["&7&lHINT:&r &cHeart Lanterns&r increase life regeneration of all friendly mobs around them by 1 HP/s."]
+			id: "212630BDD7C97684"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Make a Heart Lantern"
+			tasks: [{
+				id: "6FE042FFC41668CE"
+				item: "heart_crystals:heart_lantern"
+				type: "item"
+			}]
+			title: "Light in The Darkness"
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4C1D62C4B13A0CE0"]
+			description: [""]
+			icon: "kubejs:grappling_hook"
+			id: "5A9AE6E82354F04A"
+			subtitle: "Craft a Grappling Hook"
+			tasks: [{
+				id: "60AAD36177785B01"
+				item: "kubejs:grappling_hook"
+				type: "item"
+			}]
+			title: "Hooked!"
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5C3628B6D376AB8F"
+				"522528FDCD548F12"
+				"7458825F53732676"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&7&lHINT:&r Since you're playing modded, I don't think I need to remind you what a Nether Portal looks like. "
+				""
+				"But in case you forgot:"
+				""
+				"                   &5⬛⬛⬛⬛"
+				"                   &5⬛    ⬛"
+				"                   &5⬛    ⬛"
+				"                   &5⬛    ⬛"
+				"                   &5⬛⬛⬛⬛"
+				""
+				"A frame 4x5 out of Obsidian. Activate it with Flint and Steel!"
+			]
+			icon: "minecraft:netherrack"
+			id: "491BB986AF2FDC03"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Build and enter a Nether Portal"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "minecraft:netherrack"
+				id: "2C9A981AE744C669"
+				title: "Enter the Portal"
+				type: "dimension"
+			}]
+			title: "We Need to Go Deeper"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			disable_toast: true
+			hide_dependent_lines: true
+			id: "7458825F53732676"
+			shape: "none"
+			size: 0.2d
+			tasks: [{
+				advancement: "adj:root"
+				criterion: ""
+				id: "6F2893F9FF361826"
+				type: "advancement"
+			}]
+			x: 11.9d
+			y: 2.1d
+		}
+	]
 	title: "0. Prologue"
 }

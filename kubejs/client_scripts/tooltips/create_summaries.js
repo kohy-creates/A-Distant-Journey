@@ -3581,9 +3581,9 @@ const itemsToTooltip = [
 				text: [
 					"Nether Reactor Core can be powered",
 					"by building a _multiblock structure_:",
-					"  _⬜_⬛_⬜_          ⬛           ⬛",
-					"  ⬛⬛⬛        ⬛_🟧_⬛       ⬛⬛⬛",
-					"  _⬜_⬛_⬜_          ⬛           ⬛",
+					"  _⬜_⬛_⬜_    ⬛    ⬛           ⬛",
+					"  ⬛⬛⬛          _🟧_         ⬛⬛⬛",
+					"  _⬜_⬛_⬜_    ⬛    ⬛           ⬛",
 					"",
 					"⬛ - _Cobblestone_",
 					"_⬜_ - _Block of Gold/Netherite_",

@@ -286,6 +286,7 @@ ClientEvents.lang('en_us', event => {
 		'ars_nouveau:sourceberry': 'Mana Berry',
 		'ars_nouveau:sourceberry_sack': 'Mana Berry Sack',
 
+		'fairylights:paper_lanter': 'Fancy Paper Lanter',
 	};
 
 	/** @type {Record<Internal.InputItem_, string>} */

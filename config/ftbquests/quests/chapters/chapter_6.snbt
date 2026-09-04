@@ -1,13 +1,294 @@
 {
+	autofocus_id: "0FDA4BA49667895C"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "chapter_6"
 	group: "04D058A75BDDEE3C"
+	icon: "structure_gel:building_tool"
 	id: "79B0A1BEC871C7FF"
+	images: [
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 5.609981515711645d
+			image: "adj:textures/other/bg_void.png"
+			order: -999
+			rotation: 30.0d
+			width: 10.0d
+			x: -1.5d
+			y: 10.5d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 5.0d
+			image: "adj:textures/other/bg_grass.png"
+			order: -999
+			rotation: 90.0d
+			width: 10.0d
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 5.0d
+			image: "adj:textures/other/bg_grass.png"
+			order: -999
+			rotation: -90.0d
+			width: 10.0d
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 5.609981515711645d
+			image: "adj:textures/other/bg_void.png"
+			order: -998
+			rotation: -30.0d
+			width: 10.0d
+			x: 5.5d
+			y: 11.5d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 1.75d
+			image: "witherstormmod:block/super_beacon_glass"
+			rotation: 45.0d
+			width: 1.75d
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 1.75d
+			image: "mythicmetals:block/unobtainium_block"
+			rotation: 45.0d
+			width: 1.75d
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 1.75d
+			image: "witherstorm_delight:block/wither_stove_top_on"
+			rotation: 45.0d
+			width: 1.75d
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependency: "2FC4D1B2E42E2124"
+			height: 5.0d
+			image: "adj:textures/texts/chapter_6.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_cinders"
+			rotation: 0.0d
+			width: 2.0d
+			x: -4.0d
+			y: 11.0d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_angels"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.0d
+			y: 11.0d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_dreams"
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.5d
+			y: 13.0d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_desolation"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.5d
+			y: 13.0d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_verdant_bloom"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.5d
+			y: 13.0d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_exploration"
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.0d
+			y: 15.0d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_arcanum"
+			rotation: 0.0d
+			width: 2.0d
+			x: 6.5d
+			y: 13.0d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_ethercraft"
+			rotation: 0.0d
+			width: 2.0d
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			dependency: "42307E5368E7BA1C"
+			height: 2.0d
+			image: "kubejs:item/eye_of_hedonism"
+			rotation: 0.0d
+			width: 2.0d
+			x: 8.0d
+			y: 11.0d
+		}
+	]
 	order_index: 6
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["088E92D166861F41"]
+			description: [""]
+			disable_toast: true
+			hide_until_deps_complete: true
+			id: "0FDA4BA49667895C"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Destroy the Command Block and kill The Wither Storm, this time for good"
+			tasks: [{
+				id: "15FF970AF686698F"
+				item: "witherstormmod:withered_nether_star"
+				type: "item"
+			}]
+			title: "One Story Ends, Another Begins"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2FC4D1B2E42E2124"
+				"0FDA4BA49667895C"
+			]
+			hide_until_deps_complete: true
+			icon: "witherstormmod:super_beacon"
+			icon_scale: 0.75d
+			id: "00BD4BF3FFC6172B"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Build and activate a Super Beacon with 4 Support Beacons"
+			tasks: [
+				{
+					id: "548EF30D5AA460F1"
+					item: "witherstormmod:super_beacon"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "49EABD5CE215172C"
+					item: "witherstormmod:super_support_beacon"
+					type: "item"
+				}
+				{
+					advancement: "adj:activate_super_beacon"
+					criterion: ""
+					id: "3FD02F5AF2D8BBBD"
+					title: "Activate a Super Beacon"
+					type: "advancement"
+				}
+			]
+			title: "Full Power"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["00BD4BF3FFC6172B"]
+			description: [""]
+			id: "18F8F611C29DF3A7"
+			subtitle: "Resummon a Withered Symbiont by tossing appropriate items onto a powered Super Beacon"
+			tasks: [{
+				advancement: "adj:resummon_withered_symbiont"
+				criterion: ""
+				id: "733F2BE483433157"
+				title: "Resummon a Withered Symbiont"
+				type: "advancement"
+			}]
+			title: "One More Time"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["18F8F611C29DF3A7"]
+			description: [""]
+			icon_scale: 1.15d
+			id: "42307E5368E7BA1C"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Fuse all of your collected Eyes back into The Architect's Prism"
+			tasks: [{
+				id: "04E3FAEC49D160F4"
+				item: "structure_gel:building_tool"
+				type: "item"
+			}]
+			title: "<color col=FC4AFF><shadow c=911773><pulse a=0.5><neon>Journey's End"
+			x: 1.9642857142856798d
+			y: 10.85714285714284d
+		}
+		{
+			dependencies: ["18F8F611C29DF3A7"]
+			icon_scale: 0.75d
+			id: "01883CFF273619E2"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Craft The Zenith, the culmination of the weapons you used throughout the game (and those that you skipped)"
+			tasks: [{
+				id: "2BC2586E38CB31F9"
+				item: "zenith:zenith"
+				type: "item"
+			}]
+			title: "Infinity +1"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["18F8F611C29DF3A7"]
+			icon_scale: 0.75d
+			id: "350D42040726FDDA"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Literally why would you ever go out of your way to bake that"
+			tasks: [{
+				id: "02FF7A4599FE6BE1"
+				item: "witherstorm_delight:formidifried_egg"
+				type: "item"
+			}]
+			title: "Formidifried"
+			x: 0.5d
+			y: 8.0d
+		}
+	]
 	title: "6. Journey's End"
 }

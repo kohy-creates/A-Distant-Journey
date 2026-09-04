@@ -252,16 +252,16 @@ LootJS.modifiers((event) => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:skeleton').when(c => c.randomChanceWithLooting(0.002, 0.001)));
 		})
-		.pool(pool => {
-			pool.rolls(1);
-			pool.addLoot(
-				LootEntry.of('mcdw:bow_bonebow')
-					.when(c => {
-						c.randomChanceWithLooting(0.025, 0.005);
-						c.anyDimension('minecraft:the_nether');
-					})
-			);
-		});
+		// .pool(pool => {
+		// 	pool.rolls(1);
+		// 	pool.addLoot(
+		// 		LootEntry.of('mcdw:bow_bonebow')
+		// 			.when(c => {
+		// 				c.randomChanceWithLooting(0.025, 0.005);
+		// 				c.anyDimension('minecraft:the_nether');
+		// 			})
+		// 	);
+		// });
 
 	event.addEntityLootModifier('minecraft:stray')
 		.pool(pool => {

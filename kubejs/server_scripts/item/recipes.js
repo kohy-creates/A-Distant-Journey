@@ -485,6 +485,10 @@ ServerEvents.recipes((event) => {
 
 	// Banner Patterns
 	function bannerPattern(output, input) {
+		if (!Item.exists(output)) {
+			console.error(`Banner pattern output ${output} does not exist!`);
+			return;
+		}
 		event.shapeless(
 			output,
 			!Array.isArray(input) ? [input, 'paper'] : input.concat(['paper'])
@@ -720,6 +724,7 @@ ServerEvents.recipes((event) => {
 
 	event.forEachRecipe({ output: [/carpet/], type: 'crafting_shaped' }, recipe => {
 		if (!recipe) return;
+		if (recipe.getOriginalRecipeResult().getId().includes('redeco')) return;
 		sewingRecipe(
 			recipe.getOriginalRecipeIngredients().toArray()[0].getItemIds()[0], // this looks unholy
 			recipe.getOriginalRecipeResult().getId(),
@@ -4007,8 +4012,9 @@ ServerEvents.recipes((event) => {
 
 	alloyForgeRecipe(
 		[
+			['raw_iron', 1],
 			['mythicmetals:raw_orichalcum', 1],
-			['raw_iron', 1]
+
 		],
 		['mythicmetals:orichalcum_ingot', 2],
 		2,
@@ -4019,8 +4025,9 @@ ServerEvents.recipes((event) => {
 	);
 	alloyForgeRecipe(
 		[
+			['iron_ingot', 1],
 			['mythicmetals:raw_orichalcum', 1],
-			['iron_ingot', 1]
+
 		],
 		['mythicmetals:orichalcum_ingot', 1],
 		2,
@@ -5626,7 +5633,7 @@ ServerEvents.recipes((event) => {
 		'botania:livingwood_twig',
 		'botania:redstone_root'
 	]).id(`adj:alfthorne_sapling`);
-	warping('window_box:alfthorne_sapling', 'window_box:chthonic_yew_sapling');
+	ectoplasmTransform('window_box:alfthorne_sapling', 'window_box:chthonic_yew_sapling');
 
 	// Binding Wayfinders
 	function locateStructureRitual(structure, ingredients) {
@@ -9388,4 +9395,28 @@ ServerEvents.recipes((event) => {
 			'blaze_powder'
 		]
 	).id('adj:smoldering_scorched_log');
+
+	// Re: Deco
+	event.shaped(
+		'3x redeco:paper_door',
+		[
+			'PP',
+			'PP',
+			'PP'
+		],
+		{
+			P: 'quark:paper_wall'
+		}
+	).id('redeco:paper_door');
+
+	event.shaped(
+		'3x redeco:paper_trapdoor',
+		[
+			'PPP',
+			'PPP',
+		],
+		{
+			P: 'quark:paper_wall'
+		}
+	).id('redeco:paper_trapdoor');
 });

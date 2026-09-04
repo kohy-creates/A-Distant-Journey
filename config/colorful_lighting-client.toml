@@ -1,0 +1,27 @@
+#Enable colorful lighting
+enabled = true
+#TESTING ONLY. Caps flywheel's GLSL version at 410, forcing the whole flywheel pipeline down
+#the same path older GPUs (e.g. GL 4.1 Macs) take: colored light travels as a buffer texture
+#instead of an SSBO. Takes effect on the next game launch (the mode is baked into every
+#compiled flywheel shader). Use '/flywheel backend instancing' with this - the indirect
+#backend needs GLSL 460 and cannot work while capped. Toggle with '/cl debug flywheel texture|auto'.
+flywheelForceTextureMode = false
+#Automatically create '<Pack> + ColorfulLighting' copies of shaderpacks that decode colored lighting (requires Oculus)
+autoPatchShaderpacks = false
+#Automatically derive a light color from a block's texture for light sources that have
+#no configured color (typically modded blocks). Bright texture pixels dominate the sample,
+#so a lamp glows in the color of its glowing part rather than its casing. Blocks whose
+#color depends on position (via a block color provider) are tinted per position.
+#Disable to make unconfigured light sources emit plain white light as before.
+autoEmitterColors = true
+#How quickly colored light fills in after chunks load.
+#Faster looks better; slower spreads out chunk mesh rebuilds and can help framerate on lower-end machines.
+#Change this with the game closed - the log line 'Colored light engine reset (lightUpdateSpeed=...)'
+#reports the value actually in force.
+#  FASTEST  - no pause; light fills in as fast as the CPU allows (default)
+#  FAST     - pauses for 1/4 of the time it spent working (~80% speed)
+#  BALANCED - pauses for as long as it worked (~50% speed)
+#  GENTLE   - pauses for 3x as long as it worked (~25% speed)
+#Allowed Values: FASTEST, FAST, BALANCED, GENTLE
+lightUpdateSpeed = "BALANCED"
+

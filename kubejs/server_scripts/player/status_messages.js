@@ -161,7 +161,7 @@ ServerEvents.tick(event => {
 
 		// Get current lunar forecast
 		/** @type {Internal.Optional_<Internal.LunarForecast_>} */
-		let optional = $lunarForecastWorldData.lunarForecastWorldData(server.overworld());
+		let optional = $EnhancedCelestials.lunarForecastWorldData(server.overworld());
 		let id = null;
 		if (optional.isPresent()) {
 			let data = optional.get();
