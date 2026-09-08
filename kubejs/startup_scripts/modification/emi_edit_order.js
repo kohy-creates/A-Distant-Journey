@@ -275,8 +275,7 @@ StartupEvents.postInit(event => {
 	function everyComp(namespace) {
 		switch (namespace) {
 			case 'quark': return 'q';
-			case 'handcrafted': return 'hc';
-			case 'hearth_and_home': return 'hnhome';
+			case 'redeco': return 'rd';
 			case 'farmersdelight': return 'fd';
 			case 'twilightforest': return 'tf';
 			default: return namespace;

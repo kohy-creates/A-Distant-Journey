@@ -15,11 +15,6 @@ BlockEvents.modification(event => {
 		block.setExplosionResistance(200);
 	});
 
-	event.modify(/aquamirae\:painting\_/, block => {
-		block.setDestroySpeed(0);
-		block.setRequiresTool(false);
-	});
-
 	event.modify('evilcraft:blood_stain', block => {
 		block.setDestroySpeed(0);
 		block.setRequiresTool(false);

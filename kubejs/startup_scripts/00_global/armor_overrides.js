@@ -559,11 +559,6 @@ global.armorOverrides = {
 			operation: 'multiply_base'
 		}
 	},
-	'aquamirae:terrible': {
-		'generic.armor': {
-			values: [5, 7, 6, 5]
-		},
-	},
 	'aether:zanite': {
 		'generic.armor': {
 			values: [6, 8, 7, 6]

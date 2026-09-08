@@ -1,5 +1,5 @@
 
-execute if predicate adj:eye_particle_chance run particle aquamirae:shine ~ ~ ~ 0.15 0.15 0.15 0.1 1 normal
+# execute if predicate adj:eye_particle_chance run particle aquamirae:shine ~ ~ ~ 0.15 0.15 0.15 0.1 1 normal
 
 scoreboard players add @s adj.eye_sound_loop 1
 

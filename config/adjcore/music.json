@@ -306,14 +306,6 @@
 				"distance": 50
 			}
 		},
-		"aquamirae:captain_cornelia": {
-			"phase_0": {
-				"track": "adj:music.boss.captain_cornelia",
-				"title": "Captain Murasa",
-				"author": "ZUN",
-				"distance": 100
-			}
-		},
 		"witherstormmod:command_block": {
 			"phase_0": {
 				"track": "adj:music.boss.command_block.approaching",

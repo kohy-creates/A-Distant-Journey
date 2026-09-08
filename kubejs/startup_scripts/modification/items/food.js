@@ -34,28 +34,6 @@ ItemEvents.modification(event => {
 		}
 	});
 
-	event.modify('aquamirae:poseidons_breakfast', item => {
-		item.setFoodProperties(food => {
-			food.removeEffect('obscure_api:fury')
-				.removeEffect('obscure_api:rush')
-				.effect(nourishment, global.duration("30:00"), 0, 1);
-		})
-	});
-
-	event.modify('aquamirae:sea_stew', item => {
-		item.setFoodProperties(food => {
-			food.removeEffect('obscure_api:fury')
-				.removeEffect('minecraft:strength')
-				.effect(nourishment, global.duration("10:00"), 0, 1);
-		})
-	});
-
-	event.modify('aquamirae:sea_casserole', item => {
-		item.setFoodProperties(food => {
-			food.removeEffect('obscure_api:rush');
-		})
-	});
-
 	event.modify('honeycomb', item => {
 		item.setFoodProperties(food => {
 			food.effect('alexscaves:sugar_rush', global.duration("00:06"), 0, 0.01);

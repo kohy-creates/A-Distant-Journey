@@ -188,7 +188,6 @@ ItemEvents.modification(event => {
 		'botania:rune_wrath',
 		'botania:rune_greed',
 		'botania:rune_sloth',
-		'aquamirae:coral_lance',
 		/royal_jelly/,
 		/experience_chunk/,
 		'minecraft:experience_bottle',

@@ -66,7 +66,7 @@ global.EMITabs = {
 		 */
 		renderer: (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
 			let text = Text.translatable(recipe.data.description);
-			guiGraphics.drawWordWrap(Client.font, text, (130 - getFont().width(text.getString())) / 2, 5, 150, 0);
+			guiGraphics.drawWordWrap(Client.font, text, (130 - Client.font.width(text.getString())) / 2, 5, 150, 0);
 
 			let poseStack = guiGraphics.pose();
 			poseStack.pushPose();

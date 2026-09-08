@@ -448,11 +448,11 @@ LootJS.modifiers((event) => {
 			pool.addLoot(LootEntry.of(mcdw('crossbow', 'veiled_crossbow')).withChance(0.15))
 		});
 
-	event.addLootTableModifier('aquamirae:chests/frozen_chest')
-		.pool(pool => {
-			pool.rolls(1).randomChance(1);
-			pool.addLoot(LootEntry.of('twilightforest:ice_bow'))
-		});
+	// event.addLootTableModifier('aquamirae:chests/frozen_chest')
+	// 	.pool(pool => {
+	// 		pool.rolls(1).randomChance(1);
+	// 		pool.addLoot(LootEntry.of('twilightforest:ice_bow'))
+	// 	});
 
 	event.addLootTableModifier(/^(?=.*\bvillage\b)(?=.*\bchest\b).*/)
 		.pool(pool => {
@@ -1023,7 +1023,6 @@ LootJS.modifiers((event) => {
 		'kubejs:treasure_bag/aether_valkyrie_queen',
 		'kubejs:treasure_bag/alexscaves_luxtructosaurus',
 		'kubejs:treasure_bag/ancient_aether_mutated_aechor_plant',
-		'kubejs:treasure_bag/aquamirae_captain_cornelia',
 		'kubejs:treasure_bag/ars_nouveau_wilden_boss',
 		'kubejs:treasure_bag/botania_doppleganger_hardmode',
 		'kubejs:treasure_bag/botania_doppleganger',
@@ -1059,12 +1058,6 @@ LootJS.modifiers((event) => {
 					.limitCount([5, 12])
 			)
 		});
-	event.addEntityLootModifier('aquamirae:captain_cornelia')
-		.removeLoot('aquamirae:three_bolt_helmet')
-		.removeLoot('aquamirae:treasure_pouch')
-		.removeLoot('aquamirae:ship_graveyard_echo')
-		.removeLoot('aquamirae:oxygen_tank')
-		.removeLoot('aquamirae:music_disc_forsaken_drownage');
 
 	event.addEntityLootModifier('alexscaves:luxtructosaurus')
 		.removeLoot('alexscaves:tectonic_shard')

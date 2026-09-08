@@ -40,7 +40,6 @@ global.hpModifications = {
 	'twilightforest:ur_ghast': [1600, 15, 10],
 	'twilightforest:alpha_yeti': [2400, 40, 0],
 	'twilightforest:snow_queen': [3000, 65, 0],
-	'aquamirae:captain_cornelia': [1000, 40, 12],
 
 	'minecraft:allay': [30, 10, 0],
 	'minecraft:armor_stand': [100, 15, 0],
@@ -284,17 +283,6 @@ global.hpModifications = {
 	'unusualend:small_enderbulb': [60, 15, 0],
 	'unusualend:bluk': [20, 5, 0],
 	'unusualend:summoned_dragling': [100, 15, 1],
-	'aquamirae:golden_moth': [8, 15, 0],
-	'aquamirae:maw': [160, 20, 4],
-	'aquamirae:anglerfish': [200, 17, 8],
-	'aquamirae:maze_mother': [750, 40, 20],
-	'aquamirae:pillagers_patrol': [100, 15, 0],
-	'aquamirae:tortured_soul': [150, 23, 4],
-	'aquamirae:eel': [700, 40, 10],
-	'aquamirae:maze_rose': [100, 15, 0],
-	'aquamirae:poisoned_chakra': [100, 15, 0],
-	'aquamirae:spinefish': [20, 15, 0],
-	'aquamirae:luminous_jelly': [20, 15, 0],
 	'ars_nouveau:ally_vex': [120, 20, 0],
 	'ars_nouveau:bookwyrm': [30, 15, 0],
 	'ars_nouveau:starbuncle': [100, 15, 0],
@@ -797,7 +785,6 @@ global.hpModifications = {
 	'variantsandventures:thicket': [85, 13, 2],
 	'variantsandventures:verdant': [80, 14, 0],
 	'cavedelight:roasted_grottoceratops': [10, 3, 0],
-	'aquamirae:abyssal_scyphoid': [100, 15, 0],
 	'dried_ghast:happy_ghast': [400, 3, 15],
 	'dried_ghast:ghastling': [400, 3, 5],
 	'witherstormmod:tainted_slime': [0, 0, 0],
@@ -1034,10 +1021,6 @@ global.autoscaleMobs = [
 	'minecraft:magma_cube',
 	'twilightforest:rising_zombie',
 	'twilightforest:skeleton_druid',
-	'aquamirae:maw',
-	'aquamirae:anglerfish',
-	'aquamirae:maze_mother',
-	'aquamirae:tortured_soul',
 	'variantsandventures:gelid',
 	'variantsandventures:murk',
 	'variantsandventures:thicket',
@@ -1080,7 +1063,6 @@ global.bossMobsAddTreasureBag = [
 	'twilightforest:ur_ghast', // Pure Furies
 	'twilightforest:alpha_yeti', // There's a Monster In The Woods
 	'twilightforest:snow_queen', // Hoshifuru Tenma no Yama (I forgot the English title lmao)
-	'aquamirae:captain_cornelia', // Captain Murasa (UFO ver)
 ];
 
 global.bossMobsNoTreasureBag = [

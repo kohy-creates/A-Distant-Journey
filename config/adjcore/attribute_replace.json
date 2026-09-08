@@ -1,9 +1,5 @@
 {
 	"global": {
-		"obscure_api:critical_hit;1": "attributeslib:crit_chance;0",
-		"obscure_api:critical_damage;1": "attributeslib:crit_damage;0",
-		"obscure_api:accuracy;1": "attributeslib:crit_damage;0",
-		"obscure_api:penetration;2": "attributeslib:armor_shred;0",
 		"minecraft:generic.armor_toughness;0": "remove",
 		"forge:entity_reach;0": "remove",
 		"rediscovered:fire_resistance;1": "remove",
@@ -12,26 +8,6 @@
 		"additionalentityattributes:generic.magic_protection;0": "remove"
 	},
 	"items": {
-		"aquamirae:terrible_sword": {
-			"remove": [
-				"obscure_api:critical_damage",
-				"obscure_api:critical_hit"
-			],
-			"add": [
-				"attributeslib:crit_damage;0;2;MAINHAND",
-				"attributeslib:crit_chance;0;0.25;MAINHAND"
-			]
-		},
-		"aquamirae:coral_lance": {
-			"add": [
-				"forge:swim_speed;1;0.25;MAINHAND"
-			]
-		},
-		"aquamirae:remnants_saber": {
-			"add": [
-				"forge:swim_speed;1;0.4;MAINHAND"
-			]
-		},
 		"supplementaries:rope": {
 			"add": [
 				"forge:block_reach;0;3;MAINHAND"

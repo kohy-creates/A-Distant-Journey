@@ -130,7 +130,6 @@ global.stageRestrictions = {
 			'ars_nouveau:apprentice_spell_book',
 			'mcdw:bow_sabrewing',
 			'kubejs:decayed_clover',
-			'aquamirae:shell_horn',
 			'kubejs:slider_pickaxe',
 		],
 		light: [

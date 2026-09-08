@@ -24,11 +24,6 @@ betterarcheology:fossil_jungle_0
 betterarcheology:fossil_jungle_1
 betterarcheology:fossil_sheep_0
 betterarcheology:fossil_wolf
-aquamirae:outpost
-aquamirae:shelter
-aquamirae:ship
-aquamirae:surface/arch
-aquamirae:surface/spiral
 hearths:netherrack_spiral
 underground_rooms:alchemy_room
 underground_rooms:blacksmith_room1

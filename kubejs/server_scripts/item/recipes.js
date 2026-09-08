@@ -4632,14 +4632,12 @@ ServerEvents.recipes((event) => {
 
 	// Items to Farmer's Delight Stew recipes
 	const stewIDs = [
-		'aquamirae:sea_stew',
 		'witherstormmod:golden_apple_stew',
 		'alexsmobs:mosquito_repellent_stew',
 		'unusal_end:ender_stew_recipe',
 		'alexscaves:vesper_stew',
 		'alexscaves:seething_stew',
 		'unusualend:warped_stew_recipe',
-		'aquamirae:poseidons_breakfast',
 		'unusualend:blob_stew_recipe',
 		'alexscaves:primordial_soup',
 		'mynethersdelight:crafting/rock_soup',
@@ -4657,9 +4655,6 @@ ServerEvents.recipes((event) => {
 		switch (recipe.getId()) {
 			case 'witherstormmod:golden_apple_stew':
 				baseItem = 'suspicious_stew';
-				break;
-			case 'aquamirae:poseidons_breakfast':
-				baseItem = 'aquamirae:sea_stew';
 				break;
 			default:
 				baseItem = 'bowl';
@@ -6162,7 +6157,7 @@ ServerEvents.recipes((event) => {
 			]
 		).id(`adj:blahaj/${color}`)
 
-		sewingRecipe(`handcrafted:${color}_cushion`, blahaj)
+		sewingRecipe(`cushionbackport:${color}_cushion`, blahaj)
 	})
 
 	const specialBlahaj = {
@@ -8741,8 +8736,8 @@ ServerEvents.recipes((event) => {
 		// event.recipes.create.crushing([dustID], ingot, 200).id(`adj:ore_dusts/${flattenedID(dustID)}/crushing_from_ingot`);
 	}
 
-	oreDustRecipes('kubejs:gravitite_dust', 'aether_redux:raw_gravitite', 'aether_redux:gravitite_ingot')
-	oreDustRecipes('kubejs:valkyrum_dust', 'aether_redux:raw_valkyrum', 'ancient_aether:valkyrum_ingot')
+	// oreDustRecipes('kubejs:gravitite_dust', 'aether_redux:raw_gravitite', 'aether_redux:gravitite_ingot')
+	// oreDustRecipes('kubejs:valkyrum_dust', 'aether_redux:raw_valkyrum', 'ancient_aether:valkyrum_ingot')
 	oreDustRecipes('kubejs:veridium_dust', 'aether_redux:raw_veridium', 'aether_redux:veridium_ingot')
 	// oreDustRecipes('kubejs:azure_neodymium_dust', 'alexcaves:raw_azure_neodymium', 'alexcaves:azure_neodymium_ingot')
 	// oreDustRecipes('kubejs:scarlet_neodymium_dust', 'alexcaves:raw_scarlet_neodymium', 'alexcaves:scarlet_neodymium_ingot')

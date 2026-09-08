@@ -347,10 +347,10 @@ const InteractionLimits = {
 		chapter: 4,
 		message: 'It\'s not reacting to anything...'
 	},
-	'aquamirae:shell_horn': {
-		chapter: 2,
-		message: 'It doesn\'t make any sound...'
-	}
+	// 'aquamirae:shell_horn': {
+	// 	chapter: 2,
+	// 	message: 'It doesn\'t make any sound...'
+	// }
 };
 
 for (let [item, data] of Object.entries(InteractionLimits)) {

@@ -736,6 +736,22 @@
 			"legacy/legacy_bricks" = true
 			grimite = true
 			polished_grimite = true
+			magenta_wool = true
+			pink_wool = true
+			green_wool = true
+			lime_wool = true
+			light_gray_wool = true
+			yellow_wool = true
+			black_wool = true
+			light_blue_wool = true
+			brown_wool = true
+			cyan_wool = true
+			orange_wool = true
+			red_wool = true
+			gray_wool = true
+			white_wool = true
+			blue_wool = true
+			purple_wool = true
 
 		[types.cut_block_type.hybrid_aquatic]
 			driftwood = true

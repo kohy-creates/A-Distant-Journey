@@ -5,8 +5,6 @@ const trophyConfig = {
         'minecraft:creeper': 25,
         'born_in_chaos_v1:phantom_creeper': 25,
         'minecraft:iron_golem': 15,
-        'aquamirae:maze_mother': 3,
-        'aquamirae:eel': 1,
     },
     joinedProgress: {
         'born_in_chaos_v1:phantom_creeper_copy': 'born_in_chaos_v1:phantom_creeper',

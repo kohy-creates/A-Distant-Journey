@@ -45,11 +45,6 @@ const RemovedItems = {
 
 		'upgrade_aquatic:thrasher_tooth',
 
-		'aquamirae:divider',
-		'aquamirae:poisoned_chakra',
-		'aquamirae:maze_rose',
-		'aquamirae:terrible_sword',
-
 		'rediscovered:quiver',
 		'rediscovered:grass_slab',
 		'rediscovered:podzol_slab',

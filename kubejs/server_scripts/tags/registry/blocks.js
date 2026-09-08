@@ -26,7 +26,6 @@ ServerEvents.tags('block', tags => {
 	]);
 
 	tags.remove('minecraft:mineable/axe', [
-		/aquamirae\:painting\_/,
 		'summoningrituals:altar'
 	]);
 

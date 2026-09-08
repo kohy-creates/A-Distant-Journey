@@ -58,7 +58,8 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 		'DamageSource (arrow)',
 		'DamageSource (cataclysm.maledictio_sagitta)',
 		'DamageSource (trident)',
-		'DamageSource (cataclysm.storm_bringer)'
+		'DamageSource (cataclysm.storm_bringer)',
+		'DamageSource (player_attack)',
 	]
 
 	if (rangedDamageSources.includes(source.toString())) {
