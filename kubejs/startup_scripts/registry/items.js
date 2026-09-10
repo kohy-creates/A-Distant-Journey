@@ -995,14 +995,6 @@ StartupEvents.registry('item', registry => {
 		.unstackable()
 		.rarity('rare');
 
-	registry.create('the_slicer', 'crossbow')
-		.crossbow(crossbow => { })
-		.unstackable()
-		.maxDamage(1200)
-		.displayName('The Slicer')
-		.tooltip(Text.gray(''))
-		.rarity('uncommon');
-
 	registry.create('gloopy_bow', 'bow')
 		.bow(bow => { })
 		.unstackable()
