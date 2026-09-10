@@ -1,0 +1,9 @@
+
+[performance]
+	#Write team progress files off the server thread. Data is snapshotted on the server thread first.
+	async_progress_save = true
+	#Batch the inventory scan that follows a completed task into one scan per player per tick.
+	defer_task_detection = true
+	#Skip the cache clear and reset packets when resetting a quest that was never started.
+	fix_progress_reset_spam = true
+

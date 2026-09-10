@@ -42,7 +42,7 @@
 	#    ]
 	#    NOTE: This excluded one entryset from all WoodTypes/LeavesTypes
 	#
-	blacklist = ["quark:hedge", "quark:vertical_slab", "quark:vertical_planks", "quark:hollow_log", "quark:leaf_carpet", "create:window", "create:window_pane", "functionalstorage:1", "functionalstorage:2", "functionalstorage:4", "rediscovered:chair", "rediscovered:table", "twilightforest:hollow_log_horizontal", "twilightforest:hollow_log_vertical", "twilightforest:hollow_log_climbable", "oreberriesreplanted:vat", "copperagebackport:shelf", "redeco:polished_planks", "redeco:polished_slab", "redeco:polished_stairs"]
+	blacklist = ["quark:hedge", "quark:vertical_slab", "quark:vertical_planks", "quark:hollow_log", "quark:leaf_carpet", "create:window", "create:window_pane", "functionalstorage:1", "functionalstorage:2", "functionalstorage:4", "rediscovered:chair", "rediscovered:table", "twilightforest:hollow_log_horizontal", "twilightforest:hollow_log_vertical", "twilightforest:hollow_log_climbable", "oreberriesreplanted:vat", "copperagebackport:shelf", "farmersdelight:cabinet", "redeco:polished_planks", "redeco:polished_slab", "redeco:polished_stairs", "redeco:display_case", "redeco:pedestal", "redeco:plank_fence", "redeco:plank_fence_gate", "redeco:drawer_counter", "redeco:coffee_table", "redeco:stool", "redeco:sword_mount", "redeco:side_table"]
 
 [module]
 	#Exclude Module From Wood-Good, Stone-Zone & Gems-Realm

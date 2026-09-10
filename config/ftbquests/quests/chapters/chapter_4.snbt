@@ -8,43 +8,12 @@
 	id: "7B4DA06AB76E230F"
 	images: [
 		{
-			dependency: "1F3DB68EA2A45EB7"
-			height: 5.609981515711645d
-			image: "adj:textures/other/bg_void.png"
-			order: -999
-			rotation: -45.0d
-			width: 10.0d
-			x: -4.5d
-			y: 1.5d
-		}
-		{
-			dependency: "0F84B7A1DA0FDD37"
-			height: 5.609981515711645d
-			image: "adj:textures/other/bg_void.png"
-			order: -999
-			rotation: 45.0d
-			width: 10.0d
-			x: -11.0d
-			y: -0.5d
-		}
-		{
-			dependency: "4564BF670D10E0FA"
-			height: 5.609981515711645d
-			image: "adj:textures/other/bg_void.png"
-			order: -999
-			rotation: 10.0d
-			width: 10.0d
-			x: -11.0d
-			y: 4.5d
-		}
-		{
-			dependency: "0F84B7A1DA0FDD37"
 			height: 5.0d
 			image: "adj:textures/texts/chapter_4.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 3.5d
-			y: -1.0d
+			x: 0.5d
+			y: 2.0d
 		}
 		{
 			dependency: "1F3DB68EA2A45EB7"
@@ -61,8 +30,8 @@
 			image: "minecraft:item/ender_eye"
 			rotation: 0.0d
 			width: 2.25d
-			x: -3.0d
-			y: 3.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependency: "4564BF670D10E0FA"
@@ -92,7 +61,6 @@
 			y: -0.5d
 		}
 		{
-			dependency: "0F84B7A1DA0FDD37"
 			height: 6.0d
 			image: "adj:textures/texts/lore_end.png"
 			rotation: 0.0d
@@ -115,8 +83,8 @@
 			image: "rediscovered:block/glowing_obsidian"
 			rotation: 45.0d
 			width: 1.75d
-			x: -3.0d
-			y: 5.5d
+			x: -6.0d
+			y: 5.0d
 		}
 		{
 			dependency: "4564BF670D10E0FA"
@@ -128,13 +96,21 @@
 			y: -2.5d
 		}
 		{
-			dependency: "6E9823FB2C7C6D19"
 			height: 1.75d
 			image: "phantasm:block/chiseled_obsidian"
 			rotation: 45.0d
 			width: 1.75d
-			x: 0.5d
-			y: -1.0d
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			height: 28.0d
+			image: "adj:textures/other/bg_void.png"
+			order: -9999
+			rotation: 45.0d
+			width: 50.0d
+			x: -3.0d
+			y: 2.0d
 		}
 	]
 	order_index: 4
@@ -143,19 +119,21 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["04096C5C5F14CD07"]
+			entity_vis_size: 1.0f
+			icon: "minecraft:end_stone"
 			id: "7EB2D195600E1D0F"
-			shape: "hexagon"
+			invisible: true
+			shape: "circle"
 			size: 3.0d
-			subtitle: "Kill The Red Dragon and collect the Eye of Dreams"
+			subtitle: "<i>Or the beginning? Nah, I can't make the same joke twice..."
 			tasks: [{
-				id: "034FAF49DAD05AAA"
-				item: "kubejs:eye_of_dreams"
-				type: "item"
+				id: "475B333624E79603"
+				stage: "chapter_4"
+				type: "decursiostage"
 			}]
-			title: "Out With The Old!"
-			x: 1.5d
-			y: 1.5d
+			title: "The End"
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -163,6 +141,7 @@
 				"04096C5C5F14CD07"
 				"7EB2D195600E1D0F"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "rediscovered:dragon_altar"
 			id: "5C5A43A9E26D16BD"
@@ -176,15 +155,19 @@
 				type: "item"
 			}]
 			title: "The Old, Again..."
-			x: 4.0d
-			y: 1.5d
+			x: 0.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
 				"6E9823FB2C7C6D19"
 				"0898408ED8FBAF57"
 			]
-			description: ["&7&lHINT: &rIn the meantime prepare the right gear to ride it!"]
+			description: [
+				"### HINT"
+				"In the meantime prepare the right gear to ride it!"
+			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "rediscovered:red_dragon_egg"
 			icon_scale: 0.75d
@@ -204,14 +187,15 @@
 				value: 1L
 			}]
 			title: "In With The New!"
-			x: -3.0d
-			y: 5.5d
+			x: -6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"6E9823FB2C7C6D19"
 				"7EB2D195600E1D0F"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "minecraft:ender_eye"
 			id: "23D842B61D6B17F4"
@@ -234,6 +218,7 @@
 				""
 				"But just in case it's not obvious - just right click the &3End Portal Frames&r with &dAwakened Ender Pearls&r."
 			]
+			entity_vis_size: 1.0f
 			icon: "cataclysm:void_stone"
 			id: "1F3DB68EA2A45EB7"
 			shape: "circle"
@@ -253,6 +238,7 @@
 		}
 		{
 			dependencies: ["1F3DB68EA2A45EB7"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "minecraft:dragon_head"
 			icon_scale: 0.75d
@@ -262,6 +248,18 @@
 			subtitle: "Break the seal on the dimension by killing the Ender Dragon"
 			tasks: [{
 				entity: "minecraft:ender_dragon"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "4774CE42F4E427D2"
 				title: "Kill the Ender Dragon"
 				type: "kill"
@@ -273,6 +271,7 @@
 		}
 		{
 			dependencies: ["0F84B7A1DA0FDD37"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "02804C4D2D501D99"
 			subtitle: "Hold a Dragon Egg"
@@ -287,6 +286,7 @@
 		}
 		{
 			dependencies: ["0F84B7A1DA0FDD37"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0898408ED8FBAF57"
 			subtitle: "Bottle up some Dragon's Breath"
@@ -301,6 +301,7 @@
 		}
 		{
 			dependencies: ["0F84B7A1DA0FDD37"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "4564BF670D10E0FA"
 			shape: "circle"
@@ -320,6 +321,7 @@
 		}
 		{
 			dependencies: ["0F84B7A1DA0FDD37"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "minecraft:end_crystal"
 			id: "3E76EA9BD9A391D8"
@@ -345,6 +347,7 @@
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "unusualend:prismalite_gem"
 			id: "7BEDD5A588278AC2"
@@ -372,6 +375,7 @@
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "06975D33E820F6B9"
 			subtitle: "Find some Chorus Fruit"
@@ -386,6 +390,7 @@
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "minecraft:purpur_block"
 			id: "22BC61DC0C61020A"
@@ -402,6 +407,7 @@
 		}
 		{
 			dependencies: ["22BC61DC0C61020A"]
+			entity_vis_size: 1.0f
 			id: "2751CF14E410A5FD"
 			subtitle: "Find an Elytra"
 			tasks: [{
@@ -421,10 +427,23 @@
 		}
 		{
 			dependencies: ["22BC61DC0C61020A"]
+			entity_vis_size: 1.0f
 			id: "7863434F8F9EAD57"
 			subtitle: "Kill a Shulker"
 			tasks: [{
 				entity: "minecraft:shulker"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "minecraft:shulker_box"
 				id: "15400EB1352B00FD"
 				title: "Kill a Shulker"
@@ -437,6 +456,7 @@
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "5DAF45D22D8929C9"
 			subtitle: "Find Enderium and mine it out"
@@ -457,6 +477,7 @@
 				"5DAF45D22D8929C9"
 				"26E82AD325890954"
 			]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "6B2AE4F13A56D99C"
 			shape: "diamond"
@@ -474,6 +495,7 @@
 		{
 			dependencies: ["06975D33E820F6B9"]
 			description: [""]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "endersdelight:pearl_pasta"
 			id: "301E14BDA5580CC4"
@@ -503,6 +525,7 @@
 		}
 		{
 			dependencies: ["7BEDD5A588278AC2"]
+			entity_vis_size: 1.0f
 			icon: "alloy_forgery:ender_forge_casing_forge_controller"
 			icon_scale: 0.75d
 			id: "26E82AD325890954"
@@ -528,6 +551,7 @@
 		}
 		{
 			dependencies: ["26E82AD325890954"]
+			entity_vis_size: 1.0f
 			id: "6E4C5779C4DA9851"
 			subtitle: "Forge Star Platinum"
 			tasks: [{
@@ -541,6 +565,7 @@
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "cataclysm:void_eye"
 			id: "6086C058455AE6AD"
@@ -556,6 +581,7 @@
 		}
 		{
 			dependencies: ["6086C058455AE6AD"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "640E291225CA8A2A"
 			shape: "diamond"
@@ -574,6 +600,7 @@
 		}
 		{
 			dependencies: ["6E4C5779C4DA9851"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "38E1B52E67727660"
 			shape: "diamond"
@@ -599,6 +626,7 @@
 				"6E9823FB2C7C6D19"
 				"7EB2D195600E1D0F"
 			]
+			entity_vis_size: 1.0f
 			icon: "mythicmetals:prometheum_ingot"
 			id: "0BB72C64921769F6"
 			subtitle: "Collect and forge some Prometheum"
@@ -615,8 +643,8 @@
 				}
 			]
 			title: "Bloomful"
-			x: 0.5d
-			y: 4.5d
+			x: -1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -624,6 +652,7 @@
 				"7EB2D195600E1D0F"
 			]
 			description: ["&7&lHINT:&r &6Phoenix set&r is oriented more around &coffense&r, while the &5Obsidian set&r is oriented more around &9defense&r. They are more or less interchangeable, so don't worry about losing them!"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "aether:obsidian_chestplate"
@@ -678,11 +707,12 @@
 				type: "item"
 			}]
 			title: "Fortify Your Minds!"
-			x: 0.5d
-			y: -1.0d
+			x: 1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["640E291225CA8A2A"]
+			entity_vis_size: 1.0f
 			id: "3F2B685C8C008081"
 			shape: "hexagon"
 			size: 3.0d
@@ -699,6 +729,7 @@
 		{
 			dependencies: ["6D854F2600B922BD"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: "rediscovered:ruby_flute"
 			id: "2F2686D8E0B921C5"
 			subtitle: "Craft or find the gear to ride and tame your own Red Dragon"
@@ -725,12 +756,13 @@
 				}
 			]
 			title: "How to Tame Your Dragon 101"
-			x: -3.0d
-			y: 7.0d
+			x: -6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2F2686D8E0B921C5"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: "minecraft:grass_block"
 			id: "70E411F4BD751E0E"
 			subtitle: "Fly under the Skylands into the Overworld on your Red Dragon"
@@ -742,8 +774,8 @@
 				type: "advancement"
 			}]
 			title: "Trust The Process"
-			x: -3.0d
-			y: 8.0d
+			x: -6.0d
+			y: 7.5d
 		}
 	]
 	title: "4. The End"

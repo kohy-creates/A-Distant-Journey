@@ -13,6 +13,7 @@
 	quests: [
 		{
 			dependencies: ["6A911AFF4185ED0D"]
+			entity_vis_size: 1.0f
 			icon: "toms_storage:ts.inventory_connector"
 			id: "0B9481F02CACCE1D"
 			subtitle: "Craft an Inventory Connector and a Storage Terminal and place them together"
@@ -52,6 +53,7 @@
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
+			entity_vis_size: 1.0f
 			icon: "quark:oak_chest"
 			id: "6A911AFF4185ED0D"
 			shape: "diamond"
@@ -75,6 +77,7 @@
 		}
 		{
 			dependencies: ["6A911AFF4185ED0D"]
+			entity_vis_size: 1.0f
 			id: "5BE98BA6A0B68228"
 			subtitle: "Craft an Ender Chest"
 			tasks: [{
@@ -88,6 +91,7 @@
 		}
 		{
 			dependencies: ["0B9481F02CACCE1D"]
+			entity_vis_size: 1.0f
 			id: "5BEB59ADDC0C6099"
 			optional: true
 			shape: "rsquare"
@@ -103,6 +107,7 @@
 		}
 		{
 			dependencies: ["6A911AFF4185ED0D"]
+			entity_vis_size: 1.0f
 			id: "67FFFFBD84B01AD3"
 			subtitle: "Craft an Item Vault"
 			tasks: [{
@@ -116,6 +121,7 @@
 		}
 		{
 			dependencies: ["67FFFFBD84B01AD3"]
+			entity_vis_size: 1.0f
 			id: "169D3B18A90CC7ED"
 			subtitle: "Craft a Storage Drawer. They can hold up to 32 stacks of a single item type"
 			tasks: [{
@@ -129,6 +135,7 @@
 		}
 		{
 			dependencies: ["169D3B18A90CC7ED"]
+			entity_vis_size: 1.0f
 			id: "7748B4620625A726"
 			subtitle: "Craft a Drawer Upgrade that increases capacity"
 			tasks: [{
@@ -145,6 +152,7 @@
 				"67FFFFBD84B01AD3"
 				"169D3B18A90CC7ED"
 			]
+			entity_vis_size: 1.0f
 			icon: "functionalstorage:storage_controller"
 			id: "04E13C2B49FB154D"
 			subtitle: "Craft a Storage Controller. You can connect Storage Drawers to it to form a network"
@@ -170,6 +178,7 @@
 		}
 		{
 			dependencies: ["169D3B18A90CC7ED"]
+			entity_vis_size: 1.0f
 			id: "68BBB1D5801123E8"
 			subtitle: "Craft a Void Drawer Upgrade to prevent overfills"
 			tasks: [{
@@ -184,6 +193,7 @@
 		{
 			dependencies: ["6A911AFF4185ED0D"]
 			description: ["&7&lHINT:&r Flax only grows around &9Water&r, but relatively commonly, so look for it near &bLakes&r or &bRivers&r."]
+			entity_vis_size: 1.0f
 			icon: "supplementaries:sack"
 			id: "31907725CE8ED75D"
 			subtitle: "Collect some Flax and turn it into a Sack"
@@ -205,6 +215,7 @@
 		}
 		{
 			dependencies: ["6A911AFF4185ED0D"]
+			entity_vis_size: 1.0f
 			id: "72165200201BE4B0"
 			subtitle: "Craft some Brass Item Pipes. You can use it to, well, transport items"
 			tasks: [{
@@ -223,6 +234,7 @@
 				""
 				"If you build a &bmax level Beacon&r, then the range spans across all dimensions."
 			]
+			entity_vis_size: 1.0f
 			id: "1B63B128270724DC"
 			subtitle: "Craft an Advanced Wireless Terminal"
 			tasks: [{
@@ -237,6 +249,7 @@
 		{
 			dependencies: ["6A911AFF4185ED0D"]
 			description: ["&7&lHINT: &rHopperhocks &edon't require Mana to function&r! However, if you provide a constant supply then it's range will be more than doubled."]
+			entity_vis_size: 1.0f
 			id: "5F2D087B979A8FFE"
 			subtitle: "Craft a Hopperhock. It puts nearby dropped items into an adjacent Chest"
 			tasks: [{
@@ -263,6 +276,7 @@
 				"{@pagebreak}"
 				"&7&lHINT: &rPlacing a Corporea Spark on top of an &6Inventory Connector&r allows the network to access &eevery Chest connected to the Connector block&r, so it's extra powerful! This should also work with &5Storage Lecterns&r, if you prefer using those."
 			]
+			entity_vis_size: 1.0f
 			icon: "botania:corporea_spark_master"
 			id: "24C0C6AFE73F1784"
 			subtitle: "Create a very simple Corporea Network"
@@ -290,6 +304,7 @@
 		{
 			dependencies: ["6A911AFF4185ED0D"]
 			description: ["&7&lHINT:&r <color value=CB6D51>Copper Golems</color> will automatically sort items from any nearby <color value=CB6D51>Copper Chest</color> to suitable nearby Chests!"]
+			entity_vis_size: 1.0f
 			id: "16C68B74C0930678"
 			subtitle: "Summon a Copper Golem by placing a Carved Pumpkin on a Copper Block"
 			tasks: [{
@@ -309,6 +324,7 @@
 		}
 		{
 			dependencies: ["6A911AFF4185ED0D"]
+			entity_vis_size: 1.0f
 			id: "5AEAE441317F89D3"
 			subtitle: "Craft a Repository, which acts as a double chest in one block!"
 			tasks: [{
@@ -322,6 +338,7 @@
 		}
 		{
 			dependencies: ["5AEAE441317F89D3"]
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:bookwyrm_charm"
 			id: "12FE09325C0BD40F"
 			subtitle: "Make a relatively simple connected storage system using Bookwyrms"
@@ -353,6 +370,7 @@
 		{
 			dependencies: ["72165200201BE4B0"]
 			description: ["&7&lHINT:&r The first slot acts as a filter. &6Golden Hoppers&r will only take &lmatching&r items from the inventory block above them."]
+			entity_vis_size: 1.0f
 			id: "4BEE6F8968A016D7"
 			subtitle: "...and because of that we have a Golden Hopper"
 			tasks: [{

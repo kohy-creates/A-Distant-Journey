@@ -99,8 +99,8 @@
 			image: "witherstormmod:block/formidibomb_side"
 			rotation: 45.0d
 			width: 1.75d
-			x: 7.5d
-			y: 8.5d
+			x: 8.0d
+			y: 7.5d
 		}
 		{
 			dependency: "603D3F9B2298333B"
@@ -108,8 +108,8 @@
 			image: "witherstormmod:block/tainted_glass"
 			rotation: 45.0d
 			width: 1.75d
-			x: 17.5d
-			y: 9.5d
+			x: 16.5d
+			y: 8.0d
 		}
 		{
 			dependency: "3F2B685C8C008081"
@@ -126,8 +126,8 @@
 			image: "witherstormmod:block/withered_phlegm_block"
 			rotation: 45.0d
 			width: 1.75d
-			x: 0.0d
-			y: 8.0d
+			x: 0.5d
+			y: 5.5d
 		}
 		{
 			dependency: "3F2B685C8C008081"
@@ -154,23 +154,26 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["640E291225CA8A2A"]
 			disable_toast: true
+			entity_vis_size: 1.0f
+			icon: "witherstormmod:tainted_dirt"
 			id: "1D11D475F590FFE4"
-			shape: "hexagon"
+			invisible: true
+			shape: "circle"
 			size: 3.0d
-			subtitle: "Kill the Ender Guardian and collect the Eye of Desolation"
+			subtitle: "<i>What a mystery...?"
 			tasks: [{
-				id: "6CA63C69CCA0532D"
-				item: "kubejs:eye_of_desolation"
-				type: "item"
+				id: "4F6D9E4BB2EB7F1C"
+				stage: "chapter_5"
+				type: "decursiostage"
 			}]
-			title: "I Stared Into The Void"
+			title: "<glitch>???"
 			x: 3.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["3F2B685C8C008081"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "4C8E061A81250AC1"
 			subtitle: "Attune a Compass to locate the Command Block and follow where it leads you to"
@@ -205,6 +208,7 @@
 				"4C8E061A81250AC1"
 				"1D11D475F590FFE4"
 			]
+			entity_vis_size: 1.0f
 			id: "06E7DBDB7C7A790A"
 			shape: "diamond"
 			size: 1.5d
@@ -225,6 +229,7 @@
 				"3F2B685C8C008081"
 				"1D11D475F590FFE4"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon_scale: 0.75d
 			id: "41BD18823BE31271"
@@ -242,6 +247,7 @@
 		}
 		{
 			dependencies: ["41BD18823BE31271"]
+			entity_vis_size: 1.0f
 			id: "646540B4C4803445"
 			shape: "pentagon"
 			subtitle: "Create Metallurgium - the toughest of alloys to ever exist"
@@ -259,6 +265,7 @@
 				"41BD18823BE31271"
 				"6E4C5779C4DA9851"
 			]
+			entity_vis_size: 1.0f
 			id: "3915141D30CD6CB0"
 			shape: "pentagon"
 			subtitle: "Create Celestium - the most magical of alloys to ever exist"
@@ -274,12 +281,24 @@
 		}
 		{
 			dependencies: ["06E7DBDB7C7A790A"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "3E479B783B24C730"
 			shape: "circle"
 			size: 2.0d
 			subtitle: "Finish what's already there"
 			tasks: [{
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "minecraft:wither_skeleton_skull"
 				id: "33348AC40FBB3C9C"
 				observe_type: 5
@@ -289,8 +308,8 @@
 				type: "observation"
 			}]
 			title: "<shake><obfuscated>.A.d.s1.2d"
-			x: 2.4571428571428697d
-			y: 7.5d
+			x: 3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3E479B783B24C730"]
@@ -304,6 +323,7 @@
 				"{@pagebreak}"
 				"&7&lHINT 2:&r Sometimes an &5Eye of The Symbiont&r can drop in place of the &6Command Block Book&r. Don't worry, you can turn it into the latter with a &lvery&r simple crafting recipe."
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "witherstormmod:command_block_book"
 			id: "1F2003EDC1D3B0A4"
@@ -311,6 +331,18 @@
 			tasks: [
 				{
 					entity: "witherstormmod:withered_symbiont"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_tag_cycle_mode: "USE_GLOBAL"
+					entity_vis_tag_cycle_seconds: 0.0f
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "witherstormmod:withered_symbiont_spawn_egg"
 					id: "5796DBA222ED8458"
 					type: "kill"
@@ -324,11 +356,12 @@
 			]
 			title: "Symbiosis Necrosis"
 			x: 5.5d
-			y: 8.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3E479B783B24C730"]
 			description: [""]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "2E334E5F94908B83"
 			subtitle: "Craft an Amulet to help with tracking the Wither Storm"
@@ -347,6 +380,7 @@
 		}
 		{
 			dependencies: ["1F2003EDC1D3B0A4"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "59B252C7E4C71A35"
 			shape: "diamond"
@@ -362,11 +396,12 @@
 				type: "item"
 			}]
 			title: "Formidable"
-			x: 7.5d
-			y: 8.5d
+			x: 8.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["59B252C7E4C71A35"]
+			entity_vis_size: 1.0f
 			id: "636684C648DFFC9D"
 			shape: "circle"
 			size: 2.0d
@@ -379,11 +414,12 @@
 				type: "advancement"
 			}]
 			title: "The Strong Turn Weak"
-			x: 10.5d
-			y: 8.5d
+			x: 11.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2E334E5F94908B83"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "witherstormmod:amulet"
@@ -415,6 +451,7 @@
 		}
 		{
 			dependencies: ["636684C648DFFC9D"]
+			entity_vis_size: 1.0f
 			id: "603D3F9B2298333B"
 			invisible: true
 			shape: "hexagon"
@@ -429,11 +466,12 @@
 				type: "advancement"
 			}]
 			title: "The Weak Arise Stronger"
-			x: 13.0d
-			y: 9.5d
+			x: 14.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["603D3F9B2298333B"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "witherstormmod:command_block_sword"
 			id: "19068C7B62786F99"
@@ -451,12 +489,13 @@
 				type: "item"
 			}]
 			title: "Adminstrator Logic"
-			x: 15.5d
+			x: 14.0d
 			y: 9.5d
 		}
 		{
 			dependencies: ["494840EAB1FB2573"]
 			description: [""]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7832C35257E664E1"
 			subtitle: "Cure a wither sickened mob by feeding it Golden Apple Stew"
@@ -476,10 +515,11 @@
 			]
 			title: "Plague Doctor"
 			x: -1.0d
-			y: 9.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["19068C7B62786F99"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "088E92D166861F41"
 			shape: "diamond"
@@ -493,12 +533,13 @@
 				type: "dimension"
 			}]
 			title: "Belly of The Beast"
-			x: 17.5d
-			y: 9.5d
+			x: 16.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["088E92D166861F41"]
 			description: [""]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "2FC4D1B2E42E2124"
 			shape: "hexagon"
@@ -510,14 +551,15 @@
 				type: "item"
 			}]
 			title: "One Story Ends, Another Begins"
-			x: 20.5d
-			y: 11.0d
+			x: 16.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
 				"646540B4C4803445"
 				"3915141D30CD6CB0"
 			]
+			entity_vis_size: 1.0f
 			icon: "mythicmetals:celestium_block"
 			icon_scale: 0.75d
 			id: "52DBAF111AE45F4E"
@@ -543,6 +585,7 @@
 		}
 		{
 			dependencies: ["41BD18823BE31271"]
+			entity_vis_size: 1.0f
 			icon: "create_cataclysm:cataclysmic_alloy"
 			id: "0E1167447AFB1F55"
 			shape: "pentagon"
@@ -572,6 +615,7 @@
 				"{@pagebreak}"
 				"The more The Wither Storm grows, &cthe more infected mobs you will see in your world&r, even outside its vicinity. Don't be surprised if all of a sudden &5Sickened mobs&r start spawning during nights or underground. &4It can only get worse from here&r."
 			]
+			entity_vis_size: 1.0f
 			icon: "witherstormmod:withered_bone"
 			id: "494840EAB1FB2573"
 			subtitle: "Kill some Sickened mobs and collect their drops"
@@ -598,11 +642,12 @@
 				}
 			]
 			title: "Withering Away"
-			x: 1.0d
-			y: 9.0d
+			x: 0.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["494840EAB1FB2573"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "4EBF126E2037E270"
 			shape: "diamond"
@@ -614,11 +659,12 @@
 				type: "item"
 			}]
 			title: "Yuck Vacuum Hopper"
-			x: 0.0d
-			y: 8.0d
+			x: 0.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["494840EAB1FB2573"]
+			entity_vis_size: 1.0f
 			id: "00DE59EBCC3F31C9"
 			subtitle: "Taint a Carved Pumpkin"
 			tasks: [{
@@ -627,11 +673,12 @@
 				type: "item"
 			}]
 			title: "Cyclops"
-			x: -0.5d
-			y: 10.5d
+			x: -1.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["494840EAB1FB2573"]
+			entity_vis_size: 1.0f
 			icon: "witherstorm_delight:tainted_essence"
 			id: "3E2EF52784EFF652"
 			subtitle: "Cook up some Tainted Essence"
@@ -641,11 +688,12 @@
 				type: "item"
 			}]
 			title: "Necrotic Cooking"
-			x: 1.0d
-			y: 11.0d
+			x: 0.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["3E479B783B24C730"]
+			entity_vis_size: 1.0f
 			id: "46ADC2671999F886"
 			subtitle: "Craft a Phasometer to keep track of The Wither Storm from a safe distance"
 			tasks: [{
@@ -663,6 +711,7 @@
 		}
 		{
 			dependencies: ["3E2EF52784EFF652"]
+			entity_vis_size: 1.0f
 			icon: "witherstorm_delight:withered_rice"
 			id: "4FC46C0A664132B9"
 			subtitle: "Taint some cooking ingredients"
@@ -689,9 +738,9 @@
 				}
 			]
 			title: "Through Death, Reborn"
-			x: 1.0d
-			y: 12.5d
+			x: -0.5d
+			y: 10.5d
 		}
 	]
-	title: "5. Wither Storm"
+	title: "5. <glitch>???"
 }

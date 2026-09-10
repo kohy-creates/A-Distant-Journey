@@ -613,5 +613,10 @@ ServerEvents.tags('item', tags => {
 		'alexscaves:heavyweight'
 	]);
 
-	tags.remove('')
+	tags.add('galosphere:weapon_racks_can_hold', [
+		'#c:pickaxes',
+		'#c:axes',
+		'#c:hoes',
+		'#c:shovels',
+	]);
 });

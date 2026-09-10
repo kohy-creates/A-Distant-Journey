@@ -8,7 +8,6 @@
 	id: "10A794B38767C30C"
 	images: [
 		{
-			dependency: "379A22A2185CFC8E"
 			height: 5.0d
 			image: "adj:textures/other/bg_nether_blackstone.png"
 			order: -999
@@ -18,7 +17,6 @@
 			y: 0.9500000000000002d
 		}
 		{
-			dependency: "379A22A2185CFC8E"
 			height: 5.0d
 			image: "adj:textures/other/bg_stone_ores_2.png"
 			order: -999
@@ -28,40 +26,55 @@
 			y: -2.55d
 		}
 		{
-			dependency: "379A22A2185CFC8E"
 			height: 5.0d
 			image: "adj:textures/texts/chapter_1.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: -5.0d
-			y: -3.5d
+			x: -7.5d
+			y: -4.5d
 		}
 		{
-			dependency: "379A22A2185CFC8E"
-			height: 1.75d
-			image: "born_in_chaos_v1:block/bloktiemnoistali"
-			rotation: 45.0d
-			width: 1.75d
-			x: 0.1499999999999999d
-			y: -0.04999999999999982d
-		}
-		{
-			dependency: "379A22A2185CFC8E"
 			height: 6.0d
 			image: "adj:textures/texts/lore_nether.png"
 			rotation: 0.0d
 			width: 12.0d
 			x: -8.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
-			dependency: "379A22A2185CFC8E"
 			height: 1.75d
 			image: "twilightforest:block/canopy_log_top"
 			rotation: 45.0d
 			width: 1.75d
-			x: -4.0d
-			y: 2.5d
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_nether_blackstone.png"
+			order: -999
+			rotation: 0.0d
+			width: 10.0d
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_nether.png"
+			order: -999
+			rotation: 180.0d
+			width: 10.0d
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			height: 5.0d
+			image: "adj:textures/other/bg_nether.png"
+			order: -999
+			rotation: 180.0d
+			width: 10.0d
+			x: -5.0d
+			y: 0.0d
 		}
 	]
 	order_index: 1
@@ -71,7 +84,13 @@
 	quests: [
 		{
 			dependencies: ["379A22A2185CFC8E"]
-			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Fortress!"]
+			description: [
+				"### HINT"
+				"You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Fortress!"
+				"{@pagebreak}"
+				"(new page placeholder text)"
+			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "minecraft:nether_bricks"
 			id: "0B0DF609ABC8773D"
@@ -100,6 +119,7 @@
 		}
 		{
 			dependencies: ["0B0DF609ABC8773D"]
+			entity_vis_size: 1.0f
 			id: "336C2A75C5BFF1B8"
 			subtitle: "Relieve a Blaze of its rods"
 			tasks: [{
@@ -113,6 +133,7 @@
 		}
 		{
 			dependencies: ["336C2A75C5BFF1B8"]
+			entity_vis_size: 1.0f
 			id: "112388B5EDB9C9D2"
 			subtitle: "Craft a Brewing Stand"
 			tasks: [{
@@ -126,6 +147,7 @@
 		}
 		{
 			dependencies: ["0B0DF609ABC8773D"]
+			entity_vis_size: 1.0f
 			icon: "kubejs:skull_fragment"
 			id: "19E87E63C5C295AE"
 			subtitle: "Obtain a Wither Skeleton Skull"
@@ -148,6 +170,7 @@
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "236739201289D4DD"
 			subtitle: "Enter a Bastion"
@@ -159,11 +182,12 @@
 				type: "structure"
 			}]
 			title: "Those Were The Days"
-			x: 1.15d
-			y: 0.9500000000000002d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "mythicmetals:mythril_ingot"
 			id: "5AEA2A64181AED93"
@@ -192,10 +216,11 @@
 			]
 			title: "From The Depths"
 			x: -2.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "alloy_forgery:nether_bricks_forge_controller"
 			id: "49D421ADF1794A16"
@@ -211,6 +236,7 @@
 		}
 		{
 			dependencies: ["336C2A75C5BFF1B8"]
+			entity_vis_size: 1.0f
 			id: "6B4A4956BDF1E1AB"
 			subtitle: "Awaken the magic inside an Ender Pearl"
 			tasks: [{
@@ -224,6 +250,7 @@
 		}
 		{
 			dependencies: ["6B4A4956BDF1E1AB"]
+			entity_vis_size: 1.0f
 			icon: "cataclysm:desert_eye"
 			id: "26A9109005EE03BF"
 			optional: true
@@ -246,28 +273,8 @@
 			y: 2.45d
 		}
 		{
-			dependencies: ["379A22A2185CFC8E"]
-			hide_until_deps_complete: true
-			icon: "born_in_chaos_v1:nightmare_stalker_skull"
-			icon_scale: 0.75d
-			id: "58D9C1D755CC3E6E"
-			shape: "diamond"
-			size: 1.5d
-			subtitle: "Kill a Nightmare Stalker"
-			tasks: [{
-				entity: "born_in_chaos_v1:nightmare_stalker"
-				icon: "born_in_chaos_v1:nightmare_stalker_skull"
-				id: "09CB8AFD413AC207"
-				title: "Kill a Nightmare Stalker"
-				type: "kill"
-				value: 1L
-			}]
-			title: "Worsening Nigthmares"
-			x: 0.1499999999999999d
-			y: -0.04999999999999982d
-		}
-		{
 			dependencies: ["236739201289D4DD"]
+			entity_vis_size: 1.0f
 			id: "3C6D5381BA4C55A1"
 			subtitle: "Find a Pigstep Music Disc"
 			tasks: [{
@@ -276,12 +283,16 @@
 				type: "item"
 			}]
 			title: "Pigs Step!"
-			x: 2.65d
-			y: 0.4500000000000002d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["236739201289D4DD"]
-			description: ["&7&lHINT: &rYou can barter with Piglins with &6Midas Gold Ingots&r ;)"]
+			description: [
+				"### HINT"
+				"You can barter with Piglins with &6Midas Gold Ingots&r ;)"
+			]
+			entity_vis_size: 1.0f
 			id: "765297F2529419A9"
 			subtitle: "Barter for an Enchanted Midas Gold Block"
 			tasks: [{
@@ -290,11 +301,12 @@
 				type: "item"
 			}]
 			title: "Midas' Touch"
-			x: 2.15d
-			y: 1.4500000000000002d
+			x: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["112388B5EDB9C9D2"]
+			entity_vis_size: 1.0f
 			id: "09398D1D38C7ED0D"
 			optional: true
 			shape: "rsquare"
@@ -318,6 +330,7 @@
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:nether_wart_block"
 			id: "612A31333B1F6C1D"
 			subtitle: "Discover all Nether biomes"
@@ -377,6 +390,7 @@
 		}
 		{
 			dependencies: ["5AEA2A64181AED93"]
+			entity_vis_size: 1.0f
 			id: "5E0A9577C42882A7"
 			optional: true
 			shape: "rsquare"
@@ -393,6 +407,7 @@
 		{
 			dependencies: ["612A31333B1F6C1D"]
 			dependency_requirement: "one_started"
+			entity_vis_size: 1.0f
 			icon: "netherexp:nether_pizza"
 			id: "3A6A3CAC79DFDDCE"
 			optional: true
@@ -419,6 +434,7 @@
 			dependencies: ["612A31333B1F6C1D"]
 			dependency_requirement: "one_started"
 			description: ["&7&lHINT:&r You can equip it with a &6Harness&r of your choice to turn it into a floating mount!"]
+			entity_vis_size: 1.0f
 			icon: "dried_ghast:dried_ghast"
 			id: "0562284D4662E981"
 			subtitle: "Rescue a Dry Ghast and place it in any bed of Water"
@@ -446,10 +462,22 @@
 		}
 		{
 			dependencies: ["19E87E63C5C295AE"]
+			entity_vis_size: 1.0f
 			icon: "netherexp:ecto_soul_sand"
 			id: "5A24E62380261206"
 			subtitle: "Summon a Wither"
 			tasks: [{
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "minecraft:wither_skeleton_skull"
 				id: "3A629687CBEED2E7"
 				observe_type: 5
@@ -463,24 +491,24 @@
 			y: 5.45d
 		}
 		{
-			dependencies: [
-				"5C3628B6D376AB8F"
-				"522528FDCD548F12"
-			]
 			dependency_requirement: "one_completed"
 			description: [""]
 			disable_toast: true
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: "minecraft:netherrack"
 			id: "379A22A2185CFC8E"
+			invisible: true
 			shape: "circle"
-			size: 2.0d
-			subtitle: "<i>Bring summer clothes</i>"
+			size: 3.0d
+			subtitle: "<i>Sathan I'm home! By the way, bring summer clothes</i>"
 			tasks: [{
-				dimension: "minecraft:the_nether"
-				id: "1B286A4402E3E143"
-				type: "dimension"
+				id: "4759E6CAC1695E47"
+				secret: true
+				stage: "chapter_1"
+				type: "decursiostage"
 			}]
-			title: "We Need to Go Deeper"
+			title: "The Nether"
 			x: -2.0d
 			y: 1.0d
 		}
@@ -495,6 +523,7 @@
 				""
 				"You can activate the portal by tossing in a singular &dDragonstone&r."
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "twilightforest:hollow_oak_sapling"
 			icon_scale: 0.75d
@@ -524,11 +553,12 @@
 				}
 			]
 			title: "Story of Eastern Wonderland"
-			x: -4.0d
-			y: 2.5d
+			x: -4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5A24E62380261206"]
+			entity_vis_size: 1.0f
 			icon: "kubejs:eye_of_cinders"
 			id: "44BE3D4079FF34DF"
 			shape: "hexagon"

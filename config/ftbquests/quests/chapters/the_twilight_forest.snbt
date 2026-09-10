@@ -93,6 +93,7 @@
 				"In order to break the spells and be able to venture deeper into the forest and discover the &7Final Castle&r, you will need to &edefeat some bosses&r that are connected to the defensive spells. Oh, and collect some &eEyes&r beforehands. Since the dimension was created artificially, it gets more stable the more of them you have ;)"
 			]
 			disable_toast: true
+			entity_vis_size: 1.0f
 			icon: "twilightforest:hollow_oak_sapling"
 			icon_scale: 0.75d
 			id: "3EAD28D06360BF09"
@@ -115,10 +116,23 @@
 		}
 		{
 			dependencies: ["3EAD28D06360BF09"]
+			entity_vis_size: 1.0f
 			id: "718E0AAC4FC76ECF"
 			subtitle: "Slay The Naga in its Maze, breaking the spell around the Lich's tower"
 			tasks: [{
 				entity: "twilightforest:naga"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:naga_trophy"
 				id: "4BFB14C7753388E7"
 				title: "Kill The Naga"
@@ -132,6 +146,7 @@
 		{
 			dependencies: ["3EAD28D06360BF09"]
 			description: ["&7&lHINT: &r&bMagic Maps&r will show you a huge fragment of your surrounding area and highlight important structures in the Twilight Forest. If you don't want to spend an eternity walking around, it is &eTHE way&r."]
+			entity_vis_size: 1.0f
 			icon: "twilightforest:magic_map_focus"
 			id: "731EC9704C2561F1"
 			subtitle: "Craft a Magic Map to make everything infinitely easier to find"
@@ -156,10 +171,23 @@
 				"718E0AAC4FC76ECF"
 				"20130F300D432015"
 			]
+			entity_vis_size: 1.0f
 			id: "33DE618E8B49FC45"
 			subtitle: "Slay The Lich in its tower, further breaking the spells put on The Twilight Forest"
 			tasks: [{
 				entity: "twilightforest:lich"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:lich_trophy"
 				id: "751A22012F5D8C69"
 				title: "Kill The Lich"
@@ -172,6 +200,7 @@
 		}
 		{
 			dependencies: ["718E0AAC4FC76ECF"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "twilightforest:naga_chestplate"
@@ -218,6 +247,7 @@
 				""
 				"&cBosses&r drop their trophies &e10% of the time&r when killed."
 			]
+			entity_vis_size: 1.0f
 			id: "1DBCDCBED96264BB"
 			subtitle: "Claim your title by placing any Mob Trophy on a Trophy Pedestal in the ruins in Dark Forest"
 			tasks: [{
@@ -246,10 +276,23 @@
 				"1DBCDCBED96264BB"
 				"0B324EAA86875970"
 			]
+			entity_vis_size: 1.0f
 			id: "57096EC0B254AADA"
 			subtitle: "Put the Knight Phantom back to rest"
 			tasks: [{
 				entity: "twilightforest:knight_phantom"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:knight_phantom_trophy"
 				id: "32E7EADC698CAC44"
 				title: "Kill a Knight Phantom"
@@ -263,6 +306,7 @@
 		{
 			dependencies: ["33DE618E8B49FC45"]
 			description: ["&7&lHINT:&r A &eMaze Map&r might help you navigate through it to the &cMinoshroom&r."]
+			entity_vis_size: 1.0f
 			icon: "twilightforest:mazestone_brick"
 			id: "0757324FFD3819A1"
 			min_required_tasks: 1
@@ -289,10 +333,23 @@
 		}
 		{
 			dependencies: ["0757324FFD3819A1"]
+			entity_vis_size: 1.0f
 			id: "004B1FB44B211C7C"
 			subtitle: "Kill the Minoshroom in its maze"
 			tasks: [{
 				entity: "twilightforest:minoshroom"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:minoshroom_trophy"
 				id: "3730F9222D5CD8FA"
 				title: "Kill a Minoshroom"
@@ -305,6 +362,7 @@
 		}
 		{
 			dependencies: ["0757324FFD3819A1"]
+			entity_vis_size: 1.0f
 			id: "1096F464B45D63FF"
 			optional: true
 			shape: "rsquare"
@@ -323,10 +381,23 @@
 				"57096EC0B254AADA"
 				"545C995B87BA0947"
 			]
+			entity_vis_size: 1.0f
 			id: "09A687D368150F4B"
 			subtitle: "Slay the Ur-Ghast and collect its blood"
 			tasks: [{
 				entity: "twilightforest:ur_ghast"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:ur_ghast_trophy"
 				id: "3CB70F19584AD8F1"
 				title: "Kill an Ur-Ghast"
@@ -342,10 +413,23 @@
 				"004B1FB44B211C7C"
 				"545C995B87BA0947"
 			]
+			entity_vis_size: 1.0f
 			id: "23C6460818CAA8F0"
 			subtitle: "Defeat the mighty Hydra and collect its blood"
 			tasks: [{
 				entity: "twilightforest:hydra"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:hydra_trophy"
 				id: "4F4D3448CD12FD69"
 				title: "Kill a Hydra"
@@ -362,10 +446,23 @@
 				"09A687D368150F4B"
 				"6E9823FB2C7C6D19"
 			]
+			entity_vis_size: 1.0f
 			id: "4C5FB897B907366A"
 			subtitle: "Defeat the Alpha Yeti in its lair"
 			tasks: [{
 				entity: "twilightforest:alpha_yeti"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:alpha_yeti_trophy"
 				id: "1B3F80B7EF34D321"
 				title: "Kill an Alpha Yeti"
@@ -378,10 +475,23 @@
 		}
 		{
 			dependencies: ["4C5FB897B907366A"]
+			entity_vis_size: 1.0f
 			id: "6AF57344A6530D2E"
 			subtitle: "Kill the Snow Queen in her castle on the glaciers"
 			tasks: [{
 				entity: "twilightforest:snow_queen"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "twilightforest:snow_queen_trophy"
 				id: "0AA3209E98621C4C"
 				title: "Kill a Snow Queen"
@@ -394,6 +504,7 @@
 		}
 		{
 			dependencies: ["6AF57344A6530D2E"]
+			entity_vis_size: 1.0f
 			icon: "twilightforest:magic_beans"
 			id: "0AD5DEABD53DD691"
 			subtitle: "Dig down to the troll caves, find Magic Beans and plant them on Uberous Soil"
@@ -420,6 +531,7 @@
 		}
 		{
 			dependencies: ["6AF57344A6530D2E"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "twilightforest:giant_pickaxe"
@@ -459,6 +571,7 @@
 		}
 		{
 			dependencies: ["635B3CA9DF9AEFE0"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "twilightforest:lamp_of_cinders"
@@ -492,6 +605,7 @@
 		}
 		{
 			dependencies: ["33DE618E8B49FC45"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "twilightforest:twilight_scepter"
@@ -542,6 +656,7 @@
 		}
 		{
 			dependencies: ["137CCC12CF3F56E2"]
+			entity_vis_size: 1.0f
 			id: "3669FAFD806AE09C"
 			subtitle: "Burn away the thorns surrounding the Final Castle and enter its premises"
 			tasks: [{
@@ -561,6 +676,7 @@
 				"09A687D368150F4B"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "137DF4F56A85289F"
 			subtitle: "Combine Palladium, Gold and Burning Blood to make Magmatic Alloy"
@@ -575,6 +691,7 @@
 		}
 		{
 			dependencies: ["137DF4F56A85289F"]
+			entity_vis_size: 1.0f
 			id: "1AB1539B48BA3163"
 			subtitle: "Craft the Volcano"
 			tasks: [{
@@ -594,6 +711,7 @@
 		}
 		{
 			dependencies: ["3EAD28D06360BF09"]
+			entity_vis_size: 1.0f
 			id: "4C4EBDFDC00FEDDD"
 			subtitle: "Forge Ironwood"
 			tasks: [{
@@ -607,6 +725,7 @@
 		}
 		{
 			dependencies: ["4C4EBDFDC00FEDDD"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "twilightforest:ironwood_axe"
@@ -715,6 +834,7 @@
 		}
 		{
 			dependencies: ["3669FAFD806AE09C"]
+			entity_vis_size: 1.0f
 			icon: "summoningrituals:altar"
 			id: "7404E901169113BF"
 			shape: "hexagon"
@@ -732,6 +852,7 @@
 		}
 		{
 			dependencies: ["7404E901169113BF"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "50E324237A1C2859"
 			subtitle: "Craft an Uncrafting Table. This sounds funny tbh..."
@@ -747,6 +868,7 @@
 		{
 			dependencies: ["7404E901169113BF"]
 			dependency_requirement: "one_started"
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "79726FD968415372"
 			subtitle: "Craft an Unobtainium Construction Wand"
@@ -767,6 +889,7 @@
 		}
 		{
 			dependencies: ["7404E901169113BF"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "53B0AFB0527EDA63"
 			subtitle: "Craft a Monster-Piercing Elephant Crossbow"
@@ -787,6 +910,7 @@
 		}
 		{
 			dependencies: ["137DF4F56A85289F"]
+			entity_vis_size: 1.0f
 			id: "73A9695959C736A0"
 			optional: true
 			shape: "rsquare"
@@ -802,6 +926,7 @@
 		}
 		{
 			dependencies: ["7404E901169113BF"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "12F4562EEF0E5E45"
 			subtitle: "Craft a Gravity Globe"
@@ -817,6 +942,7 @@
 		{
 			dependencies: ["33DE618E8B49FC45"]
 			description: ["&7&lHINT:&r It is long lost and might be buried underground. A &6Magic Map&r will be useful for locating it"]
+			entity_vis_size: 1.0f
 			icon: "twilightforest:underbrick"
 			id: "0B324EAA86875970"
 			min_required_tasks: 1

@@ -1,0 +1,11 @@
+#Dual blacklist for modded bows and crossbows, takes their in-game ID (e.g. mob-ai-tweaks:modded_bow_or_crossbow_item)
+bows:stone_bow
+bows:iron_bow
+bows:golden_bow
+bows:diamond_bow
+bows:netherite_bow
+bows:stone_crossbow
+bows:iron_crossbow
+bows:golden_crossbow
+bows:diamond_crossbow
+bows:netherite_crossbow

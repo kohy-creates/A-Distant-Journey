@@ -1,0 +1,24 @@
+#Master toggle for the Advanced Loot Info (ALI) optimizations.
+#Only has any effect when Advanced Loot Info (modid 'ali') is installed - FastALI patches
+#ALI at runtime, no ALI code is bundled. When ALI is absent this does nothing.
+optimizeAli = true
+#Collect the items of each loot table once instead of twice while ALI reads loot info.
+#ALI builds its loot-table-to-items map with a stream and then recomputes every entry in a
+#second loop that overwrites the first result with an identical one. Safe.
+optimizeAliItemPass = true
+#Decide whether a loot table's node tree is empty without collecting every item in it.
+#ALI allocates the full item list of every node tree only to call isEmpty() on it. Safe.
+optimizeAliEmptinessCheck = true
+#Stop scanning the enchantment registry once two enchantments match the item being
+#described by an enchant_randomly loot function. ALI scans every enchantment to build a
+#list it only ever asks 'is there exactly one?' and 'give me the first', so the answer is
+#already decided by the second match. This is the single biggest cost of ALI's loot pass
+#on a pack with many modded enchantments. Safe.
+optimizeAliEnchantScan = true
+#Cache the throwaway sample entities ALI builds while resolving which entity owns a loot
+#table, so a /reload or datapack reload doesn't reconstruct every mob from scratch.
+#Dropped whenever the level changes or unloads. Safe.
+optimizeAliEntityCache = true
+#Log how long each FastALI-accelerated phase took and what it avoided.
+logTimings = true
+

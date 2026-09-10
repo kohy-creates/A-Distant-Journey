@@ -5,11 +5,12 @@
 	filename: "cave_exploration"
 	group: "4C4C64E64E42D01F"
 	id: "71F13BF704EDC145"
-	order_index: 3
+	order_index: 2
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [{
+		entity_vis_size: 1.0f
 		id: "4ED4E1C82BC94113"
 		shape: "diamond"
 		size: 2.0d

@@ -1,0 +1,13 @@
+after_burner=true
+auto_loading_holster=true
+blasting_impression=true
+descent=true
+despise=true
+featherweight_munitions=true
+full_auto_retrofit=true
+grappling_bobber=true
+kick_back=true
+perfect_parry=true
+recall=true
+vorpal_weapon=true
+withering_munitions=true

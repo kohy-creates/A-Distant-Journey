@@ -33,8 +33,8 @@
 			image: "minecraft:block/beacon_glass"
 			rotation: 45.0d
 			width: 1.75d
-			x: 0.0d
-			y: -6.5d
+			x: -2.5d
+			y: -7.0d
 		}
 		{
 			dependency: "20130F300D432015"
@@ -42,8 +42,8 @@
 			image: "rediscovered:block/nether_reactor_core"
 			rotation: 45.0d
 			width: 1.75d
-			x: 1.0d
-			y: -5.0d
+			x: -4.0d
+			y: -4.0d
 		}
 		{
 			dependency: "574DD3FD26A23CDE"
@@ -69,8 +69,8 @@
 			image: "adj:textures/texts/lore_aether.png"
 			rotation: 0.0d
 			width: 12.0d
-			x: 5.5d
-			y: -9.5d
+			x: 4.0d
+			y: -8.5d
 		}
 		{
 			dependency: "574DD3FD26A23CDE"
@@ -87,8 +87,8 @@
 			image: "adj:textures/texts/chapter_2.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 4.5d
-			y: -5.5d
+			x: 2.5d
+			y: -5.0d
 		}
 		{
 			dependency: "574DD3FD26A23CDE"
@@ -100,6 +100,24 @@
 			x: 3.5d
 			y: -4.5d
 		}
+		{
+			click: "quest_enhance:text_v3:1.0:17:minecraft:default<b>STARTS HARDMODE!"
+			height: 0.4583333333333333d
+			image: ""
+			rotation: 0.0d
+			width: 4.5d
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			click: "quest_enhance:text_v3:1.0:17:minecraft:defaultComplete only when you're ready!"
+			height: 0.4583333333333333d
+			image: ""
+			rotation: 0.0d
+			width: 6.958333333333333d
+			x: 0.5d
+			y: 5.5d
+		}
 	]
 	order_index: 2
 	quest_enhance_decorative_lines: [ ]
@@ -108,6 +126,7 @@
 	quests: [
 		{
 			dependencies: ["20130F300D432015"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "mythicmetals:palladium_ingot"
 			id: "24B17C04E6963192"
@@ -126,23 +145,25 @@
 			]
 			title: "From the Depths of Hell"
 			x: -4.5d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["20130F300D432015"]
 			description: [
-				"&7&lHINT:&r Building an Aether Portal is easy! Just do the same you'd do for a Nether Portal, just out of Glowstone!"
+				"### HINT"
+				"Building an Aether Portal is easy! Just do the same you'd do for a Nether Portal, just out of Glowstone!"
 				""
-				"                   &6⬛⬛⬛⬛"
-				"                   &6⬛    ⬛"
-				"                   &6⬛    ⬛"
-				"                   &6⬛    ⬛"
-				"                   &6⬛⬛⬛⬛"
+				"&6⬛⬛⬛⬛"
+				"&6⬛    ⬛"
+				"&6⬛    ⬛"
+				"&6⬛    ⬛"
+				"&6⬛⬛⬛⬛"
 				""
 				"Activate it with a Water Bucket."
 				""
 				"You probably knew all of that already, even if you weren't familiar with the Aether. We were all dissappointed to find out it's not real. It's pretty much a canon event."
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "minecraft:glowstone"
 			id: "574DD3FD26A23CDE"
@@ -164,6 +185,7 @@
 		{
 			dependencies: ["3B047A7072164813"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "aether:zanite_pickaxe"
@@ -228,6 +250,7 @@
 		{
 			dependencies: ["6541FB163E3300CE"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "aether:gravitite_pickaxe"
@@ -292,6 +315,7 @@
 		{
 			dependencies: ["574DD3FD26A23CDE"]
 			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Bronze Dungeon!"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "aether:bronze_dungeon_key"
 			id: "2BA00BEE5144D82B"
@@ -320,11 +344,24 @@
 		}
 		{
 			dependencies: ["2BA00BEE5144D82B"]
+			entity_vis_size: 1.0f
 			icon: "aether:carved_stone"
 			id: "353921E41B80F09D"
 			subtitle: "Kill the Slider, an animated block of bricks"
 			tasks: [{
 				entity: "aether:slider"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "aether:bronze_dungeon_key"
 				id: "0174AFD13E6D9478"
 				type: "kill"
@@ -337,6 +374,7 @@
 		{
 			dependencies: ["574DD3FD26A23CDE"]
 			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Gold Dungeon!"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "aether:gold_dungeon_key"
 			id: "501980860925DC72"
@@ -366,6 +404,7 @@
 		{
 			dependencies: ["574DD3FD26A23CDE"]
 			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Silver Dungeon!"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "aether:silver_dungeon_key"
 			id: "554D78E50EBB7EF8"
@@ -395,6 +434,7 @@
 		{
 			dependencies: ["574DD3FD26A23CDE"]
 			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Platinum Dungeon!"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "lost_aether_content:platinum_key"
 			id: "170CD4B41CA6F9C1"
@@ -423,11 +463,24 @@
 		}
 		{
 			dependencies: ["554D78E50EBB7EF8"]
+			entity_vis_size: 1.0f
 			icon: "aether:victory_medal"
 			id: "0CC3E441C652E02E"
 			subtitle: "Kill the Valkyrie Queen, the leader of the Aether's fiercest fighters"
 			tasks: [{
 				entity: "aether:valkyrie_queen"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "aether:silver_dungeon_key"
 				id: "6112AEB451DE555B"
 				type: "kill"
@@ -439,11 +492,24 @@
 		}
 		{
 			dependencies: ["501980860925DC72"]
+			entity_vis_size: 1.0f
 			icon: "aether:sun_altar"
 			id: "464BE56223B9DADC"
 			subtitle: "Kill the Sun Spirit, the one that divides the Day from the Night"
 			tasks: [{
 				entity: "aether:sun_spirit"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "aether:gold_dungeon_key"
 				id: "7C385F94FF9BBA4D"
 				type: "kill"
@@ -455,11 +521,24 @@
 		}
 		{
 			dependencies: ["170CD4B41CA6F9C1"]
+			entity_vis_size: 1.0f
 			icon: "lost_aether_content:gale_stone"
 			id: "72FA802480074182"
 			subtitle: "Kill the Aerwhale King. He's... the King of Aerwhales... I think that one doesn't need much explaining"
 			tasks: [{
 				entity: "lost_aether_content:aerwhale_king"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "lost_aether_content:platinum_key"
 				id: "5F990F548BDF2E5C"
 				title: "Kill an Aerwhale King"
@@ -473,10 +552,11 @@
 		{
 			dependencies: ["72FA802480074182"]
 			description: [
-				"&7&lHINT:&r &nEverything goes downhill from this point onwards&r."
+				"### WARNING"
 				""
-				"There is a &c&lhuge difficulty spike&r entering Chapter 3, so make sure you are prepared for it."
+				"[!warn] There is a &c&lhuge difficulty spike&r entering Chapter 3, so make sure you are prepared for it."
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: false
 			icon: "kubejs:eye_of_angels"
 			id: "545C995B87BA0947"
@@ -494,6 +574,7 @@
 		}
 		{
 			dependencies: ["3B047A7072164813"]
+			entity_vis_size: 1.0f
 			id: "6541FB163E3300CE"
 			subtitle: "Construct an Aether Altar"
 			tasks: [{
@@ -507,6 +588,7 @@
 		}
 		{
 			dependencies: ["574DD3FD26A23CDE"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "aether_redux:infused_veridium_pickaxe"
@@ -592,6 +674,7 @@
 		}
 		{
 			dependencies: ["574DD3FD26A23CDE"]
+			entity_vis_size: 1.0f
 			id: "3B047A7072164813"
 			subtitle: "Get a Zanite Gemstone"
 			tasks: [{
@@ -605,6 +688,7 @@
 		}
 		{
 			dependencies: ["6541FB163E3300CE"]
+			entity_vis_size: 1.0f
 			id: "6AA0B069D1C702F1"
 			optional: true
 			shape: "rsquare"
@@ -620,6 +704,7 @@
 		}
 		{
 			dependencies: ["6541FB163E3300CE"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "aether:gravitite_chestplate"
@@ -684,6 +769,7 @@
 		}
 		{
 			dependencies: ["20130F300D432015"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon_scale: 0.75d
 			id: "1ADCB4CAD715CCB6"
@@ -707,11 +793,12 @@
 				}
 			]
 			title: "Beaconator"
-			x: 0.0d
-			y: -6.5d
+			x: -2.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["20130F300D432015"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon_scale: 0.75d
 			id: "3CF2A61BB7C8D79B"
@@ -725,11 +812,12 @@
 				type: "item"
 			}]
 			title: "Pocket Biome"
-			x: 1.011904761904745d
-			y: -4.976190476190496d
+			x: -3.988095238095255d
+			y: -3.976190476190496d
 		}
 		{
 			dependencies: ["353921E41B80F09D"]
+			entity_vis_size: 1.0f
 			id: "4309E836BAF22148"
 			optional: true
 			shape: "rsquare"
@@ -752,6 +840,7 @@
 		{
 			dependencies: ["574DD3FD26A23CDE"]
 			description: ["&7&lHINT:&r You can craft a &eBound Wayfinder&r through a &7Ritual of Locate Structure&r to easily find the nearest Platinum Dungeon!"]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "ancient_aether:laboratory_dungeon_key"
 			id: "70CB0A3DAA970B81"
@@ -780,11 +869,24 @@
 		}
 		{
 			dependencies: ["70CB0A3DAA970B81"]
+			entity_vis_size: 1.0f
 			icon: "aether:aechor_petal"
 			id: "2F46F962D867A81D"
 			subtitle: "Kill the Mutated Aechor Plant"
 			tasks: [{
 				entity: "ancient_aether:mutated_aechor_plant"
+				entity_use_tag: false
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "ancient_aether:laboratory_dungeon_key"
 				id: "5822B45E49FA6F39"
 				type: "kill"
@@ -796,6 +898,7 @@
 		}
 		{
 			dependencies: ["0CC3E441C652E02E"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "47D482E31D5852AE"
 			shape: "diamond"
@@ -811,24 +914,26 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["5A24E62380261206"]
 			disable_toast: true
-			icon: "kubejs:eye_of_cinders"
+			entity_vis_size: 1.0f
+			icon: "aether:aether_grass_block"
 			id: "20130F300D432015"
-			shape: "hexagon"
+			invisible: true
+			shape: "circle"
 			size: 3.0d
-			subtitle: "Slay the Wither and collect the Eye of Cinders"
+			subtitle: "<i>If hell is forever, then heaven must be a lie...?"
 			tasks: [{
-				id: "6087089B4CF44C39"
-				item: "kubejs:eye_of_cinders"
-				type: "item"
+				id: "25C844C38EAC5B26"
+				stage: "chapter_2"
+				type: "decursiostage"
 			}]
-			title: "The Beginning"
+			title: "The Aether"
 			x: -1.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["353921E41B80F09D"]
+			entity_vis_size: 1.0f
 			id: "4E98AEFF38CB858E"
 			optional: true
 			shape: "rsquare"

@@ -1,0 +1,22 @@
+#Do mobs spin?
+mobsSpin = true
+#Spin speed multiplier.
+#Range: 0.0 ~ 10.0
+spinSpeed = 1.0
+#Camera tilt in degrees.
+#Range: -90.0 ~ 90.0
+tiltDegrees = 15.0
+#Render mobs at full brightness?
+fullBright = true
+#Should mobs play idle animation?
+idleAnimation = true
+#Should mobs play walk animation?
+walkAnimation = false
+#Cycle through every entity of an entity type tag?
+tagCycle = true
+#Seconds each entity of a tag, or each NBT variant, is shown before cycling.
+#Range: 0.1 ~ 60.0
+tagCycleSeconds = 2.0
+#Render entity icons inside Fancy Toasts quest notifications?
+toastEntityIcons = true
+

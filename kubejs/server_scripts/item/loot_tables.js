@@ -68,7 +68,8 @@ LootJS.modifiers((event) => {
 		'terra_curio',
 		'evilcraft',
 		'travelersbackpack',
-		'tide'
+		'tide',
+		'artifacts'
 	];
 	removeModifiersFromMods.forEach(mod => event.removeGlobalModifier(`@${mod}`));
 
@@ -108,6 +109,33 @@ LootJS.modifiers((event) => {
 			});
 	});
 
+	// Artifacts mod rework
+	event.addLootTableModifier('artifacts:artifact').removeLoot(ItemFilter.ALWAYS_TRUE);
+
+	event.addLootTableModifier([
+		'minecraft:chests/village/village_plains_house',
+		'minecraft:chests/village/village_snowy_house',
+		'minecraft:chests/village/village_savanna_house',
+		'minecraft:chests/village/village_taiga_house',
+		'minecraft:chests/village/village_desert_house'
+	])
+		.pool(pool => {
+			pool.randomChance(0.1).addAlternativesLoot(
+				LootEntry.of('artifacts:novelty_drinking_hat').when((c) => c.randomChance(0.5)),
+				LootEntry.of('artifacts:plasting_drinking_hat').when(c => c.randomChance(1.0))
+			)
+		});
+
+	event.addLootTableModifier('minecraft:chests/underwater_ruin_small')
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('artifacts:snorkel').when(c => c.randomChance(0.1)));
+		});
+
+	event.addLootTableModifier('minecraft:chests/underwater_ruin_big')
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('artifacts:snorkel').when(c => c.randomChance(0.15)));
+		});
+
 	/**
 	 * @param {Internal.GroupedLootBuilder_} pool 
 	 */
@@ -120,6 +148,7 @@ LootJS.modifiers((event) => {
 				.applyLootingBonus([0, 1])
 		);
 	}
+
 	event.addEntityLootModifier('minecraft:wither_skeleton')
 		.removeLoot('minecraft:wither_skeleton_skull')
 		.pool(skullFragmentDrop)
@@ -129,7 +158,8 @@ LootJS.modifiers((event) => {
 		})
 		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:holy_water').when(c => c.randomChance(0.03)))
-		});;
+		});
+
 	event.addEntityLootModifier('netherdepthsupgrade:wither_bonefish')
 		.removeLoot('minecraft:wither_skeleton_skull')
 		.pool(skullFragmentDrop);
@@ -252,16 +282,16 @@ LootJS.modifiers((event) => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:skeleton').when(c => c.randomChanceWithLooting(0.002, 0.001)));
 		})
-		// .pool(pool => {
-		// 	pool.rolls(1);
-		// 	pool.addLoot(
-		// 		LootEntry.of('mcdw:bow_bonebow')
-		// 			.when(c => {
-		// 				c.randomChanceWithLooting(0.025, 0.005);
-		// 				c.anyDimension('minecraft:the_nether');
-		// 			})
-		// 	);
-		// });
+	// .pool(pool => {
+	// 	pool.rolls(1);
+	// 	pool.addLoot(
+	// 		LootEntry.of('mcdw:bow_bonebow')
+	// 			.when(c => {
+	// 				c.randomChanceWithLooting(0.025, 0.005);
+	// 				c.anyDimension('minecraft:the_nether');
+	// 			})
+	// 	);
+	// });
 
 	event.addEntityLootModifier('minecraft:stray')
 		.pool(pool => {

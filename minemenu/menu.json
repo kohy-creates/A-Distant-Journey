@@ -47,6 +47,18 @@
           "toggle": false
         }
       }
+    },
+    "7": {
+      "title": "Weapon Display Settings",
+      "icon": {
+        "stack": "{Count:1b,id:\"mythicmetals:copper_sword\",tag:{Damage:0}}"
+      },
+      "action": {
+        "key": {
+          "key": "key.weaponmaster_ydm.opengui",
+          "toggle": false
+        }
+      }
     }
   },
   "Creative": {

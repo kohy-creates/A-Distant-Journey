@@ -10,22 +10,33 @@ const MutantMonsters = {
 		'minecraft:enderman': 'mutantmonsters:mutant_enderman',
 		'minecraft:creeper': 'mutantmonsters:mutant_creeper',
 		'born_in_chaos_v1:phantom_creeper': 'mutantmonsters:mutant_creeper',
+		'born_in_chaos_v1:krampus_henchman': 'born_in_chaos_v1:krampus'
 	}
-}
+};
 
 EntityEvents.checkSpawn(event => {
 	const entity = event.getEntity();
 	const type = entity.getType();
 	if (event.getType().toString() == 'NATURAL' && MutantMonsters.mutantMap[type]) {
 		let server = event.getServer();
-		let chapter = parseInt(String(server.persistentData.chapters.current_stage).replace('chapter_', ''));
+		let chapter = global.getCurrentChapter(server);
+		let isHardcore = global.isHardcore(server);
 
-		let shouldReplaceSpawn;
-		if (chapter >= 2) {
-			shouldReplaceSpawn = (server.isHardcore()) ? global.ifRandomChance(1.5) : global.ifRandomChance(0.75);
+		let shouldReplaceSpawn = false;
+		if (global.isHardmode(server)) {
+			shouldReplaceSpawn = (isHardcore) ? global.ifRandomChance(3) : global.ifRandomChance(1.5);
 		}
-		else if (server.isHardcore()) {
-			shouldReplaceSpawn = (chapter == 1) ? global.ifRandomChance(0.75) : global.ifRandomChance(0.25);
+		else if (isHardcore) {
+			switch (chapter) {
+				case 1: {
+					shouldReplaceSpawn = global.ifRandomChance(0.75);
+					break;
+				}
+				case 2: {
+					shouldReplaceSpawn = global.ifRandomChance(1.5);
+					break;
+				}
+			};
 		}
 
 		if (shouldReplaceSpawn) {

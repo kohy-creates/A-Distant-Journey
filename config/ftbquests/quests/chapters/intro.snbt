@@ -14,7 +14,7 @@
 			order: -999
 			rotation: 0.0d
 			width: 10.0d
-			x: 7.0d
+			x: 9.0d
 			y: -3.0d
 		}
 		{
@@ -50,8 +50,8 @@
 			order: 3
 			rotation: 0.0d
 			width: 4.0d
-			x: -4.0d
-			y: -5.5d
+			x: -5.294334375591056d
+			y: -4.799989827197571d
 		}
 		{
 			height: 4.0d
@@ -59,15 +59,15 @@
 			order: 4
 			rotation: 0.0d
 			width: 4.0d
-			x: -4.205665624408944d
-			y: -5.700010172802429d
+			x: -5.5d
+			y: -5.0d
 		}
 		{
 			height: 8.0d
 			image: "adj:textures/other/text_intro.png"
 			rotation: 0.0d
 			width: 9.0d
-			x: 7.107142857142868d
+			x: 9.107142857142868d
 			y: -3.107142857142861d
 		}
 		{
@@ -75,8 +75,69 @@
 			image: "adj:textures/texts/title.png"
 			rotation: 0.0d
 			width: 10.0d
-			x: 7.0d
+			x: 9.0d
 			y: -8.5d
+		}
+		{
+			click: "quest_enhance:text_v3:1.0:17:minecraft:default<b>Basics"
+			height: 0.4583333333333333d
+			image: ""
+			rotation: 0.0d
+			width: 4.25d
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			click: "quest_enhance:text_v3:1.0:17:minecraft:default<b>Tutorials"
+			height: 0.4583333333333333d
+			image: ""
+			rotation: 0.0d
+			width: 4.25d
+			x: 2.0356366564244723d
+			y: -6.0d
+		}
+		{
+			click: "quest_enhance:text_v3:1.0:17:minecraft:defaultRead first!"
+			height: 0.2997338386995579d
+			image: ""
+			rotation: 0.0d
+			width: 1.4441721319160516d
+			x: -2.5d
+			y: -5.654508757063013d
+		}
+		{
+			click: "quest_enhance:text_v3:1.0:17:minecraft:defaultRead second!"
+			height: 0.36666666666666664d
+			image: ""
+			rotation: 0.0d
+			width: 2.2666666666666666d
+			x: 2.1133507335885326d
+			y: -5.654508757063006d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/wooden_sword"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			height: 1.0d
+			image: "patchouli:item/book_red"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			click: "quest_enhance:text_v3:1.5:17:minecraft:default<circle f=0.5>Click me! ↓↓↓"
+			height: 0.3602838006578502d
+			image: ""
+			rotation: 0.0d
+			width: 1.342875984270169d
+			x: 0.0d
+			y: -4.0d
 		}
 	]
 	order_index: 0
@@ -86,20 +147,22 @@
 	quests: [
 		{
 			description: [
-				"Some achievements only feature a &7short subtitle&f which roughly describes what you have to do to finish them."
+				"Some achievements only feature a &7short subtitle&f (the text you see when hovering over them), which roughly describes what you have to do to finish them."
 				""
 				"Some of them however, such as &6this one&f feature an elaborate description, which will explain &dhow things work in this realm&r, so that your playthrough is &oless of a headache&r!"
 				""
 				""
 				"{@pagebreak}"
 				""
-				"&6Achievements&r can have either a &esingular task&r or a &elist of tasks&f (which you can do in any order) to complete. &lMost&r of them will autocomplete themselves whenever their condition is satisifed."
+				"&6Achievements&r can have either a &esingular task&r or a &elist of tasks&f (which you can do in any order) to complete. &lMost&r of them will autocomplete themselves whenever their conditions are satisifed."
 				""
-				"A few conditions though &erequire you to confirm you completed them&r for them to count as finished. Those conditions are usually related to building things."
+				"A few tasks though &erequire you to manually confirm you completed them&r for them to count as finished. Those conditions are usually related to building things."
 				""
 				"In order to complete this achievements's task, &ejust click the checkmark icon in the top right corner of this menu&r!"
 			]
 			disable_toast: true
+			entity_vis_size: 1.0f
+			icon: "botania:cosmetic_questgiver_mark"
 			id: "4A074153AE2D521D"
 			shape: "hexagon"
 			size: 2.0d
@@ -121,6 +184,7 @@
 				"Players in the same party as you will &eshare achievements progress&r and can configure &cPvP&r rules!"
 			]
 			disable_toast: true
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:player_head"
@@ -166,6 +230,7 @@
 				"You might also be able to figure out when a new chapter starts by looking into the &2Story&f chapter. Just saying ^^"
 			]
 			disable_toast: true
+			entity_vis_size: 1.0f
 			icon: "minecraft:ender_eye"
 			id: "2482788CF690BB31"
 			subtitle: "Click to read"
@@ -188,6 +253,7 @@
 				"Those changes in difficulty are &epermanent&r and &eglobal&f, meaning that if you are on multiplayer, &cany player can cause your world to change for the worse&r."
 			]
 			disable_toast: true
+			entity_vis_size: 1.0f
 			icon: "kubejs:eye_of_cinders"
 			id: "7D4DF8809C70CAFC"
 			subtitle: "Click me to read"
@@ -228,6 +294,7 @@
 				"&7Knockback&f has been reduced to compensate for this change."
 			]
 			disable_toast: true
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:iron_sword"
@@ -276,6 +343,7 @@
 				"First craft a &dWarp Scroll&r and use it to map the portal's target location. Then build a frame out of &dSourcestone&r and place a filled &dSource Jar&r next to it. Lastly, toss the &eWarp Scroll into the frame&r to consume the Source and &eactivate the portal&r. Be wary though, as &ethe portal is one way only&r - you'll need to build another one to go back!"
 			]
 			disable_toast: true
+			entity_vis_size: 1.0f
 			icon: "via_romana:charting_map"
 			id: "7D7F1AD28AE3CF50"
 			min_required_tasks: 1
@@ -292,27 +360,21 @@
 		{
 			dependencies: ["4A074153AE2D521D"]
 			description: [
-				"A lot of mods means a lot of items which your Chests will quickly get overwhelmed by. Same goes for your sorting capabilities."
+				"A lot of mods means a lot of items, which might quickly become a hassle to manage. And double chests take sooo much space..."
 				""
-				"An easy solution is a &eStorage System&r! Craft an &6Inventory Connector&r and place it somewhere in your base. It will &econnect every Chest, Barrel or any block that can be used to store items inside of it&r. You can then access them from the &6Connector&r by adding a &6Storage Interface&r, which &eshows every item inside of the connected blocks&r AND has a &ebuilt-in search ability&f."
+				"One of the easiest ways in the early game (if not &lTHE&r easiest) to double your storage capacity is &6Repositories&r! A singular repository can hold as many items as a double chest, and they only take up half the space!"
 			]
 			disable_toast: true
+			entity_vis_size: 1.0f
 			icon: "minecraft:chest"
 			id: "6C4C8FF43FCED01D"
 			subtitle: "Click to read"
-			tasks: [
-				{
-					id: "21F0D5FA6E1387D5"
-					item: "toms_storage:ts.storage_terminal"
-					type: "item"
-				}
-				{
-					id: "59C151249A54235A"
-					item: "toms_storage:ts.inventory_connector"
-					type: "item"
-				}
-			]
-			title: "&l&fTutorial:&r &6Storage"
+			tasks: [{
+				id: "2E52298834CB5E8F"
+				item: "ars_nouveau:repository"
+				type: "item"
+			}]
+			title: "&l&fTutorial:&r &6Early Storage"
 			x: 2.0d
 			y: -3.5d
 		}
@@ -325,6 +387,7 @@
 				""
 				"If normal coordinates aren't doing it for you, try crafting an &6Atlas&r! Having it in your inventory will unlock you a &eminimap&r and a &eworld map&r, both with the ability to set &ewaypoints&r."
 			]
+			entity_vis_size: 1.0f
 			icon: "kubejs:map_atlas"
 			id: "133F7123D4CC512B"
 			subtitle: "Click to read"
@@ -363,6 +426,7 @@
 				"&6Andesite Chunk Loaders&r load a &esingular chunk&r they are in. "
 				"&6Brass Chunk Loaders&r load a &e3x3 area of chunks&r around them (and have multiple modes too!)."
 			]
+			entity_vis_size: 1.0f
 			id: "0837881F85485D3F"
 			subtitle: "Click to read"
 			tasks: [{
@@ -390,6 +454,7 @@
 				""
 				"&cBeds&r also no longer skip time instantly, instead accelerating the flow of time around you. They can also be entered at any time of day to skip to the &9Night&r in case you wanted to e.g. farm monsters. Quite handy!"
 			]
+			entity_vis_size: 1.0f
 			id: "0204327B87A0A113"
 			subtitle: "Click to read"
 			tasks: [{
@@ -418,6 +483,7 @@
 				"- &cYour Backpack and its contents &r(unless enchanted with &dSoulbound&r)"
 			]
 			disable_toast: true
+			entity_vis_size: 1.0f
 			icon: "minecraft:skeleton_skull"
 			id: "3C005F026A2BEF42"
 			subtitle: "Click to read"
@@ -443,6 +509,7 @@
 				""
 				"The &aopposite&r happens if you provide them with everything they need"
 			]
+			entity_vis_size: 1.0f
 			icon: "artifacts:villager_hat"
 			id: "0A034500CAB88067"
 			subtitle: "Click to read"
@@ -468,6 +535,7 @@
 				""
 				"If your mount dies, you can resurrect them by combining the &6Mount Bauble&r with the deceased mount with an &3Echo Shard&r. "
 			]
+			entity_vis_size: 1.0f
 			icon: "baublemounts:mount_bauble"
 			id: "074605390A97E49A"
 			min_required_tasks: 1

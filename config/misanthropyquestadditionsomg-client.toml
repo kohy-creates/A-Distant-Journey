@@ -1,0 +1,178 @@
+
+[quest_description]
+	#Center all quest description text. Shift+O toggles it per-quest in-game.
+	auto_center_text = false
+	#Hide quest subtitles in the quest view panel.
+	disable_quest_subtitle = false
+	#Convert &-codes to section codes so centering doesn't measure them as visible characters.
+	fix_centering_symbols = true
+	#Snowee's Text Animator tags to skip when parsing blockquotes.
+	#'<glitch>' matches exactly; '<glitch >' matches any tag opening with '<glitch'.
+	snowee_whitelist = ["<glitch>", "<glitch >"]
+	#Render markdown pipe tables: '| a | b |' with a '|---|---|' separator row.
+	enable_tables = false
+	#Render [item:modid:name], [entity:modid:name], [task:HEXID] and [quest:HEXID] inline in description text.
+	enable_inline_icons = true
+	#Render [link:url|text], [copy:value|text], [cmd:/command|text], [hover:text|tooltip],
+	#[key:key.inventory] and [lang:translation.key] inline in description text.
+	#Also enables the optional '|label' suffix on [item:], [entity:], [task:] and [quest:].
+	enable_rich_text = true
+	#Pixel size of inline description icons. The text line is 9px tall, so anything above that
+	#overhangs slightly - which is what makes item and entity icons read next to the text.
+	#Range: 8 ~ 20
+	inline_icon_size = 12
+	#Render '- [ ]' and '- [x]' as checkboxes. '- [1A2B]' tracks that task's completion.
+	enable_checklists = true
+	#Render '[details]Title' blocks as click-to-expand sections, closed by '[/details]'.
+	enable_collapsibles = true
+	#Render '[progress]' as a quest progress bar and '[progress=HEXID]' as one task's progress.
+	enable_progress_blocks = true
+
+[editor]
+	#Ctrl+Shift+V pastes the image on your OS clipboard onto the chapter canvas. Editing mode only.
+	#The PNG is written to config/misanthropyquestadditionsomg/images/ on THIS client and the quest
+	#file only stores its texture name, so other players see a missing texture unless the pack ships
+	#the same files. '/misanthropys_quest_additions cleanup_images' deletes the unreferenced ones.
+	enable_image_paste = false
+	#Ctrl+Z / Ctrl+Y undo and redo for chapter editing: moves, field edits, and undoing a creation.
+	#Deleting a quest, task or reward is NOT undoable - FTB gives a recreated object a new ID, which
+	#would break every dependency and [quest:]/[task:] reference to it, so undo refuses instead.
+	#Deleted chapter images are restored, because those live in the chapter's own data.
+	enable_undo = true
+	#With more than one quest selected, add 'Bulk Edit' and 'Bulk Add Task' to the right-click menu.
+	#Bulk Edit applies only the fields you actually change, so per-quest titles, positions and
+	#dependencies are left alone.
+	enable_bulk_edit = true
+	#Per-line dependency control. 'Prerequisite lines' on a quest's right-click menu hides an
+	#individual incoming line, optionally bringing it back while either end is hovered, and
+	#'Add guide point' on the canvas menu drops an editors-only anchor. The nearest line it
+	#sits alongside bends through it; move it to bend the line, delete it to straighten it.
+	enable_line_control = true
+	#Draw the background images set on a chapter (canvas, sidebar) and on a quest (quest box,
+	#quest details). Turning this off leaves the stored values alone, it only stops drawing them.
+	enable_background_images = true
+
+[search]
+	#Search bar in the chapter panel, highlighting matching quests.
+	enable_search_bar = false
+	#Keep the search bar fixed while scrolling instead of scrolling with the list.
+	pin_search_bar = true
+	#Where the search bar sits in the chapter panel.
+	#Allowed Values: TOP, BOTTOM
+	search_bar_alignment = "TOP"
+	#Highlight color around quests matching the search (HEX, #RRGGBB or #AARRGGBB).
+	search_spot_color = "#FF38BDF8"
+	#Search bar background color (HEX).
+	search_bar_background_color = "#FF1E1F22"
+	#Search bar border color (HEX).
+	search_bar_border_color = "#FF3A3C43"
+	#Search bar text color (HEX). Empty uses the theme default.
+	search_bar_text_color = "#FFE3E5E8"
+	#Also match against quest subtitles and description text, not just titles.
+	search_descriptions = true
+	#Also match against task and reward names, so 'diamond' finds quests that want diamonds.
+	search_tasks_and_rewards = true
+	#Also match against quest tags. '#tag' always searches tags regardless of this setting.
+	search_tags = true
+	#Underline the matched part of a chapter name in the sidebar.
+	highlight_matched_text = true
+	#Show 'n/total' in the search bar. Enter cycles forward, Shift+Enter back.
+	show_match_counter = true
+
+[visuals]
+	#Ring on started quests showing task completion percentage.
+	enable_progress_ring = true
+	#Progress ring color: 'theme' follows the chapter's quest_started_color, or a HEX color.
+	progress_ring_color = "theme"
+	#Pulsing glow on quests whose dependencies are all complete.
+	enable_ready_glow = true
+	#Ready glow color: 'theme' follows the chapter's quest_completed_color, or a HEX color.
+	ready_glow_color = "theme"
+	#Pulse the alert icon on completed quests with unclaimed rewards.
+	enable_reward_pulse = true
+	#Pulse the check icon once a completed quest's rewards are collected.
+	enable_complete_check = true
+	#Draw dependency lines as curves instead of straight lines.
+	curved_dependency_lines = true
+	#How hard dependency lines bend: 0 straight, 0.5 subtle, 1 flowchart S, 2 loopy.
+	#Past 3 the curve leaves the box cull_offscreen_dependency_lines tests and lines pop at screen edges.
+	#Range: 0.0 ~ 3.0
+	dependency_line_curviness = 0.25
+	#Arrow on each dependency line pointing at the dependent quest. Needs curved_dependency_lines.
+	dependency_arrows = false
+	#Quest buttons grow slightly when hovered.
+	hover_grow_animation = false
+	#Scale-in animation when the quest view opens.
+	quest_open_animation = false
+	#Glide the camera on autofocus, search jumps and quest links instead of snapping.
+	smooth_pan = false
+	#Animate zoom steps instead of jumping.
+	smooth_zoom = false
+	#Slide the chapter sidebar in and out.
+	sidebar_slide_animation = true
+	#Chapter entries nudge right and highlight on hover.
+	sidebar_hover_animation = true
+	#Glide the chapter sidebar when scrolling.
+	sidebar_smooth_scroll = true
+	#Slide chapter rows into place when expanding or collapsing.
+	sidebar_expand_animation = true
+	#Unfold the whole chapter tree when the book opens. Chapters you collapse by hand stay collapsed.
+	auto_expand_chapter_tree = false
+	#Scale-out animation when the quest view closes.
+	quest_close_animation = false
+	#Dragging the quest map carries slight inertia.
+	smooth_drag = true
+	#Speed multiplier for this mod's animations. Lower is slower.
+	#Range: 0.1 ~ 3.0
+	animation_speed = 0.6
+	#Quest view open animation. ZOOM can blur text mid-animation.
+	#Allowed Values: ZOOM, SLIDE
+	quest_animation_style = "ZOOM"
+	#Quest view close animation.
+	#Allowed Values: FADE, SLIDE, NONE
+	quest_close_style = "FADE"
+	#Hide lines between two completed quests. They reappear on hover.
+	hide_completed_dependency_lines = false
+	#Fade completed quests so finished areas of the map recede. 1 draws them normally.
+	#Range: 0.15 ~ 1.0
+	completed_quest_opacity = 1.0
+	#Corner badge on quests that became startable since you last had the book open.
+	enable_new_quest_badge = true
+	#New-quest badge color (HEX).
+	new_quest_badge_color = "#FFFACC15"
+	#Thin completion bar along the bottom of each chapter row in the sidebar.
+	chapter_progress_bars = true
+	#Percentage text on each chapter row in the sidebar.
+	chapter_progress_text = false
+
+[sidebar]
+	#Remember which chapters you collapsed between sessions.
+	persist_chapter_tree = true
+	#Drag a chapter onto another in the sidebar to reparent it. Editing mode only.
+	chapter_drag_reorder = true
+	#Show the filter toggles (hide completed / unclaimed only / started only) above the chapter list.
+	show_sidebar_filter_buttons = true
+
+[navigation]
+	#Back and forward through viewed quests. Mouse side buttons, or Backspace for back.
+	enable_history = true
+	#Zoomed-out overview of the current chapter with a viewport box. Click to jump.
+	enable_minimap = false
+	#Minimap edge length in pixels.
+	#Range: 60 ~ 240
+	minimap_size = 110
+	#Which corner the minimap sits in.
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	minimap_corner = "BOTTOM_RIGHT"
+	#Minimap opacity.
+	#Range: 0.1 ~ 1.0
+	minimap_opacity = 0.75
+	#Add a completion-statistics button to the quest book's top button row.
+	enable_stats_button = true
+
+[performance]
+	#Cache client quest visibility for one tick. FTB Quests recomputes it several times per quest per frame.
+	cache_quest_visibility = true
+	#Skip dependency lines that are fully off-screen. FTB Quests draws every line in the chapter every frame.
+	cull_offscreen_dependency_lines = true
+

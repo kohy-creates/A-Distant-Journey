@@ -169,3 +169,13 @@ global.getCurrentChapter = function (server) {
 global.isHardmode = function (server) {
 	return global.getCurrentChapter(server) >= 3;
 };
+
+/**
+ * Not to be confused with {@link global.isHardmode}, this function checks if the server is in hardcore mode.
+ * Returns 'true' if the server is in hardcore mode, 'false' otherwise.
+ * @param {Internal.MinecraftServer_} server 
+ * @returns {boolean}
+ */
+global.isHardcore = function (server) {
+	return server.isHardcore();
+};

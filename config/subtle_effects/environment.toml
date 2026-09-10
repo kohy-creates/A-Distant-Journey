@@ -9,7 +9,7 @@ mushroomSporeBiomes = [
     "minecraft:mushroom_fields",
     "clifftree:mushroom_caves"
 ]
-pollenDensity = 40
+pollenDensity = 20
 pollenBiomes = [
     "minecraft:flower_forest",
     "minecraft:sunflower_plains",

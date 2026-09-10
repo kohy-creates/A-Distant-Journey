@@ -41,6 +41,7 @@
 		{
 			dependencies: ["3DFCD3D89661B5AF"]
 			description: ["&7&lHINT:&r You can insert and take out Film Rolls by &eright-clicking your Camera in your Inventory&r!"]
+			entity_vis_size: 1.0f
 			icon: "exposure:camera"
 			id: "3A017BDC7B799F5B"
 			shape: "diamond"
@@ -72,6 +73,7 @@
 		{
 			dependencies: ["3DFCD3D89661B5AF"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: "xercapaint:item_palette"
 			id: "4BECD0660111B4AC"
 			shape: "diamond"
@@ -107,6 +109,7 @@
 		}
 		{
 			dependencies: ["3DFCD3D89661B5AF"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:music_disc_blocks"
 			id: "74568A8CB40BC9F8"
 			shape: "diamond"
@@ -131,6 +134,7 @@
 		{
 			dependencies: ["4BECD0660111B4AC"]
 			description: ["&7&lHINT:&r It's easy, just combine them together in your crafting grid!"]
+			entity_vis_size: 1.0f
 			id: "23B0B9101D01EA1D"
 			subtitle: "Add all 16 Dyes to your Palette"
 			tasks: [{
@@ -167,6 +171,7 @@
 		}
 		{
 			dependencies: ["3A017BDC7B799F5B"]
+			entity_vis_size: 1.0f
 			icon: "exposure:developed_black_and_white_film"
 			id: "5B5CD3D317CB17D8"
 			subtitle: "Combine your Film Rolls with a specific fluid to develop them and prepare for printing"
@@ -188,6 +193,7 @@
 		}
 		{
 			dependencies: ["5B5CD3D317CB17D8"]
+			entity_vis_size: 1.0f
 			icon: "exposure:lightroom"
 			id: "1DC3FEA4EA21551B"
 			subtitle: "Craft a Lightroom and print your photos"
@@ -209,6 +215,7 @@
 		}
 		{
 			dependencies: ["1DC3FEA4EA21551B"]
+			entity_vis_size: 1.0f
 			id: "44E3D99502AA96EF"
 			subtitle: "Craft a Photo Album"
 			tasks: [{
@@ -222,6 +229,7 @@
 		}
 		{
 			dependencies: ["1DC3FEA4EA21551B"]
+			entity_vis_size: 1.0f
 			id: "63230A022677527E"
 			subtitle: "Craft a Photograph Frame"
 			tasks: [{
@@ -235,6 +243,7 @@
 		}
 		{
 			dependencies: ["74568A8CB40BC9F8"]
+			entity_vis_size: 1.0f
 			id: "7F7BF3FBC0B9C8B7"
 			subtitle: "Smelt the found Music Disc into a Blank Music Disc"
 			tasks: [{
@@ -248,6 +257,7 @@
 		}
 		{
 			dependencies: ["74568A8CB40BC9F8"]
+			entity_vis_size: 1.0f
 			id: "4E418BC91C3E9302"
 			subtitle: "Start your own recording label by... well, crafting a Music Label"
 			tasks: [{
@@ -276,6 +286,7 @@
 				"- &eSoundCloud &7(GO+ songs are &cnot&7 supported)"
 				"- &eBandcamp"
 			]
+			entity_vis_size: 1.0f
 			icon: "etched:etching_table"
 			id: "3A7F4A7413F7B2F3"
 			shape: "circle"
@@ -304,6 +315,7 @@
 		{
 			dependencies: ["3DFCD3D89661B5AF"]
 			description: ["&7&lHINT:&r Writable Books can be dyed, just like Leather Armor!"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:writable_book"
 			id: "1B705CEC3EFEB501"
 			shape: "diamond"
@@ -320,6 +332,7 @@
 		}
 		{
 			dependencies: ["1B705CEC3EFEB501"]
+			entity_vis_size: 1.0f
 			id: "0AEC92998BCBFFDD"
 			subtitle: "Sign a Book"
 			tasks: [{
@@ -337,6 +350,7 @@
 		}
 		{
 			dependencies: ["4BECD0660111B4AC"]
+			entity_vis_size: 1.0f
 			id: "5F271343FFAAE7C8"
 			subtitle: "Craft a Magic Painting, which allows you to set an image from a URL"
 			tasks: [{
@@ -350,6 +364,7 @@
 		}
 		{
 			dependencies: ["5F271343FFAAE7C8"]
+			entity_vis_size: 1.0f
 			id: "0216A9D6EED05EDB"
 			subtitle: "Craft Grafitti, which roughly works the same way"
 			tasks: [{
@@ -364,6 +379,7 @@
 		{
 			dependencies: ["7E4B8BBFB0884187"]
 			description: ["&7&lHINT:&r Vanity items provide no boosts to stats. But what if you wanted to wear a vanity armor set? Look into the next achievement!"]
+			entity_vis_size: 1.0f
 			icon: "etcetera:white_sweater"
 			id: "079C23A4EAF805B1"
 			size: 1.0d
@@ -387,6 +403,7 @@
 		{
 			dependencies: ["079C23A4EAF805B1"]
 			description: ["&7&lHINT:&r Read the item summary ;)"]
+			entity_vis_size: 1.0f
 			icon: "transmog:transmogrification_table"
 			id: "2BE780A67DACFE27"
 			subtitle: "Craft a Transmogrification Table and a Void Fragment"
@@ -409,6 +426,7 @@
 		{
 			dependencies: ["3DFCD3D89661B5AF"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: "accents:sewing_station"
 			id: "7E4B8BBFB0884187"
 			shape: "diamond"
@@ -425,6 +443,7 @@
 		}
 		{
 			dependencies: ["7E4B8BBFB0884187"]
+			entity_vis_size: 1.0f
 			id: "5B8BE1C0DADD5B73"
 			subtitle: "Make a famously soft IKEA shark"
 			tasks: [{
@@ -438,6 +457,7 @@
 		}
 		{
 			dependencies: ["5B8BE1C0DADD5B73"]
+			entity_vis_size: 1.0f
 			icon: "just_blahaj:pride_blahaj"
 			id: "1782F792B27F2C54"
 			subtitle: "Craft any of the special Blahaj variants"
@@ -459,6 +479,7 @@
 		}
 		{
 			dependencies: ["5B8BE1C0DADD5B73"]
+			entity_vis_size: 1.0f
 			icon: "just_blahaj:red_blahaj"
 			id: "0B5DF52BF17E071A"
 			subtitle: "Dye your Blahaj any color"
@@ -487,6 +508,7 @@
 				"You have plethora of tools to express &dyourself&r, &dyour ideas&r in your creations. This achievement chapter is a short showcase of what you can do!"
 			]
 			disable_toast: true
+			entity_vis_size: 1.0f
 			id: "3DFCD3D89661B5AF"
 			subtitle: "&oRequires 'Benchmarking'"
 			tasks: [{
@@ -500,6 +522,7 @@
 		}
 		{
 			dependencies: ["3A017BDC7B799F5B"]
+			entity_vis_size: 1.0f
 			icon: "exposure_expanded:deconverge_filter"
 			id: "087EF13C4C09AE82"
 			subtitle: "Obtain one of each items that can modify your Camera - a filter, a lens and a flash"
@@ -548,6 +571,7 @@
 		{
 			dependencies: ["3DFCD3D89661B5AF"]
 			description: ["&7&lHINT:&r You can import your own MIDI files to play from any of the instruments. There is a tutorial how to do it when you use the item."]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "immersive_melodies:piano"

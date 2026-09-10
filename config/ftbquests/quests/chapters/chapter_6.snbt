@@ -28,7 +28,6 @@
 			y: 5.0d
 		}
 		{
-			dependency: "2FC4D1B2E42E2124"
 			height: 5.0d
 			image: "adj:textures/other/bg_grass.png"
 			order: -999
@@ -48,7 +47,6 @@
 			y: 11.5d
 		}
 		{
-			dependency: "2FC4D1B2E42E2124"
 			height: 1.75d
 			image: "witherstormmod:block/super_beacon_glass"
 			rotation: 45.0d
@@ -171,20 +169,20 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["088E92D166861F41"]
 			description: [""]
 			disable_toast: true
-			hide_until_deps_complete: true
+			entity_vis_size: 1.0f
 			id: "0FDA4BA49667895C"
-			shape: "hexagon"
+			invisible: true
+			shape: "circle"
 			size: 3.0d
-			subtitle: "Destroy the Command Block and kill The Wither Storm, this time for good"
+			subtitle: "<i>The final stretch to glory!"
 			tasks: [{
 				id: "15FF970AF686698F"
 				item: "witherstormmod:withered_nether_star"
 				type: "item"
 			}]
-			title: "One Story Ends, Another Begins"
+			title: "Journey's End"
 			x: 2.0d
 			y: 3.0d
 		}
@@ -193,6 +191,7 @@
 				"2FC4D1B2E42E2124"
 				"0FDA4BA49667895C"
 			]
+			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "witherstormmod:super_beacon"
 			icon_scale: 0.75d
@@ -227,6 +226,7 @@
 		{
 			dependencies: ["00BD4BF3FFC6172B"]
 			description: [""]
+			entity_vis_size: 1.0f
 			id: "18F8F611C29DF3A7"
 			subtitle: "Resummon a Withered Symbiont by tossing appropriate items onto a powered Super Beacon"
 			tasks: [{
@@ -243,6 +243,7 @@
 		{
 			dependencies: ["18F8F611C29DF3A7"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon_scale: 1.15d
 			id: "42307E5368E7BA1C"
 			shape: "hexagon"
@@ -259,6 +260,7 @@
 		}
 		{
 			dependencies: ["18F8F611C29DF3A7"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "01883CFF273619E2"
 			shape: "diamond"
@@ -275,6 +277,7 @@
 		}
 		{
 			dependencies: ["18F8F611C29DF3A7"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "350D42040726FDDA"
 			shape: "diamond"
@@ -290,5 +293,5 @@
 			y: 8.0d
 		}
 	]
-	title: "6. Journey's End"
+	title: "6. <neon r=0.75><pulse base=0.8 amplitude=0.5 frequency=0.5>Journey's End"
 }

@@ -72,6 +72,7 @@
 				"Cook something funny, I believe in you."
 			]
 			disable_toast: true
+			entity_vis_size: 1.0f
 			id: "1E5E55D6C87BAA30"
 			subtitle: "&oRequires 'Time to Farm!'"
 			tasks: [{
@@ -85,6 +86,7 @@
 		}
 		{
 			dependencies: ["1E5E55D6C87BAA30"]
+			entity_vis_size: 1.0f
 			id: "59292630076634C2"
 			shape: "diamond"
 			size: 2.0d
@@ -100,6 +102,7 @@
 		}
 		{
 			dependencies: ["59292630076634C2"]
+			entity_vis_size: 1.0f
 			icon: "farmersdelight:cooking_pot"
 			id: "4939DB41E905F987"
 			subtitle: "Make a Frying Pan and a Cooking Pot"
@@ -127,6 +130,7 @@
 		}
 		{
 			dependencies: ["1E5E55D6C87BAA30"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:wheat_seeds"
 			id: "4FCBD845E6A74E67"
 			shape: "diamond"
@@ -169,6 +173,7 @@
 		}
 		{
 			dependencies: ["1E5E55D6C87BAA30"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:honeycomb"
 			id: "1245EDB9C524ACC7"
 			shape: "diamond"
@@ -193,6 +198,7 @@
 		}
 		{
 			dependencies: ["4FCBD845E6A74E67"]
+			entity_vis_size: 1.0f
 			id: "74019EFD0ED8F657"
 			subtitle: "Craft a Mechanical Harvester"
 			tasks: [{
@@ -239,6 +245,7 @@
 				"{image:adj:textures/other/farm_tutorial_10.png width:100 height:100 align:center}"
 				"10. Finally, add plant any crop you want! Harvesters will automatically replant them when harvested."
 			]
+			entity_vis_size: 1.0f
 			icon: "create:mechanical_bearing"
 			icon_scale: 0.75d
 			id: "5A7B54BA138CB903"
@@ -311,6 +318,7 @@
 		}
 		{
 			dependencies: ["74019EFD0ED8F657"]
+			entity_vis_size: 1.0f
 			icon: "sliceanddice:fertilizer_bucket"
 			id: "527267F3EB74C2DA"
 			optional: true
@@ -336,6 +344,7 @@
 		}
 		{
 			dependencies: ["1E5E55D6C87BAA30"]
+			entity_vis_size: 1.0f
 			icon: "brewinandchewin:keg"
 			id: "7BABB7161F25736B"
 			shape: "diamond"
@@ -352,6 +361,7 @@
 		}
 		{
 			dependencies: ["7BABB7161F25736B"]
+			entity_vis_size: 1.0f
 			icon: "vinery:red_grape"
 			id: "7D4147C7C4278ADB"
 			subtitle: "Collect some wild Grapes"
@@ -373,6 +383,7 @@
 		}
 		{
 			dependencies: ["74019EFD0ED8F657"]
+			entity_vis_size: 1.0f
 			id: "63792CCA3D65640C"
 			optional: true
 			shape: "rsquare"
@@ -391,6 +402,7 @@
 				"56D06670965D8835"
 				"4CE7BE7B3B7783F0"
 			]
+			entity_vis_size: 1.0f
 			icon: "vinery:cristel_wine"
 			id: "2CE5A910A9C7B3EA"
 			subtitle: "Brew one of each - a bottle of Red Wine and a bottle of White Wine"
@@ -426,6 +438,7 @@
 		}
 		{
 			dependencies: ["7BABB7161F25736B"]
+			entity_vis_size: 1.0f
 			id: "235B6E77FA1030A1"
 			subtitle: "Brew some Beer"
 			tasks: [{
@@ -438,6 +451,7 @@
 			y: 3.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "4CE7BE7B3B7783F0"
 			shape: "diamond"
@@ -458,6 +472,7 @@
 		}
 		{
 			dependencies: ["7D4147C7C4278ADB"]
+			entity_vis_size: 1.0f
 			icon: "vinery:grapevine_pot"
 			id: "56D06670965D8835"
 			subtitle: "Stomp some Grapes down into juice and then collect it into a Wine Bottle"
@@ -492,6 +507,7 @@
 		{
 			dependencies: ["7D4147C7C4278ADB"]
 			description: ["&7&lHINT&r: &5Obsidian Stems&r are only an alternate variant, &cNether-specific Grapes&r can grow just as well on regular &6Grapevine Stems&r."]
+			entity_vis_size: 1.0f
 			icon: "vinery:grapevine_stem"
 			id: "0CB78B0B5CFD4B70"
 			subtitle: "Craft some Grapevine Stems to grown your Grapes on"
@@ -513,6 +529,7 @@
 		}
 		{
 			dependencies: ["1245EDB9C524ACC7"]
+			entity_vis_size: 1.0f
 			icon: "waxed:wax_block"
 			id: "19D5270E71350796"
 			subtitle: "Make some Wax"
@@ -534,6 +551,7 @@
 		}
 		{
 			dependencies: ["59292630076634C2"]
+			entity_vis_size: 1.0f
 			icon: "farmersdelight:cutting_board"
 			id: "33A3600023AC54F3"
 			subtitle: "Make a Cutting Board and a simple Knife"
@@ -561,6 +579,7 @@
 		}
 		{
 			dependencies: ["4939DB41E905F987"]
+			entity_vis_size: 1.0f
 			id: "4FCCFD3ED32E4990"
 			subtitle: "Make some Chicken Soup - a Polish special!"
 			tasks: [{
@@ -573,6 +592,7 @@
 		}
 		{
 			dependencies: ["74019EFD0ED8F657"]
+			entity_vis_size: 1.0f
 			id: "5AACD96F037CA267"
 			optional: true
 			shape: "rsquare"
@@ -588,6 +608,7 @@
 		}
 		{
 			dependencies: ["4939DB41E905F987"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "7F07DA3194E316D1"
 			shape: "diamond"
@@ -604,6 +625,7 @@
 		}
 		{
 			dependencies: ["59292630076634C2"]
+			entity_vis_size: 1.0f
 			icon: "create:wheat_flour"
 			id: "73777E71CF66626E"
 			subtitle: "Mill some Wheat Flour and form some Wheat Dough"
@@ -625,6 +647,7 @@
 		}
 		{
 			dependencies: ["73777E71CF66626E"]
+			entity_vis_size: 1.0f
 			id: "5F89BD9F8F5373EC"
 			shape: "square"
 			size: 1.0d
@@ -641,6 +664,7 @@
 		{
 			dependencies: ["73777E71CF66626E"]
 			description: [""]
+			entity_vis_size: 1.0f
 			id: "369CDCF4288D6D76"
 			shape: "square"
 			subtitle: "Jessy, we need to bake bread"
@@ -655,6 +679,7 @@
 		}
 		{
 			dependencies: ["5F89BD9F8F5373EC"]
+			entity_vis_size: 1.0f
 			icon: "neapolitan:strawberry_cake"
 			icon_scale: 0.75d
 			id: "79DA3ADFEC24981C"
@@ -724,6 +749,7 @@
 		}
 		{
 			dependencies: ["19D5270E71350796"]
+			entity_vis_size: 1.0f
 			icon: "waxed:wick"
 			id: "7DBB43B9F1F335F2"
 			subtitle: "Make a large candle by placing a Wick on top of any Wax Pillars"
@@ -751,6 +777,7 @@
 		}
 		{
 			dependencies: ["235B6E77FA1030A1"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "488261B2768FC805"
 			shape: "diamond"
@@ -767,6 +794,7 @@
 		}
 		{
 			dependencies: ["1E5E55D6C87BAA30"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "54930731DEEDD96B"
@@ -784,6 +812,7 @@
 		}
 		{
 			dependencies: ["2CE5A910A9C7B3EA"]
+			entity_vis_size: 1.0f
 			icon: "vinery:oak_wine_rack_mid"
 			id: "490262D80FA1C0E0"
 			subtitle: "Craft any Wine Rack to store your manufactured goods"

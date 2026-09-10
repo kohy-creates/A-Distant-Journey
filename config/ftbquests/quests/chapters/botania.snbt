@@ -207,6 +207,7 @@
 		{
 			dependencies: ["4BB4F54ACBA9F3A7"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: "botania:red_petal"
 			id: "193CFF98260F82B7"
 			subtitle: "Turn a Mystical Flower into colored Petals"
@@ -229,6 +230,7 @@
 		{
 			dependencies: ["193CFF98260F82B7"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: "botania:apothecary_default"
 			id: "6013A3AD20AB6F78"
 			subtitle: "Craft a Petal Apothecary"
@@ -254,6 +256,7 @@
 				""
 				"{image:botania:textures/gui/entries/pure_daisy.png width:100 height:100 align:center}"
 			]
+			entity_vis_size: 1.0f
 			icon: "botania:pure_daisy"
 			id: "45C4613857B5FBB1"
 			subtitle: "Plant a Pure Daisy"
@@ -271,6 +274,7 @@
 				"45C4613857B5FBB1"
 				"4389F7F895342C2A"
 			]
+			entity_vis_size: 1.0f
 			id: "35B5E5B6F7CC021D"
 			subtitle: "Place down a Mana Pool"
 			tasks: [{
@@ -285,6 +289,7 @@
 		{
 			dependencies: ["6013A3AD20AB6F78"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: "botania:endoflame"
 			id: "3D75A7B6B23BC097"
 			subtitle: "Craft your first flower that generates Mana"
@@ -323,6 +328,7 @@
 		}
 		{
 			dependencies: ["45C4613857B5FBB1"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "botania:twig_wand"
@@ -368,6 +374,7 @@
 		}
 		{
 			dependencies: ["35B5E5B6F7CC021D"]
+			entity_vis_size: 1.0f
 			icon: "botania:manasteel_ingot"
 			id: "0AA4AD4290EE5366"
 			subtitle: "Toss in an item into a partially filled Mana Pool and infuse it"
@@ -409,6 +416,7 @@
 				"0AA4AD4290EE5366"
 				"06C3735EEB6B3733"
 			]
+			entity_vis_size: 1.0f
 			icon: "botania:rune_air"
 			id: "602FA24B60010322"
 			subtitle: "Place a Runic Altar and use it to refine an Essence into a Rune"
@@ -437,6 +445,7 @@
 		}
 		{
 			dependencies: ["602FA24B60010322"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "botania:rune_earth"
@@ -472,6 +481,7 @@
 		}
 		{
 			dependencies: ["602FA24B60010322"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "botania:rune_spring"
@@ -507,6 +517,7 @@
 		}
 		{
 			dependencies: ["602FA24B60010322"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "botania:rune_lust"
@@ -557,6 +568,7 @@
 		}
 		{
 			dependencies: ["602FA24B60010322"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "botania:rune_mana"
@@ -593,6 +605,7 @@
 		{
 			dependencies: ["602FA24B60010322"]
 			description: ["&7&lHINT:&r In order to make your &9Terrestrial Agglomeration Plate&r work, you need to put a &eSpark&r on top of it and another one on top of your &bMana Pool&r. &9TAP&r cannot accept &bMana&r coming from &cMana Spreaders&r."]
+			entity_vis_size: 1.0f
 			icon: "botania:terrasteel_ingot"
 			id: "356CC1FA4E52AD00"
 			rewards: [{
@@ -650,6 +663,7 @@
 		}
 		{
 			dependencies: ["588D5DF2ADABBBA0"]
+			entity_vis_size: 1.0f
 			icon: "botania:elven_spreader"
 			id: "2592E5F46B3D4C5E"
 			optional: true
@@ -684,6 +698,7 @@
 		{
 			dependencies: ["588D5DF2ADABBBA0"]
 			description: ["&7&lHINT: &rJust toss the items into the &aAlfheim Portal&r and let the elves do the rest."]
+			entity_vis_size: 1.0f
 			icon: "botania:dragonstone"
 			id: "4B3625869C4E7079"
 			subtitle: "Trade your infused items for their elven equivalents"
@@ -711,6 +726,7 @@
 		{
 			dependencies: ["0AA4AD4290EE5366"]
 			description: ["&7&lHINT:&r Some magical items will require you to have a &bcharged Mana Tablet&r in your inventory!"]
+			entity_vis_size: 1.0f
 			id: "1701D7122A9FDADA"
 			optional: true
 			shape: "rsquare"
@@ -726,6 +742,7 @@
 		}
 		{
 			dependencies: ["54622828F37E8A7E"]
+			entity_vis_size: 1.0f
 			id: "22A779AB53F671E4"
 			subtitle: "Craft a Corporea Spark"
 			tasks: [{
@@ -739,6 +756,7 @@
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
+			entity_vis_size: 1.0f
 			id: "78CA9D2DD67FFC90"
 			subtitle: "Craft a Life Aggregator"
 			tasks: [{
@@ -756,6 +774,7 @@
 				"6AAB7BBD64FB4562"
 			]
 			description: [""]
+			entity_vis_size: 1.0f
 			id: "2FA5CDE610C7A6EB"
 			subtitle: "Place 4 Gaia Pylons around a powered Beacon and then summon the Gaia Guardian by right-clicking the Beacon with a Terrasteel Ingot"
 			tasks: [{
@@ -770,6 +789,7 @@
 		}
 		{
 			dependencies: ["2FA5CDE610C7A6EB"]
+			entity_vis_size: 1.0f
 			id: "1E174297E96D12B8"
 			shape: "hexagon"
 			size: 1.5d
@@ -778,6 +798,18 @@
 				{
 					disable_toast: true
 					entity: "botania:doppleganger"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_tag_cycle_mode: "USE_GLOBAL"
+					entity_vis_tag_cycle_seconds: 0.0f
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "botania:life_essence"
 					id: "15EF5457B8E4625C"
 					type: "kill"
@@ -796,6 +828,7 @@
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
+			entity_vis_size: 1.0f
 			icon: "botanicadds:gaia_plate"
 			id: "6CF9448B3FA32156"
 			subtitle: "Construct a Gaia Agglomeration Plate"
@@ -822,6 +855,7 @@
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
+			entity_vis_size: 1.0f
 			id: "6A83A49D8762F83D"
 			subtitle: "Form a Gaia Spirit Ingot"
 			tasks: [{
@@ -838,6 +872,7 @@
 				"6CF9448B3FA32156"
 				"6A83A49D8762F83D"
 			]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "1807373293C4A183"
 			rewards: [{
@@ -859,6 +894,7 @@
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
+			entity_vis_size: 1.0f
 			id: "2F2C7D360A6EBE2A"
 			optional: true
 			shape: "rsquare"
@@ -874,6 +910,7 @@
 		}
 		{
 			dependencies: ["1807373293C4A183"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "127F1C202BCDDF85"
@@ -892,6 +929,7 @@
 		{
 			dependencies: ["193CFF98260F82B7"]
 			description: ["&7&lHINT:&r &aFloral Fertilizer&r will spawn a few different magical plants when used on &aGrass&r, similarly to Bone Meal."]
+			entity_vis_size: 1.0f
 			id: "5083404D713C058D"
 			optional: true
 			shape: "rsquare"
@@ -922,6 +960,7 @@
 				"{@pagebreak}"
 				"&7&l&oP.S.&r &o&7Since none of the guide books for those mods are relevant anymore (&2Lexica Botania&r&7&o, &6&oWorn Notebook&r&7&o, &8&oOrigins of Darkness&r&7&o), I removed all of them. If you combine &ethis achievement tree&r&7&o, your &erecipe browser&r&7&o, &eitem descriptions&r&7&o and some &ecommon sense&r&7&o, you are more than capable of figuring everything out yourself!"
 			]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "4BB4F54ACBA9F3A7"
 			shape: "diamond"
@@ -938,6 +977,7 @@
 		}
 		{
 			dependencies: ["4E019F5A62D00D6F"]
+			entity_vis_size: 1.0f
 			id: "4E3E10AFFF61472E"
 			subtitle: "Craft an Imbuement Chamber"
 			tasks: [{
@@ -951,6 +991,7 @@
 		}
 		{
 			dependencies: ["45A92F2D2D809FF1"]
+			entity_vis_size: 1.0f
 			id: "23EF943A5D4BB045"
 			subtitle: "Craft a Novice Spell Book"
 			tasks: [{
@@ -965,6 +1006,7 @@
 		{
 			dependencies: ["45A92F2D2D809FF1"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:ritual_brazier"
 			id: "0213FAA50290ADF1"
 			subtitle: "Craft a Ritual Brazier"
@@ -980,6 +1022,7 @@
 		{
 			dependencies: ["0AA4AD4290EE5366"]
 			description: ["&7&lHINT:&r You can place up to &d8 Pedestals&r around your Enchanting Apparatus! A lot of recipes use more Pedestals than the 4 required by the tutorial."]
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:enchanting_apparatus"
 			id: "45A92F2D2D809FF1"
 			min_required_tasks: 3
@@ -1024,6 +1067,7 @@
 				""
 				"Some rituals can be &naugmented&r, amplifying or changing their effects completely. You can amplify rituals by &ethrowing the amplifying items into the Brazier before activation&r."
 			]
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:ritual_moonfall"
 			id: "3C8D98C28C22E202"
 			subtitle: "Craft any Ritual Tablet and insert it into a Ritual Brazier"
@@ -1065,6 +1109,7 @@
 		{
 			dependencies: ["23EF943A5D4BB045"]
 			description: ["&7&lHINT:&r You can open the glyph crafting menu by right-clicking the &eScribe's Table&r with your &dSpellbook&f!"]
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:glyph_projectile"
 			id: "1183BADAC1F706A7"
 			subtitle: "Unlock a new glyph in your Spellbook"
@@ -1094,6 +1139,7 @@
 		{
 			dependencies: ["0AA4AD4290EE5366"]
 			description: [""]
+			entity_vis_size: 1.0f
 			id: "65983995FD2CEA8A"
 			subtitle: "Craft a Mana Jar - a different mean of storing Mana"
 			tasks: [{
@@ -1112,6 +1158,7 @@
 				"{@pagebreak}"
 				"&7&lHINT 2:&r If you are dedicated to playing as a wizard, this is quite literally the only armor set you will need for most of your playthrough! &dArcanist armor can be upgraded twice&r by enchanting it with resources available &6later in progression&r. Every upgrade increases its &7defense&r, &dmagic bonuses&r and the total number of &dThreads&r you can add to it."
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "ars_nouveau:arcanist_hood"
@@ -1173,6 +1220,7 @@
 		}
 		{
 			dependencies: ["4BB4F54ACBA9F3A7"]
+			entity_vis_size: 1.0f
 			icon: "mythicmetals:runite_ingot"
 			id: "5CFAC77E43966C73"
 			subtitle: "Forge a Runite Ingot"
@@ -1188,6 +1236,7 @@
 		{
 			dependencies: ["66FE6097FAD75DFF"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:blank_thread"
 			icon_scale: 0.75d
 			id: "459AE4954ABBB9C1"
@@ -1212,6 +1261,7 @@
 		}
 		{
 			dependencies: ["65983995FD2CEA8A"]
+			entity_vis_size: 1.0f
 			id: "3AEF4B2CFBE2B569"
 			subtitle: "Craft an Ender Mana Jar"
 			tasks: [{
@@ -1226,6 +1276,7 @@
 		{
 			dependencies: ["65983995FD2CEA8A"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:relay"
 			id: "579681E66E7B1F88"
 			subtitle: "Craft any Mana Relay to transport Mana stored in Jars from point A to point B"
@@ -1258,6 +1309,7 @@
 		}
 		{
 			dependencies: ["23EF943A5D4BB045"]
+			entity_vis_size: 1.0f
 			id: "389BC3ED918250C2"
 			subtitle: "Enhance your Spellbook with materials from both heaven and hell"
 			tasks: [{
@@ -1271,6 +1323,7 @@
 		}
 		{
 			dependencies: ["389BC3ED918250C2"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "0553DD6B21E79BB4"
 			rewards: [{
@@ -1292,6 +1345,7 @@
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:magebloom_crop"
 			id: "573E8C31609DCA26"
 			subtitle: "Craft a Magebloom Seed and plant some in your garden"
@@ -1318,6 +1372,7 @@
 		}
 		{
 			dependencies: ["4E3E10AFFF61472E"]
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:air_essence"
 			id: "06C3735EEB6B3733"
 			subtitle: "Imbue a Mana Gem with natural energies, turning it into an Essence"
@@ -1339,6 +1394,7 @@
 		}
 		{
 			dependencies: ["45A92F2D2D809FF1"]
+			entity_vis_size: 1.0f
 			icon: "ars_elemental:lesser_fire_focus"
 			id: "675C4AB4B1F71DD0"
 			subtitle: "Craft a Lesser Spell Focus to empower a selected school of spells"
@@ -1360,6 +1416,7 @@
 		}
 		{
 			dependencies: ["602FA24B60010322"]
+			entity_vis_size: 1.0f
 			icon: "ars_elemental:base_bangle"
 			id: "3FDD5C479EE1E14F"
 			subtitle: "Craft an enchanted Bangle to boost your spells"
@@ -1381,6 +1438,7 @@
 		}
 		{
 			dependencies: ["3C8D98C28C22E202"]
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:wilden_tribute"
 			id: "57004D0473F07DF1"
 			shape: "hexagon"
@@ -1394,6 +1452,18 @@
 				}
 				{
 					entity: "ars_nouveau:wilden_boss"
+					entity_use_tag: false
+					entity_vis_idle_mode: "USE_GLOBAL"
+					entity_vis_offset_x: 0.0f
+					entity_vis_offset_y: 0.0f
+					entity_vis_rotation: 0.0f
+					entity_vis_silhouette_mode: "NONE"
+					entity_vis_size: 1.0f
+					entity_vis_spin_mode: "USE_GLOBAL"
+					entity_vis_tag_cycle_mode: "USE_GLOBAL"
+					entity_vis_tag_cycle_seconds: 0.0f
+					entity_vis_use_as_quest_icon: false
+					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "ars_nouveau:wilden_tribute"
 					id: "240AAB9563F2263F"
 					type: "kill"
@@ -1406,6 +1476,7 @@
 		}
 		{
 			dependencies: ["57004D0473F07DF1"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "76DA5AEA27C3B576"
 			shape: "diamond"
@@ -1425,6 +1496,7 @@
 				"76DA5AEA27C3B576"
 				"704371D70C883EEF"
 			]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			icon: "kubejs:eye_of_arcanum"
@@ -1443,6 +1515,7 @@
 		}
 		{
 			dependencies: ["4BB4F54ACBA9F3A7"]
+			entity_vis_size: 1.0f
 			id: "30CABAA97495053C"
 			size: 1.0d
 			subtitle: "Find Dark Ore underground and break it for its gems"
@@ -1457,6 +1530,7 @@
 		}
 		{
 			dependencies: ["4BB4F54ACBA9F3A7"]
+			entity_vis_size: 1.0f
 			icon: "ars_nouveau:purple_archwood_log"
 			id: "4E019F5A62D00D6F"
 			subtitle: "Chop down any Archwood tree"
@@ -1478,6 +1552,7 @@
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
+			entity_vis_size: 1.0f
 			icon: "botania:brewery"
 			id: "69830CAFAA11AB7E"
 			subtitle: "Craft a Botanical Brewery and... well, use it to make Brews!"
@@ -1507,6 +1582,7 @@
 		}
 		{
 			dependencies: ["1E174297E96D12B8"]
+			entity_vis_size: 1.0f
 			icon: "botania:dandelifeon"
 			id: "5E492F6CACA28CD9"
 			subtitle: "Craft some of the more powerful Mana generating flowers"
@@ -1529,6 +1605,7 @@
 		{
 			dependencies: ["602FA24B60010322"]
 			description: ["&7&oYes, the achievement requires you to craft all of them."]
+			entity_vis_size: 1.0f
 			icon: "botania:entropinnyum"
 			id: "59BEE24C8AAB14A7"
 			subtitle: "With newfound materials, explore some of the more quirky, but more efficient ways of generating Mana"
@@ -1595,6 +1672,7 @@
 		}
 		{
 			dependencies: ["5CFAC77E43966C73"]
+			entity_vis_size: 1.0f
 			id: "69E0CD80BEE3CA2E"
 			optional: true
 			shape: "rsquare"
@@ -1616,6 +1694,7 @@
 		}
 		{
 			dependencies: ["4B3625869C4E7079"]
+			entity_vis_size: 1.0f
 			id: "54622828F37E8A7E"
 			subtitle: "Bottle up some Ender Air"
 			tasks: [{
@@ -1629,6 +1708,7 @@
 		}
 		{
 			dependencies: ["1807373293C4A183"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "6287D26668962000"
 			rewards: [{
@@ -1657,6 +1737,7 @@
 		}
 		{
 			dependencies: ["30CABAA97495053C"]
+			entity_vis_size: 1.0f
 			id: "463D406FC669A4A5"
 			subtitle: "Find a Dark Temple anywhere in the Overworld"
 			tasks: [{
@@ -1672,6 +1753,7 @@
 		}
 		{
 			dependencies: ["463D406FC669A4A5"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "evilcraft:weather_container"
@@ -1731,6 +1813,7 @@
 		}
 		{
 			dependencies: ["463D406FC669A4A5"]
+			entity_vis_size: 1.0f
 			id: "4F763699CEFAE048"
 			subtitle: "Craft a Biome Extract Bottle"
 			tasks: [{
@@ -1745,6 +1828,7 @@
 		{
 			dependencies: ["30CABAA97495053C"]
 			description: ["&7&lHINT: &rYou can protect yourself against Vengeance Spirits with e.g. a &eBurning Gemstone&r. Both the Ring and the Gemstone will work for as long as they are in your inventory."]
+			entity_vis_size: 1.0f
 			id: "1FDC7F34049BA9DB"
 			subtitle: "Obtain a Vengeance Ring and see just how many Vengeful Spirits surround you"
 			tasks: [{
@@ -1759,6 +1843,7 @@
 		{
 			dependencies: ["1FDC7F34049BA9DB"]
 			description: ["&7&lHINT: &rIn order to catch &cVengeance Spirits&r, place a &dBox of Eternal Closures&r nearby and focus the Spirit down using a &dVengeance Focus&r. If you did everything right, the Spirit will end up caught in the Box!"]
+			entity_vis_size: 1.0f
 			icon: "evilcraft:vengeance_focus"
 			id: "721A9AC45D492F41"
 			subtitle: "Get yourself a 'Catch a Vengeance Spirit' DIY set"
@@ -1780,6 +1865,7 @@
 		}
 		{
 			dependencies: ["30CABAA97495053C"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1828,6 +1914,7 @@
 		}
 		{
 			dependencies: ["3C3CD5B17FA9BF1F"]
+			entity_vis_size: 1.0f
 			id: "631C617E054BE4EF"
 			subtitle: "Make a Blood Infuser"
 			tasks: [{
@@ -1847,6 +1934,7 @@
 		}
 		{
 			dependencies: ["631C617E054BE4EF"]
+			entity_vis_size: 1.0f
 			id: "475982941B714122"
 			subtitle: "Plant a tree that bears fruit in Blood"
 			tasks: [{
@@ -1860,6 +1948,7 @@
 		}
 		{
 			dependencies: ["631C617E054BE4EF"]
+			entity_vis_size: 1.0f
 			icon: "evilcraft:promise_tier_1"
 			id: "6261A7A69EE61DA9"
 			min_required_tasks: 1
@@ -1890,6 +1979,7 @@
 		}
 		{
 			dependencies: ["30CABAA97495053C"]
+			entity_vis_size: 1.0f
 			id: "0433C962730896A6"
 			subtitle: "Make a Sanguinary Pedetstal to automatically collect any nearby blood stains."
 			tasks: [{
@@ -1909,6 +1999,7 @@
 		}
 		{
 			dependencies: ["602FA24B60010322"]
+			entity_vis_size: 1.0f
 			id: "4FB77EF920326066"
 			subtitle: "Pour some Dimensional Juice onto a Rune of Teleportation"
 			tasks: [{
@@ -1933,6 +2024,7 @@
 				""
 				"On the other hand, &dSharestones&r are global no matter what. You can use them to create what I like to refer to as '&dplayer warps&r'."
 			]
+			entity_vis_size: 1.0f
 			icon: "waystones:waystone"
 			icon_scale: 0.75d
 			id: "2C8E322D7390BBED"
@@ -1982,6 +2074,7 @@
 		}
 		{
 			dependencies: ["69E0CD80BEE3CA2E"]
+			entity_vis_size: 1.0f
 			id: "6FBD7E57DB0590EE"
 			optional: true
 			shape: "rsquare"
@@ -2003,6 +2096,7 @@
 		}
 		{
 			dependencies: ["66FE6097FAD75DFF"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "ars_elemental:air_hat"
@@ -2066,6 +2160,7 @@
 		}
 		{
 			dependencies: ["66FE6097FAD75DFF"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "ars_elemental:fire_hat"
@@ -2129,6 +2224,7 @@
 		}
 		{
 			dependencies: ["66FE6097FAD75DFF"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "ars_elemental:aqua_hat"
@@ -2192,6 +2288,7 @@
 		}
 		{
 			dependencies: ["66FE6097FAD75DFF"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "ars_elemental:earth_hat"
@@ -2258,6 +2355,7 @@
 				"721A9AC45D492F41"
 				"6261A7A69EE61DA9"
 			]
+			entity_vis_size: 1.0f
 			icon: "evilcraft:piercing_vengeance_focus"
 			id: "2BA39149B3E2C1EA"
 			subtitle: "Kill a Vengeance Spirit using a Piercing Vengeance Focus"
@@ -2279,6 +2377,7 @@
 		}
 		{
 			dependencies: ["2BA39149B3E2C1EA"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "704371D70C883EEF"
 			shape: "diamond"
@@ -2295,6 +2394,7 @@
 		}
 		{
 			dependencies: ["602FA24B60010322"]
+			entity_vis_size: 1.0f
 			id: "6250E2C5F4887068"
 			subtitle: "Plant an Exoflame to fuel your Furnaces (and Blaze Burners!)"
 			tasks: [
@@ -2319,6 +2419,7 @@
 		}
 		{
 			dependencies: ["6013A3AD20AB6F78"]
+			entity_vis_size: 1.0f
 			id: "229B705AD7EA1F3A"
 			subtitle: "Plant a Bergamute to silence any nearby noise"
 			tasks: [
@@ -2343,6 +2444,7 @@
 		}
 		{
 			dependencies: ["602FA24B60010322"]
+			entity_vis_size: 1.0f
 			id: "11B25BA1F5DB0532"
 			subtitle: "Plant a Fallen Kanade"
 			tasks: [
@@ -2367,6 +2469,7 @@
 		}
 		{
 			dependencies: ["54622828F37E8A7E"]
+			entity_vis_size: 1.0f
 			id: "2EEC4146ACBACBF9"
 			subtitle: "Craft a Life Imbuer"
 			tasks: [{
@@ -2380,6 +2483,7 @@
 		}
 		{
 			dependencies: ["6CF9448B3FA32156"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -2417,6 +2521,7 @@
 		}
 		{
 			dependencies: ["475982941B714122"]
+			entity_vis_size: 1.0f
 			id: "71A3A4FEA5D416CB"
 			subtitle: "Craft a Chest that repairs your items in exchange for Blood"
 			tasks: [{
@@ -2436,6 +2541,7 @@
 		}
 		{
 			dependencies: ["0AA4AD4290EE5366"]
+			entity_vis_size: 1.0f
 			icon: "experienceobelisk:cognitive_flux"
 			id: "56A3013493D0EBF3"
 			subtitle: "Mix some Cognitive Flux and smelt it into Cognitive Amalgams"
@@ -2457,6 +2563,7 @@
 		}
 		{
 			dependencies: ["217462FD5B23940F"]
+			entity_vis_size: 1.0f
 			icon: "experienceobelisk:attunement_staff"
 			id: "07251A7CB6D1996D"
 			subtitle: "Place down an Experience Fountain and bind it to an Obelisk to be able to gather and use Liquid Experience"
@@ -2478,6 +2585,7 @@
 		}
 		{
 			dependencies: ["07251A7CB6D1996D"]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "172F69DA002C34E2"
 			rewards: [{
@@ -2499,6 +2607,7 @@
 		}
 		{
 			dependencies: ["217462FD5B23940F"]
+			entity_vis_size: 1.0f
 			id: "34DE119F9947227A"
 			subtitle: "Create a Molecular Metamorpher"
 			tasks: [{
@@ -2516,6 +2625,7 @@
 		}
 		{
 			dependencies: ["56A3013493D0EBF3"]
+			entity_vis_size: 1.0f
 			id: "217462FD5B23940F"
 			subtitle: "Craft an Experience Obelisk to store and liquify your Experience"
 			tasks: [{
@@ -2533,6 +2643,7 @@
 		}
 		{
 			dependencies: ["4E019F5A62D00D6F"]
+			entity_vis_size: 1.0f
 			id: "0715EDB6A4B814FE"
 			subtitle: "Craft a Dowsing Rod. You can use them to find Amethyst easily"
 			tasks: [{
@@ -2552,6 +2663,7 @@
 		}
 		{
 			dependencies: ["588D5DF2ADABBBA0"]
+			entity_vis_size: 1.0f
 			icon: "botanicadds:mana_tesseract"
 			id: "3A705369D933684C"
 			optional: true
@@ -2576,6 +2688,7 @@
 		}
 		{
 			dependencies: ["356CC1FA4E52AD00"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "botania:terrasteel_helmet"
@@ -2637,6 +2750,7 @@
 		}
 		{
 			dependencies: ["356CC1FA4E52AD00"]
+			entity_vis_size: 1.0f
 			id: "496A2EEB2D64E14A"
 			subtitle: "Craft any Spark Augment"
 			tasks: [{
@@ -2670,6 +2784,7 @@
 				""
 				"This is the third time I am going to mention &cSanguinary Pedestals&r. The earlier you remember how useful they are for collecting blood, &ethe earlier you will get to automating the process&r ;)"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -2706,6 +2821,7 @@
 		}
 		{
 			dependencies: ["721A9AC45D492F41"]
+			entity_vis_size: 1.0f
 			id: "57AB2174C55C524E"
 			tasks: [{
 				id: "246CAC27FC2F29D1"
@@ -2723,6 +2839,7 @@
 		}
 		{
 			dependencies: ["356CC1FA4E52AD00"]
+			entity_vis_size: 1.0f
 			icon: "window_box:alfthorne_sapling"
 			id: "588D5DF2ADABBBA0"
 			rewards: [{

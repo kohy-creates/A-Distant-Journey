@@ -71,7 +71,7 @@
 			image: "adj:textures/texts/quote.png"
 			rotation: 0.0d
 			width: 12.0d
-			x: -5.5d
+			x: -5.0d
 			y: 4.0d
 		}
 		{
@@ -121,6 +121,7 @@
 				""
 				"I thought it'd be worth mentioning it here ^^"
 			]
+			entity_vis_size: 1.0f
 			icon: "minecraft:crafting_table"
 			id: "026E22A534C341CC"
 			subtitle: "Craft a Crafting Table"
@@ -145,6 +146,7 @@
 		}
 		{
 			dependencies: ["23FAB8177B6ED9C6"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:oak_log"
 			id: "1F6BAC344E407291"
 			subtitle: "Punch a tree until it breaks"
@@ -169,6 +171,7 @@
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:wooden_pickaxe"
@@ -203,6 +206,7 @@
 		}
 		{
 			dependencies: ["5DFE46287A0322BD"]
+			entity_vis_size: 1.0f
 			id: "29721E49C8325EBE"
 			subtitle: "Construct a better pickaxe"
 			tasks: [{
@@ -222,6 +226,7 @@
 		}
 		{
 			dependencies: ["5DFE46287A0322BD"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:furnace"
 			id: "610F4BE5F7B24952"
 			subtitle: "Construct a Furnace"
@@ -243,6 +248,7 @@
 		}
 		{
 			dependencies: ["4C1D62C4B13A0CE0"]
+			entity_vis_size: 1.0f
 			id: "31AA8F1C7BAE7AC3"
 			subtitle: "Craft an Iron Pickaxe"
 			tasks: [{
@@ -262,6 +268,7 @@
 		}
 		{
 			dependencies: ["4C1D62C4B13A0CE0"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:lava_bucket"
 			id: "5C8C8742F4C523FA"
 			subtitle: "Fill a Bucket with lava"
@@ -283,6 +290,7 @@
 		}
 		{
 			dependencies: ["31AA8F1C7BAE7AC3"]
+			entity_vis_size: 1.0f
 			id: "2EBA35960CB17035"
 			subtitle: "Aquire Diamonds"
 			tasks: [{
@@ -300,6 +308,7 @@
 				"43D3C4FD06261327"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "5C3628B6D376AB8F"
 			subtitle: "Obtain a block of Obsidian"
 			tasks: [{
@@ -316,6 +325,7 @@
 				"2EBA35960CB17035"
 				"538833C00E37489D"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:diamond_pickaxe"
@@ -388,6 +398,7 @@
 				""
 				"&oThough there is also a safer way to do it without any drawbacks which you'll discover very soon.&r"
 			]
+			entity_vis_size: 1.0f
 			icon: "enchantinginfuser:enchanting_infuser"
 			id: "22391120726D6ACC"
 			min_required_tasks: 1
@@ -415,19 +426,52 @@
 				""
 				"Looking to automate the process? &9Create&r mod got you covered!"
 			]
+			entity_vis_size: 1.0f
 			icon: "alloy_forgery:cracked_stone_bricks_forge_controller"
 			id: "6D19FADBF72AC531"
 			subtitle: "Craft a Tier 1 Forge Controller and build an Alloy Forge"
 			tasks: [
 				{
-					id: "608D0B0FFE3FE433"
-					item: "alloy_forgery:cracked_stone_bricks_forge_controller"
+					id: "484C9C29FACD04E7"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "alloy_forgery:cracked_stone_bricks_forge_controller"
+								}
+								{
+									Count: 1b
+									id: "alloy_forgery:cracked_deepslate_bricks_forge_controller"
+								}
+							]
+						}
+					}
+					title: "Any stone Forge"
 					type: "item"
 				}
 				{
 					count: 16L
-					id: "7E95D19382782477"
-					item: { Count: 16, id: "minecraft:stone_bricks" }
+					id: "17C44A0B72999F3F"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:stone_bricks"
+								}
+								{
+									Count: 1b
+									id: "minecraft:deepslate_bricks"
+								}
+							]
+						}
+					}
+					title: "Stone or Deepslate Bricks"
 					type: "item"
 				}
 			]
@@ -437,6 +481,7 @@
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:wooden_hoe"
@@ -471,6 +516,7 @@
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:wooden_sword"
@@ -498,6 +544,7 @@
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:wooden_axe"
@@ -532,6 +579,7 @@
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "minecraft:golden_axe"
@@ -676,6 +724,7 @@
 		}
 		{
 			dependencies: ["4C1D62C4B13A0CE0"]
+			entity_vis_size: 1.0f
 			id: "522528FDCD548F12"
 			subtitle: "Craft a Flint and Steel"
 			tasks: [{
@@ -705,6 +754,7 @@
 				""
 				"Unrelated, but you can right click any campfire to toggle between its lit and unlit state. No need for Shovels, Water or Flint and Steel."
 			]
+			entity_vis_size: 1.0f
 			id: "282EF85EE78976F5"
 			optional: true
 			shape: "rsquare"
@@ -725,6 +775,7 @@
 		}
 		{
 			dependencies: ["6D19FADBF72AC531"]
+			entity_vis_size: 1.0f
 			id: "538833C00E37489D"
 			subtitle: "Craft Rose Gold Alloy in an Alloy Forge"
 			tasks: [{
@@ -738,6 +789,7 @@
 		}
 		{
 			dependencies: ["22391120726D6ACC"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:bookshelf"
 			id: "56CC6B18F6C297AC"
 			subtitle: "Build some Bookshelves around your Infuser to increase its power"
@@ -770,6 +822,7 @@
 				"{@pagebreak}"
 				"Having troubles understanding how to craft it? Look into the &5World is Magic&r chapter!"
 			]
+			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "1770E10AFE083ACF"
 			shape: "diamond"
@@ -786,6 +839,7 @@
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
+			entity_vis_size: 1.0f
 			id: "6967EAC78DBCC52D"
 			subtitle: "Craft a Fishing Rod out of Sticks and Strings"
 			tasks: [{
@@ -818,6 +872,7 @@
 		}
 		{
 			dependencies: ["6967EAC78DBCC52D"]
+			entity_vis_size: 1.0f
 			id: "1FA64BA25CA7A8D3"
 			subtitle: "Catch a fish"
 			tasks: [{
@@ -834,6 +889,7 @@
 		}
 		{
 			dependencies: ["7D5AA020D867BC37"]
+			entity_vis_size: 1.0f
 			id: "18F794CFEE554641"
 			subtitle: "Get some Leather"
 			tasks: [{
@@ -850,6 +906,7 @@
 				"18F794CFEE554641"
 				"4C1D62C4B13A0CE0"
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "travelersbackpack:standard"
@@ -890,6 +947,7 @@
 				""
 				"The set bonus is sometimes better than bonuses from individual pieces, so you should think and strategize whether it's better to utilize the set bonus or mix pieces of different sets for their raw stat bonuses."
 			]
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "kubejs:wooden_chestplate"
@@ -968,6 +1026,7 @@
 				""
 				"Another important change is that &6food drains way slower&r than in vanilla."
 			]
+			entity_vis_size: 1.0f
 			id: "6D4E948B6A4CE5E1"
 			optional: true
 			shape: "rsquare"
@@ -983,10 +1042,11 @@
 		}
 		{
 			disable_toast: true
+			entity_vis_size: 1.0f
 			id: "23FAB8177B6ED9C6"
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "The heart of your adventure"
+			subtitle: "<i>The start of your adventure"
 			tasks: [{
 				advancement: "adj:root"
 				criterion: ""
@@ -1001,6 +1061,7 @@
 		}
 		{
 			dependencies: ["5C3628B6D376AB8F"]
+			entity_vis_size: 1.0f
 			id: "5C22BA84223D3925"
 			subtitle: "Obtain Crying Obsidian"
 			tasks: [{
@@ -1009,14 +1070,15 @@
 				type: "item"
 			}]
 			title: "Who's Cutting Onions?"
-			x: 10.5d
-			y: 5.5d
+			x: 11.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"29721E49C8325EBE"
 				"610F4BE5F7B24952"
 			]
+			entity_vis_size: 1.0f
 			icon: "minecraft:iron_ingot"
 			id: "4C1D62C4B13A0CE0"
 			subtitle: "Forge an Iron Ingot"
@@ -1036,6 +1098,7 @@
 				""
 				"A &eSpelunker Potion&r will help you find them by highlighting them if they are nearby. &cLife Crystals&r can also be crafted at a fair price."
 			]
+			entity_vis_size: 1.0f
 			icon: "heart_crystals:heart_crystal"
 			id: "37D84A7023231586"
 			rewards: [{
@@ -1065,7 +1128,11 @@
 		}
 		{
 			dependencies: ["37D84A7023231586"]
-			description: ["&7&lHINT:&r &cHeart Lanterns&r increase life regeneration of all friendly mobs around them by 1 HP/s."]
+			description: [
+				"### HINT"
+				"&cHeart Lanterns&r increase life regeneration of all friendly mobs around them by 1 HP/s."
+			]
+			entity_vis_size: 1.0f
 			id: "212630BDD7C97684"
 			optional: true
 			shape: "rsquare"
@@ -1082,6 +1149,7 @@
 		{
 			dependencies: ["4C1D62C4B13A0CE0"]
 			description: [""]
+			entity_vis_size: 1.0f
 			icon: "kubejs:grappling_hook"
 			id: "5A9AE6E82354F04A"
 			subtitle: "Craft a Grappling Hook"
@@ -1102,18 +1170,20 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&7&lHINT:&r Since you're playing modded, I don't think I need to remind you what a Nether Portal looks like. "
+				"### HINT"
+				"Since you're playing modded, I don't think I need to remind you what a Nether Portal looks like. "
 				""
 				"But in case you forgot:"
 				""
-				"                   &5⬛⬛⬛⬛"
-				"                   &5⬛    ⬛"
-				"                   &5⬛    ⬛"
-				"                   &5⬛    ⬛"
-				"                   &5⬛⬛⬛⬛"
+				"&5⬛⬛⬛⬛"
+				"&5⬛    ⬛"
+				"&5⬛    ⬛"
+				"&5⬛    ⬛"
+				"&5⬛⬛⬛⬛"
 				""
 				"A frame 4x5 out of Obsidian. Activate it with Flint and Steel!"
 			]
+			entity_vis_size: 1.0f
 			icon: "minecraft:netherrack"
 			id: "491BB986AF2FDC03"
 			shape: "circle"
@@ -1132,6 +1202,7 @@
 		}
 		{
 			disable_toast: true
+			entity_vis_size: 1.0f
 			hide_dependent_lines: true
 			id: "7458825F53732676"
 			shape: "none"
@@ -1146,5 +1217,5 @@
 			y: 2.1d
 		}
 	]
-	title: "0. Prologue"
+	title: "0. First Steps"
 }

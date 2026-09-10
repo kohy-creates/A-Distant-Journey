@@ -1,0 +1,5 @@
+#单个幻化燃料(如 紫水晶碎片)在幻化台提供的幻化次数
+#The number of transmogrification uses provided by a single transmogrification fuel (such as Amethyst shard) on the transmogrification table
+#Range: > 1
+fuelPerShard = 3
+

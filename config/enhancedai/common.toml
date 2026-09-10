@@ -974,7 +974,7 @@
 
 [Blazes]
 	#Make blazes fire faster/more fireballs. Only mobs in enhancedai:blaze/change_attack entity type tag are affected by this feature.
-	"Enable Blaze attack" = true
+	"Enable Blaze attack" = false
 
 	#Make blazes fire faster/more fireballs. Only mobs in enhancedai:blaze/change_attack entity type tag are affected by this feature.
 	[Blazes."Blaze attack"]

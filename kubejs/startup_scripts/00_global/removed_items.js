@@ -176,12 +176,17 @@ const RemovedItems = {
 		'artifacts:cloud_in_a_bottle',
 		'artifacts:cross_necklace',
 		'artifacts:pocket_piston',
-		'artifacts:thorn_pendant',
+		'artifacts:running_shoes',
+		'artifacts:universal_attractor',
+		'artifacts:umbrella',
+		'artifacts:fire_pendant',
+		'artifacts:steadfast_spikes',
+		'artifacts:helium_flamingo',
+		'artifacts:shock_pendant',
+		'artifacts:running_shoes',
+		'artifacts:scarf_of_invisibility',
 
-		/witherstormmod:gold_command_block_.*/,
 		/witherstormmod:wooden_command_block_.*/,
-		/witherstormmod:iron_command_block_.*/,
-		/witherstormmod:stone_command_block_.*/,
 		'witherstormmod:eye_of_the_storm',
 		'witherstorm_delight:flint_command_block_knife',
 		'witherstorm_delight:stone_command_block_knife',
@@ -382,6 +387,8 @@ const RemovedItems = {
 		'farmersdelight:rope',
 		'farmersdelight:flint_knife',
 		/farmersdelight:.*cabinet/,
+		/twilightdelight:.*cabinet/,
+		/alexsdelight:.*cabinet/,
 
 		'unusualend:phantom_arrow',
 		'unusualend:purpur_tank',
@@ -702,7 +709,16 @@ const RemovedItems = {
 		/redeco:polished_.*_slab/,
 		/redeco:.*cushion/,
 		/redeco:.*pet_bed/,
-		'redeco:paper_pane'
+		'redeco:paper_pane',
+		/redeco:.*display_case/,
+		/redeco:.*pedestal/,
+		/redeco:.*plank_fence/,
+		/redeco:.*plank_fence_gate/,
+		/redeco:.*drawer_counter/,
+		/redeco:.*coffee_table/,
+		/redeco:.*stool/,
+		/redeco:.*sword_mount/,
+		/redeco:.*side_table/
 	]
 };
 

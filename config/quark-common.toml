@@ -112,7 +112,7 @@
 	"Compressed Blocks" = true
 	"Duskbound Blocks" = true
 	"Framed Glass" = true
-	"Glass Item Frame" = true
+	"Glass Item Frame" = false
 	"Gold Bars" = true
 	Grate = true
 	Hedges = false
@@ -129,11 +129,11 @@
 	"Raw Metal Bricks" = true
 	Rope = false
 	"Shear Vines" = true
-	Shingles = false
+	Shingles = true
 	"Soul Sandstone" = true
-	Stools = true
+	Stools = false
 	"Sturdy Stone" = true
-	Thatch = false
+	Thatch = true
 	"Variant Bookshelves" = true
 	"Variant Chests" = true
 	"Variant Furnaces" = true

@@ -1,0 +1,29 @@
+
+[general]
+	enableDynamicMixing = true
+	#Range: 8 ~ 245
+	maxConcurrentSounds = 230
+	enableDistanceCull = true
+	#Range: 16 ~ 256
+	maxSoundDistance = 64
+	enableVolumeCull = true
+	enableSameTickDedup = true
+	#Range: 1 ~ 20
+	maxSameTickSounds = 3
+
+[optimizations]
+	#Throttles audio listener and camera calculations when the player is standing still.
+	enableCameraThrottle = true
+	#Staggers expensive OpenAL status queries, verifying if a sound is stopped once every few ticks instead of every single frame.
+	enableStaggeredStopped = true
+	#The tick interval at which staggered status checks run per sound channel.
+	#Range: 1 ~ 20
+	staggeredTickInterval = 5
+
+[whitelists]
+	distanceCullWhitelist = []
+	volumeCullWhitelist = ["ambientsounds"]
+	sameTickWhitelist = ["ambientsounds"]
+	cooldownWhitelist = ["ambientsounds"]
+	evictionWhitelist = ["ambientsounds"]
+

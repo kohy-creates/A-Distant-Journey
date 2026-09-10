@@ -20,12 +20,13 @@
 		x: 3.0d
 		y: -1.5d
 	}]
-	order_index: 2
+	order_index: 1
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
 				id: "betterarcheology:iron_brush"
@@ -56,6 +57,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:brewer_pottery_sherd"
 			id: "6E9DF0158B30E01A"
 			subtitle: "Find any Pottery Sherd"
@@ -77,6 +79,7 @@
 		}
 		{
 			dependencies: ["6E9DF0158B30E01A"]
+			entity_vis_size: 1.0f
 			id: "64335FCCDBA15F48"
 			subtitle: "Craft a Decorated Pot"
 			tasks: [{
@@ -90,6 +93,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "betterarcheology:creeper_fossil"
 			id: "6865B0C04EAC4594"
@@ -117,6 +121,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "betterarcheology:villager_fossil"
 			id: "1E4D545A61F74667"
@@ -144,6 +149,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "betterarcheology:chicken_fossil"
 			id: "42B5BF0604C002C1"
@@ -171,6 +177,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "betterarcheology:ocelot_fossil"
 			id: "16A61FB994D9009C"
@@ -198,6 +205,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "betterarcheology:wolf_fossil"
 			id: "47315ED04C15EF9B"
@@ -225,6 +233,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "betterarcheology:sheep_fossil"
 			id: "11A56196F5E45885"
@@ -252,6 +261,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: "betterarcheology:guardian_fossil"
 			id: "54DB18D8A01CF54B"
@@ -279,6 +289,7 @@
 		}
 		{
 			dependencies: ["6E9DF0158B30E01A"]
+			entity_vis_size: 1.0f
 			icon: "minecraft:prize_pottery_sherd"
 			icon_scale: 0.75d
 			id: "45EB941110554E0E"
@@ -488,6 +499,7 @@
 		}
 		{
 			dependencies: ["10E23382BDF3B0D3"]
+			entity_vis_size: 1.0f
 			icon: "quark:ancient_sapling"
 			id: "2E0C540677F75107"
 			rewards: [{
@@ -544,6 +556,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			id: "71C9D73CA3D6B704"
 			subtitle: "Craft an Archeology Table"
 			tasks: [{
@@ -557,6 +570,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			id: "10E23382BDF3B0D3"
 			subtitle: "Find a Sniffer Egg"
 			tasks: [{
@@ -570,6 +584,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "34BDAD6C0CC939AA"
 			subtitle: "Find a Totem of Radiance"
@@ -585,6 +600,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "363286DEAB1138D6"
 			subtitle: "Find a Totem of Growth"
@@ -599,6 +615,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "59D525C3C29FF263"
 			subtitle: "Find a Totem of Souls"
@@ -619,6 +636,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "2E8EC728EFDBF100"
 			subtitle: "Find a Totem of Torrents"
@@ -639,6 +657,7 @@
 		}
 		{
 			dependencies: ["7599371BBE1AC566"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "40E1904B75697867"
 			shape: "hexagon"

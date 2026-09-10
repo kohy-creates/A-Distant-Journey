@@ -51,39 +51,25 @@ EntityEvents.spawned(event => {
 	}
 });
 
-NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.LivingHurtEvent_} event */ event => {
-	const source = event.getSource()
+ADJServerEvents.adjArrowHurt(event => {
+	const shooter = event.getShooter();
+	let damage;
+	const arrowEntity = event.getArrow();
+	if (shooter instanceof $Player) {
 
-	const rangedDamageSources = [
-		'DamageSource (arrow)',
-		'DamageSource (cataclysm.maledictio_sagitta)',
-		'DamageSource (trident)',
-		'DamageSource (cataclysm.storm_bringer)',
-		'DamageSource (player_attack)',
-	]
+		// Certain arrows ignore velocity multiplier
+		const velocity = (arrowEntity.getType() === 'alexscaves:seeking_arrow' || arrowEntity.getType() === 'tide:deep_aqua_arrow' || arrowEntity.getType() === 'tide:star_arrow') ? 1 : (Math.min(arrowEntity.getDeltaMovement().length(), 3) / 3);
 
-	if (rangedDamageSources.includes(source.toString())) {
-		const shooter = source.getActual();
-		if (!shooter) return;
-		let damage;
-		const arrowEntity = source.getImmediate();
-		if (shooter instanceof $Player && arrowEntity instanceof $AbstractArrow) {
+		const pData = arrowEntity.persistentData;
+		damage = (pData.arrowDamage + pData.bowDamage) * velocity;
 
-			// Certain arrows ignore velocity multiplier
-			const velocity = (arrowEntity.getType() === 'alexscaves:seeking_arrow' || arrowEntity.getType() === 'tide:deep_aqua_arrow' || arrowEntity.getType() === 'tide:star_arrow') ? 1 : (Math.min(arrowEntity.getDeltaMovement().length(), 3) / 3);
-
-			const pData = arrowEntity.persistentData;
-			damage = (pData.arrowDamage + pData.bowDamage) * velocity;
-
-		}
-		else {
-			const velocity = Math.min(arrowEntity.getDeltaMovement().length(), 0.4) / 0.4;
-
-			damage = (global.getOrDefault(global.monsterRangedDamageBase[shooter.getType()], 15)) * (velocity);
-			const chapter = (shooter.getServer().persistentData.chapters.current_stage).toString().replace('chapter_', '')
-			damage *= global.monsterRangedDamageMul[chapter];
-		}
-		damage = Math.ceil(damage)
-		event.setAmount(damage);
 	}
-})
+	else {
+		const velocity = Math.min(arrowEntity.getDeltaMovement().length(), 0.4) / 0.4;
+
+		damage = (global.getOrDefault(global.monsterRangedDamageBase[shooter.getType()], 15)) * (velocity);
+		damage *= global.monsterRangedDamageMul[global.getCurrentChapter(shooter.getServer())];
+	}
+	damage = Math.ceil(damage)
+	event.setAmount(damage);
+});

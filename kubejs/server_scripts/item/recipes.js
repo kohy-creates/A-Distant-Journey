@@ -966,32 +966,32 @@ ServerEvents.recipes((event) => {
 	).id('adj:enchanting_table');
 
 	// Enchanting Library
-	// event.recipes.ars_nouveau.enchanting_apparatus(
-	// 	[
-	// 		'#c:bookshelves',
-	// 		'#c:bookshelves',
-	// 		'#c:bookshelves',
-	// 		'#c:bookshelves',
-	// 		'crying_obsidian',
-	// 		'crying_obsidian',
-	// 		'obsidian',
-	// 		'obsidian'
-	// 	],
-	// 	'#c:chests/wooden',
-	// 	'enchlibathome:library'
-	// ).id('adj:enchantment_library');
+	event.recipes.ars_nouveau.enchanting_apparatus(
+		[
+			'#c:bookshelves',
+			'#c:bookshelves',
+			'#c:bookshelves',
+			'#c:bookshelves',
+			'crying_obsidian',
+			'crying_obsidian',
+			'obsidian',
+			'obsidian'
+		],
+		'#c:chests/wooden',
+		'enchlibathome:library'
+	).id('adj:enchantment_library');
 
-	// event.recipes.summoningrituals.altar('enchlibathome:library')
-	// 	.itemOutput('enchlibathome:ender_library')
-	// 	.input(
-	// 		'ender_chest',
-	// 		'experienceobelisk:calcarine_matrix',
-	// 		'experienceobelisk:cognitive_alloy_block',
-	// 		'experienceobelisk:cognitive_alloy_block',
-	// 		'experienceobelisk:cognitive_alloy_block',
-	// 		'experienceobelisk:cognitive_alloy_block',
-	// 	)
-	// 	.id('adj:enchantment_library_alexandria');
+	event.recipes.summoningrituals.altar('enchlibathome:library')
+		.itemOutput('enchlibathome:ender_library')
+		.input(
+			'ender_chest',
+			'experienceobelisk:calcarine_matrix',
+			'experienceobelisk:cognitive_alloy_block',
+			'experienceobelisk:cognitive_alloy_block',
+			'experienceobelisk:cognitive_alloy_block',
+			'experienceobelisk:cognitive_alloy_block',
+		)
+		.id('adj:enchantment_library_alexandria');
 
 	event.recipes.farmersdelight.cooking(['alexsmobs:triops_egg', 'alexsmobs:triops_egg', 'alexsmobs:stink_bottle'], 'alexsmobs:mosquito_repellent_stew', 1, 100, 'minecraft:bowl')
 

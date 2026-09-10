@@ -99,7 +99,8 @@
 			"hybrid_aquatic:goldfish",
 			"hybrid_aquatic:squirrelfish",
 			"hybrid_aquatic:golden_dorado",
-			"twilightforest:kobold"
+			"twilightforest:kobold",
+			"quark:glass_item_frame"
 		],
 		"result": "deny"
 	}

@@ -605,7 +605,7 @@
       "is_scaled_by_crd": true,
       "crossbow_multishot_chance": 0.15,
       "firework_drop_chance": 0.25,
-      "firework_count": 8
+      "firework_count": 5
     },
     "spawn_blocker": {
       "forbidden_entities": {
@@ -613,11 +613,7 @@
           "majruszsdifficulty:illusioner",
           "majruszsdifficulty:tank",
           "majruszsdifficulty:cerberus"
-        ],
-        "chapter_2": [
-          "majruszsdifficulty:cerberus"
-        ],
-        "chapter_4": []
+        ]
       }
     },
     "spawn_killer_bunny": {

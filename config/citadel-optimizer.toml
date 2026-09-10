@@ -1,0 +1,44 @@
+# LighterCitadel - Patches for Citadel!
+#
+# Every option below is behaviour-preserving: Citadel's tick-rate modifiers, celestial time
+# scaling and cosmetic rendering all behave exactly as they do without this mod. The only
+# exceptions are the two explicitly cosmetic toggles, which are opt-in and marked as such.
+#
+# Read once during mixin bootstrap; a game restart is required for changes to take effect.
+
+[server]
+# Skip the whole tick-rate lookup for an entity when no modifier is active. This is the single
+# hotpath in Citadel: it runs once per entity per tick on every level.
+fast_entity_tick_check_server = true
+# Cache Citadel's saved-data lookup. Without this, every call allocates two capturing lambdas
+# and walks the dimension data storage map.
+cache_server_data_lookup = true
+# Allocation-free master tick with an early exit when nothing is scheduled.
+fast_master_tick = true
+# Early exit for entity/celestial modifier queries when the modifier list is empty.
+fast_modifier_queries = true
+# Custom-tick-list size at which an identity index replaces the linear scan.
+tick_list_index_threshold = 32
+
+[client]
+fast_entity_tick_check_client = true
+cache_client_tracker = true
+# Early exit for sound pitch and client tick rate when nun is active.
+fast_sound_pitch = true
+# Primitive tooltip hover animation state. Also fixes an map growth (mem leak)
+# in Citadel where the 'previous frame' map is never cleared.
+optimize_hover_animations = true
+# Avoid a username String allocation and a linear patreon-list scan per player per frame.
+optimize_patreon_follower_render = true
+# COSMETIC: set true to stop rendering patreon followers entirely.
+disable_patreon_followers = true
+# EXPERIMENTAL: skip Citadel's four per-entity-per-frame renderer events when no mod listens to
+# them. Large win with many visible mobs, but it hooks methods Citadel merges into
+# LivingEntityRenderer, so that's why its opt-in. It self-disables if those methods are not available or found.
+skip_unlistened_renderer_events = false
+
+[safety]
+# Drop removed or unloaded entities from Citadel manual tick list so they cannot keep a whole
+# Level alive after a world unload or disconnect.
+purge_unloaded_entities = true
+
