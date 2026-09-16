@@ -1,6 +1,6 @@
 {
-  "parent": "summoningrituals:block/altar",
-  "textures": {
-    "texture": "summoningrituals:block/altar_active"
-  }
+	"parent": "summoningrituals:block/altar",
+	"textures": {
+		"texture": "summoningrituals:block/altar_active"
+	}
 }
