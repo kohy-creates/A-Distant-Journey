@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:crab_strampler_armor"
+    },
+    "title": {
+      "translate": "advancements.radiationarmor.title"
+    },
+    "description": {
+      "translate": "advancements.radiationarmor.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "radiationarmor_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nethers_exorcism_reborn:crab_strampler_armor"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "nethers_exorcism_reborn:netheritemonstrosity"
+}

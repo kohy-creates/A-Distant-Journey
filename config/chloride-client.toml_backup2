@@ -137,7 +137,7 @@ modpackMode = false
 
 [culling]
   # Entity and tile-entity distance culling
-  tileEntities = true
+  tileEntities = false
 
   # Squared horizontal distance in blocks
   # Value must be less than '16384' and greater than '0'

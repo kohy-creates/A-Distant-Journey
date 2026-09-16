@@ -187,10 +187,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"2FC4D1B2E42E2124"
-				"0FDA4BA49667895C"
-			]
+			dependencies: ["0FDA4BA49667895C"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: "witherstormmod:super_beacon"

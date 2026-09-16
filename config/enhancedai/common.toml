@@ -324,7 +324,7 @@
 	#Changes mobs attack range to use the 1.20.2 mechanic. Only entities in the `enhancedai:mobs/melee_attacking` entity type tag will be affected.
 	"Enable Melee attacking" = true
 	#Mobs can bite if are attacked with non-weapons. Only mobs in the enhancedai:mobs/biting_mobs/can_bite entity type tag can bite. Entity types in `mobs/biting_mobs/unaffected_by_bite` tag are unaffected by bites. Damage types in `biting_mobs/doesnt_trigger_bite` tag don't trigger biting mobs.
-	"Enable Biting mobs" = true
+	"Enable Biting mobs" = false
 	#Only entity types in `enhancedai:mobs/can_open_doors` tag are affected by this feature.
 	"Enable Open doors" = true
 	#Make mobs angry when a block is broken. Check the mod's config folder Mobs/Break Anger/break_anger_config.json to change blocks and entities triggered.
@@ -526,16 +526,16 @@
 	[Mobs."Biting mobs"]
 		#The damage dealt to the attacker when bit
 		#Range: 0.0 ~ 1.7976931348623157E308
-		Damage = 7.0
+		Damage = 3.0
 
 		#Chance for a Mob to bite the attacker
 		[Mobs."Biting mobs".Chance]
 			#Range: 0.0 ~ 1.0
 			"Easy/Peaceful" = 0.2
 			#Range: 0.0 ~ 1.0
-			Normal = 0.2
+			Normal = 0.0
 			#Range: 0.0 ~ 1.0
-			Hard = 0.5
+			Hard = 0.0
 
 	#Mobs will run away from exploding creepers / TNT. Only entity types in `enhancedai:mobs/can_run_from_explosions` tag will be affected by this feature
 	[Mobs."Avoid explosions"]

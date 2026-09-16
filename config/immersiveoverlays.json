@@ -13,7 +13,7 @@
   "render_endcap": true,
   "hide_from_debug": true,
   "compass_enable": true,
-  "compass_vertical_position": 140,
+  "compass_vertical_position": 200,
   "compass_horizontal_position_left": false,
   "compass_direction": true,
   "compass_single_line": false,
@@ -56,9 +56,10 @@
   "clock_24_hour": true,
   "clock_seasons": true,
   "clock_text_colour": 14737632,
-  "clock_vertical_position": 85,
+  "clock_vertical_position": 145,
   "clock_horizontal_position_left": false,
   "clock_items": [
+    "mythicmetals:platinum_watch",
     "minecraft:clock"
   ],
   "clock_weather_items": [
@@ -78,7 +79,7 @@
   "temperature_hot_colour": 16759694,
   "temperature_cold_colour": 9371647,
   "temperature_temperate_colour": 16777215,
-  "temperature_vertical_position": 112,
+  "temperature_vertical_position": 172,
   "temperature_horizontal_position_left": true,
   "temperature_items": [
     "oreganized:thermometer",
@@ -99,7 +100,7 @@
   "biome_reduced_info": false,
   "biome_text_tinted": true,
   "biome_text_colour": 14737632,
-  "biome_vertical_position": 112,
+  "biome_vertical_position": 172,
   "biome_horizontal_position_left": false,
   "biome_items": [
     "kubejs:map_atlas",
@@ -123,7 +124,7 @@
     "seasonsextras:season_calendar"
   ],
   "speed_enable": true,
-  "speed_vertical_position": 137,
+  "speed_vertical_position": 197,
   "speed_horizontal_position_left": true,
   "speed_colour": 13090689,
   "speed_items": [
@@ -146,7 +147,7 @@
   "compat_ecliptic_seasons": true,
   "wind_enable": true,
   "wind_icons": true,
-  "wind_vertical_position": 90,
+  "wind_vertical_position": 150,
   "wind_horizontal_position_left": true,
   "wind_colour": 10254644,
   "compat_breezy": true,
@@ -161,7 +162,7 @@
   "moon_horizontal_position_left": false,
   "moon_text_colour": -1507334,
   "moon_text_colour_from_events": true,
-  "moon_vertical_position": 62,
+  "moon_vertical_position": 122,
   "moon_reduced_info": true,
   "moon_only_at_night": true,
   "moon_items": [

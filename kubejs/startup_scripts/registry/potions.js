@@ -6,6 +6,7 @@ const POTION_REGISTRY = {
 		'iron_skin': new $MobEffectBuilder('iron_skin')
 			.beneficial()
 			.color(Color.GRAY)
+			.displayName('Iron Skin')
 			.modifyAttribute(
 				'generic.armor',
 				'b074a3d4-dff0-44e9-b72d-f31d8488668f',
@@ -15,6 +16,7 @@ const POTION_REGISTRY = {
 		'archery': new $MobEffectBuilder('archery')
 			.beneficial()
 			.color(Color.ORANGE_DYE)
+			.displayName('Archery')
 			.modifyAttribute(
 				'attributeslib:arrow_damage',
 				'c1e3f5b0-4d8a-4f2e-9c6b-1f2e3d4c5b6a',
@@ -29,6 +31,7 @@ const POTION_REGISTRY = {
 			),
 		'magic_power': new $MobEffectBuilder('magic_power')
 			.beneficial()
+			.displayName('Magic Power')
 			.color(Color.BLUE)
 			.modifyAttribute(
 				'ars_nouveau:ars_nouveau.perk.spell_damage',
@@ -38,6 +41,7 @@ const POTION_REGISTRY = {
 			),
 		'builder': new $MobEffectBuilder('builder')
 			.beneficial()
+			.displayName('Builder')
 			.color(Color.BROWN_DYE)
 			.modifyAttribute(
 				'forge:block_reach',
@@ -112,12 +116,23 @@ const POTION_REGISTRY = {
 	}
 };
 
-POTION_REGISTRY.MOB_EFFECTS.register(ForgeModEvents.eventBus());
-POTION_REGISTRY.POTIONS.register(ForgeModEvents.eventBus());
+// Safeguard against an error that occurs on /kubejs reload startup_scripts
+try {
+	POTION_REGISTRY.MOB_EFFECTS.register(ForgeModEvents.eventBus());
+	POTION_REGISTRY.POTIONS.register(ForgeModEvents.eventBus());
+}
+catch (e) {
+	console.log(
+		'Tried to register potions and effects, but failed.',
+		'If this is due to a secondary startup script reload, this is expected and can be ignored.',
+		e
+	)
+}
 
 StartupEvents.init(event => {
 
 	Object.keys(POTION_REGISTRY.effects).forEach((effect) => {
+		/** @type {Internal.MobEffectBuilder_} */
 		const effectBuilder = POTION_REGISTRY.effects[effect];
 		POTION_REGISTRY.effectObjects[effect] = POTION_REGISTRY.MOB_EFFECTS.register(effect, () => effectBuilder.createObject());
 	});

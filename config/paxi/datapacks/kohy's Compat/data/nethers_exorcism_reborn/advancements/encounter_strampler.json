@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:strampler_horn"
+    },
+    "title": {
+      "translate": "advancements.encounter_strampler.title"
+    },
+    "description": {
+      "translate": "advancements.encounter_strampler.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "encounter_strampler_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "taken": {
+            "min": 0,
+            "max": 5
+          },
+          "source_entity": {
+            "type": "nethers_exorcism_reborn:strampler"
+          },
+          "blocked": false
+        }
+      }
+    }
+  },
+  "parent": "nethers_exorcism_reborn:enter_dna_forest"
+}

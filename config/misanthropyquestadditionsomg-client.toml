@@ -97,7 +97,7 @@
 	#How hard dependency lines bend: 0 straight, 0.5 subtle, 1 flowchart S, 2 loopy.
 	#Past 3 the curve leaves the box cull_offscreen_dependency_lines tests and lines pop at screen edges.
 	#Range: 0.0 ~ 3.0
-	dependency_line_curviness = 0.25
+	dependency_line_curviness = 0.33
 	#Arrow on each dependency line pointing at the dependent quest. Needs curved_dependency_lines.
 	dependency_arrows = false
 	#Quest buttons grow slightly when hovered.

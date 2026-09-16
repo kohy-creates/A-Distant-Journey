@@ -46,7 +46,7 @@ EntityJSEvents.modifyEntity(event => {
 	 * @param {"undead" | "arthropod" | "illager" | "water"} type 
 	 */
 	function setMobType(entity, type) {
-		event.modify(entity, e => e.mobType());
+		event.modify(entity, e => e.mobType(type));
 	}
 
 	setMobType('creeper', 'arthropod');

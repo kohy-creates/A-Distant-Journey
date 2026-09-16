@@ -139,3 +139,5 @@ sdf-cache/
 config/jei/world/
 fieldguide_cache/
 config/enhancedcelestials2core/workspaces/
+controllable_natives/
+quantified_api.log

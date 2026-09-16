@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:raw_indigo_salamander_tail"
+    },
+    "title": {
+      "translate": "advancements.encountersalamander.title"
+    },
+    "description": {
+      "translate": "advancements.encountersalamander.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "encountersalamander_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "nethers_exorcism_reborn:enter_dna_forest"
+}

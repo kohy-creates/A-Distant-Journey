@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:indigo_fungus"
+    },
+    "title": {
+      "translate": "advancements.enter_dna_forest.title"
+    },
+    "description": {
+      "translate": "advancements.enter_dna_forest.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "enter_dna_forest_0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "nethers_exorcism_reborn:dna_forest"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "nethers_exorcism_reborn:nether_exorcism"
+}

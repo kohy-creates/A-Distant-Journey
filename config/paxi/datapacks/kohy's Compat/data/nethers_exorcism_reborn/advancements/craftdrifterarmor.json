@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:drifter_chestplate"
+    },
+    "title": {
+      "translate": "advancements.craftdrifterarmor.title"
+    },
+    "description": {
+      "translate": "advancements.craftdrifterarmor.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "craftdrifterarmor_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "nethers_exorcism_reborn:open_vault"
+}

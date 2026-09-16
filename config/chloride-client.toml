@@ -9,7 +9,7 @@ modpackMode = false
   mode = "BORDERLESS"
 
   # Adds 1px to the borderless window height, avoiding driver-level exclusive fullscreen optimizations
-  disableBorderlessOptimizations = false
+  disableBorderlessOptimizations = true
 
   # Which window modes the F11 key cycles through
   # Accepted values are: [ATTACH, REPLACE, OFF]

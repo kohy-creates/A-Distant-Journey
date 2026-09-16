@@ -52,7 +52,7 @@ StartupEvents.postInit(event => {
 
 		['create:rotation_speed_controller', 'create:creative_motor'],
 		['minecraft:hopper', 'goldenhopper:golden_hopper'],
-		
+
 		['quark:paper_wall_big', 'quark:paper_wall_sakura'],
 		['quark:paper_wall_sakura', 'redeco:paper_door'],
 		['redeco:paper_door', 'redeco:paper_trapdoor']
@@ -79,10 +79,25 @@ StartupEvents.postInit(event => {
 		'botania:mossy_livingwood',
 		'botania:mossy_dreamwood',
 		'botania:shimmerwood',
-		'twilight_forest:sorting',
 		'twilight_forest:mangrove',
-		'evilcraft:reinforced_undead'
-	]
+		'evilcraft:reinforced_undead',
+
+		'twilightforest:sorting',
+		'twilightforest:mining',
+		'twilightforest:transformation',
+		'twilightforest:time',
+		'evilcraft:undead',
+		'cataclysm:chorus',
+		'quark:trumpet',
+		'gardens_of_the_dead:whistlecane',
+		'alexscaves:thornwood',
+		'alexscaves:pewen',
+		'betterarcheology:rotten',
+		'mynethersdelight:powdery',
+		'netherexp:smokestalk',
+		'unusualend:chorus_nest',
+		'phantasm:pream',
+	];
 
 	Item.getTypeList().forEach(id => {
 		if (global.isItemDisabled(id)) return;
@@ -117,8 +132,7 @@ StartupEvents.postInit(event => {
 			archwoodLogs.push(id);
 			archwoodLogs.sort();
 		}
-		else if (id.includes('spawn_egg')
-			|| id.endsWith('_se')) {
+		else if (id.includes('spawn_egg') || id.endsWith('_se')) {
 			spawnEggs.push(id)
 		}
 		else if (id.includes('mcdw:')) {
@@ -154,28 +168,27 @@ StartupEvents.postInit(event => {
 		'quark:stripped_X_post',
 		'planks',
 		'mosaic',
+		'decoration_delight:mosaic',
+		'mctb:crafting_table',
 		'bookshelf',
 		'quark:bookshelf',
-		'redeco:bench',
-		'redeco:chair',
+		'another_furniture:bench',
+		'another_furniture:chair',
 		'beachparty:chair',
-		'redeco:stool',
-		'redeco:dining_bench',
-		'redeco:side_table',
-		'redeco:drawers',
-		'redeco:table',
+		'decoration_delight:stool',
+		'another_furniture:table',
 		'beachparty:table',
-		'redeco:coffee_table',
-		'mctb:crafting_table',
+		'another_furniture:drawer',
 		'chest',
 		'quark:chest',
-		'redeco:cabinet',
+		'farmersdelight:cabinet',
 		'alexscavesdelight:cabinet',
 		'twilightdelight:cabinet',
 		'beachparty:cabinet',
-		'redeco:counter',
-		'redeco:cabinet_counter',
-		'redeco:drawer_counter',
+		'decoration_delight:counter',
+		'decoration_delight:counter_corner',
+		'decoration_delight:counter_bend',
+		'decoration_delight:countertop',
 		'stairs',
 		'mosaic_stairs',
 		'slab',
@@ -184,26 +197,21 @@ StartupEvents.postInit(event => {
 		'quark:vertical_slab',
 		'quark:mosaic_vertical_slab',
 		'quark:planks_vertical_slab',
-		'redeco:display_case',
-		'redeco:shelf',
-		'redeco:sword_mount',
-		'redeco:pedestal',
+		'suppsquared:item_shelf',
 		'fence',
 		'twilightforest:banister',
-		'redeco:plank_fence',
-		'redeco:plank_gate',
 		'fence_gate',
 		'door',
 		'trapdoor',
 		'ladder',
 		'quark:ladder',
-		'redeco:lattice',
 		'pressure_plate',
 		'button',
 		'sign',
 		'supplementaries:sign_post',
 		'hanging_sign',
-		'redeco:crate',
+		'another_furniture:shutter',
+		'another_furniture:flower_box',
 		'boat',
 		'raft',
 	];
@@ -226,14 +234,11 @@ StartupEvents.postInit(event => {
 		'window_box:alfthorne',
 		'ars_nouveau:archwood',
 		'evilcraft:undead',
-		'minecraft:mushroom',
-		'enhanced_mushrooms:mushroom',
 		'quark:azalea',
 		'alexscaves:thornwood',
 		'alexscaves:pewen',
 		'quark:blossom',
 		'quark:ancient',
-		'snifferplus:stone_pine',
 		'upgrade_aquatic:driftwood',
 		'betterarcheology:rotten',
 		'born_in_chaos_v1:scorched',
@@ -242,6 +247,10 @@ StartupEvents.postInit(event => {
 		'minecraft:warped',
 		'mynethersdelight:powdery',
 		'netherexp:smokestalk',
+		'nethers_exorcism_reborn:indigo',
+		'nethers_exorcism_reborn:turquoise',
+		'gardens_of_the_dead:soulblight',
+		'gardens_of_the_dead:whistlecane',
 		'twilight_forest:twilight_oak',
 		'twilight_forest:canopy',
 		'twilight_forest:mangrove',
@@ -279,6 +288,8 @@ StartupEvents.postInit(event => {
 			case 'redeco': return 'rd';
 			case 'farmersdelight': return 'fd';
 			case 'twilightforest': return 'tf';
+			case 'another_furniture': return 'af';
+			case 'decoration_delight': return 'ddr';
 			default: return namespace;
 		}
 	}
@@ -520,6 +531,10 @@ StartupEvents.postInit(event => {
 			'item:minecraft:tipped_arrow',
 			'item:alexscaves:jelly_bean',
 			'item:mythicmetals:tipped_runite_arrow',
+			'item:chiselsandbits:block_bit',
+			'item:netherexp:grenade_antidote',
+			'item:netherexp:antidote',
+			'item:supplementaries:bamboo_spikes_tipped',
 		],
 		added: [],
 		filters: [
@@ -531,8 +546,20 @@ StartupEvents.postInit(event => {
 			'/mythicmetals:tipped_runite_arrow/',
 			'/alexscaves:jelly_bean/',
 			'/spawn_egg/',
-			/item:minecraft:potion{Potion:".*long.*"}/,
-			/item:minecraft:potion{Potion:".*strong.*"}/,
+			'/minecraft:potion\\{Potion\\:\\".*long.*\\"\\}/',
+			'/minecraft:potion\\{Potion\\:\\".*strong.*\\"\\}/',
+			'/chiselsandbits:block_bit/',
+			'/scholar:.*_written_book/',
+			'/scholar:.*_writable_book/',
+			'/netherexp:grenade_antidote/',
+			'/netherexp:antidote/',
+			'/supplementaries:bamboo_spikes_tipped/',
+			'/quark:pathfinders_quill/',
+			'/born_in_chaos_v1:tombstone.*/',
+			'/evilcraft:dark_tank\\{Fluid\\:\\{Amount\\:.*\\,FluidName\\:.*\\}\\}/',
+			'/accents:.*\\{display\\:\\{color\\:.*\\}\\}/',
+			'/(quark|lootr):lootr.*trapped_chest/',
+			'/minecraft:painting\\{EntityTag\\:.*\\}/'
 		]
 	};
 
@@ -551,8 +578,7 @@ StartupEvents.postInit(event => {
 	// // Add enchantment books
 	/** @type {any} */
 	const $EnchantmentsBegone = Java.loadClass('org.violetmoon.quark.content.experimental.module.EnchantmentsBegoneModule')
-	/** @type {Internal.Enchantment_[]} */
-	const allEnchants = $ForgeRegistries.ENCHANTMENTS.getValues().toArray().sort();
+	const allEnchants = global.getRegistry('ENCHANTMENTS').getValues().toArray().sort();
 
 	addAfter = 'enchantinginfuser:enchanting_infuser'
 	for (let e = 0; e < allEnchants.length; e++) {

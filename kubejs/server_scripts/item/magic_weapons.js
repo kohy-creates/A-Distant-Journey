@@ -1,18 +1,18 @@
 ItemEvents.rightClicked(event => {
-	const item = event.getItem();
-	const player = event.getPlayer();
+	let item = event.getItem();
+	let player = event.getPlayer();
 	if (Object.keys(global.magicWeapons).includes(item.id)) {
-		console.log('has ' + item.id)
-		const entry = global.magicWeapons[item.id];
+		let entry = global.magicWeapons[item.id];
 		if (!player.adjcore$tryCastSpell(entry[1])) {
 			event.cancel();
+			return;
 		}
-		else if (entry[2]) {
-			player.addItemCooldown(item.id, entry[2]);
-		}
+		if (entry[2])
+			player.server.scheduleInTicks(1, () => {
+				player.addItemCooldown(item.id, entry[2] - 1);
+			});
 	}
 });
-
 
 NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 
@@ -53,6 +53,22 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 							global.getDamageSource(player.getLevel(), 'minecraft:magic', null, player),
 							global.calculateSpellDamage(player, getBaseDamage('alexscaves:sea_staff'), true)
 						);
+					}
+				}
+			}
+			case 'player': {
+				// Terramity is a funny mod
+				if (immediate instanceof $Player) {
+					let item = immediate.getMainHandItem().getId();
+					switch (item) {
+						case 'terramity:enderswap_sceptre':
+						case 'terramity:lightning_sceptre':
+						case 'terramity:fireball_sceptre': {
+							event.setAmount(
+								global.calculateSpellDamage(player, getBaseDamage(item), false)
+							);
+							break;
+						}
 					}
 				}
 			}

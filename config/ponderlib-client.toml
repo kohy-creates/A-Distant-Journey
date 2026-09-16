@@ -1,0 +1,5 @@
+#Whether to show the "Hold [key] to Ponder" hint in item tooltips for items that have a registered scene.
+showTooltipHint = true
+#Slow down a ponder scene whenever there is text on screen, to give more time to read it.
+comfyReading = false
+

@@ -1,0 +1,7 @@
+
+["hellwax lantern"]
+	#determines the number of ticks that one piece of hellish wax activates the lantern
+	lit_time = 12000.0
+	#determines the number of ticks that one hellish wax block activates the lantern
+	lit_time_block = 60000.0
+

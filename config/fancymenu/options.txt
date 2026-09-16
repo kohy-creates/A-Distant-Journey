@@ -16,7 +16,7 @@ B:advanced_customization_mode = 'true';
 
 B:game_intro_fade_out = 'true';
 S:game_intro_sound_channel = 'master';
-S:preload_resources = '[source:local]config/fancymenu/assets/loading/loading.fma%!source_end!%[source:local]config/fancymenu/assets/intro.fma%!source_end!%[source:local]config/fancymenu/assets/main_menu/title.afma%!source_end!%';
+S:preload_resources = '[source:local]config/fancymenu/assets/loading/loading.fma%!source_end!%[source:local]config/fancymenu/assets/intro.fma%!source_end!%[source:local]config/fancymenu/assets/main_menu/title.afma%!source_end!%[source:local]config/fancymenu/assets/welcome_screen/0.md%!source_end!%[source:local]config/fancymenu/assets/welcome_screen/1.md%!source_end!%[source:local]config/fancymenu/assets/welcome_screen/2.md%!source_end!%[source:local]config/fancymenu/assets/welcome_screen/3.md%!source_end!%[source:local]config/fancymenu/assets/welcome_screen/4.md%!source_end!%';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '[source:local]/config/fancymenu/assets/intro.fma';
 F:game_intro_volume = '1.0';

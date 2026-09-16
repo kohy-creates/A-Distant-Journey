@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:drifter_bone_key"
+    },
+    "title": {
+      "translate": "advancements.bravest_of_warrior.title"
+    },
+    "description": {
+      "translate": "advancements.bravest_of_warrior.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "bravest_of_warrior_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nethers_exorcism_reborn:drifter_bone_key"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "nethers_exorcism_reborn:drifterstructure"
+}

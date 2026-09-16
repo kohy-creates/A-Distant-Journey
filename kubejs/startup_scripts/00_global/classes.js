@@ -19,3 +19,7 @@ const $PotionBuilder = Java.loadClass("dev.latvian.mods.kubejs.misc.PotionBuilde
 const $DeferredRegisterCreate = Java.loadClass("net.minecraftforge.registries.DeferredRegister")[
   "create(net.minecraftforge.registries.IForgeRegistry,java.lang.String)"
 ];
+
+const $AttackEntityEvent = Java.loadClass('net.minecraftforge.event.entity.player.AttackEntityEvent');
+const $LivingHurtEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingHurtEvent');
+const $LivingKnockbackEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingKnockBackEvent');

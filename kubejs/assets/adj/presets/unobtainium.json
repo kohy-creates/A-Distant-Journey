@@ -1,0 +1,18 @@
+{
+	"format_version": 1,
+	"effects": [
+		{
+			"type": "glitch",
+			"params": {
+				"frequency": 1.0,
+				"shiftChance": 0.08,
+				"jitterChance": 0.015,
+				"blinkChance": 0.003,
+				"offset": 1.0,
+				"chromatic": 0.0,
+				"chromThreshold": 0.3,
+				"slices": 2
+			}
+		}
+	]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "blacklist_item_id_regex": "legacy/*",
+  "blacklist_item_id_regex": "legacy/*|wooden_command_block",
   "fallback_compatibility": [
     {
       "item_id_regex": "claymore|great_sword|greatsword",
@@ -101,6 +101,10 @@
     {
       "item_id_regex": "sword|blade",
       "weapon_attributes": "bettercombat:sword"
+    },
+    {
+      "item_id_regex": "chakram",
+      "weapon_attributes": "simplyswords:gold_chakram"
     }
   ],
   "ranged_weapons": [

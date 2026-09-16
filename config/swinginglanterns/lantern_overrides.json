@@ -1,5 +1,35 @@
 {
-  "schemaVersion": 1,
-  "forceEnable": [],
-  "forceDisable": []
+  "schemaVersion": 2,
+  "forceEnable": [
+    "textiles_and_trinkets:ferrymans_lantern_blue",
+    "textiles_and_trinkets:ferrymans_lantern_green",
+    "textiles_and_trinkets:ferrymans_lantern_orange",
+    "textiles_and_trinkets:ferrymans_lantern_purple",
+    "textiles_and_trinkets:ferrymans_lantern_red",
+    "textiles_and_trinkets:hanging_blue_essence_lantern",
+    "textiles_and_trinkets:hanging_green_essence_lantern",
+    "textiles_and_trinkets:hanging_orange_essence_lantern",
+    "textiles_and_trinkets:hanging_purple_essence_lantern",
+    "textiles_and_trinkets:hanging_red_essence_lantern"
+  ],
+  "forceDisable": [],
+  "chainForceEnable": [
+    "textiles_and_trinkets:ferrymans_chain"
+  ],
+  "chainForceDisable": [],
+  "defaultsAlreadyOffered": [
+    "forceEnable|textiles_and_trinkets:ferrymans_lantern_blue",
+    "forceEnable|textiles_and_trinkets:ferrymans_lantern_green",
+    "forceEnable|textiles_and_trinkets:ferrymans_lantern_orange",
+    "forceEnable|textiles_and_trinkets:ferrymans_lantern_purple",
+    "forceEnable|textiles_and_trinkets:ferrymans_lantern_red",
+    "forceEnable|textiles_and_trinkets:hanging_blue_essence_lantern",
+    "forceEnable|textiles_and_trinkets:hanging_green_essence_lantern",
+    "forceEnable|textiles_and_trinkets:hanging_orange_essence_lantern",
+    "forceEnable|textiles_and_trinkets:hanging_purple_essence_lantern",
+    "forceEnable|textiles_and_trinkets:hanging_red_essence_lantern",
+    "chainForceEnable|textiles_and_trinkets:ferrymans_chain"
+  ],
+  "attachMode": "AUTO",
+  "staticLanternMode": "MICRO_MODEL"
 }

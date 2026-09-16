@@ -79,8 +79,8 @@
 			image: "toms_storage:block/cable_frame"
 			rotation: 45.0d
 			width: 1.75d
-			x: 5.80952380952381d
-			y: -1.642857142857153d
+			x: 5.0d
+			y: -4.0d
 		}
 		{
 			height: 1.75d
@@ -92,12 +92,12 @@
 		}
 		{
 			dependency: "37D84A7023231586"
-			height: 1.0d
+			height: 1.3d
 			image: "heart_crystals:block/heart_crystal"
 			rotation: 0.0d
-			width: 1.0d
-			x: 9.479591836734684d
-			y: -2.5867346938775526d
+			width: 1.3d
+			x: 10.25920067884826d
+			y: -2.704004575555871d
 		}
 		{
 			height: 5.0d
@@ -107,6 +107,39 @@
 			width: 10.0d
 			x: 10.5d
 			y: 3.5d
+		}
+		{
+			height: 1.25d
+			image: "minecraft:block/fire_1"
+			rotation: 0.0d
+			width: 1.25d
+			x: 14.25877245100979d
+			y: 1.920469650270995d
+		}
+		{
+			height: 1.25d
+			image: "minecraft:block/fire_1"
+			rotation: 0.0d
+			width: 1.25d
+			x: 13.209511983361068d
+			y: 0.8280169817501246d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:item/clock_15"
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			click: "quest_enhance:text_v3:2.5:17:minecraft:defaultRemember to take breaks while playing!"
+			height: 0.4320089614341171d
+			image: ""
+			rotation: 0.0d
+			width: 2.5135066847075906d
+			x: 1.9846509481327885d
+			y: 8.229642923231388d
 		}
 	]
 	order_index: 0
@@ -299,8 +332,8 @@
 				type: "item"
 			}]
 			title: "DIAMONDS!"
-			x: 8.5d
-			y: 3.0d
+			x: 9.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -317,8 +350,8 @@
 				type: "item"
 			}]
 			title: "Ice Bucket Challenge"
-			x: 10.0d
-			y: 4.5d
+			x: 10.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -477,7 +510,7 @@
 			]
 			title: "Minecraft Forge"
 			x: 5.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
@@ -884,8 +917,8 @@
 				type: "advancement"
 			}]
 			title: "Fishy Business"
-			x: 0.5d
-			y: 3.5d
+			x: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7D5AA020D867BC37"]
@@ -902,10 +935,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"18F794CFEE554641"
-				"4C1D62C4B13A0CE0"
-			]
+			dependencies: ["18F794CFEE554641"]
 			entity_vis_size: 1.0f
 			icon: {
 				Count: 1
@@ -935,8 +965,8 @@
 				type: "item"
 			}]
 			title: "Backpacked!"
-			x: 5.80952380952381d
-			y: -1.642857142857153d
+			x: 5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["026E22A534C341CC"]
@@ -1037,7 +1067,7 @@
 				type: "item"
 			}]
 			title: "Pork Chop"
-			x: 2.0d
+			x: 2.5d
 			y: -3.0d
 		}
 		{
@@ -1094,7 +1124,8 @@
 		{
 			dependencies: ["4C1D62C4B13A0CE0"]
 			description: [
-				"&7&lHINT:&r &cLife Crystals&r generate underground semi-frequently. "
+				"### HINT"
+				"&cLife Crystals&r generate underground semi-frequently. "
 				""
 				"A &eSpelunker Potion&r will help you find them by highlighting them if they are nearby. &cLife Crystals&r can also be crafted at a fair price."
 			]
@@ -1107,7 +1138,7 @@
 				xp: 10
 			}]
 			shape: "circle"
-			subtitle: "Attain maximum possible health by consuming 15 Life Crystals"
+			subtitle: "Attain maximum possible health by consuming 15  <item id=heart_crystals:heart_crystal/>Life Crystals"
 			tasks: [
 				{
 					icon: "heart_crystals:heart_crystal"
@@ -1124,7 +1155,7 @@
 			]
 			title: "Topped Off"
 			x: 8.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["37D84A7023231586"]
@@ -1143,8 +1174,8 @@
 				type: "item"
 			}]
 			title: "Light in The Darkness"
-			x: 10.0d
-			y: -1.5d
+			x: 10.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4C1D62C4B13A0CE0"]
@@ -1159,7 +1190,7 @@
 				type: "item"
 			}]
 			title: "Hooked!"
-			x: 7.5d
+			x: 7.0d
 			y: -2.0d
 		}
 		{
@@ -1215,6 +1246,86 @@
 			}]
 			x: 11.9d
 			y: 2.1d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2DF7AB8A848B03C7"
+			subtitle: "Survive your first night"
+			tasks: [{
+				days: 1
+				id: "1ACDFBE2208A7940"
+				type: "questsadditions:days"
+			}]
+			title: "You Can Do It!"
+			x: 0.5d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "03D772F6F00C87DE"
+			subtitle: "Play for a full in-game week"
+			tasks: [{
+				days: 7
+				id: "6D22C66E7868ADBD"
+				type: "questsadditions:days"
+			}]
+			title: "A Full Week"
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "403BA5A04B3E83AE"
+			shape: "hexagon"
+			subtitle: "Play for a 100 days"
+			tasks: [{
+				days: 100
+				id: "42BA1BCDDE5F944D"
+				type: "questsadditions:days"
+			}]
+			title: "Passing Time"
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["610F4BE5F7B24952"]
+			description: [
+				"### HINT"
+				"&6Jumbo Furnace&r can be constructed by placing 3 layers of 3x3 Furnaces on top of each other."
+				""
+				"Yes, it's that stupid. No, I refuse to remove this."
+				""
+				"### HINT 2"
+				"As an added bonus, Jumbo Furnaces smelt items quicker than a regular Furnace, and their smelting capabilities can be upgraded by placing more Jumbo Furnaces inside!"
+			]
+			entity_vis_size: 1.0f
+			id: "5D74F7762EAD237B"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Build a Jumbo Furnace. <i>Why</i> is this even a thing..."
+			tasks: [{
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				icon: "jumbofurnace:jumbo_furnace"
+				id: "663E0E5EAA6C4E87"
+				observe_type: 0
+				timer: 0L
+				title: "Construct a Jumbo Furnace"
+				to_observe: "jumbofurnace:jumbo_furnace"
+				type: "observation"
+			}]
+			title: "J For Jumbo"
+			x: 3.5d
+			y: 2.5d
 		}
 	]
 	title: "0. First Steps"

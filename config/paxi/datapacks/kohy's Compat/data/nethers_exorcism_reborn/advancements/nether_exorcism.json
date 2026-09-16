@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "nethers_exorcism_reborn:textures/screens/dna_tree_leaves.png",
+    "icon": {
+      "item": "nethers_exorcism_reborn:indigo_nylium"
+    },
+    "title": {
+      "translate": "advancements.nether_exorcism.title"
+    },
+    "description": {
+      "translate": "advancements.nether_exorcism.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "nether_exorcism_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:the_nether"
+      }
+    }
+  }
+}

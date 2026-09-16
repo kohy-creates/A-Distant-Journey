@@ -68,10 +68,8 @@
     "registry_name": "OFF",
     "mod_name": false
   },
-  "apotheosis": {
-    "adventure": true,
-    "ench": true,
-    "spawner": true
+  "ars_zero": {
+    "entity_mana": true
   },
   "functionalstorage": {
     "armory": false

@@ -1,0 +1,8 @@
+
+#Blight forest TerraBlender land replacement settings.
+[blight_forest]
+	#TerraBlender region weight for replacing vanilla forest and taiga land biome slots with blight forest.
+	#Use 0 to disable. Weight 1 avoids unstable terrain in heavily modded worldgen.
+	#Range: 0 ~ 1
+	weight = 0
+

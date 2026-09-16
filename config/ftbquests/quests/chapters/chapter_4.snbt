@@ -119,6 +119,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			entity_vis_size: 1.0f
 			icon: "minecraft:end_stone"
 			id: "7EB2D195600E1D0F"
@@ -136,13 +137,8 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"6E9823FB2C7C6D19"
-				"04096C5C5F14CD07"
-				"7EB2D195600E1D0F"
-			]
+			dependencies: ["7EB2D195600E1D0F"]
 			entity_vis_size: 1.0f
-			hide_until_deps_complete: true
 			icon: "rediscovered:dragon_altar"
 			id: "5C5A43A9E26D16BD"
 			optional: true
@@ -191,12 +187,8 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"6E9823FB2C7C6D19"
-				"7EB2D195600E1D0F"
-			]
+			dependencies: ["7EB2D195600E1D0F"]
 			entity_vis_size: 1.0f
-			hide_until_deps_complete: true
 			icon: "minecraft:ender_eye"
 			id: "23D842B61D6B17F4"
 			subtitle: "Follow an unattuned Awakened Ender Pearl and see where it guides you to"
@@ -622,10 +614,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"6E9823FB2C7C6D19"
-				"7EB2D195600E1D0F"
-			]
+			dependencies: ["7EB2D195600E1D0F"]
 			entity_vis_size: 1.0f
 			icon: "mythicmetals:prometheum_ingot"
 			id: "0BB72C64921769F6"
@@ -647,10 +636,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: [
-				"6E9823FB2C7C6D19"
-				"7EB2D195600E1D0F"
-			]
+			dependencies: ["7EB2D195600E1D0F"]
 			description: ["&7&lHINT:&r &6Phoenix set&r is oriented more around &coffense&r, while the &5Obsidian set&r is oriented more around &9defense&r. They are more or less interchangeable, so don't worry about losing them!"]
 			entity_vis_size: 1.0f
 			icon: {

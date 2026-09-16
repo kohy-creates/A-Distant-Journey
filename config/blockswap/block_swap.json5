@@ -276,21 +276,9 @@
 
 		"farmersdelight:rope": "supplementaries:rope",
 
-		"quark:crate": "tide:wooden_crate",
 		"quark:rope": "supplementaries:rope",
-		"quark:paper_lantern": "redeco:white_paper_lantern",
-
-		"farmersdelight:oak_cabinet": "redeco:oak_cabinet",
-		"farmersdelight:spruce_cabinet": "redeco:spruce_cabinet",
-		"farmersdelight:birch_cabinet": "redeco:birch_cabinet",
-		"farmersdelight:jungle_cabinet": "redeco:jungle_cabinet",
-		"farmersdelight:acacia_cabinet": "redeco:acacia_cabinet",
-		"farmersdelight:dark_oak_cabinet": "redeco:dark_oak_cabinet",
-		"farmersdelight:crimson_cabinet": "redeco:crimson_cabinet",
-		"farmersdelight:warped_cabinet": "redeco:warped_cabinet",
-		"farmersdelight:mangrove_cabinet": "redeco:mangrove_cabinet",
-		"farmersdelight:bamboo_cabinet": "redeco:bamboo_cabinet",
-		"farmersdelight:cherry_cabinet": "redeco:cherry_cabinet",
+		"quark:paper_lantern": "whimsy_deco:paper_lantern",
+		"quark:paper_lantern_sakura": "whimsy_deco:tree_paper_lantern",
 
 		"create:oak_window_pane": "minecraft:glass_pane",
 		"create:spruce_window_pane": "minecraft:glass_pane",
@@ -445,6 +433,6 @@
 		"quark:hollow_ancient_log": "quark:ancient_log",
 
 		"galosphere:mole_burrow": "galosphere:tuff_dirt",
-		"hybrid_aquatic:crystalline_sulfur": "kubejs:sulfur"
+		// "hybrid_aquatic:crystalline_sulfur": "kubejs:sulfur"
 	}
 }

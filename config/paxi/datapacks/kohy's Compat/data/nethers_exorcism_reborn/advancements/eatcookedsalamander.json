@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:cooked_indigo_salamander_tail"
+    },
+    "title": {
+      "translate": "advancements.eatcookedsalamander.title"
+    },
+    "description": {
+      "translate": "advancements.eatcookedsalamander.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "eatcookedsalamander_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "nethers_exorcism_reborn:cooked_indigo_salamander_tail"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "nethers_exorcism_reborn:killsalamander"
+}

@@ -141,14 +141,14 @@
 		}
 		{
 			dependencies: ["1FA64BA25CA7A8D3"]
-			description: ["This category is unlocked automatically whenever you complete the &eFishy Bussiness&r achievement in the main &2Story&r tab!"]
+			description: [""]
 			disable_toast: true
 			entity_vis_size: 1.0f
 			icon: "rediscovered:raw_fish"
 			id: "0D31FCDD5D044B38"
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "\"Mój stary był fanatyiem wędkarstwa...\""
+			subtitle: "<i>\"Mój stary był fanatyiem wędkarstwa...\". Requires 'Fishy Business'"
 			tasks: [{
 				advancement: "adj:fish_something"
 				criterion: ""

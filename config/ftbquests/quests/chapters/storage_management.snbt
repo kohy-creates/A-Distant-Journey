@@ -6,7 +6,7 @@
 	group: "266DD5C3D1FE65EA"
 	icon: "minecraft:chest"
 	id: "470CC0A899AD68D9"
-	order_index: 1
+	order_index: 2
 	quest_enhance_decorative_lines: [ ]
 	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
@@ -279,6 +279,8 @@
 			entity_vis_size: 1.0f
 			icon: "botania:corporea_spark_master"
 			id: "24C0C6AFE73F1784"
+			optional: true
+			shape: "rsquare"
 			subtitle: "Create a very simple Corporea Network"
 			tasks: [
 				{

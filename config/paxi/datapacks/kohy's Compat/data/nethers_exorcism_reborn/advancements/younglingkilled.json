@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_sword"
+    },
+    "title": {
+      "translate": "advancements.younglingkilled.title"
+    },
+    "description": {
+      "translate": "advancements.younglingkilled.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "younglingkilled_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "nethers_exorcism_reborn:obtaineggstrampelr"
+}

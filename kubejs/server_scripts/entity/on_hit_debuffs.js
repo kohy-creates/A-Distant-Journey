@@ -42,8 +42,8 @@ const OnHitDebuffConfig = [
 		],
 		id: 'majruszsdifficulty:bleeding',
 		chance: [25, 30, 35, 40, 45, 50],
-		duration: [9, 12, 15, 18, 21, 24],
-		level: [1, null, 2, 3, null, 4]
+		duration: [9, 11, 13, 15, 17, 19],
+		level: [1, null, null, 2, null, 3]
 	}
 ];
 

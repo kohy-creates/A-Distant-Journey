@@ -54,7 +54,6 @@ const RemovedItems = {
 		'rediscovered:coarse_dirt_slab',
 		'rediscovered:rooted_dirt_slab',
 
-		/quark:paper_lantern.*/,
 		/quark:.*limestone.*/,
 		/quark:vertical_.*planks/,
 
@@ -186,7 +185,9 @@ const RemovedItems = {
 		'artifacts:running_shoes',
 		'artifacts:scarf_of_invisibility',
 
-		/witherstormmod:wooden_command_block_.*/,
+		/witherstormmod:stone_command_block_.*/,
+		/witherstormmod:iron_command_block_.*/,
+		/witherstormmod:gold_command_block_.*/,
 		'witherstormmod:eye_of_the_storm',
 		'witherstorm_delight:flint_command_block_knife',
 		'witherstorm_delight:stone_command_block_knife',
@@ -270,8 +271,6 @@ const RemovedItems = {
 		'botania:manaweave_cloth',
 		'botania:mana_string',
 		'botania:keep_ivy',
-		'botania:thorn_chakram',
-		'botania:flare_chakram',
 		'botania:mana_fluxfield',
 		'botanicadds:elven_fluxfield',
 		'botanicadds:flowers/energizera',
@@ -374,8 +373,6 @@ const RemovedItems = {
 
 		'supplementaries:altimeter',
 		'supplementaries:wrench',
-		/supplementaries:item_shelf/,
-		/suppsquared:.*_shelf/,
 
 		'create_power_loader:empty_andesite_chunk_loader',
 		'create_power_loader:empty_brass_chunk_loader',
@@ -386,9 +383,6 @@ const RemovedItems = {
 		'farmersdelight:wheat_dough',
 		'farmersdelight:rope',
 		'farmersdelight:flint_knife',
-		/farmersdelight:.*cabinet/,
-		/twilightdelight:.*cabinet/,
-		/alexsdelight:.*cabinet/,
 
 		'unusualend:phantom_arrow',
 		'unusualend:purpur_tank',
@@ -595,8 +589,7 @@ const RemovedItems = {
 		'v_slab_compat:vinery/dirt_vertical_slab',
 		'v_slab_compat:vinery/dirt_path_vertical_slab',
 		'vinery:straw_hat',
-		/vinery:winemaker_.*/,
-
+		
 		'nethervinery:crimson_fermentation_barrel',
 		'nethervinery:crimson_grapevine_pot',
 		'nethervinery:crimson_apple_press',
@@ -622,7 +615,6 @@ const RemovedItems = {
 		/beachparty.*floorboard$/,
 		'beachparty:beachparty_banner',
 		'beachparty:palm_bar',
-		'beachparty:message_in_a_bottle',
 
 		'minecraft:copper_nugget',
 		'minecraft:copper_leggings',
@@ -682,43 +674,11 @@ const RemovedItems = {
 		'waxed:waxed_arid_sand',
 		'waxed:waxed_red_arid_sand',
 
-		/hybrid_aquatic:.*driftwood/,
-		/hybrid_aquatic:.*crate.*/,
-		/hybrid_aquatic:.*karkinos.*/,
-		'hybrid_aquatic:ominous_hook',
-		'hybrid_aquatic:crab_pot',
-		/hybrid_aquatic:diving_/,
-		/hybrid_aquatic:.*raft/,
-		'hybrid_aquatic:dunegrass',
-		'hybrid_aquatic:tall_dunegrass',
-		'hybrid_aquatic:water_lettuce',
-		'hybrid_aquatic:prismarine_rod',
-		'hybrid_aquatic:shark_tooth',
-		'hybrid_aquatic:argonaut',
-		/hybrid_aquatic:.*lobster.*/,
-		'hybrid_aquatic:crystalline_sulfur',
-
 		'crittersandcompanions:pearl',
 		'crittersandcompanions:pearl_necklace_1',
 		'crittersandcompanions:pearl_necklace_2',
 		'crittersandcompanions:pearl_necklace_3',
 		'crittersandcompanions:grappling_hook',
-
-		/redeco:polished_.*_planks/,
-		/redeco:polished_.*_stairs/,
-		/redeco:polished_.*_slab/,
-		/redeco:.*cushion/,
-		/redeco:.*pet_bed/,
-		'redeco:paper_pane',
-		/redeco:.*display_case/,
-		/redeco:.*pedestal/,
-		/redeco:.*plank_fence/,
-		/redeco:.*plank_fence_gate/,
-		/redeco:.*drawer_counter/,
-		/redeco:.*coffee_table/,
-		/redeco:.*stool/,
-		/redeco:.*sword_mount/,
-		/redeco:.*side_table/
 	]
 };
 

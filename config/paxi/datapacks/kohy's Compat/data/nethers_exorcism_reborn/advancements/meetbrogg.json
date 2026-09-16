@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:brogg_rod"
+    },
+    "title": {
+      "translate": "advancements.meetbrogg.title"
+    },
+    "description": {
+      "translate": "advancements.meetbrogg.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "meetbrogg_0": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "taken": {
+            "min": 0,
+            "max": 5
+          },
+          "source_entity": {
+            "type": "nethers_exorcism_reborn:brogg"
+          },
+          "blocked": false
+        }
+      }
+    }
+  },
+  "parent": "nethers_exorcism_reborn:bi_ohazardou_sd_eltas"
+}

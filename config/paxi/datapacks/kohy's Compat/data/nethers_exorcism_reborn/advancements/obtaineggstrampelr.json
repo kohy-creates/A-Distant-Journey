@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:strampler_egg"
+    },
+    "title": {
+      "translate": "advancements.obtaineggstrampelr.title"
+    },
+    "description": {
+      "translate": "advancements.obtaineggstrampelr.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "obtaineggstrampelr_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "nethers_exorcism_reborn:obtainheart"
+}

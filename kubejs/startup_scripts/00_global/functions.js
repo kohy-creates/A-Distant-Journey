@@ -80,8 +80,8 @@ global.getEntitiesInRadius = function (world, x, y, z, radius) {
 	return entities;
 };
 
-const $ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey");
-const DAMAGE_TYPE = $ResourceKey.createRegistryKey("damage_type");
+const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey');
+const DAMAGE_TYPE = $ResourceKey.createRegistryKey('damage_type');
 const $DamageSource = Java.loadClass('net.minecraft.world.damagesource.DamageSource');
 /**
  * Returns a damage type instance by its ResourceLocation.
@@ -381,9 +381,71 @@ global.getKilledBosses = function (server, returnAmount) {
 };
 
 /**
- * Returns a mob effect (as a MobEffect object) by its ID.
- * @param {string} id 
+ * Returns the registry for a given type
+ * @param {keyof typeof $ForgeRegistries} registry 
+ * @returns {Internal.ForgeRegistries_}
  */
-global.getEffect = function (id) {
-	return $ForgeRegistries.MOB_EFFECTS.getValue($ResourceLocation.parse(id));
+global.getRegistry = function (registry) {
+	return $ForgeRegistries[registry];
+};
+
+/**
+ * Returns an object instance from a given registry by its identifier.
+ * @param {keyof typeof $ForgeRegistries} registry 
+ * @param {string} id
+ * @returns {object} 
+ */
+global.getObject = function (registry, id) {
+	return global.getRegistry(registry).getValue($ResourceLocation.parse(id));
+};
+
+/**
+ * Plays a sound at the given coordinates in the given level.
+ * If pitch is an array, it will be randomized between the two values.
+ * If targetPlayer is specified, only that player will hear the sound.
+ * @param {Internal.Level_} level 
+ * @param {float} x 
+ * @param {float} y 
+ * @param {float} z 
+ * @param {Internal.SoundEvent_} soundId 
+ * @param {Internal.SoundSource_} category 
+ * @param {float} volume 
+ * @param {float|float[]} pitch 
+ * @param {Internal.Player_} targetPlayer
+ */
+global.playSound = function (level, x, y, z, soundId, category, volume, pitch, targetPlayer) {
+	let p = (Array.isArray(pitch)) ? Math.random() * (pitch[1] - pitch[0]) + pitch[0] : pitch;
+	level.playSound(
+		global.getOrDefault(targetPlayer, null),
+		x, y, z,
+		soundId, category,
+		volume, p);
+};
+
+const dyeDepotColors = [
+	'maroon', 'rose', 'coral', 'indigo',
+	'navy', 'slate', 'olive', 'amber',
+	'beige', 'teal', 'mint', 'aqua',
+	'verdant', 'forest', 'ginger', 'tan'
+];
+
+/**
+ * Checks if a given color is a color coming from the Dye Depot mod.
+ * @param {Internal.DyeColor_} color 
+ */
+global.isDyeDepotColor = function (color) {
+	return dyeDepotColors.includes(color.toString());
+};
+
+/**
+ * Quick helper to return a different namespace where appropriate
+ * if the supplied color is a Dye Depot color.
+ * Used in block registry and in server recipes.
+ * @param {*} color 
+ * @param {*} ifTrue 
+ * @param {*} ifFalse 
+ * @returns 
+ */
+global.ifDyeDepot = function (color, ifTrue, ifFalse) {
+	return global.isDyeDepotColor(color) ? ifTrue : ifFalse;
 };

@@ -8,7 +8,6 @@
 	id: "346115814079ECFA"
 	images: [
 		{
-			dependency: "20130F300D432015"
 			height: 5.0d
 			image: "adj:textures/other/bg_nether_ores_2.png"
 			order: -999
@@ -28,7 +27,6 @@
 			y: 0.5d
 		}
 		{
-			dependency: "20130F300D432015"
 			height: 1.75d
 			image: "minecraft:block/beacon_glass"
 			rotation: 45.0d
@@ -37,7 +35,6 @@
 			y: -7.0d
 		}
 		{
-			dependency: "20130F300D432015"
 			height: 1.75d
 			image: "rediscovered:block/nether_reactor_core"
 			rotation: 45.0d
@@ -64,7 +61,6 @@
 			y: -1.5d
 		}
 		{
-			dependency: "574DD3FD26A23CDE"
 			height: 6.0d
 			image: "adj:textures/texts/lore_aether.png"
 			rotation: 0.0d
@@ -82,7 +78,6 @@
 			y: 1.0d
 		}
 		{
-			dependency: "574DD3FD26A23CDE"
 			height: 5.0d
 			image: "adj:textures/texts/chapter_2.png"
 			rotation: 0.0d

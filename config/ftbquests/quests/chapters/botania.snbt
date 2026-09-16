@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "square"
 	filename: "botania"
-	group: "06918EFE2A3328D6"
+	group: "266DD5C3D1FE65EA"
 	hide_quest_details_until_startable: true
 	icon: "kubejs:eye_of_arcanum"
 	id: "53B7EA892E14DB2F"
@@ -965,13 +965,13 @@
 			id: "4BB4F54ACBA9F3A7"
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "&oRequires 'Benchmarking'"
+			subtitle: "<i>Click to read. Requires 'Benchmarking'"
 			tasks: [{
 				id: "5BAE4D4959118AE4"
 				title: "Click to complete"
 				type: "checkmark"
 			}]
-			title: "&lClick to read"
+			title: "World of Magic"
 			x: 6.5d
 			y: -4.5d
 		}
@@ -1658,11 +1658,6 @@
 				{
 					id: "72D9AFFA8929DBF6"
 					item: "window_box:queen_anelace"
-					type: "item"
-				}
-				{
-					id: "4ADF4DC4C102AB62"
-					item: "window_box:candysnuft"
 					type: "item"
 				}
 			]

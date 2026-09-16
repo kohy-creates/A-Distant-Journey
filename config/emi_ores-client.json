@@ -1,4 +1,4 @@
 {
-  "add_biomes_to_index": true,
-  "show_height_values_for_current_dimension_by_default": false
+  "add_biomes_to_index": false,
+  "show_height_values_for_current_dimension_by_default": true
 }

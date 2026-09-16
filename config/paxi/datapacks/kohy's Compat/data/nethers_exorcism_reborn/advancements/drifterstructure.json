@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:drifter_egg"
+    },
+    "title": {
+      "translate": "advancements.drifterstructure.title"
+    },
+    "description": {
+      "translate": "advancements.drifterstructure.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "drifterstructure_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "nethers_exorcism_reborn:enterturquosieplains"
+}

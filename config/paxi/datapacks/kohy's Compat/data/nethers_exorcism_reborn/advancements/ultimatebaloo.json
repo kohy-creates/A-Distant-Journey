@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:jelly_baloon_item"
+    },
+    "title": {
+      "translate": "advancements.ultimatebaloo.title"
+    },
+    "description": {
+      "translate": "advancements.ultimatebaloo.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ultimatebaloo_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "nethers_exorcism_reborn:balooncraft"
+}

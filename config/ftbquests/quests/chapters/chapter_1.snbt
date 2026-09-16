@@ -46,8 +46,8 @@
 			image: "twilightforest:block/canopy_log_top"
 			rotation: 45.0d
 			width: 1.75d
-			x: -4.5d
-			y: 3.0d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			height: 5.0d
@@ -75,6 +75,14 @@
 			width: 10.0d
 			x: -5.0d
 			y: 0.0d
+		}
+		{
+			height: 1.25d
+			image: "kubejs:block/hellforge_front_on"
+			rotation: 0.0d
+			width: 1.25d
+			x: -7.0d
+			y: 3.0d
 		}
 	]
 	order_index: 1
@@ -114,8 +122,8 @@
 				}
 			]
 			title: "A Terrible Fortress"
-			x: 1.15d
-			y: 3.45d
+			x: 1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0B0DF609ABC8773D"]
@@ -128,8 +136,8 @@
 				type: "item"
 			}]
 			title: "Into Fire"
-			x: 3.15d
-			y: 2.45d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["336C2A75C5BFF1B8"]
@@ -142,8 +150,8 @@
 				type: "item"
 			}]
 			title: "Local Brewery"
-			x: 4.15d
-			y: 0.9500000000000002d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0B0DF609ABC8773D"]
@@ -183,7 +191,7 @@
 			}]
 			title: "Those Were The Days"
 			x: 1.0d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
@@ -215,7 +223,7 @@
 				}
 			]
 			title: "From The Depths"
-			x: -2.0d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
@@ -231,8 +239,8 @@
 				type: "item"
 			}]
 			title: "Hell's Alloy Kitchen"
-			x: 0.1499999999999999d
-			y: 1.9500000000000002d
+			x: -5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["336C2A75C5BFF1B8"]
@@ -245,8 +253,8 @@
 				type: "item"
 			}]
 			title: "Awakened"
-			x: 5.15d
-			y: 2.45d
+			x: 6.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6B4A4956BDF1E1AB"]
@@ -269,8 +277,8 @@
 				type: "item"
 			}]
 			title: "Wayfinder"
-			x: 6.65d
-			y: 2.45d
+			x: 7.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["236739201289D4DD"]
@@ -283,7 +291,7 @@
 				type: "item"
 			}]
 			title: "Pigs Step!"
-			x: 2.5d
+			x: 0.5d
 			y: 0.0d
 		}
 		{
@@ -301,8 +309,8 @@
 				type: "item"
 			}]
 			title: "Midas' Touch"
-			x: 2.5d
-			y: 1.0d
+			x: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["112388B5EDB9C9D2"]
@@ -325,8 +333,8 @@
 				type: "item"
 			}]
 			title: "Be Gone!"
-			x: 4.15d
-			y: -0.5499999999999998d
+			x: 5.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["379A22A2185CFC8E"]
@@ -401,8 +409,8 @@
 				type: "item"
 			}]
 			title: "Hooked! Again..."
-			x: -1.0d
-			y: -2.5d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["612A31333B1F6C1D"]
@@ -553,8 +561,8 @@
 				}
 			]
 			title: "Story of Eastern Wonderland"
-			x: -4.5d
-			y: 3.0d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5A24E62380261206"]
@@ -572,6 +580,18 @@
 			title: "The Beginning"
 			x: 4.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["49D421ADF1794A16"]
+			entity_vis_size: 1.0f
+			id: "59267001F306BFB1"
+			tasks: [{
+				id: "10BAD559FAA1B4F7"
+				item: "mythicmetals:steel_ingot"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.5d
 		}
 	]
 	title: "1. The Nether"

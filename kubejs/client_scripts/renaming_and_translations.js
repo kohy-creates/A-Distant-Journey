@@ -345,7 +345,6 @@ ClientEvents.lang('en_us', event => {
 		'alexscaves:pearl': 'Pink Pearl',
 		'constructionwand:iron_wand': 'Iron Construction Wand',
 		'constructionwand:diamond_wand': 'Diamond Construction Wand',
-		'constructionwand:infinity_wand': 'Unobtainium Construction Wand',
 		'toms_storage:ts.item_filter': 'Storage Filter',
 		'toms_storage:ts.polymorphic_item_filter': 'Polymorphic Storage Filter',
 		'toms_storage:ts.tag_item_filter': 'Tag Storage Filter',
@@ -384,11 +383,18 @@ ClientEvents.lang('en_us', event => {
 		'twilightforest:knightmetal_axe': 'Tempered Greataxe',
 		'twilightforest:raven_feather': 'Crow Feather',
 
-		'majruszsdifficulty:wither_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Wither Treasure Bag</neon></rainbow>',
-		'majruszsdifficulty:warden_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Warden Treasure Bag</neon></rainbow>',
-		'majruszsdifficulty:ender_dragon_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Ender Dragon Treasure Bag</neon></rainbow>',
-		'majruszsdifficulty:raid_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Raid Treasure Bag</neon></rainbow>',
-		'majruszsdifficulty:fishing_treasure_bag': '<neon r=1><rainbow p=0 f=0.35>Fishing Treasure Bag</neon></rainbow>',
+		'majruszsdifficulty:wither_treasure_bag': '<treasure_bag>Wither Treasure Bag</treasure_bag>',
+		'majruszsdifficulty:warden_treasure_bag': '<treasure_bag>Warden Treasure Bag</treasure_bag>',
+		'majruszsdifficulty:ender_dragon_treasure_bag': '<treasure_bag>Ender Dragon Treasure Bag</treasure_bag>',
+		'majruszsdifficulty:raid_treasure_bag': '<treasure_bag>Raid Treasure Bag</treasure_bag>',
+		'majruszsdifficulty:fishing_treasure_bag': '<treasure_bag>Fishing Treasure Bag</treasure_bag>',
+
+		'mythicmetals:unobtainium': '<unobtainium>Unobtainium</unobtainium>',
+		'mythicmetals:unobtainium_ore': '<unobtainium>Unobtainium Ore</unobtainium>',
+		'mythicmetals:deepslate_unobtainium_ore': '<unobtainium>Deepslate Unobtainium Ore</unobtainium>',
+		'mythicmetals:unobtainium_block': '<unobtainium>Block of Unobtainium</unobtainium>',
+		'constructionwand:infinity_wand': '<unobtainium>Unobtainium Construction Wand</unobtainium>',
+		// 'mythicmetals:unobtainium_smithing_template': '<unobtainium>Smithing Template</unobtainium>', // THIS RENAMES EVERY SMITHING TEMPLATE!!
 
 		'born_in_chaos_v1:corpse_maggot': 'Maggot',
 	};

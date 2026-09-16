@@ -67,8 +67,12 @@ ADJServerEvents.adjArrowHurt(event => {
 	else {
 		const velocity = Math.min(arrowEntity.getDeltaMovement().length(), 0.4) / 0.4;
 
-		damage = (global.getOrDefault(global.monsterRangedDamageBase[shooter.getType()], 15)) * (velocity);
-		damage *= global.monsterRangedDamageMul[global.getCurrentChapter(shooter.getServer())];
+		if (shooter) {
+			damage = (global.getOrDefault(global.monsterRangedDamageBase[shooter.getType()], 15)) * (velocity);
+			damage *= global.monsterRangedDamageMul[global.getCurrentChapter(shooter.getServer())];
+		}
+
+		damage *= velocity;
 	}
 	damage = Math.ceil(damage)
 	event.setAmount(damage);

@@ -61,6 +61,12 @@ variable {
 }
 
 variable {
+  name = welcome_screen_page
+  value = 4
+  reset_on_launch = false
+}
+
+variable {
   name = played_load_sound
   value = 1
   reset_on_launch = true

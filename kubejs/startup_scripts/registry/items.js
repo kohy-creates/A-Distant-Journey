@@ -1282,6 +1282,7 @@ StartupEvents.registry('item', registry => {
 	registerDust('Runite Dust', 0x1a5c75);
 	registerDust('Stormyx Dust', 0x7d4371);
 	registerDust('Tin Dust', 0x7f6164);
+	registerDust('Sulfur Dust', 0xbeaf66);
 
 	registry.create('rune_life')
 		.tag('botania:runes')

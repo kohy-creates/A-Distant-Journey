@@ -21,6 +21,9 @@ ServerEvents.tags('item', event => {
 		'curios:quiver',
 		'curios:hands',
 		'curios:trinkets',
+		'curios:rings',
+		'curios:waist',
+		'curios:talisman'
 	];
 
 	// Every curio goes into the accessory slot

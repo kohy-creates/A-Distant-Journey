@@ -49,7 +49,7 @@
 
 	[block.undead_leaves]
 		#How much Blood (mB) can be produced at most as a Blood Stain on each random tick.
-		maxBloodStainAmount = 100
+		maxBloodStainAmount = 40
 
 	[block.spiked_plate]
 		#The multiplier for amount of mB to receive per mob HP.

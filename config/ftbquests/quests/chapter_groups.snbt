@@ -1,9 +1,8 @@
 {
 	chapter_groups: [
 		{ id: "04D058A75BDDEE3C", title: "Story" }
-		{ id: "06918EFE2A3328D6", title: "Magic" }
-		{ id: "266DD5C3D1FE65EA", title: "Tech" }
+		{ id: "266DD5C3D1FE65EA", title: "Magic \\& Tech" }
+		{ id: "4C4C64E64E42D01F", title: "Adventure" }
 		{ id: "12494D4A5CAA903A", title: "Fun" }
-		{ id: "4C4C64E64E42D01F", title: "Side Chapters" }
 	]
 }

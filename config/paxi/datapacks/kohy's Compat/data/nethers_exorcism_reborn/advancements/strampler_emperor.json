@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:strampler_horn"
+    },
+    "title": {
+      "translate": "advancements.strampler_emperor.title"
+    },
+    "description": {
+      "translate": "advancements.strampler_emperor.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "strampler_emperor_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "nethers_exorcism_reborn:masterofthestramplers"
+}

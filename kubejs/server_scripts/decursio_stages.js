@@ -336,7 +336,7 @@ ServerEvents.revelation(event => {
 				rev.cloakBlockState(state, replacement)
 					.cloakItem(state, replacement);
 
-				let name = `<obfuscate mode=random>${Block.getBlock(replacement).getName().getString()}?</obfuscate>`;
+				let name = `<hidden_item>${Block.getBlock(replacement).getName().getString()}?</hidden_item>`;
 				rev.replaceBlockName(state, name)
 					.replaceItemName(state, name);
 			});
@@ -369,14 +369,14 @@ ServerEvents.tags('item', restrictions => {
 });
 
 const InteractionLimits = {
-	'ender_eye': {
+	'minecraft:ender_eye': {
 		chapter: 4,
-		message: 'It\'s not reacting to anything...'
+		message: 'It\'s not reacting to anything...',
+		bannedBlockInteractions: [
+			'minecraft:end_portal_frame',
+		],
+		blockInteractionMessage: 'It pops right out of the portal frame...'
 	},
-	// 'aquamirae:shell_horn': {
-	// 	chapter: 2,
-	// 	message: 'It doesn\'t make any sound...'
-	// }
 };
 
 for (let [item, data] of Object.entries(InteractionLimits)) {
@@ -388,6 +388,20 @@ for (let [item, data] of Object.entries(InteractionLimits)) {
 			event.cancel();
 		}
 	});
+
+	if (data.bannedBlockInteractions) {
+		BlockEvents.rightClicked(event => {
+			const eventItem = event.getItem();
+			if (eventItem && eventItem.getId() === item) {
+				const player = event.getPlayer();
+				const block = event.getBlock();
+				if (data.bannedBlockInteractions.includes(block.getId()) && !player.stages.has(`chapter_${data.chapter}`)) {
+					player.displayClientMessage(Component.literal(data.blockInteractionMessage).red(), true);
+					event.cancel();
+				}
+			}
+		});
+	}
 }
 
 /// -------------------------------------------------- ///

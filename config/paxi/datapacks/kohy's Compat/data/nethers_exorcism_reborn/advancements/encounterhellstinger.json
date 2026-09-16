@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "nethers_exorcism_reborn:hellstinger_dart"
+    },
+    "title": {
+      "translate": "advancements.encounterhellstinger.title"
+    },
+    "description": {
+      "translate": "advancements.encounterhellstinger.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "encounterhellstinger_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "nethers_exorcism_reborn:enterturquosieplains"
+}

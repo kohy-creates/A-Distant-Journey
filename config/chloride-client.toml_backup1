@@ -145,7 +145,7 @@ modpackMode = false
 
   # Value must be less than '256' and greater than '0'
   tileEntityDistanceY = 32
-  entities = true
+  entities = false
 
   # Maximum rendered entities; 512 disables the limit
   # Value must be less than '512' and greater than '0'
@@ -188,7 +188,7 @@ modpackMode = false
 
 [zoom]
   # Zoom keybind
-  enabled = true
+  enabled = false
 
   # Value must be less than '100.0' and greater than '1.0'
   max = 50.0

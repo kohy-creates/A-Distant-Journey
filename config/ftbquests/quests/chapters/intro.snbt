@@ -14,7 +14,7 @@
 			order: -999
 			rotation: 0.0d
 			width: 10.0d
-			x: 9.0d
+			x: 7.5d
 			y: -3.0d
 		}
 		{
@@ -67,7 +67,7 @@
 			image: "adj:textures/other/text_intro.png"
 			rotation: 0.0d
 			width: 9.0d
-			x: 9.107142857142868d
+			x: 7.607142857142868d
 			y: -3.107142857142861d
 		}
 		{
@@ -75,7 +75,7 @@
 			image: "adj:textures/texts/title.png"
 			rotation: 0.0d
 			width: 10.0d
-			x: 9.0d
+			x: 7.5d
 			y: -8.5d
 		}
 		{

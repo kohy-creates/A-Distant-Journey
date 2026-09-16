@@ -619,4 +619,8 @@ ServerEvents.tags('item', tags => {
 		'#c:hoes',
 		'#c:shovels',
 	]);
+
+	tags.add('c:hidden_from_recipe_viewers', [
+		'chiselsandbits:block_bit'
+	].concat(global.blacklistedItemsArray));
 });
