@@ -96,7 +96,7 @@ StartupEvents.postInit(event => {
 		'mynethersdelight:powdery',
 		'netherexp:smokestalk',
 		'unusualend:chorus_nest',
-		'phantasm:pream',
+		'unusualend:stripped_chorus_nest',
 	];
 
 	Item.getTypeList().forEach(id => {
@@ -198,9 +198,10 @@ StartupEvents.postInit(event => {
 		'quark:mosaic_vertical_slab',
 		'quark:planks_vertical_slab',
 		'suppsquared:item_shelf',
+		'another_furniture:shelf',
 		'fence',
-		'twilightforest:banister',
 		'fence_gate',
+		'twilightforest:banister',
 		'door',
 		'trapdoor',
 		'ladder',
@@ -267,8 +268,6 @@ StartupEvents.postInit(event => {
 		'aether_redux:blightwillow',
 		'aether_redux:jellyshroom',
 		'cataclysm:chorus',
-		'unusualend:chorus_nest',
-		'unusualend:stripped_chorus_nest',
 		'phantasm:pream',
 		'endergetic:poise',
 		'witherstormmod:tainted',
