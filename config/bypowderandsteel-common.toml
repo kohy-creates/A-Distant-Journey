@@ -1,0 +1,26 @@
+
+#Mobs
+[mobs]
+	#Maximum y level at which Saber Sentries can spawn
+	#They're intended to be found at deepslate layer but you can put them somewhere else if you want
+	#Default: 8
+	#Range: -1024 ~ 1024
+	saberSentryMaxHeight = 8
+	#Maximum y level at which Blaster Sentries can spawn
+	#They're intended to be found at deepslate layer but you can put them somewhere else if you want
+	#Default: 8
+	#Range: -1024 ~ 1024
+	blasterSentryMaxHeight = 8
+	#Make natural Zombunny Gunners spawn with a few Zombunny Slashers
+	#Default: true
+	zombunnySquad = true
+
+#Specific debug and/or packdev related stuff
+#READ THESE CAREFULLY you probably don't need to touch them
+[miscstuffyoushouldntmesswith]
+	#Use the default attribute maps in the armors, which in practice does 2 things:
+	#1) allows KubeJS to actually modify the armor attributes (because it access transformers that map)
+	#2) remove the gun-related attribute from them so you gotta manually add them back with KubeJS (because that's why I went around that map in the first place)
+	#Default: false
+	hackThatMakesArmorsModifiableByKubeJSButMessesWithTheirNormalAttributes = false
+

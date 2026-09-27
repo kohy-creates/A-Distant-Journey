@@ -398,13 +398,13 @@
 		#Chance for a mob the get the xray range override.
 		#Range: 0.0 ~ 1.0
 		"Xray range override chance" = 0.5
-		"See glowing entities" = true
+		"See glowing entities" = false
 		#Mobs in the entity type tag `enhancedai:mobs/targeting/alert_nearby` will alert nearby mobs in this range and target the player.
 		#Range: > 0
 		"Alert range" = 20
 		#Mobs will be able to find better and longer paths to the target the higher this value is. The higher the more performance heavy. Only entity types in the tag `enhancedai:mobs/targeting/visited_nodes_multiplier` tag will be affected by this. Vanilla is 1.0
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Max visited nodes multiplier" = 4.0
+		"Max visited nodes multiplier" = 2.0
 
 		#How far away can the mobs see targets. This overrides the vanilla value (16 for most mobs). Setting 'Max' to 0 will leave the follow range as vanilla. Use mods like Mobs Properties Randomness to have more control over the attribute. Only mobs in the entity type tag `enhancedai:mobs/targeting/follow_range_override` will be affected by this override
 		[Mobs.Targeting."Follow range override"]
@@ -436,7 +436,7 @@
 
 		[Mobs.Targeting."Better nearby targeting"]
 			#Mobs NearestAttackableTargetGoal will be replaced with mod's one for better configuration and targeting.
-			Enable = true
+			Enable = false
 
 			#Chances for a mob to spawn neutral (so will not attack players until provoked)
 			[Mobs.Targeting."Better nearby targeting"."Neutral chances"]
@@ -873,8 +873,8 @@
 		#Range: 0.0 ~ 1.0
 		"Ignore walls chance" = 0.65
 		#Makes creepers blow up on death like when they were added back in 0.30
-		#Allowed Values: NONE, CHARGED, ALL
-		"Blow up on death" = "CHARGED"
+		#Allowed Values: NO, CHARGED_ONLY, YES
+		"Blow up on death" = "NO"
 		#If Insane's Survival Overhaul is installed and Explosion Overhaul feature is enabled, Angry creeper will deal more knockback and break more blocks, breaching creepers will break more blocks
 		"Insane survival overhaul integration" = true
 

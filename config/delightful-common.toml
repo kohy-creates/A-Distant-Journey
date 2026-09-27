@@ -71,7 +71,6 @@
 	warden_knife = false
 	zanite_knife = true
 	zinc_knife = false
-	crystalline_knife = false
 
 ["Baked Good Overhauls"]
 	blueberry_pie_slice = true
@@ -82,7 +81,8 @@
 	passion_fruit_tart_slice = true
 	source_berry_pie_slice = true
 	mutton_pie_slice = true
-	pumpkin_pie_slice = true
+	#Use a mixin to remove food properties from pie items (tag #farmersdelight:pies)?
+	pie_edible_mixin = true
 
 ["Registry & Recipes"]
 	acorn = false
@@ -182,8 +182,20 @@
 	roe_blini = true
 	salmon_and_roe_blini = true
 	sinigang_cup = true
-	aged_fish_roe = true
-	aged_prawn_roe = true
+	aged_roe = true
+	caviar = true
+	debug_blueberry_pie = true
+	debug_chorus_pie = true
+	debug_gloomgourd_pie = true
+	debug_green_apple_pie = true
+	debug_mulberry_pie = true
+	debug_mutton_pie = true
+	debug_passion_fruit_tart = true
+	debug_source_berry_pie = true
+	roe_roll = true
+	sturgeon_roe = true
+
+[Behavior]
 	#Allow cooking milk from nuts
 	nut_milk = true
 	#Allow cooking honey from honey and clovers

@@ -1,34 +1,17 @@
 ServerEvents.tags('item', event => {
 
 	const curiosTags = [
-		'curios:aether_ring',
-		'curios:aether_cape',
-		'curios:charm',
-		'curios:aether_pendant',
-		'curios:necklace',
-		'curios:bundle',
-		'curios:head',
-		'curios:ring',
-		'curios:an_focus',
-		'curios:feet',
-		'curios:curio',
-		'curios:aether_shield',
-		'curios:aether_accessory',
-		'curios:belt',
-		'curios:aether_gloves',
-		'curios:bracelet',
-		'curios:body',
-		'curios:quiver',
-		'curios:hands',
-		'curios:trinkets',
-		'curios:rings',
-		'curios:waist',
-		'curios:talisman'
+		'aether_ring', 'aether_cape', 'charm', 'aether_pendant',
+		'necklace', 'bundle', 'head', 'ring',
+		'an_focus', 'feet', 'curio', 'aether_shield',
+		'aether_accessory', 'belt', 'aether_gloves', 'bracelet',
+		'body', 'quiver', 'hands', 'trinkets',
+		'rings', 'waist', 'talisman', 'thighs'
 	];
 
 	// Every curio goes into the accessory slot
 	curiosTags.forEach(tagId => {
-		let tag = event.get(tagId);
+		let tag = event.get(`curios:${tagId}`);
 		tag.getObjectIds().forEach(entry => event.add('curios:accessory', entry));
 		tag.removeAll();
 	});

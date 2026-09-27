@@ -1,0 +1,27 @@
+#Internal config schema version - do not change
+configVersion = 1
+#Master switch for every Fast NBT optimization
+enabled = true
+
+[features]
+
+	#BlockState Loading
+	[features.blockState]
+		#Faster NbtUtils block state parsing: resolves Name/Properties straight from the backing map instead of the vanilla contains()/getString() chain. Also covers getDataVersion
+		enabled = true
+
+	#ItemStack Loading
+	[features.itemStack]
+		#Faster ItemStack deserialization from NBT: probes the backing map once instead of the vanilla contains() checks, and reads tag/ForgeCaps straight from the map
+		enabled = true
+
+	#NBT I/O Fast Paths
+	[features.nbtIo]
+		#Skips the discarded byte-accounting scan for unlimited NBT readers, which is what every chunk, level.dat and playerdata read uses
+		enabled = true
+
+	#BlockState Codec Fast Path
+	[features.blockStateCodec]
+		#Decodes chunk section palettes straight from the backing map instead of walking the DFU codec chain. Canonical tags only - malformed ids, unknown properties and unparseable values still go through the vanilla codec so its errors are preserved
+		enabled = true
+

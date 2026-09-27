@@ -101,6 +101,9 @@
   "supplementaries": {
     "hat_stand": true
   },
+  "scalpel": {
+    "redacted_block": true
+  },
   "waystones": {
     "waystone": true
   }

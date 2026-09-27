@@ -28,6 +28,9 @@
 	#Rain sound volume multiplier (0.0 = muted, 0.5 = half, 1.0 = vanilla). Only works when disableVanillaWeather is true.
 	#Range: 0.0 ~ 1.0
 	rainSoundVolume = 0.5
+	#AUTO uses vanilla weather with Iris/Oculus shaders; CUSTOM always uses WR; VANILLA restores vanilla weather and sounds.
+	#Allowed Values: AUTO, CUSTOM, VANILLA
+	weatherMode = "AUTO"
 
 #Advanced Rain Settings — changing these may break visual quality, values are interdependent
 [advanced_rain]
@@ -82,4 +85,10 @@
 	#Snow particle target opacity (0.0 = invisible, 1.0 = fully opaque, fade-in over 5 ticks)
 	#Range: 0.0 ~ 1.0
 	snowAlpha = 0.8
+
+#Internal version tracker — do not change manually
+[internal]
+	#Config format version. Existing settings are preserved when upgrading.
+	#Range: 0 ~ 100
+	configVersion = 3
 

@@ -248,8 +248,6 @@ StartupEvents.postInit(event => {
 		'minecraft:warped',
 		'mynethersdelight:powdery',
 		'netherexp:smokestalk',
-		'nethers_exorcism_reborn:indigo',
-		'nethers_exorcism_reborn:turquoise',
 		'gardens_of_the_dead:soulblight',
 		'gardens_of_the_dead:whistlecane',
 		'twilight_forest:twilight_oak',

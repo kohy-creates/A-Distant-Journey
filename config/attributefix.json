@@ -154,6 +154,17 @@
         "value": 100000
       }
     },
+    "gunswithoutroses:gwr.damage_base": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "sortilege:generic.staff_damage": {
       "enabled": false,
       "min": {
@@ -220,6 +231,17 @@
         "value": 100
       }
     },
+    "estrogen:boob_growing_start_time": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 9007199254740992,
+        "value": 9007199254740992
+      }
+    },
     "additionalentityattributes:player.lava_visibility": {
       "enabled": false,
       "min": {
@@ -253,6 +275,17 @@
         "value": 1024
       }
     },
+    "gunswithoutroses:gwr.damage_total": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "rediscovered:explosion_resistance": {
       "enabled": false,
       "min": {
@@ -273,6 +306,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "estrogen:show_boobs": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "minecraft:zombie.spawn_reinforcements": {
@@ -418,6 +462,17 @@
         "value": 1024
       }
     },
+    "gunswithoutroses:gwr.spread": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "minecraft:player.block_break_speed": {
       "enabled": true,
       "min": {
@@ -550,6 +605,17 @@
         "value": 1
       }
     },
+    "estrogen:boob_initial_size": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "ars_nouveau:ars_nouveau.perk.max_mana": {
       "enabled": false,
       "min": {
@@ -594,6 +660,39 @@
         "value": 2147483647
       }
     },
+    "gunswithoutroses:gwr.knockback": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "estrogen:dash_level": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "gunswithoutroses:gwr.fire_delay": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "minecraft:horse.jump_strength": {
       "enabled": true,
       "min": {
@@ -616,6 +715,17 @@
         "value": 10000
       }
     },
+    "gunswithoutroses:gwr.sniper_crit_mult": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "ars_nouveau:ars_nouveau.perk.warding": {
       "enabled": false,
       "min": {
@@ -629,6 +739,17 @@
     },
     "minecraft:generic.knockback_resistance": {
       "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "gunswithoutroses:gwr.chance_ammo": {
+      "enabled": false,
       "min": {
         "default": 0,
         "value": 0
@@ -836,6 +957,17 @@
         "value": 2048
       }
     },
+    "gunswithoutroses:gwr.shotgun_projectiles": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "attributeslib:cold_damage": {
       "enabled": false,
       "min": {
@@ -999,6 +1131,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "estrogen:fall_damage_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "adjcore:generic.damage_reduction": {

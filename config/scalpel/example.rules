@@ -1,0 +1,39 @@
+# Scalpel rules
+#
+# Every *.rules file in this folder is loaded. Split your rules across as many files as you like.
+# Everything below is commented out, so this file does nothing until you change it.
+#
+# One rule per line:   <verb> <type> <pattern> [option]
+#
+# Verbs
+#   keep     protects matching ids from every other rule
+#   redact   swaps the content for a blank "Redacted" placeholder (the safe choice)
+#   remove   the content never loads at all (saves the most, but some mods crash without it)
+#   If several rules match the same id, keep wins over redact, and redact wins over remove.
+#
+# Types
+#   item, block, entity, any (all three), recipe, loot, advancement, tag
+#   Recipes, loot tables, advancements and tags can only be kept or removed.
+#
+# Patterns
+#   examplemod:ruby            one exact id
+#   examplemod:*               everything from one mod
+#   examplemod:*_eggs          * matches any run of characters, ? matches one
+#   *:*_slab                   every slab from every mod
+#   /^examplemod:[a-z_]*_eggs$/   a regular expression, between slashes
+#
+# Options (redact/remove rules for items and blocks only)
+#   drop       recipes that use this content are removed (the default, see scalpel.toml)
+#   rewrite    recipes keep working without this ingredient where that still makes sense
+#
+# Examples
+#
+# redact any    examplemod:*
+# keep   block  examplemod:ruby_block
+# remove item   examplemod:*_eggs        rewrite
+# remove recipe minecraft:*_boat
+# remove loot   minecraft:chests/*
+# remove tag    forge:ores/tin
+#
+# Try a pattern in game before restarting:   /scalpel test item examplemod:*_eggs
+# Set dryRun = true in scalpel.toml to see what would be cut without cutting anything.

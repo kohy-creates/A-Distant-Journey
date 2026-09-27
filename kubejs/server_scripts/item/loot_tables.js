@@ -69,7 +69,9 @@ LootJS.modifiers((event) => {
 		'evilcraft',
 		'travelersbackpack',
 		'tide',
-		'artifacts'
+		'artifacts',
+		'delightful',
+		'aether_redux'
 	];
 	removeModifiersFromMods.forEach(mod => event.removeGlobalModifier(`@${mod}`));
 
@@ -234,8 +236,6 @@ LootJS.modifiers((event) => {
 		'zombie',
 		'husk',
 		'born_in_chaos_v1:decaying_zombie',
-		'variantsandventures:gelid',
-		'variantsandventures:thicket',
 	])
 		.pool(pool => {
 			pool.addLoot(
@@ -588,8 +588,6 @@ LootJS.modifiers((event) => {
 		'cave_spider',
 		'born_in_chaos_v1:baby_spider',
 		'born_in_chaos_v1:baby_spider_controlled',
-		'variantsandventures:thicket',
-		'variantsandventures:verdant',
 	]).pool(pool => {
 		pool.addLoot(LootEntry.of('terra_curio:bezoar').when(c => c.randomChance(0.03)))
 	});

@@ -248,10 +248,6 @@ StartupEvents.registry('mob_effect', registry => {
 			'addition'
 		);
 
-	registry.create('potion_sickness')
-		.harmful()
-		.color(Color.RED_DYE);
-
 	registry.create('phoenix_defense')
 		.beneficial()
 		.color(Color.ORANGE_DYE)

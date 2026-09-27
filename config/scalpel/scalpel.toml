@@ -1,0 +1,28 @@
+
+#Every setting here needs a game restart.
+[general]
+	#Log and report what would be cut, without cutting anything.
+	dryRun = false
+	#Write Scalpel's own log to logs/scalpel.log.
+	logFile = true
+
+[registration]
+	#Let 'remove' rules remove vanilla (minecraft:) content.
+	#When false, vanilla content matched by a remove rule is redacted instead. Vanilla code holds on to its own content, so removing it can crash.
+	allowRemovingVanilla = false
+	#Refuse to cut ids the game relies on internally, such as stone, water, fire, portals and item entities.
+	#Air and the player can never be cut, whatever this says.
+	protectCriticalIds = true
+
+[recipes]
+	#What happens to recipes that use cut content as an ingredient.
+	#drop: the recipe is removed.
+	#rewrite: the cut item is taken out and the rest of the recipe stays, when it still works without it.
+	#A rule can override this with the 'drop' or 'rewrite' option.
+	ingredientMode = "drop"
+
+[reports]
+	#How many levels the 'lost every recipe' section of the report follows. 0 turns it off.
+	#Range: 0 ~ 16
+	cascadeDepth = 3
+

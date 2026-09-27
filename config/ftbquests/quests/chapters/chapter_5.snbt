@@ -734,6 +734,20 @@
 			x: -0.5d
 			y: 10.5d
 		}
+		{
+			dependencies: ["0E1167447AFB1F55"]
+			entity_vis_size: 1.0f
+			id: "6859B8EE1EAE71B2"
+			subtitle: "Craft a Creative Motor"
+			tasks: [{
+				id: "3EC64B40A4EFB3E7"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			title: "Physics-Defying Energy Creator"
+			x: -3.5d
+			y: 1.5d
+		}
 	]
 	title: "5. <glitch>???"
 }

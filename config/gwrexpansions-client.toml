@@ -1,0 +1,150 @@
+
+#硬币计数器UI设置 / Coin Counter UI Settings
+[coin_counter]
+	#是否启用硬币计数器UI / Enable coin counter UI
+	enabled = true
+	#硬币计数器位置 / Coin counter position
+	#选项 / Options:
+	#- TOP_CENTER: 屏幕上方居中
+	#- TOP_LEFT: 屏幕左上角
+	#- TOP_RIGHT: 屏幕右上角
+	#- BOTTOM_CENTER: 屏幕下方居中
+	#- BOTTOM_LEFT: 屏幕左下角
+	#- BOTTOM_RIGHT: 屏幕右下角
+	#- CUSTOM: 自定义位置（使用offset_x和offset_y）
+	#Allowed Values: TOP_CENTER, TOP_LEFT, TOP_RIGHT, BOTTOM_CENTER, BOTTOM_LEFT, BOTTOM_RIGHT, CUSTOM
+	position = "TOP_CENTER"
+	#硬币计数器X轴偏移 (仅在position为custom时生效) / X offset (only works when position is custom)
+	#Range: -2000.0 ~ 2000.0
+	offset_x = 0.0
+	#硬币计数器Y轴偏移 (仅在position为custom时生效) / Y offset (only works when position is custom)
+	#Range: -2000.0 ~ 2000.0
+	offset_y = 8.0
+	#硬币计数器背景透明度 (0-255, 0为完全透明) / Background alpha (0-255, 0 is fully transparent)
+	#Range: 0 ~ 255
+	background_alpha = 0
+	#硬币计数器缩放百分比 / Scale percentage
+	#Range: 50 ~ 200
+	scale = 100
+	#是否显示连击进度 / Show combo progress
+	show_progress = true
+
+#先兆裁光过载HUD设置 / Harbinger Raycaster Overload HUD Settings
+[harbinger_overload_hud]
+	#是否启用先兆裁光过载电池HUD / Enable Harbinger Raycaster overload battery HUD
+	enabled = true
+	#先兆裁光过载HUD X轴偏移 / X offset for Harbinger overload HUD
+	#Range: -2000.0 ~ 2000.0
+	offset_x = 0.0
+	#先兆裁光过载HUD Y轴偏移 / Y offset for Harbinger overload HUD
+	#Range: -2000.0 ~ 2000.0
+	offset_y = 32.0
+
+#武器HUD设置 / Weapon HUD Settings
+[weapon_huds]
+	#是否启用潮汐手枪 / Tidal Pistol HUD / Enable 潮汐手枪 / Tidal Pistol HUD
+	tidal_pistol_enabled = true
+	#tidal_pistol HUD X轴偏移 / HUD X offset
+	#Range: -2000.0 ~ 2000.0
+	tidal_pistol_offset_x = 0.0
+	#tidal_pistol HUD Y轴偏移 / HUD Y offset
+	#Range: -2000.0 ~ 2000.0
+	tidal_pistol_offset_y = 42.0
+	#是否启用雷霆刻律 / Ceraunus Burst HUD / Enable 雷霆刻律 / Ceraunus Burst HUD
+	ceraunus_burst_enabled = true
+	#ceraunus_burst HUD X轴偏移 / HUD X offset
+	#Range: -2000.0 ~ 2000.0
+	ceraunus_burst_offset_x = 0.0
+	#ceraunus_burst HUD Y轴偏移 / HUD Y offset
+	#Range: -2000.0 ~ 2000.0
+	ceraunus_burst_offset_y = 18.0
+	#是否启用遗迹牙铳 / Remnant Fangshot HUD / Enable 遗迹牙铳 / Remnant Fangshot HUD
+	remnant_fangshot_enabled = true
+	#remnant_fangshot HUD X轴偏移 / HUD X offset
+	#Range: -2000.0 ~ 2000.0
+	remnant_fangshot_offset_x = 0.0
+	#remnant_fangshot HUD Y轴偏移 / HUD Y offset
+	#Range: -2000.0 ~ 2000.0
+	remnant_fangshot_offset_y = 13.0
+	#是否启用咒骸弩炮 / Cursium Ballista HUD / Enable 咒骸弩炮 / Cursium Ballista HUD
+	cursium_sniper_enabled = true
+	#cursium_sniper HUD X轴偏移 / HUD X offset
+	#Range: -2000.0 ~ 2000.0
+	cursium_sniper_offset_x = 0.0
+	#cursium_sniper HUD Y轴偏移 / HUD Y offset
+	#Range: -2000.0 ~ 2000.0
+	cursium_sniper_offset_y = 23.0
+	#是否启用超级霰弹枪 / Super Shotgun HUD / Enable 超级霰弹枪 / Super Shotgun HUD
+	super_shotgun_enabled = true
+	#super_shotgun HUD X轴偏移 / HUD X offset
+	#Range: -2000.0 ~ 2000.0
+	super_shotgun_offset_x = 0.0
+	#super_shotgun HUD Y轴偏移 / HUD Y offset
+	#Range: -2000.0 ~ 2000.0
+	super_shotgun_offset_y = 10.0
+	#超级霰弹枪肉钩 HUD 缩放 / Super Shotgun meat hook HUD scale
+	#Range: 0.5 ~ 2.0
+	super_shotgun_hud_scale = 1.0
+	#是否启用命定·柒手持待机音效 / Enable Destiny Seven held idle sound
+	destiny_seven_idle_sound_enabled = true
+	#是否启用骷髅粉碎者 / Skullcrusher HUD / Enable 骷髅粉碎者 / Skullcrusher HUD
+	skullcrusher_enabled = true
+	#skullcrusher HUD X轴偏移 / HUD X offset
+	#Range: -2000.0 ~ 2000.0
+	skullcrusher_offset_x = 0.0
+	#skullcrusher HUD Y轴偏移 / HUD Y offset
+	#Range: -2000.0 ~ 2000.0
+	skullcrusher_offset_y = 10.0
+	#骷髅粉碎者HUD中心Y微调 / Skullcrusher HUD center Y fine adjustment
+	#Range: -200.0 ~ 200.0
+	skullcrusher_center_y_adjust = -13.0
+	#骷髅粉碎者HUD左弧X微调 / Skullcrusher HUD left arc X fine adjustment
+	#Range: -200 ~ 200
+	skullcrusher_left_arc_x_adjust = 0
+	#骷髅粉碎者HUD右弧X微调 / Skullcrusher HUD right arc X fine adjustment
+	#Range: -200 ~ 200
+	skullcrusher_right_arc_x_adjust = 0
+	#骷髅粉碎者HUD弧线缩放 / Skullcrusher HUD arc scale
+	#Range: 0.1 ~ 2.0
+	skullcrusher_arc_scale = 0.5
+	#骷髅粉碎者HUD准星到弧线基础距离 / Skullcrusher HUD base gap from crosshair to arc
+	#Range: -100 ~ 200
+	skullcrusher_base_gap = 4
+	#骷髅粉碎者HUD扩散距离倍率 / Skullcrusher HUD spread gap multiplier
+	#Range: 0.0 ~ 10.0
+	skullcrusher_spread_gap_multiplier = 0.9
+	#是否启用骷髅粉碎者手持待机音效 / Enable Skullcrusher held idle sound
+	skullcrusher_idle_sound_enabled = true
+	#是否启用黑曜石发射器 / Obsidian Launcher HUD / Enable 黑曜石发射器 / Obsidian Launcher HUD
+	obsidian_launcher_enabled = true
+	#obsidian_launcher HUD X轴偏移 / HUD X offset
+	#Range: -2000.0 ~ 2000.0
+	obsidian_launcher_offset_x = 0.0
+	#obsidian_launcher HUD Y轴偏移 / HUD Y offset
+	#Range: -2000.0 ~ 2000.0
+	obsidian_launcher_offset_y = 10.0
+	#是否启用Hellforge Coin Chain HUD / Enable Hellforge Coin Chain HUD
+	hellforge_chain_enabled = true
+	#hellforge_chain HUD X轴偏移 / HUD X offset
+	#Range: -2000.0 ~ 2000.0
+	hellforge_chain_offset_x = 0.0
+	#hellforge_chain HUD Y轴偏移 / HUD Y offset
+	#Range: -2000.0 ~ 2000.0
+	hellforge_chain_offset_y = 30.0
+	#Hellforge coin chain HUD scale percentage
+	#Range: 50 ~ 200
+	hellforge_chain_scale = 100
+	#Enable Hellforge coin-hit SHOCK camera kick
+	hellforge_coin_hit_shock_enabled = true
+	#Hellforge coin-hit SHOCK strength percentage
+	#Range: 0 ~ 300
+	hellforge_coin_hit_shock_strength = 100
+	#Enable Hellforge coin-hit FOV punch
+	hellforge_coin_hit_fov_punch_enabled = true
+	#Enable Hellforge coin-hit HUD flash
+	hellforge_coin_hit_hud_flash_enabled = true
+	#Enable Hellforge overheat voice callout
+	hellforge_overheat_voice_enabled = true
+	#Enable Hellforge overheat heating music
+	hellforge_overheat_music_enabled = true
+

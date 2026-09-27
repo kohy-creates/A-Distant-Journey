@@ -1,7 +1,7 @@
 {
   "general": {
     "overrideVanillaRod": true,
-    "holdToCast": true,
+    "holdToCast": false,
     "rodDurabilityMultiplier": 1.0,
     "fishableVoidHeights": [
       {
@@ -21,22 +21,22 @@
       }
     ],
     "autoFishDataBlacklist": [],
-    "crateWeight": 4.0,
+    "crateWeight": 10.0,
     "crateQuality": 1.0,
     "logDataErrors": false
   },
   "items": {
-    "fishItemSizes": "ALWAYS",
-    "bucketableFishItems": "WHEN_LIVING",
+    "fishItemSizes": "NEVER",
+    "bucketableFishItems": "NEVER",
     "enableBedrockBreakingItems": true,
     "pocketWatchBlacklist": []
   },
   "journal": {
-    "giveJournal": true,
+    "giveJournal": false,
     "showToasts": true
   },
   "minigame": {
-    "doMinigame": true,
+    "doMinigame": false,
     "minigameDifficultyMultiplier": 1.0,
     "doSuccessSound": true,
     "doFailSound": true,

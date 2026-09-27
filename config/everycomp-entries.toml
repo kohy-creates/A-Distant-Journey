@@ -94,9 +94,6 @@
 			whistlecane = true
 			soulblight = true
 
-		[types.wood_type.nethers_exorcism_reborn]
-			indigo = true
-
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -854,35 +851,6 @@
 			light_jade_tiles = true
 			cracked_light_jade_tiles = true
 
-		[types.cut_block_type.terramity]
-			void_tile = true
-			igneostone = true
-			polished_igneostone = true
-			igneostone_brick = true
-			igneostone_tile = true
-			daemonium_plating = true
-			void_panelling = true
-			nyxium_panelling = true
-			nyxium_brick = true
-			nyxium_tile = true
-			nyxium_plating = true
-			stone_tile = true
-			dungeon_brick = true
-			dungeon_tile = true
-			dungeon_block = true
-			reinforced_blackstone = true
-			reinforced_blackstone_brick = true
-			reinforced_blackstone_tile = true
-			reinforced_red_nether_brick = true
-			moonstone = true
-			polished_moonstone = true
-			moonstone_brick = true
-			moonstone_tile = true
-
-		[types.cut_block_type.nethers_exorcism_reborn]
-			indigo = true
-			turquoise = true
-
 		[types.cut_block_type.gardens_of_the_dead]
 			soulblight = true
 			whistlecane = true
@@ -936,6 +904,24 @@
 			teal_terracotta_brick = true
 			verdant_terracotta_brick = true
 
+		[types.cut_block_type.bypowderandsteel]
+			gunsteel_bricks = true
+			bovony = true
+			bovony_tiles = true
+			bovony_bricks = true
+			milspec_ice_tiles = true
+			doubloon_bricks = true
+			densgsten_tiles = true
+			markstone = true
+			markstone_tiles = true
+			markstone_tiles_small = true
+			markstone_bricks = true
+			abeillonswax_polished = true
+			abeillonswax_bricks = true
+			abeillonswax_tiles = true
+			infernal_bricks = true
+			infernal_tiles = true
+
 #Disables specific entries
 [entries]
 
@@ -958,7 +944,6 @@
 
 		[entries.wood_type.rediscovered]
 			chair = true
-			table = true
 
 		[entries.wood_type.functionalstorage]
 			1 = true
