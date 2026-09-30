@@ -1,7 +1,6 @@
 {
 	"pools": [
 		{
-			"name": "emblems",
 			"conditions": [],
 			"rolls": {
 				"min": 2,
@@ -17,7 +16,6 @@
 			]
 		},
 		{
-			"name": "emblems",
 			"conditions": [],
 			"rolls": 1,
 			"entries": [
@@ -38,6 +36,23 @@
 					"name": "terra_curio:sorcerer_emblem",
 					"weight": 1,
 					"quality": 4
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "aether_redux:ring_of_construction",
+					"weight": 1,
+					"quality": 4,
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.2
+						}
+					]
 				}
 			]
 		}

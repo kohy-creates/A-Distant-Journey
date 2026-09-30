@@ -3,7 +3,6 @@ StartupEvents.postInit(event => {
 	// No need to run this on dedicated servers
 	// Idk how much of an optimization that is, but it's always something
 	if (!Platform.isClientEnvironment()) return;
-
 	// Other order overwrites
 	const EMIEdit = [
 		// Note to self: the pattern is [ITEM, TO_PLACE_AFTER]
@@ -55,7 +54,23 @@ StartupEvents.postInit(event => {
 
 		['quark:paper_wall_big', 'quark:paper_wall_sakura'],
 		['quark:paper_wall_sakura', 'redeco:paper_door'],
-		['redeco:paper_door', 'redeco:paper_trapdoor']
+		['redeco:paper_door', 'redeco:paper_trapdoor'],
+
+		['create:item_vault', 'functionalstorage:oak_1'],
+		['functionalstorage:oak_1', 'functionalstorage:oak_2'],
+		['functionalstorage:oak_2', 'functionalstorage:oak_4'],
+		['functionalstorage:oak_4', 'functionalstorage:compacting_drawer'],
+		['functionalstorage:compacting_drawer', 'functionalstorage:storage_controller'],
+		['functionalstorage:storage_controller', 'functionalstorage:controller_extension'],
+		['functionalstorage:controller_extension', 'functionalstorage:linking_tool'],
+		['functionalstorage:linking_tool', 'functionalstorage:configuration_tool'],
+		['functionalstorage:configuration_tool', 'functionalstorage:puller_upgrade'],
+		['functionalstorage:puller_upgrade', 'functionalstorage:pusher_upgrade'],
+		['functionalstorage:pusher_upgrade', 'functionalstorage:collector_upgrade'],
+		['functionalstorage:collector_upgrade', 'functionalstorage:copper_upgrade'],
+		['functionalstorage:copper_upgrade', 'functionalstorage:void_upgrade'],
+		['functionalstorage:void_upgrade', 'functionalstorage:redstone_upgrade'],
+
 	];
 
 	// Detect available materials
@@ -543,8 +558,7 @@ StartupEvents.postInit(event => {
 			'/mythicmetals:tipped_runite_arrow/',
 			'/alexscaves:jelly_bean/',
 			'/spawn_egg/',
-			'/minecraft:potion\\{Potion\\:\\".*long.*\\"\\}/',
-			'/minecraft:potion\\{Potion\\:\\".*strong.*\\"\\}/',
+
 			'/chiselsandbits:block_bit/',
 			'/scholar:.*_written_book/',
 			'/scholar:.*_writable_book/',
@@ -554,7 +568,6 @@ StartupEvents.postInit(event => {
 			'/quark:pathfinders_quill/',
 			'/born_in_chaos_v1:tombstone.*/',
 			'/evilcraft:dark_tank\\{Fluid\\:\\{Amount\\:.*\\,FluidName\\:.*\\}\\}/',
-			'/accents:.*\\{display\\:\\{color\\:.*\\}\\}/',
 			'/(quark|lootr):lootr.*trapped_chest/',
 			'/minecraft:painting\\{EntityTag\\:.*\\}/'
 		]
@@ -575,20 +588,25 @@ StartupEvents.postInit(event => {
 	// // Add enchantment books
 	/** @type {any} */
 	const $EnchantmentsBegone = Java.loadClass('org.violetmoon.quark.content.experimental.module.EnchantmentsBegoneModule')
-	const allEnchants = global.getRegistry('ENCHANTMENTS').getValues().toArray().sort();
+	const allEnchants = global.getAllRegistryObjects('ENCHANTMENTS');
 
 	addAfter = 'enchantinginfuser:enchanting_infuser'
 	for (let e = 0; e < allEnchants.length; e++) {
+		/** @type {Internal.Enchantment_} */
 		let enchant = allEnchants[e];
-
 		if ($EnchantmentsBegone.shouldBegone(enchant) || enchant.getDescriptionId() === 'enchantment.cofh_core.disabled') continue;
-
 		let book = `minecraft:enchanted_book{StoredEnchantments:[{id:"${enchant.getId()}", lvl:${enchant.getMaxLevel().toString().replace('.0', '')}s}]}`
-
 		edit.added.push({ stack: stack(book), after: stack(addAfter) });
-
 		addAfter = book;
 	}
+
+	// const allPotions = global.getAllRegistryObjects('POTIONS');
+	// for (let p = 0; p < allPotions.length; p++) {
+	// 	/** @type {Internal.Potion_} */
+	// 	let potion = allPotions[p];
+	// 	let id = potion.getDes
+	// 	let book = `minecraft:enchanted_book{StoredEnchantments:[{id:"${enchant.getId()}", lvl:${enchant.getMaxLevel().toString().replace('.0', '')}s}]}`
+	// }
 
 	JsonIO.write('kubejs/assets/emi/index/stacks/edit_item_order.json', edit);
 });

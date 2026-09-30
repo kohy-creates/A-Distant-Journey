@@ -395,8 +395,27 @@ global.getRegistry = function (registry) {
  * @param {string} id
  * @returns {object} 
  */
-global.getObject = function (registry, id) {
+global.getRegistryObject = function (registry, id) {
 	return global.getRegistry(registry).getValue($ResourceLocation.parse(id));
+};
+
+/**
+ * Returns a list of all objects in a given registry.
+ * @param {keyof typeof $ForgeRegistries} registry 
+ * @returns {object[]}
+ */
+global.getAllRegistryObjects = function (registry) {
+	return global.getRegistry(registry).getValues().toArray().sort();
+};
+
+/**
+ * Creates a new TagKey for a given registry and resource location.
+ * @param {keyof typeof $ForgeRegistries} registry
+ * @param {string} key
+ * @returns {Internal.TagKey_}
+ */
+global.createTagKey = function (registry, key) {
+	return $TagKey.create($ForgeRegistries$Keys[registry], global.resourceLocation(key.split(':')[0], key.split(':')[1]));
 };
 
 /**

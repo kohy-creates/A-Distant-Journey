@@ -904,24 +904,6 @@
 			teal_terracotta_brick = true
 			verdant_terracotta_brick = true
 
-		[types.cut_block_type.bypowderandsteel]
-			gunsteel_bricks = true
-			bovony = true
-			bovony_tiles = true
-			bovony_bricks = true
-			milspec_ice_tiles = true
-			doubloon_bricks = true
-			densgsten_tiles = true
-			markstone = true
-			markstone_tiles = true
-			markstone_tiles_small = true
-			markstone_bricks = true
-			abeillonswax_polished = true
-			abeillonswax_bricks = true
-			abeillonswax_tiles = true
-			infernal_bricks = true
-			infernal_tiles = true
-
 #Disables specific entries
 [entries]
 
@@ -944,6 +926,7 @@
 
 		[entries.wood_type.rediscovered]
 			chair = true
+			table = true
 
 		[entries.wood_type.functionalstorage]
 			1 = true

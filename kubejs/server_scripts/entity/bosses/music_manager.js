@@ -12,7 +12,7 @@ EntityEvents.spawned(event => {
 
 const BossMusicManager = {
 	timer: 0,
-	interval: 10,
+	interval: 20,
 	/**
 	 * 
 	 * @param {Iterable<Internal.Entity_>} allMobs 
@@ -38,7 +38,12 @@ const BossMusicManager = {
 	 * @returns {Iterable<Internal.Entity_>}
 	 */
 	getAllMobsIn: (server, dimension) => {
-		return server.getLevel(dimension).getAllEntities()
+		let world = server.getLevel(dimension);
+		if (!world) {
+			console.log(`Dimension ${dimension} not found on server! This likely implies a corrupted world!`);
+			return [];
+		}
+		return world.getAllEntities()
 	},
 	/**
 	 * 

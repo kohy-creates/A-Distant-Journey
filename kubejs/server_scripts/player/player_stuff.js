@@ -557,34 +557,12 @@ EntityEvents.death(event => {
 		let victim = event.getEntity();
 		let level = victim.getLevel();
 
-		function dropItem(item, min, max, atEntity, sound, volume, pitch, particle, delta) {
-			if (global.ifRandomChance(5)) {
-				const amount = global.getRandomInt(min, max);
-				const entity = level.createEntity('minecraft:item');
-				entity.setPos(new Vec3d(atEntity.x, atEntity.y, atEntity.z));
-				entity.setItem(Item.of(item, amount));
-				entity.setPickUpDelay(15);
-				entity.setMotionX(global.getRandomNumber(-0.15, 0.15));
-				entity.setMotionY(global.getRandomNumber(0, 0.1));
-				entity.setMotionZ(global.getRandomNumber(-0.15, 0.15));
-				entity.spawn();
-				if (sound) {
-					let v = global.getOrDefault(volume, 0.75);
-					let p = global.getOrDefault(pitch, 1.0);
-					level.playSound(null, atEntity.x, atEntity.y, atEntity.z, sound, 'neutral', v, p);
-				}
-				if (particle) {
-					let d = global.getOrDefault(delta, 0.33);
-					level.spawnParticles(particle, false, victim.x, victim.y, victim.z, d, d, d, Math.ceil(amount * 2.5), 0)
-				}
-			}
-		}
-
 		switch (id) {
-			case 'mcdw:sickle_last_laught_silver':
-			case 'mcdw:sickle_last_laught_gold': {
-				if (global.ifRandomChance(20)) {
-					dropItem('emerald', 1, 3, victim, 'adj:item.last_laugh.drop_loot', 'neutral', 0.75, 1.0, 'happy_villager');
+			case 'mcdw:sickle_last_laugh_silver':
+			case 'mcdw:sickle_last_laugh_gold': {
+				if (global.ifRandomChance(90)) {
+					console.log('Dropping emeralds from Last Laugh')
+					global.dropItem(level, 'emerald', 1, 3, victim.x, victim.y, victim.z, 'adj:item.last_laugh.drop_loot', 0.75, 1.0, 'happy_villager');
 				}
 				break;
 			}
@@ -596,7 +574,7 @@ EntityEvents.death(event => {
 			switch (enchId) {
 				case 'kubejs:prospector': {
 					if (global.ifRandomChance(5)) {
-						dropItem('emerald', 1, 1 + level, victim, 'adj:item.last_laugh.drop_loot', 'neutral', 0.75, 1.0, 'happy_villager');
+						global.dropItem(level, 'emerald', 1, 1 + level, victim.x, victim.y, victim.z, 'adj:item.last_laugh.drop_loot', 0.75, 1.0, 'happy_villager');
 					}
 					break;
 				}
@@ -607,7 +585,7 @@ EntityEvents.death(event => {
 				}
 				case 'kubejs:rampaging': {
 					let amplifier;
-					let effect = player.getEffect('kubejs:rampaging');
+					let effect = player.getEffect('kubejs:rampage');
 					if (effect) {
 						amplifier = effect.getAmplifier();
 						if (amplifier < enchLevel - 1) {
@@ -617,7 +595,7 @@ EntityEvents.death(event => {
 					else {
 						amplifier = 0;
 					}
-					player.addEffect(global.newMobEffectInstance('kubejs:rampaging', 140 + (enchLevel - 1) * 30, amplifier, false, false, true))
+					player.addEffect(global.newMobEffectInstance('kubejs:rampage', 140 + (enchLevel - 1) * 30, amplifier, false, false, true))
 					player.playNotifySound('block.anvil.place', 'players', 0.5, 0.6 + (amplifier) * 0.15)
 					break;
 				}
@@ -628,12 +606,12 @@ EntityEvents.death(event => {
 		if (player.isAlive()) {
 			if (player.isCuriosEquipped('kubejs:kiketsu_card')) {
 				if (global.ifRandomChance(12.5)) {
-					dropItem(global.weightedRandom({
+					global.dropItem(level, global.weightedRandom({
 						'gold_nugget': 100,
 						'iron_nugget': 170,
 						'mythicmetals:copper_nugget': 300,
 						'mythicmetals:tin_nugget': 125,
-					}), 1, 2, victim, 'adj:item.last_laugh.drop_loot', 'neutral', 0.75, 1.0, 'happy_villager');
+					}), 1, 2, victim.x, victim.y, victim.z, 'adj:item.last_laugh.drop_loot', 0.75, 1.0, 'happy_villager');
 				}
 			}
 		}

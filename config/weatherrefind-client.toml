@@ -30,7 +30,7 @@
 	rainSoundVolume = 0.5
 	#AUTO uses vanilla weather with Iris/Oculus shaders; CUSTOM always uses WR; VANILLA restores vanilla weather and sounds.
 	#Allowed Values: AUTO, CUSTOM, VANILLA
-	weatherMode = "AUTO"
+	weatherMode = "CUSTOM"
 
 #Advanced Rain Settings — changing these may break visual quality, values are interdependent
 [advanced_rain]

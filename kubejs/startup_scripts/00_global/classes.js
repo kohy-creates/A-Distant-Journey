@@ -13,6 +13,7 @@ const $BowItem = Java.loadClass("net.minecraft.world.item.BowItem");
 const $BlockTags = Java.loadClass('net.minecraft.tags.BlockTags')
 const $Player = Java.loadClass('net.minecraft.world.entity.player.Player');
 const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
+const $ForgeRegistries$Keys = Java.loadClass('net.minecraftforge.registries.ForgeRegistries$Keys');
 
 const $MobEffectBuilder = Java.loadClass("dev.latvian.mods.kubejs.misc.BasicMobEffect$Builder");
 const $PotionBuilder = Java.loadClass("dev.latvian.mods.kubejs.misc.PotionBuilder");

@@ -1,0 +1,115 @@
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "majruszsdifficulty:enderium_shard_locator",
+					"weight": 667,
+					"quality": 4
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 12.0,
+				"max": 20.0,
+				"type": "minecraft:uniform"
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:experience_bottle",
+					"weight": 60,
+					"quality": 0
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:dragon_breath",
+					"weight": 40,
+					"quality": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:end_crystal",
+					"weight": 5,
+					"quality": 3
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "ends_delight:dragon_tooth",
+					"quality": 3,
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "ends_delight:dragon_tooth",
+					"quality": 3,
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "ends_delight:dragon_leg",
+					"quality": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 0.0,
+								"max": 3.0
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "ends_delight:raw_dragon_meat",
+					"quality": 2,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 4.0,
+								"max": 8.0
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

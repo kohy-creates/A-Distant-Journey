@@ -63,6 +63,8 @@
 [bettercombat]
 	#Cache WeaponRegistry#getAttributes per item. Stock does a registry reverse lookup plus a map get on every Player#getItemBySlot call, twice.
 	cacheWeaponAttributes = true
+	#Run Better Combat's two-handed offhand check only when the offhand slot is asked for. Stock runs two weapon lookups on every Player#getItemBySlot call for every slot, and the branch flip when a weapon is held keeps the JIT deoptimising it.
+	offhandOnlyTwoHandedCheck = true
 
 #CoFH Core patches.
 [cofh]
@@ -75,7 +77,7 @@
 	dedupeBigOutlineProbes = true
 	#Shortest gap, in milliseconds, between Create's big outline raycasts. Create casts a fresh ray from your eye to your reach limit on every frame drawn, so above a hundred frames a second it casts far more often than the outline can visibly change. Skipped frames keep the previous target, which also feeds block breaking and placing, so a value here is how stale that target may get. Vanilla only recalculates it every 50. 0 casts on every frame.
 	#Range: 0 ~ 50
-	bigOutlinePickInterval = 5
+	bigOutlinePickInterval = 10
 
 #XaeroLib patches.
 [xaerolib]
@@ -102,6 +104,8 @@
 	uploadHeadroomMicros = 1000
 	#Discard the old contents of a region texture's pixel buffer before mapping it for writing. Stock maps a buffer the driver may still be reading last frame's texture upload out of, which blocks the render thread until the GPU catches up.
 	orphanUploadPbo = true
+	#Open Xaero's World Map reflected fields once instead of paying the access check on every read. Stock reads the per-chunk clean flag through an unopened Field for every chunk it writes, and toggles setAccessible on and off around every scheduled task queue read.
+	openReflectedFields = true
 
 #GeckoLib patches.
 [geckolib]
@@ -120,6 +124,8 @@
 	cacheShakeScan = true
 	#Draw the dragon riding HUD (breath meters, ride health bar, melee mode toast) once per frame instead of once after every HUD overlay. Client.
 	drawHudOncePerFrame = true
+	#Look for Ignivorus skyfall dragons once per tick instead of walking every loaded entity several times per frame. Client.
+	cacheSkyfallScan = true
 
 #ImmediatelyFast patches.
 [immediatelyfast]
@@ -150,7 +156,7 @@
 	trackPoseStackOnlyInScreens = true
 	#Seconds between FancyMenu's internet availability probes, an HTTPS request to docs.fancymenu.net that the mod makes every 20 seconds. 0 keeps the stock interval. Client.
 	#Range: 0 ~ 86400
-	internetProbeSeconds = 600
+	internetProbeSeconds = 86400
 
 #Entity Model Features patches.
 [emf]
@@ -208,7 +214,7 @@
 [xaerominimap]
 	#Maximum times per second the minimap redraws its map contents. Anything below the client frame rate leaves a visibly stale minimap, so this is off by default. 0 restores the stock every frame behaviour. Client.
 	#Range: 0 ~ 260
-	renderFpsCap = 0
+	renderFpsCap = 60
 
 #Xaero's + Waystones compatibility patches.
 [w2w2]
@@ -285,6 +291,12 @@
 	proximityScanInterval = 4
 	#Answer 'is this entity wearing a full Noir set' from the chest slot before walking the armour iterator. The renderer asks it twice per living entity per frame and the mob visibility event asks it again for every entity a mob can see, and almost every answer is no.
 	fastArmorSetCheck = true
+	#Read the seal type capability without throwing. Brutality saves it as boosterType but loads seal_type, so every entity load and every capability sync threw and caught an IllegalArgumentException to land on NONE. The result is still NONE.
+	sealTypeNoThrow = true
+	#Skip the capability sync packet Brutality broadcasts to every player whenever any mob gains, loses or runs out of any effect, when the mob is not a player and no player has its chunk loaded.
+	skipUnwatchedEffectSync = true
+	#Skip the 50 block miracle blight particle scan, run twice every client tick, while no entity anywhere is miracle blighted. Client.
+	skipIdleBlightScan = true
 
 #Mutant Monsters patches.
 [mutantmonsters]
@@ -514,6 +526,8 @@
 [soulsweapons]
 	#Read the mod's despawn timer without writing to every entity that does not have one.
 	leanDespawnTimer = true
+	#Remember which mods are installed instead of asking the loader again on every call. Soulslike Weaponry asks whether Better Combat or Epic Fight is installed from inside its Player#getItemBySlot hook, so it runs for every equipment lookup on every player.
+	cacheModPresence = true
 
 #Kind of Nice Weapon patches.
 [konweapon]
@@ -918,6 +932,8 @@
 	spiderFlyScanInterval = 10
 	#Release the level keyed maps Alex's Mobs never clears, when a server stops.
 	releaseLevelMaps = true
+	#Skip the crow crop-circling and pumpkin-avoid block scans (up to 67k block reads each) when no chunk section in range can hold a matching block.
+	crowScanPrecheck = true
 
 #Alex's Caves patches.
 [alexscaves]
@@ -1102,7 +1118,7 @@
 [simplyswords]
 	#Milliseconds to reuse Simply Swords' parsed config values before reading the json5 files off disk again. Config.safeValueFetch runs a Files.exists check, a full file read and a Gson parse on every single getBoolean, getInt, getFloat and getDouble call, and those sit in weapon tick and hit handlers, so holding one unique weapon is dozens of file reads and parses per second per side. The values are the same, an edit made to a config file while the game is running is picked up up to this many milliseconds later, and the unsynchronised HashMaps the parse writes into stop being rewritten from both logical sides at once. 0 restores the stock read every call behaviour.
 	#Range: 0 ~ 60000
-	configRereadInterval = 1000
+	configRereadInterval = 5000
 
 #Celestisynth patches.
 [celestisynth]
@@ -1835,4 +1851,9 @@
 [projectiledamage]
 	#Skip re-applying the bow's attribute modifiers when they are already on the shooter. Every time an arrow is added to a server level while its owner holds a bow or crossbow, Projectile Damage removes and re-adds every attribute modifier of that weapon on the owner, even though vanilla already applied them when the weapon was equipped. Each remove and add marks the attribute dirty, throws away its cached value and queues an attribute sync packet for synced attributes, so a volley from a multishot crossbow or a rapid fire bow does that once per arrow. With this on the re-apply only runs when at least one of the weapon's modifiers is missing or has a different amount or operation, which still covers the case it exists for, like a bow in one hand and a crossbow in the other fighting over the same projectile damage modifier. Arrow damage does not change. Turn it off for stock behaviour.
 	skipAppliedWeaponModifiers = true
+
+#Citadel patches.
+[citadel]
+	#Draw Citadel model boxes (Alex's Mobs, Alex's Caves and every other Citadel model) through Embeddium's bulk vertex writer, the same path Embeddium gives vanilla models. Stock allocates a vector per quad and per vertex and pushes every vertex through the per-vertex BufferBuilder path, which is several times slower and much slower again with a shader pack.
+	fastModelRender = true
 

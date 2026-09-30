@@ -23,3 +23,4 @@ xyz.kohara.adjcore.mixins.entity.villager.WanderingTraderMixin
 com.terraformersmc.biolith.impl.mixin.MixinTheEndBiomeSource
 com.Apothic0n.Astrological.mixin.ChorusPlantBlockMixin
 com.Apothic0n.Astrological.mixin.ChorusFlowerBlockMixin
+com.misanthropy.collections_of_optimizations.mixin.structurify.MixinStructureOverlapCheck

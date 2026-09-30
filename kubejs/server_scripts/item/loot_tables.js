@@ -71,9 +71,51 @@ LootJS.modifiers((event) => {
 		'tide',
 		'artifacts',
 		'delightful',
-		'aether_redux'
+		'supplementaries:replace_rope',
+		'supplementaries:ash_from_burning_mobs',
+		'supplementaries:straw_from_flax',
+		'aether_redux:golden_swet_ball_add',
+		'aether_redux:construction_ring',
+		'aether_redux:swet_sugar_no_genesis',
+		'farmersdelight:scavenging_feather',
+		'farmersdelight:scavenging_ham_from_hoglin',
+		'farmersdelight:scavenging_ham_from_pig',
+		'farmersdelight:scavenging_leather',
+		'farmersdelight:scavenging_pumpkin',
+		'farmersdelight:scavenging_rabbit_hide',
+		'farmersdelight:scavenging_shulker_shell',
+		'farmersdelight:scavenging_smoked_ham_from_hoglin',
+		'farmersdelight:scavenging_smoked_ham_from_pig',
+		'farmersdelight:scavenging_string',
+		'farmersdelight:straw_from_grass',
+		'farmersdelight:straw_from_mature_rice',
+		'farmersdelight:straw_from_mature_wheat',
+		'farmersdelight:straw_from_sandy_shrub',
+		'farmersdelight:straw_from_tall_grass',
+		'farmersdelight:add_onion_to_illagers',
+		'farmersdelight:add_onion_to_zombies',
+		'crittersandcompansions:replace_drowned_flesh',
+		'aether_redux:raw_gravitite',
+		'aether_redux:raw_veridium',
+		'composite_material:elder_guardian_spike',
+		'ends_delight',
+		'twilightdelight:scavenging_experiment_115_from_ghast',
+		'mynethersdelight:scavenging_onion_from_ghast',
+		'mynethersdelight:scavenging_ghasta_from_ghast',
+		'mynethersdelight:scavenging_extra_ghasta1',
+		'mynethersdelight:scavenging_extra_ghasta0',
+		'mynethersdelight:scavenging_hide_from_hoglin',
+		'galosphere:pillager_palladium_loot',
+		'unusualend:shulker'
 	];
-	removeModifiersFromMods.forEach(mod => event.removeGlobalModifier(`@${mod}`));
+	removeModifiersFromMods.forEach(mod => {
+		if (mod.includes(':')) {
+			event.removeGlobalModifier(mod);
+		}
+		else {
+			event.removeGlobalModifier(`@${mod}`);
+		}
+	});
 
 	function fromChapter(number) {
 		return {
@@ -82,11 +124,138 @@ LootJS.modifiers((event) => {
 		};
 	}
 
+	function isKnife() {
+		return Ingredient.of('#c:tools/knives');
+	}
+
+	function hasSilkTouch() {
+		return ItemFilter.hasEnchantment('silk_touch');
+	}
+
+	// Delightful modifiers reimplemented so that ALI shows the loot properly.
+	event.addBlockLootModifier('#leaves')
+		.pool(pool => {
+			pool.addAlternativesLoot(
+				LootEntry.of('delightful:green_tea_leaf').when(c => c.matchMainHand(isKnife()) && c.randomChance(0.8)),
+				LootEntry.of('delightful:green_tea_leaf').when(c => c.randomChance(0.05)),
+			);
+		});
+
+	event.addBlockLootModifier('delightful:cantaloupe')
+		.removeLoot('delightful:cantaloupe')
+		.pool(pool => {
+			pool.addAlternativesLoot(
+				LootEntry.of('delightful:cantaloupe').when(c => c.matchMainHand(hasSilkTouch())),
+				LootEntry.of('delightful:cantaloupe_slice').limitCount([2, 3]),
+			);
+		});
+
+	event.addBlockLootModifier('delightful:mini_melon')
+		.removeLoot('delightful:mini_melon')
+		.pool(pool => {
+			pool.addAlternativesLoot(
+				LootEntry.of('delightful:mini_melon').when(c => c.matchMainHand(hasSilkTouch())),
+				LootEntry.of('melon_slice').limitCount([2, 3]),
+			);
+		});
+
+	event.addEntityLootModifier('goat')
+		.pool(pool => {
+			pool.addAlternativesLoot(
+				// LootEntry.of('delightful:cooked_goat').limitCount([0, 1]).applyLootingBonus([0, 1]).when(c => c.matchEntity(entity => {
+				// 	entity.isOnFire(true);
+				// })),
+				LootEntry.of('delightful:raw_goat').limitCount([0, 1]).applyLootingBonus([0, 1])
+			);
+		});
+
+	event.addEntityLootModifier('piglin')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('farmersdelight:ham').when(c => c.randomChanceWithLooting(0.2, 0.1))
+			);
+		});
+
+	event.addEntityLootModifier('hoglin')
+		.replaceLoot('raw_porkchop', 'mynethersdelight:hoglin_loin', true)
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('mynethersdelight:hoglin_hide').when(c => c.randomChanceWithLooting(0.05, 0.01))
+			)
+		});
+
+	event.addEntityLootModifier(['iron_golem', 'witherstormmod:sickened_iron_golem'])
+		.removeLoot('minecraft:iron_ingot')
+		.replaceLoot('poppy', 'rediscovered:rose', true)
+		.pool(pool => {
+			pool.rolls([1, 3]);
+			pool.addWeightedLoot([
+				LootEntry.of('iron_block').withWeight(1),
+				LootEntry.of('iron_ingot').limitCount([1, 3]).applyLootingBonus([0, 1]).withWeight(6),
+			])
+		});
+
+	event.addEntityLootModifier(['iron_golem'])
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('carved_pumpkin').when(c => c.randomChance(0.5)));
+		});
+
+	event.addEntityLootModifier(['witherstormmod:sickened_iron_golem'])
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('witherstormmod:tainted_carved_pumpkin').when(c => c.randomChance(0.5)));
+		});
+
+	// Aether: Redux
+	event.addEntityLootModifier([
+		'aether:swet',
+		'aether:golden_swet',
+		'aether_redux:vanilla_swet'
+	])
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('sugar').limitCount([0, 2]).applyLootingBonus([0, 1])
+			);
+		});
+
+	event.addBlockLootModifier('aether:gravitite_ore')
+		.removeLoot('aether:gravitite_ore')
+		.pool(pool => {
+			pool.addAlternativesLoot(
+				LootEntry.of('aether:gravitite_ore').when(c => c.matchMainHand(hasSilkTouch())),
+				LootEntry.of('aether_redux:raw_gravitite').applyOreBonus('minecraft:fortune'),
+			);
+		});
+
+	event.addBlockLootModifier('aether_redux:veridium_ore')
+		.removeLoot('aether_redux:veridium_ore')
+		.pool(pool => {
+			pool.addAlternativesLoot(
+				LootEntry.of('aether_redux:veridium_ore').when(c => c.matchMainHand(hasSilkTouch())),
+				LootEntry.of('aether_redux:raw_veridium').applyOreBonus('minecraft:fortune'),
+			);
+		});
+
+	event.addBlockLootModifier('ancient_aether:valkyrum_ore')
+		.removeLoot('ancient_aether:valkyrum_ore')
+		.pool(pool => {
+			pool.addAlternativesLoot(
+				LootEntry.of('ancient_aether:valkyrum_ore').when(c => c.matchMainHand(hasSilkTouch())),
+				LootEntry.of('aether_redux:raw_valkyrum').applyOreBonus('minecraft:fortune'),
+			);
+		});
+
+	// End's Delight
+	event.addEntityLootModifier('endermite')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('ends_delight:raw_endermite_meat').limitCount([0, 1])
+			);
+		});
+
+	// More seed types from grass and ferns
 	const replaceSeedsIn = [
-		'grass',
-		'fern',
-		'tall_grass',
-		'large_fern'
+		'grass', 'fern',
+		'tall_grass', 'large_fern'
 	];
 	replaceSeedsIn.forEach(block => {
 		event.addBlockLootModifier(block)
@@ -103,11 +272,16 @@ LootJS.modifiers((event) => {
 				pool.not(c => c.matchMainHand(ForgeItemFilter.canPerformAction('shears_dig')));
 				pool.addWeightedLoot([
 					LootEntry.of('wheat_seeds').withWeight(350),
-					LootEntry.of('beetroot_seeds').withWeight(80),
+					LootEntry.of('beetroot_seeds').withWeight(40),
 					LootEntry.of('pumpkin_seeds').withWeight(2),
 					LootEntry.of('melon_seeds').withWeight(2),
 					LootEntry.of('etcetera:cotton_seeds').withWeight(210),
 				]);
+			})
+			.pool(pool => {
+				pool.addLoot(
+					LootEntry.of('farmersdelight:straw').when(c => c.matchMainHand(isKnife()) && c.randomChance(0.2))
+				)
 			});
 	});
 
@@ -187,13 +361,22 @@ LootJS.modifiers((event) => {
 			pool.addLoot(LootEntry.of('travelersbackpack:enderman').when(c => c.randomChanceWithLooting(0.002, 0.001)));
 		})
 		.pool(pool => {
-			pool.addLoot(LootEntry.of('terra_curio:trifold_map').when(c => c.randomChance(0.05)))
+			pool.addLoot(LootEntry.of('terra_curio:trifold_map').when(c => c.randomChance(0.05)));
+		})
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('ends_delight:enderman_gritle').limitCount([1, 2]).when(c => c.randomChanceWithLooting(0.5, 0.25)).applyLootingBonus([0, 1]));
 		});
 
 	event.addEntityLootModifier('minecraft:ghast')
 		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:ghast').when(c => c.randomChanceWithLooting(0.05, 0.025)));
+		})
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('twilightdelight:experiment_115').when(c => c.randomChanceWithLooting(0.1, 0.05) && c.customCondition(fromChapter(3))));
+		})
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('mynethersdelight:ghasta').when(c => c.randomChanceWithLooting(0.5, 0.25)));
 		});
 
 	event.addEntityLootModifier('mutantmonsters:mutant_creeper')
@@ -431,7 +614,7 @@ LootJS.modifiers((event) => {
 		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('ars_nouveau:wilden_spike')
-				.limitCount([0, 7])
+				.limitCount([0, 10])
 				.applyLootingBonus([0, 3])
 			);
 		})
@@ -441,6 +624,9 @@ LootJS.modifiers((event) => {
 		})
 		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:hand_drill').when(c => c.randomChance(0.25)))
+		})
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('composite_material:guardian_elder_spike').limitCount([1, 3]));
 		});
 
 	function mcdw(type, item) {
@@ -478,12 +664,6 @@ LootJS.modifiers((event) => {
 			pool.addLoot(LootEntry.of(mcdw('crossbow', 'veiled_crossbow')).withChance(0.15))
 		});
 
-	// event.addLootTableModifier('aquamirae:chests/frozen_chest')
-	// 	.pool(pool => {
-	// 		pool.rolls(1).randomChance(1);
-	// 		pool.addLoot(LootEntry.of('twilightforest:ice_bow'))
-	// 	});
-
 	event.addLootTableModifier(/^(?=.*\bvillage\b)(?=.*\bchest\b).*/)
 		.pool(pool => {
 			pool.addLoot(LootEntry.of('travelersbackpack:villager').when(c => c.randomChance(0.05)))
@@ -497,6 +677,16 @@ LootJS.modifiers((event) => {
 	event.addLootTableModifier('minecraft:chests/igloo_chest')
 		.pool(pool => {
 			pool.addLoot(LootEntry.of('travelersbackpack:snow').when(c => c.randomChance(0.5)))
+		});
+
+	event.addEntityLootModifier(['evoker', 'vindicator', 'pillager'])
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('farmersdelight:onion').when(c => c.randomChanceWithLooting(0.02, 0.01)))
+		});
+
+	event.addEntityLootModifier(['pillager', 'witherstormmod:sickened_pillager'])
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('galosphere:palladium_nugget').limitCount([1, 2]).when(c => c.randomChanceWithLooting(0.4, 0.1)))
 		});
 
 	event.addEntityLootModifier([
@@ -581,6 +771,11 @@ LootJS.modifiers((event) => {
 			pool.addWeightedLoot([
 				LootEntry.of('terra_curio:obsidian_skull')
 			])
+		})
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('aether:golden_gloves').when(c => c.randomChance(0.4))
+			);
 		});
 
 	event.addEntityLootModifier([
@@ -644,6 +839,9 @@ LootJS.modifiers((event) => {
 	event.addEntityLootModifier(['minecraft:shulker'])
 		.pool(pool => {
 			pool.addLoot(LootEntry.of('terra_curio:shot_put').when(c => c.randomChance(0.12)))
+		})
+		.pool(pool => {
+			LootEntry.of('ends_delight:shulker_meat').when(c => c.randomChanceWithLooting(0.5, 0.5))
 		});
 
 	event.addEntityLootModifier(['born_in_chaos_v1:fallen_chaos_knight'])
@@ -692,6 +890,9 @@ LootJS.modifiers((event) => {
 						c.customCondition(fromChapter(3));
 					})
 			);
+		})
+		.pool(pool => {
+			pool.addLoot(LootEntry.of('crittersandcompanions:clam').when(c => c.randomChanceWithLooting(0.12, 0.03)))
 		});
 
 	event.addLootTableModifier('mythicmetals:gameplay/better_piglin_bartering')
@@ -1183,4 +1384,20 @@ LootJS.modifiers((event) => {
 			);
 		});
 
+});
+
+const fattyAnimalsTag = global.createTagKey('ENTITY_TYPES', 'delightful:fatty_animals');
+
+EntityEvents.death(event => {
+	const entity = event.getEntity();
+	const player = global.getOrDefault(event.getSource().getPlayer(), null);
+	if (entity.isOnFire()) {
+		global.dropItem(entity.getLevel(), 'supplementaries:ash', 0, 3, entity.x, entity.y, entity.z);
+	}
+	if (entity.entityType.is(fattyAnimalsTag)) {
+		const looting = player ? global.getLootingLevel(player) : 0;
+		if (global.ifRandomChance(33 + looting * 17)) {
+			global.dropItem(entity.getLevel(), 'delightful:animal_fat', 1, 1 + looting, entity.x, entity.y, entity.z);
+		}
+	}
 });

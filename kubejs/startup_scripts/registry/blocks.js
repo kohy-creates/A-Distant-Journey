@@ -903,7 +903,7 @@ StartupEvents.registry('block', registry => {
 	registerBlockSet('grimite', 'Grimite', 'kubejs:block/deep_granite', 3, 6, 'mineable/pickaxe', true, SoundType.DEEPSLATE, 'blue', ['wall']);
 	registerBlockSet('polished_grimite', 'Polished Grimite', 'kubejs:block/polished_deep_granite', 3, 6, 'mineable/pickaxe', true, SoundType.DEEPSLATE, 'blue', ['wall']);
 
-	// Wool Stairs and Slabs (26.3 backport)
+	// Wool Stairs and Slabs + Concrete Stairs and Slabs (26.3 backport)
 	Color.DYE.forEach(color => {
 		registry.create(`${color}_wool_stairs`, 'stairs')
 			.textureAll(`${global.ifDyeDepot(color, 'dye_depot', 'minecraft')}:block/${color}_wool`)
@@ -918,5 +918,23 @@ StartupEvents.registry('block', registry => {
 			.soundType(SoundType.WOOL)
 			.resistance(0.8)
 			.hardness(0.8);
+
+		registry.create(`${color}_concrete_stairs`, 'stairs')
+			.textureAll(`${global.ifDyeDepot(color, 'dye_depot', 'minecraft')}:block/${color}_concrete`)
+			.mapColor(getMapColor(color))
+			.soundType(SoundType.STONE)
+			.resistance(1.8)
+			.hardness(1.8)
+			.requiresTool(true)
+			.tagBlock('mineable/pickaxe');
+
+		registry.create(`${color}_concrete_slab`, 'slab')
+			.textureAll(`${global.ifDyeDepot(color, 'dye_depot', 'minecraft')}:block/${color}_concrete`)
+			.mapColor(getMapColor(color))
+			.soundType(SoundType.STONE)
+			.resistance(1.8)
+			.hardness(1.8)
+			.requiresTool(true)
+			.tagBlock('mineable/pickaxe');
 	});
 });

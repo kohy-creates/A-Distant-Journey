@@ -73,6 +73,9 @@ global.replaceItemsInAllLoot = {
 	'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
 	'upgrade_aquatic:thrasher_tooth': 'alexsmobs:shark_tooth',
 	'hybrid_aquatic:shark_tooth': 'alexsmobs:shark_tooth',
+	'quark:rope': 'supplementaries:rope',
+	'farmersdelight:rope': 'supplementaries:rope',
+	'unusualend:lurker_sludge': 'ends_delight:shulker_meat'
 };
 
 /**
@@ -178,4 +181,50 @@ global.isHardmode = function (server) {
  */
 global.isHardcore = function (server) {
 	return server.isHardcore();
+};
+
+/**
+ * Drops an item at the specified location.
+ * @param {Internal.ServerLevel_} level
+ * @param {Internal.Item_} item 
+ * @param {int} min 
+ * @param {int} max 
+ * @param {Internal.SoundEvent_|null} sound 
+ * @param {number|null} volume 
+ * @param {number|null} pitch 
+ * @param {Internal.ParticleType_|null} particle 
+ * @param {number|null} delta 
+ */
+global.dropItem = function (level, item, min, max, x, y, z, sound, volume, pitch, particle, delta) {
+	let amount = global.getRandomInt(min, max);
+	if (amount <= 0) return;
+	let entity = level.createEntity('minecraft:item');
+	entity.setPos(new Vec3d(x, y, z));
+	entity.setItem(Item.of(item, amount));
+	entity.setPickUpDelay(15);
+	entity.setMotionX(global.getRandomNumber(-0.1, 0.1) * 0.1);
+	entity.setMotionY(global.getRandomNumber(0.01, 0.07) * 0.4);
+	entity.setMotionZ(global.getRandomNumber(-0.1, 0.1) * 0.1);
+	entity.spawn();
+	if (sound) {
+		level.playSound(
+			null,
+			x, y, z,
+			sound, 'neutral',
+			global.getOrDefault(volume, 0.75),
+			global.getOrDefault(pitch, 1.0)
+		);
+	}
+	if (particle) {
+		let d = global.getOrDefault(delta, 0.33);
+		level.spawnParticles(particle, false, x, y, z, d, d, d, Math.ceil(amount * 2.5), 0)
+	}
+};
+
+/**
+ * Returns the looting level of the specified player.
+ * @param {Internal.Player_} player 
+ */
+global.getLootingLevel = function (player) {
+	return player.getMainHandItem().getEnchantmentLevel('minecraft:looting');
 };
