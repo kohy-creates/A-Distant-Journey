@@ -3,7 +3,8 @@
 	"biomes": "#is_overworld",
 	"features": [
 		"kohara:underground/ore_cinnabar_lower",
-		"kohara:underground/ore_cinnabar_upper"
+		"kohara:underground/ore_cinnabar_upper",
+		"kohara:underground/ore_grimite"
 	],
 	"step": "underground_ores"
 }
