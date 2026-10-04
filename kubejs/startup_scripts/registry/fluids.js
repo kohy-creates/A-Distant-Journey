@@ -61,8 +61,9 @@ StartupEvents.registry('fluid', event => {
 	}
 
 	event.create('dimensional_juice')
+		.viscosity(3000)
+		.density(3000)
 		.thickTexture(0x65219E)
 		.bucketColor(0x65219E)
-		.displayName('Dimensional Juice')
-		.noBlock();
+		.displayName('Dimensional Juice');
 });

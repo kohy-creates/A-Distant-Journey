@@ -231,6 +231,17 @@
         "value": 100
       }
     },
+    "scguns:additional_bullet_damage": {
+      "enabled": false,
+      "min": {
+        "default": -1000,
+        "value": -1000
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
     "estrogen:boob_growing_start_time": {
       "enabled": false,
       "min": {
@@ -495,6 +506,17 @@
         "value": 1024
       }
     },
+    "scguns:bullet_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "doublejumpattribute:doublejumpattribute": {
       "enabled": false,
       "min": {
@@ -748,17 +770,6 @@
         "value": 1
       }
     },
-    "gunswithoutroses:gwr.chance_ammo": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "cataclysm:nature_heal": {
       "enabled": false,
       "min": {
@@ -768,6 +779,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "gunswithoutroses:gwr.chance_ammo": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "additionalentityattributes:player.critical_bonus_damage": {
@@ -902,6 +924,17 @@
         "value": 1000
       }
     },
+    "scguns:spread_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "additionalentityattributes:generic.water_speed": {
       "enabled": false,
       "min": {
@@ -957,6 +990,17 @@
         "value": 2048
       }
     },
+    "scguns:projectile_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0.01,
+        "value": 0.01
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "gunswithoutroses:gwr.shotgun_projectiles": {
       "enabled": false,
       "min": {
@@ -966,6 +1010,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "adjcore:player.healing_potion_cooldown": {
+      "enabled": false,
+      "min": {
+        "default": -2048,
+        "value": -2048
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "attributeslib:cold_damage": {
@@ -1309,6 +1364,17 @@
         "value": 1
       }
     },
+    "scguns:reload_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0.01,
+        "value": 0.01
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "cataclysm:additional_critical_damage": {
       "enabled": false,
       "min": {
@@ -1571,6 +1637,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "savage_and_ravage:explosive_damage_reduction": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "sortilege:generic.staff_range": {

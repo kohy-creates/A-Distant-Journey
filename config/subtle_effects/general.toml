@@ -4,7 +4,7 @@ enableParticleCulling = false
 particleRenderDistance = 4
 particleCullingBlocklist = [
     "minecraft:campfire_signal_smoke",
-    "minecraft:campfire_smoke"
+    "minecraft:flame"
 ]
 cullParticlesInUnloadedChunks = true
 allowUsingBlendedRenderType = true
@@ -37,4 +37,4 @@ fireOverlayAlphaWithFireResistance = 0.24509804
 mobSkullShaders = false
 nightVisionFading = true
 nightVisionFadingTime = 200
-enableEasterEggs = true
+enableEasterEggs = false

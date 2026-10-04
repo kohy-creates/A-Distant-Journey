@@ -83,6 +83,22 @@ StartupEvents.registry('block', registry => {
 			case 'purple': return 'COLOR_PURPLE';
 			case 'magenta': return 'COLOR_MAGENTA';
 			case 'pink': return 'COLOR_PINK';
+			case 'maroon': return 'CRIMSON_HYPHAE';
+			case 'rose': return 'TERRACOTTA_MAGENTA';
+			case 'coral': return 'RAW_IRON';
+			case 'indigo': return 'TERRACOTTA_BLUE';
+			case 'navy': return 'COLOR_CYAN';
+			case 'slate': return 'WARPED_NYLIUM';
+			case 'olive': return 'TERRACOTTA_LIGHT_GREEN';
+			case 'amber': return 'WOOD';
+			case 'beige': return 'SAND';
+			case 'teal': return 'TERRACOTTA_CYAN';
+			case 'mint': return 'WARPED_WART_BLOCK';
+			case 'aqua': return 'DIAMOND';
+			case 'verdant': return 'TERRACOTTA_GREEN';
+			case 'forest': return 'EMERALD';
+			case 'ginger': return 'TERRACOTTA_ORANGE';
+			case 'tan': return 'DIRT';
 			default: return global.getOrDefault(defaultTo, 'STONE');
 		}
 	}

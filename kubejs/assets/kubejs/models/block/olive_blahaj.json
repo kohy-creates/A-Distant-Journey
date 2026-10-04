@@ -1,0 +1,9 @@
+{
+	"parent": "just_blahaj:custom/updatedblahajblue",
+	"textures": {
+		"0": "kubejs:block/blahaj/olive",
+		"all": "kubejs:block/blahaj/olive",
+		"particle": "kubejs:block/blahaj/olive"
+	},
+	"render_type": "cutout_mipped"
+}

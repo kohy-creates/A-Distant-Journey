@@ -12,6 +12,10 @@ ServerEvents.recipes((event) => {
 			.replace('.', '_');
 	}
 
+	function dyeDepotId(color, namespaceA, namespaceB, templateID) {
+		return global.ifDyeDepot(color, namespaceA, namespaceB) + templateID.replace('DYE', color);
+	}
+
 	const disabledItemRecipes = [
 		global.rediscoveredFurniture(),
 		'naturescompass:naturescompass',
@@ -66,7 +70,6 @@ ServerEvents.recipes((event) => {
 		'twilightforest:uncrafting_table',
 		'ars_elemental:mark_of_mastery',
 		'just_blahaj:creeperhaj',
-		'window_box:chthonic_yew_sapling',
 		'window_box:alfthorne_sapling',
 		/twilightforest:.*chest$/,
 		'twilightforest:raw_ironwood',
@@ -83,7 +86,6 @@ ServerEvents.recipes((event) => {
 		'botania:alfheim_portal',
 		'vinery:grapevine_stem',
 		'nethervinery:obsidian_stem',
-		'accents:sewing_kit',
 		/itemfilters/,
 		/.*aether.*\:.*cape/,
 		/constructionwand/,
@@ -349,7 +351,13 @@ ServerEvents.recipes((event) => {
 		/born_in_chaos_v1:armor_plate_from_dark_metal_k/,
 		'wormholepotion:wormhole_potion',
 		'zenith:zenith_from_true_wooden_sword',
-		'born_in_chaos_v1:smoldering_scorche_log_k'
+		'born_in_chaos_v1:smoldering_scorche_log_k',
+		/dye_the_world:.*terracotta_bricks_dyeing/,
+		/dye_the_world:.*shingles_dyeing/,
+		/quark:building\/.*\/.*shingles_dye/,
+		'supplementaries:awnings/awning',
+		/^dye_the_world:.*curtain$/,
+		/^another_furniture:.*curtain$/
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -472,7 +480,7 @@ ServerEvents.recipes((event) => {
 			'PP'
 		],
 		{
-			S: '#c:string',
+			S: 'string',
 			P: '#planks'
 		}
 	).id('minecraft:loom')
@@ -685,16 +693,28 @@ ServerEvents.recipes((event) => {
 		"loops": 2
 	}).id('adj:smithing_template_rune');
 
-	// Accents sewing recipes for Vanity items
+	// Accents Sewing Table recipes for vanity items
 	function sewingRecipe(input, output, outputCount, id) {
 		event.custom({
-			type: "accents:sewing",
+			type: 'accents:sewing',
 			ingredient: {
-				"item": input
+				item: input
 			},
 			result: output,
 			count: global.getOrDefault(outputCount, 1)
 		}).id(global.getOrDefault(id, `adj:sewing/${flattenedID(output)}_from_${flattenedID(input)}`));
+	};
+
+	function dye(color) {
+		return global.ifDyeDepot(color, `dye_depot:${color}_dye`, `${color}_dye`);
+	};
+
+	function wool(color) {
+		return global.ifDyeDepot(color, `dye_depot:${color}_wool`, `${color}_wool`);
+	};
+
+	function cushion(color) {
+		return `cushionbackport:${color}_dye`;
 	};
 
 	event.shaped(
@@ -709,7 +729,22 @@ ServerEvents.recipes((event) => {
 			C: 'etcetera:cotton_flower',
 			N: 'iron_nugget'
 		}
-	);
+	).id('accents:sewing_kit');
+
+	event.shaped(
+		'accents:sewing_station',
+		[
+			' WW',
+			'SPP',
+			'SDD'
+		],
+		{
+			W: '#wool',
+			S: 'string',
+			P: '#planks',
+			D: 'polished_deepslate'
+		}
+	).id('accents:sewing_station');
 
 	sewingRecipe('accents:sewing_kit', 'etcetera:white_sweater');
 	sewingRecipe('accents:sewing_kit', 'etcetera:white_hat');
@@ -719,6 +754,83 @@ ServerEvents.recipes((event) => {
 	sewingRecipe('yellow_wool', 'aether:yellow_cape');
 	sewingRecipe('pink_wool', 'ancient_aether:pink_cape');
 	sewingRecipe('blue_wool', 'aether:blue_cape');
+
+	sewingRecipe('supplementaries:flax', 'supplementaries:awning')
+
+	// Blahaj and other colored sewing recipes
+	Color.DYE.forEach(color => {
+
+		sewingRecipe(wool(color), cushion(color), 3);
+		sewingRecipe(wool(color), global.ifDyeDepot(color, `dye_the_world:${color}_curtain`, `another_furniture:${color}_curtain`))
+
+		const blahaj = `${global.isDyeDepotColor(color) ? 'kubejs' : 'just_blahaj'}:${(color) == 'light_blue' ? '' : `${color}_`}blahaj`;
+		event.remove({ output: blahaj })
+		event.shapeless(
+			blahaj,
+			['#adj:blahaj/recolorable', dye(color)]
+		).id(`adj:blahaj/${color}`)
+
+		sewingRecipe(`cushionbackport:${color}_cushion`, blahaj)
+	});
+
+	const specialBlahaj = {
+		'palestine': [
+			'red', 'white', 'black', 'green'
+		],
+		'iran': [
+			'red', 'white', 'green'
+		],
+		'trans': [
+			'light_blue', 'pink', 'white', 'pink', 'light_blue',
+		],
+		'pride': [
+			'red', 'orange', 'yellow', 'lime', 'light_blue', 'magenta', 'purple'
+		],
+		'intersex': [
+			'yellow', 'yellow', 'magenta'
+		],
+		'bi': [
+			'magenta', 'purple', 'blue'
+		],
+		'pan': [
+			'magenta', 'yellow', 'light_blue'
+		],
+		'lesbian': [
+			'red', 'orange', 'pink', 'magenta', 'purple'
+		],
+		'gay': [
+			'teal', 'mint', 'white', 'light_blue', 'indigo'
+		],
+		'enby': [
+			'yellow', 'white', 'purple', 'black'
+		],
+		'gender_fluid': [
+			'pink', 'white', 'magenta', 'black', 'blue'
+		],
+		'ace': [
+			'magenta', 'white', 'black'
+		],
+		'aromantic': [
+			'green', 'lime', 'magenta', 'white', 'gray'
+		],
+		'aroace': [
+			'orange', 'yellow', 'white', 'light_blue', 'blue'
+		]
+	}
+	for (let [type, /** @param {Internal.InputItem_[]} wool */ wool] of Object.entries(specialBlahaj)) {
+		let blahaj = `just_blahaj:${(type) == 'pan' ? 'panhaj' : `${type}_blahaj`}`;
+		event.remove({ output: blahaj });
+		let ingredients = ['just_blahaj:blahaj'];
+		wool.forEach(w => {
+			ingredients.push(global.ifDyeDepot(w, `dye_depot:${w}_wool`, `${w}_wool`));
+		})
+		event.shapeless(
+			blahaj,
+			ingredients
+		).id(`adj:blahaj/${type}`)
+	}
+
+	event.recipes.botania.mana_infusion('just_blahaj:creeperhaj', 'creeper_head').mana(50000).id('adj:blahaj/creeperhaj')
 
 	event.forEachRecipe({ output: [/carpet/], type: 'crafting_shaped' }, recipe => {
 		if (!recipe) return;
@@ -1136,6 +1248,21 @@ ServerEvents.recipes((event) => {
 			]
 		).id(`${color}_terracotta`);
 
+		event.shapeless(
+			`8x ${global.ifDyeDepot(color, 'dye_the_world', 'quark')}:${color}_terracotta_shingles`,
+			[
+				`${global.ifDyeDepot(color, 'dye_depot', 'minecraft')}:${color}_dye`,
+				'quark:terracotta_shingles',
+				'quark:terracotta_shingles',
+				'quark:terracotta_shingles',
+				'quark:terracotta_shingles',
+				'quark:terracotta_shingles',
+				'quark:terracotta_shingles',
+				'quark:terracotta_shingles',
+				'quark:terracotta_shingles'
+			]
+		).id(`adj:${color}_shingles`);
+
 		event.shaped(
 			`4x ${global.ifDyeDepot(color, 'dye_the_world', 'clayworks')}:${color}_terracotta_bricks`,
 			[
@@ -1162,17 +1289,42 @@ ServerEvents.recipes((event) => {
 			]
 		).id(`${global.ifDyeDepot(color, 'dye_the_world', 'clayworks')}:${color}_terracotta_bricks`);
 
-		// event.shaped(
-		// 	`${global.ifDyeDepot(color, 'dye_the_world', 'create')}:${color}_seat`,
-		// 	[
-		// 		'C',
-		// 		'S'
-		// 	],
-		// 	{
-		// 		S: '#wooden_slabs',
-		// 		C: `cushionbackport:${color}_cushion`
-		// 	}
-		// ).id(`create:crafting/kinetics/${color}_seat`)
+		event.shaped(
+			dyeDepotId(color, 'dye_the_world', 'create', `DYE_seat`),
+			[
+				'C',
+				'S'
+			],
+			{
+				S: '#wooden_slabs',
+				C: `cushionbackport:${color}_cushion`
+			}
+		).id(`create:crafting/kinetics/${color}_seat`);
+
+		event.shaped(
+			dyeDepotId(color, 'dye_the_world', 'another_furniture', `DYE_stool`),
+			[
+				'PCP',
+				'S S'
+			],
+			{
+				P: '#wooden_slabs',
+				C: cushion(color),
+				S: 'stick'
+			}
+		).id(dyeDepotId(color, 'dye_the_world', 'another_furniture', `DYE_stool`));
+
+		event.shaped(
+			dyeDepotId(color, 'dye_the_world', 'another_furniture', `DYE_tall_stool`),
+			[
+				'C',
+				'S'
+			],
+			{
+				C: cushion(color),
+				S: '#adj:stools'
+			}
+		).id(dyeDepotId(color, 'dye_the_world', 'another_furniture', `DYE_tall_stool`));
 	});
 
 	event.recipes.ars_nouveau.enchanting_apparatus(
@@ -1230,6 +1382,36 @@ ServerEvents.recipes((event) => {
 	);
 
 	/**
+	 * Registers a Mining Master Forge recipe
+	 *
+	 * @param {Internal.InputItem_[]} inputs - List of items or tags (prefix with # for tags)
+	 * @param {Internal.InputItem_} catalyst - Catalyst item or tag (prefix with # for tags)
+	 * @param {Internal.OutputItem_} output - The resulting item ID
+	 * @param {number} mana - Mana cost
+	 */
+	function forgeRecipe(inputs, catalyst, output) {
+		let ingredients = inputs.map(id => {
+			if (global.isString(id)) {
+				return id.startsWith("#") ? { tag: id.slice(1) } : Item.of(id);
+			}
+			if (id && id.toJson) {
+				return id.toJson();
+			}
+
+			return id;
+		});
+
+		event.custom({
+			type: "miningmaster:forging_recipe",
+			gems: ingredients,
+			catalyst: (global.isString(catalyst)) ? (catalyst.startsWith('#') ? { tag: catalyst.slice(1) } : { item: catalyst }) : catalyst,
+			result: (global.isString(output)) ? { item: output } : output,
+			enchantments: []
+		}).id(`adj:forge/${flattenedID(output)}`);
+	}
+
+
+	/**
 	 * Registers a Botanic Additions Gaia Plate recipe
 	 *
 	 * @param {Internal.InputItem_[]} inputs - List of items or tags (prefix with # for tags)
@@ -1237,7 +1419,7 @@ ServerEvents.recipes((event) => {
 	 * @param {number} mana - Mana cost
 	 */
 	function gaiaPlateRecipe(inputs, output, mana) {
-		const ingredients = inputs.map(id => {
+		let ingredients = inputs.map(id => {
 			if (global.isString(id)) {
 				return id.startsWith("#") ? { tag: id.slice(1) } : Item.of(id);
 			}
@@ -2697,10 +2879,6 @@ ServerEvents.recipes((event) => {
 		}
 	];
 
-	function dye(color) {
-		return `${color}_dye`;
-	};
-
 	for (let recipe of dyeRecipes) {
 		let result = dye(recipe.result);
 		let i = 0;
@@ -3766,7 +3944,7 @@ ServerEvents.recipes((event) => {
 
 		const JSON = recipe.json;
 		const time = (cookingTimeOverrides[id]) ? (cookingTimeOverrides[id] * 20 * ((type == 'campfire') ? 6 : 1)) : JSON.get('cookingtime') * 2;
-		const exp = JSON.get('experience');
+		const exp = global.getOrDefault(JSON.get('experience'), 0.1);
 
 		event.remove({ id: recipe.getId() });
 		if (type == 'smoking') {
@@ -5626,7 +5804,6 @@ ServerEvents.recipes((event) => {
 		'botania:livingwood_twig',
 		'botania:redstone_root'
 	]).id(`adj:alfthorne_sapling`);
-	ectoplasmTransform('window_box:alfthorne_sapling', 'window_box:chthonic_yew_sapling');
 
 	// Binding Wayfinders
 	function locateStructureRitual(structure, ingredients) {
@@ -6139,125 +6316,6 @@ ServerEvents.recipes((event) => {
 		'evilcraft:promise_efficiency_0',
 		0
 	).id('adj:promise_efficiency_0')
-
-
-	// Blahaj recipes
-	Color.DYE.forEach(color => {
-		if (global.isDyeDepotColor(color)) return;
-		const blahaj = `just_blahaj:${(color) == 'light_blue' ? '' : `${color}_`}blahaj`;
-
-
-		event.remove({ output: blahaj })
-		event.shapeless(
-			blahaj,
-			[
-				'#adj:blahaj/recolorable',
-				dye(color)
-			]
-		).id(`adj:blahaj/${color}`)
-
-		sewingRecipe(`cushionbackport:${color}_cushion`, blahaj)
-	});
-
-	const specialBlahaj = {
-		'palestine': [
-			'red',
-			'white',
-			'black',
-			'green'
-		],
-		'trans': [
-			'light_blue',
-			'pink',
-			'white',
-			'pink',
-			'light_blue',
-		],
-		'pride': [
-			'red',
-			'orange',
-			'yellow',
-			'lime',
-			'light_blue',
-			'magenta',
-			'purple'
-		],
-		'intersex': [
-			'yellow',
-			'yellow',
-			'magenta'
-		],
-		'bi': [
-			'magenta',
-			'purple',
-			'blue'
-		],
-		'pan': [
-			'magenta',
-			'yellow',
-			'light_blue'
-		],
-		'lesbian': [
-			'red',
-			'orange',
-			'pink',
-			'magenta',
-			'purple'
-		],
-		'gay': [
-			'green',
-			'lime',
-			'white',
-			'light_blue',
-			'blue'
-		],
-		'enby': [
-			'yellow',
-			'white',
-			'purple',
-			'black'
-		],
-		'gender_fluid': [
-			'pink',
-			'white',
-			'magenta',
-			'black',
-			'blue'
-		],
-		'ace': [
-			'magenta',
-			'white',
-			'black'
-		],
-		'aromantic': [
-			'green',
-			'lime',
-			'magenta',
-			'white',
-			'gray'
-		],
-		'aroace': [
-			'orange',
-			'yellow',
-			'white',
-			'light_blue',
-			'blue'
-		]
-	}
-	for (let [type, /** @param {$InputItem_[]} wool */ wool] of Object.entries(specialBlahaj)) {
-		let blahaj = `just_blahaj:${(type) == 'pan' ? 'panhaj' : `${type}_blahaj`}`;
-		event.remove({ output: blahaj });
-		let ingredients = ['just_blahaj:blahaj'];
-		wool.forEach(w => {
-			ingredients.push(`${w}_wool`)
-		})
-		event.shapeless(
-			blahaj,
-			ingredients
-		).id(`adj:blahaj/${type}`)
-	}
-
-	event.recipes.botania.mana_infusion('just_blahaj:creeperhaj', 'creeper_head').mana(50000).id('adj:blahaj/creeperhaj')
 
 	// Missing Chest recipes
 	const missingChests = [
@@ -8820,8 +8878,7 @@ ServerEvents.recipes((event) => {
 		blockSet(`${c}_tiles`);
 
 		// Neon Blocks
-		if (!global.isDyeDepotColor(c))
-			event.recipes.botania.mana_infusion(`kubejs:${c}_neon`, `alexscaves:radon_lamp_${c}`).mana(1000).id(`adj:${c}_neon_block`);
+		event.recipes.botania.mana_infusion(`kubejs:${c}_neon`, global.ifDyeDepot(c, `dye_the_world:radon_lamp_${c}`, `alexscaves:radon_lamp_${c}`)).mana(1000).id(`adj:${c}_neon_block`);
 
 		// Asphalt
 		let id = c == 'black' ? 'kubejs:asphalt' : `kubejs:${c}_asphalt`;
@@ -8832,6 +8889,7 @@ ServerEvents.recipes((event) => {
 		];
 		if (c != 'black') ingr.push(`${c}_dye`);
 		event.recipes.create.mixing(Item.of(id, 2), ingr, 300, 'heated').id(`adj:${c}_asphalt`);
+
 	});
 
 	event.recipes.create.milling(['kubejs:sulfur_dust', Item.of('kubejs:sulfur_dust').withChance(0.5)], 'kubejs:sulfur', 200).id('adj:crushed_sulfur');

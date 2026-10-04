@@ -169,7 +169,7 @@
 	[Slimes."Slime size"]
 		#Changes the max size a Slime/Magma cube can spawn as. Vanilla is max 4 with 3 excluded. Set to 0 to disable.
 		#Range: 0 ~ 16
-		"Max spawn size" = 5
+		"Max spawn size" = 0
 
 	#Make magma cubes swim in lava faster. Only entity types in `enhancedai:slime/magma_cube_surf_speed` tag are affected by this feature.
 	[Slimes."Magma cube surf speed"]

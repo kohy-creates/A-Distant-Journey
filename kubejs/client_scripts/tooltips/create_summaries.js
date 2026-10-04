@@ -2182,13 +2182,6 @@ const itemsToTooltip = [
 		]
 	},
 	{
-		item: "window_box:chthonic_yew_sapling",
-		summary: [
-			"The _Chthonic Yew_ tree is said to be a gateway to the underworld. When grown, its trunk forms a hollow containing a portal to the _Nether_. It requires a 2x2 of saplings with 4 blocks of vertical space above them. Its wood is a deep black.",
-			"_Lasciate ogne speranza, voi ch'intrate_"
-		]
-	},
-	{
 		item: 'window_box:alfthorne_sapling',
 		summary: [
 			'A special type of tree. It contains a _portal to Alfheim_ in its huge trunk, allowing you to _trade resources with Elves_ on the other side.'

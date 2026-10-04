@@ -37,7 +37,7 @@
 			createCustom(`${id}_banner_pattern`, new $BannerPatternItem(
 				$TagKey.create($Registries.BANNER_PATTERN, global.resourceLocation('adj', `pattern_item/${id}`)),
 				global.getOrDefault(properties, new $ItemProperties().stacksTo(1))
-			), 'minecraft:item/thing_banner_pattern');
+			), 'minecraft:item/mojang_banner_pattern');
 		}
 
 		registerBannerPatternItem('field_masoned');

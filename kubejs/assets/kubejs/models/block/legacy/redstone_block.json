@@ -2,5 +2,6 @@
 	"parent": "minecraft:block/cube_all",
 	"textures": {
 		"all": "kubejs:block/legacy/redstone_block"
-	}
+	},
+	"render_type": "minecraft:solid"
 }

@@ -110,7 +110,7 @@
 	#Setting very high values may require modded bookshelves that provide more than one enchanting power per block (such as Apotheosis' bookshelves).
 	#This value will be fixed at 50 when Apotheosis is installed.
 	#Range: > 0
-	maximum_bookshelves = 15
+	maximum_bookshelves = 50
 	#Working an item in an infuser increases the prior work penalty stat used by anvils for that item, meaning future anvil repairs will become more expensive, possibly even too expensive.
 	increase_anvil_repair_cost = false
 	#Allow books to be enchanted in an infuser.

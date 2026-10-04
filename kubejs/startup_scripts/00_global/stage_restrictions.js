@@ -83,7 +83,6 @@ global.stageRestrictions = {
 			'rediscovered:ruby_eye',
 			'kubejs:skull_fragment',
 			'kubejs:hellforge',
-			/chthonic_yew/,
 			/alfthorne/,
 			/hadaline/,
 			/entrails/,

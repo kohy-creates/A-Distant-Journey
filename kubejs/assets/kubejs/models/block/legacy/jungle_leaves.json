@@ -2,5 +2,6 @@
 	"parent": "minecraft:block/cube_all",
 	"textures": {
 		"all": "kubejs:block/legacy/jungle_leaves"
-	}
+	},
+	"render_type": "minecraft:solid"
 }

@@ -112,6 +112,7 @@ StartupEvents.postInit(event => {
 		'netherexp:smokestalk',
 		'unusualend:chorus_nest',
 		'unusualend:stripped_chorus_nest',
+		'window_box:chthonic_yew',
 	];
 
 	Item.getTypeList().forEach(id => {
@@ -246,7 +247,6 @@ StartupEvents.postInit(event => {
 		'beachparty:palm',
 		'botania:livingwood',
 		'botania:dreamwood',
-		'window_box:chthonic_yew',
 		'window_box:alfthorne',
 		'ars_nouveau:archwood',
 		'evilcraft:undead',

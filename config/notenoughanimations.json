@@ -68,7 +68,8 @@
     "redeco:yellow_paper_lantern",
     "redeco:pink_paper_lantern",
     "redeco:purple_paper_lantern",
-    "redeco:red_paper_lantern"
+    "redeco:red_paper_lantern",
+    "alexscaves:raygun"
   ],
   "enableAnimationSmoothing": true,
   "enableInWorldMapRendering": true,

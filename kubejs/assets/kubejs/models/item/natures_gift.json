@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"layer0": "kubejs:item/natures_gift"
+		"layer0": "kubejs:block/natures_gift"
 	}
 }

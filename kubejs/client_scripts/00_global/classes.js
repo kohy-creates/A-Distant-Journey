@@ -11,3 +11,4 @@ const $Equipable = Java.loadClass('net.minecraft.world.item.Equipable');
 const $Entity = Java.loadClass('net.minecraft.world.entity.Entity');
 const $Level = Java.loadClass('net.minecraft.world.level.Level');
 const $FMVariableHandler = Java.loadClass('de.keksuccino.fancymenu.customization.variables.VariableHandler');
+const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager');

@@ -50,6 +50,7 @@ ServerEvents.tags('item', tags => {
 		'just_blahaj:red_blahaj',
 		'just_blahaj:black_blahaj',
 		'just_blahaj:blahaj',
+		/kubejs:.*_blahaj/
 	]);
 
 	tags.add('adj:blahaj/colored', [
@@ -69,6 +70,7 @@ ServerEvents.tags('item', tags => {
 		'just_blahaj:green_blahaj',
 		'just_blahaj:red_blahaj',
 		'just_blahaj:black_blahaj',
+		/kubejs:.*_blahaj/
 	]);
 
 
@@ -87,6 +89,7 @@ ServerEvents.tags('item', tags => {
 		'just_blahaj:ace_blahaj',
 		'just_blahaj:aromantic_blahaj',
 		'just_blahaj:aroace_blahaj',
+		'just_blahaj:iran_blahaj',
 	]);
 
 	tags.add('adj:basic_furnaces', [
@@ -610,7 +613,9 @@ ServerEvents.tags('item', tags => {
 	tags.add('aether:obsidian_repair', ['create:sturdy_sheet']);
 
 	tags.add('curios:accessory', [
-		'alexscaves:heavyweight'
+		'alexscaves:heavyweight',
+		'kubejs:natures_gift',
+		'minecraft:rabbit_foot',
 	]);
 
 	tags.add('galosphere:weapon_racks_can_hold', [
@@ -618,9 +623,71 @@ ServerEvents.tags('item', tags => {
 		'#c:axes',
 		'#c:hoes',
 		'#c:shovels',
+		'#c:bows'
+	]);
+
+	tags.add('c:bows', [
+		/mcdw:bow_/,
+	]);
+
+	tags.add('c:crossbows', [
+		/mcdw:crossbow_/,
 	]);
 
 	tags.add('c:hidden_from_recipe_viewers', [
 		'chiselsandbits:block_bit'
 	].concat(global.blacklistedItemsArray));
+
+	tags.add('just_blahaj:haj', [
+		/kubejs:.*_blahaj/
+	]);
+
+	tags.add('c:chains', [
+		'aether_redux:sentrite_chain',
+		/ars_additions:.*_chain/,
+	]);
+
+	/*
+	tags.add('adj:terracotta_shingles', [
+		/quark:.*terracotta_shingles/,
+		/dye_the_world:.*terracotta_shingles/,
+	]);
+
+	tags.add('adj:terracotta_bricks', [
+		/clayworks:.*terracotta_bricks/,
+		/dye_the_world:.*terracotta_bricks/,
+	]);
+
+	tags.add('adj:terracotta_brick_slabs', [
+		/clayworks:.*terracotta_brick_slab/,
+		/dye_the_world:.*terracotta_brick_slab/,
+	]);
+
+	tags.add('adj:terracotta_brick_stairs', [
+		/clayworks:.*terracotta_brick_stairs/,
+		/dye_the_world:.*terracotta_brick_stairs/,
+	]);
+
+	tags.add('adj:terracotta_shingles_vertical_slabs', [
+		/quark:.*terracotta_shingles_vertical_slab/,
+		/v_slab_compat:.*terracotta_shingles_vertical_slab/,
+	]);
+
+	tags.add('adj:terracotta_brick_vertical_slabs', [
+		/v_slab_compat:.*terracotta_brick_vertical_slab/,
+	]);
+
+	tags.add('adj:terracotta_brick_walls', [
+		/clayworks:.*terracotta_brick_wall/,
+	]);
+
+	tags.add('adj:chiseled_terracotta_bricks', [
+		/clayworks:.*chiseled.*terracotta_bricks/,
+	]);
+	*/
+
+	tags.add('adj:stools', [
+		/decoration_delight:.*stool/,
+		/everycomp:ddr\/.*\/.*_stool/
+	])
 });

@@ -188,6 +188,13 @@ ItemEvents.modification(event => {
 		);
 	});
 
+	event.modify('rabbit_foot', item => {
+		item.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+				.addAttribute('generic.luck', 'c986ed38-802c-4cc8-ac20-e4a0858e8d5c', 1, 'addition')
+		);
+	});
+
 	const gloves = {
 		'aether:iron_gloves': {
 			damage: 1,

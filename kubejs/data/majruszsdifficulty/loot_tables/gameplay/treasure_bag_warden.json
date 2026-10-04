@@ -1,0 +1,46 @@
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "majruszsdifficulty:sonic_boom_scroll",
+					"quality": 4
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 1.0,
+				"max": 3.0,
+				"type": "minecraft:uniform"
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:sculk_catalyst",
+					"quality": 2,
+					"weight": 16
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:echo_shard",
+					"quality": 2,
+					"weight": 10
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "terra_curio:flashlight",
+					"quality": 3
+				}
+			]
+		},
+	]
+}

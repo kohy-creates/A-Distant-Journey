@@ -115,6 +115,8 @@
 	cacheBoneLookup = true
 	#Reuse each animation controller's bone keyframe queues between frames instead of allocating a fresh set for every bone on every frame. Client.
 	reuseBoneQueues = true
+	#Evaluate GeckoLib's own easing curves on primitive doubles instead of boxing a Double into and out of every curve call. Every animated bone runs this on every frame. Easing functions from other mods keep the boxed call.
+	primitiveEasing = true
 
 #Saint's Dragons patches.
 [saintsdragons]
@@ -943,6 +945,8 @@
 	memoClimateSample = true
 	#Look for screen shaking mobs once per tick instead of once per frame.
 	cacheShakeScan = true
+	#Find nearby attracting and repelling magnets with one point of interest search instead of two for every magnetic entity on every tick. Server.
+	singleMagnetQuery = true
 
 #Ad Astra patches.
 [adastra]
@@ -1028,6 +1032,12 @@
 	axisAlignedRotation = true
 	#Walk BlockPos.betweenClosed and Cursor3D with three counters instead of two integer divisions per position. Cursor3D is what every entity uses each tick to find the block it stands on, and what mob pathfinding uses for its collision checks. Same positions in the same order. An inverted BlockPos range yields nothing instead of looping forever.
 	leanBlockPosRange = true
+	#Map each shared piece of the terrain density graph once per NoiseChunk instead of once per reference, and reuse the final density graph instead of rebuilding and rehashing it a second time. Every generated chunk and every structure height query builds a NoiseChunk. The resulting graph is the same one vanilla builds. Skipped for world generators whose density graph has little shared structure, where the bookkeeping would cost more than it saves. Server.
+	reuseNoiseChunkDensityGraph = true
+	#Share the preliminary surface height of a column between NoiseChunks of the same world generator instead of rescanning it in every NoiseChunk. Only used where the result cannot depend on the NoiseChunk: no terrain blending, and only density function types whose output is known to depend on position alone. Server.
+	shareSurfaceEstimates = true
+	#Run the FPS limiter just before the frame is presented instead of just after, so the time spent waiting absorbs uneven frame work and frames are presented at a steadier rhythm. Only acts while an FPS cap is set and VSync is off. Changes frame timing, so it is off by default. Client.
+	paceFramesBeforeSwap = false
 
 #Create: Solar patches.
 [createsolar]
@@ -1856,4 +1866,9 @@
 [citadel]
 	#Draw Citadel model boxes (Alex's Mobs, Alex's Caves and every other Citadel model) through Embeddium's bulk vertex writer, the same path Embeddium gives vanilla models. Stock allocates a vector per quad and per vertex and pushes every vertex through the per-vertex BufferBuilder path, which is several times slower and much slower again with a shader pack.
 	fastModelRender = true
+
+#Architectury API patches.
+[architectury]
+	#Call Architectury event listeners through reflection directly instead of building a new MethodHandle for every listener on every event. Tick, entity and player events all go through this.
+	directEventDispatch = true
 

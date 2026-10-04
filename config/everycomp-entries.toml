@@ -186,14 +186,14 @@
 			mining = true
 			sorting = true
 
+		[types.leaves_type.ars_zero]
+			blight_archwood = true
+
 		[types.leaves_type.kubejs]
 			"legacy/oak" = true
 			"legacy/birch" = true
 			"legacy/spruce" = true
 			"legacy/jungle" = true
-
-		[types.leaves_type.ars_zero]
-			blight_archwood = true
 
 	[types.cake]
 
@@ -788,6 +788,22 @@
 			rose_stone_bricks = true
 			indigo_stone_bricks = true
 			maroon_stone_bricks = true
+			magenta_concrete = true
+			pink_concrete = true
+			yellow_concrete = true
+			cyan_concrete = true
+			red_concrete = true
+			gray_concrete = true
+			white_concrete = true
+			green_concrete = true
+			lime_concrete = true
+			light_gray_concrete = true
+			black_concrete = true
+			light_blue_concrete = true
+			brown_concrete = true
+			orange_concrete = true
+			blue_concrete = true
+			purple_concrete = true
 
 		[types.cut_block_type.endergetic]
 			poise = true
@@ -903,6 +919,24 @@
 			tan_terracotta_brick = true
 			teal_terracotta_brick = true
 			verdant_terracotta_brick = true
+
+		[types.cut_block_type.buzzier_bees]
+			honeycomb_brick = true
+			honeycomb_tile = true
+
+		[types.cut_block_type.scguns]
+			cut_diamond_steel = true
+			diamond_steel_tiles = true
+			cut_anthralite = true
+			anthralite_tiles = true
+			cut_treated_iron = true
+			phosphorite_brick = true
+			asgharian_brick = true
+			cut_treated_brass = true
+			treated_brass_tiles = true
+
+		[types.cut_block_type.savage_and_ravage]
+			gloomy_tile = true
 
 #Disables specific entries
 [entries]

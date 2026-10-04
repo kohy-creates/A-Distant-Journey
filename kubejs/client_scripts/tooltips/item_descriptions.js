@@ -581,6 +581,10 @@ const TooltipEdits = {
 		{
 			items: "endergetic:booflo_vest",
 			text: "Grants 5 extra jumps"
+		},
+		{
+			items: '#c:chains',
+			text: 'Right click a Fence to form a catenary'
 		}
 	]
 }

@@ -1,0 +1,2 @@
+minecraft:instant_health
+adjcore:lesser_instant_health

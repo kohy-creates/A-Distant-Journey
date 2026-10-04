@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "kubejs:block/slate_blahaj"
+		},
+		"facing=east": {
+			"model": "kubejs:block/slate_blahaj",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "kubejs:block/slate_blahaj",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "kubejs:block/slate_blahaj",
+			"y": 270
+		}
+	}
+}

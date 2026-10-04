@@ -1,0 +1,20 @@
+{
+	"id": "advancements",
+	"enabled": false,
+	"icon": {
+		"type": "texture",
+		"texture": "legendarytabs:textures/gui/adv.png",
+		"u": 0,
+		"v": 0
+	},
+	"screen_open_action": {
+		"type": "open_screen",
+		"screen_class": "net.minecraft.client.gui.screens.advancements.AdvancementsScreen",
+		"constructor_args": [
+			"client_advancements"
+		]
+	},
+	"tooltip": "tooltip.legendarytabs.tab.advancements.description",
+	"target_screen_class": "net.minecraft.client.gui.screens.advancements.AdvancementsScreen",
+	"show_tabs_on_screen": false
+}

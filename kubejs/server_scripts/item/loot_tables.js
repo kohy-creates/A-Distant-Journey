@@ -77,6 +77,7 @@ LootJS.modifiers((event) => {
 		'aether_redux:golden_swet_ball_add',
 		'aether_redux:construction_ring',
 		'aether_redux:swet_sugar_no_genesis',
+		'aether_redux:remove_golden_swet_glowstone',
 		'farmersdelight:scavenging_feather',
 		'farmersdelight:scavenging_ham_from_hoglin',
 		'farmersdelight:scavenging_ham_from_pig',
@@ -94,10 +95,12 @@ LootJS.modifiers((event) => {
 		'farmersdelight:straw_from_tall_grass',
 		'farmersdelight:add_onion_to_illagers',
 		'farmersdelight:add_onion_to_zombies',
-		'crittersandcompansions:replace_drowned_flesh',
+		'crittersandcompanions:replace_drowned_flesh',
 		'aether_redux:raw_gravitite',
 		'aether_redux:raw_veridium',
+		'aether_redux:raw_valkyrum',
 		'composite_material:elder_guardian_spike',
+		'composite_material:warden_hand',
 		'ends_delight',
 		'twilightdelight:scavenging_experiment_115_from_ghast',
 		'mynethersdelight:scavenging_onion_from_ghast',
@@ -165,19 +168,23 @@ LootJS.modifiers((event) => {
 				// LootEntry.of('delightful:cooked_goat').limitCount([0, 1]).applyLootingBonus([0, 1]).when(c => c.matchEntity(entity => {
 				// 	entity.isOnFire(true);
 				// })),
-				LootEntry.of('delightful:raw_goat').limitCount([0, 1]).applyLootingBonus([0, 1])
+				LootEntry.of('delightful:raw_goat').limitCount([0, 2]).applyLootingBonus([0, 1])
 			);
 		});
 
 	event.addEntityLootModifier('piglin')
 		.pool(pool => {
 			pool.addLoot(
-				LootEntry.of('farmersdelight:ham').when(c => c.randomChanceWithLooting(0.2, 0.1))
+				LootEntry.of('farmersdelight:ham').when(c => c.randomChanceWithLooting(0.1, 0.1))
 			);
 		});
 
+	event.addEntityLootModifier('pig')
+		.removeLoot('sugar');
+
 	event.addEntityLootModifier('hoglin')
 		.replaceLoot('raw_porkchop', 'mynethersdelight:hoglin_loin', true)
+		.removeLoot('mynethersdelight:hoglin_hide')
 		.pool(pool => {
 			pool.addLoot(
 				LootEntry.of('mynethersdelight:hoglin_hide').when(c => c.randomChanceWithLooting(0.05, 0.01))
@@ -217,6 +224,13 @@ LootJS.modifiers((event) => {
 			);
 		});
 
+	event.addEntityLootModifier('aether:golden_swet')
+		.pool(pool => {
+			pool.addLoot(
+				LootEntry.of('glowstone_dust').limitCount([0, 3]).applyLootingBonus([0, 1])
+			);
+		});
+
 	event.addBlockLootModifier('aether:gravitite_ore')
 		.removeLoot('aether:gravitite_ore')
 		.pool(pool => {
@@ -248,7 +262,7 @@ LootJS.modifiers((event) => {
 	event.addEntityLootModifier('endermite')
 		.pool(pool => {
 			pool.addLoot(
-				LootEntry.of('ends_delight:raw_endermite_meat').limitCount([0, 1])
+				LootEntry.of('ends_delight:raw_ender_mite_meat').limitCount([0, 1])
 			);
 		});
 
@@ -352,7 +366,7 @@ LootJS.modifiers((event) => {
 			pool.addLoot(LootEntry.of('travelersbackpack:warden'));
 		})
 		.pool(pool => {
-			pool.addLoot(LootEntry.of('terra_curio:flashlight').when(c => c.randomChance(1)))
+			pool.addLoot(LootEntry.of('composite_material:warden_hand').limitCount([1, 2]))
 		});
 
 	event.addEntityLootModifier('minecraft:enderman')
@@ -364,16 +378,17 @@ LootJS.modifiers((event) => {
 			pool.addLoot(LootEntry.of('terra_curio:trifold_map').when(c => c.randomChance(0.05)));
 		})
 		.pool(pool => {
-			pool.addLoot(LootEntry.of('ends_delight:enderman_gritle').limitCount([1, 2]).when(c => c.randomChanceWithLooting(0.5, 0.25)).applyLootingBonus([0, 1]));
+			pool.addLoot(LootEntry.of('ends_delight:enderman_gristle').limitCount([1, 2]).when(c => c.randomChanceWithLooting(0.5, 0.25)).applyLootingBonus([0, 1]));
 		});
 
 	event.addEntityLootModifier('minecraft:ghast')
+		.removeLoot('mynethersdelight:ghasta')
 		.pool(pool => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of('travelersbackpack:ghast').when(c => c.randomChanceWithLooting(0.05, 0.025)));
 		})
 		.pool(pool => {
-			pool.addLoot(LootEntry.of('twilightdelight:experiment_115').when(c => c.randomChanceWithLooting(0.1, 0.05) && c.customCondition(fromChapter(3))));
+			pool.addLoot(LootEntry.of('twilightforest:experiment_115').when(c => c.randomChanceWithLooting(0.1, 0.05) && c.customCondition(fromChapter(3))));
 		})
 		.pool(pool => {
 			pool.addLoot(LootEntry.of('mynethersdelight:ghasta').when(c => c.randomChanceWithLooting(0.5, 0.25)));
@@ -838,7 +853,7 @@ LootJS.modifiers((event) => {
 
 	event.addEntityLootModifier(['minecraft:shulker'])
 		.pool(pool => {
-			pool.addLoot(LootEntry.of('terra_curio:shot_put').when(c => c.randomChance(0.12)))
+			pool.addLoot(LootEntry.of('terra_curio:shot_put').when(c => c.randomChanceWithLooting(0.08, 0.02)))
 		})
 		.pool(pool => {
 			LootEntry.of('ends_delight:shulker_meat').when(c => c.randomChanceWithLooting(0.5, 0.5))

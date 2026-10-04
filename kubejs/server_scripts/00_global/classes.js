@@ -27,3 +27,6 @@ const $EnhancedCelestialsRegistry = Java.loadClass("dev.corgitaco.enhancedcelest
 const $PlayerChangedDimensionEvent = Java.loadClass("net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangedDimensionEvent")
 // const $PlayerChangeGameModeEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangeGameModeEvent');
 const $EntityPickupItemEvent = Java.loadClass('net.minecraftforge.event.entity.player.EntityItemPickupEvent');
+const $EntityInteractEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerInteractEvent$EntityInteract');
+const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager');
+const $AgeableMob = Java.loadClass('net.minecraft.world.entity.AgeableMob');

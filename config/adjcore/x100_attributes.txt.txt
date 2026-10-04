@@ -1,0 +1,5 @@
+attributeslib:crit_chance
+attributeslib:crit_damage
+attributeslib:experience_gained
+adjcore:generic.damage_reduction
+adjcore:generic.projectile_damage_reduction

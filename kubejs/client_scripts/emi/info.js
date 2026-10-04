@@ -300,24 +300,7 @@ JEIEvents.information(event => {
 	addInfo("alexscaves:geothermal_vent", "When a liquid is placed under the largest vent size and fully enclosed, the vent will begin to spill out a color of steam. The only liquids that work for it are Acid, Water, and Lava.");
 	addInfo("alexscaves:nuclear_furnace_component", "A multiblock which requires 8 blocks assembled in a 2x2 cube to smelt with uranium rods.");
 	addInfo("alexscaves:nuclear_siren", "Can be powered with Redstone, causing them to emit a very loud wailing sound that can be heard from up to 256 blocks away. This sound remains audible even through blocks");
-	addInfo([
-		"alexscaves:radon_lamp_white",
-		"alexscaves:radon_lamp_orange",
-		"alexscaves:radon_lamp_magenta",
-		"alexscaves:radon_lamp_light_blue",
-		"alexscaves:radon_lamp_yellow",
-		"alexscaves:radon_lamp_lime",
-		"alexscaves:radon_lamp_pink",
-		"alexscaves:radon_lamp_gray",
-		"alexscaves:radon_lamp_light_gray",
-		"alexscaves:radon_lamp_cyan",
-		"alexscaves:radon_lamp_purple",
-		"alexscaves:radon_lamp_blue",
-		"alexscaves:radon_lamp_brown",
-		"alexscaves:radon_lamp_green",
-		"alexscaves:radon_lamp_red",
-		"alexscaves:radon_lamp_black",
-	], "A dyeable light-emitting blocks that are crafted using Bottles of Radon. Can be redyed.");
+	addInfo([/alexscaves:radon_lamp_.*/, /dye_the_world:radon_lamp_.*/,], "A dyeable light-emitting blocks that are crafted using Bottles of Radon. Can be redyed.");
 	addInfo("alexscaves:drain", "Act similarly to a reusable sponge, where they will remove any water above it and any water connected to that.");
 	addInfo("alexscaves:enigmatic_engine", "Dropped from Hullbreakers, and used in a multiblock to build submarines in a 3x3 grid of copper blocks with a 3x2 window of depth glass.");
 	addInfo("alexscaves:moth_ball", "Gloomoth deterrent. 5 can be placed in one block, and can dispel gloomoths from 15 blocks if clustered.");

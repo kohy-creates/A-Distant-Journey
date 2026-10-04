@@ -544,6 +544,94 @@ ItemEvents.tooltip(event => {
 		text.add(1, Text.gray('Uses ').append(Text.blue(String(amount).split('.')[0])).append(Text.gray(' mana')))
 	});
 
+	const colorMap = {
+		creeperhaj: {
+			colors: '55FF55,000000,6A6A6A,FFFFFF',
+			name: 'Creeperhaj!',
+			noPride: true
+		},
+		palestine: {
+			colors: '000000,FFFFFF,009736,EE2A35',
+			name: 'Free Palestine!',
+			noPride: true
+		},
+		trans: {
+			colors: '5BCEFA,F5A9B8,FFFFFF,F5A9B8,5BCEFA',
+			name: 'Trans'
+		},
+		pride: {
+			colors: 'E40303,FF8C00,FFED00,008026,24408E,732982',
+			name: 'LGBTQ+'
+		},
+		intersex: {
+			colors: 'FFD800,7902AA',
+			name: 'Intersex'
+		},
+		bi: {
+			colors: 'D60270,9B4F96,0038A8',
+			name: 'Bisexual'
+		},
+		panhaj: {
+			colors: 'FF218C,FFD800,21B1FF',
+			name: 'Pansexual'
+		},
+		lesbian: {
+			colors: 'D52D00,EF7627,FF9A56,FFFFFF,D162A4,B55690,A30262',
+			name: 'Lesbian'
+		},
+		gay: {
+			colors: 'E40303,FF8C00,FFED00,008026,24408E,732982',
+			name: 'Gay'
+		},
+		enby: {
+			colors: 'FCF434,FFFFFF,9C59D1,000000',
+			name: 'Non-Binary'
+		},
+		gender: {
+			colors: 'FF76A4,FFFFFF,C011D7,000000,2F3CBE',
+			name: 'Gender Fluid'
+		},
+		ace: {
+			colors: '000000,A4A4A4,FFFFFF,810081',
+			name: 'Asexual'
+		},
+		aromantic: {
+			colors: '3DA542,A7D379,FFFFFF,A9A9A9,000000',
+			name: 'Aromantic'
+		},
+		aroace: {
+			colors: 'E28C00,ECCD00,FFFFFF,62AEDC,203856',
+			name: 'Aroace'
+		},
+		iran: {
+			colors: '239F40,FFFFFF,DA0000',
+			name: 'Free Iran!',
+			noPride: true
+		},
+		glowhaj: {
+			colors: '7CFF00,39FF14,7CFF00',
+			name: 'Glows in the dark!',
+			noPride: true
+		},
+	};
+
+	event.addAdvanced(['just_blahaj:blahaj', 'just_blahaj:creeperhaj', 'just_blahaj:panhaj', 'just_blahaj:glowhaj', /kubejs:.*_blahaj/, /just_blahaj:.*_blahaj/], (item, advanced, text) => {
+		text.remove(1);
+		let type = item.id.toString().split(':')[1].split('_')[0];
+		let color = item.id === 'just_blahaj:blahaj' ? Color.DYE.get('light_blue') : Color.DYE.get((type == 'light') ? 'light_gray' : type);
+		if (color) {
+			let hex = (color.getTextColor() & 0xFFFFFF).toString(16).padStart(6, '0');
+			// For some fantastic reason KubeJS refused to allow global.toTitleCase() and global.textReplaceAll() to work.
+			// Stupid ass JS engine...
+			let colorName = Utils.toTitleCase(color.getName().replaceAll('_', ' '));
+			text.add(1, `<color col=${hex}>${colorName}</color>`);
+		}
+		else if (colorMap[type]) {
+			let entry = colorMap[type];
+			text.add(1, `<gradient colors=${entry.colors} hue=false cyclic=true angle=0.0 mode=char frequency=1.0 length=20.0>${entry.name}</gradient>${entry.noPride ? '' : ' §7Pride'}`);
+		}
+	});
+
 	/**
 	 * Adds tooltip lines to one or more items, simplified
 	 *

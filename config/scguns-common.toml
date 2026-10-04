@@ -1,0 +1,250 @@
+
+[common]
+
+	#Properties relating to gameplay
+	[common.gameplay]
+		#If true, enables the draw animation for weapons
+		drawAnimation = true
+		#Multiplier to adjust the capacity of all ammo boxes.
+		#Range: 0.1 ~ 100.0
+		ammoBoxCapacityMultiplier = 2.0
+		#If true, guns will be damageable and can break, coward if you toggle this
+		enableGunDamage = true
+		#If true, gun attachments will be damageable and can break, also a coward
+		enableAttachmentDamage = false
+		#The extra amount to expand an entity's bounding box when checking for projectile collision. Setting this value higher will make it easier to hit entities
+		#Range: 0.0 ~ 1.0
+		growBoundingBoxAmount = 0.3
+		#Enables the check for head shots for players. Projectiles that hit the head of a player will have increased damage.
+		enableHeadShots = false
+		#The value to multiply the damage by if projectile hit the players head
+		#Range: 1.0 ~ 1.7976931348623157E308
+		headShotDamageMultiplier = 1.25
+		#If true, projectiles will ignore leaves when checking for collision
+		ignoreLeaves = false
+		#Sets the strength of knockback when shot by a bullet projectile. Knockback must be enabled for this to take effect. If value is equal to zero, knockback will use default minecraft value
+		#Range: 0.0 ~ 1.0
+		knockbackStrength = 0.15
+		#If true, improves the accuracy of weapons by considering the ping of the player. This has no affect on singleplayer. This will add a little overhead if enabled.
+		improvedHitboxes = false
+		#Damage dealt by the Enemy Guns
+		#Range: 0.0 ~ 1.7976931348623157E308
+		enemyBulletDamage = 4.5
+		#Energy produced per tick by the Polar Generator. Adjust this value to balance the generator's output.
+		#Range: > 1
+		energyProductionRate = 50
+		#If true, guns will toggle ADS mode.
+		toggleADS = false
+		#Global multiplier for all gun damage. 1.0 = normal damage, 0.5 = half damage, 2.0 = double damage. Affects all projectile damage from guns.
+		#Range: 0.01 ~ 100.0
+		globalDamageMultiplier = 1.0
+		#Global multiplier for all turret gun damage. 1.0 = normal damage, 0.5 = half damage, 2.0 = double damage. Affects all projectile damage from turrets.
+		#Range: 0.01 ~ 100.0
+		globalTurretDamageMultiplier = 1.0
+		#If true, the Brass Mask ritual will never spawn villagers. When disabled, it will spawn Dissidents instead based on the spawn chance below.
+		disableVillagerSpawning = true
+		#When villager spawning is disabled, this is the chance (0.0 to 1.0) that a Dissident will spawn. If a Dissident doesn't spawn, nothing will be created from the ritual.
+		#Range: 0.0 ~ 1.0
+		dissidentSpawnChance = 0.1
+		#If true, guns will automatically start reloading when fired with an empty magazine if ammo is available
+		enableAutoReload = true
+		#If true, allows flamethrowers to place fire on blocks
+		enableFirePlacement = false
+		#If true, allows flamethrowers weapons to purify sculk blocks
+		enableSculkPurification = true
+		#The volume for Player Gunfire. Default is 8
+		#Range: 1 ~ 10
+		playerGunfireVolume = 8
+		#The volume for Mob Gunfire. Default is 8
+		#Range: 1 ~ 10
+		mobGunfireVolume = 8
+		#Global multiplier for mob fire rate. 1.0 = normal speed, 0.5 = faster (half delay), 2.0 = slower (double delay). Lower values = faster shooting.
+		#Range: 0.1 ~ 5.0
+		mobFireRateMultiplier = 1.0
+		#Multiplier for delay between bursts. Higher = longer delays between bursts. 1.0 = normal, 2.0 = double delay.
+		#Range: 0.1 ~ 5.0
+		mobBurstDelayMultiplier = 1.0
+		#Global multiplier for mob gun damage. 1.0 = normal damage, 0.5 = half damage, 2.0 = double damage. Affects all projectile damage from mobs.
+		#Range: 0.01 ~ 100.0
+		mobGunDamageMultiplier = 1.0
+		#Chance (0.0 to 1.0) that Cog enemies will spawn a Signal Beacon on death. Set to 0.0 to disable beacon spawning from Cog deaths.
+		#Range: 0.0 ~ 1.0
+		cogBeaconSpawnChance = 0.0
+
+		#Properties related to gun griefing
+		[common.gameplay.griefing]
+			#If enabled, allows block removal on explosions
+			enableBlockRemovalOnExplosions = false
+			#If enabled, allows block removal on explosions from mob weapons. Only applies if enableBlockRemovalOnExplosions is also true
+			enableMobExplosionBlockRemoval = false
+			#If enabled, allows guns to shoot out glass and other fragile objects
+			enableGlassBreaking = false
+			#If enabled, fragile blocks will drop their loot when broken
+			fragileBlockDrops = true
+			#The base chance that a fragile block is broken when impacted by a bullet. The hardness of a block will scale this value; the harder the block, the lower the final calculated chance will be.
+			#Range: 0.0 ~ 1.0
+			fragileBlockBreakChance = 1.0
+			#If true, allows guns enchanted with Fire Starter to light and spread fires on blocks
+			setFireToBlocks = false
+			#If true, allows heavy rounds to break blocks
+			enableBlockBreaking = false
+			#If true, allows beam weapons to mine blocks
+			enableBeamMining = true
+
+		[common.gameplay.gameplay]
+			#Set to false to disable the spawning of casing items when firing guns.
+			spawnCasings = false
+
+	#Properties relating to network
+	[common.network]
+		#The distance players need to be within to be able to track new projectiles trails. Higher values means you can see projectiles from that start from further away.
+		#Range: 1.0 ~ 1.7976931348623157E308
+		projectileTrackingRange = 200.0
+
+	#Gun Mob Spawning Configuration
+	[common.gunner_config]
+		#If enabled, mobs will have a chance to spawn with guns.
+		gunnerMobSpawning = true
+		#Base chance for progression-based gunner mobs to spawn (0.0 = never, 1.0 = always).
+		#This is the spawn chance on NORMAL difficulty. Thematic mobs use their own config.
+		#Range: 0.0 ~ 1.0
+		gunnerSpawnChance = 0.3
+		#If enabled, spawn chances scale with game difficulty.
+		#PEACEFUL: 50% of base chance, EASY: 75%, NORMAL: 100%, HARD: 150%
+		scaleToDifficulty = true
+		#If enabled, gunner mobs will have a chance to spawn as Elites with better armor.
+		eliteSpawning = true
+		#Base chance for Elite Gunners to spawn (0.0 = never, 1.0 = always).
+		#This is the spawn chance on NORMAL difficulty.
+		#Range: 0.0 ~ 1.0
+		eliteChance = 0.2
+
+	#Properties relating to mob aggression from gunfire
+	[common.aggro_mobs]
+		#If true, hostile mobs may become aggressive when guns are fired nearby.
+		enabled = true
+		#Range in which hostile mobs may detect and react to unsilenced gunfire.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		unsilencedRange = 20.0
+		#Chance (0.0 to 1.0) that a hostile mob will target the shooter when detecting gunfire.
+		#Range: 0.0 ~ 1.0
+		aggroChance = 0.25
+		#Chance (0.0 to 1.0) that nearby mobs of the same type will also aggro when one becomes hostile.
+		#Range: 0.0 ~ 1.0
+		chainAggroChance = 0.5
+		#Radius in which chain aggro effects can spread to similar mobs.
+		#Range: 0.0 ~ 32.0
+		chainAggroRadius = 8.0
+		#LEGACY: Entities that will not aggro from gunfire. Use the 'scguns:aggro_from_guns' entity tag for better mod compatibility.
+		exemptMobs = []
+
+	#Properties relating to mob fleeing
+	[common.fleeing_mobs]
+		#If true, nearby mobs will flee from the firing of guns.
+		enabled = false
+		#Any mobs within a sphere of this radius will flee from the shooter of an unsilenced gun.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		unsilencedRange = 20.0
+		#Any mobs within a sphere of this radius will flee from the shooter of a silenced gun.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		silencedRange = 5.0
+		#LEGACY: Additional entities that will flee from gunshots. Animals are automatically detected. Use the 'scguns:fleeing_from_guns' entity tag instead for better mod compatibility.
+		fleeingEntities = ["minecraft:villager"]
+
+	#Properties relating to grenades
+	[common.grenades]
+		#The max distance which the explosion is effective to
+		#Range: 0.0 ~ 1.7976931348623157E308
+		explosionRadius = 5.0
+
+	#Properties relating to stun grenades
+	[common.stun_grenades]
+
+		#Blinding properties of stun grenades
+		[common.stun_grenades.blind]
+			#If true, hostile mobs will be unable to target entities while they are blinded by a stun grenade.
+			blindMobs = true
+
+			[common.stun_grenades.blind.effect_criteria]
+				#Grenade must be no more than this many meters away to have an effect.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				radius = 15.0
+				#Effect will have this duration (in ticks) if the grenade is directly at the player's eyes while looking directly at it.
+				#Range: > 0
+				durationMax = 220
+				#Effect will have this duration (in ticks) if the grenade is the maximum distance from the player's eyes while looking directly at it.
+				#Range: > 0
+				durationMin = 10
+				#Angle between the eye/looking direction and the eye/grenade direction must be no more than half this many degrees to have an effect.
+				#Range: 0.0 ~ 360.0
+				angleEffect = 170.0
+				#After duration is attenuated by distance, it will be further attenuated depending on the angle (in degrees) between the eye/looking direction and the eye/grenade direction. This is done by multiplying it by 1 (no attenuation) if the angle is 0; and by this value if the angle is the maximum within the angle of effect.
+				#Range: 0.0 ~ 1.0
+				angleAttenuationMax = 0.75
+				#If true, the effect is only applied if the line between the eyes and the grenade does not intersect any non-liquid blocks with an opacity greater than 0.
+				raytraceOpaqueBlocks = true
+
+		#Deafening properties of stun grenades
+		[common.stun_grenades.deafen]
+			#If true, peaceful mobs will panic upon being deafened by a stun grenade.
+			panicMobs = true
+
+			[common.stun_grenades.deafen.effect_criteria]
+				#Grenade must be no more than this many meters away to have an effect.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				radius = 15.0
+				#Effect will have this duration (in ticks) if the grenade is directly at the player's eyes while looking directly at it.
+				#Range: > 0
+				durationMax = 280
+				#Effect will have this duration (in ticks) if the grenade is the maximum distance from the player's eyes while looking directly at it.
+				#Range: > 0
+				durationMin = 100
+				#Angle between the eye/looking direction and the eye/grenade direction must be no more than half this many degrees to have an effect.
+				#Range: 0.0 ~ 360.0
+				angleEffect = 360.0
+				#After duration is attenuated by distance, it will be further attenuated depending on the angle (in degrees) between the eye/looking direction and the eye/grenade direction. This is done by multiplying it by 1 (no attenuation) if the angle is 0; and by this value if the angle is the maximum within the angle of effect.
+				#Range: 0.0 ~ 1.0
+				angleAttenuationMax = 0.75
+				#If true, the effect is only applied if the line between the eyes and the grenade does not intersect any non-liquid blocks with an opacity greater than 0.
+				raytraceOpaqueBlocks = false
+
+	#Properties relating to projectile spread
+	[common.projectile_spread]
+		#The amount of time in milliseconds before logic to apply spread is skipped. The value indicates a reasonable amount of time before a weapon is considered stable again.
+		#Range: 0 ~ 1000
+		spreadThreshold = 300
+		#The amount of times a player has to shoot within the spread threshold before the maximum amount of spread is applied. Setting the value higher means it will take longer for the spread to be applied.
+		#Range: > 1
+		maxCount = 10
+
+	#Properties relating to ExoSuit Core capacities
+	[common.exosuit_cores]
+		#Energy capacity for Basic ExoSuit Core
+		#Range: 1000 ~ 100000
+		basicCoreCapacity = 30000
+		#Energy capacity for Advanced ExoSuit Core
+		#Range: 1000 ~ 100000
+		advancedCoreCapacity = 60000
+		#Energy capacity for Elite ExoSuit Core
+		#Range: 1000 ~ 100000
+		eliteCoreCapacity = 70000
+
+	#Mini-Raid Configuration
+	[common.raids]
+		#If enabled, mini-raids can spawn at night based on player progression.
+		raidsEnabled = false
+		#Chance each night for a raid to spawn near a valid player (0.0 = never, 1.0 = always).
+		#Set to 0.0 to effectively disable raids without turning off the system entirely.
+		#Range: 0.0 ~ 1.0
+		nightlyRaidChance = 0.2
+		#Minimum number of days that must pass between natural raid spawns.
+		#Set to 0 to allow raids every night (if chance succeeds).
+		#Set to 1 to allow raids every other night.
+		#Set to 2 or higher to space out raids further.
+		#Range: 0 ~ 100
+		minDaysBetweenRaids = 2
+		#Time in minutes before a raid automatically fails if the boss is not defeated.
+		#Default: 10 minutes
+		#Range: 0 ~ 60
+		raidTimeoutMinutes = 20
+

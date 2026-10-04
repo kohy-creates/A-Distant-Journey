@@ -315,6 +315,17 @@ const RemovedItems = {
 		/botania:pattern_/,
 		'botania:placeholder',
 		'botania:lexicon',
+		'botania:pinkinator',
+		'window_box:bouquet',
+		'window_box:topsy_tulip',
+		'window_box:floating_topsy_tulip',
+		'window_box:snapdresson',
+		'window_box:floating_snapdresson',
+		'window_box:dispelagonium',
+		'window_box:floating_dispelagonium',
+		'window_box:candysnuft',
+		'window_box:floating_candysnuft',
+		/window_box:.*chthonic_yew.*/,
 
 		'terra_curio:magic_quiver',
 		'terra_curio:molten_quiver',
@@ -500,16 +511,6 @@ const RemovedItems = {
 		'evilcraft:broom_part',
 		'evilcraft:vengeance_pickaxe',
 
-		'window_box:bouquet',
-		'window_box:topsy_tulip',
-		'window_box:floating_topsy_tulip',
-		'window_box:snapdresson',
-		'window_box:floating_snapdresson',
-		'window_box:dispelagonium',
-		'window_box:floating_dispelagonium',
-		'window_box:candysnuft',
-		'window_box:floating_candysnuft',
-
 		/rehooked/,
 
 		'majruszsdifficulty:wither_sword',
@@ -589,7 +590,7 @@ const RemovedItems = {
 		'v_slab_compat:vinery/dirt_vertical_slab',
 		'v_slab_compat:vinery/dirt_path_vertical_slab',
 		'vinery:straw_hat',
-		
+
 		'nethervinery:crimson_fermentation_barrel',
 		'nethervinery:crimson_grapevine_pot',
 		'nethervinery:crimson_apple_press',

@@ -8,5 +8,6 @@
 		"south": "kubejs:block/legacy/crafting_table_side",
 		"up": "kubejs:block/legacy/crafting_table_top",
 		"west": "kubejs:block/legacy/crafting_table_front"
-	}
+	},
+	"render_type": "minecraft:solid"
 }
