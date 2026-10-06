@@ -6,3 +6,4 @@ NetworkEvents.dataReceived('get_world_size_var', event => {
 		});
 	}
 });
+

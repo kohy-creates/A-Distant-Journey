@@ -229,7 +229,7 @@ const EntityModifications = {
 				}
 
 				case 'twilightforest:skeleton_druid': {
-					entity.setItemSlot("mainhand", 'simplyswords:mythicmetals_compat/bronze/bronze_scythe');
+					entity.setItemSlot("mainhand", 'mythicmetals:bronze_Hoe');
 					break;
 				}
 			}

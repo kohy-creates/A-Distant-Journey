@@ -90,27 +90,6 @@ ItemEvents.modification(event => {
 				break;
 			}
 		}
-
-		// Simply Swords suppot
-		const simplySwordsSuffixes = [
-			'_katana',
-			'_spear',
-			'_glaive',
-			'_warglaive',
-			'_chakram',
-			'_scythe'
-		];
-
-		const baseMaterial = type.split(':')[1];
-		const compatPath = `simplyswords:mythicmetals_compat/${baseMaterial}/${baseMaterial}_`;
-
-		simplySwordsSuffixes.forEach(suffix => {
-			const simpleId = `simplyswords:${baseMaterial}${suffix}`;
-			const compatId = `${compatPath}${suffix.replace(/^_/, '')}`;
-
-			if (Item.exists(simpleId)) tools.push(simpleId);
-			if (Item.exists(compatId)) tools.push(compatId);
-		});
 		return tools;
 	}
 

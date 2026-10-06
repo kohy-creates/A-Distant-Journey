@@ -281,12 +281,30 @@ StartupEvents.registry('item', registry => {
 	function registerArmorSet(names, type, maxDamage, rarity) {
 		let pieces = ['helmet', 'chestplate', 'leggings', 'boots'];
 		for (let i = 0; i < pieces.length; i++) {
-			registry.create(`${type}_${pieces[i]}`, pieces[i])
+			let piece = registry.create(`${type}_${pieces[i]}`, pieces[i])
 				.unstackable()
-				.maxDamage(maxDamage)
 				.tier(type)
 				.displayName(names[i])
 				.rarity(global.getOrDefault(rarity, 'common'));
+
+			if (maxDamage) {
+				piece.maxDamage(maxDamage);
+			}
+		}
+	}
+
+	function registerToolset(names, type, maxDamage, rarity) {
+		let pieces = ['sword', 'pickaxe', 'axe', 'shovel', 'hoe'];
+		for (let i = 0; i < pieces.length; i++) {
+			let piece = registry.create(`${type}_${pieces[i]}`, pieces[i])
+				.unstackable()
+				.tier(type)
+				.displayName(names[i])
+				.rarity(global.getOrDefault(rarity, 'common'));
+
+			if (maxDamage) {
+				piece.maxDamage(maxDamage);
+			}
 		}
 	}
 
@@ -331,13 +349,6 @@ StartupEvents.registry('item', registry => {
 		'Dark Leggings',
 		'Dark Boots'
 	], 'dark', 300, 'rare');
-
-	registerArmorSet([
-		'Ancient Plate Helmet',
-		'Ancient Plate Chestplate',
-		'Ancient Plate Leggings',
-		'Ancient Plate Boots'
-	], 'legacy_plate', 300);
 
 	// Upgraded Sand Paper
 	registry.create('soul_sand_paper', 'create:sandpaper')
@@ -1451,165 +1462,80 @@ StartupEvents.registry('item', registry => {
 		.displayName('Ancient Music Disc')
 		.tag("music_discs")
 
-	registry.create('legacy/wood_sword', 'sword')
-		.displayName('Ancient Wooden Sword')
-		.tier('legacy_wood');
+	registerToolset([
+		'Ancient Wooden Sword',
+		'Ancient Wooden Pickaxe',
+		'Ancient Wooden Axe',
+		'Ancient Wooden Shovel',
+		'Ancient Wooden Hoe'
+	], 'legacy/wood');
 
-	registry.create('legacy/wood_pickaxe', 'pickaxe')
-		.displayName('Ancient Wooden Pickaxe')
-		.tier('legacy_wood');
+	registerToolset([
+		'Ancient Stone Sword',
+		'Ancient Stone Pickaxe',
+		'Ancient Stone Axe',
+		'Ancient Stone Shovel',
+		'Ancient Stone Hoe'
+	], 'legacy/stone');
 
-	registry.create('legacy/wood_axe', 'axe')
-		.displayName('Ancient Wooden Axe')
-		.tier('legacy_wood');
+	registerToolset([
+		'Ancient Iron Sword',
+		'Ancient Iron Pickaxe',
+		'Ancient Iron Axe',
+		'Ancient Iron Shovel',
+		'Ancient Iron Hoe'
+	], 'legacy/iron');
 
-	registry.create('legacy/wood_shovel', 'shovel')
-		.displayName('Ancient Wooden Shovel')
-		.tier('legacy_wood');
+	registerToolset([
+		'Ancient Gold Sword',
+		'Ancient Gold Pickaxe',
+		'Ancient Gold Axe',
+		'Ancient Gold Shovel',
+		'Ancient Gold Hoe'
+	], 'legacy/gold');
 
-	registry.create('legacy/wood_hoe', 'hoe')
-		.displayName('Ancient Wooden Hoe')
-		.tier('legacy_wood');
+	registerToolset([
+		'Ancient Diamond Sword',
+		'Ancient Diamond Pickaxe',
+		'Ancient Diamond Axe',
+		'Ancient Diamond Shovel',
+		'Ancient Diamond Hoe'
+	], 'legacy/diamond');
 
-	registry.create('legacy/stone_sword', 'sword')
-		.displayName('Ancient Stone Sword')
-		.tier('legacy_stone');
+	registerArmorSet([
+		'Ancient Plate Helmet',
+		'Ancient Plate Chestplate',
+		'Ancient Plate Leggings',
+		'Ancient Plate Boots'
+	], 'legacy/plate');
 
-	registry.create('legacy/stone_pickaxe', 'pickaxe')
-		.displayName('Ancient Stone Pickaxe')
-		.tier('legacy_stone');
+	registerArmorSet([
+		'Ancient Iron Helmet',
+		'Ancient Iron Chestplate',
+		'Ancient Iron Leggings',
+		'Ancient Iron Boots'
+	], 'legacy/iron');
 
-	registry.create('legacy/stone_axe', 'axe')
-		.displayName('Ancient Stone Axe')
-		.tier('legacy_stone');
+	registerArmorSet([
+		'Ancient Chainmail Helmet',
+		'Ancient Chainmail Chestplate',
+		'Ancient Chainmail Leggings',
+		'Ancient Chainmail Boots'
+	], 'legacy/chainmail');
 
-	registry.create('legacy/stone_shovel', 'shovel')
-		.displayName('Ancient Stone Shovel')
-		.tier('legacy_stone');
+	registerArmorSet([
+		'Ancient Gold Helmet',
+		'Ancient Gold Chestplate',
+		'Ancient Gold Leggings',
+		'Ancient Gold Boots'
+	], 'legacy/gold');
 
-	registry.create('legacy/stone_hoe', 'hoe')
-		.displayName('Ancient Stone Hoe')
-		.tier('legacy_stone');
-
-	registry.create('legacy/iron_sword', 'sword')
-		.displayName('Ancient Iron Sword')
-		.tier('legacy_iron');
-
-	registry.create('legacy/iron_pickaxe', 'pickaxe')
-		.displayName('Ancient Iron Pickaxe')
-		.tier('legacy_iron');
-
-	registry.create('legacy/iron_axe', 'axe')
-		.displayName('Ancient Iron Axe')
-		.tier('legacy_iron');
-
-	registry.create('legacy/iron_shovel', 'shovel')
-		.displayName('Ancient Iron Shovel')
-		.tier('legacy_iron');
-
-	registry.create('legacy/iron_hoe', 'hoe')
-		.displayName('Ancient Iron Hoe')
-		.tier('legacy_iron');
-
-	registry.create('legacy/gold_sword', 'sword')
-		.displayName('Ancient Golden Sword')
-		.tier('legacy_gold');
-
-	registry.create('legacy/gold_pickaxe', 'pickaxe')
-		.displayName('Ancient Golden Pickaxe')
-		.tier('legacy_gold');
-
-	registry.create('legacy/gold_axe', 'axe')
-		.displayName('Ancient Golden Axe')
-		.tier('legacy_gold');
-
-	registry.create('legacy/gold_hoe', 'hoe')
-		.displayName('Ancient Golden Hoe')
-		.tier('legacy_gold');
-
-	registry.create('legacy/diamond_sword', 'sword')
-		.displayName('Ancient Diamond Sword')
-		.tier('legacy_diamond');
-
-	registry.create('legacy/diamond_pickaxe', 'pickaxe')
-		.displayName('Ancient Diamond Pickaxe')
-		.tier('legacy_diamond');
-
-	registry.create('legacy/diamond_axe', 'axe')
-		.displayName('Ancient Diamond Axe')
-		.tier('legacy_diamond');
-
-	registry.create('legacy/diamond_shovel', 'shovel')
-		.displayName('Ancient Diamond Shovel')
-		.tier('legacy_diamond');
-
-	registry.create('legacy/diamond_hoe', 'hoe')
-		.displayName('Ancient Diamond Hoe')
-		.tier('legacy_diamond');
-
-	registry.create('legacy/chainmail_helmet', 'helmet')
-		.displayName('Ancient Chainmail Helmet')
-		.tier('legacy_chainmail');
-
-	registry.create('legacy/chainmail_chestplate', 'chestplate')
-		.displayName('Ancient Chainmail Chestplate')
-		.tier('legacy_chainmail');
-
-	registry.create('legacy/chainmail_leggings', 'leggings')
-		.displayName('Ancient Chainmail Leggings')
-		.tier('legacy_chainmail');
-
-	registry.create('legacy/chainmail_boots', 'boots')
-		.displayName('Ancient Chainmail Boots')
-		.tier('legacy_chainmail');
-
-	registry.create('legacy/iron_helmet', 'helmet')
-		.displayName('Ancient Iron Helmet')
-		.tier('legacy_iron');
-
-	registry.create('legacy/iron_chestplate', 'chestplate')
-		.displayName('Ancient Iron Chestplate')
-		.tier('legacy_iron');
-
-	registry.create('legacy/iron_leggings', 'leggings')
-		.displayName('Ancient Iron Leggings')
-		.tier('legacy_iron');
-
-	registry.create('legacy/iron_boots', 'boots')
-		.displayName('Ancient Iron Boots')
-		.tier('legacy_iron');
-
-	registry.create('legacy/gold_helmet', 'helmet')
-		.displayName('Ancient Golden Helmet')
-		.tier('legacy_gold');
-
-	registry.create('legacy/gold_chestplate', 'chestplate')
-		.displayName('Ancient Golden Chestplate')
-		.tier('legacy_gold');
-
-	registry.create('legacy/gold_leggings', 'leggings')
-		.displayName('Ancient Golden Leggings')
-		.tier('legacy_gold');
-
-	registry.create('legacy/gold_boots', 'boots')
-		.displayName('Ancient Golden Boots')
-		.tier('legacy_gold');
-
-	registry.create('legacy/diamond_helmet', 'helmet')
-		.displayName('Ancient Diamond Helmet')
-		.tier('legacy_diamond');
-
-	registry.create('legacy/diamond_chestplate', 'chestplate')
-		.displayName('Ancient Diamond Chestplate')
-		.tier('legacy_diamond');
-
-	registry.create('legacy/diamond_leggings', 'leggings')
-		.displayName('Ancient Diamond Leggings')
-		.tier('legacy_diamond');
-
-	registry.create('legacy/diamond_boots', 'boots')
-		.displayName('Ancient Diamond Boots')
-		.tier('legacy_diamond');
+	registerArmorSet([
+		'Ancient Diamond Helmet',
+		'Ancient Diamond Chestplate',
+		'Ancient Diamond Leggings',
+		'Ancient Diamond Boots'
+	], 'legacy/diamond');
 });
 
 ItemEvents.armorTierRegistry(event => {
@@ -1663,7 +1589,7 @@ ItemEvents.armorTierRegistry(event => {
 		tier.knockbackResistance = 0
 	});
 
-	event.add('legacy_iron', tier => {
+	event.add('legacy/iron', tier => {
 		tier.durabilityMultiplier = 15
 		tier.slotProtections = [0, 1, 1, 1]
 		tier.enchantmentValue = 9
@@ -1673,7 +1599,7 @@ ItemEvents.armorTierRegistry(event => {
 		tier.knockbackResistance = 0
 	});
 
-	event.add('legacy_chainmail', tier => {
+	event.add('legacy/chainmail', tier => {
 		tier.durabilityMultiplier = 15
 		tier.slotProtections = [0, 1, 1, 1]
 		tier.enchantmentValue = 12
@@ -1682,7 +1608,7 @@ ItemEvents.armorTierRegistry(event => {
 		tier.knockbackResistance = 0
 	});
 
-	event.add('legacy_diamond', tier => {
+	event.add('legacy/diamond', tier => {
 		tier.durabilityMultiplier = 33
 		tier.slotProtections = [0, 1, 1, 1]
 		tier.enchantmentValue = 10
@@ -1692,12 +1618,22 @@ ItemEvents.armorTierRegistry(event => {
 		tier.knockbackResistance = 0
 	});
 
-	event.add('legacy_gold', tier => {
+	event.add('legacy/gold', tier => {
 		tier.durabilityMultiplier = 7
 		tier.slotProtections = [0, 1, 1, 1]
 		tier.enchantmentValue = 25
 		// tier.equipSound = 'adj:empty'
 		tier.repairIngredient = 'kubejs:legacy/gold_ingot'
+		tier.toughness = 0
+		tier.knockbackResistance = 0
+	});
+
+	event.add('legacy/plate', tier => {
+		tier.durabilityMultiplier = 15
+		tier.slotProtections = [0, 1, 1, 1]
+		tier.enchantmentValue = 8
+		// tier.equipSound = 'adj:empty'
+		tier.repairIngredient = 'kubejs:legacy/iron_ingot'
 		tier.toughness = 0
 		tier.knockbackResistance = 0
 	});
@@ -1713,7 +1649,7 @@ ItemEvents.toolTierRegistry(event => {
 		tier.repairIngredient = 'aether:holystone'
 	});
 
-	event.add('legacy_iron', tier => {
+	event.add('legacy/iron', tier => {
 		tier.uses = 250
 		tier.speed = 6
 		tier.attackDamageBonus = 2
@@ -1722,7 +1658,7 @@ ItemEvents.toolTierRegistry(event => {
 		tier.repairIngredient = 'kubejs:legacy/iron_ingot'
 	});
 
-	event.add('legacy_wood', tier => {
+	event.add('legacy/wood', tier => {
 		tier.uses = 59
 		tier.speed = 2
 		tier.attackDamageBonus = 0
@@ -1731,7 +1667,7 @@ ItemEvents.toolTierRegistry(event => {
 		tier.repairIngredient = '#adj:legacy/planks'
 	});
 
-	event.add('legacy_stone', tier => {
+	event.add('legacy/stone', tier => {
 		tier.uses = 131
 		tier.speed = 4
 		tier.attackDamageBonus = 1
@@ -1740,7 +1676,7 @@ ItemEvents.toolTierRegistry(event => {
 		tier.repairIngredient = 'kubejs:legacy/cobblestone'
 	});
 
-	event.add('legacy_gold', tier => {
+	event.add('legacy/gold', tier => {
 		tier.uses = 32
 		tier.speed = 12
 		tier.attackDamageBonus = 0
@@ -1749,21 +1685,12 @@ ItemEvents.toolTierRegistry(event => {
 		tier.repairIngredient = 'kubejs:legacy/gold_ingot'
 	});
 
-	event.add('legacy_diamond', tier => {
+	event.add('legacy/diamond', tier => {
 		tier.uses = 1561
 		tier.speed = 8
 		tier.attackDamageBonus = 3
 		tier.level = 3
 		tier.enchantmentValue = 10
 		tier.repairIngredient = 'kubejs:legacy/diamond'
-	});
-
-	event.add('legacy_plate', tier => {
-		tier.uses = 1561
-		tier.speed = 8
-		tier.attackDamageBonus = 3
-		tier.level = 3
-		tier.enchantmentValue = 8
-		tier.repairIngredient = 'kubejs:legacy/iron_ingot'
 	});
 });

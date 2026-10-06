@@ -56,8 +56,6 @@ global.replaceItemsInAllLoot = {
 	'majruszsdifficulty:golden_bandage': 'kubejs:golden_bandage',
 	'alexsmobs:maggot': 'born_in_chaos_v1:corpse_maggot',
 	'aether:skyroot_stick': 'stick',
-	'rubinated_nether:ruby': 'rediscovered:ruby',
-	'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
 	'twilightforest:charm_of_keeping_1': 'twilightforest:charm_of_life_1',
 	'create:copper_nugget': 'mythicmetals:copper_nugget',
 	'minecraft:chest': 'quark:oak_chest',

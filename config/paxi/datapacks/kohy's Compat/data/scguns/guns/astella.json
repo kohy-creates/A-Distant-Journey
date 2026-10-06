@@ -1,0 +1,87 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.2,
+      "yOffset": 5.2,
+      "zOffset": -20.0,
+      "textureLocation": "muzzle_flash_5",
+      "spawnParticles": true,
+      "particleType": "minecraft:small_flame",
+      "particleCount": 8,
+      "particleSpread": 0.25,
+      "particleRingRadius": 1.0
+    }
+  },
+  "general": {
+    "weaponType": "sniper",
+    "alwaysSpread": false,
+    "fireMode": "scguns:semi_automatic",
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "rate": 26,
+    "recoilAngle": 6.0,
+    "recoilKick": 4.0,
+    "spread": 0.0,
+    "meleeDamage": 4.0,
+    "meleeCooldownTicks": 20,
+    "meleeReach": 4.5,
+    "hotBarrelRate": 37,
+    "criticalChance": 0.05,
+    "playerKnockBack": true,
+    "playerKnockBackStrength": 0.45
+  },
+  "modules": {
+    "attachments": {
+      "barrel": {
+        "yOffset": 4.6,
+        "zOffset": -21.0
+      },
+      "scope": {
+        "size": 0.7,
+        "yOffset": 6.5,
+        "zOffset": 5.0
+      },
+      "stock": {
+        "scale": 0.0
+      },
+      "magazine": {
+        "scale": 0.0
+      }
+    },
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 6.8,
+      "zOffset": 0.75
+    }
+  },
+  "projectile": {
+    "knockbackStrength": 1.1,
+    "advantage": "scguns:heavy",
+    "damage": 45.0,
+    "armorPen": 6.0,
+    "ejectsCasing": true,
+    "gravity": false  ,
+    "item": "scguns:krahg_round",
+    "casingType": "scguns:large_brass_casing",
+    "casingParticle": "scguns:brass_casing",
+    "life": 100,
+    "size": 0.1,
+    "speed": 14.0,
+    "trailLengthMultiplier": 2.0
+  },
+  "reloads": {
+    "emptyMagTimer": 10,
+    "maxAmmo": 7  ,
+    "reloadItem": "scguns:krahg_round",
+    "reloadTimer": 30,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns:item.scorched_sniper.fire",
+    "fire": "scguns:item.scorched_sniper.fire",
+    "reload": "scguns:item.gauss.reload",
+    "silencedFire": "scguns:item.bruiser.silenced_fire",
+    "flyby": "scguns:bullet.flyby1"
+  }
+}

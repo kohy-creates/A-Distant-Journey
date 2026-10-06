@@ -78,7 +78,6 @@ ServerEvents.recipes((event) => {
 		'ars_additions:ender_source_jar',
 		'@nameless_trinkets',
 		'@ftbquests',
-		'simplyswords:tainted_relic',
 		'ars_nouveau:ring_of_lesser_discount',
 		'ars_nouveau:ring_of_greater_discount',
 		'ars_nouveau:ring_of_potential',
@@ -286,7 +285,6 @@ ServerEvents.recipes((event) => {
 		'supplementaries:lumisene_bucket',
 		/sortilege:.*_staff/,
 		'naturalist:teddy_bear',
-		'simplyswords:unique_melting',
 		'neapolitan:banana/dried_banana',
 		'mynethersdelight:bread_from_smelting',
 		'born_in_chaos_v1:fried_maggot_k',
@@ -317,9 +315,6 @@ ServerEvents.recipes((event) => {
 		'beachparty:mini_fridge_freezing/powder_snow_bucket',
 		'beachparty:mini_fridge_freezing/blue_ice',
 		'beachparty:mini_fridge_freezing/packed_ice',
-		'rubinated_nether:ruby_from_ruby_shard',
-		'rubinated_nether:ruby_from_ruby_block',
-		'rubinated_nether:ruby_from_molten_ruby',
 		'cataclysm:mech_eye',
 		'aether:skyroot_lectern',
 		'create:crafting/appliances/slime_ball',
@@ -431,8 +426,6 @@ ServerEvents.recipes((event) => {
 			'hybrid_aquatic:shark_tooth': 'alexsmobs:shark_tooth',
 			'botania:abtruse_platform': 'ars_nouveau:mirrorweave',
 			'botania:spectral_platform': 'ars_nouveau:falseweave',
-			'rubinated_nether:ruby': 'rediscovered:ruby',
-			'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
 			'twilightforest:raw_venison': 'naturalist:venison',
 			'twilightforest:cooked_venison': 'naturalist:cooked_venison',
 			'twilightforest:fiery_tears': 'twilightforest:fiery_blood',
@@ -455,8 +448,6 @@ ServerEvents.recipes((event) => {
 			'farmersdelight:rope': 'supplementaries:rope',
 			"totem_of_undying": "twilightforest:charm_of_life_1",
 			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
-			'rubinated_nether:ruby': 'rediscovered:ruby',
-			'rubinated_nether:ruby_block': 'rediscovered:ruby_block',
 			'aether:skyroot_stick': 'stick',
 		}
 	};
@@ -600,18 +591,6 @@ ServerEvents.recipes((event) => {
 		'20x kubejs:bandage',
 		['majruszsdifficulty:cloth']
 	).id('adj:bandage');
-
-	event.shaped(
-		'rediscovered:ruby',
-		[
-			'SSS',
-			'SSS',
-			'SSS'
-		],
-		{
-			S: 'rubinated_nether:ruby_shard'
-		}
-	).id('adj:ruby_from_shards');
 
 	// Thank you RF for inspo
 	event.smelting('born_in_chaos_v1:scorched_log', '#logs_that_burn', 0.1, 500).id('adj:scorched_log');
@@ -2940,7 +2919,7 @@ ServerEvents.recipes((event) => {
 		'unusualend:chorus_grass_dye',
 		'unusualend:tendrils_dye',
 		'unusualend:bush_dye',
-		
+
 	];
 	removedDyeRecipes.forEach(id => {
 		event.remove({ id: id });
@@ -8900,16 +8879,18 @@ ServerEvents.recipes((event) => {
 	oreDustRecipes('kubejs:tin_dust', 'mythicmetals:raw_tin', 'mythicmetals:tin_ingot')
 
 	// ADJ block sets
-	function blockSet(block) {
-		const b = `kubejs:${block}`;
+	function blockSet(block, noStoneCutting) {
+		let b = `kubejs:${block}`;
 
-		event.shaped(`6x ${b}_slab`, ['AAA'], { A: b }).id(`adj:${block}_slab`);
-		event.shaped(`4x ${b}_stairs`, ['A  ', 'AA ', 'AAA'], { A: b }).id(`adj:${block}_stairs`);
-		event.shaped(`6x ${b}_wall`, ['AAA', 'AAA'], { A: b }).id(`adj:${block}_wall`);
+		if (Item.exists(`${b}_slab`)) event.shaped(`6x ${b}_slab`, ['AAA'], { A: b }).id(`adj:${block}_slab`);
+		if (Item.exists(`${b}_stairs`)) event.shaped(`4x ${b}_stairs`, ['A  ', 'AA ', 'AAA'], { A: b }).id(`adj:${block}_stairs`);
+		if (Item.exists(`${b}_wall`)) event.shaped(`6x ${b}_wall`, ['AAA', 'AAA'], { A: b }).id(`adj:${block}_wall`);
 
-		event.stonecutting(`2x ${b}_slab`, b).id(`adj:${block}_slab_stonecutting`);
-		event.stonecutting(`${b}_stairs`, b).id(`adj:${block}_stairs_stonecutting`);
-		event.stonecutting(`${b}_wall`, b).id(`adj:${block}_wall_stonecutting`);
+		if (!noStoneCutting) {
+			if (Item.exists(`${b}_slab`)) event.stonecutting(`2x ${b}_slab`, b).id(`adj:${block}_slab_stonecutting`);
+			if (Item.exists(`${b}_stairs`)) event.stonecutting(`${b}_stairs`, b).id(`adj:${block}_stairs_stonecutting`);
+			if (Item.exists(`${b}_wall`)) event.stonecutting(`${b}_wall`, b).id(`adj:${block}_wall_stonecutting`);
+		}
 	}
 
 	function fullBlockSet(base, polished, bricks) {
@@ -9077,39 +9058,6 @@ ServerEvents.recipes((event) => {
 	event.replaceInput(/cake/, 'wheat', 'create:dough');
 	event.replaceInput(/cake/, 'milk_bucket', 'farmersdelight:milk_bottle');
 
-	// All Aether freezing recipes go into Rubinated Nether's freezer instead
-	event.forEachRecipe({ type: "aether:freezing" }, recipe => {
-		if (!recipe) return;
-		const json = recipe.json;
-		const result = recipe.getOriginalRecipeResult();
-
-		event.remove({ id: recipe.getId() });
-
-		if (result.id == 'minecraft:blue_ice'
-			|| result.id == 'minecraft:ice'
-			|| result.id == 'minecraft:packed_ice'
-			|| result.id == 'minecraft:obsidian'
-			|| result.id == 'rubinated_nether:ruby') return;
-
-		// console.log(json)
-
-		event.custom({
-			type: "rubinated_nether:freezing",
-			cookingtime: json.get('cookingtime'),
-			experience: json.get('experience'),
-			ingredient: json.get('ingredient'),
-			result: result
-		}).id(recipe.getId());
-	});
-
-	event.custom({
-		type: "rubinated_nether:freezing",
-		cookingtime: 400,
-		experience: 1,
-		ingredient: Ingredient.of('rubinated_nether:molten_ruby'),
-		result: 'rediscovered:ruby'
-	}).id('adj:ruby_from_molten_ruby');
-
 	// Alex's Caves
 	/**
 	 * @type {Special.RecipeId[]}
@@ -9136,32 +9084,6 @@ ServerEvents.recipes((event) => {
 		'alexscaves:candy_cane_hook',
 		'kubejs:candy_cane_hook'
 	);
-
-	// SimplySwords recipes
-	/** @type {Special.RecipeId[]} */
-	const simplySwordsRecipesToRemove = [
-		'simplyswords:righteous_relic',
-		'simplyswords:sunfire'
-	];
-	simplySwordsRecipesToRemove.forEach(id => {
-		event.remove({ id: id });
-	});
-
-	event.recipes.botania.mana_infusion('simplyswords:righteous_relic', 'simplyswords:tainted_relic').mana(500000).id('adj:tainted_relic_cleansing');
-
-	event.shaped(
-		'simplyswords:sunfire',
-		[
-			'P',
-			'H',
-			'R'
-		],
-		{
-			P: 'mythicmetals:palladium_ingot',
-			H: 'mythicmetals:hallowed_ingot',
-			R: 'simplyswords:righteous_relic'
-		}
-	).id('adj:sunfire');
 
 	// Grappling Hooks
 	event.shaped(
@@ -9529,4 +9451,123 @@ ServerEvents.recipes((event) => {
 			'blaze_powder'
 		]
 	).id('adj:smoldering_scorched_log');
+
+	// Legacy recipes
+	function legacy(item) {
+		return `kubejs:legacy/${item}`;
+	}
+
+	event.smelting(legacy('brick'), legacy('clay_ball'), 0.1, 200).id('adj:legacy/smelting/brick');
+	event.shaped(
+		legacy('bricks'),
+		[
+			'BB',
+			'BB'
+		],
+		{
+			B: legacy('brick')
+		}
+	).id('adj:legacy/bricks');
+	blockSet('legacy/bricks');
+	event.shaped(
+		legacy('large_bricks'),
+		[
+			'BB',
+			'BB'
+		],
+		{
+			B: legacy('bricks')
+		}
+	).id('adj:legacy/large_bricks');
+	blockSet('legacy/large_bricks');
+	blockSet('legacy/legacy_bricks');
+
+	function compactBlock(item, compacted, is2x2) {
+		event.shaped(
+			legacy(compacted),
+			(is2x2 ? ['CC', 'CC'] : ['CCC', 'CCC', 'CCC']),
+			{
+				C: legacy(item)
+			}
+		).id(`adj:legacy/${compacted}`);
+	}
+
+	compactBlock('clay_ball', 'clay', true);
+	compactBlock('coal', 'coal_block');
+	compactBlock('diamond', 'diamond_block');
+	compactBlock('emerald', 'emerald_block');
+	compactBlock('gold', 'gold_block');
+	compactBlock('iron', 'iron_block');
+	compactBlock('lapis', 'lapis_block');
+	compactBlock('redstone', 'redstone_block');
+	compactBlock('ruby', 'ruby_block');
+
+	compactBlock('quartz', 'quartz_block', true);
+	blockSet('legacy/quartz_block');
+
+	blockSet('legacy/cobblestone');
+	event.smelting(legacy('stone'), legacy('cobblestone'), 0.1, 200).id('adj:legacy/smelting/stone');
+	compactBlock('stone', 'stonebrick', true);
+	blockSet('legacy/stonebrick');
+
+	compactBlock('sand', 'sandstone', true);
+	blockSet('legacy/sandstone');
+
+	event.smelting(legacy('glass'), legacy('sand'), 0.1, 200).id('adj:legacy/smelting/glass');
+
+	Color.DYE.forEach(c => {
+		if (global.isDyeDepotColor(c)) return;
+		event.shapeless(
+			Item.of(legacy(`glass_${c}`)),
+			[
+				dye(c),
+				legacy('glass'), legacy('glass'), legacy('glass'), legacy('glass'),
+				legacy('glass'), legacy('glass'), legacy('glass'), legacy('glass')
+			]
+		).id(`adj:legacy/glass_${c}`);
+
+		event.shapeless(
+			legacy(`wool_colored_${c}`),
+			[dye(c), legacy('wool_colored_white')]
+		)
+	});
+
+	compactBlock('glowstone_dust', 'glowstone', true);
+
+	function planks(log, planks) {
+		event.shapeless(
+			Item.of(legacy(planks), 4),
+			[legacy(log)]
+		).id(`adj:legacy/${planks}`);
+	};
+
+	planks('log_oak', 'planks_oak');
+	planks('log_birch', 'planks_birch');
+	planks('log_spruce', 'planks_spruce');
+	planks('log_jungle', 'planks_jungle');
+
+	blockSet('legacy/planks_oak');
+	blockSet('legacy/planks_birch');
+	blockSet('legacy/planks_spruce');
+	blockSet('legacy/planks_jungle');
+
+	compactBlock('string', 'wool_colored_white', true);
+
+	compactBlock('melon_slice', 'melon');
+
+	event.shaped(
+		legacy('apple_golden'),
+		[
+			'GGG',
+			'GAG',
+			'GGG'
+		],
+		{
+			G: legacy('gold_ingot'),
+			A: legacy('apple')
+		}
+	).id('adj:legacy/golden_apple');
+
+	event.smelting(legacy('potato'), legacy('potato_baked'), 0.1, 200).id('adj:legacy/smelting/baked_potato');
 });
+

@@ -326,18 +326,6 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 		let data = victim.getPersistentData();
 
 		// Stuff that depends on weapon groups
-		if (id.includes('katana')) {
-			let pdata = attacker.persistentData;
-			if (!pdata.katanaCombo) {
-				pdata.katanaCombo = 0;
-			}
-			pdata.katanaCombo++;
-			if (pdata.katanaCombo >= 3) {
-				pdata.katanaCombo = 0;
-				attacker.addEffect(global.newMobEffectInstance('speed', global.duration('0:05'), 0));
-				attacker.playNotifySound('simplyswords:magic_sword_attack_02', 'players', 1.5, global.getRandomNumber(1.2, 1.4));
-			}
-		}
 		if (id.includes('stormyx')) {
 			victim.addEffect(global.newMobEffectInstance('cofh_core:shocked', global.duration('0:08'), 0))
 		}
@@ -458,7 +446,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 					attacker.addEffect(global.newMobEffectInstance('kubejs:echo_cooldown', (9 - enchLevel) * 20, 0, false, false, true))
 					victim.getServer().scheduleInTicks(6, () => {
 						victim.attack(global.getDamageSource(victim.level, 'minecraft:player_attack', null, attacker), damage);
-						victim.level.playSound(null, victim.x, victim.y, victim.z, 'simplyswords:magic_sword_attack_02', 'players', 0.75,global.getRandomNumber(1.0, 1.5))
+						// victim.level.playSound(null, victim.x, victim.y, victim.z, 'simplyswords:magic_sword_attack_02', 'players', 0.75,global.getRandomNumber(1.0, 1.5))
 					})
 					break;
 				}

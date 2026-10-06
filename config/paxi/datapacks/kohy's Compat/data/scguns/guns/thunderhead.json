@@ -1,0 +1,66 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.7,
+      "yOffset": 8.0,
+      "zOffset": -13.5,
+      "textureLocation": "muzzle_flash_1",
+      "alternateMuzzleFlash": true,
+      "alternatePosition": {
+        "x": -0.0,
+        "y": 0.0,
+        "z": -1.25
+      }
+    }
+  },
+  "general": {
+    "weaponType": "heavy",
+    "fireMode": "scguns:automatic",
+    "gripType": "scguns:mini_gun",
+    "baseGripType": "scguns:mini_gun",
+    "rate": 4,
+    "recoilAngle": 2.0,
+    "recoilKick": 1.0,
+    "spread": 1.5,
+    "meleeDamage": 3.5,
+    "meleeCooldownTicks": 20,
+    "hotBarrelRate": 10,
+    "criticalChance": 0.05,
+    "meleeReach": 3.5,
+    "speedModifier": 0.85
+  },
+  "modules": {
+    "attachments": {
+    }
+  },
+  "projectile": {
+    "advantage": "scguns:heavy",
+    "damage": 13.0,
+    "gravity": false,
+    "ejectsCasing": true,
+    "item": "scguns:shatter_round",
+    "casingType": "scguns:medium_brass_casing",
+    "casingParticle": "scguns:brass_casing",
+    "life": 60,
+    "size": 0.1,
+    "speed": 5.0,
+    "trailLengthMultiplier": 2.0,
+    "impactEffect": "scguns:lacerated",
+    "impactEffectDuration": 300,
+    "impactEffectChance": 0.3,
+    "impactEffectAmplifier": 0
+  },
+  "reloads": {
+    "emptyMagTimer": 10,
+    "maxAmmo": 40,
+    "reloadTimer": 60,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns:item.heavy_rifle.fire",
+    "fire": "scguns:item.heavy_rifle.fire",
+    "reload": "scguns:item.gauss.reload",
+    "flyby": "scguns:bullet.flyby1"
+  }
+}

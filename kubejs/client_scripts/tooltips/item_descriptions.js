@@ -96,7 +96,6 @@ const TooltipEdits = {
 				'aether:incubator',
 				'aether:freezer',
 				'aether:altar',
-				'rubinated_nether:freezer'
 			],
 			text: [
 				'Used for special crafting',

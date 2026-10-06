@@ -430,16 +430,10 @@ ServerEvents.tags('item', tags => {
 		'galosphere:bowl_lichen'
 	])
 
-	tags.remove('forge:obsidian', [
-		'rubinated_nether:bleeding_obsidian'
-	])
-
 	tags.add('adj:scorched_logs', [
 		/born_in_chaos_v1:.*scorched_log/,
 		/born_in_chaos_v1:.*scorched_wood.*/
 	]);
-
-	tags.removeAllTagsFrom('rubinated_nether:ruby');
 
 	tags.removeAllTagsFrom(/twilight,*:.*venison.*/);
 	tags.add('twilightdelight:vension_raw', [

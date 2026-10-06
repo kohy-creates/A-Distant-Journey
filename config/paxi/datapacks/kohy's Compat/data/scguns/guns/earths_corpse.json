@@ -1,0 +1,87 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.5,
+      "yOffset": 5.7,
+      "zOffset": -19.0,
+      "textureLocation": "muzzle_flash_5",
+      "spawnParticles": true,
+      "particleType": "minecraft:small_flame",
+      "particleCount": 3,
+      "particleSpread": 0.25,
+      "particleRingRadius": 1.0
+    }
+  },
+  "general": {
+    "weaponType": "lmg",
+    "fireMode": "scguns:automatic",
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "rate": 2,
+    "recoilAngle": 2.25,
+    "recoilKick": 1.25,
+    "spread": 5.0,
+    "meleeDamage": 8.0,
+    "meleeCooldownTicks": 15,
+    "meleeReach": 3.5,
+    "hotBarrelRate": 5,
+    "criticalChance": 0.05,
+    "playerKnockBack": true,
+    "playerKnockBackStrength": 0.1
+  },
+  "modules": {
+    "attachments": {
+      "scope": {
+        "size": 0.8,
+        "yOffset": 7.1,
+        "zOffset": 5.2
+      },
+      "stock": {
+        "scale": 0.0
+      },
+        "barrel": {
+            "scale": 0.0,
+          "yOffset": 5.7,
+          "zOffset": -24.0
+        },
+      "magazine": {
+        "scale": 0.0
+      }
+
+    },
+    "zoom": {
+      "fovModifier": 0.8,
+      "yOffset": 7.7,
+      "zOffset": 3.0
+    }
+  },
+  "projectile": {
+    "advantage": "scguns:none",
+    "damage": 13.5,
+    "armorPen": 3.0,
+    "gravity": false,
+    "item": "scguns:advanced_round",
+    "ejectsCasing": true,
+    "casingType": "scguns:medium_brass_casing",
+    "casingParticle": "scguns:brass_casing",
+    "life": 55,
+    "size": 0.1,
+    "speed": 5.0,
+    "trailLengthMultiplier": 2.0
+  },
+  "reloads": {
+    "emptyMagTimer": 10,
+    "maxAmmo": 75,
+    "reloadItem": "scguns:advanced_round",
+    "reloadTimer": 50,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns:item.rusty_gnat.fire",
+    "fire": "scguns:item.rusty_gnat.fire",
+    "reload": "scguns:item.gauss.reload",
+    "silencedFire": "scguns:item.rusty_gnat.silenced_fire",
+    "flyby": "scguns:bullet.flyby1"
+  }
+}

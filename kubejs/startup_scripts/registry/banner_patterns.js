@@ -2,7 +2,7 @@ StartupEvents.registry('banner_pattern', registry => {
 
 	const $BannerPattern = Java.loadClass('net.minecraft.world.level.block.entity.BannerPattern');
 	function registerBannerPattern(id, tag, name) {
-		console.log(`Registering banner pattern kubejs:${id}`)
+		// console.log(`Registering banner pattern kubejs:${id}`)
 		registry.createCustom(id, () => new $BannerPattern(id)).tag(global.getOrDefault(tag, 'minecraft:no_item_required'));
 
 		Color.DYE.forEach(color => global.addTranslation(

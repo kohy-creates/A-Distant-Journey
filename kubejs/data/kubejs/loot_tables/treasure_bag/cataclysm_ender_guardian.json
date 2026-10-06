@@ -14,12 +14,6 @@
 							"count": 2
 						}
 					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "simplyswords:caelestis",
-					"quality": 4,
-					"functions": []
 				}
 			]
 		},

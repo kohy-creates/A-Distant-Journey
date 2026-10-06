@@ -12,6 +12,7 @@ const $CrossbowItem = Java.loadClass("net.minecraft.world.item.CrossbowItem");
 const $BowItem = Java.loadClass("net.minecraft.world.item.BowItem");
 const $BlockTags = Java.loadClass('net.minecraft.tags.BlockTags')
 const $Player = Java.loadClass('net.minecraft.world.entity.player.Player');
+
 const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
 const $ForgeRegistries$Keys = Java.loadClass('net.minecraftforge.registries.ForgeRegistries$Keys');
 
@@ -24,3 +25,8 @@ const $DeferredRegisterCreate = Java.loadClass("net.minecraftforge.registries.De
 const $AttackEntityEvent = Java.loadClass('net.minecraftforge.event.entity.player.AttackEntityEvent');
 const $LivingHurtEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingHurtEvent');
 const $LivingKnockbackEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingKnockBackEvent');
+
+const $EnhancedCelestials = Java.loadClass('dev.corgitaco.enhancedcelestials2core.EnhancedCelestials');
+const $EnhancedCelestialsRegistry = Java.loadClass("dev.corgitaco.enhancedcelestials2core.api.EnhancedCelestialsRegistry");
+
+const $SeasonHelper = Java.loadClass('sereneseasons.api.season.SeasonHelper');

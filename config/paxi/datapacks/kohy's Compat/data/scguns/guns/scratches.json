@@ -1,0 +1,62 @@
+{
+  "display": {
+  },
+  "general": {
+    "weaponType": "heavy",
+    "alwaysSpread": true,
+    "fireMode": "scguns:automatic",
+    "gripType": "scguns:mini_gun_5",
+    "baseGripType": "scguns:mini_gun_5",
+    "projectileAmount": 8,
+    "rate": 4,
+    "recoilAngle": 3.5,
+    "recoilKick": 3.0,
+    "spread": 4.5,
+    "meleeDamage": 4.5,
+    "meleeCooldownTicks": 20,
+    "energyUse": 25.0,
+    "hotBarrelRate": 40,
+    "criticalChance": 0.05,
+    "speedModifier": 0.95,
+    "isRevolver": true,
+    "enableGunLight": false
+  },
+  "modules": {
+    "attachments": {
+      "stock": {
+        "scale": 0.0
+      }
+    }
+  },
+  "projectile": {
+    "advantage": "scguns:none",
+    "damage": 22.0,
+    "ejectsCasing": false,
+    "gravity": true,
+    "item": "scguns:flechette",
+    "life": 50,
+    "size": 1.0,
+    "speed": 6.0,
+    "trailLengthMultiplier": 0.2,
+    "trailThickness": 0.5,
+    "impactEffect": "scguns:lacerated",
+    "impactEffectDuration": 300,
+    "impactEffectChance": 0.3,
+    "impactEffectAmplifier": 0
+  },
+  "reloads": {
+    "emptyMagTimer": 10,
+    "maxAmmo": 24,
+    "reloadItem": "scguns:flechette",
+    "reloadTimer": 30,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns:item.rusty_gnat.fire",
+    "fire": "scguns:item.rusty_gnat.fire",
+    "reload": "scguns:item.gauss.reload",
+    "silencedFire": "scguns:item.rusty_gnat.silenced_fire",
+    "flyby": "scguns:bullet.flyby1"
+  }
+}

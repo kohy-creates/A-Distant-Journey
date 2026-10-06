@@ -130,6 +130,7 @@ const RemovedItems = {
 		'twilightdelight:chopped_clover',
 		'twilightforest:zombie_scepter',
 		'twilightforest:gold_minotaur_axe',
+		/twilightforest:.*banister/,
 
 		'phantasm:polished_obsidian',
 
@@ -266,6 +267,7 @@ const RemovedItems = {
 		'mythicmetals:copper_leggings',
 		'mythicmetals:copper_boots',
 
+		/botania:.*chakram/,
 		'botania:mana_diamond',
 		'botania:mana_diamond_block',
 		'botania:manaweave_cloth',
@@ -453,34 +455,6 @@ const RemovedItems = {
 		'functionalstorage:netherite_upgrade',
 		'functionalstorage:iron_downgrade',
 
-		/simplyswords:mythicmetals_compat\/banglum\/.*/,
-		/simplyswords:mythicmetals_compat\/aquarium\/.*/,
-		/simplyswords:mythicmetals_compat\/mythril\/.*/,
-		/simplyswords:mythicmetals_compat\/carmot\/.*/,
-		/simplyswords:mythicmetals_compat\/osmium\/.*/,
-		/simplyswords:mythicmetals_compat\/celestium\/.*/,
-		/simplyswords:mythicmetals_compat\/quadrillum\/.*/,
-		/simplyswords:mythicmetals_compat\/runite\/.*/,
-		/simplyswords:mythicmetals_compat\/durasteel\/.*/,
-
-		/simplyswords:.*_longsword/,
-		/simplyswords:.*_cutlass/,
-		/simplyswords:.*_twinblade/,
-		/simplyswords:.*_sai/,
-		/simplyswords:.*_rapier/,
-		/simplyswords:.*_claymore/,
-		/simplyswords:.*_greataxe/,
-		/simplyswords:.*_greathammer/,
-		/simplyswords:.*_halberd/,
-
-		/simplyswords:runic_.*/,
-		'simplyswords:tempest',
-		'simplyswords:twisted_blade',
-		'simplyswords:harbinger',
-		'simplyswords:dormant_relic',
-		'simplyswords:bramblethorn',
-		'simplyswords:sword_on_a_stick',
-
 		'trashcans:energy_trash_can',
 		'trashcans:ultimate_trash_can',
 
@@ -547,7 +521,6 @@ const RemovedItems = {
 		'aether_redux:shroom_ring',
 		'ancient_aether:valkyrum_lance',
 		'aether:chainmail_gloves',
-		'aether:freezer',
 
 		'vinery:dark_cherry_chair',
 		'vinery:dark_cherry_table',
@@ -654,11 +627,6 @@ const RemovedItems = {
 
 		/travelersbackpack:.*_sleeping_bag/,
 
-		'rubinated_nether:runestone',
-		'rubinated_nether:rubination_altar',
-		'rubinated_nether:ruby_block',
-		/rubinated_nether:.*altar_stone.*/,
-
 		/aperture_innovations:concrete_surface/,
 		/aperture_innovations:metal_surface/,
 		'aperture_innovations:long_fall_boots',
@@ -680,6 +648,10 @@ const RemovedItems = {
 		'crittersandcompanions:pearl_necklace_2',
 		'crittersandcompanions:pearl_necklace_3',
 		'crittersandcompanions:grappling_hook',
+
+		/decoration_delight:.*countertop/,
+		/decoration_delight:.*counter_corner/,
+		/decoration_delight:.*counter_bend/,
 	]
 };
 
@@ -704,6 +676,16 @@ function regenerateBlacklist() {
 	global.blacklistedItemsArray = Array.from(global.blacklistedItems);
 
 	console.log(`Added ${global.blacklistedItemsArray.length} items to the blacklist`);
+	console.log('Amount of removed items:');
+	let removed = {};
+	global.blacklistedItemsArray.sort().forEach(item => {
+		let mod = item.split(':')[0];
+		if (!removed[mod]) removed[mod] = 0;
+		removed[mod]++;
+	});
+	for (let mod in removed) {
+		console.log(`  '${mod}': ${removed[mod]}`);
+	}
 }
 
 StartupEvents.postInit(event => {

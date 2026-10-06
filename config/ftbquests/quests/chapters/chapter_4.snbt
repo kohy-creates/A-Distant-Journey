@@ -528,23 +528,6 @@
 			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Cook some of the more 'delicious' dishes from End's cuisine"
-			tasks: [
-				{
-					id: "362E448B4D9ED9BA"
-					item: "endersdelight:chorus_pie"
-					type: "item"
-				}
-				{
-					id: "5FE3FF65BC924ED7"
-					item: "endersdelight:twisted_cereal"
-					type: "item"
-				}
-				{
-					id: "53878C96D29995E1"
-					item: "endersdelight:pearl_pasta"
-					type: "item"
-				}
-			]
 			title: "Local Food"
 			x: -10.0d
 			y: -1.5d

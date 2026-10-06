@@ -1,0 +1,67 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.24,
+      "yOffset": 3.5,
+      "zOffset": -7.0,
+      "textureLocation": "muzzle_flash_1"
+    }
+  },
+  "general": {
+    "weaponType": "shotgun",
+    "alwaysSpread": true,
+    "fireMode": "scguns:semi_automatic",
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "projectileAmount": 22,
+    "rate": 9,
+    "recoilAngle": 10.0,
+    "recoilKick": 0.5,
+    "spread": 10.8,
+    "meleeDamage": 3.5,
+    "meleeCooldownTicks": 20,
+    "hotBarrelRate": 25,
+    "criticalChance": 0.1,
+    "playerKnockBack": true,
+    "playerKnockBackStrength": 0.45
+  },
+  "modules": {
+    "attachments": {
+      "stock": {
+        "scale": 0.0
+      },
+      "underBarrel": {
+        "yOffset": 1.0,
+        "zOffset": 1.0
+      }
+    },
+    "zoom": {
+      "fovModifier": 0.7,
+      "yOffset": 5.3,
+      "zOffset": 0.6
+    }
+  },
+  "projectile": {
+    "knockbackStrength": 0.65,
+    "advantage": "scguns:fire",
+    "damage": 15.0,
+    "item": "scguns:grapeshot",
+    "life": 38,
+    "size": 0.05,
+    "speed": 5.0,
+    "trailLengthMultiplier": 2.0
+  },
+  "reloads": {
+    "emptyMagTimer": 15,
+    "maxAmmo": 4,
+    "reloadItem": "scguns:grapeshot",
+    "reloadTimer": 30,
+    "reloadType": "scguns:manual"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns:item.boomstick.fire",
+    "fire": "scguns:item.boomstick.fire",
+    "reload": "scguns:item.gauss.reload"
+  }
+}

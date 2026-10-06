@@ -1,0 +1,84 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.3,
+      "yOffset": 4.8,
+      "zOffset": -13.0,
+      "textureLocation": "muzzle_flash_5",
+      "spawnParticles": true,
+      "particleType": "minecraft:small_flame",
+      "particleCount": 8,
+      "particleSpread": 0.1,
+      "particleRingRadius": 0.5
+    }
+  },
+  "general": {
+    "weaponType": "rifle",
+    "alwaysSpread": false,
+    "fireMode": "scguns:burst",
+    "burstAmount": 3,
+    "burstCooldown": 10,
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "rate": 2,
+    "recoilAngle": 2.25,
+    "recoilKick": 0.75,
+    "spread": 2.0,
+    "meleeDamage": 7.0,
+    "meleeCooldownTicks": 15,
+    "meleeReach": 4.0,
+    "hotBarrelRate": 5,
+    "criticalChance": 0.05
+  },
+  "modules": {
+    "attachments": {
+      "scope": {
+        "size": 0.7,
+        "yOffset": 5.85,
+        "zOffset": 3.0
+      },
+      "barrel": {
+        "yOffset": 4.8,
+        "zOffset": -15.2
+      },
+      "magazine": {
+        "scale": 0.0
+      },
+      "stock": {
+        "scale": 0.0
+      }
+    },
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 6.2,
+      "zOffset": 0.75
+    }
+  },
+  "projectile": {
+    "knockbackStrength": 0.5,
+    "advantage": "scguns:none",
+    "damage": 21.0,
+    "armorPen": 3.5,
+    "ejectsCasing": true,
+    "gravity": false,
+    "item": "scguns:gibbs_round",
+    "casingType": "scguns:medium_diamond_steel_casing",
+    "casingParticle": "scguns:diamond_steel_casing",
+    "life": 70,
+    "size": 0.05,
+    "speed": 10.0,
+    "trailLengthMultiplier": 2.0
+  },
+  "reloads": {
+    "maxAmmo": 24,
+    "reloadTimer": 15,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns:item.scorched_rifle.fire",
+    "fire": "scguns:item.scorched_rifle.fire",
+    "reload": "scguns:item.gauss.reload",
+    "silencedFire": "scguns:item.makeshift_rifle.silenced_fire"
+  }
+}

@@ -466,3 +466,32 @@ global.isDyeDepotColor = function (color) {
 global.ifDyeDepot = function (color, ifTrue, ifFalse) {
 	return global.isDyeDepotColor(color) ? ifTrue : ifFalse;
 };
+
+/**
+ * Gets the lunar forecast for the given level.
+ * @param {Internal.Level_} level
+ * @returns {string|null} The ID of the current lunar event, or null if there is none.
+ */
+global.getCurrentLunarEvent = function (level) {
+	let optional = $EnhancedCelestials.lunarForecastWorldData(level);
+	let id = null;
+	if (optional.isPresent()) {
+		/** @type {Internal.LunarEvent_} */
+		let currentEvent = optional.get().currentLunarEvent();
+		let lunarEventId = level
+			.registryAccess()
+			.registryOrThrow($EnhancedCelestialsRegistry.LUNAR_EVENT_KEY)
+			.getKey(currentEvent);
+		id = lunarEventId.toString();
+	}
+	return id;
+};
+
+/**
+ * Gets the current season for the given level.
+ * @param {Internal.Level_} level 
+ * @returns {string} The current season name, or null if there is none.
+ */
+global.getCurrentSeason = function (level) {
+	$SeasonHelper.getSeasonState(level).getSeason().name().toLowerCase();
+};

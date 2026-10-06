@@ -432,5 +432,21 @@
 
 		"galosphere:mole_burrow": "galosphere:tuff_dirt",
 		// "hybrid_aquatic:crystalline_sulfur": "kubejs:sulfur"
+
+		"twilightforest:oak_banister": "minecraft:oak_fence",
+		"twilightforest:birch_banister": "minecraft:birch_fence",
+		"twilightforest:spruce_banister": "minecraft:spruce_fence",
+		"twilightforest:jungle_banister": "minecraft:jungle_fence",
+		"twilightforest:acacia_banister": "minecraft:acacia_fence",
+		"twilightforest:bamboo_banister": "minecraft:bamboo_fence",
+		"twilightforest:cherry_banister": "minecraft:cherry_fence",
+		"twilightforest:dark_oak_banister": "minecraft:dark_oak_fence",
+		"twilightforest:vangrove_banister": "minecraft:mangrove_fence",
+		"twilightforest:twilight_oak_banister": "twilightforest:twilight_oak_fence",
+		"twilightforest:canopy_banister": "twilightforest:canopy_fence",
+		"twilightforest:dark_banister": "twilightforest:dark_fence",
+		"twilightforest:crimson_banister": "minecraft:crimson_fence",
+		"twilightforest:warped_banister": "minecraft:warped_fence",
+		"twilightforest:mangrove_banister": "twilightforest:mangrove_fence",
 	}
 }

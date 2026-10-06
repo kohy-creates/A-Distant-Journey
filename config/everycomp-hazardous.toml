@@ -42,7 +42,7 @@
 	#    ]
 	#    NOTE: This excluded one entryset from all WoodTypes/LeavesTypes
 	#
-	blacklist = ["quark:hedge", "quark:vertical_slab", "quark:vertical_planks", "quark:hollow_log", "quark:leaf_carpet", "create:window", "create:window_pane", "functionalstorage:1", "functionalstorage:2", "functionalstorage:4", "rediscovered:chair", "rediscovered:table", "twilightforest:hollow_log_horizontal", "twilightforest:hollow_log_vertical", "twilightforest:hollow_log_climbable", "oreberriesreplanted:vat", "copperagebackport:shelf"]
+	blacklist = ["quark:hedge", "quark:vertical_slab", "quark:vertical_planks", "quark:hollow_log", "quark:leaf_carpet", "create:window", "create:window_pane", "functionalstorage:1", "functionalstorage:2", "functionalstorage:4", "rediscovered:chair", "rediscovered:table", "twilightforest:hollow_log_horizontal", "twilightforest:hollow_log_vertical", "twilightforest:hollow_log_climbable", "twilightforest:banister", "oreberriesreplanted:vat", "copperagebackport:shelf", "decoration_delight:countertop", "decoration_delight:counter_corner", "decoration_delight:counter_bend"]
 
 [module]
 	#Exclude Module From Wood-Good, Stone-Zone & Gems-Realm

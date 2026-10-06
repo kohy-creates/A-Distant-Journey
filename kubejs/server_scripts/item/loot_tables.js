@@ -109,7 +109,8 @@ LootJS.modifiers((event) => {
 		'mynethersdelight:scavenging_extra_ghasta0',
 		'mynethersdelight:scavenging_hide_from_hoglin',
 		'galosphere:pillager_palladium_loot',
-		'unusualend:shulker'
+		'unusualend:shulker',
+		'scguns'
 	];
 	removeModifiersFromMods.forEach(mod => {
 		if (mod.includes(':')) {

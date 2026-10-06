@@ -4,13 +4,7 @@
 		{
 			"rolls": 1,
 			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "simplyswords:tainted_relic",
-					"weight": 1,
-					"quality": 4,
-					"functions": []
-				}
+				
 			]
 		},
 		{

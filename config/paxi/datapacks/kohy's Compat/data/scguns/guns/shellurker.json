@@ -1,0 +1,73 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.3,
+      "yOffset": 5.5,
+      "zOffset": -10.5,
+      "textureLocation": "muzzle_flash_1"
+    }
+  },
+  "general": {
+    "weaponType": "shotgun",
+    "alwaysSpread": true,
+    "fireMode": "scguns:automatic",
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "projectileAmount": 2,
+    "rate": 10,
+    "recoilAngle": 6.0,
+    "recoilKick": 3.0,
+    "spread": 3.0,
+    "meleeDamage": 3.5,
+    "meleeCooldownTicks": 20,
+    "hotBarrelRate": 23,
+    "criticalChance": 0.05
+  },
+  "modules": {
+    "attachments": {
+      "scope": {
+        "size": 0.7,
+        "yOffset": 7.1,
+        "zOffset": 2.5
+      },
+      "stock": {
+        "scale": 0.0
+      }
+    },
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 7.15,
+      "zOffset": 1.75
+    }
+  },
+  "projectile": {
+    "advantage": "scguns:none",
+    "damage": 19.0,
+    "ejectsCasing": true,
+    "gravity": false,
+    "item": "scguns:shulkshot",
+    "casingType": "scguns:shulker_casing",
+    "casingParticle": "scguns:shulk_casing",
+    "life": 120,
+    "size": 0.00001,
+    "speed":  0.75,
+    "trailLengthMultiplier": 100.0,
+    "impactEffect": "minecraft:levitation",
+    "impactEffectDuration": 100,
+    "impactEffectChance": 0.3,
+    "impactEffectAmplifier": 0
+  },
+  "reloads": {
+    "emptyMagTimer": 10,
+    "maxAmmo": 14,
+    "reloadItem": "scguns:shulkshot",
+    "reloadTimer": 30,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns:item.shulker.fire",
+    "fire": "scguns:item.shulker.fire",
+    "reload": "scguns:item.gauss.reload"
+  }
+}

@@ -1,5 +1,9 @@
 StartupEvents.registry('block', registry => {
 
+	function placementBasedAxis(event) {
+		event.set(BlockProperties.AXIS, event.clickedFace.axis);
+	}
+
 	function registerBlockSet(baseId, name, texture, hardness, resistance, tag, requiresTool, soundType, mapColor, extraTypes) {
 		let types = [
 			'basic',
@@ -187,10 +191,11 @@ StartupEvents.registry('block', registry => {
 	registerNeon('rainbow', 'color_red');
 
 	registerBlockSet('phantom_purpur', 'Phantom Purpur', 'kubejs:block/phantom_purpur_block', 1.5, 6, 'mineable/pickaxe', true, 'stone', 'color_blue');
-	registerBlockSet('phantom_purpur_bricks', 'Phantom Purpur Bricks', 'kubejs:block/phantom_purpur_brick', 1.5, 6, 'mineable/pickaxe', true, 'stone', 'color_blue');
+	registerBlockSet('phantom_purpur_bricks', 'Phantom Purpur Bricks', 'kubejs:block/phantom_purpur_bricks', 1.5, 6, 'mineable/pickaxe', true, 'stone', 'color_blue');
 	registerBlockSet('phantom_purpur_squares', 'Phantom Purpur Squares', 'kubejs:block/phantom_purpur_squares', 1.5, 6, 'mineable/pickaxe', true, 'stone', 'color_blue');
 
 	registry.create('phantom_purpur_pillar')
+		.textureAll('kubejs:block/phantom_purpur_pillar_side')
 		.textureSide('up', 'kubejs:block/phantom_purpur_pillar_top')
 		.textureSide('down', 'kubejs:block/phantom_purpur_pillar_top')
 		.textureSide('east', 'kubejs:block/phantom_purpur_pillar_side')
@@ -199,6 +204,8 @@ StartupEvents.registry('block', registry => {
 		.textureSide('south', 'kubejs:block/phantom_purpur_pillar_side')
 		.displayName('Phantom Purpur Pillar')
 		.property(BlockProperties.AXIS)
+		.placementState(event => placementBasedAxis(event))
+		.soundType(SoundType.STONE)
 		.hardness(1.5)
 		.resistance(6)
 		.tagBlock('mineable/pickaxe')
@@ -486,209 +493,55 @@ StartupEvents.registry('block', registry => {
 		.soundType(SoundType.GLASS)
 		.displayName('Ancient Glass');
 
-	registry.create('legacy/wool_colored_black')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('black')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Black Wool');
+	Color.DYE.forEach(c => {
+		if (global.isDyeDepotColor(c)) return;
 
-	registry.create('legacy/wool_colored_blue')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('blue')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Blue Wool');
+		registry.create(`legacy/wool_colored_${c}`)
+			.hardness(0.8)
+			.resistance(0.8)
+			.mapColor(getMapColor(c))
+			.soundType(SoundType.WOOL)
+			.displayName(`Ancient ${global.toTitleCase(c.replace('_', ' '))} Wool`);
 
-	registry.create('legacy/wool_colored_brown')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('brown')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Brown Wool');
+		registry.create(`legacy/carpet_colored_${c}`, 'carpet')
+			.hardness(0.8)
+			.resistance(0.8)
+			.mapColor(getMapColor(c))
+			.soundType(SoundType.WOOL)
+			.textureAll(`kubejs:block/legacy/wool_colored_${c}`)
+			.displayName(`Ancient ${global.toTitleCase(c.replace('_', ' '))} Carpet`);
 
-	registry.create('legacy/wool_colored_cyan')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('cyan')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Cyan Wool');
-
-	registry.create('legacy/wool_colored_gray')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('gray')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Gray Wool');
-
-	registry.create('legacy/wool_colored_green')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('green')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Green Wool');
-
-	registry.create('legacy/wool_colored_light_blue')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('light_blue')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Light Blue Wool');
-
-	registry.create('legacy/wool_colored_lime')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('lime')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Lime Wool');
-
-	registry.create('legacy/wool_colored_magenta')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('magenta')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Magenta Wool');
-
-	registry.create('legacy/wool_colored_orange')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('orange')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Orange Wool');
-
-	registry.create('legacy/wool_colored_pink')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('pink')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Pink Wool');
-
-	registry.create('legacy/wool_colored_purple')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('purple')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Purple Wool');
-
-	registry.create('legacy/wool_colored_red')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('red')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Red Wool');
-
-	registry.create('legacy/wool_colored_light_gray')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('light_gray')
-		.soundType(SoundType.WOOL)
-		.textureAll('kubejs:block/legacy/wool_colored_silver')
-		.displayName('Ancient Light Gray Wool');
-
-	registry.create('legacy/wool_colored_white')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('white')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient White Wool');
-
-	registry.create('legacy/wool_colored_yellow')
-		.hardness(0.8)
-		.resistance(0.8)
-		.mapColor('yellow')
-		.soundType(SoundType.WOOL)
-		.displayName('Ancient Yellow Wool');
-
-	const glassColors = [
-		['black', 'black'],
-		['blue', 'blue'],
-		['brown', 'brown'],
-		['cyan', 'cyan'],
-		['gray', 'gray'],
-		['green', 'green'],
-		['light_blue', 'light_blue'],
-		['lime', 'lime'],
-		['magenta', 'magenta'],
-		['orange', 'orange'],
-		['pink', 'pink'],
-		['purple', 'purple'],
-		['red', 'red'],
-		['silver', 'light_gray'],
-		['white', 'white'],
-		['yellow', 'yellow']
-	];
-
-	glassColors.forEach(color => {
-		registry.create(`legacy/glass_${color[1]}`)
+		registry.create(`legacy/glass_${c}`)
 			.hardness(0.3)
 			.resistance(0.3)
-			.mapColor(color[1])
+			.mapColor(getMapColor(c))
 			.transparent(true)
 			.defaultTranslucent()
 			.soundType(SoundType.GLASS)
-			.textureAll(`kubejs:block/legacy/glass_${color[0]}`)
-			.displayName(`${global.toTitleCase(color[1].replace('_', ' '))} Stained Glass`);
+			.textureAll(`kubejs:block/legacy/glass_${c}`)
+			.displayName(`${global.toTitleCase(c.replace('_', ' '))} Stained Glass`);
 	});
 
-	registry.create('legacy/log_oak')
-		.hardness(2)
-		.resistance(2)
-		.mapColor('wood')
-		.soundType(SoundType.WOOD)
-		.tagBlock('mineable/axe')
-		.displayName('Ancient Oak Log')
-		.textureSide('north', 'kubejs:block/legacy/log_oak')
-		.textureSide('south', 'kubejs:block/legacy/log_oak')
-		.textureSide('east', 'kubejs:block/legacy/log_oak')
-		.textureSide('west', 'kubejs:block/legacy/log_oak')
-		.textureSide('up', 'kubejs:block/legacy/log_oak_top')
-		.textureSide('down', 'kubejs:block/legacy/log_oak_top')
-		.property(BlockProperties.AXIS);
+	const logs = ['oak', 'birch', 'spruce', 'jungle'];
 
-	registry.create('legacy/log_spruce')
-		.hardness(2)
-		.resistance(2)
-		.mapColor('wood')
-		.soundType(SoundType.WOOD)
-		.tagBlock('mineable/axe')
-		.displayName('Ancient Spruce Log')
-		.textureSide('north', 'kubejs:block/legacy/log_spruce')
-		.textureSide('south', 'kubejs:block/legacy/log_spruce')
-		.textureSide('east', 'kubejs:block/legacy/log_spruce')
-		.textureSide('west', 'kubejs:block/legacy/log_spruce')
-		.textureSide('up', 'kubejs:block/legacy/log_spruce_top')
-		.textureSide('down', 'kubejs:block/legacy/log_spruce_top')
-		.property(BlockProperties.AXIS);
-
-	registry.create('legacy/log_birch')
-		.hardness(2)
-		.resistance(2)
-		.mapColor('wood')
-		.soundType(SoundType.WOOD)
-		.tagBlock('mineable/axe')
-		.displayName('Ancient Birch Log')
-		.textureSide('north', 'kubejs:block/legacy/log_birch')
-		.textureSide('south', 'kubejs:block/legacy/log_birch')
-		.textureSide('east', 'kubejs:block/legacy/log_birch')
-		.textureSide('west', 'kubejs:block/legacy/log_birch')
-		.textureSide('up', 'kubejs:block/legacy/log_birch_top')
-		.textureSide('down', 'kubejs:block/legacy/log_birch_top')
-		.property(BlockProperties.AXIS);
-
-	registry.create('legacy/log_jungle')
-		.hardness(2)
-		.resistance(2)
-		.mapColor('wood')
-		.soundType(SoundType.WOOD)
-		.tagBlock('mineable/axe')
-		.displayName('Ancient Jungle Log')
-		.textureSide('north', 'kubejs:block/legacy/log_jungle')
-		.textureSide('south', 'kubejs:block/legacy/log_jungle')
-		.textureSide('east', 'kubejs:block/legacy/log_jungle')
-		.textureSide('west', 'kubejs:block/legacy/log_jungle')
-		.textureSide('up', 'kubejs:block/legacy/log_jungle_top')
-		.textureSide('down', 'kubejs:block/legacy/log_jungle_top')
-		.property(BlockProperties.AXIS);
+	logs.forEach(log => {
+		registry.create(`legacy/log_${log}`)
+			.hardness(2)
+			.resistance(2)
+			.property(BlockProperties.AXIS)
+			.placementState(event => placementBasedAxis(event))
+			.mapColor('wood')
+			.soundType(SoundType.WOOD)
+			.tagBlock('mineable/axe')
+			.displayName(`Ancient ${global.toTitleCase(log.replace('_', ' '))} Log`)
+			.textureSide('north', `kubejs:block/legacy/log_${log}`)
+			.textureSide('south', `kubejs:block/legacy/log_${log}`)
+			.textureSide('east', `kubejs:block/legacy/log_${log}`)
+			.textureSide('west', `kubejs:block/legacy/log_${log}`)
+			.textureSide('up', `kubejs:block/legacy/log_${log}_top`)
+			.textureSide('down', `kubejs:block/legacy/log_${log}_top`)
+			.tagBoth('logs_that_burn');
+	});
 
 	registerBlockSet('legacy/planks_oak', 'Ancient Oak Planks', null, 2, 3, 'mineable/axe', false, SoundType.WOOD, 'wood', ['fence', 'pressure_plate']);
 	registerBlockSet('legacy/planks_birch', 'Ancient Birch Planks', null, 2, 3, 'mineable/axe', false, SoundType.WOOD, 'wood', ['fence', 'pressure_plate']);
@@ -837,24 +690,15 @@ StartupEvents.registry('block', registry => {
 
 	registerBlockSet('legacy/legacy_bricks', 'Legacy Bricks', null, 2, 6, 'mineable/pickaxe', true, SoundType.STONE, 'red', ['wall']);
 
-	registry.create('legacy/legacy_crying_obsidian')
+	registry.create('legacy/glowing_obsidian')
 		.hardness(50)
 		.resistance(1200)
+		.lightLevel(1)
 		.mapColor('purple')
 		.soundType(SoundType.STONE)
 		.tagBlock('mineable/pickaxe')
 		.requiresTool(true)
-		.displayName('Ancient Crying Obsidian')
-
-	// registry.create('legacy/glowing_obsidian')
-	//     .hardness(50)
-	//     .resistance(1200)
-	//     .lightLevel(1)
-	//     .mapColor('purple')
-	//     .soundType(SoundType.STONE)
-	//     .tagBlock('mineable/pickaxe')
-	//     .requiresTool(true)
-	//     .displayName('Ancient Glowing Obsidian')
+		.displayName('Ancient Glowing Obsidian')
 
 	registry.create('legacy/legacy_nether_reactor_core')
 		.hardness(3)
@@ -886,8 +730,8 @@ StartupEvents.registry('block', registry => {
 		.textureSide('south', 'kubejs:block/legacy/legacy_gold_block')
 		.textureSide('east', 'kubejs:block/legacy/legacy_gold_block')
 		.textureSide('west', 'kubejs:block/legacy/legacy_gold_block')
-		.textureSide('up', 'kubejs:block/legacy/legacy_gold_top')
-		.textureSide('down', 'kubejs:block/legacy/legacy_gold_bottom');
+		.textureSide('up', 'kubejs:block/legacy/legacy_gold_block_top')
+		.textureSide('down', 'kubejs:block/legacy/legacy_gold_block_bottom');
 
 	registry.create('legacy/legacy_iron_block')
 		.hardness(5)
@@ -901,8 +745,8 @@ StartupEvents.registry('block', registry => {
 		.textureSide('south', 'kubejs:block/legacy/legacy_iron_block')
 		.textureSide('east', 'kubejs:block/legacy/legacy_iron_block')
 		.textureSide('west', 'kubejs:block/legacy/legacy_iron_block')
-		.textureSide('up', 'kubejs:block/legacy/legacy_iron_top')
-		.textureSide('down', 'kubejs:block/legacy/legacy_iron_bottom');
+		.textureSide('up', 'kubejs:block/legacy/legacy_iron_block_top')
+		.textureSide('down', 'kubejs:block/legacy/legacy_iron_block_bottom');
 
 	registry.create('legacy/legacy_diamond_block')
 		.hardness(5)
@@ -916,8 +760,8 @@ StartupEvents.registry('block', registry => {
 		.textureSide('south', 'kubejs:block/legacy/legacy_diamond_block')
 		.textureSide('east', 'kubejs:block/legacy/legacy_diamond_block')
 		.textureSide('west', 'kubejs:block/legacy/legacy_diamond_block')
-		.textureSide('up', 'kubejs:block/legacy/legacy_diamond_top')
-		.textureSide('down', 'kubejs:block/legacy/legacy_diamond_bottom');;
+		.textureSide('up', 'kubejs:block/legacy/legacy_diamond_block_top')
+		.textureSide('down', 'kubejs:block/legacy/legacy_diamond_block_bottom');
 
 	registry.create('legacy/legacy_lapis_block')
 		.hardness(3)
@@ -974,7 +818,66 @@ StartupEvents.registry('block', registry => {
 			.tagBlock('mineable/pickaxe');
 	});
 
-	// Crops for alchemy plants
-	registry.create('daybloom_plant', 'crop')
-		
+	/**
+	 * Registers a crop block for the given alchemy plant.
+	 * @param {string} id 
+	 * @param {string} cropItem 
+	 * @param {Internal.ToDoubleFunction_<Internal.RandomTickCallbackJS_>} growCallback 
+	 */
+	function alchemyCrop(id, cropItem, growCallback) {
+		registry.create(id, 'crop')
+			.age(4, (box) => box
+				.shape(0, 0.0, 0.0, 0.0, 16.0, 2.0, 16.0)
+				.shape(1, 0.0, 0.0, 0.0, 16.0, 3.0, 16.0)
+				.shape(2, 0.0, 0.0, 0.0, 16.0, 4.0, 16.0)
+				.shape(3, 0.0, 0.0, 0.0, 16.0, 5.0, 16.0)
+				.shape(4, 0.0, 0.0, 0.0, 16.0, 6.0, 16.0)
+			)
+			.crop(cropItem)
+			.growTick(growCallback)
+			.tagBoth('adj:alchemy_crops');
+	}
+
+	const noGrow = 0.0000001;
+
+	alchemyCrop('daybloom_plant', 'kubejs:daybloom', (event) => {
+		const level = event.getLevel();
+		if (level.isDay()) return -1;
+		return noGrow;
+	});
+
+	alchemyCrop('moonglow_plant', 'kubejs:moonglow', (event) => {
+		const level = event.getLevel();
+		if (level.isNight()) return -1;
+		return noGrow;
+	});
+
+	alchemyCrop('blinkroot_plant', 'kubejs:blinkroot', (event) => {
+		if (event.block.y < event.level.seaLevel) return 1.0;
+		return 0.5;
+	});
+
+	alchemyCrop('shiverthorn_plant', 'kubejs:shiverthorn', (event) => {
+		const season = global.getCurrentSeason(event.server.overworld());
+		if (season == 'winter') return 1.5;
+		return 0.5;
+	});
+
+	alchemyCrop('deathweed_plant', 'kubejs:deathweed', (event) => {
+		const lunarEvent = global.getCurrentLunarEvent(event.server.overworld());
+		if (lunarEvent == 'adj:blood_moon') return 15;
+		return noGrow;
+	});
+
+	alchemyCrop('fireblossom_plant', 'kubejs:fireblossom', (event) => {
+		const level = event.getLevel();
+		if (level.isRaining() || level.isThundering()) return noGrow;
+		return 0.5;
+	});
+
+	alchemyCrop('waterleaf_plant', 'kubejs:waterleaf', (event) => {
+		const level = event.getLevel();
+		if (level.isRaining() || level.isThundering()) return 1.5;
+		return noGrow;
+	});
 });

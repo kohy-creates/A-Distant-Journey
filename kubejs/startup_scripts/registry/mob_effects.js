@@ -17,12 +17,12 @@ global.shadowApparitionsTick = function (entity, amplifier) {
 				damage
 			);
 
-			level.playSound(
-				null,
-				pos,
-				'simplyswords:dark_sword_attack_03',
-				'neutral'
-			);
+			// level.playSound(
+			// 	null,
+			// 	pos,
+			// 	'simplyswords:dark_sword_attack_03',
+			// 	'neutral'
+			// );
 
 			level.spawnParticles(
 				global.ifRandomChance(50) ? 'sweep_attack' : 'mcdw:offhand_sweep',

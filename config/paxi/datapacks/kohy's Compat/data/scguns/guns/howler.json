@@ -1,0 +1,86 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.0,
+      "yOffset": 4.5,
+      "zOffset": -14.0,
+      "textureLocation": "muzzle_flash_1"
+    }
+  },
+  "general": {
+    "weaponType": "sniper",
+    "alwaysSpread": false,
+    "fireMode": "scguns:semi_automatic",
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "rate": 17,
+    "recoilAngle": 4.5,
+    "recoilKick": 2.5,
+    "spread": 0.0,
+    "meleeDamage": 2.5,
+    "meleeCooldownTicks": 20,
+    "meleeReach": 3.5,
+    "hotBarrelRate": 33,
+    "criticalChance": 0.05,
+    "playerKnockBack": true,
+    "playerKnockBackStrength": 0.25
+  },
+  "modules": {
+    "attachments": {
+      "barrel": {
+        "yOffset": 4.5,
+        "zOffset": -16.0
+      },
+      "scope": {
+        "size": 0.7,
+        "yOffset": 5.8,
+        "zOffset": 6.0
+      },
+      "stock": {
+        "scale": 0.0
+      },
+      "underBarrel": {
+        "yOffset": 5.5,
+        "zOffset": -2.5
+      },
+      "magazine": {
+        "scale": 0.0
+      }
+    },
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 6.35,
+      "zOffset": -0.75
+    }
+  },
+  "projectile": {
+    "knockbackStrength": 0.65,
+    "advantage": "scguns:heavy",
+    "damage": 26.0,
+    "armorPen": 5.0,
+    "ejectsCasing": true,
+    "gravity": false  ,
+    "item": "scguns:krahg_round",
+    "casingType": "scguns:large_brass_casing",
+    "casingParticle": "scguns:brass_casing",
+    "life": 70,
+    "size": 0.1,
+    "speed": 13.0,
+    "trailLengthMultiplier": 2.0
+  },
+  "reloads": {
+    "emptyMagTimer": 10,
+    "maxAmmo": 6  ,
+    "reloadItem": "scguns:krahg_round",
+    "reloadTimer": 30,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns:item.heavier_rifle.fire",
+    "fire": "scguns:item.heavier_rifle.fire",
+    "reload": "scguns:item.gauss.reload",
+    "silencedFire": "scguns:item.bruiser.silenced_fire",
+    "flyby": "scguns:bullet.flyby1"
+  }
+}

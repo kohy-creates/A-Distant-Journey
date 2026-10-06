@@ -27,6 +27,22 @@
 			{
 				"namespace": "^mythicmetals$",
 				"path": "^villager_trades/.*$"
+			},
+			{
+				"namespace": "^scguns$",
+				"path": "^vents/.*$"
+			},
+			{
+				"namespace": "^scguns$",
+				"path": "^upgrades/.*$"
+			},
+			{
+				"namespace": "^scguns$",
+				"path": "^raids/.*$"
+			},
+			{
+				"namespace": "^scguns$",
+				"path": "^entity/.*$"
 			}
 		]
 	}

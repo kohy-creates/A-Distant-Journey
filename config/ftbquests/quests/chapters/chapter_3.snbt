@@ -94,7 +94,7 @@
 		}
 		{
 			height: 1.75d
-			image: "rubinated_nether:block/ruby_block"
+			image: "rediscovered:block/ruby_block"
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d

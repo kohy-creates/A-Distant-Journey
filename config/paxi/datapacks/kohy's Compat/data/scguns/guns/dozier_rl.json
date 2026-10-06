@@ -1,0 +1,73 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.2,
+      "yOffset": 6.0,
+      "zOffset": -13.5,
+      "textureLocation": "muzzle_flash_1"
+    }
+  },
+  "general": {
+    "weaponType": "heavy",
+    "alwaysSpread": true,
+    "fireMode": "scguns:semi_automatic",
+    "gripType": "scguns:bazooka",
+    "baseGripType": "scguns:bazooka",
+    "rate": 13,
+    "recoilAngle": 6.7,
+    "recoilKick": 2.22,
+    "spread": 3.0,
+    "meleeDamage": 3.5,
+    "meleeCooldownTicks": 25,
+    "hotBarrelRate": 18,
+    "criticalChance": 0.05,
+    "isRevolver": true,
+    "speedModifier": 0.95
+  },
+  "modules": {
+    "attachments": {
+      "scope": {
+        "size": 0.7,
+        "yOffset": 7.2,
+        "zOffset": 1.7,
+        "xOffset": -3.2
+      },
+
+      "underBarrel": {
+        "yOffset": 5.5,
+        "zOffset": -2.5
+      }
+    },
+    "zoom": {
+      "xOffset": 3.2,
+      "yOffset": 7.9,
+      "zOffset": 7.0,
+      "fovModifier": 0.5
+    }
+  },
+  "projectile": {
+    "visible": true,
+    "advantage": "scguns:none",
+    "damage": 28.0,
+    "ejectsCasing": false,
+    "gravity": true,
+    "item": "scguns:rocket",
+    "life": 55,
+    "size": 0.05,
+    "speed": 4.2,
+    "trailLengthMultiplier": 2.0
+  },
+  "reloads": {
+    "emptyMagTimer": 20,
+    "maxAmmo": 4,
+    "reloadItem": "scguns:rocket",
+    "reloadTimer": 20,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns:item.rocket.fire",
+    "fire": "scguns:item.rocket.fire",
+    "reload": "scguns:item.gauss.reload"
+  }
+}

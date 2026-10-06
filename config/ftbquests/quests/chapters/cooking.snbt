@@ -262,6 +262,11 @@
 			icon_scale: 0.75d
 			id: "5A7B54BA138CB903"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "4002AB3FCD4CDB3E"
+				type: "xp"
+				xp: 50
+			}]
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "&oBecause I know this can be intimidating at times..."
@@ -714,6 +719,11 @@
 			icon_scale: 0.75d
 			id: "79DA3ADFEC24981C"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "36F028D58373BE6D"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft every Cake variant"
@@ -771,6 +781,11 @@
 				{
 					id: "782722C02FECA243"
 					item: "veggiesdelight:carrot_cake"
+					type: "item"
+				}
+				{
+					id: "61F7FB2EC97A5237"
+					item: "twilightdelight:twilight_cake"
 					type: "item"
 				}
 			]

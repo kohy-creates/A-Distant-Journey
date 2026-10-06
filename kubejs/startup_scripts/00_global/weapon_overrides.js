@@ -10,33 +10,6 @@ const WeaponOverrides = {
 		],
 		defaultAttackDamage: [1, 0.5, 1.12, 0.4, 0.5],
 		defaultAttackSpeed: [1.6, 1.3, 0.9, 1.1, 1.4],
-	},
-	simplySwords: {
-		types: [
-			'_katana',
-			'_spear',
-			'_glaive',
-			'_warglaive',
-			'_chakram',
-			'_scythe'
-		],
-		// Those are multipliers that are applied to the numbers in the vanilla section for each of the type (respectively)
-		attackDamage: [
-			0.85,
-			1.0,
-			1.2,
-			0.7,
-			0.75,
-			1.35,
-		],
-		attackSpeed: [
-			1.6,
-			1.2,
-			1.3,
-			2.0,
-			1.2,
-			1.1
-		]
 	}
 };
 
@@ -59,31 +32,6 @@ function addToolsetOverride(toolsetName, arg1, arg2, arg3) {
 
 		global.weapon_overrides[name] = [attackDamage, attackSpeed];
 		i++;
-	});
-
-	const baseMaterial = toolsetName.split(':')[1];
-	const compatPath = 'simplyswords:mythicmetals_compat/' + baseMaterial + '/' + baseMaterial;
-
-	let j = 0;
-	WeaponOverrides.simplySwords.types.forEach(function (type) {
-		const damageMult = WeaponOverrides.simplySwords.attackDamage[j];
-		const speedVal = WeaponOverrides.simplySwords.attackSpeed[j];
-
-		const vanillaId = 'simplyswords:' + baseMaterial + type;
-		const compatId = compatPath + type;
-
-		const testIDs = [vanillaId, compatId];
-
-		testIDs.forEach(function (id) {
-			if (!Item.of(id)) return;
-			if (Object.keys(global.weapon_overrides).includes(id)) return;
-
-			const attackDamage = Math.ceil(arg1 * damageMult * arg3);
-			const attackSpeed = global.roundToNearest(speedVal * arg2, 0.05);
-
-			global.weapon_overrides[id] = [attackDamage, attackSpeed];
-		});
-		j++;
 	});
 };
 

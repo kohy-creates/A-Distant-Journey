@@ -188,24 +188,25 @@ StartupEvents.registry('block', registry => {
 		return registry.createCustom(`potted_${id}`, () => new $FlowerPotBlock(`kubejs:${id}`, $BlockProperties.copy(Blocks.FLOWER_POT)));
 	}
 
-	function registerFlowerBlock(id, effect, duration, properties) {
-		JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, CustomBlockRegistry.Model.cross(`kubejs:block/${id}`));
+	function registerFlowerBlock(id, effect, duration, properties, skipPotted, texture) {
+		JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, CustomBlockRegistry.Model.cross(global.getOrDefault(texture, `kubejs:block/${id}`)));
 		global.writeJsonIfAbsent(`kubejs/assets/kubejs/blockstates/${id}.json`, noVariantBlockstate(id), `Created missing blockstate definition for block '${id}'`);
 		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, defaultLootTable(id), `Created missing loot table for block '${id}'`);
 		let builder = registry.createCustom(id, () => new $FlowerBlock(effect, duration, properties))
-		registerPottedFlowerBlock(id);
+		if (!skipPotted) {
+			registerPottedFlowerBlock(id);
+		}
 		return builder;
 	}
 
 	goldenDandelionBlock = registerFlowerBlock('golden_dandelion', $MobEffects.SATURATION, 2, $BlockProperties.copy(Blocks.DANDELION));
 
-	daybloomBlock = registerFlowerBlock('daybloom', $MobEffects.REGENERATION, 180, $BlockProperties.copy(Blocks.DANDELION));
-	moonglowBlock = registerFlowerBlock('moonglow', $MobEffects.NIGHT_VISION, 240, $BlockProperties.copy(Blocks.DANDELION));
-	blinkrootBlock = registerFlowerBlock('blinkroot', $MobEffects.DIG_SLOWDOWN, 180, $BlockProperties.copy(Blocks.DANDELION));
-	waterleafBlock = registerFlowerBlock('waterleaf', $MobEffects.WATER_BREATHING, 240, $BlockProperties.copy(Blocks.DANDELION));
-	shiverthornBlock = registerFlowerBlock('shiverthorn', $MobEffects.MOVEMENT_SLOWDOWN, 180, $BlockProperties.copy(Blocks.DANDELION));
-	jungleRoseBlock = registerFlowerBlock('jungle_rose', $MobEffects.DIG_SPEED, 240, $BlockProperties.copy(Blocks.DANDELION));
-	naturesGiftBlock = registerFlowerBlock('natures_gift', $MobEffects.WEAKNESS, 240, $BlockProperties.copy(Blocks.DANDELION));
+
+	daybloomBlock = registerFlowerBlock('daybloom', $MobEffects.REGENERATION, 180, $BlockProperties.copy(Blocks.DANDELION),);
+	moonglowBlock = registerFlowerBlock('moonglow', $MobEffects.NIGHT_VISION, 240, $BlockProperties.copy(Blocks.DANDELION),);
+	blinkrootBlock = registerFlowerBlock('blinkroot', $MobEffects.DIG_SLOWDOWN, 180, $BlockProperties.copy(Blocks.DANDELION),);
+	waterleafBlock = registerFlowerBlock('waterleaf', $MobEffects.WATER_BREATHING, 240, $BlockProperties.copy(Blocks.DANDELION),);
+	shiverthornBlock = registerFlowerBlock('shiverthorn', $MobEffects.MOVEMENT_SLOWDOWN, 180, $BlockProperties.copy(Blocks.DANDELION),);
 
 	/*
 		Note to self: for some reason both JavaAdapters in this file so far don't work. 
@@ -233,6 +234,14 @@ StartupEvents.registry('block', registry => {
 		CustomBlockRegistry.Model.cross('kubejs:block/fireblossom')
 	);
 	registerPottedFlowerBlock('fireblossom');
+
+	registerFlowerBlock('wild_daybloom', $MobEffects.REGENERATION, 1, $BlockProperties.copy(Blocks.DANDELION), true, 'kubejs:block/daybloom');
+	registerFlowerBlock('wild_moonglow', $MobEffects.REGENERATION, 1, $BlockProperties.copy(Blocks.DANDELION), true, 'kubejs:block/moonglow');
+	registerFlowerBlock('wild_blinkroot', $MobEffects.REGENERATION, 1, $BlockProperties.copy(Blocks.DANDELION), true, 'kubejs:block/blinkroot');
+	registerFlowerBlock('wild_waterleaf', $MobEffects.REGENERATION, 1, $BlockProperties.copy(Blocks.DANDELION), true, 'kubejs:block/waterleaf');
+	registerFlowerBlock('wild_shiverthorn', $MobEffects.REGENERATION, 1, $BlockProperties.copy(Blocks.DANDELION), true, 'kubejs:block/shiverthorn');
+	registerCustomBlock('wild_fireblossom', flowerLike, CustomBlockRegistry.Model.cross('kubejs:block/fireblossom'));
+	registerCustomBlock('wild_deathweed', flowerLike, CustomBlockRegistry.Model.cross('kubejs:block/deathweed'));
 
 	function createBlahaj(color) {
 		let id = `${color}_blahaj`;

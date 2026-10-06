@@ -186,9 +186,6 @@
 			mining = true
 			sorting = true
 
-		[types.leaves_type.ars_zero]
-			blight_archwood = true
-
 		[types.leaves_type.kubejs]
 			"legacy/oak" = true
 			"legacy/birch" = true
@@ -726,36 +723,6 @@
 			phantom_purpur = true
 			phantom_purpur_bricks = true
 			phantom_purpur_squares = true
-			"legacy/bricks" = true
-			"legacy/cobblestone" = true
-			"legacy/planks_oak" = true
-			"legacy/planks_birch" = true
-			"legacy/planks_spruce" = true
-			"legacy/planks_jungle" = true
-			"legacy/sandstone" = true
-			"legacy/sandstone_smooth" = true
-			"legacy/quartz_block" = true
-			"legacy/stonebrick" = true
-			"legacy/stone" = true
-			"legacy/legacy_bricks" = true
-			grimite = true
-			polished_grimite = true
-			magenta_wool = true
-			pink_wool = true
-			green_wool = true
-			lime_wool = true
-			light_gray_wool = true
-			yellow_wool = true
-			black_wool = true
-			light_blue_wool = true
-			brown_wool = true
-			cyan_wool = true
-			orange_wool = true
-			red_wool = true
-			gray_wool = true
-			white_wool = true
-			blue_wool = true
-			purple_wool = true
 			forest_tiles = true
 			navy_tiles = true
 			verdant_tiles = true
@@ -788,23 +755,53 @@
 			rose_stone_bricks = true
 			indigo_stone_bricks = true
 			maroon_stone_bricks = true
-			magenta_concrete = true
-			pink_concrete = true
-			yellow_concrete = true
-			cyan_concrete = true
-			red_concrete = true
-			gray_concrete = true
-			white_concrete = true
-			green_concrete = true
-			lime_concrete = true
-			light_gray_concrete = true
-			black_concrete = true
-			light_blue_concrete = true
-			brown_concrete = true
-			orange_concrete = true
-			blue_concrete = true
-			purple_concrete = true
+			"legacy/bricks" = true
 			"legacy/large_bricks" = true
+			"legacy/cobblestone" = true
+			"legacy/planks_oak" = true
+			"legacy/planks_birch" = true
+			"legacy/planks_spruce" = true
+			"legacy/planks_jungle" = true
+			"legacy/sandstone" = true
+			"legacy/sandstone_smooth" = true
+			"legacy/quartz_block" = true
+			"legacy/stonebrick" = true
+			"legacy/stone" = true
+			"legacy/legacy_bricks" = true
+			grimite = true
+			polished_grimite = true
+			magenta_wool = true
+			magenta_concrete = true
+			pink_wool = true
+			pink_concrete = true
+			yellow_wool = true
+			yellow_concrete = true
+			cyan_wool = true
+			cyan_concrete = true
+			red_wool = true
+			red_concrete = true
+			gray_wool = true
+			gray_concrete = true
+			white_wool = true
+			white_concrete = true
+			green_wool = true
+			green_concrete = true
+			lime_wool = true
+			lime_concrete = true
+			light_gray_wool = true
+			light_gray_concrete = true
+			black_wool = true
+			black_concrete = true
+			light_blue_wool = true
+			light_blue_concrete = true
+			brown_wool = true
+			brown_concrete = true
+			orange_wool = true
+			orange_concrete = true
+			blue_wool = true
+			blue_concrete = true
+			purple_wool = true
+			purple_concrete = true
 
 		[types.cut_block_type.endergetic]
 			poise = true
@@ -872,20 +869,6 @@
 			soulblight = true
 			whistlecane = true
 			whistlecane_mosaic = true
-
-		[types.cut_block_type.ars_zero]
-			corrupted_sourcestone = true
-			corrupted_sourcestone_mosaic = true
-			corrupted_sourcestone_basketweave = true
-			corrupted_sourcestone_alternating = true
-			corrupted_sourcestone_large_bricks = true
-			corrupted_sourcestone_small_bricks = true
-			smooth_corrupted_sourcestone = true
-			smooth_corrupted_sourcestone_mosaic = true
-			smooth_corrupted_sourcestone_basketweave = true
-			smooth_corrupted_sourcestone_alternating = true
-			smooth_corrupted_sourcestone_large_bricks = true
-			smooth_corrupted_sourcestone_small_bricks = true
 
 		[types.cut_block_type.dye_the_world]
 			amber_shingles = true
@@ -980,9 +963,6 @@
 			banister = true
 			hollow_log_climbable = true
 
-		[entries.wood_type.mctb]
-			crafting_table = true
-
 		[entries.wood_type.copperagebackport]
 			shelf = true
 
@@ -993,6 +973,7 @@
 			table = true
 			drawer = true
 			chair = true
+			flower_box = true
 
 		[entries.wood_type.decoration_delight]
 			mosaic = true
@@ -1001,6 +982,9 @@
 			stool = true
 			counter_bend = true
 			counter_corner = true
+
+		[entries.wood_type.vct]
+			crafting_table = true
 
 	[entries.leaves_type]
 

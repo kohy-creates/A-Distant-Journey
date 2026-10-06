@@ -160,19 +160,7 @@ ServerEvents.tick(event => {
 		}
 
 		// Get current lunar forecast
-		/** @type {Internal.Optional_<Internal.LunarForecast_>} */
-		let optional = $EnhancedCelestials.lunarForecastWorldData(server.overworld());
-		let id = null;
-		if (optional.isPresent()) {
-			let data = optional.get();
-			/** @type {Internal.LunarEvent_} */
-			let currentEvent = data.currentLunarEvent();
-			let lunarEventId = server.getOverworld()
-				.registryAccess()
-				.registryOrThrow($EnhancedCelestialsRegistry.LUNAR_EVENT_KEY)
-				.getKey(currentEvent);
-			server.persistentData.lunarEvent = lunarEventId.toString();
-		}
+		server.persistentData.lunarEvent = global.getCurrentLunarEvent(server.overworld());
 
 		if (server.persistentData.lunarEvent === DEFAULT_MOON) {
 			if (server.persistentData.witherStormActive == true) {

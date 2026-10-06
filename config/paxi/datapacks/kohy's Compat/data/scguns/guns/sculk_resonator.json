@@ -1,0 +1,72 @@
+{
+  "display": {
+    "flash": {
+      "size": 1.2,
+      "yOffset": 4.3,
+      "zOffset": -9.4,
+      "textureLocation": "muzzle_flash_11"
+    }
+  },
+  "general": {
+    "weaponType": "sniper",
+    "alwaysSpread": false,
+    "fireMode": "scguns:pulse",
+    "fireTimer": 25,
+    "gripType": "scguns:two_handed",
+    "baseGripType": "scguns:two_handed",
+    "rate": 8,
+    "recoilAngle": 3.5,
+    "recoilKick": 1.0,
+    "spread": 3.0,
+    "meleeDamage": 3.5,
+    "meleeCooldownTicks": 20,
+    "hotBarrelRate": 46,
+    "criticalChance": 0.15,
+    "isSilenced": true
+  },
+  "modules": {
+    "attachments": {
+      "scope": {
+        "size": 0.8,
+        "yOffset": 5.6,
+        "zOffset": 5.2
+      },
+      "stock": {
+        "scale": 0.0
+      }
+    },
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 5.8,
+      "zOffset": 0.75
+    }
+  },
+  "projectile": {
+    "advantage": "scguns:none",
+    "damage": 24.0,
+    "armorPen": 7.5,
+    "ejectsCasing": true,
+    "gravity": false,
+    "item": "scguns:sculk_cell",
+    "casingType": "scguns:empty_cell",
+    "casingParticle": "scguns:iron_casing",
+    "life": 100,
+    "size": 2.0,
+    "speed": 11.0,
+    "trailLengthMultiplier": 0.5
+  },
+  "reloads": {
+    "emptyMagTimer": 30,
+    "maxAmmo": 8,
+    "reloadItem": "scguns:sculk_cell",
+    "reloadTimer": 30,
+    "reloadType": "scguns:mag_fed"
+  },
+  "sounds": {
+    "cock": "scguns:item.pistol.cock",
+    "enchantedFire": "scguns:item.sculk.fire",
+    "preFire": "scguns:item.gauss.pre_fire",
+    "fire": "scguns:item.sculk.fire",
+    "reload": "scguns:item.gauss.reload"
+  }
+}

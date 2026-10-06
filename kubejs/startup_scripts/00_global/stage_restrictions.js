@@ -145,7 +145,6 @@ global.stageRestrictions = {
 			/esoterrack/,
 			/moonshale/,
 			/craterstone/,
-			'simplyswords:tainted_relic',
 			'botania:tiny_planet',
 			'botania:tiny_planet_block',
 		],
