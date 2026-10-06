@@ -1474,22 +1474,22 @@
         "value": 100
       }
     },
-    "aggrofix:aggro_amount": {
+    "rediscovered:cimson_veil_damage_scaling": {
       "enabled": false,
       "min": {
-        "default": 0,
-        "value": 0
+        "default": -1024,
+        "value": -1024
       },
       "max": {
         "default": 1024,
         "value": 1024
       }
     },
-    "rediscovered:cimson_veil_damage_scaling": {
+    "aggrofix:aggro_amount": {
       "enabled": false,
       "min": {
-        "default": -1024,
-        "value": -1024
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 1024,

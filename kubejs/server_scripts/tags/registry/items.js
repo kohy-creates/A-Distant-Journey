@@ -689,5 +689,9 @@ ServerEvents.tags('item', tags => {
 	tags.add('adj:stools', [
 		/decoration_delight:.*stool/,
 		/everycomp:ddr\/.*\/.*_stool/
-	])
+	]);
+
+	tags.add('adj:legacy', [
+		/kubejs:legacy\/.*/,
+	]);
 });

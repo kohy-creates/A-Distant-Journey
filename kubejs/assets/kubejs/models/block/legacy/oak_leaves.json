@@ -3,5 +3,5 @@
 	"textures": {
 		"all": "kubejs:block/legacy/oak_leaves"
 	},
-	"render_type": "minecraft:solid"
+	"render_type": "minecraft:cutout_mipped"
 }

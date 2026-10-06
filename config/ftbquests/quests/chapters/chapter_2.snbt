@@ -11,6 +11,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_nether_ores_2.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: -3.5d
@@ -21,6 +22,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_aether_dirt.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: -1.5d
@@ -29,6 +31,7 @@
 		{
 			height: 1.75d
 			image: "minecraft:block/beacon_glass"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -2.5d
@@ -37,6 +40,7 @@
 		{
 			height: 1.75d
 			image: "rediscovered:block/nether_reactor_core"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -4.0d
@@ -46,6 +50,7 @@
 			dependency: "574DD3FD26A23CDE"
 			height: 1.75d
 			image: "aether:block/utility/altar_side"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.75d
 			x: 2.0d
@@ -55,6 +60,7 @@
 			dependency: "574DD3FD26A23CDE"
 			height: 1.75d
 			image: "aether:block/construction/enchanted_gravitite"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 4.5d
@@ -63,6 +69,7 @@
 		{
 			height: 6.0d
 			image: "adj:textures/texts/lore_aether.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 12.0d
 			x: 4.0d
@@ -72,6 +79,7 @@
 			dependency: "574DD3FD26A23CDE"
 			height: 1.75d
 			image: "ancient_aether:block/valkyrum_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -7.0d
@@ -80,6 +88,7 @@
 		{
 			height: 5.0d
 			image: "adj:textures/texts/chapter_2.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 5.0d
 			x: 2.5d
@@ -90,6 +99,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_aether_dirt.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 180.0d
 			width: 10.0d
 			x: 3.5d
@@ -99,6 +109,7 @@
 			click: "quest_enhance:text_v3:1.0:17:minecraft:default<b>STARTS HARDMODE!"
 			height: 0.4583333333333333d
 			image: ""
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 4.5d
 			x: 0.5d
@@ -108,6 +119,7 @@
 			click: "quest_enhance:text_v3:1.0:17:minecraft:defaultComplete only when you're ready!"
 			height: 0.4583333333333333d
 			image: ""
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 6.958333333333333d
 			x: 0.5d
@@ -125,6 +137,7 @@
 			hide_until_deps_complete: true
 			icon: "mythicmetals:palladium_ingot"
 			id: "24B17C04E6963192"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Go to the very depths of The Nether in search of Palladium"
 			tasks: [
 				{
@@ -162,6 +175,7 @@
 			hide_until_deps_complete: true
 			icon: "minecraft:glowstone"
 			id: "574DD3FD26A23CDE"
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 2.0d
 			subtitle: "Venture into The Aether, a hostile paradise"
@@ -189,6 +203,7 @@
 				}
 			}
 			id: "62D18A72555F22DC"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft any Zanite Tool"
 			tasks: [{
 				id: "549CF55ABD5B9244"
@@ -254,6 +269,7 @@
 				}
 			}
 			id: "3AB9D9EC6B0EE0A0"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Upgrade your Zanite tools to their Gravitite equivalents"
 			tasks: [{
 				id: "721DC7A8BEA9871F"
@@ -314,6 +330,7 @@
 			hide_until_deps_complete: true
 			icon: "aether:bronze_dungeon_key"
 			id: "2BA00BEE5144D82B"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find a Bronze Dungeon"
 			tasks: [
 				{
@@ -342,19 +359,22 @@
 			entity_vis_size: 1.0f
 			icon: "aether:carved_stone"
 			id: "353921E41B80F09D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Kill the Slider, an animated block of bricks"
 			tasks: [{
 				entity: "aether:slider"
 				entity_use_tag: false
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
 				entity_vis_offset_y: 0.0f
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "aether:bronze_dungeon_key"
@@ -373,6 +393,7 @@
 			hide_until_deps_complete: true
 			icon: "aether:gold_dungeon_key"
 			id: "501980860925DC72"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find a Gold Dungeon"
 			tasks: [
 				{
@@ -403,6 +424,7 @@
 			hide_until_deps_complete: true
 			icon: "aether:silver_dungeon_key"
 			id: "554D78E50EBB7EF8"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find a Silver Dungeon"
 			tasks: [
 				{
@@ -433,6 +455,7 @@
 			hide_until_deps_complete: true
 			icon: "lost_aether_content:platinum_key"
 			id: "170CD4B41CA6F9C1"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find a Platinum Dungeon"
 			tasks: [
 				{
@@ -461,19 +484,22 @@
 			entity_vis_size: 1.0f
 			icon: "aether:victory_medal"
 			id: "0CC3E441C652E02E"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Kill the Valkyrie Queen, the leader of the Aether's fiercest fighters"
 			tasks: [{
 				entity: "aether:valkyrie_queen"
 				entity_use_tag: false
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
 				entity_vis_offset_y: 0.0f
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "aether:silver_dungeon_key"
@@ -490,19 +516,22 @@
 			entity_vis_size: 1.0f
 			icon: "aether:sun_altar"
 			id: "464BE56223B9DADC"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Kill the Sun Spirit, the one that divides the Day from the Night"
 			tasks: [{
 				entity: "aether:sun_spirit"
 				entity_use_tag: false
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
 				entity_vis_offset_y: 0.0f
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "aether:gold_dungeon_key"
@@ -519,19 +548,22 @@
 			entity_vis_size: 1.0f
 			icon: "lost_aether_content:gale_stone"
 			id: "72FA802480074182"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Kill the Aerwhale King. He's... the King of Aerwhales... I think that one doesn't need much explaining"
 			tasks: [{
 				entity: "lost_aether_content:aerwhale_king"
 				entity_use_tag: false
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
 				entity_vis_offset_y: 0.0f
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "lost_aether_content:platinum_key"
@@ -555,6 +587,7 @@
 			hide_until_deps_complete: false
 			icon: "kubejs:eye_of_angels"
 			id: "545C995B87BA0947"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Collect the Eye of Angels"
@@ -571,7 +604,8 @@
 			dependencies: ["3B047A7072164813"]
 			entity_vis_size: 1.0f
 			id: "6541FB163E3300CE"
-			subtitle: "Construct an Aether Altar"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "Construct a Zanite Altar"
 			tasks: [{
 				id: "0BF0A396571796CD"
 				item: "aether:altar"
@@ -594,6 +628,7 @@
 			}
 			id: "6F34F5362D1545A9"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Infuse a Veridium Tool by right clicking it with an Ambrosium Shard"
 			tasks: [
@@ -671,6 +706,7 @@
 			dependencies: ["574DD3FD26A23CDE"]
 			entity_vis_size: 1.0f
 			id: "3B047A7072164813"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Get a Zanite Gemstone"
 			tasks: [{
 				id: "56D7E60990E88E8E"
@@ -686,6 +722,7 @@
 			entity_vis_size: 1.0f
 			id: "6AA0B069D1C702F1"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Obtain Icestone"
 			tasks: [{
@@ -709,6 +746,7 @@
 			}
 			icon_scale: 0.75d
 			id: "7AC81FC627CCB30B"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft a full set of Gravitite armor"
@@ -768,6 +806,7 @@
 			hide_until_deps_complete: true
 			icon_scale: 0.75d
 			id: "1ADCB4CAD715CCB6"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft a Beacon"
@@ -798,6 +837,7 @@
 			icon_scale: 0.75d
 			id: "3CF2A61BB7C8D79B"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft a Nether Reactor Core"
@@ -815,6 +855,7 @@
 			entity_vis_size: 1.0f
 			id: "4309E836BAF22148"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Find a Hammer of Kingbdogz in a Bronze Dungeon"
 			tasks: [{
@@ -839,6 +880,7 @@
 			hide_until_deps_complete: true
 			icon: "ancient_aether:laboratory_dungeon_key"
 			id: "70CB0A3DAA970B81"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find a Sentry Laboratory"
 			tasks: [
 				{
@@ -867,19 +909,22 @@
 			entity_vis_size: 1.0f
 			icon: "aether:aechor_petal"
 			id: "2F46F962D867A81D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Kill the Mutated Aechor Plant"
 			tasks: [{
 				entity: "ancient_aether:mutated_aechor_plant"
 				entity_use_tag: false
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
 				entity_vis_offset_y: 0.0f
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "ancient_aether:laboratory_dungeon_key"
@@ -896,6 +941,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "47D482E31D5852AE"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Forge a Valkyrum Ingot"
@@ -914,6 +960,7 @@
 			icon: "aether:aether_grass_block"
 			id: "20130F300D432015"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 3.0d
 			subtitle: "<i>If hell is forever, then heaven must be a lie...?"
@@ -931,6 +978,7 @@
 			entity_vis_size: 1.0f
 			id: "4E98AEFF38CB858E"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Find an Aerbound Cape in a Bronze Dungeon"
 			tasks: [{

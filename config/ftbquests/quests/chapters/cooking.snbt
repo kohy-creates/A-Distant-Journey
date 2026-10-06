@@ -10,6 +10,7 @@
 		{
 			height: 1.75d
 			image: "nethervinery:block/crimson_crate_top"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -9.0d
@@ -18,6 +19,7 @@
 		{
 			height: 1.75d
 			image: "create:block/bearing_top"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -7.5d
@@ -26,6 +28,7 @@
 		{
 			height: 1.75d
 			image: "minecraft:block/smithing_table_top"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 3.0d
@@ -34,6 +37,7 @@
 		{
 			height: 1.75d
 			image: "neapolitan:block/vanilla_cake_top"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 1.0d
@@ -43,6 +47,7 @@
 			dependency: "5F89BD9F8F5373EC"
 			height: 1.75d
 			image: "minecraft:block/cake_top"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.75d
 			x: 3.0d
@@ -51,6 +56,7 @@
 		{
 			height: 1.75d
 			image: "quark:block/iron_pillar_top"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -4.0d
@@ -74,6 +80,7 @@
 			disable_toast: true
 			entity_vis_size: 1.0f
 			id: "1E5E55D6C87BAA30"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "&oRequires 'Time to Farm!'"
 			tasks: [{
 				id: "6AC23B0FABE2E0D6"
@@ -88,6 +95,7 @@
 			dependencies: ["1E5E55D6C87BAA30"]
 			entity_vis_size: 1.0f
 			id: "59292630076634C2"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Construct a Stove"
@@ -105,6 +113,7 @@
 			entity_vis_size: 1.0f
 			icon: "farmersdelight:cooking_pot"
 			id: "4939DB41E905F987"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make a Frying Pan and a Cooking Pot"
 			tasks: [
 				{
@@ -133,6 +142,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:wheat_seeds"
 			id: "4FCBD845E6A74E67"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Collect and plant some seeds"
@@ -176,6 +186,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:honeycomb"
 			id: "1245EDB9C524ACC7"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Gather some Honeycombs and a Honey Bottle from a Beehive or a Bee Nest"
@@ -200,6 +211,7 @@
 			dependencies: ["4FCBD845E6A74E67"]
 			entity_vis_size: 1.0f
 			id: "74019EFD0ED8F657"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Mechanical Harvester"
 			tasks: [{
 				id: "7EF9308BDE820C3D"
@@ -249,6 +261,7 @@
 			icon: "create:mechanical_bearing"
 			icon_scale: 0.75d
 			id: "5A7B54BA138CB903"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "&oBecause I know this can be intimidating at times..."
@@ -322,6 +335,7 @@
 			icon: "sliceanddice:fertilizer_bucket"
 			id: "527267F3EB74C2DA"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Craft Liquid Fertilizer. You can use Sprinklers to spray it down on your plants"
 			tasks: [
@@ -347,6 +361,7 @@
 			entity_vis_size: 1.0f
 			icon: "brewinandchewin:keg"
 			id: "7BABB7161F25736B"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Craft a Keg to start brewing the funny stuff"
@@ -364,6 +379,7 @@
 			entity_vis_size: 1.0f
 			icon: "vinery:red_grape"
 			id: "7D4147C7C4278ADB"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Collect some wild Grapes"
 			tasks: [{
 				id: "5EC5351189D00F77"
@@ -386,6 +402,7 @@
 			entity_vis_size: 1.0f
 			id: "63792CCA3D65640C"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Craft an Agricarnation"
 			tasks: [{
@@ -405,6 +422,7 @@
 			entity_vis_size: 1.0f
 			icon: "vinery:cristel_wine"
 			id: "2CE5A910A9C7B3EA"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Brew one of each - a bottle of Red Wine and a bottle of White Wine"
 			tasks: [
 				{
@@ -440,6 +458,7 @@
 			dependencies: ["7BABB7161F25736B"]
 			entity_vis_size: 1.0f
 			id: "235B6E77FA1030A1"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Brew some Beer"
 			tasks: [{
 				id: "328AE406A5B629F3"
@@ -454,6 +473,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "4CE7BE7B3B7783F0"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Brew Netherite Nectar"
@@ -475,6 +495,7 @@
 			entity_vis_size: 1.0f
 			icon: "vinery:grapevine_pot"
 			id: "56D06670965D8835"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Stomp some Grapes down into juice and then collect it into a Wine Bottle"
 			tasks: [
 				{
@@ -510,6 +531,7 @@
 			entity_vis_size: 1.0f
 			icon: "vinery:grapevine_stem"
 			id: "0CB78B0B5CFD4B70"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft some Grapevine Stems to grown your Grapes on"
 			tasks: [
 				{
@@ -532,6 +554,7 @@
 			entity_vis_size: 1.0f
 			icon: "waxed:wax_block"
 			id: "19D5270E71350796"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make some Wax"
 			tasks: [
 				{
@@ -554,6 +577,7 @@
 			entity_vis_size: 1.0f
 			icon: "farmersdelight:cutting_board"
 			id: "33A3600023AC54F3"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make a Cutting Board and a simple Knife"
 			tasks: [
 				{
@@ -581,6 +605,7 @@
 			dependencies: ["4939DB41E905F987"]
 			entity_vis_size: 1.0f
 			id: "4FCCFD3ED32E4990"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make some Chicken Soup - a Polish special!"
 			tasks: [{
 				id: "6D9D435B7DCB2AD5"
@@ -595,6 +620,7 @@
 			entity_vis_size: 1.0f
 			id: "5AACD96F037CA267"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Craft Rich Soil. It can be tilled into a more powerful variant of Farmland"
 			tasks: [{
@@ -611,6 +637,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "7F07DA3194E316D1"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Put all of your Culinary Efforts into making a Pot of Fiery Fondue"
@@ -628,6 +655,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:wheat_flour"
 			id: "73777E71CF66626E"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Mill some Wheat Flour and form some Wheat Dough"
 			tasks: [
 				{
@@ -649,6 +677,7 @@
 			dependencies: ["73777E71CF66626E"]
 			entity_vis_size: 1.0f
 			id: "5F89BD9F8F5373EC"
+			quest_enhance_disable_scroll_paging: false
 			shape: "square"
 			size: 1.0d
 			subtitle: "Bake a Cake"
@@ -666,6 +695,7 @@
 			description: [""]
 			entity_vis_size: 1.0f
 			id: "369CDCF4288D6D76"
+			quest_enhance_disable_scroll_paging: false
 			shape: "square"
 			subtitle: "Jessy, we need to bake bread"
 			tasks: [{
@@ -683,6 +713,7 @@
 			icon: "neapolitan:strawberry_cake"
 			icon_scale: 0.75d
 			id: "79DA3ADFEC24981C"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft every Cake variant"
@@ -752,6 +783,7 @@
 			entity_vis_size: 1.0f
 			icon: "waxed:wick"
 			id: "7DBB43B9F1F335F2"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make a large candle by placing a Wick on top of any Wax Pillars"
 			tasks: [
 				{
@@ -780,6 +812,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "488261B2768FC805"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Upgrade your Beer. 'Upgrade' is actually such a funny word in this scenario"
@@ -798,6 +831,7 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "54930731DEEDD96B"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 4.0d
 			subtitle: "Imbue an Awakened Ender Pearl with everything that is tasty and turn it into the Eye of Hedonism"
@@ -815,6 +849,7 @@
 			entity_vis_size: 1.0f
 			icon: "vinery:oak_wine_rack_mid"
 			id: "490262D80FA1C0E0"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft any Wine Rack to store your manufactured goods"
 			tasks: [{
 				id: "7F2821ECC6D75632"

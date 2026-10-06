@@ -14,7 +14,8 @@
 	id: "6605A4D24E60B3C0"
 	images: [{
 		height: 1.75d
-		image: "hearth_and_home:block/large_pot_bottom"
+		image: "clayworks:block/chiseled_terracotta_bricks"
+		quest_enhance_exclude_from_box_selection: false
 		rotation: 45.0d
 		width: 1.75d
 		x: 3.0d
@@ -36,6 +37,7 @@
 			}
 			icon_scale: 0.75d
 			id: "7599371BBE1AC566"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Craft a Brush and start your adventure with archeology!"
@@ -60,6 +62,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:brewer_pottery_sherd"
 			id: "6E9DF0158B30E01A"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find any Pottery Sherd"
 			tasks: [{
 				id: "63BA22B3E34163EA"
@@ -81,6 +84,7 @@
 			dependencies: ["6E9DF0158B30E01A"]
 			entity_vis_size: 1.0f
 			id: "64335FCCDBA15F48"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Decorated Pot"
 			tasks: [{
 				id: "60DBA07C307D79E2"
@@ -97,6 +101,7 @@
 			hide_dependency_lines: true
 			icon: "betterarcheology:creeper_fossil"
 			id: "6865B0C04EAC4594"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Reconstruct a Creeper Fossil"
 			tasks: [
 				{
@@ -125,6 +130,7 @@
 			hide_dependency_lines: true
 			icon: "betterarcheology:villager_fossil"
 			id: "1E4D545A61F74667"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Reconstruct a Villager Fossil"
 			tasks: [
 				{
@@ -153,6 +159,7 @@
 			hide_dependency_lines: true
 			icon: "betterarcheology:chicken_fossil"
 			id: "42B5BF0604C002C1"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Reconstruct a Chicken Fossil"
 			tasks: [
 				{
@@ -181,6 +188,7 @@
 			hide_dependency_lines: true
 			icon: "betterarcheology:ocelot_fossil"
 			id: "16A61FB994D9009C"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Reconstruct an Ocelot Fossil"
 			tasks: [
 				{
@@ -209,6 +217,7 @@
 			hide_dependency_lines: true
 			icon: "betterarcheology:wolf_fossil"
 			id: "47315ED04C15EF9B"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Reconstruct a Wolf Fossil"
 			tasks: [
 				{
@@ -237,6 +246,7 @@
 			hide_dependency_lines: true
 			icon: "betterarcheology:sheep_fossil"
 			id: "11A56196F5E45885"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Reconstruct a Sheep Fossil"
 			tasks: [
 				{
@@ -265,6 +275,7 @@
 			hide_dependency_lines: true
 			icon: "betterarcheology:guardian_fossil"
 			id: "54DB18D8A01CF54B"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Reconstruct a Guardian Fossil"
 			tasks: [
 				{
@@ -293,6 +304,7 @@
 			icon: "minecraft:prize_pottery_sherd"
 			icon_scale: 0.75d
 			id: "45EB941110554E0E"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "2ADAE38C80D95EC1"
 				type: "xp"
@@ -502,6 +514,7 @@
 			entity_vis_size: 1.0f
 			icon: "quark:ancient_sapling"
 			id: "2E0C540677F75107"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "2365117D8584400E"
 				type: "xp"
@@ -558,6 +571,7 @@
 			dependencies: ["7599371BBE1AC566"]
 			entity_vis_size: 1.0f
 			id: "71C9D73CA3D6B704"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft an Archeology Table"
 			tasks: [{
 				id: "60D56783FD620999"
@@ -572,6 +586,7 @@
 			dependencies: ["7599371BBE1AC566"]
 			entity_vis_size: 1.0f
 			id: "10E23382BDF3B0D3"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find a Sniffer Egg"
 			tasks: [{
 				id: "5B68DDAB62403EEA"
@@ -587,6 +602,12 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "34BDAD6C0CC939AA"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "394BCA51A5919C49"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			subtitle: "Find a Totem of Radiance"
 			tasks: [{
 				id: "2918AF7F85F4FD2D"
@@ -603,6 +624,12 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "363286DEAB1138D6"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "32CDA05EC9B182B9"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			subtitle: "Find a Totem of Growth"
 			tasks: [{
 				id: "4A47B8502B0699E8"
@@ -618,6 +645,12 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "59D525C3C29FF263"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "128C923A60D28665"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			subtitle: "Find a Totem of Souls"
 			tasks: [{
 				id: "5EC2257A4DDBFC20"
@@ -639,6 +672,12 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "2E8EC728EFDBF100"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "1125777B952D0FB5"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			subtitle: "Find a Totem of Torrents"
 			tasks: [{
 				id: "6A7051CC9C870055"
@@ -660,6 +699,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "40E1904B75697867"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "Find a Relic music disc"

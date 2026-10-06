@@ -804,6 +804,7 @@
 			orange_concrete = true
 			blue_concrete = true
 			purple_concrete = true
+			"legacy/large_bricks" = true
 
 		[types.cut_block_type.endergetic]
 			poise = true
@@ -992,7 +993,6 @@
 			table = true
 			drawer = true
 			chair = true
-			flower_box = true
 
 		[entries.wood_type.decoration_delight]
 			mosaic = true

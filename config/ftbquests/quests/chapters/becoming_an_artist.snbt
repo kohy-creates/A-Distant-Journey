@@ -10,6 +10,7 @@
 		{
 			height: 3.0d
 			image: "amendments:block/music_discs/additionaladditions/music_disc_0308"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 3.0d
 			x: 3.0d
@@ -18,6 +19,7 @@
 		{
 			height: 2.0d
 			image: "exposure:block/lightroom_top"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: -7.5d
@@ -27,6 +29,7 @@
 			dependency: "1DC3FEA4EA21551B"
 			height: 3.0d
 			image: "exposure:item/photograph"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 3.0d
 			x: -11.0d
@@ -44,6 +47,7 @@
 			entity_vis_size: 1.0f
 			icon: "exposure:camera"
 			id: "3A017BDC7B799F5B"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Craft a Camera and insert any Film Roll into it"
@@ -76,6 +80,7 @@
 			entity_vis_size: 1.0f
 			icon: "xercapaint:item_palette"
 			id: "4BECD0660111B4AC"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Craft an Easel, a Palette, a Canvas and start painting!"
@@ -112,6 +117,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:music_disc_blocks"
 			id: "74568A8CB40BC9F8"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Find any Music Disc"
@@ -136,6 +142,7 @@
 			description: ["&7&lHINT:&r It's easy, just combine them together in your crafting grid!"]
 			entity_vis_size: 1.0f
 			id: "23B0B9101D01EA1D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Add all 16 Dyes to your Palette"
 			tasks: [{
 				id: "030423BDD7DD87C9"
@@ -174,6 +181,7 @@
 			entity_vis_size: 1.0f
 			icon: "exposure:developed_black_and_white_film"
 			id: "5B5CD3D317CB17D8"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Combine your Film Rolls with a specific fluid to develop them and prepare for printing"
 			tasks: [{
 				id: "204358405949711C"
@@ -196,6 +204,7 @@
 			entity_vis_size: 1.0f
 			icon: "exposure:lightroom"
 			id: "1DC3FEA4EA21551B"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Lightroom and print your photos"
 			tasks: [
 				{
@@ -217,6 +226,7 @@
 			dependencies: ["1DC3FEA4EA21551B"]
 			entity_vis_size: 1.0f
 			id: "44E3D99502AA96EF"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Photo Album"
 			tasks: [{
 				id: "69E819262972B3F7"
@@ -231,6 +241,7 @@
 			dependencies: ["1DC3FEA4EA21551B"]
 			entity_vis_size: 1.0f
 			id: "63230A022677527E"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Photograph Frame"
 			tasks: [{
 				id: "41AF07D7FCF06478"
@@ -245,6 +256,7 @@
 			dependencies: ["74568A8CB40BC9F8"]
 			entity_vis_size: 1.0f
 			id: "7F7BF3FBC0B9C8B7"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Smelt the found Music Disc into a Blank Music Disc"
 			tasks: [{
 				id: "66F10D7830336E25"
@@ -259,6 +271,7 @@
 			dependencies: ["74568A8CB40BC9F8"]
 			entity_vis_size: 1.0f
 			id: "4E418BC91C3E9302"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Start your own recording label by... well, crafting a Music Label"
 			tasks: [{
 				id: "13953A08B1C55BA1"
@@ -289,6 +302,7 @@
 			entity_vis_size: 1.0f
 			icon: "etched:etching_table"
 			id: "3A7F4A7413F7B2F3"
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 1.0d
 			subtitle: "Craft an Etching Table and make your own Music Disc"
@@ -318,6 +332,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:writable_book"
 			id: "1B705CEC3EFEB501"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Craft a Book and Quill"
@@ -334,6 +349,7 @@
 			dependencies: ["1B705CEC3EFEB501"]
 			entity_vis_size: 1.0f
 			id: "0AEC92998BCBFFDD"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Sign a Book"
 			tasks: [{
 				id: "7B60F8A0A6881FF5"
@@ -352,6 +368,7 @@
 			dependencies: ["4BECD0660111B4AC"]
 			entity_vis_size: 1.0f
 			id: "5F271343FFAAE7C8"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Magic Painting, which allows you to set an image from a URL"
 			tasks: [{
 				id: "338AA0C84FACA413"
@@ -366,6 +383,7 @@
 			dependencies: ["5F271343FFAAE7C8"]
 			entity_vis_size: 1.0f
 			id: "0216A9D6EED05EDB"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft Grafitti, which roughly works the same way"
 			tasks: [{
 				id: "6AEC25A1857F877B"
@@ -382,6 +400,7 @@
 			entity_vis_size: 1.0f
 			icon: "etcetera:white_sweater"
 			id: "079C23A4EAF805B1"
+			quest_enhance_disable_scroll_paging: false
 			size: 1.0d
 			subtitle: "Obtain any vanity item"
 			tasks: [{
@@ -406,6 +425,7 @@
 			entity_vis_size: 1.0f
 			icon: "transmog:transmogrification_table"
 			id: "2BE780A67DACFE27"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Transmogrification Table and a Void Fragment"
 			tasks: [
 				{
@@ -429,6 +449,7 @@
 			entity_vis_size: 1.0f
 			icon: "accents:sewing_station"
 			id: "7E4B8BBFB0884187"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Craft a Sewing Table"
@@ -445,6 +466,7 @@
 			dependencies: ["7E4B8BBFB0884187"]
 			entity_vis_size: 1.0f
 			id: "5B8BE1C0DADD5B73"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make a famously soft IKEA shark"
 			tasks: [{
 				id: "228D46D772D68069"
@@ -460,6 +482,7 @@
 			entity_vis_size: 1.0f
 			icon: "just_blahaj:pride_blahaj"
 			id: "1782F792B27F2C54"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft any of the special Blahaj variants"
 			tasks: [{
 				id: "073742CD53C3F92B"
@@ -482,6 +505,7 @@
 			entity_vis_size: 1.0f
 			icon: "just_blahaj:red_blahaj"
 			id: "0B5DF52BF17E071A"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Dye your Blahaj any color"
 			tasks: [{
 				id: "56365F7F660BE24B"
@@ -510,6 +534,7 @@
 			disable_toast: true
 			entity_vis_size: 1.0f
 			id: "3DFCD3D89661B5AF"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "&oRequires 'Benchmarking'"
 			tasks: [{
 				id: "6F326C3202DA415C"
@@ -525,6 +550,7 @@
 			entity_vis_size: 1.0f
 			icon: "exposure_expanded:deconverge_filter"
 			id: "087EF13C4C09AE82"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Obtain one of each items that can modify your Camera - a filter, a lens and a flash"
 			tasks: [
 				{
@@ -578,6 +604,7 @@
 				tag: { }
 			}
 			id: "2ECD1945E2D50A86"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Obtain any instrument"

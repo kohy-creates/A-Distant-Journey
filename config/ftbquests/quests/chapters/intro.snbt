@@ -12,6 +12,7 @@
 			height: 10.0d
 			image: "minecraft:textures/map/map_background.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 7.5d
@@ -20,6 +21,7 @@
 		{
 			height: 0.0d
 			image: "adj:textures/other/bg_grass.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 0.0d
 			x: -0.5d
@@ -28,6 +30,7 @@
 		{
 			height: 5.0d
 			image: "adj:textures/other/bg_grass.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: -2.0d
@@ -37,6 +40,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_grass.png"
 			order: -1000
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 3.5d
@@ -48,6 +52,7 @@
 			height: 4.0d
 			image: "structure_gel:item/building_tool_none"
 			order: 3
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 4.0d
 			x: -5.294334375591056d
@@ -57,6 +62,7 @@
 			height: 4.0d
 			image: "structure_gel:item/building_tool_none"
 			order: 4
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 4.0d
 			x: -5.5d
@@ -65,6 +71,7 @@
 		{
 			height: 8.0d
 			image: "adj:textures/other/text_intro.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 9.0d
 			x: 7.607142857142868d
@@ -73,6 +80,7 @@
 		{
 			height: 4.0d
 			image: "adj:textures/texts/title.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 7.5d
@@ -82,6 +90,7 @@
 			click: "quest_enhance:text_v3:1.0:17:minecraft:default<b>Basics"
 			height: 0.4583333333333333d
 			image: ""
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 4.25d
 			x: -2.5d
@@ -91,6 +100,7 @@
 			click: "quest_enhance:text_v3:1.0:17:minecraft:default<b>Tutorials"
 			height: 0.4583333333333333d
 			image: ""
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 4.25d
 			x: 2.0356366564244723d
@@ -100,6 +110,7 @@
 			click: "quest_enhance:text_v3:1.0:17:minecraft:defaultRead first!"
 			height: 0.2997338386995579d
 			image: ""
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.4441721319160516d
 			x: -2.5d
@@ -109,6 +120,7 @@
 			click: "quest_enhance:text_v3:1.0:17:minecraft:defaultRead second!"
 			height: 0.36666666666666664d
 			image: ""
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.2666666666666666d
 			x: 2.1133507335885326d
@@ -117,6 +129,7 @@
 		{
 			height: 1.0d
 			image: "minecraft:item/wooden_sword"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
 			x: -2.5d
@@ -125,6 +138,7 @@
 		{
 			height: 1.0d
 			image: "patchouli:item/book_red"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
 			x: 2.0d
@@ -134,6 +148,7 @@
 			click: "quest_enhance:text_v3:1.5:17:minecraft:default<circle f=0.5>Click me! ↓↓↓"
 			height: 0.3602838006578502d
 			image: ""
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.342875984270169d
 			x: 0.0d
@@ -164,6 +179,7 @@
 			entity_vis_size: 1.0f
 			icon: "botania:cosmetic_questgiver_mark"
 			id: "4A074153AE2D521D"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Click to read"
@@ -206,6 +222,7 @@
 				}
 			}
 			id: "797F46DC75EA4372"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click to read"
 			tasks: [{
 				id: "0D0785AD4D82BA48"
@@ -233,6 +250,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:ender_eye"
 			id: "2482788CF690BB31"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click to read"
 			tasks: [{
 				id: "242CD3E7A91DB6A5"
@@ -256,6 +274,7 @@
 			entity_vis_size: 1.0f
 			icon: "kubejs:eye_of_cinders"
 			id: "7D4DF8809C70CAFC"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click me to read"
 			tasks: [{
 				id: "3FC6110AD8C174DB"
@@ -303,6 +322,7 @@
 				}
 			}
 			id: "3A065070417D1524"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click to read"
 			tasks: [{
 				id: "75053A6D20C802CB"
@@ -347,6 +367,7 @@
 			icon: "via_romana:charting_map"
 			id: "7D7F1AD28AE3CF50"
 			min_required_tasks: 1
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click to read"
 			tasks: [{
 				id: "44A6E7A76A3DD992"
@@ -368,6 +389,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:chest"
 			id: "6C4C8FF43FCED01D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click to read"
 			tasks: [{
 				id: "2E52298834CB5E8F"
@@ -390,6 +412,7 @@
 			entity_vis_size: 1.0f
 			icon: "kubejs:map_atlas"
 			id: "133F7123D4CC512B"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click to read"
 			tasks: [
 				{
@@ -428,6 +451,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "0837881F85485D3F"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click to read"
 			tasks: [{
 				id: "74F644416D689AAB"
@@ -456,6 +480,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "0204327B87A0A113"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click to read"
 			tasks: [{
 				id: "32CE5F99141C2165"
@@ -486,6 +511,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:skeleton_skull"
 			id: "3C005F026A2BEF42"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click to read"
 			tasks: [{
 				id: "157DC079E3EAB986"
@@ -512,6 +538,7 @@
 			entity_vis_size: 1.0f
 			icon: "artifacts:villager_hat"
 			id: "0A034500CAB88067"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click to read"
 			tasks: [{
 				icon: "minecraft:emerald"
@@ -539,6 +566,7 @@
 			icon: "baublemounts:mount_bauble"
 			id: "074605390A97E49A"
 			min_required_tasks: 1
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Click to read"
 			tasks: [
 				{

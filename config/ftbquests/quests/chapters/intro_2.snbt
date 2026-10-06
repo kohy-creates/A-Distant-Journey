@@ -11,6 +11,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_grass.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: -2.5d
@@ -20,6 +21,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_grass_dirt.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 0.0d
@@ -29,6 +31,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_stone_ores.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 8.0d
@@ -37,6 +40,7 @@
 		{
 			height: 2.0d
 			image: "minecraft:block/crafting_table_top"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 0.5d
@@ -45,6 +49,7 @@
 		{
 			height: 1.75d
 			image: "minecraft:block/lava_still"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.75d
 			x: 7.0d
@@ -53,6 +58,7 @@
 		{
 			height: 1.75d
 			image: "enchantinginfuser:block/enchanting_infuser_top_amethyst"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.75d
 			x: 8.690476190476183d
@@ -61,6 +67,7 @@
 		{
 			height: 5.0d
 			image: "adj:textures/texts/chapter_0.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 5.0d
 			x: -3.9166666666666146d
@@ -69,6 +76,7 @@
 		{
 			height: 6.0d
 			image: "adj:textures/texts/quote.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 12.0d
 			x: -5.0d
@@ -77,6 +85,7 @@
 		{
 			height: 1.75d
 			image: "toms_storage:block/cable_frame"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 5.0d
@@ -85,6 +94,7 @@
 		{
 			height: 1.75d
 			image: "phantasm:block/crystal_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 7.0d
@@ -94,6 +104,7 @@
 			dependency: "37D84A7023231586"
 			height: 1.3d
 			image: "heart_crystals:block/heart_crystal"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.3d
 			x: 10.25920067884826d
@@ -103,6 +114,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_nether_ores.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 10.5d
@@ -111,6 +123,7 @@
 		{
 			height: 1.25d
 			image: "minecraft:block/fire_1"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.25d
 			x: 14.25877245100979d
@@ -119,6 +132,7 @@
 		{
 			height: 1.25d
 			image: "minecraft:block/fire_1"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.25d
 			x: 13.209511983361068d
@@ -127,6 +141,7 @@
 		{
 			height: 2.0d
 			image: "minecraft:item/clock_15"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 2.0d
@@ -136,6 +151,7 @@
 			click: "quest_enhance:text_v3:2.5:17:minecraft:defaultRemember to take breaks while playing!"
 			height: 0.4320089614341171d
 			image: ""
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.5135066847075906d
 			x: 1.9846509481327885d
@@ -157,6 +173,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:crafting_table"
 			id: "026E22A534C341CC"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Crafting Table"
 			tasks: [{
 				consume_items: false
@@ -182,6 +199,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:oak_log"
 			id: "1F6BAC344E407291"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Punch a tree until it breaks"
 			tasks: [{
 				consume_items: false
@@ -213,6 +231,7 @@
 				}
 			}
 			id: "5DFE46287A0322BD"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Use Planks and Sticks to make a Wooden Pickaxe"
 			tasks: [{
 				icon: {
@@ -241,6 +260,7 @@
 			dependencies: ["5DFE46287A0322BD"]
 			entity_vis_size: 1.0f
 			id: "29721E49C8325EBE"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Construct a better pickaxe"
 			tasks: [{
 				id: "0443D99042D3B0C5"
@@ -262,6 +282,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:furnace"
 			id: "610F4BE5F7B24952"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Construct a Furnace"
 			tasks: [{
 				id: "6569ED4000ED7847"
@@ -283,6 +304,7 @@
 			dependencies: ["4C1D62C4B13A0CE0"]
 			entity_vis_size: 1.0f
 			id: "31AA8F1C7BAE7AC3"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft an Iron Pickaxe"
 			tasks: [{
 				id: "63FB152ABAC6B10C"
@@ -304,6 +326,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:lava_bucket"
 			id: "5C8C8742F4C523FA"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Fill a Bucket with lava"
 			tasks: [
 				{
@@ -325,6 +348,7 @@
 			dependencies: ["31AA8F1C7BAE7AC3"]
 			entity_vis_size: 1.0f
 			id: "2EBA35960CB17035"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Aquire Diamonds"
 			tasks: [{
 				id: "78A1A0FF04D20514"
@@ -343,6 +367,7 @@
 			dependency_requirement: "one_completed"
 			entity_vis_size: 1.0f
 			id: "5C3628B6D376AB8F"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Obtain a block of Obsidian"
 			tasks: [{
 				id: "287AE10F0CB7D310"
@@ -367,6 +392,7 @@
 				}
 			}
 			id: "43D3C4FD06261327"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Diamond Pickaxe"
 			tasks: [
 				{
@@ -435,6 +461,7 @@
 			icon: "enchantinginfuser:enchanting_infuser"
 			id: "22391120726D6ACC"
 			min_required_tasks: 1
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft an Enchanting Table"
 			tasks: [{
 				id: "769864387A7FC8AF"
@@ -462,6 +489,7 @@
 			entity_vis_size: 1.0f
 			icon: "alloy_forgery:cracked_stone_bricks_forge_controller"
 			id: "6D19FADBF72AC531"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Tier 1 Forge Controller and build an Alloy Forge"
 			tasks: [
 				{
@@ -523,6 +551,7 @@
 				}
 			}
 			id: "3C48F0B4F29CF0A8"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Use Planks and Sticks to make a Wooden Hoe"
 			tasks: [{
 				icon: {
@@ -558,6 +587,7 @@
 				}
 			}
 			id: "7D5AA020D867BC37"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Use Planks and Sticks to make a Wooden Sword"
 			tasks: [{
 				id: "72BFBFF806AF3EB7"
@@ -586,6 +616,7 @@
 				}
 			}
 			id: "24C394F8AF478CB5"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Use Planks and Sticks to make a Wooden Axe"
 			tasks: [{
 				icon: {
@@ -622,6 +653,7 @@
 			}
 			id: "779E264F220CF3AF"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Construct one type of each tool"
 			tasks: [
@@ -759,6 +791,7 @@
 			dependencies: ["4C1D62C4B13A0CE0"]
 			entity_vis_size: 1.0f
 			id: "522528FDCD548F12"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Flint and Steel"
 			tasks: [{
 				id: "2C44B417BF2369BF"
@@ -790,6 +823,7 @@
 			entity_vis_size: 1.0f
 			id: "282EF85EE78976F5"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Place down a Campfire"
 			tasks: [{
@@ -810,6 +844,7 @@
 			dependencies: ["6D19FADBF72AC531"]
 			entity_vis_size: 1.0f
 			id: "538833C00E37489D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft Rose Gold Alloy in an Alloy Forge"
 			tasks: [{
 				id: "669CD2A8178F4F1C"
@@ -825,6 +860,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:bookshelf"
 			id: "56CC6B18F6C297AC"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Build some Bookshelves around your Infuser to increase its power"
 			tasks: [{
 				id: "71DCC2E013993464"
@@ -858,6 +894,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "1770E10AFE083ACF"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft Limitite to increase an item's enchantment cap"
@@ -874,6 +911,7 @@
 			dependencies: ["026E22A534C341CC"]
 			entity_vis_size: 1.0f
 			id: "6967EAC78DBCC52D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Fishing Rod out of Sticks and Strings"
 			tasks: [{
 				icon: {
@@ -907,6 +945,7 @@
 			dependencies: ["6967EAC78DBCC52D"]
 			entity_vis_size: 1.0f
 			id: "1FA64BA25CA7A8D3"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Catch a fish"
 			tasks: [{
 				advancement: "adj:fish_something"
@@ -924,6 +963,7 @@
 			dependencies: ["7D5AA020D867BC37"]
 			entity_vis_size: 1.0f
 			id: "18F794CFEE554641"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Get some Leather"
 			tasks: [{
 				id: "698AFF5FEE94EE45"
@@ -949,6 +989,7 @@
 			}
 			icon_scale: 0.75d
 			id: "3CEF12213D904295"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft a Backpack to increase your inventory space"
@@ -987,6 +1028,7 @@
 			}
 			id: "65B45B23ECAC37CA"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft Wooden Armor and a Wooden Shield"
 			tasks: [
 				{
@@ -1059,6 +1101,7 @@
 			entity_vis_size: 1.0f
 			id: "6D4E948B6A4CE5E1"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Cook and eat a Pork Chop"
 			tasks: [{
@@ -1074,6 +1117,7 @@
 			disable_toast: true
 			entity_vis_size: 1.0f
 			id: "23FAB8177B6ED9C6"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "<i>The start of your adventure"
@@ -1093,6 +1137,7 @@
 			dependencies: ["5C3628B6D376AB8F"]
 			entity_vis_size: 1.0f
 			id: "5C22BA84223D3925"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Obtain Crying Obsidian"
 			tasks: [{
 				id: "627049E3ED30DCB4"
@@ -1111,6 +1156,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:iron_ingot"
 			id: "4C1D62C4B13A0CE0"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Forge an Iron Ingot"
 			tasks: [{
 				id: "0289862B6D741998"
@@ -1132,6 +1178,7 @@
 			entity_vis_size: 1.0f
 			icon: "heart_crystals:heart_crystal"
 			id: "37D84A7023231586"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "1F8901EEA0DAEE91"
 				type: "xp"
@@ -1166,6 +1213,7 @@
 			entity_vis_size: 1.0f
 			id: "212630BDD7C97684"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Make a Heart Lantern"
 			tasks: [{
@@ -1183,6 +1231,7 @@
 			entity_vis_size: 1.0f
 			icon: "kubejs:grappling_hook"
 			id: "5A9AE6E82354F04A"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Grappling Hook"
 			tasks: [{
 				id: "60AAD36177785B01"
@@ -1217,6 +1266,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:netherrack"
 			id: "491BB986AF2FDC03"
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 2.0d
 			subtitle: "Build and enter a Nether Portal"
@@ -1236,6 +1286,7 @@
 			entity_vis_size: 1.0f
 			hide_dependent_lines: true
 			id: "7458825F53732676"
+			quest_enhance_disable_scroll_paging: false
 			shape: "none"
 			size: 0.2d
 			tasks: [{
@@ -1250,6 +1301,7 @@
 		{
 			entity_vis_size: 1.0f
 			id: "2DF7AB8A848B03C7"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Survive your first night"
 			tasks: [{
 				days: 1
@@ -1263,6 +1315,7 @@
 		{
 			entity_vis_size: 1.0f
 			id: "03D772F6F00C87DE"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Play for a full in-game week"
 			tasks: [{
 				days: 7
@@ -1276,6 +1329,7 @@
 		{
 			entity_vis_size: 1.0f
 			id: "403BA5A04B3E83AE"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			subtitle: "Play for a 100 days"
 			tasks: [{
@@ -1301,18 +1355,21 @@
 			entity_vis_size: 1.0f
 			id: "5D74F7762EAD237B"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Build a Jumbo Furnace. <i>Why</i> is this even a thing..."
 			tasks: [{
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
 				entity_vis_offset_y: 0.0f
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "jumbofurnace:jumbo_furnace"

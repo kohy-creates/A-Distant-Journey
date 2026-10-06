@@ -35,7 +35,7 @@
 
 		function registerBannerPatternItem(id, properties) {
 			createCustom(`${id}_banner_pattern`, new $BannerPatternItem(
-				$TagKey.create($Registries.BANNER_PATTERN, global.resourceLocation('adj', `pattern_item/${id}`)),
+				$TagKey.create($Registries.BANNER_PATTERN, global.resourceLocation(`adj:pattern_item/${id}`)),
 				global.getOrDefault(properties, new $ItemProperties().stacksTo(1))
 			), 'minecraft:item/mojang_banner_pattern');
 		}
@@ -60,8 +60,15 @@
 			let lootTable = modAndEntity[0] + '_' + modAndEntity[1] + (suffix ? `_${suffix}` : '');
 			registry.createCustom(
 				'treasure_bag_' + modAndEntity[1] + (suffix ? `_${suffix}` : ''), () =>
-				new $TreasureBag(global.resourceLocation('kubejs', 'treasure_bag/' + lootTable))
-			).displayName(displayName);
+				new JavaAdapter(
+					$TreasureBag,
+					{
+						/* isFoil */m_5812_: (stack) => {
+							return suffix === 'hardmode';
+						}
+					},
+					global.resourceLocation('kubejs:treasure_bag/' + lootTable)
+				)).displayName(displayName);
 
 			let lootFilePath = 'kubejs/data/kubejs/loot_tables/treasure_bag/' + lootTable + '.json';
 			global.writeJsonIfAbsent(lootFilePath, {}, `Created missing loot table for treasure bag: ${lootFilePath}`);

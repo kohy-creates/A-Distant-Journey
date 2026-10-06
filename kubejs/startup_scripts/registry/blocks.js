@@ -229,6 +229,8 @@ StartupEvents.registry('block', registry => {
 
 	registerBlockSet('legacy/bricks', 'Ancient Bricks', 'kubejs:block/legacy/bricks', 2, 6, 'mineable/pickaxe', true, SoundType.STONE, 'red');
 
+	registerBlockSet('legacy/large_bricks', 'Ancient Large Bricks', 'kubejs:block/legacy/large_bricks', 2, 6, 'mineable/pickaxe', true, SoundType.STONE, 'red');
+
 	registry.create('legacy/clay')
 		.hardness(0.6)
 		.resistance(0.6)
@@ -368,6 +370,24 @@ StartupEvents.registry('block', registry => {
 		.tagBlock('mineable/pickaxe')
 		.requiresTool(true)
 		.displayName('Ancient Iron Block');
+
+	registry.create('legacy/ruby_ore')
+		.hardness(3)
+		.resistance(3)
+		.mapColor('stone')
+		.soundType(SoundType.STONE)
+		.tagBlock('mineable/pickaxe')
+		.requiresTool(true)
+		.displayName('Ancient Ruby Ore');
+
+	registry.create('legacy/ruby_block')
+		.hardness(5)
+		.resistance(6)
+		.mapColor('light_gray')
+		.soundType(SoundType.METAL)
+		.tagBlock('mineable/pickaxe')
+		.requiresTool(true)
+		.displayName('Ancient Ruby Block');
 
 	registry.create('legacy/iron_ore')
 		.hardness(3)
@@ -953,4 +973,8 @@ StartupEvents.registry('block', registry => {
 			.requiresTool(true)
 			.tagBlock('mineable/pickaxe');
 	});
+
+	// Crops for alchemy plants
+	registry.create('daybloom_plant', 'crop')
+		
 });

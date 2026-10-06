@@ -11,6 +11,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_grass_dirt.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 180.0d
 			width: 10.0d
 			x: 0.5d
@@ -20,6 +21,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_stone_ores_3.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: -2.0d
@@ -30,6 +32,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_tainted_flesh.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 14.5d
@@ -40,6 +43,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_tainted_blocks.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 180.0d
 			width: 10.0d
 			x: 1.0d
@@ -50,6 +54,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_tainted_blocks.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 6.5d
@@ -58,6 +63,7 @@
 		{
 			height: 5.0d
 			image: "adj:textures/texts/chapter_5.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 5.0d
 			x: 7.5d
@@ -66,6 +72,7 @@
 		{
 			height: 6.0d
 			image: "adj:textures/texts/lore_command_block.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 12.0d
 			x: 10.0d
@@ -74,6 +81,7 @@
 		{
 			height: 1.75d
 			image: "mythicmetals:block/unobtainium_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -0.5d
@@ -83,6 +91,7 @@
 			dependency: "3E479B783B24C730"
 			height: 5.0d
 			image: "adj:textures/texts/chapter_5_5.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 5.0d
 			x: 6.5d
@@ -92,6 +101,7 @@
 			dependency: "3E479B783B24C730"
 			height: 1.75d
 			image: "witherstormmod:block/formidibomb_side"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 8.0d
@@ -101,6 +111,7 @@
 			dependency: "603D3F9B2298333B"
 			height: 1.75d
 			image: "witherstormmod:block/tainted_glass"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 16.5d
@@ -109,6 +120,7 @@
 		{
 			height: 1.75d
 			image: "mythicmetals:block/celestium_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -2.5d
@@ -118,6 +130,7 @@
 			dependency: "3E479B783B24C730"
 			height: 1.75d
 			image: "witherstormmod:block/withered_phlegm_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 0.5d
@@ -126,6 +139,7 @@
 		{
 			height: 1.75d
 			image: "minecraft:block/command_block_back"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 4.5d
@@ -135,6 +149,7 @@
 			dependency: "3E479B783B24C730"
 			height: 6.0d
 			image: "adj:textures/texts/lore_witherstorm.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 12.0d
 			x: 7.0d
@@ -152,6 +167,7 @@
 			icon: "witherstormmod:tainted_dirt"
 			id: "1D11D475F590FFE4"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 3.0d
 			subtitle: "<i>What a mystery...?"
@@ -169,6 +185,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "4C8E061A81250AC1"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Attune a Compass to locate the Command Block and follow where it leads you to"
 			tasks: [{
 				id: "21961F7969A95231"
@@ -204,6 +221,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "06E7DBDB7C7A790A"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Find the Command Block"
@@ -226,6 +244,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "41BD18823BE31271"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Descend into the caves one final time in search for Unobtainium"
@@ -242,6 +261,7 @@
 			dependencies: ["41BD18823BE31271"]
 			entity_vis_size: 1.0f
 			id: "646540B4C4803445"
+			quest_enhance_disable_scroll_paging: false
 			shape: "pentagon"
 			subtitle: "Create Metallurgium - the toughest of alloys to ever exist"
 			tasks: [{
@@ -260,6 +280,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "3915141D30CD6CB0"
+			quest_enhance_disable_scroll_paging: false
 			shape: "pentagon"
 			subtitle: "Create Celestium - the most magical of alloys to ever exist"
 			tasks: [{
@@ -277,19 +298,22 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "3E479B783B24C730"
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 2.0d
 			subtitle: "Finish what's already there"
 			tasks: [{
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
 				entity_vis_offset_y: 0.0f
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "minecraft:wither_skeleton_skull"
@@ -320,20 +344,23 @@
 			hide_until_deps_complete: true
 			icon: "witherstormmod:command_block_book"
 			id: "1F2003EDC1D3B0A4"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Kill a Withered Symbiont and collect an Enchanted Command Block Book"
 			tasks: [
 				{
 					entity: "witherstormmod:withered_symbiont"
 					entity_use_tag: false
+					entity_vis_cycle_seconds: 0.0f
+					entity_vis_enabled: false
 					entity_vis_idle_mode: "USE_GLOBAL"
 					entity_vis_offset_x: 0.0f
 					entity_vis_offset_y: 0.0f
 					entity_vis_rotation: 0.0f
 					entity_vis_silhouette_mode: "NONE"
 					entity_vis_size: 1.0f
+					entity_vis_slim_arms: false
 					entity_vis_spin_mode: "USE_GLOBAL"
 					entity_vis_tag_cycle_mode: "USE_GLOBAL"
-					entity_vis_tag_cycle_seconds: 0.0f
 					entity_vis_use_as_quest_icon: false
 					entity_vis_walk_mode: "USE_GLOBAL"
 					icon: "witherstormmod:withered_symbiont_spawn_egg"
@@ -357,6 +384,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "2E334E5F94908B83"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft an Amulet to help with tracking the Wither Storm"
 			tasks: [{
 				id: "332222E6A97091AF"
@@ -376,6 +404,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "59B252C7E4C71A35"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Construct a Formidibomb"
@@ -396,6 +425,7 @@
 			dependencies: ["59B252C7E4C71A35"]
 			entity_vis_size: 1.0f
 			id: "636684C648DFFC9D"
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 2.0d
 			subtitle: "Blow up the Wither Storm with a Formidibomb"
@@ -422,6 +452,7 @@
 			}
 			id: "4283AEC8BB7FD410"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Link an Amulet to 4 different mobs, one per color"
 			tasks: [{
@@ -447,6 +478,7 @@
 			entity_vis_size: 1.0f
 			id: "603D3F9B2298333B"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Witness The Wither Storm coming back from the dead"
@@ -468,6 +500,7 @@
 			hide_until_deps_complete: true
 			icon: "witherstormmod:command_block_sword"
 			id: "19068C7B62786F99"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Kill another Withered Symbiont and use the dropped Enchanted Command Block Book to craft a Command Block Tool"
 			tasks: [{
 				id: "54B2AC1A87F9E051"
@@ -491,6 +524,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "7832C35257E664E1"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Cure a wither sickened mob by feeding it Golden Apple Stew"
 			tasks: [
 				{
@@ -515,6 +549,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "088E92D166861F41"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Aim an Ender Pearl at the opening in The Wither Storm and enter its inside - The Bowels"
@@ -535,6 +570,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "2FC4D1B2E42E2124"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Destroy the Command Block and kill The Wither Storm, this time for good"
@@ -557,6 +593,7 @@
 			icon_scale: 0.75d
 			id: "52DBAF111AE45F4E"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft a Block of Celestisynth and a Block of Metallurgium"
@@ -581,6 +618,7 @@
 			entity_vis_size: 1.0f
 			icon: "create_cataclysm:cataclysmic_alloy"
 			id: "0E1167447AFB1F55"
+			quest_enhance_disable_scroll_paging: false
 			shape: "pentagon"
 			subtitle: "Forge some Cataclysmic Alloy and press it into a Sheet"
 			tasks: [
@@ -611,6 +649,7 @@
 			entity_vis_size: 1.0f
 			icon: "witherstormmod:withered_bone"
 			id: "494840EAB1FB2573"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Kill some Sickened mobs and collect their drops"
 			tasks: [
 				{
@@ -643,6 +682,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "4EBF126E2037E270"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft or find a Withered Flegm Block"
@@ -659,6 +699,7 @@
 			dependencies: ["494840EAB1FB2573"]
 			entity_vis_size: 1.0f
 			id: "00DE59EBCC3F31C9"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Taint a Carved Pumpkin"
 			tasks: [{
 				id: "6F7F78F71168CC13"
@@ -674,6 +715,7 @@
 			entity_vis_size: 1.0f
 			icon: "witherstorm_delight:tainted_essence"
 			id: "3E2EF52784EFF652"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Cook up some Tainted Essence"
 			tasks: [{
 				id: "3166BA4E00CA4A2D"
@@ -688,6 +730,7 @@
 			dependencies: ["3E479B783B24C730"]
 			entity_vis_size: 1.0f
 			id: "46ADC2671999F886"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Phasometer to keep track of The Wither Storm from a safe distance"
 			tasks: [{
 				id: "41B7D86F86EDB81C"
@@ -707,6 +750,7 @@
 			entity_vis_size: 1.0f
 			icon: "witherstorm_delight:withered_rice"
 			id: "4FC46C0A664132B9"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Taint some cooking ingredients"
 			tasks: [
 				{
@@ -738,6 +782,7 @@
 			dependencies: ["0E1167447AFB1F55"]
 			entity_vis_size: 1.0f
 			id: "6859B8EE1EAE71B2"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Creative Motor"
 			tasks: [{
 				id: "3EC64B40A4EFB3E7"

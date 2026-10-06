@@ -47,7 +47,7 @@ const $FlowerBlock = Java.loadClass('net.minecraft.world.level.block.FlowerBlock
 const $FlowerPotBlock = Java.loadClass('net.minecraft.world.level.block.FlowerPotBlock');
 const $RootBlock = Java.loadClass('net.minecraft.world.level.block.RootsBlock');
 const $BlahajBlock = Java.loadClass('justblahaj.block.BlueBlahajBlock');
-const $Block = Java.loadClass('net.minecraft.world.level.block.Block')
+const $Block = Java.loadClass('net.minecraft.world.level.block.Block');
 
 const $MobEffects = Java.loadClass('net.minecraft.world.effect.MobEffects');
 
@@ -64,7 +64,8 @@ let legacyCraftingTable, legacyGrassBlock, legacyFurnace,
 	maroonBlahaj, roseBlahaj, coralBlahaj, indigoBlahaj,
 	navyBlahaj, slateBlahaj, oliveBlahaj, amberBlahaj,
 	beigeBlahaj, tealBlahaj, mintBlahaj, aquaBlahaj,
-	verdantBlahaj, forestBlahaj, gingerBlahaj, tanBlahaj;
+	verdantBlahaj, forestBlahaj, gingerBlahaj, tanBlahaj,
+	legacyOakSapling, legacyBirchSapling, legacySpruceSapling, legacyJungleSapling;
 
 /// ----------------------------------------------------------- ///
 
@@ -84,11 +85,11 @@ StartupEvents.registry('block', registry => {
 	 * @param {object} model 
 	 * @param {Internal.BlockBehaviour$Properties_} properties 
 	 */
-	function registerCustomBlock(id, block, model, properties, isAdapter) {
+	function registerCustomBlock(id, block, model, properties) {
 		JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, model);
 		global.writeJsonIfAbsent(`kubejs/assets/kubejs/blockstates/${id}.json`, noVariantBlockstate(id), `Created missing blockstate definition for block '${id}'`);
 		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, defaultLootTable(id), `Created missing loot table for block '${id}'`);
-		return registry.createCustom(id, ((isAdapter) ? (() => block) : ((properties) ? () => new block(properties) : block)));
+		return registry.createCustom(id, (properties) ? () => new block(properties) : block);
 	};
 
 	legacyCraftingTable = registerCustomBlock(
@@ -145,28 +146,28 @@ StartupEvents.registry('block', registry => {
 	legacyOakLeaves = registerCustomBlock(
 		'legacy/oak_leaves',
 		$LeavesBlock,
-		CustomBlockRegistry.Model.simple('kubejs:block/legacy/oak_leaves'),
+		CustomBlockRegistry.Model.simple('kubejs:block/legacy/oak_leaves', 'minecraft:cutout_mipped'),
 		$BlockProperties.copy(Blocks.OAK_LEAVES).sound(SoundType.GRASS)
 	);
 
 	legacyBirchLeaves = registerCustomBlock(
 		'legacy/birch_leaves',
 		$LeavesBlock,
-		CustomBlockRegistry.Model.simple('kubejs:block/legacy/birch_leaves'),
+		CustomBlockRegistry.Model.simple('kubejs:block/legacy/birch_leaves', 'minecraft:cutout_mipped'),
 		$BlockProperties.copy(Blocks.BIRCH_LEAVES).sound(SoundType.GRASS)
 	);
 
 	legacySpruceLeaves = registerCustomBlock(
 		'legacy/spruce_leaves',
 		$LeavesBlock,
-		CustomBlockRegistry.Model.simple('kubejs:block/legacy/spruce_leaves'),
+		CustomBlockRegistry.Model.simple('kubejs:block/legacy/spruce_leaves', 'minecraft:cutout_mipped'),
 		$BlockProperties.copy(Blocks.SPRUCE_LEAVES).sound(SoundType.GRASS)
 	);
 
 	legacyJungleLeaves = registerCustomBlock(
 		'legacy/jungle_leaves',
 		$LeavesBlock,
-		CustomBlockRegistry.Model.simple('kubejs:block/legacy/jungle_leaves'),
+		CustomBlockRegistry.Model.simple('kubejs:block/legacy/jungle_leaves', 'minecraft:cutout_mipped'),
 		$BlockProperties.copy(Blocks.JUNGLE_LEAVES).sound(SoundType.GRASS)
 	);
 
@@ -188,13 +189,7 @@ StartupEvents.registry('block', registry => {
 	}
 
 	function registerFlowerBlock(id, effect, duration, properties) {
-		JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, {
-			parent: 'minecraft:block/cross',
-			render_type: 'minecraft:cutout_mipped',
-			textures: {
-				cross: `kubejs:block/${id}`
-			}
-		});
+		JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, CustomBlockRegistry.Model.cross(`kubejs:block/${id}`));
 		global.writeJsonIfAbsent(`kubejs/assets/kubejs/blockstates/${id}.json`, noVariantBlockstate(id), `Created missing blockstate definition for block '${id}'`);
 		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, defaultLootTable(id), `Created missing loot table for block '${id}'`);
 		let builder = registry.createCustom(id, () => new $FlowerBlock(effect, duration, properties))
@@ -216,30 +211,26 @@ StartupEvents.registry('block', registry => {
 		Note to self: for some reason both JavaAdapters in this file so far don't work. 
 		Kube treats them as regular, unedited classes.
 	*/
-	
-	let flowerLike = () => {
-		return new JavaAdapter($RootBlock, {
-			getShape: (blockState, blockGetter, blockPos, collisionContext) => {
-				let box = Block.box(5.0, 0.0, 5.0, 11.0, 10.0, 11.0);
-				let vec3 = blockState.getOffset(blockGetter, blockPos);
-				return box.move(vec3.x, vec3.y, vec3.z);
-			},
-		}, $BlockProperties.copy(Blocks.DANDELION));
-	};
+
+	let flowerLike = () => new JavaAdapter($RootBlock, {
+			/* m_5940_ */getShape: (blockState, blockGetter, blockPos, collisionContext) => { // note to self: if this is active the game crashes, FUCK KUBEJS ONG
+			let box = $Block.box(5.0, 0.0, 5.0, 11.0, 10.0, 11.0);
+			let vec3 = blockState.getOffset(blockGetter, blockPos);
+			return box.move(vec3.x, vec3.y, vec3.z);
+		},
+	}, $BlockProperties.copy(Blocks.DANDELION));
 
 	deathweedBlock = registerCustomBlock(
 		'deathweed',
-		flowerLike(),
-		CustomBlockRegistry.Model.cross('kubejs:block/deathweed'),
-		null, true
+		flowerLike,
+		CustomBlockRegistry.Model.cross('kubejs:block/deathweed')
 	);
 	registerPottedFlowerBlock('deathweed');
 
 	fireblossomBlock = registerCustomBlock(
 		'fireblossom',
-		flowerLike(),
-		CustomBlockRegistry.Model.cross('kubejs:block/fireblossom'),
-		null, true
+		flowerLike,
+		CustomBlockRegistry.Model.cross('kubejs:block/fireblossom')
 	);
 	registerPottedFlowerBlock('fireblossom');
 
@@ -270,11 +261,7 @@ StartupEvents.registry('block', registry => {
 			`Created missing blockstate definition for block '${id}'`
 		);
 		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, defaultLootTable(id), `Created missing loot table for block '${id}'`);
-		return registry.createCustom(id, () => new JavaAdapter($BlahajBlock, {
-			appendHoverText: (itemStack, level, list, flag) => {
-				list.add(Component.translatable(`block.kubejs.${id}.tooltip`));
-			}
-		}));
+		return registry.createCustom(id, () => new $BlahajBlock());
 	}
 
 	maroonBlahaj = createBlahaj('maroon');
@@ -293,6 +280,31 @@ StartupEvents.registry('block', registry => {
 	forestBlahaj = createBlahaj('forest');
 	gingerBlahaj = createBlahaj('ginger');
 	tanBlahaj = createBlahaj('tan');
+
+	const $KJSTreeGrower = Java.loadClass('xyz.kohara.adjcore.misc.KJSTreeGrower');
+	const $KJSMegaTreeGrower = Java.loadClass('xyz.kohara.adjcore.misc.KJSMegaTreeGrower');
+	function registerSapling(id, featureNormal, featureLarge, properties) {
+
+		let grower;
+		if (featureLarge) {
+			grower = new $KJSMegaTreeGrower(global.resourceLocation(featureNormal), global.resourceLocation(featureLarge));
+		}
+		else {
+			grower = new $KJSTreeGrower(global.resourceLocation(featureNormal));
+		}
+
+		JsonIO.write(`kubejs/assets/kubejs/models/block/${id}.json`, CustomBlockRegistry.Model.cross(`kubejs:block/${id}`));
+		global.writeJsonIfAbsent(`kubejs/assets/kubejs/blockstates/${id}.json`, noVariantBlockstate(id), `Created missing blockstate definition for block '${id}'`);
+		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, defaultLootTable(id), `Created missing loot table for block '${id}'`);
+
+		registerPottedFlowerBlock(id);
+		return registry.createCustom(id, () => new $SaplingBlock(grower, properties));
+	}
+
+	legacyOakSapling = registerSapling('legacy_oak_sapling', 'adj:legacy/oak', null, $BlockProperties.copy(Blocks.OAK_SAPLING));
+	legacyBirchSapling = registerSapling('legacy_birch_sapling', 'adj:legacy/birch', null, $BlockProperties.copy(Blocks.BIRCH_SAPLING));
+	legacySpruceSapling = registerSapling('legacy_spruce_sapling', 'adj:legacy/spruce', 'adj:legacy/spruce_mega', $BlockProperties.copy(Blocks.SPRUCE_SAPLING));
+	legacyJungleSapling = registerSapling('legacy_jungle_sapling', 'adj:legacy/jungle', 'adj:legacy/jungle_mega', $BlockProperties.copy(Blocks.JUNGLE_SAPLING));
 });
 
 /// ----------------------------------------------------------- ///
@@ -348,4 +360,8 @@ StartupEvents.registry('item', registry => {
 	registerBlockItem('forest_blahaj', forestBlahaj);
 	registerBlockItem('ginger_blahaj', gingerBlahaj);
 	registerBlockItem('tan_blahaj', tanBlahaj);
+	registerBlockItem('legacy_oak_sapling', legacyOakSapling, true);
+	registerBlockItem('legacy_birch_sapling', legacyBirchSapling, true);
+	registerBlockItem('legacy_spruce_sapling', legacySpruceSapling, true);
+	registerBlockItem('legacy_jungle_sapling', legacyJungleSapling, true);
 });

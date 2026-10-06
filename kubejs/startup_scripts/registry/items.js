@@ -333,11 +333,11 @@ StartupEvents.registry('item', registry => {
 	], 'dark', 300, 'rare');
 
 	registerArmorSet([
-		'Wither Helmet',
-		'Wither Chestplate',
-		'Wither Leggings',
-		'Wither Boots'
-	], 'wither', 300, 'rare');
+		'Ancient Plate Helmet',
+		'Ancient Plate Chestplate',
+		'Ancient Plate Leggings',
+		'Ancient Plate Boots'
+	], 'legacy_plate', 300);
 
 	// Upgraded Sand Paper
 	registry.create('soul_sand_paper', 'create:sandpaper')
@@ -1390,6 +1390,9 @@ StartupEvents.registry('item', registry => {
 	registry.create('legacy/emerald')
 		.displayName('Ancient Emerald')
 
+	registry.create('legacy/ruby')
+		.displayName('Ancient Ruby')
+
 	registry.create('legacy/feather')
 		.displayName('Ancient Feather')
 
@@ -1650,16 +1653,6 @@ ItemEvents.armorTierRegistry(event => {
 		tier.knockbackResistance = 0
 	});
 
-	event.add('wither', tier => {
-		tier.durabilityMultiplier = 4
-		tier.slotProtections = [0, 1, 1, 1]
-		tier.enchantmentValue = 5
-		tier.equipSound = 'minecraft:item.armor.equip_turtle'
-		tier.repairIngredient = 'coal'
-		tier.toughness = 0
-		tier.knockbackResistance = 0
-	});
-
 	event.add('templar', tier => {
 		tier.durabilityMultiplier = 4
 		tier.slotProtections = [0, 1, 1, 1]
@@ -1763,5 +1756,14 @@ ItemEvents.toolTierRegistry(event => {
 		tier.level = 3
 		tier.enchantmentValue = 10
 		tier.repairIngredient = 'kubejs:legacy/diamond'
+	});
+
+	event.add('legacy_plate', tier => {
+		tier.uses = 1561
+		tier.speed = 8
+		tier.attackDamageBonus = 3
+		tier.level = 3
+		tier.enchantmentValue = 8
+		tier.repairIngredient = 'kubejs:legacy/iron_ingot'
 	});
 });

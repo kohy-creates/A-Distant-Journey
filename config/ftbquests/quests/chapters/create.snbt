@@ -10,6 +10,7 @@
 		{
 			height: 1.75d
 			image: "toms_storage:block/cable_frame"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -0.5d
@@ -18,6 +19,7 @@
 		{
 			height: 1.75d
 			image: "createutilities:block/void_casing"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -4.0d
@@ -26,6 +28,7 @@
 		{
 			height: 1.75d
 			image: "create_connected:block/fan_catalyst_core"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 7.5d
@@ -34,6 +37,7 @@
 		{
 			height: 1.75d
 			image: "create:block/symmetry_mirror"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 2.0d
@@ -42,6 +46,7 @@
 		{
 			height: 1.75d
 			image: "create:block/rose_quartz_lamp_powered"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -2.0d
@@ -51,6 +56,7 @@
 			dependency: "1F26665F0A3C4065"
 			height: 3.0d
 			image: "constructionwand:item/infinity_wand"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: -45.0d
 			width: 3.0d
 			x: 1.0d
@@ -76,6 +82,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "57A550E2F3090147"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Here be contraptions"
@@ -93,6 +100,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:cogwheel"
 			id: "3393638E574BEB0D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a set of Cogwheels"
 			tasks: [
 				{
@@ -119,6 +127,7 @@
 			dependencies: ["57A550E2F3090147"]
 			entity_vis_size: 1.0f
 			id: "6F6E4CEDDF413E18"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Apply Andesite Alloy to a Stripped Log and make Andesite Casing"
 			tasks: [{
 				id: "2A7B545F8598ED8D"
@@ -133,6 +142,7 @@
 			dependencies: ["3393638E574BEB0D"]
 			entity_vis_size: 1.0f
 			id: "7F7BED49AACB2F52"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make a Water Wheel - the easiest way to generate stress for your machines"
 			tasks: [{
 				id: "1DC4245D09C2696F"
@@ -148,6 +158,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:mechanical_press"
 			id: "0288AADCBD95EB2D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Mechanical Press and use it to make some Sheets"
 			tasks: [
 				{
@@ -177,6 +188,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:encased_fan"
 			id: "105677C4F6A081CA"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft an Encased Fan"
 			tasks: [
 				{
@@ -201,6 +213,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "6D5E23CA57F59F07"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Combine Gold and Copper in an Alloy Forge to form Brass"
 			tasks: [{
 				id: "24E744B3F4049788"
@@ -215,6 +228,7 @@
 			dependencies: ["6D5E23CA57F59F07"]
 			entity_vis_size: 1.0f
 			id: "1FA28AA6F3F8D048"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Apply a Brass Sheet to a Stripped Log and make Brass Casing"
 			tasks: [{
 				id: "1F3E9D527B42A4CF"
@@ -229,6 +243,7 @@
 			dependencies: ["74E81719E903F908"]
 			entity_vis_size: 1.0f
 			id: "4AF5A14D685A8B9D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a pair of Crushing Wheels"
 			tasks: [{
 				count: 2L
@@ -244,6 +259,7 @@
 			dependencies: ["6F6E4CEDDF413E18"]
 			entity_vis_size: 1.0f
 			id: "4AA3A489F54FA379"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Chunk Loader"
 			tasks: [{
 				id: "43C5C4460E2C0149"
@@ -262,6 +278,7 @@
 			entity_vis_size: 1.0f
 			icon: "create_hypertube:hypertube_entrance"
 			id: "76EC8D76904524E9"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft some Hypertubes"
 			tasks: [
 				{
@@ -284,6 +301,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:polished_rose_quartz"
 			id: "52D84E41D1800FE6"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Polish up some Rose Quartz and turn it into an Electron Tube"
 			tasks: [
 				{
@@ -305,6 +323,7 @@
 			dependencies: ["2E41E0EED9433EE0"]
 			entity_vis_size: 1.0f
 			id: "4FC3696D42A25C66"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a set of Redstone Links"
 			tasks: [{
 				count: 2L
@@ -320,6 +339,7 @@
 			dependencies: ["52D84E41D1800FE6"]
 			entity_vis_size: 1.0f
 			id: "20C40A85BDDEC015"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Deployer"
 			tasks: [{
 				id: "2B04AAF98AF70D11"
@@ -334,6 +354,7 @@
 			dependencies: ["6D5E23CA57F59F07"]
 			entity_vis_size: 1.0f
 			id: "782BB3D700FBD243"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Assemble a Precision Mechanism"
 			tasks: [{
 				id: "6EAE41FC90B444B3"
@@ -349,6 +370,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:wrench"
 			id: "3AF5D7FFED311674"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft some steampunker's essentials"
 			tasks: [
 				{
@@ -372,6 +394,7 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "4DD3CEFFA4141525"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 4.0d
 			subtitle: "Forge the Eye of Ethercraft"
@@ -388,6 +411,7 @@
 			dependencies: ["1FA28AA6F3F8D048"]
 			entity_vis_size: 1.0f
 			id: "74E81719E903F908"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Mechanical Crafter"
 			tasks: [{
 				id: "4B87ABF9543ADF6B"
@@ -405,6 +429,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "0AB70F7FD4C43431"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Brass Chunk Loader"
 			tasks: [{
 				id: "1A73E353608797DA"
@@ -419,6 +444,7 @@
 			dependencies: ["57A550E2F3090147"]
 			entity_vis_size: 1.0f
 			id: "0C69FB2C66E26894"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a tube of Super Glue to keep your contraptions together"
 			tasks: [{
 				id: "3FFA3B910A57A546"
@@ -440,6 +466,7 @@
 			entity_vis_size: 1.0f
 			id: "1F7EC6B4AE7F015A"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Craft a Hypertube Accelerator"
 			tasks: [{
@@ -456,6 +483,7 @@
 			entity_vis_size: 1.0f
 			icon: "createutilities:void_casing"
 			id: "28583EFCD06F1117"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Void Steel Ingot and Void Casing"
 			tasks: [
 				{
@@ -477,6 +505,7 @@
 			dependencies: ["3393638E574BEB0D"]
 			entity_vis_size: 1.0f
 			id: "469D3A0EDD34A3DD"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Mechanical Belt"
 			tasks: [{
 				id: "0152C4C78E9EF518"
@@ -492,6 +521,7 @@
 			entity_vis_size: 1.0f
 			id: "1ED1728E638D38FA"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Craft a weapon forbidden by the Geneva Convetion"
 			tasks: [{
@@ -522,6 +552,7 @@
 			}
 			icon_scale: 0.75d
 			id: "1F26665F0A3C4065"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft any Construction Wand"
@@ -545,6 +576,7 @@
 			dependencies: ["0288AADCBD95EB2D"]
 			entity_vis_size: 1.0f
 			id: "6DE114694DBEDAF9"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make yourself some good old Cardboard!"
 			tasks: [{
 				id: "22690B2D1BB11B6A"
@@ -561,6 +593,7 @@
 			icon: "create:cardboard_sword"
 			id: "616FF40D22D802A4"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Become THE warrior of Cardboard"
 			tasks: [
@@ -622,6 +655,7 @@
 			dependencies: ["0288AADCBD95EB2D"]
 			entity_vis_size: 1.0f
 			id: "425B181E9952E9B4"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Chute"
 			tasks: [{
 				id: "21ED3E9E9D61A1A1"
@@ -638,6 +672,7 @@
 			icon: "createutilities:void_chest"
 			icon_scale: 0.75d
 			id: "2B0A1D5A6C3DE343"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft all means of wireless transmission of materials"
@@ -667,6 +702,7 @@
 			description: ["&7&lHINT: &rYou don't need &6Catalysts&r to enable Fan recipes (like e.g. &9Haunting&r), but they save some space and are safer to use than leaving open fires around."]
 			entity_vis_size: 1.0f
 			id: "41AAF22B7E5F60E6"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make a Fan Catalyst"
 			tasks: [{
 				id: "29BACAA35F289154"
@@ -683,6 +719,7 @@
 			icon: "create_connected:fan_blasting_catalyst"
 			icon_scale: 0.75d
 			id: "4CFE9D721C7866BA"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft every Fan Catalyst variant"
@@ -717,6 +754,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "33A6791C74B51E03"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft a Wand of Symmetry"
@@ -733,6 +771,7 @@
 			dependencies: ["57A550E2F3090147"]
 			entity_vis_size: 1.0f
 			id: "78B17C7E84E71049"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Apply a Copper Sheet to a Stripped Log and make Copper Casing"
 			tasks: [{
 				id: "557D809E6DB3A1A3"
@@ -747,6 +786,7 @@
 			dependencies: ["78B17C7E84E71049"]
 			entity_vis_size: 1.0f
 			id: "46250305F85E7380"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make a Spout to splash liquids onto items below"
 			tasks: [{
 				id: "5B3B09B7171C246E"
@@ -762,6 +802,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:fluid_pipe"
 			id: "6D0A8E49329601B1"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make some Fluid Pipes"
 			tasks: [
 				{
@@ -789,6 +830,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:blaze_burner"
 			id: "245F2D587B782EDD"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Catch a Blaze into a Blaze Burner"
 			tasks: [
 				{
@@ -810,6 +852,7 @@
 			dependencies: ["7EDDEFE957513B50"]
 			entity_vis_size: 1.0f
 			id: "79057ED4D8791502"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Dark Tank. Multiple can be combined to increase capacity."
 			tasks: [{
 				id: "5B7629229ECBF47A"
@@ -831,6 +874,7 @@
 			dependencies: ["78B17C7E84E71049"]
 			entity_vis_size: 1.0f
 			id: "7EDDEFE957513B50"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Fluid Tank"
 			tasks: [{
 				id: "325D1AF582AA8DCB"
@@ -845,6 +889,7 @@
 			dependencies: ["6F6E4CEDDF413E18"]
 			entity_vis_size: 1.0f
 			id: "662943A1F3D11D75"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Millstone"
 			tasks: [{
 				id: "1B8F6DEA26AB9F94"
@@ -860,6 +905,7 @@
 			entity_vis_size: 1.0f
 			icon: "kubejs:iron_dust"
 			id: "248650C7DEACA661"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Crush raw ores into Ore Dust to effectively multiply your mining trip results"
 			tasks: [{
 				id: "0CF2C6577A34DE3B"
@@ -882,6 +928,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:andesite_tunnel"
 			id: "309AF9E713F69FF9"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft one of each - an Andesite Tunnel and an Andesite Funnel"
 			tasks: [
 				{
@@ -904,6 +951,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:white_sail"
 			id: "249B2F4ECDC6790A"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Construct a simple Windmill to power your machines"
 			tasks: [
 				{
@@ -927,6 +975,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:powdered_obsidian"
 			id: "2B77F8D93AF67B2E"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Using your new, stronger crusher, crush some Obsidian and form the outcome dust into a Sturdy Sheet"
 			tasks: [
 				{
@@ -948,6 +997,7 @@
 			entity_vis_size: 1.0f
 			icon: "morered:red_alloy_ingot"
 			id: "2E41E0EED9433EE0"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Forge some Red Alloy and turn it into much easier to use Cables"
 			tasks: [
 				{
@@ -970,6 +1020,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:pulse_timer"
 			id: "1C83A314A9328906"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft one of each of these fancy pulse stuff blocks. I don't even know what I could use them for"
 			tasks: [
 				{
@@ -1003,6 +1054,7 @@
 			icon: "create:elevator_pulley"
 			icon_scale: 0.75d
 			id: "366E03A71E6D16D0"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Construct a simple elevator"
@@ -1033,6 +1085,7 @@
 			entity_vis_size: 1.0f
 			icon: "createoreexcavation:vein_atlas"
 			id: "0DF7C1D9FD64EC02"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a basic kit that will help you discover hidden ore veins"
 			tasks: [
 				{
@@ -1059,6 +1112,7 @@
 			dependencies: ["245F2D587B782EDD"]
 			entity_vis_size: 1.0f
 			id: "481458F192966C80"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Bake a Blaze Cake to feed your Blaze Burners"
 			tasks: [{
 				id: "3470F56AF26E67B4"
@@ -1077,6 +1131,7 @@
 			entity_vis_size: 1.0f
 			icon: "createoreexcavation:drilling_machine"
 			id: "21FD14EED53159E6"
+			quest_enhance_disable_scroll_paging: false
 			shape: "pentagon"
 			size: 1.5d
 			subtitle: "Start drilling!"
@@ -1100,6 +1155,7 @@
 			dependencies: ["2B77F8D93AF67B2E"]
 			entity_vis_size: 1.0f
 			id: "3F94568833CDFA90"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Apply a Sturdy Sheet to Brass Casing to create Train Casing"
 			tasks: [{
 				id: "06E6E7C67B8DC6DF"
@@ -1115,6 +1171,7 @@
 			entity_vis_size: 1.0f
 			icon: "create:track_station"
 			id: "4D3342044AA6A7EE"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Start constructing some trains!"
 			tasks: [
 				{

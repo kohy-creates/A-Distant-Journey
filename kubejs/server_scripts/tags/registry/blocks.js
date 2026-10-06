@@ -181,6 +181,11 @@ ServerEvents.tags('block', tags => {
 	]);
 
 	tags.add('minecraft:climbable', [
-		/_chain$/
+		'#c:chains'
+	]);
+
+	tags.add('adj:legacy', [
+		/kubejs:legacy\/.*/,
+		/kubejs:legacy_.*/,
 	]);
 });

@@ -12,6 +12,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_grass.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 180.0d
 			width: 10.0d
 			x: -2.2013605442177067d
@@ -21,6 +22,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_stone_ores_3.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 5.678571428571402d
@@ -30,6 +32,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_nether_debris.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 6.893877551020395d
@@ -38,6 +41,7 @@
 		{
 			height: 5.0d
 			image: "adj:textures/texts/chapter_3.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 5.0d
 			x: -3.5d
@@ -46,6 +50,7 @@
 		{
 			height: 1.75d
 			image: "kubejs:block/adamantite_forge_casing"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 4.5d
@@ -54,6 +59,7 @@
 		{
 			height: 1.75d
 			image: "minecraft:block/netherite_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 5.5d
@@ -62,6 +68,7 @@
 		{
 			height: 1.75d
 			image: "aether:block/natural/cold_aercloud"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 3.0d
@@ -70,6 +77,7 @@
 		{
 			height: 6.0d
 			image: "adj:textures/texts/lore_skylands.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 12.0d
 			x: -6.0d
@@ -78,6 +86,7 @@
 		{
 			height: 1.75d
 			image: "mythicmetals:block/mythril_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 6.5d
@@ -86,6 +95,7 @@
 		{
 			height: 1.75d
 			image: "rubinated_nether:block/ruby_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 5.0d
@@ -94,6 +104,7 @@
 		{
 			height: 1.75d
 			image: "mythicmetals:block/palladium_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 1.5d
@@ -103,6 +114,7 @@
 			dependency: "25A8ABBC7235D20E"
 			height: 1.75d
 			image: "rediscovered:block/glowing_obsidian"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -7.0d
@@ -113,6 +125,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_grass.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: -4.5d
@@ -121,6 +134,7 @@
 		{
 			height: 1.75d
 			image: "born_in_chaos_v1:block/bloktiemnoistali"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 4.0d
@@ -142,6 +156,7 @@
 			icon: "kubejs:legacy/grass_block"
 			id: "384A0A8E41D1195E"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 3.0d
 			subtitle: "<i>Welcome to Hardmode! It only gets worse from here"
@@ -167,6 +182,7 @@
 			icon_scale: 0.75d
 			id: "4AA4F99AC384B52F"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Construct a Mythrill Drill"
@@ -207,6 +223,7 @@
 			dependencies: ["6AAB7BBD64FB4562"]
 			entity_vis_size: 1.0f
 			id: "03DC59E95C1B2EB0"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Create Hallowed Alloy. Any resemblance to other games is *purely* a coincidence"
 			tasks: [{
 				id: "123F1C3BA3930C5F"
@@ -223,6 +240,7 @@
 			icon_scale: 0.75d
 			id: "2ED660D1CBFA01C4"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "...and money is everything. Pour time into an Empty Bottle"
@@ -244,6 +262,7 @@
 			description: ["&7&lHINT: &rUnlike other Attuned Eyes, &ethis one works like a Compass&r."]
 			entity_vis_size: 1.0f
 			id: "6EC1FF01974E8D02"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Attune an Awakened Ender Pearl with rubies and follow it in the direction it opens"
 			tasks: [{
 				id: "43EE8AA9BBA103C3"
@@ -258,6 +277,7 @@
 			dependencies: ["384A0A8E41D1195E"]
 			entity_vis_size: 1.0f
 			id: "2B93B1B8E92CAD45"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Return to the Nether depths in search for Netherite"
 			tasks: [{
 				id: "39D90B76B0BA0AEE"
@@ -273,6 +293,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:sheaf_pottery_sherd"
 			id: "0BACB5A08F178376"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find Trail Ruins"
 			tasks: [{
 				icon: "minecraft:decorated_pot"
@@ -298,6 +319,7 @@
 			entity_vis_size: 1.0f
 			icon: "rediscovered:ancient_cherry_leaves"
 			id: "25A8ABBC7235D20E"
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 2.0d
 			subtitle: "Enter The Skylands, a dream of something that never happened"
@@ -318,6 +340,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "2023AD6F8FC8986A"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find a Pigman Village"
 			tasks: [{
 				icon: "minecraft:porkchop"
@@ -335,6 +358,7 @@
 			entity_vis_size: 1.0f
 			icon: "mythicmetals:adamantite_ingot"
 			id: "6AAB7BBD64FB4562"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Return to the depths of the Overworld and gather Adamantite"
 			tasks: [
 				{
@@ -368,6 +392,7 @@
 			}
 			icon_scale: 0.75d
 			id: "2CF8FAA7BD25E298"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft a full set of Netherite armor. You will need it"
@@ -427,6 +452,7 @@
 			icon: "alloy_forgery:adamantite_forge_casing_forge_controller"
 			icon_scale: 0.75d
 			id: "21DCE3A2EA1D35D0"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Construct an Adamantite Forge. It yields even more resources and can smelt Netherite!"
@@ -454,6 +480,7 @@
 			icon: "rediscovered:rose"
 			id: "6F169F4BDE96E88D"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Collect all of the Skylands' unique flora"
 			tasks: [
@@ -484,6 +511,7 @@
 			icon: "aether:life_shard"
 			icon_scale: 0.75d
 			id: "13339DFB11520FBF"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Get to 500 total max health by consuming 10 Life Shards"
@@ -509,6 +537,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "261AEEDB3594893E"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Pickup a Phoenix Cape from a Platinum Dungeon's Chest"
@@ -533,6 +562,7 @@
 			hide_until_deps_complete: true
 			icon_scale: 0.75d
 			id: "04096C5C5F14CD07"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Find and enter a Brick Pyramid"
@@ -551,6 +581,7 @@
 			dependencies: ["04096C5C5F14CD07"]
 			entity_vis_size: 1.0f
 			id: "6E9823FB2C7C6D19"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Kill The Red Dragon and collect the Eye of Dreams"
@@ -570,21 +601,24 @@
 			icon: "born_in_chaos_v1:nightmare_stalker_skull"
 			icon_scale: 0.75d
 			id: "58D9C1D755CC3E6E"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Kill a Nightmare Stalker"
 			tasks: [{
 				entity: "born_in_chaos_v1:nightmare_stalker"
 				entity_use_tag: false
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
 				entity_vis_offset_y: 0.0f
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "born_in_chaos_v1:nightmare_stalker_skull"

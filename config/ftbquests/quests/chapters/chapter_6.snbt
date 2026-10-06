@@ -12,6 +12,7 @@
 			height: 5.609981515711645d
 			image: "adj:textures/other/bg_void.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 30.0d
 			width: 10.0d
 			x: -1.5d
@@ -22,6 +23,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_grass.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 90.0d
 			width: 10.0d
 			x: -1.0d
@@ -31,6 +33,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_grass.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: -90.0d
 			width: 10.0d
 			x: 4.5d
@@ -41,6 +44,7 @@
 			height: 5.609981515711645d
 			image: "adj:textures/other/bg_void.png"
 			order: -998
+			quest_enhance_exclude_from_box_selection: false
 			rotation: -30.0d
 			width: 10.0d
 			x: 5.5d
@@ -49,6 +53,7 @@
 		{
 			height: 1.75d
 			image: "witherstormmod:block/super_beacon_glass"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 2.0d
@@ -58,6 +63,7 @@
 			dependency: "2FC4D1B2E42E2124"
 			height: 1.75d
 			image: "mythicmetals:block/unobtainium_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 4.0d
@@ -67,6 +73,7 @@
 			dependency: "2FC4D1B2E42E2124"
 			height: 1.75d
 			image: "witherstorm_delight:block/wither_stove_top_on"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 0.5d
@@ -76,6 +83,7 @@
 			dependency: "2FC4D1B2E42E2124"
 			height: 5.0d
 			image: "adj:textures/texts/chapter_6.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 5.0d
 			x: 2.0d
@@ -85,6 +93,7 @@
 			dependency: "42307E5368E7BA1C"
 			height: 2.0d
 			image: "kubejs:item/eye_of_cinders"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: -4.0d
@@ -94,6 +103,7 @@
 			dependency: "42307E5368E7BA1C"
 			height: 2.0d
 			image: "kubejs:item/eye_of_angels"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: -1.0d
@@ -103,6 +113,7 @@
 			dependency: "42307E5368E7BA1C"
 			height: 2.0d
 			image: "kubejs:item/eye_of_dreams"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: -2.5d
@@ -112,6 +123,7 @@
 			dependency: "42307E5368E7BA1C"
 			height: 2.0d
 			image: "kubejs:item/eye_of_desolation"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 0.5d
@@ -121,6 +133,7 @@
 			dependency: "42307E5368E7BA1C"
 			height: 2.0d
 			image: "kubejs:item/eye_of_verdant_bloom"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 3.5d
@@ -130,6 +143,7 @@
 			dependency: "42307E5368E7BA1C"
 			height: 2.0d
 			image: "kubejs:item/eye_of_exploration"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 2.0d
@@ -139,6 +153,7 @@
 			dependency: "42307E5368E7BA1C"
 			height: 2.0d
 			image: "kubejs:item/eye_of_arcanum"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 6.5d
@@ -148,6 +163,7 @@
 			dependency: "42307E5368E7BA1C"
 			height: 2.0d
 			image: "kubejs:item/eye_of_ethercraft"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 5.0d
@@ -157,6 +173,7 @@
 			dependency: "42307E5368E7BA1C"
 			height: 2.0d
 			image: "kubejs:item/eye_of_hedonism"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 8.0d
@@ -174,6 +191,7 @@
 			entity_vis_size: 1.0f
 			id: "0FDA4BA49667895C"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 3.0d
 			subtitle: "<i>The final stretch to glory!"
@@ -193,6 +211,7 @@
 			icon: "witherstormmod:super_beacon"
 			icon_scale: 0.75d
 			id: "00BD4BF3FFC6172B"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Build and activate a Super Beacon with 4 Support Beacons"
@@ -225,6 +244,7 @@
 			description: [""]
 			entity_vis_size: 1.0f
 			id: "18F8F611C29DF3A7"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Resummon a Withered Symbiont by tossing appropriate items onto a powered Super Beacon"
 			tasks: [{
 				advancement: "adj:resummon_withered_symbiont"
@@ -243,6 +263,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 1.15d
 			id: "42307E5368E7BA1C"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Fuse all of your collected Eyes back into The Architect's Prism"
@@ -260,6 +281,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "01883CFF273619E2"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft The Zenith, the culmination of the weapons you used throughout the game (and those that you skipped)"
@@ -277,6 +299,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "350D42040726FDDA"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Literally why would you ever go out of your way to bake that"

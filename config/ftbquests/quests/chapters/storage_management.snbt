@@ -16,6 +16,7 @@
 			entity_vis_size: 1.0f
 			icon: "toms_storage:ts.inventory_connector"
 			id: "0B9481F02CACCE1D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft an Inventory Connector and a Storage Terminal and place them together"
 			tasks: [
 				{
@@ -56,6 +57,7 @@
 			entity_vis_size: 1.0f
 			icon: "quark:oak_chest"
 			id: "6A911AFF4185ED0D"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Because your inventory is very limited"
@@ -79,6 +81,7 @@
 			dependencies: ["6A911AFF4185ED0D"]
 			entity_vis_size: 1.0f
 			id: "5BE98BA6A0B68228"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft an Ender Chest"
 			tasks: [{
 				id: "0AFB8351D36B8CAF"
@@ -94,6 +97,7 @@
 			entity_vis_size: 1.0f
 			id: "5BEB59ADDC0C6099"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Upgrade your Storage Terminal into a Crafting Terminal"
 			tasks: [{
@@ -109,6 +113,7 @@
 			dependencies: ["6A911AFF4185ED0D"]
 			entity_vis_size: 1.0f
 			id: "67FFFFBD84B01AD3"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft an Item Vault"
 			tasks: [{
 				id: "64412A69C7451229"
@@ -123,6 +128,7 @@
 			dependencies: ["67FFFFBD84B01AD3"]
 			entity_vis_size: 1.0f
 			id: "169D3B18A90CC7ED"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Storage Drawer. They can hold up to 32 stacks of a single item type"
 			tasks: [{
 				id: "6FC36E60FBEAC2DC"
@@ -137,6 +143,7 @@
 			dependencies: ["169D3B18A90CC7ED"]
 			entity_vis_size: 1.0f
 			id: "7748B4620625A726"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Drawer Upgrade that increases capacity"
 			tasks: [{
 				id: "7979438E4E9F6923"
@@ -155,6 +162,7 @@
 			entity_vis_size: 1.0f
 			icon: "functionalstorage:storage_controller"
 			id: "04E13C2B49FB154D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Storage Controller. You can connect Storage Drawers to it to form a network"
 			tasks: [
 				{
@@ -180,6 +188,7 @@
 			dependencies: ["169D3B18A90CC7ED"]
 			entity_vis_size: 1.0f
 			id: "68BBB1D5801123E8"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Void Drawer Upgrade to prevent overfills"
 			tasks: [{
 				id: "321B87CA2B8A9ECA"
@@ -196,6 +205,7 @@
 			entity_vis_size: 1.0f
 			icon: "supplementaries:sack"
 			id: "31907725CE8ED75D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Collect some Flax and turn it into a Sack"
 			tasks: [
 				{
@@ -217,6 +227,7 @@
 			dependencies: ["6A911AFF4185ED0D"]
 			entity_vis_size: 1.0f
 			id: "72165200201BE4B0"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft some Brass Item Pipes. You can use it to, well, transport items"
 			tasks: [{
 				id: "43137006AF5473E4"
@@ -236,6 +247,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "1B63B128270724DC"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft an Advanced Wireless Terminal"
 			tasks: [{
 				id: "404DFEBD2B9B0D2F"
@@ -251,6 +263,7 @@
 			description: ["&7&lHINT: &rHopperhocks &edon't require Mana to function&r! However, if you provide a constant supply then it's range will be more than doubled."]
 			entity_vis_size: 1.0f
 			id: "5F2D087B979A8FFE"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Hopperhock. It puts nearby dropped items into an adjacent Chest"
 			tasks: [{
 				id: "659CE6493949CD3B"
@@ -280,6 +293,7 @@
 			icon: "botania:corporea_spark_master"
 			id: "24C0C6AFE73F1784"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Create a very simple Corporea Network"
 			tasks: [
@@ -308,6 +322,7 @@
 			description: ["&7&lHINT:&r <color value=CB6D51>Copper Golems</color> will automatically sort items from any nearby <color value=CB6D51>Copper Chest</color> to suitable nearby Chests!"]
 			entity_vis_size: 1.0f
 			id: "16C68B74C0930678"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Summon a Copper Golem by placing a Carved Pumpkin on a Copper Block"
 			tasks: [{
 				block: "minecraft:copper_block"
@@ -328,6 +343,7 @@
 			dependencies: ["6A911AFF4185ED0D"]
 			entity_vis_size: 1.0f
 			id: "5AEAE441317F89D3"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Repository, which acts as a double chest in one block!"
 			tasks: [{
 				id: "377B7D497607D6E5"
@@ -343,6 +359,7 @@
 			entity_vis_size: 1.0f
 			icon: "ars_nouveau:bookwyrm_charm"
 			id: "12FE09325C0BD40F"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Make a relatively simple connected storage system using Bookwyrms"
 			tasks: [
 				{
@@ -374,6 +391,7 @@
 			description: ["&7&lHINT:&r The first slot acts as a filter. &6Golden Hoppers&r will only take &lmatching&r items from the inventory block above them."]
 			entity_vis_size: 1.0f
 			id: "4BEE6F8968A016D7"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "...and because of that we have a Golden Hopper"
 			tasks: [{
 				id: "38E50FE5BCAAE5D4"

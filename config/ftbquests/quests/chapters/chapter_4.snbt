@@ -10,6 +10,7 @@
 		{
 			height: 5.0d
 			image: "adj:textures/texts/chapter_4.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 5.0d
 			x: 0.5d
@@ -19,6 +20,7 @@
 			dependency: "1F3DB68EA2A45EB7"
 			height: 1.75d
 			image: "cataclysm:block/chiseled_end_stone_bricks"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -7.0d
@@ -28,6 +30,7 @@
 			dependency: "1F3DB68EA2A45EB7"
 			height: 2.25d
 			image: "minecraft:item/ender_eye"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.25d
 			x: 1.5d
@@ -37,6 +40,7 @@
 			dependency: "4564BF670D10E0FA"
 			height: 1.75d
 			image: "majruszsdifficulty:block/enderium_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -13.5d
@@ -46,6 +50,7 @@
 			dependency: "6086C058455AE6AD"
 			height: 2.25d
 			image: "cataclysm:item/void_eye"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.25d
 			x: -13.0d
@@ -55,6 +60,7 @@
 			dependency: "4564BF670D10E0FA"
 			height: 1.75d
 			image: "kubejs:block/ender_forge_casing"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -14.0d
@@ -63,6 +69,7 @@
 		{
 			height: 6.0d
 			image: "adj:textures/texts/lore_end.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 12.0d
 			x: -5.0d
@@ -72,6 +79,7 @@
 			dependency: "4564BF670D10E0FA"
 			height: 1.75d
 			image: "cataclysm:block/void_stone"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -14.5d
@@ -81,6 +89,7 @@
 			dependency: "0898408ED8FBAF57"
 			height: 1.75d
 			image: "rediscovered:block/glowing_obsidian"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -6.0d
@@ -90,6 +99,7 @@
 			dependency: "4564BF670D10E0FA"
 			height: 1.75d
 			image: "botania:block/terrasteel_block"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -16.5d
@@ -98,6 +108,7 @@
 		{
 			height: 1.75d
 			image: "phantasm:block/chiseled_obsidian"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: 1.0d
@@ -107,6 +118,7 @@
 			height: 28.0d
 			image: "adj:textures/other/bg_void.png"
 			order: -9999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 50.0d
 			x: -3.0d
@@ -124,6 +136,7 @@
 			icon: "minecraft:end_stone"
 			id: "7EB2D195600E1D0F"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 3.0d
 			subtitle: "<i>Or the beginning? Nah, I can't make the same joke twice..."
@@ -142,6 +155,7 @@
 			icon: "rediscovered:dragon_altar"
 			id: "5C5A43A9E26D16BD"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Craft 4 Dragon Pylons. You can use them to resummon Red Dragon at a Brick Pyramid"
 			tasks: [{
@@ -168,6 +182,7 @@
 			icon: "rediscovered:red_dragon_egg"
 			icon_scale: 0.75d
 			id: "6D854F2600B922BD"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Pour Dragon's Breath onto a Red Dragon Egg and wait for it to hatch"
@@ -191,6 +206,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:ender_eye"
 			id: "23D842B61D6B17F4"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Follow an unattuned Awakened Ender Pearl and see where it guides you to"
 			tasks: [{
 				icon: "minecraft:cracked_stone_bricks"
@@ -213,6 +229,7 @@
 			entity_vis_size: 1.0f
 			icon: "cataclysm:void_stone"
 			id: "1F3DB68EA2A45EB7"
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 2.0d
 			subtitle: "Open a portal to The End and enter the realm where darkness bends"
@@ -235,21 +252,24 @@
 			icon: "minecraft:dragon_head"
 			icon_scale: 0.75d
 			id: "0F84B7A1DA0FDD37"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Break the seal on the dimension by killing the Ender Dragon"
 			tasks: [{
 				entity: "minecraft:ender_dragon"
 				entity_use_tag: false
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
 				entity_vis_offset_y: 0.0f
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "4774CE42F4E427D2"
@@ -266,6 +286,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "02804C4D2D501D99"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Hold a Dragon Egg"
 			tasks: [{
 				id: "2FCFC2EC181605D5"
@@ -281,6 +302,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "0898408ED8FBAF57"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Bottle up some Dragon's Breath"
 			tasks: [{
 				id: "24B7A26E0D0F7800"
@@ -296,6 +318,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "4564BF670D10E0FA"
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 2.0d
 			subtitle: "Leave the main island and explore The End"
@@ -317,6 +340,7 @@
 			hide_until_deps_complete: true
 			icon: "minecraft:end_crystal"
 			id: "3E76EA9BD9A391D8"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Respawn the Ender Dragon with 4 End Crystals"
 			tasks: [
 				{
@@ -343,6 +367,7 @@
 			hide_until_deps_complete: true
 			icon: "unusualend:prismalite_gem"
 			id: "7BEDD5A588278AC2"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Obtain a Shiny Crystal, Prismalite Gem and Citrine Chunk"
 			tasks: [
 				{
@@ -370,6 +395,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "06975D33E820F6B9"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find some Chorus Fruit"
 			tasks: [{
 				id: "6BBA42C9FCE687EA"
@@ -386,6 +412,7 @@
 			hide_until_deps_complete: true
 			icon: "minecraft:purpur_block"
 			id: "22BC61DC0C61020A"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Enter an End City"
 			tasks: [{
 				id: "4FF27C092A04B6A7"
@@ -401,6 +428,7 @@
 			dependencies: ["22BC61DC0C61020A"]
 			entity_vis_size: 1.0f
 			id: "2751CF14E410A5FD"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find an Elytra"
 			tasks: [{
 				id: "10284BC0C550E0DE"
@@ -421,19 +449,22 @@
 			dependencies: ["22BC61DC0C61020A"]
 			entity_vis_size: 1.0f
 			id: "7863434F8F9EAD57"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Kill a Shulker"
 			tasks: [{
 				entity: "minecraft:shulker"
 				entity_use_tag: false
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
 				entity_vis_offset_y: 0.0f
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "minecraft:shulker_box"
@@ -451,6 +482,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "5DAF45D22D8929C9"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find Enderium and mine it out"
 			tasks: [{
 				block: "majruszsdifficulty:enderium_shard_ore"
@@ -472,6 +504,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "6B2AE4F13A56D99C"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Form Enderium - one of the most powerful alloys you can get your hands on"
@@ -492,6 +525,7 @@
 			icon: "endersdelight:pearl_pasta"
 			id: "301E14BDA5580CC4"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Cook some of the more 'delicious' dishes from End's cuisine"
 			tasks: [
@@ -521,6 +555,7 @@
 			icon: "alloy_forgery:ender_forge_casing_forge_controller"
 			icon_scale: 0.75d
 			id: "26E82AD325890954"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Construct an Ender Forge. It's tier 4, so it sure is good"
@@ -545,6 +580,7 @@
 			dependencies: ["26E82AD325890954"]
 			entity_vis_size: 1.0f
 			id: "6E4C5779C4DA9851"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Forge Star Platinum"
 			tasks: [{
 				id: "54324531C9597B5E"
@@ -561,6 +597,7 @@
 			hide_until_deps_complete: true
 			icon: "cataclysm:void_eye"
 			id: "6086C058455AE6AD"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Attune an Awakened Ender Pearl to locate the Citadel"
 			tasks: [{
 				id: "489468EBCC7FACD6"
@@ -576,6 +613,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "640E291225CA8A2A"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Find the Ruined Citadel"
@@ -595,6 +633,7 @@
 			entity_vis_size: 1.0f
 			icon_scale: 0.75d
 			id: "38E1B52E67727660"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Craft a Terra Blade"
@@ -618,6 +657,7 @@
 			entity_vis_size: 1.0f
 			icon: "mythicmetals:prometheum_ingot"
 			id: "0BB72C64921769F6"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Collect and forge some Prometheum"
 			tasks: [
 				{
@@ -648,6 +688,7 @@
 			}
 			icon_scale: 0.75d
 			id: "2EF1045D112DACF5"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Either expose any piece of Phoenix armor to rain or submerge it in water"
@@ -700,6 +741,7 @@
 			dependencies: ["640E291225CA8A2A"]
 			entity_vis_size: 1.0f
 			id: "3F2B685C8C008081"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Kill the Ender Guardian and collect the Eye of Desolation"
@@ -718,6 +760,7 @@
 			entity_vis_size: 1.0f
 			icon: "rediscovered:ruby_flute"
 			id: "2F2686D8E0B921C5"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft or find the gear to ride and tame your own Red Dragon"
 			tasks: [
 				{
@@ -751,6 +794,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:grass_block"
 			id: "70E411F4BD751E0E"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Fly under the Skylands into the Overworld on your Red Dragon"
 			tasks: [{
 				advancement: "adj:red_dragon_move_dimensions"

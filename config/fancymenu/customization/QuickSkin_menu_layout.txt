@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = com.quickskin.mod.client.gui.screen.PlayerSkinMenuScreen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1779640681719
-  is_enabled = true
+  last_edited_time = 1791200567634
+  is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:d9d6cab6-5763-4152-b949-1096ea4c0375-1779640670564] = [groups:][instances:]
+  [loading_requirement_container_meta:c5cebb83-b00a-493b-9c91-f2bf1a46fcc7-1791200543489] = [groups:][instances:]
 }
 
 menu_background {
@@ -59,8 +59,8 @@ menu_background {
 }
 
 menu_background {
-  instance_identifier = 22500193-c416-4aa4-b299-4311a7209aa5-1779639925802
-  background_type = video_mcef
+  instance_identifier = e6abd2a9-e641-4898-b4c7-9ac8913afa7b-1791200543489
+  background_type = video_rinku
   show_background = false
   loop = false
   volume = 1.0
@@ -126,13 +126,6 @@ menu_background {
   mouse_position_requires_hold = false
   opacity_multiplier = 1.0
   show_compile_errors = true
-}
-
-menu_background {
-  instance_identifier = 60909aa0-b198-4e5f-a2f5-32238e84b980-1779639925802
-  background_type = drippy_color_background
-  show_background = false
-  color = #FD5757FF
 }
 
 decoration_overlay {

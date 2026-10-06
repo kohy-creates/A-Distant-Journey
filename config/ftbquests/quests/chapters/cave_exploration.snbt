@@ -12,6 +12,7 @@
 	quests: [{
 		entity_vis_size: 1.0f
 		id: "4ED4E1C82BC94113"
+		quest_enhance_disable_scroll_paging: false
 		shape: "diamond"
 		size: 2.0d
 		tasks: [{

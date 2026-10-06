@@ -66,4 +66,21 @@ StartupEvents.registry('fluid', event => {
 		.thickTexture(0x65219E)
 		.bucketColor(0x65219E)
 		.displayName('Dimensional Juice');
+
+	event.create('nullium')
+		.stillTexture('kubejs:block/nullium')
+		.flowingTexture('kubejs:block/nullium')
+		.displayName('Nullium');
+
+	let legacyWater = event.create('legacy/water')
+		.translucent()
+		.stillTexture('kubejs:block/legacy/water_still')
+		.flowingTexture('kubejs:block/legacy/water_flow')
+		.bucketColor(0x354FF4)
+		.displayName('Legacy Water')
+		.tag('water');
+	legacyWater.createAttributes()
+		.overlayTexture(global.resourceLocation('kubejs:block/legacy/water_overlay'))
+		.convertToSource(true);
+
 });

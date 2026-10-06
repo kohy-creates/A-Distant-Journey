@@ -86,7 +86,7 @@ StartupEvents.registry('item', registry => {
 				data.speed * 1.0,
 				((!data.pullSpeed) ? defaultPullSpeed : data.pullSpeed) * 1.0,
 				!!data.isCreative,
-				global.resourceLocation('kubejs', 'textures/entity/hook/' + type + '.png'),
+				global.resourceLocation('kubejs:textures/entity/hook/' + type + '.png'),
 				DEFAULT_PARTICLE_DATA.supplier,
 				DEFAULT_PARTICLE_DATA.min,
 				DEFAULT_PARTICLE_DATA.max,
@@ -136,7 +136,7 @@ StartupEvents.postInit(() => {
 			$ChainRegistry.registerChain(
 				id.replace('_hook', ''),
 				() => $BuiltInRegistries.BLOCK.get(
-					global.resourceLocation('kubejs', `${id}_chain`)
+					global.resourceLocation(`kubejs:block/${id}_chain`)
 				)
 			);
 		}

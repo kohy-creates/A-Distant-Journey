@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 	}
 
 	function dyeDepotId(color, namespaceA, namespaceB, templateID) {
-		return global.ifDyeDepot(color, namespaceA, namespaceB) + templateID.replace('DYE', color);
+		return global.ifDyeDepot(color, namespaceA, namespaceB) + ':' + templateID.replace('DYE', color);
 	}
 
 	const disabledItemRecipes = [
@@ -357,7 +357,8 @@ ServerEvents.recipes((event) => {
 		/quark:building\/.*\/.*shingles_dye/,
 		'supplementaries:awnings/awning',
 		/^dye_the_world:.*curtain$/,
-		/^another_furniture:.*curtain$/
+		/^another_furniture:.*curtain$/,
+		/cushionbackport:.*cushion/,
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -489,6 +490,19 @@ ServerEvents.recipes((event) => {
 		'rooted_dirt',
 		['hanging_roots', 'dirt']
 	).id('adj:rooted_dirt');
+
+	event.shaped(
+		'kubejs:golden_dandelion',
+		[
+			'GGG',
+			'GDG',
+			'GGG'
+		],
+		{
+			G: 'gold_nugget',
+			D: 'dandelion'
+		}
+	).id('adj:golden_dandelion');
 
 	// Banner Patterns
 	function bannerPattern(output, input) {
@@ -714,7 +728,7 @@ ServerEvents.recipes((event) => {
 	};
 
 	function cushion(color) {
-		return `cushionbackport:${color}_dye`;
+		return `cushionbackport:${color}_cushion`;
 	};
 
 	event.shaped(
@@ -761,6 +775,14 @@ ServerEvents.recipes((event) => {
 	Color.DYE.forEach(color => {
 
 		sewingRecipe(wool(color), cushion(color), 3);
+		event.shapeless(
+			cushion(color),
+			[
+				/cushionbackport:.*cushion/,
+				dye(color)
+			]
+		).id(`adj:cushion_dyeing/${color}`);
+
 		sewingRecipe(wool(color), global.ifDyeDepot(color, `dye_the_world:${color}_curtain`, `another_furniture:${color}_curtain`))
 
 		const blahaj = `${global.isDyeDepotColor(color) ? 'kubejs' : 'just_blahaj'}:${(color) == 'light_blue' ? '' : `${color}_`}blahaj`;
@@ -842,6 +864,12 @@ ServerEvents.recipes((event) => {
 			recipe.getId()
 		)
 	});
+
+	// XYZweave blocks
+	sewingRecipe('ars_nouveau:magebloom_block', 'ars_nouveau:falseweave')
+	sewingRecipe('ars_nouveau:magebloom_block', 'ars_nouveau:ghostweave')
+	sewingRecipe('ars_nouveau:magebloom_block', 'ars_nouveau:mirrorweave')
+	sewingRecipe('ars_nouveau:magebloom_block', 'ars_nouveau:sky_block')
 
 	// Workshop recipes
 	function workshopRecipe(ingredients, output, id) {
@@ -1236,7 +1264,7 @@ ServerEvents.recipes((event) => {
 		event.shapeless(
 			`8x ${global.ifDyeDepot(color, 'dye_depot', 'minecraft')}:${color}_terracotta`,
 			[
-				`${global.ifDyeDepot(color, 'dye_depot', 'minecraft')}:${color}_dye`,
+				dye(color),
 				'terracotta',
 				'terracotta',
 				'terracotta',
@@ -1249,17 +1277,17 @@ ServerEvents.recipes((event) => {
 		).id(`${color}_terracotta`);
 
 		event.shapeless(
-			`8x ${global.ifDyeDepot(color, 'dye_the_world', 'quark')}:${color}_terracotta_shingles`,
+			`8x ${global.ifDyeDepot(color, 'dye_the_world', 'quark')}:${color}_shingles`,
 			[
-				`${global.ifDyeDepot(color, 'dye_depot', 'minecraft')}:${color}_dye`,
-				'quark:terracotta_shingles',
-				'quark:terracotta_shingles',
-				'quark:terracotta_shingles',
-				'quark:terracotta_shingles',
-				'quark:terracotta_shingles',
-				'quark:terracotta_shingles',
-				'quark:terracotta_shingles',
-				'quark:terracotta_shingles'
+				dye(color),
+				'quark:_shingles',
+				'quark:_shingles',
+				'quark:_shingles',
+				'quark:_shingles',
+				'quark:_shingles',
+				'quark:_shingles',
+				'quark:_shingles',
+				'quark:_shingles'
 			]
 		).id(`adj:${color}_shingles`);
 
@@ -1277,7 +1305,7 @@ ServerEvents.recipes((event) => {
 		event.shapeless(
 			`8x ${global.ifDyeDepot(color, 'dye_the_world', 'clayworks')}:${color}_terracotta_bricks`,
 			[
-				`${global.ifDyeDepot(color, 'dye_depot', 'minecraft')}:${color}_dye`,
+				dye(color),
 				'clayworks:terracotta_bricks',
 				'clayworks:terracotta_bricks',
 				'clayworks:terracotta_bricks',
@@ -1290,16 +1318,16 @@ ServerEvents.recipes((event) => {
 		).id(`${global.ifDyeDepot(color, 'dye_the_world', 'clayworks')}:${color}_terracotta_bricks`);
 
 		event.shaped(
-			dyeDepotId(color, 'dye_the_world', 'create', `DYE_seat`),
+			`create:${color}_seat`,
 			[
 				'C',
 				'S'
 			],
 			{
 				S: '#wooden_slabs',
-				C: `cushionbackport:${color}_cushion`
+				C: cushion(color)
 			}
-		).id(`create:crafting/kinetics/${color}_seat`);
+		).id(global.ifDyeDepot(color, `dye_depot:${color}_seat`, `create:crafting/kinetics/${color}_seat`));
 
 		event.shaped(
 			dyeDepotId(color, 'dye_the_world', 'another_furniture', `DYE_stool`),
@@ -1381,7 +1409,7 @@ ServerEvents.recipes((event) => {
 		'tinted_glass'
 	);
 
-	/**
+	/*/**
 	 * Registers a Mining Master Forge recipe
 	 *
 	 * @param {Internal.InputItem_[]} inputs - List of items or tags (prefix with # for tags)
@@ -1389,6 +1417,7 @@ ServerEvents.recipes((event) => {
 	 * @param {Internal.OutputItem_} output - The resulting item ID
 	 * @param {number} mana - Mana cost
 	 */
+	/*
 	function forgeRecipe(inputs, catalyst, output) {
 		let ingredients = inputs.map(id => {
 			if (global.isString(id)) {
@@ -1409,6 +1438,7 @@ ServerEvents.recipes((event) => {
 			enchantments: []
 		}).id(`adj:forge/${flattenedID(output)}`);
 	}
+	*/
 
 
 	/**
@@ -2818,12 +2848,6 @@ ServerEvents.recipes((event) => {
 	casingRecipe('purpur_block', 'end_stone_bricks', 'adj:ender_forge_casing');
 
 	// Extra Dye recipes
-	event.smelting('red_dye', 'crimson_roots', 0.1, 200).id('adj:red_dye_from_crimson_roots');
-	event.smelting('cyan_dye', 'warped_roots', 0.1, 200).id('adj:cyan_dye_from_warped_roots');
-	event.smelting('brown_dye', 'hanging_roots', 0.1, 200).id('adj:brown_dye_from_hanging_roots');
-
-	event.shapeless('white_dye', ['white_tulip']).id('adj:white_dye_from_white_tulip');
-
 	const dyeRecipes = [
 		{
 			result: 'brown',
@@ -2895,6 +2919,44 @@ ServerEvents.recipes((event) => {
 		}
 	};
 
+	/** @type {Special.RecipeId[]} */
+	const removedDyeRecipes = [
+		'twilightforest:waterlily_to_magenta',
+		'minecraft:light_gray_dye_from_azure_bluet',
+		'ancient_aether:elevetia_to_purple_dye',
+		'verdantvibes:blue_dye_from_lobelia',
+		'ancient_aether:sky_blues_to_cyan_dye',
+		'ancient_aether:wynd_thistle_to_light_blue_dye'
+	];
+	removedDyeRecipes.forEach(id => {
+		event.remove({ id: id });
+	});
+
+	event.smelting('red_dye', 'crimson_roots', 0.1, 200).id('adj:red_dye_from_crimson_roots');
+	event.smelting('cyan_dye', 'warped_roots', 0.1, 200).id('adj:cyan_dye_from_warped_roots');
+	event.smelting('brown_dye', 'hanging_roots', 0.1, 200).id('adj:brown_dye_from_hanging_roots');
+
+	function dyeRecipe(input, resultColor, amount) {
+		let resultDye = dye(resultColor);
+		event.shapeless(Item.of(resultDye, global.getOrDefault(amount, 1)), [input]).id(`adj:${flattenedID(resultDye)}_from_${flattenedID(input)}`);
+	};
+
+	dyeRecipe('white_tulip', 'white');
+	dyeRecipe('kubejs:daybloom', 'yellow');
+	dyeRecipe('kubejs:moonglow', 'aqua');
+	dyeRecipe('kubejs:blinkroot', 'yellow');
+	dyeRecipe('kubejs:deathweed', 'purple');
+	dyeRecipe('kubejs:waterleaf', 'mint');
+	dyeRecipe('kubejs:shiverthorn', 'light_blue');
+	dyeRecipe('kubejs:fireblossom', 'ginger');
+	dyeRecipe('kubejs:natures_gift', 'navy');
+	dyeRecipe('kubejs:jungle_rose', 'coral');
+	dyeRecipe('twilightforest:huge_water_lily', 'rose', 3);
+	dyeRecipe('azure_bluet', 'white_dye');
+	dyeRecipe('ancient_aether:elevetia', 'indigo');
+	dyeRecipe('verdantvibes:lobelia', 'teal');
+	dyeRecipe('ancient_aether:sky_blues', 'slate');
+	dyeRecipe('ancient_aether:wynd_thistle', 'slate');
 
 	// Attuned Awakened Ender Pearls
 	event.forEachRecipe({ type: 'crafting_shaped', output: /cataclysm\:.*eye/ }, recipe => {
@@ -2912,7 +2974,7 @@ ServerEvents.recipes((event) => {
 			if (!isAir && !isEnderEye) {
 				ingredients.push(ingredient);
 			}
-		})
+		});
 		event.remove({ id: recipe.getId() })
 		event.recipes.ars_nouveau.enchanting_apparatus(
 			ingredients.sort(),
@@ -3765,12 +3827,6 @@ ServerEvents.recipes((event) => {
 	essenceTransform('ars_nouveau:manipulation_essence', 'moss_block', 'grass_block')
 	essenceTransform('ars_nouveau:manipulation_essence', 'grass_block', 'mycelium')
 	essenceTransform('ars_nouveau:manipulation_essence', 'mycelium', 'moss_block')
-
-	// XYZweave blocks
-	sewingRecipe('ars_nouveau:magebloom_block', 'ars_nouveau:falseweave')
-	sewingRecipe('ars_nouveau:magebloom_block', 'ars_nouveau:ghostweave')
-	sewingRecipe('ars_nouveau:magebloom_block', 'ars_nouveau:mirrorweave')
-	sewingRecipe('ars_nouveau:magebloom_block', 'ars_nouveau:sky_block')
 
 	// Eyes
 	// Eye of Verdancy

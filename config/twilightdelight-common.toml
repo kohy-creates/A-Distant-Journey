@@ -4,4 +4,7 @@ effectRange = 6
 #Range for aurora range
 #Range: 0 ~ 128
 auroraRange = 24
+#Trials for twilight rich soil/farmland boosting plants per random tick
+#Range: 0 ~ 32
+richSoilTrials = 5
 

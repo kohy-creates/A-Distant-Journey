@@ -11,6 +11,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_nether_blackstone.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 5.15d
@@ -20,6 +21,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_stone_ores_2.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: 2.65d
@@ -28,6 +30,7 @@
 		{
 			height: 5.0d
 			image: "adj:textures/texts/chapter_1.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 5.0d
 			x: -7.5d
@@ -36,6 +39,7 @@
 		{
 			height: 6.0d
 			image: "adj:textures/texts/lore_nether.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 12.0d
 			x: -8.0d
@@ -44,6 +48,7 @@
 		{
 			height: 1.75d
 			image: "twilightforest:block/canopy_log_top"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
 			x: -1.5d
@@ -53,6 +58,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_nether_blackstone.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 10.0d
 			x: -1.5d
@@ -62,6 +68,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_nether.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 180.0d
 			width: 10.0d
 			x: 2.0d
@@ -71,6 +78,7 @@
 			height: 5.0d
 			image: "adj:textures/other/bg_nether.png"
 			order: -999
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 180.0d
 			width: 10.0d
 			x: -5.0d
@@ -79,6 +87,7 @@
 		{
 			height: 1.25d
 			image: "kubejs:block/hellforge_front_on"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.25d
 			x: -7.0d
@@ -102,6 +111,7 @@
 			hide_until_deps_complete: true
 			icon: "minecraft:nether_bricks"
 			id: "0B0DF609ABC8773D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find a Nether Fortress"
 			tasks: [
 				{
@@ -129,6 +139,7 @@
 			dependencies: ["0B0DF609ABC8773D"]
 			entity_vis_size: 1.0f
 			id: "336C2A75C5BFF1B8"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Relieve a Blaze of its rods"
 			tasks: [{
 				id: "1A5E80B3F7215BA0"
@@ -143,6 +154,7 @@
 			dependencies: ["336C2A75C5BFF1B8"]
 			entity_vis_size: 1.0f
 			id: "112388B5EDB9C9D2"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Brewing Stand"
 			tasks: [{
 				id: "5797B7A0679EF5E3"
@@ -158,6 +170,7 @@
 			entity_vis_size: 1.0f
 			icon: "kubejs:skull_fragment"
 			id: "19E87E63C5C295AE"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Obtain a Wither Skeleton Skull"
 			tasks: [
 				{
@@ -181,6 +194,7 @@
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "236739201289D4DD"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Enter a Bastion"
 			tasks: [{
 				icon: "minecraft:cracked_polished_blackstone_bricks"
@@ -199,6 +213,7 @@
 			hide_until_deps_complete: true
 			icon: "mythicmetals:mythril_ingot"
 			id: "5AEA2A64181AED93"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Mine and smelt the new ores that appeared in your world"
 			tasks: [
 				{
@@ -232,6 +247,7 @@
 			hide_until_deps_complete: true
 			icon: "alloy_forgery:nether_bricks_forge_controller"
 			id: "49D421ADF1794A16"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Hellforge"
 			tasks: [{
 				id: "6D577D3521C91C5F"
@@ -246,6 +262,7 @@
 			dependencies: ["336C2A75C5BFF1B8"]
 			entity_vis_size: 1.0f
 			id: "6B4A4956BDF1E1AB"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Awaken the magic inside an Ender Pearl"
 			tasks: [{
 				id: "14A7569AF8FE2DB2"
@@ -262,6 +279,7 @@
 			icon: "cataclysm:desert_eye"
 			id: "26A9109005EE03BF"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Attune an Awakened Ender Pearl towards any target"
 			tasks: [{
@@ -284,6 +302,7 @@
 			dependencies: ["236739201289D4DD"]
 			entity_vis_size: 1.0f
 			id: "3C6D5381BA4C55A1"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Find a Pigstep Music Disc"
 			tasks: [{
 				id: "2482E7768D577E52"
@@ -302,6 +321,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "765297F2529419A9"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Barter for an Enchanted Midas Gold Block"
 			tasks: [{
 				id: "5F17A045AF379A1B"
@@ -317,6 +337,7 @@
 			entity_vis_size: 1.0f
 			id: "09398D1D38C7ED0D"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Brew any Antidote"
 			tasks: [{
@@ -341,6 +362,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:nether_wart_block"
 			id: "612A31333B1F6C1D"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Discover all Nether biomes"
 			tasks: [
 				{
@@ -401,6 +423,7 @@
 			entity_vis_size: 1.0f
 			id: "5E0A9577C42882A7"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Upgrade your Grappling Hook"
 			tasks: [{
@@ -419,6 +442,7 @@
 			icon: "netherexp:nether_pizza"
 			id: "3A6A3CAC79DFDDCE"
 			optional: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "rsquare"
 			subtitle: "Bake and eat the most hellish Pizza"
 			tasks: [
@@ -445,6 +469,7 @@
 			entity_vis_size: 1.0f
 			icon: "dried_ghast:dried_ghast"
 			id: "0562284D4662E981"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Rescue a Dry Ghast and place it in any bed of Water"
 			tasks: [
 				{
@@ -473,17 +498,20 @@
 			entity_vis_size: 1.0f
 			icon: "netherexp:ecto_soul_sand"
 			id: "5A24E62380261206"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Summon a Wither"
 			tasks: [{
+				entity_vis_cycle_seconds: 0.0f
+				entity_vis_enabled: false
 				entity_vis_idle_mode: "USE_GLOBAL"
 				entity_vis_offset_x: 0.0f
 				entity_vis_offset_y: 0.0f
 				entity_vis_rotation: 0.0f
 				entity_vis_silhouette_mode: "NONE"
 				entity_vis_size: 1.0f
+				entity_vis_slim_arms: false
 				entity_vis_spin_mode: "USE_GLOBAL"
 				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
 				entity_vis_use_as_quest_icon: false
 				entity_vis_walk_mode: "USE_GLOBAL"
 				icon: "minecraft:wither_skeleton_skull"
@@ -507,6 +535,7 @@
 			icon: "minecraft:netherrack"
 			id: "379A22A2185CFC8E"
 			invisible: true
+			quest_enhance_disable_scroll_paging: false
 			shape: "circle"
 			size: 3.0d
 			subtitle: "<i>Sathan I'm home! By the way, bring summer clothes</i>"
@@ -536,6 +565,7 @@
 			icon: "twilightforest:hollow_oak_sapling"
 			icon_scale: 0.75d
 			id: "55D235AFB0D505D8"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Enter the Twilight Forest"
@@ -569,6 +599,7 @@
 			entity_vis_size: 1.0f
 			icon: "kubejs:eye_of_cinders"
 			id: "44BE3D4079FF34DF"
+			quest_enhance_disable_scroll_paging: false
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Slay the Wither and collect the Eye of Cinders"
@@ -585,6 +616,7 @@
 			dependencies: ["49D421ADF1794A16"]
 			entity_vis_size: 1.0f
 			id: "59267001F306BFB1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "10BAD559FAA1B4F7"
 				item: "mythicmetals:steel_ingot"

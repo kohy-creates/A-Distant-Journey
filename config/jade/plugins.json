@@ -55,11 +55,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "treechop": {
-    "plugin": true,
-    "show_tree_block_counts": false,
-    "show_num_chops_remaining": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -67,6 +62,12 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": false
+  },
+  "botania_editor": {
+    "botania_spreader": true,
+    "botania_spreader_advanced": true,
+    "botania_mana": true,
+    "botania_flower": true
   },
   "ars_zero": {
     "entity_mana": true
@@ -100,9 +101,6 @@
   },
   "supplementaries": {
     "hat_stand": true
-  },
-  "scalpel": {
-    "redacted_block": true
   },
   "waystones": {
     "waystone": true

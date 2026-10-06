@@ -18,6 +18,7 @@
 		disable_toast: true
 		entity_vis_size: 1.0f
 		id: "0D5DCB39BCFF5678"
+		quest_enhance_disable_scroll_paging: false
 		subtitle: "&oRequires 'Benchmarking'"
 		tasks: [{
 			id: "74D5DCFA3EA9A8A0"

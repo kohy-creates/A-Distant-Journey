@@ -334,13 +334,11 @@ global.addTranslation = function (key, value) {
 
 /**
  * Returns a new ResourceLocation.
- * Ngl seeing `new ResourceLocation` without getting a deprecation warning is kinda weird.
- * @param {string} namespace
  * @param {string} path
  * @returns {Internal.ResourceLocation_}
  */
-global.resourceLocation = function (namespace, path) {
-	return new $ResourceLocation(namespace, path);
+global.resourceLocation = function (path) {
+	return $ResourceLocation.parse(path);
 };
 
 /**
@@ -415,7 +413,7 @@ global.getAllRegistryObjects = function (registry) {
  * @returns {Internal.TagKey_}
  */
 global.createTagKey = function (registry, key) {
-	return $TagKey.create($ForgeRegistries$Keys[registry], global.resourceLocation(key.split(':')[0], key.split(':')[1]));
+	return $TagKey.create($ForgeRegistries$Keys[registry], global.resourceLocation(key));
 };
 
 /**

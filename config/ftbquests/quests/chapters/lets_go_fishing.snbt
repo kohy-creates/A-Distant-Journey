@@ -10,6 +10,7 @@
 		{
 			height: 2.0d
 			image: "tide:block/angling_table_top"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.0d
 			x: 0.0d
@@ -18,6 +19,7 @@
 		{
 			height: 19.0d
 			image: "tide:textures/gui/journal/journal_bg.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 28.0d
 			x: -0.5d
@@ -26,6 +28,7 @@
 		{
 			height: 2.0d
 			image: "adj:textures/other/title_fishing.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 7.0d
 			x: 4.5d
@@ -34,6 +37,7 @@
 		{
 			height: 1.0d
 			image: "adj:textures/other/title_underground.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 7.5d
 			x: -3.0d
@@ -42,6 +46,7 @@
 		{
 			height: 1.0d
 			image: "adj:textures/other/title_rare.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.5d
 			x: 7.5d
@@ -50,6 +55,7 @@
 		{
 			height: 1.0d
 			image: "adj:textures/other/title_ocean.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 3.5d
 			x: 10.5d
@@ -58,6 +64,7 @@
 		{
 			height: 1.0d
 			image: "adj:textures/other/title_lava.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.5d
 			x: 5.0d
@@ -66,6 +73,7 @@
 		{
 			height: 1.0d
 			image: "adj:textures/other/title_the_end.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 4.0d
 			x: 12.0d
@@ -74,6 +82,7 @@
 		{
 			height: 1.0d
 			image: "adj:textures/other/title_surface.png"
+			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 4.5d
 			x: 11.5d
@@ -93,6 +102,7 @@
 			dependencies: ["0D31FCDD5D044B38"]
 			entity_vis_size: 1.0f
 			id: "0B86DFF247F19E41"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft a Fishing Journal to document your fishy adventure"
 			tasks: [{
 				id: "62F06F906F24BC53"
@@ -107,6 +117,7 @@
 			dependencies: ["0D31FCDD5D044B38"]
 			entity_vis_size: 1.0f
 			id: "25A6D4B901F93DE5"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft an Angling Table to add upgrades to your Fishing Rod"
 			tasks: [{
 				id: "440FAA7491C64FEE"
@@ -122,6 +133,7 @@
 			entity_vis_size: 1.0f
 			icon: "minecraft:cod_bucket"
 			id: "589841D213C4466E"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Catch a Fish into a Bucket"
 			tasks: [{
 				id: "3FA0D28362112650"
@@ -146,6 +158,7 @@
 			entity_vis_size: 1.0f
 			icon: "rediscovered:raw_fish"
 			id: "0D31FCDD5D044B38"
+			quest_enhance_disable_scroll_paging: false
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "<i>\"Mój stary był fanatyiem wędkarstwa...\". Requires 'Fishy Business'"
@@ -166,6 +179,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "26DCBC28B83DDD60"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "57C9BAB5C5CBC7AC"
 				item: {
@@ -185,6 +199,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "45B3AD567A55CDCC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "26DACA99B404A485"
 				item: "minecraft:salmon"
@@ -198,6 +213,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "29B46C0D81D2F77F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5479FC833B3220F0"
 				item: "minecraft:pufferfish"
@@ -211,6 +227,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "44257BC8EAF00F52"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1BE8E6C5D7F4C3BB"
 				item: "cataclysm:lionfish"
@@ -224,6 +241,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "304201B1C753D56E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7684F3CE26346D12"
 				item: {
@@ -243,6 +261,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "192FB159D0F96287"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4AF0980EE52DD131"
 				item: {
@@ -262,6 +281,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "63B7581EAA968CD8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3E3228C424D3AD7E"
 				item: {
@@ -281,6 +301,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "662CCCA65ACDDF1D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0A571C63E7657A6D"
 				item: {
@@ -300,6 +321,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "24ACFD4BC27B69E6"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7EA12C06A5573150"
 				item: {
@@ -319,6 +341,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "2627A33A8E6FB9E4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "671F2926055EA75B"
 				item: {
@@ -338,6 +361,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "31352399F7F6C2B8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "069A9815457ECF73"
 				item: {
@@ -357,6 +381,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "4350783C019D045E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7E91F6FAD3649E95"
 				item: {
@@ -376,6 +401,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "4734BCA7CFCE4511"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "50A3A0D5C2528A41"
 				item: "hybrid_aquatic:tiger_shark_plushie"
@@ -400,6 +426,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "7749472B610C1422"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "44722E0957A56B17"
 				item: {
@@ -419,6 +446,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "64F993BEAA5008DB"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "09D59D70D7C25DAE"
 				item: {
@@ -438,6 +466,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "682C4FF8EF1D7706"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4A08FB00D4F68D1A"
 				item: {
@@ -457,6 +486,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "7B4BB9059DD7BF8E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "34E29DECCBC63D2E"
 				item: {
@@ -476,6 +506,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "3230ED231B97840E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "22DD9B74252A1577"
 				item: {
@@ -495,6 +526,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "2DC2C697527E17E7"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5503BF6E2B635B33"
 				item: {
@@ -514,6 +546,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "6204FA52F1B2C9BA"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "77B9D81918F668B2"
 				item: {
@@ -533,6 +566,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "5EE175E991F5C5EC"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5FB6548D27E38019"
 				item: {
@@ -552,6 +586,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "13BF9CEE8A57B0A0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4D28B44D91797D54"
 				item: {
@@ -571,6 +606,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "366BEDE102201283"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "19CB120D36BBA8D0"
 				item: {
@@ -590,6 +626,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "743AF55219F91859"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "25689890E274B555"
 				item: {
@@ -609,6 +646,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "43BF32B25D81E0C3"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0EAA5E3ECA36203B"
 				item: {
@@ -628,6 +666,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "0D3E2D33B8EAD905"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5B133AF1A899B180"
 				item: {
@@ -647,6 +686,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "4044F42027174442"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "55D626D1710D7CF6"
 				item: {
@@ -666,6 +706,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "746C91E3F876580A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6F7922EC50A13E15"
 				item: {
@@ -685,6 +726,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "16A0BFFB009CF0ED"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "71F603EC666E6B2A"
 				item: {
@@ -704,6 +746,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "796BA63DB6367FB8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "29B32167C679CB0D"
 				item: {
@@ -723,6 +766,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "76D572180B22EA2A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7A6ACEDBAD959C03"
 				item: {
@@ -742,6 +786,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "0039F1FC728B8B94"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7684D53D16092FBE"
 				item: {
@@ -761,6 +806,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "2E04B05DF84A407F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "654886D5C219EB71"
 				item: {
@@ -780,6 +826,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "13FD4A9E1D0CFCF1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "61FA8BAE8D3A24B5"
 				item: "tide:mahi_mahi"
@@ -793,6 +840,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "4F18B74B2D779103"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2EC0C7AA5E088FE5"
 				item: {
@@ -812,6 +860,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "68E465A800EDF56A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7A6449CD5574DE35"
 				item: {
@@ -832,6 +881,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "701844C377D38DDA"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2C36E1E990AEA66F"
 				item: {
@@ -852,6 +902,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "066002B19E190522"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2ECDF00242A4E235"
 				item: {
@@ -871,6 +922,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "65270603524D7AAE"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "47783624B0F655F4"
 				item: {
@@ -890,6 +942,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "36A7409113BD136F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5046FCC63F4EC9CA"
 				item: {
@@ -909,6 +962,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "267BFC435D5B5A6F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "26E902780EA77438"
 				item: {
@@ -928,6 +982,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "3D099EFFF7862439"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "22C43DE4A662F75E"
 				item: {
@@ -947,6 +1002,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "16C978CEE576BCA0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "174BEBF54B587192"
 				item: {
@@ -966,6 +1022,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "7740431624A780A6"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "245034ED4891DB75"
 				item: {
@@ -985,6 +1042,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "732F3DD4A4AF1783"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "564205C6D8A16615"
 				item: {
@@ -1004,6 +1062,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "462EFDE09F540095"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "14B08EB899DDA315"
 				item: "minecraft:cod"
@@ -1017,6 +1076,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "28A50D55F4CB18CD"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "19FF990EFCE654AA"
 				item: {
@@ -1036,6 +1096,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "474A07A5A625AEA2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "210EA25E94A6C247"
 				item: {
@@ -1055,6 +1116,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "0352A914BAEF9F47"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "764F742EA56ACA37"
 				item: {
@@ -1074,6 +1136,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "67B591A664E380E4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "01352A7128044241"
 				item: {
@@ -1093,6 +1156,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "4BA7B9165566636E"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "66FDBA1DFD741486"
 				type: "xp"
@@ -1118,6 +1182,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "17E3707900BE627E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0DD9CEEB5BCAF772"
 				item: {
@@ -1137,6 +1202,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "1EAFF5E5CB7A2F63"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1D4A92D94FFB87AD"
 				item: {
@@ -1156,6 +1222,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "18CF709BF2119235"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "496E2040DA4EEC74"
 				item: {
@@ -1175,6 +1242,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "64CBCACBE4D5F0FB"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "466B033C071245D2"
 				item: {
@@ -1194,6 +1262,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "7F3899D5FE9B17E5"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3F3D96612005DEAE"
 				item: {
@@ -1213,6 +1282,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "05CA9AEB2322BD3E"
+			quest_enhance_disable_scroll_paging: false
 			rewards: [{
 				id: "38FA18459202995B"
 				item: "hybrid_aquatic:great_white_shark_plushie"
@@ -1237,6 +1307,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "009AAB1394B2B3E0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6E62496169E14083"
 				item: {
@@ -1256,6 +1327,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "19E0BA72A579262F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4424A1BE5ECA42F8"
 				item: {
@@ -1275,6 +1347,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "427FA8EEC239778E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "27E1EDD1F925624A"
 				item: {
@@ -1294,6 +1367,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "02CCFD87BE5165FE"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "367296DD17A46EAE"
 				item: {
@@ -1313,6 +1387,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "3537A52DF9907B86"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1FD744C1C1F41091"
 				item: {
@@ -1332,6 +1407,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "6227F949F4260801"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "61C1E595BB49B378"
 				item: {
@@ -1351,6 +1427,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "24218A48E4413A11"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "27DCB52485490076"
 				item: {
@@ -1370,6 +1447,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "5021A1DE595BDE8C"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "34B7DB485C856EC2"
 				item: {
@@ -1389,6 +1467,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "53869B9758242CCF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "4BB92CEB7D282966"
 				item: {
@@ -1408,6 +1487,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "483A3E334FEE3456"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1DE6460C54F8E53F"
 				item: {
@@ -1427,6 +1507,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "6B43451E2AE9ACBF"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "367010B35E97137C"
 				item: {
@@ -1446,6 +1527,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "6847A52DF5E51C73"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3B3407832145CE05"
 				item: {
@@ -1465,6 +1547,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "4F54503BC15347A4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6966CA581503058F"
 				item: {
@@ -1484,6 +1567,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "04EE18FDFB8CDAE8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "720885F9D6445698"
 				item: {
@@ -1503,6 +1587,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "139F41B3FBAF083A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "6885DA499FF7182F"
 				item: {
@@ -1522,6 +1607,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "7C46E47BA807531F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "478B57F3F059E157"
 				item: {
@@ -1541,6 +1627,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "31674B88338ED0E8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "164126EA6EE24651"
 				item: {
@@ -1560,6 +1647,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "3593250333784AA8"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "14A70022EA32B3BA"
 				item: {
@@ -1579,6 +1667,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "71347CBF05AAF4A0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "02D8762DAA6846D9"
 				item: {
@@ -1598,6 +1687,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "793ED3C887CA13A4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "72CB7903587A19B0"
 				item: {
@@ -1617,6 +1707,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "406913D40259BC24"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "39CBE0EDF9E5773D"
 				item: {
@@ -1637,6 +1728,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "6B96205072EB660B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "384C3484F075BFF4"
 				item: {
@@ -1656,6 +1748,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "37BFE8CD311747B9"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2D3555948E0E684A"
 				item: {
@@ -1675,6 +1768,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "074BC37C44396495"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "71B1DA195890EDF3"
 				item: {
@@ -1694,6 +1788,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "4F796D598ADEA5FA"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "5F48665F7F86A28C"
 				item: {
@@ -1713,6 +1808,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "1ED32B64D86CEAC0"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1A30CAC1405DC062"
 				item: {
@@ -1732,6 +1828,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "4448023DA805BFC6"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1A669094220C7295"
 				item: {
@@ -1751,6 +1848,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "492D3381EB3BC55D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0E52240CC6E831EB"
 				item: {
@@ -1770,6 +1868,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "45C49698527B68E6"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7335B68C5ADBEC11"
 				item: {
@@ -1789,6 +1888,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "5ED49E9954450739"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "1F13D5AC555ABF52"
 				item: {
@@ -1808,6 +1908,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "07F722B90DAA1848"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "66914FE10D5BD367"
 				item: {
@@ -1827,6 +1928,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "0264BCBD20B09E84"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "56C258DAA3E40C50"
 				item: {
@@ -1846,6 +1948,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "178CE555FF8C5782"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0EAB14636FEB9E9C"
 				item: {
@@ -1865,6 +1968,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "083A37BD9397C8D1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "334285948DADDC19"
 				item: {
@@ -1884,6 +1988,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "6E9FB0A3CDB4A840"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0B48E85F7F60F3A4"
 				item: {
@@ -1903,6 +2008,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "7C46A6E1E6C3161A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2EBF0C3F42EC3BE4"
 				item: {
@@ -1922,6 +2028,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "2D2A186AD14EC51B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2AF9AE0C7DA4284A"
 				item: {
@@ -1941,6 +2048,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "71ED49600934D13B"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "41CA16A883EDC588"
 				item: {
@@ -1960,6 +2068,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "433E75A26D0D88EE"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "68D0A06B0B6E2C33"
 				item: {
@@ -1979,6 +2088,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "5BCC90E5C067F872"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "37BA46C614C5AF78"
 				item: "alexsmobs:blobfish"
@@ -1992,6 +2102,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "2F668960D3CC3F84"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0AA1DE8A4DA92929"
 				item: "crittersandcompanions:koi_fish"
@@ -2005,6 +2116,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "3B40E3B2ECE84C1D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0E3696B1D4AC28FC"
 				item: {
@@ -2024,6 +2136,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "37823850E723757D"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2B70FC93A0B664D0"
 				item: {
@@ -2043,6 +2156,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "66D59BAE3183CCB4"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "758790E6962A583A"
 				item: {
@@ -2062,6 +2176,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "5E4C8B5EC7EB3216"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "26EFDBE14A766A9C"
 				item: {
@@ -2081,6 +2196,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "7E75A79E517E8605"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2E519439DDA30179"
 				item: {
@@ -2100,6 +2216,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "2C6CC344D77F5105"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "61078F6FCF45E737"
 				item: {
@@ -2119,6 +2236,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "783950463A99BD8E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3CE3AF0231245428"
 				item: {
@@ -2138,6 +2256,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "46ED3080C19128EB"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "76ECEF3BB2C0427B"
 				item: "alexsmobs:flying_fish"
@@ -2151,6 +2270,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "499DDA1A0E938E1A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "07DDFE2EC3BF012A"
 				item: "netherdepthsupgrade:lava_pufferfish"
@@ -2164,6 +2284,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "711B0AD430275666"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3764342B653130BF"
 				item: "netherdepthsupgrade:glowdine"
@@ -2177,6 +2298,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "716C830618CD3AA2"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "04E2BCD507715199"
 				item: "netherdepthsupgrade:soulsucker"
@@ -2190,6 +2312,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "71F6EF6BD0D7218E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "77FBA98F6B0B4656"
 				item: "netherdepthsupgrade:obsidianfish"
@@ -2203,6 +2326,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "58A64B1BFF5E0504"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "253D2722F8C9D52A"
 				item: "netherdepthsupgrade:bonefish"
@@ -2216,6 +2340,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "134DDD06EC746D4A"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2D5B0EA6EA4D7B0F"
 				item: "netherdepthsupgrade:wither_bonefish"
@@ -2229,6 +2354,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "0D1A622E4936E78E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0D09F9813D7AD303"
 				item: "netherdepthsupgrade:fortress_grouper"
@@ -2242,6 +2368,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "4973E7F107C415F1"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "728DA81D72C59DB4"
 				item: "netherdepthsupgrade:eyeball_fish"
@@ -2255,6 +2382,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "2C78A98907FCB6F6"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7E6B2A2DBB273A79"
 				item: "netherdepthsupgrade:blazefish"
@@ -2268,6 +2396,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "74A0A1800E2B8908"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "7E12FE78BA224872"
 				item: "netherdepthsupgrade:searing_cod"
@@ -2281,6 +2410,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "7CB2B22F55F5B241"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "192BDB324185978E"
 				item: "netherdepthsupgrade:magmacubefish"
@@ -2294,6 +2424,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "3F46816789D44D93"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "11125EE80A625FDD"
 				item: "upgrade_aquatic:lionfish"
@@ -2307,6 +2438,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "527A8DF2768B359E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "06A3DC2581D51379"
 				item: "upgrade_aquatic:perch"
@@ -2320,6 +2452,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "0E405B28E8A7687E"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "07F4DE2DB86FFF62"
 				item: "alexscaves:radgill"
@@ -2333,6 +2466,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "066A2C98EF52FC76"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "0CF742AB64E7855C"
 				item: "alexscaves:tripodfish"
@@ -2346,6 +2480,7 @@
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "58900E52DA34210F"
+			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "2A1A48B3A17503D7"
 				item: "rediscovered:raw_fish"
@@ -2359,6 +2494,7 @@
 			entity_vis_size: 1.0f
 			icon: "tide:fishing_hook"
 			id: "55947F8EF8AA0FE1"
+			quest_enhance_disable_scroll_paging: false
 			subtitle: "Craft or find any Fishing Hook"
 			tasks: [{
 				id: "70CA6CB3AF1D3C52"

@@ -253,10 +253,10 @@ StartupEvents.init(event => {
 			tier.speed,
 			tier.attackDamageBonus,
 			tier.enchantmentValue,
-			$BlockTags.create(global.resourceLocation('adj', "needs_" + key + "_tool")),
+			$BlockTags.create(global.resourceLocation(`adj:needs_${key}_tool`)),
 			() => Ingredient.of(tier.repairIngredient)
 		);
-		$TierSortingRegistry.registerTier(forgeTier, global.resourceLocation('adj', key), tierBelow(tier.level), []);
+		$TierSortingRegistry.registerTier(forgeTier, global.resourceLocation(`adj:${key}`), tierBelow(tier.level), []);
 	}
 });
 
@@ -272,7 +272,7 @@ ItemEvents.modification(event => {
 		toolset.forEach(tool => {
 			const itemId = itemCat + tool;
 			event.modify(itemId, item => {
-				item.tier = $TierSortingRegistry.byName(global.resourceLocation('adj', tier));
+				item.tier = $TierSortingRegistry.byName(global.resourceLocation(`adj:${tier}`));
 			});
 		});
 	}
