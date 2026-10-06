@@ -2926,7 +2926,21 @@ ServerEvents.recipes((event) => {
 		'ancient_aether:elevetia_to_purple_dye',
 		'verdantvibes:blue_dye_from_lobelia',
 		'ancient_aether:sky_blues_to_cyan_dye',
-		'ancient_aether:wynd_thistle_to_light_blue_dye'
+		'ancient_aether:wynd_thistle_to_light_blue_dye',
+		'sweety_garden:drimia_dye',
+		'sweety_garden:hepatica_dye',
+		'sweety_garden:busy_lizzie_dye',
+		'sweety_garden:sorrel_dye',
+		'buzzier_bees:dyes/yellow_dye_from_buttercup',
+		'ars_nouveau:sourceberry_to_purple',
+		'unusualend:chorus_dye',
+		'ars_nouveau:magebloom_to_pink',
+		'unusualend:endstone_sprouts_dye',
+		'unusualend:chorus_roots_dye',
+		'unusualend:chorus_grass_dye',
+		'unusualend:tendrils_dye',
+		'unusualend:bush_dye',
+		
 	];
 	removedDyeRecipes.forEach(id => {
 		event.remove({ id: id });
@@ -2952,11 +2966,22 @@ ServerEvents.recipes((event) => {
 	dyeRecipe('kubejs:natures_gift', 'navy');
 	dyeRecipe('kubejs:jungle_rose', 'coral');
 	dyeRecipe('twilightforest:huge_water_lily', 'rose', 3);
-	dyeRecipe('azure_bluet', 'white_dye');
+	dyeRecipe('azure_bluet', 'white');
 	dyeRecipe('ancient_aether:elevetia', 'indigo');
-	dyeRecipe('verdantvibes:lobelia', 'teal');
+	dyeRecipe('verdantvibes:lobelia', 'slate');
 	dyeRecipe('ancient_aether:sky_blues', 'slate');
 	dyeRecipe('ancient_aether:wynd_thistle', 'slate');
+	dyeRecipe('sweety_garden:drimia', 'beige');
+	dyeRecipe('sweety_garden:hepatica', 'slate');
+	dyeRecipe('sweety_garden:busy_lizzie', 'ginger');
+	dyeRecipe('sweety_garden:wood_sorrel', 'verdant');
+	dyeRecipe('buzzier_bees:buttercup', 'amber');
+	dyeRecipe('alexsmobs:acacia_blossom', 'beige');
+	dyeRecipe('ars_nouveau:sourceberry', 'indigo');
+	dyeRecipe('chorus_fruit', 'purple');
+	dyeRecipe('ars_nouveau:magebloom', 'light_blue');
+	dyeRecipe('unusualend:chorus_petal', 'pink');
+	dyeRecipe('unusualend:warped_berries', 'ginger');
 
 	// Attuned Awakened Ender Pearls
 	event.forEachRecipe({ type: 'crafting_shaped', output: /cataclysm\:.*eye/ }, recipe => {

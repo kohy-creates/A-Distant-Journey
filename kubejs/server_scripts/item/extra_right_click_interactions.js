@@ -124,6 +124,12 @@ ItemEvents.rightClicked(event => {
 			break;
 		}
 
+		case 'botania:flare_chakram':
+		case 'botania:thorn_chakram': {
+			event.cancel();
+			break;
+		}
+
 		// case 'born_in_chaos_v1:sea_terror_stomach': {
 		// 	if (player.getCooldowns().isOnCooldown(item.id)) return;
 		// 	let amount = global.getRandomInt(2, 4);

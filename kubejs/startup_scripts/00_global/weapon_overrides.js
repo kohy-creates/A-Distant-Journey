@@ -135,6 +135,9 @@ global.weapon_overrides = {
 
 	'cataclysm:infernal_forge': [66, 1],
 	'alexsmobs:skelewag_sword': [8, 10],
+
+	'botania:thorn_chakram': [16, 1.2],
+	'botania:flare_chakram': [46, 1.2],
 };
 
 addToolsetOverride('minecraft:wooden', 7);

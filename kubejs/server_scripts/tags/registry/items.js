@@ -694,4 +694,27 @@ ServerEvents.tags('item', tags => {
 	tags.add('adj:legacy', [
 		/kubejs:legacy\/.*/,
 	]);
+
+	tags.add('flowers', [
+		'aether_redux:daggerbloom',
+		'aether_redux:lumina',
+		'aether_redux:spirolyctil',
+		'aether_redux:brightshade',
+		'aether_redux:iridia',
+		'aether_redux:theratip',
+		'aether_redux:zyatrix',
+		'aether_redux:iridia',
+		'aether_redux:xaelia_patch',
+		'aether_redux:aurum',
+		'aether_redux:lucky_clover',
+		'aether_redux:flareblossom',
+		'born_in_chaos_v1:marigolds',
+		'kubejs:daybloom',
+		'kubejs:moonglow',
+		'kubejs:shiverthorn',
+		'kubejs:blinkroot',
+		'kubejs:deathweed',
+		'kubejs:fireblossom',
+		'kubejs:waterleaf',
+	]);
 });

@@ -342,6 +342,9 @@ ClientEvents.lang('en_us', event => {
 		'just_blahaj:iran_blahaj': 'Blahaj',
 		'just_blahaj:aromantic_blahaj': 'Blahaj',
 
+		'aether:white_flower': 'White Rose',
+		'aether:purple_flower': 'Purple Clover',
+
 	};
 
 	/** @type {Record<Internal.InputItem_, string>} */
