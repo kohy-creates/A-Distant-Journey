@@ -8,34 +8,6 @@
       {
         "namespace": "^minecraft$",
         "path": "^sounds/blocks/.*.json$"
-      },
-      {
-        "namespace": "^decoration_delight$",
-        "path": "^models/block/.*CounterModel.json$"
-      },
-      {
-        "namespace": "^decoration_delight$",
-        "path": "^models/block/.*CounterBendModel.json$"
-      },
-      {
-        "namespace": "^decoration_delight$",
-        "path": "^models/block/.*Countertop.json$"
-      },
-      {
-        "namespace": "^decoration_delight$",
-        "path": "^models/block/.*CounterCornerModel.json$"
-      },
-      {
-        "namespace": "^connectedglass$",
-        "path": "^models/block/.*.json$"
-      },
-      {
-        "namespace": "^decoration_delight$",
-        "path": "^models/block/OakSinkModel.json$"
-      },
-      {
-        "namespace": "^snowyspirit$",
-        "path": "^models/block/.*.json$"
       }
     ]
   }
