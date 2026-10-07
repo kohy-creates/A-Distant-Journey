@@ -983,7 +983,7 @@
 			counter_bend = true
 			counter_corner = true
 
-		[entries.wood_type.vct]
+		[entries.wood_type.mctb]
 			crafting_table = true
 
 	[entries.leaves_type]

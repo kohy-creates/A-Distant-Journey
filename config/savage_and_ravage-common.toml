@@ -14,8 +14,8 @@
 		#When killed by projectiles, evokers use a totem of undying
 		#This restores 2 health and gives them a projectile-proof shield for 30 seconds
 		#When their shield runs out, evokers cannot use totems for another 90 seconds
-		"Evokers use totems" = true
-		"Vex health is reduced to 2" = true
+		"Evokers use totems" = false
+		"Vex health is reduced to 2" = false
 		#Illagers have a smarter AI when using Crossbows, making them more of a threat in combat
 		"Improved Illager behavior" = true
 
@@ -23,10 +23,10 @@
 
 	[compat.poisonous_potato]
 		#If baby mobs can be fed a poisonous potato to stunt their growth when Quark is installed
-		"Poisonous Potato compat" = true
+		"Poisonous Potato compat" = false
 		#The chance to stunt baby mob growth when feeding a poisonous potato
 		#Range: 0.0 ~ 1.0
 		"Poisonous Potato stunt chance" = 0.1
 		#If growth stunting should give baby mobs poison
-		"Poisonous Potato effect" = true
+		"Poisonous Potato effect" = false
 

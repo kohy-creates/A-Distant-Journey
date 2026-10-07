@@ -178,7 +178,7 @@
       "is_scaled_by_crd": true
     },
     "double_loot": {
-      "is_enabled": true,
+      "is_enabled": false,
       "chance": {
         "__default": 0.0,
         "chapter_1": 0.0,
