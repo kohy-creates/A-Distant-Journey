@@ -386,6 +386,7 @@ const RemovedItems = {
 
 		'supplementaries:altimeter',
 		'supplementaries:wrench',
+		'supplementaries:slidy_block',
 
 		'create_power_loader:empty_andesite_chunk_loader',
 		'create_power_loader:empty_brass_chunk_loader',

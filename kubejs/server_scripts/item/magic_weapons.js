@@ -32,9 +32,9 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 					event.setCanceled(true);
 					return;
 				}
-				let amount = Math.min(8, 3 + victim.getMaxHealth() * 0.005);
+				let amount = Math.min(7, 3 + victim.getMaxHealth() * 0.005);
 				event.setAmount(global.calculateSpellDamage(player, amount, true));
-				player.heal(Math.ceil(amount * 0.3));
+				player.adjcore$heal(Math.ceil(amount * 0.3), victim, 'lifedrain', true, false);
 				break;
 			}
 			case 'indirect_magic': {

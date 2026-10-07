@@ -289,7 +289,7 @@ ADJServerEvents.adjHurt(event => {
 						victim.addEffect(global.newMobEffectInstance('minecraft:weakness', global.duration('0:08'), 1, true, false, true));
 					}
 					if (nbt.AncientWill_guthan) {
-						player.heal(Math.ceil(event.getDamage() * 0.1))
+						player.adjcore$heal(Math.ceil(event.getDamage() * 0.1), player, 'will_of_guthan', true, false);
 					}
 					if (nbt.AncientWill_torag) {
 						victim.addEffect(global.newMobEffectInstance('minecraft:slowness', global.duration('0:08'), 1, true, false, true));
@@ -358,7 +358,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 				break;
 			}
 			case 'mcdw:sword_heartstealer': {
-				attacker.heal(event.getAmount() * 0.06);
+				attacker.adjcore$heal(event.getAmount() * 0.06, victim, 'heartstealer', true, false);
 				break;
 			}
 			case 'mcdw:scythe_frost_scythe':
@@ -454,7 +454,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 					if (global.ifRandomChance(20)) {
 						global.getEntitiesInRadius(level, victim.x, victim.y, victim.z, 4.5).forEach(/** @param {Internal.Entity} entity */ entity => {
 							if (entity instanceof $Player) {
-								entity.heal(4 + enchLevel * 4)
+								entity.adjcore$heal(3 + (enchLevel - 1) * 2, attacker, 'radiance', true, false);
 							}
 						});
 						attacker.getServer().runCommandSilent(`execute as ${victim.uuid.toString()} at @s run function adj:radiance_circle`);
@@ -530,7 +530,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 	if (event.getSource().getType() === 'wither') {
 		global.getEntitiesInRadius(victim.level, victim.x, victim.y, victim.z, 32).forEach(entity => {
 			if (entity instanceof $Player && entity.isCuriosEquipped('kubejs:withering_necklace')) {
-				entity.heal(Math.ceil(event.getAmount() * 0.33));
+				entity.adjcore$heal(Math.ceil(event.getAmount() * 0.33), victim, 'withering_necklace', true, false);
 			}
 		})
 	}
@@ -567,8 +567,8 @@ EntityEvents.death(event => {
 					break;
 				}
 				case 'kubejs:leeching': {
-					let percent = 0.04 + 0.02 * enchLevel;
-					player.heal(victim.getMaxHealth() * percent);
+					let percent = 0.04 + 0.01 * enchLevel;
+					player.adjcore$heal(victim.getMaxHealth() * percent, victim, 'leeching', true, false);
 					break;
 				}
 				case 'kubejs:rampaging': {

@@ -41,7 +41,8 @@ ItemEvents.tooltip(event => {
 			};
 			text.remove(1)
 		}
-	})
+	});
+
 	event.addAdvancedToAll((item, advanced, text) => {
 		const original = text.toArray();
 		for (let i = original.length - 1; i > 0; i--) {
@@ -52,7 +53,8 @@ ItemEvents.tooltip(event => {
 				break;
 			}
 		}
-	})
+	});
+
 	event.addAdvanced([
 		'ars_nouveau:ring_of_lesser_discount',
 		'ars_nouveau:ring_of_greater_discount',
@@ -79,17 +81,14 @@ ItemEvents.tooltip(event => {
 				return;
 			}
 		}
-	})
-
-	function parseMath(expr) {
-		return Function(`'use strict'; return (${expr})`)()
-	}
+	});
 
 	// Global tooltip modifications
 	// Targetted mainly towards tools
 	const attributesIgnoredItems = [
 		'sortilege:lapis_shield'
-	]
+	];
+
 	/** @type {$Item$$Type} */
 	const setBonusItems = [
 		'botania:manasteel_helmet',
@@ -120,8 +119,8 @@ ItemEvents.tooltip(event => {
 		'born_in_chaos_v1:nightmare_mantleofthe_night_chestplate',
 		'born_in_chaos_v1:nightmare_mantleofthe_night_leggings',
 		'born_in_chaos_v1:nightmare_mantleofthe_night_boots'
-	]
-	//priority:-100
+	];
+
 	event.addAdvancedToAll((item, advanced, text) => {
 		// Remove attributes if SHIFT isn't pressed
 		if (!event.shift && !attributesIgnoredItems.includes(item.id.toString())) {
@@ -335,7 +334,7 @@ ItemEvents.tooltip(event => {
 				}
 			}
 
-			let damage = [item.maxDamage - item.damageValue, item.maxDamage]
+			let damage = [item.maxDamage - item.damageValue, item.maxDamage];
 
 			let firstNumber = Text.of(parseInt(damage[0]).toString().replace('.0', ''));
 			let secondNumber = Text.of(parseInt(damage[1]).toString().replace('.0', ''));
@@ -353,8 +352,8 @@ ItemEvents.tooltip(event => {
 					colorDurabilityText(percent, Text.join([(percent * 100).toFixed(1).toString().replace('.0', ''), "%"])),
 					")"
 				]).gray()
-			]))
-			text.add(pos, '')
+			]));
+			text.add(pos, '');
 		}
 
 		// Remove default set bonus items
@@ -365,7 +364,7 @@ ItemEvents.tooltip(event => {
 
 			for (let i = 0; i < 100; i++) {
 				if (text[1].toString().includes('item.modifiers.') || text[1].toString().includes('Enchantments')) {
-					text.add(1, '')
+					text.add(1, '');
 					break;
 				}
 				text.remove(1);
@@ -417,8 +416,9 @@ ItemEvents.tooltip(event => {
 						let args = desc.args;
 						for (let i = 0; i < args.length; i++) {
 							let arg = args[i];
-							let value = parseMath(arg.replace('level', level));
-							base = base.replace('{}', value);
+							let expression = global.textReplaceAll(arg, 'level', level);
+							let value = global.parseMath(global.textReplaceAll(arg, 'level', level));
+							base = base.replace('{}', global.formatNumber(value, 2));
 						}
 						desc = Text.of(base);
 					}

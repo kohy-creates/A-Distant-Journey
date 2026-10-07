@@ -5,7 +5,7 @@ const POTION_REGISTRY = {
 	effects: {
 		'iron_skin': new $MobEffectBuilder('iron_skin')
 			.beneficial()
-			.color(Color.GRAY)
+			.color(0x8C8C8C)
 			.displayName('Iron Skin')
 			.modifyAttribute(
 				'generic.armor',
@@ -15,7 +15,7 @@ const POTION_REGISTRY = {
 			),
 		'archery': new $MobEffectBuilder('archery')
 			.beneficial()
-			.color(Color.ORANGE_DYE)
+			.color(0xF79900)
 			.displayName('Archery')
 			.modifyAttribute(
 				'attributeslib:arrow_damage',
@@ -32,7 +32,7 @@ const POTION_REGISTRY = {
 		'magic_power': new $MobEffectBuilder('magic_power')
 			.beneficial()
 			.displayName('Magic Power')
-			.color(Color.BLUE)
+			.color(0x0090F7)
 			.modifyAttribute(
 				'ars_nouveau:ars_nouveau.perk.spell_damage',
 				'b423d950-69fa-4a9e-adc7-c976108ff0e0',
@@ -42,7 +42,7 @@ const POTION_REGISTRY = {
 		'builder': new $MobEffectBuilder('builder')
 			.beneficial()
 			.displayName('Builder')
-			.color(Color.BROWN_DYE)
+			.color(0xAD5D00)
 			.modifyAttribute(
 				'forge:block_reach',
 				'c1e3f5b0-4d8a-4f2e-9c6b-1f2e3d4c5b6a',
@@ -51,68 +51,20 @@ const POTION_REGISTRY = {
 			),
 		'thorns': new $MobEffectBuilder('thorns')
 			.beneficial()
-			.color(Color.GREEN_DYE),
+			.color(0x00910B),
 	},
 
 	effectObjects: {},
 
 	potions: {
-		dissolved_daybloom: { effects: [], ingredients: ['kubejs:daybloom'], },
-		dissolved_moonglow: { effects: [], ingredients: ['kubejs:moonglow'], },
-		dissolved_blinkroot: { effects: [], ingredients: ['kubejs:blinkroot'], },
-		dissolved_deathweed: { effects: [], ingredients: ['kubejs:deathweed'], },
-		dissolved_waterleaf: { effects: [], ingredients: ['kubejs:waterleaf'], },
-		dissolved_fireblossom: { effects: [], ingredients: ['kubejs:fireblossom'], },
-		dissolved_shiverthorn: { effects: [], ingredients: ['kubejs:shiverthorn'], },
-		endurance: {
-			effects: [
-				{ effect: 'minecraft:resistance', duration: '4:00' }
-			],
-			ingredients: ['minecraft:iron_block'],
-			base: 'kubejs:dissolved_daybloom'
-		},
-		decay: {
-			effects: [
-				{ effect: 'minecraft:wither', duration: '0:30' }
-			],
-			ingredients: ['netherexp:fossil_fuel']
-		},
-		levitation: {
-			effects: [
-				{ effect: 'minecraft:levitation', duration: '0:10' }
-			],
-			ingredients: ['minecraft:shulker_shell']
-		},
-		iron_skin: {
-			effects: [
-				{ effect: 'kubejs:iron_skin', duration: '8:00' }
-			],
-			ingredients: ['minecraft:iron_ingot']
-		},
-		archery: {
-			effects: [
-				{ effect: 'kubejs:archery', duration: '8:00' }
-			],
-			ingredients: ['minecraft:arrow']
-		},
-		magic_power: {
-			effects: [
-				{ effect: 'kubejs:magic_power', duration: '4:00' },
-			],
-			ingredients: ['ars_nouveau:source_gem']
-		},
-		builder: {
-			effects: [
-				{ effect: 'kubejs:builder', duration: '45:00' }
-			],
-			ingredients: ['minecraft:brick_block']
-		},
-		thorns: {
-			effects: [
-				{ effect: 'kubejs:thorns', duration: '8:00' }
-			],
-			ingredients: ['minecraft:rose_bush']
-		}
+		endurance: [{ effect: 'minecraft:resistance', duration: '4:00' }],
+		decay: [{ effect: 'minecraft:wither', duration: '0:30' }],
+		levitation: [{ effect: 'minecraft:levitation', duration: '0:10' }],
+		iron_skin: [{ effect: 'kubejs:iron_skin', duration: '8:00' }],
+		archery: [{ effect: 'kubejs:archery', duration: '8:00' }],
+		magic_power: [{ effect: 'kubejs:magic_power', duration: '4:00' }],
+		builder: [{ effect: 'kubejs:builder', duration: '45:00' }],
+		thorns: [{ effect: 'kubejs:thorns', duration: '8:00' }]
 	}
 };
 
@@ -141,7 +93,7 @@ StartupEvents.init(event => {
 		const potionData = POTION_REGISTRY.potions[potion];
 		const potionBuilder = Utils.lazy(() => {
 			const builder = new $PotionBuilder(`kubejs:${potion}`);
-			potionData.effects.forEach((effect) => {
+			potionData.forEach((effect) => {
 				builder.addEffect(global.newMobEffectInstance(
 					(effect.effect.startsWith('kubejs:')
 						? POTION_REGISTRY.effectObjects[effect.effect.replace('kubejs:', '')].get()
@@ -155,17 +107,6 @@ StartupEvents.init(event => {
 });
 
 MoreJSEvents.registerPotionBrewing((event) => {
-
-	Object.keys(POTION_REGISTRY.potions).forEach((potion) => {
-		const potionData = POTION_REGISTRY.potions[potion];
-		potionData.ingredients.forEach((ingredient) => {
-			if (!Item.exists(ingredient)) {
-				console.log(`Ingredient ${ingredient} for potion ${potion} does not exist!`);
-				return;
-			}
-			event.addPotionBrewing(ingredient, global.getOrDefault(potionData.base, 'awkward'), `kubejs:${potion}`);
-		});
-	});
 
 	// Custom alchemy recipes
 	event.addCustomBrewing(

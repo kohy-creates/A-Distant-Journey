@@ -27,3 +27,6 @@ const $EntityPickupItemEvent = Java.loadClass('net.minecraftforge.event.entity.p
 const $EntityInteractEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerInteractEvent$EntityInteract');
 const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager');
 const $AgeableMob = Java.loadClass('net.minecraft.world.entity.AgeableMob');
+
+const $PotionBrewEvent$Pre = Java.loadClass('net.minecraftforge.event.brewing.PotionBrewEvent$Pre');
+const $PotionBrewEvent$Post= Java.loadClass('net.minecraftforge.event.brewing.PotionBrewEvent$Post');

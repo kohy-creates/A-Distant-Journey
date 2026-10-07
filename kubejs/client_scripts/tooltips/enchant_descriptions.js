@@ -44,13 +44,24 @@ const EnchantmentDescriptions = {
 		]
 	},
 	'minecraft:knockback': 'Increases the knockback strength of the weapon.',
-	'minecraft:fire_aspect': 'Causes additional fire damage when used to attack a mob.',
-	'minecraft:looting': 'Mobs will drop more loot when killed.',
-	'minecraft:efficiency': 'Increases mining speed of the tool.',
-	'minecraft:silk_touch': 'Allows fragile blocks such as glass to be collected.',
+	'minecraft:fire_aspect': {
+		base: 'Sets the mob on fire for {} seconds, dealing {} damage total over the duration.',
+		args: [
+			'4 * level',
+			'4 * 4 * level'
+		]
+	},
+	'minecraft:looting': 'Mobs will drop more loot when killed and rarer drops are more common.',
+	'minecraft:efficiency': 'Increases mining speed.',
+	'minecraft:silk_touch': 'Allows fragile blocks to be collected.',
 	'minecraft:unbreaking': 'Doubles the item\'s maximum durability.',
-	'minecraft:fortune': 'Some blocks like coal and diamond ore may drop additional items.',
-	'minecraft:power': 'Increases the damage of arrows fired from the bow.',
+	'minecraft:fortune': 'Ore blocks might drop more resources.',
+	'minecraft:power': {
+		base: 'Increases arrow damage by {}%.',
+		args: [
+			'8 * level'
+		]
+	},
 	'minecraft:punch': 'Increases the knockback strength of arrows fired by the bow.',
 	'minecraft:flame': 'Arrows fired from the bow will deal additional fire damage.',
 	'minecraft:infinity': 'Allows the bow to fire normal arrows for free. You must have at least one arrow for this to work.',
@@ -71,13 +82,25 @@ const EnchantmentDescriptions = {
 	'minecraft:riptide': 'Using the trident while in rain or water will launch the user forward.',
 	'minecraft:channeling': 'Allows the trident to summon lightning bolts during thunderstorms.',
 	'minecraft:multishot': {
-		base: 'Fires {} additional arrows in similar directions.',
+		base: 'Fires {} arrows total in an even spread.',
 		args: [
-			'level * 2'
+			'2 + level'
 		]
 	},
-	'minecraft:quick_charge': 'Increases the reload speed of crossbows.',
-	'minecraft:piercing': 'Allows projectiles to pierce through mobs.',
+	'minecraft:quick_charge': {
+		base: 'Increases the reload speed of crossbows by {}s ({}%).',
+		args: [
+			'((7 * level - level * level) / 2) / 20',
+			'((7 * level - level * level) / 2) / 24 * 100'
+		]
+	},
+	'minecraft:piercing': {
+		base: 'Arrows pierce through mobs, dealing damage to {} extra target(s) ({} total).',
+		args: [
+			'level',
+			'level + 1'
+		]
+	},
 	'minecraft:soul_speed': 'Increases movement speed on soul blocks.',
 	'minecraft:swift_sneak': 'Increases movement speed while sneaking.',
 
@@ -93,7 +116,7 @@ const EnchantmentDescriptions = {
 	'kubejs:radiance': {
 		base: '20% chance per hit to heal every nearby player for {} HP.',
 		args: [
-			'4 + level * 4'
+			'3 + (level - 1) * 2'
 		]
 	},
 	'kubejs:echo': {
@@ -105,7 +128,7 @@ const EnchantmentDescriptions = {
 	'kubejs:leeching': {
 		base: 'Killing mobs heals you {}% of their max health.',
 		args: [
-			'4 + 2 * level'
+			'4 + level'
 		]
 	},
 	'kubejs:prospector': {

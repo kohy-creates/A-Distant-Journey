@@ -495,3 +495,27 @@ global.getCurrentLunarEvent = function (level) {
 global.getCurrentSeason = function (level) {
 	$SeasonHelper.getSeasonState(level).getSeason().name().toLowerCase();
 };
+
+/**
+ * Evaluates a mathematical expression.
+ * @param {string} expr 
+ * @returns {number}
+ */
+global.parseMath = function (expr) {
+	return Function(`'use strict'; return (${expr})`)()
+};
+
+/**
+ * Formats a number for display. Extra decimal places are cut off and the 0 is removed if the number is a whole number.
+ * @param {number|string} number 
+ * @param {number} decimalPlaces
+ * @returns {string}
+ */
+global.formatNumber = function (number, decimalPlaces) {
+	let d = global.getOrDefault(decimalPlaces, 1);
+	let split = String(number).split('.');
+	if (split.length > 1 && parseFloat(split[1].substring(0, decimalPlaces)) != 0) {
+		return split[0] + '.' + split[1].substring(0, decimalPlaces);
+	}
+	return split[0];
+};
