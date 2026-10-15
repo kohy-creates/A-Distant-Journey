@@ -1,0 +1,13 @@
+capability_fix_revived Report
+Instructions: Copy the IDs below into your capability_fix_revived-common.toml whitelist.
+WARNING: Only whitelist capabilities you know are static on entities.
+
+nonamecrackers2/witherstormmod/common/capability/WitherSicknessTracker (Calls tracked: 53590355)
+umpaz/brewinandchewin/common/capability/TipsyNumbedHeartsCapability (Calls tracked: 7289384)
+net/mcreator/unusualend/network/UnusualendModVariables$PlayerVariables (Calls tracked: 1774084)
+com/aetherteam/aether/capability/accessory/MobAccessory (Calls tracked: 1212)
+vazkii/botania/common/internal_caps/TigerseyeComponent (Calls tracked: 372)
+vazkii/botania/common/internal_caps/NarslimmusComponent (Calls tracked: 2)
+fuzs/puzzlesapi/impl/iteminteractions/capability/EnderChestMenuCapability (Calls tracked: 1)
+com/rosemods/heart_crystals/core/other/HCPlayerInfo$PlayerHealthInfo (Calls tracked: 1)
+com/tiviacz/travelersbackpack/capability/ITravelersBackpack (Calls tracked: 1)

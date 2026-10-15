@@ -1,6 +1,8 @@
 StartupEvents.registry('banner_pattern', registry => {
 
 	const $BannerPattern = Java.loadClass('net.minecraft.world.level.block.entity.BannerPattern');
+
+	let i = 0;
 	function registerBannerPattern(id, tag, name) {
 		// console.log(`Registering banner pattern kubejs:${id}`)
 		registry.createCustom(id, () => new $BannerPattern(id)).tag(global.getOrDefault(tag, 'minecraft:no_item_required'));
@@ -9,6 +11,7 @@ StartupEvents.registry('banner_pattern', registry => {
 			`block.minecraft.banner.kubejs.${id}.${color}`,
 			`${global.toTitleCase(global.textReplaceAll(color, '_', ' '))} ${global.getOrDefault(name, global.toTitleCase(global.textReplaceAll(id.split('/')[1], '_', ' ')))}`
 		));
+		i++;
 	}
 
 	registerBannerPattern('moxvallix/chequered');
@@ -388,4 +391,6 @@ StartupEvents.registry('banner_pattern', registry => {
 	registerBannerPattern('karottenkarla/peace', 'adj:pattern_item/peace', 'Peace Symbol');
 	registerBannerPattern('karottenkarla/heart', 'adj:pattern_item/heart');
 	registerBannerPattern('karottenkarla/shark', 'adj:pattern_item/shark', 'Shark');
+
+	console.log(`Registered ${i} banner patterns`);
 });

@@ -1,17 +1,16 @@
 # Don't change this! Version used to track needed updates.
 version = 0
-attackedChickenFeathers = true
-attackedParrotFeathers = true
-attackedSnowGolemSnowflakes = true
-attackedSheepFluff = true
-attackedSlimeSlime = true
 allayMagicDensity = 0.39869281045751653
 vexMagicDensity = 0.5
+allayTwinklingSounds = true
+allayDuplicatedSounds = true
 sheepShearFluff = true
 improvedDragonFireballTrail = true
 dragonsBreathClouds = true
 commandBlockMinecartParticles = "ON"
-endCrystalParticles = true
+endCrystalMagicDensity = 1.0
+endCrystalMagicNeedsFire = false
+endCrystalsDisableFireEffects = true
 minecartSparksDisplayType = "LAND_ON_RAIL"
 minecartSparksDensity = 0.5
 slimeTrails = true
@@ -36,6 +35,11 @@ improvedWetWolfShakeEffects = true
 improvedVillagerSweatingEffects = true
 magmaCubeLandSparks = true
 snowGolemStepSounds = true
+chargedCreeperParticlesDensity = 0.2
+chargedCreeperExplosionParticles = true
+lightningStrikeParticles = true
+shulkerTeleportParticles = true
+entityUpdateFrequency = 20
 
 [sleeping]
 playerSnoreChance = 0.0
@@ -61,6 +65,8 @@ potionRingsParticleType = "BOTH"
 potionRingsScale = 1.3300654
 potionRingsAlpha = 0.8013072
 NPCsHavePotionRings = true
+reverseDirectionForHarmfulEffects = true
+glowingPotionRings = true
 
 [humanoids.frostyBreath]
 displayType = "OFF"
@@ -93,10 +99,10 @@ playerRunningRequiresSpeed = true
 
 [burning]
 smokeType = "UPDATED"
-smokeDensity = 1.0
-flamesDensity = 1.0
-sparksDensity = 1.0
-soundVolume = 0.4509804
+smokeDensity = 0.49673203
+flamesDensity = 0.49673203
+sparksDensity = 0.75490195
+soundVolume = 0.30392158
 entityBlocklist = [
     "minecraft:lightning_bolt",
     "minecraft:item"
@@ -121,6 +127,42 @@ splashOverlayTint = 0.2
 splashOverlayAlpha = 0.8
 splashVelocityThreshold = 0.35
 entityBlocklist = [  ]
+ignoreWaterloggedBlocks = false
+splashHeightScaleModifier = 1.0
 secondarySplash = true
 secondarySplashRipples = false
 secondarySplashVelocityThreshold = 0.3
+
+[damageTaken]
+damageTypes = [
+    "minecraft:generic",
+    "minecraft:stalagmite",
+    "minecraft:trident",
+    "minecraft:fall",
+    "minecraft:falling_stalactite",
+    "minecraft:mob_projectile",
+    "minecraft:arrow",
+    "minecraft:bad_respawn_point",
+    "minecraft:explosion",
+    "minecraft:falling_anvil",
+    "minecraft:falling_block",
+    "minecraft:fireball",
+    "minecraft:fly_into_wall",
+    "minecraft:lightning_bolt",
+    "minecraft:mob_attack",
+    "minecraft:mob_attack_no_aggro",
+    "minecraft:player_attack",
+    "minecraft:player_explosion",
+    "minecraft:sonic_boom",
+    "minecraft:sting",
+    "minecraft:thrown",
+    "minecraft:unattributed_fireball",
+    "minecraft:wither_skull"
+]
+damagedChickenFeathers = false
+damagedParrotFeathers = false
+damagedSnowGolemSnowflakes = true
+damagedSheepFluff = false
+damagedSlimeSlime = false
+damagedSkeletonBones = false
+damagedSkeletonHorseBones = false

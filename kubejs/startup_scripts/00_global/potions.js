@@ -57,9 +57,6 @@ global.potionRecipes = {
 	// 'composite_material:primitive'
 	// 'composite_material:degeneration'
 	// 'witherstormmod:wither'
-	// 'crittersandcompanions:resistance'
-	// 'kubejs:dissolved_daybloom'
-	// 'crittersandcompanions:resistance'
 	// 'kubejs:endurance'
 	// 'kubejs:decay'
 	// 'kubejs:levitation'
@@ -97,8 +94,6 @@ global.potionRecipes = {
 for (let [potion, ingredients] of Object.entries(global.potionRecipes)) {
 	for (let a = 0; a < ingredients.length; a++) {
 		let ingr = ingredients[a];
-		if (!ingr.includes(':')) {
-			global.potionRecipes[potion][a] = 'minecraft:' + ingr;
-		}
+		global.potionRecipes[potion][a] = global.normalizeResourceLocation(ingr);
 	}
 };

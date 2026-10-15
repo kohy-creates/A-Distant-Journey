@@ -1,21 +1,20 @@
 # Don't change this! Version used to track needed updates.
-version = 0
+version = 1
 biomeColorRain = true
 
 [biomes]
-biomeParticlesRadius = 24
-mushroomSporeDensity = 15
+mushroomSporeDensity = 0.5
 mushroomSporeBiomes = [
     "minecraft:mushroom_fields",
     "clifftree:mushroom_caves"
 ]
-pollenDensity = 20
+pollenDensity = 0.75
 pollenBiomes = [
     "minecraft:flower_forest",
     "minecraft:sunflower_plains",
     "twilightforest:clearing"
 ]
-sculkDustDensity = 5
+sculkDustDensity = 0.25
 sculkDustBiomes = [
     "minecraft:deep_dark"
 ]

@@ -20,7 +20,7 @@ ItemEvents.modification(event => {
 	function armorset(type) {
 		let list = [];
 		item_ids.forEach(item => {
-			const i = type + item;
+			const i = global.normalizeResourceLocation(type) + item;
 			if (Item.exists(i)) list.push(i);
 		});
 		return list;

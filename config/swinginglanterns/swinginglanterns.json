@@ -13,6 +13,7 @@
   "physicsBlockHitImpulse": 4.6,
   "physicsHitKnockbackPerLevel": 2.75,
   "physicsRemotePlayerHits": true,
+  "physicsAuroraWallLanterns": true,
   "physicsPendulumGravity": 1.36,
   "physicsPendulumDamping": 0.058,
   "physicsChainVelocityToRelativeLag": 0.043,

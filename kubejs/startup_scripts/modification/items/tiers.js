@@ -270,7 +270,7 @@ ItemEvents.modification(event => {
 	];
 	function modifyTier(itemCat, tier) {
 		toolset.forEach(tool => {
-			const itemId = itemCat + tool;
+			const itemId = global.normalizeResourceLocation(itemCat) + tool;
 			event.modify(itemId, item => {
 				item.tier = $TierSortingRegistry.byName(global.resourceLocation(`adj:${tier}`));
 			});

@@ -95,7 +95,6 @@ LootJS.modifiers((event) => {
 		'farmersdelight:straw_from_tall_grass',
 		'farmersdelight:add_onion_to_illagers',
 		'farmersdelight:add_onion_to_zombies',
-		'crittersandcompanions:replace_drowned_flesh',
 		'aether_redux:raw_gravitite',
 		'aether_redux:raw_veridium',
 		'aether_redux:raw_valkyrum',
@@ -895,20 +894,6 @@ LootJS.modifiers((event) => {
 						c.customCondition(fromChapter(3));
 					})
 			);
-		});
-
-	event.addEntityLootModifier('drowned')
-		.pool(pool => {
-			pool.addLoot(
-				LootEntry.of('kubejs:neptunes_shell')
-					.when(c => {
-						c.randomChanceWithLooting(0.02, 0.01);
-						c.customCondition(fromChapter(3));
-					})
-			);
-		})
-		.pool(pool => {
-			pool.addLoot(LootEntry.of('crittersandcompanions:clam').when(c => c.randomChanceWithLooting(0.12, 0.03)))
 		});
 
 	event.addLootTableModifier('mythicmetals:gameplay/better_piglin_bartering')

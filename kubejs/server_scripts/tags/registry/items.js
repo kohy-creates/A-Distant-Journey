@@ -715,4 +715,6 @@ ServerEvents.tags('item', tags => {
 	for (let [potion, ingredients] of Object.entries(global.potionRecipes)) {
 		tags.add('adjcore:brewing_ingredients', ingredients);
 	}
+
+	tags.removeAll('alexscaves:ferromagnetic_items');
 });

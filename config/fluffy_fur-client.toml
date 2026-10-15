@@ -32,33 +32,22 @@
 		explosionEffect = false
 		#Enable screenshake for custom effect of explosion.
 		explosionEffectScreenshake = false
+		#Enable light for custom effect of lightning bolt.
+		lightningBoltEffectLight = true
+		#Enable screenshake for custom effect of lightning bolt.
+		lightningBoltEffectScreenshake = true
 
 	#Shaders
 	[graphics.shaders]
-		#Enable Rain Fog effect post process shader.
-		rainFogShader = true
-		#Intensity of Rain Fog effect post process shader.
-		#Range: 0.0 ~ 2.0
-		rainFogShaderIntensity = 0.2
-		#Intensity of Thunder Fog effect post process shader.
-		#Range: 0.0 ~ 2.0
-		thunderFogShaderIntensity = 0.1
-		#Intensity of Thunder Fog fade effect post process shader.
-		#Range: 0.0 ~ 1.0
-		thunderFogFadeShaderIntensity = 0.25
-		#Enable noise for Rain Fog effect.
-		rainFogShaderNoise = true
-		#Enable Interleaved Gradient Noise for Rain Fog effect.
-		rainFogShaderIGN = true
+		#Enable a log warning about exceeding the post-process shader instance limit
+		postProcessShaderInstanceLog = true
 
 #Menu
 [menu]
-	#Fluffy Fur Panorama.
-	panorama = "minecraft:vanilla"
 	#Enable Fluffy Fur menu button.
 	menuButton = false
 	#Fluffy Fur menu button row.
-	#Range: 0 ~ 4
+	#Range: 1 ~ 4
 	menuButtonRow = 3
 	#Fluffy Fur menu button X offset with row.
 	menuButtonRowXOffset = 4
@@ -70,4 +59,50 @@
 	panoramaLogo = false
 	#Enable music in Fluffy Fur Panorama.
 	panoramaMusic = false
+	#Enable enhanced menu.
+	#Replaces dirt background with a transparent one with a panorama.
+	enhancedMenu = true
+	#Enable vanilla panorama conflict prevention.
+	#When other mods change the vanilla panorama texture, it tries to intercept that texture for seamless transitions between screens.
+	vanillaPanoramaConflictPrevention = true
+	#Enable Fluffy Fur pause screen button.
+	pauseScreenButton = true
+	#Fluffy Fur pause screen button row.
+	#Range: 1 ~ 6
+	pauseScreenButtonRow = 4
+	#Fluffy Fur pause screen button X offset with row.
+	pauseScreenButtonRowXOffset = 4
+	#Fluffy Fur pause screen button X offset.
+	pauseScreenButtonXOffset = 0
+	#Fluffy Fur pause screen button Y offset.
+	pauseScreenButtonYOffset = 0
+	#Enable custom pack selection button.
+	packButton = true
+	#Custom pack selection button X offset with row.
+	packButtonRowXOffset = -4
+	#Custom pack selection button X offset.
+	packButtonXOffset = 0
+	#Custom pack selection button Y offset.
+	packButtonYOffset = 0
+
+#Overlay
+[overlay]
+
+	#Rain Fog
+	[overlay.rainFog]
+		#Enable Rain Fog overlay effect.
+		rainFogOverlay = true
+		#Intensity of Rain Fog overlay effect.
+		#Range: 0.0 ~ 2.0
+		rainFogOverlayIntensity = 0.3
+		#Intensity of Thunder Fog overlay effect.
+		#Range: 0.0 ~ 2.0
+		thunderFogOverlayIntensity = 0.1
+		#Intensity of Thunder Fog fade overlay effect.
+		#Range: 0.0 ~ 1.0
+		thunderFogFadeOverlayIntensity = 0.25
+		#Enable noise for Rain Fog overlay effect.
+		rainFogOverlayNoise = true
+		#Enable Interleaved Gradient Noise for Rain Fog overlay effect.
+		rainFogOverlayIGN = true
 

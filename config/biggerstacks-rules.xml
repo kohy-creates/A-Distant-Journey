@@ -33,6 +33,10 @@
 			<condition>id = alexscaves:waste_drum</condition>
 			<condition>id = alexsmobs:lava_bottle</condition>
 			<condition>id = aether:life_shard</condition>
+			<condition>tag includes minecraft:beds</condition>
+			<condition>tag includes upgrade_aquatic:bedrolls</condition>
+			<condition>tag includes domesticationinnovation:pet_beds</condition>
+			<condition>tag includes ars_nouveau:summon_bed</condition>
 		</or>
 	</rule>
 	<rule stacksize="99">

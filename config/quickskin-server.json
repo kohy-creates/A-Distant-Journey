@@ -1,4 +1,6 @@
 {
   "disableSkinTransparency": false,
-  "skinChangeCooldownSeconds": 0
+  "skinChangeCooldownSeconds": 0,
+  "maxTextureUploadKilobytes": 16384,
+  "shareAccountSkinWithVanillaClients": false
 }

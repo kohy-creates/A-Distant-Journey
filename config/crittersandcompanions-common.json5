@@ -238,26 +238,7 @@
 				max: 2
 			}
 		],
-		snail: [
-			{
-				biome_spec: "#minecraft:is_forest",
-				weight: 5,
-				min: 1,
-				max: 2
-			},
-			{
-				biome_spec: "minecraft:lush_caves",
-				weight: 8,
-				min: 1,
-				max: 2
-			},
-			{
-				biome_spec: "minecraft:swamp",
-				weight: 10,
-				min: 1,
-				max: 2
-			}
-		],
+		snail: [],
 		stick_bug: [
 			{
 				biome_spec: "#minecraft:is_forest",

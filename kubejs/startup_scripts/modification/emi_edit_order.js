@@ -600,13 +600,13 @@ StartupEvents.postInit(event => {
 		addAfter = book;
 	}
 
-	// const allPotions = global.getAllRegistryObjects('POTIONS');
-	// for (let p = 0; p < allPotions.length; p++) {
-	// 	/** @type {Internal.Potion_} */
-	// 	let potion = allPotions[p];
-	// 	let id = potion.getDes
-	// 	let book = `minecraft:enchanted_book{StoredEnchantments:[{id:"${enchant.getId()}", lvl:${enchant.getMaxLevel().toString().replace('.0', '')}s}]}`
-	// }
+	global.getAllRegistryObjects('POTIONS').forEach(potion => {
+		let id = global.getRegistryId('POTIONS', potion);
+		if (id.includes('strong') || id.includes('long')) {
+			let book = `minecraft:potion{Potion:"${id}"}`;
+			edit.removed.push(stack(book));
+		}
+	});
 
 	JsonIO.write('kubejs/assets/emi/index/stacks/edit_item_order.json', edit);
 });

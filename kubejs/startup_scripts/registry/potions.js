@@ -5,7 +5,7 @@ const POTION_REGISTRY = {
 	effects: {
 		'iron_skin': new $MobEffectBuilder('iron_skin')
 			.beneficial()
-			.color(0x8C8C8C)
+			.color(Color.of('#8C8C8C'))
 			.displayName('Iron Skin')
 			.modifyAttribute(
 				'generic.armor',
@@ -15,7 +15,7 @@ const POTION_REGISTRY = {
 			),
 		'archery': new $MobEffectBuilder('archery')
 			.beneficial()
-			.color(0xF79900)
+			.color(Color.of('#F79900'))
 			.displayName('Archery')
 			.modifyAttribute(
 				'attributeslib:arrow_damage',
@@ -32,7 +32,7 @@ const POTION_REGISTRY = {
 		'magic_power': new $MobEffectBuilder('magic_power')
 			.beneficial()
 			.displayName('Magic Power')
-			.color(0x0090F7)
+			.color(Color.of('#0090F7'))
 			.modifyAttribute(
 				'ars_nouveau:ars_nouveau.perk.spell_damage',
 				'b423d950-69fa-4a9e-adc7-c976108ff0e0',
@@ -42,7 +42,7 @@ const POTION_REGISTRY = {
 		'builder': new $MobEffectBuilder('builder')
 			.beneficial()
 			.displayName('Builder')
-			.color(0xAD5D00)
+			.color(Color.of('#AD5D00'))
 			.modifyAttribute(
 				'forge:block_reach',
 				'c1e3f5b0-4d8a-4f2e-9c6b-1f2e3d4c5b6a',
@@ -51,7 +51,7 @@ const POTION_REGISTRY = {
 			),
 		'thorns': new $MobEffectBuilder('thorns')
 			.beneficial()
-			.color(0x00910B),
+			.color(Color.of('#00910B')),
 	},
 
 	effectObjects: {},
@@ -76,7 +76,7 @@ try {
 catch (e) {
 	console.log(
 		'Tried to register potions and effects, but failed.',
-		'If this is due to a secondary startup script reload, this is expected and can be ignored.',
+		'If this is due to a secondary startup script reload, this is expected and this warning can be ignored.',
 		e
 	)
 }
@@ -108,78 +108,84 @@ StartupEvents.init(event => {
 
 MoreJSEvents.registerPotionBrewing((event) => {
 
-	// Custom alchemy recipes
-	event.addCustomBrewing(
-		'tide:glowfish',
-		Item.of('minecraft:potion', "{Potion:'minecraft: water'}"),
-		'majruszsdifficulty:recall_potion'
-	);
+	// // Custom alchemy recipes
+	// event.addCustomBrewing(
+	// 	'tide:glowfish',
+	// 	Item.of('minecraft:potion', "{Potion:'minecraft: water'}"),
+	// 	'majruszsdifficulty:recall_potion'
+	// );
 
-	event.addCustomBrewing(
-		'ender_pearl',
-		Item.of('minecraft:potion', "{Potion:'minecraft: water'}"),
-		'wormholepotion:wormhole_potion'
-	);
+	// event.addCustomBrewing(
+	// 	'ender_pearl',
+	// 	Item.of('minecraft:potion', "{Potion:'minecraft: water'}"),
+	// 	'wormholepotion:wormhole_potion'
+	// );
 
-	event.addCustomBrewing(
-		'alexsmobs:bone_serpent_tooth',
-		'alexsmobs:lava_bottle',
-		Item.of('minecraft:potion', "{Potion:'netherdepthsupgrade: lava_vision'}")
-	);
+	// event.addCustomBrewing(
+	// 	'alexsmobs:bone_serpent_tooth',
+	// 	'alexsmobs:lava_bottle',
+	// 	Item.of('minecraft:potion', "{Potion:'netherdepthsupgrade: lava_vision'}")
+	// );
 
-	event.addCustomBrewing(
-		'netherdepthsupgrade:eyeball',
-		'alexsmobs:lava_bottle',
-		Item.of('minecraft:potion', "{Potion:'netherdepthsupgrade: lava_vision'}")
-	);
+	// event.addCustomBrewing(
+	// 	'netherdepthsupgrade:eyeball',
+	// 	'alexsmobs:lava_bottle',
+	// 	Item.of('minecraft:potion', "{Potion:'netherdepthsupgrade: lava_vision'}")
+	// );
 
-	event.addCustomBrewing(
-		'netherdepthsupgrade:eyeball_fish',
-		'alexsmobs:lava_bottle',
-		Item.of('minecraft:potion', "{Potion:'netherdepthsupgrade: lava_vision'}")
-	);
+	// event.addCustomBrewing(
+	// 	'netherdepthsupgrade:eyeball_fish',
+	// 	'alexsmobs:lava_bottle',
+	// 	Item.of('minecraft:potion', "{Potion:'netherdepthsupgrade: lava_vision'}")
+	// );
 
-	// Universal Glowing
-	event.addPotionBrewing('netherdepthsupgrade:glowdine', 'awkward', 'alexscaves:glowing');
+	// // Universal Glowing
+	// event.addPotionBrewing('netherdepthsupgrade:glowdine', 'awkward', 'alexscaves:glowing');
 
-	// Replace ingredients
-	event.addPotionBrewing('alexsmobs:bear_fur', 'strength', 'alexsmobs:knockback_resistance');
+	// // Replace ingredients
+	// event.addPotionBrewing('alexsmobs:bear_fur', 'strength', 'alexsmobs:knockback_resistance');
 
-	// Remove doubled or useless potions
-	const removedPotions = [
-		'netherdepthsupgrade:glowdine_glowing',
-		'netherdepthsupgrade:glowdine_long_glowing',
-		'ars_elemental:shock_potion',
-		'ars_elemental:shock_potion_long',
-		'netherdepthsupgrade:obsidianfish_long_resistance',
-		'netherdepthsupgrade:obsidianfish_resistance',
-		'netherdepthsupgrade:obsidianfish_strong_resistance',
-		'netherdepthsupgrade:lava_puffer_long_wither',
-		'netherdepthsupgrade:lava_puffer_long_wither',
-		'witherstormmod:wither',
-		'witherstormmod:strong_wither',
-		'witherstormmod:long_wither',
-		'unusualend:health_boost',
-		'alexsmobs:knockback_resistance',
-		'alexsmobs:strong_knockback_resistance',
-		'alexsmobs:long_knockback_resistance',
-		'unusualend:haste',
-		'unusualend:advanced_haste',
-		'additionaladditions:haste_potion',
-		'additionaladditions:long_haste_potion',
-		'additionaladditions:strong_haste_potion',
-		'alexsmobs:lava_vision',
-		'alexsmobs:long_lava_vision',
-		'netherdepthsupgrade:lava_vision'
-	];
+	// // Remove doubled or useless potions
+	// const removedPotions = [
+	// 	'netherdepthsupgrade:glowdine_glowing',
+	// 	'netherdepthsupgrade:glowdine_long_glowing',
+	// 	'ars_elemental:shock_potion',
+	// 	'ars_elemental:shock_potion_long',
+	// 	'netherdepthsupgrade:obsidianfish_long_resistance',
+	// 	'netherdepthsupgrade:obsidianfish_resistance',
+	// 	'netherdepthsupgrade:obsidianfish_strong_resistance',
+	// 	'netherdepthsupgrade:lava_puffer_long_wither',
+	// 	'netherdepthsupgrade:lava_puffer_long_wither',
+	// 	'witherstormmod:wither',
+	// 	'witherstormmod:strong_wither',
+	// 	'witherstormmod:long_wither',
+	// 	'unusualend:health_boost',
+	// 	'alexsmobs:knockback_resistance',
+	// 	'alexsmobs:strong_knockback_resistance',
+	// 	'alexsmobs:long_knockback_resistance',
+	// 	'unusualend:haste',
+	// 	'unusualend:advanced_haste',
+	// 	'additionaladditions:haste_potion',
+	// 	'additionaladditions:long_haste_potion',
+	// 	'additionaladditions:strong_haste_potion',
+	// 	'alexsmobs:lava_vision',
+	// 	'alexsmobs:long_lava_vision',
+	// 	'netherdepthsupgrade:lava_vision'
+	// ];
 
-	$ForgeRegistries.POTIONS.getKeys().toArray().forEach((potion) => {
-		if (potion.toString().includes('long') || potion.toString().includes('strong')) {
-			removedPotions.push(potion);
-		}
-	});
+	// $ForgeRegistries.POTIONS.getKeys().toArray().forEach((potion) => {
+	// 	if (potion.toString().includes('long') || potion.toString().includes('strong')) {
+	// 		removedPotions.push(potion);
+	// 	}
+	// });
 
-	removedPotions.forEach(potion => {
-		event.removeByPotion(null, null, potion);
+	// removedPotions.forEach(potion => {
+	// 	event.removeByPotion(null, null, potion);
+	// });
+
+	if (false)
+	global.getAllRegistryObjects('POTIONS').forEach(potion => {
+		let id = global.getRegistryId('POTIONS', potion);
+		event.removeByPotion(null, null, id);
 	});
 });

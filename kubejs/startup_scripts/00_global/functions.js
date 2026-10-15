@@ -398,6 +398,16 @@ global.getRegistryObject = function (registry, id) {
 };
 
 /**
+ * Returns the ID of an object in a given registry.
+ * @param {keyof typeof $ForgeRegistries} registry 
+ * @param {object} object 
+ * @returns {string}
+ */
+global.getRegistryId = function (registry, object) {
+	return global.getRegistry(registry).getKey(object).toString();
+};
+
+/**
  * Returns a list of all objects in a given registry.
  * @param {keyof typeof $ForgeRegistries} registry 
  * @returns {object[]}
@@ -518,4 +528,16 @@ global.formatNumber = function (number, decimalPlaces) {
 		return split[0] + '.' + split[1].substring(0, decimalPlaces);
 	}
 	return split[0];
+};
+
+/**
+ * Normalizes a resource location by adding the 'minecraft:' prefix if it's missing.
+ * @param {string} id 
+ * @returns {string}
+ */
+global.normalizeResourceLocation = function (id) {
+	if (!id.includes(':')) {
+		return 'minecraft:' + id;
+	}
+	return id;
 };

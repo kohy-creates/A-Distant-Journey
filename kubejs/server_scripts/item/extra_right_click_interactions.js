@@ -35,18 +35,18 @@ ItemEvents.rightClicked(event => {
 			break;
 		}
 
-		case 'crittersandcompanions:clam': {
-			player.give(global.weightedRandom({
-				'air': 30,
-				'hybrid_aquatic:pearl': 6,
-				'hybrid_aquatic:black_pearl': 3,
-				'alexscaves:pearl': 1
-			}));
-			player.swing(event.getHand(), true);
-			player.level.playSound(null, player.x, player.y, player.z, 'minecraft:entity.turtle.egg_crack', 'players', 0.5, global.getRandomNumber(1.05, 1.25));
-			item.shrink(1);
-			break;
-		}
+		// case 'crittersandcompanions:clam': {
+		// 	player.give(global.weightedRandom({
+		// 		'air': 30,
+		// 		'hybrid_aquatic:pearl': 6,
+		// 		'hybrid_aquatic:black_pearl': 3,
+		// 		'alexscaves:pearl': 1
+		// 	}));
+		// 	player.swing(event.getHand(), true);
+		// 	player.level.playSound(null, player.x, player.y, player.z, 'minecraft:entity.turtle.egg_crack', 'players', 0.5, global.getRandomNumber(1.05, 1.25));
+		// 	item.shrink(1);
+		// 	break;
+		// }
 
 		case 'kubejs:bandage':
 		case 'kubejs:golden_bandage': {

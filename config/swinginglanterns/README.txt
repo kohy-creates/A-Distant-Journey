@@ -53,6 +53,29 @@ swinginglanterns.json
   no effect at all - the in-game toggle says so next to the option when that is
   the case. Everything else the physics does works on any server.
 
+Aurora's Lanterns
+- Its hanging lanterns (amethyst, redstone) swing like any other lantern.
+- Its wall lanterns are swung by this mod's physics while physicsEnabled and
+  physicsAuroraWallLanterns (swinginglanterns.json) are both true. Set
+  physicsAuroraWallLanterns to false, or forceDisable a wall lantern id, to give
+  it back Aurora's own sway. Aurora still decides the bonk sound, the comparator
+  output and the advancement on the server.
+- Its ceiling chandeliers swing with their candles on Fabric 1.21.11, 26.1, 26.2
+  and 26.3, and on NeoForge 26.1. Wall and standing chandeliers stay still. forceDisable
+  "auroraslanterns:chandelier/<set>/ceiling/<size>" keeps one still.
+- Never forceEnable Aurora's wall lanterns or chandeliers: they are drawn by their
+  own renderer or with geometry only Aurora can produce, and the entry is refused.
+- Its swinging ceiling chandeliers, and the chain above them, follow
+  playerPassThroughLanternColliders as lanterns do, in singleplayer or on a
+  server running this version of the mod or a newer one. An older server keeps
+  them solid, and so does this client there. A chandelier left to Aurora stays
+  solid, and so do its wall lanterns, whatever the setting.
+
+Particles
+- Particles a swinging lantern gives off (flames, sparkles, redstone dust) follow
+  the swing. Start the game with -Dswinginglanterns.disableParticleFollow=true to
+  leave them where the still lantern would be.
+
 Notes:
 - Entries are case-insensitive; spaces are trimmed.
 - Restart the game after editing config files.

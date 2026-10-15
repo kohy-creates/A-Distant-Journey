@@ -1,0 +1,57 @@
+#Base speed for unaffected copper rails.
+#Allowed range: 0.01 - 1.6
+#Range: 0.01 ~ 1.6
+copper_speed = 0.8
+#Base speed for exposed copper rails.
+#Allowed range: 0.01 - 1.6
+#Range: 0.01 ~ 1.6
+exposed_copper_speed = 0.6
+#Base speed for weathered copper rails.
+#Allowed range: 0.01 - 1.6
+#Range: 0.01 ~ 1.6
+weathered_copper_speed = 0.3
+#Base speed for oxidized copper rails.
+#Allowed range: 0.01 - 1.6
+#Range: 0.01 ~ 1.6
+oxidized_copper_speed = 0.2
+#Base speed for regular powered rails.
+#Allowed range: 0.01 - 1.6
+#Range: 0.01 ~ 1.6
+powered_rail_speed = 0.4
+#Maximum speed for directed powered rails.
+#Allowed range: 0.01 - 1.6
+#Range: 0.01 ~ 1.6
+directed_powered_rail_speed = 0.4
+#Maximum speed while entering ascending rails.
+#Above 0.5, minecarts may bump into ascending rails instead of driving up.
+#Allowed range: 0.01 - 1.6
+#Range: 0.01 ~ 1.6
+max_ascending_speed = 0.5
+#Maximum speed for powered furnace minecarts.
+#Allowed range: 0.01 - 1.6
+#Range: 0.01 ~ 1.6
+furnace_minecart_speed = 0.4
+#If true, burning furnace minecarts keep nearby chunks loaded.
+enable_furnace_minecart_chunkloading = true
+#If true, minecarts can be linked together using chains.
+enable_minecart_chaining = true
+#If true, copper rails can be crafted, placed, and shown in creative tabs.
+enable_copper_rails = true
+#If true, rail crossings can be placed and used.
+enable_rail_crossing = true
+#If true, powered detector rails can be placed and used.
+enable_powered_detector_rail = true
+#If true, directed powered rails can be placed and used.
+enable_directed_powered_rail = true
+#If true, rail jumps can be placed and created from rails using sticks.
+enable_rail_jump = true
+#How many copper rails the recipe crafts.
+#Range: 1 ~ 64
+copper_rail_recipe_yield = 6
+#How many powered rails the recipe crafts.
+#Range: 1 ~ 64
+powered_rail_recipe_yield = 12
+#How many directed powered rails the recipe crafts.
+#Range: 1 ~ 64
+directed_powered_rail_recipe_yield = 12
+

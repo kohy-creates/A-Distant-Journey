@@ -2,21 +2,24 @@
 [startup]
 	#Preload Forge path resource pack indexes on Lightspeed worker threads during startup.
 	asyncPreloadPacks = true
-	#Query safe resource-pack segments concurrently while preserving vanilla priority and filter order.
+	#Use indexed resource lookup for safe pack segments while preserving vanilla priority and filter order.
 	parallelResourceLookup = true
-	#Minimum safe pack segment size before Lightspeed uses parallel resource lookup. Small segments are faster sequentially.
-	#Range: 2 ~ 64
-	parallelLookupMinPacks = 4
 	#Cache per-pack resource existence checks. The persisted cache is loaded lazily so it does not block startup IO.
 	cacheResourceExistence = true
-	#Use a dedicated work-stealing pool for resource reload preparation instead of competing for the shared Minecraft worker pool.
+	#Use Lightspeed's bounded startup pool for resource reload preparation; manual reloads after the title screen use Minecraft's live executor.
 	dedicatedResourceReloadExecutor = true
+	#Explicitly install bootstrap Agent JVM arguments for the next launch. Disabled by default to keep exported modpacks free of machine-specific startup paths. Restart after changing this option.
+	installBootstrapAgent = false
+	#Validate persisted per-mod resource caches with the full JAR SHA-256 instead of the default file identity. Reads each JAR once per launch; changing this option requires a restart and rebuilds these caches.
+	verifyJarHash = false
+	#Do not show Lightspeed's bootstrap Agent recommendation on startup.
+	suppressStartupRecommendations = true
 
 [compatibility]
-	#Complete failed third-party client resource reload listeners instead of letting one mod crash the whole loading overlay.
+	#Opt in to isolating failures owned by explicitly configured third-party resource reload listener classes.
 	isolateModdedResourceReloadFailures = true
-	#Class-name prefixes that may be isolated when resource reload fails. Use * for all non-core mod listeners.
-	isolatedResourceReloadListenerPatterns = ["*"]
+	#Explicit class-name prefixes that may be isolated when resource reload fails. Wildcards are rejected so unrelated failures remain visible.
+	isolatedResourceReloadListenerPatterns = []
 	#When Sinytra Connector is installed, avoid startup/resource optimizations that change Fabric resource reload or renderer lookup timing.
 	connectorCompatibilityMode = true
 

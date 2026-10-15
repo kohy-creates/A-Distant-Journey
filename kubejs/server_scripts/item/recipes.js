@@ -423,7 +423,6 @@ ServerEvents.recipes((event) => {
 			'morered:stone_plate': 'smooth_stone_slab',
 			'create:bar_of_chocolate': 'neapolitan:chocolate_bar',
 			'upgrade_aquatic:thrasher_tooth': 'alexsmobs:shark_tooth',
-			'hybrid_aquatic:shark_tooth': 'alexsmobs:shark_tooth',
 			'botania:abtruse_platform': 'ars_nouveau:mirrorweave',
 			'botania:spectral_platform': 'ars_nouveau:falseweave',
 			'twilightforest:raw_venison': 'naturalist:venison',
@@ -431,7 +430,6 @@ ServerEvents.recipes((event) => {
 			'twilightforest:fiery_tears': 'twilightforest:fiery_blood',
 			'twilightforest:knightmetal_ring': 'iron_ingot',
 			'alexscaves:sulfur_dust': 'kubejs:sulfur_dust',
-			'crittersandcompanions:pearl': 'hybrid_aquatic:pearl',
 			'twilightforest:transformation_powder': 'botania:mana_powder',
 			'ars_elemental:anima_essence': 'kubejs:rune_life',
 			'brass_geodes:ruby': 'rediscovered:ruby',
@@ -9094,7 +9092,7 @@ ServerEvents.recipes((event) => {
 			'S  '
 		],
 		{
-			S: 'crittersandcompanions:silk',
+			S: 'string',
 			I: 'iron_ingot'
 		}
 	).id('adj:silk_hook');

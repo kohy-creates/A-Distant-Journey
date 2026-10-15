@@ -14,20 +14,17 @@ const BossMusicManager = {
 	timer: 0,
 	interval: 20,
 	/**
-	 * 
-	 * @param {Iterable<Internal.Entity_>} allMobs 
+	 * @param {Internal.Iterable_<Internal.Entity_>} allMobs 
 	 * @param {string} bossId 
 	 * @param {string} nbtToCheck 
 	 */
 	addPhase1IfNbt: (allMobs, bossId, nbtToCheck) => {
-		for (let entity of allMobs) {
-			if (entity.getType() == bossId) {
-				if (entity.nbt[nbtToCheck]) {
-					entity.addTag('phase_1');
-				}
-				else {
-					entity.removeTag('phase_1');
-				}
+		if (allMobs.some(entity => entity.getType() == bossId)) {
+			if (entity.nbt[nbtToCheck]) {
+				entity.addTag('phase_1');
+			}
+			else {
+				entity.removeTag('phase_1');
 			}
 		}
 	},
@@ -35,7 +32,7 @@ const BossMusicManager = {
 	 * 
 	 * @param {Internal.MinecraftServer_} server 
 	 * @param {string} dimension 
-	 * @returns {Iterable<Internal.Entity_>}
+	 * @returns {Internal.Iterable_<Internal.Entity_>}
 	 */
 	getAllMobsIn: (server, dimension) => {
 		let world = server.getLevel(dimension);
@@ -43,23 +40,21 @@ const BossMusicManager = {
 			console.log(`Dimension ${dimension} not found on server! This likely implies a corrupted world!`);
 			return [];
 		}
-		return world.getAllEntities()
+		return world.getAllEntities();
 	},
 	/**
 	 * 
-	 * @param {Iterable<Internal.Entity_>} allMobs 
+	 * @param {Internal.Iterable_<Internal.Entity_>} allMobs 
 	 * @param {string} id 
 	 * @returns {Internal.Entity_[]}
 	 */
 	getEntitiesWithId: (allMobs, id) => {
 		const matches = [];
-
 		for (let entity of allMobs) {
 			if (entity.getType() == id) {
 				matches.push(entity);
 			}
 		}
-
 		return matches;
 	}
 };
