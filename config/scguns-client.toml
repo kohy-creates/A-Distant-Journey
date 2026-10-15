@@ -57,7 +57,7 @@ buttonAlignment = "RIGHT"
 		#If enabled, enables light sources when firing guns
 		fireLights = false
 		#If enabled, enables purity seals on weapons
-		puritySeals = true
+		puritySeals = false
 		#The resting size of the Dynamic Crosshair when spread is zero.
 		#Range: 0.0 ~ 5.0
 		dynamicCrosshairBaseSpread = 1.0

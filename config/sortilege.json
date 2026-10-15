@@ -117,7 +117,7 @@
 			"enable": true,
 			"effect_blacklist": [],
 			"stack_size": 99,
-			"immunity_time": 600
+			"immunity_time": 400
 		},
 		"potion": {
 			"stack_size": 99,

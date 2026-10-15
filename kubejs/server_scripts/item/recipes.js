@@ -462,6 +462,16 @@ ServerEvents.recipes((event) => {
 		);
 	};
 
+	function compactBlock(item, compacted, is2x2, id) {
+		event.shaped(
+			compacted,
+			(is2x2 ? ['CC', 'CC'] : ['CCC', 'CCC', 'CCC']),
+			{
+				C: item
+			}
+		).id(global.getOrDefault(id, `adj:compacting/${flattenedID(compacted)}`));
+	}
+
 	event.shaped(
 		'minecraft:loom',
 		[
@@ -6545,11 +6555,7 @@ ServerEvents.recipes((event) => {
 			};
 			if (a[char]) ingr[char] = a[char];
 		}));
-		event.shaped(
-			output,
-			shape,
-			ingr
-		).id(`adj:fiery_gear/${flattenedID(output)}`);
+		event.shaped(output, shape, ingr).id(`adj:fiery_gear/${flattenedID(output)}`);
 	}
 
 	fieryItemRecipe('twilightforest:fiery_helmet', [
@@ -6580,6 +6586,8 @@ ServerEvents.recipes((event) => {
 		' B ',
 		' B '
 	]);
+
+	compactBlock('twilightforest:fiery_ingot', 'twilightforest:fiery_block');
 
 	alloyForgeRecipe(
 		[
@@ -9480,35 +9488,25 @@ ServerEvents.recipes((event) => {
 	blockSet('legacy/large_bricks');
 	blockSet('legacy/legacy_bricks');
 
-	function compactBlock(item, compacted, is2x2) {
-		event.shaped(
-			legacy(compacted),
-			(is2x2 ? ['CC', 'CC'] : ['CCC', 'CCC', 'CCC']),
-			{
-				C: legacy(item)
-			}
-		).id(`adj:legacy/${compacted}`);
-	}
+	compactBlock(legacy('clay_ball'), legacy('clay'), true);
+	compactBlock(legacy('coal'), legacy('coal_block'));
+	compactBlock(legacy('diamond'), legacy('diamond_block'));
+	compactBlock(legacy('emerald'), legacy('emerald_block'));
+	compactBlock(legacy('gold'), legacy('gold_block'));
+	compactBlock(legacy('iron'), legacy('iron_block'));
+	compactBlock(legacy('lapis'), legacy('lapis_block'));
+	compactBlock(legacy('redstone'), legacy('redstone_block'));
+	compactBlock(legacy('ruby'), legacy('ruby_block'));
 
-	compactBlock('clay_ball', 'clay', true);
-	compactBlock('coal', 'coal_block');
-	compactBlock('diamond', 'diamond_block');
-	compactBlock('emerald', 'emerald_block');
-	compactBlock('gold', 'gold_block');
-	compactBlock('iron', 'iron_block');
-	compactBlock('lapis', 'lapis_block');
-	compactBlock('redstone', 'redstone_block');
-	compactBlock('ruby', 'ruby_block');
-
-	compactBlock('quartz', 'quartz_block', true);
+	compactBlock(legacy('quartz'), legacy('quartz_block'), true);
 	blockSet('legacy/quartz_block');
 
 	blockSet('legacy/cobblestone');
 	event.smelting(legacy('stone'), legacy('cobblestone'), 0.1, 200).id('adj:legacy/smelting/stone');
-	compactBlock('stone', 'stonebrick', true);
+	compactBlock(legacy('stone'), legacy('stonebrick'), true);
 	blockSet('legacy/stonebrick');
 
-	compactBlock('sand', 'sandstone', true);
+	compactBlock(legacy('sand'), legacy('sandstone'), true);
 	blockSet('legacy/sandstone');
 
 	event.smelting(legacy('glass'), legacy('sand'), 0.1, 200).id('adj:legacy/smelting/glass');
@@ -9530,7 +9528,7 @@ ServerEvents.recipes((event) => {
 		)
 	});
 
-	compactBlock('glowstone_dust', 'glowstone', true);
+	compactBlock(legacy('glowstone_dust'), legacy('glowstone'), true);
 
 	function planks(log, planks) {
 		event.shapeless(
@@ -9549,9 +9547,9 @@ ServerEvents.recipes((event) => {
 	blockSet('legacy/planks_spruce');
 	blockSet('legacy/planks_jungle');
 
-	compactBlock('string', 'wool_colored_white', true);
+	compactBlock(legacy('string'), legacy('wool_colored_white'), true);
 
-	compactBlock('melon_slice', 'melon');
+	compactBlock(legacy('melon_slice'), legacy('melon'));
 
 	event.shaped(
 		legacy('apple_golden'),

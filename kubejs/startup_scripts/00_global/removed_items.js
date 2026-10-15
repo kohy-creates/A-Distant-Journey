@@ -380,6 +380,9 @@ const RemovedItems = {
 		'galosphere:barometer',
 		'galosphere:shadow_frame',
 		'galosphere:palladium_dust',
+		'galosphere:cured_membrane',
+		'galosphere:cured_membrane_block',
+		'galosphere:cured_membrane',
 
 		'ftbquests:book',
 		'netherdepthsupgrade:lava_fishing_rod',

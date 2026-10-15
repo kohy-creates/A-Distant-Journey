@@ -717,4 +717,9 @@ ServerEvents.tags('item', tags => {
 	}
 
 	tags.removeAll('alexscaves:ferromagnetic_items');
+
+	tags.add('adj:minecarts', [
+		'minecart',
+		/_minecart$/
+	]);
 });

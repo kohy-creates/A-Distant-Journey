@@ -587,7 +587,7 @@ StartupEvents.postInit(event => {
 
 	// // Add enchantment books
 	/** @type {any} */
-	const $EnchantmentsBegone = Java.loadClass('org.violetmoon.quark.content.experimental.module.EnchantmentsBegoneModule')
+	const $EnchantmentsBegone = Java.loadClass('org.violetmoon.quark.content.experimental.module.EnchantmentsBegoneModule');
 	const allEnchants = global.getAllRegistryObjects('ENCHANTMENTS');
 
 	addAfter = 'enchantinginfuser:enchanting_infuser'
@@ -600,12 +600,10 @@ StartupEvents.postInit(event => {
 		addAfter = book;
 	}
 
-	global.getAllRegistryObjects('POTIONS').forEach(potion => {
-		let id = global.getRegistryId('POTIONS', potion);
-		if (id.includes('strong') || id.includes('long')) {
-			let book = `minecraft:potion{Potion:"${id}"}`;
-			edit.removed.push(stack(book));
-		}
+	global.disabledPotions.forEach(potion => {
+		let nbt = '{Potion:"${id}"}';
+		edit.removed.push(stack(`minecraft:potion${nbt}`));
+		edit.removed.push(stack(`sortilege:antidote${nbt}`));
 	});
 
 	JsonIO.write('kubejs/assets/emi/index/stacks/edit_item_order.json', edit);

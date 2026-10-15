@@ -34,7 +34,7 @@ furnace_minecart_speed = 0.4
 #If true, burning furnace minecarts keep nearby chunks loaded.
 enable_furnace_minecart_chunkloading = true
 #If true, minecarts can be linked together using chains.
-enable_minecart_chaining = true
+enable_minecart_chaining = false
 #If true, copper rails can be crafted, placed, and shown in creative tabs.
 enable_copper_rails = true
 #If true, rail crossings can be placed and used.

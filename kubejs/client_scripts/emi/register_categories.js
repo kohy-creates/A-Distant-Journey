@@ -29,6 +29,26 @@ JEIAddedEvents.registerCategories(event => {
 			})
 			.recipeType;
 	});
+
+	event.custom('kubejsadditions:brewing', (category) => {
+		console.log('Registering category kubejsadditions:brewing...')
+		category.width = 130;
+		category.height = 40;
+
+		global.newBrewingType = category.title('Brewing')
+			.background(guiHelper.createBlankDrawable(150, 50))
+			.icon(guiHelper.createDrawableItemStack(Item.of('minecraft:brewing_stand')))
+			.isRecipeHandled((recipe) => {
+				return global.EMITabs.new_brewing.professions.verifyRecipe(category.jeiHelpers, recipe)
+			})
+			.handleLookup((builder, recipe, focuses) => {
+				global.EMITabs.new_brewing.professions.handleLookup(category.jeiHelpers, builder, recipe, focuses)
+			})
+			.setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
+				global.EMITabs.new_brewing.professions.renderer(category.jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY)
+			})
+			.recipeType;
+	});
 });
 
 JEIAddedEvents.registerRecipeCatalysts(event => {
@@ -87,8 +107,48 @@ global.EMITabs = {
 			poseStack.popPose();
 		},
 
+	},
+	new_brewing: {
+		professions: {
+			verifyRecipe: (jeiHelpers, recipe) => {
+				return recipe.data != undefined
+					&& recipe.data.potion != undefined
+					&& recipe.data.ingredients != undefined
+			},
+			/**
+			 * 
+			 * @param {Internal.IJeiHelpers_} jeiHelpers 
+			 * @param {Internal.IRecipeLayoutBuilder_} builder 
+			 * @param {Internal.CustomJSRecipe_} recipe 
+			 * @param {Internal.IFocusGroup_} focuses 
+			 */
+			handleLookup: (jeiHelpers, builder, recipe, focuses) => {
+				let startX = 40;
+				let a = 0;
+				recipe.data.ingredients.forEach(i => {
+					builder.addSlot('INPUT', 40 + (a * 10), 25)
+						.addItemStack(Item.of(i))
+						.setSlotName(`input_${a}`);
+					a++;
+				});
+
+				builder.addSlot('OUTPUT', 10, 25)
+					.addItemStack(Item.of('potion', `{Potion:"${recipe.data.potion}"}`))
+					.setSlotName(`output`);
+			},
+			/**
+			 * 
+			 * @param {Internal.IJeiHelpers_} jeiHelpers 
+			 * @param {Internal.CustomJSRecipe_} recipe 
+			 * @param {Internal.IRecipeSlotsView_} recipeSlotsView 
+			 * @param {Internal.GuiGraphics_} guiGraphics 
+			 * @param {double} mouseX 
+			 * @param {double} mouseY 
+			 */
+			renderer: (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => { },
+		}
 	}
-}
+};
 
 const $BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries');
 
@@ -135,6 +195,14 @@ JEIAddedEvents.registerRecipes((event) => {
 				},
 				input: itemId,
 				description: `entity.minecraft.villager.${descriptionID}`,
+			});
+	});
+
+	Object.entries(global.potionRecipes).forEach(([potion, ingredients]) => {
+		event.custom('kubejsadditions:brewing')
+			.add({
+				potion: potion,
+				ingredients: ingredients,
 			});
 	});
 

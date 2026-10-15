@@ -38,8 +38,8 @@ BlockEvents.modification(event => {
 		'potted_torchflower': 14,
 		'netherexp:soul_torchflower': 10,
 		'netherexp:potted_soul_torchflower': 10,
-		'ars_nouveau:portal': 10
-
+		'ars_nouveau:portal': 10,
+		'twilightforest:fiery_block': 5,
 	};
 	for (let [blockId, lightValue] of Object.entries(lightEmission)) {
 		event.modify(blockId, block => {

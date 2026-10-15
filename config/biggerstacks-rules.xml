@@ -37,6 +37,7 @@
 			<condition>tag includes upgrade_aquatic:bedrolls</condition>
 			<condition>tag includes domesticationinnovation:pet_beds</condition>
 			<condition>tag includes ars_nouveau:summon_bed</condition>
+			<condition>tag includes adj:minecarts</condition>
 		</or>
 	</rule>
 	<rule stacksize="99">

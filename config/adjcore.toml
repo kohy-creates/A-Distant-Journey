@@ -6,7 +6,7 @@ HARDCORE_RESPAWN_RADIUS = 5000
 	#Chance (0 - 1) to prevent durability loss. Default: 0.5 (50%)
 	#Set to 0 to disable or 1 to make all items unbreakable
 	#Range: 0.0 ~ 1.0
-	DURABILITY_SAVE_CHANCE = 0.33
+	DURABILITY_SAVE_CHANCE = 0.333334
 	#Delay in ticks after which shield will start blocking damage
 	#5 is vanilla, 0 is immediately
 	#Range: > 0
@@ -14,7 +14,7 @@ HARDCORE_RESPAWN_RADIUS = 5000
 	#Inaccuracy of bows
 	#1 is vanilla
 	#Range: 0.0 ~ 90.0
-	BOW_INACCURACY = 1.8
+	BOW_INACCURACY = 1.0
 	#Durability multiplier for items enchanted with Unbreaking
 	#Range: 1.0 ~ 1.7976931348623157E308
 	UNBREAKNG_DURABILITY_MULTIPLIER = 2.0
@@ -46,6 +46,9 @@ HARDCORE_RESPAWN_RADIUS = 5000
 	#Maximum amount of damage that can be dealt in a single damage instance. Anything higher than that gets clamped to that value
 	#Range: > 0
 	MAX_DAMAGE_IN_ONE_HIT = 999999
+	#Percentage of damage relative to damage dealth reflected back at the attacker if victim has Thorns potion effect
+	#Range: 0.0 ~ 5.0
+	THORNS_DAMAGE_MULTIPLEIR = 1.0
 
 #Campfires
 [campfire]
