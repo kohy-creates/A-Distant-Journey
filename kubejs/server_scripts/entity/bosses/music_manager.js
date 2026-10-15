@@ -19,12 +19,15 @@ const BossMusicManager = {
 	 * @param {string} nbtToCheck 
 	 */
 	addPhase1IfNbt: (allMobs, bossId, nbtToCheck) => {
-		if (allMobs.some(entity => entity.getType() == bossId)) {
-			if (entity.nbt[nbtToCheck]) {
-				entity.addTag('phase_1');
-			}
-			else {
-				entity.removeTag('phase_1');
+		for (let entity of allMobs) {
+			if (entity.getType() == bossId) {
+				if (entity.nbt[nbtToCheck]) {
+					entity.addTag('phase_1');
+				}
+				else {
+					entity.removeTag('phase_1');
+				}
+				break;
 			}
 		}
 	},
