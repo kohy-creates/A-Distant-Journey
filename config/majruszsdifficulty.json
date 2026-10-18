@@ -118,7 +118,7 @@
     "creeper_explode_behind_wall": {
       "is_enabled": true,
       "required_game_stage": "chapter_3",
-      "chance": 0.15,
+      "chance": 0.25,
       "is_scaled_by_crd": true
     },
     "creeper_explosion_immunity": {
@@ -201,7 +201,7 @@
     "enderman_teleport_attack": {
       "is_enabled": true,
       "required_game_stage": "chapter_4",
-      "chance": 0.25,
+      "chance": 0.2,
       "is_scaled_by_crd": true
     },
     "evoker_with_totem": {
@@ -223,7 +223,7 @@
     },
     "jockey_spawn": {
       "is_enabled": true,
-      "required_game_stage": "chapter_1",
+      "required_game_stage": "chapter_3",
       "chance": 0.125,
       "is_scaled_by_crd": true
     },
@@ -250,7 +250,7 @@
         ]
       },
       "bonescaller": {
-        "required_game_stage": "chapter_2",
+        "required_game_stage": "chapter_3",
         "chance": 0.15,
         "is_scaled_by_crd": true,
         "leader_types": [
@@ -296,7 +296,7 @@
         ]
       },
       "mother_spider": {
-        "required_game_stage": "chapter_3",
+        "required_game_stage": "chapter_4",
         "chance": 0.15,
         "is_scaled_by_crd": true,
         "leader_types": [
@@ -363,7 +363,7 @@
         ]
       },
       "skeleton_demoman": {
-        "required_game_stage": "chapter_1",
+        "required_game_stage": "chapter_3",
         "chance": 0.15,
         "is_scaled_by_crd": true,
         "leader_types": [
@@ -444,30 +444,6 @@
           },
           {
             "type": "born_in_chaos_v1:glutton_fish",
-            "equipment": "minecraft:"
-          },
-          {
-            "type": "born_in_chaos_v1:nightmare_stalker",
-            "equipment": "minecraft:"
-          },
-          {
-            "type": "born_in_chaos_v1:missioner",
-            "equipment": "minecraft:"
-          },
-          {
-            "type": "born_in_chaos_v1:krampus",
-            "equipment": "minecraft:"
-          },
-          {
-            "type": "born_in_chaos_v1:sir_pumpkinhead",
-            "equipment": "minecraft:"
-          },
-          {
-            "type": "born_in_chaos_v1:supreme_bonescaller",
-            "equipment": "minecraft:"
-          },
-          {
-            "type": "born_in_chaos_v1:lifestealer_true_form",
             "equipment": "minecraft:"
           }
         ],
@@ -655,7 +631,7 @@
     "preparing_duration": 15.0,
     "highlight_delay": 30.0,
     "extra_size_ratio_per_player": 0.6,
-    "area_radius": 60,
+    "area_radius": 70,
     "kill_requirement": 1000,
     "kill_requirement_first": 400,
     "kill_requirement_warning": 5,

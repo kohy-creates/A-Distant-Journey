@@ -139,5 +139,10 @@ sdf-cache/
 config/jei/world/
 fieldguide_cache/
 config/enhancedcelestials2core/workspaces/
+config/*/translations-cache/
 controllable_natives/
 quantified_api.log
+zfastnoise.mixin.properties
+mcreator_mem_fix.json
+packetfixer.properties
+misanthropyquestadditionsomg-client-state.json

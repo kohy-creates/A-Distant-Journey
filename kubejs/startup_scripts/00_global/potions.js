@@ -26,8 +26,6 @@ global.potionRecipes = {
 	'alexsmobs:bug_pheromones': ['kubejs:moonglow', 'kubejs:waterleaf', 'alexsmobs:cockroach_wing'],
 	'alexsmobs:clinging': ['kubejs:waterleaf', 'tide:slimy_salmon', 'alexsmobs:dropbear_claw'],
 	'adjcore:lesser_mana': ['kubejs:daybloom', 'ars_nouveau:sourceberry_bush', 'brown_mushroom'],
-	'adjcore:mana': 'KEEP',
-	'adjcore:greater_mana': 'KEEP',
 	'adjcore:endurance': ['tide:iron_tetra', 'kubejs:blinkroot', 'nether_wart'],
 	'adjcore:decay': ['kubejs:deathweed', 'netherexp:fossil_fuel', 'netherexp:fossil_fuel'],
 	'adjcore:iron_skin': ['kubejs:daybloom', 'raw_iron', 'brown_mushroom'],
@@ -39,6 +37,8 @@ global.potionRecipes = {
 	'alexscaves:deepsight': ['kubejs:waterleaf', 'alexscaves:lanternfish'],
 	'quark:resilience': ['kubejs:blinkroot', 'kubejs:shiverthorn', 'tide:iron_tetra'],
 	'window_box:levitation': ['kubejs:waterleaf', 'unusualend:lurker_sludge', 'phantom_membrane'],
+	'item:majruszsdifficulty:recall_potion': ['kubejs:blinkroot', 'tide:glowfish', 'sugar'],
+	'item:wormholepotion:wormhole_potion': ['kubejs:blinkroot', 'tide:glowfish', 'ender_pearl']
 };
 
 for (let [potion, ingredients] of Object.entries(global.potionRecipes)) {

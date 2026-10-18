@@ -32,9 +32,16 @@ NativeEvents.onEvent('normal', false, $PotionBrewEvent$Post, event => {
 				}
 			}
 			if (found) {
-				tag.Potion = potionId;
-				newPotion = true;
-				break outer;
+				if (potionId.startsWith('item:')) {
+					let itemId = potionId.replace('item:', '');
+					event.setItem(index, Item.of(itemId));
+					return;
+				}
+				else {
+					tag.Potion = potionId;
+					newPotion = true;
+					break outer;
+				}
 			}
 		}
 

@@ -1152,6 +1152,8 @@
 	numberTagChecks = true
 	#Structure placement keeps asking the world generator how high the ground is at a column, and every answer builds a small slice of terrain over the full world height, which costs one to four milliseconds. The same column is often asked again, from a different worker thread or for another structure. With this on, each world generator remembers the last 32768 answers for its seed and height range and returns them instead of building the slice again. The answer only depends on the generator, the seed, the column and the height range, so it is the same number. Turn it off for stock behaviour.
 	shareColumnHeights = true
+	#Index each zipped resource pack or data pack once so listing a folder inside it only walks the files under that folder. Vanilla walks every file in the zip for every listing, and a reload lists every folder of every namespace the zip has, so a big pack with many namespaces is walked thousands of times per reload. Same files in the same order.
+	indexZipPacks = true
 
 #Create: Solar patches.
 [createsolar]
@@ -2088,4 +2090,9 @@
 [asyncparticles]
 	#Use fixed sampler names when the GPU particle renderer sets up its shader. Before every particle layer it draws, the renderer binds twelve texture samplers by building each name, Sampler0 to Sampler11, as a new string, which is twelve throwaway strings per layer per frame for as long as particles are on screen. With this on the same twelve names are kept as constants and everything else about the shader setup is unchanged.
 	constantSamplerNames = true
+
+#Apothic Attributes patches.
+[apothicattributes]
+	#Skip building vanilla's attribute modifier lines in item tooltips. Apothic Attributes deletes every one of those lines and writes its own, so vanilla's pass is thrown away on every tooltip, and JEI builds a tooltip for every item when you join a world. The tooltip you see is the same. Client.
+	skipReplacedTooltipModifiers = true
 

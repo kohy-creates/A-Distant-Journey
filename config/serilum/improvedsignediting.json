@@ -1,0 +1,15 @@
+{
+	"//": "These settings are easier to change in-game! Mod List -> Improved Sign Editing -> Config",
+	"Enable Improved Sign Editing": {
+		"//": "Whether Improved Sign Editing is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart. Do not disable a mod that adds blocks or items to an existing world, they will be removed.",
+		"value": true
+	},
+	"enableImprovedEditing": {
+		"//": "A global toggle whether the improved edtiting functionality should be enabled.",
+		"value": true
+	},
+	"showImprovedEditingButton": {
+		"//": "Whether the Improved/Normal Editing button should be visible on the sign edit screen.",
+		"value": false
+	}
+}

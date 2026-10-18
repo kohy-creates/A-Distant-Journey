@@ -39,13 +39,13 @@ JEIAddedEvents.registerCategories(event => {
 			.background(guiHelper.createBlankDrawable(150, 50))
 			.icon(guiHelper.createDrawableItemStack(Item.of('minecraft:brewing_stand')))
 			.isRecipeHandled((recipe) => {
-				return global.EMITabs.new_brewing.professions.verifyRecipe(category.jeiHelpers, recipe)
+				return global.EMITabs.new_brewing.verifyRecipe(category.jeiHelpers, recipe)
 			})
 			.handleLookup((builder, recipe, focuses) => {
-				global.EMITabs.new_brewing.professions.handleLookup(category.jeiHelpers, builder, recipe, focuses)
+				global.EMITabs.new_brewing.handleLookup(category.jeiHelpers, builder, recipe, focuses)
 			})
 			.setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
-				global.EMITabs.new_brewing.professions.renderer(category.jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY)
+				global.EMITabs.new_brewing.renderer(category.jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY)
 			})
 			.recipeType;
 	});
@@ -53,6 +53,7 @@ JEIAddedEvents.registerCategories(event => {
 
 JEIAddedEvents.registerRecipeCatalysts(event => {
 	event.data['addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])']('minecraft:villager_spawn_egg', global.villagerProfessionType);
+	event.data['addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])']('minecraft:brewing_stand', global.newBrewingType);
 });
 
 global.EMITabs = {
@@ -109,44 +110,50 @@ global.EMITabs = {
 
 	},
 	new_brewing: {
-		professions: {
-			verifyRecipe: (jeiHelpers, recipe) => {
-				return recipe.data != undefined
-					&& recipe.data.potion != undefined
-					&& recipe.data.ingredients != undefined
-			},
-			/**
-			 * 
-			 * @param {Internal.IJeiHelpers_} jeiHelpers 
-			 * @param {Internal.IRecipeLayoutBuilder_} builder 
-			 * @param {Internal.CustomJSRecipe_} recipe 
-			 * @param {Internal.IFocusGroup_} focuses 
-			 */
-			handleLookup: (jeiHelpers, builder, recipe, focuses) => {
-				let startX = 40;
-				let a = 0;
-				recipe.data.ingredients.forEach(i => {
-					builder.addSlot('INPUT', 40 + (a * 10), 25)
-						.addItemStack(Item.of(i))
-						.setSlotName(`input_${a}`);
-					a++;
-				});
+		verifyRecipe: (jeiHelpers, recipe) => {
+			return recipe.data != undefined
+				&& recipe.data.potion != undefined
+				&& recipe.data.ingredients != undefined
+		},
+		/**
+		 * 
+		 * @param {Internal.IJeiHelpers_} jeiHelpers 
+		 * @param {Internal.IRecipeLayoutBuilder_} builder 
+		 * @param {Internal.CustomJSRecipe_} recipe 
+		 * @param {Internal.IFocusGroup_} focuses 
+		 */
+		handleLookup: (jeiHelpers, builder, recipe, focuses) => {
+			let startX = 40;
+			let a = 0;
+			recipe.data.ingredients.forEach(i => {
+				builder.addSlot('INPUT', 40 + (a * 10), 25)
+					.addItemStack(Item.of(i))
+					.setSlotName(`input_${a}`);
+				a++;
+			});
 
+			if (recipe.data.potion.startsWith('item:')) {
+				builder.addSlot('OUTPUT', 10, 25)
+					.addItemStack(Item.of(recipe.data.potion.replace('item:', '')))
+					.setSlotName(`output`);
+				return;
+			}
+			else {
 				builder.addSlot('OUTPUT', 10, 25)
 					.addItemStack(Item.of('potion', `{Potion:"${recipe.data.potion}"}`))
 					.setSlotName(`output`);
-			},
-			/**
-			 * 
-			 * @param {Internal.IJeiHelpers_} jeiHelpers 
-			 * @param {Internal.CustomJSRecipe_} recipe 
-			 * @param {Internal.IRecipeSlotsView_} recipeSlotsView 
-			 * @param {Internal.GuiGraphics_} guiGraphics 
-			 * @param {double} mouseX 
-			 * @param {double} mouseY 
-			 */
-			renderer: (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => { },
-		}
+			}
+		},
+		/**
+		 * 
+		 * @param {Internal.IJeiHelpers_} jeiHelpers 
+		 * @param {Internal.CustomJSRecipe_} recipe 
+		 * @param {Internal.IRecipeSlotsView_} recipeSlotsView 
+		 * @param {Internal.GuiGraphics_} guiGraphics 
+		 * @param {double} mouseX 
+		 * @param {double} mouseY 
+		 */
+		renderer: (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => { },
 	}
 };
 

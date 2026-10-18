@@ -1,0 +1,11 @@
+{
+	"//": "These settings are easier to change in-game! Mod List -> Weaker Spiderwebs -> Config",
+	"Enable Weaker Spiderwebs": {
+		"//": "Whether Weaker Spiderwebs is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart. Do not disable a mod that adds blocks or items to an existing world, they will be removed.",
+		"value": true
+	},
+	"breakSpiderwebDelay": {
+		"//": "The delay in ms after walking in a spiderweb until it breaks. min: 0, max: 10,000",
+		"value": 500
+	}
+}

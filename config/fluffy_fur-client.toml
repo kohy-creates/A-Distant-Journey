@@ -61,12 +61,12 @@
 	panoramaMusic = false
 	#Enable enhanced menu.
 	#Replaces dirt background with a transparent one with a panorama.
-	enhancedMenu = true
+	enhancedMenu = false
 	#Enable vanilla panorama conflict prevention.
 	#When other mods change the vanilla panorama texture, it tries to intercept that texture for seamless transitions between screens.
-	vanillaPanoramaConflictPrevention = true
+	vanillaPanoramaConflictPrevention = false
 	#Enable Fluffy Fur pause screen button.
-	pauseScreenButton = true
+	pauseScreenButton = false
 	#Fluffy Fur pause screen button row.
 	#Range: 1 ~ 6
 	pauseScreenButtonRow = 4
@@ -77,7 +77,7 @@
 	#Fluffy Fur pause screen button Y offset.
 	pauseScreenButtonYOffset = 0
 	#Enable custom pack selection button.
-	packButton = true
+	packButton = false
 	#Custom pack selection button X offset with row.
 	packButtonRowXOffset = -4
 	#Custom pack selection button X offset.

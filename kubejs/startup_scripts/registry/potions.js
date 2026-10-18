@@ -13,7 +13,6 @@ MoreJSEvents.registerPotionBrewing((event) => {
 	// 	'wormholepotion:wormhole_potion'
 	// );
 
-
 	global.getAllRegistryObjects('POTIONS').forEach(potion => {
 		let id = global.getRegistryId('POTIONS', potion);
 		event.removeByPotion(null, null, id);
