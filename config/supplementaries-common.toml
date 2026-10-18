@@ -91,7 +91,7 @@
 
 [functional]
 	fodder = true
-	hourglass = false
+	hourglass = true
 
 	[functional.rope]
 		#Allows ropes to be supported & attached to solid block sides

@@ -1,0 +1,8 @@
+{
+	"filters": [
+		{
+			"id": "/create\/potions/",
+			"category": "create:spout_filling"
+		}
+	]
+}

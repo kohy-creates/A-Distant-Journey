@@ -439,18 +439,5 @@
 		},
 		"texture": "kohara:attribute/enchanting",
 		"compare": "higher_better"
-	},
-	"kubejs:damage_dealt": {
-		"display": {
-			"mainhand": "flat",
-			"offhand": "difference",
-			"feet": "difference",
-			"legs": "difference",
-			"chest": "difference",
-			"head": "difference",
-			"potion": "difference"
-		},
-		"texture": "quark:attribute/attack_damage",
-		"compare": "higher_better"
 	}
 }

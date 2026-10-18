@@ -86,6 +86,7 @@ global.EMITabs = {
 		 * @param {double} mouseY 
 		 */
 		renderer: (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
+			guiGraphics.blit('create:textures/gui/jei/widgets.png', 79, 39, 20, 156, 18, 18);
 			let text = Text.translatable(recipe.data.description);
 			guiGraphics.drawWordWrap(Client.font, text, (130 - Client.font.width(text.getString())) / 2, 5, 150, 0);
 
@@ -123,26 +124,30 @@ global.EMITabs = {
 		 * @param {Internal.IFocusGroup_} focuses 
 		 */
 		handleLookup: (jeiHelpers, builder, recipe, focuses) => {
-			let startX = 40;
 			let a = 0;
+			let row = 0;
+			let e = 0;
+			if (recipe.data.ingredients.length > 4) {
+				e = -10
+			}
 			recipe.data.ingredients.forEach(i => {
-				builder.addSlot('INPUT', 40 + (a * 10), 25)
-					.addItemStack(Item.of(i))
+				builder.addSlot('INPUT', 40 + (a * 20), e + 12 + 20 * row)
+					.addItemStack(Ingredient.of(i))
 					.setSlotName(`input_${a}`);
 				a++;
+				if (a == 4) {
+					a = 0;
+					row++;
+				}
 			});
 
-			if (recipe.data.potion.startsWith('item:')) {
-				builder.addSlot('OUTPUT', 10, 25)
-					.addItemStack(Item.of(recipe.data.potion.replace('item:', '')))
-					.setSlotName(`output`);
-				return;
-			}
-			else {
-				builder.addSlot('OUTPUT', 10, 25)
-					.addItemStack(Item.of('potion', `{Potion:"${recipe.data.potion}"}`))
-					.setSlotName(`output`);
-			}
+			builder.addSlot('OUTPUT', 10, 12)
+				.addItemStack(
+					recipe.data.potion.startsWith('item:')
+						? Item.of(recipe.data.potion.replace('item:', ''))
+						: Item.of('potion', `{Potion:"${recipe.data.potion}"}`)
+				)
+				.setSlotName(`output`);
 		},
 		/**
 		 * 
@@ -153,7 +158,23 @@ global.EMITabs = {
 		 * @param {double} mouseX 
 		 * @param {double} mouseY 
 		 */
-		renderer: (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => { },
+		renderer: (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
+			guiGraphics.blit('create:textures/gui/jei/widgets.png', 9, 11, 20, 156, 18, 18);
+			let a = 0;
+			let row = 0;
+			let e = 0;
+			if (recipe.data.ingredients.length > 4) {
+				e = -10
+			}
+			recipe.data.ingredients.forEach(i => {
+				guiGraphics.blit('create:textures/gui/jei/widgets.png', 40 + (a * 20) - 1, e + 12 + 20 * row - 1, 0, 0, 18, 18);
+				a++;
+				if (a == 4) {
+					a = 0;
+					row++;
+				}
+			});
+		},
 	}
 };
 

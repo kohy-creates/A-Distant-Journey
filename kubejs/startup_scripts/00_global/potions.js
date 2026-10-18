@@ -1,12 +1,12 @@
 //priority: 200
 global.potionRecipes = {
-	'minecraft:night_vision': ['kubejs:moonglow', 'glowstone_dust', 'kubejs:blinkroot'],
-	'minecraft:invisibility': ['kubejs:moonglow', 'nether_wart', 'kubejs:fireblossom'],
+	'minecraft:night_vision': ['kubejs:moonglow', 'glowstone_dust', 'golden_carrot', 'kubejs:blinkroot'],
+	'minecraft:invisibility': ['kubejs:moonglow', 'nether_wart', 'golden_carrot', 'kubejs:fireblossom'],
 	'minecraft:leaping': ['kubejs:daybloom', 'rabbit_foot', 'cactus'],
 	'minecraft:fire_resistance': ['kubejs:fireblossom', 'magma_cream', 'nether_wart', 'obsidian'],
 	'minecraft:swiftness': ['kubejs:daybloom', 'sugar', 'cactus'],
 	'minecraft:slowness': ['kubejs:daybloom', 'fermented_spider_eye', 'cactus'],
-	'minecraft:turtle_master': ['kubejs:blinkroot', 'kubejs:waterleaf', 'turtle_shell', 'nautilus_shell'],
+	'minecraft:turtle_master': ['kubejs:blinkroot', 'kubejs:waterleaf', 'turtle_helmet', 'nautilus_shell'],
 	'minecraft:water_breathing': ['kubejs:waterleaf', 'pufferfish', 'kelp', 'kelp'],
 	'minecraft:healing': ['kubejs:daybloom', 'wheat_seeds', 'brown_mushroom'],
 	'minecraft:harming': ['kubejs:deathweed', 'wheat_seeds', 'red_mushroom'],
@@ -31,20 +31,20 @@ global.potionRecipes = {
 	'adjcore:iron_skin': ['kubejs:daybloom', 'raw_iron', 'brown_mushroom'],
 	'adjcore:archery': ['kubejs:daybloom', 'arrow', 'feather'],
 	'adjcore:magic_power': ['kubejs:moonglow', 'ars_nouveau:sourceberry_bush', 'sugar'],
-	'adjcore:builder': ['kubejs:blinrkroot', 'kubejs:shiverthorn', 'kubejs:moonglow'],
+	'adjcore:builder': ['kubejs:blinkroot', 'kubejs:shiverthorn', 'kubejs:moonglow'],
 	'adjcore:thorns': ['cactus', 'cactus', 'kubejs:waterleaf'],
 	'netherdepthsupgrade:lava_vision': ['kubejs:fireblossom', 'kubejs:blinkroot', 'netherdepthsupgrade:eyeball_fish'],
 	'alexscaves:deepsight': ['kubejs:waterleaf', 'alexscaves:lanternfish'],
 	'quark:resilience': ['kubejs:blinkroot', 'kubejs:shiverthorn', 'tide:iron_tetra'],
 	'window_box:levitation': ['kubejs:waterleaf', 'unusualend:lurker_sludge', 'phantom_membrane'],
 	'item:majruszsdifficulty:recall_potion': ['kubejs:blinkroot', 'tide:glowfish', 'sugar'],
-	'item:wormholepotion:wormhole_potion': ['kubejs:blinkroot', 'tide:glowfish', 'ender_pearl']
+	'item:wormholepotion:wormhole_potion': ['kubejs:blinkroot', 'tide:glowfish', 'ender_pearl'],
+	'item:born_in_chaos_v1:chaos_component': ['kubejs:deathweed', 'born_in_chaos_v1:seedof_chaos', 'born_in_chaos_v1:seedof_chaos'],
 };
 
 for (let [potion, ingredients] of Object.entries(global.potionRecipes)) {
 	for (let a = 0; a < ingredients.length; a++) {
 		let ingr = ingredients[a];
-		if (ingr === 'KEEP') continue;
 		global.potionRecipes[potion][a] = global.normalizeResourceLocation(ingr);
 	}
 };

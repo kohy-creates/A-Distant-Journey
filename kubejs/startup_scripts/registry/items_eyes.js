@@ -107,15 +107,15 @@ global.eyeEffects.verdancyTick = function (slotContext, stack) {
 global.eyeEffects.hedonismTick = function (slotContext, stack) {
 	const wearer = slotContext.getWearer();
 	if (wearer instanceof $Player) {
-		if (global.ifRandomChance(0.2)) {
-			const hunger = wearer.getFoodLevel();
-			if (hunger >= 20) {
-				wearer.setSaturation(wearer.getSaturation() + 1)
-			}
-			else {
-				wearer.setFoodLevel(hunger + 1)
-			}
-		}
+		// if (global.ifRandomChance(0.2)) {
+		// 	const hunger = wearer.getFoodLevel();
+		// 	if (hunger >= 20) {
+		// 		wearer.setSaturation(wearer.getSaturation() + 1)
+		// 	}
+		// 	else {
+		// 		wearer.setFoodLevel(hunger + 1)
+		// 	}
+		// }
 	}
 };
 

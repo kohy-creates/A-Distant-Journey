@@ -144,7 +144,7 @@
       "key": "ali:trade_loot",
       "type": "TRADE",
       "icon": "minecraft:emerald_block",
-      "hide": false,
+      "hide": true,
       "pattern": [
         ".*"
       ]

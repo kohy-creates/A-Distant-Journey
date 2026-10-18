@@ -5,6 +5,23 @@ NativeEvents.onEvent('normal', false, $PotionBrewEvent$Post, event => {
 	function processPotion(index, potion, ingredient) {
 		/** @type {Internal.CompoundTag_} */
 		let tag = potion.getOrCreateTag();
+
+		// Special cases
+		switch (ingredient.getId()) {
+			case 'minecraft:gunpowder':
+				let thrownPotion = Item.of('minecraft:splash_potion', tag);
+				event.setItem(index, thrownPotion);
+				return;
+			case 'minecraft:dragon_breath':
+				let lingeringPotion = Item.of('minecraft:lingering_potion', tag);
+				event.setItem(index, lingeringPotion);
+				return;
+			case 'minecraft:glow_ink_sac':
+				let antidote = Item.of('sortilege:antidote', tag);
+				event.setItem(index, antidote);
+				return;
+		}
+
 		let list = global.getOrDefault(tag.ingredients, []);
 		list.push(ingredient.getId());
 
@@ -23,6 +40,7 @@ NativeEvents.onEvent('normal', false, $PotionBrewEvent$Post, event => {
 			let amount = 0;
 			inner:
 			for (let a = 0; a < ingredients.length; a++) {
+				let tested = ingredients[a];
 				if (listJS.includes(ingredients[a])) {
 					amount++;
 				}

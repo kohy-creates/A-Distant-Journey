@@ -537,6 +537,9 @@ global.formatNumber = function (number, decimalPlaces) {
  */
 global.normalizeResourceLocation = function (id) {
 	if (!id.includes(':')) {
+		if (id.startsWith('#')) {
+			return '#minecraft:' + id.substring(1);
+		}
 		return 'minecraft:' + id;
 	}
 	return id;

@@ -37,9 +37,6 @@
 			"category": "waystones:warp_plate"
 		},
 		{
-			"category": "ali:trade_loot"
-		},
-		{
 			"category": "functional_storage:dissolution"
 		},
 		{
@@ -70,7 +67,19 @@
 			"category": "twilightforest:uncrafting"
 		},
 		{
-			"category": "miners_delight:cooking"
+			"category": "minecraft:crafting_special_repairitem"
+		},
+		{
+			"category": "minecraft:smithing_trim"
+		},
+		{
+			"category": "beachparty:mini_fridge_freezing"
+		},
+		{
+			"category": "beachparty:tiki_bar_mixing"
+		},
+		{
+			"category": "minecraft:brewing"
 		}
 	]
 }

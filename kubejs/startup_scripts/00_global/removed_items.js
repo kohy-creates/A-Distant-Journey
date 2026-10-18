@@ -32,6 +32,7 @@ const RemovedItems = {
 		'born_in_chaos_v1:sea_terror_stomach',
 		'born_in_chaos_v1:spider_mandible',
 		'born_in_chaos_v1:bagof_candy',
+		/born_in_chaos_v1:elixirof_/,
 
 		'doublejumpattribute:jump_boots',
 
@@ -416,6 +417,9 @@ const RemovedItems = {
 
 		'alexsmobs:shark_tooth_arrow',
 		'alexsmobs:banana',
+		'alexsmobs:lava_bottle',
+		'alexsmobs:poison_bottle',
+		'alexsmobs:komodo_spit_bottle',
 		'alexscaves:biome_treat',
 		'alexscaves:conversion_crucible',
 		'alexscaves:beholder',
@@ -687,6 +691,7 @@ StartupEvents.postInit(event => {
 });
 
 global.isItemDisabled = function (item) {
+	if (global.blacklistedItemsArray.length == 0) regenerateBlacklist();
 	let id = (item instanceof Item) ? item.getId() : item;
 	return global.blacklistedItems.has(String(id));
 };

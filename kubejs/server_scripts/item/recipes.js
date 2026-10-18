@@ -354,6 +354,7 @@ ServerEvents.recipes((event) => {
 		/^dye_the_world:.*curtain$/,
 		/^another_furniture:.*curtain$/,
 		/cushionbackport:.*cushion/,
+		/sortilege:cauldron\/.*/
 	];
 	removeRecipeByID.forEach(recipe => {
 		event.remove({ id: recipe })
@@ -2069,140 +2070,6 @@ ServerEvents.recipes((event) => {
 		// And also rusting them in Ectoplasm
 		lycheeItemInBlock(item.replace('rusty_', ''), ectoplasm, item);
 	});
-
-	event.custom({
-		'type': 'lychee:item_inside',
-		'contextual': [
-			{
-				'type': 'location',
-				'offsetY': -1,
-				'predicate': {
-					'block': {
-						'tag': 'campfires',
-						'state': {
-							'lit': 'true'
-						}
-					}
-				}
-			}
-		],
-		'post': [
-			{
-				'type': 'execute',
-				'command': 'execute align xyz run playsound block.brewing_stand.brew block @a[distance=0..] ~.5 ~.5 ~.5 1 1.3',
-				'hide': true
-			},
-			{
-				'type': 'execute',
-				'command': 'execute align xyz run playsound entity.fishing_bobber.splash block @a[distance=0..] ~.5 ~.5 ~.5 0.5 1.2',
-				'hide': true
-			},
-			{
-				'type': 'place',
-				'block': 'cauldron'
-			},
-			{
-				'type': 'drop_item',
-				'item': 'majruszsdifficulty:recall_potion',
-				'count': 2
-			}
-		],
-		'item_in': [
-			{
-				'item': 'tide:glowfish'
-			},
-			{
-				'item': 'spelunker:amethyst_dust'
-			},
-			{
-				'item': 'spelunker:amethyst_dust'
-			},
-			{
-				'item': 'spelunker:amethyst_dust'
-			},
-			{
-				'item': 'glass_bottle'
-			},
-			{
-				'item': 'glass_bottle'
-			}
-		],
-		'block_in': {
-			'blocks': [
-				'water_cauldron'
-			],
-			'state': {
-				'level': '3'
-			}
-		}
-	}).id('adj:recall_potion');
-
-	event.custom({
-		'type': 'lychee:item_inside',
-		'contextual': [
-			{
-				'type': 'location',
-				'offsetY': -1,
-				'predicate': {
-					'block': {
-						'tag': 'campfires',
-						'state': {
-							'lit': 'true'
-						}
-					}
-				}
-			}
-		],
-		'post': [
-			{
-				'type': 'execute',
-				'command': 'execute align xyz run playsound block.brewing_stand.brew block @a[distance=0..] ~.5 ~.5 ~.5 1 1.3',
-				'hide': true
-			},
-			{
-				'type': 'execute',
-				'command': 'execute align xyz run playsound entity.fishing_bobber.splash block @a[distance=0..] ~.5 ~.5 ~.5 0.5 1.2',
-				'hide': true
-			},
-			{
-				'type': 'place',
-				'block': 'cauldron'
-			},
-			{
-				'type': 'drop_item',
-				'item': 'wormholepotion:wormhole_potion',
-				'count': 3
-			}
-		],
-		'item_in': [
-			{
-				'item': 'ender_pearl'
-			},
-			{
-				'item': 'brown_mushroom'
-			},
-			{
-				'item': 'red_mushroom'
-			},
-			{
-				'item': 'glass_bottle'
-			},
-			{
-				'item': 'glass_bottle'
-			},
-			{
-				'item': 'glass_bottle'
-			}
-		],
-		'block_in': {
-			'blocks': [
-				'water_cauldron'
-			],
-			'state': {
-				'level': '3'
-			}
-		}
-	}).id('adj:wormhole_potion');
 
 	event.recipes.create.milling([Item.of('spelunker:amethyst_dust'), Item.of('spelunker:amethyst_dust').withChance(0.25)], 'amethyst_shard', 60).id('adj:amethyst_dust_crushing');
 

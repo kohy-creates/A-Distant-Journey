@@ -42,8 +42,6 @@ const DecursioStages = {
 			'reducedDebugInfo': true,
 			'seasonalEvents': false,
 			'halloweenEvent': false,
-			'hungerLimitsSaturation': false,
-			'maxSaturation': '20',
 			// those few never change
 
 			'theappearanceoftheNightmareStalker': false,

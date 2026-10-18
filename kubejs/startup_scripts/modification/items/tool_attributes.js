@@ -2,12 +2,9 @@ const $TieredItem = Java.loadClass('net.minecraft.world.item.TieredItem');
 const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 const $SwordItem = Java.loadClass('net.minecraft.world.item.SwordItem');
 const $AttributeModifier = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier");
-const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes");
+// const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes");
 const $ItemAttributeModifierEvent = Java.loadClass('net.minecraftforge.event.ItemAttributeModifierEvent');
 const $PerkUtil = Java.loadClass("com.hollingsworth.arsnouveau.api.util.PerkUtil");
-
-const miningSpeedUUID = '80091653-9902-44f9-95a7-d627610856c0';
-const harvestLevelUUID = '84257908-8296-4470-ad2e-97e5db59b64e';
 
 const slots = [
 	'head', 'chest', 'legs', 'feet'
@@ -40,13 +37,13 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 
 		if (item instanceof $TieredItem && !(item instanceof $SwordItem)) {
 			let tier = item.getTier();
-			event.addModifier("kubejs:harvest_level", new $AttributeModifier(harvestLevelUUID, "Harvest Level", tier.getLevel() + 1, 'addition'))
+			event.addModifier("kubejs:harvest_level", new $AttributeModifier('84257908-8296-4470-ad2e-97e5db59b64e', "Harvest Level", tier.getLevel() + 1, 'addition'))
 			let speed = tier.getSpeed();
 			if (id.includes('rose_gold')) speed = 6.5;
-			event.addModifier("kubejs:mining_speed", new $AttributeModifier(miningSpeedUUID, "Mining Speed", speed, 'addition'))
+			event.addModifier("kubejs:mining_speed", new $AttributeModifier('80091653-9902-44f9-95a7-d627610856c0', "Mining Speed", speed, 'addition'))
 		}
 
-		let attackDamageMods = event.getOriginalModifiers().get($Attributes.ATTACK_DAMAGE);
+		let attackDamageMods = event.getOriginalModifiers().get('generic.attack_damage');
 		if (attackDamageMods && !attackDamageMods.isEmpty()) {
 			let baseDamage = 0
 			attackDamageMods.forEach(mod => baseDamage += mod.getAmount())
@@ -54,7 +51,7 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', Math.round(baseDamage * 3.5), 'addition'))
 		}
 
-		let attackSpeedMods = event.getOriginalModifiers().get($Attributes.ATTACK_SPEED);
+		let attackSpeedMods = event.getOriginalModifiers().get('generic.attack_speed');
 		if (attackSpeedMods && !attackSpeedMods.isEmpty()) {
 			let baseSpeed = 0
 			attackSpeedMods.forEach(mod => baseSpeed += mod.getAmount())
@@ -116,12 +113,12 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 			event.addModifier('kubejs:ranged_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Ranged Damage', global.arrowDamage[id], 'addition'))
 		}
 
-		let food = item.getFoodProperties();
-		if (food != null) {
-			let uuid = '8c7e24a4-e4e0-4183-b011-8771358e6b50';
-			event.addModifier('kubejs:food.hunger', new $AttributeModifier(uuid, 'Food Hunger', food.getNutrition(), 'addition'));
-			event.addModifier('kubejs:food.saturation', new $AttributeModifier(uuid, 'Food Hunger', food.getNutrition() * food.getSaturationModifier(), 'addition'));
-		}
+		// let food = item.getFoodProperties();
+		// if (food != null) {
+		// 	let uuid = '8c7e24a4-e4e0-4183-b011-8771358e6b50';
+		// 	event.addModifier('kubejs:food.hunger', new $AttributeModifier(uuid, 'Food Hunger', food.getNutrition(), 'addition'));
+		// 	event.addModifier('kubejs:food.saturation', new $AttributeModifier(uuid, 'Food Hunger', food.getNutrition() * food.getSaturationModifier(), 'addition'));
+		// }
 
 		if (Object.keys(global.toolReachOverrides).includes(id)) {
 			event.removeAttribute('forge:block_reach');

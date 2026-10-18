@@ -69,11 +69,13 @@
 		"file/Subtle Font Tweaks v2.2.zip",
 		"file/cuter_mmonsters.zip",
 		"file/Cataclysm Reimagined v1.3.5 for Forge.zip",
+		"file/FlowerPots+V.2.7.zip",
 		"file/Fantastic Flora.zip",
 		"prettier_water_rekindled",
 		"composite_material:cm_no_larger_swords",
-		"file/kohara's Compat",
+		"file/ADJ-Resources.zip",
 		"file/ADJ-Music.zip",
+		"file/kohara's Compat",
 		"file/ADJ Music"
 	],
 	"pack_overrides": {
@@ -135,10 +137,11 @@
 			"file/Subtle Font Tweaks v2.2.zip",
 			"file/cuter_mmonsters.zip",
 			"file/Cataclysm Reimagined v1.3.5 for Forge.zip",
+			"file/FlowerPots+V.2.7.zip",
 			"file/Fantastic Flora.zip",
 			"prettier_water_rekindled",
 			"composite_material:cm_no_larger_swords",
-			"file/kohara's Compat",
+			"file/ADJ-Resources.zip",
 			"file/ADJ-Music.zip"
 		],
 		"hidden": [
@@ -167,7 +170,8 @@
 			"prettier_water_vanilla",
 			"composite_material:cm_reinforced_legacy",
 			"composite_material:cm_legacy",
-			"builtin/dye_depot"
+			"builtin/dye_depot",
+			"fluffy_fur:yonkafishy"
 		],
 		"voiceChat": [
 			"black_icons",

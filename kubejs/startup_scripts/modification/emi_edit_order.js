@@ -601,7 +601,7 @@ StartupEvents.postInit(event => {
 	}
 
 	global.disabledPotions.forEach(potion => {
-		let nbt = '{Potion:"${id}"}';
+		let nbt = `{Potion:"${potion}"}`;
 		edit.removed.push(stack(`minecraft:potion${nbt}`));
 		edit.removed.push(stack(`sortilege:antidote${nbt}`));
 	});
