@@ -25,7 +25,7 @@ FTBQuestsEvents.customTask('48F026344B65629F', quest => {
 	quest.setMaxProgress(400);
 	quest.setCheckTimer(3);
 	quest.setCheck((task, player) => {
-		const maxHealth = player.getAttributeBaseValue($Attributes.MAX_HEALTH);
+		const maxHealth = player.getAttributeBaseValue(global.getRegistryObject('ATTRIBUTES', 'generic.max_health'));
 		task.progress = maxHealth;
 	});
 });

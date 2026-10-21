@@ -728,7 +728,7 @@ ClientEvents.lang('en_us', event => {
 		event.renameEntity(key, value)
 	}
 
-	global.rediscoveredFurniture().forEach(item => {
+	global.rediscoveredFurniture.forEach(item => {
 		let name = global.toTitleCase(global.textReplaceAll(item.replace('rediscovered:', ''), '_', ' '));
 		event.renameItem(item, 'Ancient ' + name);
 	});

@@ -349,7 +349,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 				break;
 			}
 			case 'mcdw:glaive_grave_bane': {
-				if (victim.mobType === $MobType.UNDEAD) {
+				if (victim.mobType.toString() == 'UNDEAD') {
 					victim.addEffect(global.newMobEffectInstance('ars_nouveau:hex', global.duration('0:10'), 1, false, true, true)); // Vulnerability Hex II = 30% increased damage
 				}
 				break;
@@ -369,7 +369,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 			}
 			case 'mcdw:dagger_backstabber':
 			case 'mcdw:dagger_swift_striker': {
-				if (victim instanceof $Mob && victim.getTarget() != attacker) {
+				if (victim instanceof $LivingEntity && victim.getTarget() != attacker) {
 					event.setAmount(event.getAmount() * 1.5);
 					level.playSound(null, victim.x, victim.y + victim.getEyeHeight(), victim.z, 'block.anvil.place', 'neutral', 1, global.getRandomNumber(0.9, 1.15));
 				}

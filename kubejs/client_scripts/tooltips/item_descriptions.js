@@ -10,7 +10,7 @@ const TooltipEdits = {
 			text: '\'Not to be confused with Dragonfish\''
 		},
 		{
-			items: global.rediscoveredFurniture(),
+			items: global.rediscoveredFurniture,
 			text: 'Comes with a unique feeling of nostalgia'
 		},
 		{

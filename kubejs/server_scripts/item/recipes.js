@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
 	}
 
 	const disabledItemRecipes = [
-		global.rediscoveredFurniture(),
+		global.rediscoveredFurniture,
 		'naturescompass:naturescompass',
 		'enchantinginfuser:enchanting_infuser',
 		'tiab:time_in_a_bottle',

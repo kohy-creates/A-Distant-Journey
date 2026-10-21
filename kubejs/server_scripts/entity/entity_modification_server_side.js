@@ -38,9 +38,11 @@ const EntityModifications = {
 		 */
 		setEntityAttributes: function (entity, health, damage, armor) {
 			if (health != null) this.setHealth(entity, health);
-			if (damage != null) entity.setAttributeBaseValue($Attributes.ATTACK_DAMAGE, damage)
-			if (armor != null) entity.setAttributeBaseValue($Attributes.ARMOR, armor)
-			entity.setAttributeBaseValue($ALObjects.Attributes.CRIT_CHANCE.get(), 0);
+			if (damage != null) entity.getAttribute('generic.attack_damage').setBaseValue(damage);
+			if (armor != null) entity.getAttribute('generic.armor').setBaseValue(armor);
+			entity.getAttribute('attributeslib:crit_chance').addPermanentModifier(
+				new $AttributeModifier('43a2ed18-c05d-4e1a-b799-249cb212a937', 'No criticals', -1, 'multiply_total')
+			);
 		},
 		/**
 		 * Scales Boss HP based on the number of nearby players.
@@ -164,13 +166,16 @@ const EntityModifications = {
 					if (entity.getLevel().getDimension() == 'minecraft:the_nether') {
 						entity.setItemSlot('mainhand', global.weightedRandom({
 							'mcdw:bow_bonebow': 10,
-							'mcwd:bow_twisting_vine_bow': 4,
-							'mcwd:bow_twisting_weeping_bow': 4,
+							'mcwd:bow_twisting_vine_bow': 5,
+							'mcwd:bow_twisting_weeping_bow': 5,
 						}));
 						entity.setDropChance('mainhand', 0.05);
 					}
-					else if (currentStage >= 3) {
+					else if (currentStage >= 3 && entity.getType() != 'minecraft:stray') {
 						entity.setItemSlot('mainhand', 'mcdw:bow_power_bow');
+					}
+					else if (entity.getType() == 'minecraft:stray') {
+						entity.setItemSlot('mainhand', 'mcdw:bow_snow_bow');
 					}
 					break;
 				}
@@ -243,7 +248,6 @@ const EntityModifications = {
 		 */
 		hardcoreModifications: function (entity) {
 			EntityModifications._logic.setHealth(entity, Math.ceil(entity.maxHealth * 1.5));
-			entity.setAttributeBaseValue($ALObjects.Attributes.CRIT_CHANCE.get(), 0.1);
 			switch (entity.getType()) {
 				case 'minecraft:wither_skeleton': {
 					if (global.ifRandomChance(10)) {

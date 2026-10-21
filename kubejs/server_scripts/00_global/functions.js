@@ -275,3 +275,25 @@ global.chainLightning = function (attacker, initialTarget, executeAsTarget, maxJ
 		);
 	}
 };
+
+/**
+ * Shortcut for all the damage shenanigans
+ * @param {Internal.LivingEntity_} attacker 
+ * @param {Internal.LivingEntity_} target 
+ * @param {string} damageSource 
+ * @param {number} amount 
+ * @param {Internal.Projectile_} projectile 
+ * @param {number} armorPenetration 
+ */
+global.hurt = function (attacker, target, damageSource, amount, projectile, armorPenetration) {
+	let src = global.getOrDefault(attacker, null);
+	if (armorPenetration) {
+		let fakePlayer = new $FakePlayer(attacker.level, new $GameProfile('c67fdd38-d08c-4800-af2d-fc221fa90318', 'ADJ Fake Player'));
+		fakePlayer.getAttribute('attributeslib:armor_pierce').setBaseValue(armorPenetration);
+		fakePlayer.setPos(attacker.x, attacker.y, attacker.z);
+		fakePlayer.setInvisible(true);
+		src = fakePlayer;
+	}
+	let source = global.getDamageSource(attacker.level, damageSource, global.getOrDefault(projectile, null), src);
+	target.attack(source, amount);
+};

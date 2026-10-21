@@ -1,12 +1,8 @@
-function createTagKey(path) {
-	return $TagKey.create($Registries.DAMAGE_TYPE, global.resourceLocation(path));
-}
-
 const DamageIndicatorTags = {
-	IS_FIRE: createTagKey('minecraft:is_fire'),
-	IS_MAGIC: createTagKey('forge:is_magic'),
-	IS_WITHER: createTagKey('dummmmmmy:is_wither'),
-	IS_EXPLOSION: createTagKey('minecraft:is_explosion'),
+	IS_FIRE: global.createTagKey('DAMAGE_TYPE', 'minecraft:is_fire'),
+	IS_MAGIC: global.createTagKey('DAMAGE_TYPE', 'forge:is_magic'),
+	IS_WITHER: global.createTagKey('DAMAGE_TYPE', 'dummmmmmy:is_wither'),
+	IS_EXPLOSION: global.createTagKey('DAMAGE_TYPE', 'minecraft:is_explosion'),
 };
 
 ADJServerEvents.adjHurt(event => {

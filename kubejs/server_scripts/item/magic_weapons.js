@@ -49,9 +49,11 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 				switch (immediate.getType()) {
 					case 'alexscaves:water_bolt': {
 						event.setCanceled(true);
+						if (global.hasTag(immediate, 'adj.ignore_water_bolt')) return;
+						immediate.addTag('adj.ignore_water_bolt');
 						victim.attack(
-							global.getDamageSource(player.getLevel(), 'minecraft:magic', null, player),
-							global.calculateSpellDamage(player, getBaseDamage('alexscaves:sea_staff'), true)
+							global.getDamageSource(player.getLevel(), 'player_attack', null, player),
+							global.calculateSpellDamage(player, getBaseDamage('alexscaves:sea_staff'), false)
 						);
 					}
 				}

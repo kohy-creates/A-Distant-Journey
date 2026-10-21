@@ -39,6 +39,8 @@ global.bowDamage = {
 	'mcdw:crossbow_soul_crossbow': 21,
 	'mcdw:crossbow_feral_soul_crossbow': 21,
 	'mcdw:crossbow_voidcaller_crossbow': 54,
+	'mcdw:bow_snow_bow': 19,
+	'mcdw:bow_bubble_burster': 29,
 
 	'twilightforest:ice_bow': [67, global.baseCritChance, 0.15],
 	'twilightforest:triple_bow': 38,

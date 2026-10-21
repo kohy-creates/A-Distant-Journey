@@ -1,9 +1,9 @@
 //priority: 1000
 
 /**
- * @returns {string[]} All rediscovered table and chair IDs. 
+ * All rediscovered table and chair IDs. 
  */
-global.rediscoveredFurniture = () => {
+global.rediscoveredFurniture = (() => {
 	const furnitureTypes = ['chair', 'table'];
 	const furnitureVariants = ['oak', 'cherry', 'birch', 'acacia', 'spruce', 'dark_oak', 'jungle', 'mangrove', 'warped', 'crimson', 'bamboo'];
 	let furniture = [];
@@ -13,7 +13,7 @@ global.rediscoveredFurniture = () => {
 		});
 	});
 	return furniture;
-};
+})();
 
 /**
  * Utility object for possible armor suffixes.
@@ -87,9 +87,9 @@ const $DamageSource = Java.loadClass('net.minecraft.world.damagesource.DamageSou
  * Returns a damage type instance by its ResourceLocation.
  * @param {Internal.Level_} level 
  * @param {Internal.DamageType_} damageType 
- * @param {Internal.Entity_|null} projectile 
- * @param {Internal.Entity_|null} thrower 
- * @returns 
+ * @param {Internal.Entity_} [projectile] 
+ * @param {Internal.Entity_} [thrower] 
+ * @returns {Internal.DamageSource_}
  */
 global.getDamageSource = function (level, damageType, projectile, thrower) {
 	const resourceKey = $ResourceKey.create(DAMAGE_TYPE, Utils.id(damageType));
@@ -242,7 +242,7 @@ global.amplifyHexColor = function shadeColor(color, percent, noHash) {
 };
 
 /**
- * 
+ * Converts a duration string to ticks.
  * @param {string} string 
  * Duration as a timestamp, e.g. `0:30`for 30 seconds 
  * @param {number} mul
@@ -315,11 +315,6 @@ global.calculateSpellDamage = function (player, baseAmount, randomize) {
 	let mul2 = (randomize) ? 1 + global.getRandomNumber(-0.15, 0.15) : 1;
 	return baseAmount * mul * mul2;
 };
-
-/**
- * Highlight for the player menu, currently unused.
- */
-// global.menuHighlightColor = '#77FFFFFF';
 
 /** @type {Record<string, string>} */
 global.lang = {};
@@ -416,14 +411,30 @@ global.getAllRegistryObjects = function (registry) {
 	return global.getRegistry(registry).getValues().toArray().sort();
 };
 
+const ForgeRegistryKeys = [
+	'ACTIVITIES', 'ATTRIBUTES', 'BIOMES', 'BIOME_MODIFIER_SERIALIZERS',
+	'BLOCKS', 'BLOCK_ENTITY_TYPES', 'BLOCK_STATE_PROVIDER_TYPES', 'CHUNK_STATUS',
+	'COMMAND_ARGUMENT_TYPES', 'DISPLAY_CONTEXTS', 'ENCHANTMENTS', 'ENTITY_DATA_SERIALIZERS',
+	'ENTITY_TYPES', 'FEATURES', 'FLUIDS', 'FLUID_TYPES',
+	'FOLIAGE_PLACER_TYPES', 'GLOBAL_LOOT_MODIFIER_SERIALIZERS', 'HOLDER_SET_TYPES', 'ITEMS',
+	'MEMORY_MODULE_TYPES', 'MENU_TYPES', 'MOB_EFFECTS', 'PAINTING_VARIANTS',
+	'PARTICLE_TYPES', 'POI_TYPES', 'POTIONS', 'RECIPE_SERIALIZERS',
+	'RECIPE_TYPES', 'SCHEDULES', 'SENSOR_TYPES', 'SOUND_EVENTS',
+	'STAT_TYPES', 'STRUCTURE_MODIFIER_SERIALIZERS', 'TREE_DECORATOR_TYPES', 'VILLAGER_PROFESSIONS',
+	'WORLD_CARVERS',
+];
+
 /**
  * Creates a new TagKey for a given registry and resource location.
- * @param {keyof typeof $ForgeRegistries} registry
+ * @param {keyof typeof $ForgeRegistries|keyof typeof $Registries} registry
  * @param {string} key
- * @returns {Internal.TagKey_}
+ * @returns {Internal.ForgeRegistries_}
  */
 global.createTagKey = function (registry, key) {
-	return $TagKey.create($ForgeRegistries$Keys[registry], global.resourceLocation(key));
+	let reg = null;
+	if (ForgeRegistryKeys.includes(registry)) reg = $ForgeRegistries$Keys[registry];
+	else reg = $Registries[registry];
+	return $TagKey.create(reg, global.resourceLocation(key));
 };
 
 /**
@@ -438,7 +449,7 @@ global.createTagKey = function (registry, key) {
  * @param {Internal.SoundSource_} category 
  * @param {float} volume 
  * @param {float|float[]} pitch 
- * @param {Internal.Player_} targetPlayer
+ * @param {Internal.Player_} [targetPlayer]
  */
 global.playSound = function (level, x, y, z, soundId, category, volume, pitch, targetPlayer) {
 	let p = (Array.isArray(pitch)) ? Math.random() * (pitch[1] - pitch[0]) + pitch[0] : pitch;
@@ -446,7 +457,8 @@ global.playSound = function (level, x, y, z, soundId, category, volume, pitch, t
 		global.getOrDefault(targetPlayer, null),
 		x, y, z,
 		soundId, category,
-		volume, p);
+		volume, p
+	);
 };
 
 const dyeDepotColors = [
@@ -468,10 +480,10 @@ global.isDyeDepotColor = function (color) {
  * Quick helper to return a different namespace where appropriate
  * if the supplied color is a Dye Depot color.
  * Used in block registry and in server recipes.
- * @param {*} color 
- * @param {*} ifTrue 
- * @param {*} ifFalse 
- * @returns 
+ * @param {Internal.DyeColor_} color 
+ * @param {any} ifTrue 
+ * @param {any} ifFalse 
+ * @returns {typeof ifTrue|typeof ifFalse}
  */
 global.ifDyeDepot = function (color, ifTrue, ifFalse) {
 	return global.isDyeDepotColor(color) ? ifTrue : ifFalse;
@@ -543,19 +555,6 @@ global.normalizeResourceLocation = function (id) {
 		return 'minecraft:' + id;
 	}
 	return id;
-};
-
-/**
- * Shortcut for all the damage shenanigans
- * @param {Internal.LivingEntity_} attacker 
- * @param {Internal.LivingEntity_} target 
- * @param {string} damageSource 
- * @param {number} amount 
- * @param {Internal.Projectile_} projectile 
- */
-global.hurt = function (attacker, target, damageSource, amount, projectile) {
-	let source = global.getDamageSource(attacker.level, damageSource, global.getOrDefault(projectile, null), global.getOrDefault(attacker, null));
-	target.attack(source, amount);
 };
 
 global.isHostile = function (entity) {

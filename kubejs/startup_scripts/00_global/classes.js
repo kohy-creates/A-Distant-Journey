@@ -8,20 +8,12 @@ const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
 const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
 const $Registries = Java.loadClass("net.minecraft.core.registries.Registries");
 const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity');
-const $CrossbowItem = Java.loadClass("net.minecraft.world.item.CrossbowItem");
-const $BowItem = Java.loadClass("net.minecraft.world.item.BowItem");
 const $BlockTags = Java.loadClass('net.minecraft.tags.BlockTags')
 const $Player = Java.loadClass('net.minecraft.world.entity.player.Player');
 const $Enemy = Java.loadClass('net.minecraft.world.entity.monster.Enemy');
 
 const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
 const $ForgeRegistries$Keys = Java.loadClass('net.minecraftforge.registries.ForgeRegistries$Keys');
-
-const $MobEffectBuilder = Java.loadClass("dev.latvian.mods.kubejs.misc.BasicMobEffect$Builder");
-const $PotionBuilder = Java.loadClass("dev.latvian.mods.kubejs.misc.PotionBuilder");
-const $DeferredRegisterCreate = Java.loadClass("net.minecraftforge.registries.DeferredRegister")[
-  "create(net.minecraftforge.registries.IForgeRegistry,java.lang.String)"
-];
 
 const $AttackEntityEvent = Java.loadClass('net.minecraftforge.event.entity.player.AttackEntityEvent');
 const $LivingHurtEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingHurtEvent');

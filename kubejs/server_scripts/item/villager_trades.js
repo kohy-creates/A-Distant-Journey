@@ -94,7 +94,7 @@ MoreJSEvents.updateVillagerOffers(event => {
 		}
 		else if (output.getItem() instanceof $ArmorItem) {
 			let defense = 0;
-			output.getAttributeModifiers(output.getItem().getEquipmentSlot()).get($Attributes.ARMOR).forEach(modifier => {
+			output.getAttributeModifiers(output.getItem().getEquipmentSlot()).get(global.getRegistryObject('ATTRIBUTES', 'generic.armor')).forEach(modifier => {
 				defense += modifier.getAmount();
 			})
 			let durability = output.getItem().getMaxDamage();
