@@ -286,4 +286,24 @@ StartupEvents.registry('mob_effect', registry => {
 			'multiply_total'
 		);
 
+	registry.create('shield_of_fire')
+		.beneficial()
+		.color(Color.ORANGE_DYE)
+		.modifyAttribute(
+			'generic.armor',
+			'511279fb-3547-4a95-844c-6cdaba85e551',
+			4,
+			'addition'
+		);
+
+	registry.create('palladium_hero_aegis')
+		.beneficial()
+		.color(Color.ORANGE_DYE)
+		.modifyAttribute(
+			'generic.armor',
+			'511279fb-3547-4a95-844c-6cdaba85e551',
+			6,
+			'addition'
+		);
+
 });

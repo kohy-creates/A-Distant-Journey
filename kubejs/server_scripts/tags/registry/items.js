@@ -610,6 +610,7 @@ ServerEvents.tags('item', tags => {
 		'alexscaves:heavyweight',
 		'kubejs:natures_gift',
 		'minecraft:rabbit_foot',
+		/kubejs:.*quiver/
 	]);
 
 	tags.add('galosphere:weapon_racks_can_hold', [
@@ -622,11 +623,45 @@ ServerEvents.tags('item', tags => {
 
 	tags.add('c:bows', [
 		/mcdw:bow_/,
+		'botania:livingwood_bow',
+		'botania:crystal_bow',
+		'tide:starlight_bow',
+		'twilightdelight:antler_bow',
+		'aether:phoenix_bow',
+		'twilightforest:triple_bow',
+		'twilightforest:seeker_bow',
+		'twilightforest:ice_bow',
+		'twilightforest:ender_bow',
+		'kubejs:gloopy_bow',
+		'kubejs:prismarine_bow',
+		'alexscaves:dreadbow',
+		'composite_material:lacerator',
+		'kubejs:the_phantom'
 	]);
 
 	tags.add('c:crossbows', [
 		/mcdw:crossbow_/,
+		'aether_redux:subzero_crossbow',
+		'additionaladditions:crossbow_with_spyglass',
+		'kubejs:elsa_crossbow'
 	]);
+
+	tags.add('forge:bows', [
+		'#c:bows',
+	]);
+
+	tags.add('forge:crossbows', [
+		'#c:crossbows',
+	]);
+
+	tags.add('forge:tools/bows', [
+		'#c:bows',
+	]);
+
+	tags.add('forge:tools/crossbows', [
+		'#c:crossbows',
+	]);
+
 
 	tags.add('c:hidden_from_recipe_viewers', [
 		'chiselsandbits:block_bit'

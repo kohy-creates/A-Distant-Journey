@@ -226,3 +226,16 @@ global.dropItem = function (level, item, min, max, x, y, z, sound, volume, pitch
 global.getLootingLevel = function (player) {
 	return player.getMainHandItem().getEnchantmentLevel('minecraft:looting');
 };
+
+/**
+ * Returns the damage of the specified arrow.
+ * @param {Internal.AbstractArrow_} arrow 
+ * @param {"arrow"|"bow"} specific 
+ * @returns 
+ */
+global.getArrowDamage = function (arrow, specific) {
+	if (specific) {
+		return arrow.persistentData[`${specific}Damage`];
+	}
+	return arrow.persistentData.arrowDamage + arrow.persistentData.bowDamage;
+};

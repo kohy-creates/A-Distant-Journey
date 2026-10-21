@@ -14,16 +14,16 @@
 	#Enable sphere shape of fancy fog.
 	fancyFogSphere = false
 	#Enable dependence of clouds on day time.
-	daylightClouds = true
+	daylightClouds = false
 	#Enable dependence of clouds on day time when daylight cycle disabled.
 	daylightCloudsIgnore = false
 
 	#Particles
 	[graphics.particles]
 		#Enable dropping items particles.
-		itemParticle = true
+		itemParticle = false
 		#Enable items particles in GUI.
-		itemGuiParticle = true
+		itemGuiParticle = false
 		#Enable blood particles in case of damage.
 		bloodParticle = false
 		#Enable custom effect of lightning bolt.

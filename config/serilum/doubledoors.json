@@ -1,7 +1,7 @@
 {
 	"//": "These settings are easier to change in-game! Mod List -> Double Doors -> Config",
 	"Enable Double Doors": {
-		"//": "Whether Double Doors is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart. Do not disable a mod that adds blocks or items to an existing world, they will be removed.",
+		"//": "Whether Double Doors is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart.",
 		"value": true
 	},
 	"enableRecursiveOpening": {
@@ -23,6 +23,10 @@
 	"enableTrapdoors": {
 		"//": "When enables, the mod works with double trapdoors.",
 		"value": true
+	},
+	"doorBlockBlacklist": {
+		"//": "A comma separated list of block ids the mod ignores, so they keep opening one at a time. Works for doors, trapdoors and fence gates. For example 'create:andesite_door,supplementaries:gold_door'.",
+		"value": ""
 	},
 	"enableModIncompatibilityCheck": {
 		"//": "Checks if there are other mods loaded with double door functionality, such as Quark. If found, it edits a line in their config to disable double doors. Fixes doors not opening due to code being ran twice.",

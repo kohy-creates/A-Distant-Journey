@@ -1,13 +1,26 @@
+const PlayerStuff = {
+	attributeUuids: {
+		FlyingUUID: '923052c1-2354-48ba-b01a-51e31360e219',
+		SpellBookManaUUID: 'b790c0a0-0934-41e2-a2f4-d59b6671db5b',
+		WillOfDharockUUID: 'c17e38c0-78aa-422d-8e41-4243bc5a153f',
+		WitherStormUUID: 'c17e38c0-78aa-422d-8e41-4243bc5a153f',
+		EnchantmentUUIDs: {
+			cowardice: '1c581140-8d35-4640-b01a-5b93c9c84c3a',
+			rapid_regen: '524057f6-1b13-4e22-ba7c-0612c2b44060',
+			reckless: '14f5a499-4bba-4876-aef7-0b08096b51a3',
+		},
+	}
+}
 
 
+	
 PlayerEvents.tick(event => {
 	const player = event.player;
 
 	// Bits of code that depend on players having something in their inventories
-	const inventory = player.getInventory().getAllItems();
 	let hasPrism = false;
 	let spellBookTier = 0;
-	inventory.forEach(item => {
+	player.getInventory().getAllItems().forEach(item => {
 		switch (item.id) {
 			case 'structure_gel:building_tool': {
 				hasPrism = true;
@@ -32,28 +45,12 @@ PlayerEvents.tick(event => {
 
 	if (player.getMainHandItem().getId() === 'zenith:zenith') {
 		let nbt = player.getMainHandItem().nbt;
-
 		if (nbt && !nbt.zenith_parts) {
-			let parts = [];
-
-			global.zenithSwords.forEach(part => {
-				if (!Item.exists(part.item)) return;
-				parts.push({
-					item: part.item,
-					color: $Integer(part.color.toString().replace('.0', '')),
-					rotation_center_height: part.rotation_center_height,
-					rotation: part.rotation,
-					scale: part.scale,
-					trail_width: part.trail_width
-				});
-			});
-
-			nbt.zenith_parts = parts;
+			nbt.zenith_parts = global.zenithNbt;
 		}
 	}
 
 	// Base attributes
-	// I hope this works. If not, then I roll back
 	/**
 	 * @param {Internal.Attribute_} attribute 
 	 * @param {string} modifierUUID 
@@ -61,7 +58,7 @@ PlayerEvents.tick(event => {
 	 * @param {number} baseValue
 	 * @param {Internal.AttributeModifier$Operation_} operation 
 	 */
-	function addBaseAttribtue(attribute, modifierUUID, name, baseValue, operation) {
+	function addBaseAttribute(attribute, modifierUUID, name, baseValue, operation, condition) {
 		let att = player.getAttribute(attribute);
 		let attModifier = att.getModifier(modifierUUID);
 		if (!attModifier) {
@@ -69,34 +66,24 @@ PlayerEvents.tick(event => {
 		}
 	}
 
-	addBaseAttribtue('attributeslib:mining_speed', '923052c1-2354-48ba-b01a-51e31360e218', 'Base mining speed bonus', 0.15, 'addition');
-	addBaseAttribtue('adjcore:player.extra_fortune_level', '766a19b7-a084-4797-af71-409699208487', 'More ore drops by default', 1, 'addition');
-
-	const FlyingUUID = '923052c1-2354-48ba-b01a-51e31360e219';
-	const SpellBookManaUUID = 'b790c0a0-0934-41e2-a2f4-d59b6671db5b';
-	const WillOfDharockUUID = 'c17e38c0-78aa-422d-8e41-4243bc5a153f';
-	const WitherStormUUID = 'c17e38c0-78aa-422d-8e41-4243bc5a153f';
-	const EnchantmentUUIDs = {
-		cowardice: '1c581140-8d35-4640-b01a-5b93c9c84c3a',
-		rapid_regen: '524057f6-1b13-4e22-ba7c-0612c2b44060',
-		reckless: '14f5a499-4bba-4876-aef7-0b08096b51a3',
-	};
+	addBaseAttribute('attributeslib:mining_speed', '923052c1-2354-48ba-b01a-51e31360e218', 'Base mining speed bonus', 0.15, 'addition');
+	addBaseAttribute('adjcore:player.extra_fortune_level', '766a19b7-a084-4797-af71-409699208487', 'More ore drops by default', 1, 'addition');
 
 	player.getAttribute('attributeslib:crit_chance').setBaseValue(0.0);
 	player.getAttribute('generic.attack_speed').setBaseValue(2.0);
 
 	// Architect Prism grants creative flight when in inventory
 	const creativeFlightAttribute = player.getAttribute('attributeslib:creative_flight');
-	const flying = creativeFlightAttribute.getModifier(FlyingUUID)
+	const flying = creativeFlightAttribute.getModifier(PlayerStuff.attributeUuids.FlyingUUID)
 	if (!flying && hasPrism) {
-		creativeFlightAttribute.addPermanentModifier(new $AttributeModifier(FlyingUUID, 'Architect\'s Prism', 1, 'addition'))
+		creativeFlightAttribute.addPermanentModifier(new $AttributeModifier(PlayerStuff.attributeUuids.FlyingUUID, 'Architect\'s Prism', 1, 'addition'))
 	}
 	else if (flying && !hasPrism) {
-		creativeFlightAttribute.removeModifier(FlyingUUID)
+		creativeFlightAttribute.removeModifier(PlayerStuff.attributeUuids.FlyingUUID)
 	}
 
 	const maxManaAttribute = player.getAttribute('ars_nouveau:ars_nouveau.perk.max_mana');
-	const spellBookMana = maxManaAttribute.getModifier(SpellBookManaUUID);
+	const spellBookMana = maxManaAttribute.getModifier(PlayerStuff.attributeUuids.SpellBookManaUUID);
 	if (!spellBookMana && spellBookTier > 0) {
 		let amount = 0;
 		switch (spellBookTier) {
@@ -107,10 +94,10 @@ PlayerEvents.tick(event => {
 				amount = 40;
 				break;
 		}
-		maxManaAttribute.addPermanentModifier(new $AttributeModifier(SpellBookManaUUID, 'Spell Book Max Mana', amount, 'addition'))
+		maxManaAttribute.addPermanentModifier(new $AttributeModifier(PlayerStuff.attributeUuids.SpellBookManaUUID, 'Spell Book Max Mana', amount, 'addition'))
 	}
 	else if (spellBookMana && spellBookTier == 0) {
-		maxManaAttribute.removeModifier(SpellBookManaUUID);
+		maxManaAttribute.removeModifier(PlayerStuff.attributeUuids.SpellBookManaUUID);
 	}
 
 	const helmet = player.getHeadArmorItem();
@@ -123,8 +110,8 @@ PlayerEvents.tick(event => {
 			willOfDharockAmount = Math.max(Math.pow(hp - 0.2, 3), 0);
 		}
 	}
-	critDamageAttr.removeModifier(WillOfDharockUUID)
-	critDamageAttr.addTransientModifier(new $AttributeModifier(WillOfDharockUUID, 'Will of Dharock', willOfDharockAmount, 'addition'));
+	critDamageAttr.removeModifier(PlayerStuff.attributeUuids.WillOfDharockUUID)
+	critDamageAttr.addTransientModifier(new $AttributeModifier(PlayerStuff.attributeUuids.WillOfDharockUUID, 'Will of Dharock', willOfDharockAmount, 'addition'));
 
 	// Global damage attribute
 	// Here read: something that increases all damage dealt
@@ -151,6 +138,13 @@ PlayerEvents.tick(event => {
 	// Stuff reliant on persistent data
 	const pData = player.getPersistentData();
 
+	function tickElsaCrossbow(item) {
+		let nbt = item.nbt;
+		nbt.remove('Charged');
+		nbt.remove('ChargedProjectiles');
+		item.setNbt(nbt);
+	}
+
 	if (pData.elsa_crossbow_tickdown && pData.elsa_crossbow_tickdown > 0) {
 		pData.elsa_crossbow_tickdown--;
 		player.sendData('elsa_crossbow_draw', {
@@ -159,16 +153,10 @@ PlayerEvents.tick(event => {
 	}
 	else {
 		if (player.mainHandItem.getId() === 'kubejs:elsa_crossbow' && player.mainHandItem.nbt.Charged) {
-			let nbt = player.mainHandItem.nbt;
-			nbt.remove('Charged');
-			nbt.remove('ChargedProjectiles');
-			player.mainHandItem.setNbt(nbt);
+			tickElsaCrossbow(player.mainHandItem);
 		}
 		if (player.offhandItem.getId() === 'kubejs:elsa_crossbow' && player.offhandItem.nbt.Charged) {
-			let nbt = player.offhandItem.nbt;
-			nbt.remove('Charged');
-			nbt.remove('ChargedProjectiles');
-			player.offhandItem.setNbt(nbt);
+			tickElsaCrossbow(player.offhandItem);
 		}
 	}
 
@@ -178,7 +166,7 @@ PlayerEvents.tick(event => {
 				pData.pocketfulOfSunshineTimer = -1;
 			}
 			pData.pocketfulOfSunshineTimer++;
-			if (pData.pocketfulOfSunshineTimer >= 100) {
+			if (pData.pocketfulOfSunshineTimer >= 50) {
 				pData.pocketfulOfSunshineTimer = -1
 				if (player.getAbsorptionAmount() < 50) {
 					player.setAbsorptionAmount(player.getAbsorptionAmount() + 1);
@@ -192,7 +180,7 @@ PlayerEvents.tick(event => {
 			player.isCuriosEquipped('kubejs:neptunes_shell')
 			|| player.isCuriosEquipped('kubejs:moon_shell')
 			|| player.isCuriosEquipped('kubejs:celestial_shell')
-		) && player.isInWaterOrBubble()) {
+		) && player.isInWater()) {
 			isMerfolkActive = true;
 			player.addEffect(global.newMobEffectInstance('kubejs:merfolk_form', 3, 0, true, false, true));
 
@@ -205,17 +193,28 @@ PlayerEvents.tick(event => {
 		) && player.getLevel().isNight() && !isMerfolkActive) {
 			player.addEffect(global.newMobEffectInstance('kubejs:werewolf_form', 3, 0, true, false, true));
 		}
+
+		if (player.isCuriosEquipped('kubejs:shield_of_fire') && !player.isCuriosEquipped('kubejs:palladium_hero_aegis') && player.isOnFire()) {
+			player.addEffect(global.newMobEffectInstance('kubejs:shield_of_fire', 3, 0, true, false, true));
+		}
+		if (player.isCuriosEquipped('kubejs:palladium_hero_aegis') && player.isOnFire()) {
+			player.addEffect(global.newMobEffectInstance('kubejs:palladium_hero_aegis', 3, 0, true, false, true));
+		}
+
+		if (player.isCuriosEquipped('kubejs:mana_flower') && player.age % 20 === 0) {
+			player.adjcore$restoreMana(Math.ceil(global.getMaxMana(player) * 0.02), false);
+		}
 	}
 
 	// On tick enchantment stuff
 	const maxHealthAttribute = player.getAttribute('generic.max_health');
-	maxHealthAttribute.removeModifier(EnchantmentUUIDs.reckless);
+	maxHealthAttribute.removeModifier(PlayerStuff.attributeUuids.EnchantmentUUIDs.reckless);
 
-	damageDealtAttr.removeModifier(EnchantmentUUIDs.cowardice);
-	damageDealtAttr.removeModifier(EnchantmentUUIDs.reckless);
+	damageDealtAttr.removeModifier(PlayerStuff.attributeUuids.EnchantmentUUIDs.cowardice);
+	damageDealtAttr.removeModifier(PlayerStuff.attributeUuids.EnchantmentUUIDs.reckless);
 
 	const healthRegenAttr = player.getAttribute('adjcore:generic.health_regeneration');
-	healthRegenAttr.removeModifier(EnchantmentUUIDs.rapid_regen);
+	healthRegenAttr.removeModifier(PlayerStuff.attributeUuids.EnchantmentUUIDs.rapid_regen);
 
 	const chestplate = player.getChestArmorItem();
 	let chestplateEnchants = chestplate.getEnchantments();
@@ -223,17 +222,17 @@ PlayerEvents.tick(event => {
 		let enchLevel = chestplateEnchants.get(enchId);
 		switch (enchId) {
 			case 'kubejs:rapid_regen': {
-				healthRegenAttr.addTransientModifier(new $AttributeModifier(EnchantmentUUIDs.rapid_regen, 'Rapid Regen', 0.25 + enchLevel * 0.5, 'addition'));
+				healthRegenAttr.addTransientModifier(new $AttributeModifier(PlayerStuff.attributeUuids.EnchantmentUUIDs.rapid_regen, 'Rapid Regen', 0.25 + enchLevel * 0.5, 'addition'));
 				break;
 			}
 			case 'kubejs:reckless': {
-				maxHealthAttribute.addTransientModifier(new $AttributeModifier(EnchantmentUUIDs.reckless, 'Reckless', -0.4, 'multiply_base'));
-				damageDealtAttr.addTransientModifier(new $AttributeModifier(EnchantmentUUIDs.reckless, 'Reckless', 0.4 + 0.2 * enchLevel, 'multiply_base'));
+				maxHealthAttribute.addTransientModifier(new $AttributeModifier(PlayerStuff.attributeUuids.EnchantmentUUIDs.reckless, 'Reckless', -0.4, 'multiply_base'));
+				damageDealtAttr.addTransientModifier(new $AttributeModifier(PlayerStuff.attributeUuids.EnchantmentUUIDs.reckless, 'Reckless', 0.4 + 0.2 * enchLevel, 'multiply_base'));
 				break;
 			}
 			case 'kubejs:cowardice': {
 				if (global.getHealthPercent(player) <= 95) {
-					damageDealtAttr.addTransientModifier(new $AttributeModifier(EnchantmentUUIDs.cowardice, 'Cowardice', 0.06 * (level + 1), 'multiply_total'));
+					damageDealtAttr.addTransientModifier(new $AttributeModifier(PlayerStuff.attributeUuids.EnchantmentUUIDs.cowardice, 'Cowardice', 0.06 * (level + 1), 'multiply_total'));
 				}
 				break;
 			}
@@ -255,11 +254,11 @@ PlayerEvents.tick(event => {
 
 	// Wither Storm stuff
 	const musicPitch = player.getAttribute('adjcore:client.music_pitch');
-	musicPitch.removeModifier(WitherStormUUID);
+	musicPitch.removeModifier(PlayerStuff.attributeUuids.WitherStormUUID);
 	const server = event.getServer();
 	if (server.persistentData.witherStormActive) {
 		let phase = server.persistentData.witherStormPhase;
-		musicPitch.addTransientModifier(new $AttributeModifier(WitherStormUUID, 'Consequences of Your Own Actions', Math.min(phase * -0.07), 'multiply_base'));
+		musicPitch.addTransientModifier(new $AttributeModifier(PlayerStuff.attributeUuids.WitherStormUUID, 'Consequences of Your Own Actions', Math.min(phase * -0.07), 'multiply_base'));
 	}
 });
 
@@ -316,6 +315,8 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 	const attacker = event.getSource().getActual();
 	/** @type {Internal.LivingEntity_} */
 	const victim = event.getEntity();
+
+	const source = event.getSource();
 
 	// console.log(event.getSource(), event.getSource().getImmediate(), event.getSource().getType())
 	if (attacker && attacker instanceof $Player && event.getSource().getImmediate() instanceof $Player) {
@@ -486,48 +487,50 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 
 	// Players getting hurt
 	// Note to self: no need to check if not null cause there is always a damage target
-	if (victim instanceof $Player && attacker instanceof $LivingEntity) {
-		/** @type {$Map<string, integer>[]} */
-		let enchantments = [
-			victim.getHeadArmorItem().getEnchantments(),
-			victim.getChestArmorItem().getEnchantments(),
-			victim.getLegsArmorItem().getEnchantments(),
-			victim.getFeetArmorItem().getEnchantments()
-		];
-		for (let map of enchantments) {
-			for (const enchId of Object.keys(map)) {
-				let enchLevel = map[enchId];
-				switch (enchId) {
-					case 'kubejs:curse_of_anti_entropy': {
-						if (global.ifRandomChance(12.5)) {
-							victim.setSecondsOnFire(7);
-							attacker.setTicksFrozen(7 * 20)
+	if (victim instanceof $Player) {
+		if (attacker && attacker instanceof $LivingEntity) {
+			/** @type {$Map<string, integer>[]} */
+			let enchantments = [
+				victim.getHeadArmorItem().getEnchantments(),
+				victim.getChestArmorItem().getEnchantments(),
+				victim.getLegsArmorItem().getEnchantments(),
+				victim.getFeetArmorItem().getEnchantments()
+			];
+			for (let map of enchantments) {
+				for (const enchId of Object.keys(map)) {
+					let enchLevel = map[enchId];
+					switch (enchId) {
+						case 'kubejs:curse_of_anti_entropy': {
+							if (global.ifRandomChance(12.5)) {
+								victim.setSecondsOnFire(7);
+								attacker.setTicksFrozen(7 * 20)
+							}
+							break;
 						}
-						break;
 					}
 				}
 			}
-		}
 
-		// Accessories
-		if (victim.isCuriosEquipped('kubejs:wither_rose_ring')) {
-			attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 0.6);
-			attacker.addEffect(global.newMobEffectInstance('wither', global.duration('0:04'), 1));
-		}
-		else if (victim.isCuriosEquipped('kubejs:rose_ring')) {
-			attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 0.35);
-		}
+			// Accessories
+			if (victim.isCuriosEquipped('kubejs:wither_rose_ring')) {
+				attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 0.6);
+				attacker.addEffect(global.newMobEffectInstance('wither', global.duration('0:04'), 1));
+			}
+			else if (victim.isCuriosEquipped('kubejs:rose_ring')) {
+				attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 0.35);
+			}
 
-		if (victim.isCuriosEquipped('kubejs:mana_cuffs')) {
-			victim.adjcore$restoreMana(event.getAmount());
+			if (victim.isCuriosEquipped('kubejs:mana_cuffs')) {
+				victim.adjcore$restoreMana(event.getAmount());
+			}
 		}
-
-		if (victim.hasEffect('kubejs:thorns')) {
-			attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 1.5);
+		// This section goes off if there is no attacker
+		if (source.is(DamageIndicatorTags.IS_FIRE) && victim.hasCurioEquipped('kubejs:shield_of_fire') || victim.hasCurioEquipped('kubejs:palladium_hero_aegis')) {
+			event.setAmount(0);
 		}
 	}
 
-	if (event.getSource().getType() === 'wither') {
+	if (source.getType() === 'wither') {
 		global.getEntitiesInRadius(victim.level, victim.x, victim.y, victim.z, 32).forEach(entity => {
 			if (entity instanceof $Player && entity.isCuriosEquipped('kubejs:withering_necklace')) {
 				entity.adjcore$heal(Math.ceil(event.getAmount() * 0.33), victim, 'withering_necklace', true, false);

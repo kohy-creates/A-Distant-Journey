@@ -3,6 +3,10 @@
 		{
 			"id": "/create\/potions/",
 			"category": "create:spout_filling"
+		},
+		{
+			"id": "/create\/potions/",
+			"category": "create:draining"
 		}
 	]
 }

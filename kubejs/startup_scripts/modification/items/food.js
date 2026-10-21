@@ -195,13 +195,6 @@ ItemEvents.modification(event => {
 		})
 	});
 
-	event.modify('minecraft:milk_bucket', item => {
-		item.setFoodProperties(food => {
-			food.hunger(1);
-			food.saturation(1);
-		})
-	});
-
 	event.modify('minecraft:glistering_melon_slice', item => {
 		item.setFoodProperties(food => {
 			food.effect('adjcore:lesser_instant_health', 1, 0, 0.3);

@@ -604,7 +604,7 @@ ClientEvents.lang('en_us', event => {
 		'rediscovered:purple_arrow': 'Featherlight Arrow',
 		'artifacts:everlasting_beef': 'Eternal Beef',
 		'mythicmetals:hallowed_ingot': 'Hallowed Alloy Ingot',
-		'terra_curio:cobalt_shield': 'Steel Shield',
+		'terra_curio:cobalt_shield': 'Heavy Steel Shield',
 
 		'functionalstorage:copper_upgrade': 'Drawer Upgrade (Capacity)',
 		'functionalstorage:collector_upgrade': 'Drawer Upgrade (Collector)',
@@ -689,6 +689,19 @@ ClientEvents.lang('en_us', event => {
 		// 'mythicmetals:unobtainium_smithing_template': '<unobtainium>Smithing Template</unobtainium>', // THIS RENAMES EVERY SMITHING TEMPLATE!!
 
 		'born_in_chaos_v1:corpse_maggot': 'Maggot',
+
+		'kubejs:gold_minecraft_redstone_ring': 'Redstone Ring',
+		'kubejs:gold_minecraft_lapis_lazuli_ring': 'Lapis Ring',
+		'kubejs:gold_minecraft_emerald_ring': 'Emerald Ring',
+		'kubejs:gold_minecraft_diamond_ring': 'Diamond Ring',
+		'kubejs:gold_rediscovered_ruby_ring': 'Ruby Ring',
+		'kubejs:gold_minecraft_amethyst_ring': 'Amethyst Ring',
+		'kubejs:gold_minecraft_ender_pearl_ring': 'Ender Pearl Ring',
+		'kubejs:gold_minecraft_nether_star_ring': 'Ring of Might',
+
+		'mcdw:crossbow_auto_crossbow': 'Tactical Crossbow',
+		'mcdw:crossbow_corrupted_crossbow': '<unobtainium>Corrupted Crossbow</unobtainium>',
+
 	};
 
 	const entityRenames = {

@@ -2,7 +2,7 @@ const $TieredItem = Java.loadClass('net.minecraft.world.item.TieredItem');
 const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 const $SwordItem = Java.loadClass('net.minecraft.world.item.SwordItem');
 const $AttributeModifier = Java.loadClass("net.minecraft.world.entity.ai.attributes.AttributeModifier");
-// const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes");
+const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes");
 const $ItemAttributeModifierEvent = Java.loadClass('net.minecraftforge.event.ItemAttributeModifierEvent');
 const $PerkUtil = Java.loadClass("com.hollingsworth.arsnouveau.api.util.PerkUtil");
 
@@ -43,7 +43,7 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 			event.addModifier("kubejs:mining_speed", new $AttributeModifier('80091653-9902-44f9-95a7-d627610856c0', "Mining Speed", speed, 'addition'))
 		}
 
-		let attackDamageMods = event.getOriginalModifiers().get('generic.attack_damage');
+		let attackDamageMods = event.getOriginalModifiers().get($Attributes.ATTACK_DAMAGE); // string id doesn't work
 		if (attackDamageMods && !attackDamageMods.isEmpty()) {
 			let baseDamage = 0
 			attackDamageMods.forEach(mod => baseDamage += mod.getAmount())
@@ -51,7 +51,7 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', Math.round(baseDamage * 3.5), 'addition'))
 		}
 
-		let attackSpeedMods = event.getOriginalModifiers().get('generic.attack_speed');
+		let attackSpeedMods = event.getOriginalModifiers().get($Attributes.ATTACK_SPEED); // same as above
 		if (attackSpeedMods && !attackSpeedMods.isEmpty()) {
 			let baseSpeed = 0
 			attackSpeedMods.forEach(mod => baseSpeed += mod.getAmount())

@@ -1,4 +1,4 @@
-//priority: 1000
+//priority: 1001
 /**
  * Constants for classes I know are going to be (or might be at some point) shared between files
  * It's easier to keep track of them while they are in one place
@@ -7,7 +7,7 @@ const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
 const $Registries = Java.loadClass("net.minecraft.core.registries.Registries");
 const $LivingHealEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHealEvent");
 const $MobEffectEventApplicable = Java.loadClass('net.minecraftforge.event.entity.living.MobEffectEvent$Applicable');
-const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
+const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity');
 const $Attributes = Java.loadClass("net.minecraft.world.entity.ai.attributes.Attributes")
 const $LivingHurtEvent = Java.loadClass("net.minecraftforge.event.entity.living.LivingHurtEvent")
 const $AbstractArrow = Java.loadClass('net.minecraft.world.entity.projectile.AbstractArrow');
@@ -30,3 +30,7 @@ const $AgeableMob = Java.loadClass('net.minecraft.world.entity.AgeableMob');
 
 const $PotionBrewEvent$Pre = Java.loadClass('net.minecraftforge.event.brewing.PotionBrewEvent$Pre');
 const $PotionBrewEvent$Post= Java.loadClass('net.minecraftforge.event.brewing.PotionBrewEvent$Post');
+
+const $EffectType = Java.loadClass('vazkii.botania.network.EffectType');
+const $XplatAbstractions = Java.loadClass('vazkii.botania.xplat.XplatAbstractions');
+const $BotaniaEffectPacket = Java.loadClass('vazkii.botania.network.clientbound.BotaniaEffectPacket');

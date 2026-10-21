@@ -150,7 +150,27 @@ global.itemEffects = {
 				ctx.modify('generic.armor', '2db7c219-f7bd-4fa9-a98a-cd660b9e9a56', amount, 'addition');
 			}
 		}
-	}
+	},
+	palladiumHeroAegis: {
+		/**
+		 * @param {Internal.SlotContext} slotContext
+		 * @param {Internal.ItemStack} stack
+		 */
+		tick: function (slotContext, stack) {
+			let player = slotContext.wearer;
+			if (
+				player instanceof $Player
+				&& !player.getLevel().isClientSide()
+				&& player.getLevel().time % 200 == 0
+			) {
+				let team = player.getTeam();
+				for (let onlinePlayer of player.getLevel().getPlayers().toArray()) {
+					if (onlinePlayer.getTeam() != team) continue;
+					onlinePlayer.addEffect(global.newMobEffectInstance('terra_curio:paladins_shield', '0:30', onlinePlayer == player ? 1 : 0));
+				}
+			}
+		}
+	},
 };
 
 global.rings = {
@@ -555,6 +575,18 @@ StartupEvents.registry('item', registry => {
 	registry.create('shield_of_fire')
 		.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
+				.addAttribute(
+					'generic.armor',
+					'e32b960b-919a-42f8-86fb-70cac2687a3e',
+					2,
+					'addition'
+				)
+				.addAttribute(
+					'generic.knockback_resistance',
+					'e32b960b-919a-42f8-86fb-70cac2687a3e',
+					0.6,
+					'addition'
+				)
 		)
 		.unstackable()
 		.tooltip(Text.gray('Defense increased by 4 while on fire'))
@@ -565,9 +597,23 @@ StartupEvents.registry('item', registry => {
 	registry.create('palladium_hero_aegis')
 		.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
+				.curioTick((slotContext, stack) => global.itemEffects.palladiumHeroAegis.tick(slotContext, stack))
+				.addAttribute(
+					'generic.armor',
+					'e32b960b-919a-42f8-86fb-70cac2687a3e',
+					6,
+					'addition'
+				)
+				.addAttribute(
+					'generic.knockback_resistance',
+					'e32b960b-919a-42f8-86fb-70cac2687a3e',
+					0.8,
+					'addition'
+				)
 		)
 		.unstackable()
-		.tooltip(Text.gray('Defense increased by 4 while on fire'))
+		.tooltip(Text.gray('Defense increased by 6 while on fire'))
+		.tooltip(Text.gray('Absorbs 25% of damage done to players on your team while above 25% health'))
 		.tooltip(Text.gray('Grants immunity to fire'))
 		.tag('curios:accessory')
 		.rarity('epic');
@@ -586,7 +632,7 @@ StartupEvents.registry('item', registry => {
 				.addAttribute(
 					'generic.luck',
 					'05c70914-fe84-420d-9a2e-dbefeb6dc4a4',
-					1,
+					2,
 					'addition'
 				)
 				.addAttribute(

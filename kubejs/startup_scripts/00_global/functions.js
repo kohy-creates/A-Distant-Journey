@@ -73,7 +73,7 @@ global.getEntitiesInRadius = function (world, x, y, z, radius) {
 		x - radius, y - radius, z - radius,
 		x + radius, y + radius, z + radius
 	)).forEach((entity) => {
-		if (entity.distanceToSqr(new Vec3d(x, y, z)) <= radius) {
+		if (entity.distanceToSqr(new Vec3d(x, y, z)) <= radius * radius) {
 			entities.push(entity);
 		}
 	});
@@ -543,4 +543,21 @@ global.normalizeResourceLocation = function (id) {
 		return 'minecraft:' + id;
 	}
 	return id;
+};
+
+/**
+ * Shortcut for all the damage shenanigans
+ * @param {Internal.LivingEntity_} attacker 
+ * @param {Internal.LivingEntity_} target 
+ * @param {string} damageSource 
+ * @param {number} amount 
+ * @param {Internal.Projectile_} projectile 
+ */
+global.attack = function (attacker, target, damageSource, amount, projectile) {
+	let source = global.getDamageSource(attacker.level, damageSource, global.getOrDefault(projectile, null), global.getOrDefault(attacker, null));
+	target.attack(source, amount);
+};
+
+globla.isHostile = function (entity) {
+	return entity instanceof $Enemy;
 };

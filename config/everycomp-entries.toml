@@ -944,7 +944,6 @@
 
 		[entries.wood_type.rediscovered]
 			chair = true
-			table = true
 
 		[entries.wood_type.functionalstorage]
 			1 = true

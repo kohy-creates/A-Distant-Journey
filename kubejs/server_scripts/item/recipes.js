@@ -7297,19 +7297,6 @@ ServerEvents.recipes((event) => {
 	event.recipes.botania.mana_infusion('kubejs:decayed_clover', 'aether_redux:golden_clover').mana(150000).id('adj:decayed_clover');
 
 	event.shaped(
-		'kubejs:rose_ring',
-		[
-			' IR',
-			'I I',
-			' I '
-		],
-		{
-			R: 'rose_bush',
-			I: 'iron_ingot'
-		}
-	).id('adj:rose_ring');
-
-	event.shaped(
 		'terra_curio:ancient_chisel',
 		[
 			'  P',
@@ -7569,6 +7556,56 @@ ServerEvents.recipes((event) => {
 		'honeycomb',
 		'terra_curio:honey_comb'
 	).id('adj:enchanted_comb')
+
+	function ringRecipe(material, gem, output) {
+		event.shaped(
+			output,
+			[
+				' MG',
+				'M M',
+				' M '
+			],
+			{
+				G: gem,
+				M: material
+			}
+		).id(`adj:rings/${flattenedID(output)}`);
+	}
+
+	ringRecipe('iron_ingot', 'rose_bush', 'kubejs:rose_ring')
+
+	ringRecipe('gold_ingot', 'redstone', 'kubejs:gold_minecraft_redstone_ring');
+	ringRecipe('gold_ingot', 'lapis_lazuli', 'kubejs:gold_minecraft_lapis_lazuli_ring');
+	ringRecipe('gold_ingot', 'emerald', 'kubejs:gold_minecraft_emerald_ring');
+	ringRecipe('gold_ingot', 'diamond', 'kubejs:gold_minecraft_diamond_ring');
+	ringRecipe('gold_ingot', 'rediscovered:ruby', 'kubejs:gold_rediscovered_ruby_ring');
+	ringRecipe('gold_ingot', 'amethyst_shard', 'kubejs:gold_minecraft_amethyst_ring');
+	ringRecipe('gold_ingot', 'ender_pearl', 'kubejs:gold_minecraft_ender_pearl_ring');
+
+	workshopRecipe([
+		'kubejs:gold_minecraft_redstone_ring',
+		'kubejs:gold_minecraft_lapis_lazuli_ring',
+		'kubejs:gold_minecraft_emerald_ring',
+		'kubejs:gold_minecraft_diamond_ring',
+		'kubejs:gold_rediscovered_ruby_ring',
+		'kubejs:gold_minecraft_amethyst_ring',
+		'kubejs:gold_minecraft_ender_pearl_ring'
+	], 'kubejs:gold_minecraft_nether_star_ring');
+
+	workshopRecipe([
+		'kubejs:ring_of_fire',
+		'terra_curio:cobalt_shield'
+	], 'kubejs:shield_of_fire');
+
+	workshopRecipe([
+		'kubejs:shield_of_fire',
+		'terra_curio:paladin_shield',
+	], 'kubejs:palladium_hero_aegis');
+
+	workshopRecipe([
+		Item.of('potion', { Potion: 'adjcore:mana' }),
+		'kubejs:natures_gift'
+	], 'kubejs:mana_flower');
 
 	// Construction Wands
 	event.recipes.create.mechanical_crafting(

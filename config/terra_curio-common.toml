@@ -164,7 +164,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 		#Range: 0.0 ~ 1.0
 		knockbackResistance = 0.8
 		#Range: 0 ~ 1024
-		armor = 6
+		armor = 4
 
 	[Attributes."Avenger Emblem"]
 		#Range: 0.0 ~ 10.0
@@ -206,7 +206,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 		#Range: 0.0 ~ 1.0
 		knockbackResistance = 0.6
 		#Range: 0 ~ 1024
-		armor = 6
+		armor = 1
 
 	[Attributes."Destroyer Emblem"]
 		#Range: 0.0 ~ 10.0
@@ -302,7 +302,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 		#Range: 0.0 ~ 1.0
 		knockbackResistance = 0.8
 		#Range: 0 ~ 1024
-		armor = 6
+		armor = 2
 
 	[Attributes."Paladins Shield"]
 		#Range: 0 ~ 1024
@@ -336,9 +336,9 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Recon Scope"]
 		#Range: 0.0 ~ 1.0
-		criticalChance = 0.25
+		criticalChance = 0.15
 		#Range: 0.0 ~ 10.0
-		rangedDamage = 0.15
+		rangedDamage = 0.1
 		#Range: -10000 ~ 10000
 		aggro = 0
 
@@ -358,7 +358,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Sniper Scope"]
 		#Range: 0.0 ~ 1.0
-		criticalChance = 0.2
+		criticalChance = 0.1
 		#Range: 0.0 ~ 10.0
 		rangedDamage = 0.1
 
@@ -422,7 +422,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Angler Earring"]
 		#Range: -1024.0 ~ 1024.0
-		luck = 1.0
+		luck = 3.0
 
 	[Attributes.Aglet]
 		#Range: 0.0 ~ 10.0
@@ -430,7 +430,7 @@ rareCreatures = ["minecraft:panda", "minecraft:skeleton_horse", "minecraft:allay
 
 	[Attributes."Anklet of the Wind"]
 		#Range: 0.0 ~ 10.0
-		movementSpeed = 0.06
+		movementSpeed = 0.1
 
 	[Attributes.Flipper]
 		#Range: 0.0 ~ 10.0

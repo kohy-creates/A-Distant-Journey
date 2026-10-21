@@ -12,6 +12,7 @@ const $CrossbowItem = Java.loadClass("net.minecraft.world.item.CrossbowItem");
 const $BowItem = Java.loadClass("net.minecraft.world.item.BowItem");
 const $BlockTags = Java.loadClass('net.minecraft.tags.BlockTags')
 const $Player = Java.loadClass('net.minecraft.world.entity.player.Player');
+const $Enemy = Java.loadClass('net.minecraft.world.entity.monster.Enemy');
 
 const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
 const $ForgeRegistries$Keys = Java.loadClass('net.minecraftforge.registries.ForgeRegistries$Keys');
