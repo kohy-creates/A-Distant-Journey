@@ -236,3 +236,42 @@ global.getLootingLevel = function (player) {
 global.hasTag = function (entity, tag) {
 	return entity.tags.toArray().includes(tag);
 };
+
+/**
+ * Chains lightning from the initial target to other entities.
+ * @param {Internal.LivingEntity_} attacker 
+ * @param {Internal.LivingEntity_} initialTarget 
+ * @param {function(Internal.LivingEntity_): void} executeAsTarget 
+ * @param {number} maxJumps 
+ * @param {number} range 
+ */
+global.chainLightning = function (attacker, initialTarget, executeAsTarget, maxJumps, range) {
+	let alreadyTargetedEntities = [];
+
+	let prevTarget = initialTarget;
+	for (let i = 0; i < maxJumps; i++) {
+
+		/** @type {Internal.Entity_[]} */
+		let entities = global.getEntitiesInRadius(prevTarget.getLevel(), prevTarget.x, prevTarget.y, prevTarget.z, range);
+		if (entities.length == 0) break;
+
+		let targets = entities.filter(e => e instanceof $LivingEntity && global.isHostile(e) && e.isAlive() && !alreadyTargetedEntities.includes(e.getId()));
+		if (targets.length == 0) break;
+
+		/** @type {Internal.LivingEntity_} */
+		let target = targets[initialTarget.level.random.nextInt(targets.length)];
+		executeAsTarget(target);
+		alreadyTargetedEntities.push(target.getId());
+		prevTarget = target;
+	};
+
+	if (alreadyTargetedEntities.length > 0) {
+		$XplatAbstractions.INSTANCE.sendToTracking(
+			attacker, new $BotaniaEffectPacket(
+				$EffectType.THUNDERCALLER_EFFECT,
+				initialTarget.x, initialTarget.y + initialTarget.bbHeight / 2, initialTarget.z,
+				alreadyTargetedEntities
+			)
+		);
+	}
+};

@@ -33,7 +33,8 @@ global.bowDamage = {
 	'mcdw:crossbow_harp_crossbow': 23,
 	'mcdw:crossbow_lightning_harp_crossbow': 36,
 	'mcdw:crossbow_auto_crossbow': [70, 0.14, 5.0],
-	'mcdw:crossbow_veiled_crossbow': [122, global.baseCritChance, 5.0],
+	'mcdw:crossbow_shadow_crossbow': [50, 0.1, 0.2],
+	'mcdw:crossbow_veiled_crossbow': [122, 0.14, 5.0],
 	'mcdw:crossbow_corrupted_crossbow': [40, 0],
 	'mcdw:crossbow_soul_crossbow': 21,
 	'mcdw:crossbow_feral_soul_crossbow': 21,
@@ -61,6 +62,7 @@ global.bowCooldowns = {
 	'mcdw:crossbow_firebolt_thrower': 7,
 	'mcdw:crossbow_heavy_crossbow': 7,
 	'mcdw:crossbow_slayer_crossbow': 14,
+	'mcdw:crossbow_voidcaller_crossbow': 12
 };
 
 global.arrowDamage = {

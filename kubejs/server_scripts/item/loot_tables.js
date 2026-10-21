@@ -670,13 +670,13 @@ LootJS.modifiers((event) => {
 			pool.rolls(1);
 			pool.addLoot(LootEntry.of(mcdw('sword', 'obsidian_claymore')).withChance(0.15))
 		})
+		// .pool(pool => {
+		// 	pool.rolls(1);
+		// 	pool.addLoot(LootEntry.of(mcdw('bow', 'call_of_the_void')).withChance(0.15))
+		// })
 		.pool(pool => {
 			pool.rolls(1);
-			pool.addLoot(LootEntry.of(mcdw('bow', 'call_of_the_void')).withChance(0.15))
-		})
-		.pool(pool => {
-			pool.rolls(1);
-			pool.addLoot(LootEntry.of(mcdw('crossbow', 'veiled_crossbow')).withChance(0.15))
+			pool.addLoot(LootEntry.of(mcdw('crossbow', 'shadow_crossbow')).withChance(0.15))
 		});
 
 	event.addLootTableModifier(/^(?=.*\bvillage\b)(?=.*\bchest\b).*/)

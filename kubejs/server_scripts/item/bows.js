@@ -140,7 +140,7 @@ const Bows = {
 		level.playSound(null, x, y, z, 'entity.generic.explode', 'players', 0.6, global.getRandomNumber(1, 1.2));
 		global.getEntitiesInRadius(level, x, y, z, radius).forEach(e => {
 			if (e == arrow.getOwner()) return;
-			global.attack(arrow.getOwner(), e, 'player_explosion', damage);
+			global.hurt(arrow.getOwner(), e, 'player_explosion', damage);
 		});
 		if (shouldRemove) {
 			arrow.kill();
@@ -340,7 +340,7 @@ EntityEvents.spawned(event => {
 					}
 					case 'mcdw:crossbow_feral_soul_crossbow':
 					case 'mcdw:crossbow_soul_crossbow': {
-						if (shooter.adjcore$tryCastSpell(Math.ceil(global.getMaxMana(shooter) * 0.25))) {
+						if (shooter.adjcore$tryCastSpell(Math.ceil(global.getMaxMana(shooter) * 0.2))) {
 							damage *= 1.25;
 							shooter.level.playSound(
 								null,
@@ -356,6 +356,23 @@ EntityEvents.spawned(event => {
 							);
 						}
 						break;
+					}
+					case 'mcdw:crossbow_voidcaller_crossbow': {
+						if (shooter.adjcore$tryCastSpell(Math.ceil(global.getMaxMana(shooter) * 0.2))) {
+							arrowEntity.addTag('adj.voidcaller_arrow');
+							shooter.level.playSound(
+								null,
+								shooter.x, shooter.y + shooter.eyeHeight * 0.9, shooter.z,
+								'netherexp:block.suspicious_soul_sand.break', 'players',
+								1, 0.9
+							);
+							shooter.level.playSound(
+								null,
+								shooter.x, shooter.y + shooter.eyeHeight * 0.9, shooter.z,
+								'adj:enchantment.void_strike.activate', 'players',
+								0.5, 1.34
+							);
+						}
 					}
 				}
 			}
@@ -414,8 +431,22 @@ ADJServerEvents.adjArrowHurt(event => {
 					}, 4, 10);
 					break;
 				}
-				case 'mcdw:crossbow_auto_crossbow':
-				case 'mcdw:crossbow_veiled_crossbow': {
+				case 'mcdw:crossbow_veiled_crossbow':
+				case 'mcdw:crossbow_shadow_crossbow': {
+					if (damage >= entity.getHealth()) {
+						shooter.addEffect(global.newMobEffectInstance('adjcore:shadowmelted', '0:14', 0, false, false, true));
+					}
+					if (weaponId === 'mcdw:crossbow_veiled_crossbow' && isHeadshot) {
+						damage *= 1.2;
+						shooter.playNotifySound(
+							'block.anvil.place',
+							'players',
+							0.8, 0.6
+						);
+					}
+					break;
+				}
+				case 'mcdw:crossbow_auto_crossbow': {
 					if (isHeadshot) {
 						damage *= 1.2;
 						shooter.playNotifySound(
@@ -435,6 +466,47 @@ ADJServerEvents.adjArrowHurt(event => {
 							0.5, 1.2
 						)
 					}
+					break;
+				}
+				case 'mcdw:crossbow_voidcaller_crossbow': {
+					if (!global.hasTag(arrow, 'adj.voidcaller_arrow')) return;
+					let phoenixLoop = (e, dmg, loopCount, maxLoops) => {
+						if (loopCount > maxLoops) return;
+						if (e.hasEffect('kubejs:voidcaller_mark')) {
+							let x = e.x;
+							let y = e.y + e.bbHeight / 2;
+							let z = e.z;
+							e.removeEffect('kubejs:voidcaller_mark');
+							shooter.level.spawnParticles(
+								'sonic_boom',
+								true,
+								x, y, z,
+								0, 0, 0,
+								1, 0
+							);
+							shooter.server.scheduleInTicks(11, () => {
+								shooter.level.playSound(null, entity.x, entity.y + entity.bbHeight / 2, entity.z, 'minecraft:block.respawn_anchor.deplete', 'players', 1, global.getRandomNumber(1.3, 1.4));
+								global.getEntitiesInRadius(shooter.level, x, y, z, 4).forEach(e2 => {
+									if (e2 != shooter && e2 instanceof $LivingEntity) {
+										global.hurt(shooter, e2, 'magic', dmg);
+										if (e2 != e) phoenixLoop(e2, dmg * 0.95, loopCount + 1, maxLoops)
+									}
+								});
+								shooter.level.spawnParticles(
+									'explosiveenhancement:sparks 0.5',
+									true,
+									x, y, z,
+									0, 0, 0,
+									2, 0
+								);
+							});
+						}
+						else {
+							e.addEffect(global.newMobEffectInstance('kubejs:voidcaller_mark', '0:10', 0, false, true, false));
+						}
+					};
+					phoenixLoop(entity, damage * 0.95, 1, 3);
+					break;
 				}
 				default: {
 					Bows.handleHitEffect(weaponId, arrow, entity.x, entity.y + entity.bbHeight / 2, entity.z, damage, entity);

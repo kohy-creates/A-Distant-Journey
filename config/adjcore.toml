@@ -49,6 +49,9 @@ HARDCORE_RESPAWN_RADIUS = 5000
 	#Percentage of damage relative to damage dealth reflected back at the attacker if victim has Thorns potion effect
 	#Range: 0.0 ~ 5.0
 	THORNS_DAMAGE_MULTIPLEIR = 1.0
+	#Extra damage dealt while under the effect of Shadowmelted
+	#Range: 0.0 ~ 1000.0
+	SHADOWMELTED_DAMAGE = 2.5
 
 #Campfires
 [campfire]

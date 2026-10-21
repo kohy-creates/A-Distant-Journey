@@ -73,7 +73,7 @@ global.getEntitiesInRadius = function (world, x, y, z, radius) {
 		x - radius, y - radius, z - radius,
 		x + radius, y + radius, z + radius
 	)).forEach((entity) => {
-		if (entity.distanceToSqr(new Vec3d(x, y, z)) <= radius * radius) {
+		if (entity.distanceToSqr(new Vec3d(x, y, z)) <= (radius * radius)) {
 			entities.push(entity);
 		}
 	});
@@ -553,7 +553,7 @@ global.normalizeResourceLocation = function (id) {
  * @param {number} amount 
  * @param {Internal.Projectile_} projectile 
  */
-global.attack = function (attacker, target, damageSource, amount, projectile) {
+global.hurt = function (attacker, target, damageSource, amount, projectile) {
 	let source = global.getDamageSource(attacker.level, damageSource, global.getOrDefault(projectile, null), global.getOrDefault(attacker, null));
 	target.attack(source, amount);
 };

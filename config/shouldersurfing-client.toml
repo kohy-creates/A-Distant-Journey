@@ -33,7 +33,7 @@
 		offset_y = 0.0
 		#Third person camera z-offset.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		offset_z = 2.4749999999999917
+		offset_z = 2.4499999999999917
 		#Whether to dynamically adjust camera offsets depending on space constraints.
 		dynamic_offsets = true
 		#Size of the offset adjustment per step.
@@ -229,7 +229,7 @@
 [perspective]
 	#The default perspective when you load the game.
 	#Allowed Values: FIRST_PERSON, THIRD_PERSON_BACK, THIRD_PERSON_FRONT, SHOULDER_SURFING
-	default_perspective = "SHOULDER_SURFING"
+	default_perspective = "FIRST_PERSON"
 	#Whether to remember the last perspective used.
 	remember_last_perspective = true
 	#Whether to replace the default third person perspective.

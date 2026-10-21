@@ -12,7 +12,7 @@
 		"iframes": 10
 	},
 	"minecraft:mob_attack": {
-		"iframes": 0,
+		"iframes": 2,
 		"overrides": {
 			"minecraft:magma_cube": 10,
 			"minecraft:slime": 10,

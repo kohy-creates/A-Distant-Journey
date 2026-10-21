@@ -1,44 +1,103 @@
+#Where entities without follower render data take their render settings from, LOCAL uses the current local values and CONFIG_DEFAULT uses the config defaults regardless of local changes
+#Allowed Values: LOCAL, CONFIG_DEFAULT
+entityDataFallback = "LOCAL"
 
-#client config
-[Config]
-	#Display scale
-	#Range: 0.1 ~ 10.0
-	scale = 0.7
-	#Float distance (blocks)
-	#Range: 0.0 ~ 100.0
-	floatDistance = 0.1
-	#Time to complete a float cycle (tick)
-	#Range: 1.0 ~ 100.0
-	time = 15.0
-	#Front & back offset
-	#Range: -100.0 ~ 100.0
-	frontBackOffset = -0.4
-	#Vertical offset
-	#Range: -100.0 ~ 100.0
-	verticalOffset = 0.0
-	#Left & right offset
-	#Range: -100.0 ~ 100.0
-	leftRightOffset = 0.8
-	#Enable drag system for position lag effect
-	dragEnabled = true
-	#Drag strength factor
-	#Range: 0.01 ~ 1.0
-	dragStrength = 0.2
-	#Enable rotation drag system for head rotation lag effect
-	rotationDragEnabled = true
-	#Rotation drag smoothness factor
-	#Range: 0.01 ~ 1.0
-	rotationDragSmoothness = 0.2
-	#Use wrapDegrees for angle wrap-around handling (shortest path rotation)
-	rotationDragUseWrapDegrees = false
-	#Allow rotation drag to affect burger model orientation (Y-axis rotation)
-	rotationDragAffectOrientation = false
-	#Enable spring physics system for head rotation smoothing
-	springEnabled = false
-	#Spring stiffness coefficient
+#How multiple followers worn by the same wearer are arranged
+[MultipleFollowers]
+	#Independent scatters them loosely around the configured position, formation lines them up in a tail where each follows the one ahead
+	#Allowed Values: INDEPENDENT, FORMATION
+	followerRenderMode = "INDEPENDENT"
+	#Render only one follower of each kind when the same follower is worn in several slots
+	deduplicateRendering = true
+	#Give each follower its own float rhythm and period instead of floating in sync
+	independentFloat = true
+
+	#Settings for independent mode, where each follower drifts on its own
+	[MultipleFollowers.IndependentMode]
+		#Minimum blocks between followers
+		#Range: 0.5 ~ 4.0
+		minSpacing = 0.5
+		#Maximum blocks between followers
+		#Range: 0.5 ~ 4.0
+		maxSpacing = 0.8
+		#Maximum horizontal distance in blocks a follower may drift from the wearer, independent mode only
+		#Range: 0.5 ~ 8.0
+		maxRadius = 2.0
+
+	#Settings for formation mode, where followers line up in a tail
+	[MultipleFollowers.FormationMode]
+		#Blocks between each follower and the one ahead of it
+		#Range: 0.5 ~ 4.0
+		formationSpacing = 0.8
+		#Extra blocks a follower may be pulled beyond the formation spacing from the one ahead of it, 0 keeps it within the spacing; to stay out of the wearer's body it may be pushed up to about one wearer radius further
+		#Range: 0.0 ~ 5.0
+		formationMaxLagDistance = 0.5
+		#Where each follower in the tail looks: along the wearer's view, or at the follower ahead of it
+		#Allowed Values: WEARER_VIEW, FRONT_FOLLOWER
+		formationGazeTarget = "FRONT_FOLLOWER"
+
+#First person display
+[FirstPersonDisplay]
+	#Show your own followers in first person
+	showInFirstPerson = true
+
+#Size and position of the follower relative to the wearer's eyes; offsets follow the orbit direction set by spring motion or rotation, not the follower's facing
+[ScaleAndOffset]
+	#Multiplied by the wearer's own scale
 	#Range: 0.1 ~ 2.0
-	springStiffness = 0.9
-	#Spring damping coefficient
-	#Range: 0.1 ~ 0.99
-	springDamping = 0.7
+	renderScale = 0.5
+	#Blocks to move forward along the orbit direction, negative moves backward
+	#Range: -5.0 ~ 5.0
+	frontBackOffset = -0.4
+	#Blocks to move to the right of the orbit direction, negative moves left
+	#Range: -5.0 ~ 5.0
+	leftRightOffset = 0.8
+	#Blocks to move up from eye height, negative moves down
+	#Range: -5.0 ~ 5.0
+	verticalOffset = 0.5
+	#Extra blocks to move up while sneaking, negative moves down
+	#Range: -2.0 ~ 2.0
+	crouchOffset = -0.5
+
+#Up and down floating motion
+[FloatMotion]
+	#Height in blocks between the highest and lowest point of the float
+	#Range: 0.0 ~ 5.0
+	floatDistance = 0.1
+	#Ticks for one full float cycle
+	#Range: 4.0 ~ 400.0
+	floatCycleDuration = 60.0
+
+#Trailing behind the wearer while moving
+[FollowDelay]
+	#How quickly the follower catches up, higher values give a shorter trail, 1.0 follows instantly
+	#Range: 0.01 ~ 1.0
+	followSpeed = 0.2
+	#Maximum distance in blocks the follower trails behind, 0 disables trailing
+	#Range: 0.0 ~ 5.0
+	maxLagDistance = 3.0
+
+#How the follower orbits and faces when the wearer turns or looks around
+[TurningAndFacing]
+	#How quickly the orbit catches up with the head, higher is faster, 1.0 follows instantly
+	#Range: 0.01 ~ 1.0
+	rotationFollowSpeed = 0.2
+	#Catch up along the shortest arc instead of following every full turn
+	useShortestArc = false
+	#How quickly the facing catches up with its target, higher is faster, 1.0 follows instantly
+	#Range: 0.01 ~ 1.0
+	orientationFollowSpeed = 0.5
+	#Aim the follower worn by a player at that player's own crosshair hit point, using the setting they synced to the server; followers on non-player wearers use this local setting
+	gazeAtViewTarget = true
+
+	#Spring motion for orbiting, overrides rotation when enabled
+	[TurningAndFacing.SpringMotion]
+		#Orbit with spring motion that can overshoot and bounce back
+		springMotionEnabled = false
+		#Spring stiffness, higher is snappier
+		#Range: 0.1 ~ 2.0
+		springStiffness = 0.9
+		#Fraction of spring speed kept each tick, lower settles faster
+		#Range: 0.1 ~ 0.99
+		springDamping = 0.7
 
