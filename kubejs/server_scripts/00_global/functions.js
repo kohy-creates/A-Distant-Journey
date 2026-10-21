@@ -228,14 +228,11 @@ global.getLootingLevel = function (player) {
 };
 
 /**
- * Returns the damage of the specified arrow.
- * @param {Internal.AbstractArrow_} arrow 
- * @param {"arrow"|"bow"} specific 
- * @returns 
+ * Checks if an entity has a specific tag.
+ * @param {Internal.Entity_} entity 
+ * @param {string} tag 
+ * @returns {boolean}
  */
-global.getArrowDamage = function (arrow, specific) {
-	if (specific) {
-		return arrow.persistentData[`${specific}Damage`];
-	}
-	return arrow.persistentData.arrowDamage + arrow.persistentData.bowDamage;
+global.hasTag = function (entity, tag) {
+	return entity.tags.toArray().includes(tag);
 };

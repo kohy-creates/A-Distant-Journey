@@ -15,7 +15,7 @@ EntityEvents.spawned(event => {
 		'cataclysm:the_harbinger'
 	];
 
-	if (global.bossMobs.includes(entity.getType()) && !bossesSkipMessages.includes(entity.getType()) && !entity.tags.toArray().includes('adj.announced_spawn')) {
+	if (global.bossMobs.includes(entity.getType()) && !bossesSkipMessages.includes(entity.getType()) && !global.hasTag(entity, 'adj.announced_spawn')) {
 		global.broadcast(server, global.announcementMsg(`${entity.getDisplayName().getString()} has awoken!`, global.messageColors.bossSpawned, true));
 		entity.addTag('adj.announced_spawn');
 	}

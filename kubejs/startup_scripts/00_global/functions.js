@@ -558,6 +558,10 @@ global.attack = function (attacker, target, damageSource, amount, projectile) {
 	target.attack(source, amount);
 };
 
-globla.isHostile = function (entity) {
+global.isHostile = function (entity) {
 	return entity instanceof $Enemy;
+};
+
+global.getMaxMana = function (player) {
+	return player.getAttribute('ars_nouveau:ars_nouveau.perk.max_mana').getValue();
 };

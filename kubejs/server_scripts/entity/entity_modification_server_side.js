@@ -151,7 +151,8 @@ const EntityModifications = {
 				case 'minecraft:piglin': {
 					entity.setItemSlot('mainhand', global.weightedRandom({
 						'minecraft:golden_sword': 8,
-						'mcdw:crossbow_pride_of_the_piglins': 8,
+						'mcdw:crossbow_pride_of_the_piglins': (currentStage >= 3) ? 8 : 0,
+						'minecraft:crossbow': (currentStage < 3) ? 8 : 0,
 						'minecraft:golden_axe': 4,
 						// 'minecraft:golden_pickaxe': 4,
 					}));

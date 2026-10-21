@@ -199,7 +199,7 @@ function tickBonus(player) {
  */
 function setBonusActive(player, bonus) {
 	const lookFor = bonus.split(':');
-	return player.tags.toArray().includes(`adj.set_bonus.${lookFor[0]}.${lookFor[1]}`);
+	return global.hasTag(player, `adj.set_bonus.${lookFor[0]}.${lookFor[1]}`);
 }
 
 EntityEvents.hurt(event => {

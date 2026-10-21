@@ -701,6 +701,7 @@ ClientEvents.lang('en_us', event => {
 
 		'mcdw:crossbow_auto_crossbow': 'Tactical Crossbow',
 		'mcdw:crossbow_corrupted_crossbow': '<unobtainium>Corrupted Crossbow</unobtainium>',
+		'mcdw:crossbow_imploding_crossbow': 'Supernova',
 
 	};
 

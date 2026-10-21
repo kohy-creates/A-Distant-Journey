@@ -1414,7 +1414,7 @@
 			]
 		},
 		"CROSSBOW_THE_SLICER": {
-			"isEnabled": true,
+			"isEnabled": false,
 			"material": "iron",
 			"projectileDamage": 0.0,
 			"drawSpeed": 24,

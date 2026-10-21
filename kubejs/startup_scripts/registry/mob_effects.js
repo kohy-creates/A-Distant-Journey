@@ -306,4 +306,8 @@ StartupEvents.registry('mob_effect', registry => {
 			'addition'
 		);
 
+	registry.create('voidcaller_mark')
+		.harmful()
+		.color(Color.DARK_PURPLE);
+
 });
