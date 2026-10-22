@@ -102,18 +102,6 @@ const TooltipEdits = {
 			]
 		},
 		{
-			items: /.*_spear$/,
-			text: [
-				'Critical hits reduce enemy defense'
-			]
-		},
-		{
-			items: /.*_katan$/,
-			text: [
-				'A combo of 3 hits increases movement speed'
-			]
-		},
-		{
 			items: [
 				'wooden_sword',
 				'wooden_axe',

@@ -130,6 +130,8 @@
 	holdDistantPosePixels = 0
 	#Stop reading animation files throwing a stack trace for every formula. GeckoLib reads each keyframe value in an animation file by first trying to turn the text into a number and, when that fails because the value is a Molang formula such as math.sin(query.anim_time), catching the NumberFormatException and parsing it as a formula instead. A model pack reads thousands of formulas at launch and every failed number parse copies the loading thread's call stack. With this on the text is only handed to the number parser when its first character, after any spaces and sign, could start a number at all, a digit, a dot, or the N and I of NaN and Infinity, and everything else gets one shared exception with no stack that the same catch block handles in the same way. Anything the real number parser accepts still goes through it unchanged. Client.
 	parseMolangNumbersWithoutExceptions = true
+	#Write each GeckoLib cube's vertices straight into the render buffer in one batch through Embeddium's vertex writer, instead of one vertex call per corner. Renderers that change how a quad is written keep their own path.
+	fastCubeWrite = true
 
 #Saint's Dragons patches.
 [saintsdragons]
@@ -463,6 +465,8 @@
 	pruneAngeredGuardians = true
 	#Answer SuperpositionHandler.hasCurio out of the per tick curio contents already cached for the entity instead of walking the curios inventory again. Every question resolves the curios capability, walks every slot of every slot type and allocates an Optional and a triple, and it is asked dozens of times per player per tick by Enigmatic Legacy and its addons, worst of all by Covenant of the Seven whose twenty odd tick handlers each open with two or three of them, plus another eleven per frame from its two hud overlays. The cached contents are rebuilt whenever the entity ticks and whenever Curios reports an equip, unequip or slot change, so the answer is the same one the walk would have given, except for a curio swapped and asked about again inside the same tick, which is seen on the next tick instead.
 	cachedCurioLookup = true
+	#Enigmatic Legacy walks every item in the game once per creative tab to find its own items each time the tabs are built (world join, JEI start, creative inventory). Group its items by tab once instead. Same items, same order.
+	groupCreativeTabMembers = true
 
 #Traveloptics patches.
 [traveloptics]
@@ -640,6 +644,8 @@
 	skipTraitlessCapLookup = true
 	#Make L2 Hostility's curio item check do only the work its answer needs. Every Fallen Traits relic hook, the trait items and many L2 items ask whether an entity wears a given curio, often around ten times per combat hit. Each ask resolved the curio inventory three times, ran a full first match search whose result was thrown away, and built a new tag key for every slot type it walked. With this on the inventory is resolved once, the unused search is skipped and each slot type's tag key is built once and reused. The answer is the same. Turn it off for stock behaviour.
 	leanCurioItemCheck = true
+	#Ray trace the player's line of sight to a mob once per game tick for L2Hostility's level and trait name plate, instead of once per mob per frame.
+	namePlateSightPerTick = true
 
 #Ice and Fire patches.
 [iceandfire]
@@ -763,6 +769,8 @@
 	memoInteractionBoxScales = true
 	#Let Pehkui keep its already existing per tick scale cache on the client too. Pehkui only fills that cache on the server, so every client side scale read walks the whole modifier chain again. WARNING: if a mod changes an entity's scale without going through Pehkui's own setters, the visual size can lag by one tick. Turn this off if you see entities stuck at the wrong size.
 	cacheClientScales = true
+	#Keep every built in scale type in Pehkui's per entity lookup array. Pehkui only does that for 9 of them, so every other scale read locks a synchronized map, for every entity, every tick, on both sides.
+	cacheEveryScaleType = true
 
 #Relics patches.
 [relics]
@@ -1189,6 +1197,18 @@
 	cacheStaticHardwareReport = true
 	#Every tick the game walks every chunk that has an overdue block or fluid tick and asks whether that chunk is close enough to a player to run it. Chunks loaded by a large view distance but outside the simulation distance never are, so their overdue ticks are asked about again every single tick, twice. With this on, a chunk that says no is asked again a second later instead. Its ticks still run once a player gets close, at most one second later than they would have. Turn it off for stock behaviour.
 	deferBlockedTickContainers = true
+	#When a world is closed, drop the references other mods keep to it (Citadel, Copycats, KubeJS, Opposing Force, Xaero's config library, Simply Swords, Subtle Effects). Without this the last world stays in memory on the title screen and next to the new world after rejoining.
+	releaseClosedWorld = true
+	#Goety Awaken looks for its Nameless One boss around the player in every fog and level render pass. Look once per tick instead.
+	goetyAwakenBossScanOncePerTick = true
+	#Almost Unified compares every unified recipe with every recipe of the same type on each data pack load to find duplicates. Only compare recipes whose compared fields are the same, the duplicates found are identical.
+	almostUnifiedGroupedDuplicateCheck = true
+	#KubeJS walks every file in kubejs/data for each folder a data pack load lists. Look the files up in a sorted index instead.
+	kubejsIndexedGeneratedPack = true
+	#Immersive Aircraft searches for aircraft around every aimed ray (the crosshair every frame, every flying projectile every tick). Skip that search while the world has no aircraft loaded.
+	immersiveAircraftSkipEmptyVehicleSearch = true
+	#Answer folder listings of a mod jar (every tag, recipe, loot table and model folder, on every data pack load and resource reload) from its file index instead of walking the jar again. The index is kept for the whole session, Forge makes new pack objects for every load. Needs indexModFiles.
+	indexModFileListing = true
 
 #Create: Solar patches.
 [createsolar]
@@ -2161,4 +2181,15 @@
 	leanFluidGenerators = true
 	#Remember the faded leaf pile colour instead of converting it through LAB space for every tinted quad. Client.
 	leafPileTint = true
+
+#TIMM (The Immersive Music Mod) patches.
+[timm]
+	#Stream TIMM's songs from disk like vanilla music. TIMM ships them unstreamed, so every song played is decoded whole into memory and kept until the next resource reload. Client.
+	streamMusic = true
+	#Skip TIMM's once-a-second structure scan around every player. TIMM never loads its structure playlist, so the scan cannot play anything. Server.
+	skipStructureScan = true
+	#Reuse one Music per song event instead of building a new one every client tick. Client.
+	cacheMusic = true
+	#Send TIMM's debug messages to the debug log instead of logging them at INFO, which spams every tick while a song fades out in a biome with no playlist.
+	debugLogToDebug = true
 

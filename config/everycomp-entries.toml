@@ -973,6 +973,7 @@
 			table = true
 			drawer = true
 			chair = true
+			flower_box = true
 
 		[entries.wood_type.decoration_delight]
 			mosaic = true

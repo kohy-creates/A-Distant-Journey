@@ -218,6 +218,7 @@ global.stageRestrictions = {
 			'cavedelight:lux_and_ham_sandwich',
 			'cavedelight:volcanic_chop',
 			'cavedelight:tectonic_cheesecake',
+			'alexscaves:tectonic_shard',
 			'alexscaves:extinction_spear',
 			'cavedelight:tectonic_pasta',
 			'alexscaves:tremorzilla_egg',

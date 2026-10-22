@@ -92,7 +92,7 @@
 			]
 		},
 		"SWORD_FROST_SLAYER": {
-			"isEnabled": false,
+			"isEnabled": true,
 			"material": "diamond",
 			"damage": 6,
 			"attackSpeed": -3.200000047683716,
@@ -558,7 +558,7 @@
 			]
 		},
 		"SICKLE_NIGHTMARES_BITE": {
-			"isEnabled": true,
+			"isEnabled": false,
 			"material": "iron",
 			"damage": 2,
 			"attackSpeed": -2.0999999046325684,
@@ -714,7 +714,7 @@
 			]
 		},
 		"SPEAR_FORTUNE": {
-			"isEnabled": true,
+			"isEnabled": false,
 			"material": "iron",
 			"damage": 5,
 			"attackSpeed": -2.5,

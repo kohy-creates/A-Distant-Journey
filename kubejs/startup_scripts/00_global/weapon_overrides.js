@@ -73,9 +73,12 @@ global.weapon_overrides = {
 	'mcdw:soul_dagger_truthseeker': [65, 1.2],
 	'mcdw:soul_dagger_eternal_knife': [85, 1.2],
 	'mcdw:staff_battlestaff': [9, 1.8],
+	'mcdw:staff_battlestaff_of_terror': [18, 2.4],
 	'mcdw:sword_heartstealer': [53, 0.8],
 	'mcdw:sword_obsidian_claymore': [121, 0.7, 0.24],
-	'mcdw:sword_sinister': [58, 1.8, 0.14],
+	'mcdw:sword_sinister': [62, 1.8, 0.14],
+	'mcdw:spear_whispering_spear': [44, 1.3, 0.14],
+	'mcdw:spear_fortune': [30, 1.2, 0.1],
 
 	'minecraft:trident': [21, 1.1, 0.08],
 	'farmersdelight:skillet': [12, 1],

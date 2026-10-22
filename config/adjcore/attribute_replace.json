@@ -5,6 +5,7 @@
 		"rediscovered:fire_resistance;1": "remove",
 		"rediscovered:explosion_resistance;1": "remove",
 		"galosphere:illager_resistance;0": "remove",
+		"savage_and_ravage:explosive_damage_reduction;0": "remove",
 		"additionalentityattributes:generic.magic_protection;0": "remove"
 	},
 	"items": {
@@ -16,11 +17,6 @@
 		"alexscaves:raygun": {
 			"add": [
 				"attributeslib:armor_pierce;0;30;MAINHAND"
-			]
-		},
-		"the_bumblezone:flower_headwear": {
-			"remove": [
-				"minecraft:generic.armor"
 			]
 		},
 		"endergetic:booflo_vest": {
@@ -37,34 +33,10 @@
 				"minecraft:generic.armor"
 			]
 		},
-		"hybrid_aquatic:manglerfish_fin": {
-			"remove": [
-				"minecraft:generic.armor"
-			]
-		},
-		"hybrid_aquatic:manglerfish_lure": {
-			"remove": [
-				"minecraft:generic.armor"
-			]
-		},
-		"hybrid_aquatic:eel_scarf": {
-			"remove": [
-				"minecraft:generic.armor"
-			]
-		},
-		"hybrid_aquatic:moon_jellyfish_hat": {
-			"remove": [
-				"minecraft:generic.armor"
-			]
-		},
-		"hybrid_aquatic:nautilus_helmet": {
-			"remove": [
-				"minecraft:generic.armor"
-			]
-		},
-		"hybrid_aquatic:nautilus_pauldrons": {
-			"remove": [
-				"minecraft:generic.armor"
+		"mcdw:spear_whispering_spear": {
+			"add": [
+				"attributeslib:armor_pierce;0;5;MAINHAND",
+				"forge:swim_speed;1;0.3;MAINHAND"
 			]
 		}
 	}

@@ -480,7 +480,6 @@ const RemovedItems = {
 		'etcetera:wrench',
 		'etcetera:chisel',
 		'etcetera:hammer',
-		'etcetera:dice',
 
 		'evilcraft:obscured_glass',
 		'evilcraft:entangled_chalice',
@@ -523,8 +522,6 @@ const RemovedItems = {
 		'lost_aether_content:power_gloves',
 		'lost_aether_content:agility_boots',
 		'lost_aether_content:sentry_shield',
-		// 'aether:phoenix_gloves',
-		// 'aether:obsidian_gloves',
 		'ancient_aether:grapes',
 		'aether_redux:shroom_ring',
 		'ancient_aether:valkyrum_lance',

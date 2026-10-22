@@ -276,10 +276,6 @@ ADJServerEvents.adjHurt(event => {
 			let item = player.getMainHandItem();
 			let id = item.getId();
 
-			if (id.endsWith('_spear')) {
-				victim.addEffect(global.newMobEffectInstance('kubejs:pierced', global.duration('0:07'), 0, true, false, true));
-			}
-
 			let helmet = player.getHeadArmorItem();
 			switch (helmet.id) {
 				case 'botania:terrasteel_helmet': {
@@ -318,6 +314,8 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 
 	const source = event.getSource();
 
+	let damage = event.getAmount();
+
 	// console.log(event.getSource(), event.getSource().getImmediate(), event.getSource().getType())
 	if (attacker && attacker instanceof $Player && event.getSource().getImmediate() instanceof $Player) {
 		let item = attacker.getMainHandItem();
@@ -349,20 +347,31 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 				break;
 			}
 			case 'mcdw:glaive_grave_bane': {
-				if (victim.mobType.toString() == 'UNDEAD') {
+				if (victim.isUndead()) {
 					victim.addEffect(global.newMobEffectInstance('ars_nouveau:hex', global.duration('0:10'), 1, false, true, true)); // Vulnerability Hex II = 30% increased damage
+					global.playSound(
+						victim.level,
+						victim.x, victim.y + victim.getEyeHeight(), victim.z,
+						'entity.zombie.attack_iron_door', 'players',
+						1, [1.4, 1.5] 
+					);
+					global.playSound(
+						victim.level,
+						victim.x, victim.y + victim.getEyeHeight(), victim.z,
+						'block.amethyst_cluster.break', 'players',
+						1, [0.7, 0.8] 
+					);
 				}
 				break;
 			}
 			case 'mcdw:glaive_venom_glaive': {
-				victim.addEffect(global.newMobEffectInstance('minecraft:poison', global.duration('0:07'), 0, false, true, true));
+				victim.addEffect(global.newMobEffectInstance('minecraft:poison', global.duration('0:07'), 1, false, true, true));
 				break;
 			}
 			case 'mcdw:sword_heartstealer': {
 				attacker.adjcore$heal(event.getAmount() * 0.06, victim, 'heartstealer', true, false);
 				break;
 			}
-			case 'mcdw:scythe_frost_scythe':
 			case 'mcdw:dagger_fangs_of_frost': {
 				victim.setTicksFrozen(victim.getTicksFrozen() + 25);
 				break;
@@ -370,7 +379,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 			case 'mcdw:dagger_backstabber':
 			case 'mcdw:dagger_swift_striker': {
 				if (victim instanceof $LivingEntity && victim.getTarget() != attacker) {
-					event.setAmount(event.getAmount() * 1.5);
+					event.setAmount(event.getAmount() * 1.75);
 					level.playSound(null, victim.x, victim.y + victim.getEyeHeight(), victim.z, 'block.anvil.place', 'neutral', 1, global.getRandomNumber(0.9, 1.15));
 				}
 				break;
@@ -411,11 +420,42 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 				}
 				break;
 			}
+			case 'mcdw:hammer_stormlander': {
+				global.chainLightning(attacker, victim, (e) => {
+					if (e == victim || e == attacker) return;
+					global.hurt(attacker, e, 'ars_elemental:spark', event.getAmount(), null, 10);
+				}, 4, 7);
+				break;
+			}
+			case 'mcdw:scythe_frost_scythe':
+			case 'mcdw:scythe_skull_scythe':
+			case 'mcdw:scythe_soul_scythe': {
+				if (id == 'mcdw:scythe_skull_scythe') {
+					victim.addEffect(global.newMobEffectInstance('minecraft:wither', global.duration('0:07'), 1, false, true, true));
+				} 
+				else if (id == 'mcdw:scythe_frost_scythe') {
+					victim.setTicksFrozen(victim.getTicksFrozen() + 50);
+				}
+				if (
+					!global.bossMobs.includes(victim.getType().toString())
+					&& global.getHealthPercent(victim) <= 33 
+					&& global.ifRandomChance((100 - global.getHealthPercent(victim)) * 0.333)) {
+					damage = 99999;
+					global.playSound(
+						attacker.level, 
+						victim.x, victim.y + victim.getEyeHeight(), victim.z, 
+						'adj:item.veiled_crossbow.shoot', 
+						'players',
+						1, [0.96, 1.04]
+					);
+				}
+				break;
+			}
 		}
 
 		// Stuff that depends on persistent data
 		if (data.voidStrike) {
-			event.setAmount(event.getAmount() * (data.voidStrike.mul + 100) / 100);
+			damage = damage * (data.voidStrike.mul + 100) / 100;
 			level.playSound(null, new Vec3d(victim.x, victim.y + victim.getEyeHeight(), victim.z), 'adj:enchantment.void_strike.deactivate', 'neutral');
 			data.remove('voidStrike');
 		}
@@ -437,7 +477,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 				}
 				case 'kubejs:committed': {
 					const mul = (1 - (global.getHealthPercent(victim) / 100)) * (enchLevel * 0.2);
-					event.setAmount(event.getAmount() + event.getAmount() * mul);
+					damage = damage * (1 + mul);
 					break;
 				}
 				case 'kubejs:echo': {
@@ -464,10 +504,10 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 				}
 				case 'kubejs:polarity_curse': {
 					if (global.ifRandomChance(50)) {
-						event.setAmount(event.getAmount() * 1.5);
+						damage *= 1.5;
 					}
 					else {
-						event.setAmount(0);
+						damage = 0;
 					}
 				}
 			}
@@ -481,7 +521,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 			victim.addEffect(global.newMobEffectInstance('wither', global.duration('0:10'), 1));
 		}
 		if (attacker.isCuriosEquipped('kubejs:ring_of_fire') && victim.isOnFire()) {
-			event.setAmount(event.getAmount() + 5);
+			damage += 5;
 		}
 	}
 
@@ -526,7 +566,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 		}
 		// This section goes off if there is no attacker
 		if (source.is(DamageIndicatorTags.IS_FIRE) && victim.hasCurioEquipped('kubejs:shield_of_fire') || victim.hasCurioEquipped('kubejs:palladium_hero_aegis')) {
-			event.setAmount(0);
+			damage = 0;
 		}
 	}
 
@@ -537,6 +577,8 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 			}
 		})
 	}
+
+	event.setAmount(damage);
 });
 
 EntityEvents.death(event => {
@@ -551,8 +593,7 @@ EntityEvents.death(event => {
 		switch (id) {
 			case 'mcdw:sickle_last_laugh_silver':
 			case 'mcdw:sickle_last_laugh_gold': {
-				if (global.ifRandomChance(90)) {
-					console.log('Dropping emeralds from Last Laugh')
+				if (global.ifRandomChance(25)) {
 					global.dropItem(level, 'emerald', 1, 3, victim.x, victim.y, victim.z, 'adj:item.last_laugh.drop_loot', 0.75, 1.0, 'happy_villager');
 				}
 				break;

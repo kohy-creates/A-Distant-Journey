@@ -19,7 +19,7 @@
   "fell_leaves_strategy": "DECAY",
   "fell_credit_strategy": "NONE",
   "damage_tool_per_log": true,
-  "exhaustion_per_log": true,
+  "exhaustion_per_log": false,
   "log_drop_chance": 1.0,
   "chop_counting_algorithm": "LINEAR",
   "chop_count_rounding": "NEAREST",
@@ -37,7 +37,7 @@
   "silentgear_saw_chops": 5,
   "show_feedback_messages": true,
   "verbose_api": false,
-  "suppress_vanilla_leaf_sounds_on_fell": false,
+  "suppress_vanilla_leaf_sounds_on_fell": true,
   "choppable_blocks": [
     "#treeliable:choppables",
     "#minecraft:logs"
