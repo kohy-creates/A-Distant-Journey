@@ -1385,6 +1385,30 @@ LootJS.modifiers((event) => {
 			);
 		});
 
+	// Wild alchemy plants drops
+	function alchemyPlant(plantId) {
+		event.addBlockLootModifier(`kubejs:wild_${plantId}`)
+			.pool(pool => {
+				pool.addLoot(
+					LootEntry.of(`kubejs:${plantId}`)
+						.when(c => c.randomChance(0.5))
+				);
+			})
+			.pool(pool => {
+				pool.addLoot(
+					LootEntry.of(`kubejs:${plantId}_plant_seed`)
+						.limitCount([1, 2])
+				);
+			});
+	}
+
+	alchemyPlant('daybloom');
+	alchemyPlant('moonglow');
+	alchemyPlant('shiverthorn');
+	alchemyPlant('deathweed');
+	alchemyPlant('blinkroot');
+	alchemyPlant('fireblossom');
+	alchemyPlant('waterleaf');
 });
 
 const fattyAnimalsTag = global.createTagKey('ENTITY_TYPES', 'delightful:fatty_animals');

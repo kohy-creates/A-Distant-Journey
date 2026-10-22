@@ -556,12 +556,7 @@ const RemovedItems = {
 		/vinery:dark_oak_wine_rack_.*/,
 		/vinery:acacia_wine_rack_.*/,
 		/vinery:mangrove_wine_rack_.*/,
-		'vinery:birch_lattice',
-		'vinery:spruce_lattice',
-		'vinery:acacia_lattice',
-		'vinery:jungle_lattice',
-		'vinery:dark_oak_lattice',
-
+		/vinery:.*lattice/,
 		'vinery:vinery_standard',
 		/vinery.*floorboard$/,
 		'v_slab_compat:vinery/grass_vertical_slab',
@@ -569,7 +564,6 @@ const RemovedItems = {
 		'v_slab_compat:vinery/dirt_vertical_slab',
 		'v_slab_compat:vinery/dirt_path_vertical_slab',
 		'vinery:straw_hat',
-
 		'nethervinery:crimson_fermentation_barrel',
 		'nethervinery:crimson_grapevine_pot',
 		'nethervinery:crimson_apple_press',
@@ -582,6 +576,7 @@ const RemovedItems = {
 		'nethervinery:crested_warped_planks',
 		'nethervinery:reinforced_crimson_planks',
 		'nethervinery:reinforced_warped_planks',
+		/nethervinery:.*lattice/,
 
 		'beachparty:wet_hay_block',
 		'beachparty:palm_glass',
