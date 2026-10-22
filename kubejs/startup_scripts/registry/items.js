@@ -395,12 +395,6 @@ StartupEvents.registry('item', registry => {
 					.ammo(itemstack => false)
 					.infinity()
 				)
-				.onArrowHit(arrow => {
-					arrow.hitBlock(event => global.itemEffects.elsaCrossbow.blockHit(event))
-				})
-				.onUse(event => {
-					event.shoot(event => global.itemEffects.elsaCrossbow.shoot(event))
-				});
 		})
 		.unstackable()
 		.maxDamage(3000)

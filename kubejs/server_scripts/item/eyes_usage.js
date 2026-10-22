@@ -3,14 +3,14 @@ const $BoneMealableBlock = Java.loadClass("net.minecraft.world.level.block.Bonem
 const superBoneMealItems = [
 	'structure_gel:building_tool',
 	'kubejs:eye_of_verdant_bloom'
-]
+];
 
 const prismDisallowedBuildModesForBoneMeal = [
 	'structure_gel:fill',
 	'structure_gel:line',
 	'structure_gel:clone',
 	'structure_gel:move',
-]
+];
 
 BlockEvents.rightClicked(event => {
 	const item = event.getItem();

@@ -138,7 +138,6 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 	if (event.slotType == 'mainhand' || event.slotType == 'offhand') {
 		if (item.id === 'kubejs:elsa_crossbow') {
 			event.addModifier('combatroll:count', new $AttributeModifier('72a192cc-f439-410b-a296-13f560012cbe', 'Extra dash', 1, 'addition'));
-			event.addModifier('attributeslib:arrow_velocity', new $AttributeModifier('72a192cc-f439-410b-a296-13f560012cbe', 'ADJ Block Reach', 2.0, 'addition'));
 		}
 	}
 

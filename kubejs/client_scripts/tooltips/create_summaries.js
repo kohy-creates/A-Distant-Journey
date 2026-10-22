@@ -28,7 +28,7 @@ const itemsToTooltip = [
 			{
 				control: 'fired',
 				text: [
-					'Unleashes an almost _hitscan-like Arrow_ that deals massive damage',
+					'Unleashes a burst of _5 high-damage arrows_.',
 					'Arrows are _destroyed_ when they _hit a block_.'
 				]
 			}

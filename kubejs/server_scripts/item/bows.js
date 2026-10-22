@@ -15,8 +15,9 @@ const Bows = {
 	 * @param {number} damage
 	 * @param {boolean} [noGravity]
 	 * @param {boolean} [isRandom]
+	 * @param {string} [weapon]
 	 */
-	shootProjectileCone: function (player, type, count, spreadAngle, vel, damage, noGravity, isRandom) {
+	shootProjectileCone: function (player, type, count, spreadAngle, vel, damage, noGravity, isRandom, weapon) {
 		if (count < 0) return;
 		let lookAngle = player.getLookAngle();
 		let randomMode = global.getOrDefault(isRandom, false);
@@ -53,6 +54,7 @@ const Bows = {
 			projectile.setNoGravity(global.getOrDefault(noGravity, false));
 			projectile.persistentData.damage = damage;
 			projectile.persistentData.ignore = true;
+			if (weapon) projectile.persistentData.weapon = weapon;
 			player.level.addFreshEntity(projectile);
 		}
 	},
@@ -227,8 +229,18 @@ const Bows = {
 				arrow.kill();
 				break;
 			}
+			case 'kubejs:elsa_crossbow': {
+				if (!entity) {
+					arrow.level.spawnParticles('minecraft:smoke', true, arrow.x, arrow.y - 0.1, arrow.z, 0.15, 0.15, 0.15, 10, 0.01);
+					arrow.level.spawnParticles('cataclysm:spark', true, arrow.x, arrow.y - 0.1, arrow.z, 0, 0, 0, 4, 0.08);
+					arrow.kill();
+				}
+				break;
+			}
 		}
-	}
+	},
+	/** @type {Internal.AbstractArrow_[]} */
+	arrowsTickList: [],
 };
 
 EntityEvents.spawned(event => {
@@ -237,6 +249,9 @@ EntityEvents.spawned(event => {
 
 		let pickup = arrowEntity.pickup.toString();
 		if (pickup === 'DISALLOWED' || pickup === 'CREATIVE_ONLY') arrowEntity.life = 900;
+		if (arrowEntity.persistentData.ignore && arrowEntity.persistentData.weapon && !Bows.arrowsTickList.indexOf(arrowEntity) != -1) {
+			Bows.arrowsTickList.push(arrowEntity);
+		};
 		if (arrowEntity.persistentData.ignore || global.hasTag(arrowEntity, 'adj.arrow')) return;
 
 		arrowEntity.addTag('adj.arrow');
@@ -258,6 +273,8 @@ EntityEvents.spawned(event => {
 					shooter.cooldowns.addCooldown(item.getItem(), cooldown);
 				}
 
+				Bows.arrowsTickList.push(arrowEntity);
+
 				switch (item.getId()) {
 					case 'mcdw:bow_phantom_bow':
 					case 'mcdw:crossbow_butterfly_crossbow': {
@@ -267,7 +284,7 @@ EntityEvents.spawned(event => {
 					}
 					case 'mcdw:crossbow_burst_crossbow': {
 						let shoot = () => {
-							Bows.shootProjectileCone(shooter, arrowEntity.getType(), 1, 1, 3, damage, false, true);
+							Bows.shootProjectileCone(shooter, arrowEntity.getType(), 1, 1, 3, damage, false, true, item.getId());
 							global.playSound(
 								shooter.level,
 								shooter.x, shooter.y + shooter.eyeHeight * 0.9, shooter.z,
@@ -283,7 +300,7 @@ EntityEvents.spawned(event => {
 						let isSpectral = arrowEntity.getType() == 'minecraft:spectral_arrow';
 						shooter.cooldowns.addCooldown(item.getItem(), isSpectral ? 7 : 11);
 						let shoot = () => {
-							Bows.shootProjectileCone(shooter, arrowEntity.getType(), 1, 1, 3, damage, false, true);
+							Bows.shootProjectileCone(shooter, arrowEntity.getType(), 1, 1, 3, damage, false, true, item.getId());
 							global.playSound(
 								shooter.level,
 								shooter.x, shooter.y + shooter.eyeHeight * 0.9, shooter.z,
@@ -304,11 +321,43 @@ EntityEvents.spawned(event => {
 						break;
 					}
 					case 'mcdw:crossbow_harp_crossbow': {
-						Bows.shootProjectileCone(shooter, arrowEntity.getType(), 4, 20, 3, damage, false, true);
+						let basePitch = global.getRandomNumber(0.2, 0.4);
+						for (let i = 0; i < 5; i++) {
+							let currentStep = i;
+							let finalPitch = basePitch + (currentStep * 0.11);
+							shooter.server.scheduleInTicks(2 + currentStep * 2, () => {
+								global.playSound(
+									shooter.level,
+									shooter.x, shooter.y + shooter.eyeHeight * 0.9, shooter.z,
+									'minecraft:block.note_block.harp', 'players',
+									1, finalPitch
+								);
+							});
+						}
+						Bows.shootProjectileCone(shooter, arrowEntity.getType(), 4, 17.5, 3, damage, false, true, item.getId());
 						break;
 					}
 					case 'mcdw:crossbow_lightning_harp_crossbow': {
-						Bows.shootProjectileCone(shooter, arrowEntity.getType(), global.getRandomInt(2, 3), 20, 3, damage, false, true);
+						let basePitch = global.getRandomNumber(0.2, 0.4);
+						for (let i = 0; i < 5; i++) {
+							let currentStep = i;
+							let finalPitch = basePitch + (currentStep * 0.11);
+							shooter.server.scheduleInTicks(2 + currentStep * 2, () => {
+								global.playSound(
+									shooter.level,
+									shooter.x, shooter.y + shooter.eyeHeight * 0.9, shooter.z,
+									'minecraft:block.note_block.bit', 'players',
+									1, finalPitch
+								);
+								global.playSound(
+									shooter.level,
+									shooter.x, shooter.y + shooter.eyeHeight * 0.9, shooter.z,
+									'minecraft:block.note_block.bass', 'players',
+									0.5, finalPitch
+								);
+							});
+						}
+						Bows.shootProjectileCone(shooter, arrowEntity.getType(), global.getRandomInt(2, 3), 17.5, 3, damage, false, true, item.getId());
 						break;
 					}
 					case 'mcdw:crossbow_corrupted_crossbow': {
@@ -386,6 +435,29 @@ EntityEvents.spawned(event => {
 						shooter.level.addFreshEntity(waterBolt);
 						break;
 					}
+					case 'mcdw:bow_nocturnal_bow': {
+						Bows.shootProjectileCone(shooter, 'twilightforest:seeker_arrow', 1, 1.5, Math.min(arrowEntity.getDeltaMovement().length(), 3), damage, false, true, item.getId());
+						event.cancel();
+						break;
+					}
+					case 'kubejs:elsa_crossbow': {
+						global.playSound(
+							shooter.level,
+							shooter.x, shooter.y + shooter.getEyeHeight(), shooter.z,
+							'minecraft:block.anvil.place', 'players',
+							0.8, [0.85, 0.95]
+						);
+						global.playSound(
+							shooter.level,
+							shooter.x, shooter.y + shooter.getEyeHeight(), shooter.z,
+							'scguns:item.combat_shotgun.fire', 'players',
+							0.3, [1.45, 1.55]
+						);
+						shooter.getPersistentData().elsa_crossbow_tickdown = 1;
+						Bows.shootProjectileCone(shooter, 'arrow', 5, 5, 9, damage, false, true, item.getId());
+						event.cancel();
+						break;
+					}
 				}
 			}
 			// Save damage value into persistent data
@@ -439,7 +511,7 @@ ADJServerEvents.adjArrowHurt(event => {
 				case 'mcdw:crossbow_lightning_harp_crossbow': {
 					global.chainLightning(shooter, entity, (e) => {
 						if (e == entity) return;
-						global.hurt(e, shooter, 18, 'ars_elemental:spark', false, 10);
+						global.hurt(shooter, e, 'ars_elemental:spark', 18, null, 10);
 					}, 4, 10);
 					break;
 				}
@@ -529,18 +601,33 @@ ADJServerEvents.adjArrowHurt(event => {
 							'minecraft:entity.phantom.bite', 'players',
 							1, [0.95, 1.05]
 						);
-						entity.level.spawnParticles(
-							'endergetic:end_crown false 0.25',
-							false,
-							entity.x, entity.y + entity.bbHeight / 2, entity.z,
-							entity.bbWidth / 2, entity.bbHeight / 3, entity.bbWidth / 2,
-							15, 0
-						)
+						global.emitParticlesFromEntity(entity, 'endergetic:end_crown false 0.25', 15);
 					});
 					break;
 				}
 				case 'mcdw:bow_snow_bow': {
-					entity.setTicksFrozen(entity.getTicksFrozen() + 60);
+					entity.setTicksFrozen(entity.getTicksFrozen() + 70);
+					break;
+				}
+				case 'mcdw:bow_haunted_bow': {
+					entity.addEffect(global.newMobEffectInstance('minecraft:wither', '0:20', 0));
+					break;
+				}
+				case 'kubejs:elsa_crossbow': {
+					damage = damage + entity.getMaxHealth() * 0.002;
+					break;
+				}
+				case 'mcdw:bow_lost_souls': {
+					if (isHeadshot) {
+						global.emitParticlesFromEntity(entity, 'adjcore:flashing_spark', 15);
+						damage = damage + entity.getMaxHealth() * 0.005;
+						shooter.adjcore$restoreMana(damage * 0.5, true);
+						shooter.playNotifySound(
+							'adj:eye.collect',
+							'players',
+							0.5, 1.2
+						);
+					}
 					break;
 				}
 				default: {
@@ -555,7 +642,6 @@ ADJServerEvents.adjArrowHurt(event => {
 });
 
 // Things that happen on a block hit
-const $ProjectileImpactEvent = Java.loadClass('net.minecraftforge.event.entity.ProjectileImpactEvent');
 NativeEvents.onEvent('normal', false, $ProjectileImpactEvent, event => {
 	let arrow = event.getProjectile();
 	if (arrow instanceof $AbstractArrow && event.getRayTraceResult().getType().toString() === 'BLOCK') {
@@ -564,4 +650,43 @@ NativeEvents.onEvent('normal', false, $ProjectileImpactEvent, event => {
 			Bows.handleHitEffect(weaponId, arrow, arrow.x, arrow.y, arrow.z, arrow.persistentData.damage, null);
 		}
 	}
+});
+
+// Arrow trails
+ServerEvents.tick(event => {
+	Bows.arrowsTickList.forEach(arrow => {
+		if (!arrow.isAlive()) {
+			Bows.arrowsTickList.splice(Bows.arrowsTickList.indexOf(arrow), 1);
+			return;
+		}
+		if (arrow.inGround) return;
+		let particle, speed = 0, count = 1, delta = 0;
+		switch (arrow.persistentData.weapon) {
+			case 'mcdw:bow_snow_bow': {
+				particle = 'twilightforest:snow_warning';
+				break;
+			}
+			case 'mcdw:bow_phantom_bow': {
+				particle = 'minecraft:copper_fire_flame';
+				break;
+			}
+			case 'mcdw:crossbow_lightning_harp_crossbow': {
+				particle = 'subtle_effects:charged_electricity';
+				break;
+			}
+			case 'mcdw:bow_bubble_burster': {
+				particle = 'evilcraft:bubble_extended 0';
+				break;
+			}
+		}
+		if (particle) {
+			arrow.level.spawnParticles(
+				particle,
+				true,
+				arrow.x, arrow.y, arrow.z,
+				delta, delta, delta,
+				count, speed
+			);
+		}
+	});
 });

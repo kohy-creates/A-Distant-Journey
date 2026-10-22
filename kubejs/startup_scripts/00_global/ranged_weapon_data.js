@@ -41,6 +41,9 @@ global.bowDamage = {
 	'mcdw:crossbow_voidcaller_crossbow': 54,
 	'mcdw:bow_snow_bow': 19,
 	'mcdw:bow_bubble_burster': 29,
+	'mcdw:bow_nocturnal_bow': 25,
+	'mcdw:bow_lost_souls': 40,
+	'mcdw:bow_haunted_bow': [70, global.baseCritChance, 1.0],
 
 	'twilightforest:ice_bow': [67, global.baseCritChance, 0.15],
 	'twilightforest:triple_bow': 38,
@@ -49,7 +52,7 @@ global.bowDamage = {
 
 	'tide:starlight_bow': [28, 0.14, 0.2],
 
-	'kubejs:elsa_crossbow': [188, 0.24],
+	'kubejs:elsa_crossbow': [52, 0.14],
 
 };
 

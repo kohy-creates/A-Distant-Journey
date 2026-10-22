@@ -297,3 +297,18 @@ global.hurt = function (attacker, target, damageSource, amount, projectile, armo
 	let source = global.getDamageSource(attacker.level, damageSource, global.getOrDefault(projectile, null), src);
 	target.attack(source, amount);
 };
+
+/**
+ * Emits particles from a given entity, spawning in the entirety of its bounding box.
+ * @param {Internal.Entity_} entity 
+ * @param {string} particle 
+ * @param {number} count 
+ * @param {number} [speed] 
+ */
+global.emitParticlesFromEntity = function (entity, particle, count, speed) {
+	entity.level.spawnParticles(
+		particle, false,
+		entity.x, entity.y + entity.bbHeight / 2, entity.z,
+		entity.bbWidth / 2, entity.bbHeight / 3, entity.bbWidth / 2,
+		count, global.getOrDefault(speed, 0));
+};
