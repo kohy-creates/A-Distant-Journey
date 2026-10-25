@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "families": [
+    {
+      "id": "fabric-api",
+      "label": "Fabric API family",
+      "mod_id_prefixes": ["fabric-", "fabric_"],
+      "home_page": "https://modrinth.com/mod/fabric-api"
+    },
+    {
+      "id": "kotlin",
+      "label": "Kotlin language support family",
+      "mod_id_prefixes": ["fabric-language-kotlin", "kotlin-", "klotlinlib", "org_jetbrains_kotlin"],
+      "home_page": "https://fabricmc.net/develop/kotlin/"
+    }
+  ],
+  "mods": []
+}

@@ -154,7 +154,7 @@ ServerEvents.tick(event => {
 		if (!server.persistentData.tutorialNight) {
 			server.persistentData.tutorialNight = true;
 
-			if (!server.isHardcore()) {
+			if (!global.isHardcore()) {
 				server.runCommandSilent('/ec setLunarEvent adj:tutorial_moon')
 			}
 		}
@@ -164,7 +164,7 @@ ServerEvents.tick(event => {
 
 		if (server.persistentData.lunarEvent === DEFAULT_MOON) {
 			if (server.persistentData.witherStormActive == true) {
-				if (!server.isHardcore()) {
+				if (!global.isHardcore()) {
 					let phase = Number(server.persistentData.witherStormPhase);
 					sendEventMessages(true, phase);
 				}

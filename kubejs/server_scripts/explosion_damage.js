@@ -22,7 +22,7 @@ ADJServerEvents.explosionDamageCalc(event => {
 		const entry = ExplosionDamage[sourceEntity.getType()];
 		damage = entry[0];
 		if (entry[1] == true) {
-			let chapter = global.getCurrentChapter(sourceEntity.getServer());
+			let chapter = global.getCurrentChapter();
 			let multiplier = EntityModifications.chapterMultipliers.damage[chapter];
 			damage *= multiplier;
 		}

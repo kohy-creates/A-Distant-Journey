@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "selectionStick": "BOTH",
+  "menus": [
+    {
+      "id": 1,
+      "name": "Menu 1",
+      "mode": "HOLD",
+      "assignedLayer": "main",
+      "menuScale": 1.0,
+      "slots": [
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Menu 2",
+      "mode": "HOLD",
+      "assignedLayer": "shift1",
+      "menuScale": 1.0,
+      "slots": [
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Menu 3",
+      "mode": "HOLD",
+      "assignedLayer": "shift2",
+      "menuScale": 1.0,
+      "slots": [
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Menu 4",
+      "mode": "HOLD",
+      "assignedLayer": "shift3",
+      "menuScale": 1.0,
+      "slots": [
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Menu 5",
+      "mode": "HOLD",
+      "assignedLayer": "shift4",
+      "menuScale": 1.0,
+      "slots": [
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        },
+        {
+          "type": "empty",
+          "target": "",
+          "icon": "auto"
+        }
+      ]
+    }
+  ]
+}

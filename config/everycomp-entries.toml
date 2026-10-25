@@ -922,6 +922,63 @@
 		[types.cut_block_type.savage_and_ravage]
 			gloomy_tile = true
 
+		[types.cut_block_type.createdeco]
+			short_red_brick = true
+			tiled_red_brick = true
+			long_red_brick = true
+			corner_red_brick = true
+			cracked_red_brick = true
+			mossy_red_brick = true
+			pearl_brick = true
+			short_pearl_brick = true
+			tiled_pearl_brick = true
+			long_pearl_brick = true
+			corner_pearl_brick = true
+			cracked_pearl_brick = true
+			mossy_pearl_brick = true
+			dean_brick = true
+			short_dean_brick = true
+			tiled_dean_brick = true
+			long_dean_brick = true
+			corner_dean_brick = true
+			cracked_dean_brick = true
+			mossy_dean_brick = true
+			verdant_brick = true
+			short_verdant_brick = true
+			tiled_verdant_brick = true
+			long_verdant_brick = true
+			corner_verdant_brick = true
+			cracked_verdant_brick = true
+			mossy_verdant_brick = true
+			blue_brick = true
+			short_blue_brick = true
+			tiled_blue_brick = true
+			long_blue_brick = true
+			corner_blue_brick = true
+			cracked_blue_brick = true
+			mossy_blue_brick = true
+			umber_brick = true
+			short_umber_brick = true
+			tiled_umber_brick = true
+			long_umber_brick = true
+			corner_umber_brick = true
+			cracked_umber_brick = true
+			mossy_umber_brick = true
+			dusk_brick = true
+			short_dusk_brick = true
+			tiled_dusk_brick = true
+			long_dusk_brick = true
+			corner_dusk_brick = true
+			cracked_dusk_brick = true
+			mossy_dusk_brick = true
+			scarlet_brick = true
+			short_scarlet_brick = true
+			tiled_scarlet_brick = true
+			long_scarlet_brick = true
+			corner_scarlet_brick = true
+			cracked_scarlet_brick = true
+			mossy_scarlet_brick = true
+
 #Disables specific entries
 [entries]
 
@@ -944,7 +1001,6 @@
 
 		[entries.wood_type.rediscovered]
 			chair = true
-			table = true
 
 		[entries.wood_type.functionalstorage]
 			1 = true

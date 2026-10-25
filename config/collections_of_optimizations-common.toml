@@ -112,6 +112,8 @@
 	orphanUploadPbo = true
 	#Open Xaero's World Map reflected fields once instead of paying the access check on every read. Stock reads the per-chunk clean flag through an unopened Field for every chunk it writes, and toggles setAccessible on and off around every scheduled task queue read.
 	openReflectedFields = true
+	#Give new map tiles a shared empty height table and make each tile its own copy only when a height is first written. The map writer makes tiles for every chunk around you before it knows the chunk can be drawn, and each one used to allocate two 8 KB height tables straight away, which at high render distance was over 100 MB per second of garbage on the render thread. Tiles that get drawn behave exactly as before. Takes effect on the next launch.
+	lazyTileHeights = true
 
 #GeckoLib patches.
 [geckolib]
@@ -329,6 +331,8 @@
 	skipUnwatchedEffectSync = true
 	#Skip the 50 block miracle blight particle scan, run twice every client tick, while no entity anywhere is miracle blighted. Client.
 	skipIdleBlightScan = true
+	#Only send that capability sync packet for the four effects Brutality tracks (miracle blight, enraged, the void, light bound). Every other effect added, removed or expired on anything, including the ones curios refresh on players every tick, used to broadcast the entity's whole Brutality data to every player.
+	effectSyncOwnEffectsOnly = true
 
 #Mutant Monsters patches.
 [mutantmonsters]
@@ -505,6 +509,11 @@
 	leanWaistWarmerScan = true
 	#Stop the Suspicious Mushroom and Rose of Temptation handlers from attaching an empty ForgeData tag to every entity in the world.
 	skipUnsetPersistentData = true
+	#Skip the Rose of Temptation cleanup that scans every mob within 32 blocks of every player every tick. Each lured mob already clears its own speed boost on its own tick when it runs out.
+	skipRoseCleanupScan = true
+	#Ticks between new paths for mobs lured by the Rose of Temptation. A mob that has lost its path still gets a new one right away. The mod built a fresh path for every lured mob every tick. 1 restores that.
+	#Range: 1 ~ 40
+	roseRepathInterval = 10
 
 #Blood Magic patches.
 [bloodmagic]
@@ -771,6 +780,8 @@
 	cacheClientScales = true
 	#Keep every built in scale type in Pehkui's per entity lookup array. Pehkui only does that for 9 of them, so every other scale read locks a synchronized map, for every entity, every tick, on both sides.
 	cacheEveryScaleType = true
+	#Walk a fixed copy of the scale type list when every entity ticks its scales, instead of stepping through the linked nodes of the registry map for every entity on every tick. Same types, same order. The copy is rebuilt if the number of scale types changes.
+	snapshotTickTypes = true
 
 #Relics patches.
 [relics]
@@ -1209,6 +1220,12 @@
 	immersiveAircraftSkipEmptyVehicleSearch = true
 	#Answer folder listings of a mod jar (every tag, recipe, loot table and model folder, on every data pack load and resource reload) from its file index instead of walking the jar again. The index is kept for the whole session, Forge makes new pack objects for every load. Needs indexModFiles.
 	indexModFileListing = true
+	#Check the faces of glow lichen, sculk veins and other multiface blocks with a plain loop instead of building a stream for every check. World generation and block updates of sculk veins run this for every block they touch. Same answer.
+	multifaceWithoutStreams = true
+	#Give every structure piece the same block position objects for the same spots inside the piece instead of a new one per block. Loaded structure pieces hold millions of these, almost all of them repeats, so the pieces take noticeably less memory and loading new ones makes less garbage. Positions read the same.
+	shareTemplatePositions = true
+	#Raycasts that ignore fluids test each block shape against boxes worked out once per shape, instead of building a fresh list of boxes, moved copies of them and several vectors for every block the ray crosses. Same hit, same point, same face. Needs dryRaycast. Turn it off for stock behaviour.
+	leanRaycast = true
 
 #Create: Solar patches.
 [createsolar]
@@ -2192,4 +2209,29 @@
 	cacheMusic = true
 	#Send TIMM's debug messages to the debug log instead of logging them at INFO, which spams every tick while a song fades out in a biome with no playlist.
 	debugLogToDebug = true
+
+#Mowzie's Mobs world generation patches.
+[mowziesmobsWorldgen]
+	#While the Wroughtnaut chamber looks for a cave wall, build each terrain column once instead of again for every wall check that passes over it. One search used to build up to about two thousand full height columns, most of them the same ones. The search sees the same columns and picks the same spot.
+	shareChamberColumns = true
+
+#Flywheel patches (Create's renderer).
+[flywheel]
+	#Wake Flywheel's worker threads by parking and unparking them instead of a shared lock. With the lock, the render thread had to wait for a low priority worker that was holding it while chunk generation kept every core busy, which showed up as 50 to 90 ms hitches while flying. Takes effect on the next launch.
+	parkWorkers = true
+
+#Touch'n Motion patches.
+[touchnmotion]
+	#Check whether the ground under a stepping foot is level without building a ClipContext, a collision context and a hit result for each of the up to 27 ground probes per leg, every frame. Same answer. Client.
+	fastStrideProbe = true
+	#Remember the last player each per player state table was asked about, so the dozens of lookups a frame for the same player skip the hash map. Same states. Client.
+	lastStateLookup = true
+	#Without Sable, hand every ground, wall and handle search the same one entry list of spaces instead of a new list for each probe. Client.
+	sharedWorldSpace = true
+	#While Touch'n Motion poses one player, read each block it probes once and reuse the block and its shape for the rest of that player's ground, wall and step probes, instead of looking the same few blocks up hundreds of times. Blocks cannot change in the middle of drawing a player. Needs leanRaycast. Client.
+	blockMemo = true
+	#Find the floor under each balance and foot sample without the clip context, collision context, ray ends and hit result Touch'n Motion builds for each of up to 289 samples. Same floor. Client.
+	fastFloor = true
+	#Remember which model part each part name points to, so the dozens of part lookups a frame per player skip the hash map. Same parts. Client.
+	partNameCache = true
 

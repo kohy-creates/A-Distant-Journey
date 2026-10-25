@@ -1,0 +1,10 @@
+{
+  "controlsScreenIcon": {
+    "anchorRow": 1,
+    "side": "right"
+  },
+  "profile": "recommend",
+  "cameraLook": {
+    "smoothCameraOverridden": false
+  }
+}

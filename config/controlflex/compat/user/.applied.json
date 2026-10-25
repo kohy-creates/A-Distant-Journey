@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 2,
+  "applied": {
+    "minemenu": "ae27f3d32845514acac2e7c21587ab671bd61eb76250aae2b6eafa00a2b31ca8",
+    "create": "12f1549f8c496fc0f5e195b2d209e846ab1fb186730b285c38b089e4e0a530e0",
+    "exposure": "2eba6c6df5dbb0d0424885448a66a8874a9c370c25078021f3f1b8869263a5ed"
+  },
+  "autoApplyDone": [
+    "minemenu",
+    "create",
+    "exposure"
+  ]
+}

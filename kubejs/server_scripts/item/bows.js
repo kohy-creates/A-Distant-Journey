@@ -491,7 +491,7 @@ ADJServerEvents.adjArrowHurt(event => {
 	if (shooter && !(shooter instanceof $Player)) {
 		damage = (global.getOrDefault(global.monsterRangedDamageBase[shooter.getType()], 15)) * (velocity);
 		if (shooter.getServer())
-			damage *= global.monsterRangedDamageMul[global.getCurrentChapter(shooter.getServer())];
+			damage *= global.monsterRangedDamageMul[global.getCurrentChapter()];
 	}
 
 	damage = Math.ceil(damage * velocity);

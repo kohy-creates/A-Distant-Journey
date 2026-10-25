@@ -7,7 +7,7 @@ BlockEvents.rightClicked('command_block', event => {
 });
 
 EntityEvents.spawned('cataclysm:netherite_monstrosity', event => {
-	const chapter = global.getCurrentChapter(event.getServer());
+	const chapter = global.getCurrentChapter();
 	const entity = event.getEntity();
 	let nbt = entity.nbt
 	if (chapter >= 3) {

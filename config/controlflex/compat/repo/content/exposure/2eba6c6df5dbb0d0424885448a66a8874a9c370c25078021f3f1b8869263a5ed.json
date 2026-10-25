@@ -1,0 +1,57 @@
+{
+  "mod_id": "exposure",
+  "mod_name": "Exposure",
+  "home_page": "https://www.curseforge.com/minecraft/mc-mods/exposure",
+  "contributors": [
+    "ifels"
+  ],
+  "dependencies": [
+    {
+      "mod_id": "cfx_compat_exposure",
+      "mod_name": "Control Flex x Exposure",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/cfx-x-exposure"
+      ]
+    }
+  ],
+  "config_version": "1.0.0",
+  "mod_versions": [
+    {
+      "version": "",
+      "inGameKeys": {},
+      "screenKeys": {},
+      "overlayKeys": {
+        "key.exposure.camera_controls": {
+          "channels": [
+            "virtualKbm"
+          ]
+        }
+      },
+      "tips": [
+        {
+          "key": "key.exposure.camera_controls",
+          "text": {
+            "en_us": "Exposure only reacts to this key inside real key events, not through key binding state.\nSo it must be delivered by the virtualKbm channel - otherwise a controller cannot open the camera controls.",
+            "zh_cn": "Exposure 只在真实键盘事件里响应此键，不读按键绑定状态；\n所以必须用 virtualKbm（虚拟键盘）通道投递真实按键，否则手柄打不开相机控制界面。"
+          }
+        }
+      ],
+      "screen": {
+        "io.github.mortuusars.exposure.client.camera.viewfinder.ViewfinderCameraControlsScreen": {
+          "virtualWheelRepeatMs": 50,
+          "bindings": {
+            "gui_prev_tab": "",
+            "gui_next_tab": "",
+            "mouse_wheel_up": "leftBumper|HOLD",
+            "mouse_wheel_down": "rightBumper|HOLD"
+          }
+        }
+      },
+      "overlay": {
+        "io.github.mortuusars.exposure.client.camera.viewfinder.ViewfinderOverlay": {
+          "virtualWheelRepeatMs": 100
+        }
+      }
+    }
+  ]
+}

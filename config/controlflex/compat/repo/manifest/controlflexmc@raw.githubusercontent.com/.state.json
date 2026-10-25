@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "baseUrl": "https://raw.githubusercontent.com/ControlFlexMC/cfx-compat-configs/refs/heads/0.8.8",
+  "mcVersion": "1.20.1",
+  "loader": "forge",
+  "lastSyncAt": "2026-10-24T14:03:34.345105500Z",
+  "manifestSha256": "31e61562d61a6cf35c97f25419874e3d604c00cacf21ecbbd02ab9d5f89ae4cd"
+}

@@ -1,0 +1,46 @@
+{
+  "mod_id": "epicfight",
+  "mod_name": "Epic Fight",
+  "home_page": "https://www.curseforge.com/minecraft/mc-mods/epic-fight-mod",
+  "mod_versions": [
+    {
+      "version": "",
+      "ignoreKeys": [
+        "key.epicfight.switch_vanilla_model_debug",
+        "key.epicfight.config"
+      ],
+      "inGameKeys": {
+        "channels": ["keyMapping"],
+        "key.epicfight.switch_mode": {},
+        "key.epicfight.guard": {},
+        "key.epicfight.attack": {},
+        "key.epicfight.weapon_innate_skill": {},
+        "key.epicfight.dodge": {},
+        "key.epicfight.mover_skill": {},
+        "key.epicfight.lock_on": {},
+        "key.epicfight.lock_on_shift_left": {},
+        "key.epicfight.lock_on_shift_right": {},
+        "key.epicfight.lock_on_shift_freely": {}
+      },
+      "screenKeys": {
+        "key.epicfight.show_tooltip": {}
+      },
+      "tips": [
+        {
+          "key": "key.epicfight.show_tooltip",
+          "text": {
+            "en_us": "Install 'Control Flex x Epic Fight' mod for full controller support",
+            "zh_cn": "安装 'Control Flex x Epic Fight' 模组以获得完整手柄支持"
+          }
+        },
+        {
+          "key": "key.epicfight.weapon_innate_skill",
+          "text": {
+            "en_us": "Install 'Control Flex x Epic Fight' mod for full controller support",
+            "zh_cn": "安装 'Control Flex x Epic Fight' 模组以获得完整手柄支持"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "mod_id": "efn",
+  "mod_name": "EpicFight-Nightfall",
+  "home_page": "https://www.curseforge.com/minecraft/mc-mods/epicfight-nightfall",
+  "mod_versions": [
+    {
+      "version": "",
+      "inGameKeys": {
+        "channels": ["eventBus"],
+        "key.efn.summoned_sword": {},
+        "key.efn.zansetsu_input_switch": {},
+        "key.efn.angel": {},
+        "key.efn.demon": {}
+      },
+      "itemSuppressKeys": [
+        {
+          "item": "efn:yamato_dmc*",
+          "playerState": ["epicfight:battle_mode"],
+          "suppressActions": ["use"]
+        }
+      ]
+    }
+  ]
+}

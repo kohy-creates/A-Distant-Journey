@@ -75,7 +75,7 @@ EntityEvents.hurt('player', event => {
 		}
 
 		if (chosenEntry) {
-			let currentStage = global.getCurrentChapter(event.getServer());
+			let currentStage = global.getCurrentChapter();
 			let chance = chosenEntry.chance, amplifier = chosenEntry.level || 1, duration = chosenEntry.duration;
 			if (Array.isArray(chance)) chance = EntityModifications._logic.getStageValue(chance, currentStage);
 			if (Array.isArray(amplifier)) amplifier = EntityModifications._logic.getStageValue(amplifier, currentStage);

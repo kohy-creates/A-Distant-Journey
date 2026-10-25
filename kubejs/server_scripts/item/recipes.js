@@ -1268,14 +1268,14 @@ ServerEvents.recipes((event) => {
 			`8x ${global.ifDyeDepot(color, 'dye_the_world', 'quark')}:${color}_shingles`,
 			[
 				dye(color),
-				'quark:_shingles',
-				'quark:_shingles',
-				'quark:_shingles',
-				'quark:_shingles',
-				'quark:_shingles',
-				'quark:_shingles',
-				'quark:_shingles',
-				'quark:_shingles'
+				'quark:shingles',
+				'quark:shingles',
+				'quark:shingles',
+				'quark:shingles',
+				'quark:shingles',
+				'quark:shingles',
+				'quark:shingles',
+				'quark:shingles'
 			]
 		).id(`adj:${color}_shingles`);
 

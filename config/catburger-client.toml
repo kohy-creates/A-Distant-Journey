@@ -7,10 +7,11 @@ entityDataFallback = "LOCAL"
 	#Independent scatters them loosely around the configured position, formation lines them up in a tail where each follows the one ahead
 	#Allowed Values: INDEPENDENT, FORMATION
 	followerRenderMode = "INDEPENDENT"
-	#Render only one follower of each kind when the same follower is worn in several slots
-	deduplicateRendering = true
 	#Give each follower its own float rhythm and period instead of floating in sync
 	independentFloat = true
+	#How duplicates of the same item worn in several slots are resolved, split by glint keeps one of each glint state while the prefer modes keep only the stated one
+	#Allowed Values: OFF, SPLIT_BY_GLINT, PREFER_NO_GLINT, PREFER_GLINT
+	deduplicateMode = "SPLIT_BY_GLINT"
 
 	#Settings for independent mode, where each follower drifts on its own
 	[MultipleFollowers.IndependentMode]

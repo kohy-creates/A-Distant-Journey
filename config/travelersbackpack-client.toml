@@ -29,6 +29,10 @@
 		#Overlay opacity
 		#Range: 0.0 ~ 1.0
 		opacity = 0.75
+		#The tool belt GUI will always display all the slots, even when empty
+		displayEmptySlots = false
+		#Allows to scroll through hotbar slots while the tool belt GUI is open
+		allowHotbarScrolling = false
 
 	#The position of the Overlay on the screen
 	[client.overlay]

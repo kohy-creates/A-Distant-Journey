@@ -1,10 +1,8 @@
 const HealthRegen = {
-	hardcore: false,
 	maxFireTicks: 240
 };
 
 ServerEvents.loaded(event => {
-	HealthRegen.hardcore = event.getServer().isHardcore()
 	event.getServer().gameRules.set('naturalRegeneration', false);
 });
 
@@ -48,13 +46,6 @@ PlayerEvents.tick(event => {
 	eRT = (Math.min(RT, 600) / 100) + (Math.max(RT - 600, 0) / 200);
 	R = (player.getMaxHealth() / 400 * 0.85 + 0.15) * eRT;
 	R *= (player.isMoving()) ? 0.5 : 1.25;
-
-	// if (player.foodLevel < 16) R *= 0.8;
-	// else if (player.foodLevel < 10) R *= 0.5;
-	// else if (player.foodLevel < 6) R *= 0.2;
-	// else if (player.foodLevel == 0) R *= 0;
-
-	// if (HealthRegen.hardcore && player.saturation == 0 && player.foodLevel < 20) R *= 0.75;
 
 	RC = persistentData.contains('regenerationTimer') ? persistentData.getShort('regenerationTimer') : 0;
 

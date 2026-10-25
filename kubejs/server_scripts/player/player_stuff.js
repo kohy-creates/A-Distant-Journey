@@ -281,13 +281,13 @@ ADJServerEvents.adjHurt(event => {
 				case 'botania:terrasteel_helmet': {
 					let nbt = helmet.nbt;
 					if (nbt.AncientWill_ahrim) {
-						victim.addEffect(global.newMobEffectInstance('minecraft:weakness', global.duration('0:08'), 1, true, false, true));
+						victim.addEffect(global.newMobEffectInstance('minecraft:weakness', '0:08', 1, true, false, true));
 					}
 					if (nbt.AncientWill_guthan) {
 						player.adjcore$heal(Math.ceil(event.getDamage() * 0.1), player, 'will_of_guthan', true, false);
 					}
 					if (nbt.AncientWill_torag) {
-						victim.addEffect(global.newMobEffectInstance('minecraft:slowness', global.duration('0:08'), 1, true, false, true));
+						victim.addEffect(global.newMobEffectInstance('minecraft:slowness', '0:08', 1, true, false, true));
 					}
 					if (nbt.AncientWill_verac) {
 						global.getEntitiesInRadius(level, victim.x, victim.y, victim.z, 1.5).forEach(/** @param {Internal.Entity_} entity */ entity => {
@@ -295,12 +295,12 @@ ADJServerEvents.adjHurt(event => {
 						});
 					}
 					if (nbt.AncientWill_karil) {
-						victim.addEffect(global.newMobEffectInstance('minecraft:wither', global.duration('0:08'), 2, true, false, true));
+						victim.addEffect(global.newMobEffectInstance('minecraft:wither', '0:08', 2, true, false, true));
 					}
 				}
 			}
 			if (setBonusActive(player, 'twilightforest:fiery')) {
-				player.addEffect(global.newMobEffectInstance('unusualend:swift_strikes', global.duration('0:05'), 1, true, false, true));
+				player.addEffect(global.newMobEffectInstance('unusualend:swift_strikes', '0:05', 1, true, false, true));
 			}
 		}
 	}
@@ -326,29 +326,25 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 
 		// Stuff that depends on weapon groups
 		if (id.includes('stormyx')) {
-			victim.addEffect(global.newMobEffectInstance('cofh_core:shocked', global.duration('0:08'), 0))
+			victim.addEffect(global.newMobEffectInstance('cofh_core:shocked', '0:08', 0))
 		}
 		if (id.includes('mcdw:soul_dagger')) {
-			attacker.addEffect(global.newMobEffectInstance('ars_nouveau:mana_regen', global.duration('0:02'), (id === 'mcdw:soul_dagger_eternal_knife') ? 1 : 0));
+			attacker.addEffect(global.newMobEffectInstance('ars_nouveau:mana_regen', '0:02', (id === 'mcdw:soul_dagger_eternal_knife') ? 1 : 0));
 		}
 		if (id.includes('star_platinum')) {
-			let fallingStar = level.createEntity('botania:falling_star');
-			fallingStar.setPos(new Vec3d(victim.x, victim.y + 16, victim.z));
-			fallingStar.setMotionY(-1)
-			fallingStar.setOwner(attacker);
-			fallingStar.spawn();
+			global.summonFallingStar(attacker.level, victim.x, victim.y, victim.z, attacker, damage * 0.35);
 		}
 
 		// Stuff that depends on item ID
 		switch (id) {
 			case 'mcdw:dagger_resolute_tempest_knife': {
-				victim.addEffect(global.newMobEffectInstance('slowness', global.duration('0:10'), 1)); // -30%
-				attacker.addEffect(global.newMobEffectInstance('speed', global.duration('0:10'), 2)); // +30%
+				victim.addEffect(global.newMobEffectInstance('slowness', '0:10', 1)); // -30%
+				attacker.addEffect(global.newMobEffectInstance('speed', '0:10', 2)); // +30%
 				break;
 			}
 			case 'mcdw:glaive_grave_bane': {
 				if (victim.isUndead()) {
-					victim.addEffect(global.newMobEffectInstance('ars_nouveau:hex', global.duration('0:10'), 1, false, true, true)); // Vulnerability Hex II = 30% increased damage
+					victim.addEffect(global.newMobEffectInstance('ars_nouveau:hex', '0:10', 1, false, true, true)); // Vulnerability Hex II = 30% increased damage
 					global.playSound(
 						victim.level,
 						victim.x, victim.y + victim.getEyeHeight(), victim.z,
@@ -365,7 +361,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 				break;
 			}
 			case 'mcdw:glaive_venom_glaive': {
-				victim.addEffect(global.newMobEffectInstance('minecraft:poison', global.duration('0:07'), 1, false, true, true));
+				victim.addEffect(global.newMobEffectInstance('minecraft:poison', '0:07', 1, false, true, true));
 				break;
 			}
 			case 'mcdw:sword_heartstealer': {
@@ -431,7 +427,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 			case 'mcdw:scythe_skull_scythe':
 			case 'mcdw:scythe_soul_scythe': {
 				if (id == 'mcdw:scythe_skull_scythe') {
-					victim.addEffect(global.newMobEffectInstance('minecraft:wither', global.duration('0:07'), 1, false, true, true));
+					victim.addEffect(global.newMobEffectInstance('minecraft:wither', '0:07', 1, false, true, true));
 				} 
 				else if (id == 'mcdw:scythe_frost_scythe') {
 					victim.setTicksFrozen(victim.getTicksFrozen() + 50);
@@ -518,7 +514,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 		// Accessories
 		let type = event.getSource().getType();
 		if (attacker.isCuriosEquipped('kubejs:withering_necklace') && type !== 'minecraft.wither') {
-			victim.addEffect(global.newMobEffectInstance('wither', global.duration('0:10'), 1));
+			victim.addEffect(global.newMobEffectInstance('wither', '0:10', 1));
 		}
 		if (attacker.isCuriosEquipped('kubejs:ring_of_fire') && victim.isOnFire()) {
 			damage += 5;
@@ -554,7 +550,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 			// Accessories
 			if (victim.isCuriosEquipped('kubejs:wither_rose_ring')) {
 				attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 0.6);
-				attacker.addEffect(global.newMobEffectInstance('wither', global.duration('0:04'), 1));
+				attacker.addEffect(global.newMobEffectInstance('wither', '0:04', 1));
 			}
 			else if (victim.isCuriosEquipped('kubejs:rose_ring')) {
 				attacker.attack(global.getDamageSource(player.getLevel(), 'thorns', null, player), event.getAmount() * 0.35);
@@ -565,7 +561,7 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, /** @param {Internal.Li
 			}
 		}
 		// This section goes off if there is no attacker
-		if (source.is(DamageIndicatorTags.IS_FIRE) && victim.hasCurioEquipped('kubejs:shield_of_fire') || victim.hasCurioEquipped('kubejs:palladium_hero_aegis')) {
+		if (source.is(DamageIndicatorTags.IS_FIRE) && victim.isCurioEquipped('kubejs:shield_of_fire') || victim.isCurioEquipped('kubejs:palladium_hero_aegis')) {
 			damage = 0;
 		}
 	}

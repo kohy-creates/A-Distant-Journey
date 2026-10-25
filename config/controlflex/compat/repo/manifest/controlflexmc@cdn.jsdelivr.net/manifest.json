@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "name": "ControlFlex Community Configs",
+  "generated": "2026-09-21T00:33:49Z",
+  "items": [
+    {
+      "mod_id": "create",
+      "mod_name": "Create",
+      "path": "mods/create.json",
+      "sha256": "12f1549f8c496fc0f5e195b2d209e846ab1fb186730b285c38b089e4e0a530e0",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/create"
+      ]
+    },
+    {
+      "mod_id": "dragonminez",
+      "mod_name": "DragonMine Z",
+      "path": "mods/dragonminez.json",
+      "sha256": "c7038f3a7982f1b899fa218b6dbef5b94ae022d2febc6dff54384eab7edebd69",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/dragonminez"
+      ]
+    },
+    {
+      "mod_id": "efn",
+      "mod_name": "EpicFight-Nightfall",
+      "path": "mods/nightfall.json",
+      "sha256": "bdeb23bc2c393d564f2a98e4469c3004f18e1b109c6200ac52126edccf825409",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/epicfight-nightfall"
+      ]
+    },
+    {
+      "mod_id": "epicfight",
+      "mod_name": "Epic Fight",
+      "path": "mods/epicfight.json",
+      "sha256": "9c10e6862b337f1246ad6dd977d3af2af3dd71053ea8f51422130bd62a005e59",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/epic-fight-mod"
+      ]
+    },
+    {
+      "mod_id": "exposure",
+      "mod_name": "Exposure",
+      "path": "mods/exposure.json",
+      "sha256": "2eba6c6df5dbb0d0424885448a66a8874a9c370c25078021f3f1b8869263a5ed",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/exposure"
+      ]
+    },
+    {
+      "mod_id": "irons_spellbooks",
+      "mod_name": "Iron's Spells 'n Spellbooks",
+      "path": "mods/irons_spellbooks.json",
+      "sha256": "4c3f08eb0f84c3bf0ad564f35c29ef71ba169ce361c05dd4bcaca3befa578453",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks"
+      ]
+    },
+    {
+      "mod_id": "jei",
+      "mod_name": "Just Enough Items (JEI)",
+      "path": "mods/jei.json",
+      "sha256": "a4dcfadbca3d0a8b19be2ec5d191fc12801d199583393ef0fec13007e06b927f",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/jei"
+      ]
+    },
+    {
+      "mod_id": "minemenu",
+      "mod_name": "Mine Menu",
+      "path": "mods/minemenu.json",
+      "sha256": "ae27f3d32845514acac2e7c21587ab671bd61eb76250aae2b6eafa00a2b31ca8",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/minemenu"
+      ]
+    },
+    {
+      "mod_id": "tacz",
+      "mod_name": "Timeless & Classics Guns: Zero",
+      "path": "mods/tacz.json",
+      "sha256": "1440798388d0b79201bcf96ac36e222bc33426e8d4beff3ec4a56169f842ff2e",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/timeless-and-classics-zero"
+      ]
+    }
+  ]
+}

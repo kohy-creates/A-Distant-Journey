@@ -16,7 +16,7 @@ EntityEvents.spawned(event => {
 	];
 
 	if (global.bossMobs.includes(entity.getType()) && !bossesSkipMessages.includes(entity.getType()) && !global.hasTag(entity, 'adj.announced_spawn')) {
-		global.broadcast(server, global.announcementMsg(`${entity.getDisplayName().getString()} has awoken!`, global.messageColors.bossSpawned, true));
+		global.broadcast(global.announcementMsg(`${entity.getDisplayName().getString()} has awoken!`, global.messageColors.bossSpawned, true));
 		entity.addTag('adj.announced_spawn');
 	}
 });
@@ -25,6 +25,6 @@ EntityEvents.death(event => {
 	const entity = event.getEntity();
 	if (global.bossMobs.includes(entity.getType())) {
 		const server = event.getServer();
-		global.broadcast(server, global.announcementMsg(`${entity.getDisplayName().getString()} has been defeated!`, global.messageColors.bossDefeated, true));
+		global.broadcast(global.announcementMsg(`${entity.getDisplayName().getString()} has been defeated!`, global.messageColors.bossDefeated, true));
 	}
 });

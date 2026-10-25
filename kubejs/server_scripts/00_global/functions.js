@@ -109,8 +109,8 @@ global.zenithSwords = [
  * @param {Internal.MinecraftServer_} server 
  * @param {Internal.ComponentKJS_} msg 
  */
-global.broadcast = function (server, msg) {
-	server.players.forEach(player => {
+global.broadcast = function (msg) {
+	Utils.getServer().players.forEach(player => {
 		player.tell(msg);
 	});
 };
@@ -145,8 +145,8 @@ global.announcementMsg = function (text, color, noItalic) {
  * @param {Internal.Player_} player 
  * @param {Internal.ResourceLocation_} advancement 
  */
-global.grantAdvancement = function (server, player, advancement) {
-	server.runCommandSilent(
+global.grantAdvancement = function (player, advancement) {
+	Utils.getServer().runCommandSilent(
 		`/advancement grant ${player.getUsername()} only ${advancement}`
 	);
 };
@@ -156,8 +156,8 @@ global.grantAdvancement = function (server, player, advancement) {
  * @param {Internal.MinecraftServer_} server
  * @returns {integer}
  */
-global.getCurrentChapter = function (server) {
-	let chapters = global.getOrDefault(server.persistentData.chapters, {});
+global.getCurrentChapter = function () {
+	let chapters = global.getOrDefault(Utils.getServer().persistentData.chapters, {});
 	let currentStage = parseInt((global.getOrDefault(chapters.current_stage, "chapter_0")).replace("chapter_", ""));
 	return currentStage;
 };
@@ -167,8 +167,8 @@ global.getCurrentChapter = function (server) {
  * @param {Internal.MinecraftServer_} server 
  * @returns {boolean}
  */
-global.isHardmode = function (server) {
-	return global.getCurrentChapter(server) >= 3;
+global.isHardmode = function () {
+	return global.getCurrentChapter() >= 3;
 };
 
 /**
@@ -177,8 +177,8 @@ global.isHardmode = function (server) {
  * @param {Internal.MinecraftServer_} server 
  * @returns {boolean}
  */
-global.isHardcore = function (server) {
-	return server.isHardcore();
+global.isHardcore = function () {
+	return Utils.getServer().isHardcore();
 };
 
 /**
@@ -311,4 +311,29 @@ global.emitParticlesFromEntity = function (entity, particle, count, speed) {
 		entity.x, entity.y + entity.bbHeight / 2, entity.z,
 		entity.bbWidth / 2, entity.bbHeight / 3, entity.bbWidth / 2,
 		count, global.getOrDefault(speed, 0));
+};
+
+/**
+ * Summons a falling star at the specified location.
+ * @param {Internal.Level_} level 
+ * @param {number} x 
+ * @param {number} y 
+ * @param {number} z 
+ * @param {Internal.Entity_} owner 
+ * @param {number} damage 
+ */
+global.summonFallingStar = function (level, x, y, z, owner, damage) {
+	// let posVec = Vec3d.atLowerCornerOf(new Vec3i(x, y, z));
+	// let motVec = new Vec3d((0.5 * Math.random() - 0.25) * 18, 24, (0.5 * Math.random() - 0.25) * 18);
+	// posVec = posVec.add(motVec);
+	// motVec = motVec.normalize().reverse().scale(1.5);
+
+	/** @type {Internal.Projectile_} */
+	let fallingStar = level.createEntity('botania:falling_star');
+	fallingStar.setPos(x, y + 15, z);
+	// fallingStar.setDeltaMovement(motVec);
+	fallingStar.setMotionY(-1)
+	fallingStar.setOwner(owner);
+	fallingStar.persistentData.damage = global.getOrDefault(damage, 15);
+	fallingStar.spawn();
 };

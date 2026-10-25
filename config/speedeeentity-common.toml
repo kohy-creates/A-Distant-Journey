@@ -9,12 +9,24 @@ enableOfemForTnt = true
 #Enable the Optimised Fast Entity Movement optimisation for all entities.
 #Default: true
 enableOfemForAll = true
-#Stand down automatically when a mod is installed whose own collision hook this optimisation would bypass.
-#Immersive Portals redirects the same call this mod wraps, and mixin ordering always puts its redirect inside ours, so our fast path skips it.
+#Turn skipAirScans off automatically while a mod is installed that keeps blocks outside the level's own chunk sections, where those scans cannot see them.
+#Currently Valkyrien Skies (ships) and Sable (sub-levels). Collision itself needs no such switch: it works alongside Immersive Portals, Sable and Valkyrien Skies.
 #Default: true
 disableWithIncompatibleMods = true
 #Answer entity-vs-entity collision for fast entities from a per-tick index of the few entities that can be collided with (boats, shulkers, ...) instead of scanning every entity near the sweep.
 #This is what keeps a large cannon from costing N*N pair tests per tick. Turn off only if another mod's entities are found to collide differently with it on.
 #Default: true
 useEntityIndex = true
+#Let a stack of identical non-living entities (same position, box and velocity, such as TNT in a cannon barrel or a sand stack) share one collision answer and one supporting-block answer per tick, instead of each computing its own.
+#The shared answer is exactly the one each entity would have computed. Turn off only to rule it out while diagnosing a problem.
+#Default: true
+shareIdenticalMoves = true
+#Skip the per-move world scans that can only come back empty: the fall-damage-reset raycast (and, up to 1.21.1, the fire/lava check) whenever every block they would read is in an all-air chunk section.
+#Off automatically while Valkyrien Skies or Sable is installed; see disableWithIncompatibleMods.
+#Default: true
+skipAirScans = true
+#Entities this mod leaves entirely to vanilla: a comma-separated list of entity ids ("alexsmobs:grizzly_bear") and whole mods ("alexsmobs").
+#For a mod whose own entities need their movement left alone.
+#Default: "" (none)
+excludedEntities = ""
 

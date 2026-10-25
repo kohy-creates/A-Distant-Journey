@@ -136,7 +136,7 @@ const DecursioStages = {
 	sendChapterAnnouncements: function (server, stage) {
 		console.log(stage)
 		DecursioStages.chapterMessages[stage].forEach(msg => {
-			global.broadcast(server, msg);
+			global.broadcast(msg);
 		})
 	},
 	cache: {
@@ -239,7 +239,7 @@ ServerEvents.tick(event => {
 	if (DecursioStages.cache.ticker == DecursioStages.cache.interval) {
 		DecursioStages.cache.ticker = 0;
 
-		DecursioStages.cache.currentChapter = global.getCurrentChapter(event.getServer());
+		DecursioStages.cache.currentChapter = global.getCurrentChapter();
 		if (DecursioStages.cache.chapterCached == null || DecursioStages.cache.chapterCached != DecursioStages.cache.currentChapter) {
 			DecursioStages.cache.generateCache();
 		}
@@ -298,7 +298,7 @@ PlayerEvents.tick(event => {
 					server.runCommandSilent(
 						'/decstages add ' + player.getUsername() + ' ' + stageToGrant + ' true'
 					);
-					global.grantAdvancement(server, player, `adj:chapters/${stageToGrant}`);
+					global.grantAdvancement(player, `adj:chapters/${stageToGrant}`);
 				}
 			}
 
@@ -312,7 +312,7 @@ PlayerEvents.tick(event => {
 	// Valkyrum side progression
 	if (server.persistentData.valkyrumUnlocked && !player.stages.has('valkyrum_unlocked')) {
 		player.stages.add('valkyrum_unlocked');
-		global.grantAdvancement(server, player, `adj:chapters/valkyrum`);
+		global.grantAdvancement(player, `adj:chapters/valkyrum`);
 	}
 });
 
@@ -321,7 +321,7 @@ EntityEvents.death('aether:valkyrie_queen', event => {
 	const server = event.getServer();
 	if (!server.persistentData.valkyrumUnlocked) {
 		server.persistentData.valkyrumUnlocked = true;
-		global.broadcast(server, global.announcementMsg('The depths of The Aether have been blessed with Valkyrum', global.messageColors.newOre));
+		global.broadcast(global.announcementMsg('The depths of The Aether have been blessed with Valkyrum', global.messageColors.newOre));
 	}
 });
 

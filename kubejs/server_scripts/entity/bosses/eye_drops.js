@@ -15,7 +15,7 @@ EntityEvents.death(event => {
 		if (!pData.eyes) {
 			pData.eyes = {};
 		}
-		let chance = (server.isHardcore()) ? 33 : 2;
+		let chance = (global.isHardcore()) ? 33 : 2;
 		if (!pData.eyes[eye]) {
 			pData.eyes[eye] = true;
 			chance = 100;

@@ -23,9 +23,11 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 	const victim = event.getEntity();
 	const source = event.getSource()
 	const player = source.getActual();
+
 	if (player instanceof $Player) {
 		let immediate = source.getImmediate();
 		let type = source.getType();
+
 		switch (type) {
 			case 'twilightforest.lifedrain': {
 				if (!player.adjcore$tryCastSpell(5)) {
@@ -51,29 +53,23 @@ NativeEvents.onEvent('highest', false, $LivingHurtEvent, event => {
 						event.setCanceled(true);
 						if (global.hasTag(immediate, 'adj.ignore_water_bolt')) return;
 						immediate.addTag('adj.ignore_water_bolt');
-						victim.attack(
-							global.getDamageSource(player.getLevel(), 'player_attack', null, player),
-							global.calculateSpellDamage(player, getBaseDamage('alexscaves:sea_staff'), false)
-						);
-					}
-				}
-			}
-			case 'player': {
-				// Terramity is a funny mod
-				if (immediate instanceof $Player) {
-					let item = immediate.getMainHandItem().getId();
-					switch (item) {
-						case 'terramity:enderswap_sceptre':
-						case 'terramity:lightning_sceptre':
-						case 'terramity:fireball_sceptre': {
-							event.setAmount(
-								global.calculateSpellDamage(player, getBaseDamage(item), false)
+						global.getEntitiesInRadius(immediate.level, immediate.x, immediate.y, immediate.z, 1.5).forEach(e => {
+							if (e == player) return;
+							e.attack(
+								global.getDamageSource(player.getLevel(), 'player_attack', null, player),
+								global.calculateSpellDamage(player, getBaseDamage('alexscaves:sea_staff'), false)
 							);
-							break;
-						}
+						});
 					}
 				}
 			}
+			// case 'player': {
+			// 	switch (immediate.getType()) {
+			// 		case 'botania:falling_star': {
+			// 			event.setAmount(immediate.persistentData.damage);
+			// 		}
+			// 	}
+			// }
 		}
 	};
 });

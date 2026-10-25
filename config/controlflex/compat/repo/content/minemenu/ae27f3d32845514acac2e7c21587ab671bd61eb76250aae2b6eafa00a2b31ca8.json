@@ -1,0 +1,61 @@
+{
+  "mod_id": "minemenu",
+  "mod_name": "Mine Menu",
+  "home_page": "https://www.curseforge.com/minecraft/mc-mods/minemenu",
+  "contributors": [
+    "ifels"
+  ],
+  "config_version": "1.0.0",
+  "mod_versions": [
+    {
+      "version": "",
+      "ignoreKeys": [],
+      "phasePersistentKeys": {
+        "key.open_menu": [
+          "inGame",
+          "screen"
+        ]
+      },
+      "inGameKeys": {
+        "channels": [
+          "keyMapping"
+        ],
+        "key.open_menu": {
+          "channels": [
+            "glfwPoll"
+          ]
+        }
+      },
+      "overlayKeys": {},
+      "screenKeys": {
+        "key.open_menu": {
+          "channels": [
+            "glfwPoll"
+          ]
+        }
+      },
+      "tips": [
+        {
+          "key": "key.open_menu",
+          "text": {
+            "en_us": "Hold to open the MineMenu radial menu. While the menu (or any screen) is open, this binding stays logically pressed so the menu does not flicker. Use HOLD mode only. Do not bind the same button as a layer-switch key.",
+            "zh_cn": "按住打开 MineMenu 环形菜单。打开菜单或其他界面后，该键会保持“按下”状态，避免菜单闪烁，仅支持 HOLD 模式，不要与切层按键绑定到同一物理键。"
+          }
+        }
+      ],
+      "screen": {
+        "dmillerw.menu.gui.RadialMenuScreen": {
+          "leftStick": {
+            "behavior": "DEFAULT"
+          },
+          "rightStick": {
+            "behavior": "RADIAL_PATH",
+            "threshold": 0.5,
+            "cursorRadius": 90,
+            "angleBias": 1.0
+          }
+        }
+      }
+    }
+  ]
+}

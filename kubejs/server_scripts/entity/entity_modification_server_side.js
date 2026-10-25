@@ -305,8 +305,8 @@ EntityEvents.spawned((event) => {
 	if (!(entity instanceof $LivingEntity)) return;
 
 	let server = event.server;
-	let isHardcore = server.worldData.isHardcore();
-	let currentStage = global.getCurrentChapter(server);
+	let isHardcore = global.isHardcore();
+	let currentStage = global.getCurrentChapter();
 
 	EntityModifications._logic.scaleEntity(entity, currentStage, server);
 	EntityModifications._modifications.setGear(entity, isHardcore, currentStage);

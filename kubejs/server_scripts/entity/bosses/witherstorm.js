@@ -116,7 +116,7 @@ function onWSPhaseChange(newPhase, server) {
 			text.push('A horror beyond comprehension has awoken');
 			text.push('R u n   w h i l e   i t \' s   s t i l l   r e g a i n i n g   s t r e n g t h');
 			server.runCommandSilent('/attribute @w witherstormmod:evolution_speed base set 1')
-			if (server.isHardcore()) {
+			if (global.isHardcore()) {
 				let slowSpeed = global.WitherStormFlyingSpeed * 1.6;
 				let fastSpeed = global.WitherStormFlyingSpeed * 3.5;
 				server.runCommandSilent(`/attribute @w witherstormmod:slow_flying_speed base set ${slowSpeed}`)
@@ -177,7 +177,7 @@ function onWSPhaseChange(newPhase, server) {
 			break;
 		}
 	}
-	if (!server.isHardcore()) {
+	if (!global.isHardcore()) {
 		text.forEach(line => {
 			const command = `/eta queue @a status_messages "<dur:140>[fade in=10 out=10][anchor value=BOTTOM_CENTER][align value=CENTER][offset x=0 y=-85]<color col=af4bff><shadow c=540C94>${line}"`;
 			server.runCommandSilent(command);

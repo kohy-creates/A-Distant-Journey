@@ -1,0 +1,97 @@
+{
+  "mod_id": "controlflex",
+  "categories": [
+    {
+      "id": "basic",
+      "name": "controlflex.guide.category.basic",
+      "guides": [
+        {
+          "id": "movement",
+          "title": "controlflex.guide.basic.movement",
+          "trigger": { "type": "first_join" },
+          "entries": [
+            { "action": "move_forward", "label": "controlflex.guide.entry.move", "display": "auto_move", "hud": true },
+            { "action": "jump", "label": "controlflex.guide.entry.jump", "hud": true },
+            { "action": "sneak", "label": "controlflex.guide.entry.sneak" },
+            { "action": "toggle_sneak", "label": "controlflex.guide.entry.toggle_sneak" },
+            { "action": "sprint", "label": "controlflex.guide.entry.sprint" },
+            { "action": "toggle_sprint", "label": "controlflex.guide.entry.toggle_sprint" }
+          ]
+        },
+        {
+          "id": "interaction",
+          "title": "controlflex.guide.basic.interaction",
+          "trigger": { "type": "first_join" },
+          "entries": [
+            { "action": "attack", "label": "controlflex.guide.entry.attack", "hud": true },
+            { "action": "use", "label": "controlflex.guide.entry.use_item", "hud": true },
+            { "action": "inventory", "label": "controlflex.guide.entry.open_inventory", "hud": true },
+            { "action": "drop", "label": "controlflex.guide.entry.drop" },
+            { "action": "drop_stack", "label": "controlflex.guide.entry.drop_stack", "hud": true },
+            { "action": "swap_hands", "label": "controlflex.guide.entry.swap_hands" }
+          ]
+        },
+        {
+          "id": "hotbar",
+          "title": "controlflex.guide.basic.hotbar",
+          "trigger": { "type": "first_join" },
+          "entries": [
+            { "action": "hotbar_prev", "label": "controlflex.guide.entry.hotbar_prev", "hud": true },
+            { "action": "hotbar_next", "label": "controlflex.guide.entry.hotbar_next", "hud": true }
+          ]
+        },
+        {
+          "id": "camera",
+          "title": "controlflex.guide.basic.camera",
+          "trigger": { "type": "first_join" },
+          "entries": [
+            { "action": "look_up", "label": "controlflex.guide.entry.look_turn", "display": "auto_look", "hud": true },
+            { "action": "toggle_perspective", "label": "controlflex.guide.entry.toggle_perspective" }
+          ]
+        },
+        {
+          "id": "guide_menu",
+          "title": "controlflex.guide.basic.guide_menu",
+          "trigger": { "type": "first_join" },
+          "entries": [
+            { "action": "open_guide", "label": "controlflex.guide.entry.open_guide", "hud": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "name": "controlflex.guide.category.advanced",
+      "guides": [
+        {
+          "id": "layers",
+          "title": "controlflex.guide.advanced.layers",
+          "trigger": { "type": "none" },
+          "entries": [
+            { "action": "layer_shift1", "label": "controlflex.guide.entry.layer_shift1" },
+            { "action": "layer_shift2", "label": "controlflex.guide.entry.layer_shift2" },
+            { "action": "layer_main", "label": "controlflex.guide.entry.layer_return_main", "binding_layer": "shift1" },
+            { "action": "layer_main", "label": "controlflex.guide.entry.layer_return_main", "binding_layer": "shift2" }
+          ]
+        },
+        {
+          "id": "radial_menu",
+          "title": "controlflex.guide.advanced.radial_menus",
+          "trigger": { "type": "none" },
+          "entries": [
+            { "action": "controlflex:key.controlflex.open_radial_menu_1", "label": "controlflex.guide.entry.open_radial_menu_1", "binding_layer": "main" },
+            { "action": "controlflex:key.controlflex.open_radial_menu_2", "label": "controlflex.guide.entry.open_radial_menu_2", "binding_layer": "shift1" },
+            { "action": "controlflex:key.controlflex.open_radial_menu_3", "label": "controlflex.guide.entry.open_radial_menu_3", "binding_layer": "shift2" },
+            { "action": "controlflex:key.controlflex.open_radial_menu_4", "label": "controlflex.guide.entry.open_radial_menu_4", "binding_layer": "shift3" },
+            { "action": "controlflex:key.controlflex.open_radial_menu_5", "label": "controlflex.guide.entry.open_radial_menu_5", "binding_layer": "shift4" },
+            { "action": "controlflex:key.controlflex.open_radial_menu_1", "label": "controlflex.guide.entry.close_radial_menu_hold", "binding_layer": "main" },
+            { "action": "look_up", "label": "controlflex.guide.entry.radial_select_slot", "display": "auto_look" },
+            { "action": "gui_press", "label": "controlflex.guide.entry.radial_confirm_slot", "binding_layer": "gui" },
+            { "action": "gui_back", "label": "controlflex.guide.entry.radial_close_press", "binding_layer": "gui" },
+            { "action": "use", "label": "controlflex.guide.entry.radial_use_item_slot" }
+          ]
+        }
+      ]
+    }
+  ]
+}

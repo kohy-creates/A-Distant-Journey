@@ -41,7 +41,7 @@ const TwilightForestProgression = {
 		function processEntry(type) {
 			if (isCompletedNotUnlocked(type)) {
 				data[type].unlocked = true;
-				global.broadcast(server, global.announcementMsg(Text.of(TwilightForestProgression.messages[type]), global.messageColors.twilightForestProgress));
+				global.broadcast(global.announcementMsg(Text.of(TwilightForestProgression.messages[type]), global.messageColors.twilightForestProgress));
 			}
 		}
 
@@ -64,7 +64,7 @@ const TwilightForestProgression = {
 					&& !data.progressMerge.unlocked
 				) {
 					data.progressMerge.unlocked = true;
-					global.broadcast(server, global.announcementMsg(Text.of(TwilightForestProgression.messages.hydra), global.messageColors.twilightForestProgress));
+					global.broadcast(global.announcementMsg(Text.of(TwilightForestProgression.messages.hydra), global.messageColors.twilightForestProgress));
 				}
 				break;
 			}
@@ -105,7 +105,7 @@ EntityEvents.death(event => {
 					completed: true,
 					unlocked: true,
 				};
-				global.broadcast(server, global.announcementMsg(Text.of(TwilightForestProgression.messages[entry]), global.messageColors.twilightForestProgress));
+				global.broadcast(global.announcementMsg(Text.of(TwilightForestProgression.messages[entry]), global.messageColors.twilightForestProgress));
 			}
 			else {
 				data.tfProgress[entry] = {
@@ -131,7 +131,7 @@ EntityEvents.death(event => {
 		data.tfProgress.progressMerge[entry] = true;
 		if (data.tfProgress.progressMerge.hydra && data.tfProgress.progressMerge.ur_ghast && currentChapter >= 3) {
 			data.tfProgress.progressMerge.unlocked = true;
-			global.broadcast(server, global.announcementMsg(Text.of(TwilightForestProgression.messages.hydra), global.messageColors.twilightForestProgress));
+			global.broadcast(global.announcementMsg(Text.of(TwilightForestProgression.messages.hydra), global.messageColors.twilightForestProgress));
 		}
 	}
 
@@ -181,7 +181,7 @@ PlayerEvents.tick(event => {
 	function processStageTypical(type) {
 		if (tfProgressData[type] && tfProgressData[type].unlocked && !player.stages.has(`tf_progress.killed_${type}`)) {
 			player.stages.add(`tf_progress.killed_${type}`);
-			global.grantAdvancement(server, player, `twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair[type]}`);
+			global.grantAdvancement(player, `twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair[type]}`);
 		}
 	}
 
@@ -192,7 +192,7 @@ PlayerEvents.tick(event => {
 
 	if (tfProgressData.progressMerge && tfProgressData.progressMerge.unlocked && !player.stages.has('tf_progress.killed_ur_ghast_and_hydra')) {
 		player.stages.add('tf_progress.killed_ur_ghast_and_hydra');
-		global.grantAdvancement(server, player, `twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair.hydra_and_ur_ghast}`);
+		global.grantAdvancement(player, `twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair.hydra_and_ur_ghast}`);
 	}
 
 	processStageTypical('alpha_yeti');
@@ -200,7 +200,7 @@ PlayerEvents.tick(event => {
 
 	if (server.getPersistentData().hasPickedUpLampOfCinders && !player.stages.has('tf_progress.lamp_of_cinders')) {
 		player.stages.add('tf_progress.lamp_of_cinders');
-		global.grantAdvancement(server, player, `twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair.giants}`);
+		global.grantAdvancement(player, `twilight_forest/part_${TwilightForestProgression.stagesAndAdvancementsPair.giants}`);
 	}
 });
 

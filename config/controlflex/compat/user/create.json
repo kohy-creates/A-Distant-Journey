@@ -1,0 +1,37 @@
+{
+  "mod_id": "create",
+  "mod_name": "Create",
+  "home_page": "https://www.curseforge.com/minecraft/mc-mods/create",
+  "contributors": [
+    "ifels"
+  ],
+  "dependencies": [
+    {
+      "mod_id": "cfx_compat_create",
+      "mod_name": "Control Flex x Create",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/cfx-x-create"
+      ]
+    }
+  ],
+  "config_version": "1.0.0",
+  "mod_versions": [
+    {
+      "version": "",
+      "inGameKeys": {
+
+      },
+      "screenKeys": {
+        
+      },
+      "overlayKeys": {
+      },
+      "tips": [
+      ],
+      "screen": {
+      },
+      "overlay": {
+      }
+    }
+  ]
+}

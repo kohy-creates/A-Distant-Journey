@@ -19,11 +19,11 @@ EntityEvents.checkSpawn(event => {
 	const type = entity.getType();
 	if (event.getType().toString() == 'NATURAL' && MutantMonsters.mutantMap[type]) {
 		let server = event.getServer();
-		let chapter = global.getCurrentChapter(server);
-		let isHardcore = global.isHardcore(server);
+		let chapter = global.getCurrentChapter();
+		let isHardcore = global.isHardcore();
 
 		let shouldReplaceSpawn = false;
-		if (global.isHardmode(server)) {
+		if (global.isHardmode()) {
 			shouldReplaceSpawn = (isHardcore) ? global.ifRandomChance(3) : global.ifRandomChance(1.5);
 		}
 		else if (isHardcore) {
