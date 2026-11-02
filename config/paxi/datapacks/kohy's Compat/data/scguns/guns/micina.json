@@ -9,20 +9,15 @@
   },
   "general": {
     "weaponType": "magnum",
-    "alwaysSpread": false,
     "fireMode": "scguns:burst",
     "burstAmount": 2,
     "burstCooldown": 9,
     "gripType": "scguns:one_handed",
     "baseGripType": "scguns:one_handed",
     "rate": 3,
-    "recoilAngle": 5.5,
-    "recoilKick": 1.8,
-    "spread": 5.0,
-    "meleeDamage": 2.5,
+    "meleeDamage": 0,
     "meleeCooldownTicks": 20,
     "hotBarrelRate": 15,
-    "criticalChance": 0.05,
     "isRevolver": true
   },
   "modules": {
@@ -44,8 +39,15 @@
     }
   },
   "projectile": {
+    "recoilAngle": 5.5,
+    "recoilKick": 1.8,
+    "spread": 5.0,
+    "criticalChance": 0,
     "advantage": "scguns:undead",
     "damage": 15.5,
+    "damageFalloffStart": 18.0,
+    "damageFalloffEnd": 40.0,
+    "damageFalloffMinMultiplier": 0.6,
     "ejectsCasing": true,
     "gravity": false,
     "item": "scguns:ramrod_round",

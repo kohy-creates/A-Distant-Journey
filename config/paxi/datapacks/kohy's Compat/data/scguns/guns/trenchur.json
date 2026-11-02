@@ -9,42 +9,27 @@
   },
   "general": {
     "weaponType": "pistol",
-    "alwaysSpread": false,
     "fireMode": "scguns:semi_automatic",
     "gripType": "scguns:one_handed",
     "rate": 6,
-    "recoilAngle": 5.0,
-    "recoilKick": 2.0,
-    "spread": 3.0,
-    "meleeDamage": 6.5,
+    "meleeDamage": 0,
     "meleeCooldownTicks": 10,
     "meleeReach": 2.5,
     "hotBarrelRate": 24,
-    "criticalChance": 0.2,
     "isRevolver": true
   },
-  "modules": {
-    "attachments": {
-      "scope": {
-        "size": 0.8,
-        "yOffset": 5.0,
-        "zOffset": 3.3
-      },
-      "barrel": {
-        "yOffset": 3.9,
-        "zOffset": -6.1
-      }
-    },
-    "zoom": {
-      "fovModifier": 0.6,
-      "yOffset": 5.2,
-      "zOffset": 0.75
-    }
-  },
+  "modules": {},
   "projectile": {
+    "recoilAngle": 5.0,
+    "recoilKick": 2.0,
+    "criticalChance": 0,
+    "spread": 3.0,
     "advantage": "scguns:none",
-    "damage": 9.5,
-    "armorPen": 2.5,
+    "damage": 23,
+    "damageFalloffStart": 14.0,
+    "damageFalloffEnd": 36.0,
+    "damageFalloffMinMultiplier": 0.45,
+   "armorPen": 0,
     "ejectsCasing": true,
     "gravity": false,
     "item": "scguns:compact_advanced_round",
@@ -60,7 +45,7 @@
     "emptyMagTimer": 45,
     "maxAmmo": 6,
     "reloadItem": "scguns:compact_copper_round",
-    "reloadTimer": 18,
+    "reloadTimer": 24,
     "reloadType": "scguns:manual"
   },
   "sounds": {

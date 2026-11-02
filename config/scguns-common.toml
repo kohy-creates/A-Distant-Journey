@@ -14,7 +14,7 @@
 		enableAttachmentDamage = false
 		#The extra amount to expand an entity's bounding box when checking for projectile collision. Setting this value higher will make it easier to hit entities
 		#Range: 0.0 ~ 1.0
-		growBoundingBoxAmount = 0.3
+		growBoundingBoxAmount = 0.2
 		#Enables the check for head shots for players. Projectiles that hit the head of a player will have increased damage.
 		enableHeadShots = false
 		#The value to multiply the damage by if projectile hit the players head
@@ -54,10 +54,10 @@
 		enableSculkPurification = true
 		#The volume for Player Gunfire. Default is 8
 		#Range: 1 ~ 10
-		playerGunfireVolume = 8
+		playerGunfireVolume = 6
 		#The volume for Mob Gunfire. Default is 8
 		#Range: 1 ~ 10
-		mobGunfireVolume = 8
+		mobGunfireVolume = 6
 		#Global multiplier for mob fire rate. 1.0 = normal speed, 0.5 = faster (half delay), 2.0 = slower (double delay). Lower values = faster shooting.
 		#Range: 0.1 ~ 5.0
 		mobFireRateMultiplier = 1.0
@@ -122,7 +122,7 @@
 	#Properties relating to mob aggression from gunfire
 	[common.aggro_mobs]
 		#If true, hostile mobs may become aggressive when guns are fired nearby.
-		enabled = true
+		enabled = false
 		#Range in which hostile mobs may detect and react to unsilenced gunfire.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		unsilencedRange = 20.0

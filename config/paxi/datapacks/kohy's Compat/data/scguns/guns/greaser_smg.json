@@ -9,49 +9,28 @@
   },
   "general": {
     "weaponType": "smg",
-    "alwaysSpread": false,
     "fireMode": "scguns:automatic",
     "gripType": "scguns:two_handed",
     "baseGripType": "scguns:two_handed",
     "rate": 3,
-    "recoilAngle": 2.25,
-    "recoilKick": 1.2,
-    "spread": 4.0,
-    "meleeDamage": 2.5,
+    "meleeDamage": 0,
     "meleeCooldownTicks": 15,
     "meleeReach": 2.5,
-    "hotBarrelRate": 7,
-    "criticalChance": 0.05
-
+    "hotBarrelRate": 7
   },
-  "modules": {
-    "attachments": {
-      "barrel": {
-        "yOffset": 5.5,
-        "zOffset": -6.2
-      },
-      "stock": {
-        "scale": 0.0
-      },
-      "magazine": {
-        "scale": 0.0
-      },
-      "scope": {
-        "size": 0.85,
-        "yOffset": 6.85,
-        "zOffset": 4.5
-      }
-    },
-    "zoom": {
-      "fovModifier": 0.6,
-      "yOffset": 6.9,
-      "zOffset": -0.75
-    }
-  },
+  "modules": {},
   "projectile": {
+    "recoilAngle": 2.75,
+    "recoilKick": 1.2,
+    "spread": 3.0,
+    "alwaysSpread": true,
+    "criticalChance": 0,
     "advantage": "scguns:none",
-    "damage": 7.0,
-    "armorPen": 1.0,
+    "damage": 9.0,
+    "damageFalloffStart": 13.0,
+    "damageFalloffEnd": 32.0,
+    "damageFalloffMinMultiplier": 0.5,
+    "armorPen": 0,
     "ejectsCasing": true,
     "item": "scguns:compact_advanced_round",
     "casingType": "scguns:small_brass_casing",
@@ -63,9 +42,9 @@
   },
   "reloads": {
     "emptyMagTimer": 30,
-    "maxAmmo": 18,
+    "maxAmmo": 40,
     "reloadItem": "scguns:compact_advanced_round",
-    "reloadTimer": 100,
+    "reloadTimer": 30,
     "reloadType": "scguns:mag_fed"
   },
   "sounds": {

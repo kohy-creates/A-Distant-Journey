@@ -9,18 +9,13 @@
   },
   "general": {
     "weaponType": "pistol",
-    "alwaysSpread": false,
     "fireMode": "scguns:semi_automatic",
     "gripType": "scguns:one_handed",
     "rate": 6,
-    "recoilAngle": 6.8,
-    "recoilKick": 2.0,
-    "spread": 1.0,
-    "meleeDamage": 2.5,
+    "meleeDamage": 0,
     "meleeReach": 2.5,
     "meleeCooldownTicks": 10,
-    "hotBarrelRate": 15,
-    "criticalChance": 0.05
+    "hotBarrelRate": 15
   },
   "modules": {
     "attachments": {
@@ -44,15 +39,24 @@
     }
   },
   "projectile": {
+    "alwaysSpread": false,
+    "recoilAngle": 6.8,
+    "recoilKick": 2.0,
+    "spread": 1.0,
+    "criticalChance": 0,
+    "damageFalloffStart": 18.0,
+    "damageFalloffEnd": 40.0,
+    "damageFalloffMinMultiplier": 0.6,
     "knockbackStrength": 0.8,
     "advantage": "scguns:undead",
     "damage": 15.0,
+
     "ejectsCasing": true,
     "gravity": false,
     "item": "scguns:ramrod_round",
     "casingType": "scguns:small_iron_casing",
     "casingParticle": "scguns:iron_casing",
-    "life":50,
+    "life": 50,
     "size": 0.1,
     "speed": 6.0,
     "trailLengthMultiplier": 2.0

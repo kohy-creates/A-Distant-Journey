@@ -9,51 +9,30 @@
   },
   "general": {
     "weaponType": "lmg",
-    "alwaysSpread": false,
     "fireMode": "scguns:automatic",
     "gripType": "scguns:two_handed_shotgun",
     "baseGripType": "scguns:two_handed_shotgun",
     "rate": 4,
+    "meleeDamage": 0,
+    "meleeCooldownTicks": 20,
+    "meleeReach": 3.5,
+    "hotBarrelRate": 22
+  },
+  "modules": {},
+  "projectile": {
+    "alwaysSpread": false,
     "recoilAngle": 3.5,
     "recoilKick": 1.0,
     "spread": 4.0,
-    "meleeDamage": 2.5,
-    "meleeCooldownTicks": 20,
-    "meleeReach": 3.5,
-    "hotBarrelRate": 22,
-    "criticalChance": 0.05
-  },
-  "modules": {
-    "attachments": {
-      "barrel": {
-        "yOffset": 4.75,
-        "zOffset": -12.25
-      },
-      "scope": {
-        "size": 0.7,
-        "yOffset": 6.2,
-        "zOffset": 4.7
-      },
-      "stock": {
-        "scale": 0.0
-      },
-      "underBarrel": {
-        "yOffset": 5.5,
-        "zOffset": -2.5
-      }
-    },
-    "zoom": {
-      "fovModifier": 0.6,
-      "yOffset": 6.6,
-      "zOffset": 0.75
-    }
-  },
-  "projectile": {
+    "criticalChance": 0,
     "advantage": "scguns:none",
-    "damage": 7.5,
+    "damageFalloffStart": 22.0,
+    "damageFalloffEnd": 55.0,
+    "damageFalloffMinMultiplier": 0.7,
+    "damage": 15,
     "ejectsCasing": true,
     "gravity": false,
-    "item": "scguns:standard_copper_round",
+    "item": "scguns:advanced_round",
     "casingType": "scguns:medium_copper_casing",
     "casingParticle": "scguns:copper_casing",
     "life": 50,
@@ -63,8 +42,8 @@
   },
   "reloads": {
     "emptyMagTimer": 5,
-    "maxAmmo": 16,
-    "reloadItem": "scguns:standard_copper_round",
+    "maxAmmo": 18,
+    "reloadItem": "scguns:advanced_round",
     "reloadTimer": 40,
     "reloadType": "scguns:mag_fed"
   },

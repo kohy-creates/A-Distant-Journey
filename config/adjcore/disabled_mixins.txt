@@ -26,3 +26,4 @@ com.Apothic0n.Astrological.mixin.ChorusFlowerBlockMixin
 com.misanthropy.collections_of_optimizations.mixin.structurify.MixinStructureOverlapCheck
 com.github.alexmodguy.alexscaves.mixin.EntityMixin
 com.proctoredgames.tiled.mixin.ServerPlayNetworkHandlerMixin
+com.misanthropy.collections_of_optimizations.mixin.jei.RecipeTransferManager

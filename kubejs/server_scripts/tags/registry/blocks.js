@@ -210,6 +210,13 @@ ServerEvents.tags('block', tags => {
 		'kubejs:deathweed',
 		'kubejs:fireblossom',
 		'kubejs:waterleaf',
+		'kubejs:wild_daybloom',
+		'kubejs:wild_moonglow',
+		'kubejs:wild_shiverthorn',
+		'kubejs:wild_blinkroot',
+		'kubejs:wild_deathweed',
+		'kubejs:wild_fireblossom',
+		'kubejs:wild_waterleaf',
 	]);
 
 	tags.add('offgrid:can_offset', [
@@ -221,5 +228,5 @@ ServerEvents.tags('block', tags => {
 		/.*:potted_/,
 	]);
 
-	
+
 });

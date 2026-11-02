@@ -9,19 +9,14 @@
   },
   "general": {
     "weaponType": "rifle",
-    "alwaysSpread": false,
     "fireMode": "scguns:semi_automatic",
     "gripType": "scguns:two_handed_shotgun",
     "baseGripType": "scguns:two_handed_shotgun",
     "rate": 16,
-    "recoilAngle": 3.5,
-    "recoilKick": 2.0,
-    "spread": 2.0,
-    "meleeDamage": 2.5,
+    "meleeDamage": 0,
     "meleeCooldownTicks": 20,
     "meleeReach": 3.5,
-    "hotBarrelRate": 22,
-    "criticalChance": 0.05
+    "hotBarrelRate": 22
   },
   "modules": {
     "attachments": {
@@ -52,9 +47,16 @@
     }
   },
   "projectile": {
+    "recoilAngle": 3.5,
+    "recoilKick": 2.0,
+    "spread": 2.0,
+    "criticalChance": 0,
     "advantage": "scguns:none",
     "damage": 13.0,
-    "armorPen": 2.5,
+    "damageFalloffStart": 28.0,
+    "damageFalloffEnd": 65.0,
+    "damageFalloffMinMultiplier": 0.75,
+   "armorPen": 0,
     "ejectsCasing": true,
     "gravity": false,
     "item": "scguns:standard_copper_round",

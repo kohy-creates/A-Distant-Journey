@@ -536,11 +536,8 @@ ServerEvents.tags('item', tags => {
 	const $HoeItem = Java.loadClass('net.minecraft.world.item.HoeItem');
 	let wineRacks = [];
 	let dyableItems = [];
-	let hoes = {
-		weak: [],
-		medium: [],
-		strong: []
-	}
+	let hoes = { low: [], mid: [], high: [] };
+
 	Item.getTypeList().forEach(id => {
 		if (!global.isItemDisabled(id)) {
 			if (id.match(/vinery:.*rack.*/)) {
@@ -553,19 +550,29 @@ ServerEvents.tags('item', tags => {
 			}
 
 			if (item instanceof $HoeItem) {
-				item.getTier().getLevel();
-				if (item.getTier().getLevel() <= 2) {
-					hoes.weak.push(id);
-				} else if (item.getTier().getLevel() <= 3) {
-					hoes.medium.push(id);
+				let lvl = item.getTier().getLevel();
+				if (lvl <= 1) {
+					return
+				}
+				else if (lvl <= 2) {
+					hoes.low.push(id);
+				} else if (lvl <= 3) {
+					hoes.mid.push(id);
 				} else {
-					hoes.strong.push(id);
+					hoes.high.push(id);
 				}
 			}
 		}
 	});
+
 	tags.add('adj:wine_racks', wineRacks);
 	tags.add('adj:dyable_items', dyableItems);
+
+	for (let [level, hoesList] in Object.entries(hoes)) {
+		tags.add(`rightclickharvest:${level}_tier_hoes`, hoesList);
+	}
+
+	tags.add('rightclickharvest:low_tier_hoes')
 
 	tags.add('adj:spark_upgrades', [/^botania:spark_upgrade_.*$/]);
 

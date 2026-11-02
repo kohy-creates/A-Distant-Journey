@@ -13,42 +13,22 @@
     "gripType": "scguns:two_handed",
     "baseGripType": "scguns:two_handed",
     "rate": 9,
-    "recoilAngle": 0.70,
-    "recoilKick": 0.33,
-    "spread": 2.0,
-    "meleeDamage": 3.0,
+    "meleeDamage": 0,
     "meleeCooldownTicks": 15,
-    "hotBarrelRate": 15,
-    "criticalChance": 0.05
+    "hotBarrelRate": 15
   },
-  "modules": {
-    "attachments": {
-      "stock": {
-        "scale": 0.0
-      },
-      "magazine": {
-        "scale": 0.0
-      },
-      "underBarrel": {
-        "yOffset": 5.5,
-        "zOffset": -2.5
-      },
-      "scope": {
-        "size": 0.7,
-        "yOffset": 5.7,
-        "zOffset": 4.0
-      }
-    },
-    "zoom": {
-      "fovModifier": 0.7,
-      "yOffset":6.0,
-      "zOffset": 1.1
-    }
-  },
+  "modules": {},
   "projectile": {
+    "recoilAngle": 1.0,
+    "recoilKick": 0.5,
+    "spread": 2.0,
+    "criticalChance": 0,
     "visible": true,
     "advantage": "scguns:none",
-    "damage": 14.0,
+    "damage": 28.0,
+    "damageFalloffStart": 22.0,
+    "damageFalloffEnd": 55.0,
+    "damageFalloffMinMultiplier": 0.7,
     "gravity": false,
     "item": "scguns:microjet",
     "ejectsCasing": true,
@@ -61,7 +41,7 @@
   },
   "reloads": {
     "emptyMagTimer": 10,
-    "maxAmmo": 10,
+    "maxAmmo": 12,
     "reloadItem": "scguns:microjet",
     "reloadTimer": 25,
     "reloadType": "scguns:mag_fed"

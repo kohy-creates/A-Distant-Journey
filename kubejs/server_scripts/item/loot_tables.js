@@ -1409,6 +1409,11 @@ LootJS.modifiers((event) => {
 	alchemyPlant('blinkroot');
 	alchemyPlant('fireblossom');
 	alchemyPlant('waterleaf');
+
+	global.disabledEntities.forEach(entityId => {
+		event.addEntityLootModifier(entityId)
+			.removeLoot(ItemFilter.ALWAYS_TRUE);
+	});
 });
 
 const fattyAnimalsTag = global.createTagKey('ENTITY_TYPES', 'delightful:fatty_animals');

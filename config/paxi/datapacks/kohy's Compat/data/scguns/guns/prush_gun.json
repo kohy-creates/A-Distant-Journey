@@ -9,18 +9,13 @@
   },
   "general": {
     "weaponType": "smg",
-    "alwaysSpread": false,
     "fireMode": "scguns:automatic",
     "gripType": "scguns:two_handed",
     "baseGripType": "scguns:two_handed",
     "rate": 2,
-    "recoilAngle": 2.0,
-    "recoilKick": 1.25,
-    "spread": 2.0,
-    "meleeDamage": 2.5,
+    "meleeDamage": 0,
     "meleeCooldownTicks": 15,
-    "hotBarrelRate": 5,
-    "criticalChance": 0.05
+    "hotBarrelRate": 5
   },
   "modules": {
     "attachments": {
@@ -46,9 +41,17 @@
     }
   },
   "projectile": {
+    "alwaysSpread": true,
+    "recoilAngle": 2.5,
+    "recoilKick": 1.25,
+    "spread": 1.5,
+    "criticalChance": 0,
     "advantage": "scguns:none",
     "damage": 7.0,
-    "armorPen": 3.0,
+    "damageFalloffStart": 11.0,
+    "damageFalloffEnd": 28.0,
+    "damageFalloffMinMultiplier": 0.45,
+   "armorPen": 0,
     "ejectsCasing": true,
     "item": "scguns:compact_advanced_round",
     "casingType": "scguns:small_brass_casing",

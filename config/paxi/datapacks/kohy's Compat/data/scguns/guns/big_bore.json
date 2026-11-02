@@ -4,26 +4,25 @@
       "size": 2.0,
       "yOffset": 3.8,
       "zOffset": -25.0,
-      "textureLocation": "muzzle_flash_5"
+      "textureLocation": "muzzle_flash_5",
+      "spawnParticles": false,
+      "particleType": "minecraft:campfire_cosy_smoke",
+      "particleCount": 25,
+      "particleSpread": 0.7,
+      "particleRingRadius": 0.7
     }
   },
   "general": {
     "weaponType": "sniper",
-    "alwaysSpread": false,
     "fireMode": "scguns:semi_automatic",
     "gripType": "scguns:two_handed",
     "baseGripType": "scguns:two_handed",
     "rate": 20,
-    "recoilAngle": 20.0,
-    "recoilKick": 20.0,
-    "spread": 0.0,
-    "meleeDamage": 4.0,
+    "meleeDamage": 0,
     "meleeReach": 4.5,
     "meleeCooldownTicks": 20,
-    "hotBarrelRate": 37,
-    "criticalChance": 0.05,
-    "playerKnockBack": true,
-    "playerKnockBackStrength": 2.5
+    "hotBarrelRate": 99
+
   },
   "modules": {
     "attachments": {
@@ -43,10 +42,20 @@
     }
   },
   "projectile": {
+    "alwaysSpread": false,
+    "recoilAngle": 20.0,
+    "recoilKick": 20.0,
+    "spread": 0.0,
+    "criticalChance": 0,
+    "playerKnockBack": true,
+    "playerKnockBackStrength": 2.5,
     "knockbackStrength": 8.0,
+    "damageFalloffStart": 40.0,
+    "damageFalloffEnd": 100.0,
+    "damageFalloffMinMultiplier": 0.9,
     "advantage": "scguns:heavy",
     "damage": 74.0,
-    "armorPen": 2.0,
+   "armorPen": 0,
     "ejectsCasing": true,
     "gravity": false  ,
     "item": "scguns:osborne_slug",

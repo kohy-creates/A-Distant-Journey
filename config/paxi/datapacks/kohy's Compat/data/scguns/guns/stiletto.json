@@ -9,19 +9,15 @@
   },
   "general": {
     "weaponType": "sniper",
-    "alwaysSpread": false,
     "fireMode": "scguns:semi_automatic",
     "gripType": "scguns:one_handed",
     "baseGripType": "scguns:one_handed",
     "rate": 5,
-    "recoilAngle": 8.7,
-    "recoilKick": 3.8,
-    "spread": 1.0,
-    "meleeDamage": 2.5,
+
+    "meleeDamage": 0,
     "meleeCooldownTicks": 20,
     "meleeReach": 3.5,
-    "hotBarrelRate": 90,
-    "criticalChance": 0.05
+    "hotBarrelRate": 90
   },
   "modules": {
     "attachments": {
@@ -41,9 +37,16 @@
     }
   },
   "projectile": {
+    "recoilAngle": 8.7,
+    "recoilKick": 3.8,
+    "spread": 1.0,
+    "criticalChance": 0,
     "advantage": "scguns:heavy",
-    "damage": 22.5,
-    "armorPen": 4.0,
+    "damage": 25.0,
+    "damageFalloffStart": 35.0,
+    "damageFalloffEnd": 90.0,
+    "damageFalloffMinMultiplier": 0.85,
+   "armorPen": 0,
     "gravity": false,
     "item": "scguns:krahg_round",
     "ejectsCasing": true,

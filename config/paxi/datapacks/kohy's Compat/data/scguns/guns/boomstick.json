@@ -16,46 +16,30 @@
   },
   "general": {
     "weaponType": "shotgun",
-    "alwaysSpread": true,
     "fireMode": "scguns:semi_automatic",
     "gripType": "scguns:two_handed",
     "baseGripType": "scguns:two_handed",
-    "projectileAmount": 26,
     "rate": 7,
+    "meleeDamage": 0,
+    "meleeCooldownTicks": 20,
+    "hotBarrelRate": 45
+  },
+  "modules": {},
+  "projectile": {
+    "alwaysSpread": true,
+    "projectileAmount": 3,
+    "criticalChance": 0,
+    "playerKnockBack": false,
+    "playerKnockBackStrength": 0.45,
     "recoilAngle": 13.0,
     "recoilKick": 2.5,
     "spread": 10.0,
-    "meleeDamage": 2.5,
-    "meleeCooldownTicks": 20,
-    "hotBarrelRate": 45,
-    "criticalChance": 0.08,
-    "playerKnockBack": true,
-    "playerKnockBackStrength": 0.45
-  },
-  "modules": {
-    "attachments": {
-      "barrel": {
-        "yOffset": 3.8,
-        "zOffset": -6.25
-      },
-      "stock": {
-        "scale": 0.0
-      },
-      "underBarrel": {
-        "yOffset": 5.5,
-        "zOffset": -2.5
-      }
-    },
-    "zoom": {
-      "fovModifier": 0.6,
-      "yOffset": 5.7,
-      "zOffset": 1.0
-    }
-  },
-  "projectile": {
     "knockbackStrength": 0.75,
+    "damageFalloffStart": 8.0,
+    "damageFalloffEnd": 20.0,
+    "damageFalloffMinMultiplier": 0.4,
     "advantage": "scguns:none",
-    "damage": 20.0,
+    "damage": 17.0,
     "ejectsCasing": true,
     "item": "scguns:shotgun_shell",
     "casingType": "scguns:small_copper_casing",
@@ -63,7 +47,8 @@
     "life": 25,
     "size": 0.5,
     "speed": 5.0,
-    "trailLengthMultiplier": 2.0
+    "trailLengthMultiplier": 2.0,
+    "trailThickness": 0.5
   },
   "reloads": {
     "emptyMagTimer": 0,

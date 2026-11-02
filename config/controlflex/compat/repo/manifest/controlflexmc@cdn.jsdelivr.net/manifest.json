@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "ControlFlex Community Configs",
-  "generated": "2026-10-26T15:32:53Z",
+  "generated": "2026-11-02T00:33:48Z",
   "items": [
     {
       "mod_id": "create",
@@ -37,6 +37,15 @@
       "sha256": "bdeb23bc2c393d564f2a98e4469c3004f18e1b109c6200ac52126edccf825409",
       "home_pages": [
         "https://www.curseforge.com/minecraft/mc-mods/epicfight-nightfall"
+      ]
+    },
+    {
+      "mod_id": "emi",
+      "mod_name": "EMI",
+      "path": "mods/emi.json",
+      "sha256": "abfad0af36fbfc92f9a6e7a7f5b4c224295046b3dcaa86c29b6a8e08b1637355",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/emi"
       ]
     },
     {

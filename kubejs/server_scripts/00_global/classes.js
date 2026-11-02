@@ -30,3 +30,5 @@ const $FakePlayer = Java.loadClass('net.minecraftforge.common.util.FakePlayer');
 
 const $SeaStaffItem = Java.loadClass('com.github.alexmodguy.alexscaves.server.item.SeaStaffItem');
 const $ProjectileImpactEvent = Java.loadClass('net.minecraftforge.event.entity.ProjectileImpactEvent');
+
+const $Integer = Java.loadClass('java.lang.Integer');

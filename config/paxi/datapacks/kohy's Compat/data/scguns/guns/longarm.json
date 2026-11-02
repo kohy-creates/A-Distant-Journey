@@ -4,23 +4,24 @@
       "size": 1.0,
       "yOffset": 3.9,
       "zOffset": -5.0,
-      "textureLocation": "muzzle_flash_1"
+      "textureLocation": "muzzle_flash_1",
+      "spawnParticles": false,
+      "particleType": "minecraft:campfire_cosy_smoke",
+      "particleCount": 10,
+      "particleSpread": 0.5,
+      "particleRingRadius": 0.5
     }
   },
   "general": {
     "weaponType": "pistol",
-    "alwaysSpread": false,
+
     "fireMode": "scguns:semi_automatic",
     "gripType": "scguns:one_handed",
     "rate": 17,
-    "recoilAngle": 6.0,
-    "recoilKick": 2.0,
-    "spread": 3.5,
-    "meleeDamage": 2.0,
+    "meleeDamage": 0,
     "meleeCooldownTicks": 10,
     "meleeReach": 2.5,
     "hotBarrelRate": 24,
-    "criticalChance": 0.1,
     "isRevolver": true
   },
   "modules": {
@@ -41,8 +42,15 @@
     }
   },
   "projectile": {
+    "recoilAngle": 6.0,
+    "recoilKick": 2.0,
+    "spread": 3.5,
+    "criticalChance": 0,
     "advantage": "scguns:none",
     "damage": 6.5,
+    "damageFalloffStart": 12.0,
+    "damageFalloffEnd": 30.0,
+    "damageFalloffMinMultiplier": 0.45,
     "ejectsCasing": false,
     "gravity": false,
     "item": "scguns:powder_and_ball",

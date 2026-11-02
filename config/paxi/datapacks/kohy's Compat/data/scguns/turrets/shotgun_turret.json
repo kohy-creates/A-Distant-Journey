@@ -1,6 +1,6 @@
 {
   "targeting": {
-    "range": 7.0,
+    "range": 10.0,
     "verticalRange": 7.0,
     "minFiringDistance": 1.3,
     "rotationSpeed": 0.5,
@@ -11,9 +11,9 @@
     "requiresLineOfSight": true
   },
   "combat": {
-    "cooldown": 30,
+    "cooldown": 35,
     "inaccuracy": 0.0,
-    "pelletCount": 8,
+    "pelletCount": 4,
     "spreadAngle": 6.0,
     "recoilMax": 4.0,
     "recoilSpeed": 0.3,
@@ -27,16 +27,10 @@
         "item": "scguns:shotgun_shell",
         "bulletType": "scguns:shotgun_shell",
         "casingType": "scguns:small_copper_casing",
-        "damage": 20.0
-      },
-      {
-        "item": "scguns:bearpack_shell",
-        "bulletType": "scguns:bearpack_shell",
-        "casingType": "scguns:medium_brass_casing",
-        "damage": 24.0
+        "damage": 11.0
       }
     ],
-    "casingEjectChance": 0.65
+    "casingEjectChance": 0
   },
   "behavior": {
     "restingYaw": 0.0,

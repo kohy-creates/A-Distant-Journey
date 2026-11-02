@@ -44,8 +44,8 @@ PlayerEvents.tick(event => {
 	});
 
 	if (player.getMainHandItem().getId() === 'zenith:zenith') {
-		let nbt = player.getMainHandItem().nbt;
-		if (nbt && !nbt.zenith_parts) {
+		let nbt = player.getMainHandItem().getOrCreateTag();
+		if (!nbt.zenith_parts) {
 			nbt.zenith_parts = global.zenithNbt;
 		}
 	}
@@ -76,10 +76,10 @@ PlayerEvents.tick(event => {
 	const creativeFlightAttribute = player.getAttribute('attributeslib:creative_flight');
 	const flying = creativeFlightAttribute.getModifier(PlayerStuff.attributeUuids.FlyingUUID)
 	if (!flying && hasPrism) {
-		creativeFlightAttribute.addPermanentModifier(new $AttributeModifier(PlayerStuff.attributeUuids.FlyingUUID, 'Architect\'s Prism', 1, 'addition'))
+		creativeFlightAttribute.addPermanentModifier(new $AttributeModifier(PlayerStuff.attributeUuids.FlyingUUID, 'Architect\'s Prism', 1, 'addition'));
 	}
 	else if (flying && !hasPrism) {
-		creativeFlightAttribute.removeModifier(PlayerStuff.attributeUuids.FlyingUUID)
+		creativeFlightAttribute.removeModifier(PlayerStuff.attributeUuids.FlyingUUID);
 	}
 
 	const maxManaAttribute = player.getAttribute('ars_nouveau:ars_nouveau.perk.max_mana');

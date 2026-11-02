@@ -38,7 +38,10 @@
     "witherstormmod:*_wither_skull": false,
     "witherstormmod:formidibomb": false,
     "witherstormmod:wither_storm_head": false,
-    "witherstormmod:wither_storm_segment": false
+    "witherstormmod:wither_storm_segment": false,
+    "galosphere:spectator_vision": false,
+    "galosphere:spectre_flare": false,
+    "galosphere:glow_flare": false
   },
   "version": 2,
   "name": "immersive_optimization"

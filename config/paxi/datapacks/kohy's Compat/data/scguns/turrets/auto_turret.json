@@ -24,22 +24,10 @@
   "ammunition": {
     "acceptedAmmo": [
       {
-        "item": "scguns:compact_advanced_round",
-        "bulletType": "scguns:compact_advanced_round",
-        "casingType": "scguns:small_brass_casing",
-        "damage": 6.5
-      },
-      {
-        "item": "scguns:hog_round",
-        "bulletType": "scguns:hog_round",
-        "casingType": "scguns:small_iron_casing",
-        "damage": 8.0
-      },
-      {
         "item": "scguns:compact_copper_round",
         "bulletType": "scguns:compact_copper_round",
         "casingType": "scguns:small_copper_casing",
-        "damage": 5.5
+        "damage": 9
       }
     ],
     "casingEjectChance": 0.65

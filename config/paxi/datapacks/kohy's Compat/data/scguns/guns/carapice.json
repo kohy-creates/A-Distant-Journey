@@ -9,19 +9,13 @@
   },
   "general": {
     "weaponType": "smg",
-    "alwaysSpread": false,
     "fireMode": "scguns:automatic",
     "gripType": "scguns:two_handed",
     "baseGripType": "scguns:two_handed",
-    "projectileAmount": 1,
     "rate": 6,
-    "recoilAngle": 3.0,
-    "recoilKick": 2.0,
-    "spread": 3.0,
-    "meleeDamage": 3.5,
+    "meleeDamage": 0,
     "meleeCooldownTicks": 20,
-    "hotBarrelRate": 16,
-    "criticalChance": 0.05
+    "hotBarrelRate": 16
   },
   "modules": {
     "attachments": {
@@ -41,8 +35,17 @@
     }
   },
   "projectile": {
+    "projectileAmount": 1,
+    "alwaysSpread": false,
+    "recoilAngle": 3.0,
+    "recoilKick": 2.0,
+    "spread": 3.0,
+    "criticalChance": 0,
     "advantage": "scguns:none",
     "damage": 13.0,
+    "damageFalloffStart": 22.0,
+    "damageFalloffEnd": 55.0,
+    "damageFalloffMinMultiplier": 0.7,
     "ejectsCasing": true,
     "gravity": false,
     "item": "scguns:shulkshot",
@@ -50,7 +53,7 @@
     "casingParticle": "scguns:shulk_casing",
     "life": 120,
     "size": 0.00001,
-    "speed":  0.5,
+    "speed":  0.35,
     "trailLengthMultiplier": 100.0,
     "impactEffect": "minecraft:levitation",
     "impactEffectDuration": 100,

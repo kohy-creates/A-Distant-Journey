@@ -4,7 +4,12 @@
       "size": 2.0,
       "yOffset": 8.0,
       "zOffset": -13.5,
-      "textureLocation": "muzzle_flash_1"
+      "textureLocation": "muzzle_flash_1",
+      "spawnParticles": false,
+      "particleType": "minecraft:campfire_cosy_smoke",
+      "particleCount": 12,
+      "particleSpread": 0.7,
+      "particleRingRadius": 0.7
     }
   },
   "general": {
@@ -14,32 +19,53 @@
     "gripType": "scguns:mini_gun",
     "baseGripType": "scguns:mini_gun",
     "rate": 8,
-    "recoilAngle": 8.0,
-    "recoilKick": 3.0,
-    "spread": 5.0,
-    "meleeDamage": 3.5,
+    "meleeDamage": 0,
     "meleeCooldownTicks": 20,
     "hotBarrelRate": 100,
-    "criticalChance": 0.05,
-    "playerKnockBack": true,
-    "playerKnockBackStrength": 0.5,
     "meleeReach": 3.5,
-    "speedModifier": 0.85
+    "speedModifier": 0.85,
+    "allowAmmoChange": true
   },
   "modules": {
     "attachments": {
     }
   },
   "projectile": {
+    "recoilAngle": 8.0,
+    "recoilKick": 3.0,
+    "spread": 5.0,
+    "criticalChance": 0,
+    "playerKnockBack": true,
+    "playerKnockBackStrength": 0.5,
     "visible": true,
     "advantage": "scguns:heavy",
-    "damage": 23.0,
+    "damageFalloffStart": 18.0,
+    "damageFalloffEnd": 45.0,
+    "damageFalloffMinMultiplier": 0.65,
+    "damage": 24.0,
     "gravity": true,
     "item": "scguns:shotball",
     "life": 90,
     "size": 100.0,
     "speed": 3.0,
     "trailLengthMultiplier": 0.5
+  },
+  "projectile_1": {
+    "alwaysSpread": false,
+    "recoilAngle": 6.7,
+    "recoilKick": 2.22,
+    "spread": 3.0,
+    "criticalChance": 0,
+    "visible": true,
+    "advantage": "scguns:none",
+    "damage": 28.0,
+    "ejectsCasing": false,
+    "gravity": true,
+    "item": "scguns:rocket",
+    "life": 55,
+    "size": 0.05,
+    "speed": 5.0,
+    "trailLengthMultiplier": 2.0
   },
   "reloads": {
     "emptyMagTimer": 10,

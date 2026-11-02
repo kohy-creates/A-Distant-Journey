@@ -103,6 +103,20 @@ global.zenithSwords = [
 	{ item: "zenith:zenith", color: 0xb2ffb4, rotation_center_height: 0.125, rotation: 0.785, scale: 7.5, trail_width: 5 }
 ];
 
+let parts = [];
+global.zenithSwords.forEach(part => {
+	if (!Item.exists(part.item)) return;
+	parts.push({
+		item: part.item,
+		color: $Integer(part.color.toString().replace('.0', '')),
+		rotation_center_height: part.rotation_center_height,
+		rotation: part.rotation,
+		scale: part.scale,
+		trail_width: part.trail_width
+	});
+});
+global.zenithNbt = parts;
+
 /**
  * Broadcasts a message to every player on the server.
  * @type {void}

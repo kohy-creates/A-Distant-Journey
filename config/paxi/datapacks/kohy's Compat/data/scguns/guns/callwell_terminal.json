@@ -9,22 +9,14 @@
   },
   "general": {
     "weaponType": "shotgun",
-    "alwaysSpread": true,
     "fireMode": "scguns:semi_automatic",
     "gripType": "scguns:two_handed",
     "baseGripType": "scguns:two_handed",
-    "projectileAmount": 20,
     "rate": 16,
-    "recoilAngle": 8.0,
-    "recoilKick": 3.0,
-    "spread": 6.5,
-    "meleeDamage": 3.0,
+    "meleeDamage": 0,
     "meleeReach": 3.5,
     "meleeCooldownTicks": 20,
-    "hotBarrelRate": 30,
-    "criticalChance": 0.1,
-    "playerKnockBack": true,
-    "playerKnockBackStrength": 0.35
+    "hotBarrelRate": 30
   },
   "modules": {
     "attachments": {
@@ -51,9 +43,20 @@
     }
   },
   "projectile": {
+    "alwaysSpread": true,
+    "projectileAmount": 20,
+    "recoilAngle": 8.0,
+    "recoilKick": 3.0,
+    "spread": 5.5,
+    "criticalChance": 0,
+    "playerKnockBack": true,
+    "playerKnockBackStrength": 0.35,
     "knockbackStrength": 0.7,
+    "damageFalloffStart": 7.0,
+    "damageFalloffEnd": 18.0,
+    "damageFalloffMinMultiplier": 0.35,
     "advantage": "scguns:illager",
-    "damage": 16.0,
+    "damage": 18.0,
     "ejectsCasing": true,
     "item": "scguns:shotgun_shell",
     "casingType": "scguns:small_copper_casing",
@@ -61,7 +64,8 @@
     "life": 40,
     "size": 0.05,
     "speed": 5.0,
-    "trailLengthMultiplier": 2.0
+    "trailLengthMultiplier": 2.0,
+    "trailThickness": 0.5
   },
   "reloads": {
     "emptyMagTimer": 50,

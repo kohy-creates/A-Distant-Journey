@@ -12,14 +12,10 @@
     "fireMode": "scguns:automatic",
     "gripType": "scguns:one_handed",
     "rate": 2,
-    "recoilAngle": 2.5,
-    "recoilKick": 1.5,
-    "spread": 3.0,
-    "meleeDamage": 2.5,
+    "meleeDamage": 0,
     "meleeReach": 2.5,
     "meleeCooldownTicks": 10,
-    "hotBarrelRate": 4,
-    "criticalChance": 0.08
+    "hotBarrelRate": 4
   },
   "modules": {
     "attachments": {
@@ -41,8 +37,16 @@
     }
   },
   "projectile": {
+    "recoilAngle": 2.5,
+    "recoilKick": 1.5,
+    "spread": 4.0,
+    "criticalChance": 0,
+    "alwaysSpread": true,
     "advantage": "scguns:bot",
     "damage": 4.5,
+    "damageFalloffStart": 8.0,
+    "damageFalloffEnd": 22.0,
+    "damageFalloffMinMultiplier": 0.35,
     "gravity": false,
     "ejectsCasing": true,
     "item": "scguns:compact_copper_round",

@@ -5,7 +5,7 @@
       "yOffset": 4.8,
       "zOffset": -13.0,
       "textureLocation": "muzzle_flash_5",
-      "spawnParticles": true,
+      "spawnParticles": false,
       "particleType": "minecraft:small_flame",
       "particleCount": 8,
       "particleSpread": 0.1,
@@ -14,21 +14,16 @@
   },
   "general": {
     "weaponType": "rifle",
-    "alwaysSpread": false,
     "fireMode": "scguns:burst",
     "burstAmount": 3,
     "burstCooldown": 10,
     "gripType": "scguns:two_handed",
     "baseGripType": "scguns:two_handed",
     "rate": 2,
-    "recoilAngle": 2.25,
-    "recoilKick": 0.75,
-    "spread": 2.0,
-    "meleeDamage": 7.0,
+    "meleeDamage": 0,
     "meleeCooldownTicks": 15,
     "meleeReach": 4.0,
-    "hotBarrelRate": 5,
-    "criticalChance": 0.05
+    "hotBarrelRate": 5
   },
   "modules": {
     "attachments": {
@@ -55,10 +50,17 @@
     }
   },
   "projectile": {
+    "recoilAngle": 2.25,
+    "recoilKick": 0.75,
+    "spread": 2.0,
+    "criticalChance": 0,
     "knockbackStrength": 0.5,
     "advantage": "scguns:none",
+    "damageFalloffStart": 28.0,
+    "damageFalloffEnd": 65.0,
+    "damageFalloffMinMultiplier": 0.75,
     "damage": 21.0,
-    "armorPen": 3.5,
+   "armorPen": 0,
     "ejectsCasing": true,
     "gravity": false,
     "item": "scguns:gibbs_round",
