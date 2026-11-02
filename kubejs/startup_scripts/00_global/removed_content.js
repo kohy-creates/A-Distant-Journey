@@ -645,6 +645,8 @@ const RemovedContent = {
 		/decoration_delight:.*counter_corner/,
 		/decoration_delight:.*counter_bend/,
 
+		'another_furniture:furniture_hammer',
+
 		'scguns:advanced_exo_suit_core',
 		'scguns:armor_plate_knee_guard',
 		'scguns:armor_plate',
@@ -760,7 +762,7 @@ const RemovedContent = {
 		'scguns:hammer_gl',
 
 		/scguns:.*spawn_egg/,
-		
+
 	],
 	entities: [
 		'upgrade_aquatic:thrasher',

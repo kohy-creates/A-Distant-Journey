@@ -25,7 +25,7 @@ ItemEvents.modification(event => {
 	event.modify('terra_curio:avenger_emblem', item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
-				.addAttribute('kubejs:damage_dealt', '01737022-40a3-4aba-a062-9be48d052661', 0.12, "multiply_base")
+				.addAttribute('adjcore:player.damage_dealt', '01737022-40a3-4aba-a062-9be48d052661', 0.12, "multiply_base")
 		);
 	});
 
@@ -33,7 +33,7 @@ ItemEvents.modification(event => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute('attributeslib:crit_chance', '46118a26-23a3-4653-8312-254c5f975d3e', 0.1, "addition")
-				.addAttribute('kubejs:damage_dealt', '46118a26-23a3-4653-8312-254c5f975d3e', 0.1, "multiply_base")
+				.addAttribute('adjcore:player.damage_dealt', '46118a26-23a3-4653-8312-254c5f975d3e', 0.1, "multiply_base")
 		);
 	});
 
@@ -43,7 +43,7 @@ ItemEvents.modification(event => {
 				.addAttribute('generic.attack_speed', '86695f4b-dd1d-4b4c-a5d0-e029556b5e76', 0.1, "multiply_base")
 				.addAttribute('generic.armor', '86695f4b-dd1d-4b4c-a5d0-e029556b5e76', 4, "addition")
 				.addAttribute('attributeslib:crit_chance', '86695f4b-dd1d-4b4c-a5d0-e029556b5e76', 0.02, "addition")
-				.addAttribute('kubejs:damage_dealt', '86695f4b-dd1d-4b4c-a5d0-e029556b5e76', 0.1, "multiply_base")
+				.addAttribute('adjcore:player.damage_dealt', '86695f4b-dd1d-4b4c-a5d0-e029556b5e76', 0.1, "multiply_base")
 		)
 	})
 
@@ -51,7 +51,7 @@ ItemEvents.modification(event => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute('attributeslib:crit_chance', 'c34266b0-9edb-4274-9e0a-cac12ab24803', 0.05, "addition")
-				.addAttribute('kubejs:damage_dealt', 'c34266b0-9edb-4274-9e0a-cac12ab24803', 0.05, "multiply_base")
+				.addAttribute('adjcore:player.damage_dealt', 'c34266b0-9edb-4274-9e0a-cac12ab24803', 0.05, "multiply_base")
 		)
 	})
 
@@ -134,7 +134,7 @@ ItemEvents.modification(event => {
 	event.modify('aether_redux:grand_valkyrie_medal', item => {
 		item.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
-				.addAttribute('kubejs:damage_dealt', 'fb0bb38d-4129-41d3-9bf1-1b374f0d71e15', 0.05, 'multiply_base')
+				.addAttribute('adjcore:player.damage_dealt', 'fb0bb38d-4129-41d3-9bf1-1b374f0d71e15', 0.05, 'multiply_base')
 				.addAttribute('attributeslib:crit_chance', 'fb0bb38d-4129-41d3-9bf1-1b374f0d71e15', 0.05, 'addition')
 		);
 	});

@@ -115,7 +115,7 @@ PlayerEvents.tick(event => {
 
 	// Global damage attribute
 	// Here read: something that increases all damage dealt
-	const damageDealtAttr = player.getAttribute('kubejs:damage_dealt');
+	const damageDealtAttr = player.getAttribute('adjcore:player.damage_dealt');
 	const d = damageDealtAttr.getValue();
 
 	/**

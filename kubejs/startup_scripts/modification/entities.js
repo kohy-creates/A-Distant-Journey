@@ -13,7 +13,7 @@ EntityJSEvents.attributes(event => {
 		attributes.add('attributeslib:crit_chance', 0.0);
 		attributes.add('attributeslib:crit_damage', 2.0);
 		attributes.add('generic.attack_speed', 2.0);
-		attributes.add('kubejs:damage_dealt', 1.0);
+		attributes.add('adjcore:player.damage_dealt', 1.0);
 	});
 
 	event.modify('witherstormmod:wither_storm', attributes => {

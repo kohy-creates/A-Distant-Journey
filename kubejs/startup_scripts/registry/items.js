@@ -14,7 +14,7 @@ global.itemEffects = {
 
 	theCommunity: {
 		buffs: {
-			'kubejs:damage_dealt': ['multiply_base', 0.05, 0.15],
+			'adjcore:player.damage_dealt': ['multiply_base', 0.05, 0.15],
 			'generic.armor': ['addition', 0, 4],
 			'generic.attack_speed': ['multiply_base', 0.04, 0.1],
 			'generic.movement_speed': ['multiply_total', 0.04, 0.1],
@@ -428,7 +428,7 @@ StartupEvents.registry('item', registry => {
 					'multiply_base'
 				)
 				.addAttribute(
-					'kubejs:damage_dealt',
+					'adjcore:player.damage_dealt',
 					'b888ea99-c203-42db-a337-4898c812aaad',
 					0.12,
 					'multiply_base'
@@ -839,7 +839,7 @@ StartupEvents.registry('item', registry => {
 					"addition"
 				)
 				.addAttribute(
-					'kubejs:damage_dealt',
+					'adjcore:player.damage_dealt',
 					'a4faf07c-1712-478b-b3b1-3b8a1b14d7d7',
 					0.1,
 					"multiply_base"

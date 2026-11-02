@@ -76,7 +76,7 @@ global.armorOverrides = {
 		'adjcore:generic.health_regeneration': {
 			values: [1.5, 0, 0, 0]
 		},
-		'kubejs:damage_dealt': {
+		'adjcore:player.damage_dealt': {
 			values: [0.15, 0, 0, 0],
 			operation: 'multiply_base'
 		}
@@ -113,7 +113,7 @@ global.armorOverrides = {
 		'attributeslib:crit_chance': {
 			values: [0, 0.08, 0.06, 0]
 		},
-		'kubejs:damage_dealt': {
+		'adjcore:player.damage_dealt': {
 			values: [0.12, 0, 0, 0],
 			operation: 'multiply_base'
 		}
@@ -525,7 +525,7 @@ global.armorOverrides = {
 		'generic.knockback_resistance': {
 			values: [0.1, 0.1, 0.1, 0.1]
 		},
-		'kubejs:damage_dealt': {
+		'adjcore:player.damage_dealt': {
 			values: [0, 0.15, 0, 0],
 			operation: 'multiply_total'
 		},

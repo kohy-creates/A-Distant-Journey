@@ -5,13 +5,10 @@ StartupEvents.registry('attribute', event => {
 		event.createCustom(id, () => new $RangedAttribute(name, base, min, max).setSyncable(true));
 	}
 
-	registerAttribute('kubejs:harvest_level', 'Harvest Level', 0, 0, 10);
-	registerAttribute('kubejs:mining_speed', 'Base Mining Speed', 0, 0, 1);
-	registerAttribute('kubejs:ranged_damage', 'Ranged Damage', 0, 0, 10);
-	registerAttribute('kubejs:food.hunger', 'Hunger Restored', 0, 0, 10);
-	registerAttribute('kubejs:food.saturation', 'Saturation Restored', 0, 0, 10);
-	registerAttribute('kubejs:damage_dealt', 'All Damage Dealt', 1, 0, 1000);
-	registerAttribute('kubejs:enchantment_power', 'Enchanting Table Power', 0, 0, 1000);
-	registerAttribute('kubejs:healing_power', 'Healing Power', 0, 0, 2048);
-	registerAttribute('kubejs:magic_damage', 'Magic Damage', 0, 0, 4096);
+	registerAttribute('harvest_level', 'Harvest Level', 0, 0, 10);
+	registerAttribute('mining_speed', 'Base Mining Speed', 0, 0, 1);
+	registerAttribute('ranged_damage', 'Ranged Damage', 0, 0, 10);
+	registerAttribute('enchantment_power', 'Enchanting Table Power', 0, 0, 1000);
+	registerAttribute('healing_power', 'Healing Power', 0, 0, 2048);
+	registerAttribute('magic_damage', 'Magic Damage', 0, 0, 4096);
 });
