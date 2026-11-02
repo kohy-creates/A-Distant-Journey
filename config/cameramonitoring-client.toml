@@ -1,0 +1,70 @@
+
+#How the mouse drives a camera you are looking through.
+[controls]
+	#Multiplier applied to horizontal mouse movement while controlling a camera.
+	#Range: 0.05 ~ 5.0
+	panSensitivity = 1.0
+	#Multiplier applied to vertical mouse movement while controlling a camera.
+	#Range: 0.05 ~ 5.0
+	tiltSensitivity = 1.0
+	#Invert the vertical axis while controlling a camera.
+	invertTilt = false
+	#Extra smoothing applied on top of the servo speed of the camera.
+	#0 follows the servo exactly, 1 is very soft and slow.
+	#Range: 0.0 ~ 0.95
+	smoothing = 0.35
+
+#Monitor overlay drawn while looking through a camera.
+[overlay]
+	#Draw the surveillance monitor overlay (frame, camera name, zoom, status).
+	showOverlay = true
+	#Draw CRT style scanlines and vignette over the camera feed.
+	showScanlines = true
+	#Show camera coordinates when the server grants permission to see them.
+	showCoordinates = true
+	#Show the in-game timestamp in the corner of the feed.
+	showTimestamp = true
+	#Opacity of the overlay decorations.
+	#Range: 0.1 ~ 1.0
+	overlayOpacity = 1.0
+	#Allow modules such as Night Vision and Infrared to install a post-processing shader.
+	#Disable this if a shader pack or driver misbehaves; modules keep their other effects.
+	postProcessing = true
+	#Show the body you leave behind when a camera you are watching is pointed at it.
+	#It is never drawn when it is close enough to the lens to fill the picture,
+	#which is what made an operator standing at their own camera see nothing but
+	#the inside of their own head. Turn this off to never see yourself at all.
+	showOwnBodyOnFeed = true
+
+#Wall panels that show a camera live.
+[screens]
+	#Draw the live picture on monitor panels.
+	#A panel showing a feed draws the world a second time, so turning this off
+	#costs nothing but the picture: the panels stay, showing camera name and status.
+	liveFeeds = true
+	#Vertical resolution of the picture drawn for a panel, in pixels.
+	#The width follows at 16:9. Lower this before turning feeds off entirely.
+	#Range: 90 ~ 1080
+	liveFeedHeight = 288
+	#How close you have to be to a panel for it to show a live picture, in blocks.
+	#Beyond this it keeps its status face, which costs nothing to draw.
+	#Range: 4 ~ 128
+	liveFeedDistance = 32
+	#How many different cameras can be shown live on panels at the same time.
+	#The panels nearest to you get a picture first; any further panel says
+	#"ALL FEEDS IN USE" until you move closer to it. Each feed takes one
+	#window-sized texture of video memory.
+	#Range: 1 ~ 16
+	maxLiveFeeds = 8
+	#Draw live pictures through the shader pack when Iris or Oculus has one on.
+	#Each refresh of a panel then runs the whole pack a second time, shadows included,
+	#so turn this off if panels cost too many frames; they will show their status instead.
+	shaderPackFeeds = true
+
+#How alarms reach you.
+[alarms]
+	#Play the alarm beep when one of your cameras raises an alarm.
+	playAlarmSound = true
+	#Show the on-screen alert banner when one of your cameras raises an alarm.
+	showAlarmToast = true
+

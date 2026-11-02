@@ -2,5 +2,10 @@
   "disableSkinTransparency": false,
   "skinChangeCooldownSeconds": 0,
   "maxTextureUploadKilobytes": 16384,
-  "shareAccountSkinWithVanillaClients": false
+  "shareAccountSkinWithVanillaClients": false,
+  "notifyPlayersWithoutQuickSkin": true,
+  "playersWithoutQuickSkinMessage": "",
+  "playersWithoutQuickSkinLink": "https://modrinth.com/mod/quick-skin",
+  "allowNicknames": true,
+  "allowHiddenArmor": true
 }

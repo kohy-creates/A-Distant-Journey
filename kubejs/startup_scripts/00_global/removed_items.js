@@ -564,6 +564,8 @@ const RemovedItems = {
 		'v_slab_compat:vinery/dirt_vertical_slab',
 		'v_slab_compat:vinery/dirt_path_vertical_slab',
 		'vinery:straw_hat',
+		'vinery:flower_box',
+
 		'nethervinery:crimson_fermentation_barrel',
 		'nethervinery:crimson_grapevine_pot',
 		'nethervinery:crimson_apple_press',
@@ -648,42 +650,50 @@ const RemovedItems = {
 global.blacklistedItems = new Set([typeof String]);
 global.blacklistedItemsArray = [];
 
-function regenerateBlacklist() {
-	Item.getTypeList().forEach(id => {
-		if (RemovedItems.list.some(entry => {
-			if (entry && entry instanceof RegExp) {
-				if (entry.test(id)) {
-					return true;
-				}
-				else return false;
+const ItemBlacklist = {
+	regenerateBlacklist: function () {
+		if (this.generating) return;
+		this.generating = true;
+		Utils.runAsync(() => {
+			Item.getTypeList().forEach(id => {
+				if (RemovedItems.list.some(entry => {
+					if (entry && entry instanceof RegExp) {
+						if (entry.test(id)) {
+							return true;
+						}
+						else return false;
+					}
+					return entry === id;
+				})) {
+					global.blacklistedItems.add(String(id));
+				};
+			});
+
+			global.blacklistedItemsArray = Array.from(global.blacklistedItems);
+
+			console.log(`Added ${global.blacklistedItemsArray.length} items to the blacklist`);
+			console.log('Amount of removed items:');
+			let removed = {};
+			global.blacklistedItemsArray.sort().forEach(item => {
+				let mod = item.split(':')[0];
+				if (!removed[mod]) removed[mod] = 0;
+				removed[mod]++;
+			});
+			for (let mod in removed) {
+				console.log(`  '${mod}': ${removed[mod]}`);
 			}
-			return entry === id;
-		})) {
-			global.blacklistedItems.add(String(id));
-		};
-	});
-
-	global.blacklistedItemsArray = Array.from(global.blacklistedItems);
-
-	console.log(`Added ${global.blacklistedItemsArray.length} items to the blacklist`);
-	console.log('Amount of removed items:');
-	let removed = {};
-	global.blacklistedItemsArray.sort().forEach(item => {
-		let mod = item.split(':')[0];
-		if (!removed[mod]) removed[mod] = 0;
-		removed[mod]++;
-	});
-	for (let mod in removed) {
-		console.log(`  '${mod}': ${removed[mod]}`);
-	}
-}
+			this.generating = false;
+		});
+	},
+	generating: false
+};
 
 StartupEvents.postInit(event => {
-	regenerateBlacklist();
+	ItemBlacklist.regenerateBlacklist();
 });
 
 global.isItemDisabled = function (item) {
-	if (global.blacklistedItemsArray.length == 0) regenerateBlacklist();
+	if (global.blacklistedItemsArray.length == 0) ItemBlacklist.regenerateBlacklist();
 	let id = (item instanceof Item) ? item.getId() : item;
 	return global.blacklistedItems.has(String(id));
 };

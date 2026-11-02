@@ -3,6 +3,6 @@
   "baseUrl": "https://cdn.jsdelivr.net/gh/ControlFlexMC/cfx-compat-configs@0.8.8",
   "mcVersion": "1.20.1",
   "loader": "forge",
-  "lastSyncAt": "2026-10-24T14:03:34.301113Z",
-  "manifestSha256": "31e61562d61a6cf35c97f25419874e3d604c00cacf21ecbbd02ab9d5f89ae4cd"
+  "lastSyncAt": "2026-11-02T16:03:38.455123500Z",
+  "manifestSha256": "240f8524a2bb59f6f5319476195b8dffb8debf21975d84be7e24ab7056ca62a7"
 }

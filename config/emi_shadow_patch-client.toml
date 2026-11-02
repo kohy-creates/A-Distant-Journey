@@ -1,0 +1,63 @@
+
+#EMI Shadow Patch - client side performance patch for EMI + Shadow Drop.
+[emi_shadow_patch]
+	#How to decide whether an item is sitting in a real slot.
+	#SLOT_LIST   - ask the open container menu. Exact, and reads no pixels back from the GPU.
+	#PIXEL_PROBE - Shadow Drop's original glReadPixels probe, which stalls the render pipeline
+	#Allowed Values: SLOT_LIST, PIXEL_PROBE
+	slotDetection = "SLOT_LIST"
+	#Cache the transparent/translucent item and tag lookups per item instead of re-resolving every
+	#configured tag for every item on every pass. The answer only depends on the item and the config
+	#list, so the cache is exact. Cleared automatically when tags or the config change.
+	memoizeItemTagMatching = true
+	#Give Shadow Drop's shadow render type its own GUI buffer so a whole list's shadows draw in
+	#one call instead of one call per item. Vanilla keeps dedicated buffers for the render types it
+	#expects to reuse, which is what GUI items use; Shadow Drop's type is created at runtime and
+	#falls back to a single shared buffer, so each item's shadow is flushed separately. This is the
+	#main cost on the per-item path, which is the path everything takes when EMI's batched
+	#renderer is off.
+	#Slot, hover and hotbar shadows are still flushed immediately so their cropping keeps working.
+	#Turn this off only if shadows look wrong or stop being cropped.
+	accumulateShadowDraws = true
+	#EMI switches its batched item renderer off when it decides the installed Sodium build is too
+	#old to feed a custom VertexConsumer through. Embeddium ships the modern VertexBufferWriter API
+	#but also declares a stub 'rubidium' mod id, which is what makes EMI run that probe at all, and
+	#the probe can conclude 'too old' even when the modern API is present.
+	#EMI's batched renderer is what makes its item list a handful of draw calls instead of one per
+	#item, so losing it costs far more than everything else this mod does.
+	#When enabled, EMI's decision is lifted ONLY if the modern API class file is actually present;
+	#otherwise the decision stands. Set this to false if EMI's item icons render blank or garbled.
+	forceEmiBatchedRenderer = true
+	#EMI's batched renderer bakes item geometry once, and the pose at bake time is baked into those
+	#vertices. A GUI animation moves the pose every frame, so batched icons would freeze - which is
+	#why animation mods switch the batcher off. But an animation is short: re-baking while it moves
+	#lets the icons animate, and the moment it settles the list is baked once and reused again.
+	#So this is both, just not at the same instant. With this on, an animation mod's opt-out is
+	#overridden while its animation state can be read; with it off, that opt-out is respected and
+	#EMI's batcher stays off.
+	reBatchDuringGuiAnimations = true
+	#EMI asks 'can this item be batched?' once per visible item per frame, and answering it
+	#allocates two ItemStacks, deep-copies the item's NBT twice, and resolves its model twice -
+	#and model resolution runs every item property override, which is exactly the machinery that
+	#makes an icon depend on NBT. A list full of the same id with different NBT is the worst case.
+	#The answer cannot change for a given list entry: the item and the tag are final and the tag is
+	#copied on construction, so caching it is exact. Only whether the client has a level is part of
+	#the key, because that is passed into model resolution. Disable only to diagnose a wrong icon.
+	memoizeEmiBatchability = true
+	#Draw each item's shadow from a one-quad cached silhouette instead of re-rendering the model
+	#a second time. Shadow Drop makes a shadow by drawing the item again, so every model is
+	#submitted twice; on a large EMI item list that second submission measured at about half the
+	#frame time. A silhouette is one quad whatever the model was.
+	#Only items EMI draws are affected, and only models whose geometry is a pure function of the
+	#model. Anything else - a cropped shadow, a custom-rendered item, a block-entity item such as
+	#a spawner or chest, or a model with per-stack geometry - falls back to Shadow Drop's own rendering.
+	#Set to false if shadows look wrong.
+	cacheShadowSilhouettes = true
+	#Diagnostic for the shadow silhouette cache: print the silhouette baked for each item model EMI
+	#draws, as ASCII art, so its shape can be checked from the log rather than in game. One dump per
+	#model, at most a dozen per session.
+	debugShadowMasks = false
+	#Draw a small overlay with per-second counters. Use it to see which costs are actually present
+	#on this machine: shadow passes, GUI buffer drains, slot probes and tag lookups.
+	debugCounters = false
+

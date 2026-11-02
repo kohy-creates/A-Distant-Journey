@@ -376,7 +376,7 @@ global.getKilledBosses = function (server, returnAmount) {
 /**
  * Returns the registry for a given type
  * @param {keyof typeof $ForgeRegistries} registry 
- * @returns {Internal.ForgeRegistries_}
+ * @returns {Internal.IForgeRegistry_<any>}
  */
 global.getRegistry = function (registry) {
 	return $ForgeRegistries[registry];
@@ -563,4 +563,16 @@ global.isHostile = function (entity) {
 
 global.getMaxMana = function (player) {
 	return player.getAttribute('ars_nouveau:ars_nouveau.perk.max_mana').getValue();
+};
+
+/**
+ * Gets the entries in a tag.
+ * @param {keyof typeof $ForgeRegistries} registry
+ * @param {string} tag
+ * @returns
+ */
+global.getEntriesInTag = function (registry, tag) {
+	return global.getRegistry(registry).tags()
+		.getTag(global.createTagKey(registry, tag))
+		.getValues();
 };

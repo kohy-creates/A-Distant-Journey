@@ -6,5 +6,15 @@
   "profile": "recommend",
   "cameraLook": {
     "smoothCameraOverridden": false
+  },
+  "tips": {
+    "pause_hint_short": false,
+    "pause_hint_blocked": true,
+    "layer_switch_enabled": false,
+    "layer_switch_position": "top_center",
+    "layer_switch_style": "header",
+    "layer_switch_scale": 1.0,
+    "layer_switch_opacity": 0.75,
+    "layer_switch_delay_mode": "auto"
   }
 }

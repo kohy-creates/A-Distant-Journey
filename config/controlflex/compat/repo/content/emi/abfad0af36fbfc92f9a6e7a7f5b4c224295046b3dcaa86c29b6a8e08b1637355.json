@@ -1,0 +1,50 @@
+{
+  "mod_id": "emi",
+  "mod_name": "EMI",
+  "home_page": "https://www.curseforge.com/minecraft/mc-mods/emi",
+  "contributors": [
+    "ifels"
+  ],
+  "dependencies": [
+    {
+      "mod_id": "cfx_compat_emi",
+      "mod_name": "Control Flex x EMI",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/cfx-x-emi"
+      ]
+    }
+  ],
+  "config_version": "1.0.0",
+  "mod_versions": [
+    {
+      "version": "",
+      "screenKeys": {
+        "channels": [
+          "keyMapping"
+        ],
+        "key.cfx_compat_emi.toggle_visibility": {},
+        "key.cfx_compat_emi.focus_search": {},
+        "key.cfx_compat_emi.clear_search": {},
+        "key.cfx_compat_emi.view_recipes": {},
+        "key.cfx_compat_emi.view_uses": {},
+        "key.cfx_compat_emi.favorite": {},
+        "key.cfx_compat_emi.view_stack_tree": {},
+        "key.cfx_compat_emi.view_tree": {},
+        "key.cfx_compat_emi.back": {},
+        "key.cfx_compat_emi.forward": {},
+        "key.cfx_compat_emi.craft_one": {},
+        "key.cfx_compat_emi.craft_all": {},
+        "key.cfx_compat_emi.craft_one_to_inventory": {},
+        "key.cfx_compat_emi.craft_all_to_inventory": {},
+        "key.cfx_compat_emi.craft_one_to_cursor": {},
+        "key.cfx_compat_emi.cheat_one_to_inventory": {},
+        "key.cfx_compat_emi.cheat_stack_to_inventory": {},
+        "key.cfx_compat_emi.cheat_one_to_cursor": {},
+        "key.cfx_compat_emi.cheat_stack_to_cursor": {},
+        "key.cfx_compat_emi.hide_stack": {},
+        "key.cfx_compat_emi.hide_stack_by_id": {},
+        "key.cfx_compat_emi.copy_id": {}
+      }
+    }
+  ]
+}

@@ -384,3 +384,29 @@
 		#Item properties of an item, that when equipped in a curios slot, trigger the dynamic crosshair in adaptive mode. Example: 'necklace@charged'
 		adaptive_crosshair_item_properties = []
 
+[gui]
+
+	[gui.maps]
+		#Whether to render map previews in the hud when a map item is held.
+		map_item_overlay_enabled = true
+		#The directional anchor to use for map item overlay rendering.
+		#Allowed Values: TOP, BOTTOM
+		map_item_overlay_anchor = "BOTTOM"
+		#The scale to use for map item overlay rendering.
+		#Range: 5 ~ 100
+		map_item_overlay_scale = 40
+
+		[gui.maps.insets]
+			#The inset from the top of the screen.
+			#Range: 0 ~ 500
+			top = 1
+			#The inset from the right of the screen.
+			#Range: 0 ~ 500
+			right = 1
+			#The inset from the bottom of the screen.
+			#Range: 0 ~ 500
+			bottom = 1
+			#The inset from the left of the screen.
+			#Range: 0 ~ 500
+			left = 1
+

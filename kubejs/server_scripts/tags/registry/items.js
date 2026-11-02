@@ -532,18 +532,35 @@ ServerEvents.tags('item', tags => {
 	});
 	tags.add('c:villager_job_sites', workstations);
 
-	/** @type {Internal.DyeableLeatherItem_} */
 	const $DyableLeatherItem = Java.loadClass('net.minecraft.world.item.DyeableLeatherItem');
+	const $HoeItem = Java.loadClass('net.minecraft.world.item.HoeItem');
 	let wineRacks = [];
 	let dyableItems = [];
+	let hoes = {
+		weak: [],
+		medium: [],
+		strong: []
+	}
 	Item.getTypeList().forEach(id => {
 		if (!global.isItemDisabled(id)) {
 			if (id.match(/vinery:.*rack.*/)) {
 				wineRacks.push(id);
+				return;
 			}
 			const item = Item.of(id).getItem();
 			if (item instanceof $DyableLeatherItem && id !== 'minecraft:written_book') {
 				dyableItems.push(id);
+			}
+
+			if (item instanceof $HoeItem) {
+				item.getTier().getLevel();
+				if (item.getTier().getLevel() <= 2) {
+					hoes.weak.push(id);
+				} else if (item.getTier().getLevel() <= 3) {
+					hoes.medium.push(id);
+				} else {
+					hoes.strong.push(id);
+				}
 			}
 		}
 	});
@@ -761,5 +778,25 @@ ServerEvents.tags('item', tags => {
 	tags.add('adj:minecarts', [
 		'minecart',
 		/_minecart$/
+	]);
+
+	tags.add('c:hoes', [
+		/.*_hoe/
+	]);
+
+	tags.add('c:pickaxes', [
+		/.*_pickaxe/
+	]);
+
+	tags.add('c:shovels', [
+		/.*_shovel/
+	]);
+
+	tags.add('c:axes', [
+		/.*_axe/
+	]);
+
+	tags.add('c:swords', [
+		/.*_sword/
 	]);
 });

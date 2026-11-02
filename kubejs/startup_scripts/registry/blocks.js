@@ -154,10 +154,12 @@ StartupEvents.registry('block', registry => {
 		})
 	}
 
-	Color.DYE.forEach(c => registerAsphalt(c));
-	Color.DYE.forEach(c => registerTiles(c));
-	Color.DYE.forEach(c => registerDyedStoneBricks(c));
-	Color.DYE.forEach(c => registerNeon(c));
+	Color.DYE.forEach(c => {
+		registerAsphalt(c);
+		registerTiles(c);
+		registerDyedStoneBricks(c);
+		registerNeon(c);
+	});
 
 	registry.create('white_stars_block')
 		.mapColor('color_black')

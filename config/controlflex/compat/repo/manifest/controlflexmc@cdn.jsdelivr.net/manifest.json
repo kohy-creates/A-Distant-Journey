@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "ControlFlex Community Configs",
-  "generated": "2026-09-21T00:33:49Z",
+  "generated": "2026-10-26T15:32:53Z",
   "items": [
     {
       "mod_id": "create",
@@ -19,6 +19,15 @@
       "sha256": "c7038f3a7982f1b899fa218b6dbef5b94ae022d2febc6dff54384eab7edebd69",
       "home_pages": [
         "https://www.curseforge.com/minecraft/mc-mods/dragonminez"
+      ]
+    },
+    {
+      "mod_id": "effortlessbuilding",
+      "mod_name": "Effortless Building",
+      "path": "mods/effortlessbuilding.json",
+      "sha256": "70a21e62b49fb055629464f58f6182a06e276a2a516325e59613619948c9641f",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/effortless-building"
       ]
     },
     {
@@ -73,6 +82,15 @@
       "sha256": "ae27f3d32845514acac2e7c21587ab671bd61eb76250aae2b6eafa00a2b31ca8",
       "home_pages": [
         "https://www.curseforge.com/minecraft/mc-mods/minemenu"
+      ]
+    },
+    {
+      "mod_id": "superior_tweaks",
+      "mod_name": "Superior Tweaks",
+      "path": "mods/superior_tweaks.json",
+      "sha256": "e5f0f33598cfc00ab191fe7d4e32baff663f2722e24b07ca0ee111894c95e6ba",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/superior-tweaks"
       ]
     },
     {

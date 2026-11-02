@@ -1,4 +1,4 @@
-StartupEvents.postInit(event => {
+StartupEvents.postInit(event => Utils.runAsync(() => {
 
 	// No need to run this on dedicated servers
 	// Idk how much of an optimization that is, but it's always something
@@ -607,4 +607,4 @@ StartupEvents.postInit(event => {
 	});
 
 	JsonIO.write('kubejs/assets/emi/index/stacks/edit_item_order.json', edit);
-});
+}));

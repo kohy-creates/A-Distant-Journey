@@ -16,6 +16,11 @@ ServerEvents.recipes((event) => {
 		return global.ifDyeDepot(color, namespaceA, namespaceB) + ':' + templateID.replace('DYE', color);
 	}
 
+	function insertIntoID(original, toInsert) {
+		let parts = original.split(':');
+		return parts[0] + ':' + toInsert + parts[1];
+	}
+
 	const disabledItemRecipes = [
 		global.rediscoveredFurniture,
 		'naturescompass:naturescompass',
@@ -1906,9 +1911,17 @@ ServerEvents.recipes((event) => {
 	templateRecipe('additionaladditions:rose_gold_upgrade', 'iron_ingot', 'cobblestone', 'additionaladditions:rose_gold_alloy');
 	templateRecipe('mythicmetals:osmium_chainmail_smithing_template', 'mythicmetals:osmium_nugget', 'andesite', 'mythicmetals:osmium_ingot');
 
-	// Pottery Sherd copying
+	// Things that are parsed for every item
+	const copperItems = [];
+	const rustyItems = [];
+	const pattern1 = /^(minecraft|create):copper_/;
+	const pattern2 = /netherexp:rusty_/;
 	Item.getTypeList().forEach(id => {
-		if (!global.isItemDisabled(id) && id.includes('_sherd')) {
+		const item = Item.of(id);
+		if (global.isItemDisabled(id)) return;
+
+		// Pottery Sherd copying
+		if (id.includes('_sherd')) {
 			event.shapeless(
 				Item.of(id, 2),
 				[
@@ -1919,13 +1932,39 @@ ServerEvents.recipes((event) => {
 					'brick'
 				]
 			).id(`adj:sherd_copying/${flattenedID(id)}`)
+		};
+
+		// Aether repairing
+		if (item.maxDamage > 0) {
+			event.custom({
+				type: "aether:repairing",
+				ingredient: {
+					item: id
+				},
+				repairTime: Math.ceil((1.4 * Math.sqrt(item.maxDamage)) * 20)
+			}).id(`adj:repairing/${flattenedID(id)}`);
+		}
+
+		// Helper getter for a few things
+		if (pattern1.test(id)) {
+			copperItems.push(insertIntoID(id, 'MODIF_'));
+		} else if (pattern2.test(id)) {
+			rustyItems.push(id);
+		}
+
+		// All Leaves support Conjuration Catalyst
+
+		if (id.includes('_leaves') && id !== 'botania:horn_leaves') {
+			event.recipes.botania.mana_infusion(Item.of(id, 2), id)
+				.mana(2000)
+				.catalyst('botania:conjuration_catalyst')
+				.id(`botania:mana_infusion/${(id.split(':')[0] != 'minecraft') ? id.split(':')[0] + '_' : ''}${id.split(':')[1]}_dupe`);
 		}
 	});
 
 	// Limitite
 	event.recipes.ars_nouveau.enchanting_apparatus(
 		[
-			'ars_nouveau:source_gem_block',
 			'ars_nouveau:source_gem_block',
 			'lapis_block',
 			'lapis_block'
@@ -1943,6 +1982,7 @@ ServerEvents.recipes((event) => {
 		[]
 	).id('adj:crying_obsidian');
 
+	// Bundle
 	event.shaped(
 		Item.of('bundle'),
 		[
@@ -1997,26 +2037,7 @@ ServerEvents.recipes((event) => {
 	ectoplasmTransform('rib_armor_trim_smithing_template', 'netherexp:valor_armor_trim_smithing_template');
 	ectoplasmTransform('shroomlight', 'netherexp:shroomnight');
 
-	// Helper getter for the next few things
-	let copperItems = []
-	let rustyItems = []
-	Item.getTypeList().forEach(id => {
-		if (global.isItemDisabled(id)) return;
-		const pattern1 = /^(minecraft|create):copper_/
-		const pattern2 = /netherexp:rusty_/
-		if (pattern1.test(id)) {
-			copperItems.push(insertIntoID(id, 'MODIF_'));
-		} else if (pattern2.test(id)) {
-			rustyItems.push(id);
-		}
-	})
-
 	// Copper weathering in Ectoplasm
-	function insertIntoID(original, toInsert) {
-		let parts = original.split(':');
-		return parts[0] + ':' + toInsert + parts[1];
-	}
-
 	const transformations = [
 		{ 'base': 'exposed' },
 		{ 'exposed': 'weathered' },
@@ -2100,14 +2121,6 @@ ServerEvents.recipes((event) => {
 			G: 'botanicadds:gaiasteel_ingot'
 		}
 	).id('botania:thunder_sword');
-
-	event.custom({
-		'type': 'sortilege:cauldron_brewing',
-		'input': {
-			'item': 'iron_ingot'
-		},
-		'output': 'kubejs:endurance'
-	}).id('adj:cauldron_brewing/endurance_potion');
 
 	// Food can only be cooked in a Smoker and a Campfire
 	event.remove({
@@ -5327,20 +5340,6 @@ ServerEvents.recipes((event) => {
 		3333
 	).id('adj:spawner_claw');
 
-	// All Leaves support Conjuration Catalyst
-	Item.getTypeList().forEach(id => {
-		if (
-			!global.isItemDisabled(id)
-			&& id.includes('_leaves')
-			&& id !== 'botania:horn_leaves'
-		) {
-			event.recipes.botania.mana_infusion(Item.of(id, 2), id)
-				.mana(2000)
-				.catalyst('botania:conjuration_catalyst')
-				.id(`botania:mana_infusion/${(id.split(':')[0] != 'minecraft') ? id.split(':')[0] + '_' : ''}${id.split(':')[1]}_dupe`);
-		}
-	});
-
 	// Pure Daisy transforms (all default ones have been removed completely)
 	const pureDaisyMap = {
 		'minecraft:stone': 'botania:livingrock',
@@ -5788,21 +5787,6 @@ ServerEvents.recipes((event) => {
 	locateBetterArchaeologyStructure('betterarcheology:fossil_sheep_0', 'wool', 'wool', 'dirt');
 	locateStructureRitual('betterarcheology:catacombs', ['emerald', 'gold_ingot', 'gold_ingot', 'gold_ingot', 'stone_bricks', 'stone_bricks', 'stone_bricks', rune('greed')]);
 	locateStructureRitual('betterarcheology:light_temple', ['mythicmetals:midas_gold_ingot', 'mythicmetals:midas_gold_ingot', 'gold_ingot', 'gold_ingot', 'stone_bricks', 'stone_bricks', rune('fire')]);
-
-	// Aether repairing
-	Item.getTypeList().forEach(id => {
-		if (global.isItemDisabled(id)) return;
-		const maxDamage = Item.of(id).maxDamage;
-		if (maxDamage > 0) {
-			event.custom({
-				type: "aether:repairing",
-				ingredient: {
-					item: id
-				},
-				repairTime: Math.ceil((1.4 * Math.sqrt(maxDamage)) * 20)
-			}).id(`adj:repairing/${flattenedID(id)}`);
-		}
-	});
 
 	// Summoning Rituals
 	function toSeconds(time) {

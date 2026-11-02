@@ -211,4 +211,15 @@ ServerEvents.tags('block', tags => {
 		'kubejs:fireblossom',
 		'kubejs:waterleaf',
 	]);
+
+	tags.add('offgrid:can_offset', [
+	]);
+
+	tags.add('offgrid:can_overlay', [
+		/another_furniture:.*flower_box/,
+		/everycomp:af\/.*flower_box/,
+		/.*:potted_/,
+	]);
+
+	
 });

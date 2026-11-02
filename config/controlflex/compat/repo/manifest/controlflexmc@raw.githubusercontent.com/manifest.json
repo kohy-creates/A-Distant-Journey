@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "ControlFlex Community Configs",
-  "generated": "2026-09-21T00:33:49Z",
+  "generated": "2026-11-02T14:41:51Z",
   "items": [
     {
       "mod_id": "create",
@@ -22,12 +22,30 @@
       ]
     },
     {
+      "mod_id": "effortlessbuilding",
+      "mod_name": "Effortless Building",
+      "path": "mods/effortlessbuilding.json",
+      "sha256": "70a21e62b49fb055629464f58f6182a06e276a2a516325e59613619948c9641f",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/effortless-building"
+      ]
+    },
+    {
       "mod_id": "efn",
       "mod_name": "EpicFight-Nightfall",
       "path": "mods/nightfall.json",
       "sha256": "bdeb23bc2c393d564f2a98e4469c3004f18e1b109c6200ac52126edccf825409",
       "home_pages": [
         "https://www.curseforge.com/minecraft/mc-mods/epicfight-nightfall"
+      ]
+    },
+    {
+      "mod_id": "emi",
+      "mod_name": "EMI",
+      "path": "mods/emi.json",
+      "sha256": "abfad0af36fbfc92f9a6e7a7f5b4c224295046b3dcaa86c29b6a8e08b1637355",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/emi"
       ]
     },
     {
@@ -73,6 +91,24 @@
       "sha256": "ae27f3d32845514acac2e7c21587ab671bd61eb76250aae2b6eafa00a2b31ca8",
       "home_pages": [
         "https://www.curseforge.com/minecraft/mc-mods/minemenu"
+      ]
+    },
+    {
+      "mod_id": "mts",
+      "mod_name": "Immersive Vehicles (MTS)",
+      "path": "mods/mts.json",
+      "sha256": "f6ed54772e9533b068c2c68a7e27b6a8edd605c70fd560191fb0012bc8e2cbd6",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator"
+      ]
+    },
+    {
+      "mod_id": "superior_tweaks",
+      "mod_name": "Superior Tweaks",
+      "path": "mods/superior_tweaks.json",
+      "sha256": "e5f0f33598cfc00ab191fe7d4e32baff663f2722e24b07ca0ee111894c95e6ba",
+      "home_pages": [
+        "https://www.curseforge.com/minecraft/mc-mods/superior-tweaks"
       ]
     },
     {

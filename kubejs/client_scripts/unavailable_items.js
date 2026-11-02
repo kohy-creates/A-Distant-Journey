@@ -10,7 +10,8 @@ const UnavailableItems = {
 		bannedItems: new Set([typeof String]),
 		shouldHide: function (id) {
 			return this.bannedItems.has(String(id));
-		}
+		},
+		generating: false
 	},
 };
 
@@ -28,8 +29,12 @@ ClientEvents.tick(event => {
 			if (s > highestStage) highestStage = s;
 		});
 		UnavailableItems.cache.currentChapter = highestStage;
-		if (UnavailableItems.cache.chapterCached == null || UnavailableItems.cache.chapterCached != UnavailableItems.cache.currentChapter) {
-
+		if (
+			UnavailableItems.cache.chapterCached == null
+			|| UnavailableItems.cache.chapterCached != UnavailableItems.cache.currentChapter
+			&& !UnavailableItems.cache.generating
+		) {
+			UnavailableItems.cache.generating = true;
 			Utils.runAsync(() => {
 				console.log('Generating undiscovered item cache...', 'This is running async btw!')
 				UnavailableItems.cache.bannedItems = new Set([typeof String]);
@@ -69,14 +74,14 @@ ClientEvents.tick(event => {
 					`Cached list size: ${UnavailableItems.cache.bannedItems.size}`
 				);
 				UnavailableItems.cache.chapterCached = UnavailableItems.cache.currentChapter;
+				UnavailableItems.cache.generating = false;
 			});
 		}
 	}
 });
 
 ADJClientEvents.itemIsLockedRenderCheck(event => {
-	const id = event.getItemStack().getItem().getId();
-	if (UnavailableItems.cache.shouldHide(id)) {
+	if (UnavailableItems.cache.shouldHide(event.getItemStack().getItem().getId())) {
 		event.cancel();
 	}
 });

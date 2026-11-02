@@ -21,7 +21,7 @@
     "pick_item": "",
     "sys_pause": "buttonStart|LONG_PRESS",
     "inventory": "dpadUp|PRESS",
-    "chat": "",
+    "chat": "dpadLeft|PRESS",
     "player_chat": "",
     "social": "",
     "advancements": "",
@@ -1193,7 +1193,8 @@
     "cycle_opt_forward": "rightStickRight|TAP",
     "cycle_opt_backward": "rightStickLeft|TAP",
     "mouse_wheel_up": "rightStickUp|HOLD",
-    "mouse_wheel_down": "rightStickDown|HOLD"
+    "mouse_wheel_down": "rightStickDown|HOLD",
+    "delete_text": "rightTrigger|HOLD"
   },
   "overlayActionBindings": {
     "move_forward": "leftStickUp|HOLD",
@@ -1215,7 +1216,8 @@
     "gui_press": "",
     "gui_back": "buttonB|PRESS",
     "mouse_wheel_up": "leftBumper|HOLD",
-    "mouse_wheel_down": "rightBumper|HOLD"
+    "mouse_wheel_down": "rightBumper|HOLD",
+    "delete_text": ""
   },
   "virtualKbmBindings": {
     "key.keyboard.escape": {},
@@ -1250,6 +1252,6 @@
     "name": "recommend",
     "displayName": "Recommend",
     "description": "Recommended bindings for modded play, including Epic Fight and common mod keys.",
-    "version": 4
+    "version": 6
   }
 }

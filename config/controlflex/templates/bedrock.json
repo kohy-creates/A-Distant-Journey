@@ -3,7 +3,7 @@
     "name": "bedrock",
     "displayName": "Bedrock Edition",
     "description": "Minecraft Bedrock Edition (Xbox) controller bindings. Java has no separate crafting screen; Y opens inventory (X crafting has no vanilla equivalent).",
-    "version": 4
+    "version": 6
   },
   "mainActionBindings": {
     "layer_shift1": "",
@@ -270,7 +270,8 @@
     "mouse_wheel_up": "leftBumper|HOLD",
     "mouse_wheel_down": "rightBumper|HOLD",
     "gui_press": "",
-    "gui_back": "buttonB|PRESS"
+    "gui_back": "buttonB|PRESS",
+    "delete_text": ""
   },
   "guiActionBindings": {
     "cursor_navi_up": "leftStickUp|HOLD",
@@ -285,6 +286,7 @@
     "gui_back": "buttonB|PRESS",
     "gui_prev_tab": "leftBumper|PRESS",
     "gui_next_tab": "rightBumper|PRESS",
+    "delete_text": "rightTrigger|HOLD",
     "inv_select": "buttonA|PRESS",
     "inv_quick_move": "buttonY|TAP",
     "inv_take_half": "buttonX|PRESS",
@@ -307,6 +309,7 @@
   },
   "thresholds": {
     "tapThresholdMs": 500,
+    "delayPressMs": 550,
     "longPressThresholdMs": 1000
   }
 }

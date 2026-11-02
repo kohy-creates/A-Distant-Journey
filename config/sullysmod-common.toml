@@ -1,0 +1,67 @@
+
+#Mod Feature Selection
+[feature_selection]
+	#Enables all Jade features
+	jade = true
+	#Enables all petrified wood features
+	petrified_wood = true
+	#Enables all amber features (if disabled, petrified trees will also be disabled)
+	amber = true
+	#Enables all tortoise features
+	tortoise = true
+	#Enables all lanternfish features
+	lanternfish = true
+	#Enables all piranha features
+	piranha = true
+	#Enables all bouldering zombie features
+	bouldering_zombie = true
+	#Enables all features regarding the mauled
+	mauled = true
+	#Enables all jungle spider features
+	jungle_spider = true
+	#Enables the item stand
+	item_stand = true
+	#Enables all artifact features
+	artifacts = true
+	#Enables copper buttons
+	copper_buttons = true
+	#Enables gem lanterns
+	gem_lanterns = true
+	#Enables grindstone polishing
+	grindstone_polishing = true
+	#Enables bug meat
+	bug_meat = true
+
+	#Mod Potions
+	[feature_selection.potions]
+		#Enables the bad luck potion
+		unluck_potion = true
+		#Enables the resistance potion
+		resistance_potion = true
+
+	#Ambient effects
+	[feature_selection.ambient]
+		#Enables the Mountain call ambient sounds
+		enable_mountain_calls = true
+		#Enables the mysterious eyes in the void
+		enable_mysterious_eyes = true
+
+#Other Settings
+[other_settings]
+	#If the velocity of projectiles bounced off of a Jade block should be based on its previous velocity instead of a static value. [Warning: Experimental] (default = false)
+	"Dynamic ricochet velocity" = false
+
+#Vanilla Spawn Modifications
+[vanilla_spawn_modifications]
+	#Sets a percentage for how many vanilla zombies should be replaced by bouldering zombies in deepslate levels.
+	zombie_deepslate_replacement_rate = 1.0
+	#Sets a percentage for how many vanilla spiders should be replaced by jungle spiders in jungle biomes.
+	spider_jungle_replacement_rate = 0.0
+	#Sets a percentage for how many vanilla skeletons should be replaced by the mauled in deepslate levels.
+	skeleton_deepslate_replacement_rate = 0.2
+
+#Experimental Entity Modifications
+[experimental_entity_modifications]
+	#Enables wolves consuming meat when killing an entity, similar to what the piranha does
+	"Enable wolves consuming meat" = false
+

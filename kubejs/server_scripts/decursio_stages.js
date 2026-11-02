@@ -148,7 +148,9 @@ const DecursioStages = {
 		shouldHide: function (id) {
 			return this.bannedItems.has(String(id));
 		},
+		generating: false,
 		generateCache: function () {
+			this.generating = true;
 			Utils.runAsync(() => {
 				console.log('Generating undiscovered item cache...', 'This is running async btw!')
 				DecursioStages.cache.bannedItems = new Set([typeof String]);
@@ -183,6 +185,7 @@ const DecursioStages = {
 					`Cached list size: ${DecursioStages.cache.bannedItems.size}`
 				);
 				DecursioStages.cache.chapterCached = DecursioStages.cache.currentChapter;
+				this.generating = false;
 			});
 		}
 	},
@@ -240,7 +243,11 @@ ServerEvents.tick(event => {
 		DecursioStages.cache.ticker = 0;
 
 		DecursioStages.cache.currentChapter = global.getCurrentChapter();
-		if (DecursioStages.cache.chapterCached == null || DecursioStages.cache.chapterCached != DecursioStages.cache.currentChapter) {
+		if (
+			DecursioStages.cache.chapterCached == null 
+			|| DecursioStages.cache.chapterCached != DecursioStages.cache.currentChapter
+			&& !DecursioStages.cache.generating
+		) {
 			DecursioStages.cache.generateCache();
 		}
 	}
