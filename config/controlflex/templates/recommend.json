@@ -133,7 +133,8 @@
     "load_toolbar": "",
     "spectator_outlines": "",
     "open_guide": "",
-    "controlflex:key.controlflex.open_settings": ""
+    "controlflex:key.controlflex.open_settings": "",
+    "hud_toggle": ""
   },
   "shift2ActionBindings": {
     "controlflex:key.controlflex.open_radial_menu_3": "buttonBack|HOLD",
@@ -181,7 +182,8 @@
     "load_toolbar": "",
     "spectator_outlines": "",
     "open_guide": "",
-    "controlflex:key.controlflex.open_settings": ""
+    "controlflex:key.controlflex.open_settings": "",
+    "hud_toggle": ""
   },
   "shift3ActionBindings": {
     "controlflex:key.controlflex.open_radial_menu_4": "buttonBack|HOLD",
@@ -229,7 +231,8 @@
     "load_toolbar": "",
     "spectator_outlines": "",
     "open_guide": "",
-    "controlflex:key.controlflex.open_settings": ""
+    "controlflex:key.controlflex.open_settings": "",
+    "hud_toggle": ""
   },
   "shift4ActionBindings": {
     "controlflex:key.controlflex.open_radial_menu_5": "buttonBack|HOLD",
@@ -277,7 +280,8 @@
     "load_toolbar": "",
     "spectator_outlines": "",
     "open_guide": "",
-    "controlflex:key.controlflex.open_settings": ""
+    "controlflex:key.controlflex.open_settings": "",
+    "hud_toggle": ""
   },
   "overlayActionBindings": {
     "move_forward": "leftStickUp|HOLD",

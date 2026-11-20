@@ -76,7 +76,7 @@
 
 [lantern]
 	#Allow wall lanterns placement
-	wall_lanterns = true
+	wall_lanterns = false
 	#Gives high priority to wall lantern placement. Enable to override other wall lanterns placements, disable if it causes issues with other mods that use lower priority block click events
 	high_priority = true
 	#Mod ids of mods that have lantern block that extend the base lantern class but don't look like one

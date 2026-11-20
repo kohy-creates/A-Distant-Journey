@@ -25,4 +25,9 @@ optimizeAliParseReuse = true
 #pass instead of once per loot table entry. Only used for items without NBT.
 #Disable if a mod's enchantments check more than the item itself.
 optimizeAliEnchantCache = true
+#Turn each global loot modifier into JSON once per loot pass instead of once for every page
+#it shows up on. ALI re-encodes the same modifier through its codec and Gson for every loot
+#table it touches, which was about half of building the pages. The JSON only depends on the
+#modifier itself, so every page gets the same text as before. Safe.
+optimizeAliGlmJson = true
 

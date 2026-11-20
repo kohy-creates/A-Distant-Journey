@@ -6,5 +6,6 @@
   "logIntervalInMinutes": 60,
   "showSummaryOnDebugScreen": true,
   "memoryUsageWarningPercentage": 101,
-  "debugThreadsStuck": false
+  "debugThreadsStuck": false,
+  "skipMods": []
 }

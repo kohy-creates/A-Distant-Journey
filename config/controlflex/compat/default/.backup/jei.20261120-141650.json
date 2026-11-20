@@ -1,0 +1,45 @@
+{
+  "mod_id": "jei",
+  "mod_name": "Just Enough Items (JEI)",
+  "home_page": "https://www.curseforge.com/minecraft/mc-mods/jei",
+  "mod_versions": [
+    {
+      "version": "",
+      "ignoreKeys": [
+        "key.jei.toggleEditMode",
+        "key.jei.showUses2",
+        "key.jei.showRecipe2",
+        "key.jei.maxTransferRecipeBookmark",
+        "key.jei.toggleWildcardHideIngredient",
+        "key.jei.toggleBookmarkOverlay",
+        "key.jei.transferRecipeBookmark",
+        "key.jei.closeRecipeGui",
+        "key.jei.toggleOverlay",
+        "key.jei.toggleCheatMode",
+        "key.jei.nextSearch",
+        "key.jei.focusSearch",
+        "key.jei.previousSearch",
+        "key.jei.cheatItemStack2",
+        "key.jei.clearSearchBar",
+        "key.jei.toggleCheatModeConfigButton",
+        "key.jei.cheatOneItem2",
+        "key.jei.bookmark",
+        "key.jei.cheatItemStack",
+        "key.jei.cheatOneItem",
+        "key.jei.toggleHideIngredient",
+        "key.jei.copy.recipe.id"
+      ],
+      "screenKeys": {
+        "key.jei.showUses": {},
+        "key.jei.showRecipe": {},
+        "key.jei.nextPage": {},
+        "key.jei.previousPage": {},
+        "key.jei.nextCategory": {},
+        "key.jei.previousCategory": {},
+        "key.jei.previousRecipePage": {},
+        "key.jei.nextRecipePage": {},
+        "key.jei.recipeBack": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "configVersion": 2,
+  "unlockAllArchiveEntries": false,
+  "unlockAllGameEntries": false,
+  "showIntroductionEntry": true,
+  "archiveLookupRequiresPhone": true,
+  "sendAntazonUnlockEmail": true,
+  "passwordHintAfterFailures": 3,
+  "builtInGames": {
+    "chess": true,
+    "minesweeper": true,
+    "cakeStack": true,
+    "fliptris": true,
+    "netherBreakout": true,
+    "flappyGhast": true,
+    "ore2048": true,
+    "pistonPush": true
+  },
+  "gameRewards": {
+    "blockle": 10,
+    "chessEasy": 5,
+    "chessNormal": 10,
+    "chessHard": 20,
+    "chessExpert": 40,
+    "minesweeperSmall": 5,
+    "minesweeperLarge": 15,
+    "flappyGhast15": 5,
+    "flappyGhast40": 15,
+    "ore2048Diamond": 5,
+    "ore2048Beacon": 25,
+    "pistonPush": 5,
+    "pistonPushPar": 15
+  },
+  "desktopApps": {
+    "archive": true,
+    "files": true,
+    "settings": true,
+    "terminal": true,
+    "textEditor": true,
+    "paint": true,
+    "antmail": true,
+    "antazon": false,
+    "merchant": false,
+    "games": true,
+    "disks": true,
+    "tasks": false
+  },
+  "client": {
+    "inventoryComputerButton": false,
+    "defaultPreferences": {}
+  },
+  "jei": {
+    "antazonPrices": true,
+    "sellValues": true,
+    "taskRewards": true
+  }
+}

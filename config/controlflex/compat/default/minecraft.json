@@ -1,0 +1,14 @@
+{
+  "mod_id": "minecraft",
+  "mod_name": "Minecraft",
+  "home_page": "https://www.minecraft.net/",
+  "mod_versions": [
+    {
+      "version": "",
+      "screen": {
+        "net.minecraft.client.gui.screens.inventory.InventoryScreen": {},
+        "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen": {}
+      }
+    }
+  ]
+}

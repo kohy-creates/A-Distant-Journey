@@ -1,0 +1,645 @@
+
+[basiliskDagger]
+	#Attack damage.
+	#Range: 0.0 ~ 1024.0
+	attackDamage = 6.0
+	#Attack speed.
+	#Range: -10.0 ~ 10.0
+	attackSpeed = -1.8
+	#Poison duration applied on hit.
+	#Range: 0 ~ 20000
+	poisonDurationTicks = 100
+	#Poison level applied on hit (0 = I).
+	#Range: 0 ~ 10
+	poisonAmplifier = 1
+
+[ultimateTools]
+	#Attack damage of the Ultimate Sword.
+	#Range: 0.0 ~ 1024.0
+	swordAttackDamage = 30.0
+	#Attack speed of the Ultimate Sword.
+	#Range: -10.0 ~ 10.0
+	swordAttackSpeed = -2.4
+	#Attack damage of the Ultimate Pickaxe.
+	#Range: 0.0 ~ 1024.0
+	pickaxeAttackDamage = 22.0
+	#Attack speed of the Ultimate Pickaxe.
+	#Range: -10.0 ~ 10.0
+	pickaxeAttackSpeed = -2.8
+	#Attack damage of the Ultimate Axe.
+	#Range: 0.0 ~ 1024.0
+	axeAttackDamage = 38.0
+	#Attack speed of the Ultimate Axe.
+	#Range: -10.0 ~ 10.0
+	axeAttackSpeed = -3.0
+	#Attack damage of the Ultimate Shovel.
+	#Range: 0.0 ~ 1024.0
+	shovelAttackDamage = 24.0
+	#Attack speed of the Ultimate Shovel.
+	#Range: -10.0 ~ 10.0
+	shovelAttackSpeed = -3.0
+	#Attack damage of the Ultimate Hoe.
+	#Range: 0.0 ~ 1024.0
+	hoeAttackDamage = 8.0
+	#Attack speed of the Ultimate Hoe.
+	#Range: -10.0 ~ 10.0
+	hoeAttackSpeed = 0.0
+	#Enchantability for all Ultimate tools.
+	#Range: 0 ~ 100
+	toolEnchantability = 25
+	#If false, Ultimate pickaxe, axe, shovel, and hoe lose their 3x3 mining mode and tooltip.
+	threeByThreeEnabled = true
+	#If false, the Ultimate Pickaxe and Axe lose Vein Mining and the Battle Axe stops felling trees.
+	veinMiningEnabled = true
+	#Most extra blocks the Ultimate Pickaxe or Axe breaks in one Vein Mining swing. Logs use treeFellingMaxLogs instead.
+	#Range: 1 ~ 1024
+	veinMiningMaxBlocks = 64
+	#Most extra logs broken at once by Vein Mining on logs or by the Battle Axe.
+	#Range: 1 ~ 1024
+	treeFellingMaxLogs = 128
+
+[ultimateBow]
+	#Damage dealt to non-player targets.
+	#Range: 0.0 ~ 1024.0
+	attackDamage = 18.0
+	#Health restored to players hit by arrows from this bow.
+	#Range: 0.0 ~ 1024.0
+	playerHeal = 0
+	#Draw speed relative to a normal bow. 2.5 = 2.5x as fast.
+	#Range: 0.1 ~ 16.0
+	drawSpeedMultiplier = 1
+	#If true, Ultimate Bows are automatically given and keep the Flame enchant.
+	comesEnchantedWithFlame = false
+	#Enchantability of the Ultimate Bow.
+	#Range: 0 ~ 100
+	enchantability = 20
+
+[ultimateCrossbow]
+	#Damage dealt by projectiles fired from the Ultimate Crossbow.
+	#Range: 0.0 ~ 1024.0
+	attackDamage = 8.0
+	#Charge speed relative to a normal crossbow. Below 1.0 is slower.
+	#Default 0.25 means 4x slower (16-arrow full load ~5 s). Quick Charge still applies.
+	#Range: 0.01 ~ 16.0
+	chargeSpeedMultiplier = 0.334
+	#Enchantability of the Ultimate Crossbow.
+	#Range: 0 ~ 100
+	enchantability = 20
+
+[ultimateMace]
+	#Multiplier on both base damage and smash bonus. 1.5 = 50% stronger than a normal mace.
+	#Range: 0.1 ~ 16.0
+	damageMultiplier = 1.5
+	#Attack speed of the Ultimate Mace.
+	#Range: -10.0 ~ 10.0
+	attackSpeed = -3.4
+	#Enchantability of the Ultimate Mace.
+	#Range: 0 ~ 100
+	enchantability = 20
+
+[ultimateArmor]
+	#If true, newly crafted Ultimate Armor has Protection, Fire Protection, Projectile Protection, and Blast Protection.
+	comesEnchanted = false
+	#Enchantability for all Ultimate Armor pieces.
+	#Range: 0 ~ 100
+	enchantability = 10
+	#Armor points of the Ultimate Helmet.
+	#Range: 0 ~ 100
+	helmetArmor = 4
+	#Armor points of the Ultimate Chestplate.
+	#Range: 0 ~ 100
+	chestplateArmor = 9
+	#Armor points of the Ultimate Leggings.
+	#Range: 0 ~ 100
+	leggingsArmor = 7
+	#Armor points of the Ultimate Boots.
+	#Range: 0 ~ 100
+	bootsArmor = 4
+	#Armor toughness of the Ultimate Helmet.
+	#Range: 0.0 ~ 100.0
+	helmetToughness = 3.0
+	#Armor toughness of the Ultimate Chestplate.
+	#Range: 0.0 ~ 100.0
+	chestplateToughness = 3.0
+	#Armor toughness of the Ultimate Leggings.
+	#Range: 0.0 ~ 100.0
+	leggingsToughness = 3.0
+	#Armor toughness of the Ultimate Boots.
+	#Range: 0.0 ~ 100.0
+	bootsToughness = 3.0
+	#Knockback resistance granted by each Ultimate Armor piece.
+	#Range: 0.0 ~ 1.0
+	knockbackResistance = 0.1
+
+[royalGear]
+	comesEnchanted = false
+	#Range: 0 ~ 100
+	protectionLevel = 10
+	#Range: 0 ~ 100
+	enchantability = 30
+	#Range: 0 ~ 1000
+	durabilityMultiplier = 93
+	#Range: 0 ~ 100
+	guardianHelmetArmor = 5
+	#Range: 0 ~ 100
+	guardianChestplateArmor = 10
+	#Range: 0 ~ 100
+	guardianLeggingsArmor = 8
+	#Range: 0 ~ 100
+	guardianBootsArmor = 5
+	#Range: 0.0 ~ 100.0
+	guardianArmorToughness = 4.0
+	#Range: 0.0 ~ 1.0
+	guardianArmorKnockbackResistance = 0.15
+	#Range: 0.0 ~ 10.0
+	guardianHelmetJudgmentBonus = 0
+	#Range: 0.0 ~ 10.0
+	guardianChestplateJudgmentBonus = 0
+	#Range: 0.0 ~ 10.0
+	guardianLeggingsJudgmentBonus = 0
+	#Range: 0.0 ~ 10.0
+	guardianBootsJudgmentBonus = 0
+	#Range: 1 ~ 72000
+	guardianJudgmentDurationTicks = 160
+	#Range: 0 ~ 100
+	assailantHelmetArmor = 5
+	#Range: 0 ~ 100
+	assailantChestplateArmor = 10
+	#Range: 0 ~ 100
+	assailantLeggingsArmor = 8
+	#Range: 0 ~ 100
+	assailantBootsArmor = 5
+	#Range: 0.0 ~ 100.0
+	assailantArmorToughness = 3.0
+	#Range: 0.0 ~ 1.0
+	assailantArmorKnockbackResistance = 0.15
+	#Range: 0.0 ~ 1.0
+	assailantHelmetDoubleDamageChance = 0
+	#Range: 0.0 ~ 1.0
+	assailantChestplateDoubleDamageChance = 0
+	#Range: 0.0 ~ 1.0
+	assailantLeggingsDoubleDamageChance = 0
+	#Range: 0.0 ~ 1.0
+	assailantBootsDoubleDamageChance = 0
+	#Range: 0.0 ~ 4096.0
+	guardianSwordAttackDamage = 111.0
+	#Range: 0.0 ~ 4096.0
+	giantFryingPanAttackDamage = 50.0
+	#Range: 1 ~ 72000
+	giantFryingPanCookTimeTicks = 200
+	#Range: -10.0 ~ 10.0
+	guardianSwordAttackSpeed = -2.5
+	#Range: 0 ~ 72000
+	guardianSwordElementalCooldownTicks = 120
+	#Range: 0.0 ~ 4096.0
+	guardianSwordFirePrimaryDamage = 22.0
+	#Range: 0.0 ~ 4096.0
+	guardianSwordFireSplashDamage = 14.0
+	#Range: 0.0 ~ 4096.0
+	guardianSwordFrostSpikeDamage = 9.0
+	#Range: 0.0 ~ 4096.0
+	guardianSwordStormPrimaryDamage = 16.0
+	#Range: 0.0 ~ 4096.0
+	guardianSwordStormJumpDamage = 14.0
+	#Range: 0 ~ 64
+	guardianSwordStormMaxJumps = 4
+	#Range: 0.0 ~ 128.0
+	guardianSwordStormJumpRange = 9.0
+	#Range: 0.0 ~ 4096.0
+	assailantBattleAxeAttackDamage = 151.0
+	#Range: -10.0 ~ 10.0
+	assailantBattleAxeAttackSpeed = -2.9
+	#Range: 0.0 ~ 32.0
+	weaponAttackReachBonus = 3.2
+	#Range: 0.0 ~ 32.0
+	weaponAttackKnockbackBonus = 1.0
+	#Range: 1 ~ 100000
+	weaponDurability = 4608
+	#Range: 0 ~ 100
+	weaponEnchantability = 30
+	#Range: 1 ~ 100000
+	guardianShieldDurability = 1008
+	#Range: 0.0 ~ 128.0
+	guardianMusterRange = 16.0
+	#Range: 1 ~ 72000
+	guardianMusterDurationTicks = 1200
+	#Range: 0 ~ 72000
+	guardianMusterCooldownTicks = 500
+	#Range: 0 ~ 64
+	guardianMusterMobCap = 3
+	#Range: 0.0 ~ 1.0
+	guardianMusterDamageReduction = 0.4
+	#Range: 0.0 ~ 10.0
+	guardianMusterAttackBonus = 0.5
+	#Range: 0.0 ~ 10.0
+	guardianMusterSpeedBonus = 0.25
+	#Range: 0.0 ~ 1024.0
+	guardianMusterPassiveDamageFloor = 3.0
+	#Range: 0.5 ~ 128.0
+	guardianBoundaryRadius = 9.0
+	#Range: 1 ~ 72000
+	guardianBoundaryDurationTicks = 120
+	#Range: 0 ~ 72000
+	guardianBoundaryCooldownTicks = 700
+	#Range: 0 ~ 255
+	guardianBoundaryStrengthAmplifier = 1
+	#Range: 0 ~ 1200
+	guardianBoundaryArrestTicks = 20
+	#Range: 0 ~ 1200
+	guardianBoundaryDropTicks = 8
+	#Range: 0 ~ 4096
+	guardianBoundaryProjectileCap = 64
+
+[battleAxe]
+	#Attack damage of the Battle Axe.
+	#Range: 0.0 ~ 4096.0
+	attackDamage = 46.0
+	#Attack speed of the Battle Axe.
+	#Range: -10.0 ~ 10.0
+	attackSpeed = -3.1
+
+[bigBertha]
+	#Attack damage of Big Bertha.
+	#Range: 0.0 ~ 4096.0
+	attackDamage = 55.0
+	#Extra attack range in blocks while held in main hand.
+	#Range: 0.0 ~ 32.0
+	reachBonus = 3.0
+	#Attack speed of Big Bertha.
+	#Range: -10.0 ~ 10.0
+	attackSpeed = -3.0
+	#Paralyze duration used by Basilisk mode.
+	#Range: 0 ~ 20000
+	basiliskParalyzeDurationTicks = 80
+	#Slow duration used by Kraken mode.
+	#Range: 0 ~ 20000
+	krakenSlowTicks = 80
+	#Cooldown in seconds after using Basilisk mode's right-click paralyze.
+	#Range: 0.0 ~ 3600.0
+	basiliskModeCooldownSeconds = 7.0
+	#How long Lucid mode's inversion lasts on a target, in seconds.
+	#Range: 0.0 ~ 3600.0
+	lucidModeInvertedDurationSeconds = 1.0
+	#Bonus damage percent from Lucid mode while the wielder is inverted.
+	#Range: 0.0 ~ 1000.0
+	lucidModeInvertedDamageBonusPercent = 15.0
+	#Bonus damage percent dealt while no boss mode is selected (the default mode).
+	#Range: 0.0 ~ 1000.0
+	noneModeDamageBonusPercent = 0
+	#Bonus damage percent from Nightmare mode hits.
+	#Range: 0.0 ~ 1000.0
+	nightmareModeDamageBonusPercent = 0
+
+[attitudeAdjuster]
+	#Base attack damage of the Attitude Adjuster.
+	#Range: 0.0 ~ 4096.0
+	baseDamage = 61.0
+	#If true, player ground slams can break a small patch of blocks on impact.
+	breaksBlocks = true
+
+[krakensGrasp]
+	#Melee attack damage of Kraken's Grasp.
+	#Range: 0.0 ~ 4096.0
+	attackDamage = 40.0
+	#Attack speed of Kraken's Grasp.
+	#Range: -10.0 ~ 10.0
+	attackSpeed = -2.9
+	#Damage dealt when the thrown trident hits an entity.
+	#Range: 0.0 ~ 4096.0
+	thrownDamage = 45.0
+	#Bonus damage from the lightning strike on every hit.
+	#Range: 0.0 ~ 4096.0
+	lightningDamage = 6.0
+	#Whether Kraken's Grasp automatically returns to its thrower like an enchanted Loyalty trident.
+	innateLoyalty = true
+	#Effective Loyalty level used for the innate return, from 1 to 3.
+	#Range: 1 ~ 3
+	innateLoyaltyLevel = 3
+	#How long a summoned tentacle lasts, in ticks.
+	#Range: 1 ~ 72000
+	tentacleDurationTicks = 100
+	#Radius in blocks around a tentacle that it can grab and slow.
+	#Range: 0.0 ~ 32.0
+	tentacleRadius = 3.0
+	#Slowness amplifier applied to entities held by a tentacle (0 = Slowness I).
+	#Range: 0 ~ 255
+	tentacleSlownessAmplifier = 8
+	#How often, in ticks, a tentacle refreshes its slowness effect on nearby entities. Kept low so the effect fades quickly once an entity leaves.
+	#Range: 1 ~ 2000
+	tentacleSlownessRefreshTicks = 5
+
+[scorpionWhip]
+	#Base lash damage of the Scorpion Stinger Whip.
+	#Range: 0.0 ~ 4096.0
+	baseDamage = 10.0
+	#Extra entity interaction range in blocks while held in main hand.
+	#Range: 0.0 ~ 32.0
+	reachBonus = 5.0
+	#Poison duration applied on lash.
+	#Range: 0 ~ 20000
+	poisonDurationTicks = 100
+	#Maximum tether distance before it breaks.
+	#Range: 0.0 ~ 128.0
+	tetherMaxRange = 10.0
+	#Bonus damage dealt when snapping the tether free.
+	#Range: 0.0 ~ 4096.0
+	snapBonusDamage = 6.0
+	#Pull strength applied to normal tethered targets.
+	#Range: 0.0 ~ 8.0
+	pullStrength = 0.75
+	#Reduced pull strength applied to heavy targets.
+	#Range: 0.0 ~ 8.0
+	heavyPullMultiplier = 0.25
+	#Self-pull strength toward heavy tethered targets.
+	#Range: 0.0 ~ 8.0
+	selfPullMultiplier = 0.45
+
+[bloodCrystalKatana]
+	#Attack damage of the Blood Crystal Katana.
+	#Range: 0 ~ 1024
+	attackDamage = 7
+	#Forward launch strength applied to the wielder when the katana hits.
+	#Range: 0.0 ~ 8.0
+	launchStrength = 1.1
+	#How long the crimson trail lingers after a katana hit, in ticks.
+	#Range: 0 ~ 200
+	trailDurationTicks = 12
+	#Extra entity interaction range in blocks while held in main hand. Lets a swing reach (and dash toward) a target you are looking at from farther away.
+	#Range: 0.0 ~ 32.0
+	reachBonus = 4.0
+	#Full-immunity window granted after a full-strength swing dash, in ticks (0 disables).
+	#Range: 0 ~ 200
+	invulnTicks = 8
+	#Minimum ticks between katana dashes.
+	#Range: 0 ~ 200
+	dashCooldownTicks = 4
+
+[nightmareArmor]
+	#Armor points of the Nightmare Helmet. (Netherite default: 3)
+	#Range: 0 ~ 100
+	helmetArmor = 3
+	#Armor points of the Nightmare Chestplate. (Netherite default: 8)
+	#Range: 0 ~ 100
+	chestplateArmor = 8
+	#Armor points of the Nightmare Leggings. (Netherite default: 6)
+	#Range: 0 ~ 100
+	leggingsArmor = 6
+	#Armor points of the Nightmare Boots. (Netherite default: 3)
+	#Range: 0 ~ 100
+	bootsArmor = 3
+	#Armor toughness of the Nightmare Helmet.
+	#Range: 0.0 ~ 100.0
+	helmetToughness = 3.0
+	#Armor toughness of the Nightmare Chestplate.
+	#Range: 0.0 ~ 100.0
+	chestplateToughness = 3.0
+	#Armor toughness of the Nightmare Leggings.
+	#Range: 0.0 ~ 100.0
+	leggingsToughness = 3.0
+	#Armor toughness of the Nightmare Boots.
+	#Range: 0.0 ~ 100.0
+	bootsToughness = 3.0
+	#Knockback resistance granted by each Nightmare Armor piece.
+	#Range: 0.0 ~ 1.0
+	knockbackResistance = 0.1
+	#Chance for the Nightmare Helmet to double an incoming hit's damage.
+	#Range: 0.0 ~ 1.0
+	helmetDoubleDamageChance = 0
+	#Chance for the Nightmare Chestplate to double an incoming hit's damage.
+	#Range: 0.0 ~ 1.0
+	chestplateDoubleDamageChance = 0
+	#Chance for the Nightmare Leggings to double an incoming hit's damage.
+	#Range: 0.0 ~ 1.0
+	leggingsDoubleDamageChance = 0
+	#Chance for the Nightmare Boots to double an incoming hit's damage.
+	#Range: 0.0 ~ 1.0
+	bootsDoubleDamageChance = 0
+	#Attack knockback added by each Primordial Armor piece.
+	#Range: 0.0 ~ 16.0
+	primordialArmorKnockbackPerPiece = 0.5
+
+[nightmareSword]
+	#Base attack damage. Also the minimum damage at full health.
+	#Formula: damage = baseDamage * (1 + missingHealthFraction * scalingFactor)
+	#Range: 0.0 ~ 1024.0
+	baseDamage = 45.0
+	#Attack speed of the Nightmare Sword.
+	#Range: -10.0 ~ 10.0
+	attackSpeed = -2.4
+	#How much damage scales with missing health.
+	#At 1.0 and 0 HP remaining: damage doubles. At full health: always baseDamage.
+	#Range: 0.0 ~ 100.0
+	scalingFactor = 1.5
+
+[fallenKingCrown]
+	#Armor value of the Fallen King's Crown. Default: 2 (gold helmet).
+	#Range: 0 ~ 100
+	armorValue = 2
+	#Armor toughness of the Fallen King's Crown. Default: 0.0 (gold helmet).
+	#Range: 0.0 ~ 100.0
+	armorToughness = 0.0
+
+[bloodCrystalArmor]
+	#Ticks (20/s) for each armor Bloodglass Shield to recharge after shattering. Default: 600 (30s).
+	#Range: 1 ~ 72000
+	armorShieldRechargeTicks = 600
+	#Number of Bloodglass Shields granted by a Blood Crystal Apple (Bloodglass Ward level). Default: 2.
+	#Range: 1 ~ 8
+	appleShieldCount = 2
+	#Duration in ticks of the Bloodglass Ward effect from a Blood Crystal Apple. Default: 2400 (120s).
+	#Range: 1 ~ 144000
+	appleDurationTicks = 2400
+	#Ticks for each apple Bloodglass Shield to recharge while Bloodglass Ward is active. Default: 600 (30s).
+	#Range: 1 ~ 72000
+	appleShieldRechargeTicks = 600
+	#Hard cap on total Bloodglass Shields from all sources combined. Default: 8.
+	#Range: 1 ~ 20
+	hardMaxShields = 8
+	#Armor defense value for Blood Crystal Helmet. Default: 2 (iron).
+	#Range: 0 ~ 30
+	helmetDefense = 2
+	#Armor defense value for Blood Crystal Chestplate. Default: 6 (iron).
+	#Range: 0 ~ 30
+	chestplateDefense = 6
+	#Armor defense value for Blood Crystal Leggings. Default: 5 (iron).
+	#Range: 0 ~ 30
+	leggingsDefense = 5
+	#Armor defense value for Blood Crystal Boots. Default: 2 (iron).
+	#Range: 0 ~ 30
+	bootsDefense = 2
+	#Armor toughness for all Blood Crystal armor pieces. Default: 0.0 (iron).
+	#Range: 0.0 ~ 20.0
+	armorToughness = 0.0
+	#Max durability of Blood Crystal Helmet. Default: 92.
+	#Range: 1 ~ 2000
+	helmetDurability = 92
+	#Max durability of Blood Crystal Chestplate. Default: 134.
+	#Range: 1 ~ 2000
+	chestplateDurability = 134
+	#Max durability of Blood Crystal Leggings. Default: 126.
+	#Range: 1 ~ 2000
+	leggingsDurability = 126
+	#Max durability of Blood Crystal Boots. Default: 109.
+	#Range: 1 ~ 2000
+	bootsDurability = 109
+
+[squidzooka]
+	#Cooldown in seconds after firing. Set to 0 to disable.
+	#Range: 0.0 ~ 3600.0
+	cooldownSeconds = 1.0
+	#Initial launch velocity applied to the Missile Squid.
+	#Range: 0.1 ~ 20.0
+	launchVelocity = 2.1
+
+[rpoLauncher]
+	#Cooldown in seconds after firing. Set to 0 to disable.
+	#Range: 0.0 ~ 3600.0
+	cooldownSeconds = 1.0
+	#Initial launch velocity applied to the Octopus Bomb.
+	#Range: 0.1 ~ 20.0
+	launchVelocity = 2.1
+	#Max damage dealt at the center of the ink explosion.
+	#Range: 0.0 ~ 4096.0
+	explosionDamage = 14.0
+	#Radius in blocks of the ink explosion.
+	#Range: 0.5 ~ 32.0
+	explosionRadius = 4.0
+
+[anvilCannon]
+	#Cooldown in seconds after firing. Set to 0 to disable.
+	#Range: 0.0 ~ 3600.0
+	cooldownSeconds = 2.5
+	#Initial launch velocity applied to the fired anvil.
+	#Range: 0.1 ~ 20.0
+	launchVelocity = 2.2
+	#Damage dealt by a fired anvil hitting an entity at launch speed.
+	#Range: 0.0 ~ 4096.0
+	impactDamage = 30.0
+	#Knockback strength applied to an entity hit by a fired anvil.
+	#Range: 0.0 ~ 20.0
+	impactKnockback = 1.5
+	#How hard the shooter is pushed backwards when firing.
+	#Range: 0.0 ~ 10.0
+	recoilStrength = 0.8
+	#Whether a fired anvil lands one damage stage worse (anvil, chipped, damaged, destroyed).
+	degradeOnImpact = true
+
+[sizeRays]
+	#If false, shrink and grow rays cannot be fired by players or dispensers.
+	#Immune entities tag: data/antarchy/tags/entity_types/size_changing_immune.json
+	enabled = true
+	#Cooldown in seconds after firing. Set to 0 to disable.
+	#Range: 0.0 ~ 3600.0
+	cooldownSeconds = 1.0
+	#Minimum entity scale the shrink ray can reach. 1.0 is normal size.
+	#Range: 0.01 ~ 64.0
+	minScale = 0.1
+	#Maximum entity scale the growth ray can reach. 1.0 is normal size.
+	#Range: 0.01 ~ 64.0
+	maxScale = 5.0
+	#Scale delta per projectile hit. 0.25 changes scale by 25% of normal per hit.
+	#Range: 0.001 ~ 64.0
+	deltaPerHit = 0.25
+	#Scale delta per level of Shrinking Potion. Level II applies double this value.
+	#Range: 0.001 ~ 64.0
+	shrinkingPotionDelta = 0.3
+	#Scale delta per level of Growth Potion. Level II applies double this value.
+	#Range: 0.001 ~ 64.0
+	growthPotionDelta = 0.5
+
+[gravityGun]
+	#Master toggle for the Gravity Gun.
+	enabled = true
+	#If false, the Gravity Gun cannot grab blocks.
+	blocksEnabled = true
+	#If false, the Gravity Gun cannot grab entities.
+	entitiesEnabled = true
+	#Search range for a target in blocks.
+	#Range: 1.0 ~ 64.0
+	range = 16.0
+	#Velocity multiplier when throwing a held target.
+	#Range: 0.1 ~ 10.0
+	throwStrength = 1.8
+	#Velocity multiplier for the push blast.
+	#Range: 0.1 ~ 10.0
+	blastStrength = 1.4
+	#Cooldown in seconds after any Gravity Gun action.
+	#Range: 0.0 ~ 10.0
+	cooldownSeconds = 0.35
+	#Maximum distance a held target can be pushed from the player, in blocks.
+	#Range: 1.5 ~ 64.0
+	maxHoldDistance = 10.0
+
+[eyeOfTheStorm]
+	enabled = true
+	#Range: 0 ~ 20000
+	updraftCooldownTicks = 40
+	#Range: 0.0 ~ 16.0
+	updraftLaunchStrength = 1.15
+	#Range: 0.0 ~ 128.0
+	updraftHeight = 4.0
+	#Range: 0.0 ~ 64.0
+	updraftRadius = 1.3
+	#Range: 0 ~ 20000
+	updraftDurationTicks = 32
+	#Range: 0 ~ 20000
+	surgeCooldownTicks = 70
+	#Range: 0.0 ~ 256.0
+	surgeRange = 16.0
+	#Range: 0 ~ 20000
+	surgeDurationTicks = 300
+	#Range: 0.0 ~ 128.0
+	surgeRadius = 4.0
+	#Range: 0.0 ~ 128.0
+	surgeHeight = 6.0
+	#Range: 0.0 ~ 16.0
+	surgePullStrength = 0.85
+	#Range: 0.0 ~ 16.0
+	surgeReturnStrength = 1.4
+	#Range: 0.0 ~ 1024.0
+	surgeDamage = 5.0
+
+[critterCage]
+	#Maximum capturable entity width/depth based on the live hitbox, in blocks.
+	#Range: 0.1 ~ 64.0
+	maxCapturableWidth = 1.65
+	#Maximum capturable entity height based on the live hitbox, in blocks.
+	#Range: 0.1 ~ 64.0
+	maxCapturableHeight = 1.65
+
+[ductTape]
+	#Fraction of max durability repaired per use. 0.25 = 25% per application.
+	#Range: 0.0 ~ 1.0
+	repairPercentPerUse = 0.25
+
+[potentNyxite]
+	#How long the Inverted effect from Potent Nyxite eruptions lasts, in seconds.
+	#Range: 0.0 ~ 3600.0
+	invertedDurationSeconds = 60.0
+
+[corneaEar]
+	#How long Cornea Ear grants Night Vision after being eaten, in seconds.
+	#Range: 0 ~ 600
+	nightVisionSeconds = 15
+
+[american]
+	#If false, foods cannot be Americanized with High Fructose Corn Syrup.
+	enabled = true
+	#Extra hunger points restored when eating an Americanized food.
+	#Range: 0 ~ 100
+	bonusNutrition = 2
+	#Extra saturation restored when eating an Americanized food.
+	#Range: 0.0 ~ 100.0
+	bonusSaturation = 1.0
+	#Duration of the Regeneration effect granted when eating an Americanized food, in ticks.
+	#Range: 0 ~ 72000
+	regenerationDurationTicks = 60
+	#Amplifier of the Regeneration effect granted when eating an Americanized food (0 = I).
+	#Range: 0 ~ 10
+	regenerationAmplifier = 0
+
+[moggles]
+	#Search radius (in blocks) used by Moggles cave detection.
+	#Range: 1.0 ~ 128.0
+	visionRadius = 20.0
+

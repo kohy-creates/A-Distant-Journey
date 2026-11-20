@@ -1,3 +1,4 @@
+/** @type {Internal.EntityType_<Internal.LivingEntity_>[]} */
 global.mobs = [];
 
 global.WitherStormFlyingSpeed = 0.014;

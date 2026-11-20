@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "baseUrl": "https://cdn.jsdelivr.net/gh/ControlFlexMC/cfx-compat-configs@0.8.8",
+  "baseUrl": "https://cdn.jsdelivr.net/gh/ControlFlexMC/cfx-compat-configs@0.9.0",
   "mcVersion": "1.20.1",
   "loader": "forge",
-  "lastSyncAt": "2026-11-02T22:58:38.853787800Z",
-  "manifestSha256": "73ea89cd4a349e418bb2506054f291b1472c14bf104e16f44574f0c794b71e64"
+  "lastSyncAt": "2026-11-20T13:50:35.452826900Z",
+  "manifestSha256": "08f46b75109ca66f3f730364e53138c18ddebd7b50c215e2443da56cb4f5a0f2"
 }

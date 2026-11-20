@@ -113,13 +113,6 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 			event.addModifier('kubejs:ranged_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Ranged Damage', global.arrowDamage[id], 'addition'))
 		}
 
-		// let food = item.getFoodProperties();
-		// if (food != null) {
-		// 	let uuid = '8c7e24a4-e4e0-4183-b011-8771358e6b50';
-		// 	event.addModifier('kubejs:food.hunger', new $AttributeModifier(uuid, 'Food Hunger', food.getNutrition(), 'addition'));
-		// 	event.addModifier('kubejs:food.saturation', new $AttributeModifier(uuid, 'Food Hunger', food.getNutrition() * food.getSaturationModifier(), 'addition'));
-		// }
-
 		if (Object.keys(global.toolReachOverrides).includes(id)) {
 			event.removeAttribute('forge:block_reach');
 			event.addModifier('forge:block_reach', new $AttributeModifier(weaponModifierUUIDs[0], 'ADJ Block Reach', global.toolReachOverrides[id], 'addition'));

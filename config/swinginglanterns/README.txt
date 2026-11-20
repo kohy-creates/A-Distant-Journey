@@ -71,6 +71,13 @@ Aurora's Lanterns
   them solid, and so does this client there. A chandelier left to Aurora stays
   solid, and so do its wall lanterns, whatever the setting.
 
+Macaw's Lights and Lamps
+- Its hanging lanterns swing like any other lantern.
+- Its wall lanterns swing too, on this client: the lantern about the hook under the
+  bracket, the bracket itself still, while physicsMacawsWallLanterns
+  (swinginglanterns.json) is true. Set it to false, or forceDisable a wall lantern id
+  ("mcwlights:chain_wall_lantern"), to keep them still.
+
 Particles
 - Particles a swinging lantern gives off (flames, sparkles, redstone dust) follow
   the swing. Start the game with -Dswinginglanterns.disableParticleFollow=true to

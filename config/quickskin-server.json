@@ -2,6 +2,7 @@
   "disableSkinTransparency": false,
   "skinChangeCooldownSeconds": 0,
   "maxTextureUploadKilobytes": 16384,
+  "maxSkinResolution": 0,
   "shareAccountSkinWithVanillaClients": false,
   "notifyPlayersWithoutQuickSkin": true,
   "playersWithoutQuickSkinMessage": "",

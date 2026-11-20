@@ -30,15 +30,51 @@
         "key.jei.copy.recipe.id"
       ],
       "screenKeys": {
-        "key.jei.showUses": {},
-        "key.jei.showRecipe": {},
-        "key.jei.nextPage": {},
-        "key.jei.previousPage": {},
-        "key.jei.nextCategory": {},
-        "key.jei.previousCategory": {},
-        "key.jei.previousRecipePage": {},
-        "key.jei.nextRecipePage": {},
-        "key.jei.recipeBack": {}
+        "key.jei.showUses": {
+          "addToScreens": [
+            "net.minecraft.client.gui.screens.inventory.*InventoryScreen"
+          ]
+        },
+        "key.jei.showRecipe": {
+          "addToScreens": [
+            "net.minecraft.client.gui.screens.inventory.*InventoryScreen"
+          ]
+        },
+        "key.jei.nextPage": {
+          "addToScreens": [
+            "net.minecraft.client.gui.screens.inventory.*InventoryScreen"
+          ]
+        },
+        "key.jei.previousPage": {
+          "addToScreens": [
+            "net.minecraft.client.gui.screens.inventory.*InventoryScreen"
+          ]
+        },
+        "key.jei.nextCategory": {
+          "addToScreens": [
+            "net.minecraft.client.gui.screens.inventory.*InventoryScreen"
+          ]
+        },
+        "key.jei.previousCategory": {
+          "addToScreens": [
+            "net.minecraft.client.gui.screens.inventory.*InventoryScreen"
+          ]
+        },
+        "key.jei.previousRecipePage": {
+          "addToScreens": [
+            "net.minecraft.client.gui.screens.inventory.*InventoryScreen"
+          ]
+        },
+        "key.jei.nextRecipePage": {
+          "addToScreens": [
+            "net.minecraft.client.gui.screens.inventory.*InventoryScreen"
+          ]
+        },
+        "key.jei.recipeBack": {
+          "addToScreens": [
+            "net.minecraft.client.gui.screens.inventory.*InventoryScreen"
+          ]
+        }
       }
     }
   ]

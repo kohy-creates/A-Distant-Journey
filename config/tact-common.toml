@@ -46,17 +46,6 @@ restoreEndStory = false
 unlockAllCompendiumInfo = false
 #----------------------------------
 #
-# Allows setting overrides for how many arrows to spawn with Dreadbow's rain-like attack.
-# Format is the arrow item registry name. Then an equal sign =. And ends with the arrow amount.
-# Separate multiple entries with a comma , and whitespace will be ignored.
-# Example: "alexscaves:seeking_arrow=5, alexscaves:burrowing_arrow=100"
-#
-# Otherwise, will default to Alex's Caves original code for determining arrow amount for
-# the attack which is 30 arrows for dark colored arrows and 5 arrows for all other arrows.
-#
-dreadbowArrowRainOverrides = ""
-#----------------------------------
-#
 # How quickly the flight meter will recharge for Subterranodon.
 # Putting 2 will recharge twice as fast. Putting 0.5 will halve the recharge rate.
 #
@@ -425,4 +414,115 @@ subterranodonFlightMeterUsageSpeed = 1.0
 ["INTERNAL MARKERS (DO NOT EDIT)"]
 	#Range: 1 ~ 1000000
 	configVersion = 1
+
+["Water Bolt Options"]
+	#----------------------------------
+	#
+	# How much damage Water Bolt will deal if spawned by Player (such as using Sea Staff item)
+	#
+	#Range: 0.0 ~ 1000000.0
+	waterBoltPlayerOwnerDamage = 3.0
+	#----------------------------------
+	#
+	# How much damage Water Bolt will deal if spawned by a mob (such as Deep One Mage mob)
+	#
+	#Range: 0.0 ~ 1000000.0
+	waterBoltMobOwnerDamage = 3.0
+
+["Wave Entity Options"]
+	#----------------------------------
+	#
+	# How much should Wave Entity's regular damage be scaled if spawned by Player (such as using Ortholance item)
+	#
+	#Range: 0.0 ~ 1000000.0
+	waveEntityPlayerOwnerDamage = 1.0
+	#----------------------------------
+	#
+	# How much should Wave Entity's regular damage be scaled if spawned by a mob (such as Deep One Mage mob)
+	#
+	#Range: 0.0 ~ 1000000.0
+	waveEntityMobOwnerDamage = 1.0
+
+["Spinning Peppermint Options"]
+	#----------------------------------
+	#
+	# How much damage Spinning Peppermint will deal if spawned by Player (such as using Sugar Staff item)
+	#
+	#Range: 0.0 ~ 1000000.0
+	spinningPeppermintPlayerOwnerDamage = 3.0
+	#----------------------------------
+	#
+	# How much damage Spinning Peppermint will deal if spawned by a mob (such as Licowitch mob)
+	#
+	#Range: 0.0 ~ 1000000.0
+	spinningPeppermintMobOwnerDamage = 3.0
+
+["Ortholance Options"]
+	#----------------------------------
+	#
+	# Damage amount for melee attack with Ortholance.
+	#
+	#Range: 0.0 ~ 10000.0
+	ortholanceMeleeDamage = 5.0
+
+["Frostmint Spear Options"]
+	#----------------------------------
+	#
+	# Damage amount for melee attack with Frostmint Spear.
+	#
+	#Range: 0.0 ~ 10000.0
+	frostmintSpearMeleeDamage = 5.0
+	#----------------------------------
+	#
+	# Damage amount for ranged attack with Frostmint Spear.
+	#
+	#Range: 0.0 ~ 10000.0
+	frostmintSpearRangedDamage = 6.0
+
+["Limestone Spear Options"]
+	#----------------------------------
+	#
+	# Damage amount for melee attack with Limestone Spear.
+	#
+	#Range: 0.0 ~ 10000.0
+	limestoneSpearMeleeDamage = 3.0
+	#----------------------------------
+	#
+	# Damage amount for ranged attack with Limestone Spear.
+	#
+	#Range: 0.0 ~ 10000.0
+	limestoneSpearRangedDamage = 4.0
+
+["Shot Gum Options"]
+	#----------------------------------
+	#
+	# Damage amount for Gumball projectiles from Shot Gum.
+	#
+	#Range: 0.0 ~ 1000.0
+	shotGumGumballDamage = 4.0
+
+["Dreadbow Options"]
+	#----------------------------------
+	#
+	# Normal damage amount for Dark Arrow projectiles from Dreadbow.
+	#
+	#Range: 0.0 ~ 1000.0
+	dreadbowDarkNormalArrowDamage = 3.0
+	#----------------------------------
+	#
+	# Precise Volley Enchantment damage amount for Dark Arrow projectiles from Dreadbow.
+	#
+	#Range: 0.0 ~ 1000.0
+	dreadbowDarkPreciseArrowDamage = 2.0
+	#----------------------------------
+	#
+	# Allows setting overrides for how many arrows to spawn with Dreadbow's rain-like attack.
+	# Format is the arrow item registry name. Then an equal sign =. And ends with the arrow amount.
+	# Separate multiple entries with a comma , and whitespace will be ignored.
+	# Example: "alexscaves:seeking_arrow=5, alexscaves:burrowing_arrow=100"
+	#
+	# Otherwise, will default to Alex's Caves original code for determining arrow amount for
+	# the attack which is 30 arrows for dark colored arrows and 5 arrows for all other arrows.
+	#
+	dreadbowArrowRainOverrides = ""
 

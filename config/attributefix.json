@@ -1111,6 +1111,17 @@
         "value": 10000
       }
     },
+    "antarchy:double_damage_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "mythicmetals:elytra_rocket_speed": {
       "enabled": false,
       "min": {
@@ -1164,6 +1175,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "antarchy:bloodglass_max_hearts": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 8,
+        "value": 8
       }
     },
     "combatroll:recharge": {
@@ -1600,6 +1622,17 @@
       "min": {
         "default": 0,
         "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
+    "adjcore:player.damage_dealt": {
+      "enabled": false,
+      "min": {
+        "default": -2048,
+        "value": -2048
       },
       "max": {
         "default": 2048,

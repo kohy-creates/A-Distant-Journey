@@ -1,14 +1,15 @@
 (() => {
-	/** @type {any} */
 	const $QuiverItem = Java.loadClass('net.mehvahdjukaar.supplementaries.common.items.QuiverItem');
-	/** @type {any} */
 	const $BannerPatternItem = Java.loadClass('net.minecraft.world.item.BannerPatternItem');
-	/** @type {any} */
 	const $TreasureBag = Java.loadClass('com.majruszsdifficulty.items.TreasureBag');
+	const $WingsItem = Java.loadClass('xyz.kohara.adjcore.registry.items.WingsItem');
 
 	StartupEvents.registry('item', registry => {
 
-		const defaultProperties = new $ItemProperties();
+		function properties() {
+			return new $ItemProperties();
+		}
+
 		function createCustom(id, itemClass, texture) {
 			registry.createCustom(id, () => itemClass);
 			global.writeJsonIfAbsent(`kubejs/assets/kubejs/models/item/${id}.json`, {
@@ -20,23 +21,18 @@
 		}
 
 		// Quivers
-		createCustom('molten_quiver', new $QuiverItem(new $ItemProperties()
-			.stacksTo(1)
-		));
-		createCustom('stalker_quiver', new $QuiverItem(new $ItemProperties()
-			.stacksTo(1)
-		));
-		createCustom('compound_quiver', new $QuiverItem(new $ItemProperties()
-			.stacksTo(1)
-		));
-		createCustom('shock_quiver', new $QuiverItem(new $ItemProperties()
-			.stacksTo(1)
-		));
+		function createQuiver(id) {
+			createCustom(id, new $QuiverItem(properties().stacksTo(1)));
+		}
+		createQuiver('molten_quiver');
+		createQuiver('stalker_quiver');
+		createQuiver('compound_quiver');
+		createQuiver('shock_quiver');
 
-		function registerBannerPatternItem(id, properties) {
+		function registerBannerPatternItem(id) {
 			createCustom(`${id}_banner_pattern`, new $BannerPatternItem(
 				$TagKey.create($Registries.BANNER_PATTERN, global.resourceLocation(`adj:pattern_item/${id}`)),
-				global.getOrDefault(properties, new $ItemProperties().stacksTo(1))
+				properties().stacksTo(1)
 			), 'minecraft:item/mojang_banner_pattern');
 		}
 
@@ -83,5 +79,29 @@
 
 		global.bossMobsAddTreasureBag.forEach(boss => createTreasureBag(boss));
 		createTreasureBag('botania:doppleganger', 'hardmode');
+
+		/**
+		 * 
+		 * @param {string} id 
+		 * @param {number} flightTime 
+		 * @param {number} horizontalAccelerationMultiplier 
+		 * @param {number} verticalMultiplier 
+		 * @param {number} maxHorizontalSpeed 
+		 * @param {Internal.ResourceLocation_} model 
+		 */
+		function createWings(id, flightTime, horizontalAccelerationMultiplier, verticalMultiplier, maxHorizontalSpeed, model) {
+			registry.createCustom(id, () => new $WingsItem(properties(), flightTime, horizontalAccelerationMultiplier, verticalMultiplier, maxHorizontalSpeed, model))
+				.tag('curios:accessory');
+		}
+
+		createWings('angel_wings', 34, 1.0, 1.5, 1.0, global.resourceLocation('botania:icon/tiara_wing_1'));
+		createWings('dark_wings', 34, 1.0, 1.5, 1.0, global.resourceLocation('botania:icon/tiara_wing_2'));
+		createWings('frozen_wings', 44, 1.05, 1.5, 1.0, global.resourceLocation('botania:icon/tiara_wing_3'));
+		createWings('flame_wings', 54, 1.1, 1.5, 1.0, global.resourceLocation('botania:icon/tiara_wing_4'));
+		createWings('butterfly_wings', 54, 1.1, 1.5, 1.0, global.resourceLocation('botania:icon/tiara_wing_5'));
+		createWings('demon_wings', 54, 1.1, 1.5, 1.0, global.resourceLocation('botania:icon/tiara_wing_6'));
+		createWings('ugly_wings', 54, 1.1, 1.5, 1.0, global.resourceLocation('botania:icon/tiara_wing_7'));
+		createWings('golden_wings', 54, 1.1, 1.5, 1.0, global.resourceLocation('botania:icon/tiara_wing_8'));
+		createWings('code_wings', 54, 1.1, 1.5, 1.0, global.resourceLocation('botania:icon/tiara_wing_9'));
 	});
 })();

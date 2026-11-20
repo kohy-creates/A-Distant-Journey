@@ -4,7 +4,12 @@
 		"base": "#606060"
 	},
 	"display": {
-		"scale": 0.33
+		"scale": 0.05,
+		"offset": [
+			0.0,
+			6.0,
+			0.0
+		]
 	},
 	"effects": {},
 	"entity": {

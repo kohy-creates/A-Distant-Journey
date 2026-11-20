@@ -16,5 +16,25 @@
     "layer_switch_scale": 1.0,
     "layer_switch_opacity": 0.75,
     "layer_switch_delay_mode": "auto"
+  },
+  "cursorTiers": {
+    "enable": false,
+    "slow": 2,
+    "medium": 5,
+    "fast": 8,
+    "full": 20,
+    "split1": 32,
+    "split2": 63,
+    "split3": 95
+  },
+  "virtualWheelTiers": {
+    "enable": false,
+    "slow": 300,
+    "medium": 200,
+    "fast": 100,
+    "full": 50,
+    "split1": 32,
+    "split2": 63,
+    "split3": 95
   }
 }

@@ -60,17 +60,6 @@
 			"rediscovered:undead_damage_scaling;0.001;1"
 		]
 	},
-	"farmersdelight:nourishment": {
-		"replace": false,
-		"attributes": [
-			"adjcore:generic.health_regeneration;0.5;0",
-			"minecraft:generic.armor;2;0",
-			"minecraft:generic.attack_damage;0.05;1",
-			"minecraft:generic.movement_speed;0.08;1",
-			"minecraft:generic.attack_speed;0.04;1",
-			"attributeslib:mining_speed;0.15;0"
-		]
-	},
 	"cofh_core:shocked": {
 		"replace": true,
 		"attributes": [
@@ -89,12 +78,6 @@
 		"attributes": [
 			"adjcore:generic.damage_reduction;-0.15;0",
 			"attributeslib:healing_received;-0.25;0"
-		]
-	},
-	"ars_nouveau:spell_damage": {
-		"replace": true,
-		"attributes": [
-			"ars_nouveau:ars_nouveau.perk.spell_damage;15;0"
 		]
 	}
 }

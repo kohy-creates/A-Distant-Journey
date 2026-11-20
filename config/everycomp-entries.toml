@@ -94,6 +94,14 @@
 			whistlecane = true
 			soulblight = true
 
+		[types.wood_type.antarchy]
+			ouranwood = true
+			peach = true
+			nadir = true
+			royal = true
+			truffalo = true
+			cranberry = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
@@ -191,6 +199,13 @@
 			"legacy/birch" = true
 			"legacy/spruce" = true
 			"legacy/jungle" = true
+
+		[types.leaves_type.antarchy]
+			ouranwood = true
+			peach = true
+			royal = true
+			royal_flowering = true
+			cranberry = true
 
 	[types.cake]
 
@@ -922,6 +937,54 @@
 		[types.cut_block_type.savage_and_ravage]
 			gloomy_tile = true
 
+		[types.cut_block_type.antarchy]
+			ouranwood = true
+			peach = true
+			nadir = true
+			royal = true
+			truffalo = true
+			nyxite = true
+			polished_nyxite = true
+			nyxite_brick = true
+			mossy_nyxite_brick = true
+			mossy_shellstone_brick = true
+			shellstone = true
+			polished_shellstone = true
+			shellstone_brick = true
+			myrmite = true
+			polished_myrmite = true
+			myrmite_brick = true
+			mossy_myrmite_brick = true
+			broodstone = true
+			polished_broodstone = true
+			broodstone_brick = true
+			mossy_broodstone_brick = true
+			cut_uranium = true
+			cut_titanium = true
+			antimetal = true
+			polished_antimetal = true
+			loam_brick = true
+			dream_sandstone = true
+			smooth_dream_sandstone = true
+			cut_dream_sandstone = true
+			typhonite = true
+			typhonite_brick = true
+			polished_typhonite = true
+			rockite = true
+			zebra_stone = true
+			arkrose = true
+			tidestone = true
+			polished_rockite = true
+			rockite_brick = true
+			polished_zebra_stone = true
+			zebra_stone_brick = true
+			polished_arkrose = true
+			arkrose_brick = true
+			polished_tidestone = true
+			tidestone_brick = true
+			mossy_rockite_brick = true
+			cranberry = true
+
 #Disables specific entries
 [entries]
 
@@ -973,7 +1036,6 @@
 			table = true
 			drawer = true
 			chair = true
-			flower_box = true
 
 		[entries.wood_type.decoration_delight]
 			mosaic = true

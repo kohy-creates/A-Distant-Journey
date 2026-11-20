@@ -13,7 +13,7 @@
 	#Validate persisted per-mod resource caches with the full JAR SHA-256 instead of the default file identity. Reads each JAR once per launch; changing this option requires a restart and rebuilds these caches.
 	verifyJarHash = false
 	#Do not show Lightspeed's bootstrap Agent recommendation on startup.
-	suppressStartupRecommendations = true
+	suppressStartupRecommendations = false
 
 [compatibility]
 	#Opt in to isolating failures owned by explicitly configured third-party resource reload listener classes.
