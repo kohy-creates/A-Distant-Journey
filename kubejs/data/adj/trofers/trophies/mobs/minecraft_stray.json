@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#9daeae",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:stray"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.stray",
+				"color": "#9daeae"
+			}
+		]
+	}
+}

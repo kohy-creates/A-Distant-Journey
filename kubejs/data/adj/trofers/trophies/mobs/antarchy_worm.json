@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#6e441f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "antarchy:worm"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.antarchy.worm",
+				"color": "#6e441f"
+			}
+		]
+	}
+}

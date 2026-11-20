@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#6f522f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "antarchy:lucid"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.antarchy.lucid",
+				"color": "#6f522f"
+			}
+		]
+	}
+}

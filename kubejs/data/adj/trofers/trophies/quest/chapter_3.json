@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#87BBFF",
+		"base": "#C3073E"
+	},
+	"display": {
+		"scale": 1,
+		"offset": [
+			0.0,
+			3.0,
+			0.0
+		]
+	},
+	"effects": {},
+	"item": {
+		"item": "kubejs:eye_of_dreams"
+	},
+	"animation": {
+		"type": "spinning"
+	},
+	"name": "Chapter 3 Trophy"
+}

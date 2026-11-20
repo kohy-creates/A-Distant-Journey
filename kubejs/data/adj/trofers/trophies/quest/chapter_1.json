@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#FFC29D",
+		"base": "#D26A61"
+	},
+	"display": {
+		"scale": 1,
+		"offset": [
+			0.0,
+			3.0,
+			0.0
+		]
+	},
+	"effects": {},
+	"item": {
+		"item": "kubejs:eye_of_cinders"
+	},
+	"animation": {
+		"type": "spinning"
+	},
+	"name": "Chapter 1 Trophy"
+}

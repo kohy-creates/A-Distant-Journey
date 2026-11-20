@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#8dbb86",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "antarchy:alpha_mantis"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.antarchy.alpha_mantis",
+				"color": "#8dbb86"
+			}
+		]
+	}
+}

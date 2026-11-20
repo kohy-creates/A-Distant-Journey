@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#3d3b64",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "endergetic:glider_eetle"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.endergetic.glider_eetle",
+				"color": "#3d3b64"
+			}
+		]
+	}
+}

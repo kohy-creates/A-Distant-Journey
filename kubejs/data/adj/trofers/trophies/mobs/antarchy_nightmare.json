@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#1f1b3f",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "antarchy:nightmare"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.antarchy.nightmare",
+				"color": "#1f1b3f"
+			}
+		]
+	}
+}

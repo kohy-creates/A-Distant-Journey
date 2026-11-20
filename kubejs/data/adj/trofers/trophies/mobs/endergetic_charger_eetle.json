@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#393862",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "endergetic:charger_eetle"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.endergetic.charger_eetle",
+				"color": "#393862"
+			}
+		]
+	}
+}

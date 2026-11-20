@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#53488b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "endergetic:brood_eetle"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.endergetic.brood_eetle",
+				"color": "#53488b"
+			}
+		]
+	}
+}

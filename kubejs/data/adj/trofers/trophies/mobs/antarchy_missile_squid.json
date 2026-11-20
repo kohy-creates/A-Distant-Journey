@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#9b4455",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "antarchy:missile_squid"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.antarchy.missile_squid",
+				"color": "#9b4455"
+			}
+		]
+	}
+}

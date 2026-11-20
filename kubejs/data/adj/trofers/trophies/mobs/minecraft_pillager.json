@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#554c4b",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:pillager"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.pillager",
+				"color": "#554c4b"
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#073d59",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "antarchy:vortex"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.antarchy.vortex",
+				"color": "#073d59"
+			}
+		]
+	}
+}

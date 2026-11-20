@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#95aeb7",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "antarchy:stratoshark"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.antarchy.stratoshark",
+				"color": "#95aeb7"
+			}
+		]
+	}
+}

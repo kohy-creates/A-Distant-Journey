@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#4e6a29",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "antarchy:basilisk"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.antarchy.basilisk",
+				"color": "#4e6a29"
+			}
+		]
+	}
+}

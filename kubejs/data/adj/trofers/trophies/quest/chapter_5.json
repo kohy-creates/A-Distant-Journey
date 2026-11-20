@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#F08FFF",
+		"base": "#9F1DCC"
+	},
+	"display": {
+		"scale": 1,
+		"offset": [
+			0.0,
+			3.0,
+			0.0
+		]
+	},
+	"effects": {},
+	"item": {
+		"item": "witherstormmod:withered_nether_star"
+	},
+	"animation": {
+		"type": "spinning"
+	},
+	"name": "Chapter 5 Trophy"
+}

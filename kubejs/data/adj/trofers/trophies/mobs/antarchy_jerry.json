@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#85a9ac",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "antarchy:jerry"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.antarchy.jerry",
+				"color": "#85a9ac"
+			}
+		]
+	}
+}

@@ -1,14 +1,22 @@
 {
 	"colors": {
-		"accent": "#FFB469",
-		"base": "F0F0F0"
+		"accent": "#F0F0F0",
+		"base": "#FFB469"
 	},
 	"display": {
-		"scale": 1
+		"scale": 1,
+		"offset": [
+			0.0,
+			3.0,
+			0.0
+		]
 	},
 	"effects": {},
 	"item": {
 		"item": "minecraft:command_block"
+	},
+	"animation": {
+		"type": "spinning"
 	},
 	"name": "Command Block Trophy"
 }

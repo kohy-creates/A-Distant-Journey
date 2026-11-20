@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#ACD7FA",
+		"base": "#4EA7F2"
+	},
+	"display": {
+		"scale": 1,
+		"offset": [
+			0.0,
+			3.0,
+			0.0
+		]
+	},
+	"effects": {},
+	"item": {
+		"item": "tide:prismarine_fishing_rod"
+	},
+	"animation": {
+		"type": "spinning"
+	},
+	"name": "Fishing Master Trophy"
+}

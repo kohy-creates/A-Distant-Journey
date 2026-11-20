@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#100430",
+		"base": "#8A1ECF"
+	},
+	"display": {
+		"scale": 1,
+		"offset": [
+			0.0,
+			3.0,
+			0.0
+		]
+	},
+	"effects": {},
+	"item": {
+		"item": "kubejs:eye_of_desolation"
+	},
+	"animation": {
+		"type": "spinning"
+	},
+	"name": "Chapter 4 Trophy"
+}

@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#3c4155",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "antarchy:emperor_scorpion"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.antarchy.emperor_scorpion",
+				"color": "#3c4155"
+			}
+		]
+	}
+}

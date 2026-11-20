@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#474942",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "brazier:crazed"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.brazier.crazed",
+				"color": "#474942"
+			}
+		]
+	}
+}

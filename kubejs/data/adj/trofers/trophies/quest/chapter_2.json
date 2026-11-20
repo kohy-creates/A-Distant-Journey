@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#FFEDFF",
+		"base": "#FFCE73"
+	},
+	"display": {
+		"scale": 1,
+		"offset": [
+			0.0,
+			3.0,
+			0.0
+		]
+	},
+	"effects": {},
+	"item": {
+		"item": "kubejs:eye_of_angels"
+	},
+	"animation": {
+		"type": "spinning"
+	},
+	"name": "Chapter 2 Trophy"
+}

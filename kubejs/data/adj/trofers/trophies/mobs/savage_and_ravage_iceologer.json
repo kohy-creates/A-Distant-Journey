@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#3d5877",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "savage_and_ravage:iceologer"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.savage_and_ravage.iceologer",
+				"color": "#3d5877"
+			}
+		]
+	}
+}

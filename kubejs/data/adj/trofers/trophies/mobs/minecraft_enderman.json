@@ -1,0 +1,22 @@
+{
+	"colors": {
+		"accent": "#0e0c0c",
+		"base": "#606060"
+	},
+	"display": {
+		"scale": 0.33
+	},
+	"effects": {},
+	"entity": {
+		"type": "minecraft:enderman"
+	},
+	"name": {
+		"translate": "trophy.trofers.composed",
+		"with": [
+			{
+				"translate": "entity.minecraft.enderman",
+				"color": "#0e0c0c"
+			}
+		]
+	}
+}
