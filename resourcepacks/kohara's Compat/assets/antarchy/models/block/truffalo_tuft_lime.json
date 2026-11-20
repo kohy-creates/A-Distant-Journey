@@ -1,0 +1,10 @@
+{
+	"parent": "antarchy:block/truffalo_tuft_template",
+	"render_type": "cutout",
+	"textures": {
+		"0": "antarchy:block/truffalo/lime_truffalo_tuft",
+		"1": "antarchy:block/truffalo/lime_truffalo_tuft",
+		"2": "antarchy:block/truffalo/lime_truffalo_tuft_extra",
+		"particle": "antarchy:block/truffalo/lime_truffalo_tuft"
+	}
+}
