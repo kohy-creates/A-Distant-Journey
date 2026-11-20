@@ -5,11 +5,11 @@
 	},
 	"display": {
 		"scale": 0.05,
-		"offset": [
-			0.0,
-			6.0,
-			0.0
-		]
+		"offset": {
+			"x": 0,
+			"y": 6,
+			"z": 0
+		}
 	},
 	"effects": {},
 	"entity": {

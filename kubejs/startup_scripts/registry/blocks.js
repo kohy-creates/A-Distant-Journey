@@ -503,7 +503,8 @@ StartupEvents.registry('block', registry => {
 			.resistance(0.8)
 			.mapColor(getMapColor(c))
 			.soundType(SoundType.WOOL)
-			.displayName(`Ancient ${global.toTitleCase(c.replace('_', ' '))} Wool`);
+			.displayName(`Ancient ${global.toTitleCase(c.replace('_', ' '))} Wool`)
+			.tagBoth('wool');
 
 		registry.create(`legacy/carpet_colored_${c}`, 'carpet')
 			.hardness(0.8)
@@ -521,7 +522,8 @@ StartupEvents.registry('block', registry => {
 			.defaultTranslucent()
 			.soundType(SoundType.GLASS)
 			.textureAll(`kubejs:block/legacy/glass_${c}`)
-			.displayName(`${global.toTitleCase(c.replace('_', ' '))} Stained Glass`);
+			.displayName(`${global.toTitleCase(c.replace('_', ' '))} Stained Glass`)
+			.tagBlock('impermeable');
 	});
 
 	const logs = ['oak', 'birch', 'spruce', 'jungle'];

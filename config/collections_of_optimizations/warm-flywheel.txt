@@ -1,0 +1,5 @@
+cull|create:instance/rotating.vert create:instance/cull/rotating.glsl|com.simibubi.create.foundation.render.AllInstanceTypes
+cull|flywheel:instance/transformed.vert flywheel:instance/cull/transformed.glsl|dev.engine_room.flywheel.lib.instance.InstanceTypes
+indirect|create:instance/rotating.vert create:instance/cull/rotating.glsl|DEFAULT|flywheel:light/smooth_when_embedded.glsl|flywheel:material/default.vert|flywheel:material/default.frag|false|OFF|com.simibubi.create.foundation.render.AllInstanceTypes
+indirect|flywheel:instance/transformed.vert flywheel:instance/cull/transformed.glsl|DEFAULT|flywheel:light/smooth_when_embedded.glsl|flywheel:material/default.vert|flywheel:material/default.frag|false|OFF|dev.engine_room.flywheel.lib.instance.InstanceTypes
+indirect|flywheel:instance/transformed.vert flywheel:instance/cull/transformed.glsl|DEFAULT|flywheel:light/smooth_when_embedded.glsl|flywheel:material/default.vert|flywheel:material/default.frag|true|OFF|dev.engine_room.flywheel.lib.instance.InstanceTypes

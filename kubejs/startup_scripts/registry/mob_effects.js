@@ -1,9 +1,11 @@
+global.effectTick = {};
+
 /**
  * 
  * @param {Internal.Entity} entity 
  * @param {integer} amplifier 
  */
-global.shadowApparitionsTick = function (entity, amplifier) {
+global.effectTick.shadowApparitionsTick = function (entity, amplifier) {
 	if (!entity.level.isClientSide()) {
 		const chance = 3.5 * (amplifier + 1);
 
@@ -42,7 +44,7 @@ global.shadowApparitionsTick = function (entity, amplifier) {
  * @param {Internal.Entity} entity 
  * @param {integer} amplifier 
  */
-global.voidStrikeTick = function (entity, amplifier, fromBow) {
+global.effectTick.voidStrikeTick = function (entity, amplifier, fromBow) {
 	const level = entity.getLevel();
 	if (!level.isClientSide()) {
 		const data = entity.getPersistentData().voidStrike;
@@ -81,233 +83,200 @@ global.voidStrikeTick = function (entity, amplifier, fromBow) {
 };
 
 StartupEvents.registry('mob_effect', registry => {
-	registry.create('armor_shred')
-		.color(Color.of('#b6b6b6'))
-		.harmful()
+
+	/**
+	 * @param {string} id 
+	 * @param {Internal.Color_} color 
+	 * @param {string} description 
+	 * @param {'beneficial' | 'harmful' | undefined} type 
+	 * @returns {Internal.BasicMobEffect$Builder_}
+	 */
+	function create(id, color, description, type) {
+		let builder = registry.create(id).color(color);
+		global.addTranslation(`effect.kubejs.${id}.desc`, description);
+
+		if (type == 'beneficial') builder.beneficial();
+		else if (type == 'harmful') builder.harmful();
+
+		return builder;
+	}
+
+	create('armor_shred', Color.of('#b6b6b6'), 'Reduces defense by 20% per level.', 'harmful')
 		.modifyAttribute(
-			'generic.armor',
-			'da18d70a-3381-4a10-a22a-340a537cb714',
-			-0.25,
-			"multiply_total"
+			global.attribute('armor'),
+			global.uuid('armor_shred'),
+			-0.2,
+			'multiply_total'
 		);
 
-	registry.create('pierced')
-		.color(Color.of('#b6b6b6'))
-		.harmful()
+	create('rapid_healing', Color.of('#F82423'), 'Increased health regeneration.', 'beneficial')
 		.modifyAttribute(
-			'generic.armor',
-			'bb16f1eb-2b11-462f-820a-dcfc26f44228',
-			-5,
-			'addition'
-		);
-
-	registry.create('rapid_healing')
-		.color(Color.of('#F82423'))
-		.beneficial()
-		.modifyAttribute(
-			'adjcore:generic.health_regeneration',
-			'07d281d2-87ab-4078-b80f-d813aaf670c6',
+			global.attribute('health_regen'),
+			global.uuid('rapid_healing'),
 			2.0,
 			'addition'
 		);
 
-	registry.create('overfed')
-		.color(Color.of('#F82423'))
-		.beneficial()
+	create('prometheum_regeneration', Color.of('#F82423'), 'Ahh, yes, photosynthesis <3', 'beneficial')
 		.modifyAttribute(
-			'adjcore:generic.health_regeneration',
-			'e5c460c4-5771-4951-a02c-5dab71bef3d0',
-			0.25,
-			'addition'
-		);
-
-	registry.create('prometheum_regeneration')
-		.color(Color.of('#F82423'))
-		.beneficial()
-		.modifyAttribute(
-			'adjcore:generic.health_regeneration',
-			'aeb5b123-26b9-454d-bff2-b80730a3369d',
+			global.attribute('health_regen'),
+			global.uuid('prometheum_regeneration'),
 			2.5,
 			'addition'
 		);
 
-	registry.create('shadow_apparitions')
-		.color(Color.of('#5300c0'))
-		.harmful()
-		.effectTick((entity, amplifier) => global.shadowApparitionsTick(entity, amplifier));
+	create('shadow_apparitions', Color.of('#5300c0'), 'Shadow apparitions claw at you from the shadows.', 'harmful')
+		.effectTick((entity, amplifier) => global.effectTick.shadowApparitionsTick(entity, amplifier));
 
-	registry.create('void_strike')
-		.color(Color.of('#5300c0'))
-		.harmful()
-		.effectTick((entity, amplifier) => global.voidStrikeTick(entity, amplifier, false));
+	create('void_strike', Color.of('#5300c0'), 'Applies a rising damage multiplier.', 'harmful')
+		.effectTick((entity, amplifier) => global.effectTick.voidStrikeTick(entity, amplifier, false));
 
-	registry.create('void_shot')
-		.color(Color.of('#5300c0'))
-		.harmful()
-		.effectTick((entity, amplifier) => global.voidStrikeTick(entity, amplifier, true));
+	create('void_shot', Color.of('#5300c0'), 'Applies a rising damage multiplier.', 'harmful')
+		.effectTick((entity, amplifier) => global.effectTick.voidStrikeTick(entity, amplifier, true));
 
-	registry.create('echo_cooldown')
-		.color(Color.of('#FFFFFF'))
-		.beneficial();
+	create('echo_cooldown', Color.of('#FFFFFF'), 'Prevents Echo from working.');
 
-	registry.create('rampage')
-		.color(Color.DARK_RED)
-		.beneficial()
+	create('rampage', Color.DARK_RED, 'I\'M SO FOCKEN ANGRY!!', 'beneficial')
 		.modifyAttribute(
-			'minecraft:generic.attack_speed',
-			'72cb6926-2df2-4fd2-b1af-99ee1199ef91',
+			global.attribute('attack_speed'),
+			global.uuid('rampage'),
 			0.075,
 			'multiply_base'
 		)
 		.modifyAttribute(
-			'minecraft:generic.attack_damage',
-			'72cb6926-2df2-4fd2-b1af-99ee1199ef91',
+			global.attribute('damage'),
+			global.uuid('rampage'),
 			0.065,
 			'multiply_base'
 		);
 
-	registry.create('merfolk_form')
-		.color(Color.WHITE)
-		.beneficial()
+	create('melfork_form', Color.of('#00FFFF'), 'Breathe underwater and swim as swfitly as a... well, melfork.', 'beneficial')
 		.modifyAttribute(
-			'forge:swim_speed',
-			'44a47d78-e4ed-4d3a-96c4-43ecbdfc4332',
+			global.attribute('swim_speed'),
+			global.uuid('melfork_form'),
 			0.6,
 			'multiply_base'
-			// )
-			// .modifyAttribute(
-			// 	'additionalentityattributes:player.water_visibility',
-			// 	'44a47d78-e4ed-4d3a-96c4-43ecbdfc4332',
-			// 	0.75,
-			// 	'multiply_base'
 		);
 
-	registry.create('werewolf_form')
-		.color(Color.WHITE)
-		.beneficial()
+	create('werewolf_form', Color.of('#ffffff83'), 'Minor improvement to all stats. Awoooo!', 'beneficial')
 		.modifyAttribute(
-			'generic.armor',
-			'659361d2-3a21-49d2-915c-174480622987',
+			global.attribute('armor'),
+			global.uuid('werewolf_form'),
 			3,
 			'addition'
 		)
 		.modifyAttribute(
-			'generic.attack_damage',
-			'659361d2-3a21-49d2-915c-174480622987',
-			0.51,
+			global.attribute('attack_damage'),
+			global.uuid('werewolf_form'),
+			0.051,
 			'multiply_base'
 		)
 		.modifyAttribute(
-			'generic.movement_speed',
-			'659361d2-3a21-49d2-915c-174480622987',
-			0.5,
+			global.attribute('movement_speed'),
+			global.uuid('werewolf_form'),
+			0.05,
 			'multiply_base'
 		)
 		.modifyAttribute(
-			'generic.attack_speed',
-			'659361d2-3a21-49d2-915c-174480622987',
-			0.51,
+			global.attribute('attack_speed'),
+			global.uuid('werewolf_form'),
+			0.051,
 			'multiply_base'
 		)
 		.modifyAttribute(
-			'attributeslib:crit_chance',
-			'659361d2-3a21-49d2-915c-174480622987',
+			global.attribute('crit_chance'),
+			global.uuid('werewolf_form'),
 			0.02,
 			'addition'
 		)
 		.modifyAttribute(
-			'adjcore:generic.health_regeneration',
-			'659361d2-3a21-49d2-915c-174480622987',
+			global.attribute('health_regen'),
+			global.uuid('werewolf_form'),
 			0.5,
 			'addition'
 		);
 
-	registry.create('seed_of_hope')
-		.color(Color.WHITE)
-		.beneficial()
+	create('seed_of_hope', Color.WHITE, 'Feeling hopeful for the future of the forest.', 'beneficial')
 		.modifyAttribute(
-			'generic.movement_speed',
-			'90a940d6-e9ca-4804-9e95-d8f02edb38ee',
+			global.attribute('movement_speed'),
+			global.uuid('seed_of_hope'),
 			0.25,
 			'multiply_base'
 		)
 		.modifyAttribute(
-			'adjcore:generic.health_regeneration',
-			'90a940d6-e9ca-4804-9e95-d8f02edb38ee',
+			global.attribute('health_regen'),
+			global.uuid('seed_of_hope'),
 			1,
 			'addition'
 		);
 
-	registry.create('forest_aura')
-		.beneficial()
-		.color(Color.WHITE)
+	create('forest_aura', Color.WHITE, 'Empowered by the forest.', 'beneficial')
 		.modifyAttribute(
-			'adjcore:generic.health_regeneration',
-			'01b98e60-d0d8-40c2-a885-f34f36b0114c',
+			global.attribute('health_regen'),
+			global.uuid('forest_aura'),
 			1,
 			'addition'
 		);
 
-	registry.create('phoenix_defense')
-		.beneficial()
-		.color(Color.ORANGE_DYE)
+	create('phoenix_defense', Color.ORANGE_DYE, 'Grants health regeneration and bonus armor.', 'beneficial')
 		.modifyAttribute(
-			'adjcore:generic.health_regeneration',
-			'511279fb-3547-4a95-844c-6cdaba85e550',
+			global.attribute('health_regen'),
+			global.uuid('phoenix_defense'),
 			3.5,
 			'addition'
 		)
 		.modifyAttribute(
-			'generic.armor',
-			'511279fb-3547-4a95-844c-6cdaba85e550',
+			global.attribute('armor'),
+			global.uuid('phoenix_defense'),
 			2,
 			'addition'
 		);
 
-	registry.create('defensive_stance')
-		.beneficial()
-		.color(Color.DARK_PURPLE)
+	create('defensive_stance', Color.DARK_PURPLE, 'High armor and damage reduction at the cost of movement speed.', 'beneficial')
 		.modifyAttribute(
-			'generic.armor',
-			'511279fb-3547-4a95-844c-6cdaba85e550',
+			global.attribute('armor'),
+			global.uuid('defensive_stance'),
 			20,
 			'addition'
 		)
 		.modifyAttribute(
-			'adjcore:generic.damage_reduciton',
-			'511279fb-3547-4a95-844c-6cdaba85e550',
+			global.attribute('damage_reduction'),
+			global.uuid('defensive_stance'),
 			0.05,
 			'addition'
 		)
 		.modifyAttribute(
-			'generic.movement_speed',
-			'511279fb-3547-4a95-844c-6cdaba85e550',
+			global.attribute('movement_speed'),
+			global.uuid('defensive_stance'),
 			-0.35,
 			'multiply_total'
 		);
 
-	registry.create('shield_of_fire')
-		.beneficial()
-		.color(Color.ORANGE_DYE)
+	create('shield_of_fire', Color.ORANGE_DYE, 'May the flames be my shield.', 'beneficial')
 		.modifyAttribute(
-			'generic.armor',
-			'511279fb-3547-4a95-844c-6cdaba85e551',
+			global.attribute('armor'),
+			global.uuid('shield_of_fire'),
 			4,
 			'addition'
 		);
 
-	registry.create('palladium_hero_aegis')
-		.beneficial()
-		.color(Color.ORANGE_DYE)
+	create('palladium_hero_aegis', Color.ORANGE_DYE, 'May the flames be my shield.', 'beneficial')
 		.modifyAttribute(
-			'generic.armor',
-			'511279fb-3547-4a95-844c-6cdaba85e551',
+			global.attribute('armor'),
+			global.uuid('palladium_hero_aegis'),
 			6,
 			'addition'
 		);
 
-	registry.create('voidcaller_mark')
-		.harmful()
-		.color(Color.DARK_PURPLE);
+	create('voidcaller_mark', Color.DARK_PURPLE, 'Marked by the Voidcaller.');
+
+	create('shiny_stone', Color.ORANGE_DYE, 'Increased healing power.', 'beneficial')
+		.displayName('Shining')
+		.modifyAttribute(
+			global.attribute('healing_power'),
+			global.uuid('shiny_stone'),
+			3,
+			'addition'
+		);
 
 });

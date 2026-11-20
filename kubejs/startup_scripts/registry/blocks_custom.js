@@ -48,6 +48,7 @@ const $FlowerPotBlock = Java.loadClass('net.minecraft.world.level.block.FlowerPo
 const $RootBlock = Java.loadClass('net.minecraft.world.level.block.RootsBlock');
 const $BlahajBlock = Java.loadClass('justblahaj.block.BlueBlahajBlock');
 const $Block = Java.loadClass('net.minecraft.world.level.block.Block');
+const $TruffaloTuftBlock = Java.loadClass('com.craisinlord.antarchy.content.block.TruffaloTuftBlock');
 
 const $MobEffects = Java.loadClass('net.minecraft.world.effect.MobEffects');
 
@@ -65,7 +66,11 @@ let legacyCraftingTable, legacyGrassBlock, legacyFurnace,
 	navyBlahaj, slateBlahaj, oliveBlahaj, amberBlahaj,
 	beigeBlahaj, tealBlahaj, mintBlahaj, aquaBlahaj,
 	verdantBlahaj, forestBlahaj, gingerBlahaj, tanBlahaj,
-	legacyOakSapling, legacyBirchSapling, legacySpruceSapling, legacyJungleSapling;
+	legacyOakSapling, legacyBirchSapling, legacySpruceSapling, legacyJungleSapling,
+	maroonTruffaloTuft, roseTruffaloTuft, coralTruffaloTuft, indigoTruffaloTuft,
+	navyTruffaloTuft, slateTruffaloTuft, oliveTruffaloTuft, amberTruffaloTuft,
+	beigeTruffaloTuft, tealTruffaloTuft, mintTruffaloTuft, aquaTruffaloTuft,
+	verdantTruffaloTuft, forestTruffaloTuft, gingerTruffaloTuft, tanTruffaloTuft;
 
 /// ----------------------------------------------------------- ///
 
@@ -290,6 +295,46 @@ StartupEvents.registry('block', registry => {
 	gingerBlahaj = createBlahaj('ginger');
 	tanBlahaj = createBlahaj('tan');
 
+	function createTruffaloTuft(color) {
+		let id = `${color}_truffalo_tuft`;
+		JsonIO.write(
+			`kubejs/assets/kubejs/models/block/${id}.json`,
+			{
+				parent: 'antarchy:block/truffalo_tuft_template',
+				textures: {
+					0: `kubejs:block/antarchy/${color}_truffalo_tuft`,
+					1: `kubejs:block/antarchy/${color}_truffalo_tuft`,
+					2: `kubejs:block/antarchy/${color}_truffalo_tuft_extra`,
+					particle: `kubejs:block/antarchy/${color}_truffalo_tuft`
+				}
+			}
+		);
+		global.writeJsonIfAbsent(
+			`kubejs/assets/kubejs/blockstates/${id}.json`,
+			noVariantBlockstate(id),
+			`Created missing blockstate definition for block '${id}'`
+		);
+		global.writeJsonIfAbsent(`kubejs/data/kubejs/loot_tables/blocks/${id}.json`, defaultLootTable(id), `Created missing loot table for block '${id}'`);
+		return registry.createCustom(id, () => new $TruffaloTuftBlock($BlockProperties.copy(Blocks.WHITE_WOOL)));
+	}
+
+	maroonTruffaloTuft = createTruffaloTuft('maroon');
+	roseTruffaloTuft = createTruffaloTuft('rose');
+	coralTruffaloTuft = createTruffaloTuft('coral');
+	indigoTruffaloTuft = createTruffaloTuft('indigo');
+	navyTruffaloTuft = createTruffaloTuft('navy');
+	slateTruffaloTuft = createTruffaloTuft('slate');
+	oliveTruffaloTuft = createTruffaloTuft('olive');
+	amberTruffaloTuft = createTruffaloTuft('amber');
+	beigeTruffaloTuft = createTruffaloTuft('beige');
+	tealTruffaloTuft = createTruffaloTuft('teal');
+	mintTruffaloTuft = createTruffaloTuft('mint');
+	aquaTruffaloTuft = createTruffaloTuft('aqua');
+	verdantTruffaloTuft = createTruffaloTuft('verdant');
+	forestTruffaloTuft = createTruffaloTuft('forest');
+	gingerTruffaloTuft = createTruffaloTuft('ginger');
+	tanTruffaloTuft = createTruffaloTuft('tan');
+
 	const $KJSTreeGrower = Java.loadClass('xyz.kohara.adjcore.misc.KJSTreeGrower');
 	const $KJSMegaTreeGrower = Java.loadClass('xyz.kohara.adjcore.misc.KJSMegaTreeGrower');
 	function registerSapling(id, featureNormal, featureLarge, properties) {
@@ -373,4 +418,20 @@ StartupEvents.registry('item', registry => {
 	registerBlockItem('legacy_birch_sapling', legacyBirchSapling, true);
 	registerBlockItem('legacy_spruce_sapling', legacySpruceSapling, true);
 	registerBlockItem('legacy_jungle_sapling', legacyJungleSapling, true);
+	registerBlockItem('maroon_truffalo_tuft', maroonTruffaloTuft);
+	registerBlockItem('rose_truffalo_tuft', roseTruffaloTuft);
+	registerBlockItem('coral_truffalo_tuft', coralTruffaloTuft);
+	registerBlockItem('indigo_truffalo_tuft', indigoTruffaloTuft);
+	registerBlockItem('navy_truffalo_tuft', navyTruffaloTuft);
+	registerBlockItem('slate_truffalo_tuft', slateTruffaloTuft);
+	registerBlockItem('olive_truffalo_tuft', oliveTruffaloTuft);
+	registerBlockItem('amber_truffalo_tuft', amberTruffaloTuft);
+	registerBlockItem('beige_truffalo_tuft', beigeTruffaloTuft);
+	registerBlockItem('teal_truffalo_tuft', tealTruffaloTuft);
+	registerBlockItem('mint_truffalo_tuft', mintTruffaloTuft);
+	registerBlockItem('aqua_truffalo_tuft', aquaTruffaloTuft);
+	registerBlockItem('verdant_truffalo_tuft', verdantTruffaloTuft);
+	registerBlockItem('forest_truffalo_tuft', forestTruffaloTuft);
+	registerBlockItem('ginger_truffalo_tuft', gingerTruffaloTuft);
+	registerBlockItem('tan_truffalo_tuft', tanTruffaloTuft);
 });

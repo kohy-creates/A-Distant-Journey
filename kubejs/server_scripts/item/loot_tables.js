@@ -916,7 +916,7 @@ LootJS.modifiers((event) => {
 	event.addLootTableModifier('minecraft:chests/simple_dungeon')
 		.pool(pool => {
 			pool.addLoot(
-				LootEntry.of('aperture_innovations:portal_gun')
+				LootEntry.of('antarchy:portal_gun')
 					.when(c => {
 						c.randomChance(0.06);
 						c.customCondition(fromChapter(2));

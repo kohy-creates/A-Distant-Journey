@@ -194,18 +194,18 @@
 			mining = true
 			sorting = true
 
-		[types.leaves_type.kubejs]
-			"legacy/oak" = true
-			"legacy/birch" = true
-			"legacy/spruce" = true
-			"legacy/jungle" = true
-
 		[types.leaves_type.antarchy]
 			ouranwood = true
 			peach = true
 			royal = true
 			royal_flowering = true
 			cranberry = true
+
+		[types.leaves_type.kubejs]
+			"legacy/oak" = true
+			"legacy/birch" = true
+			"legacy/spruce" = true
+			"legacy/jungle" = true
 
 	[types.cake]
 
@@ -741,6 +741,38 @@
 			"legacy/bricks" = true
 			"legacy/large_bricks" = true
 			"legacy/cobblestone" = true
+			magenta_tiles = true
+			pink_tiles = true
+			forest_tiles = true
+			navy_tiles = true
+			yellow_tiles = true
+			verdant_tiles = true
+			cyan_tiles = true
+			red_tiles = true
+			mint_tiles = true
+			aqua_tiles = true
+			gray_tiles = true
+			white_tiles = true
+			olive_tiles = true
+			coral_tiles = true
+			slate_tiles = true
+			tan_tiles = true
+			green_tiles = true
+			lime_tiles = true
+			light_gray_tiles = true
+			black_tiles = true
+			light_blue_tiles = true
+			amber_tiles = true
+			teal_tiles = true
+			brown_tiles = true
+			orange_tiles = true
+			beige_tiles = true
+			blue_tiles = true
+			ginger_tiles = true
+			purple_tiles = true
+			rose_tiles = true
+			indigo_tiles = true
+			maroon_tiles = true
 			"legacy/planks_oak" = true
 			"legacy/planks_birch" = true
 			"legacy/planks_spruce" = true
@@ -785,38 +817,6 @@
 			blue_concrete = true
 			purple_wool = true
 			purple_concrete = true
-			magenta_tiles = true
-			pink_tiles = true
-			forest_tiles = true
-			navy_tiles = true
-			yellow_tiles = true
-			verdant_tiles = true
-			cyan_tiles = true
-			red_tiles = true
-			mint_tiles = true
-			aqua_tiles = true
-			gray_tiles = true
-			white_tiles = true
-			olive_tiles = true
-			coral_tiles = true
-			slate_tiles = true
-			tan_tiles = true
-			green_tiles = true
-			lime_tiles = true
-			light_gray_tiles = true
-			black_tiles = true
-			light_blue_tiles = true
-			amber_tiles = true
-			teal_tiles = true
-			brown_tiles = true
-			orange_tiles = true
-			beige_tiles = true
-			blue_tiles = true
-			ginger_tiles = true
-			purple_tiles = true
-			rose_tiles = true
-			indigo_tiles = true
-			maroon_tiles = true
 
 		[types.cut_block_type.endergetic]
 			poise = true

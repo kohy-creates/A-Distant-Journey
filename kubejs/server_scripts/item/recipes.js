@@ -310,7 +310,6 @@ ServerEvents.recipes((event) => {
 		'immersive_paintings:painting',
 		'immersive_paintings:graffiti',
 		'brewinandchewin:keg',
-		/aperture_innovations:portal_gun/,
 		'mythicmetals:smelting/prometheum_ingot_from_ores',
 		'mythicmetals:smelting/prometheum_ingot_from_raw_ore',
 		'mythicmetals:blasting/blast_prometheum_ingot_from_ores',
@@ -8811,7 +8810,7 @@ ServerEvents.recipes((event) => {
 		event.shapeless(
 			`8x kubejs:${c}_stone_bricks`,
 			[
-				`${global.ifDyeDepot(c, 'dye_depot', 'minecraft')}:${c}_dye`,
+				dye(c),
 				'stone_bricks', 'stone_bricks',
 				'stone_bricks', 'stone_bricks',
 				'stone_bricks', 'stone_bricks',
@@ -8824,7 +8823,7 @@ ServerEvents.recipes((event) => {
 		event.shapeless(
 			`8x kubejs:${c}_tiles`,
 			[
-				`${global.ifDyeDepot(c, 'dye_depot', 'minecraft')}:${c}_dye`,
+				dye(c),
 				'supplementaries:stone_tile', 'supplementaries:stone_tile',
 				'supplementaries:stone_tile', 'supplementaries:stone_tile',
 				'supplementaries:stone_tile', 'supplementaries:stone_tile',
@@ -8843,7 +8842,7 @@ ServerEvents.recipes((event) => {
 			'cobblestone',
 			'slime_ball'
 		];
-		if (c != 'black') ingr.push(`${c}_dye`);
+		if (c != 'black') ingr.push(dye(c));
 		event.recipes.create.mixing(Item.of(id, 2), ingr, 300, 'heated').id(`adj:${c}_asphalt`);
 
 	});
@@ -8854,29 +8853,19 @@ ServerEvents.recipes((event) => {
 	event.recipes.botania.mana_infusion('immersive_paintings:painting', 'painting').mana(15000).id('adj:magic_painting');
 	event.recipes.botania.mana_infusion('2x immersive_paintings:graffiti', 'quark:glass_item_frame').mana(15000).id('adj:graffiti');
 
-	// Aperture Innovations ~ Portal Guns
-	function portalGunRecipe(dyes, variant) {
-		inter = Item.of('iron_block');
-		event.recipes.create.sequenced_assembly(
-			Item.of('aperture_innovations:portal_gun', (variant) ? { variant: `aperture_innovations:${variant}` } : {}),
-			'iron_block',
-			[
-				event.recipes.create.deploying(inter, [inter, Item.of('aether_redux:gravitite_ingot')]),
-				event.recipes.create.deploying(inter, [inter, Item.of(dyes[0])]),
-				event.recipes.create.deploying(inter, [inter, Item.of(dyes[1])]),
-				event.recipes.create.pressing(inter, inter),
-				event.recipes.create.deploying(inter, [inter, Item.of('kubejs:manasteel_sheet')]),
-				event.recipes.create.deploying(inter, [inter, Item.of('iron_block')]),
-				event.recipes.create.pressing(inter, inter),
-				event.recipes.create.filling(inter, [inter, Fluid.of('kubejs:dimensional_juice', 500)]),
-			]
-		).transitionalItem(inter).loops(8).id(`adj:portal_gun${variant ? `_${variant}` : ''}`);
-	}
-
-	portalGunRecipe(['orange_dye', 'blue_dye']);
-	portalGunRecipe(['light_blue_dye', 'blue_dye'], 'atlas');
-	portalGunRecipe(['red_dye', 'yellow_dye'], 'pbody');
-	portalGunRecipe(['lime_dye', 'green_dye'], 'reloaded');
+	inter = Item.of('iron_block');
+	event.recipes.create.sequenced_assembly(
+		Item.of('antarchy:portal_gun'),
+		'iron_block',
+		[
+			event.recipes.create.deploying(inter, [inter, Item.of('aether_redux:gravitite_ingot')]),
+			event.recipes.create.pressing(inter, inter),
+			event.recipes.create.deploying(inter, [inter, Item.of('kubejs:manasteel_sheet')]),
+			event.recipes.create.deploying(inter, [inter, Item.of('antarchy:bluestone_comparator')]),
+			event.recipes.create.pressing(inter, inter),
+			event.recipes.create.filling(inter, [inter, Fluid.of('kubejs:dimensional_juice', 500)]),
+		]
+	).transitionalItem(inter).loops(8).id(`adj:portal_gun`);
 
 	// Prometheum rework
 	gaiaPlateRecipe(

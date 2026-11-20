@@ -201,7 +201,7 @@ PlayerEvents.tick(event => {
 			player.addEffect(global.newMobEffectInstance('kubejs:palladium_hero_aegis', 3, 0, true, false, true));
 		}
 
-		if (player.isCuriosEquipped('kubejs:mana_flower') && player.age % 20 === 0) {
+		if ((player.isCuriosEquipped('kubejs:mana_flower') || player.isCuriosEquipped('kubejs:arcane_flower')) && player.age % 20 === 0) {
 			player.adjcore$restoreMana(Math.ceil(global.getMaxMana(player) * 0.02), false);
 		}
 	}

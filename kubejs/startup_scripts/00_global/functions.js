@@ -576,3 +576,99 @@ global.getEntriesInTag = function (registry, tag) {
 		.getTag(global.createTagKey(registry, tag))
 		.getValues();
 };
+
+global.uuidCache = {};
+
+const $UUID = Java.loadClass('java.util.UUID');
+const $String = Java.loadClass('java.lang.String');
+
+/**
+ * Generates a UUID based on a seed.
+ * @param {string} seed 
+ * @returns {string}
+ */
+global.uuid = function (seed) {
+	if (global.uuidCache[seed]) {
+		return global.uuidCache[seed];
+	}
+	let uuid = $UUID.nameUUIDFromBytes(new $String(seed).getBytes()).toString();
+	global.uuidCache[seed] = uuid;
+	return uuid;
+};
+
+global.attributes = {
+	'armor': 'minecraft:generic.armor',
+	'attack_damage': 'minecraft:generic.attack_damage',
+	'attack_speed': 'minecraft:generic.attack_speed',
+	'knockback_resistance': 'minecraft:generic.knockback_resistance',
+	'spell_damage': 'ars_nouveau:ars_nouveau.perk.spell_damage',
+	'max_mana': 'ars_nouveau:ars_nouveau.perk.max_mana',
+	'mana_regen': 'ars_nouveau:ars_nouveau.perk.mana_regen',
+	'flight_time': 'adjcore:generic.flight_time',
+	'health_regen': 'adjcore:generic.health_regeneration',
+	'damage': 'adjcore:player.damage_dealt',
+	'healing_cooldown': 'adjcore:player.healing_potion_cooldown',
+	'mana_cost': 'adjcore:player.mana_cost_reduction',
+	'damage_reduction': 'adjcore:generic.damage_reduction',
+	'projectile_damage_reduction': 'adjcore:generic.projectile_damage_reduction',
+	'safe_fall_distance': 'adjcore:generic.safe_fall_distance',
+	'extra_fortune': 'adjcore:generic.extra_fortune_level',
+	'armor_pierce': 'attributeslib:armor_pierce',
+	'arrow_damage': 'attributeslib:arrow_damage',
+	'arrow_velocity': 'attributeslib:arrow_velocity',
+	'cold_damage': 'attributeslib:cold_damage',
+	'crit_chance': 'attributeslib:crit_chance',
+	'crit_damage': 'attributeslib:crit_damage',
+	'dodge_chance': 'attributeslib:dodge_chance',
+	'draw_speed': 'attributeslib:draw_speed',
+	'experience_gained': 'attributeslib:experience_gained',
+	'fire_damage': 'attributeslib:fire_damage',
+	'life_steal': 'attributeslib:life_steal',
+	'mining_speed': 'attributeslib:mining_speed',
+	'overheal': 'attributeslib:overheal',
+	'elytra_flight': 'attributeslib:elytra_flight',
+	'creative_flight': 'attributeslib:creative_flight',
+	'critical_bonus_damage': 'additionalentityattributes:player.critical_bonus_damage',
+	'water_movement_speed': 'additionalentityattributes:generic.water_speed',
+	'water_visibility': 'additionalentityattributes:player.water_visibility',
+	'lung_capacity': 'additionalentityattributes:generic.lung_capacity',
+	'lava_movement_speed': 'additionalentityattributes:generic.lava_speed',
+	'lava_visibility': 'additionalentityattributes:player.lava_visibility',
+	'bonus_loot_count_rolls': 'additionalentityattributes:player.bonus_loot_count_rolls',
+	'bonus_rare_loot_rolls': 'additionalentityattributes:player.bonus_rare_loot_rolls',
+	'jump_height': 'additionalentityattributes:generic.jump_height',
+	'pickup_range': 'terra_curio:pickup_range',
+	'dash_distance': 'combatroll:distance',
+	'dash_recharge': 'combatroll:recharge',
+	'dash_count': 'combatroll:count',
+	'movement_speed': 'minecraft:generic.movement_speed',
+	'attack_knockback': 'minecraft:generic.attack_knockback',
+	'luck': 'minecraft:generic.luck',
+	'double_jumps': 'doublejumpattribute:doublejumpattribute',
+	'block_reach': 'forge:block_reach',
+	'entity_reach': 'forge:entity_reach',
+	'gravity': 'forge:entity_gravity',
+	'swim_speed': 'forge:swim_speed',
+	'step_height': 'forge:step_height_addition',
+	'pixie_spawn_chance': 'botania:pixie_spawn_chance',
+	'scguns_projectile_speed': 'scguns:projectile_speed',
+	'scguns_additional_bullet_damage': 'scguns:additional_bullet_damage',
+	'scguns_reload_speed': 'scguns:reload_speed',
+	'scguns_bullet_damage_multiplier': 'scguns:bullet_damage_multiplier',
+	'scguns_spread_multiplier': 'scguns:spread_multiplier',
+	'fall_damage_reduction': 'adjcore:generic.fall_damage_reduction',
+	'wither_storm_target_stationary_flying_speed': 'witherstormmod:target_stationary_flying_speed',
+	'wither_storm_slow_flying_speed': 'witherstormmod:slow_flying_speed',
+	'wither_storm_evolution_speed': 'witherstormmod:evolution_speed',
+	'wither_storm_hunchback_follow_range': 'witherstormmod:hunchback_follow_range',
+	'healing_power': 'kubejs:healing_power',
+};
+
+/**
+ * Shortcut for typing most common attributes.
+ * @param {keyof typeof global.attributes} id 
+ * @returns {string}
+ */
+global.attribute = function (id) {
+	return global.attributes[id];
+};

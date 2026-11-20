@@ -140,7 +140,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "aperture_innovations:portal_gun"
+					"name": "antarchy:portal_gun"
 				}
 			],
 			"conditions": [

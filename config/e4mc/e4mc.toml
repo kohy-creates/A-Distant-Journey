@@ -1,11 +1,11 @@
-# Whether to hide the domain on chat and only allow copying
-# default: false
-hideDomainInChat = false
-# Whether to use the broker to get the best relay based on location or use a hard-coded relay.
-# default: true
-useBroker = true
-# default: https://broker.e4mc.link/getBestRelay
-brokerUrl = "https://broker.e4mc.link/getBestRelay"
+	# Whether to hide the domain on chat and only allow copying
+	# default: false
+	hideDomainInChat = false
+	# Whether to use the broker to get the best relay based on location or use a hard-coded relay.
+	# default: true
+	useBroker = true
+	# default: https://broker.e4mc.link/getBestRelay
+	brokerUrl = "https://broker.e4mc.link/getBestRelay"
 # default: test.e4mc.link
 relayHost = "test.e4mc.link"
 # default: 25575

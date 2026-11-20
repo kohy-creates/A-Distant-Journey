@@ -625,17 +625,6 @@ const RemovedContent = {
 
 		/travelersbackpack:.*_sleeping_bag/,
 
-		/aperture_innovations:concrete_surface/,
-		/aperture_innovations:metal_surface/,
-		'aperture_innovations:long_fall_boots',
-		'aperture_innovations:antline',
-		'aperture_innovations:antline_checkmark',
-		'aperture_innovations:antline_timer',
-		'aperture_innovations:weighted_storage_cube',
-		'aperture_innovations:weighted_companion_cube',
-		'aperture_innovations:pedestal_button',
-		'aperture_innovations:large_button',
-
 		'waxed:cupric_wax_block',
 		'waxed:cupric_candle',
 		'waxed:waxed_arid_sand',

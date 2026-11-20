@@ -576,3 +576,7 @@ const TooltipEdits = {
 		}
 	]
 }
+
+for (let [id, tooltip] of Object.entries(global.curioTooltips)) {
+	TooltipEdits.TIP_CONFIG.push({ items: id, text: tooltip });
+};

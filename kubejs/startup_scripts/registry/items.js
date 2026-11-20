@@ -173,6 +173,9 @@ global.itemEffects = {
 	},
 };
 
+/** @type {Record<string, string[]>} */
+global.curioTooltips = {};
+
 global.rings = {
 	'minecraft:redstone': {
 		name: 'Redstone Ring',
@@ -405,6 +408,27 @@ StartupEvents.registry('item', registry => {
 		.tooltip('')
 		.tooltip(Text.gray('\'Love that kick!\''))
 		.rarity('epic');
+
+	/**
+	 * Creates a new curio item. Returns the builder in case I need to add more stuff to it.
+	 * @param {string} id 
+	 * @param {string} name 
+	 * @param {Internal.Rarity_?} rarity - defaults to 'uncommon' 
+	 * @param {string[]?} tooltipLines 
+	 * @param {Internal.CapabilityCurios_} capabilityBuilder 
+	 * @returns {Internal.BasicItemJS$Builder_}
+	 */
+	function createCurio(id, name, rarity, tooltipLines, capabilityBuilder) {
+		if (tooltipLines) {
+			global.curioTooltips[id] = tooltipLines;
+		}
+		return registry.create(id)
+			.attachCuriosCapability(capabilityBuilder)
+			.unstackable()
+			.displayName(name)
+			.rarity(global.getOrDefault(rarity, 'uncommon'))
+			.tag('curios:accessory');
+	}
 
 	registry.create('bloodstone_choker')
 		.attachCuriosCapability(
@@ -655,30 +679,6 @@ StartupEvents.registry('item', registry => {
 		.tag('curios:accessory')
 		.rarity('epic');
 
-	registry.create('angler_earring')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
-
-	registry.create('angler_tackle_bag')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
-
-	registry.create('arcane_flower')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
-
 	registry.create('band_of_starpower')
 		.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
@@ -721,6 +721,7 @@ StartupEvents.registry('item', registry => {
 		.tag('curios:accessory')
 		.rarity('uncommon');
 
+	/*
 	registry.create('high_test_fishing_line')
 		.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
@@ -736,6 +737,23 @@ StartupEvents.registry('item', registry => {
 		.unstackable()
 		.tag('curios:accessory')
 		.rarity('uncommon');
+
+	registry.create('angler_earring')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
+	registry.create('angler_tackle_bag')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+	*/
 
 	registry.create('magic_cuffs')
 		.attachCuriosCapability(
@@ -765,91 +783,93 @@ StartupEvents.registry('item', registry => {
 		.tag('curios:accessory')
 		.rarity('uncommon');
 
-	registry.create('mana_flower')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	function manaFlowerTooltip(amount, extra) {
+		let base = [
+			`Passively restore ${global.getOrDefault(amount, 2)}% of maximum mana every second (doesn't stack)`,
+			'This is separate from the default mana regeneration rate',
+			'and will proc even while using magic weapons',
+		];
+		if (extra) {
+			if (!Array.isArray(extra)) {
+				base.push(extra);
+			}
+			else {
+				extra.forEach(line => base.push(line));
+			}
+		}
+		return base;
+	}
 
-	registry.create('mana_cloak')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('mana_flower', 'Mana Flower', null, manaFlowerTooltip,
+		CuriosJSCapabilityBuilder.create()
+	);
 
-	registry.create('magnet_flower')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('arcane_flower', 'Arcane Flower', null, manaFlowerTooltip,
+		CuriosJSCapabilityBuilder.create()
+			.addAttribute(
+				global.attribute('spell_damage'),
+				global.uuid('arcane_flower'),
+				15,
+				'addition'
+			)
+	);
 
-	registry.create('moon_charm')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.tooltip(Text.gray('Transforms the wearer into a werewolf during nighttime'))
-		.rarity('uncommon');
+	createCurio('mana_cloak', 'Mana Cloak', null, manaFlowerTooltip(null, 'Stars will rain down when you get hit'),
+		CuriosJSCapabilityBuilder.create()
+	);
 
-	registry.create('moon_shell')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.tooltip(Text.gray('Transforms the wearer into a werewolf during nighttime'))
-		.tooltip(Text.gray('Transforms the wearer into a melfork while in the water'))
-		.rarity('uncommon');
+	createCurio('magnet_flower', 'Magnet Flower', null, manaFlowerTooltip,
+		CuriosJSCapabilityBuilder.create()
+			.addAttribute(
+				global.attribute('pickup_range'),
+				global.uuid('magnet_flower'),
+				7,
+				'addition'
+			)
+	);
 
-	registry.create('neptunes_shell')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.tooltip(Text.gray('Transforms the wearer into a melfork while in the water'))
-		.rarity('uncommon');
+	createCurio('moon_charm', 'Moon Charm', null, [
+		'Transforms the wearer into a werewolf during nighttime'
+	], CuriosJSCapabilityBuilder.create());
 
-	registry.create('celestial_shell')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.addAttribute(
-					'generic.attack_speed',
-					'a4faf07c-1712-478b-b3b1-3b8a1b14d7d7',
-					0.1,
-					"multiply_base"
-				)
-				.addAttribute(
-					'generic.armor',
-					'a4faf07c-1712-478b-b3b1-3b8a1b14d7d7',
-					4,
-					"addition"
-				)
-				.addAttribute(
-					'attributeslib:crit_chance',
-					'a4faf07c-1712-478b-b3b1-3b8a1b14d7d7',
-					0.02,
-					"addition"
-				)
-				.addAttribute(
-					'adjcore:player.damage_dealt',
-					'a4faf07c-1712-478b-b3b1-3b8a1b14d7d7',
-					0.1,
-					"multiply_base"
-				)
+	createCurio('moon_shell', 'Moon Shell', null, [
+		'Transforms the wearer into a werewolf during nighttime',
+		'Transforms the wearer into a melfork while in the water'
+	], CuriosJSCapabilityBuilder.create());
+
+	createCurio('neptunes_shell', 'Neptune\'s Shell', null, [
+		'Transforms the wearer into a melfork while in the water'
+	], CuriosJSCapabilityBuilder.create());
+
+	createCurio('celestial_shell', 'Celestial Shell', null, [
+		'Transforms the wearer into a werewolf during nighttime',
+		'Transforms the wearer into a melfork while in the water'
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('attack_speed'),
+			global.uuid('celestial_shell'),
+			0.1,
+			"multiply_base"
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.tooltip(Text.gray('Transforms the wearer into a werewolf during nighttime'))
-		.tooltip(Text.gray('Transforms the wearer into a melfork while in the water'))
-		.rarity('uncommon');
+		.addAttribute(
+			global.attribute('armor'),
+			global.uuid('celestial_shell'),
+			4,
+			"addition"
+		)
+		.addAttribute(
+			global.attribute('crit_chance'),
+			global.uuid('celestial_shell'),
+			0.02,
+			"addition"
+		)
+		.addAttribute(
+			global.attribute('damage'),
+			global.uuid('celestial_shell'),
+			0.1,
+			"multiply_base"
+		)
+	);
 
 	registry.create('ring_of_greed')
 		.attachCuriosCapability(
@@ -867,13 +887,17 @@ StartupEvents.registry('item', registry => {
 		.tag('curios:accessory')
 		.rarity('uncommon');
 
-	registry.create('soaring_insignia')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('soaring_insignia', 'Soaring Insignia', 'epic', [
+		'Boost flight time of equipped wings'
+	],
+		CuriosJSCapabilityBuilder.create()
+			.addAttribute(
+				global.attribute('flight_time'),
+				global.uuid('soaring_insignia'),
+				0.25,
+				'multiply_total'
+			)
+	);
 
 	registry.create('tackle_box')
 		.attachCuriosCapability(
