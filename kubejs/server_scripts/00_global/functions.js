@@ -73,7 +73,6 @@ global.replaceItemsInAllLoot = {
 	'hybrid_aquatic:shark_tooth': 'alexsmobs:shark_tooth',
 	'quark:rope': 'supplementaries:rope',
 	'farmersdelight:rope': 'supplementaries:rope',
-	'unusualend:lurker_sludge': 'ends_delight:shulker_meat'
 };
 
 /**
@@ -90,7 +89,6 @@ global.zenithSwords = [
 	{ item: "mythicmetals:star_platinum_sword", color: 0xEEBE6C, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "mythicmetals:orichalcum_sword", color: 0x77D96F, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "ancient_aether:valkyrum_sword", color: 0xF1EAD9, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
-	{ item: "unusualend:pearlescent_sword", color: 0xDD6DCF, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "mythicmetals:metallurgium_sword", ingredient: true, color: 0xFCDE49, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "majruszsdifficulty:enderium_sword", color: 0x7E5885, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },
 	{ item: "minecraft:netherite_sword", color: 0x8F7F82, rotation_center_height: 0.125, rotation: 0.785, scale: 4.5, trail_width: 3 },

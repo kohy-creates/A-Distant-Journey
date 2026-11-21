@@ -312,12 +312,9 @@ global.stageRestrictions = {
 			/endersdelight/,
 			/chorus/,
 			/purpur/,
-			/unusualend/,
 			/endergetic/,
 			/phantasm/,
 			/everycomp\:.*phantasm.*/,
-			/everycomp\:.*unusualend.*/,
-			/supp.*\:.*unusualend.*/,
 			/supp.*\:.*phantasm.*/,
 			/myalite/,
 			/quark\:duskbound/,
@@ -344,9 +341,6 @@ global.stageRestrictions = {
 			/twilight(forest|delight):.*yeti/,
 		],
 		exceptions: [
-			'unusualend:chiseled_glass',
-			'unusualend:chiseled_glass_pane',
-			'unusualend:phantom_membrane_block',
 			'endersdelight:ender_shard',
 			/treasure_bag/,
 			/polished_obsidian/

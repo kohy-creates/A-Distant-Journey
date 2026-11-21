@@ -108,7 +108,6 @@ LootJS.modifiers((event) => {
 		'mynethersdelight:scavenging_extra_ghasta0',
 		'mynethersdelight:scavenging_hide_from_hoglin',
 		'galosphere:pillager_palladium_loot',
-		'unusualend:shulker',
 		'scguns'
 	];
 	removeModifiersFromMods.forEach(mod => {
@@ -1274,8 +1273,6 @@ LootJS.modifiers((event) => {
 		'kubejs:treasure_bag/twilightforest_naga',
 		'kubejs:treasure_bag/twilightforest_snow_queen',
 		'kubejs:treasure_bag/twilightforest_ur_ghast',
-		'kubejs:treasure_bag/unusualend_enderblob_queen',
-		'kubejs:treasure_bag/unusualend_endstone_golem',
 		'majruszsdifficulty:ender_dragon_treasure_bag',
 		'majruszsdifficulty:warden_treasure_bag',
 		'majruszsdifficulty:wither_treasure_bag',

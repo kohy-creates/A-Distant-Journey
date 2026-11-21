@@ -99,7 +99,6 @@ ItemEvents.modification(event => {
 		'tide:ocean_perch',
 		'tide:bluegill',
 		'tide:mackarel',
-		'unusualend:raw_bluk',
 		'naturalist:catfish',
 		'naturalist:bass',
 		'alexsmobs:moose_ribs',

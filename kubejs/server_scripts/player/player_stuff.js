@@ -300,7 +300,7 @@ ADJServerEvents.adjHurt(event => {
 				}
 			}
 			if (setBonusActive(player, 'twilightforest:fiery')) {
-				player.addEffect(global.newMobEffectInstance('unusualend:swift_strikes', '0:05', 1, true, false, true));
+				player.addEffect(global.newMobEffectInstance('strength', '0:05', 1, true, false, true));
 			}
 		}
 	}

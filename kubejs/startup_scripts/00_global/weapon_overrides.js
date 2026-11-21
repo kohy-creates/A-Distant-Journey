@@ -122,7 +122,6 @@ addToolsetOverride('mythicmetals:adamantite', 48);
 addToolsetOverride('mythicmetals:prometheum', 65, 0.6);
 addToolsetOverride('mythicmetals:star_platinum', 60);
 addToolsetOverride('lost_aether_content:phoenix', 76);
-addToolsetOverride('unusualend:pearlescent', 64);
 addToolsetOverride('phantasm:crystalline', 55);
 addToolsetOverride('majruszsdifficulty:enderium', 72);
 addToolsetOverride('mythicmetals:celestium', 80);

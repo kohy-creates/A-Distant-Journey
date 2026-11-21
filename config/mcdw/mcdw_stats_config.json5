@@ -303,7 +303,7 @@
 			"damage": 1,
 			"attackSpeed": -1.7000000476837158,
 			"repairIngredient": [
-				"unusualend:pearlescent_ingot"
+				"diamond"
 			]
 		},
 		"DAGGER_CHILL_GALE_KNIFE": {
@@ -366,7 +366,7 @@
 			"damage": 1,
 			"attackSpeed": -1.7000000476837158,
 			"repairIngredient": [
-				"unusualend:pearlescent_ingot"
+				"diamond"
 			]
 		},
 		"DAGGER_TEMPEST_KNIFE": {

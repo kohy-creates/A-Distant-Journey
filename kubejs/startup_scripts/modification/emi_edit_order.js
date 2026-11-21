@@ -110,8 +110,6 @@ StartupEvents.postInit(event => Utils.runAsync(() => {
 		'betterarcheology:rotten',
 		'mynethersdelight:powdery',
 		'netherexp:smokestalk',
-		'unusualend:chorus_nest',
-		'unusualend:stripped_chorus_nest',
 		'window_box:chthonic_yew',
 	];
 

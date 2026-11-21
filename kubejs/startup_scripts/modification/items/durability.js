@@ -312,7 +312,6 @@ ItemEvents.modification(event => {
 
 	maxDurability([
 		toolset('phantasm:crystalline'),
-		toolset('unusualend:pearlescent'),
 		'mcdw:dagger_backstabber',
 		'mcdw:dagger_void_touched_blade',
 		'mcdw:bow_call_of_the_void'

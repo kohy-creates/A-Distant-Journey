@@ -162,22 +162,6 @@
 				"distance": 100
 			}
 		},
-		"unusualend:endstone_golem": {
-			"phase_0": {
-				"track": "adj:music.boss.endstone_golem",
-				"title": "Lunatic Dreamer",
-				"author": "ZUN",
-				"distance": 100
-			}
-		},
-		"unusualend:enderblob_queen": {
-			"phase_0": {
-				"track": "adj:music.boss.enderblob_queen",
-				"title": "Pierrot of The Star Spangled Banner",
-				"author": "ZUN",
-				"distance": 100
-			}
-		},
 		"ars_nouveau:wilden_boss": {
 			"phase_0": {
 				"track": "adj:music.boss.wilden_boss",

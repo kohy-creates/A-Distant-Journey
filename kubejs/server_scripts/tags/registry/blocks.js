@@ -7,8 +7,6 @@ ServerEvents.tags('block', tags => {
 		"minecraft:stone",
 		"minecraft:deepslate",
 		"minecraft:tuff",
-		"unusualend:raw_purpur_block",
-		"unusualend:warped_stone",
 		"minecraft:infested_stone",
 		"minecraft:polished_andesite",
 		"minecraft:polished_diorite",

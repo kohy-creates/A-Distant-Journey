@@ -62,9 +62,7 @@
 			"scguns:scampler",
 			"scguns:mother_ghast",
 			"scguns:finforcer",
-			"scguns:praetor",
-			"unusualend:endstone_golem",
-			"unusualend:enderblob_queen"
+			"scguns:praetor"
 		],
 		"result": "deny"
 	}

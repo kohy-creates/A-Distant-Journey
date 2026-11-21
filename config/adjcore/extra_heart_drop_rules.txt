@@ -7,8 +7,6 @@ cataclysm:the_leviathan/5-9/1
 cataclysm:ancient_remnant/5-9/1
 cataclysm:maledictus/5-9/1
 cataclysm:scylla/5-9/1
-unusualend:endstone_golem/5-9/1
-unusualend:enderblob_queen/5-9/1
 minecraft:ender_dragon/5-9/1
 minecraft:wither/5-9/1
 ars_nouveau:wilden_boss/5-9/1

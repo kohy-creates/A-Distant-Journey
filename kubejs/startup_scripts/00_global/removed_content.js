@@ -402,11 +402,6 @@ const RemovedContent = {
 		'farmersdelight:rope',
 		'farmersdelight:flint_knife',
 
-		'unusualend:phantom_arrow',
-		'unusualend:purpur_tank',
-		'unusualend:healing_lantern',
-		'unusualend:warped_anchor',
-
 		'alloy_forgery:prismarine_bricks_forge_controller',
 		'alloy_forgery:bricks_forge_controller',
 		'alloy_forgery:stone_bricks_forge_controller',
@@ -782,8 +777,6 @@ const RemovedContent = {
 		'scguns:mother_ghast',
 		'scguns:finforcer',
 		'scguns:praetor',
-		'unusualend:endstone_golem',
-		'unusualend:enderblob_queen'
 	]
 };
 

@@ -12,77 +12,29 @@
   "maxFps": 30,
   "screenMaxFps": 20,
   "mapVanillaElements": {
-    "minecraft:record_overlay": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
-    "aether:aether_portal_overlay": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 1
-    },
-    "minecraft:portal": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 1
-    },
     "tide:cast_overlay": {
       "enabled": {
         "value": "OFF"
       },
       "pass": 1
     },
-    "minecraft:jump_bar": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
-    "create:toolbox": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 1
-    },
-    "minecraft:fps_graph": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 1
-    },
-    "xaeroworldmap:xaero_wm_crosshair_message": {
-      "enabled": {
-        "value": "OFF"
-      },
-      "pass": 1
-    },
-    "patchouli:multiblock_progress": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
-    "botania:hud": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
-    "witherstormmod:bosstheme_watermark": {
+    "antarchy:glimmering_tint": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 3
     },
-    "structure_gel:building_tool_overlay": {
+    "antarchy:springy_boots": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 2
+    },
+    "antos:task_tracker": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
     },
     "alexsmobsinteraction:farseer_text": {
       "enabled": {
@@ -102,17 +54,17 @@
       },
       "pass": 3
     },
+    "shouldersurfing:map_item_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "aether:remedy_vignette": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 1
-    },
-    "majruszlibrary:bleeding": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
     },
     "swinginglanterns:debug_overlay": {
       "enabled": {
@@ -120,7 +72,7 @@
       },
       "pass": 3
     },
-    "treechop:chopping_indicator": {
+    "cynosure:cynosure_overlays_scoreboard": {
       "enabled": {
         "value": "AUTO"
       },
@@ -132,11 +84,17 @@
       },
       "pass": 1
     },
-    "aether:moa_jumps": {
+    "heartline:bars": {
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
+      "pass": 3
+    },
+    "cynosure:cynosure_overlays_chat_panel": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
     },
     "ars_nouveau:spell_hud": {
       "enabled": {
@@ -150,29 +108,23 @@
       },
       "pass": 2
     },
-    "secretsofthevoid:oxygen": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
     "alexsmobsinteraction:farseer_effects": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 3
     },
-    "minecraft:hotbar": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
     "ars_nouveau:mana_hud": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 1
+    },
+    "antarchy:brutalfly_elytra": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
     },
     "fairylights:overlay": {
       "enabled": {
@@ -186,35 +138,11 @@
       },
       "pass": 2
     },
-    "artifacts:artifact_cooldowns": {
+    "antarchy:dread_darkness": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 3
-    },
-    "create_pattern_schematics:pattern_schematic": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 1
-    },
-    "xaerominimap:xaero": {
-      "enabled": {
-        "value": "OFF"
-      },
-      "pass": 1
-    },
-    "travelersbackpack:travelers_backpack": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
-    "emberstextapi:immersive_messages": {
-      "enabled": {
-        "value": "OFF"
-      },
-      "pass": 1
     },
     "gnetum:minecraft_hand": {
       "enabled": {
@@ -222,13 +150,7 @@
       },
       "pass": 1
     },
-    "aether:inebriation_vignette": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 1
-    },
-    "witherstormmod:tractor_beam": {
+    "cynosure:cynosure_overlays_portal": {
       "enabled": {
         "value": "AUTO"
       },
@@ -260,7 +182,7 @@
     },
     "minecraft:subtitles": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
       "pass": 2
     },
@@ -270,17 +192,11 @@
       },
       "pass": 2
     },
-    "supplementaries:slimed_overlay": {
+    "antarchy:flytrap_goo": {
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 1
-    },
-    "aether:hammer_cooldown": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
+      "pass": 3
     },
     "witherstormmod:blinding": {
       "enabled": {
@@ -342,18 +258,6 @@
       },
       "pass": 2
     },
-    "create:schematic": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
-    "create:train_hud": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
     "ars_nouveau:scry_camera": {
       "enabled": {
         "value": "AUTO"
@@ -366,6 +270,336 @@
       },
       "pass": 3
     },
+    "cynosure:cynosure_overlays_subtitles": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "aether_protect_your_moa:moa_jumps_gravitite": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "supplementaries:cannon_charge_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "tide:fishing_info_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "cynosure:cynosure_overlays_player_list": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "antarchy:king_judgment_flash": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "antarchy:portal_gun_crosshair": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "twilightforest:quest_ram_indicator": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "hammerlib:tooltip_engine": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "additionaladditions:additionalspyglass": {
+      "enabled": {
+        "value": "OFF"
+      },
+      "pass": 1
+    },
+    "gnetum:status_bar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "memorycatcher:memory_hud": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "cynosure:cynosure_overlays_frostbite": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "antarchy:bloodglass_hearts": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "aether:shield_of_repulsion_vignette": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "exposure:viewfinder": {
+      "enabled": {
+        "value": "OFF"
+      },
+      "pass": 2
+    },
+    "create:goggle_info": {
+      "enabled": {
+        "value": "OFF"
+      },
+      "pass": 1
+    },
+    "minecraft:record_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "aether:aether_portal_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:portal": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:jump_bar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "create:toolbox": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "minecraft:fps_graph": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "xaeroworldmap:xaero_wm_crosshair_message": {
+      "enabled": {
+        "value": "OFF"
+      },
+      "pass": 1
+    },
+    "patchouli:multiblock_progress": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "cynosure:cynosure_overlays_boss_event_progress": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "botania:hud": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "witherstormmod:bosstheme_watermark": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "structure_gel:building_tool_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "majruszlibrary:bleeding": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "antarchy:gooped_tint": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "treechop:chopping_indicator": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "cynosure:cynosure_overlays_item_name": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "aether:moa_jumps": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "secretsofthevoid:oxygen": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "cynosure:cynosure_overlays_experience_bar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "minecraft:hotbar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "cynosure:cynosure_overlays_title_text": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "antarchy:paralyzed_stone": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "artifacts:artifact_cooldowns": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "create_pattern_schematics:pattern_schematic": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "xaerominimap:xaero": {
+      "enabled": {
+        "value": "OFF"
+      },
+      "pass": 1
+    },
+    "travelersbackpack:travelers_backpack": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "emberstextapi:immersive_messages": {
+      "enabled": {
+        "value": "OFF"
+      },
+      "pass": 1
+    },
+    "aether:inebriation_vignette": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "witherstormmod:tractor_beam": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "cynosure:cynosure_overlays_hotbar": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "supplementaries:slimed_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "aether:hammer_cooldown": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "cynosure:cynosure_overlays_vignette": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "cynosure:cynosure_overlays_debug_text": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "cynosure:cynosure_overlays_spyglass": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "create:schematic": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "create:train_hud": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
+    "cynosure:cynosure_overlays_sleep_fade": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "rediscovered:red_dragon_stamina_display": {
       "enabled": {
         "value": "AUTO"
@@ -373,12 +607,6 @@
       "pass": 2
     },
     "minecraft:player_list": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
-    },
-    "aether_protect_your_moa:moa_jumps_gravitite": {
       "enabled": {
         "value": "AUTO"
       },
@@ -402,27 +630,33 @@
       },
       "pass": 2
     },
-    "supplementaries:cannon_charge_overlay": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
-    },
     "minecraft:title_text": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 2
     },
-    "tide:fishing_info_overlay": {
+    "emberstextapi:legacy_immersive_messages": {
+      "enabled": {
+        "value": "OFF"
+      },
+      "pass": 3
+    },
+    "cynosure:cynosure_overlays_record_overlay": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 3
     },
-    "emberstextapi:legacy_immersive_messages": {
+    "antarchy:dorrie_jump": {
       "enabled": {
-        "value": "OFF"
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "cynosure:cynosure_overlays_potion_icons": {
+      "enabled": {
+        "value": "AUTO"
       },
       "pass": 3
     },
@@ -431,24 +665,6 @@
         "value": "AUTO"
       },
       "pass": 3
-    },
-    "twilightforest:quest_ram_indicator": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
-    },
-    "hammerlib:tooltip_engine": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
-    },
-    "additionaladditions:additionalspyglass": {
-      "enabled": {
-        "value": "OFF"
-      },
-      "pass": 1
     },
     "shouldersurfing:post_crosshair": {
       "enabled": {
@@ -472,21 +688,9 @@
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
-    },
-    "gnetum:status_bar": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 2
+      "pass": 1
     },
     "nolijium:hud": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 3
-    },
-    "memorycatcher:memory_hud": {
       "enabled": {
         "value": "AUTO"
       },
@@ -498,17 +702,23 @@
       },
       "pass": 1
     },
+    "antarchy:horde_intensity": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
+    },
     "supplementaries:quiver_overlay": {
       "enabled": {
         "value": "AUTO"
       },
       "pass": 2
     },
-    "aether:shield_of_repulsion_vignette": {
+    "antarchy:hercules_beetle_charge": {
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 1
+      "pass": 3
     },
     "rubinated_nether:ruby_lens_overlay": {
       "enabled": {
@@ -516,13 +726,25 @@
       },
       "pass": 3
     },
-    "exposure:viewfinder": {
+    "subtle_effects:debug_overlay": {
       "enabled": {
         "value": "AUTO"
       },
-      "pass": 2
+      "pass": 1
+    },
+    "cynosure:cynosure_overlays_helmet": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
     },
     "minecraft:spyglass": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "cynosure:cynosure_overlays_crosshair": {
       "enabled": {
         "value": "AUTO"
       },
@@ -539,12 +761,6 @@
         "value": "AUTO"
       },
       "pass": 3
-    },
-    "create:goggle_info": {
-      "enabled": {
-        "value": "OFF"
-      },
-      "pass": 1
     }
   },
   "mapModdedElementsPre": {
@@ -555,6 +771,12 @@
       "pass": 3
     },
     "terramity": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
+    "cynosure": {
       "enabled": {
         "value": "AUTO"
       },
@@ -616,6 +838,18 @@
       },
       "pass": 3
     },
+    "cynosure": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "antarchy": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "combatroll": {
       "enabled": {
         "value": "AUTO"
@@ -628,15 +862,9 @@
       },
       "pass": 3
     },
-    "watut": {
+    "scguns": {
       "enabled": {
-        "value": "OFF"
-      },
-      "pass": 3
-    },
-    "exposure": {
-      "enabled": {
-        "value": "OFF"
+        "value": "AUTO"
       },
       "pass": 3
     },
@@ -651,12 +879,6 @@
         "value": "AUTO"
       },
       "pass": 3
-    },
-    "xaerominimap": {
-      "enabled": {
-        "value": "OFF"
-      },
-      "pass": 1
     },
     "architectury": {
       "enabled": {
@@ -675,6 +897,24 @@
         "value": "OFF"
       },
       "pass": 3
+    },
+    "watut": {
+      "enabled": {
+        "value": "OFF"
+      },
+      "pass": 3
+    },
+    "exposure": {
+      "enabled": {
+        "value": "OFF"
+      },
+      "pass": 3
+    },
+    "xaerominimap": {
+      "enabled": {
+        "value": "OFF"
+      },
+      "pass": 1
     }
   }
 }

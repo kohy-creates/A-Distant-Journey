@@ -187,7 +187,6 @@
 	],
 	"swapper": {
 		"minecraft:enchanting_table": "enchantinginfuser:enchanting_infuser",
-		"unusualend:infested_end_stone": "majruszsdifficulty:infested_end_stone",
 
 		// Unify Thatch
 		"beachparty:thatch": "quark:thatch",

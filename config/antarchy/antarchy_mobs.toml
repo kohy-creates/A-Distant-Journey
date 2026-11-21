@@ -443,6 +443,36 @@ antsStealFromChests = true
 	#Cooldown multiplier for the Glimmer Queen's royal attack cooldowns (lower = more often).
 	#Range: 0.05 ~ 10.0
 	queenGlimmerCooldownMultiplier = 0.65
+	#Ticks a second decree breach halves the player's max health.
+	#Range: 20 ~ 72000
+	royalDecreeViolationPenaltyTicks = 300
+	#Magic damage dealt by the warning on a first decree breach, before royal damage scaling.
+	#Range: 0.0 ~ 100.0
+	royalDecreeWarningDamage = 4.0
+	#Ticks of Royal Favor granted to players who finish a decree without a breach.
+	#Range: 0 ~ 72000
+	royalFavorTicks = 160
+	#Damage multiplier against the King while a player has Royal Favor.
+	#Range: 1.0 ~ 10.0
+	royalFavorDamageMultiplier = 1.25
+	#Ticks between the King's stomp telegraph and impact.
+	#Range: 1 ~ 100
+	kingStompWindupTicks = 22
+	#Radius in blocks of the King's stomp shockwave. Airborne players are not hit.
+	#Range: 4.0 ~ 64.0
+	kingStompRadius = 18.0
+	#Multiplier on each King decree's active duration.
+	#Range: 0.25 ~ 4.0
+	royalDecreeDurationMultiplier = 1.0
+	#Radius in blocks of the circle players must reach during Close Quarters.
+	#Range: 8.0 ~ 64.0
+	royalCloseQuartersRadius = 22.0
+	#Radius in blocks players must stay outside during Come No Closer.
+	#Range: 4.0 ~ 64.0
+	royalComeNoCloserRadius = 16.0
+	#Blocks a player may drift from their anchor during Stand Your Ground.
+	#Range: 2.0 ~ 64.0
+	royalStandYourGroundDrift = 10.0
 
 [royalMounts]
 	#Chance denominator for a royal egg advancing one hatch stage on a random tick.

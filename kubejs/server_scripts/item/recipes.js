@@ -199,7 +199,6 @@ ServerEvents.recipes((event) => {
 		/mythicmetals:alloy_forge\/forge_orichalcum_ingot/,
 		/mythicmetals:blasting\/blast_orichalcum_ingot/,
 		/mythicmetals:blasting\/blast_mythril_ingot/,
-		'unusualend:pearly_ingot_recipe',
 		'netherite_ingot',
 		'alloy_forgery:netherite_from_gold_and_scrap',
 		'experienceobelisk:metamorpher/netherite_ingot_metamorphosis',
@@ -1146,11 +1145,6 @@ ServerEvents.recipes((event) => {
 		'galosphere:pastel_pink_salt': 'galosphere:polished_pastel_pink_salt',
 		'end_stone': 'cataclysm:polished_end_stone',
 		'basalt': 'polished_basalt',
-		'unusualend:warped_stone': 'unusualend:polished_warped_stone',
-		'unusualend:gneiss': 'unusualend:polished_gneiss',
-		'unusualend:citrine_block': 'unusualend:polished_citrine',
-		'unusualend:raw_purpur_block': 'unusualend:polished_purpur',
-		'unusualend:gloopslate': 'unusualend:polished_gloopslate',
 		'aether_redux:driftshale': 'aether_redux:polished_driftshale',
 		'aether_redux:sentrite': 'aether_redux:polished_sentrite',
 		'create:cut_granite': 'create:polished_cut_granite',
@@ -1181,14 +1175,6 @@ ServerEvents.recipes((event) => {
 
 	// More random - manual implementation
 	const manualApplicationRecipes = {
-		'unusualend:ancient_encased_end_stone': [
-			'end_stone', // first is target block
-			'unusualend:ancient_shard' // then item to apply
-		],
-		'unusualend:ancient_encased_purpur': [
-			'unusualend:polished_purpur',
-			'unusualend:ancient_shard'
-		],
 		'netherexp:weeping_polished_blackstone_bricks': [
 			'polished_blackstone_bricks',
 			'weeping_vines'
@@ -2135,7 +2121,6 @@ ServerEvents.recipes((event) => {
 			/roasted/,
 			'delightful:cactus_steak',
 			'artifacts:eternal_steak',
-			'unusualend:end_blob_jelly',
 			'berry_good:sweet_berry_meatballs',
 			'mynethersdelight:toasts',
 			'ecologics:crab_meat',
@@ -2691,7 +2676,7 @@ ServerEvents.recipes((event) => {
 		{
 			F: 'alloy_forgery:adamantite_forge_casing_forge_controller',
 			C: 'adj:ender_forge_casing',
-			I: 'unusualend:pearlescent_ingot'
+			I: 'majruszsdifficulty:enderium_shard'
 		}
 	).id(`adj:alloy_forge/ender`);
 
@@ -2799,14 +2784,7 @@ ServerEvents.recipes((event) => {
 		'sweety_garden:sorrel_dye',
 		'buzzier_bees:dyes/yellow_dye_from_buttercup',
 		'ars_nouveau:sourceberry_to_purple',
-		'unusualend:chorus_dye',
 		'ars_nouveau:magebloom_to_pink',
-		'unusualend:endstone_sprouts_dye',
-		'unusualend:chorus_roots_dye',
-		'unusualend:chorus_grass_dye',
-		'unusualend:tendrils_dye',
-		'unusualend:bush_dye',
-
 	];
 	removedDyeRecipes.forEach(id => {
 		event.remove({ id: id });
@@ -2846,8 +2824,6 @@ ServerEvents.recipes((event) => {
 	dyeRecipe('ars_nouveau:sourceberry', 'indigo');
 	dyeRecipe('chorus_fruit', 'purple');
 	dyeRecipe('ars_nouveau:magebloom', 'light_blue');
-	dyeRecipe('unusualend:chorus_petal', 'pink');
-	dyeRecipe('unusualend:warped_berries', 'ginger');
 
 	// Attuned Awakened Ender Pearls
 	event.forEachRecipe({ type: 'crafting_shaped', output: /cataclysm\:.*eye/ }, recipe => {
@@ -3096,10 +3072,10 @@ ServerEvents.recipes((event) => {
 				"item": "mythicmetals:star_platinum"
 			},
 			{
-				"item": "unusualend:pearlescent_ingot"
+				"item": "majruszsdifficulty:enderium_shard"
 			},
 			{
-				"item": "unusualend:pearlescent_ingot"
+				"item": "majruszsdifficulty:enderium_shard"
 			},
 			{
 				"item": "ars_nouveau:wilden_tribute"
@@ -3951,7 +3927,6 @@ ServerEvents.recipes((event) => {
 			['mythicmetals:star_platinum', 1],
 			['botania:elementium_ingot', 1],
 			['ancient_aether:valkyrum', 1],
-			['unusualend:pearlescent_ingot', 1],
 			['mythicmetals:unobtainium', 2]
 		],
 		['mythicmetals:celestium_ingot', 1],
@@ -4239,42 +4214,6 @@ ServerEvents.recipes((event) => {
 		[
 			[
 				'4+', 'output', 2
-			]
-		]
-	)
-
-	// Pearlescent Ingot
-	alloyForgeRecipe(
-		[
-			['iron_ingot', 2],
-			['unusualend:shiny_crystal', 1],
-			['unusualend:citrine_chunk', 1],
-			['unusualend:prismalite_gem', 1],
-			['unusualend:enderling_scrap', 1],
-		],
-		['unusualend:pearlescent_ingot', 2],
-		3,
-		20,
-		[
-			[
-				'4+', 'output', 3
-			]
-		]
-	)
-	alloyForgeRecipe(
-		[
-			['raw_iron', 2],
-			['unusualend:shiny_crystal', 1],
-			['unusualend:citrine_chunk', 1],
-			['unusualend:prismalite_gem', 1],
-			['unusualend:enderling_scrap', 1],
-		],
-		['unusualend:pearlescent_ingot', 2],
-		3,
-		20,
-		[
-			[
-				'4+', 'output', 3
 			]
 		]
 	)
@@ -4760,8 +4699,6 @@ ServerEvents.recipes((event) => {
 		'unusal_end:ender_stew_recipe',
 		'alexscaves:vesper_stew',
 		'alexscaves:seething_stew',
-		'unusualend:warped_stew_recipe',
-		'unusualend:blob_stew_recipe',
 		'alexscaves:primordial_soup',
 		'mynethersdelight:crafting/rock_soup',
 		'neapolitan:adzuki_stew',
@@ -5836,7 +5773,6 @@ ServerEvents.recipes((event) => {
 			'mythicmetals:star_platinum_sword',
 			'mythicmetals:orichalcum_sword',
 			'ancient_aether:valkyrum_sword',
-			'unusualend:pearlescent_sword',
 			'mythicmetals:palladium_sword',
 			'botania:elementium_sword'
 		)
@@ -6863,7 +6799,7 @@ ServerEvents.recipes((event) => {
 			'OPG'
 		],
 		{
-			P: 'unusualend:pearlescent_ingot',
+			P: 'majruszsdifficulty:enderium_shard',
 			O: 'obsidian',
 			G: 'gold_ingot',
 			S: 'phantasm:void_crystal_shard'

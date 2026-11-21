@@ -344,10 +344,6 @@ ServerEvents.tags('item', tags => {
 		/constructionwand:.*wand/
 	]);
 
-	tags.remove('forge:ender_pearls', [
-		'unusualend:wandering_pearl'
-	]);
-
 	tags.add('adj:spawn_eggs', [
 		/spawn_egg/,
 		/ars_nouveau:.*_se$/

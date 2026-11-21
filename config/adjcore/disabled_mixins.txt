@@ -27,3 +27,9 @@ com.misanthropy.collections_of_optimizations.mixin.structurify.MixinStructureOve
 com.github.alexmodguy.alexscaves.mixin.EntityMixin
 com.proctoredgames.tiled.mixin.ServerPlayNetworkHandlerMixin
 com.misanthropy.collections_of_optimizations.mixin.jei.RecipeTransferManager
+net.lyof.sortilege.mixin.client.ItemModelShaperMixin
+net.lyof.sortilege.mixin.client.ModelBakeryMixin
+net.lyof.sortilege.mixin.client.DisplayInfoMixin
+net.lyof.sortilege.mixin.client.DeathScreenMixin
+net.lyof.sortilege.mixin.client.GuiGraphicsMixin
+net.lyof.sortilege.mixin.WorldGenRegionMixin

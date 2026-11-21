@@ -6,6 +6,7 @@
   "archiveLookupRequiresPhone": true,
   "sendAntazonUnlockEmail": true,
   "passwordHintAfterFailures": 3,
+  "rewardsOncePerPlayer": true,
   "builtInGames": {
     "chess": true,
     "minesweeper": true,
