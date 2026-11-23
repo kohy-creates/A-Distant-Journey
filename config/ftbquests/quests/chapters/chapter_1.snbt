@@ -34,7 +34,7 @@
 			rotation: 0.0d
 			width: 5.0d
 			x: -7.5d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			height: 6.0d
@@ -42,7 +42,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 12.0d
-			x: -8.0d
+			x: -8.5d
 			y: -1.0d
 		}
 		{
@@ -86,12 +86,49 @@
 		}
 		{
 			height: 1.25d
-			image: "kubejs:block/hellforge_front_on"
+			image: "minecraft:block/fire_1"
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.25d
-			x: -7.0d
-			y: 3.0d
+			x: 4.6734197141965055d
+			y: 4.331358632822344d
+		}
+		{
+			height: 1.25d
+			image: "minecraft:block/fire_1"
+			quest_enhance_exclude_from_box_selection: false
+			rotation: 0.0d
+			width: 1.25d
+			x: -3.131253661924184d
+			y: -2.688781254724489d
+		}
+		{
+			height: 1.25d
+			image: "minecraft:block/fire_1"
+			quest_enhance_exclude_from_box_selection: false
+			rotation: 0.0d
+			width: 1.25d
+			x: -3.484985811707226d
+			y: 2.9165304754753976d
+		}
+		{
+			height: 1.25d
+			image: "minecraft:block/fire_1"
+			quest_enhance_exclude_from_box_selection: false
+			rotation: 0.0d
+			width: 1.25d
+			x: 2.3745764096389976d
+			y: 4.329919153342786d
+		}
+		{
+			dependency: "6B4A4956BDF1E1AB"
+			height: 2.0d
+			image: "minecraft:item/ender_eye"
+			quest_enhance_exclude_from_box_selection: false
+			rotation: 0.0d
+			width: 2.0d
+			x: 7.0d
+			y: 2.0d
 		}
 	]
 	order_index: 1
@@ -152,6 +189,19 @@
 		}
 		{
 			dependencies: ["336C2A75C5BFF1B8"]
+			description: [
+				"### HINT"
+				""
+				"&6Brewing&r has been entirely reworked!"
+				""
+				"The base item for every potion now is just a plain and simple &9Water Bottle&r. Potions take multiple ingredients to make, which can be added in any order. "
+				""
+				"Once one ingredient is added to the bottle, it turns into an &5Awkward Potion&r. Once all the ingredients are added, it will turn into the desired potion!"
+				"{@pagebreak}"
+				"### HINT 2"
+				""
+				"Due to the increased number of ingredients needed to brew a Potion, &6brewing is much quicker in comparison with vanilla&r!"
+			]
 			entity_vis_size: 1.0f
 			id: "112388B5EDB9C9D2"
 			quest_enhance_disable_scroll_paging: false
@@ -270,33 +320,8 @@
 				type: "item"
 			}]
 			title: "Awakened"
-			x: 6.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["6B4A4956BDF1E1AB"]
-			entity_vis_size: 1.0f
-			icon: "cataclysm:desert_eye"
-			id: "26A9109005EE03BF"
-			optional: true
-			quest_enhance_disable_scroll_paging: false
-			shape: "rsquare"
-			subtitle: "Attune an Awakened Ender Pearl towards any target"
-			tasks: [{
-				id: "6B372FC31E51D4D5"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "adj:attuned_pearls"
-					}
-				}
-				title: "Any Attuned Pearl"
-				type: "item"
-			}]
-			title: "Wayfinder"
-			x: 7.5d
-			y: 4.0d
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["236739201289D4DD"]
@@ -459,8 +484,8 @@
 				}
 			]
 			title: "Pizza Hunt"
-			x: -1.0d
-			y: 5.0d
+			x: -1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["612A31333B1F6C1D"]
@@ -490,13 +515,20 @@
 				}
 			]
 			title: "To The Skies!"
-			x: -3.0d
-			y: 5.0d
+			x: -4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["19E87E63C5C295AE"]
 			entity_vis_size: 1.0f
-			icon: "netherexp:ecto_soul_sand"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "wither"
+					DisplayMobScale: 1.5d
+				}
+			}
 			id: "5A24E62380261206"
 			quest_enhance_disable_scroll_paging: false
 			subtitle: "Summon a Wither"
@@ -522,9 +554,9 @@
 				to_observe: "minecraft:wither"
 				type: "observation"
 			}]
-			title: "Withering Heights"
-			x: 4.15d
-			y: 5.45d
+			title: "The Beginning?"
+			x: 1.0d
+			y: 7.5d
 		}
 		{
 			dependency_requirement: "one_completed"
@@ -600,6 +632,19 @@
 			icon: "kubejs:eye_of_cinders"
 			id: "44BE3D4079FF34DF"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0A69D09F9B7E442C"
+				item: {
+					Count: 1
+					id: "trofers:small_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "adj:trophies/quest/chapter_1"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Slay the Wither and collect the Eye of Cinders"

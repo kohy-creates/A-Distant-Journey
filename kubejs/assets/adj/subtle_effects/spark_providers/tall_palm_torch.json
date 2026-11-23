@@ -1,0 +1,26 @@
+{
+	"states": [
+		{
+			"name": "beachparty:tall_palm_torch",
+			"Properties": {
+				"half": "upper"
+			}
+		}
+	],
+	"options": {
+		"preset": "torch",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 16743168
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 7682048
+				}
+			]
+		}
+	}
+}

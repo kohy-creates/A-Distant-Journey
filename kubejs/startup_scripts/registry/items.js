@@ -38,7 +38,7 @@ global.itemEffects = {
 
 				ctx.modify(
 					attributeKey,
-					'749eb13f-84c3-4ef3-ab92-f373fa30dd28',
+					global.uuid('the_community'),
 					value,
 					values[0]
 				);
@@ -77,31 +77,7 @@ global.itemEffects = {
 				lvl = nbt.adj_chalice_blood_amount;
 			}
 			const regenAmounts = [1, 1.2, 1.4, 1.7, 2.1, 2.5, 3.1, 3.8, 4.5, 5.2, 6];
-			ctx.modify('adjcore:generic.health_regeneration', '03adf3eb-6c4f-47e9-9539-705b3c1fca4f', regenAmounts[lvl], "addition")
-		}
-	},
-
-	elsaCrossbow: {
-		/**
-		 * 
-		 * @param {Internal.ProjectileHitBlockEventJS} event 
-		 */
-		blockHit: function (event) {
-			const arrow = event.getArrow();
-			arrow.level.spawnParticles('minecraft:smoke', true, arrow.x, arrow.y - 0.1, arrow.z, 0.15, 0.15, 0.15, 10, 0.01);
-			arrow.level.spawnParticles('cataclysm:spark', true, arrow.x, arrow.y - 0.1, arrow.z, 0, 0, 0, 4, 0.08);
-			arrow.kill();
-		},
-		/**
-		 * 
-		 * @param {Internal.CrossbowUseContext} event 
-		 */
-		shoot: function (event) {
-			const player = event.getPlayer();
-			if (player) {
-				player.level.playSound(null, player.x, player.y + player.getEyeHeight(), player.z, 'minecraft:block.anvil.place', 'players', 1, global.getRandomNumber(0.95, 1.2));
-				player.getPersistentData().elsa_crossbow_tickdown = 1;
-			}
+			ctx.modify(global.attribute('health_regen'), global.uuid('chalice_of_blood'), regenAmounts[lvl], "addition")
 		}
 	},
 
@@ -125,7 +101,27 @@ global.itemEffects = {
 						amount++;
 					}
 				});
-				ctx.modify('generic.attack_damage', '816b42f4-3255-4c02-8ee7-9cfe7ddc1e50', amount, 'addition');
+				ctx.modify(global.attribute('attack_damage'), global.uuid('ring_of_unity'), amount, 'addition');
+			}
+		}
+	},
+
+	warriorsTrophy: {
+		/**
+		 * @param {Internal.SlotContext} slotContext
+		 * @param {Internal.ItemStack} stack
+		 */
+		tick: function (slotContext, stack) {
+			global.updateCurioEveryTick(stack);
+		},
+		/**
+		 * 	
+		 * @param {Internal.CapabilityCurios$AttributeModificationContext_} ctx
+		 */
+		attributeTick: function (ctx) {
+			const wearer = ctx.slotContext.wearer;
+			if (wearer instanceof $Player && global.getHealthPercent(wearer) >= 0.666) {
+				ctx.modify(global.attribute('crit_chance'), global.uuid('warriors_trophy'), 0.15, 'addition');
 			}
 		}
 	},
@@ -147,7 +143,7 @@ global.itemEffects = {
 				let amount = 1;
 				const currentY = wearer.y;
 				amount += Math.ceil(-(x / 14) + (62 / 14));
-				ctx.modify('generic.armor', '2db7c219-f7bd-4fa9-a98a-cd660b9e9a56', amount, 'addition');
+				ctx.modify(global.attribute('armor'), global.uuid('heart_of_stone'), amount, 'addition');
 			}
 		}
 	},
@@ -182,7 +178,7 @@ global.rings = {
 		color: '#FF1100',
 		attributes: {
 			gold: [
-				['attributeslib:mining_speed', 'f47ac10b-58cc-4372-a567-0e02b2c3d401', 0.04, 'multiply_base']
+				['mining_speed', 0.04, 'multiply_base']
 			]
 		}
 	},
@@ -191,7 +187,7 @@ global.rings = {
 		color: '#1044A3',
 		attributes: {
 			gold: [
-				['attributeslib:experience_gained', 'b31d8e92-3c41-4a18-9d8a-1a2b3c4d5e02', 0.1, 'addition']
+				['experience_gained', 0.1, 'addition']
 			]
 		}
 	},
@@ -200,7 +196,7 @@ global.rings = {
 		color: '#11B03E',
 		attributes: {
 			gold: [
-				['generic.luck', 'a88c7d61-2f19-4b8a-8c7d-6e5d4c3b2a03', 1.0, 'addition']
+				['luck', 1.0, 'addition']
 			]
 		}
 	},
@@ -209,7 +205,7 @@ global.rings = {
 		color: '#4CEDD3',
 		attributes: {
 			gold: [
-				['attributeslib:crit_chance', 'd99f8e72-1a2b-3c4d-5e6f-7a8b9c0d1e04', 0.04, 'addition']
+				['crit_chance', 0.04, 'addition']
 			]
 		}
 	},
@@ -218,7 +214,7 @@ global.rings = {
 		color: '#E0122B',
 		attributes: {
 			gold: [
-				['generic.attack_damage', 'c12a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b05', 1.0, 'addition']
+				['attack_damage', 1.0, 'addition']
 			]
 		}
 	},
@@ -227,7 +223,7 @@ global.rings = {
 		color: '#9A5CC6',
 		attributes: {
 			gold: [
-				['ars_nouveau:ars_nouveau.perk.spell_damage', 'e54b3c2a-1d0e-9f8a-7b6c-5d4e3f2a1b06', 4.0, 'addition']
+				['spell_damage', 4.0, 'addition']
 			]
 		}
 	},
@@ -236,7 +232,7 @@ global.rings = {
 		color: '#0B4C42',
 		attributes: {
 			gold: [
-				['generic.movement_speed', 'f12e3d4c-5b6a-7f8e-9d0c-1a2b3c4d5e07', 0.04, 'multiply_total']
+				['movement_speed', 0.04, 'multiply_total']
 			]
 		}
 	},
@@ -245,13 +241,13 @@ global.rings = {
 		color: '#FFFFFF',
 		attributes: {
 			gold: [
-				['attributeslib:mining_speed', 'a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c08', 0.04, 'multiply_base'],
-				['attributeslib:experience_gained', 'b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d09', 0.1, 'addition'],
-				['generic.luck', 'c3d4e5f6-a78b-9c0d-1e2f-3a4b5c6d7e10', 1.0, 'addition'],
-				['attributeslib:crit_chance', 'd4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f11', 0.04, 'addition'],
-				['generic.attack_damage', 'e5f6a78b-9c0d-1e2f-3a4b-5c6d7e8f9a12', 1.0, 'addition'],
-				['ars_nouveau:ars_nouveau.perk.spell_damage', 'f6a78b9c-0d1e-2f3a-4b5c-6d7e8f9a0b13', 4.0, 'addition'],
-				['generic.movement_speed', 'a78b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c14', 0.04, 'multiply_total']
+				['mining_speed', 0.04, 'multiply_base'],
+				['experience_gained', 0.1, 'addition'],
+				['luck', 1.0, 'addition'],
+				['crit_chance', 0.04, 'addition'],
+				['attack_damage', 1.0, 'addition'],
+				['spell_damage', 4.0, 'addition'],
+				['movement_speed', 0.04, 'multiply_total']
 			]
 		}
 	}
@@ -420,64 +416,59 @@ StartupEvents.registry('item', registry => {
 	 */
 	function createCurio(id, name, rarity, tooltipLines, capabilityBuilder) {
 		if (tooltipLines) {
-			global.curioTooltips[id] = tooltipLines;
+			global.curioTooltips[`kubejs:${id}`] = tooltipLines;
 		}
 		return registry.create(id)
-			.attachCuriosCapability(capabilityBuilder)
+			.attachCuriosCapability(global.getOrDefault(capabilityBuilder, CuriosJSCapabilityBuilder.create()))
 			.unstackable()
 			.displayName(name)
 			.rarity(global.getOrDefault(rarity, 'uncommon'))
 			.tag('curios:accessory');
 	}
 
-	registry.create('bloodstone_choker')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.addAttribute(
-					'combatroll:recharge',
-					'b888ea99-c203-42db-a337-4898c812aaad',
-					0.35,
-					'multiply_base'
-				)
-				.addAttribute(
-					'adjcore:generic.damage_reduction',
-					'b888ea99-c203-42db-a337-4898c812aaad',
-					0.06,
-					'addition'
-				)
-				.addAttribute(
-					'generic.movement_speed',
-					'b888ea99-c203-42db-a337-4898c812aaad',
-					0.08,
-					'multiply_base'
-				)
-				.addAttribute(
-					'adjcore:player.damage_dealt',
-					'b888ea99-c203-42db-a337-4898c812aaad',
-					0.12,
-					'multiply_base'
-				)
-		)
-		.unstackable()
-		.tooltip(Text.gray('Major boost to most physical stats'))
-		.tooltip(Text.gray('(and magic damage for some reason)'))
-		.tooltip(Text.gray('Dashing gives 10 extra absorption'))
-		.tag('curios:accessory')
-		.rarity('epic');
+	createCurio('bloodstone_choker', 'Bloodstone Choker', 'epic',
+		[
+			'Major boost to most physical stats',
+			'(and magic damage for some reason)',
+			'Dashing gives 10 extra absorption'
+		], CuriosJSCapabilityBuilder.create()
+			.addAttribute(
+				global.attribute('dash_recharge'),
+				global.uuid('bloodstone_choker'),
+				0.35,
+				'multiply_base'
+			)
+			.addAttribute(
+				global.attribute('damage_reduction'),
+				global.uuid('bloodstone_choker'),
+				0.06,
+				'addition'
+			)
+			.addAttribute(
+				global.attribute('movement_speed'),
+				global.uuid('bloodstone_choker'),
+				0.08,
+				'multiply_base'
+			)
+			.addAttribute(
+				global.attribute('damage'),
+				global.uuid('bloodstone_choker'),
+				0.12,
+				'multiply_base'
+			)
+	);
 
-	registry.create('chalice_of_blood')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.modifyAttribute(ctx => global.itemEffects.chaliceOfBlood.attributeTick(ctx))
-				// .curioTick((slotContext, stack) => global.itemEffects.chaliceOfBlood.tick(slotContext, stack))
-				.canEquipFromUse((slotContext, stack) => false)
-		)
-		.unstackable()
-		.tooltip(Text.gray('Right-click to prick yourself on its sharp gems,'))
-		.tooltip(Text.gray('pouring some of your blood inside'))
-		.tooltip(Text.gray('The Chalice will pour some of it back to you very slowly,'))
-		.tooltip(Text.gray('increasing your health regeneration the more you prick yourself'))
-		.tooltip(Text.gray('If you die to The Chalice, it won\'t count as an upgrade'))
+	createCurio('chalice_of_blood', 'Chalice of Blood', 'epic', [
+		'Right-click to prick yourself on its sharp gems,',
+		'pouring some of your blood inside',
+		'The Chalice will pour some of it back to you very slowly,',
+		'increasing your health regeneration the more you prick yourself',
+		'If you die to The Chalice, it won\'t count as an upgrade'
+	], CuriosJSCapabilityBuilder.create()
+		.modifyAttribute(ctx => global.itemEffects.chaliceOfBlood.attributeTick(ctx))
+		// .curioTick((slotContext, stack) => global.itemEffects.chaliceOfBlood.tick(slotContext, stack))
+		.canEquipFromUse((slotContext, stack) => false)
+	)
 		.modelJson({
 			"parent": "kubejs:item/chalice_of_blood_0",
 			"elements": [],
@@ -488,9 +479,7 @@ StartupEvents.registry('item', registry => {
 				{ "predicate": { "custom_model_data": 4 }, "model": "kubejs:item/chalice_of_blood_4" },
 				{ "predicate": { "custom_model_data": 5 }, "model": "kubejs:item/chalice_of_blood_5" }
 			]
-		})
-		.tag('curios:accessory')
-		.rarity('epic');
+		});
 
 	function createRing(name, gem, base, color, curiosCapability) {
 		let id = `${base}_${gem.replace(':', '_')}_ring`;
@@ -499,21 +488,13 @@ StartupEvents.registry('item', registry => {
 			gold: 'rare',
 			netherite: 'epic'
 		};
-		registry.create(id)
-			.attachCuriosCapability(curiosCapability)
-			.unstackable()
+
+		createCurio(id, name, rarity[base], null, curiosCapability)
 			.textureJson({
 				'layer0': `kubejs:item/ring_base_${base}`,
 				'layer1': 'kubejs:item/ring_base_gem'
 			})
-			.color(1, color)
-			.displayName(name)
-			.tag('curios:accessory')
-			.rarity(rarity[base]);
-	}
-
-	function ringName(baseName, baseMaterial) {
-		return `${Utils.toTitleCase(baseMaterial)} ${baseName}`;
+			.color(1, color);
 	}
 
 	for (let [material, entry] of Object.entries(global.rings)) {
@@ -521,14 +502,14 @@ StartupEvents.registry('item', registry => {
 			let capability = CuriosJSCapabilityBuilder.create();
 			attributes.forEach(attrArray => {
 				capability.addAttribute(
-					attrArray[0],
-					attrArray[1],
+					global.attribute(attrArray[0]),
+					global.uuid(material),
 					attrArray[2],
 					attrArray[3]
 				)
 			});
 			createRing(
-				ringName(entry.name, base),
+				`${Utils.toTitleCase(entry.name)} ${base}`,
 				material,
 				base,
 				entry.color,
@@ -537,104 +518,75 @@ StartupEvents.registry('item', registry => {
 		}
 	}
 
-	registry.create('kiketsu_card')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.displayName('Kiketsu Matriarch\'s Threat')
-		.unstackable()
-		.tooltip(Text.gray('Killed mobs sometimes drop some resources'))
-		.tag('curios:accessory')
-		.rarity('rare');
+	createCurio('kiketsu_card', 'Kiketsu Matriarch\'s Threat', 'rare', [
+		'Killed mobs sometimes drop some resources'
+	]);
 
-	registry.create('withering_necklace')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('withering_necklace', 'Necklace of Withering Heights', null, [
+		'Healed players are cleansed of Wither and Poison',
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('healing_power'),
+			global.uuid('withering_necklace'),
+			1,
+			'addition'
 		)
-		.displayName('Necklace of Withering Heights')
-		.unstackable()
-		.tooltip(Text.gray('Attacks inflict Wither'))
-		.tooltip(Text.gray('Regain some health as your enemies wither'))
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	);
 
-	registry.create('rose_ring')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.onEquip(((slotContext, oldStack, newStack) => global.itemEffects.roseRingOnEquip(slotContext, oldStack, newStack, false)))
-		)
-		.displayName('Ring of Roses')
-		.unstackable()
-		.tooltip(Text.gray('Reflects some damage back at the attackers'))
-		.rarity('uncommon')
-		.tag('curios:accessory');
+	createCurio('rose_ring', 'Rose Ring', 'uncommon', [
+		'Reflects some damage back at the attackers'
+	], CuriosJSCapabilityBuilder.create()
+		.onEquip(((slotContext, oldStack, newStack) => global.itemEffects.roseRingOnEquip(slotContext, oldStack, newStack, false)))
+	);
 
-	registry.create('wither_rose_ring')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.onEquip(((slotContext, oldStack, newStack) => global.itemEffects.roseRingOnEquip(slotContext, oldStack, newStack, true)))
-		)
-		.unstackable()
-		.displayName('Dead Ring of Roses')
-		.tooltip(Text.gray('Reflects more damage back at the attackers'))
-		.tooltip(Text.gray('and has a chance to apply weak damage over time'))
-		.tag('curios:accessory')
-		.rarity('rare');
+	createCurio('wither_rose_ring', 'Ring of Thorns', 'rare', [
+		'Reflects damage back at the attackers',
+		'Heals for a portion of reflected damage'
+	], CuriosJSCapabilityBuilder.create()
+		.onEquip(((slotContext, oldStack, newStack) => global.itemEffects.roseRingOnEquip(slotContext, oldStack, newStack, true)))
+	);
 
-	registry.create('ring_of_fire')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tooltip(Text.gray('Deal 4 extra damage to mobs on fire'))
-		.tag('curios:accessory')
-		.rarity('epic');
+	createCurio('ring_of_fire', 'Ring of Fire', 'epic', [
+		'Deal 4 extra damage to mobs on fire'
+	]);
 
-	registry.create('shield_of_fire')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.addAttribute(
-					'generic.armor',
-					'e32b960b-919a-42f8-86fb-70cac2687a3e',
-					2,
-					'addition'
-				)
-				.addAttribute(
-					'generic.knockback_resistance',
-					'e32b960b-919a-42f8-86fb-70cac2687a3e',
-					0.6,
-					'addition'
-				)
+	createCurio('shield_of_fire', 'Shield of Fire', 'epic', [
+		'Defense increased by 4 while on fire',
+		'Grants immunity to fire'
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('armor'),
+			global.uuid('shield_of_fire'),
+			2,
+			'addition'
 		)
-		.unstackable()
-		.tooltip(Text.gray('Defense increased by 4 while on fire'))
-		.tooltip(Text.gray('Grants immunity to fire'))
-		.tag('curios:accessory')
-		.rarity('epic');
+		.addAttribute(
+			global.attribute('knockback_resistance'),
+			global.uuid('shield_of_fire'),
+			0.6,
+			'addition'
+		)
+	);
 
-	registry.create('palladium_hero_aegis')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.curioTick((slotContext, stack) => global.itemEffects.palladiumHeroAegis.tick(slotContext, stack))
-				.addAttribute(
-					'generic.armor',
-					'e32b960b-919a-42f8-86fb-70cac2687a3e',
-					6,
-					'addition'
-				)
-				.addAttribute(
-					'generic.knockback_resistance',
-					'e32b960b-919a-42f8-86fb-70cac2687a3e',
-					0.8,
-					'addition'
-				)
+	createCurio('palladium_hero_aegis', 'Palladium Hero Aegis', 'epic', [
+		'Defense increased by 6 while on fire',
+		'Absorbs 25% of damage done to players on your team while above 25% health',
+		'Grants immunity to fire'
+	], CuriosJSCapabilityBuilder.create()
+		.curioTick((slotContext, stack) => global.itemEffects.palladiumHeroAegis.tick(slotContext, stack))
+		.addAttribute(
+			global.attribute('armor'),
+			global.uuid('palladium_hero_aegis'),
+			6,
+			'addition'
 		)
-		.unstackable()
-		.tooltip(Text.gray('Defense increased by 6 while on fire'))
-		.tooltip(Text.gray('Absorbs 25% of damage done to players on your team while above 25% health'))
-		.tooltip(Text.gray('Grants immunity to fire'))
-		.tag('curios:accessory')
-		.rarity('epic');
+		.addAttribute(
+			global.attribute('knockback_resistance'),
+			global.uuid('palladium_hero_aegis'),
+			0.8,
+			'addition'
+		)
+	);
 
 	registry.create('pocketful_of_sunshine')
 		.attachCuriosCapability(
@@ -648,13 +600,13 @@ StartupEvents.registry('item', registry => {
 		.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
-					'generic.luck',
+					global.attribute('luck'),
 					'05c70914-fe84-420d-9a2e-dbefeb6dc4a4',
 					2,
 					'addition'
 				)
 				.addAttribute(
-					'generic.luck',
+					global.attribute('luck'),
 					'97ba7618-1b3d-4e63-bd58-42a6646d6618',
 					0.1,
 					'multiply_total'
@@ -683,7 +635,7 @@ StartupEvents.registry('item', registry => {
 		.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.max_mana',
+					global.attribute('max_mana'),
 					'19ddfd7a-2a97-48e4-9946-b458628d8a0f',
 					20,
 					'addition'
@@ -693,33 +645,21 @@ StartupEvents.registry('item', registry => {
 		.tag('curios:accessory')
 		.rarity('uncommon');
 
-	registry.create('bone_glove')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
-
-	registry.create('celestial_emblem')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.spell_damage',
-					'91d29ded-2581-47f1-ac3b-006f51809326',
-					20,
-					'addition'
-				)
-				.addAttribute(
-					'adjcore:player.mana_cost_reduction',
-					'91d29ded-2581-47f1-ac3b-006f51809326',
-					0.15,
-					'addition'
-				)
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('celestial_emblem', 'Celestial Emblem', null, null,
+		CuriosJSCapabilityBuilder.create()
+			.addAttribute(
+				global.attribute('spell_damage'),
+				global.uuid('celestial_emblem'),
+				40,
+				'addition'
+			)
+			.addAttribute(
+				global.attribute('mana_cost'),
+				global.uuid('celestial_emblem'),
+				0.17,
+				'addition'
+			)
+	);
 
 	/*
 	registry.create('high_test_fishing_line')
@@ -746,6 +686,14 @@ StartupEvents.registry('item', registry => {
 		.tag('curios:accessory')
 		.rarity('uncommon');
 
+	registry.create('tackle_box')
+		.attachCuriosCapability(
+			CuriosJSCapabilityBuilder.create()
+		)
+		.unstackable()
+		.tag('curios:accessory')
+		.rarity('uncommon');
+
 	registry.create('angler_tackle_bag')
 		.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
@@ -759,7 +707,7 @@ StartupEvents.registry('item', registry => {
 		.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.max_mana',
+					global.attribute('max_mana'),
 					'19ddfd7a-2a97-48e4-9946-b458628d8a0f',
 					20,
 					'addition'
@@ -773,7 +721,7 @@ StartupEvents.registry('item', registry => {
 		.attachCuriosCapability(
 			CuriosJSCapabilityBuilder.create()
 				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.mana_regen',
+					global.attribute('mana_regen'),
 					'aa2ccf9c-0527-473f-9dd2-74f64d9303b7',
 					20,
 					'addition'
@@ -800,11 +748,11 @@ StartupEvents.registry('item', registry => {
 		return base;
 	}
 
-	createCurio('mana_flower', 'Mana Flower', null, manaFlowerTooltip,
+	createCurio('mana_flower', 'Mana Flower', null, manaFlowerTooltip(),
 		CuriosJSCapabilityBuilder.create()
 	);
 
-	createCurio('arcane_flower', 'Arcane Flower', null, manaFlowerTooltip,
+	createCurio('arcane_flower', 'Arcane Flower', null, manaFlowerTooltip(),
 		CuriosJSCapabilityBuilder.create()
 			.addAttribute(
 				global.attribute('spell_damage'),
@@ -818,7 +766,7 @@ StartupEvents.registry('item', registry => {
 		CuriosJSCapabilityBuilder.create()
 	);
 
-	createCurio('magnet_flower', 'Magnet Flower', null, manaFlowerTooltip,
+	createCurio('magnet_flower', 'Magnet Flower', null, manaFlowerTooltip(3, 'Increases item pickup range'),
 		CuriosJSCapabilityBuilder.create()
 			.addAttribute(
 				global.attribute('pickup_range'),
@@ -830,16 +778,16 @@ StartupEvents.registry('item', registry => {
 
 	createCurio('moon_charm', 'Moon Charm', null, [
 		'Transforms the wearer into a werewolf during nighttime'
-	], CuriosJSCapabilityBuilder.create());
+	]);
 
 	createCurio('moon_shell', 'Moon Shell', null, [
 		'Transforms the wearer into a werewolf during nighttime',
 		'Transforms the wearer into a melfork while in the water'
-	], CuriosJSCapabilityBuilder.create());
+	]);
 
 	createCurio('neptunes_shell', 'Neptune\'s Shell', null, [
 		'Transforms the wearer into a melfork while in the water'
-	], CuriosJSCapabilityBuilder.create());
+	]);
 
 	createCurio('celestial_shell', 'Celestial Shell', null, [
 		'Transforms the wearer into a werewolf during nighttime',
@@ -871,21 +819,14 @@ StartupEvents.registry('item', registry => {
 		)
 	);
 
-	registry.create('ring_of_greed')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('ring_of_greed', 'Greedy Ring', 'epic', [
+		'Killed mobs drop some resources',
+		'Bosses will drop extra resources when killed'
+	]);
 
-	registry.create('shiny_stone')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('shiny_stone', 'Shiny Stone', 'uncommon', [
+		'Increases healing power by 3 while standing still',
+	]);
 
 	createCurio('soaring_insignia', 'Soaring Insignia', 'epic', [
 		'Boost flight time of equipped wings'
@@ -899,176 +840,137 @@ StartupEvents.registry('item', registry => {
 			)
 	);
 
-	registry.create('tackle_box')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('obsidian_necklace', 'Obsidian Necklace', 'uncommon', [
+		'Grants immunity to fire blocks'
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('armor_pierce'),
+			global.uuid('obsidian_necklace'),
+			5,
+			'addition'
+		));
 
-	registry.create('obsidian_necklace')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('insulated_cuffs', 'Insulated Cuffs', 'uncommon', [
+		'Attacks slow down and freeze enemies'
+	]);
 
-	registry.create('wooden_pendant')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('warriors_trophy', 'Warrior\'s Trophy', 'rare', [
+		'15% increased critical strike chance while above 66% of life'
+	], CuriosJSCapabilityBuilder.create()
+		.modifyAttribute(ctx => global.itemEffects.warriorsTrophy.attributeTick(ctx))
+		.curioTick((slotContext, stack) => global.itemEffects.warriorsTrophy.tick(slotContext, stack))
+	);
 
-	registry.create('insulated_cuffs')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('raptor_claws', 'Raptor Claws', 'uncommon', null,
+		CuriosJSCapabilityBuilder.create()
+			.addAttribute(
+				global.attribute('attack_speed'),
+				global.uuid('raptor_claws'),
+				0.12,
+				'multiply_base'
+			)
+			.addAttribute(
+				global.attribute('armor_pierce'),
+				global.uuid('raptor_claws'),
+				5,
+				'addition'
+			)
+	);
 
-	registry.create('warriors_trophy')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('glacial_claws', 'Glacial Claws', 'uncommon', [
+		'Attacks slow down and freeze enemies'
+	],
+		CuriosJSCapabilityBuilder.create()
+			.addAttribute(
+				global.attribute('attack_speed'),
+				global.uuid('glacial_claws'),
+				0.12,
+				'multiply_base'
+			)
+			.addAttribute(
+				global.attribute('armor_pierce'),
+				global.uuid('glacial_claws'),
+				5,
+				'addition'
+			)
+	);
 
-	registry.create('raptor_claws')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.addAttribute(
-					'generic.attack_speed',
-					'e3c1788b-65ae-4c3e-bacd-8e712f54740d',
-					0.12,
-					'multiply_base'
-				)
-				.addAttribute(
-					'attributeslib:armor_pierce',
-					'e3c1788b-65ae-4c3e-bacd-8e712f54740d',
-					5,
-					'addition'
-				)
+	createCurio('starstruck_necklace', 'Starstruck Necklace', 'uncommon', [
+		'Releases bees, douses the user in honey and increases movement speed when damaged'
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('armor_pierce'),
+			global.uuid('starstruck_necklace'),
+			10,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	);
 
-	registry.create('glacial_claws')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.addAttribute(
-					'generic.attack_speed',
-					'001d818e-0b66-4a25-8cc5-f228a2255d5f',
-					0.12,
-					'multiply_base'
-				)
-				.addAttribute(
-					'attributeslib:armor_pierce',
-					'001d818e-0b66-4a25-8cc5-f228a2255d5f',
-					5,
-					'addition'
-				)
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('seed_of_hope', 'Seed of Hope', 'uncommon', [
+		'Planting saplings increases movement speed and health regeneration'
+	]);
 
-	registry.create('starstruck_necklace')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('tide_stone', 'Tide Stone', 'uncommon', [
+		'Dealing magic damage restores a small amount of mana'
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('max_mana'),
+			global.uuid('tide_stone'),
+			20,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	);
 
-	registry.create('seed_of_hope')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('mana_bauble', 'Mana Bubble', 'uncommon', null, CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('max_mana'),
+			global.uuid('mana_bauble'),
+			10,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	);
 
-	registry.create('tide_stone')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.max_mana',
-					'3937ad46-de21-4c4f-aa3c-42160a3775fd',
-					20,
-					'addition'
-				)
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('ring_of_unity', 'Ring of Unity', 'uncommon', [
+		'Increases damage by 1',
+		'Increases damage by additional 1 for every nearby player who also wears it'
+	],
+		CuriosJSCapabilityBuilder.create()
+			.curioTick((slotContext, stack) => global.itemEffects.ringOfUnity.tick(slotContext, stack))
+			.modifyAttribute((ctx) => global.itemEffects.ringOfUnity.attributeTick(ctx))
+	);
 
-	registry.create('mana_bubble')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.addAttribute(
-					'ars_nouveau:ars_nouveau.perk.max_mana',
-					'cb06b9ee-2d7f-4f42-84c9-79d9ffbb474a',
-					10,
-					'addition'
-				)
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	registry.create('leviathan_tooth')
+		.rarity('epic');
 
-	registry.create('ring_of_unity')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.curioTick((slotContext, stack) => global.itemEffects.ringOfUnity.tick(slotContext, stack))
-				.modifyAttribute((ctx) => global.itemEffects.ringOfUnity.attributeTick(ctx))
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	registry.create('dragon_scale')
+		.rarity('epic');
 
-	registry.create('leviathan_tooth_necklace')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.addAttribute(
-					'attributeslib:armor_pierce',
-					'84e4af6d-272a-49ed-a72d-6d30de53efbc',
-					12,
-					'addition'
-				)
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('leviathan_tooth_necklace', 'Leviathan Tooth Necklace', 'uncommon', null,
+		CuriosJSCapabilityBuilder.create()
+			.addAttribute(
+				global.attribute('armor_pierce'),
+				global.uuid('leviathan_tooth_necklace'),
+				12,
+				'addition'
+			)
+	);
 
-	registry.create('crietz')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('crietz', 'Criez', 'uncommon', [
+		'Critical strikes release damaging sparks'
+	]);
 
-	registry.create('heart_of_stone')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-				.curioTick((slotContext, stack) => global.itemEffects.heartOfStone.tick(slotContext, stack))
-				.modifyAttribute((ctx) => global.itemEffects.heartOfStone.attributeTick(ctx))
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('heart_of_stone', 'Heart of Stone', 'uncommon', [
+		'Defense increases based on depth'
+	],
+		CuriosJSCapabilityBuilder.create()
+			.curioTick((slotContext, stack) => global.itemEffects.heartOfStone.tick(slotContext, stack))
+			.modifyAttribute((ctx) => global.itemEffects.heartOfStone.attributeTick(ctx))
+	);
 
 	registry.create('a_very_fine_item')
 		.displayName('A Very Fine Item')
 		.unstackable()
-		.rarity('rare');
+		.rarity('epic');
 
 	registry.create('gloopy_bow', 'bow')
 		.bow(bow => { })
@@ -1078,109 +980,186 @@ StartupEvents.registry('item', registry => {
 		.tooltip(Text.gray(''))
 		.rarity('uncommon');
 
-	registry.create('alchemist_glove')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('alchemist_glove', 'Alchemist\'s Glove', 'uncommon', [
+		'Healing spells will heal 1 additional life',
+		'Drinking healing potions will also heal every nearby player for a third of the amount'
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('healing_power'),
+			global.uuid('alchemist_glove'),
+			1,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	);
 
-	registry.create('buzzing_crown')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('buzzing_crown', 'Buzzing Crown', 'uncommon', [
+		'Healing spells will heal 1 additional life',
+		'Healed players are doused in honey'
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('healing_power'),
+			global.uuid('buzzing_crown'),
+			1,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	);
 
-	registry.create('celestial_blessing')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('celestial_blessing', 'Rune of Power', 'epic',
+		manaFlowerTooltip(5, [
+			'Spell power increases as your mana decreases',
+			'For up to 40% more damage when at 0 mana'
+		])
+	);
 
-	registry.create('concussive_glove')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('concussive_glove', 'Concussive Glove', 'uncommon', [
+		'Healing spells will heal 1 additional life',
+		'Melee hits stun mobs for a short time'
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('healing_power'),
+			global.uuid('concussive_glove'),
+			1,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	);
 
-	registry.create('corrupted_ring')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('corrupted_ring', 'Corrupted Ring', 'uncommon', [
+		'Healing spells will heal you for a small portion of healing done to other players',
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('max_health'),
+			global.uuid('corrupted_ring'),
+			-20,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+		.addAttribute(
+			global.attribute('healing_power'),
+			global.uuid('corrupted_ring'),
+			-1,
+			'addition'
+		)
+	);
 
-	registry.create('damage_blessing')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('damage_blessing', 'Sigil of Wrath', 'epic', [
+		'Dealing damage builds wrath',
+		'Each stack of wrath decreases your defense by 1 and increases your damage by 2%',
+		'Upon reaching 10 stacks all wrath will be converted into a 40% damage boost buff and then reset'
+	]);
 
-	registry.create('highlander_blessing')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('highlander_blessing', 'Sigil of Wind', 'epic', [
+		'Grants 4 short range dashes'
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('dash_count'),
+			global.uuid('highlander_blessing'),
+			4,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+		.addAttribute(
+			global.attribute('movement_speed'),
+			global.uuid('highlander_blessing'),
+			0.05,
+			'multiply_total'
+		)
+	);
 
-	registry.create('pyromancer_blessing')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('pyromancer_blessing', 'Sigil of Flames', 'epic', [
+		'Hitting mobs on fire will cause a small explosion and spread flames to other nearby mobs',
+		'Grants immunity to fire and lava'
+	]);
 
-	registry.create('scroll_of_containment')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	// createCurio('scroll_of_containment')
+	// 	.attachCuriosCapability(
+	// 		CuriosJSCapabilityBuilder.create()
+	// 	)
+	// 	.unstackable()
+	// 	.tag('curios:accessory')
+	// 	.rarity('uncommon');
 
-	registry.create('surgical_glove')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('surgical_glove', 'Surgical Glove', 'uncommon', [
+		'Healing spells will heal 2 additional life'
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('healing_power'),
+			global.uuid('surgical_glove'),
+			2,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	);
 
-	registry.create('sweeping_blessing')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('sweeping_blessing', 'Sigil of Protection', 'epic', [
+		'Healed players will generate overshield with every attack for a short time'
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('healing_power'),
+			global.uuid('sweeping_blessing'),
+			3,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+		.addAttribute(
+			global.attribute('max_mana'),
+			global.uuid('sweeping_blessing'),
+			40,
+			'addition'
+		)
+		.addAttribute(
+			global.attribute('max_health'),
+			global.uuid('sweeping_blessing'),
+			40,
+			'addition'
+		)
+	);
 
-	registry.create('vampire_blessing')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('vampire_blessing', 'Sigil of Vampirism', 'epic', [
+		'Major improvement to all stats',
+		'Causes you to burn in sunlight and take damage from water',
+	], CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('max_health'),
+			global.uuid('vampire_blessing'),
+			50,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+		.addAttribute(
+			global.attribute('damage'),
+			global.uuid('vampire_blessing'),
+			0.1,
+			'multiply_base'
+		)
+		.addAttribute(
+			global.attribute('movement_speed'),
+			global.uuid('vampire_blessing'),
+			0.1,
+			'multiply_base'
+		)
+		.addAttribute(
+			global.attribute('armor'),
+			global.uuid('vampire_blessing'),
+			6,
+			'addition'
+		)
+	);
 
-	registry.create('vengeful_band')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
+	createCurio('vengeful_band', 'Enchanted Band', null, null, CuriosJSCapabilityBuilder.create()
+		.addAttribute(
+			global.attribute('spell_damage'),
+			global.uuid('vengeful_band'),
+			5,
+			'addition'
 		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+		.addAttribute(
+			global.attribute('max_mana'),
+			global.uuid('vengeful_band'),
+			20,
+			'addition'
+		)
+		.addAttribute(
+			global.attribute('crit_chance'),
+			global.uuid('vengeful_band'),
+			0.05,
+			'addition'
+		)
+	);
 
 	registry.create('prismarine_bow', 'bow')
 		.bow(bow => { })
@@ -1198,130 +1177,87 @@ StartupEvents.registry('item', registry => {
 		.tooltip(Text.gray(''))
 		.rarity('rare')
 
-	registry.create('ambrosia')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('ambrosia', 'Ambrosia', null, [
+		'Healed players will have increased movement speed for a short time',
+		'Healed players will regenerate 2 health per second for the next 3 seconds (does not stack)'
+	]);
 
-	registry.create('cactus_concoction')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('cactus_concoction', 'Cactus Concoction', null, [
+		'Healed players will have increased movement speed for a short time'
+	]);
 
-	registry.create('diamond_berry')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	// registry.create('diamond_berry')
+	// 	.attachCuriosCapability(
+	// 		CuriosJSCapabilityBuilder.create()
+	// 	)
+	// 	.unstackable()
+	// 	.tag('curios:accessory')
+	// 	.rarity('uncommon');
 
-	registry.create('gigashroom')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	// registry.create('gigashroom')
+	// 	.attachCuriosCapability(
+	// 		CuriosJSCapabilityBuilder.create()
+	// 	)
+	// 	.unstackable()
+	// 	.tag('curios:accessory')
+	// 	.rarity('uncommon');
 
-	registry.create('truffle_blue')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('truffle_blue', 'Blue Truffle', null, [
+		'Healed players have a chance to be cured of Slowness',
+		'Grants immunity to Slowness'
+	]);
 
-	registry.create('truffle_green')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('truffle_green', 'Green Truffle', null, [
+		'Healed players have a chance to be cured of Poison',
+		'Grants immunity to Poison'
+	]);
 
-	registry.create('truffle_purple')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('truffle_purple', 'Purple Truffle', null, [
+		'Healed players have a chance to be cured of Weakness',
+		'Grants immunity to Weakness'
+	]);
 
-	registry.create('truffle_red')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('truffle_red', 'Red Truffle', null, [
+		'Healed players have a chance to be cured of Bleeding',
+		'Grants immunity to Bleeding'
+	]);
 
-	registry.create('truffle_white')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('truffle_white', 'White Truffle', null, [
+		'Healed players have a chance to be cured of Slowness, Poison, Weakness and Bleeding',
+		'Grants immunity to Slowness, Poison, Weakness and Bleeding'
+	]);
 
-	registry.create('celestial_crystal')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+	createCurio('celestial_crystal', 'Celestial Crystal', null, null,
+		CuriosJSCapabilityBuilder.create()
+			.addAttribute(
+				global.attribute('healing_power'),
+				global.uuid('celestial_crystal'),
+				1,
+				'addition'
+			)
+			.addAttribute(
+				global.attribute('max_mana'),
+				global.uuid('celestial_crystal'),
+				20,
+				'addition'
+			)
+			.addAttribute(
+				global.attribute('max_health'),
+				global.uuid('celestial_crystal'),
+				20,
+				'addition'
+			)
+	);
 
 	registry.create('enchanted_string')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+		.displayName('Elven String');
 
 	registry.create('eternal_tear')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
-
-	registry.create('gleamerite')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
-
-	registry.create('golden_fermented_spider_eye')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
-
-	registry.create('guardian_resonator')
-		.attachCuriosCapability(
-			CuriosJSCapabilityBuilder.create()
-		)
-		.unstackable()
-		.tag('curios:accessory')
 		.rarity('uncommon');
 
 	registry.create('philosopher_stone')
 		.unstackable()
-		.tag('curios:accessory')
-		.rarity('uncommon');
+		.rarity('epic');
 
 	function registerDust(name, color) {
 		registry.create(global.textReplaceAll(name.toLowerCase(), ' ', '_'))

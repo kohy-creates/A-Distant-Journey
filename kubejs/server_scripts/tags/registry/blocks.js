@@ -226,5 +226,7 @@ ServerEvents.tags('block', tags => {
 		/.*:potted_/,
 	]);
 
-
+	tags.add('campfires', [
+		'antarchy:dream_campfire'
+	]);
 });

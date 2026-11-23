@@ -1,0 +1,23 @@
+{
+	"states": [
+		{
+			"name": "antarchy:remembrance_wall_torch"
+		}
+	],
+	"options": {
+		"preset": "wall_torch",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 15909538
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 7297354
+				}
+			]
+		}
+	}
+}

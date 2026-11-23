@@ -8,4 +8,7 @@ ItemEvents.modification(event => {
 		item.fireResistant = true;
 	});
 
+	event.modify('kubejs:philosopher_stone', item => {
+		item.craftingRemainingItem = 'kubejs:philosopher_stone';
+	});
 });

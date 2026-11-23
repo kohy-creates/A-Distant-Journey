@@ -43,8 +43,8 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
-			x: -13.5d
-			y: 1.5d
+			x: -14.0d
+			y: 1.0d
 		}
 		{
 			dependency: "6086C058455AE6AD"
@@ -54,7 +54,7 @@
 			rotation: 0.0d
 			width: 2.25d
 			x: -13.0d
-			y: 4.5d
+			y: 5.5d
 		}
 		{
 			dependency: "4564BF670D10E0FA"
@@ -63,7 +63,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
-			x: -14.0d
+			x: -12.5d
 			y: -0.5d
 		}
 		{
@@ -72,8 +72,8 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 12.0d
-			x: -5.0d
-			y: -2.0d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
 			dependency: "4564BF670D10E0FA"
@@ -82,8 +82,8 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
-			x: -14.5d
-			y: 3.5d
+			x: -15.0d
+			y: 4.0d
 		}
 		{
 			dependency: "0898408ED8FBAF57"
@@ -92,8 +92,8 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
 			width: 1.75d
-			x: -6.0d
-			y: 5.0d
+			x: -5.0d
+			y: 4.5d
 		}
 		{
 			dependency: "4564BF670D10E0FA"
@@ -103,7 +103,7 @@
 			rotation: 45.0d
 			width: 1.75d
 			x: -16.5d
-			y: -2.5d
+			y: -0.5d
 		}
 		{
 			height: 1.75d
@@ -115,14 +115,34 @@
 			y: 4.5d
 		}
 		{
-			height: 28.0d
+			height: 14.0d
 			image: "adj:textures/other/bg_void.png"
 			order: -9999
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 45.0d
-			width: 50.0d
-			x: -3.0d
-			y: 2.0d
+			width: 25.0d
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			height: 14.0d
+			image: "adj:textures/other/bg_void.png"
+			order: -9999
+			quest_enhance_exclude_from_box_selection: false
+			rotation: 0.0d
+			width: 25.0d
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			height: 14.0d
+			image: "adj:textures/other/bg_void.png"
+			order: -9999
+			quest_enhance_exclude_from_box_selection: false
+			rotation: -75.0d
+			width: 25.0d
+			x: -12.5d
+			y: -8.0d
 		}
 	]
 	order_index: 4
@@ -165,7 +185,7 @@
 				type: "item"
 			}]
 			title: "The Old, Again..."
-			x: 0.5d
+			x: 0.0d
 			y: 6.5d
 		}
 		{
@@ -198,8 +218,8 @@
 				value: 1L
 			}]
 			title: "In With The New!"
-			x: -6.0d
-			y: 5.0d
+			x: -5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7EB2D195600E1D0F"]
@@ -294,8 +314,8 @@
 				type: "item"
 			}]
 			title: "The Next Generation"
-			x: -8.0d
-			y: 3.0d
+			x: -5.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0F84B7A1DA0FDD37"]
@@ -310,8 +330,8 @@
 				type: "item"
 			}]
 			title: "You Need a Mint"
-			x: -6.0d
-			y: 3.0d
+			x: -7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0F84B7A1DA0FDD37"]
@@ -358,37 +378,8 @@
 				}
 			]
 			title: "The End. Again"
-			x: -8.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["4564BF670D10E0FA"]
-			entity_vis_size: 1.0f
-			hide_until_deps_complete: true
-			icon: "unusualend:prismalite_gem"
-			id: "7BEDD5A588278AC2"
-			quest_enhance_disable_scroll_paging: false
-			subtitle: "Obtain a Shiny Crystal, Prismalite Gem and Citrine Chunk"
-			tasks: [
-				{
-					id: "6E70101559611710"
-					item: "unusualend:shiny_crystal"
-					type: "item"
-				}
-				{
-					id: "5DD32CA07E0BFD0C"
-					item: "unusualend:prismalite_gem"
-					type: "item"
-				}
-				{
-					id: "09267781671F8C68"
-					item: "unusualend:citrine_chunk"
-					type: "item"
-				}
-			]
-			title: "Hidden Gems"
-			x: -11.5d
-			y: 0.5d
+			x: -7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
@@ -403,8 +394,8 @@
 				type: "item"
 			}]
 			title: "Confusing Fruit"
-			x: -10.0d
-			y: 0.0d
+			x: -9.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
@@ -422,7 +413,7 @@
 			}]
 			title: "The City at The End of The Game"
 			x: -10.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["22BC61DC0C61020A"]
@@ -442,8 +433,8 @@
 				type: "item"
 			}]
 			title: "Sky's The Limit"
-			x: -9.0d
-			y: 5.5d
+			x: -8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["22BC61DC0C61020A"]
@@ -474,8 +465,8 @@
 				value: 1L
 			}]
 			title: "This Block Moves!"
-			x: -11.0d
-			y: 5.5d
+			x: -10.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
@@ -514,26 +505,11 @@
 				type: "item"
 			}]
 			title: "Strange Ingot"
-			x: -13.5d
-			y: 1.5d
+			x: -14.0d
+			y: 1.0d
 		}
 		{
-			dependencies: ["06975D33E820F6B9"]
-			description: [""]
-			entity_vis_size: 1.0f
-			hide_until_deps_complete: true
-			icon: "endersdelight:pearl_pasta"
-			id: "301E14BDA5580CC4"
-			optional: true
-			quest_enhance_disable_scroll_paging: false
-			shape: "rsquare"
-			subtitle: "Cook some of the more 'delicious' dishes from End's cuisine"
-			title: "Local Food"
-			x: -10.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["7BEDD5A588278AC2"]
+			dependencies: ["5DAF45D22D8929C9"]
 			entity_vis_size: 1.0f
 			icon: "alloy_forgery:ender_forge_casing_forge_controller"
 			icon_scale: 0.75d
@@ -556,7 +532,7 @@
 				}
 			]
 			title: "The Final Forge"
-			x: -14.0d
+			x: -12.5d
 			y: -0.5d
 		}
 		{
@@ -571,8 +547,8 @@
 				type: "item"
 			}]
 			title: "A Star from Heavens"
-			x: -16.5d
-			y: -0.5d
+			x: -14.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4564BF670D10E0FA"]
@@ -588,8 +564,8 @@
 				type: "item"
 			}]
 			title: "Journey to The End"
-			x: -11.5d
-			y: 3.5d
+			x: -12.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6086C058455AE6AD"]
@@ -608,8 +584,8 @@
 				type: "structure"
 			}]
 			title: "Living in Nothingness"
-			x: -14.5d
-			y: 3.5d
+			x: -15.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6E4C5779C4DA9851"]
@@ -633,7 +609,7 @@
 			}]
 			title: "Sword of The True Heroes"
 			x: -16.5d
-			y: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7EB2D195600E1D0F"]
@@ -655,7 +631,7 @@
 				}
 			]
 			title: "Bloomful"
-			x: -1.5d
+			x: -2.5d
 			y: 7.0d
 		}
 		{
@@ -725,6 +701,19 @@
 			entity_vis_size: 1.0f
 			id: "3F2B685C8C008081"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "65CB160FF2D2BB49"
+				item: {
+					Count: 1
+					id: "trofers:small_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "adj:trophies/quest/chapter_4"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Kill the Ender Guardian and collect the Eye of Desolation"
@@ -734,8 +723,8 @@
 				type: "item"
 			}]
 			title: "I Stared Into The Void"
-			x: -17.0d
-			y: 4.5d
+			x: -18.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6D854F2600B922BD"]
@@ -768,27 +757,8 @@
 				}
 			]
 			title: "How to Tame Your Dragon 101"
-			x: -6.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["2F2686D8E0B921C5"]
-			description: [""]
-			entity_vis_size: 1.0f
-			icon: "minecraft:grass_block"
-			id: "70E411F4BD751E0E"
-			quest_enhance_disable_scroll_paging: false
-			subtitle: "Fly under the Skylands into the Overworld on your Red Dragon"
-			tasks: [{
-				advancement: "adj:red_dragon_move_dimensions"
-				criterion: ""
-				id: "235A6EE374CF1BB1"
-				title: "Trust the process and fly your Red Dragon to the Overworld"
-				type: "advancement"
-			}]
-			title: "Trust The Process"
-			x: -6.0d
-			y: 7.5d
+			x: -6.5d
+			y: 6.0d
 		}
 	]
 	title: "4. The End"

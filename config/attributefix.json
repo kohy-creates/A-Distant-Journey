@@ -209,6 +209,17 @@
         "value": 1
       }
     },
+    "irons_lib:healing_received": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "forge:entity_reach": {
       "enabled": false,
       "min": {
@@ -286,6 +297,28 @@
         "value": 1024
       }
     },
+    "irons_lib:experience_gained": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "irons_artifice:spread": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
     "gunswithoutroses:gwr.damage_total": {
       "enabled": false,
       "min": {
@@ -295,6 +328,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "irons_artifice:accelerating": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
       }
     },
     "rediscovered:explosion_resistance": {
@@ -418,6 +462,17 @@
         "value": 128
       }
     },
+    "irons_artifice:underwater_drag": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
     "mcdw:reach": {
       "enabled": false,
       "min": {
@@ -495,6 +550,17 @@
         "value": 1024
       }
     },
+    "irons_lib:projectile_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "minecraft:generic.attack_speed": {
       "enabled": true,
       "min": {
@@ -515,6 +581,28 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "irons_artifice:character_blowback": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
+    "irons_artifice:bullet_drag": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
       }
     },
     "doublejumpattribute:doublejumpattribute": {
@@ -561,6 +649,17 @@
         "value": 1000
       }
     },
+    "irons_artifice:ricochet": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
     "minecraft:generic.flying_speed": {
       "enabled": true,
       "min": {
@@ -583,6 +682,17 @@
         "value": 2048
       }
     },
+    "irons_artifice:seeking": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
     "additionalentityattributes:generic.jump_height": {
       "enabled": false,
       "min": {
@@ -592,6 +702,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "irons_artifice:gravity": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
       }
     },
     "attributeslib:mining_speed": {
@@ -649,6 +770,17 @@
         "value": 10000
       }
     },
+    "irons_lib:dodge_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "botania:pixie_spawn_chance": {
       "enabled": false,
       "min": {
@@ -680,6 +812,17 @@
       "max": {
         "default": 1024,
         "value": 2147483647
+      }
+    },
+    "irons_artifice:leech": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
       }
     },
     "gunswithoutroses:gwr.knockback": {
@@ -781,6 +924,17 @@
         "value": 1024
       }
     },
+    "irons_artifice:camera_recoil_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
     "gunswithoutroses:gwr.chance_ammo": {
       "enabled": false,
       "min": {
@@ -878,6 +1032,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "irons_artifice:block_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
       }
     },
     "additionalentityattributes:player.bonus_rare_loot_rolls": {
@@ -1012,6 +1177,17 @@
         "value": 1024
       }
     },
+    "irons_artifice:fire_rate": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
     "adjcore:player.healing_potion_cooldown": {
       "enabled": false,
       "min": {
@@ -1043,6 +1219,28 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "irons_artifice:projectile_count": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
+    "irons_lib:arrow_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "witherstormmod:slow_flying_speed": {
@@ -1111,6 +1309,17 @@
         "value": 10000
       }
     },
+    "irons_artifice:piercing": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
     "antarchy:double_damage_chance": {
       "enabled": false,
       "min": {
@@ -1123,6 +1332,17 @@
       }
     },
     "mythicmetals:elytra_rocket_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "irons_lib:mining_speed": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -1309,6 +1529,17 @@
         "value": 1024
       }
     },
+    "irons_artifice:damage": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
     "terra_curio:armor_pass": {
       "enabled": false,
       "min": {
@@ -1474,6 +1705,17 @@
         "value": 1
       }
     },
+    "irons_artifice:in_air_penalty": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
     "minecraft:generic.armor": {
       "enabled": true,
       "min": {
@@ -1518,6 +1760,17 @@
         "value": 1024
       }
     },
+    "irons_artifice:bullet_speed": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
     "obscure_api:critical_hit": {
       "enabled": false,
       "min": {
@@ -1527,6 +1780,39 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "irons_artifice:knockback": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
+    "irons_lib:armor_pierce": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "irons_artifice:ammo_consume_chance": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
       }
     },
     "attributeslib:current_hp_damage": {
@@ -1606,6 +1892,17 @@
         "value": 256
       }
     },
+    "irons_artifice:reload_speed_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
+      }
+    },
     "attributeslib:arrow_damage": {
       "enabled": false,
       "min": {
@@ -1637,6 +1934,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "irons_lib:crit_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "kubejs:food.hunger": {

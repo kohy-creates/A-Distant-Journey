@@ -411,7 +411,21 @@ global.getAllRegistryObjects = function (registry) {
 	return global.getRegistry(registry).getValues().toArray().sort();
 };
 
-const ForgeRegistryKeys = [
+global.registryIdCache = {};
+
+/**
+ * Returns a list of all IDs in a given registry.
+ * @param {keyof typeof $ForgeRegistries} registry 
+ * @returns {string[]}
+ */
+global.getAllRegistryIds = function (registry) {
+	if (!global.registryIdCache[registry]) {
+		global.registryIdCache[registry] = global.getAllRegistryObjects(registry).map(obj => global.getRegistryId(registry, obj));
+	}
+	return global.registryIdCache[registry];
+};
+
+global.forgeRegistryKeys = [
 	'ACTIVITIES', 'ATTRIBUTES', 'BIOMES', 'BIOME_MODIFIER_SERIALIZERS',
 	'BLOCKS', 'BLOCK_ENTITY_TYPES', 'BLOCK_STATE_PROVIDER_TYPES', 'CHUNK_STATUS',
 	'COMMAND_ARGUMENT_TYPES', 'DISPLAY_CONTEXTS', 'ENCHANTMENTS', 'ENTITY_DATA_SERIALIZERS',
@@ -432,7 +446,7 @@ const ForgeRegistryKeys = [
  */
 global.createTagKey = function (registry, key) {
 	let reg = null;
-	if (ForgeRegistryKeys.includes(registry)) reg = $ForgeRegistries$Keys[registry];
+	if (global.forgeRegistryKeys.includes(registry)) reg = $ForgeRegistries$Keys[registry];
 	else reg = $Registries[registry];
 	return $TagKey.create(reg, global.resourceLocation(key));
 };
@@ -598,6 +612,7 @@ global.uuid = function (seed) {
 
 global.attributes = {
 	'armor': 'minecraft:generic.armor',
+	'max_health': 'minecraft:generic.max_health',
 	'attack_damage': 'minecraft:generic.attack_damage',
 	'attack_speed': 'minecraft:generic.attack_speed',
 	'knockback_resistance': 'minecraft:generic.knockback_resistance',

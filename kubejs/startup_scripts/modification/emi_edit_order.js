@@ -70,7 +70,6 @@ StartupEvents.postInit(event => Utils.runAsync(() => {
 		['functionalstorage:collector_upgrade', 'functionalstorage:copper_upgrade'],
 		['functionalstorage:copper_upgrade', 'functionalstorage:void_upgrade'],
 		['functionalstorage:void_upgrade', 'functionalstorage:redstone_upgrade'],
-
 	];
 
 	// Detect available materials
@@ -113,7 +112,7 @@ StartupEvents.postInit(event => Utils.runAsync(() => {
 		'window_box:chthonic_yew',
 	];
 
-	Item.getTypeList().forEach(id => {
+	global.getAllRegistryIds('ITEMS').forEach(id => {
 		if (global.isItemDisabled(id)) return;
 		if (id.includes('_planks') && !id.includes('_planks_') && !id.includes('vertical')) {
 			const type = id.replace('_planks', '');
@@ -592,17 +591,37 @@ StartupEvents.postInit(event => Utils.runAsync(() => {
 	for (let e = 0; e < allEnchants.length; e++) {
 		/** @type {Internal.Enchantment_} */
 		let enchant = allEnchants[e];
-		if ($EnchantmentsBegone.shouldBegone(enchant) || enchant.getDescriptionId() === 'enchantment.cofh_core.disabled') continue;
+		if ($EnchantmentsBegone.shouldBegone(enchant)) continue;
 		let book = `minecraft:enchanted_book{StoredEnchantments:[{id:"${enchant.getId()}", lvl:${enchant.getMaxLevel().toString().replace('.0', '')}s}]}`
 		edit.added.push({ stack: stack(book), after: stack(addAfter) });
 		addAfter = book;
 	}
 
-	global.disabledPotions.forEach(potion => {
-		let nbt = `{Potion:"${potion}"}`;
+	const allPotions = global.getAllRegistryObjects('POTIONS');
+	allPotions.forEach(potion => {
+		let id = global.getRegistryId('POTIONS', potion);
+		let nbt = `{Potion:"${id}"}`;
 		edit.removed.push(stack(`minecraft:potion${nbt}`));
 		edit.removed.push(stack(`sortilege:antidote${nbt}`));
 	});
+
+	addAfter = 'minecraft:brewing_stand';
+	for (let potion of Object.keys(global.potionRecipes)) {
+		let p;
+		if (potion.startsWith('item:')) {
+			p = potion.replace('item:', '');
+		}
+		else {
+			p = `minecraft:potion{Potion:"${potion}"}`;
+		}
+		edit.added.push({ stack: stack(p), after: stack(addAfter) });
+		addAfter = p;
+	}
+	for (let potion of Object.keys(global.potionRecipes).filter(p => !p.startsWith('item:'))) {
+		let p = `sortilege:antidote{Potion:"${potion}"}`;
+		edit.added.push({ stack: stack(p), after: stack(addAfter) });
+		addAfter = p;
+	}
 
 	JsonIO.write('kubejs/assets/emi/index/stacks/edit_item_order.json', edit);
 }));

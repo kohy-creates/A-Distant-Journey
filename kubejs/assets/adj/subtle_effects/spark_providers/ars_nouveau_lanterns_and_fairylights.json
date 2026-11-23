@@ -1,0 +1,92 @@
+{
+	"states": [
+		{
+			"name": "ars_nouveau:arcane_lantern"
+		},
+		{
+			"name": "ars_nouveau:sourcestone_lantern"
+		},
+		{
+			"name": "ars_nouveau:polished_sourcestone_lantern"
+		},
+		{
+			"name": "ars_nouveau:archwood_lantern"
+		},
+		{
+			"name": "fairylights:oil_lantern",
+			"Properties": {
+				"lit": "true"
+			}
+		},
+		{
+			"name": "fairylights:candle_lantern",
+			"Properties": {
+				"lit": "true"
+			}
+		},
+		{
+			"name": "fairylights:ghost_light",
+			"Properties": {
+				"lit": "true"
+			}
+		},
+		{
+			"name": "fairylights:paper_lantern",
+			"Properties": {
+				"lit": "true"
+			}
+		},
+		{
+			"name": "fairylights:orb_lantern",
+			"Properties": {
+				"lit": "true"
+			}
+		},
+		{
+			"name": "fairylights:oil_lantern_light",
+			"Properties": {
+				"lit": "true"
+			}
+		},
+		{
+			"name": "fairylights:candle_lantern_light",
+			"Properties": {
+				"lit": "true"
+			}
+		},
+		{
+			"name": "fairylights:jack_o_lantern",
+			"Properties": {
+				"lit": "true"
+			}
+		},
+		{
+			"name": "fairylights:moon_light",
+			"Properties": {
+				"lit": "true"
+			}
+		},
+		{
+			"name": "fairylights:star_light",
+			"Properties": {
+				"lit": "true"
+			}
+		}
+	],
+	"options": {
+		"preset": "lantern",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 16766976
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 16738816
+				}
+			]
+		}
+	}
+}

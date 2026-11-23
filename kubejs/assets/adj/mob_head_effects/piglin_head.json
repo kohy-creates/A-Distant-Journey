@@ -1,0 +1,9 @@
+{
+	"items": [
+		"minecraft:piglin_head"
+	],
+	"entity_types": [
+		"minecraft:piglin"
+	],
+	"shader": "aether:sun_spirit"
+}

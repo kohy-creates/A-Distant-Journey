@@ -1,0 +1,23 @@
+{
+	"states": [
+		{
+			"name": "antarchy:remembrance_torch"
+		}
+	],
+	"options": {
+		"preset": "torch",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 15909538
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 7297354
+				}
+			]
+		}
+	}
+}

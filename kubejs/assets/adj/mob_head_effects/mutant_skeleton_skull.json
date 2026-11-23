@@ -1,0 +1,9 @@
+{
+	"items": [
+		"mutantmonsters:mutant_skeleton_skull"
+	],
+	"entity_types": [
+		"mutantmonsters:mutant_skeleton"
+	],
+	"shader": "supplementaries:black_and_white"
+}

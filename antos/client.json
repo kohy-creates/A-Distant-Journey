@@ -5,13 +5,17 @@
     "displayBrightness": "standard",
     "reduceEffects": false,
     "resumeSession": true,
-    "displayLook": "terminal",
+    "displayLook": "graphite",
     "iconColor": "accent",
     "wallpaperColors": "match",
     "customColors": "",
-    "lookChosen": false,
+    "lookChosen": true,
     "pauseWhileOpen": false,
     "fullscreenDesktop": false,
+    "frameLeft": 0.0,
+    "frameTop": 0.0,
+    "frameWidth": 0.0,
+    "frameHeight": 0.0,
     "quietNotifications": false,
     "interfaceSounds": true,
     "interfaceVolume": 60,
@@ -39,15 +43,24 @@
     "explorerPlaces": true,
     "explorerSortBySize": false
   },
-  "lastAnternetUsername": "",
-  "initialBootSeen": false,
-  "completedComputerTours": [],
+  "lastAnternetUsername": "kohara",
+  "initialBootSeen": true,
+  "completedComputerTours": [
+    "74f55323-2996-4928-82dd-1d33df32ed30"
+  ],
   "completedMerchantTours": [],
   "taskGroupCollapsed": {},
-  "resumeSnapshots": {},
+  "resumeSnapshots": {
+    "workspace:c39e052a-6d82-490b-b74b-8092e2cd4a71": "{\"windows\":[],\"apps\":{\"files\":{\"directory\":\"/pictures\",\"selected\":\"\",\"descending\":false,\"sort_by_size\":false,\"scroll\":0},\"text\":{},\"paint\":{},\"archive\":{\"gallery\":false,\"favorites\":false,\"recent\":false,\"search\":\"\",\"scroll\":0,\"detail_scroll\":0,\"folder\":\"antarchy:antlas\"},\"merchant\":{\"view\":\"browse\",\"search\":\"\",\"currency\":\"\",\"sort\":\"newest\",\"page\":0,\"canPay\":false,\"showDispatched\":false},\"antazon\":{\"mode\":\"catalog\",\"return_mode\":\"catalog\",\"category\":\"ALL\",\"product\":\"\"},\"antmail\":{\"mode\":\"inbox\"},\"settings\":{\"category\":\"account\"},\"tasks\":{},\"games\":{\"gallery\":true}}}"
+  },
   "notificationHistories": {},
   "editorDrafts": {},
   "archiveBookmarks": {},
-  "recentArchiveEntries": {},
+  "recentArchiveEntries": {
+    "workspace:c39e052a-6d82-490b-b74b-8092e2cd4a71": [
+      "antarchy:red_ant",
+      "antarchy:brown_ant"
+    ]
+  },
   "terminalHistory": {}
 }

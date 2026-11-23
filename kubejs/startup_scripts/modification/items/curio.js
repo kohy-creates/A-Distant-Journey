@@ -3,7 +3,7 @@ ItemEvents.modification(event => {
 	event.modify([
 		'supplementaries:quiver',
 		'kubejs:stalker_quiver',
-		'kubejs:magma_quiver',
+		'kubejs:molten_quiver',
 		'kubejs:shock_quiver',
 		'kubejs:compound_quiver'
 	], item => {

@@ -82,9 +82,15 @@ antsStealFromChests = true
 	#Blacklist tag: data/antarchy/tags/item/easter_bunny_spawn_egg_blacklist.json
 	enabled = true
 	#Percent chance a naturally spawned rabbit is replaced by an Easter Bunny.
-	#Only applies to natural and chunk-generation spawns, not breeding.
+	#Only applies to natural and chunk-generation spawns. Easter Bunnies cannot be bred.
 	#Range: 0 ~ 100
 	naturalSpawnChancePercent = 1
+	#Minimum seconds between spawn eggs laid by an adult Easter Bunny.
+	#Range: 1 ~ 86400
+	minLayCooldownSeconds = 180
+	#Maximum seconds between spawn eggs laid by an adult Easter Bunny. Values below the minimum use the minimum.
+	#Range: 1 ~ 86400
+	maxLayCooldownSeconds = 360
 
 [wasp]
 	#Base max health.

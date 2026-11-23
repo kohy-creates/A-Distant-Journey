@@ -1,0 +1,7 @@
+{
+    "parent": "block/template_fire_side",
+    "textures": {
+        "fire": "netherexp:block/ancient_fire_1",
+        "particle": "#fire"
+    }
+}

@@ -728,6 +728,7 @@ ItemEvents.tooltip(event => {
 		return out;
 	}
 
+	syncCurioTooltips();
 	for (const entry of TooltipEdits.TIP_CONFIG) {
 		tip(entry.items, entry.text, entry.opts);
 	}

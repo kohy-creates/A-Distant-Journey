@@ -138,5 +138,5 @@ KeyBindEvents.register(event => {
 	// event.create('adjcore.what_is_this', GLFW.GLFW_KEY_GRAVE_ACCENT, 'key.categories.adjcore')
 	// 	.addModifier(KeyModifier.ALT);
 
-	event.create('adjcore.menu', GLFW.GLFW_KEY_M, 'key.categories.adjcore');
+	event.create('adjcore.quick_heal', GLFW.GLFW_KEY_H, 'key.categories.adjcore');
 });

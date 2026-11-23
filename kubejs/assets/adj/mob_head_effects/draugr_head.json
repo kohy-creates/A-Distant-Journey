@@ -1,0 +1,11 @@
+{
+	"items": [
+		"cataclysm:draugr_head"
+	],
+	"entity_types": [
+		"cataclysm:draugr",
+		"cataclysm:elite_draugr",
+		"cataclysm:royal_draugr"
+	],
+	"shader": "quark:cool"
+}

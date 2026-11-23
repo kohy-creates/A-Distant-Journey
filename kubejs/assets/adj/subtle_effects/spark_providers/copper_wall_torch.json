@@ -1,0 +1,23 @@
+{
+	"states": [
+		{
+			"name": "minecraft:copper_wall_torch"
+		}
+	],
+	"options": {
+		"preset": "wall_torch",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 4620877
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 10087321
+				}
+			]
+		}
+	}
+}

@@ -8,5 +8,6 @@
   "playersWithoutQuickSkinMessage": "",
   "playersWithoutQuickSkinLink": "https://modrinth.com/mod/quick-skin",
   "allowNicknames": true,
-  "allowHiddenArmor": true
+  "allowHiddenArmor": true,
+  "allowImmersivePoses": true
 }

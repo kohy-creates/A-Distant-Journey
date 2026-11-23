@@ -57,6 +57,9 @@ const RemovedContent = {
 
 		/quark:.*limestone.*/,
 		/quark:vertical_.*planks/,
+		'quark:glass_item_frame',
+		'quark:paper_lantern',
+		'quark:paper_lantern_sakura',
 
 		'create:oak_window_pane',
 		'create:spruce_window_pane',
@@ -288,6 +291,7 @@ const RemovedContent = {
 		'botaniacombat:elementium_spear',
 		'botaniacombat:soulstaff',
 		'botaniacombat:terrasteel_spear',
+		'botaniacombat:slaugthersaw',
 		'botania:phantom_ink',
 		'botania:slime_bottle',
 		'botania:light_relay',
@@ -744,6 +748,8 @@ const RemovedContent = {
 		'scguns:cogloader',
 		'scguns:gale',
 		'scguns:hammer_gl',
+
+		/scguns:.*bayonet/,
 
 		/scguns:.*spawn_egg/,
 

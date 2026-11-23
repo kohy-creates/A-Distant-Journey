@@ -23,6 +23,11 @@ JEIEvents.information(event => {
 		event.addItem(filtered, text);
 	}
 
+	addInfo(['sortilege:antidote', 'glow_ink_sac'], [
+		'Antidotes remove their respective effect and provide a short-term immunity to the same effect.',
+		'It can be brewed by adding a Glow Ink Sac to any non-instant Potion.'
+	]);
+
 	addInfo('apple', [
 		'An apple a day keeps the doctor away. At least that\'s what they say...',
 		'Fun fact, I added this description around March 2025 while testing out how to add them and I kept it ever since.'
@@ -118,14 +123,6 @@ JEIEvents.information(event => {
 
 	addInfo('additionaladditions:mysterious_bundle', [
 		'Sold by Wandering Traders. Contains random items.'
-	]);
-
-	addInfo(['cauldron', /campfire/], [
-		'Cauldrons can be used to brew some of the more basic potions.',
-		'\\n\\n',
-		'Place a Campfire right below it and fill it with water. Then toss up to 3 of the potion ingredients and voila! You can the take your potions out of the Cauldron with empty Glass Bottles!',
-		'\\n\\n',
-		'Look through your recipe browser to see what potions can be crafted that way.'
 	]);
 
 	addInfo(/^(?!.*floating).*_ore$/, [

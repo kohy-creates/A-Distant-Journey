@@ -3,13 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = receiving_level_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1780358635690
+  last_edited_time = 1795301213582
   is_enabled = true
+  widget_identifier_revision = 2
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:9b644c89-7328-4f72-9e70-5908a2b48594-1780358634043] = [groups:][instances:]
+  [loading_requirement_container_meta:341b5872-fdf5-4b43-9464-e4212b17fa0c-1795301212895] = [groups:][instances:]
 }
 
 menu_background {
@@ -59,8 +60,8 @@ menu_background {
 }
 
 menu_background {
-  instance_identifier = 0c0619a5-a46d-4c03-9a00-6e1487137a07-1779533223105
-  background_type = video_mcef
+  instance_identifier = 96577515-f850-40bf-a1c3-c8bc72d31ad2-1795301206934
+  background_type = video_rinku
   show_background = false
   loop = false
   volume = 1.0
@@ -126,13 +127,6 @@ menu_background {
   mouse_position_requires_hold = false
   opacity_multiplier = 1.0
   show_compile_errors = true
-}
-
-menu_background {
-  instance_identifier = 9d24ebef-d88d-4460-b1fc-c9326763aca5-1779533223105
-  background_type = drippy_color_background
-  show_background = false
-  color = #FD5757FF
 }
 
 decoration_overlay {
@@ -230,29 +224,61 @@ decoration_overlay {
   string_lights_wind_strength = 1.0
   string_lights_flicker_speed = 1.0
   string_lights_left_center_to_top_center = true
-  string_lights_right_center_to_top_center = true
-  string_lights_bottom_left_to_top_center = false
-  string_lights_bottom_right_to_top_center = false
-  string_lights_top_left_to_top_right = true
-  string_lights_bottom_left_to_bottom_right = false
-  string_lights_loose_left_top = false
-  string_lights_loose_right_top = false
   string_lights_left_center_to_top_center_christmas_mode = false
-  string_lights_right_center_to_top_center_christmas_mode = false
-  string_lights_bottom_left_to_top_center_christmas_mode = false
-  string_lights_bottom_right_to_top_center_christmas_mode = false
-  string_lights_top_left_to_top_right_christmas_mode = false
-  string_lights_bottom_left_to_bottom_right_christmas_mode = false
-  string_lights_loose_left_top_christmas_mode = false
-  string_lights_loose_right_top_christmas_mode = false
   string_lights_left_center_to_top_center_color_hex = #FFD27A
+  string_lights_left_center_to_top_center_light_count = 0
+  string_lights_left_center_to_top_center_string_color_hex = #2B2B2BD2
+  string_lights_left_center_to_top_center_light_sizes = 
+  string_lights_left_center_to_top_center_light_colors = 
+  string_lights_right_center_to_top_center = true
+  string_lights_right_center_to_top_center_christmas_mode = false
   string_lights_right_center_to_top_center_color_hex = #FFD27A
+  string_lights_right_center_to_top_center_light_count = 0
+  string_lights_right_center_to_top_center_string_color_hex = #2B2B2BD2
+  string_lights_right_center_to_top_center_light_sizes = 
+  string_lights_right_center_to_top_center_light_colors = 
+  string_lights_bottom_left_to_top_center = false
+  string_lights_bottom_left_to_top_center_christmas_mode = false
   string_lights_bottom_left_to_top_center_color_hex = #FFD27A
+  string_lights_bottom_left_to_top_center_light_count = 0
+  string_lights_bottom_left_to_top_center_string_color_hex = #2B2B2BD2
+  string_lights_bottom_left_to_top_center_light_sizes = 
+  string_lights_bottom_left_to_top_center_light_colors = 
+  string_lights_bottom_right_to_top_center = false
+  string_lights_bottom_right_to_top_center_christmas_mode = false
   string_lights_bottom_right_to_top_center_color_hex = #FFD27A
+  string_lights_bottom_right_to_top_center_light_count = 0
+  string_lights_bottom_right_to_top_center_string_color_hex = #2B2B2BD2
+  string_lights_bottom_right_to_top_center_light_sizes = 
+  string_lights_bottom_right_to_top_center_light_colors = 
+  string_lights_top_left_to_top_right = true
+  string_lights_top_left_to_top_right_christmas_mode = false
   string_lights_top_left_to_top_right_color_hex = #FFD27A
+  string_lights_top_left_to_top_right_light_count = 0
+  string_lights_top_left_to_top_right_string_color_hex = #2B2B2BD2
+  string_lights_top_left_to_top_right_light_sizes = 
+  string_lights_top_left_to_top_right_light_colors = 
+  string_lights_bottom_left_to_bottom_right = false
+  string_lights_bottom_left_to_bottom_right_christmas_mode = false
   string_lights_bottom_left_to_bottom_right_color_hex = #FFD27A
+  string_lights_bottom_left_to_bottom_right_light_count = 0
+  string_lights_bottom_left_to_bottom_right_string_color_hex = #2B2B2BD2
+  string_lights_bottom_left_to_bottom_right_light_sizes = 
+  string_lights_bottom_left_to_bottom_right_light_colors = 
+  string_lights_loose_left_top = false
+  string_lights_loose_left_top_christmas_mode = false
   string_lights_loose_left_top_color_hex = #FFD27A
+  string_lights_loose_left_top_light_count = 0
+  string_lights_loose_left_top_string_color_hex = #2B2B2BD2
+  string_lights_loose_left_top_light_sizes = 
+  string_lights_loose_left_top_light_colors = 
+  string_lights_loose_right_top = false
+  string_lights_loose_right_top_christmas_mode = false
   string_lights_loose_right_top_color_hex = #FFD27A
+  string_lights_loose_right_top_light_count = 0
+  string_lights_loose_right_top_string_color_hex = #2B2B2BD2
+  string_lights_loose_right_top_light_sizes = 
+  string_lights_loose_right_top_light_colors = 
 }
 
 decoration_overlay {
@@ -329,6 +355,13 @@ decoration_overlay {
   confetti_color_hex = #FFFFFF
 }
 
+screen_audio_settings {
+  open_audio_volume = 1.0
+  open_audio_sound_channel = master
+  close_audio_volume = 1.0
+  close_audio_sound_channel = master
+}
+
 customization {
   action = backgroundoptions
   keepaspectratio = false
@@ -358,6 +391,7 @@ element {
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1200
+  auto_sizing_base_gui_scale = 0.0
   sticky_anchor = false
   anchor_point = mid-centered
   x = -165
@@ -420,6 +454,7 @@ element {
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1200
+  auto_sizing_base_gui_scale = 0.0
   sticky_anchor = false
   anchor_point = mid-centered
   x = -57
@@ -502,6 +537,7 @@ element {
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1200
+  auto_sizing_base_gui_scale = 0.0
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = c51fadb1-f2f5-4328-b9a1-4f4bfb889a01-1769517520747
@@ -564,6 +600,7 @@ element {
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1200
+  auto_sizing_base_gui_scale = 0.0
   sticky_anchor = false
   anchor_point = mid-centered
   x = -54
@@ -650,6 +687,7 @@ element {
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1200
+  auto_sizing_base_gui_scale = 0.0
   sticky_anchor = false
   anchor_point = mid-centered
   x = -100
@@ -701,6 +739,92 @@ element {
   table_margin = 4.0
 }
 
+element {
+  interactable = true
+  source = %!!smallcaps%Girls are Now Praying%!!%
+  source_mode = direct
+  shadow = true
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  code_block_single_color = #737373FF
+  code_block_multi_color = #565656FF
+  headline_line_color = #A9A9A9FF
+  separation_line_color = #A9A9A9FF
+  hyperlink_color = #0771FCFF
+  click_event_color = #0771FCFF
+  hover_event_color = #0771FCFF
+  quote_color = #818181FF
+  quote_italic = false
+  bullet_list_dot_color = #A9A9A9FF
+  parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  element_type = text_v2
+  instance_identifier = f64d3439-13d6-4ac4-b36f-78b6509c586b-1795301213200
+  appearance_delay = no_delay
+  disappearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1203
+  auto_sizing_base_gui_scale = 3.0
+  sticky_anchor = false
+  anchor_point = bottom-right
+  x = -146
+  y = -30
+  width = 129
+  height = 15
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 9a12d9b4-bbdc-417c-920e-3c0ff7611fd2-1741010709930
+  [loading_requirement_container_meta:9a12d9b4-bbdc-417c-920e-3c0ff7611fd2-1741010709930] = [groups:][instances:]
+  enable_parallax = false
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  layer_hidden_in_editor = false
+  advanced_rotation_mode = false
+  advanced_vertical_tilt_mode = false
+  advanced_horizontal_tilt_mode = false
+  should_be_affected_by_decoration_overlays = false
+  in_editor_color = #FFC800FF
+  advanced_posx = -2147483648
+  advanced_posy = -2147483648
+  advanced_width = -2147483648
+  advanced_height = -2147483648
+  stretch_x = false
+  stretch_y = false
+  appearance_delay_seconds = 1.0
+  disappearance_delay_seconds = 1.0
+  fade_in_speed = 1.0
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  parallax_intensity_x = 0.5
+  parallax_intensity_y = 0.5
+  rotation_degrees = 0.0
+  advanced_rotation_degrees = 0.0
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_degrees = 0.0
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_degrees = 0.0
+  base_color = #FFFFFFFF
+  scale = 1.0
+  text_border = 2
+  line_spacing = 2
+  quote_indent = 8.0
+  bullet_list_indent = 8.0
+  bullet_list_spacing = 3.0
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
+}
+
 vanilla_button {
   button_element_executable_block_identifier = 98ab6825-0068-4743-8dce-a423617adb6f-1741120682280
   [executable_block:98ab6825-0068-4743-8dce-a423617adb6f-1741120682280][type:generic] = [executables:]
@@ -730,6 +854,7 @@ vanilla_button {
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1200
+  auto_sizing_base_gui_scale = 0.0
   sticky_anchor = false
   anchor_point = mid-centered
   x = -100
@@ -769,12 +894,18 @@ vanilla_button {
   advanced_vertical_tilt_degrees = 0.0
   horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
+  click_sound_volume = 1.0
+  click_sound_channel = master
+  hover_sound_volume = 1.0
+  hover_sound_channel = master
   label_scale = 1.0
   label_shadow = true
   nine_slice_border_x = 5
   nine_slice_border_y = 5
   nine_slice_slider_handle_border_x = 5
   nine_slice_slider_handle_border_y = 5
+  unhover_sound_volume = 1.0
+  unhover_sound_channel = master
   automated_button_clicks = 0
   is_hidden = true
 }

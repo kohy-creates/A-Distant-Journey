@@ -50,9 +50,6 @@
 			crystal = true
 			glacia = true
 
-		[types.wood_type.unusualend]
-			chorus_nest = true
-
 		[types.wood_type.upgrade_aquatic]
 			driftwood = true
 			river = true
@@ -101,6 +98,9 @@
 			royal = true
 			truffalo = true
 			cranberry = true
+
+		[types.wood_type.outer_end]
+			azure = true
 
 	[types.leaves_type]
 
@@ -206,6 +206,9 @@
 			"legacy/birch" = true
 			"legacy/spruce" = true
 			"legacy/jungle" = true
+
+		[types.leaves_type.outer_end]
+			azure = true
 
 	[types.cake]
 
@@ -349,26 +352,6 @@
 			stacked_bone = true
 			stacked_wither_bone = true
 			yellow_nether_brick = true
-
-		[types.cut_block_type.unusualend]
-			polished_purpur = true
-			chorus_nest = true
-			stripped_chorus_nest = true
-			polished_purpur_tiles = true
-			raw_purpur_block = true
-			polished_purpur_brick = true
-			chorus_nest_mosaic = true
-			polished_gneiss = true
-			gneiss_brick = true
-			polished_gloopstone = true
-			gloopstone_brick = true
-			polished_gloopslate = true
-			gloopslate_bricks = true
-			polished_warped_stone = true
-			warped_stone_bricks = true
-			warped_stone_tiles = true
-			shiny_crystal_tiles = true
-			enderblob_moult_brick = true
 
 		[types.cut_block_type.ars_nouveau]
 			sourcestone = true
@@ -923,17 +906,6 @@
 			honeycomb_brick = true
 			honeycomb_tile = true
 
-		[types.cut_block_type.scguns]
-			cut_diamond_steel = true
-			diamond_steel_tiles = true
-			cut_anthralite = true
-			anthralite_tiles = true
-			cut_treated_iron = true
-			phosphorite_brick = true
-			asgharian_brick = true
-			cut_treated_brass = true
-			treated_brass_tiles = true
-
 		[types.cut_block_type.savage_and_ravage]
 			gloomy_tile = true
 
@@ -984,6 +956,25 @@
 			tidestone_brick = true
 			mossy_rockite_brick = true
 			cranberry = true
+
+		[types.cut_block_type.outer_end]
+			azure = true
+			violite = true
+			violite_brick = true
+			mossy_violite_brick = true
+			violite_tile = true
+			mossy_violite_tile = true
+
+		[types.cut_block_type.scguns]
+			cut_diamond_steel = true
+			diamond_steel_tiles = true
+			cut_anthralite = true
+			anthralite_tiles = true
+			cut_treated_iron = true
+			phosphorite_brick = true
+			asgharian_brick = true
+			cut_treated_brass = true
+			treated_brass_tiles = true
 
 #Disables specific entries
 [entries]

@@ -1,0 +1,23 @@
+{
+	"states": [
+		{
+			"name": "ancient_aether:sun_lantern"
+		}
+	],
+	"options": {
+		"preset": "lantern",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 16742938
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 7682060
+				}
+			]
+		}
+	}
+}

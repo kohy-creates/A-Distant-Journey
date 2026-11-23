@@ -27,23 +27,30 @@ const manaModifierUUIDs = {
 	regen: '8c3c0988-ddbc-4237-8ef3-7867811881e2'
 };
 
+const attackDamageAttr = global.getRegistryObject('ATTRIBUTES', 'generic.attack_damage');
+const attackSpeedAttr = global.getRegistryObject('ATTRIBUTES', 'generic.attack_speed');
+
 NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 	const stack = event.getItemStack();
 	const item = stack.getItem();
 	const id = item.id.toString();
 
+	function isKnife(t) {
+		return t.endsWith('_knife') && t.includes('delight')
+	}
+
 	// Weapons
 	if (event.slotType == 'mainhand') {
 
-		if (item instanceof $TieredItem && !(item instanceof $SwordItem)) {
+		if (item instanceof $TieredItem && !(item instanceof $SwordItem) && !id.startsWith('chiselsandbits:chisel') && !isKnife(id)) {
 			let tier = item.getTier();
-			event.addModifier("kubejs:harvest_level", new $AttributeModifier('84257908-8296-4470-ad2e-97e5db59b64e', "Harvest Level", tier.getLevel() + 1, 'addition'))
+			event.addModifier("kubejs:harvest_level", new $AttributeModifier(global.uuid('tool_stats'), "Harvest Level", tier.getLevel() + 1, 'addition'))
 			let speed = tier.getSpeed();
 			if (id.includes('rose_gold')) speed = 6.5;
-			event.addModifier("kubejs:mining_speed", new $AttributeModifier('80091653-9902-44f9-95a7-d627610856c0', "Mining Speed", speed, 'addition'))
+			event.addModifier("kubejs:mining_speed", new $AttributeModifier(global.uuid('tool_stats'), "Mining Speed", speed, 'addition'))
 		}
 
-		let attackDamageMods = event.getOriginalModifiers().get($Attributes.ATTACK_DAMAGE); // string id doesn't work
+		let attackDamageMods = event.getOriginalModifiers().get(attackDamageAttr);
 		if (attackDamageMods && !attackDamageMods.isEmpty()) {
 			let baseDamage = 0
 			attackDamageMods.forEach(mod => baseDamage += mod.getAmount())
@@ -51,7 +58,7 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 			event.addModifier('generic.attack_damage', new $AttributeModifier(weaponModifierUUIDs[0], 'Attack Damage', Math.round(baseDamage * 3.5), 'addition'))
 		}
 
-		let attackSpeedMods = event.getOriginalModifiers().get($Attributes.ATTACK_SPEED); // same as above
+		let attackSpeedMods = event.getOriginalModifiers().get(attackSpeedAttr);
 		if (attackSpeedMods && !attackSpeedMods.isEmpty()) {
 			let baseSpeed = 0
 			attackSpeedMods.forEach(mod => baseSpeed += mod.getAmount())
@@ -125,6 +132,12 @@ NativeEvents.onEvent('highest', false, $ItemAttributeModifierEvent, event => {
 			|| id === 'mythicmetals:prometheum_hoe'
 			|| id === 'mythicmetals:prometheum_shovel') {
 			event.addModifier('attributeslib:life_steal', new $AttributeModifier(weaponModifierUUIDs[0], 'Prometheum Native Lifesteal', 0.06, 'addition'));
+		}
+
+		if (isKnife(id) || id.startsWith('chiselsandbits:chisel')) {
+			event.removeAttribute(global.attribute('attack_damage'));
+			event.removeAttribute(global.attribute('attack_speed'));
+			event.removeAttribute(global.attribute('crit_chance'));
 		}
 	}
 

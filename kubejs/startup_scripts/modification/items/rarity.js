@@ -220,7 +220,7 @@ ItemEvents.modification(event => {
 		}
 	}
 
-	Item.getTypeList().forEach(id => {
+	global.getAllRegistryIds('ITEMS').forEach(id => {
 		// console.log(id)
 		let item = Item.of(id);
 

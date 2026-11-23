@@ -588,6 +588,19 @@
 			icon: "kubejs:eye_of_angels"
 			id: "545C995B87BA0947"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "0252BB7855B0ECAB"
+				item: {
+					Count: 1
+					id: "trofers:small_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "adj:trophies/quest/chapter_2"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Collect the Eye of Angels"

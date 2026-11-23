@@ -44,8 +44,8 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 5.0d
-			x: -3.5d
-			y: -1.0d
+			x: -3.0d
+			y: -0.5d
 		}
 		{
 			height: 1.75d
@@ -582,6 +582,19 @@
 			entity_vis_size: 1.0f
 			id: "6E9823FB2C7C6D19"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "77D76ECCAB21338E"
+				item: {
+					Count: 1
+					id: "trofers:small_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "adj:trophies/quest/chapter_3"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Kill The Red Dragon and collect the Eye of Dreams"

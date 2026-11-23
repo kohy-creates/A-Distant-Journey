@@ -6664,7 +6664,7 @@ ServerEvents.recipes((event) => {
 	fermentingRecipe('kubejs:warped_grapejuice', ['warped_fungus', 'crimson_fungus', 'nether_wart', 'netherexp:lightspores'], 'kubejs:nether_fizz', 'nethervinery:nether_fizz');
 
 	fermentingRecipe('honey', ['ice', 'sugar'], 'kubejs:coconut_cocktail', 'beachparty:coconut_cocktail', 'beachparty:coconut_open', 1, 1.0, 4800);
-	fermentingRecipe('brewinandchewin:red_rum', ['neapolitan:ice_cubes', 'sweet_berries', 'sugar'], 'kubejs:sweetberry_cocktail', 'beachparty:sweetberries_cocktail', 'glass_bottle', 1, 1.0, 4800);
+	fermentingRecipe('brewinandchewin:red_rum', ['neapolitan:ice_cubes', 'sweet_berries', 'sugar'], 'kubejs:sweetberries_cocktail', 'beachparty:sweetberries_cocktail', 'glass_bottle', 1, 1.0, 4800);
 	fermentingRecipe('milk', ['neapolitan:ice_cubes', 'cocoa_beans', 'sugar'], 'kubejs:cocoa_cocktail', 'beachparty:cocoa_cocktail', 'glass_bottle', 1, 1.0, 4800);
 	fermentingRecipe('milk', ['neapolitan:ice_cubes', 'farmersdelight:pumpkin_slice', 'farmersdelight:pumpkin_slice', 'sugar'], 'kubejs:pumpkin_cocktail', 'beachparty:pumpkin_cocktail', 'glass_bottle', 1, 1.0, 4800);
 	fermentingRecipe('brewinandchewin:beer', ['neapolitan:ice_cubes', 'melon_slice', 'neapolitan:strawberries', 'sugar'], 'kubejs:melon_cocktail', 'beachparty:melon_cocktail', 'glass_bottle', 1, 1.0, 4800);

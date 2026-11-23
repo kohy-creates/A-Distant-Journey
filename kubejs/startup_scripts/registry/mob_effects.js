@@ -210,14 +210,6 @@ StartupEvents.registry('mob_effect', registry => {
 			'addition'
 		);
 
-	create('forest_aura', Color.WHITE, 'Empowered by the forest.', 'beneficial')
-		.modifyAttribute(
-			global.attribute('health_regen'),
-			global.uuid('forest_aura'),
-			1,
-			'addition'
-		);
-
 	create('phoenix_defense', Color.ORANGE_DYE, 'Grants health regeneration and bonus armor.', 'beneficial')
 		.modifyAttribute(
 			global.attribute('health_regen'),
@@ -279,4 +271,31 @@ StartupEvents.registry('mob_effect', registry => {
 			'addition'
 		);
 
+	create('wrath', Color.DARK_RED, 'Your rage builds with each hit.', 'beneficial')
+		.modifyAttribute(
+			global.attribute('attack_damage'),
+			global.uuid('wrath'),
+			0.02,
+			'multiply_base'
+		)
+		.modifyAttribute(
+			global.attribute('armor'),
+			global.uuid('wrath'),
+			-1,
+			'addition'
+		);
+
+	create('fury', Color.DARK_RED, '40% increased damage', 'beneficial')
+		.modifyAttribute(
+			global.attribute('damage'),
+			global.uuid('fury'),
+			0.4,
+			'multiply_base'
+		)
+		.modifyAttribute(
+			global.attribute('armor'),
+			global.uuid('fury'),
+			-10,
+			'addition'
+		);
 });

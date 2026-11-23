@@ -93,7 +93,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 4.25d
-			x: -2.5d
+			x: -2.0d
 			y: -6.0d
 		}
 		{
@@ -103,7 +103,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 4.25d
-			x: 2.0356366564244723d
+			x: 1.5356366564244723d
 			y: -6.0d
 		}
 		{
@@ -113,7 +113,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.4441721319160516d
-			x: -2.5d
+			x: -2.0d
 			y: -5.654508757063013d
 		}
 		{
@@ -123,7 +123,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 2.2666666666666666d
-			x: 2.1133507335885326d
+			x: 1.6133507335885326d
 			y: -5.654508757063006d
 		}
 		{
@@ -132,7 +132,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
-			x: -2.5d
+			x: -2.0d
 			y: -6.5d
 		}
 		{
@@ -141,7 +141,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 1.0d
-			x: 2.0d
+			x: 1.5d
 			y: -6.5d
 		}
 		{
@@ -229,7 +229,7 @@
 				title: "Click to complete"
 				type: "checkmark"
 			}]
-			title: "&l&fMultiplayer:&r &dParties"
+			title: "&l&fBasics:&r &dMultiplayer Parties"
 			x: -1.5d
 			y: -4.5d
 		}
@@ -469,12 +469,13 @@
 				""
 				"Every season lasts &e90 in-game days total&r (divided into &ethree subseasons&r, each lasting &e30 days&r)."
 				""
-				"It really isn't as threatening as it sounds though! &oUnless you don't have enough food stocked up...&r"
-				""
 				"You can craft a &6Calendar&r to view current season and how much longer it's going to last for!"
-				""
 				"{@pagebreak}"
-				"Just because I don't want to make a separate entry for it, I'll just mention that days in &6ADJ&r are &eever so &oslightly&r&e longer&r compared to regular Minecraft. From 20 minutes to &e24&r."
+				"All plants grow in different seasons, which are always going to be listed in their item descriptions. Plants will grow &cmuch slower&r out of their respective season."
+				""
+				"You can build a &2greenhouse&r, making plants inside behave as if they were all-year growing crops regardless of the season outside. As long as a plant has any variant of a &bGlass Block&r placed up to 16 blocks above it, it will count as being inside of a &2greenhouse&r."
+				"{@pagebreak}"
+				"Days in &6ADJ&r are &eever so &oslightly&r&e longer&r compared to vanilla Minecraft. From 20 minutes up to &e24&r - purely so that every second is equal to 1 minute in the game."
 				""
 				"&cBeds&r also no longer skip time instantly, instead accelerating the flow of time around you. They can also be entered at any time of day to skip to the &9Night&r in case you wanted to e.g. farm monsters. Quite handy!"
 			]

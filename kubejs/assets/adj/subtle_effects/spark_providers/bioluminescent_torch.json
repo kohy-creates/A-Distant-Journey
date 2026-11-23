@@ -1,0 +1,23 @@
+{
+	"states": [
+		{
+			"name": "alexscaves:bioluminescent_torch"
+		}
+	],
+	"options": {
+		"preset": "torch",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 10938367
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 5007989
+				}
+			]
+		}
+	}
+}

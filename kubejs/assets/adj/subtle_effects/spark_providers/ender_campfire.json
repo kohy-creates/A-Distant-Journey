@@ -1,0 +1,26 @@
+{
+	"states": [
+		{
+			"name": "endergetic:ender_campfire",
+			"Properties": {
+				"lit": "true"
+			}
+		}
+	],
+	"options": {
+		"preset": "campfire",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 14257407
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 6504565
+				}
+			]
+		}
+	}
+}

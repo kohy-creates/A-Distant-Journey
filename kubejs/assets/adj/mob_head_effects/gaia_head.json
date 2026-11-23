@@ -1,0 +1,9 @@
+{
+	"items": [
+		"botania:gaia_head"
+	],
+	"entity_types": [
+		"botania:gaia_guardian"
+	],
+	"shader": "window_box:witch_pupil"
+}

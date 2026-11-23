@@ -66,7 +66,7 @@
 			quest_enhance_exclude_from_box_selection: false
 			rotation: 0.0d
 			width: 5.0d
-			x: 7.5d
+			x: 8.0d
 			y: -0.5d
 		}
 		{
@@ -211,8 +211,8 @@
 				type: "item"
 			}]
 			title: "The Tale of the Command Block"
-			x: 2.5d
-			y: 4.5d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -436,7 +436,7 @@
 				title: "The Beast Falls"
 				type: "advancement"
 			}]
-			title: "The Strong Turn Weak"
+			title: "The End..."
 			x: 11.0d
 			y: 8.0d
 		}
@@ -490,7 +490,7 @@
 				title: "Witness the horror rise from the dead"
 				type: "advancement"
 			}]
-			title: "The Weak Arise Stronger"
+			title: "The Beginning..."
 			x: 14.0d
 			y: 7.0d
 		}
@@ -571,6 +571,47 @@
 			hide_until_deps_complete: true
 			id: "2FC4D1B2E42E2124"
 			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "1391930BEA72E02D"
+					item: {
+						Count: 1
+						id: "trofers:small_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "adj:trophies/quest/chapter_5"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1C8CE64C1C03D894"
+					item: {
+						Count: 1
+						id: "trofers:small_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "adj:trophies/mobs/witherstormmod_wither_storm"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "704C9C0B3A1973CB"
+					item: {
+						Count: 1
+						id: "trofers:small_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "adj:trophies/mobs/witherstormmod_wither_storm_segment"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Destroy the Command Block and kill The Wither Storm, this time for good"

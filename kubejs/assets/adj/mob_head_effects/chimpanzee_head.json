@@ -1,0 +1,9 @@
+{
+	"items": [
+		"neapolitan:chimpanzee_head"
+	],
+	"entity_types": [
+		"neapolitan:chimpanzee"
+	],
+	"shader": "quark:oversaturate"
+}

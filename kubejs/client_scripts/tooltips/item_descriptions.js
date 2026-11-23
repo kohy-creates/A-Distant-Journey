@@ -2,10 +2,6 @@
 const TooltipEdits = {
 	TIP_CONFIG: [
 		{
-			items: 'hybrid_aquatic:dragonfish',
-			text: '\'Not to be confused with Dragon Fish\''
-		},
-		{
 			items: 'tide:dragon_fish',
 			text: '\'Not to be confused with Dragonfish\''
 		},
@@ -570,13 +566,25 @@ const TooltipEdits = {
 			items: "endergetic:booflo_vest",
 			text: "Grants 5 extra jumps"
 		},
+
 		{
 			items: '#c:chains',
 			text: 'Right click a Fence to form a catenary'
+		},
+		{
+			items: '#sereneseasons:greenhouse_glass',
+			text: 'Can be used to build greenhouses'
 		}
 	]
-}
-
-for (let [id, tooltip] of Object.entries(global.curioTooltips)) {
-	TooltipEdits.TIP_CONFIG.push({ items: id, text: tooltip });
 };
+
+const addedCurioTooltips = new Set();
+
+function syncCurioTooltips() {
+	console.log('Syncing Curio Tooltips...', `${Object.keys(global.curioTooltips).length} tooltips found`);
+	for (const [id, tooltip] of Object.entries(global.curioTooltips)) {
+		if (addedCurioTooltips.has(id)) continue;
+		addedCurioTooltips.add(id);
+		TooltipEdits.TIP_CONFIG.push({ items: id, text: tooltip });
+	}
+}

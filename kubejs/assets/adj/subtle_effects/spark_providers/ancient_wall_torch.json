@@ -1,0 +1,23 @@
+{
+	"states": [
+		{
+			"name": "netherexp:ancient_wall_torch"
+		}
+	],
+	"options": {
+		"preset": "wall_torch",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 14229034
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 6491667
+				}
+			]
+		}
+	}
+}

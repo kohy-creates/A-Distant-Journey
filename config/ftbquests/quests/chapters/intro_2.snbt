@@ -101,7 +101,7 @@
 			y: 7.714285714285701d
 		}
 		{
-			dependency: "37D84A7023231586"
+			dependency: "016211F002E380C5"
 			height: 1.3d
 			image: "heart_crystals:block/heart_crystal"
 			quest_enhance_exclude_from_box_selection: false
@@ -145,7 +145,7 @@
 			rotation: 0.0d
 			width: 2.0d
 			x: 2.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			click: "quest_enhance:text_v3:2.5:17:minecraft:defaultRemember to take breaks while playing!"
@@ -155,7 +155,57 @@
 			rotation: 0.0d
 			width: 2.5135066847075906d
 			x: 1.9846509481327885d
-			y: 8.229642923231388d
+			y: 8.729642923231388d
+		}
+		{
+			click: "quest_enhance:text_v3:1.0:17:minecraft:defaultYou can also just skip everything"
+			height: 0.3818652211962859d
+			image: ""
+			quest_enhance_exclude_from_box_selection: false
+			rotation: 0.0d
+			width: 5.936268438596809d
+			x: 14.109828910144884d
+			y: 3.124627448326777d
+		}
+		{
+			click: "quest_enhance:text_v3:0.85:17:minecraft:defaultand go straight to The Nether!"
+			height: 0.4583333333333333d
+			image: ""
+			quest_enhance_exclude_from_box_selection: false
+			rotation: 0.0d
+			width: 6.416666666666667d
+			x: 14.207109441212637d
+			y: 3.528590986500113d
+		}
+		{
+			click: "quest_enhance:text_v3:5.0:13:minecraft:alt<circle p=2 r=4 f=0.1><pendulum f=0.25 ang=15>A   B   C   D"
+			height: 0.3429397266647226d
+			image: ""
+			quest_enhance_exclude_from_box_selection: false
+			rotation: 0.0d
+			width: 0.561174098178637d
+			x: 8.222003427591751d
+			y: 5.806905768541142d
+		}
+		{
+			click: "quest_enhance:text_v3:5.0:13:minecraft:alt<circle p=2 r=4 f=0.1><pendulum f=0.25 ang=15>H  g   F e"
+			height: 0.3429397266647226d
+			image: ""
+			quest_enhance_exclude_from_box_selection: false
+			rotation: 30.0d
+			width: 0.561174098178637d
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			click: "quest_enhance:text_v3:5.0:13:minecraft:alt<circle p=4 r=4 f=0.1><pendulum f=0.25 ang=15>A   B  C   D"
+			height: 0.3429397266647226d
+			image: ""
+			quest_enhance_exclude_from_box_selection: false
+			rotation: -20.0d
+			width: 0.561174098178637d
+			x: 7.5d
+			y: 7.0d
 		}
 	]
 	order_index: 0
@@ -1168,7 +1218,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4C1D62C4B13A0CE0"]
+			dependencies: ["016211F002E380C5"]
 			description: [
 				"### HINT"
 				"&cLife Crystals&r generate underground semi-frequently. "
@@ -1201,11 +1251,11 @@
 				}
 			]
 			title: "Topped Off"
-			x: 8.5d
-			y: -1.5d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["37D84A7023231586"]
+			dependencies: ["016211F002E380C5"]
 			description: [
 				"### HINT"
 				"&cHeart Lanterns&r increase life regeneration of all friendly mobs around them by 1 HP/s."
@@ -1310,7 +1360,7 @@
 			}]
 			title: "You Can Do It!"
 			x: 0.5d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -1324,7 +1374,7 @@
 			}]
 			title: "A Full Week"
 			x: 2.0d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -1339,7 +1389,7 @@
 			}]
 			title: "Passing Time"
 			x: 3.5d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["610F4BE5F7B24952"]
@@ -1383,6 +1433,21 @@
 			title: "J For Jumbo"
 			x: 3.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["4C1D62C4B13A0CE0"]
+			entity_vis_size: 1.0f
+			id: "016211F002E380C5"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "Find a Life Crystal underground"
+			tasks: [{
+				id: "444A6FAB71100171"
+				item: "heart_crystals:heart_crystal"
+				type: "item"
+			}]
+			title: "Power Up!"
+			x: 8.5d
+			y: -1.5d
 		}
 	]
 	title: "0. First Steps"

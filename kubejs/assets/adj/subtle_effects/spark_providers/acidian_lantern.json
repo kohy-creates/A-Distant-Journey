@@ -1,0 +1,23 @@
+{
+	"states": [
+		{
+			"name": "endergetic:acidian_lantern"
+		}
+	],
+	"options": {
+		"preset": "campfire",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 13369599
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 6094965
+				}
+			]
+		}
+	}
+}

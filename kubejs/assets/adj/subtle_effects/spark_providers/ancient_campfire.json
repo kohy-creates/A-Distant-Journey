@@ -1,0 +1,26 @@
+{
+	"states": [
+		{
+			"name": "netherexp:ancient_campfire",
+			"Properties": {
+				"lit": "true"
+			}
+		}
+	],
+	"options": {
+		"preset": "campfire",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 14229034
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 6491667
+				}
+			]
+		}
+	}
+}

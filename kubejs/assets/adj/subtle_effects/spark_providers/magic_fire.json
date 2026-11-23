@@ -1,0 +1,31 @@
+{
+	"states": [
+		{
+			"name": "ars_nouveau:magic_fire"
+		}
+	],
+	"options": {
+		"preset": "fire",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 16247708
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 15051128
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 12862803
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 13607912
+				}
+			]
+		}
+	}
+}

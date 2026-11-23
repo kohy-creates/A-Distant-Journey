@@ -684,7 +684,8 @@ ServerEvents.tags('item', tags => {
 
 
 	tags.add('c:hidden_from_recipe_viewers', [
-		'chiselsandbits:block_bit'
+		'chiselsandbits:block_bit',
+		'chiselsandbits:chiseled_block'
 	].concat(global.blacklistedItemsArray));
 
 	tags.add('just_blahaj:haj', [
@@ -801,5 +802,13 @@ ServerEvents.tags('item', tags => {
 
 	tags.add('c:swords', [
 		/.*_sword/
+	]);
+
+	tags.add('etcetera:all_concrete', [
+		/^.*_concrete$/
+	]);
+
+	tags.add('supplementaries:concrete_powders', [
+		/^(?!.*waxed).*_concrete_powder$/
 	]);
 });

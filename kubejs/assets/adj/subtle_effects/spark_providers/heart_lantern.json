@@ -1,0 +1,23 @@
+{
+	"states": [
+		{
+			"name": "heart_crystals:heart_lantern"
+		}
+	],
+	"options": {
+		"preset": "lantern",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 16723532
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 7673123
+				}
+			]
+		}
+	}
+}

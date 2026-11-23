@@ -72,7 +72,8 @@
 		"file/FlowerPots+V.2.7.zip",
 		"file/Fantastic Flora.zip",
 		"prettier_water_rekindled",
-		"composite_material:cm_no_larger_swords",
+		"file/Ars_Loafers.zip",
+		"file/FA+Player-v1.1.zip",
 		"file/ADJ-Resources.zip",
 		"file/ADJ-Music.zip",
 		"file/kohara's Compat",
@@ -140,7 +141,8 @@
 			"file/FlowerPots+V.2.7.zip",
 			"file/Fantastic Flora.zip",
 			"prettier_water_rekindled",
-			"composite_material:cm_no_larger_swords",
+			"file/Ars_Loafers.zip",
+			"file/FA+Player-v1.1.zip",
 			"file/ADJ-Resources.zip",
 			"file/ADJ-Music.zip"
 		],
@@ -171,7 +173,10 @@
 			"composite_material:cm_reinforced_legacy",
 			"composite_material:cm_legacy",
 			"builtin/dye_depot",
-			"fluffy_fur:yonkafishy"
+			"fluffy_fur:yonkafishy",
+			"builtin/hmi3dbuckets",
+			"builtin/aether_tooltips",
+			"builtin/aether_colorblind"
 		],
 		"voiceChat": [
 			"black_icons",
@@ -204,7 +209,7 @@
 		},
 		"$$defaultoptional": {
 			"hidden": false,
-			"required": false,
+			"required": true,
 			"fixed_position": true
 		},
 		"$$hidden": {

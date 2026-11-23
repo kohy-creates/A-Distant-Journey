@@ -19,7 +19,6 @@
 			y: 10.5d
 		}
 		{
-			dependency: "2FC4D1B2E42E2124"
 			height: 5.0d
 			image: "adj:textures/other/bg_grass.png"
 			order: -999
@@ -60,7 +59,6 @@
 			y: 6.0d
 		}
 		{
-			dependency: "2FC4D1B2E42E2124"
 			height: 1.75d
 			image: "mythicmetals:block/unobtainium_block"
 			quest_enhance_exclude_from_box_selection: false
@@ -70,7 +68,6 @@
 			y: 8.0d
 		}
 		{
-			dependency: "2FC4D1B2E42E2124"
 			height: 1.75d
 			image: "witherstorm_delight:block/wither_stove_top_on"
 			quest_enhance_exclude_from_box_selection: false
@@ -80,7 +77,6 @@
 			y: 8.0d
 		}
 		{
-			dependency: "2FC4D1B2E42E2124"
 			height: 5.0d
 			image: "adj:textures/texts/chapter_6.png"
 			quest_enhance_exclude_from_box_selection: false

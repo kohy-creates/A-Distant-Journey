@@ -1,0 +1,23 @@
+{
+	"states": [
+		{
+			"name": "brazier:living_wall_torch"
+		}
+	],
+	"options": {
+		"preset": "wall_torch",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 12117580
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 5531939
+				}
+			]
+		}
+	}
+}

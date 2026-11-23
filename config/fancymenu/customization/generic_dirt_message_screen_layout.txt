@@ -3,13 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = generic_dirt_message_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1780443007392
+  last_edited_time = 1795301246799
   is_enabled = true
+  widget_identifier_revision = 2
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:a7f16711-563f-4fe8-8d29-516dc43ce252-1780442972166] = [groups:][instances:]
+  [loading_requirement_container_meta:b8b779f9-d0f2-4d3c-9925-0720108fa7b0-1795301227854] = [groups:][instances:]
 }
 
 menu_background {
@@ -59,8 +60,8 @@ menu_background {
 }
 
 menu_background {
-  instance_identifier = 92da6bac-60a1-4c9e-b8ad-a7b83f501897-1779536266918
-  background_type = video_mcef
+  instance_identifier = 974b828a-0158-469f-8ecd-00d1f2de91e1-1795301213613
+  background_type = video_rinku
   show_background = false
   loop = false
   volume = 1.0
@@ -126,13 +127,6 @@ menu_background {
   mouse_position_requires_hold = false
   opacity_multiplier = 1.0
   show_compile_errors = true
-}
-
-menu_background {
-  instance_identifier = 3c17fb0f-d7e9-4417-a01e-6ad767298c60-1779536266918
-  background_type = drippy_color_background
-  show_background = false
-  color = #FD5757FF
 }
 
 decoration_overlay {
@@ -230,29 +224,61 @@ decoration_overlay {
   string_lights_wind_strength = 1.0
   string_lights_flicker_speed = 1.0
   string_lights_left_center_to_top_center = true
-  string_lights_right_center_to_top_center = true
-  string_lights_bottom_left_to_top_center = false
-  string_lights_bottom_right_to_top_center = false
-  string_lights_top_left_to_top_right = true
-  string_lights_bottom_left_to_bottom_right = false
-  string_lights_loose_left_top = false
-  string_lights_loose_right_top = false
   string_lights_left_center_to_top_center_christmas_mode = false
-  string_lights_right_center_to_top_center_christmas_mode = false
-  string_lights_bottom_left_to_top_center_christmas_mode = false
-  string_lights_bottom_right_to_top_center_christmas_mode = false
-  string_lights_top_left_to_top_right_christmas_mode = false
-  string_lights_bottom_left_to_bottom_right_christmas_mode = false
-  string_lights_loose_left_top_christmas_mode = false
-  string_lights_loose_right_top_christmas_mode = false
   string_lights_left_center_to_top_center_color_hex = #FFD27A
+  string_lights_left_center_to_top_center_light_count = 0
+  string_lights_left_center_to_top_center_string_color_hex = #2B2B2BD2
+  string_lights_left_center_to_top_center_light_sizes = 
+  string_lights_left_center_to_top_center_light_colors = 
+  string_lights_right_center_to_top_center = true
+  string_lights_right_center_to_top_center_christmas_mode = false
   string_lights_right_center_to_top_center_color_hex = #FFD27A
+  string_lights_right_center_to_top_center_light_count = 0
+  string_lights_right_center_to_top_center_string_color_hex = #2B2B2BD2
+  string_lights_right_center_to_top_center_light_sizes = 
+  string_lights_right_center_to_top_center_light_colors = 
+  string_lights_bottom_left_to_top_center = false
+  string_lights_bottom_left_to_top_center_christmas_mode = false
   string_lights_bottom_left_to_top_center_color_hex = #FFD27A
+  string_lights_bottom_left_to_top_center_light_count = 0
+  string_lights_bottom_left_to_top_center_string_color_hex = #2B2B2BD2
+  string_lights_bottom_left_to_top_center_light_sizes = 
+  string_lights_bottom_left_to_top_center_light_colors = 
+  string_lights_bottom_right_to_top_center = false
+  string_lights_bottom_right_to_top_center_christmas_mode = false
   string_lights_bottom_right_to_top_center_color_hex = #FFD27A
+  string_lights_bottom_right_to_top_center_light_count = 0
+  string_lights_bottom_right_to_top_center_string_color_hex = #2B2B2BD2
+  string_lights_bottom_right_to_top_center_light_sizes = 
+  string_lights_bottom_right_to_top_center_light_colors = 
+  string_lights_top_left_to_top_right = true
+  string_lights_top_left_to_top_right_christmas_mode = false
   string_lights_top_left_to_top_right_color_hex = #FFD27A
+  string_lights_top_left_to_top_right_light_count = 0
+  string_lights_top_left_to_top_right_string_color_hex = #2B2B2BD2
+  string_lights_top_left_to_top_right_light_sizes = 
+  string_lights_top_left_to_top_right_light_colors = 
+  string_lights_bottom_left_to_bottom_right = false
+  string_lights_bottom_left_to_bottom_right_christmas_mode = false
   string_lights_bottom_left_to_bottom_right_color_hex = #FFD27A
+  string_lights_bottom_left_to_bottom_right_light_count = 0
+  string_lights_bottom_left_to_bottom_right_string_color_hex = #2B2B2BD2
+  string_lights_bottom_left_to_bottom_right_light_sizes = 
+  string_lights_bottom_left_to_bottom_right_light_colors = 
+  string_lights_loose_left_top = false
+  string_lights_loose_left_top_christmas_mode = false
   string_lights_loose_left_top_color_hex = #FFD27A
+  string_lights_loose_left_top_light_count = 0
+  string_lights_loose_left_top_string_color_hex = #2B2B2BD2
+  string_lights_loose_left_top_light_sizes = 
+  string_lights_loose_left_top_light_colors = 
+  string_lights_loose_right_top = false
+  string_lights_loose_right_top_christmas_mode = false
   string_lights_loose_right_top_color_hex = #FFD27A
+  string_lights_loose_right_top_light_count = 0
+  string_lights_loose_right_top_string_color_hex = #2B2B2BD2
+  string_lights_loose_right_top_light_sizes = 
+  string_lights_loose_right_top_light_colors = 
 }
 
 decoration_overlay {
@@ -329,6 +355,13 @@ decoration_overlay {
   confetti_color_hex = #FFFFFF
 }
 
+screen_audio_settings {
+  open_audio_volume = 1.0
+  open_audio_sound_channel = master
+  close_audio_volume = 1.0
+  close_audio_sound_channel = master
+}
+
 customization {
   action = backgroundoptions
   keepaspectratio = false
@@ -360,6 +393,7 @@ element {
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1200
+  auto_sizing_base_gui_scale = 0.0
   sticky_anchor = false
   anchor_point = mid-centered
   x = -165
@@ -446,6 +480,7 @@ element {
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1200
+  auto_sizing_base_gui_scale = 0.0
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = c907a8c8-a441-40cd-9a85-6455750870c6-1769517490917
@@ -508,6 +543,7 @@ element {
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1200
+  auto_sizing_base_gui_scale = 0.0
   sticky_anchor = false
   anchor_point = mid-centered
   x = -57
@@ -566,6 +602,7 @@ element {
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1200
+  auto_sizing_base_gui_scale = 0.0
   sticky_anchor = false
   anchor_point = mid-centered
   x = -54
@@ -651,7 +688,8 @@ element {
   fade_out = no_fading
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1200
+  auto_sizing_base_screen_height = 1203
+  auto_sizing_base_gui_scale = 3.0
   sticky_anchor = false
   anchor_point = mid-centered
   x = -150
@@ -660,8 +698,9 @@ element {
   height = 48
   stay_on_screen = true
   element_loading_requirement_container_identifier = 58b8d819-8cf4-4430-b30d-7d0e5be3c6cc-1766067700995
-  [loading_requirement_container_meta:58b8d819-8cf4-4430-b30d-7d0e5be3c6cc-1766067700995] = [groups:][instances:49a05fa5-7e67-44f4-86e4-d2dfa109424e-1766067845578;]
+  [loading_requirement_container_meta:58b8d819-8cf4-4430-b30d-7d0e5be3c6cc-1766067700995] = [groups:][instances:49a05fa5-7e67-44f4-86e4-d2dfa109424e-1766067845578;4e6e432f-8f69-42e8-8343-55765d16647a-1795301236404;]
   [loading_requirement:is_menu_title][requirement_mode:if_not][req_id:49a05fa5-7e67-44f4-86e4-d2dfa109424e-1766067845578] = menu.savingLevel
+  [loading_requirement:fancymenu_loading_requirement_is_mod_loaded][requirement_mode:if][req_id:4e6e432f-8f69-42e8-8343-55765d16647a-1795301236404] = asdasd
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -733,6 +772,7 @@ vanilla_button {
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1200
+  auto_sizing_base_gui_scale = 0.0
   sticky_anchor = false
   anchor_point = vanilla
   x = 220
@@ -772,12 +812,18 @@ vanilla_button {
   advanced_vertical_tilt_degrees = 0.0
   horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_degrees = 0.0
+  click_sound_volume = 1.0
+  click_sound_channel = master
+  hover_sound_volume = 1.0
+  hover_sound_channel = master
   label_scale = 1.0
   label_shadow = true
   nine_slice_border_x = 5
   nine_slice_border_y = 5
   nine_slice_slider_handle_border_x = 5
   nine_slice_slider_handle_border_y = 5
+  unhover_sound_volume = 1.0
+  unhover_sound_channel = master
   automated_button_clicks = 0
   is_hidden = false
 }

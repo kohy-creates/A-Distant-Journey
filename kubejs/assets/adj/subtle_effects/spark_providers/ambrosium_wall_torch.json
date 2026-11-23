@@ -1,0 +1,23 @@
+{
+	"states": [
+		{
+			"name": "aether:ambrosium_wall_torch"
+		}
+	],
+	"options": {
+		"preset": "wall_torch",
+		"color": {
+			"type": "subtle_effects:list",
+			"providers": [
+				{
+					"type": "subtle_effects:constant",
+					"color": 16118456
+				},
+				{
+					"type": "subtle_effects:constant",
+					"color": 7368532
+				}
+			]
+		}
+	}
+}
