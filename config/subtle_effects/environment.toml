@@ -91,7 +91,12 @@ spawnableBlocks = [
     "minecraft:lilac",
     "minecraft:rose_bush",
     "minecraft:pink_petals",
-    "minecraft:flowering_azalea"
+    "minecraft:flowering_azalea",
+    "adjblocks:cattail",
+    "adjblocks:bush",
+    "adjblocks:wildflowers",
+    "adjblocks:wildflowers_blue",
+    "adjblocks:wildflowers_red"
 ]
 defaultDensity = 3
 ignoredSeasons = "DEFAULT"

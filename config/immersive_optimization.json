@@ -43,6 +43,11 @@
     "galosphere:glow_flare": false,
     "witherstormmod:wither_storm_segment": false
   },
+  "blockEntities": {
+    "the_bumblezone:potion_candle": false,
+    "the_bumblezone:essence_block": false,
+    "*": true
+  },
   "version": 2,
   "name": "immersive_optimization"
 }

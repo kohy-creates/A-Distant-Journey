@@ -5,7 +5,7 @@
 		}
 	],
 	"options": {
-		"preset": "wall_torch",
+		"preset": "torch",
 		"color": {
 			"type": "subtle_effects:list",
 			"providers": [

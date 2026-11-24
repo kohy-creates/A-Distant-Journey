@@ -38,7 +38,7 @@ modpackMode = false
 
 [fog]
   # Fog rendering and the sky blue band
-  enabled = false
+  enabled = true
   onOverworld = true
   onNether = true
   onEnd = true

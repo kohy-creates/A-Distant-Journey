@@ -1,16 +1,16 @@
 {
 	"states": [
 		{
-			"name": "ars_nouveau:arcane_lantern"
+			"name": "ars_additions:sourcestone_lantern"
 		},
 		{
-			"name": "ars_nouveau:sourcestone_lantern"
+			"name": "ars_additions:polished_sourcestone_lantern"
 		},
 		{
-			"name": "ars_nouveau:polished_sourcestone_lantern"
+			"name": "ars_additions:archwood_lantern"
 		},
 		{
-			"name": "ars_nouveau:archwood_lantern"
+			"name": "ars_additions:golden_lantern"
 		},
 		{
 			"name": "fairylights:oil_lantern",

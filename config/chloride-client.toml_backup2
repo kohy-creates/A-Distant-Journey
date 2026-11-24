@@ -38,11 +38,11 @@ modpackMode = false
 
 [fog]
   # Fog rendering and the sky blue band
-  enabled = true
+  enabled = false
   onOverworld = true
   onNether = true
   onEnd = true
-  blueBand = false
+  blueBand = true
 
   # Overrides vanilla fog with the start/end/shape values below
   custom = false

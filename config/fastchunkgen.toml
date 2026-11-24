@@ -1,0 +1,120 @@
+version = 3
+# (Default: 12) Worker threads used for chunk generation and IO.
+globalExecutorParallelism = "default"
+# (Default: 32) Highest view/render distance allowed (vanilla caps at 32, max 125). Higher values need more memory.
+maxViewDistance = 64
+
+[fixes]
+	# (Default: true) Remove the log4j2 shutdown hook so shutdown logs survive, and force exit if a dedicated server hangs.
+	disableLoggingShutdownHook = "default"
+	# (Default: true) Fix thread-safety issues in vanilla chunk IO.
+	chunkIoThreadingIssues = "default"
+	# (Default: true) Fix thread-safety issues in the vanilla chunk system.
+	generalThreadingIssues = "default"
+	# (Default: true) Fix thread-safety issues in vanilla world generation. Required by threadedWorldGen.
+	worldGenThreadingIssues = "default"
+	# (Default: false) Crash instead of warn. Mainly for debugging.
+	enforceSafeWorldRandomAccess = "default"
+	# (Default: true) Fix vanilla world generation bugs.
+	vanillaWorldGenBugs = "default"
+
+[generalOptimizations]
+	# (Default: true) Reduce allocations in hot paths.
+	reduceAllocations = "default"
+	# (Default: true) Apply world generation allocation patches ahead of ModernFix.
+	overrideModernFixWorldGenAllocations = "default"
+	# (Default: true) Serve off-thread chunk requests without blocking the server thread.
+	optimizeAsyncChunkRequest = "default"
+	# (Default: true) Faster Perlin noise sampling. Produces identical terrain.
+	optimizeNoiseSampling = "default"
+	# (Default: true) Optimize chunk task scheduling.
+	optimizeScheduling = "default"
+	# (Default: 100000) Nanoseconds between chunk tasks run inside the tick loop. -1 disables.
+	midTickChunkTasksInterval = "default"
+	# (Default: -1) Chunks a player may have loading at once while exploring. Vanilla allows 4, each freed only when its chunk is fully ready. -1 matches the worker thread count (never below 4!!).
+	playerTicketSlots = "default"
+
+	[generalOptimizations.autoSave]
+		# (Default: ENHANCED) VANILLA, ENHANCED (save during idle time) or PERIODIC (every 6000 ticks). Keep the quotes.
+		mode = "PERIODIC"
+		# (Default: 20000) Milliseconds before a dirty chunk is auto-saved. ENHANCED only.
+		delay = "default"
+
+[ioSystem]
+	# (Default: true) Enable chunk IO optimizations.
+	optimizations = "default"
+	# (Default: 8192) Cached chunk writes before flushing to disk starts.
+	chunkDataCacheSoftLimit = "default"
+	# (Default: 32768) Hard cap on cached chunk writes.
+	chunkDataCacheLimit = "default"
+	# (Default: -1) Compression for newly saved chunks. -1 vanilla, 1 GZip, 2 Zlib, 3 none. Existing chunks stay readable.
+	chunkStreamVersion = "default"
+	# (Default: true) Check that the oversized chunk file exists before deleting it after each chunk save. Avoids an internal exception per save on Windows.
+	skipMissingExternalChunkDelete = "default"
+	# (Default: true) Write chunk section block palettes straight to NBT instead of through codecs. Same output.
+	directBlockStateEncoding = "default"
+	# (Default: false) Allocation-free chunk writer. Cannot fire Forge ChunkDataEvent.Save, so mods lose their per-chunk data. Back up first.
+	# Set to false for the following reasons: 
+	# Incompatible with architectury@9.2.14 (*) (defined in fastchunkgen) 
+	gcFreeChunkSerializer = "default"
+	# (Default: true) Use the rewritten IO implementation.
+	replaceImpl = "default"
+	# (Default: true) Load and unload chunks off the server thread.
+	async = "default"
+	# (Default: true) Regenerate chunks that fail to load. Genuienly regenerates them. Whatever was inside it is gone.
+	recoverFromErrors = "default"
+	# (Default: true) Fire Forge ChunkDataEvent.Save on async saves. Turning off may cause some data-loss.
+	fireForgeChunkDataEvents = "default"
+	# (Default: true) Fire Forge chunk data events and deserialize chunk capabilities on the server thread. Crash and data-loss risk on some mods.
+	forgeChunkDataEventsOnMainThread = "default"
+	# (Default: true) Snapshot block entity NBT on the server thread when a chunk save starts. Disabling it WILL improve performance but will also cause many possible problems in modded environments.
+	serializeBlockEntitiesOnMainThread = "default"
+
+[vanillaWorldGenOptimizations]
+	# (Default: true) Cheaper random instances during world generation.
+	optimizeRandomInstances = "default"
+	# (Default: true) Optimize vanilla world generation.
+	enabled = "default"
+	# (Default: true) Faster aquifer sampling.
+	optimizeAquifer = "default"
+	# (Default: true) Cache End biome lookups.
+	useEndBiomeCache = "default"
+	# (Default: true) Cache the hashCode of density function and spline records. Their value never changes anyways!
+	cacheDensityFunctionHashes = "default"
+	# (Default: true) Skip the NoiseChunk wrapper map for density functions.
+	skipRedundantDensityFunctionWrapping = "default"
+	# (Default: true) Compute noise that neighbouring chunks both need once instead of in each chunk.
+	shareNoiseBetweenChunks = "default"
+	# (Default: true) Cache unchanged density function nodes during chunk mapping instead of rebuilding them, and eliminate redundant calculations
+	identityPreservingDensityFunctionMapAll = "default"
+	# (Default: true) Skip post-processing fluid ticks and shape updates that provably change nothing.
+	skipNoOpPostProcessing = "default"
+	# (Default: true) Faster biome parameter lookup with the same results.
+	flatClimateSearch = "default"
+	# (Default: true) Sample height-independent climate noise once per biome column.
+	columnClimateCache = "default"
+	# (Default: true) Build the surface rule tree once per worker and some less GC churns.
+	reuseSurfaceRules = "default"
+	# (Default: true) Hold the terrain noise interpolation arrays only while a chunk's terrain is being filled instead of for as long as the unfinished chunk exists.
+	releaseInterpolationSlices = "default"
+	# (Default: true) Drop a chunk's terrain noise state once its caves are carved instead of keeping it until the chunk is finished. Nothing reads it after that step, and it is rebuilt if anything asks again.
+	releaseNoiseChunkAfterCarving = "default"
+	# (Default: true) Drop a chunk's cave carving masks once its features are placed instead of keeping them until the chunk is finished. Features are the last step that reads them, and an unfinished chunk keeps two of them, 24 KB, for as long as it waits at the edge of the loaded area.
+	releaseCarvingMasksAfterFeatures = "default"
+
+[threadedLighting]
+	# (Default: true) Run light updates on a dedicated thread.
+	enabled = "default"
+
+[threadedWorldGen]
+	# (Default: true) Generate chunks on multiple threads.
+	enabled = "default"
+	# (Default: true) Generate features (trees, ores, structures) in parallel. Will improve performance significantly.
+	allowThreadedFeatures = "default"
+	# (Default: true) Lock fewer neighbouring chunks per generation step. More parallelism = more performance.
+	reduceLockRadius = "default"
+	# (Default: true) Schedule generation tasks off the server thread.
+	asyncScheduling = "default"
+	# (Default: true) Abort an in-progress generation step when the chunk is no longer requested. Disable this if it causes any issue with pre-gen mods!
+	allowGenerationCancellation = "default"
+

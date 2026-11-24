@@ -5,7 +5,7 @@
 		}
 	],
 	"options": {
-		"preset": "torch",
+		"preset": "lantern",
 		"color": {
 			"type": "subtle_effects:list",
 			"providers": [

@@ -1,0 +1,13 @@
+#The worker threads of the graphics driver run at the priority of the render thread. Without this they wait behind Java's compiler and garbage collector threads whenever every core is busy. Windows only.
+driverThreads = true
+#Java's compiler and background garbage collector threads run one step below the render thread instead of level with it, so they stop taking its core. They still run ahead of everything else. Windows only.
+backgroundThreads = true
+#The render thread runs at the highest priority on every PC. The game itself only does that on CPUs with more than 4 threads, so on smaller CPUs the render thread waits behind Java's compiler threads.
+renderThread = true
+#While the game window is focused, the render thread, the graphics driver's threads and the input and sound threads run at the top priority Windows gives a normal program. On a busy CPU they otherwise lose their core for a whole time slice (15 to 30 ms) to whichever helper thread woke up last. They go back to their usual priority as soon as the window loses focus. Only used on CPUs with 5 to 8 threads: with 4 or fewer it starves the world thread, with more there is nothing to gain. Windows only.
+topPriorityWhileFocused = true
+#Threads of Java's shared worker pool (parallel streams and async tasks from mods) run below normal priority.
+sharedPool = false
+#Log what was changed once a minute.
+log = false
+

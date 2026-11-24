@@ -1,8 +1,9 @@
 {
   "configVersion": 2,
   "unlockAllArchiveEntries": false,
-  "unlockAllGameEntries": false,
+  "unlockAllGameEntries": true,
   "showIntroductionEntry": true,
+  "contentEditingEnabled": true,
   "archiveLookupRequiresPhone": true,
   "sendAntazonUnlockEmail": true,
   "passwordHintAfterFailures": 3,
@@ -48,11 +49,12 @@
   },
   "client": {
     "inventoryComputerButton": false,
+    "contentEditing": false,
     "defaultPreferences": {}
   },
   "jei": {
-    "antazonPrices": true,
-    "sellValues": true,
-    "taskRewards": true
+    "antazonPrices": false,
+    "sellValues": false,
+    "taskRewards": false
   }
 }

@@ -10,8 +10,8 @@
 		{
 			"type": "filter",
 			"pattern": {
-				"namespace": "^evilcraft$",
-				"path": "^mob_effect/paling$"
+				"namespace": "^minecraft$",
+				"path": "^effect/dither$"
 			}
 		},
 		{

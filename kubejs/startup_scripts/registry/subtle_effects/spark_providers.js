@@ -90,7 +90,7 @@ const SubtleEffectsSparkProviders = {
 	},
 	animated_torch: {
 		states: ['botania:animated_torch'],
-		preset: 'torch',
+		preset: 'lantern',
 		colors: SubtleEffectsSparkColors.redstone,
 		addWallTorch: true
 	},

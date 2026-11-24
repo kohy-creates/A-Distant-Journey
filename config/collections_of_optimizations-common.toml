@@ -1392,6 +1392,9 @@
 	framebufferBlit = true
 	#Give back the graphics memory of an off-screen picture that a mod threw away without releasing it. Normally that memory stays taken until the game closes. Only frees what the graphics card confirms belongs to that picture, and writes a line to the log naming it. Costs nothing while no mod leaks. Client.
 	freeLeakedRenderTargets = true
+	#Milliseconds between refreshes of the text on the F3 debug screen. Vanilla rebuilds every line on every frame drawn, which means looking up chunks, entities and the integrated server and formatting dozens of strings, and the mods that add their own lines run again each time too. The text is rebuilt at most this often instead and the last copy is shown in between, so lines from other mods stay and keep updating. The FPS line only changes once a second anyway. 0 rebuilds on every frame. Client.
+	#Range: 0 ~ 1000
+	debugScreenRefreshMs = 100
 
 #Create: Solar patches.
 [createsolar]

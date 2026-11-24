@@ -12,10 +12,10 @@
     "lookChosen": true,
     "pauseWhileOpen": false,
     "fullscreenDesktop": false,
-    "frameLeft": 0.0,
-    "frameTop": 0.0,
-    "frameWidth": 0.0,
-    "frameHeight": 0.0,
+    "frameLeft": 0.17031249403953552,
+    "frameTop": 0.16750000417232513,
+    "frameWidth": 0.6875,
+    "frameHeight": 0.7149999737739563,
     "quietNotifications": false,
     "interfaceSounds": true,
     "interfaceVolume": 60,
@@ -51,10 +51,12 @@
   "completedMerchantTours": [],
   "taskGroupCollapsed": {},
   "resumeSnapshots": {
-    "workspace:c39e052a-6d82-490b-b74b-8092e2cd4a71": "{\"windows\":[],\"apps\":{\"files\":{\"directory\":\"/pictures\",\"selected\":\"\",\"descending\":false,\"sort_by_size\":false,\"scroll\":0},\"text\":{},\"paint\":{},\"archive\":{\"gallery\":false,\"favorites\":false,\"recent\":false,\"search\":\"\",\"scroll\":0,\"detail_scroll\":0,\"folder\":\"antarchy:antlas\"},\"merchant\":{\"view\":\"browse\",\"search\":\"\",\"currency\":\"\",\"sort\":\"newest\",\"page\":0,\"canPay\":false,\"showDispatched\":false},\"antazon\":{\"mode\":\"catalog\",\"return_mode\":\"catalog\",\"category\":\"ALL\",\"product\":\"\"},\"antmail\":{\"mode\":\"inbox\"},\"settings\":{\"category\":\"account\"},\"tasks\":{},\"games\":{\"gallery\":true}}}"
+    "workspace:c39e052a-6d82-490b-b74b-8092e2cd4a71": "{\"windows\":[{\"type\":\"ANTMAIL\",\"x\":112,\"y\":52,\"restore_x\":112,\"restore_y\":52,\"minimized\":false,\"maximized\":false}],\"apps\":{\"files\":{\"directory\":\"/pictures\",\"selected\":\"\",\"descending\":false,\"sort_by_size\":false,\"scroll\":0},\"text\":{},\"paint\":{},\"archive\":{\"gallery\":false,\"favorites\":false,\"recent\":false,\"search\":\"\",\"scroll\":0,\"detail_scroll\":0,\"folder\":\"antarchy:antlas\"},\"merchant\":{\"view\":\"browse\",\"search\":\"\",\"currency\":\"\",\"sort\":\"newest\",\"page\":0,\"canPay\":false,\"showDispatched\":false},\"antazon\":{\"mode\":\"catalog\",\"return_mode\":\"catalog\",\"category\":\"ALL\",\"product\":\"\"},\"antmail\":{\"mode\":\"inbox\"},\"settings\":{\"category\":\"account\"},\"tasks\":{},\"games\":{\"gallery\":true}}}"
   },
   "notificationHistories": {},
-  "editorDrafts": {},
+  "editorDrafts": {
+    "workspace:c39e052a-6d82-490b-b74b-8092e2cd4a71|text": "{\"path\":\"/documents/untitled.txt\",\"content\":\"dsadasd\",\"saved\":\"\",\"cursor\":7}"
+  },
   "archiveBookmarks": {},
   "recentArchiveEntries": {
     "workspace:c39e052a-6d82-490b-b74b-8092e2cd4a71": [

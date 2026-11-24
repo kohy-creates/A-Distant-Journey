@@ -2,14 +2,10 @@
 version = 0
 redstoneBlockDust = true
 redstoneBlockDustDensity = "DEFAULT"
-redstoneDustEmittingBlocks = [
-    "minecraft:redstone_block"
-]
+redstoneDustEmittingBlocks = ["minecraft:redstone_block"]
 glowstoneBlockDust = true
 glowstoneBlockDustDensity = "MINIMAL"
-glowstoneDustEmittingBlocks = [
-    "minecraft:glowstone"
-]
+glowstoneDustEmittingBlocks = ["minecraft:glowstone"]
 netherOnlyGlowstoneBlockDust = false
 beehivesHaveSleepingZs = true
 torchflowerSmoke = "UPDATED"
@@ -40,7 +36,21 @@ farmlandDestroyEffects = true
 amethystSparkleDisplayType = "ON"
 amethystSparkleEmittingBlocks = [
     "minecraft:amethyst_block",
-    "minecraft:budding_amethyst"
+    "minecraft:budding_amethyst",
+    "createutilities:amethyst_tiles",
+    "galosphere:amethyst_stairs",
+    "galosphere:amethyst_slab",
+    "galosphere:chiseled_amethyst",
+    "galosphere:amethyst_lamp",
+    "galosphere:smooth_amethyst",
+    "galosphere:smooth_amethyst_stairs",
+    "galosphere:smooth_amethyst_slab",
+    "createutilities:small_amethyst_tiles",
+    "v_slab_compat:galosphere/smooth_amethyst_vertical_slab",
+    "galosphere:amethyst_bricks",
+    "galosphere:amethyst_brick_stairs",
+    "galosphere:amethyst_brick_slab",
+    "v_slab_compat:galosphere/amethyst_brick_vertical_slab",
 ]
 amethystSparkleSounds = true
 floweringAzaleaPetals = true
@@ -55,9 +65,7 @@ lavaCauldronEffects = true
 enderEyePlacedRings = true
 enderEyePlacedRingsDuration = 30
 enderEyePlacedParticlesDisplayType = "BOTH"
-eyeColors = [
-    [ "minecraft:ender_eye", { r = 122, g = 186, b = 171 } ]
-]
+eyeColors = [["minecraft:ender_eye", { r = 122, g = 186, b = 171 }]]
 endPortalFrameParticlesDisplayType = "SMOKE"
 endPortalFrameParticlesDensity = 1.0
 replaceOminousVaultConnection = true
@@ -143,7 +151,7 @@ dustyBlocks = [
     "minecraft:brown_concrete_powder",
     "minecraft:green_concrete_powder",
     "minecraft:red_concrete_powder",
-    "minecraft:black_concrete_powder"
+    "minecraft:black_concrete_powder",
 ]
 whileFallingDust = true
 whileFallingDustStartDistance = 3
