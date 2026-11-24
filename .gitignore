@@ -151,3 +151,4 @@ config/collections_of_optimizations/warm-classes.txt
 config/controlflex/keyboard/chat_history.json
 chiselsandbits/clipboard.dat
 config/sizeable_foliage.properties
+antos/client.json
