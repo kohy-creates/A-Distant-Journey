@@ -128,6 +128,14 @@
 	skipUploadBenchmark = true
 	#Mark a map region's other cave layers as outdated once per frame instead of once for every chunk written into it. In singleplayer every region is world save data, so stock looks up and flags the same region in every loaded cave layer for each chunk the map writer visits, which is about half of the writer's render thread time and grows with every cave depth you have mapped. The flags only ever get set, so the map is identical. Client.
 	markLayersOnce = true
+	#A block change, a light update or a chunk loading or unloading made the map redraw that chunk and all eight around it on the render thread. The map does not read across chunk borders, so only the chunk that changed is redrawn. Looks the same. Client.
+	markOnlyChangedChunk = true
+	#Every chunk that loads made the map work out the colour of all 4096 pixels of its 4x4 chunk square again on the render thread. A square that keeps changing is redrawn at most this often in milliseconds, so freshly explored land can take that long to show up on the map. 0 disables. Client.
+	#Range: 0 ~ 10000
+	tileRefreshMillis = 1500
+	#How many already mapped chunks the map writer may walk past per millisecond. Stock keeps walking through every loaded chunk until it finds one to update or has used 8.7 % of the frame, so with a large loaded area it always takes that 8.7 %, even standing still. 16 still visits 4000 loaded chunks four times a second. The world map screen is never limited. 0 restores the stock behaviour. Client.
+	#Range: 0 ~ 10000
+	skippedChunksPerMilli = 16
 
 #GeckoLib patches.
 [geckolib]
@@ -215,6 +223,8 @@
 	compiledPatterns = true
 	#Keep each compiled animation class EMF makes and hand the same class back whenever a model with the same animations is built again. EMF turns the animation formulas of every animated model into a small class with its own class loader each time that model is built, and models are built again at runtime, for example statues and other blocks or mobs that make a fresh model. Every rebuilt model left a dead class behind, and each time the garbage collector found a dead class it had to sweep the whole compiled code cache during its remark pause, which turned a 35 ms pause into a 70 ms freeze every minute or so. With this on the bytes of each new animation class are compared with the classes already made and an identical class is reused, so no animation class ever dies and the remark pause stays short. Animations run the same code as before. Client.
 	reuseCompiledAnimations = true
+	#Write the boxes of resource pack mob models straight into the vertex buffer the way Embeddium already does for vanilla models. EMF replaces the models of most vanilla mobs and moved every corner of every box three times over through the slow path. Looks the same. Client.
+	fastModelRender = true
 
 #Shoulder Surfing Reloaded patches.
 [shouldersurfing]
@@ -1366,11 +1376,11 @@
 	cacheBiomeLookups = true
 	#Spread the client tick of mobs over the next few frames instead of doing all of them inside the one frame that runs the tick. The client tick already makes one frame out of every twenty several milliseconds longer than the rest, and with many mobs around most of that is mob ticks, so those frames are the 1% lows. A mob that has not had its tick yet is drawn exactly where the tick starts it, so nothing moves differently on screen. Every mob still ticks once per tick, all of them before the next tick starts. The player, the camera, riders and ridden mobs tick as before. Client.
 	spreadEntityTicks = true
-	#When the game runs far faster than a mob's pose needs to change, build each mob's model once every few frames and draw the same model again in between, moved to where the mob and the camera are this frame. At several hundred frames per second most of the frame goes into posing and building the same mobs again and again, and a screen can only show a new pose once per refresh, so each mob is rebuilt at least once per monitor refresh (at least 120 times a second) and only the frames in between reuse it. Below about twice the refresh rate, and with a shader pack, every frame builds every mob as before. Players, hurt or dying mobs, leashed or glowing mobs and any mob whose renderer draws outside the shared buffers are always built every frame. Client.
+	#When the game runs far faster than a mob's pose needs to change, build each mob's model once every few frames and draw the same model again in between, moved to where the mob and the camera are this frame. At several hundred frames per second most of the frame goes into posing and building the same mobs again and again, and a screen can only show a new pose once per refresh, so each mob is rebuilt at least once per monitor refresh (at least 120 times a second) and only the frames in between reuse it. Below about twice the refresh rate, and with a shader pack, every frame builds every mob as before. Players, leashed or glowing mobs and any mob whose renderer draws outside the shared buffers are always built every frame. Client.
 	reuseEntityMeshes = true
 	#The same as reuseEntityMeshes for block entities with a renderer, such as chests, banners, signs, statues and notice boards: each is built at least once per monitor refresh and drawn again from that build on the frames in between. Castles and villages hold hundreds of them, and drawing them is most of what a frame does there. Client.
 	reuseBlockEntityMeshes = true
-	#With reuseEntityMeshes on, a mob shorter than this many pixels on your screen gets a new pose half as often, and one under half this height a third as often. It still moves smoothly every frame; only its limbs and animation step a little less often, which is hard to see at that size. Worked out from the mob's size, its distance, your field of view and window height. 0 turns this off. Client.
+	#With reuseEntityMeshes on, a mob shorter than this many pixels on your screen gets a new pose half as often, and one under half this height a third as often. It still moves smoothly every frame; only its limbs and animation step a little less often, which is hard to see at that size. Worked out from the mob's size, its distance, your field of view and window height. Below twice the refresh rate only mobs under half this height are drawn this way, and never under 30 poses a second. 0 turns this off. Client.
 	#Range: 0 ~ 2000
 	reuseSmallMobPixels = 120
 	#With spreadEntityTicks on, spread the client ticks of dropped items, experience orbs, arrows and thrown items the same way. Each of these is drawn from values its tick interpolates between, so drawing it exactly where its tick starts it shows the same position, spin and bob. After a fight there can be dozens of drops on the ground, each moving on the client every tick. Client.
@@ -1395,6 +1405,14 @@
 	#Milliseconds between refreshes of the text on the F3 debug screen. Vanilla rebuilds every line on every frame drawn, which means looking up chunks, entities and the integrated server and formatting dozens of strings, and the mods that add their own lines run again each time too. The text is rebuilt at most this often instead and the last copy is shown in between, so lines from other mods stay and keep updating. The FPS line only changes once a second anyway. 0 rebuilds on every frame. Client.
 	#Range: 0 ~ 1000
 	debugScreenRefreshMs = 100
+	#A loading chunk asked for the same sections around it to be redrawn about 1600 times, once for every section of sky light, block light and blocks. Ask once per section. Looks the same. Client.
+	markLoadedChunkOnce = true
+	#Answer whether a feature may grow in a biome from the biomes of the chunk sections around it. The exact biome, which hashes eight corners, is only looked up where those biomes disagree. Same answer. Needs placeFeaturesWithoutStreams.
+	featureBiomeMasks = true
+	#Move a chunk section to a bigger block palette by translating each palette entry once instead of looking up all 4096 blocks one by one. Same palette and same blocks.
+	copyPalettesByEntry = true
+	#List the distinct blocks or biomes of a chunk section with a bit mask instead of searching a growing array for every entry. Same values in the same order.
+	listPaletteWithMask = true
 
 #Create: Solar patches.
 [createsolar]
@@ -1751,6 +1769,8 @@
 	#Let a limpet look for players to be scared of this many ticks apart instead of every tick. Every limpet that is not already fleeing asks the level for every player inside an eight by eight by eight block box every single tick, allocating a capturing filter and a consumer each time, purely to push its scared timer back up to one hundred ticks. Since the timer only counts down one per tick, refreshing it ten times a second is a hundred times more often than it needs to be. With this at ten a limpet can take up to half a second longer to notice a player walking up to it, and once it is scared it stays scared exactly as long as before. Set to 1 for stock behaviour.
 	#Range: 1 ~ 200
 	limpetScareScanInterval = 10
+	#Every inventory slot read and every equipment read asks Species whether a disguise is being ticked on this thread, through a thread local. With this on it first looks at the counter of disguises being ticked anywhere, which is zero almost always. Same result.
+	skipIdleDisguiseCheck = true
 
 #Cooking for Blockheads patches.
 [cookingforblockheads]
@@ -1860,6 +1880,8 @@
 	clearStaleSyncedData = true
 	#Hand the armour models the same resource location every time they ask for their model, texture or animation file instead of building and validating a new one on every draw. A cultist wearing its armour asked three times per frame. The transmog aware generic armour model is left alone. Client.
 	reuseArmorModelLocations = true
+	#Every mob on screen built a whole new empty spell record every frame just to learn that it is not casting anything. They share one empty record now, the way players without spells already do. Looks the same. Client.
+	shareEmptySyncedData = true
 
 #Hostile Neural Networks patches.
 [hostilenetworks]
@@ -2325,6 +2347,8 @@
 [embeddium]
 	#Keep each chunk shader source after it is first read. Embeddium reads every shader file again on each renderer reload by asking the class loader, which searches every mod jar and throws a missing file error for each one that lacks it, a stall of over 100 ms in a large pack. Shader files inside mod jars never change while the game runs. Client.
 	cacheShaderSources = true
+	#Do not fill the block copy of an empty chunk section with air again when it still holds air from the section meshed before it. Every chunk mesh copies 27 sections and most of the ones above the ground are empty.
+	keepAirSections = true
 
 #All The Leaks patches.
 [alltheleaks]
@@ -2512,4 +2536,14 @@
 	reuseFlowerNoise = true
 	#Keep the lush cave flowers in open air. The lush cave flower patch only checks the block under the spot it picked, so it also plants grottal blooms and lampblossoms inside dirt and moss underground and in lush cave pools, deleting the stone or water that was there and leaving glowing flowers buried in the walls, and its glowing tall tulips keep growing up into a low cave ceiling, replacing the ceiling blocks with more tulip on top of the flower head. With this on the flowers only go where the patch meant them to, on air, grass or moss carpet, and a tall tulip stops at its head under a low ceiling. Only changes chunks generated from now on. Server. Turn it off for stock behaviour.
 	keepLushFlowersInOpenAir = true
+
+#Bye Pregen patches.
+[byepregen]
+	#Read the chunk section a feature check needs through the generation region class instead of through the interface Bye Pregen adds to it. The interface checks are slow on a class many mods add interfaces to, worse with many generation threads. Same section.
+	directSectionLookup = true
+
+#Flerovium patches.
+[flerovium]
+	#Flerovium replaces the frustum test of Embeddium with one that only looks at the middle of a box and treats every box as one chunk section, 18 blocks wide. Block entities with a bigger render box disappear while a part of them is still on screen, and small ones keep being drawn 9 blocks outside of the screen. With this on the real size of the box is used, chunk sections give the same answer as before.
+	realBoxSize = true
 

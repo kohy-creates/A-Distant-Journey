@@ -1,0 +1,15 @@
+
+[general]
+	#Maximum number of intermediate crafting levels LeapCraft may expand.
+	#Allowed range: 1-10. The default is 3.
+	#Range: 1 ~ 10
+	maxDepth = 3
+	#Maximum number of planning nodes expanded by one leap-crafting request.
+	#The request is aborted safely when this limit is reached.
+	#Range: 100 ~ 1000000
+	maxSearchNodes = 25000
+	#Maximum time in milliseconds spent planning one leap-crafting request on the server thread.
+	#The request is aborted safely when this limit is reached.
+	#Range: 5 ~ 1000
+	searchBudgetMs = 50
+

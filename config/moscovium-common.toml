@@ -1,0 +1,22 @@
+#Close idle resource pack ZipFiles to release native inflater buffers.
+enableZipIdleClose = true
+#Delay in milliseconds before trimming idle ZipFiles after a resource reload.
+#Range: 0 ~ 60000
+zipPostReloadCloseDelayMs = 2000
+#Idle timeout in milliseconds before closing an unused resource pack ZipFile.
+#Range: 1000 ~ 600000
+zipIdleTimeoutMs = 15000
+#Interval in milliseconds between idle ZipFile cleanup sweeps.
+#Range: 1000 ~ 300000
+zipSweepIntervalMs = 10000
+#Cancel pending reload tasks and close orphaned prepared artifacts when a resource reload fails.
+enableReloadFailureCleanup = true
+#Propagate async TextureManager reload failures and release superseded PreloadedTexture images.
+enableTextureReloadFixes = true
+#Close opened audio InputStreams if sound stream initialization fails.
+enableSoundStreamLeakFix = true
+#Release dynamic pack icon textures when reloading or closing the pack selection screen.
+enablePackIconRelease = true
+#Enable debug logs for ZIP handle trimming and reload artifact cleanup.
+debugLogging = false
+

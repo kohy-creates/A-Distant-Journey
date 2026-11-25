@@ -1218,7 +1218,7 @@ LootJS.modifiers((event) => {
 			event.addEntityLootModifier(boss)
 				.pool(pool => {
 					pool.addLoot(
-						LootEntry.of('trofers:large_pillar', 1, `{BlockEntityTag:{Trophy:'adj:trophies/${boss.replace(':', '_')}'}}`)
+						LootEntry.of('trofers:large_pillar', 1, `{BlockEntityTag:{Trophy:'adj:trophies/mobs/${boss.replace(':', '_')}'}}`)
 							.when(c => c.randomChance(0.1))
 					);
 				});

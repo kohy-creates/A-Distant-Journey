@@ -56,7 +56,7 @@ EntityEvents.death(event => {
                         `/tellraw @a ["",{"selector":"${player.getUuid()}", "color": "yellow"},{"text": " has killed the ${data.monsterKills[type]}${getOrdinal(data.monsterKills[type])} ", "color": "yellow"},{"translate":"${entity.getEntityType().getDescriptionId()}", "color": "yellow"}]`
                     );
                 }
-                player.give(Item.of('trofers:large_plate', `{BlockEntityTag:{Trophy:'adj:trophies/${type.replace(':', '_')}'}}`));
+                player.give(Item.of('trofers:large_plate', `{BlockEntityTag:{Trophy:'adj:trophies/mobs/${type.replace(':', '_')}'}}`));
             }
         }
     }

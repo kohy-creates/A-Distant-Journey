@@ -256,3 +256,5 @@ minecraft:textures/entity/minecart.png
 minecraft:textures/entity/zombie_villager/profession/weaponsmith.png
 minecraft:textures/entity/zombie_villager/profession/leatherworker.png
 betterarcheology:textures/entity/zombie_villager/profession/archeologist.png
+beachparty:textures/entity/zombie_villager/profession/sandymerchant.png
+dye_depot:textures/block/rose_concrete_powder.png

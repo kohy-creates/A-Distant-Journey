@@ -1,0 +1,426 @@
+#Allow explicit visual reductions such as distance sampling, simplified models, omitted stack copies, and omitted shader shadows.
+#Disabled by default: effective render settings preserve complete geometry and shadows without overwriting stored per-feature values.
+#Conservative frustum culling, light caches, persistent meshes, and other exact optimizations remain enabled.
+lossyRendering = false
+
+[fanParticles]
+	#Maximum Encased Fan particles spawned per client tick. Set to 0 to disable them.
+	#Range: 0 ~ 4096
+	maxPerTick = 96
+	#Distance in blocks up to which nearPercent is used for Encased Fan particles.
+	#Range: 1 ~ 512
+	nearDistance = 16
+	#Distance in blocks up to which midPercent is used; farther particles use farPercent.
+	#Range: 1 ~ 1024
+	midDistance = 32
+	#Percentage of Encased Fan particles retained within nearDistance.
+	#Range: 0 ~ 100
+	nearPercent = 80
+	#Percentage of Encased Fan particles retained between the near and mid distances.
+	#Range: 0 ~ 100
+	midPercent = 50
+	#Percentage of Encased Fan particles retained beyond midDistance.
+	#Range: 0 ~ 100
+	farPercent = 25
+
+[shaderFlywheel]
+	#Opt in to forcing Colorwheel's shaderpack compatibility check to accept fallback rendering.
+	#This can affect either Colorwheel backend; hardware capability checks remain unchanged.
+	#Experimental: fallback may cause shaderpack-specific rendering issues and is not guaranteed visually lossless.
+	#Default false follows Colorwheel's own compatibility and fallback settings. Existing explicit values are preserved.
+	forceColorwheelFallback = false
+
+[blazeBurner]
+	#Bulk-write static Blaze Burner templates in Oculus' exact extended entity format.
+	#Unsupported formats, transforms, consumers, and scrolling flame UVs use Create's original renderer.
+	extendedVertexCache = true
+	#Cache whether a basin or fluid tank is above a Blaze Burner and invalidate it on block changes.
+	cacheBlockAbove = true
+	#Keep ambient particles within 16 blocks, emit one quarter from 16 to 32 blocks, and omit them farther away.
+	#Requires lossyRendering; exact mode keeps Create's original particle behavior.
+	particleLod = true
+	#Render Blaze Burners in Oculus shader shadow passes.
+	#This stored preference can omit shadows only while lossyRendering is true; exact mode forces the effective value on.
+	renderShaderShadows = false
+
+[frogport]
+	#Bulk-write stock Frogport body and head models in Oculus' exact extended terrain format.
+	#The tongue, animated packages, unsupported formats, overlays, and transforms use Create's original renderer.
+	extendedVertexWriter = true
+	#Upload stock Frogport body and head meshes once and retain rigid per-instance transforms.
+	#Requires Embeddium, Oculus, an active shaderpack, and Flywheel's backend to be off.
+	persistentVbo = true
+	#Draw compatible Frogport VBO buckets with the Oculus rigid-instance shader variant.
+	#Unsupported shader stages or hardware fall back to exact persistent VBO draws.
+	instancedDraw = true
+	#FULL keeps all Frogport shadow geometry.
+	#FAR_SIMPLIFIED keeps only the stock body beyond shadowSimplifiedDistance.
+	#DISABLED omits the dynamic block-entity shadow; the chunk-baked base still casts a shadow.
+	#Exact mode forces the effective value to FULL without changing this stored preference.
+	#Allowed Values: FULL, FAR_SIMPLIFIED, DISABLED
+	shadowMode = "FULL"
+	#Distance where FAR_SIMPLIFIED switches to the body-only Frogport shadow.
+	#Range: 0 ~ 256
+	shadowSimplifiedDistance = 32
+	#Maximum GPU memory retained by Frogport body and head VBO light variants.
+	#Range: 4 ~ 128
+	vboCacheMiB = 16
+
+[waterWheelVbo]
+	#Cache static shader-compatible water wheel geometry in persistent GPU vertex buffers.
+	#Wheel rotation remains exact and is applied per rendered instance.
+	#Requires Embeddium, Oculus, an active shaderpack, and Flywheel's backend to be off; CreateBetterFPS is optional.
+	enabled = true
+	#Render water wheels in shader shadow passes.
+	#This stored preference can omit shadows only while lossyRendering is true; exact mode forces the effective value on.
+	renderShadows = false
+	#Maximum GPU memory shared by persistent water wheel and kinetic machine vertex buffers.
+	#Range: 16 ~ 512
+	maxCacheMiB = 96
+	#Shared soft time budget for building and uploading new water wheel and kinetic machine VBOs per rendered frame.
+	#Additional uploads are deferred after the measured work reaches this budget.
+	#Range: 0.25 ~ 16.0
+	maxUploadMillisPerFrame = 4.0
+
+[kineticMachineVbo]
+	#Enable persistent VBO rendering for mixers, mechanical presses, mechanical crafters, millstones, Mechanical Arms, stock deployers, and stock small/large cogwheels.
+	#Compatible cogwheels share rigid-instance draws in both main and shadow passes, including the large cog's independently rotated shaft.
+	#Stock deployer shafts, poles, and all three hand poses share static geometry; extension animation and held items remain unchanged. Contraption deployers use Create's original path.
+	#Animation remains exact through per-instance matrices; dynamic crafter items and scrolling UVs stay on Create's original path.
+	enabled = true
+	#Render mixers, mechanical presses, mechanical crafters, and millstone inner cogs in shader shadow passes.
+	#This stored preference can omit shadows only while lossyRendering is true; exact mode forces the effective value on.
+	#Mechanical Arm cogs, rigid parts, stock deployers, and stock small/large cogwheels always retain their shader shadows.
+	#The renamed key intentionally applies this safer default to configurations created by older releases.
+	renderShaderShadows = false
+
+[copycatKineticVbo]
+	#Instance repeated Copycats shafts and small/large cogwheel parts using their actual model templates.
+	#Solid and alpha-cutout materials preserve template colors. Instanced draws require Embeddium, Oculus, compatible shaders and Flywheel's backend to be off.
+	#Also reuses compatible Copycats model lookup keys, independently of shaders.
+	#Shadows, tinted effects, translucent materials and unsupported shader inputs retain Copycats' renderer.
+	#Shares the waterWheelVbo mesh limits and the shared render budget. Disable for an isolated A/B comparison.
+	enabled = true
+	#Continue Copycats eligibility, reuse, build, draw and replay totals every five seconds.
+	#When false, startup diagnostics stop after six nonempty windows per world or pipeline generation.
+	diagnostics = false
+
+[spout]
+	#Share persistent nozzle geometry and rigid-instance draws for stock spouts in main and shadow passes.
+	#Create's squeeze animation, fluid rendering, and complete nozzle shadows are retained.
+	#Requires Embeddium, Oculus, an active compatible shaderpack, and Flywheel's backend to be off.
+	persistentVboEnabled = true
+
+[mechanicalPump]
+	#Cache the stock Mechanical Pump cog in the shared persistent Oculus VBO path.
+	#Cog rotation remains exact and compatible pumps share rigid-instance draw calls.
+	#Requires Embeddium, Oculus, an active shaderpack, and Flywheel's backend to be off.
+	persistentVboEnabled = true
+	#Render the moving Mechanical Pump cog in shader shadow passes.
+	#The chunk-baked pump body still casts its normal shadow when this is disabled.
+	#This stored preference can omit the cog shadow only while lossyRendering is true.
+	renderShaderShadows = false
+	#Skip the stock pump fluid behaviour on the logical client while synchronized flow state is idle.
+	#Active-flow state is refreshed when block-entity data is read, never by scanning connections every tick.
+	skipIdleClientFluidTick = true
+
+[drill]
+	#Instance the stock mechanical drill head instead of rewriting its vertices every frame.
+	#Rotation stays Create's exact kinetic angle. Contraption-mounted drills are unchanged.
+	#Requires Embeddium, Oculus, an active shaderpack, and Flywheel's backend to be off.
+	persistentVboEnabled = true
+	#Draw the rotating drill head into shader shadow passes.
+	#The head is thin, and omitting its shadow reads as light leaking through the machine.
+	#Exact mode forces the effective value on; the chunk-baked body still casts its own shadow when this is disabled.
+	renderShaderShadows = true
+
+[blockBreakEffects]
+	#Limit vanilla block-break dust on the client.
+	#Destroy dust does not collide with blocks. Excess break events spawn nothing.
+	enabled = true
+	#Optionally limit sounds from block-destroy events only. This may omit repeated break sounds.
+	limitSounds = false
+	#Maximum block-break dust particles spawned per client tick. Set to 0 to disable the dust.
+	#Range: 0 ~ 4096
+	maxParticlesPerTick = 256
+	#Maximum tracked block-break dust particles that may remain alive at once. Set to 0 to disable the dust.
+	#Range: 0 ~ 16384
+	maxLiveParticles = 2048
+	#Stable percentage of break positions that may emit dust. The set changes at most once per second.
+	#Range: 0 ~ 100
+	retainPercent = 100
+	#Maximum block-destroy sounds per client tick when limitSounds is enabled.
+	#Range: 0 ~ 256
+	maxSoundsPerTick = 32
+
+[millstone]
+	#Use stable distance LOD for the millstone inner cog when shaders disable Flywheel.
+	#Nearby millstones remain complete; omitted distant cogs retain the chunk-baked outer shell.
+	#Requires lossyRendering; exact mode keeps every inner cog.
+	mainLodEnabled = true
+	#Distance in blocks where stable medium-density millstone cog sampling starts.
+	#Range: 1 ~ 512
+	midDistance = 32
+	#Distance in blocks where stable sparse millstone cog sampling starts.
+	#Range: 1 ~ 1024
+	farDistance = 64
+	#Stable percentage of inner cogs retained from the mid-distance boundary.
+	#Range: 0 ~ 100
+	midPercent = 50
+	#Stable percentage of inner cogs retained from the far-distance boundary.
+	#Range: 0 ~ 100
+	farPercent = 25
+
+[shaft]
+	#Cache static shaft geometry in the shared persistent Oculus VBO path.
+	#Rotation remains exact through a per-instance matrix; dynamic colors and unsupported formats use Create's original renderer.
+	#Requires Embeddium, Oculus, an active shaderpack, and Flywheel's backend to be off.
+	persistentVboEnabled = true
+	#Draw compatible shaft VBO buckets with an internal Oculus shader variant and instance matrices.
+	#Unsupported shader stages, transforms, hardware, or compilation failures fall back to the existing exact per-shaft VBO path.
+	instancedDrawEnabled = true
+	#Render shaft, encased shaft, and encased chain-drive shaft meshes in shader shadow passes.
+	#Enabled by default. The renamed key intentionally drops older configurations that omitted these shadows.
+	#Unsupported shaders fall back to Create's original renderer in both passes.
+	#A false value can omit shaft shadows only while lossyRendering is true.
+	renderInstanceShadows = true
+	#Collect and log bounded five-second main-pass hit/miss light-variant diagnostics for exact stock shafts.
+	#Disabled by default; enable only while investigating stock-shaft light-driven cache duplication.
+	lightDiagnostics = false
+	#Client tick interval for shaft ambient-sound contributions.
+	#Create accumulates ambient sources over five ticks, so the default keeps every shaft represented while staggering their work.
+	#Range: 1 ~ 5
+	audioIntervalTicks = 4
+
+[crushingWheelParticles]
+	#Maximum crushing-wheel particles per client tick. Active item crushing emits groups of four.
+	#Range: 0 ~ 4096
+	maxPerTick = 96
+	#Distance in blocks up to which nearPercent is used for crushing-wheel particles.
+	#Range: 1 ~ 512
+	nearDistance = 16
+	#Distance in blocks up to which midPercent is used; farther particles use farPercent.
+	#Range: 1 ~ 1024
+	midDistance = 32
+	#Percentage of crushing-wheel particle bursts retained within nearDistance.
+	#Range: 0 ~ 100
+	nearPercent = 100
+	#Percentage of crushing-wheel particle bursts retained between the near and mid distances.
+	#Range: 0 ~ 100
+	midPercent = 50
+	#Percentage of crushing-wheel particle bursts retained beyond midDistance.
+	#Range: 0 ~ 100
+	farPercent = 25
+
+[depot]
+	#Instance repeated static items rendered by stock world depots with compatible Oculus/Embeddium shaders.
+	#Preserves Create's item placement, stack copies and animation. Shadows and unsupported items use the original renderer.
+	#Shares the existing item cache and render budgets. Disable for a same-build A/B comparison.
+	itemInstancingEnabled = true
+
+[chuteParticles]
+	#Maximum chute item particles spawned per client tick; nearer requests are kept first. Set to 0 to disable them.
+	#Range: 0 ~ 4096
+	maxPerTick = 16
+
+[linkedOutlines]
+	#Minimum ticks between rebuilding the combined linked-outline vertex buffer after geometry changes.
+	#Range: 1 ~ 20
+	rebuildIntervalTicks = 4
+	#Maximum uncached outline-box shapes prepared per rendered frame.
+	#Range: 1 ~ 128
+	prewarmBoxesPerFrame = 16
+	#Maximum distinct outline-box geometries retained in the client cache.
+	#Range: 64 ~ 16384
+	maxCachedBoxes = 2048
+
+[factoryPanelFilterItems]
+	#Render factory-panel filter item icons in shader shadow passes.
+	#This stored preference can omit shadows only while lossyRendering is true; exact mode forces the effective value on.
+	renderInShaderShadows = false
+	#Use stable distance LOD for factory-panel filter item icons in the main pass.
+	#Nearby panels remain exact; distant panels are spatially sampled without temporal flicker.
+	#Requires lossyRendering; exact mode keeps every filter icon.
+	mainLodEnabled = true
+	#Distance in blocks where stable medium-density filter-icon sampling starts.
+	#Range: 1 ~ 512
+	midDistance = 24
+	#Distance in blocks where stable sparse filter-icon sampling starts.
+	#Range: 1 ~ 1024
+	farDistance = 48
+	#Stable percentage of factory-panel filter icons retained from the mid-distance boundary.
+	#Range: 0 ~ 100
+	midPercent = 50
+	#Stable percentage of factory-panel filter icons retained from the far-distance boundary.
+	#Range: 0 ~ 100
+	farPercent = 20
+
+[belt]
+	#Enable stable per-item distance LOD for transported belt items.
+	#Requires lossyRendering. Disabling it retains conservative frustum and shared-light optimizations.
+	itemRenderLodEnabled = true
+	#Distance where stable medium-density item sampling starts.
+	#Range: 1 ~ 512
+	itemRenderMidDistance = 32
+	#Distance where stable sparse item sampling starts.
+	#Range: 1 ~ 768
+	itemRenderFarLodDistance = 48
+	#Maximum distance for transported belt item models.
+	#Range: 1 ~ 1024
+	itemRenderFarDistance = 64
+	#Use a cached single-quad far LOD for stable flat item models.
+	#Foil, NBT-sensitive, 3D, custom, multi-pass, package, and Flerovium-rendered items always use their original renderer.
+	itemFarStaticModelEnabled = true
+	#Distance where eligible flat transported items switch to the cached static far model.
+	#Range: 1 ~ 512
+	itemFarStaticModelDistance = 28
+	#Stable percentage of belt items retained in the medium LOD tier.
+	#Range: 0 ~ 100
+	itemRenderMidPercent = 50
+	#Stable percentage of belt items retained in the sparse LOD tier.
+	#Range: 0 ~ 100
+	itemRenderFarPercent = 20
+	#Maximum distance for Create's flat fake shadow below transported items.
+	#With belt item LOD enabled, fake shadows are omitted from Oculus shader shadow passes.
+	#Range: 0 ~ 512
+	itemFakeShadowDistance = 24
+	#Omit Create's flat transported-item shadow whenever a shaderpack is active.
+	#The shader shadow map already supplies the corresponding visual cue.
+	skipItemFakeShadowsWithShaders = true
+	#Maximum distance for extra visual copies of large item stacks.
+	#The transported stack itself is still rendered beyond this distance.
+	#Range: 0 ~ 64
+	itemStackCopiesDistance = 12
+	#Maximum distance for transported item models in Oculus shader shadow passes.
+	#The shadow pass rejects the complete belt before item iteration and hard-caps this value at 12 blocks.
+	#Set to 0 to omit transported item models from shader shadow maps.
+	#Range: 0 ~ 256
+	itemShaderShadowDistance = 12
+	#Opt into lossy camera-distance culling and stable sampling of belt body shader shadows.
+	#Disabled by default to preserve belt-to-belt shading and ground shadows within the shaderpack's shadow range.
+	#Enabling this can let sunlight through stacked belts. Persistent VBOs and bulk vertex writes remain active either way.
+	bodyShaderShadowCullingEnabled = false
+	#Requested maximum distance for fallback-rendered belt body geometry in Oculus shadow passes.
+	#Only applies when bodyShaderShadowCullingEnabled is true; otherwise the shaderpack controls the shadow range.
+	#The fallback uses one decision for the complete belt and caps this at 16 blocks; from 8 to 16 blocks it retains one stable belt in four.
+	#This is ignored while Flywheel visualization is active. Set to 0 to omit fallback belt bodies from shadow maps.
+	#Range: 0 ~ 256
+	bodyShaderShadowDistance = 16
+	#Cache fallback belt body templates in persistent GPU buffers for the MAIN shader pass.
+	#Each visible belt then submits only its transform and scrolling UV offset.
+	#Requires Oculus and Embeddium, is disabled when irisflw owns belt visualization, and safely falls back on unsupported formats.
+	bodyMainPersistentVboEnabled = true
+	#Maximum GPU memory used by persistent fallback belt body templates.
+	#Range: 8 ~ 256
+	bodyMainPersistentVboMaxCacheMiB = 64
+	#Soft per-frame time budget for creating new persistent belt body VBOs.
+	#Range: 0.25 ~ 8.0
+	bodyMainPersistentVboMaxUploadMillisPerFrame = 2.0
+
+[kineticAudio]
+	#Distance in blocks within which non-shaft kinetic machines contribute ambient audio every tick.
+	#Set to 0 to update them every tick at all distances.
+	#Range: 0 ~ 512
+	maxDistance = 48
+	#Client tick interval for non-shaft kinetic ambient-audio contributions beyond maxDistance.
+	#Range: 1 ~ 20
+	farIntervalTicks = 4
+
+[steamJetParticles]
+	#Maximum steam-jet particles spawned per client tick. Set to 0 to disable them.
+	#Range: 0 ~ 4096
+	maxPerTick = 96
+	#Distance in blocks up to which nearPercent is used for steam-jet particles.
+	#Range: 1 ~ 512
+	nearDistance = 16
+	#Distance in blocks up to which midPercent is used; farther particles use farPercent.
+	#Range: 1 ~ 1024
+	midDistance = 32
+	#Percentage of steam-jet particles retained within nearDistance.
+	#Range: 0 ~ 100
+	nearPercent = 80
+	#Percentage of steam-jet particles retained between the near and mid distances.
+	#Range: 0 ~ 100
+	midPercent = 50
+	#Percentage of steam-jet particles retained beyond midDistance.
+	#Range: 0 ~ 100
+	farPercent = 25
+	#Queue steam jet sounds only inside this distance. Set to 0 to disable sound culling.
+	#Range: 0 ~ 1024
+	soundDistance = 96
+
+[chainConveyorRender]
+	#Enable Chain Conveyor span culling, light caching, and far-distance geometry LOD.
+	#With Oculus shaders, main-pass chain spans use Create's original renderer for compatibility.
+	enabled = true
+	#Keep the stock Chain Conveyor wheel geometry resident on the GPU and submit visible wheels as rigid instances.
+	#Requires Embeddium, Oculus, and an active shaderpack; unsupported states use the direct writer fallback.
+	persistentWheelVbo = true
+	#Use compatible bulk vertex writers for Chain Conveyor spans and as the stock wheel VBO fallback.
+	#Main-pass chain spans use Create's writer while Oculus shaders are active.
+	directVertexWriter = true
+	#Render one double-sided face instead of two beyond Create's 48-block chain MIP distance.
+	#Ignored for main-pass chain spans while Oculus shaders are active and whenever lossyRendering is false.
+	farSinglePlane = true
+	#Skip a chain span when its complete bounds are behind the main camera plane.
+	behindCameraCulling = true
+	#Maximum camera-to-chain distance in blocks while lossyRendering is true.
+	#Exact mode does not apply a distance limit.
+	#Range: 32 ~ 512
+	maxRenderDistance = 192
+	#Maximum distance for Chain Conveyor spans in shader shadow passes.
+	#Set to 0 to omit their shadows while lossyRendering is true; exact mode does not apply this distance.
+	#Wheels and transported packages are unaffected.
+	#Range: 0 ~ 256
+	shadowRenderDistance = 0
+
+[displayBoard]
+	#Enable Display Board text, visibility, and shader-fallback rendering optimizations.
+	enabled = true
+	#Render Display Board text and internal cogwheels in shader shadow passes.
+	#This stored preference can omit shadows only while lossyRendering is true; exact mode forces the effective value on.
+	renderShaderShadows = false
+	#Compile stable Display Board sections once per resource generation.
+	#Active flap transitions remain dynamic and unsupported text falls back to the exact original character path.
+	stableTextCache = true
+	#Bulk-write stock fallback cogwheels in Oculus' exact extended terrain format when the persistent VBO path is unavailable.
+	#This is owned by this mod and does not require CreateBetterFPS, Colorwheel, or irisflw.
+	#Unsupported consumers, transforms, colors, formats, and shader states use Create's original renderer.
+	extendedVertexWriter = true
+	#Skip a cogwheel only when its complete conservative bounds project behind the opaque front or rear shell of its complete Display Board.
+	#Cogwheels that can be seen through side, top, bottom, or perimeter openings remain rendered.
+	completePanelOcclusion = true
+	#Upload the stock shaftless cogwheel mesh once and retain only rigid per-instance transforms each frame.
+	#Requires Oculus only while a shaderpack disables Flywheel; it does not require another optimization mod.
+	persistentCogVbo = true
+	#Draw compatible Display Board cogwheel buckets with this mod's Oculus rigid-instance shader variant.
+	#Unsupported shader stages or hardware fall back to exact persistent VBO draws.
+	instancedCogDraw = true
+	#Maximum GPU memory retained by Display Board cogwheel VBO light and material variants.
+	#Range: 4 ~ 128
+	cogVboCacheMiB = 16
+	#Maximum distance from the camera to the nearest point of a Display Board's complete bounds.
+	#Set to 0 to disable distance culling; full-board frustum culling remains enabled.
+	#Exact mode forces the effective value to 0 without changing this stored preference.
+	#Range: 0 ~ 1024
+	maxRenderDistance = 128
+
+[renderBudget]
+	#Shared limits for owned optimized mesh and instance payloads; JVM/driver overhead and vanilla rendering are excluded.
+	#Exhausted budgets retain the original renderer. Defaults are conservative limits, not measured break-even points.
+	#Range: 8 ~ 1024
+	retainedGpuMiB = 128
+	#Range: 8 ~ 1024
+	retainedCpuMiB = 128
+	#Range: 1 ~ 512
+	buildScratchMiB = 64
+	#Range: 1 ~ 128
+	staticUploadMiBPerFrame = 8
+	#Range: 1 ~ 256
+	instanceUploadMiBPerFrame = 16
+	#Range: 1 ~ 64
+	maxMeshMiB = 8
+	#Soft limit: an individual build may exceed this time; subsequent builds use the original path.
+	#Range: 0.25 ~ 32.0
+	buildMillisPerFrame = 4.0
+

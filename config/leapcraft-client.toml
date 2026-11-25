@@ -1,0 +1,3 @@
+#Whether leap crafting is enabled when opening a crafting terminal.
+enabled = true
+

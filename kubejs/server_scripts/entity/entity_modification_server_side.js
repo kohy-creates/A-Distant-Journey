@@ -40,9 +40,15 @@ const EntityModifications = {
 			if (health != null) this.setHealth(entity, health);
 			if (damage != null) entity.getAttribute('generic.attack_damage').setBaseValue(damage);
 			if (armor != null) entity.getAttribute('generic.armor').setBaseValue(armor);
-			entity.getAttribute('attributeslib:crit_chance').addPermanentModifier(
-				new $AttributeModifier('43a2ed18-c05d-4e1a-b799-249cb212a937', 'No criticals', -1, 'multiply_total')
-			);
+			let critAttr = entity.getAttribute('attributeslib:crit_chance');
+			if (critAttr) {
+				let modUuid = UUID.fromString('43a2ed18-c05d-4e1a-b799-249cb212a937');
+				if (!critAttr.getModifier(modUuid)) {
+					critAttr.addPermanentModifier(
+						new $AttributeModifier(modUuid, 'No criticals', -1, 'multiply_total')
+					);
+				}
+			}
 		},
 		/**
 		 * Scales Boss HP based on the number of nearby players.

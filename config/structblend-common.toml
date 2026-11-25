@@ -1,0 +1,6 @@
+#Structure registry IDs excluded from automatic terrain blending.
+excludedStructures = []
+#Irregularity of blended slopes: 0 keeps the old uniform curve, 1 is full variation.
+#Range: 0.0 ~ 1.0
+slopeIrregularity = 1.0
+

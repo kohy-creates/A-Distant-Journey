@@ -33,3 +33,4 @@ net.lyof.sortilege.mixin.client.DisplayInfoMixin
 net.lyof.sortilege.mixin.client.DeathScreenMixin
 net.lyof.sortilege.mixin.client.GuiGraphicsMixin
 net.lyof.sortilege.mixin.WorldGenRegionMixin
+io.wispforest.owo.mixin.Copenhagen

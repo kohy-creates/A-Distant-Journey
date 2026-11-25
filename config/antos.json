@@ -50,6 +50,7 @@
   "client": {
     "inventoryComputerButton": false,
     "contentEditing": false,
+    "contentEditingShortcuts": false,
     "defaultPreferences": {}
   },
   "jei": {

@@ -101,6 +101,8 @@ maxViewDistance = 64
 	releaseNoiseChunkAfterCarving = "default"
 	# (Default: true) Drop a chunk's cave carving masks once its features are placed instead of keeping them until the chunk is finished. Features are the last step that reads them, and an unfinished chunk keeps two of them, 24 KB, for as long as it waits at the edge of the loaded area.
 	releaseCarvingMasksAfterFeatures = "default"
+	# (Default: true) Sample the height-independent parts of the terrain noise once per block column instead of once per block.
+	columnDensityCache = "default"
 
 [threadedLighting]
 	# (Default: true) Run light updates on a dedicated thread.
