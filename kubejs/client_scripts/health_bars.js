@@ -1,3 +1,8 @@
+/**
+ * Based on YDM's MobHealthBar mod
+ * https://www.curseforge.com/minecraft/mc-mods/ydms-mobhealthbar-mod
+ */
+
 const $RenderNameTagEvent = Java.loadClass('net.minecraftforge.client.event.RenderNameTagEvent');
 const $RenderSystem = Java.loadClass('com.mojang.blaze3d.systems.RenderSystem');
 const $BufferUploader = Java.loadClass('com.mojang.blaze3d.vertex.BufferUploader');
@@ -186,7 +191,7 @@ NativeEvents.onEvent('normal', false, $RenderNameTagEvent, (event) => {
 	if (entity == Client.player) {
 		event.setResult('deny');
 	}
-	else if(entity.isLiving()) {
+	else if (entity.isLiving()) {
 		event.setResult('deny');
 		let poseStack = event.getPoseStack();
 		let font = event.getEntityRenderer().getFont();
